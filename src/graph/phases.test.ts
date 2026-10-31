@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { genreHeightAt, genrePhases, PHASE_STYLE } from './phases.ts'
+import { GENRE_BAR_HEIGHT, genreOpacityStops, genrePhases, PHASE_STYLE } from './phases.ts'
 import type { GraphNode } from './types.ts'
 import rawGraph from '../data/graph.json'
 
@@ -40,17 +40,54 @@ describe('historical prominence', () => {
     }, 2026).at(-1)?.prominence).toBe('golden-age')
   })
 
-  it('uses progressively thinner bars and dashes for niche scenes', () => {
-    expect(PHASE_STYLE['golden-age'].height).toBeGreaterThan(PHASE_STYLE.established.height)
-    expect(PHASE_STYLE.established.height).toBeGreaterThan(PHASE_STYLE.niche.height)
-    expect(PHASE_STYLE.niche.dashed).toBe(true)
+  it('uses one height and declining intensity instead of thinner or dashed phases', () => {
+    expect(GENRE_BAR_HEIGHT).toBe(22)
+    expect(PHASE_STYLE['golden-age'].opacity).toBeGreaterThan(PHASE_STYLE.established.opacity)
+    expect(PHASE_STYLE.established.opacity).toBeGreaterThan(PHASE_STYLE.niche.opacity)
+    expect(PHASE_STYLE.niche.opacity).toBeGreaterThan(0)
+    for (const style of Object.values(PHASE_STYLE)) {
+      expect(style).not.toHaveProperty('height')
+      expect(style).not.toHaveProperty('dashed')
+    }
   })
 
-  it('anchors edges and artist markers to the height of the historical phase', () => {
-    expect(genreHeightAt(node, 1970)).toBe(22)
-    expect(genreHeightAt(node, 1980)).toBe(12)
-    expect(genreHeightAt(node, 2020)).toBe(5)
-    expect(genreHeightAt({ ...node, phases: undefined }, 2020)).toBe(22)
+  it('blends smoothly on either side of a boundary with eased intermediate stops', () => {
+    const stops = genreOpacityStops(node, 2026)
+    const transition = stops.slice(6, 11)
+    expect(transition.map((stop) => 1955 + stop.offset * 71)).toEqual([1978, 1979, 1980, 1981, 1982])
+    expect(transition[0].opacity).toBe(0.75)
+    expect(transition[2].opacity).toBeCloseTo(0.575)
+    expect(transition[4].opacity).toBeCloseTo(0.4)
+    expect(transition[1].opacity).toBeCloseTo(0.75 - 0.35 * 0.15625)
+    expect(stops[0]).toEqual({ offset: 0, opacity: 0.3 })
+    expect(stops.at(-1)).toEqual({ offset: 1, opacity: 0.16 })
+  })
+
+  it('keeps gradients ordered and bounded even with short phases and revivals', () => {
+    const stops = genreOpacityStops({
+      ...node, period: { start: 2000, end: 2004 },
+      phases: [
+        { start: 2000, prominence: 'golden-age' },
+        { start: 2001, prominence: 'niche' },
+        { start: 2002, prominence: 'golden-age' },
+      ],
+    }, 2026)
+    expect(stops.at(-1)).toEqual({ offset: 1, opacity: 0.75 })
+    stops.forEach((stop, i) => {
+      expect(stop.offset).toBeGreaterThanOrEqual(0)
+      expect(stop.offset).toBeLessThanOrEqual(1)
+      if (i > 0) expect(stop.offset).toBeGreaterThan(stops[i - 1].offset)
+    })
+  })
+
+  it('does not add a gradient to unannotated or future genres', () => {
+    expect(genreOpacityStops({ ...node, phases: undefined }, 2026)).toEqual([])
+    expect(genreOpacityStops(node, 1950)).toEqual([])
+  })
+
+  it('uses a flat gradient for a single phase', () => {
+    expect(genreOpacityStops({ ...node, phases: [{ start: 1955, prominence: 'golden-age' }] }, 2026))
+      .toEqual([{ offset: 0, opacity: 0.75 }, { offset: 1, opacity: 0.75 }])
   })
 
   it('keeps soul alive after its peak and does not call it niche', () => {

@@ -16,9 +16,12 @@ The main view is a horizontal chronology: genres render as bars spanning their a
 ### Historical prominence
 
 Lifespan is not a golden age. Genres can have explicit `phases`, each with a
-`start` year and `prominence`: `emerging` (medium), `golden-age` (full-width
-solid bar), `established` (thinner continuing bar), or `niche` (thin dashed
-tail). Each phase lasts until the next starts, or until the lifespan ends.
+`start` year and `prominence`: `emerging`, `golden-age`, `established`, or `niche`.
+All phases keep the same bar height: golden ages are strongest, continuing scenes
+are softer, and niche scenes are faint but still visible. A continuous gradient
+smoothly blends intensity around each boundary (up to two years either side,
+shortened for brief phases), without steps in height or dotted tails.
+Each phase lasts until the next starts, or until the lifespan ends.
 Phases may repeat to describe revivals; there is no automatic age-based decline.
 Genres without phases retain the original rendering rather than inventing a peak.
 

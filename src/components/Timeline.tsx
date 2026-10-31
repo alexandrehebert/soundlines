@@ -16,13 +16,13 @@ import {
   type TimeScale,
 } from '../graph/layout.ts'
 import { FAMILY_LABELS, PROMINENCE_LABELS, type GraphNode, type MusicGraph } from '../graph/types.ts'
-import { genreHeightAt, genrePhases, PHASE_STYLE } from '../graph/phases.ts'
+import { GENRE_BAR_HEIGHT, genreOpacityStops, genrePhases } from '../graph/phases.ts'
 import { FAMILY_COLORS, LINEAGE_EDGE_COLORS } from '../theme.ts'
 
 const AXIS_H = 34
 const LANE_HEADER = 24
 const ROW_H = 36
-const BAR_H = 22
+const BAR_H = GENRE_BAR_HEIGHT
 const LANE_GAP = 14
 const PAD_BOTTOM = 16
 
@@ -235,7 +235,7 @@ export function Timeline({
       lastXByGenre.set(edge.to, x)
       markers.push({
         id: artist.id, name: artist.name, x,
-        y: bar.yCenter + genreHeightAt(bar.node, xToYear(scale, x)) / 2 - 2,
+        y: bar.yCenter + BAR_H / 2 - 2,
         color: bar.color,
       })
     }
@@ -317,8 +317,7 @@ export function Timeline({
               maxX < minX
                 ? (parent.x1 + parent.x2) / 2
                 : Math.min(Math.max(child.x1 - lead, minX), maxX)
-            const parentHeight = genreHeightAt(parent.node, xToYear(scale, anchorX))
-            const y0 = parent.yCenter + (goingDown ? parentHeight / 2 : -parentHeight / 2)
+            const y0 = parent.yCenter + (goingDown ? BAR_H / 2 : -BAR_H / 2)
             const endX = child.x1 + 1
             const isLit = highlight?.edges.has(edge.id) ?? false
             const opacity = highlight ? (isLit ? 0.9 : 0.08) : 0.3
@@ -341,7 +340,9 @@ export function Timeline({
             const isSelected = bar.node.id === selectedId
             const shape = barShape(bar.x1, bar.x2, bar.yCenter - BAR_H / 2, BAR_H, !bar.ended)
             const phases = genrePhases(bar.node, CURRENT_YEAR)
+            const opacityStops = genreOpacityStops(bar.node, CURRENT_YEAR)
             const clipId = `bar-clip-${bar.node.id.replace(':', '-')}`
+            const gradientId = `bar-prominence-${bar.node.id.replace(':', '-')}`
             return (
               <g
                 key={bar.node.id}
@@ -356,6 +357,15 @@ export function Timeline({
               >
                 <defs>
                   <clipPath id={clipId}><path d={shape} /></clipPath>
+                  {opacityStops.length > 0 && (
+                    <linearGradient id={gradientId} gradientUnits="userSpaceOnUse"
+                      x1={bar.x1} x2={bar.x2} y1={bar.yCenter} y2={bar.yCenter}>
+                      {opacityStops.map((stop) => (
+                        <stop key={stop.offset} offset={stop.offset}
+                          stopColor={bar.color} stopOpacity={stop.opacity} />
+                      ))}
+                    </linearGradient>
+                  )}
                 </defs>
                 <g mask={bar.ended ? 'url(#bar-fade-mask)' : undefined}>
                   <path d={shape} fill={`color-mix(in srgb, ${bar.color} 4%, #020617)`} />
@@ -369,21 +379,12 @@ export function Timeline({
                     />
                   ) : (
                     <g clipPath={`url(#${clipId})`}>
+                      <path d={shape} fill={`url(#${gradientId})`} />
                       {phases.map((phase) => {
-                        const style = PHASE_STYLE[phase.prominence]
                         const x = yearToX(scale, phase.start)
                         const endX = yearToX(scale, phase.end)
                         return (
                           <g key={phase.start} data-prominence={phase.prominence}>
-                            {style.dashed ? (
-                              <line x1={x} x2={endX} y1={bar.yCenter} y2={bar.yCenter}
-                                stroke={bar.color} strokeWidth={style.height}
-                                strokeDasharray="5 5" opacity={style.opacity} />
-                            ) : (
-                              <rect x={x} y={bar.yCenter - style.height / 2}
-                                width={endX - x} height={style.height}
-                                fill={bar.color} opacity={style.opacity} />
-                            )}
                             <rect x={x} y={bar.yCenter - BAR_H / 2}
                               width={endX - x} height={BAR_H} fill="transparent" />
                             <title>{`${PROMINENCE_LABELS[phase.prominence]}: c. ${phase.start}–${phase.end}. ${bar.node.phaseNote ?? ''}`}</title>

@@ -22,9 +22,8 @@ export function Legend() {
       {(Object.keys(PHASE_STYLE) as Prominence[]).map((phase) => (
         <span key={phase} className="flex items-center gap-1.5 text-[11px] font-medium text-slate-400">
           <svg width="20" height="12" aria-hidden="true">
-            <line x1="0" x2="20" y1="6" y2="6" stroke="#94a3b8"
-              strokeWidth={PHASE_STYLE[phase].height / 2} opacity={PHASE_STYLE[phase].opacity}
-              strokeDasharray={PHASE_STYLE[phase].dashed ? '3 3' : undefined} />
+            <rect x="0" y="1" width="20" height="10" rx="3"
+              fill="#94a3b8" opacity={PHASE_STYLE[phase].opacity} />
           </svg>
           {PROMINENCE_LABELS[phase]}
         </span>
