@@ -7,7 +7,7 @@ import {
   useState,
 } from 'react'
 import { buildIndex } from './graph/graph.ts'
-import { MAX_YEAR, MIN_YEAR } from './graph/layout.ts'
+import { DEFAULT_START_YEAR, MAX_YEAR, MIN_YEAR } from './graph/layout.ts'
 import { createTimelineModel, type TimelineView } from './graph/timeline.ts'
 import type { MusicGraph } from './graph/types.ts'
 
@@ -27,8 +27,8 @@ export function useExplorerState(graph: MusicGraph) {
   const [location, setLocation] = useState(readLocation)
   const { view, selectedId } = location
   const [ranges, setRanges] = useState<Record<TimelineView, YearRange>>({
-    genre: [MIN_YEAR, MAX_YEAR],
-    artist: [MIN_YEAR, MAX_YEAR],
+    genre: [DEFAULT_START_YEAR, MAX_YEAR],
+    artist: [DEFAULT_START_YEAR, MAX_YEAR],
   })
   const model = useMemo(() => createTimelineModel(index, view), [index, view])
 

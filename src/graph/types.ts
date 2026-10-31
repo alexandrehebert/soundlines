@@ -43,6 +43,9 @@ export interface Period {
 
 export type GenreFamily =
   | 'roots'
+  | 'classical'
+  | 'jazz'
+  | 'rock'
   | 'electronic-pioneers'
   | 'house'
   | 'techno'
@@ -133,6 +136,9 @@ export const LINEAGE_EDGE_TYPES: readonly EdgeType[] = Object.keys(
 
 export const FAMILY_LABELS: Record<GenreFamily, string> = {
   roots: 'Roots',
+  classical: 'Classical traditions',
+  jazz: 'Jazz',
+  rock: 'Rock',
   'electronic-pioneers': 'Electronic pioneers',
   house: 'House',
   techno: 'Techno',
@@ -141,6 +147,9 @@ export const FAMILY_LABELS: Record<GenreFamily, string> = {
 
 export const FAMILY_ORDER: readonly GenreFamily[] = [
   'roots',
+  'classical',
+  'jazz',
+  'rock',
   'electronic-pioneers',
   'house',
   'techno',

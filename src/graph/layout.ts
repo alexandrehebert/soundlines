@@ -12,7 +12,8 @@ import { visibleEnd } from './phases.ts'
  */
 
 export const CURRENT_YEAR = new Date().getFullYear()
-export const MIN_YEAR = 1948
+export const MIN_YEAR = 500
+export const DEFAULT_START_YEAR = 1948
 export const MAX_YEAR = CURRENT_YEAR + 2
 
 export interface TimeScale {

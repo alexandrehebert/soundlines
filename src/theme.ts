@@ -2,6 +2,9 @@ import type { EdgeType, GenreFamily, NodeType, Period } from './graph/types.ts'
 
 export const FAMILY_COLORS: Record<GenreFamily, string> = {
   roots: '#f59e0b',
+  classical: '#fda4af',
+  jazz: '#60a5fa',
+  rock: '#fb923c',
   'electronic-pioneers': '#a78bfa',
   house: '#f472b6',
   techno: '#22d3ee',
