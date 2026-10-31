@@ -4491,7 +4491,6 @@
       "id": "artist:women-on-wax",
       "type": "artist",
       "name": "Women on Wax",
-      "family": "techno",
       "kind": "collective",
       "period": {
         "start": 1996
@@ -4560,6 +4559,1377 @@
         "https://en.wikipedia.org/wiki/Techno",
         "https://www.theguardian.com/music/musicblog/2010/feb/15/cybotron-techno-city",
         "https://www.qobuz.com/us-en/album/enter-cybotron/x2ms9121yxjva"
+      ]
+    },
+    {
+      "id": "artist:daft-punk",
+      "type": "artist",
+      "name": "Daft Punk",
+      "kind": "group",
+      "period": {
+        "start": 1993
+      },
+      "description": "Daft Punk is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/daft-punk-mn0000950458"
+      ]
+    },
+    {
+      "id": "artist:air",
+      "type": "artist",
+      "name": "Air",
+      "kind": "group",
+      "period": {
+        "start": 1995
+      },
+      "description": "Air is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/air-mn0000594763"
+      ]
+    },
+    {
+      "id": "artist:cassius",
+      "type": "artist",
+      "name": "Cassius",
+      "kind": "group",
+      "period": {
+        "start": 1996
+      },
+      "description": "Cassius is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/cassius-mn0000794025"
+      ]
+    },
+    {
+      "id": "artist:motorbass",
+      "type": "artist",
+      "name": "Motorbass",
+      "kind": "group",
+      "period": {
+        "start": 1992
+      },
+      "description": "Motorbass is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.lemonde.fr/culture/article/2005/03/31/la-french-touch-a-l-heure-de-la-releve_633833_3246.html"
+      ]
+    },
+    {
+      "id": "artist:massive-attack",
+      "type": "artist",
+      "name": "Massive Attack",
+      "kind": "group",
+      "period": {
+        "start": 1988
+      },
+      "description": "Massive Attack is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/massive-attack-mn0000372929"
+      ]
+    },
+    {
+      "id": "artist:portishead",
+      "type": "artist",
+      "name": "Portishead",
+      "kind": "group",
+      "period": {
+        "start": 1991
+      },
+      "description": "Portishead is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/portishead-mn0000300336"
+      ]
+    },
+    {
+      "id": "artist:tricky",
+      "type": "artist",
+      "name": "Tricky",
+      "kind": "person",
+      "period": {
+        "start": 1995
+      },
+      "description": "Tricky is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/tricky-mn0000020626"
+      ]
+    },
+    {
+      "id": "artist:dj-shadow",
+      "type": "artist",
+      "name": "DJ Shadow",
+      "kind": "person",
+      "period": {
+        "start": 1991
+      },
+      "description": "DJ Shadow is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/dj-shadow-mn0000788333"
+      ]
+    },
+    {
+      "id": "artist:chemical-brothers",
+      "type": "artist",
+      "name": "The Chemical Brothers",
+      "kind": "group",
+      "period": {
+        "start": 1992
+      },
+      "description": "The Chemical Brothers is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/the-chemical-brothers-mn0000067631"
+      ]
+    },
+    {
+      "id": "artist:fatboy-slim",
+      "type": "artist",
+      "name": "Fatboy Slim",
+      "kind": "person",
+      "period": {
+        "start": 1996
+      },
+      "description": "Fatboy Slim is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/fatboy-slim-mn0000133719"
+      ]
+    },
+    {
+      "id": "artist:my-bloody-valentine",
+      "type": "artist",
+      "name": "My Bloody Valentine",
+      "kind": "group",
+      "period": {
+        "start": 1983
+      },
+      "description": "My Bloody Valentine is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/my-bloody-valentine-mn0000514219"
+      ]
+    },
+    {
+      "id": "artist:slowdive",
+      "type": "artist",
+      "name": "Slowdive",
+      "kind": "group",
+      "period": {
+        "start": 1989
+      },
+      "description": "Slowdive is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/slowdive-mn0000030431"
+      ]
+    },
+    {
+      "id": "artist:ride",
+      "type": "artist",
+      "name": "Ride",
+      "kind": "group",
+      "period": {
+        "start": 1988
+      },
+      "description": "Ride is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/ride-mn0000354574"
+      ]
+    },
+    {
+      "id": "artist:oasis",
+      "type": "artist",
+      "name": "Oasis",
+      "kind": "group",
+      "period": {
+        "start": 1994
+      },
+      "description": "Oasis is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/oasis-mn0000393340"
+      ]
+    },
+    {
+      "id": "artist:blur",
+      "type": "artist",
+      "name": "Blur",
+      "kind": "group",
+      "period": {
+        "start": 1990
+      },
+      "description": "Blur is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/blur-mn0000758444"
+      ]
+    },
+    {
+      "id": "artist:suede",
+      "type": "artist",
+      "name": "Suede",
+      "kind": "group",
+      "period": {
+        "start": 1992
+      },
+      "description": "Suede is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/suede-mn0000586694"
+      ]
+    },
+    {
+      "id": "artist:sunny-day-real-estate",
+      "type": "artist",
+      "name": "Sunny Day Real Estate",
+      "kind": "group",
+      "period": {
+        "start": 1994
+      },
+      "description": "Sunny Day Real Estate is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/sunny-day-real-estate-mn0000750446"
+      ]
+    },
+    {
+      "id": "artist:fugazi",
+      "type": "artist",
+      "name": "Fugazi",
+      "kind": "group",
+      "period": {
+        "start": 1987
+      },
+      "description": "Fugazi is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/fugazi-mn0000183938"
+      ]
+    },
+    {
+      "id": "artist:at-the-drive-in",
+      "type": "artist",
+      "name": "At the Drive-In",
+      "kind": "group",
+      "period": {
+        "start": 1996
+      },
+      "description": "At the Drive-In is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/at-the-drive-in-mn0000040341"
+      ]
+    },
+    {
+      "id": "artist:mogwai",
+      "type": "artist",
+      "name": "Mogwai",
+      "kind": "group",
+      "period": {
+        "start": 1997
+      },
+      "description": "Mogwai is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/mogwai-mn0000488946"
+      ]
+    },
+    {
+      "id": "artist:slint",
+      "type": "artist",
+      "name": "Slint",
+      "kind": "group",
+      "period": {
+        "start": 1987
+      },
+      "description": "Slint is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/slint-mn0000024110"
+      ]
+    },
+    {
+      "id": "artist:godspeed-you-black-emperor",
+      "type": "artist",
+      "name": "Godspeed You! Black Emperor",
+      "kind": "group",
+      "period": {
+        "start": 1997
+      },
+      "description": "Godspeed You! Black Emperor is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/godspeed-you-black-emperor-mn0000666754"
+      ]
+    },
+    {
+      "id": "artist:the-stooges",
+      "type": "artist",
+      "name": "The Stooges",
+      "kind": "group",
+      "period": {
+        "start": 1969
+      },
+      "description": "The Stooges is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/the-stooges-mn0000567138"
+      ]
+    },
+    {
+      "id": "artist:t-rex",
+      "type": "artist",
+      "name": "T. Rex",
+      "kind": "group",
+      "period": {
+        "start": 1970
+      },
+      "description": "T. Rex is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/t-rex-mn0000013364"
+      ]
+    },
+    {
+      "id": "artist:david-bowie",
+      "type": "artist",
+      "name": "David Bowie",
+      "kind": "person",
+      "period": {
+        "start": 1969
+      },
+      "description": "David Bowie is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/david-bowie-mn0000531986"
+      ]
+    },
+    {
+      "id": "artist:queen",
+      "type": "artist",
+      "name": "Queen",
+      "kind": "group",
+      "period": {
+        "start": 1973
+      },
+      "description": "Queen is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/queen-mn0000858827"
+      ]
+    },
+    {
+      "id": "artist:aphex-twin",
+      "type": "artist",
+      "name": "Aphex Twin",
+      "kind": "person",
+      "period": {
+        "start": 1991
+      },
+      "description": "Aphex Twin is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/aphex-twin-mn0000594872"
+      ]
+    },
+    {
+      "id": "artist:autechre",
+      "type": "artist",
+      "name": "Autechre",
+      "kind": "group",
+      "period": {
+        "start": 1991
+      },
+      "description": "Autechre is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/autechre-mn0000758440"
+      ]
+    },
+    {
+      "id": "artist:the-orb",
+      "type": "artist",
+      "name": "The Orb",
+      "kind": "group",
+      "period": {
+        "start": 1988
+      },
+      "description": "The Orb is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/the-orb-mn0000392646"
+      ]
+    },
+    {
+      "id": "artist:brian-eno",
+      "type": "artist",
+      "name": "Brian Eno",
+      "kind": "person",
+      "period": {
+        "start": 1973
+      },
+      "description": "Brian Eno is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/brian-eno-mn0000618138"
+      ]
+    },
+    {
+      "id": "artist:college",
+      "type": "artist",
+      "name": "College",
+      "kind": "person",
+      "period": {
+        "start": 2008
+      },
+      "description": "College is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/college-mn0002009347"
+      ]
+    },
+    {
+      "id": "artist:kavinsky",
+      "type": "artist",
+      "name": "Kavinsky",
+      "kind": "person",
+      "period": {
+        "start": 2006
+      },
+      "description": "Kavinsky is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/kavinsky-mn0000907351"
+      ]
+    },
+    {
+      "id": "artist:perturbator",
+      "type": "artist",
+      "name": "Perturbator",
+      "kind": "person",
+      "period": {
+        "start": 2012
+      },
+      "description": "Perturbator is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/perturbator-mn0002975247"
+      ]
+    },
+    {
+      "id": "artist:carpenter-brut",
+      "type": "artist",
+      "name": "Carpenter Brut",
+      "kind": "person",
+      "period": {
+        "start": 2012
+      },
+      "description": "Carpenter Brut is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/carpenter-brut-mn0003199101"
+      ]
+    },
+    {
+      "id": "artist:com-truise",
+      "type": "artist",
+      "name": "Com Truise",
+      "kind": "person",
+      "period": {
+        "start": 2010
+      },
+      "description": "Com Truise is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/com-truise-mn0002534440"
+      ]
+    },
+    {
+      "id": "artist:washed-out",
+      "type": "artist",
+      "name": "Washed Out",
+      "kind": "person",
+      "period": {
+        "start": 2009
+      },
+      "description": "Washed Out is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/washed-out-mn0001639356"
+      ]
+    },
+    {
+      "id": "artist:neon-indian",
+      "type": "artist",
+      "name": "Neon Indian",
+      "kind": "person",
+      "period": {
+        "start": 2009
+      },
+      "description": "Neon Indian is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/neon-indian-mn0002047612"
+      ]
+    },
+    {
+      "id": "artist:oneohtrix-point-never",
+      "type": "artist",
+      "name": "Oneohtrix Point Never",
+      "kind": "person",
+      "period": {
+        "start": 2007
+      },
+      "description": "Oneohtrix Point Never is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/oneohtrix-point-never-mn0001582159"
+      ]
+    },
+    {
+      "id": "artist:macintosh-plus",
+      "type": "artist",
+      "name": "Macintosh Plus",
+      "kind": "person",
+      "period": {
+        "start": 2011
+      },
+      "description": "Macintosh Plus is documented in the cited genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/macintosh-plus-mn0002911101"
+      ]
+    },
+    {
+      "id": "genre:french-touch",
+      "type": "genre",
+      "name": "French Touch",
+      "family": "electronic-pioneers",
+      "period": {
+        "start": 1995,
+        "end": 2005,
+        "precision": "circa"
+      },
+      "description": "A Paris-centred electronic-music movement and export label of the late 1990s and early 2000s, spanning filter house, disco-inflected house, electro-pop and more. Scholarship treats it variously as a scene, a sound or a brand; it is broader than French house.",
+      "sources": [
+        "https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/",
+        "https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208",
+        "https://www.lemonde.fr/en/m-le-mag/article/2024/04/06/justice-s-new-quest_6667576_117.html",
+        "https://www.lemonde.fr/culture/article/2020/05/20/les-25-ans-de-la-french-touch-electro_6040208_3246.html",
+        "https://madparis.fr/generation-x-une-courte-histoire"
+      ],
+      "phases": [
+        {
+          "start": 1995,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1997,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2001,
+          "prominence": "established"
+        },
+        {
+          "start": 2004,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Approximate international press, club and export visibility: French electronic music was already developing before the mid-1990s; Homework (1997) and late-1990s crossover singles made the label internationally prominent, while the first-wave formula had weakened by the mid-2000s. This is a scene history, not a sales curve."
+    },
+    {
+      "id": "genre:french-house",
+      "type": "genre",
+      "name": "French house",
+      "family": "house",
+      "period": {
+        "start": 1993,
+        "end": 2002,
+        "precision": "circa"
+      },
+      "description": "French-produced house associated with looped disco and funk samples, filtering and club production; it overlaps with but does not encompass the broader French Touch label.",
+      "sources": [
+        "https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/",
+        "https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208",
+        "https://www.allmusic.com/style/french-house-ma0000013529"
+      ],
+      "phases": [
+        {
+          "start": 1993,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1997,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2001,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Approximate international club and press visibility: the style grew from early-1990s French production and reached a broad international profile around Homework, Cassius and Stardust in 1997–99. The phases describe one historical wave, not the ongoing reach of French house or all French Touch music."
+    },
+    {
+      "id": "genre:trip-hop",
+      "type": "genre",
+      "name": "Trip-hop",
+      "family": "electronic-pioneers",
+      "period": {
+        "start": 1993,
+        "end": 2001,
+        "precision": "circa"
+      },
+      "description": "A press-coined label for downtempo, sample-based, jazz-, funk- and soul-inflected experimental breakbeat music associated with 1990s UK scenes. The Bristol Sound is related but not identical; Massive Attack, Portishead and Tricky have rejected the trip-hop label.",
+      "sources": [
+        "https://www.cambridge.org/core/journals/organised-sound/article/abs/just-dont-call-it-trip-hop-reconciling-the-bristol-sound-style-with-the-trip-hop-genre/B4944FEFB7C30977DA7CF0CB3AC07465",
+        "https://napier-repository.worktribe.com/output/4685880",
+        "https://www.allmusic.com/genre/trip-hop-ma0000002906"
+      ],
+      "phases": [
+        {
+          "start": 1993,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1995,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1998,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Approximate UK press, album and critical visibility: the label spread in 1994–95 around landmark Bristol releases, and the mid-1990s were its clearest commercial/cultural moment. The label remained in use as artists moved on; the profile is not a measure of the Bristol scene or worldwide listening."
+    },
+    {
+      "id": "genre:big-beat",
+      "type": "genre",
+      "name": "Big beat",
+      "family": "uk-continuum",
+      "period": {
+        "start": 1995,
+        "end": 2006,
+        "precision": "circa"
+      },
+      "description": "A UK-led 1990s dance style built around forceful breakbeats, rock-scale dynamics, sampled hooks and rave energy; boundaries overlap with breaks and alternative dance.",
+      "sources": [
+        "https://www.allmusic.com/genre/big-beat-ma0000004997",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1"
+      ],
+      "phases": [
+        {
+          "start": 1995,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1997,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2001,
+          "prominence": "established"
+        },
+        {
+          "start": 2005,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Approximate UK and international dance-chart visibility: Big Beat’s breakthrough gathered pace in the mid-1990s, peaked around late-1990s crossover records and receded as a named commercial wave in the early 2000s. Artists and breakbeat culture continued beyond this period."
+    },
+    {
+      "id": "genre:ambient",
+      "type": "genre",
+      "name": "Ambient",
+      "family": "electronic-pioneers",
+      "period": {
+        "start": 1975,
+        "end": 1995,
+        "precision": "circa"
+      },
+      "description": "Electronic and electroacoustic music foregrounding atmosphere, timbre and space, often reducing or removing a regular beat. Its histories include several strands and are not a single linear descent.",
+      "sources": [
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525",
+        "https://www.allmusic.com/genre/ambient-ma0000002424"
+      ]
+    },
+    {
+      "id": "genre:ambient-techno",
+      "type": "genre",
+      "name": "Ambient techno",
+      "family": "techno",
+      "period": {
+        "start": 1989,
+        "end": 1996,
+        "precision": "circa"
+      },
+      "description": "A dance-music formation combining techno/electro rhythmic frameworks with spacious ambient textures.",
+      "sources": [
+        "https://www.allmusic.com/style/ambient-techno-ma0000012032/artists",
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525"
+      ]
+    },
+    {
+      "id": "genre:idm",
+      "type": "genre",
+      "name": "IDM / intelligent dance music",
+      "family": "electronic-pioneers",
+      "period": {
+        "start": 1992,
+        "end": 2000,
+        "precision": "circa"
+      },
+      "description": "A 1990s label for experimental electronic listening music associated especially with Warp’s Artificial Intelligence releases; criticized as hierarchical, and many artists prefer other names.",
+      "sources": [
+        "https://www.allmusic.com/genre/idm-ma0000004477",
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525"
+      ]
+    },
+    {
+      "id": "genre:synthwave",
+      "type": "genre",
+      "name": "Synthwave",
+      "family": "electronic-pioneers",
+      "period": {
+        "start": 2005,
+        "end": null,
+        "precision": "circa"
+      },
+      "description": "An internet-mediated electronic genre reimagining 1980s film scores, synth-pop, game music and electronic production through nostalgic, cinematic synth textures. It emerged in the mid-2000s and gained visibility in the early 2010s.",
+      "sources": [
+        "https://online.ucpress.edu/jpms/article/33/1/70/116330/Reconstructed-NostalgiaAesthetic-Commonalities-and",
+        "https://riviste.unimi.it/index.php/sss/article/view/14136",
+        "https://www.routledge.com/Making-Synthwave-How-an-Online-Music-Community-Invented-a-Genre/Emmerson/p/book/9781032732039",
+        "https://www.allmusic.com/style/synthwave-ma0000013553"
+      ],
+      "phases": [
+        {
+          "start": 2005,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2011,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2015,
+          "prominence": "established"
+        },
+        {
+          "start": 2020,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Editorial estimate of online-community growth and broader public visibility: synthwave formed online in the mid-to-late 2000s, with a marked visibility boost around Drive (2011), then diversified into continuing scenes. This is not a popularity ranking; global audience measures are unavailable."
+    },
+    {
+      "id": "genre:darksynth",
+      "type": "genre",
+      "name": "Darksynth",
+      "family": "electronic-pioneers",
+      "period": {
+        "start": 2010,
+        "end": 2020,
+        "precision": "circa"
+      },
+      "description": "A darker, heavier synthwave tendency using horror and dystopian imagery, harsher timbres and often industrial or metal inflections; its boundaries remain porous.",
+      "sources": [
+        "https://riviste.unimi.it/index.php/sss/article/view/14136",
+        "https://www.allmusic.com/style/synthwave-ma0000013553"
+      ]
+    },
+    {
+      "id": "genre:vaporwave",
+      "type": "genre",
+      "name": "Vaporwave",
+      "family": "electronic-pioneers",
+      "period": {
+        "start": 2010,
+        "end": null,
+        "precision": "circa"
+      },
+      "description": "An internet-born music and visual culture using slowed, looped and transformed samples—often commercial, lounge and corporate soundtrack material—to engage with consumerism, nostalgia and digital circulation.",
+      "sources": [
+        "https://academic.oup.com/ml/article-abstract/98/4/601/4828180",
+        "https://www.repository.cam.ac.uk/items/a33d041f-0e86-47a2-9763-3b37a147d0aa"
+      ],
+      "phases": [
+        {
+          "start": 2010,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2012,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2015,
+          "prominence": "established"
+        },
+        {
+          "start": 2020,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Editorial outline of online genre visibility: vaporwave emerged through internet releases and forums in the early 2010s, with a rapid viral/cultural moment around 2012–14, then continued in smaller, evolving communities. Not a measure of sales or all online activity."
+    },
+    {
+      "id": "genre:chillwave",
+      "type": "genre",
+      "name": "Chillwave",
+      "family": "electronic-pioneers",
+      "period": {
+        "start": 2009,
+        "end": 2015,
+        "precision": "circa"
+      },
+      "description": "A late-2000s/early-2010s online scene and style built around hazy production, reverb, softened vocals and nostalgic pop textures, overlapping with dream pop and synth-pop.",
+      "sources": [
+        "https://www.cambridge.org/core/journals/journal-of-the-society-for-american-music/article/reverb-chillwave-and-the-disinterested-hipster/2A88D5ECA8EAFD40F62D60F38FDB64A9",
+        "https://www.allmusic.com/style/chillwave-ma0000013410"
+      ],
+      "phases": [
+        {
+          "start": 2009,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2010,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2012,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Approximate U.S. blogosphere and indie-press visibility: the tag became prominent around 2009–10 and quickly faded as a press category, even as artists and related sounds continued. This describes a short-lived label wave, not an end to the music."
+    },
+    {
+      "id": "genre:downtempo",
+      "type": "genre",
+      "name": "Downtempo",
+      "family": "electronic-pioneers",
+      "period": {
+        "start": 1989,
+        "end": 2005,
+        "precision": "circa"
+      },
+      "description": "A broad umbrella for slower electronic music and listening-oriented arrangements, spanning ambient, chill-out, trip-hop and other distinct styles rather than one unified lineage.",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/chill-out/56E251BCE9BAD5EF081F738AD3336156",
+        "https://www.allmusic.com/style/downbeat-ma0000012193"
+      ]
+    },
+    {
+      "id": "genre:electroclash",
+      "type": "genre",
+      "name": "Electroclash",
+      "family": "electronic-pioneers",
+      "period": {
+        "start": 1998,
+        "end": 2006,
+        "precision": "circa"
+      },
+      "description": "A turn-of-the-millennium club scene combining electro, synth-pop/new wave references, punk attitude and theatrical performance; also a press and nightlife label.",
+      "sources": [
+        "https://www.allmusic.com/artist/miss-kittin-mn0000497290",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1"
+      ],
+      "phases": [
+        {
+          "start": 1998,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2001,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2004,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Approximate club, press and fashion visibility: the New York/European electroclash wave reached broad profile in the early 2000s before the label lost currency. Artists and related electro-pop styles persisted."
+    },
+    {
+      "id": "genre:breakbeat",
+      "type": "genre",
+      "name": "Breakbeat",
+      "family": "uk-continuum",
+      "period": {
+        "start": 1988,
+        "end": 1996,
+        "precision": "circa"
+      },
+      "description": "A broad family of dance music organized around broken sampled or programmed drum breaks rather than a steady four-on-the-floor kick; fed hardcore, jungle and big beat.",
+      "sources": [
+        "https://api.pageplace.de/preview/DT0400.9781351568548_A30395611/preview-9781351568548_A30395611.pdf",
+        "https://www.cambridge.org/core/books/abs/popular-music-genres/funk-the-breakbeat-starts-here/55837A608444BA396211AFFCF319C2C2",
+        "https://www.allmusic.com/genre/big-beat-ma0000004997"
+      ]
+    },
+    {
+      "id": "genre:tech-house",
+      "type": "genre",
+      "name": "Tech house",
+      "family": "house",
+      "period": {
+        "start": 1994,
+        "end": 2005,
+        "precision": "circa"
+      },
+      "description": "A club style combining house grooves and arrangements with techno’s stripped-down timbres and repetition; borders with minimal techno and progressive house shift across scenes.",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1",
+        "https://www.allmusic.com/genre/tech-house-ma0000005003"
+      ]
+    },
+    {
+      "id": "genre:indie-rock",
+      "type": "genre",
+      "name": "Indie rock",
+      "family": "rock",
+      "period": {
+        "start": 1980,
+        "end": 2000,
+        "precision": "circa"
+      },
+      "description": "Rock identity that grew from independent production and distribution networks into a broad stylistic category; musical conventions vary widely by scene and decade.",
+      "sources": [
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing",
+        "https://www.tandfonline.com/doi/full/10.1080/0300776042000300972",
+        "https://www.allmusic.com/genre/alternative-indie-rock-ma0000012230"
+      ]
+    },
+    {
+      "id": "genre:garage-rock",
+      "type": "genre",
+      "name": "Garage rock",
+      "family": "rock",
+      "period": {
+        "start": 1963,
+        "end": 1970,
+        "precision": "circa"
+      },
+      "description": "Raw, stripped-down rock associated with 1960s amateur and regional bands, drawing on rock and roll, blues and R&B; the name was later revived for new scenes.",
+      "sources": [
+        "https://www.allmusic.com/genre/garage-rock-ma0000004458",
+        "https://academic.oup.com/book/6294"
+      ]
+    },
+    {
+      "id": "genre:glam-rock",
+      "type": "genre",
+      "name": "Glam rock",
+      "family": "rock",
+      "period": {
+        "start": 1971,
+        "end": 1976,
+        "precision": "circa"
+      },
+      "description": "Early-1970s British rock foregrounding theatrical performance, visual artifice, pop songwriting and amplified rock sounds.",
+      "sources": [
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/genre/glam-rock-ma0000002619"
+      ]
+    },
+    {
+      "id": "genre:shoegaze",
+      "type": "genre",
+      "name": "Shoegaze",
+      "family": "rock",
+      "period": {
+        "start": 1988,
+        "end": null,
+        "precision": "circa"
+      },
+      "description": "Late-1980s/early-1990s British indie rock marked by layered guitar effects, dense noise, blended vocals and introspective songwriting.",
+      "sources": [
+        "https://ans-names.pitt.edu/ans/article/download/2124/2123/4330",
+        "https://www.allmusic.com/genre/shoegaze-ma0000004454",
+        "https://www.allmusic.com/genre/noise-pop-ma0000012156"
+      ],
+      "phases": [
+        {
+          "start": 1988,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1991,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1994,
+          "prominence": "niche"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Editorial outline of UK music-press visibility and later critical revival: the original scene is concentrated around the turn of the 1990s, followed by reappraisal and new waves from the 2000s onward. It is not a measure of record sales or global popularity."
+    },
+    {
+      "id": "genre:dream-pop",
+      "type": "genre",
+      "name": "Dream pop",
+      "family": "rock",
+      "period": {
+        "start": 1984,
+        "end": 1995,
+        "precision": "circa"
+      },
+      "description": "Atmospheric melodic alternative pop/rock using effects, soft or blended vocals and spacious production; it overlaps with but is broader than shoegaze.",
+      "sources": [
+        "https://www.allmusic.com/genre/dream-pop-ma0000012303",
+        "https://academic.oup.com/ml/article-abstract/98/4/601/4828180"
+      ]
+    },
+    {
+      "id": "genre:britpop",
+      "type": "genre",
+      "name": "Britpop",
+      "family": "rock",
+      "period": {
+        "start": 1993,
+        "end": 2000,
+        "precision": "circa"
+      },
+      "description": "British 1990s press and industry category for guitar pop/rock foregrounding British cultural references and melodic songwriting; membership and boundaries were debated.",
+      "sources": [
+        "https://www.allmusic.com/genre/britpop-ma0000002480",
+        "https://pure.royalholloway.ac.uk/ws/portalfiles/portal/27633713/2017Luederscphd.pdf"
+      ],
+      "phases": [
+        {
+          "start": 1993,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1995,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1997,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Approximate UK chart and press visibility: Britpop’s broadest public moment was the mid-1990s, particularly 1994–96; the label and scene fragmented afterward. The shading is UK-centred and does not mark the end of British guitar music."
+    },
+    {
+      "id": "genre:emo",
+      "type": "genre",
+      "name": "Emo",
+      "family": "rock",
+      "period": {
+        "start": 1985,
+        "end": 2005,
+        "precision": "circa"
+      },
+      "description": "A family of rock styles originating in 1980s Washington, DC hardcore and expanding through 1990s indie and 2000s popular rock; meanings shifted substantially.",
+      "sources": [
+        "https://www.allmusic.com/style/emo-ma0000004447",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing"
+      ]
+    },
+    {
+      "id": "genre:post-hardcore",
+      "type": "genre",
+      "name": "Post-hardcore",
+      "family": "rock",
+      "period": {
+        "start": 1985,
+        "end": 2000,
+        "precision": "circa"
+      },
+      "description": "Diverse outgrowth of hardcore punk retaining intensity while exploring broader dynamics, structures and textures through distinct regional scenes.",
+      "sources": [
+        "https://www.allmusic.com/genre/post-hardcore-ma0000012125",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41"
+      ]
+    },
+    {
+      "id": "genre:post-rock",
+      "type": "genre",
+      "name": "Post-rock",
+      "family": "rock",
+      "period": {
+        "start": 1991,
+        "end": 2005,
+        "precision": "circa"
+      },
+      "description": "Contested term for experimental rock using rock instrumentation while moving beyond conventional song forms, often toward texture, repetition or studio construction.",
+      "sources": [
+        "https://www.allmusic.com/genre/post-rock-ma0000002790",
+        "https://academic.oup.com/book/6294"
+      ]
+    },
+    {
+      "id": "genre:math-rock",
+      "type": "genre",
+      "name": "Math rock",
+      "family": "rock",
+      "period": {
+        "start": 1988,
+        "end": 2000,
+        "precision": "circa"
+      },
+      "description": "Experimental rock associated with intricate irregular meters, angular guitar figures and tightly coordinated ensemble playing.",
+      "sources": [
+        "https://www.allmusic.com/style/math-rock-ma0000002579",
+        "https://academic.oup.com/book/6294"
+      ]
+    },
+    {
+      "id": "genre:noise-rock",
+      "type": "genre",
+      "name": "Noise rock",
+      "family": "rock",
+      "period": {
+        "start": 1980,
+        "end": 2000,
+        "precision": "circa"
+      },
+      "description": "Abrasive rock foregrounding distortion, feedback, dissonance and unconventional performance; intersects post-punk, no wave and alternative rock.",
+      "sources": [
+        "https://www.allmusic.com/genre/noise-rock-ma0000004455",
+        "https://academic.oup.com/book/6294"
+      ]
+    },
+    {
+      "id": "genre:gothic-rock",
+      "type": "genre",
+      "name": "Gothic rock",
+      "family": "rock",
+      "period": {
+        "start": 1979,
+        "end": 1990,
+        "precision": "circa"
+      },
+      "description": "Post-punk development featuring dark atmospheres, dramatic vocals and romantic or alienation themes; goth music scene overlaps with but is not identical to goth subculture.",
+      "sources": [
+        "https://www.allmusic.com/genre/rock-ma0000002623",
+        "https://academic.oup.com/book/6294"
+      ]
+    },
+    {
+      "id": "genre:pop-punk",
+      "type": "genre",
+      "name": "Pop-punk",
+      "family": "rock",
+      "period": {
+        "start": 1977,
+        "end": 2005,
+        "precision": "circa"
+      },
+      "description": "Punk-derived rock pairing brisk tempos and power-chord energy with concise melodies and pop songwriting; later waves differ from early punk-pop.",
+      "sources": [
+        "https://www.allmusic.com/style/pop-punk-ma0000004449",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41"
+      ]
+    },
+    {
+      "id": "genre:stoner-rock",
+      "type": "genre",
+      "name": "Stoner rock",
+      "family": "rock",
+      "period": {
+        "start": 1988,
+        "end": 2000,
+        "precision": "circa"
+      },
+      "description": "Heavy rock built around fuzzed guitar, low tunings, groove and extended riffs, drawing on hard rock, psychedelia and metal.",
+      "sources": [
+        "https://www.allmusic.com/style/stoner-metal-ma0000011961",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-metal-music/get-your-double-kicks-on-route-666/9B2F59F9AEC8DE60D2D7E13FD68FF3D2"
+      ]
+    },
+    {
+      "id": "genre:house",
+      "type": "genre",
+      "name": "House",
+      "family": "house",
+      "period": {
+        "start": 1980,
+        "end": null,
+        "precision": "circa"
+      },
+      "description": "A post-disco electronic dance music tradition formed in Chicago club culture and developed through Black and queer DJs, producers and dancers. It became a global family of distinct local scenes and subgenres.",
+      "sources": [
+        "https://www.allmusic.com/genre/house-ma0000002651",
+        "https://www.allmusic.com/artist/frankie-knuckles-mn0000793821",
+        "https://www.allmusic.com/artist/marshall-jefferson-mn0000373844",
+        "https://www.allmusic.com/artist/larry-heard-mn0000138578"
+      ],
+      "phases": [
+        {
+          "start": 1980,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1985,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1990,
+          "prominence": "established"
+        },
+        {
+          "start": 1996,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Editorial outline of Chicago’s early scene formation and house’s spread into a larger international club culture. The shade is not a chart or global popularity measure."
+    },
+    {
+      "id": "artist:sonics",
+      "type": "artist",
+      "name": "The Sonics",
+      "kind": "group",
+      "period": {
+        "start": 1960
+      },
+      "description": "The Sonics is represented in the cited specialist genre history.",
+      "sources": [
+        "https://www.allmusic.com/artist/the-sonics-mn0000428717"
+      ]
+    },
+    {
+      "id": "artist:13th-floor-elevators",
+      "type": "artist",
+      "name": "The 13th Floor Elevators",
+      "kind": "group",
+      "period": {
+        "start": 1966
+      },
+      "description": "The 13th Floor Elevators is represented in the cited specialist genre history.",
+      "sources": [
+        "https://www.allmusic.com/artist/mn0000504928"
+      ]
+    },
+    {
+      "id": "artist:bauhaus",
+      "type": "artist",
+      "name": "Bauhaus",
+      "kind": "group",
+      "period": {
+        "start": 1979
+      },
+      "description": "Bauhaus is represented in the cited specialist genre history.",
+      "sources": [
+        "https://www.allmusic.com/style/goth-rock-ma0000002623"
+      ]
+    },
+    {
+      "id": "artist:drive-like-jehu",
+      "type": "artist",
+      "name": "Drive Like Jehu",
+      "kind": "group",
+      "period": {
+        "start": 1991
+      },
+      "description": "Drive Like Jehu is represented in the cited specialist genre history.",
+      "sources": [
+        "https://www.allmusic.com/artist/p12820"
+      ]
+    },
+    {
+      "id": "artist:green-day",
+      "type": "artist",
+      "name": "Green Day",
+      "kind": "group",
+      "period": {
+        "start": 1987
+      },
+      "description": "Green Day is represented in the cited specialist genre history.",
+      "sources": [
+        "https://www.allmusic.com/artist/green-day-mn0000154542",
+        "https://www.allmusic.com/style/pop-punk-ma0000004449"
+      ]
+    },
+    {
+      "id": "artist:blink-182",
+      "type": "artist",
+      "name": "blink-182",
+      "kind": "group",
+      "period": {
+        "start": 1992
+      },
+      "description": "blink-182 is represented in the cited specialist genre history.",
+      "sources": [
+        "https://www.allmusic.com/artist/blink-182-mn0000757342"
+      ]
+    },
+    {
+      "id": "artist:kyuss",
+      "type": "artist",
+      "name": "Kyuss",
+      "kind": "group",
+      "period": {
+        "start": 1989
+      },
+      "description": "Kyuss is represented in the cited specialist genre history.",
+      "sources": [
+        "https://www.allmusic.com/artist/kyuss-mn0000776011/biography"
+      ]
+    },
+    {
+      "id": "artist:sleep",
+      "type": "artist",
+      "name": "Sleep",
+      "kind": "group",
+      "period": {
+        "start": 1991
+      },
+      "description": "Sleep is represented in the cited specialist genre history.",
+      "sources": [
+        "https://www.allmusic.com/style/stoner-metal-ma0000011961/artists"
+      ]
+    },
+    {
+      "id": "artist:queens-of-the-stone-age",
+      "type": "artist",
+      "name": "Queens of the Stone Age",
+      "kind": "group",
+      "period": {
+        "start": 1997
+      },
+      "description": "Queens of the Stone Age is represented in the cited specialist genre history.",
+      "sources": [
+        "https://www.allmusic.com/artist/queens-of-the-stone-age-p296068"
+      ]
+    },
+    {
+      "id": "artist:gost",
+      "type": "artist",
+      "name": "GosT",
+      "kind": "person",
+      "period": {
+        "start": 2013
+      },
+      "description": "GosT is represented in the cited specialist genre history.",
+      "sources": [
+        "https://riviste.unimi.it/index.php/sss/article/view/14136"
+      ]
+    },
+    {
+      "id": "artist:miss-kittin",
+      "type": "artist",
+      "name": "Miss Kittin",
+      "kind": "person",
+      "period": {
+        "start": 1998
+      },
+      "description": "Miss Kittin is documented in the cited specialist genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/miss-kittin-mn0000497290"
+      ]
+    },
+    {
+      "id": "artist:fischerspooner",
+      "type": "artist",
+      "name": "Fischerspooner",
+      "kind": "group",
+      "period": {
+        "start": 1998
+      },
+      "description": "Fischerspooner is documented in the cited specialist genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/fischerspooner-mn0000178051"
+      ]
+    },
+    {
+      "id": "artist:peaches",
+      "type": "artist",
+      "name": "Peaches",
+      "kind": "person",
+      "period": {
+        "start": 2000
+      },
+      "description": "Peaches is documented in the cited specialist genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/peaches-mn0000752770"
+      ]
+    },
+    {
+      "id": "artist:ewan-pearson",
+      "type": "artist",
+      "name": "Ewan Pearson",
+      "kind": "person",
+      "period": {
+        "start": 1995
+      },
+      "description": "Ewan Pearson is documented in the cited specialist genre histories and artist reference.",
+      "sources": [
+        "https://www.allmusic.com/artist/ewan-pearson-mn0000155675"
       ]
     }
   ],
@@ -8448,6 +9818,1588 @@
         "https://en.wikipedia.org/wiki/Techno",
         "https://www.theguardian.com/music/musicblog/2010/feb/15/cybotron-techno-city",
         "https://www.qobuz.com/us-en/album/enter-cybotron/x2ms9121yxjva"
+      ]
+    },
+    {
+      "id": "lineage:french-touch-house",
+      "type": "influences",
+      "from": "genre:house",
+      "to": "genre:french-touch",
+      "confidence": "medium",
+      "sources": [
+        "https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/",
+        "https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208",
+        "https://www.lemonde.fr/en/m-le-mag/article/2024/04/06/justice-s-new-quest_6667576_117.html",
+        "https://www.lemonde.fr/culture/article/2020/05/20/les-25-ans-de-la-french-touch-electro_6040208_3246.html"
+      ],
+      "note": "House and disco production practices were important ingredients, but French Touch is an umbrella for a heterogeneous French scene rather than a strict house subgenre."
+    },
+    {
+      "id": "key:daft-punk-french-touch",
+      "type": "key_artist_of",
+      "from": "artist:daft-punk",
+      "to": "genre:french-touch",
+      "confidence": "medium",
+      "sources": [
+        "https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/",
+        "https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208",
+        "https://www.allmusic.com/artist/daft-punk-mn0000950458"
+      ]
+    },
+    {
+      "id": "key:air-french-touch",
+      "type": "key_artist_of",
+      "from": "artist:air",
+      "to": "genre:french-touch",
+      "confidence": "medium",
+      "sources": [
+        "https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/",
+        "https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208",
+        "https://www.allmusic.com/artist/air-mn0000594763"
+      ]
+    },
+    {
+      "id": "key:cassius-french-touch",
+      "type": "key_artist_of",
+      "from": "artist:cassius",
+      "to": "genre:french-touch",
+      "confidence": "medium",
+      "sources": [
+        "https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/",
+        "https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208",
+        "https://www.allmusic.com/artist/cassius-mn0000794025"
+      ]
+    },
+    {
+      "id": "lineage:french-house-house",
+      "type": "subgenre_of",
+      "from": "genre:french-house",
+      "to": "genre:house",
+      "confidence": "high",
+      "sources": [
+        "https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/",
+        "https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208",
+        "https://www.allmusic.com/style/french-house-ma0000013529"
+      ]
+    },
+    {
+      "id": "key:daft-punk-french-house",
+      "type": "key_artist_of",
+      "from": "artist:daft-punk",
+      "to": "genre:french-house",
+      "confidence": "high",
+      "sources": [
+        "https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/",
+        "https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208",
+        "https://www.allmusic.com/artist/daft-punk-mn0000950458"
+      ]
+    },
+    {
+      "id": "key:cassius-french-house",
+      "type": "key_artist_of",
+      "from": "artist:cassius",
+      "to": "genre:french-house",
+      "confidence": "high",
+      "sources": [
+        "https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/",
+        "https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208",
+        "https://www.allmusic.com/artist/cassius-mn0000794025"
+      ]
+    },
+    {
+      "id": "key:motorbass-french-house",
+      "type": "key_artist_of",
+      "from": "artist:motorbass",
+      "to": "genre:french-house",
+      "confidence": "high",
+      "sources": [
+        "https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/",
+        "https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208",
+        "https://www.lemonde.fr/culture/article/2005/03/31/la-french-touch-a-l-heure-de-la-releve_633833_3246.html"
+      ]
+    },
+    {
+      "id": "lineage:trip-hop-hip-hop",
+      "type": "derived_from",
+      "from": "genre:trip-hop",
+      "to": "genre:hip-hop",
+      "confidence": "medium",
+      "sources": [
+        "https://www.cambridge.org/core/journals/organised-sound/article/abs/just-dont-call-it-trip-hop-reconciling-the-bristol-sound-style-with-the-trip-hop-genre/B4944FEFB7C30977DA7CF0CB3AC07465",
+        "https://napier-repository.worktribe.com/output/4685880",
+        "https://www.allmusic.com/genre/trip-hop-ma0000002906"
+      ],
+      "note": "Useful for reception and market history, but contested by artists and insufficient to describe the full diversity of the Bristol scene."
+    },
+    {
+      "id": "key:massive-attack-trip-hop",
+      "type": "key_artist_of",
+      "from": "artist:massive-attack",
+      "to": "genre:trip-hop",
+      "confidence": "medium",
+      "sources": [
+        "https://www.cambridge.org/core/journals/organised-sound/article/abs/just-dont-call-it-trip-hop-reconciling-the-bristol-sound-style-with-the-trip-hop-genre/B4944FEFB7C30977DA7CF0CB3AC07465",
+        "https://napier-repository.worktribe.com/output/4685880",
+        "https://www.allmusic.com/artist/massive-attack-mn0000372929"
+      ]
+    },
+    {
+      "id": "key:portishead-trip-hop",
+      "type": "key_artist_of",
+      "from": "artist:portishead",
+      "to": "genre:trip-hop",
+      "confidence": "medium",
+      "sources": [
+        "https://www.cambridge.org/core/journals/organised-sound/article/abs/just-dont-call-it-trip-hop-reconciling-the-bristol-sound-style-with-the-trip-hop-genre/B4944FEFB7C30977DA7CF0CB3AC07465",
+        "https://napier-repository.worktribe.com/output/4685880",
+        "https://www.allmusic.com/artist/portishead-mn0000300336"
+      ]
+    },
+    {
+      "id": "key:tricky-trip-hop",
+      "type": "key_artist_of",
+      "from": "artist:tricky",
+      "to": "genre:trip-hop",
+      "confidence": "medium",
+      "sources": [
+        "https://www.cambridge.org/core/journals/organised-sound/article/abs/just-dont-call-it-trip-hop-reconciling-the-bristol-sound-style-with-the-trip-hop-genre/B4944FEFB7C30977DA7CF0CB3AC07465",
+        "https://napier-repository.worktribe.com/output/4685880",
+        "https://www.allmusic.com/artist/tricky-mn0000020626"
+      ]
+    },
+    {
+      "id": "key:dj-shadow-trip-hop",
+      "type": "key_artist_of",
+      "from": "artist:dj-shadow",
+      "to": "genre:trip-hop",
+      "confidence": "medium",
+      "sources": [
+        "https://www.cambridge.org/core/journals/organised-sound/article/abs/just-dont-call-it-trip-hop-reconciling-the-bristol-sound-style-with-the-trip-hop-genre/B4944FEFB7C30977DA7CF0CB3AC07465",
+        "https://napier-repository.worktribe.com/output/4685880",
+        "https://www.allmusic.com/artist/dj-shadow-mn0000788333"
+      ]
+    },
+    {
+      "id": "lineage:big-beat-breakbeat-hardcore",
+      "type": "derived_from",
+      "from": "genre:big-beat",
+      "to": "genre:breakbeat-hardcore",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/big-beat-ma0000004997",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1"
+      ],
+      "note": "The Prodigy and Chemical Brothers predate or exceed the label in parts of their careers; genre tagging is approximate."
+    },
+    {
+      "id": "key:the-prodigy-big-beat",
+      "type": "key_artist_of",
+      "from": "artist:the-prodigy",
+      "to": "genre:big-beat",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/big-beat-ma0000004997",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1",
+        "https://en.wikipedia.org/wiki/The_Prodigy"
+      ]
+    },
+    {
+      "id": "key:chemical-brothers-big-beat",
+      "type": "key_artist_of",
+      "from": "artist:chemical-brothers",
+      "to": "genre:big-beat",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/big-beat-ma0000004997",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1",
+        "https://www.allmusic.com/artist/the-chemical-brothers-mn0000067631"
+      ]
+    },
+    {
+      "id": "key:fatboy-slim-big-beat",
+      "type": "key_artist_of",
+      "from": "artist:fatboy-slim",
+      "to": "genre:big-beat",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/big-beat-ma0000004997",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1",
+        "https://www.allmusic.com/artist/fatboy-slim-mn0000133719"
+      ]
+    },
+    {
+      "id": "lineage:ambient-krautrock",
+      "type": "influences",
+      "from": "genre:krautrock",
+      "to": "genre:ambient",
+      "confidence": "medium",
+      "sources": [
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525",
+        "https://www.allmusic.com/genre/ambient-ma0000002424"
+      ],
+      "note": "Krautrock is one documented electronic precursor among several; this edge does not claim sole origin."
+    },
+    {
+      "id": "key:brian-eno-ambient",
+      "type": "key_artist_of",
+      "from": "artist:brian-eno",
+      "to": "genre:ambient",
+      "confidence": "high",
+      "sources": [
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525",
+        "https://www.allmusic.com/genre/ambient-ma0000002424",
+        "https://www.allmusic.com/artist/brian-eno-mn0000618138"
+      ]
+    },
+    {
+      "id": "key:kraftwerk-ambient",
+      "type": "key_artist_of",
+      "from": "artist:kraftwerk",
+      "to": "genre:ambient",
+      "confidence": "high",
+      "sources": [
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525",
+        "https://www.allmusic.com/genre/ambient-ma0000002424",
+        "https://en.wikipedia.org/wiki/Kraftwerk"
+      ]
+    },
+    {
+      "id": "key:tangerine-dream-ambient",
+      "type": "key_artist_of",
+      "from": "artist:tangerine-dream",
+      "to": "genre:ambient",
+      "confidence": "high",
+      "sources": [
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525",
+        "https://www.allmusic.com/genre/ambient-ma0000002424",
+        "https://en.wikipedia.org/wiki/Tangerine_Dream"
+      ]
+    },
+    {
+      "id": "lineage:ambient-techno-techno",
+      "type": "fusion_of",
+      "from": "genre:ambient-techno",
+      "to": "genre:techno",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/ambient-techno-ma0000012032/artists",
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525"
+      ],
+      "note": "Ambient music and chill-out culture also shape this hybrid."
+    },
+    {
+      "id": "key:the-orb-ambient-techno",
+      "type": "key_artist_of",
+      "from": "artist:the-orb",
+      "to": "genre:ambient-techno",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/ambient-techno-ma0000012032/artists",
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525",
+        "https://www.allmusic.com/artist/the-orb-mn0000392646"
+      ]
+    },
+    {
+      "id": "key:richie-hawtin-ambient-techno",
+      "type": "key_artist_of",
+      "from": "artist:richie-hawtin",
+      "to": "genre:ambient-techno",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/ambient-techno-ma0000012032/artists",
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525",
+        "https://en.wikipedia.org/wiki/Richie_Hawtin"
+      ]
+    },
+    {
+      "id": "key:basic-channel-ambient-techno",
+      "type": "key_artist_of",
+      "from": "artist:basic-channel",
+      "to": "genre:ambient-techno",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/ambient-techno-ma0000012032/artists",
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525",
+        "https://en.wikipedia.org/wiki/Basic_Channel"
+      ]
+    },
+    {
+      "id": "lineage:idm-techno",
+      "type": "fusion_of",
+      "from": "genre:idm",
+      "to": "genre:techno",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/idm-ma0000004477",
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525"
+      ],
+      "note": "“Intelligent” is a historical marketing label, not a value judgement."
+    },
+    {
+      "id": "key:aphex-twin-idm",
+      "type": "key_artist_of",
+      "from": "artist:aphex-twin",
+      "to": "genre:idm",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/idm-ma0000004477",
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525",
+        "https://www.allmusic.com/artist/aphex-twin-mn0000594872"
+      ]
+    },
+    {
+      "id": "key:autechre-idm",
+      "type": "key_artist_of",
+      "from": "artist:autechre",
+      "to": "genre:idm",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/idm-ma0000004477",
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525",
+        "https://www.allmusic.com/artist/autechre-mn0000758440"
+      ]
+    },
+    {
+      "id": "key:the-orb-idm",
+      "type": "key_artist_of",
+      "from": "artist:the-orb",
+      "to": "genre:idm",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/idm-ma0000004477",
+        "https://academic.oup.com/book/44623/chapter-abstract/378621525",
+        "https://www.allmusic.com/artist/the-orb-mn0000392646"
+      ]
+    },
+    {
+      "id": "lineage:synthwave-synth-pop",
+      "type": "influences",
+      "from": "genre:synth-pop",
+      "to": "genre:synthwave",
+      "confidence": "high",
+      "sources": [
+        "https://online.ucpress.edu/jpms/article/33/1/70/116330/Reconstructed-NostalgiaAesthetic-Commonalities-and",
+        "https://riviste.unimi.it/index.php/sss/article/view/14136",
+        "https://www.routledge.com/Making-Synthwave-How-an-Online-Music-Community-Invented-a-Genre/Emmerson/p/book/9781032732039",
+        "https://www.allmusic.com/style/synthwave-ma0000013553"
+      ],
+      "note": "Outrun, retrowave and futuresynth overlap with synthwave but are not consistently exact synonyms."
+    },
+    {
+      "id": "key:kavinsky-synthwave",
+      "type": "key_artist_of",
+      "from": "artist:kavinsky",
+      "to": "genre:synthwave",
+      "confidence": "high",
+      "sources": [
+        "https://online.ucpress.edu/jpms/article/33/1/70/116330/Reconstructed-NostalgiaAesthetic-Commonalities-and",
+        "https://riviste.unimi.it/index.php/sss/article/view/14136",
+        "https://www.allmusic.com/artist/kavinsky-mn0000907351"
+      ]
+    },
+    {
+      "id": "key:college-synthwave",
+      "type": "key_artist_of",
+      "from": "artist:college",
+      "to": "genre:synthwave",
+      "confidence": "high",
+      "sources": [
+        "https://online.ucpress.edu/jpms/article/33/1/70/116330/Reconstructed-NostalgiaAesthetic-Commonalities-and",
+        "https://riviste.unimi.it/index.php/sss/article/view/14136",
+        "https://www.allmusic.com/artist/college-mn0002009347"
+      ]
+    },
+    {
+      "id": "key:com-truise-synthwave",
+      "type": "key_artist_of",
+      "from": "artist:com-truise",
+      "to": "genre:synthwave",
+      "confidence": "high",
+      "sources": [
+        "https://online.ucpress.edu/jpms/article/33/1/70/116330/Reconstructed-NostalgiaAesthetic-Commonalities-and",
+        "https://riviste.unimi.it/index.php/sss/article/view/14136",
+        "https://www.allmusic.com/artist/com-truise-mn0002534440"
+      ]
+    },
+    {
+      "id": "lineage:darksynth-synthwave",
+      "type": "subgenre_of",
+      "from": "genre:darksynth",
+      "to": "genre:synthwave",
+      "confidence": "high",
+      "sources": [
+        "https://riviste.unimi.it/index.php/sss/article/view/14136",
+        "https://www.allmusic.com/style/synthwave-ma0000013553"
+      ]
+    },
+    {
+      "id": "key:perturbator-darksynth",
+      "type": "key_artist_of",
+      "from": "artist:perturbator",
+      "to": "genre:darksynth",
+      "confidence": "high",
+      "sources": [
+        "https://riviste.unimi.it/index.php/sss/article/view/14136",
+        "https://www.allmusic.com/style/synthwave-ma0000013553",
+        "https://www.allmusic.com/artist/perturbator-mn0002975247"
+      ]
+    },
+    {
+      "id": "key:carpenter-brut-darksynth",
+      "type": "key_artist_of",
+      "from": "artist:carpenter-brut",
+      "to": "genre:darksynth",
+      "confidence": "high",
+      "sources": [
+        "https://riviste.unimi.it/index.php/sss/article/view/14136",
+        "https://www.allmusic.com/style/synthwave-ma0000013553",
+        "https://www.allmusic.com/artist/carpenter-brut-mn0003199101"
+      ]
+    },
+    {
+      "id": "key:gost-darksynth",
+      "type": "key_artist_of",
+      "from": "artist:gost",
+      "to": "genre:darksynth",
+      "confidence": "high",
+      "sources": [
+        "https://riviste.unimi.it/index.php/sss/article/view/14136",
+        "https://www.allmusic.com/style/synthwave-ma0000013553"
+      ]
+    },
+    {
+      "id": "lineage:vaporwave-hip-hop",
+      "type": "derived_from",
+      "from": "genre:vaporwave",
+      "to": "genre:hip-hop",
+      "confidence": "medium",
+      "sources": [
+        "https://academic.oup.com/ml/article-abstract/98/4/601/4828180",
+        "https://www.repository.cam.ac.uk/items/a33d041f-0e86-47a2-9763-3b37a147d0aa"
+      ],
+      "note": "It is both musical style and networked online aesthetic; boundaries are community-negotiated."
+    },
+    {
+      "id": "key:oneohtrix-point-never-vaporwave",
+      "type": "key_artist_of",
+      "from": "artist:oneohtrix-point-never",
+      "to": "genre:vaporwave",
+      "confidence": "high",
+      "sources": [
+        "https://academic.oup.com/ml/article-abstract/98/4/601/4828180",
+        "https://www.repository.cam.ac.uk/items/a33d041f-0e86-47a2-9763-3b37a147d0aa",
+        "https://www.allmusic.com/artist/oneohtrix-point-never-mn0001582159"
+      ]
+    },
+    {
+      "id": "key:macintosh-plus-vaporwave",
+      "type": "key_artist_of",
+      "from": "artist:macintosh-plus",
+      "to": "genre:vaporwave",
+      "confidence": "high",
+      "sources": [
+        "https://academic.oup.com/ml/article-abstract/98/4/601/4828180",
+        "https://www.repository.cam.ac.uk/items/a33d041f-0e86-47a2-9763-3b37a147d0aa",
+        "https://www.allmusic.com/artist/macintosh-plus-mn0002911101"
+      ]
+    },
+    {
+      "id": "key:dj-shadow-vaporwave",
+      "type": "key_artist_of",
+      "from": "artist:dj-shadow",
+      "to": "genre:vaporwave",
+      "confidence": "high",
+      "sources": [
+        "https://academic.oup.com/ml/article-abstract/98/4/601/4828180",
+        "https://www.repository.cam.ac.uk/items/a33d041f-0e86-47a2-9763-3b37a147d0aa",
+        "https://www.allmusic.com/artist/dj-shadow-mn0000788333"
+      ]
+    },
+    {
+      "id": "lineage:chillwave-synth-pop",
+      "type": "cross_pollination",
+      "from": "genre:chillwave",
+      "to": "genre:synth-pop",
+      "confidence": "medium",
+      "sources": [
+        "https://www.cambridge.org/core/journals/journal-of-the-society-for-american-music/article/reverb-chillwave-and-the-disinterested-hipster/2A88D5ECA8EAFD40F62D60F38FDB64A9",
+        "https://www.allmusic.com/style/chillwave-ma0000013410"
+      ],
+      "note": "The style grew through online genre naming and has fuzzy boundaries."
+    },
+    {
+      "id": "key:washed-out-chillwave",
+      "type": "key_artist_of",
+      "from": "artist:washed-out",
+      "to": "genre:chillwave",
+      "confidence": "medium",
+      "sources": [
+        "https://www.cambridge.org/core/journals/journal-of-the-society-for-american-music/article/reverb-chillwave-and-the-disinterested-hipster/2A88D5ECA8EAFD40F62D60F38FDB64A9",
+        "https://www.allmusic.com/style/chillwave-ma0000013410",
+        "https://www.allmusic.com/artist/washed-out-mn0001639356"
+      ]
+    },
+    {
+      "id": "key:neon-indian-chillwave",
+      "type": "key_artist_of",
+      "from": "artist:neon-indian",
+      "to": "genre:chillwave",
+      "confidence": "medium",
+      "sources": [
+        "https://www.cambridge.org/core/journals/journal-of-the-society-for-american-music/article/reverb-chillwave-and-the-disinterested-hipster/2A88D5ECA8EAFD40F62D60F38FDB64A9",
+        "https://www.allmusic.com/style/chillwave-ma0000013410",
+        "https://www.allmusic.com/artist/neon-indian-mn0002047612"
+      ]
+    },
+    {
+      "id": "key:air-chillwave",
+      "type": "key_artist_of",
+      "from": "artist:air",
+      "to": "genre:chillwave",
+      "confidence": "low",
+      "sources": [
+        "https://www.cambridge.org/core/journals/journal-of-the-society-for-american-music/article/reverb-chillwave-and-the-disinterested-hipster/2A88D5ECA8EAFD40F62D60F38FDB64A9",
+        "https://www.allmusic.com/style/chillwave-ma0000013410",
+        "https://www.allmusic.com/artist/air-mn0000594763"
+      ]
+    },
+    {
+      "id": "lineage:downtempo-ambient",
+      "type": "influences",
+      "from": "genre:ambient",
+      "to": "genre:downtempo",
+      "confidence": "medium",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/chill-out/56E251BCE9BAD5EF081F738AD3336156",
+        "https://www.allmusic.com/style/downbeat-ma0000012193"
+      ],
+      "note": "A broad umbrella, not a single tightly bounded genre."
+    },
+    {
+      "id": "key:massive-attack-downtempo",
+      "type": "key_artist_of",
+      "from": "artist:massive-attack",
+      "to": "genre:downtempo",
+      "confidence": "medium",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/chill-out/56E251BCE9BAD5EF081F738AD3336156",
+        "https://www.allmusic.com/style/downbeat-ma0000012193",
+        "https://www.allmusic.com/artist/massive-attack-mn0000372929"
+      ]
+    },
+    {
+      "id": "key:the-orb-downtempo",
+      "type": "key_artist_of",
+      "from": "artist:the-orb",
+      "to": "genre:downtempo",
+      "confidence": "medium",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/chill-out/56E251BCE9BAD5EF081F738AD3336156",
+        "https://www.allmusic.com/style/downbeat-ma0000012193",
+        "https://www.allmusic.com/artist/the-orb-mn0000392646"
+      ]
+    },
+    {
+      "id": "key:dj-shadow-downtempo",
+      "type": "key_artist_of",
+      "from": "artist:dj-shadow",
+      "to": "genre:downtempo",
+      "confidence": "medium",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/chill-out/56E251BCE9BAD5EF081F738AD3336156",
+        "https://www.allmusic.com/style/downbeat-ma0000012193",
+        "https://www.allmusic.com/artist/dj-shadow-mn0000788333"
+      ]
+    },
+    {
+      "id": "lineage:electroclash-electro",
+      "type": "fusion_of",
+      "from": "genre:electroclash",
+      "to": "genre:electro",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/artist/miss-kittin-mn0000497290",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1"
+      ],
+      "note": "Scene label and musical description overlap but are not identical."
+    },
+    {
+      "id": "lineage:breakbeat-funk",
+      "type": "derived_from",
+      "from": "genre:breakbeat",
+      "to": "genre:funk",
+      "confidence": "medium",
+      "sources": [
+        "https://api.pageplace.de/preview/DT0400.9781351568548_A30395611/preview-9781351568548_A30395611.pdf",
+        "https://www.cambridge.org/core/books/abs/popular-music-genres/funk-the-breakbeat-starts-here/55837A608444BA396211AFFCF319C2C2",
+        "https://www.allmusic.com/genre/big-beat-ma0000004997"
+      ],
+      "note": "Breakbeat dance styles draw on funk breaks and sampling; the term also names a broad rhythmic family rather than one single scene."
+    },
+    {
+      "id": "key:the-prodigy-breakbeat",
+      "type": "key_artist_of",
+      "from": "artist:the-prodigy",
+      "to": "genre:breakbeat",
+      "confidence": "high",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/chill-out/56E251BCE9BAD5EF081F738AD3336156",
+        "https://www.allmusic.com/style/breakbeat-ma0000012057",
+        "https://en.wikipedia.org/wiki/The_Prodigy"
+      ]
+    },
+    {
+      "id": "key:goldie-breakbeat",
+      "type": "key_artist_of",
+      "from": "artist:goldie",
+      "to": "genre:breakbeat",
+      "confidence": "high",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/chill-out/56E251BCE9BAD5EF081F738AD3336156",
+        "https://www.allmusic.com/style/breakbeat-ma0000012057",
+        "https://en.wikipedia.org/wiki/Goldie"
+      ]
+    },
+    {
+      "id": "key:fatboy-slim-breakbeat",
+      "type": "key_artist_of",
+      "from": "artist:fatboy-slim",
+      "to": "genre:breakbeat",
+      "confidence": "high",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/chill-out/56E251BCE9BAD5EF081F738AD3336156",
+        "https://www.allmusic.com/style/breakbeat-ma0000012057",
+        "https://www.allmusic.com/artist/fatboy-slim-mn0000133719"
+      ]
+    },
+    {
+      "id": "lineage:tech-house-house",
+      "type": "fusion_of",
+      "from": "genre:tech-house",
+      "to": "genre:house",
+      "confidence": "high",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1",
+        "https://www.allmusic.com/genre/tech-house-ma0000005003"
+      ]
+    },
+    {
+      "id": "lineage:indie-rock-alternative-rock",
+      "type": "derived_from",
+      "from": "genre:indie-rock",
+      "to": "genre:alternative-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing",
+        "https://www.tandfonline.com/doi/full/10.1080/0300776042000300972",
+        "https://www.allmusic.com/genre/alternative-indie-rock-ma0000012230"
+      ],
+      "note": "“Indie” can describe industry status, an aesthetic, or both; it is not a single sound."
+    },
+    {
+      "id": "key:rem-indie-rock",
+      "type": "key_artist_of",
+      "from": "artist:rem",
+      "to": "genre:indie-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing",
+        "https://www.tandfonline.com/doi/full/10.1080/0300776042000300972",
+        "https://en.wikipedia.org/wiki/R.E.M."
+      ]
+    },
+    {
+      "id": "key:sonic-youth-indie-rock",
+      "type": "key_artist_of",
+      "from": "artist:sonic-youth",
+      "to": "genre:indie-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing",
+        "https://www.tandfonline.com/doi/full/10.1080/0300776042000300972",
+        "https://en.wikipedia.org/wiki/Sonic_Youth"
+      ]
+    },
+    {
+      "id": "key:pixies-indie-rock",
+      "type": "key_artist_of",
+      "from": "artist:pixies",
+      "to": "genre:indie-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing",
+        "https://www.tandfonline.com/doi/full/10.1080/0300776042000300972",
+        "https://en.wikipedia.org/wiki/Pixies_(band)"
+      ]
+    },
+    {
+      "id": "lineage:garage-rock-rock-and-roll",
+      "type": "derived_from",
+      "from": "genre:garage-rock",
+      "to": "genre:rock-and-roll",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/garage-rock-ma0000004458",
+        "https://academic.oup.com/book/6294"
+      ]
+    },
+    {
+      "id": "key:sonics-garage-rock",
+      "type": "key_artist_of",
+      "from": "artist:sonics",
+      "to": "genre:garage-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/garage-rock-ma0000004458",
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/artist/the-sonics-mn0000428717"
+      ]
+    },
+    {
+      "id": "key:13th-floor-elevators-garage-rock",
+      "type": "key_artist_of",
+      "from": "artist:13th-floor-elevators",
+      "to": "genre:garage-rock",
+      "confidence": "low",
+      "sources": [
+        "https://www.allmusic.com/genre/garage-rock-ma0000004458",
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/artist/mn0000504928"
+      ]
+    },
+    {
+      "id": "key:the-stooges-garage-rock",
+      "type": "key_artist_of",
+      "from": "artist:the-stooges",
+      "to": "genre:garage-rock",
+      "confidence": "medium",
+      "sources": [
+        "https://www.allmusic.com/genre/garage-rock-ma0000004458",
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/artist/the-stooges-mn0000567138"
+      ]
+    },
+    {
+      "id": "lineage:glam-rock-rock-and-roll",
+      "type": "derived_from",
+      "from": "genre:glam-rock",
+      "to": "genre:rock-and-roll",
+      "confidence": "high",
+      "sources": [
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/genre/glam-rock-ma0000002619"
+      ],
+      "note": "Glam crosses with art rock and hard rock; later glam metal is a distinct development."
+    },
+    {
+      "id": "key:david-bowie-glam-rock",
+      "type": "key_artist_of",
+      "from": "artist:david-bowie",
+      "to": "genre:glam-rock",
+      "confidence": "high",
+      "sources": [
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/genre/glam-rock-ma0000002619",
+        "https://www.allmusic.com/artist/david-bowie-mn0000531986"
+      ]
+    },
+    {
+      "id": "key:t-rex-glam-rock",
+      "type": "key_artist_of",
+      "from": "artist:t-rex",
+      "to": "genre:glam-rock",
+      "confidence": "high",
+      "sources": [
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/genre/glam-rock-ma0000002619",
+        "https://www.allmusic.com/artist/t-rex-mn0000013364"
+      ]
+    },
+    {
+      "id": "key:queen-glam-rock",
+      "type": "key_artist_of",
+      "from": "artist:queen",
+      "to": "genre:glam-rock",
+      "confidence": "high",
+      "sources": [
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/genre/glam-rock-ma0000002619",
+        "https://www.allmusic.com/artist/queen-mn0000858827"
+      ]
+    },
+    {
+      "id": "lineage:shoegaze-indie-rock",
+      "type": "subgenre_of",
+      "from": "genre:shoegaze",
+      "to": "genre:indie-rock",
+      "confidence": "high",
+      "sources": [
+        "https://ans-names.pitt.edu/ans/article/download/2124/2123/4330",
+        "https://www.allmusic.com/genre/shoegaze-ma0000004454",
+        "https://www.allmusic.com/genre/noise-pop-ma0000012156"
+      ],
+      "note": "Retrospective label overlapping dream pop and noise pop."
+    },
+    {
+      "id": "key:my-bloody-valentine-shoegaze",
+      "type": "key_artist_of",
+      "from": "artist:my-bloody-valentine",
+      "to": "genre:shoegaze",
+      "confidence": "high",
+      "sources": [
+        "https://ans-names.pitt.edu/ans/article/download/2124/2123/4330",
+        "https://www.allmusic.com/genre/shoegaze-ma0000004454",
+        "https://www.allmusic.com/artist/my-bloody-valentine-mn0000514219"
+      ]
+    },
+    {
+      "id": "key:slowdive-shoegaze",
+      "type": "key_artist_of",
+      "from": "artist:slowdive",
+      "to": "genre:shoegaze",
+      "confidence": "high",
+      "sources": [
+        "https://ans-names.pitt.edu/ans/article/download/2124/2123/4330",
+        "https://www.allmusic.com/genre/shoegaze-ma0000004454",
+        "https://www.allmusic.com/artist/slowdive-mn0000030431"
+      ]
+    },
+    {
+      "id": "key:ride-shoegaze",
+      "type": "key_artist_of",
+      "from": "artist:ride",
+      "to": "genre:shoegaze",
+      "confidence": "high",
+      "sources": [
+        "https://ans-names.pitt.edu/ans/article/download/2124/2123/4330",
+        "https://www.allmusic.com/genre/shoegaze-ma0000004454",
+        "https://www.allmusic.com/artist/ride-mn0000354574"
+      ]
+    },
+    {
+      "id": "lineage:dream-pop-alternative-rock",
+      "type": "subgenre_of",
+      "from": "genre:dream-pop",
+      "to": "genre:alternative-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/dream-pop-ma0000012303",
+        "https://academic.oup.com/ml/article-abstract/98/4/601/4828180"
+      ]
+    },
+    {
+      "id": "key:the-cure-dream-pop",
+      "type": "key_artist_of",
+      "from": "artist:the-cure",
+      "to": "genre:dream-pop",
+      "confidence": "medium",
+      "sources": [
+        "https://www.allmusic.com/genre/dream-pop-ma0000012303",
+        "https://academic.oup.com/ml/article-abstract/98/4/601/4828180",
+        "https://en.wikipedia.org/wiki/The_Cure"
+      ]
+    },
+    {
+      "id": "key:slowdive-dream-pop",
+      "type": "key_artist_of",
+      "from": "artist:slowdive",
+      "to": "genre:dream-pop",
+      "confidence": "medium",
+      "sources": [
+        "https://www.allmusic.com/genre/dream-pop-ma0000012303",
+        "https://academic.oup.com/ml/article-abstract/98/4/601/4828180",
+        "https://www.allmusic.com/artist/slowdive-mn0000030431"
+      ]
+    },
+    {
+      "id": "key:my-bloody-valentine-dream-pop",
+      "type": "key_artist_of",
+      "from": "artist:my-bloody-valentine",
+      "to": "genre:dream-pop",
+      "confidence": "medium",
+      "sources": [
+        "https://www.allmusic.com/genre/dream-pop-ma0000012303",
+        "https://academic.oup.com/ml/article-abstract/98/4/601/4828180",
+        "https://www.allmusic.com/artist/my-bloody-valentine-mn0000514219"
+      ]
+    },
+    {
+      "id": "lineage:britpop-indie-rock",
+      "type": "subgenre_of",
+      "from": "genre:britpop",
+      "to": "genre:indie-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/britpop-ma0000002480",
+        "https://pure.royalholloway.ac.uk/ws/portalfiles/portal/27633713/2017Luederscphd.pdf"
+      ],
+      "note": "Scene and media formation as well as sound; associated artists differed substantially."
+    },
+    {
+      "id": "key:blur-britpop",
+      "type": "key_artist_of",
+      "from": "artist:blur",
+      "to": "genre:britpop",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/britpop-ma0000002480",
+        "https://pure.royalholloway.ac.uk/ws/portalfiles/portal/27633713/2017Luederscphd.pdf",
+        "https://www.allmusic.com/artist/blur-mn0000758444"
+      ]
+    },
+    {
+      "id": "key:oasis-britpop",
+      "type": "key_artist_of",
+      "from": "artist:oasis",
+      "to": "genre:britpop",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/britpop-ma0000002480",
+        "https://pure.royalholloway.ac.uk/ws/portalfiles/portal/27633713/2017Luederscphd.pdf",
+        "https://www.allmusic.com/artist/oasis-mn0000393340"
+      ]
+    },
+    {
+      "id": "key:suede-britpop",
+      "type": "key_artist_of",
+      "from": "artist:suede",
+      "to": "genre:britpop",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/britpop-ma0000002480",
+        "https://pure.royalholloway.ac.uk/ws/portalfiles/portal/27633713/2017Luederscphd.pdf",
+        "https://www.allmusic.com/artist/suede-mn0000586694"
+      ]
+    },
+    {
+      "id": "lineage:emo-punk-rock",
+      "type": "derived_from",
+      "from": "genre:emo",
+      "to": "genre:punk-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/emo-ma0000004447",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing"
+      ],
+      "note": "Early emotional hardcore, indie emo and 2000s emo-pop should not be collapsed."
+    },
+    {
+      "id": "key:fugazi-emo",
+      "type": "key_artist_of",
+      "from": "artist:fugazi",
+      "to": "genre:emo",
+      "confidence": "medium",
+      "sources": [
+        "https://www.allmusic.com/style/emo-ma0000004447",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing",
+        "https://www.allmusic.com/artist/fugazi-mn0000183938"
+      ]
+    },
+    {
+      "id": "key:sunny-day-real-estate-emo",
+      "type": "key_artist_of",
+      "from": "artist:sunny-day-real-estate",
+      "to": "genre:emo",
+      "confidence": "medium",
+      "sources": [
+        "https://www.allmusic.com/style/emo-ma0000004447",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing",
+        "https://www.allmusic.com/artist/sunny-day-real-estate-mn0000750446"
+      ]
+    },
+    {
+      "id": "key:pixies-emo",
+      "type": "key_artist_of",
+      "from": "artist:pixies",
+      "to": "genre:emo",
+      "confidence": "low",
+      "sources": [
+        "https://www.allmusic.com/style/emo-ma0000004447",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing",
+        "https://en.wikipedia.org/wiki/Pixies_(band)"
+      ]
+    },
+    {
+      "id": "lineage:post-hardcore-punk-rock",
+      "type": "derived_from",
+      "from": "genre:post-hardcore",
+      "to": "genre:punk-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/post-hardcore-ma0000012125",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41"
+      ]
+    },
+    {
+      "id": "key:fugazi-post-hardcore",
+      "type": "key_artist_of",
+      "from": "artist:fugazi",
+      "to": "genre:post-hardcore",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/post-hardcore-ma0000012125",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41",
+        "https://www.allmusic.com/artist/fugazi-mn0000183938"
+      ]
+    },
+    {
+      "id": "key:at-the-drive-in-post-hardcore",
+      "type": "key_artist_of",
+      "from": "artist:at-the-drive-in",
+      "to": "genre:post-hardcore",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/post-hardcore-ma0000012125",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41",
+        "https://www.allmusic.com/artist/at-the-drive-in-mn0000040341"
+      ]
+    },
+    {
+      "id": "key:drive-like-jehu-post-hardcore",
+      "type": "key_artist_of",
+      "from": "artist:drive-like-jehu",
+      "to": "genre:post-hardcore",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/post-hardcore-ma0000012125",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41",
+        "https://www.allmusic.com/artist/p12820"
+      ]
+    },
+    {
+      "id": "lineage:post-rock-alternative-rock",
+      "type": "derived_from",
+      "from": "genre:post-rock",
+      "to": "genre:alternative-rock",
+      "confidence": "medium",
+      "sources": [
+        "https://www.allmusic.com/genre/post-rock-ma0000002790",
+        "https://academic.oup.com/book/6294"
+      ],
+      "note": "Covers diverse practices and has been criticized for implying a single coherent style."
+    },
+    {
+      "id": "key:mogwai-post-rock",
+      "type": "key_artist_of",
+      "from": "artist:mogwai",
+      "to": "genre:post-rock",
+      "confidence": "medium",
+      "sources": [
+        "https://www.allmusic.com/genre/post-rock-ma0000002790",
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/artist/mogwai-mn0000488946"
+      ]
+    },
+    {
+      "id": "key:slint-post-rock",
+      "type": "key_artist_of",
+      "from": "artist:slint",
+      "to": "genre:post-rock",
+      "confidence": "medium",
+      "sources": [
+        "https://www.allmusic.com/genre/post-rock-ma0000002790",
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/artist/slint-mn0000024110"
+      ]
+    },
+    {
+      "id": "key:godspeed-you-black-emperor-post-rock",
+      "type": "key_artist_of",
+      "from": "artist:godspeed-you-black-emperor",
+      "to": "genre:post-rock",
+      "confidence": "medium",
+      "sources": [
+        "https://www.allmusic.com/genre/post-rock-ma0000002790",
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/artist/godspeed-you-black-emperor-mn0000666754"
+      ]
+    },
+    {
+      "id": "lineage:math-rock-indie-rock",
+      "type": "derived_from",
+      "from": "genre:math-rock",
+      "to": "genre:indie-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/math-rock-ma0000002579",
+        "https://academic.oup.com/book/6294"
+      ],
+      "note": "A descriptive shorthand for a loose field, not a universally bounded genre."
+    },
+    {
+      "id": "key:slint-math-rock",
+      "type": "key_artist_of",
+      "from": "artist:slint",
+      "to": "genre:math-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/math-rock-ma0000002579",
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/artist/slint-mn0000024110"
+      ]
+    },
+    {
+      "id": "key:king-crimson-math-rock",
+      "type": "key_artist_of",
+      "from": "artist:king-crimson",
+      "to": "genre:math-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/math-rock-ma0000002579",
+        "https://academic.oup.com/book/6294",
+        "https://en.wikipedia.org/wiki/King_Crimson"
+      ]
+    },
+    {
+      "id": "key:sonic-youth-math-rock",
+      "type": "key_artist_of",
+      "from": "artist:sonic-youth",
+      "to": "genre:math-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/math-rock-ma0000002579",
+        "https://academic.oup.com/book/6294",
+        "https://en.wikipedia.org/wiki/Sonic_Youth"
+      ]
+    },
+    {
+      "id": "lineage:noise-rock-punk-rock",
+      "type": "derived_from",
+      "from": "genre:noise-rock",
+      "to": "genre:punk-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/noise-rock-ma0000004455",
+        "https://academic.oup.com/book/6294"
+      ]
+    },
+    {
+      "id": "key:sonic-youth-noise-rock",
+      "type": "key_artist_of",
+      "from": "artist:sonic-youth",
+      "to": "genre:noise-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/noise-rock-ma0000004455",
+        "https://academic.oup.com/book/6294",
+        "https://en.wikipedia.org/wiki/Sonic_Youth"
+      ]
+    },
+    {
+      "id": "key:pixies-noise-rock",
+      "type": "key_artist_of",
+      "from": "artist:pixies",
+      "to": "genre:noise-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/noise-rock-ma0000004455",
+        "https://academic.oup.com/book/6294",
+        "https://en.wikipedia.org/wiki/Pixies_(band)"
+      ]
+    },
+    {
+      "id": "key:the-stooges-noise-rock",
+      "type": "key_artist_of",
+      "from": "artist:the-stooges",
+      "to": "genre:noise-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/noise-rock-ma0000004455",
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/artist/the-stooges-mn0000567138"
+      ]
+    },
+    {
+      "id": "lineage:gothic-rock-post-punk",
+      "type": "subgenre_of",
+      "from": "genre:gothic-rock",
+      "to": "genre:post-punk",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/rock-ma0000002623",
+        "https://academic.oup.com/book/6294"
+      ]
+    },
+    {
+      "id": "key:the-cure-gothic-rock",
+      "type": "key_artist_of",
+      "from": "artist:the-cure",
+      "to": "genre:gothic-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/rock-ma0000002623",
+        "https://academic.oup.com/book/6294",
+        "https://en.wikipedia.org/wiki/The_Cure"
+      ]
+    },
+    {
+      "id": "key:joy-division-gothic-rock",
+      "type": "key_artist_of",
+      "from": "artist:joy-division",
+      "to": "genre:gothic-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/rock-ma0000002623",
+        "https://academic.oup.com/book/6294",
+        "https://en.wikipedia.org/wiki/Joy_Division"
+      ]
+    },
+    {
+      "id": "key:bauhaus-gothic-rock",
+      "type": "key_artist_of",
+      "from": "artist:bauhaus",
+      "to": "genre:gothic-rock",
+      "confidence": "low",
+      "sources": [
+        "https://www.allmusic.com/genre/rock-ma0000002623",
+        "https://academic.oup.com/book/6294",
+        "https://www.allmusic.com/style/goth-rock-ma0000002623"
+      ]
+    },
+    {
+      "id": "lineage:pop-punk-punk-rock",
+      "type": "subgenre_of",
+      "from": "genre:pop-punk",
+      "to": "genre:punk-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/pop-punk-ma0000004449",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41"
+      ]
+    },
+    {
+      "id": "key:ramones-pop-punk",
+      "type": "key_artist_of",
+      "from": "artist:ramones",
+      "to": "genre:pop-punk",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/pop-punk-ma0000004449",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41",
+        "https://en.wikipedia.org/wiki/Ramones"
+      ]
+    },
+    {
+      "id": "key:green-day-pop-punk",
+      "type": "key_artist_of",
+      "from": "artist:green-day",
+      "to": "genre:pop-punk",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/pop-punk-ma0000004449",
+        "https://www.allmusic.com/artist/green-day-mn0000154542"
+      ]
+    },
+    {
+      "id": "key:blink-182-pop-punk",
+      "type": "key_artist_of",
+      "from": "artist:blink-182",
+      "to": "genre:pop-punk",
+      "confidence": "low",
+      "sources": [
+        "https://www.allmusic.com/style/pop-punk-ma0000004449",
+        "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41",
+        "https://www.allmusic.com/artist/blink-182-mn0000757342"
+      ]
+    },
+    {
+      "id": "lineage:stoner-rock-hard-rock",
+      "type": "fusion_of",
+      "from": "genre:stoner-rock",
+      "to": "genre:hard-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/stoner-metal-ma0000011961",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-metal-music/get-your-double-kicks-on-route-666/9B2F59F9AEC8DE60D2D7E13FD68FF3D2"
+      ]
+    },
+    {
+      "id": "key:kyuss-stoner-rock",
+      "type": "key_artist_of",
+      "from": "artist:kyuss",
+      "to": "genre:stoner-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/stoner-metal-ma0000011961",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-metal-music/get-your-double-kicks-on-route-666/9B2F59F9AEC8DE60D2D7E13FD68FF3D2",
+        "https://www.allmusic.com/artist/kyuss-mn0000776011/biography"
+      ]
+    },
+    {
+      "id": "key:sleep-stoner-rock",
+      "type": "key_artist_of",
+      "from": "artist:sleep",
+      "to": "genre:stoner-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/stoner-metal-ma0000011961",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-metal-music/get-your-double-kicks-on-route-666/9B2F59F9AEC8DE60D2D7E13FD68FF3D2",
+        "https://www.allmusic.com/style/stoner-metal-ma0000011961/artists"
+      ]
+    },
+    {
+      "id": "key:queens-of-the-stone-age-stoner-rock",
+      "type": "key_artist_of",
+      "from": "artist:queens-of-the-stone-age",
+      "to": "genre:stoner-rock",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/style/stoner-metal-ma0000011961",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-metal-music/get-your-double-kicks-on-route-666/9B2F59F9AEC8DE60D2D7E13FD68FF3D2",
+        "https://www.allmusic.com/artist/queens-of-the-stone-age-p296068"
+      ]
+    },
+    {
+      "id": "lineage:french-house-french-touch",
+      "type": "subgenre_of",
+      "from": "genre:french-house",
+      "to": "genre:french-touch",
+      "confidence": "high",
+      "note": "French house is one central musical branch associated with French Touch; the terms are often conflated but are not synonyms, and French Touch also covers adjacent sounds and a broader scene.",
+      "sources": [
+        "https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/",
+        "https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208",
+        "https://www.lemonde.fr/en/m-le-mag/article/2024/04/06/justice-s-new-quest_6667576_117.html"
+      ]
+    },
+    {
+      "id": "lineage:house-disco",
+      "type": "derived_from",
+      "from": "genre:house",
+      "to": "genre:disco",
+      "confidence": "high",
+      "note": "Chicago house developed from post-disco club culture, reshaping disco records and DJ practices through drum machines and local production.",
+      "sources": [
+        "https://www.allmusic.com/genre/house-ma0000002651",
+        "https://www.allmusic.com/artist/frankie-knuckles-mn0000793821",
+        "https://www.allmusic.com/artist/marshall-jefferson-mn0000373844",
+        "https://www.allmusic.com/artist/larry-heard-mn0000138578"
+      ]
+    },
+    {
+      "id": "key:frankie-knuckles-house",
+      "type": "key_artist_of",
+      "from": "artist:frankie-knuckles",
+      "to": "genre:house",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/house-ma0000002651",
+        "https://www.allmusic.com/artist/frankie-knuckles-mn0000793821",
+        "https://www.allmusic.com/artist/marshall-jefferson-mn0000373844",
+        "https://www.allmusic.com/artist/larry-heard-mn0000138578"
+      ]
+    },
+    {
+      "id": "key:marshall-jefferson-house",
+      "type": "key_artist_of",
+      "from": "artist:marshall-jefferson",
+      "to": "genre:house",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/house-ma0000002651",
+        "https://www.allmusic.com/artist/frankie-knuckles-mn0000793821",
+        "https://www.allmusic.com/artist/marshall-jefferson-mn0000373844",
+        "https://www.allmusic.com/artist/larry-heard-mn0000138578"
+      ]
+    },
+    {
+      "id": "key:larry-heard-house",
+      "type": "key_artist_of",
+      "from": "artist:larry-heard",
+      "to": "genre:house",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/house-ma0000002651",
+        "https://www.allmusic.com/artist/frankie-knuckles-mn0000793821",
+        "https://www.allmusic.com/artist/marshall-jefferson-mn0000373844",
+        "https://www.allmusic.com/artist/larry-heard-mn0000138578"
+      ]
+    },
+    {
+      "id": "lineage:french-house-disco",
+      "type": "influences",
+      "from": "genre:disco",
+      "to": "genre:french-house",
+      "confidence": "high",
+      "note": "French house producers prominently sampled and filtered disco and funk records; disco is an influence, not a sole parent.",
+      "sources": [
+        "https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/",
+        "https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208"
+      ]
+    },
+    {
+      "id": "lineage:post-punk-trip-hop",
+      "type": "influences",
+      "from": "genre:post-punk",
+      "to": "genre:trip-hop",
+      "confidence": "medium",
+      "note": "Bristol producers drew on local post-punk as well as hip-hop and reggae sound-system cultures; this records one strand of influence.",
+      "sources": [
+        "https://napier-repository.worktribe.com/output/4685880",
+        "https://www.cambridge.org/core/journals/organised-sound/article/abs/just-dont-call-it-trip-hop-reconciling-the-bristol-sound-style-with-the-trip-hop-genre/B4944FEFB7C30977DA7CF0CB3AC07465"
+      ]
+    },
+    {
+      "id": "lineage:tech-house-techno",
+      "type": "fusion_of",
+      "from": "genre:tech-house",
+      "to": "genre:techno",
+      "confidence": "high",
+      "note": "Tech-house blends house groove with techno’s stripped-down textures and repetition.",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1",
+        "https://www.allmusic.com/genre/tech-house-ma0000005003"
+      ]
+    },
+    {
+      "id": "lineage:electroclash-synth-pop",
+      "type": "fusion_of",
+      "from": "genre:electroclash",
+      "to": "genre:synth-pop",
+      "confidence": "high",
+      "note": "Electroclash revived and recombined synth-pop and new-wave signifiers with electro and punk club culture.",
+      "sources": [
+        "https://www.allmusic.com/artist/miss-kittin-mn0000497290",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1"
+      ]
+    },
+    {
+      "id": "lineage:stoner-rock-psychedelic-rock",
+      "type": "fusion_of",
+      "from": "genre:stoner-rock",
+      "to": "genre:psychedelic-rock",
+      "confidence": "high",
+      "note": "The style combines hard-rock weight with psychedelic, extended-riff practice.",
+      "sources": [
+        "https://www.allmusic.com/style/stoner-metal-ma0000011961",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-metal-music/get-your-double-kicks-on-route-666/9B2F59F9AEC8DE60D2D7E13FD68FF3D2"
+      ]
+    },
+    {
+      "id": "lineage:stoner-rock-heavy-metal",
+      "type": "fusion_of",
+      "from": "genre:stoner-rock",
+      "to": "genre:heavy-metal",
+      "confidence": "high",
+      "note": "Heavy-metal riff weight is one of the style’s documented ingredients, alongside hard rock and psychedelia.",
+      "sources": [
+        "https://www.allmusic.com/style/stoner-metal-ma0000011961",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-metal-music/get-your-double-kicks-on-route-666/9B2F59F9AEC8DE60D2D7E13FD68FF3D2"
+      ]
+    },
+    {
+      "id": "lineage:breakbeat-breakbeat-hardcore",
+      "type": "influences",
+      "from": "genre:breakbeat",
+      "to": "genre:breakbeat-hardcore",
+      "confidence": "high",
+      "note": "The broken-beat rhythmic vocabulary informed this later scene, though each developed distinct local conventions.",
+      "sources": [
+        "https://api.pageplace.de/preview/DT0400.9781351568548_A30395611/preview-9781351568548_A30395611.pdf",
+        "https://www.cambridge.org/core/books/abs/popular-music-genres/funk-the-breakbeat-starts-here/55837A608444BA396211AFFCF319C2C2",
+        "https://www.allmusic.com/genre/big-beat-ma0000004997"
+      ]
+    },
+    {
+      "id": "lineage:breakbeat-jungle",
+      "type": "influences",
+      "from": "genre:breakbeat",
+      "to": "genre:jungle",
+      "confidence": "high",
+      "note": "The broken-beat rhythmic vocabulary informed this later scene, though each developed distinct local conventions.",
+      "sources": [
+        "https://api.pageplace.de/preview/DT0400.9781351568548_A30395611/preview-9781351568548_A30395611.pdf",
+        "https://www.cambridge.org/core/books/abs/popular-music-genres/funk-the-breakbeat-starts-here/55837A608444BA396211AFFCF319C2C2",
+        "https://www.allmusic.com/genre/big-beat-ma0000004997"
+      ]
+    },
+    {
+      "id": "lineage:breakbeat-big-beat",
+      "type": "influences",
+      "from": "genre:breakbeat",
+      "to": "genre:big-beat",
+      "confidence": "high",
+      "note": "The broken-beat rhythmic vocabulary informed this later scene, though each developed distinct local conventions.",
+      "sources": [
+        "https://api.pageplace.de/preview/DT0400.9781351568548_A30395611/preview-9781351568548_A30395611.pdf",
+        "https://www.cambridge.org/core/books/abs/popular-music-genres/funk-the-breakbeat-starts-here/55837A608444BA396211AFFCF319C2C2",
+        "https://www.allmusic.com/genre/big-beat-ma0000004997"
+      ]
+    },
+    {
+      "id": "key:miss-kittin-tech-house",
+      "type": "key_artist_of",
+      "from": "artist:miss-kittin",
+      "to": "genre:tech-house",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/tech-house-ma0000005003",
+        "https://www.allmusic.com/artist/ewan-pearson-mn0000155675",
+        "https://www.allmusic.com/artist/ricardo-villalobos-mn0000472894",
+        "https://www.allmusic.com/artist/miss-kittin-mn0000497290"
+      ]
+    },
+    {
+      "id": "key:ewan-pearson-tech-house",
+      "type": "key_artist_of",
+      "from": "artist:ewan-pearson",
+      "to": "genre:tech-house",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/tech-house-ma0000005003",
+        "https://www.allmusic.com/artist/ewan-pearson-mn0000155675",
+        "https://www.allmusic.com/artist/ricardo-villalobos-mn0000472894"
+      ]
+    },
+    {
+      "id": "key:ricardo-villalobos-tech-house",
+      "type": "key_artist_of",
+      "from": "artist:ricardo-villalobos",
+      "to": "genre:tech-house",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/genre/tech-house-ma0000005003",
+        "https://www.allmusic.com/artist/ewan-pearson-mn0000155675",
+        "https://www.allmusic.com/artist/ricardo-villalobos-mn0000472894",
+        "https://en.wikipedia.org/wiki/Ricardo_Villalobos"
+      ]
+    },
+    {
+      "id": "key:miss-kittin-electroclash",
+      "type": "key_artist_of",
+      "from": "artist:miss-kittin",
+      "to": "genre:electroclash",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/album/electroklash-urban-theory--mw0000222954",
+        "https://www.allmusic.com/artist/miss-kittin-mn0000497290",
+        "https://ra.co/features/4493"
+      ]
+    },
+    {
+      "id": "key:fischerspooner-electroclash",
+      "type": "key_artist_of",
+      "from": "artist:fischerspooner",
+      "to": "genre:electroclash",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/album/electroklash-urban-theory--mw0000222954",
+        "https://www.allmusic.com/artist/miss-kittin-mn0000497290",
+        "https://www.allmusic.com/artist/fischerspooner-mn0000178051",
+        "https://www.allmusic.com/artist/peaches-mn0000752770"
+      ]
+    },
+    {
+      "id": "key:peaches-electroclash",
+      "type": "key_artist_of",
+      "from": "artist:peaches",
+      "to": "genre:electroclash",
+      "confidence": "high",
+      "sources": [
+        "https://www.allmusic.com/album/electroklash-urban-theory--mw0000222954",
+        "https://www.allmusic.com/artist/miss-kittin-mn0000497290",
+        "https://www.allmusic.com/artist/fischerspooner-mn0000178051",
+        "https://www.allmusic.com/artist/peaches-mn0000752770"
       ]
     }
   ]
