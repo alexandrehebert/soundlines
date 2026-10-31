@@ -116,51 +116,81 @@ export function Timeline({
     return { nodes, edges: result.edges }
   }, [focusId, index])
 
-  // Zoom with a non-passive wheel listener so preventDefault works.
+  // Non-passive wheel listener: pinch or cmd/ctrl+scroll zooms, horizontal
+  // scroll pans time, and plain vertical scroll falls through to the
+  // container's native scrolling.
   useEffect(() => {
     const element = containerRef.current
     if (!element) return
     const onWheel = (event: WheelEvent) => {
-      event.preventDefault()
-      const rect = element.getBoundingClientRect()
-      const focusYear = xToYear(
-        { start: viewRange[0], end: viewRange[1], width: rect.width },
-        event.clientX - rect.left,
-      )
-      const factor = event.deltaY > 0 ? 1.12 : 0.89
-      onViewRangeChange(
-        zoomRange(viewRange[0], viewRange[1], focusYear, factor, MIN_YEAR, MAX_YEAR),
-      )
+      if (event.ctrlKey || event.metaKey) {
+        event.preventDefault()
+        const rect = element.getBoundingClientRect()
+        const focusYear = xToYear(
+          { start: viewRange[0], end: viewRange[1], width: rect.width },
+          event.clientX - rect.left,
+        )
+        const factor = event.deltaY > 0 ? 1.12 : 0.89
+        onViewRangeChange(
+          zoomRange(viewRange[0], viewRange[1], focusYear, factor, MIN_YEAR, MAX_YEAR),
+        )
+      } else if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
+        event.preventDefault()
+        const rect = element.getBoundingClientRect()
+        const deltaYears = (event.deltaX / rect.width) * (viewRange[1] - viewRange[0])
+        onViewRangeChange(panRange(viewRange[0], viewRange[1], deltaYears, MIN_YEAR, MAX_YEAR))
+      }
     }
     element.addEventListener('wheel', onWheel, { passive: false })
     return () => element.removeEventListener('wheel', onWheel)
   }, [viewRange, onViewRangeChange])
 
-  const drag = useRef<{ startX: number; range: [number, number]; moved: boolean } | null>(null)
+  const drag = useRef<{
+    startX: number
+    startY: number
+    range: [number, number]
+    scrollTop: number
+    moved: boolean
+  } | null>(null)
 
   const onPointerDown = (event: React.PointerEvent) => {
-    drag.current = { startX: event.clientX, range: viewRange, moved: false }
+    drag.current = {
+      startX: event.clientX,
+      startY: event.clientY,
+      range: viewRange,
+      scrollTop: containerRef.current?.scrollTop ?? 0,
+      moved: false,
+    }
     ;(event.target as Element).setPointerCapture?.(event.pointerId)
   }
 
   const onPointerMove = (event: React.PointerEvent) => {
     if (!drag.current || width === 0) return
     const dx = event.clientX - drag.current.startX
-    if (Math.abs(dx) > 3) drag.current.moved = true
+    const dy = event.clientY - drag.current.startY
+    if (Math.abs(dx) > 3 || Math.abs(dy) > 3) drag.current.moved = true
     if (!drag.current.moved) return
     const [start, end] = drag.current.range
     const deltaYears = (-dx / width) * (end - start)
     onViewRangeChange(panRange(start, end, deltaYears, MIN_YEAR, MAX_YEAR))
+    if (containerRef.current) {
+      containerRef.current.scrollTop = drag.current.scrollTop - dy
+    }
   }
+
+  // `click` fires after pointerup (which clears `drag`), so remember whether
+  // the gesture was a drag to suppress the click that follows it.
+  const suppressClick = useRef(false)
 
   const onPointerUp = () => {
     const moved = drag.current?.moved ?? false
+    suppressClick.current = moved
     drag.current = null
     if (!moved) setHoveredId(null)
   }
 
   const onBackgroundClick = () => {
-    if (!drag.current?.moved) onSelect(null)
+    if (!suppressClick.current) onSelect(null)
   }
 
   const artistMarkers = useMemo(() => {
@@ -282,7 +312,7 @@ export function Timeline({
                 onPointerLeave={() => setHoveredId(null)}
                 onClick={(event) => {
                   event.stopPropagation()
-                  if (!drag.current?.moved) onSelect(bar.node.id)
+                  if (!suppressClick.current) onSelect(bar.node.id)
                 }}
               >
                 {/* opaque base so lines never bleed through the translucent fill */}
@@ -330,7 +360,7 @@ export function Timeline({
               style={{ cursor: 'pointer' }}
               onClick={(event) => {
                 event.stopPropagation()
-                if (!drag.current?.moved) onSelect(marker.id)
+                if (!suppressClick.current) onSelect(marker.id)
               }}
             >
               <circle

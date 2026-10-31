@@ -137,7 +137,7 @@ function App() {
       </main>
 
       <footer className="border-t border-slate-800/60 bg-slate-950/90 px-5 py-1.5 text-[11px] font-medium text-slate-600">
-        Scroll to zoom · drag to pan · click a bar or marker for details
+        Drag or scroll to move · pinch or ⌘ scroll to zoom · click a bar or marker for details
       </footer>
     </div>
   )
