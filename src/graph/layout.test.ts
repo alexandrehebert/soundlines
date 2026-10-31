@@ -67,6 +67,20 @@ describe('layoutFamilies', () => {
     const names = lanes.flatMap((lane) => lane.bars.map((bar) => bar.node.name))
     expect(names).not.toContain('X')
   })
+
+  it('lets later genres reuse the row of a hidden trailing niche period', () => {
+    const lanes = layoutFamilies({
+      version: 1,
+      nodes: [
+        { id: 'genre:old', type: 'genre', name: 'Old', family: 'house', period: { start: 1970 },
+          phases: [{ start: 1970, prominence: 'golden-age' }, { start: 1980, prominence: 'niche' }] },
+        { id: 'genre:new', type: 'genre', name: 'New', family: 'house', period: { start: 1985 } },
+      ],
+      edges: [],
+    }, 2026)
+    expect(lanes[0].rowCount).toBe(1)
+    expect(lanes[0].bars.find((bar) => bar.node.name === 'Old')!.end).toBe(2026)
+  })
 })
 
 describe('zoomRange', () => {

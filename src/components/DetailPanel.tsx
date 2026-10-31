@@ -79,8 +79,13 @@ export function DetailPanel({ index, nodeId, onSelect }: DetailPanelProps) {
                 <li key={phase.start} className="flex items-center justify-between gap-3 text-xs text-slate-300">
                   <span className="flex items-center gap-2">
                     <svg width="24" height="14" aria-hidden="true">
-                      <rect x="0" y="2" width="24" height="10" rx="3"
-                        fill={typeColor} opacity={PHASE_STYLE[phase.prominence].opacity} />
+                      {PHASE_STYLE[phase.prominence].visible ? (
+                        <rect x="0" y="2" width="24" height="10" rx="3"
+                          fill={typeColor} opacity={PHASE_STYLE[phase.prominence].opacity} />
+                      ) : (
+                        <rect x="0.5" y="2.5" width="23" height="9" rx="3"
+                          fill="none" stroke="#475569" strokeDasharray="2 2" />
+                      )}
                     </svg>
                     {PROMINENCE_LABELS[phase.prominence]}
                   </span>

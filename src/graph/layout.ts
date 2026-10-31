@@ -4,6 +4,7 @@ import {
   type GraphNode,
   type MusicGraph,
 } from './types.ts'
+import { genreVisibleEnd } from './phases.ts'
 
 /**
  * Horizontal timeline layout: genres are interval bars grouped into family
@@ -78,12 +79,15 @@ export function layoutFamilies(graph: MusicGraph, now = CURRENT_YEAR): FamilyLan
     for (const node of members) {
       const start = node.period!.start
       const end = node.period!.end ?? now
+      // A hidden trailing niche period doesn't occupy the row; +2 covers the fade-out.
+      const visibleEnd = genreVisibleEnd(node, now)
+      const occupiedUntil = visibleEnd === undefined ? end : Math.min(visibleEnd + 2, end)
       let row = rowEnds.findIndex((rowEnd) => rowEnd < start)
       if (row === -1) {
         row = rowEnds.length
-        rowEnds.push(end)
+        rowEnds.push(occupiedUntil)
       } else {
-        rowEnds[row] = end
+        rowEnds[row] = occupiedUntil
       }
       bars.push({ node, family, row, start, end, ongoing: node.period!.end == null })
     }

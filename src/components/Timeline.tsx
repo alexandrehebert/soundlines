@@ -16,7 +16,14 @@ import {
   type TimeScale,
 } from '../graph/layout.ts'
 import { FAMILY_LABELS, PROMINENCE_LABELS, type GraphNode, type MusicGraph } from '../graph/types.ts'
-import { GENRE_BAR_HEIGHT, genreOpacityStops, genrePhases } from '../graph/phases.ts'
+import {
+  GENRE_BAR_HEIGHT,
+  genreOpacityStops,
+  genrePhases,
+  genreVisibilityStops,
+  genreVisibleEnd,
+  PHASE_STYLE,
+} from '../graph/phases.ts'
 import { FAMILY_COLORS, LINEAGE_EDGE_COLORS } from '../theme.ts'
 
 const AXIS_H = 34
@@ -33,6 +40,8 @@ interface BarPosition {
   node: GraphNode
   x1: number
   x2: number
+  /** Right edge of the visible part (a trailing niche period is hidden). */
+  visibleX2: number
   yCenter: number
   color: string
   /** The genre's period has an end year: it faded out. */
@@ -107,10 +116,12 @@ export function Timeline({
       })
       for (const bar of lane.bars) {
         const rowTop = y + LANE_HEADER + bar.row * ROW_H
+        const visibleEnd = Math.min(genreVisibleEnd(bar.node, CURRENT_YEAR) ?? bar.end, bar.end)
         barList.push({
           node: bar.node,
           x1: yearToX(scale, bar.start),
           x2: yearToX(scale, bar.end),
+          visibleX2: yearToX(scale, visibleEnd),
           yCenter: rowTop + ROW_H / 2,
           color: FAMILY_COLORS[lane.family],
           ended: !bar.ongoing,
@@ -229,7 +240,7 @@ export function Timeline({
       const artist = index.nodeById.get(edge.from)
       if (!bar || !artist) continue
       const rawX = yearToX(scale, artist.period?.start ?? scale.start)
-      let x = Math.min(Math.max(rawX, bar.x1 + 8), bar.x2 - 8)
+      let x = Math.min(Math.max(rawX, bar.x1 + 8), bar.visibleX2 - 8)
       const lastX = lastXByGenre.get(edge.to)
       if (lastX !== undefined && x < lastX + 12) x = lastX + 12
       lastXByGenre.set(edge.to, x)
@@ -312,7 +323,7 @@ export function Timeline({
             const y1 = child.yCenter
             const lead = Math.min(Math.max(Math.abs(y1 - parent.yCenter) * 0.35, 30), 90)
             const minX = parent.x1 + 14
-            const maxX = parent.x2 - 6
+            const maxX = parent.visibleX2 - 6
             const anchorX =
               maxX < minX
                 ? (parent.x1 + parent.x2) / 2
@@ -336,13 +347,16 @@ export function Timeline({
 
           {/* genre bars */}
           {bars.map((bar) => {
-            const barWidth = Math.max(bar.x2 - bar.x1, 6)
+            const barWidth = Math.max(bar.visibleX2 - bar.x1, 6)
             const isSelected = bar.node.id === selectedId
             const shape = barShape(bar.x1, bar.x2, bar.yCenter - BAR_H / 2, BAR_H, !bar.ended)
             const phases = genrePhases(bar.node, CURRENT_YEAR)
             const opacityStops = genreOpacityStops(bar.node, CURRENT_YEAR)
             const clipId = `bar-clip-${bar.node.id.replace(':', '-')}`
             const gradientId = `bar-prominence-${bar.node.id.replace(':', '-')}`
+            const visibilityStops = genreVisibilityStops(bar.node, CURRENT_YEAR)
+            const hasHiddenPhase = visibilityStops.some((stop) => stop.opacity < 1)
+            const visibilityId = `bar-visibility-${bar.node.id.replace(':', '-')}`
             return (
               <g
                 key={bar.node.id}
@@ -366,8 +380,27 @@ export function Timeline({
                       ))}
                     </linearGradient>
                   )}
+                  {hasHiddenPhase && (
+                    <>
+                      <linearGradient id={`${visibilityId}-gradient`} gradientUnits="userSpaceOnUse"
+                        x1={bar.x1} x2={bar.x2} y1={bar.yCenter} y2={bar.yCenter}>
+                        {visibilityStops.map((stop) => (
+                          <stop key={stop.offset} offset={stop.offset}
+                            stopColor="#fff" stopOpacity={stop.opacity} />
+                        ))}
+                      </linearGradient>
+                      <mask id={visibilityId} maskUnits="userSpaceOnUse"
+                        x={bar.x1 - 4} y={bar.yCenter - BAR_H} width={bar.x2 - bar.x1 + 8} height={BAR_H * 2}>
+                        <rect x={bar.x1 - 4} y={bar.yCenter - BAR_H} width={bar.x2 - bar.x1 + 8}
+                          height={BAR_H * 2} fill={`url(#${visibilityId}-gradient)`} />
+                      </mask>
+                    </>
+                  )}
                 </defs>
                 <g mask={bar.ended ? 'url(#bar-fade-mask)' : undefined}>
+                <g mask={hasHiddenPhase ? `url(#${visibilityId})` : undefined}
+                  // Masks don't affect hit-testing: only the per-phase rects stay interactive.
+                  pointerEvents={hasHiddenPhase ? 'none' : undefined}>
                   <path d={shape} fill={`color-mix(in srgb, ${bar.color} 4%, #020617)`} />
                   {phases.length === 0 ? (
                     <path
@@ -381,10 +414,12 @@ export function Timeline({
                     <g clipPath={`url(#${clipId})`}>
                       <path d={shape} fill={`url(#${gradientId})`} />
                       {phases.map((phase) => {
+                        // Hidden niche periods are neither hoverable nor clickable.
+                        if (!PHASE_STYLE[phase.prominence].visible) return null
                         const x = yearToX(scale, phase.start)
                         const endX = yearToX(scale, phase.end)
                         return (
-                          <g key={phase.start} data-prominence={phase.prominence}>
+                          <g key={phase.start} data-prominence={phase.prominence} pointerEvents="all">
                             <rect x={x} y={bar.yCenter - BAR_H / 2}
                               width={endX - x} height={BAR_H} fill="transparent" />
                             <title>{`${PROMINENCE_LABELS[phase.prominence]}: c. ${phase.start}–${phase.end}. ${bar.node.phaseNote ?? ''}`}</title>
@@ -396,6 +431,7 @@ export function Timeline({
                   {phases.length > 0 && isSelected && (
                     <path d={shape} fill="none" stroke="#f8fafc" strokeWidth={1.5} />
                   )}
+                </g>
                 </g>
                 {barWidth > 54 && (
                   <text

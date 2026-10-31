@@ -18,7 +18,9 @@ The main view is a horizontal chronology: genres render as bars spanning their a
 Lifespan is not a golden age. Genres can have explicit `phases`, each with a
 `start` year and `prominence`: `emerging`, `golden-age`, `established`, or `niche`.
 All phases keep the same bar height: golden ages are strongest, continuing scenes
-are softer, and niche scenes are faint but still visible. A continuous gradient
+are softer, and niche periods are hidden entirely (the bar fades out into them,
+and back in for a revival). Lineage curves and artist markers stay on the visible
+part of the bar. A continuous gradient
 smoothly blends intensity around each boundary (up to two years either side,
 shortened for brief phases), without steps in height or dotted tails.
 Each phase lasts until the next starts, or until the lifespan ends.

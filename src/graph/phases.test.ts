@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { GENRE_BAR_HEIGHT, genreOpacityStops, genrePhases, PHASE_STYLE } from './phases.ts'
+import {
+  GENRE_BAR_HEIGHT, genreOpacityStops, genrePhases, genreVisibilityStops, genreVisibleEnd, PHASE_STYLE,
+} from './phases.ts'
 import type { GraphNode } from './types.ts'
 import rawGraph from '../data/graph.json'
 
@@ -40,15 +42,25 @@ describe('historical prominence', () => {
     }, 2026).at(-1)?.prominence).toBe('golden-age')
   })
 
-  it('uses one height and declining intensity instead of thinner or dashed phases', () => {
+  it('uses one height and declining intensity, hiding niche periods', () => {
     expect(GENRE_BAR_HEIGHT).toBe(22)
     expect(PHASE_STYLE['golden-age'].opacity).toBeGreaterThan(PHASE_STYLE.established.opacity)
     expect(PHASE_STYLE.established.opacity).toBeGreaterThan(PHASE_STYLE.niche.opacity)
-    expect(PHASE_STYLE.niche.opacity).toBeGreaterThan(0)
+    expect(PHASE_STYLE.niche.visible).toBe(false)
     for (const style of Object.values(PHASE_STYLE)) {
       expect(style).not.toHaveProperty('height')
       expect(style).not.toHaveProperty('dashed')
     }
+  })
+
+  it('fades the whole bar out into a niche period and reports the visible end', () => {
+    const visibility = genreVisibilityStops(node, 2026)
+    expect(visibility[0]).toEqual({ offset: 0, opacity: 1 })
+    expect(visibility.at(-1)).toEqual({ offset: 1, opacity: 0 })
+    expect(genreVisibleEnd(node, 2026)).toBe(2000)
+    expect(genreVisibleEnd({ ...node, phases: [...node.phases!, { start: 2010, prominence: 'golden-age' }] }, 2026))
+      .toBe(2026)
+    expect(genreVisibleEnd({ ...node, phases: undefined }, 2026)).toBeUndefined()
   })
 
   it('blends smoothly on either side of a boundary with eased intermediate stops', () => {
@@ -60,7 +72,7 @@ describe('historical prominence', () => {
     expect(transition[4].opacity).toBeCloseTo(0.4)
     expect(transition[1].opacity).toBeCloseTo(0.75 - 0.35 * 0.15625)
     expect(stops[0]).toEqual({ offset: 0, opacity: 0.3 })
-    expect(stops.at(-1)).toEqual({ offset: 1, opacity: 0.16 })
+    expect(stops.at(-1)).toEqual({ offset: 1, opacity: 0 })
   })
 
   it('keeps gradients ordered and bounded even with short phases and revivals', () => {
