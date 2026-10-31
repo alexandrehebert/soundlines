@@ -1,0 +1,97 @@
+import { describe, expect, it } from 'vitest'
+import rawGraph from './graph.json'
+import type { GraphNode, MusicGraph, NodeType } from '../graph/types.ts'
+import {
+  EDGE_TYPE_LABELS,
+  FAMILY_LABELS,
+  NODE_TYPE_LABELS,
+} from '../graph/types.ts'
+
+const graph = rawGraph as MusicGraph
+
+describe('graph.json integrity', () => {
+  it('has unique node ids', () => {
+    const ids = graph.nodes.map((node) => node.id)
+    expect(new Set(ids).size).toBe(ids.length)
+  })
+
+  it('has unique edge ids', () => {
+    const ids = graph.edges.map((edge) => edge.id)
+    expect(new Set(ids).size).toBe(ids.length)
+  })
+
+  it('prefixes every node id with its type', () => {
+    for (const node of graph.nodes) {
+      expect(node.id.startsWith(`${node.type}:`)).toBe(true)
+    }
+  })
+
+  it('only references existing nodes from edges', () => {
+    const ids = new Set(graph.nodes.map((node) => node.id))
+    for (const edge of graph.edges) {
+      expect(ids.has(edge.from), `${edge.id} from ${edge.from}`).toBe(true)
+      expect(ids.has(edge.to), `${edge.id} to ${edge.to}`).toBe(true)
+    }
+  })
+
+  it('uses only known node types, edge types, and families', () => {
+    for (const node of graph.nodes) {
+      expect(NODE_TYPE_LABELS[node.type as NodeType]).toBeDefined()
+      if (node.family) expect(FAMILY_LABELS[node.family]).toBeDefined()
+    }
+    for (const edge of graph.edges) {
+      expect(EDGE_TYPE_LABELS[edge.type]).toBeDefined()
+    }
+  })
+
+  it('has sane periods (start <= end, plausible years)', () => {
+    const withPeriod = graph.nodes.filter(
+      (node): node is GraphNode & { period: { start: number; end?: number | null } } =>
+        node.period !== undefined,
+    )
+    expect(withPeriod.length).toBeGreaterThan(0)
+    for (const node of withPeriod) {
+      expect(node.period.start).toBeGreaterThan(1800)
+      expect(node.period.start).toBeLessThan(2100)
+      if (node.period.end != null) {
+        expect(node.period.end).toBeGreaterThanOrEqual(node.period.start)
+      }
+    }
+  })
+
+  it('gives every genre a family and a period', () => {
+    for (const node of graph.nodes.filter((candidate) => candidate.type === 'genre')) {
+      expect(node.family, node.id).toBeDefined()
+      expect(node.period, node.id).toBeDefined()
+    }
+  })
+
+  it('carries over all nine entities from the v1 catalogue', () => {
+    const names = new Set(graph.nodes.map((node) => node.name))
+    const v1Entities = [
+      'Detroit techno',
+      'Chicago house',
+      'Kraftwerk',
+      'Juan Atkins',
+      'Derrick May',
+      'Kevin Saunderson',
+      'Cybotron',
+      'Metroplex',
+      'Detroit',
+    ]
+    for (const name of v1Entities) {
+      expect(names.has(name), name).toBe(true)
+    }
+  })
+
+  it('leaves no node completely disconnected', () => {
+    const connected = new Set<string>()
+    for (const edge of graph.edges) {
+      connected.add(edge.from)
+      connected.add(edge.to)
+    }
+    for (const node of graph.nodes) {
+      expect(connected.has(node.id), node.id).toBe(true)
+    }
+  })
+})
