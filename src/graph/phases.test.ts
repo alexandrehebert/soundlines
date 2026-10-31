@@ -139,9 +139,9 @@ describe('historical prominence', () => {
       .toEqual([{ offset: 0, level: 1 }, { offset: 1, level: 1 }])
   })
 
-  it('shows disco coming back more than once', () => {
+  it('shows disco continuing after its original boom and niche period', () => {
     const disco = rawGraph.nodes.find((candidate) => candidate.id === 'genre:disco') as GraphNode
-    expect(visibleSpans(disco, 2026).length).toBeGreaterThanOrEqual(3)
+    expect(visibleSpans(disco, 2026)).toEqual([[1972, 1980], [2000, 2026]])
   })
 
   it('keeps soul alive after its peak and does not call it niche', () => {

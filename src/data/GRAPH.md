@@ -196,7 +196,10 @@ Ids must be unique across all edges.
    explicitly proposed (§2).
 5. `period.start` is an integer ≥ **500** and < 2100. `period.end`, when set, is an
    integer ≥ `start`. Use `null` or omit `end` for "still active".
-6. **Every genre** has a `family` **and** a `period`.
+6. **Every genre** has a `family` **and** a `period`. **Every artist** has a
+   `period` and either an explicit `family` or a `key_artist_of` relationship
+   to a genre with a family. Preserve explicit artist families when replacing
+   or enriching existing nodes.
 7. **Every genre** has **at least 3** `key_artist_of` edges pointing to it, and
    **each of those edges has `sources`**.
 8. **Every artist** node has at least one `sources` URL.

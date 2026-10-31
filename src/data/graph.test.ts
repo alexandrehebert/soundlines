@@ -3,7 +3,7 @@ import rawGraph from './graph.json'
 import type { GraphNode, MusicGraph, NodeType } from '../graph/types.ts'
 import { MAX_YEAR, MIN_YEAR } from '../graph/layout.ts'
 import { buildIndex, lineage, searchNodes } from '../graph/graph.ts'
-import { createTimelineModel } from '../graph/timeline.ts'
+import { artistFamily, createTimelineModel } from '../graph/timeline.ts'
 import {
   EDGE_TYPE_LABELS,
   FAMILY_LABELS,
@@ -84,9 +84,13 @@ describe('graph.json integrity', () => {
     }
   })
 
-  it('gives every genre a family and a period', () => {
-    for (const node of graph.nodes.filter((candidate) => candidate.type === 'genre')) {
-      expect(node.family, node.id).toBeDefined()
+  it('gives every genre and artist a resolvable family and a period', () => {
+    const index = buildIndex(graph)
+    for (const node of graph.nodes.filter((candidate) =>
+      candidate.type === 'genre' || candidate.type === 'artist',
+    )) {
+      const family = node.type === 'artist' ? artistFamily(index, node) : node.family
+      expect(family, `${node.id} needs a family or a key_artist_of genre with a family`).toBeDefined()
       expect(node.period, node.id).toBeDefined()
     }
   })
