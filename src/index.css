@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+/* Tailwind v4 preflight no longer sets cursor: pointer on buttons
+   (https://tailwindcss.com/docs/upgrade-guide#buttons-use-the-default-cursor).
+   Restore the v3 behavior for all interactive controls. */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
 body {
   margin: 0;
   min-width: 320px;
