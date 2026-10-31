@@ -9,8 +9,8 @@ Vite, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vitest, linted w
 The main view is a horizontal chronology: genres render as bars spanning their active years, stacked into family lanes (roots, electronic pioneers, house, techno, UK continuum). Influence and derivation edges are drawn as curves between bars. Hovering or selecting a node highlights its full lineage — everything that fed it and everything it fed — and dims the rest.
 
 - Drag to move both axes, scroll to move vertically, horizontal scroll to pan time, pinch or Cmd/Ctrl+scroll to zoom
-- Click a bar or artist marker for details; every relation in the panel is navigable
-- Search covers all node types; the Artists toggle shows key-artist markers on the bars
+- Click a bar or artist bubble for details; every relation in the panel is navigable
+- Search covers all node types; the Artists toggle (off by default) scatters key-artist bubbles around their genre bars, at stable pseudo-random spots near their start year
 - Selection is shareable via the `?focus=<node-id>` URL parameter
 
 ### Historical prominence
@@ -19,7 +19,7 @@ Lifespan is not a golden age. Genres can have explicit `phases`, each with a
 `start` year and `prominence`: `emerging`, `golden-age`, `established`, or `niche`.
 All phases keep the same bar height: golden ages are strongest, continuing scenes
 are softer, and niche periods are hidden entirely (the bar fades out into them,
-and back in for a revival). Lineage curves and artist markers stay on the visible
+and back in for a revival). Lineage curves and artist bubbles stay on the visible
 part of the bar. A continuous gradient
 smoothly blends intensity around each boundary (up to two years either side,
 shortened for brief phases), without steps in height or dotted tails.

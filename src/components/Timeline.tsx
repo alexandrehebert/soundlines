@@ -24,6 +24,7 @@ import {
   genreVisibleEnd,
   PHASE_STYLE,
 } from '../graph/phases.ts'
+import { initials, placeBubbles, type BubbleRequest } from '../graph/bubbles.ts'
 import { FAMILY_COLORS, LINEAGE_EDGE_COLORS } from '../theme.ts'
 
 const AXIS_H = 34
@@ -224,12 +225,15 @@ export function Timeline({
     if (!suppressClick.current) onSelect(null)
   }
 
-  const artistMarkers = useMemo(() => {
-    if (!showArtists) return []
-    const markers: { id: string; name: string; x: number; y: number; color: string }[] = []
-    const lastXByGenre = new Map<string, number>()
+  // A selected artist stays visible even while the Artists toggle is off.
+  const selectedArtistId = selectedId && index.nodeById.get(selectedId)?.type === 'artist' ? selectedId : null
+
+  const artistBubbles = useMemo(() => {
+    if (!showArtists && !selectedArtistId) return []
+    const entries: { id: string; name: string; color: string; request: BubbleRequest }[] = []
     const keyArtistEdges = graph.edges
       .filter((edge) => edge.type === 'key_artist_of')
+      .filter((edge) => showArtists || edge.from === selectedArtistId)
       .sort((a, b) => {
         const nodeA = index.nodeById.get(a.from)
         const nodeB = index.nodeById.get(b.from)
@@ -239,20 +243,32 @@ export function Timeline({
       const bar = barById.get(edge.to)
       const artist = index.nodeById.get(edge.from)
       if (!bar || !artist) continue
-      const rawX = yearToX(scale, artist.period?.start ?? scale.start)
-      let x = Math.min(Math.max(rawX, bar.x1 + 8), bar.visibleX2 - 8)
-      const lastX = lastXByGenre.get(edge.to)
-      if (lastX !== undefined && x < lastX + 12) x = lastX + 12
-      lastXByGenre.set(edge.to, x)
-      markers.push({
-        id: artist.id, name: artist.name, x,
-        y: bar.yCenter + BAR_H / 2 - 2,
+      entries.push({
+        id: artist.id,
+        name: artist.name,
         color: bar.color,
+        request: {
+          key: `${artist.id}|${bar.node.id}`,
+          x: yearToX(scale, artist.period?.start ?? scale.start),
+          minX: bar.x1,
+          maxX: bar.visibleX2,
+          yCenter: bar.yCenter,
+          barHalfHeight: BAR_H / 2,
+        },
       })
     }
-    return markers
+    const labels = bars
+      .filter((bar) => bar.visibleX2 - bar.x1 > 54)
+      .map((bar) => ({
+        x1: Math.max(bar.x1, 0) + 6,
+        x2: Math.max(bar.x1, 0) + 14 + bar.node.name.length * 7,
+        y1: bar.yCenter - 8,
+        y2: bar.yCenter + 8,
+      }))
+    const placed = placeBubbles(entries.map((entry) => entry.request), labels)
+    return entries.map((entry, i) => ({ ...entry, bubble: placed[i] }))
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [showArtists, graph, index, barById, viewRange, width])
+  }, [showArtists, selectedArtistId, graph, index, bars, barById, viewRange, width])
 
   const dimmed = (id: string) => highlight !== null && !highlight.nodes.has(id)
 
@@ -450,26 +466,50 @@ export function Timeline({
             )
           })}
 
-          {/* key-artist markers */}
-          {artistMarkers.map((marker) => (
+          {/* key-artist bubbles */}
+          {artistBubbles.map(({ id, name, color, bubble }) => (
             <g
-              key={`${marker.id}-${marker.x}`}
-              opacity={dimmed(marker.id) && marker.id !== selectedId ? 0.25 : 1}
-              style={{ cursor: 'pointer' }}
+              key={bubble.key}
+              data-artist-bubble={id}
+              opacity={dimmed(id) && id !== selectedId ? 0.25 : 1}
+              style={{ cursor: 'pointer', transition: 'opacity 150ms' }}
               onClick={(event) => {
                 event.stopPropagation()
-                if (!suppressClick.current) onSelect(marker.id)
+                if (!suppressClick.current) onSelect(id)
               }}
             >
-              <circle
-                cx={marker.x}
-                cy={marker.y}
-                r={4}
-                fill="#020617"
-                stroke={marker.id === selectedId ? '#f8fafc' : marker.color}
-                strokeWidth={1.8}
+              <line
+                x1={bubble.x}
+                y1={bubble.anchorY}
+                x2={bubble.x}
+                y2={bubble.y + (bubble.anchorY < bubble.y ? -bubble.r : bubble.r)}
+                stroke={color}
+                strokeWidth={1}
+                opacity={0.45}
+                pointerEvents="none"
               />
-              <title>{marker.name}</title>
+              <circle cx={bubble.x} cy={bubble.y} r={bubble.r} fill="#020617" />
+              <circle
+                cx={bubble.x}
+                cy={bubble.y}
+                r={bubble.r}
+                fill={color}
+                fillOpacity={id === selectedId ? 0.55 : 0.22}
+                stroke={id === selectedId ? '#f8fafc' : color}
+                strokeWidth={1.4}
+              />
+              <text
+                x={bubble.x}
+                y={bubble.y + 3}
+                textAnchor="middle"
+                fill="#f8fafc"
+                fontSize={8.5}
+                fontWeight={700}
+                pointerEvents="none"
+              >
+                {initials(name)}
+              </text>
+              <title>{name}</title>
             </g>
           ))}
         </svg>
