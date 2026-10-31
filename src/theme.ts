@@ -17,6 +17,12 @@ export const LINEAGE_EDGE_COLORS: Partial<Record<EdgeType, string>> = {
   revival_of: '#4ade80',
 }
 
+export const ARTIST_EDGE_COLORS: Partial<Record<EdgeType, string>> = {
+  influences: '#a78bfa',
+  member_of: '#22d3ee',
+  collaborated_with: '#fbbf24',
+}
+
 export const NODE_TYPE_COLORS: Record<NodeType, string> = {
   genre: '#a78bfa',
   artist: '#67e8f9',

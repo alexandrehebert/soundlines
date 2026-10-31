@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
-  GENRE_BAR_HEIGHT, genreIntensityStops, genrePhases, genreVisibilityStops, genreVisibleEnd, genreVisibleSpans,
+  TIMELINE_BAR_HEIGHT, intensityStops, prominencePhases, visibilityStops, visibleEnd, visibleSpans,
   intensityColor, intensityOpacity, PHASE_STYLE, phaseIntensity,
 } from './phases.ts'
 import type { GraphNode } from './types.ts'
@@ -17,8 +17,15 @@ const node: GraphNode = {
 }
 
 describe('historical prominence', () => {
+  it('uses identical intensity and revival logic for artists and genres', () => {
+    const artist: GraphNode = { ...node, id: 'artist:test', type: 'artist' }
+    expect(intensityStops(artist, 2026)).toEqual(intensityStops(node, 2026))
+    expect(visibilityStops(artist, 2026)).toEqual(visibilityStops(node, 2026))
+    expect(visibleSpans(artist, 2026)).toEqual(visibleSpans(node, 2026))
+  })
+
   it('continues after the golden age instead of ending the lifespan', () => {
-    expect(genrePhases(node, 2026)).toEqual([
+    expect(prominencePhases(node, 2026)).toEqual([
       { start: 1955, end: 1960, prominence: 'emerging' },
       { start: 1960, end: 1980, prominence: 'golden-age' },
       { start: 1980, end: 2000, prominence: 'established' },
@@ -27,24 +34,24 @@ describe('historical prominence', () => {
   })
 
   it('does not infer prominence for unannotated genres', () => {
-    expect(genrePhases({ ...node, phases: undefined }, 2026)).toEqual([])
+    expect(prominencePhases({ ...node, phases: undefined }, 2026)).toEqual([])
   })
 
   it('clips to lifespan and skips future phases', () => {
-    expect(genrePhases({ ...node, period: { start: 1955, end: 1990 } }, 2026).at(-1))
+    expect(prominencePhases({ ...node, period: { start: 1955, end: 1990 } }, 2026).at(-1))
       .toEqual({ start: 1980, end: 1990, prominence: 'established' })
-    expect(genrePhases(node, 1970).at(-1))
+    expect(prominencePhases(node, 1970).at(-1))
       .toEqual({ start: 1960, end: 1970, prominence: 'golden-age' })
   })
 
   it('permits a revival without forcing permanent decline', () => {
-    expect(genrePhases({
+    expect(prominencePhases({
       ...node, phases: [...node.phases!, { start: 2010, prominence: 'golden-age' }],
     }, 2026).at(-1)?.prominence).toBe('golden-age')
   })
 
   it('uses one height and declining default intensity, hiding niche periods', () => {
-    expect(GENRE_BAR_HEIGHT).toBe(22)
+    expect(TIMELINE_BAR_HEIGHT).toBe(22)
     expect(PHASE_STYLE['golden-age'].intensity).toBe(1)
     expect(PHASE_STYLE.established.intensity).toBeGreaterThan(PHASE_STYLE.niche.intensity)
     expect(PHASE_STYLE.niche.intensity).toBe(0)
@@ -65,13 +72,13 @@ describe('historical prominence', () => {
   })
 
   it('fades the whole bar out into a niche period and reports the visible end', () => {
-    const visibility = genreVisibilityStops(node, 2026)
+    const visibility = visibilityStops(node, 2026)
     expect(visibility[0]).toEqual({ offset: 0, level: 1 })
     expect(visibility.at(-1)).toEqual({ offset: 1, level: 0 })
-    expect(genreVisibleEnd(node, 2026)).toBe(2000)
-    expect(genreVisibleEnd({ ...node, phases: [...node.phases!, { start: 2010, prominence: 'golden-age' }] }, 2026))
+    expect(visibleEnd(node, 2026)).toBe(2000)
+    expect(visibleEnd({ ...node, phases: [...node.phases!, { start: 2010, prominence: 'golden-age' }] }, 2026))
       .toBe(2026)
-    expect(genreVisibleEnd({ ...node, phases: undefined }, 2026)).toBeUndefined()
+    expect(visibleEnd({ ...node, phases: undefined }, 2026)).toBeUndefined()
   })
 
   it('reappears and disappears as many times as the genre comes back', () => {
@@ -87,14 +94,14 @@ describe('historical prominence', () => {
         { start: 2015, prominence: 'niche' },
       ],
     }
-    expect(genreVisibleSpans(revivals, 2026)).toEqual([[1970, 1980], [1990, 2000], [2010, 2015]])
-    expect(genreVisibleEnd(revivals, 2026)).toBe(2015)
-    const levels = genreVisibilityStops(revivals, 2026).map((stop) => stop.level)
+    expect(visibleSpans(revivals, 2026)).toEqual([[1970, 1980], [1990, 2000], [2010, 2015]])
+    expect(visibleEnd(revivals, 2026)).toBe(2015)
+    const levels = visibilityStops(revivals, 2026).map((stop) => stop.level)
     expect(levels.filter((level, i) => i > 0 && level === 1 && levels[i - 1] < 1)).toHaveLength(2)
   })
 
   it('blends smoothly on either side of a boundary with eased intermediate stops', () => {
-    const stops = genreIntensityStops(node, 2026)
+    const stops = intensityStops(node, 2026)
     const transition = stops.slice(6, 11)
     expect(transition.map((stop) => 1955 + stop.offset * 71)).toEqual([1978, 1979, 1980, 1981, 1982])
     expect(transition[0].level).toBe(1)
@@ -106,7 +113,7 @@ describe('historical prominence', () => {
   })
 
   it('keeps gradients ordered and bounded even with short phases and revivals', () => {
-    const stops = genreIntensityStops({
+    const stops = intensityStops({
       ...node, period: { start: 2000, end: 2004 },
       phases: [
         { start: 2000, prominence: 'golden-age' },
@@ -123,18 +130,18 @@ describe('historical prominence', () => {
   })
 
   it('does not add a gradient to unannotated or future genres', () => {
-    expect(genreIntensityStops({ ...node, phases: undefined }, 2026)).toEqual([])
-    expect(genreIntensityStops(node, 1950)).toEqual([])
+    expect(intensityStops({ ...node, phases: undefined }, 2026)).toEqual([])
+    expect(intensityStops(node, 1950)).toEqual([])
   })
 
   it('uses a flat gradient for a single phase', () => {
-    expect(genreIntensityStops({ ...node, phases: [{ start: 1955, prominence: 'golden-age' }] }, 2026))
+    expect(intensityStops({ ...node, phases: [{ start: 1955, prominence: 'golden-age' }] }, 2026))
       .toEqual([{ offset: 0, level: 1 }, { offset: 1, level: 1 }])
   })
 
   it('shows disco coming back more than once', () => {
     const disco = rawGraph.nodes.find((candidate) => candidate.id === 'genre:disco') as GraphNode
-    expect(genreVisibleSpans(disco, 2026).length).toBeGreaterThanOrEqual(3)
+    expect(visibleSpans(disco, 2026).length).toBeGreaterThanOrEqual(3)
   })
 
   it('keeps soul alive after its peak and does not call it niche', () => {

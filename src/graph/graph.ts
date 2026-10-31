@@ -4,6 +4,7 @@ import {
   type GraphEdge,
   type GraphNode,
   type MusicGraph,
+  type RelationOrientation,
 } from './types.ts'
 
 /**
@@ -75,27 +76,37 @@ export interface Lineage {
  * edge type's orientation (`influences` points ancestor -> descendant while
  * `derived_from` points descendant -> ancestor).
  */
-export function lineage(index: GraphIndex, id: string): Lineage {
+export function lineage(
+  index: GraphIndex,
+  id: string,
+  orientation: RelationOrientation = LINEAGE_ORIENTATION,
+): Lineage {
   const ancestors = new Set<string>()
   const descendants = new Set<string>()
   const edges = new Set<string>()
 
-  walk(index, id, 'ancestors', ancestors, edges)
-  walk(index, id, 'descendants', descendants, edges)
+  walk(index, id, 'ancestors', ancestors, edges, orientation)
+  walk(index, id, 'descendants', descendants, edges, orientation)
 
   return { ancestors, descendants, edges }
 }
 
 /** Resolve the ancestor-side node id of a lineage edge, or null if not a lineage edge. */
-export function lineageSource(edge: GraphEdge): string | null {
-  const orientation = LINEAGE_ORIENTATION[edge.type]
+export function lineageSource(
+  edge: GraphEdge,
+  orientations: RelationOrientation = LINEAGE_ORIENTATION,
+): string | null {
+  const orientation = orientations[edge.type]
   if (!orientation) return null
   return orientation === 'forward' ? edge.from : edge.to
 }
 
 /** Resolve the descendant-side node id of a lineage edge, or null if not a lineage edge. */
-export function lineageTarget(edge: GraphEdge): string | null {
-  const orientation = LINEAGE_ORIENTATION[edge.type]
+export function lineageTarget(
+  edge: GraphEdge,
+  orientations: RelationOrientation = LINEAGE_ORIENTATION,
+): string | null {
+  const orientation = orientations[edge.type]
   if (!orientation) return null
   return orientation === 'forward' ? edge.to : edge.from
 }
@@ -106,6 +117,7 @@ function walk(
   toward: 'ancestors' | 'descendants',
   visited: Set<string>,
   edges: Set<string>,
+  orientation: RelationOrientation,
 ) {
   const queue = [start]
   const seen = new Set([start])
@@ -116,8 +128,8 @@ function walk(
       ...(index.inEdges.get(current) ?? []),
     ]
     for (const edge of touching) {
-      const source = lineageSource(edge)
-      const target = lineageTarget(edge)
+      const source = lineageSource(edge, orientation)
+      const target = lineageTarget(edge, orientation)
       if (source === null || target === null) continue
       const next =
         toward === 'ancestors'

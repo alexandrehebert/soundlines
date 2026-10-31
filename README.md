@@ -6,20 +6,32 @@ Vite, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vitest, linted w
 
 ## The timeline
 
-The main view is a horizontal chronology: genres render as bars spanning their active years, stacked into family lanes (roots, electronic pioneers, house, techno, UK continuum). Influence and derivation edges are drawn as curves between bars. Hovering or selecting a node highlights its full lineage — everything that fed it and everything it fed — and dims the rest.
+The main view is a horizontal chronology with two modes: **Genres** (the default)
+and **Artists**. Each mode renders its own nodes as bars, grouped into family
+lanes (roots, electronic pioneers, house, techno, UK continuum). Curved links and
+highlighting stay within the active mode.
 
 - Drag to move both axes, scroll to move vertically, horizontal scroll to pan time, pinch or Cmd/Ctrl+scroll to zoom
-- Click a bar or artist bubble for details; every relation in the panel is navigable
-- Search covers all node types; the Artists toggle (off by default) scatters key-artist bubbles around their genre bars, at stable pseudo-random spots near their start year
-- Selection is shareable via the `?focus=<node-id>` URL parameter
+- Click a bar or focus it and press Enter/Space for details; every relation in the panel is navigable
+- Artists switches to artist bars, not an overlay on the genre timeline; artist bubbles are currently removed
+- Search and related-node navigation switch modes automatically when selecting an artist or genre and bring the selected bar into view
+- Selection is shareable via `?focus=<node-id>`; `?view=artists` opens the artist timeline without a selection
+- Each mode remembers its horizontal time range; switching modes resets vertical scrolling and hover
+
+Artists appear once, in their most-represented genre family. Ties follow family
+order; an explicit artist `family` overrides inference. Artist links include
+sourced influences, group memberships, and collaborations. Collaboration dates
+anchor both ends near the documented event; undated influences and memberships
+anchor near the target's career start. Sharing a genre alone never creates an
+artist-to-artist influence claim.
 
 ### Historical prominence
 
-Lifespan is not a golden age. Genres can have explicit `phases`, each with a
+Lifespan is not a golden age. Genres and artists can have explicit `phases`, each with a
 `start` year and `prominence`: `emerging`, `golden-age`, `established`, or `niche`.
 All phases keep the same bar height: golden ages are strongest, continuing scenes
 are softer, and niche periods are hidden entirely (the bar fades out into them,
-and back in for a revival). Lineage curves and artist bubbles stay on the visible
+and back in for a revival). Relationship endpoints stay on the visible
 part of the bar. A continuous gradient
 smoothly blends intensity around each boundary (up to two years either side,
 shortened for brief phases), without steps in height or dotted tails.
@@ -30,6 +42,17 @@ An optional `intensity` (0–1) overrides the label's default shade
 (emerging 0.35, golden age 1, continuing 0.45, niche 0), so a genre can be
 described on a finer scale than the four legend labels. Peaks are also brightened.
 Genres without phases retain the original rendering rather than inventing a peak.
+
+The artist timeline has a first set of **14 editorial career-phase examples**,
+anchored to cited biography milestones. Artist labels are Emerging, Peak years,
+Continuing, and Low profile / hiatus. Unresearched artists have neutral bars;
+their shading is never inferred from their genres or age. These shades are not
+chart, streaming, or sales measurements and are not comparable popularity
+rankings between artists. Artist periods describe active careers, not ongoing
+posthumous listening. Researched career endings and selected group breaks are
+explicit data.
+Ended bars fade only over their final two years, so the tail effect does not
+artificially dim the latter half of a career.
 
 The initial nine examples are approximate, illustrative editorial choices, not
 researched popularity measurements. Their `phaseNote` explains the scope and is
@@ -43,7 +66,7 @@ as historical claims. The JSON supports adding or revising phases without changi
 
 All data lives in [src/data/graph.json](./src/data/graph.json) as a single property graph:
 
-- **Nodes** (`genre`, `artist`, `label`, `place`, `track`, `scene`) with stable `type:slug` ids, optional `period` (`start`/`end`/`precision`), `family` lane for genres, and descriptions.
+- **Nodes** (`genre`, `artist`, `label`, `place`, `track`, `scene`) with stable `type:slug` ids, optional `period` (`start`/`end`/`precision`), `family` lanes, and descriptions.
 - **Edges** with a type, optional `period`, `confidence` (`low`/`medium`/`high`), `note`, and source URLs. Lineage edge types (`influences`, `derived_from`, `subgenre_of`, `fusion_of`, `cross_pollination`, `revival_of`) carry an orientation so the JSON reads naturally in both directions (see `LINEAGE_ORIENTATION` in [src/graph/types.ts](./src/graph/types.ts)).
 - Nodes can include `sources` URLs; the detail panel exposes node and relationship citations as links.
 
@@ -53,6 +76,13 @@ genre pages are cited on artist-to-genre relationships. These are curated
 representative examples, not exhaustive discographies or a popularity ranking.
 
 The UI never touches the JSON directly: all queries (neighbors, lineage traversal, period filtering, search) go through [src/graph/graph.ts](./src/graph/graph.ts). Migrating to a graph database later (e.g. Neo4j: nodes → labeled vertices, edges → typed relationships, other fields → properties) only requires reimplementing that one module.
+
+### Shared explorer architecture
+
+- [ExplorerContext](./src/ExplorerContext.ts) owns the graph index, active mode, selection, per-mode ranges, and URL synchronization; the provider wires the UI without graph/selection prop drilling.
+- [Timeline model](./src/graph/timeline.ts) projects the graph for each mode, infers artist families, and restricts layout and traversal to same-view relationships.
+- [Timeline](./src/components/Timeline.tsx) composes shared [geometry](./src/components/timeline/geometry.ts), [bar rendering](./src/components/timeline/TimelineBar.tsx), [relationship rendering](./src/components/timeline/TimelineLinks.tsx), and [viewport interaction](./src/components/timeline/useTimelineViewport.ts).
+- [Prominence helpers](./src/graph/phases.ts) provide the same intensity, fade, and revival logic for both node types.
 
 [src/data/graph.test.ts](./src/data/graph.test.ts) enforces dataset integrity: unique ids, no dangling edge endpoints, known types only, sane periods, and no orphan nodes.
 

@@ -1,22 +1,19 @@
 import { Search } from 'lucide-react'
 import { useRef, useState } from 'react'
+import { useExplorer } from '../ExplorerContext.ts'
 import { searchNodes } from '../graph/graph.ts'
-import { NODE_TYPE_LABELS, type MusicGraph } from '../graph/types.ts'
+import { NODE_TYPE_LABELS } from '../graph/types.ts'
 import { NODE_TYPE_COLORS } from '../theme.ts'
 
-interface SearchBarProps {
-  graph: MusicGraph
-  onSelect: (id: string) => void
-}
-
-export function SearchBar({ graph, onSelect }: SearchBarProps) {
+export function SearchBar() {
+  const { index, selectNode } = useExplorer()
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
-  const results = searchNodes(graph, query)
+  const results = searchNodes(index.graph, query)
 
   const pick = (id: string) => {
-    onSelect(id)
+    selectNode(id)
     setQuery('')
     setOpen(false)
     inputRef.current?.blur()

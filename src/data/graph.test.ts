@@ -11,9 +11,9 @@ import {
 const graph = rawGraph as MusicGraph
 
 describe('graph.json integrity', () => {
-  it('has ordered, known editorial phases within each genre lifespan', () => {
+  it('has ordered, known editorial phases within each genre or artist lifespan', () => {
     for (const node of graph.nodes.filter((candidate) => candidate.phases !== undefined)) {
-      expect(node.type).toBe('genre')
+      expect(['genre', 'artist']).toContain(node.type)
       expect(node.phaseNote).toBeTruthy()
       expect(node.phases!.length).toBeGreaterThan(0)
       expect(node.phases![0].start).toBe(node.period?.start)
@@ -98,10 +98,13 @@ describe('graph.json integrity', () => {
 
   it('provides valid Wikipedia sources for every artist and artist relationship', () => {
     const artists = graph.nodes.filter((node) => node.type === 'artist')
+    const artistIds = new Set(artists.map((node) => node.id))
     for (const artist of artists) {
       expect(artist.sources?.length, artist.id).toBeGreaterThan(0)
     }
-    for (const edge of graph.edges.filter((candidate) => candidate.type === 'key_artist_of')) {
+    for (const edge of graph.edges.filter((candidate) =>
+      candidate.type === 'key_artist_of' || (artistIds.has(candidate.from) && artistIds.has(candidate.to)),
+    )) {
       expect(edge.sources?.length, edge.id).toBeGreaterThan(0)
     }
     for (const source of [

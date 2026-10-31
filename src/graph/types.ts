@@ -20,6 +20,7 @@ export type EdgeType =
   // people
   | 'key_artist_of'
   | 'member_of'
+  | 'collaborated_with'
   // industry & geography
   | 'signed_to'
   | 'founded'
@@ -51,7 +52,7 @@ export type ArtistKind = 'person' | 'group' | 'collective'
 
 export type Prominence = 'emerging' | 'golden-age' | 'established' | 'niche'
 
-export interface GenrePhase {
+export interface ProminencePhase {
   start: number
   prominence: Prominence
   /** Optional finer shade (0–1) than the prominence default; 0 hides the bar. */
@@ -65,19 +66,30 @@ export const PROMINENCE_LABELS: Record<Prominence, string> = {
   niche: 'Niche scene',
 }
 
+const ARTIST_PROMINENCE_LABELS: Record<Prominence, string> = {
+  emerging: 'Emerging',
+  'golden-age': 'Peak years',
+  established: 'Continuing',
+  niche: 'Low profile / hiatus',
+}
+
+export function prominenceLabels(type: NodeType): Record<Prominence, string> {
+  return type === 'artist' ? ARTIST_PROMINENCE_LABELS : PROMINENCE_LABELS
+}
+
 export interface GraphNode {
   id: string
   type: NodeType
   name: string
   period?: Period
   description?: string
-  /** Lane grouping on the timeline; only meaningful for genres. */
+  /** Lane grouping; artist lanes can also be inferred from their genre relationships. */
   family?: GenreFamily
   /** Only meaningful for artists. */
   kind?: ArtistKind
   sources?: string[]
-  /** Editorial phases, not popularity measurements; each lasts until the next start. */
-  phases?: GenrePhase[]
+  /** Editorial genre or career prominence, not measured popularity. */
+  phases?: ProminencePhase[]
   phaseNote?: string
 }
 
@@ -104,7 +116,9 @@ export interface MusicGraph {
  * B"), `backward` means `from` is the descendant ("A derived_from B"), so the
  * JSON reads naturally in both directions.
  */
-export const LINEAGE_ORIENTATION: Partial<Record<EdgeType, 'forward' | 'backward'>> = {
+export type RelationOrientation = Partial<Record<EdgeType, 'forward' | 'backward'>>
+
+export const LINEAGE_ORIENTATION: RelationOrientation = {
   influences: 'forward',
   cross_pollination: 'forward',
   derived_from: 'backward',
@@ -152,6 +166,7 @@ export const EDGE_TYPE_LABELS: Record<EdgeType, string> = {
   revival_of: 'revival of',
   key_artist_of: 'key artist of',
   member_of: 'member of',
+  collaborated_with: 'collaborated with',
   signed_to: 'signed to',
   founded: 'founded',
   originated_in: 'originated in',
@@ -169,6 +184,7 @@ export const EDGE_TYPE_INVERSE_LABELS: Record<EdgeType, string> = {
   revival_of: 'revived as',
   key_artist_of: 'key artists',
   member_of: 'members',
+  collaborated_with: 'collaborated with',
   signed_to: 'roster',
   founded: 'founded by',
   originated_in: 'birthplace of',

@@ -1,6 +1,6 @@
-import type { GenrePhase, GraphNode, Prominence } from './types.ts'
+import type { ProminencePhase, GraphNode, Prominence } from './types.ts'
 
-export const GENRE_BAR_HEIGHT = 22
+export const TIMELINE_BAR_HEIGHT = 22
 
 /**
  * Default intensity (0–1) per prominence. Phases can override it with their
@@ -13,7 +13,7 @@ export const PHASE_STYLE: Record<Prominence, { intensity: number }> = {
   niche: { intensity: 0 },
 }
 
-export function phaseIntensity(phase: GenrePhase): number {
+export function phaseIntensity(phase: ProminencePhase): number {
   return phase.intensity ?? PHASE_STYLE[phase.prominence].intensity
 }
 
@@ -28,7 +28,7 @@ export function intensityColor(color: string, level: number): string {
   return glow > 0 ? `color-mix(in srgb, ${color}, #fff ${glow.toFixed(1)}%)` : color
 }
 
-export function genrePhases(node: GraphNode, now: number) {
+export function prominencePhases(node: GraphNode, now: number) {
   if (!node.period || !node.phases) return []
   const phases = node.phases
   const end = node.period.end ?? now
@@ -40,8 +40,8 @@ export function genrePhases(node: GraphNode, now: number) {
 
 export type Stop = { offset: number; level: number }
 
-function genreStops(node: GraphNode, now: number, valueOf: (phase: GenrePhase) => number): Stop[] {
-  const phases = genrePhases(node, now)
+function genreStops(node: GraphNode, now: number, valueOf: (phase: ProminencePhase) => number): Stop[] {
+  const phases = prominencePhases(node, now)
   if (phases.length === 0) return []
   const start = phases[0].start
   const duration = phases[phases.length - 1].end - start
@@ -66,19 +66,19 @@ function genreStops(node: GraphNode, now: number, valueOf: (phase: GenrePhase) =
 }
 
 /** Smoothly interpolated intensity along the bar. */
-export function genreIntensityStops(node: GraphNode, now: number) {
+export function intensityStops(node: GraphNode, now: number) {
   return genreStops(node, now, phaseIntensity)
 }
 
 /** Mask stops (1 = visible, 0 = hidden): the bar fades out of and back into niche periods. */
-export function genreVisibilityStops(node: GraphNode, now: number) {
+export function visibilityStops(node: GraphNode, now: number) {
   return genreStops(node, now, (phase) => (phaseIntensity(phase) > 0 ? 1 : 0))
 }
 
 /** Year ranges where the bar is visible; one per comeback. */
-export function genreVisibleSpans(node: GraphNode, now: number): [number, number][] {
+export function visibleSpans(node: GraphNode, now: number): [number, number][] {
   const spans: [number, number][] = []
-  for (const phase of genrePhases(node, now)) {
+  for (const phase of prominencePhases(node, now)) {
     if (phaseIntensity(phase) <= 0) continue
     const last = spans.at(-1)
     if (last && last[1] === phase.start) last[1] = phase.end
@@ -88,6 +88,6 @@ export function genreVisibleSpans(node: GraphNode, now: number): [number, number
 }
 
 /** Year where the visible part of the bar ends, ignoring a trailing niche period. */
-export function genreVisibleEnd(node: GraphNode, now: number): number | undefined {
-  return genreVisibleSpans(node, now).at(-1)?.[1]
+export function visibleEnd(node: GraphNode, now: number): number | undefined {
+  return visibleSpans(node, now).at(-1)?.[1]
 }

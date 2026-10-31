@@ -4,14 +4,16 @@ import {
   type GraphNode,
   type MusicGraph,
 } from './types.ts'
-import { genreVisibleEnd } from './phases.ts'
+import { visibleEnd } from './phases.ts'
 
 /**
- * Horizontal timeline layout: genres are interval bars grouped into family
+ * Horizontal timeline layout: nodes are interval bars grouped into family
  * lanes; within a family, overlapping bars are stacked onto separate rows.
  */
 
 export const CURRENT_YEAR = new Date().getFullYear()
+export const MIN_YEAR = 1948
+export const MAX_YEAR = CURRENT_YEAR + 2
 
 export interface TimeScale {
   /** First visible year. */
@@ -40,13 +42,13 @@ export function decadeTicks(scale: TimeScale): number[] {
   return ticks
 }
 
-export interface GenreBar {
+export interface TimelineBar {
   node: GraphNode
   family: GenreFamily
   /** Row within the family lane (0-based). */
   row: number
   start: number
-  /** Resolved end year (ongoing genres end "now"). */
+  /** Resolved end year (ongoing careers or genres end "now"). */
   end: number
   ongoing: boolean
 }
@@ -54,34 +56,38 @@ export interface GenreBar {
 export interface FamilyLane {
   family: GenreFamily
   rowCount: number
-  bars: GenreBar[]
+  bars: TimelineBar[]
 }
 
 /**
  * Greedy interval stacking: bars sorted by start year take the first row
  * whose last bar ends before they start (with padding so labels fit).
  */
-export function layoutFamilies(graph: MusicGraph, now = CURRENT_YEAR): FamilyLane[] {
-  const genres = graph.nodes.filter(
+export function layoutFamilies(
+  graph: MusicGraph,
+  now = CURRENT_YEAR,
+  nodeType: 'genre' | 'artist' = 'genre',
+): FamilyLane[] {
+  const nodes = graph.nodes.filter(
     (node): node is GraphNode & { family: GenreFamily } =>
-      node.type === 'genre' && node.family !== undefined && node.period !== undefined,
+      node.type === nodeType && node.family !== undefined && node.period !== undefined,
   )
 
   const lanes: FamilyLane[] = []
   for (const family of FAMILY_ORDER) {
-    const members = genres
+    const members = nodes
       .filter((node) => node.family === family)
       .sort((a, b) => a.period!.start - b.period!.start || a.name.localeCompare(b.name))
     if (members.length === 0) continue
 
     const rowEnds: number[] = []
-    const bars: GenreBar[] = []
+    const bars: TimelineBar[] = []
     for (const node of members) {
       const start = node.period!.start
       const end = node.period!.end ?? now
       // A hidden trailing niche period doesn't occupy the row; +2 covers the fade-out.
-      const visibleEnd = genreVisibleEnd(node, now)
-      const occupiedUntil = visibleEnd === undefined ? end : Math.min(visibleEnd + 2, end)
+      const lastVisibleYear = visibleEnd(node, now)
+      const occupiedUntil = lastVisibleYear === undefined ? end : Math.min(lastVisibleYear + 2, end)
       let row = rowEnds.findIndex((rowEnd) => rowEnd < start)
       if (row === -1) {
         row = rowEnds.length
