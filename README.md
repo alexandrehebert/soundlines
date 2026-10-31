@@ -44,7 +44,13 @@ as historical claims. The JSON supports adding or revising phases without changi
 All data lives in [src/data/graph.json](./src/data/graph.json) as a single property graph:
 
 - **Nodes** (`genre`, `artist`, `label`, `place`, `track`, `scene`) with stable `type:slug` ids, optional `period` (`start`/`end`/`precision`), `family` lane for genres, and descriptions.
-- **Edges** with a type, optional `period`, `confidence` (`low`/`medium`/`high`), and `note`. Lineage edge types (`influences`, `derived_from`, `subgenre_of`, `fusion_of`, `cross_pollination`, `revival_of`) carry an orientation so the JSON reads naturally in both directions (see `LINEAGE_ORIENTATION` in [src/graph/types.ts](./src/graph/types.ts)).
+- **Edges** with a type, optional `period`, `confidence` (`low`/`medium`/`high`), `note`, and source URLs. Lineage edge types (`influences`, `derived_from`, `subgenre_of`, `fusion_of`, `cross_pollination`, `revival_of`) carry an orientation so the JSON reads naturally in both directions (see `LINEAGE_ORIENTATION` in [src/graph/types.ts](./src/graph/types.ts)).
+- Nodes can include `sources` URLs; the detail panel exposes node and relationship citations as links.
+
+The expanded starter dataset connects at least three key artists to every genre
+and adds seven cited tracks. Artist pages document the people and groups;
+genre pages are cited on artist-to-genre relationships. These are curated
+representative examples, not exhaustive discographies or a popularity ranking.
 
 The UI never touches the JSON directly: all queries (neighbors, lineage traversal, period filtering, search) go through [src/graph/graph.ts](./src/graph/graph.ts). Migrating to a graph database later (e.g. Neo4j: nodes → labeled vertices, edges → typed relationships, other fields → properties) only requires reimplementing that one module.
 

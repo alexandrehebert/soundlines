@@ -86,6 +86,32 @@ describe('graph.json integrity', () => {
     }
   })
 
+  it('gives every genre at least three sourced key artists', () => {
+    for (const genre of graph.nodes.filter((node) => node.type === 'genre')) {
+      const artists = graph.edges.filter((edge) =>
+        edge.type === 'key_artist_of' && edge.to === genre.id,
+      )
+      expect(artists.length, genre.id).toBeGreaterThanOrEqual(3)
+      for (const edge of artists) expect(edge.sources?.length, edge.id).toBeGreaterThan(0)
+    }
+  })
+
+  it('provides valid Wikipedia sources for every artist and artist relationship', () => {
+    const artists = graph.nodes.filter((node) => node.type === 'artist')
+    for (const artist of artists) {
+      expect(artist.sources?.length, artist.id).toBeGreaterThan(0)
+    }
+    for (const edge of graph.edges.filter((candidate) => candidate.type === 'key_artist_of')) {
+      expect(edge.sources?.length, edge.id).toBeGreaterThan(0)
+    }
+    for (const source of [
+      ...graph.nodes.flatMap((node) => node.sources ?? []),
+      ...graph.edges.flatMap((edge) => edge.sources ?? []),
+    ]) {
+      expect(new URL(source).hostname).toBe('en.wikipedia.org')
+    }
+  })
+
   it('carries over all nine entities from the v1 catalogue', () => {
     const names = new Set(graph.nodes.map((node) => node.name))
     const v1Entities = [

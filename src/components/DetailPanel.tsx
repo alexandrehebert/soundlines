@@ -18,6 +18,32 @@ const CONFIDENCE_COLORS: Record<Confidence, string> = {
   high: '#4ade80',
 }
 
+function SourceLinks({ sources }: { sources?: string[] }) {
+  if (!sources?.length) return null
+
+  return (
+    <ul className="mt-1 flex flex-wrap gap-x-3 gap-y-1">
+      {sources.map((source) => {
+        const url = new URL(source)
+        const title = decodeURIComponent(url.pathname.split('/').at(-1) ?? url.hostname)
+          .replaceAll('_', ' ')
+        return (
+          <li key={source}>
+            <a
+              href={source}
+              target="_blank"
+              rel="noreferrer"
+              className="text-[11px] text-sky-400 underline decoration-sky-800 underline-offset-2 hover:text-sky-300"
+            >
+              {title}
+            </a>
+          </li>
+        )
+      })}
+    </ul>
+  )
+}
+
 interface DetailPanelProps {
   index: GraphIndex
   nodeId: string
@@ -140,12 +166,25 @@ export function DetailPanel({ index, nodeId, onSelect }: DetailPanelProps) {
                         {edge.note}
                       </p>
                     )}
+                    {edge.sources && (
+                      <div className="pl-3">
+                        <SourceLinks sources={edge.sources} />
+                      </div>
+                    )}
                   </li>
                 ))}
               </ul>
             </section>
           )
         })}
+        {node.sources && (
+          <section>
+            <h3 className="mb-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+              Sources
+            </h3>
+            <SourceLinks sources={node.sources} />
+          </section>
+        )}
       </div>
     </aside>
   )
