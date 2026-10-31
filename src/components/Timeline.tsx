@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useExplorer } from '../ExplorerContext.ts'
 import { lineage } from '../graph/graph.ts'
-import { decadeTicks, yearToX, type TimeScale } from '../graph/layout.ts'
+import { ERA_SEGMENTS, MAX_YEAR, timeTicks, yearToX, type TimeScale } from '../graph/layout.ts'
 import { AXIS_H, BAR_H, positionTimeline } from './timeline/geometry.ts'
 import { TimelineBar } from './timeline/TimelineBar.tsx'
 import { TimelineLinks } from './timeline/TimelineLinks.tsx'
@@ -45,7 +45,25 @@ export function Timeline() {
       data-timeline-view={view}>
       {width > 0 && (
         <svg width={width} height={height} {...handlers}>
-          {decadeTicks(scale).map((year) => {
+          {ERA_SEGMENTS.map((segment, i) => {
+            if (segment.weight >= 1) return null
+            const segmentEnd = ERA_SEGMENTS[i + 1]?.from ?? MAX_YEAR
+            if (segmentEnd <= scale.start || segment.from >= scale.end) return null
+            const x1 = Math.max(0, yearToX(scale, segment.from))
+            const x2 = Math.min(width, yearToX(scale, segmentEnd))
+            return (
+              <g key={segment.from} pointerEvents="none">
+                <rect x={x1} y={0} width={x2 - x1} height={height} fill="#94a3b8" opacity={0.025 + (1 - segment.weight) * 0.03} />
+                <line x1={x2} y1={0} x2={x2} y2={height} stroke="#475569" strokeDasharray="2 4" />
+                {x2 - x1 > 90 && (
+                  <text x={x2 - 6} y={34} textAnchor="end" fill="#64748b" fontSize={9} fontStyle="italic">
+                    time ×{Math.round(1 / segment.weight)} compressed
+                  </text>
+                )}
+              </g>
+            )
+          })}
+          {timeTicks(scale).map((year) => {
             const x = yearToX(scale, year)
             return (
               <g key={year}>

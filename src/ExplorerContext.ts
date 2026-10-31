@@ -7,11 +7,12 @@ import {
   useState,
 } from 'react'
 import { buildIndex } from './graph/graph.ts'
-import { DEFAULT_START_YEAR, MAX_YEAR, MIN_YEAR } from './graph/layout.ts'
+import { DEFAULT_START_YEAR, MAX_YEAR, revealEraRange } from './graph/layout.ts'
 import { createTimelineModel, type TimelineView } from './graph/timeline.ts'
 import type { MusicGraph } from './graph/types.ts'
 
 type YearRange = [number, number]
+type ExplorerLocation = { view: TimelineView; selectedId: string | null }
 
 export function useExplorerState(graph: MusicGraph) {
   const index = useMemo(() => buildIndex(graph), [graph])
@@ -26,11 +27,32 @@ export function useExplorerState(graph: MusicGraph) {
   }, [index])
   const [location, setLocation] = useState(readLocation)
   const { view, selectedId } = location
-  const [ranges, setRanges] = useState<Record<TimelineView, YearRange>>({
-    genre: [DEFAULT_START_YEAR, MAX_YEAR],
-    artist: [DEFAULT_START_YEAR, MAX_YEAR],
+  const [ranges, setRanges] = useState<Record<TimelineView, YearRange>>(() => {
+    const node = location.selectedId ? index.nodeById.get(location.selectedId) : undefined
+    const initial: Record<TimelineView, YearRange> = {
+      genre: [DEFAULT_START_YEAR, MAX_YEAR],
+      artist: [DEFAULT_START_YEAR, MAX_YEAR],
+    }
+    if (node?.period) {
+      initial[location.view] = revealEraRange(initial[location.view], node.period.start)
+    }
+    return initial
   })
   const model = useMemo(() => createTimelineModel(index, view), [index, view])
+
+  const revealSelection = useCallback((next: ExplorerLocation) => {
+    const node = next.selectedId ? index.nodeById.get(next.selectedId) : undefined
+    if (!node?.period) return
+    const year = node.period.start
+    setRanges((current) => {
+      const [start, end] = current[next.view]
+      if (year >= start && year <= end) return current
+      return {
+        ...current,
+        [next.view]: revealEraRange([start, end], year),
+      }
+    })
+  }, [index])
 
   useEffect(() => {
     const url = new URL(window.location.href)
@@ -42,26 +64,23 @@ export function useExplorerState(graph: MusicGraph) {
   }, [selectedId, view])
 
   useEffect(() => {
-    const onPopState = () => setLocation(readLocation())
+    const onPopState = () => {
+      const next = readLocation()
+      revealSelection(next)
+      setLocation(next)
+    }
     window.addEventListener('popstate', onPopState)
     return () => window.removeEventListener('popstate', onPopState)
-  }, [readLocation])
+  }, [readLocation, revealSelection])
 
   const selectNode = useCallback((id: string | null) => {
     const node = id ? index.nodeById.get(id) : undefined
     if (id && !node) throw new Error(`Cannot select unknown node ${id}`)
     const nextView = node?.type === 'genre' || node?.type === 'artist' ? node.type : view
-    setLocation({ view: nextView, selectedId: id })
-    if (!node?.period) return
-    const year = node.period.start
-    setRanges((current) => {
-      const [start, end] = current[nextView]
-      if (year >= start && year <= end) return current
-      const span = end - start
-      const nextStart = Math.max(MIN_YEAR, Math.min(year - span * 0.25, MAX_YEAR - span))
-      return { ...current, [nextView]: [nextStart, nextStart + span] }
-    })
-  }, [index, view])
+    const next = { view: nextView, selectedId: id }
+    revealSelection(next)
+    setLocation(next)
+  }, [index, view, revealSelection])
 
   const changeView = useCallback((nextView: TimelineView) => {
     setLocation((current) => current.view === nextView

@@ -8,7 +8,8 @@ Vite, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vitest, linted w
 
 The main view is a horizontal chronology with two modes: **Genres** (the default)
 and **Artists**. Each mode renders its own nodes as bars, grouped into family
-lanes (roots, electronic pioneers, house, techno, UK continuum). Curved links and
+lanes (roots, classical traditions, jazz, rock, electronic pioneers, house, techno,
+UK continuum). Curved links and
 highlighting stay within the active mode.
 
 - Drag to move both axes, scroll to move vertically, horizontal scroll to pan time, pinch or Cmd/Ctrl+scroll to zoom
@@ -17,6 +18,7 @@ highlighting stay within the active mode.
 - Search and related-node navigation switch modes automatically when selecting an artist or genre and bring the selected bar into view
 - Selection is shareable via `?focus=<node-id>`; `?view=artists` opens the artist timeline without a selection
 - Each mode remembers its horizontal time range; switching modes resets vertical scrolling and hover
+- The default range remains 1948–present; pan or zoom out to reach earlier history (back to c. 500), or search for an era or composer to jump there
 
 Artists appear once, in their most-represented genre family. Ties follow family
 order; an explicit artist `family` overrides inference. Artist links include
@@ -58,7 +60,10 @@ The initial nine examples are approximate, illustrative editorial choices, not
 researched popularity measurements. Their `phaseNote` explains the scope and is
 visible in the detail panel and tooltips. Soul continues after its classic peak;
 disco and jungle no longer incorrectly stop when their original boom ends.
-`period.end` is reserved for a genuinely ended lifespan, whose bar still fades out.
+`period.end` is reserved for a genuinely ended lifespan or a bounded historical
+era, whose bar still fades out. For Medieval, Renaissance, Baroque, Classical,
+and Romantic music, the approximate boundaries describe historical stylistic
+eras, not the disappearance of their repertoire or performance traditions.
 These judgments need sourced, geographically contextual research before publication
 as historical claims. The JSON supports adding or revising phases without changing the UI.
 
@@ -74,6 +79,22 @@ The expanded starter dataset connects at least three key artists to every genre
 and adds seven cited tracks. Artist pages document the people and groups;
 genre pages are cited on artist-to-genre relationships. These are curated
 representative examples, not exhaustive discographies or a popularity ranking.
+
+The historical expansion adds **27 genre/era nodes**: seven Western classical
+traditions (Medieval through minimalism), blues, eight jazz styles (early jazz,
+swing, bebop, cool jazz, hard bop, modal jazz, free jazz, and fusion), and eleven
+rock branches (rock and roll through grunge). Each has at least three cited
+representative artists. Classical-era succession uses influence links rather
+than treating historical periods as subgenres of each other; jazz fusion has
+multiple parents. Blues, jazz harmony, and krautrock connect the new branches to
+the original catalogue. Origins and era boundaries are approximate and overlapping,
+not exact invention dates or popularity measurements. New nodes deliberately have
+neutral bars rather than invented prominence histories.
+
+Composer dates describe approximate creative/professional activity, not birth
+years. Some new band periods span documented breaks and reunion appearances;
+their descriptions identify this career-envelope limitation. They are not
+claims of uninterrupted activity.
 
 The UI never touches the JSON directly: all queries (neighbors, lineage traversal, period filtering, search) go through [src/graph/graph.ts](./src/graph/graph.ts). Migrating to a graph database later (e.g. Neo4j: nodes → labeled vertices, edges → typed relationships, other fields → properties) only requires reimplementing that one module.
 

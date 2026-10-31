@@ -25,22 +25,112 @@ export interface TimeScale {
   width: number
 }
 
+/**
+ * Era-weighted time: older centuries get fewer pixels per year so the
+ * modern era stays readable when zoomed out. Each segment starts at `from`
+ * and maps one year to `weight` units of "era time".
+ */
+export const ERA_SEGMENTS: readonly { from: number; weight: number; label: string }[] = [
+  { from: MIN_YEAR, weight: 0.08, label: 'Medieval' },
+  { from: 1400, weight: 0.2, label: 'Renaissance – Baroque' },
+  { from: 1750, weight: 0.5, label: 'Classical – Romantic' },
+  { from: 1900, weight: 1, label: 'Modern' },
+]
+
+export function eraWeight(year: number): number {
+  let weight = ERA_SEGMENTS[0].weight
+  for (const segment of ERA_SEGMENTS) {
+    if (year >= segment.from) weight = segment.weight
+  }
+  return weight
+}
+
+/** Convert a calendar year to era time (MIN_YEAR maps to 0). */
+export function toEraTime(year: number): number {
+  let t = 0
+  for (let i = 0; i < ERA_SEGMENTS.length; i++) {
+    const { from, weight } = ERA_SEGMENTS[i]
+    const next = ERA_SEGMENTS[i + 1]?.from ?? Infinity
+    if (year <= from) break
+    t += (Math.min(year, next) - from) * weight
+  }
+  return t
+}
+
+export function fromEraTime(t: number): number {
+  let remaining = t
+  for (let i = 0; i < ERA_SEGMENTS.length; i++) {
+    const { from, weight } = ERA_SEGMENTS[i]
+    const next = ERA_SEGMENTS[i + 1]?.from ?? Infinity
+    const length = (next - from) * weight
+    if (remaining <= length) return from + remaining / weight
+    remaining -= length
+  }
+  return Infinity
+}
+
 export function yearToX(scale: TimeScale, year: number): number {
-  return ((year - scale.start) / (scale.end - scale.start)) * scale.width
+  const start = toEraTime(scale.start)
+  return ((toEraTime(year) - start) / (toEraTime(scale.end) - start)) * scale.width
 }
 
 export function xToYear(scale: TimeScale, x: number): number {
-  return scale.start + (x / scale.width) * (scale.end - scale.start)
+  const start = toEraTime(scale.start)
+  return fromEraTime(start + (x / scale.width) * (toEraTime(scale.end) - start))
 }
 
-/** Decade tick years covering the visible range. */
-export function decadeTicks(scale: TimeScale): number[] {
+const TICK_STEPS = [10, 20, 25, 50, 100, 200, 250, 500]
+
+/**
+ * Tick years covering the visible range. The step adapts to the local
+ * pixels-per-year so compressed eras get sparser ticks (decades when space allows).
+ */
+export function timeTicks(scale: TimeScale, minSpacing = 56): number[] {
+  const span = toEraTime(scale.end) - toEraTime(scale.start)
+  if (span <= 0 || scale.width <= 0) return []
   const ticks: number[] = []
-  const first = Math.ceil(scale.start / 10) * 10
-  for (let year = first; year <= scale.end; year += 10) {
-    ticks.push(year)
+  let year = scale.start
+  while (year <= scale.end) {
+    const pxPerYear = (eraWeight(year) / span) * scale.width
+    const step = TICK_STEPS.find((s) => s * pxPerYear >= minSpacing) ?? TICK_STEPS.at(-1)!
+    const tick = Math.ceil(year / step) * step
+    if (tick > scale.end) break
+    const last = ticks.at(-1)
+    if (last === undefined || yearToX(scale, tick) - yearToX(scale, last) >= minSpacing * 0.75) {
+      ticks.push(tick)
+    }
+    year = tick + 1
   }
   return ticks
+}
+
+type YearRange = [number, number]
+
+const ERA_MIN = () => toEraTime(MIN_YEAR)
+const ERA_MAX = () => toEraTime(MAX_YEAR)
+
+function inEraTime(range: YearRange, fn: (start: number, end: number) => YearRange): YearRange {
+  const [start, end] = fn(toEraTime(range[0]), toEraTime(range[1]))
+  return [fromEraTime(start), fromEraTime(end)]
+}
+
+/** Zoom a year range around a focal year, operating in era time. */
+export function zoomYearRange(range: YearRange, focusYear: number, factor: number): YearRange {
+  return inEraTime(range, (start, end) =>
+    zoomRange(start, end, toEraTime(focusYear), factor, ERA_MIN(), ERA_MAX()))
+}
+
+/** Pan a year range by a fraction of its visible width. */
+export function panYearRange(range: YearRange, fraction: number): YearRange {
+  return inEraTime(range, (start, end) =>
+    panRange(start, end, fraction * (end - start), ERA_MIN(), ERA_MAX()))
+}
+
+/** Reveal a year while keeping the current on-screen zoom level. */
+export function revealEraRange(range: YearRange, year: number): YearRange {
+  if (year >= range[0] && year <= range[1]) return range
+  return inEraTime(range, (start, end) =>
+    revealYearRange(start, end, toEraTime(year), ERA_MIN(), ERA_MAX()))
 }
 
 export interface TimelineBar {
@@ -140,5 +230,19 @@ export function panRange(
   let nextStart = start + delta
   if (nextStart < min) nextStart = min
   if (nextStart + span > max) nextStart = max - span
+  return [nextStart, nextStart + span]
+}
+
+/** Reveal a selected start year while preserving the current zoom level. */
+export function revealYearRange(
+  start: number,
+  end: number,
+  year: number,
+  min: number,
+  max: number,
+): [number, number] {
+  if (year >= start && year <= end) return [start, end]
+  const span = end - start
+  const nextStart = Math.max(min, Math.min(year - span * 0.25, max - span))
   return [nextStart, nextStart + span]
 }

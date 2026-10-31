@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type PointerEvent } from 'react'
 import { useExplorer } from '../../ExplorerContext.ts'
-import { MAX_YEAR, MIN_YEAR, panRange, xToYear, zoomRange } from '../../graph/layout.ts'
+import { panYearRange, xToYear, zoomYearRange } from '../../graph/layout.ts'
 
 export function useTimelineViewport() {
   const { viewRange, setViewRange, selectNode } = useExplorer()
@@ -32,13 +32,10 @@ export function useTimelineViewport() {
           { start: viewRange[0], end: viewRange[1], width: rect.width },
           event.clientX - rect.left,
         )
-        setViewRange(zoomRange(
-          ...viewRange, focusYear, event.deltaY > 0 ? 1.12 : 0.89, MIN_YEAR, MAX_YEAR,
-        ))
+        setViewRange(zoomYearRange(viewRange, focusYear, event.deltaY > 0 ? 1.12 : 0.89))
       } else if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
         event.preventDefault()
-        const delta = event.deltaX / rect.width * (viewRange[1] - viewRange[0])
-        setViewRange(panRange(...viewRange, delta, MIN_YEAR, MAX_YEAR))
+        setViewRange(panYearRange(viewRange, event.deltaX / rect.width))
       }
     }
     element.addEventListener('wheel', onWheel, { passive: false })
@@ -61,8 +58,7 @@ export function useTimelineViewport() {
     const dy = event.clientY - drag.current.y
     if (Math.abs(dx) > 3 || Math.abs(dy) > 3) drag.current.moved = true
     if (!drag.current.moved) return
-    const [start, end] = drag.current.range
-    setViewRange(panRange(start, end, -dx / width * (end - start), MIN_YEAR, MAX_YEAR))
+    setViewRange(panYearRange(drag.current.range, -dx / width))
     if (containerRef.current) containerRef.current.scrollTop = drag.current.scrollTop - dy
   }
 

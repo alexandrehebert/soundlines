@@ -44,7 +44,7 @@ export function TimelineLinks({ barById, scale, highlightedEdges }: TimelineLink
         opacity={highlightedEdges ? lit ? 0.9 : 0.08 : 0.3}
         pointerEvents="none"
       >
-        <title>{`${parent.node.name} ${EDGE_TYPE_LABELS[edge.type]} ${child.node.name}`}</title>
+        <title>{`${model.index.nodeById.get(edge.from)?.name ?? edge.from} ${EDGE_TYPE_LABELS[edge.type]} ${model.index.nodeById.get(edge.to)?.name ?? edge.to}`}</title>
       </path>
     )
   })

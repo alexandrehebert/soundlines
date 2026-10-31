@@ -1,6 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import rawGraph from './graph.json'
 import type { GraphNode, MusicGraph, NodeType } from '../graph/types.ts'
+import { MAX_YEAR, MIN_YEAR } from '../graph/layout.ts'
+import { buildIndex, lineage, searchNodes } from '../graph/graph.ts'
+import { createTimelineModel } from '../graph/timeline.ts'
 import {
   EDGE_TYPE_LABELS,
   FAMILY_LABELS,
@@ -71,9 +74,11 @@ describe('graph.json integrity', () => {
     )
     expect(withPeriod.length).toBeGreaterThan(0)
     for (const node of withPeriod) {
-      expect(node.period.start).toBeGreaterThan(1800)
+      expect(Number.isInteger(node.period.start), node.id).toBe(true)
+      expect(node.period.start, node.id).toBeGreaterThanOrEqual(MIN_YEAR)
       expect(node.period.start).toBeLessThan(2100)
       if (node.period.end != null) {
+        expect(Number.isInteger(node.period.end), node.id).toBe(true)
         expect(node.period.end).toBeGreaterThanOrEqual(node.period.start)
       }
     }
@@ -84,6 +89,51 @@ describe('graph.json integrity', () => {
       expect(node.family, node.id).toBeDefined()
       expect(node.period, node.id).toBeDefined()
     }
+  })
+
+  it('covers classical eras and jazz and rock branches with cited genre nodes', () => {
+    const expected = {
+      classical: ['medieval', 'renaissance', 'baroque', 'classical-period', 'romantic', 'modern-classical', 'minimalism'],
+      jazz: ['jazz', 'swing', 'bebop', 'cool-jazz', 'hard-bop', 'modal-jazz', 'free-jazz', 'jazz-fusion'],
+      rock: ['rock-and-roll', 'rock', 'blues-rock', 'psychedelic-rock', 'progressive-rock', 'hard-rock', 'heavy-metal', 'punk-rock', 'post-punk', 'alternative-rock', 'grunge'],
+    }
+    for (const [family, slugs] of Object.entries(expected)) {
+      for (const slug of slugs) {
+        const node = graph.nodes.find((candidate) => candidate.id === `genre:${slug}`)
+        expect(node?.family, slug).toBe(family)
+        expect(node?.sources?.length, slug).toBeGreaterThan(0)
+      }
+    }
+  })
+
+  it('projects new genres and artists into their dedicated timeline lanes', () => {
+    const index = buildIndex(graph)
+    for (const view of ['genre', 'artist'] as const) {
+      const model = createTimelineModel(index, view)
+      const ids = model.lanes.flatMap((lane) => lane.bars.map((bar) => bar.node.id))
+      expect(new Set(ids).size).toBe(graph.nodes.filter((node) => node.type === view).length)
+      for (const family of ['classical', 'jazz', 'rock']) {
+        expect(model.lanes.find((lane) => lane.family === family)?.bars.length).toBeGreaterThan(0)
+      }
+      for (const lane of model.lanes) {
+        for (const bar of lane.bars) {
+          expect(bar.start, bar.node.id).toBeGreaterThanOrEqual(MIN_YEAR)
+          expect(bar.end, bar.node.id).toBeLessThanOrEqual(MAX_YEAR)
+        }
+      }
+    }
+    expect(createTimelineModel(index, 'artist').index.nodeById.get('artist:mozart')?.family)
+      .toBe('classical')
+  })
+
+  it('makes historical eras searchable and connects the expanded lineage to existing genres', () => {
+    expect(searchNodes(graph, 'Baroque')[0].node.id).toBe('genre:baroque')
+    expect(searchNodes(graph, 'Mozart')[0].node.id).toBe('artist:mozart')
+    const index = createTimelineModel(buildIndex(graph), 'genre').index
+    expect(lineage(index, 'genre:romantic').ancestors).toContain('genre:medieval')
+    expect(lineage(index, 'genre:grunge').ancestors).toContain('genre:blues')
+    expect(lineage(index, 'genre:deep-house').ancestors).toContain('genre:jazz')
+    expect(lineage(index, 'genre:synth-pop').ancestors).toContain('genre:rock')
   })
 
   it('gives every genre at least three sourced key artists', () => {
