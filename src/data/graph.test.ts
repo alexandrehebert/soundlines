@@ -146,7 +146,7 @@ describe('graph.json integrity', () => {
     }
   })
 
-  it('provides valid Wikipedia sources for every artist and artist relationship', () => {
+  it('provides valid HTTPS sources for every artist and artist relationship', () => {
     const artists = graph.nodes.filter((node) => node.type === 'artist')
     const artistIds = new Set(artists.map((node) => node.id))
     for (const artist of artists) {
@@ -161,7 +161,11 @@ describe('graph.json integrity', () => {
       ...graph.nodes.flatMap((node) => node.sources ?? []),
       ...graph.edges.flatMap((edge) => edge.sources ?? []),
     ]) {
-      expect(new URL(source).hostname).toBe('en.wikipedia.org')
+      const url = new URL(source)
+      expect(url.protocol).toBe('https:')
+      expect(url.hostname).not.toBe('')
+      expect(url.username).toBe('')
+      expect(url.password).toBe('')
     }
   })
 

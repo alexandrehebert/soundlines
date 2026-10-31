@@ -75,6 +75,8 @@ All data lives in [src/data/graph.json](./src/data/graph.json) as a single prope
 - **Edges** with a type, optional `period`, `confidence` (`low`/`medium`/`high`), `note`, and source URLs. Lineage edge types (`influences`, `derived_from`, `subgenre_of`, `fusion_of`, `cross_pollination`, `revival_of`) carry an orientation so the JSON reads naturally in both directions (see `LINEAGE_ORIENTATION` in [src/graph/types.ts](./src/graph/types.ts)).
 - Nodes can include `sources` URLs; the detail panel exposes node and relationship citations as links.
 
+See [src/data/GRAPH.md](./src/data/GRAPH.md) for the full schema, validation rules, and an editing guide (also suitable as a prompt for LLM-assisted enrichment).
+
 The expanded starter dataset connects at least three key artists to every genre
 and adds seven cited tracks. Artist pages document the people and groups;
 genre pages are cited on artist-to-genre relationships. These are curated
