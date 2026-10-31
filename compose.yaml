@@ -1,0 +1,16 @@
+services:
+  soundlines:
+    image: node:22-alpine
+    container_name: soundlines-dev
+    working_dir: /app
+    # Install inside the container (host node_modules has macOS-native
+    # binaries) and expose Vite outside the container network.
+    command: sh -c "npm ci && npm run dev -- --host 0.0.0.0"
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+
+volumes:
+  node_modules:
