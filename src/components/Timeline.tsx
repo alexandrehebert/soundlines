@@ -241,14 +241,25 @@ export function Timeline({
             const parent = barById.get(sourceId)
             const child = barById.get(targetId)
             if (!parent || !child) return null
-            const anchorX = Math.min(Math.max(child.x1, parent.x1), parent.x2)
-            const midX = (anchorX + child.x1) / 2
+            // Leave the parent bar's edge a bit before the child's start year
+            // so the curve has horizontal room instead of dropping straight down.
+            const goingDown = child.yCenter >= parent.yCenter
+            const y0 = parent.yCenter + (goingDown ? BAR_H / 2 : -BAR_H / 2)
+            const y1 = child.yCenter
+            const lead = Math.min(Math.max(Math.abs(y1 - y0) * 0.35, 30), 90)
+            const minX = parent.x1 + 14
+            const maxX = parent.x2 - 6
+            const anchorX =
+              maxX < minX
+                ? (parent.x1 + parent.x2) / 2
+                : Math.min(Math.max(child.x1 - lead, minX), maxX)
+            const endX = child.x1 + 1
             const isLit = highlight?.edges.has(edge.id) ?? false
             const opacity = highlight ? (isLit ? 0.9 : 0.08) : 0.3
             return (
               <path
                 key={edge.id}
-                d={`M ${anchorX} ${parent.yCenter} C ${midX} ${parent.yCenter}, ${midX} ${child.yCenter}, ${child.x1} ${child.yCenter}`}
+                d={`M ${anchorX} ${y0} C ${anchorX} ${(y0 + y1) / 2}, ${(anchorX + endX) / 2} ${y1}, ${endX} ${y1}`}
                 fill="none"
                 stroke={LINEAGE_EDGE_COLORS[edge.type] ?? '#64748b'}
                 strokeWidth={isLit ? 2 : 1.2}
@@ -274,6 +285,15 @@ export function Timeline({
                   if (!drag.current?.moved) onSelect(bar.node.id)
                 }}
               >
+                {/* opaque base so lines never bleed through the translucent fill */}
+                <rect
+                  x={bar.x1}
+                  y={bar.yCenter - BAR_H / 2}
+                  width={barWidth}
+                  height={BAR_H}
+                  rx={BAR_H / 2}
+                  fill="#020617"
+                />
                 <rect
                   x={bar.x1}
                   y={bar.yCenter - BAR_H / 2}
