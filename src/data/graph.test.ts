@@ -5,11 +5,26 @@ import {
   EDGE_TYPE_LABELS,
   FAMILY_LABELS,
   NODE_TYPE_LABELS,
+  PROMINENCE_LABELS,
 } from '../graph/types.ts'
 
 const graph = rawGraph as MusicGraph
 
 describe('graph.json integrity', () => {
+  it('has ordered, known editorial phases within each genre lifespan', () => {
+    for (const node of graph.nodes.filter((candidate) => candidate.phases !== undefined)) {
+      expect(node.type).toBe('genre')
+      expect(node.phaseNote).toBeTruthy()
+      expect(node.phases!.length).toBeGreaterThan(0)
+      expect(node.phases![0].start).toBe(node.period?.start)
+      for (const [i, phase] of node.phases!.entries()) {
+        expect(Number.isInteger(phase.start)).toBe(true)
+        expect(PROMINENCE_LABELS[phase.prominence]).toBeDefined()
+        if (i > 0) expect(phase.start).toBeGreaterThan(node.phases![i - 1].start)
+        if (node.period?.end != null) expect(phase.start).toBeLessThan(node.period.end)
+      }
+    }
+  })
   it('has unique node ids', () => {
     const ids = graph.nodes.map((node) => node.id)
     expect(new Set(ids).size).toBe(ids.length)

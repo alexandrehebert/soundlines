@@ -49,6 +49,20 @@ export type GenreFamily =
 
 export type ArtistKind = 'person' | 'group' | 'collective'
 
+export type Prominence = 'emerging' | 'golden-age' | 'established' | 'niche'
+
+export interface GenrePhase {
+  start: number
+  prominence: Prominence
+}
+
+export const PROMINENCE_LABELS: Record<Prominence, string> = {
+  emerging: 'Emerging',
+  'golden-age': 'Golden age',
+  established: 'Continuing',
+  niche: 'Niche scene',
+}
+
 export interface GraphNode {
   id: string
   type: NodeType
@@ -60,6 +74,9 @@ export interface GraphNode {
   /** Only meaningful for artists. */
   kind?: ArtistKind
   sources?: string[]
+  /** Editorial phases, not popularity measurements; each lasts until the next start. */
+  phases?: GenrePhase[]
+  phaseNote?: string
 }
 
 export interface GraphEdge {

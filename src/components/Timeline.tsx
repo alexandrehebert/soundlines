@@ -15,7 +15,8 @@ import {
   zoomRange,
   type TimeScale,
 } from '../graph/layout.ts'
-import { FAMILY_LABELS, type GraphNode, type MusicGraph } from '../graph/types.ts'
+import { FAMILY_LABELS, PROMINENCE_LABELS, type GraphNode, type MusicGraph } from '../graph/types.ts'
+import { genreHeightAt, genrePhases, PHASE_STYLE } from '../graph/phases.ts'
 import { FAMILY_COLORS, LINEAGE_EDGE_COLORS } from '../theme.ts'
 
 const AXIS_H = 34
@@ -232,7 +233,11 @@ export function Timeline({
       const lastX = lastXByGenre.get(edge.to)
       if (lastX !== undefined && x < lastX + 12) x = lastX + 12
       lastXByGenre.set(edge.to, x)
-      markers.push({ id: artist.id, name: artist.name, x, y: bar.yCenter + BAR_H / 2 - 2, color: bar.color })
+      markers.push({
+        id: artist.id, name: artist.name, x,
+        y: bar.yCenter + genreHeightAt(bar.node, xToYear(scale, x)) / 2 - 2,
+        color: bar.color,
+      })
     }
     return markers
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -304,15 +309,16 @@ export function Timeline({
             // Leave the parent bar's edge a bit before the child's start year
             // so the curve has horizontal room instead of dropping straight down.
             const goingDown = child.yCenter >= parent.yCenter
-            const y0 = parent.yCenter + (goingDown ? BAR_H / 2 : -BAR_H / 2)
             const y1 = child.yCenter
-            const lead = Math.min(Math.max(Math.abs(y1 - y0) * 0.35, 30), 90)
+            const lead = Math.min(Math.max(Math.abs(y1 - parent.yCenter) * 0.35, 30), 90)
             const minX = parent.x1 + 14
             const maxX = parent.x2 - 6
             const anchorX =
               maxX < minX
                 ? (parent.x1 + parent.x2) / 2
                 : Math.min(Math.max(child.x1 - lead, minX), maxX)
+            const parentHeight = genreHeightAt(parent.node, xToYear(scale, anchorX))
+            const y0 = parent.yCenter + (goingDown ? parentHeight / 2 : -parentHeight / 2)
             const endX = child.x1 + 1
             const isLit = highlight?.edges.has(edge.id) ?? false
             const opacity = highlight ? (isLit ? 0.9 : 0.08) : 0.3
@@ -334,6 +340,8 @@ export function Timeline({
             const barWidth = Math.max(bar.x2 - bar.x1, 6)
             const isSelected = bar.node.id === selectedId
             const shape = barShape(bar.x1, bar.x2, bar.yCenter - BAR_H / 2, BAR_H, !bar.ended)
+            const phases = genrePhases(bar.node, CURRENT_YEAR)
+            const clipId = `bar-clip-${bar.node.id.replace(':', '-')}`
             return (
               <g
                 key={bar.node.id}
@@ -346,23 +354,53 @@ export function Timeline({
                   if (!suppressClick.current) onSelect(bar.node.id)
                 }}
               >
-                {/* opaque base so lines never bleed through the translucent fill;
-                    ended genres fade out, letting lines ghost through the tail */}
+                <defs>
+                  <clipPath id={clipId}><path d={shape} /></clipPath>
+                </defs>
                 <g mask={bar.ended ? 'url(#bar-fade-mask)' : undefined}>
-                  <path d={shape} fill="#020617" />
-                  <path
-                    d={shape}
-                    fill={bar.color}
-                    opacity={isSelected ? 0.95 : 0.55}
-                    stroke={isSelected ? '#f8fafc' : bar.color}
-                    strokeWidth={isSelected ? 1.5 : 0}
-                  />
+                  <path d={shape} fill={`color-mix(in srgb, ${bar.color} 4%, #020617)`} />
+                  {phases.length === 0 ? (
+                    <path
+                      d={shape}
+                      fill={bar.color}
+                      opacity={isSelected ? 0.95 : 0.55}
+                      stroke={isSelected ? '#f8fafc' : bar.color}
+                      strokeWidth={isSelected ? 1.5 : 0}
+                    />
+                  ) : (
+                    <g clipPath={`url(#${clipId})`}>
+                      {phases.map((phase) => {
+                        const style = PHASE_STYLE[phase.prominence]
+                        const x = yearToX(scale, phase.start)
+                        const endX = yearToX(scale, phase.end)
+                        return (
+                          <g key={phase.start} data-prominence={phase.prominence}>
+                            {style.dashed ? (
+                              <line x1={x} x2={endX} y1={bar.yCenter} y2={bar.yCenter}
+                                stroke={bar.color} strokeWidth={style.height}
+                                strokeDasharray="5 5" opacity={style.opacity} />
+                            ) : (
+                              <rect x={x} y={bar.yCenter - style.height / 2}
+                                width={endX - x} height={style.height}
+                                fill={bar.color} opacity={style.opacity} />
+                            )}
+                            <rect x={x} y={bar.yCenter - BAR_H / 2}
+                              width={endX - x} height={BAR_H} fill="transparent" />
+                            <title>{`${PROMINENCE_LABELS[phase.prominence]}: c. ${phase.start}–${phase.end}. ${bar.node.phaseNote ?? ''}`}</title>
+                          </g>
+                        )
+                      })}
+                    </g>
+                  )}
+                  {phases.length > 0 && isSelected && (
+                    <path d={shape} fill="none" stroke="#f8fafc" strokeWidth={1.5} />
+                  )}
                 </g>
                 {barWidth > 54 && (
                   <text
                     x={Math.max(bar.x1, 0) + 10}
                     y={bar.yCenter + 4}
-                    fill="#020617"
+                    fill={phases.length > 0 ? '#f8fafc' : '#020617'}
                     fontSize={11.5}
                     fontWeight={700}
                     pointerEvents="none"

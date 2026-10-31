@@ -5,9 +5,12 @@ import {
   EDGE_TYPE_LABELS,
   FAMILY_LABELS,
   NODE_TYPE_LABELS,
+  PROMINENCE_LABELS,
   type Confidence,
 } from '../graph/types.ts'
 import { formatPeriod, NODE_TYPE_COLORS } from '../theme.ts'
+import { genrePhases, PHASE_STYLE } from '../graph/phases.ts'
+import { CURRENT_YEAR } from '../graph/layout.ts'
 
 const CONFIDENCE_COLORS: Record<Confidence, string> = {
   low: '#f87171',
@@ -28,6 +31,7 @@ export function DetailPanel({ index, nodeId, onSelect }: DetailPanelProps) {
   const typeColor = NODE_TYPE_COLORS[node.type]
   const period = formatPeriod(node.period)
   const groups = groupedRelations(index, nodeId)
+  const phases = genrePhases(node, CURRENT_YEAR)
 
   return (
     <aside className="flex h-full w-full flex-col overflow-y-auto border-l border-slate-800 bg-slate-950/90 backdrop-blur">
@@ -63,6 +67,30 @@ export function DetailPanel({ index, nodeId, onSelect }: DetailPanelProps) {
       <div className="flex flex-col gap-5 p-5">
         {node.description && (
           <p className="text-sm leading-relaxed text-slate-300">{node.description}</p>
+        )}
+
+        {phases.length > 0 && (
+          <section>
+            <h3 className="mb-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+              Historical prominence · approximate
+            </h3>
+            <ul className="flex flex-col gap-2">
+              {phases.map((phase) => (
+                <li key={phase.start} className="flex items-center justify-between gap-3 text-xs text-slate-300">
+                  <span className="flex items-center gap-2">
+                    <svg width="24" height="14" aria-hidden="true">
+                      <line x1="0" x2="24" y1="7" y2="7" stroke={typeColor}
+                        strokeWidth={PHASE_STYLE[phase.prominence].height / 2}
+                        strokeDasharray={PHASE_STYLE[phase.prominence].dashed ? '4 3' : undefined} />
+                    </svg>
+                    {PROMINENCE_LABELS[phase.prominence]}
+                  </span>
+                  <span>c. {phase.start} – {phase.end === CURRENT_YEAR && node.period?.end == null ? 'now' : phase.end}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-xs leading-relaxed text-slate-500">{node.phaseNote}</p>
+          </section>
         )}
 
         {groups.map((group) => {
