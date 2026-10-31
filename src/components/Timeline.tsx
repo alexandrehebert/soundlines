@@ -34,6 +34,24 @@ interface BarPosition {
   x2: number
   yCenter: number
   color: string
+  /** The genre's period has an end year: it faded out. */
+  ended: boolean
+}
+
+/**
+ * Pill shape with an always-rounded left cap. Ended genres get a square
+ * right edge (they dissolve via a gradient fade instead of capping off).
+ */
+function barShape(x1: number, x2: number, yTop: number, h: number, roundRight: boolean): string {
+  const r = h / 2
+  const left = x1 + r
+  const minRight = left + (roundRight ? r : 2)
+  const right = Math.max(x2, minRight)
+  if (roundRight) {
+    const capStart = right - r
+    return `M ${left} ${yTop} H ${capStart} A ${r} ${r} 0 0 1 ${capStart} ${yTop + h} H ${left} A ${r} ${r} 0 0 1 ${left} ${yTop}`
+  }
+  return `M ${left} ${yTop} H ${right} V ${yTop + h} H ${left} A ${r} ${r} 0 0 1 ${left} ${yTop}`
 }
 
 interface TimelineProps {
@@ -94,6 +112,7 @@ export function Timeline({
           x2: yearToX(scale, bar.end),
           yCenter: rowTop + ROW_H / 2,
           color: FAMILY_COLORS[lane.family],
+          ended: !bar.ongoing,
         })
       }
       y += laneHeight + LANE_GAP
@@ -232,6 +251,17 @@ export function Timeline({
           onPointerUp={onPointerUp}
           onClick={onBackgroundClick}
         >
+          <defs>
+            {/* fade-out for genres whose period ended: the tail dissolves */}
+            <linearGradient id="bar-fade-gradient" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0.55" stopColor="#fff" stopOpacity="1" />
+              <stop offset="0.92" stopColor="#fff" stopOpacity="0.25" />
+              <stop offset="1" stopColor="#fff" stopOpacity="0.05" />
+            </linearGradient>
+            <mask id="bar-fade-mask" maskContentUnits="objectBoundingBox">
+              <rect x="0" y="0" width="1" height="1" fill="url(#bar-fade-gradient)" />
+            </mask>
+          </defs>
           {/* decade grid */}
           {decadeTicks(scale).map((year) => {
             const x = yearToX(scale, year)
@@ -303,6 +333,7 @@ export function Timeline({
           {bars.map((bar) => {
             const barWidth = Math.max(bar.x2 - bar.x1, 6)
             const isSelected = bar.node.id === selectedId
+            const shape = barShape(bar.x1, bar.x2, bar.yCenter - BAR_H / 2, BAR_H, !bar.ended)
             return (
               <g
                 key={bar.node.id}
@@ -315,26 +346,18 @@ export function Timeline({
                   if (!suppressClick.current) onSelect(bar.node.id)
                 }}
               >
-                {/* opaque base so lines never bleed through the translucent fill */}
-                <rect
-                  x={bar.x1}
-                  y={bar.yCenter - BAR_H / 2}
-                  width={barWidth}
-                  height={BAR_H}
-                  rx={BAR_H / 2}
-                  fill="#020617"
-                />
-                <rect
-                  x={bar.x1}
-                  y={bar.yCenter - BAR_H / 2}
-                  width={barWidth}
-                  height={BAR_H}
-                  rx={BAR_H / 2}
-                  fill={bar.color}
-                  opacity={isSelected ? 0.95 : 0.55}
-                  stroke={isSelected ? '#f8fafc' : bar.color}
-                  strokeWidth={isSelected ? 1.5 : 0}
-                />
+                {/* opaque base so lines never bleed through the translucent fill;
+                    ended genres fade out, letting lines ghost through the tail */}
+                <g mask={bar.ended ? 'url(#bar-fade-mask)' : undefined}>
+                  <path d={shape} fill="#020617" />
+                  <path
+                    d={shape}
+                    fill={bar.color}
+                    opacity={isSelected ? 0.95 : 0.55}
+                    stroke={isSelected ? '#f8fafc' : bar.color}
+                    strokeWidth={isSelected ? 1.5 : 0}
+                  />
+                </g>
                 {barWidth > 54 && (
                   <text
                     x={Math.max(bar.x1, 0) + 10}
