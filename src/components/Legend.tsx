@@ -1,5 +1,5 @@
 import { EDGE_TYPE_LABELS, PROMINENCE_LABELS, type EdgeType, type Prominence } from '../graph/types.ts'
-import { PHASE_STYLE } from '../graph/phases.ts'
+import { intensityOpacity, PHASE_STYLE } from '../graph/phases.ts'
 import { LINEAGE_EDGE_COLORS } from '../theme.ts'
 
 export function Legend() {
@@ -22,9 +22,9 @@ export function Legend() {
       {(Object.keys(PHASE_STYLE) as Prominence[]).map((phase) => (
         <span key={phase} className="flex items-center gap-1.5 text-[11px] font-medium text-slate-400">
           <svg width="20" height="12" aria-hidden="true">
-            {PHASE_STYLE[phase].visible ? (
+            {PHASE_STYLE[phase].intensity > 0 ? (
               <rect x="0" y="1" width="20" height="10" rx="3"
-                fill="#94a3b8" opacity={PHASE_STYLE[phase].opacity} />
+                fill="#94a3b8" opacity={intensityOpacity(PHASE_STYLE[phase].intensity)} />
             ) : (
               <rect x="0.5" y="1.5" width="19" height="9" rx="3"
                 fill="none" stroke="#475569" strokeDasharray="2 2" />

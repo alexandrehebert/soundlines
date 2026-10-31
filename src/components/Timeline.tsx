@@ -18,11 +18,13 @@ import {
 import { FAMILY_LABELS, PROMINENCE_LABELS, type GraphNode, type MusicGraph } from '../graph/types.ts'
 import {
   GENRE_BAR_HEIGHT,
-  genreOpacityStops,
+  genreIntensityStops,
   genrePhases,
   genreVisibilityStops,
-  genreVisibleEnd,
-  PHASE_STYLE,
+  genreVisibleSpans,
+  intensityColor,
+  intensityOpacity,
+  phaseIntensity,
 } from '../graph/phases.ts'
 import { initials, placeBubbles, type BubbleRequest } from '../graph/bubbles.ts'
 import { FAMILY_COLORS, LINEAGE_EDGE_COLORS } from '../theme.ts'
@@ -41,12 +43,48 @@ interface BarPosition {
   node: GraphNode
   x1: number
   x2: number
-  /** Right edge of the visible part (a trailing niche period is hidden). */
-  visibleX2: number
+  /** Pixel ranges where the bar is visible (it disappears in niche periods). */
+  visibleSpans: [number, number][]
   yCenter: number
   color: string
   /** The genre's period has an end year: it faded out. */
   ended: boolean
+}
+
+/** Clamp x into the nearest visible span, keeping `pad` px from its edges. */
+function snapToSpans(x: number, spans: [number, number][], pad: number): number {
+  let best = x
+  let bestDistance = Infinity
+  for (const [x1, x2] of spans) {
+    const lo = Math.min(x1 + pad, (x1 + x2) / 2)
+    const hi = Math.max(x2 - pad, (x1 + x2) / 2)
+    const candidate = Math.min(Math.max(x, lo), hi)
+    const distance = Math.abs(candidate - x)
+    if (distance < bestDistance) {
+      best = candidate
+      bestDistance = distance
+    }
+  }
+  return best
+}
+
+/** Labels sit at the bar's start, so they need a wide-enough first visible stretch. */
+function labelVisible(bar: BarPosition): boolean {
+  const first = bar.visibleSpans[0]
+  return first !== undefined && first[0] <= bar.x1 + 1 && first[1] - Math.max(first[0], 0) > 54
+}
+
+function nearestSpan(x: number, spans: [number, number][]): [number, number] | undefined {
+  let best: [number, number] | undefined
+  let bestDistance = Infinity
+  for (const span of spans) {
+    const distance = x < span[0] ? span[0] - x : x > span[1] ? x - span[1] : 0
+    if (distance < bestDistance) {
+      best = span
+      bestDistance = distance
+    }
+  }
+  return best
 }
 
 /**
@@ -117,12 +155,13 @@ export function Timeline({
       })
       for (const bar of lane.bars) {
         const rowTop = y + LANE_HEADER + bar.row * ROW_H
-        const visibleEnd = Math.min(genreVisibleEnd(bar.node, CURRENT_YEAR) ?? bar.end, bar.end)
+        const spans = genreVisibleSpans(bar.node, CURRENT_YEAR)
         barList.push({
           node: bar.node,
           x1: yearToX(scale, bar.start),
           x2: yearToX(scale, bar.end),
-          visibleX2: yearToX(scale, visibleEnd),
+          visibleSpans: (spans.length > 0 || bar.node.phases ? spans : [[bar.start, bar.end]])
+            .map(([start, end]) => [yearToX(scale, start), yearToX(scale, Math.min(end, bar.end))]),
           yCenter: rowTop + ROW_H / 2,
           color: FAMILY_COLORS[lane.family],
           ended: !bar.ongoing,
@@ -243,22 +282,26 @@ export function Timeline({
       const bar = barById.get(edge.to)
       const artist = index.nodeById.get(edge.from)
       if (!bar || !artist) continue
+      const preferredX = yearToX(scale, artist.period?.start ?? scale.start)
+      // Bubbles sit next to the visible stretch closest to the artist's start.
+      const span = nearestSpan(preferredX, bar.visibleSpans)
+      if (!span) continue
       entries.push({
         id: artist.id,
         name: artist.name,
         color: bar.color,
         request: {
           key: `${artist.id}|${bar.node.id}`,
-          x: yearToX(scale, artist.period?.start ?? scale.start),
-          minX: bar.x1,
-          maxX: bar.visibleX2,
+          x: preferredX,
+          minX: span[0],
+          maxX: span[1],
           yCenter: bar.yCenter,
           barHalfHeight: BAR_H / 2,
         },
       })
     }
     const labels = bars
-      .filter((bar) => bar.visibleX2 - bar.x1 > 54)
+      .filter((bar) => labelVisible(bar))
       .map((bar) => ({
         x1: Math.max(bar.x1, 0) + 6,
         x2: Math.max(bar.x1, 0) + 14 + bar.node.name.length * 7,
@@ -338,12 +381,8 @@ export function Timeline({
             const goingDown = child.yCenter >= parent.yCenter
             const y1 = child.yCenter
             const lead = Math.min(Math.max(Math.abs(y1 - parent.yCenter) * 0.35, 30), 90)
-            const minX = parent.x1 + 14
-            const maxX = parent.visibleX2 - 6
-            const anchorX =
-              maxX < minX
-                ? (parent.x1 + parent.x2) / 2
-                : Math.min(Math.max(child.x1 - lead, minX), maxX)
+            // Leave from a visible stretch of the parent, never from a hidden niche gap.
+            const anchorX = snapToSpans(child.x1 - lead, parent.visibleSpans, 10)
             const y0 = parent.yCenter + (goingDown ? BAR_H / 2 : -BAR_H / 2)
             const endX = child.x1 + 1
             const isLit = highlight?.edges.has(edge.id) ?? false
@@ -363,15 +402,14 @@ export function Timeline({
 
           {/* genre bars */}
           {bars.map((bar) => {
-            const barWidth = Math.max(bar.visibleX2 - bar.x1, 6)
             const isSelected = bar.node.id === selectedId
             const shape = barShape(bar.x1, bar.x2, bar.yCenter - BAR_H / 2, BAR_H, !bar.ended)
             const phases = genrePhases(bar.node, CURRENT_YEAR)
-            const opacityStops = genreOpacityStops(bar.node, CURRENT_YEAR)
+            const intensityStops = genreIntensityStops(bar.node, CURRENT_YEAR)
             const clipId = `bar-clip-${bar.node.id.replace(':', '-')}`
             const gradientId = `bar-prominence-${bar.node.id.replace(':', '-')}`
             const visibilityStops = genreVisibilityStops(bar.node, CURRENT_YEAR)
-            const hasHiddenPhase = visibilityStops.some((stop) => stop.opacity < 1)
+            const hasHiddenPhase = visibilityStops.some((stop) => stop.level < 1)
             const visibilityId = `bar-visibility-${bar.node.id.replace(':', '-')}`
             return (
               <g
@@ -387,12 +425,13 @@ export function Timeline({
               >
                 <defs>
                   <clipPath id={clipId}><path d={shape} /></clipPath>
-                  {opacityStops.length > 0 && (
+                  {intensityStops.length > 0 && (
                     <linearGradient id={gradientId} gradientUnits="userSpaceOnUse"
                       x1={bar.x1} x2={bar.x2} y1={bar.yCenter} y2={bar.yCenter}>
-                      {opacityStops.map((stop) => (
+                      {intensityStops.map((stop) => (
                         <stop key={stop.offset} offset={stop.offset}
-                          stopColor={bar.color} stopOpacity={stop.opacity} />
+                          stopColor={intensityColor(bar.color, stop.level)}
+                          stopOpacity={intensityOpacity(stop.level)} />
                       ))}
                     </linearGradient>
                   )}
@@ -402,7 +441,7 @@ export function Timeline({
                         x1={bar.x1} x2={bar.x2} y1={bar.yCenter} y2={bar.yCenter}>
                         {visibilityStops.map((stop) => (
                           <stop key={stop.offset} offset={stop.offset}
-                            stopColor="#fff" stopOpacity={stop.opacity} />
+                            stopColor="#fff" stopOpacity={stop.level} />
                         ))}
                       </linearGradient>
                       <mask id={visibilityId} maskUnits="userSpaceOnUse"
@@ -431,7 +470,7 @@ export function Timeline({
                       <path d={shape} fill={`url(#${gradientId})`} />
                       {phases.map((phase) => {
                         // Hidden niche periods are neither hoverable nor clickable.
-                        if (!PHASE_STYLE[phase.prominence].visible) return null
+                        if (phaseIntensity(phase) <= 0) return null
                         const x = yearToX(scale, phase.start)
                         const endX = yearToX(scale, phase.end)
                         return (
@@ -449,7 +488,7 @@ export function Timeline({
                   )}
                 </g>
                 </g>
-                {barWidth > 54 && (
+                {labelVisible(bar) && (
                   <text
                     x={Math.max(bar.x1, 0) + 10}
                     y={bar.yCenter + 4}

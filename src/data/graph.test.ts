@@ -20,6 +20,11 @@ describe('graph.json integrity', () => {
       for (const [i, phase] of node.phases!.entries()) {
         expect(Number.isInteger(phase.start)).toBe(true)
         expect(PROMINENCE_LABELS[phase.prominence]).toBeDefined()
+        if (phase.intensity !== undefined) {
+          expect(phase.intensity).toBeGreaterThanOrEqual(0)
+          expect(phase.intensity).toBeLessThanOrEqual(1)
+          if (phase.prominence === 'niche') expect(phase.intensity).toBe(0)
+        }
         if (i > 0) expect(phase.start).toBeGreaterThan(node.phases![i - 1].start)
         if (node.period?.end != null) expect(phase.start).toBeLessThan(node.period.end)
       }

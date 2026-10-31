@@ -54,6 +54,8 @@ export type Prominence = 'emerging' | 'golden-age' | 'established' | 'niche'
 export interface GenrePhase {
   start: number
   prominence: Prominence
+  /** Optional finer shade (0–1) than the prominence default; 0 hides the bar. */
+  intensity?: number
 }
 
 export const PROMINENCE_LABELS: Record<Prominence, string> = {

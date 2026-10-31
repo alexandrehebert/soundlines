@@ -24,7 +24,11 @@ part of the bar. A continuous gradient
 smoothly blends intensity around each boundary (up to two years either side,
 shortened for brief phases), without steps in height or dotted tails.
 Each phase lasts until the next starts, or until the lifespan ends.
-Phases may repeat to describe revivals; there is no automatic age-based decline.
+Phases may repeat to describe revivals: a bar can disappear and reappear as many
+times as needed. There is no automatic age-based decline.
+An optional `intensity` (0–1) overrides the label's default shade
+(emerging 0.35, golden age 1, continuing 0.45, niche 0), so a genre can be
+described on a finer scale than the four legend labels. Peaks are also brightened.
 Genres without phases retain the original rendering rather than inventing a peak.
 
 The initial nine examples are approximate, illustrative editorial choices, not

@@ -9,7 +9,7 @@ import {
   type Confidence,
 } from '../graph/types.ts'
 import { formatPeriod, NODE_TYPE_COLORS } from '../theme.ts'
-import { genrePhases, PHASE_STYLE } from '../graph/phases.ts'
+import { genrePhases, intensityColor, intensityOpacity, phaseIntensity } from '../graph/phases.ts'
 import { CURRENT_YEAR } from '../graph/layout.ts'
 
 const CONFIDENCE_COLORS: Record<Confidence, string> = {
@@ -79,9 +79,10 @@ export function DetailPanel({ index, nodeId, onSelect }: DetailPanelProps) {
                 <li key={phase.start} className="flex items-center justify-between gap-3 text-xs text-slate-300">
                   <span className="flex items-center gap-2">
                     <svg width="24" height="14" aria-hidden="true">
-                      {PHASE_STYLE[phase.prominence].visible ? (
+                      {phaseIntensity(phase) > 0 ? (
                         <rect x="0" y="2" width="24" height="10" rx="3"
-                          fill={typeColor} opacity={PHASE_STYLE[phase.prominence].opacity} />
+                          fill={intensityColor(typeColor, phaseIntensity(phase))}
+                          opacity={intensityOpacity(phaseIntensity(phase))} />
                       ) : (
                         <rect x="0.5" y="2.5" width="23" height="9" rx="3"
                           fill="none" stroke="#475569" strokeDasharray="2 2" />
