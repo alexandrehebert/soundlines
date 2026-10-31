@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type PointerEvent } from 'react'
 import { useExplorer } from '../../ExplorerContext.ts'
-import { panYearRange, xToYear, zoomYearRange } from '../../graph/layout.ts'
+import { panYearRange, revealEraRange, TIMELINE_PADDING, xToYear, zoomYearRange } from '../../graph/layout.ts'
 
 export function useTimelineViewport() {
   const { viewRange, setViewRange, selectNode } = useExplorer()
@@ -14,7 +14,6 @@ export function useTimelineViewport() {
   useEffect(() => {
     const element = containerRef.current
     if (!element) return
-    setWidth(element.getBoundingClientRect().width)
     const observer = new ResizeObserver((entries) => setWidth(entries[0].contentRect.width))
     observer.observe(element)
     return () => observer.disconnect()
@@ -24,18 +23,18 @@ export function useTimelineViewport() {
     const element = containerRef.current
     if (!element) return
     const onWheel = (event: WheelEvent) => {
-      const rect = element.getBoundingClientRect()
-      if (!rect.width) return
+      const rect = element.querySelector('svg')?.getBoundingClientRect()
+      if (!rect?.width) return
       if (event.ctrlKey || event.metaKey) {
         event.preventDefault()
         const focusYear = xToYear(
-          { start: viewRange[0], end: viewRange[1], width: rect.width },
+          { start: viewRange[0], end: viewRange[1], width: rect.width, padding: TIMELINE_PADDING },
           event.clientX - rect.left,
         )
         setViewRange(zoomYearRange(viewRange, focusYear, event.deltaY > 0 ? 1.12 : 0.89))
       } else if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
         event.preventDefault()
-        setViewRange(panYearRange(viewRange, event.deltaX / rect.width))
+        setViewRange(panYearRange(viewRange, event.deltaX / (rect.width - 2 * TIMELINE_PADDING)))
       }
     }
     element.addEventListener('wheel', onWheel, { passive: false })
@@ -58,7 +57,7 @@ export function useTimelineViewport() {
     const dy = event.clientY - drag.current.y
     if (Math.abs(dx) > 3 || Math.abs(dy) > 3) drag.current.moved = true
     if (!drag.current.moved) return
-    setViewRange(panYearRange(drag.current.range, -dx / width))
+    setViewRange(panYearRange(drag.current.range, -dx / (width - 2 * TIMELINE_PADDING)))
     if (containerRef.current) containerRef.current.scrollTop = drag.current.scrollTop - dy
   }
 
@@ -67,8 +66,11 @@ export function useTimelineViewport() {
     drag.current = null
   }
 
-  const select = (id: string | null) => {
-    if (!suppressClick.current) selectNode(id)
+  const select = (id: string | null, revealYear?: number) => {
+    if (!suppressClick.current) {
+      selectNode(id)
+      if (revealYear !== undefined) setViewRange(revealEraRange(viewRange, revealYear))
+    }
   }
 
   return {

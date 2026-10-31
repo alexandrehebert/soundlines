@@ -10,6 +10,7 @@ import {
   revealEraRange,
   revealYearRange,
   timeTicks,
+  TIMELINE_PADDING,
   toEraTime,
   xToYear,
   yearToX,
@@ -29,6 +30,26 @@ describe('time scale', () => {
 
   it('inverts pixels back to years', () => {
     expect(xToYear(scale, 500)).toBeCloseTo(2000)
+  })
+
+  it('pads time coordinates without shrinking the drawing surface or clipping earlier years', () => {
+    const padded = { ...scale, padding: TIMELINE_PADDING }
+    expect(yearToX(padded, padded.start)).toBeCloseTo(24)
+    expect(yearToX(padded, padded.end)).toBeCloseTo(976)
+    expect(yearToX(padded, 1940)).toBeLessThan(0)
+    expect(xToYear(padded, 0)).toBeLessThan(padded.start)
+    expect(xToYear(padded, padded.width)).toBeGreaterThan(padded.end)
+    for (const year of [1940, 1950, 1985, 2000, 2050]) {
+      expect(xToYear(padded, yearToX(padded, year))).toBeCloseTo(year)
+    }
+  })
+
+  it('preserves padded coordinate round trips across compressed eras', () => {
+    const padded = { start: MIN_YEAR, end: MAX_YEAR, width: 640, padding: TIMELINE_PADDING }
+    for (const year of [MIN_YEAR, 1100, 1400, 1750, 1900, MAX_YEAR]) {
+      expect(xToYear(padded, yearToX(padded, year))).toBeCloseTo(year)
+    }
+    expect(timeTicks(padded)).toEqual(timeTicks({ ...padded, width: 592, padding: 0 }))
   })
 
   it('compresses older eras so the modern era keeps its width', () => {

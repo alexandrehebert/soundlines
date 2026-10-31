@@ -1,5 +1,5 @@
 import { useExplorer } from '../../ExplorerContext.ts'
-import { yearToX, type TimeScale } from '../../graph/layout.ts'
+import { revealEraRange, xToYear, yearToX, type TimeScale } from '../../graph/layout.ts'
 import {
   intensityColor,
   intensityOpacity,
@@ -9,18 +9,19 @@ import {
   visibilityStops,
 } from '../../graph/phases.ts'
 import { prominenceLabels } from '../../graph/types.ts'
-import { BAR_H, barShape, labelX, tailFadeOffset, type BarPosition } from './geometry.ts'
+import { BAR_H, barShape, labelX, tailFadeOffset, type BarPosition, type OffscreenIndicator } from './geometry.ts'
 
 interface TimelineBarProps {
   bar: BarPosition
   scale: TimeScale
   dimmed: boolean
+  indicator?: OffscreenIndicator
   onHover: (id: string | null) => void
-  onSelect: (id: string) => void
+  onSelect: (id: string, revealYear?: number) => void
 }
 
-export function TimelineBar({ bar, scale, dimmed, onHover, onSelect }: TimelineBarProps) {
-  const { selectedId, selectNode } = useExplorer()
+export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }: TimelineBarProps) {
+  const { selectedId, selectNode, viewRange, setViewRange } = useExplorer()
   if (!bar.visibleSpans.length) return null
   const isSelected = bar.node.id === selectedId
   const shape = barShape(bar)
@@ -36,14 +37,17 @@ export function TimelineBar({ bar, scale, dimmed, onHover, onSelect }: TimelineB
   const textX = labelX(bar, scale.width)
   const isArtist = bar.node.type === 'artist'
   const labels = prominenceLabels(bar.node.type)
+  const revealYear = indicator ? xToYear(scale, indicator.targetX) : undefined
+  const offscreenLabel = indicator ? `${bar.node.name} · off-screen to the ${indicator.direction}; activate to reveal` : null
 
   return (
     <g
       data-timeline-bar={bar.node.id}
       data-node-type={bar.node.type}
+      data-offscreen-direction={indicator?.direction}
       role="button"
       tabIndex={0}
-      aria-label={bar.node.name}
+      aria-label={offscreenLabel ?? bar.node.name}
       aria-pressed={isSelected}
       opacity={dimmed ? 0.2 : 1}
       style={{ cursor: 'pointer', transition: 'opacity 150ms' }}
@@ -53,11 +57,12 @@ export function TimelineBar({ bar, scale, dimmed, onHover, onSelect }: TimelineB
         if (event.key === 'Enter' || event.key === ' ') {
           event.preventDefault()
           selectNode(bar.node.id)
+          if (revealYear !== undefined) setViewRange(revealEraRange(viewRange, revealYear))
         }
       }}
       onClick={(event) => {
         event.stopPropagation()
-        onSelect(bar.node.id)
+        onSelect(bar.node.id, revealYear)
       }}
     >
       <defs>
@@ -141,7 +146,33 @@ export function TimelineBar({ bar, scale, dimmed, onHover, onSelect }: TimelineB
           )}
         </g>
       </g>
-      <title>{`${bar.node.name}${isArtist && !phases.length ? ' · prominence not annotated' : ''}`}</title>
+      {indicator && (
+        <g data-offscreen-indicator={bar.node.id}>
+          <defs>
+            <linearGradient id={`ghost-${id}`} x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stopColor={bar.color} stopOpacity={indicator.direction === 'left' ? 0.22 : 0.03} />
+              <stop offset="1" stopColor={bar.color} stopOpacity={indicator.direction === 'right' ? 0.22 : 0.03} />
+            </linearGradient>
+            <clipPath id={`ghost-label-${id}`}>
+              <rect x={indicator.x + (indicator.direction === 'left' ? 27 : 10)}
+                y={bar.yCenter - BAR_H / 2} width={indicator.width - 42} height={BAR_H} />
+            </clipPath>
+          </defs>
+          <rect x={indicator.x} y={bar.yCenter - BAR_H / 2} width={indicator.width} height={BAR_H}
+            rx={BAR_H / 2} fill={`url(#ghost-${id})`} stroke={isSelected ? '#f8fafc' : bar.color}
+            strokeOpacity={isSelected ? 0.9 : 0.4} strokeDasharray="3 4" />
+          <path d={indicator.direction === 'left'
+            ? `M ${indicator.x + 17} ${bar.yCenter - 4} l -4 4 l 4 4`
+            : `M ${indicator.x + indicator.width - 17} ${bar.yCenter - 4} l 4 4 l -4 4`}
+            stroke={bar.color} strokeWidth={1.5} fill="none" pointerEvents="none" />
+          <text x={indicator.x + (indicator.direction === 'left' ? 27 : 10)} y={bar.yCenter + 4}
+            fill="#cbd5e1" fontSize={11.5} fontWeight={600} clipPath={`url(#ghost-label-${id})`}
+            pointerEvents="none">
+            {bar.node.name}
+          </text>
+        </g>
+      )}
+      <title>{offscreenLabel ?? `${bar.node.name}${isArtist && !phases.length ? ' · prominence not annotated' : ''}`}</title>
     </g>
   )
 }

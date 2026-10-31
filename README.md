@@ -12,7 +12,21 @@ lanes (roots, classical traditions, jazz, rock, electronic pioneers, house, tech
 UK continuum). Curved links and
 highlighting stay within the active mode.
 
+- In Genres, the Order selector switches between the default family groups and
+  **First appearance (oldest first)**: one row per genre across all families,
+  ordered by `period.start`, then name and id for ties. Family colors, selection,
+  and horizontal zoom are preserved; changing order resets vertical scrolling
+  and brings the selection back into view. Artists keep their family layout.
+- Genre order is remembered when switching modes and shared with
+  `?sort=oldest-first`; omitting `sort` uses the default family groups.
+- Off-screen genres have a labeled, family-colored ghost bar at the left or
+  right edge, pointing toward their nearest visible period. Click or press
+  Enter/Space to reveal it. In family groups, indicators only appear where they
+  do not overlap an on-screen bar or another indicator; nearer genres take
+  priority on shared rows. Ghosts are navigation hints, not historical activity.
 - Drag to move both axes, scroll to move vertically, horizontal scroll to pan time, pinch or Cmd/Ctrl+scroll to zoom
+- Both timeline modes pad the time range by 24px on each side within a full-width
+  drawing surface; panning and background bands extend all the way to the edges.
 - Click a bar or focus it and press Enter/Space for details; every relation in the panel is navigable
 - Artists switches to artist bars, not an overlay on the genre timeline; artist bubbles are currently removed
 - Search and related-node navigation switch modes automatically when selecting an artist or genre and bring the selected bar into view

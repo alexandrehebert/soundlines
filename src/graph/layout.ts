@@ -15,6 +15,9 @@ export const CURRENT_YEAR = new Date().getFullYear()
 export const MIN_YEAR = 500
 export const DEFAULT_START_YEAR = 1948
 export const MAX_YEAR = CURRENT_YEAR + 2
+export const TIMELINE_PADDING = 24
+
+export type GenreOrder = 'family' | 'oldest-first'
 
 export interface TimeScale {
   /** First visible year. */
@@ -23,6 +26,8 @@ export interface TimeScale {
   end: number
   /** Pixel width the scale maps onto. */
   width: number
+  /** Content inset at each end; the drawing surface remains full width. */
+  padding?: number
 }
 
 /**
@@ -71,12 +76,14 @@ export function fromEraTime(t: number): number {
 
 export function yearToX(scale: TimeScale, year: number): number {
   const start = toEraTime(scale.start)
-  return ((toEraTime(year) - start) / (toEraTime(scale.end) - start)) * scale.width
+  const padding = scale.padding ?? 0
+  return padding + ((toEraTime(year) - start) / (toEraTime(scale.end) - start)) * (scale.width - 2 * padding)
 }
 
 export function xToYear(scale: TimeScale, x: number): number {
   const start = toEraTime(scale.start)
-  return fromEraTime(start + (x / scale.width) * (toEraTime(scale.end) - start))
+  const padding = scale.padding ?? 0
+  return fromEraTime(start + ((x - padding) / (scale.width - 2 * padding)) * (toEraTime(scale.end) - start))
 }
 
 const TICK_STEPS = [10, 20, 25, 50, 100, 200, 250, 500]
@@ -87,11 +94,12 @@ const TICK_STEPS = [10, 20, 25, 50, 100, 200, 250, 500]
  */
 export function timeTicks(scale: TimeScale, minSpacing = 56): number[] {
   const span = toEraTime(scale.end) - toEraTime(scale.start)
-  if (span <= 0 || scale.width <= 0) return []
+  const width = scale.width - 2 * (scale.padding ?? 0)
+  if (span <= 0 || width <= 0) return []
   const ticks: number[] = []
   let year = scale.start
   while (year <= scale.end) {
-    const pxPerYear = (eraWeight(year) / span) * scale.width
+    const pxPerYear = (eraWeight(year) / span) * width
     const step = TICK_STEPS.find((s) => s * pxPerYear >= minSpacing) ?? TICK_STEPS.at(-1)!
     const tick = Math.ceil(year / step) * step
     if (tick > scale.end) break

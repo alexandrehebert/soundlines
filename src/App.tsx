@@ -13,7 +13,7 @@ import type { MusicGraph } from './graph/types.ts'
 const graph = rawGraph as MusicGraph
 
 function Explorer() {
-  const { index, view, changeView, selectedId } = useExplorer()
+  const { index, view, changeView, selectedId, genreOrder, changeGenreOrder } = useExplorer()
   const stats = useMemo(() => {
     const count = (type: string) => index.graph.nodes.filter((node) => node.type === type).length
     return { genres: count('genre'), artists: count('artist'), links: index.graph.edges.length }
@@ -51,6 +51,20 @@ function Explorer() {
             </button>
           ))}
         </div>
+        {view === 'genre' && (
+          <label className="flex items-center gap-2 text-xs font-medium text-slate-400">
+            Order
+            <select
+              aria-label="Genre order"
+              value={genreOrder}
+              onChange={(event) => changeGenreOrder(event.currentTarget.value)}
+              className="rounded-lg border border-slate-700 bg-slate-900 px-2 py-1.5 text-xs text-slate-300 focus:border-cyan-500 focus:outline-none"
+            >
+              <option value="family">Family groups</option>
+              <option value="oldest-first">First appearance (oldest first)</option>
+            </select>
+          </label>
+        )}
         <div className="ml-auto hidden items-center gap-4 text-xs font-medium text-slate-500 md:flex">
           <span><strong className="text-slate-300">{stats.genres}</strong> genres</span>
           <span><strong className="text-slate-300">{stats.artists}</strong> artists</span>
@@ -59,7 +73,9 @@ function Explorer() {
       </header>
       <div className="border-b border-slate-800/60 bg-slate-950/70 px-5 py-1.5"><Legend /></div>
       <main className="flex min-h-0 flex-1">
-        <div className="min-w-0 flex-1"><Timeline key={view} /></div>
+        <div className="min-w-0 flex-1">
+          <Timeline key={view === 'genre' ? `${view}-${genreOrder}` : view} />
+        </div>
         <AnimatePresence>
           {selectedId && (
             <motion.div
