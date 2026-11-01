@@ -9229,6 +9229,1064 @@
       "sources": [
         "https://www.allmusic.com/artist/insane-clown-posse-mn0000079959"
       ]
+    },
+    {
+      "id": "genre:acid-jazz",
+      "type": "genre",
+      "name": "Acid jazz",
+      "family": "jazz",
+      "period": {
+        "start": 1987,
+        "precision": "circa"
+      },
+      "description": "A British club-era fusion that joined jazz and funk grooves with soul, hip-hop and dance-music sensibilities. It emerged in late-1980s London and was carried by both live bands and DJ-led scenes.",
+      "sources": [
+        "https://www.allmusic.com/genre/acid-jazz-ma0000002414",
+        "https://www.jamestaylorquartet.co.uk/jtq/biography/",
+        "https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/"
+      ]
+    },
+    {
+      "id": "artist:jamiroquai",
+      "type": "artist",
+      "name": "Jamiroquai",
+      "kind": "group",
+      "period": {
+        "start": 1992,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/mn0000176358"
+      ]
+    },
+    {
+      "id": "artist:brand-new-heavies",
+      "type": "artist",
+      "name": "The Brand New Heavies",
+      "kind": "group",
+      "period": {
+        "start": 1985,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/the-brand-new-heavies-mn0000628684"
+      ]
+    },
+    {
+      "id": "artist:incognito",
+      "type": "artist",
+      "name": "Incognito",
+      "kind": "group",
+      "period": {
+        "start": 1979,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/incognito-mn0000772721"
+      ]
+    },
+    {
+      "id": "genre:americana",
+      "type": "genre",
+      "name": "Americana",
+      "family": "country-folk",
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      },
+      "description": "A roots-oriented umbrella that draws on country, folk, blues and related American traditions. The term gained broader currency in the 1990s for artists working outside Nashville’s mainstream country format.",
+      "sources": [
+        "https://www.allmusic.com/style/americana-ma0000004415"
+      ]
+    },
+    {
+      "id": "genre:alt-country",
+      "type": "genre",
+      "name": "Alternative country",
+      "family": "country-folk",
+      "period": {
+        "start": 1985,
+        "precision": "circa"
+      },
+      "description": "Country music made outside mainstream Nashville conventions, often bringing in independent rock, punk and singer-songwriter approaches while retaining country forms.",
+      "sources": [
+        "https://www.allmusic.com/style/alt-country-ma0000002421"
+      ]
+    },
+    {
+      "id": "genre:honky-tonk",
+      "type": "genre",
+      "name": "Honky-tonk",
+      "family": "country-folk",
+      "period": {
+        "start": 1940,
+        "precision": "circa"
+      },
+      "description": "A country style associated with dance halls and bars, with steel guitar, fiddle, strong backbeat and direct, often hard-lived songs. It helped shape postwar country music.",
+      "sources": [
+        "https://www.allmusic.com/style/honky-tonk-ma0000002648"
+      ]
+    },
+    {
+      "id": "genre:calypso",
+      "type": "genre",
+      "name": "Calypso",
+      "family": "reggae",
+      "period": {
+        "start": 1900,
+        "precision": "circa"
+      },
+      "description": "A Trinidadian song tradition closely tied to Carnival, known for topical lyrics, social commentary and competitive performance by calypsonians. Its musical history is distinct from Jamaican reggae, though the Caribbean scenes have influenced one another.",
+      "sources": [
+        "https://www.allmusic.com/style/calypso-ma0000002494"
+      ]
+    },
+    {
+      "id": "genre:reggaeton",
+      "type": "genre",
+      "name": "Reggaeton",
+      "family": "latin",
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      },
+      "description": "A Spanish-language Caribbean urban dance style that developed through Puerto Rican and Panamanian scenes, blending reggae and dancehall rhythms with hip-hop and electronic production.",
+      "sources": [
+        "https://www.allmusic.com/style/reggaeton-ma0000002976"
+      ]
+    },
+    {
+      "id": "genre:amapiano",
+      "type": "genre",
+      "name": "Amapiano",
+      "family": "african",
+      "period": {
+        "start": 2010,
+        "precision": "decade"
+      },
+      "description": "A South African dance style that emerged in the 2010s, built around soft piano motifs, deep log-drum bass and a relaxed house pulse. The sound developed through local DJ and producer communities before reaching a global audience.",
+      "sources": [
+        "https://www.allmusic.com/artist/kabza-de-small-mn0003886957",
+        "https://www.newyorker.com/culture/culture-desk/how-far-can-amapiano-go",
+        "https://djmag.com/features/these-are-most-exciting-amapiano-producers-right-now"
+      ]
+    },
+    {
+      "id": "genre:gqom",
+      "type": "genre",
+      "name": "Gqom",
+      "family": "african",
+      "period": {
+        "start": 2010,
+        "precision": "decade"
+      },
+      "description": "A stark, percussive South African dance style that emerged in Durban in the early 2010s, using sparse, tense rhythms and heavy low end. Vocal and instrumental approaches developed alongside one another.",
+      "sources": [
+        "https://www.allmusic.com/style/gqom-ma0000013646",
+        "https://www.allmusic.com/artist/dj-lag-mn0003558945"
+      ]
+    },
+    {
+      "id": "genre:kwaito",
+      "type": "genre",
+      "name": "Kwaito",
+      "family": "african",
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      },
+      "description": "A South African post-apartheid popular dance style that reshaped house-derived grooves into slower, locally grounded music, with township languages, vocal hooks and distinctive youth culture.",
+      "sources": [
+        "https://www.musicinafrica.net/magazine/popular-music-south-africa/",
+        "https://www.washingtonpost.com/archive/lifestyle/style/1998/07/19/the-phat-of-the-homeland/1ba33e31-5fef-499b-be15-8f45dc4d4b7b"
+      ]
+    },
+    {
+      "id": "genre:new-jack-swing",
+      "type": "genre",
+      "name": "New jack swing",
+      "family": "blues-soul",
+      "period": {
+        "start": 1987,
+        "precision": "circa"
+      },
+      "description": "A late-1980s R&B style that fused soul singing and melodic hooks with hip-hop rhythms, sampling and production. Producer Teddy Riley and groups including Guy and New Edition helped define its sound.",
+      "sources": [
+        "https://www.allmusic.com/style/new-jack-swing-ma0000005027",
+        "https://www.allmusic.com/artist/teddy-riley-mn0000018176"
+      ]
+    },
+    {
+      "id": "genre:contemporary-r-and-b",
+      "type": "genre",
+      "name": "Contemporary R&B",
+      "family": "blues-soul",
+      "period": {
+        "start": 1980,
+        "precision": "decade"
+      },
+      "description": "A broad modern R&B style shaped by studio production, soul vocals and exchange with hip-hop and pop. Its sound changes over time, so this node is an umbrella rather than one fixed formula.",
+      "sources": [
+        "https://www.allmusic.com/subgenre/contemporary-r-b-ma0000002969"
+      ]
+    },
+    {
+      "id": "genre:nu-metal",
+      "type": "genre",
+      "name": "Nu metal",
+      "family": "metal",
+      "period": {
+        "start": 1994,
+        "precision": "circa"
+      },
+      "description": "A 1990s heavy style that combined metal riffs with hip-hop rhythms, alternative rock, turntable or electronic textures, and a wide range of vocal approaches. The scene was diverse and its boundaries remain debated.",
+      "sources": [
+        "https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547"
+      ]
+    },
+    {
+      "id": "genre:metalcore",
+      "type": "genre",
+      "name": "Metalcore",
+      "family": "metal",
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      },
+      "description": "A metal and hardcore-derived style built around heavy riffs, breakdowns and a mix of melodic and harsh vocals. Its later waves expanded into many different production and performance approaches.",
+      "sources": [
+        "https://www.allmusic.com/style/metalcore-ma0000013405"
+      ]
+    },
+    {
+      "id": "genre:industrial-metal",
+      "type": "genre",
+      "name": "Industrial metal",
+      "family": "metal",
+      "period": {
+        "start": 1988,
+        "precision": "circa"
+      },
+      "description": "A metal style that combines distorted guitar riffs with industrial electronics, samples and mechanical production. Ministry and Nine Inch Nails helped bring the sound to wider audiences.",
+      "sources": [
+        "https://www.allmusic.com/style/industrial-metal-ma0000012276"
+      ]
+    },
+    {
+      "id": "genre:vocal-jazz",
+      "type": "genre",
+      "name": "Vocal jazz",
+      "family": "jazz",
+      "period": {
+        "start": 1930,
+        "precision": "decade"
+      },
+      "description": "Jazz singing that treats standards as material for interpretation, rhythmic phrasing and improvisation, rather than simply presenting a fixed popular-song performance. It spans big-band vocalists, small-group singers and later generations.",
+      "sources": [
+        "https://www.allmusic.com/style/vocal-jazz-ma0000002948"
+      ]
+    },
+    {
+      "id": "genre:latin-jazz",
+      "type": "genre",
+      "name": "Latin jazz",
+      "family": "jazz",
+      "period": {
+        "start": 1940,
+        "precision": "decade"
+      },
+      "description": "A family of jazz styles shaped by Latin American and Caribbean rhythms, including Afro-Cuban and Brazilian elements. It developed through exchanges between jazz musicians and Latin bandleaders from the 1940s onward.",
+      "sources": [
+        "https://www.allmusic.com/style/latin-jazz-ma0000002464"
+      ]
+    },
+    {
+      "id": "genre:spiritual-jazz",
+      "type": "genre",
+      "name": "Spiritual jazz",
+      "family": "jazz",
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      },
+      "description": "A broad jazz current that joined improvisation with spiritual, devotional and transcendent themes, especially in the 1960s and 1970s. The label covers varied musical approaches, not a single formal sound.",
+      "sources": [
+        "https://www.allmusic.com/style/spiritual-jazz-ma0000013403"
+      ]
+    },
+    {
+      "id": "genre:edm",
+      "type": "genre",
+      "name": "EDM",
+      "family": "electronica",
+      "period": {
+        "start": 2000,
+        "precision": "decade"
+      },
+      "description": "A broad commercial label for festival-scale electronic dance music, especially the high-impact, producer-led dance sounds that broke into mainstream pop in the 2000s and 2010s. It overlaps with house, trance and other club styles.",
+      "sources": [
+        "https://www.allmusic.com/style/edm-ma0000013412"
+      ]
+    },
+    {
+      "id": "genre:breakcore",
+      "type": "genre",
+      "name": "Breakcore",
+      "family": "breakbeat-bass",
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      },
+      "description": "An experimental electronic style built from chopped, distorted and rapidly rearranged breakbeats. It draws on jungle, hardcore and noise, with artists taking the sound in highly individual directions.",
+      "sources": [
+        "https://www.allmusic.com/style/breakcore-ma0000004991"
+      ]
+    },
+    {
+      "id": "genre:footwork",
+      "type": "genre",
+      "name": "Juke / footwork",
+      "family": "house",
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      },
+      "description": "A fast, syncopated Chicago dance style developed alongside footwork battles, with tightly cut samples and intricate kick patterns. Juke and footwork overlap but are not interchangeable in every local context.",
+      "sources": [
+        "https://www.allmusic.com/style/juke-footwork-ma0000013543",
+        "https://www.allmusic.com/artist/dj-rashad-mn0000998421"
+      ]
+    },
+    {
+      "id": "genre:impressionism",
+      "type": "genre",
+      "name": "Impressionism",
+      "family": "classical",
+      "period": {
+        "start": 1890,
+        "precision": "circa"
+      },
+      "description": "A late-19th- and early-20th-century compositional style associated especially with Debussy and Ravel, using color, modal or whole-tone harmony and fluid forms. “Impressionism” is an imperfect label that Debussy himself resisted.",
+      "sources": [
+        "https://pressbooks.cuny.edu/understandingmusicbmcc/chapter/2-impressionism/",
+        "https://rme.rilm.org/articles/emt00226/1.0/emt00226"
+      ]
+    },
+    {
+      "id": "genre:serialism",
+      "type": "genre",
+      "name": "Serialism",
+      "family": "classical",
+      "period": {
+        "start": 1920,
+        "precision": "decade"
+      },
+      "description": "A compositional approach that organizes musical elements through ordered series; its most influential early form was twelve-tone technique. Schoenberg, Berg and Webern were central to its development.",
+      "sources": [
+        "https://assets.cambridge.org/97805218/63414/excerpt/9780521863414_excerpt.htm",
+        "https://academic.oup.com/book/49294/chapter-abstract/422536119"
+      ]
+    },
+    {
+      "id": "genre:girl-groups",
+      "type": "genre",
+      "name": "Girl groups",
+      "family": "pop",
+      "period": {
+        "start": 1958,
+        "precision": "circa"
+      },
+      "description": "A vocal-group style associated with the late 1950s and 1960s, often pairing close harmonies and expressive lead vocals with polished songwriting and studio production. Groups such as the Ronettes, the Shangri-Las and the Supremes helped define it.",
+      "sources": [
+        "https://www.allmusic.com/style/girl-groups-ma0000002618"
+      ]
+    },
+    {
+      "id": "artist:maurice-ravel",
+      "type": "artist",
+      "name": "Maurice Ravel",
+      "kind": "person",
+      "period": {
+        "start": 1890,
+        "precision": "decade",
+        "end": 1937
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/maurice-ravel-q7873"
+      ]
+    },
+    {
+      "id": "artist:erik-satie",
+      "type": "artist",
+      "name": "Erik Satie",
+      "kind": "person",
+      "period": {
+        "start": 1880,
+        "precision": "decade",
+        "end": 1925
+      },
+      "sources": [
+        "https://pressbooks.cuny.edu/understandingmusicbmcc/chapter/2-impressionism/"
+      ]
+    },
+    {
+      "id": "artist:alban-berg",
+      "type": "artist",
+      "name": "Alban Berg",
+      "kind": "person",
+      "period": {
+        "start": 1905,
+        "precision": "decade",
+        "end": 1935
+      },
+      "sources": [
+        "https://assets.cambridge.org/97805218/63414/excerpt/9780521863414_excerpt.htm"
+      ]
+    },
+    {
+      "id": "artist:anton-webern",
+      "type": "artist",
+      "name": "Anton Webern",
+      "kind": "person",
+      "period": {
+        "start": 1904,
+        "precision": "decade",
+        "end": 1945
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/anton-webern-mn0001190857"
+      ]
+    },
+    {
+      "id": "artist:billie-holiday",
+      "type": "artist",
+      "name": "Billie Holiday",
+      "kind": "person",
+      "period": {
+        "start": 1930,
+        "precision": "decade",
+        "end": 1959
+      },
+      "sources": [
+        "https://www.allmusic.com/style/vocal-jazz-ma0000002948"
+      ]
+    },
+    {
+      "id": "artist:ella-fitzgerald",
+      "type": "artist",
+      "name": "Ella Fitzgerald",
+      "kind": "person",
+      "period": {
+        "start": 1934,
+        "precision": "decade",
+        "end": 1995
+      },
+      "sources": [
+        "https://www.allmusic.com/style/vocal-jazz-ma0000002948"
+      ]
+    },
+    {
+      "id": "artist:machito",
+      "type": "artist",
+      "name": "Machito",
+      "kind": "person",
+      "period": {
+        "start": 1937,
+        "precision": "decade",
+        "end": 1984
+      },
+      "sources": [
+        "https://www.allmusic.com/style/latin-jazz-ma0000002464"
+      ]
+    },
+    {
+      "id": "artist:poncho-sanchez",
+      "type": "artist",
+      "name": "Poncho Sanchez",
+      "kind": "person",
+      "period": {
+        "start": 1975,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/latin-jazz-ma0000002464"
+      ]
+    },
+    {
+      "id": "artist:alice-coltrane",
+      "type": "artist",
+      "name": "Alice Coltrane",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "precision": "decade",
+        "end": 2007
+      },
+      "sources": [
+        "https://www.allmusic.com/style/spiritual-jazz-ma0000013403"
+      ]
+    },
+    {
+      "id": "artist:lucinda-williams",
+      "type": "artist",
+      "name": "Lucinda Williams",
+      "kind": "person",
+      "period": {
+        "start": 1978,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/americana-ma0000004415"
+      ]
+    },
+    {
+      "id": "artist:emmylou-harris",
+      "type": "artist",
+      "name": "Emmylou Harris",
+      "kind": "person",
+      "period": {
+        "start": 1969,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/alt-country-ma0000002421"
+      ]
+    },
+    {
+      "id": "artist:uncle-tupelo",
+      "type": "artist",
+      "name": "Uncle Tupelo",
+      "kind": "group",
+      "period": {
+        "start": 1987,
+        "precision": "decade",
+        "end": 1994
+      },
+      "sources": [
+        "https://www.allmusic.com/style/alt-country-ma0000002421"
+      ]
+    },
+    {
+      "id": "artist:lefty-frizzell",
+      "type": "artist",
+      "name": "Lefty Frizzell",
+      "kind": "person",
+      "period": {
+        "start": 1948,
+        "precision": "decade",
+        "end": 1975
+      },
+      "sources": [
+        "https://www.allmusic.com/style/honky-tonk-ma0000002648"
+      ]
+    },
+    {
+      "id": "artist:george-jones",
+      "type": "artist",
+      "name": "George Jones",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "precision": "decade",
+        "end": 2013
+      },
+      "sources": [
+        "https://www.allmusic.com/style/honky-tonk-ma0000002648"
+      ]
+    },
+    {
+      "id": "artist:calypso-rose",
+      "type": "artist",
+      "name": "Calypso Rose",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/calypso-ma0000002494",
+        "https://www.slcsi.org.lc/calypso-rose-from-grant-to-grammy/"
+      ]
+    },
+    {
+      "id": "artist:mighty-sparrow",
+      "type": "artist",
+      "name": "Mighty Sparrow",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "precision": "decade",
+        "end": 2026
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/mighty-sparrow-mn0000477523"
+      ]
+    },
+    {
+      "id": "artist:lord-kitchener",
+      "type": "artist",
+      "name": "Lord Kitchener",
+      "kind": "person",
+      "period": {
+        "start": 1940,
+        "precision": "decade",
+        "end": 2000
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/lord-kitchener-mn0000828768"
+      ]
+    },
+    {
+      "id": "artist:daddy-yankee",
+      "type": "artist",
+      "name": "Daddy Yankee",
+      "kind": "person",
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/reggaeton-ma0000002976"
+      ]
+    },
+    {
+      "id": "artist:ivy-queen",
+      "type": "artist",
+      "name": "Ivy Queen",
+      "kind": "person",
+      "period": {
+        "start": 1995,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/reggaeton-ma0000002976"
+      ]
+    },
+    {
+      "id": "artist:bad-bunny",
+      "type": "artist",
+      "name": "Bad Bunny",
+      "kind": "person",
+      "period": {
+        "start": 2016,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/reggaeton-ma0000002976"
+      ]
+    },
+    {
+      "id": "artist:kabza-de-small",
+      "type": "artist",
+      "name": "Kabza De Small",
+      "kind": "person",
+      "period": {
+        "start": 2009,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/kabza-de-small-mn0003886957"
+      ]
+    },
+    {
+      "id": "artist:dj-maphorisa",
+      "type": "artist",
+      "name": "DJ Maphorisa",
+      "kind": "person",
+      "period": {
+        "start": 2007,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/dj-maphorisa-mn0003564552"
+      ]
+    },
+    {
+      "id": "artist:major-league-djz",
+      "type": "artist",
+      "name": "Major League DJz",
+      "kind": "group",
+      "period": {
+        "start": 2008,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/major-league-djz-mn0003956781"
+      ]
+    },
+    {
+      "id": "artist:mandoza",
+      "type": "artist",
+      "name": "Mandoza",
+      "kind": "person",
+      "period": {
+        "start": 1996,
+        "precision": "decade",
+        "end": 2016
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/mandoza-mn0003931346",
+        "https://www.brandsouthafrica.com/stay-updated/quick-facts/2016/remembering-mandoza-kwaito-star-1978-2016/"
+      ]
+    },
+    {
+      "id": "artist:boom-shaka",
+      "type": "artist",
+      "name": "Boom Shaka",
+      "kind": "group",
+      "period": {
+        "start": 1993,
+        "precision": "decade",
+        "end": 2000
+      },
+      "sources": [
+        "https://musicinafrica.net/directory/boom-shaka/",
+        "https://mg.co.za/friday/2023-03-23-30-years-of-boom-shaka-with-the-mail-guardian/"
+      ]
+    },
+    {
+      "id": "artist:dj-lag",
+      "type": "artist",
+      "name": "DJ Lag",
+      "kind": "person",
+      "period": {
+        "start": 2016,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/dj-lag-mn0003558945"
+      ]
+    },
+    {
+      "id": "artist:babes-wodumo",
+      "type": "artist",
+      "name": "Babes Wodumo",
+      "kind": "person",
+      "period": {
+        "start": 2014,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/babes-wodumo-mn0003713358"
+      ]
+    },
+    {
+      "id": "artist:distruction-boyz",
+      "type": "artist",
+      "name": "Distruction Boyz",
+      "kind": "group",
+      "period": {
+        "start": 2015,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/distruction-boyz-mn0003692678"
+      ]
+    },
+    {
+      "id": "artist:teddy-riley",
+      "type": "artist",
+      "name": "Teddy Riley",
+      "kind": "person",
+      "period": {
+        "start": 1985,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/teddy-riley-mn0000018176"
+      ]
+    },
+    {
+      "id": "artist:guy",
+      "type": "artist",
+      "name": "Guy",
+      "kind": "group",
+      "period": {
+        "start": 1987,
+        "precision": "decade",
+        "end": 1991
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/guy-mn0000651156"
+      ]
+    },
+    {
+      "id": "artist:new-edition",
+      "type": "artist",
+      "name": "New Edition",
+      "kind": "group",
+      "period": {
+        "start": 1983,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/new-edition-mn0000865016"
+      ]
+    },
+    {
+      "id": "artist:beyonce",
+      "type": "artist",
+      "name": "Beyoncé",
+      "kind": "person",
+      "period": {
+        "start": 1997,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/subgenre/contemporary-r-b-ma0000002969"
+      ]
+    },
+    {
+      "id": "artist:korn",
+      "type": "artist",
+      "name": "Korn",
+      "kind": "group",
+      "period": {
+        "start": 1993,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547"
+      ]
+    },
+    {
+      "id": "artist:linkin-park",
+      "type": "artist",
+      "name": "Linkin Park",
+      "kind": "group",
+      "period": {
+        "start": 2000,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547"
+      ]
+    },
+    {
+      "id": "artist:slipknot",
+      "type": "artist",
+      "name": "Slipknot",
+      "kind": "group",
+      "period": {
+        "start": 1999,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547"
+      ]
+    },
+    {
+      "id": "artist:converge",
+      "type": "artist",
+      "name": "Converge",
+      "kind": "group",
+      "period": {
+        "start": 1994,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/metalcore-ma0000013405"
+      ]
+    },
+    {
+      "id": "artist:killswitch-engage",
+      "type": "artist",
+      "name": "Killswitch Engage",
+      "kind": "group",
+      "period": {
+        "start": 2000,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/metalcore-ma0000013405"
+      ]
+    },
+    {
+      "id": "artist:bring-me-the-horizon",
+      "type": "artist",
+      "name": "Bring Me the Horizon",
+      "kind": "group",
+      "period": {
+        "start": 2006,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/metalcore-ma0000013405"
+      ]
+    },
+    {
+      "id": "artist:ministry",
+      "type": "artist",
+      "name": "Ministry",
+      "kind": "group",
+      "period": {
+        "start": 1981,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/industrial-metal-ma0000012276"
+      ]
+    },
+    {
+      "id": "artist:nine-inch-nails",
+      "type": "artist",
+      "name": "Nine Inch Nails",
+      "kind": "group",
+      "period": {
+        "start": 1989,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/industrial-metal-ma0000012276"
+      ]
+    },
+    {
+      "id": "artist:rammstein",
+      "type": "artist",
+      "name": "Rammstein",
+      "kind": "group",
+      "period": {
+        "start": 1995,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/industrial-metal-ma0000012276"
+      ]
+    },
+    {
+      "id": "artist:avicii",
+      "type": "artist",
+      "name": "Avicii",
+      "kind": "person",
+      "period": {
+        "start": 2008,
+        "precision": "decade",
+        "end": 2018
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/avicii-mn0002393596"
+      ]
+    },
+    {
+      "id": "artist:swedish-house-mafia",
+      "type": "artist",
+      "name": "Swedish House Mafia",
+      "kind": "group",
+      "period": {
+        "start": 2008,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/swedish-house-mafia-mn0001714462"
+      ]
+    },
+    {
+      "id": "artist:venetian-snares",
+      "type": "artist",
+      "name": "Venetian Snares",
+      "kind": "person",
+      "period": {
+        "start": 1995,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/breakcore-ma0000004991"
+      ]
+    },
+    {
+      "id": "artist:squarepusher",
+      "type": "artist",
+      "name": "Squarepusher",
+      "kind": "person",
+      "period": {
+        "start": 1994,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/breakcore-ma0000004991"
+      ]
+    },
+    {
+      "id": "artist:dj-rashad",
+      "type": "artist",
+      "name": "DJ Rashad",
+      "kind": "person",
+      "period": {
+        "start": 1990,
+        "precision": "decade",
+        "end": 2014
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/dj-rashad-mn0000998421"
+      ]
+    },
+    {
+      "id": "artist:rp-boo",
+      "type": "artist",
+      "name": "RP Boo",
+      "kind": "person",
+      "period": {
+        "start": 1997,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/rp-boo-mn0002573983"
+      ]
+    },
+    {
+      "id": "artist:dj-spinn",
+      "type": "artist",
+      "name": "DJ Spinn",
+      "kind": "person",
+      "period": {
+        "start": 1995,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/dj-spinn-mn0002149142"
+      ]
+    },
+    {
+      "id": "artist:the-supremes",
+      "type": "artist",
+      "name": "The Supremes",
+      "kind": "group",
+      "period": {
+        "start": 1959,
+        "precision": "decade",
+        "end": 1977
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/the-supremes-p5563"
+      ]
+    },
+    {
+      "id": "artist:the-ronettes",
+      "type": "artist",
+      "name": "The Ronettes",
+      "kind": "group",
+      "period": {
+        "start": 1959,
+        "precision": "decade",
+        "end": 1967
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/the-ronettes-mn0000491220"
+      ]
+    },
+    {
+      "id": "artist:the-shangri-las",
+      "type": "artist",
+      "name": "The Shangri-Las",
+      "kind": "group",
+      "period": {
+        "start": 1963,
+        "precision": "decade",
+        "end": 1968
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/the-shangri-las-mn0000418955"
+      ]
     }
   ],
   "edges": [
@@ -17171,6 +18229,915 @@
       "to": "genre:hip-hop",
       "sources": [
         "https://www.allmusic.com/style/horror-rap-ma0000013531"
+      ]
+    },
+    {
+      "id": "key:jamiroquai-acid-jazz",
+      "type": "key_artist_of",
+      "from": "artist:jamiroquai",
+      "to": "genre:acid-jazz",
+      "sources": [
+        "https://www.allmusic.com/genre/acid-jazz-ma0000002414",
+        "https://www.allmusic.com/artist/mn0000176358"
+      ]
+    },
+    {
+      "id": "key:brand-new-heavies-acid-jazz",
+      "type": "key_artist_of",
+      "from": "artist:brand-new-heavies",
+      "to": "genre:acid-jazz",
+      "sources": [
+        "https://www.allmusic.com/genre/acid-jazz-ma0000002414",
+        "https://www.allmusic.com/artist/the-brand-new-heavies-mn0000628684"
+      ]
+    },
+    {
+      "id": "key:incognito-acid-jazz",
+      "type": "key_artist_of",
+      "from": "artist:incognito",
+      "to": "genre:acid-jazz",
+      "sources": [
+        "https://www.allmusic.com/genre/acid-jazz-ma0000002414",
+        "https://www.allmusic.com/artist/incognito-mn0000772721"
+      ]
+    },
+    {
+      "id": "lineage:acid-jazz-jazz",
+      "type": "fusion_of",
+      "from": "genre:acid-jazz",
+      "to": "genre:jazz",
+      "sources": [
+        "https://www.allmusic.com/genre/acid-jazz-ma0000002414"
+      ]
+    },
+    {
+      "id": "lineage:acid-jazz-funk",
+      "type": "fusion_of",
+      "from": "genre:acid-jazz",
+      "to": "genre:funk",
+      "sources": [
+        "https://www.allmusic.com/genre/acid-jazz-ma0000002414"
+      ]
+    },
+    {
+      "id": "key:bob-dylan-americana",
+      "type": "key_artist_of",
+      "from": "artist:bob-dylan",
+      "to": "genre:americana",
+      "sources": [
+        "https://www.allmusic.com/style/americana-ma0000004415"
+      ]
+    },
+    {
+      "id": "key:johnny-cash-americana",
+      "type": "key_artist_of",
+      "from": "artist:johnny-cash",
+      "to": "genre:americana",
+      "sources": [
+        "https://www.allmusic.com/style/americana-ma0000004415"
+      ]
+    },
+    {
+      "id": "key:lucinda-williams-americana",
+      "type": "key_artist_of",
+      "from": "artist:lucinda-williams",
+      "to": "genre:americana",
+      "sources": [
+        "https://www.allmusic.com/style/americana-ma0000004415"
+      ]
+    },
+    {
+      "id": "key:emmylou-harris-alt-country",
+      "type": "key_artist_of",
+      "from": "artist:emmylou-harris",
+      "to": "genre:alt-country",
+      "sources": [
+        "https://www.allmusic.com/style/alt-country-ma0000002421"
+      ]
+    },
+    {
+      "id": "key:lucinda-williams-alt-country",
+      "type": "key_artist_of",
+      "from": "artist:lucinda-williams",
+      "to": "genre:alt-country",
+      "sources": [
+        "https://www.allmusic.com/style/alt-country-ma0000002421"
+      ]
+    },
+    {
+      "id": "key:uncle-tupelo-alt-country",
+      "type": "key_artist_of",
+      "from": "artist:uncle-tupelo",
+      "to": "genre:alt-country",
+      "sources": [
+        "https://www.allmusic.com/style/alt-country-ma0000002421"
+      ]
+    },
+    {
+      "id": "key:hank-williams-honky-tonk",
+      "type": "key_artist_of",
+      "from": "artist:hank-williams",
+      "to": "genre:honky-tonk",
+      "sources": [
+        "https://www.allmusic.com/style/honky-tonk-ma0000002648"
+      ]
+    },
+    {
+      "id": "key:lefty-frizzell-honky-tonk",
+      "type": "key_artist_of",
+      "from": "artist:lefty-frizzell",
+      "to": "genre:honky-tonk",
+      "sources": [
+        "https://www.allmusic.com/style/honky-tonk-ma0000002648"
+      ]
+    },
+    {
+      "id": "key:george-jones-honky-tonk",
+      "type": "key_artist_of",
+      "from": "artist:george-jones",
+      "to": "genre:honky-tonk",
+      "sources": [
+        "https://www.allmusic.com/style/honky-tonk-ma0000002648"
+      ]
+    },
+    {
+      "id": "key:lord-kitchener-calypso",
+      "type": "key_artist_of",
+      "from": "artist:lord-kitchener",
+      "to": "genre:calypso",
+      "sources": [
+        "https://www.allmusic.com/style/calypso-ma0000002494"
+      ]
+    },
+    {
+      "id": "key:mighty-sparrow-calypso",
+      "type": "key_artist_of",
+      "from": "artist:mighty-sparrow",
+      "to": "genre:calypso",
+      "sources": [
+        "https://www.allmusic.com/style/calypso-ma0000002494"
+      ]
+    },
+    {
+      "id": "key:calypso-rose-calypso",
+      "type": "key_artist_of",
+      "from": "artist:calypso-rose",
+      "to": "genre:calypso",
+      "sources": [
+        "https://www.allmusic.com/style/calypso-ma0000002494"
+      ]
+    },
+    {
+      "id": "key:daddy-yankee-reggaeton",
+      "type": "key_artist_of",
+      "from": "artist:daddy-yankee",
+      "to": "genre:reggaeton",
+      "sources": [
+        "https://www.allmusic.com/style/reggaeton-ma0000002976"
+      ]
+    },
+    {
+      "id": "key:ivy-queen-reggaeton",
+      "type": "key_artist_of",
+      "from": "artist:ivy-queen",
+      "to": "genre:reggaeton",
+      "sources": [
+        "https://www.allmusic.com/style/reggaeton-ma0000002976"
+      ]
+    },
+    {
+      "id": "key:bad-bunny-reggaeton",
+      "type": "key_artist_of",
+      "from": "artist:bad-bunny",
+      "to": "genre:reggaeton",
+      "sources": [
+        "https://www.allmusic.com/style/reggaeton-ma0000002976"
+      ]
+    },
+    {
+      "id": "key:kabza-de-small-amapiano",
+      "type": "key_artist_of",
+      "from": "artist:kabza-de-small",
+      "to": "genre:amapiano",
+      "sources": [
+        "https://www.allmusic.com/artist/kabza-de-small-mn0003886957",
+        "https://www.newyorker.com/culture/culture-desk/how-far-can-amapiano-go",
+        "https://djmag.com/features/these-are-most-exciting-amapiano-producers-right-now"
+      ]
+    },
+    {
+      "id": "key:dj-maphorisa-amapiano",
+      "type": "key_artist_of",
+      "from": "artist:dj-maphorisa",
+      "to": "genre:amapiano",
+      "sources": [
+        "https://www.allmusic.com/artist/kabza-de-small-mn0003886957",
+        "https://www.newyorker.com/culture/culture-desk/how-far-can-amapiano-go",
+        "https://djmag.com/features/these-are-most-exciting-amapiano-producers-right-now"
+      ]
+    },
+    {
+      "id": "key:major-league-djz-amapiano",
+      "type": "key_artist_of",
+      "from": "artist:major-league-djz",
+      "to": "genre:amapiano",
+      "sources": [
+        "https://www.allmusic.com/artist/kabza-de-small-mn0003886957",
+        "https://www.newyorker.com/culture/culture-desk/how-far-can-amapiano-go",
+        "https://djmag.com/features/these-are-most-exciting-amapiano-producers-right-now"
+      ]
+    },
+    {
+      "id": "key:dj-lag-gqom",
+      "type": "key_artist_of",
+      "from": "artist:dj-lag",
+      "to": "genre:gqom",
+      "sources": [
+        "https://www.allmusic.com/style/gqom-ma0000013646",
+        "https://www.allmusic.com/artist/dj-lag-mn0003558945"
+      ]
+    },
+    {
+      "id": "key:babes-wodumo-gqom",
+      "type": "key_artist_of",
+      "from": "artist:babes-wodumo",
+      "to": "genre:gqom",
+      "sources": [
+        "https://www.allmusic.com/style/gqom-ma0000013646",
+        "https://www.allmusic.com/artist/dj-lag-mn0003558945"
+      ]
+    },
+    {
+      "id": "key:distruction-boyz-gqom",
+      "type": "key_artist_of",
+      "from": "artist:distruction-boyz",
+      "to": "genre:gqom",
+      "sources": [
+        "https://www.allmusic.com/style/gqom-ma0000013646",
+        "https://www.allmusic.com/artist/dj-lag-mn0003558945"
+      ]
+    },
+    {
+      "id": "key:major-league-djz-kwaito",
+      "type": "key_artist_of",
+      "from": "artist:major-league-djz",
+      "to": "genre:kwaito",
+      "sources": [
+        "https://www.musicinafrica.net/magazine/popular-music-south-africa/",
+        "https://www.washingtonpost.com/archive/lifestyle/style/1998/07/19/the-phat-of-the-homeland/1ba33e31-5fef-499b-be15-8f45dc4d4b7b"
+      ]
+    },
+    {
+      "id": "key:mandoza-kwaito",
+      "type": "key_artist_of",
+      "from": "artist:mandoza",
+      "to": "genre:kwaito",
+      "sources": [
+        "https://www.musicinafrica.net/magazine/popular-music-south-africa/",
+        "https://www.washingtonpost.com/archive/lifestyle/style/1998/07/19/the-phat-of-the-homeland/1ba33e31-5fef-499b-be15-8f45dc4d4b7b"
+      ]
+    },
+    {
+      "id": "key:boom-shaka-kwaito",
+      "type": "key_artist_of",
+      "from": "artist:boom-shaka",
+      "to": "genre:kwaito",
+      "sources": [
+        "https://www.musicinafrica.net/magazine/popular-music-south-africa/",
+        "https://www.washingtonpost.com/archive/lifestyle/style/1998/07/19/the-phat-of-the-homeland/1ba33e31-5fef-499b-be15-8f45dc4d4b7b"
+      ]
+    },
+    {
+      "id": "key:teddy-riley-new-jack-swing",
+      "type": "key_artist_of",
+      "from": "artist:teddy-riley",
+      "to": "genre:new-jack-swing",
+      "sources": [
+        "https://www.allmusic.com/style/new-jack-swing-ma0000005027",
+        "https://www.allmusic.com/artist/teddy-riley-mn0000018176"
+      ]
+    },
+    {
+      "id": "key:guy-new-jack-swing",
+      "type": "key_artist_of",
+      "from": "artist:guy",
+      "to": "genre:new-jack-swing",
+      "sources": [
+        "https://www.allmusic.com/style/new-jack-swing-ma0000005027",
+        "https://www.allmusic.com/artist/teddy-riley-mn0000018176"
+      ]
+    },
+    {
+      "id": "key:new-edition-new-jack-swing",
+      "type": "key_artist_of",
+      "from": "artist:new-edition",
+      "to": "genre:new-jack-swing",
+      "sources": [
+        "https://www.allmusic.com/style/new-jack-swing-ma0000005027",
+        "https://www.allmusic.com/artist/teddy-riley-mn0000018176"
+      ]
+    },
+    {
+      "id": "key:dangelo-contemporary-r-and-b",
+      "type": "key_artist_of",
+      "from": "artist:dangelo",
+      "to": "genre:contemporary-r-and-b",
+      "sources": [
+        "https://www.allmusic.com/subgenre/contemporary-r-b-ma0000002969"
+      ]
+    },
+    {
+      "id": "key:lauryn-hill-contemporary-r-and-b",
+      "type": "key_artist_of",
+      "from": "artist:lauryn-hill",
+      "to": "genre:contemporary-r-and-b",
+      "sources": [
+        "https://www.allmusic.com/subgenre/contemporary-r-b-ma0000002969"
+      ]
+    },
+    {
+      "id": "key:beyonce-contemporary-r-and-b",
+      "type": "key_artist_of",
+      "from": "artist:beyonce",
+      "to": "genre:contemporary-r-and-b",
+      "sources": [
+        "https://www.allmusic.com/subgenre/contemporary-r-b-ma0000002969"
+      ]
+    },
+    {
+      "id": "key:korn-nu-metal",
+      "type": "key_artist_of",
+      "from": "artist:korn",
+      "to": "genre:nu-metal",
+      "sources": [
+        "https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547"
+      ]
+    },
+    {
+      "id": "key:linkin-park-nu-metal",
+      "type": "key_artist_of",
+      "from": "artist:linkin-park",
+      "to": "genre:nu-metal",
+      "sources": [
+        "https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547"
+      ]
+    },
+    {
+      "id": "key:slipknot-nu-metal",
+      "type": "key_artist_of",
+      "from": "artist:slipknot",
+      "to": "genre:nu-metal",
+      "sources": [
+        "https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547"
+      ]
+    },
+    {
+      "id": "key:converge-metalcore",
+      "type": "key_artist_of",
+      "from": "artist:converge",
+      "to": "genre:metalcore",
+      "sources": [
+        "https://www.allmusic.com/style/metalcore-ma0000013405"
+      ]
+    },
+    {
+      "id": "key:killswitch-engage-metalcore",
+      "type": "key_artist_of",
+      "from": "artist:killswitch-engage",
+      "to": "genre:metalcore",
+      "sources": [
+        "https://www.allmusic.com/style/metalcore-ma0000013405"
+      ]
+    },
+    {
+      "id": "key:bring-me-the-horizon-metalcore",
+      "type": "key_artist_of",
+      "from": "artist:bring-me-the-horizon",
+      "to": "genre:metalcore",
+      "sources": [
+        "https://www.allmusic.com/style/metalcore-ma0000013405"
+      ]
+    },
+    {
+      "id": "key:ministry-industrial-metal",
+      "type": "key_artist_of",
+      "from": "artist:ministry",
+      "to": "genre:industrial-metal",
+      "sources": [
+        "https://www.allmusic.com/style/industrial-metal-ma0000012276"
+      ]
+    },
+    {
+      "id": "key:nine-inch-nails-industrial-metal",
+      "type": "key_artist_of",
+      "from": "artist:nine-inch-nails",
+      "to": "genre:industrial-metal",
+      "sources": [
+        "https://www.allmusic.com/style/industrial-metal-ma0000012276"
+      ]
+    },
+    {
+      "id": "key:rammstein-industrial-metal",
+      "type": "key_artist_of",
+      "from": "artist:rammstein",
+      "to": "genre:industrial-metal",
+      "sources": [
+        "https://www.allmusic.com/style/industrial-metal-ma0000012276"
+      ]
+    },
+    {
+      "id": "key:louis-armstrong-vocal-jazz",
+      "type": "key_artist_of",
+      "from": "artist:louis-armstrong",
+      "to": "genre:vocal-jazz",
+      "sources": [
+        "https://www.allmusic.com/style/vocal-jazz-ma0000002948"
+      ]
+    },
+    {
+      "id": "key:billie-holiday-vocal-jazz",
+      "type": "key_artist_of",
+      "from": "artist:billie-holiday",
+      "to": "genre:vocal-jazz",
+      "sources": [
+        "https://www.allmusic.com/style/vocal-jazz-ma0000002948"
+      ]
+    },
+    {
+      "id": "key:ella-fitzgerald-vocal-jazz",
+      "type": "key_artist_of",
+      "from": "artist:ella-fitzgerald",
+      "to": "genre:vocal-jazz",
+      "sources": [
+        "https://www.allmusic.com/style/vocal-jazz-ma0000002948"
+      ]
+    },
+    {
+      "id": "key:tito-puente-latin-jazz",
+      "type": "key_artist_of",
+      "from": "artist:tito-puente",
+      "to": "genre:latin-jazz",
+      "sources": [
+        "https://www.allmusic.com/style/latin-jazz-ma0000002464"
+      ]
+    },
+    {
+      "id": "key:machito-latin-jazz",
+      "type": "key_artist_of",
+      "from": "artist:machito",
+      "to": "genre:latin-jazz",
+      "sources": [
+        "https://www.allmusic.com/style/latin-jazz-ma0000002464"
+      ]
+    },
+    {
+      "id": "key:poncho-sanchez-latin-jazz",
+      "type": "key_artist_of",
+      "from": "artist:poncho-sanchez",
+      "to": "genre:latin-jazz",
+      "sources": [
+        "https://www.allmusic.com/style/latin-jazz-ma0000002464"
+      ]
+    },
+    {
+      "id": "key:john-coltrane-spiritual-jazz",
+      "type": "key_artist_of",
+      "from": "artist:john-coltrane",
+      "to": "genre:spiritual-jazz",
+      "sources": [
+        "https://www.allmusic.com/style/spiritual-jazz-ma0000013403"
+      ]
+    },
+    {
+      "id": "key:miles-davis-spiritual-jazz",
+      "type": "key_artist_of",
+      "from": "artist:miles-davis",
+      "to": "genre:spiritual-jazz",
+      "sources": [
+        "https://www.allmusic.com/style/spiritual-jazz-ma0000013403"
+      ]
+    },
+    {
+      "id": "key:alice-coltrane-spiritual-jazz",
+      "type": "key_artist_of",
+      "from": "artist:alice-coltrane",
+      "to": "genre:spiritual-jazz",
+      "sources": [
+        "https://www.allmusic.com/style/spiritual-jazz-ma0000013403"
+      ]
+    },
+    {
+      "id": "key:deadmau5-edm",
+      "type": "key_artist_of",
+      "from": "artist:deadmau5",
+      "to": "genre:edm",
+      "sources": [
+        "https://www.allmusic.com/style/edm-ma0000013412"
+      ]
+    },
+    {
+      "id": "key:hardwell-edm",
+      "type": "key_artist_of",
+      "from": "artist:hardwell",
+      "to": "genre:edm",
+      "sources": [
+        "https://www.allmusic.com/style/edm-ma0000013412"
+      ]
+    },
+    {
+      "id": "key:avicii-edm",
+      "type": "key_artist_of",
+      "from": "artist:avicii",
+      "to": "genre:edm",
+      "sources": [
+        "https://www.allmusic.com/style/edm-ma0000013412"
+      ]
+    },
+    {
+      "id": "key:swedish-house-mafia-edm",
+      "type": "key_artist_of",
+      "from": "artist:swedish-house-mafia",
+      "to": "genre:edm",
+      "sources": [
+        "https://www.allmusic.com/style/edm-ma0000013412"
+      ]
+    },
+    {
+      "id": "key:aphex-twin-breakcore",
+      "type": "key_artist_of",
+      "from": "artist:aphex-twin",
+      "to": "genre:breakcore",
+      "sources": [
+        "https://www.allmusic.com/style/breakcore-ma0000004991"
+      ]
+    },
+    {
+      "id": "key:squarepusher-breakcore",
+      "type": "key_artist_of",
+      "from": "artist:squarepusher",
+      "to": "genre:breakcore",
+      "sources": [
+        "https://www.allmusic.com/style/breakcore-ma0000004991"
+      ]
+    },
+    {
+      "id": "key:venetian-snares-breakcore",
+      "type": "key_artist_of",
+      "from": "artist:venetian-snares",
+      "to": "genre:breakcore",
+      "sources": [
+        "https://www.allmusic.com/style/breakcore-ma0000004991"
+      ]
+    },
+    {
+      "id": "key:dj-rashad-footwork",
+      "type": "key_artist_of",
+      "from": "artist:dj-rashad",
+      "to": "genre:footwork",
+      "sources": [
+        "https://www.allmusic.com/style/juke-footwork-ma0000013543",
+        "https://www.allmusic.com/artist/dj-rashad-mn0000998421"
+      ]
+    },
+    {
+      "id": "key:rp-boo-footwork",
+      "type": "key_artist_of",
+      "from": "artist:rp-boo",
+      "to": "genre:footwork",
+      "sources": [
+        "https://www.allmusic.com/style/juke-footwork-ma0000013543",
+        "https://www.allmusic.com/artist/dj-rashad-mn0000998421"
+      ]
+    },
+    {
+      "id": "key:dj-spinn-footwork",
+      "type": "key_artist_of",
+      "from": "artist:dj-spinn",
+      "to": "genre:footwork",
+      "sources": [
+        "https://www.allmusic.com/style/juke-footwork-ma0000013543",
+        "https://www.allmusic.com/artist/dj-rashad-mn0000998421"
+      ]
+    },
+    {
+      "id": "key:claude-debussy-impressionism",
+      "type": "key_artist_of",
+      "from": "artist:debussy",
+      "to": "genre:impressionism",
+      "sources": [
+        "https://pressbooks.cuny.edu/understandingmusicbmcc/chapter/2-impressionism/",
+        "https://rme.rilm.org/articles/emt00226/1.0/emt00226"
+      ]
+    },
+    {
+      "id": "key:maurice-ravel-impressionism",
+      "type": "key_artist_of",
+      "from": "artist:maurice-ravel",
+      "to": "genre:impressionism",
+      "sources": [
+        "https://pressbooks.cuny.edu/understandingmusicbmcc/chapter/2-impressionism/",
+        "https://rme.rilm.org/articles/emt00226/1.0/emt00226"
+      ]
+    },
+    {
+      "id": "key:erik-satie-impressionism",
+      "type": "key_artist_of",
+      "from": "artist:erik-satie",
+      "to": "genre:impressionism",
+      "sources": [
+        "https://pressbooks.cuny.edu/understandingmusicbmcc/chapter/2-impressionism/",
+        "https://rme.rilm.org/articles/emt00226/1.0/emt00226"
+      ]
+    },
+    {
+      "id": "key:arnold-schoenberg-serialism",
+      "type": "key_artist_of",
+      "from": "artist:schoenberg",
+      "to": "genre:serialism",
+      "sources": [
+        "https://assets.cambridge.org/97805218/63414/excerpt/9780521863414_excerpt.htm",
+        "https://academic.oup.com/book/49294/chapter-abstract/422536119"
+      ]
+    },
+    {
+      "id": "key:alban-berg-serialism",
+      "type": "key_artist_of",
+      "from": "artist:alban-berg",
+      "to": "genre:serialism",
+      "sources": [
+        "https://assets.cambridge.org/97805218/63414/excerpt/9780521863414_excerpt.htm",
+        "https://academic.oup.com/book/49294/chapter-abstract/422536119"
+      ]
+    },
+    {
+      "id": "key:anton-webern-serialism",
+      "type": "key_artist_of",
+      "from": "artist:anton-webern",
+      "to": "genre:serialism",
+      "sources": [
+        "https://assets.cambridge.org/97805218/63414/excerpt/9780521863414_excerpt.htm",
+        "https://academic.oup.com/book/49294/chapter-abstract/422536119"
+      ]
+    },
+    {
+      "id": "key:the-supremes-girl-groups",
+      "type": "key_artist_of",
+      "from": "artist:the-supremes",
+      "to": "genre:girl-groups",
+      "sources": [
+        "https://www.allmusic.com/style/girl-groups-ma0000002618"
+      ]
+    },
+    {
+      "id": "key:the-ronettes-girl-groups",
+      "type": "key_artist_of",
+      "from": "artist:the-ronettes",
+      "to": "genre:girl-groups",
+      "sources": [
+        "https://www.allmusic.com/style/girl-groups-ma0000002618"
+      ]
+    },
+    {
+      "id": "key:the-shangri-las-girl-groups",
+      "type": "key_artist_of",
+      "from": "artist:the-shangri-las",
+      "to": "genre:girl-groups",
+      "sources": [
+        "https://www.allmusic.com/style/girl-groups-ma0000002618"
+      ]
+    },
+    {
+      "id": "lineage:americana-country",
+      "type": "subgenre_of",
+      "from": "genre:americana",
+      "to": "genre:country",
+      "sources": [
+        "https://www.allmusic.com/style/americana-ma0000004415"
+      ]
+    },
+    {
+      "id": "lineage:alt-country-country",
+      "type": "subgenre_of",
+      "from": "genre:alt-country",
+      "to": "genre:country",
+      "sources": [
+        "https://www.allmusic.com/style/alt-country-ma0000002421"
+      ]
+    },
+    {
+      "id": "lineage:honky-tonk-country",
+      "type": "subgenre_of",
+      "from": "genre:honky-tonk",
+      "to": "genre:country",
+      "sources": [
+        "https://www.allmusic.com/style/honky-tonk-ma0000002648"
+      ]
+    },
+    {
+      "id": "lineage:calypso-ska",
+      "type": "influences",
+      "from": "genre:calypso",
+      "to": "genre:ska",
+      "sources": [
+        "https://www.allmusic.com/genre/ska-ma0000002857"
+      ]
+    },
+    {
+      "id": "lineage:reggaeton-reggae",
+      "type": "fusion_of",
+      "from": "genre:reggaeton",
+      "to": "genre:reggae",
+      "sources": [
+        "https://www.allmusic.com/style/reggaeton-ma0000002976"
+      ]
+    },
+    {
+      "id": "lineage:reggaeton-hip-hop",
+      "type": "fusion_of",
+      "from": "genre:reggaeton",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://www.allmusic.com/style/reggaeton-ma0000002976"
+      ]
+    },
+    {
+      "id": "lineage:amapiano-house",
+      "type": "subgenre_of",
+      "from": "genre:amapiano",
+      "to": "genre:house",
+      "sources": [
+        "https://www.allmusic.com/artist/kabza-de-small-mn0003886957"
+      ]
+    },
+    {
+      "id": "lineage:gqom-house",
+      "type": "subgenre_of",
+      "from": "genre:gqom",
+      "to": "genre:house",
+      "sources": [
+        "https://www.allmusic.com/artist/dj-lag-mn0003558945"
+      ]
+    },
+    {
+      "id": "lineage:kwaito-house",
+      "type": "derived_from",
+      "from": "genre:kwaito",
+      "to": "genre:house",
+      "sources": [
+        "https://www.musicinafrica.net/magazine/popular-music-south-africa/"
+      ]
+    },
+    {
+      "id": "lineage:new-jack-swing-r-and-b",
+      "type": "fusion_of",
+      "from": "genre:new-jack-swing",
+      "to": "genre:r-and-b",
+      "sources": [
+        "https://www.allmusic.com/style/new-jack-swing-ma0000005027"
+      ]
+    },
+    {
+      "id": "lineage:new-jack-swing-hip-hop",
+      "type": "fusion_of",
+      "from": "genre:new-jack-swing",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://www.allmusic.com/style/new-jack-swing-ma0000005027"
+      ]
+    },
+    {
+      "id": "lineage:contemporary-r-and-b-r-and-b",
+      "type": "subgenre_of",
+      "from": "genre:contemporary-r-and-b",
+      "to": "genre:r-and-b",
+      "sources": [
+        "https://www.allmusic.com/subgenre/contemporary-r-b-ma0000002969"
+      ]
+    },
+    {
+      "id": "lineage:nu-metal-heavy-metal",
+      "type": "subgenre_of",
+      "from": "genre:nu-metal",
+      "to": "genre:heavy-metal",
+      "sources": [
+        "https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547"
+      ]
+    },
+    {
+      "id": "lineage:metalcore-heavy-metal",
+      "type": "subgenre_of",
+      "from": "genre:metalcore",
+      "to": "genre:heavy-metal",
+      "sources": [
+        "https://www.allmusic.com/style/metalcore-ma0000013405"
+      ]
+    },
+    {
+      "id": "lineage:industrial-metal-heavy-metal",
+      "type": "subgenre_of",
+      "from": "genre:industrial-metal",
+      "to": "genre:heavy-metal",
+      "sources": [
+        "https://www.allmusic.com/style/industrial-metal-ma0000012276"
+      ]
+    },
+    {
+      "id": "lineage:vocal-jazz-jazz",
+      "type": "subgenre_of",
+      "from": "genre:vocal-jazz",
+      "to": "genre:jazz",
+      "sources": [
+        "https://www.allmusic.com/style/vocal-jazz-ma0000002948"
+      ]
+    },
+    {
+      "id": "lineage:latin-jazz-jazz",
+      "type": "fusion_of",
+      "from": "genre:latin-jazz",
+      "to": "genre:jazz",
+      "sources": [
+        "https://www.allmusic.com/style/latin-jazz-ma0000002464"
+      ]
+    },
+    {
+      "id": "lineage:latin-jazz-latin",
+      "type": "fusion_of",
+      "from": "genre:latin-jazz",
+      "to": "genre:latin",
+      "sources": [
+        "https://www.allmusic.com/style/latin-jazz-ma0000002464"
+      ]
+    },
+    {
+      "id": "lineage:spiritual-jazz-jazz",
+      "type": "subgenre_of",
+      "from": "genre:spiritual-jazz",
+      "to": "genre:jazz",
+      "sources": [
+        "https://www.allmusic.com/style/spiritual-jazz-ma0000013403"
+      ]
+    },
+    {
+      "id": "lineage:edm-house",
+      "type": "derived_from",
+      "from": "genre:edm",
+      "to": "genre:house",
+      "sources": [
+        "https://www.allmusic.com/style/edm-ma0000013412"
+      ]
+    },
+    {
+      "id": "lineage:edm-trance",
+      "type": "derived_from",
+      "from": "genre:edm",
+      "to": "genre:trance",
+      "sources": [
+        "https://www.allmusic.com/style/edm-ma0000013412"
+      ]
+    },
+    {
+      "id": "lineage:breakcore-breakbeat-hardcore",
+      "type": "derived_from",
+      "from": "genre:breakcore",
+      "to": "genre:breakbeat-hardcore",
+      "sources": [
+        "https://www.allmusic.com/style/breakcore-ma0000004991"
+      ]
+    },
+    {
+      "id": "lineage:footwork-house",
+      "type": "subgenre_of",
+      "from": "genre:footwork",
+      "to": "genre:house",
+      "sources": [
+        "https://www.allmusic.com/style/juke-footwork-ma0000013543"
+      ]
+    },
+    {
+      "id": "lineage:impressionism-modern-classical",
+      "type": "subgenre_of",
+      "from": "genre:impressionism",
+      "to": "genre:modern-classical",
+      "sources": [
+        "https://pressbooks.cuny.edu/understandingmusicbmcc/chapter/2-impressionism/"
+      ]
+    },
+    {
+      "id": "lineage:serialism-modern-classical",
+      "type": "subgenre_of",
+      "from": "genre:serialism",
+      "to": "genre:modern-classical",
+      "sources": [
+        "https://assets.cambridge.org/97805218/63414/excerpt/9780521863414_excerpt.htm"
+      ]
+    },
+    {
+      "id": "lineage:girl-groups-pop",
+      "type": "subgenre_of",
+      "from": "genre:girl-groups",
+      "to": "genre:pop",
+      "sources": [
+        "https://www.allmusic.com/style/girl-groups-ma0000002618"
       ]
     }
   ]

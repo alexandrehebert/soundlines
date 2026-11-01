@@ -26,8 +26,8 @@ rejected.**
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 582 nodes (146 genres, 405 artists, 7 labels, 6 places,
-14 tracks, 4 scenes) and 773 edges.
+Current size: 659 nodes (169 genres, 459 artists, 7 labels, 6 places,
+14 tracks, 4 scenes) and 871 edges.
 
 ---
 
@@ -73,27 +73,27 @@ Every genre **must** have a `family`. Lanes are rendered in this order:
 
 | family              | Label                  | Genres | Current examples |
 |---------------------|------------------------|--------|------------------|
-| `classical`         | Classical              | 14     | Western eras, Hindustani and Carnatic traditions, gagaku, pansori |
-| `blues-soul`        | Blues, R&B & Soul       | 6      | blues, rhythm and blues, doo-wop, soul, funk, neo-soul |
-| `jazz`              | Jazz                   | 8      | jazz, swing, bebop, cool/hard bop, modal, free, fusion |
-| `country-folk`      | Country & Folk         | 6      | country, folk revival, bluegrass, Baul songs, khoomei |
+| `classical`         | Classical              | 16     | Western eras, impressionism, serialism, Hindustani, Carnatic, gagaku, pansori |
+| `blues-soul`        | Blues, R&B & Soul      | 8      | blues, R&B, soul, funk, neo-soul, new jack swing, contemporary R&B |
+| `jazz`              | Jazz                   | 12     | swing, bebop, modal, free, fusion, acid, vocal, Latin, spiritual jazz |
+| `country-folk`      | Country & Folk         | 9      | country, honky-tonk, alt-country, Americana, folk, Baul songs, khoomei |
 | `rock`              | Rock                   | 11     | rock and roll, blues-rock, hard-rock, krautrock, surf-rock |
 | `alternative-punk`  | Alternative & Punk     | 16     | punk, post-punk, indie-rock, grunge, shoegaze, new-wave |
-| `metal`             | Metal                  | 5      | heavy, thrash, death, black, and doom metal |
-| `pop`               | Pop                    | 4      | pop, synth-pop, K-pop, J-pop |
-| `hip-hop`           | Hip-hop                | 18     | regional rap, boom bap, jazz rap, crunk, G-funk, hyphy, horrorcore |
-| `reggae`            | Reggae & Ska           | 5      | ska, rocksteady, reggae, dub, dancehall |
-| `latin`             | Latin                  | 10     | son cubano, salsa, bossa nova, cumbia, samba, tango, bachata |
-| `african`           | African                | 5      | highlife, Afrobeat, Afrobeats, jùjú, soukous |
-| `electronica`       | Electronica & Ambient  | 10     | electro, trip-hop, ambient, IDM, synthwave, downtempo |
-| `house`             | Disco & House          | 12     | disco, Italo disco, hi-NRG, house styles, French Touch |
+| `metal`             | Metal                  | 8      | heavy, thrash, death, black, doom, nu, industrial metal, metalcore |
+| `pop`               | Pop                    | 5      | pop, girl groups, synth-pop, K-pop, J-pop |
+| `hip-hop`           | Hip-hop                | 18     | regional rap, boom bap, jazz rap, crunk, G-funk, hyphy, trap, drill, grime |
+| `reggae`            | Reggae & Ska           | 6      | calypso, ska, rocksteady, reggae, dub, dancehall |
+| `latin`             | Latin                  | 11     | son cubano, salsa, bossa nova, cumbia, samba, tango, reggaeton |
+| `african`           | African                | 8      | highlife, jùjú, soukous, Afrobeat, Afrobeats, kwaito, amapiano, gqom |
+| `electronica`       | Electronica & Ambient  | 11     | electro, trip-hop, ambient, IDM, synthwave, downtempo, EDM |
+| `house`             | Disco & House          | 13     | disco, Italo disco, hi-NRG, house styles, French Touch, footwork |
 | `techno`            | Techno & Trance        | 9      | techno styles, trance, psytrance, gabber, hardstyle |
-| `breakbeat-bass`    | Breakbeat & Bass       | 7      | breakbeat hardcore, jungle, drum and bass, garage, dubstep |
+| `breakbeat-bass`    | Breakbeat & Bass       | 8      | breakbeat hardcore, jungle, drum and bass, garage, dubstep, breakcore |
 
-These are navigational families, not strict genre ancestry. The 146 genres
-currently have 4–18 members per family. The expanded Hip-hop lane includes
-regional rap scenes and production- and subject-based branches. Keep related
-styles together, and revisit the grouping if a lane becomes unbalanced rather
+These are navigational families, not strict genre ancestry. The 169 genres
+currently have 5–18 members per family: enough granularity to avoid an oversized
+Electronic lane without creating one-genre lanes. Keep related styles together
+as the catalogue grows, and revisit the grouping if it becomes unbalanced rather
 than putting unrelated traditions into a catch-all.
 
 Disco is not a house subgenre, and French Touch remains broader than French
@@ -120,34 +120,35 @@ without claiming a key-artist relationship.
 ### Existing genre ids (do not duplicate)
 
 ```
-genre:medieval genre:renaissance genre:baroque genre:classical-period genre:romantic
-genre:modern-classical genre:minimalism genre:hindustani-classical genre:carnatic
-genre:qawwali genre:gamelan genre:gagaku genre:peking-opera genre:pansori
-genre:blues genre:jazz genre:swing genre:bebop
-genre:cool-jazz genre:hard-bop genre:modal-jazz genre:free-jazz genre:jazz-fusion
-genre:rock-and-roll genre:rock genre:blues-rock genre:psychedelic-rock
-genre:progressive-rock genre:hard-rock genre:heavy-metal genre:punk-rock genre:post-punk
-genre:alternative-rock genre:grunge genre:soul genre:funk genre:disco genre:hip-hop
-genre:krautrock genre:synth-pop genre:italo-disco genre:hi-nrg genre:electro
-genre:chicago-house genre:garage-house genre:deep-house genre:acid-house
-genre:detroit-techno genre:minimal-techno genre:dub-techno genre:trance genre:gabber
-genre:breakbeat-hardcore genre:jungle genre:drum-and-bass genre:uk-garage genre:dubstep
-genre:techno genre:french-touch genre:french-house genre:trip-hop genre:big-beat genre:ambient
-genre:ambient-techno genre:idm genre:synthwave genre:darksynth genre:vaporwave genre:chillwave
-genre:downtempo genre:electroclash genre:breakbeat genre:tech-house genre:indie-rock
-genre:garage-rock genre:glam-rock genre:shoegaze genre:dream-pop genre:britpop genre:emo
-genre:post-hardcore genre:post-rock genre:math-rock genre:noise-rock genre:gothic-rock
-genre:pop-punk genre:stoner-rock genre:house genre:pop genre:country genre:folk genre:bluegrass
-genre:r-and-b genre:doo-wop genre:neo-soul genre:ska genre:rocksteady genre:reggae genre:dub
-genre:dancehall genre:latin genre:son-cubano genre:salsa genre:bossa-nova genre:cumbia
-genre:highlife genre:afrobeat genre:afrobeats genre:juju genre:soukous
-genre:k-pop genre:j-pop genre:surf-rock genre:new-wave
-genre:thrash-metal genre:death-metal genre:black-metal genre:doom-metal genre:grime genre:trap-rap
-genre:drill genre:old-school-rap genre:east-coast-rap genre:west-coast-rap genre:gangsta-rap
-genre:boom-bap genre:jazz-rap genre:alternative-rap genre:conscious-hip-hop genre:southern-rap
-genre:crunk genre:g-funk genre:hyphy genre:chopped-and-screwed genre:horrorcore
-genre:russian-folk genre:baul-songs genre:khoomei genre:samba genre:tango genre:andean-folk
-genre:bachata genre:merengue genre:electro-house genre:hardstyle genre:psytrance
+genre:acid-house genre:acid-jazz genre:afrobeat genre:afrobeats genre:alt-country genre:alternative-rap
+genre:alternative-rock genre:amapiano genre:ambient genre:ambient-techno genre:americana genre:andean-folk
+genre:bachata genre:baroque genre:baul-songs genre:bebop genre:big-beat genre:black-metal
+genre:bluegrass genre:blues genre:blues-rock genre:boom-bap genre:bossa-nova genre:breakbeat
+genre:breakbeat-hardcore genre:breakcore genre:britpop genre:calypso genre:carnatic genre:chicago-house
+genre:chillwave genre:chopped-and-screwed genre:classical-period genre:conscious-hip-hop genre:contemporary-r-and-b genre:cool-jazz
+genre:country genre:crunk genre:cumbia genre:dancehall genre:darksynth genre:death-metal
+genre:deep-house genre:detroit-techno genre:disco genre:doo-wop genre:doom-metal genre:downtempo
+genre:dream-pop genre:drill genre:drum-and-bass genre:dub genre:dub-techno genre:dubstep
+genre:east-coast-rap genre:edm genre:electro genre:electro-house genre:electroclash genre:emo
+genre:folk genre:footwork genre:free-jazz genre:french-house genre:french-touch genre:funk
+genre:g-funk genre:gabber genre:gagaku genre:gamelan genre:gangsta-rap genre:garage-house
+genre:garage-rock genre:girl-groups genre:glam-rock genre:gothic-rock genre:gqom genre:grime
+genre:grunge genre:hard-bop genre:hard-rock genre:hardstyle genre:heavy-metal genre:hi-nrg
+genre:highlife genre:hindustani-classical genre:hip-hop genre:honky-tonk genre:horrorcore genre:house
+genre:hyphy genre:idm genre:impressionism genre:indie-rock genre:industrial-metal genre:italo-disco
+genre:j-pop genre:jazz genre:jazz-fusion genre:jazz-rap genre:juju genre:jungle
+genre:k-pop genre:khoomei genre:krautrock genre:kwaito genre:latin genre:latin-jazz
+genre:math-rock genre:medieval genre:merengue genre:metalcore genre:minimal-techno genre:minimalism
+genre:modal-jazz genre:modern-classical genre:neo-soul genre:new-jack-swing genre:new-wave genre:noise-rock
+genre:nu-metal genre:old-school-rap genre:pansori genre:peking-opera genre:pop genre:pop-punk
+genre:post-hardcore genre:post-punk genre:post-rock genre:progressive-rock genre:psychedelic-rock genre:psytrance
+genre:punk-rock genre:qawwali genre:r-and-b genre:reggae genre:reggaeton genre:renaissance
+genre:rock genre:rock-and-roll genre:rocksteady genre:romantic genre:russian-folk genre:salsa
+genre:samba genre:serialism genre:shoegaze genre:ska genre:son-cubano genre:soukous
+genre:soul genre:southern-rap genre:spiritual-jazz genre:stoner-rock genre:surf-rock genre:swing
+genre:synth-pop genre:synthwave genre:tango genre:tech-house genre:techno genre:thrash-metal
+genre:trance genre:trap-rap genre:trip-hop genre:uk-garage genre:vaporwave genre:vocal-jazz
+genre:west-coast-rap
 ```
 
 Always check `graph.json` for an existing artist, label, place, track, or scene
@@ -340,19 +341,21 @@ Example:
 
 ### Suggested expansion areas
 
-- **Pop & vocal**: Motown, girl groups, vocal jazz
-- **Country & folk**: Americana, alternative country, honky-tonk
-- **Caribbean**: calypso, mento, reggaeton
-- **Latin**: mambo, tropicália, merengue, tango
-- **African**: amapiano, gqom, kwaito, soukous
-- **Hip-hop branches**: Memphis rap, Miami bass, cloud rap, emo rap, Latin trap
-- **R&B**: new jack swing, contemporary R&B
-- **Metal branches**: nu metal, metalcore, industrial metal
-- **Rock gaps**: noise pop, psychobilly, post-metal
-- **Electronic gaps**: EDM, footwork, breakcore, UK funky, techno sub-styles
-- **Classical/jazz gaps**: Impressionism, serialism, Latin jazz, acid jazz, spiritual jazz
-- More **labels** (Motown, Blue Note, Warp, Def Jam), **places** (Kingston,
-  Lagos, Rio), **scenes** (Paradise Garage, Studio 54, CBGB), and **tracks** (anthems)
+The current graph has broad coverage, but these are high-value candidates for
+future research. Treat named traditions as distinct where their histories differ;
+do not force them into a single Western-style lineage.
+
+- **Pop, soul & vocal**: Gospel; Motown sound (as a genre/style), with Motown
+  Records represented separately as a label
+- **Caribbean**: mento, soca
+- **Latin**: mambo, bolero, tropicália, vallenato
+- **African**: mbalax, taarab, Gnawa, mbira traditions
+- **Hip-hop**: Memphis rap, UK drill, regional scenes not yet represented
+- **Rock & metal**: noise pop, psychobilly, post-metal
+- **Electronic**: UK funky, progressive house, additional techno sub-styles
+- **Asia & South Asia**: bhangra, ghazal, Indian film music, Chinese regional styles
+- **More labels**: Motown, Blue Note, Warp, Def Jam; **places**: Kingston, Lagos,
+  Rio; **scenes**: Studio 54, CBGB; and representative **tracks** (anthems)
 
 ---
 

@@ -151,11 +151,20 @@ describe('graph.json integrity', () => {
       classical: [
         'medieval', 'renaissance', 'baroque', 'classical-period', 'romantic',
         'modern-classical', 'minimalism', 'hindustani-classical', 'carnatic',
-        'qawwali', 'gamelan', 'gagaku', 'peking-opera', 'pansori',
+        'qawwali', 'gamelan', 'gagaku', 'peking-opera', 'pansori', 'impressionism',
+        'serialism',
       ],
-      'blues-soul': ['blues', 'soul', 'funk', 'r-and-b', 'doo-wop', 'neo-soul'],
-      jazz: ['jazz', 'swing', 'bebop', 'cool-jazz', 'hard-bop', 'modal-jazz', 'free-jazz', 'jazz-fusion'],
-      'country-folk': ['country', 'folk', 'bluegrass', 'russian-folk', 'baul-songs', 'khoomei'],
+      'blues-soul': ['blues', 'soul', 'funk', 'r-and-b', 'doo-wop', 'neo-soul',
+        'new-jack-swing', 'contemporary-r-and-b',
+      ],
+      jazz: [
+        'jazz', 'swing', 'bebop', 'cool-jazz', 'hard-bop', 'modal-jazz', 'free-jazz',
+        'jazz-fusion', 'acid-jazz', 'vocal-jazz', 'latin-jazz', 'spiritual-jazz',
+      ],
+      'country-folk': [
+        'country', 'folk', 'bluegrass', 'russian-folk', 'baul-songs', 'khoomei',
+        'americana', 'alt-country', 'honky-tonk',
+      ],
       rock: [
         'rock-and-roll', 'rock', 'blues-rock', 'psychedelic-rock', 'progressive-rock',
         'hard-rock', 'krautrock', 'garage-rock', 'glam-rock', 'stoner-rock', 'surf-rock',
@@ -165,27 +174,32 @@ describe('graph.json integrity', () => {
         'dream-pop', 'britpop', 'emo', 'post-hardcore', 'post-rock', 'math-rock',
         'noise-rock', 'gothic-rock', 'pop-punk', 'new-wave',
       ],
-      metal: ['heavy-metal', 'thrash-metal', 'death-metal', 'black-metal', 'doom-metal'],
-      pop: ['pop', 'synth-pop', 'k-pop', 'j-pop'],
+      metal: [
+        'heavy-metal', 'thrash-metal', 'death-metal', 'black-metal', 'doom-metal',
+        'nu-metal', 'metalcore', 'industrial-metal',
+      ],
+      pop: ['pop', 'synth-pop', 'k-pop', 'j-pop', 'girl-groups'],
       'hip-hop': [
         'hip-hop', 'grime', 'trap-rap', 'drill', 'old-school-rap', 'east-coast-rap',
         'west-coast-rap', 'gangsta-rap', 'boom-bap', 'jazz-rap', 'alternative-rap',
         'conscious-hip-hop', 'southern-rap', 'crunk', 'g-funk', 'hyphy',
         'chopped-and-screwed', 'horrorcore',
       ],
-      reggae: ['ska', 'rocksteady', 'reggae', 'dub', 'dancehall'],
+      reggae: ['ska', 'rocksteady', 'reggae', 'dub', 'dancehall', 'calypso'],
       latin: [
         'latin', 'son-cubano', 'salsa', 'bossa-nova', 'cumbia', 'samba',
-        'tango', 'andean-folk', 'bachata', 'merengue',
+        'tango', 'andean-folk', 'bachata', 'merengue', 'reggaeton',
       ],
-      african: ['highlife', 'afrobeat', 'afrobeats', 'juju', 'soukous'],
+      african: [
+        'highlife', 'afrobeat', 'afrobeats', 'juju', 'soukous', 'amapiano', 'gqom', 'kwaito',
+      ],
       electronica: [
         'electro', 'trip-hop', 'ambient', 'idm', 'synthwave', 'darksynth',
-        'vaporwave', 'chillwave', 'downtempo', 'electroclash',
+        'vaporwave', 'chillwave', 'downtempo', 'electroclash', 'edm',
       ],
       house: [
         'disco', 'italo-disco', 'hi-nrg', 'chicago-house', 'garage-house', 'deep-house',
-        'acid-house', 'french-touch', 'french-house', 'tech-house', 'house', 'electro-house',
+        'acid-house', 'french-touch', 'french-house', 'tech-house', 'house', 'electro-house', 'footwork',
       ],
       techno: [
         'detroit-techno', 'minimal-techno', 'dub-techno', 'trance', 'gabber',
@@ -193,7 +207,7 @@ describe('graph.json integrity', () => {
       ],
       'breakbeat-bass': [
         'breakbeat-hardcore', 'jungle', 'drum-and-bass', 'uk-garage', 'dubstep',
-        'big-beat', 'breakbeat',
+        'big-beat', 'breakbeat', 'breakcore',
       ],
     } satisfies Record<GenreFamily, string[]>
     const model = createTimelineModel(buildIndex(graph), 'genre')
