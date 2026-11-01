@@ -27,7 +27,8 @@ function SourceLinks({ sources }: { sources?: string[] }) {
     <ul className="mt-1 flex flex-wrap gap-x-3 gap-y-1">
       {sources.map((source) => {
         const url = new URL(source)
-        const title = decodeURIComponent(url.pathname.split('/').at(-1) ?? url.hostname)
+        const website = url.hostname.replace(/^www\./, '')
+        const title = decodeURIComponent(url.pathname.split('/').filter(Boolean).at(-1) ?? 'Website')
           .replaceAll('_', ' ')
         return (
           <li key={source}>
@@ -35,9 +36,10 @@ function SourceLinks({ sources }: { sources?: string[] }) {
               href={source}
               target="_blank"
               rel="noreferrer"
-              className="text-[11px] text-sky-400 underline decoration-sky-800 underline-offset-2 hover:text-sky-300"
+              className="text-[11px] text-sky-400 hover:text-sky-300"
             >
-              {title}
+              <span className="underline decoration-sky-800 underline-offset-2">{title}</span>
+              <span className="text-slate-400">{` (${website})`}</span>
             </a>
           </li>
         )
@@ -165,18 +167,13 @@ export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
                         {edge.note}
                       </p>
                     )}
-                    {edge.sources && (
-                      <div className="pl-3">
-                        <SourceLinks sources={edge.sources} />
-                      </div>
-                    )}
                   </li>
                 ))}
               </ul>
             </section>
           )
         })}
-        {node.sources && (
+        {!!node.sources?.length && (
           <section>
             <h3 className="mb-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">
               Sources
