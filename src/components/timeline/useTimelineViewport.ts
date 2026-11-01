@@ -2,6 +2,11 @@ import { useEffect, useRef, useState, type PointerEvent } from 'react'
 import { useExplorer } from '../../ExplorerContext.ts'
 import { panYearRange, revealEraRange, TIMELINE_PADDING, xToYear, zoomYearRange } from '../../graph/layout.ts'
 
+type TimelinePointerEvent = Pick<
+  PointerEvent<SVGSVGElement>,
+  'button' | 'clientX' | 'clientY' | 'currentTarget' | 'pointerId' | 'pointerType' | 'target'
+>
+
 export function useTimelineViewport() {
   const { viewRange, setViewRange, selectNode } = useExplorer()
   const containerRef = useRef<HTMLDivElement>(null)
@@ -58,10 +63,11 @@ export function useTimelineViewport() {
     return () => element.removeEventListener('wheel', onWheel)
   }, [setViewRange])
 
-  const onPointerDown = (event: PointerEvent<SVGSVGElement>) => {
+  const onPointerDown = (event: TimelinePointerEvent) => {
     if (event.pointerType === 'mouse' && event.button !== 0) return
     suppressClick.current = false
-    event.currentTarget.setPointerCapture(event.pointerId)
+    // Keep an ordinary click targeted at the bar until a gesture begins.
+    if (event.target instanceof Element) event.target.setPointerCapture(event.pointerId)
     if (event.pointerType === 'mouse') {
       drag.current = {
         pointerId: event.pointerId,
@@ -78,6 +84,9 @@ export function useTimelineViewport() {
 
     activePointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY })
     if (activePointers.current.size >= 2) {
+      for (const pointerId of activePointers.current.keys()) {
+        event.currentTarget.setPointerCapture(pointerId)
+      }
       const points = [...activePointers.current.values()]
       const [first, second] = points
       const distance = Math.hypot(second.x - first.x, second.y - first.y)
@@ -110,7 +119,7 @@ export function useTimelineViewport() {
     }
   }
 
-  const onPointerMove = (event: PointerEvent<SVGSVGElement>) => {
+  const onPointerMove = (event: TimelinePointerEvent) => {
     if (event.pointerType !== 'mouse' && activePointers.current.has(event.pointerId)) {
       activePointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY })
       if (pinch.current && activePointers.current.size >= 2) {
@@ -140,6 +149,7 @@ export function useTimelineViewport() {
     const dy = event.clientY - gesture.y
     if (!gesture.moved && Math.max(Math.abs(dx), Math.abs(dy)) > 8) {
       gesture.moved = true
+      event.currentTarget.setPointerCapture(event.pointerId)
       if (gesture.axis === null) {
         gesture.axis = Math.abs(dx) > Math.abs(dy) ? 'horizontal' : 'vertical'
       }
@@ -154,7 +164,7 @@ export function useTimelineViewport() {
     }
   }
 
-  const endDrag = (event: PointerEvent<SVGSVGElement>) => {
+  const endDrag = (event: TimelinePointerEvent) => {
     if (event.pointerType === 'mouse') {
       suppressClick.current = drag.current?.moved ?? false
       drag.current = null
@@ -189,7 +199,7 @@ export function useTimelineViewport() {
     }
   }
 
-  const cancelDrag = (event: PointerEvent<SVGSVGElement>) => {
+  const cancelDrag = (event: TimelinePointerEvent) => {
     activePointers.current.delete(event.pointerId)
     if (drag.current?.pointerId === event.pointerId) {
       suppressClick.current ||= drag.current.moved

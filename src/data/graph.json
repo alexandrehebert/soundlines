@@ -109,7 +109,7 @@
       "id": "genre:blues",
       "type": "genre",
       "name": "Blues",
-      "family": "roots",
+      "family": "blues-soul",
       "period": {
         "start": 1890,
         "precision": "circa"
@@ -365,7 +365,7 @@
       "id": "genre:heavy-metal",
       "type": "genre",
       "name": "Heavy metal",
-      "family": "rock",
+      "family": "metal",
       "period": {
         "start": 1968,
         "precision": "circa"
@@ -379,7 +379,7 @@
       "id": "genre:punk-rock",
       "type": "genre",
       "name": "Punk rock",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1974,
         "precision": "circa"
@@ -393,7 +393,7 @@
       "id": "genre:post-punk",
       "type": "genre",
       "name": "Post-punk",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1977,
         "precision": "circa"
@@ -407,7 +407,7 @@
       "id": "genre:alternative-rock",
       "type": "genre",
       "name": "Alternative rock",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1980,
         "precision": "circa"
@@ -442,7 +442,7 @@
       "id": "genre:grunge",
       "type": "genre",
       "name": "Grunge",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1985,
         "precision": "circa"
@@ -1524,7 +1524,7 @@
       "id": "genre:soul",
       "type": "genre",
       "name": "Soul",
-      "family": "roots",
+      "family": "blues-soul",
       "period": {
         "start": 1955
       },
@@ -1567,7 +1567,7 @@
       "id": "genre:funk",
       "type": "genre",
       "name": "Funk",
-      "family": "roots",
+      "family": "blues-soul",
       "period": {
         "start": 1965
       },
@@ -1605,7 +1605,7 @@
       "id": "genre:disco",
       "type": "genre",
       "name": "Disco",
-      "family": "roots",
+      "family": "house",
       "period": {
         "start": 1972
       },
@@ -1645,7 +1645,7 @@
       "id": "genre:hip-hop",
       "type": "genre",
       "name": "Hip-hop",
-      "family": "roots",
+      "family": "hip-hop",
       "period": {
         "start": 1973
       },
@@ -1684,7 +1684,7 @@
       "id": "genre:krautrock",
       "type": "genre",
       "name": "Krautrock",
-      "family": "electronic-pioneers",
+      "family": "rock",
       "period": {
         "start": 1968
       },
@@ -1734,7 +1734,7 @@
       "id": "genre:synth-pop",
       "type": "genre",
       "name": "Synth-pop",
-      "family": "electronic-pioneers",
+      "family": "pop",
       "period": {
         "start": 1977
       },
@@ -1749,7 +1749,7 @@
       "id": "genre:italo-disco",
       "type": "genre",
       "name": "Italo disco",
-      "family": "electronic-pioneers",
+      "family": "house",
       "period": {
         "start": 1977
       },
@@ -1791,7 +1791,7 @@
       "id": "genre:hi-nrg",
       "type": "genre",
       "name": "Hi-NRG",
-      "family": "electronic-pioneers",
+      "family": "house",
       "period": {
         "start": 1977
       },
@@ -1833,7 +1833,7 @@
       "id": "genre:electro",
       "type": "genre",
       "name": "Electro",
-      "family": "electronic-pioneers",
+      "family": "electronica",
       "period": {
         "start": 1982
       },
@@ -1984,7 +1984,7 @@
       "id": "genre:breakbeat-hardcore",
       "type": "genre",
       "name": "Breakbeat hardcore",
-      "family": "uk-continuum",
+      "family": "breakbeat-bass",
       "period": {
         "start": 1989
       },
@@ -2026,7 +2026,7 @@
       "id": "genre:jungle",
       "type": "genre",
       "name": "Jungle",
-      "family": "uk-continuum",
+      "family": "breakbeat-bass",
       "period": {
         "start": 1991
       },
@@ -2069,7 +2069,7 @@
       "id": "genre:drum-and-bass",
       "type": "genre",
       "name": "Drum and bass",
-      "family": "uk-continuum",
+      "family": "breakbeat-bass",
       "period": {
         "start": 1994
       },
@@ -2084,7 +2084,7 @@
       "id": "genre:uk-garage",
       "type": "genre",
       "name": "UK garage",
-      "family": "uk-continuum",
+      "family": "breakbeat-bass",
       "period": {
         "start": 1994
       },
@@ -2135,7 +2135,7 @@
       "id": "genre:dubstep",
       "type": "genre",
       "name": "Dubstep",
-      "family": "uk-continuum",
+      "family": "breakbeat-bass",
       "period": {
         "start": 2000,
         "precision": "circa"
@@ -3414,7 +3414,7 @@
       "type": "artist",
       "name": "The Human League",
       "kind": "group",
-      "family": "electronic-pioneers",
+      "family": "pop",
       "period": {
         "start": 1977
       },
@@ -5074,7 +5074,7 @@
       "id": "genre:french-touch",
       "type": "genre",
       "name": "French Touch",
-      "family": "electronic-pioneers",
+      "family": "house",
       "period": {
         "start": 1995,
         "end": 2005,
@@ -5144,7 +5144,7 @@
       "id": "genre:trip-hop",
       "type": "genre",
       "name": "Trip-hop",
-      "family": "electronic-pioneers",
+      "family": "electronica",
       "period": {
         "start": 1993,
         "end": 2001,
@@ -5176,7 +5176,7 @@
       "id": "genre:big-beat",
       "type": "genre",
       "name": "Big beat",
-      "family": "uk-continuum",
+      "family": "breakbeat-bass",
       "period": {
         "start": 1995,
         "end": 2006,
@@ -5211,7 +5211,7 @@
       "id": "genre:ambient",
       "type": "genre",
       "name": "Ambient",
-      "family": "electronic-pioneers",
+      "family": "electronica",
       "period": {
         "start": 1975,
         "end": 1995,
@@ -5243,7 +5243,7 @@
       "id": "genre:idm",
       "type": "genre",
       "name": "IDM / intelligent dance music",
-      "family": "electronic-pioneers",
+      "family": "electronica",
       "period": {
         "start": 1992,
         "end": 2000,
@@ -5259,7 +5259,7 @@
       "id": "genre:synthwave",
       "type": "genre",
       "name": "Synthwave",
-      "family": "electronic-pioneers",
+      "family": "electronica",
       "period": {
         "start": 2005,
         "end": null,
@@ -5296,7 +5296,7 @@
       "id": "genre:darksynth",
       "type": "genre",
       "name": "Darksynth",
-      "family": "electronic-pioneers",
+      "family": "electronica",
       "period": {
         "start": 2010,
         "end": 2020,
@@ -5312,7 +5312,7 @@
       "id": "genre:vaporwave",
       "type": "genre",
       "name": "Vaporwave",
-      "family": "electronic-pioneers",
+      "family": "electronica",
       "period": {
         "start": 2010,
         "end": null,
@@ -5347,7 +5347,7 @@
       "id": "genre:chillwave",
       "type": "genre",
       "name": "Chillwave",
-      "family": "electronic-pioneers",
+      "family": "electronica",
       "period": {
         "start": 2009,
         "end": 2015,
@@ -5378,7 +5378,7 @@
       "id": "genre:downtempo",
       "type": "genre",
       "name": "Downtempo",
-      "family": "electronic-pioneers",
+      "family": "electronica",
       "period": {
         "start": 1989,
         "end": 2005,
@@ -5394,7 +5394,7 @@
       "id": "genre:electroclash",
       "type": "genre",
       "name": "Electroclash",
-      "family": "electronic-pioneers",
+      "family": "electronica",
       "period": {
         "start": 1998,
         "end": 2006,
@@ -5425,7 +5425,7 @@
       "id": "genre:breakbeat",
       "type": "genre",
       "name": "Breakbeat",
-      "family": "uk-continuum",
+      "family": "breakbeat-bass",
       "period": {
         "start": 1988,
         "end": 1996,
@@ -5458,7 +5458,7 @@
       "id": "genre:indie-rock",
       "type": "genre",
       "name": "Indie rock",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1980,
         "end": 2000,
@@ -5507,7 +5507,7 @@
       "id": "genre:shoegaze",
       "type": "genre",
       "name": "Shoegaze",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1988,
         "end": null,
@@ -5543,7 +5543,7 @@
       "id": "genre:dream-pop",
       "type": "genre",
       "name": "Dream pop",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1984,
         "end": 1995,
@@ -5559,7 +5559,7 @@
       "id": "genre:britpop",
       "type": "genre",
       "name": "Britpop",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1993,
         "end": 2000,
@@ -5590,7 +5590,7 @@
       "id": "genre:emo",
       "type": "genre",
       "name": "Emo",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1985,
         "end": 2005,
@@ -5606,7 +5606,7 @@
       "id": "genre:post-hardcore",
       "type": "genre",
       "name": "Post-hardcore",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1985,
         "end": 2000,
@@ -5622,7 +5622,7 @@
       "id": "genre:post-rock",
       "type": "genre",
       "name": "Post-rock",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1991,
         "end": 2005,
@@ -5638,7 +5638,7 @@
       "id": "genre:math-rock",
       "type": "genre",
       "name": "Math rock",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1988,
         "end": 2000,
@@ -5654,7 +5654,7 @@
       "id": "genre:noise-rock",
       "type": "genre",
       "name": "Noise rock",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1980,
         "end": 2000,
@@ -5670,7 +5670,7 @@
       "id": "genre:gothic-rock",
       "type": "genre",
       "name": "Gothic rock",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1979,
         "end": 1990,
@@ -5686,7 +5686,7 @@
       "id": "genre:pop-punk",
       "type": "genre",
       "name": "Pop-punk",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1977,
         "end": 2005,
@@ -5938,7 +5938,7 @@
       "id": "genre:pop",
       "type": "genre",
       "name": "Pop",
-      "family": "roots",
+      "family": "pop",
       "period": {
         "start": 1950,
         "end": null,
@@ -5953,7 +5953,7 @@
       "id": "genre:country",
       "type": "genre",
       "name": "Country",
-      "family": "roots",
+      "family": "country-folk",
       "period": {
         "start": 1920,
         "end": null,
@@ -5968,7 +5968,7 @@
       "id": "genre:folk",
       "type": "genre",
       "name": "Folk revival",
-      "family": "roots",
+      "family": "country-folk",
       "period": {
         "start": 1930,
         "end": null,
@@ -5983,7 +5983,7 @@
       "id": "genre:bluegrass",
       "type": "genre",
       "name": "Bluegrass",
-      "family": "roots",
+      "family": "country-folk",
       "period": {
         "start": 1945,
         "end": null,
@@ -5998,7 +5998,7 @@
       "id": "genre:r-and-b",
       "type": "genre",
       "name": "Rhythm and blues",
-      "family": "roots",
+      "family": "blues-soul",
       "period": {
         "start": 1940,
         "end": null,
@@ -6013,7 +6013,7 @@
       "id": "genre:doo-wop",
       "type": "genre",
       "name": "Doo-wop",
-      "family": "roots",
+      "family": "blues-soul",
       "period": {
         "start": 1948,
         "end": 1965,
@@ -6028,7 +6028,7 @@
       "id": "genre:neo-soul",
       "type": "genre",
       "name": "Neo-soul",
-      "family": "roots",
+      "family": "blues-soul",
       "period": {
         "start": 1995,
         "end": null,
@@ -6043,7 +6043,7 @@
       "id": "genre:ska",
       "type": "genre",
       "name": "Ska",
-      "family": "roots",
+      "family": "reggae",
       "period": {
         "start": 1958,
         "end": 1970,
@@ -6058,7 +6058,7 @@
       "id": "genre:rocksteady",
       "type": "genre",
       "name": "Rocksteady",
-      "family": "roots",
+      "family": "reggae",
       "period": {
         "start": 1966,
         "end": 1968,
@@ -6073,7 +6073,7 @@
       "id": "genre:reggae",
       "type": "genre",
       "name": "Reggae",
-      "family": "roots",
+      "family": "reggae",
       "period": {
         "start": 1968,
         "end": null,
@@ -6088,7 +6088,7 @@
       "id": "genre:dub",
       "type": "genre",
       "name": "Dub",
-      "family": "roots",
+      "family": "reggae",
       "period": {
         "start": 1968,
         "end": null,
@@ -6103,7 +6103,7 @@
       "id": "genre:dancehall",
       "type": "genre",
       "name": "Dancehall",
-      "family": "roots",
+      "family": "reggae",
       "period": {
         "start": 1979,
         "end": null,
@@ -6118,7 +6118,7 @@
       "id": "genre:latin",
       "type": "genre",
       "name": "Latin music",
-      "family": "roots",
+      "family": "latin",
       "period": {
         "start": 1900,
         "end": null,
@@ -6133,7 +6133,7 @@
       "id": "genre:son-cubano",
       "type": "genre",
       "name": "Son cubano",
-      "family": "roots",
+      "family": "latin",
       "period": {
         "start": 1890,
         "end": null,
@@ -6148,7 +6148,7 @@
       "id": "genre:salsa",
       "type": "genre",
       "name": "Salsa",
-      "family": "roots",
+      "family": "latin",
       "period": {
         "start": 1960,
         "end": null,
@@ -6163,7 +6163,7 @@
       "id": "genre:bossa-nova",
       "type": "genre",
       "name": "Bossa nova",
-      "family": "roots",
+      "family": "latin",
       "period": {
         "start": 1958,
         "end": null,
@@ -6178,7 +6178,7 @@
       "id": "genre:cumbia",
       "type": "genre",
       "name": "Cumbia",
-      "family": "roots",
+      "family": "latin",
       "period": {
         "start": 1900,
         "end": null,
@@ -6193,7 +6193,7 @@
       "id": "genre:highlife",
       "type": "genre",
       "name": "Highlife",
-      "family": "roots",
+      "family": "african",
       "period": {
         "start": 1920,
         "end": null,
@@ -6208,7 +6208,7 @@
       "id": "genre:afrobeat",
       "type": "genre",
       "name": "Afrobeat",
-      "family": "roots",
+      "family": "african",
       "period": {
         "start": 1968,
         "precision": "decade"
@@ -6222,7 +6222,7 @@
       "id": "genre:afrobeats",
       "type": "genre",
       "name": "Afrobeats",
-      "family": "roots",
+      "family": "african",
       "period": {
         "start": 2000,
         "end": null,
@@ -6237,7 +6237,7 @@
       "id": "genre:k-pop",
       "type": "genre",
       "name": "K-pop",
-      "family": "roots",
+      "family": "pop",
       "period": {
         "start": 1990,
         "end": null,
@@ -6252,7 +6252,7 @@
       "id": "genre:j-pop",
       "type": "genre",
       "name": "J-pop",
-      "family": "roots",
+      "family": "pop",
       "period": {
         "start": 1970,
         "end": null,
@@ -6282,7 +6282,7 @@
       "id": "genre:new-wave",
       "type": "genre",
       "name": "New wave",
-      "family": "rock",
+      "family": "alternative-punk",
       "period": {
         "start": 1977,
         "end": 1989,
@@ -6297,7 +6297,7 @@
       "id": "genre:thrash-metal",
       "type": "genre",
       "name": "Thrash metal",
-      "family": "rock",
+      "family": "metal",
       "period": {
         "start": 1983,
         "end": null,
@@ -6312,7 +6312,7 @@
       "id": "genre:death-metal",
       "type": "genre",
       "name": "Death metal",
-      "family": "rock",
+      "family": "metal",
       "period": {
         "start": 1986,
         "end": null,
@@ -6327,7 +6327,7 @@
       "id": "genre:black-metal",
       "type": "genre",
       "name": "Black metal",
-      "family": "rock",
+      "family": "metal",
       "period": {
         "start": 1982,
         "end": null,
@@ -6342,7 +6342,7 @@
       "id": "genre:doom-metal",
       "type": "genre",
       "name": "Doom metal",
-      "family": "rock",
+      "family": "metal",
       "period": {
         "start": 1984,
         "end": null,
@@ -6357,7 +6357,7 @@
       "id": "genre:grime",
       "type": "genre",
       "name": "Grime",
-      "family": "uk-continuum",
+      "family": "hip-hop",
       "period": {
         "start": 2002,
         "end": null,
@@ -6372,7 +6372,7 @@
       "id": "genre:trap-rap",
       "type": "genre",
       "name": "Trap rap",
-      "family": "roots",
+      "family": "hip-hop",
       "period": {
         "start": 2003,
         "end": null,
@@ -6387,7 +6387,7 @@
       "id": "genre:drill",
       "type": "genre",
       "name": "Drill",
-      "family": "roots",
+      "family": "hip-hop",
       "period": {
         "start": 2010,
         "end": null,

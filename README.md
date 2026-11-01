@@ -8,9 +8,19 @@ Vite, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vitest, linted w
 
 The main view is a horizontal chronology with two modes: **Genres** (the default)
 and **Artists**. Each mode renders its own nodes as bars, grouped into family
-lanes (roots, classical traditions, jazz, rock, electronic pioneers, house, techno,
-UK continuum). Curved links and
-highlighting stay within the active mode.
+lanes: Classical; Blues, R&B & Soul; Jazz; Country & Folk; Rock; Alternative & Punk;
+Metal; Pop; Hip-hop; Reggae & Ska; Latin; African; Electronica & Ambient;
+Disco & House; Techno & Trance; and Breakbeat & Bass. The current 115 genres are
+spread across these 16 families, with 3–16 genres per family rather than catch-all
+"Roots" or "UK continuum" lanes. Curved links and highlighting stay within the active mode.
+
+Families are recognizable browsing groups, not claims that every member is a
+subgenre of the lane name or shares a single origin. For example, Disco & House
+groups related dance styles without calling disco a house subgenre; Grime sits
+with Hip-hop for browsing while retaining its garage-derived lineage links.
+Latin and African are broad regional umbrellas for the current catalogue, not
+single musical traditions. Actual ancestry and cross-influences remain in the
+graph relationships. Artist lanes and detail badges use the same families.
 
 - In Genres, the Order selector switches between the default family groups and
   **First appearance (oldest first)**: one row per genre across all families,

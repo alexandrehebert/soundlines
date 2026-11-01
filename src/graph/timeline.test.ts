@@ -7,15 +7,15 @@ import type { MusicGraph } from './types.ts'
 const graph: MusicGraph = {
   version: 1,
   nodes: [
-    { id: 'genre:root', type: 'genre', name: 'Root', family: 'roots', period: { start: 1950 } },
+    { id: 'genre:blues', type: 'genre', name: 'Blues', family: 'blues-soul', period: { start: 1950 } },
     { id: 'genre:house', type: 'genre', name: 'House', family: 'house', period: { start: 1980 } },
     { id: 'artist:a', type: 'artist', name: 'A', period: { start: 1960 } },
     { id: 'artist:b', type: 'artist', name: 'B', period: { start: 1980 } },
     { id: 'artist:group', type: 'artist', name: 'Group', kind: 'group', period: { start: 1985 } },
   ],
   edges: [
-    { id: 'g', type: 'influences', from: 'genre:root', to: 'genre:house' },
-    { id: 'a', type: 'key_artist_of', from: 'artist:a', to: 'genre:root' },
+    { id: 'g', type: 'influences', from: 'genre:blues', to: 'genre:house' },
+    { id: 'a', type: 'key_artist_of', from: 'artist:a', to: 'genre:blues' },
     { id: 'b', type: 'key_artist_of', from: 'artist:b', to: 'genre:house' },
     { id: 'group', type: 'key_artist_of', from: 'artist:group', to: 'genre:house' },
     { id: 'influence', type: 'influences', from: 'artist:a', to: 'artist:b' },
@@ -34,7 +34,7 @@ describe('timeline projections', () => {
     expect(model.index.graph.nodes.map((node) => node.type)).toEqual(['genre', 'genre'])
     expect(model.index.graph.edges.map((edge) => edge.id)).toEqual(['g'])
     const focus = lineage(model.index, 'genre:house', model.orientation)
-    expect([...focus.ancestors]).toEqual(['genre:root'])
+    expect([...focus.ancestors]).toEqual(['genre:blues'])
   })
 
   it('replaces genres with one bar per artist and only artist-to-artist links', () => {
@@ -60,7 +60,7 @@ describe('timeline projections', () => {
       ...graph,
       edges: [...graph.edges, { id: 'tie', type: 'key_artist_of', from: artist.id, to: 'genre:house' }],
     })
-    expect(artistFamily(withTie, artist)).toBe('roots')
+    expect(artistFamily(withTie, artist)).toBe('blues-soul')
     expect(artistFamily(withTie, { ...artist, family: 'techno' })).toBe('techno')
     expect(artist.family).toBeUndefined()
   })

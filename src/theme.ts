@@ -1,14 +1,22 @@
 import type { EdgeType, GenreFamily, NodeType, Period } from './graph/types.ts'
 
 export const FAMILY_COLORS: Record<GenreFamily, string> = {
-  roots: '#f59e0b',
   classical: '#fda4af',
+  'blues-soul': '#f59e0b',
   jazz: '#60a5fa',
+  'country-folk': '#d6b77a',
   rock: '#fb923c',
-  'electronic-pioneers': '#a78bfa',
+  'alternative-punk': '#e879f9',
+  metal: '#f87171',
+  pop: '#fb7185',
+  'hip-hop': '#c084fc',
+  reggae: '#4ade80',
+  latin: '#facc15',
+  african: '#2dd4bf',
+  electronica: '#a78bfa',
   house: '#f472b6',
   techno: '#22d3ee',
-  'uk-continuum': '#a3e635',
+  'breakbeat-bass': '#a3e635',
 }
 
 export const LINEAGE_EDGE_COLORS: Partial<Record<EdgeType, string>> = {

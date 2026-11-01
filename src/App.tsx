@@ -1,6 +1,6 @@
 import { Disc3, SlidersHorizontal, Users, X } from 'lucide-react'
 import { AnimatePresence, motion, MotionConfig } from 'motion/react'
-import { useEffect, useMemo, useRef, useState, type PointerEvent } from 'react'
+import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent, type PointerEvent } from 'react'
 import { useExplorer } from './ExplorerContext.ts'
 import { ExplorerProvider } from './ExplorerProvider.tsx'
 import { DetailPanel } from './components/DetailPanel.tsx'
@@ -210,25 +210,60 @@ function ViewToggle({
   changeView: (view: 'genre' | 'artist') => void
   className?: string
 }) {
+  const indicatorId = useId()
+  const options = ['genre', 'artist'] as const
+  const buttonRefs = useRef<Record<string, HTMLButtonElement | null>>({})
+
+  const handleKeyDown = (event: ReactKeyboardEvent<HTMLDivElement>) => {
+    if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'].includes(event.key)) return
+    event.preventDefault()
+    const current = options.indexOf(view)
+    const next =
+      event.key === 'Home' ? 0
+      : event.key === 'End' ? options.length - 1
+      : (current + (event.key === 'ArrowLeft' || event.key === 'ArrowUp' ? -1 : 1) + options.length) % options.length
+    changeView(options[next])
+    buttonRefs.current[options[next]]?.focus()
+  }
+
   return (
-    <div className={`flex items-center gap-1.5 ${className}`} role="group" aria-label="Timeline view">
-      {(['genre', 'artist'] as const).map((type) => (
-        <button
-          key={type}
-          type="button"
-          onClick={() => changeView(type)}
-          aria-pressed={view === type}
-          aria-label={`${type === 'artist' ? 'Artist' : 'Genre'} timeline`}
-          className={`flex min-h-11 items-center gap-1.5 rounded-full border px-3 text-sm font-semibold transition md:min-h-0 md:px-3 md:py-1.5 md:text-xs ${
-            view === type
-              ? 'border-cyan-500/50 bg-cyan-500/10 text-cyan-300'
-              : 'border-slate-700 bg-slate-900 text-slate-500'
-          }`}
-        >
-          {type === 'artist' ? <Users className="h-3.5 w-3.5" /> : <Disc3 className="h-3.5 w-3.5" />}
-          {type === 'artist' ? 'Artists' : 'Genres'}
-        </button>
-      ))}
+    <div
+      className={`relative flex items-center rounded-full border border-slate-700 bg-slate-900 p-1 ${className}`}
+      role="radiogroup"
+      aria-label="Timeline view"
+      onKeyDown={handleKeyDown}
+    >
+      {options.map((type) => {
+        const selected = view === type
+        return (
+          <button
+            key={type}
+            ref={(element) => {
+              buttonRefs.current[type] = element
+            }}
+            type="button"
+            role="radio"
+            aria-checked={selected}
+            tabIndex={selected ? 0 : -1}
+            onClick={() => changeView(type)}
+            className={`relative flex min-h-9 items-center gap-1.5 rounded-full px-3 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:min-h-0 md:px-3 md:py-1 md:text-xs ${
+              selected ? 'text-cyan-200' : 'text-slate-500 hover:text-slate-300'
+            }`}
+          >
+            {selected && (
+              <motion.span
+                layoutId={`view-toggle-indicator-${indicatorId}`}
+                className="absolute inset-0 rounded-full border border-cyan-500/50 bg-cyan-500/15 shadow-sm shadow-cyan-500/20"
+                transition={{ type: 'spring', stiffness: 500, damping: 38 }}
+              />
+            )}
+            <span className="relative flex items-center gap-1.5">
+              {type === 'artist' ? <Users className="h-3.5 w-3.5" /> : <Disc3 className="h-3.5 w-3.5" />}
+              {type === 'artist' ? 'Artists' : 'Genres'}
+            </span>
+          </button>
+        )
+      })}
     </div>
   )
 }

@@ -21,7 +21,7 @@ describe('shared bar geometry', () => {
     const graph: MusicGraph = {
       version: 1,
       nodes: [
-        { id: 'genre:late', type: 'genre', name: 'Late', family: 'roots',
+        { id: 'genre:late', type: 'genre', name: 'Late', family: 'blues-soul',
           period: { start: 2000, end: 2020 }, phases: [
             { start: 2000, prominence: 'golden-age' },
             { start: 2005, prominence: 'niche' },
@@ -46,7 +46,7 @@ describe('shared bar geometry', () => {
     it('keeps the existing family layout as the default', () => {
       const result = positionTimeline(lanes, scale)
       expect(result).toEqual(positionTimeline(lanes, scale, 'family'))
-      expect(result.bands.map((band) => band.family)).toEqual(['roots', 'classical', 'jazz', 'rock'])
+      expect(result.bands.map((band) => band.family)).toEqual(['classical', 'blues-soul', 'jazz', 'rock'])
     })
 
     it('orders across families by start year, then name and id for ties', () => {
@@ -204,14 +204,14 @@ describe('shared bar geometry', () => {
 
   it('positions artist phases with repeated gaps and no genre-specific assumptions', () => {
     const result = positionTimeline([{
-      family: 'roots', rowCount: 1,
+      family: 'blues-soul', rowCount: 1,
       bars: [{
         node: { ...bar.node, phases: [
           { start: 1960, prominence: 'golden-age' },
           { start: 1970, prominence: 'niche' },
           { start: 1980, prominence: 'established' },
         ] },
-        family: 'roots', row: 0, start: 1960, end: 1990, ongoing: true,
+        family: 'blues-soul', row: 0, start: 1960, end: 1990, ongoing: true,
       }],
     }], { start: 1960, end: 1990, width: 300 })
     expect(result.bars[0].visibleSpans).toEqual([[0, 100], [200, 300]])

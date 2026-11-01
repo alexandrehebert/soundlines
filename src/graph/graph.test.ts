@@ -14,7 +14,7 @@ import type { MusicGraph } from './types.ts'
 const graph: MusicGraph = {
   version: 1,
   nodes: [
-    { id: 'genre:disco', type: 'genre', name: 'Disco', family: 'roots', period: { start: 1972, end: 1982 } },
+    { id: 'genre:disco', type: 'genre', name: 'Disco', family: 'house', period: { start: 1972, end: 1982 } },
     { id: 'genre:house', type: 'genre', name: 'House', family: 'house', period: { start: 1984 } },
     { id: 'genre:acid', type: 'genre', name: 'Acid house', family: 'house', period: { start: 1986 } },
     { id: 'genre:techno', type: 'genre', name: 'Techno', family: 'techno', period: { start: 1985 } },

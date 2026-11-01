@@ -42,14 +42,22 @@ export interface Period {
 }
 
 export type GenreFamily =
-  | 'roots'
   | 'classical'
+  | 'blues-soul'
   | 'jazz'
+  | 'country-folk'
   | 'rock'
-  | 'electronic-pioneers'
+  | 'alternative-punk'
+  | 'metal'
+  | 'pop'
+  | 'hip-hop'
+  | 'reggae'
+  | 'latin'
+  | 'african'
+  | 'electronica'
   | 'house'
   | 'techno'
-  | 'uk-continuum'
+  | 'breakbeat-bass'
 
 export type ArtistKind = 'person' | 'group' | 'collective'
 
@@ -135,25 +143,41 @@ export const LINEAGE_EDGE_TYPES: readonly EdgeType[] = Object.keys(
 ) as EdgeType[]
 
 export const FAMILY_LABELS: Record<GenreFamily, string> = {
-  roots: 'Roots',
-  classical: 'Classical traditions',
+  classical: 'Classical',
+  'blues-soul': 'Blues, R&B & Soul',
   jazz: 'Jazz',
+  'country-folk': 'Country & Folk',
   rock: 'Rock',
-  'electronic-pioneers': 'Electronic pioneers',
-  house: 'House',
-  techno: 'Techno',
-  'uk-continuum': 'UK continuum',
+  'alternative-punk': 'Alternative & Punk',
+  metal: 'Metal',
+  pop: 'Pop',
+  'hip-hop': 'Hip-hop',
+  reggae: 'Reggae & Ska',
+  latin: 'Latin',
+  african: 'African',
+  electronica: 'Electronica & Ambient',
+  house: 'Disco & House',
+  techno: 'Techno & Trance',
+  'breakbeat-bass': 'Breakbeat & Bass',
 }
 
 export const FAMILY_ORDER: readonly GenreFamily[] = [
-  'roots',
   'classical',
+  'blues-soul',
   'jazz',
+  'country-folk',
   'rock',
-  'electronic-pioneers',
+  'alternative-punk',
+  'metal',
+  'pop',
+  'hip-hop',
+  'reggae',
+  'latin',
+  'african',
+  'electronica',
   'house',
   'techno',
-  'uk-continuum',
+  'breakbeat-bass',
 ]
 
 export const NODE_TYPE_LABELS: Record<NodeType, string> = {

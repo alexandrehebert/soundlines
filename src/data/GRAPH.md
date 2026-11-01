@@ -71,21 +71,42 @@ interface GraphNode {
 
 Every genre **must** have a `family`. Lanes are rendered in this order:
 
-| family                | Label                  | Current examples |
-|-----------------------|------------------------|------------------|
-| `roots`               | Roots                  | blues, country, reggae, salsa, highlife, hip-hop |
-| `classical`           | Classical traditions   | medieval → romantic, modern-classical, minimalism |
-| `jazz`                | Jazz                   | jazz, swing, bebop, cool/hard bop, modal, free, fusion |
-| `rock`                | Rock                   | rock and roll → grunge, punk, thrash and death metal |
-| `electronic-pioneers` | Electronic pioneers    | krautrock, synth-pop, italo-disco, hi-NRG, electro |
-| `house`               | House                  | chicago-house, garage-house, deep-house, acid-house |
-| `techno`              | Techno                 | detroit-techno, minimal, dub-techno, trance, gabber |
-| `uk-continuum`        | UK continuum           | breakbeat hardcore, jungle, drum and bass, UK garage, dubstep |
+| family              | Label                  | Genres | Current examples |
+|---------------------|------------------------|--------|------------------|
+| `classical`         | Classical              | 7      | medieval → romantic, modern-classical, minimalism |
+| `blues-soul`        | Blues, R&B & Soul       | 6      | blues, rhythm and blues, doo-wop, soul, funk, neo-soul |
+| `jazz`              | Jazz                   | 8      | jazz, swing, bebop, cool/hard bop, modal, free, fusion |
+| `country-folk`      | Country & Folk         | 3      | country, folk revival, bluegrass |
+| `rock`              | Rock                   | 11     | rock and roll, blues-rock, hard-rock, krautrock, surf-rock |
+| `alternative-punk`  | Alternative & Punk     | 16     | punk, post-punk, indie-rock, grunge, shoegaze, new-wave |
+| `metal`             | Metal                  | 5      | heavy, thrash, death, black, and doom metal |
+| `pop`               | Pop                    | 4      | pop, synth-pop, K-pop, J-pop |
+| `hip-hop`           | Hip-hop                | 4      | hip-hop, grime, trap rap, drill |
+| `reggae`            | Reggae & Ska           | 5      | ska, rocksteady, reggae, dub, dancehall |
+| `latin`             | Latin                  | 5      | Latin music, son cubano, salsa, bossa nova, cumbia |
+| `african`           | African                | 3      | highlife, Afrobeat, Afrobeats |
+| `electronica`       | Electronica & Ambient  | 10     | electro, trip-hop, ambient, IDM, synthwave, downtempo |
+| `house`             | Disco & House          | 12     | disco, Italo disco, hi-NRG, house styles, French Touch |
+| `techno`            | Techno & Trance        | 9      | techno styles, trance, psytrance, gabber, hardstyle |
+| `breakbeat-bass`    | Breakbeat & Bass       | 7      | breakbeat hardcore, jungle, drum and bass, garage, dubstep |
 
-**Adding a new family** (for example `pop`, `country`, `reggae`, `latin`,
-`african`, `asian`, `metal`, `ambient`, or `hip-hop`) requires a code change in
-`src/graph/types.ts` (`GenreFamily`, `FAMILY_LABELS`, `FAMILY_ORDER`). It is allowed,
-but **list every new family explicitly** in your response with a suggested label
+These are navigational families, not strict genre ancestry. The 115 genres
+currently have 3–16 members per family: enough granularity to avoid an oversized
+Electronic lane without creating one-genre lanes. Keep related styles together
+as the catalogue grows, and revisit the grouping if it becomes unbalanced rather
+than putting unrelated traditions into a catch-all.
+
+Disco is not a house subgenre, and French Touch remains broader than French
+house; the shared lane is a browsing choice. Grime is grouped with Hip-hop
+without changing its garage-derived relationships. Latin and African are
+regional umbrellas, not assertions of a single origin; Afrobeat and Afrobeats
+remain distinct nodes. Cross-family ancestry stays in the graph edges.
+
+**Adding a new family** (for example `gospel` when catalogue coverage warrants
+its own lane) requires updates in `src/graph/types.ts` (`GenreFamily`,
+`FAMILY_LABELS`, `FAMILY_ORDER`), `src/theme.ts` (`FAMILY_COLORS`), and the
+family-assignment tests in `src/data/graph.test.ts`. It is allowed, but
+**list every new family explicitly** in your response with a suggested label
 and position in the order, so the code can be updated.
 
 Artists usually **omit** `family`; their lane is inferred from the genres they
@@ -258,7 +279,7 @@ Example:
 
 ```json
 {
-  "id": "genre:soul", "type": "genre", "name": "Soul", "family": "roots",
+  "id": "genre:soul", "type": "genre", "name": "Soul", "family": "blues-soul",
   "period": { "start": 1955 },
   "phases": [
     { "start": 1955, "prominence": "emerging", "intensity": 0.3 },
@@ -334,7 +355,7 @@ patch** in this exact shape:
 ```json
 {
   "newFamilies": [
-    { "id": "caribbean", "label": "Caribbean", "insertAfter": "roots" }
+    { "id": "gospel", "label": "Gospel", "insertAfter": "blues-soul" }
   ],
   "addNodes": [ /* full GraphNode objects */ ],
   "addEdges": [ /* full GraphEdge objects */ ],

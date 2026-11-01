@@ -1,12 +1,14 @@
 import { describe, expect, it } from 'vitest'
 import rawGraph from './graph.json'
-import type { GraphNode, MusicGraph, NodeType } from '../graph/types.ts'
+import type { GenreFamily, GraphNode, MusicGraph, NodeType } from '../graph/types.ts'
 import { MAX_YEAR, MIN_YEAR } from '../graph/layout.ts'
 import { buildIndex, lineage, neighbors, searchNodes } from '../graph/graph.ts'
 import { artistFamily, createTimelineModel } from '../graph/timeline.ts'
+import { FAMILY_COLORS } from '../theme.ts'
 import {
   EDGE_TYPE_LABELS,
   FAMILY_LABELS,
+  FAMILY_ORDER,
   NODE_TYPE_LABELS,
   PROMINENCE_LABELS,
 } from '../graph/types.ts'
@@ -67,6 +69,18 @@ describe('graph.json integrity', () => {
     }
   })
 
+  it('gives every family a unique label, color, and position in the order', () => {
+    expect(new Set(FAMILY_ORDER).size).toBe(FAMILY_ORDER.length)
+    expect(Object.keys(FAMILY_LABELS).sort()).toEqual([...FAMILY_ORDER].sort())
+    expect(Object.keys(FAMILY_COLORS).sort()).toEqual([...FAMILY_ORDER].sort())
+    expect(new Set(Object.values(FAMILY_LABELS)).size).toBe(FAMILY_ORDER.length)
+    expect(new Set(Object.values(FAMILY_COLORS)).size).toBe(FAMILY_ORDER.length)
+    for (const family of FAMILY_ORDER) {
+      expect(FAMILY_LABELS[family].trim().length).toBeGreaterThan(0)
+      expect(FAMILY_COLORS[family]).toMatch(/^#[0-9a-f]{6}$/i)
+    }
+  })
+
   it('has sane periods (start <= end, plausible years)', () => {
     const withPeriod = graph.nodes.filter(
       (node): node is GraphNode & { period: { start: number; end?: number | null } } =>
@@ -99,7 +113,9 @@ describe('graph.json integrity', () => {
     const expected = {
       classical: ['medieval', 'renaissance', 'baroque', 'classical-period', 'romantic', 'modern-classical', 'minimalism'],
       jazz: ['jazz', 'swing', 'bebop', 'cool-jazz', 'hard-bop', 'modal-jazz', 'free-jazz', 'jazz-fusion'],
-      rock: ['rock-and-roll', 'rock', 'blues-rock', 'psychedelic-rock', 'progressive-rock', 'hard-rock', 'heavy-metal', 'punk-rock', 'post-punk', 'alternative-rock', 'grunge'],
+      rock: ['rock-and-roll', 'rock', 'blues-rock', 'psychedelic-rock', 'progressive-rock', 'hard-rock'],
+      'alternative-punk': ['punk-rock', 'post-punk', 'alternative-rock', 'grunge'],
+      metal: ['heavy-metal'],
     }
     for (const [family, slugs] of Object.entries(expected)) {
       for (const slug of slugs) {
@@ -130,26 +146,72 @@ describe('graph.json integrity', () => {
       .toBe('classical')
   })
 
-  it('includes the expanded genres in their expected timeline lanes', () => {
+  it('groups every genre into recognizable families with 3 to 16 genres per lane', () => {
     const expected = {
-      roots: [
-        'pop', 'country', 'folk', 'bluegrass', 'r-and-b', 'doo-wop', 'neo-soul',
-        'ska', 'rocksteady', 'reggae', 'dub', 'dancehall', 'latin', 'son-cubano',
-        'salsa', 'bossa-nova', 'cumbia', 'highlife', 'afrobeat', 'afrobeats',
-        'k-pop', 'j-pop', 'trap-rap', 'drill',
+      classical: ['medieval', 'renaissance', 'baroque', 'classical-period', 'romantic', 'modern-classical', 'minimalism'],
+      'blues-soul': ['blues', 'soul', 'funk', 'r-and-b', 'doo-wop', 'neo-soul'],
+      jazz: ['jazz', 'swing', 'bebop', 'cool-jazz', 'hard-bop', 'modal-jazz', 'free-jazz', 'jazz-fusion'],
+      'country-folk': ['country', 'folk', 'bluegrass'],
+      rock: [
+        'rock-and-roll', 'rock', 'blues-rock', 'psychedelic-rock', 'progressive-rock',
+        'hard-rock', 'krautrock', 'garage-rock', 'glam-rock', 'stoner-rock', 'surf-rock',
       ],
-      rock: ['surf-rock', 'new-wave', 'thrash-metal', 'death-metal', 'black-metal', 'doom-metal'],
-      house: ['electro-house'],
-      techno: ['hardstyle', 'psytrance'],
-      'uk-continuum': ['grime'],
-    }
+      'alternative-punk': [
+        'punk-rock', 'post-punk', 'alternative-rock', 'grunge', 'indie-rock', 'shoegaze',
+        'dream-pop', 'britpop', 'emo', 'post-hardcore', 'post-rock', 'math-rock',
+        'noise-rock', 'gothic-rock', 'pop-punk', 'new-wave',
+      ],
+      metal: ['heavy-metal', 'thrash-metal', 'death-metal', 'black-metal', 'doom-metal'],
+      pop: ['pop', 'synth-pop', 'k-pop', 'j-pop'],
+      'hip-hop': ['hip-hop', 'grime', 'trap-rap', 'drill'],
+      reggae: ['ska', 'rocksteady', 'reggae', 'dub', 'dancehall'],
+      latin: ['latin', 'son-cubano', 'salsa', 'bossa-nova', 'cumbia'],
+      african: ['highlife', 'afrobeat', 'afrobeats'],
+      electronica: [
+        'electro', 'trip-hop', 'ambient', 'idm', 'synthwave', 'darksynth',
+        'vaporwave', 'chillwave', 'downtempo', 'electroclash',
+      ],
+      house: [
+        'disco', 'italo-disco', 'hi-nrg', 'chicago-house', 'garage-house', 'deep-house',
+        'acid-house', 'french-touch', 'french-house', 'tech-house', 'house', 'electro-house',
+      ],
+      techno: [
+        'detroit-techno', 'minimal-techno', 'dub-techno', 'trance', 'gabber',
+        'techno', 'ambient-techno', 'hardstyle', 'psytrance',
+      ],
+      'breakbeat-bass': [
+        'breakbeat-hardcore', 'jungle', 'drum-and-bass', 'uk-garage', 'dubstep',
+        'big-beat', 'breakbeat',
+      ],
+    } satisfies Record<GenreFamily, string[]>
     const model = createTimelineModel(buildIndex(graph), 'genre')
+    expect(model.lanes.map((lane) => lane.family)).toEqual(FAMILY_ORDER)
+    expect(Object.values(expected).flat().map((slug) => `genre:${slug}`).sort())
+      .toEqual(graph.nodes.filter((node) => node.type === 'genre').map((node) => node.id).sort())
     for (const [family, slugs] of Object.entries(expected)) {
       const lane = model.lanes.find((candidate) => candidate.family === family)
       expect(lane, family).toBeDefined()
-      const ids = new Set(lane!.bars.map((bar) => bar.node.id))
-      for (const slug of slugs) expect(ids.has(`genre:${slug}`), slug).toBe(true)
+      expect(lane!.bars.map((bar) => bar.node.id).sort())
+        .toEqual(slugs.map((slug) => `genre:${slug}`).sort())
+      expect(lane!.bars.length, family).toBeGreaterThanOrEqual(3)
+      expect(lane!.bars.length, family).toBeLessThanOrEqual(16)
     }
+  })
+
+  it.each([
+    ['artist:johnny-cash', 'country-folk'],
+    ['artist:black-sabbath', 'metal'],
+    ['artist:chief-keef', 'hip-hop'],
+    ['artist:bob-marley', 'reggae'],
+    ['artist:fela-kuti', 'african'],
+    ['artist:brian-eno', 'electronica'],
+    ['artist:the-human-league', 'pop'],
+    ['artist:women-on-wax', 'techno'],
+  ] as const)('places %s in the %s artist lane', (id, family) => {
+    const model = createTimelineModel(buildIndex(graph), 'artist')
+    expect(model.index.nodeById.get(id)?.family).toBe(family)
+    expect(model.lanes.find((lane) => lane.family === family)?.bars.some((bar) => bar.node.id === id))
+      .toBe(true)
   })
 
   it('makes historical eras searchable and connects the expanded lineage to existing genres', () => {
@@ -180,9 +242,9 @@ describe('graph.json integrity', () => {
     ]))
 
     const artistIndex = createTimelineModel(index, 'artist').index
-    expect(artistIndex.nodeById.get('artist:bob-marley')?.family).toBe('roots')
+    expect(artistIndex.nodeById.get('artist:bob-marley')?.family).toBe('reggae')
     expect(artistIndex.nodeById.get('artist:the-human-league')?.family)
-      .toBe('electronic-pioneers')
+      .toBe('pop')
   })
 
   it('keeps every genre connected through the lineage graph', () => {
