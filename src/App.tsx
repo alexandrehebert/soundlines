@@ -8,6 +8,7 @@ import { Legend } from './components/Legend.tsx'
 import { SearchBar } from './components/SearchBar.tsx'
 import { Timeline } from './components/Timeline.tsx'
 import { GenreBubbles } from './components/GenreBubbles.tsx'
+import { MOBILE_DETAIL_COLLAPSED_OFFSET, MOBILE_DETAIL_HEIGHT } from './components/mobileDetailSheet.ts'
 import rawGraph from './data/graph.json'
 import type { MusicGraph } from './graph/types.ts'
 
@@ -174,12 +175,12 @@ function MobileDetailSheet({ onClose }: { onClose: () => void }) {
 
   return (
     <motion.div
-      className="fixed inset-x-0 bottom-0 z-30 h-[85dvh] overflow-hidden rounded-t-3xl border-t border-slate-700 bg-slate-950 shadow-2xl shadow-black/60 md:hidden"
+      className="fixed inset-x-0 bottom-0 z-30 overflow-hidden rounded-t-3xl border-t border-slate-700 bg-slate-950 shadow-2xl shadow-black/60 md:hidden"
       initial={{ y: '100%' }}
-      animate={{ y: expanded ? 0 : '65%' }}
+      animate={{ y: expanded ? 0 : `${MOBILE_DETAIL_COLLAPSED_OFFSET * 100}%` }}
       exit={{ y: '100%' }}
       transition={{ type: 'spring', stiffness: 320, damping: 34 }}
-      style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
+      style={{ height: `${MOBILE_DETAIL_HEIGHT * 100}dvh`, paddingBottom: 'env(safe-area-inset-bottom)' }}
     >
       <div className="flex h-8 items-center justify-center">
         <button

@@ -45,8 +45,9 @@ graph relationships. Artist lanes and detail badges use the same families.
   Mouse hover previews the same ancestor/descendant lineage as the bars:
   related bubbles stay bright, unrelated bubbles fade to 20%, and lineage links
   appear between bubbles. Leaving the bubble restores the selected lineage (or
-  the full map with no selection). Selection uses a bright fill and thin white
-  border, without scaling the bubble. Touch taps select without sticky hover.
+  the full map with no selection). Selection uses a bright fill, thin white
+  border, and an outer focus-style ring without scaling the bubble. Selecting
+  a bubble does not rearrange the map. Touch taps select without sticky hover.
   Search and related-genre navigation reveal the selected bubble. The layout is
   remembered when visiting Artists and shared with `?layout=bubbles`.
 - Off-screen genres have a labeled, family-colored ghost bar at the left or

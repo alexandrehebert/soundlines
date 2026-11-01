@@ -4,12 +4,19 @@ import { layoutGenreBubbles } from '../graph/bubbles.ts'
 import { lineageHighlight, lineageSource, lineageTarget } from '../graph/graph.ts'
 import { FAMILY_LABELS, FAMILY_ORDER } from '../graph/types.ts'
 import { FAMILY_COLORS } from '../theme.ts'
+import { bubbleScrollOffset } from './bubbleViewport.ts'
+
+const SELECTION_OUTLINE_WIDTH = 5
+const SELECTION_OUTLINE_OFFSET = 4
 
 export function GenreBubbles() {
   const { model, selectedId, selectNode } = useExplorer()
   const layout = useMemo(() => layoutGenreBubbles(model.index), [model])
   const bubbleById = useMemo(() => new Map(layout.bubbles.map((bubble) => [bubble.node.id, bubble])), [layout])
-  const [hoveredId, setHoveredId] = useState<string | null>(null)
+  // A hover only applies to the selection it started with.
+  const hoverScope = useMemo(() => ({ selectedId }), [selectedId])
+  const [hovered, setHovered] = useState<{ id: string; scope: typeof hoverScope } | null>(null)
+  const hoveredId = hovered?.scope === hoverScope ? hovered.id : null
   const focusId = hoveredId ?? selectedId
   const highlight = useMemo(
     () => lineageHighlight(model.index, focusId, model.orientation), [focusId, model],
@@ -36,8 +43,22 @@ export function GenreBubbles() {
     const element = surface.current
     if (!selectedId || !element) return
     const revealSelection = () => {
-      element.querySelector<HTMLButtonElement>('[aria-pressed="true"]')
-        ?.scrollIntoView({ block: 'nearest', inline: 'nearest' })
+      const selected = element.querySelector<HTMLButtonElement>('[aria-pressed="true"]')
+      if (!selected) return
+      const bounds = selected.getBoundingClientRect()
+      // The button's bounding box includes the map's zoom; outline widths do not.
+      const outset = (SELECTION_OUTLINE_WIDTH + SELECTION_OUTLINE_OFFSET) * bounds.width / selected.offsetWidth
+      const offset = bubbleScrollOffset(
+        element.getBoundingClientRect(),
+        {
+          left: bounds.left - outset, right: bounds.right + outset,
+          top: bounds.top - outset, bottom: bounds.bottom + outset,
+        },
+        window.innerHeight,
+        !window.matchMedia('(min-width: 48rem)').matches,
+      )
+      element.scrollLeft += offset.x
+      element.scrollTop += offset.y
     }
     revealSelection()
     const observer = new ResizeObserver(revealSelection)
@@ -48,7 +69,7 @@ export function GenreBubbles() {
   const startDrag = (event: PointerEvent<HTMLDivElement>) => {
     if (event.pointerType !== 'mouse' || event.button !== 0
       || (event.target instanceof Element && event.target.closest('button'))) return
-    setHoveredId(null)
+    setHovered(null)
     drag.current = {
       x: event.clientX, y: event.clientY,
       left: event.currentTarget.scrollLeft, top: event.currentTarget.scrollTop,
@@ -58,11 +79,10 @@ export function GenreBubbles() {
 
   return (
     <section className="flex h-full flex-col" aria-label="Genre bubbles">
-      <div className="shrink-0 border-b border-slate-800/60 px-4 py-4 md:px-8">
+      <div className="shrink-0 border-b border-slate-800/60 px-4 py-3 md:px-8 md:py-4">
         <h2 className="text-xl font-bold text-white">A world of influence</h2>
         <p className="mt-1 max-w-2xl text-sm text-slate-400">
-          Bigger, brighter bubbles have influenced more genres, directly and indirectly.
-          Connected genres gravitate together. Catalogue lineage, not popularity.
+          Size and brightness show catalogue influence, not popularity. Connected genres tend to be nearby.
         </p>
         <div className="mt-3 hidden flex-wrap gap-x-4 gap-y-2 md:flex" aria-label="Genre families">
           {FAMILY_ORDER.map((family) => (
@@ -72,7 +92,7 @@ export function GenreBubbles() {
             </span>
           ))}
         </div>
-        <div className="mt-3 flex items-center gap-3 text-xs text-slate-400">
+        <div className="mt-2 flex items-center gap-3 text-xs text-slate-400 md:mt-3">
           <div className="flex items-center gap-2" role="group" aria-label="Bubble zoom">
             <button type="button" aria-label="Zoom out bubbles" disabled={zoom <= 0.25}
               onClick={() => setZoom((value) => Math.max(0.25, value - 0.1))}
@@ -147,13 +167,19 @@ export function GenreBubbles() {
                     aria-pressed={selected}
                     title={description}
                     onPointerEnter={(event) => {
-                      setHoveredId(event.pointerType === 'mouse' ? node.id : null)
+                      if (event.pointerType !== 'mouse') setHovered(null)
+                    }}
+                    onPointerMove={(event) => {
+                      if (event.pointerType === 'mouse') {
+                        setHovered((current) => current?.id === node.id && current.scope === hoverScope
+                          ? current : { id: node.id, scope: hoverScope })
+                      }
                     }}
                     onPointerLeave={(event) => {
-                      if (event.pointerType === 'mouse') setHoveredId(null)
+                      if (event.pointerType === 'mouse') setHovered(null)
                     }}
                     onClick={() => {
-                      setHoveredId(null)
+                      setHovered(null)
                       selectNode(node.id)
                     }}
                     className="genre-bubble absolute flex select-none items-center justify-center rounded-full border p-3 text-center transition-opacity duration-150 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
@@ -164,6 +190,11 @@ export function GenreBubbles() {
                       height: diameter,
                       borderColor: selected ? '#f8fafc' : color,
                       borderWidth: selected ? 1.5 : 1,
+                      outlineStyle: selected ? 'auto' : undefined,
+                      outlineWidth: selected ? SELECTION_OUTLINE_WIDTH : undefined,
+                      // Keep the automatic outline if the browser does not support this system color.
+                      outlineColor: selected ? '-webkit-focus-ring-color' : undefined,
+                      outlineOffset: selected ? SELECTION_OUTLINE_OFFSET : undefined,
                       opacity: dimmed ? 0.2 : 1,
                       background: `radial-gradient(circle at 35% 25%, color-mix(in srgb, ${color} ${selected ? 55 + intensity * 40 : 30 + intensity * 65}%, #0f172a), color-mix(in srgb, ${color} ${selected ? 30 + intensity * 20 : 12 + intensity * 38}%, #020617))`,
                       boxShadow: `inset 0 1px 0 ${color}50`,

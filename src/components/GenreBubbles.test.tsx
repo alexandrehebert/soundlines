@@ -56,9 +56,32 @@ describe('bubble lineage rendering', () => {
     expect(bubbleMarkup(markup, 'B')).toContain('aria-pressed="true"')
     expect(bubbleMarkup(markup, 'B')).toContain('border-color:#f8fafc')
     expect(bubbleMarkup(markup, 'B')).toContain('border-width:1.5px')
+    expect(bubbleMarkup(markup, 'B')).toContain('outline-style:auto')
+    expect(bubbleMarkup(markup, 'B')).toContain('outline-width:5px')
+    expect(bubbleMarkup(markup, 'B')).toContain('outline-color:-webkit-focus-ring-color')
+    expect(bubbleMarkup(markup, 'B')).toContain('outline-offset:4px')
+    expect(bubbleMarkup(markup, 'A')).not.toContain('outline-style:auto')
     expect(markup).toContain('data-bubble-link="ab"')
     expect(markup).toContain('data-bubble-link="bc"')
     expect(markup).not.toContain('data-bubble-link="ad"')
     expect(markup).not.toMatch(/(?:NaN|Infinity)/)
+  })
+
+  it('keeps every bubble in place when selecting or clearing a genre', () => {
+    const overview = renderBubbles(null)
+    const focused = renderBubbles('genre:B')
+    const anotherSelection = renderBubbles('genre:A')
+    const cleared = renderBubbles(null)
+    const position = (markup: string, name: string) => {
+      const match = bubbleMarkup(markup, name)?.match(/left:([^;]+);top:([^;]+);/)
+      if (!match) throw new Error(`Missing position for ${name}`)
+      return match.slice(1)
+    }
+
+    for (const name of ['A', 'B', 'C', 'D']) {
+      expect(position(focused, name)).toEqual(position(overview, name))
+      expect(position(anotherSelection, name)).toEqual(position(overview, name))
+      expect(position(cleared, name)).toEqual(position(overview, name))
+    }
   })
 })
