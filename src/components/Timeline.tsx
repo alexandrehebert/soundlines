@@ -16,6 +16,8 @@ export function Timeline() {
   const scale = useMemo<TimeScale>(() => ({
     start: viewRange[0], end: viewRange[1], width, padding: TIMELINE_PADDING,
   }), [viewRange, width])
+  const tickSpacing = width < 360 ? 100 : width < 480 ? 96 : width < 768 ? 72 : 56
+  const compressionLabelMinWidth = width < 480 ? 128 : 90
   const { bars, bands, height } = useMemo(
     () => positionTimeline(model.lanes, scale, order), [model, scale, order],
   )
@@ -59,7 +61,7 @@ export function Timeline() {
               <g key={segment.from} pointerEvents="none">
                 <rect x={x1} y={0} width={x2 - x1} height={height} fill="#94a3b8" opacity={0.025 + (1 - segment.weight) * 0.03} />
                 <line x1={x2} y1={0} x2={x2} y2={height} stroke="#475569" strokeDasharray="2 4" />
-                {x2 - x1 > 90 && (
+                {x2 - x1 > compressionLabelMinWidth && (
                   <text x={x2 - 6} y={34} textAnchor="end" fill="#64748b" fontSize={9} fontStyle="italic">
                     time ×{Math.round(1 / segment.weight)} compressed
                   </text>
@@ -67,12 +69,12 @@ export function Timeline() {
               </g>
             )
           })}
-          {timeTicks(scale).map((year) => {
+          {timeTicks(scale, tickSpacing).map((year) => {
             const x = yearToX(scale, year)
             return (
               <g key={year}>
                 <line x1={x} y1={AXIS_H - 8} x2={x} y2={height} stroke="#1e293b" strokeWidth={1} />
-                <text x={x + 5} y={20} fill="#64748b" fontSize={11} fontWeight={600}>{year}</text>
+                <text x={x + 5} y={20} fill="#64748b" fontSize={width < 480 ? 10 : 11} fontWeight={600}>{year}</text>
               </g>
             )
           })}

@@ -1,5 +1,5 @@
 import { Disc3, SlidersHorizontal, Users, X } from 'lucide-react'
-import { AnimatePresence, motion } from 'motion/react'
+import { AnimatePresence, motion, MotionConfig } from 'motion/react'
 import { useEffect, useMemo, useRef, useState, type PointerEvent } from 'react'
 import { useExplorer } from './ExplorerContext.ts'
 import { ExplorerProvider } from './ExplorerProvider.tsx'
@@ -259,7 +259,13 @@ function GenreOrderSelect({
 }
 
 function App() {
-  return <ExplorerProvider graph={graph}><Explorer /></ExplorerProvider>
+  return (
+    <ExplorerProvider graph={graph}>
+      <MotionConfig reducedMotion="user">
+        <Explorer />
+      </MotionConfig>
+    </ExplorerProvider>
+  )
 }
 
 export default App

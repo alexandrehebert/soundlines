@@ -70,6 +70,12 @@ describe('time scale', () => {
     expect(timeTicks({ start: 1973, end: 2004, width: 1000 })).toEqual([1980, 1990, 2000])
   })
 
+  it('thins year labels for the narrowest phone widths', () => {
+    const narrow = { start: 1948, end: 2028, width: 320, padding: TIMELINE_PADDING }
+    expect(timeTicks(narrow, 100)).toEqual([1950, 2000])
+    expect(timeTicks(narrow, 100).length).toBeLessThan(timeTicks(narrow).length)
+  })
+
   it('thins ticks in compressed eras', () => {
     const ticks = timeTicks({ start: MIN_YEAR, end: MAX_YEAR, width: 1200 })
     const medieval = ticks.filter((year) => year < 1400)
