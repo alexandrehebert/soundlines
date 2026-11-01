@@ -3,11 +3,18 @@ import { TIMELINE_BAR_HEIGHT, visibleSpans } from '../../graph/phases.ts'
 import { FAMILY_LABELS, type GraphNode } from '../../graph/types.ts'
 import { FAMILY_COLORS } from '../../theme.ts'
 
-export const AXIS_H = 34
+export const AXIS_H = 40
 export const BAR_H = TIMELINE_BAR_HEIGHT
 const LANE_HEADER = 24
 const ROW_H = 36
 const LANE_GAP = 14
+
+export function revealBarScrollTop(yCenter: number, scrollTop: number, viewportHeight: number): number {
+  // Keep the hit area and focus outline clear of the sticky axis.
+  const top = yCenter - ROW_H / 2
+  if (top >= scrollTop + AXIS_H && top + ROW_H <= scrollTop + viewportHeight) return scrollTop
+  return Math.max(0, top - Math.max(AXIS_H, viewportHeight / 3))
+}
 
 export interface BarPosition {
   node: GraphNode

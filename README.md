@@ -69,7 +69,10 @@ graph relationships. Artist lanes and detail badges use the same families.
 - With a mouse, drag to move both axes; vertical scroll moves the timeline, horizontal scroll pans time, and Cmd/Ctrl+scroll zooms.
 - On touch screens, one-finger horizontal drags pan time, vertical swipes scroll the timeline, and two-finger pinches zoom. Tap a bar to open its draggable detail sheet.
 - Mobile search opens as a full-screen overlay; selected artists and genres bring their bars into view.
-- The year axis reduces label density on narrow screens; reduced-motion preferences shorten interface transitions.
+- The year axis and compressed-era annotations stay visible while scrolling
+  through either timeline, follow horizontal panning and zoom, and reduce
+  label density on narrow screens.
+  Reduced-motion preferences shorten interface transitions.
 - Horizontal trackpad momentum is handled by the timeline without native
   horizontal overscroll; rapid wheel updates accumulate rather than overwrite one another.
 - Both timeline modes pad the time range by 24px on each side within a full-width

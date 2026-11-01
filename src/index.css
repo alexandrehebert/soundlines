@@ -35,6 +35,11 @@ body {
   cursor: grabbing;
 }
 
+.timeline-axis {
+  background: #020617;
+  box-shadow: 0 1px 0 rgb(30 41 59 / 0.9);
+}
+
 [data-timeline-bar] [data-bar-selection-outline] {
   visibility: hidden;
 }

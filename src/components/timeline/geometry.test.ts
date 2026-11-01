@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { layoutFamilies } from '../../graph/layout.ts'
 import type { MusicGraph } from '../../graph/types.ts'
-import { BAR_H, barLabel, barShape, offscreenIndicators, positionTimeline, snapToSpans, tailFadeOffset, type BarPosition } from './geometry.ts'
+import { AXIS_H, BAR_H, barLabel, barShape, offscreenIndicators, positionTimeline, revealBarScrollTop, snapToSpans, tailFadeOffset, type BarPosition } from './geometry.ts'
 
 const bar: BarPosition = {
   node: { id: 'artist:a', type: 'artist', name: 'A', period: { start: 1960 } },
@@ -11,6 +11,21 @@ const bar: BarPosition = {
 }
 
 describe('shared bar geometry', () => {
+  describe('revealing a selected bar', () => {
+    it('does not move the timeline when the whole row is visible below the axis', () => {
+      expect(revealBarScrollTop(108, 50, 300)).toBe(50)
+    })
+
+    it('reveals rows hidden behind the axis or below the viewport', () => {
+      expect(revealBarScrollTop(83, 50, 300)).toBe(0)
+      expect(revealBarScrollTop(418, 50, 300)).toBe(300)
+    })
+
+    it('keeps the bar and its focus outline below the axis in short viewports', () => {
+      expect(revealBarScrollTop(83, 40, 90)).toBe(65 - AXIS_H)
+    })
+  })
+
   it('snaps relation endpoints out of hidden gaps and inside short revival spans', () => {
     expect(snapToSpans(110, bar.visibleSpans, 10)).toBe(70)
     expect(snapToSpans(140, bar.visibleSpans, 10)).toBe(160)

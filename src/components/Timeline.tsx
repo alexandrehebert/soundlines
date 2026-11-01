@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useExplorer } from '../ExplorerContext.ts'
 import { lineageHighlight } from '../graph/graph.ts'
 import { ERA_SEGMENTS, MAX_YEAR, TIMELINE_PADDING, timeTicks, yearToX, type TimeScale } from '../graph/layout.ts'
-import { AXIS_H, BAR_H, offscreenIndicators, positionTimeline } from './timeline/geometry.ts'
+import { AXIS_H, offscreenIndicators, positionTimeline, revealBarScrollTop } from './timeline/geometry.ts'
 import { TimelineBar } from './timeline/TimelineBar.tsx'
 import { TimelineLinks } from './timeline/TimelineLinks.tsx'
 import { useTimelineViewport } from './timeline/useTimelineViewport.ts'
@@ -36,6 +36,15 @@ export function Timeline() {
   const highlight = useMemo(
     () => lineageHighlight(model.index, focusId, model.orientation), [focusId, model],
   )
+  const ticks = timeTicks(scale, tickSpacing).map((year) => ({ year, x: yearToX(scale, year) }))
+  const compressedSegments = ERA_SEGMENTS.flatMap((segment, i) => {
+    if (segment.weight >= 1) return []
+    const segmentEnd = ERA_SEGMENTS[i + 1]?.from ?? MAX_YEAR
+    if (segmentEnd <= scale.start || segment.from >= scale.end) return []
+    const x1 = segment.from <= scale.start ? 0 : Math.max(0, yearToX(scale, segment.from))
+    const x2 = segmentEnd >= scale.end ? width : Math.min(width, yearToX(scale, segmentEnd))
+    return [{ ...segment, x1, x2 }]
+  })
 
   useEffect(() => {
     if (!width || lastRevealedId.current === selectedId) return
@@ -43,63 +52,71 @@ export function Timeline() {
     const element = containerRef.current
     const bar = selectedId ? barById.get(selectedId) : undefined
     if (!element || !bar) return
-    const top = bar.yCenter - BAR_H / 2
-    if (top < element.scrollTop || top + BAR_H > element.scrollTop + element.clientHeight) {
-      element.scrollTop = Math.max(0, top - element.clientHeight / 3)
-    }
+    element.scrollTop = revealBarScrollTop(bar.yCenter, element.scrollTop, element.clientHeight)
   }, [selectedId, barById, containerRef, width])
 
   return (
     <div ref={containerRef} className="timeline-surface h-full w-full overflow-y-auto"
       role="region" aria-label={`${view === 'artist' ? 'Artist' : 'Genre'} timeline`}
-      data-timeline-view={view} data-timeline-order={order}>
+      data-timeline-view={view} data-timeline-order={order} style={{ scrollPaddingTop: AXIS_H }}>
       {width > 0 && (
-        <svg width={width} height={height} {...handlers}>
-          {ERA_SEGMENTS.map((segment, i) => {
-            if (segment.weight >= 1) return null
-            const segmentEnd = ERA_SEGMENTS[i + 1]?.from ?? MAX_YEAR
-            if (segmentEnd <= scale.start || segment.from >= scale.end) return null
-            const x1 = segment.from <= scale.start ? 0 : Math.max(0, yearToX(scale, segment.from))
-            const x2 = segmentEnd >= scale.end ? width : Math.min(width, yearToX(scale, segmentEnd))
-            return (
+        <>
+          <div className="timeline-axis sticky top-0 z-10" data-timeline-axis="" style={{ marginBottom: -AXIS_H }}>
+            <svg className="block" width={width} height={AXIS_H} {...handlers}>
+              <rect width={width} height={AXIS_H} fill="transparent" />
+              {compressedSegments.map((segment) => (
+                <g key={segment.from} pointerEvents="none">
+                  <rect x={segment.x1} y={0} width={segment.x2 - segment.x1} height={AXIS_H}
+                    fill="#94a3b8" opacity={0.025 + (1 - segment.weight) * 0.03} />
+                  <line x1={segment.x2} y1={0} x2={segment.x2} y2={AXIS_H}
+                    stroke="#475569" strokeDasharray="2 4" />
+                </g>
+              ))}
+              {ticks.map(({ year, x }) => (
+                <g key={year} data-year-tick={year}>
+                  <line x1={x} y1={AXIS_H - 8} x2={x} y2={AXIS_H} stroke="#1e293b" strokeWidth={1} />
+                  <text x={x + 5} y={18} fill="#94a3b8" fontSize={width < 480 ? 10 : 11} fontWeight={600}>{year}</text>
+                </g>
+              ))}
+              {compressedSegments.map((segment) => segment.x2 - segment.x1 > compressionLabelMinWidth && (
+                <text key={segment.from} x={segment.x2 - 6} y={34} textAnchor="end" fill="#64748b"
+                  fontSize={9} fontStyle="italic" pointerEvents="none">
+                  time ×{Math.round(1 / segment.weight)} compressed
+                </text>
+              ))}
+            </svg>
+          </div>
+          <svg width={width} height={height} data-timeline-plot="" {...handlers}>
+            {compressedSegments.map((segment) => (
               <g key={segment.from} pointerEvents="none">
-                <rect x={x1} y={0} width={x2 - x1} height={height} fill="#94a3b8" opacity={0.025 + (1 - segment.weight) * 0.03} />
-                <line x1={x2} y1={0} x2={x2} y2={height} stroke="#475569" strokeDasharray="2 4" />
-                {x2 - x1 > compressionLabelMinWidth && (
-                  <text x={x2 - 6} y={34} textAnchor="end" fill="#64748b" fontSize={9} fontStyle="italic">
-                    time ×{Math.round(1 / segment.weight)} compressed
-                  </text>
-                )}
+                <rect x={segment.x1} y={0} width={segment.x2 - segment.x1} height={height}
+                  fill="#94a3b8" opacity={0.025 + (1 - segment.weight) * 0.03} />
+                <line x1={segment.x2} y1={0} x2={segment.x2} y2={height} stroke="#475569" strokeDasharray="2 4" />
               </g>
-            )
-          })}
-          {timeTicks(scale, tickSpacing).map((year) => {
-            const x = yearToX(scale, year)
-            return (
-              <g key={year}>
-                <line x1={x} y1={AXIS_H - 8} x2={x} y2={height} stroke="#1e293b" strokeWidth={1} />
-                <text x={x + 5} y={20} fill="#64748b" fontSize={width < 480 ? 10 : 11} fontWeight={600}>{year}</text>
+            ))}
+            {ticks.map(({ year, x }) => (
+              <line key={year} data-year-grid={year} x1={x} y1={AXIS_H - 8}
+                x2={x} y2={height} stroke="#1e293b" strokeWidth={1} />
+            ))}
+            {bands.map((band) => (
+              <g key={band.family}>
+                <rect x={0} y={band.top} width={width} height={band.height} fill={band.color} opacity={0.04} />
+                <text x={TIMELINE_PADDING + 10} y={band.top + 16} fill={band.color} fontSize={11}
+                  fontWeight={700} letterSpacing="0.12em" opacity={0.8}>
+                  {band.label.toUpperCase()}
+                </text>
               </g>
-            )
-          })}
-          {bands.map((band) => (
-            <g key={band.family}>
-              <rect x={0} y={band.top} width={width} height={band.height} fill={band.color} opacity={0.04} />
-              <text x={TIMELINE_PADDING + 10} y={band.top + 16} fill={band.color} fontSize={11}
-                fontWeight={700} letterSpacing="0.12em" opacity={0.8}>
-                {band.label.toUpperCase()}
-              </text>
-            </g>
-          ))}
-          <TimelineLinks barById={barById} scale={scale} highlightedEdges={highlight?.edges ?? null} />
-          {bars.map((bar) => (
-            <TimelineBar key={bar.node.id} bar={bar} scale={scale}
-              rowBars={barsByRow.get(bar.yCenter)}
-              indicator={indicators.get(bar.node.id)}
-              dimmed={highlight !== null && !highlight.nodes.has(bar.node.id)}
-              onHover={setHoveredId} onSelect={select} />
-          ))}
-        </svg>
+            ))}
+            <TimelineLinks barById={barById} scale={scale} highlightedEdges={highlight?.edges ?? null} />
+            {bars.map((bar) => (
+              <TimelineBar key={bar.node.id} bar={bar} scale={scale}
+                rowBars={barsByRow.get(bar.yCenter)}
+                indicator={indicators.get(bar.node.id)}
+                dimmed={highlight !== null && !highlight.nodes.has(bar.node.id)}
+                onHover={setHoveredId} onSelect={select} />
+            ))}
+          </svg>
+        </>
       )}
     </div>
   )
