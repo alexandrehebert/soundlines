@@ -26,8 +26,8 @@ rejected.**
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size (approx.): 259 nodes (50 genres, 181 artists, 5 labels, 6 places,
-13 tracks, 4 scenes) and ~360 edges.
+Current size: 474 nodes (115 genres, 328 artists, 7 labels, 6 places,
+14 tracks, 4 scenes) and 651 edges.
 
 ---
 
@@ -73,10 +73,10 @@ Every genre **must** have a `family`. Lanes are rendered in this order:
 
 | family                | Label                  | Current examples |
 |-----------------------|------------------------|------------------|
-| `roots`               | Roots                  | blues, soul, funk, disco, hip-hop |
+| `roots`               | Roots                  | blues, country, reggae, salsa, highlife, hip-hop |
 | `classical`           | Classical traditions   | medieval → romantic, modern-classical, minimalism |
 | `jazz`                | Jazz                   | jazz, swing, bebop, cool/hard bop, modal, free, fusion |
-| `rock`                | Rock                   | rock and roll → grunge, metal, punk, post-punk |
+| `rock`                | Rock                   | rock and roll → grunge, punk, thrash and death metal |
 | `electronic-pioneers` | Electronic pioneers    | krautrock, synth-pop, italo-disco, hi-NRG, electro |
 | `house`               | House                  | chicago-house, garage-house, deep-house, acid-house |
 | `techno`              | Techno                 | detroit-techno, minimal, dub-techno, trance, gabber |
@@ -109,6 +109,17 @@ genre:krautrock genre:synth-pop genre:italo-disco genre:hi-nrg genre:electro
 genre:chicago-house genre:garage-house genre:deep-house genre:acid-house
 genre:detroit-techno genre:minimal-techno genre:dub-techno genre:trance genre:gabber
 genre:breakbeat-hardcore genre:jungle genre:drum-and-bass genre:uk-garage genre:dubstep
+genre:techno genre:french-touch genre:french-house genre:trip-hop genre:big-beat genre:ambient
+genre:ambient-techno genre:idm genre:synthwave genre:darksynth genre:vaporwave genre:chillwave
+genre:downtempo genre:electroclash genre:breakbeat genre:tech-house genre:indie-rock
+genre:garage-rock genre:glam-rock genre:shoegaze genre:dream-pop genre:britpop genre:emo
+genre:post-hardcore genre:post-rock genre:math-rock genre:noise-rock genre:gothic-rock
+genre:pop-punk genre:stoner-rock genre:house genre:pop genre:country genre:folk genre:bluegrass
+genre:r-and-b genre:doo-wop genre:neo-soul genre:ska genre:rocksteady genre:reggae genre:dub
+genre:dancehall genre:latin genre:son-cubano genre:salsa genre:bossa-nova genre:cumbia
+genre:highlife genre:afrobeat genre:afrobeats genre:k-pop genre:j-pop genre:surf-rock genre:new-wave
+genre:thrash-metal genre:death-metal genre:black-metal genre:doom-metal genre:grime genre:trap-rap
+genre:drill genre:electro-house genre:hardstyle genre:psytrance
 ```
 
 Always check `graph.json` for an existing artist, label, place, track, or scene
@@ -299,17 +310,16 @@ Example:
 
 ### Suggested expansion areas
 
-- **Pop & vocal**: pop, doo-wop, Motown, girl groups, Britpop, K-pop, J-pop
-- **Country & folk**: country, bluegrass, folk revival, Americana
-- **Caribbean**: ska, rocksteady, reggae, dub, dancehall, reggaeton
-- **Latin**: son cubano, mambo, salsa, bossa nova, tropicália, cumbia
-- **African**: highlife, Afrobeat, Afrobeats, amapiano, gqom, kwaito
-- **Hip-hop branches**: boom bap, gangsta rap, trap, drill, grime
-- **R&B**: R&B, new jack swing, contemporary R&B, neo-soul
-- **Metal branches**: thrash, death, black, doom, nu metal
-- **Rock gaps**: indie rock, shoegaze, emo, new wave, garage rock, surf
-- **Electronic gaps**: ambient, IDM, trip hop, Big Beat, French house,
-  electro house, EDM, hardstyle, footwork, techno sub-styles, vaporwave
+- **Pop & vocal**: Motown, girl groups, vocal jazz
+- **Country & folk**: Americana, alternative country, honky-tonk
+- **Caribbean**: calypso, mento, reggaeton
+- **Latin**: mambo, tropicália, merengue, tango
+- **African**: amapiano, gqom, kwaito, soukous
+- **Hip-hop branches**: boom bap, gangsta rap, Southern hip-hop, hyphy
+- **R&B**: new jack swing, contemporary R&B
+- **Metal branches**: nu metal, metalcore, industrial metal
+- **Rock gaps**: noise pop, psychobilly, post-metal
+- **Electronic gaps**: EDM, footwork, breakcore, UK funky, techno sub-styles
 - **Classical/jazz gaps**: Impressionism, serialism, Latin jazz, acid jazz, spiritual jazz
 - More **labels** (Motown, Blue Note, Warp, Def Jam), **places** (Kingston,
   Lagos, Rio), **scenes** (Paradise Garage, Studio 54, CBGB), and **tracks** (anthems)
@@ -318,7 +328,7 @@ Example:
 
 ## 7. How to return changes
 
-The file is about 150 KB. Unless you are asked for the whole file, return a **merge
+The dataset is large. Unless you are asked for the whole file, return a **merge
 patch** in this exact shape:
 
 ```json
@@ -343,7 +353,8 @@ patch** in this exact shape:
 - [ ] Every edge endpoint exists in `graph.json` or in `addNodes`
 - [ ] Every new genre has `family`, `period`, a `description`, `sources`, and ≥ 3 sourced
       `key_artist_of` edges
-- [ ] Every new genre has at least one lineage edge to an existing genre
+- [ ] Every new genre connects by lineage to the existing genre graph, directly or
+      through other additions
 - [ ] Every new artist has `sources`, `kind`, `period`, and at least one edge
 - [ ] Every artist has an explicit `family` or a `key_artist_of` relationship
       to a genre with a family

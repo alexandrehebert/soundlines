@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import rawGraph from './graph.json'
 import type { GraphNode, MusicGraph, NodeType } from '../graph/types.ts'
 import { MAX_YEAR, MIN_YEAR } from '../graph/layout.ts'
-import { buildIndex, lineage, searchNodes } from '../graph/graph.ts'
+import { buildIndex, lineage, neighbors, searchNodes } from '../graph/graph.ts'
 import { artistFamily, createTimelineModel } from '../graph/timeline.ts'
 import {
   EDGE_TYPE_LABELS,
@@ -130,6 +130,28 @@ describe('graph.json integrity', () => {
       .toBe('classical')
   })
 
+  it('includes the expanded genres in their expected timeline lanes', () => {
+    const expected = {
+      roots: [
+        'pop', 'country', 'folk', 'bluegrass', 'r-and-b', 'doo-wop', 'neo-soul',
+        'ska', 'rocksteady', 'reggae', 'dub', 'dancehall', 'latin', 'son-cubano',
+        'salsa', 'bossa-nova', 'cumbia', 'highlife', 'afrobeat', 'afrobeats',
+        'k-pop', 'j-pop', 'trap-rap', 'drill',
+      ],
+      rock: ['surf-rock', 'new-wave', 'thrash-metal', 'death-metal', 'black-metal', 'doom-metal'],
+      house: ['electro-house'],
+      techno: ['hardstyle', 'psytrance'],
+      'uk-continuum': ['grime'],
+    }
+    const model = createTimelineModel(buildIndex(graph), 'genre')
+    for (const [family, slugs] of Object.entries(expected)) {
+      const lane = model.lanes.find((candidate) => candidate.family === family)
+      expect(lane, family).toBeDefined()
+      const ids = new Set(lane!.bars.map((bar) => bar.node.id))
+      for (const slug of slugs) expect(ids.has(`genre:${slug}`), slug).toBe(true)
+    }
+  })
+
   it('makes historical eras searchable and connects the expanded lineage to existing genres', () => {
     expect(searchNodes(graph, 'Baroque')[0].node.id).toBe('genre:baroque')
     expect(searchNodes(graph, 'Mozart')[0].node.id).toBe('artist:mozart')
@@ -138,6 +160,46 @@ describe('graph.json integrity', () => {
     expect(lineage(index, 'genre:grunge').ancestors).toContain('genre:blues')
     expect(lineage(index, 'genre:deep-house').ancestors).toContain('genre:jazz')
     expect(lineage(index, 'genre:synth-pop').ancestors).toContain('genre:rock')
+  })
+
+  it('makes the added genres and artists searchable with their relationships', () => {
+    expect(searchNodes(graph, 'Reggae')[0]?.node.id).toBe('genre:reggae')
+    expect(searchNodes(graph, 'Bob Marley')[0]?.node.id).toBe('artist:bob-marley')
+
+    const index = buildIndex(graph)
+    const genreIndex = createTimelineModel(index, 'genre').index
+    const reggae = lineage(genreIndex, 'genre:reggae')
+    expect(reggae.ancestors).toContain('genre:ska')
+    expect(reggae.descendants).toContain('genre:dub')
+    expect(reggae.descendants).toContain('genre:dancehall')
+    expect(index.outEdges.get('artist:bob-marley')).toEqual(expect.arrayContaining([
+      expect.objectContaining({ type: 'key_artist_of', to: 'genre:reggae' }),
+    ]))
+    expect(index.outEdges.get('artist:the-human-league')).toEqual(expect.arrayContaining([
+      expect.objectContaining({ type: 'key_artist_of', to: 'genre:new-wave' }),
+    ]))
+
+    const artistIndex = createTimelineModel(index, 'artist').index
+    expect(artistIndex.nodeById.get('artist:bob-marley')?.family).toBe('roots')
+    expect(artistIndex.nodeById.get('artist:the-human-league')?.family)
+      .toBe('electronic-pioneers')
+  })
+
+  it('keeps every genre connected through the lineage graph', () => {
+    const index = createTimelineModel(buildIndex(graph), 'genre').index
+    const ids = index.graph.nodes.map((node) => node.id)
+    expect(ids.length).toBeGreaterThan(0)
+    const visited = new Set([ids[0]])
+    const queue = [ids[0]]
+    for (const id of queue) {
+      for (const { node } of neighbors(index, id)) {
+        if (!visited.has(node.id)) {
+          visited.add(node.id)
+          queue.push(node.id)
+        }
+      }
+    }
+    expect(visited).toEqual(new Set(ids))
   })
 
   it('gives every genre at least three sourced key artists', () => {

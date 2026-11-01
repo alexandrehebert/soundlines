@@ -3414,6 +3414,7 @@
       "type": "artist",
       "name": "The Human League",
       "kind": "group",
+      "family": "electronic-pioneers",
       "period": {
         "start": 1977
       },
@@ -5931,6 +5932,1801 @@
       "description": "Ewan Pearson is documented in the cited specialist genre histories and artist reference.",
       "sources": [
         "https://www.allmusic.com/artist/ewan-pearson-mn0000155675"
+      ]
+    },
+    {
+      "id": "genre:pop",
+      "type": "genre",
+      "name": "Pop",
+      "family": "roots",
+      "period": {
+        "start": 1950,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A broad, changing popular-music category shaped by memorable songwriting, recording technology, mass media and cross-pollination with many styles; it is not a single-origin genre.",
+      "sources": [
+        "https://www.allmusic.com/genre/pop-ma0000012254"
+      ]
+    },
+    {
+      "id": "genre:country",
+      "type": "genre",
+      "name": "Country",
+      "family": "roots",
+      "period": {
+        "start": 1920,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A US popular tradition shaped by rural string-band music, balladry, blues and regional performance circuits; its commercial forms include honky-tonk, bluegrass, country-pop and many others.",
+      "sources": [
+        "https://www.allmusic.com/genre/country-ma0000002532"
+      ]
+    },
+    {
+      "id": "genre:folk",
+      "type": "genre",
+      "name": "Folk revival",
+      "family": "roots",
+      "period": {
+        "start": 1930,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "The twentieth-century folk-revival tradition represented here centers on vernacular song, singer-songwriters and revival performance in the United States and Britain; it does not stand for every traditional music worldwide.",
+      "sources": [
+        "https://www.allmusic.com/genre/folk-ma0000002592"
+      ]
+    },
+    {
+      "id": "genre:bluegrass",
+      "type": "genre",
+      "name": "Bluegrass",
+      "family": "roots",
+      "period": {
+        "start": 1945,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A fast, acoustic string-band music crystallized by Bill Monroe and the Blue Grass Boys in the 1940s, drawing on older Appalachian and country traditions.",
+      "sources": [
+        "https://www.allmusic.com/genre/bluegrass-ma0000002466"
+      ]
+    },
+    {
+      "id": "genre:r-and-b",
+      "type": "genre",
+      "name": "Rhythm and blues",
+      "family": "roots",
+      "period": {
+        "start": 1940,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A shifting name for Black American popular music, first used for postwar blues-based dance and vocal music and later covering several distinct R&B traditions.",
+      "sources": [
+        "https://www.allmusic.com/genre/r-b-ma0000002809"
+      ]
+    },
+    {
+      "id": "genre:doo-wop",
+      "type": "genre",
+      "name": "Doo-wop",
+      "family": "roots",
+      "period": {
+        "start": 1948,
+        "end": 1965,
+        "precision": "decade"
+      },
+      "description": "A vocal-group style built around close harmonies, syllabic backing vocals and a prominent lead singer, flourishing in the 1950s and early 1960s.",
+      "sources": [
+        "https://www.allmusic.com/genre/doo-wop-ma0000002556"
+      ]
+    },
+    {
+      "id": "genre:neo-soul",
+      "type": "genre",
+      "name": "Neo-soul",
+      "family": "roots",
+      "period": {
+        "start": 1995,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A 1990s-forward R&B movement that reworked soul performance and songwriting through hip-hop-era rhythms, production and artist-led album making.",
+      "sources": [
+        "https://www.allmusic.com/genre/neo-soul-ma0000004426"
+      ]
+    },
+    {
+      "id": "genre:ska",
+      "type": "genre",
+      "name": "Ska",
+      "family": "roots",
+      "period": {
+        "start": 1958,
+        "end": 1970,
+        "precision": "decade"
+      },
+      "description": "Jamaican dance music that blended mento and calypso with American rhythm and blues and jazz; it became a key precursor to rocksteady and reggae.",
+      "sources": [
+        "https://www.allmusic.com/genre/ska-ma0000002857"
+      ]
+    },
+    {
+      "id": "genre:rocksteady",
+      "type": "genre",
+      "name": "Rocksteady",
+      "family": "roots",
+      "period": {
+        "start": 1966,
+        "end": 1968,
+        "precision": "year"
+      },
+      "description": "A short-lived Jamaican style that slowed ska’s pulse and foregrounded bass, vocal harmony and a relaxed groove; it bridged ska and reggae.",
+      "sources": [
+        "https://www.allmusic.com/genre/rocksteady-ma0000002830"
+      ]
+    },
+    {
+      "id": "genre:reggae",
+      "type": "genre",
+      "name": "Reggae",
+      "family": "roots",
+      "period": {
+        "start": 1968,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "Jamaican popular music that developed from ska and rocksteady, with a strong bass-and-drum foundation and many later branches including roots reggae, dub and dancehall.",
+      "sources": [
+        "https://www.allmusic.com/genre/reggae-ma0000002820"
+      ]
+    },
+    {
+      "id": "genre:dub",
+      "type": "genre",
+      "name": "Dub",
+      "family": "roots",
+      "period": {
+        "start": 1968,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A Jamaican studio-centered practice and style that foregrounds instrumental versions, mixing-desk manipulation, echo, reverb and bass.",
+      "sources": [
+        "https://www.allmusic.com/genre/dub-ma0000002559"
+      ]
+    },
+    {
+      "id": "genre:dancehall",
+      "type": "genre",
+      "name": "Dancehall",
+      "family": "roots",
+      "period": {
+        "start": 1979,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A Jamaican popular style and scene that grew around dancehall sound systems and deejay performance, later developing digital riddim-based forms.",
+      "sources": [
+        "https://www.allmusic.com/style/dancehall-ma0000002545"
+      ]
+    },
+    {
+      "id": "genre:latin",
+      "type": "genre",
+      "name": "Latin music",
+      "family": "roots",
+      "period": {
+        "start": 1900,
+        "end": null,
+        "precision": "circa"
+      },
+      "description": "An umbrella term used by the music industry for diverse Latin American and diasporic traditions; it is a navigational parent here, not a claim of one shared musical origin.",
+      "sources": [
+        "https://www.allmusic.com/genre/latin-ma0000002692"
+      ]
+    },
+    {
+      "id": "genre:son-cubano",
+      "type": "genre",
+      "name": "Son cubano",
+      "family": "roots",
+      "period": {
+        "start": 1890,
+        "end": null,
+        "precision": "circa"
+      },
+      "description": "Cuban song-and-dance tradition formed through Afro-Cuban and Spanish-language practices, later providing an important basis for son montuno and salsa.",
+      "sources": [
+        "https://www.pbs.org/buenavista/music/a_son.html"
+      ]
+    },
+    {
+      "id": "genre:salsa",
+      "type": "genre",
+      "name": "Salsa",
+      "family": "roots",
+      "period": {
+        "start": 1960,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A pan-Caribbean and New York-centered dance-music movement drawing especially on Cuban son and related Afro-Cuban forms, with distinct regional histories.",
+      "sources": [
+        "https://www.allmusic.com/subgenre/salsa-ma0000002840"
+      ]
+    },
+    {
+      "id": "genre:bossa-nova",
+      "type": "genre",
+      "name": "Bossa nova",
+      "family": "roots",
+      "period": {
+        "start": 1958,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "Brazilian song style formed in the late 1950s through a distinctive guitar rhythm, understated vocal approach and jazz-influenced harmony.",
+      "sources": [
+        "https://www.allmusic.com/genre/bossa-nova-ma0000002548"
+      ]
+    },
+    {
+      "id": "genre:cumbia",
+      "type": "genre",
+      "name": "Cumbia",
+      "family": "roots",
+      "period": {
+        "start": 1900,
+        "end": null,
+        "precision": "circa"
+      },
+      "description": "A Colombian-rooted dance tradition whose regional and popular forms spread across Latin America and developed into many national styles.",
+      "sources": [
+        "https://www.allmusic.com/genre/cumbia-ma0000002541"
+      ]
+    },
+    {
+      "id": "genre:highlife",
+      "type": "genre",
+      "name": "Highlife",
+      "family": "roots",
+      "period": {
+        "start": 1920,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A West African popular dance tradition, especially associated with Ghana and Nigeria, blending local forms with guitar, horn-band and other transatlantic influences.",
+      "sources": [
+        "https://www.allmusic.com/style/highlife-ma0000002637/songs"
+      ]
+    },
+    {
+      "id": "genre:afrobeat",
+      "type": "genre",
+      "name": "Afrobeat",
+      "family": "roots",
+      "period": {
+        "start": 1968,
+        "precision": "decade"
+      },
+      "description": "A Nigerian-led style associated especially with Fela Kuti and Tony Allen, combining West African highlife and Yoruba rhythmic ideas with funk, jazz and extended political song forms. Distinct from contemporary Afrobeats.",
+      "sources": [
+        "https://www.allmusic.com/style/afro-beat-ma0000004495"
+      ]
+    },
+    {
+      "id": "genre:afrobeats",
+      "type": "genre",
+      "name": "Afrobeats",
+      "family": "roots",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A contemporary, plural popular-music umbrella associated with West African scenes and global circulation; it is distinct from Fela Kuti’s earlier Afrobeat.",
+      "sources": [
+        "https://online.ucpress.edu/jpms/article-abstract/36/4/25/203941/Genre-or-HypernymDeconstructing-Afrobeats-in-the?redirectedFrom=fulltext"
+      ]
+    },
+    {
+      "id": "genre:k-pop",
+      "type": "genre",
+      "name": "K-pop",
+      "family": "roots",
+      "period": {
+        "start": 1990,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "South Korean popular music industry and style incorporating local language and performance conventions with global pop, hip-hop, R&B and electronic production.",
+      "sources": [
+        "https://www.allmusic.com/style/k-pop-ma0000011907"
+      ]
+    },
+    {
+      "id": "genre:j-pop",
+      "type": "genre",
+      "name": "J-pop",
+      "family": "roots",
+      "period": {
+        "start": 1970,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A broad label for modern Japanese popular music, spanning multiple eras and styles rather than one stable sound.",
+      "sources": [
+        "https://www.allmusic.com/style/j-pop-ma0000004490"
+      ]
+    },
+    {
+      "id": "genre:surf-rock",
+      "type": "genre",
+      "name": "Surf rock",
+      "family": "rock",
+      "period": {
+        "start": 1960,
+        "end": 1965,
+        "precision": "decade"
+      },
+      "description": "Instrumental rock associated with Southern California surf culture, featuring reverb-heavy electric guitar and rhythmic drive; the style later influenced wider rock music.",
+      "sources": [
+        "https://www.allmusic.com/style/surf-ma0000002883"
+      ]
+    },
+    {
+      "id": "genre:new-wave",
+      "type": "genre",
+      "name": "New wave",
+      "family": "rock",
+      "period": {
+        "start": 1977,
+        "end": 1989,
+        "precision": "decade"
+      },
+      "description": "A diverse late-1970s and 1980s pop-rock field that followed punk while embracing synthesizers, art-school ideas, dance rhythms and concise song forms.",
+      "sources": [
+        "https://www.allmusic.com/genre/new-wave-ma0000002750"
+      ]
+    },
+    {
+      "id": "genre:thrash-metal",
+      "type": "genre",
+      "name": "Thrash metal",
+      "family": "rock",
+      "period": {
+        "start": 1983,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A fast, aggressive heavy-metal branch that sharpened riffing and rhythmic precision; the “Big Four” are Metallica, Slayer, Megadeth and Anthrax.",
+      "sources": [
+        "https://www.allmusic.com/genre/speed-thrash-metal-ma0000002874"
+      ]
+    },
+    {
+      "id": "genre:death-metal",
+      "type": "genre",
+      "name": "Death metal",
+      "family": "rock",
+      "period": {
+        "start": 1986,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "An extreme-metal branch that developed from thrash in the late 1980s, marked by harsh vocals, dense riffs and darker lyrical themes.",
+      "sources": [
+        "https://www.allmusic.com/genre/death-metal-ma0000002547"
+      ]
+    },
+    {
+      "id": "genre:black-metal",
+      "type": "genre",
+      "name": "Black metal",
+      "family": "rock",
+      "period": {
+        "start": 1982,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "An extreme-metal family with multiple waves and regional scenes; the name first circulated in the 1980s and later became strongly associated with the Norwegian early-1990s scene.",
+      "sources": [
+        "https://www.allmusic.com/style/black-metal-ma0000002463"
+      ]
+    },
+    {
+      "id": "genre:doom-metal",
+      "type": "genre",
+      "name": "Doom metal",
+      "family": "rock",
+      "period": {
+        "start": 1984,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A heavy-metal branch emphasizing slow tempos, weight and atmosphere; its foundations reach back to Black Sabbath and its underground scenes expanded during the 1980s.",
+      "sources": [
+        "https://www.allmusic.com/genre/doom-metal-ma0000004496"
+      ]
+    },
+    {
+      "id": "genre:grime",
+      "type": "genre",
+      "name": "Grime",
+      "family": "uk-continuum",
+      "period": {
+        "start": 2002,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A UK electronic rap style that emerged in London around pirate radio, MC culture and fast, synthetic garage-derived production.",
+      "sources": [
+        "https://www.allmusic.com/style/grime-ma0000004464"
+      ]
+    },
+    {
+      "id": "genre:trap-rap",
+      "type": "genre",
+      "name": "Trap rap",
+      "family": "roots",
+      "period": {
+        "start": 2003,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A Southern US hip-hop style associated with stark programmed drums, heavy low end and narratives rooted in Atlanta trap culture; later usage broadened considerably.",
+      "sources": [
+        "https://www.allmusic.com/genre/trap-rap-ma0000013576"
+      ]
+    },
+    {
+      "id": "genre:drill",
+      "type": "genre",
+      "name": "Drill",
+      "family": "roots",
+      "period": {
+        "start": 2010,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A stark, rhythmically distinctive rap style first associated with Chicago and later developed in UK and other local scenes.",
+      "sources": [
+        "https://www.allmusic.com/genre/drill-ma0000013643"
+      ]
+    },
+    {
+      "id": "genre:electro-house",
+      "type": "genre",
+      "name": "Electro house",
+      "family": "house",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A 2000s house branch combining house rhythms with prominent electro-influenced synth timbres and forceful production.",
+      "sources": [
+        "https://www.allmusic.com/album/dirty-electro-house-mw0001174015"
+      ]
+    },
+    {
+      "id": "genre:hardstyle",
+      "type": "genre",
+      "name": "Hardstyle",
+      "family": "techno",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A hard dance style that took shape in the Netherlands and nearby European scenes, combining hard electronic kick drums with influences from hard trance and hardcore.",
+      "sources": [
+        "https://www.allmusic.com/album/hardstyle-10-years-mw0002452091",
+        "https://en.wikipedia.org/wiki/Hardstyle"
+      ]
+    },
+    {
+      "id": "genre:psytrance",
+      "type": "genre",
+      "name": "Psytrance",
+      "family": "techno",
+      "period": {
+        "start": 1990,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "A psychedelic electronic dance style that developed from Goa trance and later globalized through festival and club scenes.",
+      "sources": [
+        "https://www.allmusic.com/style/goa-trance-ma0000011977"
+      ]
+    },
+    {
+      "id": "artist:michael-jackson",
+      "type": "artist",
+      "name": "Michael Jackson",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": 2009,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/pop-ma0000012254"
+      ]
+    },
+    {
+      "id": "artist:madonna",
+      "type": "artist",
+      "name": "Madonna",
+      "kind": "person",
+      "period": {
+        "start": 1980,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/pop-ma0000012254"
+      ]
+    },
+    {
+      "id": "artist:hank-williams",
+      "type": "artist",
+      "name": "Hank Williams",
+      "kind": "person",
+      "period": {
+        "start": 1930,
+        "end": 1953,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/country-ma0000002532"
+      ]
+    },
+    {
+      "id": "artist:dolly-parton",
+      "type": "artist",
+      "name": "Dolly Parton",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/country-ma0000002532"
+      ]
+    },
+    {
+      "id": "artist:johnny-cash",
+      "type": "artist",
+      "name": "Johnny Cash",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "end": 2003,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/country-ma0000002532"
+      ]
+    },
+    {
+      "id": "artist:woody-guthrie",
+      "type": "artist",
+      "name": "Woody Guthrie",
+      "kind": "person",
+      "period": {
+        "start": 1930,
+        "end": 1950,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/folk-ma0000002592"
+      ]
+    },
+    {
+      "id": "artist:bob-dylan",
+      "type": "artist",
+      "name": "Bob Dylan",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/folk-ma0000002592"
+      ]
+    },
+    {
+      "id": "artist:joan-baez",
+      "type": "artist",
+      "name": "Joan Baez",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": 2010,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/folk-ma0000002592"
+      ]
+    },
+    {
+      "id": "artist:bill-monroe",
+      "type": "artist",
+      "name": "Bill Monroe",
+      "kind": "group",
+      "period": {
+        "start": 1930,
+        "end": 1996,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/bluegrass-ma0000002466"
+      ]
+    },
+    {
+      "id": "artist:earl-scruggs",
+      "type": "artist",
+      "name": "Earl Scruggs",
+      "kind": "group",
+      "period": {
+        "start": 1940,
+        "end": 2012,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/bluegrass-ma0000002466"
+      ]
+    },
+    {
+      "id": "artist:alison-krauss",
+      "type": "artist",
+      "name": "Alison Krauss",
+      "kind": "person",
+      "period": {
+        "start": 1980,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/bluegrass-ma0000002466"
+      ]
+    },
+    {
+      "id": "artist:the-drifters",
+      "type": "artist",
+      "name": "The Drifters",
+      "kind": "group",
+      "period": {
+        "start": 1950,
+        "end": 1970,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/doo-wop-ma0000002556"
+      ]
+    },
+    {
+      "id": "artist:the-platters",
+      "type": "artist",
+      "name": "The Platters",
+      "kind": "group",
+      "period": {
+        "start": 1950,
+        "end": 1970,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/doo-wop-ma0000002556"
+      ]
+    },
+    {
+      "id": "artist:the-coasters",
+      "type": "artist",
+      "name": "The Coasters",
+      "kind": "group",
+      "period": {
+        "start": 1950,
+        "end": 1970,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/doo-wop-ma0000002556"
+      ]
+    },
+    {
+      "id": "artist:dangelo",
+      "type": "artist",
+      "name": "D’Angelo",
+      "kind": "person",
+      "period": {
+        "start": 1990,
+        "end": 2025,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/neo-soul-ma0000004426",
+        "https://www.allmusic.com/artist/dangelo-mn0000134600"
+      ]
+    },
+    {
+      "id": "artist:erykah-badu",
+      "type": "artist",
+      "name": "Erykah Badu",
+      "kind": "person",
+      "period": {
+        "start": 1990,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/neo-soul-ma0000004426"
+      ]
+    },
+    {
+      "id": "artist:lauryn-hill",
+      "type": "artist",
+      "name": "Lauryn Hill",
+      "kind": "person",
+      "period": {
+        "start": 1990,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/neo-soul-ma0000004426"
+      ]
+    },
+    {
+      "id": "artist:the-skatalites",
+      "type": "artist",
+      "name": "The Skatalites",
+      "kind": "group",
+      "period": {
+        "start": 1960,
+        "end": 2020,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/ska-ma0000002857",
+        "https://www.allmusic.com/artist/the-skatalites-mn0000425105"
+      ]
+    },
+    {
+      "id": "artist:prince-buster",
+      "type": "artist",
+      "name": "Prince Buster",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": 1990,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/ska-ma0000002857",
+        "https://www.allmusic.com/artist/prince-buster-mn0000359494"
+      ]
+    },
+    {
+      "id": "artist:desmond-dekker",
+      "type": "artist",
+      "name": "Desmond Dekker",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": 2000,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/ska-ma0000002857"
+      ]
+    },
+    {
+      "id": "artist:alton-ellis",
+      "type": "artist",
+      "name": "Alton Ellis",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "end": 2000,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/rocksteady-ma0000002830"
+      ]
+    },
+    {
+      "id": "artist:ken-boothe",
+      "type": "artist",
+      "name": "Ken Boothe",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/rocksteady-ma0000002830"
+      ]
+    },
+    {
+      "id": "artist:the-heptones",
+      "type": "artist",
+      "name": "The Heptones",
+      "kind": "group",
+      "period": {
+        "start": 1960,
+        "end": 2000,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/rocksteady-ma0000002830"
+      ]
+    },
+    {
+      "id": "artist:bob-marley",
+      "type": "artist",
+      "name": "Bob Marley",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": 1980,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/reggae-ma0000002820"
+      ]
+    },
+    {
+      "id": "artist:toots-and-the-maytals",
+      "type": "artist",
+      "name": "Toots & the Maytals",
+      "kind": "group",
+      "period": {
+        "start": 1960,
+        "end": 2020,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/reggae-ma0000002820"
+      ]
+    },
+    {
+      "id": "artist:lee-scratch-perry",
+      "type": "artist",
+      "name": "Lee “Scratch” Perry",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "end": 2020,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/reggae-ma0000002820"
+      ]
+    },
+    {
+      "id": "artist:king-tubby",
+      "type": "artist",
+      "name": "King Tubby",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": 1980,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/dub-ma0000002559"
+      ]
+    },
+    {
+      "id": "artist:scientist",
+      "type": "artist",
+      "name": "Scientist",
+      "kind": "person",
+      "period": {
+        "start": 1970,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/dub-ma0000002559"
+      ]
+    },
+    {
+      "id": "artist:yellowman",
+      "type": "artist",
+      "name": "Yellowman",
+      "kind": "person",
+      "period": {
+        "start": 1970,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/dancehall-ma0000002552"
+      ]
+    },
+    {
+      "id": "artist:shabba-ranks",
+      "type": "artist",
+      "name": "Shabba Ranks",
+      "kind": "person",
+      "period": {
+        "start": 1980,
+        "end": 2000,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/dancehall-ma0000002552"
+      ]
+    },
+    {
+      "id": "artist:beenie-man",
+      "type": "artist",
+      "name": "Beenie Man",
+      "kind": "person",
+      "period": {
+        "start": 1980,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/dancehall-ma0000002552"
+      ]
+    },
+    {
+      "id": "artist:celia-cruz",
+      "type": "artist",
+      "name": "Celia Cruz",
+      "kind": "person",
+      "period": {
+        "start": 1940,
+        "end": 2003,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/latin-ma0000002692"
+      ]
+    },
+    {
+      "id": "artist:tito-puente",
+      "type": "artist",
+      "name": "Tito Puente",
+      "kind": "person",
+      "period": {
+        "start": 1930,
+        "end": 2000,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/latin-ma0000002692"
+      ]
+    },
+    {
+      "id": "artist:willie-colon",
+      "type": "artist",
+      "name": "Willie Colón",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/latin-ma0000002692"
+      ]
+    },
+    {
+      "id": "artist:compay-segundo",
+      "type": "artist",
+      "name": "Compay Segundo",
+      "kind": "person",
+      "period": {
+        "start": 1920,
+        "end": 2003,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.pbs.org/buenavista/music/a_son.html"
+      ]
+    },
+    {
+      "id": "artist:ibrahim-ferrer",
+      "type": "artist",
+      "name": "Ibrahim Ferrer",
+      "kind": "person",
+      "period": {
+        "start": 1930,
+        "end": 2005,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.pbs.org/buenavista/music/a_son.html"
+      ]
+    },
+    {
+      "id": "artist:antonio-carlos-jobim",
+      "type": "artist",
+      "name": "Antônio Carlos Jobim",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "end": 1994,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/bossa-nova-ma0000002548"
+      ]
+    },
+    {
+      "id": "artist:joao-gilberto",
+      "type": "artist",
+      "name": "João Gilberto",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "end": 2019,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/bossa-nova-ma0000002548",
+        "https://www.allmusic.com/artist/jo%C3%A3o-gilberto-mn0000785283"
+      ]
+    },
+    {
+      "id": "artist:astrud-gilberto",
+      "type": "artist",
+      "name": "Astrud Gilberto",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": 2023,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/bossa-nova-ma0000002548",
+        "https://www.allmusic.com/artist/astrud-gilberto-mn0000931086"
+      ]
+    },
+    {
+      "id": "artist:et-mensah",
+      "type": "artist",
+      "name": "E.T. Mensah",
+      "kind": "person",
+      "period": {
+        "start": 1940,
+        "end": 1990,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/highlife-ma0000002637/songs",
+        "https://www.allmusic.com/artist/et-mensah-mn0000163663"
+      ]
+    },
+    {
+      "id": "artist:osibisa",
+      "type": "artist",
+      "name": "Osibisa",
+      "kind": "group",
+      "period": {
+        "start": 1960,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/highlife-ma0000002637/songs"
+      ]
+    },
+    {
+      "id": "artist:king-sunny-ade",
+      "type": "artist",
+      "name": "King Sunny Adé",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/highlife-ma0000002637/songs",
+        "https://www.allmusic.com/artist/king-sunny-ade-mn0000771297"
+      ]
+    },
+    {
+      "id": "artist:fela-kuti",
+      "type": "artist",
+      "name": "Fela Kuti",
+      "kind": "group",
+      "period": {
+        "start": 1950,
+        "end": 1997,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/afro-beat-ma0000004495",
+        "https://www.allmusic.com/artist/fela-kuti-mn0000138833"
+      ]
+    },
+    {
+      "id": "artist:tony-allen",
+      "type": "artist",
+      "name": "Tony Allen",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": 2020,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/afro-beat-ma0000004495",
+        "https://www.allmusic.com/artist/tony-allen-mn0000742990"
+      ]
+    },
+    {
+      "id": "artist:africa-70",
+      "type": "artist",
+      "name": "Africa 70",
+      "kind": "group",
+      "period": {
+        "start": 1970,
+        "end": 1980,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/afro-beat-ma0000004495"
+      ]
+    },
+    {
+      "id": "artist:wizkid",
+      "type": "artist",
+      "name": "Wizkid",
+      "kind": "person",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://online.ucpress.edu/jpms/article-abstract/36/4/25/203941/Genre-or-HypernymDeconstructing-Afrobeats-in-the?redirectedFrom=fulltext",
+        "https://www.allmusic.com/artist/mn0003081520"
+      ]
+    },
+    {
+      "id": "artist:burna-boy",
+      "type": "artist",
+      "name": "Burna Boy",
+      "kind": "person",
+      "period": {
+        "start": 2010,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://online.ucpress.edu/jpms/article-abstract/36/4/25/203941/Genre-or-HypernymDeconstructing-Afrobeats-in-the?redirectedFrom=fulltext",
+        "https://www.allmusic.com/artist/burna-boy-mn0003297650"
+      ]
+    },
+    {
+      "id": "artist:davido",
+      "type": "artist",
+      "name": "Davido",
+      "kind": "person",
+      "period": {
+        "start": 2010,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://online.ucpress.edu/jpms/article-abstract/36/4/25/203941/Genre-or-HypernymDeconstructing-Afrobeats-in-the?redirectedFrom=fulltext",
+        "https://www.allmusic.com/artist/davido-mn0003057150"
+      ]
+    },
+    {
+      "id": "artist:psy",
+      "type": "artist",
+      "name": "Psy",
+      "kind": "person",
+      "period": {
+        "start": 1990,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/k-pop-ma0000011907",
+        "https://www.allmusic.com/style/k-pop-ma0000011907/artists"
+      ]
+    },
+    {
+      "id": "artist:bts",
+      "type": "artist",
+      "name": "BTS",
+      "kind": "group",
+      "period": {
+        "start": 2010,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/k-pop-ma0000011907",
+        "https://www.allmusic.com/style/k-pop-ma0000011907/artists"
+      ]
+    },
+    {
+      "id": "artist:blackpink",
+      "type": "artist",
+      "name": "Blackpink",
+      "kind": "group",
+      "period": {
+        "start": 2010,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/k-pop-ma0000011907",
+        "https://www.allmusic.com/style/k-pop-ma0000011907/artists"
+      ]
+    },
+    {
+      "id": "artist:utada-hikaru",
+      "type": "artist",
+      "name": "Hikaru Utada",
+      "kind": "person",
+      "period": {
+        "start": 1990,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/j-pop-ma0000004490",
+        "https://www.allmusic.com/artist/hikaru-utada-mn0000435885"
+      ]
+    },
+    {
+      "id": "artist:perfume",
+      "type": "artist",
+      "name": "Perfume",
+      "kind": "group",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/j-pop-ma0000004490"
+      ]
+    },
+    {
+      "id": "artist:dick-dale",
+      "type": "artist",
+      "name": "Dick Dale",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "end": 2019,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/surf-ma0000002868"
+      ]
+    },
+    {
+      "id": "artist:the-ventures",
+      "type": "artist",
+      "name": "The Ventures",
+      "kind": "group",
+      "period": {
+        "start": 1950,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/surf-ma0000002868"
+      ]
+    },
+    {
+      "id": "artist:the-beach-boys",
+      "type": "artist",
+      "name": "The Beach Boys",
+      "kind": "group",
+      "period": {
+        "start": 1960,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/surf-ma0000002868"
+      ]
+    },
+    {
+      "id": "artist:metallica",
+      "type": "artist",
+      "name": "Metallica",
+      "kind": "group",
+      "period": {
+        "start": 1980,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/speed-thrash-metal-ma0000002874"
+      ]
+    },
+    {
+      "id": "artist:megadeth",
+      "type": "artist",
+      "name": "Megadeth",
+      "kind": "person",
+      "period": {
+        "start": 1980,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/speed-thrash-metal-ma0000002874"
+      ]
+    },
+    {
+      "id": "artist:slayer",
+      "type": "artist",
+      "name": "Slayer",
+      "kind": "group",
+      "period": {
+        "start": 1980,
+        "end": 2010,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/speed-thrash-metal-ma0000002874"
+      ]
+    },
+    {
+      "id": "artist:death",
+      "type": "artist",
+      "name": "Death",
+      "kind": "group",
+      "period": {
+        "start": 1980,
+        "end": 2000,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/death-metal-ma0000002547"
+      ]
+    },
+    {
+      "id": "artist:morbid-angel",
+      "type": "artist",
+      "name": "Morbid Angel",
+      "kind": "group",
+      "period": {
+        "start": 1980,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/death-metal-ma0000002547"
+      ]
+    },
+    {
+      "id": "artist:cannibal-corpse",
+      "type": "artist",
+      "name": "Cannibal Corpse",
+      "kind": "group",
+      "period": {
+        "start": 1980,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/death-metal-ma0000002547"
+      ]
+    },
+    {
+      "id": "artist:mayhem",
+      "type": "artist",
+      "name": "Mayhem",
+      "kind": "group",
+      "period": {
+        "start": 1980,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/black-metal-ma0000002463",
+        "https://www.allmusic.com/artist/mayhem-mn0000335302"
+      ]
+    },
+    {
+      "id": "artist:burzum",
+      "type": "artist",
+      "name": "Burzum",
+      "kind": "group",
+      "period": {
+        "start": 1990,
+        "end": 2000,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/black-metal-ma0000002463",
+        "https://www.allmusic.com/artist/mn0000645956"
+      ]
+    },
+    {
+      "id": "artist:darkthrone",
+      "type": "artist",
+      "name": "Darkthrone",
+      "kind": "group",
+      "period": {
+        "start": 1980,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/black-metal-ma0000002463",
+        "https://www.allmusic.com/artist/darkthrone-mn0000678769"
+      ]
+    },
+    {
+      "id": "artist:saint-vitus",
+      "type": "artist",
+      "name": "Saint Vitus",
+      "kind": "group",
+      "period": {
+        "start": 1970,
+        "end": 2010,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/doom-metal-ma0000004496"
+      ]
+    },
+    {
+      "id": "artist:trouble",
+      "type": "artist",
+      "name": "Trouble",
+      "kind": "group",
+      "period": {
+        "start": 1970,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/doom-metal-ma0000004496"
+      ]
+    },
+    {
+      "id": "artist:candlemass",
+      "type": "artist",
+      "name": "Candlemass",
+      "kind": "group",
+      "period": {
+        "start": 1980,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/doom-metal-ma0000004496"
+      ]
+    },
+    {
+      "id": "artist:dizzee-rascal",
+      "type": "artist",
+      "name": "Dizzee Rascal",
+      "kind": "person",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/grime-ma0000004464"
+      ]
+    },
+    {
+      "id": "artist:wiley",
+      "type": "artist",
+      "name": "Wiley",
+      "kind": "person",
+      "period": {
+        "start": 1990,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/grime-ma0000004464"
+      ]
+    },
+    {
+      "id": "artist:skepta",
+      "type": "artist",
+      "name": "Skepta",
+      "kind": "person",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/grime-ma0000004464"
+      ]
+    },
+    {
+      "id": "artist:ti",
+      "type": "artist",
+      "name": "T.I.",
+      "kind": "person",
+      "period": {
+        "start": 1990,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/trap-rap-ma0000013576"
+      ]
+    },
+    {
+      "id": "artist:gucci-mane",
+      "type": "artist",
+      "name": "Gucci Mane",
+      "kind": "person",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/trap-rap-ma0000013576"
+      ]
+    },
+    {
+      "id": "artist:future",
+      "type": "artist",
+      "name": "Future",
+      "kind": "person",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/trap-rap-ma0000013576"
+      ]
+    },
+    {
+      "id": "artist:chief-keef",
+      "type": "artist",
+      "name": "Chief Keef",
+      "kind": "person",
+      "period": {
+        "start": 2010,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/drill-ma0000013643"
+      ]
+    },
+    {
+      "id": "artist:pop-smoke",
+      "type": "artist",
+      "name": "Pop Smoke",
+      "kind": "person",
+      "period": {
+        "start": 2010,
+        "end": 2020,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/drill-ma0000013643"
+      ]
+    },
+    {
+      "id": "artist:lil-durk",
+      "type": "artist",
+      "name": "Lil Durk",
+      "kind": "person",
+      "period": {
+        "start": 2010,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/drill-ma0000013643"
+      ]
+    },
+    {
+      "id": "artist:deadmau5",
+      "type": "artist",
+      "name": "deadmau5",
+      "kind": "person",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/electro-house-ma0000011897",
+        "https://www.allmusic.com/artist/deadmau5-mn0000879144"
+      ]
+    },
+    {
+      "id": "artist:headhunterz",
+      "type": "artist",
+      "name": "Headhunterz",
+      "kind": "person",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/hardstyle-ma0000011879",
+        "https://www.allmusic.com/album/hardstyle-10-years-mw0002452091"
+      ]
+    },
+    {
+      "id": "artist:showtek",
+      "type": "artist",
+      "name": "Showtek",
+      "kind": "group",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/hardstyle-ma0000011879",
+        "https://www.allmusic.com/album/hardstyle-10-years-mw0002452091"
+      ]
+    },
+    {
+      "id": "artist:wildstylez",
+      "type": "artist",
+      "name": "Wildstylez",
+      "kind": "person",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/hardstyle-ma0000011879",
+        "https://www.allmusic.com/album/hardstyle-10-years-mw0002452091"
+      ]
+    },
+    {
+      "id": "artist:infected-mushroom",
+      "type": "artist",
+      "name": "Infected Mushroom",
+      "kind": "group",
+      "period": {
+        "start": 1990,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/goa-trance-ma0000011947",
+        "https://www.allmusic.com/artist/infected-mushroom-mn0000087910"
+      ]
+    },
+    {
+      "id": "artist:astral-projection",
+      "type": "artist",
+      "name": "Astral Projection",
+      "kind": "group",
+      "period": {
+        "start": 1990,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/goa-trance-ma0000011947",
+        "https://www.allmusic.com/artist/astral-projection-mn0000032464"
+      ]
+    },
+    {
+      "id": "artist:goa-gil",
+      "type": "artist",
+      "name": "Goa Gil",
+      "kind": "person",
+      "period": {
+        "start": 1970,
+        "end": 2020,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/goa-trance-ma0000011947"
+      ]
+    },
+    {
+      "id": "artist:carlos-vives",
+      "type": "artist",
+      "name": "Carlos Vives",
+      "kind": "person",
+      "period": {
+        "start": 1980,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/cumbia-ma0000002541"
+      ]
+    },
+    {
+      "id": "artist:los-angeles-azules",
+      "type": "artist",
+      "name": "Los Ángeles Azules",
+      "kind": "group",
+      "period": {
+        "start": 1980,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/cumbia-ma0000002541"
+      ]
+    },
+    {
+      "id": "artist:selena",
+      "type": "artist",
+      "name": "Selena",
+      "kind": "person",
+      "period": {
+        "start": 1980,
+        "end": 1995,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/cumbia-ma0000002541"
+      ]
+    },
+    {
+      "id": "artist:tujamo",
+      "type": "artist",
+      "name": "Tujamo",
+      "kind": "person",
+      "period": {
+        "start": 2010,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/tujamo-mn0002643637"
+      ]
+    },
+    {
+      "id": "artist:hardwell",
+      "type": "artist",
+      "name": "Hardwell",
+      "kind": "person",
+      "period": {
+        "start": 2000,
+        "end": null,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/hardwell-mn0001002468"
+      ]
+    },
+    {
+      "id": "artist:pizzicato-five",
+      "type": "artist",
+      "name": "Pizzicato Five",
+      "kind": "group",
+      "period": {
+        "start": 1980,
+        "end": 2001,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/j-pop-ma0000004490/artists"
       ]
     }
   ],
@@ -11401,6 +13197,1364 @@
         "https://www.allmusic.com/artist/miss-kittin-mn0000497290",
         "https://www.allmusic.com/artist/fischerspooner-mn0000178051",
         "https://www.allmusic.com/artist/peaches-mn0000752770"
+      ]
+    },
+    {
+      "id": "key:michael-jackson-pop",
+      "type": "key_artist_of",
+      "from": "artist:michael-jackson",
+      "to": "genre:pop",
+      "sources": [
+        "https://www.allmusic.com/genre/pop-ma0000012254"
+      ]
+    },
+    {
+      "id": "key:madonna-pop",
+      "type": "key_artist_of",
+      "from": "artist:madonna",
+      "to": "genre:pop",
+      "sources": [
+        "https://www.allmusic.com/genre/pop-ma0000012254"
+      ]
+    },
+    {
+      "id": "key:prince-pop",
+      "type": "key_artist_of",
+      "from": "artist:prince",
+      "to": "genre:pop",
+      "sources": [
+        "https://www.allmusic.com/genre/pop-ma0000012254"
+      ]
+    },
+    {
+      "id": "lineage:pop-rock-and-roll",
+      "type": "cross_pollination",
+      "from": "genre:pop",
+      "to": "genre:rock-and-roll",
+      "confidence": "high",
+      "note": "Postwar pop and rock-and-roll shared performers, audiences and recording markets; the boundary remained fluid.",
+      "sources": [
+        "https://www.allmusic.com/genre/pop-ma0000012254"
+      ]
+    },
+    {
+      "id": "lineage:pop-soul",
+      "type": "cross_pollination",
+      "from": "genre:pop",
+      "to": "genre:soul",
+      "confidence": "high",
+      "note": "Pop and soul repeatedly exchanged singers, song forms and production approaches.",
+      "sources": [
+        "https://www.allmusic.com/genre/pop-ma0000012254"
+      ]
+    },
+    {
+      "id": "key:hank-williams-country",
+      "type": "key_artist_of",
+      "from": "artist:hank-williams",
+      "to": "genre:country",
+      "sources": [
+        "https://www.allmusic.com/genre/country-ma0000002532"
+      ]
+    },
+    {
+      "id": "key:dolly-parton-country",
+      "type": "key_artist_of",
+      "from": "artist:dolly-parton",
+      "to": "genre:country",
+      "sources": [
+        "https://www.allmusic.com/genre/country-ma0000002532"
+      ]
+    },
+    {
+      "id": "key:johnny-cash-country",
+      "type": "key_artist_of",
+      "from": "artist:johnny-cash",
+      "to": "genre:country",
+      "sources": [
+        "https://www.allmusic.com/genre/country-ma0000002532"
+      ]
+    },
+    {
+      "id": "lineage:country-blues",
+      "type": "cross_pollination",
+      "from": "genre:country",
+      "to": "genre:blues",
+      "confidence": "high",
+      "note": "Country and blues developed through overlapping Southern performance networks and exchanged repertory and instrumentation.",
+      "sources": [
+        "https://www.allmusic.com/genre/country-ma0000002532"
+      ]
+    },
+    {
+      "id": "key:woody-guthrie-folk",
+      "type": "key_artist_of",
+      "from": "artist:woody-guthrie",
+      "to": "genre:folk",
+      "sources": [
+        "https://www.allmusic.com/genre/folk-ma0000002592"
+      ]
+    },
+    {
+      "id": "key:bob-dylan-folk",
+      "type": "key_artist_of",
+      "from": "artist:bob-dylan",
+      "to": "genre:folk",
+      "sources": [
+        "https://www.allmusic.com/genre/folk-ma0000002592"
+      ]
+    },
+    {
+      "id": "key:joan-baez-folk",
+      "type": "key_artist_of",
+      "from": "artist:joan-baez",
+      "to": "genre:folk",
+      "sources": [
+        "https://www.allmusic.com/genre/folk-ma0000002592"
+      ]
+    },
+    {
+      "id": "lineage:folk-blues",
+      "type": "cross_pollination",
+      "from": "genre:folk",
+      "to": "genre:blues",
+      "confidence": "high",
+      "note": "The folk revival and blues shared repertory, performers and audiences, especially in the mid-century revival circuit.",
+      "sources": [
+        "https://www.allmusic.com/genre/folk-ma0000002592"
+      ]
+    },
+    {
+      "id": "key:bill-monroe-bluegrass",
+      "type": "key_artist_of",
+      "from": "artist:bill-monroe",
+      "to": "genre:bluegrass",
+      "sources": [
+        "https://www.allmusic.com/genre/bluegrass-ma0000002466"
+      ]
+    },
+    {
+      "id": "key:earl-scruggs-bluegrass",
+      "type": "key_artist_of",
+      "from": "artist:earl-scruggs",
+      "to": "genre:bluegrass",
+      "sources": [
+        "https://www.allmusic.com/genre/bluegrass-ma0000002466"
+      ]
+    },
+    {
+      "id": "key:alison-krauss-bluegrass",
+      "type": "key_artist_of",
+      "from": "artist:alison-krauss",
+      "to": "genre:bluegrass",
+      "sources": [
+        "https://www.allmusic.com/genre/bluegrass-ma0000002466"
+      ]
+    },
+    {
+      "id": "lineage:bluegrass-country",
+      "type": "derived_from",
+      "from": "genre:bluegrass",
+      "to": "genre:country",
+      "confidence": "high",
+      "note": "Bluegrass developed from older country and string-band traditions; the relationship is historical rather than exclusive.",
+      "sources": [
+        "https://www.allmusic.com/genre/bluegrass-ma0000002466"
+      ]
+    },
+    {
+      "id": "key:aretha-franklin-r-and-b",
+      "type": "key_artist_of",
+      "from": "artist:aretha-franklin",
+      "to": "genre:r-and-b",
+      "sources": [
+        "https://www.allmusic.com/genre/r-b-ma0000002809"
+      ]
+    },
+    {
+      "id": "key:marvin-gaye-r-and-b",
+      "type": "key_artist_of",
+      "from": "artist:marvin-gaye",
+      "to": "genre:r-and-b",
+      "sources": [
+        "https://www.allmusic.com/genre/r-b-ma0000002809"
+      ]
+    },
+    {
+      "id": "key:james-brown-r-and-b",
+      "type": "key_artist_of",
+      "from": "artist:james-brown",
+      "to": "genre:r-and-b",
+      "sources": [
+        "https://www.allmusic.com/genre/r-b-ma0000002809"
+      ]
+    },
+    {
+      "id": "lineage:r-and-b-blues",
+      "type": "derived_from",
+      "from": "genre:r-and-b",
+      "to": "genre:blues",
+      "confidence": "high",
+      "note": "Postwar rhythm and blues grew from blues, jazz and gospel practices; it also helped shape later soul and rock.",
+      "sources": [
+        "https://www.allmusic.com/genre/r-b-ma0000002809"
+      ]
+    },
+    {
+      "id": "key:the-drifters-doo-wop",
+      "type": "key_artist_of",
+      "from": "artist:the-drifters",
+      "to": "genre:doo-wop",
+      "sources": [
+        "https://www.allmusic.com/genre/doo-wop-ma0000002556"
+      ]
+    },
+    {
+      "id": "key:the-platters-doo-wop",
+      "type": "key_artist_of",
+      "from": "artist:the-platters",
+      "to": "genre:doo-wop",
+      "sources": [
+        "https://www.allmusic.com/genre/doo-wop-ma0000002556"
+      ]
+    },
+    {
+      "id": "key:the-coasters-doo-wop",
+      "type": "key_artist_of",
+      "from": "artist:the-coasters",
+      "to": "genre:doo-wop",
+      "sources": [
+        "https://www.allmusic.com/genre/doo-wop-ma0000002556"
+      ]
+    },
+    {
+      "id": "lineage:doo-wop-r-and-b",
+      "type": "subgenre_of",
+      "from": "genre:doo-wop",
+      "to": "genre:r-and-b",
+      "confidence": "high",
+      "note": "Doo-wop is commonly treated as a vocal-group branch of rhythm and blues.",
+      "sources": [
+        "https://www.allmusic.com/genre/doo-wop-ma0000002556"
+      ]
+    },
+    {
+      "id": "key:dangelo-neo-soul",
+      "type": "key_artist_of",
+      "from": "artist:dangelo",
+      "to": "genre:neo-soul",
+      "sources": [
+        "https://www.allmusic.com/genre/neo-soul-ma0000004426"
+      ]
+    },
+    {
+      "id": "key:erykah-badu-neo-soul",
+      "type": "key_artist_of",
+      "from": "artist:erykah-badu",
+      "to": "genre:neo-soul",
+      "sources": [
+        "https://www.allmusic.com/genre/neo-soul-ma0000004426"
+      ]
+    },
+    {
+      "id": "key:lauryn-hill-neo-soul",
+      "type": "key_artist_of",
+      "from": "artist:lauryn-hill",
+      "to": "genre:neo-soul",
+      "sources": [
+        "https://www.allmusic.com/genre/neo-soul-ma0000004426"
+      ]
+    },
+    {
+      "id": "lineage:neo-soul-soul",
+      "type": "fusion_of",
+      "from": "genre:neo-soul",
+      "to": "genre:soul",
+      "confidence": "high",
+      "note": "Neo-soul renews soul vocal and instrumental traditions.",
+      "sources": [
+        "https://www.allmusic.com/genre/neo-soul-ma0000004426"
+      ]
+    },
+    {
+      "id": "lineage:neo-soul-hip-hop",
+      "type": "fusion_of",
+      "from": "genre:neo-soul",
+      "to": "genre:hip-hop",
+      "confidence": "high",
+      "note": "Hip-hop-era rhythms and production are central to the style’s emergence.",
+      "sources": [
+        "https://www.allmusic.com/genre/neo-soul-ma0000004426"
+      ]
+    },
+    {
+      "id": "key:the-skatalites-ska",
+      "type": "key_artist_of",
+      "from": "artist:the-skatalites",
+      "to": "genre:ska",
+      "sources": [
+        "https://www.allmusic.com/genre/ska-ma0000002857"
+      ]
+    },
+    {
+      "id": "key:prince-buster-ska",
+      "type": "key_artist_of",
+      "from": "artist:prince-buster",
+      "to": "genre:ska",
+      "sources": [
+        "https://www.allmusic.com/genre/ska-ma0000002857"
+      ]
+    },
+    {
+      "id": "key:desmond-dekker-ska",
+      "type": "key_artist_of",
+      "from": "artist:desmond-dekker",
+      "to": "genre:ska",
+      "sources": [
+        "https://www.allmusic.com/genre/ska-ma0000002857"
+      ]
+    },
+    {
+      "id": "lineage:ska-r-and-b",
+      "type": "influences",
+      "from": "genre:r-and-b",
+      "to": "genre:ska",
+      "confidence": "high",
+      "note": "Jamaican ska drew strongly on American R&B alongside local mento and calypso.",
+      "sources": [
+        "https://www.allmusic.com/genre/ska-ma0000002857"
+      ]
+    },
+    {
+      "id": "key:alton-ellis-rocksteady",
+      "type": "key_artist_of",
+      "from": "artist:alton-ellis",
+      "to": "genre:rocksteady",
+      "sources": [
+        "https://www.allmusic.com/genre/rocksteady-ma0000002830"
+      ]
+    },
+    {
+      "id": "key:ken-boothe-rocksteady",
+      "type": "key_artist_of",
+      "from": "artist:ken-boothe",
+      "to": "genre:rocksteady",
+      "sources": [
+        "https://www.allmusic.com/genre/rocksteady-ma0000002830"
+      ]
+    },
+    {
+      "id": "key:the-heptones-rocksteady",
+      "type": "key_artist_of",
+      "from": "artist:the-heptones",
+      "to": "genre:rocksteady",
+      "sources": [
+        "https://www.allmusic.com/genre/rocksteady-ma0000002830"
+      ]
+    },
+    {
+      "id": "lineage:rocksteady-ska",
+      "type": "derived_from",
+      "from": "genre:rocksteady",
+      "to": "genre:ska",
+      "confidence": "high",
+      "note": "Rocksteady emerged from ska in Jamaica in the mid-1960s.",
+      "sources": [
+        "https://www.allmusic.com/genre/rocksteady-ma0000002830"
+      ]
+    },
+    {
+      "id": "key:bob-marley-reggae",
+      "type": "key_artist_of",
+      "from": "artist:bob-marley",
+      "to": "genre:reggae",
+      "sources": [
+        "https://www.allmusic.com/genre/reggae-ma0000002820"
+      ]
+    },
+    {
+      "id": "key:toots-and-the-maytals-reggae",
+      "type": "key_artist_of",
+      "from": "artist:toots-and-the-maytals",
+      "to": "genre:reggae",
+      "sources": [
+        "https://www.allmusic.com/genre/reggae-ma0000002820"
+      ]
+    },
+    {
+      "id": "key:lee-scratch-perry-reggae",
+      "type": "key_artist_of",
+      "from": "artist:lee-scratch-perry",
+      "to": "genre:reggae",
+      "sources": [
+        "https://www.allmusic.com/genre/reggae-ma0000002820"
+      ]
+    },
+    {
+      "id": "lineage:reggae-rocksteady",
+      "type": "derived_from",
+      "from": "genre:reggae",
+      "to": "genre:rocksteady",
+      "confidence": "high",
+      "note": "Reggae took shape after rocksteady, while retaining links to ska and American R&B.",
+      "sources": [
+        "https://www.allmusic.com/genre/reggae-ma0000002820"
+      ]
+    },
+    {
+      "id": "key:king-tubby-dub",
+      "type": "key_artist_of",
+      "from": "artist:king-tubby",
+      "to": "genre:dub",
+      "sources": [
+        "https://www.allmusic.com/genre/dub-ma0000002559"
+      ]
+    },
+    {
+      "id": "key:scientist-dub",
+      "type": "key_artist_of",
+      "from": "artist:scientist",
+      "to": "genre:dub",
+      "sources": [
+        "https://www.allmusic.com/genre/dub-ma0000002559"
+      ]
+    },
+    {
+      "id": "key:lee-scratch-perry-dub",
+      "type": "key_artist_of",
+      "from": "artist:lee-scratch-perry",
+      "to": "genre:dub",
+      "sources": [
+        "https://www.allmusic.com/genre/dub-ma0000002559"
+      ]
+    },
+    {
+      "id": "lineage:dub-reggae",
+      "type": "subgenre_of",
+      "from": "genre:dub",
+      "to": "genre:reggae",
+      "confidence": "high",
+      "note": "Dub grew within reggae recording culture and remains closely related to reggae.",
+      "sources": [
+        "https://www.allmusic.com/genre/dub-ma0000002559"
+      ]
+    },
+    {
+      "id": "key:yellowman-dancehall",
+      "type": "key_artist_of",
+      "from": "artist:yellowman",
+      "to": "genre:dancehall",
+      "sources": [
+        "https://www.allmusic.com/style/dancehall-ma0000002545"
+      ]
+    },
+    {
+      "id": "key:shabba-ranks-dancehall",
+      "type": "key_artist_of",
+      "from": "artist:shabba-ranks",
+      "to": "genre:dancehall",
+      "sources": [
+        "https://www.allmusic.com/style/dancehall-ma0000002545"
+      ]
+    },
+    {
+      "id": "key:beenie-man-dancehall",
+      "type": "key_artist_of",
+      "from": "artist:beenie-man",
+      "to": "genre:dancehall",
+      "sources": [
+        "https://www.allmusic.com/style/dancehall-ma0000002545"
+      ]
+    },
+    {
+      "id": "lineage:dancehall-reggae",
+      "type": "derived_from",
+      "from": "genre:dancehall",
+      "to": "genre:reggae",
+      "confidence": "high",
+      "note": "Dancehall developed from Jamaican reggae culture and sound-system practice.",
+      "sources": [
+        "https://www.allmusic.com/genre/dancehall-ma0000002552"
+      ]
+    },
+    {
+      "id": "key:celia-cruz-latin",
+      "type": "key_artist_of",
+      "from": "artist:celia-cruz",
+      "to": "genre:latin",
+      "sources": [
+        "https://www.allmusic.com/genre/latin-ma0000002692"
+      ]
+    },
+    {
+      "id": "key:tito-puente-latin",
+      "type": "key_artist_of",
+      "from": "artist:tito-puente",
+      "to": "genre:latin",
+      "sources": [
+        "https://www.allmusic.com/genre/latin-ma0000002692"
+      ]
+    },
+    {
+      "id": "key:willie-colon-latin",
+      "type": "key_artist_of",
+      "from": "artist:willie-colon",
+      "to": "genre:latin",
+      "sources": [
+        "https://www.allmusic.com/genre/latin-ma0000002692"
+      ]
+    },
+    {
+      "id": "key:compay-segundo-son-cubano",
+      "type": "key_artist_of",
+      "from": "artist:compay-segundo",
+      "to": "genre:son-cubano",
+      "sources": [
+        "https://www.pbs.org/buenavista/music/a_son.html"
+      ]
+    },
+    {
+      "id": "key:ibrahim-ferrer-son-cubano",
+      "type": "key_artist_of",
+      "from": "artist:ibrahim-ferrer",
+      "to": "genre:son-cubano",
+      "sources": [
+        "https://www.pbs.org/buenavista/music/a_son.html"
+      ]
+    },
+    {
+      "id": "key:celia-cruz-son-cubano",
+      "type": "key_artist_of",
+      "from": "artist:celia-cruz",
+      "to": "genre:son-cubano",
+      "sources": [
+        "https://www.pbs.org/buenavista/music/a_son.html"
+      ]
+    },
+    {
+      "id": "lineage:son-cubano-latin",
+      "type": "subgenre_of",
+      "from": "genre:son-cubano",
+      "to": "genre:latin",
+      "confidence": "high",
+      "note": "Placed under Latin as a broad geographic-cultural umbrella for navigation, not as a single musical lineage.",
+      "sources": [
+        "https://www.allmusic.com/genre/latin-ma0000002692"
+      ]
+    },
+    {
+      "id": "key:celia-cruz-salsa",
+      "type": "key_artist_of",
+      "from": "artist:celia-cruz",
+      "to": "genre:salsa",
+      "sources": [
+        "https://www.allmusic.com/subgenre/salsa-ma0000002840"
+      ]
+    },
+    {
+      "id": "key:willie-colon-salsa",
+      "type": "key_artist_of",
+      "from": "artist:willie-colon",
+      "to": "genre:salsa",
+      "sources": [
+        "https://www.allmusic.com/subgenre/salsa-ma0000002840"
+      ]
+    },
+    {
+      "id": "key:tito-puente-salsa",
+      "type": "key_artist_of",
+      "from": "artist:tito-puente",
+      "to": "genre:salsa",
+      "sources": [
+        "https://www.allmusic.com/subgenre/salsa-ma0000002840"
+      ]
+    },
+    {
+      "id": "lineage:salsa-son-cubano",
+      "type": "derived_from",
+      "from": "genre:salsa",
+      "to": "genre:son-cubano",
+      "confidence": "high",
+      "note": "Cuban son is one of salsa’s central musical foundations; salsa also draws on other Caribbean forms.",
+      "sources": [
+        "https://www.academicworks.cuny.edu/jj_pubs/315/"
+      ]
+    },
+    {
+      "id": "lineage:salsa-latin",
+      "type": "subgenre_of",
+      "from": "genre:salsa",
+      "to": "genre:latin",
+      "confidence": "high",
+      "note": "Placed under the broad Latin umbrella, not as an exclusive origin claim.",
+      "sources": [
+        "https://www.allmusic.com/genre/latin-ma0000002692"
+      ]
+    },
+    {
+      "id": "key:antonio-carlos-jobim-bossa-nova",
+      "type": "key_artist_of",
+      "from": "artist:antonio-carlos-jobim",
+      "to": "genre:bossa-nova",
+      "sources": [
+        "https://www.allmusic.com/genre/bossa-nova-ma0000002548"
+      ]
+    },
+    {
+      "id": "key:joao-gilberto-bossa-nova",
+      "type": "key_artist_of",
+      "from": "artist:joao-gilberto",
+      "to": "genre:bossa-nova",
+      "sources": [
+        "https://www.allmusic.com/genre/bossa-nova-ma0000002548"
+      ]
+    },
+    {
+      "id": "key:astrud-gilberto-bossa-nova",
+      "type": "key_artist_of",
+      "from": "artist:astrud-gilberto",
+      "to": "genre:bossa-nova",
+      "sources": [
+        "https://www.allmusic.com/genre/bossa-nova-ma0000002548"
+      ]
+    },
+    {
+      "id": "lineage:bossa-nova-latin",
+      "type": "subgenre_of",
+      "from": "genre:bossa-nova",
+      "to": "genre:latin",
+      "confidence": "high",
+      "note": "A Brazilian tradition placed within the broad Latin umbrella for navigation.",
+      "sources": [
+        "https://www.allmusic.com/genre/latin-ma0000002692"
+      ]
+    },
+    {
+      "id": "lineage:bossa-nova-jazz",
+      "type": "cross_pollination",
+      "from": "genre:bossa-nova",
+      "to": "genre:jazz",
+      "confidence": "high",
+      "note": "Bossa nova’s formation involved exchange with cool jazz and jazz musicians.",
+      "sources": [
+        "https://www.allmusic.com/genre/bossa-nova-ma0000002548"
+      ]
+    },
+    {
+      "id": "lineage:cumbia-latin",
+      "type": "subgenre_of",
+      "from": "genre:cumbia",
+      "to": "genre:latin",
+      "confidence": "high",
+      "note": "Placed under the broad Latin umbrella; cumbia has distinct Colombian roots and regional histories.",
+      "sources": [
+        "https://www.allmusic.com/genre/latin-ma0000002692"
+      ]
+    },
+    {
+      "id": "key:et-mensah-highlife",
+      "type": "key_artist_of",
+      "from": "artist:et-mensah",
+      "to": "genre:highlife",
+      "sources": [
+        "https://www.allmusic.com/style/highlife-ma0000002637/songs"
+      ]
+    },
+    {
+      "id": "key:osibisa-highlife",
+      "type": "key_artist_of",
+      "from": "artist:osibisa",
+      "to": "genre:highlife",
+      "sources": [
+        "https://www.allmusic.com/style/highlife-ma0000002637/songs"
+      ]
+    },
+    {
+      "id": "key:king-sunny-ade-highlife",
+      "type": "key_artist_of",
+      "from": "artist:king-sunny-ade",
+      "to": "genre:highlife",
+      "sources": [
+        "https://www.allmusic.com/style/highlife-ma0000002637/songs"
+      ]
+    },
+    {
+      "id": "lineage:highlife-jazz",
+      "type": "cross_pollination",
+      "from": "genre:highlife",
+      "to": "genre:jazz",
+      "confidence": "high",
+      "note": "Highlife horn-band and guitar-band forms developed through exchanges with jazz and other Atlantic popular musics.",
+      "sources": [
+        "https://www.allmusic.com/style/highlife-ma0000002637/songs"
+      ]
+    },
+    {
+      "id": "key:fela-kuti-afrobeat",
+      "type": "key_artist_of",
+      "from": "artist:fela-kuti",
+      "to": "genre:afrobeat",
+      "sources": [
+        "https://www.allmusic.com/style/afro-beat-ma0000004495"
+      ]
+    },
+    {
+      "id": "key:tony-allen-afrobeat",
+      "type": "key_artist_of",
+      "from": "artist:tony-allen",
+      "to": "genre:afrobeat",
+      "sources": [
+        "https://www.allmusic.com/style/afro-beat-ma0000004495"
+      ]
+    },
+    {
+      "id": "key:africa-70-afrobeat",
+      "type": "key_artist_of",
+      "from": "artist:africa-70",
+      "to": "genre:afrobeat",
+      "sources": [
+        "https://www.allmusic.com/style/afro-beat-ma0000004495"
+      ]
+    },
+    {
+      "id": "lineage:afrobeat-highlife",
+      "type": "fusion_of",
+      "from": "genre:afrobeat",
+      "to": "genre:highlife",
+      "confidence": "high",
+      "note": "Highlife is one of Afrobeat’s documented musical ingredients.",
+      "sources": [
+        "https://www.allmusic.com/style/afro-beat-ma0000004495"
+      ]
+    },
+    {
+      "id": "lineage:afrobeat-funk",
+      "type": "fusion_of",
+      "from": "genre:afrobeat",
+      "to": "genre:funk",
+      "confidence": "high",
+      "note": "Fela Kuti and Tony Allen combined funk with West African rhythmic traditions.",
+      "sources": [
+        "https://www.allmusic.com/style/afro-beat-ma0000004495"
+      ]
+    },
+    {
+      "id": "key:wizkid-afrobeats",
+      "type": "key_artist_of",
+      "from": "artist:wizkid",
+      "to": "genre:afrobeats",
+      "sources": [
+        "https://www.allmusic.com/artist/mn0003081520"
+      ]
+    },
+    {
+      "id": "key:burna-boy-afrobeats",
+      "type": "key_artist_of",
+      "from": "artist:burna-boy",
+      "to": "genre:afrobeats",
+      "sources": [
+        "https://www.allmusic.com/artist/burna-boy-mn0003297650"
+      ]
+    },
+    {
+      "id": "key:davido-afrobeats",
+      "type": "key_artist_of",
+      "from": "artist:davido",
+      "to": "genre:afrobeats",
+      "sources": [
+        "https://www.allmusic.com/artist/davido-mn0003057150"
+      ]
+    },
+    {
+      "id": "lineage:afrobeats-hip-hop",
+      "type": "cross_pollination",
+      "from": "genre:afrobeats",
+      "to": "genre:hip-hop",
+      "confidence": "high",
+      "note": "Contemporary Afrobeats scenes exchange sounds with global hip-hop and pop; this does not imply descent from Fela’s Afrobeat.",
+      "sources": [
+        "https://online.ucpress.edu/jpms/article-abstract/36/4/25/203941/Genre-or-HypernymDeconstructing-Afrobeats-in-the?redirectedFrom=fulltext"
+      ]
+    },
+    {
+      "id": "key:psy-k-pop",
+      "type": "key_artist_of",
+      "from": "artist:psy",
+      "to": "genre:k-pop",
+      "sources": [
+        "https://www.allmusic.com/style/k-pop-ma0000011907"
+      ]
+    },
+    {
+      "id": "key:bts-k-pop",
+      "type": "key_artist_of",
+      "from": "artist:bts",
+      "to": "genre:k-pop",
+      "sources": [
+        "https://www.allmusic.com/style/k-pop-ma0000011907"
+      ]
+    },
+    {
+      "id": "key:blackpink-k-pop",
+      "type": "key_artist_of",
+      "from": "artist:blackpink",
+      "to": "genre:k-pop",
+      "sources": [
+        "https://www.allmusic.com/style/k-pop-ma0000011907"
+      ]
+    },
+    {
+      "id": "lineage:k-pop-pop",
+      "type": "subgenre_of",
+      "from": "genre:k-pop",
+      "to": "genre:pop",
+      "confidence": "high",
+      "note": "K-pop is a national popular-music field with multiple styles, placed under pop as a broad category.",
+      "sources": [
+        "https://www.allmusic.com/style/k-pop-ma0000011907"
+      ]
+    },
+    {
+      "id": "key:utada-hikaru-j-pop",
+      "type": "key_artist_of",
+      "from": "artist:utada-hikaru",
+      "to": "genre:j-pop",
+      "sources": [
+        "https://www.allmusic.com/style/j-pop-ma0000004490"
+      ]
+    },
+    {
+      "id": "key:perfume-j-pop",
+      "type": "key_artist_of",
+      "from": "artist:perfume",
+      "to": "genre:j-pop",
+      "sources": [
+        "https://www.allmusic.com/style/j-pop-ma0000004490"
+      ]
+    },
+    {
+      "id": "lineage:j-pop-pop",
+      "type": "subgenre_of",
+      "from": "genre:j-pop",
+      "to": "genre:pop",
+      "confidence": "high",
+      "note": "J-pop is a broad national popular-music category, not a single-origin subgenre.",
+      "sources": [
+        "https://www.allmusic.com/style/j-pop-ma0000004490"
+      ]
+    },
+    {
+      "id": "key:dick-dale-surf-rock",
+      "type": "key_artist_of",
+      "from": "artist:dick-dale",
+      "to": "genre:surf-rock",
+      "sources": [
+        "https://www.allmusic.com/style/surf-ma0000002883"
+      ]
+    },
+    {
+      "id": "key:the-ventures-surf-rock",
+      "type": "key_artist_of",
+      "from": "artist:the-ventures",
+      "to": "genre:surf-rock",
+      "sources": [
+        "https://www.allmusic.com/style/surf-ma0000002883"
+      ]
+    },
+    {
+      "id": "key:the-beach-boys-surf-rock",
+      "type": "key_artist_of",
+      "from": "artist:the-beach-boys",
+      "to": "genre:surf-rock",
+      "sources": [
+        "https://www.allmusic.com/style/surf-ma0000002883"
+      ]
+    },
+    {
+      "id": "lineage:surf-rock-rock-and-roll",
+      "type": "subgenre_of",
+      "from": "genre:surf-rock",
+      "to": "genre:rock-and-roll",
+      "confidence": "high",
+      "note": "Surf rock is an instrumental branch of early rock and roll.",
+      "sources": [
+        "https://www.allmusic.com/genre/surf-ma0000002868"
+      ]
+    },
+    {
+      "id": "key:talking-heads-new-wave",
+      "type": "key_artist_of",
+      "from": "artist:talking-heads",
+      "to": "genre:new-wave",
+      "sources": [
+        "https://www.allmusic.com/genre/new-wave-ma0000002750"
+      ]
+    },
+    {
+      "id": "key:the-cure-new-wave",
+      "type": "key_artist_of",
+      "from": "artist:the-cure",
+      "to": "genre:new-wave",
+      "sources": [
+        "https://www.allmusic.com/genre/new-wave-ma0000002750"
+      ]
+    },
+    {
+      "id": "key:the-human-league-new-wave",
+      "type": "key_artist_of",
+      "from": "artist:the-human-league",
+      "to": "genre:new-wave",
+      "sources": [
+        "https://www.allmusic.com/genre/new-wave-ma0000002750"
+      ]
+    },
+    {
+      "id": "lineage:new-wave-punk-rock",
+      "type": "derived_from",
+      "from": "genre:new-wave",
+      "to": "genre:punk-rock",
+      "confidence": "high",
+      "note": "New wave emerged alongside punk and shared personnel and venues, while branching into more pop-oriented and electronic forms.",
+      "sources": [
+        "https://www.allmusic.com/style/new-wave-ma0000002745"
+      ]
+    },
+    {
+      "id": "key:metallica-thrash-metal",
+      "type": "key_artist_of",
+      "from": "artist:metallica",
+      "to": "genre:thrash-metal",
+      "sources": [
+        "https://www.allmusic.com/genre/speed-thrash-metal-ma0000002874"
+      ]
+    },
+    {
+      "id": "key:megadeth-thrash-metal",
+      "type": "key_artist_of",
+      "from": "artist:megadeth",
+      "to": "genre:thrash-metal",
+      "sources": [
+        "https://www.allmusic.com/genre/speed-thrash-metal-ma0000002874"
+      ]
+    },
+    {
+      "id": "key:slayer-thrash-metal",
+      "type": "key_artist_of",
+      "from": "artist:slayer",
+      "to": "genre:thrash-metal",
+      "sources": [
+        "https://www.allmusic.com/genre/speed-thrash-metal-ma0000002874"
+      ]
+    },
+    {
+      "id": "lineage:thrash-metal-heavy-metal",
+      "type": "subgenre_of",
+      "from": "genre:thrash-metal",
+      "to": "genre:heavy-metal",
+      "confidence": "high",
+      "note": "Thrash is a branch of heavy metal.",
+      "sources": [
+        "https://www.allmusic.com/genre/speed-thrash-metal-ma0000002874"
+      ]
+    },
+    {
+      "id": "key:death-death-metal",
+      "type": "key_artist_of",
+      "from": "artist:death",
+      "to": "genre:death-metal",
+      "sources": [
+        "https://www.allmusic.com/genre/death-metal-ma0000002547"
+      ]
+    },
+    {
+      "id": "key:morbid-angel-death-metal",
+      "type": "key_artist_of",
+      "from": "artist:morbid-angel",
+      "to": "genre:death-metal",
+      "sources": [
+        "https://www.allmusic.com/genre/death-metal-ma0000002547"
+      ]
+    },
+    {
+      "id": "key:cannibal-corpse-death-metal",
+      "type": "key_artist_of",
+      "from": "artist:cannibal-corpse",
+      "to": "genre:death-metal",
+      "sources": [
+        "https://www.allmusic.com/genre/death-metal-ma0000002547"
+      ]
+    },
+    {
+      "id": "lineage:death-metal-thrash-metal",
+      "type": "derived_from",
+      "from": "genre:death-metal",
+      "to": "genre:thrash-metal",
+      "confidence": "high",
+      "note": "Death metal grew out of late-1980s thrash, while also drawing on earlier heavy metal.",
+      "sources": [
+        "https://www.allmusic.com/genre/death-metal-ma0000002547"
+      ]
+    },
+    {
+      "id": "key:mayhem-black-metal",
+      "type": "key_artist_of",
+      "from": "artist:mayhem",
+      "to": "genre:black-metal",
+      "sources": [
+        "https://www.allmusic.com/style/black-metal-ma0000002463"
+      ]
+    },
+    {
+      "id": "key:burzum-black-metal",
+      "type": "key_artist_of",
+      "from": "artist:burzum",
+      "to": "genre:black-metal",
+      "sources": [
+        "https://www.allmusic.com/style/black-metal-ma0000002463"
+      ]
+    },
+    {
+      "id": "key:darkthrone-black-metal",
+      "type": "key_artist_of",
+      "from": "artist:darkthrone",
+      "to": "genre:black-metal",
+      "sources": [
+        "https://www.allmusic.com/style/black-metal-ma0000002463"
+      ]
+    },
+    {
+      "id": "lineage:black-metal-heavy-metal",
+      "type": "derived_from",
+      "from": "genre:black-metal",
+      "to": "genre:heavy-metal",
+      "confidence": "high",
+      "note": "Black metal developed within heavy metal and later formed distinct regional scenes.",
+      "sources": [
+        "https://www.allmusic.com/style/black-metal-ma0000002463"
+      ]
+    },
+    {
+      "id": "key:saint-vitus-doom-metal",
+      "type": "key_artist_of",
+      "from": "artist:saint-vitus",
+      "to": "genre:doom-metal",
+      "sources": [
+        "https://www.allmusic.com/genre/doom-metal-ma0000004496"
+      ]
+    },
+    {
+      "id": "key:trouble-doom-metal",
+      "type": "key_artist_of",
+      "from": "artist:trouble",
+      "to": "genre:doom-metal",
+      "sources": [
+        "https://www.allmusic.com/genre/doom-metal-ma0000004496"
+      ]
+    },
+    {
+      "id": "key:candlemass-doom-metal",
+      "type": "key_artist_of",
+      "from": "artist:candlemass",
+      "to": "genre:doom-metal",
+      "sources": [
+        "https://www.allmusic.com/genre/doom-metal-ma0000004496"
+      ]
+    },
+    {
+      "id": "lineage:doom-metal-heavy-metal",
+      "type": "subgenre_of",
+      "from": "genre:doom-metal",
+      "to": "genre:heavy-metal",
+      "confidence": "high",
+      "note": "Doom is a recognized heavy-metal subgenre with strong early Black Sabbath influence.",
+      "sources": [
+        "https://www.allmusic.com/genre/doom-metal-ma0000004496"
+      ]
+    },
+    {
+      "id": "key:dizzee-rascal-grime",
+      "type": "key_artist_of",
+      "from": "artist:dizzee-rascal",
+      "to": "genre:grime",
+      "sources": [
+        "https://www.allmusic.com/style/grime-ma0000004464"
+      ]
+    },
+    {
+      "id": "key:wiley-grime",
+      "type": "key_artist_of",
+      "from": "artist:wiley",
+      "to": "genre:grime",
+      "sources": [
+        "https://www.allmusic.com/style/grime-ma0000004464"
+      ]
+    },
+    {
+      "id": "key:skepta-grime",
+      "type": "key_artist_of",
+      "from": "artist:skepta",
+      "to": "genre:grime",
+      "sources": [
+        "https://www.allmusic.com/style/grime-ma0000004464"
+      ]
+    },
+    {
+      "id": "lineage:grime-uk-garage",
+      "type": "derived_from",
+      "from": "genre:grime",
+      "to": "genre:uk-garage",
+      "confidence": "high",
+      "note": "Grime grew from UK garage and related pirate-radio scenes, while becoming a distinct MC-led style.",
+      "sources": [
+        "https://www.allmusic.com/style/grime-ma0000004464"
+      ]
+    },
+    {
+      "id": "key:ti-trap-rap",
+      "type": "key_artist_of",
+      "from": "artist:ti",
+      "to": "genre:trap-rap",
+      "sources": [
+        "https://www.allmusic.com/genre/trap-rap-ma0000013576"
+      ]
+    },
+    {
+      "id": "key:gucci-mane-trap-rap",
+      "type": "key_artist_of",
+      "from": "artist:gucci-mane",
+      "to": "genre:trap-rap",
+      "sources": [
+        "https://www.allmusic.com/genre/trap-rap-ma0000013576"
+      ]
+    },
+    {
+      "id": "key:future-trap-rap",
+      "type": "key_artist_of",
+      "from": "artist:future",
+      "to": "genre:trap-rap",
+      "sources": [
+        "https://www.allmusic.com/genre/trap-rap-ma0000013576"
+      ]
+    },
+    {
+      "id": "lineage:trap-rap-hip-hop",
+      "type": "subgenre_of",
+      "from": "genre:trap-rap",
+      "to": "genre:hip-hop",
+      "confidence": "high",
+      "note": "Trap rap is a branch of hip-hop associated with Southern US scenes.",
+      "sources": [
+        "https://www.allmusic.com/genre/trap-rap-ma0000013576"
+      ]
+    },
+    {
+      "id": "key:chief-keef-drill",
+      "type": "key_artist_of",
+      "from": "artist:chief-keef",
+      "to": "genre:drill",
+      "sources": [
+        "https://www.allmusic.com/genre/drill-ma0000013643"
+      ]
+    },
+    {
+      "id": "key:pop-smoke-drill",
+      "type": "key_artist_of",
+      "from": "artist:pop-smoke",
+      "to": "genre:drill",
+      "sources": [
+        "https://www.allmusic.com/genre/drill-ma0000013643"
+      ]
+    },
+    {
+      "id": "key:lil-durk-drill",
+      "type": "key_artist_of",
+      "from": "artist:lil-durk",
+      "to": "genre:drill",
+      "sources": [
+        "https://www.allmusic.com/genre/drill-ma0000013643"
+      ]
+    },
+    {
+      "id": "lineage:drill-hip-hop",
+      "type": "subgenre_of",
+      "from": "genre:drill",
+      "to": "genre:hip-hop",
+      "confidence": "high",
+      "note": "Drill is a hip-hop style whose sound and context vary across local scenes.",
+      "sources": [
+        "https://www.allmusic.com/genre/drill-ma0000013643"
+      ]
+    },
+    {
+      "id": "key:headhunterz-hardstyle",
+      "type": "key_artist_of",
+      "from": "artist:headhunterz",
+      "to": "genre:hardstyle",
+      "sources": [
+        "https://www.allmusic.com/album/hardstyle-10-years-mw0002452091"
+      ]
+    },
+    {
+      "id": "key:showtek-hardstyle",
+      "type": "key_artist_of",
+      "from": "artist:showtek",
+      "to": "genre:hardstyle",
+      "sources": [
+        "https://www.allmusic.com/album/hardstyle-10-years-mw0002452091"
+      ]
+    },
+    {
+      "id": "key:wildstylez-hardstyle",
+      "type": "key_artist_of",
+      "from": "artist:wildstylez",
+      "to": "genre:hardstyle",
+      "sources": [
+        "https://www.allmusic.com/album/hardstyle-10-years-mw0002452091"
+      ]
+    },
+    {
+      "id": "key:infected-mushroom-psytrance",
+      "type": "key_artist_of",
+      "from": "artist:infected-mushroom",
+      "to": "genre:psytrance",
+      "sources": [
+        "https://www.allmusic.com/style/goa-trance-ma0000011977"
+      ]
+    },
+    {
+      "id": "key:astral-projection-psytrance",
+      "type": "key_artist_of",
+      "from": "artist:astral-projection",
+      "to": "genre:psytrance",
+      "sources": [
+        "https://www.allmusic.com/style/goa-trance-ma0000011977"
+      ]
+    },
+    {
+      "id": "key:goa-gil-psytrance",
+      "type": "key_artist_of",
+      "from": "artist:goa-gil",
+      "to": "genre:psytrance",
+      "sources": [
+        "https://www.allmusic.com/style/goa-trance-ma0000011977"
+      ]
+    },
+    {
+      "id": "lineage:psytrance-trance",
+      "type": "derived_from",
+      "from": "genre:psytrance",
+      "to": "genre:trance",
+      "confidence": "high",
+      "note": "Psytrance developed from trance in Goa and related psychedelic dance scenes.",
+      "sources": [
+        "https://www.allmusic.com/style/goa-trance-ma0000011947"
+      ]
+    },
+    {
+      "id": "key:carlos-vives-cumbia",
+      "type": "key_artist_of",
+      "from": "artist:carlos-vives",
+      "to": "genre:cumbia",
+      "sources": [
+        "https://www.allmusic.com/genre/cumbia-ma0000002541"
+      ]
+    },
+    {
+      "id": "key:los-angeles-azules-cumbia",
+      "type": "key_artist_of",
+      "from": "artist:los-angeles-azules",
+      "to": "genre:cumbia",
+      "sources": [
+        "https://www.allmusic.com/genre/cumbia-ma0000002541"
+      ]
+    },
+    {
+      "id": "key:selena-cumbia",
+      "type": "key_artist_of",
+      "from": "artist:selena",
+      "to": "genre:cumbia",
+      "sources": [
+        "https://www.allmusic.com/genre/cumbia-ma0000002541"
+      ]
+    },
+    {
+      "id": "key:tujamo-electro-house",
+      "type": "key_artist_of",
+      "from": "artist:tujamo",
+      "to": "genre:electro-house",
+      "sources": [
+        "https://www.allmusic.com/artist/tujamo-mn0002643637"
+      ]
+    },
+    {
+      "id": "key:hardwell-electro-house",
+      "type": "key_artist_of",
+      "from": "artist:hardwell",
+      "to": "genre:electro-house",
+      "sources": [
+        "https://www.allmusic.com/artist/hardwell-mn0001002468"
+      ]
+    },
+    {
+      "id": "key:deadmau5-electro-house",
+      "type": "key_artist_of",
+      "from": "artist:deadmau5",
+      "to": "genre:electro-house",
+      "sources": [
+        "https://www.allmusic.com/artist/deadmau5-mn0000879144"
+      ]
+    },
+    {
+      "id": "lineage:electro-house-house",
+      "type": "fusion_of",
+      "from": "genre:electro-house",
+      "to": "genre:house",
+      "confidence": "high",
+      "note": "AllMusic describes electro house as a blend of house drum patterns and electro synth timbres.",
+      "sources": [
+        "https://www.allmusic.com/album/dirty-electro-house-mw0001174015"
+      ]
+    },
+    {
+      "id": "lineage:electro-house-electro",
+      "type": "fusion_of",
+      "from": "genre:electro-house",
+      "to": "genre:electro",
+      "confidence": "high",
+      "note": "AllMusic describes electro house as a blend of house drum patterns and electro synth timbres.",
+      "sources": [
+        "https://www.allmusic.com/album/dirty-electro-house-mw0001174015"
+      ]
+    },
+    {
+      "id": "lineage:hardstyle-trance",
+      "type": "fusion_of",
+      "from": "genre:hardstyle",
+      "to": "genre:trance",
+      "confidence": "medium",
+      "note": "Hardstyle incorporated hard-trance and hardcore influences; this is a broad lineage summary, not an exclusive origin.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hardstyle"
+      ]
+    },
+    {
+      "id": "lineage:hardstyle-gabber",
+      "type": "fusion_of",
+      "from": "genre:hardstyle",
+      "to": "genre:gabber",
+      "confidence": "medium",
+      "note": "Hardstyle incorporated hard-trance and hardcore influences; this is a broad lineage summary, not an exclusive origin.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hardstyle"
+      ]
+    },
+    {
+      "id": "key:pizzicato-five-j-pop",
+      "type": "key_artist_of",
+      "from": "artist:pizzicato-five",
+      "to": "genre:j-pop",
+      "sources": [
+        "https://www.allmusic.com/style/j-pop-ma0000004490/artists"
       ]
     }
   ]
