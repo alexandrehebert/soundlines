@@ -35,6 +35,15 @@ body {
   cursor: grabbing;
 }
 
+[data-timeline-bar] [data-bar-selection-outline] {
+  visibility: hidden;
+}
+
+[data-timeline-bar][aria-pressed="true"] [data-bar-selection-outline],
+[data-timeline-bar]:focus-visible [data-bar-selection-outline] {
+  visibility: visible;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

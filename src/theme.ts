@@ -1,5 +1,21 @@
 import type { EdgeType, GenreFamily, NodeType, Period } from './graph/types.ts'
 
+export const DEFAULT_BUBBLE_ZOOM = 0.75
+
+export const SELECTION_BORDER = {
+  borderStyle: 'solid',
+  borderColor: '#f8fafc',
+  borderWidth: 1.5,
+} as const
+
+export const SELECTION_OUTLINE = {
+  outlineStyle: 'auto',
+  outlineWidth: 5,
+  // Keep the automatic outline if the browser does not support this system color.
+  outlineColor: '-webkit-focus-ring-color',
+  outlineOffset: 4,
+} as const
+
 export const FAMILY_COLORS: Record<GenreFamily, string> = {
   classical: '#fda4af',
   'blues-soul': '#f59e0b',

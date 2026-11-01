@@ -1,0 +1,43 @@
+#page-loading {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  background: rgb(2 6 23 / 92%);
+  backdrop-filter: blur(8px);
+  color: #a78bfa;
+  cursor: progress;
+  opacity: 1;
+  visibility: visible;
+  transition: none;
+}
+
+#page-loading[data-loading="false"] {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 400ms ease, visibility 0s 400ms;
+}
+
+.page-loading-vinyl {
+  width: clamp(120px, 24vw, 180px);
+  height: auto;
+  filter: drop-shadow(0 0 28px rgb(139 92 246 / 35%));
+  animation: page-loading-spin 1.8s linear infinite;
+}
+
+@keyframes page-loading-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #page-loading,
+  #page-loading[data-loading="false"] {
+    transition: none;
+  }
+
+  .page-loading-vinyl {
+    animation: none;
+  }
+}

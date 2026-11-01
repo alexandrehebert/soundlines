@@ -10,9 +10,19 @@
     />
     <meta name="theme-color" content="#020617" />
     <title>Soundlines</title>
+    <link rel="stylesheet" href="/src/pageLoading.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="page-loading" role="status" aria-label="Loading Soundlines" data-loading="true">
+      <svg class="page-loading-vinyl" xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M6 12c0-1.7.7-3.2 1.8-4.2" />
+        <circle cx="12" cy="12" r="2" />
+        <path d="M18 12c0 1.7-.7 3.2-1.8 4.2" />
+      </svg>
+    </div>
+    <noscript><style>#page-loading { display: none; }</style>Soundlines requires JavaScript to explore the music map.</noscript>
+    <div id="root" aria-busy="true"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

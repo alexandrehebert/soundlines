@@ -3,11 +3,8 @@ import { useExplorer } from '../ExplorerContext.ts'
 import { layoutGenreBubbles } from '../graph/bubbles.ts'
 import { lineageHighlight, lineageSource, lineageTarget } from '../graph/graph.ts'
 import { FAMILY_LABELS, FAMILY_ORDER } from '../graph/types.ts'
-import { FAMILY_COLORS } from '../theme.ts'
+import { DEFAULT_BUBBLE_ZOOM, FAMILY_COLORS, SELECTION_BORDER, SELECTION_OUTLINE } from '../theme.ts'
 import { bubbleScrollOffset } from './bubbleViewport.ts'
-
-const SELECTION_OUTLINE_WIDTH = 5
-const SELECTION_OUTLINE_OFFSET = 4
 
 export function GenreBubbles() {
   const { model, selectedId, selectNode } = useExplorer()
@@ -22,7 +19,7 @@ export function GenreBubbles() {
     () => lineageHighlight(model.index, focusId, model.orientation), [focusId, model],
   )
   const surface = useRef<HTMLDivElement>(null)
-  const [zoom, setZoom] = useState(0.75)
+  const [zoom, setZoom] = useState(DEFAULT_BUBBLE_ZOOM)
   const previousZoom = useRef<number | null>(null)
   const drag = useRef<{ x: number; y: number; left: number; top: number } | null>(null)
 
@@ -47,7 +44,7 @@ export function GenreBubbles() {
       if (!selected) return
       const bounds = selected.getBoundingClientRect()
       // The button's bounding box includes the map's zoom; outline widths do not.
-      const outset = (SELECTION_OUTLINE_WIDTH + SELECTION_OUTLINE_OFFSET) * bounds.width / selected.offsetWidth
+      const outset = (SELECTION_OUTLINE.outlineWidth + SELECTION_OUTLINE.outlineOffset) * bounds.width / selected.offsetWidth
       const offset = bubbleScrollOffset(
         element.getBoundingClientRect(),
         {
@@ -188,13 +185,9 @@ export function GenreBubbles() {
                       top: y - diameter / 2,
                       width: diameter,
                       height: diameter,
-                      borderColor: selected ? '#f8fafc' : color,
-                      borderWidth: selected ? 1.5 : 1,
-                      outlineStyle: selected ? 'auto' : undefined,
-                      outlineWidth: selected ? SELECTION_OUTLINE_WIDTH : undefined,
-                      // Keep the automatic outline if the browser does not support this system color.
-                      outlineColor: selected ? '-webkit-focus-ring-color' : undefined,
-                      outlineOffset: selected ? SELECTION_OUTLINE_OFFSET : undefined,
+                      ...(selected
+                        ? { ...SELECTION_BORDER, ...SELECTION_OUTLINE }
+                        : { borderColor: color, borderWidth: 1 }),
                       opacity: dimmed ? 0.2 : 1,
                       background: `radial-gradient(circle at 35% 25%, color-mix(in srgb, ${color} ${selected ? 55 + intensity * 40 : 30 + intensity * 65}%, #0f172a), color-mix(in srgb, ${color} ${selected ? 30 + intensity * 20 : 12 + intensity * 38}%, #020617))`,
                       boxShadow: `inset 0 1px 0 ${color}50`,

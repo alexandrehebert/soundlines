@@ -9,7 +9,8 @@ import {
   visibilityStops,
 } from '../../graph/phases.ts'
 import { prominenceLabels } from '../../graph/types.ts'
-import { BAR_H, barShape, labelX, tailFadeOffset, type BarPosition, type OffscreenIndicator } from './geometry.ts'
+import { DEFAULT_BUBBLE_ZOOM, SELECTION_BORDER, SELECTION_OUTLINE } from '../../theme.ts'
+import { BAR_H, barBounds, barShape, labelX, tailFadeOffset, type BarPosition, type OffscreenIndicator } from './geometry.ts'
 
 interface TimelineBarProps {
   bar: BarPosition
@@ -20,11 +21,37 @@ interface TimelineBarProps {
   onSelect: (id: string, revealYear?: number) => void
 }
 
+function BarSelectionOutline({ x, y, width, ended = false }: {
+  x: number
+  y: number
+  width: number
+  ended?: boolean
+}) {
+  const radius = BAR_H / 2 / DEFAULT_BUBBLE_ZOOM
+  return (
+    <foreignObject data-bar-selection-outline="" x={x} y={y} width={width} height={BAR_H}
+      overflow="visible" pointerEvents="none" aria-hidden="true">
+      {/* HTML follows the rounded border; SVG native outlines use its bounding box. */}
+      <div style={{
+        boxSizing: 'border-box',
+        width: width / DEFAULT_BUBBLE_ZOOM,
+        height: BAR_H / DEFAULT_BUBBLE_ZOOM,
+        borderRadius: ended ? `${radius}px 0 0 ${radius}px` : radius,
+        ...SELECTION_BORDER,
+        ...SELECTION_OUTLINE,
+        transform: `scale(${DEFAULT_BUBBLE_ZOOM})`,
+        transformOrigin: 'top left',
+      }} />
+    </foreignObject>
+  )
+}
+
 export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }: TimelineBarProps) {
   const { selectedId, selectNode, viewRange, setViewRange } = useExplorer()
   if (!bar.visibleSpans.length) return null
   const isSelected = bar.node.id === selectedId
   const shape = barShape(bar)
+  const bounds = barBounds(bar)
   const phases = prominencePhases(bar.node, bar.end)
   const stops = intensityStops(bar.node, bar.end)
   const visibility = visibilityStops(bar.node, bar.end)
@@ -39,6 +66,7 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
   const labels = prominenceLabels(bar.node.type)
   const revealYear = indicator ? xToYear(scale, indicator.targetX) : undefined
   const offscreenLabel = indicator ? `${bar.node.name} · off-screen to the ${indicator.direction}; activate to reveal` : null
+  const maskPadding = Math.max(4, (SELECTION_OUTLINE.outlineWidth + SELECTION_OUTLINE.outlineOffset) * DEFAULT_BUBBLE_ZOOM)
 
   return (
     <g
@@ -50,7 +78,7 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
       aria-label={offscreenLabel ?? bar.node.name}
       aria-pressed={isSelected}
       opacity={dimmed ? 0.2 : 1}
-      style={{ cursor: 'pointer', transition: 'opacity 150ms' }}
+      style={{ cursor: 'pointer', transition: 'opacity 150ms', outline: 'none' }}
       onPointerEnter={(event) => {
         if (event.pointerType === 'mouse') onHover(bar.node.id)
         else onHover(null)
@@ -75,12 +103,15 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
         <clipPath id={clipId}><path d={shape} /></clipPath>
         {bar.ended && (
           <>
-            <linearGradient id={`${tailId}-gradient`} x1="0" y1="0" x2="1" y2="0">
+            <linearGradient id={`${tailId}-gradient`} gradientUnits="userSpaceOnUse"
+              x1={bounds.x} y1={bar.yCenter} x2={bounds.x + bounds.width} y2={bar.yCenter}>
               <stop offset={tailFadeOffset(bar)} stopColor="#fff" stopOpacity="1" />
               <stop offset="1" stopColor="#fff" stopOpacity="0.05" />
             </linearGradient>
-            <mask id={tailId} maskContentUnits="objectBoundingBox">
-              <rect x="0" y="0" width="1" height="1" fill={`url(#${tailId}-gradient)`} />
+            <mask id={tailId} maskUnits="userSpaceOnUse"
+              x={bounds.x - maskPadding} y={bar.yCenter - BAR_H} width={bounds.width + maskPadding * 2} height={BAR_H * 2}>
+              <rect x={bounds.x - maskPadding} y={bar.yCenter - BAR_H}
+                width={bounds.width + maskPadding * 2} height={BAR_H * 2} fill={`url(#${tailId}-gradient)`} />
             </mask>
           </>
         )}
@@ -103,8 +134,8 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
               ))}
             </linearGradient>
             <mask id={visibilityId} maskUnits="userSpaceOnUse"
-              x={bar.x1 - 4} y={bar.yCenter - BAR_H} width={bar.x2 - bar.x1 + 8} height={BAR_H * 2}>
-              <rect x={bar.x1 - 4} y={bar.yCenter - BAR_H} width={bar.x2 - bar.x1 + 8}
+              x={bounds.x - maskPadding} y={bar.yCenter - BAR_H} width={bounds.width + maskPadding * 2} height={BAR_H * 2}>
+              <rect x={bounds.x - maskPadding} y={bar.yCenter - BAR_H} width={bounds.width + maskPadding * 2}
                 height={BAR_H * 2} fill={`url(#${visibilityId}-gradient)`} />
             </mask>
           </>
@@ -132,8 +163,6 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
               d={shape}
               fill={bar.color}
               opacity={isSelected ? 0.95 : isArtist ? 0.32 : 0.55}
-              stroke={isSelected ? '#f8fafc' : bar.color}
-              strokeWidth={isSelected ? 1.5 : 0}
             />
           ) : (
             <g clipPath={`url(#${clipId})`}>
@@ -152,9 +181,6 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
               })}
             </g>
           )}
-          {phases.length > 0 && isSelected && (
-            <path d={shape} fill="none" stroke="#f8fafc" strokeWidth={1.5} />
-          )}
           {textX !== null && (
             <text x={textX} y={bar.yCenter + 4} clipPath={`url(#${clipId})`}
               fill={phases.length > 0 || isArtist ? '#f8fafc' : '#020617'}
@@ -162,6 +188,7 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
               {bar.node.name}
             </text>
           )}
+          <BarSelectionOutline {...bounds} ended={bar.ended} />
         </g>
       </g>
       {indicator && (
@@ -177,8 +204,9 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
             </clipPath>
           </defs>
           <rect x={indicator.x} y={bar.yCenter - BAR_H / 2} width={indicator.width} height={BAR_H}
-            rx={BAR_H / 2} fill={`url(#ghost-${id})`} stroke={isSelected ? '#f8fafc' : bar.color}
-            strokeOpacity={isSelected ? 0.9 : 0.4} strokeDasharray="3 4" />
+            rx={BAR_H / 2} fill={`url(#ghost-${id})`} stroke={isSelected ? 'none' : bar.color}
+            strokeOpacity={0.4} strokeDasharray="3 4" />
+          <BarSelectionOutline x={indicator.x} y={bar.yCenter - BAR_H / 2} width={indicator.width} />
           <path d={indicator.direction === 'left'
             ? `M ${indicator.x + 17} ${bar.yCenter - 4} l -4 4 l 4 4`
             : `M ${indicator.x + indicator.width - 17} ${bar.yCenter - 4} l 4 4 l -4 4`}

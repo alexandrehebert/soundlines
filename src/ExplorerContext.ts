@@ -12,6 +12,7 @@ import { DEFAULT_START_YEAR, MAX_YEAR, revealEraRange, type GenreOrder } from '.
 import { createTimelineModel, type TimelineView } from './graph/timeline.ts'
 import type { MusicGraph } from './graph/types.ts'
 import type { GenreDisplay } from './graph/bubbles.ts'
+import { finishPageLoading, transitionPage } from './pageLoading.ts'
 
 type YearRange = [number, number]
 type ExplorerLocation = { view: TimelineView; selectedId: string | null; genreOrder: GenreOrder; genreDisplay: GenreDisplay }
@@ -44,6 +45,8 @@ export function useExplorerState(graph: MusicGraph) {
   })
   const model = useMemo(() => createTimelineModel(index, view), [index, view])
 
+  useEffect(() => finishPageLoading(), [view, genreOrder, genreDisplay])
+
   const revealSelection = useCallback((next: ExplorerLocation) => {
     const node = next.selectedId ? index.nodeById.get(next.selectedId) : undefined
     if (!node?.period) return
@@ -57,6 +60,15 @@ export function useExplorerState(graph: MusicGraph) {
       }
     })
   }, [index])
+
+  const navigate = useCallback((next: ExplorerLocation) => {
+    const update = () => setLocation(next)
+    if (next.view !== view || next.genreOrder !== genreOrder || next.genreDisplay !== genreDisplay) {
+      transitionPage(update)
+    } else {
+      update()
+    }
+  }, [view, genreOrder, genreDisplay])
 
   useEffect(() => {
     const url = new URL(window.location.href)
@@ -75,11 +87,11 @@ export function useExplorerState(graph: MusicGraph) {
     const onPopState = () => {
       const next = readLocation()
       revealSelection(next)
-      setLocation(next)
+      navigate(next)
     }
     window.addEventListener('popstate', onPopState)
     return () => window.removeEventListener('popstate', onPopState)
-  }, [readLocation, revealSelection])
+  }, [readLocation, revealSelection, navigate])
 
   const selectNode = useCallback((id: string | null) => {
     const node = id ? index.nodeById.get(id) : undefined
@@ -87,27 +99,26 @@ export function useExplorerState(graph: MusicGraph) {
     const nextView = node?.type === 'genre' || node?.type === 'artist' ? node.type : view
     const next = { view: nextView, selectedId: id, genreOrder, genreDisplay }
     revealSelection(next)
-    setLocation(next)
-  }, [index, view, genreOrder, genreDisplay, revealSelection])
+    navigate(next)
+  }, [index, view, genreOrder, genreDisplay, revealSelection, navigate])
 
   const changeView = useCallback((nextView: TimelineView) => {
-    setLocation((current) => current.view === nextView
-      ? current
-      : { ...current, view: nextView, selectedId: null })
-  }, [])
+    if (view === nextView) return
+    navigate({ ...location, view: nextView, selectedId: null })
+  }, [view, location, navigate])
 
   const changeGenreOrder = useCallback((order: string) => {
     if (order !== 'family' && order !== 'oldest-first') {
       throw new Error(`Unknown genre order ${order}`)
     }
-    setLocation((current) => current.genreOrder === order
-      ? current
-      : { ...current, genreOrder: order })
-  }, [])
+    if (genreOrder === order) return
+    navigate({ ...location, genreOrder: order })
+  }, [genreOrder, location, navigate])
 
   const changeGenreDisplay = useCallback((display: GenreDisplay) => {
-    setLocation((current) => ({ ...current, genreDisplay: display }))
-  }, [])
+    if (genreDisplay === display) return
+    navigate({ ...location, genreDisplay: display })
+  }, [genreDisplay, location, navigate])
 
   const setViewRange = useCallback((range: SetStateAction<YearRange>) => {
     setRanges((current) => ({

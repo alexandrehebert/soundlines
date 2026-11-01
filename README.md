@@ -4,6 +4,14 @@ A chronological map of music genres, artists, labels, scenes, and the lineages t
 
 Vite, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vitest, linted with oxlint, deployable to Vercel as a static site.
 
+On first load, a centered spinning vinyl logo covers the page before React starts.
+The same overlay appears when changing modes, genre layout, or sort order
+(including cross-mode search, related-node navigation, and browser history).
+It appears instantly before the next view renders, stays visible for at least
+550ms, and fades out over 400ms after the new view
+has rendered and the document has loaded. Ordinary selections, panning, and zoom
+do not trigger it. Reduced-motion preferences disable the spin and fade.
+
 ## The timeline
 
 The main view is a horizontal chronology with two modes: **Genres** (the default)
@@ -64,6 +72,11 @@ graph relationships. Artist lanes and detail badges use the same families.
 - Both timeline modes pad the time range by 24px on each side within a full-width
   drawing surface; panning and background bands extend all the way to the edges.
 - Click a bar or focus it and press Enter/Space for details; every relation in the panel is navigable
+- Selected bars use the bubble's rounded HTML focus-style ring, border, and
+  spacing at the bubble map's default 75% zoom. Selection replaces the bar's
+  native keyboard-focus outline rather than stacking a second outline. Keyboard
+  focus uses that same rounded ring before selection, without a native-outline
+  flash on pointer down.
 - Artists switches to artist bars, not an overlay on the genre timeline; artist bubbles are currently removed
 - Search and related-node navigation switch modes automatically when selecting an artist or genre and bring the selected bar into view
 - Selection is shareable via `?focus=<node-id>`; `?view=artists` opens the artist timeline without a selection

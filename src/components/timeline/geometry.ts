@@ -131,11 +131,19 @@ export function offscreenIndicators(bars: BarPosition[], width: number): Map<str
   return indicators
 }
 
+export function barBounds(bar: BarPosition) {
+  return {
+    x: bar.x1,
+    y: bar.yCenter - BAR_H / 2,
+    width: Math.max(bar.x2 - bar.x1, bar.ended ? BAR_H / 2 + 2 : BAR_H),
+  }
+}
+
 export function barShape(bar: BarPosition): string {
-  const top = bar.yCenter - BAR_H / 2
+  const { x, y: top, width } = barBounds(bar)
   const r = BAR_H / 2
-  const left = bar.x1 + r
-  const right = Math.max(bar.x2, left + (bar.ended ? 2 : r))
+  const left = x + r
+  const right = x + width
   if (!bar.ended) {
     const capStart = right - r
     return `M ${left} ${top} H ${capStart} A ${r} ${r} 0 0 1 ${capStart} ${top + BAR_H} H ${left} A ${r} ${r} 0 0 1 ${left} ${top}`
