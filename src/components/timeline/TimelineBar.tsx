@@ -10,13 +10,14 @@ import {
 } from '../../graph/phases.ts'
 import { prominenceLabels } from '../../graph/types.ts'
 import { DEFAULT_BUBBLE_ZOOM, SELECTION_BORDER, SELECTION_OUTLINE } from '../../theme.ts'
-import { BAR_H, barBounds, barShape, labelX, tailFadeOffset, type BarPosition, type OffscreenIndicator } from './geometry.ts'
+import { BAR_H, barBounds, barLabel, barShape, tailFadeOffset, type BarPosition, type OffscreenIndicator } from './geometry.ts'
 
 interface TimelineBarProps {
   bar: BarPosition
   scale: TimeScale
   dimmed: boolean
   indicator?: OffscreenIndicator
+  rowBars?: BarPosition[]
   onHover: (id: string | null) => void
   onSelect: (id: string, revealYear?: number) => void
 }
@@ -46,7 +47,7 @@ function BarSelectionOutline({ x, y, width, ended = false }: {
   )
 }
 
-export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }: TimelineBarProps) {
+export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, onHover, onSelect }: TimelineBarProps) {
   const { selectedId, selectNode, viewRange, setViewRange } = useExplorer()
   if (!bar.visibleSpans.length) return null
   const isSelected = bar.node.id === selectedId
@@ -61,7 +62,7 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
   const visibilityId = `bar-visibility-${id}`
   const tailId = `bar-tail-${id}`
   const hasHiddenPhase = visibility.some((stop) => stop.level < 1)
-  const textX = labelX(bar, scale.width)
+  const label = barLabel(bar, scale.width, rowBars)
   const isArtist = bar.node.type === 'artist'
   const labels = prominenceLabels(bar.node.type)
   const revealYear = indicator ? xToYear(scale, indicator.targetX) : undefined
@@ -181,16 +182,20 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
               })}
             </g>
           )}
-          {textX !== null && (
-            <text x={textX} y={bar.yCenter + 4} clipPath={`url(#${clipId})`}
-              fill={phases.length > 0 || isArtist ? '#f8fafc' : '#020617'}
-              fontSize={11.5} fontWeight={700} pointerEvents="none">
-              {bar.node.name}
-            </text>
-          )}
           <BarSelectionOutline {...bounds} ended={bar.ended} />
         </g>
       </g>
+      {label && (
+        <text data-bar-label={label.outside ? 'outside' : 'inside'}
+          x={label.x} y={bar.yCenter + (label.above ? -14.5 : 4)} textAnchor={label.textAnchor}
+          clipPath={label.outside ? undefined : `url(#${clipId})`}
+          fill={label.outside || phases.length > 0 || isArtist ? '#f8fafc' : '#020617'}
+          stroke={label.outside ? '#020617' : undefined}
+          strokeWidth={label.outside ? 3 : undefined} paintOrder={label.outside ? 'stroke' : undefined}
+          fontSize={label.above ? 10.5 : 11.5} fontWeight={700}>
+          {bar.node.name}
+        </text>
+      )}
       {indicator && (
         <g data-offscreen-indicator={bar.node.id}>
           <defs>

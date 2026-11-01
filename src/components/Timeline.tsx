@@ -22,6 +22,15 @@ export function Timeline() {
     () => positionTimeline(model.lanes, scale, order), [model, scale, order],
   )
   const barById = useMemo(() => new Map(bars.map((bar) => [bar.node.id, bar])), [bars])
+  const barsByRow = useMemo(() => {
+    const rows = new Map<number, typeof bars>()
+    for (const bar of bars) {
+      const row = rows.get(bar.yCenter) ?? []
+      row.push(bar)
+      rows.set(bar.yCenter, row)
+    }
+    return rows
+  }, [bars])
   const indicators = useMemo(() => offscreenIndicators(bars, width), [bars, width])
   const focusId = hoveredId ?? selectedId
   const highlight = useMemo(
@@ -85,6 +94,7 @@ export function Timeline() {
           <TimelineLinks barById={barById} scale={scale} highlightedEdges={highlight?.edges ?? null} />
           {bars.map((bar) => (
             <TimelineBar key={bar.node.id} bar={bar} scale={scale}
+              rowBars={barsByRow.get(bar.yCenter)}
               indicator={indicators.get(bar.node.id)}
               dimmed={highlight !== null && !highlight.nodes.has(bar.node.id)}
               onHover={setHoveredId} onSelect={select} />

@@ -63,6 +63,9 @@ graph relationships. Artist lanes and detail badges use the same families.
   Enter/Space to reveal it. In family groups, indicators only appear where they
   do not overlap an on-screen bar or another indicator; nearer genres take
   priority on shared rows. Ghosts are navigation hints, not historical activity.
+- Short visible bars keep their names beside the bar, on the side with more
+  available space, or just above it on crowded shared rows. Labels remain readable
+  independently of activity and tail fades; bar lengths and dates are unchanged.
 - With a mouse, drag to move both axes; vertical scroll moves the timeline, horizontal scroll pans time, and Cmd/Ctrl+scroll zooms.
 - On touch screens, one-finger horizontal drags pan time, vertical swipes scroll the timeline, and two-finger pinches zoom. Tap a bar to open its draggable detail sheet.
 - Mobile search opens as a full-screen overlay; selected artists and genres bring their bars into view.

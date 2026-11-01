@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { layoutFamilies } from '../../graph/layout.ts'
 import type { MusicGraph } from '../../graph/types.ts'
-import { BAR_H, barShape, labelX, offscreenIndicators, positionTimeline, snapToSpans, tailFadeOffset, type BarPosition } from './geometry.ts'
+import { BAR_H, barLabel, barShape, offscreenIndicators, positionTimeline, snapToSpans, tailFadeOffset, type BarPosition } from './geometry.ts'
 
 const bar: BarPosition = {
   node: { id: 'artist:a', type: 'artist', name: 'A', period: { start: 1960 } },
@@ -86,9 +86,51 @@ describe('shared bar geometry', () => {
   })
 
   it('labels the first visible stretch in the viewport, including a revival', () => {
-    expect(labelX(bar, 300)).toBe(10)
-    expect(labelX({ ...bar, visibleSpans: [[-200, -120], [20, 170]] }, 300)).toBe(30)
-    expect(labelX({ ...bar, visibleSpans: [] }, 300)).toBeNull()
+    expect(barLabel(bar, 300)).toEqual({ x: 10, textAnchor: 'start', outside: false })
+    expect(barLabel({ ...bar, visibleSpans: [[-200, -120], [20, 170]] }, 300))
+      .toEqual({ x: 30, textAnchor: 'start', outside: false })
+    expect(barLabel({ ...bar, visibleSpans: [] }, 300)).toBeNull()
+  })
+
+  it('places short-bar labels outside, on the side with more viewport space', () => {
+    const short = { ...bar, x1: 20, x2: 50, visibleSpans: [[20, 50]] as [number, number][] }
+    expect(barLabel(short, 300)).toEqual({ x: 60, textAnchor: 'start', outside: true })
+    expect(barLabel({ ...short, x1: 250, x2: 280, visibleSpans: [[250, 280]] }, 300))
+      .toEqual({ x: 240, textAnchor: 'end', outside: true })
+  })
+
+  it('labels viewport slivers but not wholly off-screen bars or hidden phases', () => {
+    expect(barLabel({ ...bar, x1: -100, x2: 1, visibleSpans: [[-100, 1]] }, 300))
+      .toEqual({ x: 11, textAnchor: 'start', outside: true })
+    expect(barLabel({ ...bar, visibleSpans: [[299, 400]] }, 300))
+      .toEqual({ x: 289, textAnchor: 'end', outside: true })
+    expect(barLabel({ ...bar, visibleSpans: [[-100, 0], [300, 400]] }, 300)).toBeNull()
+  })
+
+  it('keeps labels outside minimum-width shapes and uses the existing cutoff', () => {
+    expect(barLabel({ ...bar, x1: 20, x2: 21, visibleSpans: [[20, 21]] }, 300))
+      .toEqual({ x: 52, textAnchor: 'start', outside: true })
+    expect(barLabel({ ...bar, x1: 20, x2: 74, visibleSpans: [[20, 74]] }, 300)?.outside).toBe(true)
+    expect(barLabel({ ...bar, visibleSpans: [[20, 75]] }, 300)?.outside).toBe(false)
+  })
+
+  it('uses the free side on shared rows and falls back above crowded bars', () => {
+    const short = { ...bar, x1: 100, x2: 130, visibleSpans: [[100, 130]] as [number, number][] }
+    const neighbor = { ...bar, node: { ...bar.node, id: 'artist:b' }, x1: 140 }
+    expect(barLabel(short, 300, [short, neighbor]))
+      .toEqual({ x: 90, textAnchor: 'end', outside: true })
+    expect(barLabel({
+      ...short, node: { ...short.node, name: 'Short-lived genre' },
+    }, 300, [neighbor])).toEqual({ x: 100, textAnchor: 'start', outside: true, above: true })
+    expect(barLabel(short, 300, [{ ...neighbor, yCenter: 86 }]))
+      .toEqual({ x: 140, textAnchor: 'start', outside: true })
+  })
+
+  it('uses a wide revival when available and labels short revivals without crossing a hidden gap', () => {
+    expect(barLabel({ ...bar, visibleSpans: [[20, 40], [80, 200]] }, 300))
+      .toEqual({ x: 90, textAnchor: 'start', outside: false })
+    expect(barLabel({ ...bar, x1: -100, x2: 50, visibleSpans: [[-100, -20], [20, 50]] }, 300))
+      .toEqual({ x: 60, textAnchor: 'start', outside: true })
   })
 
   describe('off-screen genre indicators', () => {

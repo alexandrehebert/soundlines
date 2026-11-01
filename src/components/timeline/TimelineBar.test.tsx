@@ -7,12 +7,12 @@ import type { GraphNode } from '../../graph/types.ts'
 import { TimelineBar } from './TimelineBar.tsx'
 import type { BarPosition, OffscreenIndicator } from './geometry.ts'
 
-function renderBar(node: GraphNode, selected: boolean, indicator?: OffscreenIndicator) {
+function renderBar(node: GraphNode, selected: boolean, indicator?: OffscreenIndicator, position?: Partial<BarPosition>) {
   const index = buildIndex({ version: 1, nodes: [node], edges: [] })
   const view = node.type === 'artist' ? 'artist' : 'genre'
   const bar: BarPosition = {
     node, start: 1960, end: 2026, x1: 20, x2: 300, yCenter: 50,
-    visibleSpans: [[20, 300]], color: '#60a5fa', ended: !!node.period?.end,
+    visibleSpans: [[20, 300]], color: '#60a5fa', ended: !!node.period?.end, ...position,
   }
   return renderToStaticMarkup(
     <ExplorerContext.Provider value={{
@@ -65,6 +65,40 @@ describe('bar selection outline', () => {
       expect(markup).toContain('id="bar-tail-genre-phased-gradient" gradientUnits="userSpaceOnUse" x1="20" y1="50" x2="300" y2="50"')
       expect(markup).toContain('id="bar-tail-genre-phased" maskUnits="userSpaceOnUse" x="13.25" y="28" width="293.5" height="44"')
     }
+  })
+
+  describe('bar labels', () => {
+    const node: GraphNode = {
+      id: 'genre:short', type: 'genre', name: 'Short-lived genre', family: 'jazz',
+      period: { start: 1960, end: 1963 },
+      phases: [{ start: 1960, prominence: 'golden-age' }, { start: 1962, prominence: 'niche' }],
+    }
+
+    it.each(['genre', 'artist'] as const)('renders an unmasked, unclipped label beside a short %s bar', (type) => {
+      const markup = renderBar({ ...node, type }, false, undefined, {
+        x2: 50, visibleSpans: [[20, 50]],
+      })
+      expect(markup).toContain('<text data-bar-label="outside" x="60" y="54" text-anchor="start"')
+      const label = markup.slice(markup.indexOf('<text data-bar-label='), markup.indexOf('</text>') + 7)
+      expect(label).toContain(node.name)
+      expect(label).not.toContain('clip-path')
+      expect(label).toContain('fill="#f8fafc"')
+      expect(markup).toContain('</g></g><text data-bar-label="outside"')
+    })
+
+    it('keeps wide labels within the bar shape but outside activity and tail masks', () => {
+      const markup = renderBar(node, false)
+      expect(markup).toContain('</g></g><text data-bar-label="inside"')
+      expect(markup).toContain('clip-path="url(#bar-clip-genre-short)" fill="#f8fafc"')
+    })
+
+    it('does not add an outside label to a wholly off-screen bar', () => {
+      const markup = renderBar(node, false, { x: 8, width: 220, direction: 'left', targetX: -10 }, {
+        x1: -50, x2: -10, visibleSpans: [[-50, -10]],
+      })
+      expect(markup).not.toContain('data-bar-label=')
+      expect(markup).toContain('data-offscreen-indicator="genre:short"')
+    })
   })
 
   it('also outlines a selected off-screen indicator', () => {

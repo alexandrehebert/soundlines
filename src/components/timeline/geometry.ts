@@ -79,12 +79,46 @@ export function snapToSpans(x: number, spans: [number, number][], pad: number): 
   return best
 }
 
-export function labelX(bar: BarPosition, width: number): number | null {
-  for (const [start, end] of bar.visibleSpans) {
-    const x = Math.max(start, 0)
-    if (Math.min(end, width) - x > 54) return x + 10
+export interface BarLabel {
+  x: number
+  textAnchor: 'start' | 'end'
+  outside: boolean
+  above?: boolean
+}
+
+export function barLabel(bar: BarPosition, width: number, rowBars: BarPosition[] = []): BarLabel | null {
+  const spans = bar.visibleSpans
+    .map(([start, end]) => [Math.max(start, 0), Math.min(end, width)])
+    .filter(([start, end]) => end > start)
+  for (const [start, end] of spans) {
+    if (end - start > 54) return { x: start + 10, textAnchor: 'start', outside: false }
   }
-  return null
+  if (!spans.length) return null
+
+  const bounds = barBounds(bar)
+  const neighbors = rowBars.filter((other) => other.node.id !== bar.node.id && other.yCenter === bar.yCenter)
+  const candidates = spans.flatMap(([start, end]) => {
+    const right = end === bar.x2 ? Math.min(width, bounds.x + bounds.width) : end
+    const rightEdge = Math.min(width, ...neighbors
+      .filter((other) => other.x2 > right)
+      .map((other) => Math.max(right, other.x1 - 8)))
+    const leftEdge = Math.max(0, ...neighbors
+      .filter((other) => other.x1 < start)
+      .map((other) => Math.min(start, other.x2 + 8)))
+    return [
+      { x: right + 10, textAnchor: 'start' as const, space: rightEdge - right - 10 },
+      { x: start - 10, textAnchor: 'end' as const, space: start - leftEdge - 10 },
+    ]
+  })
+  const best = candidates.sort((a, b) => b.space - a.space)[0]
+  // Crowded shared rows use the gap above the bar rather than covering a neighbor.
+  if (neighbors.length && best.space < bar.node.name.length * 11.5) {
+    const [start, end] = spans[0]
+    return start < width - end
+      ? { x: start, textAnchor: 'start', outside: true, above: true }
+      : { x: end, textAnchor: 'end', outside: true, above: true }
+  }
+  return { x: best.x, textAnchor: best.textAnchor, outside: true }
 }
 
 export interface OffscreenIndicator {
