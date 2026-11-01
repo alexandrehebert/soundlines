@@ -7728,6 +7728,1507 @@
       "sources": [
         "https://www.allmusic.com/style/j-pop-ma0000004490/artists"
       ]
+    },
+    {
+      "id": "genre:hindustani-classical",
+      "type": "genre",
+      "name": "Hindustani classical",
+      "family": "classical",
+      "period": {
+        "start": 1700,
+        "precision": "circa"
+      },
+      "description": "North Indian classical music built around raga and tala, transmitted through lineages and performance traditions. The date marks a broad modern period of public circulation, not the beginning of the tradition.",
+      "sources": [
+        "https://www.allmusic.com/style/indian-classical-ma0000002638",
+        "https://www.cambridge.org/core/journals/popular-music/article/abs/reflecting-surfaces-the-use-of-elements-from-indian-music-in-popular-music-and-jazz/40563DAAE907F72FC45E329DDA92ABFF"
+      ]
+    },
+    {
+      "id": "genre:carnatic",
+      "type": "genre",
+      "name": "Carnatic music",
+      "family": "classical",
+      "period": {
+        "start": 1700,
+        "precision": "circa"
+      },
+      "description": "The South Indian classical system, with distinct regional histories, performance lineages and approaches to melody and rhythm. The date is an approximate modern-era anchor, not a claim of origin.",
+      "sources": [
+        "https://www.allmusic.com/style/carnatic-ma0000012004"
+      ]
+    },
+    {
+      "id": "genre:qawwali",
+      "type": "genre",
+      "name": "Qawwali",
+      "family": "classical",
+      "period": {
+        "start": 1300,
+        "precision": "circa"
+      },
+      "description": "A South Asian Sufi devotional song tradition performed in shrine and community settings. Its performance practices and meanings are tied to particular religious and social contexts.",
+      "sources": [
+        "https://www.allmusic.com/genre/qawwali-ma0000002742",
+        "https://academic.oup.com/fordham-scholarship-online/book/24268/chapter-abstract/185921803"
+      ]
+    },
+    {
+      "id": "genre:gamelan",
+      "type": "genre",
+      "name": "Gamelan",
+      "family": "classical",
+      "period": {
+        "start": 700,
+        "precision": "circa"
+      },
+      "description": "An umbrella term for Indonesian ensemble traditions, including distinct Javanese and Balinese repertories, instruments and tuning systems; it does not describe one uniform style.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gamelan-01607",
+        "https://www.allmusic.com/style/gamelan-ma0000002610"
+      ]
+    },
+    {
+      "id": "genre:russian-folk",
+      "type": "genre",
+      "name": "Russian folk",
+      "family": "country-folk",
+      "period": {
+        "start": 1800,
+        "precision": "circa"
+      },
+      "description": "A broad label for diverse Russian vernacular song and instrumental traditions. This node is a starting point for regional and community-specific documentation, not a single uniform national style.",
+      "sources": [
+        "https://www.allmusic.com/style/russian-folk-ma0000012024",
+        "https://folkways.si.edu/country/russia",
+        "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/folk-music-0"
+      ]
+    },
+    {
+      "id": "genre:samba",
+      "type": "genre",
+      "name": "Samba",
+      "family": "latin",
+      "period": {
+        "start": 1910,
+        "precision": "decade"
+      },
+      "description": "A Brazilian music and dance family whose forms vary by region and setting, including Rio de Janeiro’s urban popular and Carnival traditions.",
+      "sources": [
+        "https://www.allmusic.com/style/samba-ma0000002842"
+      ]
+    },
+    {
+      "id": "genre:tango",
+      "type": "genre",
+      "name": "Tango",
+      "family": "latin",
+      "period": {
+        "start": 1880,
+        "precision": "circa"
+      },
+      "description": "A music-and-dance tradition that developed around the Río de la Plata, especially Buenos Aires and Montevideo, with African, European and local histories that should not be reduced to a single origin story.",
+      "sources": [
+        "https://www.allmusic.com/style/tango-ma0000002891"
+      ]
+    },
+    {
+      "id": "genre:andean-folk",
+      "type": "genre",
+      "name": "Andean folk",
+      "family": "latin",
+      "period": {
+        "start": 1900,
+        "precision": "circa"
+      },
+      "description": "A broad catalogue label for diverse musical traditions across the Andes. Regional, Indigenous and national distinctions require finer-grained entries as the collection grows.",
+      "sources": [
+        "https://www.allmusic.com/style/andean-folk-ma0000002426"
+      ]
+    },
+    {
+      "id": "artist:ravi-shankar",
+      "type": "artist",
+      "name": "Ravi Shankar",
+      "kind": "person",
+      "period": {
+        "start": 1930,
+        "end": 2012,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/indian-classical-ma0000002638"
+      ]
+    },
+    {
+      "id": "artist:ali-akbar-khan",
+      "type": "artist",
+      "name": "Ali Akbar Khan",
+      "kind": "person",
+      "period": {
+        "start": 1930,
+        "end": 2009,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/indian-classical-ma0000002638"
+      ]
+    },
+    {
+      "id": "artist:bhimsen-joshi",
+      "type": "artist",
+      "name": "Bhimsen Joshi",
+      "kind": "person",
+      "period": {
+        "start": 1940,
+        "end": 2011,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/indian-classical-ma0000002638"
+      ]
+    },
+    {
+      "id": "artist:u-srinivas",
+      "type": "artist",
+      "name": "U. Srinivas",
+      "kind": "person",
+      "period": {
+        "start": 1970,
+        "end": 2014,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/u-srinivas-mn0000215596"
+      ]
+    },
+    {
+      "id": "artist:ramnad-krishnan",
+      "type": "artist",
+      "name": "Ramnad Krishnan",
+      "kind": "person",
+      "period": {
+        "start": 1940,
+        "end": 1973,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/ramnad-krishnan-mn0000866164"
+      ]
+    },
+    {
+      "id": "artist:chitti-babu",
+      "type": "artist",
+      "name": "Chitti Babu",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "end": 1996,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/chitti-babu-mn0000086865"
+      ]
+    },
+    {
+      "id": "artist:nusrat-fateh-ali-khan",
+      "type": "artist",
+      "name": "Nusrat Fateh Ali Khan",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": 1997,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/nusrat-fateh-ali-kahn-mn0000887719"
+      ]
+    },
+    {
+      "id": "artist:sabri-brothers",
+      "type": "artist",
+      "name": "The Sabri Brothers",
+      "kind": "group",
+      "period": {
+        "start": 1950,
+        "end": 2016,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/qawwali-ma0000002742"
+      ]
+    },
+    {
+      "id": "artist:maqbool-sabri",
+      "type": "artist",
+      "name": "Maqbool Sabri",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "end": 2011,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/genre/qawwali-ma0000002742"
+      ]
+    },
+    {
+      "id": "artist:gamelan-sekar-tunjung",
+      "type": "artist",
+      "name": "Gamelan Sekar Tunjung",
+      "kind": "group",
+      "period": {
+        "start": 1992,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/album/the-music-of-krt-wasitodiningrat-mw0000073337"
+      ]
+    },
+    {
+      "id": "artist:gamelan-son-of-lion",
+      "type": "artist",
+      "name": "Gamelan Son of Lion",
+      "kind": "group",
+      "period": {
+        "start": 1976,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/mn0000927224"
+      ]
+    },
+    {
+      "id": "artist:gamelan-madu-sari",
+      "type": "artist",
+      "name": "Gamelan Madu Sari",
+      "kind": "group",
+      "period": {
+        "start": 2004,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/gamelan-ma0000002610"
+      ]
+    },
+    {
+      "id": "artist:terem-quartet",
+      "type": "artist",
+      "name": "Terem Quartet",
+      "kind": "group",
+      "period": {
+        "start": 1986,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/russian-folk-ma0000012024"
+      ]
+    },
+    {
+      "id": "artist:zhanna-bichevskaya",
+      "type": "artist",
+      "name": "Zhanna Bichevskaya",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/zhanna-bichevskaya-mn0001547074"
+      ]
+    },
+    {
+      "id": "artist:dmitri-pokrovsky-ensemble",
+      "type": "artist",
+      "name": "Dmitri Pokrovsky Ensemble",
+      "kind": "group",
+      "period": {
+        "start": 1973,
+        "end": 1996,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/russian-traditions-ma0000002838"
+      ]
+    },
+    {
+      "id": "artist:jorge-ben-jor",
+      "type": "artist",
+      "name": "Jorge Ben Jor",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/samba-ma0000002842"
+      ]
+    },
+    {
+      "id": "artist:dorival-caymmi",
+      "type": "artist",
+      "name": "Dorival Caymmi",
+      "kind": "person",
+      "period": {
+        "start": 1930,
+        "end": 2008,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/dorival-caymmi-mn0000066276"
+      ]
+    },
+    {
+      "id": "artist:joao-bosco",
+      "type": "artist",
+      "name": "João Bosco",
+      "kind": "person",
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/jo%C3%A3o-bosco-mn0000139475"
+      ]
+    },
+    {
+      "id": "artist:astor-piazzolla",
+      "type": "artist",
+      "name": "Astor Piazzolla",
+      "kind": "person",
+      "period": {
+        "start": 1930,
+        "end": 1992,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/tango-ma0000002891"
+      ]
+    },
+    {
+      "id": "artist:carlos-gardel",
+      "type": "artist",
+      "name": "Carlos Gardel",
+      "kind": "person",
+      "period": {
+        "start": 1910,
+        "end": 1935,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/tango-ma0000002891"
+      ]
+    },
+    {
+      "id": "artist:anibal-troilo",
+      "type": "artist",
+      "name": "Aníbal Troilo",
+      "kind": "person",
+      "period": {
+        "start": 1930,
+        "end": 1975,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/tango-ma0000002891"
+      ]
+    },
+    {
+      "id": "artist:inti-illimani",
+      "type": "artist",
+      "name": "Inti-Illimani",
+      "kind": "group",
+      "period": {
+        "start": 1967,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/inti-illimani-mn0000095188"
+      ]
+    },
+    {
+      "id": "artist:illapu",
+      "type": "artist",
+      "name": "Illapu",
+      "kind": "group",
+      "period": {
+        "start": 1971,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/andean-folk-ma0000002426"
+      ]
+    },
+    {
+      "id": "artist:luzmila-carpio",
+      "type": "artist",
+      "name": "Luzmila Carpio",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/andean-folk-ma0000002426"
+      ]
+    },
+    {
+      "id": "genre:gagaku",
+      "type": "genre",
+      "name": "Gagaku",
+      "family": "classical",
+      "period": {
+        "start": 600,
+        "precision": "circa"
+      },
+      "description": "Japanese court music and dance encompassing instrumental repertories and vocal forms, shaped through historical exchange with continental Asian traditions. UNESCO describes it as the oldest of Japan’s traditional performing arts.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gagaku-00265",
+        "https://www.kunaicho.go.jp/en/learn/culture/gagaku.html"
+      ]
+    },
+    {
+      "id": "artist:imperial-court-ensemble",
+      "type": "artist",
+      "name": "Imperial Court Ensemble",
+      "kind": "group",
+      "period": {
+        "start": 1993,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://www.allmusic.com/album/gagaku-ancient-japanese-court-and-dance-music-mw0000605580"
+      ]
+    },
+    {
+      "id": "artist:reigakusha",
+      "type": "artist",
+      "name": "Reigakusha Gagaku Ensemble",
+      "kind": "group",
+      "period": {
+        "start": 1985,
+        "precision": "year"
+      },
+      "sources": [
+        "https://asia.si.edu/explore-art-culture/audio/sukeyasu-shibas-gagaku-universe-the-reigakusha-ensemble-2/",
+        "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/introduction/index.html"
+      ]
+    },
+    {
+      "id": "artist:minoru-muraoka",
+      "type": "artist",
+      "name": "Minoru Muraoka",
+      "kind": "person",
+      "period": {
+        "start": 1976,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.allmusic.com/album/gagaku-and-beyond-mw0000919306"
+      ]
+    },
+    {
+      "id": "genre:peking-opera",
+      "type": "genre",
+      "name": "Peking opera",
+      "family": "classical",
+      "period": {
+        "start": 1790,
+        "precision": "circa"
+      },
+      "description": "A Chinese operatic tradition that took shape in Beijing from regional theatrical forms, combining stylized singing, speech, gesture, martial arts and percussion-led orchestras.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/peking-opera-00418",
+        "https://english.scio.gov.cn/m/chinafacts/2017-04/13/content_40612142.htm"
+      ]
+    },
+    {
+      "id": "genre:pansori",
+      "type": "genre",
+      "name": "Pansori",
+      "family": "classical",
+      "period": {
+        "start": 1700,
+        "precision": "circa"
+      },
+      "description": "A Korean epic vocal art in which one singer narrates and sings a long story with a drummer. Its surviving repertory and performance practice carry regional histories and continue to evolve.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/pansori-epic-chant-00070",
+        "https://www.korea.net/K-InfoHub/SubMainDetail/view?articleId=3981&headwordCd=77&headwordGroupCd=17&pageIndex=1"
+      ]
+    },
+    {
+      "id": "genre:baul-songs",
+      "type": "genre",
+      "name": "Baul songs",
+      "family": "country-folk",
+      "period": {
+        "start": 1800,
+        "precision": "circa"
+      },
+      "description": "Songs of Bengal’s Baul communities, joining poetry, melody and embodied spiritual practice. The tradition is transmitted through teacher-disciple lineages and varied local repertoires.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/baul-songs-00107",
+        "https://www.parvathybaul.com/about"
+      ]
+    },
+    {
+      "id": "genre:juju",
+      "type": "genre",
+      "name": "Jùjú",
+      "family": "african",
+      "period": {
+        "start": 1930,
+        "precision": "circa"
+      },
+      "description": "A Yoruba popular music tradition from Nigeria, shaped by interlocking guitars, percussion and talking drums. Its ensembles expanded dramatically in the mid-twentieth century.",
+      "sources": [
+        "https://www.allmusic.com/style/juju-ma0000002646",
+        "https://www.britannica.com/art/juju-music"
+      ]
+    },
+    {
+      "id": "genre:soukous",
+      "type": "genre",
+      "name": "Soukous",
+      "family": "african",
+      "period": {
+        "start": 1940,
+        "precision": "circa"
+      },
+      "description": "A Congolese popular dance music whose guitar-led sound developed through local rumba, Cuban and other transatlantic exchanges. The term is often used broadly for related Congolese styles.",
+      "sources": [
+        "https://www.allmusic.com/style/soukous-ma0000002784",
+        "https://www.britannica.com/art/soukous"
+      ]
+    },
+    {
+      "id": "genre:bachata",
+      "type": "genre",
+      "name": "Bachata",
+      "family": "latin",
+      "period": {
+        "start": 1960,
+        "precision": "circa"
+      },
+      "description": "A Dominican song and dance tradition that grew from guitar-based urban popular music and later reached a global audience through artists who reshaped its sound and reach.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/music-and-dance-of-dominican-bachata-01514?RL=01514",
+        "https://www.allmusic.com/style/bachata-ma0000002441/artists"
+      ]
+    },
+    {
+      "id": "genre:merengue",
+      "type": "genre",
+      "name": "Merengue",
+      "family": "latin",
+      "period": {
+        "start": 1850,
+        "precision": "circa"
+      },
+      "description": "A Dominican music-and-dance tradition with regional and ensemble variations, including the modern merengue típico and orchestral forms. It remains central to Dominican popular culture.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/music-and-dance-of-the-merengue-in-the-dominican-republic-01162?lang=en",
+        "https://onda.gob.do/noticias/la-onda-rinde-homenaje-a-merengueros-en-el-dia-nacional-del-merengue/"
+      ]
+    },
+    {
+      "id": "genre:khoomei",
+      "type": "genre",
+      "name": "Tuvan throat singing (xöömei)",
+      "family": "country-folk",
+      "period": {
+        "start": 1900,
+        "precision": "circa"
+      },
+      "description": "A family of Tuvan vocal techniques in which singers bring out harmonics above a low fundamental tone. UNESCO recognizes the Mongolian art of khoomei, while Tuvan xöömei has its own regional practices and names.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/mongolian-art-of-singing-khoomei-00210?RL=00210",
+        "https://folkways.si.edu/throat-singing-unique-vocalization-three-cultures/world/music/article/smithsonian"
+      ]
+    },
+    {
+      "id": "artist:mei-lanfang",
+      "type": "artist",
+      "name": "Mei Lanfang",
+      "kind": "person",
+      "period": {
+        "start": 1910,
+        "precision": "circa",
+        "end": 1961
+      },
+      "sources": [
+        "https://en.chnmuseum.cn/exhibition/exhibition_series/temporary_exhibitions/historical_and_cultural_exhibition/202201/t20220127_253498.html"
+      ]
+    },
+    {
+      "id": "artist:shang-xiaoyun",
+      "type": "artist",
+      "name": "Shang Xiaoyun",
+      "kind": "person",
+      "period": {
+        "start": 1910,
+        "precision": "circa",
+        "end": 1976
+      },
+      "sources": [
+        "https://english.visitbeijing.com.cn/article/47ONs9tPjep"
+      ]
+    },
+    {
+      "id": "artist:cheng-yanqiu",
+      "type": "artist",
+      "name": "Cheng Yanqiu",
+      "kind": "person",
+      "period": {
+        "start": 1910,
+        "precision": "circa",
+        "end": 1958
+      },
+      "sources": [
+        "https://www.cof.gov.hk/2024/assets/doc/2012/House%20Programme/COF2012_07_%E5%9C%8B%E5%AE%B6%E4%BA%AC%E5%8A%87%E9%99%A2%E4%B8%80%E5%9C%98_HP.pdf"
+      ]
+    },
+    {
+      "id": "artist:ahn-sook-sun",
+      "type": "artist",
+      "name": "Ahn Sook-sun",
+      "kind": "person",
+      "period": {
+        "start": 1970,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://world.kbs.co.kr/service/news_view.htm?Seq_Code=172233&lang=e"
+      ]
+    },
+    {
+      "id": "artist:park-dong-jin",
+      "type": "artist",
+      "name": "Park Dong-jin",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "precision": "circa",
+        "end": 2003
+      },
+      "sources": [
+        "https://world.kbs.co.kr/service/contents_view.htm?board_code=tmusic&board_seq=42446&id=&lang=en&menu_cate=culture&page=65"
+      ]
+    },
+    {
+      "id": "artist:kim-so-hee",
+      "type": "artist",
+      "name": "Kim So-hee",
+      "kind": "person",
+      "period": {
+        "start": 1930,
+        "precision": "circa",
+        "end": 1995
+      },
+      "sources": [
+        "https://world.kbs.co.kr/service/contents_view.htm?board_code=tmusic&board_seq=42446&id=&lang=en&menu_cate=culture&page=65"
+      ]
+    },
+    {
+      "id": "artist:lalon-fakir",
+      "type": "artist",
+      "name": "Lalon Fakir",
+      "kind": "person",
+      "period": {
+        "start": 1830,
+        "precision": "circa",
+        "end": 1890
+      },
+      "sources": [
+        "https://cswr.hds.harvard.edu/publications/transcendence-transformation/archive/baul-songs-lalon-dehatattva-principles-body"
+      ]
+    },
+    {
+      "id": "artist:parvathy-baul",
+      "type": "artist",
+      "name": "Parvathy Baul",
+      "kind": "person",
+      "period": {
+        "start": 1995,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://www.parvathybaul.com/about"
+      ]
+    },
+    {
+      "id": "artist:purna-das-baul",
+      "type": "artist",
+      "name": "Purna Das Baul",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://baulsamrat.in/index.php/bio/"
+      ]
+    },
+    {
+      "id": "artist:tunde-nightingale",
+      "type": "artist",
+      "name": "Tunde Nightingale",
+      "kind": "person",
+      "period": {
+        "start": 1940,
+        "precision": "circa",
+        "end": 1980
+      },
+      "sources": [
+        "https://www.allmusic.com/style/juju-ma0000002646"
+      ]
+    },
+    {
+      "id": "artist:ik-dairo",
+      "type": "artist",
+      "name": "I.K. Dairo",
+      "kind": "person",
+      "period": {
+        "start": 1940,
+        "precision": "circa",
+        "end": 1990
+      },
+      "sources": [
+        "https://compassrecords.com/artist/chief-ik-dairo/"
+      ]
+    },
+    {
+      "id": "artist:ebenezer-obey",
+      "type": "artist",
+      "name": "Chief Commander Ebenezer Obey",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/juju-ma0000002646"
+      ]
+    },
+    {
+      "id": "artist:papa-wemba",
+      "type": "artist",
+      "name": "Papa Wemba",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "precision": "circa",
+        "end": 2016
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/papa-wemba-mn0000010299"
+      ]
+    },
+    {
+      "id": "artist:tabu-ley-rochereau",
+      "type": "artist",
+      "name": "Tabu Ley Rochereau",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "precision": "circa",
+        "end": 2013
+      },
+      "sources": [
+        "https://www.allmusic.com/style/soukous-ma0000002784/artists"
+      ]
+    },
+    {
+      "id": "artist:kanda-bongo-man",
+      "type": "artist",
+      "name": "Kanda Bongo Man",
+      "kind": "person",
+      "period": {
+        "start": 1970,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/soukous-ma0000002784/artists"
+      ]
+    },
+    {
+      "id": "artist:juan-luis-guerra",
+      "type": "artist",
+      "name": "Juan Luis Guerra",
+      "kind": "person",
+      "period": {
+        "start": 1980,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/juan-luis-guerra-mn0000291502"
+      ]
+    },
+    {
+      "id": "artist:romeo-santos",
+      "type": "artist",
+      "name": "Romeo Santos",
+      "kind": "person",
+      "period": {
+        "start": 1990,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/romeo-santos-mn0002367865"
+      ]
+    },
+    {
+      "id": "artist:prince-royce",
+      "type": "artist",
+      "name": "Prince Royce",
+      "kind": "person",
+      "period": {
+        "start": 2000,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://www.allmusic.com/style/bachata-ma0000002441/artists"
+      ]
+    },
+    {
+      "id": "artist:johnny-ventura",
+      "type": "artist",
+      "name": "Johnny Ventura",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "precision": "circa",
+        "end": 2021
+      },
+      "sources": [
+        "https://onda.gob.do/noticias/la-onda-rinde-homenaje-a-merengueros-en-el-dia-nacional-del-merengue/"
+      ]
+    },
+    {
+      "id": "artist:milly-quezada",
+      "type": "artist",
+      "name": "Milly Quezada",
+      "kind": "person",
+      "period": {
+        "start": 1970,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://onda.gob.do/noticias/la-onda-rinde-homenaje-a-merengueros-en-el-dia-nacional-del-merengue/"
+      ]
+    },
+    {
+      "id": "artist:huun-huur-tu",
+      "type": "artist",
+      "name": "Huun-Huur-Tu",
+      "kind": "group",
+      "period": {
+        "start": 1992,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/huun-huur-tu-mn0000603660"
+      ]
+    },
+    {
+      "id": "artist:kaigal-ool-khovalyg",
+      "type": "artist",
+      "name": "Kaigal-ool Khovalyg",
+      "kind": "person",
+      "period": {
+        "start": 1980,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://www.huunhuurtu.com/history"
+      ]
+    },
+    {
+      "id": "artist:anatoli-kuular",
+      "type": "artist",
+      "name": "Anatoli Kuular",
+      "kind": "person",
+      "period": {
+        "start": 1980,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://www.huunhuurtu.com/history"
+      ]
+    },
+    {
+      "id": "genre:old-school-rap",
+      "type": "genre",
+      "name": "Old-school rap",
+      "family": "hip-hop",
+      "period": {
+        "start": 1975,
+        "precision": "decade"
+      },
+      "description": "An early New York rap style built around party rhymes, DJ-led breaks, call-and-response and the block-party culture from which hip-hop emerged. The label is retrospective; the style continues to be performed.",
+      "sources": [
+        "https://www.allmusic.com/style/old-school-rap-ma0000002762",
+        "https://www.allmusic.com/artist/kurtis-blow-mn0000116388"
+      ]
+    },
+    {
+      "id": "genre:east-coast-rap",
+      "type": "genre",
+      "name": "East Coast rap",
+      "family": "hip-hop",
+      "period": {
+        "start": 1975,
+        "precision": "decade"
+      },
+      "description": "A broad regional branch rooted in New York hip-hop, encompassing multiple generations and sounds, from early Bronx crews to sample-rich, lyric-centered styles. It is a regional umbrella rather than one fixed sound.",
+      "sources": [
+        "https://www.allmusic.com/style/east-coast-rap-ma0000002563",
+        "https://service.ddex.net/dd/DD-AVS-008/dd/ddex_EastCoastHipHop.html"
+      ]
+    },
+    {
+      "id": "genre:west-coast-rap",
+      "type": "genre",
+      "name": "West Coast rap",
+      "family": "hip-hop",
+      "period": {
+        "start": 1980,
+        "precision": "decade"
+      },
+      "description": "A regional family of styles associated with California and the wider western United States, including gangsta rap, G-funk and later Bay Area movements. Its sound and subject matter have never been uniform.",
+      "sources": [
+        "https://www.allmusic.com/genre/west-coast-rap-ma0000002932",
+        "https://www.allmusic.com/artist/nwa-mn0000314793"
+      ]
+    },
+    {
+      "id": "genre:gangsta-rap",
+      "type": "genre",
+      "name": "Gangsta rap",
+      "family": "hip-hop",
+      "period": {
+        "start": 1985,
+        "precision": "decade"
+      },
+      "description": "A rap style whose narratives often draw on street life, violence, policing and survival. It developed across multiple cities and is not synonymous with all hip-hop from Black urban communities.",
+      "sources": [
+        "https://www.allmusic.com/style/gangsta-rap-ma0000002611",
+        "https://www.allmusic.com/artist/p77"
+      ]
+    },
+    {
+      "id": "genre:boom-bap",
+      "type": "genre",
+      "name": "Boom bap",
+      "family": "hip-hop",
+      "period": {
+        "start": 1987,
+        "precision": "decade"
+      },
+      "description": "A sample-based rap sound associated especially with late-1980s and 1990s East Coast production: hard, swung drum breaks, prominent kicks and snares, and densely worked loops. The term also describes a production aesthetic used by later artists.",
+      "sources": [
+        "https://repository.uwl.ac.uk/id/eprint/5150/",
+        "https://www.allmusic.com/artist/p68235",
+        "https://www.allmusic.com/artist/mn0000286818"
+      ]
+    },
+    {
+      "id": "genre:jazz-rap",
+      "type": "genre",
+      "name": "Jazz rap",
+      "family": "hip-hop",
+      "period": {
+        "start": 1987,
+        "precision": "decade"
+      },
+      "description": "A hip-hop branch that places jazz sampling, instrumentation and improvisational ideas alongside rap. Groups such as A Tribe Called Quest, De La Soul and Gang Starr helped establish its distinctive sound.",
+      "sources": [
+        "https://www.allmusic.com/style/jazz-rap-ma0000012180/artists",
+        "https://www.allmusic.com/artist/gang-starr-mn0000193601"
+      ]
+    },
+    {
+      "id": "genre:alternative-rap",
+      "type": "genre",
+      "name": "Alternative rap",
+      "family": "hip-hop",
+      "period": {
+        "start": 1988,
+        "precision": "decade"
+      },
+      "description": "A wide-ranging rap category for artists who depart from prevailing commercial formulas through unusual sampling, subject matter, structures or cross-genre production. It overlaps with other styles rather than forming a single sound.",
+      "sources": [
+        "https://www.allmusic.com/style/alternative-rap-ma0000012203",
+        "https://www.allmusic.com/artist/de-la-soul-mn0000238322"
+      ]
+    },
+    {
+      "id": "genre:conscious-hip-hop",
+      "type": "genre",
+      "name": "Conscious hip-hop",
+      "family": "hip-hop",
+      "period": {
+        "start": 1985,
+        "precision": "decade"
+      },
+      "description": "Rap that foregrounds social analysis, self-knowledge, political critique or community concerns. Its boundaries overlap with political rap and other styles, and artists do not always embrace the label.",
+      "sources": [
+        "https://academic.oup.com/edited-volume/34741/chapter-abstract/296548837",
+        "https://www.liveabout.com/conscious-rap-defined-2857304"
+      ]
+    },
+    {
+      "id": "genre:southern-rap",
+      "type": "genre",
+      "name": "Southern rap",
+      "family": "hip-hop",
+      "period": {
+        "start": 1985,
+        "precision": "decade"
+      },
+      "description": "A regional umbrella for rap scenes across the U.S. South, including distinct sounds from Atlanta, Houston, New Orleans, Memphis and Miami. It spans party music, storytelling, gangsta rap and many other approaches.",
+      "sources": [
+        "https://www.allmusic.com/style/southern-rap-ma0000002871",
+        "https://www.allmusic.com/artist/outkast-mn0000420381"
+      ]
+    },
+    {
+      "id": "genre:crunk",
+      "type": "genre",
+      "name": "Crunk",
+      "family": "hip-hop",
+      "period": {
+        "start": 1995,
+        "precision": "decade"
+      },
+      "description": "A high-energy Southern rap style, especially associated with Atlanta, built around shouted hooks, forceful chants, club-oriented beats and participatory performance. Lil Jon and Atlanta groups brought it to national prominence in the 2000s.",
+      "sources": [
+        "https://www.allmusic.com/artist/lil-jon-mn0000826299",
+        "https://www.allmusic.com/artist/crime-mob-mn0000672656"
+      ]
+    },
+    {
+      "id": "genre:g-funk",
+      "type": "genre",
+      "name": "G-funk",
+      "family": "hip-hop",
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      },
+      "description": "A West Coast rap style that combines funk-derived bass lines, synthesizer leads and relaxed grooves with hip-hop production. Dr. Dre’s The Chronic helped define its early-1990s breakthrough.",
+      "sources": [
+        "https://www.allmusic.com/style/g-funk-ma0000011824",
+        "https://www.allmusic.com/genre/west-coast-rap-ma0000002932"
+      ]
+    },
+    {
+      "id": "genre:hyphy",
+      "type": "genre",
+      "name": "Hyphy",
+      "family": "hip-hop",
+      "period": {
+        "start": 2000,
+        "precision": "decade"
+      },
+      "description": "A Bay Area rap movement and party sound associated with energetic production, local slang, dance and car culture. Mac Dre, E-40 and Keak da Sneak are among its best-known figures.",
+      "sources": [
+        "https://www.latimes.com/archives/la-xpm-2006-jul-23-ca-music23-story.html",
+        "https://www.allmusic.com/artist/mac-dre-mn0000807687"
+      ]
+    },
+    {
+      "id": "genre:chopped-and-screwed",
+      "type": "genre",
+      "name": "Chopped and screwed",
+      "family": "hip-hop",
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      },
+      "description": "A Houston DJ style that slows recordings and reshapes them through repeated cuts, creating a heavy, suspended feel. DJ Screw developed it in a local mixtape culture that also gave MCs space to freestyle over the mixes.",
+      "sources": [
+        "https://exhibits.lib.uh.edu/s/dj-screw-records/page/houston",
+        "https://www.tshaonline.org/handbook/entries/davis-robert-earl-jr-dj-screw"
+      ]
+    },
+    {
+      "id": "genre:horrorcore",
+      "type": "genre",
+      "name": "Horrorcore",
+      "family": "hip-hop",
+      "period": {
+        "start": 1988,
+        "precision": "decade"
+      },
+      "description": "A lyrical and theatrical branch of rap that uses horror imagery, macabre storytelling and shock aesthetics. Its artists range from Houston groups to Detroit’s Insane Clown Posse, with distinct approaches under the same broad label.",
+      "sources": [
+        "https://www.allmusic.com/style/horror-rap-ma0000013531",
+        "https://www.allmusic.com/artist/insane-clown-posse-mn0000079959"
+      ]
+    },
+    {
+      "id": "artist:kurtis-blow",
+      "type": "artist",
+      "name": "Kurtis Blow",
+      "kind": "person",
+      "period": {
+        "start": 1979,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/kurtis-blow-mn0000116388"
+      ]
+    },
+    {
+      "id": "artist:krs-one",
+      "type": "artist",
+      "name": "KRS-One",
+      "kind": "person",
+      "period": {
+        "start": 1986,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/krs-one-mn0000359119"
+      ]
+    },
+    {
+      "id": "artist:nwa",
+      "type": "artist",
+      "name": "N.W.A",
+      "kind": "group",
+      "period": {
+        "start": 1986,
+        "precision": "decade",
+        "end": 1991
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/nwa-mn0000314793"
+      ]
+    },
+    {
+      "id": "artist:dr-dre",
+      "type": "artist",
+      "name": "Dr. Dre",
+      "kind": "person",
+      "period": {
+        "start": 1985,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/dr-dre-mn0000805274"
+      ]
+    },
+    {
+      "id": "artist:snoop-dogg",
+      "type": "artist",
+      "name": "Snoop Dogg",
+      "kind": "person",
+      "period": {
+        "start": 1992,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/snoop-dogg-mn0000029086"
+      ]
+    },
+    {
+      "id": "artist:tupac-shakur",
+      "type": "artist",
+      "name": "Tupac Shakur",
+      "kind": "person",
+      "period": {
+        "start": 1991,
+        "precision": "decade",
+        "end": 1996
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/tupac-shakur-mn0000205185"
+      ]
+    },
+    {
+      "id": "artist:nas",
+      "type": "artist",
+      "name": "Nas",
+      "kind": "person",
+      "period": {
+        "start": 1991,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/nas-mn0000373634"
+      ]
+    },
+    {
+      "id": "artist:gang-starr",
+      "type": "artist",
+      "name": "Gang Starr",
+      "kind": "group",
+      "period": {
+        "start": 1986,
+        "precision": "decade",
+        "end": 2003
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/gang-starr-mn0000193601"
+      ]
+    },
+    {
+      "id": "artist:a-tribe-called-quest",
+      "type": "artist",
+      "name": "A Tribe Called Quest",
+      "kind": "group",
+      "period": {
+        "start": 1988,
+        "precision": "decade",
+        "end": 2017
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/p50081"
+      ]
+    },
+    {
+      "id": "artist:de-la-soul",
+      "type": "artist",
+      "name": "De La Soul",
+      "kind": "group",
+      "period": {
+        "start": 1987,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/de-la-soul-mn0000238322"
+      ]
+    },
+    {
+      "id": "artist:outkast",
+      "type": "artist",
+      "name": "OutKast",
+      "kind": "group",
+      "period": {
+        "start": 1992,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/outkast-mn0000420381"
+      ]
+    },
+    {
+      "id": "artist:common",
+      "type": "artist",
+      "name": "Common",
+      "kind": "person",
+      "period": {
+        "start": 1992,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/p276488/biography"
+      ]
+    },
+    {
+      "id": "artist:kendrick-lamar",
+      "type": "artist",
+      "name": "Kendrick Lamar",
+      "kind": "person",
+      "period": {
+        "start": 2003,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/kendrick-lamar-mn0002709646"
+      ]
+    },
+    {
+      "id": "artist:lil-wayne",
+      "type": "artist",
+      "name": "Lil Wayne",
+      "kind": "person",
+      "period": {
+        "start": 1996,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/lil-wayne-mn0000272689"
+      ]
+    },
+    {
+      "id": "artist:ugk",
+      "type": "artist",
+      "name": "UGK",
+      "kind": "group",
+      "period": {
+        "start": 1987,
+        "precision": "decade",
+        "end": 2007
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/ugk-mn0000221637"
+      ]
+    },
+    {
+      "id": "artist:lil-jon-east-side-boyz",
+      "type": "artist",
+      "name": "Lil Jon & the East Side Boyz",
+      "kind": "group",
+      "period": {
+        "start": 1997,
+        "precision": "decade",
+        "end": 2005
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/lil-jon-the-east-side-boyz-mn0000225892"
+      ]
+    },
+    {
+      "id": "artist:ying-yang-twins",
+      "type": "artist",
+      "name": "Ying Yang Twins",
+      "kind": "group",
+      "period": {
+        "start": 2000,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/ying-yang-twins-mn0000584041"
+      ]
+    },
+    {
+      "id": "artist:crime-mob",
+      "type": "artist",
+      "name": "Crime Mob",
+      "kind": "group",
+      "period": {
+        "start": 2003,
+        "precision": "decade",
+        "end": 2010
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/crime-mob-mn0000672656"
+      ]
+    },
+    {
+      "id": "artist:warren-g",
+      "type": "artist",
+      "name": "Warren G",
+      "kind": "person",
+      "period": {
+        "start": 1994,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/warren-g-mn0000815167"
+      ]
+    },
+    {
+      "id": "artist:e-40",
+      "type": "artist",
+      "name": "E-40",
+      "kind": "person",
+      "period": {
+        "start": 1986,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/e-40-mn0000150793"
+      ]
+    },
+    {
+      "id": "artist:mac-dre",
+      "type": "artist",
+      "name": "Mac Dre",
+      "kind": "person",
+      "period": {
+        "start": 1989,
+        "precision": "decade",
+        "end": 2004
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/mac-dre-mn0000807687"
+      ]
+    },
+    {
+      "id": "artist:keak-da-sneak",
+      "type": "artist",
+      "name": "Keak da Sneak",
+      "kind": "person",
+      "period": {
+        "start": 1994,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/keak-da-sneak-mn0000857597"
+      ]
+    },
+    {
+      "id": "artist:dj-screw",
+      "type": "artist",
+      "name": "DJ Screw",
+      "kind": "person",
+      "period": {
+        "start": 1987,
+        "precision": "decade",
+        "end": 2000
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/dj-screw-mn0000662235"
+      ]
+    },
+    {
+      "id": "artist:lil-keke",
+      "type": "artist",
+      "name": "Lil Keke",
+      "kind": "person",
+      "period": {
+        "start": 1994,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/lil-keke-mn0000826354"
+      ]
+    },
+    {
+      "id": "artist:geto-boys",
+      "type": "artist",
+      "name": "Geto Boys",
+      "kind": "group",
+      "period": {
+        "start": 1986,
+        "precision": "decade",
+        "end": 2019
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/geto-boys-mn0000077283"
+      ]
+    },
+    {
+      "id": "artist:gravediggaz",
+      "type": "artist",
+      "name": "Gravediggaz",
+      "kind": "group",
+      "period": {
+        "start": 1994,
+        "precision": "decade",
+        "end": 2002
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/gravediggaz-mn0000662067"
+      ]
+    },
+    {
+      "id": "artist:insane-clown-posse",
+      "type": "artist",
+      "name": "Insane Clown Posse",
+      "kind": "group",
+      "period": {
+        "start": 1989,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://www.allmusic.com/artist/insane-clown-posse-mn0000079959"
+      ]
     }
   ],
   "edges": [
@@ -14555,6 +16056,1121 @@
       "to": "genre:j-pop",
       "sources": [
         "https://www.allmusic.com/style/j-pop-ma0000004490/artists"
+      ]
+    },
+    {
+      "id": "key:ravi-shankar-hindustani-classical",
+      "type": "key_artist_of",
+      "from": "artist:ravi-shankar",
+      "to": "genre:hindustani-classical",
+      "sources": [
+        "https://www.allmusic.com/style/indian-classical-ma0000002638"
+      ]
+    },
+    {
+      "id": "key:ali-akbar-khan-hindustani-classical",
+      "type": "key_artist_of",
+      "from": "artist:ali-akbar-khan",
+      "to": "genre:hindustani-classical",
+      "sources": [
+        "https://www.allmusic.com/style/indian-classical-ma0000002638"
+      ]
+    },
+    {
+      "id": "key:bhimsen-joshi-hindustani-classical",
+      "type": "key_artist_of",
+      "from": "artist:bhimsen-joshi",
+      "to": "genre:hindustani-classical",
+      "sources": [
+        "https://www.allmusic.com/style/indian-classical-ma0000002638"
+      ]
+    },
+    {
+      "id": "key:u-srinivas-carnatic",
+      "type": "key_artist_of",
+      "from": "artist:u-srinivas",
+      "to": "genre:carnatic",
+      "sources": [
+        "https://www.allmusic.com/artist/u-srinivas-mn0000215596"
+      ]
+    },
+    {
+      "id": "key:ramnad-krishnan-carnatic",
+      "type": "key_artist_of",
+      "from": "artist:ramnad-krishnan",
+      "to": "genre:carnatic",
+      "sources": [
+        "https://www.allmusic.com/artist/ramnad-krishnan-mn0000866164"
+      ]
+    },
+    {
+      "id": "key:chitti-babu-carnatic",
+      "type": "key_artist_of",
+      "from": "artist:chitti-babu",
+      "to": "genre:carnatic",
+      "sources": [
+        "https://www.allmusic.com/artist/chitti-babu-mn0000086865"
+      ]
+    },
+    {
+      "id": "key:nusrat-fateh-ali-khan-qawwali",
+      "type": "key_artist_of",
+      "from": "artist:nusrat-fateh-ali-khan",
+      "to": "genre:qawwali",
+      "sources": [
+        "https://www.allmusic.com/artist/nusrat-fateh-ali-kahn-mn0000887719"
+      ]
+    },
+    {
+      "id": "key:sabri-brothers-qawwali",
+      "type": "key_artist_of",
+      "from": "artist:sabri-brothers",
+      "to": "genre:qawwali",
+      "sources": [
+        "https://www.allmusic.com/genre/qawwali-ma0000002742"
+      ]
+    },
+    {
+      "id": "key:maqbool-sabri-qawwali",
+      "type": "key_artist_of",
+      "from": "artist:maqbool-sabri",
+      "to": "genre:qawwali",
+      "sources": [
+        "https://www.allmusic.com/genre/qawwali-ma0000002742"
+      ]
+    },
+    {
+      "id": "key:gamelan-sekar-tunjung-gamelan",
+      "type": "key_artist_of",
+      "from": "artist:gamelan-sekar-tunjung",
+      "to": "genre:gamelan",
+      "sources": [
+        "https://www.allmusic.com/album/the-music-of-krt-wasitodiningrat-mw0000073337"
+      ]
+    },
+    {
+      "id": "key:gamelan-son-of-lion-gamelan",
+      "type": "key_artist_of",
+      "from": "artist:gamelan-son-of-lion",
+      "to": "genre:gamelan",
+      "sources": [
+        "https://www.allmusic.com/artist/mn0000927224"
+      ]
+    },
+    {
+      "id": "key:gamelan-madu-sari-gamelan",
+      "type": "key_artist_of",
+      "from": "artist:gamelan-madu-sari",
+      "to": "genre:gamelan",
+      "sources": [
+        "https://www.allmusic.com/style/gamelan-ma0000002610"
+      ]
+    },
+    {
+      "id": "key:terem-quartet-russian-folk",
+      "type": "key_artist_of",
+      "from": "artist:terem-quartet",
+      "to": "genre:russian-folk",
+      "sources": [
+        "https://www.allmusic.com/style/russian-folk-ma0000012024"
+      ]
+    },
+    {
+      "id": "key:zhanna-bichevskaya-russian-folk",
+      "type": "key_artist_of",
+      "from": "artist:zhanna-bichevskaya",
+      "to": "genre:russian-folk",
+      "sources": [
+        "https://www.allmusic.com/artist/zhanna-bichevskaya-mn0001547074"
+      ]
+    },
+    {
+      "id": "key:dmitri-pokrovsky-ensemble-russian-folk",
+      "type": "key_artist_of",
+      "from": "artist:dmitri-pokrovsky-ensemble",
+      "to": "genre:russian-folk",
+      "sources": [
+        "https://www.allmusic.com/style/russian-traditions-ma0000002838"
+      ]
+    },
+    {
+      "id": "key:jorge-ben-jor-samba",
+      "type": "key_artist_of",
+      "from": "artist:jorge-ben-jor",
+      "to": "genre:samba",
+      "sources": [
+        "https://www.allmusic.com/style/samba-ma0000002842"
+      ]
+    },
+    {
+      "id": "key:dorival-caymmi-samba",
+      "type": "key_artist_of",
+      "from": "artist:dorival-caymmi",
+      "to": "genre:samba",
+      "sources": [
+        "https://www.allmusic.com/artist/dorival-caymmi-mn0000066276"
+      ]
+    },
+    {
+      "id": "key:joao-bosco-samba",
+      "type": "key_artist_of",
+      "from": "artist:joao-bosco",
+      "to": "genre:samba",
+      "sources": [
+        "https://www.allmusic.com/artist/jo%C3%A3o-bosco-mn0000139475"
+      ]
+    },
+    {
+      "id": "key:astor-piazzolla-tango",
+      "type": "key_artist_of",
+      "from": "artist:astor-piazzolla",
+      "to": "genre:tango",
+      "sources": [
+        "https://www.allmusic.com/style/tango-ma0000002891"
+      ]
+    },
+    {
+      "id": "key:carlos-gardel-tango",
+      "type": "key_artist_of",
+      "from": "artist:carlos-gardel",
+      "to": "genre:tango",
+      "sources": [
+        "https://www.allmusic.com/style/tango-ma0000002891"
+      ]
+    },
+    {
+      "id": "key:anibal-troilo-tango",
+      "type": "key_artist_of",
+      "from": "artist:anibal-troilo",
+      "to": "genre:tango",
+      "sources": [
+        "https://www.allmusic.com/style/tango-ma0000002891"
+      ]
+    },
+    {
+      "id": "key:inti-illimani-andean-folk",
+      "type": "key_artist_of",
+      "from": "artist:inti-illimani",
+      "to": "genre:andean-folk",
+      "sources": [
+        "https://www.allmusic.com/artist/inti-illimani-mn0000095188"
+      ]
+    },
+    {
+      "id": "key:illapu-andean-folk",
+      "type": "key_artist_of",
+      "from": "artist:illapu",
+      "to": "genre:andean-folk",
+      "sources": [
+        "https://www.allmusic.com/style/andean-folk-ma0000002426"
+      ]
+    },
+    {
+      "id": "key:luzmila-carpio-andean-folk",
+      "type": "key_artist_of",
+      "from": "artist:luzmila-carpio",
+      "to": "genre:andean-folk",
+      "sources": [
+        "https://www.allmusic.com/style/andean-folk-ma0000002426"
+      ]
+    },
+    {
+      "id": "lineage:hindustani-classical-jazz",
+      "type": "influences",
+      "from": "genre:hindustani-classical",
+      "to": "genre:jazz",
+      "confidence": "medium",
+      "note": "Documented exchanges and use of North Indian musical elements in jazz; this does not make Hindustani music a branch of jazz.",
+      "sources": [
+        "https://www.cambridge.org/core/journals/popular-music/article/abs/reflecting-surfaces-the-use-of-elements-from-indian-music-in-popular-music-and-jazz/40563DAAE907F72FC45E329DDA92ABFF"
+      ]
+    },
+    {
+      "id": "lineage:gamelan-minimalism",
+      "type": "influences",
+      "from": "genre:gamelan",
+      "to": "genre:minimalism",
+      "confidence": "medium",
+      "note": "Specific twentieth-century composers drew on gamelan; this records influence, not ancestry or equivalence.",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-rhythm/draw-of-balinese-rhythm/87E8EEDBB1838AAB5E4A3D3BF7941AD1"
+      ]
+    },
+    {
+      "id": "lineage:andean-folk-latin",
+      "type": "subgenre_of",
+      "from": "genre:andean-folk",
+      "to": "genre:latin",
+      "confidence": "medium",
+      "note": "Broad browsing classification only; the Latin umbrella does not imply a shared origin or erase regional and Indigenous distinctions.",
+      "sources": [
+        "https://www.allmusic.com/style/andean-folk-ma0000002426",
+        "https://www.allmusic.com/genre/latin-ma0000002692"
+      ]
+    },
+    {
+      "id": "lineage:tango-latin",
+      "type": "subgenre_of",
+      "from": "genre:tango",
+      "to": "genre:latin",
+      "confidence": "medium",
+      "note": "Broad catalogue classification for navigation; tango remains a Río de la Plata tradition with its own history.",
+      "sources": [
+        "https://www.allmusic.com/style/tango-ma0000002891",
+        "https://www.allmusic.com/genre/latin-ma0000002692"
+      ]
+    },
+    {
+      "id": "key:imperial-court-ensemble-gagaku",
+      "type": "key_artist_of",
+      "from": "artist:imperial-court-ensemble",
+      "to": "genre:gagaku",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gagaku-00265"
+      ]
+    },
+    {
+      "id": "key:reigakusha-gagaku",
+      "type": "key_artist_of",
+      "from": "artist:reigakusha",
+      "to": "genre:gagaku",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gagaku-00265"
+      ]
+    },
+    {
+      "id": "key:minoru-muraoka-gagaku",
+      "type": "key_artist_of",
+      "from": "artist:minoru-muraoka",
+      "to": "genre:gagaku",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gagaku-00265"
+      ]
+    },
+    {
+      "id": "lineage:gagaku-minimalism",
+      "type": "influences",
+      "from": "genre:gagaku",
+      "to": "genre:minimalism",
+      "confidence": "medium",
+      "note": "Documented influence on particular composers and works; not a general ancestry claim.",
+      "sources": [
+        "https://www.allmusic.com/artist/lois-v-vierk-mn0000281934",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-rhythm/draw-of-balinese-rhythm/87E8EEDBB1838AAB5E4A3D3BF7941AD1"
+      ]
+    },
+    {
+      "id": "lineage:qawwali-rock",
+      "type": "cross_pollination",
+      "from": "genre:qawwali",
+      "to": "genre:rock",
+      "confidence": "medium",
+      "note": "Records documented late-twentieth-century collaborations and exchanges involving qawwali musicians and rock artists; it does not assert a shared origin.",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-singing/songlines-vocal-traditions-in-world-music/2F9EF5697111FCD73293E1714810DB25"
+      ]
+    },
+    {
+      "id": "key:mei-lanfang-peking-opera",
+      "type": "key_artist_of",
+      "from": "artist:mei-lanfang",
+      "to": "genre:peking-opera",
+      "sources": [
+        "https://english.scio.gov.cn/m/chinafacts/2017-04/13/content_40612142.htm"
+      ]
+    },
+    {
+      "id": "key:shang-xiaoyun-peking-opera",
+      "type": "key_artist_of",
+      "from": "artist:shang-xiaoyun",
+      "to": "genre:peking-opera",
+      "sources": [
+        "https://english.visitbeijing.com.cn/article/47ONs9tPjep"
+      ]
+    },
+    {
+      "id": "key:cheng-yanqiu-peking-opera",
+      "type": "key_artist_of",
+      "from": "artist:cheng-yanqiu",
+      "to": "genre:peking-opera",
+      "sources": [
+        "https://english.scio.gov.cn/m/chinafacts/2017-04/13/content_40612142.htm"
+      ]
+    },
+    {
+      "id": "key:ahn-sook-sun-pansori",
+      "type": "key_artist_of",
+      "from": "artist:ahn-sook-sun",
+      "to": "genre:pansori",
+      "sources": [
+        "https://world.kbs.co.kr/service/news_view.htm?Seq_Code=172233&lang=e"
+      ]
+    },
+    {
+      "id": "key:park-dong-jin-pansori",
+      "type": "key_artist_of",
+      "from": "artist:park-dong-jin",
+      "to": "genre:pansori",
+      "sources": [
+        "https://www.koreajoongangdaily.com/korea/a-renowned-performer-of-korean-opera-is-dead/10642931"
+      ]
+    },
+    {
+      "id": "key:kim-so-hee-pansori",
+      "type": "key_artist_of",
+      "from": "artist:kim-so-hee",
+      "to": "genre:pansori",
+      "sources": [
+        "https://world.kbs.co.kr/service/contents_view.htm?board_code=tmusic&board_seq=42446&id=&lang=en&menu_cate=culture&page=65"
+      ]
+    },
+    {
+      "id": "key:lalon-fakir-baul-songs",
+      "type": "key_artist_of",
+      "from": "artist:lalon-fakir",
+      "to": "genre:baul-songs",
+      "sources": [
+        "https://ich.unesco.org/en/RL/baul-songs-00107"
+      ]
+    },
+    {
+      "id": "key:parvathy-baul-baul-songs",
+      "type": "key_artist_of",
+      "from": "artist:parvathy-baul",
+      "to": "genre:baul-songs",
+      "sources": [
+        "https://www.parvathybaul.com/about"
+      ]
+    },
+    {
+      "id": "key:purna-das-baul-baul-songs",
+      "type": "key_artist_of",
+      "from": "artist:purna-das-baul",
+      "to": "genre:baul-songs",
+      "sources": [
+        "https://baulsamrat.in/index.php/bio/"
+      ]
+    },
+    {
+      "id": "key:tunde-nightingale-juju",
+      "type": "key_artist_of",
+      "from": "artist:tunde-nightingale",
+      "to": "genre:juju",
+      "sources": [
+        "https://www.allmusic.com/style/juju-ma0000002646"
+      ]
+    },
+    {
+      "id": "key:ik-dairo-juju",
+      "type": "key_artist_of",
+      "from": "artist:ik-dairo",
+      "to": "genre:juju",
+      "sources": [
+        "https://compassrecords.com/artist/chief-ik-dairo/"
+      ]
+    },
+    {
+      "id": "key:ebenezer-obey-juju",
+      "type": "key_artist_of",
+      "from": "artist:ebenezer-obey",
+      "to": "genre:juju",
+      "sources": [
+        "https://www.allmusic.com/style/juju-ma0000002646"
+      ]
+    },
+    {
+      "id": "key:papa-wemba-soukous",
+      "type": "key_artist_of",
+      "from": "artist:papa-wemba",
+      "to": "genre:soukous",
+      "sources": [
+        "https://www.allmusic.com/style/soukous-ma0000002784/artists"
+      ]
+    },
+    {
+      "id": "key:tabu-ley-rochereau-soukous",
+      "type": "key_artist_of",
+      "from": "artist:tabu-ley-rochereau",
+      "to": "genre:soukous",
+      "sources": [
+        "https://www.allmusic.com/style/soukous-ma0000002784/artists"
+      ]
+    },
+    {
+      "id": "key:kanda-bongo-man-soukous",
+      "type": "key_artist_of",
+      "from": "artist:kanda-bongo-man",
+      "to": "genre:soukous",
+      "sources": [
+        "https://www.allmusic.com/style/soukous-ma0000002784/artists"
+      ]
+    },
+    {
+      "id": "key:juan-luis-guerra-bachata",
+      "type": "key_artist_of",
+      "from": "artist:juan-luis-guerra",
+      "to": "genre:bachata",
+      "sources": [
+        "https://www.allmusic.com/style/bachata-ma0000002441/artists"
+      ]
+    },
+    {
+      "id": "key:romeo-santos-bachata",
+      "type": "key_artist_of",
+      "from": "artist:romeo-santos",
+      "to": "genre:bachata",
+      "sources": [
+        "https://www.allmusic.com/style/bachata-ma0000002441/artists"
+      ]
+    },
+    {
+      "id": "key:prince-royce-bachata",
+      "type": "key_artist_of",
+      "from": "artist:prince-royce",
+      "to": "genre:bachata",
+      "sources": [
+        "https://www.allmusic.com/style/bachata-ma0000002441/artists"
+      ]
+    },
+    {
+      "id": "key:johnny-ventura-merengue",
+      "type": "key_artist_of",
+      "from": "artist:johnny-ventura",
+      "to": "genre:merengue",
+      "sources": [
+        "https://onda.gob.do/noticias/la-onda-rinde-homenaje-a-merengueros-en-el-dia-nacional-del-merengue/"
+      ]
+    },
+    {
+      "id": "key:milly-quezada-merengue",
+      "type": "key_artist_of",
+      "from": "artist:milly-quezada",
+      "to": "genre:merengue",
+      "sources": [
+        "https://onda.gob.do/noticias/la-onda-rinde-homenaje-a-merengueros-en-el-dia-nacional-del-merengue/"
+      ]
+    },
+    {
+      "id": "key:huun-huur-tu-khoomei",
+      "type": "key_artist_of",
+      "from": "artist:huun-huur-tu",
+      "to": "genre:khoomei",
+      "sources": [
+        "https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/"
+      ]
+    },
+    {
+      "id": "key:kaigal-ool-khovalyg-khoomei",
+      "type": "key_artist_of",
+      "from": "artist:kaigal-ool-khovalyg",
+      "to": "genre:khoomei",
+      "sources": [
+        "https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/"
+      ]
+    },
+    {
+      "id": "key:anatoli-kuular-khoomei",
+      "type": "key_artist_of",
+      "from": "artist:anatoli-kuular",
+      "to": "genre:khoomei",
+      "sources": [
+        "https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/"
+      ]
+    },
+    {
+      "id": "lineage:bachata-latin",
+      "type": "subgenre_of",
+      "from": "genre:bachata",
+      "to": "genre:latin",
+      "sources": [
+        "https://ich.unesco.org/en/RL/music-and-dance-of-dominican-bachata-01514?RL=01514"
+      ]
+    },
+    {
+      "id": "lineage:merengue-latin",
+      "type": "subgenre_of",
+      "from": "genre:merengue",
+      "to": "genre:latin",
+      "sources": [
+        "https://ich.unesco.org/en/RL/music-and-dance-of-the-merengue-in-the-dominican-republic-01162?lang=en"
+      ]
+    },
+    {
+      "id": "member:kaigal-ool-khovalyg-huun-huur-tu",
+      "type": "member_of",
+      "from": "artist:kaigal-ool-khovalyg",
+      "to": "artist:huun-huur-tu",
+      "sources": [
+        "https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/"
+      ]
+    },
+    {
+      "id": "member:anatoli-kuular-huun-huur-tu",
+      "type": "member_of",
+      "from": "artist:anatoli-kuular",
+      "to": "artist:huun-huur-tu",
+      "sources": [
+        "https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/"
+      ]
+    },
+    {
+      "id": "key:king-sunny-ade-juju",
+      "type": "key_artist_of",
+      "from": "artist:king-sunny-ade",
+      "to": "genre:juju",
+      "sources": [
+        "https://www.allmusic.com/style/juju-ma0000002646",
+        "https://copyright.gov.ng/king-sunny-ade/"
+      ]
+    },
+    {
+      "id": "key:juan-luis-guerra-merengue",
+      "type": "key_artist_of",
+      "from": "artist:juan-luis-guerra",
+      "to": "genre:merengue",
+      "sources": [
+        "https://onda.gob.do/noticias/la-onda-rinde-homenaje-a-merengueros-en-el-dia-nacional-del-merengue/",
+        "https://www.allmusic.com/artist/juan-luis-guerra-mn0000291502"
+      ]
+    },
+    {
+      "id": "key:grandmaster-flash-and-the-furious-five-old-school-rap",
+      "type": "key_artist_of",
+      "from": "artist:grandmaster-flash-and-the-furious-five",
+      "to": "genre:old-school-rap",
+      "sources": [
+        "https://www.allmusic.com/style/old-school-rap-ma0000002762"
+      ]
+    },
+    {
+      "id": "key:run-dmc-old-school-rap",
+      "type": "key_artist_of",
+      "from": "artist:run-dmc",
+      "to": "genre:old-school-rap",
+      "sources": [
+        "https://www.allmusic.com/style/old-school-rap-ma0000002762"
+      ]
+    },
+    {
+      "id": "key:kurtis-blow-old-school-rap",
+      "type": "key_artist_of",
+      "from": "artist:kurtis-blow",
+      "to": "genre:old-school-rap",
+      "sources": [
+        "https://www.allmusic.com/artist/kurtis-blow-mn0000116388"
+      ]
+    },
+    {
+      "id": "key:run-dmc-east-coast-rap",
+      "type": "key_artist_of",
+      "from": "artist:run-dmc",
+      "to": "genre:east-coast-rap",
+      "sources": [
+        "https://www.allmusic.com/style/east-coast-rap-ma0000002563"
+      ]
+    },
+    {
+      "id": "key:public-enemy-east-coast-rap",
+      "type": "key_artist_of",
+      "from": "artist:public-enemy",
+      "to": "genre:east-coast-rap",
+      "sources": [
+        "https://www.allmusic.com/style/east-coast-rap-ma0000002563"
+      ]
+    },
+    {
+      "id": "key:krs-one-east-coast-rap",
+      "type": "key_artist_of",
+      "from": "artist:krs-one",
+      "to": "genre:east-coast-rap",
+      "sources": [
+        "https://www.allmusic.com/artist/krs-one-mn0000359119"
+      ]
+    },
+    {
+      "id": "key:nwa-west-coast-rap",
+      "type": "key_artist_of",
+      "from": "artist:nwa",
+      "to": "genre:west-coast-rap",
+      "sources": [
+        "https://www.allmusic.com/genre/west-coast-rap-ma0000002932"
+      ]
+    },
+    {
+      "id": "key:dr-dre-west-coast-rap",
+      "type": "key_artist_of",
+      "from": "artist:dr-dre",
+      "to": "genre:west-coast-rap",
+      "sources": [
+        "https://www.allmusic.com/genre/west-coast-rap-ma0000002932"
+      ]
+    },
+    {
+      "id": "key:snoop-dogg-west-coast-rap",
+      "type": "key_artist_of",
+      "from": "artist:snoop-dogg",
+      "to": "genre:west-coast-rap",
+      "sources": [
+        "https://www.allmusic.com/genre/west-coast-rap-ma0000002932"
+      ]
+    },
+    {
+      "id": "key:nwa-gangsta-rap",
+      "type": "key_artist_of",
+      "from": "artist:nwa",
+      "to": "genre:gangsta-rap",
+      "sources": [
+        "https://www.allmusic.com/style/gangsta-rap-ma0000002611"
+      ]
+    },
+    {
+      "id": "key:tupac-shakur-gangsta-rap",
+      "type": "key_artist_of",
+      "from": "artist:tupac-shakur",
+      "to": "genre:gangsta-rap",
+      "sources": [
+        "https://www.allmusic.com/style/gangsta-rap-ma0000002611"
+      ]
+    },
+    {
+      "id": "key:geto-boys-gangsta-rap",
+      "type": "key_artist_of",
+      "from": "artist:geto-boys",
+      "to": "genre:gangsta-rap",
+      "sources": [
+        "https://www.allmusic.com/style/gangsta-rap-ma0000002611"
+      ]
+    },
+    {
+      "id": "key:nas-boom-bap",
+      "type": "key_artist_of",
+      "from": "artist:nas",
+      "to": "genre:boom-bap",
+      "sources": [
+        "https://repository.uwl.ac.uk/id/eprint/5150/"
+      ]
+    },
+    {
+      "id": "key:gang-starr-boom-bap",
+      "type": "key_artist_of",
+      "from": "artist:gang-starr",
+      "to": "genre:boom-bap",
+      "sources": [
+        "https://www.allmusic.com/artist/gang-starr-mn0000193601"
+      ]
+    },
+    {
+      "id": "key:krs-one-boom-bap",
+      "type": "key_artist_of",
+      "from": "artist:krs-one",
+      "to": "genre:boom-bap",
+      "sources": [
+        "https://www.allmusic.com/artist/krs-one-mn0000359119"
+      ]
+    },
+    {
+      "id": "key:a-tribe-called-quest-jazz-rap",
+      "type": "key_artist_of",
+      "from": "artist:a-tribe-called-quest",
+      "to": "genre:jazz-rap",
+      "sources": [
+        "https://www.allmusic.com/style/jazz-rap-ma0000012180/artists"
+      ]
+    },
+    {
+      "id": "key:de-la-soul-jazz-rap",
+      "type": "key_artist_of",
+      "from": "artist:de-la-soul",
+      "to": "genre:jazz-rap",
+      "sources": [
+        "https://www.allmusic.com/style/jazz-rap-ma0000012180/artists"
+      ]
+    },
+    {
+      "id": "key:gang-starr-jazz-rap",
+      "type": "key_artist_of",
+      "from": "artist:gang-starr",
+      "to": "genre:jazz-rap",
+      "sources": [
+        "https://www.allmusic.com/style/jazz-rap-ma0000012180/artists"
+      ]
+    },
+    {
+      "id": "key:de-la-soul-alternative-rap",
+      "type": "key_artist_of",
+      "from": "artist:de-la-soul",
+      "to": "genre:alternative-rap",
+      "sources": [
+        "https://www.allmusic.com/style/alternative-rap-ma0000012203"
+      ]
+    },
+    {
+      "id": "key:a-tribe-called-quest-alternative-rap",
+      "type": "key_artist_of",
+      "from": "artist:a-tribe-called-quest",
+      "to": "genre:alternative-rap",
+      "sources": [
+        "https://www.allmusic.com/style/alternative-rap-ma0000012203"
+      ]
+    },
+    {
+      "id": "key:outkast-alternative-rap",
+      "type": "key_artist_of",
+      "from": "artist:outkast",
+      "to": "genre:alternative-rap",
+      "sources": [
+        "https://www.allmusic.com/style/alternative-rap-ma0000012203"
+      ]
+    },
+    {
+      "id": "key:public-enemy-conscious-hip-hop",
+      "type": "key_artist_of",
+      "from": "artist:public-enemy",
+      "to": "genre:conscious-hip-hop",
+      "sources": [
+        "https://www.allmusic.com/subgenre/political-rap-ma0000012322"
+      ]
+    },
+    {
+      "id": "key:krs-one-conscious-hip-hop",
+      "type": "key_artist_of",
+      "from": "artist:krs-one",
+      "to": "genre:conscious-hip-hop",
+      "sources": [
+        "https://www.liveabout.com/conscious-rap-defined-2857304"
+      ]
+    },
+    {
+      "id": "key:common-conscious-hip-hop",
+      "type": "key_artist_of",
+      "from": "artist:common",
+      "to": "genre:conscious-hip-hop",
+      "sources": [
+        "https://www.allmusic.com/artist/p276488/biography"
+      ]
+    },
+    {
+      "id": "key:kendrick-lamar-conscious-hip-hop",
+      "type": "key_artist_of",
+      "from": "artist:kendrick-lamar",
+      "to": "genre:conscious-hip-hop",
+      "sources": [
+        "https://www.liveabout.com/conscious-rap-defined-2857304"
+      ]
+    },
+    {
+      "id": "key:lauryn-hill-conscious-hip-hop",
+      "type": "key_artist_of",
+      "from": "artist:lauryn-hill",
+      "to": "genre:conscious-hip-hop",
+      "sources": [
+        "https://www.liveabout.com/conscious-rap-defined-2857304"
+      ]
+    },
+    {
+      "id": "key:outkast-southern-rap",
+      "type": "key_artist_of",
+      "from": "artist:outkast",
+      "to": "genre:southern-rap",
+      "sources": [
+        "https://www.allmusic.com/style/southern-rap-ma0000002871"
+      ]
+    },
+    {
+      "id": "key:ti-southern-rap",
+      "type": "key_artist_of",
+      "from": "artist:ti",
+      "to": "genre:southern-rap",
+      "sources": [
+        "https://www.allmusic.com/style/southern-rap-ma0000002871"
+      ]
+    },
+    {
+      "id": "key:ugk-southern-rap",
+      "type": "key_artist_of",
+      "from": "artist:ugk",
+      "to": "genre:southern-rap",
+      "sources": [
+        "https://www.allmusic.com/style/southern-rap-ma0000002871"
+      ]
+    },
+    {
+      "id": "key:lil-wayne-southern-rap",
+      "type": "key_artist_of",
+      "from": "artist:lil-wayne",
+      "to": "genre:southern-rap",
+      "sources": [
+        "https://www.allmusic.com/style/southern-rap-ma0000002871"
+      ]
+    },
+    {
+      "id": "key:lil-jon-east-side-boyz-crunk",
+      "type": "key_artist_of",
+      "from": "artist:lil-jon-east-side-boyz",
+      "to": "genre:crunk",
+      "sources": [
+        "https://www.allmusic.com/artist/lil-jon-the-east-side-boyz-mn0000225892"
+      ]
+    },
+    {
+      "id": "key:crime-mob-crunk",
+      "type": "key_artist_of",
+      "from": "artist:crime-mob",
+      "to": "genre:crunk",
+      "sources": [
+        "https://www.allmusic.com/artist/crime-mob-mn0000672656"
+      ]
+    },
+    {
+      "id": "key:ying-yang-twins-crunk",
+      "type": "key_artist_of",
+      "from": "artist:ying-yang-twins",
+      "to": "genre:crunk",
+      "sources": [
+        "https://www.allmusic.com/style/southern-rap-ma0000002871"
+      ]
+    },
+    {
+      "id": "key:dr-dre-g-funk",
+      "type": "key_artist_of",
+      "from": "artist:dr-dre",
+      "to": "genre:g-funk",
+      "sources": [
+        "https://www.allmusic.com/style/g-funk-ma0000011824"
+      ]
+    },
+    {
+      "id": "key:snoop-dogg-g-funk",
+      "type": "key_artist_of",
+      "from": "artist:snoop-dogg",
+      "to": "genre:g-funk",
+      "sources": [
+        "https://www.allmusic.com/style/g-funk-ma0000011824"
+      ]
+    },
+    {
+      "id": "key:warren-g-g-funk",
+      "type": "key_artist_of",
+      "from": "artist:warren-g",
+      "to": "genre:g-funk",
+      "sources": [
+        "https://www.allmusic.com/style/g-funk-ma0000011824"
+      ]
+    },
+    {
+      "id": "key:e-40-hyphy",
+      "type": "key_artist_of",
+      "from": "artist:e-40",
+      "to": "genre:hyphy",
+      "sources": [
+        "https://www.latimes.com/archives/la-xpm-2006-jul-23-ca-music23-story.html"
+      ]
+    },
+    {
+      "id": "key:mac-dre-hyphy",
+      "type": "key_artist_of",
+      "from": "artist:mac-dre",
+      "to": "genre:hyphy",
+      "sources": [
+        "https://www.allmusic.com/artist/mac-dre-mn0000807687"
+      ]
+    },
+    {
+      "id": "key:keak-da-sneak-hyphy",
+      "type": "key_artist_of",
+      "from": "artist:keak-da-sneak",
+      "to": "genre:hyphy",
+      "sources": [
+        "https://www.allmusic.com/artist/keak-da-sneak-mn0000857597"
+      ]
+    },
+    {
+      "id": "key:dj-screw-chopped-and-screwed",
+      "type": "key_artist_of",
+      "from": "artist:dj-screw",
+      "to": "genre:chopped-and-screwed",
+      "sources": [
+        "https://exhibits.lib.uh.edu/s/dj-screw-records/page/houston"
+      ]
+    },
+    {
+      "id": "key:ugk-chopped-and-screwed",
+      "type": "key_artist_of",
+      "from": "artist:ugk",
+      "to": "genre:chopped-and-screwed",
+      "sources": [
+        "https://www.allmusic.com/artist/ugk-mn0000221637"
+      ]
+    },
+    {
+      "id": "key:lil-keke-chopped-and-screwed",
+      "type": "key_artist_of",
+      "from": "artist:lil-keke",
+      "to": "genre:chopped-and-screwed",
+      "sources": [
+        "https://www.allmusic.com/artist/lil-keke-mn0000826354"
+      ]
+    },
+    {
+      "id": "key:geto-boys-horrorcore",
+      "type": "key_artist_of",
+      "from": "artist:geto-boys",
+      "to": "genre:horrorcore",
+      "sources": [
+        "https://www.allmusic.com/artist/geto-boys-mn0000077283"
+      ]
+    },
+    {
+      "id": "key:gravediggaz-horrorcore",
+      "type": "key_artist_of",
+      "from": "artist:gravediggaz",
+      "to": "genre:horrorcore",
+      "sources": [
+        "https://www.allmusic.com/style/horror-rap-ma0000013531"
+      ]
+    },
+    {
+      "id": "key:insane-clown-posse-horrorcore",
+      "type": "key_artist_of",
+      "from": "artist:insane-clown-posse",
+      "to": "genre:horrorcore",
+      "sources": [
+        "https://www.allmusic.com/artist/insane-clown-posse-mn0000079959"
+      ]
+    },
+    {
+      "id": "lineage:old-school-rap-hip-hop",
+      "type": "subgenre_of",
+      "from": "genre:old-school-rap",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://www.allmusic.com/style/old-school-rap-ma0000002762"
+      ]
+    },
+    {
+      "id": "lineage:east-coast-rap-hip-hop",
+      "type": "subgenre_of",
+      "from": "genre:east-coast-rap",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://www.allmusic.com/style/east-coast-rap-ma0000002563"
+      ]
+    },
+    {
+      "id": "lineage:west-coast-rap-hip-hop",
+      "type": "subgenre_of",
+      "from": "genre:west-coast-rap",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://www.allmusic.com/genre/west-coast-rap-ma0000002932"
+      ]
+    },
+    {
+      "id": "lineage:gangsta-rap-hip-hop",
+      "type": "subgenre_of",
+      "from": "genre:gangsta-rap",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://www.allmusic.com/style/gangsta-rap-ma0000002611"
+      ]
+    },
+    {
+      "id": "lineage:boom-bap-east-coast-rap",
+      "type": "subgenre_of",
+      "from": "genre:boom-bap",
+      "to": "genre:east-coast-rap",
+      "sources": [
+        "https://repository.uwl.ac.uk/id/eprint/5150/"
+      ]
+    },
+    {
+      "id": "lineage:jazz-rap-jazz",
+      "type": "fusion_of",
+      "from": "genre:jazz-rap",
+      "to": "genre:jazz",
+      "sources": [
+        "https://www.allmusic.com/style/jazz-rap-ma0000012180/artists"
+      ]
+    },
+    {
+      "id": "lineage:jazz-rap-hip-hop",
+      "type": "fusion_of",
+      "from": "genre:jazz-rap",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://www.allmusic.com/style/jazz-rap-ma0000012180/artists"
+      ]
+    },
+    {
+      "id": "lineage:alternative-rap-hip-hop",
+      "type": "subgenre_of",
+      "from": "genre:alternative-rap",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://www.allmusic.com/style/alternative-rap-ma0000012203"
+      ]
+    },
+    {
+      "id": "lineage:conscious-hip-hop-hip-hop",
+      "type": "subgenre_of",
+      "from": "genre:conscious-hip-hop",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://academic.oup.com/edited-volume/34741/chapter-abstract/296548837"
+      ]
+    },
+    {
+      "id": "lineage:southern-rap-hip-hop",
+      "type": "subgenre_of",
+      "from": "genre:southern-rap",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://www.allmusic.com/style/southern-rap-ma0000002871"
+      ]
+    },
+    {
+      "id": "lineage:crunk-southern-rap",
+      "type": "subgenre_of",
+      "from": "genre:crunk",
+      "to": "genre:southern-rap",
+      "sources": [
+        "https://www.allmusic.com/artist/lil-jon-mn0000826299"
+      ]
+    },
+    {
+      "id": "lineage:g-funk-west-coast-rap",
+      "type": "subgenre_of",
+      "from": "genre:g-funk",
+      "to": "genre:west-coast-rap",
+      "sources": [
+        "https://www.allmusic.com/genre/west-coast-rap-ma0000002932"
+      ]
+    },
+    {
+      "id": "lineage:hyphy-west-coast-rap",
+      "type": "subgenre_of",
+      "from": "genre:hyphy",
+      "to": "genre:west-coast-rap",
+      "sources": [
+        "https://www.latimes.com/archives/la-xpm-2006-jul-23-ca-music23-story.html"
+      ]
+    },
+    {
+      "id": "lineage:chopped-and-screwed-southern-rap",
+      "type": "subgenre_of",
+      "from": "genre:chopped-and-screwed",
+      "to": "genre:southern-rap",
+      "sources": [
+        "https://exhibits.lib.uh.edu/s/dj-screw-records/page/houston"
+      ]
+    },
+    {
+      "id": "lineage:horrorcore-hip-hop",
+      "type": "subgenre_of",
+      "from": "genre:horrorcore",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://www.allmusic.com/style/horror-rap-ma0000013531"
       ]
     }
   ]

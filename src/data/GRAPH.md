@@ -26,8 +26,8 @@ rejected.**
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 474 nodes (115 genres, 328 artists, 7 labels, 6 places,
-14 tracks, 4 scenes) and 651 edges.
+Current size: 582 nodes (146 genres, 405 artists, 7 labels, 6 places,
+14 tracks, 4 scenes) and 773 edges.
 
 ---
 
@@ -73,27 +73,27 @@ Every genre **must** have a `family`. Lanes are rendered in this order:
 
 | family              | Label                  | Genres | Current examples |
 |---------------------|------------------------|--------|------------------|
-| `classical`         | Classical              | 7      | medieval → romantic, modern-classical, minimalism |
+| `classical`         | Classical              | 14     | Western eras, Hindustani and Carnatic traditions, gagaku, pansori |
 | `blues-soul`        | Blues, R&B & Soul       | 6      | blues, rhythm and blues, doo-wop, soul, funk, neo-soul |
 | `jazz`              | Jazz                   | 8      | jazz, swing, bebop, cool/hard bop, modal, free, fusion |
-| `country-folk`      | Country & Folk         | 3      | country, folk revival, bluegrass |
+| `country-folk`      | Country & Folk         | 6      | country, folk revival, bluegrass, Baul songs, khoomei |
 | `rock`              | Rock                   | 11     | rock and roll, blues-rock, hard-rock, krautrock, surf-rock |
 | `alternative-punk`  | Alternative & Punk     | 16     | punk, post-punk, indie-rock, grunge, shoegaze, new-wave |
 | `metal`             | Metal                  | 5      | heavy, thrash, death, black, and doom metal |
 | `pop`               | Pop                    | 4      | pop, synth-pop, K-pop, J-pop |
-| `hip-hop`           | Hip-hop                | 4      | hip-hop, grime, trap rap, drill |
+| `hip-hop`           | Hip-hop                | 18     | regional rap, boom bap, jazz rap, crunk, G-funk, hyphy, horrorcore |
 | `reggae`            | Reggae & Ska           | 5      | ska, rocksteady, reggae, dub, dancehall |
-| `latin`             | Latin                  | 5      | Latin music, son cubano, salsa, bossa nova, cumbia |
-| `african`           | African                | 3      | highlife, Afrobeat, Afrobeats |
+| `latin`             | Latin                  | 10     | son cubano, salsa, bossa nova, cumbia, samba, tango, bachata |
+| `african`           | African                | 5      | highlife, Afrobeat, Afrobeats, jùjú, soukous |
 | `electronica`       | Electronica & Ambient  | 10     | electro, trip-hop, ambient, IDM, synthwave, downtempo |
 | `house`             | Disco & House          | 12     | disco, Italo disco, hi-NRG, house styles, French Touch |
 | `techno`            | Techno & Trance        | 9      | techno styles, trance, psytrance, gabber, hardstyle |
 | `breakbeat-bass`    | Breakbeat & Bass       | 7      | breakbeat hardcore, jungle, drum and bass, garage, dubstep |
 
-These are navigational families, not strict genre ancestry. The 115 genres
-currently have 3–16 members per family: enough granularity to avoid an oversized
-Electronic lane without creating one-genre lanes. Keep related styles together
-as the catalogue grows, and revisit the grouping if it becomes unbalanced rather
+These are navigational families, not strict genre ancestry. The 146 genres
+currently have 4–18 members per family. The expanded Hip-hop lane includes
+regional rap scenes and production- and subject-based branches. Keep related
+styles together, and revisit the grouping if a lane becomes unbalanced rather
 than putting unrelated traditions into a catch-all.
 
 Disco is not a house subgenre, and French Touch remains broader than French
@@ -121,7 +121,9 @@ without claiming a key-artist relationship.
 
 ```
 genre:medieval genre:renaissance genre:baroque genre:classical-period genre:romantic
-genre:modern-classical genre:minimalism genre:blues genre:jazz genre:swing genre:bebop
+genre:modern-classical genre:minimalism genre:hindustani-classical genre:carnatic
+genre:qawwali genre:gamelan genre:gagaku genre:peking-opera genre:pansori
+genre:blues genre:jazz genre:swing genre:bebop
 genre:cool-jazz genre:hard-bop genre:modal-jazz genre:free-jazz genre:jazz-fusion
 genre:rock-and-roll genre:rock genre:blues-rock genre:psychedelic-rock
 genre:progressive-rock genre:hard-rock genre:heavy-metal genre:punk-rock genre:post-punk
@@ -138,9 +140,14 @@ genre:post-hardcore genre:post-rock genre:math-rock genre:noise-rock genre:gothi
 genre:pop-punk genre:stoner-rock genre:house genre:pop genre:country genre:folk genre:bluegrass
 genre:r-and-b genre:doo-wop genre:neo-soul genre:ska genre:rocksteady genre:reggae genre:dub
 genre:dancehall genre:latin genre:son-cubano genre:salsa genre:bossa-nova genre:cumbia
-genre:highlife genre:afrobeat genre:afrobeats genre:k-pop genre:j-pop genre:surf-rock genre:new-wave
+genre:highlife genre:afrobeat genre:afrobeats genre:juju genre:soukous
+genre:k-pop genre:j-pop genre:surf-rock genre:new-wave
 genre:thrash-metal genre:death-metal genre:black-metal genre:doom-metal genre:grime genre:trap-rap
-genre:drill genre:electro-house genre:hardstyle genre:psytrance
+genre:drill genre:old-school-rap genre:east-coast-rap genre:west-coast-rap genre:gangsta-rap
+genre:boom-bap genre:jazz-rap genre:alternative-rap genre:conscious-hip-hop genre:southern-rap
+genre:crunk genre:g-funk genre:hyphy genre:chopped-and-screwed genre:horrorcore
+genre:russian-folk genre:baul-songs genre:khoomei genre:samba genre:tango genre:andean-folk
+genre:bachata genre:merengue genre:electro-house genre:hardstyle genre:psytrance
 ```
 
 Always check `graph.json` for an existing artist, label, place, track, or scene
@@ -241,8 +248,10 @@ Ids must be unique across all edges.
     sources; source credibility and relevance are editorial requirements, not
     something the automated tests can determine.
 11. No orphan nodes. Every node has at least one edge.
-12. Lineage must remain connected, and these ancestor chains must keep working:
+12. Preserve supported lineage relationships and these ancestor chains:
     romantic → medieval, grunge → blues, deep-house → jazz, synth-pop → rock.
+    Keep genuinely independent traditions as roots instead of inventing an ancestry link
+    just to connect them.
 13. Do not remove these v1 entities: Detroit techno, Chicago house, Kraftwerk, Juan
     Atkins, Derrick May, Kevin Saunderson, Cybotron, Metroplex, and Detroit.
 14. Classical, jazz, and rock genres listed in §2 must keep their family and sources.
@@ -336,7 +345,7 @@ Example:
 - **Caribbean**: calypso, mento, reggaeton
 - **Latin**: mambo, tropicália, merengue, tango
 - **African**: amapiano, gqom, kwaito, soukous
-- **Hip-hop branches**: boom bap, gangsta rap, Southern hip-hop, hyphy
+- **Hip-hop branches**: Memphis rap, Miami bass, cloud rap, emo rap, Latin trap
 - **R&B**: new jack swing, contemporary R&B
 - **Metal branches**: nu metal, metalcore, industrial metal
 - **Rock gaps**: noise pop, psychobilly, post-metal
@@ -374,8 +383,8 @@ patch** in this exact shape:
 - [ ] Every edge endpoint exists in `graph.json` or in `addNodes`
 - [ ] Every new genre has `family`, `period`, a `description`, `sources`, and ≥ 3 sourced
       `key_artist_of` edges
-- [ ] Every new genre connects by lineage to the existing genre graph, directly or
-      through other additions
+- [ ] Every new genre with a well-supported parent or influence connects by lineage;
+      preserve independent traditions as roots rather than inventing ancestry
 - [ ] Every new artist has `sources`, `kind`, `period`, and at least one edge
 - [ ] Every artist has an explicit `family` or a `key_artist_of` relationship
       to a genre with a family

@@ -146,12 +146,16 @@ describe('graph.json integrity', () => {
       .toBe('classical')
   })
 
-  it('groups every genre into recognizable families with 3 to 16 genres per lane', () => {
+  it('groups every genre into recognizable families with 3 to 20 genres per lane', () => {
     const expected = {
-      classical: ['medieval', 'renaissance', 'baroque', 'classical-period', 'romantic', 'modern-classical', 'minimalism'],
+      classical: [
+        'medieval', 'renaissance', 'baroque', 'classical-period', 'romantic',
+        'modern-classical', 'minimalism', 'hindustani-classical', 'carnatic',
+        'qawwali', 'gamelan', 'gagaku', 'peking-opera', 'pansori',
+      ],
       'blues-soul': ['blues', 'soul', 'funk', 'r-and-b', 'doo-wop', 'neo-soul'],
       jazz: ['jazz', 'swing', 'bebop', 'cool-jazz', 'hard-bop', 'modal-jazz', 'free-jazz', 'jazz-fusion'],
-      'country-folk': ['country', 'folk', 'bluegrass'],
+      'country-folk': ['country', 'folk', 'bluegrass', 'russian-folk', 'baul-songs', 'khoomei'],
       rock: [
         'rock-and-roll', 'rock', 'blues-rock', 'psychedelic-rock', 'progressive-rock',
         'hard-rock', 'krautrock', 'garage-rock', 'glam-rock', 'stoner-rock', 'surf-rock',
@@ -163,10 +167,18 @@ describe('graph.json integrity', () => {
       ],
       metal: ['heavy-metal', 'thrash-metal', 'death-metal', 'black-metal', 'doom-metal'],
       pop: ['pop', 'synth-pop', 'k-pop', 'j-pop'],
-      'hip-hop': ['hip-hop', 'grime', 'trap-rap', 'drill'],
+      'hip-hop': [
+        'hip-hop', 'grime', 'trap-rap', 'drill', 'old-school-rap', 'east-coast-rap',
+        'west-coast-rap', 'gangsta-rap', 'boom-bap', 'jazz-rap', 'alternative-rap',
+        'conscious-hip-hop', 'southern-rap', 'crunk', 'g-funk', 'hyphy',
+        'chopped-and-screwed', 'horrorcore',
+      ],
       reggae: ['ska', 'rocksteady', 'reggae', 'dub', 'dancehall'],
-      latin: ['latin', 'son-cubano', 'salsa', 'bossa-nova', 'cumbia'],
-      african: ['highlife', 'afrobeat', 'afrobeats'],
+      latin: [
+        'latin', 'son-cubano', 'salsa', 'bossa-nova', 'cumbia', 'samba',
+        'tango', 'andean-folk', 'bachata', 'merengue',
+      ],
+      african: ['highlife', 'afrobeat', 'afrobeats', 'juju', 'soukous'],
       electronica: [
         'electro', 'trip-hop', 'ambient', 'idm', 'synthwave', 'darksynth',
         'vaporwave', 'chillwave', 'downtempo', 'electroclash',
@@ -194,7 +206,7 @@ describe('graph.json integrity', () => {
       expect(lane!.bars.map((bar) => bar.node.id).sort())
         .toEqual(slugs.map((slug) => `genre:${slug}`).sort())
       expect(lane!.bars.length, family).toBeGreaterThanOrEqual(3)
-      expect(lane!.bars.length, family).toBeLessThanOrEqual(16)
+      expect(lane!.bars.length, family).toBeLessThanOrEqual(20)
     }
   })
 
@@ -245,11 +257,33 @@ describe('graph.json integrity', () => {
     expect(artistIndex.nodeById.get('artist:bob-marley')?.family).toBe('reggae')
     expect(artistIndex.nodeById.get('artist:the-human-league')?.family)
       .toBe('pop')
+
+    expect(lineage(genreIndex, 'genre:chopped-and-screwed').ancestors)
+      .toContain('genre:southern-rap')
+    expect(lineage(genreIndex, 'genre:chopped-and-screwed').ancestors)
+      .toContain('genre:hip-hop')
+    expect(lineage(genreIndex, 'genre:crunk').ancestors)
+      .toContain('genre:southern-rap')
+    expect(lineage(genreIndex, 'genre:boom-bap').ancestors)
+      .toContain('genre:east-coast-rap')
+    expect(lineage(genreIndex, 'genre:g-funk').ancestors)
+      .toContain('genre:west-coast-rap')
   })
 
-  it('keeps every genre connected through the lineage graph', () => {
+  it('connects genres through lineage while preserving standalone traditions as roots', () => {
     const index = createTimelineModel(buildIndex(graph), 'genre').index
     const ids = index.graph.nodes.map((node) => node.id)
+    const roots = new Set([
+      'genre:carnatic',
+      'genre:russian-folk',
+      'genre:samba',
+      'genre:peking-opera',
+      'genre:pansori',
+      'genre:baul-songs',
+      'genre:juju',
+      'genre:soukous',
+      'genre:khoomei',
+    ])
     expect(ids.length).toBeGreaterThan(0)
     const visited = new Set([ids[0]])
     const queue = [ids[0]]
@@ -261,7 +295,7 @@ describe('graph.json integrity', () => {
         }
       }
     }
-    expect(visited).toEqual(new Set(ids))
+    expect(visited).toEqual(new Set(ids.filter((id) => !roots.has(id))))
   })
 
   it('gives every genre at least three sourced key artists', () => {
