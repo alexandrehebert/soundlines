@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useExplorer } from '../ExplorerContext.ts'
-import { lineage } from '../graph/graph.ts'
+import { lineageHighlight } from '../graph/graph.ts'
 import { ERA_SEGMENTS, MAX_YEAR, TIMELINE_PADDING, timeTicks, yearToX, type TimeScale } from '../graph/layout.ts'
 import { AXIS_H, BAR_H, offscreenIndicators, positionTimeline } from './timeline/geometry.ts'
 import { TimelineBar } from './timeline/TimelineBar.tsx'
@@ -24,14 +24,9 @@ export function Timeline() {
   const barById = useMemo(() => new Map(bars.map((bar) => [bar.node.id, bar])), [bars])
   const indicators = useMemo(() => offscreenIndicators(bars, width), [bars, width])
   const focusId = hoveredId ?? selectedId
-  const highlight = useMemo(() => {
-    if (!focusId || !model.index.nodeById.has(focusId)) return null
-    const result = lineage(model.index, focusId, model.orientation)
-    return {
-      nodes: new Set([focusId, ...result.ancestors, ...result.descendants]),
-      edges: result.edges,
-    }
-  }, [focusId, model])
+  const highlight = useMemo(
+    () => lineageHighlight(model.index, focusId, model.orientation), [focusId, model],
+  )
 
   useEffect(() => {
     if (!width || lastRevealedId.current === selectedId) return

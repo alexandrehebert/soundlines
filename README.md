@@ -29,6 +29,26 @@ graph relationships. Artist lanes and detail badges use the same families.
   and brings the selection back into view. Artists keep their family layout.
 - Genre order is remembered when switching modes and shared with
   `?sort=oldest-first`; omitting `sort` uses the default family groups.
+- Genres also offers a **Bars / Bubbles** switch (under Options on mobile).
+  Bubbles keep family colors; their area and color brightness increase with the
+  number of distinct genres reachable downstream through direct and indirect
+  lineage links. This is influence within the catalogue, not a popularity or
+  historical prominence score. Genres with no descendants keep a minimum size.
+  Names appear without influence counts. A deterministic spring-and-collision
+  layout pulls genres connected by lineage links toward each other, creating
+  an organic, non-overlapping map rather than ordered rows. Family membership
+  seeds the layout, but cross-family influences also pull neighbors together.
+  Drag the background, scroll, or swipe to explore; use the zoom controls for
+  an overview or closer reading. Spatial proximity is approximate, not a claim
+  that every neighboring pair has a documented influence relationship.
+  Click a bubble or press Enter/Space to open the same detail drawer.
+  Mouse hover previews the same ancestor/descendant lineage as the bars:
+  related bubbles stay bright, unrelated bubbles fade to 20%, and lineage links
+  appear between bubbles. Leaving the bubble restores the selected lineage (or
+  the full map with no selection). Selection uses a bright fill and thin white
+  border, without scaling the bubble. Touch taps select without sticky hover.
+  Search and related-genre navigation reveal the selected bubble. The layout is
+  remembered when visiting Artists and shared with `?layout=bubbles`.
 - Off-screen genres have a labeled, family-colored ghost bar at the left or
   right edge, pointing toward their nearest visible period. Click or press
   Enter/Space to reveal it. In family groups, indicators only appear where they

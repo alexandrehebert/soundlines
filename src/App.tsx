@@ -1,4 +1,4 @@
-import { Disc3, SlidersHorizontal, Users, X } from 'lucide-react'
+import { Bubbles, ChartGantt, Disc3, SlidersHorizontal, Users, X } from 'lucide-react'
 import { AnimatePresence, motion, MotionConfig } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent, type PointerEvent } from 'react'
 import { useExplorer } from './ExplorerContext.ts'
@@ -7,13 +7,15 @@ import { DetailPanel } from './components/DetailPanel.tsx'
 import { Legend } from './components/Legend.tsx'
 import { SearchBar } from './components/SearchBar.tsx'
 import { Timeline } from './components/Timeline.tsx'
+import { GenreBubbles } from './components/GenreBubbles.tsx'
 import rawGraph from './data/graph.json'
 import type { MusicGraph } from './graph/types.ts'
 
 const graph = rawGraph as MusicGraph
 
 function Explorer() {
-  const { index, view, changeView, selectedId, selectNode, genreOrder, changeGenreOrder } = useExplorer()
+  const { index, view, changeView, selectedId, selectNode, genreOrder, changeGenreOrder, genreDisplay } = useExplorer()
+  const showingBubbles = view === 'genre' && genreDisplay === 'bubbles'
   const [optionsOpen, setOptionsOpen] = useState(false)
   const stats = useMemo(() => {
     const count = (type: string) => index.graph.nodes.filter((node) => node.type === type).length
@@ -47,7 +49,8 @@ function Explorer() {
           <SearchBar />
         </div>
         <ViewToggle view={view} changeView={changeView} className="hidden md:flex" />
-        {view === 'genre' && (
+        {view === 'genre' && <GenreDisplaySelect className="hidden md:flex" />}
+        {view === 'genre' && !showingBubbles && (
           <GenreOrderSelect genreOrder={genreOrder} changeGenreOrder={changeGenreOrder} className="hidden md:flex" />
         )}
         <div className="ml-auto hidden items-center gap-4 text-xs font-medium text-slate-500 md:flex">
@@ -56,10 +59,10 @@ function Explorer() {
           <span><strong className="text-slate-300">{stats.links}</strong> links</span>
         </div>
       </header>
-      <div className="hidden border-b border-slate-800/60 bg-slate-950/70 px-5 py-1.5 lg:block"><Legend /></div>
+      {!showingBubbles && <div className="hidden border-b border-slate-800/60 bg-slate-950/70 px-5 py-1.5 lg:block"><Legend /></div>}
       <main className="relative flex min-h-0 flex-1">
         <div className="min-w-0 flex-1">
-          <Timeline key={view === 'genre' ? `${view}-${genreOrder}` : view} />
+          {showingBubbles ? <GenreBubbles /> : <Timeline key={view === 'genre' ? `${view}-${genreOrder}` : view} />}
         </div>
         <AnimatePresence>
           {selectedId && (
@@ -123,9 +126,12 @@ function Explorer() {
                 </button>
               </div>
               {view === 'genre' && (
+                <GenreDisplaySelect className="mb-6 flex" />
+              )}
+              {view === 'genre' && !showingBubbles && (
                 <GenreOrderSelect genreOrder={genreOrder} changeGenreOrder={changeGenreOrder} className="mb-6 flex" />
               )}
-              <div className="border-t border-slate-800 pt-4"><Legend /></div>
+              {!showingBubbles && <div className="border-t border-slate-800 pt-4"><Legend /></div>}
             </motion.section>
           </motion.div>
         )}
@@ -136,7 +142,9 @@ function Explorer() {
         )}
       </AnimatePresence>
       <footer className="hidden border-t border-slate-800/60 bg-slate-950/90 px-5 py-1.5 text-[11px] font-medium text-slate-600 md:block">
-        Drag or scroll to move · pinch or ⌘ scroll to zoom · click a bar for details
+        {showingBubbles
+          ? 'Size and brightness show influence within this catalogue · click a bubble for details'
+          : 'Drag or scroll to move · pinch or ⌘ scroll to zoom · click a bar for details'}
       </footer>
     </div>
   )
@@ -201,6 +209,24 @@ function MobileDetailSheet({ onClose }: { onClose: () => void }) {
   )
 }
 
+const toggleContainerClass = 'relative flex items-center rounded-full border border-slate-700 bg-slate-900 p-1'
+
+function toggleButtonClass(selected: boolean) {
+  return `relative flex min-h-9 items-center gap-1.5 rounded-full px-3 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:min-h-0 md:px-3 md:py-1 md:text-xs ${
+    selected ? 'text-cyan-200' : 'text-slate-500 hover:text-slate-300'
+  }`
+}
+
+function ToggleIndicator({ layoutId }: { layoutId: string }) {
+  return (
+    <motion.span
+      layoutId={layoutId}
+      className="absolute inset-0 rounded-full border border-cyan-500/50 bg-cyan-500/15 shadow-sm shadow-cyan-500/20"
+      transition={{ type: 'spring', stiffness: 500, damping: 38 }}
+    />
+  )
+}
+
 function ViewToggle({
   view,
   changeView,
@@ -228,7 +254,7 @@ function ViewToggle({
 
   return (
     <div
-      className={`relative flex items-center rounded-full border border-slate-700 bg-slate-900 p-1 ${className}`}
+      className={`${toggleContainerClass} ${className}`}
       role="radiogroup"
       aria-label="Timeline view"
       onKeyDown={handleKeyDown}
@@ -246,20 +272,41 @@ function ViewToggle({
             aria-checked={selected}
             tabIndex={selected ? 0 : -1}
             onClick={() => changeView(type)}
-            className={`relative flex min-h-9 items-center gap-1.5 rounded-full px-3 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:min-h-0 md:px-3 md:py-1 md:text-xs ${
-              selected ? 'text-cyan-200' : 'text-slate-500 hover:text-slate-300'
-            }`}
+            className={toggleButtonClass(selected)}
           >
-            {selected && (
-              <motion.span
-                layoutId={`view-toggle-indicator-${indicatorId}`}
-                className="absolute inset-0 rounded-full border border-cyan-500/50 bg-cyan-500/15 shadow-sm shadow-cyan-500/20"
-                transition={{ type: 'spring', stiffness: 500, damping: 38 }}
-              />
-            )}
+            {selected && <ToggleIndicator layoutId={`view-toggle-indicator-${indicatorId}`} />}
             <span className="relative flex items-center gap-1.5">
               {type === 'artist' ? <Users className="h-3.5 w-3.5" /> : <Disc3 className="h-3.5 w-3.5" />}
               {type === 'artist' ? 'Artists' : 'Genres'}
+            </span>
+          </button>
+        )
+      })}
+    </div>
+  )
+}
+
+function GenreDisplaySelect({ className = '' }: { className?: string }) {
+  const { genreDisplay, changeGenreDisplay } = useExplorer()
+  const indicatorId = useId()
+  return (
+    <div className={`${toggleContainerClass} ${className}`} role="group" aria-label="Genre display">
+      {(['bars', 'bubbles'] as const).map((display) => {
+        const selected = genreDisplay === display
+        return (
+          <button
+            key={display}
+            type="button"
+            aria-pressed={selected}
+            onClick={() => changeGenreDisplay(display)}
+            className={toggleButtonClass(selected)}
+          >
+            {selected && <ToggleIndicator layoutId={`genre-display-indicator-${indicatorId}`} />}
+            <span className="relative flex items-center gap-1.5">
+              {display === 'bars'
+                ? <ChartGantt className="h-3.5 w-3.5" aria-hidden="true" />
+                : <Bubbles className="h-3.5 w-3.5" aria-hidden="true" />}
+              {display === 'bars' ? 'Bars' : 'Bubbles'}
             </span>
           </button>
         )

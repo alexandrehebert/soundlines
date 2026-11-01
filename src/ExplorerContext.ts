@@ -11,9 +11,10 @@ import { buildIndex } from './graph/graph.ts'
 import { DEFAULT_START_YEAR, MAX_YEAR, revealEraRange, type GenreOrder } from './graph/layout.ts'
 import { createTimelineModel, type TimelineView } from './graph/timeline.ts'
 import type { MusicGraph } from './graph/types.ts'
+import type { GenreDisplay } from './graph/bubbles.ts'
 
 type YearRange = [number, number]
-type ExplorerLocation = { view: TimelineView; selectedId: string | null; genreOrder: GenreOrder }
+type ExplorerLocation = { view: TimelineView; selectedId: string | null; genreOrder: GenreOrder; genreDisplay: GenreDisplay }
 
 export function useExplorerState(graph: MusicGraph) {
   const index = useMemo(() => buildIndex(graph), [graph])
@@ -25,10 +26,11 @@ export function useExplorerState(graph: MusicGraph) {
       ? node.type
       : params.get('view') === 'artists' ? 'artist' : 'genre'
     const genreOrder = params.get('sort') === 'oldest-first' ? 'oldest-first' : 'family'
-    return { view, selectedId: node?.id ?? null, genreOrder }
+    const genreDisplay = params.get('layout') === 'bubbles' ? 'bubbles' : 'bars'
+    return { view, selectedId: node?.id ?? null, genreOrder, genreDisplay }
   }, [index])
   const [location, setLocation] = useState(readLocation)
-  const { view, selectedId, genreOrder } = location
+  const { view, selectedId, genreOrder, genreDisplay } = location
   const [ranges, setRanges] = useState<Record<TimelineView, YearRange>>(() => {
     const node = location.selectedId ? index.nodeById.get(location.selectedId) : undefined
     const initial: Record<TimelineView, YearRange> = {
@@ -64,8 +66,10 @@ export function useExplorerState(graph: MusicGraph) {
     else url.searchParams.delete('view')
     if (genreOrder === 'oldest-first') url.searchParams.set('sort', 'oldest-first')
     else url.searchParams.delete('sort')
+    if (genreDisplay === 'bubbles') url.searchParams.set('layout', 'bubbles')
+    else url.searchParams.delete('layout')
     window.history.replaceState(null, '', url)
-  }, [selectedId, view, genreOrder])
+  }, [selectedId, view, genreOrder, genreDisplay])
 
   useEffect(() => {
     const onPopState = () => {
@@ -81,10 +85,10 @@ export function useExplorerState(graph: MusicGraph) {
     const node = id ? index.nodeById.get(id) : undefined
     if (id && !node) throw new Error(`Cannot select unknown node ${id}`)
     const nextView = node?.type === 'genre' || node?.type === 'artist' ? node.type : view
-    const next = { view: nextView, selectedId: id, genreOrder }
+    const next = { view: nextView, selectedId: id, genreOrder, genreDisplay }
     revealSelection(next)
     setLocation(next)
-  }, [index, view, genreOrder, revealSelection])
+  }, [index, view, genreOrder, genreDisplay, revealSelection])
 
   const changeView = useCallback((nextView: TimelineView) => {
     setLocation((current) => current.view === nextView
@@ -101,6 +105,10 @@ export function useExplorerState(graph: MusicGraph) {
       : { ...current, genreOrder: order })
   }, [])
 
+  const changeGenreDisplay = useCallback((display: GenreDisplay) => {
+    setLocation((current) => ({ ...current, genreDisplay: display }))
+  }, [])
+
   const setViewRange = useCallback((range: SetStateAction<YearRange>) => {
     setRanges((current) => ({
       ...current,
@@ -110,8 +118,9 @@ export function useExplorerState(graph: MusicGraph) {
 
   return useMemo(() => ({
     index, model, view, selectedId, selectNode, changeView, genreOrder, changeGenreOrder,
+    genreDisplay, changeGenreDisplay,
     viewRange: ranges[view], setViewRange,
-  }), [index, model, view, selectedId, selectNode, changeView, genreOrder, changeGenreOrder, ranges, setViewRange])
+  }), [index, model, view, selectedId, selectNode, changeView, genreOrder, changeGenreOrder, genreDisplay, changeGenreDisplay, ranges, setViewRange])
 }
 
 export const ExplorerContext = createContext<ReturnType<typeof useExplorerState> | null>(null)

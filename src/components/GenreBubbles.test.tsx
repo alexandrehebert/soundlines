@@ -1,0 +1,64 @@
+import { renderToStaticMarkup } from 'react-dom/server'
+import { describe, expect, it, vi } from 'vitest'
+import { ExplorerContext } from '../ExplorerContext.ts'
+import { buildIndex } from '../graph/graph.ts'
+import { createTimelineModel } from '../graph/timeline.ts'
+import type { MusicGraph } from '../graph/types.ts'
+import { GenreBubbles } from './GenreBubbles.tsx'
+
+const graph: MusicGraph = {
+  version: 1,
+  nodes: ['A', 'B', 'C', 'D'].map((name) => ({
+    id: `genre:${name}`, name, type: 'genre', family: 'jazz', period: { start: 1900 },
+  })),
+  edges: [
+    { id: 'ab', type: 'derived_from', from: 'genre:B', to: 'genre:A' },
+    { id: 'bc', type: 'influences', from: 'genre:B', to: 'genre:C' },
+    { id: 'ad', type: 'subgenre_of', from: 'genre:D', to: 'genre:A' },
+  ],
+}
+
+function renderBubbles(selectedId: string | null) {
+  const index = buildIndex(graph)
+  return renderToStaticMarkup(
+    <ExplorerContext.Provider value={{
+      index, model: createTimelineModel(index, 'genre'), view: 'genre',
+      selectedId, selectNode: vi.fn(), changeView: vi.fn(),
+      genreOrder: 'family', changeGenreOrder: vi.fn(),
+      genreDisplay: 'bubbles', changeGenreDisplay: vi.fn(),
+      viewRange: [1948, 2026], setViewRange: vi.fn(),
+    }}>
+      <GenreBubbles />
+    </ExplorerContext.Provider>,
+  )
+}
+
+function bubbleMarkup(markup: string, name: string) {
+  return markup.match(new RegExp(`<button\\b[^>]*aria-label="${name} [^"]*"[^>]*>`))?.[0]
+}
+
+describe('bubble lineage rendering', () => {
+  it('leaves the full map visible without a selection and never scales individual bubbles', () => {
+    const markup = renderBubbles(null)
+    for (const name of ['A', 'B', 'C', 'D']) {
+      expect(bubbleMarkup(markup, name)).toContain('opacity:1')
+      expect(bubbleMarkup(markup, name)).not.toContain('scale')
+    }
+    expect(markup).not.toContain('data-bubble-link')
+  })
+
+  it('matches bar selection styling and dims unrelated branches to 20 percent', () => {
+    const markup = renderBubbles('genre:B')
+    for (const name of ['A', 'B', 'C']) {
+      expect(bubbleMarkup(markup, name)).toContain('opacity:1')
+    }
+    expect(bubbleMarkup(markup, 'D')).toContain('opacity:0.2')
+    expect(bubbleMarkup(markup, 'B')).toContain('aria-pressed="true"')
+    expect(bubbleMarkup(markup, 'B')).toContain('border-color:#f8fafc')
+    expect(bubbleMarkup(markup, 'B')).toContain('border-width:1.5px')
+    expect(markup).toContain('data-bubble-link="ab"')
+    expect(markup).toContain('data-bubble-link="bc"')
+    expect(markup).not.toContain('data-bubble-link="ad"')
+    expect(markup).not.toMatch(/(?:NaN|Infinity)/)
+  })
+})

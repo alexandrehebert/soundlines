@@ -91,6 +91,19 @@ export function lineage(
   return { ancestors, descendants, edges }
 }
 
+export function lineageHighlight(
+  index: GraphIndex,
+  id: string | null,
+  orientation: RelationOrientation = LINEAGE_ORIENTATION,
+) {
+  if (!id || !index.nodeById.has(id)) return null
+  const result = lineage(index, id, orientation)
+  return {
+    nodes: new Set([id, ...result.ancestors, ...result.descendants]),
+    edges: result.edges,
+  }
+}
+
 /** Resolve the ancestor-side node id of a lineage edge, or null if not a lineage edge. */
 export function lineageSource(
   edge: GraphEdge,

@@ -3,6 +3,7 @@ import {
   buildIndex,
   groupedRelations,
   lineage,
+  lineageHighlight,
   lineageSource,
   lineageTarget,
   neighbors,
@@ -82,6 +83,34 @@ describe('lineage', () => {
     expect(result.edges).toContain('e1')
     expect(result.edges).toContain('e2')
     expect(result.edges).not.toContain('e4')
+  })
+})
+
+describe('lineageHighlight', () => {
+  it('includes the focus, ancestors, descendants, and only their lineage edges', () => {
+    const result = lineageHighlight(index, 'genre:house')
+    expect(result?.nodes).toEqual(new Set(['genre:house', 'genre:disco', 'genre:acid', 'genre:techno']))
+    expect(result?.edges).toEqual(new Set(['e1', 'e2', 'e3']))
+  })
+
+  it('does not highlight sibling branches reached through a shared ancestor', () => {
+    const result = lineageHighlight(index, 'genre:acid')
+    expect(result?.nodes).toEqual(new Set(['genre:acid', 'genre:house', 'genre:disco']))
+    expect(result?.edges).toEqual(new Set(['e1', 'e2']))
+  })
+
+  it('clears highlighting without a valid focus and keeps isolated nodes visible', () => {
+    expect(lineageHighlight(index, null)).toBeNull()
+    expect(lineageHighlight(index, 'genre:missing')).toBeNull()
+    expect(lineageHighlight(index, 'artist:dj')).toEqual({
+      nodes: new Set(['artist:dj']), edges: new Set(),
+    })
+  })
+
+  it('preserves the active model orientation', () => {
+    expect(lineageHighlight(index, 'artist:dj', { key_artist_of: 'forward' })).toEqual({
+      nodes: new Set(['artist:dj', 'genre:house']), edges: new Set(['e4']),
+    })
   })
 })
 
