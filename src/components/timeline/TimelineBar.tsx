@@ -51,8 +51,13 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
       aria-pressed={isSelected}
       opacity={dimmed ? 0.2 : 1}
       style={{ cursor: 'pointer', transition: 'opacity 150ms' }}
-      onPointerEnter={() => onHover(bar.node.id)}
-      onPointerLeave={() => onHover(null)}
+      onPointerEnter={(event) => {
+        if (event.pointerType === 'mouse') onHover(bar.node.id)
+        else onHover(null)
+      }}
+      onPointerLeave={(event) => {
+        if (event.pointerType === 'mouse') onHover(null)
+      }}
       onKeyDown={(event) => {
         if (event.key === 'Enter' || event.key === ' ') {
           event.preventDefault()
@@ -62,6 +67,7 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
       }}
       onClick={(event) => {
         event.stopPropagation()
+        onHover(null)
         onSelect(bar.node.id, revealYear)
       }}
     >
@@ -104,6 +110,18 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
           </>
         )}
       </defs>
+      {bar.visibleSpans.map(([start, end], index) => (
+        <rect
+          key={`hit-area-${index}`}
+          x={start}
+          y={bar.yCenter - 18}
+          width={Math.max(0, end - start)}
+          height={36}
+          fill="transparent"
+          pointerEvents="all"
+          aria-hidden="true"
+        />
+      ))}
       <g mask={bar.ended ? `url(#${tailId})` : undefined}>
         {/* SVG masks don't affect hit-testing; hidden phases have no hit rect. */}
         <g mask={hasHiddenPhase ? `url(#${visibilityId})` : undefined}
@@ -127,7 +145,7 @@ export function TimelineBar({ bar, scale, dimmed, indicator, onHover, onSelect }
                 return (
                   <g key={phase.start} data-prominence={phase.prominence} pointerEvents="all">
                     <rect x={x} y={bar.yCenter - BAR_H / 2}
-                      width={endX - x} height={BAR_H} fill="transparent" />
+                      width={Math.max(0, endX - x)} height={BAR_H} fill="transparent" />
                     <title>{`${labels[phase.prominence]}: c. ${phase.start}–${phase.end}. ${bar.node.phaseNote ?? ''}`}</title>
                   </g>
                 )

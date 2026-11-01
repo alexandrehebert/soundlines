@@ -46,7 +46,7 @@ function SourceLinks({ sources }: { sources?: string[] }) {
   )
 }
 
-export function DetailPanel() {
+export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
   const { index, selectedId, selectNode } = useExplorer()
   const node = selectedId ? index.nodeById.get(selectedId) : undefined
   if (!node) return null
@@ -59,8 +59,8 @@ export function DetailPanel() {
   const family = node.type === 'artist' ? artistFamily(index, node) : node.family
 
   return (
-    <aside className="flex h-full w-full flex-col overflow-y-auto border-l border-slate-800 bg-slate-950/90 backdrop-blur">
-      <div className="sticky top-0 flex items-start justify-between gap-3 border-b border-slate-800 bg-slate-950/95 p-5">
+    <aside className="flex h-full w-full flex-col overflow-y-auto border-l-0 border-slate-800 bg-slate-950/95 backdrop-blur md:border-l">
+      <div className="sticky top-0 flex items-start justify-between gap-3 border-b border-slate-800 bg-slate-950/95 p-4 md:p-5">
         <div>
           <div className="mb-2 flex flex-wrap items-center gap-2">
             <span
@@ -81,15 +81,15 @@ export function DetailPanel() {
         </div>
         <button
           type="button"
-          onClick={() => selectNode(null)}
-          className="rounded-full p-1.5 text-slate-500 transition hover:bg-slate-800 hover:text-slate-200"
+          onClick={onClose ?? (() => selectNode(null))}
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-slate-400 transition hover:bg-slate-800 hover:text-slate-200 md:h-8 md:w-8 md:text-slate-500"
           aria-label="Close panel"
         >
           <X className="h-4 w-4" />
         </button>
       </div>
 
-      <div className="flex flex-col gap-5 p-5">
+      <div className="flex flex-col gap-5 p-4 md:p-5">
         {node.description && (
           <p className="text-sm leading-relaxed text-slate-300">{node.description}</p>
         )}
@@ -139,7 +139,7 @@ export function DetailPanel() {
                     <button
                       type="button"
                       onClick={() => selectNode(other.id)}
-                      className="group flex w-full items-baseline justify-between gap-2 rounded-xl border border-slate-800 bg-slate-900/60 px-3 py-2 text-left transition hover:border-slate-600 hover:bg-slate-800/80"
+                      className="group flex min-h-11 w-full items-center justify-between gap-2 rounded-xl border border-slate-800 bg-slate-900/60 px-3 py-2 text-left transition hover:border-slate-600 hover:bg-slate-800/80"
                     >
                       <span className="flex items-center gap-2">
                         <span

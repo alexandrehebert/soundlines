@@ -24,7 +24,9 @@ body {
 }
 
 .timeline-surface {
-  touch-action: none;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
   user-select: none;
   cursor: grab;
 }

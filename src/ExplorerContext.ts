@@ -5,6 +5,7 @@ import {
   useEffect,
   useMemo,
   useState,
+  type SetStateAction,
 } from 'react'
 import { buildIndex } from './graph/graph.ts'
 import { DEFAULT_START_YEAR, MAX_YEAR, revealEraRange, type GenreOrder } from './graph/layout.ts'
@@ -100,8 +101,11 @@ export function useExplorerState(graph: MusicGraph) {
       : { ...current, genreOrder: order })
   }, [])
 
-  const setViewRange = useCallback((range: YearRange) => {
-    setRanges((current) => ({ ...current, [view]: range }))
+  const setViewRange = useCallback((range: SetStateAction<YearRange>) => {
+    setRanges((current) => ({
+      ...current,
+      [view]: typeof range === 'function' ? range(current[view]) : range,
+    }))
   }, [view])
 
   return useMemo(() => ({

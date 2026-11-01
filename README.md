@@ -24,7 +24,11 @@ highlighting stay within the active mode.
   Enter/Space to reveal it. In family groups, indicators only appear where they
   do not overlap an on-screen bar or another indicator; nearer genres take
   priority on shared rows. Ghosts are navigation hints, not historical activity.
-- Drag to move both axes, scroll to move vertically, horizontal scroll to pan time, pinch or Cmd/Ctrl+scroll to zoom
+- With a mouse, drag to move both axes; vertical scroll moves the timeline, horizontal scroll pans time, and Cmd/Ctrl+scroll zooms.
+- On touch screens, one-finger horizontal drags pan time, vertical swipes scroll the timeline, and two-finger pinches zoom. Tap a bar to open its draggable detail sheet.
+- Mobile search opens as a full-screen overlay; selected artists and genres bring their bars into view.
+- Horizontal trackpad momentum is handled by the timeline without native
+  horizontal overscroll; rapid wheel updates accumulate rather than overwrite one another.
 - Both timeline modes pad the time range by 24px on each side within a full-width
   drawing surface; panning and background bands extend all the way to the edges.
 - Click a bar or focus it and press Enter/Space for details; every relation in the panel is navigable
