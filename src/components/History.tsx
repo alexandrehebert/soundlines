@@ -32,7 +32,11 @@ export function History() {
   const events = useMemo(() => historyEvents(index.graph), [index.graph])
   const selectedEvent = useMemo(() => events.find((event) => event.id === selectedId), [events, selectedId])
   const groups = useMemo(() => groupHistoryEvents(events, filters), [events, filters])
-  const eventRefs = useRef(new Map<string, HTMLLIElement>())
+  const eventSides = useMemo(() => new Map(
+    groups.flatMap((group) => group.events)
+      .map((event, index) => [event.id, index % 2 === 0 ? 'above' : 'below'] as const),
+  ), [groups])
+  const eventRefs = useRef(new Map<string, HTMLElement>())
   const eraRefs = useRef(new Map<string, HTMLElement>())
   const viewportRef = useRef<HTMLDivElement>(null)
   const categoryId = useId()
@@ -52,8 +56,8 @@ export function History() {
 
   return (
     <div className="flex h-full min-w-0 flex-col" role="region" aria-label="Music history timeline">
-      <div className="shrink-0 border-b border-slate-800 bg-slate-950/95 px-5 py-3 sm:px-8">
-        <div className="flex flex-wrap items-center justify-between gap-3">
+      <div className="shrink-0 border-b border-slate-800 bg-slate-950/95 px-5 py-3 sm:px-8 md:grid md:grid-cols-[auto_minmax(0,1fr)] md:items-center md:gap-x-6">
+        <div className="flex flex-wrap items-center justify-between gap-3 md:justify-start">
           <div className="flex rounded-full border border-slate-700 bg-slate-900 p-1" role="group" aria-label="Event importance">
             <button
               type="button"
@@ -95,20 +99,20 @@ export function History() {
           </label>
         </div>
         {groups.length > 0 && (
-          <nav aria-label="Jump to an era" className="-mx-1 mt-3 flex gap-1 overflow-x-auto pb-0.5">
+          <nav aria-label="Jump to an era" className="-mx-1 mt-3 flex gap-1 overflow-x-auto pb-0.5 md:mt-0">
             {groups.map((group) => (
               <button
                 key={group.id}
                 type="button"
                 onClick={() => eraRefs.current.get(group.id)?.scrollIntoView({ block: 'start', inline: 'start' })}
-                className="shrink-0 rounded-md px-2 py-1 text-[11px] font-semibold text-slate-400 transition-colors hover:bg-slate-800 hover:text-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
+                className="flex h-8 shrink-0 items-center justify-center rounded-md px-2 text-[11px] font-semibold leading-none text-slate-400 transition-colors hover:bg-slate-800 hover:text-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
               >
-                {group.label}
+                <span>{group.label}</span>
               </button>
             ))}
           </nav>
         )}
-        <p aria-live="polite" className="mt-2 text-xs leading-relaxed text-slate-500">
+        <p aria-live="polite" className="mt-2 text-xs leading-relaxed text-slate-500 md:col-span-2">
           Showing {resultCount} {resultCount === 1 ? 'event' : 'events'} by start year · dates may be approximate,
           landmarks are editorial.
         </p>
@@ -120,7 +124,7 @@ export function History() {
         data-history-scroll
         className="min-h-0 flex-1 overflow-auto overscroll-contain focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-cyan-400/70"
       >
-        <div className="px-5 pb-16 pt-6 sm:px-8 md:flex md:w-max md:min-w-full md:items-start md:pb-8">
+        <div className="history-track px-5 pb-16 pt-6 sm:px-8 md:flex md:w-max md:min-w-full md:pb-6">
           {groups.length === 0 ? (
             <div role="status" className="rounded-2xl border border-slate-800 bg-slate-900/50 px-5 py-8 text-center">
               <p className="text-sm text-slate-300">No events match these filters.</p>
@@ -139,7 +143,7 @@ export function History() {
                 if (element) eraRefs.current.set(group.id, element)
                 else eraRefs.current.delete(group.id)
               }}
-              className="scroll-mt-6 md:shrink-0 md:scroll-ml-8"
+              className="history-era scroll-mt-6 md:shrink-0 md:scroll-ml-8"
               aria-labelledby={`history-era-${group.id}`}
             >
               <div className="mb-5 flex items-center gap-4">
@@ -148,24 +152,28 @@ export function History() {
                 </h3>
                 <div className="h-px flex-1 bg-slate-800 md:hidden" />
               </div>
-              <ol className="relative mb-10 space-y-4 border-l border-slate-800 pl-5 sm:ml-3 sm:pl-8 md:mb-0 md:ml-0 md:flex md:items-start md:gap-4 md:space-y-0 md:border-l-0 md:border-t md:pl-0 md:pr-8 md:pt-6">
-                {group.events.map((event) => {
+              <ol className="history-events relative mb-10 space-y-4 border-l border-slate-800 pl-5 sm:ml-3 sm:pl-8 md:mb-0 md:ml-0 md:space-y-0 md:border-l-0 md:pl-0 md:pr-8">
+                {group.events.map((event, eventIndex) => {
                   const related = eventConnections(index, event.id)
                   const selected = selectedId === event.id
                   return (
                     <li
                       key={event.id}
-                      ref={(element) => {
-                        if (element) eventRefs.current.set(event.id, element)
-                        else eventRefs.current.delete(event.id)
-                      }}
                       data-history-event={event.id}
-                      className="relative scroll-mt-6 md:w-[22rem] md:shrink-0 md:scroll-ml-8"
+                      data-history-side={eventSides.get(event.id)}
+                      style={{ gridColumn: `${eventIndex + 1} / span 2` }}
+                      className="history-event relative scroll-mt-6 md:scroll-ml-8"
                     >
-                      <span className="absolute -left-[25px] top-5 h-2.5 w-2.5 rounded-full border-2 border-slate-950 bg-rose-400 sm:-left-[37px] md:-top-[30px] md:left-5 md:after:absolute md:after:left-1/2 md:after:top-full md:after:h-6 md:after:w-px md:after:bg-slate-800" aria-hidden="true" />
-                      <article className={`rounded-2xl border bg-slate-900/50 p-4 transition-colors sm:p-5 ${
-                        selected ? 'border-violet-400/70 bg-violet-500/10' : 'border-slate-800 hover:border-slate-700'
-                      }`}>
+                      <span className="history-event-marker absolute -left-[25px] top-5 h-2.5 w-2.5 rounded-full border-2 border-slate-950 bg-rose-400 sm:-left-[37px] md:left-5" aria-hidden="true" />
+                      <article
+                        ref={(element) => {
+                          if (element) eventRefs.current.set(event.id, element)
+                          else eventRefs.current.delete(event.id)
+                        }}
+                        className={`history-event-card rounded-2xl border bg-slate-900/50 p-4 transition-colors sm:p-5 md:p-4 ${
+                          selected ? 'border-violet-400/70 bg-violet-500/10' : 'border-slate-800 hover:border-slate-700'
+                        }`}
+                      >
                         <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                           <span className="text-sm font-bold tabular-nums text-rose-300">{formatEventPeriod(event.period)}</span>
                           <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
@@ -187,7 +195,7 @@ export function History() {
                             {event.name}
                           </button>
                         </h4>
-                        {event.description && <p className="mt-2 text-sm leading-6 text-slate-400">{event.description}</p>}
+                        {event.description && <p className="mt-2 text-sm leading-6 text-slate-400 md:text-[13px] md:leading-5">{event.description}</p>}
                         {related.length > 0 && (
                           <div className="mt-4 flex flex-wrap items-center gap-2">
                             <span className="mr-1 text-[10px] font-bold uppercase tracking-wider text-slate-500">Connected</span>

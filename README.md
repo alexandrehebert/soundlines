@@ -28,9 +28,13 @@ spread across these 16 families rather than catch-all
 
 The **History** view presents the graph's curated events in chronological order,
 grouped into eras by their starting year. On desktop it fills the available width
-with a horizontally scrolling timeline; mobile keeps a vertical list. Cards are
-spaced for readability, not proportionally to elapsed time. The era buttons jump
-through the timeline, and selecting an event scrolls it into view on either layout.
+with a horizontally scrolling timeline. Events alternate above and below a
+central rail, filling the available window height; longer cards scroll internally,
+and very short windows can also scroll vertically. Mobile keeps a vertical list.
+Neighboring cards in each era share horizontal space on opposite sides of the rail,
+with a small gap between cards on the same side. Spacing is not proportional to
+elapsed time. The era buttons jump through the timeline, and selecting an event
+scrolls it into view on either layout.
 Dates marked `c.` or `approx.` are not exact, and events spanning years are
 listed under their start. The current event collection runs from approximately
 900 to 2021 and is not an exhaustive or geographically balanced account.

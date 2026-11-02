@@ -64,6 +64,34 @@ export const Instruments: Story = {
 
 export const History: Story = {
   parameters: { explorer: { initialView: 'history' } },
+  play: async ({ canvasElement }) => {
+    await waitFor(() => {
+      const viewport = canvasElement.querySelector('[data-history-scroll]')?.getBoundingClientRect()
+      const events = canvasElement.querySelectorAll('[data-history-event]')
+      const above = events[0]?.querySelector('article')?.getBoundingClientRect()
+      const below = events[1]?.querySelector('article')?.getBoundingClientRect()
+      const nextAbove = events[2]?.querySelector('article')?.getBoundingClientRect()
+      const firstMarker = events[0]?.querySelector('.history-event-marker')?.getBoundingClientRect()
+      const secondMarker = events[1]?.querySelector('.history-event-marker')?.getBoundingClientRect()
+      if (!viewport || !above || !below || !nextAbove || !firstMarker || !secondMarker) {
+        throw new Error('History viewport, events, or timeline markers are missing')
+      }
+      expect(above.bottom).toBeLessThan(firstMarker.top)
+      expect(below.top).toBeGreaterThan(secondMarker.bottom)
+      expect(Math.abs(firstMarker.top - secondMarker.top)).toBeLessThan(1)
+      expect(above.height).toBeGreaterThan(viewport.height * 0.3)
+      expect(below.height).toBeGreaterThan(viewport.height * 0.3)
+      expect(below.left).toBeGreaterThan(above.left)
+      expect(below.left).toBeLessThan(above.right)
+      expect(nextAbove.left - above.right).toBeCloseTo(48, 0)
+      for (const button of canvasElement.querySelectorAll('nav[aria-label="Jump to an era"] button')) {
+        const bounds = button.getBoundingClientRect()
+        const label = button.querySelector('span')?.getBoundingClientRect()
+        if (!label) throw new Error('Era button label is missing')
+        expect(Math.abs((label.top + label.bottom - bounds.top - bounds.bottom) / 2)).toBeLessThan(1)
+      }
+    })
+  },
 }
 
 export const HistoryFilters: Story = {

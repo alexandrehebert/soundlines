@@ -63,6 +63,28 @@ describe('history view', () => {
     expect(markup).not.toContain('max-w-5xl')
   })
 
+  it('alternates events above and below the desktop rail across era boundaries', () => {
+    const markup = renderHistory()
+    expect(markup).toContain('data-history-event="event:early" data-history-side="above"')
+    expect(markup).toContain('data-history-event="event:later" data-history-side="below"')
+    expect(markup).toContain('history-track')
+    expect(markup).toContain('history-event-card')
+  })
+
+  it('restarts alternation with the first visible event after filtering', () => {
+    const markup = renderHistory(null, { category: 'media', landmarksOnly: false })
+    expect(markup).toContain('data-history-event="event:later" data-history-side="above"')
+  })
+
+  it('centers era labels inside fixed-height navigation buttons', () => {
+    const markup = renderHistory()
+    const navigation = markup.match(/<nav\b[^>]*>[\s\S]*?<\/nav>/)?.[0]
+    expect(navigation).toBeDefined()
+    expect(navigation).toContain('flex h-8 shrink-0 items-center justify-center')
+    expect(navigation).toContain('<span>Before 1400</span>')
+    expect(navigation).toContain('<span>1950–1999</span>')
+  })
+
   it('keeps an accessible topic label and styles the selector like the importance group', () => {
     const markup = renderHistory()
     const selector = markup.match(/<label\b[^>]*>[\s\S]*?<\/label>/)?.[0]
