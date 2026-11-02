@@ -85,6 +85,22 @@ describe('history chronology', () => {
     expect(events).toHaveLength(data.nodes.filter((node) => node.type === 'event').length)
     expect(grouped.map((event) => event.id)).toEqual(events.map((event) => event.id))
     expect(events[0].period.start).toBe(900)
-    expect(events.at(-1)?.period.start).toBe(2021)
+    expect(events.at(-1)?.period.start).toBe(2022)
+  })
+
+  it.each([
+    ['event:siti-binti-saad-recordings', 1928, 'genre:taarab', '1900-1949'],
+    ['event:essaouira-gnawa-festival', 1998, 'genre:gnawa', '1950-1999'],
+    ['event:gnawa-unesco-inscription', 2019, 'genre:gnawa', '2000-onward'],
+    ['event:rai-unesco-inscription', 2022, 'genre:rai', '2000-onward'],
+  ] as const)('shows %s in History and connects it to its genre', (id, year, genre, era) => {
+    const data = rawGraph as MusicGraph
+    const events = historyEvents(data)
+    expect(events.find((event) => event.id === id)?.period.start).toBe(year)
+    expect(groupHistoryEvents(events, DEFAULT_HISTORY_FILTERS).find((group) => group.id === era)
+      ?.events.some((event) => event.id === id)).toBe(true)
+    expect(data.edges).toEqual(expect.arrayContaining([
+      expect.objectContaining({ type: 'shaped', from: id, to: genre }),
+    ]))
   })
 })

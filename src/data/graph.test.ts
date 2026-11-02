@@ -189,6 +189,7 @@ describe('graph.json integrity', () => {
   })
 
   it.each([
+    ['instrument:algerian-mandole', 'strings', ['genre:algerian-chaabi'], ['artist:el-hadj-mhamed-el-anka', 'artist:abdelkader-chaou']],
     ['instrument:sarod', 'strings', ['genre:hindustani-classical'], ['artist:ali-akbar-khan']],
     ['instrument:harmonium', 'keyboards', ['genre:qawwali'], ['artist:farrukh-fateh-ali-khan']],
     ['instrument:timbales', 'percussion', ['genre:salsa', 'genre:latin-jazz'], ['artist:tito-puente']],
@@ -340,7 +341,7 @@ describe('graph.json integrity', () => {
       ],
       african: [
         'highlife', 'afrobeat', 'afrobeats', 'juju', 'soukous', 'amapiano', 'gqom', 'kwaito',
-        'congolese-rumba',
+        'congolese-rumba', 'rai', 'gnawa', 'algerian-chaabi', 'mbalax', 'makossa', 'taarab',
       ],
       electronica: [
         'electro', 'trip-hop', 'ambient', 'idm', 'synthwave', 'darksynth',
@@ -447,6 +448,11 @@ describe('graph.json integrity', () => {
       'genre:khoomei',
       'genre:arabic-maqam',
       'genre:congolese-rumba',
+      'genre:rai',
+      'genre:gnawa',
+      'genre:algerian-chaabi',
+      'genre:makossa',
+      'genre:taarab',
     ])
     expect(ids.length).toBeGreaterThan(0)
     const visited = new Set([ids[0], ...roots])
@@ -460,6 +466,57 @@ describe('graph.json integrity', () => {
       }
     }
     expect(visited).toEqual(new Set(ids))
+  })
+
+  it.each([
+    ['rai', 'rai', 'oran', ['cheikha-rimitti', 'khaled', 'cheb-mami', 'cheb-hasni', 'cheba-zahouania']],
+    ['gnawa', 'gnawa', 'morocco', ['mahmoud-guinia', 'hamid-el-kasri', 'hassan-hakmoun']],
+    ['algerian-chaabi', 'chaabi', 'algiers', ['el-hadj-mhamed-el-anka', 'dahmane-el-harrachi', 'abdelkader-chaou']],
+    ['mbalax', 'mbalax', 'dakar', ['youssou-ndour', 'omar-pene', 'thione-seck']],
+    ['makossa', 'makossa', 'douala', ['manu-dibango', 'eboa-lotin', 'petit-pays']],
+    ['taarab', 'taarab', 'zanzibar', ['siti-binti-saad', 'bi-kidude', 'culture-musical-club']],
+  ] as const)('makes %s and its artists searchable in the African timelines', (genre, query, place, artists) => {
+    const index = buildIndex(graph)
+    const genreId = `genre:${genre}`
+    expect(searchNodes(graph, query)[0]?.node.id).toBe(genreId)
+    expect(index.outEdges.get(genreId)).toEqual(expect.arrayContaining([
+      expect.objectContaining({ type: 'originated_in', to: `place:${place}` }),
+    ]))
+    expect(createTimelineModel(index, 'genre').lanes.find((lane) => lane.family === 'african')
+      ?.bars.some((bar) => bar.node.id === genreId)).toBe(true)
+
+    const artistModel = createTimelineModel(index, 'artist')
+    for (const artist of artists) {
+      const artistId = `artist:${artist}`
+      expect(index.outEdges.get(artistId)).toEqual(expect.arrayContaining([
+        expect.objectContaining({ type: 'key_artist_of', to: genreId }),
+      ]))
+      expect(artistModel.lanes.find((lane) => lane.family === 'african')
+        ?.bars.some((bar) => bar.node.id === artistId), artistId).toBe(true)
+    }
+  })
+
+  it('connects the new recordings, instrument, and documented influences', () => {
+    const index = buildIndex(graph)
+    for (const [from, type, to] of [
+      ['track:didi-khaled', 'anthem_of', 'genre:rai'],
+      ['track:didi-khaled', 'recorded_by', 'artist:khaled'],
+      ['track:soul-makossa-manu-dibango', 'anthem_of', 'genre:makossa'],
+      ['track:soul-makossa-manu-dibango', 'recorded_by', 'artist:manu-dibango'],
+      ['instrument:algerian-mandole', 'featured_in', 'genre:algerian-chaabi'],
+      ['artist:el-hadj-mhamed-el-anka', 'plays', 'instrument:algerian-mandole'],
+      ['artist:siti-binti-saad', 'influences', 'artist:bi-kidude'],
+    ]) {
+      expect(index.outEdges.get(from)).toEqual(expect.arrayContaining([
+        expect.objectContaining({ type, to, sources: expect.arrayContaining([expect.any(String)]) }),
+      ]))
+    }
+    const genreIndex = createTimelineModel(index, 'genre').index
+    const ancestors = lineage(genreIndex, 'genre:mbalax').ancestors
+    expect(ancestors).toContain('genre:congolese-rumba')
+    expect(ancestors).toContain('genre:salsa')
+    expect(searchNodes(graph, 'Cheb Khaled')[0]?.node.id).toBe('artist:khaled')
+    expect(searchNodes(graph, "Youssou N'Dour")[0]?.node.id).toBe('artist:youssou-ndour')
   })
 
   it('gives every genre at least three sourced key artists', () => {

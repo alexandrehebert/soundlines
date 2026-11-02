@@ -182,13 +182,20 @@ export interface SearchResult {
   score: number
 }
 
-/** Case-insensitive subsequence search, ranked: exact > prefix > substring > subsequence. */
+function normalizeSearchText(value: string): string {
+  return value.toLowerCase().normalize('NFD')
+    .replace(/(\p{Script=Latin})\p{M}+/gu, '$1')
+    .replace(/[\u2018\u2019]/g, "'")
+    .normalize('NFC')
+}
+
+/** Search ignores case, Latin accents, and apostrophe style: exact > prefix > substring > subsequence. */
 export function searchNodes(graph: MusicGraph, query: string, limit = 8): SearchResult[] {
-  const q = query.trim().toLowerCase()
+  const q = normalizeSearchText(query.trim())
   if (q.length === 0) return []
   const results: SearchResult[] = []
   for (const node of graph.nodes) {
-    const name = node.name.toLowerCase()
+    const name = normalizeSearchText(node.name)
     let score: number | null = null
     if (name === q) score = 100
     else if (name.startsWith(q)) score = 80

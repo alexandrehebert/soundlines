@@ -37,7 +37,7 @@ elapsed time. The era buttons jump through the timeline, and selecting an event
 scrolls it into view on either layout.
 Dates marked `c.` or `approx.` are not exact, and events spanning years are
 listed under their start. The current event collection runs from approximately
-900 to 2021 and is not an exhaustive or geographically balanced account.
+900 to 2022 and is not an exhaustive or geographically balanced account.
 
 Show all events or just **Landmarks**, and filter by topic. Landmark status is an
 editorial selection, not a measured ranking. Select an event to see its sources
@@ -57,7 +57,9 @@ groups related dance styles without calling disco a house subgenre; Grime sits
 with Hip-hop for browsing while retaining its garage-derived lineage links.
 Latin and African are broad regional umbrellas for the current catalogue, not
 single musical traditions. Actual ancestry and cross-influences remain in the
-graph relationships. Artist lanes and detail badges use the same families.
+graph relationships. The African lane includes raï, Algerian chaâbi, Gnawa,
+mbalax, makossa, and taarab, with sourced artists, places, recordings, and
+historical events. Artist lanes and detail badges use the same families.
 
 - Each timeline's order toggle, marked by a sort icon (under Options on mobile),
   switches between **Family groups** (the default) and **Oldest first**.
@@ -124,7 +126,7 @@ graph relationships. Artist lanes and detail badges use the same families.
   focus uses that same rounded ring before selection, without a native-outline
   flash on pointer down.
 - Artists switches to artist bars, not an overlay on the genre timeline; artist bubbles are currently removed
-- Search and related-node navigation switch modes automatically when selecting an artist, genre, instrument, or event and bring the selection into view
+- Search ignores case, Latin accents, and apostrophe style (so `rai` finds `Raï` and `N'Dour` finds `N’Dour`); search and related-node navigation switch modes automatically when selecting an artist, genre, instrument, or event and bring the selection into view
 - Selection is shareable via `?focus=<node-id>`; `?view=artists`, `?view=instruments`, or `?view=history` opens a view without a selection
 - Shared view and entity URLs return Open Graph and Twitter card metadata in the
   initial HTML, including a Soundlines preview image. Entity previews use their

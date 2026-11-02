@@ -19536,6 +19536,571 @@
       "sources": [
         "https://en.wikipedia.org/wiki/Zungguzungguguzeng"
       ]
+    },
+    {
+      "id": "genre:rai",
+      "type": "genre",
+      "name": "Raï",
+      "family": "african",
+      "period": {
+        "start": 1920,
+        "precision": "decade"
+      },
+      "description": "A popular song tradition from western Algeria, shaped by rural poetic singing and the urban culture of Oran. Cheikhas and later young singers developed its frank lyrics and, over time, incorporated electric instruments and new production styles.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894",
+        "https://en.wikipedia.org/wiki/Ra%C3%AF"
+      ]
+    },
+    {
+      "id": "genre:gnawa",
+      "type": "genre",
+      "name": "Gnawa",
+      "family": "african",
+      "period": {
+        "start": 1600,
+        "precision": "circa"
+      },
+      "description": "Moroccan musical and ritual practices rooted in communities whose histories include the trans-Saharan slave trade. Singing, guembri and metal castanets accompany ceremonies as well as public performances; the timeline date is an approximate anchor, not a precise origin.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gnawa-01170",
+        "https://en.wikipedia.org/wiki/Gnawa_music"
+      ]
+    },
+    {
+      "id": "genre:algerian-chaabi",
+      "type": "genre",
+      "name": "Algerian chaâbi",
+      "family": "african",
+      "period": {
+        "start": 1930,
+        "precision": "decade"
+      },
+      "description": "An urban popular tradition associated with the Casbah of Algiers, shaped by Andalusian musical forms, sung poetry and musicians including El Anka. It is distinct from Moroccan styles also called chaâbi.",
+      "sources": [
+        "https://www.npr.org/2008/08/11/93502483/chaabi-the-peoples-music-of-north-africa",
+        "https://en.wikipedia.org/wiki/Chaabi_(Algeria)"
+      ]
+    },
+    {
+      "id": "genre:mbalax",
+      "type": "genre",
+      "name": "Mbalax",
+      "family": "african",
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      },
+      "description": "Senegalese urban dance music combining local vocal and sabar-drum traditions with electric bands and influences from across Africa and the Atlantic. Dakar groups and singers including Youssou N’Dour helped develop its modern sound.",
+      "sources": [
+        "https://www.britannica.com/biography/Youssou-NDour",
+        "https://en.wikipedia.org/wiki/Mbalax"
+      ]
+    },
+    {
+      "id": "genre:makossa",
+      "type": "genre",
+      "name": "Makossa",
+      "family": "african",
+      "period": {
+        "start": 1950,
+        "precision": "decade"
+      },
+      "description": "A Cameroonian dance-music style associated with Douala, whose modern sound developed around prominent bass, guitars and horns. Manu Dibango’s 1972 recording “Soul Makossa” carried one jazz- and soul-inflected interpretation to international audiences.",
+      "sources": [
+        "https://www.britannica.com/biography/Manu-Dibango",
+        "https://en.wikipedia.org/wiki/Makossa"
+      ]
+    },
+    {
+      "id": "genre:taarab",
+      "type": "genre",
+      "name": "Taarab",
+      "family": "african",
+      "period": {
+        "start": 1880,
+        "precision": "circa"
+      },
+      "description": "A Swahili coastal music tradition associated with Zanzibar and East Africa, shaped by exchanges among African, Arab and Indian Ocean cultures. Orchestras and singers including Siti binti Saad brought its songs into recordings, clubs and community celebrations.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taarab",
+        "https://www.persee.fr/doc/jafr_0399-0346_2002_num_72_2_1315"
+      ]
+    },
+    {
+      "id": "artist:cheikha-rimitti",
+      "type": "artist",
+      "name": "Cheikha Rimitti",
+      "kind": "person",
+      "period": {
+        "start": 1940,
+        "end": 2006,
+        "precision": "decade"
+      },
+      "description": "Algerian singer whose long career connected early raï performance with later generations of the genre.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cheikha_Rimitti",
+        "https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894",
+        "https://en.wikipedia.org/wiki/Ra%C3%AF"
+      ]
+    },
+    {
+      "id": "artist:khaled",
+      "type": "artist",
+      "name": "Khaled (Cheb Khaled)",
+      "kind": "person",
+      "period": {
+        "start": 1974
+      },
+      "description": "Oran-born singer who helped bring contemporary raï to international audiences, including with the 1992 single “Didi”.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Khaled_(musician)",
+        "https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894"
+      ]
+    },
+    {
+      "id": "artist:cheb-mami",
+      "type": "artist",
+      "name": "Cheb Mami",
+      "kind": "person",
+      "period": {
+        "start": 1982
+      },
+      "description": "Algerian raï singer whose recordings helped the style circulate beyond Algeria.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cheb_Mami",
+        "https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894"
+      ]
+    },
+    {
+      "id": "artist:cheb-hasni",
+      "type": "artist",
+      "name": "Cheb Hasni",
+      "kind": "person",
+      "period": {
+        "start": 1986,
+        "end": 1994
+      },
+      "description": "Oran singer known for a romantic and sentimental approach to raï.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cheb_Hasni"
+      ]
+    },
+    {
+      "id": "artist:cheba-zahouania",
+      "type": "artist",
+      "name": "Cheba Zahouania",
+      "kind": "person",
+      "period": {
+        "start": 1981
+      },
+      "description": "Algerian raï singer whose recordings include collaborations with Cheb Hasni.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cheba_Zahouania"
+      ]
+    },
+    {
+      "id": "artist:mahmoud-guinia",
+      "type": "artist",
+      "name": "Maâlem Mahmoud Guinia",
+      "kind": "person",
+      "period": {
+        "start": 1992,
+        "end": 2015
+      },
+      "description": "Essaouira Gnawa master, singer and guembri player. The timeline starts with a documented 1992 performance in Montreal; his musical work began earlier.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mahmoud_Guinia"
+      ]
+    },
+    {
+      "id": "artist:hamid-el-kasri",
+      "type": "artist",
+      "name": "Maâlem Hamid El Kasri",
+      "kind": "person",
+      "period": {
+        "start": 2004
+      },
+      "description": "Moroccan Gnawa master and guembri player whose performances draw on northern and southern styles. The timeline starts with a documented 2004 festival performance, not the beginning of his career.",
+      "sources": [
+        "https://www.festival-gnaoua.net/artiste/maalem-hamid-el-kasri/",
+        "https://en.wikipedia.org/wiki/Hamid_El_Kasri"
+      ]
+    },
+    {
+      "id": "artist:hassan-hakmoun",
+      "type": "artist",
+      "name": "Hassan Hakmoun",
+      "kind": "person",
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      },
+      "description": "Moroccan musician and guembri player known for Gnawa performance and collaborations across musical traditions.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hassan_Hakmoun"
+      ]
+    },
+    {
+      "id": "artist:el-hadj-mhamed-el-anka",
+      "type": "artist",
+      "name": "El Hadj M'Hamed El Anka",
+      "kind": "person",
+      "period": {
+        "start": 1920,
+        "end": 1978,
+        "precision": "circa"
+      },
+      "description": "Algiers singer, instrumentalist and teacher who played a central role in establishing Algerian chaâbi.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/El_Hadj_M%27Hamed_El_Anka",
+        "https://www.npr.org/2008/08/11/93502483/chaabi-the-peoples-music-of-north-africa"
+      ]
+    },
+    {
+      "id": "artist:dahmane-el-harrachi",
+      "type": "artist",
+      "name": "Dahmane El Harrachi",
+      "kind": "person",
+      "period": {
+        "start": 1956,
+        "end": 1980
+      },
+      "description": "Algerian chaâbi singer and mandole player whose song “Ya Rayah” became widely known beyond Algeria.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dahmane_El_Harrachi"
+      ]
+    },
+    {
+      "id": "artist:abdelkader-chaou",
+      "type": "artist",
+      "name": "Abdelkader Chaou",
+      "kind": "person",
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      },
+      "description": "Algiers chaâbi singer and Algerian mandole player.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Abdelkader_Chaou"
+      ]
+    },
+    {
+      "id": "artist:youssou-ndour",
+      "type": "artist",
+      "name": "Youssou N’Dour",
+      "kind": "person",
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      },
+      "description": "Senegalese singer whose work with Dakar bands helped develop and popularize mbalax.",
+      "sources": [
+        "https://www.britannica.com/biography/Youssou-NDour",
+        "https://en.wikipedia.org/wiki/Youssou_N%27Dour"
+      ]
+    },
+    {
+      "id": "artist:omar-pene",
+      "type": "artist",
+      "name": "Omar Pène",
+      "kind": "person",
+      "period": {
+        "start": 1975,
+        "precision": "circa"
+      },
+      "description": "Senegalese singer and co-founder of Super Diamono, whose dance music draws on mbalax rhythms.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Omar_P%C3%A8ne"
+      ]
+    },
+    {
+      "id": "artist:thione-seck",
+      "type": "artist",
+      "name": "Thione Seck",
+      "kind": "person",
+      "period": {
+        "start": 1970,
+        "end": 2021,
+        "precision": "decade"
+      },
+      "description": "Senegalese mbalax singer and songwriter who led the group Raam Daan.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thione_Seck"
+      ]
+    },
+    {
+      "id": "artist:manu-dibango",
+      "type": "artist",
+      "name": "Manu Dibango",
+      "kind": "person",
+      "period": {
+        "start": 1956,
+        "end": 2020
+      },
+      "description": "Cameroonian saxophonist and composer whose work connected makossa with jazz and soul.",
+      "sources": [
+        "https://www.britannica.com/biography/Manu-Dibango",
+        "https://en.wikipedia.org/wiki/Manu_Dibango"
+      ]
+    },
+    {
+      "id": "artist:eboa-lotin",
+      "type": "artist",
+      "name": "Eboa Lotin",
+      "kind": "person",
+      "period": {
+        "start": 1962,
+        "end": 1997
+      },
+      "description": "Douala singer and songwriter associated with the early development of recorded makossa.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Eboa_Lotin"
+      ]
+    },
+    {
+      "id": "artist:petit-pays",
+      "type": "artist",
+      "name": "Petit-Pays",
+      "kind": "person",
+      "period": {
+        "start": 1987
+      },
+      "description": "Cameroonian singer whose recordings mix makossa with other popular dance styles.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Petit-Pays"
+      ]
+    },
+    {
+      "id": "artist:siti-binti-saad",
+      "type": "artist",
+      "name": "Siti binti Saad",
+      "kind": "person",
+      "period": {
+        "start": 1928,
+        "end": 1950
+      },
+      "description": "Zanzibar taarab singer known for early commercial recordings and songs in Swahili. The timeline starts with her documented 1928 recording sessions, not her first performances.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Siti_binti_Saad",
+        "https://en.wikipedia.org/wiki/Taarab"
+      ]
+    },
+    {
+      "id": "artist:bi-kidude",
+      "type": "artist",
+      "name": "Bi Kidude",
+      "kind": "person",
+      "period": {
+        "start": 1940,
+        "end": 2013,
+        "precision": "decade"
+      },
+      "description": "Zanzibar singer associated with taarab and Unyago. The approximate timeline starts with her return to Zanzibar in the 1940s; her earlier chronology is uncertain.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bi_Kidude"
+      ]
+    },
+    {
+      "id": "artist:culture-musical-club",
+      "type": "artist",
+      "name": "Culture Musical Club",
+      "kind": "group",
+      "period": {
+        "start": 1958
+      },
+      "description": "Zanzibar ensemble that performs taarab and smaller kidumbaki arrangements.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Culture_Musical_Club"
+      ]
+    },
+    {
+      "id": "place:oran",
+      "type": "place",
+      "name": "Oran",
+      "description": "A city in western Algeria associated with the urban development of raï.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894",
+        "https://en.wikipedia.org/wiki/Ra%C3%AF"
+      ]
+    },
+    {
+      "id": "place:algiers",
+      "type": "place",
+      "name": "Algiers",
+      "description": "The Algerian capital and home of the Casbah chaâbi tradition.",
+      "sources": [
+        "https://www.npr.org/2008/08/11/93502483/chaabi-the-peoples-music-of-north-africa",
+        "https://en.wikipedia.org/wiki/Chaabi_(Algeria)"
+      ]
+    },
+    {
+      "id": "place:morocco",
+      "type": "place",
+      "name": "Morocco",
+      "description": "North African country where Gnawa musical and ritual practices are widely rooted.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gnawa-01170",
+        "https://en.wikipedia.org/wiki/Gnawa_music"
+      ]
+    },
+    {
+      "id": "place:essaouira",
+      "type": "place",
+      "name": "Essaouira",
+      "description": "Moroccan coastal city that hosts the Gnaoua World Music Festival.",
+      "sources": [
+        "https://www.arabculturefund.org/Programs/Jurors/341",
+        "https://en.wikipedia.org/wiki/Gnaoua_World_Music_Festival"
+      ]
+    },
+    {
+      "id": "place:dakar",
+      "type": "place",
+      "name": "Dakar",
+      "description": "Senegalese capital and an important center of mbalax.",
+      "sources": [
+        "https://www.britannica.com/biography/Youssou-NDour",
+        "https://en.wikipedia.org/wiki/Mbalax"
+      ]
+    },
+    {
+      "id": "place:douala",
+      "type": "place",
+      "name": "Douala",
+      "description": "Cameroonian city associated with the development of makossa.",
+      "sources": [
+        "https://www.britannica.com/biography/Manu-Dibango",
+        "https://en.wikipedia.org/wiki/Makossa"
+      ]
+    },
+    {
+      "id": "place:zanzibar",
+      "type": "place",
+      "name": "Zanzibar",
+      "description": "East African archipelago associated with the development of taarab.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taarab"
+      ]
+    },
+    {
+      "id": "place:mumbai",
+      "type": "place",
+      "name": "Mumbai",
+      "description": "Indian city formerly known as Bombay, where Siti binti Saad recorded in 1928.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taarab"
+      ]
+    },
+    {
+      "id": "instrument:algerian-mandole",
+      "type": "instrument",
+      "name": "Algerian mandole",
+      "family": "strings",
+      "period": {
+        "start": 1932,
+        "precision": "year"
+      },
+      "description": "A large, fretted plucked instrument used in Algerian chaâbi. Its Algerian form was developed in the 1930s with input from El Anka and luthier Jean Bélido.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Algerian_mandole",
+        "https://en.wikipedia.org/wiki/El_Hadj_M%27Hamed_El_Anka"
+      ]
+    },
+    {
+      "id": "track:didi-khaled",
+      "type": "track",
+      "name": "Didi",
+      "period": {
+        "start": 1992,
+        "end": 1992,
+        "precision": "year"
+      },
+      "description": "Khaled’s 1992 raï single, which reached audiences beyond Algeria.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Didi_(song)"
+      ]
+    },
+    {
+      "id": "track:soul-makossa-manu-dibango",
+      "type": "track",
+      "name": "Soul Makossa",
+      "period": {
+        "start": 1972,
+        "end": 1972,
+        "precision": "year"
+      },
+      "description": "Manu Dibango’s 1972 recording blends makossa with jazz and soul.",
+      "sources": [
+        "https://www.britannica.com/biography/Manu-Dibango",
+        "https://en.wikipedia.org/wiki/Soul_Makossa"
+      ]
+    },
+    {
+      "id": "event:siti-binti-saad-recordings",
+      "type": "event",
+      "name": "Siti binti Saad records taarab in Bombay",
+      "category": "publication",
+      "significance": "notable",
+      "period": {
+        "start": 1928,
+        "end": 1928,
+        "precision": "year"
+      },
+      "description": "Siti binti Saad and her musicians recorded in Bombay in 1928, helping Swahili-language taarab circulate on commercial records beyond Zanzibar.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Siti_binti_Saad",
+        "https://en.wikipedia.org/wiki/Taarab"
+      ]
+    },
+    {
+      "id": "event:essaouira-gnawa-festival",
+      "type": "event",
+      "name": "Gnaoua World Music Festival begins in Essaouira",
+      "category": "performance",
+      "significance": "notable",
+      "period": {
+        "start": 1998,
+        "end": 1998,
+        "precision": "year"
+      },
+      "description": "The first Essaouira festival created a recurring public stage for Gnawa musicians and exchanges with artists from other traditions.",
+      "sources": [
+        "https://www.arabculturefund.org/Programs/Jurors/341",
+        "https://en.wikipedia.org/wiki/Gnaoua_World_Music_Festival"
+      ]
+    },
+    {
+      "id": "event:gnawa-unesco-inscription",
+      "type": "event",
+      "name": "Gnawa is inscribed on UNESCO’s heritage list",
+      "category": "society",
+      "significance": "notable",
+      "period": {
+        "start": 2019,
+        "end": 2019,
+        "precision": "year"
+      },
+      "description": "UNESCO inscribed Morocco’s Gnawa practices on its Representative List of the Intangible Cultural Heritage of Humanity, recognizing music, ritual and community transmission.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gnawa-01170"
+      ]
+    },
+    {
+      "id": "event:rai-unesco-inscription",
+      "type": "event",
+      "name": "Raï is inscribed on UNESCO’s heritage list",
+      "category": "society",
+      "significance": "notable",
+      "period": {
+        "start": 2022,
+        "end": 2022,
+        "precision": "year"
+      },
+      "description": "UNESCO inscribed raï, the popular folk song of Algeria, on its Representative List of the Intangible Cultural Heritage of Humanity.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894"
+      ]
     }
   ],
   "edges": [
@@ -39128,6 +39693,462 @@
         "https://fania.com/history/"
       ],
       "confidence": "medium"
+    },
+    {
+      "id": "key:cheikha-rimitti-rai",
+      "type": "key_artist_of",
+      "from": "artist:cheikha-rimitti",
+      "to": "genre:rai",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cheikha_Rimitti",
+        "https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894",
+        "https://en.wikipedia.org/wiki/Ra%C3%AF"
+      ]
+    },
+    {
+      "id": "key:khaled-rai",
+      "type": "key_artist_of",
+      "from": "artist:khaled",
+      "to": "genre:rai",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Khaled_(musician)",
+        "https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894"
+      ]
+    },
+    {
+      "id": "key:cheb-mami-rai",
+      "type": "key_artist_of",
+      "from": "artist:cheb-mami",
+      "to": "genre:rai",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cheb_Mami",
+        "https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894"
+      ]
+    },
+    {
+      "id": "key:cheb-hasni-rai",
+      "type": "key_artist_of",
+      "from": "artist:cheb-hasni",
+      "to": "genre:rai",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cheb_Hasni"
+      ]
+    },
+    {
+      "id": "key:cheba-zahouania-rai",
+      "type": "key_artist_of",
+      "from": "artist:cheba-zahouania",
+      "to": "genre:rai",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cheba_Zahouania"
+      ]
+    },
+    {
+      "id": "key:mahmoud-guinia-gnawa",
+      "type": "key_artist_of",
+      "from": "artist:mahmoud-guinia",
+      "to": "genre:gnawa",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mahmoud_Guinia"
+      ]
+    },
+    {
+      "id": "key:hamid-el-kasri-gnawa",
+      "type": "key_artist_of",
+      "from": "artist:hamid-el-kasri",
+      "to": "genre:gnawa",
+      "sources": [
+        "https://www.festival-gnaoua.net/artiste/maalem-hamid-el-kasri/",
+        "https://en.wikipedia.org/wiki/Hamid_El_Kasri"
+      ]
+    },
+    {
+      "id": "key:hassan-hakmoun-gnawa",
+      "type": "key_artist_of",
+      "from": "artist:hassan-hakmoun",
+      "to": "genre:gnawa",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hassan_Hakmoun"
+      ]
+    },
+    {
+      "id": "key:el-hadj-mhamed-el-anka-algerian-chaabi",
+      "type": "key_artist_of",
+      "from": "artist:el-hadj-mhamed-el-anka",
+      "to": "genre:algerian-chaabi",
+      "sources": [
+        "https://en.wikipedia.org/wiki/El_Hadj_M%27Hamed_El_Anka",
+        "https://www.npr.org/2008/08/11/93502483/chaabi-the-peoples-music-of-north-africa"
+      ]
+    },
+    {
+      "id": "key:dahmane-el-harrachi-algerian-chaabi",
+      "type": "key_artist_of",
+      "from": "artist:dahmane-el-harrachi",
+      "to": "genre:algerian-chaabi",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dahmane_El_Harrachi"
+      ]
+    },
+    {
+      "id": "key:abdelkader-chaou-algerian-chaabi",
+      "type": "key_artist_of",
+      "from": "artist:abdelkader-chaou",
+      "to": "genre:algerian-chaabi",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Abdelkader_Chaou"
+      ]
+    },
+    {
+      "id": "key:youssou-ndour-mbalax",
+      "type": "key_artist_of",
+      "from": "artist:youssou-ndour",
+      "to": "genre:mbalax",
+      "sources": [
+        "https://www.britannica.com/biography/Youssou-NDour",
+        "https://en.wikipedia.org/wiki/Youssou_N%27Dour"
+      ]
+    },
+    {
+      "id": "key:omar-pene-mbalax",
+      "type": "key_artist_of",
+      "from": "artist:omar-pene",
+      "to": "genre:mbalax",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Omar_P%C3%A8ne"
+      ]
+    },
+    {
+      "id": "key:thione-seck-mbalax",
+      "type": "key_artist_of",
+      "from": "artist:thione-seck",
+      "to": "genre:mbalax",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thione_Seck"
+      ]
+    },
+    {
+      "id": "key:manu-dibango-makossa",
+      "type": "key_artist_of",
+      "from": "artist:manu-dibango",
+      "to": "genre:makossa",
+      "sources": [
+        "https://www.britannica.com/biography/Manu-Dibango",
+        "https://en.wikipedia.org/wiki/Manu_Dibango"
+      ]
+    },
+    {
+      "id": "key:eboa-lotin-makossa",
+      "type": "key_artist_of",
+      "from": "artist:eboa-lotin",
+      "to": "genre:makossa",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Eboa_Lotin"
+      ]
+    },
+    {
+      "id": "key:petit-pays-makossa",
+      "type": "key_artist_of",
+      "from": "artist:petit-pays",
+      "to": "genre:makossa",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Petit-Pays"
+      ]
+    },
+    {
+      "id": "key:siti-binti-saad-taarab",
+      "type": "key_artist_of",
+      "from": "artist:siti-binti-saad",
+      "to": "genre:taarab",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Siti_binti_Saad",
+        "https://en.wikipedia.org/wiki/Taarab"
+      ]
+    },
+    {
+      "id": "key:bi-kidude-taarab",
+      "type": "key_artist_of",
+      "from": "artist:bi-kidude",
+      "to": "genre:taarab",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bi_Kidude"
+      ]
+    },
+    {
+      "id": "key:culture-musical-club-taarab",
+      "type": "key_artist_of",
+      "from": "artist:culture-musical-club",
+      "to": "genre:taarab",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Culture_Musical_Club"
+      ]
+    },
+    {
+      "id": "origin:rai-oran",
+      "type": "originated_in",
+      "from": "genre:rai",
+      "to": "place:oran",
+      "sources": [
+        "https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894",
+        "https://en.wikipedia.org/wiki/Ra%C3%AF"
+      ]
+    },
+    {
+      "id": "origin:gnawa-morocco",
+      "type": "originated_in",
+      "from": "genre:gnawa",
+      "to": "place:morocco",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gnawa-01170",
+        "https://en.wikipedia.org/wiki/Gnawa_music"
+      ]
+    },
+    {
+      "id": "origin:algerian-chaabi-algiers",
+      "type": "originated_in",
+      "from": "genre:algerian-chaabi",
+      "to": "place:algiers",
+      "sources": [
+        "https://www.npr.org/2008/08/11/93502483/chaabi-the-peoples-music-of-north-africa",
+        "https://en.wikipedia.org/wiki/Chaabi_(Algeria)"
+      ]
+    },
+    {
+      "id": "origin:mbalax-dakar",
+      "type": "originated_in",
+      "from": "genre:mbalax",
+      "to": "place:dakar",
+      "sources": [
+        "https://www.britannica.com/biography/Youssou-NDour",
+        "https://en.wikipedia.org/wiki/Mbalax"
+      ]
+    },
+    {
+      "id": "origin:makossa-douala",
+      "type": "originated_in",
+      "from": "genre:makossa",
+      "to": "place:douala",
+      "sources": [
+        "https://www.britannica.com/biography/Manu-Dibango",
+        "https://en.wikipedia.org/wiki/Makossa"
+      ]
+    },
+    {
+      "id": "origin:taarab-zanzibar",
+      "type": "originated_in",
+      "from": "genre:taarab",
+      "to": "place:zanzibar",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Taarab"
+      ]
+    },
+    {
+      "id": "lineage:mbalax-congolese-rumba",
+      "type": "influences",
+      "from": "genre:congolese-rumba",
+      "to": "genre:mbalax",
+      "note": "One of several influences on Senegalese urban dance music, alongside local traditions.",
+      "sources": [
+        "https://www.britannica.com/biography/Youssou-NDour",
+        "https://en.wikipedia.org/wiki/Mbalax"
+      ]
+    },
+    {
+      "id": "lineage:mbalax-salsa",
+      "type": "influences",
+      "from": "genre:salsa",
+      "to": "genre:mbalax",
+      "note": "One of several influences on Senegalese urban dance music, alongside local traditions.",
+      "sources": [
+        "https://www.britannica.com/biography/Youssou-NDour",
+        "https://en.wikipedia.org/wiki/Mbalax"
+      ]
+    },
+    {
+      "id": "featured:algerian-mandole-algerian-chaabi",
+      "type": "featured_in",
+      "from": "instrument:algerian-mandole",
+      "to": "genre:algerian-chaabi",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Algerian_mandole",
+        "https://en.wikipedia.org/wiki/El_Hadj_M%27Hamed_El_Anka"
+      ]
+    },
+    {
+      "id": "featured:electric-guitar-mbalax",
+      "type": "featured_in",
+      "from": "instrument:electric-guitar",
+      "to": "genre:mbalax",
+      "sources": [
+        "https://www.britannica.com/biography/Youssou-NDour"
+      ]
+    },
+    {
+      "id": "featured:violin-taarab",
+      "type": "featured_in",
+      "from": "instrument:violin",
+      "to": "genre:taarab",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Culture_Musical_Club"
+      ]
+    },
+    {
+      "id": "plays:el-hadj-mhamed-el-anka-algerian-mandole",
+      "type": "plays",
+      "from": "artist:el-hadj-mhamed-el-anka",
+      "to": "instrument:algerian-mandole",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Algerian_mandole",
+        "https://en.wikipedia.org/wiki/El_Hadj_M%27Hamed_El_Anka"
+      ]
+    },
+    {
+      "id": "plays:abdelkader-chaou-algerian-mandole",
+      "type": "plays",
+      "from": "artist:abdelkader-chaou",
+      "to": "instrument:algerian-mandole",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Abdelkader_Chaou"
+      ]
+    },
+    {
+      "id": "plays:manu-dibango-saxophone",
+      "type": "plays",
+      "from": "artist:manu-dibango",
+      "to": "instrument:saxophone",
+      "sources": [
+        "https://www.britannica.com/biography/Manu-Dibango"
+      ]
+    },
+    {
+      "id": "influence:siti-binti-saad-bi-kidude",
+      "type": "influences",
+      "from": "artist:siti-binti-saad",
+      "to": "artist:bi-kidude",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bi_Kidude"
+      ]
+    },
+    {
+      "id": "collab:cheba-zahouania-cheb-hasni",
+      "type": "collaborated_with",
+      "from": "artist:cheba-zahouania",
+      "to": "artist:cheb-hasni",
+      "period": {
+        "start": 1987,
+        "end": 1987,
+        "precision": "year"
+      },
+      "note": "They recorded “Beraka” together in 1987.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cheba_Zahouania"
+      ]
+    },
+    {
+      "id": "anthem:didi-khaled-rai",
+      "type": "anthem_of",
+      "from": "track:didi-khaled",
+      "to": "genre:rai",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Didi_(song)"
+      ]
+    },
+    {
+      "id": "recorded:didi-khaled-khaled",
+      "type": "recorded_by",
+      "from": "track:didi-khaled",
+      "to": "artist:khaled",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Didi_(song)"
+      ]
+    },
+    {
+      "id": "anthem:soul-makossa-manu-dibango-makossa",
+      "type": "anthem_of",
+      "from": "track:soul-makossa-manu-dibango",
+      "to": "genre:makossa",
+      "sources": [
+        "https://www.britannica.com/biography/Manu-Dibango",
+        "https://en.wikipedia.org/wiki/Soul_Makossa"
+      ]
+    },
+    {
+      "id": "recorded:soul-makossa-manu-dibango-manu-dibango",
+      "type": "recorded_by",
+      "from": "track:soul-makossa-manu-dibango",
+      "to": "artist:manu-dibango",
+      "sources": [
+        "https://www.britannica.com/biography/Manu-Dibango",
+        "https://en.wikipedia.org/wiki/Soul_Makossa"
+      ]
+    },
+    {
+      "id": "shaped:siti-binti-saad-recordings-taarab",
+      "type": "shaped",
+      "from": "event:siti-binti-saad-recordings",
+      "to": "genre:taarab",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Siti_binti_Saad",
+        "https://en.wikipedia.org/wiki/Taarab"
+      ]
+    },
+    {
+      "id": "involved:siti-binti-saad-recordings-siti-binti-saad",
+      "type": "involved",
+      "from": "event:siti-binti-saad-recordings",
+      "to": "artist:siti-binti-saad",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Siti_binti_Saad",
+        "https://en.wikipedia.org/wiki/Taarab"
+      ]
+    },
+    {
+      "id": "occurred:siti-binti-saad-recordings-mumbai",
+      "type": "occurred_in",
+      "from": "event:siti-binti-saad-recordings",
+      "to": "place:mumbai",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Siti_binti_Saad",
+        "https://en.wikipedia.org/wiki/Taarab"
+      ]
+    },
+    {
+      "id": "shaped:essaouira-gnawa-festival-gnawa",
+      "type": "shaped",
+      "from": "event:essaouira-gnawa-festival",
+      "to": "genre:gnawa",
+      "sources": [
+        "https://www.arabculturefund.org/Programs/Jurors/341",
+        "https://en.wikipedia.org/wiki/Gnaoua_World_Music_Festival"
+      ]
+    },
+    {
+      "id": "occurred:essaouira-gnawa-festival-essaouira",
+      "type": "occurred_in",
+      "from": "event:essaouira-gnawa-festival",
+      "to": "place:essaouira",
+      "sources": [
+        "https://www.arabculturefund.org/Programs/Jurors/341",
+        "https://en.wikipedia.org/wiki/Gnaoua_World_Music_Festival"
+      ]
+    },
+    {
+      "id": "shaped:gnawa-unesco-inscription-gnawa",
+      "type": "shaped",
+      "from": "event:gnawa-unesco-inscription",
+      "to": "genre:gnawa",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gnawa-01170"
+      ]
+    },
+    {
+      "id": "shaped:rai-unesco-inscription-rai",
+      "type": "shaped",
+      "from": "event:rai-unesco-inscription",
+      "to": "genre:rai",
+      "sources": [
+        "https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894"
+      ]
     }
   ]
 }

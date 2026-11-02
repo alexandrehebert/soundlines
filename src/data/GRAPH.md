@@ -7,7 +7,7 @@ example ChatGPT) along with `graph.json` when asking for the dataset to be
 **enriched, corrected, or expanded** (new genres, artists, lineage links, phases,
 events, and so on).
 
-> **Current priority:** deepen the chronology through the ages. The graph now has 77
+> **Current priority:** deepen the chronology through the ages. The graph now has 81
 > sourced events with significance labels; continue filling the pre-1600 and post-2010
 > gaps, then add more composition, artist, and track coverage in underrepresented
 > musical traditions. See §6, "Chronology coverage gaps".
@@ -31,7 +31,7 @@ rejected.**
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 1168 nodes (171 genres, 472 artists, 63 instruments, 41 labels, 79 places, 209 tracks, 56 scenes, 77 events) and 1851 edges.
+Current size: 1209 nodes (177 genres, 492 artists, 64 instruments, 41 labels, 87 places, 211 tracks, 56 scenes, 81 events) and 1898 edges.
 
 ---
 
@@ -81,7 +81,7 @@ Every genre **must** have a `family`. Lanes are rendered in this order:
 
 | family              | Label                  | Genres | Current examples |
 |---------------------|------------------------|--------|------------------|
-| `classical`         | Classical              | 16     | Western eras, impressionism, serialism, Hindustani, Carnatic, gagaku, pansori |
+| `classical`         | Classical              | 17     | Western eras, impressionism, serialism, Hindustani, Carnatic, gagaku, pansori |
 | `blues-soul`        | Blues, R&B & Soul      | 8      | blues, R&B, soul, funk, neo-soul, new jack swing, contemporary R&B |
 | `jazz`              | Jazz                   | 12     | swing, bebop, modal, free, fusion, acid, vocal, Latin, spiritual jazz |
 | `country-folk`      | Country & Folk         | 9      | country, honky-tonk, alt-country, Americana, folk, Baul songs, khoomei |
@@ -92,13 +92,13 @@ Every genre **must** have a `family`. Lanes are rendered in this order:
 | `hip-hop`           | Hip-hop                | 18     | regional rap, boom bap, jazz rap, crunk, G-funk, hyphy, trap, drill, grime |
 | `reggae`            | Reggae & Ska           | 6      | calypso, ska, rocksteady, reggae, dub, dancehall |
 | `latin`             | Latin                  | 11     | son cubano, salsa, bossa nova, cumbia, samba, tango, reggaeton |
-| `african`           | African                | 8      | highlife, jùjú, soukous, Afrobeat, Afrobeats, kwaito, amapiano, gqom |
+| `african`           | African                | 15     | highlife, Afrobeat, Congolese rumba, raï, Gnawa, Algerian chaâbi, mbalax, makossa, taarab |
 | `electronica`       | Electronica & Ambient  | 11     | electro, trip-hop, ambient, IDM, synthwave, downtempo, EDM |
 | `house`             | Disco & House          | 13     | disco, Italo disco, hi-NRG, house styles, French Touch, footwork |
 | `techno`            | Techno & Trance        | 9      | techno styles, trance, psytrance, gabber, hardstyle |
 | `breakbeat-bass`    | Breakbeat & Bass       | 8      | breakbeat hardcore, jungle, drum and bass, garage, dubstep, breakcore |
 
-These are navigational families, not strict genre ancestry. The 169 genres
+These are navigational families, not strict genre ancestry. The 177 genres
 currently have 5–18 members per family: enough granularity to avoid an oversized
 Electronic lane without creating one-genre lanes. Keep related styles together
 as the catalogue grows, and revisit the grouping if it becomes unbalanced rather
@@ -132,7 +132,7 @@ are not valid for instruments, and instrument families are not valid for other n
 
 | family       | Label               | Current examples |
 |--------------|---------------------|------------------|
-| `strings`    | Strings             | harp, cello, viola, koto, lute, guitar, violin, double bass, banjo, sitar, sarod, charango, balalaika, dobro, pedal steel guitar |
+| `strings`    | Strings             | harp, cello, viola, koto, lute, guitar, violin, double bass, banjo, sitar, sarod, charango, balalaika, Algerian mandole, dobro, pedal steel guitar |
 | `keyboards`  | Keyboards & Organs  | harpsichord, piano, pipe organ, Hammond organ, electric piano, harmonium |
 | `winds`      | Woodwinds & Reeds   | transverse flute, recorder, oboe, bassoon, clarinet, harmonica, accordion, saxophone, bandoneon, quena, bansuri, shō, hichiriki, ryūteki |
 | `brass`      | Brass               | French horn, trombone, valved trumpet, tuba |
@@ -221,33 +221,33 @@ editorial weight used to filter the chronology, not a ranking.
 ### Existing genre ids (do not duplicate)
 
 ```
-genre:acid-house genre:acid-jazz genre:afrobeat genre:afrobeats genre:alt-country genre:alternative-rap
-genre:alternative-rock genre:amapiano genre:ambient genre:ambient-techno genre:americana genre:andean-folk
+genre:acid-house genre:acid-jazz genre:afrobeat genre:afrobeats genre:algerian-chaabi genre:alt-country genre:alternative-rap
+genre:alternative-rock genre:amapiano genre:ambient genre:ambient-techno genre:americana genre:andean-folk genre:arabic-maqam
 genre:bachata genre:baroque genre:baul-songs genre:bebop genre:big-beat genre:black-metal
 genre:bluegrass genre:blues genre:blues-rock genre:boom-bap genre:bossa-nova genre:breakbeat
 genre:breakbeat-hardcore genre:breakcore genre:britpop genre:calypso genre:carnatic genre:chicago-house
-genre:chillwave genre:chopped-and-screwed genre:classical-period genre:conscious-hip-hop genre:contemporary-r-and-b genre:cool-jazz
+genre:chillwave genre:chopped-and-screwed genre:classical-period genre:congolese-rumba genre:conscious-hip-hop genre:contemporary-r-and-b genre:cool-jazz
 genre:country genre:crunk genre:cumbia genre:dancehall genre:darksynth genre:death-metal
 genre:deep-house genre:detroit-techno genre:disco genre:doo-wop genre:doom-metal genre:downtempo
 genre:dream-pop genre:drill genre:drum-and-bass genre:dub genre:dub-techno genre:dubstep
 genre:east-coast-rap genre:edm genre:electro genre:electro-house genre:electroclash genre:emo
 genre:folk genre:footwork genre:free-jazz genre:french-house genre:french-touch genre:funk
 genre:g-funk genre:gabber genre:gagaku genre:gamelan genre:gangsta-rap genre:garage-house
-genre:garage-rock genre:girl-groups genre:glam-rock genre:gothic-rock genre:gqom genre:grime
+genre:garage-rock genre:girl-groups genre:glam-rock genre:gnawa genre:gothic-rock genre:gqom genre:grime
 genre:grunge genre:hard-bop genre:hard-rock genre:hardstyle genre:heavy-metal genre:hi-nrg
 genre:highlife genre:hindustani-classical genre:hip-hop genre:honky-tonk genre:horrorcore genre:house
 genre:hyphy genre:idm genre:impressionism genre:indie-rock genre:industrial-metal genre:italo-disco
 genre:j-pop genre:jazz genre:jazz-fusion genre:jazz-rap genre:juju genre:jungle
 genre:k-pop genre:khoomei genre:krautrock genre:kwaito genre:latin genre:latin-jazz
-genre:math-rock genre:medieval genre:merengue genre:metalcore genre:minimal-techno genre:minimalism
+genre:makossa genre:math-rock genre:mbalax genre:medieval genre:merengue genre:metalcore genre:minimal-techno genre:minimalism
 genre:modal-jazz genre:modern-classical genre:neo-soul genre:new-jack-swing genre:new-wave genre:noise-rock
 genre:nu-metal genre:old-school-rap genre:pansori genre:peking-opera genre:pop genre:pop-punk
 genre:post-hardcore genre:post-punk genre:post-rock genre:progressive-rock genre:psychedelic-rock genre:psytrance
-genre:punk-rock genre:qawwali genre:r-and-b genre:reggae genre:reggaeton genre:renaissance
+genre:punk-rock genre:qawwali genre:r-and-b genre:rai genre:reggae genre:reggaeton genre:renaissance
 genre:rock genre:rock-and-roll genre:rocksteady genre:romantic genre:russian-folk genre:salsa
 genre:samba genre:serialism genre:shoegaze genre:ska genre:son-cubano genre:soukous
 genre:soul genre:southern-rap genre:spiritual-jazz genre:stoner-rock genre:surf-rock genre:swing
-genre:synth-pop genre:synthwave genre:tango genre:tech-house genre:techno genre:thrash-metal
+genre:synth-pop genre:synthwave genre:taarab genre:tango genre:tech-house genre:techno genre:thrash-metal
 genre:trance genre:trap-rap genre:trip-hop genre:uk-garage genre:vaporwave genre:vocal-jazz
 genre:west-coast-rap
 ```
@@ -477,7 +477,8 @@ do not force them into a single Western-style lineage.
   Records represented separately as a label
 - **Caribbean**: mento, soca
 - **Latin**: mambo, bolero, tropicália, vallenato
-- **African**: mbalax, taarab, Gnawa, mbira traditions
+- **African**: mbira traditions, Moroccan chaâbi, Kabyle song, and additional
+  regional and diasporic styles
 - **Hip-hop**: Memphis rap, UK drill, regional scenes not yet represented
 - **Rock & metal**: noise pop, psychobilly, post-metal
 - **Electronic**: UK funky, progressive house, additional techno sub-styles
@@ -488,26 +489,26 @@ do not force them into a single Western-style lineage.
 ### Chronology coverage gaps (current priority)
 
 The dataset is strongest from 1960 to 1999. It now includes early notation,
-print, opera, and several Asian and Bengali traditions, but the pre-1600 record
-and the post-2010 era remain thin. Arabic maqam and Congolese rumba now have
-explicit genre coverage; Persian, Ottoman, West African griot, Chinese regional,
-Japanese, and Indian court traditions still need their own documented lineages.
+print, opera, several Asian and Bengali traditions, and additional North, West,
+Central, and East African styles, but the pre-1600 record and the post-2010 era
+remain thin. Persian, Ottoman, West African griot, Chinese regional, Japanese,
+and Indian court traditions still need their own documented lineages.
 Dated nodes by `period.start`:
 
 | Era          | Genres | Artists | Tracks | Scenes | Instruments | Events |
 |--------------|-------:|--------:|-------:|-------:|------------:|-------:|
 | 500–1599     | 6      | 6       | 0      | 1      | 18          | 12     |
-| 1600–1899    | 15     | 14      | 8      | 5      | 24          | 15     |
-| 1900–1949    | 23     | 54      | 20     | 9      | 11          | 19     |
-| 1950–1999    | 112    | 344     | 159    | 39     | 10          | 19     |
-| 2000–present | 15     | 54      | 22     | 2      | 0           | 12     |
+| 1600–1899    | 17     | 14      | 8      | 5      | 24          | 15     |
+| 1900–1949    | 25     | 58      | 20     | 9      | 12          | 20     |
+| 1950–1999    | 114    | 359     | 161    | 39     | 10          | 20     |
+| 2000–present | 15     | 55      | 22     | 2      | 0           | 14     |
 
 Priorities, in order:
 
-1. **Improve event evidence and connections.** All 77 events now have a
-   `significance` value and at least one sourced `shaped` edge. There are 20
-   `involved` and 18 `occurred_in` edges. Add more participants, recordings,
-   venues, and locations only when a source supports the connection. 25 event
+1. **Improve event evidence and connections.** All 81 events now have a
+   `significance` value and at least one sourced `shaped` edge. There are 21
+   `involved` and 20 `occurred_in` edges. Add more participants, recordings,
+   venues, and locations only when a source supports the connection. 27 event
    nodes currently cite more than one source; add independent sources for
    consequential claims, especially where the graph still relies on a single
    citation.

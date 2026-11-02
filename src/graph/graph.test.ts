@@ -138,6 +138,33 @@ describe('searchNodes', () => {
     expect(results.map((result) => result.node.name)).toContain('Acid house')
   })
 
+  it('matches Latin accents in composed, decomposed, and unaccented queries', () => {
+    const accented: MusicGraph = {
+      ...graph,
+      nodes: [
+        ...graph.nodes,
+        { id: 'genre:rai', type: 'genre', name: 'Raï', family: 'african', period: { start: 1920 } },
+        { id: 'genre:chaabi', type: 'genre', name: 'Algerian chaâbi', family: 'african', period: { start: 1930 } },
+        { id: 'artist:youssou', type: 'artist', name: 'Youssou N’Dour' },
+      ],
+    }
+    for (const query of ['rai', 'RAÏ', 'Rai\u0308']) {
+      expect(searchNodes(accented, query)[0].node.id).toBe('genre:rai')
+    }
+    expect(searchNodes(accented, 'chaabi')[0].node.id).toBe('genre:chaabi')
+    expect(searchNodes(accented, "Youssou N'Dour")[0].node.id).toBe('artist:youssou')
+    expect(searchNodes(accented, 'youssou n’dour')[0].node.id).toBe('artist:youssou')
+  })
+
+  it('preserves meaningful marks in non-Latin scripts', () => {
+    const japanese: MusicGraph = {
+      ...graph,
+      nodes: [...graph.nodes, { id: 'artist:kana', type: 'artist', name: 'ガ' }],
+    }
+    expect(searchNodes(japanese, 'カ').map((result) => result.node.id)).not.toContain('artist:kana')
+    expect(searchNodes(japanese, 'カ\u3099')[0].node.id).toBe('artist:kana')
+  })
+
   it('returns nothing for empty queries', () => {
     expect(searchNodes(graph, '  ')).toEqual([])
   })
