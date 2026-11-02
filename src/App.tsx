@@ -1,4 +1,4 @@
-import { Bubbles, ChartGantt, Disc3, SlidersHorizontal, Users, X } from 'lucide-react'
+import { ArrowDownWideNarrow, Bubbles, ChartGantt, Disc3, SlidersHorizontal, Users, X } from 'lucide-react'
 import { AnimatePresence, motion, MotionConfig } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent, type PointerEvent } from 'react'
 import { useExplorer } from './ExplorerContext.ts'
@@ -10,11 +10,12 @@ import { Timeline } from './components/Timeline.tsx'
 import { GenreBubbles } from './components/GenreBubbles.tsx'
 import { MOBILE_DETAIL_COLLAPSED_OFFSET, MOBILE_DETAIL_HEIGHT } from './components/mobileDetailSheet.ts'
 import rawGraph from './data/graph.json'
+import type { GenreOrder } from './graph/layout.ts'
 import type { MusicGraph } from './graph/types.ts'
 
 const graph = rawGraph as MusicGraph
 
-function Explorer() {
+export function Explorer() {
   const { index, view, changeView, selectedId, selectNode, genreOrder, changeGenreOrder, genreDisplay } = useExplorer()
   const showingBubbles = view === 'genre' && genreDisplay === 'bubbles'
   const [optionsOpen, setOptionsOpen] = useState(false)
@@ -144,7 +145,7 @@ function Explorer() {
       </AnimatePresence>
       <footer className="hidden border-t border-slate-800/60 bg-slate-950/90 px-5 py-1.5 text-[11px] font-medium text-slate-600 md:block">
         {showingBubbles
-          ? 'Size and brightness show influence within this catalogue · click a bubble for details'
+          ? 'Size and brightness show catalogue influence · drag or scroll to move · pinch or ⌘ scroll to zoom · click a bubble for details'
           : 'Drag or scroll to move · pinch or ⌘ scroll to zoom · click a bar for details'}
       </footer>
     </div>
@@ -228,7 +229,29 @@ function ToggleIndicator({ layoutId }: { layoutId: string }) {
   )
 }
 
-function ViewToggle({
+function useToggleNavigation<T extends string>(
+  selected: T,
+  options: readonly T[],
+  onChange: (value: T) => void,
+) {
+  const buttonRefs = useRef<Partial<Record<T, HTMLButtonElement | null>>>({})
+
+  const handleKeyDown = (event: ReactKeyboardEvent<HTMLDivElement>) => {
+    if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'].includes(event.key)) return
+    event.preventDefault()
+    const current = options.indexOf(selected)
+    const next =
+      event.key === 'Home' ? 0
+      : event.key === 'End' ? options.length - 1
+      : (current + (event.key === 'ArrowLeft' || event.key === 'ArrowUp' ? -1 : 1) + options.length) % options.length
+    onChange(options[next])
+    buttonRefs.current[options[next]]?.focus()
+  }
+
+  return { buttonRefs, handleKeyDown }
+}
+
+export function ViewToggle({
   view,
   changeView,
   className = '',
@@ -239,19 +262,7 @@ function ViewToggle({
 }) {
   const indicatorId = useId()
   const options = ['genre', 'artist'] as const
-  const buttonRefs = useRef<Record<string, HTMLButtonElement | null>>({})
-
-  const handleKeyDown = (event: ReactKeyboardEvent<HTMLDivElement>) => {
-    if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'].includes(event.key)) return
-    event.preventDefault()
-    const current = options.indexOf(view)
-    const next =
-      event.key === 'Home' ? 0
-      : event.key === 'End' ? options.length - 1
-      : (current + (event.key === 'ArrowLeft' || event.key === 'ArrowUp' ? -1 : 1) + options.length) % options.length
-    changeView(options[next])
-    buttonRefs.current[options[next]]?.focus()
-  }
+  const { buttonRefs, handleKeyDown } = useToggleNavigation(view, options, changeView)
 
   return (
     <div
@@ -287,7 +298,7 @@ function ViewToggle({
   )
 }
 
-function GenreDisplaySelect({ className = '' }: { className?: string }) {
+export function GenreDisplaySelect({ className = '' }: { className?: string }) {
   const { genreDisplay, changeGenreDisplay } = useExplorer()
   const indicatorId = useId()
   return (
@@ -300,7 +311,7 @@ function GenreDisplaySelect({ className = '' }: { className?: string }) {
             type="button"
             aria-pressed={selected}
             onClick={() => changeGenreDisplay(display)}
-            className={toggleButtonClass(selected)}
+            className={`${toggleButtonClass(selected)} min-w-0 flex-1 justify-center md:flex-none`}
           >
             {selected && <ToggleIndicator layoutId={`genre-display-indicator-${indicatorId}`} />}
             <span className="relative flex items-center gap-1.5">
@@ -316,28 +327,48 @@ function GenreDisplaySelect({ className = '' }: { className?: string }) {
   )
 }
 
-function GenreOrderSelect({
+export function GenreOrderSelect({
   genreOrder,
   changeGenreOrder,
   className = '',
 }: {
-  genreOrder: string
-  changeGenreOrder: (order: string) => void
+  genreOrder: GenreOrder
+  changeGenreOrder: (order: GenreOrder) => void
   className?: string
 }) {
+  const indicatorId = useId()
+  const options = ['family', 'oldest-first'] as const
+  const { buttonRefs, handleKeyDown } = useToggleNavigation(genreOrder, options, changeGenreOrder)
+
   return (
-    <label className={`items-center gap-2 text-sm font-medium text-slate-400 ${className}`}>
-      Order
-      <select
-        aria-label="Genre order"
-        value={genreOrder}
-        onChange={(event) => changeGenreOrder(event.currentTarget.value)}
-        className="min-h-11 flex-1 rounded-xl border border-slate-700 bg-slate-900 px-3 text-sm text-slate-200 focus:border-cyan-500 focus:outline-none md:min-h-0 md:flex-none md:rounded-lg md:px-2 md:py-1.5 md:text-xs"
-      >
-        <option value="family">Family groups</option>
-        <option value="oldest-first">First appearance (oldest first)</option>
-      </select>
-    </label>
+    <div
+      className={`${toggleContainerClass} ${className}`}
+      role="radiogroup"
+      aria-label="Genre order"
+      onKeyDown={handleKeyDown}
+    >
+      <ArrowDownWideNarrow className="mx-2 h-3.5 w-3.5 shrink-0 text-slate-400" aria-hidden="true" />
+      {options.map((order) => {
+        const selected = genreOrder === order
+        return (
+          <button
+            key={order}
+            ref={(element) => {
+              buttonRefs.current[order] = element
+            }}
+            type="button"
+            role="radio"
+            aria-checked={selected}
+            tabIndex={selected ? 0 : -1}
+            onClick={() => changeGenreOrder(order)}
+            className={`${toggleButtonClass(selected)} min-w-0 flex-1 justify-center whitespace-nowrap md:flex-none`}
+          >
+            {selected && <ToggleIndicator layoutId={`genre-order-indicator-${indicatorId}`} />}
+            <span className="relative">{order === 'family' ? 'Family groups' : 'Oldest first'}</span>
+          </button>
+        )
+      })}
+    </div>
   )
 }
 

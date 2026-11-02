@@ -30,8 +30,9 @@ Latin and African are broad regional umbrellas for the current catalogue, not
 single musical traditions. Actual ancestry and cross-influences remain in the
 graph relationships. Artist lanes and detail badges use the same families.
 
-- In Genres, the Order selector switches between the default family groups and
-  **First appearance (oldest first)**: one row per genre across all families,
+- In Genres, the order toggle, marked by a sort icon, switches between
+  **Family groups** (the default) and **Oldest first** (first appearance):
+  one row per genre across all families,
   ordered by `period.start`, then name and id for ties. Family colors, selection,
   and horizontal zoom are preserved; changing order resets vertical scrolling
   and brings the selection back into view. Artists keep their family layout.
@@ -46,16 +47,19 @@ graph relationships. Artist lanes and detail badges use the same families.
   layout pulls genres connected by lineage links toward each other, creating
   an organic, non-overlapping map rather than ordered rows. Family membership
   seeds the layout, but cross-family influences also pull neighbors together.
-  Drag the background, scroll, or swipe to explore; use the zoom controls for
-  an overview or closer reading. Spatial proximity is approximate, not a claim
+  The map uses the same compact layout as the timeline, without an extra title
+  or subtitle. Zoom controls float over the map and stay accessible while panning.
+  Drag the background, scroll, or swipe to explore. Pinch on touch screens or
+  trackpads, or use Cmd/Ctrl+scroll, to zoom around the gesture's focal point;
+  the floating buttons zoom around the viewport center. Zoom stays between
+  25% and 150%. Spatial proximity is approximate, not a claim
   that every neighboring pair has a documented influence relationship.
   Click a bubble or press Enter/Space to open the same detail drawer.
-  Mouse hover previews the same ancestor/descendant lineage as the bars:
-  related bubbles stay bright, unrelated bubbles fade to 20%, and lineage links
-  appear between bubbles. Leaving the bubble restores the selected lineage (or
-  the full map with no selection). Selection uses a bright fill, thin white
-  border, and an outer focus-style ring without scaling the bubble. Selecting
-  a bubble does not rearrange the map. Touch taps select without sticky hover.
+  Selection shows the ancestor/descendant lineage: related bubbles stay bright,
+  unrelated bubbles fade to 20%, and lineage links appear between bubbles.
+  Hovering does not change the lineage; clearing the selection restores the full
+  map. Selection uses a bright fill, thin white border, and an outer focus-style
+  ring without scaling the bubble. Selecting a bubble does not rearrange the map.
   Search and related-genre navigation reveal the selected bubble. The layout is
   remembered when visiting Artists and shared with `?layout=bubbles`.
 - Off-screen genres have a labeled, family-colored ghost bar at the left or
@@ -185,4 +189,38 @@ npm run dev
 npm test
 npm run lint
 npm run build
+npm run storybook
+npm run build-storybook
 ```
+
+### Storybook
+
+Run `npm run storybook` and open the local URL printed by the command (port
+6006 by default). If that port is in use, run
+`npm run storybook -- --port 6007` instead. `npm run build-storybook` creates a
+static, shareable build in `storybook-static/`.
+
+To run Storybook with Docker Compose:
+
+```bash
+docker compose up -d           # app and Storybook
+docker compose up -d storybook # Storybook only
+```
+
+Compose serves Storybook at `http://localhost:6008` on the local machine. Set
+`STORYBOOK_PORT` to change the host port, for example
+`STORYBOOK_PORT=6010 docker compose up -d storybook`. The app and Storybook use
+separate dependency volumes so their installs do not interrupt one another. The
+container image does not include Git, so Storybook's optional Git-based change
+detection is unavailable; component hot reload still works.
+
+The catalog includes the project colors, view/layout/order toggles, bubble
+zoom buttons, search states, legends, detail panels, timeline bars, the timeline,
+the bubble map, and desktop/mobile explorer compositions. Use the Controls,
+Actions, Accessibility, and viewport panels to inspect variants and interactions;
+some stories also exercise keyboard and search behavior automatically.
+
+Stories use the real music graph with an isolated, in-memory explorer provider.
+Selections, search, related-node navigation, view changes, panning, and zoom
+are interactive without changing the app's URL or starting its page-loading
+transition. The source links in detail panels still open their actual websites.

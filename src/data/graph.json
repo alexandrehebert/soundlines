@@ -14,7 +14,26 @@
       "description": "Western sacred and secular music of the medieval era: chant, troubadour song, and early polyphony. Dates delimit a historical era, not the end of its living repertoire.",
       "sources": [
         "https://en.wikipedia.org/wiki/Medieval_music"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 500,
+          "prominence": "emerging"
+        },
+        {
+          "start": 515,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1220,
+          "prominence": "established"
+        },
+        {
+          "start": 1398,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:renaissance",
@@ -29,7 +48,26 @@
       "description": "Interwoven vocal polyphony, masses, motets, and madrigals in Renaissance Europe. Era boundaries are approximate; the repertoire is still performed.",
       "sources": [
         "https://en.wikipedia.org/wiki/Renaissance_music"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1400,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1415,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1560,
+          "prominence": "established"
+        },
+        {
+          "start": 1598,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:baroque",
@@ -44,7 +82,26 @@
       "description": "Basso continuo, opera, concertos, and contrapuntal invention. Approximate dates mark the historical era, not the disappearance of Baroque performance.",
       "sources": [
         "https://en.wikipedia.org/wiki/Baroque_music"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1600,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1615,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1720,
+          "prominence": "established"
+        },
+        {
+          "start": 1748,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:classical-period",
@@ -59,7 +116,26 @@
       "description": "The Classical period, not the umbrella term classical music: balanced phrases, sonata form, symphonies, and string quartets. Its historical boundaries overlap the Romantic era.",
       "sources": [
         "https://en.wikipedia.org/wiki/Classical_period_(music)"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1750,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1764,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1806,
+          "prominence": "established"
+        },
+        {
+          "start": 1818,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:romantic",
@@ -74,7 +150,26 @@
       "description": "Expanded orchestras, expressive harmony, virtuoso soloists, and musical storytelling. Dates describe a historical era whose repertoire remains active.",
       "sources": [
         "https://en.wikipedia.org/wiki/Romantic_music"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1800,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1815,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1888,
+          "prominence": "established"
+        },
+        {
+          "start": 1908,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:modern-classical",
@@ -83,13 +178,25 @@
       "family": "classical",
       "period": {
         "start": 1890,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "An umbrella for modern and contemporary Western art music, from impressionism and modernism to experimental composition. Not a single unified style.",
       "sources": [
         "https://en.wikipedia.org/wiki/20th-century_classical_music",
         "https://en.wikipedia.org/wiki/Contemporary_classical_music"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1890,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1950,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging from emergence into continued practice. The 1950 marker is a broad modern observation point, not a claim that the tradition began then or reached a measured peak; source-level review remains needed."
     },
     {
       "id": "genre:minimalism",
@@ -98,12 +205,28 @@
       "family": "classical",
       "period": {
         "start": 1960,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "Repetition, sustained tones, gradual processes, and shifting patterns in experimental composition. One strand of modern classical music, with a reach into rock and electronic music.",
       "sources": [
         "https://en.wikipedia.org/wiki/Minimal_music"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1960,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1975,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:blues",
@@ -112,12 +235,24 @@
       "family": "blues-soul",
       "period": {
         "start": 1890,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "African American musical traditions shaped by expressive vocal phrasing, blue notes, and recurring harmonic forms. A major source for jazz, rhythm and blues, and rock and roll.",
       "sources": [
         "https://en.wikipedia.org/wiki/Blues"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1890,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1950,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging from emergence into continued practice. The 1950 marker is a broad modern observation point, not a claim that the tradition began then or reached a measured peak; source-level review remains needed."
     },
     {
       "id": "genre:jazz",
@@ -126,12 +261,28 @@
       "family": "jazz",
       "period": {
         "start": 1900,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "African American music emerging in New Orleans around the turn of the twentieth century, built on improvisation, rhythmic interplay, and blues traditions. The umbrella for many distinct jazz styles.",
       "sources": [
         "https://en.wikipedia.org/wiki/Jazz"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1900,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1915,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:swing",
@@ -140,7 +291,8 @@
       "family": "jazz",
       "period": {
         "start": 1930,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A jazz style and dance-music idiom built around swinging rhythms, arranged sections, and improvisation, performed by large bands and smaller groups. It became the dominant U.S. popular-music form in the 1930s and 1940s, while later swing traditions continued in different settings.",
       "sources": [
@@ -176,12 +328,28 @@
       "family": "jazz",
       "period": {
         "start": 1940,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1960
       },
       "description": "Small-group jazz with fast tempos, intricate melodies, and improvisation over rapidly moving chord changes. A foundational language of modern jazz.",
       "sources": [
         "https://en.wikipedia.org/wiki/Bebop"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1940,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1948,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1958,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:cool-jazz",
@@ -190,12 +358,28 @@
       "family": "jazz",
       "period": {
         "start": 1948,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1960
       },
       "description": "Restrained dynamics, lighter timbres, and carefully arranged textures in postwar jazz. Includes, but is not synonymous with, West Coast jazz.",
       "sources": [
         "https://en.wikipedia.org/wiki/Cool_jazz"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1948,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1953,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1958,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:hard-bop",
@@ -204,12 +388,28 @@
       "family": "jazz",
       "period": {
         "start": 1950,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1965
       },
       "description": "Bebop extended through blues, gospel, and rhythm-and-blues phrasing, with a strong groove and earthy ensemble sound.",
       "sources": [
         "https://en.wikipedia.org/wiki/Hard_bop"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1950,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1956,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1963,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:modal-jazz",
@@ -218,12 +418,28 @@
       "family": "jazz",
       "period": {
         "start": 1958,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1970
       },
       "description": "Improvisation organized around modes and longer harmonic spaces rather than dense sequences of chord changes.",
       "sources": [
         "https://en.wikipedia.org/wiki/Modal_jazz"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1958,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1963,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1968,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:free-jazz",
@@ -232,12 +448,28 @@
       "family": "jazz",
       "period": {
         "start": 1959,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1975
       },
       "description": "Jazz that experiments with or abandons fixed chord progressions, regular meter, and conventional ensemble roles in favor of freer improvisation.",
       "sources": [
         "https://en.wikipedia.org/wiki/Free_jazz"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1959,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1965,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1973,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:jazz-fusion",
@@ -246,12 +478,28 @@
       "family": "jazz",
       "period": {
         "start": 1967,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1980
       },
       "description": "Jazz improvisation meets rock amplification, electric instruments, and funk rhythms. An evolving family of approaches rather than a single formula.",
       "sources": [
         "https://en.wikipedia.org/wiki/Jazz_fusion"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1967,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1972,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1978,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:rock-and-roll",
@@ -260,7 +508,8 @@
       "family": "rock",
       "period": {
         "start": 1950,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A mid-20th-century popular style formed through African American rhythm and blues, country, gospel, and other regional traditions. It reached broad youth and national audiences in the United States in the mid-1950s, while its roots and early contributors predate that commercial breakthrough.",
       "sources": [
@@ -296,14 +545,30 @@
       "family": "rock",
       "period": {
         "start": 1950,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A broad family of popular music that grew from mid-century rock and roll into many guitar-centered and electronic, vocal, and studio-based forms. It overlaps with, but is not identical to, the narrower early rock-and-roll category.",
       "sources": [
         "https://en.wikipedia.org/wiki/Rock_music",
         "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rock/",
         "https://www.loc.gov/exhibits/british/brit-7.html"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1950,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1965,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:blues-rock",
@@ -312,12 +577,28 @@
       "family": "rock",
       "period": {
         "start": 1963,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1975
       },
       "description": "Electric blues vocabulary played with rock volume and rhythm, often emphasizing guitar solos and extended improvisation.",
       "sources": [
         "https://en.wikipedia.org/wiki/Blues_rock"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1963,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1968,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1973,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:psychedelic-rock",
@@ -326,12 +607,20 @@
       "family": "rock",
       "period": {
         "start": 1965,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1970
       },
       "description": "Rock expanded through studio experimentation, unusual timbres, long improvisations, and the counterculture of the 1960s.",
       "sources": [
         "https://en.wikipedia.org/wiki/Psychedelic_rock"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1965,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:progressive-rock",
@@ -340,12 +629,20 @@
       "family": "rock",
       "period": {
         "start": 1967,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1975
       },
       "description": "Rock explored through extended forms, shifting meters, concept albums, and elements of classical music and jazz.",
       "sources": [
         "https://en.wikipedia.org/wiki/Progressive_rock"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1967,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:hard-rock",
@@ -354,12 +651,28 @@
       "family": "rock",
       "period": {
         "start": 1965,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1980
       },
       "description": "Heavy guitar riffs, forceful drums, and powerful vocals grew out of blues and garage rock into a durable arena and club sound.",
       "sources": [
         "https://en.wikipedia.org/wiki/Hard_rock"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1965,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1971,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1978,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:heavy-metal",
@@ -368,12 +681,28 @@
       "family": "metal",
       "period": {
         "start": 1968,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "Amplified heaviness, distortion, emphatic riffs, and dramatic performance developed from late-1960s hard rock.",
       "sources": [
         "https://en.wikipedia.org/wiki/Heavy_metal_music"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1968,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1983,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:punk-rock",
@@ -382,12 +711,20 @@
       "family": "alternative-punk",
       "period": {
         "start": 1974,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1980
       },
       "description": "Short, urgent songs and a do-it-yourself ethos challenged rock spectacle and helped establish independent musical networks.",
       "sources": [
         "https://en.wikipedia.org/wiki/Punk_rock"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1974,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:post-punk",
@@ -396,12 +733,20 @@
       "family": "alternative-punk",
       "period": {
         "start": 1977,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1984
       },
       "description": "Punk's independence redirected into experimental structures, angular guitars, and influences from dub, funk, and electronic music.",
       "sources": [
         "https://en.wikipedia.org/wiki/Post-punk"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1977,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:alternative-rock",
@@ -410,7 +755,8 @@
       "family": "alternative-punk",
       "period": {
         "start": 1980,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "An umbrella for rock scenes and artists working through independent labels, college radio, and other routes outside the mainstream. In the United States, grunge and other alternative acts broke into mass-market visibility in the early 1990s; the label continued to cover diverse sounds afterward.",
       "sources": [
@@ -445,7 +791,8 @@
       "family": "alternative-punk",
       "period": {
         "start": 1985,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A Pacific Northwest scene and style whose bands drew on punk, metal, and other rock traditions. Sub Pop’s local releases and Nirvana’s 1991 “Nevermind” helped bring some Seattle-area music to international mainstream attention; grunge was never a single sound or the whole region’s music.",
       "sources": [
@@ -1526,7 +1873,9 @@
       "name": "Soul",
       "family": "blues-soul",
       "period": {
-        "start": 1955
+        "start": 1955,
+        "end": null,
+        "precision": "decade"
       },
       "phases": [
         {
@@ -1569,7 +1918,9 @@
       "name": "Funk",
       "family": "blues-soul",
       "period": {
-        "start": 1965
+        "start": 1965,
+        "end": null,
+        "precision": "decade"
       },
       "phases": [
         {
@@ -1607,7 +1958,9 @@
       "name": "Disco",
       "family": "house",
       "period": {
-        "start": 1972
+        "start": 1972,
+        "end": null,
+        "precision": "decade"
       },
       "phases": [
         {
@@ -1647,7 +2000,9 @@
       "name": "Hip-hop",
       "family": "hip-hop",
       "period": {
-        "start": 1973
+        "start": 1973,
+        "end": null,
+        "precision": "decade"
       },
       "description": "A musical and cultural movement that developed in New York’s Bronx during the 1970s, shaped by Black and Puerto Rican communities and Caribbean diasporic practices. DJing, MCing, dance, visual art, and later regional rap scenes are connected but distinct parts of its history.",
       "sources": [
@@ -1686,7 +2041,9 @@
       "name": "Krautrock",
       "family": "rock",
       "period": {
-        "start": 1968
+        "start": 1968,
+        "end": null,
+        "precision": "decade"
       },
       "phases": [
         {
@@ -1736,14 +2093,23 @@
       "name": "Synth-pop",
       "family": "pop",
       "period": {
-        "start": 1977
+        "start": 1977,
+        "end": 1985,
+        "precision": "decade"
       },
       "description": "Pop-oriented electronic music in which synthesizers and electronic production are prominent, alongside voices, guitars, drums, and other instruments. The style emerged across several scenes in the late 1970s and early 1980s; Kraftwerk and British new wave acts were influential, but neither alone defines it.",
       "sources": [
         "https://en.wikipedia.org/wiki/Synth-pop",
         "https://www.cambridge.org/core/books/abs/electronic-music/synth-pop/D121624A71DA46E80162B06844B56CB9",
         "https://www.mtosmt.org/issues/mto.20.26.3/mto.20.26.3.lavengood.php"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1977,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:italo-disco",
@@ -1751,7 +2117,9 @@
       "name": "Italo disco",
       "family": "house",
       "period": {
-        "start": 1977
+        "start": 1977,
+        "end": null,
+        "precision": "decade"
       },
       "phases": [
         {
@@ -1793,7 +2161,9 @@
       "name": "Hi-NRG",
       "family": "house",
       "period": {
-        "start": 1977
+        "start": 1977,
+        "end": null,
+        "precision": "decade"
       },
       "phases": [
         {
@@ -1835,14 +2205,23 @@
       "name": "Electro",
       "family": "electronica",
       "period": {
-        "start": 1982
+        "start": 1982,
+        "end": 1990,
+        "precision": "decade"
       },
       "description": "An electronic dance style shaped by electro-funk and hip-hop, using drum machines, synthesized bass, and sometimes vocoders or other processed voices. “Planet Rock” was a landmark recording; Detroit groups such as Cybotron developed related but distinct local approaches.",
       "sources": [
         "https://en.wikipedia.org/wiki/Electro_(music)",
         "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/african-americans-on-the-recording-registry/",
         "https://en.wikipedia.org/wiki/Detroit_techno"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1982,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:chicago-house",
@@ -1850,14 +2229,23 @@
       "name": "Chicago house",
       "family": "house",
       "period": {
-        "start": 1984
+        "start": 1984,
+        "end": 1990,
+        "precision": "decade"
       },
       "description": "A house style and club practice that developed in Chicago in the early to mid-1980s. DJs and producers reshaped disco, soul, and electronic records with drum machines, sequencers, and studio edits; the Warehouse is central to the history, while the exact etymology of “house” is not settled by one account.",
       "sources": [
         "https://en.wikipedia.org/wiki/Chicago_house",
         "https://academic.oup.com/book/5894/chapter-abstract/149189393",
         "https://www.wcmu.org/music/music/2023-03-02/from-the-warehouse-to-the-world-chicago-and-the-birth-of-house-music"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1984,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:garage-house",
@@ -1865,14 +2253,23 @@
       "name": "Garage house",
       "family": "house",
       "period": {
-        "start": 1982
+        "start": 1982,
+        "end": 1990,
+        "precision": "decade"
       },
       "description": "A New York house lineage associated with the Paradise Garage and DJ Larry Levan, where house, disco, soul, gospel, and extended DJ mixing overlapped. The label describes a scene and a range of records rather than a single fixed sound.",
       "sources": [
         "https://en.wikipedia.org/wiki/Garage_house",
         "https://en.wikipedia.org/wiki/Paradise_Garage",
         "https://www.si.edu/object/do-you-remember-house-chicagos-queer-color-undergrounds-micah-salkind%3Asiris_sil_1160644"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1982,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:deep-house",
@@ -1880,14 +2277,31 @@
       "name": "Deep house",
       "family": "house",
       "period": {
-        "start": 1985
+        "start": 1985,
+        "end": 1995,
+        "precision": "decade"
       },
       "description": "A Chicago-associated house style that often uses spacious arrangements, deeper bass, jazz- and soul-inflected harmony, and understated vocals. Larry Heard is a central early figure, but the style grew through multiple producers and club networks.",
       "sources": [
         "https://en.wikipedia.org/wiki/Deep_house",
         "https://www.chfmworldwide.com/genres/deep-house",
         "https://www.allmusic.com/artist/larry-heard-mn0000782191"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1985,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1989,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1993,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:acid-house",
@@ -1895,14 +2309,23 @@
       "name": "Acid house",
       "family": "house",
       "period": {
-        "start": 1986
+        "start": 1986,
+        "end": 1990,
+        "precision": "decade"
       },
       "description": "A house style in which the resonant filter sweeps of the Roland TB-303 became a defining sound; Phuture’s “Acid Tracks” was a pivotal early recording. Chicago records reached the UK through DJs and clubs, where acid house helped drive a distinct late-1980s rave movement.",
       "sources": [
         "https://en.wikipedia.org/wiki/Acid_house",
         "https://britishculturearchive.co.uk/acid-house/",
         "https://academic.oup.com/tcbh/article/34/2/299/7040380"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1986,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:detroit-techno",
@@ -1910,7 +2333,9 @@
       "name": "Detroit techno",
       "family": "techno",
       "period": {
-        "start": 1985
+        "start": 1985,
+        "end": 1995,
+        "precision": "decade"
       },
       "description": "A regional form of techno developed by Detroit-area artists from the early to mid-1980s. Its history includes the Belleville Three, other Detroit producers and labels, Black radio and club culture, and exchanges with Chicago and Europe.",
       "sources": [
@@ -1918,7 +2343,22 @@
         "https://timeline.carnegiehall.org/genres/detroit-techno",
         "https://bentley.umich.edu/about/collections-magazine/fall-2016/remixing-detroit-history/",
         "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/atkins-juan"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1985,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1989,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1993,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:minimal-techno",
@@ -1926,14 +2366,23 @@
       "name": "Minimal techno",
       "family": "techno",
       "period": {
-        "start": 1992
+        "start": 1992,
+        "end": 2000,
+        "precision": "decade"
       },
       "description": "A techno approach built around sparse materials, repetition, and small changes over time. Detroit figures including Robert Hood and Daniel Bell helped establish an influential early-1990s strand; later scenes developed distinct versions.",
       "sources": [
         "https://en.wikipedia.org/wiki/Minimal_techno",
         "https://ra.co/features/3365",
         "https://www.allmusic.com/style/techno-ma0000002650"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1992,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:dub-techno",
@@ -1941,7 +2390,9 @@
       "name": "Dub techno",
       "family": "techno",
       "period": {
-        "start": 1993
+        "start": 1993,
+        "end": 2000,
+        "precision": "decade"
       },
       "description": "A techno and dub synthesis associated especially with Berlin’s Basic Channel releases in the early 1990s. Long delays, reverberation, filtering, and reduced rhythmic material make space and decay part of the composition.",
       "sources": [
@@ -1949,7 +2400,14 @@
         "https://en.wikipedia.org/wiki/Basic_Channel",
         "https://pitchfork.com/reviews/albums/basic-channel-bcd",
         "https://www.theguardian.com/music/2020/may/25/from-germany-to-detroit-and-back-how-kraftwerk-forged-an-industrial-exchange"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1993,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:trance",
@@ -1957,13 +2415,30 @@
       "name": "Trance",
       "family": "techno",
       "period": {
-        "start": 1990
+        "start": 1990,
+        "end": 2005,
+        "precision": "decade"
       },
       "description": "A family of electronic dance music styles built around sustained rhythmic motion and extended, often melodic development. Early German scenes, including Frankfurt, were important to its formation, alongside wider European club networks.",
       "sources": [
         "https://en.wikipedia.org/wiki/Trance_music",
         "https://www.allmusic.com/style/trance-ma0000002680"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1990,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1996,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2003,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:gabber",
@@ -1972,13 +2447,21 @@
       "family": "techno",
       "period": {
         "start": 1992,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1998
       },
       "description": "A Dutch hardcore dance style that emerged around Rotterdam in the early 1990s, marked by fast tempos, forceful kick drums, and deliberately distorted production. Its history belongs to the wider European hardcore continuum.",
       "sources": [
         "https://en.wikipedia.org/wiki/Gabber",
         "https://www.allmusic.com/style/hardcore-techno-ma0000002654"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1992,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:breakbeat-hardcore",
@@ -1986,7 +2469,9 @@
       "name": "Breakbeat hardcore",
       "family": "breakbeat-bass",
       "period": {
-        "start": 1989
+        "start": 1989,
+        "end": null,
+        "precision": "decade"
       },
       "phases": [
         {
@@ -2028,7 +2513,9 @@
       "name": "Jungle",
       "family": "breakbeat-bass",
       "period": {
-        "start": 1991
+        "start": 1991,
+        "end": null,
+        "precision": "decade"
       },
       "phases": [
         {
@@ -2071,14 +2558,23 @@
       "name": "Drum and bass",
       "family": "breakbeat-bass",
       "period": {
-        "start": 1994
+        "start": 1994,
+        "end": 2000,
+        "precision": "decade"
       },
       "description": "A broad UK-rooted family of fast breakbeat dance music that developed through the mid-1990s rave and jungle continuum. The name and sound came to cover varied branches rather than one “refined” successor style.",
       "sources": [
         "https://www.bl.uk/about/press/releases/beyond-the-bassline-500-years-of-black-british-music-opens-at-the-british-library",
         "https://en.wikipedia.org/wiki/History_of_drum_and_bass",
         "https://ra.co/features/1974"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1994,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:uk-garage",
@@ -2086,7 +2582,9 @@
       "name": "UK garage",
       "family": "breakbeat-bass",
       "period": {
-        "start": 1994
+        "start": 1994,
+        "end": null,
+        "precision": "decade"
       },
       "phases": [
         {
@@ -2138,7 +2636,8 @@
       "family": "breakbeat-bass",
       "period": {
         "start": 2000,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 2012
       },
       "description": "A South London style that coalesced in the early 2000s through garage-related club networks, with sparse arrangements, sub-bass, and varied references to dub, reggae, and rave. Its later international branches changed the sound substantially; Croydon is an important scene, not a complete origin story.",
       "sources": [
@@ -2146,7 +2645,22 @@
         "https://academic.oup.com/edited-volume/42059/chapter/355876582",
         "https://www.redbull.com/gb-en/history-of-dubstep-music",
         "https://djmag.com/features/how-big-apple-records-became-birthplace-of-dubstep"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 2000,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2005,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "artist:kraftwerk",
@@ -4444,7 +4958,8 @@
       "family": "techno",
       "period": {
         "start": 1985,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A family of electronic dance music first named and codified around Detroit in the mid-1980s, then developed through distinct scenes across the world. Repetitive machine rhythms and studio production are common reference points, while sound and social context vary widely.",
       "sources": [
@@ -4452,7 +4967,22 @@
         "https://timeline.carnegiehall.org/genres/detroit-techno",
         "https://bentley.umich.edu/about/collections-magazine/fall-2016/remixing-detroit-history/",
         "https://www.wired.com/1994/07/techno/"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1985,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1997,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "artist:kelli-hand",
@@ -5221,7 +5751,22 @@
       "sources": [
         "https://academic.oup.com/book/44623/chapter-abstract/378621525",
         "https://www.allmusic.com/genre/ambient-ma0000002424"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1975,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1983,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1993,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:ambient-techno",
@@ -5237,7 +5782,14 @@
       "sources": [
         "https://www.allmusic.com/style/ambient-techno-ma0000012032/artists",
         "https://academic.oup.com/book/44623/chapter-abstract/378621525"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1989,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:idm",
@@ -5253,7 +5805,14 @@
       "sources": [
         "https://www.allmusic.com/genre/idm-ma0000004477",
         "https://academic.oup.com/book/44623/chapter-abstract/378621525"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1992,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:synthwave",
@@ -5306,7 +5865,22 @@
       "sources": [
         "https://riviste.unimi.it/index.php/sss/article/view/14136",
         "https://www.allmusic.com/style/synthwave-ma0000013553"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 2010,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2014,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:vaporwave",
@@ -5388,7 +5962,22 @@
       "sources": [
         "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/chill-out/56E251BCE9BAD5EF081F738AD3336156",
         "https://www.allmusic.com/style/downbeat-ma0000012193"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1989,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1995,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2003,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:electroclash",
@@ -5436,7 +6025,14 @@
         "https://api.pageplace.de/preview/DT0400.9781351568548_A30395611/preview-9781351568548_A30395611.pdf",
         "https://www.cambridge.org/core/books/abs/popular-music-genres/funk-the-breakbeat-starts-here/55837A608444BA396211AFFCF319C2C2",
         "https://www.allmusic.com/genre/big-beat-ma0000004997"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1988,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:tech-house",
@@ -5452,7 +6048,22 @@
       "sources": [
         "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1",
         "https://www.allmusic.com/genre/tech-house-ma0000005003"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1994,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1998,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2003,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:indie-rock",
@@ -5469,7 +6080,22 @@
         "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing",
         "https://www.tandfonline.com/doi/full/10.1080/0300776042000300972",
         "https://www.allmusic.com/genre/alternative-indie-rock-ma0000012230"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1980,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1988,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1998,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:garage-rock",
@@ -5485,7 +6111,14 @@
       "sources": [
         "https://www.allmusic.com/genre/garage-rock-ma0000004458",
         "https://academic.oup.com/book/6294"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1963,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:glam-rock",
@@ -5501,7 +6134,14 @@
       "sources": [
         "https://academic.oup.com/book/6294",
         "https://www.allmusic.com/genre/glam-rock-ma0000002619"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1971,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:shoegaze",
@@ -5553,7 +6193,22 @@
       "sources": [
         "https://www.allmusic.com/genre/dream-pop-ma0000012303",
         "https://academic.oup.com/ml/article-abstract/98/4/601/4828180"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1984,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1988,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1993,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:britpop",
@@ -5600,7 +6255,22 @@
       "sources": [
         "https://www.allmusic.com/style/emo-ma0000004447",
         "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1985,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1993,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2003,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:post-hardcore",
@@ -5616,7 +6286,22 @@
       "sources": [
         "https://www.allmusic.com/genre/post-hardcore-ma0000012125",
         "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1985,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1991,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1998,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:post-rock",
@@ -5632,7 +6317,22 @@
       "sources": [
         "https://www.allmusic.com/genre/post-rock-ma0000002790",
         "https://academic.oup.com/book/6294"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1991,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1997,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2003,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:math-rock",
@@ -5648,7 +6348,22 @@
       "sources": [
         "https://www.allmusic.com/style/math-rock-ma0000002579",
         "https://academic.oup.com/book/6294"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1988,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1993,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1998,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:noise-rock",
@@ -5664,7 +6379,22 @@
       "sources": [
         "https://www.allmusic.com/genre/noise-rock-ma0000004455",
         "https://academic.oup.com/book/6294"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1980,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1988,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1998,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:gothic-rock",
@@ -5680,7 +6410,22 @@
       "sources": [
         "https://www.allmusic.com/genre/rock-ma0000002623",
         "https://academic.oup.com/book/6294"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1979,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1983,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1988,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:pop-punk",
@@ -5696,7 +6441,22 @@
       "sources": [
         "https://www.allmusic.com/style/pop-punk-ma0000004449",
         "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1977,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1988,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2003,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:stoner-rock",
@@ -5712,7 +6472,22 @@
       "sources": [
         "https://www.allmusic.com/style/stoner-metal-ma0000011961",
         "https://www.cambridge.org/core/books/abs/cambridge-companion-to-metal-music/get-your-double-kicks-on-route-666/9B2F59F9AEC8DE60D2D7E13FD68FF3D2"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1988,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1993,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1998,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:house",
@@ -5947,7 +6722,22 @@
       "description": "A broad, changing popular-music category shaped by memorable songwriting, recording technology, mass media and cross-pollination with many styles; it is not a single-origin genre.",
       "sources": [
         "https://www.allmusic.com/genre/pop-ma0000012254"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1950,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1965,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:country",
@@ -5962,7 +6752,22 @@
       "description": "A US popular tradition shaped by rural string-band music, balladry, blues and regional performance circuits; its commercial forms include honky-tonk, bluegrass, country-pop and many others.",
       "sources": [
         "https://www.allmusic.com/genre/country-ma0000002532"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1920,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1935,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:folk",
@@ -5977,7 +6782,22 @@
       "description": "The twentieth-century folk-revival tradition represented here centers on vernacular song, singer-songwriters and revival performance in the United States and Britain; it does not stand for every traditional music worldwide.",
       "sources": [
         "https://www.allmusic.com/genre/folk-ma0000002592"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1930,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1945,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:bluegrass",
@@ -5992,7 +6812,22 @@
       "description": "A fast, acoustic string-band music crystallized by Bill Monroe and the Blue Grass Boys in the 1940s, drawing on older Appalachian and country traditions.",
       "sources": [
         "https://www.allmusic.com/genre/bluegrass-ma0000002466"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1945,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1960,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:r-and-b",
@@ -6007,7 +6842,22 @@
       "description": "A shifting name for Black American popular music, first used for postwar blues-based dance and vocal music and later covering several distinct R&B traditions.",
       "sources": [
         "https://www.allmusic.com/genre/r-b-ma0000002809"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1940,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1955,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:doo-wop",
@@ -6022,7 +6872,22 @@
       "description": "A vocal-group style built around close harmonies, syllabic backing vocals and a prominent lead singer, flourishing in the 1950s and early 1960s.",
       "sources": [
         "https://www.allmusic.com/genre/doo-wop-ma0000002556"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1948,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1955,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1963,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:neo-soul",
@@ -6031,13 +6896,28 @@
       "family": "blues-soul",
       "period": {
         "start": 1995,
-        "end": null,
+        "end": 2005,
         "precision": "decade"
       },
       "description": "A 1990s-forward R&B movement that reworked soul performance and songwriting through hip-hop-era rhythms, production and artist-led album making.",
       "sources": [
         "https://www.allmusic.com/genre/neo-soul-ma0000004426"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1995,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1999,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2003,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:ska",
@@ -6052,7 +6932,22 @@
       "description": "Jamaican dance music that blended mento and calypso with American rhythm and blues and jazz; it became a key precursor to rocksteady and reggae.",
       "sources": [
         "https://www.allmusic.com/genre/ska-ma0000002857"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1958,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1963,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1968,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:rocksteady",
@@ -6067,7 +6962,14 @@
       "description": "A short-lived Jamaican style that slowed ska’s pulse and foregrounded bass, vocal harmony and a relaxed groove; it bridged ska and reggae.",
       "sources": [
         "https://www.allmusic.com/genre/rocksteady-ma0000002830"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1966,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:reggae",
@@ -6082,7 +6984,22 @@
       "description": "Jamaican popular music that developed from ska and rocksteady, with a strong bass-and-drum foundation and many later branches including roots reggae, dub and dancehall.",
       "sources": [
         "https://www.allmusic.com/genre/reggae-ma0000002820"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1968,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1983,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:dub",
@@ -6097,7 +7014,22 @@
       "description": "A Jamaican studio-centered practice and style that foregrounds instrumental versions, mixing-desk manipulation, echo, reverb and bass.",
       "sources": [
         "https://www.allmusic.com/genre/dub-ma0000002559"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1968,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1983,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:dancehall",
@@ -6112,7 +7044,22 @@
       "description": "A Jamaican popular style and scene that grew around dancehall sound systems and deejay performance, later developing digital riddim-based forms.",
       "sources": [
         "https://www.allmusic.com/style/dancehall-ma0000002545"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1979,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1993,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:latin",
@@ -6127,7 +7074,22 @@
       "description": "An umbrella term used by the music industry for diverse Latin American and diasporic traditions; it is a navigational parent here, not a claim of one shared musical origin.",
       "sources": [
         "https://www.allmusic.com/genre/latin-ma0000002692"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1900,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1915,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:son-cubano",
@@ -6142,7 +7104,18 @@
       "description": "Cuban song-and-dance tradition formed through Afro-Cuban and Spanish-language practices, later providing an important basis for son montuno and salsa.",
       "sources": [
         "https://www.pbs.org/buenavista/music/a_son.html"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1890,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1950,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging from emergence into continued practice. The 1950 marker is a broad modern observation point, not a claim that the tradition began then or reached a measured peak; source-level review remains needed."
     },
     {
       "id": "genre:salsa",
@@ -6151,13 +7124,28 @@
       "family": "latin",
       "period": {
         "start": 1960,
-        "end": null,
+        "end": 1980,
         "precision": "decade"
       },
       "description": "A pan-Caribbean and New York-centered dance-music movement drawing especially on Cuban son and related Afro-Cuban forms, with distinct regional histories.",
       "sources": [
         "https://www.allmusic.com/subgenre/salsa-ma0000002840"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1960,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1968,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1978,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:bossa-nova",
@@ -6166,13 +7154,20 @@
       "family": "latin",
       "period": {
         "start": 1958,
-        "end": null,
+        "end": 1965,
         "precision": "decade"
       },
       "description": "Brazilian song style formed in the late 1950s through a distinctive guitar rhythm, understated vocal approach and jazz-influenced harmony.",
       "sources": [
         "https://www.allmusic.com/genre/bossa-nova-ma0000002548"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1958,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:cumbia",
@@ -6187,7 +7182,22 @@
       "description": "A Colombian-rooted dance tradition whose regional and popular forms spread across Latin America and developed into many national styles.",
       "sources": [
         "https://www.allmusic.com/genre/cumbia-ma0000002541"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1900,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1915,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:highlife",
@@ -6196,13 +7206,32 @@
       "family": "african",
       "period": {
         "start": 1920,
-        "end": null,
+        "end": 1970,
         "precision": "decade"
       },
       "description": "A West African popular dance tradition, especially associated with Ghana and Nigeria, blending local forms with guitar, horn-band and other transatlantic influences.",
       "sources": [
         "https://www.allmusic.com/style/highlife-ma0000002637/songs"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1920,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1930,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1960,
+          "prominence": "established"
+        },
+        {
+          "start": 1968,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:afrobeat",
@@ -6211,12 +7240,28 @@
       "family": "african",
       "period": {
         "start": 1968,
-        "precision": "decade"
+        "precision": "decade",
+        "end": 1977
       },
       "description": "A Nigerian-led style associated especially with Fela Kuti and Tony Allen, combining West African highlife and Yoruba rhythmic ideas with funk, jazz and extended political song forms. Distinct from contemporary Afrobeats.",
       "sources": [
         "https://www.allmusic.com/style/afro-beat-ma0000004495"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1968,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1972,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1975,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:afrobeats",
@@ -6231,7 +7276,22 @@
       "description": "A contemporary, plural popular-music umbrella associated with West African scenes and global circulation; it is distinct from Fela Kuti’s earlier Afrobeat.",
       "sources": [
         "https://online.ucpress.edu/jpms/article-abstract/36/4/25/203941/Genre-or-HypernymDeconstructing-Afrobeats-in-the?redirectedFrom=fulltext"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 2000,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2008,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:k-pop",
@@ -6246,7 +7306,22 @@
       "description": "South Korean popular music industry and style incorporating local language and performance conventions with global pop, hip-hop, R&B and electronic production.",
       "sources": [
         "https://www.allmusic.com/style/k-pop-ma0000011907"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1990,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2001,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:j-pop",
@@ -6261,7 +7336,22 @@
       "description": "A broad label for modern Japanese popular music, spanning multiple eras and styles rather than one stable sound.",
       "sources": [
         "https://www.allmusic.com/style/j-pop-ma0000004490"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1970,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1985,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:surf-rock",
@@ -6276,7 +7366,14 @@
       "description": "Instrumental rock associated with Southern California surf culture, featuring reverb-heavy electric guitar and rhythmic drive; the style later influenced wider rock music.",
       "sources": [
         "https://www.allmusic.com/style/surf-ma0000002883"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1960,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:new-wave",
@@ -6291,7 +7388,22 @@
       "description": "A diverse late-1970s and 1980s pop-rock field that followed punk while embracing synthesizers, art-school ideas, dance rhythms and concise song forms.",
       "sources": [
         "https://www.allmusic.com/genre/new-wave-ma0000002750"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1977,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1982,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1987,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:thrash-metal",
@@ -6300,13 +7412,20 @@
       "family": "metal",
       "period": {
         "start": 1983,
-        "end": null,
+        "end": 1991,
         "precision": "decade"
       },
       "description": "A fast, aggressive heavy-metal branch that sharpened riffing and rhythmic precision; the “Big Four” are Metallica, Slayer, Megadeth and Anthrax.",
       "sources": [
         "https://www.allmusic.com/genre/speed-thrash-metal-ma0000002874"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1983,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:death-metal",
@@ -6321,7 +7440,22 @@
       "description": "An extreme-metal branch that developed from thrash in the late 1980s, marked by harsh vocals, dense riffs and darker lyrical themes.",
       "sources": [
         "https://www.allmusic.com/genre/death-metal-ma0000002547"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1986,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1998,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:black-metal",
@@ -6336,7 +7470,22 @@
       "description": "An extreme-metal family with multiple waves and regional scenes; the name first circulated in the 1980s and later became strongly associated with the Norwegian early-1990s scene.",
       "sources": [
         "https://www.allmusic.com/style/black-metal-ma0000002463"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1982,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1995,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:doom-metal",
@@ -6351,7 +7500,22 @@
       "description": "A heavy-metal branch emphasizing slow tempos, weight and atmosphere; its foundations reach back to Black Sabbath and its underground scenes expanded during the 1980s.",
       "sources": [
         "https://www.allmusic.com/genre/doom-metal-ma0000004496"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1984,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1997,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:grime",
@@ -6360,13 +7524,20 @@
       "family": "hip-hop",
       "period": {
         "start": 2002,
-        "end": null,
+        "end": 2010,
         "precision": "decade"
       },
       "description": "A UK electronic rap style that emerged in London around pirate radio, MC culture and fast, synthetic garage-derived production.",
       "sources": [
         "https://www.allmusic.com/style/grime-ma0000004464"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 2002,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:trap-rap",
@@ -6381,7 +7552,22 @@
       "description": "A Southern US hip-hop style associated with stark programmed drums, heavy low end and narratives rooted in Atlanta trap culture; later usage broadened considerably.",
       "sources": [
         "https://www.allmusic.com/genre/trap-rap-ma0000013576"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 2003,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2010,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:drill",
@@ -6396,7 +7582,22 @@
       "description": "A stark, rhythmically distinctive rap style first associated with Chicago and later developed in UK and other local scenes.",
       "sources": [
         "https://www.allmusic.com/genre/drill-ma0000013643"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 2010,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2015,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:electro-house",
@@ -6405,13 +7606,28 @@
       "family": "house",
       "period": {
         "start": 2000,
-        "end": null,
+        "end": 2012,
         "precision": "decade"
       },
       "description": "A 2000s house branch combining house rhythms with prominent electro-influenced synth timbres and forceful production.",
       "sources": [
         "https://www.allmusic.com/album/dirty-electro-house-mw0001174015"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 2000,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2005,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:hardstyle",
@@ -6427,7 +7643,22 @@
       "sources": [
         "https://www.allmusic.com/album/hardstyle-10-years-mw0002452091",
         "https://en.wikipedia.org/wiki/Hardstyle"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 2000,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2008,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:psytrance",
@@ -6442,7 +7673,22 @@
       "description": "A psychedelic electronic dance style that developed from Goa trance and later globalized through festival and club scenes.",
       "sources": [
         "https://www.allmusic.com/style/goa-trance-ma0000011977"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1990,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2001,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "artist:michael-jackson",
@@ -7736,13 +8982,21 @@
       "family": "classical",
       "period": {
         "start": 1700,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "North Indian classical music built around raga and tala, transmitted through lineages and performance traditions. The date marks a broad modern period of public circulation, not the beginning of the tradition.",
       "sources": [
         "https://www.allmusic.com/style/indian-classical-ma0000002638",
         "https://www.cambridge.org/core/journals/popular-music/article/abs/reflecting-surfaces-the-use-of-elements-from-indian-music-in-popular-music-and-jazz/40563DAAE907F72FC45E329DDA92ABFF"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1700,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "A single continuing phase is used because this broad, long-running tradition does not have a defensible shared peak cycle in the current graph sources. Shading is editorial, not a measured ranking; regional histories may require separate phases."
     },
     {
       "id": "genre:carnatic",
@@ -7751,12 +9005,20 @@
       "family": "classical",
       "period": {
         "start": 1700,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "The South Indian classical system, with distinct regional histories, performance lineages and approaches to melody and rhythm. The date is an approximate modern-era anchor, not a claim of origin.",
       "sources": [
         "https://www.allmusic.com/style/carnatic-ma0000012004"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1700,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "A single continuing phase is used because this broad, long-running tradition does not have a defensible shared peak cycle in the current graph sources. Shading is editorial, not a measured ranking; regional histories may require separate phases."
     },
     {
       "id": "genre:qawwali",
@@ -7765,13 +9027,21 @@
       "family": "classical",
       "period": {
         "start": 1300,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A South Asian Sufi devotional song tradition performed in shrine and community settings. Its performance practices and meanings are tied to particular religious and social contexts.",
       "sources": [
         "https://www.allmusic.com/genre/qawwali-ma0000002742",
         "https://academic.oup.com/fordham-scholarship-online/book/24268/chapter-abstract/185921803"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1300,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "A single continuing phase is used because this broad, long-running tradition does not have a defensible shared peak cycle in the current graph sources. Shading is editorial, not a measured ranking; regional histories may require separate phases."
     },
     {
       "id": "genre:gamelan",
@@ -7780,13 +9050,21 @@
       "family": "classical",
       "period": {
         "start": 700,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "An umbrella term for Indonesian ensemble traditions, including distinct Javanese and Balinese repertories, instruments and tuning systems; it does not describe one uniform style.",
       "sources": [
         "https://ich.unesco.org/en/RL/gamelan-01607",
         "https://www.allmusic.com/style/gamelan-ma0000002610"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 700,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "A single continuing phase is used because this broad, long-running tradition does not have a defensible shared peak cycle in the current graph sources. Shading is editorial, not a measured ranking; regional histories may require separate phases."
     },
     {
       "id": "genre:russian-folk",
@@ -7795,14 +9073,26 @@
       "family": "country-folk",
       "period": {
         "start": 1800,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A broad label for diverse Russian vernacular song and instrumental traditions. This node is a starting point for regional and community-specific documentation, not a single uniform national style.",
       "sources": [
         "https://www.allmusic.com/style/russian-folk-ma0000012024",
         "https://folkways.si.edu/country/russia",
         "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/folk-music-0"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1800,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1950,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging from emergence into continued practice. The 1950 marker is a broad modern observation point, not a claim that the tradition began then or reached a measured peak; source-level review remains needed."
     },
     {
       "id": "genre:samba",
@@ -7811,12 +9101,28 @@
       "family": "latin",
       "period": {
         "start": 1910,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A Brazilian music and dance family whose forms vary by region and setting, including Rio de Janeiro’s urban popular and Carnival traditions.",
       "sources": [
         "https://www.allmusic.com/style/samba-ma0000002842"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1910,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1925,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:tango",
@@ -7825,12 +9131,24 @@
       "family": "latin",
       "period": {
         "start": 1880,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A music-and-dance tradition that developed around the Río de la Plata, especially Buenos Aires and Montevideo, with African, European and local histories that should not be reduced to a single origin story.",
       "sources": [
         "https://www.allmusic.com/style/tango-ma0000002891"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1880,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1950,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging from emergence into continued practice. The 1950 marker is a broad modern observation point, not a claim that the tradition began then or reached a measured peak; source-level review remains needed."
     },
     {
       "id": "genre:andean-folk",
@@ -7839,12 +9157,28 @@
       "family": "latin",
       "period": {
         "start": 1900,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A broad catalogue label for diverse musical traditions across the Andes. Regional, Indigenous and national distinctions require finer-grained entries as the collection grows.",
       "sources": [
         "https://www.allmusic.com/style/andean-folk-ma0000002426"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1900,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1915,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "artist:ravi-shankar",
@@ -8179,13 +9513,21 @@
       "family": "classical",
       "period": {
         "start": 600,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "Japanese court music and dance encompassing instrumental repertories and vocal forms, shaped through historical exchange with continental Asian traditions. UNESCO describes it as the oldest of Japan’s traditional performing arts.",
       "sources": [
         "https://ich.unesco.org/en/RL/gagaku-00265",
         "https://www.kunaicho.go.jp/en/learn/culture/gagaku.html"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 600,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "A single continuing phase is used because this broad, long-running tradition does not have a defensible shared peak cycle in the current graph sources. Shading is editorial, not a measured ranking; regional histories may require separate phases."
     },
     {
       "id": "artist:imperial-court-ensemble",
@@ -8234,13 +9576,21 @@
       "family": "classical",
       "period": {
         "start": 1790,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A Chinese operatic tradition that took shape in Beijing from regional theatrical forms, combining stylized singing, speech, gesture, martial arts and percussion-led orchestras.",
       "sources": [
         "https://ich.unesco.org/en/RL/peking-opera-00418",
         "https://english.scio.gov.cn/m/chinafacts/2017-04/13/content_40612142.htm"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1790,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "A single continuing phase is used because this broad, long-running tradition does not have a defensible shared peak cycle in the current graph sources. Shading is editorial, not a measured ranking; regional histories may require separate phases."
     },
     {
       "id": "genre:pansori",
@@ -8249,13 +9599,21 @@
       "family": "classical",
       "period": {
         "start": 1700,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A Korean epic vocal art in which one singer narrates and sings a long story with a drummer. Its surviving repertory and performance practice carry regional histories and continue to evolve.",
       "sources": [
         "https://ich.unesco.org/en/RL/pansori-epic-chant-00070",
         "https://www.korea.net/K-InfoHub/SubMainDetail/view?articleId=3981&headwordCd=77&headwordGroupCd=17&pageIndex=1"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1700,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "A single continuing phase is used because this broad, long-running tradition does not have a defensible shared peak cycle in the current graph sources. Shading is editorial, not a measured ranking; regional histories may require separate phases."
     },
     {
       "id": "genre:baul-songs",
@@ -8264,13 +9622,25 @@
       "family": "country-folk",
       "period": {
         "start": 1800,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "Songs of Bengal’s Baul communities, joining poetry, melody and embodied spiritual practice. The tradition is transmitted through teacher-disciple lineages and varied local repertoires.",
       "sources": [
         "https://ich.unesco.org/en/RL/baul-songs-00107",
         "https://www.parvathybaul.com/about"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1800,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1950,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging from emergence into continued practice. The 1950 marker is a broad modern observation point, not a claim that the tradition began then or reached a measured peak; source-level review remains needed."
     },
     {
       "id": "genre:juju",
@@ -8279,13 +9649,33 @@
       "family": "african",
       "period": {
         "start": 1930,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1980
       },
       "description": "A Yoruba popular music tradition from Nigeria, shaped by interlocking guitars, percussion and talking drums. Its ensembles expanded dramatically in the mid-twentieth century.",
       "sources": [
         "https://www.allmusic.com/style/juju-ma0000002646",
         "https://www.britannica.com/art/juju-music"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1930,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1940,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1970,
+          "prominence": "established"
+        },
+        {
+          "start": 1978,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:soukous",
@@ -8294,13 +9684,33 @@
       "family": "african",
       "period": {
         "start": 1940,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1990
       },
       "description": "A Congolese popular dance music whose guitar-led sound developed through local rumba, Cuban and other transatlantic exchanges. The term is often used broadly for related Congolese styles.",
       "sources": [
         "https://www.allmusic.com/style/soukous-ma0000002784",
         "https://www.britannica.com/art/soukous"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1940,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1950,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1980,
+          "prominence": "established"
+        },
+        {
+          "start": 1988,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:bachata",
@@ -8309,13 +9719,29 @@
       "family": "latin",
       "period": {
         "start": 1960,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A Dominican song and dance tradition that grew from guitar-based urban popular music and later reached a global audience through artists who reshaped its sound and reach.",
       "sources": [
         "https://ich.unesco.org/en/RL/music-and-dance-of-dominican-bachata-01514?RL=01514",
         "https://www.allmusic.com/style/bachata-ma0000002441/artists"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1960,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1975,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:merengue",
@@ -8324,13 +9750,25 @@
       "family": "latin",
       "period": {
         "start": 1850,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A Dominican music-and-dance tradition with regional and ensemble variations, including the modern merengue típico and orchestral forms. It remains central to Dominican popular culture.",
       "sources": [
         "https://ich.unesco.org/en/RL/music-and-dance-of-the-merengue-in-the-dominican-republic-01162?lang=en",
         "https://onda.gob.do/noticias/la-onda-rinde-homenaje-a-merengueros-en-el-dia-nacional-del-merengue/"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1850,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1950,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging from emergence into continued practice. The 1950 marker is a broad modern observation point, not a claim that the tradition began then or reached a measured peak; source-level review remains needed."
     },
     {
       "id": "genre:khoomei",
@@ -8339,13 +9777,29 @@
       "family": "country-folk",
       "period": {
         "start": 1900,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "A family of Tuvan vocal techniques in which singers bring out harmonics above a low fundamental tone. UNESCO recognizes the Mongolian art of khoomei, while Tuvan xöömei has its own regional practices and names.",
       "sources": [
         "https://ich.unesco.org/en/RL/mongolian-art-of-singing-khoomei-00210?RL=00210",
         "https://folkways.si.edu/throat-singing-unique-vocalization-three-cultures/world/music/article/smithsonian"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1900,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1915,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "artist:mei-lanfang",
@@ -8664,13 +10118,29 @@
       "family": "hip-hop",
       "period": {
         "start": 1975,
-        "precision": "decade"
+        "precision": "decade",
+        "end": 1985
       },
       "description": "An early New York rap style built around party rhymes, DJ-led breaks, call-and-response and the block-party culture from which hip-hop emerged. The label is retrospective; the style continues to be performed.",
       "sources": [
         "https://www.allmusic.com/style/old-school-rap-ma0000002762",
         "https://www.allmusic.com/artist/kurtis-blow-mn0000116388"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1975,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1979,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1983,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:east-coast-rap",
@@ -8679,13 +10149,29 @@
       "family": "hip-hop",
       "period": {
         "start": 1975,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A broad regional branch rooted in New York hip-hop, encompassing multiple generations and sounds, from early Bronx crews to sample-rich, lyric-centered styles. It is a regional umbrella rather than one fixed sound.",
       "sources": [
         "https://www.allmusic.com/style/east-coast-rap-ma0000002563",
         "https://service.ddex.net/dd/DD-AVS-008/dd/ddex_EastCoastHipHop.html"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1975,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1990,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:west-coast-rap",
@@ -8694,13 +10180,29 @@
       "family": "hip-hop",
       "period": {
         "start": 1980,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A regional family of styles associated with California and the wider western United States, including gangsta rap, G-funk and later Bay Area movements. Its sound and subject matter have never been uniform.",
       "sources": [
         "https://www.allmusic.com/genre/west-coast-rap-ma0000002932",
         "https://www.allmusic.com/artist/nwa-mn0000314793"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1980,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1994,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:gangsta-rap",
@@ -8709,13 +10211,29 @@
       "family": "hip-hop",
       "period": {
         "start": 1985,
-        "precision": "decade"
+        "precision": "decade",
+        "end": 2000
       },
       "description": "A rap style whose narratives often draw on street life, violence, policing and survival. It developed across multiple cities and is not synonymous with all hip-hop from Black urban communities.",
       "sources": [
         "https://www.allmusic.com/style/gangsta-rap-ma0000002611",
         "https://www.allmusic.com/artist/p77"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1985,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1991,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1998,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:boom-bap",
@@ -8724,14 +10242,30 @@
       "family": "hip-hop",
       "period": {
         "start": 1987,
-        "precision": "decade"
+        "precision": "decade",
+        "end": 1998
       },
       "description": "A sample-based rap sound associated especially with late-1980s and 1990s East Coast production: hard, swung drum breaks, prominent kicks and snares, and densely worked loops. The term also describes a production aesthetic used by later artists.",
       "sources": [
         "https://repository.uwl.ac.uk/id/eprint/5150/",
         "https://www.allmusic.com/artist/p68235",
         "https://www.allmusic.com/artist/mn0000286818"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1987,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1991,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1996,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:jazz-rap",
@@ -8740,13 +10274,21 @@
       "family": "hip-hop",
       "period": {
         "start": 1987,
-        "precision": "decade"
+        "precision": "decade",
+        "end": 1995
       },
       "description": "A hip-hop branch that places jazz sampling, instrumentation and improvisational ideas alongside rap. Groups such as A Tribe Called Quest, De La Soul and Gang Starr helped establish its distinctive sound.",
       "sources": [
         "https://www.allmusic.com/style/jazz-rap-ma0000012180/artists",
         "https://www.allmusic.com/artist/gang-starr-mn0000193601"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1987,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:alternative-rap",
@@ -8755,13 +10297,29 @@
       "family": "hip-hop",
       "period": {
         "start": 1988,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A wide-ranging rap category for artists who depart from prevailing commercial formulas through unusual sampling, subject matter, structures or cross-genre production. It overlaps with other styles rather than forming a single sound.",
       "sources": [
         "https://www.allmusic.com/style/alternative-rap-ma0000012203",
         "https://www.allmusic.com/artist/de-la-soul-mn0000238322"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1988,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1999,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:conscious-hip-hop",
@@ -8770,13 +10328,29 @@
       "family": "hip-hop",
       "period": {
         "start": 1985,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "Rap that foregrounds social analysis, self-knowledge, political critique or community concerns. Its boundaries overlap with political rap and other styles, and artists do not always embrace the label.",
       "sources": [
         "https://academic.oup.com/edited-volume/34741/chapter-abstract/296548837",
         "https://www.liveabout.com/conscious-rap-defined-2857304"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1985,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1997,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:southern-rap",
@@ -8785,13 +10359,29 @@
       "family": "hip-hop",
       "period": {
         "start": 1985,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A regional umbrella for rap scenes across the U.S. South, including distinct sounds from Atlanta, Houston, New Orleans, Memphis and Miami. It spans party music, storytelling, gangsta rap and many other approaches.",
       "sources": [
         "https://www.allmusic.com/style/southern-rap-ma0000002871",
         "https://www.allmusic.com/artist/outkast-mn0000420381"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1985,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1997,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:crunk",
@@ -8800,13 +10390,29 @@
       "family": "hip-hop",
       "period": {
         "start": 1995,
-        "precision": "decade"
+        "precision": "decade",
+        "end": 2008
       },
       "description": "A high-energy Southern rap style, especially associated with Atlanta, built around shouted hooks, forceful chants, club-oriented beats and participatory performance. Lil Jon and Atlanta groups brought it to national prominence in the 2000s.",
       "sources": [
         "https://www.allmusic.com/artist/lil-jon-mn0000826299",
         "https://www.allmusic.com/artist/crime-mob-mn0000672656"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1995,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2000,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2006,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:g-funk",
@@ -8815,13 +10421,21 @@
       "family": "hip-hop",
       "period": {
         "start": 1990,
-        "precision": "decade"
+        "precision": "decade",
+        "end": 1998
       },
       "description": "A West Coast rap style that combines funk-derived bass lines, synthesizer leads and relaxed grooves with hip-hop production. Dr. Dre’s The Chronic helped define its early-1990s breakthrough.",
       "sources": [
         "https://www.allmusic.com/style/g-funk-ma0000011824",
         "https://www.allmusic.com/genre/west-coast-rap-ma0000002932"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1990,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:hyphy",
@@ -8830,13 +10444,29 @@
       "family": "hip-hop",
       "period": {
         "start": 2000,
-        "precision": "decade"
+        "precision": "decade",
+        "end": 2010
       },
       "description": "A Bay Area rap movement and party sound associated with energetic production, local slang, dance and car culture. Mac Dre, E-40 and Keak da Sneak are among its best-known figures.",
       "sources": [
         "https://www.latimes.com/archives/la-xpm-2006-jul-23-ca-music23-story.html",
         "https://www.allmusic.com/artist/mac-dre-mn0000807687"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 2000,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2004,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2008,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:chopped-and-screwed",
@@ -8845,13 +10475,29 @@
       "family": "hip-hop",
       "period": {
         "start": 1990,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A Houston DJ style that slows recordings and reshapes them through repeated cuts, creating a heavy, suspended feel. DJ Screw developed it in a local mixtape culture that also gave MCs space to freestyle over the mixes.",
       "sources": [
         "https://exhibits.lib.uh.edu/s/dj-screw-records/page/houston",
         "https://www.tshaonline.org/handbook/entries/davis-robert-earl-jr-dj-screw"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1990,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2001,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:horrorcore",
@@ -8860,13 +10506,29 @@
       "family": "hip-hop",
       "period": {
         "start": 1988,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A lyrical and theatrical branch of rap that uses horror imagery, macabre storytelling and shock aesthetics. Its artists range from Houston groups to Detroit’s Insane Clown Posse, with distinct approaches under the same broad label.",
       "sources": [
         "https://www.allmusic.com/style/horror-rap-ma0000013531",
         "https://www.allmusic.com/artist/insane-clown-posse-mn0000079959"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1988,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1999,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "artist:kurtis-blow",
@@ -9237,14 +10899,30 @@
       "family": "jazz",
       "period": {
         "start": 1987,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1997
       },
       "description": "A British club-era fusion that joined jazz and funk grooves with soul, hip-hop and dance-music sensibilities. It emerged in late-1980s London and was carried by both live bands and DJ-led scenes.",
       "sources": [
         "https://www.allmusic.com/genre/acid-jazz-ma0000002414",
         "https://www.jamestaylorquartet.co.uk/jtq/biography/",
         "https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1987,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1991,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1995,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "artist:jamiroquai",
@@ -9292,12 +10970,28 @@
       "family": "country-folk",
       "period": {
         "start": 1990,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A roots-oriented umbrella that draws on country, folk, blues and related American traditions. The term gained broader currency in the 1990s for artists working outside Nashville’s mainstream country format.",
       "sources": [
         "https://www.allmusic.com/style/americana-ma0000004415"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1990,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2001,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:alt-country",
@@ -9306,12 +11000,28 @@
       "family": "country-folk",
       "period": {
         "start": 1985,
-        "precision": "circa"
+        "precision": "circa",
+        "end": null
       },
       "description": "Country music made outside mainstream Nashville conventions, often bringing in independent rock, punk and singer-songwriter approaches while retaining country forms.",
       "sources": [
         "https://www.allmusic.com/style/alt-country-ma0000002421"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1985,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1997,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:honky-tonk",
@@ -9320,12 +11030,28 @@
       "family": "country-folk",
       "period": {
         "start": 1940,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1960
       },
       "description": "A country style associated with dance halls and bars, with steel guitar, fiddle, strong backbeat and direct, often hard-lived songs. It helped shape postwar country music.",
       "sources": [
         "https://www.allmusic.com/style/honky-tonk-ma0000002648"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1940,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1948,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1958,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:calypso",
@@ -9334,12 +11060,32 @@
       "family": "reggae",
       "period": {
         "start": 1900,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1960
       },
       "description": "A Trinidadian song tradition closely tied to Carnival, known for topical lyrics, social commentary and competitive performance by calypsonians. Its musical history is distinct from Jamaican reggae, though the Caribbean scenes have influenced one another.",
       "sources": [
         "https://www.allmusic.com/style/calypso-ma0000002494"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1900,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1912,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1948,
+          "prominence": "established"
+        },
+        {
+          "start": 1958,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:reggaeton",
@@ -9348,12 +11094,28 @@
       "family": "latin",
       "period": {
         "start": 1990,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A Spanish-language Caribbean urban dance style that developed through Puerto Rican and Panamanian scenes, blending reggae and dancehall rhythms with hip-hop and electronic production.",
       "sources": [
         "https://www.allmusic.com/style/reggaeton-ma0000002976"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1990,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2001,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:amapiano",
@@ -9362,14 +11124,30 @@
       "family": "african",
       "period": {
         "start": 2010,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A South African dance style that emerged in the 2010s, built around soft piano motifs, deep log-drum bass and a relaxed house pulse. The sound developed through local DJ and producer communities before reaching a global audience.",
       "sources": [
         "https://www.allmusic.com/artist/kabza-de-small-mn0003886957",
         "https://www.newyorker.com/culture/culture-desk/how-far-can-amapiano-go",
         "https://djmag.com/features/these-are-most-exciting-amapiano-producers-right-now"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 2010,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2015,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:gqom",
@@ -9378,13 +11156,29 @@
       "family": "african",
       "period": {
         "start": 2010,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A stark, percussive South African dance style that emerged in Durban in the early 2010s, using sparse, tense rhythms and heavy low end. Vocal and instrumental approaches developed alongside one another.",
       "sources": [
         "https://www.allmusic.com/style/gqom-ma0000013646",
         "https://www.allmusic.com/artist/dj-lag-mn0003558945"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 2010,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2015,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:kwaito",
@@ -9393,13 +11187,29 @@
       "family": "african",
       "period": {
         "start": 1990,
-        "precision": "decade"
+        "precision": "decade",
+        "end": 2010
       },
       "description": "A South African post-apartheid popular dance style that reshaped house-derived grooves into slower, locally grounded music, with township languages, vocal hooks and distinctive youth culture.",
       "sources": [
         "https://www.musicinafrica.net/magazine/popular-music-south-africa/",
         "https://www.washingtonpost.com/archive/lifestyle/style/1998/07/19/the-phat-of-the-homeland/1ba33e31-5fef-499b-be15-8f45dc4d4b7b"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1990,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1998,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2008,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:new-jack-swing",
@@ -9408,13 +11218,21 @@
       "family": "blues-soul",
       "period": {
         "start": 1987,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1995
       },
       "description": "A late-1980s R&B style that fused soul singing and melodic hooks with hip-hop rhythms, sampling and production. Producer Teddy Riley and groups including Guy and New Edition helped define its sound.",
       "sources": [
         "https://www.allmusic.com/style/new-jack-swing-ma0000005027",
         "https://www.allmusic.com/artist/teddy-riley-mn0000018176"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1987,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "genre:contemporary-r-and-b",
@@ -9423,12 +11241,28 @@
       "family": "blues-soul",
       "period": {
         "start": 1980,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A broad modern R&B style shaped by studio production, soul vocals and exchange with hip-hop and pop. Its sound changes over time, so this node is an umbrella rather than one fixed formula.",
       "sources": [
         "https://www.allmusic.com/subgenre/contemporary-r-b-ma0000002969"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1980,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1994,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:nu-metal",
@@ -9437,12 +11271,28 @@
       "family": "metal",
       "period": {
         "start": 1994,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 2005
       },
       "description": "A 1990s heavy style that combined metal riffs with hip-hop rhythms, alternative rock, turntable or electronic textures, and a wide range of vocal approaches. The scene was diverse and its boundaries remain debated.",
       "sources": [
         "https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1994,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1998,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2003,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:metalcore",
@@ -9451,12 +11301,28 @@
       "family": "metal",
       "period": {
         "start": 1990,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A metal and hardcore-derived style built around heavy riffs, breakdowns and a mix of melodic and harsh vocals. Its later waves expanded into many different production and performance approaches.",
       "sources": [
         "https://www.allmusic.com/style/metalcore-ma0000013405"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1990,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2001,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:industrial-metal",
@@ -9465,12 +11331,28 @@
       "family": "metal",
       "period": {
         "start": 1988,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 2000
       },
       "description": "A metal style that combines distorted guitar riffs with industrial electronics, samples and mechanical production. Ministry and Nine Inch Nails helped bring the sound to wider audiences.",
       "sources": [
         "https://www.allmusic.com/style/industrial-metal-ma0000012276"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1988,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1993,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1998,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:vocal-jazz",
@@ -9479,12 +11361,28 @@
       "family": "jazz",
       "period": {
         "start": 1930,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "Jazz singing that treats standards as material for interpretation, rhythmic phrasing and improvisation, rather than simply presenting a fixed popular-song performance. It spans big-band vocalists, small-group singers and later generations.",
       "sources": [
         "https://www.allmusic.com/style/vocal-jazz-ma0000002948"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1930,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1945,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:latin-jazz",
@@ -9493,12 +11391,28 @@
       "family": "jazz",
       "period": {
         "start": 1940,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A family of jazz styles shaped by Latin American and Caribbean rhythms, including Afro-Cuban and Brazilian elements. It developed through exchanges between jazz musicians and Latin bandleaders from the 1940s onward.",
       "sources": [
         "https://www.allmusic.com/style/latin-jazz-ma0000002464"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1940,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1955,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2010,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:spiritual-jazz",
@@ -9507,12 +11421,28 @@
       "family": "jazz",
       "period": {
         "start": 1960,
-        "precision": "decade"
+        "precision": "decade",
+        "end": 1975
       },
       "description": "A broad jazz current that joined improvisation with spiritual, devotional and transcendent themes, especially in the 1960s and 1970s. The label covers varied musical approaches, not a single formal sound.",
       "sources": [
         "https://www.allmusic.com/style/spiritual-jazz-ma0000013403"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1960,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1966,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1973,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:edm",
@@ -9521,12 +11451,28 @@
       "family": "electronica",
       "period": {
         "start": 2000,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A broad commercial label for festival-scale electronic dance music, especially the high-impact, producer-led dance sounds that broke into mainstream pop in the 2000s and 2010s. It overlaps with house, trance and other club styles.",
       "sources": [
         "https://www.allmusic.com/style/edm-ma0000013412"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 2000,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2008,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:breakcore",
@@ -9535,12 +11481,28 @@
       "family": "breakbeat-bass",
       "period": {
         "start": 1990,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "An experimental electronic style built from chopped, distorted and rapidly rearranged breakbeats. It draws on jungle, hardcore and noise, with artists taking the sound in highly individual directions.",
       "sources": [
         "https://www.allmusic.com/style/breakcore-ma0000004991"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1990,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2001,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:footwork",
@@ -9549,13 +11511,29 @@
       "family": "house",
       "period": {
         "start": 1990,
-        "precision": "decade"
+        "precision": "decade",
+        "end": null
       },
       "description": "A fast, syncopated Chicago dance style developed alongside footwork battles, with tightly cut samples and intricate kick patterns. Juke and footwork overlap but are not interchangeable in every local context.",
       "sources": [
         "https://www.allmusic.com/style/juke-footwork-ma0000013543",
         "https://www.allmusic.com/artist/dj-rashad-mn0000998421"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1990,
+          "prominence": "emerging"
+        },
+        {
+          "start": 2001,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 2018,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
     },
     {
       "id": "genre:impressionism",
@@ -9564,13 +11542,29 @@
       "family": "classical",
       "period": {
         "start": 1890,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1920
       },
       "description": "A late-19th- and early-20th-century compositional style associated especially with Debussy and Ravel, using color, modal or whole-tone harmony and fluid forms. “Impressionism” is an imperfect label that Debussy himself resisted.",
       "sources": [
         "https://pressbooks.cuny.edu/understandingmusicbmcc/chapter/2-impressionism/",
         "https://rme.rilm.org/articles/emt00226/1.0/emt00226"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1890,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1902,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1918,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:serialism",
@@ -9579,13 +11573,33 @@
       "family": "classical",
       "period": {
         "start": 1920,
-        "precision": "decade"
+        "precision": "decade",
+        "end": 1970
       },
       "description": "A compositional approach that organizes musical elements through ordered series; its most influential early form was twelve-tone technique. Schoenberg, Berg and Webern were central to its development.",
       "sources": [
         "https://assets.cambridge.org/97805218/63414/excerpt/9780521863414_excerpt.htm",
         "https://academic.oup.com/book/49294/chapter-abstract/422536119"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1920,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1930,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1960,
+          "prominence": "established"
+        },
+        {
+          "start": 1968,
+          "prominence": "niche"
+        }
+      ],
+      "phaseNote": "Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
     },
     {
       "id": "genre:girl-groups",
@@ -9594,12 +11608,20 @@
       "family": "pop",
       "period": {
         "start": 1958,
-        "precision": "circa"
+        "precision": "circa",
+        "end": 1965
       },
       "description": "A vocal-group style associated with the late 1950s and 1960s, often pairing close harmonies and expressive lead vocals with polished songwriting and studio production. Groups such as the Ronettes, the Shangri-Las and the Supremes helped define it.",
       "sources": [
         "https://www.allmusic.com/style/girl-groups-ma0000002618"
-      ]
+      ],
+      "phases": [
+        {
+          "start": 1958,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
       "id": "artist:maurice-ravel",

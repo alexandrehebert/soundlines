@@ -146,7 +146,8 @@ describe('historical prominence', () => {
 
   it('keeps soul alive after its peak and does not call it niche', () => {
     const soul = rawGraph.nodes.find((candidate) => candidate.id === 'genre:soul')!
-    expect(soul.period).not.toHaveProperty('end')
+    expect(soul.period).toBeDefined()
+    expect(soul.period?.end ?? null).toBeNull()
     expect(soul.phases?.at(-1)?.prominence).toBe('established')
   })
 })

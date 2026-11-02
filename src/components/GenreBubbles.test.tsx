@@ -38,6 +38,20 @@ function bubbleMarkup(markup: string, name: string) {
 }
 
 describe('bubble lineage rendering', () => {
+  it('uses a compact map with floating, touch-sized zoom controls instead of a title or subtitle', () => {
+    const markup = renderBubbles(null)
+    expect(markup).not.toContain('<h2')
+    expect(markup).not.toMatch(/<p(?:\s|>)/)
+    expect(markup).not.toContain('A world of influence')
+    expect(markup).toContain('aria-label="Bubble zoom" class="absolute right-3 top-3')
+    expect(markup).toContain('touch-none')
+    expect(markup).toContain('Pinch or Cmd/Ctrl+scroll to zoom.')
+    for (const label of ['Zoom out bubbles', 'Zoom in bubbles']) {
+      expect(markup.match(new RegExp(`<button[^>]*aria-label="${label}"[^>]*>`))?.[0])
+        .toContain('h-11 w-11')
+    }
+  })
+
   it('leaves the full map visible without a selection and never scales individual bubbles', () => {
     const markup = renderBubbles(null)
     for (const name of ['A', 'B', 'C', 'D']) {

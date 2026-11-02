@@ -12,5 +12,19 @@ services:
       - .:/app
       - node_modules:/app/node_modules
 
+  storybook:
+    image: node:22-alpine
+    working_dir: /app
+    command: sh -c 'npm ci && npm run storybook -- --host 0.0.0.0 --no-open --exact-port --port "$$STORYBOOK_PORT"'
+    environment:
+      STORYBOOK_DISABLE_TELEMETRY: "1"
+      STORYBOOK_PORT: ${STORYBOOK_PORT:-6008}
+    ports:
+      - "127.0.0.1:${STORYBOOK_PORT:-6008}:${STORYBOOK_PORT:-6008}"
+    volumes:
+      - .:/app
+      - storybook_node_modules:/app/node_modules
+
 volumes:
   node_modules:
+  storybook_node_modules:
