@@ -64,12 +64,15 @@ graph relationships. Artist lanes and detail badges use the same families.
   remembered when visiting Artists and shared with `?layout=bubbles`.
 - Off-screen genres have a labeled, family-colored ghost bar at the left or
   right edge, pointing toward their nearest visible period. Click or press
-  Enter/Space to reveal it. In family groups, indicators only appear where they
-  do not overlap an on-screen bar or another indicator; nearer genres take
-  priority on shared rows. Ghosts are navigation hints, not historical activity.
-- Short visible bars keep their names beside the bar, on the side with more
-  available space, or just above it on crowded shared rows. Labels remain readable
-  independently of activity and tail fades; bar lengths and dates are unchanged.
+  Enter/Space to reveal it. Indicators widen for their labels when space permits;
+  in family groups, they do not overlap an on-screen bar, its label, or another
+  indicator. Nearer genres take priority on shared rows. Ghosts are navigation
+  hints, not historical activity.
+- Bar labels favor complete names, moving to another visible period, beside or
+  across a bar, or above it on crowded rows when needed. If a name still cannot
+  fit, it is shortened with an ellipsis; the full name remains available on hover
+  and to assistive technology. Activity and tail fades, bar lengths, and dates are
+  unchanged.
 - With a mouse, drag to move both axes; vertical scroll moves the timeline, horizontal scroll pans time, and Cmd/Ctrl+scroll zooms.
 - On touch screens, one-finger horizontal drags pan time, vertical swipes scroll the timeline, and two-finger pinches zoom. Tap a bar to open its draggable detail sheet.
 - Mobile search opens as a full-screen overlay; selected artists and genres bring their bars into view.

@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef, useState } from 'react'
 import { useExplorer } from '../../ExplorerContext.ts'
 import { revealEraRange, xToYear, yearToX, type TimeScale } from '../../graph/layout.ts'
 import {
@@ -10,7 +11,10 @@ import {
 } from '../../graph/phases.ts'
 import { prominenceLabels } from '../../graph/types.ts'
 import { DEFAULT_BUBBLE_ZOOM, SELECTION_BORDER, SELECTION_OUTLINE } from '../../theme.ts'
-import { BAR_H, barBounds, barLabel, barShape, tailFadeOffset, type BarPosition, type OffscreenIndicator } from './geometry.ts'
+import {
+  ABOVE_BAR_LABEL_FONT_SIZE, BAR_H, BAR_LABEL_FONT_SIZE, barBounds, barLabel, barShape, fitBarLabel,
+  tailFadeOffset, type BarLabel, type BarLabelMetrics, type BarPosition, type OffscreenIndicator,
+} from './geometry.ts'
 
 interface TimelineBarProps {
   bar: BarPosition
@@ -18,6 +22,7 @@ interface TimelineBarProps {
   dimmed: boolean
   indicator?: OffscreenIndicator
   rowBars?: BarPosition[]
+  placement?: BarLabel | null
   onHover: (id: string | null) => void
   onSelect: (id: string, revealYear?: number) => void
 }
@@ -47,8 +52,44 @@ function BarSelectionOutline({ x, y, width, ended = false }: {
   )
 }
 
-export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, onHover, onSelect }: TimelineBarProps) {
+export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, placement, onHover, onSelect }: TimelineBarProps) {
   const { selectedId, selectNode, viewRange, setViewRange } = useExplorer()
+  const measureRef = useRef<SVGTextElement>(null)
+  const [labelMetrics, setLabelMetrics] = useState<(BarLabelMetrics & { name: string; weight: number }) | null>(null)
+  const hasVisibleSpan = bar.visibleSpans.some(([start, end]) =>
+    Math.min(end, scale.width) > Math.max(start, 0))
+  const hasMeasurement = hasVisibleSpan || !!indicator
+  const measureWeight = hasVisibleSpan ? 700 : 600
+  const metrics = labelMetrics?.name === bar.node.name && labelMetrics.weight === measureWeight ? labelMetrics : undefined
+  const label = placement === undefined ? barLabel(bar, scale.width, rowBars, metrics?.width) : placement
+  const labelMaxWidth = label?.maxWidth ?? (indicator ? Math.max(0, indicator.width - 42) : undefined)
+  const labelFontSize = label?.above ? ABOVE_BAR_LABEL_FONT_SIZE : BAR_LABEL_FONT_SIZE
+
+  useLayoutEffect(() => {
+    const text = measureRef.current
+    if (!hasMeasurement || !text) return
+    const length = bar.node.name.length
+    setLabelMetrics({
+      name: bar.node.name,
+      weight: measureWeight,
+      width: length ? text.getSubStringLength(0, length) : 0,
+      ellipsisWidth: text.getSubStringLength(length, 1),
+    })
+  }, [bar.node.name, hasMeasurement, measureWeight])
+
+  useLayoutEffect(() => {
+    const text = measureRef.current
+    if (labelMaxWidth === undefined || !metrics || metrics.prefixWidths || !text
+      || metrics.width * labelFontSize / BAR_LABEL_FONT_SIZE + 1 <= labelMaxWidth) return
+    let length = 0
+    const prefixWidths = [...bar.node.name].map((character) => {
+      length += character.length
+      return text.getSubStringLength(0, length)
+    })
+    setLabelMetrics((current) => current?.name === bar.node.name && current.weight === measureWeight
+      ? { ...current, prefixWidths } : current)
+  }, [bar.node.name, labelMaxWidth, labelFontSize, measureWeight, metrics])
+
   if (!bar.visibleSpans.length) return null
   const isSelected = bar.node.id === selectedId
   const shape = barShape(bar)
@@ -72,12 +113,14 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, onHover, o
   const visibilityId = `bar-visibility-${id}`
   const tailId = `bar-tail-${id}`
   const hasHiddenPhase = visibility.some((stop) => stop.level < 1)
-  const label = barLabel(bar, scale.width, rowBars)
   const isArtist = bar.node.type === 'artist'
   const labels = prominenceLabels(bar.node.type)
   const revealYear = indicator ? xToYear(scale, indicator.targetX) : undefined
   const offscreenLabel = indicator ? `${bar.node.name} · off-screen to the ${indicator.direction}; activate to reveal` : null
   const maskPadding = Math.max(4, (SELECTION_OUTLINE.outlineWidth + SELECTION_OUTLINE.outlineOffset) * DEFAULT_BUBBLE_ZOOM)
+  const visibleLabel = label ? fitBarLabel(bar.node.name, label.maxWidth, labelFontSize, metrics) : ''
+  const indicatorLabel = indicator
+    ? fitBarLabel(bar.node.name, Math.max(0, indicator.width - 42), BAR_LABEL_FONT_SIZE, metrics) : ''
 
   return (
     <g
@@ -110,6 +153,11 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, onHover, o
         onSelect(bar.node.id, revealYear)
       }}
     >
+      {hasMeasurement && (
+        <text ref={measureRef} data-label-measure={bar.node.id} data-label-weight={measureWeight}
+          visibility="hidden" pointerEvents="none" aria-hidden="true"
+          fontSize={BAR_LABEL_FONT_SIZE} fontWeight={measureWeight}>{`${bar.node.name}…`}</text>
+      )}
       <defs>
         <clipPath id={clipId}><path d={shape} /></clipPath>
         {bar.ended && (
@@ -195,15 +243,16 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, onHover, o
           <BarSelectionOutline {...bounds} ended={bar.ended} />
         </g>
       </g>
-      {label && (
+      {label && visibleLabel && (
         <text data-bar-label={label.outside ? 'outside' : 'inside'}
           x={label.x} y={bar.yCenter + (label.above ? -14.5 : 4)} textAnchor={label.textAnchor}
           clipPath={label.outside ? undefined : `url(#${clipId})`}
           fill={label.outside || phases.length > 0 || isArtist ? '#f8fafc' : '#020617'}
           stroke={label.outside ? '#020617' : undefined}
           strokeWidth={label.outside ? 3 : undefined} paintOrder={label.outside ? 'stroke' : undefined}
-          fontSize={label.above ? 10.5 : 11.5} fontWeight={700}>
-          {bar.node.name}
+          fontSize={labelFontSize} fontWeight={700}>
+          <title>{bar.node.name}</title>
+          {visibleLabel}
         </text>
       )}
       {indicator && (
@@ -226,10 +275,10 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, onHover, o
             ? `M ${indicator.x + 17} ${bar.yCenter - 4} l -4 4 l 4 4`
             : `M ${indicator.x + indicator.width - 17} ${bar.yCenter - 4} l 4 4 l -4 4`}
             stroke={bar.color} strokeWidth={1.5} fill="none" pointerEvents="none" />
-          <text x={indicator.x + (indicator.direction === 'left' ? 27 : 10)} y={bar.yCenter + 4}
+          <text data-indicator-label="" x={indicator.x + (indicator.direction === 'left' ? 27 : 10)} y={bar.yCenter + 4}
             fill="#cbd5e1" fontSize={11.5} fontWeight={600} clipPath={`url(#ghost-label-${id})`}
             pointerEvents="none">
-            {bar.node.name}
+            {indicatorLabel}
           </text>
         </g>
       )}

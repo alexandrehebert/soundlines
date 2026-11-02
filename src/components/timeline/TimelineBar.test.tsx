@@ -123,7 +123,8 @@ describe('bar selection outline', () => {
         x2: 50, visibleSpans: [[20, 50]],
       })
       expect(markup).toContain('<text data-bar-label="outside" x="60" y="54" text-anchor="start"')
-      const label = markup.slice(markup.indexOf('<text data-bar-label='), markup.indexOf('</text>') + 7)
+      const start = markup.indexOf('<text data-bar-label=')
+      const label = markup.slice(start, markup.indexOf('</text>', start) + 7)
       expect(label).toContain(node.name)
       expect(label).not.toContain('clip-path')
       expect(label).toContain('fill="#f8fafc"')
@@ -136,12 +137,51 @@ describe('bar selection outline', () => {
       expect(markup).toContain('clip-path="url(#bar-clip-genre-short)" fill="#f8fafc"')
     })
 
+    it('moves a label across the bar to show its full name near the viewport edge', () => {
+      const markup = renderBar({ ...node, name: 'Minimal techno' }, false, undefined, {
+        x1: 80, x2: 300, visibleSpans: [[80, 300]],
+      }, { start: 1948, end: 2026, width: 160 })
+      const start = markup.indexOf('<text data-bar-label=')
+      const label = markup.slice(start, markup.indexOf('</text>', start) + 7)
+      expect(label).toContain('data-bar-label="outside"')
+      expect(label).toContain('Minimal techno</text>')
+      expect(label).not.toContain('clip-path')
+    })
+
+    it('ellipsizes only when the full label cannot fit in the viewport', () => {
+      const markup = renderBar(node, false, undefined, undefined, { start: 1948, end: 2026, width: 90 })
+      const start = markup.indexOf('<text data-bar-label=')
+      const label = markup.slice(start, markup.indexOf('</text>', start) + 7)
+      expect(label).toContain('<title>Short-lived genre</title>')
+      expect(label).toMatch(/…<\/text>$/u)
+      expect(label).not.toContain('Short-lived genre</text>')
+    })
+
     it('does not add an outside label to a wholly off-screen bar', () => {
       const markup = renderBar(node, false, { x: 8, width: 220, direction: 'left', targetX: -10 }, {
         x1: -50, x2: -10, visibleSpans: [[-50, -10]],
       })
       expect(markup).not.toContain('data-bar-label=')
       expect(markup).toContain('data-offscreen-indicator="genre:short"')
+    })
+
+    it('shows complete off-screen indicator labels when there is room', () => {
+      const markup = renderBar({ ...node, name: 'Medieval music' }, false,
+        { x: 8, width: 150, direction: 'left', targetX: -10 }, {
+          x1: -50, x2: -10, visibleSpans: [[-50, -10]],
+        })
+      expect(markup).toContain('data-indicator-label=""')
+      expect(markup).toContain('>Medieval music</text>')
+    })
+
+    it('ellipsizes an off-screen indicator only when its available width is insufficient', () => {
+      const markup = renderBar(node, false, { x: 8, width: 90, direction: 'left', targetX: -10 }, {
+        x1: -50, x2: -10, visibleSpans: [[-50, -10]],
+      })
+      const start = markup.indexOf('<text data-indicator-label=')
+      const label = markup.slice(start, markup.indexOf('</text>', start) + 7)
+      expect(label).toMatch(/…<\/text>$/u)
+      expect(markup).toContain('Short-lived genre · off-screen to the left; activate to reveal')
     })
   })
 

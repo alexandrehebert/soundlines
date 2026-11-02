@@ -1,8 +1,8 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { useExplorer } from '../ExplorerContext.ts'
 import { lineageHighlight } from '../graph/graph.ts'
 import { ERA_SEGMENTS, MAX_YEAR, TIMELINE_PADDING, timeTicks, yearToX, type TimeScale } from '../graph/layout.ts'
-import { AXIS_H, offscreenIndicators, positionTimeline, revealBarScrollTop } from './timeline/geometry.ts'
+import { AXIS_H, offscreenIndicators, positionRowLabels, positionTimeline, revealBarScrollTop, type BarLabel } from './timeline/geometry.ts'
 import { TimelineBar } from './timeline/TimelineBar.tsx'
 import { TimelineLinks } from './timeline/TimelineLinks.tsx'
 import { useTimelineViewport } from './timeline/useTimelineViewport.ts'
@@ -12,7 +12,9 @@ export function Timeline() {
   const order = view === 'genre' ? genreOrder : 'family'
   const { containerRef, width, select, handlers } = useTimelineViewport()
   const [hoveredId, setHoveredId] = useState<string | null>(null)
+  const [labelWidths, setLabelWidths] = useState<Map<string, { name: string; weight: string; width: number }>>(() => new Map())
   const lastRevealedId = useRef<string | null>(null)
+  const plotRef = useRef<SVGSVGElement>(null)
   const scale = useMemo<TimeScale>(() => ({
     start: viewRange[0], end: viewRange[1], width, padding: TIMELINE_PADDING,
   }), [viewRange, width])
@@ -31,7 +33,30 @@ export function Timeline() {
     }
     return rows
   }, [bars])
-  const indicators = useMemo(() => offscreenIndicators(bars, width), [bars, width])
+  const measuredWidths = useMemo(() => {
+    const normal = new Map<string, number>()
+    const indicators = new Map<string, number>()
+    for (const [id, value] of labelWidths) {
+      const target = value.weight === '700' ? normal : indicators
+      target.set(id, value.width)
+    }
+    return { normal, indicators }
+  }, [labelWidths])
+  const labelPositions = useMemo(() => {
+    const positions = new Map<string, BarLabel>()
+    for (const row of barsByRow.values()) {
+      for (const [id, label] of positionRowLabels(row, width, measuredWidths.normal)) positions.set(id, label)
+    }
+    return positions
+  }, [barsByRow, measuredWidths.normal, width])
+  const indicators = useMemo(
+    () => offscreenIndicators(bars, width, {
+      indicatorLabelWidths: measuredWidths.indicators,
+      visibleLabels: labelPositions,
+      visibleLabelWidths: measuredWidths.normal,
+    }),
+    [bars, width, measuredWidths.indicators, measuredWidths.normal, labelPositions],
+  )
   const focusId = hoveredId ?? selectedId
   const highlight = useMemo(
     () => lineageHighlight(model.index, focusId, model.orientation), [focusId, model],
@@ -45,6 +70,26 @@ export function Timeline() {
     const x2 = segmentEnd >= scale.end ? width : Math.min(width, yearToX(scale, segmentEnd))
     return [{ ...segment, x1, x2 }]
   })
+
+  useLayoutEffect(() => {
+    const plot = plotRef.current
+    if (!plot) return
+    let updated: Map<string, { name: string; weight: string; width: number }> | undefined
+    for (const text of plot.querySelectorAll<SVGTextElement>('[data-label-measure]')) {
+      const id = text.getAttribute('data-label-measure')
+      const name = text.textContent?.slice(0, -1)
+      const weight = text.getAttribute('data-label-weight')
+      const previous = id ? labelWidths.get(id) : undefined
+      if (!id || name === undefined || !weight || (previous?.name === name && previous.weight === weight)) continue
+      updated ??= new Map(labelWidths)
+      updated.set(id, { name, weight, width: name.length ? text.getSubStringLength(0, name.length) : 0 })
+    }
+    if (updated) {
+      // SVG text widths are only available after the plot has rendered.
+      // oxlint-disable-next-line react/set-state-in-effect
+      setLabelWidths(updated)
+    }
+  }, [bars, labelWidths])
 
   useEffect(() => {
     if (!width || lastRevealedId.current === selectedId) return
@@ -86,7 +131,7 @@ export function Timeline() {
               ))}
             </svg>
           </div>
-          <svg width={width} height={height} data-timeline-plot="" {...handlers}>
+          <svg ref={plotRef} width={width} height={height} data-timeline-plot="" {...handlers}>
             {compressedSegments.map((segment) => (
               <g key={segment.from} pointerEvents="none">
                 <rect x={segment.x1} y={0} width={segment.x2 - segment.x1} height={height}
@@ -111,6 +156,7 @@ export function Timeline() {
             {bars.map((bar) => (
               <TimelineBar key={bar.node.id} bar={bar} scale={scale}
                 rowBars={barsByRow.get(bar.yCenter)}
+                placement={labelPositions.get(bar.node.id) ?? null}
                 indicator={indicators.get(bar.node.id)}
                 dimmed={highlight !== null && !highlight.nodes.has(bar.node.id)}
                 onHover={setHoveredId} onSelect={select} />
