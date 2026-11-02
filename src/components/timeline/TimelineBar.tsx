@@ -23,7 +23,6 @@ interface TimelineBarProps {
   indicator?: OffscreenIndicator
   rowBars?: BarPosition[]
   placement?: BarLabel | null
-  onHover: (id: string | null) => void
   onSelect: (id: string, revealYear?: number) => void
 }
 
@@ -52,7 +51,7 @@ function BarSelectionOutline({ x, y, width, ended = false }: {
   )
 }
 
-export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, placement, onHover, onSelect }: TimelineBarProps) {
+export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, placement, onSelect }: TimelineBarProps) {
   const { selectedId, selectNode, viewRange, setViewRange } = useExplorer()
   const measureRef = useRef<SVGTextElement>(null)
   const [labelMetrics, setLabelMetrics] = useState<(BarLabelMetrics & { name: string; weight: number }) | null>(null)
@@ -125,6 +124,7 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, placement,
   return (
     <g
       data-timeline-bar={bar.node.id}
+      className="visualization-item"
       data-node-type={bar.node.type}
       data-offscreen-direction={indicator?.direction}
       role="button"
@@ -132,14 +132,7 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, placement,
       aria-label={offscreenLabel ?? bar.node.name}
       aria-pressed={isSelected}
       opacity={dimmed ? 0.2 : 1}
-      style={{ cursor: 'pointer', transition: 'opacity 150ms', outline: 'none' }}
-      onPointerEnter={(event) => {
-        if (event.pointerType === 'mouse') onHover(bar.node.id)
-        else onHover(null)
-      }}
-      onPointerLeave={(event) => {
-        if (event.pointerType === 'mouse') onHover(null)
-      }}
+      style={{ cursor: 'pointer', outline: 'none' }}
       onKeyDown={(event) => {
         if (event.key === 'Enter' || event.key === ' ') {
           event.preventDefault()
@@ -149,7 +142,6 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, placement,
       }}
       onClick={(event) => {
         event.stopPropagation()
-        onHover(null)
         onSelect(bar.node.id, revealYear)
       }}
     >
@@ -240,6 +232,7 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, placement,
               })}
             </g>
           )}
+          <path className="visualization-hover-border" d={shape} pointerEvents="none" aria-hidden="true" />
           <BarSelectionOutline {...bounds} ended={bar.ended} />
         </g>
       </g>
@@ -270,6 +263,8 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, placement,
           <rect x={indicator.x} y={bar.yCenter - BAR_H / 2} width={indicator.width} height={BAR_H}
             rx={BAR_H / 2} fill={`url(#ghost-${id})`} stroke={isSelected ? 'none' : bar.color}
             strokeOpacity={0.4} strokeDasharray="3 4" />
+          <rect className="visualization-hover-border" x={indicator.x} y={bar.yCenter - BAR_H / 2}
+            width={indicator.width} height={BAR_H} rx={BAR_H / 2} pointerEvents="none" aria-hidden="true" />
           <BarSelectionOutline x={indicator.x} y={bar.yCenter - BAR_H / 2} width={indicator.width} />
           <path d={indicator.direction === 'left'
             ? `M ${indicator.x + 17} ${bar.yCenter - 4} l -4 4 l 4 4`

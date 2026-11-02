@@ -64,3 +64,35 @@ export const SelectedInstrument: Story = {
 export const SelectedGenre: Story = {
   parameters: { explorer: { initialSelectedId: 'genre:house' } },
 }
+
+export const LineageOnSelection: Story = {
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const house = canvas.getByRole('button', { name: 'House' })
+    const techno = canvas.getByRole('button', { name: 'Techno' })
+    const snapshot = () => ({
+      links: [...canvasElement.querySelectorAll('[data-timeline-link]')]
+        .map((link) => [link.getAttribute('data-timeline-link'), link.getAttribute('opacity')]),
+      opacity: [...canvasElement.querySelectorAll('[data-timeline-bar]')]
+        .map((bar) => bar.getAttribute('opacity')),
+    })
+    const overview = snapshot()
+    expect(overview.opacity.every((opacity) => opacity === '1')).toBe(true)
+
+    await userEvent.hover(house)
+    expect(snapshot()).toEqual(overview)
+
+    await userEvent.click(house)
+    await waitFor(() => expect(house).toHaveAttribute('aria-pressed', 'true'))
+    const selected = snapshot()
+    expect(selected.opacity).toContain('0.2')
+    expect(selected.links.some(([, opacity]) => opacity === '0.9')).toBe(true)
+
+    await userEvent.hover(techno)
+    expect(snapshot()).toEqual(selected)
+    expect(house).toHaveAttribute('aria-pressed', 'true')
+
+    await userEvent.unhover(techno)
+    expect(snapshot()).toEqual(selected)
+  },
+}

@@ -12,7 +12,6 @@ export function Timeline() {
   const { model, selectedId, viewRange, order } = useExplorer()
   const view = model.view
   const { containerRef, width, select, handlers } = useTimelineViewport()
-  const [hoveredId, setHoveredId] = useState<string | null>(null)
   const [labelWidths, setLabelWidths] = useState<Map<string, { name: string; weight: string; width: number }>>(() => new Map())
   const lastRevealedId = useRef<string | null>(null)
   const plotRef = useRef<SVGSVGElement>(null)
@@ -59,9 +58,8 @@ export function Timeline() {
     }),
     [bars, width, view, order, measuredWidths.indicators, measuredWidths.normal, labelPositions],
   )
-  const focusId = hoveredId ?? selectedId
   const highlight = useMemo(
-    () => lineageHighlight(model.index, focusId, model.orientation), [focusId, model],
+    () => lineageHighlight(model.index, selectedId, model.orientation), [selectedId, model],
   )
   const ticks = timeTicks(scale, tickSpacing).map((year) => ({ year, x: yearToX(scale, year) }))
   const compressedSegments = ERA_SEGMENTS.flatMap((segment, i) => {
@@ -161,7 +159,7 @@ export function Timeline() {
                 placement={labelPositions.get(bar.node.id) ?? null}
                 indicator={indicators.get(bar.node.id)}
                 dimmed={highlight !== null && !highlight.nodes.has(bar.node.id)}
-                onHover={setHoveredId} onSelect={select} />
+                onSelect={select} />
             ))}
           </svg>
         </>

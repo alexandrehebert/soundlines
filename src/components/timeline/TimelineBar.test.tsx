@@ -28,7 +28,7 @@ function renderBar(node: GraphNode, selected: boolean, indicator?: OffscreenIndi
     }}>
       <svg>
         <TimelineBar bar={bar} scale={scale}
-          dimmed={false} indicator={indicator} onHover={vi.fn()} onSelect={vi.fn()} />
+          dimmed={false} indicator={indicator} onSelect={vi.fn()} />
       </svg>
     </ExplorerContext.Provider>,
   )
@@ -90,6 +90,7 @@ describe('bar selection outline', () => {
   it.each(nodes)('keeps the rounded outline ready before $id is selected', (node) => {
     const markup = renderBar(node, true)
     expect(markup).toContain('aria-pressed="true"')
+    expect(markup).toContain('class="visualization-item"')
     expect(markup).toContain('outline:none')
     expect(markup).not.toContain('stroke="#f8fafc"')
     expect(markup.match(/data-bar-selection-outline=/g)).toHaveLength(1)
@@ -110,6 +111,16 @@ describe('bar selection outline', () => {
       expect(markup).toContain('id="bar-tail-genre-phased-gradient" gradientUnits="userSpaceOnUse" x1="20" y1="50" x2="300" y2="50"')
       expect(markup).toContain('id="bar-tail-genre-phased" maskUnits="userSpaceOnUse" x="13.25" y="28" width="293.5" height="44"')
     }
+  })
+
+  it.each(nodes)('keeps the hover border inside activity and tail masks for $id', (node) => {
+    const markup = renderBar(node, false)
+    const borderStart = markup.indexOf('<path class="visualization-hover-border"')
+    const selectionStart = markup.indexOf('<foreignObject data-bar-selection-outline')
+    expect(borderStart).toBeGreaterThan(0)
+    expect(borderStart).toBeLessThan(selectionStart)
+    expect(markup.slice(borderStart, selectionStart)).toMatch(/pointer-events="none" aria-hidden="true"/)
+    expect(markup).toContain('</foreignObject></g></g><text data-bar-label=')
   })
 
   describe('bar labels', () => {
@@ -203,5 +214,6 @@ describe('bar selection outline', () => {
     expect(markup).toContain('outline:none')
     const indicator = markup.slice(markup.indexOf('data-offscreen-indicator'))
     expect(indicator.match(/data-bar-selection-outline=/g)).toHaveLength(1)
+    expect(indicator).toContain('<rect class="visualization-hover-border" x="8" y="39" width="220" height="22" rx="11" pointer-events="none" aria-hidden="true"')
   })
 })

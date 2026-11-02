@@ -57,7 +57,6 @@ const meta = {
     bar: exampleBar('genre', 'genre:house'),
     scale,
     dimmed: false,
-    onHover: fn(),
     onSelect: fn(),
   },
   argTypes: {
@@ -65,7 +64,6 @@ const meta = {
     scale: { control: false },
     indicator: { control: false },
     rowBars: { control: false },
-    onHover: { control: false },
     onSelect: { control: false },
   },
   render: (args) => <BarExample {...args} />,

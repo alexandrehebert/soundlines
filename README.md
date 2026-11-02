@@ -121,6 +121,10 @@ historical events. Artist lanes and detail badges use the same families.
 - Both timeline modes pad the time range by 24px on each side within a full-width
   drawing surface; panning and background bands extend all the way to the edges.
 - Click a bar or focus it and press Enter/Space for details; every relation in the panel is navigable
+- Mouse hover gives only the hovered, unselected bar or bubble a brightness lift
+  and thin highlight border, easing in and out without scaling, changing lineage
+  links, or dimming other items. Selected items do not change on hover. Lineage
+  highlighting follows selection only.
 - Selected bars use the bubble's rounded HTML focus-style ring, border, and
   spacing at the bubble map's default 75% zoom. Selection replaces the bar's
   native keyboard-focus outline rather than stacking a second outline. Keyboard

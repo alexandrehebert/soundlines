@@ -58,6 +58,7 @@ describe('bubble lineage rendering', () => {
     for (const name of ['A', 'B', 'C', 'D']) {
       expect(bubbleMarkup(markup, name)).toContain('opacity:1')
       expect(bubbleMarkup(markup, name)).not.toContain('scale')
+      expect(bubbleMarkup(markup, name)).toContain('class="visualization-item genre-bubble ')
     }
     expect(markup).not.toContain('data-bubble-link')
   })

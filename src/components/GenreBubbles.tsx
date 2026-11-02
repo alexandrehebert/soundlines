@@ -114,7 +114,7 @@ export function GenreBubbles() {
                       aria-pressed={selected}
                       title={description}
                       onClick={() => selectNode(node.id)}
-                      className="genre-bubble absolute flex select-none items-center justify-center rounded-full border p-3 text-center transition-opacity duration-150 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                      className="visualization-item genre-bubble absolute flex select-none items-center justify-center rounded-full border p-3 text-center focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
                       style={{
                         left: x - diameter / 2,
                         top: y - diameter / 2,
