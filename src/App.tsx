@@ -47,7 +47,7 @@ export function Explorer() {
 
   return (
     <div className="flex h-dvh flex-col">
-      <header className="z-10 flex shrink-0 items-center gap-2 border-b border-slate-800 bg-slate-950/90 px-3 py-2 md:flex-wrap md:gap-x-6 md:gap-y-3 md:px-5 md:py-3">
+      <header className="z-20 flex shrink-0 items-center gap-2 border-b border-slate-800 bg-slate-950/90 px-3 py-2 md:flex-wrap md:gap-x-6 md:gap-y-3 md:px-5 md:py-3">
         <div className="flex shrink-0 items-center gap-2 md:gap-2.5">
           <Disc3 className="h-5 w-5 text-violet-400 md:h-6 md:w-6" />
           <div>
