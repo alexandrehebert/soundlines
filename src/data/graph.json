@@ -12996,6 +12996,114 @@
       "sources": [
         "https://en.wikipedia.org/wiki/Auto-Tune"
       ]
+    },
+    {
+      "id": "instrument:sarod",
+      "type": "instrument",
+      "name": "Sarod",
+      "family": "strings",
+      "period": {
+        "start": 1820,
+        "precision": "circa"
+      },
+      "description": "A fretless, plucked North Indian lute that took shape from the Afghan rubab in the early 19th century. Its sustained, sliding notes became a major voice in Hindustani instrumental music.",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/500717",
+        "https://www.metmuseum.org/zh/essays/musical-instruments-of-the-indian-subcontinent"
+      ]
+    },
+    {
+      "id": "instrument:harmonium",
+      "type": "instrument",
+      "name": "Harmonium",
+      "family": "keyboards",
+      "period": {
+        "start": 1840,
+        "precision": "circa"
+      },
+      "description": "A free-reed keyboard instrument adapted in South Asia as a portable, hand-pumped accompaniment. It became a defining melodic support in qawwali ensembles and other vocal traditions.",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1526",
+        "https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian"
+      ]
+    },
+    {
+      "id": "instrument:timbales",
+      "type": "instrument",
+      "name": "Timbales",
+      "family": "percussion",
+      "period": {
+        "start": 1900,
+        "precision": "circa"
+      },
+      "description": "A pair of shallow, single-headed metal drums adapted in Cuba from 19th-century kettledrums. Their portable form developed in charanga ensembles around the turn of the 20th century and became a signature sound in salsa and Latin jazz.",
+      "sources": [
+        "https://www.americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary",
+        "https://www.pbs.org/buenavista/music/a_timbales.html",
+        "https://www.pbs.org/buenavista/music/a_charanga.html",
+        "https://music.si.edu/object-day/tito-puentes-timbales"
+      ]
+    },
+    {
+      "id": "instrument:charango",
+      "type": "instrument",
+      "name": "Charango",
+      "family": "strings",
+      "period": {
+        "start": 1700,
+        "precision": "circa"
+      },
+      "description": "A small fretted Andean lute shaped through Indigenous and Spanish instrument-making traditions, known in the Andes by the early 18th century. It is a bright rhythmic and melodic voice in Andean folk music.",
+      "sources": [
+        "https://www.metmuseum.org/pt/perspectives/curator-interview-armadilloshell-charango-or-jarana",
+        "https://guides.loc.gov/indigenous-andes-folklife/music"
+      ]
+    },
+    {
+      "id": "instrument:quena",
+      "type": "instrument",
+      "name": "Quena",
+      "family": "winds",
+      "period": {
+        "start": 1500,
+        "precision": "circa"
+      },
+      "description": "An end-blown Andean flute with deep pre-Columbian roots; sixteenth-century accounts document Indigenous Andean flutes, while the quena remains a prominent voice in Andean folk and nueva canción.",
+      "sources": [
+        "https://guides.loc.gov/indigenous-andes-folklife/music",
+        "https://folkways.si.edu/la-nueva-cancion-new-song-movement-south-america/latin-world-struggle-protest/music/article/smithsonian",
+        "https://www.metmuseum.org/it/essays/music-in-the-ancient-andes"
+      ]
+    },
+    {
+      "id": "artist:farrukh-fateh-ali-khan",
+      "type": "artist",
+      "name": "Farrukh Fateh Ali Khan",
+      "kind": "person",
+      "family": "classical",
+      "period": {
+        "start": 1970,
+        "end": 2003,
+        "precision": "decade"
+      },
+      "sources": [
+        "https://realworldrecords.com/releases/body-and-soul/",
+        "https://nusratonline.com/the-ensemble-composition/"
+      ]
+    },
+    {
+      "id": "artist:juan-flores",
+      "type": "artist",
+      "name": "Juan Flores",
+      "kind": "person",
+      "family": "latin",
+      "period": {
+        "start": 2002,
+        "precision": "year"
+      },
+      "sources": [
+        "https://compassrecords.com/artist/inti-illimani/"
+      ]
     }
   ],
   "edges": [
@@ -23602,6 +23710,133 @@
       "note": "The guitar's exact ancestry is debated; it shares the lute's fretted, plucked design through the gittern and vihuela.",
       "sources": [
         "https://en.wikipedia.org/wiki/Guitar"
+      ]
+    },
+    {
+      "id": "featured:sarod-hindustani-classical",
+      "type": "featured_in",
+      "from": "instrument:sarod",
+      "to": "genre:hindustani-classical",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/500717",
+        "https://www.metmuseum.org/zh/essays/musical-instruments-of-the-indian-subcontinent"
+      ]
+    },
+    {
+      "id": "featured:harmonium-qawwali",
+      "type": "featured_in",
+      "from": "instrument:harmonium",
+      "to": "genre:qawwali",
+      "sources": [
+        "https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian",
+        "https://elischolar.library.yale.edu/yjmr/vol8/iss2/1/"
+      ]
+    },
+    {
+      "id": "featured:timbales-salsa",
+      "type": "featured_in",
+      "from": "instrument:timbales",
+      "to": "genre:salsa",
+      "sources": [
+        "https://home.nps.gov/articles/000/salsa-is-more-than-salsa.htm",
+        "https://music.si.edu/object-day/tito-puentes-timbales"
+      ]
+    },
+    {
+      "id": "featured:timbales-latin-jazz",
+      "type": "featured_in",
+      "from": "instrument:timbales",
+      "to": "genre:latin-jazz",
+      "sources": [
+        "https://www.americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary",
+        "https://music.si.edu/object-day/tito-puentes-timbales"
+      ]
+    },
+    {
+      "id": "featured:charango-andean-folk",
+      "type": "featured_in",
+      "from": "instrument:charango",
+      "to": "genre:andean-folk",
+      "sources": [
+        "https://guides.loc.gov/indigenous-andes-folklife/music",
+        "https://folkways.si.edu/la-nueva-cancion-new-song-movement-south-america/latin-world-struggle-protest/music/article/smithsonian"
+      ]
+    },
+    {
+      "id": "featured:quena-andean-folk",
+      "type": "featured_in",
+      "from": "instrument:quena",
+      "to": "genre:andean-folk",
+      "sources": [
+        "https://guides.loc.gov/indigenous-andes-folklife/music",
+        "https://folkways.si.edu/la-nueva-cancion-new-song-movement-south-america/latin-world-struggle-protest/music/article/smithsonian"
+      ]
+    },
+    {
+      "id": "plays:ali-akbar-khan-sarod",
+      "type": "plays",
+      "from": "artist:ali-akbar-khan",
+      "to": "instrument:sarod",
+      "sources": [
+        "https://www.arts.gov/honors/heritage/ali-akbar-khan",
+        "https://aliakbarkhan.com/the-maestro/"
+      ]
+    },
+    {
+      "id": "plays:farrukh-fateh-ali-khan-harmonium",
+      "type": "plays",
+      "from": "artist:farrukh-fateh-ali-khan",
+      "to": "instrument:harmonium",
+      "sources": [
+        "https://realworldrecords.com/releases/body-and-soul/",
+        "https://nusratonline.com/the-ensemble-composition/"
+      ]
+    },
+    {
+      "id": "plays:tito-puente-timbales",
+      "type": "plays",
+      "from": "artist:tito-puente",
+      "to": "instrument:timbales",
+      "sources": [
+        "https://music.si.edu/object-day/tito-puentes-timbales",
+        "https://sova.si.edu/record/nmah.ac.0894"
+      ]
+    },
+    {
+      "id": "plays:juan-flores-charango",
+      "type": "plays",
+      "from": "artist:juan-flores",
+      "to": "instrument:charango",
+      "sources": [
+        "https://compassrecords.com/artist/inti-illimani/"
+      ]
+    },
+    {
+      "id": "plays:juan-flores-quena",
+      "type": "plays",
+      "from": "artist:juan-flores",
+      "to": "instrument:quena",
+      "sources": [
+        "https://compassrecords.com/artist/inti-illimani/"
+      ]
+    },
+    {
+      "id": "plays:bob-marley-guitar",
+      "type": "plays",
+      "from": "artist:bob-marley",
+      "to": "instrument:guitar",
+      "sources": [
+        "https://jis.gov.jm/information/famous-jamaicans/robert-nesta-marley/"
+      ]
+    },
+    {
+      "id": "plays:fela-kuti-saxophone",
+      "type": "plays",
+      "from": "artist:fela-kuti",
+      "to": "instrument:saxophone",
+      "sources": [
+        "https://apnews.com/article/8f55a53a7538b7006ec9752d0f969750",
+        "https://www.trinitylaban.ac.uk/about-us/our-history/fela-kuti/"
       ]
     }
   ]

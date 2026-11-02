@@ -26,8 +26,8 @@ rejected.**
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 696 nodes (169 genres, 459 artists, 37 instruments, 7 labels,
-6 places, 14 tracks, 4 scenes) and 1064 edges.
+Current size: 703 nodes (169 genres, 461 artists, 42 instruments, 7 labels,
+6 places, 14 tracks, 4 scenes) and 1077 edges.
 
 ---
 
@@ -125,11 +125,11 @@ are not valid for instruments, and instrument families are not valid for other n
 
 | family       | Label               | Current examples |
 |--------------|---------------------|------------------|
-| `strings`    | Strings             | koto, lute, guitar, violin, double bass, banjo, sitar, electric guitar, electric bass |
-| `keyboards`  | Keyboards & Organs  | harpsichord, piano, Hammond organ, electric piano |
-| `winds`      | Woodwinds & Reeds   | recorder, clarinet, harmonica, accordion, saxophone, bandoneon |
+| `strings`    | Strings             | koto, lute, guitar, violin, double bass, banjo, sitar, sarod, charango, electric guitar, electric bass |
+| `keyboards`  | Keyboards & Organs  | harpsichord, piano, Hammond organ, electric piano, harmonium |
+| `winds`      | Woodwinds & Reeds   | recorder, clarinet, harmonica, accordion, saxophone, bandoneon, quena |
 | `brass`      | Brass               | trombone, valved trumpet, tuba |
-| `percussion` | Percussion          | tabla, conga, drum kit, vibraphone, steelpan |
+| `percussion` | Percussion          | tabla, conga, drum kit, vibraphone, steelpan, timbales |
 | `electronic` | Electronic & Studio | theremin, modular synthesizer, Minimoog, turntables, sampler, TR-808, TB-303, TR-909, Auto-Tune |
 
 Instrument ids use the generic name unless a specific model defines the sound

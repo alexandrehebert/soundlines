@@ -145,6 +145,57 @@ describe('graph.json integrity', () => {
     }
   })
 
+  it.each([
+    {
+      instrument: 'instrument:sarod',
+      family: 'strings',
+      genres: ['genre:hindustani-classical'],
+      artists: ['artist:ali-akbar-khan'],
+    },
+    {
+      instrument: 'instrument:harmonium',
+      family: 'keyboards',
+      genres: ['genre:qawwali'],
+      artists: ['artist:farrukh-fateh-ali-khan'],
+    },
+    {
+      instrument: 'instrument:timbales',
+      family: 'percussion',
+      genres: ['genre:salsa', 'genre:latin-jazz'],
+      artists: ['artist:tito-puente'],
+    },
+    {
+      instrument: 'instrument:charango',
+      family: 'strings',
+      genres: ['genre:andean-folk'],
+      artists: ['artist:juan-flores'],
+    },
+    {
+      instrument: 'instrument:quena',
+      family: 'winds',
+      genres: ['genre:andean-folk'],
+      artists: ['artist:juan-flores'],
+    },
+  ])('shows $instrument on the timeline and links its genres and players', ({
+    instrument, family, genres, artists,
+  }) => {
+    const index = buildIndex(graph)
+    expect(index.nodeById.get(instrument)).toMatchObject({ type: 'instrument', family })
+    const model = createTimelineModel(index, 'instrument')
+    expect(model.lanes.find((lane) => lane.family === family)?.bars.some((bar) => bar.node.id === instrument))
+      .toBe(true)
+    for (const genre of genres) {
+      expect(index.outEdges.get(instrument)).toEqual(expect.arrayContaining([
+        expect.objectContaining({ type: 'featured_in', to: genre }),
+      ]))
+    }
+    for (const artist of artists) {
+      expect(index.outEdges.get(artist)).toEqual(expect.arrayContaining([
+        expect.objectContaining({ type: 'plays', to: instrument }),
+      ]))
+    }
+  })
+
   it('traces instrument lineage on the instrument timeline only', () => {
     const index = createTimelineModel(buildIndex(graph), 'instrument').index
     expect(index.graph.nodes.every((node) => node.type === 'instrument')).toBe(true)
