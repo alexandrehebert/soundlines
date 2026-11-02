@@ -13506,6 +13506,1877 @@
         "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1808",
         "https://www.yamaha.com/en/musical_instrument_guide/violin/structure/structure004.html"
       ]
+    },
+    {
+      "id": "place:bronx",
+      "type": "place",
+      "name": "The Bronx",
+      "description": "New York City borough where hip-hop first developed as a neighborhood-based culture in the 1970s, shaped by Black, Latino, and Caribbean youth.",
+      "sources": [
+        "https://nmaahc.si.edu/explore/stories/hip-hop-bronx",
+        "https://timeline.carnegiehall.org/genres/rap-hip-hop"
+      ]
+    },
+    {
+      "id": "place:new-orleans",
+      "type": "place",
+      "name": "New Orleans",
+      "description": "Louisiana port city whose African American musical communities and distinctive cultural history were central to early jazz.",
+      "sources": [
+        "https://www.nps.gov/jazz/learn/historyculture/history_early.htm",
+        "https://www.neworleansjazzmuseum.org/stories/birthplace-of-jazz-new-orleans"
+      ]
+    },
+    {
+      "id": "place:jamaica",
+      "type": "place",
+      "name": "Jamaica",
+      "description": "Caribbean island whose musical traditions include mento, ska, rocksteady, reggae, dub, and dancehall; these forms developed through local practice and transnational exchange.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398",
+        "https://www.smithsonianmag.com/travel/jamaica-music-and-performing-arts-17745080/"
+      ]
+    },
+    {
+      "id": "place:kingston",
+      "type": "place",
+      "name": "Kingston",
+      "description": "Jamaica’s capital and a central site in the development of reggae and its sound-system culture; UNESCO identifies western Kingston as a key cultural space for reggae’s emergence.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398",
+        "https://www.si.edu/object/archives/components/sova-acma-03-027-ref1934"
+      ]
+    },
+    {
+      "id": "place:bristol",
+      "type": "place",
+      "name": "Bristol",
+      "description": "English port city whose interconnected Black British, Caribbean, punk, hip-hop, and sound-system cultures shaped several generations of local music, including the Bristol sound often called trip-hop.",
+      "sources": [
+        "https://www.theguardian.com/music/2016/feb/12/reggae-riots-history-bristol-music-scene-gilles-peterson",
+        "https://www.britishcouncil.org.il/en/rewind-bristol"
+      ]
+    },
+    {
+      "id": "place:seattle",
+      "type": "place",
+      "name": "Seattle",
+      "description": "Pacific Northwest city with a long-standing local music network; its 1980s underground rock scene became internationally associated with grunge, while Sub Pop helped circulate some of its groups.",
+      "sources": [
+        "https://www.seattle.gov/economic-development/key-industries/creative-industries/nightlife-and-music/seattle-music-history",
+        "https://www.mopop.org/experience/puget-sound-stories"
+      ]
+    },
+    {
+      "id": "place:manchester",
+      "type": "place",
+      "name": "Manchester",
+      "description": "Northern English city whose post-punk, independent-label, club, and dance histories include Factory Records, the Haçienda, and the Madchester era.",
+      "sources": [
+        "https://www.factorymanchester.com/history/",
+        "https://www.mdmarchive.co.uk/biography/7086/"
+      ]
+    },
+    {
+      "id": "place:lagos",
+      "type": "place",
+      "name": "Lagos",
+      "description": "Nigerian megacity central to the late-1960s emergence and subsequent performance history of Afrobeat, including Fela Kuti’s politically engaged club and band culture.",
+      "sources": [
+        "https://eprints-prod-01.library.pitt.edu/10261/",
+        "https://www.si.edu/object/siris_sil_773265"
+      ]
+    },
+    {
+      "id": "place:rio-de-janeiro",
+      "type": "place",
+      "name": "Rio de Janeiro",
+      "description": "Brazilian city where bossa nova emerged in the late 1950s through musicians combining samba-based practice with jazz and new approaches to guitar, harmony, and song.",
+      "sources": [
+        "https://www.abc.net.au/rn/features/bossanova/about.htm",
+        "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bossa-nova"
+      ]
+    },
+    {
+      "id": "place:wigan",
+      "type": "place",
+      "name": "Wigan",
+      "description": "English town whose Casino became a defining venue in the British Northern Soul scene from 1973 until its closure in 1981.",
+      "sources": [
+        "https://www.wiganlocalhistory.org/articles/did-wigan-have-a-northern-soul",
+        "https://northernsoul.foundation/history/"
+      ]
+    },
+    {
+      "id": "scene:bronx-hip-hop",
+      "type": "scene",
+      "name": "South Bronx hip-hop scene",
+      "period": {
+        "start": 1973,
+        "end": 1980,
+        "precision": "circa"
+      },
+      "description": "A neighborhood-rooted cultural movement built by Black, Latino, and West Indian teenagers through DJing, MCing, dance, and visual art. Its early history is community-based and should not be reduced to a single inventor or party.",
+      "sources": [
+        "https://nmaahc.si.edu/explore/stories/hip-hop-bronx",
+        "https://timeline.carnegiehall.org/genres/rap-hip-hop"
+      ]
+    },
+    {
+      "id": "scene:cbgb",
+      "type": "scene",
+      "name": "CBGB",
+      "period": {
+        "start": 1973,
+        "end": 2006,
+        "precision": "year"
+      },
+      "description": "Manhattan club that became a crucial performance room for downtown punk, new wave, and later hardcore. Its history includes a wider range of underground music than the punk label alone suggests.",
+      "sources": [
+        "https://www.cbgb.com/pages/cbgb-history",
+        "https://mappingnyc.mcny.org/o/mcny/s/b19c5dbd-bc02-4d46-83ee-e9de08c514df"
+      ]
+    },
+    {
+      "id": "scene:studio-54",
+      "type": "scene",
+      "name": "Studio 54",
+      "period": {
+        "start": 1977,
+        "end": 1980,
+        "precision": "year"
+      },
+      "description": "New York discotheque whose first period made it a globally visible symbol of disco-era nightlife, celebrity culture, and DJ-centered dancing. The club’s broader venue history continued after its initial 1980 closure.",
+      "sources": [
+        "https://www.pbs.org/wgbh/americanexperience/features/war-disco-glimpse-glamorous-world-studio-54/",
+        "https://www.history.com/this-day-in-history/april-26/studio-54-opens"
+      ]
+    },
+    {
+      "id": "scene:hacienda",
+      "type": "scene",
+      "name": "The Haçienda",
+      "period": {
+        "start": 1982,
+        "end": 1997,
+        "precision": "year"
+      },
+      "description": "Manchester nightclub operated by Factory Records. It connected post-punk, Black club traditions, house, acid house, and rave culture across its fifteen-year life.",
+      "sources": [
+        "https://fac51-thehacienda.com/about/",
+        "https://www.mdmarchive.co.uk/biography/7086/"
+      ]
+    },
+    {
+      "id": "scene:wigan-casino",
+      "type": "scene",
+      "name": "Wigan Casino",
+      "period": {
+        "start": 1973,
+        "end": 1981,
+        "precision": "year"
+      },
+      "description": "Northern Soul all-nighter venue whose dancers, DJs, and rare-soul record culture made it a defining British club scene; its importance should not be mistaken for the whole Northern Soul movement.",
+      "sources": [
+        "https://www.wiganlocalhistory.org/articles/did-wigan-have-a-northern-soul",
+        "https://northernsoul.foundation/history/"
+      ]
+    },
+    {
+      "id": "scene:bristol-sound",
+      "type": "scene",
+      "name": "Bristol sound",
+      "period": {
+        "start": 1980,
+        "end": 1999,
+        "precision": "circa"
+      },
+      "description": "A loose, internally varied network of Bristol musicians and sound-system practitioners drawing on reggae, dub, hip-hop, punk, and electronic music. “Trip-hop” became a common outside label, while some Bristol artists preferred “Bristol sound.”",
+      "sources": [
+        "https://www.theguardian.com/music/2016/feb/12/reggae-riots-history-bristol-music-scene-gilles-peterson",
+        "https://www.vam.ac.uk/articles/the-music-is-black-large-print-guide"
+      ]
+    },
+    {
+      "id": "scene:seattle-grunge",
+      "type": "scene",
+      "name": "Seattle underground rock scene",
+      "period": {
+        "start": 1985,
+        "end": 1994,
+        "precision": "circa"
+      },
+      "description": "A locally connected rock scene spanning independent labels, clubs, and bands whose sound drew on punk, metal, and other regional influences. “Grunge” later became a media and industry category, not a complete description of Seattle music.",
+      "sources": [
+        "https://www.seattle.gov/economic-development/key-industries/creative-industries/nightlife-and-music/seattle-music-history",
+        "https://www.historylink.org/file/2374"
+      ]
+    },
+    {
+      "id": "scene:kingston-reggae",
+      "type": "scene",
+      "name": "Kingston reggae and sound-system culture",
+      "period": {
+        "start": 1960,
+        "end": 1980,
+        "precision": "circa"
+      },
+      "description": "A layered Kingston-centered history of Jamaican recording, sound systems, studio practice, and performance. Reggae grew from earlier Jamaican forms and cross-border musical exchange rather than from a single venue or individual.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398",
+        "https://www.si.edu/object/archives/components/sova-acma-03-027-ref1934"
+      ]
+    },
+    {
+      "id": "label:motown",
+      "type": "label",
+      "name": "Motown Records",
+      "period": {
+        "start": 1959
+      },
+      "description": "Detroit label founded by Berry Gordy as part of a Black-owned music business that developed a distinctive, highly organized soul and pop production system. The label’s roster and sound helped bring its artists to broad national and international audiences.",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/motown-records",
+        "https://www.motownmuseum.org/about/"
+      ]
+    },
+    {
+      "id": "label:blue-note",
+      "type": "label",
+      "name": "Blue Note Records",
+      "period": {
+        "start": 1939
+      },
+      "description": "New York jazz label founded by Alfred Lion, whose recording program documented successive currents from boogie-woogie and early jazz through bebop, hard bop, and later styles.",
+      "sources": [
+        "https://www.bluenote.com/blue-note-80-2019-year-in-review/",
+        "https://www.bluenote.com/blue-note-records-celebrates-85th-anniversary/"
+      ]
+    },
+    {
+      "id": "label:def-jam",
+      "type": "label",
+      "name": "Def Jam Recordings",
+      "period": {
+        "start": 1984
+      },
+      "description": "New York label founded by Rick Rubin and Russell Simmons, initially built around emerging hip-hop and punk-informed independent practice; its roster later spanned multiple popular music styles.",
+      "sources": [
+        "https://www.umgcatalog.com/labels/def-jam-recordings/",
+        "https://www.universalmusic.com/label/def-jam/"
+      ]
+    },
+    {
+      "id": "label:sub-pop",
+      "type": "label",
+      "name": "Sub Pop",
+      "period": {
+        "start": 1988
+      },
+      "description": "Seattle independent label founded by Bruce Pavitt and Jonathan Poneman. Its early releases and promotional work helped bring several Northwest bands, including Nirvana and Mudhoney, to wider attention; it did not create the scene it marketed.",
+      "sources": [
+        "https://www.subpop.com/about",
+        "https://www.mopop.org/experience/puget-sound-stories"
+      ]
+    },
+    {
+      "id": "label:warp",
+      "type": "label",
+      "name": "Warp Records",
+      "period": {
+        "start": 1989
+      },
+      "description": "Independent label founded in Sheffield that became an important home for electronic, experimental, and later cross-genre work. Its catalog includes artists such as Aphex Twin, Autechre, and Squarepusher.",
+      "sources": [
+        "https://sheffieldmusicarchive.co.uk/cp-books/warp-labels-unlimited/"
+      ]
+    },
+    {
+      "id": "label:factory-records",
+      "type": "label",
+      "name": "Factory Records",
+      "period": {
+        "start": 1978,
+        "end": 1992
+      },
+      "description": "Manchester independent label associated with Joy Division, New Order, A Certain Ratio, and Happy Mondays. Its work extended beyond releasing records into visual identity, club culture, and the Haçienda; the original company became insolvent in 1992.",
+      "sources": [
+        "https://www.factorymanchester.com/history/",
+        "https://collection.sciencemuseumgroup.org.uk/people/cp153720",
+        "https://www.theguardian.com/culture/2000/jan/12/artsfeatures.tonywilson"
+      ]
+    },
+    {
+      "id": "label:island-records",
+      "type": "label",
+      "name": "Island Records",
+      "period": {
+        "start": 1959
+      },
+      "description": "Record label started by Chris Blackwell in Jamaica, initially releasing Jamaican music before expanding internationally and moving its base to London in the early 1960s.",
+      "sources": [
+        "https://www.islandrecords.com/pages/about",
+        "https://www.islandrecords.co.uk/history-backup/"
+      ]
+    },
+    {
+      "id": "place:sheffield",
+      "type": "place",
+      "name": "Sheffield",
+      "description": "Northern English city where Warp Records was founded in 1989; the label later developed an international catalog across electronic and experimental music.",
+      "sources": [
+        "https://sheffieldmusicarchive.co.uk/cp-books/warp-labels-unlimited/"
+      ]
+    },
+    {
+      "id": "place:paris",
+      "type": "place",
+      "name": "Paris",
+      "description": "French capital and a central meeting, club and label hub for the French Touch. The movement developed through overlapping Paris and Versailles networks.",
+      "sources": [
+        "https://www.francemusic.com/french-touch-guide/",
+        "https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en"
+      ]
+    },
+    {
+      "id": "place:versailles",
+      "type": "place",
+      "name": "Versailles",
+      "description": "City west of Paris whose school and friendship networks produced several central French Touch acts, including Air and Phoenix; this is a regional contribution, not an exclusive origin claim.",
+      "sources": [
+        "https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en",
+        "https://www.versaillesgrandparc.fr/fileadmin/user_upload/gestion_doc/Fichiers_Documents_administratifs/Decisons/Decisions_2024/DECIS_dB.2024.065_Festival_ElectroChic_-_billeteries_en_ligne.pdf"
+      ]
+    },
+    {
+      "id": "place:grenoble",
+      "type": "place",
+      "name": "Grenoble",
+      "description": "French Alpine city and birthplace of DJ and producer Miss Kittin.",
+      "sources": [
+        "https://www.insomniac.com/music/artists/miss-kittin/"
+      ]
+    },
+    {
+      "id": "place:memphis",
+      "type": "place",
+      "name": "Memphis",
+      "description": "Tennessee city with a major blues, soul and rock recording history, including Sun and Stax; musicians from across the South helped shape its sound.",
+      "sources": [
+        "https://www.memphistravel.com/music",
+        "https://staxmuseum.com/stax-records/",
+        "https://www.sunrecords.com/about"
+      ]
+    },
+    {
+      "id": "place:nashville",
+      "type": "place",
+      "name": "Nashville",
+      "description": "Tennessee music center whose recording, publishing and broadcast networks became central to country music; it is one hub within a broader Southern tradition.",
+      "sources": [
+        "https://www.visitmusiccity.com/music"
+      ]
+    },
+    {
+      "id": "place:atlanta",
+      "type": "place",
+      "name": "Atlanta",
+      "description": "Georgia city whose hip-hop scene grew through local independent tapes, radio, clubs and studios, with OutKast among its defining acts.",
+      "sources": [
+        "https://www.gpb.org/news/2023/07/19/how-atlanta-became-the-center-of-the-rap-universe"
+      ]
+    },
+    {
+      "id": "place:houston",
+      "type": "place",
+      "name": "Houston",
+      "description": "Texas city with a distinct hip-hop tradition; DJ Screw’s slowed, repeated mixtape production helped define chopped and screwed.",
+      "sources": [
+        "https://exhibits.lib.uh.edu/s/exhibits/page/dj-screw"
+      ]
+    },
+    {
+      "id": "place:oakland",
+      "type": "place",
+      "name": "Oakland",
+      "description": "California city within the wider San Francisco Bay Area, strongly associated with hyphy and Bay Area rap.",
+      "sources": [
+        "https://newsroom.spotify.com/2021-06-23/in-honor-of-black-music-month-spotify-for-the-record-explores-go-go-hyphy-and-chopped-and-screwed/",
+        "https://www.kqed.org/arts/13910588/hyphy-music-bay-area"
+      ]
+    },
+    {
+      "id": "place:compton",
+      "type": "place",
+      "name": "Compton",
+      "description": "Los Angeles County city central to the formation of N.W.A. and the Ruthless Records story. The link identifies a major local lineage, not a claim that one city created gangsta rap.",
+      "sources": [
+        "https://www.comptonmuseum.org/exhibitions/nwa-and-compton",
+        "https://www.nmaahc.si.edu/explore/stories/hip-hop-west-coast"
+      ]
+    },
+    {
+      "id": "place:los-angeles",
+      "type": "place",
+      "name": "Los Angeles",
+      "description": "Southern California music center with a major West Coast hip-hop and record-industry history.",
+      "sources": [
+        "https://www.nmaahc.si.edu/explore/stories/hip-hop-west-coast"
+      ]
+    },
+    {
+      "id": "place:san-francisco",
+      "type": "place",
+      "name": "San Francisco",
+      "description": "California city and an important center of the 1960s psychedelic rock counterculture, including the Haight-Ashbury scene.",
+      "sources": [
+        "https://www.dead.net/features/featured-profiles/san-francisco-1967",
+        "https://www.nps.gov/goga/learn/historyculture/haight-ashbury.htm"
+      ]
+    },
+    {
+      "id": "place:minneapolis",
+      "type": "place",
+      "name": "Minneapolis",
+      "description": "Minnesota city whose studio, club and musician networks helped Prince develop the Minneapolis Sound.",
+      "sources": [
+        "https://mn.gov/admin/shpo/architectural-history/minneapolis-sound/",
+        "https://www.minneapolis.org/blog/minneapolis-sound/"
+      ]
+    },
+    {
+      "id": "place:liverpool",
+      "type": "place",
+      "name": "Liverpool",
+      "description": "Port city whose postwar popular music scene, including the Beatles and the Cavern Club, became internationally influential.",
+      "sources": [
+        "https://www.cavernclub.com/history/",
+        "https://www.unesco.org/en/creative-cities/liverpool?hub=80094"
+      ]
+    },
+    {
+      "id": "place:birmingham",
+      "type": "place",
+      "name": "Birmingham",
+      "description": "English city where Black Sabbath formed; its industrial setting is one part of the band’s history and not a complete explanation for heavy metal.",
+      "sources": [
+        "https://visitbirmingham.com/blog/post/it-starts-here-how-the-west-midlands-shaped-global-music/"
+      ]
+    },
+    {
+      "id": "place:glasgow",
+      "type": "place",
+      "name": "Glasgow",
+      "description": "Scottish city with a major music ecosystem and the formation point for Mogwai.",
+      "sources": [
+        "https://www.unesco.org/en/creative-cities/glasgow",
+        "https://mogwai.scot/biography/"
+      ]
+    },
+    {
+      "id": "place:cologne",
+      "type": "place",
+      "name": "Cologne",
+      "description": "German city whose record shops, producers and labels shaped the “Sound of Cologne” and later minimal techno networks.",
+      "sources": [
+        "https://artsandculture.google.com/story/the-history-of-kompakt-kompakt/bAWxxTH2nWDhnQ?hl=en",
+        "https://kompakt.fm/about"
+      ]
+    },
+    {
+      "id": "place:frankfurt",
+      "type": "place",
+      "name": "Frankfurt",
+      "description": "German city that became a major early techno center, with clubs and DJs including Omen and Sven Väth.",
+      "sources": [
+        "https://www.dw.com/en/frankfurt-techno/a-44865726",
+        "https://www.omen-frankfurt.de/history"
+      ]
+    },
+    {
+      "id": "place:accra",
+      "type": "place",
+      "name": "Accra",
+      "description": "Ghanaian capital and a major center in the history and continuing practice of highlife music.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/highlife-music-and-dance-02141?RL=02141",
+        "https://www.si.edu/object/siris_sil_773265"
+      ]
+    },
+    {
+      "id": "place:kinshasa",
+      "type": "place",
+      "name": "Kinshasa",
+      "description": "Capital of the Democratic Republic of the Congo and a cradle of Congolese rumba, with pioneering recording studios and bands.",
+      "sources": [
+        "https://www.unesco.org/en/creative-cities/kinshasa",
+        "https://ich.unesco.org/en/RL/congolese-rumba-01711?RL=01711"
+      ]
+    },
+    {
+      "id": "place:brazzaville",
+      "type": "place",
+      "name": "Brazzaville",
+      "description": "Capital of the Republic of the Congo and a key city in Congolese rumba’s shared history with Kinshasa.",
+      "sources": [
+        "https://www.unesco.org/en/creative-cities/brazzaville",
+        "https://ich.unesco.org/en/RL/congolese-rumba-01711?RL=01711"
+      ]
+    },
+    {
+      "id": "place:johannesburg",
+      "type": "place",
+      "name": "Johannesburg",
+      "description": "South African metropolis whose townships and club networks were central to the emergence of kwaito.",
+      "sources": [
+        "https://www.sahistory.org.za/article/kwaito-south-african-urban-music",
+        "https://www.theguardian.com/music/2012/jul/26/kwaito-south-africa-music"
+      ]
+    },
+    {
+      "id": "place:durban",
+      "type": "place",
+      "name": "Durban",
+      "description": "South African coastal city where gqom emerged from local dance and club culture.",
+      "sources": [
+        "https://www.theguardian.com/music/2016/sep/15/gqom-durban-south-african-house-music",
+        "https://ra.co/features/2676"
+      ]
+    },
+    {
+      "id": "place:chennai",
+      "type": "place",
+      "name": "Chennai",
+      "description": "South Indian city and a major public center for Carnatic concerts, especially the annual December music season; Carnatic music has a much wider regional history.",
+      "sources": [
+        "https://sangeetnatak.gov.in/public/uploads/announcements/165693456768d344ca86529carnatic_music.pdf"
+      ]
+    },
+    {
+      "id": "place:seoul",
+      "type": "place",
+      "name": "Seoul",
+      "description": "South Korean capital and a central production, management and media hub for contemporary K-pop.",
+      "sources": [
+        "https://www.loc.gov/item/2020445487/",
+        "https://www.vam.ac.uk/articles/a-history-of-k-pop"
+      ]
+    },
+    {
+      "id": "place:tokyo",
+      "type": "place",
+      "name": "Tokyo",
+      "description": "Japanese capital and the home base for Pizzicato Five, one of the best-known Shibuya-kei acts.",
+      "sources": [
+        "https://www.sonymusic.co.jp/artist/PizzicatoFive/profile/",
+        "https://www.nippon.com/en/japan-topics/g01073/"
+      ]
+    },
+    {
+      "id": "place:buenos-aires",
+      "type": "place",
+      "name": "Buenos Aires",
+      "description": "Argentine capital and one of tango’s foundational urban centers, in a cultural region shared with Montevideo.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/tango-00258",
+        "https://buenosaires.gob.ar/cultura/patrimonio-de-la-humanidad/tango"
+      ]
+    },
+    {
+      "id": "place:montevideo",
+      "type": "place",
+      "name": "Montevideo",
+      "description": "Uruguayan capital with a foundational role in tango’s shared Río de la Plata history alongside Buenos Aires.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/tango-00258"
+      ]
+    },
+    {
+      "id": "place:havana",
+      "type": "place",
+      "name": "Havana",
+      "description": "Cuban capital with a deep recorded history in son, rumba and other musical traditions; many later salsa histories also connect Cuba and New York.",
+      "sources": [
+        "https://www.si.edu/object/celia-cruz-queen-salsa%3Anmahc_2013.152.3",
+        "https://www.si.edu/exhibitions/salsa"
+      ]
+    },
+    {
+      "id": "place:san-juan",
+      "type": "place",
+      "name": "San Juan",
+      "description": "Puerto Rico’s capital and a major center for reggaeton’s development and international circulation.",
+      "sources": [
+        "https://www.si.edu/object/reggaeton%3Anmahc_2016.40.1",
+        "https://www.loc.gov/item/2020445487/"
+      ]
+    },
+    {
+      "id": "place:port-of-spain",
+      "type": "place",
+      "name": "Port of Spain",
+      "description": "Trinidad and Tobago’s capital and a major center for calypso; the tradition is rooted across Trinidad and the wider Caribbean.",
+      "sources": [
+        "https://folkways.si.edu/calypso/music/album/smithsonian",
+        "https://www.unesco.org/en/creative-cities/port-of-spain"
+      ]
+    },
+    {
+      "id": "place:santiago",
+      "type": "place",
+      "name": "Santiago",
+      "description": "Chile’s capital and a major gathering point for Nueva Canción and related folk-protest movements, with roots beyond the city.",
+      "sources": [
+        "https://www.memoriachilena.gob.cl/602/w3-article-702.html",
+        "https://www.allmusic.com/artist/inti-illimani-mn0000775105/biography"
+      ]
+    },
+    {
+      "id": "place:antofagasta",
+      "type": "place",
+      "name": "Antofagasta",
+      "description": "Northern Chilean port city where Illapu was founded in 1971.",
+      "sources": [
+        "https://www.cooperativa.cl/noticias/entretencion/musica/illapu/illapu-celebra-sus-50-anos-de-historia-con-nuevo-disco-y-concierto/2021-04-20/113449.html"
+      ]
+    },
+    {
+      "id": "place:mexico-city",
+      "type": "place",
+      "name": "Mexico City",
+      "description": "Mexican capital and metropolitan center that includes Iztapalapa, the home base of Los Ángeles Azules.",
+      "sources": [
+        "https://www.gob.mx/cultura/prensa/los-angeles-azules-embajadores-de-la-cumbia-mexicana",
+        "https://www.losangelesazules.com.mx/bio"
+      ]
+    },
+    {
+      "id": "place:santo-domingo",
+      "type": "place",
+      "name": "Santo Domingo",
+      "description": "Capital of the Dominican Republic and a key merengue center, associated with Juan Luis Guerra’s musical career.",
+      "sources": [
+        "https://www.juanguerra.com/biografia",
+        "https://www.grammy.com/artists/juan-luis-guerra/15361"
+      ]
+    },
+    {
+      "id": "place:mar-del-plata",
+      "type": "place",
+      "name": "Mar del Plata",
+      "description": "Argentine coastal city and birthplace of composer and bandoneon player Astor Piazzolla.",
+      "sources": [
+        "https://www.argentina.gob.ar/cultura/mar-del-plata-astor-piazzolla"
+      ]
+    },
+    {
+      "id": "place:varanasi",
+      "type": "place",
+      "name": "Varanasi",
+      "description": "North Indian city and birthplace of Ravi Shankar, whose career helped bring Hindustani classical music to international audiences.",
+      "sources": [
+        "https://www.sangeetnatak.gov.in/public/uploads/announcements/165693456768d344ca86529ravi_shankar.pdf",
+        "https://www.praemiumimperiale.org/en/laureate/india/shankar"
+      ]
+    },
+    {
+      "id": "place:bonn",
+      "type": "place",
+      "name": "Bonn",
+      "description": "German city where Ludwig van Beethoven was born.",
+      "sources": [
+        "https://www.beethoven.de/en/museum"
+      ]
+    },
+    {
+      "id": "place:salzburg",
+      "type": "place",
+      "name": "Salzburg",
+      "description": "Austrian city where Wolfgang Amadeus Mozart was born and grew up.",
+      "sources": [
+        "https://mozarteum.at/en/mozart-museums/mozarts-birthplace",
+        "https://mozarteum.at/en/wolfgang-amade-mozart"
+      ]
+    },
+    {
+      "id": "place:leipzig",
+      "type": "place",
+      "name": "Leipzig",
+      "description": "German city central to Johann Sebastian Bach’s later career and musical legacy.",
+      "sources": [
+        "https://www.bachmuseumleipzig.de/en/bach-museum-leipzig/bach-leipzig"
+      ]
+    },
+    {
+      "id": "place:venice",
+      "type": "place",
+      "name": "Venice",
+      "description": "Italian city where Antonio Vivaldi was born and worked for much of his career.",
+      "sources": [
+        "https://www.teatroallascala.org/it/stagione/2022-2023/concerti/invito-alla-scala/viva-vivaldi.html"
+      ]
+    },
+    {
+      "id": "place:vienna",
+      "type": "place",
+      "name": "Vienna",
+      "description": "Austrian capital and a major center of classical and Romantic music; composers from several countries built careers there.",
+      "sources": [
+        "https://www.wien.info/en/art-culture/music-stage-shows/classical-music-345730"
+      ]
+    },
+    {
+      "id": "place:warsaw",
+      "type": "place",
+      "name": "Warsaw",
+      "description": "Polish capital where Frédéric Chopin studied and launched his public career before leaving Poland.",
+      "sources": [
+        "https://chopin.museum/en/chopin-and-warsaw/"
+      ]
+    },
+    {
+      "id": "place:st-petersburg",
+      "type": "place",
+      "name": "St Petersburg",
+      "description": "Russian city whose conservatory and theaters were important to the musical education and careers of several Russian composers.",
+      "sources": [
+        "https://www.mariinsky.ru/en/about/history/",
+        "https://www.saint-petersburg.com/history/music/"
+      ]
+    },
+    {
+      "id": "place:washington-d-c",
+      "type": "place",
+      "name": "Washington, D.C.",
+      "description": "U.S. capital and birthplace of Duke Ellington, whose later career transformed New York’s Cotton Club and jazz scene.",
+      "sources": [
+        "https://www.si.edu/spotlight/duke-ellington",
+        "https://nmaahc.si.edu/explore/stories/jazz-appreciation-month-duke-ellington"
+      ]
+    },
+    {
+      "id": "place:bridgeport",
+      "type": "place",
+      "name": "Bridgeport",
+      "description": "Connecticut city where the Columbia Graphophone Company was founded in the late 1880s, before the label’s later New York history.",
+      "sources": [
+        "https://findingaids.loc.gov/repositories/11/resources/795"
+      ]
+    },
+    {
+      "id": "place:kushtia",
+      "type": "place",
+      "name": "Kushtia",
+      "description": "Bangladesh district closely associated with Baul master Lalon Shah and a living Baul community; Baul practice is dispersed across rural Bangladesh and West Bengal.",
+      "sources": [
+        "https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047",
+        "https://ich.unesco.org/en/RL/baul-songs-00107"
+      ]
+    },
+    {
+      "id": "place:goa",
+      "type": "place",
+      "name": "Goa",
+      "description": "Indian coastal state whose seasonal beach-party networks and visiting DJs helped shape Goa trance; local musicians and residents are part of this history too.",
+      "sources": [
+        "https://pure.hud.ac.uk/en/publications/dj-goa-gil-kalifornian-exile-dark-yogi-and-dreaded-anomaly/",
+        "https://dj.dancecult.net/index.php/dancecult/article/view/318"
+      ]
+    },
+    {
+      "id": "place:beijing",
+      "type": "place",
+      "name": "Beijing",
+      "description": "Chinese capital and a major performance center for Peking opera, including the career and legacy of Mei Lanfang.",
+      "sources": [
+        "https://english.beijing.gov.cn/beijinginfo/culture/culturaltreasures/cityofmuseums/list/202401/t20240116_3536780.html",
+        "https://english.beijing.gov.cn/beijinginfo/culture/beijingtownscape/memorial/202401/t20240116_3536876.html"
+      ]
+    },
+    {
+      "id": "place:tuva",
+      "type": "place",
+      "name": "Tuva",
+      "description": "Republic in southern Siberia and home to living Tuvan throat-singing traditions, including xöömei.",
+      "sources": [
+        "https://folkways.si.edu/throat-singing-unique-vocalization-three-cultures/world/music/article/smithsonian",
+        "https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/"
+      ]
+    },
+    {
+      "id": "scene:french-touch",
+      "type": "scene",
+      "name": "French Touch",
+      "description": "Paris–Versailles electronic music network in which house, disco sampling, independent labels and club culture intersected in the 1990s and 2000s. The label is an umbrella, not a single uniform sound.",
+      "sources": [
+        "https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en",
+        "https://www.francemusic.com/french-touch-guide/"
+      ],
+      "period": {
+        "start": 1993,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:atlanta-hip-hop-scene",
+      "type": "scene",
+      "name": "Atlanta hip-hop scene",
+      "description": "A locally rooted rap network shaped by independent tapes, radio, clubs and studios; its history includes OutKast, the Dungeon Family and many distinct Southern styles.",
+      "sources": [
+        "https://www.gpb.org/news/2023/07/19/how-atlanta-became-the-center-of-the-rap-universe"
+      ],
+      "period": {
+        "start": 1980,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:houston-hip-hop-scene",
+      "type": "scene",
+      "name": "Houston hip-hop scene",
+      "description": "A regional hip-hop ecosystem encompassing DJ Screw’s chopped-and-screwed mixtapes, the Screwed Up Click and other distinct local lineages.",
+      "sources": [
+        "https://exhibits.lib.uh.edu/s/exhibits/page/dj-screw"
+      ],
+      "period": {
+        "start": 1980,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:san-francisco-bay-area-hyphy-scene",
+      "type": "scene",
+      "name": "San Francisco Bay Area hyphy scene",
+      "description": "A Bay Area rap and dance movement associated with artists including E-40, Mac Dre and Keak da Sneak; it developed across cities and neighborhoods, not only Oakland.",
+      "sources": [
+        "https://newsroom.spotify.com/2021-06-23/in-honor-of-black-music-month-spotify-for-the-record-explores-go-go-hyphy-and-chopped-and-screwed/",
+        "https://www.kqed.org/arts/13910588/hyphy-music-bay-area"
+      ],
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:compton-hip-hop-scene",
+      "type": "scene",
+      "name": "Compton hip-hop scene",
+      "description": "A local hip-hop lineage associated with N.W.A. and Ruthless Records, within a much larger and varied Los Angeles-area history.",
+      "sources": [
+        "https://www.comptonmuseum.org/previous-exhibitions/sounds-of-the-city",
+        "https://www.nmaahc.si.edu/explore/stories/hip-hop-west-coast"
+      ],
+      "period": {
+        "start": 1986,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:memphis-soul-and-recording-scene",
+      "type": "scene",
+      "name": "Memphis soul and recording scene",
+      "description": "A network of studios and musicians around Sun and Stax that helped shape blues, soul and early rock recordings. The sound drew on a much wider Southern musical world.",
+      "sources": [
+        "https://www.memphistravel.com/music",
+        "https://staxmuseum.com/stax-records/",
+        "https://www.sunrecords.com/about"
+      ],
+      "period": {
+        "start": 1950,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:nashville-country-music-scene",
+      "type": "scene",
+      "name": "Nashville country music scene",
+      "description": "A recording, publishing and broadcast center for country music, built alongside regional traditions across the American South.",
+      "sources": [
+        "https://www.visitmusiccity.com/music"
+      ],
+      "period": {
+        "start": 1925,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:san-francisco-psychedelic-scene",
+      "type": "scene",
+      "name": "San Francisco psychedelic scene",
+      "description": "A 1960s countercultural music network around venues and neighborhoods including Haight-Ashbury, with the Grateful Dead and Jefferson Airplane among its acts.",
+      "sources": [
+        "https://www.dead.net/features/featured-profiles/san-francisco-1967",
+        "https://www.nps.gov/goga/learn/historyculture/haight-ashbury.htm"
+      ],
+      "period": {
+        "start": 1965,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:minneapolis-sound",
+      "type": "scene",
+      "name": "Minneapolis Sound",
+      "description": "A cross-genre studio and performance idiom associated with Prince and the musicians and venues around him in Minneapolis.",
+      "sources": [
+        "https://mn.gov/admin/shpo/architectural-history/minneapolis-sound/"
+      ],
+      "period": {
+        "start": 1978,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:merseybeat",
+      "type": "scene",
+      "name": "Merseybeat",
+      "description": "The early-1960s Liverpool beat scene, shaped by local clubs and bands including the Beatles; it was one strand of a wider British beat boom.",
+      "sources": [
+        "https://www.cavernclub.com/history/",
+        "https://www.unesco.org/en/creative-cities/liverpool?hub=80094"
+      ],
+      "period": {
+        "start": 1958,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:birmingham-heavy-metal-scene",
+      "type": "scene",
+      "name": "Birmingham heavy metal scene",
+      "description": "A group of Birmingham-area bands and venues that helped establish heavy metal, with Black Sabbath central to the early history.",
+      "sources": [
+        "https://visitbirmingham.com/blog/post/it-starts-here-how-the-west-midlands-shaped-global-music/",
+        "https://www.black-sabbath.com/theband/"
+      ],
+      "period": {
+        "start": 1968,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:glasgow-post-rock-scene",
+      "type": "scene",
+      "name": "Glasgow post-rock scene",
+      "description": "Glasgow’s independent music network around the formation of Mogwai and the later Rock Action label.",
+      "sources": [
+        "https://mogwai.scot/biography/",
+        "https://rockactionrecords.com/about/"
+      ],
+      "period": {
+        "start": 1995,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:frankfurt-techno-scene",
+      "type": "scene",
+      "name": "Frankfurt techno scene",
+      "description": "A German techno network of clubs, DJs and labels, including Omen and Sven Väth; Frankfurt was one of several important German centers.",
+      "sources": [
+        "https://www.dw.com/en/frankfurt-techno/a-44865726",
+        "https://www.omen-frankfurt.de/history"
+      ],
+      "period": {
+        "start": 1988,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:cologne-minimal-techno-scene",
+      "type": "scene",
+      "name": "Cologne minimal techno scene",
+      "description": "A Cologne electronic music network shaped by record shops, labels and producers, including Kompakt and its founders.",
+      "sources": [
+        "https://artsandculture.google.com/story/the-history-of-kompakt-kompakt/bAWxxTH2nWDhnQ?hl=en",
+        "https://kompakt.fm/about"
+      ],
+      "period": {
+        "start": 1993,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:accra-highlife-scene",
+      "type": "scene",
+      "name": "Accra highlife scene",
+      "description": "A major urban hub in a transnational Ghanaian genre whose styles and performance practices developed across communities and regions.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/highlife-music-and-dance-02141?RL=02141"
+      ],
+      "period": {
+        "start": 1950,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:congolese-rumba-scene",
+      "type": "scene",
+      "name": "Congolese rumba scene",
+      "description": "A shared musical history centered in Kinshasa and Brazzaville, shaped by local musicians, studios, dance bands and transnational exchange.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/congolese-rumba-01711?RL=01711",
+        "https://www.unesco.org/en/creative-cities/kinshasa",
+        "https://www.unesco.org/en/creative-cities/brazzaville"
+      ],
+      "period": {
+        "start": 1940,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:johannesburg-kwaito-scene",
+      "type": "scene",
+      "name": "Johannesburg kwaito scene",
+      "description": "A post-apartheid dance-music movement associated with Johannesburg’s townships and club culture; its roots and practitioners are diverse.",
+      "sources": [
+        "https://www.sahistory.org.za/article/kwaito-south-african-urban-music",
+        "https://www.theguardian.com/music/2012/jul/26/kwaito-south-africa-music"
+      ],
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:durban-gqom-scene",
+      "type": "scene",
+      "name": "Durban gqom scene",
+      "description": "A Durban-born dance music network that grew through local producers, DJs, clubs and informal circulation.",
+      "sources": [
+        "https://www.theguardian.com/music/2016/sep/15/gqom-durban-south-african-house-music",
+        "https://ra.co/features/2676"
+      ],
+      "period": {
+        "start": 2000,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:chennai-carnatic-music-season",
+      "type": "scene",
+      "name": "Chennai Carnatic music season",
+      "description": "An annual December concert season in Chennai that brings together performers and audiences from a much broader Carnatic tradition.",
+      "sources": [
+        "https://sangeetnatak.gov.in/public/uploads/announcements/165693456768d344ca86529carnatic_music.pdf"
+      ],
+      "period": {
+        "start": 1927,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:seoul-k-pop-industry",
+      "type": "scene",
+      "name": "Seoul K-pop industry",
+      "description": "A contemporary pop production and media ecosystem centered in Seoul, while K-pop artists and audiences are global and geographically diverse.",
+      "sources": [
+        "https://www.loc.gov/item/2020445487/",
+        "https://www.vam.ac.uk/articles/a-history-of-k-pop"
+      ],
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:tokyo-shibuya-kei-scene",
+      "type": "scene",
+      "name": "Tokyo Shibuya-kei scene",
+      "description": "A 1990s Tokyo pop network associated with eclectic sampling, indie record culture and groups such as Pizzicato Five.",
+      "sources": [
+        "https://www.sonymusic.co.jp/artist/PizzicatoFive/profile/",
+        "https://www.nippon.com/en/japan-topics/g01073/"
+      ],
+      "period": {
+        "start": 1980,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:rio-de-la-plata-tango-scene",
+      "type": "scene",
+      "name": "Río de la Plata tango scene",
+      "description": "A shared urban tradition around Buenos Aires and Montevideo, shaped by migration, dance, song and exchange across the estuary.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/tango-00258"
+      ],
+      "period": {
+        "start": 1880,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:havana-son-and-salsa-traditions",
+      "type": "scene",
+      "name": "Havana son and salsa traditions",
+      "description": "Cuban urban music traditions around son and related forms; later salsa movements connect Cuban musical roots with New York musicians and communities.",
+      "sources": [
+        "https://www.si.edu/object/celia-cruz-queen-salsa%3Anmahc_2013.152.3",
+        "https://www.si.edu/exhibitions/salsa"
+      ],
+      "period": {
+        "start": 1900,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:san-juan-reggaeton-scene",
+      "type": "scene",
+      "name": "San Juan reggaeton scene",
+      "description": "A Puerto Rican urban music network that helped shape reggaeton, with roots in Jamaican dancehall, Panama and local styles.",
+      "sources": [
+        "https://www.si.edu/object/reggaeton%3Anmahc_2016.40.1"
+      ],
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:port-of-spain-calypso-scene",
+      "type": "scene",
+      "name": "Port of Spain calypso scene",
+      "description": "A major calypso center within a tradition rooted in Trinidadian communities and spread across the Caribbean and diaspora.",
+      "sources": [
+        "https://folkways.si.edu/calypso/music/album/smithsonian",
+        "https://www.unesco.org/en/creative-cities/port-of-spain"
+      ],
+      "period": {
+        "start": 1900,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:chile-nueva-cancion-movement",
+      "type": "scene",
+      "name": "Chile Nueva Canción movement",
+      "description": "A politically engaged folk movement with important networks in Santiago and across Chile and Latin America.",
+      "sources": [
+        "https://www.memoriachilena.gob.cl/602/w3-article-702.html"
+      ],
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:mexican-cumbia-sonidera-scene",
+      "type": "scene",
+      "name": "Mexican cumbia sonidera scene",
+      "description": "A Mexico City sound-system and dance tradition associated with Iztapalapa and Los Ángeles Azules; cumbia itself has multiple regional histories.",
+      "sources": [
+        "https://www.gob.mx/cultura/prensa/los-angeles-azules-embajadores-de-la-cumbia-mexicana",
+        "https://www.losangelesazules.com.mx/bio"
+      ],
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:dominican-merengue-scene",
+      "type": "scene",
+      "name": "Dominican merengue scene",
+      "description": "A Dominican dance-music tradition with Santo Domingo as one central recording and performance hub.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/merengue-in-the-dominican-republic-01162",
+        "https://www.juanguerra.com/biografia"
+      ],
+      "period": {
+        "start": 1930,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:baul-music-tradition",
+      "type": "scene",
+      "name": "Baul music tradition",
+      "description": "A devotional and philosophical music practice of itinerant minstrels across rural Bangladesh and West Bengal; the tradition has no single city of origin.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/baul-songs-00107",
+        "https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047"
+      ],
+      "period": {
+        "start": 1800,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:vienna-classical-music-milieu",
+      "type": "scene",
+      "name": "Vienna classical music milieu",
+      "description": "A historically important urban center in which composers from different backgrounds worked; not a single school or exclusive origin for classical music.",
+      "sources": [
+        "https://www.wien.info/en/art-culture/music-stage-shows/classical-music-345730"
+      ],
+      "period": {
+        "start": 1750,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:goa-trance-scene",
+      "type": "scene",
+      "name": "Goa trance scene",
+      "description": "A seasonal DJ-led psychedelic dance network that developed in Goa in dialogue with travelers, local communities and international electronic music.",
+      "sources": [
+        "https://pure.hud.ac.uk/en/publications/dj-goa-gil-kalifornian-exile-dark-yogi-and-dreaded-anomaly/",
+        "https://dj.dancecult.net/index.php/dancecult/article/view/318"
+      ],
+      "period": {
+        "start": 1980,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:beijing-peking-opera-scene",
+      "type": "scene",
+      "name": "Beijing Peking opera scene",
+      "description": "A performance tradition with deep roots in Beijing, associated with artists including Mei Lanfang and many other performers and companies.",
+      "sources": [
+        "https://english.beijing.gov.cn/beijinginfo/culture/culturaltreasures/cityofmuseums/list/202401/t20240116_3536780.html"
+      ],
+      "period": {
+        "start": 1800,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:tuvan-xoomei-tradition",
+      "type": "scene",
+      "name": "Tuvan xöömei tradition",
+      "description": "A living vocal music tradition of Tuva, practiced in multiple styles and communities; Huun-Huur-Tu is one internationally known ensemble.",
+      "sources": [
+        "https://folkways.si.edu/throat-singing-unique-vocalization-three-cultures/world/music/article/smithsonian",
+        "https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/"
+      ],
+      "period": {
+        "start": 1900,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:chicago-blues-scene",
+      "type": "scene",
+      "name": "Chicago blues scene",
+      "description": "A city-centered electric blues network shaped by musicians who moved from the South and the independent labels and clubs of Chicago.",
+      "sources": [
+        "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/blues/",
+        "https://www.chessrecords.com/history/"
+      ],
+      "period": {
+        "start": 1940,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:new-orleans-jazz-scene",
+      "type": "scene",
+      "name": "New Orleans jazz scene",
+      "description": "A historically important jazz network whose musicians drew on African American, Caribbean, European and local traditions.",
+      "sources": [
+        "https://www.nps.gov/jazz/learn/historyculture/history_early.htm",
+        "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/ethnic/african-american-song/"
+      ],
+      "period": {
+        "start": 1890,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:kingston-ska-scene",
+      "type": "scene",
+      "name": "Kingston ska scene",
+      "description": "A Jamaican studio and performance network associated with early ska artists including the Skatalites and Prince Buster.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398",
+        "https://www.nationalmuseumofjamaica.org.jm/"
+      ],
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:sheffield-electronic-music-scene",
+      "type": "scene",
+      "name": "Sheffield electronic music scene",
+      "description": "A city network of post-punk, synth-pop and dance music around groups such as the Human League, Cabaret Voltaire and label Warp.",
+      "sources": [
+        "https://www.sheffield.gov.uk/libraries-archives/access-archives-local-studies-library/research-guides/music-in-sheffield",
+        "https://www.britishcouncil.org.il/en/Rewind_Sheffield_story"
+      ],
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:dusseldorf-krautrock-scene",
+      "type": "scene",
+      "name": "Düsseldorf krautrock scene",
+      "description": "A West German experimental music network associated with Kraftwerk and other groups, part of the broader and internally diverse Krautrock history.",
+      "sources": [
+        "https://www.theguardian.com/music/2020/may/25/from-germany-to-detroit-and-back-how-kraftwerk-forged-an-industrial-exchange",
+        "https://www.kraftwerk.com/history/"
+      ],
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:new-york-salsa-scene",
+      "type": "scene",
+      "name": "New York salsa scene",
+      "description": "A New York Latin music movement shaped by Caribbean migration, Cuban musical forms and local musicians, labels and dance venues.",
+      "sources": [
+        "https://www.si.edu/exhibitions/salsa",
+        "https://www.si.edu/object/celia-cruz-queen-salsa%3Anmahc_2013.152.3"
+      ],
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "label:roule",
+      "type": "label",
+      "name": "Roulé",
+      "description": "French electronic music label established by Thomas Bangalter, whose releases became part of the French Touch club network.",
+      "sources": [
+        "https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en",
+        "https://ra.co/labels/roule"
+      ],
+      "period": {
+        "start": 1995,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:crydamoure",
+      "type": "label",
+      "name": "Crydamoure",
+      "description": "French electronic label co-founded by Guy-Manuel de Homem-Christo and Éric Chedeville, closely associated with the French Touch network.",
+      "sources": [
+        "https://www.djmag.com/features/cry-damoure-daft-punk-why-the-label-still-matters",
+        "https://www.discogs.com/label/681-Crydamoure"
+      ],
+      "period": {
+        "start": 1997,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:ed-banger-records",
+      "type": "label",
+      "name": "Ed Banger Records",
+      "description": "Paris-based electronic label founded by Pedro Winter in 2003 and closely associated with a later French Touch generation.",
+      "sources": [
+        "https://becausegroup.tv/en/becausemusic/",
+        "https://ra.co/labels/ed-banger-records"
+      ],
+      "period": {
+        "start": 2003,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:source-records",
+      "type": "label",
+      "name": "Source Records",
+      "description": "French label launched within Virgin France that released early work by Air and Phoenix and helped connect French electronic/pop artists to wider audiences.",
+      "sources": [
+        "https://www.radio-cerise.fr/french-touch-1997-2003/",
+        "https://www.musicbusinessworldwide.com/source-records-relaunches-with-new-management-team-and-ambitious-growth-plans/"
+      ],
+      "period": {
+        "start": 1995,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:soma-quality-recordings",
+      "type": "label",
+      "name": "Soma Quality Recordings",
+      "description": "Independent electronic label founded in Glasgow by Slam, with an early catalogue that included Daft Punk’s “Da Funk.”",
+      "sources": [
+        "https://www.somarecords.com/about",
+        "https://www.francemusic.com/french-touch-guide/"
+      ],
+      "period": {
+        "start": 1991,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:f-communications",
+      "type": "label",
+      "name": "F Communications",
+      "description": "French electronic label founded by Éric Morand and Laurent Garnier, an important home for French techno and house.",
+      "sources": [
+        "https://www.discogs.com/label/317-F-Communications",
+        "https://www.redbullmusicacademy.com/lectures/laurent-garnier/"
+      ],
+      "period": {
+        "start": 1994,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:kitsune-musique",
+      "type": "label",
+      "name": "Kitsuné Musique",
+      "description": "Paris-based independent label and fashion/music collective founded in 2002 by Gildas Loaëc and Masaya Kuroki.",
+      "sources": [
+        "https://kitsune.fr/pages/about",
+        "https://www.discogs.com/label/59346-Kitsun%C3%A9-Music"
+      ],
+      "period": {
+        "start": 2002,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:yellow-productions",
+      "type": "label",
+      "name": "Yellow Productions",
+      "description": "French label founded by DJs Bob Sinclar and DJ Yellow, associated with French house and club music.",
+      "sources": [
+        "https://www.discogs.com/label/877-Yellow-Productions",
+        "https://www.francemusic.com/french-touch-guide/"
+      ],
+      "period": {
+        "start": 1994,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:chess-records",
+      "type": "label",
+      "name": "Chess Records",
+      "description": "Chicago record label founded by Leonard and Phil Chess; its blues and R&B catalogue includes recordings by Muddy Waters and Chuck Berry.",
+      "sources": [
+        "https://www.chessrecords.com/history/",
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/chess-records"
+      ],
+      "period": {
+        "start": 1950,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:sun-records",
+      "type": "label",
+      "name": "Sun Records",
+      "description": "Memphis label and studio founded by Sam Phillips, known for landmark blues, country and early rock recordings.",
+      "sources": [
+        "https://www.sunrecords.com/about",
+        "https://www.memphistravel.com/music"
+      ],
+      "period": {
+        "start": 1952,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:stax-records",
+      "type": "label",
+      "name": "Stax Records",
+      "description": "Memphis soul label founded as Satellite Records; its artists and house band helped create a distinctive Southern soul catalogue.",
+      "sources": [
+        "https://staxmuseum.com/stax-records/",
+        "https://www.memphistravel.com/music"
+      ],
+      "period": {
+        "start": 1957,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:ruthless-records",
+      "type": "label",
+      "name": "Ruthless Records",
+      "description": "Compton-associated label founded by Eazy-E and Jerry Heller, central to the early N.W.A. catalogue.",
+      "sources": [
+        "https://www.ruthlessrecords.com/about",
+        "https://www.comptonmuseum.org/previous-exhibitions/sounds-of-the-city"
+      ],
+      "period": {
+        "start": 1986,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:death-row-records",
+      "type": "label",
+      "name": "Death Row Records",
+      "description": "Los Angeles-area label founded in 1991 by Suge Knight, Dr. Dre and others; central to a major early-1990s West Coast rap catalogue.",
+      "sources": [
+        "https://store.deathrowpictures.com/pages/about",
+        "https://www.rockhall.com/inductees/nwa"
+      ],
+      "period": {
+        "start": 1991,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:cash-money-records",
+      "type": "label",
+      "name": "Cash Money Records",
+      "description": "New Orleans label founded by brothers Bryan “Birdman” and Ronald “Slim” Williams, later home to artists including Lil Wayne.",
+      "sources": [
+        "https://www.cashmoney-records.com/history-of-the-label/",
+        "https://www.bmi.com/news/bmi_to_honor_the_2013_bmi_r_and_b_hip_hop_awards"
+      ],
+      "period": {
+        "start": 1991,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:sire-records",
+      "type": "label",
+      "name": "Sire Records",
+      "description": "Independent label founded in New York by Seymour Stein and Richard Gottehrer; its history includes punk, new wave and pop artists.",
+      "sources": [
+        "https://www.rhino.com/article/the-history-of-sire-records",
+        "https://www.warnerrecords.com/sire-records"
+      ],
+      "period": {
+        "start": 1966,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:4ad",
+      "type": "label",
+      "name": "4AD",
+      "description": "British independent label founded in London in 1980; its catalogue includes influential alternative acts such as the Pixies.",
+      "sources": [
+        "https://4ad.com/about",
+        "https://beggars.com/labels/4ad/"
+      ],
+      "period": {
+        "start": 1980,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:rough-trade-records",
+      "type": "label",
+      "name": "Rough Trade Records",
+      "description": "Independent label and record-store network that began in London and became closely associated with post-punk and independent music.",
+      "sources": [
+        "https://www.roughtraderecords.com/about",
+        "https://www.beggars.com/history/"
+      ],
+      "period": {
+        "start": 1978,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:kompakt",
+      "type": "label",
+      "name": "Kompakt",
+      "description": "Cologne electronic music label and company that grew from local record-shop and producer networks in the 1990s.",
+      "sources": [
+        "https://kompakt.fm/about",
+        "https://artsandculture.google.com/story/the-history-of-kompakt-kompakt/bAWxxTH2nWDhnQ?hl=en"
+      ],
+      "period": {
+        "start": 1993,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:rock-action-records",
+      "type": "label",
+      "name": "Rock Action Records",
+      "description": "Glasgow label founded by members of Mogwai, supporting Scottish and international independent artists.",
+      "sources": [
+        "https://rockactionrecords.com/about",
+        "https://mogwai.scot/biography/"
+      ],
+      "period": {
+        "start": 1996,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:virgin-records",
+      "type": "label",
+      "name": "Virgin Records",
+      "description": "British label founded in London in 1972; its later roster and imprints include major French electronic acts such as Daft Punk and Air.",
+      "sources": [
+        "https://www.virginrecords.com/about/",
+        "https://www.francemusic.com/french-touch-guide/"
+      ],
+      "period": {
+        "start": 1972,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:atlantic-records",
+      "type": "label",
+      "name": "Atlantic Records",
+      "description": "New York-founded label whose long history spans blues, jazz, soul, rock and pop, including artists such as Aretha Franklin and John Coltrane.",
+      "sources": [
+        "https://www.atlanticrecords.com/",
+        "https://www.atlanticrecords.com/artists/aretha-franklin"
+      ],
+      "period": {
+        "start": 1947,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:columbia-records",
+      "type": "label",
+      "name": "Columbia Records",
+      "description": "Long-running American record label whose roots trace to the Columbia Graphophone Company in Bridgeport, Connecticut, and whose later history includes New York and a catalogue with artists such as Bob Dylan and Miles Davis.",
+      "sources": [
+        "https://findingaids.loc.gov/repositories/11/resources/795",
+        "https://www.columbiarecords.com/artists/bob-dylan/"
+      ],
+      "period": {
+        "start": 1888,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "place:rotterdam",
+      "type": "place",
+      "name": "Rotterdam",
+      "description": "Dutch port city where the early gabber scene developed through clubs, record shops, parties and independent labels.",
+      "sources": [
+        "https://artsandculture.google.com/story/a-brief-history-of-gabber-the-netherlands-institute-for-sound-and-vision/ugXxcmEzFVvjKQ?hl=en",
+        "https://www.canonvannederland.nl/nl/page/292759/gabber"
+      ]
+    },
+    {
+      "id": "place:faisalabad",
+      "type": "place",
+      "name": "Faisalabad",
+      "description": "Pakistani city and birthplace of Qawwali singer Nusrat Fateh Ali Khan.",
+      "sources": [
+        "https://faisalabad.punjab.gov.pk/important-personalities",
+        "https://www.fukuoka-prize.org/files/download/en/LaureatesI18n/laureate_blocks/50a8d14b-967c-41ff-a255-19f299dfc400/value01/value05"
+      ]
+    },
+    {
+      "id": "place:karachi",
+      "type": "place",
+      "name": "Karachi",
+      "description": "Pakistani port city where the Sabri Brothers settled after Partition and formed their celebrated Qawwali partnership.",
+      "sources": [
+        "https://radio.gov.pk/05-04-2022/28th-death-anniversary-of-qawwal-ghulam-farid-sabri-observed",
+        "https://www.donaldclarkemusicbox.com/encyclopedia/detail.php?s=3227"
+      ]
+    },
+    {
+      "id": "place:cali",
+      "type": "place",
+      "name": "Cali",
+      "description": "Colombian city that adopted salsa as a local music and dance culture and developed distinctive styles, clubs and festivals.",
+      "sources": [
+        "https://colombia.travel/en/cali/salsa",
+        "https://folklife.si.edu/magazine/la-vieja-guardia-salsa-dancing-cali-colombia"
+      ]
+    },
+    {
+      "id": "place:bali",
+      "type": "place",
+      "name": "Bali",
+      "description": "Indonesian island with distinct and living gamelan traditions, including gong kebyar.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gamelan-01607",
+        "https://asia.si.edu/shimmering-sounds-from-bali-the-gamelan-ensemble-of-the-indonesian-institute-of-the-arts/"
+      ]
+    },
+    {
+      "id": "place:yogyakarta",
+      "type": "place",
+      "name": "Yogyakarta",
+      "description": "Indonesian city and court center with a prominent Javanese gamelan tradition.",
+      "sources": [
+        "https://asia.si.edu/explore-art-culture/audio/javanese-gamelan-music/",
+        "https://asia.si.edu/research/essays/sumarsam/"
+      ]
+    },
+    {
+      "id": "place:munich",
+      "type": "place",
+      "name": "Munich",
+      "description": "German city where Manfred Eicher founded ECM Records in 1969.",
+      "sources": [
+        "https://ecmrecords.com/story/",
+        "https://www.hausderkunst.de/en/eintauchen/ecm-a-cultural-archaeology"
+      ]
+    },
+    {
+      "id": "place:pretoria",
+      "type": "place",
+      "name": "Pretoria",
+      "description": "South African capital and one of the Gauteng centers in the early development of amapiano.",
+      "sources": [
+        "https://www.wits.ac.za/curiosity/latest/issue-19/disruption/the-musical-that-moved-the-world-to-sas-beat.html",
+        "https://open.uct.ac.za/items/30d03ccd-5843-4bb5-9b94-b10a75b1d24b"
+      ]
+    },
+    {
+      "id": "place:salvador",
+      "type": "place",
+      "name": "Salvador",
+      "description": "Brazilian coastal city and birthplace of singer-songwriter Dorival Caymmi, whose work drew deeply on Bahia.",
+      "sources": [
+        "https://pesquisaescolar.fundaj.gov.br/en/artigo/dorival-caymmi/",
+        "https://acervos.ims.com.br/index.php/Detail/objects/60298"
+      ]
+    },
+    {
+      "id": "scene:rotterdam-gabber-scene",
+      "type": "scene",
+      "name": "Rotterdam gabber scene",
+      "description": "A Dutch hardcore network centered in Rotterdam clubs, record shops and parties; its early history includes Parkzicht, DJ Paul Elstak and Rotterdam Records.",
+      "sources": [
+        "https://artsandculture.google.com/story/a-brief-history-of-gabber-the-netherlands-institute-for-sound-and-vision/ugXxcmEzFVvjKQ?hl=en",
+        "https://www.canonvannederland.nl/nl/page/292759/gabber"
+      ],
+      "period": {
+        "start": 1989,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:cali-salsa-scene",
+      "type": "scene",
+      "name": "Cali salsa scene",
+      "description": "A local salsa and dance culture shaped through radio, records, clubs, dance schools and festivals, drawing on music from across the Caribbean and diaspora.",
+      "sources": [
+        "https://folklife.si.edu/magazine/la-vieja-guardia-salsa-dancing-cali-colombia",
+        "https://colombia.travel/en/cali/salsa"
+      ],
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:javanese-gamelan-traditions",
+      "type": "scene",
+      "name": "Javanese gamelan traditions",
+      "description": "Court, village and community performance traditions associated with Java, including the Yogyakarta and Surakarta regions.",
+      "sources": [
+        "https://asia.si.edu/explore-art-culture/audio/javanese-gamelan-music/",
+        "https://ich.unesco.org/en/RL/gamelan-01607"
+      ],
+      "period": {
+        "start": 1500,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:balinese-gamelan-traditions",
+      "type": "scene",
+      "name": "Balinese gamelan traditions",
+      "description": "Distinct island-wide and local performance traditions, including gong kebyar, which emerged in northern Bali in the early twentieth century.",
+      "sources": [
+        "https://asia.si.edu/shimmering-sounds-from-bali-the-gamelan-ensemble-of-the-indonesian-institute-of-the-arts/",
+        "https://asia-archive.si.edu/essays/article-vitale/"
+      ],
+      "period": {
+        "start": 1910,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "scene:gauteng-amapiano-scene",
+      "type": "scene",
+      "name": "Gauteng amapiano scene",
+      "description": "A township-rooted dance-music network associated with overlapping experimentation in Pretoria and Johannesburg; accounts of its exact point of origin remain contested.",
+      "sources": [
+        "https://www.wits.ac.za/curiosity/latest/issue-19/disruption/the-musical-that-moved-the-world-to-sas-beat.html",
+        "https://journal.ru.ac.za/index.php/africanmusic/article/view/2529"
+      ],
+      "period": {
+        "start": 2000,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "label:rotterdam-records",
+      "type": "label",
+      "name": "Rotterdam Records",
+      "description": "Dutch hardcore label founded by Paul Elstak in Rotterdam in the early 1990s and associated with the rise of gabber.",
+      "sources": [
+        "https://artsandculture.google.com/story/a-brief-history-of-gabber-the-netherlands-institute-for-sound-and-vision/ugXxcmEzFVvjKQ?hl=en",
+        "https://www.canonvannederland.nl/nl/page/292759/gabber"
+      ],
+      "period": {
+        "start": 1992,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:ecm-records",
+      "type": "label",
+      "name": "ECM Records",
+      "description": "Munich independent label founded by Manfred Eicher in 1969, with catalogues spanning jazz, improvised music and contemporary composition.",
+      "sources": [
+        "https://ecmrecords.com/story/",
+        "https://www.hausderkunst.de/en/eintauchen/ecm-a-cultural-archaeology"
+      ],
+      "period": {
+        "start": 1969,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:impulse-records",
+      "type": "label",
+      "name": "Impulse! Records",
+      "description": "American jazz label founded in 1961, strongly associated with John Coltrane and a broad range of adventurous jazz artists.",
+      "sources": [
+        "https://www.impulserecords.com/our-story/",
+        "https://www.impulserecords.com/artist/john-coltrane-0/"
+      ],
+      "period": {
+        "start": 1961,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:prestige-records",
+      "type": "label",
+      "name": "Prestige Records",
+      "description": "Independent jazz label launched in 1949; its catalogue includes important recordings by Miles Davis, John Coltrane and Sonny Rollins.",
+      "sources": [
+        "https://concord.com/labels/prestige-records/",
+        "https://www.milesdavis.com/timeline-1950/"
+      ],
+      "period": {
+        "start": 1949,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "label:fania-records",
+      "type": "label",
+      "name": "Fania Records",
+      "description": "New York label founded in 1964 by Johnny Pacheco and Jerry Masucci, central to the development and international circulation of salsa.",
+      "sources": [
+        "https://fania.com/history/",
+        "https://www.uspto.gov/learning-and-resources/journeys-innovation/historical-stories/inventing-salsa"
+      ],
+      "period": {
+        "start": 1964,
+        "precision": "year"
+      }
     }
   ],
   "edges": [
@@ -24749,6 +26620,1885 @@
       "sources": [
         "https://www.loc.gov/item/n80016911/yo-yo-ma/",
         "https://www.yo-yoma.com/biography/"
+      ]
+    },
+    {
+      "id": "origin:genre-hip-hop-bronx",
+      "type": "originated_in",
+      "from": "genre:hip-hop",
+      "to": "place:bronx",
+      "sources": [
+        "https://nmaahc.si.edu/explore/stories/hip-hop-bronx"
+      ]
+    },
+    {
+      "id": "origin:genre-jazz-new-orleans",
+      "type": "originated_in",
+      "from": "genre:jazz",
+      "to": "place:new-orleans",
+      "sources": [
+        "https://www.nps.gov/jazz/learn/historyculture/history_early.htm"
+      ]
+    },
+    {
+      "id": "origin:genre-reggae-kingston",
+      "type": "originated_in",
+      "from": "genre:reggae",
+      "to": "place:kingston",
+      "sources": [
+        "https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398"
+      ],
+      "note": "UNESCO describes reggae as emerging within a cultural space in western Kingston; this link identifies a central place, not an exclusive origin."
+    },
+    {
+      "id": "origin:genre-trip-hop-bristol",
+      "type": "originated_in",
+      "from": "genre:trip-hop",
+      "to": "place:bristol",
+      "sources": [
+        "https://www.theguardian.com/music/2014/apr/26/site-and-sound-when-cities-spawn-music-london-grime-trip-hop-bristol"
+      ],
+      "note": "Common external genre label; some Bristol musicians prefer “Bristol sound.”"
+    },
+    {
+      "id": "origin:genre-grunge-seattle",
+      "type": "originated_in",
+      "from": "genre:grunge",
+      "to": "place:seattle",
+      "sources": [
+        "https://www.seattle.gov/economic-development/key-industries/creative-industries/nightlife-and-music/seattle-music-history",
+        "https://www.mopop.org/experience/puget-sound-stories"
+      ],
+      "note": "Seattle is a central scene location; the scene included diverse bands and was not reducible to one sound."
+    },
+    {
+      "id": "origin:genre-afrobeat-lagos",
+      "type": "originated_in",
+      "from": "genre:afrobeat",
+      "to": "place:lagos",
+      "sources": [
+        "https://eprints-prod-01.library.pitt.edu/10261/"
+      ]
+    },
+    {
+      "id": "origin:genre-bossa-nova-rio",
+      "type": "originated_in",
+      "from": "genre:bossa-nova",
+      "to": "place:rio-de-janeiro",
+      "sources": [
+        "https://www.abc.net.au/rn/features/bossanova/about.htm"
+      ]
+    },
+    {
+      "id": "origin:scene-bronx-hip-hop-bronx",
+      "type": "originated_in",
+      "from": "scene:bronx-hip-hop",
+      "to": "place:bronx",
+      "sources": [
+        "https://nmaahc.si.edu/explore/stories/hip-hop-bronx"
+      ]
+    },
+    {
+      "id": "origin:scene-cbgb-new-york",
+      "type": "originated_in",
+      "from": "scene:cbgb",
+      "to": "place:new-york",
+      "sources": [
+        "https://www.cbgb.com/pages/cbgb-history"
+      ]
+    },
+    {
+      "id": "origin:scene-studio-54-new-york",
+      "type": "originated_in",
+      "from": "scene:studio-54",
+      "to": "place:new-york",
+      "sources": [
+        "https://www.pbs.org/wgbh/americanexperience/features/war-disco-glimpse-glamorous-world-studio-54/"
+      ]
+    },
+    {
+      "id": "origin:scene-hacienda-manchester",
+      "type": "originated_in",
+      "from": "scene:hacienda",
+      "to": "place:manchester",
+      "sources": [
+        "https://fac51-thehacienda.com/about/"
+      ]
+    },
+    {
+      "id": "origin:scene-wigan-casino-wigan",
+      "type": "originated_in",
+      "from": "scene:wigan-casino",
+      "to": "place:wigan",
+      "sources": [
+        "https://www.wiganlocalhistory.org/articles/did-wigan-have-a-northern-soul"
+      ]
+    },
+    {
+      "id": "origin:scene-bristol-sound-bristol",
+      "type": "originated_in",
+      "from": "scene:bristol-sound",
+      "to": "place:bristol",
+      "sources": [
+        "https://www.theguardian.com/music/2016/feb/12/reggae-riots-history-bristol-music-scene-gilles-peterson"
+      ]
+    },
+    {
+      "id": "origin:scene-seattle-grunge-seattle",
+      "type": "originated_in",
+      "from": "scene:seattle-grunge",
+      "to": "place:seattle",
+      "sources": [
+        "https://www.seattle.gov/economic-development/key-industries/creative-industries/nightlife-and-music/seattle-music-history"
+      ]
+    },
+    {
+      "id": "origin:scene-kingston-reggae-kingston",
+      "type": "originated_in",
+      "from": "scene:kingston-reggae",
+      "to": "place:kingston",
+      "sources": [
+        "https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398"
+      ]
+    },
+    {
+      "id": "origin:artist-bob-marley-kingston",
+      "type": "originated_in",
+      "from": "artist:bob-marley",
+      "to": "place:kingston",
+      "sources": [
+        "https://www.si.edu/object/archives/components/sova-acma-03-027-ref1934"
+      ],
+      "note": "Kingston is a documented center of Marley’s musical career; he was born in Nine Mile, Jamaica."
+    },
+    {
+      "id": "origin:artist-fela-kuti-lagos",
+      "type": "originated_in",
+      "from": "artist:fela-kuti",
+      "to": "place:lagos",
+      "sources": [
+        "https://www.biography.com/musicians/fela-kuti",
+        "https://eprints-prod-01.library.pitt.edu/10261/"
+      ],
+      "note": "Lagos is central to Kuti’s Afrobeat career and performance history; he was born in Abeokuta."
+    },
+    {
+      "id": "origin:artist-antonio-carlos-jobim-rio",
+      "type": "originated_in",
+      "from": "artist:antonio-carlos-jobim",
+      "to": "place:rio-de-janeiro",
+      "sources": [
+        "https://www.abc.net.au/rn/features/bossanova/about.htm"
+      ],
+      "note": "Rio is linked to Jobim’s bossa nova work and scene, not his birthplace."
+    },
+    {
+      "id": "origin:artist-joao-gilberto-rio",
+      "type": "originated_in",
+      "from": "artist:joao-gilberto",
+      "to": "place:rio-de-janeiro",
+      "sources": [
+        "https://www.abc.net.au/rn/features/bossanova/about.htm"
+      ],
+      "note": "Rio is linked to Gilberto’s bossa nova work and scene; he moved there from Bahia."
+    },
+    {
+      "id": "origin:label-motown-detroit",
+      "type": "originated_in",
+      "from": "label:motown",
+      "to": "place:detroit",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/motown-records"
+      ]
+    },
+    {
+      "id": "origin:label-blue-note-new-york",
+      "type": "originated_in",
+      "from": "label:blue-note",
+      "to": "place:new-york",
+      "sources": [
+        "https://www.bluenote.com/blue-note-80-2019-year-in-review/"
+      ]
+    },
+    {
+      "id": "origin:label-def-jam-new-york",
+      "type": "originated_in",
+      "from": "label:def-jam",
+      "to": "place:new-york",
+      "sources": [
+        "https://www.umgcatalog.com/labels/def-jam-recordings/"
+      ]
+    },
+    {
+      "id": "origin:label-sub-pop-seattle",
+      "type": "originated_in",
+      "from": "label:sub-pop",
+      "to": "place:seattle",
+      "sources": [
+        "https://www.subpop.com/about"
+      ]
+    },
+    {
+      "id": "origin:label-factory-records-manchester",
+      "type": "originated_in",
+      "from": "label:factory-records",
+      "to": "place:manchester",
+      "sources": [
+        "https://www.factorymanchester.com/history/"
+      ]
+    },
+    {
+      "id": "origin:label-island-records-jamaica",
+      "type": "originated_in",
+      "from": "label:island-records",
+      "to": "place:jamaica",
+      "sources": [
+        "https://www.islandrecords.com/pages/about"
+      ]
+    },
+    {
+      "id": "origin:label-warp-sheffield",
+      "type": "originated_in",
+      "from": "label:warp",
+      "to": "place:sheffield",
+      "sources": [
+        "https://sheffieldmusicarchive.co.uk/cp-books/warp-labels-unlimited/"
+      ]
+    },
+    {
+      "id": "signed:the-supremes-motown",
+      "type": "signed_to",
+      "from": "artist:the-supremes",
+      "to": "label:motown",
+      "sources": [
+        "https://www.motownmuseum.org/artist/supremes/"
+      ]
+    },
+    {
+      "id": "signed:marvin-gaye-motown",
+      "type": "signed_to",
+      "from": "artist:marvin-gaye",
+      "to": "label:motown",
+      "sources": [
+        "https://www.motownmuseum.org/artist/"
+      ]
+    },
+    {
+      "id": "signed:thelonious-monk-blue-note",
+      "type": "signed_to",
+      "from": "artist:thelonious-monk",
+      "to": "label:blue-note",
+      "sources": [
+        "https://www.bluenote.com/blue-note-80-2019-year-in-review/"
+      ]
+    },
+    {
+      "id": "signed:art-blakey-blue-note",
+      "type": "signed_to",
+      "from": "artist:art-blakey",
+      "to": "label:blue-note",
+      "sources": [
+        "https://www.bluenote.com/blue-note-80-2019-year-in-review/"
+      ]
+    },
+    {
+      "id": "signed:public-enemy-def-jam",
+      "type": "signed_to",
+      "from": "artist:public-enemy",
+      "to": "label:def-jam",
+      "sources": [
+        "https://www.umgcatalog.com/labels/def-jam-recordings/"
+      ]
+    },
+    {
+      "id": "signed:nirvana-sub-pop",
+      "type": "signed_to",
+      "from": "artist:nirvana",
+      "to": "label:sub-pop",
+      "sources": [
+        "https://www.subpop.com/about"
+      ]
+    },
+    {
+      "id": "signed:soundgarden-sub-pop",
+      "type": "signed_to",
+      "from": "artist:soundgarden",
+      "to": "label:sub-pop",
+      "sources": [
+        "https://www.subpop.com/about"
+      ]
+    },
+    {
+      "id": "signed:aphex-twin-warp",
+      "type": "signed_to",
+      "from": "artist:aphex-twin",
+      "to": "label:warp",
+      "sources": [
+        "https://sheffieldmusicarchive.co.uk/cp-books/warp-labels-unlimited/"
+      ]
+    },
+    {
+      "id": "signed:autechre-warp",
+      "type": "signed_to",
+      "from": "artist:autechre",
+      "to": "label:warp",
+      "sources": [
+        "https://sheffieldmusicarchive.co.uk/cp-books/warp-labels-unlimited/"
+      ]
+    },
+    {
+      "id": "signed:squarepusher-warp",
+      "type": "signed_to",
+      "from": "artist:squarepusher",
+      "to": "label:warp",
+      "sources": [
+        "https://sheffieldmusicarchive.co.uk/cp-books/warp-labels-unlimited/"
+      ]
+    },
+    {
+      "id": "signed:joy-division-factory-records",
+      "type": "signed_to",
+      "from": "artist:joy-division",
+      "to": "label:factory-records",
+      "sources": [
+        "https://www.factorymanchester.com/history/"
+      ]
+    },
+    {
+      "id": "signed:bob-marley-island-records",
+      "type": "signed_to",
+      "from": "artist:bob-marley",
+      "to": "label:island-records",
+      "sources": [
+        "https://www.islandrecords.co.uk/history-backup/"
+      ]
+    },
+    {
+      "id": "origin:label-roule-paris",
+      "type": "originated_in",
+      "from": "label:roule",
+      "to": "place:paris",
+      "sources": [
+        "https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en",
+        "https://ra.co/labels/roule"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-crydamoure-paris",
+      "type": "originated_in",
+      "from": "label:crydamoure",
+      "to": "place:paris",
+      "sources": [
+        "https://www.djmag.com/features/cry-damoure-daft-punk-why-the-label-still-matters",
+        "https://www.discogs.com/label/681-Crydamoure"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-ed-banger-records-paris",
+      "type": "originated_in",
+      "from": "label:ed-banger-records",
+      "to": "place:paris",
+      "sources": [
+        "https://becausegroup.tv/en/becausemusic/",
+        "https://ra.co/labels/ed-banger-records"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-source-records-paris",
+      "type": "originated_in",
+      "from": "label:source-records",
+      "to": "place:paris",
+      "sources": [
+        "https://www.radio-cerise.fr/french-touch-1997-2003/",
+        "https://www.musicbusinessworldwide.com/source-records-relaunches-with-new-management-team-and-ambitious-growth-plans/"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-soma-quality-recordings-glasgow",
+      "type": "originated_in",
+      "from": "label:soma-quality-recordings",
+      "to": "place:glasgow",
+      "sources": [
+        "https://www.somarecords.com/about",
+        "https://www.francemusic.com/french-touch-guide/"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-f-communications-paris",
+      "type": "originated_in",
+      "from": "label:f-communications",
+      "to": "place:paris",
+      "sources": [
+        "https://www.discogs.com/label/317-F-Communications",
+        "https://www.redbullmusicacademy.com/lectures/laurent-garnier/"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-kitsune-musique-paris",
+      "type": "originated_in",
+      "from": "label:kitsune-musique",
+      "to": "place:paris",
+      "sources": [
+        "https://kitsune.fr/pages/about",
+        "https://www.discogs.com/label/59346-Kitsun%C3%A9-Music"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-yellow-productions-paris",
+      "type": "originated_in",
+      "from": "label:yellow-productions",
+      "to": "place:paris",
+      "sources": [
+        "https://www.discogs.com/label/877-Yellow-Productions",
+        "https://www.francemusic.com/french-touch-guide/"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-chess-records-chicago",
+      "type": "originated_in",
+      "from": "label:chess-records",
+      "to": "place:chicago",
+      "sources": [
+        "https://www.chessrecords.com/history/",
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/chess-records"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-sun-records-memphis",
+      "type": "originated_in",
+      "from": "label:sun-records",
+      "to": "place:memphis",
+      "sources": [
+        "https://www.sunrecords.com/about",
+        "https://www.memphistravel.com/music"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-stax-records-memphis",
+      "type": "originated_in",
+      "from": "label:stax-records",
+      "to": "place:memphis",
+      "sources": [
+        "https://staxmuseum.com/stax-records/",
+        "https://www.memphistravel.com/music"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-ruthless-records-compton",
+      "type": "originated_in",
+      "from": "label:ruthless-records",
+      "to": "place:compton",
+      "sources": [
+        "https://www.ruthlessrecords.com/about",
+        "https://www.comptonmuseum.org/previous-exhibitions/sounds-of-the-city"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-death-row-records-los-angeles",
+      "type": "originated_in",
+      "from": "label:death-row-records",
+      "to": "place:los-angeles",
+      "sources": [
+        "https://store.deathrowpictures.com/pages/about",
+        "https://www.rockhall.com/inductees/nwa"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-cash-money-records-new-orleans",
+      "type": "originated_in",
+      "from": "label:cash-money-records",
+      "to": "place:new-orleans",
+      "sources": [
+        "https://www.cashmoney-records.com/history-of-the-label/",
+        "https://www.bmi.com/news/bmi_to_honor_the_2013_bmi_r_and_b_hip_hop_awards"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-sire-records-new-york",
+      "type": "originated_in",
+      "from": "label:sire-records",
+      "to": "place:new-york",
+      "sources": [
+        "https://www.rhino.com/article/the-history-of-sire-records",
+        "https://www.warnerrecords.com/sire-records"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-4ad-london",
+      "type": "originated_in",
+      "from": "label:4ad",
+      "to": "place:london",
+      "sources": [
+        "https://4ad.com/about",
+        "https://beggars.com/labels/4ad/"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-rough-trade-records-london",
+      "type": "originated_in",
+      "from": "label:rough-trade-records",
+      "to": "place:london",
+      "sources": [
+        "https://www.roughtraderecords.com/about",
+        "https://www.beggars.com/history/"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-kompakt-cologne",
+      "type": "originated_in",
+      "from": "label:kompakt",
+      "to": "place:cologne",
+      "sources": [
+        "https://kompakt.fm/about",
+        "https://artsandculture.google.com/story/the-history-of-kompakt-kompakt/bAWxxTH2nWDhnQ?hl=en"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-rock-action-records-glasgow",
+      "type": "originated_in",
+      "from": "label:rock-action-records",
+      "to": "place:glasgow",
+      "sources": [
+        "https://rockactionrecords.com/about",
+        "https://mogwai.scot/biography/"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-virgin-records-london",
+      "type": "originated_in",
+      "from": "label:virgin-records",
+      "to": "place:london",
+      "sources": [
+        "https://www.virginrecords.com/about/",
+        "https://www.francemusic.com/french-touch-guide/"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-atlantic-records-new-york",
+      "type": "originated_in",
+      "from": "label:atlantic-records",
+      "to": "place:new-york",
+      "sources": [
+        "https://www.atlanticrecords.com/",
+        "https://www.atlanticrecords.com/artists/aretha-franklin"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:label-columbia-records-bridgeport",
+      "type": "originated_in",
+      "from": "label:columbia-records",
+      "to": "place:bridgeport",
+      "sources": [
+        "https://findingaids.loc.gov/repositories/11/resources/795",
+        "https://www.columbiarecords.com/artists/bob-dylan/"
+      ],
+      "note": "Label headquarters/founding location; this does not imply every artist on its roster came from the city."
+    },
+    {
+      "id": "origin:artist-daft-punk-paris",
+      "type": "originated_in",
+      "from": "artist:daft-punk",
+      "to": "place:paris",
+      "sources": [
+        "https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en"
+      ],
+      "note": "The duo formed in Paris; French Touch networks also linked the capital with Versailles."
+    },
+    {
+      "id": "origin:artist-air-versailles",
+      "type": "originated_in",
+      "from": "artist:air",
+      "to": "place:versailles",
+      "sources": [
+        "https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en"
+      ],
+      "note": "The duo formed in Versailles."
+    },
+    {
+      "id": "origin:artist-cassius-paris",
+      "type": "originated_in",
+      "from": "artist:cassius",
+      "to": "place:paris",
+      "sources": [
+        "https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en"
+      ],
+      "note": "Paris-based French Touch duo."
+    },
+    {
+      "id": "origin:artist-motorbass-paris",
+      "type": "originated_in",
+      "from": "artist:motorbass",
+      "to": "place:paris",
+      "sources": [
+        "https://www.francemusic.com/french-touch-guide/"
+      ],
+      "note": "Paris-based French Touch project."
+    },
+    {
+      "id": "origin:artist-miss-kittin-grenoble",
+      "type": "originated_in",
+      "from": "artist:miss-kittin",
+      "to": "place:grenoble",
+      "sources": [
+        "https://www.insomniac.com/music/artists/miss-kittin/"
+      ],
+      "note": "Born in Grenoble."
+    },
+    {
+      "id": "origin:artist-the-beatles-liverpool",
+      "type": "originated_in",
+      "from": "artist:the-beatles",
+      "to": "place:liverpool",
+      "sources": [
+        "https://www.cavernclub.com/history/"
+      ],
+      "note": "Formed in Liverpool."
+    },
+    {
+      "id": "origin:artist-black-sabbath-birmingham",
+      "type": "originated_in",
+      "from": "artist:black-sabbath",
+      "to": "place:birmingham",
+      "sources": [
+        "https://visitbirmingham.com/blog/post/it-starts-here-how-the-west-midlands-shaped-global-music/"
+      ],
+      "note": "Formed in Aston, Birmingham."
+    },
+    {
+      "id": "origin:artist-mogwai-glasgow",
+      "type": "originated_in",
+      "from": "artist:mogwai",
+      "to": "place:glasgow",
+      "sources": [
+        "https://mogwai.scot/biography/"
+      ],
+      "note": "Formed in Glasgow."
+    },
+    {
+      "id": "origin:artist-outkast-atlanta",
+      "type": "originated_in",
+      "from": "artist:outkast",
+      "to": "place:atlanta",
+      "sources": [
+        "https://www.gpb.org/news/2023/07/19/how-atlanta-became-the-center-of-the-rap-universe"
+      ],
+      "note": "Atlanta hip-hop duo; the city is central to their formation and early career."
+    },
+    {
+      "id": "origin:artist-dj-screw-houston",
+      "type": "originated_in",
+      "from": "artist:dj-screw",
+      "to": "place:houston",
+      "sources": [
+        "https://exhibits.lib.uh.edu/s/exhibits/page/dj-screw"
+      ],
+      "note": "Houston-based DJ and originator of chopped-and-screwed production."
+    },
+    {
+      "id": "origin:artist-lil-keke-houston",
+      "type": "originated_in",
+      "from": "artist:lil-keke",
+      "to": "place:houston",
+      "sources": [
+        "https://exhibits.lib.uh.edu/s/exhibits/page/dj-screw"
+      ],
+      "note": "Houston rapper whose early career was part of the Screwed Up Click network."
+    },
+    {
+      "id": "origin:artist-geto-boys-houston",
+      "type": "originated_in",
+      "from": "artist:geto-boys",
+      "to": "place:houston",
+      "sources": [
+        "https://exhibits.lib.uh.edu/s/exhibits/page/dj-screw"
+      ],
+      "note": "Houston hip-hop group."
+    },
+    {
+      "id": "origin:artist-n-w-a-compton",
+      "type": "originated_in",
+      "from": "artist:nwa",
+      "to": "place:compton",
+      "sources": [
+        "https://www.comptonmuseum.org/exhibitions/nwa-and-compton",
+        "https://www.ruthlessrecords.com/about"
+      ],
+      "note": "Compton-based group; the note does not claim Compton alone created gangsta rap."
+    },
+    {
+      "id": "origin:artist-prince-minneapolis",
+      "type": "originated_in",
+      "from": "artist:prince",
+      "to": "place:minneapolis",
+      "sources": [
+        "https://mn.gov/admin/shpo/architectural-history/minneapolis-sound/"
+      ],
+      "note": "Minneapolis is the key home base of Prince’s recording and performance network."
+    },
+    {
+      "id": "origin:artist-e-t-mensah-accra",
+      "type": "originated_in",
+      "from": "artist:et-mensah",
+      "to": "place:accra",
+      "sources": [
+        "https://www.si.edu/object/siris_sil_773265"
+      ],
+      "note": "Accra Orchestra and the city’s highlife network were central to his career."
+    },
+    {
+      "id": "origin:artist-illapu-antofagasta",
+      "type": "originated_in",
+      "from": "artist:illapu",
+      "to": "place:antofagasta",
+      "sources": [
+        "https://www.cooperativa.cl/noticias/entretencion/musica/illapu/illapu-celebra-sus-50-anos-de-historia-con-nuevo-disco-y-concierto/2021-04-20/113449.html"
+      ],
+      "note": "Founded in Antofagasta in 1971."
+    },
+    {
+      "id": "origin:artist-pizzicato-five-tokyo",
+      "type": "originated_in",
+      "from": "artist:pizzicato-five",
+      "to": "place:tokyo",
+      "sources": [
+        "https://www.sonymusic.co.jp/artist/PizzicatoFive/profile/"
+      ],
+      "note": "Tokyo Shibuya-kei group."
+    },
+    {
+      "id": "origin:artist-astor-piazzolla-mar-del-plata",
+      "type": "originated_in",
+      "from": "artist:astor-piazzolla",
+      "to": "place:mar-del-plata",
+      "sources": [
+        "https://www.argentina.gob.ar/cultura/mar-del-plata-astor-piazzolla"
+      ],
+      "note": "Born in Mar del Plata."
+    },
+    {
+      "id": "origin:artist-juan-luis-guerra-santo-domingo",
+      "type": "originated_in",
+      "from": "artist:juan-luis-guerra",
+      "to": "place:santo-domingo",
+      "sources": [
+        "https://www.juanguerra.com/biografia",
+        "https://www.grammy.com/artists/juan-luis-guerra/15361"
+      ],
+      "note": "Born in Santo Domingo."
+    },
+    {
+      "id": "origin:artist-ravi-shankar-varanasi",
+      "type": "originated_in",
+      "from": "artist:ravi-shankar",
+      "to": "place:varanasi",
+      "sources": [
+        "https://www.praemiumimperiale.org/en/laureate/india/shankar"
+      ],
+      "note": "Born in Varanasi."
+    },
+    {
+      "id": "origin:artist-ludwig-van-beethoven-bonn",
+      "type": "originated_in",
+      "from": "artist:beethoven",
+      "to": "place:bonn",
+      "sources": [
+        "https://www.beethoven.de/en/museum"
+      ],
+      "note": "Born in Bonn."
+    },
+    {
+      "id": "origin:artist-wolfgang-amadeus-mozart-salzburg",
+      "type": "originated_in",
+      "from": "artist:mozart",
+      "to": "place:salzburg",
+      "sources": [
+        "https://mozarteum.at/en/mozart-museums/mozarts-birthplace"
+      ],
+      "note": "Born in Salzburg."
+    },
+    {
+      "id": "origin:artist-johann-sebastian-bach-leipzig",
+      "type": "originated_in",
+      "from": "artist:bach",
+      "to": "place:leipzig",
+      "sources": [
+        "https://www.bachmuseumleipzig.de/en/bach-museum-leipzig/bach-leipzig"
+      ],
+      "note": "Leipzig was a major career and work center; Bach was born in Eisenach."
+    },
+    {
+      "id": "origin:artist-antonio-vivaldi-venice",
+      "type": "originated_in",
+      "from": "artist:vivaldi",
+      "to": "place:venice",
+      "sources": [
+        "https://www.teatroallascala.org/it/stagione/2022-2023/concerti/invito-alla-scala/viva-vivaldi.html"
+      ],
+      "note": "Born in Venice."
+    },
+    {
+      "id": "origin:artist-frederic-chopin-warsaw",
+      "type": "originated_in",
+      "from": "artist:chopin",
+      "to": "place:warsaw",
+      "sources": [
+        "https://chopin.museum/en/chopin-and-warsaw/"
+      ],
+      "note": "Studied and began his public career in Warsaw; he was born in Żelazowa Wola."
+    },
+    {
+      "id": "origin:artist-pyotr-ilyich-tchaikovsky-st-petersburg",
+      "type": "originated_in",
+      "from": "artist:tchaikovsky",
+      "to": "place:st-petersburg",
+      "sources": [
+        "https://www.mariinsky.ru/en/about/history/",
+        "https://www.saint-petersburg.com/history/music/"
+      ],
+      "note": "Important study and career center, not birthplace."
+    },
+    {
+      "id": "origin:artist-duke-ellington-washington-d-c",
+      "type": "originated_in",
+      "from": "artist:duke-ellington",
+      "to": "place:washington-d-c",
+      "sources": [
+        "https://www.si.edu/spotlight/duke-ellington"
+      ],
+      "note": "Born in Washington, D.C.; later rose to fame in New York."
+    },
+    {
+      "id": "origin:artist-huun-huur-tu-tuva",
+      "type": "originated_in",
+      "from": "artist:huun-huur-tu",
+      "to": "place:tuva",
+      "sources": [
+        "https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/"
+      ],
+      "note": "Tuvan ensemble known for xöömei; the group has also spent much of its career touring internationally."
+    },
+    {
+      "id": "origin:artist-mei-lanfang-beijing",
+      "type": "originated_in",
+      "from": "artist:mei-lanfang",
+      "to": "place:beijing",
+      "sources": [
+        "https://english.beijing.gov.cn/beijinginfo/culture/culturaltreasures/cityofmuseums/list/202401/t20240116_3536780.html"
+      ],
+      "note": "Beijing was central to his Peking opera career; this does not state that he was born there."
+    },
+    {
+      "id": "origin:scene-french-touch-paris",
+      "type": "originated_in",
+      "from": "scene:french-touch",
+      "to": "place:paris",
+      "sources": [
+        "https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en",
+        "https://www.francemusic.com/french-touch-guide/"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-french-touch-versailles",
+      "type": "originated_in",
+      "from": "scene:french-touch",
+      "to": "place:versailles",
+      "sources": [
+        "https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en",
+        "https://www.versaillesgrandparc.fr/fileadmin/user_upload/gestion_doc/Fichiers_Documents_administratifs/Decisons/Decisions_2024/DECIS_dB.2024.065_Festival_ElectroChic_-_billeteries_en_ligne.pdf"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-atlanta-hip-hop-scene-atlanta",
+      "type": "originated_in",
+      "from": "scene:atlanta-hip-hop-scene",
+      "to": "place:atlanta",
+      "sources": [
+        "https://www.gpb.org/news/2023/07/19/how-atlanta-became-the-center-of-the-rap-universe"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-houston-hip-hop-scene-houston",
+      "type": "originated_in",
+      "from": "scene:houston-hip-hop-scene",
+      "to": "place:houston",
+      "sources": [
+        "https://exhibits.lib.uh.edu/s/exhibits/page/dj-screw"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-san-francisco-bay-area-hyphy-scene-oakland",
+      "type": "originated_in",
+      "from": "scene:san-francisco-bay-area-hyphy-scene",
+      "to": "place:oakland",
+      "sources": [
+        "https://newsroom.spotify.com/2021-06-23/in-honor-of-black-music-month-spotify-for-the-record-explores-go-go-hyphy-and-chopped-and-screwed/"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-compton-hip-hop-scene-compton",
+      "type": "originated_in",
+      "from": "scene:compton-hip-hop-scene",
+      "to": "place:compton",
+      "sources": [
+        "https://www.comptonmuseum.org/exhibitions/nwa-and-compton"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-memphis-soul-and-recording-scene-memphis",
+      "type": "originated_in",
+      "from": "scene:memphis-soul-and-recording-scene",
+      "to": "place:memphis",
+      "sources": [
+        "https://www.memphistravel.com/music",
+        "https://staxmuseum.com/stax-records/"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-nashville-country-music-scene-nashville",
+      "type": "originated_in",
+      "from": "scene:nashville-country-music-scene",
+      "to": "place:nashville",
+      "sources": [
+        "https://www.visitmusiccity.com/music"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-san-francisco-psychedelic-scene-san-francisco",
+      "type": "originated_in",
+      "from": "scene:san-francisco-psychedelic-scene",
+      "to": "place:san-francisco",
+      "sources": [
+        "https://www.dead.net/features/featured-profiles/san-francisco-1967"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-minneapolis-sound-minneapolis",
+      "type": "originated_in",
+      "from": "scene:minneapolis-sound",
+      "to": "place:minneapolis",
+      "sources": [
+        "https://mn.gov/admin/shpo/architectural-history/minneapolis-sound/"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-merseybeat-liverpool",
+      "type": "originated_in",
+      "from": "scene:merseybeat",
+      "to": "place:liverpool",
+      "sources": [
+        "https://www.cavernclub.com/history/"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-birmingham-heavy-metal-scene-birmingham",
+      "type": "originated_in",
+      "from": "scene:birmingham-heavy-metal-scene",
+      "to": "place:birmingham",
+      "sources": [
+        "https://visitbirmingham.com/blog/post/it-starts-here-how-the-west-midlands-shaped-global-music/"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-glasgow-post-rock-scene-glasgow",
+      "type": "originated_in",
+      "from": "scene:glasgow-post-rock-scene",
+      "to": "place:glasgow",
+      "sources": [
+        "https://mogwai.scot/biography/"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-frankfurt-techno-scene-frankfurt",
+      "type": "originated_in",
+      "from": "scene:frankfurt-techno-scene",
+      "to": "place:frankfurt",
+      "sources": [
+        "https://www.dw.com/en/frankfurt-techno/a-44865726"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-cologne-minimal-techno-scene-cologne",
+      "type": "originated_in",
+      "from": "scene:cologne-minimal-techno-scene",
+      "to": "place:cologne",
+      "sources": [
+        "https://artsandculture.google.com/story/the-history-of-kompakt-kompakt/bAWxxTH2nWDhnQ?hl=en"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-accra-highlife-scene-accra",
+      "type": "originated_in",
+      "from": "scene:accra-highlife-scene",
+      "to": "place:accra",
+      "sources": [
+        "https://ich.unesco.org/en/RL/highlife-music-and-dance-02141?RL=02141"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-congolese-rumba-scene-kinshasa",
+      "type": "originated_in",
+      "from": "scene:congolese-rumba-scene",
+      "to": "place:kinshasa",
+      "sources": [
+        "https://www.unesco.org/en/creative-cities/kinshasa",
+        "https://ich.unesco.org/en/RL/congolese-rumba-01711?RL=01711"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-congolese-rumba-scene-brazzaville",
+      "type": "originated_in",
+      "from": "scene:congolese-rumba-scene",
+      "to": "place:brazzaville",
+      "sources": [
+        "https://www.unesco.org/en/creative-cities/brazzaville",
+        "https://ich.unesco.org/en/RL/congolese-rumba-01711?RL=01711"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-johannesburg-kwaito-scene-johannesburg",
+      "type": "originated_in",
+      "from": "scene:johannesburg-kwaito-scene",
+      "to": "place:johannesburg",
+      "sources": [
+        "https://www.sahistory.org.za/article/kwaito-south-african-urban-music"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-durban-gqom-scene-durban",
+      "type": "originated_in",
+      "from": "scene:durban-gqom-scene",
+      "to": "place:durban",
+      "sources": [
+        "https://www.theguardian.com/music/2016/sep/15/gqom-durban-south-african-house-music"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-chennai-carnatic-music-season-chennai",
+      "type": "originated_in",
+      "from": "scene:chennai-carnatic-music-season",
+      "to": "place:chennai",
+      "sources": [
+        "https://sangeetnatak.gov.in/public/uploads/announcements/165693456768d344ca86529carnatic_music.pdf"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-seoul-k-pop-industry-seoul",
+      "type": "originated_in",
+      "from": "scene:seoul-k-pop-industry",
+      "to": "place:seoul",
+      "sources": [
+        "https://www.loc.gov/item/2020445487/",
+        "https://www.vam.ac.uk/articles/a-history-of-k-pop"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-tokyo-shibuya-kei-scene-tokyo",
+      "type": "originated_in",
+      "from": "scene:tokyo-shibuya-kei-scene",
+      "to": "place:tokyo",
+      "sources": [
+        "https://www.sonymusic.co.jp/artist/PizzicatoFive/profile/"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-rio-de-la-plata-tango-scene-buenos-aires",
+      "type": "originated_in",
+      "from": "scene:rio-de-la-plata-tango-scene",
+      "to": "place:buenos-aires",
+      "sources": [
+        "https://ich.unesco.org/en/RL/tango-00258"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-rio-de-la-plata-tango-scene-montevideo",
+      "type": "originated_in",
+      "from": "scene:rio-de-la-plata-tango-scene",
+      "to": "place:montevideo",
+      "sources": [
+        "https://ich.unesco.org/en/RL/tango-00258"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-havana-son-and-salsa-traditions-havana",
+      "type": "originated_in",
+      "from": "scene:havana-son-and-salsa-traditions",
+      "to": "place:havana",
+      "sources": [
+        "https://www.si.edu/exhibitions/salsa"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-san-juan-reggaeton-scene-san-juan",
+      "type": "originated_in",
+      "from": "scene:san-juan-reggaeton-scene",
+      "to": "place:san-juan",
+      "sources": [
+        "https://www.si.edu/object/reggaeton%3Anmahc_2016.40.1"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-port-of-spain-calypso-scene-port-of-spain",
+      "type": "originated_in",
+      "from": "scene:port-of-spain-calypso-scene",
+      "to": "place:port-of-spain",
+      "sources": [
+        "https://folkways.si.edu/calypso/music/album/smithsonian"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-chile-nueva-cancion-movement-santiago",
+      "type": "originated_in",
+      "from": "scene:chile-nueva-cancion-movement",
+      "to": "place:santiago",
+      "sources": [
+        "https://www.memoriachilena.gob.cl/602/w3-article-702.html"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-mexican-cumbia-sonidera-scene-mexico-city",
+      "type": "originated_in",
+      "from": "scene:mexican-cumbia-sonidera-scene",
+      "to": "place:mexico-city",
+      "sources": [
+        "https://www.gob.mx/cultura/prensa/los-angeles-azules-embajadores-de-la-cumbia-mexicana"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-dominican-merengue-scene-santo-domingo",
+      "type": "originated_in",
+      "from": "scene:dominican-merengue-scene",
+      "to": "place:santo-domingo",
+      "sources": [
+        "https://ich.unesco.org/en/RL/merengue-in-the-dominican-republic-01162"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-baul-music-tradition-kushtia",
+      "type": "originated_in",
+      "from": "scene:baul-music-tradition",
+      "to": "place:kushtia",
+      "sources": [
+        "https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-vienna-classical-music-milieu-vienna",
+      "type": "originated_in",
+      "from": "scene:vienna-classical-music-milieu",
+      "to": "place:vienna",
+      "sources": [
+        "https://www.wien.info/en/art-culture/music-stage-shows/classical-music-345730"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-goa-trance-scene-goa",
+      "type": "originated_in",
+      "from": "scene:goa-trance-scene",
+      "to": "place:goa",
+      "sources": [
+        "https://pure.hud.ac.uk/en/publications/dj-goa-gil-kalifornian-exile-dark-yogi-and-dreaded-anomaly/"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-beijing-peking-opera-scene-beijing",
+      "type": "originated_in",
+      "from": "scene:beijing-peking-opera-scene",
+      "to": "place:beijing",
+      "sources": [
+        "https://english.beijing.gov.cn/beijinginfo/culture/culturaltreasures/cityofmuseums/list/202401/t20240116_3536780.html"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-tuvan-xoomei-tradition-tuva",
+      "type": "originated_in",
+      "from": "scene:tuvan-xoomei-tradition",
+      "to": "place:tuva",
+      "sources": [
+        "https://folkways.si.edu/throat-singing-unique-vocalization-three-cultures/world/music/article/smithsonian"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-chicago-blues-scene-chicago",
+      "type": "originated_in",
+      "from": "scene:chicago-blues-scene",
+      "to": "place:chicago",
+      "sources": [
+        "https://www.chessrecords.com/history/",
+        "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/blues/"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-new-orleans-jazz-scene-new-orleans",
+      "type": "originated_in",
+      "from": "scene:new-orleans-jazz-scene",
+      "to": "place:new-orleans",
+      "sources": [
+        "https://www.nps.gov/jazz/learn/historyculture/history_early.htm"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-kingston-ska-scene-kingston",
+      "type": "originated_in",
+      "from": "scene:kingston-ska-scene",
+      "to": "place:kingston",
+      "sources": [
+        "https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-sheffield-electronic-music-scene-sheffield",
+      "type": "originated_in",
+      "from": "scene:sheffield-electronic-music-scene",
+      "to": "place:sheffield",
+      "sources": [
+        "https://www.sheffield.gov.uk/libraries-archives/access-archives-local-studies-library/research-guides/music-in-sheffield"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-dusseldorf-krautrock-scene-dusseldorf",
+      "type": "originated_in",
+      "from": "scene:dusseldorf-krautrock-scene",
+      "to": "place:duesseldorf",
+      "sources": [
+        "https://www.theguardian.com/music/2020/may/25/from-germany-to-detroit-and-back-how-kraftwerk-forged-an-industrial-exchange"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:scene-new-york-salsa-scene-new-york",
+      "type": "originated_in",
+      "from": "scene:new-york-salsa-scene",
+      "to": "place:new-york",
+      "sources": [
+        "https://www.si.edu/exhibitions/salsa"
+      ],
+      "note": "Scene geography is shared or regional where the description says so."
+    },
+    {
+      "id": "origin:genre-french-touch-paris",
+      "type": "originated_in",
+      "from": "genre:french-touch",
+      "to": "place:paris",
+      "sources": [
+        "https://www.francemusic.com/french-touch-guide/"
+      ],
+      "note": "Paris is a central network; Versailles was another key pole."
+    },
+    {
+      "id": "origin:genre-french-touch-versailles",
+      "type": "originated_in",
+      "from": "genre:french-touch",
+      "to": "place:versailles",
+      "sources": [
+        "https://www.versaillesgrandparc.fr/fileadmin/user_upload/gestion_doc/Fichiers_Documents_administratifs/Decisons/Decisions_2024/DECIS_dB.2024.065_Festival_ElectroChic_-_billeteries_en_ligne.pdf"
+      ],
+      "note": "A major contributor to the wider Paris–Versailles scene, not an exclusive origin."
+    },
+    {
+      "id": "origin:genre-chopped-and-screwed-houston",
+      "type": "originated_in",
+      "from": "genre:chopped-and-screwed",
+      "to": "place:houston",
+      "sources": [
+        "https://exhibits.lib.uh.edu/s/exhibits/page/dj-screw"
+      ]
+    },
+    {
+      "id": "origin:genre-hyphy-oakland",
+      "type": "originated_in",
+      "from": "genre:hyphy",
+      "to": "place:oakland",
+      "sources": [
+        "https://newsroom.spotify.com/2021-06-23/in-honor-of-black-music-month-spotify-for-the-record-explores-go-go-hyphy-and-chopped-and-screwed/"
+      ],
+      "note": "Oakland is a central city in the wider Bay Area movement."
+    },
+    {
+      "id": "origin:genre-kwaito-johannesburg",
+      "type": "originated_in",
+      "from": "genre:kwaito",
+      "to": "place:johannesburg",
+      "sources": [
+        "https://www.sahistory.org.za/article/kwaito-south-african-urban-music"
+      ],
+      "note": "Johannesburg townships and club networks were central; not an exclusive city origin."
+    },
+    {
+      "id": "origin:genre-gqom-durban",
+      "type": "originated_in",
+      "from": "genre:gqom",
+      "to": "place:durban",
+      "sources": [
+        "https://www.theguardian.com/music/2016/sep/15/gqom-durban-south-african-house-music"
+      ]
+    },
+    {
+      "id": "origin:genre-highlife-accra",
+      "type": "originated_in",
+      "from": "genre:highlife",
+      "to": "place:accra",
+      "sources": [
+        "https://ich.unesco.org/en/RL/highlife-music-and-dance-02141?RL=02141"
+      ],
+      "note": "Accra is a major hub within Ghanaian highlife’s broader regional history."
+    },
+    {
+      "id": "origin:genre-tango-buenos-aires",
+      "type": "originated_in",
+      "from": "genre:tango",
+      "to": "place:buenos-aires",
+      "sources": [
+        "https://ich.unesco.org/en/RL/tango-00258"
+      ],
+      "note": "Part of the shared Río de la Plata cultural region."
+    },
+    {
+      "id": "origin:genre-tango-montevideo",
+      "type": "originated_in",
+      "from": "genre:tango",
+      "to": "place:montevideo",
+      "sources": [
+        "https://ich.unesco.org/en/RL/tango-00258"
+      ],
+      "note": "Part of the shared Río de la Plata cultural region."
+    },
+    {
+      "id": "origin:genre-reggaeton-san-juan",
+      "type": "originated_in",
+      "from": "genre:reggaeton",
+      "to": "place:san-juan",
+      "sources": [
+        "https://www.si.edu/object/reggaeton%3Anmahc_2016.40.1"
+      ],
+      "note": "Puerto Rico was a major developmental center alongside earlier Jamaican and Panamanian roots."
+    },
+    {
+      "id": "origin:genre-calypso-port-of-spain",
+      "type": "originated_in",
+      "from": "genre:calypso",
+      "to": "place:port-of-spain",
+      "sources": [
+        "https://folkways.si.edu/calypso/music/album/smithsonian"
+      ],
+      "note": "A major urban center within Trinidadian and Caribbean traditions."
+    },
+    {
+      "id": "origin:genre-french-house-paris",
+      "type": "originated_in",
+      "from": "genre:french-house",
+      "to": "place:paris",
+      "sources": [
+        "https://www.francemusic.com/french-touch-guide/"
+      ],
+      "note": "French house/French Touch networks coalesced in Paris and Versailles."
+    },
+    {
+      "id": "origin:genre-psytrance-goa",
+      "type": "originated_in",
+      "from": "genre:psytrance",
+      "to": "place:goa",
+      "sources": [
+        "https://dj.dancecult.net/index.php/dancecult/article/view/318"
+      ],
+      "note": "Goa is a major early scene context, not the only contributor to psychedelic trance."
+    },
+    {
+      "id": "origin:genre-peking-opera-beijing",
+      "type": "originated_in",
+      "from": "genre:peking-opera",
+      "to": "place:beijing",
+      "sources": [
+        "https://english.beijing.gov.cn/beijinginfo/culture/culturaltreasures/cityofmuseums/list/202401/t20240116_3536780.html"
+      ],
+      "note": "The genre developed in Beijing, while its practitioners and audiences extend across regions."
+    },
+    {
+      "id": "origin:genre-khoomei-tuva",
+      "type": "originated_in",
+      "from": "genre:khoomei",
+      "to": "place:tuva",
+      "sources": [
+        "https://folkways.si.edu/throat-singing-unique-vocalization-three-cultures/world/music/article/smithsonian"
+      ]
+    },
+    {
+      "id": "signed:air-source-records",
+      "type": "signed_to",
+      "from": "artist:air",
+      "to": "label:source-records",
+      "sources": [
+        "https://www.radio-cerise.fr/french-touch-1997-2003/"
+      ]
+    },
+    {
+      "id": "signed:mogwai-rock-action-records",
+      "type": "signed_to",
+      "from": "artist:mogwai",
+      "to": "label:rock-action-records",
+      "sources": [
+        "https://mogwai.scot/biography/",
+        "https://rockactionrecords.com/about"
+      ]
+    },
+    {
+      "id": "signed:muddy-waters-chess-records",
+      "type": "signed_to",
+      "from": "artist:muddy-waters",
+      "to": "label:chess-records",
+      "sources": [
+        "https://www.chessrecords.com/history/"
+      ]
+    },
+    {
+      "id": "signed:chuck-berry-chess-records",
+      "type": "signed_to",
+      "from": "artist:chuck-berry",
+      "to": "label:chess-records",
+      "sources": [
+        "https://www.chessrecords.com/history/"
+      ]
+    },
+    {
+      "id": "signed:elvis-presley-sun-records",
+      "type": "signed_to",
+      "from": "artist:elvis-presley",
+      "to": "label:sun-records",
+      "sources": [
+        "https://www.sunrecords.com/about",
+        "https://staxmuseum.com/stax-museum-and-sam-phillips-recording-announce-new-partnership-today-on-what-would-be-phillips-100th-birthday/"
+      ]
+    },
+    {
+      "id": "signed:johnny-cash-sun-records",
+      "type": "signed_to",
+      "from": "artist:johnny-cash",
+      "to": "label:sun-records",
+      "sources": [
+        "https://www.sunrecords.com/about"
+      ]
+    },
+    {
+      "id": "signed:otis-redding-stax-records",
+      "type": "signed_to",
+      "from": "artist:otis-redding",
+      "to": "label:stax-records",
+      "sources": [
+        "https://staxmuseum.com/1957-1968/",
+        "https://staxmuseum.com/hbo-to-air-documentary-series-on-the-history-of-stax-records-the-audacious-group-of-outsiders-who-dared-to-make-their-own-music-on-their-own-terms/"
+      ]
+    },
+    {
+      "id": "signed:n-w-a-ruthless-records",
+      "type": "signed_to",
+      "from": "artist:nwa",
+      "to": "label:ruthless-records",
+      "sources": [
+        "https://www.ruthlessrecords.com/about"
+      ]
+    },
+    {
+      "id": "signed:dr-dre-death-row-records",
+      "type": "signed_to",
+      "from": "artist:dr-dre",
+      "to": "label:death-row-records",
+      "sources": [
+        "https://store.deathrowpictures.com/pages/about"
+      ]
+    },
+    {
+      "id": "signed:snoop-dogg-death-row-records",
+      "type": "signed_to",
+      "from": "artist:snoop-dogg",
+      "to": "label:death-row-records",
+      "sources": [
+        "https://deathrowrecords.com/snoop-dogg"
+      ]
+    },
+    {
+      "id": "signed:tupac-shakur-death-row-records",
+      "type": "signed_to",
+      "from": "artist:tupac-shakur",
+      "to": "label:death-row-records",
+      "sources": [
+        "https://store.deathrowpictures.com/pages/about"
+      ]
+    },
+    {
+      "id": "signed:lil-wayne-cash-money-records",
+      "type": "signed_to",
+      "from": "artist:lil-wayne",
+      "to": "label:cash-money-records",
+      "sources": [
+        "https://www.cashmoney-records.com/history-of-the-label/"
+      ]
+    },
+    {
+      "id": "signed:pixies-4ad",
+      "type": "signed_to",
+      "from": "artist:pixies",
+      "to": "label:4ad",
+      "sources": [
+        "https://shop.4ad.com/artist/95086-pixies"
+      ]
+    },
+    {
+      "id": "signed:aretha-franklin-atlantic-records",
+      "type": "signed_to",
+      "from": "artist:aretha-franklin",
+      "to": "label:atlantic-records",
+      "sources": [
+        "https://www.atlanticrecords.com/artists/aretha-franklin"
+      ]
+    },
+    {
+      "id": "signed:bob-dylan-columbia-records",
+      "type": "signed_to",
+      "from": "artist:bob-dylan",
+      "to": "label:columbia-records",
+      "sources": [
+        "https://www.columbiarecords.com/artists/bob-dylan/"
+      ]
+    },
+    {
+      "id": "signed:miles-davis-columbia-records",
+      "type": "signed_to",
+      "from": "artist:miles-davis",
+      "to": "label:columbia-records",
+      "sources": [
+        "https://www.columbiarecords.com/"
+      ]
+    },
+    {
+      "id": "signed:daft-punk-virgin-records",
+      "type": "signed_to",
+      "from": "artist:daft-punk",
+      "to": "label:virgin-records",
+      "sources": [
+        "https://www.francemusic.com/french-touch-guide/"
+      ]
+    },
+    {
+      "id": "signed:air-virgin-records",
+      "type": "signed_to",
+      "from": "artist:air",
+      "to": "label:virgin-records",
+      "sources": [
+        "https://www.wmeagency.com/music/air/"
+      ]
+    },
+    {
+      "id": "founded:mogwai-rock-action",
+      "type": "founded",
+      "from": "artist:mogwai",
+      "to": "label:rock-action-records",
+      "sources": [
+        "https://rockactionrecords.com/about"
+      ]
+    },
+    {
+      "id": "origin:label-rotterdam-records-rotterdam",
+      "type": "originated_in",
+      "from": "label:rotterdam-records",
+      "to": "place:rotterdam",
+      "sources": [
+        "https://artsandculture.google.com/story/a-brief-history-of-gabber-the-netherlands-institute-for-sound-and-vision/ugXxcmEzFVvjKQ?hl=en",
+        "https://www.canonvannederland.nl/nl/page/292759/gabber"
+      ],
+      "note": "Founding or primary base location; roster artists have diverse origins."
+    },
+    {
+      "id": "origin:label-ecm-records-munich",
+      "type": "originated_in",
+      "from": "label:ecm-records",
+      "to": "place:munich",
+      "sources": [
+        "https://ecmrecords.com/story/",
+        "https://www.hausderkunst.de/en/eintauchen/ecm-a-cultural-archaeology"
+      ],
+      "note": "Founding or primary base location; roster artists have diverse origins."
+    },
+    {
+      "id": "origin:label-impulse-records-new-york",
+      "type": "originated_in",
+      "from": "label:impulse-records",
+      "to": "place:new-york",
+      "sources": [
+        "https://www.impulserecords.com/our-story/",
+        "https://www.impulserecords.com/artist/john-coltrane-0/"
+      ],
+      "note": "Founding or primary base location; roster artists have diverse origins."
+    },
+    {
+      "id": "origin:label-prestige-records-new-york",
+      "type": "originated_in",
+      "from": "label:prestige-records",
+      "to": "place:new-york",
+      "sources": [
+        "https://concord.com/labels/prestige-records/",
+        "https://www.milesdavis.com/timeline-1950/"
+      ],
+      "note": "Founding or primary base location; roster artists have diverse origins."
+    },
+    {
+      "id": "origin:label-fania-records-new-york",
+      "type": "originated_in",
+      "from": "label:fania-records",
+      "to": "place:new-york",
+      "sources": [
+        "https://fania.com/history/",
+        "https://www.uspto.gov/learning-and-resources/journeys-innovation/historical-stories/inventing-salsa"
+      ],
+      "note": "Founding or primary base location; roster artists have diverse origins."
+    },
+    {
+      "id": "origin:artist-nusrat-fateh-ali-khan-faisalabad",
+      "type": "originated_in",
+      "from": "artist:nusrat-fateh-ali-khan",
+      "to": "place:faisalabad",
+      "sources": [
+        "https://faisalabad.punjab.gov.pk/important-personalities"
+      ],
+      "note": "Born in Faisalabad."
+    },
+    {
+      "id": "origin:artist-the-sabri-brothers-karachi",
+      "type": "originated_in",
+      "from": "artist:sabri-brothers",
+      "to": "place:karachi",
+      "sources": [
+        "https://radio.gov.pk/05-04-2022/28th-death-anniversary-of-qawwal-ghulam-farid-sabri-observed"
+      ],
+      "note": "The brothers settled in Karachi after Partition and formed their performing partnership there."
+    },
+    {
+      "id": "origin:artist-dorival-caymmi-salvador",
+      "type": "originated_in",
+      "from": "artist:dorival-caymmi",
+      "to": "place:salvador",
+      "sources": [
+        "https://pesquisaescolar.fundaj.gov.br/en/artigo/dorival-caymmi/"
+      ],
+      "note": "Born in Salvador, Bahia."
+    },
+    {
+      "id": "origin:artist-dj-maphorisa-pretoria",
+      "type": "originated_in",
+      "from": "artist:dj-maphorisa",
+      "to": "place:pretoria",
+      "sources": [
+        "https://viranova.co.za/artist/dj-maphorisa"
+      ],
+      "note": "Born in Soshanguve, north of Pretoria."
+    },
+    {
+      "id": "origin:scene-rotterdam-gabber-scene-rotterdam",
+      "type": "originated_in",
+      "from": "scene:rotterdam-gabber-scene",
+      "to": "place:rotterdam",
+      "sources": [
+        "https://www.canonvannederland.nl/nl/page/292759/gabber"
+      ],
+      "note": "Regional scene geography; not an exclusive origin claim."
+    },
+    {
+      "id": "origin:scene-cali-salsa-scene-cali",
+      "type": "originated_in",
+      "from": "scene:cali-salsa-scene",
+      "to": "place:cali",
+      "sources": [
+        "https://colombia.travel/en/cali/salsa"
+      ],
+      "note": "Regional scene geography; not an exclusive origin claim."
+    },
+    {
+      "id": "origin:scene-javanese-gamelan-traditions-yogyakarta",
+      "type": "originated_in",
+      "from": "scene:javanese-gamelan-traditions",
+      "to": "place:yogyakarta",
+      "sources": [
+        "https://asia.si.edu/explore-art-culture/audio/javanese-gamelan-music/"
+      ],
+      "note": "Regional scene geography; not an exclusive origin claim."
+    },
+    {
+      "id": "origin:scene-balinese-gamelan-traditions-bali",
+      "type": "originated_in",
+      "from": "scene:balinese-gamelan-traditions",
+      "to": "place:bali",
+      "sources": [
+        "https://asia.si.edu/shimmering-sounds-from-bali-the-gamelan-ensemble-of-the-indonesian-institute-of-the-arts/"
+      ],
+      "note": "Regional scene geography; not an exclusive origin claim."
+    },
+    {
+      "id": "origin:scene-gauteng-amapiano-scene-pretoria",
+      "type": "originated_in",
+      "from": "scene:gauteng-amapiano-scene",
+      "to": "place:pretoria",
+      "sources": [
+        "https://www.wits.ac.za/curiosity/latest/issue-19/disruption/the-musical-that-moved-the-world-to-sas-beat.html"
+      ],
+      "note": "Regional scene geography; not an exclusive origin claim."
+    },
+    {
+      "id": "origin:scene-gauteng-amapiano-scene-johannesburg",
+      "type": "originated_in",
+      "from": "scene:gauteng-amapiano-scene",
+      "to": "place:johannesburg",
+      "sources": [
+        "https://www.wits.ac.za/curiosity/latest/issue-19/disruption/the-musical-that-moved-the-world-to-sas-beat.html"
+      ],
+      "note": "Regional scene geography; not an exclusive origin claim."
+    },
+    {
+      "id": "origin:genre-gabber-rotterdam",
+      "type": "originated_in",
+      "from": "genre:gabber",
+      "to": "place:rotterdam",
+      "sources": [
+        "https://artsandculture.google.com/story/a-brief-history-of-gabber-the-netherlands-institute-for-sound-and-vision/ugXxcmEzFVvjKQ?hl=en"
+      ],
+      "note": "Rotterdam was a central early scene and label hub."
+    },
+    {
+      "id": "origin:genre-salsa-cali",
+      "type": "originated_in",
+      "from": "genre:salsa",
+      "to": "place:cali",
+      "sources": [
+        "https://folklife.si.edu/magazine/la-vieja-guardia-salsa-dancing-cali-colombia"
+      ],
+      "note": "Cali developed a distinctive local salsa culture; salsa has broader Caribbean and New York histories."
+    },
+    {
+      "id": "origin:genre-gamelan-bali",
+      "type": "originated_in",
+      "from": "genre:gamelan",
+      "to": "place:bali",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gamelan-01607",
+        "https://asia.si.edu/shimmering-sounds-from-bali-the-gamelan-ensemble-of-the-indonesian-institute-of-the-arts/"
+      ],
+      "note": "One of the major regional traditions; gamelan is not exclusive to Bali."
+    },
+    {
+      "id": "origin:genre-gamelan-yogyakarta",
+      "type": "originated_in",
+      "from": "genre:gamelan",
+      "to": "place:yogyakarta",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gamelan-01607",
+        "https://asia.si.edu/explore-art-culture/audio/javanese-gamelan-music/"
+      ],
+      "note": "One of the major regional traditions; gamelan is not exclusive to Yogyakarta."
+    },
+    {
+      "id": "origin:genre-amapiano-pretoria",
+      "type": "originated_in",
+      "from": "genre:amapiano",
+      "to": "place:pretoria",
+      "sources": [
+        "https://www.wits.ac.za/curiosity/latest/issue-19/disruption/the-musical-that-moved-the-world-to-sas-beat.html"
+      ],
+      "note": "An early Gauteng center; accounts also identify Johannesburg and other townships."
+    },
+    {
+      "id": "signed:john-coltrane-impulse-records",
+      "type": "signed_to",
+      "from": "artist:john-coltrane",
+      "to": "label:impulse-records",
+      "sources": [
+        "https://www.impulserecords.com/artist/john-coltrane-0/",
+        "https://www.impulserecords.com/our-story/"
+      ]
+    },
+    {
+      "id": "signed:miles-davis-prestige-records",
+      "type": "signed_to",
+      "from": "artist:miles-davis",
+      "to": "label:prestige-records",
+      "sources": [
+        "https://www.milesdavis.com/timeline-1950/"
+      ]
+    },
+    {
+      "id": "signed:celia-cruz-fania-records",
+      "type": "signed_to",
+      "from": "artist:celia-cruz",
+      "to": "label:fania-records",
+      "sources": [
+        "https://fania.com/artist-essentials/celia-cruz/"
+      ]
+    },
+    {
+      "id": "signed:willie-colon-fania-records",
+      "type": "signed_to",
+      "from": "artist:willie-colon",
+      "to": "label:fania-records",
+      "sources": [
+        "https://fania.com/artist-essentials/willie-colon/",
+        "https://fania.com/history/"
       ]
     }
   ]
