@@ -2,7 +2,8 @@ import { EDGE_TYPE_LABELS, prominenceLabels, type EdgeType, type Prominence } fr
 import { intensityOpacity, PHASE_STYLE } from '../graph/phases.ts'
 
 export function Legend() {
-  const { model, view } = useExplorer()
+  const { model } = useExplorer()
+  const view = model.view
   const labels = prominenceLabels(view)
   return (
     <div className="flex flex-wrap items-center gap-x-4 gap-y-1">

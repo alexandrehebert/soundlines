@@ -8,6 +8,9 @@ import {
   type SetStateAction,
 } from 'react'
 import { buildIndex } from './graph/graph.ts'
+import {
+  DEFAULT_HISTORY_FILTERS, filtersForSelectedEvent, matchesHistoryFilters, type HistoryFilters,
+} from './graph/history.ts'
 import { revealEraRange } from './graph/layout.ts'
 import {
   createTimelineModel,
@@ -15,8 +18,10 @@ import {
   isTimelineView,
   readTimelineOrders,
   VIEW_PARAMS,
+  viewForNode,
   viewFromParam,
   writeTimelineOrders,
+  type ExplorerView,
   type TimelineOrders,
   type TimelineView,
 } from './graph/timeline.ts'
@@ -27,7 +32,13 @@ import { socialMetadata } from './socialMetadata.ts'
 import { updateDocumentMetadata } from './socialMetadataClient.ts'
 
 type YearRange = [number, number]
-type ExplorerLocation = { view: TimelineView; selectedId: string | null; orders: TimelineOrders; genreDisplay: GenreDisplay }
+type ExplorerLocation = {
+  view: ExplorerView
+  timelineView: TimelineView
+  selectedId: string | null
+  orders: TimelineOrders
+  genreDisplay: GenreDisplay
+}
 
 export function useExplorerState(graph: MusicGraph) {
   const index = useMemo(() => buildIndex(graph), [graph])
@@ -35,14 +46,16 @@ export function useExplorerState(graph: MusicGraph) {
     const params = new URLSearchParams(window.location.search)
     const id = params.get('focus')
     const node = id ? index.nodeById.get(id) : undefined
-    const view: TimelineView = isTimelineView(node?.type) ? node.type : viewFromParam(params.get('view'))
+    const view = viewForNode(node?.type, viewFromParam(params.get('view')))
+    const timelineView = isTimelineView(view) ? view : 'genre'
     const orders = readTimelineOrders(params)
     const genreDisplay = params.get('layout') === 'bubbles' ? 'bubbles' : 'bars'
-    return { view, selectedId: node?.id ?? null, orders, genreDisplay }
+    return { view, timelineView, selectedId: node?.id ?? null, orders, genreDisplay }
   }, [index])
   const [location, setLocation] = useState(readLocation)
-  const { view, selectedId, orders, genreDisplay } = location
-  const order = orders[view]
+  const [historyFilters, setHistoryFilters] = useState<HistoryFilters>(DEFAULT_HISTORY_FILTERS)
+  const { view, timelineView, selectedId, orders, genreDisplay } = location
+  const order = orders[timelineView]
   const [ranges, setRanges] = useState<Record<TimelineView, YearRange>>(() => {
     const node = location.selectedId ? index.nodeById.get(location.selectedId) : undefined
     const initial: Record<TimelineView, YearRange> = {
@@ -50,32 +63,36 @@ export function useExplorerState(graph: MusicGraph) {
       artist: defaultViewRange('artist'),
       instrument: defaultViewRange('instrument'),
     }
-    if (node?.period) {
+    if (node?.period && isTimelineView(location.view)) {
       initial[location.view] = revealEraRange(initial[location.view], node.period.start)
     }
     return initial
   })
-  const model = useMemo(() => createTimelineModel(index, view), [index, view])
+  const model = useMemo(() => createTimelineModel(index, timelineView), [index, timelineView])
 
   useEffect(() => finishPageLoading(), [view, order, genreDisplay])
 
   const revealSelection = useCallback((next: ExplorerLocation) => {
     const node = next.selectedId ? index.nodeById.get(next.selectedId) : undefined
-    if (!node?.period) return
+    if (node?.type === 'event') {
+      setHistoryFilters((current) => filtersForSelectedEvent(current, node))
+    }
+    if (!node?.period || !isTimelineView(next.view)) return
+    const targetView = next.view
     const year = node.period.start
     setRanges((current) => {
-      const [start, end] = current[next.view]
+      const [start, end] = current[targetView]
       if (year >= start && year <= end) return current
       return {
         ...current,
-        [next.view]: revealEraRange([start, end], year),
+        [targetView]: revealEraRange([start, end], year),
       }
     })
   }, [index])
 
   const navigate = useCallback((next: ExplorerLocation) => {
     const update = () => setLocation(next)
-    if (next.view !== view || next.orders[next.view] !== order || next.genreDisplay !== genreDisplay) {
+    if (next.view !== view || next.orders[next.timelineView] !== order || next.genreDisplay !== genreDisplay) {
       transitionPage(update)
     } else {
       update()
@@ -109,18 +126,35 @@ export function useExplorerState(graph: MusicGraph) {
   const selectNode = useCallback((id: string | null) => {
     const node = id ? index.nodeById.get(id) : undefined
     if (id && !node) throw new Error(`Cannot select unknown node ${id}`)
-    const nextView = isTimelineView(node?.type) ? node.type : view
-    const next = { ...location, view: nextView, selectedId: id }
+    const nextView = viewForNode(node?.type, view)
+    const next = {
+      ...location,
+      view: nextView,
+      timelineView: isTimelineView(nextView) ? nextView : timelineView,
+      selectedId: id,
+    }
     revealSelection(next)
     navigate(next)
-  }, [index, view, location, revealSelection, navigate])
+  }, [index, view, timelineView, location, revealSelection, navigate])
 
-  const changeView = useCallback((nextView: TimelineView) => {
+  const changeView = useCallback((nextView: ExplorerView) => {
     if (view === nextView) return
-    navigate({ ...location, view: nextView, selectedId: null })
-  }, [view, location, navigate])
+    navigate({
+      ...location,
+      view: nextView,
+      timelineView: isTimelineView(nextView) ? nextView : timelineView,
+      selectedId: null,
+    })
+  }, [view, timelineView, location, navigate])
+
+  const changeHistoryFilters = useCallback((next: HistoryFilters) => {
+    const node = selectedId ? index.nodeById.get(selectedId) : undefined
+    if (node?.type === 'event' && !matchesHistoryFilters(node, next)) selectNode(null)
+    setHistoryFilters(next)
+  }, [index, selectedId, selectNode])
 
   const changeOrder = useCallback((nextOrder: string) => {
+    if (!isTimelineView(view)) throw new Error('History does not have a timeline order')
     if (nextOrder !== 'family' && nextOrder !== 'oldest-first') {
       throw new Error(`Unknown timeline order ${nextOrder}`)
     }
@@ -135,15 +169,17 @@ export function useExplorerState(graph: MusicGraph) {
 
   const goHome = useCallback(() => {
     const params = new URLSearchParams()
+    setHistoryFilters(DEFAULT_HISTORY_FILTERS)
     setRanges({
       genre: defaultViewRange('genre'),
       artist: defaultViewRange('artist'),
       instrument: defaultViewRange('instrument'),
     })
-    navigate({ view: viewFromParam(null), selectedId: null, orders: readTimelineOrders(params), genreDisplay: 'bars' })
+    navigate({ view: 'genre', timelineView: 'genre', selectedId: null, orders: readTimelineOrders(params), genreDisplay: 'bars' })
   }, [navigate])
 
   const setViewRange = useCallback((range: SetStateAction<YearRange>) => {
+    if (!isTimelineView(view)) throw new Error('History does not have a timeline range')
     setRanges((current) => ({
       ...current,
       [view]: typeof range === 'function' ? range(current[view]) : range,
@@ -152,9 +188,9 @@ export function useExplorerState(graph: MusicGraph) {
 
   return useMemo(() => ({
     index, model, view, selectedId, selectNode, changeView, order, changeOrder,
-    genreDisplay, changeGenreDisplay, goHome,
-    viewRange: ranges[view], setViewRange,
-  }), [index, model, view, selectedId, selectNode, changeView, order, changeOrder, genreDisplay, changeGenreDisplay, goHome, ranges, setViewRange])
+    genreDisplay, changeGenreDisplay, goHome, historyFilters, changeHistoryFilters,
+    viewRange: ranges[timelineView], setViewRange,
+  }), [index, model, view, timelineView, selectedId, selectNode, changeView, order, changeOrder, genreDisplay, changeGenreDisplay, goHome, historyFilters, changeHistoryFilters, ranges, setViewRange])
 }
 
 export const ExplorerContext = createContext<ReturnType<typeof useExplorerState> | null>(null)

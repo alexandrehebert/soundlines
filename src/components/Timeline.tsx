@@ -9,7 +9,8 @@ import { TimelineLinks } from './timeline/TimelineLinks.tsx'
 import { useTimelineViewport } from './timeline/useTimelineViewport.ts'
 
 export function Timeline() {
-  const { model, view, selectedId, viewRange, order } = useExplorer()
+  const { model, selectedId, viewRange, order } = useExplorer()
+  const view = model.view
   const { containerRef, width, select, handlers } = useTimelineViewport()
   const [hoveredId, setHoveredId] = useState<string | null>(null)
   const [labelWidths, setLabelWidths] = useState<Map<string, { name: string; weight: string; width: number }>>(() => new Map())

@@ -1,6 +1,6 @@
 # Soundlines
 
-A chronological map of music genres, artists, instruments, labels, scenes, and the lineages that connect them — the clean rebuild of the `music-tree` project.
+A chronological map of music genres, artists, instruments, labels, scenes, historical events, and the lineages that connect them — the clean rebuild of the `music-tree` project.
 
 Vite, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vitest, linted with oxlint, and deployable to Vercel.
 
@@ -15,13 +15,37 @@ do not trigger it. Reduced-motion preferences disable the spin and fade.
 
 ## The timeline
 
-The main view is a horizontal chronology with three modes: **Genres** (the default),
-**Artists**, and **Instruments**. Each mode renders its own nodes as bars, grouped into family
+The main view is a horizontal chronology with three bar modes: **Genres** (the default),
+**Artists**, and **Instruments**. A fourth **History** view follows dated events through
+the ages. Each bar mode renders its own nodes as bars, grouped into family
 lanes: Classical; Blues, R&B & Soul; Jazz; Country & Folk; Rock; Alternative & Punk;
 Metal; Pop; Hip-hop; Reggae & Ska; Latin; African; Electronica & Ambient;
-Disco & House; Techno & Trance; and Breakbeat & Bass. The current 115 genres are
-spread across these 16 families, with 3–16 genres per family rather than catch-all
+Disco & House; Techno & Trance; and Breakbeat & Bass. Genres are
+spread across these 16 families rather than catch-all
 "Roots" or "UK continuum" lanes. Curved links and highlighting stay within the active mode.
+
+### Music history
+
+The **History** view presents the graph's curated events in chronological order,
+grouped into eras by their starting year. On desktop it fills the available width
+with a horizontally scrolling timeline; mobile keeps a vertical list. Cards are
+spaced for readability, not proportionally to elapsed time. The era buttons jump
+through the timeline, and selecting an event scrolls it into view on either layout.
+Dates marked `c.` or `approx.` are not exact, and events spanning years are
+listed under their start. The current event collection runs from approximately
+900 to 2021 and is not an exhaustive or geographically balanced account.
+
+Show all events or just **Landmarks**, and filter by topic. Landmark status is an
+editorial selection, not a measured ranking. Select an event to see its sources
+and all relationships in the detail panel, or use its connected-node chips to
+explore the graph. Selecting an event through search or a relationship opens
+History and reveals it even if the current filters would hide it.
+
+`?view=history` opens the view; `?focus=event:mtv-launch` shares a specific
+event. Filters are remembered while switching views during the session but are
+not part of the shared URL.
+
+### Bar timelines
 
 Families are recognizable browsing groups, not claims that every member is a
 subgenre of the lane name or shares a single origin. For example, Disco & House
@@ -96,8 +120,8 @@ graph relationships. Artist lanes and detail badges use the same families.
   focus uses that same rounded ring before selection, without a native-outline
   flash on pointer down.
 - Artists switches to artist bars, not an overlay on the genre timeline; artist bubbles are currently removed
-- Search and related-node navigation switch modes automatically when selecting an artist or genre and bring the selected bar into view
-- Selection is shareable via `?focus=<node-id>`; `?view=artists` or `?view=instruments` opens that timeline without a selection
+- Search and related-node navigation switch modes automatically when selecting an artist, genre, instrument, or event and bring the selection into view
+- Selection is shareable via `?focus=<node-id>`; `?view=artists`, `?view=instruments`, or `?view=history` opens a view without a selection
 - Shared view and entity URLs return Open Graph and Twitter card metadata in the
   initial HTML, including a Soundlines preview image. Entity previews use their
   name and description (or a type-specific fallback). Genre bubbles have their

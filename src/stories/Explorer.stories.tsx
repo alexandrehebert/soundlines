@@ -24,7 +24,7 @@ export const SearchAboveYearAxis: Story = {
   parameters: { explorer: { initialView: 'artist' } },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
-    const input = canvas.getByPlaceholderText('Search genres, artists, instruments…')
+    const input = canvas.getByPlaceholderText('Search genres, artists, instruments, events…')
     await userEvent.click(input)
     await fireEvent.change(input, { target: { value: 'Juan' } })
     await canvas.findByRole('button', { name: 'Juan Luis Guerra Artist' })
@@ -60,6 +60,56 @@ export const SearchAboveYearAxis: Story = {
 
 export const Instruments: Story = {
   parameters: { explorer: { initialView: 'instrument' } },
+}
+
+export const History: Story = {
+  parameters: { explorer: { initialView: 'history' } },
+}
+
+export const HistoryFilters: Story = {
+  parameters: { explorer: { initialView: 'history' } },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const history = within(canvas.getByRole('region', { name: 'Music history timeline' }))
+    await userEvent.click(history.getByRole('button', { name: 'Landmarks' }))
+    await userEvent.selectOptions(history.getByLabelText('Topic'), 'technology')
+    expect(canvasElement.querySelector('[data-history-event="event:afm-recording-ban-start"]')).not.toBeInTheDocument()
+
+    const search = canvas.getByPlaceholderText('Search genres, artists, instruments, events…')
+    await userEvent.click(search)
+    await fireEvent.change(search, { target: { value: 'AFM recording ban begins' } })
+    await userEvent.click(await canvas.findByRole('button', { name: 'AFM recording ban begins Event' }))
+    await waitFor(() => {
+      expect(history.getByRole('button', { name: 'All events' })).toHaveAttribute('aria-pressed', 'true')
+      expect(history.getByLabelText('Topic')).toHaveValue('all')
+      expect(history.getByRole('button', { name: 'AFM recording ban begins' }))
+        .toHaveAttribute('aria-pressed', 'true')
+    })
+    await waitFor(() => {
+      const viewport = canvasElement.querySelector('[data-history-scroll]')?.getBoundingClientRect()
+      const selected = canvasElement.querySelector('[data-history-event="event:afm-recording-ban-start"]')?.getBoundingClientRect()
+      if (!viewport || !selected) throw new Error('History viewport or selected event is missing')
+      expect(viewport.width).toBeLessThan(canvasElement.clientWidth - 350)
+      expect(selected.left).toBeGreaterThanOrEqual(viewport.left - 1)
+      expect(selected.right).toBeLessThanOrEqual(viewport.right + 1)
+    }, { timeout: 10000 })
+
+    await userEvent.click(history.getByRole('button', { name: 'Landmarks' }))
+    await waitFor(() => {
+      expect(canvasElement.querySelector('[data-history-event="event:afm-recording-ban-start"]')).not.toBeInTheDocument()
+      expect(canvas.queryByRole('heading', { name: 'AFM recording ban begins', level: 2 })).not.toBeInTheDocument()
+    })
+    const views = within(canvas.getByRole('radiogroup', { name: 'Timeline view' }))
+    await userEvent.click(views.getByRole('radio', { name: 'Genres' }))
+    await userEvent.click(views.getByRole('radio', { name: 'History' }))
+    expect(within(canvas.getByRole('region', { name: 'Music history timeline' }))
+      .getByRole('button', { name: 'Landmarks' })).toHaveAttribute('aria-pressed', 'true')
+  },
+}
+
+export const MobileHistory: Story = {
+  globals: { viewport: { value: 'mobile2', isRotated: false } },
+  parameters: { explorer: { initialView: 'history' } },
 }
 
 export const IndependentOrders: Story = {

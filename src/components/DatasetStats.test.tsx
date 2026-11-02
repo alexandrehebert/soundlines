@@ -23,6 +23,7 @@ function render(initialTab: StatsTab) {
       index, model: createTimelineModel(index, 'genre'), view: 'genre',
       selectedId: null, selectNode: vi.fn(), changeView: vi.fn(),
       order: 'family', changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(),
+      historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
       viewRange: [1900, 2000], setViewRange: vi.fn(),
     }}>
       <DatasetStats initialTab={initialTab} onClose={vi.fn()} />

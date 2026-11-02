@@ -13,6 +13,7 @@ describe('social metadata', () => {
     ['/', 'Music Genres | Soundlines'],
     ['/?view=artists', 'Music Artists | Soundlines'],
     ['/?view=instruments', 'Musical Instruments | Soundlines'],
+    ['/?view=history', 'Music History | Soundlines'],
     ['/?layout=bubbles', 'Music Genre Map | Soundlines'],
   ])('describes the %s view', (path, title) => {
     const metadata = socialMetadata(new URL(path, origin), index.nodeById)
@@ -30,6 +31,7 @@ describe('social metadata', () => {
     ['place:detroit', 'Detroit', 'Place', 'artists'],
     ['track:clear', 'Clear', 'Track', 'artists'],
     ['scene:the-warehouse', 'The Warehouse', 'Scene', 'artists'],
+    ['event:mtv-launch', 'MTV launches', 'Event', 'history'],
   ])('describes the %s entity and uses the effective view', (id, name, type, view) => {
     const url = new URL('/?view=artists&sort=oldest-first&layout=bubbles&utm_source=example', origin)
     url.searchParams.set('focus', id)

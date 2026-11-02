@@ -1,5 +1,5 @@
 import {
-  isTimelineView, readTimelineOrders, VIEW_PARAMS, viewFromParam, writeTimelineOrders, type TimelineView,
+  readTimelineOrders, VIEW_PARAMS, viewForNode, viewFromParam, writeTimelineOrders, type ExplorerView,
 } from './graph/timeline.ts'
 import { NODE_TYPE_LABELS, type GraphNode } from './graph/types.ts'
 
@@ -8,7 +8,7 @@ const END_MARKER = '<!-- social-metadata:end -->'
 const IMAGE_ALT = 'Soundlines: a chronological map of music lineages'
 const DESCRIPTION_LIMIT = 200
 
-const VIEW_METADATA: Record<TimelineView, { title: string; description: string }> = {
+const VIEW_METADATA: Record<ExplorerView, { title: string; description: string }> = {
   genre: {
     title: 'Music Genres | Soundlines',
     description: 'Explore the evolution of music genres and the lineages that connect them on the Soundlines timeline.',
@@ -20,6 +20,10 @@ const VIEW_METADATA: Record<TimelineView, { title: string; description: string }
   instrument: {
     title: 'Musical Instruments | Soundlines',
     description: 'Explore the history of musical instruments and the sounds and musicians connected to them on Soundlines.',
+  },
+  history: {
+    title: 'Music History | Soundlines',
+    description: 'Explore pivotal events, inventions, performances, and cultural movements throughout music history on Soundlines.',
   },
 }
 
@@ -53,7 +57,7 @@ function shortenDescription(description: string): string {
 export function socialMetadata(url: URL, nodeById: ReadonlyMap<string, GraphNode>): SocialMetadata {
   const focus = url.searchParams.get('focus')
   const node = focus ? nodeById.get(focus) : undefined
-  const view = isTimelineView(node?.type) ? node.type : viewFromParam(url.searchParams.get('view'))
+  const view = viewForNode(node?.type, viewFromParam(url.searchParams.get('view')))
   const bubbles = url.searchParams.get('layout') === 'bubbles'
   const canonical = new URL('/', url.origin)
   const viewParam = VIEW_PARAMS[view]

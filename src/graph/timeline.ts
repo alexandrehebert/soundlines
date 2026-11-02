@@ -13,9 +13,11 @@ import {
 } from './types.ts'
 
 export type TimelineView = 'genre' | 'artist' | 'instrument'
+export type ExplorerView = TimelineView | 'history'
 export type TimelineOrders = Record<TimelineView, TimelineOrder>
 
 export const TIMELINE_VIEWS: readonly TimelineView[] = ['genre', 'artist', 'instrument']
+export const EXPLORER_VIEWS: readonly ExplorerView[] = [...TIMELINE_VIEWS, 'history']
 
 export const VIEW_LABELS: Record<TimelineView, string> = {
   genre: 'Genre',
@@ -47,6 +49,11 @@ export function isTimelineView(type: string | undefined): type is TimelineView {
   return (TIMELINE_VIEWS as readonly (string | undefined)[]).includes(type)
 }
 
+export function viewForNode(type: string | undefined, currentView: ExplorerView): ExplorerView {
+  if (type === 'event') return 'history'
+  return isTimelineView(type) ? type : currentView
+}
+
 const ARTIST_ORIENTATION: RelationOrientation = {
   influences: 'forward',
   member_of: 'forward',
@@ -59,14 +66,15 @@ export function defaultViewRange(view: TimelineView): [number, number] {
 }
 
 /** URL `view` parameter values; genres are the default and have none. */
-export const VIEW_PARAMS: Record<TimelineView, string | null> = {
+export const VIEW_PARAMS: Record<ExplorerView, string | null> = {
   genre: null,
   artist: 'artists',
   instrument: 'instruments',
+  history: 'history',
 }
 
-export function viewFromParam(param: string | null): TimelineView {
-  return TIMELINE_VIEWS.find((view) => param !== null && VIEW_PARAMS[view] === param) ?? 'genre'
+export function viewFromParam(param: string | null): ExplorerView {
+  return EXPLORER_VIEWS.find((view) => param !== null && VIEW_PARAMS[view] === param) ?? 'genre'
 }
 
 const INSTRUMENT_ORIENTATION: RelationOrientation = {
@@ -128,6 +136,7 @@ export function createTimelineModel(
   )
   const graph = { version: index.graph.version, nodes, edges }
   return {
+    view,
     index: buildIndex(graph),
     lanes: layoutFamilies(graph, now, view),
     orientation,

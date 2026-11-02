@@ -1,4 +1,4 @@
-import { ArrowDownWideNarrow, BarChart3, Bubbles, ChartGantt, Disc3, Guitar, SlidersHorizontal, Users, X, type LucideIcon } from 'lucide-react'
+import { ArrowDownWideNarrow, BarChart3, Bubbles, ChartGantt, Disc3, Guitar, History as HistoryIcon, SlidersHorizontal, Users, X, type LucideIcon } from 'lucide-react'
 import { AnimatePresence, motion, MotionConfig } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent, type PointerEvent } from 'react'
 import { useExplorer } from './ExplorerContext.ts'
@@ -9,28 +9,27 @@ import { Legend } from './components/Legend.tsx'
 import { SearchBar } from './components/SearchBar.tsx'
 import { Timeline } from './components/Timeline.tsx'
 import { GenreBubbles } from './components/GenreBubbles.tsx'
+import { History } from './components/History.tsx'
 import { MOBILE_DETAIL_COLLAPSED_OFFSET, MOBILE_DETAIL_HEIGHT } from './components/mobileDetailSheet.ts'
 import rawGraph from './data/graph.json'
 import type { TimelineOrder } from './graph/layout.ts'
 import type { StatsTab } from './graph/stats.ts'
-import { TIMELINE_VIEWS, VIEW_LABELS, type TimelineView } from './graph/timeline.ts'
+import { EXPLORER_VIEWS, isTimelineView, VIEW_LABELS, type ExplorerView, type TimelineView } from './graph/timeline.ts'
 import type { MusicGraph } from './graph/types.ts'
 
 const graph = rawGraph as MusicGraph
 
-const STAT_LABELS = { genre: 'genres', artist: 'artists', instrument: 'instruments', links: 'links' } as const
+const STAT_LABELS = { genre: 'genres', artist: 'artists', instrument: 'instruments' } as const
 
 export function Explorer() {
   const { index, view, changeView, selectedId, selectNode, order, changeOrder, genreDisplay, goHome } = useExplorer()
   const showingBubbles = view === 'genre' && genreDisplay === 'bubbles'
+  const showingHistory = view === 'history'
   const [optionsOpen, setOptionsOpen] = useState(false)
   const [statsTab, setStatsTab] = useState<StatsTab | null>(null)
   const stats = useMemo(() => {
     const count = (type: string) => index.graph.nodes.filter((node) => node.type === type).length
-    return {
-      genre: count('genre'), artist: count('artist'), instrument: count('instrument'),
-      links: index.graph.edges.length,
-    }
+    return { genre: count('genre'), artist: count('artist'), instrument: count('instrument') }
   }, [index])
 
   useEffect(() => {
@@ -73,11 +72,11 @@ export function Explorer() {
         </div>
         <ViewToggle view={view} changeView={changeView} className="hidden md:flex" />
         {view === 'genre' && <GenreDisplaySelect className="hidden md:flex" />}
-        {!showingBubbles && (
+        {!showingBubbles && isTimelineView(view) && (
           <TimelineOrderSelect view={view} order={order} changeOrder={changeOrder} className="hidden md:flex" />
         )}
         <div className="-mr-2 ml-auto hidden items-center gap-1 text-xs font-medium text-slate-500 md:flex">
-          {(['genre', 'artist', 'instrument', 'links'] as const).map((tab) => (
+          {(['genre', 'artist', 'instrument'] as const).map((tab) => (
             <button
               key={tab}
               type="button"
@@ -90,10 +89,10 @@ export function Explorer() {
           ))}
         </div>
       </header>
-      {!showingBubbles && <div className="hidden border-b border-slate-800/60 bg-slate-950/70 px-5 py-1.5 lg:block"><Legend /></div>}
+      {!showingBubbles && !showingHistory && <div className="hidden border-b border-slate-800/60 bg-slate-950/70 px-5 py-1.5 lg:block"><Legend /></div>}
       <main className="relative flex min-h-0 flex-1">
         <div className="min-w-0 flex-1">
-          {showingBubbles ? <GenreBubbles /> : <Timeline key={`${view}-${order}`} />}
+          {showingHistory ? <History /> : showingBubbles ? <GenreBubbles /> : <Timeline key={`${view}-${order}`} />}
         </div>
         <AnimatePresence>
           {selectedId && (
@@ -110,16 +109,16 @@ export function Explorer() {
           )}
         </AnimatePresence>
       </main>
-      <div className="relative z-40 flex shrink-0 items-center justify-between border-t border-slate-800 bg-slate-950/95 px-3 py-2 pb-[calc(env(safe-area-inset-bottom)+0.5rem)] md:hidden">
-        <ViewToggle view={view} changeView={changeView} />
+      <div className="relative z-40 flex shrink-0 items-center justify-between gap-2 border-t border-slate-800 bg-slate-950/95 px-3 py-2 pb-[calc(env(safe-area-inset-bottom)+0.5rem)] md:hidden">
+        <ViewToggle view={view} changeView={changeView} className="min-w-0 flex-1" />
         <button
           type="button"
           onClick={() => setOptionsOpen(true)}
-          className="flex min-h-11 items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-sm font-semibold text-slate-300 active:bg-slate-800"
-          aria-label="Timeline options and legend"
+          className="flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-sm font-semibold text-slate-300 active:bg-slate-800"
+          aria-label={showingHistory ? 'History options' : 'Timeline options and legend'}
         >
           <SlidersHorizontal className="h-4 w-4" />
-          Options
+          <span className="hidden sm:inline">Options</span>
         </button>
       </div>
       <AnimatePresence>
@@ -134,7 +133,7 @@ export function Explorer() {
             <motion.section
               role="dialog"
               aria-modal="true"
-              aria-label="Timeline options"
+              aria-label={showingHistory ? 'History options' : 'Timeline options'}
               className="max-h-[85dvh] w-full overflow-y-auto rounded-t-3xl border-t border-slate-700 bg-slate-950 px-5 pb-[calc(env(safe-area-inset-bottom)+1.5rem)] pt-3"
               initial={{ y: '100%' }}
               animate={{ y: 0 }}
@@ -144,8 +143,10 @@ export function Explorer() {
             >
               <div className="mb-5 flex items-center justify-between">
                 <div>
-                  <div className="text-base font-bold text-white">Timeline options</div>
-                  <div className="mt-1 text-xs text-slate-500">Adjust the view and explore the legend</div>
+                  <div className="text-base font-bold text-white">{showingHistory ? 'History options' : 'Timeline options'}</div>
+                  <div className="mt-1 text-xs text-slate-500">
+                    {showingHistory ? 'Explore dataset statistics' : 'Adjust the view and explore the legend'}
+                  </div>
                 </div>
                 <button
                   type="button"
@@ -159,10 +160,10 @@ export function Explorer() {
               {view === 'genre' && (
                 <GenreDisplaySelect className="mb-6 flex" />
               )}
-              {!showingBubbles && (
+              {!showingBubbles && isTimelineView(view) && (
                 <TimelineOrderSelect view={view} order={order} changeOrder={changeOrder} className="mb-6 flex" />
               )}
-              {!showingBubbles && <div className="border-t border-slate-800 pt-4"><Legend /></div>}
+              {!showingBubbles && !showingHistory && <div className="border-t border-slate-800 pt-4"><Legend /></div>}
               <button
                 type="button"
                 onClick={() => {
@@ -187,7 +188,9 @@ export function Explorer() {
         )}
       </AnimatePresence>
       <footer className="hidden border-t border-slate-800/60 bg-slate-950/90 px-5 py-1.5 text-[11px] font-medium text-slate-600 md:block">
-        {showingBubbles
+        {showingHistory
+          ? 'Scroll sideways or Shift + wheel through history · filter by topic or landmarks · select an event for connections and sources'
+          : showingBubbles
           ? 'Size and brightness show catalogue influence · drag or scroll to move · pinch or ⌘ scroll to zoom · click a bubble for details'
           : 'Drag or scroll to move · pinch or ⌘ scroll to zoom · click a bar for details'}
       </footer>
@@ -294,10 +297,11 @@ function useToggleNavigation<T extends string>(
   return { buttonRefs, handleKeyDown }
 }
 
-const VIEW_OPTIONS: Record<TimelineView, { label: string; Icon: LucideIcon }> = {
+const VIEW_OPTIONS: Record<ExplorerView, { label: string; Icon: LucideIcon }> = {
   genre: { label: 'Genres', Icon: Disc3 },
   artist: { label: 'Artists', Icon: Users },
   instrument: { label: 'Instruments', Icon: Guitar },
+  history: { label: 'History', Icon: HistoryIcon },
 }
 
 export function ViewToggle({
@@ -305,12 +309,12 @@ export function ViewToggle({
   changeView,
   className = '',
 }: {
-  view: TimelineView
-  changeView: (view: TimelineView) => void
+  view: ExplorerView
+  changeView: (view: ExplorerView) => void
   className?: string
 }) {
   const indicatorId = useId()
-  const options = TIMELINE_VIEWS
+  const options = EXPLORER_VIEWS
   const { buttonRefs, handleKeyDown } = useToggleNavigation(view, options, changeView)
 
   return (
@@ -334,11 +338,13 @@ export function ViewToggle({
             aria-checked={selected}
             tabIndex={selected ? 0 : -1}
             onClick={() => changeView(type)}
-            className={toggleButtonClass(selected)}
+            className={`relative flex min-h-9 min-w-0 flex-auto items-center justify-center gap-1 rounded-full px-1.5 text-[11px] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:min-h-0 md:flex-none md:px-3 md:py-1 md:text-xs ${
+              selected ? 'text-cyan-200' : 'text-slate-500 hover:text-slate-300'
+            }`}
           >
             {selected && <ToggleIndicator layoutId={`view-toggle-indicator-${indicatorId}`} />}
             <span className="relative flex items-center gap-1.5">
-              <Icon className="h-3.5 w-3.5" />
+              <Icon className="hidden h-3.5 w-3.5 min-[380px]:block" aria-hidden="true" />
               {label}
             </span>
           </button>

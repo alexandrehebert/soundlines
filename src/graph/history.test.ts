@@ -1,0 +1,90 @@
+import { describe, expect, it } from 'vitest'
+import rawGraph from '../data/graph.json'
+import type { MusicGraph } from './types.ts'
+import {
+  DEFAULT_HISTORY_FILTERS,
+  filtersForSelectedEvent,
+  formatEventPeriod,
+  groupHistoryEvents,
+  historyEvents,
+} from './history.ts'
+
+const graph: MusicGraph = {
+  version: 1,
+  nodes: [
+    { id: 'event:later', type: 'event', name: 'Later', category: 'media',
+      period: { start: 2008, end: 2008 }, significance: 'notable' },
+    { id: 'event:early', type: 'event', name: 'Early', category: 'publication',
+      period: { start: 1025, end: 1025, precision: 'circa' }, significance: 'landmark' },
+    { id: 'event:a', type: 'event', name: 'A', category: 'technology',
+      period: { start: 1900, end: 1900 }, significance: 'landmark' },
+    { id: 'event:b', type: 'event', name: 'B', category: 'media',
+      period: { start: 1900, end: 1900 }, significance: 'notable' },
+    { id: 'genre:other', type: 'genre', name: 'Other', period: { start: 500 } },
+  ],
+  edges: [],
+}
+
+describe('history chronology', () => {
+  it('orders all events by start year, then name and id, without changing the graph', () => {
+    const events = historyEvents(graph)
+    expect(events.map((event) => event.id)).toEqual([
+      'event:early', 'event:a', 'event:b', 'event:later',
+    ])
+    expect(graph.nodes[0].id).toBe('event:later')
+  })
+
+  it('groups events into eras and filters by landmark and topic', () => {
+    const events = historyEvents(graph)
+    const all = groupHistoryEvents(events, DEFAULT_HISTORY_FILTERS)
+    expect(all.map((group) => [group.id, group.events.map((event) => event.id)])).toEqual([
+      ['before-1400', ['event:early']],
+      ['1900-1949', ['event:a', 'event:b']],
+      ['2000-onward', ['event:later']],
+    ])
+    expect(groupHistoryEvents(events, { category: 'media', landmarksOnly: false })
+      .flatMap((group) => group.events.map((event) => event.id))).toEqual(['event:b', 'event:later'])
+    expect(groupHistoryEvents(events, { category: 'technology', landmarksOnly: true })
+      .flatMap((group) => group.events.map((event) => event.id))).toEqual(['event:a'])
+    expect(groupHistoryEvents(events, { category: 'media', landmarksOnly: true })).toEqual([])
+  })
+
+  it('widens only the filters that would hide a selected event', () => {
+    const events = historyEvents(graph)
+    const early = events.find((event) => event.id === 'event:early')!
+    const later = events.find((event) => event.id === 'event:later')!
+    expect(filtersForSelectedEvent({ category: 'media', landmarksOnly: true }, early))
+      .toEqual({ category: 'all', landmarksOnly: true })
+    expect(filtersForSelectedEvent({ category: 'media', landmarksOnly: true }, later))
+      .toEqual({ category: 'media', landmarksOnly: false })
+    expect(filtersForSelectedEvent({ category: 'all', landmarksOnly: false }, later))
+      .toEqual(DEFAULT_HISTORY_FILTERS)
+  })
+
+  it('represents single years, ranges, and approximate dates without implying false precision', () => {
+    expect(formatEventPeriod({ start: 1981, end: 1981, precision: 'year' })).toBe('1981')
+    expect(formatEventPeriod({ start: 1025, end: 1025, precision: 'circa' })).toBe('c. 1025')
+    expect(formatEventPeriod({ start: 1940, end: 1949, precision: 'circa' })).toBe('c. 1940 – 1949')
+    expect(formatEventPeriod({ start: 1910, end: 1970, precision: 'decade' })).toBe('1910 – 1970 (approx.)')
+    expect(formatEventPeriod({ start: 2000 })).toBe('2000 – now')
+  })
+
+  it('reports invalid event data instead of silently omitting it', () => {
+    expect(() => historyEvents({ ...graph, nodes: [{ id: 'event:bad', type: 'event', name: 'Bad' }] }))
+      .toThrow('event:bad')
+    expect(() => historyEvents({
+      ...graph,
+      nodes: [{ id: 'event:bad', type: 'event', name: 'Bad', category: 'media', period: { start: 2000, end: 1999 } }],
+    })).toThrow('event:bad')
+  })
+
+  it('includes every event in the real graph exactly once, in chronological order', () => {
+    const data = rawGraph as MusicGraph
+    const events = historyEvents(data)
+    const grouped = groupHistoryEvents(events, DEFAULT_HISTORY_FILTERS).flatMap((group) => group.events)
+    expect(events).toHaveLength(data.nodes.filter((node) => node.type === 'event').length)
+    expect(grouped.map((event) => event.id)).toEqual(events.map((event) => event.id))
+    expect(events[0].period.start).toBe(900)
+    expect(events.at(-1)?.period.start).toBe(2021)
+  })
+})

@@ -3,26 +3,26 @@ import { ExplorerContext } from '../src/ExplorerContext.ts'
 import rawGraph from '../src/data/graph.json'
 import type { GenreDisplay } from '../src/graph/bubbles.ts'
 import { buildIndex } from '../src/graph/graph.ts'
+import {
+  DEFAULT_HISTORY_FILTERS, filtersForSelectedEvent, matchesHistoryFilters, type HistoryFilters,
+} from '../src/graph/history.ts'
 import { revealEraRange, type TimelineOrder } from '../src/graph/layout.ts'
 import {
-  createTimelineModel, defaultViewRange, isTimelineView, type TimelineOrders, type TimelineView,
+  createTimelineModel, defaultViewRange, isTimelineView, viewForNode,
+  type ExplorerView, type TimelineOrders, type TimelineView,
 } from '../src/graph/timeline.ts'
 import type { GraphNode, MusicGraph } from '../src/graph/types.ts'
 
 type YearRange = [number, number]
 
 export interface StoryExplorerOptions {
-  initialView?: TimelineView
+  initialView?: ExplorerView
   initialSelectedId?: string | null
   initialOrder?: TimelineOrder
   initialGenreDisplay?: GenreDisplay
 }
 
 const index = buildIndex(rawGraph as MusicGraph)
-
-function nodeView(node: GraphNode | undefined, currentView: TimelineView): TimelineView {
-  return isTimelineView(node?.type) ? node.type : currentView
-}
 
 function revealNode(range: YearRange, node: GraphNode | undefined): YearRange {
   const year = node?.period?.start
@@ -41,16 +41,19 @@ export function ExplorerStoryProvider({
   const [location, setLocation] = useState(() => {
     const node = initialSelectedId ? index.nodeById.get(initialSelectedId) : undefined
     if (initialSelectedId && !node) throw new Error(`Unknown story node ${initialSelectedId}`)
-    const view = nodeView(node, initialView)
+    const view = viewForNode(node?.type, initialView)
+    const timelineView = isTimelineView(view) ? view : 'genre'
     const orders: TimelineOrders = { genre: 'family', artist: 'family', instrument: 'family' }
-    orders[view] = initialOrder
+    orders[timelineView] = initialOrder
     return {
       view,
+      timelineView,
       selectedId: initialSelectedId,
       orders,
       genreDisplay: initialGenreDisplay,
     }
   })
+  const [historyFilters, setHistoryFilters] = useState<HistoryFilters>(DEFAULT_HISTORY_FILTERS)
   const [ranges, setRanges] = useState<Record<TimelineView, YearRange>>(() => {
     const initial: Record<TimelineView, YearRange> = {
       genre: defaultViewRange('genre'),
@@ -58,31 +61,49 @@ export function ExplorerStoryProvider({
       instrument: defaultViewRange('instrument'),
     }
     const node = location.selectedId ? index.nodeById.get(location.selectedId) : undefined
-    initial[location.view] = revealNode(initial[location.view], node)
+    if (isTimelineView(location.view)) {
+      initial[location.view] = revealNode(initial[location.view], node)
+    }
     return initial
   })
-  const model = useMemo(() => createTimelineModel(index, location.view), [location.view])
+  const model = useMemo(() => createTimelineModel(index, location.timelineView), [location.timelineView])
 
   const selectNode = useCallback((id: string | null) => {
     const node = id ? index.nodeById.get(id) : undefined
     if (id && !node) throw new Error(`Cannot select unknown node ${id}`)
-    const view = nodeView(node, location.view)
-    setLocation((current) => ({ ...current, view, selectedId: id }))
-    if (node?.period) {
+    if (node?.type === 'event') {
+      setHistoryFilters((current) => filtersForSelectedEvent(current, node))
+    }
+    const view = viewForNode(node?.type, location.view)
+    setLocation((current) => ({
+      ...current, view, timelineView: isTimelineView(view) ? view : current.timelineView, selectedId: id,
+    }))
+    if (node?.period && isTimelineView(view)) {
       setRanges((current) => ({ ...current, [view]: revealNode(current[view], node) }))
     }
   }, [location.view])
 
-  const changeView = useCallback((view: TimelineView) => {
-    setLocation((current) => current.view === view ? current : { ...current, view, selectedId: null })
+  const changeView = useCallback((view: ExplorerView) => {
+    setLocation((current) => current.view === view ? current : {
+      ...current, view, timelineView: isTimelineView(view) ? view : current.timelineView, selectedId: null,
+    })
   }, [])
+
+  const changeHistoryFilters = useCallback((next: HistoryFilters) => {
+    const node = location.selectedId ? index.nodeById.get(location.selectedId) : undefined
+    if (node?.type === 'event' && !matchesHistoryFilters(node, next)) selectNode(null)
+    setHistoryFilters(next)
+  }, [location.selectedId, selectNode])
 
   const changeOrder = useCallback((order: string) => {
     if (order !== 'family' && order !== 'oldest-first') {
       throw new Error(`Unknown timeline order ${order}`)
     }
-    setLocation((current) => current.orders[current.view] === order ? current : {
-      ...current, orders: { ...current.orders, [current.view]: order },
+    setLocation((current) => {
+      if (!isTimelineView(current.view)) throw new Error('History does not have a timeline order')
+      return current.orders[current.view] === order ? current : {
+        ...current, orders: { ...current.orders, [current.view]: order },
+      }
     })
   }, [])
 
@@ -91,8 +112,10 @@ export function ExplorerStoryProvider({
   }, [])
 
   const goHome = useCallback(() => {
+    setHistoryFilters(DEFAULT_HISTORY_FILTERS)
     setLocation({
       view: 'genre',
+      timelineView: 'genre',
       selectedId: null,
       orders: { genre: 'family', artist: 'family', instrument: 'family' },
       genreDisplay: 'bars',
@@ -105,9 +128,11 @@ export function ExplorerStoryProvider({
   }, [])
 
   const setViewRange = useCallback((range: SetStateAction<YearRange>) => {
+    if (!isTimelineView(location.view)) throw new Error('History does not have a timeline range')
+    const view = location.view
     setRanges((current) => ({
       ...current,
-      [location.view]: typeof range === 'function' ? range(current[location.view]) : range,
+      [view]: typeof range === 'function' ? range(current[view]) : range,
     }))
   }, [location.view])
 
@@ -115,15 +140,17 @@ export function ExplorerStoryProvider({
     index,
     model,
     ...location,
-    order: location.orders[location.view],
+    order: location.orders[location.timelineView],
     selectNode,
     changeView,
     changeOrder,
     changeGenreDisplay,
     goHome,
-    viewRange: ranges[location.view],
+    historyFilters,
+    changeHistoryFilters,
+    viewRange: ranges[location.timelineView],
     setViewRange,
-  }), [model, location, selectNode, changeView, changeOrder, changeGenreDisplay, goHome, ranges, setViewRange])
+  }), [model, location, selectNode, changeView, changeOrder, changeGenreDisplay, goHome, historyFilters, changeHistoryFilters, ranges, setViewRange])
 
   return <ExplorerContext.Provider value={value}>{children}</ExplorerContext.Provider>
 }

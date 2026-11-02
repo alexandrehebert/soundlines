@@ -11,7 +11,8 @@ interface TimelineLinksProps {
 }
 
 export function TimelineLinks({ barById, scale, highlightedEdges }: TimelineLinksProps) {
-  const { model, view } = useExplorer()
+  const { model } = useExplorer()
+  const view = model.view
   return model.index.graph.edges.map((edge) => {
     const sourceId = lineageSource(edge, model.orientation)
     const targetId = lineageTarget(edge, model.orientation)

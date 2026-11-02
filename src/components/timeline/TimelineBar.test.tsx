@@ -23,6 +23,7 @@ function renderBar(node: GraphNode, selected: boolean, indicator?: OffscreenIndi
       selectedId: selected ? node.id : null, selectNode: vi.fn(), changeView: vi.fn(),
       order: 'family', changeOrder: vi.fn(),
       genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(),
+      historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
       viewRange: [1948, 2026], setViewRange: vi.fn(),
     }}>
       <svg>

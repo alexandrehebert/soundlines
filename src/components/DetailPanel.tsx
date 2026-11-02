@@ -1,10 +1,12 @@
 import { X } from 'lucide-react'
 import { useExplorer } from '../ExplorerContext.ts'
 import { groupedRelations } from '../graph/graph.ts'
+import { formatEventPeriod } from '../graph/history.ts'
 import { timelineFamily } from '../graph/timeline.ts'
 import {
   EDGE_TYPE_INVERSE_LABELS,
   EDGE_TYPE_LABELS,
+  EVENT_CATEGORY_LABELS,
   FAMILY_LABELS,
   NODE_TYPE_LABELS,
   prominenceLabels,
@@ -54,7 +56,7 @@ export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
   if (!node) return null
 
   const typeColor = NODE_TYPE_COLORS[node.type]
-  const period = formatPeriod(node.period)
+  const period = node.type === 'event' && node.period ? formatEventPeriod(node.period) : formatPeriod(node.period)
   const groups = groupedRelations(index, node.id)
   const phases = prominencePhases(node, CURRENT_YEAR)
   const labels = prominenceLabels(node.type)
@@ -75,6 +77,16 @@ export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
             {family && (
               <span className="rounded-full bg-slate-800 px-2.5 py-0.5 text-[11px] font-semibold text-slate-300">
                 {FAMILY_LABELS[family]}
+              </span>
+            )}
+            {node.type === 'event' && node.category && (
+              <span className="rounded-full bg-slate-800 px-2.5 py-0.5 text-[11px] font-semibold text-slate-300">
+                {EVENT_CATEGORY_LABELS[node.category]}
+              </span>
+            )}
+            {node.type === 'event' && node.significance === 'landmark' && (
+              <span className="rounded-full bg-violet-500/15 px-2.5 py-0.5 text-[11px] font-semibold text-violet-300">
+                Landmark
               </span>
             )}
           </div>

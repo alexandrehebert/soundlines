@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import rawGraph from '../data/graph.json'
 import { buildIndex, lineage } from './graph.ts'
-import { artistFamily, createTimelineModel, defaultViewRange, isTimelineView, viewFromParam, VIEW_PARAMS } from './timeline.ts'
+import { artistFamily, createTimelineModel, defaultViewRange, isTimelineView, viewForNode, viewFromParam, VIEW_PARAMS } from './timeline.ts'
 import type { MusicGraph } from './types.ts'
 
 const graph: MusicGraph = {
@@ -108,8 +108,18 @@ describe('timeline projections', () => {
       expect(viewFromParam(VIEW_PARAMS[view])).toBe(view)
     }
     expect(viewFromParam('instruments')).toBe('instrument')
+    expect(viewFromParam('history')).toBe('history')
+    expect(isTimelineView('history')).toBe(false)
     expect(viewFromParam('bogus')).toBe('genre')
     expect(defaultViewRange('instrument')[0]).toBeLessThan(defaultViewRange('genre')[0])
+  })
+
+  it('opens events in history while preserving existing cross-mode node navigation', () => {
+    expect(viewForNode('event', 'artist')).toBe('history')
+    expect(viewForNode('artist', 'history')).toBe('artist')
+    expect(viewForNode('genre', 'history')).toBe('genre')
+    expect(viewForNode('instrument', 'history')).toBe('instrument')
+    expect(viewForNode('track', 'history')).toBe('history')
   })
 
   it('can lay out every artist in the actual dataset once', () => {

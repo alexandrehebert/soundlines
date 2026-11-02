@@ -19,6 +19,16 @@ describe('Storybook explorer provider', () => {
     expect(markup).toContain('data-selected="artist:kraftwerk"')
   })
 
+  it('opens a selected event in the history view', () => {
+    const markup = renderToStaticMarkup(
+      <ExplorerStoryProvider initialSelectedId="event:mtv-launch">
+        <Probe />
+      </ExplorerStoryProvider>,
+    )
+    expect(markup).toContain('data-view="history"')
+    expect(markup).toContain('data-selected="event:mtv-launch"')
+  })
+
   it('reveals an initially selected node outside the default range', () => {
     const markup = renderToStaticMarkup(
       <ExplorerStoryProvider initialSelectedId="genre:baroque">

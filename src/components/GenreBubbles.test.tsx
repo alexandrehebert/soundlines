@@ -26,6 +26,7 @@ function renderBubbles(selectedId: string | null) {
       selectedId, selectNode: vi.fn(), changeView: vi.fn(),
       order: 'family', changeOrder: vi.fn(),
       genreDisplay: 'bubbles', changeGenreDisplay: vi.fn(), goHome: vi.fn(),
+      historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
       viewRange: [1948, 2026], setViewRange: vi.fn(),
     }}>
       <GenreBubbles />

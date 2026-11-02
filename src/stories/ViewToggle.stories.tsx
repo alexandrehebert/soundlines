@@ -9,7 +9,7 @@ const meta = {
   tags: ['autodocs'],
   args: { view: 'genre', changeView: fn() },
   argTypes: {
-    view: { control: 'inline-radio', options: ['genre', 'artist', 'instrument'] },
+    view: { control: 'inline-radio', options: ['genre', 'artist', 'instrument', 'history'] },
     changeView: { control: false },
   },
   render: function Render(args) {
@@ -31,6 +31,7 @@ type Story = StoryObj<typeof meta>
 export const Genres: Story = {}
 export const Artists: Story = { args: { view: 'artist' } }
 export const Instruments: Story = { args: { view: 'instrument' } }
+export const History: Story = { args: { view: 'history' } }
 
 export const KeyboardNavigation: Story = {
   play: async ({ canvasElement }) => {

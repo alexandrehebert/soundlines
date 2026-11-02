@@ -36,6 +36,7 @@ function renderPanel(data: MusicGraph, selectedId: string) {
       changeOrder: vi.fn(),
       genreDisplay: 'bars',
       changeGenreDisplay: vi.fn(), goHome: vi.fn(),
+      historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
       viewRange: [1948, 2026],
       setViewRange: vi.fn(),
     }}>
@@ -45,6 +46,26 @@ function renderPanel(data: MusicGraph, selectedId: string) {
 }
 
 describe('detail panel sources', () => {
+  it('shows event category, landmark status, approximate dates, and graph links', () => {
+    const data: MusicGraph = {
+      ...graph,
+      nodes: [...graph.nodes, {
+        id: 'event:example', type: 'event', name: 'Example event', category: 'society',
+        significance: 'landmark', period: { start: 1910, end: 1970, precision: 'decade' },
+        sources: ['https://example.com/Event'],
+      }],
+      edges: [...graph.edges, {
+        id: 'event-jazz', type: 'shaped', from: 'event:example', to: 'genre:jazz',
+      }],
+    }
+    const markup = renderPanel(data, 'event:example')
+    expect(markup).toContain('Society &amp; migration')
+    expect(markup).toContain('Landmark')
+    expect(markup).toContain('1910 – 1970 (approx.)')
+    expect(markup).toContain('Jazz')
+    expect(markup).toContain('href="https://example.com/Event"')
+  })
+
   it.each([
     ['genre:jazz', 'Jazz', 'Artist', 'Example artist'],
     ['artist:example', 'Artist', 'Jazz', 'Jazz'],

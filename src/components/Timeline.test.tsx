@@ -38,6 +38,7 @@ function renderTimeline(view: TimelineView, order: TimelineOrder, viewRange: [nu
       index, model: createTimelineModel(index, view), view,
       selectedId: null, selectNode: vi.fn(), changeView: vi.fn(),
       order, changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(),
+      historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
       viewRange, setViewRange: vi.fn(),
     }}>
       <Timeline />
