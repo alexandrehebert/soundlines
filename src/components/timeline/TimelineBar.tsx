@@ -54,8 +54,18 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, onHover, o
   const shape = barShape(bar)
   const bounds = barBounds(bar)
   const phases = prominencePhases(bar.node, bar.end)
+  const phaseStart = phases[0]?.start ?? bar.start
+  const phaseEnd = phases.at(-1)?.end ?? bar.end
+  const gradientStart = yearToX(scale, phaseStart)
+  const gradientEnd = yearToX(scale, phaseEnd)
+  const scaledOffset = (offset: number) => (
+    (yearToX(scale, phaseStart + offset * (phaseEnd - phaseStart)) - gradientStart)
+    / (gradientEnd - gradientStart)
+  )
   const stops = intensityStops(bar.node, bar.end)
+    .map((stop) => ({ ...stop, offset: scaledOffset(stop.offset) }))
   const visibility = visibilityStops(bar.node, bar.end)
+    .map((stop) => ({ ...stop, offset: scaledOffset(stop.offset) }))
   const id = bar.node.id.replace(':', '-')
   const clipId = `bar-clip-${id}`
   const gradientId = `bar-prominence-${id}`
@@ -106,8 +116,8 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, onHover, o
           <>
             <linearGradient id={`${tailId}-gradient`} gradientUnits="userSpaceOnUse"
               x1={bounds.x} y1={bar.yCenter} x2={bounds.x + bounds.width} y2={bar.yCenter}>
-              <stop offset={tailFadeOffset(bar)} stopColor="#fff" stopOpacity="1" />
-              <stop offset="1" stopColor="#fff" stopOpacity="0.05" />
+              <stop offset={tailFadeOffset(bar, scale)} stopColor="#fff" stopOpacity="1" />
+              <stop offset="1" stopColor="#fff" stopOpacity="0" />
             </linearGradient>
             <mask id={tailId} maskUnits="userSpaceOnUse"
               x={bounds.x - maskPadding} y={bar.yCenter - BAR_H} width={bounds.width + maskPadding * 2} height={BAR_H * 2}>
@@ -118,7 +128,7 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, onHover, o
         )}
         {stops.length > 0 && (
           <linearGradient id={gradientId} gradientUnits="userSpaceOnUse"
-            x1={bar.x1} x2={bar.x2} y1={bar.yCenter} y2={bar.yCenter}>
+            x1={gradientStart} x2={gradientEnd} y1={bar.yCenter} y2={bar.yCenter}>
             {stops.map((stop) => (
               <stop key={stop.offset} offset={stop.offset}
                 stopColor={intensityColor(bar.color, stop.level)}
@@ -129,7 +139,7 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, onHover, o
         {hasHiddenPhase && (
           <>
             <linearGradient id={`${visibilityId}-gradient`} gradientUnits="userSpaceOnUse"
-              x1={bar.x1} x2={bar.x2} y1={bar.yCenter} y2={bar.yCenter}>
+              x1={gradientStart} x2={gradientEnd} y1={bar.yCenter} y2={bar.yCenter}>
               {visibility.map((stop) => (
                 <stop key={stop.offset} offset={stop.offset} stopColor="#fff" stopOpacity={stop.level} />
               ))}

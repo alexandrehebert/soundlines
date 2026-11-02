@@ -2,12 +2,15 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it, vi } from 'vitest'
 import { ExplorerContext } from '../../ExplorerContext.ts'
 import { buildIndex } from '../../graph/graph.ts'
+import { yearToX, type TimeScale } from '../../graph/layout.ts'
+import { intensityStops, visibilityStops } from '../../graph/phases.ts'
 import { createTimelineModel } from '../../graph/timeline.ts'
 import type { GraphNode } from '../../graph/types.ts'
 import { TimelineBar } from './TimelineBar.tsx'
 import type { BarPosition, OffscreenIndicator } from './geometry.ts'
 
-function renderBar(node: GraphNode, selected: boolean, indicator?: OffscreenIndicator, position?: Partial<BarPosition>) {
+function renderBar(node: GraphNode, selected: boolean, indicator?: OffscreenIndicator, position?: Partial<BarPosition>,
+  scale: TimeScale = { start: 1948, end: 2026, width: 800 }) {
   const index = buildIndex({ version: 1, nodes: [node], edges: [] })
   const view = node.type === 'artist' ? 'artist' : 'genre'
   const bar: BarPosition = {
@@ -23,7 +26,7 @@ function renderBar(node: GraphNode, selected: boolean, indicator?: OffscreenIndi
       viewRange: [1948, 2026], setViewRange: vi.fn(),
     }}>
       <svg>
-        <TimelineBar bar={bar} scale={{ start: 1948, end: 2026, width: 800 }}
+        <TimelineBar bar={bar} scale={scale}
           dimmed={false} indicator={indicator} onHover={vi.fn()} onSelect={vi.fn()} />
       </svg>
     </ExplorerContext.Provider>,
@@ -41,6 +44,47 @@ describe('bar selection outline', () => {
       ] },
     { id: 'artist:a', type: 'artist', name: 'Artist', family: 'jazz', period: { start: 1960 } },
   ]
+
+  it('fades historical bar tails all the way to transparency', () => {
+    const node: GraphNode = {
+      id: 'genre:historical', type: 'genre', name: 'Historical', family: 'classical',
+      period: { start: 500, end: 1400 },
+    }
+    const scale = { start: 500, end: 2028, width: 800 }
+    const x1 = yearToX(scale, 500)
+    const x2 = yearToX(scale, 1400)
+    const markup = renderBar(node, true, undefined, {
+      start: 500, end: 1400, x1, x2, visibleSpans: [[x1, x2]],
+    }, scale)
+    expect(markup).toContain(`<stop offset="${1 - 22 / (x2 - x1)}" stop-color="#fff" stop-opacity="1"`)
+    expect(markup).toContain('<stop offset="1" stop-color="#fff" stop-opacity="0"')
+    expect(markup).toContain('</g></g><text data-bar-label="inside"')
+  })
+
+  it('aligns prominence and hidden-phase stops with the era-weighted year positions', () => {
+    const node: GraphNode = {
+      id: 'genre:historical', type: 'genre', name: 'Historical', family: 'classical',
+      period: { start: 1300, end: 1800 },
+      phases: [
+        { start: 1300, prominence: 'golden-age' },
+        { start: 1600, prominence: 'niche' },
+        { start: 1750, prominence: 'established' },
+      ],
+    }
+    const scale = { start: 500, end: 2028, width: 800 }
+    const x1 = yearToX(scale, 1300)
+    const x2 = yearToX(scale, 1800)
+    const markup = renderBar(node, false, undefined, {
+      start: 1300, end: 1800, x1, x2, visibleSpans: [[x1, yearToX(scale, 1600)], [yearToX(scale, 1750), x2]],
+    }, scale)
+    for (const stops of [intensityStops(node, 1800), visibilityStops(node, 1800)]) {
+      for (const stop of stops) {
+        const offset = (yearToX(scale, 1300 + stop.offset * 500) - x1) / (x2 - x1)
+        expect(markup).toContain(`<stop offset="${offset}"`)
+      }
+    }
+    expect(markup).toContain(`x1="${x1}" x2="${x2}" y1="50" y2="50"`)
+  })
 
   it.each(nodes)('keeps the rounded outline ready before $id is selected', (node) => {
     const markup = renderBar(node, true)

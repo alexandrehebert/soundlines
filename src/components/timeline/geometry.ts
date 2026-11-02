@@ -193,6 +193,8 @@ export function barShape(bar: BarPosition): string {
   return `M ${left} ${top} H ${right} V ${top + BAR_H} H ${left} A ${r} ${r} 0 0 1 ${left} ${top}`
 }
 
-export function tailFadeOffset(bar: BarPosition): number {
-  return Math.max(0, 1 - 2 / (bar.end - bar.start))
+export function tailFadeOffset(bar: BarPosition, scale: TimeScale): number {
+  const bounds = barBounds(bar)
+  const finalYearsWidth = bounds.x + bounds.width - yearToX(scale, Math.max(bar.start, bar.end - 2))
+  return Math.max(0, 1 - Math.max(BAR_H, finalYearsWidth) / bounds.width)
 }

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { layoutFamilies } from '../../graph/layout.ts'
+import { layoutFamilies, yearToX, type TimeScale } from '../../graph/layout.ts'
 import type { MusicGraph } from '../../graph/types.ts'
-import { AXIS_H, BAR_H, barLabel, barShape, offscreenIndicators, positionTimeline, revealBarScrollTop, snapToSpans, tailFadeOffset, type BarPosition } from './geometry.ts'
+import { AXIS_H, BAR_H, barBounds, barLabel, barShape, offscreenIndicators, positionTimeline, revealBarScrollTop, snapToSpans, tailFadeOffset, type BarPosition } from './geometry.ts'
 
 const bar: BarPosition = {
   node: { id: 'artist:a', type: 'artist', name: 'A', period: { start: 1960 } },
@@ -254,9 +254,48 @@ describe('shared bar geometry', () => {
     expect(barShape({ ...bar, ended: true })).toContain('H 300 V 61')
   })
 
-  it('fades only the final two years, without dimming the latter half of a career', () => {
-    expect(tailFadeOffset({ ...bar, start: 1960, end: 2000 })).toBe(0.95)
-    expect(tailFadeOffset({ ...bar, start: 1960, end: 1961 })).toBe(0)
+  describe('ended bar fades', () => {
+    function endedBar(start: number, end: number, scale: TimeScale): BarPosition {
+      return { ...bar, start, end, ended: true, x1: yearToX(scale, start), x2: yearToX(scale, end) }
+    }
+
+    it('fades only the final two years when they are already wide enough', () => {
+      const scale = { start: 1960, end: 2000, width: 800 }
+      expect(tailFadeOffset(endedBar(1960, 2000, scale), scale)).toBe(0.95)
+    })
+
+    it.each([[500, 1400], [1400, 1750], [1750, 1900], [1960, 2000]])(
+      'keeps a 22px fade for compressed bars from %i to %i',
+      (start, end) => {
+        const scale = { start: 500, end: 2028, width: 800, padding: 24 }
+        const positioned = endedBar(start, end, scale)
+        const width = barBounds(positioned).width
+        expect((1 - tailFadeOffset(positioned, scale)) * width).toBeCloseTo(BAR_H)
+      },
+    )
+
+    it('maps the final years correctly across an era boundary', () => {
+      const scale = { start: 1740, end: 1752, width: 800 }
+      const positioned = endedBar(1740, 1751, scale)
+      expect(tailFadeOffset(positioned, scale)).toBeCloseTo(
+        (yearToX(scale, 1749) - positioned.x1) / barBounds(positioned).width,
+      )
+    })
+
+    it('caps the fade at the rendered width for short and zero-duration bars', () => {
+      const scale = { start: 500, end: 2028, width: 800 }
+      for (const end of [501, 500]) {
+        expect(tailFadeOffset(endedBar(500, end, scale), scale)).toBe(0)
+      }
+    })
+
+    it('keeps the fade width stable when panning without changing zoom', () => {
+      const scale = { start: 500, end: 2028, width: 800 }
+      const shifted = { ...scale, start: 600, end: 2036 }
+      expect(tailFadeOffset(endedBar(1400, 1750, scale), scale)).toBeCloseTo(
+        tailFadeOffset(endedBar(1400, 1750, shifted), shifted),
+      )
+    })
   })
 
   it('positions artist phases with repeated gaps and no genre-specific assumptions', () => {

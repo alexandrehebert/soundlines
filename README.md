@@ -126,8 +126,10 @@ chart, streaming, or sales measurements and are not comparable popularity
 rankings between artists. Artist periods describe active careers, not ongoing
 posthumous listening. Researched career endings and selected group breaks are
 explicit data.
-Ended bars fade only over their final two years, so the tail effect does not
-artificially dim the latter half of a career.
+Ended bars fade over their final two years, with a minimum fade width of one bar
+height (22px), capped at the bar's width. This keeps compressed historical tails
+visible without dimming the latter half of a long career. Tails reach full
+transparency; phase gradients follow the same era-weighted scale as the bars.
 
 The initial nine examples are approximate, illustrative editorial choices, not
 researched popularity measurements. Their `phaseNote` explains the scope and is
