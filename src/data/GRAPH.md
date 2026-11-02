@@ -26,8 +26,8 @@ rejected.**
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 703 nodes (169 genres, 461 artists, 42 instruments, 7 labels,
-6 places, 14 tracks, 4 scenes) and 1077 edges.
+Current size: 729 nodes (169 genres, 466 artists, 63 instruments, 7 labels,
+6 places, 14 tracks, 4 scenes) and 1133 edges.
 
 ---
 
@@ -125,11 +125,11 @@ are not valid for instruments, and instrument families are not valid for other n
 
 | family       | Label               | Current examples |
 |--------------|---------------------|------------------|
-| `strings`    | Strings             | koto, lute, guitar, violin, double bass, banjo, sitar, sarod, charango, electric guitar, electric bass |
-| `keyboards`  | Keyboards & Organs  | harpsichord, piano, Hammond organ, electric piano, harmonium |
-| `winds`      | Woodwinds & Reeds   | recorder, clarinet, harmonica, accordion, saxophone, bandoneon, quena |
-| `brass`      | Brass               | trombone, valved trumpet, tuba |
-| `percussion` | Percussion          | tabla, conga, drum kit, vibraphone, steelpan, timbales |
+| `strings`    | Strings             | harp, cello, viola, koto, lute, guitar, violin, double bass, banjo, sitar, sarod, charango, balalaika, dobro, pedal steel guitar |
+| `keyboards`  | Keyboards & Organs  | harpsichord, piano, pipe organ, Hammond organ, electric piano, harmonium |
+| `winds`      | Woodwinds & Reeds   | transverse flute, recorder, oboe, bassoon, clarinet, harmonica, accordion, saxophone, bandoneon, quena, bansuri, shō, hichiriki, ryūteki |
+| `brass`      | Brass               | French horn, trombone, valved trumpet, tuba |
+| `percussion` | Percussion          | tabla, bongos, claves, maracas, güiro, conga, drum kit, vibraphone, steelpan, timbales |
 | `electronic` | Electronic & Studio | theremin, modular synthesizer, Minimoog, turntables, sampler, TR-808, TB-303, TR-909, Auto-Tune |
 
 Instrument ids use the generic name unless a specific model defines the sound
@@ -138,6 +138,10 @@ approximate first documented appearance of the recognizable form, usually with
 `precision: 'circa'` (the valved trumpet starts in 1818, not with ancient trumpets).
 Each instrument needs a `description`, `sources`, and at least one sourced
 `featured_in` edge.
+
+The supported period range starts at year 500. When an instrument's documented
+history begins earlier, do not treat 500 as its origin. Describe the earlier
+history and make clear which later form the timeline start represents.
 
 ### Existing genre ids (do not duplicate)
 

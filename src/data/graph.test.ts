@@ -146,39 +146,33 @@ describe('graph.json integrity', () => {
   })
 
   it.each([
-    {
-      instrument: 'instrument:sarod',
-      family: 'strings',
-      genres: ['genre:hindustani-classical'],
-      artists: ['artist:ali-akbar-khan'],
-    },
-    {
-      instrument: 'instrument:harmonium',
-      family: 'keyboards',
-      genres: ['genre:qawwali'],
-      artists: ['artist:farrukh-fateh-ali-khan'],
-    },
-    {
-      instrument: 'instrument:timbales',
-      family: 'percussion',
-      genres: ['genre:salsa', 'genre:latin-jazz'],
-      artists: ['artist:tito-puente'],
-    },
-    {
-      instrument: 'instrument:charango',
-      family: 'strings',
-      genres: ['genre:andean-folk'],
-      artists: ['artist:juan-flores'],
-    },
-    {
-      instrument: 'instrument:quena',
-      family: 'winds',
-      genres: ['genre:andean-folk'],
-      artists: ['artist:juan-flores'],
-    },
-  ])('shows $instrument on the timeline and links its genres and players', ({
-    instrument, family, genres, artists,
-  }) => {
+    ['instrument:sarod', 'strings', ['genre:hindustani-classical'], ['artist:ali-akbar-khan']],
+    ['instrument:harmonium', 'keyboards', ['genre:qawwali'], ['artist:farrukh-fateh-ali-khan']],
+    ['instrument:timbales', 'percussion', ['genre:salsa', 'genre:latin-jazz'], ['artist:tito-puente']],
+    ['instrument:charango', 'strings', ['genre:andean-folk'], ['artist:juan-flores']],
+    ['instrument:quena', 'winds', ['genre:andean-folk'], ['artist:juan-flores']],
+    ['instrument:balalaika', 'strings', ['genre:russian-folk'], ['artist:vasily-andreyev']],
+    ['instrument:bansuri', 'winds', ['genre:hindustani-classical'], ['artist:hariprasad-chaurasia']],
+    ['instrument:bassoon', 'winds', ['genre:baroque', 'genre:classical-period', 'genre:romantic'], []],
+    ['instrument:bongos', 'percussion', ['genre:latin-jazz', 'genre:salsa', 'genre:son-cubano'], []],
+    ['instrument:cello', 'strings', ['genre:baroque', 'genre:classical-period', 'genre:romantic'], ['artist:yo-yo-ma']],
+    ['instrument:claves', 'percussion', ['genre:latin-jazz', 'genre:salsa', 'genre:son-cubano'], ['artist:mongo-santamaria']],
+    ['instrument:dobro', 'strings', ['genre:bluegrass', 'genre:country'], []],
+    ['instrument:french-horn', 'brass', ['genre:baroque', 'genre:classical-period', 'genre:romantic'], []],
+    ['instrument:guiro', 'percussion', ['genre:cumbia', 'genre:salsa', 'genre:son-cubano'], []],
+    ['instrument:harp', 'strings', ['genre:baroque', 'genre:jazz', 'genre:romantic'], ['artist:alice-coltrane', 'artist:dorothy-ashby']],
+    ['instrument:hichiriki', 'winds', ['genre:gagaku'], []],
+    ['instrument:jinghu', 'strings', ['genre:peking-opera'], []],
+    ['instrument:maracas', 'percussion', ['genre:cumbia', 'genre:salsa', 'genre:son-cubano'], []],
+    ['instrument:oboe', 'winds', ['genre:baroque', 'genre:classical-period', 'genre:romantic'], []],
+    ['instrument:pedal-steel-guitar', 'strings', ['genre:alt-country', 'genre:country'], []],
+    ['instrument:pipe-organ', 'keyboards', ['genre:baroque', 'genre:medieval', 'genre:renaissance'], ['artist:bach']],
+    ['instrument:ryuteki', 'winds', ['genre:gagaku'], []],
+    ['instrument:sho', 'winds', ['genre:gagaku'], []],
+    ['instrument:tanpura', 'strings', ['genre:carnatic', 'genre:hindustani-classical', 'genre:qawwali'], []],
+    ['instrument:transverse-flute', 'winds', ['genre:baroque', 'genre:classical-period', 'genre:romantic'], []],
+    ['instrument:viola', 'strings', ['genre:baroque', 'genre:classical-period', 'genre:renaissance'], []],
+  ] as const)('shows %s on the timeline and links its genres and players', (instrument, family, genres, artists) => {
     const index = buildIndex(graph)
     expect(index.nodeById.get(instrument)).toMatchObject({ type: 'instrument', family })
     const model = createTimelineModel(index, 'instrument')
@@ -194,6 +188,17 @@ describe('graph.json integrity', () => {
         expect.objectContaining({ type: 'plays', to: instrument }),
       ]))
     }
+  })
+
+  it.each([
+    ['artist:mongo-santamaria', 1937, 'year'],
+    ['artist:vasily-andreyev', 1884, 'year'],
+    ['artist:yo-yo-ma', 1960, 'circa'],
+    ['instrument:french-horn', 1660, 'circa'],
+    ['instrument:pedal-steel-guitar', 1940, 'circa'],
+    ['instrument:transverse-flute', 1680, 'circa'],
+  ] as const)('anchors %s to a documented performance or instrument form', (id, start, precision) => {
+    expect(graph.nodes.find((node) => node.id === id)?.period).toMatchObject({ start, precision })
   })
 
   it('traces instrument lineage on the instrument timeline only', () => {

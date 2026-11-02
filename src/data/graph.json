@@ -13104,6 +13104,408 @@
       "sources": [
         "https://compassrecords.com/artist/inti-illimani/"
       ]
+    },
+    {
+      "id": "artist:dorothy-ashby",
+      "type": "artist",
+      "name": "Dorothy Ashby",
+      "kind": "person",
+      "family": "jazz",
+      "period": {
+        "start": 1952,
+        "end": 1986,
+        "precision": "year"
+      },
+      "sources": [
+        "https://www.harpsociety.org/jazzharp",
+        "https://www.allmusic.com/artist/dorothy-ashby-mn0000159274/biography"
+      ]
+    },
+    {
+      "id": "artist:hariprasad-chaurasia",
+      "type": "artist",
+      "name": "Hariprasad Chaurasia",
+      "kind": "person",
+      "family": "classical",
+      "period": {
+        "start": 1957,
+        "precision": "year"
+      },
+      "sources": [
+        "https://sangeetnatak.gov.in/public/uploads/awardees/docs/1741332178_Hariprasad%20Chaurasia%20Fellowship%20of%20SNA%202011.pdf",
+        "https://folkways.si.edu/hariprasad-zakir-hussain/venu/world/music/album/smithsonian",
+        "https://www.thegoan.net/crime-courts/classically-timeless/1198.html"
+      ]
+    },
+    {
+      "id": "artist:mongo-santamaria",
+      "type": "artist",
+      "name": "Mongo Santamaría",
+      "kind": "person",
+      "family": "jazz",
+      "period": {
+        "start": 1937,
+        "end": 2003,
+        "precision": "year"
+      },
+      "sources": [
+        "https://nmaahc.si.edu/latinx/mongo-santamaria",
+        "https://www.si.edu/object/claves-used-mongo-santamaria%3Anmah_1290068",
+        "https://www.allmusic.com/artist/mongo-santamaria-mn0000591104/biography"
+      ]
+    },
+    {
+      "id": "artist:vasily-andreyev",
+      "type": "artist",
+      "name": "Vasily Andreyev",
+      "kind": "person",
+      "family": "country-folk",
+      "period": {
+        "start": 1884,
+        "end": 1918,
+        "precision": "year"
+      },
+      "sources": [
+        "https://music-museum.ru/collections/expomusic/vasilij-andreev.html",
+        "https://music-museum.ru/about/news/k-160-letiyu-so-dnya-rozhdeniya-vasiliya-vasilevicha-andreeva-i-k-125-letiyu-sozdaniya-im-velikorusskogo-orkestra.html"
+      ]
+    },
+    {
+      "id": "artist:yo-yo-ma",
+      "type": "artist",
+      "name": "Yo-Yo Ma",
+      "kind": "person",
+      "family": "classical",
+      "period": {
+        "start": 1960,
+        "precision": "circa"
+      },
+      "sources": [
+        "https://www.loc.gov/item/n80016911/yo-yo-ma/",
+        "https://www.yo-yoma.com/biography/",
+        "https://www.britannica.com/biography/Yo-Yo-Ma"
+      ]
+    },
+    {
+      "id": "instrument:balalaika",
+      "type": "instrument",
+      "name": "Balalaika",
+      "family": "strings",
+      "period": {
+        "start": 1688,
+        "precision": "year"
+      },
+      "description": "Three-stringed Russian folk lute documented in writing in 1688; Vasily Andreyev and collaborators standardized concert forms and organized balalaika ensembles in the late 19th century.",
+      "sources": [
+        "https://collection.powerhouse.com.au/object/319134",
+        "https://music-museum.ru/collections/expomusic/vasilij-andreev.html"
+      ]
+    },
+    {
+      "id": "instrument:bansuri",
+      "type": "instrument",
+      "name": "Bansuri",
+      "family": "winds",
+      "period": {
+        "start": 1940,
+        "precision": "circa"
+      },
+      "description": "Side-blown bamboo flute with long-standing South Asian roots; the modern concert bansuri was developed into a solo instrument for Hindustani classical performance in the mid-20th century.",
+      "sources": [
+        "https://folkways.si.edu/hariprasad-zakir-hussain/venu/world/music/album/smithsonian",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/2108",
+        "https://dimultimusic.co.id/vst/research/bansuri/"
+      ]
+    },
+    {
+      "id": "instrument:bassoon",
+      "type": "instrument",
+      "name": "Bassoon",
+      "family": "winds",
+      "period": {
+        "start": 1650,
+        "precision": "circa"
+      },
+      "description": "Low double-reed woodwind developed from the dulcian; its multi-jointed form emerged in the second half of the 17th century and became a bass voice in orchestras and continuo groups.",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/503660",
+        "https://www.vam.ac.uk/__data/assets/pdf_file/0011/178499/Catalogue_Wind_Instruments.pdf"
+      ]
+    },
+    {
+      "id": "instrument:bongos",
+      "type": "instrument",
+      "name": "Bongos",
+      "family": "percussion",
+      "period": {
+        "start": 1880,
+        "precision": "circa"
+      },
+      "description": "Pair of small, open-bottomed drums developed in eastern Cuba from African-derived drum traditions and closely associated with son and later salsa ensembles.",
+      "sources": [
+        "https://americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary",
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07006.pdf"
+      ]
+    },
+    {
+      "id": "instrument:cello",
+      "type": "instrument",
+      "name": "Cello",
+      "family": "strings",
+      "period": {
+        "start": 1550,
+        "precision": "circa"
+      },
+      "description": "Bowed bass instrument of the violin family, represented by surviving Cremonese examples from the mid-16th century; it became a central solo and ensemble voice in Western classical music.",
+      "sources": [
+        "https://www.metmuseum.org/de/press-releases/amati-king-cello-2015-news",
+        "https://www.galleriaaccademiafirenze.it/en/artworks/cello-amati/"
+      ]
+    },
+    {
+      "id": "instrument:claves",
+      "type": "instrument",
+      "name": "Claves",
+      "family": "percussion",
+      "period": {
+        "start": 1500,
+        "precision": "circa"
+      },
+      "description": "Pair of hardwood sticks struck together; Cuban sources place their use in Havana by the 16th–17th centuries, and the clave pattern is foundational in son, rumba, and salsa.",
+      "sources": [
+        "https://www.si.edu/object/claves-used-mongo-santamaria%3Anmah_1290068",
+        "https://www.cubamusic.com/es-ES/Pages/PageDetailCubaMusicalInstruments/Claves",
+        "https://latino.si.edu/exposiciones/puro-ritmo/qr/salsas-roots-case"
+      ]
+    },
+    {
+      "id": "instrument:dobro",
+      "type": "instrument",
+      "name": "Dobro resonator guitar",
+      "family": "strings",
+      "period": {
+        "start": 1928,
+        "precision": "year"
+      },
+      "description": "Trade-name resonator guitar introduced by the Dopyera brothers’ Dobro Manufacturing Company in 1928; its amplified projection made it influential in country and bluegrass playing.",
+      "sources": [
+        "https://americanhistory.si.edu/collections/object/nmah_1067396"
+      ]
+    },
+    {
+      "id": "instrument:french-horn",
+      "type": "instrument",
+      "name": "French horn",
+      "family": "brass",
+      "period": {
+        "start": 1660,
+        "precision": "circa"
+      },
+      "description": "Coiled brass orchestral horn developed from European hunting horns; the familiar hoop form emerged in 17th-century France and was used in compositions by 1664.",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1535",
+        "https://artandmusic.yale.edu/handels-london/vauxhall-gardens/vauxhall-gallery6-trompe-de-chasse"
+      ]
+    },
+    {
+      "id": "instrument:guiro",
+      "type": "instrument",
+      "name": "Güiro",
+      "family": "percussion",
+      "period": {
+        "start": 1788,
+        "precision": "circa"
+      },
+      "description": "Scraped idiophone traditionally made from a ridged gourd and of pre-Columbian Taíno origin. A reported late-18th-century textual reference is uncertain; the date is a provisional documentation anchor, not the instrument’s origin.",
+      "sources": [
+        "https://www.si.edu/object/guiro%3Anmah_602447",
+        "https://americanhistory.si.edu/collections/object/nmah_602444",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/2688",
+        "https://dimultimusic.co.id/vst/research/guiro/"
+      ]
+    },
+    {
+      "id": "instrument:harp",
+      "type": "instrument",
+      "name": "Harp",
+      "family": "strings",
+      "period": {
+        "start": 800,
+        "precision": "circa"
+      },
+      "description": "A plucked-string instrument with ancient forms; arched harps are attested in the ancient Near East, and frame harps appear in medieval Europe. The timeline anchor uses the documented European frame-harp form within the graph’s supported date range.",
+      "sources": [
+        "https://collectionsdumusee.philharmoniedeparis.fr/histoires-d-instruments-la-harpe.aspx?_lg=fr-FR",
+        "https://www.dublincity.ie/ga/library/blog/irelands-harp-shaping-nations-identity-transcript"
+      ]
+    },
+    {
+      "id": "instrument:hichiriki",
+      "type": "instrument",
+      "name": "Hichiriki",
+      "family": "winds",
+      "period": {
+        "start": 700,
+        "precision": "circa"
+      },
+      "description": "Small double-reed instrument with a strong, penetrating tone; a principal melody instrument in Japanese gagaku court ensembles.",
+      "sources": [
+        "https://asia.si.edu/explore-art-culture/audio/sukeyasu-shibas-gagaku-universe-the-reigakusha-ensemble-2/",
+        "https://folkways.si.edu/lesson/gagaku/imperial-court-music-of-japan"
+      ]
+    },
+    {
+      "id": "instrument:jinghu",
+      "type": "instrument",
+      "name": "Jinghu",
+      "family": "strings",
+      "period": {
+        "start": 1800,
+        "precision": "circa"
+      },
+      "description": "Small, high-pitched bowed spike fiddle and principal melodic instrument of Peking opera; extant museum examples document its 19th-century form.",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/500667"
+      ]
+    },
+    {
+      "id": "instrument:maracas",
+      "type": "instrument",
+      "name": "Maracas",
+      "family": "percussion",
+      "period": {
+        "start": 1500,
+        "precision": "circa"
+      },
+      "description": "Seed-filled rattles with Indigenous American and African-diasporic histories; early colonial accounts document Taíno gourd rattles. The 16th-century timeline anchor records colonial-era documentation, not the instrument’s origin.",
+      "sources": [
+        "https://www.si.edu/object/maracas%3Anmah_602467",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/2400",
+        "https://worldinstruments.org/instruments/maraca/"
+      ]
+    },
+    {
+      "id": "instrument:oboe",
+      "type": "instrument",
+      "name": "Oboe",
+      "family": "winds",
+      "period": {
+        "start": 1650,
+        "precision": "circa"
+      },
+      "description": "Double-reed woodwind that developed from the shawm in mid-17th-century France and entered court and orchestral music.",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/501504",
+        "https://www.rijksmuseum.nl/en/collection/object/Oboe--ad2ef82562d457a461a2aec7e538218c"
+      ]
+    },
+    {
+      "id": "instrument:pedal-steel-guitar",
+      "type": "instrument",
+      "name": "Pedal steel guitar",
+      "family": "strings",
+      "period": {
+        "start": 1940,
+        "precision": "circa"
+      },
+      "description": "Horizontally played steel guitar with pedals that change string pitch. Its non-pedal predecessors developed in Hawai‘i; pedal-operated models emerged around 1940 and became a defining country instrument.",
+      "sources": [
+        "https://music.si.edu/object-day/electric-console-steel-guitar-built-felton-w-williams-jr",
+        "https://countrymusichalloffame.org/learn/family-and-community-resources/history-of-country-music-instruments",
+        "https://countrymusichalloffame.org/hall-of-fame/pete-drake",
+        "https://www.premierguitar.com/artists/pedal-to-the-metal-a-short-history-of-the-pedal-steel-guitar"
+      ]
+    },
+    {
+      "id": "instrument:pipe-organ",
+      "type": "instrument",
+      "name": "Pipe organ",
+      "family": "keyboards",
+      "period": {
+        "start": 700,
+        "precision": "circa"
+      },
+      "description": "Keyboard instrument sounding air through pipes; the organ returned to western Europe in the 8th century and became central to church, court, and concert music. Organ traditions elsewhere have separate histories.",
+      "sources": [
+        "https://organhistoricalsociety.org/OrganHistory/history/hist001.htm",
+        "https://www.metmuseum.org/ja/essays/renaissance-organs"
+      ]
+    },
+    {
+      "id": "instrument:ryuteki",
+      "type": "instrument",
+      "name": "Ryūteki",
+      "family": "winds",
+      "period": {
+        "start": 700,
+        "precision": "circa"
+      },
+      "description": "Side-blown bamboo flute used in Japanese gagaku; it carries a high melodic line in court dance and orchestral repertories.",
+      "sources": [
+        "https://asia.si.edu/whats-on/blog/posts/from-court-to-concert-hall-the-origins-of-classical-music-in-japan/",
+        "https://folkways.si.edu/lesson/gagaku/imperial-court-music-of-japan"
+      ]
+    },
+    {
+      "id": "instrument:sho",
+      "type": "instrument",
+      "name": "Shō",
+      "family": "winds",
+      "period": {
+        "start": 700,
+        "precision": "circa"
+      },
+      "description": "Japanese free-reed mouth organ, modeled on the Chinese sheng and central to the wind section of gagaku court music.",
+      "sources": [
+        "https://asia.si.edu/explore-art-culture/audio/sukeyasu-shibas-gagaku-universe-the-reigakusha-ensemble-2/",
+        "https://folkways.si.edu/lesson/gagaku/imperial-court-music-of-japan"
+      ]
+    },
+    {
+      "id": "instrument:tanpura",
+      "type": "instrument",
+      "name": "Tanpura",
+      "family": "strings",
+      "period": {
+        "start": 1600,
+        "precision": "circa"
+      },
+      "description": "Long-necked, fretless drone lute that sustains the tonic and related pitches through South Asian classical performance; a 17th-century treatise provides early textual documentation.",
+      "sources": [
+        "https://www.tandfonline.com/doi/full/10.1080/00856401.2022.2118480",
+        "https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian"
+      ]
+    },
+    {
+      "id": "instrument:transverse-flute",
+      "type": "instrument",
+      "name": "Transverse flute",
+      "family": "winds",
+      "period": {
+        "start": 1680,
+        "precision": "circa"
+      },
+      "description": "Side-blown flute; this entry follows the European baroque traverso developed by Paris makers in the late 17th century. Earlier transverse flutes existed in Europe and other traditions.",
+      "sources": [
+        "https://music.duke.edu/dumic/boehms-ghost",
+        "https://www.metmuseum.org/art/collection/search/504256",
+        "https://caslabs.case.edu/medren/baroque-instruments/flute-baroque/"
+      ]
+    },
+    {
+      "id": "instrument:viola",
+      "type": "instrument",
+      "name": "Viola",
+      "family": "strings",
+      "period": {
+        "start": 1500,
+        "precision": "circa"
+      },
+      "description": "Middle-register bowed member of the violin family, documented in northern Italy in the first half of the 16th century and used in chamber and orchestral music.",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1808",
+        "https://www.yamaha.com/en/musical_instrument_guide/violin/structure/structure004.html"
+      ]
     }
   ],
   "edges": [
@@ -23837,6 +24239,516 @@
       "sources": [
         "https://apnews.com/article/8f55a53a7538b7006ec9752d0f969750",
         "https://www.trinitylaban.ac.uk/about-us/our-history/fela-kuti/"
+      ]
+    },
+    {
+      "id": "featured:balalaika-russian-folk",
+      "type": "featured_in",
+      "from": "instrument:balalaika",
+      "to": "genre:russian-folk",
+      "sources": [
+        "https://collection.powerhouse.com.au/object/319134"
+      ]
+    },
+    {
+      "id": "featured:bansuri-hindustani-classical",
+      "type": "featured_in",
+      "from": "instrument:bansuri",
+      "to": "genre:hindustani-classical",
+      "sources": [
+        "https://folkways.si.edu/hariprasad-zakir-hussain/venu/world/music/album/smithsonian"
+      ]
+    },
+    {
+      "id": "featured:bassoon-baroque",
+      "type": "featured_in",
+      "from": "instrument:bassoon",
+      "to": "genre:baroque",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/503660"
+      ]
+    },
+    {
+      "id": "featured:bassoon-classical-period",
+      "type": "featured_in",
+      "from": "instrument:bassoon",
+      "to": "genre:classical-period",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/503528"
+      ]
+    },
+    {
+      "id": "featured:bassoon-romantic",
+      "type": "featured_in",
+      "from": "instrument:bassoon",
+      "to": "genre:romantic",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/503528"
+      ]
+    },
+    {
+      "id": "featured:bongos-latin-jazz",
+      "type": "featured_in",
+      "from": "instrument:bongos",
+      "to": "genre:latin-jazz",
+      "sources": [
+        "https://americanhistory.si.edu/node/610"
+      ]
+    },
+    {
+      "id": "featured:bongos-salsa",
+      "type": "featured_in",
+      "from": "instrument:bongos",
+      "to": "genre:salsa",
+      "sources": [
+        "https://www.americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary"
+      ]
+    },
+    {
+      "id": "featured:bongos-son-cubano",
+      "type": "featured_in",
+      "from": "instrument:bongos",
+      "to": "genre:son-cubano",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07006.pdf"
+      ]
+    },
+    {
+      "id": "featured:cello-baroque",
+      "type": "featured_in",
+      "from": "instrument:cello",
+      "to": "genre:baroque",
+      "sources": [
+        "https://www.metmuseum.org/de/press-releases/amati-king-cello-2015-news"
+      ]
+    },
+    {
+      "id": "featured:cello-classical-period",
+      "type": "featured_in",
+      "from": "instrument:cello",
+      "to": "genre:classical-period",
+      "sources": [
+        "https://www.galleriaaccademiafirenze.it/en/artworks/cello-amati/"
+      ]
+    },
+    {
+      "id": "featured:cello-romantic",
+      "type": "featured_in",
+      "from": "instrument:cello",
+      "to": "genre:romantic",
+      "sources": [
+        "https://www.galleriaaccademiafirenze.it/en/artworks/cello-amati/"
+      ]
+    },
+    {
+      "id": "featured:claves-latin-jazz",
+      "type": "featured_in",
+      "from": "instrument:claves",
+      "to": "genre:latin-jazz",
+      "sources": [
+        "https://americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary"
+      ]
+    },
+    {
+      "id": "featured:claves-salsa",
+      "type": "featured_in",
+      "from": "instrument:claves",
+      "to": "genre:salsa",
+      "sources": [
+        "https://latino.si.edu/exposiciones/puro-ritmo/qr/salsas-roots-case"
+      ]
+    },
+    {
+      "id": "featured:claves-son-cubano",
+      "type": "featured_in",
+      "from": "instrument:claves",
+      "to": "genre:son-cubano",
+      "sources": [
+        "https://americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary"
+      ]
+    },
+    {
+      "id": "featured:dobro-bluegrass",
+      "type": "featured_in",
+      "from": "instrument:dobro",
+      "to": "genre:bluegrass",
+      "sources": [
+        "https://americanhistory.si.edu/collections/object/nmah_1067396"
+      ]
+    },
+    {
+      "id": "featured:dobro-country",
+      "type": "featured_in",
+      "from": "instrument:dobro",
+      "to": "genre:country",
+      "sources": [
+        "https://americanhistory.si.edu/collections/object/nmah_1067396"
+      ]
+    },
+    {
+      "id": "featured:french-horn-baroque",
+      "type": "featured_in",
+      "from": "instrument:french-horn",
+      "to": "genre:baroque",
+      "sources": [
+        "https://caslabs.case.edu/medren/baroque-instruments/horn-baroque/"
+      ]
+    },
+    {
+      "id": "featured:french-horn-classical-period",
+      "type": "featured_in",
+      "from": "instrument:french-horn",
+      "to": "genre:classical-period",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1535"
+      ]
+    },
+    {
+      "id": "featured:french-horn-romantic",
+      "type": "featured_in",
+      "from": "instrument:french-horn",
+      "to": "genre:romantic",
+      "sources": [
+        "https://www.bate.ox.ac.uk/horns"
+      ]
+    },
+    {
+      "id": "featured:guiro-cumbia",
+      "type": "featured_in",
+      "from": "instrument:guiro",
+      "to": "genre:cumbia",
+      "sources": [
+        "https://americanhistory.si.edu/node/610"
+      ]
+    },
+    {
+      "id": "featured:guiro-salsa",
+      "type": "featured_in",
+      "from": "instrument:guiro",
+      "to": "genre:salsa",
+      "sources": [
+        "https://latino.si.edu/exposiciones/puro-ritmo/qr/salsas-roots-nook"
+      ]
+    },
+    {
+      "id": "featured:guiro-son-cubano",
+      "type": "featured_in",
+      "from": "instrument:guiro",
+      "to": "genre:son-cubano",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07006.pdf"
+      ]
+    },
+    {
+      "id": "featured:harp-baroque",
+      "type": "featured_in",
+      "from": "instrument:harp",
+      "to": "genre:baroque",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/504926"
+      ]
+    },
+    {
+      "id": "featured:harp-jazz",
+      "type": "featured_in",
+      "from": "instrument:harp",
+      "to": "genre:jazz",
+      "sources": [
+        "https://www.harpsociety.org/jazzharp"
+      ]
+    },
+    {
+      "id": "featured:harp-romantic",
+      "type": "featured_in",
+      "from": "instrument:harp",
+      "to": "genre:romantic",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/504926"
+      ]
+    },
+    {
+      "id": "featured:hichiriki-gagaku",
+      "type": "featured_in",
+      "from": "instrument:hichiriki",
+      "to": "genre:gagaku",
+      "sources": [
+        "https://asia.si.edu/explore-art-culture/audio/sukeyasu-shibas-gagaku-universe-the-reigakusha-ensemble-2/"
+      ]
+    },
+    {
+      "id": "featured:jinghu-peking-opera",
+      "type": "featured_in",
+      "from": "instrument:jinghu",
+      "to": "genre:peking-opera",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/500667"
+      ]
+    },
+    {
+      "id": "featured:maracas-cumbia",
+      "type": "featured_in",
+      "from": "instrument:maracas",
+      "to": "genre:cumbia",
+      "sources": [
+        "https://latino.si.edu/exposiciones/puro-ritmo/qr/salsas-roots-nook"
+      ]
+    },
+    {
+      "id": "featured:maracas-salsa",
+      "type": "featured_in",
+      "from": "instrument:maracas",
+      "to": "genre:salsa",
+      "sources": [
+        "https://latino.si.edu/exposiciones/puro-ritmo/qr/salsas-roots-nook"
+      ]
+    },
+    {
+      "id": "featured:maracas-son-cubano",
+      "type": "featured_in",
+      "from": "instrument:maracas",
+      "to": "genre:son-cubano",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07006.pdf"
+      ]
+    },
+    {
+      "id": "featured:oboe-baroque",
+      "type": "featured_in",
+      "from": "instrument:oboe",
+      "to": "genre:baroque",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/501504"
+      ]
+    },
+    {
+      "id": "featured:oboe-classical-period",
+      "type": "featured_in",
+      "from": "instrument:oboe",
+      "to": "genre:classical-period",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/506049"
+      ]
+    },
+    {
+      "id": "featured:oboe-romantic",
+      "type": "featured_in",
+      "from": "instrument:oboe",
+      "to": "genre:romantic",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/506048"
+      ]
+    },
+    {
+      "id": "featured:pedal-steel-guitar-alt-country",
+      "type": "featured_in",
+      "from": "instrument:pedal-steel-guitar",
+      "to": "genre:alt-country",
+      "sources": [
+        "https://www.treblezine.com/alt-country-history-best-tracks/"
+      ]
+    },
+    {
+      "id": "featured:pedal-steel-guitar-country",
+      "type": "featured_in",
+      "from": "instrument:pedal-steel-guitar",
+      "to": "genre:country",
+      "sources": [
+        "https://countrymusichalloffame.org/hall-of-fame/pete-drake"
+      ]
+    },
+    {
+      "id": "featured:pipe-organ-baroque",
+      "type": "featured_in",
+      "from": "instrument:pipe-organ",
+      "to": "genre:baroque",
+      "sources": [
+        "https://www.metmuseum.org/ja/essays/renaissance-organs"
+      ]
+    },
+    {
+      "id": "featured:pipe-organ-medieval",
+      "type": "featured_in",
+      "from": "instrument:pipe-organ",
+      "to": "genre:medieval",
+      "sources": [
+        "https://organhistoricalsociety.org/OrganHistory/history/hist002.htm"
+      ]
+    },
+    {
+      "id": "featured:pipe-organ-renaissance",
+      "type": "featured_in",
+      "from": "instrument:pipe-organ",
+      "to": "genre:renaissance",
+      "sources": [
+        "https://www.metmuseum.org/ja/essays/renaissance-organs"
+      ]
+    },
+    {
+      "id": "featured:ryuteki-gagaku",
+      "type": "featured_in",
+      "from": "instrument:ryuteki",
+      "to": "genre:gagaku",
+      "sources": [
+        "https://asia.si.edu/whats-on/blog/posts/from-court-to-concert-hall-the-origins-of-classical-music-in-japan/"
+      ]
+    },
+    {
+      "id": "featured:sho-gagaku",
+      "type": "featured_in",
+      "from": "instrument:sho",
+      "to": "genre:gagaku",
+      "sources": [
+        "https://asia.si.edu/explore-art-culture/audio/sukeyasu-shibas-gagaku-universe-the-reigakusha-ensemble-2/"
+      ]
+    },
+    {
+      "id": "featured:tanpura-carnatic",
+      "type": "featured_in",
+      "from": "instrument:tanpura",
+      "to": "genre:carnatic",
+      "sources": [
+        "https://sites.duke.edu/dumic/instruments/strings/southern-and-eastern-asia/tambura-2/"
+      ]
+    },
+    {
+      "id": "featured:tanpura-hindustani-classical",
+      "type": "featured_in",
+      "from": "instrument:tanpura",
+      "to": "genre:hindustani-classical",
+      "sources": [
+        "https://www.tandfonline.com/doi/full/10.1080/00856401.2022.2118480"
+      ]
+    },
+    {
+      "id": "featured:tanpura-qawwali",
+      "type": "featured_in",
+      "from": "instrument:tanpura",
+      "to": "genre:qawwali",
+      "sources": [
+        "https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian"
+      ]
+    },
+    {
+      "id": "featured:transverse-flute-baroque",
+      "type": "featured_in",
+      "from": "instrument:transverse-flute",
+      "to": "genre:baroque",
+      "sources": [
+        "https://caslabs.case.edu/medren/baroque-instruments/flute-baroque/"
+      ]
+    },
+    {
+      "id": "featured:transverse-flute-classical-period",
+      "type": "featured_in",
+      "from": "instrument:transverse-flute",
+      "to": "genre:classical-period",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/504256"
+      ]
+    },
+    {
+      "id": "featured:transverse-flute-romantic",
+      "type": "featured_in",
+      "from": "instrument:transverse-flute",
+      "to": "genre:romantic",
+      "sources": [
+        "https://www.vsl.co.at/academy/woodwinds/concert-flute"
+      ]
+    },
+    {
+      "id": "featured:viola-baroque",
+      "type": "featured_in",
+      "from": "instrument:viola",
+      "to": "genre:baroque",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1808"
+      ]
+    },
+    {
+      "id": "featured:viola-classical-period",
+      "type": "featured_in",
+      "from": "instrument:viola",
+      "to": "genre:classical-period",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1808"
+      ]
+    },
+    {
+      "id": "featured:viola-renaissance",
+      "type": "featured_in",
+      "from": "instrument:viola",
+      "to": "genre:renaissance",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1808"
+      ]
+    },
+    {
+      "id": "plays:alice-coltrane-harp",
+      "type": "plays",
+      "from": "artist:alice-coltrane",
+      "to": "instrument:harp",
+      "sources": [
+        "https://www.alicecoltrane.com/life",
+        "https://www.harpsociety.org/jazzharp"
+      ]
+    },
+    {
+      "id": "plays:bach-pipe-organ",
+      "type": "plays",
+      "from": "artist:bach",
+      "to": "instrument:pipe-organ",
+      "sources": [
+        "https://www.bach-leipzig.de/de/node/3231",
+        "https://www.aso.org/composer/detail/johann-sebastian-bach"
+      ]
+    },
+    {
+      "id": "plays:dorothy-ashby-harp",
+      "type": "plays",
+      "from": "artist:dorothy-ashby",
+      "to": "instrument:harp",
+      "sources": [
+        "https://www.harpsociety.org/jazzharp",
+        "https://www.allmusic.com/artist/dorothy-ashby-mn0000159274/biography"
+      ]
+    },
+    {
+      "id": "plays:hariprasad-chaurasia-bansuri",
+      "type": "plays",
+      "from": "artist:hariprasad-chaurasia",
+      "to": "instrument:bansuri",
+      "sources": [
+        "https://folkways.si.edu/hariprasad-zakir-hussain/venu/world/music/album/smithsonian",
+        "https://sangeetnatak.gov.in/public/uploads/awardees/docs/1741332178_Hariprasad%20Chaurasia%20Fellowship%20of%20SNA%202011.pdf"
+      ]
+    },
+    {
+      "id": "plays:mongo-santamaria-claves",
+      "type": "plays",
+      "from": "artist:mongo-santamaria",
+      "to": "instrument:claves",
+      "sources": [
+        "https://www.si.edu/object/claves-used-mongo-santamaria%3Anmah_1290068",
+        "https://sova.si.edu/record/nmah.ac.0893"
+      ]
+    },
+    {
+      "id": "plays:vasily-andreyev-balalaika",
+      "type": "plays",
+      "from": "artist:vasily-andreyev",
+      "to": "instrument:balalaika",
+      "sources": [
+        "https://music-museum.ru/collections/expomusic/vasilij-andreev.html"
+      ]
+    },
+    {
+      "id": "plays:yo-yo-ma-cello",
+      "type": "plays",
+      "from": "artist:yo-yo-ma",
+      "to": "instrument:cello",
+      "sources": [
+        "https://www.loc.gov/item/n80016911/yo-yo-ma/",
+        "https://www.yo-yoma.com/biography/"
       ]
     }
   ]
