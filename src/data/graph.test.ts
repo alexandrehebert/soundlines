@@ -7,6 +7,7 @@ import { artistFamily, createTimelineModel, timelineFamily } from '../graph/time
 import { FAMILY_COLORS } from '../theme.ts'
 import {
   EDGE_TYPE_LABELS,
+  EVENT_CATEGORY_LABELS,
   FAMILY_LABELS,
   FAMILY_ORDER,
   INSTRUMENT_FAMILY_ORDER,
@@ -139,7 +140,49 @@ describe('graph.json integrity', () => {
       if (edge.type === 'featured_in') expect(ends, edge.id).toEqual(['instrument', 'genre'])
       if (edge.type === 'plays') expect(ends, edge.id).toEqual(['artist', 'instrument'])
       if (ends.includes('instrument')) {
-        expect(['featured_in', 'plays', 'influences', 'derived_from'], edge.id).toContain(edge.type)
+        expect(['featured_in', 'plays', 'influences', 'derived_from', 'shaped', 'involved'], edge.id)
+          .toContain(edge.type)
+        expect(edge.sources?.length, edge.id).toBeGreaterThan(0)
+      }
+    }
+  })
+
+  it('gives every event a category, a period, a description, sources, and sourced links', () => {
+    for (const node of graph.nodes) {
+      if (node.type === 'event') continue
+      expect(node.category, node.id).toBeUndefined()
+      expect(node.significance, node.id).toBeUndefined()
+    }
+    for (const event of graph.nodes.filter((node) => node.type === 'event')) {
+      expect(EVENT_CATEGORY_LABELS[event.category!], event.id).toBeDefined()
+      expect(event.family, event.id).toBeUndefined()
+      expect(event.phases, event.id).toBeUndefined()
+      if (event.significance !== undefined) {
+        expect(['landmark', 'notable'], event.id).toContain(event.significance)
+      }
+      expect(event.period, event.id).toBeDefined()
+      expect(event.description, event.id).toBeTruthy()
+      expect(event.sources?.length, event.id).toBeGreaterThan(0)
+      const shaped = graph.edges.filter((edge) => edge.type === 'shaped' && edge.from === event.id)
+      expect(shaped.length, event.id).toBeGreaterThan(0)
+    }
+  })
+
+  it('links events only in their documented directions, with sources', () => {
+    const types = new Map(graph.nodes.map((node) => [node.id, node.type]))
+    const targets: Record<string, readonly NodeType[]> = {
+      shaped: ['genre', 'instrument', 'label', 'scene'],
+      involved: ['artist', 'track', 'instrument', 'label', 'scene'],
+      occurred_in: ['place'],
+    }
+    for (const edge of graph.edges) {
+      const [from, to] = [types.get(edge.from)!, types.get(edge.to)!]
+      if (edge.type in targets) {
+        expect(from, edge.id).toBe('event')
+        expect(targets[edge.type], edge.id).toContain(to)
+      }
+      if (from === 'event' || to === 'event') {
+        expect(Object.keys(targets), edge.id).toContain(edge.type)
         expect(edge.sources?.length, edge.id).toBeGreaterThan(0)
       }
     }
@@ -257,7 +300,7 @@ describe('graph.json integrity', () => {
         'medieval', 'renaissance', 'baroque', 'classical-period', 'romantic',
         'modern-classical', 'minimalism', 'hindustani-classical', 'carnatic',
         'qawwali', 'gamelan', 'gagaku', 'peking-opera', 'pansori', 'impressionism',
-        'serialism',
+        'serialism', 'arabic-maqam',
       ],
       'blues-soul': ['blues', 'soul', 'funk', 'r-and-b', 'doo-wop', 'neo-soul',
         'new-jack-swing', 'contemporary-r-and-b',
@@ -297,6 +340,7 @@ describe('graph.json integrity', () => {
       ],
       african: [
         'highlife', 'afrobeat', 'afrobeats', 'juju', 'soukous', 'amapiano', 'gqom', 'kwaito',
+        'congolese-rumba',
       ],
       electronica: [
         'electro', 'trip-hop', 'ambient', 'idm', 'synthwave', 'darksynth',
@@ -400,12 +444,13 @@ describe('graph.json integrity', () => {
       'genre:pansori',
       'genre:baul-songs',
       'genre:juju',
-      'genre:soukous',
       'genre:khoomei',
+      'genre:arabic-maqam',
+      'genre:congolese-rumba',
     ])
     expect(ids.length).toBeGreaterThan(0)
-    const visited = new Set([ids[0]])
-    const queue = [ids[0]]
+    const visited = new Set([ids[0], ...roots])
+    const queue = [...visited]
     for (const id of queue) {
       for (const { node } of neighbors(index, id)) {
         if (!visited.has(node.id)) {
@@ -414,7 +459,7 @@ describe('graph.json integrity', () => {
         }
       }
     }
-    expect(visited).toEqual(new Set(ids.filter((id) => !roots.has(id))))
+    expect(visited).toEqual(new Set(ids))
   })
 
   it('gives every genre at least three sourced key artists', () => {

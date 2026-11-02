@@ -69,6 +69,7 @@ export const NODE_TYPE_COLORS: Record<NodeType, string> = {
   place: '#4ade80',
   track: '#f472b6',
   scene: '#fb923c',
+  event: '#f87171',
 }
 
 export function formatPeriod(period: Period | undefined): string | null {

@@ -7,7 +7,15 @@
  * edges -> typed relationships, remaining fields -> properties).
  */
 
-export type NodeType = 'genre' | 'artist' | 'instrument' | 'label' | 'place' | 'track' | 'scene'
+export type NodeType =
+  | 'genre'
+  | 'artist'
+  | 'instrument'
+  | 'label'
+  | 'place'
+  | 'track'
+  | 'scene'
+  | 'event'
 
 export type EdgeType =
   // genre lineage
@@ -31,6 +39,10 @@ export type EdgeType =
   // tracks
   | 'anthem_of'
   | 'recorded_by'
+  // events
+  | 'shaped'
+  | 'involved'
+  | 'occurred_in'
 
 export type Confidence = 'low' | 'medium' | 'high'
 
@@ -74,6 +86,26 @@ export type InstrumentFamily =
 export type LaneFamily = GenreFamily | InstrumentFamily
 
 export type ArtistKind = 'person' | 'group' | 'collective'
+
+export type EventCategory =
+  | 'technology'
+  | 'media'
+  | 'industry'
+  | 'performance'
+  | 'publication'
+  | 'society'
+
+export const EVENT_CATEGORY_LABELS: Record<EventCategory, string> = {
+  technology: 'Technology & formats',
+  media: 'Broadcast & media',
+  industry: 'Industry & law',
+  performance: 'Performances & festivals',
+  publication: 'Theory, notation & print',
+  society: 'Society & migration',
+}
+
+/** Editorial weight of an event in the chronology, not a measured ranking. */
+export type EventSignificance = 'landmark' | 'notable'
 
 export type Prominence = 'emerging' | 'golden-age' | 'established' | 'niche'
 
@@ -124,6 +156,10 @@ export interface GraphNode {
   family?: LaneFamily
   /** Only meaningful for artists. */
   kind?: ArtistKind
+  /** Events only. */
+  category?: EventCategory
+  /** Events only. */
+  significance?: EventSignificance
   sources?: string[]
   /** Editorial genre or career prominence, not measured popularity. */
   phases?: ProminencePhase[]
@@ -237,6 +273,7 @@ export const NODE_TYPE_LABELS: Record<NodeType, string> = {
   place: 'Place',
   track: 'Track',
   scene: 'Scene',
+  event: 'Event',
 }
 
 /** Phrasing when the focused node is the edge's `from` side. */
@@ -257,6 +294,9 @@ export const EDGE_TYPE_LABELS: Record<EdgeType, string> = {
   originated_in: 'originated in',
   anthem_of: 'anthem of',
   recorded_by: 'recorded by',
+  shaped: 'shaped',
+  involved: 'involved',
+  occurred_in: 'took place in',
 }
 
 /** Phrasing when the focused node is the edge's `to` side. */
@@ -277,4 +317,7 @@ export const EDGE_TYPE_INVERSE_LABELS: Record<EdgeType, string> = {
   originated_in: 'birthplace of',
   anthem_of: 'anthems',
   recorded_by: 'recordings',
+  shaped: 'shaped by',
+  involved: 'involved in',
+  occurred_in: 'events here',
 }

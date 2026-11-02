@@ -2,10 +2,15 @@
 
 This document describes [graph.json](./graph.json), the single dataset behind
 **Soundlines**, a chronological, interactive map of music genres, artists, labels,
-places, scenes, and tracks. Give it to an editor or to a language model (for
+places, scenes, tracks, and historical events. Give it to an editor or to a language model (for
 example ChatGPT) along with `graph.json` when asking for the dataset to be
 **enriched, corrected, or expanded** (new genres, artists, lineage links, phases,
-and so on).
+events, and so on).
+
+> **Current priority:** deepen the chronology through the ages. The graph now has 77
+> sourced events with significance labels; continue filling the pre-1600 and post-2010
+> gaps, then add more composition, artist, and track coverage in underrepresented
+> musical traditions. See §6, "Chronology coverage gaps".
 
 The app reads the JSON as-is. The rules below are enforced by an automated
 test suite ([graph.test.ts](./graph.test.ts)). **Output that breaks them will be
@@ -26,7 +31,7 @@ rejected.**
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 1078 nodes (169 genres, 466 artists, 63 instruments, 41 labels, 74 places, 209 tracks, 56 scenes) and 1724 edges.
+Current size: 1168 nodes (171 genres, 472 artists, 63 instruments, 41 labels, 79 places, 209 tracks, 56 scenes, 77 events) and 1851 edges.
 
 ---
 
@@ -35,12 +40,14 @@ Current size: 1078 nodes (169 genres, 466 artists, 63 instruments, 41 labels, 74
 ```ts
 interface GraphNode {
   id: string            // "<type>:<slug>", e.g. "genre:deep-house", "artist:kraftwerk"
-  type: 'genre' | 'artist' | 'instrument' | 'label' | 'place' | 'track' | 'scene'
+  type: 'genre' | 'artist' | 'instrument' | 'label' | 'place' | 'track' | 'scene' | 'event'
   name: string          // Display name, e.g. "Deep house"
   period?: { start: number; end?: number | null; precision?: 'year' | 'decade' | 'circa' }
   description?: string  // 1–3 sentences, editorial and evocative but factual
   family?: GenreFamily | InstrumentFamily  // Timeline lane (required for genres and instruments)
   kind?: 'person' | 'group' | 'collective'   // Artists only
+  category?: EventCategory                   // Events only (required). See "Events"
+  significance?: 'landmark' | 'notable'      // Events only (optional). See "Events"
   sources?: string[]    // HTTPS URLs to relevant, credible sources
   phases?: ProminencePhase[]  // Genres, artists, and instruments only. See §5
   phaseNote?: string    // Required whenever `phases` is present
@@ -58,6 +65,7 @@ interface GraphNode {
 | `place`  | City or region                                | Usually omitted                        |
 | `track`  | A specific recording                          | Release year (`start` = `end`)         |
 | `scene`  | Club, venue, party, radio show, or movement   | Active years                           |
+| `event`  | A dated turning point in music history (invention, format, broadcast, premiere, festival, law, migration) | When it happened (`start` = `end` for a single date, or a range for a process) |
 
 ### Id conventions
 
@@ -142,6 +150,74 @@ The supported period range starts at year 500. When an instrument's documented
 history begins earlier, do not treat 500 as its origin. Describe the earlier
 history and make clear which later form the timeline start represents.
 
+### Events (chronology)
+
+Events are the dated turning points that are **not** a genre, artist,
+instrument, label, place, track, or scene, but that changed how music was made,
+heard, distributed, or remembered. They power the chronological "music history
+through the ages" view.
+
+```json
+{
+  "id": "event:mtv-launch",
+  "type": "event",
+  "name": "MTV launches",
+  "category": "media",
+  "significance": "landmark",
+  "period": { "start": 1981, "end": 1981, "precision": "year" },
+  "description": "The US cable channel MTV goes on air on 1 August 1981 with round-the-clock music videos, making image and video central to pop careers and accelerating the British synth-pop and new wave invasion of American charts.",
+  "sources": ["https://www.britannica.com/topic/MTV"]
+}
+```
+
+**Category** (required, one value):
+
+| category      | Label                       | Typical events |
+|---------------|-----------------------------|----------------|
+| `technology`  | Technology & formats        | phonograph, electrical recording, magnetic tape, LP and 45 rpm records, multitrack recording, compact cassette, CD, MIDI, MP3 |
+| `media`       | Broadcast & media           | first music broadcasts, pirate radio, MTV, YouTube, streaming platforms, TikTok |
+| `industry`    | Industry & law              | copyright laws, recording bans, chart creation, landmark sampling lawsuits, Napster shutdown, laws regulating raves |
+| `performance` | Performances & festivals    | opera premieres, first public concerts, historic recording sessions, festivals, benefit concerts |
+| `publication` | Theory, notation & print    | staff notation, treatises, music printing, landmark anthologies and field recordings |
+| `society`     | Society & migration         | migrations, wars, bans, civil-rights or political moments that reshaped music |
+
+**Significance** (optional): `landmark` for turning points every general music
+history would mention (about 1 in 3 events), `notable` for the rest. It is an
+editorial weight used to filter the chronology, not a ranking.
+
+**What is an event and what is not:**
+
+- A playable device (piano, TR-808, sampler) is an `instrument`, **not** an
+  event. A recording or playback **format or medium** (phonograph, LP, CD,
+  radio, streaming) **is** an event.
+- A recurring club, party, or venue is a `scene`. A one-off or annual gathering
+  (Woodstock, Live Aid, Festac '77) is an event. A long-running festival can be an
+  event whose `period` covers its first edition, unless its run matters more than
+  its founding.
+- A record is a `track`. A recording **session** or premiere that matters
+  beyond the record itself (the 1927 Bristol Sessions, the premiere of *The Rite of
+  Spring*) is an event.
+- Founding a label is the label's `period.start`. Do not duplicate it as an event.
+
+**Rules:**
+
+- `period` is required. Use `start` = `end` for a dated moment, or a range for a
+  process (for example the Great Migration). Use `precision: "circa"` for
+  early or contested dates and say so in the description.
+- `name` is short and reads like a timeline caption ("MTV launches", "Napster is
+  shut down", "Guido of Arezzo's staff notation").
+- `description`, `category`, and at least one `sources` URL are required.
+  `family`, `kind`, and `phases` are not allowed on events.
+- Every event needs **at least one `shaped` edge** to a genre, instrument,
+  label, or scene it changed, so the chronology can link back into the map. Add
+  `involved` edges for key participants and `occurred_in` for the place.
+- Every edge touching an event has `sources`.
+- Prefer existing nodes as edge targets. Add new artist, place, or genre nodes only
+  when they are worth having in their own right, and follow all their rules.
+- The timeline starts at year **500**. For older developments (for example
+  ancient Greek theory), anchor the event to the medieval form that the
+  timeline represents, and explain the earlier history in the description.
+
 ### Existing genre ids (do not duplicate)
 
 ```
@@ -218,6 +294,9 @@ Read every edge as **`from` → label → `to`**:
 | `recorded_by`       | track → artist          | A was recorded by B | — |
 | `featured_in`       | instrument → genre      | A is a defining instrument in genre B | — |
 | `plays`             | artist → instrument     | A is a notable player of B | — |
+| `shaped`            | event → genre/instrument/label/scene | Event A shaped B | — |
+| `involved`          | event → artist/track/instrument/label/scene | Event A involved B (key participant, record, or device) | — |
+| `occurred_in`       | event → place           | Event A took place in B | — |
 
 **Direction matters.** For example, `deep-house derived_from chicago-house` is correct;
 `chicago-house derived_from deep-house` is wrong. Do not create the same
@@ -244,6 +323,8 @@ prefixes:
   `anthem:<track>-<genre>`, `recorded:<track>-<artist>`
 - `featured:<instrument>-<genre>`, `plays:<artist>-<instrument>`, and
   `lineage:<child>-<parent>` between instruments
+- `shaped:<event>-<target>`, `involved:<event>-<target>`, `occurred:<event>-<place>`
+  (slugs without the type prefix, for example `shaped:mtv-launch-synth-pop`)
 
 Ids must be unique across all edges.
 
@@ -291,6 +372,13 @@ Ids must be unique across all edges.
 16. `featured_in` always goes instrument → genre, and `plays` always goes artist →
     instrument. Instruments connect to other instruments only through
     `influences` or `derived_from`. Every edge touching an instrument has `sources`.
+    Event edges (`shaped`, `involved`) may also point to instruments.
+17. **Every event** has a `category` from the Events table, a `period`, a
+    `description`, `sources`, and at least one `shaped` edge. `category` and
+    `significance` appear only on events. Events have no `family` or `phases`.
+18. `shaped`, `involved`, and `occurred_in` always start from an event and
+    point to the node types in §3. Events connect only through these three edge
+    types, and every edge touching an event has `sources`.
 
 ## 5. Prominence phases (optional, genres, artists & instruments)
 
@@ -397,6 +485,78 @@ do not force them into a single Western-style lineage.
 - **More labels**: Motown, Blue Note, Warp, Def Jam; **places**: Kingston, Lagos,
   Rio; **scenes**: Studio 54, CBGB; and representative **tracks** (anthems)
 
+### Chronology coverage gaps (current priority)
+
+The dataset is strongest from 1960 to 1999. It now includes early notation,
+print, opera, and several Asian and Bengali traditions, but the pre-1600 record
+and the post-2010 era remain thin. Arabic maqam and Congolese rumba now have
+explicit genre coverage; Persian, Ottoman, West African griot, Chinese regional,
+Japanese, and Indian court traditions still need their own documented lineages.
+Dated nodes by `period.start`:
+
+| Era          | Genres | Artists | Tracks | Scenes | Instruments | Events |
+|--------------|-------:|--------:|-------:|-------:|------------:|-------:|
+| 500–1599     | 6      | 6       | 0      | 1      | 18          | 12     |
+| 1600–1899    | 15     | 14      | 8      | 5      | 24          | 15     |
+| 1900–1949    | 23     | 54      | 20     | 9      | 11          | 19     |
+| 1950–1999    | 112    | 344     | 159    | 39     | 10          | 19     |
+| 2000–present | 15     | 54      | 22     | 2      | 0           | 12     |
+
+Priorities, in order:
+
+1. **Improve event evidence and connections.** All 77 events now have a
+   `significance` value and at least one sourced `shaped` edge. There are 20
+   `involved` and 18 `occurred_in` edges. Add more participants, recordings,
+   venues, and locations only when a source supports the connection. 25 event
+   nodes currently cite more than one source; add independent sources for
+   consequential claims, especially where the graph still relies on a single
+   citation.
+2. **Add pre-1600 depth.** Add representative compositions as `track` nodes
+   using premiere or publication years; expand medieval and Renaissance
+   composers, notation, and institutions. Continue documenting Arab, Persian,
+   Ottoman, West African griot, Chinese, Japanese, and Indian court traditions
+   without treating them as one origin or lineage.
+3. **Add post-2010 depth.** Expand the streaming-era chronology and add
+   representative genres, artists, and tracks from the 2010s and 2020s (for
+   example hyperpop, afro-house, phonk, Latin trap, Brazilian funk, bedroom
+   pop, and UK drill), with sources and regional context.
+**Candidate events** to research. These are starting points: verify each date
+and claim against sources, correct anything wrong, skip anything you cannot
+source, and add important events that are missing.
+
+- **500–1599**: Guido of Arezzo's staff notation and solmization (c. 1025);
+  the *Ars nova* treatise (c. 1322); Petrucci's *Harmonice Musices
+  Odhecaton*, the first polyphonic music printed with movable type (1501);
+  the Council of Trent's reforms of church music (1545–1563)
+- **1600–1899**: Peri's *Euridice*, the earliest surviving opera (1600);
+  the first public opera house, Teatro San Cassiano in Venice (1637); the
+  premiere of Beethoven's Ninth Symphony (1824); Edison's phonograph (1877);
+  Berliner's gramophone disc (1887)
+- **1900–1949**: the premiere of *The Rite of Spring* (1913); the first jazz
+  record, by the Original Dixieland Jass Band (1917); Mamie Smith's "Crazy
+  Blues" and the race-records market (1920); the start of commercial radio
+  broadcasting (1920); electrical recording (1925); the Bristol Sessions
+  (1927); *Alam Ara* and the rise of Indian film song (1931); Benny Goodman at Carnegie Hall (1938); the AFM recording
+  ban (1942–1944); the 33⅓ rpm LP (1948) and the 45 rpm single (1949); the Great
+  Migration (c. 1910–1970)
+- **1950–1999**: Elvis Presley's first Sun session (1954); the Billboard Hot 100
+  (1958); the compact cassette (1963); the Beatles on *The Ed Sullivan Show*
+  (1964); the Monterey Pop Festival (1967); Woodstock (1969); DJ Kool Herc's
+  Bronx back-to-school party (1973); Festac '77 in Lagos (1977); the Sony
+  Walkman and Disco Demolition Night (1979); MTV (1981); the compact disc
+  (1982); MIDI (1983); Live Aid (1985); the Second Summer of Love (1988);
+  *Grand Upright v. Warner* and sample clearance (1991); the UK Criminal Justice
+  and Public Order Act and raves (1994); Napster (1999)
+- **2000–present**: Napster shutdown (2001); the iPod (2001) and the iTunes
+  Store (2003); YouTube (2005); SoundCloud (2007); Spotify (2008); TikTok and
+  short-form virality (2016–2018); the COVID-19 live-music shutdown and
+  livestream concerts (2020)
+
+For each event, add a sourced `shaped` edge to the genres, instruments, labels,
+or scenes it changed (for example the LP → `genre:cool-jazz`, `genre:progressive-rock`;
+Disco Demolition → `genre:disco`), `involved` edges to key artists or tracks
+already in the graph, and an `occurred_in` edge to the place where relevant.
+
 ---
 
 ## 7. How to return changes
@@ -437,3 +597,8 @@ patch** in this exact shape:
 - [ ] `phases` (if any) start at `period.start`, ascend, have a `phaseNote`, and
       `niche` intensity is 0
 - [ ] New families are listed in `newFamilies`
+- [ ] Every new event has `category`, `period`, `description`, `sources`, a
+      timeline-caption `name`, and ≥ 1 sourced `shaped` edge; it duplicates no
+      existing instrument, label, scene, or track
+- [ ] Every edge touching an event is `shaped`, `involved`, or `occurred_in`, starts
+      from the event, and has `sources`
