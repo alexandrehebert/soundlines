@@ -61,6 +61,25 @@ describe('Explorer header statistics', () => {
     expect(header).not.toMatch(/\blinks\b/i)
   })
 
+  it('places genre display and ordering controls below the desktop legend', () => {
+    const markup = render(graph, <Explorer />)
+    const headerEnd = markup.indexOf('</header>')
+    const legendEnd = markup.indexOf('Editorial phases, not popularity scores')
+    const toolbarStart = markup.indexOf('aria-label="Visualization controls"')
+    const mainStart = markup.indexOf('<main')
+    const header = markup.slice(0, headerEnd)
+    const toolbar = markup.slice(toolbarStart, mainStart)
+
+    expect(headerEnd).toBeGreaterThan(-1)
+    expect(legendEnd).toBeGreaterThan(headerEnd)
+    expect(toolbarStart).toBeGreaterThan(legendEnd)
+    expect(mainStart).toBeGreaterThan(toolbarStart)
+    expect(header).not.toContain('aria-label="Genre display"')
+    expect(header).not.toContain('Genre order')
+    expect(toolbar).toContain('aria-label="Genre display"')
+    expect(toolbar).toContain('aria-label="Genre order"')
+  })
+
   it('keeps link counts in the statistics dialog', () => {
     const markup = render(graph, <DatasetStats initialTab="links" onClose={vi.fn()} />)
     expect(markup).toContain('6 entries and 4 links')
@@ -69,6 +88,14 @@ describe('Explorer header statistics', () => {
 })
 
 describe('view toggle', () => {
+  it('uses taller desktop spacing while retaining mobile button height', () => {
+    const markup = renderToStaticMarkup(<ViewToggle view="genre" changeView={vi.fn()} />)
+    const buttons = markup.match(/<button\b[^>]*role="radio"[^>]*>/g) ?? []
+
+    expect(buttons).toHaveLength(4)
+    expect(buttons.every((button) => button.includes('min-h-9') && button.includes('md:py-1.5'))).toBe(true)
+  })
+
   it('spaces mobile options from the view list and hides its label below the small breakpoint', () => {
     const markup = render(graph, <Explorer />)
     const mobileNavigation = markup.match(/<div class="[^"]*\bmd:hidden"[^>]*><div[^>]*role="radiogroup"[\s\S]*?aria-label="Timeline options and legend"[\s\S]*?<\/button><\/div>/)?.[0]

@@ -71,10 +71,6 @@ export function Explorer() {
           <SearchBar />
         </div>
         <ViewToggle view={view} changeView={changeView} className="hidden md:flex" />
-        {view === 'genre' && <GenreDisplaySelect className="hidden md:flex" />}
-        {!showingBubbles && isTimelineView(view) && (
-          <TimelineOrderSelect view={view} order={order} changeOrder={changeOrder} className="hidden md:flex" />
-        )}
         <div className="-mr-2 ml-auto hidden items-center gap-1 text-xs font-medium text-slate-500 md:flex">
           {(['genre', 'artist', 'instrument'] as const).map((tab) => (
             <button
@@ -90,6 +86,18 @@ export function Explorer() {
         </div>
       </header>
       {!showingBubbles && !showingHistory && <div className="hidden border-b border-slate-800/60 bg-slate-950/70 px-5 py-1.5 lg:block"><Legend /></div>}
+      {!showingHistory && (
+        <div
+          role="group"
+          aria-label="Visualization controls"
+          className="hidden shrink-0 items-center justify-end gap-2 border-b border-slate-800/60 bg-slate-950/70 px-5 py-2 md:flex"
+        >
+          {view === 'genre' && <GenreDisplaySelect />}
+          {!showingBubbles && isTimelineView(view) && (
+            <TimelineOrderSelect view={view} order={order} changeOrder={changeOrder} />
+          )}
+        </div>
+      )}
       <main className="relative flex min-h-0 flex-1">
         <div className="min-w-0 flex-1">
           {showingHistory ? <History /> : showingBubbles ? <GenreBubbles /> : <Timeline key={`${view}-${order}`} />}
@@ -338,7 +346,7 @@ export function ViewToggle({
             aria-checked={selected}
             tabIndex={selected ? 0 : -1}
             onClick={() => changeView(type)}
-            className={`relative flex min-h-9 min-w-0 flex-auto items-center justify-center gap-1 rounded-full px-1.5 text-[11px] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:min-h-0 md:flex-none md:px-3 md:py-1 md:text-xs ${
+            className={`relative flex min-h-9 min-w-0 flex-auto items-center justify-center gap-1 rounded-full px-1.5 text-[11px] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:min-h-0 md:flex-none md:px-3 md:py-1.5 md:text-xs ${
               selected ? 'text-cyan-200' : 'text-slate-500 hover:text-slate-300'
             }`}
           >
