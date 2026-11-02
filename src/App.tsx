@@ -1,8 +1,9 @@
-import { ArrowDownWideNarrow, Bubbles, ChartGantt, Disc3, Guitar, SlidersHorizontal, Users, X, type LucideIcon } from 'lucide-react'
+import { ArrowDownWideNarrow, BarChart3, Bubbles, ChartGantt, Disc3, Guitar, SlidersHorizontal, Users, X, type LucideIcon } from 'lucide-react'
 import { AnimatePresence, motion, MotionConfig } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent, type PointerEvent } from 'react'
 import { useExplorer } from './ExplorerContext.ts'
 import { ExplorerProvider } from './ExplorerProvider.tsx'
+import { DatasetStats } from './components/DatasetStats.tsx'
 import { DetailPanel } from './components/DetailPanel.tsx'
 import { Legend } from './components/Legend.tsx'
 import { SearchBar } from './components/SearchBar.tsx'
@@ -11,33 +12,38 @@ import { GenreBubbles } from './components/GenreBubbles.tsx'
 import { MOBILE_DETAIL_COLLAPSED_OFFSET, MOBILE_DETAIL_HEIGHT } from './components/mobileDetailSheet.ts'
 import rawGraph from './data/graph.json'
 import type { GenreOrder } from './graph/layout.ts'
+import type { StatsTab } from './graph/stats.ts'
 import { TIMELINE_VIEWS, type TimelineView } from './graph/timeline.ts'
 import type { MusicGraph } from './graph/types.ts'
 
 const graph = rawGraph as MusicGraph
 
+const STAT_LABELS = { genre: 'genres', artist: 'artists', instrument: 'instruments', links: 'links' } as const
+
 export function Explorer() {
   const { index, view, changeView, selectedId, selectNode, genreOrder, changeGenreOrder, genreDisplay } = useExplorer()
   const showingBubbles = view === 'genre' && genreDisplay === 'bubbles'
   const [optionsOpen, setOptionsOpen] = useState(false)
+  const [statsTab, setStatsTab] = useState<StatsTab | null>(null)
   const stats = useMemo(() => {
     const count = (type: string) => index.graph.nodes.filter((node) => node.type === type).length
     return {
-      genres: count('genre'), artists: count('artist'), instruments: count('instrument'),
+      genre: count('genre'), artist: count('artist'), instrument: count('instrument'),
       links: index.graph.edges.length,
     }
   }, [index])
 
   useEffect(() => {
-    if (!optionsOpen && !selectedId) return
+    if (!optionsOpen && !selectedId && !statsTab) return
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key !== 'Escape') return
-      if (optionsOpen) setOptionsOpen(false)
+      if (statsTab) setStatsTab(null)
+      else if (optionsOpen) setOptionsOpen(false)
       else selectNode(null)
     }
     document.addEventListener('keydown', handleKeyDown)
     return () => document.removeEventListener('keydown', handleKeyDown)
-  }, [optionsOpen, selectedId, selectNode])
+  }, [optionsOpen, selectedId, selectNode, statsTab])
 
   return (
     <div className="flex h-dvh flex-col">
@@ -59,11 +65,18 @@ export function Explorer() {
         {view === 'genre' && !showingBubbles && (
           <GenreOrderSelect genreOrder={genreOrder} changeGenreOrder={changeGenreOrder} className="hidden md:flex" />
         )}
-        <div className="ml-auto hidden items-center gap-4 text-xs font-medium text-slate-500 md:flex">
-          <span><strong className="text-slate-300">{stats.genres}</strong> genres</span>
-          <span><strong className="text-slate-300">{stats.artists}</strong> artists</span>
-          <span><strong className="text-slate-300">{stats.instruments}</strong> instruments</span>
-          <span><strong className="text-slate-300">{stats.links}</strong> links</span>
+        <div className="-mr-2 ml-auto hidden items-center gap-1 text-xs font-medium text-slate-500 md:flex">
+          {(['genre', 'artist', 'instrument', 'links'] as const).map((tab) => (
+            <button
+              key={tab}
+              type="button"
+              onClick={() => setStatsTab(tab)}
+              className="rounded-md px-2 py-1 transition-colors hover:bg-slate-800/70 hover:text-slate-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
+              aria-label={`${stats[tab]} ${STAT_LABELS[tab]} – show dataset statistics`}
+            >
+              <strong className="text-slate-300">{stats[tab]}</strong> {STAT_LABELS[tab]}
+            </button>
+          ))}
         </div>
       </header>
       {!showingBubbles && <div className="hidden border-b border-slate-800/60 bg-slate-950/70 px-5 py-1.5 lg:block"><Legend /></div>}
@@ -139,9 +152,23 @@ export function Explorer() {
                 <GenreOrderSelect genreOrder={genreOrder} changeGenreOrder={changeGenreOrder} className="mb-6 flex" />
               )}
               {!showingBubbles && <div className="border-t border-slate-800 pt-4"><Legend /></div>}
+              <button
+                type="button"
+                onClick={() => {
+                  setOptionsOpen(false)
+                  setStatsTab('overview')
+                }}
+                className="mt-4 flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-sm font-semibold text-slate-300 active:bg-slate-800"
+              >
+                <BarChart3 className="h-4 w-4" />
+                Dataset statistics
+              </button>
             </motion.section>
           </motion.div>
         )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {statsTab && <DatasetStats key="dataset-stats" initialTab={statsTab} onClose={() => setStatsTab(null)} />}
       </AnimatePresence>
       <AnimatePresence>
         {selectedId && (
