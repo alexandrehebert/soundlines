@@ -37,7 +37,7 @@ function renderTimeline(view: TimelineView, order: TimelineOrder, viewRange: [nu
     <ExplorerContext.Provider value={{
       index, model: createTimelineModel(index, view), view,
       selectedId: null, selectNode: vi.fn(), changeView: vi.fn(),
-      order, changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(),
+      order, changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(),
       viewRange, setViewRange: vi.fn(),
     }}>
       <Timeline />

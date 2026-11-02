@@ -133,6 +133,16 @@ export function useExplorerState(graph: MusicGraph) {
     navigate({ ...location, genreDisplay: display })
   }, [genreDisplay, location, navigate])
 
+  const goHome = useCallback(() => {
+    const params = new URLSearchParams()
+    setRanges({
+      genre: defaultViewRange('genre'),
+      artist: defaultViewRange('artist'),
+      instrument: defaultViewRange('instrument'),
+    })
+    navigate({ view: viewFromParam(null), selectedId: null, orders: readTimelineOrders(params), genreDisplay: 'bars' })
+  }, [navigate])
+
   const setViewRange = useCallback((range: SetStateAction<YearRange>) => {
     setRanges((current) => ({
       ...current,
@@ -142,9 +152,9 @@ export function useExplorerState(graph: MusicGraph) {
 
   return useMemo(() => ({
     index, model, view, selectedId, selectNode, changeView, order, changeOrder,
-    genreDisplay, changeGenreDisplay,
+    genreDisplay, changeGenreDisplay, goHome,
     viewRange: ranges[view], setViewRange,
-  }), [index, model, view, selectedId, selectNode, changeView, order, changeOrder, genreDisplay, changeGenreDisplay, ranges, setViewRange])
+  }), [index, model, view, selectedId, selectNode, changeView, order, changeOrder, genreDisplay, changeGenreDisplay, goHome, ranges, setViewRange])
 }
 
 export const ExplorerContext = createContext<ReturnType<typeof useExplorerState> | null>(null)

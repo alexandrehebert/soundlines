@@ -35,7 +35,7 @@ function renderPanel(data: MusicGraph, selectedId: string) {
       order: 'family',
       changeOrder: vi.fn(),
       genreDisplay: 'bars',
-      changeGenreDisplay: vi.fn(),
+      changeGenreDisplay: vi.fn(), goHome: vi.fn(),
       viewRange: [1948, 2026],
       setViewRange: vi.fn(),
     }}>

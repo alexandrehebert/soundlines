@@ -21,7 +21,7 @@ const graph = rawGraph as MusicGraph
 const STAT_LABELS = { genre: 'genres', artist: 'artists', instrument: 'instruments', links: 'links' } as const
 
 export function Explorer() {
-  const { index, view, changeView, selectedId, selectNode, order, changeOrder, genreDisplay } = useExplorer()
+  const { index, view, changeView, selectedId, selectNode, order, changeOrder, genreDisplay, goHome } = useExplorer()
   const showingBubbles = view === 'genre' && genreDisplay === 'bubbles'
   const [optionsOpen, setOptionsOpen] = useState(false)
   const [statsTab, setStatsTab] = useState<StatsTab | null>(null)
@@ -48,7 +48,18 @@ export function Explorer() {
   return (
     <div className="flex h-dvh flex-col">
       <header className="z-20 flex shrink-0 items-center gap-2 border-b border-slate-800 bg-slate-950/90 px-3 py-2 md:flex-wrap md:gap-x-6 md:gap-y-3 md:px-5 md:py-3">
-        <div className="flex shrink-0 items-center gap-2 md:gap-2.5">
+        <a
+          href="/"
+          aria-label="Soundlines home"
+          onClick={(event) => {
+            if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+            event.preventDefault()
+            setStatsTab(null)
+            setOptionsOpen(false)
+            goHome()
+          }}
+          className="flex shrink-0 items-center gap-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:gap-2.5"
+        >
           <Disc3 className="h-5 w-5 text-violet-400 md:h-6 md:w-6" />
           <div>
             <h1 className="text-lg font-bold leading-tight tracking-tight text-white">Soundlines</h1>
@@ -56,7 +67,7 @@ export function Explorer() {
               a chronological map of music lineages
             </p>
           </div>
-        </div>
+        </a>
         <div className="ml-auto shrink-0 md:ml-0 md:w-80">
           <SearchBar />
         </div>

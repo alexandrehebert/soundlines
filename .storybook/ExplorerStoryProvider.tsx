@@ -90,6 +90,20 @@ export function ExplorerStoryProvider({
     setLocation((current) => ({ ...current, genreDisplay }))
   }, [])
 
+  const goHome = useCallback(() => {
+    setLocation({
+      view: 'genre',
+      selectedId: null,
+      orders: { genre: 'family', artist: 'family', instrument: 'family' },
+      genreDisplay: 'bars',
+    })
+    setRanges({
+      genre: defaultViewRange('genre'),
+      artist: defaultViewRange('artist'),
+      instrument: defaultViewRange('instrument'),
+    })
+  }, [])
+
   const setViewRange = useCallback((range: SetStateAction<YearRange>) => {
     setRanges((current) => ({
       ...current,
@@ -106,9 +120,10 @@ export function ExplorerStoryProvider({
     changeView,
     changeOrder,
     changeGenreDisplay,
+    goHome,
     viewRange: ranges[location.view],
     setViewRange,
-  }), [model, location, selectNode, changeView, changeOrder, changeGenreDisplay, ranges, setViewRange])
+  }), [model, location, selectNode, changeView, changeOrder, changeGenreDisplay, goHome, ranges, setViewRange])
 
   return <ExplorerContext.Provider value={value}>{children}</ExplorerContext.Provider>
 }
