@@ -4,6 +4,7 @@ A chronological map of music genres, artists, instruments, labels, scenes, and t
 
 Vite, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vitest, linted with oxlint, and deployable to Vercel.
 
+The header and browser favicon share the same violet vinyl-disc icon.
 On first load, a centered spinning vinyl logo covers the page before React starts.
 The same overlay appears when changing modes, genre layout, or sort order
 (including cross-mode search, related-node navigation, and browser history).
