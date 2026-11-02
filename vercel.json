@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/page.ts": {
+      "includeFiles": "dist/index.html"
+    }
+  },
+  "routes": [
+    { "src": "^/$", "dest": "/api/page" },
+    { "src": "^/index\\.html$", "dest": "/api/page" },
+    { "handle": "filesystem" }
+  ]
+}

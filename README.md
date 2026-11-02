@@ -2,7 +2,7 @@
 
 A chronological map of music genres, artists, instruments, labels, scenes, and the lineages that connect them — the clean rebuild of the `music-tree` project.
 
-Vite, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vitest, linted with oxlint, deployable to Vercel as a static site.
+Vite, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vitest, linted with oxlint, and deployable to Vercel.
 
 On first load, a centered spinning vinyl logo covers the page before React starts.
 The same overlay appears when changing modes, genre layout, or sort order
@@ -30,14 +30,17 @@ Latin and African are broad regional umbrellas for the current catalogue, not
 single musical traditions. Actual ancestry and cross-influences remain in the
 graph relationships. Artist lanes and detail badges use the same families.
 
-- In Genres, the order toggle, marked by a sort icon, switches between
-  **Family groups** (the default) and **Oldest first** (first appearance):
-  one row per genre across all families,
-  ordered by `period.start`, then name and id for ties. Family colors, selection,
-  and horizontal zoom are preserved; changing order resets vertical scrolling
-  and brings the selection back into view. Artists keep their family layout.
-- Genre order is remembered when switching modes and shared with
-  `?sort=oldest-first`; omitting `sort` uses the default family groups.
+- Each timeline's order toggle, marked by a sort icon (under Options on mobile),
+  switches between **Family groups** (the default) and **Oldest first**.
+  The latter uses one row per genre, artist, or instrument across all families,
+  ordered by `period.start`, then name and id for ties. This is first appearance
+  for genres and instruments, and career start for artists. Family colors,
+  selection, and horizontal zoom are preserved; changing order resets vertical
+  scrolling and brings the selection back into view.
+- Each timeline remembers its own order when switching modes. Share links use
+  `?sort=oldest-first` for genres, `?artist-sort=oldest-first` for artists,
+  and `?instrument-sort=oldest-first` for instruments; an omitted parameter
+  uses family groups for that timeline.
 - Genres also offers a **Bars / Bubbles** switch (under Options on mobile).
   Bubbles keep family colors; their area and color brightness increase with the
   number of distinct genres reachable downstream through direct and indirect
@@ -62,8 +65,9 @@ graph relationships. Artist lanes and detail badges use the same families.
   ring without scaling the bubble. Selecting a bubble does not rearrange the map.
   Search and related-genre navigation reveal the selected bubble. The layout is
   remembered when visiting Artists and shared with `?layout=bubbles`.
-- Off-screen genres have a labeled, family-colored ghost bar at the left or
-  right edge, pointing toward their nearest visible period. Click or press
+- Off-screen genres and instruments, and artists in Oldest first, have a
+  labeled, family-colored ghost bar at the left or right edge, pointing toward
+  their nearest visible period. Click or press
   Enter/Space to reveal it. Indicators widen for their labels when space permits;
   in family groups, they do not overlap an on-screen bar, its label, or another
   indicator. Nearer genres take priority on shared rows. Ghosts are navigation
@@ -93,6 +97,10 @@ graph relationships. Artist lanes and detail badges use the same families.
 - Artists switches to artist bars, not an overlay on the genre timeline; artist bubbles are currently removed
 - Search and related-node navigation switch modes automatically when selecting an artist or genre and bring the selected bar into view
 - Selection is shareable via `?focus=<node-id>`; `?view=artists` or `?view=instruments` opens that timeline without a selection
+- Shared view and entity URLs return Open Graph and Twitter card metadata in the
+  initial HTML, including a Soundlines preview image. Entity previews use their
+  name and description (or a type-specific fallback). Genre bubbles have their
+  own view preview. The document metadata also follows navigation in the app.
 - Each mode remembers its horizontal time range; switching modes resets vertical scrolling and hover
 - The default Genres and Artists range remains 1948–present; Instruments opens on c. 500–present. Pan or zoom out to reach earlier history (back to c. 500), or search for an era or composer to jump there
 
@@ -115,8 +123,7 @@ the TR-909 derives from the TR-808, and the clarinet influenced the saxophone.
 The detail panel lists the genres each instrument is featured in and its notable
 players. Both open the corresponding genre or artist. A few instruments, including the
 harpsichord, theremin, and TB-303, have editorial usage phases that show
-eclipse and revival. The others stay neutral. Instruments have no bubble map
-or order toggle.
+eclipse and revival. The others stay neutral. Instruments have no bubble map.
 
 ### Historical prominence
 
@@ -197,6 +204,13 @@ The UI never touches the JSON directly: all queries (neighbors, lineage traversa
 ### Shared explorer architecture
 
 - [ExplorerContext](./src/ExplorerContext.ts) owns the graph index, active mode, selection, per-mode ranges, and URL synchronization; the provider wires the UI without graph/selection prop drilling.
+- [Social metadata](./src/socialMetadata.ts) derives previews from those same URL
+  parameters and graph nodes. The Vercel [page function](./api/page.ts) injects
+  them into the built HTML before it reaches social crawlers; Vite's dev and
+  preview servers do the same locally. Vercel routes `/` and `/index.html` to
+  this function; the `vercel-build` script generates the HTML before the
+  function bundles it. Other static hosts need equivalent server-side handling
+  for entity-specific previews.
 - [Timeline model](./src/graph/timeline.ts) projects the graph for each mode, infers artist families, and restricts layout and traversal to same-view relationships.
 - [Timeline](./src/components/Timeline.tsx) composes shared [geometry](./src/components/timeline/geometry.ts), [bar rendering](./src/components/timeline/TimelineBar.tsx), [relationship rendering](./src/components/timeline/TimelineLinks.tsx), and [viewport interaction](./src/components/timeline/useTimelineViewport.ts).
 - [Prominence helpers](./src/graph/phases.ts) provide the same intensity, fade, and revival logic for both node types.

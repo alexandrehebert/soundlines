@@ -24,7 +24,7 @@ function renderBubbles(selectedId: string | null) {
     <ExplorerContext.Provider value={{
       index, model: createTimelineModel(index, 'genre'), view: 'genre',
       selectedId, selectNode: vi.fn(), changeView: vi.fn(),
-      genreOrder: 'family', changeGenreOrder: vi.fn(),
+      order: 'family', changeOrder: vi.fn(),
       genreDisplay: 'bubbles', changeGenreDisplay: vi.fn(),
       viewRange: [1948, 2026], setViewRange: vi.fn(),
     }}>

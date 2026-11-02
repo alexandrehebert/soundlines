@@ -3,8 +3,10 @@ import { ExplorerContext } from '../src/ExplorerContext.ts'
 import rawGraph from '../src/data/graph.json'
 import type { GenreDisplay } from '../src/graph/bubbles.ts'
 import { buildIndex } from '../src/graph/graph.ts'
-import { revealEraRange, type GenreOrder } from '../src/graph/layout.ts'
-import { createTimelineModel, defaultViewRange, isTimelineView, type TimelineView } from '../src/graph/timeline.ts'
+import { revealEraRange, type TimelineOrder } from '../src/graph/layout.ts'
+import {
+  createTimelineModel, defaultViewRange, isTimelineView, type TimelineOrders, type TimelineView,
+} from '../src/graph/timeline.ts'
 import type { GraphNode, MusicGraph } from '../src/graph/types.ts'
 
 type YearRange = [number, number]
@@ -12,7 +14,7 @@ type YearRange = [number, number]
 export interface StoryExplorerOptions {
   initialView?: TimelineView
   initialSelectedId?: string | null
-  initialGenreOrder?: GenreOrder
+  initialOrder?: TimelineOrder
   initialGenreDisplay?: GenreDisplay
 }
 
@@ -33,16 +35,19 @@ export function ExplorerStoryProvider({
   children,
   initialView = 'genre',
   initialSelectedId = null,
-  initialGenreOrder = 'family',
+  initialOrder = 'family',
   initialGenreDisplay = 'bars',
 }: StoryExplorerOptions & { children: ReactNode }) {
   const [location, setLocation] = useState(() => {
     const node = initialSelectedId ? index.nodeById.get(initialSelectedId) : undefined
     if (initialSelectedId && !node) throw new Error(`Unknown story node ${initialSelectedId}`)
+    const view = nodeView(node, initialView)
+    const orders: TimelineOrders = { genre: 'family', artist: 'family', instrument: 'family' }
+    orders[view] = initialOrder
     return {
-      view: nodeView(node, initialView),
+      view,
       selectedId: initialSelectedId,
-      genreOrder: initialGenreOrder,
+      orders,
       genreDisplay: initialGenreDisplay,
     }
   })
@@ -72,11 +77,13 @@ export function ExplorerStoryProvider({
     setLocation((current) => current.view === view ? current : { ...current, view, selectedId: null })
   }, [])
 
-  const changeGenreOrder = useCallback((genreOrder: string) => {
-    if (genreOrder !== 'family' && genreOrder !== 'oldest-first') {
-      throw new Error(`Unknown genre order ${genreOrder}`)
+  const changeOrder = useCallback((order: string) => {
+    if (order !== 'family' && order !== 'oldest-first') {
+      throw new Error(`Unknown timeline order ${order}`)
     }
-    setLocation((current) => ({ ...current, genreOrder }))
+    setLocation((current) => current.orders[current.view] === order ? current : {
+      ...current, orders: { ...current.orders, [current.view]: order },
+    })
   }, [])
 
   const changeGenreDisplay = useCallback((genreDisplay: GenreDisplay) => {
@@ -94,13 +101,14 @@ export function ExplorerStoryProvider({
     index,
     model,
     ...location,
+    order: location.orders[location.view],
     selectNode,
     changeView,
-    changeGenreOrder,
+    changeOrder,
     changeGenreDisplay,
     viewRange: ranges[location.view],
     setViewRange,
-  }), [model, location, selectNode, changeView, changeGenreOrder, changeGenreDisplay, ranges, setViewRange])
+  }), [model, location, selectNode, changeView, changeOrder, changeGenreDisplay, ranges, setViewRange])
 
   return <ExplorerContext.Provider value={value}>{children}</ExplorerContext.Provider>
 }

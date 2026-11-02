@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="violetGlow" cx="70%" cy="20%" r="65%">
+      <stop stop-color="#4c1d95" stop-opacity=".36"/>
+      <stop offset="1" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cyanBar" x2="1" y2="0">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="violetBar" x2="1" y2="0">
+      <stop stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#e879f9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#020617"/>
+  <rect width="1200" height="630" fill="url(#violetGlow)"/>
+  <path d="M0 548H1200" stroke="#1e293b" stroke-width="2"/>
+  <g fill="none" stroke="#1e293b" stroke-width="2" opacity=".8">
+    <path d="M670 100V520M770 100V520M870 100V520M970 100V520M1070 100V520"/>
+    <path d="M625 160H1120M625 250H1120M625 340H1120M625 430H1120"/>
+  </g>
+  <text x="88" y="106" fill="#a78bfa" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="3">MUSIC HISTORY, CONNECTED</text>
+  <g transform="translate(88 155)" fill="none" stroke="#a78bfa" stroke-width="3">
+    <circle cx="34" cy="34" r="31"/>
+    <path d="M15 34a19 19 0 0 1 5.6-13.4M53 34a19 19 0 0 1-5.6 13.4" stroke-linecap="round"/>
+    <circle cx="34" cy="34" r="6"/>
+  </g>
+  <text x="173" y="209" fill="#f8fafc" font-family="Helvetica, Arial, sans-serif" font-size="68" font-weight="700" letter-spacing="-2">Soundlines</text>
+  <text x="88" y="282" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="29">A chronological map of</text>
+  <text x="88" y="326" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="29">music lineages.</text>
+  <text x="88" y="403" fill="#64748b" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="600" letter-spacing="1">GENRES  ·  ARTISTS  ·  INSTRUMENTS</text>
+  <g fill="none" stroke-linecap="round" stroke-width="3">
+    <path d="M760 169C817 169 810 257 867 257" stroke="#a78bfa" opacity=".65"/>
+    <path d="M867 257C917 257 914 350 963 350" stroke="#22d3ee" opacity=".65"/>
+    <path d="M811 350C861 350 858 440 910 440" stroke="#f472b6" opacity=".55"/>
+  </g>
+  <rect x="650" y="150" width="210" height="38" rx="19" fill="url(#violetBar)"/>
+  <rect x="790" y="238" width="251" height="38" rx="19" fill="url(#cyanBar)"/>
+  <rect x="698" y="331" width="195" height="38" rx="19" fill="#f472b6"/>
+  <rect x="920" y="331" width="162" height="38" rx="19" fill="#a78bfa"/>
+  <rect x="849" y="421" width="231" height="38" rx="19" fill="#38bdf8"/>
+  <g fill="#e2e8f0" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700">
+    <text x="672" y="175">Roots</text>
+    <text x="812" y="263">Influence</text>
+    <text x="720" y="356">Genres</text>
+    <text x="942" y="356">Artists</text>
+    <text x="871" y="446">Connections</text>
+  </g>
+  <g fill="#64748b" font-family="Helvetica, Arial, sans-serif" font-size="15">
+    <text x="655" y="495">PAST</text>
+    <text x="1022" y="495">PRESENT</text>
+  </g>
+  <text x="88" y="591" fill="#64748b" font-family="Helvetica, Arial, sans-serif" font-size="18">Explore how music moves through time.</text>
+</svg>

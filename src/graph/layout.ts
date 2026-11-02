@@ -18,7 +18,7 @@ export const DEFAULT_START_YEAR = 1948
 export const MAX_YEAR = CURRENT_YEAR + 2
 export const TIMELINE_PADDING = 24
 
-export type GenreOrder = 'family' | 'oldest-first'
+export type TimelineOrder = 'family' | 'oldest-first'
 
 export interface TimeScale {
   /** First visible year. */

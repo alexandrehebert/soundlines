@@ -1,6 +1,6 @@
 import { ARTIST_EDGE_COLORS, INSTRUMENT_EDGE_COLORS, LINEAGE_EDGE_COLORS } from '../theme.ts'
 import { buildIndex, type GraphIndex } from './graph.ts'
-import { CURRENT_YEAR, DEFAULT_START_YEAR, layoutFamilies, MAX_YEAR, MIN_YEAR } from './layout.ts'
+import { CURRENT_YEAR, DEFAULT_START_YEAR, layoutFamilies, MAX_YEAR, MIN_YEAR, type TimelineOrder } from './layout.ts'
 import {
   FAMILY_ORDER,
   isGenreFamily,
@@ -13,8 +13,35 @@ import {
 } from './types.ts'
 
 export type TimelineView = 'genre' | 'artist' | 'instrument'
+export type TimelineOrders = Record<TimelineView, TimelineOrder>
 
 export const TIMELINE_VIEWS: readonly TimelineView[] = ['genre', 'artist', 'instrument']
+
+export const VIEW_LABELS: Record<TimelineView, string> = {
+  genre: 'Genre',
+  artist: 'Artist',
+  instrument: 'Instrument',
+}
+
+const ORDER_PARAMS: Record<TimelineView, string> = {
+  genre: 'sort',
+  artist: 'artist-sort',
+  instrument: 'instrument-sort',
+}
+
+export function readTimelineOrders(params: URLSearchParams): TimelineOrders {
+  const orderFor = (view: TimelineView): TimelineOrder =>
+    params.get(ORDER_PARAMS[view]) === 'oldest-first' ? 'oldest-first' : 'family'
+  return { genre: orderFor('genre'), artist: orderFor('artist'), instrument: orderFor('instrument') }
+}
+
+export function writeTimelineOrders(params: URLSearchParams, orders: TimelineOrders): void {
+  for (const view of TIMELINE_VIEWS) {
+    const param = ORDER_PARAMS[view]
+    if (orders[view] === 'oldest-first') params.set(param, 'oldest-first')
+    else params.delete(param)
+  }
+}
 
 export function isTimelineView(type: string | undefined): type is TimelineView {
   return (TIMELINE_VIEWS as readonly (string | undefined)[]).includes(type)

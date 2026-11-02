@@ -1,35 +1,38 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useArgs } from 'storybook/preview-api'
 import { expect, fn, userEvent, waitFor, within } from 'storybook/test'
-import { GenreOrderSelect } from '../App.tsx'
+import { TimelineOrderSelect } from '../App.tsx'
 
 const meta = {
-  title: 'Controls/Genre order',
-  component: GenreOrderSelect,
+  title: 'Controls/Timeline order',
+  component: TimelineOrderSelect,
   tags: ['autodocs'],
-  args: { genreOrder: 'family', changeGenreOrder: fn(), className: 'flex' },
+  args: { view: 'genre', order: 'family', changeOrder: fn(), className: 'flex' },
   argTypes: {
-    genreOrder: { control: 'inline-radio', options: ['family', 'oldest-first'] },
-    changeGenreOrder: { control: false },
+    view: { control: 'inline-radio', options: ['genre', 'artist', 'instrument'] },
+    order: { control: 'inline-radio', options: ['family', 'oldest-first'] },
+    changeOrder: { control: false },
   },
   render: function Render(args) {
     const [, updateArgs] = useArgs()
     return (
       <div className="inline-flex">
-        <GenreOrderSelect {...args} changeGenreOrder={(genreOrder) => {
-          args.changeGenreOrder(genreOrder)
-          updateArgs({ genreOrder })
+        <TimelineOrderSelect {...args} changeOrder={(order) => {
+          args.changeOrder(order)
+          updateArgs({ order })
         }} />
       </div>
     )
   },
-} satisfies Meta<typeof GenreOrderSelect>
+} satisfies Meta<typeof TimelineOrderSelect>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const FamilyGroups: Story = {}
-export const OldestFirst: Story = { args: { genreOrder: 'oldest-first' } }
+export const OldestFirst: Story = { args: { order: 'oldest-first' } }
+export const Artists: Story = { args: { view: 'artist' } }
+export const Instruments: Story = { args: { view: 'instrument' } }
 
 export const KeyboardNavigation: Story = {
   play: async ({ canvasElement }) => {

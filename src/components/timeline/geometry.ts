@@ -1,4 +1,4 @@
-import { yearToX, type FamilyLane, type GenreOrder, type TimelineBar, type TimeScale } from '../../graph/layout.ts'
+import { yearToX, type FamilyLane, type TimelineBar, type TimelineOrder, type TimeScale } from '../../graph/layout.ts'
 import { TIMELINE_BAR_HEIGHT, visibleSpans } from '../../graph/phases.ts'
 import { FAMILY_LABELS, type GraphNode } from '../../graph/types.ts'
 import { FAMILY_COLORS } from '../../theme.ts'
@@ -48,7 +48,7 @@ function positionBar(bar: TimelineBar, scale: TimeScale, yCenter: number): BarPo
   }
 }
 
-export function positionTimeline(lanes: FamilyLane[], scale: TimeScale, order: GenreOrder = 'family') {
+export function positionTimeline(lanes: FamilyLane[], scale: TimeScale, order: TimelineOrder = 'family') {
   const bars: BarPosition[] = []
   const bands: { family: string; label: string; top: number; height: number; color: string }[] = []
   if (order === 'oldest-first') {
@@ -265,6 +265,7 @@ export function offscreenIndicators(
   bars: BarPosition[],
   width: number,
   options: {
+    includeArtists?: boolean
     indicatorLabelWidths?: ReadonlyMap<string, number>
     visibleLabels?: ReadonlyMap<string, BarLabel>
     visibleLabelWidths?: ReadonlyMap<string, number>
@@ -281,7 +282,7 @@ export function offscreenIndicators(
   }
   for (const row of rows.values()) {
     const candidates = row.flatMap((bar) => {
-      if (bar.node.type === 'artist' || !bar.visibleSpans.length
+      if ((bar.node.type === 'artist' && !options.includeArtists) || !bar.visibleSpans.length
         || bar.visibleSpans.some(([start, end]) => end > 0 && start < width)) return []
       const nearest = bar.visibleSpans.map(([start, end]) => ({
         direction: end <= 0 ? 'left' as const : 'right' as const,

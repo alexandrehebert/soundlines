@@ -1,23 +1,28 @@
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it, vi } from 'vitest'
-import { GenreOrderSelect } from './App.tsx'
-import type { GenreOrder } from './graph/layout.ts'
+import { TimelineOrderSelect } from './App.tsx'
+import type { TimelineOrder } from './graph/layout.ts'
+import type { TimelineView } from './graph/timeline.ts'
 
-function renderOrder(genreOrder: GenreOrder) {
+function renderOrder(view: TimelineView, order: TimelineOrder) {
   const markup = renderToStaticMarkup(
-    <GenreOrderSelect genreOrder={genreOrder} changeGenreOrder={vi.fn()} />,
+    <TimelineOrderSelect view={view} order={order} changeOrder={vi.fn()} />,
   )
   const radios = [...markup.matchAll(/<button\b[^>]*>[\s\S]*?<\/button>/g)].map(([radio]) => radio)
   return { markup, radios }
 }
 
-describe('genre order toggle', () => {
+describe('timeline order toggle', () => {
   it.each([
-    ['family', 0],
-    ['oldest-first', 1],
-  ] as const)('renders %s as the selected order', (order, selectedIndex) => {
-    const { markup, radios } = renderOrder(order)
-    expect(markup).toContain('role="radiogroup" aria-label="Genre order"')
+    ['genre', 'Genre', 'family', 0],
+    ['genre', 'Genre', 'oldest-first', 1],
+    ['artist', 'Artist', 'family', 0],
+    ['artist', 'Artist', 'oldest-first', 1],
+    ['instrument', 'Instrument', 'family', 0],
+    ['instrument', 'Instrument', 'oldest-first', 1],
+  ] as const)('renders the %s %s toggle with %s selected', (view, label, order, selectedIndex) => {
+    const { markup, radios } = renderOrder(view, order)
+    expect(markup).toContain(`role="radiogroup" aria-label="${label} order"`)
     expect(markup).toContain('rounded-full border border-slate-700 bg-slate-900 p-1')
     expect(markup).toContain('lucide-arrow-down-wide-narrow')
     expect(markup).toMatch(/<svg\b[^>]*aria-hidden="true"/)

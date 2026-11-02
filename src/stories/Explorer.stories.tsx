@@ -62,6 +62,42 @@ export const Instruments: Story = {
   parameters: { explorer: { initialView: 'instrument' } },
 }
 
+export const IndependentOrders: Story = {
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const viewToggle = canvas.getByRole('radiogroup', { name: 'Timeline view' })
+    const switchView = async (label: string) => {
+      await userEvent.click(within(viewToggle).getByRole('radio', { name: label }))
+    }
+    const chooseOrder = async (label: string, order: string) => {
+      const toggle = canvas.getByRole('radiogroup', { name: `${label} order` })
+      await userEvent.click(within(toggle).getByRole('radio', { name: order }))
+    }
+    const expectOrder = async (view: string, order: string) => {
+      await waitFor(() => expect(canvasElement.querySelector(`[data-timeline-view="${view}"]`))
+        .toHaveAttribute('data-timeline-order', order))
+    }
+
+    await chooseOrder('Genre', 'Oldest first')
+    await expectOrder('genre', 'oldest-first')
+    await switchView('Artists')
+    await expectOrder('artist', 'family')
+    await chooseOrder('Artist', 'Oldest first')
+    await expectOrder('artist', 'oldest-first')
+    await switchView('Instruments')
+    await expectOrder('instrument', 'family')
+    await chooseOrder('Instrument', 'Oldest first')
+    await expectOrder('instrument', 'oldest-first')
+    await switchView('Genres')
+    await expectOrder('genre', 'oldest-first')
+    await chooseOrder('Genre', 'Family groups')
+    await switchView('Artists')
+    await expectOrder('artist', 'oldest-first')
+    await switchView('Instruments')
+    await expectOrder('instrument', 'oldest-first')
+  },
+}
+
 export const BubbleMap: Story = {
   parameters: { explorer: { initialGenreDisplay: 'bubbles' } },
 }
@@ -80,6 +116,20 @@ export const MobileOptions: Story = {
     const canvas = within(canvasElement)
     await userEvent.click(canvas.getByRole('button', { name: 'Timeline options and legend' }))
     await waitFor(() => expect(canvas.getByRole('dialog', { name: 'Timeline options' })).toBeVisible())
+  },
+}
+
+export const MobileInstrumentOrder: Story = {
+  globals: { viewport: { value: 'mobile2', isRotated: false } },
+  parameters: { explorer: { initialView: 'instrument' } },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    await userEvent.click(canvas.getByRole('button', { name: 'Timeline options and legend' }))
+    const options = await canvas.findByRole('dialog', { name: 'Timeline options' })
+    const order = within(options).getByRole('radiogroup', { name: 'Instrument order' })
+    await userEvent.click(within(order).getByRole('radio', { name: 'Oldest first' }))
+    await waitFor(() => expect(canvasElement.querySelector('[data-timeline-view="instrument"]'))
+      .toHaveAttribute('data-timeline-order', 'oldest-first'))
   },
 }
 

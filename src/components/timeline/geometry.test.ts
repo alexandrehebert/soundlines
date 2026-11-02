@@ -111,6 +111,39 @@ describe('shared bar geometry', () => {
     })
   })
 
+  it.each([
+    ['artist', 'classical', 'rock'],
+    ['instrument', 'strings', 'winds'],
+  ] as const)('orders %s rows across families by start, name, and id', (view, firstFamily, secondFamily) => {
+    const graph: MusicGraph = {
+      version: 1,
+      nodes: [
+        { id: `${view}:later`, type: view, name: 'Later', family: firstFamily, period: { start: 2000 } },
+        { id: `${view}:alpha-b`, type: view, name: 'Alpha', family: secondFamily, period: { start: 1900 } },
+        { id: `${view}:alpha-a`, type: view, name: 'Alpha', family: firstFamily, period: { start: 1900 } },
+        { id: `${view}:beta`, type: view, name: 'Beta', family: firstFamily, period: { start: 1900 } },
+      ],
+      edges: [],
+    }
+    const lanes = layoutFamilies(graph, 2026, view)
+    const before = structuredClone(lanes)
+    const scale = { start: 1800, end: 2026, width: 1000 }
+    const grouped = positionTimeline(lanes, scale, 'family')
+    const sorted = positionTimeline(lanes, scale, 'oldest-first')
+
+    expect(grouped.bands).toHaveLength(2)
+    expect(sorted.bands).toEqual([])
+    expect(sorted.bars.map((bar) => bar.node.id)).toEqual([
+      `${view}:alpha-a`, `${view}:alpha-b`, `${view}:beta`, `${view}:later`,
+    ])
+    expect(new Set(sorted.bars.map((bar) => bar.yCenter)).size).toBe(graph.nodes.length)
+    for (const positioned of sorted.bars) {
+      const original = grouped.bars.find((bar) => bar.node.id === positioned.node.id)!
+      expect(positioned).toEqual({ ...original, yCenter: positioned.yCenter })
+    }
+    expect(lanes).toEqual(before)
+  })
+
   it('labels the first visible stretch in the viewport, including a revival', () => {
     expect(barLabel(bar, 300)).toEqual({ x: 10, maxWidth: 64, textAnchor: 'start', outside: false })
     expect(barLabel({ ...bar, visibleSpans: [[-200, -120], [20, 170]] }, 300))
@@ -247,7 +280,7 @@ describe('shared bar geometry', () => {
     })).toBe('te…')
   })
 
-  describe('off-screen genre indicators', () => {
+  describe('off-screen indicators', () => {
     function genre(id: string, spans: [number, number][], yCenter = 50): BarPosition {
       return {
         ...bar, node: { id, type: 'genre', name: id },
@@ -370,8 +403,16 @@ describe('shared bar geometry', () => {
       expect(offscreenIndicators(bars, 100).size).toBe(0)
     })
 
-    it('leaves artist timelines unchanged', () => {
-      expect(offscreenIndicators([{ ...bar, x1: -200, x2: -100, visibleSpans: [[-200, -100]] }], 1000)
+    it('only adds artist indicators when explicitly enabled', () => {
+      const historicalArtist = { ...bar, x1: -200, x2: -100, visibleSpans: [[-200, -100]] as [number, number][] }
+      expect(offscreenIndicators([historicalArtist], 1000).size).toBe(0)
+      expect(offscreenIndicators([historicalArtist], 1000, { includeArtists: true }).get('artist:a'))
+        .toEqual({ x: 8, width: 220, direction: 'left', targetX: -100 })
+      expect(offscreenIndicators([{
+        ...historicalArtist, x1: 1100, x2: 1200, visibleSpans: [[1100, 1200]],
+      }], 1000, { includeArtists: true }).get('artist:a'))
+        .toEqual({ x: 772, width: 220, direction: 'right', targetX: 1100 })
+      expect(offscreenIndicators([{ ...historicalArtist, visibleSpans: [[20, 200]] }], 1000, { includeArtists: true })
         .size).toBe(0)
     })
   })

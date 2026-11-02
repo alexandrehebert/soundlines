@@ -11,9 +11,9 @@ import { Timeline } from './components/Timeline.tsx'
 import { GenreBubbles } from './components/GenreBubbles.tsx'
 import { MOBILE_DETAIL_COLLAPSED_OFFSET, MOBILE_DETAIL_HEIGHT } from './components/mobileDetailSheet.ts'
 import rawGraph from './data/graph.json'
-import type { GenreOrder } from './graph/layout.ts'
+import type { TimelineOrder } from './graph/layout.ts'
 import type { StatsTab } from './graph/stats.ts'
-import { TIMELINE_VIEWS, type TimelineView } from './graph/timeline.ts'
+import { TIMELINE_VIEWS, VIEW_LABELS, type TimelineView } from './graph/timeline.ts'
 import type { MusicGraph } from './graph/types.ts'
 
 const graph = rawGraph as MusicGraph
@@ -21,7 +21,7 @@ const graph = rawGraph as MusicGraph
 const STAT_LABELS = { genre: 'genres', artist: 'artists', instrument: 'instruments', links: 'links' } as const
 
 export function Explorer() {
-  const { index, view, changeView, selectedId, selectNode, genreOrder, changeGenreOrder, genreDisplay } = useExplorer()
+  const { index, view, changeView, selectedId, selectNode, order, changeOrder, genreDisplay } = useExplorer()
   const showingBubbles = view === 'genre' && genreDisplay === 'bubbles'
   const [optionsOpen, setOptionsOpen] = useState(false)
   const [statsTab, setStatsTab] = useState<StatsTab | null>(null)
@@ -62,8 +62,8 @@ export function Explorer() {
         </div>
         <ViewToggle view={view} changeView={changeView} className="hidden md:flex" />
         {view === 'genre' && <GenreDisplaySelect className="hidden md:flex" />}
-        {view === 'genre' && !showingBubbles && (
-          <GenreOrderSelect genreOrder={genreOrder} changeGenreOrder={changeGenreOrder} className="hidden md:flex" />
+        {!showingBubbles && (
+          <TimelineOrderSelect view={view} order={order} changeOrder={changeOrder} className="hidden md:flex" />
         )}
         <div className="-mr-2 ml-auto hidden items-center gap-1 text-xs font-medium text-slate-500 md:flex">
           {(['genre', 'artist', 'instrument', 'links'] as const).map((tab) => (
@@ -82,7 +82,7 @@ export function Explorer() {
       {!showingBubbles && <div className="hidden border-b border-slate-800/60 bg-slate-950/70 px-5 py-1.5 lg:block"><Legend /></div>}
       <main className="relative flex min-h-0 flex-1">
         <div className="min-w-0 flex-1">
-          {showingBubbles ? <GenreBubbles /> : <Timeline key={view === 'genre' ? `${view}-${genreOrder}` : view} />}
+          {showingBubbles ? <GenreBubbles /> : <Timeline key={`${view}-${order}`} />}
         </div>
         <AnimatePresence>
           {selectedId && (
@@ -148,8 +148,8 @@ export function Explorer() {
               {view === 'genre' && (
                 <GenreDisplaySelect className="mb-6 flex" />
               )}
-              {view === 'genre' && !showingBubbles && (
-                <GenreOrderSelect genreOrder={genreOrder} changeGenreOrder={changeGenreOrder} className="mb-6 flex" />
+              {!showingBubbles && (
+                <TimelineOrderSelect view={view} order={order} changeOrder={changeOrder} className="mb-6 flex" />
               )}
               {!showingBubbles && <div className="border-t border-slate-800 pt-4"><Legend /></div>}
               <button
@@ -366,44 +366,46 @@ export function GenreDisplaySelect({ className = '' }: { className?: string }) {
   )
 }
 
-export function GenreOrderSelect({
-  genreOrder,
-  changeGenreOrder,
+export function TimelineOrderSelect({
+  view,
+  order,
+  changeOrder,
   className = '',
 }: {
-  genreOrder: GenreOrder
-  changeGenreOrder: (order: GenreOrder) => void
+  view: TimelineView
+  order: TimelineOrder
+  changeOrder: (order: TimelineOrder) => void
   className?: string
 }) {
   const indicatorId = useId()
   const options = ['family', 'oldest-first'] as const
-  const { buttonRefs, handleKeyDown } = useToggleNavigation(genreOrder, options, changeGenreOrder)
+  const { buttonRefs, handleKeyDown } = useToggleNavigation(order, options, changeOrder)
 
   return (
     <div
       className={`${toggleContainerClass} ${className}`}
       role="radiogroup"
-      aria-label="Genre order"
+      aria-label={`${VIEW_LABELS[view]} order`}
       onKeyDown={handleKeyDown}
     >
       <ArrowDownWideNarrow className="mx-2 h-3.5 w-3.5 shrink-0 text-slate-400" aria-hidden="true" />
-      {options.map((order) => {
-        const selected = genreOrder === order
+      {options.map((option) => {
+        const selected = order === option
         return (
           <button
-            key={order}
+            key={option}
             ref={(element) => {
-              buttonRefs.current[order] = element
+              buttonRefs.current[option] = element
             }}
             type="button"
             role="radio"
             aria-checked={selected}
             tabIndex={selected ? 0 : -1}
-            onClick={() => changeGenreOrder(order)}
+            onClick={() => changeOrder(option)}
             className={`${toggleButtonClass(selected)} min-w-0 flex-1 justify-center whitespace-nowrap md:flex-none`}
           >
-            {selected && <ToggleIndicator layoutId={`genre-order-indicator-${indicatorId}`} />}
-            <span className="relative">{order === 'family' ? 'Family groups' : 'Oldest first'}</span>
+            {selected && <ToggleIndicator layoutId={`timeline-order-indicator-${indicatorId}`} />}
+            <span className="relative">{option === 'family' ? 'Family groups' : 'Oldest first'}</span>
           </button>
         )
       })}

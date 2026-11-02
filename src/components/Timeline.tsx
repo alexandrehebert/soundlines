@@ -2,16 +2,14 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { useExplorer } from '../ExplorerContext.ts'
 import { lineageHighlight } from '../graph/graph.ts'
 import { ERA_SEGMENTS, MAX_YEAR, TIMELINE_PADDING, timeTicks, yearToX, type TimeScale } from '../graph/layout.ts'
+import { VIEW_LABELS } from '../graph/timeline.ts'
 import { AXIS_H, offscreenIndicators, positionRowLabels, positionTimeline, revealBarScrollTop, type BarLabel } from './timeline/geometry.ts'
 import { TimelineBar } from './timeline/TimelineBar.tsx'
 import { TimelineLinks } from './timeline/TimelineLinks.tsx'
 import { useTimelineViewport } from './timeline/useTimelineViewport.ts'
 
-const VIEW_LABELS = { genre: 'Genre', artist: 'Artist', instrument: 'Instrument' } as const
-
 export function Timeline() {
-  const { model, view, selectedId, viewRange, genreOrder } = useExplorer()
-  const order = view === 'genre' ? genreOrder : 'family'
+  const { model, view, selectedId, viewRange, order } = useExplorer()
   const { containerRef, width, select, handlers } = useTimelineViewport()
   const [hoveredId, setHoveredId] = useState<string | null>(null)
   const [labelWidths, setLabelWidths] = useState<Map<string, { name: string; weight: string; width: number }>>(() => new Map())
@@ -53,11 +51,12 @@ export function Timeline() {
   }, [barsByRow, measuredWidths.normal, width])
   const indicators = useMemo(
     () => offscreenIndicators(bars, width, {
+      includeArtists: view === 'artist' && order === 'oldest-first',
       indicatorLabelWidths: measuredWidths.indicators,
       visibleLabels: labelPositions,
       visibleLabelWidths: measuredWidths.normal,
     }),
-    [bars, width, measuredWidths.indicators, measuredWidths.normal, labelPositions],
+    [bars, width, view, order, measuredWidths.indicators, measuredWidths.normal, labelPositions],
   )
   const focusId = hoveredId ?? selectedId
   const highlight = useMemo(
