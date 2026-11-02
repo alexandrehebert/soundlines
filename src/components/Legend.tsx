@@ -36,6 +36,9 @@ export function Legend() {
       ))}
       <span className="text-[10px] text-slate-500">Editorial phases, not popularity scores</span>
       {view === 'artist' && <span className="text-[10px] text-slate-500">Unresearched artists stay neutral</span>}
+      {view === 'instrument' && (
+        <span className="text-[10px] text-slate-500">Bars start at first documented appearance · unannotated instruments stay neutral</span>
+      )}
     </div>
   )
 }

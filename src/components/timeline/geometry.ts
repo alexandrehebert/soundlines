@@ -281,7 +281,7 @@ export function offscreenIndicators(
   }
   for (const row of rows.values()) {
     const candidates = row.flatMap((bar) => {
-      if (bar.node.type !== 'genre' || !bar.visibleSpans.length
+      if (bar.node.type === 'artist' || !bar.visibleSpans.length
         || bar.visibleSpans.some(([start, end]) => end > 0 && start < width)) return []
       const nearest = bar.visibleSpans.map(([start, end]) => ({
         direction: end <= 0 ? 'left' as const : 'right' as const,

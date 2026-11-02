@@ -69,7 +69,7 @@ export function SearchBar() {
           onFocus={() => setOpen(true)}
           onBlur={() => setOpen(false)}
           onKeyDown={handleKeyDown}
-          placeholder="Search genres, artists, labels…"
+          placeholder="Search genres, artists, instruments…"
           className="w-full min-w-0 rounded-full border border-slate-700 bg-slate-900/80 py-2 pl-9 pr-4 text-sm text-slate-200 placeholder:text-slate-500 focus:border-violet-500 focus:outline-none"
         />
         {open && query.trim().length > 0 && (
@@ -108,7 +108,7 @@ export function SearchBar() {
                   value={query}
                   onChange={(event) => setQuery(event.target.value)}
                   onKeyDown={handleKeyDown}
-                  placeholder="Genres, artists, labels…"
+                  placeholder="Genres, artists, instruments…"
                   enterKeyHint="search"
                   className="w-full rounded-2xl border border-slate-700 bg-slate-900 py-3 pl-10 pr-4 text-base text-slate-100 placeholder:text-slate-500 focus:border-violet-500 focus:outline-none"
                 />
@@ -118,7 +118,7 @@ export function SearchBar() {
                   <SearchResults results={results} onPick={pick} />
                 ) : (
                   <p className="px-1 py-3 text-sm text-slate-500">
-                    Search the timeline by genre, artist, or label.
+                    Search the timeline by genre, artist, instrument, or label.
                   </p>
                 )}
               </div>

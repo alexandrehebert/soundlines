@@ -1,4 +1,4 @@
-import type { EdgeType, GenreFamily, NodeType, Period } from './graph/types.ts'
+import type { EdgeType, LaneFamily, NodeType, Period } from './graph/types.ts'
 
 export const DEFAULT_BUBBLE_ZOOM = 0.75
 
@@ -16,7 +16,7 @@ export const SELECTION_OUTLINE = {
   outlineOffset: 4,
 } as const
 
-export const FAMILY_COLORS: Record<GenreFamily, string> = {
+export const FAMILY_COLORS: Record<LaneFamily, string> = {
   classical: '#fda4af',
   'blues-soul': '#f59e0b',
   jazz: '#60a5fa',
@@ -33,6 +33,12 @@ export const FAMILY_COLORS: Record<GenreFamily, string> = {
   house: '#f472b6',
   techno: '#22d3ee',
   'breakbeat-bass': '#a3e635',
+  strings: '#e2a76f',
+  keyboards: '#818cf8',
+  winds: '#34d399',
+  brass: '#fbbf24',
+  percussion: '#ef4444',
+  electronic: '#38bdf8',
 }
 
 export const LINEAGE_EDGE_COLORS: Partial<Record<EdgeType, string>> = {
@@ -50,9 +56,15 @@ export const ARTIST_EDGE_COLORS: Partial<Record<EdgeType, string>> = {
   collaborated_with: '#fbbf24',
 }
 
+export const INSTRUMENT_EDGE_COLORS: Partial<Record<EdgeType, string>> = {
+  derived_from: '#22d3ee',
+  influences: '#a78bfa',
+}
+
 export const NODE_TYPE_COLORS: Record<NodeType, string> = {
   genre: '#a78bfa',
   artist: '#67e8f9',
+  instrument: '#fcd34d',
   label: '#fbbf24',
   place: '#4ade80',
   track: '#f472b6',

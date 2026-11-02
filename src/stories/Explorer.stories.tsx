@@ -19,6 +19,10 @@ export const Artists: Story = {
   parameters: { explorer: { initialView: 'artist' } },
 }
 
+export const Instruments: Story = {
+  parameters: { explorer: { initialView: 'instrument' } },
+}
+
 export const BubbleMap: Story = {
   parameters: { explorer: { initialGenreDisplay: 'bubbles' } },
 }

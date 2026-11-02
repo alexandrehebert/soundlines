@@ -7,7 +7,7 @@
  * edges -> typed relationships, remaining fields -> properties).
  */
 
-export type NodeType = 'genre' | 'artist' | 'label' | 'place' | 'track' | 'scene'
+export type NodeType = 'genre' | 'artist' | 'instrument' | 'label' | 'place' | 'track' | 'scene'
 
 export type EdgeType =
   // genre lineage
@@ -21,6 +21,9 @@ export type EdgeType =
   | 'key_artist_of'
   | 'member_of'
   | 'collaborated_with'
+  // instruments
+  | 'featured_in'
+  | 'plays'
   // industry & geography
   | 'signed_to'
   | 'founded'
@@ -59,6 +62,17 @@ export type GenreFamily =
   | 'techno'
   | 'breakbeat-bass'
 
+export type InstrumentFamily =
+  | 'strings'
+  | 'keyboards'
+  | 'winds'
+  | 'brass'
+  | 'percussion'
+  | 'electronic'
+
+/** Timeline lane: genre families for genres and artists, instrument families for instruments. */
+export type LaneFamily = GenreFamily | InstrumentFamily
+
 export type ArtistKind = 'person' | 'group' | 'collective'
 
 export type Prominence = 'emerging' | 'golden-age' | 'established' | 'niche'
@@ -84,8 +98,17 @@ const ARTIST_PROMINENCE_LABELS: Record<Prominence, string> = {
   niche: 'Low profile / hiatus',
 }
 
+const INSTRUMENT_PROMINENCE_LABELS: Record<Prominence, string> = {
+  emerging: 'Emerging',
+  'golden-age': 'Peak use',
+  established: 'Continuing',
+  niche: 'Rare / eclipsed',
+}
+
 export function prominenceLabels(type: NodeType): Record<Prominence, string> {
-  return type === 'artist' ? ARTIST_PROMINENCE_LABELS : PROMINENCE_LABELS
+  if (type === 'artist') return ARTIST_PROMINENCE_LABELS
+  if (type === 'instrument') return INSTRUMENT_PROMINENCE_LABELS
+  return PROMINENCE_LABELS
 }
 
 export interface GraphNode {
@@ -94,8 +117,11 @@ export interface GraphNode {
   name: string
   period?: Period
   description?: string
-  /** Lane grouping; artist lanes can also be inferred from their genre relationships. */
-  family?: GenreFamily
+  /**
+   * Lane grouping: a genre family for genres (and artist overrides), an
+   * instrument family for instruments. Artist lanes are usually inferred.
+   */
+  family?: LaneFamily
   /** Only meaningful for artists. */
   kind?: ArtistKind
   sources?: string[]
@@ -142,7 +168,7 @@ export const LINEAGE_EDGE_TYPES: readonly EdgeType[] = Object.keys(
   LINEAGE_ORIENTATION,
 ) as EdgeType[]
 
-export const FAMILY_LABELS: Record<GenreFamily, string> = {
+export const FAMILY_LABELS: Record<LaneFamily, string> = {
   classical: 'Classical',
   'blues-soul': 'Blues, R&B & Soul',
   jazz: 'Jazz',
@@ -159,6 +185,12 @@ export const FAMILY_LABELS: Record<GenreFamily, string> = {
   house: 'Disco & House',
   techno: 'Techno & Trance',
   'breakbeat-bass': 'Breakbeat & Bass',
+  strings: 'Strings',
+  keyboards: 'Keyboards & Organs',
+  winds: 'Woodwinds & Reeds',
+  brass: 'Brass',
+  percussion: 'Percussion',
+  electronic: 'Electronic & Studio',
 }
 
 export const FAMILY_ORDER: readonly GenreFamily[] = [
@@ -180,9 +212,27 @@ export const FAMILY_ORDER: readonly GenreFamily[] = [
   'breakbeat-bass',
 ]
 
+export const INSTRUMENT_FAMILY_ORDER: readonly InstrumentFamily[] = [
+  'strings',
+  'keyboards',
+  'winds',
+  'brass',
+  'percussion',
+  'electronic',
+]
+
+export function isGenreFamily(family: LaneFamily | undefined): family is GenreFamily {
+  return (FAMILY_ORDER as readonly string[]).includes(family as string)
+}
+
+export function isInstrumentFamily(family: LaneFamily | undefined): family is InstrumentFamily {
+  return (INSTRUMENT_FAMILY_ORDER as readonly string[]).includes(family as string)
+}
+
 export const NODE_TYPE_LABELS: Record<NodeType, string> = {
   genre: 'Genre',
   artist: 'Artist',
+  instrument: 'Instrument',
   label: 'Label',
   place: 'Place',
   track: 'Track',
@@ -200,6 +250,8 @@ export const EDGE_TYPE_LABELS: Record<EdgeType, string> = {
   key_artist_of: 'key artist of',
   member_of: 'member of',
   collaborated_with: 'collaborated with',
+  featured_in: 'featured in',
+  plays: 'plays',
   signed_to: 'signed to',
   founded: 'founded',
   originated_in: 'originated in',
@@ -218,6 +270,8 @@ export const EDGE_TYPE_INVERSE_LABELS: Record<EdgeType, string> = {
   key_artist_of: 'key artists',
   member_of: 'members',
   collaborated_with: 'collaborated with',
+  featured_in: 'instruments',
+  plays: 'notable players',
   signed_to: 'roster',
   founded: 'founded by',
   originated_in: 'birthplace of',

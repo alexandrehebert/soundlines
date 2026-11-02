@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import rawGraph from '../data/graph.json'
 import { buildIndex, lineage } from './graph.ts'
-import { artistFamily, createTimelineModel } from './timeline.ts'
+import { artistFamily, createTimelineModel, defaultViewRange, isTimelineView, viewFromParam, VIEW_PARAMS } from './timeline.ts'
 import type { MusicGraph } from './types.ts'
 
 const graph: MusicGraph = {
@@ -12,6 +12,10 @@ const graph: MusicGraph = {
     { id: 'artist:a', type: 'artist', name: 'A', period: { start: 1960 } },
     { id: 'artist:b', type: 'artist', name: 'B', period: { start: 1980 } },
     { id: 'artist:group', type: 'artist', name: 'Group', kind: 'group', period: { start: 1985 } },
+    { id: 'instrument:guitar', type: 'instrument', name: 'Guitar', family: 'strings', period: { start: 1500 } },
+    { id: 'instrument:electric-guitar', type: 'instrument', name: 'Electric guitar', family: 'strings',
+      period: { start: 1932 } },
+    { id: 'instrument:tr-808', type: 'instrument', name: 'TR-808', family: 'electronic', period: { start: 1980 } },
   ],
   edges: [
     { id: 'g', type: 'influences', from: 'genre:blues', to: 'genre:house' },
@@ -23,6 +27,9 @@ const graph: MusicGraph = {
     { id: 'collaboration', type: 'collaborated_with', from: 'artist:a', to: 'artist:group',
       period: { start: 1990 } },
     { id: 'cross-type', type: 'influences', from: 'artist:a', to: 'genre:house' },
+    { id: 'derived', type: 'derived_from', from: 'instrument:electric-guitar', to: 'instrument:guitar' },
+    { id: 'featured', type: 'featured_in', from: 'instrument:tr-808', to: 'genre:house' },
+    { id: 'plays', type: 'plays', from: 'artist:b', to: 'instrument:tr-808' },
   ],
 }
 
@@ -75,6 +82,34 @@ describe('timeline projections', () => {
       ...graph, nodes: [...graph.nodes, { id: 'artist:missing', type: 'artist', name: 'Missing' }],
     })
     expect(() => createTimelineModel(incomplete, 'artist')).toThrow('artist:missing')
+  })
+
+  it('lays out instruments in instrument-family lanes with only instrument lineage links', () => {
+    const model = createTimelineModel(index, 'instrument', 2026)
+    expect(model.lanes.map((lane) => lane.family)).toEqual(['strings', 'electronic'])
+    expect(model.index.graph.edges.map((edge) => edge.id)).toEqual(['derived'])
+    const result = lineage(model.index, 'instrument:electric-guitar', model.orientation)
+    expect([...result.ancestors]).toEqual(['instrument:guitar'])
+    expect(createTimelineModel(index, 'genre').index.graph.edges.map((edge) => edge.id)).toEqual(['g'])
+  })
+
+  it('reports instruments without an instrument family', () => {
+    const incomplete = buildIndex({
+      ...graph,
+      nodes: [...graph.nodes, { id: 'instrument:odd', type: 'instrument', name: 'Odd', family: 'jazz',
+        period: { start: 1900 } }],
+    })
+    expect(() => createTimelineModel(incomplete, 'instrument')).toThrow('instrument:odd')
+  })
+
+  it('maps views to URL params and default ranges', () => {
+    for (const view of ['genre', 'artist', 'instrument'] as const) {
+      expect(isTimelineView(view)).toBe(true)
+      expect(viewFromParam(VIEW_PARAMS[view])).toBe(view)
+    }
+    expect(viewFromParam('instruments')).toBe('instrument')
+    expect(viewFromParam('bogus')).toBe('genre')
+    expect(defaultViewRange('instrument')[0]).toBeLessThan(defaultViewRange('genre')[0])
   })
 
   it('can lay out every artist in the actual dataset once', () => {

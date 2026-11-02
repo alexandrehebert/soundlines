@@ -1,4 +1,4 @@
-import { ArrowDownWideNarrow, Bubbles, ChartGantt, Disc3, SlidersHorizontal, Users, X } from 'lucide-react'
+import { ArrowDownWideNarrow, Bubbles, ChartGantt, Disc3, Guitar, SlidersHorizontal, Users, X, type LucideIcon } from 'lucide-react'
 import { AnimatePresence, motion, MotionConfig } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent, type PointerEvent } from 'react'
 import { useExplorer } from './ExplorerContext.ts'
@@ -11,6 +11,7 @@ import { GenreBubbles } from './components/GenreBubbles.tsx'
 import { MOBILE_DETAIL_COLLAPSED_OFFSET, MOBILE_DETAIL_HEIGHT } from './components/mobileDetailSheet.ts'
 import rawGraph from './data/graph.json'
 import type { GenreOrder } from './graph/layout.ts'
+import { TIMELINE_VIEWS, type TimelineView } from './graph/timeline.ts'
 import type { MusicGraph } from './graph/types.ts'
 
 const graph = rawGraph as MusicGraph
@@ -21,7 +22,10 @@ export function Explorer() {
   const [optionsOpen, setOptionsOpen] = useState(false)
   const stats = useMemo(() => {
     const count = (type: string) => index.graph.nodes.filter((node) => node.type === type).length
-    return { genres: count('genre'), artists: count('artist'), links: index.graph.edges.length }
+    return {
+      genres: count('genre'), artists: count('artist'), instruments: count('instrument'),
+      links: index.graph.edges.length,
+    }
   }, [index])
 
   useEffect(() => {
@@ -58,6 +62,7 @@ export function Explorer() {
         <div className="ml-auto hidden items-center gap-4 text-xs font-medium text-slate-500 md:flex">
           <span><strong className="text-slate-300">{stats.genres}</strong> genres</span>
           <span><strong className="text-slate-300">{stats.artists}</strong> artists</span>
+          <span><strong className="text-slate-300">{stats.instruments}</strong> instruments</span>
           <span><strong className="text-slate-300">{stats.links}</strong> links</span>
         </div>
       </header>
@@ -251,17 +256,23 @@ function useToggleNavigation<T extends string>(
   return { buttonRefs, handleKeyDown }
 }
 
+const VIEW_OPTIONS: Record<TimelineView, { label: string; Icon: LucideIcon }> = {
+  genre: { label: 'Genres', Icon: Disc3 },
+  artist: { label: 'Artists', Icon: Users },
+  instrument: { label: 'Instruments', Icon: Guitar },
+}
+
 export function ViewToggle({
   view,
   changeView,
   className = '',
 }: {
-  view: 'genre' | 'artist'
-  changeView: (view: 'genre' | 'artist') => void
+  view: TimelineView
+  changeView: (view: TimelineView) => void
   className?: string
 }) {
   const indicatorId = useId()
-  const options = ['genre', 'artist'] as const
+  const options = TIMELINE_VIEWS
   const { buttonRefs, handleKeyDown } = useToggleNavigation(view, options, changeView)
 
   return (
@@ -273,6 +284,7 @@ export function ViewToggle({
     >
       {options.map((type) => {
         const selected = view === type
+        const { label, Icon } = VIEW_OPTIONS[type]
         return (
           <button
             key={type}
@@ -288,8 +300,8 @@ export function ViewToggle({
           >
             {selected && <ToggleIndicator layoutId={`view-toggle-indicator-${indicatorId}`} />}
             <span className="relative flex items-center gap-1.5">
-              {type === 'artist' ? <Users className="h-3.5 w-3.5" /> : <Disc3 className="h-3.5 w-3.5" />}
-              {type === 'artist' ? 'Artists' : 'Genres'}
+              <Icon className="h-3.5 w-3.5" />
+              {label}
             </span>
           </button>
         )

@@ -19,7 +19,7 @@ function SearchExample() {
 
 async function searchInStory(canvasElement: HTMLElement, query: string) {
   const canvas = within(canvasElement)
-  const desktopInput = canvas.getByPlaceholderText('Search genres, artists, labels…')
+  const desktopInput = canvas.getByPlaceholderText('Search genres, artists, instruments…')
   if (desktopInput.getClientRects().length > 0) {
     await userEvent.click(desktopInput)
     await fireEvent.change(desktopInput, { target: { value: query } })
@@ -28,7 +28,7 @@ async function searchInStory(canvasElement: HTMLElement, query: string) {
 
   await userEvent.click(canvas.getByRole('button', { name: 'Search music' }))
   const body = within(canvasElement.ownerDocument.body)
-  const mobileInput = await body.findByPlaceholderText('Genres, artists, labels…')
+  const mobileInput = await body.findByPlaceholderText('Genres, artists, instruments…')
   await userEvent.click(mobileInput)
   await fireEvent.change(mobileInput, { target: { value: query } })
   return body

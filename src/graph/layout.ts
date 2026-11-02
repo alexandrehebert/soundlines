@@ -1,7 +1,8 @@
 import {
   FAMILY_ORDER,
-  type GenreFamily,
+  INSTRUMENT_FAMILY_ORDER,
   type GraphNode,
+  type LaneFamily,
   type MusicGraph,
 } from './types.ts'
 import { visibleEnd } from './phases.ts'
@@ -143,7 +144,7 @@ export function revealEraRange(range: YearRange, year: number): YearRange {
 
 export interface TimelineBar {
   node: GraphNode
-  family: GenreFamily
+  family: LaneFamily
   /** Row within the family lane (0-based). */
   row: number
   start: number
@@ -153,7 +154,7 @@ export interface TimelineBar {
 }
 
 export interface FamilyLane {
-  family: GenreFamily
+  family: LaneFamily
   rowCount: number
   bars: TimelineBar[]
 }
@@ -165,15 +166,16 @@ export interface FamilyLane {
 export function layoutFamilies(
   graph: MusicGraph,
   now = CURRENT_YEAR,
-  nodeType: 'genre' | 'artist' = 'genre',
+  nodeType: 'genre' | 'artist' | 'instrument' = 'genre',
 ): FamilyLane[] {
   const nodes = graph.nodes.filter(
-    (node): node is GraphNode & { family: GenreFamily } =>
+    (node): node is GraphNode & { family: LaneFamily } =>
       node.type === nodeType && node.family !== undefined && node.period !== undefined,
   )
 
   const lanes: FamilyLane[] = []
-  for (const family of FAMILY_ORDER) {
+  const order: readonly LaneFamily[] = nodeType === 'instrument' ? INSTRUMENT_FAMILY_ORDER : FAMILY_ORDER
+  for (const family of order) {
     const members = nodes
       .filter((node) => node.family === family)
       .sort((a, b) => a.period!.start - b.period!.start || a.name.localeCompare(b.name))

@@ -1,7 +1,7 @@
 import { X } from 'lucide-react'
 import { useExplorer } from '../ExplorerContext.ts'
 import { groupedRelations } from '../graph/graph.ts'
-import { artistFamily } from '../graph/timeline.ts'
+import { timelineFamily } from '../graph/timeline.ts'
 import {
   EDGE_TYPE_INVERSE_LABELS,
   EDGE_TYPE_LABELS,
@@ -58,7 +58,7 @@ export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
   const groups = groupedRelations(index, node.id)
   const phases = prominencePhases(node, CURRENT_YEAR)
   const labels = prominenceLabels(node.type)
-  const family = node.type === 'artist' ? artistFamily(index, node) : node.family
+  const family = timelineFamily(index, node)
 
   return (
     <aside className="flex h-full w-full flex-col overflow-y-auto border-l-0 border-slate-800 bg-slate-950/95 backdrop-blur md:border-l">
@@ -99,7 +99,9 @@ export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
         {phases.length > 0 && (
           <section>
             <h3 className="mb-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">
-              {node.type === 'artist' ? 'Career prominence · editorial' : 'Historical prominence · approximate'}
+              {node.type === 'artist'
+                ? 'Career prominence · editorial'
+                : node.type === 'instrument' ? 'Usage prominence · editorial' : 'Historical prominence · approximate'}
             </h3>
             <ul className="flex flex-col gap-2">
               {phases.map((phase) => (

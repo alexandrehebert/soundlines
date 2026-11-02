@@ -9,7 +9,7 @@ const meta = {
   tags: ['autodocs'],
   args: { view: 'genre', changeView: fn() },
   argTypes: {
-    view: { control: 'inline-radio', options: ['genre', 'artist'] },
+    view: { control: 'inline-radio', options: ['genre', 'artist', 'instrument'] },
     changeView: { control: false },
   },
   render: function Render(args) {
@@ -30,6 +30,7 @@ type Story = StoryObj<typeof meta>
 
 export const Genres: Story = {}
 export const Artists: Story = { args: { view: 'artist' } }
+export const Instruments: Story = { args: { view: 'instrument' } }
 
 export const KeyboardNavigation: Story = {
   play: async ({ canvasElement }) => {
@@ -37,5 +38,7 @@ export const KeyboardNavigation: Story = {
     canvas.getByRole('radio', { name: 'Genres' }).focus()
     await userEvent.keyboard('{ArrowRight}')
     await waitFor(() => expect(canvas.getByRole('radio', { name: 'Artists' })).toHaveAttribute('aria-checked', 'true'))
+    await userEvent.keyboard('{ArrowRight}')
+    await waitFor(() => expect(canvas.getByRole('radio', { name: 'Instruments' })).toHaveAttribute('aria-checked', 'true'))
   },
 }

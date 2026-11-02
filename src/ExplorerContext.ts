@@ -8,8 +8,15 @@ import {
   type SetStateAction,
 } from 'react'
 import { buildIndex } from './graph/graph.ts'
-import { DEFAULT_START_YEAR, MAX_YEAR, revealEraRange, type GenreOrder } from './graph/layout.ts'
-import { createTimelineModel, type TimelineView } from './graph/timeline.ts'
+import { revealEraRange, type GenreOrder } from './graph/layout.ts'
+import {
+  createTimelineModel,
+  defaultViewRange,
+  isTimelineView,
+  VIEW_PARAMS,
+  viewFromParam,
+  type TimelineView,
+} from './graph/timeline.ts'
 import type { MusicGraph } from './graph/types.ts'
 import type { GenreDisplay } from './graph/bubbles.ts'
 import { finishPageLoading, transitionPage } from './pageLoading.ts'
@@ -23,9 +30,7 @@ export function useExplorerState(graph: MusicGraph) {
     const params = new URLSearchParams(window.location.search)
     const id = params.get('focus')
     const node = id ? index.nodeById.get(id) : undefined
-    const view: TimelineView = node?.type === 'artist' || node?.type === 'genre'
-      ? node.type
-      : params.get('view') === 'artists' ? 'artist' : 'genre'
+    const view: TimelineView = isTimelineView(node?.type) ? node.type : viewFromParam(params.get('view'))
     const genreOrder = params.get('sort') === 'oldest-first' ? 'oldest-first' : 'family'
     const genreDisplay = params.get('layout') === 'bubbles' ? 'bubbles' : 'bars'
     return { view, selectedId: node?.id ?? null, genreOrder, genreDisplay }
@@ -35,8 +40,9 @@ export function useExplorerState(graph: MusicGraph) {
   const [ranges, setRanges] = useState<Record<TimelineView, YearRange>>(() => {
     const node = location.selectedId ? index.nodeById.get(location.selectedId) : undefined
     const initial: Record<TimelineView, YearRange> = {
-      genre: [DEFAULT_START_YEAR, MAX_YEAR],
-      artist: [DEFAULT_START_YEAR, MAX_YEAR],
+      genre: defaultViewRange('genre'),
+      artist: defaultViewRange('artist'),
+      instrument: defaultViewRange('instrument'),
     }
     if (node?.period) {
       initial[location.view] = revealEraRange(initial[location.view], node.period.start)
@@ -74,7 +80,8 @@ export function useExplorerState(graph: MusicGraph) {
     const url = new URL(window.location.href)
     if (selectedId) url.searchParams.set('focus', selectedId)
     else url.searchParams.delete('focus')
-    if (view === 'artist') url.searchParams.set('view', 'artists')
+    const viewParam = VIEW_PARAMS[view]
+    if (viewParam) url.searchParams.set('view', viewParam)
     else url.searchParams.delete('view')
     if (genreOrder === 'oldest-first') url.searchParams.set('sort', 'oldest-first')
     else url.searchParams.delete('sort')
@@ -96,7 +103,7 @@ export function useExplorerState(graph: MusicGraph) {
   const selectNode = useCallback((id: string | null) => {
     const node = id ? index.nodeById.get(id) : undefined
     if (id && !node) throw new Error(`Cannot select unknown node ${id}`)
-    const nextView = node?.type === 'genre' || node?.type === 'artist' ? node.type : view
+    const nextView = isTimelineView(node?.type) ? node.type : view
     const next = { view: nextView, selectedId: id, genreOrder, genreDisplay }
     revealSelection(next)
     navigate(next)

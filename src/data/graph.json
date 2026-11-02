@@ -12309,6 +12309,693 @@
       "sources": [
         "https://www.allmusic.com/artist/the-shangri-las-mn0000418955"
       ]
+    },
+    {
+      "id": "instrument:lute",
+      "type": "instrument",
+      "name": "Lute",
+      "family": "strings",
+      "period": {
+        "start": 1250,
+        "precision": "circa"
+      },
+      "description": "Pear-shaped, fretted plucked instrument that reached Europe from the Arabic oud through Moorish Spain and Sicily, becoming the leading solo and song-accompaniment instrument of Renaissance courts.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lute"
+      ],
+      "phases": [
+        {
+          "start": 1250,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1500,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1650,
+          "prominence": "established"
+        },
+        {
+          "start": 1780,
+          "prominence": "niche",
+          "intensity": 0
+        },
+        {
+          "start": 1950,
+          "prominence": "established",
+          "intensity": 0.3
+        }
+      ],
+      "phaseNote": "Illustrative editorial shading: the lute peaks in the 16th century, fades as keyboards and the guitar take over in the late 18th century, and returns through the 20th-century early-music revival. Not a measured ranking."
+    },
+    {
+      "id": "instrument:guitar",
+      "type": "instrument",
+      "name": "Guitar",
+      "family": "strings",
+      "period": {
+        "start": 1500,
+        "precision": "circa"
+      },
+      "description": "Waisted, fretted plucked instrument that grew from Renaissance four-course guitars into the six-string form standardised by Antonio de Torres in 19th-century Spain; the everyday accompaniment of blues, folk, country, and bossa nova.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Guitar",
+        "https://en.wikipedia.org/wiki/Classical_guitar"
+      ]
+    },
+    {
+      "id": "instrument:violin",
+      "type": "instrument",
+      "name": "Violin",
+      "family": "strings",
+      "period": {
+        "start": 1530,
+        "precision": "circa"
+      },
+      "description": "Four-string bowed instrument shaped by northern Italian makers from Andrea Amati to Stradivari; the core of the orchestra, and as the fiddle, a lead voice in bluegrass and country.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Violin"
+      ]
+    },
+    {
+      "id": "instrument:double-bass",
+      "type": "instrument",
+      "name": "Double bass",
+      "family": "strings",
+      "period": {
+        "start": 1550,
+        "precision": "circa"
+      },
+      "description": "The largest bowed string instrument, descended from the violone; the low foundation of the orchestra and, plucked, the walking-bass pulse of jazz, early rock and roll, and bluegrass.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Double_bass"
+      ]
+    },
+    {
+      "id": "instrument:banjo",
+      "type": "instrument",
+      "name": "Banjo",
+      "family": "strings",
+      "period": {
+        "start": 1687,
+        "precision": "circa"
+      },
+      "description": "Gourd-bodied lutes made by enslaved Africans in the Caribbean, documented from the late 17th century, evolved into the commercial five-string banjo of 19th-century America and the rolling drive of bluegrass.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Banjo"
+      ],
+      "phases": [
+        {
+          "start": 1687,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1840,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1930,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Illustrative editorial shading: the banjo peaks with 19th-century minstrel and parlour music and early jazz, then continues mainly through old-time and bluegrass. Not a measured ranking."
+    },
+    {
+      "id": "instrument:mandolin",
+      "type": "instrument",
+      "name": "Mandolin",
+      "family": "strings",
+      "period": {
+        "start": 1740,
+        "precision": "circa"
+      },
+      "description": "Small, steel-strung lute developed by the Vinaccia family of Naples in the mid-18th century; Bill Monroe made its chopped off-beat and fast tremolo central to bluegrass.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mandolin"
+      ]
+    },
+    {
+      "id": "instrument:sitar",
+      "type": "instrument",
+      "name": "Sitar",
+      "family": "strings",
+      "period": {
+        "start": 1700,
+        "precision": "circa"
+      },
+      "description": "Long-necked lute with movable frets and sympathetic strings that took shape in 18th-century North India; Ravi Shankar carried it to global audiences and into 1960s psychedelic rock.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sitar"
+      ]
+    },
+    {
+      "id": "instrument:koto",
+      "type": "instrument",
+      "name": "Koto",
+      "family": "strings",
+      "period": {
+        "start": 700,
+        "precision": "circa"
+      },
+      "description": "Long Japanese zither with movable bridges, introduced from Tang China around the 8th century; first heard in the gagaku court orchestra before developing its own solo and chamber repertoire.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Koto_(instrument)"
+      ]
+    },
+    {
+      "id": "instrument:electric-guitar",
+      "type": "instrument",
+      "name": "Electric guitar",
+      "family": "strings",
+      "period": {
+        "start": 1932,
+        "precision": "circa"
+      },
+      "description": "Guitar amplified through magnetic pickups, from Rickenbacker's 1932 \"Frying Pan\" to the Fender and Gibson solid bodies of the early 1950s; its volume and distortion defined electric blues, rock, and metal.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_guitar"
+      ]
+    },
+    {
+      "id": "instrument:electric-bass",
+      "type": "instrument",
+      "name": "Electric bass",
+      "family": "strings",
+      "period": {
+        "start": 1951,
+        "precision": "circa"
+      },
+      "description": "Fretted, amplified bass introduced as the Fender Precision Bass in 1951; it replaced the upright in most popular music and drives the grooves of soul, funk, reggae, and disco.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bass_guitar",
+        "https://en.wikipedia.org/wiki/Fender_Precision_Bass"
+      ]
+    },
+    {
+      "id": "instrument:harpsichord",
+      "type": "instrument",
+      "name": "Harpsichord",
+      "family": "keyboards",
+      "period": {
+        "start": 1400,
+        "precision": "circa"
+      },
+      "description": "Keyboard instrument that plucks its strings with quills, first documented around 1400; the continuo heart of Baroque music before the piano displaced it, then revived in the 20th century.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Harpsichord"
+      ],
+      "phases": [
+        {
+          "start": 1400,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1600,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1800,
+          "prominence": "niche",
+          "intensity": 0
+        },
+        {
+          "start": 1903,
+          "prominence": "established",
+          "intensity": 0.35
+        }
+      ],
+      "phaseNote": "Illustrative editorial shading: the harpsichord peaks in the Baroque continuo era, is largely eclipsed by the piano around 1800, and returns with the 20th-century revival. Not a measured ranking."
+    },
+    {
+      "id": "instrument:piano",
+      "type": "instrument",
+      "name": "Piano",
+      "family": "keyboards",
+      "period": {
+        "start": 1700,
+        "precision": "circa"
+      },
+      "description": "Bartolomeo Cristofori's hammer-action keyboard of around 1700 could play both soft and loud; it became the central instrument of Classical and Romantic music, stride and bebop jazz, and rock and roll.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Piano",
+        "https://en.wikipedia.org/wiki/Bartolomeo_Cristofori"
+      ]
+    },
+    {
+      "id": "instrument:hammond-organ",
+      "type": "instrument",
+      "name": "Hammond organ",
+      "family": "keyboards",
+      "period": {
+        "start": 1935,
+        "precision": "circa"
+      },
+      "description": "Electric tonewheel organ launched in 1935 as an affordable substitute for pipe organs; its growl through a Leslie speaker became a signature of soul jazz, R&B, reggae, and progressive rock.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hammond_organ"
+      ],
+      "phases": [
+        {
+          "start": 1935,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1955,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1975,
+          "prominence": "established"
+        }
+      ],
+      "phaseNote": "Illustrative editorial shading: the Hammond peaks from soul jazz to late-1960s rock; tonewheel production ended in 1975 as synthesizers spread. Not a measured ranking."
+    },
+    {
+      "id": "instrument:electric-piano",
+      "type": "instrument",
+      "name": "Electric piano",
+      "family": "keyboards",
+      "period": {
+        "start": 1954,
+        "precision": "circa"
+      },
+      "description": "Struck tines and reeds picked up electrically, from the Wurlitzer of the mid-1950s to the Fender Rhodes of 1965; its bell-like chords colour jazz fusion, soul, and neo-soul.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_piano",
+        "https://en.wikipedia.org/wiki/Rhodes_piano"
+      ]
+    },
+    {
+      "id": "instrument:recorder",
+      "type": "instrument",
+      "name": "Recorder",
+      "family": "winds",
+      "period": {
+        "start": 1350,
+        "precision": "circa"
+      },
+      "description": "Duct flute with a thumb hole, documented in Europe from the 14th century; prized in Renaissance consorts and Baroque sonatas, it faded with the transverse flute and was revived in the 20th century.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Recorder_(musical_instrument)"
+      ],
+      "phases": [
+        {
+          "start": 1350,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1500,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1700,
+          "prominence": "established"
+        },
+        {
+          "start": 1760,
+          "prominence": "niche",
+          "intensity": 0
+        },
+        {
+          "start": 1920,
+          "prominence": "established",
+          "intensity": 0.4
+        }
+      ],
+      "phaseNote": "Illustrative editorial shading: the recorder peaks in Renaissance consorts, gives way to the transverse flute in the mid-18th century, and returns with the 20th-century early-music and school revival. Not a measured ranking."
+    },
+    {
+      "id": "instrument:clarinet",
+      "type": "instrument",
+      "name": "Clarinet",
+      "family": "winds",
+      "period": {
+        "start": 1700,
+        "precision": "circa"
+      },
+      "description": "Single-reed woodwind developed from the chalumeau around 1700 by Johann Christoph Denner's workshop; a Mozart favourite and the lead voice of early New Orleans jazz and swing.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Clarinet"
+      ]
+    },
+    {
+      "id": "instrument:saxophone",
+      "type": "instrument",
+      "name": "Saxophone",
+      "family": "winds",
+      "period": {
+        "start": 1846,
+        "precision": "circa"
+      },
+      "description": "Adolphe Sax's 1846 patent paired a single-reed mouthpiece with a conical metal body; it became the defining voice of jazz from swing and bebop to free jazz, and of R&B.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saxophone"
+      ]
+    },
+    {
+      "id": "instrument:harmonica",
+      "type": "instrument",
+      "name": "Harmonica",
+      "family": "winds",
+      "period": {
+        "start": 1825,
+        "precision": "circa"
+      },
+      "description": "Pocket-sized free-reed instrument developed in 1820s Germany and mass-produced by Hohner; bent notes made it the wailing second voice of blues, folk, and country.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Harmonica"
+      ]
+    },
+    {
+      "id": "instrument:accordion",
+      "type": "instrument",
+      "name": "Accordion",
+      "family": "winds",
+      "period": {
+        "start": 1829,
+        "precision": "circa"
+      },
+      "description": "Bellows-driven free-reed instrument patented in Vienna in 1829; carried by migrants worldwide, it anchors Colombian cumbia, Dominican merengue típico, and Russian folk music.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Accordion"
+      ]
+    },
+    {
+      "id": "instrument:bandoneon",
+      "type": "instrument",
+      "name": "Bandoneon",
+      "family": "winds",
+      "period": {
+        "start": 1846,
+        "precision": "circa"
+      },
+      "description": "Square button concertina named after the German dealer Heinrich Band in the 1840s; brought to the Río de la Plata by immigrants, it became the soul of tango.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bandoneon"
+      ]
+    },
+    {
+      "id": "instrument:trombone",
+      "type": "instrument",
+      "name": "Trombone",
+      "family": "brass",
+      "period": {
+        "start": 1450,
+        "precision": "circa"
+      },
+      "description": "Slide brass instrument that appeared in 15th-century Burgundy as the sackbut; it accompanied Renaissance church choirs and later supplied the tailgate and riff lines of jazz and ska horn sections.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trombone",
+        "https://en.wikipedia.org/wiki/Sackbut"
+      ]
+    },
+    {
+      "id": "instrument:trumpet",
+      "type": "instrument",
+      "name": "Valved trumpet",
+      "family": "brass",
+      "period": {
+        "start": 1818,
+        "precision": "circa"
+      },
+      "description": "Valves patented by Stölzel and Blühmel in 1818 let the old natural trumpet play every chromatic note; the result became the lead horn of jazz, from Louis Armstrong to Miles Davis.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trumpet",
+        "https://en.wikipedia.org/wiki/Brass_instrument_valve"
+      ]
+    },
+    {
+      "id": "instrument:tuba",
+      "type": "instrument",
+      "name": "Tuba",
+      "family": "brass",
+      "period": {
+        "start": 1835,
+        "precision": "circa"
+      },
+      "description": "Valved bass brass instrument patented in Prussia in 1835; the bass of the Romantic orchestra and brass bands, and the bass line of early New Orleans jazz before the string bass.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tuba"
+      ]
+    },
+    {
+      "id": "instrument:drum-kit",
+      "type": "instrument",
+      "name": "Drum kit",
+      "family": "percussion",
+      "period": {
+        "start": 1910,
+        "precision": "circa"
+      },
+      "description": "Bass drum pedals of the 1900s let one player cover several drums and cymbals; the \"trap kit\" of early jazz grew into the backbeat engine of swing, rock and roll, funk, Afrobeat, and metal.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Drum_kit"
+      ]
+    },
+    {
+      "id": "instrument:conga",
+      "type": "instrument",
+      "name": "Conga",
+      "family": "percussion",
+      "period": {
+        "start": 1900,
+        "precision": "circa"
+      },
+      "description": "Tall, single-headed Afro-Cuban drum (tumbadora) that took shape around the turn of the 20th century; it moved from rumba into son, mambo, salsa, and Latin jazz.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Conga"
+      ]
+    },
+    {
+      "id": "instrument:vibraphone",
+      "type": "instrument",
+      "name": "Vibraphone",
+      "family": "percussion",
+      "period": {
+        "start": 1921,
+        "precision": "circa"
+      },
+      "description": "Metal-barred mallet instrument with motor-driven resonator vibrato, introduced by the Leedy company in the early 1920s; jazz swing and bebop players made it a lead voice.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vibraphone"
+      ]
+    },
+    {
+      "id": "instrument:tabla",
+      "type": "instrument",
+      "name": "Tabla",
+      "family": "percussion",
+      "period": {
+        "start": 1700,
+        "precision": "circa"
+      },
+      "description": "Pair of tuned hand drums that emerged in 18th-century North India; its spoken syllables and complex cycles accompany Hindustani classical music and qawwali.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tabla"
+      ]
+    },
+    {
+      "id": "instrument:steelpan",
+      "type": "instrument",
+      "name": "Steelpan",
+      "family": "percussion",
+      "period": {
+        "start": 1939,
+        "precision": "circa"
+      },
+      "description": "Tuned percussion hammered from oil drums in Trinidad in the late 1930s and 1940s; steel bands became central to calypso and Carnival music.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Steelpan"
+      ]
+    },
+    {
+      "id": "instrument:theremin",
+      "type": "instrument",
+      "name": "Theremin",
+      "family": "electronic",
+      "period": {
+        "start": 1920,
+        "precision": "circa"
+      },
+      "description": "Electronic instrument played without touch, invented by Leon Theremin in 1920; its eerie glissandi featured in concert works and 1950s sci-fi films, then in the occasional rock record.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Theremin"
+      ],
+      "phases": [
+        {
+          "start": 1920,
+          "prominence": "emerging"
+        },
+        {
+          "start": 1945,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1965,
+          "prominence": "niche",
+          "intensity": 0
+        },
+        {
+          "start": 1994,
+          "prominence": "established",
+          "intensity": 0.3
+        }
+      ],
+      "phaseNote": "Illustrative editorial shading: the theremin peaks with mid-century film scores, fades as synthesizers spread, and returns with 1990s kit instruments. Not a measured ranking."
+    },
+    {
+      "id": "instrument:modular-synthesizer",
+      "type": "instrument",
+      "name": "Modular synthesizer",
+      "family": "electronic",
+      "period": {
+        "start": 1964,
+        "precision": "circa"
+      },
+      "description": "Voltage-controlled oscillators, filters, and envelopes patched together by cable, introduced by Robert Moog and Don Buchla in 1964; the sound source of early electronic, krautrock, and progressive rock records.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Modular_synthesizer",
+        "https://en.wikipedia.org/wiki/Moog_synthesizer"
+      ]
+    },
+    {
+      "id": "instrument:minimoog",
+      "type": "instrument",
+      "name": "Minimoog",
+      "family": "electronic",
+      "period": {
+        "start": 1970,
+        "precision": "circa"
+      },
+      "description": "Moog's 1970 portable, pre-wired synthesizer put the modular sound on stage; its fat lead and bass lines run through prog, funk, jazz fusion, and G-funk.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minimoog"
+      ]
+    },
+    {
+      "id": "instrument:sampler",
+      "type": "instrument",
+      "name": "Sampler",
+      "family": "electronic",
+      "period": {
+        "start": 1979,
+        "precision": "circa"
+      },
+      "description": "Instruments that record and replay sound, from the Fairlight CMI of 1979 to the Akai MPC of 1988; chopped breaks and loops built hip-hop, jungle, big beat, and trip-hop.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sampler_(musical_instrument)",
+        "https://en.wikipedia.org/wiki/Akai_MPC"
+      ]
+    },
+    {
+      "id": "instrument:tr-808",
+      "type": "instrument",
+      "name": "Roland TR-808",
+      "family": "electronic",
+      "period": {
+        "start": 1980,
+        "precision": "circa"
+      },
+      "description": "Roland's 1980 analogue drum machine flopped commercially, but its booming kick and snapping claps became the foundation of electro, hip-hop, Miami bass, and trap.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TR-808"
+      ],
+      "phases": [
+        {
+          "start": 1980,
+          "prominence": "emerging",
+          "intensity": 0.25
+        },
+        {
+          "start": 1982,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1990,
+          "prominence": "established",
+          "intensity": 0.5
+        },
+        {
+          "start": 2008,
+          "prominence": "golden-age"
+        }
+      ],
+      "phaseNote": "Illustrative editorial shading: slow sales at launch, a peak with early-1980s electro and hip-hop, and a second peak as trap made the 808 bass ubiquitous. Not a measured ranking."
+    },
+    {
+      "id": "instrument:tb-303",
+      "type": "instrument",
+      "name": "Roland TB-303",
+      "family": "electronic",
+      "period": {
+        "start": 1981,
+        "precision": "circa"
+      },
+      "description": "A 1981 bass-line machine meant for guitarists that sold poorly; cheap second-hand units twisted through its resonant filter became the squelch of acid house and acid techno.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TB-303"
+      ],
+      "phases": [
+        {
+          "start": 1981,
+          "prominence": "emerging",
+          "intensity": 0.2
+        },
+        {
+          "start": 1987,
+          "prominence": "golden-age"
+        },
+        {
+          "start": 1993,
+          "prominence": "established",
+          "intensity": 0.5
+        }
+      ],
+      "phaseNote": "Illustrative editorial shading: a commercial failure until Phuture's 1987 \"Acid Tracks\" launched acid house, then a lasting dance-music staple. Not a measured ranking."
+    },
+    {
+      "id": "instrument:tr-909",
+      "type": "instrument",
+      "name": "Roland TR-909",
+      "family": "electronic",
+      "period": {
+        "start": 1983,
+        "precision": "circa"
+      },
+      "description": "Roland's 1983 hybrid drum machine combined analogue drums with sampled cymbals; its punchy kick and hi-hats became the standard of house, techno, trance, and gabber.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TR-909"
+      ]
+    },
+    {
+      "id": "instrument:turntables",
+      "type": "instrument",
+      "name": "Turntables",
+      "family": "electronic",
+      "period": {
+        "start": 1973,
+        "precision": "circa"
+      },
+      "description": "Record players used as instruments: DJ Kool Herc's extended breaks in 1973 Bronx parties led to scratching and beat juggling, the founding techniques of hip-hop DJing.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Turntablism",
+        "https://en.wikipedia.org/wiki/Technics_SL-1200"
+      ]
+    },
+    {
+      "id": "instrument:auto-tune",
+      "type": "instrument",
+      "name": "Auto-Tune",
+      "family": "electronic",
+      "period": {
+        "start": 1997,
+        "precision": "circa"
+      },
+      "description": "Pitch-correction software released by Antares in 1997; pushed to extreme settings, from Cher's \"Believe\" to trap and Afrobeats, it became a deliberate vocal effect.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Auto-Tune"
+      ]
     }
   ],
   "edges": [
@@ -21160,6 +21847,1761 @@
       "to": "genre:pop",
       "sources": [
         "https://www.allmusic.com/style/girl-groups-ma0000002618"
+      ]
+    },
+    {
+      "id": "featured:lute-medieval",
+      "type": "featured_in",
+      "from": "instrument:lute",
+      "to": "genre:medieval",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lute"
+      ]
+    },
+    {
+      "id": "featured:lute-renaissance",
+      "type": "featured_in",
+      "from": "instrument:lute",
+      "to": "genre:renaissance",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lute"
+      ]
+    },
+    {
+      "id": "featured:lute-baroque",
+      "type": "featured_in",
+      "from": "instrument:lute",
+      "to": "genre:baroque",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lute"
+      ]
+    },
+    {
+      "id": "featured:guitar-blues",
+      "type": "featured_in",
+      "from": "instrument:guitar",
+      "to": "genre:blues",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Guitar"
+      ]
+    },
+    {
+      "id": "featured:guitar-folk",
+      "type": "featured_in",
+      "from": "instrument:guitar",
+      "to": "genre:folk",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Guitar"
+      ]
+    },
+    {
+      "id": "featured:guitar-country",
+      "type": "featured_in",
+      "from": "instrument:guitar",
+      "to": "genre:country",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Guitar"
+      ]
+    },
+    {
+      "id": "featured:guitar-bluegrass",
+      "type": "featured_in",
+      "from": "instrument:guitar",
+      "to": "genre:bluegrass",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Guitar"
+      ]
+    },
+    {
+      "id": "featured:guitar-bossa-nova",
+      "type": "featured_in",
+      "from": "instrument:guitar",
+      "to": "genre:bossa-nova",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Guitar"
+      ]
+    },
+    {
+      "id": "plays:robert-johnson-guitar",
+      "type": "plays",
+      "from": "artist:robert-johnson",
+      "to": "instrument:guitar",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Robert_Johnson"
+      ]
+    },
+    {
+      "id": "plays:woody-guthrie-guitar",
+      "type": "plays",
+      "from": "artist:woody-guthrie",
+      "to": "instrument:guitar",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Woody_Guthrie"
+      ]
+    },
+    {
+      "id": "plays:joao-gilberto-guitar",
+      "type": "plays",
+      "from": "artist:joao-gilberto",
+      "to": "instrument:guitar",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jo%C3%A3o_Gilberto"
+      ]
+    },
+    {
+      "id": "featured:violin-baroque",
+      "type": "featured_in",
+      "from": "instrument:violin",
+      "to": "genre:baroque",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Violin"
+      ]
+    },
+    {
+      "id": "featured:violin-classical-period",
+      "type": "featured_in",
+      "from": "instrument:violin",
+      "to": "genre:classical-period",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Violin"
+      ]
+    },
+    {
+      "id": "featured:violin-romantic",
+      "type": "featured_in",
+      "from": "instrument:violin",
+      "to": "genre:romantic",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Violin"
+      ]
+    },
+    {
+      "id": "featured:violin-bluegrass",
+      "type": "featured_in",
+      "from": "instrument:violin",
+      "to": "genre:bluegrass",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Violin"
+      ]
+    },
+    {
+      "id": "featured:violin-country",
+      "type": "featured_in",
+      "from": "instrument:violin",
+      "to": "genre:country",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Violin"
+      ]
+    },
+    {
+      "id": "plays:vivaldi-violin",
+      "type": "plays",
+      "from": "artist:vivaldi",
+      "to": "instrument:violin",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Antonio_Vivaldi"
+      ]
+    },
+    {
+      "id": "plays:alison-krauss-violin",
+      "type": "plays",
+      "from": "artist:alison-krauss",
+      "to": "instrument:violin",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alison_Krauss"
+      ]
+    },
+    {
+      "id": "featured:double-bass-classical-period",
+      "type": "featured_in",
+      "from": "instrument:double-bass",
+      "to": "genre:classical-period",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Double_bass"
+      ]
+    },
+    {
+      "id": "featured:double-bass-jazz",
+      "type": "featured_in",
+      "from": "instrument:double-bass",
+      "to": "genre:jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Double_bass"
+      ]
+    },
+    {
+      "id": "featured:double-bass-bebop",
+      "type": "featured_in",
+      "from": "instrument:double-bass",
+      "to": "genre:bebop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Double_bass"
+      ]
+    },
+    {
+      "id": "featured:double-bass-rock-and-roll",
+      "type": "featured_in",
+      "from": "instrument:double-bass",
+      "to": "genre:rock-and-roll",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Double_bass"
+      ]
+    },
+    {
+      "id": "featured:double-bass-bluegrass",
+      "type": "featured_in",
+      "from": "instrument:double-bass",
+      "to": "genre:bluegrass",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Double_bass"
+      ]
+    },
+    {
+      "id": "featured:banjo-country",
+      "type": "featured_in",
+      "from": "instrument:banjo",
+      "to": "genre:country",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Banjo"
+      ]
+    },
+    {
+      "id": "featured:banjo-bluegrass",
+      "type": "featured_in",
+      "from": "instrument:banjo",
+      "to": "genre:bluegrass",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Banjo"
+      ]
+    },
+    {
+      "id": "featured:banjo-jazz",
+      "type": "featured_in",
+      "from": "instrument:banjo",
+      "to": "genre:jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Banjo"
+      ]
+    },
+    {
+      "id": "plays:earl-scruggs-banjo",
+      "type": "plays",
+      "from": "artist:earl-scruggs",
+      "to": "instrument:banjo",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Earl_Scruggs"
+      ]
+    },
+    {
+      "id": "featured:mandolin-bluegrass",
+      "type": "featured_in",
+      "from": "instrument:mandolin",
+      "to": "genre:bluegrass",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mandolin"
+      ]
+    },
+    {
+      "id": "featured:mandolin-folk",
+      "type": "featured_in",
+      "from": "instrument:mandolin",
+      "to": "genre:folk",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mandolin"
+      ]
+    },
+    {
+      "id": "plays:bill-monroe-mandolin",
+      "type": "plays",
+      "from": "artist:bill-monroe",
+      "to": "instrument:mandolin",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bill_Monroe"
+      ]
+    },
+    {
+      "id": "featured:sitar-hindustani-classical",
+      "type": "featured_in",
+      "from": "instrument:sitar",
+      "to": "genre:hindustani-classical",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sitar"
+      ]
+    },
+    {
+      "id": "featured:sitar-psychedelic-rock",
+      "type": "featured_in",
+      "from": "instrument:sitar",
+      "to": "genre:psychedelic-rock",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sitar"
+      ]
+    },
+    {
+      "id": "plays:ravi-shankar-sitar",
+      "type": "plays",
+      "from": "artist:ravi-shankar",
+      "to": "instrument:sitar",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ravi_Shankar"
+      ]
+    },
+    {
+      "id": "featured:koto-gagaku",
+      "type": "featured_in",
+      "from": "instrument:koto",
+      "to": "genre:gagaku",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Koto_(instrument)"
+      ]
+    },
+    {
+      "id": "featured:electric-guitar-blues",
+      "type": "featured_in",
+      "from": "instrument:electric-guitar",
+      "to": "genre:blues",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_guitar"
+      ]
+    },
+    {
+      "id": "featured:electric-guitar-rock-and-roll",
+      "type": "featured_in",
+      "from": "instrument:electric-guitar",
+      "to": "genre:rock-and-roll",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_guitar"
+      ]
+    },
+    {
+      "id": "featured:electric-guitar-surf-rock",
+      "type": "featured_in",
+      "from": "instrument:electric-guitar",
+      "to": "genre:surf-rock",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_guitar"
+      ]
+    },
+    {
+      "id": "featured:electric-guitar-blues-rock",
+      "type": "featured_in",
+      "from": "instrument:electric-guitar",
+      "to": "genre:blues-rock",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_guitar"
+      ]
+    },
+    {
+      "id": "featured:electric-guitar-hard-rock",
+      "type": "featured_in",
+      "from": "instrument:electric-guitar",
+      "to": "genre:hard-rock",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_guitar"
+      ]
+    },
+    {
+      "id": "featured:electric-guitar-heavy-metal",
+      "type": "featured_in",
+      "from": "instrument:electric-guitar",
+      "to": "genre:heavy-metal",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_guitar"
+      ]
+    },
+    {
+      "id": "featured:electric-guitar-punk-rock",
+      "type": "featured_in",
+      "from": "instrument:electric-guitar",
+      "to": "genre:punk-rock",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_guitar"
+      ]
+    },
+    {
+      "id": "plays:muddy-waters-electric-guitar",
+      "type": "plays",
+      "from": "artist:muddy-waters",
+      "to": "instrument:electric-guitar",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Muddy_Waters"
+      ]
+    },
+    {
+      "id": "plays:bb-king-electric-guitar",
+      "type": "plays",
+      "from": "artist:bb-king",
+      "to": "instrument:electric-guitar",
+      "sources": [
+        "https://en.wikipedia.org/wiki/B._B._King"
+      ]
+    },
+    {
+      "id": "plays:chuck-berry-electric-guitar",
+      "type": "plays",
+      "from": "artist:chuck-berry",
+      "to": "instrument:electric-guitar",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chuck_Berry"
+      ]
+    },
+    {
+      "id": "plays:dick-dale-electric-guitar",
+      "type": "plays",
+      "from": "artist:dick-dale",
+      "to": "instrument:electric-guitar",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dick_Dale"
+      ]
+    },
+    {
+      "id": "plays:jimi-hendrix-electric-guitar",
+      "type": "plays",
+      "from": "artist:jimi-hendrix",
+      "to": "instrument:electric-guitar",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jimi_Hendrix"
+      ]
+    },
+    {
+      "id": "lineage:electric-guitar-guitar",
+      "type": "derived_from",
+      "from": "instrument:electric-guitar",
+      "to": "instrument:guitar",
+      "confidence": "high",
+      "note": "Adds electromagnetic pickups and amplification to the guitar.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_guitar"
+      ]
+    },
+    {
+      "id": "featured:electric-bass-soul",
+      "type": "featured_in",
+      "from": "instrument:electric-bass",
+      "to": "genre:soul",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bass_guitar"
+      ]
+    },
+    {
+      "id": "featured:electric-bass-funk",
+      "type": "featured_in",
+      "from": "instrument:electric-bass",
+      "to": "genre:funk",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bass_guitar"
+      ]
+    },
+    {
+      "id": "featured:electric-bass-reggae",
+      "type": "featured_in",
+      "from": "instrument:electric-bass",
+      "to": "genre:reggae",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bass_guitar"
+      ]
+    },
+    {
+      "id": "featured:electric-bass-disco",
+      "type": "featured_in",
+      "from": "instrument:electric-bass",
+      "to": "genre:disco",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bass_guitar"
+      ]
+    },
+    {
+      "id": "featured:electric-bass-rock",
+      "type": "featured_in",
+      "from": "instrument:electric-bass",
+      "to": "genre:rock",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bass_guitar"
+      ]
+    },
+    {
+      "id": "lineage:electric-bass-double-bass",
+      "type": "derived_from",
+      "from": "instrument:electric-bass",
+      "to": "instrument:double-bass",
+      "confidence": "medium",
+      "note": "Designed as a portable, fretted, amplified alternative to the upright double bass.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bass_guitar"
+      ]
+    },
+    {
+      "id": "featured:harpsichord-renaissance",
+      "type": "featured_in",
+      "from": "instrument:harpsichord",
+      "to": "genre:renaissance",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Harpsichord"
+      ]
+    },
+    {
+      "id": "featured:harpsichord-baroque",
+      "type": "featured_in",
+      "from": "instrument:harpsichord",
+      "to": "genre:baroque",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Harpsichord"
+      ]
+    },
+    {
+      "id": "plays:bach-harpsichord",
+      "type": "plays",
+      "from": "artist:bach",
+      "to": "instrument:harpsichord",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Johann_Sebastian_Bach"
+      ]
+    },
+    {
+      "id": "plays:handel-harpsichord",
+      "type": "plays",
+      "from": "artist:handel",
+      "to": "instrument:harpsichord",
+      "sources": [
+        "https://en.wikipedia.org/wiki/George_Frideric_Handel"
+      ]
+    },
+    {
+      "id": "featured:piano-classical-period",
+      "type": "featured_in",
+      "from": "instrument:piano",
+      "to": "genre:classical-period",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Piano"
+      ]
+    },
+    {
+      "id": "featured:piano-romantic",
+      "type": "featured_in",
+      "from": "instrument:piano",
+      "to": "genre:romantic",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Piano"
+      ]
+    },
+    {
+      "id": "featured:piano-impressionism",
+      "type": "featured_in",
+      "from": "instrument:piano",
+      "to": "genre:impressionism",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Piano"
+      ]
+    },
+    {
+      "id": "featured:piano-jazz",
+      "type": "featured_in",
+      "from": "instrument:piano",
+      "to": "genre:jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Piano"
+      ]
+    },
+    {
+      "id": "featured:piano-bebop",
+      "type": "featured_in",
+      "from": "instrument:piano",
+      "to": "genre:bebop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Piano"
+      ]
+    },
+    {
+      "id": "featured:piano-rock-and-roll",
+      "type": "featured_in",
+      "from": "instrument:piano",
+      "to": "genre:rock-and-roll",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Piano"
+      ]
+    },
+    {
+      "id": "plays:mozart-piano",
+      "type": "plays",
+      "from": "artist:mozart",
+      "to": "instrument:piano",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
+      ]
+    },
+    {
+      "id": "plays:beethoven-piano",
+      "type": "plays",
+      "from": "artist:beethoven",
+      "to": "instrument:piano",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ludwig_van_Beethoven"
+      ]
+    },
+    {
+      "id": "plays:chopin-piano",
+      "type": "plays",
+      "from": "artist:chopin",
+      "to": "instrument:piano",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin"
+      ]
+    },
+    {
+      "id": "plays:debussy-piano",
+      "type": "plays",
+      "from": "artist:debussy",
+      "to": "instrument:piano",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Claude_Debussy"
+      ]
+    },
+    {
+      "id": "plays:thelonious-monk-piano",
+      "type": "plays",
+      "from": "artist:thelonious-monk",
+      "to": "instrument:piano",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thelonious_Monk"
+      ]
+    },
+    {
+      "id": "plays:little-richard-piano",
+      "type": "plays",
+      "from": "artist:little-richard",
+      "to": "instrument:piano",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Little_Richard"
+      ]
+    },
+    {
+      "id": "lineage:piano-harpsichord",
+      "type": "derived_from",
+      "from": "instrument:piano",
+      "to": "instrument:harpsichord",
+      "confidence": "high",
+      "note": "Cristofori, a harpsichord maker, adapted its case and keyboard to a hammer action.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Piano"
+      ]
+    },
+    {
+      "id": "featured:hammond-organ-hard-bop",
+      "type": "featured_in",
+      "from": "instrument:hammond-organ",
+      "to": "genre:hard-bop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hammond_organ"
+      ]
+    },
+    {
+      "id": "featured:hammond-organ-r-and-b",
+      "type": "featured_in",
+      "from": "instrument:hammond-organ",
+      "to": "genre:r-and-b",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hammond_organ"
+      ]
+    },
+    {
+      "id": "featured:hammond-organ-reggae",
+      "type": "featured_in",
+      "from": "instrument:hammond-organ",
+      "to": "genre:reggae",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hammond_organ"
+      ]
+    },
+    {
+      "id": "featured:hammond-organ-progressive-rock",
+      "type": "featured_in",
+      "from": "instrument:hammond-organ",
+      "to": "genre:progressive-rock",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hammond_organ"
+      ]
+    },
+    {
+      "id": "featured:electric-piano-jazz-fusion",
+      "type": "featured_in",
+      "from": "instrument:electric-piano",
+      "to": "genre:jazz-fusion",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_piano"
+      ]
+    },
+    {
+      "id": "featured:electric-piano-soul",
+      "type": "featured_in",
+      "from": "instrument:electric-piano",
+      "to": "genre:soul",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_piano"
+      ]
+    },
+    {
+      "id": "featured:electric-piano-neo-soul",
+      "type": "featured_in",
+      "from": "instrument:electric-piano",
+      "to": "genre:neo-soul",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_piano"
+      ]
+    },
+    {
+      "id": "lineage:electric-piano-piano",
+      "type": "derived_from",
+      "from": "instrument:electric-piano",
+      "to": "instrument:piano",
+      "confidence": "high",
+      "note": "Keeps the piano keyboard and hammer action but replaces strings with electrically amplified tines or reeds.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Electric_piano"
+      ]
+    },
+    {
+      "id": "featured:recorder-medieval",
+      "type": "featured_in",
+      "from": "instrument:recorder",
+      "to": "genre:medieval",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Recorder_(musical_instrument)"
+      ]
+    },
+    {
+      "id": "featured:recorder-renaissance",
+      "type": "featured_in",
+      "from": "instrument:recorder",
+      "to": "genre:renaissance",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Recorder_(musical_instrument)"
+      ]
+    },
+    {
+      "id": "featured:recorder-baroque",
+      "type": "featured_in",
+      "from": "instrument:recorder",
+      "to": "genre:baroque",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Recorder_(musical_instrument)"
+      ]
+    },
+    {
+      "id": "featured:clarinet-classical-period",
+      "type": "featured_in",
+      "from": "instrument:clarinet",
+      "to": "genre:classical-period",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Clarinet"
+      ]
+    },
+    {
+      "id": "featured:clarinet-romantic",
+      "type": "featured_in",
+      "from": "instrument:clarinet",
+      "to": "genre:romantic",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Clarinet"
+      ]
+    },
+    {
+      "id": "featured:clarinet-jazz",
+      "type": "featured_in",
+      "from": "instrument:clarinet",
+      "to": "genre:jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Clarinet"
+      ]
+    },
+    {
+      "id": "featured:clarinet-swing",
+      "type": "featured_in",
+      "from": "instrument:clarinet",
+      "to": "genre:swing",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Clarinet"
+      ]
+    },
+    {
+      "id": "plays:benny-goodman-clarinet",
+      "type": "plays",
+      "from": "artist:benny-goodman",
+      "to": "instrument:clarinet",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Benny_Goodman"
+      ]
+    },
+    {
+      "id": "featured:saxophone-jazz",
+      "type": "featured_in",
+      "from": "instrument:saxophone",
+      "to": "genre:jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saxophone"
+      ]
+    },
+    {
+      "id": "featured:saxophone-swing",
+      "type": "featured_in",
+      "from": "instrument:saxophone",
+      "to": "genre:swing",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saxophone"
+      ]
+    },
+    {
+      "id": "featured:saxophone-bebop",
+      "type": "featured_in",
+      "from": "instrument:saxophone",
+      "to": "genre:bebop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saxophone"
+      ]
+    },
+    {
+      "id": "featured:saxophone-hard-bop",
+      "type": "featured_in",
+      "from": "instrument:saxophone",
+      "to": "genre:hard-bop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saxophone"
+      ]
+    },
+    {
+      "id": "featured:saxophone-free-jazz",
+      "type": "featured_in",
+      "from": "instrument:saxophone",
+      "to": "genre:free-jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saxophone"
+      ]
+    },
+    {
+      "id": "featured:saxophone-r-and-b",
+      "type": "featured_in",
+      "from": "instrument:saxophone",
+      "to": "genre:r-and-b",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saxophone"
+      ]
+    },
+    {
+      "id": "plays:charlie-parker-saxophone",
+      "type": "plays",
+      "from": "artist:charlie-parker",
+      "to": "instrument:saxophone",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Charlie_Parker"
+      ]
+    },
+    {
+      "id": "plays:john-coltrane-saxophone",
+      "type": "plays",
+      "from": "artist:john-coltrane",
+      "to": "instrument:saxophone",
+      "sources": [
+        "https://en.wikipedia.org/wiki/John_Coltrane"
+      ]
+    },
+    {
+      "id": "plays:ornette-coleman-saxophone",
+      "type": "plays",
+      "from": "artist:ornette-coleman",
+      "to": "instrument:saxophone",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ornette_Coleman"
+      ]
+    },
+    {
+      "id": "plays:albert-ayler-saxophone",
+      "type": "plays",
+      "from": "artist:albert-ayler",
+      "to": "instrument:saxophone",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Albert_Ayler"
+      ]
+    },
+    {
+      "id": "lineage:saxophone-clarinet",
+      "type": "influences",
+      "from": "instrument:clarinet",
+      "to": "instrument:saxophone",
+      "confidence": "medium",
+      "note": "Sax, a clarinet maker, borrowed its single-reed mouthpiece for a new conical brass body.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saxophone"
+      ]
+    },
+    {
+      "id": "featured:harmonica-blues",
+      "type": "featured_in",
+      "from": "instrument:harmonica",
+      "to": "genre:blues",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Harmonica"
+      ]
+    },
+    {
+      "id": "featured:harmonica-folk",
+      "type": "featured_in",
+      "from": "instrument:harmonica",
+      "to": "genre:folk",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Harmonica"
+      ]
+    },
+    {
+      "id": "featured:harmonica-country",
+      "type": "featured_in",
+      "from": "instrument:harmonica",
+      "to": "genre:country",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Harmonica"
+      ]
+    },
+    {
+      "id": "plays:bob-dylan-harmonica",
+      "type": "plays",
+      "from": "artist:bob-dylan",
+      "to": "instrument:harmonica",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bob_Dylan"
+      ]
+    },
+    {
+      "id": "featured:accordion-cumbia",
+      "type": "featured_in",
+      "from": "instrument:accordion",
+      "to": "genre:cumbia",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Accordion"
+      ]
+    },
+    {
+      "id": "featured:accordion-merengue",
+      "type": "featured_in",
+      "from": "instrument:accordion",
+      "to": "genre:merengue",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Accordion"
+      ]
+    },
+    {
+      "id": "featured:accordion-russian-folk",
+      "type": "featured_in",
+      "from": "instrument:accordion",
+      "to": "genre:russian-folk",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Accordion"
+      ]
+    },
+    {
+      "id": "featured:bandoneon-tango",
+      "type": "featured_in",
+      "from": "instrument:bandoneon",
+      "to": "genre:tango",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bandoneon"
+      ]
+    },
+    {
+      "id": "plays:anibal-troilo-bandoneon",
+      "type": "plays",
+      "from": "artist:anibal-troilo",
+      "to": "instrument:bandoneon",
+      "sources": [
+        "https://en.wikipedia.org/wiki/An%C3%ADbal_Troilo"
+      ]
+    },
+    {
+      "id": "plays:astor-piazzolla-bandoneon",
+      "type": "plays",
+      "from": "artist:astor-piazzolla",
+      "to": "instrument:bandoneon",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Astor_Piazzolla"
+      ]
+    },
+    {
+      "id": "featured:trombone-renaissance",
+      "type": "featured_in",
+      "from": "instrument:trombone",
+      "to": "genre:renaissance",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trombone"
+      ]
+    },
+    {
+      "id": "featured:trombone-baroque",
+      "type": "featured_in",
+      "from": "instrument:trombone",
+      "to": "genre:baroque",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trombone"
+      ]
+    },
+    {
+      "id": "featured:trombone-jazz",
+      "type": "featured_in",
+      "from": "instrument:trombone",
+      "to": "genre:jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trombone"
+      ]
+    },
+    {
+      "id": "featured:trombone-swing",
+      "type": "featured_in",
+      "from": "instrument:trombone",
+      "to": "genre:swing",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trombone"
+      ]
+    },
+    {
+      "id": "featured:trombone-ska",
+      "type": "featured_in",
+      "from": "instrument:trombone",
+      "to": "genre:ska",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trombone"
+      ]
+    },
+    {
+      "id": "featured:trumpet-romantic",
+      "type": "featured_in",
+      "from": "instrument:trumpet",
+      "to": "genre:romantic",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trumpet"
+      ]
+    },
+    {
+      "id": "featured:trumpet-jazz",
+      "type": "featured_in",
+      "from": "instrument:trumpet",
+      "to": "genre:jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trumpet"
+      ]
+    },
+    {
+      "id": "featured:trumpet-swing",
+      "type": "featured_in",
+      "from": "instrument:trumpet",
+      "to": "genre:swing",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trumpet"
+      ]
+    },
+    {
+      "id": "featured:trumpet-bebop",
+      "type": "featured_in",
+      "from": "instrument:trumpet",
+      "to": "genre:bebop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trumpet"
+      ]
+    },
+    {
+      "id": "featured:trumpet-cool-jazz",
+      "type": "featured_in",
+      "from": "instrument:trumpet",
+      "to": "genre:cool-jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trumpet"
+      ]
+    },
+    {
+      "id": "featured:trumpet-hard-bop",
+      "type": "featured_in",
+      "from": "instrument:trumpet",
+      "to": "genre:hard-bop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Trumpet"
+      ]
+    },
+    {
+      "id": "plays:louis-armstrong-trumpet",
+      "type": "plays",
+      "from": "artist:louis-armstrong",
+      "to": "instrument:trumpet",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Louis_Armstrong"
+      ]
+    },
+    {
+      "id": "plays:dizzy-gillespie-trumpet",
+      "type": "plays",
+      "from": "artist:dizzy-gillespie",
+      "to": "instrument:trumpet",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dizzy_Gillespie"
+      ]
+    },
+    {
+      "id": "plays:miles-davis-trumpet",
+      "type": "plays",
+      "from": "artist:miles-davis",
+      "to": "instrument:trumpet",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Miles_Davis"
+      ]
+    },
+    {
+      "id": "plays:chet-baker-trumpet",
+      "type": "plays",
+      "from": "artist:chet-baker",
+      "to": "instrument:trumpet",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chet_Baker"
+      ]
+    },
+    {
+      "id": "plays:clifford-brown-trumpet",
+      "type": "plays",
+      "from": "artist:clifford-brown",
+      "to": "instrument:trumpet",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Clifford_Brown"
+      ]
+    },
+    {
+      "id": "featured:tuba-romantic",
+      "type": "featured_in",
+      "from": "instrument:tuba",
+      "to": "genre:romantic",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tuba"
+      ]
+    },
+    {
+      "id": "featured:tuba-jazz",
+      "type": "featured_in",
+      "from": "instrument:tuba",
+      "to": "genre:jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tuba"
+      ]
+    },
+    {
+      "id": "featured:drum-kit-jazz",
+      "type": "featured_in",
+      "from": "instrument:drum-kit",
+      "to": "genre:jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Drum_kit"
+      ]
+    },
+    {
+      "id": "featured:drum-kit-swing",
+      "type": "featured_in",
+      "from": "instrument:drum-kit",
+      "to": "genre:swing",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Drum_kit"
+      ]
+    },
+    {
+      "id": "featured:drum-kit-bebop",
+      "type": "featured_in",
+      "from": "instrument:drum-kit",
+      "to": "genre:bebop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Drum_kit"
+      ]
+    },
+    {
+      "id": "featured:drum-kit-rock-and-roll",
+      "type": "featured_in",
+      "from": "instrument:drum-kit",
+      "to": "genre:rock-and-roll",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Drum_kit"
+      ]
+    },
+    {
+      "id": "featured:drum-kit-funk",
+      "type": "featured_in",
+      "from": "instrument:drum-kit",
+      "to": "genre:funk",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Drum_kit"
+      ]
+    },
+    {
+      "id": "featured:drum-kit-afrobeat",
+      "type": "featured_in",
+      "from": "instrument:drum-kit",
+      "to": "genre:afrobeat",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Drum_kit"
+      ]
+    },
+    {
+      "id": "featured:drum-kit-heavy-metal",
+      "type": "featured_in",
+      "from": "instrument:drum-kit",
+      "to": "genre:heavy-metal",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Drum_kit"
+      ]
+    },
+    {
+      "id": "plays:art-blakey-drum-kit",
+      "type": "plays",
+      "from": "artist:art-blakey",
+      "to": "instrument:drum-kit",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Art_Blakey"
+      ]
+    },
+    {
+      "id": "plays:tony-allen-drum-kit",
+      "type": "plays",
+      "from": "artist:tony-allen",
+      "to": "instrument:drum-kit",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tony_Allen_(musician)"
+      ]
+    },
+    {
+      "id": "featured:conga-son-cubano",
+      "type": "featured_in",
+      "from": "instrument:conga",
+      "to": "genre:son-cubano",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Conga"
+      ]
+    },
+    {
+      "id": "featured:conga-salsa",
+      "type": "featured_in",
+      "from": "instrument:conga",
+      "to": "genre:salsa",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Conga"
+      ]
+    },
+    {
+      "id": "featured:conga-latin-jazz",
+      "type": "featured_in",
+      "from": "instrument:conga",
+      "to": "genre:latin-jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Conga"
+      ]
+    },
+    {
+      "id": "plays:poncho-sanchez-conga",
+      "type": "plays",
+      "from": "artist:poncho-sanchez",
+      "to": "instrument:conga",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Poncho_Sanchez"
+      ]
+    },
+    {
+      "id": "featured:vibraphone-jazz",
+      "type": "featured_in",
+      "from": "instrument:vibraphone",
+      "to": "genre:jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vibraphone"
+      ]
+    },
+    {
+      "id": "featured:vibraphone-swing",
+      "type": "featured_in",
+      "from": "instrument:vibraphone",
+      "to": "genre:swing",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vibraphone"
+      ]
+    },
+    {
+      "id": "featured:vibraphone-bebop",
+      "type": "featured_in",
+      "from": "instrument:vibraphone",
+      "to": "genre:bebop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vibraphone"
+      ]
+    },
+    {
+      "id": "featured:vibraphone-latin-jazz",
+      "type": "featured_in",
+      "from": "instrument:vibraphone",
+      "to": "genre:latin-jazz",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vibraphone"
+      ]
+    },
+    {
+      "id": "plays:tito-puente-vibraphone",
+      "type": "plays",
+      "from": "artist:tito-puente",
+      "to": "instrument:vibraphone",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tito_Puente"
+      ]
+    },
+    {
+      "id": "featured:tabla-hindustani-classical",
+      "type": "featured_in",
+      "from": "instrument:tabla",
+      "to": "genre:hindustani-classical",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tabla"
+      ]
+    },
+    {
+      "id": "featured:tabla-qawwali",
+      "type": "featured_in",
+      "from": "instrument:tabla",
+      "to": "genre:qawwali",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tabla"
+      ]
+    },
+    {
+      "id": "featured:steelpan-calypso",
+      "type": "featured_in",
+      "from": "instrument:steelpan",
+      "to": "genre:calypso",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Steelpan"
+      ]
+    },
+    {
+      "id": "featured:theremin-modern-classical",
+      "type": "featured_in",
+      "from": "instrument:theremin",
+      "to": "genre:modern-classical",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Theremin"
+      ]
+    },
+    {
+      "id": "featured:theremin-hard-rock",
+      "type": "featured_in",
+      "from": "instrument:theremin",
+      "to": "genre:hard-rock",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Theremin"
+      ]
+    },
+    {
+      "id": "featured:modular-synthesizer-krautrock",
+      "type": "featured_in",
+      "from": "instrument:modular-synthesizer",
+      "to": "genre:krautrock",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Modular_synthesizer"
+      ]
+    },
+    {
+      "id": "featured:modular-synthesizer-progressive-rock",
+      "type": "featured_in",
+      "from": "instrument:modular-synthesizer",
+      "to": "genre:progressive-rock",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Modular_synthesizer"
+      ]
+    },
+    {
+      "id": "featured:modular-synthesizer-ambient",
+      "type": "featured_in",
+      "from": "instrument:modular-synthesizer",
+      "to": "genre:ambient",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Modular_synthesizer"
+      ]
+    },
+    {
+      "id": "plays:tangerine-dream-modular-synthesizer",
+      "type": "plays",
+      "from": "artist:tangerine-dream",
+      "to": "instrument:modular-synthesizer",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tangerine_Dream"
+      ]
+    },
+    {
+      "id": "lineage:modular-synthesizer-theremin",
+      "type": "influences",
+      "from": "instrument:theremin",
+      "to": "instrument:modular-synthesizer",
+      "confidence": "medium",
+      "note": "Moog began by building theremins before designing voltage-controlled modules.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Modular_synthesizer"
+      ]
+    },
+    {
+      "id": "featured:minimoog-progressive-rock",
+      "type": "featured_in",
+      "from": "instrument:minimoog",
+      "to": "genre:progressive-rock",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minimoog"
+      ]
+    },
+    {
+      "id": "featured:minimoog-funk",
+      "type": "featured_in",
+      "from": "instrument:minimoog",
+      "to": "genre:funk",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minimoog"
+      ]
+    },
+    {
+      "id": "featured:minimoog-jazz-fusion",
+      "type": "featured_in",
+      "from": "instrument:minimoog",
+      "to": "genre:jazz-fusion",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minimoog"
+      ]
+    },
+    {
+      "id": "featured:minimoog-g-funk",
+      "type": "featured_in",
+      "from": "instrument:minimoog",
+      "to": "genre:g-funk",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minimoog"
+      ]
+    },
+    {
+      "id": "plays:parliament-funkadelic-minimoog",
+      "type": "plays",
+      "from": "artist:parliament-funkadelic",
+      "to": "instrument:minimoog",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Parliament-Funkadelic"
+      ]
+    },
+    {
+      "id": "lineage:minimoog-modular-synthesizer",
+      "type": "derived_from",
+      "from": "instrument:minimoog",
+      "to": "instrument:modular-synthesizer",
+      "confidence": "high",
+      "note": "Hard-wires a selection of Moog modular components into one portable instrument.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Minimoog"
+      ]
+    },
+    {
+      "id": "featured:sampler-hip-hop",
+      "type": "featured_in",
+      "from": "instrument:sampler",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sampler_(musical_instrument)"
+      ]
+    },
+    {
+      "id": "featured:sampler-boom-bap",
+      "type": "featured_in",
+      "from": "instrument:sampler",
+      "to": "genre:boom-bap",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sampler_(musical_instrument)"
+      ]
+    },
+    {
+      "id": "featured:sampler-jungle",
+      "type": "featured_in",
+      "from": "instrument:sampler",
+      "to": "genre:jungle",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sampler_(musical_instrument)"
+      ]
+    },
+    {
+      "id": "featured:sampler-big-beat",
+      "type": "featured_in",
+      "from": "instrument:sampler",
+      "to": "genre:big-beat",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sampler_(musical_instrument)"
+      ]
+    },
+    {
+      "id": "featured:sampler-trip-hop",
+      "type": "featured_in",
+      "from": "instrument:sampler",
+      "to": "genre:trip-hop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sampler_(musical_instrument)"
+      ]
+    },
+    {
+      "id": "plays:dj-shadow-sampler",
+      "type": "plays",
+      "from": "artist:dj-shadow",
+      "to": "instrument:sampler",
+      "sources": [
+        "https://en.wikipedia.org/wiki/DJ_Shadow"
+      ]
+    },
+    {
+      "id": "featured:tr-808-electro",
+      "type": "featured_in",
+      "from": "instrument:tr-808",
+      "to": "genre:electro",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TR-808"
+      ]
+    },
+    {
+      "id": "featured:tr-808-hip-hop",
+      "type": "featured_in",
+      "from": "instrument:tr-808",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TR-808"
+      ]
+    },
+    {
+      "id": "featured:tr-808-southern-rap",
+      "type": "featured_in",
+      "from": "instrument:tr-808",
+      "to": "genre:southern-rap",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TR-808"
+      ]
+    },
+    {
+      "id": "featured:tr-808-trap-rap",
+      "type": "featured_in",
+      "from": "instrument:tr-808",
+      "to": "genre:trap-rap",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TR-808"
+      ]
+    },
+    {
+      "id": "plays:afrika-bambaataa-tr-808",
+      "type": "plays",
+      "from": "artist:afrika-bambaataa",
+      "to": "instrument:tr-808",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Afrika_Bambaataa"
+      ]
+    },
+    {
+      "id": "featured:tb-303-acid-house",
+      "type": "featured_in",
+      "from": "instrument:tb-303",
+      "to": "genre:acid-house",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TB-303"
+      ]
+    },
+    {
+      "id": "featured:tb-303-trance",
+      "type": "featured_in",
+      "from": "instrument:tb-303",
+      "to": "genre:trance",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TB-303"
+      ]
+    },
+    {
+      "id": "featured:tb-303-psytrance",
+      "type": "featured_in",
+      "from": "instrument:tb-303",
+      "to": "genre:psytrance",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TB-303"
+      ]
+    },
+    {
+      "id": "plays:phuture-tb-303",
+      "type": "plays",
+      "from": "artist:phuture",
+      "to": "instrument:tb-303",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Phuture"
+      ]
+    },
+    {
+      "id": "plays:dj-pierre-tb-303",
+      "type": "plays",
+      "from": "artist:dj-pierre",
+      "to": "instrument:tb-303",
+      "sources": [
+        "https://en.wikipedia.org/wiki/DJ_Pierre"
+      ]
+    },
+    {
+      "id": "featured:tr-909-chicago-house",
+      "type": "featured_in",
+      "from": "instrument:tr-909",
+      "to": "genre:chicago-house",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TR-909"
+      ]
+    },
+    {
+      "id": "featured:tr-909-detroit-techno",
+      "type": "featured_in",
+      "from": "instrument:tr-909",
+      "to": "genre:detroit-techno",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TR-909"
+      ]
+    },
+    {
+      "id": "featured:tr-909-techno",
+      "type": "featured_in",
+      "from": "instrument:tr-909",
+      "to": "genre:techno",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TR-909"
+      ]
+    },
+    {
+      "id": "featured:tr-909-trance",
+      "type": "featured_in",
+      "from": "instrument:tr-909",
+      "to": "genre:trance",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TR-909"
+      ]
+    },
+    {
+      "id": "featured:tr-909-gabber",
+      "type": "featured_in",
+      "from": "instrument:tr-909",
+      "to": "genre:gabber",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TR-909"
+      ]
+    },
+    {
+      "id": "plays:frankie-knuckles-tr-909",
+      "type": "plays",
+      "from": "artist:frankie-knuckles",
+      "to": "instrument:tr-909",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Frankie_Knuckles"
+      ]
+    },
+    {
+      "id": "plays:jeff-mills-tr-909",
+      "type": "plays",
+      "from": "artist:jeff-mills",
+      "to": "instrument:tr-909",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jeff_Mills"
+      ]
+    },
+    {
+      "id": "lineage:tr-909-tr-808",
+      "type": "derived_from",
+      "from": "instrument:tr-909",
+      "to": "instrument:tr-808",
+      "confidence": "high",
+      "note": "Roland's successor to the TR-808, adding sampled cymbals and MIDI.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_TR-909"
+      ]
+    },
+    {
+      "id": "featured:turntables-hip-hop",
+      "type": "featured_in",
+      "from": "instrument:turntables",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Turntablism"
+      ]
+    },
+    {
+      "id": "featured:turntables-old-school-rap",
+      "type": "featured_in",
+      "from": "instrument:turntables",
+      "to": "genre:old-school-rap",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Turntablism"
+      ]
+    },
+    {
+      "id": "featured:turntables-boom-bap",
+      "type": "featured_in",
+      "from": "instrument:turntables",
+      "to": "genre:boom-bap",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Turntablism"
+      ]
+    },
+    {
+      "id": "plays:grandmaster-flash-and-the-furious-five-turntables",
+      "type": "plays",
+      "from": "artist:grandmaster-flash-and-the-furious-five",
+      "to": "instrument:turntables",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Grandmaster_Flash_and_the_Furious_Five"
+      ]
+    },
+    {
+      "id": "featured:auto-tune-pop",
+      "type": "featured_in",
+      "from": "instrument:auto-tune",
+      "to": "genre:pop",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Auto-Tune"
+      ]
+    },
+    {
+      "id": "featured:auto-tune-contemporary-r-and-b",
+      "type": "featured_in",
+      "from": "instrument:auto-tune",
+      "to": "genre:contemporary-r-and-b",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Auto-Tune"
+      ]
+    },
+    {
+      "id": "featured:auto-tune-trap-rap",
+      "type": "featured_in",
+      "from": "instrument:auto-tune",
+      "to": "genre:trap-rap",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Auto-Tune"
+      ]
+    },
+    {
+      "id": "featured:auto-tune-afrobeats",
+      "type": "featured_in",
+      "from": "instrument:auto-tune",
+      "to": "genre:afrobeats",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Auto-Tune"
+      ]
+    },
+    {
+      "id": "plays:future-auto-tune",
+      "type": "plays",
+      "from": "artist:future",
+      "to": "instrument:auto-tune",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Future_(rapper)"
+      ]
+    },
+    {
+      "id": "lineage:guitar-lute",
+      "type": "influences",
+      "from": "instrument:lute",
+      "to": "instrument:guitar",
+      "confidence": "medium",
+      "note": "The guitar's exact ancestry is debated; it shares the lute's fretted, plucked design through the gittern and vihuela.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Guitar"
       ]
     }
   ]

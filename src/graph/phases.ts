@@ -40,6 +40,10 @@ export function prominencePhases(node: GraphNode, now: number) {
 
 export type Stop = { offset: number; level: number }
 
+/** Each side of a phase boundary blends over this share of the shorter neighbouring phase. */
+export const BLEND_RATIO = 0.15
+export const BLEND_MIN_YEARS = 2
+
 function genreStops(node: GraphNode, now: number, valueOf: (phase: ProminencePhase) => number): Stop[] {
   const phases = prominencePhases(node, now)
   if (phases.length === 0) return []
@@ -49,8 +53,10 @@ function genreStops(node: GraphNode, now: number, valueOf: (phase: ProminencePha
   for (let i = 1; i < phases.length; i++) {
     const previous = phases[i - 1]
     const phase = phases[i]
-    // Blend around the editorial boundary, without swallowing short phases.
-    const halfWidth = Math.min(2, (previous.end - previous.start) / 3, (phase.end - phase.start) / 3)
+    // Blend around the editorial boundary in proportion to the neighbouring phases, so
+    // century-long eras shift over decades, without swallowing short phases.
+    const shorter = Math.min(previous.end - previous.start, phase.end - phase.start)
+    const halfWidth = Math.min(Math.max(BLEND_MIN_YEARS, shorter * BLEND_RATIO), shorter / 3)
     const from = valueOf(previous)
     const to = valueOf(phase)
     for (const t of [0, 0.25, 0.5, 0.75, 1]) {

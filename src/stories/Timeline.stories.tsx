@@ -30,6 +30,14 @@ export const Artists: Story = {
   parameters: { explorer: { initialView: 'artist' } },
 }
 
+export const Instruments: Story = {
+  parameters: { explorer: { initialView: 'instrument' } },
+}
+
+export const SelectedInstrument: Story = {
+  parameters: { explorer: { initialView: 'instrument', initialSelectedId: 'instrument:tr-808' } },
+}
+
 export const SelectedGenre: Story = {
   parameters: { explorer: { initialSelectedId: 'genre:house' } },
 }

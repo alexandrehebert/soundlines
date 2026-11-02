@@ -26,8 +26,8 @@ rejected.**
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 659 nodes (169 genres, 459 artists, 7 labels, 6 places,
-14 tracks, 4 scenes) and 871 edges.
+Current size: 696 nodes (169 genres, 459 artists, 37 instruments, 7 labels,
+6 places, 14 tracks, 4 scenes) and 1064 edges.
 
 ---
 
@@ -36,14 +36,14 @@ Current size: 659 nodes (169 genres, 459 artists, 7 labels, 6 places,
 ```ts
 interface GraphNode {
   id: string            // "<type>:<slug>", e.g. "genre:deep-house", "artist:kraftwerk"
-  type: 'genre' | 'artist' | 'label' | 'place' | 'track' | 'scene'
+  type: 'genre' | 'artist' | 'instrument' | 'label' | 'place' | 'track' | 'scene'
   name: string          // Display name, e.g. "Deep house"
   period?: { start: number; end?: number | null; precision?: 'year' | 'decade' | 'circa' }
   description?: string  // 1–3 sentences, editorial and evocative but factual
-  family?: GenreFamily  // Timeline lane (required for genres)
+  family?: GenreFamily | InstrumentFamily  // Timeline lane (required for genres and instruments)
   kind?: 'person' | 'group' | 'collective'   // Artists only
   sources?: string[]    // HTTPS URLs to relevant, credible sources
-  phases?: ProminencePhase[]  // Genres and artists only. See §5
+  phases?: ProminencePhase[]  // Genres, artists, and instruments only. See §5
   phaseNote?: string    // Required whenever `phases` is present
 }
 ```
@@ -54,6 +54,7 @@ interface GraphNode {
 |----------|-----------------------------------------------|----------------------------------------|
 | `genre`  | A genre, style, or historical era             | Emergence → end (absent `end` = still alive) |
 | `artist` | A person, group, or collective                | **Active creative career**, not birth/death |
+| `instrument` | A musical instrument or studio device     | First documented appearance in its recognizable form → disuse (usually no `end`) |
 | `label`  | Record label                                  | Founding → closure                     |
 | `place`  | City or region                                | Usually omitted                        |
 | `track`  | A specific recording                          | Release year (`start` = `end`)         |
@@ -117,6 +118,27 @@ and a resolvable family to render; a missing value prevents the entire artist
 timeline from loading. For example, `artist:women-on-wax` explicitly uses `techno`
 without claiming a key-artist relationship.
 
+### Instrument families (Instruments timeline lanes)
+
+Every instrument **must** have one of these instrument families. Genre families
+are not valid for instruments, and instrument families are not valid for other nodes.
+
+| family       | Label               | Current examples |
+|--------------|---------------------|------------------|
+| `strings`    | Strings             | koto, lute, guitar, violin, double bass, banjo, sitar, electric guitar, electric bass |
+| `keyboards`  | Keyboards & Organs  | harpsichord, piano, Hammond organ, electric piano |
+| `winds`      | Woodwinds & Reeds   | recorder, clarinet, harmonica, accordion, saxophone, bandoneon |
+| `brass`      | Brass               | trombone, valved trumpet, tuba |
+| `percussion` | Percussion          | tabla, conga, drum kit, vibraphone, steelpan |
+| `electronic` | Electronic & Studio | theremin, modular synthesizer, Minimoog, turntables, sampler, TR-808, TB-303, TR-909, Auto-Tune |
+
+Instrument ids use the generic name unless a specific model defines the sound
+(`instrument:tr-808`, `instrument:minimoog`). Pick `period.start` as the
+approximate first documented appearance of the recognizable form, usually with
+`precision: 'circa'` (the valved trumpet starts in 1818, not with ancient trumpets).
+Each instrument needs a `description`, `sources`, and at least one sourced
+`featured_in` edge.
+
 ### Existing genre ids (do not duplicate)
 
 ```
@@ -177,9 +199,9 @@ Read every edge as **`from` → label → `to`**:
 
 | type                | from → to               | Reads as | Lineage orientation |
 |---------------------|-------------------------|----------|---------------------|
-| `influences`        | genre → genre, artist → artist | A influences B | `from` is the ancestor |
+| `influences`        | genre → genre, artist → artist, instrument → instrument | A influences B | `from` is the ancestor |
 | `cross_pollination` | genre ↔ genre           | A cross-pollinates with B (contemporaries) | `from` is the ancestor |
-| `derived_from`      | genre → genre           | A is derived from B | `to` is the ancestor |
+| `derived_from`      | genre → genre, instrument → instrument | A is derived from B | `to` is the ancestor |
 | `subgenre_of`       | genre → genre           | A is a subgenre of B | `to` is the ancestor |
 | `fusion_of`         | genre → genre (×N)      | A is a fusion of B (add one edge per parent) | `to` is the ancestor |
 | `revival_of`        | genre → genre           | A is a revival of B | `to` is the ancestor |
@@ -191,6 +213,8 @@ Read every edge as **`from` → label → `to`**:
 | `originated_in`     | genre/artist/label/scene → place | A originated in B | — |
 | `anthem_of`         | track → genre           | A is an anthem of B | — |
 | `recorded_by`       | track → artist          | A was recorded by B | — |
+| `featured_in`       | instrument → genre      | A is a defining instrument in genre B | — |
+| `plays`             | artist → instrument     | A is a notable player of B | — |
 
 **Direction matters.** For example, `deep-house derived_from chicago-house` is correct;
 `chicago-house derived_from deep-house` is wrong. Do not create the same
@@ -215,6 +239,8 @@ prefixes:
 - `member:<person>-<group>`, `collab:<a>-<b>`, `origin:<node>-<place>`,
   `signed:<artist>-<label>`, `founded:<artist>-<label>`,
   `anthem:<track>-<genre>`, `recorded:<track>-<artist>`
+- `featured:<instrument>-<genre>`, `plays:<artist>-<instrument>`, and
+  `lineage:<child>-<parent>` between instruments
 
 Ids must be unique across all edges.
 
@@ -256,8 +282,14 @@ Ids must be unique across all edges.
 13. Do not remove these v1 entities: Detroit techno, Chicago house, Kraftwerk, Juan
     Atkins, Derrick May, Kevin Saunderson, Cybotron, Metroplex, and Detroit.
 14. Classical, jazz, and rock genres listed in §2 must keep their family and sources.
+15. **Every instrument** has an instrument family, a `period`, a `description`,
+    `sources`, and at least one `featured_in` edge to a genre. Each instrument
+    family has at least 3 instruments.
+16. `featured_in` always goes instrument → genre, and `plays` always goes artist →
+    instrument. Instruments connect to other instruments only through
+    `influences` or `derived_from`. Every edge touching an instrument has `sources`.
 
-## 5. Prominence phases (optional, genres & artists only)
+## 5. Prominence phases (optional, genres, artists & instruments)
 
 `phases` describes editorial prominence over time. It does not measure sales or streams.
 
@@ -282,6 +314,11 @@ Rules:
 - For artists, phases describe the **active career** (labels: Emerging / Peak
   years / Continuing / Low profile or hiatus), anchored to documented milestones
   (key albums, breakups, reunions). Do not include posthumous popularity.
+- For instruments, phases describe **usage in recorded and performed music**
+  (labels: Emerging / Peak use / Continuing / Rare / eclipsed). They are anchored
+  to documented shifts, for example the harpsichord eclipsed by the piano and
+  revived in the 20th century, or the TB-303 flopping commercially before
+  acid house made it central from 1987.
 - Leave `phases` out when there is no reasonable basis. Neutral bars are preferred
   over invented histories.
 

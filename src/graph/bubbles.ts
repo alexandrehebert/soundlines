@@ -1,12 +1,12 @@
 import { lineage, lineageSource, lineageTarget, type GraphIndex } from './graph.ts'
-import { FAMILY_ORDER } from './types.ts'
+import { FAMILY_ORDER, isGenreFamily } from './types.ts'
 
 export type GenreDisplay = 'bars' | 'bubbles'
 
 export function createGenreBubbles(index: GraphIndex) {
   const genres = index.graph.nodes.filter((node) => node.type === 'genre')
   const bubbles = genres.map((node) => {
-    if (!node.family) throw new Error(`Genre bubble ${node.id} needs a genre family`)
+    if (!isGenreFamily(node.family)) throw new Error(`Genre bubble ${node.id} needs a genre family`)
     const influence = [...lineage(index, node.id).descendants]
       .filter((id) => index.nodeById.get(id)?.type === 'genre').length
     return { node, family: node.family, influence }

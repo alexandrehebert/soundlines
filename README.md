@@ -1,6 +1,6 @@
 # Soundlines
 
-A chronological map of music genres, artists, labels, scenes, and the lineages that connect them — the clean rebuild of the `music-tree` project.
+A chronological map of music genres, artists, instruments, labels, scenes, and the lineages that connect them — the clean rebuild of the `music-tree` project.
 
 Vite, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vitest, linted with oxlint, deployable to Vercel as a static site.
 
@@ -14,8 +14,8 @@ do not trigger it. Reduced-motion preferences disable the spin and fade.
 
 ## The timeline
 
-The main view is a horizontal chronology with two modes: **Genres** (the default)
-and **Artists**. Each mode renders its own nodes as bars, grouped into family
+The main view is a horizontal chronology with three modes: **Genres** (the default),
+**Artists**, and **Instruments**. Each mode renders its own nodes as bars, grouped into family
 lanes: Classical; Blues, R&B & Soul; Jazz; Country & Folk; Rock; Alternative & Punk;
 Metal; Pop; Hip-hop; Reggae & Ska; Latin; African; Electronica & Ambient;
 Disco & House; Techno & Trance; and Breakbeat & Bass. The current 115 genres are
@@ -92,9 +92,9 @@ graph relationships. Artist lanes and detail badges use the same families.
   flash on pointer down.
 - Artists switches to artist bars, not an overlay on the genre timeline; artist bubbles are currently removed
 - Search and related-node navigation switch modes automatically when selecting an artist or genre and bring the selected bar into view
-- Selection is shareable via `?focus=<node-id>`; `?view=artists` opens the artist timeline without a selection
+- Selection is shareable via `?focus=<node-id>`; `?view=artists` or `?view=instruments` opens that timeline without a selection
 - Each mode remembers its horizontal time range; switching modes resets vertical scrolling and hover
-- The default range remains 1948–present; pan or zoom out to reach earlier history (back to c. 500), or search for an era or composer to jump there
+- The default Genres and Artists range remains 1948–present; Instruments opens on c. 500–present. Pan or zoom out to reach earlier history (back to c. 500), or search for an era or composer to jump there
 
 Artists appear once, in their most-represented genre family. Ties follow family
 order; an explicit artist `family` overrides inference. Artist links include
@@ -102,6 +102,21 @@ sourced influences, group memberships, and collaborations. Collaboration dates
 anchor both ends near the documented event; undated influences and memberships
 anchor near the target's career start. Sharing a genre alone never creates an
 artist-to-artist influence claim.
+
+### Instruments
+
+Instruments has six lanes of its own: Strings; Keyboards & Organs; Woodwinds &
+Reeds; Brass; Percussion; and Electronic & Studio. Each bar starts at the
+instrument's approximate first documented appearance in its recognizable form,
+from the koto (c. 700) and lute to the Roland TR-808, the TB-303, and Auto-Tune.
+All current instruments are still in use, so no bar ends. Curved links show sourced
+lineage between instruments. For example, the electric guitar derives from the guitar,
+the TR-909 derives from the TR-808, and the clarinet influenced the saxophone.
+The detail panel lists the genres each instrument is featured in and its notable
+players. Both open the corresponding genre or artist. A few instruments, including the
+harpsichord, theremin, and TB-303, have editorial usage phases that show
+eclipse and revival. The others stay neutral. Instruments have no bubble map
+or order toggle.
 
 ### Historical prominence
 
@@ -111,8 +126,9 @@ All phases keep the same bar height: golden ages are strongest, continuing scene
 are softer, and niche periods are hidden entirely (the bar fades out into them,
 and back in for a revival). Relationship endpoints stay on the visible
 part of the bar. A continuous gradient
-smoothly blends intensity around each boundary (up to two years either side,
-shortened for brief phases), without steps in height or dotted tails.
+smoothly blends intensity around each boundary (15% of the shorter neighbouring
+phase either side, at least two years, so century-long instrument eras shift
+over decades; shortened to a third of brief phases), without steps in height or dotted tails.
 Each phase lasts until the next starts, or until the lifespan ends.
 Phases may repeat to describe revivals: a bar can disappear and reappear as many
 times as needed. There is no automatic age-based decline.

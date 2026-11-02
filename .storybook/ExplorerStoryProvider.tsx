@@ -3,8 +3,8 @@ import { ExplorerContext } from '../src/ExplorerContext.ts'
 import rawGraph from '../src/data/graph.json'
 import type { GenreDisplay } from '../src/graph/bubbles.ts'
 import { buildIndex } from '../src/graph/graph.ts'
-import { DEFAULT_START_YEAR, MAX_YEAR, revealEraRange, type GenreOrder } from '../src/graph/layout.ts'
-import { createTimelineModel, type TimelineView } from '../src/graph/timeline.ts'
+import { revealEraRange, type GenreOrder } from '../src/graph/layout.ts'
+import { createTimelineModel, defaultViewRange, isTimelineView, type TimelineView } from '../src/graph/timeline.ts'
 import type { GraphNode, MusicGraph } from '../src/graph/types.ts'
 
 type YearRange = [number, number]
@@ -19,7 +19,7 @@ export interface StoryExplorerOptions {
 const index = buildIndex(rawGraph as MusicGraph)
 
 function nodeView(node: GraphNode | undefined, currentView: TimelineView): TimelineView {
-  return node?.type === 'artist' || node?.type === 'genre' ? node.type : currentView
+  return isTimelineView(node?.type) ? node.type : currentView
 }
 
 function revealNode(range: YearRange, node: GraphNode | undefined): YearRange {
@@ -48,8 +48,9 @@ export function ExplorerStoryProvider({
   })
   const [ranges, setRanges] = useState<Record<TimelineView, YearRange>>(() => {
     const initial: Record<TimelineView, YearRange> = {
-      genre: [DEFAULT_START_YEAR, MAX_YEAR],
-      artist: [DEFAULT_START_YEAR, MAX_YEAR],
+      genre: defaultViewRange('genre'),
+      artist: defaultViewRange('artist'),
+      instrument: defaultViewRange('instrument'),
     }
     const node = location.selectedId ? index.nodeById.get(location.selectedId) : undefined
     initial[location.view] = revealNode(initial[location.view], node)

@@ -3,12 +3,13 @@ import rawGraph from './graph.json'
 import type { GenreFamily, GraphNode, MusicGraph, NodeType } from '../graph/types.ts'
 import { MAX_YEAR, MIN_YEAR } from '../graph/layout.ts'
 import { buildIndex, lineage, neighbors, searchNodes } from '../graph/graph.ts'
-import { artistFamily, createTimelineModel } from '../graph/timeline.ts'
+import { artistFamily, createTimelineModel, timelineFamily } from '../graph/timeline.ts'
 import { FAMILY_COLORS } from '../theme.ts'
 import {
   EDGE_TYPE_LABELS,
   FAMILY_LABELS,
   FAMILY_ORDER,
+  INSTRUMENT_FAMILY_ORDER,
   NODE_TYPE_LABELS,
   PROMINENCE_LABELS,
 } from '../graph/types.ts'
@@ -16,9 +17,9 @@ import {
 const graph = rawGraph as MusicGraph
 
 describe('graph.json integrity', () => {
-  it('has ordered, known editorial phases within each genre or artist lifespan', () => {
+  it('has ordered, known editorial phases within each genre, artist, or instrument lifespan', () => {
     for (const node of graph.nodes.filter((candidate) => candidate.phases !== undefined)) {
-      expect(['genre', 'artist']).toContain(node.type)
+      expect(['genre', 'artist', 'instrument']).toContain(node.type)
       expect(node.phaseNote).toBeTruthy()
       expect(node.phases!.length).toBeGreaterThan(0)
       expect(node.phases![0].start).toBe(node.period?.start)
@@ -70,12 +71,13 @@ describe('graph.json integrity', () => {
   })
 
   it('gives every family a unique label, color, and position in the order', () => {
-    expect(new Set(FAMILY_ORDER).size).toBe(FAMILY_ORDER.length)
-    expect(Object.keys(FAMILY_LABELS).sort()).toEqual([...FAMILY_ORDER].sort())
-    expect(Object.keys(FAMILY_COLORS).sort()).toEqual([...FAMILY_ORDER].sort())
-    expect(new Set(Object.values(FAMILY_LABELS)).size).toBe(FAMILY_ORDER.length)
-    expect(new Set(Object.values(FAMILY_COLORS)).size).toBe(FAMILY_ORDER.length)
-    for (const family of FAMILY_ORDER) {
+    const families = [...FAMILY_ORDER, ...INSTRUMENT_FAMILY_ORDER]
+    expect(new Set(families).size).toBe(families.length)
+    expect(Object.keys(FAMILY_LABELS).sort()).toEqual([...families].sort())
+    expect(Object.keys(FAMILY_COLORS).sort()).toEqual([...families].sort())
+    expect(new Set(Object.values(FAMILY_LABELS)).size).toBe(families.length)
+    expect(new Set(Object.values(FAMILY_COLORS)).size).toBe(families.length)
+    for (const family of families) {
       expect(FAMILY_LABELS[family].trim().length).toBeGreaterThan(0)
       expect(FAMILY_COLORS[family]).toMatch(/^#[0-9a-f]{6}$/i)
     }
@@ -109,6 +111,52 @@ describe('graph.json integrity', () => {
     }
   })
 
+  it('gives every instrument an instrument family, a period, sources, and sourced genre links', () => {
+    const index = buildIndex(graph)
+    const instruments = graph.nodes.filter((node) => node.type === 'instrument')
+    expect(instruments.length).toBeGreaterThanOrEqual(30)
+    for (const instrument of instruments) {
+      expect(INSTRUMENT_FAMILY_ORDER, instrument.id).toContain(instrument.family)
+      expect(timelineFamily(index, instrument), instrument.id).toBe(instrument.family)
+      expect(instrument.period, instrument.id).toBeDefined()
+      expect(instrument.description, instrument.id).toBeTruthy()
+      expect(instrument.sources?.length, instrument.id).toBeGreaterThan(0)
+      const featured = graph.edges.filter((edge) => edge.type === 'featured_in' && edge.from === instrument.id)
+      expect(featured.length, instrument.id).toBeGreaterThan(0)
+    }
+    for (const node of graph.nodes.filter((candidate) => candidate.type !== 'instrument')) {
+      expect(INSTRUMENT_FAMILY_ORDER as readonly string[], node.id).not.toContain(node.family)
+    }
+    for (const lane of INSTRUMENT_FAMILY_ORDER) {
+      expect(instruments.filter((node) => node.family === lane).length, lane).toBeGreaterThanOrEqual(3)
+    }
+  })
+
+  it('links instruments only in their documented directions, with sources', () => {
+    const types = new Map(graph.nodes.map((node) => [node.id, node.type]))
+    for (const edge of graph.edges) {
+      const ends = [types.get(edge.from), types.get(edge.to)]
+      if (edge.type === 'featured_in') expect(ends, edge.id).toEqual(['instrument', 'genre'])
+      if (edge.type === 'plays') expect(ends, edge.id).toEqual(['artist', 'instrument'])
+      if (ends.includes('instrument')) {
+        expect(['featured_in', 'plays', 'influences', 'derived_from'], edge.id).toContain(edge.type)
+        expect(edge.sources?.length, edge.id).toBeGreaterThan(0)
+      }
+    }
+  })
+
+  it('traces instrument lineage on the instrument timeline only', () => {
+    const index = createTimelineModel(buildIndex(graph), 'instrument').index
+    expect(index.graph.nodes.every((node) => node.type === 'instrument')).toBe(true)
+    expect(lineage(index, 'instrument:electric-guitar', createTimelineModel(buildIndex(graph), 'instrument').orientation)
+      .ancestors).toEqual(new Set(['instrument:guitar', 'instrument:lute']))
+    expect(lineage(index, 'instrument:tr-909', createTimelineModel(buildIndex(graph), 'instrument').orientation)
+      .ancestors).toEqual(new Set(['instrument:tr-808']))
+    expect(searchNodes(graph, 'Roland TR-808')[0].node.id).toBe('instrument:tr-808')
+    const genreIndex = createTimelineModel(buildIndex(graph), 'genre').index
+    expect(genreIndex.graph.nodes.some((node) => node.type === 'instrument')).toBe(false)
+  })
+
   it('covers classical eras and jazz and rock branches with cited genre nodes', () => {
     const expected = {
       classical: ['medieval', 'renaissance', 'baroque', 'classical-period', 'romantic', 'modern-classical', 'minimalism'],
@@ -128,11 +176,12 @@ describe('graph.json integrity', () => {
 
   it('projects new genres and artists into their dedicated timeline lanes', () => {
     const index = buildIndex(graph)
-    for (const view of ['genre', 'artist'] as const) {
+    for (const view of ['genre', 'artist', 'instrument'] as const) {
       const model = createTimelineModel(index, view)
       const ids = model.lanes.flatMap((lane) => lane.bars.map((bar) => bar.node.id))
       expect(new Set(ids).size).toBe(graph.nodes.filter((node) => node.type === view).length)
-      for (const family of ['classical', 'jazz', 'rock']) {
+      const families = view === 'instrument' ? INSTRUMENT_FAMILY_ORDER : ['classical', 'jazz', 'rock']
+      for (const family of families) {
         expect(model.lanes.find((lane) => lane.family === family)?.bars.length).toBeGreaterThan(0)
       }
       for (const lane of model.lanes) {

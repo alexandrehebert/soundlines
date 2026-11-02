@@ -103,13 +103,31 @@ describe('historical prominence', () => {
   it('blends smoothly on either side of a boundary with eased intermediate stops', () => {
     const stops = intensityStops(node, 2026)
     const transition = stops.slice(6, 11)
-    expect(transition.map((stop) => 1955 + stop.offset * 71)).toEqual([1978, 1979, 1980, 1981, 1982])
+    expect(transition.map((stop) => 1955 + stop.offset * 71)).toEqual([1977, 1978.5, 1980, 1981.5, 1983])
     expect(transition[0].level).toBe(1)
     expect(transition[2].level).toBeCloseTo(0.725)
     expect(transition[4].level).toBeCloseTo(0.45)
     expect(transition[1].level).toBeCloseTo(1 - 0.55 * 0.15625)
     expect(stops[0]).toEqual({ offset: 0, level: 0.35 })
     expect(stops.at(-1)).toEqual({ offset: 1, level: 0 })
+  })
+
+  it('widens blends with long eras instead of snapping at century-scale boundaries', () => {
+    const lute: GraphNode = {
+      id: 'instrument:test', type: 'instrument', name: 'Test', period: { start: 1250 },
+      phases: [
+        { start: 1250, prominence: 'emerging' },
+        { start: 1500, prominence: 'golden-age' },
+        { start: 1650, prominence: 'established' },
+      ],
+    }
+    const years = intensityStops(lute, 2026).map((stop) => 1250 + stop.offset * 776)
+    expect(years[1]).toBeCloseTo(1477.5)
+    expect(years[5]).toBeCloseTo(1522.5)
+    const short = intensityStops({ ...lute, phases: [
+      { start: 1250, prominence: 'emerging' }, { start: 1253, prominence: 'golden-age' },
+    ] }, 2026).map((stop) => 1250 + stop.offset * 776)
+    expect(short[5] - short[1]).toBeCloseTo(2)
   })
 
   it('keeps gradients ordered and bounded even with short phases and revivals', () => {

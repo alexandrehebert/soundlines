@@ -7,6 +7,8 @@ import { TimelineBar } from './timeline/TimelineBar.tsx'
 import { TimelineLinks } from './timeline/TimelineLinks.tsx'
 import { useTimelineViewport } from './timeline/useTimelineViewport.ts'
 
+const VIEW_LABELS = { genre: 'Genre', artist: 'Artist', instrument: 'Instrument' } as const
+
 export function Timeline() {
   const { model, view, selectedId, viewRange, genreOrder } = useExplorer()
   const order = view === 'genre' ? genreOrder : 'family'
@@ -102,7 +104,7 @@ export function Timeline() {
 
   return (
     <div ref={containerRef} className="timeline-surface h-full w-full overflow-y-auto"
-      role="region" aria-label={`${view === 'artist' ? 'Artist' : 'Genre'} timeline`}
+      role="region" aria-label={`${VIEW_LABELS[view]} timeline`}
       data-timeline-view={view} data-timeline-order={order} style={{ scrollPaddingTop: AXIS_H }}>
       {width > 0 && (
         <>
