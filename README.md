@@ -110,7 +110,8 @@ historical events. Artist lanes and detail badges use the same families.
   unchanged.
 - With a mouse, drag to move both axes; vertical scroll moves the timeline, horizontal scroll pans time, and Cmd/Ctrl+scroll zooms.
 - On touch screens, one-finger horizontal drags pan time, vertical swipes scroll the timeline, and two-finger pinches zoom. Tap a bar to open its draggable detail sheet.
-- Mobile search opens as a full-screen overlay; selected artists and genres bring their bars into view.
+- Mobile search opens as a full-screen overlay and keeps keyboard focus inside
+  until closed; selected artists and genres bring their bars into view.
 - The year axis and compressed-era annotations stay visible while scrolling
   through either timeline, follow horizontal panning and zoom, and reduce
   label density on narrow screens.
@@ -126,7 +127,12 @@ historical events. Artist lanes and detail badges use the same families.
   focus uses that same rounded ring before selection, without a native-outline
   flash on pointer down.
 - Artists switches to artist bars, not an overlay on the genre timeline; artist bubbles are currently removed
-- Search ignores case, Latin accents, and apostrophe style (so `rai` finds `Raï` and `N'Dour` finds `N’Dour`); search and related-node navigation switch modes automatically when selecting an artist, genre, instrument, or event and bring the selection into view
+- Search ignores case, Latin accents, and apostrophe style (so `rai` finds `Raï`
+  and `N'Dour` finds `N’Dour`). Use Up/Down to navigate results, wrapping at
+  either end; Enter opens the highlighted result (or the first result), and
+  Escape clears and closes search. Search and related-node navigation switch
+  modes automatically when selecting an artist, genre, instrument, or event and
+  bring the selection into view.
 - Selection is shareable via `?focus=<node-id>`; `?view=artists`, `?view=instruments`, or `?view=history` opens a view without a selection
 - Shared view and entity URLs return Open Graph and Twitter card metadata in the
   initial HTML, including a Soundlines preview image. Entity previews use their

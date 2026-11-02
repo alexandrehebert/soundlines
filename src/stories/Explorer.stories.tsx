@@ -27,17 +27,17 @@ export const SearchAboveYearAxis: Story = {
     const input = canvas.getByPlaceholderText('Search genres, artists, instruments, events…')
     await userEvent.click(input)
     await fireEvent.change(input, { target: { value: 'Juan' } })
-    await canvas.findByRole('button', { name: 'Juan Luis Guerra Artist' })
+    await canvas.findByRole('option', { name: 'Juan Luis Guerra Artist' })
     await waitFor(() => expect(canvasElement.querySelector('[data-timeline-axis]')).toBeInTheDocument())
 
     const axis = canvasElement.querySelector<HTMLElement>('[data-timeline-axis]')
     if (!axis) throw new Error('Timeline axis not found')
     const axisRect = axis.getBoundingClientRect()
-    const overlappingResult = canvas.getAllByRole('button', { name: /^Juan .* Artist$/ })
-      .map((button) => {
-        const rect = button.getBoundingClientRect()
+    const overlappingResult = canvas.getAllByRole('option', { name: /^Juan .* Artist$/ })
+      .map((option) => {
+        const rect = option.getBoundingClientRect()
         return {
-          button,
+          option,
           left: Math.max(rect.left, axisRect.left),
           right: Math.min(rect.right, axisRect.right),
           top: Math.max(rect.top, axisRect.top),
@@ -47,13 +47,13 @@ export const SearchAboveYearAxis: Story = {
       .find(({ left, right, top, bottom }) => right - left > 2 && bottom - top > 2)
 
     if (!overlappingResult) throw new Error('Search results do not overlap the timeline axis')
-    const { button, left, right, top, bottom } = overlappingResult
+    const { option, left, right, top, bottom } = overlappingResult
     const hit = canvasElement.ownerDocument.elementFromPoint((left + right) / 2, (top + bottom) / 2)
-    expect(button.contains(hit)).toBe(true)
+    expect(option.contains(hit)).toBe(true)
 
-    const name = button.querySelector('span')?.textContent
+    const name = option.querySelector('span')?.textContent
     if (!name) throw new Error('Search result has no name')
-    await userEvent.click(button)
+    await userEvent.click(option)
     await waitFor(() => expect(canvas.getByRole('heading', { name, level: 2 })).toBeVisible())
   },
 }
@@ -106,7 +106,7 @@ export const HistoryFilters: Story = {
     const search = canvas.getByPlaceholderText('Search genres, artists, instruments, events…')
     await userEvent.click(search)
     await fireEvent.change(search, { target: { value: 'AFM recording ban begins' } })
-    await userEvent.click(await canvas.findByRole('button', { name: 'AFM recording ban begins Event' }))
+    await userEvent.click(await canvas.findByRole('option', { name: 'AFM recording ban begins Event' }))
     await waitFor(() => {
       expect(history.getByRole('button', { name: 'All events' })).toHaveAttribute('aria-pressed', 'true')
       expect(history.getByLabelText('Topic')).toHaveValue('all')
