@@ -31,7 +31,7 @@ rejected.**
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 1209 nodes (177 genres, 492 artists, 64 instruments, 41 labels, 87 places, 211 tracks, 56 scenes, 81 events) and 1898 edges.
+Current size: 1239 nodes (177 genres, 522 artists, 64 instruments, 41 labels, 87 places, 211 tracks, 56 scenes, 81 events) and 1968 edges.
 
 ---
 
@@ -500,8 +500,8 @@ Dated nodes by `period.start`:
 | 500–1599     | 6      | 6       | 0      | 1      | 18          | 12     |
 | 1600–1899    | 17     | 14      | 8      | 5      | 24          | 15     |
 | 1900–1949    | 25     | 58      | 20     | 9      | 12          | 20     |
-| 1950–1999    | 114    | 359     | 161    | 39     | 10          | 20     |
-| 2000–present | 15     | 55      | 22     | 2      | 0           | 14     |
+| 1950–1999    | 114    | 377     | 161    | 39     | 10          | 20     |
+| 2000–present | 15     | 67      | 22     | 2      | 0           | 14     |
 
 Priorities, in order:
 
