@@ -490,6 +490,16 @@ Example:
 - Prefer linking new genres to **existing** nodes so the lineage tree stays one
   connected graph.
 
+### Evidence files and review status
+
+Every node and edge has an evidence note in `src/data/evidence/`
+(`nodes/<type>/<slug>.md`, `edges/<id with ":" replaced by "__">.md`) recording
+the sources checked and the assessment. A note marked `Pending source review`
+has not been re-checked yet. After editing evidence notes, run
+`npm run review-status` to refresh `src/data/review-status.json`, which powers
+the **Source review** tab of the dataset statistics. A test fails if the file
+is out of date.
+
 ### Suggested expansion areas
 
 The current graph has broad coverage, but these are high-value candidates for

@@ -3,7 +3,7 @@ import { CURRENT_YEAR } from './layout.ts'
 import { timelineFamily, type TimelineView } from './timeline.ts'
 import type { ArtistKind, Confidence, EdgeType, GraphNode, LaneFamily, NodeType } from './types.ts'
 
-export type StatsTab = 'overview' | TimelineView | 'links'
+export type StatsTab = 'overview' | TimelineView | 'links' | 'review'
 
 export interface RankedNode {
   node: GraphNode
@@ -178,5 +178,103 @@ export function datasetStats(index: GraphIndex, now = CURRENT_YEAR): DatasetStat
       artist: entityStats(index, 'artist', now),
       instrument: entityStats(index, 'instrument', now),
     },
+  }
+}
+
+export type LinkGroup = 'lineage' | 'people' | 'instruments' | 'industry' | 'tracks' | 'events'
+
+export const LINK_GROUPS: Record<LinkGroup, { label: string; types: readonly EdgeType[] }> = {
+  lineage: {
+    label: 'Genre lineage',
+    types: ['influences', 'derived_from', 'subgenre_of', 'fusion_of', 'cross_pollination', 'revival_of'],
+  },
+  people: { label: 'Artists & members', types: ['key_artist_of', 'member_of', 'collaborated_with'] },
+  instruments: { label: 'Instruments', types: ['featured_in', 'plays'] },
+  industry: { label: 'Labels & places', types: ['signed_to', 'founded', 'originated_in'] },
+  tracks: { label: 'Tracks', types: ['anthem_of', 'recorded_by'] },
+  events: { label: 'Events', types: ['shaped', 'involved', 'occurred_in'] },
+}
+
+export interface ReviewProgress<K extends string> {
+  key: K
+  reviewed: number
+  total: number
+}
+
+export interface ReviewStats {
+  reviewed: number
+  total: number
+  reviewedNodes: number
+  reviewedEdges: number
+  lastReviewed: string | null
+  nodeTypes: ReviewProgress<NodeType>[]
+  linkGroups: ReviewProgress<LinkGroup>[]
+  /** Genres and artists, grouped by their timeline family. */
+  families: ReviewProgress<LaneFamily>[]
+  /** Confidence of reviewed links only. */
+  confidence: Record<Confidence | 'unrated', number>
+  averageSources: { reviewed: number; pending: number }
+  sourceDomains: { domain: string; count: number }[]
+}
+
+function progress<K extends string>(items: Iterable<[K, boolean]>): ReviewProgress<K>[] {
+  const counts = new Map<K, ReviewProgress<K>>()
+  for (const [key, done] of items) {
+    const entry = counts.get(key) ?? { key, reviewed: 0, total: 0 }
+    entry.total++
+    if (done) entry.reviewed++
+    counts.set(key, entry)
+  }
+  return [...counts.values()].sort((a, b) => b.total - a.total || a.key.localeCompare(b.key))
+}
+
+const LINK_GROUP_BY_TYPE = new Map(
+  (Object.entries(LINK_GROUPS) as [LinkGroup, (typeof LINK_GROUPS)[LinkGroup]][]).flatMap(([group, { types }]) =>
+    types.map((type) => [type, group] as const),
+  ),
+)
+
+export function reviewStats(
+  index: GraphIndex,
+  status: { reviewed: readonly string[]; lastReviewed?: string | null },
+): ReviewStats {
+  const { nodes, edges } = index.graph
+  const reviewed = new Set(status.reviewed)
+  const isReviewed = (item: { id: string }) => reviewed.has(item.id)
+  const reviewedItems = [...nodes, ...edges].filter(isReviewed)
+  const pendingItems = [...nodes, ...edges].filter((item) => !isReviewed(item))
+  const averageSources = (items: { sources?: string[] }[]) =>
+    items.length ? items.reduce((sum, item) => sum + (item.sources?.length ?? 0), 0) / items.length : 0
+
+  const confidence: ReviewStats['confidence'] = { high: 0, medium: 0, low: 0, unrated: 0 }
+  for (const edge of edges) if (isReviewed(edge)) confidence[edge.confidence ?? 'unrated']++
+
+  const families = progress(
+    nodes
+      .filter((node) => node.type === 'genre' || node.type === 'artist')
+      .flatMap((node): [LaneFamily, boolean][] => {
+        const family = timelineFamily(index, node)
+        return family ? [[family, isReviewed(node)]] : []
+      }),
+  )
+
+  const reviewedNodes = nodes.filter(isReviewed).length
+  const reviewedEdges = edges.filter(isReviewed).length
+  return {
+    reviewed: reviewedNodes + reviewedEdges,
+    total: nodes.length + edges.length,
+    reviewedNodes,
+    reviewedEdges,
+    lastReviewed: status.lastReviewed ?? null,
+    nodeTypes: progress(nodes.map((node) => [node.type, isReviewed(node)])),
+    linkGroups: progress(edges.map((edge) => [LINK_GROUP_BY_TYPE.get(edge.type) ?? 'lineage', isReviewed(edge)])),
+    families,
+    confidence,
+    averageSources: { reviewed: averageSources(reviewedItems), pending: averageSources(pendingItems) },
+    sourceDomains: sortedCounts(
+      tally(reviewedItems.flatMap((item) => item.sources ?? []).map(domainOf).filter((domain) => domain !== null)),
+    )
+      .slice(0, TOP)
+      .map(([domain, count]) => ({ domain, count })),
   }
 }

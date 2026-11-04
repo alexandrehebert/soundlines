@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { buildIndex } from './graph.ts'
-import { datasetStats, emergenceBinStart, emergenceBins } from './stats.ts'
+import { datasetStats, emergenceBinStart, emergenceBins, reviewStats } from './stats.ts'
 import type { MusicGraph } from './types.ts'
 
 const graph: MusicGraph = {
@@ -87,5 +87,36 @@ describe('datasetStats', () => {
     expect(artists.dated).toBe(1)
     expect(artists.active).toBe(0)
     expect(stats.artistKinds).toEqual([{ kind: 'group', count: 1 }, { kind: 'person', count: 1 }])
+  })
+})
+
+describe('reviewStats', () => {
+  const stats = reviewStats(buildIndex(graph), { reviewed: ['genre:jazz', 'artist:miles', 'e1', 'e4', 'unknown'], lastReviewed: '2026-11-03' })
+
+  it('counts reviewed entries and links, ignoring unknown ids', () => {
+    expect(stats).toMatchObject({ reviewed: 4, total: 11, reviewedNodes: 2, reviewedEdges: 2, lastReviewed: '2026-11-03' })
+    expect(stats.nodeTypes[0]).toEqual({ key: 'genre', reviewed: 1, total: 3 })
+  })
+
+  it('groups links and genre/artist families', () => {
+    expect(stats.linkGroups).toEqual([
+      { key: 'industry', reviewed: 1, total: 1 },
+      { key: 'instruments', reviewed: 0, total: 1 },
+      { key: 'lineage', reviewed: 1, total: 1 },
+      { key: 'people', reviewed: 0, total: 1 },
+    ])
+    expect(stats.families).toEqual([
+      { key: 'jazz', reviewed: 2, total: 3 },
+      { key: 'classical', reviewed: 0, total: 1 },
+    ])
+  })
+
+  it('summarizes confidence and sources of reviewed items', () => {
+    expect(stats.confidence).toEqual({ high: 1, medium: 0, low: 0, unrated: 1 })
+    expect(stats.averageSources).toEqual({ reviewed: 0.75, pending: 0 })
+    expect(stats.sourceDomains).toEqual([
+      { domain: 'wikipedia.org', count: 2 },
+      { domain: 'allmusic.com', count: 1 },
+    ])
   })
 })

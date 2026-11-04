@@ -26,7 +26,7 @@ function render(initialTab: StatsTab) {
       historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
       viewRange: [1900, 2000], setViewRange: vi.fn(),
     }}>
-      <DatasetStats initialTab={initialTab} onClose={vi.fn()} />
+      <DatasetStats initialTab={initialTab} onClose={vi.fn()} review={{ reviewed: ['genre:jazz', 'e1'], lastReviewed: '2026-11-03' }} />
     </ExplorerContext.Provider>,
   )
 }
@@ -53,5 +53,15 @@ describe('DatasetStats', () => {
     const markup = render('overview')
     expect(markup).toContain('Entries by type')
     expect(markup).toContain('Most connected entries')
+  })
+
+  it('reports source-review progress on the review tab', () => {
+    const markup = render('review')
+    expect(markup).toMatch(/aria-selected="true"[^>]*>.*?Source review/)
+    expect(markup).toContain('Last review 2026-11-03')
+    expect(markup).toContain('67%')
+    expect(markup).toContain('aria-label="All entries and links: 2 of 3 reviewed"')
+    expect(markup).toContain('Genres &amp; artists by family')
+    expect(markup).toContain('Confidence after review')
   })
 })

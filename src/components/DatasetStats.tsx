@@ -1,8 +1,19 @@
-import { BarChart3, Disc3, Guitar, Link2, Users, X, type LucideIcon } from 'lucide-react'
+import { BarChart3, BookCheck, Disc3, Guitar, Link2, Users, X, type LucideIcon } from 'lucide-react'
 import { motion } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent, type ReactNode } from 'react'
+import reviewStatus from '../data/review-status.json'
 import { useExplorer } from '../ExplorerContext.ts'
-import { datasetStats, type EmergenceBin, type EntityStats, type RankedNode, type StatsTab } from '../graph/stats.ts'
+import {
+  datasetStats,
+  LINK_GROUPS,
+  reviewStats,
+  type EmergenceBin,
+  type EntityStats,
+  type RankedNode,
+  type ReviewProgress,
+  type ReviewStats,
+  type StatsTab,
+} from '../graph/stats.ts'
 import {
   EDGE_TYPE_LABELS,
   FAMILY_LABELS,
@@ -13,7 +24,7 @@ import {
 } from '../graph/types.ts'
 import { FAMILY_COLORS, formatPeriod, NODE_TYPE_COLORS } from '../theme.ts'
 
-const STATS_TABS: readonly StatsTab[] = ['overview', 'genre', 'artist', 'instrument', 'links']
+const STATS_TABS: readonly StatsTab[] = ['overview', 'genre', 'artist', 'instrument', 'links', 'review']
 
 const TAB_OPTIONS: Record<StatsTab, { label: string; Icon: LucideIcon }> = {
   overview: { label: 'Overview', Icon: BarChart3 },
@@ -21,6 +32,7 @@ const TAB_OPTIONS: Record<StatsTab, { label: string; Icon: LucideIcon }> = {
   artist: { label: 'Artists', Icon: Users },
   instrument: { label: 'Instruments', Icon: Guitar },
   links: { label: 'Links', Icon: Link2 },
+  review: { label: 'Source review', Icon: BookCheck },
 }
 
 const CONFIDENCE_COLORS: Record<Confidence | 'unrated', string> = {
@@ -39,9 +51,19 @@ const ARTIST_KIND_LABELS: Record<ArtistKind, string> = {
 const number = new Intl.NumberFormat('en')
 const percent = (part: number, total: number) => (total ? `${Math.round((part / total) * 100)}%` : '–')
 
-export function DatasetStats({ initialTab = 'overview', onClose }: { initialTab?: StatsTab; onClose: () => void }) {
+export function DatasetStats({
+  initialTab = 'overview',
+  onClose,
+  review = reviewStatus,
+}: {
+  initialTab?: StatsTab
+  onClose: () => void
+  /** Ids reviewed against serious sources; defaults to the generated review-status.json. */
+  review?: { reviewed: readonly string[]; lastReviewed?: string | null }
+}) {
   const { index, selectNode } = useExplorer()
   const stats = useMemo(() => datasetStats(index), [index])
+  const sourceReview = useMemo(() => reviewStats(index, review), [index, review])
   const [tab, setTab] = useState<StatsTab>(initialTab)
   const tabRefs = useRef<Partial<Record<StatsTab, HTMLButtonElement | null>>>({})
   const dialogRef = useRef<HTMLElement>(null)
@@ -171,6 +193,7 @@ export function DatasetStats({ initialTab = 'overview', onClose }: { initialTab?
             />
           )}
           {tab === 'links' && <LinksPanel stats={stats} />}
+          {tab === 'review' && <ReviewPanel stats={sourceReview} />}
         </div>
       </motion.section>
     </motion.div>
@@ -300,6 +323,100 @@ function LinksPanel({ stats }: { stats: Stats }) {
         </Section>
       )}
     </div>
+  )
+}
+
+function ReviewPanel({ stats }: { stats: ReviewStats }) {
+  const nodeTotal = stats.nodeTypes.reduce((sum, item) => sum + item.total, 0)
+  const edgeTotal = stats.total - nodeTotal
+  return (
+    <div className="space-y-6">
+      <p className="text-xs leading-relaxed text-slate-400">
+        Entries and links are being re-checked against serious sources such as archives, museums, scholarship,
+        halls of fame and reputable press. Each review challenges dates, phases, notes and confidence, and leaves an
+        evidence note in the repository.
+        {stats.lastReviewed && <span className="text-slate-600"> Last review {stats.lastReviewed}.</span>}
+      </p>
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+        <Metric label="Reviewed overall" value={percent(stats.reviewed, stats.total)} hint={`${number.format(stats.reviewed)} / ${number.format(stats.total)}`} />
+        <Metric label="Entries reviewed" value={number.format(stats.reviewedNodes)} hint={percent(stats.reviewedNodes, nodeTotal)} />
+        <Metric label="Links reviewed" value={number.format(stats.reviewedEdges)} hint={percent(stats.reviewedEdges, edgeTotal)} />
+        <Metric
+          label="Sources / reviewed item"
+          value={stats.averageSources.reviewed.toFixed(1)}
+          hint={`${stats.averageSources.pending.toFixed(1)} pending`}
+        />
+      </div>
+      <Section title="Progress">
+        <ProgressBar label="All entries and links" reviewed={stats.reviewed} total={stats.total} />
+      </Section>
+      <Section title="Entries by type">
+        <ProgressList
+          items={stats.nodeTypes.map((item) => ({ ...item, label: pluralType(item.key), color: NODE_TYPE_COLORS[item.key] }))}
+        />
+      </Section>
+      <Section title="Links by kind">
+        <ProgressList items={stats.linkGroups.map((item) => ({ ...item, label: LINK_GROUPS[item.key].label, color: '#38bdf8' }))} />
+      </Section>
+      {stats.families.length > 0 && (
+        <Section title="Genres & artists by family">
+          <ProgressList
+            items={stats.families.map((item) => ({ ...item, label: FAMILY_LABELS[item.key], color: FAMILY_COLORS[item.key] }))}
+          />
+        </Section>
+      )}
+      {stats.reviewedEdges > 0 && (
+        <Section title="Confidence after review" subtitle="reviewed links only">
+          <StackedBar
+            items={(['high', 'medium', 'low', 'unrated'] as const).map((level) => ({
+              key: level,
+              label: level === 'unrated' ? 'Not rated' : capitalize(level),
+              count: stats.confidence[level],
+              color: CONFIDENCE_COLORS[level],
+            }))}
+          />
+        </Section>
+      )}
+      {stats.sourceDomains.length > 0 && (
+        <Section title="Most cited in reviewed items">
+          <BarList
+            items={stats.sourceDomains.map(({ domain, count }) => ({ key: domain, label: domain, count, color: '#94a3b8' }))}
+          />
+        </Section>
+      )}
+    </div>
+  )
+}
+
+function ProgressBar({ label, reviewed, total, color = '#4ade80' }: { label: string; reviewed: number; total: number; color?: string }) {
+  return (
+    <span
+      className="block h-2 overflow-hidden rounded-full bg-slate-800/70"
+      role="progressbar"
+      aria-label={`${label}: ${reviewed} of ${total} reviewed`}
+      aria-valuemin={0}
+      aria-valuemax={total}
+      aria-valuenow={reviewed}
+    >
+      <span className="block h-full rounded-full" style={{ width: `${total ? (reviewed / total) * 100 : 0}%`, backgroundColor: color }} />
+    </span>
+  )
+}
+
+function ProgressList({ items }: { items: (ReviewProgress<string> & { label: string; color: string })[] }) {
+  return (
+    <ul className="space-y-1">
+      {items.map((item) => (
+        <li key={item.key} className="grid grid-cols-[minmax(0,10rem)_1fr_5.5rem] items-center gap-3 text-xs">
+          <span className="truncate text-slate-300" title={item.label}>{item.label}</span>
+          <ProgressBar label={item.label} reviewed={item.reviewed} total={item.total} color={item.color} />
+          <span className="text-right tabular-nums text-slate-400">
+            <span className="font-medium text-slate-300">{item.reviewed}</span>
+            <span className="text-slate-600"> / {item.total}</span>
+          </span>
+        </li>
+      ))}
+    </ul>
   )
 }
 
