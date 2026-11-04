@@ -108,6 +108,24 @@ describe('detail panel sources', () => {
     expect(markup).toContain('A representative artist.')
   })
 
+  it('shows a colored icon for related instruments', () => {
+    const data: MusicGraph = {
+      ...graph,
+      nodes: [...graph.nodes, {
+        id: 'instrument:flute', type: 'instrument', name: 'Flute',
+      }],
+      edges: [...graph.edges, {
+        id: 'jazz-flute', type: 'featured_in', from: 'genre:jazz', to: 'instrument:flute',
+      }],
+    }
+
+    const markup = renderPanel(data, 'genre:jazz')
+
+    expect(markup).toContain('Flute')
+    expect(markup).toContain('instrument-icons/flute.svg')
+    expect(markup).toContain('aria-hidden="true"')
+  })
+
   it.each([undefined, []])('omits the sources section when selected sources are %j', (sources) => {
     const data: MusicGraph = {
       ...graph,

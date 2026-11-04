@@ -1,11 +1,22 @@
+import { useEffect, useRef, useState } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
-import { describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 import { ExplorerContext } from '../ExplorerContext.ts'
 import { buildIndex } from '../graph/graph.ts'
 import { DEFAULT_HISTORY_FILTERS, type HistoryFilters } from '../graph/history.ts'
 import { createTimelineModel } from '../graph/timeline.ts'
 import type { MusicGraph } from '../graph/types.ts'
 import { History } from './History.tsx'
+
+vi.mock('react', async (importOriginal) => {
+  const react = await importOriginal<typeof import('react')>()
+  return {
+    ...react,
+    useEffect: vi.fn(),
+    useRef: vi.fn(react.useRef),
+    useState: vi.fn(react.useState),
+  }
+})
 
 const graph: MusicGraph = {
   version: 1,
@@ -55,6 +66,86 @@ describe('history view', () => {
     expect(markup).toContain('All topics')
   })
 
+  describe('history current era tracking', () => {
+    let cleanup: ReturnType<Parameters<typeof useEffect>[0]>
+
+    afterEach(() => {
+      cleanup?.()
+      cleanup = undefined
+      vi.unstubAllGlobals()
+      vi.clearAllMocks()
+    })
+
+    function setup(horizontal: boolean) {
+      vi.clearAllMocks()
+      const viewport = Object.assign(new EventTarget(), {
+        scrollLeft: 0, scrollTop: 0,
+        scrollWidth: horizontal ? 1500 : 500, clientWidth: 500,
+        scrollHeight: horizontal ? 500 : 1500, clientHeight: 500,
+        getBoundingClientRect: () => ({ left: 0, top: 0 }),
+      })
+      const eras = new Map([
+        ['before-1400', { getBoundingClientRect: () => ({
+          left: 32 - viewport.scrollLeft, top: 24 - viewport.scrollTop,
+        }) }],
+        ['1950-1999', { getBoundingClientRect: () => ({
+          left: 832 - viewport.scrollLeft, top: 824 - viewport.scrollTop,
+        }) }],
+      ])
+      let resize: ResizeObserverCallback | undefined
+      const disconnect = vi.fn()
+      vi.stubGlobal('matchMedia', () => ({ matches: horizontal }))
+      vi.stubGlobal('ResizeObserver', class {
+        constructor(callback: ResizeObserverCallback) { resize = callback }
+        observe = vi.fn()
+        disconnect = disconnect
+      })
+      const setCurrent = vi.fn()
+      vi.mocked(useRef)
+        .mockReturnValueOnce({ current: new Map() })
+        .mockReturnValueOnce({ current: eras })
+        .mockReturnValueOnce({ current: viewport })
+      vi.mocked(useState).mockReturnValueOnce([null, setCurrent])
+      renderHistory()
+      cleanup = vi.mocked(useEffect).mock.calls[0][0]()
+      return { viewport, setCurrent, disconnect, resize: () => resize?.([], {} as ResizeObserver) }
+    }
+
+    it.each([true, false])('tracks scrolling in both directions (horizontal: %s)', (horizontal) => {
+      const { viewport, setCurrent } = setup(horizontal)
+      expect(setCurrent).toHaveBeenLastCalledWith('before-1400')
+      if (horizontal) viewport.scrollLeft = 800
+      else viewport.scrollTop = 800
+      viewport.dispatchEvent(new Event('scroll'))
+      expect(setCurrent).toHaveBeenLastCalledWith('1950-1999')
+      viewport.scrollLeft = 0
+      viewport.scrollTop = 0
+      viewport.dispatchEvent(new Event('scroll'))
+      expect(setCurrent).toHaveBeenLastCalledWith('before-1400')
+    })
+
+    it('activates the final era at the scroll limit even if it cannot align to the start', () => {
+      const { viewport, setCurrent } = setup(true)
+      viewport.scrollWidth = 1100
+      viewport.scrollLeft = 600
+      viewport.dispatchEvent(new Event('scroll'))
+      expect(setCurrent).toHaveBeenLastCalledWith('1950-1999')
+    })
+
+    it('recalculates after layout changes and removes observers and listeners on unmount', () => {
+      const { viewport, setCurrent, disconnect, resize } = setup(true)
+      viewport.scrollLeft = 800
+      resize()
+      expect(setCurrent).toHaveBeenLastCalledWith('1950-1999')
+      cleanup?.()
+      cleanup = undefined
+      expect(disconnect).toHaveBeenCalledOnce()
+      setCurrent.mockClear()
+      viewport.dispatchEvent(new Event('scroll'))
+      expect(setCurrent).not.toHaveBeenCalled()
+    })
+  })
+
   it('uses a full-width scrollable timeline with a horizontal desktop layout', () => {
     const markup = renderHistory()
     expect(markup).toContain('data-history-scroll')
@@ -80,9 +171,21 @@ describe('history view', () => {
     const markup = renderHistory()
     const navigation = markup.match(/<nav\b[^>]*>[\s\S]*?<\/nav>/)?.[0]
     expect(navigation).toBeDefined()
-    expect(navigation).toContain('flex h-8 shrink-0 items-center justify-center')
+    expect(navigation).toContain('flex h-7 shrink-0 items-center justify-center')
+    expect(navigation).toContain('px-1.5')
     expect(navigation).toContain('<span>Before 1400</span>')
     expect(navigation).toContain('<span>1950–1999</span>')
+  })
+
+  it('highlights only the first available era initially, including after filtering', () => {
+    for (const filters of [DEFAULT_HISTORY_FILTERS, { category: 'media', landmarksOnly: false } as const]) {
+      const markup = renderHistory(null, filters)
+      const navigation = markup.match(/<nav\b[^>]*>[\s\S]*?<\/nav>/)?.[0]
+      expect(navigation?.match(/aria-current="true"/g)).toHaveLength(1)
+      expect(navigation).toMatch(/<button[^>]*aria-current="true"[^>]*bg-violet-500\/20[^>]*><span>/)
+      expect(navigation).toContain(filters.category === 'media'
+        ? '<span>1950–1999</span>' : '<span>Before 1400</span>')
+    }
   })
 
   it('keeps an accessible topic label and styles the selector like the importance group', () => {

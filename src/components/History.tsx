@@ -1,5 +1,5 @@
 import { ArrowUpRight, ChevronDown, Star } from 'lucide-react'
-import { useEffect, useId, useMemo, useRef } from 'react'
+import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import { useExplorer } from '../ExplorerContext.ts'
 import type { GraphIndex } from '../graph/graph.ts'
 import {
@@ -39,8 +39,53 @@ export function History() {
   const eventRefs = useRef(new Map<string, HTMLElement>())
   const eraRefs = useRef(new Map<string, HTMLElement>())
   const viewportRef = useRef<HTMLDivElement>(null)
+  const navigationRef = useRef<HTMLElement>(null)
+  const [activeEraId, setActiveEraId] = useState<string | null>(null)
+  const currentEraId = groups.find((group) => group.id === activeEraId)?.id ?? groups[0]?.id
   const categoryId = useId()
   const resultCount = groups.reduce((count, group) => count + group.events.length, 0)
+
+  useEffect(() => {
+    const viewport = viewportRef.current
+    if (!viewport || !groups.length) return
+    const updateCurrentEra = () => {
+      const horizontal = matchMedia('(min-width: 48rem)').matches
+      const bounds = viewport.getBoundingClientRect()
+      const position = horizontal ? viewport.scrollLeft : viewport.scrollTop
+      const extent = horizontal
+        ? viewport.scrollWidth - viewport.clientWidth
+        : viewport.scrollHeight - viewport.clientHeight
+      const leadingEdge = horizontal ? bounds.left + 32 : bounds.top + 24
+      let current = groups[0].id
+      for (const group of groups) {
+        const era = eraRefs.current.get(group.id)
+        if (!era) continue
+        const rect = era.getBoundingClientRect()
+        if ((horizontal ? rect.left : rect.top) <= leadingEdge + 1) current = group.id
+      }
+      if (extent > 0 && position >= extent - 1) current = groups[groups.length - 1].id
+      setActiveEraId(current)
+    }
+    updateCurrentEra()
+    viewport.addEventListener('scroll', updateCurrentEra, { passive: true })
+    const observer = new ResizeObserver(updateCurrentEra)
+    observer.observe(viewport)
+    for (const era of eraRefs.current.values()) observer.observe(era)
+    return () => {
+      viewport.removeEventListener('scroll', updateCurrentEra)
+      observer.disconnect()
+    }
+  }, [groups])
+
+  useEffect(() => {
+    const navigation = navigationRef.current
+    const button = navigation?.querySelector<HTMLElement>('[aria-current="true"]')
+    if (!navigation || !button) return
+    const bounds = navigation.getBoundingClientRect()
+    const rect = button.getBoundingClientRect()
+    if (rect.left < bounds.left) navigation.scrollLeft -= bounds.left - rect.left
+    else if (rect.right > bounds.right) navigation.scrollLeft += rect.right - bounds.right
+  }, [currentEraId])
 
   useEffect(() => {
     const viewport = viewportRef.current
@@ -99,13 +144,16 @@ export function History() {
           </label>
         </div>
         {groups.length > 0 && (
-          <nav aria-label="Jump to an era" className="-mx-1 mt-3 flex gap-1 overflow-x-auto pb-0.5 md:mt-0">
+          <nav ref={navigationRef} aria-label="Jump to an era" className="mt-2 flex w-fit max-w-full gap-0.5 overflow-x-auto rounded-lg border border-slate-800 bg-slate-900/50 p-0.5 md:mt-0">
             {groups.map((group) => (
               <button
                 key={group.id}
                 type="button"
+                aria-current={currentEraId === group.id ? 'true' : undefined}
                 onClick={() => eraRefs.current.get(group.id)?.scrollIntoView({ block: 'start', inline: 'start' })}
-                className="flex h-8 shrink-0 items-center justify-center rounded-md px-2 text-[11px] font-semibold leading-none text-slate-400 transition-colors hover:bg-slate-800 hover:text-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
+                className={`flex h-7 shrink-0 items-center justify-center rounded-md px-1.5 text-[11px] font-semibold leading-none transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-cyan-400/70 ${
+                  currentEraId === group.id ? 'bg-violet-500/20 text-violet-200' : 'text-slate-400 hover:bg-slate-800 hover:text-slate-100'
+                }`}
               >
                 <span>{group.label}</span>
               </button>

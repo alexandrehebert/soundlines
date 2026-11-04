@@ -183,10 +183,22 @@ export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
                       className="group flex min-h-11 w-full items-center justify-between gap-2 rounded-xl border border-slate-800 bg-slate-900/60 px-3 py-2 text-left transition hover:border-slate-600 hover:bg-slate-800/80"
                     >
                       <span className="flex items-center gap-2">
-                        <span
-                          className="h-2 w-2 shrink-0 rounded-full"
-                          style={{ backgroundColor: NODE_TYPE_COLORS[other.type] }}
-                        />
+                        {other.type === 'instrument' ? (
+                          <span
+                            aria-hidden="true"
+                            className="h-4 w-4 shrink-0 bg-current"
+                            style={{
+                              color: NODE_TYPE_COLORS.instrument,
+                              mask: `url("${import.meta.env.BASE_URL}instrument-icons/${encodeURIComponent(other.id.slice('instrument:'.length))}.svg") center / contain no-repeat`,
+                              WebkitMask: `url("${import.meta.env.BASE_URL}instrument-icons/${encodeURIComponent(other.id.slice('instrument:'.length))}.svg") center / contain no-repeat`,
+                            }}
+                          />
+                        ) : (
+                          <span
+                            className="h-2 w-2 shrink-0 rounded-full"
+                            style={{ backgroundColor: NODE_TYPE_COLORS[other.type] }}
+                          />
+                        )}
                         <span className="text-sm font-semibold text-slate-200 group-hover:text-white">
                           {other.name}
                         </span>
