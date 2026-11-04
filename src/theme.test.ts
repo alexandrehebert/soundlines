@@ -13,4 +13,9 @@ describe('historical date formatting', () => {
     expect(formatPeriod({ start: -3000, end: -2500 })).toBe('3000 BCE – 2500 BCE')
     expect(formatPeriod({ start: -1, end: 1 })).toBe('1 BCE – 1')
   })
+
+  it('does not invent dates for omitted or null periods', () => {
+    expect(formatPeriod(undefined)).toBeNull()
+    expect(formatPeriod(null)).toBeNull()
+  })
 })

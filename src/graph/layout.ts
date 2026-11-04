@@ -4,6 +4,7 @@ import {
   type GraphNode,
   type LaneFamily,
   type MusicGraph,
+  type Period,
 } from './types.ts'
 import { visibleEnd } from './phases.ts'
 
@@ -170,8 +171,8 @@ export function layoutFamilies(
   nodeType: 'genre' | 'artist' | 'instrument' = 'genre',
 ): FamilyLane[] {
   const nodes = graph.nodes.filter(
-    (node): node is GraphNode & { family: LaneFamily } =>
-      node.type === nodeType && node.family !== undefined && node.period !== undefined,
+    (node): node is GraphNode & { family: LaneFamily; period: Period } =>
+      node.type === nodeType && node.family !== undefined && node.period != null,
   )
 
   const lanes: FamilyLane[] = []
@@ -179,14 +180,14 @@ export function layoutFamilies(
   for (const family of order) {
     const members = nodes
       .filter((node) => node.family === family)
-      .sort((a, b) => a.period!.start - b.period!.start || a.name.localeCompare(b.name))
+      .sort((a, b) => a.period.start - b.period.start || a.name.localeCompare(b.name))
     if (members.length === 0) continue
 
     const rowEnds: number[] = []
     const bars: TimelineBar[] = []
     for (const node of members) {
-      const start = node.period!.start
-      const end = node.period!.end ?? now
+      const start = node.period.start
+      const end = node.period.end ?? now
       // A hidden trailing niche period doesn't occupy the row; +2 covers the fade-out.
       const lastVisibleYear = visibleEnd(node, now)
       const occupiedUntil = lastVisibleYear === undefined ? end : Math.min(lastVisibleYear + 2, end)
@@ -197,7 +198,7 @@ export function layoutFamilies(
       } else {
         rowEnds[row] = occupiedUntil
       }
-      bars.push({ node, family, row, start, end, ongoing: node.period!.end == null })
+      bars.push({ node, family, row, start, end, ongoing: node.period.end == null })
     }
     lanes.push({ family, rowCount: rowEnds.length, bars })
   }

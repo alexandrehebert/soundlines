@@ -2,24 +2,30 @@
 
 Graph ID `instrument:euphonium`
 
-**Review status** · Construction and band use corroborated; origin moderately supported
+**Review status** · Reviewed · conventional date and competing attribution checked
 
 **Reviewed** · 2026-11-04
 
 ## Sources checked
 
-- [Yamaha Music London, original citation](https://www.yamahamusiclondon.com/Brass/Euphoniums/) — Page read. Lists three/four-valve models and band uses; product page supplies no historical origin evidence. Its suggestion of frequent orchestral use is not adopted.
-- [Yamaha, baritone versus euphonium, original citation](https://hub.yamaha.com/winds/brass/whats-the-difference-between-baritone-horn-and-euphonium/) — Article read. Supports B-flat pitch, valves and comparatively conical euphonium bore. Its broad claims about orchestral prevalence and definition of transposition are not reliable enough to reproduce.
-- [Jeffrey S. Cottrell, UNT dissertation (2004)](https://digital.library.unt.edu/ark:/67531/metadc4529/m2/1/high_res_d/dissertation.pdf) — PDF retrieved; abstract and opening historical discussion examined. Gives 1843 introduction, longstanding military/brass/concert-band use, and occasional orchestral use. Supports prioritizing bands over Yamaha’s orchestral generalization; not an original patent.
-- [Hartenberger World Musical Instrument Collection](https://wmic.net/euphonium-bb-john-stratton/) — Stratton B-flat euphonium record read: three pistons, object circa 1895–1912, comparatively conical bore. Historical summary credits Sommer in 1843; primary evidence here is the later object, not the invention claim.
-- [Grinnell euphonium record](https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1255) — Direct fetch returned 403; excerpt not treated as full review.
-- [Leipzig museum via MIMO](https://mimo-international.com/MIMO/doc/IFD/OAI_ULEI_M0001595/bass-euphonium) — Direct retrieval timed out; excerpt not treated as full review.
-- [RAE historical dictionary](https://temporalraeweb.rae.es/dhle/euphonion) — Search identifies a possible 1843 periodical citation; direct retrieval failed. Original notice not verified.
+- [UNT Digital Library: Historical Survey of the Euphonium](https://digital.library.unt.edu/ark:/67531/metadc4529/) — Dissertation identifies 1843 as invention and documents long-standing military, brass and civilian concert band roles.
+- [Watkins, An Investigation of Euphonium Valve System Design](https://digital.library.unt.edu/ark:/67531/metadc1703405/m2/1/high_res_d/WATKINS-DISSERTATION-2020.pdf) — Academic dissertation attributes creation to Ferdinand Sommer in 1843.
+- [ICOM-CIMCIM: A Breath of Modernity](https://cimcim.mini.icom.museum/wp-content/uploads/sites/7/2021/08/A-Breath-of-Modernity-small-web.pdf) — Museum-community publication instead dates a Sommer euphonium to 1838, illustrating competing chronology.
+- [University of Georgia DMA thesis: Filling the Void](https://openscholar.uga.edu/record/14453/files/self_travis_c_201005_dma.pdf) — Places Sommer and Bock’s Sommerophone/Euphonion in 1843, while relating it to earlier valve-bass developments.
 
 ## Assessment
 
-Replace circa 1840 with moderately supported circa 1843, retaining approximate precision. Avoid an exclusive-inventor or patent-year claim. Clarify bore distinction and principal band context; occasional orchestral use is supported without asserting a specific late-Romantic work. Three-valve euphoniums exist, so valve count alone cannot distinguish them from baritones.
+Kept c.1843 as the best-supported conventional anchor but lowered the specificity of the origin claim. Cross-checking exposed a competing 1838 date and related precursors, so the description and phase now say this chronology is contested.
 
 ## Remaining uncertainty
 
-Verify the 1843 newspaper notice and competing Sommer/Bock patent accounts before claiming exact origin. Full dissertation chapters beyond the opening discussion were not reviewed. Inaccessible collection/dictionary sources remain follow-ups; relationships deferred.
+The original object/patent chronology behind 1838 vs 1843 needs specialist archival resolution; confidence should not exceed medium.
+
+## Retained phase annotations
+
+These former annotations are preserved for review context. They may be provisional or unsupported and do not assert a continuous prominence curve; the former intensity values were editorial.
+
+**Previous phase summary.** Circa 1843 is supported by historical scholarship and a collection account, but original invention or patent documents have not been checked. Band use is better supported than claims of routine orchestral membership. No popularity peak or precisely dated adoption transition is inferred.
+
+- 1843: `emerging`; confidence: `medium` — Conventional anchor for Sommer’s Euphonion/Sommerophone; related designs and an alternative 1838 attribution mean this is not an uncontested invention date.
+  - Former phase sources: <https://digital.library.unt.edu/ark:/67531/metadc4529/>, <https://digital.library.unt.edu/ark:/67531/metadc1703405/m2/1/high_res_d/WATKINS-DISSERTATION-2020.pdf>, <https://cimcim.mini.icom.museum/wp-content/uploads/sites/7/2021/08/A-Breath-of-Modernity-small-web.pdf>

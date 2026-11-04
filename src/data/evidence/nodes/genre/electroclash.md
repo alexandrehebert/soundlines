@@ -2,20 +2,20 @@
 
 Graph ID `genre:electroclash`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: retained late-1990s emergence, removed arbitrary 2006 endpoint and unsupported 2004 niche stage; source set now includes academic research.
 
-**Graph period** · 1998–2006 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A turn-of-the-millennium club scene combining electro, synth-pop/new wave references, punk attitude and theatrical performance; also a press and nightlife label.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/miss-kittin-mn0000497290>), [2](<https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1>)
+- [Concordia University dissertation: Cross-dressing to Backbeats](https://spectrum.library.concordia.ca/id/eprint/977861/) — Research-creation dissertation identifies electroclash emergence as a dominant dance-music form in the late 1990s and early 2000s.
+- [Cambridge University Press: Genre Classification in Electronic Dance Music Culture](https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1) — Scholarly chapter situates genre labels as culturally contested and context-dependent.
+- [University of Michigan Press: Performing Glam Rock](https://press.umich.edu/Books/P/Performing-Glam-Rock2) — Academic monograph on theatrical performance and visual style, useful context for electroclash’s retro-pop/theatrical references.
 
-**Graph phase rationale** · Approximate club, press and fashion visibility: the New York/European electroclash wave reached broad profile in the early 2000s before the label lost currency. Artists and related electro-pop styles persisted.
+## Assessment
 
-## Phases
+Academic research supports late-1990s/early-2000s scene emergence, but the former exact 2006 end and “niche” claim were not established. Genre labels and scenes are contingent, so the chart keeps an open end and only a broad emergence-to-established transition.
 
-- 1998 emerging · unrated · No phase note · None recorded
-- 2001 golden-age · unrated · No phase note · None recorded
-- 2004 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The starting year 1998 is a provisional graph marker within the scholarly late-1990s range; scene histories often begin from different cities and events.

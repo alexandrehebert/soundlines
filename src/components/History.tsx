@@ -3,12 +3,14 @@ import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import { useExplorer } from '../ExplorerContext.ts'
 import type { GraphIndex } from '../graph/graph.ts'
 import {
+  createHistoryModel,
   formatEventPeriod,
   groupHistoryEvents,
-  historyEvents,
+  matchesHistoryFilters,
 } from '../graph/history.ts'
 import { EVENT_CATEGORY_LABELS, type EventCategory, type GraphNode } from '../graph/types.ts'
 import { NODE_TYPE_COLORS } from '../theme.ts'
+import { UndatedEntries } from './UndatedEntries.tsx'
 
 const categories = Object.entries(EVENT_CATEGORY_LABELS) as [EventCategory, string][]
 
@@ -29,7 +31,12 @@ function eventConnections(index: GraphIndex, id: string): GraphNode[] {
 
 export function History() {
   const { index, selectedId, selectNode, historyFilters: filters, changeHistoryFilters } = useExplorer()
-  const events = useMemo(() => historyEvents(index.graph), [index.graph])
+  const history = useMemo(() => createHistoryModel(index.graph), [index.graph])
+  const events = history.dated
+  const undated = useMemo(
+    () => history.undated.filter((event) => matchesHistoryFilters(event, filters)),
+    [history.undated, filters],
+  )
   const selectedEvent = useMemo(() => events.find((event) => event.id === selectedId), [events, selectedId])
   const groups = useMemo(() => groupHistoryEvents(events, filters), [events, filters])
   const eventSides = useMemo(() => new Map(
@@ -43,7 +50,7 @@ export function History() {
   const [activeEraId, setActiveEraId] = useState<string | null>(null)
   const currentEraId = groups.find((group) => group.id === activeEraId)?.id ?? groups[0]?.id
   const categoryId = useId()
-  const resultCount = groups.reduce((count, group) => count + group.events.length, 0)
+  const resultCount = groups.reduce((count, group) => count + group.events.length, undated.length)
 
   useEffect(() => {
     const viewport = viewportRef.current
@@ -161,10 +168,13 @@ export function History() {
           </nav>
         )}
         <p aria-live="polite" className="mt-2 text-xs leading-relaxed text-slate-500 md:col-span-2">
-          Showing {resultCount} {resultCount === 1 ? 'event' : 'events'} by start year · dates may be approximate,
+          Showing {resultCount} {resultCount === 1 ? 'event' : 'events'}
+          {undated.length ? ` (${undated.length} undated; dated events by start year)` : ' by start year'} · dates may be approximate,
           landmarks are editorial.
         </p>
       </div>
+
+      <UndatedEntries label="events" nodes={undated} selectedId={selectedId} onSelect={selectNode} />
 
       <div
         ref={viewportRef}
@@ -175,14 +185,18 @@ export function History() {
         <div className="history-track px-5 pb-16 pt-6 sm:px-8 md:flex md:w-max md:min-w-full md:pb-6">
           {groups.length === 0 ? (
             <div role="status" className="rounded-2xl border border-slate-800 bg-slate-900/50 px-5 py-8 text-center">
-              <p className="text-sm text-slate-300">No events match these filters.</p>
-              <button
-                type="button"
-                onClick={() => changeHistoryFilters({ category: 'all', landmarksOnly: false })}
-                className="mt-4 rounded-full border border-slate-700 px-4 py-2 text-xs font-semibold text-slate-200 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
-              >
-                Clear filters
-              </button>
+              <p className="text-sm text-slate-300">
+                {undated.length ? 'No dated events match these filters.' : 'No events match these filters.'}
+              </p>
+              {!undated.length && (
+                <button
+                  type="button"
+                  onClick={() => changeHistoryFilters({ category: 'all', landmarksOnly: false })}
+                  className="mt-4 rounded-full border border-slate-700 px-4 py-2 text-xs font-semibold text-slate-200 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
+                >
+                  Clear filters
+                </button>
+              )}
             </div>
           ) : groups.map((group) => (
             <section

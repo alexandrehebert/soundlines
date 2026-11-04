@@ -2,18 +2,19 @@
 
 Graph ID `genre:gamelan`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: UNESCO confirms documented evidence at eighth-century Borobudur; corrected entry to label this as archaeological attestation, not tradition origin, and removed misleading “established” lifecycle shading.
 
-**Graph period** · 700 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · An umbrella term for Indonesian ensemble traditions, including distinct Javanese and Balinese repertories, instruments and tuning systems; it does not describe one uniform style.
+## Sources checked
 
-**Graph citations** · [1](<https://ich.unesco.org/en/RL/gamelan-01607>), [2](<https://www.allmusic.com/style/gamelan-ma0000002610>)
+- [UNESCO Intangible Cultural Heritage: Gamelan](https://ich.unesco.org/en/RL/gamelan-01607) — UNESCO describes gamelan as a broad Indonesian ensemble tradition and cites archaeological depictions at eighth-century Borobudur.
+- [UNESCO nomination file](https://ich.unesco.org/doc/src/47514.pdf) — Nomination form repeats the eighth-century material evidence; it documents attestation, not invention.
 
-**Graph phase rationale** · A single continuing phase is used because this broad, long-running tradition does not have a defensible shared peak cycle in the current graph sources. Shading is editorial, not a measured ranking; regional histories may require separate phases.
+## Assessment
 
-## Phases
+The graph’s c.700 date can be retained only as a rounded marker for surviving/iconographic evidence, not the origin of gamelan. The “established” phase starting at 700 misleadingly implies a dated development stage; removed it. Description appropriately distinguishes regional traditions.
 
-- 700 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Gamelan has a much older and regionally diverse history than this evidence horizon; no single origin year can be defended.

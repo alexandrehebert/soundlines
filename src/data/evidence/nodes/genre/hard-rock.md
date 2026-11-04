@@ -2,20 +2,20 @@
 
 Graph ID `genre:hard-rock`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · 1960s roots confirmed; false endpoint and lifecycle removed
 
-**Graph period** · 1965–1980 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Heavy guitar riffs, forceful drums, and powerful vocals grew out of blues and garage rock into a durable arena and club sound.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Hard_rock>)
+- [Cambridge University Press: Popular Music Genres](https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing) — Scholarly overview locates early hard rock / metal manifestations in mid- to late-1960s work by Cream, Hendrix, Blue Cheer, Steppenwolf and others.
+- [Oxford Academic: Blues Transformations in the Music of Cream](https://academic.oup.com/book/49450/chapter-abstract/422323317) — Musicological account traces Cream’s blues transformation and contribution to the transition toward heavier rock.
+- [Routledge: Black Sabbath and the Rise of Heavy Metal Music](https://www.routledge.com/Black-Sabbath-and-the-Rise-of-Heavy-Metal/Cope/p/book/9781138254138) — Academic book examines late-1960s/early-1970s hard-rock and heavy-metal development.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Removed Wikipedia-only citation and arbitrary 1980 end. Academic sources support mid- to late-1960s roots and early-1970s consolidation, but not the later niche boundary.
 
-- 1965 emerging · unrated · No phase note · None recorded
-- 1971 golden-age · unrated · No phase note · None recorded
-- 1978 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Hard rock overlaps with blues rock and heavy metal; classifications of early bands differ across reference works.

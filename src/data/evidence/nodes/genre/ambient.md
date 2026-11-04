@@ -2,20 +2,16 @@
 
 Graph ID `genre:ambient`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · coined-term date corrected; lineage expanded
 
-**Graph period** · 1975–1995 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Electronic and electroacoustic music foregrounding atmosphere, timbre and space, often reducing or removing a regular beat. Its histories include several strands and are not a single linear descent.
+## Sources checked
 
-**Graph citations** · [1](<https://academic.oup.com/book/44623/chapter-abstract/378621525>), [2](<https://www.allmusic.com/genre/ambient-ma0000002424>)
+- [Victor Szabo, Oxford University Press, Turn On, Tune In, Drift Off](https://academic.oup.com/book/44623) — Scholarly monograph situates ambient as popular genre with roots in 1960s–century-end psychedelic countercultures and diverse audio practices.
+- [Victor Szabo, Cambridge, Unsettling Brian Eno’s Music for Airports](https://www.cambridge.org/core/journals/twentieth-century-music/article/abs/unsettling-brian-enos-music-for-airports/376877E6D34C3CBFFF76B552ADD653A6) — Peer-reviewed article identifies Eno’s 1978 album liner notes as a defining ambient formulation; distinguishes reception from simple background-music usage.
+- [RILM Music Encyclopedias, Ambient Sound](https://rme.rilm.org/articles/ers00094/1.0/ers00094) — Music encyclopedia dates Eno’s term to a 1978 essay and notes preceding Discreet Music.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
-
-- 1975 emerging · unrated · No phase note · None recorded
-- 1983 golden-age · unrated · No phase note · None recorded
-- 1993 niche · unrated · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Original period 1975 and finite end 1995 understated earlier antecedents and wrongly suggested the genre ended. Sources distinguish broad practices from Eno’s naming; phases now avoid unsupported popularity peak and demise.

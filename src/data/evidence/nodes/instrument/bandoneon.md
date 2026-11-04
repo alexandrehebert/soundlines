@@ -2,9 +2,21 @@
 
 Graph ID `instrument:bandoneon`
 
-**Review status** · Instrument history and tango association checked
+**Review status** · Reviewed · 2026-11-04
 
-## Evidence review
+**Reviewed** · 2026-11-04
 
-- The Folkways notes distinguish generic early free-reed instruments from the specific design named Bandonion after 1855. That gives the graph a circa-1855 anchor, with medium confidence. The notes caution that historical instrument names were inconsistent. [Folkways notes](https://folkways-media.si.edu/docs/folkways/artwork/SFW40431.pdf)
-- The Smithsonian catalogs a bandoneón made in 1870 and describes early twentieth-century adoption by Argentine tango bands. The strong instrument–genre association supports high confidence for the edge. Circa 1900 is a medium-confidence adoption marker. The sources give no basis for the previous 1880 golden-age and 1930 transition markers. [Smithsonian object record](https://music.si.edu/object-day/bandoneon)
+## Sources checked
+
+- [¡Che Bandoneón! — Prussian Cultural Heritage Foundation, State Institute for Music Research](https://www.simpk.de/museum/sonderausstellungen/sonderausstellungen-und-projekte/che-bandoneon.html) — National music-instrument museum traces development from German concertinas around mid-century and probable arrival in Argentina around 1870.
+- [Bandoneon — Smithsonian National Museum of American History](https://music.si.edu/object-day/bandoneon) — Smithsonian says Heinrich Band developed/invented the concertina type and documents its adoption as a mainstay in Argentine tango; object itself dates to 1870.
+- [Diffusion and Distribution of the Bandoneon — Smithsonian Folkways](https://folkways-media.si.edu/docs/folkways/artwork/SFW40431.pdf) — Folkways liner essay traces German instrument naming and diffusion; PDF exceeded direct retrieval limits, checked via indexed excerpt.
+- [Bandoneones del Uruguay — Ministry of Education and Culture of Uruguay](https://www.gub.uy/ministerio-educacion-cultura/sites/ministerio-educacion-cultura/files/documentos/publicaciones/PublicacionBandoneones%20DIGITAL--2.76%20%281%29.pdf) — National cultural publication offers a Uruguay-focused historical account; corroborates a mid-nineteenth-century development window.
+
+## Assessment
+
+The inherited c.1855 year was too exact for a debated history. A German museum places development around mid-century and probable Río de la Plata arrival around 1870, while Smithsonian identifies early-twentieth-century tango adoption. The 1850s decade is a safer origin window; the 1900 phase is explicitly regional.
+
+## Remaining uncertainty
+
+Sources differ on the exact maker, design date and first use of “Bandonion”; the German design lineage predates its eventual tango association.

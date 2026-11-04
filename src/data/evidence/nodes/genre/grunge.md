@@ -2,21 +2,33 @@
 
 Graph ID `genre:grunge`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · local scene and mainstream breakthrough separated
 
-**Graph period** · 1985 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A Pacific Northwest scene and style whose bands drew on punk, metal, and other rock traditions. Sub Pop’s local releases and Nirvana’s 1991 “Nevermind” helped bring some Seattle-area music to international mainstream attention; grunge was never a single sound or the whole region’s music.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Grunge>), [2](<https://catalog.rockhall.com/rrhof-ais/Details/archive/110000221>), [3](<https://rockhall.com/inductees/nirvana/>), [4](<https://www.rockhall.com/wp-content/uploads/2024/03/Nirvana_2014.pdf>)
+- [Christine Feldman-Barrett, Journal of Popular Music Studies: Olympia and Bellingham scenes](https://journals.sagepub.com/doi/10.1177/27538702241299876) — Recent peer-reviewed study emphasizes scene chronology and warns cultural boundaries are blurry.
+- [HistoryLink: Rock Music—Seattle](https://www.historylink.org/file/2374) — Local history documents Seattle labels and the press-mediated “grunge” label; notes Nevermind became a worldwide hit in 1991–92.
+- [Open University: Researching Nirvana—Whatever, Nevermind](https://www.open.edu/openlearn/history-the-arts/culture/music/researching-nirvana-whatever-nevermind) — Explains the 1992 chart breakthrough and commercialization of grunge.
+- [Sub Pop Records history](https://www.subpop.com/artists/sub_pop) — Label account confirms Nevermind left Sub Pop for a major label and its rapid sales; source has label perspective.
+- [The New Yorker: Nevermind appreciation](https://www.newyorker.com/culture/touchstones/an-appreciation-of-nirvanas-1991-album-nevermind) — Confirms chart context and wider effect on labels and alternative rock.
 
-**Graph phase rationale** · Approximate U.S. and international mainstream visibility: a local Pacific Northwest scene preceded the early-1990s breakthrough, which “Nevermind” helped accelerate; the scene and its artists continued in varied directions after the commercial peak. These are not all-artist or global popularity dates.
+## Assessment
 
-## Phases
+Kept c.1985 only as a low-resolution local-scene anchor and 1991/92 as mainstream breakthrough. Removed unsupported later lifecycle phases and retained open period.
 
-- 1985 emerging · unrated · No phase note · None recorded
-- 1991 golden-age · unrated · No phase note · None recorded
-- 1994 established · unrated · No phase note · None recorded
-- 1998 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.
+“Grunge” was partly a media and marketing category applied to distinct bands; the boundary between scene and style remains contested.
+
+## Retained phase annotations
+
+These former annotations are preserved for review context. They may be provisional or unsupported and do not assert a continuous prominence curve; the former intensity values were editorial.
+
+**Previous phase summary.** Approximate U.S. and international mainstream visibility: a local Pacific Northwest scene preceded the early-1990s breakthrough, which “Nevermind” helped accelerate; the scene and its artists continued in varied directions after the commercial peak. These are not all-artist or global popularity dates.
+
+- 1985: `emerging`; confidence: `medium` — Approximate Seattle-area scene formation and Sub Pop’s development; not a claim that grunge began in one year or represented all regional music.
+  - Former phase sources: <https://journals.sagepub.com/doi/10.1177/27538702241299876>, <https://www.historylink.org/file/2374>
+- 1991: `golden-age`; confidence: `medium` — Mainstream breakthrough marker: Nevermind reached the US album-chart top in 1992 and major labels pursued Seattle-associated acts. This is media/commercial visibility, not an end to the scene.
+  - Former phase sources: <https://www.open.edu/openlearn/history-the-arts/culture/music/researching-nirvana-whatever-nevermind>, <https://www.subpop.com/artists/sub_pop>, <https://www.newyorker.com/culture/touchstones/an-appreciation-of-nirvanas-1991-album-nevermind>

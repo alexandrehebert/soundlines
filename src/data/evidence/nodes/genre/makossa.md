@@ -2,20 +2,21 @@
 
 Graph ID `genre:makossa`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Douala origins and international milestone cross-checked
 
-**Graph period** · 1950 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A Cameroonian dance-music style associated with Douala, whose modern sound developed around prominent bass, guitars and horns. Manu Dibango’s 1972 recording “Soul Makossa” carried one jazz- and soul-inflected interpretation to international audiences.
+## Sources checked
 
-**Graph citations** · [1](<https://www.britannica.com/biography/Manu-Dibango>), [2](<https://en.wikipedia.org/wiki/Makossa>)
+- [Historical Dictionary of the Republic of Cameroon](https://shcas.shnu.edu.cn/_upload/article/files/0e/08/4b0564f84fd9b9a65bde70ec5e4a/67ccaabe-3afc-4fb2-9df9-b7b27b0ebc0a.pdf) — Academic reference places Makossa’s emergence in 1950s Douala and names influences including kossa, jazz, highlife, Latin music and rumba.
+- [Transatlantic Cultures: Makossa](https://transatlantic-cultures.org/en/pdf/record/makossa) — Scholarly cultural history situates Makossa in Douala in the 1950s and describes 1970s transatlantic reach.
+- [SAGE International Encyclopedia of Music and Culture: Cameroon](https://sk.sagepub.com/ency/edvol/embed/the-sage-international-encyclopedia-of-music-and-culture/chpt/cameroon-modern-contemporary-performance-practice) — Reference source documents Makossa’s national prominence after independence and Soul Makossa’s international impact.
+- [Journal of African Cultural Studies: Manu Dibango, 1933–2020](https://doi.org/10.1080/19401159.2020.1852766) — Peer-reviewed article identifies the 1972 Soul Makossa recording and its Makossa rhythm/soul blend.
 
-**Graph phase rationale** · Confidence: medium. The 1970s marker reflects its international visibility, including Manu Dibango, while later phases represent continued local and diasporic practice. Editorial shading, not a measured ranking.
+## Assessment
 
-## Phases
+The 1950s start is corroborated by academic and historical references. Reframed 1970 as the specific 1972 international breakthrough and removed an unsupported 1980s phase.
 
-- 1950 emerging · medium · No phase note · None recorded
-- 1970 golden-age · medium · No phase note · None recorded
-- 1980 established · medium · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Makossa encompasses changing Cameroonian musical practice; single-track international success should not stand in for local popularity.

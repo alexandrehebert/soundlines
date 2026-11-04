@@ -2,20 +2,20 @@
 
 Graph ID `genre:amapiano`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · contested origins retained; phases corrected
 
-**Graph period** · 2010 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A South African dance style that emerged in the 2010s, built around soft piano motifs, deep log-drum bass and a relaxed house pulse. The sound developed through local DJ and producer communities before reaching a global audience.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/kabza-de-small-mn0003886957>), [2](<https://www.newyorker.com/culture/culture-desk/how-far-can-amapiano-go>), [3](<https://djmag.com/features/these-are-most-exciting-amapiano-producers-right-now>)
+- [Eaby-Lomas, Journal of the International Library of African Music](https://journal.ru.ac.za/index.php/africanmusic/article/download/2529/1388/1778) — Peer-reviewed article says around 2012, Black South African townships, with multiple contradictory origins and contributors; describes local and global growth.
+- [University of Cape Town, Kwaito’s Legacy of Aestheticizing Freedom](https://open.uct.ac.za/handle/11427/39331) — 2023 College of Music thesis dates township emergence around 2012 and contextualizes local cultural function.
+- [Resident Advisor, Born from CDs and WhatsApp Threads](https://ra.co/features/3968) — Scene reporting places emergence around 2012 and explores community music sharing.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed.
+## Assessment
 
-## Phases
+The earlier 2015 golden-age and 2018 established labels were unsupported and too narrow; origin narratives are contested. Chronology revised to cautious 2010s emergence and 2020s global visibility.
 
-- 2010 emerging · unrated · No phase note · None recorded
-- 2015 golden-age · unrated · No phase note · None recorded
-- 2018 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Musical description is supported in the article body; source itself cautions against definitive origin account.

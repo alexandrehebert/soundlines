@@ -2,14 +2,21 @@
 
 Graph ID `genre:baul-songs`
 
-**Review status** · Transmission corroborated; origin unresolved, unsupported phase removed
+**Review status** · Reviewed · 2026-11-04
+
+**Reviewed** · 2026-11-04
 
 ## Sources checked
 
-- [UNESCO](https://ich.unesco.org/en/RL/baul-songs-00107) — Search-index text read; direct access returned human verification. Traces devotional songs in Bengali literature to the fifteenth century. This challenges an unqualified 1800 emergence date, but does not date every modern community or repertoire.
-- [Parvathy Baul](https://www.parvathybaul.com/about) — Practitioner’s own page read; names her teachers and describes continuing spiritual and musical transmission in Bengal. Primary evidence for her lineage, not independent verification of the tradition’s ancient origins.
-- [Culture in Crisis / Endangered Archives Programme project](https://cultureincrisis.org/projects/songs-of-the-old-madmen-recovering-baul-songs-from-the-note-books-of-19th-and-20th-century-bengali-saint-composers) — Project description read: nineteenth-/twentieth-century composers, thirteen digitized handwritten notebooks, and transmission across India and Bangladesh. The linked [British Library project](https://eap.bl.uk/project/EAP1247) returned no substantive text; individual notebooks were not examined.
+- [Baul songs — UNESCO Intangible Cultural Heritage](https://ich.unesco.org/en/RL/baul-songs-00107) — Official heritage summary describes devotional song, music and dance; traces songs in Bengali literature to the fifteenth century.
+- [From Oral Tradition to Digital Archive — Journal of Hindu Studies](https://academic.oup.com/jhs/article-abstract/16/3/344/7424424) — Peer-reviewed study of Baul song notebooks, oral histories and issues of representation; cautions against flattening practitioners into one image.
+- [EAP1247/4: Mahadeb Das Baul Collection — British Library](https://searcharchives.bl.uk/catalog/032-003943569) — Primary archive catalogue lists family-lineage notebooks of songs; supports documentary evidence, not a start date for the tradition.
+- [Songs of the Old Madmen — Asia Research Institute, National University of Singapore](https://ari.nus.edu.sg/grant/songs-of-the-old-madmen-recovering-baul-songs-from-the-notebooks-of-the-19th-and-20th-century-bengalis-saint-composers/) — Project record describes digitization of nineteenth- and twentieth-century Baul song notebooks.
 
-## Decision
+## Assessment
 
-Remove unsupported 1950 transition and the assertion of emergence in 1800. Keep circa 1800 only as a low-confidence nineteenth-century documentary-window anchor, explicitly identified in the description; earlier antecedents remain relevant. One established phase expresses continued practice without manufacturing a peak. A more precise origin requires further historical scholarship.
+The previous c.1800 period and low-confidence established phase made the archive window look like the tradition’s start. UNESCO’s fifteenth-century literary trace supports a much earlier lower bound, while British Library materials confirm later written evidence. Timeline now uses c.1400 as an approximate documentary horizon and removes a popularity phase.
+
+## Remaining uncertainty
+
+The fifteenth-century literary trace is not proof that Baul songs began then; practices and authorship are diverse and oral transmission complicates dating.

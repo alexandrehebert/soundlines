@@ -32,8 +32,10 @@ const graph: MusicGraph = {
   ],
 }
 
-function renderHistory(selectedId: string | null = null, filters: HistoryFilters = DEFAULT_HISTORY_FILTERS) {
-  const index = buildIndex(graph)
+function renderHistory(
+  selectedId: string | null = null, filters: HistoryFilters = DEFAULT_HISTORY_FILTERS, data: MusicGraph = graph,
+) {
+  const index = buildIndex(data)
   return renderToStaticMarkup(
     <ExplorerContext.Provider value={{
       index, model: createTimelineModel(index, 'genre'), view: 'history',
@@ -48,6 +50,24 @@ function renderHistory(selectedId: string | null = null, filters: HistoryFilters
 }
 
 describe('history view', () => {
+  it('shows undated events separately and applies the same filters and selection', () => {
+    const data: MusicGraph = {
+      ...graph,
+      nodes: [
+        ...graph.nodes,
+        { id: 'event:undated', type: 'event', name: 'Undated event', category: 'society', significance: 'landmark' },
+        { id: 'event:other', type: 'event', name: 'Other undated', category: 'media', period: null },
+      ],
+    }
+    const markup = renderHistory('event:undated', { category: 'society', landmarksOnly: true }, data)
+    expect(markup).toContain('Showing 1 event (1 undated; dated events by start year)')
+    expect(markup).toContain('aria-label="Undated events"')
+    expect(markup).toMatch(/data-undated-node="event:undated" aria-pressed="true"/)
+    expect(markup).not.toContain('data-undated-node="event:other"')
+    expect(markup).toContain('No dated events match these filters.')
+    expect(markup).not.toContain('No events match these filters.')
+  })
+
   it('renders events in chronological eras with dates, significance, and connections', () => {
     const markup = renderHistory()
     expect(markup).toContain('aria-label="Music history timeline"')

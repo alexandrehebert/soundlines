@@ -2,18 +2,21 @@
 
 Graph ID `genre:electro`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · 2026-11-04
 
-**Graph period** · 1982–1990 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · An electronic dance style shaped by electro-funk and hip-hop, using drum machines, synthesized bass, and sometimes vocoders or other processed voices. “Planet Rock” was a landmark recording; Detroit groups such as Cybotron developed related but distinct local approaches.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Electro_(music)>), [2](<https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/african-americans-on-the-recording-registry/>), [3](<https://en.wikipedia.org/wiki/Detroit_techno>)
+- [Afrika Bambaataa collection record — Smithsonian Anacostia Community Museum Archives](https://www.si.edu/object/archives/components/sova-acma-06-103-ref56) — Museum archival description calls 1982 “Planet Rock” a progenitor of electro.
+- [Smithsonian Anthology of Hip-Hop and Rap — Smithsonian Folkways](https://folkways.si.edu/smithsonian-anthology-of-hip-hop-and-rap-intl) — Curated Smithsonian anthology includes “Planet Rock” in its historical hip-hop collection; corroborates its landmark status, not a genre end date.
+- [Life and Death on the New York Dance Floor, 1980–1983 — Smithsonian Libraries](https://www.si.edu/object/life-and-death-new-york-dance-floor-1980-1983-tim-lawrence:siris_sil_1075446) — Library catalogue records Tim Lawrence’s scholarly history and a chapter on the Planet Rock groove and early-1980s New York dance culture.
+- [Planet Rock — Museum of Pop Culture](https://mopop.emuseum.com/objects/63357/planet-rock) — Collection record dates the single to April 1982 and describes its use of synthesizers and TR-808; item page blocks direct retrieval.
 
-**Graph phase rationale** · Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review.
+## Assessment
 
-## Phases
+The graph’s finite 1982–1990 period confused an early landmark window with the life of the style, and Wikipedia supplied the main chronology. Museum and scholarly collection records support 1982 as a key moment. Removed the end date and popularity phase.
 
-- 1982 golden-age · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.
+The sources substantiate a landmark early recording, not a precise first electro recording or uniform global adoption date.

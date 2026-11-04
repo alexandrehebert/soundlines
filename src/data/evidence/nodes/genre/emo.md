@@ -2,20 +2,21 @@
 
 Graph ID `genre:emo`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · 2026-11-04
 
-**Graph period** · 1985–2005 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A family of rock styles originating in 1980s Washington, DC hardcore and expanding through 1990s indie and 2000s popular rock; meanings shifted substantially.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/emo-ma0000004447>), [2](<https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing>)
+- [The Transformation of Hardcore: DC Posthardcore, after 1983 — Oxford Scholarship Online](https://academic.oup.com/illinois-scholarship-online/book/42485/chapter-abstract/356766954) — Scholarly chapter documents Rites of Spring, Embrace and related changes in DC hardcore, including emotional vocals/lyrics and musical shifts after 1983.
+- [Emo — University of Iowa Press](https://uipress.uiowa.edu/books/emo) — Academic press describes emo as both a genre and youth scene and identifies early-2000s popular-music visibility.
+- [When Emo Conquered the Mainstream — The New Yorker](https://www.newyorker.com/books/page-turner/when-emo-conquered-the-mainstream) — Historical review distinguishes 1980s hardcore origins from the 1999–2008 mainstream explosion and notes that many musicians rejected the label.
+- [Emo — Andrew Mall, SAGE Knowledge](https://sk.sagepub.com/ency/edvol/the-sage-encyclopedia-of-music-and-culture/chpt/emo) — Music scholar’s encyclopedia entry contextualizes the early-2000s mainstream phase and youth-scene dimensions.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+The existing 1985 starting point is a reasonable approximate marker for the DC lineage, but a 2005 end date wrongly treats a changing genre family as finished. Sources support a separate early-2000s mainstream wave; no evidence supports an exact 1993 popularity peak or 2003 decline into niche.
 
-- 1985 emerging · unrated · No phase note · None recorded
-- 1993 golden-age · unrated · No phase note · None recorded
-- 2003 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+“Emo” is a contested label applied to different waves and sounds; its 1980s lineage and early-2000s market phase should not be collapsed into a single stable genre.

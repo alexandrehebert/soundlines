@@ -2,7 +2,7 @@ import { X } from 'lucide-react'
 import { useExplorer } from '../ExplorerContext.ts'
 import { groupedRelations } from '../graph/graph.ts'
 import { formatEventPeriod } from '../graph/history.ts'
-import { timelineFamily } from '../graph/timeline.ts'
+import { isTimelineView, timelineFamily } from '../graph/timeline.ts'
 import {
   EDGE_TYPE_INVERSE_LABELS,
   EDGE_TYPE_LABELS,
@@ -99,7 +99,11 @@ export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
             )}
           </div>
           <h2 className="text-xl font-bold tracking-tight text-white">{node.name}</h2>
-          {period && <div className="mt-1 text-sm font-medium text-slate-400">{period}</div>}
+          {period
+            ? <div className="mt-1 text-sm font-medium text-slate-400">{period}</div>
+            : (isTimelineView(node.type) || node.type === 'event') && (
+              <div className="mt-1 text-sm font-medium text-slate-400">No period specified</div>
+            )}
         </div>
         <button
           type="button"
@@ -114,6 +118,17 @@ export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
       <div className="flex flex-col gap-5 p-4 md:p-5">
         {node.description && (
           <p className="text-sm leading-relaxed text-slate-300">{node.description}</p>
+        )}
+
+        {node.confidence && (
+          <p className="text-xs text-slate-400"
+            title="Overall editorial confidence in this entry; individual claims and phases may differ.">
+            Entry confidence: <span style={{ color: CONFIDENCE_COLORS[node.confidence] }}>{node.confidence}</span>
+          </p>
+        )}
+
+        {phases.length === 0 && node.phaseNote && (
+          <p className="text-xs leading-relaxed text-slate-500">{node.phaseNote}</p>
         )}
 
         {phases.length > 0 && (

@@ -2,20 +2,21 @@
 
 Graph ID `genre:ska`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Jamaican emergence and transnational revivals cross-checked
 
-**Graph period** · 1958–1970 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Jamaican dance music that blended mento and calypso with American rhythm and blues and jazz; it became a key precursor to rocksteady and reggae.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/ska-ma0000002857>)
+- [Popular Music and Society: Pick It Up! The Transnational Localism of Ska](https://www.tandfonline.com/doi/abs/10.1080/03007766.2011.600293) — Scholarly article dates birth to late 1950s and follows ska through the third wave as a transnational genre.
+- [Jamaica Information Service: Jamaica’s Heritage in Music](https://jis.gov.jm/jamaicas-heritage-music/) — National public-history source says ska was popularized by Don Drummond and the Skatalites in early 1960s.
+- [Smithsonian Center for Folklife: Black History in Roots Reggae](https://folklife.si.edu/magazine/black-history-in-roots-reggae-music) — Institutional history situates Jamaican ska-rocksteady era in the 1950s–60s sound-system context.
+- [The Skatalites: History](https://skatalites.com/history) — Band history documents the 1964 group formation and continuing global ska performance.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Replaced an AllMusic-only citation, removed the false 1970 end and phases that implied ska became niche, and added a sourced transnational-revival marker.
 
-- 1958 emerging · unrated · No phase note · None recorded
-- 1963 golden-age · unrated · No phase note · None recorded
-- 1968 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The source for the exact late-1950s start is a scholarly abstract; finer attribution of first ska recordings needs archival discography research.

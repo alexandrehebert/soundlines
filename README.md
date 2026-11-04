@@ -38,6 +38,8 @@ scrolls it into view on either layout.
 Dates marked `c.` or `approx.` are not exact, and events spanning years are
 listed under their start. The current event collection runs from approximately
 900 to 2022 and is not an exhaustive or geographically balanced account.
+Events without a period appear separately as **Undated** rather than being
+assigned an invented year; they remain selectable and follow the same filters.
 
 Show all events or just **Landmarks**, and filter by topic. Landmark status is an
 editorial selection, not a measured ranking. Select an event to see its sources
@@ -50,6 +52,11 @@ event. Filters are remembered while switching views during the session but are
 not part of the shared URL.
 
 ### Bar timelines
+
+Genres, artists, and instruments without a period appear in an **Undated**
+strip above their timeline rather than as bars at invented dates. They remain
+searchable, selectable, and connected to related entries; undated genres also
+remain in the bubble map.
 
 Families are recognizable browsing groups, not claims that every member is a
 subgenre of the lane name or shares a single origin. For example, Disco & House
@@ -215,7 +222,7 @@ as historical claims. The JSON supports adding or revising phases without changi
 
 All data lives in [src/data/graph.json](./src/data/graph.json) as a single property graph:
 
-- **Nodes** (`genre`, `artist`, `label`, `place`, `track`, `scene`) with stable `type:slug` ids, optional `period` (`start`/`end`/`precision`), `family` lanes, and descriptions.
+- **Nodes** (`genre`, `artist`, `instrument`, `label`, `place`, `track`, `scene`, `event`) with stable `type:slug` ids, optional `period` (`start`/`end`/`precision`), `family` lanes, descriptions, and editorial confidence in the overall entry.
 - **Edges** with a type, optional `period`, `confidence` (`low`/`medium`/`high`), `note`, and source URLs. Lineage edge types (`influences`, `derived_from`, `subgenre_of`, `fusion_of`, `cross_pollination`, `revival_of`) carry an orientation so the JSON reads naturally in both directions (see `LINEAGE_ORIENTATION` in [src/graph/types.ts](./src/graph/types.ts)).
 - Nodes can include `sources` URLs; the detail panel links only the selected node's sources, with each source's website shown beside the link. Relationship citations remain in the graph data rather than relationship lists.
 
@@ -304,4 +311,3 @@ are interactive without changing the app's URL or starting its page-loading
 transition. The source links in detail panels still open their actual websites.
 Timeline labels wait for SVG layout before measuring text, including when an
 initially hidden preview is revealed.
-

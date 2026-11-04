@@ -2,20 +2,20 @@
 
 Graph ID `genre:electro-house`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: removed unsupported 2012 ending and unverified 2000/2005/2010 lifecycle labels; retained broad 2000s formation window with explicit uncertainty.
 
-**Graph period** · 2000–2012 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A 2000s house branch combining house rhythms with prominent electro-influenced synth timbres and forceful production.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/album/dirty-electro-house-mw0001174015>)
+- [Hochschule Mittweida repository: structural analysis of electro house](https://monami.hs-mittweida.de/frontdoor/index/index/docId/960) — University repository holds a 2010 thesis directly analyzing electro-house productions, verifying established use by that time.
+- [Poetics research article on electronic/dance fields](https://doi.org/10.1016/j.poetic.2019.101389) — Peer-reviewed study covers genre and industry field dynamics from 1985–2005; context for how such categories gain industry circulation.
+- [Beatportal house-history feature](https://www.beatportal.com/articles/60692-beatports-definitive-history-of-tech-house) — Industry historical account places electro-house influence in 2000s; useful scene context, not independent proof of exact origin.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+The old period’s exact end and peak stages were unsupported. A 2000s start is retained as a broad approximate period for this named branch, but electro-house continued beyond 2012 and its boundaries overlap with electro, tech house and later EDM categories.
 
-- 2000 emerging · unrated · No phase note · None recorded
-- 2005 golden-age · unrated · No phase note · None recorded
-- 2010 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+This batch found no strong academic source establishing a definitive origin year or universal period for electro house; current start is a broad editorial marker.

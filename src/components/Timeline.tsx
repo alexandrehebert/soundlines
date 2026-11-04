@@ -9,9 +9,10 @@ import { TimelineBar } from './timeline/TimelineBar.tsx'
 import { TimelineLinks } from './timeline/TimelineLinks.tsx'
 import { afterSvgLayout } from './timeline/svgLayout.ts'
 import { useTimelineViewport } from './timeline/useTimelineViewport.ts'
+import { UndatedEntries } from './UndatedEntries.tsx'
 
 export function Timeline() {
-  const { model, selectedId, viewRange, order } = useExplorer()
+  const { model, selectedId, selectNode, viewRange, order } = useExplorer()
   const view = model.view
   const { containerRef, width, verticalViewport, select, handlers } = useTimelineViewport()
   const [labelWidths, setLabelWidths] = useState<Map<string, { name: string; weight: string; width: number }>>(() => new Map())
@@ -104,8 +105,8 @@ export function Timeline() {
     element.scrollTop = revealBarScrollTop(bar.yCenter, element.scrollTop, element.clientHeight)
   }, [selectedId, barById, containerRef, width])
 
-  return (
-    <div ref={containerRef} className="timeline-surface h-full w-full overflow-y-auto"
+  const timelineSurface = (
+    <div ref={containerRef} className="timeline-surface min-h-0 w-full flex-1 overflow-y-auto"
       role="region" aria-label={`${VIEW_LABELS[view]} timeline`}
       onFocusCapture={(event) => {
         if (!(event.target instanceof Element)) return
@@ -183,6 +184,14 @@ export function Timeline() {
           </svg>
         </>
       )}
+    </div>
+  )
+
+  return (
+    <div className="flex h-full min-h-0 flex-col">
+      <UndatedEntries label={`${view}s`} nodes={model.undated} selectedId={selectedId}
+        highlightedIds={highlight?.nodes} onSelect={selectNode} />
+      {timelineSurface}
     </div>
   )
 }

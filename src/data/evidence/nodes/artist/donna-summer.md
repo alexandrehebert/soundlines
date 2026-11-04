@@ -2,26 +2,29 @@
 
 Graph ID `artist:donna-summer`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: corrected start to 1968 documented theatre/recording work; retained 2012 death; removed unsupported finely graded prominence timeline.
 
-**Graph period** · 1967–2012
+**Reviewed** · 2026-11-04
 
-**Graph claim** · American singer whose recordings became central to disco.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Donna_Summer>)
+- [Songwriters Hall of Fame biography](https://www.songhall.org/profiles/donna-summer) — Biographical profile documents European theatre roles and 2008 career milestone; describes mid-1970s international breakthrough.
+- [Rock & Roll Hall of Fame](https://rockhall.com/inductees/donna-summer/) — Institutional inductee profile confirms her central influence on dance music and identifies signature achievements.
+- [Donna Summer: The Musical official timeline](https://thedonnasummermusical.com/timeline/) — Family-authorized stage-production timeline recounts early singing and move to Germany for Hair in 1967.
 
-**Graph phase rationale** · Editorial career prominence: musical-theatre beginnings, the 1975 breakthrough and late-1970s disco peak, the 1983 crossover, and later releases. The biography supports the milestones, not these numerical shades. The active career ends in 2012.
+## Assessment
 
-## Phases
+The former 1967 start represented her move to Germany/theatre, while disco recognition begins later. 1968 is a defensible first recording/theatre-period marker, though Boston band activity predates it. Detailed annual phase intensities were not supported and have been removed; only a clearly sourced 1975 breakthrough remains.
 
-- 1967 emerging (0.3) · unrated · No phase note · None recorded
-- 1975 golden-age (0.8) · unrated · “Love to Love You Baby” marks the documented 1975 breakthrough; the phase shading remains editorial. · [1](https://www.songhall.org/profiles/donna-summer)
-- 1977 golden-age (1) · unrated · No phase note · None recorded
-- 1979 golden-age (0.9) · unrated · No phase note · None recorded
-- 1981 established (0.6) · unrated · No phase note · None recorded
-- 1983 established (0.7) · unrated · The 1983 crossover marker is associated with “She Works Hard for the Money”; this anchors the career period, not a quantified prominence level. · [1](https://rockhall.com/inductees/donna-summer/)
-- 1987 established (0.4) · unrated · No phase note · None recorded
-- 1990 established (0.3) · unrated · No phase note · None recorded
-- 2008 established (0.45) · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Sources differ on the exact Germany/Hair timeline and whether 1968 should represent first theatrical work or first recording; local Boston band performances began earlier.
+
+## Retained phase annotations
+
+These former annotations are preserved for review context. They may be provisional or unsupported and do not assert a continuous prominence curve; the former intensity values were editorial.
+
+**Previous phase summary.** Only the 1975 international breakthrough milestone is retained. Other former annual intensity values were editorial and not grounded in a consistent popularity measure.
+
+- 1975: `emerging` — International disco breakthrough around “Love to Love You Baby”; source supports milestone, not a measured prominence score.
+  - Former phase sources: <https://www.songhall.org/profiles/donna-summer>

@@ -2,20 +2,16 @@
 
 Graph ID `genre:andean-folk`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · 2026-11-04
 
-**Graph period** · 1900 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A broad catalogue label for diverse musical traditions across the Andes. Regional, Indigenous and national distinctions require finer-grained entries as the collection grows.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/andean-folk-ma0000002426>)
+- [Oxford Bibliographies — Andean Music](https://academic.oup.com/reference/62379/reference-article-abstract/554979577) — Ethnomusicology bibliography defines the label geographically and notes it commonly groups Indigenous/folkloric genres and popular music incorporating those elements; practices also develop beyond the Andes.
+- [Library of Congress — Taki Kapchiy: The Sounds of the Andes](https://guides.loc.gov/weaving-community-narratives-andean-histories-library-collections/andean-music) — Library guide stresses regional variation and overlap, names Peruvian huayno, tunantada, and harawi, and documents contemporary Indigenous-language fusion.
+- [Smithsonian Folkways — Mountain Music of Peru](https://folkways-media.si.edu/docs/folkways/artwork/SFW40020.pdf) — Collection notes colonial-era European influence in forms such as yaravi, muliza, and huayno; corroborates that “folk” traditions are historically layered. Search-result extract checked.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed.
+## Assessment
 
-## Phases
-
-- 1900 emerging · unrated · No phase note · None recorded
-- 1915 golden-age · unrated · No phase note · None recorded
-- 2010 established · unrated · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Removed the unsupported circa-1900 origin and invented 1915 golden-age/2010 established phases. The scholarly framing treats Andean music as a changing regional umbrella, not a single genre with a common start.

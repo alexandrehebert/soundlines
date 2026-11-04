@@ -2,20 +2,19 @@
 
 Graph ID `genre:afrobeats`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · definition clarified as plural umbrella/category
 
-**Graph period** · 2000 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A contemporary, plural popular-music umbrella associated with West African scenes and global circulation; it is distinct from Fela Kuti’s earlier Afrobeat.
+## Sources checked
 
-**Graph citations** · [1](<https://online.ucpress.edu/jpms/article-abstract/36/4/25/203941/Genre-or-HypernymDeconstructing-Afrobeats-in-the?redirectedFrom=fulltext>)
+- [University of California Press, “Genre or Hypernym?”](https://online.ucpress.edu/jpms/article-abstract/36/4/25/203941/Genre-or-HypernymDeconstructing-Afrobeats-in-the?redirectedFrom=fulltext) — Peer-reviewed article explains contested category, diasporic circulation and genre-market construction; says North American mainstream visibility rose in 2016.
+- [Afrobeat, Fela and Beyond](https://eprints-prod-01.library.pitt.edu/10261/) — Comparative historical context for earlier Afrobeat, preventing conflation; direct repository fetch timed out.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed.
+## Assessment
 
-## Phases
+Graph had a precise 2000 start and unsupported 2008 golden age. The peer-reviewed source emphasizes category ambiguity, heterogeneous styles and market construction; timeline now encodes only cautious emergence and explicit 2016 mainstream visibility.
 
-- 2000 emerging · unrated · No phase note · None recorded
-- 2008 golden-age · unrated · No phase note · None recorded
-- 2018 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The paper traces term circulation but no precise initial coinage date is established in accessible abstract/full page.

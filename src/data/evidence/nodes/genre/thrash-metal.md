@@ -2,18 +2,20 @@
 
 Graph ID `genre:thrash-metal`
 
-**Review status** · Pending source review
+**Review status** · Reviewed; formation separated from commercial peak
 
-**Graph period** · 1983–1991 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A fast, aggressive heavy-metal branch that sharpened riffing and rhythmic precision; the “Big Four” are Metallica, Slayer, Megadeth and Anthrax.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/speed-thrash-metal-ma0000002874>)
+- [Oxford Academic: Heaviness in Metal Music](https://academic.oup.com/book/62310/chapter/552774328) — Recent scholarly chapter situates multiple parallel early-1980s bands and late-1980s thrash subcultural influence.
+- [Open Access book: Global Metal Music and Culture](https://admin.library.oapen.org/bitstream/handle/20.500.12657/102557/9781317587255.pdf?sequence=1) — Scholarly overview locates American thrash in early-1980s California.
+- [Kevin Fellezs, Voracious Souls, Routledge](https://www.taylorfrancis.com/chapters/oa-edit/10.4324/9781315742816-8/voracious-souls-kevin-fellezs) — Academic chapter situates Bay Area thrash in broader local scene.
 
-**Graph phase rationale** · Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review.
+## Assessment
 
-## Phases
+Corrected narrow 1983 start to circa 1981 and removed 1991 as end. Research stresses concurrent bands and scenes and continued history beyond Metallica’s commercial style shift.
 
-- 1983 golden-age · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Big Four is a retrospective grouping; early scenes were geographically and musically broader.

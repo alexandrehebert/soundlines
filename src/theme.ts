@@ -78,7 +78,7 @@ export function formatYear(year: number): string {
   return String(year)
 }
 
-export function formatPeriod(period: Period | undefined): string | null {
+export function formatPeriod(period: Period | null | undefined): string | null {
   if (!period) return null
   const prefix = period.precision === 'circa' ? 'c. ' : ''
   const { start, end } = period

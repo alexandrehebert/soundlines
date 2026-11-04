@@ -2,20 +2,21 @@
 
 Graph ID `artist:miles-davis`
 
-**Review status** · Career and description cross-checked; early dates disagree
+**Review status** · Reviewed · career start corrected from childhood decade to documented professional chronology
 
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-04
 
 ## Sources checked
 
-- [National Endowment for the Arts](https://www.arts.gov/honors/jazz/miles-davis) — Biography read: dates first professional band work to 1941, New York move to 1944, and death to 1991. Describes cool, modal and electric developments.
-- [Official timeline](https://www.milesdavis.com/timeline/) — Early timeline read: public gigs in 1942, Eddie Randle band in 1943, New York in 1944. Conflicts with NEA’s 1941 band date.
-- [Wikipedia, original citation](https://en.wikipedia.org/wiki/Miles_Davis) — Early-career section checked; describes local band work before the 1944 move. Retained as secondary orientation.
+- [National Endowment for the Arts: Miles Davis](https://www.arts.gov/honors/jazz/miles-davis) — Documents Juilliard move in 1944, early New York jazz work and later bandleading milestones.
+- [Miles Davis official timeline](https://www.milesdavis.com/timeline-1945/) — Artist archive documents 1945 session with Charlie Parker and transition into the New York jazz scene.
+- [Blue Note Records biography: Miles Davis](https://www.bluenote.com/artist/miles-davis/) — Record-label profile places his professional jazz career and first sideman recordings in 1945 and charts a career through the early 1990s.
+- [Ohio State University: Miles Davis](https://aaep1600.osu.edu/book/05_Davis.php) — University educational biography dates the first recording to 1945 and describes early career development.
 
 ## Assessment
 
-Change the start from 1944 to circa 1942 to represent early professional activity within the conflicting 1941–43 accounts. Medium confidence in the approximate boundary; 1944 is a well-supported New York milestone, not the first work. Retain 1991 and the concise musical description. No authored phases exist to audit; no popularity curve added.
+The prior 1942 start was unsupported. Set 1944 to the documented move to New York and transition to professional scene; clarified that first recordings were in 1945. Kept 1991 as the end of his lifetime career, distinguishing posthumous releases from activity.
 
 ## Remaining uncertainty
 
-Exact first professional engagement remains disputed between the institutional and official accounts. Their birth-day discrepancy is outside the graph’s current fields.
+Sources differ in whether the professional start is dated to 1944 arrival/gigs or 1945 recordings. Period note now explicitly identifies 1944 as scene entry.

@@ -153,7 +153,7 @@ export interface GraphNode {
   id: string
   type: NodeType
   name: string
-  period?: Period
+  period?: Period | null
   description?: string
   /**
    * Lane grouping: a genre family for genres (and artist overrides), an
@@ -166,6 +166,8 @@ export interface GraphNode {
   category?: EventCategory
   /** Events only. */
   significance?: EventSignificance
+  /** Editorial confidence in the entry's overall account, not each individual claim. */
+  confidence?: Confidence
   sources?: string[]
   /** Editorial genre, career, or instrument-use prominence, not measured popularity. */
   phases?: ProminencePhase[]

@@ -2,18 +2,21 @@
 
 Graph ID `genre:hindustani-classical`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: challenged 1700 as an origin-like boundary; retained only as a transition marker within late Mughal/early modern history and removed uninformative “established since 1700” phase.
 
-**Graph period** · 1700 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · North Indian classical music built around raga and tala, transmitted through lineages and performance traditions. The date marks a broad modern period of public circulation, not the beginning of the tradition.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/indian-classical-ma0000002638>), [2](<https://www.cambridge.org/core/journals/popular-music/article/abs/reflecting-surfaces-the-use-of-elements-from-indian-music-in-popular-music-and-jazz/40563DAAE907F72FC45E329DDA92ABFF>)
+- [King’s College London: Music under Mughal patronage](https://kclpure.kcl.ac.uk/portal/en/publications/music-under-mughal-patronage-the-place-of-pleasure/) — Scholarship documents Hindustani music in Mughal thought and society from Akbar’s late reign (1593) to Aurangzeb’s death (1707).
+- [King’s College London: The Rivals, Sadarang and Adarang](https://kclpure.kcl.ac.uk/portal/en/publications/the-rivals-anjha-baras-khan-adarang-and-what-happened-to-muhammad/) — Research describes major eighteenth-century court musicians, musical developments and dispersal after 1739.
+- [University of Chicago Press: The Scattered Court](https://press.uchicago.edu/ucp/books/book/chicago/S/bo192231916.html) — Monograph traces courtly Hindustani music across nineteenth-century Awadh and Bengal and challenges simple court-to-public narratives.
+- [Music and Letters: Hindustani Musicology in Calcutta, 1818–1905](https://academic.oup.com/ml/article/97/3/465/2623902) — Peer-reviewed article documents nineteenth-century theoretical and public-institutional transformations.
 
-**Graph phase rationale** · A single continuing phase is used because this broad, long-running tradition does not have a defensible shared peak cycle in the current graph sources. Shading is editorial, not a measured ranking; regional histories may require separate phases.
+## Assessment
 
-## Phases
+The c.1700 date is not a defensible beginning of Hindustani classical music; sources document a long pre-1700 courtly history and major transformations through the eighteenth and nineteenth centuries. The broad label contains diverse regional, stylistic and lineage traditions, so the former “established” phase was vacuous and is removed. Retaining c.1700 solely as an editorial transition marker is still imperfect and should be reconsidered if schema allows undated/tradition entries.
 
-- 1700 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Need a better schema for long-duration traditions than a single start year. Existing evidence shows continuity and transformation rather than one origin date.

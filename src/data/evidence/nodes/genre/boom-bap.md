@@ -2,20 +2,19 @@
 
 Graph ID `genre:boom-bap`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · 2026-11-04
 
-**Graph period** · 1987–1998 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A sample-based rap sound associated especially with late-1980s and 1990s East Coast production: hard, swung drum breaks, prominent kicks and snares, and densely worked loops. The term also describes a production aesthetic used by later artists.
+## Sources checked
 
-**Graph citations** · [1](<https://repository.uwl.ac.uk/id/eprint/5150/>), [2](<https://www.allmusic.com/artist/p68235>), [3](<https://www.allmusic.com/artist/mn0000286818>)
+- [University of West London thesis: Boom Bap ex Machina](https://repository.uwl.ac.uk/id/eprint/5150/) — Research traces boom bap’s origins to the late 1980s and discusses its ongoing use as East Coast production reference.
+- [AllMusic artist references](https://www.allmusic.com/artist/p68235) — Artist pages in graph are examples, not genre-wide evidence for date boundaries or phases.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Removed the 1998 endpoint and all three unsupported phase labels. Kept an approximate late-1980s start based on scholarly historical analysis; the sound continues as a production aesthetic.
 
-- 1987 emerging · unrated · No phase note · None recorded
-- 1991 golden-age · unrated · No phase note · None recorded
-- 1996 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Thesis is a focused academic source but not an exhaustive history; corroborate with contemporary late-1980s/early-1990s production interviews or trade press.

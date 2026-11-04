@@ -2,28 +2,21 @@
 
 Graph ID `artist:aretha-franklin`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · 2026-11-04
 
-**Graph period** · 1954–2017
+**Reviewed** · 2026-11-04
 
-**Graph claim** · American singer whose recordings helped define soul music.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Aretha_Franklin>)
+- [Detroit Historical Society: Aretha Franklin](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/franklin-aretha) — Institutional biography covers gospel roots, labels, civil-rights impact, and career.
+- [PBS American Masters: Aretha Franklin](https://www.pbs.org/wnet/americanmasters/aretha-franklin-about-aretha-franklin/598/) — Biography supports gospel roots and the 1967 Atlantic commercial breakthrough; page search text accessible, direct fetch blocked.
+- [Rock & Roll Hall of Fame: Aretha Franklin](https://rockhall.com/inductees/aretha-franklin/) — Induction profile identifies her 1967 breakthrough with “Respect”; the previously cited PDF URL returned 404.
+- [Memphis Music Hall of Fame biography](https://memphismusichalloffame.com/inductee/aretha-franklin/) — Corroborates Columbia in 1960, Atlantic era through early 1970s, and Hall induction.
 
-**Graph phase rationale** · Editorial career prominence, approximately dated from her biography: gospel and Columbia beginnings, the 1967 Atlantic breakthrough, a mid-1980s crossover comeback, and later recordings. Shades are visual judgments, not measured popularity. The career ends with her last performances in 2017; posthumous listening is not modeled.
+## Assessment
 
-## Phases
+Replaced the Wikipedia-only biography citation with institutional sources and rewrote the description. Simplified the phases: many prior yearly breakpoints were unsupported and risked false precision; retained major documented transitions while labeling shading as editorial.
 
-- 1954 emerging (0.3) · unrated · No phase note · None recorded
-- 1961 emerging (0.45) · unrated · No phase note · None recorded
-- 1967 golden-age (1) · unrated · The 1967 Atlantic recording breakthrough is documented; this supports the era anchor, not a measured prominence score. · [1](https://www.rockhall.com/wp-content/uploads/2024/03/Aretha_Franklin_1987.pdf)
-- 1972 golden-age (0.85) · unrated · No phase note · None recorded
-- 1976 established (0.5) · unrated · No phase note · None recorded
-- 1980 established (0.3) · unrated · No phase note · None recorded
-- 1985 golden-age (0.8) · unrated · No phase note · None recorded
-- 1990 established (0.4) · unrated · No phase note · None recorded
-- 1998 established (0.6) · unrated · No phase note · None recorded
-- 2003 established (0.35) · unrated · No phase note · None recorded
-- 2014 established (0.45) · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Exact 1954 start is an early gospel/public-performance marker and needs its own citation. The Arista comeback phase could be anchored more precisely with chart/label evidence.

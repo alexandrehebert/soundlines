@@ -2,25 +2,21 @@
 
 Graph ID `genre:uk-garage`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · scene chronology corroborated; phase specificity reduced
 
-**Graph period** · 1994 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A London-centered dance style that developed in the mid-1990s from circulating US garage records and UK club, pirate-radio, and rave practices. Speed garage and 2-step brought different rhythms and production choices; later branches include grime and dubstep, without making them interchangeable genres.
+## Sources checked
 
-**Graph citations** · [1](<https://www.officialcharts.com/chart-news/the-highest-charting-uk-garage-tunes__26409/>), [2](<https://www.musicradar.com/news/everything-you-need-to-know-about-uk-garage>), [3](<https://www.theguardian.com/music/2011/jun/15/uk-garage-pop-craig-david>), [4](<https://artsandculture.google.com/story/pwXx2l6iEhsV1w>)
+- [The Wire: Simon Reynolds on two-step garage (1999)](https://www.thewire.co.uk/in-writing/essays/the-wire-300_simon-reynolds-on-the-hardcore-continuum-series_6_two-step-garage_1999_) — Contemporary scene account describes US garage influences, jungle cross-pollination and pirate radio.
+- [Official Charts: highest-charting UK garage tunes](https://www.officialcharts.com/chart-news/the-highest-charting-uk-garage-tunes__26409/) — Chart records document commercial visibility around late 1990s and early 2000s.
+- [Goldsmiths dissertation on UK club DJ culture](https://www.gold.ac.uk/media/documents-by-section/departments/music/Towards-a-Musical-Understanding-of-the-Role-of-the-Club-DJ.pdf) — Academic study provides pirate-radio and club context.
+- [The Guardian: UK garage pop and Craig David](https://www.theguardian.com/music/2011/jun/15/uk-garage-pop-craig-david) — Retrospective on garage’s turn-of-century pop moment.
 
-**Graph phase rationale** · Approximate UK chart and club visibility: scene growth in the mid-1990s, chart breakthrough around the turn of the millennium, and later revival waves are documented by charts and specialist histories. These intervals describe UK visibility, not the genre’s worldwide popularity or the persistence of its underground scenes.
+## Assessment
 
-## Phases
+Core graph description is corroborated. Replaced multiple tightly spaced phases with a smaller set of defensible scene and chart markers; retained no end date because later strands continue.
 
-- 1994 emerging · unrated · No phase note · None recorded
-- 1997 established · unrated · No phase note · None recorded
-- 1999 golden-age · unrated · No phase note · None recorded
-- 2001 established · unrated · No phase note · None recorded
-- 2003 established · unrated · No phase note · None recorded
-- 2008 niche · unrated · No phase note · None recorded
-- 2015 established · unrated · No phase note · None recorded
-- 2020 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 4 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+The 2015 revival marker is low confidence and editorial; periodization differs between local underground scenes, chart presence and later mutations.

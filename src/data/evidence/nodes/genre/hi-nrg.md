@@ -2,23 +2,22 @@
 
 Graph ID `genre:hi-nrg`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: tightened origins to late-1970s San Francisco gay disco/post-disco roots; removed unsupported “golden age” and repeated “established” stages, retaining 1983 UK chart-label milestone.
 
-**Graph period** · 1977 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A high-tempo, synthesizer-led development of disco associated with North American queer club culture and later UK pop production. Its visibility varied by territory: specialist club and trade charts, crossover singles, and later dance styles document different parts of its history.
+## Sources checked
 
-**Graph citations** · [1](<https://ler.letras.up.pt/uploads/ficheiros/19288.pdf>), [2](<https://www.classicpopmag.com/features/popscene-hi-nrg/>), [3](<https://doras.dcu.ie/27918/1/PhD%20Carroll.pdf>)
+- [Oxford University Press: Menergy, “The First Wave of the San Francisco Sound”](https://academic.oup.com/book/38797/chapter-abstract/337627259) — Scholarly chapter dates the San Francisco sound’s emergence to 1978 and identifies gay artists/producers.
+- [Oxford University Press: Menergy, “Setting Up the Sound”](https://academic.oup.com/book/38797/chapter-abstract/337625905) — Places high-energy disco within early-1970s gay bar and dance culture, showing precursors predate named Hi-NRG.
+- [The Musical Quarterly: Sloanist Theory of Popular Music Production](https://academic.oup.com/mq/article/105/3-4/320/6780154) — Peer-reviewed article traces Hi-NRG from gay dance cultures and Cowley/Orlando’s early/mid-1980s productions to UK chart-era Stock Aitken Waterman.
+- [SAGE: Hi-NRG, queer dance and Thatcher’s Britain](https://journals.sagepub.com/doi/10.1177/27538702251362061) — Peer-reviewed article connects Hi-NRG roots to Cowley/Orlando, queer dance spaces and 1980s UK context.
+- [David Carroll, Re-appraising Hi-Nrg, doctoral thesis](https://doras.dcu.ie/27918/1/PhD%20Carroll.pdf) — Thesis studies Hi-NRG genesis/influence and attributes development to multiple pioneers.
 
-**Graph phase rationale** · Approximate North American club and UK chart visibility: Hi-NRG moved from queer club scenes into a wider pop period in the 1980s, with trade charts and UK crossover records documenting the high-visibility years. Sources differ on the exact peak and on how Hi-NRG relates to Eurobeat and Italo disco; no worldwide popularity measure is implied.
+## Assessment
 
-## Phases
+Evidence supports an electronic San Francisco gay-disco/post-disco sound emerging in 1978, but the label “Hi-NRG” consolidated later and varies geographically. The previous 1977 marker was approximate but less specifically grounded; moved to 1978 and marked as the San Francisco sound’s emergence. The UK phase marks later recognition. Numerical intensity claims and a 1995 niche transition were not established, so removed.
 
-- 1977 emerging · unrated · No phase note · None recorded
-- 1981 established · unrated · No phase note · None recorded
-- 1983 golden-age · unrated · No phase note · None recorded
-- 1986 established · unrated · No phase note · None recorded
-- 1989 established · unrated · No phase note · None recorded
-- 1995 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 3 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+Terminology and boundaries vary across U.S. gay club production, UK chart/pop Hi-NRG, Eurobeat and Italo disco. Avoid treating these strands as one uniform sound or global timeline.

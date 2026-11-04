@@ -2,20 +2,21 @@
 
 Graph ID `genre:southern-rap`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · regional diversity and 1990s national visibility cross-checked
 
-**Graph period** · 1985 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A regional umbrella for rap scenes across the U.S. South, including distinct sounds from Atlanta, Houston, New Orleans, Memphis and Miami. It spans party music, storytelling, gangsta rap and many other approaches.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/southern-rap-ma0000002871>), [2](<https://www.allmusic.com/artist/outkast-mn0000420381>)
+- [Southern Spaces: Dirty Decade—Rap Music and the US South, 1997–2007](https://southernspaces.org/2008/dirty-decade-rap-music-and-us-south-1997-2007/) — Scholarship analyzes regional scenes, commercial expansion and the 1995 Goodie Mob coinage/popularization of Dirty South.
+- [Oxford University Press: Dirty South hip hop and societal ills](https://blog.oup.com/2014/02/dirty-south-hip-hop-atlanta-rap/) — Reference work describes Southern hip-hop development in the 1980s and 1990s.
+- [GRAMMY.com: Guide to Southern Hip-Hop](https://www.grammy.com/news/guide-to-dirty-south-hip-hop-major-releases-artists-labels-history-playlist/) — Industry history surveys distinct regional cities, labels, and sounds rather than a singular style.
+- [Journal of Music History Pedagogy: Welcome to the Dirty South](https://jmp.amsmusicology.org/wp-content/uploads/2026/02/8.1-full-issue.pdf) — Musicology essay surveys Southern styles from Miami Bass and Houston in the 1980s to contemporary rap.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed.
+## Assessment
 
-## Phases
+Kept the broad regional node and 1980s start, but reduced phase count and removed arbitrary current-era phase. Scholarly history supports late-1990s market expansion while underscoring diversity across cities and genres.
 
-- 1985 emerging · unrated · No phase note · None recorded
-- 1997 golden-age · unrated · No phase note · None recorded
-- 2018 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+This umbrella may be too broad for a precise timeline; individual city scenes and subgenres deserve separate entries.

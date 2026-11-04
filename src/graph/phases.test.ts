@@ -178,9 +178,11 @@ describe('historical prominence', () => {
       .toEqual([{ offset: 0, level: 1 }, { offset: 1, level: 1 }])
   })
 
-  it('shows disco continuing after its original boom and niche period', () => {
+  it('does not extrapolate disco milestones into an unsupported full curve', () => {
     const disco = rawGraph.nodes.find((candidate) => candidate.id === 'genre:disco') as GraphNode
-    expect(visibleSpans(disco, 2026)).toEqual([[1972, 1980], [2000, 2026]])
+    expect(disco.period).toEqual({ start: 1970, end: null, precision: 'decade' })
+    expect(prominencePhases(disco, 2026)).toEqual([])
+    expect(disco.phaseNote).toContain('1979')
   })
 
   it('keeps soul alive after its peak and does not call it niche', () => {

@@ -2,16 +2,20 @@
 
 Graph ID `artist:anibal-troilo`
 
-**Review status** · Career endpoints and orchestra debut checked
+**Review status** · Reviewed: replaced vague circa-1925 career start with first documented professional-group activity in 1927; separated 1937 orchestra founding and 1975 death.
 
-**Graph period** · 1925–1975 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.allmusic.com/style/tango-ma0000002891>), [2](<https://www.argentina.gob.ar/node/465370>), [3](<https://www.argentina.gob.ar/noticias/110-anos-del-nacimiento-de-anibal-troilo-un-emblema-de-la-musica-ciudadana>), [4](<https://buenosaireshistoria.org/fotografias/anibal-carmelo-troilo/>), [5](<https://www.todotango.com/historias/cronica/444/Orquesta-Tipica-Anibal-Troilo>), [6](<https://www.serargentino.com/argentina/biografias/anibal-troilo-pa-que-bailen-los-muchachos>)
+## Sources checked
 
-## Evidence review
+- [Argentina National Library](https://www.bn.gob.ar/noticias/11-de-julio-de-1914-nace-anibal-troilo) — Institutional biography dates his work with several groups from 1927 and sextet activity to 1930.
+- [Buenos Aires city ethnomusicology collection](https://buenosaires.gob.ar/gcaba_historico/cultura/ensenanza-artistica/instituto-de-investigacion-en-etnomusicologia/coleccion-anibal-pichuco) — City collection documents Troilo’s orchestra from its 1937 founding and activity through 1975.
+- [Argentina.gob.ar, “Aníbal Troilo, un canto eterno de bandoneón”](https://www.argentina.gob.ar/node/465370) — National cultural source dates his own orchestra debut to July 1, 1937 and death to May 1975.
 
-Argentina’s cultural ministry dates Troilo’s debut as leader of his own orchestra to July 1, 1937 at the Cabaret Marabú and documents earlier performances, later radio work, and a substantial recording catalog. The date anchors his orchestra leadership. His career began earlier. Both accounts share a publisher. [Troilo profile](https://www.argentina.gob.ar/node/465370), [Anniversary account](https://www.argentina.gob.ar/noticias/110-anos-del-nacimiento-de-anibal-troilo-un-emblema-de-la-musica-ciudadana)
+## Assessment
 
-Buenos Aires Historia places his first public performance at an Abasto bar in 1925, consistent with the ministry’s account that he first performed aged eleven. Use circa 1925 for documented public activity and reserve 1937 for the debut of his own orchestra. The ministry documents his death in 1975. [Buenos Aires Historia](https://buenosaireshistoria.org/fotografias/anibal-carmelo-troilo/)
+The graph’s circa-1925 start can reflect an early performance, but the higher-quality national library source places group employment from 1927; 1937 is the firm milestone for his own orchestra. Use 1927 as documented professional activity, not a claim that musical activity began then.
 
-Todo Tango documents his 1975 Teatro Odeón run in “Simplemente Pichuco.” Ser Argentino dates his final performance to May 17. These accounts establish that he was still performing in 1975 and support that year as the career endpoint. [Todo Tango](https://www.todotango.com/historias/cronica/444/Orquesta-Tipica-Anibal-Troilo), [Ser Argentino](https://www.serargentino.com/argentina/biografias/anibal-troilo-pa-que-bailen-los-muchachos)
+## Remaining uncertainty
+
+1925 first-performance accounts exist, but this batch found them in lower-quality secondary/derivative sources. If retaining an earliest-performance date, source directly to archival or institutional documentation.

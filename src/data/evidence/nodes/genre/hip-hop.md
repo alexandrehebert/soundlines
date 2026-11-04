@@ -2,22 +2,32 @@
 
 Graph ID `genre:hip-hop`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: supported Bronx/1970s period while challenging 1973 as a precise birth date; corrected overlong staged “established” labels and retained a qualified late-1980s golden-age marker.
 
-**Graph period** · 1973 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A musical and cultural movement that developed in New York’s Bronx during the 1970s, shaped by Black and Puerto Rican communities and Caribbean diasporic practices. DJing, MCing, dance, visual art, and later regional rap scenes are connected but distinct parts of its history.
+## Sources checked
 
-**Graph citations** · [1](<https://nmaahc.si.edu/explore/exhibitions/represent>), [2](<https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/hip-hop-rap/>), [3](<https://www.si.edu/spotlight/hip-hop-rap>), [4](<https://invention.si.edu/invention-stories/hip-hop-and-african-american-innovation>)
+- [Smithsonian National Museum of African American History and Culture: Hip-Hop in the Bronx](https://nmaahc.si.edu/explore/stories/hip-hop-bronx) — Museum account situates the emerging hip-hop music and cultural scene in 1970s Bronx.
+- [Library of Congress: Hip Hop/Rap](https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/hip-hop-rap/) — LOC describes 1970s/80s emergence across several U.S. cities and the 1979 “Rapper’s Delight” commercial breakthrough.
+- [Journal of American History: Break Beats in the Bronx](https://academic.oup.com/jah/article-abstract/105/1/229/5000312) — Peer-reviewed article critiques conventional origin stories and examines underexplored Bronx years 1975–79.
+- [University of Michigan: Hip-Hop Timeline](https://courses.lsa.umich.edu/aas254/timeline/) — University teaching resource dates a commonly used Golden Era to 1985–92 and notes boundaries remain debated.
 
-**Graph phase rationale** · The late-1980s and 1990s “Golden Age” is a documented U.S.-centered cultural and critical period, not an uncontested global peak or a claim that hip-hop stopped changing afterward. Shading combines broad U.S. public visibility and historical periodization; it is not a sales or streaming series.
+## Assessment
 
-## Phases
+The graph’s 1973 marker matches a widely commemorated Bronx party, but should not imply that all hip-hop culture appeared on a single day: the LOC records older rap precedents and the Journal of American History critiques the single-origin narrative. A late-1980s Golden Age is a recognized but debated U.S.-centered critical period; earlier and later phase labels were too vague and were removed.
 
-- 1973 emerging · unrated · No phase note · None recorded
-- 1980 established · unrated · The phase begins before the commonly cited U.S. “Golden Age” of the late 1980s–early 1990s. This date marks continued expansion from the 1970s, so the “established” shade should be reviewed against the graph’s phase definitions. · [1](https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/hip-hop-rap/), [2](https://research-information.bris.ac.uk/ws/portalfiles/portal/7210840/JM2704_02_Williams.pdf)
-- 1986 golden-age · unrated · No phase note · None recorded
-- 1997 established · unrated · No phase note · None recorded
-- 2005 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 4 unsuccessful, 0 pending.
+The node joins music, DJing/MCing, dance, visual art and global cultural histories; a single timeline cannot adequately represent every element or region. 1973 marks a commemorated scene milestone, not definitive invention.
+
+## Retained phase annotations
+
+These former annotations are preserved for review context. They may be provisional or unsupported and do not assert a continuous prominence curve; the former intensity values were editorial.
+
+**Previous phase summary.** Only the commonly commemorated 1973 Bronx emergence and debated late-1980s/early-1990s U.S. Golden Age remain. Removed 1980, 1997 and 2005 “established” markers because they described ongoing expansion without a consistent phase definition. Hip-hop is global and multi-element; phases here refer primarily to music/rap histories.
+
+- 1973: `emerging` — 1973 is the commonly commemorated Bronx party milestone; scholarship cautions against treating one party as a fully documented origin of a largely unrecorded culture.
+  - Former phase sources: <https://nmaahc.si.edu/explore/stories/hip-hop-bronx>, <https://academic.oup.com/jah/article-abstract/105/1/229/5000312>
+- 1986: `golden-age` — The late-1980s through early-1990s Golden Age is a debated, U.S.-centered critical periodization, not a universal popularity peak.
+  - Former phase sources: <https://courses.lsa.umich.edu/aas254/timeline/>

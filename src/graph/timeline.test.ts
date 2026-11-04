@@ -84,6 +84,40 @@ describe('timeline projections', () => {
     expect(() => createTimelineModel(incomplete, 'artist')).toThrow('artist:missing')
   })
 
+  it.each([
+    ['genre', 'latin', 'genre:house'],
+    ['artist', 'jazz', 'artist:a'],
+    ['instrument', 'strings', 'instrument:guitar'],
+  ] as const)('keeps undated %s entries and their links outside the chronological bars', (view, family, datedId) => {
+    const data: MusicGraph = {
+      ...graph,
+      nodes: [
+        ...graph.nodes,
+        { id: `${view}:undated-b`, type: view, name: 'Beta', family, period: null },
+        { id: `${view}:undated-a`, type: view, name: 'Alpha', family },
+      ],
+      edges: [...graph.edges, {
+        id: 'undated-link', type: 'influences', from: datedId, to: `${view}:undated-a`,
+      }],
+    }
+    const model = createTimelineModel(buildIndex(data), view, 2026)
+    expect(model.undated.map((node) => node.id)).toEqual([`${view}:undated-a`, `${view}:undated-b`])
+    expect(model.index.nodeById.get(`${view}:undated-b`)?.period).toBeNull()
+    expect(model.lanes.flatMap((lane) => lane.bars.map((bar) => bar.node.id)))
+      .not.toContain(`${view}:undated-a`)
+    expect(lineage(model.index, `${view}:undated-a`, model.orientation).ancestors).toContain(datedId)
+  })
+
+  it('still reports invalid periods instead of treating them as undated', () => {
+    for (const period of [{ start: NaN }, { start: 2000, end: 1999 }]) {
+      const incomplete = buildIndex({
+        ...graph,
+        nodes: [...graph.nodes, { id: 'genre:bad', type: 'genre', name: 'Bad', family: 'jazz', period }],
+      })
+      expect(() => createTimelineModel(incomplete, 'genre')).toThrow('genre:bad')
+    }
+  })
+
   it('lays out instruments in instrument-family lanes with only instrument lineage links', () => {
     const model = createTimelineModel(index, 'instrument', 2026)
     expect(model.lanes.map((lane) => lane.family)).toEqual(['strings', 'electronic'])
@@ -122,10 +156,13 @@ describe('timeline projections', () => {
     expect(viewForNode('track', 'history')).toBe('history')
   })
 
-  it('can lay out every artist in the actual dataset once', () => {
+  it('includes every artist in the actual dataset once', () => {
     const data = rawGraph as MusicGraph
     const model = createTimelineModel(buildIndex(data), 'artist')
-    const ids = model.lanes.flatMap((lane) => lane.bars.map((bar) => bar.node.id))
+    const ids = [
+      ...model.lanes.flatMap((lane) => lane.bars.map((bar) => bar.node.id)),
+      ...model.undated.map((node) => node.id),
+    ]
     expect(ids.length).toBe(data.nodes.filter((node) => node.type === 'artist').length)
     expect(new Set(ids).size).toBe(ids.length)
     expect(model.index.graph.edges.some((edge) => edge.type === 'member_of')).toBe(true)

@@ -2,18 +2,20 @@
 
 Graph ID `genre:rocksteady`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Jamaican chronology corroborated
 
-**Graph period** · 1966–1968 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A short-lived Jamaican style that slowed ska’s pulse and foregrounded bass, vocal harmony and a relaxed groove; it bridged ska and reggae.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/rocksteady-ma0000002830>)
+- [Jamaica Information Service: Rock Steady](https://jis.gov.jm/jamaica/rock-steady/) — Dates origin around 1966 and heyday from summer 1966 to spring 1968.
+- [Jamaica Information Service: Black History in Roots Reggae Music](https://jis.gov.jm/jamaica/black-history-in-roots-reggae-music/) — Places ska-rocksteady transition around independence and into 1968.
+- [Wayne Marshall dissertation: Rocksteady and Jamaica’s Transnational Nationalisms](https://wayneandwax.com/academic/marshall-rap-reggae-dissertation.pdf) — Academic context on sound systems and transition from ska.
 
-**Graph phase rationale** · Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review.
+## Assessment
 
-## Phases
+The graph’s short 1966–68 phase is corroborated by Jamaica’s national information service. Retained with distinction between historical heyday and continuing influence.
 
-- 1966 golden-age · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+More musicological sources could clarify regional and studio-specific transitions.

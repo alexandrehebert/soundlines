@@ -32,6 +32,18 @@ describe('shared bar geometry', () => {
     expect(snapToSpans(1, [[0, 8]], 10)).toBe(4)
   })
 
+  it('renders an empty phase list as a neutral bar, like an omitted phase list', () => {
+    const data: MusicGraph = {
+      version: 1,
+      nodes: [{ id: 'genre:plain', type: 'genre', name: 'Plain', family: 'jazz',
+        period: { start: 1950, end: 2000 }, phases: [] }],
+      edges: [],
+    }
+    const scale = { start: 1900, end: 2026, width: 800 }
+    const positioned = positionTimeline(layoutFamilies(data, 2026), scale).bars[0]
+    expect(positioned.visibleSpans).toEqual([[yearToX(scale, 1950), yearToX(scale, 2000)]])
+  })
+
   describe('genre ordering', () => {
     const graph: MusicGraph = {
       version: 1,

@@ -1,9 +1,12 @@
 import { EVENT_CATEGORY_LABELS, type EventCategory, type GraphNode, type MusicGraph, type Period } from './types.ts'
 
-export interface HistoryEvent extends GraphNode {
+export interface HistoryEntry extends GraphNode {
   type: 'event'
-  period: Period
   category: EventCategory
+}
+
+export interface HistoryEvent extends HistoryEntry {
+  period: Period
 }
 
 export interface HistoryFilters {
@@ -25,22 +28,33 @@ export const HISTORY_ERAS = [
   { id: '2000-onward', label: '2000 onward', before: Infinity },
 ] as const
 
-export function historyEvents(graph: MusicGraph): HistoryEvent[] {
-  const events: HistoryEvent[] = []
+export function createHistoryModel(graph: MusicGraph) {
+  const dated: HistoryEvent[] = []
+  const undated: HistoryEntry[] = []
   for (const node of graph.nodes) {
     if (node.type !== 'event') continue
     const { period, category } = node
-    if (!period || !Number.isInteger(period.start) || !category || !Object.hasOwn(EVENT_CATEGORY_LABELS, category)) {
-      throw new Error(`Historical event ${node.id} needs a dated period and a known category`)
+    if (!category || !Object.hasOwn(EVENT_CATEGORY_LABELS, category)) {
+      throw new Error(`Historical event ${node.id} needs a known category`)
+    }
+    const event = { ...node, type: 'event' as const, category }
+    if (period == null) {
+      undated.push(event)
+      continue
+    }
+    if (!Number.isInteger(period.start)) {
+      throw new Error(`Historical event ${node.id} has an invalid start year`)
     }
     if (period.end != null && (!Number.isInteger(period.end) || period.end < period.start)) {
       throw new Error(`Historical event ${node.id} has an invalid end year`)
     }
-    events.push({ ...node, type: 'event', period, category })
+    dated.push({ ...event, period })
   }
-  return events.sort((a, b) =>
-    a.period.start - b.period.start || a.name.localeCompare(b.name) || a.id.localeCompare(b.id),
-  )
+  const byName = (a: GraphNode, b: GraphNode) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id)
+  return {
+    dated: dated.sort((a, b) => a.period.start - b.period.start || byName(a, b)),
+    undated: undated.sort(byName),
+  }
 }
 
 export function matchesHistoryFilters(

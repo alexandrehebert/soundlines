@@ -27,6 +27,18 @@ describe('genre bubbles', () => {
     expect(bubbles[0].family).toBe('jazz')
   })
 
+  it('keeps undated genres and their lineage in the bubble map', () => {
+    const data = {
+      ...graph,
+      nodes: graph.nodes.map((node) => node.id === 'genre:b' ? { ...node, period: null } : node),
+    }
+    const model = createTimelineModel(buildIndex(data), 'genre')
+    const bubbles = createGenreBubbles(model.index)
+    expect(bubbles.find(({ node }) => node.id === 'genre:b')?.influence).toBe(1)
+    expect(bubbles.find(({ node }) => node.id === 'genre:b')?.node.period).toBeNull()
+    expect(model.index.graph.edges.some((edge) => edge.id === 'ab')).toBe(true)
+  })
+
   describe('organic bubble layout', () => {
     it('handles an empty catalogue', () => {
       expect(layoutGenreBubbles(buildIndex({ version: 1, nodes: [], edges: [] })))

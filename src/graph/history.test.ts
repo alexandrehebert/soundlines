@@ -3,10 +3,10 @@ import rawGraph from '../data/graph.json'
 import type { MusicGraph } from './types.ts'
 import {
   DEFAULT_HISTORY_FILTERS,
+  createHistoryModel,
   filtersForSelectedEvent,
   formatEventPeriod,
   groupHistoryEvents,
-  historyEvents,
 } from './history.ts'
 
 const graph: MusicGraph = {
@@ -27,7 +27,7 @@ const graph: MusicGraph = {
 
 describe('history chronology', () => {
   it('orders all events by start year, then name and id, without changing the graph', () => {
-    const events = historyEvents(graph)
+    const events = createHistoryModel(graph).dated
     expect(events.map((event) => event.id)).toEqual([
       'event:early', 'event:a', 'event:b', 'event:later',
     ])
@@ -35,7 +35,7 @@ describe('history chronology', () => {
   })
 
   it('groups events into eras and filters by landmark and topic', () => {
-    const events = historyEvents(graph)
+    const events = createHistoryModel(graph).dated
     const all = groupHistoryEvents(events, DEFAULT_HISTORY_FILTERS)
     expect(all.map((group) => [group.id, group.events.map((event) => event.id)])).toEqual([
       ['before-1400', ['event:early']],
@@ -50,7 +50,7 @@ describe('history chronology', () => {
   })
 
   it('widens only the filters that would hide a selected event', () => {
-    const events = historyEvents(graph)
+    const events = createHistoryModel(graph).dated
     const early = events.find((event) => event.id === 'event:early')!
     const later = events.find((event) => event.id === 'event:later')!
     expect(filtersForSelectedEvent({ category: 'media', landmarksOnly: true }, early))
@@ -69,20 +69,42 @@ describe('history chronology', () => {
     expect(formatEventPeriod({ start: 2000 })).toBe('2000 – now')
   })
 
+  it('keeps undated events separate without inventing dates or losing their filters', () => {
+    const model = createHistoryModel({
+      ...graph,
+      nodes: [
+        ...graph.nodes,
+        { id: 'event:undated-b', type: 'event', name: 'Beta', category: 'media', period: null },
+        { id: 'event:undated-a', type: 'event', name: 'Alpha', category: 'technology', significance: 'landmark' },
+      ],
+    })
+    expect(model.dated).toHaveLength(4)
+    expect(model.undated.map((event) => event.id)).toEqual(['event:undated-a', 'event:undated-b'])
+    expect(filtersForSelectedEvent({ category: 'media', landmarksOnly: true }, model.undated[0]))
+      .toEqual({ category: 'all', landmarksOnly: true })
+    expect(groupHistoryEvents(model.dated, DEFAULT_HISTORY_FILTERS)
+      .flatMap((group) => group.events.map((event) => event.id))).not.toContain('event:undated-a')
+  })
+
   it('reports invalid event data instead of silently omitting it', () => {
-    expect(() => historyEvents({ ...graph, nodes: [{ id: 'event:bad', type: 'event', name: 'Bad' }] }))
+    expect(() => createHistoryModel({ ...graph, nodes: [{ id: 'event:bad', type: 'event', name: 'Bad' }] }))
       .toThrow('event:bad')
-    expect(() => historyEvents({
+    expect(() => createHistoryModel({
       ...graph,
       nodes: [{ id: 'event:bad', type: 'event', name: 'Bad', category: 'media', period: { start: 2000, end: 1999 } }],
+    })).toThrow('event:bad')
+    expect(() => createHistoryModel({
+      ...graph,
+      nodes: [{ id: 'event:bad', type: 'event', name: 'Bad', category: 'media', period: { start: NaN } }],
     })).toThrow('event:bad')
   })
 
   it('includes every event in the real graph exactly once, in chronological order', () => {
     const data = rawGraph as MusicGraph
-    const events = historyEvents(data)
+    const model = createHistoryModel(data)
+    const events = model.dated
     const grouped = groupHistoryEvents(events, DEFAULT_HISTORY_FILTERS).flatMap((group) => group.events)
-    expect(events).toHaveLength(data.nodes.filter((node) => node.type === 'event').length)
+    expect(events.length + model.undated.length).toBe(data.nodes.filter((node) => node.type === 'event').length)
     expect(grouped.map((event) => event.id)).toEqual(events.map((event) => event.id))
     expect(events[0].period.start).toBe(900)
     expect(events.at(-1)?.period.start).toBe(2022)
@@ -95,7 +117,7 @@ describe('history chronology', () => {
     ['event:rai-unesco-inscription', 2022, 'genre:rai', '2000-onward'],
   ] as const)('shows %s in History and connects it to its genre', (id, year, genre, era) => {
     const data = rawGraph as MusicGraph
-    const events = historyEvents(data)
+    const events = createHistoryModel(data).dated
     expect(events.find((event) => event.id === id)?.period.start).toBe(year)
     expect(groupHistoryEvents(events, DEFAULT_HISTORY_FILTERS).find((group) => group.id === era)
       ?.events.some((event) => event.id === id)).toBe(true)

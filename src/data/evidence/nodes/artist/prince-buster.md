@@ -2,10 +2,21 @@
 
 Graph ID `artist:prince-buster`
 
-**Review status** · Pending source review
+**Review status** · Reviewed; 1990s return to recording added
 
-**Graph period** · 1960–1990 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/ska-ma0000002857>), [2](<https://www.allmusic.com/artist/prince-buster-mn0000359494>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+- [The Guardian obituary: Prince Buster](https://www.theguardian.com/music/2016/sep/08/prince-buster-obituary-ska-musica-jamiaca) — Documents 1960 recording sessions and onstage return and touring in late 1980s and 1990s.
+- [AllMusic biography/discography: Prince Buster](https://www.allmusic.com/artist/prince-buster-mn0000359494) — Discography includes return to recording and 1994 material.
+- [Time obituary: Prince Buster](https://time.com/4484930/prince-buster-ska-dead/) — Independent obituary contextualizes 1960s ska role and later influence.
+- [Jamaica Gleaner: Rise of Prince Buster](https://past.jamaica-gleaner.com/article/entertainment/20190623/vintage-voices-rise-prince-buster-pt-ii?qt-article_image_video=1) — Jamaican newspaper retrospective on 1960s production and ska.
+
+## Assessment
+
+Graph end year 1990 was too early. Sources document a return to recording in 1992 and 1994 material, plus touring into the 1990s.
+
+## Remaining uncertainty
+
+1994 refers to verified recording output, not necessarily last live appearance.

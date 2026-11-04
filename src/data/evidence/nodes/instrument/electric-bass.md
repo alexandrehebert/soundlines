@@ -2,22 +2,20 @@
 
 Graph ID `instrument:electric-bass`
 
-**Review status** · Pre-Fender history corrected; commercial adoption distinguished
+**Review status** · Reviewed · 2026-11-04
 
 **Reviewed** · 2026-11-04
 
 ## Sources checked
 
-- [Museum of Pop Culture, Audiovox Model 736](https://mopop.emuseum.com/objects/8245/audiovox-model-736-electric-bass-guitar-c-1935) — Indexed collection record checked: title circa 1935, description 1936; identifies fretted, guitar-position electric bass. Direct access returned 403. Preserve approximate dating.
-- [Peter Blecha, HistoryLink](https://www.historylink.org/file/7479) — Article read: 1935 electrified upright prototype followed by horizontal Model 736, regional sales and limited distribution; distinguishes Tutmarc from Fender’s 1951 success.
-- [Fender, Precision Bass history](https://www.fender.com/articles/behind-the-scenes/legendary-lows-the-precision-bass-story) — Manufacturer history read: October 1951 production. Its claim that no such instrument existed earlier is contradicted by the museum and historical account; accept product date, reject invention priority.
-- [Wikipedia: Bass guitar](https://en.wikipedia.org/wiki/Bass_guitar) — Original citation retrieved; historical section distinguishes 1930s and 1950s developments.
-- [Wikipedia: Fender Precision Bass](https://en.wikipedia.org/wiki/Fender_Precision_Bass) — Original citation retrieved; model-specific scope rather than the entire instrument’s invention.
+- [Audiovox Model 736 Electric Bass Guitar, c. 1935 — Museum of Pop Culture](https://mopop.emuseum.com/objects/8245/audiovox-model-736-electric-bass-guitar-c-1935) — Collection record dates the object c.1935, calls its example a 1936 Model 736 and describes its limited uptake; useful correction to an overly simple inventor story.
+- [Tutmarc and his Audiovox Electric Guitars — HistoryLink](https://www.historylink.org/file/7479) — Washington history essay draws on 1935 newspaper evidence and records Fender’s 1951 marketing; distinguishes invention from commercial success.
+- [The Precision Bass Story — Fender](https://www.fender.com/articles/behind-the-scenes/legendary-lows-the-precision-bass-story) — Manufacturer history documents the 1951 Precision Bass launch and the design’s impact on bass performance.
 
 ## Assessment
 
-Move the start to circa 1935, medium confidence, and correct the description. Fender is useful primary evidence for its own product date, but commercially interested and unreliable on priority here. Do not retain the sweeping claim that the upright was replaced in most popular music without comparative evidence.
+Graph already separated Audiovox’s mid-1930s instrument from Fender’s 1951 commercial breakthrough, but sources disagree slightly between c.1935 and 1936 for the MoPOP object. Kept the approximate date and clarified the commercial phase; deleted Wikipedia citations.
 
 ## Remaining uncertainty
 
-Full MoPOP page remains inaccessible. The exact Audiovox model dating is unresolved within the museum’s indexed record; the circa boundary explicitly preserves that uncertainty.
+The Audiovox record describes the model as world’s first fretted electric bass, a claim whose priority depends on instrument definition; “early documented example” is safer than an absolute first.

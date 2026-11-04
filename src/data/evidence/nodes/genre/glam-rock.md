@@ -2,18 +2,20 @@
 
 Graph ID `genre:glam-rock`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: academic and institutional sources support an early-1970s British movement; exact endpoint not universal. Removed unsupported golden-age label and tightened period to 1972–75 as a historically used interval.
 
-**Graph period** · 1971–1976 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Early-1970s British rock foregrounding theatrical performance, visual artifice, pop songwriting and amplified rock sounds.
+## Sources checked
 
-**Graph citations** · [1](<https://academic.oup.com/book/6294>), [2](<https://www.allmusic.com/genre/glam-rock-ma0000002619>)
+- [University of Michigan Press: Performing Glam Rock](https://press.umich.edu/Books/P/Performing-Glam-Rock2) — Scholarly monograph frames glam as first appearing in the early 1970s.
+- [Jon Stratton, Australian Journal of Cultural Studies](https://espace.curtin.edu.au/bitstream/20.500.11937/13847/2/145813_Stratton%20Aust%20J%20Cult%20Studies%204%281%29%201986.pdf) — Academic article explicitly dates British glam’s period to 1972–75 and analyzes chart conditions.
+- [University of Lancashire thesis record](https://knowledge.lancashire.ac.uk/id/eprint/11875/) — Academic repository abstract identifies emergence in the early 1970s.
 
-**Graph phase rationale** · Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review.
+## Assessment
 
-## Phases
+Early-1970s emergence is well supported. Stratton’s 1972–75 interval is a defensible, explicitly cited British framing, not a universal boundary; glam continued and diversified beyond it. Existing 1971–76 and “golden-age” phase implied excessive precision, so adjusted period and removed phase.
 
-- 1971 golden-age · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 1 unsuccessful, 0 pending.
+Period remains an editorial approximation: sources vary by whether they mean UK chart prominence, a stylistic movement, or later international glam.

@@ -42,15 +42,16 @@ interface GraphNode {
   id: string            // "<type>:<slug>", e.g. "genre:deep-house", "artist:kraftwerk"
   type: 'genre' | 'artist' | 'instrument' | 'label' | 'place' | 'track' | 'scene' | 'event'
   name: string          // Display name, e.g. "Deep house"
-  period?: { start: number; end?: number | null; precision?: 'year' | 'decade' | 'circa' } // Negative years are BCE
+  period?: { start: number; end?: number | null; precision?: 'year' | 'decade' | 'circa' } | null // Negative years are BCE
   description?: string  // 1–3 sentences, editorial and evocative but factual
   family?: GenreFamily | InstrumentFamily  // Timeline lane (required for genres and instruments)
   kind?: 'person' | 'group' | 'collective'   // Artists only
   category?: EventCategory                   // Events only (required). See "Events"
   significance?: 'landmark' | 'notable'      // Events only (optional). See "Events"
+  confidence?: 'low' | 'medium' | 'high'     // Editorial confidence in the overall entry
   sources?: string[]    // HTTPS URLs to relevant, credible sources
   phases?: ProminencePhase[]  // Genres, artists, and instruments only. See §5
-  phaseNote?: string    // Required whenever `phases` is present
+  phaseNote?: string    // Required when `phases` is nonempty
 }
 ```
 
@@ -65,7 +66,15 @@ interface GraphNode {
 | `place`  | City or region                                | Usually omitted                        |
 | `track`  | A specific recording                          | Release year (`start` = `end`)         |
 | `scene`  | Club, venue, party, radio show, or movement   | Active years                           |
-| `event`  | A dated turning point in music history (invention, format, broadcast, premiere, festival, law, migration) | When it happened (`start` = `end` for a single date, or a range for a process) |
+| `event`  | A turning point in music history (invention, format, broadcast, premiere, festival, law, migration) | When it happened (`start` = `end` for a single date, or a range for a process) |
+
+Supply a period when a defensible date is available; omit it or use `null` when
+it is not. Undated genres, artists, instruments, and events remain searchable
+and appear separately from dated timelines without an invented year.
+
+Optional node-level `confidence` describes the evidence for the overall entry,
+not every individual claim, date, phase, or relationship. It appears in the
+detail panel and should be supported by the entry's source review.
 
 ### Id conventions
 
@@ -120,9 +129,9 @@ and position in the order, so the code can be updated.
 Artists usually **omit** `family`; their lane is inferred from the genres they
 are a `key_artist_of` (the most-represented family wins). Set it only to override
 the inference (for example `artist:mozart` → `classical`), or when no
-`key_artist_of` relationship provides a family. Every artist needs a `period`
-and a resolvable family to render; a missing value prevents the entire artist
-timeline from loading. For example, `artist:women-on-wax` explicitly uses `techno`
+`key_artist_of` relationship provides a family. Every artist needs a resolvable
+family; a missing family prevents the artist timeline from loading. For example,
+`artist:women-on-wax` explicitly uses `techno`
 without claiming a key-artist relationship.
 
 ### Instrument families (Instruments timeline lanes)
@@ -140,7 +149,7 @@ are not valid for instruments, and instrument families are not valid for other n
 | `electronic` | Electronic & Studio | theremin, modular synthesizer, Minimoog, turntables, sampler, TR-808, TB-303, TR-909, Auto-Tune |
 
 Instrument ids use the generic name unless a specific model defines the sound
-(`instrument:tr-808`, `instrument:minimoog`). Pick `period.start` as the
+(`instrument:tr-808`, `instrument:minimoog`). When supported, pick `period.start` as the
 approximate first documented appearance of the recognizable form, usually with
 `precision: 'circa'` (the valved trumpet starts in 1818, not with ancient trumpets).
 Each instrument needs a `description`, `sources`, and at least one sourced
@@ -152,7 +161,7 @@ curve is supported, omit `phases` so the instrument appears as a neutral bar.
 
 ### Events (chronology)
 
-Events are the dated turning points that are **not** a genre, artist,
+Events are the turning points that are **not** a genre, artist,
 instrument, label, place, track, or scene, but that changed how music was made,
 heard, distributed, or remembered. They power the chronological "music history
 through the ages" view.
@@ -201,9 +210,10 @@ editorial weight used to filter the chronology, not a ranking.
 
 **Rules:**
 
-- `period` is required. Use `start` = `end` for a dated moment, or a range for a
-  process (for example the Great Migration). Use `precision: "circa"` for
-  early or contested dates and say so in the description.
+- When a `period` is supportable, use `start` = `end` for a dated moment, or a
+  range for a process (for example the Great Migration). Use `precision: "circa"`
+  for early or contested dates and say so in the description. Otherwise omit the
+  period; the event will appear in the undated section.
 - `name` is short and reads like a timeline caption ("MTV launches", "Napster is
   shut down", "Guido of Arezzo's staff notation").
 - `description`, `category`, and at least one `sources` URL are required.
@@ -344,13 +354,12 @@ Ids must be unique across all edges.
 3. Every edge's `from` and `to` reference an existing node.
 4. Only the node types, edge types, and families listed above are used, unless a new family is
    explicitly proposed (§2).
-5. `period.start` is an integer ≥ **-3000** and < 2100. Negative years are BCE.
-   `period.end`, when set, is an
-   integer ≥ `start`. Use `null` or omit `end` for "still active".
-6. **Every genre** has a `family` **and** a `period`. **Every artist** has a
-   `period` and either an explicit `family` or a `key_artist_of` relationship
-   to a genre with a family. Preserve explicit artist families when replacing
-   or enriching existing nodes.
+5. When supplied, `period.start` is an integer ≥ **-3000** and < 2100.
+   Negative years are BCE. `period.end`, when set, is an integer ≥ `start`.
+   Use `null` or omit `end` for "still active".
+6. **Every genre** has a `family`. **Every artist** has either an explicit
+   `family` or a `key_artist_of` relationship to a genre with a family.
+   Preserve explicit artist families when replacing or enriching existing nodes.
 7. **Every genre** has **at least 3** `key_artist_of` edges pointing to it, and
    **each of those edges has `sources`**.
 8. **Every artist** node has at least one `sources` URL.
@@ -367,14 +376,14 @@ Ids must be unique across all edges.
 13. Do not remove these v1 entities: Detroit techno, Chicago house, Kraftwerk, Juan
     Atkins, Derrick May, Kevin Saunderson, Cybotron, Metroplex, and Detroit.
 14. Classical, jazz, and rock genres listed in §2 must keep their family and sources.
-15. **Every instrument** has an instrument family, a `period`, a `description`,
+15. **Every instrument** has an instrument family, a `description`,
     `sources`, and at least one `featured_in` edge to a genre. Each instrument
     family has at least 3 instruments.
 16. `featured_in` always goes instrument → genre, and `plays` always goes artist →
     instrument. Instruments connect to other instruments only through
     `influences` or `derived_from`. Every edge touching an instrument has `sources`.
     Event edges (`shaped`, `involved`) may also point to instruments.
-17. **Every event** has a `category` from the Events table, a `period`, a
+17. **Every event** has a `category` from the Events table, a
     `description`, `sources`, and at least one `shaped` edge. `category` and
     `significance` appear only on events. Events have no `family` or `phases`.
 18. `shaped`, `involved`, and `occurred_in` always start from an event and
@@ -400,7 +409,7 @@ interface ProminencePhase {
 
 Rules:
 
-- The first phase's `start` **must equal** `period.start`.
+- Nonempty phases require a period; the first phase's `start` **must equal** `period.start`.
 - Phases are strictly ascending by `start`; each lasts until the next starts.
 - If `period.end` is set, every phase `start` must be `< period.end`.
 - `niche` hides the bar. If `intensity` is given with `niche`, it **must be 0**.
@@ -414,10 +423,12 @@ Rules:
   the basis.
 - Default intensities: emerging 0.35, golden-age 1, established 0.45, niche 0.
 - Revivals: return from `niche` to `emerging`/`established` later.
-- `phaseNote` is **required** when `phases` exists. It gives the node-level summary of
+- `phaseNote` is **required** when `phases` is nonempty. It gives the node-level summary of
   the full sequence and states that the shading is editorial, not a measured ranking.
-- Omit `phases` when no defensible prominence history exists; such nodes render as
-  neutral bars and do not require a `phaseNote`.
+- Omit `phases` or use an empty array when no defensible prominence history exists;
+  dated nodes render as neutral bars and do not require a `phaseNote`. A
+  `phaseNote`, when provided, remains visible in the detail panel and can
+  describe supported milestones without implying a continuous curve.
 - A phase-level `note` is optional. Use it only when a phase has its own useful rationale
   or a specific transition to explain; keep it concise and do not repeat the node-level
   `phaseNote`. When a note makes a specific historical claim, add phase-level `sources`
@@ -621,11 +632,12 @@ patch** in this exact shape:
 
 - [ ] Every new id is unique, prefixed correctly, and kebab-case
 - [ ] Every edge endpoint exists in `graph.json` or in `addNodes`
-- [ ] Every new genre has `family`, `period`, a `description`, `sources`, and ≥ 3 sourced
+- [ ] Every new genre has `family`, a `description`, `sources`, and ≥ 3 sourced
       `key_artist_of` edges
 - [ ] Every new genre with a well-supported parent or influence connects by lineage;
       preserve independent traditions as roots rather than inventing ancestry
-- [ ] Every new artist has `sources`, `kind`, `period`, and at least one edge
+- [ ] Every new artist has `sources`, `kind`, and at least one edge
+- [ ] Supply a supported `period` where possible; leave it undated rather than inventing one
 - [ ] Every artist has an explicit `family` or a `key_artist_of` relationship
       to a genre with a family
 - [ ] Every source is a valid HTTPS URL to a relevant, credible source, and the
@@ -638,7 +650,7 @@ patch** in this exact shape:
 - [ ] Phase `note` values (if present) add a specific rationale; claim-level
       `sources` support factual dates or transitions
 - [ ] New families are listed in `newFamilies`
-- [ ] Every new event has `category`, `period`, `description`, `sources`, a
+- [ ] Every new event has `category`, `description`, `sources`, a
       timeline-caption `name`, and ≥ 1 sourced `shaped` edge; it duplicates no
       existing instrument, label, scene, or track
 - [ ] Every edge touching an event is `shaped`, `involved`, or `occurred_in`, starts

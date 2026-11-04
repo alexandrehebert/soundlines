@@ -33,7 +33,7 @@ export interface BarPosition {
 }
 
 function positionBar(bar: TimelineBar, scale: TimeScale, yCenter: number): BarPosition {
-  const spans = bar.node.phases ? visibleSpans(bar.node, bar.end) : [[bar.start, bar.end]]
+  const spans = bar.node.phases?.length ? visibleSpans(bar.node, bar.end) : [[bar.start, bar.end]]
   return {
     node: bar.node,
     start: bar.start,

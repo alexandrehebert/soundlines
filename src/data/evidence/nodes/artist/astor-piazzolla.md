@@ -2,8 +2,21 @@
 
 Graph ID `artist:astor-piazzolla`
 
-**Review status** · Professional career anchors and tango role checked
+**Review status** · Reviewed · 2026-11-04
 
-## Evidence review
+**Reviewed** · 2026-11-04
 
-Argentina’s cultural ministry dates Piazzolla’s tenure with Troilo to 1939–1944 and documents his later integration of jazz and classical techniques into tango. The discography lists Octeto Buenos Aires releases in 1956–1957 and dates his last concert to July 3, 1990, in Athens. The graph uses 1939 as an early professional milestone and 1990 as the last performance year. Later release dates include archival material. [Piazzolla profile](https://www.argentina.gob.ar/noticias/astor-piazzolla-el-tango-como-lenguaje-universal), [Troilo profile](https://www.argentina.gob.ar/noticias/110-anos-del-nacimiento-de-anibal-troilo-un-emblema-de-la-musica-ciudadana), [Discography](https://astorpiazzolla.com/es/a-puro-piazzolla/)
+## Sources checked
+
+- [Argentina National Institute of Musicology: Piazzolla centenary](https://inmcv.cultura.gob.ar/noticia/los-100-anos-de-piazzolla/) — National musicology institute dates his entry into Aníbal Troilo’s orchestra to 1939 and last studio recording to 1988; search extract accessible, direct page blocked.
+- [Atlanta Symphony Orchestra biography](https://www.aso.org/artists/detail/astor-piazzolla) — Orchestra biography documents 1955 return, Octeto Buenos Aires and 1992 death.
+- [Argentina government: Piazzolla biography](https://www.argentina.gob.ar/node/506509) — Official government account confirms Troilo orchestra career and fatal 1990 thrombosis followed by 1992 death.
+- [AllMusic tango style page](https://www.allmusic.com/style/tango-ma0000002891) — Genre context only; not used to establish Piazzolla’s biography or precise period.
+
+## Assessment
+
+The 1939 start is corroborated as entry to Troilo’s orchestra, a meaningful professional milestone. Corrected the graph’s circa-1990 endpoint to 1992, his death year; 1990 marks the stroke, not career end. Removed endpoint ambiguity.
+
+## Remaining uncertainty
+
+The existing Piazzolla Foundation / AllMusic sources should be audited separately; exact endpoint could alternatively use last recording in 1988, but the graph models his career through his death.

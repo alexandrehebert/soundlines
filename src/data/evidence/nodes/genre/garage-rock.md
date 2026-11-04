@@ -2,18 +2,30 @@
 
 Graph ID `genre:garage-rock`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · retrospective label and continuing revivals distinguished
 
-**Graph period** · 1963–1970 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Raw, stripped-down rock associated with 1960s amateur and regional bands, drawing on rock and roll, blues and R&B; the name was later revived for new scenes.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/garage-rock-ma0000004458>), [2](<https://academic.oup.com/book/6294>)
+- [Popular Music and Society: The Sound of the Suburbs](https://scholarworks.sjsu.edu/lib_pub/55/) — Peer-reviewed study of three San Jose garage bands in the 1960s.
+- [University of Pittsburgh dissertation: garage bands and scene history](https://d-scholarship.pitt.edu/7260/1/feldmancj409.pdf) — Research places garage-band mini-scenes across US cities and dates their spread to the mid-1960s.
+- [Volume! Revue des musiques populaires: Garage-rock terminology](https://journals.openedition.org/volume/pdf/9428) — Historical discussion emphasizes the retrospective naming and role of Nuggets-era criticism.
+- [Oxford University Press: garage rock chapter](https://academic.oup.com/book/6294) — Academic reference on garage rock as a diverse musical scene and style.
 
-**Graph phase rationale** · Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review.
+## Assessment
 
-## Phases
+Replaced AllMusic-only evidence and challenged the neat 1963–70 lifecycle: the category was largely retrospective, while regional bands and later revival scenes extend beyond the original 1960s referent.
 
-- 1963 golden-age · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 1 unsuccessful, 0 pending.
+The field includes regionally distinct scenes; the year 1964 is an approximate documentary/style anchor rather than the genre’s first moment.
+
+## Retained phase annotations
+
+These former annotations are preserved for review context. They may be provisional or unsupported and do not assert a continuous prominence curve; the former intensity values were editorial.
+
+**Previous phase summary.** Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review.
+
+- 1964: `emerging`; confidence: `medium` — Mid-1960s bands formed a retrospective stylistic category; contemporaneous musicians did not necessarily use “garage rock” as a genre name.
+  - Former phase sources: <https://scholarworks.sjsu.edu/lib_pub/55/>, <https://d-scholarship.pitt.edu/7260/1/feldmancj409.pdf>, <https://journals.openedition.org/volume/pdf/9428>

@@ -2,20 +2,16 @@
 
 Graph ID `genre:americana`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · 2026-11-04
 
-**Graph period** · 1990 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A roots-oriented umbrella that draws on country, folk, blues and related American traditions. The term gained broader currency in the 1990s for artists working outside Nashville’s mainstream country format.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/americana-ma0000004415>)
+- [Americana Music Association — About and Association History](https://americanamusic.org/about/) — Association history dates the organizing meeting to 1999 and first convention to 2000; its mission centers American roots music. Direct official source.
+- [DDEX — Americana music genre definition](https://service.ddex.net/dd/DD-AVS-007/dd/ddex_Americana.html) — Industry metadata vocabulary describes Americana as drawing on early folk/country and other acoustic American genres, emerging as a 1990s descriptor.
+- [Americana Music Association — Official history](https://americanamusic.org/about/) — Cross-checked its dated chronology; shows institutional milestones, not a singular sound origin or “golden age.”
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed.
+## Assessment
 
-## Phases
-
-- 1990 emerging · unrated · No phase note · None recorded
-- 2001 golden-age · unrated · No phase note · None recorded
-- 2018 established · unrated · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+1990s start is defensible as category/industry consolidation, not the beginning of the underlying musical traditions. Deleted arbitrary 2001 golden-age and 2018 established phases: association milestones do not measure genre-wide popularity.

@@ -40,8 +40,11 @@ const graph: MusicGraph = {
   ],
 }
 
-function renderTimeline(view: TimelineView, order: TimelineOrder, viewRange: [number, number], selectedId: string | null = null) {
-  const index = buildIndex(graph)
+function renderTimeline(
+  view: TimelineView, order: TimelineOrder, viewRange: [number, number], selectedId: string | null = null,
+  data: MusicGraph = graph,
+) {
+  const index = buildIndex(data)
   return renderToStaticMarkup(
     <ExplorerContext.Provider value={{
       index, model: createTimelineModel(index, view), view,
@@ -61,6 +64,28 @@ beforeEach(() => {
 })
 
 describe('timeline viewport rendering', () => {
+  it.each([
+    ['genre', 'jazz', 'genres'],
+    ['artist', 'jazz', 'artists'],
+    ['instrument', 'strings', 'instruments'],
+  ] as const)('shows selectable undated %s entries outside the plotted bars', (view, family, label) => {
+    const id = `${view}:undated`
+    const data: MusicGraph = {
+      ...graph,
+      nodes: [...graph.nodes, { id, type: view, name: 'Undated example', family, period: null }],
+    }
+    const markup = renderTimeline(view, 'family', [1700, 2026], id, data)
+    expect(markup).toContain(`aria-label="Undated ${label}"`)
+    expect(markup).toContain(`data-undated-node="${id}"`)
+    expect(markup).toMatch(new RegExp(`data-undated-node="${id}" aria-pressed="true"`))
+    expect(markup).not.toContain(`data-timeline-bar="${id}"`)
+    expect(markup).toContain('Undated example')
+  })
+
+  it('does not add an undated section when every entry has a period', () => {
+    expect(renderTimeline('genre', 'family', [1700, 2026])).not.toContain('aria-label="Undated genres"')
+  })
+
   it('only renders nearby row details while retaining every keyboard target', () => {
     viewport.verticalViewport = { top: 50, bottom: 80 }
     const markup = renderTimeline('artist', 'oldest-first', [1700, 2026])

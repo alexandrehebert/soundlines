@@ -2,10 +2,19 @@
 
 Graph ID `artist:gang-starr`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · formation, member partnership and later releases distinguished
 
-**Graph period** · 1986–2003 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/gang-starr-mn0000193601>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Gang Starr official biography (Jason Birchmeier)](https://gangstarr.global/pages/bio) — Dates Guru’s founding, 1989 partnership, albums through 2003, Guru’s 2010 death and 2019 track.
+- [Red Bull Music Academy: Gang Starr’s Beginnings](https://daily.redbullmusicacademy.com/2014/03/gang-starr-beginnings/) — DJ Premier retrospective on formation and classic duo.
+
+## Assessment
+
+Corrected end date 2003: last classic duo studio album, not last documented group activity. The 2019 release used unreleased Guru verses.
+
+## Remaining uncertainty
+
+Period end conventionally marks last documented new track under the name, including a posthumous-verse project.

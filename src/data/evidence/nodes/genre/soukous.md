@@ -2,21 +2,30 @@
 
 Graph ID `genre:soukous`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Congolese rumba and later soukous distinguished
 
-**Graph period** · 1940–1990 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A Congolese popular dance music whose guitar-led sound developed through local rumba, Cuban and other transatlantic exchanges. The term is often used broadly for related Congolese styles.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/soukous-ma0000002784>), [2](<https://www.britannica.com/art/soukous>)
+- [SOAS thesis: Grupo Lokito](https://eprints.soas.ac.uk/14703/1/Mcguinness_3420.pdf) — Research outlines 1940s–50s first generation of Congolese rumba; helps distinguish it from later soukous formations.
+- [Red Bull Music Academy: Seben Heaven—Roots of Soukous](https://daily.redbullmusicacademy.com/2018/12/the-roots-of-soukous/) — Specialist historical account discusses terminology, Congolese rumba and the guitar-led sebene.
+- [University of Edinburgh thesis: Rumba from Congo to Cape Town](https://era.ed.ac.uk/items/37fed784-c5aa-4bb4-9305-5736fedb5f88) — Academic research traces Congolese rumba’s circulation and Pan-African significance.
+- [Music in Africa: African guitar styles](https://musicinafrica.net/magazine/african-guitar-styles/) — Regional music reference places guitar-led dance styles in the two Congos in the 1950s and 1960s.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Corrected a conflation: 1940s–50s sources describe Congolese rumba, while soukous is a later and variably applied label. Removed unsupported lifecycle phases and narrowed the timeline to the broad 1960s transition.
 
-- 1940 emerging · unrated · No phase note · None recorded
-- 1950 golden-age · unrated · No phase note · None recorded
-- 1980 established · unrated · No phase note · None recorded
-- 1988 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Sources do not establish one definitive naming date; consider treating soukous as an umbrella node with explicit lineage rather than a sharply bounded genre.
+
+## Retained phase annotations
+
+These former annotations are preserved for review context. They may be provisional or unsupported and do not assert a continuous prominence curve; the former intensity values were editorial.
+
+**Previous phase summary.** Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+
+- 1960: `emerging`; confidence: `low` — Broad postwar-to-1960s transition from Congolese rumba toward styles later called soukous; sources caution that naming and genre boundaries vary.
+  - Former phase sources: <https://eprints.soas.ac.uk/14703/1/Mcguinness_3420.pdf>, <https://daily.redbullmusicacademy.com/2018/12/the-roots-of-soukous/>, <https://era.ed.ac.uk/items/37fed784-c5aa-4bb4-9305-5736fedb5f88>

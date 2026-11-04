@@ -18,6 +18,48 @@ import {
 const graph = rawGraph as MusicGraph
 
 describe('graph.json integrity', () => {
+  it('uses valid optional confidence values for node accounts', () => {
+    for (const node of graph.nodes) {
+      if (node.confidence !== undefined) {
+        expect(['low', 'medium', 'high'], node.id).toContain(node.confidence)
+      }
+    }
+  })
+
+  it('keeps incomplete prominence histories neutral without losing their context', () => {
+    const ids = [
+      'artist:bee-gees', 'artist:donna-summer', 'artist:tony-allen',
+      'genre:alt-country', 'genre:alternative-rock', 'genre:big-beat', 'genre:bossa-nova',
+      'genre:breakbeat-hardcore', 'genre:britpop', 'genre:chicago-house', 'genre:chillwave',
+      'genre:chopped-and-screwed', 'genre:country', 'genre:deep-house', 'genre:disco',
+      'genre:g-funk', 'genre:garage-house', 'genre:garage-rock', 'genre:girl-groups',
+      'genre:gnawa', 'genre:gothic-rock', 'genre:gqom', 'genre:grime', 'genre:grunge',
+      'genre:heavy-metal', 'genre:highlife', 'genre:hip-hop', 'genre:horrorcore', 'genre:hyphy',
+      'genre:minimal-techno', 'genre:minimalism', 'genre:neo-soul', 'genre:soukous',
+      'instrument:clarinet', 'instrument:theremin', 'instrument:euphonium',
+    ]
+    for (const id of ids) {
+      const node = graph.nodes.find((candidate) => candidate.id === id)
+      expect(node, id).toBeDefined()
+      expect(node?.phases ?? [], id).toEqual([])
+      expect(node?.phaseNote, id).toContain('No complete prominence curve is assigned.')
+      expect(node?.sources?.length, id).toBeGreaterThan(0)
+    }
+
+    expect(graph.nodes.find((node) => node.id === 'genre:girl-groups')?.period?.end).toBeNull()
+    expect(graph.nodes.find((node) => node.id === 'genre:gnawa')?.period).toBeNull()
+  })
+
+  it('does not use later career milestones as unsupported artist starts', () => {
+    const ahn = graph.nodes.find((node) => node.id === 'artist:ahn-sook-sun')
+    const monroe = graph.nodes.find((node) => node.id === 'artist:bill-monroe')
+    expect(ahn?.period).toBeNull()
+    expect(ahn?.description).toContain('before joining the National Changgeuk Company in 1979')
+    expect(monroe?.period).toEqual({ start: 1930, end: 1996, precision: 'circa' })
+    expect(createTimelineModel(buildIndex(graph), 'artist').undated.map((node) => node.id))
+      .toContain('artist:ahn-sook-sun')
+  })
+
   it('uses explicit confidence for instrument phases when a phase curve is justified', () => {
     for (const node of graph.nodes.filter((candidate) => candidate.type === 'instrument')) {
       for (const phase of node.phases ?? []) {
@@ -33,8 +75,9 @@ describe('graph.json integrity', () => {
   it('has ordered, known editorial phases within each genre, artist, or instrument lifespan', () => {
     for (const node of graph.nodes.filter((candidate) => candidate.phases !== undefined)) {
       expect(['genre', 'artist', 'instrument']).toContain(node.type)
+      expect(Array.isArray(node.phases), node.id).toBe(true)
+      if (!node.phases?.length) continue
       expect(node.phaseNote).toBeTruthy()
-      expect(node.phases!.length).toBeGreaterThan(0)
       expect(node.phases![0].start).toBe(node.period?.start)
       for (const [i, phase] of node.phases!.entries()) {
         expect(Number.isInteger(phase.start)).toBe(true)
@@ -130,7 +173,7 @@ describe('graph.json integrity', () => {
   it('has sane periods (start <= end, plausible years)', () => {
     const withPeriod = graph.nodes.filter(
       (node): node is GraphNode & { period: { start: number; end?: number | null } } =>
-        node.period !== undefined,
+        node.period != null,
     )
     expect(withPeriod.length).toBeGreaterThan(0)
     for (const node of withPeriod) {
@@ -144,25 +187,23 @@ describe('graph.json integrity', () => {
     }
   })
 
-  it('gives every genre and artist a resolvable family and a period', () => {
+  it('gives every genre and artist a resolvable family', () => {
     const index = buildIndex(graph)
     for (const node of graph.nodes.filter((candidate) =>
       candidate.type === 'genre' || candidate.type === 'artist',
     )) {
       const family = node.type === 'artist' ? artistFamily(index, node) : node.family
       expect(family, `${node.id} needs a family or a key_artist_of genre with a family`).toBeDefined()
-      expect(node.period, node.id).toBeDefined()
     }
   })
 
-  it('gives every instrument an instrument family, a period, sources, and sourced genre links', () => {
+  it('gives every instrument an instrument family, sources, and sourced genre links', () => {
     const index = buildIndex(graph)
     const instruments = graph.nodes.filter((node) => node.type === 'instrument')
     expect(instruments.length).toBeGreaterThanOrEqual(30)
     for (const instrument of instruments) {
       expect(INSTRUMENT_FAMILY_ORDER, instrument.id).toContain(instrument.family)
       expect(timelineFamily(index, instrument), instrument.id).toBe(instrument.family)
-      expect(instrument.period, instrument.id).toBeDefined()
       expect(instrument.description, instrument.id).toBeTruthy()
       expect(instrument.sources?.length, instrument.id).toBeGreaterThan(0)
       const featured = graph.edges.filter((edge) => edge.type === 'featured_in' && edge.from === instrument.id)
@@ -190,7 +231,7 @@ describe('graph.json integrity', () => {
     }
   })
 
-  it('gives every event a category, a period, a description, sources, and sourced links', () => {
+  it('gives every event a category, a description, sources, and sourced links', () => {
     for (const node of graph.nodes) {
       if (node.type === 'event') continue
       expect(node.category, node.id).toBeUndefined()
@@ -203,7 +244,6 @@ describe('graph.json integrity', () => {
       if (event.significance !== undefined) {
         expect(['landmark', 'notable'], event.id).toContain(event.significance)
       }
-      expect(event.period, event.id).toBeDefined()
       expect(event.description, event.id).toBeTruthy()
       expect(event.sources?.length, event.id).toBeGreaterThan(0)
       const shaped = graph.edges.filter((edge) => edge.type === 'shaped' && edge.from === event.id)
@@ -321,7 +361,10 @@ describe('graph.json integrity', () => {
     const index = buildIndex(graph)
     for (const view of ['genre', 'artist', 'instrument'] as const) {
       const model = createTimelineModel(index, view)
-      const ids = model.lanes.flatMap((lane) => lane.bars.map((bar) => bar.node.id))
+      const ids = [
+        ...model.lanes.flatMap((lane) => lane.bars.map((bar) => bar.node.id)),
+        ...model.undated.map((node) => node.id),
+      ]
       expect(new Set(ids).size).toBe(graph.nodes.filter((node) => node.type === view).length)
       const families = view === 'instrument' ? INSTRUMENT_FAMILY_ORDER : ['classical', 'jazz', 'rock']
       for (const family of families) {
@@ -409,11 +452,14 @@ describe('graph.json integrity', () => {
       .toEqual(graph.nodes.filter((node) => node.type === 'genre').map((node) => node.id).sort())
     for (const [family, slugs] of Object.entries(expected)) {
       const lane = model.lanes.find((candidate) => candidate.family === family)
+      const members = model.index.graph.nodes.filter((node) => node.family === family)
       expect(lane, family).toBeDefined()
-      expect(lane!.bars.map((bar) => bar.node.id).sort())
+      expect(members.map((node) => node.id).sort())
         .toEqual(slugs.map((slug) => `genre:${slug}`).sort())
-      expect(lane!.bars.length, family).toBeGreaterThanOrEqual(3)
-      expect(lane!.bars.length, family).toBeLessThanOrEqual(20)
+      expect(lane!.bars.map((bar) => bar.node.id).sort())
+        .toEqual(members.filter((node) => node.period).map((node) => node.id).sort())
+      expect(members.length, family).toBeGreaterThanOrEqual(3)
+      expect(members.length, family).toBeLessThanOrEqual(20)
     }
   })
 
@@ -525,8 +571,15 @@ describe('graph.json integrity', () => {
     expect(index.outEdges.get(genreId)).toEqual(expect.arrayContaining([
       expect.objectContaining({ type: 'originated_in', to: `place:${place}` }),
     ]))
-    expect(createTimelineModel(index, 'genre').lanes.find((lane) => lane.family === 'african')
-      ?.bars.some((bar) => bar.node.id === genreId)).toBe(true)
+    const genreModel = createTimelineModel(index, 'genre')
+    const hasDatedBar = genreModel.lanes.find((lane) => lane.family === 'african')
+      ?.bars.some((bar) => bar.node.id === genreId)
+    if (genre === 'gnawa') {
+      expect(hasDatedBar).toBe(false)
+      expect(genreModel.undated.map((node) => node.id)).toContain(genreId)
+    } else {
+      expect(hasDatedBar).toBe(true)
+    }
 
     const artistModel = createTimelineModel(index, 'artist')
     for (const artist of artists) {

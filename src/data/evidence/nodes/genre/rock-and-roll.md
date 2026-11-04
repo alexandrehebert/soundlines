@@ -2,21 +2,21 @@
 
 Graph ID `genre:rock-and-roll`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · roots, commercial naming and breakthroughs cross-checked
 
-**Graph period** · 1950 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A mid-20th-century popular style formed through African American rhythm and blues, country, gospel, and other regional traditions. It reached broad youth and national audiences in the United States in the mid-1950s, while its roots and early contributors predate that commercial breakthrough.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Rock_and_roll>), [2](<https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rock/>), [3](<https://www.loc.gov/exhibits/british/brit-7.html>), [4](<https://www.cambridge.org/core/books/abs/cambridge-history-of-american-music/rock-and-roll-era/F4ECDF4D5E2B5AD13CA2C448B14ADAD9>)
+- [Library of Congress: Rock](https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rock/) — Institutional overview of the rock era and its musical antecedents.
+- [Case Western Reserve Encyclopedia of Cleveland History: Rock & Roll](https://case.edu/ech/articles/r/rock-roll) — Corrects the myth that Alan Freed invented the term; locates Cleveland radio role in rock and roll becoming a distinct commercial category.
+- [Cambridge History of American Music: The Rock and Roll Era](https://www.cambridge.org/core/books/abs/cambridge-history-of-american-music/rock-and-roll-era/F4ECDF4D5E2B5AD13CA2C448B14ADAD) — Academic account of the mid-1950s era.
+- [US Government Publishing Office: Rock ’n’ roll](https://www.govinfo.gov/content/pkg/GOVPUB-S20-PURL-gpo1267/pdf/GOVPUB-S20-PURL-gpo1267.pdf) — Public-history account describes mid-1950s transformation and notes Alan Freed commercialized the term.
 
-**Graph phase rationale** · Approximate U.S. popular-music visibility: related Black and country traditions predate the mid-1950s, when rock and roll reached broad national and youth audiences. The phases mark that commercial breakthrough and subsequent diversification, not the invention of its roots or a global popularity curve.
+## Assessment
 
-## Phases
+The entry was already more nuanced than many origin accounts, but had an unnecessary Wikipedia citation and overly fine phases. Sources support broad mid-century emergence and mid-1950s national-market breakthrough, not one inventor or exact birth date.
 
-- 1950 emerging · unrated · The mid-1950s brought broad U.S. youth and national-market visibility to a music with earlier Black and country antecedents; 1950 is a decade-level approximation. · [1](https://academic.oup.com/illinois-scholarship-online/book/17227/chapter-abstract/174621879)
-- 1955 golden-age · unrated · No phase note · None recorded
-- 1959 established · unrated · No phase note · None recorded
-- 1964 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.
+Rock and roll origins remain contested because the label consolidated multiple Black and white regional practices; future note work should surface Black artists’ foundational contributions prominently.

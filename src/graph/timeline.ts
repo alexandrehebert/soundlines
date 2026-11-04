@@ -124,8 +124,14 @@ export function createTimelineModel(
 ) {
   const nodes = index.graph.nodes.filter((node) => node.type === view).map((node) => {
     const family = timelineFamily(index, node)
-    if (!family || !node.period) {
-      throw new Error(`Timeline node ${node.id} needs a period and a ${view === 'instrument' ? 'known instrument' : 'genre'} family`)
+    if (!family) {
+      throw new Error(`Timeline node ${node.id} needs a ${view === 'instrument' ? 'known instrument' : 'genre'} family`)
+    }
+    if (node.period != null && !Number.isInteger(node.period.start)) {
+      throw new Error(`Timeline node ${node.id} has an invalid start year`)
+    }
+    if (node.period?.end != null && (!Number.isInteger(node.period.end) || node.period.end < node.period.start)) {
+      throw new Error(`Timeline node ${node.id} has an invalid end year`)
     }
     return { ...node, family }
   })
@@ -139,6 +145,8 @@ export function createTimelineModel(
     view,
     index: buildIndex(graph),
     lanes: layoutFamilies(graph, now, view),
+    undated: nodes.filter((node) => node.period == null)
+      .sort((a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id)),
     orientation,
     edgeColors: EDGE_COLORS[view],
   }

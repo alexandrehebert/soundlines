@@ -2,12 +2,20 @@
 
 Graph ID `artist:artful-dodger`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · 2026-11-04
 
-**Graph period** · 1993
+**Reviewed** · 2026-11-04
 
-**Graph claim** · English garage music duo.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Artful_Dodger_(duo)>)
+- [London Records artist biography](https://londonrecords.co.uk/artists/artful-dodger/) — Label history identifies Hill and Devereux, Southampton roots, early bootleg remixes, and their 1999 chart breakthrough.
+- [Official Charts: Artful Dodger](https://www.officialcharts.com/artist/2341/artful-dodger/) — Official chart authority identifies duo and 1999 Re-Rewind breakout; confirms the commercial phase, not exact formation year.
+- [NME: duo split announcement](https://www.nme.com/news/music/artful-dodger-3-1378527) — Contemporary report documents Hill and Devereux separating in 2001.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Replaced the unsupported 1993 formation date with circa 1997, conservatively marking the documented production/early singles period; end circa 2001 reflects the original duo splitting. The 1999 breakthrough is strongly documented.
+
+## Remaining uncertainty
+
+The pair’s earliest unofficial bootlegs predate chart recognition; a dated first release or studio record is needed to make 1997 an exact origin date.

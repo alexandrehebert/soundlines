@@ -2,26 +2,24 @@
 
 Graph ID `artist:depeche-mode`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · sources cross-checked
 
-**Graph period** · 1980
+**Reviewed** · 2026-11-04
 
-**Graph claim** · English electronic music group that emerged from the early synth-pop scene.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Depeche_Mode>)
+- [Sony Music UK artist profile](https://www.sonymusic.co.uk/artist/depeche-mode/) — Identifies the group as English electronic music and dates formation to 1980.
+- [Depeche Mode Archives: 1980 tour dates](https://archives.depechemode.com/past_tours/1980tour/dates.html) — Primary archive documents the early lineup and dated 1980 performances.
+- [Depeche Mode Archives: Black Celebration](https://archives.depechemode.com/discography/albums/08_blackcelebration.html) — Official discography dates the 1986 album, a defensible stylistic and career milestone.
+- [Depeche Mode Archives: Rose Bowl](https://archives.depechemode.com/specials/june_18_1988.html) — Official archive documents the large 1988 Pasadena show during the Music for the Masses tour.
+- [Official Charts artist history](https://www.officialcharts.com/artist/20192/depeche-mode/) — Independent chart record confirms 1990 breakthrough and UK No. 1 albums in 1993 and 1997.
+- [Rock & Roll Hall of Fame profile](https://rockhall.com/inductees/depeche-mode/) — Institutional account contextualizes the group’s influence and sound.
+- [Depeche Mode Archives: Memento Mori](https://archives.depechemode.com/discography/albums/26_mementomori.html) — Official discography dates the 15th studio album to March 24, 2023, confirming continuing activity.
 
-**Graph phase rationale** · Editorial career prominence anchored to early synth-pop, the late-1980s expansion, Violator and Songs of Faith and Devotion, then continuing releases including Memento Mori. The selected shades are not chart measurements and do not imply the band stopped between albums.
+## Assessment
 
-## Phases
+Replaced the sole tertiary citation with the label profile, the band’s own archive, Official Charts, and the Rock & Roll Hall of Fame. The 1980 start is supported by the label and dated band archive. Reduced nine largely repetitive phase markers to three defensible editorial periods. Official Charts independently supports the commercial peak (including No. 1 albums in 1993 and 1997); the band archive supports the 1986 and 1988 milestone anchors. The broad “golden-age” boundary remains interpretive, so confidence is medium.
 
-- 1980 emerging (0.3) · unrated · The band formed in 1980; the first UK chart entry followed in 1981. “Emerging” is an editorial career phase. · [1](https://www.officialcharts.com/artist/20192/depeche-mode/)
-- 1981 emerging (0.55) · unrated · No phase note · None recorded
-- 1986 golden-age (0.8) · unrated · No phase note · None recorded
-- 1990 golden-age (1) · unrated · No phase note · None recorded
-- 1993 golden-age (0.9) · unrated · No phase note · None recorded
-- 1997 established (0.6) · unrated · No phase note · None recorded
-- 2005 established (0.65) · unrated · No phase note · None recorded
-- 2010 established (0.5) · unrated · No phase note · None recorded
-- 2023 established (0.65) · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The sources establish formation, releases, touring, chart performance, and influence. The precise 1986 and 1997 phase boundaries remain editorial; popularity varies by country and metric. Memento Mori verifies current-era activity, but this audit does not characterize the band’s full 2020s reception.

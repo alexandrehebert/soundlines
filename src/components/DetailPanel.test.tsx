@@ -46,6 +46,49 @@ function renderPanel(data: MusicGraph, selectedId: string) {
 }
 
 describe('detail panel sources', () => {
+  it.each([undefined, null])('explains an undated entry and retains its sources and relationships (%s)', (period) => {
+    const data: MusicGraph = {
+      ...graph,
+      nodes: graph.nodes.map((node) => node.id === 'genre:jazz' ? {
+        ...node, period, phases: [], phaseNote: 'No single origin date is supported.',
+      } : node),
+    }
+    const markup = renderPanel(data, 'genre:jazz')
+    expect(markup).toContain('No period specified')
+    expect(markup).toContain('No single origin date is supported.')
+    expect(markup).toContain('Example artist')
+    expect(markup).toContain('href="https://example.com/Jazz"')
+  })
+
+  it('shows the editorial explanation for a dated entry without prominence phases', () => {
+    const data: MusicGraph = {
+      ...graph,
+      nodes: graph.nodes.map((node) => node.id === 'genre:jazz' ? {
+        ...node, phases: [], phaseNote: 'A breakthrough is documented, but no complete curve is assigned.',
+      } : node),
+    }
+    const markup = renderPanel(data, 'genre:jazz')
+
+    expect(markup).toContain('A breakthrough is documented, but no complete curve is assigned.')
+    expect(markup).not.toContain('Historical prominence')
+    expect(markup).toContain('href="https://example.com/Jazz"')
+  })
+
+  it('distinguishes entry-level confidence from phase and relationship confidence', () => {
+    const data: MusicGraph = {
+      ...graph,
+      nodes: graph.nodes.map((node) => node.id === 'genre:jazz' ? {
+        ...node, confidence: 'medium',
+      } : node),
+    }
+    const markup = renderPanel(data, 'genre:jazz')
+
+    expect(markup).toContain('title="Overall editorial confidence in this entry; individual claims and phases may differ."')
+    expect(markup).toContain('Entry confidence:')
+    expect(markup).toContain('>medium</span>')
+    expect(markup).toContain('title="Confidence: high"')
+  })
+
   it('shows phase-specific confidence, notes, and sources alongside the editorial summary', () => {
     const data: MusicGraph = {
       ...graph,
