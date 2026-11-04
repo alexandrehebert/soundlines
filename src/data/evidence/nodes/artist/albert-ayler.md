@@ -4,7 +4,7 @@ Graph ID `artist:albert-ayler`
 
 **Review status** · Reviewed — career start and free-jazz role confirmed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 

@@ -2,10 +2,13 @@
 
 Graph ID `key:u-srinivas-carnatic`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [NPR](https://www.npr.org/2014/09/25/351492627/remembering-mandolin-hero-u-srinivas) — brought the mandolin into Carnatic music
+- [The Hindu](https://www.thehindu.com/news/national/tamil-nadu/mandolin-shrinivas-passes-away/article11142215.ece) — Carnatic mandolin maestro; national honours
+- [AllMusic](https://www.allmusic.com/artist/u-srinivas-mn0000215596) — existing
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/u-srinivas-mn0000215596>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Two independent press obituaries describe him as a leading Carnatic instrumentalist. Confidence raised to high.

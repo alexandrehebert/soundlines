@@ -2,10 +2,12 @@
 
 Graph ID `key:bach-baroque`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Wikipedia — Baroque music](https://en.wikipedia.org/wiki/Baroque_music) — Bach as a central late-Baroque composer
+- [Classic FM — Baroque](https://www.classicfm.com/discover-music/periods-genres/baroque/) — names Bach among the defining Baroque composers
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Baroque_music>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Bach is a canonical Baroque figure in every survey; two independent sources. Confidence raised to high.

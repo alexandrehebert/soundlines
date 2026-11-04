@@ -2,10 +2,14 @@
 
 Graph ID `key:bob-dylan-folk`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — raised to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Nobel Prize biography](https://www.nobelprize.org/prizes/literature/2016/dylan/biographical/) — passion for American folk; Guthrie an idol; Greenwich Village from 1961; debut 1962.
+- [Rock & Roll Hall of Fame: Bob Dylan](https://www.rockhall.com/inductees/bob-dylan) — brought "folk-rock into the mainstream".
+- [Wikipedia: American folk music revival](https://en.wikipedia.org/wiki/American_folk_music_revival) — named among the new revival folk musicians of the 1960s.
+- [AllMusic: Folk genre](https://www.allmusic.com/genre/folk-ma0000002592) (blocked; existing).
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/folk-ma0000002592>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Three independent sources directly tie Dylan to the folk revival, so confidence is now high.

@@ -4,7 +4,7 @@ Graph ID `artist:jamiroquai`
 
 **Review status** · Reviewed — 1992 formation and acid-jazz identity confirmed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 

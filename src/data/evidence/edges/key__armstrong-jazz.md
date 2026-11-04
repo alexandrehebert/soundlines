@@ -2,10 +2,16 @@
 
 Graph ID `key:armstrong-jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — key status confirmed; raised to high
 
-**Relationship** · key_artist_of · medium
+**Reviewed** · 2026-11-03
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Jazz>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, jazz](https://www.britannica.com/art/jazz) — developed by African Americans; “from its very beginnings at the turn of the 20th century”; Armstrong and Ellington among key topics.
+- [Louis Armstrong House Museum](https://www.louisarmstronghouse.org/biography/) — Hot Five/Hot Seven era and lifelong jazz career.
+- [Wikipedia, Jazz](https://en.wikipedia.org/wiki/Jazz) — original/secondary orientation; checked via API.
+
+## Assessment
+
+Armstrong is a central jazz figure in Britannica’s core jazz article and his museum biography. Uncontroversial; confidence → high.

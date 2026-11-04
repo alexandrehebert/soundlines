@@ -2,12 +2,14 @@
 
 Graph ID `lineage:classical-progressive`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Weak target; set to low with note
+**Reviewed** · 2026-11-03
 
-**Relationship** · influences · medium
+## Sources checked
+- [Wikipedia — Progressive rock](https://en.wikipedia.org/wiki/Progressive_rock) — techniques "associated with jazz, folk, or classical music"; only a minority (ELP, Renaissance, Ekseption) directly emulated classical music
 
-**Graph note** · Classical forms and repertoire are one source for progressive-rock composition, not its sole ancestor.
+## Assessment
+The source supports influence from classical music as an umbrella, not from the Classical era node specifically. Confidence lowered to low with a clarifying note.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Progressive_rock>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Remaining uncertainty
+The edge might better originate from a broader classical-music node if one exists (flagged).

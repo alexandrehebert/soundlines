@@ -2,19 +2,16 @@
 
 Graph ID `genre:russian-folk`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — period kept as documentation anchor; phases rebuilt on dated milestones
+**Reviewed** · 2026-11-03
 
-**Graph period** · 1800 (circa)
+## Sources checked
+- [Encyclopedia.com (Encyclopedia of Russian History): Folk music](https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/folk-music-0) — oral peasant tradition; educated interest from the late 18th c.; Lvov–Prach collection 1790; Andreyev orchestra 1896; Piatnitsky choir 1911; Soviet state ensembles in the 1930s; Pokrovsky revival from the 1970s.
+- [AllMusic: Russian folk style](https://www.allmusic.com/style/russian-folk-ma0000012024) (blocked; existing).
+- [Smithsonian Folkways: Russia](https://folkways.si.edu/country/russia) (403 on this pass; existing).
 
-**Graph claim** · A broad label for diverse Russian vernacular song and instrumental traditions. This node is a starting point for regional and community-specific documentation, not a single uniform national style.
+## Assessment
+Circa 1800 is retained as a documentation anchor (collections from 1790), not an origin. The first phase was "emerging", which misdescribes an old tradition; it is now established (low). Added 1896 (professional folk ensembles) and 1973 (Pokrovsky authentic-performance revival) markers, all from the encyclopedia entry.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/russian-folk-ma0000012024>), [2](<https://folkways.si.edu/country/russia>), [3](<https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/folk-music-0>)
-
-**Graph phase rationale** · Provisional editorial staging from emergence into continued practice. The 1950 marker is a broad modern observation point, not a claim that the tradition began then or reached a measured peak; source-level review remains needed.
-
-## Phases
-
-- 1800 emerging · unrated · No phase note · None recorded
-- 1950 established · unrated · No phase note · None recorded
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Remaining uncertainty
+Regional diversity makes any single national curve a simplification.

@@ -2,10 +2,12 @@
 
 Graph ID `key:dead-psychedelic`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Rock & Roll Hall of Fame, Grateful Dead](https://rockhall.com/inductees/grateful-dead/) — “psychedelics-fueled” improvisation from the mid-’60s.
+- [BBC, A brief history of psychedelia in eight colours](https://www.bbc.co.uk/programmes/articles/4nWcSYlCbk9BDJryvdBZMNg/a-brief-history-of-psychedelia-in-eight-colours) — Acid Tests soundtrack.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Psychedelic_rock>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Directly supported. Raised to high.

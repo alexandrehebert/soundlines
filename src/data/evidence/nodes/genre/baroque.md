@@ -2,21 +2,14 @@
 
 Graph ID `genre:baroque`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Confirmed era frame c. 1600–1750; phase note clarified
+**Reviewed** · 2026-11-03
 
-**Graph period** · 1600–1750 (circa)
+## Sources checked
+- [Wikipedia — Baroque music](https://en.wikipedia.org/wiki/Baroque_music) — era c. 1600–1750
+- [Classic FM — Baroque](https://www.classicfm.com/discover-music/periods-genres/baroque/) — "started around 1600 and ended around 1750"; Bach, Vivaldi, Handel; concerto, sonata, opera
+- [Britannica — Baroque music](https://www.britannica.com/art/Baroque-music) — (blocked, 403)
+- [Met Museum essay](https://www.metmuseum.org/essays/music-in-the-baroque) — (429 rate-limited) not cited
 
-**Graph claim** · Basso continuo, opera, concertos, and contrapuntal invention. Approximate dates mark the historical era, not the disappearance of Baroque performance.
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Baroque_music>)
-
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
-
-## Phases
-
-- 1600 emerging · unrated · No phase note · None recorded
-- 1615 golden-age · unrated · No phase note · None recorded
-- 1720 established · unrated · No phase note · None recorded
-- 1748 niche · unrated · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+The c. 1600–1750 frame is standard and confirmed by two sources. Phase boundaries remain editorial; the phase note now states what each boundary represents. Added Classic FM as a second source.

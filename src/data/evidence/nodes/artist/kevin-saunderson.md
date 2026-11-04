@@ -2,12 +2,14 @@
 
 Graph ID `artist:kevin-saunderson`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — KMS founder and Belleville Three member confirmed; dates unchanged
+**Reviewed** · 2026-11-03
 
-**Graph period** · 1986
+## Sources checked
+- [Detroit Historical Society: Saunderson](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/saunderson-kevin) — born NYC 1964; Belleville High with Atkins and May; Inner City hits; organised 2005 festival.
+- [RBMA lecture](https://www.redbullmusicacademy.com/lectures/kevin-saunderson/) — first record on Metroplex, then founded KMS; 1988 a “monumental year”.
+- [DHS Legends Plaza](https://www.detroithistorical.org/exhibitions/legends-plaza) — “Techno Music Pioneer”.
+- [AllMusic](https://www.allmusic.com/artist/kevin-saunderson-mn0000087083) — (Wikidata-verified ID).
 
-**Graph claim** · Detroit DJ and producer, one of the Belleville Three. He founded KMS Records and produced house and techno releases as well as the charting project Inner City.
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Kevin_Saunderson>), [2](<https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/saunderson-kevin>)
-
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+The circa-1986 start (first Metroplex/KMS releases) and open period are consistent across sources. Two strong sources were added.

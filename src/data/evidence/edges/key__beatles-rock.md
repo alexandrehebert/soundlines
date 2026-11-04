@@ -2,10 +2,11 @@
 
 Graph ID `key:beatles-rock`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Rock & Roll Hall of Fame, The Beatles](https://rockhall.com/inductees/beatles/) — “ushered in a modern era of rock”.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Rock_music>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Rock Hall directly supports alongside the existing Wikipedia source. Raised to high.

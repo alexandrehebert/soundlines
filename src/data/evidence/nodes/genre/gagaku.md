@@ -2,14 +2,14 @@
 
 Graph ID `genre:gagaku`
 
-**Review status** · Historical stages corroborated; UNESCO available through search index only
+**Review status** · Reviewed — Confirmed; phases sound; added NTJ source
+**Reviewed** · 2026-11-03
 
 ## Sources checked
+- [UNESCO ICH — Gagaku](https://ich.unesco.org/en/RL/gagaku-00265) — "oldest of Japan’s traditional performing arts"; Music Department of the Imperial Household transmits it
+- [Imperial Household Agency — Gagaku](https://www.kunaicho.go.jp/en/learn/culture/gagaku.html) — continental music from about the 5th c.; art form completed by about the 10th c.; 1955 Important Intangible Cultural Property
+- [Metropolitan Museum object 45520](https://www.metmuseum.org/art/collection/search/45520) — (429 rate-limited; kept)
+- [National Theatre of Japan — Gagaku introduction](https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/introduction/index.html) — Chinese/Korean music transmitted 5th–9th c.; consolidated by Heian nobility
 
-- [Imperial Household Agency](https://www.kunaicho.go.jp/en/learn/culture/gagaku.html) — Full page read. Continental imports from approximately the fifth century; developed artistic form by about the tenth. Identifies court transmission, instruments and modern public recitals.
-- [Metropolitan Museum of Art, Bugaku Imperial Court Dance](https://www.metmuseum.org/art/collection/search/45520) — Curatorial description read. Places combination of continental music and native songs in the sixth/seventh century, and developed court performance from the tenth. The artwork itself is seventeenth-century; its production date is not the music’s origin.
-- [UNESCO](https://ich.unesco.org/en/RL/gagaku-00265) — Indexed description read; direct access returned human verification. Confirms the composite tradition and continued transmission, without a numerical origin in the retrieved description.
-
-## Decision
-
-Retain circa 600 for early formation with medium confidence; change established to emerging. Add circa 900 as the broad tenth-century developed-court stage, medium confidence. These are century-scale anchors. Fifth-century imports and tenth-century consolidation are different events, not necessarily contradictory origin claims. No golden-age ranking is warranted.
+## Assessment
+Period start circa 600 and the two phases (emerging 600, established 900) match the Imperial Household Agency and NTJ accounts of continental transmission followed by Heian consolidation. No changes besides adding the NTJ introduction as an extra source.

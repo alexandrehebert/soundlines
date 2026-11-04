@@ -2,12 +2,16 @@
 
 Graph ID `lineage:jazz-deep-house`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — plausible indirect influence; kept medium
 
-**Relationship** · influences · medium
+**Reviewed** · 2026-11-03
 
-**Graph note** · Jazz harmony is one component of deep house alongside soul and Chicago house.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Deep_house>)
+- [NPR All Songs Considered, Larry Heard](https://www.npr.org/sections/allsongs/2016/09/16/494184448/classic-dose-larry-heard) — Heard drummed in jazz-fusion cover bands; improvisation experience from “my jazz-fusion bands”.
+- [Pitchfork, Fingers Inc. Another Side](https://pitchfork.com/reviews/albums/21391-fingers-inc-another-side/) — notes the album’s “smooth jazz chords”.
+- [Wikipedia, Deep house](https://en.wikipedia.org/wiki/Deep_house) — original/secondary orientation; checked via API.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Deep house’s jazz harmony comes mainly via 1980s jazz-funk and fusion (Wikipedia) and Larry Heard’s jazz-fusion background (NPR, Pitchfork). Direction is right but indirect; kept medium and note clarified.

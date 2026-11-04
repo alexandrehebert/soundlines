@@ -2,10 +2,16 @@
 
 Graph ID `lineage:hard-bop-jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — subgenre relation confirmed; raised to high
 
-**Relationship** · subgenre_of · medium
+**Reviewed** · 2026-11-03
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Hard_bop>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, Horace Silver](https://www.britannica.com/biography/Horace-Silver) — “exemplary performer” of hard bop of the 1950s–60s, an extension of bebop; co-founded the Jazz Messengers.
+- [Carnegie Hall Timeline, hard bop](https://timeline.carnegiehall.org/genres/hard-bop) — “a new style known in the mid-1950s as hard bop”; examples Brown “De-Dah” (1953), Blakey “Moanin’” (1958); names Silver.
+- [Wikipedia, Hard bop](https://en.wikipedia.org/wiki/Hard_bop) — original/secondary orientation; checked via API.
+
+## Assessment
+
+Uncontroversial jazz style. Confidence → high.

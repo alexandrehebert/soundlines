@@ -2,10 +2,12 @@
 
 Graph ID `key:crimson-progressive`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Pitchfork, 2019, In the Court of the Crimson King review](https://pitchfork.com/reviews/albums/king-crimson-in-the-court-of-the-crimson-king-50th-anniversary/) — “prog rock giants”; debut a pinnacle of the form.
+- [NPR, 2017, “Can’t Prog Rock Get Any Respect?”](https://www.npr.org/2017/07/18/534577902/can-t-prog-rock-get-any-respect-around-here) — named as core prog band.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Progressive_rock>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Independent sources directly support. Raised to high.

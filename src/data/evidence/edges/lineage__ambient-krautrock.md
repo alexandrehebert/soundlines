@@ -2,12 +2,13 @@
 
 Graph ID `lineage:ambient-krautrock`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confirmed; source added
+**Reviewed** · 2026-11-03
 
-**Relationship** · influences · high
+## Sources checked
+- [Guardian, 2015, Edgar Froese dies](https://www.theguardian.com/music/2015/jan/23/tangerine-dream-founder-edgar-froese-dies) — Tangerine Dream’s sound “profoundly influential on electronic and ambient music”.
+- Oxford Academic chapter (existing) — (blocked, 403) kept.
+- AllMusic ambient genre page (existing) kept.
 
-**Graph note** · Krautrock is one documented electronic precursor among several; this edge does not claim sole origin.
-
-**Graph citations** · [1](<https://academic.oup.com/book/44623/chapter-abstract/378621525>), [2](<https://www.allmusic.com/genre/ambient-ma0000002424>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+Direction krautrock → ambient is correct and supported; existing note already disclaims sole origin. Confidence stays high.

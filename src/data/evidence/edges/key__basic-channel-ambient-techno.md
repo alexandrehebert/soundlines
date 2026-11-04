@@ -2,10 +2,16 @@
 
 Graph ID `key:basic-channel-ambient-techno`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — no source found classing Basic Channel as ambient techno; downgraded to low
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · high
+## Sources checked
+- Wikipedia Ambient techno — pioneers listed (Aphex, Craig, Orb, Black Dog, Namlook, Biosphere); Basic Channel absent.
+- [Pitchfork BCD](https://pitchfork.com/reviews/albums/basic-channel-bcd) — classed as dub techno / minimal.
+- AllMusic style page and OUP abstract (403; existing citations unverifiable).
 
-**Graph citations** · [1](<https://www.allmusic.com/style/ambient-techno-ma0000012032/artists>), [2](<https://academic.oup.com/book/44623/chapter-abstract/378621525>), [3](<https://en.wikipedia.org/wiki/Basic_Channel>)
+## Assessment
+Basic Channel is consistently described as dub or minimal techno. Its atmospheric qualities overlap with ambient techno, but no reachable source names it a key ambient-techno act. Confidence falls from high to low, and the edge is flagged for possible removal.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.
+## Remaining uncertainty
+The AllMusic style list (blocked) may include Basic Channel; if verified, raise to medium.

@@ -2,20 +2,22 @@
 
 Graph ID `genre:jazz-fusion`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — late-1960s emergence and 1970s peak confirmed; 1980 end and niche phase removed
 
-**Graph period** · 1967–1980 (circa)
+**Reviewed** · 2026-11-03
 
-**Graph claim** · Jazz improvisation meets rock amplification, electric instruments, and funk rhythms. An evolving family of approaches rather than a single formula.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Jazz_fusion>)
+- [Britannica, jazz-rock](https://www.britannica.com/art/jazz-rock) — “Beginning in 1969” Davis and associates broke through; most important work early 1970s; Mahavishnu and Weather Report named; largest jazz audience since swing.
+- [Carnegie Hall Timeline, jazz fusion](https://timeline.carnegiehall.org/genres/jazz-fusion) — Bitches Brew (1969) fuses jazz with rock; early-1970s funk elements; names Mahavishnu (Birds of Fire 1973), Weather Report (1973), Hancock.
+- [NEA Jazz Masters, Miles Davis](https://www.arts.gov/honors/jazz/miles-davis) — In a Silent Way (1968–69) led “the way for electric jazz”; transformation complete with Bitches Brew.
+- [Grammy, Weather Report](https://www.grammy.com/artists/weather-report/16387/) — repeated nominations in “Best Jazz Fusion Performance” across the 1980s.
+- [Wikipedia, Jazz fusion](https://en.wikipedia.org/wiki/Jazz_fusion) — original/secondary orientation; checked via API.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Britannica and Carnegie Hall support c.1967 emergence and a breakthrough with Davis in 1969, with the most important work in the early 1970s. Wikipedia notes fusion continued through the 1980s beside smooth jazz, and the Grammys kept a fusion category, so the 1980 end and 1978 niche phase were removed. Phases: emerging 1967, golden age 1969, established 1979 (0.45).
 
-- 1967 emerging · unrated · No phase note · None recorded
-- 1972 golden-age · unrated · No phase note · None recorded
-- 1978 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Britannica full text on later decades not read; 1979 boundary is editorial.

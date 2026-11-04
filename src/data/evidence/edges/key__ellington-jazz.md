@@ -2,10 +2,16 @@
 
 Graph ID `key:ellington-jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — key status confirmed; raised to high
 
-**Relationship** · key_artist_of · medium
+**Reviewed** · 2026-11-03
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Jazz>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, Duke Ellington](https://www.britannica.com/biography/Duke-Ellington) — “greatest jazz composer and bandleader of his time”.
+- [Britannica, jazz](https://www.britannica.com/art/jazz) — developed by African Americans; “from its very beginnings at the turn of the 20th century”; Armstrong and Ellington among key topics.
+- [Wikipedia, Jazz](https://en.wikipedia.org/wiki/Jazz) — original/secondary orientation; checked via API.
+
+## Assessment
+
+Directly supported by Britannica. Confidence → high.

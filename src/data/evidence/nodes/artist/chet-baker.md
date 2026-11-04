@@ -4,7 +4,7 @@ Graph ID `artist:chet-baker`
 
 **Review status** · Reviewed — career span and cool-jazz identity confirmed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 

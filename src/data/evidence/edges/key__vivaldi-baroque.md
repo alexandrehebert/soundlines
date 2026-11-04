@@ -2,10 +2,13 @@
 
 Graph ID `key:vivaldi-baroque`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Wikipedia — Baroque music](https://en.wikipedia.org/wiki/Baroque_music) — Vivaldi central to the Baroque concerto
+- [Classic FM — Baroque](https://www.classicfm.com/discover-music/periods-genres/baroque/) — names Vivaldi
+- [Classic FM — Vivaldi](https://www.classicfm.com/composers/vivaldi/) — "most productive composers of the Baroque era"
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Baroque_music>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Canonical Baroque composer; multiple sources. Confidence raised to high.

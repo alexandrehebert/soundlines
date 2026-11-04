@@ -2,10 +2,12 @@
 
 Graph ID `lineage:blues-jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confidence → high; source added
+**Reviewed** · 2026-11-03
 
-**Relationship** · influences · medium
+## Sources checked
+- [Wikipedia — Jazz](https://en.wikipedia.org/wiki/Jazz) — existing source; jazz roots in blues and ragtime.
+- [Carnegie Hall Timeline — Rural/Folk Blues](https://timeline.carnegiehall.org/genres/rural-folk-blues) — rural blues influenced “the various strains of jazz”.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Jazz>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+This is a textbook lineage, directly stated by Carnegie Hall; confidence is now high.

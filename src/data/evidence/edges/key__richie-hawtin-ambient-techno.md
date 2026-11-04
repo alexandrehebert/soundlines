@@ -2,10 +2,12 @@
 
 Graph ID `key:richie-hawtin-ambient-techno`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Warp AI (F.U.S.E.) link real but secondary; downgraded to medium
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · high
+## Sources checked
+- Wikipedia Ambient techno — Warp’s Artificial Intelligence (1992) featured Hawtin.
+- AllMusic / OUP (blocked; kept).
 
-**Graph citations** · [1](<https://www.allmusic.com/style/ambient-techno-ma0000012032/artists>), [2](<https://academic.oup.com/book/44623/chapter-abstract/378621525>), [3](<https://en.wikipedia.org/wiki/Richie_Hawtin>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+Hawtin’s F.U.S.E. work on Warp’s Artificial Intelligence series supports the link, but his main identity is minimal and Detroit-adjacent techno. Confidence falls from high to medium.

@@ -4,7 +4,7 @@ Graph ID `genre:cool-jazz`
 
 **Review status** · Reviewed — late-1940s emergence and 1950s West Coast peak confirmed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 

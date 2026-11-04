@@ -2,10 +2,12 @@
 
 Graph ID `key:the-coasters-doo-wop`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — sources added; confidence unchanged
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [AllMusic — Doo-wop](https://www.allmusic.com/genre/doo-wop-ma0000002556) — existing source, blocked.
+- [Rock & Roll Hall of Fame — The Coasters](https://rockhall.com/inductees/coasters/) — Rock Hall bio (1987).
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/doo-wop-ma0000002556>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+The Coasters are a 1950s R&B vocal group, though their comic story songs sit at the R&B/rock ’n’ roll edge of doo-wop. The existing confidence is kept. Endpoint evidence: `artist:the-coasters`.

@@ -4,7 +4,7 @@ Graph ID `artist:incognito`
 
 **Review status** · Reviewed — 1979 formation confirmed by the band
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 

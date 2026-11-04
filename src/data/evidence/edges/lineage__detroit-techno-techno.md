@@ -2,12 +2,12 @@
 
 Graph ID `lineage:detroit-techno-techno`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confirmed; endpoint evidence
+**Reviewed** · 2026-11-03
 
-**Relationship** · subgenre_of · high
+## Sources checked
+- [Carnegie Hall timeline](https://timeline.carnegiehall.org/genres/detroit-techno) — Detroit as techno’s birthplace.
+- [DHS DEMF](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/detroit-electronic-music-festival-movement) — “birthplace of Techno”.
 
-**Graph note** · Detroit techno is the regional form associated with the genre’s early naming and codification.
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Detroit_techno>), [2](<https://en.wikipedia.org/wiki/Techno>), [3](<https://timeline.carnegiehall.org/genres/detroit-techno>)
-
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+High confidence is kept.

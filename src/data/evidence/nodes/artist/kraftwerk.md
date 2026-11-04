@@ -2,25 +2,14 @@
 
 Graph ID `artist:kraftwerk`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — period and phases confirmed; AllMusic URL normalised
+**Reviewed** · 2026-11-03
 
-**Graph period** · 1970
+## Sources checked
+- [AllMusic, Kraftwerk](https://www.allmusic.com/artist/kraftwerk-mn0000104714) (Wikidata-verified ID) — replaces legacy /artist/p4706 URL in the 2003 phase.
+- [Rock & Roll Hall of Fame, Kraftwerk](https://rockhall.com/inductees/kraftwerk/) — inducted 2021 (Early Influence); “blueprint for modern electronic music”.
+- [Newcastle University / The Conversation, Adam Behr on Florian Schneider (2020)](https://www.ncl.ac.uk/press/articles/archive/2020/05/conversationkraftwerk/) — early albums free-form, with Can and Neu! “came to represent krautrock”; Autobahn 1974 breakthrough; Numbers/TEE lynchpin of Planet Rock; Detroit influence.
+- [Wikipedia, Kraftwerk](https://en.wikipedia.org/wiki/Kraftwerk) — 1970–present.
 
-**Graph claim** · Düsseldorf's man-machines. 'Trans-Europe Express' and 'Computer World' are cited by Juan Atkins and Afrika Bambaataa alike as the source code.
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Kraftwerk>)
-
-**Graph phase rationale** · Editorial career prominence anchored to Autobahn, Trans-Europe Express, Computer World, and the 2003 Tour de France Soundtracks return. This describes recording-era visibility, not the continuing magnitude of Kraftwerk's influence or measured listening.
-
-## Phases
-
-- 1970 emerging (0.3) · unrated · No phase note · None recorded
-- 1974 golden-age (0.8) · unrated · No phase note · None recorded
-- 1977 golden-age (1) · unrated · No phase note · None recorded
-- 1981 golden-age (0.9) · unrated · No phase note · None recorded
-- 1987 established (0.5) · unrated · No phase note · None recorded
-- 1992 established (0.3) · unrated · No phase note · None recorded
-- 2003 established (0.55) · unrated · Tour de France Soundtracks (2003) marked a documented return to new studio material after a long gap; this phase describes recording activity and visibility. · [1](https://www.allmusic.com/artist/p4706)
-- 2008 established (0.4) · unrated · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+Active since 1970 and phases anchored to Autobahn, TEE, Computer World and the 2003 return are consistent with sources. Description’s claims about Atkins and Bambaataa are supported (see e244/e245).

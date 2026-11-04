@@ -2,10 +2,13 @@
 
 Graph ID `key:mike-banks-detroit-techno`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confirmed; AllMusic URL corrected
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · high
+## Sources checked
+- [Vulture (2018)](https://www.vulture.com/2018/10/how-underground-resistance-became-the-public-enemy-of-techno.html) — UR founder.
+- [RBMA Tresor lecture](https://www.redbullmusicacademy.com/lectures/mad-mike-banks-tresor-berlin-detroit-lecture/) — UR’s role in Detroit–Berlin techno.
+- [AllMusic (Mad Mike)](https://www.allmusic.com/artist/mad-mike-mn0001004791) — Wikidata-verified ID replaces mn0001766934.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Mike_Banks_(musician)>), [2](<https://timeline.carnegiehall.org/genres/detroit-techno>), [3](<https://www.allmusic.com/artist/mad-mike-banks-mn0001766934>)
-
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+High confidence is kept.

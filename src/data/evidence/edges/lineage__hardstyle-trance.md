@@ -2,12 +2,11 @@
 
 Graph ID `lineage:hardstyle-trance`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — hard-trance input supported by Wikipedia; kept medium
+**Reviewed** · 2026-11-03
 
-**Relationship** · fusion_of · medium
+## Sources checked
+- Wikipedia Hardstyle — roots in hard trance and hardcore.
 
-**Graph note** · Hardstyle incorporated hard-trance and hardcore influences; this is a broad lineage summary, not an exclusive origin.
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Hardstyle>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+Medium confidence is kept. No further reachable source was found.

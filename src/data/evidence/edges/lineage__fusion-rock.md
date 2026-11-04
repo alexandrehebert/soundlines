@@ -2,10 +2,16 @@
 
 Graph ID `lineage:fusion-rock`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — fusion relation confirmed; raised to high
 
-**Relationship** · fusion_of · medium
+**Reviewed** · 2026-11-03
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Jazz_fusion>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, jazz-rock](https://www.britannica.com/art/jazz-rock) — “Beginning in 1969” Davis and associates broke through; most important work early 1970s; Mahavishnu and Weather Report named; largest jazz audience since swing.
+- [Carnegie Hall Timeline, jazz fusion](https://timeline.carnegiehall.org/genres/jazz-fusion) — Bitches Brew (1969) fuses jazz with rock; early-1970s funk elements; names Mahavishnu (Birds of Fire 1973), Weather Report (1973), Hancock.
+- [Wikipedia, Jazz fusion](https://en.wikipedia.org/wiki/Jazz_fusion) — original/secondary orientation; checked via API.
+
+## Assessment
+
+Britannica defines jazz-rock as jazz improvisation over rock bass, drums and instrumentation; Carnegie Hall agrees. Confidence → high.

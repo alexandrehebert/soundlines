@@ -2,10 +2,12 @@
 
 Graph ID `member:mike-banks-underground-resistance`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — UR co-founder confirmed
+**Reviewed** · 2026-11-03
 
-**Relationship** · member_of · high
+## Sources checked
+- [Vulture (2018)](https://www.vulture.com/2018/10/how-underground-resistance-became-the-public-enemy-of-techno.html) — founded 1989.
+- [Planet E](https://planet-e.net/project/mike-banks/) — Banks built UR.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Mike_Banks_(musician)>), [2](<https://en.wikipedia.org/wiki/Underground_Resistance>), [3](<https://ra.co/dj/mikebanks/biography>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+High confidence is kept. The RA biography page is blocked, so Vulture was added.

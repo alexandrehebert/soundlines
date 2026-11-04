@@ -2,25 +2,20 @@
 
 Graph ID `artist:prince`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — period 1975–2016 kept (start unverified); sources added
+**Reviewed** · 2026-11-03
 
-**Graph period** · 1975–2016
+## Sources checked
+- [Wikipedia — Prince (musician)](https://en.wikipedia.org/wiki/Prince_(musician)) — existing source; years active 1975–2016.
+- [Prince Official Discography — For You](https://discography.prince.com/albums/for-you) — official discography: debut album For You (1978).
+- [Prince Official Discography — Musicology](https://discography.prince.com/albums/musicology) — existing official discography entry.
+- [Rock & Roll Hall of Fame — Prince](https://rockhall.com/inductees/prince/) — Rock Hall inductee, class of 2004; lists James Brown, Parliament-Funkadelic and Sly and the Family Stone among influences.
+- [GRAMMY.com — Prince](https://www.grammy.com/artists/prince/5675/) — Grammy artist page.
+- [Carnegie Hall Timeline — Electro-Funk](https://timeline.carnegiehall.org/genres/electro-funk) — Prince’s Minneapolis sound as a leading form of electro-funk.
+- [AllMusic — Prince](https://www.allmusic.com/artist/prince-mn0000361393) — (Wikidata-verified ID; AllMusic blocks fetches); Wikidata career start 1978.
 
-**Graph claim** · American singer, songwriter and multi-instrumentalist associated with Minneapolis funk.
+## Assessment
+1975 reflects teenage band work and early demos (Wikipedia’s “1975–1980: Career beginnings” section). The first verifiable professional release is 1978, but the BRIEF counts first professional activity, so 1975 is kept. The 2016 end (death) is certain. The description is accurate.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Prince_(musician)>)
-
-**Graph phase rationale** · Editorial career prominence: early solo releases, the 1980s breakthrough centered on Purple Rain, early-1990s success, and the 2004 Musicology comeback. Shades are qualitative and approximate, not measured popularity. The active career ends in 2016.
-
-## Phases
-
-- 1975 emerging (0.3) · unrated · No phase note · None recorded
-- 1978 emerging (0.55) · unrated · No phase note · None recorded
-- 1982 golden-age (0.85) · unrated · No phase note · None recorded
-- 1984 golden-age (1) · unrated · No phase note · None recorded
-- 1991 golden-age (0.8) · unrated · No phase note · None recorded
-- 1996 established (0.45) · unrated · No phase note · None recorded
-- 2004 golden-age (0.75) · unrated · Musicology (2004) and its tour marked a documented mainstream comeback; the “golden-age” shade is relative to this artist’s career and remains interpretive. · [1](https://discography.prince.com/albums/musicology)
-- 2008 established (0.5) · unrated · No phase note · None recorded
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Remaining uncertainty
+The 1975 start rests on Wikipedia only; 1977 (Warner Bros. contract) or 1978 (For You) would be stricter readings.

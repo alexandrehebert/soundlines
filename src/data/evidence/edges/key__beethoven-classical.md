@@ -2,10 +2,13 @@
 
 Graph ID `key:beethoven-classical`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Wikipedia — Classical period](https://en.wikipedia.org/wiki/Classical_period_(music)) — Beethoven as late-Classical/transitional
+- [Classic FM — Classical](https://www.classicfm.com/discover-music/periods-genres/classical/) — names Beethoven
+- [Classic FM — Beethoven](https://www.classicfm.com/composers/beethoven/) — studied with Haydn in Vienna from 1792
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Classical_period_(music)>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Beethoven is a canonical Classical-era composer and also transitional to Romanticism (separate edge exists). Multiple sources; confidence raised to high.

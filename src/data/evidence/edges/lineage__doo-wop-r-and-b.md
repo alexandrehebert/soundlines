@@ -2,12 +2,12 @@
 
 Graph ID `lineage:doo-wop-r-and-b`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confidence → high; source added
+**Reviewed** · 2026-11-03
 
-**Relationship** · subgenre_of · medium
+## Sources checked
+- [AllMusic — Doo-wop](https://www.allmusic.com/genre/doo-wop-ma0000002556) — existing source, blocked.
+- [Carnegie Hall Timeline — Rhythm & Blues](https://timeline.carnegiehall.org/genres/rhythm-blues) — doo-wop vocal groups (Orioles, Platters, Drifters) inside Carnegie Hall’s rhythm & blues history.
 
-**Graph note** · Doo-wop is commonly treated as a vocal-group branch of rhythm and blues.
-
-**Graph citations** · [1](<https://www.allmusic.com/genre/doo-wop-ma0000002556>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Carnegie Hall treats doo-wop groups as part of rhythm and blues, so confidence is raised to high.

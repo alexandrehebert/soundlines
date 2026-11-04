@@ -2,21 +2,12 @@
 
 Graph ID `genre:classical-period`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Confirmed era frame c. 1750–1820; phase note clarified
+**Reviewed** · 2026-11-03
 
-**Graph period** · 1750–1820 (circa)
+## Sources checked
+- [Wikipedia — Classical period (music)](https://en.wikipedia.org/wiki/Classical_period_(music)) — era c. 1750–1820; Haydn, Mozart, Beethoven
+- [Classic FM — Classical](https://www.classicfm.com/discover-music/periods-genres/classical/) — "started around 1750"; Haydn, Mozart and Beethoven
 
-**Graph claim** · The Classical period, not the umbrella term classical music: balanced phrases, sonata form, symphonies, and string quartets. Its historical boundaries overlap the Romantic era.
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Classical_period_(music)>)
-
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
-
-## Phases
-
-- 1750 emerging · unrated · No phase note · None recorded
-- 1764 golden-age · unrated · No phase note · None recorded
-- 1806 established · unrated · No phase note · None recorded
-- 1818 niche · unrated · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+The c. 1750–1820 frame is standard. Phase boundaries remain editorial; the phase note now explains them. Added Classic FM as a second source.

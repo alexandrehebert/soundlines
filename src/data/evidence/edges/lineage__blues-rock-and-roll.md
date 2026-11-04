@@ -2,12 +2,13 @@
 
 Graph ID `lineage:blues-rock-and-roll`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confidence → high; sources added
+**Reviewed** · 2026-11-03
 
-**Relationship** · influences · medium
+## Sources checked
+- [Wikipedia — Rock and roll](https://en.wikipedia.org/wiki/Rock_and_roll) — existing source.
+- [Carnegie Hall Timeline — Rock ’n’ Roll](https://timeline.carnegiehall.org/genres/rock-n-roll) — rock ’n’ roll as “the inevitable clash of African American rhythm and blues with … urban blues …”.
+- [Carnegie Hall Timeline — Urban Blues](https://timeline.carnegiehall.org/genres/urban-blues) — urban blues as a rock ’n’ roll source.
 
-**Graph note** · One ingredient alongside rhythm and blues, country, gospel, and boogie-woogie.
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Rock_and_roll>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Carnegie Hall directly states the lineage, so confidence is now high.

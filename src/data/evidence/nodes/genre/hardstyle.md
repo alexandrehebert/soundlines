@@ -2,20 +2,16 @@
 
 Graph ID `genre:hardstyle`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Dutch/Belgian late-1990s–2000 origin confirmed; precision refined, phases kept with low confidence and the last boundary moved to 2020
+**Reviewed** · 2026-11-03
 
-**Graph period** · 2000 (decade)
+## Sources checked
+- [Wikipedia: Hardstyle](https://en.wikipedia.org/wiki/Hardstyle) — emerged in the late 1990s (Netherlands, Belgium, Italy), roots in hard trance and hardcore; commercial acceptance in the 2010s.
+- [Hard News: Project One returns](https://hardnews.nl/en/project-one-confirms-return-with-one-time-only-classics-show/) — Project One began in 2008 and became “one of the most influential pillars of hardstyle”.
+- [Billboard (2013)](https://www.billboard.com/music/music-news/headhunterz-krewella-united-kids-of-the-world-video-watch-first-here-5800763/) — Headhunterz signs to Ultra; described as hardstyle’s “ringleader”.
+- [The Guardian (2020)](https://www.theguardian.com/music/2020/jan/10/gift-of-the-gabber-the-return-of-dance-musics-gloriously-tasteless-subgenre) — Dutch hardstyle described as “a fusion of techno and hardcore”, absorbed into American EDM.
+- [Hard News: why Q-dance ended Qlimax (2024)](https://hardnews.nl/en/why-q-dance-is-ending-qlimax-and-other-events/) — Q-dance, “founding fathers of hardstyle”, discontinued several flagship events.
+- [AllMusic “Hardstyle 10 Years”](https://www.allmusic.com/album/hardstyle-10-years-mw0002452091) — (blocked; kept as album-level reference).
 
-**Graph claim** · A hard dance style that took shape in the Netherlands and nearby European scenes, combining hard electronic kick drums with influences from hard trance and hardcore.
-
-**Graph citations** · [1](<https://www.allmusic.com/album/hardstyle-10-years-mw0002452091>), [2](<https://en.wikipedia.org/wiki/Hardstyle>)
-
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed.
-
-## Phases
-
-- 2000 emerging · unrated · No phase note · None recorded
-- 2008 golden-age · unrated · No phase note · None recorded
-- 2018 established · unrated · No phase note · None recorded
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+A start around 2000 is reasonable. Wikipedia says late 1990s, and the AllMusic “10 Years” compilation implies about 2000. Precision changes from decade to circa. The peak beginning in 2008 matches the Headhunterz/Project One era and the 2010s crossover. The established phase now starts in 2020 instead of 2018. Pandemic cancellations and Q-dance’s 2024 event restructuring are clearer markers than 2018, but the boundaries remain low-confidence editorial estimates.

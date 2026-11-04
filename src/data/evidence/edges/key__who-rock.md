@@ -2,10 +2,11 @@
 
 Graph ID `key:who-rock`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Rock & Roll Hall of Fame, The Who](https://rockhall.com/inductees/who/) — inducted 1990; part of the triumvirate that revolutionized rock.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Rock_music>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Directly supported. Raised to high.

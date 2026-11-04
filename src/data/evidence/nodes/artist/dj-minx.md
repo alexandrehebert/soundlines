@@ -2,12 +2,13 @@
 
 Graph ID `artist:dj-minx`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Women on Wax founder confirmed; dates unchanged
+**Reviewed** · 2026-11-03
 
-**Graph period** · 1990
+## Sources checked
+- [Women on Wax](https://womenonwax.com/artists-dj-minx/) — Women on Wax founded December 1996 by DJ Minx.
+- [Mixmag, 20 women who shaped dance music (2015)](https://mixmag.net/feature/20-women-who-shaped-the-history-of-dance-music) — Motor club resident, WGPR radio, inaugural DEMF; “stalwart defender of Detroit dance culture”.
+- [RA Exchange 725](https://ra.co/exchange/725) — (kept).
 
-**Graph claim** · Detroit DJ and producer active since the early 1990s. She founded the Women on Wax collective in 1996 and launched Women on Wax Recordings in 2001, creating platforms for women DJs and producers in the regional scene.
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/DJ_Minx>), [2](<https://ra.co/exchange/725>), [3](<https://womenonwax.com/artists-dj-minx/>), [4](<https://ra.co/dj/djminx/biography>), [5](<https://www.insomniac.com/music/artists/dj-minx/>)
-
-**Citation retrieval** · 3 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+A circa-1990 start (Wikidata 1989; Wikipedia “1990s”) and open period are confirmed. Mixmag was added as an independent source.

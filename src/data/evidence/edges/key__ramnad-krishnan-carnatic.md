@@ -2,10 +2,12 @@
 
 Graph ID `key:ramnad-krishnan-carnatic`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Confirmed; medium kept
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Wikipedia](https://en.wikipedia.org/wiki/Ramnad_Krishnan) — Carnatic vocalist
+- [AllMusic](https://www.allmusic.com/artist/ramnad-krishnan-mn0000866164) — existing
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/ramnad-krishnan-mn0000866164>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+He is a Carnatic vocalist; sourcing is thin, so medium is kept.

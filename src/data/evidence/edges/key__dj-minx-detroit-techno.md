@@ -2,12 +2,13 @@
 
 Graph ID `key:dj-minx-detroit-techno`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Detroit dance-culture figure; techno label partial, downgraded to medium
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · high
+## Sources checked
+- [Mixmag (2015)](https://mixmag.net/feature/20-women-who-shaped-the-history-of-dance-music) — “stalwart defender of Detroit dance culture”; inaugural DEMF.
+- [Women on Wax](https://womenonwax.com/artists-dj-minx/) — collective/label from 1996.
+- Wikipedia, RA Exchange, Carnegie Hall (kept).
 
-**Graph note** · Her DJ work, collective, and label contributed to Detroit’s club and techno community; she is also associated with house.
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/DJ_Minx>), [2](<https://ra.co/exchange/725>), [3](<https://timeline.carnegiehall.org/genres/detroit-techno>)
-
-**Citation retrieval** · 1 bulk responses, 1 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Sources mostly describe her as a Detroit house DJ who also works in techno. The edge note already says this. Confidence falls from high to medium.

@@ -2,10 +2,12 @@
 
 Graph ID `key:the-orb-ambient-techno`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — The Orb as ambient-techno pioneers confirmed; AllMusic URL corrected
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · high
+## Sources checked
+- Wikipedia Ambient techno — The Orb among early exponents.
+- [AllMusic (The Orb)](https://www.allmusic.com/artist/the-orb-mn0000891575) — Wikidata-verified ID mn0000891575 replaces unverified mn0000392646.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/ambient-techno-ma0000012032/artists>), [2](<https://academic.oup.com/book/44623/chapter-abstract/378621525>), [3](<https://www.allmusic.com/artist/the-orb-mn0000392646>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.
+## Assessment
+High confidence is kept, and the incorrect AllMusic ID was replaced.

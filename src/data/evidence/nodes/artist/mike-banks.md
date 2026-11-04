@@ -2,12 +2,14 @@
 
 Graph ID `artist:mike-banks`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — UR co-founder role confirmed; AllMusic link replaced with a Wikidata-verified ID
+**Reviewed** · 2026-11-03
 
-**Graph period** · 1989
+## Sources checked
+- [Planet E: Mike Banks](https://planet-e.net/project/mike-banks/) — built UR; Mills and Hood left in 1992 while Banks rebuilt the roster.
+- [Vulture (2018)](https://www.vulture.com/2018/10/how-underground-resistance-became-the-public-enemy-of-techno.html) — UR “founded in 1989 by ‘Mad Mike’ Banks… and Jeff Mills”.
+- [RBMA Tresor/Berlin–Detroit lecture](https://www.redbullmusicacademy.com/lectures/mad-mike-banks-tresor-berlin-detroit-lecture/) — UR’s “X-101” the first Tresor release (1991).
+- [AllMusic (Mad Mike)](https://www.allmusic.com/artist/mad-mike-mn0001004791) — (Wikidata-verified ID mn0001004791; the previous ID mn0001766934 is not on Wikidata and was dropped).
 
-**Graph claim** · Detroit producer and label operator who co-founded Underground Resistance with Jeff Mills. Banks helped shape the collective’s independent release network and its politically engaged second-generation techno work.
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Mike_Banks_(musician)>), [2](<https://timeline.carnegiehall.org/genres/detroit-techno>), [3](<https://ra.co/dj/mikebanks/biography>), [4](<https://planet-e.net/project/mike-banks/>)
-
-**Citation retrieval** · 1 bulk responses, 1 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+The 1989 start with UR is confirmed. Banks was earlier a session musician, which the RBMA Mills lecture mentions, but the period follows his techno career. The unverified AllMusic URL was replaced.

@@ -4,7 +4,7 @@ Graph ID `key:davis-cool`
 
 **Review status** · Reviewed — pioneer role confirmed; raised to high
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 

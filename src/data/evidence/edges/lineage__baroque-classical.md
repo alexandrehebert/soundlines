@@ -2,10 +2,13 @@
 
 Graph ID `lineage:baroque-classical`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · influences · medium
+## Sources checked
+- [Wikipedia — Classical period](https://en.wikipedia.org/wiki/Classical_period_(music)) — Classical style grew out of late Baroque and galant
+- [Classic FM — Classical](https://www.classicfm.com/discover-music/periods-genres/classical/) — era starting c. 1750
+- [Classic FM — Baroque](https://www.classicfm.com/discover-music/periods-genres/baroque/) — era ending c. 1750
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Classical_period_(music)>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Direct succession of eras is standard music history. Type influences is appropriate; confidence raised to high.

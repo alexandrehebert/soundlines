@@ -2,10 +2,11 @@
 
 Graph ID `member:dj-minx-women-on-wax`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — founding of Women on Wax (Dec 1996) confirmed
+**Reviewed** · 2026-11-03
 
-**Relationship** · member_of · high
+## Sources checked
+- [Women on Wax](https://womenonwax.com/artists-dj-minx/) — founded December 1996 by DJ Minx.
 
-**Graph citations** · [1](<https://womenonwax.com/artists-dj-minx/>), [2](<https://ra.co/exchange/725>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+High confidence is kept.

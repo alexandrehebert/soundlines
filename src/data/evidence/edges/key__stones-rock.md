@@ -2,10 +2,12 @@
 
 Graph ID `key:stones-rock`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Rock & Roll Hall of Fame, The Rolling Stones](https://rockhall.com/inductees/rolling-stones/) — 60-plus-year career of “swaggering rock”.
+- [Rock & Roll Hall of Fame, The Who](https://rockhall.com/inductees/who/) essay — Beatles, Stones, Who revolutionized rock & roll.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Rock_music>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Directly supported. Raised to high.

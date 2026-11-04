@@ -2,10 +2,13 @@
 
 Graph ID `key:woody-guthrie-folk`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — raised to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Rock & Roll Hall of Fame: Woody Guthrie](https://www.rockhall.com/inductees/woody-guthrie) — "revolutionized folk music"; "Without Woody Guthrie, there would be no Dylan, Springsteen or Baez".
+- [Woody Guthrie official biography](https://www.woodyguthrie.org/biography/biography1.htm) — LOC recordings, Almanac Singers.
+- [AllMusic: Folk genre](https://www.allmusic.com/genre/folk-ma0000002592) (blocked; existing).
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/folk-ma0000002592>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Strong independent support, so confidence is now high.

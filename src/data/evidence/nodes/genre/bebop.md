@@ -4,7 +4,7 @@ Graph ID `genre:bebop`
 
 **Review status** · Reviewed — emergence and peak confirmed; phases re-anchored
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 

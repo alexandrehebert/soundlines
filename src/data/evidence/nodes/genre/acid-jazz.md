@@ -4,7 +4,7 @@ Graph ID `genre:acid-jazz`
 
 **Review status** · Reviewed — late-1980s London origin and mid-1990s decline confirmed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 

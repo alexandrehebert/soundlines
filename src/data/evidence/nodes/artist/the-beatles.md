@@ -2,12 +2,13 @@
 
 Graph ID `artist:the-beatles`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — period confirmed; sources added
+**Reviewed** · 2026-11-03
 
-**Graph period** · 1960–1970
+## Sources checked
+- [Rock & Roll Hall of Fame, The Beatles](https://rockhall.com/inductees/beatles/) — inducted 1988; “ushered in a modern era of rock”.
+- [AllMusic, The Beatles](https://www.allmusic.com/artist/the-beatles-mn0000754032) (Wikidata-verified ID).
+- [Wikipedia, The Beatles](https://en.wikipedia.org/wiki/The_Beatles) — 1960–1970 (Wikidata dissolved 10 Apr 1970).
 
-**Graph claim** · Liverpool band whose songwriting and studio experiments reshaped rock and pop.
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Beatles>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+1960–1970 and description confirmed.

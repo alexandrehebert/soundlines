@@ -2,12 +2,13 @@
 
 Graph ID `artist:stacey-pullen`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — second-wave Detroit figure mentored by Derrick May; dates unchanged
+**Reviewed** · 2026-11-03
 
-**Graph period** · 1990
+## Sources checked
+- [DMY Dummy Guide II](https://dmy.co/features/dummy-guide-to-detroit-techno-part-ii-the-second-wave-present-day) — “another second wave artist”, worked and lived with May.
+- [Detroit Historical Society: May](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/may-derrick) — Transmat released Pullen among others.
+- [AllMusic](https://www.allmusic.com/artist/stacey-pullen-mn0000163938) — (Wikidata-verified ID).
 
-**Graph claim** · Detroit techno DJ and producer associated with the second wave of the scene.
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Stacey_Pullen>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+The 1990 start (Wikipedia; second-wave timing) and open period are reasonable. No change beyond sources.

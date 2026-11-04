@@ -2,20 +2,22 @@
 
 Graph ID `genre:jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — turn-of-century origin confirmed; overlong golden age split at end of swing era
 
-**Graph period** · 1900 (circa)
+**Reviewed** · 2026-11-03
 
-**Graph claim** · African American music emerging in New Orleans around the turn of the twentieth century, built on improvisation, rhythmic interplay, and blues traditions. The umbrella for many distinct jazz styles.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Jazz>)
+- [Britannica, jazz](https://www.britannica.com/art/jazz) — developed by African Americans; “from its very beginnings at the turn of the 20th century”; Armstrong and Ellington among key topics.
+- [Smithsonian Magazine, first jazz record](https://www.smithsonianmag.com/arts-culture/first-jazz-record-introduced-millions-records-jass-180961427/) — ODJB “Livery Stable Blues” recorded Feb 1917, a million-selling hit, “almost universally hailed as the first jazz recording”. (curl 403; read via fetch tool)
+- [Britannica, swing](https://www.britannica.com/art/swing-music) — swing idiom prominent “between about 1935 and the mid-1940s”; first commercially successful jazz idiom.
+- [Britannica, jazz-rock](https://www.britannica.com/art/jazz-rock) — “Beginning in 1969” Davis and associates broke through; most important work early 1970s; Mahavishnu and Weather Report named; largest jazz audience since swing.
+- [Wikipedia, Jazz](https://en.wikipedia.org/wiki/Jazz) — original/secondary orientation; checked via API.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed.
+## Assessment
 
-## Phases
+Origin c.1900 in New Orleans is confirmed by Britannica. The former 1915–2010 golden age was implausibly long; it now starts with the 1917 first jazz record (Smithsonian) and ends with the swing era in the mid-1940s (Britannica), after which jazz is shaded as an established, diversified art music (intensity 0.6). Description retained.
 
-- 1900 emerging · unrated · No phase note · None recorded
-- 1915 golden-age · unrated · No phase note · None recorded
-- 2010 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Smithsonian American History jazz page returned 403; the 1946 boundary is approximate.

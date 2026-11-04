@@ -4,7 +4,7 @@ Graph ID `key:coleman-free`
 
 **Review status** · Reviewed — founding role confirmed; raised to high
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 

@@ -2,10 +2,14 @@
 
 Graph ID `key:waters-blues`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confidence → high; sources added
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Wikipedia — Blues](https://en.wikipedia.org/wiki/Blues) — existing source.
+- [Carnegie Hall Timeline — Urban Blues](https://timeline.carnegiehall.org/genres/urban-blues) — Muddy Waters and 1950s Chicago blues.
+- [Mississippi Blues Trail — Muddy Waters’s Cabin](https://msbluestrail.org/blues-trail-markers/muddy-waterss-cabin) — Blues Trail marker (1941 recordings, move to Chicago).
+- [PBS American Masters — Muddy Waters: Can’t Be Satisfied](https://www.pbs.org/wnet/americanmasters/muddy-waters-cant-be-satisfied/730/) — American Masters film page.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Blues>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Directly supported by independent sources; confidence raised to high. Endpoint evidence: `artist:muddy-waters`, `genre:blues`.

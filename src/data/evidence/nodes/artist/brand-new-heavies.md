@@ -4,7 +4,7 @@ Graph ID `artist:brand-new-heavies`
 
 **Review status** · Reviewed — 1985 Ealing formation and acid-jazz role confirmed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 

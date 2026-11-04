@@ -4,7 +4,7 @@ Graph ID `lineage:cool-jazz`
 
 **Review status** · Reviewed — subgenre relation confirmed; raised to high
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 

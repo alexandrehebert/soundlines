@@ -2,10 +2,12 @@
 
 Graph ID `key:chitti-babu-carnatic`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Confirmed; medium kept
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [The Hindu](https://www.thehindu.com/features/friday-review/music/Chittibabu-remembered/article15718373.ece) — Carnatic veena vidwan
+- [AllMusic](https://www.allmusic.com/artist/chitti-babu-mn0000086865) — (Wikidata-verified ID)
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/chitti-babu-mn0000086865>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+He is clearly a Carnatic veena exponent; sources are one press piece plus AllMusic, so medium is kept. Added The Hindu.

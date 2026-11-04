@@ -2,10 +2,12 @@
 
 Graph ID `key:terem-quartet-russian-folk`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — lowered to low
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Wikipedia: Terem Quartet](https://en.wikipedia.org/wiki/Terem_Quartet) — plays in the "Crossover genre" on domra, bayan and balalaika.
+- [AllMusic: Russian folk style](https://www.allmusic.com/style/russian-folk-ma0000012024) (blocked; existing).
 
-**Graph citations** · [1](<https://www.allmusic.com/style/russian-folk-ma0000012024>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Terem uses Russian folk instruments but is a conservatory-trained crossover act. No serious source names it as key to Russian folk tradition. Confidence was lowered to low and a note added. The edge was not deleted.

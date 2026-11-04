@@ -2,10 +2,12 @@
 
 Graph ID `key:zhanna-bichevskaya-russian-folk`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — lowered to low
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Wikipedia: Zhanna Bichevskaya](https://en.wikipedia.org/wiki/Zhanna_Bichevskaya) — performed Russian folk songs and romances from the 1970s; later nationalist and religious repertoire.
+- [AllMusic: Zhanna Bichevskaya](https://www.allmusic.com/artist/zhanna-bichevskaya-mn0001547074) (Wikidata-verified).
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/zhanna-bichevskaya-mn0001547074>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+She was popular as a guitar-accompanied interpreter of folk songs and romances, but serious-source coverage of her as key to Russian folk is thin. Confidence was lowered to low and a note added.

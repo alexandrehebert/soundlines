@@ -2,10 +2,12 @@
 
 Graph ID `lineage:rock-rock-and-roll`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · derived_from · medium
+## Sources checked
+- [Rock & Roll Hall of Fame, The Who](https://rockhall.com/inductees/who/) essay — 1960s British bands turned rock & roll into the preeminent pop art form.
+- [Rock & Roll Hall of Fame, The Beatles](https://rockhall.com/inductees/beatles/) — “ushered in a modern era of rock”.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Rock_music>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Rock derived from rock and roll is the standard account. Raised to high.

@@ -2,10 +2,12 @@
 
 Graph ID `key:reigakusha-gagaku`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Reigakusha official](https://reigakusha.com/home/about) — gagaku ensemble, research and international tours
+- [UNESCO](https://ich.unesco.org/en/RL/gagaku-00265) — general gagaku
 
-**Graph citations** · [1](<https://ich.unesco.org/en/RL/gagaku-00265>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+Leading independent gagaku ensemble, widely recorded and toured. Confidence raised to high.

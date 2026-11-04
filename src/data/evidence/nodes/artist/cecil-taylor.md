@@ -4,7 +4,7 @@ Graph ID `artist:cecil-taylor`
 
 **Review status** · Reviewed — start moved to early 1950s; end set to death (2018)
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 

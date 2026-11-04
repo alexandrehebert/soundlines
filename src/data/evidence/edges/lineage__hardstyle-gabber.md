@@ -2,12 +2,12 @@
 
 Graph ID `lineage:hardstyle-gabber`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — hardcore input confirmed
+**Reviewed** · 2026-11-03
 
-**Relationship** · fusion_of · medium
+## Sources checked
+- [The Guardian (2020)](https://www.theguardian.com/music/2020/jan/10/gift-of-the-gabber-the-return-of-dance-musics-gloriously-tasteless-subgenre) — hardstyle “a fusion of techno and hardcore”.
+- Wikipedia Hardstyle (kept).
 
-**Graph note** · Hardstyle incorporated hard-trance and hardcore influences; this is a broad lineage summary, not an exclusive origin.
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Hardstyle>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+Medium confidence is kept, and the Guardian was added.

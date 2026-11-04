@@ -2,10 +2,13 @@
 
 Graph ID `key:haydn-classical`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Wikipedia — Classical period](https://en.wikipedia.org/wiki/Classical_period_(music)) — Haydn as central figure
+- [Classic FM — Classical](https://www.classicfm.com/discover-music/periods-genres/classical/) — names Haydn
+- [Classic FM — Haydn](https://www.classicfm.com/composers/haydn/) — prominent composer of the Classical period
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Classical_period_(music)>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Canonical Classical-era composer; multiple sources. Confidence raised to high.

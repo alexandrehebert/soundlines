@@ -2,10 +2,14 @@
 
 Graph ID `key:king-blues`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — confidence → high; sources added
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Wikipedia — Blues](https://en.wikipedia.org/wiki/Blues) — existing source.
+- [Carnegie Hall Timeline — Urban Blues](https://timeline.carnegiehall.org/genres/urban-blues) — King as the exemplar of urban blues.
+- [Polar Music Prize — B.B. King (2004 laureate)](https://www.polarmusicprize.org/laureates/b-b-king/) — Polar Music Prize 2004.
+- [Rock & Roll Hall of Fame — B.B. King](https://rockhall.com/inductees/bb-king/) — Rock Hall (1987).
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Blues>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Directly supported by independent sources; confidence raised to high. Endpoint evidence: `artist:bb-king`, `genre:blues`.

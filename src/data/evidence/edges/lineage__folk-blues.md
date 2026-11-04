@@ -2,12 +2,12 @@
 
 Graph ID `lineage:folk-blues`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — kept medium; direction flagged
+**Reviewed** · 2026-11-03
 
-**Relationship** · cross_pollination · medium
+## Sources checked
+- [Wikipedia: American folk music revival](https://en.wikipedia.org/wiki/American_folk_music_revival) — revival performers included Lead Belly and Mississippi John Hurt; shared repertoire and circuits.
+- [AllMusic: Folk genre](https://www.allmusic.com/genre/folk-ma0000002592) (blocked; existing).
 
-**Graph note** · The folk revival and blues shared repertory, performers and audiences, especially in the mid-century revival circuit.
-
-**Graph citations** · [1](<https://www.allmusic.com/genre/folk-ma0000002592>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Revival-era exchange with blues performers is well documented, so medium is kept. Per GRAPH.md, cross_pollination reads `from` as the ancestor, but folk (c.1930) points to blues (c.1890), so the orientation appears reversed. This is flagged in the patch; from/to were not changed.

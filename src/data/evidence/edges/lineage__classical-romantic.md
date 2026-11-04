@@ -2,10 +2,12 @@
 
 Graph ID `lineage:classical-romantic`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Confirmed; upgraded to high
+**Reviewed** · 2026-11-03
 
-**Relationship** · influences · medium
+## Sources checked
+- [Wikipedia — Romantic music](https://en.wikipedia.org/wiki/Romantic_music) — Romantic era grows from Classical forms
+- [Classic FM — Beethoven](https://www.classicfm.com/composers/beethoven/) — Beethoven as the bridging figure
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Romantic_music>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Romantic music built directly on Classical forms (symphony, sonata), with Beethoven as the bridge. Confidence raised to high.

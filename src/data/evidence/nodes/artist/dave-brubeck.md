@@ -4,7 +4,7 @@ Graph ID `artist:dave-brubeck`
 
 **Review status** · Reviewed — start moved to 1933; end set to 2012
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 

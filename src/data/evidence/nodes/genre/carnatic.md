@@ -2,18 +2,17 @@
 
 Graph ID `genre:carnatic`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Confirmed as a broad tradition; circa-1700 start kept as a modern-era anchor
+**Reviewed** · 2026-11-03
 
-**Graph period** · 1700 (circa)
+## Sources checked
+- [AllMusic style page](https://www.allmusic.com/style/carnatic-ma0000012004) — existing citation (blocked to automated fetch; kept)
+- [Wikipedia — Carnatic music](https://en.wikipedia.org/wiki/Carnatic_music) — kriti form "developed between the 14th and 20th centuries" by Purandara Dasa and the Trinity
+- [The Music Academy, Madras](https://musicacademymadras.in/) — founded 1928 "to set the standard for Carnatic music" — modern institutional anchor
+- [Indian Culture portal](https://indianculture.gov.in/carnatic-music) — (blocked, 403) not cited
 
-**Graph claim** · The South Indian classical system, with distinct regional histories, performance lineages and approaches to melody and rhythm. The date is an approximate modern-era anchor, not a claim of origin.
+## Assessment
+The tradition is long and continuous; its compositional canon spans Purandara Dasa (16th c.) through the 18th–19th-century Trinity. The circa-1700 start is an editorial modern-era anchor, not an origin claim, and the existing description already says so. Added Wikipedia and the Music Academy as supporting sources. Single established phase kept.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/carnatic-ma0000012004>)
-
-**Graph phase rationale** · A single continuing phase is used because this broad, long-running tradition does not have a defensible shared peak cycle in the current graph sources. Shading is editorial, not a measured ranking; regional histories may require separate phases.
-
-## Phases
-
-- 1700 established · unrated · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Remaining uncertainty
+An earlier start (c. 1500, Purandara Dasa) would also be defensible; no source pins a single year.

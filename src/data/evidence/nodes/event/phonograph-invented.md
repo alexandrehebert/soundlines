@@ -3,7 +3,7 @@
 Graph ID `event:phonograph-invented`
 
 **Review status** · Reviewed — 1877 date confirmed; dead NPS citation replaced
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-03
 
 ## Sources checked
 - [NPS, Thomas Edison NHP — Origins of Sound Recording](https://www.nps.gov/edis/learn/historyculture/origins-of-sound-recording-thomas-edison.htm) — late November 1877 sketches for a phonograph recording "on tinfoil wrapped around a revolving cylinder"; demonstrated to *Scientific American* on 7 December 1877. Replaces the old NPS URL `…/historyculture/phonograph.htm` (404).

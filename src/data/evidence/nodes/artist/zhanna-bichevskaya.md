@@ -2,10 +2,16 @@
 
 Graph ID `artist:zhanna-bichevskaya`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — start moved to the 1970s
+**Reviewed** · 2026-11-03
 
-**Graph period** · 1960 (decade)
+## Sources checked
+- [Wikipedia: Zhanna Bichevskaya](https://en.wikipedia.org/wiki/Zhanna_Bichevskaya) — graduated from the Moscow circus and variety school in 1971; began performing Russian folk songs and romances in the 1970s.
+- [AllMusic: Zhanna Bichevskaya](https://www.allmusic.com/artist/zhanna-bichevskaya-mn0001547074) (Wikidata-verified ID; Wikidata P2031 = 1971).
+- Discogs API profile: "famous Russian bard and folk musician". Former official sites are now unrelated domains.
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/zhanna-bichevskaya-mn0001547074>)
+## Assessment
+There is no evidence of a 1960s career. The period is now 1970 decade, open-ended.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Remaining uncertainty
+Evidence is mostly database/encyclopedic; no press or archival biography found.

@@ -2,10 +2,12 @@
 
 Graph ID `key:wildstylez-hardstyle`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — Wildstylez as hardstyle key artist supported
+**Reviewed** · 2026-11-03
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Hard News: Project One](https://hardnews.nl/en/project-one-confirms-return-with-one-time-only-classics-show/) — Project One a pillar of hardstyle.
+- [Hard News (2023)](https://hardnews.nl/en/year-of-summer-is-the-first-hardstyle-track-ever-in-the-dutch-top-2000/) — first hardstyle track in Dutch Top 2000.
 
-**Graph citations** · [1](<https://www.allmusic.com/album/hardstyle-10-years-mw0002452091>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Medium confidence is kept, and two sources were added.
