@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <linearGradient id="metal" x2=".34" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#e2a76f"/><stop offset="1" stop-color="#614830"/>
+    </linearGradient>
+    <radialGradient id="back">
+      <stop stop-color="#614830" stop-opacity=".49"/><stop offset="1" stop-color="#0b1020"/>
+    </radialGradient>
+  </defs>
+  <path fill="#0b1020" d="M0 0h160v160H0z"/>
+  <path fill="url(#back)" d="M0 0h160v160H0z"/>
+  <path d="M20 0v160M40 0v160M60 0v160M80 0v160M100 0v160M120 0v160M140 0v160M0 20h160M0 40h160M0 60h160M0 80h160M0 100h160M0 120h160M0 140h160" stroke="url(#metal)" stroke-width=".5" opacity=".16"/>
+  <g transform="translate(80 80) rotate(0) scale(0.72)"><path d="M-63 65L-66 -60 Q-59 -81 -44 -59 Q-12 -19 45 -35L73 -51 Q84 -54 78 -40L-39 66Z" fill="url(#metal)" stroke="#f4d7ae" stroke-width="1.5"/><path d="M-53 47L-55 -51Q-15 -7 54 -32L-40 48Z" fill="#151520" stroke="#f4d7ae" stroke-width="1.5"/><path d="M-50 -38.97347303481714L-50 46.42" fill="none" stroke="#f2dab9" stroke-width="1"/><path d="M-43 -35.42381853454274L-43 40.89" fill="none" stroke="#f2dab9" stroke-width="1"/><path d="M-36 -32.037469269493336L-36 35.36" fill="none" stroke="#f2dab9" stroke-width="1"/><path d="M-29 -28.93527022089556L-29 29.83" fill="none" stroke="#f2dab9" stroke-width="1"/><path d="M-22 -26.22792620873307L-22 24.299999999999997" fill="none" stroke="#f2dab9" stroke-width="1"/><path d="M-15 -24.012051288649964L-15 18.77" fill="none" stroke="#f2dab9" stroke-width="1"/><path d="M-8 -22.366720990710956L-8 13.239999999999995" fill="none" stroke="#f2dab9" stroke-width="1"/><path d="M-1 -21.350650436542207L-1 7.710000000000001" fill="none" stroke="#f2dab9" stroke-width="1"/><path d="M6 -21.00009903633237L6 2.1799999999999997" fill="none" stroke="#f2dab9" stroke-width="1"/><path d="M13 -21.327576538504193L13 -3.3500000000000014" fill="none" stroke="#f2dab9" stroke-width="1"/><path d="M20 -22.321396607861676L20 -8.880000000000003" fill="none" stroke="#f2dab9" stroke-width="1"/><path d="M27 -23.946093863186256L27 -14.410000000000004" fill="none" stroke="#f2dab9" stroke-width="1"/><path d="M34 -26.14368949191272L34 -19.939999999999998" fill="none" stroke="#f2dab9" stroke-width="1"/><path d="M41 -28.835760277263603L41 -25.47" fill="none" stroke="#f2dab9" stroke-width="1"/></g>
+</svg>

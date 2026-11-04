@@ -21903,6 +21903,29 @@
       "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
     },
     {
+      "id": "instrument:triangle",
+      "type": "instrument",
+      "name": "Triangle",
+      "family": "percussion",
+      "period": {
+        "start": 1000,
+        "precision": "circa"
+      },
+      "description": "A suspended metal rod bent into an open triangle and struck with a metal beater. Documented in medieval Europe, it entered Western opera and symphony orchestras during the eighteenth century.",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1824",
+        "https://www.examenapium.it/cs/biblio/Blades1973.pdf"
+      ],
+      "phases": [
+        {
+          "start": 1000,
+          "prominence": "established",
+          "confidence": "low"
+        }
+      ],
+      "phaseNote": "The medieval start is an approximate documentation anchor. The phase spans documented use through later orchestral adoption."
+    },
+    {
       "id": "instrument:piccolo",
       "type": "instrument",
       "name": "Piccolo",
@@ -42780,6 +42803,26 @@
       "to": "genre:classical-period",
       "sources": [
         "https://philharmonia.co.uk/resources/instruments/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "featured:triangle-classical-period",
+      "type": "featured_in",
+      "from": "instrument:triangle",
+      "to": "genre:classical-period",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1824"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "featured:triangle-romantic",
+      "type": "featured_in",
+      "from": "instrument:triangle",
+      "to": "genre:romantic",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1824"
       ],
       "confidence": "medium"
     },

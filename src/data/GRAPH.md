@@ -31,7 +31,7 @@ rejected.**
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 1246 nodes (177 genres, 522 artists, 71 instruments, 41 labels, 87 places, 211 tracks, 56 scenes, 81 events) and 1975 edges.
+Current size: 1247 nodes (177 genres, 522 artists, 72 instruments, 41 labels, 87 places, 211 tracks, 56 scenes, 81 events) and 1977 edges.
 
 ---
 

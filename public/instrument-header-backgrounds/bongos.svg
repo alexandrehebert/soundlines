@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120">
+  <defs>
+    <linearGradient id="metal" x2=".34" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#ef4444"/><stop offset="1" stop-color="#671d1d"/>
+    </linearGradient>
+    <linearGradient id="fade">
+      <stop offset=".32" stop-color="white" stop-opacity="0"/>
+      <stop offset=".58" stop-color="white" stop-opacity=".18"/>
+      <stop offset=".88" stop-color="white" stop-opacity=".54"/>
+      <stop offset="1" stop-color="white" stop-opacity=".22"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#ef4444" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#ef4444" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="reveal" maskUnits="userSpaceOnUse" x="0" y="0" width="360" height="120">
+      <rect width="360" height="120" fill="url(#fade)"/>
+    </mask>
+  </defs>
+  <ellipse cx="279" cy="72" rx="89" ry="56" fill="url(#halo)"/>
+  <g mask="url(#reveal)">
+    <g transform="translate(266 69) scale(.61)"><path d="M-68 -13l7 39q25 16 50 0l7 -39Z" fill="url(#metal)" stroke="#f4d7ae" stroke-width="1.5"/><ellipse cx="-36" cy="-13" rx="32" ry="11" fill="#e4bfaa" stroke="#edd2a9" stroke-width="1"/><path d="M-60.96 -6L-55.968 31" fill="none" stroke="#ffe2ce" stroke-width="1.4"/><path d="M-36 -6L-36.0 31" fill="none" stroke="#ffe2ce" stroke-width="1.4"/><path d="M-11.04 -6L-16.031999999999996 31" fill="none" stroke="#ffe2ce" stroke-width="1.4"/><path d="M4 -21l6 38q21 16 42 0l6 -38Z" fill="url(#metal)" stroke="#f4d7ae" stroke-width="1.5"/><ellipse cx="31" cy="-21" rx="27" ry="9" fill="#e4bfaa" stroke="#edd2a9" stroke-width="1"/><path d="M9.939999999999998 -15L14.151999999999997 22" fill="none" stroke="#ffe2ce" stroke-width="1.4"/><path d="M31 -15L31.0 22" fill="none" stroke="#ffe2ce" stroke-width="1.4"/><path d="M52.06 -15L47.848 22" fill="none" stroke="#ffe2ce" stroke-width="1.4"/></g>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <linearGradient id="metal" x2=".34" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#ef4444"/><stop offset="1" stop-color="#671d1d"/>
+    </linearGradient>
+    <radialGradient id="back">
+      <stop stop-color="#671d1d" stop-opacity=".49"/><stop offset="1" stop-color="#0b1020"/>
+    </radialGradient>
+  </defs>
+  <path fill="#0b1020" d="M0 0h160v160H0z"/>
+  <path fill="url(#back)" d="M0 0h160v160H0z"/>
+  <path d="M20 0v160M40 0v160M60 0v160M80 0v160M100 0v160M120 0v160M140 0v160M0 20h160M0 40h160M0 60h160M0 80h160M0 100h160M0 120h160M0 140h160" stroke="url(#metal)" stroke-width=".5" opacity=".16"/>
+  <g transform="translate(80 80) rotate(-17) scale(0.49)"><g transform="rotate(-13)"><rect x="-94" y="-14" width="151" height="14" rx="7" fill="url(#metal)" stroke="#e7c99d" stroke-width=".8"/><g transform="rotate(23)"><rect x="-45" y="2" width="151" height="14" rx="7" fill="url(#metal)" stroke="#e7c99d" stroke-width=".8"/></g></g></g>
+</svg>

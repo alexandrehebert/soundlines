@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <linearGradient id="metal" x2=".34" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#38bdf8"/><stop offset="1" stop-color="#18516b"/>
+    </linearGradient>
+    <radialGradient id="back">
+      <stop stop-color="#18516b" stop-opacity=".49"/><stop offset="1" stop-color="#0b1020"/>
+    </radialGradient>
+  </defs>
+  <path fill="#0b1020" d="M0 0h160v160H0z"/>
+  <path fill="url(#back)" d="M0 0h160v160H0z"/>
+  <path d="M20 0v160M40 0v160M60 0v160M80 0v160M100 0v160M120 0v160M140 0v160M0 20h160M0 40h160M0 60h160M0 80h160M0 100h160M0 120h160M0 140h160" stroke="url(#metal)" stroke-width=".5" opacity=".16"/>
+  <g transform="translate(80 80) rotate(0) scale(0.49)"><g transform="rotate(-8)"><rect x="-109" y="-42" width="218" height="84" rx="8" fill="#223b52" stroke="#e7c99d" stroke-width=".8"/><rect x="-97" y="-32" width="194" height="63" rx="4" fill="#101e30" stroke="#e7c99d" stroke-width=".8"/><path d="M-90 -24L90 -24" fill="none" stroke="#304c63" stroke-width="0.6"/><path d="M-90 -15L90 -15" fill="none" stroke="#304c63" stroke-width="0.6"/><path d="M-90 -6L90 -6" fill="none" stroke="#304c63" stroke-width="0.6"/><path d="M-90 3L90 3" fill="none" stroke="#304c63" stroke-width="0.6"/><path d="M-90 12L90 12" fill="none" stroke="#304c63" stroke-width="0.6"/><path d="M-90 21L90 21" fill="none" stroke="#304c63" stroke-width="0.6"/><path d="M-88 13L-65 13L-65 3L-39 3L-39 12L-15 12L-15 -9L18 -9L18 -20L51 -20L51 -10L85 -10" fill="none" stroke="#bae6fd" stroke-width="2"/><path d="M-88 17Q-69 22 -61 6T-40 7T-15 13Q-8 -2 7 -7T27 -14T53 -16T85 -8" fill="none" stroke="#38bdf8" stroke-width="1"/></g></g>
+</svg>

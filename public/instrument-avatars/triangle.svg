@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <linearGradient id="metal" x2=".34" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#ef4444"/><stop offset="1" stop-color="#671d1d"/>
+    </linearGradient>
+    <radialGradient id="back">
+      <stop stop-color="#671d1d" stop-opacity=".49"/><stop offset="1" stop-color="#0b1020"/>
+    </radialGradient>
+  </defs>
+  <path fill="#0b1020" d="M0 0h160v160H0z"/>
+  <path fill="url(#back)" d="M0 0h160v160H0z"/>
+  <path d="M20 0v160M40 0v160M60 0v160M80 0v160M100 0v160M120 0v160M140 0v160M0 20h160M0 40h160M0 60h160M0 80h160M0 100h160M0 120h160M0 140h160" stroke="url(#metal)" stroke-width=".5" opacity=".16"/>
+  <g transform="translate(80 80) rotate(0) scale(0.72)"><g transform="rotate(-7) scale(.84)"><path d="M-47 32-7-42q4-7 8 0l49 81q2 4-3 4h-81" fill="none" stroke="#722828" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-47 32-7-42q4-7 8 0l49 81q2 4-3 4h-81" fill="none" stroke="url(#metal)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-45 30-5-43M2-41l47 78M-33 41h78" stroke="#fca5a5" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M-7-44q-7-14 0-16 8-2 7 13" fill="none" stroke="#b59ba6" stroke-width="2"/>
+<path d="M33 14 75-26" stroke="#e8a8ad" stroke-width="4" stroke-linecap="round"/>
+<path d="M67-18l13-13" stroke="#8f3e48" stroke-width="6" stroke-linecap="round"/></g></g>
+</svg>

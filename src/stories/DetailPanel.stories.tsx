@@ -32,3 +32,23 @@ export const ArtistWithCareerPhases: Story = {
 export const Label: Story = {
   parameters: { explorer: { initialSelectedId: 'label:trax' } },
 }
+
+export const KotoWithHeaderArtwork: Story = {
+  parameters: { explorer: { initialSelectedId: 'instrument:koto' } },
+}
+
+export const MinimoogWithHeaderArtwork: Story = {
+  parameters: { explorer: { initialSelectedId: 'instrument:minimoog' } },
+}
+
+export const AccordionWithHeaderArtwork: Story = {
+  parameters: { explorer: { initialSelectedId: 'instrument:accordion' } },
+}
+
+export const BandoneonWithHeaderArtwork: Story = {
+  parameters: { explorer: { initialSelectedId: 'instrument:bandoneon' } },
+}
+
+export const TriangleWithHeaderArtwork: Story = {
+  parameters: { explorer: { initialSelectedId: 'instrument:triangle' } },
+}

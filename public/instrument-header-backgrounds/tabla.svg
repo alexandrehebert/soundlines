@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120">
+  <defs>
+    <linearGradient id="metal" x2=".34" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#ef4444"/><stop offset="1" stop-color="#671d1d"/>
+    </linearGradient>
+    <linearGradient id="fade">
+      <stop offset=".32" stop-color="white" stop-opacity="0"/>
+      <stop offset=".58" stop-color="white" stop-opacity=".18"/>
+      <stop offset=".88" stop-color="white" stop-opacity=".54"/>
+      <stop offset="1" stop-color="white" stop-opacity=".22"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#ef4444" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#ef4444" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="reveal" maskUnits="userSpaceOnUse" x="0" y="0" width="360" height="120">
+      <rect width="360" height="120" fill="url(#fade)"/>
+    </mask>
+  </defs>
+  <ellipse cx="279" cy="72" rx="89" ry="56" fill="url(#halo)"/>
+  <g mask="url(#reveal)">
+    <g transform="translate(266 69) scale(.61)"><path d="M-76 -22l6 55q33 16 66 0l6 -55Z" fill="url(#metal)" stroke="#f4d7ae" stroke-width="1.5"/><ellipse cx="-37" cy="-22" rx="39" ry="13" fill="#e4bfaa" stroke="#edd2a9" stroke-width="1"/><path d="M-67.42 -13L-61.336 38" fill="none" stroke="#ffe2ce" stroke-width="1.4"/><path d="M-37 -13L-37.0 38" fill="none" stroke="#ffe2ce" stroke-width="1.4"/><path d="M-6.579999999999998 -13L-12.663999999999998 38" fill="none" stroke="#ffe2ce" stroke-width="1.4"/><path d="M16 -9l6 49q21 16 42 0l6 -49Z" fill="url(#metal)" stroke="#f4d7ae" stroke-width="1.5"/><ellipse cx="43" cy="-9" rx="27" ry="9" fill="#e4bfaa" stroke="#edd2a9" stroke-width="1"/><path d="M21.939999999999998 -3L26.151999999999997 45" fill="none" stroke="#ffe2ce" stroke-width="1.4"/><path d="M43 -3L43.0 45" fill="none" stroke="#ffe2ce" stroke-width="1.4"/><path d="M64.06 -3L59.848 45" fill="none" stroke="#ffe2ce" stroke-width="1.4"/><ellipse cx="-37" cy="-22" rx="17" ry="6" fill="#412735" stroke="#edd2a9" stroke-width="1"/><ellipse cx="43" cy="-9" rx="13" ry="5" fill="#412735" stroke="#edd2a9" stroke-width="1"/></g>
+  </g>
+</svg>

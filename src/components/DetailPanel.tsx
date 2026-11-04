@@ -61,10 +61,18 @@ export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
   const phases = prominencePhases(node, CURRENT_YEAR)
   const labels = prominenceLabels(node.type)
   const family = timelineFamily(index, node)
+  const instrumentArtwork = node.type === 'instrument'
+    ? `${encodeURIComponent(node.id.slice('instrument:'.length))}.svg`
+    : null
 
   return (
     <aside className="flex h-full w-full flex-col overflow-y-auto border-l-0 border-slate-800 bg-slate-950/95 backdrop-blur md:border-l">
-      <div className="sticky top-0 flex items-start justify-between gap-3 border-b border-slate-800 bg-slate-950/95 p-4 md:p-5">
+      <div
+        className="sticky top-0 z-10 flex items-start justify-between gap-3 border-b border-slate-800 bg-slate-950/95 bg-contain bg-right-bottom bg-no-repeat p-4 md:p-5"
+        style={instrumentArtwork ? {
+          backgroundImage: `url("${import.meta.env.BASE_URL}instrument-header-backgrounds/${instrumentArtwork}")`,
+        } : undefined}
+      >
         <div>
           <div className="mb-2 flex flex-wrap items-center gap-2">
             <span

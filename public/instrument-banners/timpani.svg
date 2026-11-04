@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160">
+  <defs>
+    <linearGradient id="metal" x2=".34" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#ef4444"/><stop offset="1" stop-color="#671d1d"/>
+    </linearGradient>
+    <radialGradient id="back">
+      <stop stop-color="#671d1d" stop-opacity=".49"/><stop offset="1" stop-color="#0b1020"/>
+    </radialGradient>
+  </defs>
+  <path fill="#0b1020" d="M0 0h360v160H0z"/>
+  <path fill="url(#back)" d="M0 0h360v160H0z"/>
+  <g opacity=".12"><path d="M20 0L20 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M40 0L40 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M60 0L60 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M80 0L80 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M100 0L100 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M120 0L120 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M140 0L140 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M160 0L160 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M180 0L180 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M200 0L200 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M220 0L220 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M240 0L240 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M260 0L260 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M280 0L280 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M300 0L300 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M320 0L320 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M340 0L340 160" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M0 20L360 20" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M0 40L360 40" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M0 60L360 60" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M0 80L360 80" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M0 100L360 100" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M0 120L360 120" fill="none" stroke="#ef4444" stroke-width="0.5"/><path d="M0 140L360 140" fill="none" stroke="#ef4444" stroke-width="0.5"/></g>
+  <ellipse cx="180" cy="131" rx="101" ry="7" fill="#060913" opacity=".44"/>
+  <g transform="translate(180 79)"><path d="M-62 -19Q-55 48 0 51Q55 48 62 -19Z" fill="url(#metal)" stroke="#f4d7ae" stroke-width="1.5"/><ellipse cx="0" cy="-20" rx="63" ry="21" fill="#d3ac9e" stroke="#edd2a9" stroke-width="1"/><path d="M-52 4L-60 57" fill="none" stroke="#ccb9c8" stroke-width="3"/><path d="M52 4L60 57" fill="none" stroke="#ccb9c8" stroke-width="3"/></g>
+</svg>
