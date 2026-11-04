@@ -2,20 +2,16 @@
 
 Graph ID `genre:cool-jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — late-1940s emergence and 1950s West Coast peak confirmed
 
-**Graph period** · 1948–1960 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Restrained dynamics, lighter timbres, and carefully arranged textures in postwar jazz. Includes, but is not synonymous with, West Coast jazz.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Cool_jazz>)
+- [Britannica, cool jazz](https://www.britannica.com/art/cool-jazz) — emerged “during the late 1940s”; Davis, MJQ, Mulligan, Tristano; West Coast community (Mulligan, Brubeck, Rogers) in “early and middle 1950s”; coexisted with bop and hard bop.
+- [Carnegie Hall timeline, cool jazz](https://timeline.carnegiehall.org/genres/cool-jazz) — alternative to bebop’s complexities; Birth of the Cool (1949–50) with Gil Evans and Mulligan; Lester Young as precursor; Lighthouse Café West Coast scene.
+- [Wikipedia, cool jazz](https://en.wikipedia.org/wiki/Cool_jazz) — page retrieved; retained as orientation.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
-
-- 1948 emerging · unrated · No phase note · None recorded
-- 1953 golden-age · unrated · No phase note · None recorded
-- 1958 niche · unrated · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Start circa 1948 and description (restrained dynamics; not synonymous with West Coast jazz) confirmed by Britannica and Carnegie Hall. Golden age moved to 1952 (Mulligan quartet and West Coast boom) and the 1958 niche phase replaced by an established phase from 1957, as cool coexisted with hard bop rather than disappearing. The 1960 end kept as an era boundary. Sources added.

@@ -2,20 +2,23 @@
 
 Graph ID `genre:acid-jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — late-1980s London origin and mid-1990s decline confirmed
 
-**Graph period** · 1987–1997 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A British club-era fusion that joined jazz and funk grooves with soul, hip-hop and dance-music sensibilities. It emerged in late-1980s London and was carried by both live bands and DJ-led scenes.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/acid-jazz-ma0000002414>), [2](<https://www.jamestaylorquartet.co.uk/jtq/biography/>), [3](<https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/>)
+- [James Taylor Quartet official biography](https://www.jamestaylorquartet.co.uk/jtq/biography/) — JTQ’s 1987 single on Re-Elect the President, “which would later become the Acid Jazz label”.
+- [WDET, Progressive Underground primer to acid jazz](https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/) — mid-80s London club DJs fused jazz, funk and hip hop; Acid Jazz label started 1988 by Piller and Peterson; decline with mid-1990s electronic club music.
+- [Official Charts, Brand New Heavies](https://www.officialcharts.com/artist/27209/brand-new-heavies/) — UK singles from 1991 (“Never Stop”) through mid-1990s.
+- [Official Charts, Jamiroquai](https://www.officialcharts.com/artist/28264/jamiroquai/) — “funk and acid jazz band… formed in 1992”; first charting 1993.
+- [Wikipedia, acid jazz](https://en.wikipedia.org/wiki/Acid_jazz) — 1980s London origins; 1990s decline, later indistinct, absorbed into nu jazz/jazz-funk.
+- [AllMusic, acid jazz genre](https://www.allmusic.com/genre/acid-jazz-ma0000002414) — (blocked) not re-read; retained as reference listing.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Period circa 1987–1997 and description confirmed. Phases kept (emerging 1987, golden age 1991, niche 1995) but now anchored with phase notes and sources (label origin, chart runs, decline). Wikipedia added; phaseNote rewritten. Confidence in boundaries medium/low.
 
-- 1987 emerging · unrated · No phase note · None recorded
-- 1991 golden-age · unrated · No phase note · None recorded
-- 1995 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Acid Jazz label founding is given as 1987 or 1988 depending on source.

@@ -2,16 +2,13 @@
 
 Graph ID `event:phonograph-invented`
 
-**Review status** · Date and description cross-checked
+**Review status** · Reviewed — 1877 date confirmed; dead NPS citation replaced
+**Reviewed** · 2026-11-04
 
-**Graph period** · 1877 (year)
+## Sources checked
+- [NPS, Thomas Edison NHP — Origins of Sound Recording](https://www.nps.gov/edis/learn/historyculture/origins-of-sound-recording-thomas-edison.htm) — late November 1877 sketches for a phonograph recording "on tinfoil wrapped around a revolving cylinder"; demonstrated to *Scientific American* on 7 December 1877. Replaces the old NPS URL `…/historyculture/phonograph.htm` (404).
+- [Library of Congress, NRPP historical timeline](https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/) — (403 to automated fetch; kept as institutional chronology).
+- [Smithsonian, early sound recording fact sheet](https://www.si.edu/newsdesk/factsheets/early-sound-recording-collection-and-sound-recovery-project) — (403 to automated fetch; kept).
 
-**Graph claim** · Thomas Edison’s 1877 tinfoil phonograph recorded and reproduced sound. Later wax-cylinder machines made recorded music practical for commercial distribution.
-
-**Graph citations** · [1](<https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/>), [2](<https://www.nps.gov/edis/learn/historyculture/phonograph.htm>), [3](<https://www.si.edu/newsdesk/factsheets/early-sound-recording-collection-and-sound-recovery-project>)
-
-## Evidence review
-
-The Library of Congress chronology and Smithsonian collection history agree that Edison’s 1877 machine could record and reproduce sound. Both distinguish this tinfoil machine from the later wax-cylinder developments. Keep the 1877 date and landmark rating. Earlier sound tracings and later commercial music playback are separate milestones.
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.
+## Assessment
+The NPS page, from the Edison laboratory's own historic site, directly dates the tinfoil phonograph to late 1877. Year precision and landmark significance stand. The previous "cross-checked" status was unsupported because all three retrievals had failed; the NPS source now provides the direct confirmation.

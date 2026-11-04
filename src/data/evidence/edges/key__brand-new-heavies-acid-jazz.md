@@ -2,10 +2,16 @@
 
 Graph ID `key:brand-new-heavies-acid-jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — key role confirmed; raised to high
 
-**Relationship** · key_artist_of · medium
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/acid-jazz-ma0000002414>), [2](<https://www.allmusic.com/artist/the-brand-new-heavies-mn0000628684>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+- [WDET, Progressive Underground primer to acid jazz](https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/) — among the first acts on the Acid Jazz label; “Never Stop” as a quintessential track.
+- [Wikipedia](https://en.wikipedia.org/wiki/The_Brand_New_Heavies) — acid jazz; Acid Jazz label.
+- [AllMusic, acid jazz genre](https://www.allmusic.com/genre/acid-jazz-ma0000002414) — (blocked) not re-read; retained as reference listing.
+
+## Assessment
+
+Independent sources agree the band was central to early acid jazz. Confidence → high.

@@ -2,10 +2,16 @@
 
 Graph ID `key:brubeck-cool`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — key role confirmed; raised to high
 
-**Relationship** · key_artist_of · medium
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Cool_jazz>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, cool jazz](https://www.britannica.com/art/cool-jazz) — names Brubeck among the West Coast cool community.
+- [Britannica, Dave Brubeck](https://www.britannica.com/biography/Dave-Brubeck) — style “epitomized” the West Coast movement.
+- [Wikipedia, cool jazz](https://en.wikipedia.org/wiki/Cool_jazz) — original citation.
+
+## Assessment
+
+Directly supported by Britannica’s genre and biography entries. Confidence → high.

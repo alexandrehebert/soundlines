@@ -2,20 +2,21 @@
 
 Graph ID `genre:free-jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — origin confirmed; closed 1975 end removed
 
-**Graph period** · 1959–1975 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Jazz that experiments with or abandons fixed chord progressions, regular meter, and conventional ensemble roles in favor of freer improvisation.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Free_jazz>)
+- [Britannica, free jazz](https://www.britannica.com/art/free-jazz) — emerged “during the late 1950s, reached its height in the ’60s, and remained a major development” thereafter; began with Coleman’s 1958–59 groups, named by Free Jazz (1960); Taylor, Coltrane, Dolphy, Ayler, AACM, European free improvisation.
+- [NEA Jazz Masters, Ornette Coleman](https://www.arts.gov/honors/jazz/ornette-coleman) — not re-fetched; read in the prior node review.
+- [Wikipedia, free jazz](https://en.wikipedia.org/wiki/Free_jazz) — page retrieved; consistent; retained as orientation.
+- [Carnegie Hall timeline](https://timeline.carnegiehall.org/genres/free-jazz) — (404) no free-jazz page.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Start circa 1959 and the description are supported. Britannica explicitly says free jazz remained a major development after the 1960s (AACM, European scenes, later composers), so the 1975 end and the 1973 “niche” phase understated its continuity: end removed, and the final phase is now a lower-intensity established phase from 1973. Golden age from 1965 kept (mid-1960s energy music).
 
-- 1959 emerging · unrated · No phase note · None recorded
-- 1965 golden-age · unrated · No phase note · None recorded
-- 1973 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Whether to model loft jazz or European free improvisation as separate later phases is editorial.

@@ -2,10 +2,16 @@
 
 Graph ID `key:baker-cool`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — key role confirmed; raised to high
 
-**Relationship** · key_artist_of · medium
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Cool_jazz>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, Chet Baker](https://www.britannica.com/biography/Chet-Baker) — “cool-toned, subdued playing” in Mulligan’s 1952 quartet; “cool school” vocals.
+- [Los Angeles Times, 1988](https://www.latimes.com/archives/la-xpm-1988-12-18-ca-769-story.html) — Mulligan piano-less quintet.
+- [Wikipedia, cool jazz](https://en.wikipedia.org/wiki/Cool_jazz) — original citation.
+
+## Assessment
+
+Baker’s cool/West Coast identity is consistently documented. Confidence medium → high; Britannica and LA Times added.

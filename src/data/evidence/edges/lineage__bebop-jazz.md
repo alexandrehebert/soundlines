@@ -2,10 +2,15 @@
 
 Graph ID `lineage:bebop-jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — subgenre relation confirmed; raised to high
 
-**Relationship** · subgenre_of · medium
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Bebop>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, bebop](https://www.britannica.com/art/bebop) — “the first kind of modern jazz”.
+- [Wikipedia, bebop](https://en.wikipedia.org/wiki/Bebop) — original citation.
+
+## Assessment
+
+Uncontroversial. Confidence → high.

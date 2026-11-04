@@ -2,10 +2,15 @@
 
 Graph ID `key:monk-bebop`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — founding role confirmed; raised to high
 
-**Relationship** · key_artist_of · medium
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Bebop>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, bebop](https://www.britannica.com/art/bebop) — Monk named among bebop’s originators.
+- [Carnegie Hall timeline, bebop](https://timeline.carnegiehall.org/genres/bebop) — Monk among Minton’s founders; “Round Midnight” (1947).
+
+## Assessment
+
+Confidence → high; consistent with the reviewed Monk node.

@@ -2,10 +2,16 @@
 
 Graph ID `key:taylor-free`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — key role confirmed; raised to high
 
-**Relationship** · key_artist_of · medium
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Free_jazz>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, free jazz](https://www.britannica.com/art/free-jazz) — Taylor among the first to create free jazz after Coleman.
+- [NPR obituary](https://www.npr.org/sections/therecord/2018/04/06/535064217/cecil-taylor-jazz-icon-of-the-avant-garde-dies-at-89) — “A pioneer of free jazz”.
+- [Guardian, 2018](https://www.theguardian.com/music/2018/apr/06/cecil-taylor-free-jazz-pioneer-dies-age-89-new-york-pianist-avant-garde) — “one of the key figures in the free jazz revolution”.
+
+## Assessment
+
+Confidence → high; sources added.

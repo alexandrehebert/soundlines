@@ -142,11 +142,15 @@
       "kind": "person",
       "period": {
         "start": 1952,
-        "end": 1970
+        "end": 1970,
+        "precision": "circa"
       },
       "description": "Saxophonist whose forceful, spiritually charged playing became central to 1960s free jazz.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Albert_Ayler"
+        "https://en.wikipedia.org/wiki/Albert_Ayler",
+        "https://www.britannica.com/biography/Albert-Ayler",
+        "https://www.npr.org/2001/05/08/1122654/avant-garde-made-easy-albert-ayler",
+        "https://www.allmusic.com/artist/albert-ayler-mn0000614339"
       ]
     },
     {
@@ -979,11 +983,15 @@
       "kind": "group",
       "period": {
         "start": 1985,
-        "precision": "decade"
+        "precision": "circa"
       },
       "sources": [
-        "https://www.allmusic.com/artist/the-brand-new-heavies-mn0000628684"
-      ]
+        "https://www.allmusic.com/artist/the-brand-new-heavies-mn0000628684",
+        "https://en.wikipedia.org/wiki/The_Brand_New_Heavies",
+        "https://www.officialcharts.com/artist/27209/brand-new-heavies/",
+        "https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/"
+      ],
+      "description": "Ealing, London band among the first acts on the Acid Jazz label, whose funk-and-soul grooves helped carry acid jazz into the early-1990s charts."
     },
     {
       "id": "artist:brian-eno",
@@ -1200,12 +1208,18 @@
       "name": "Cecil Taylor",
       "kind": "person",
       "period": {
-        "start": 1956,
-        "end": 2016
+        "start": 1952,
+        "end": 2018,
+        "precision": "circa"
       },
       "description": "Pianist and composer known for percussive intensity and freely structured improvisation.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Cecil_Taylor"
+        "https://en.wikipedia.org/wiki/Cecil_Taylor",
+        "https://www.arts.gov/honors/jazz/cecil-taylor",
+        "https://www.npr.org/sections/therecord/2018/04/06/535064217/cecil-taylor-jazz-icon-of-the-avant-garde-dies-at-89",
+        "https://www.theguardian.com/music/2018/apr/06/cecil-taylor-free-jazz-pioneer-dies-age-89-new-york-pianist-avant-garde",
+        "https://pitchfork.com/news/cecil-taylor-dead-at-89/",
+        "https://www.allmusic.com/artist/cecil-taylor-mn0000988386"
       ]
     },
     {
@@ -1273,11 +1287,15 @@
       "kind": "person",
       "period": {
         "start": 1949,
-        "end": 1988
+        "end": 1988,
+        "precision": "circa"
       },
       "description": "Trumpeter and singer known for the lyrical, restrained sound of West Coast cool jazz.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Chet_Baker"
+        "https://en.wikipedia.org/wiki/Chet_Baker",
+        "https://www.britannica.com/biography/Chet-Baker",
+        "https://www.latimes.com/archives/la-xpm-1988-12-18-ca-769-story.html",
+        "https://www.allmusic.com/artist/chet-baker-mn0000094210"
       ]
     },
     {
@@ -1587,12 +1605,18 @@
       "name": "Dave Brubeck",
       "kind": "person",
       "period": {
-        "start": 1940,
-        "end": 2011
+        "start": 1933,
+        "end": 2012,
+        "precision": "circa"
       },
       "description": "Pianist and composer associated with cool jazz and experiments in unusual meters.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Dave_Brubeck"
+        "https://en.wikipedia.org/wiki/Dave_Brubeck",
+        "https://www.britannica.com/biography/Dave-Brubeck",
+        "https://www.arts.gov/honors/jazz/dave-brubeck",
+        "https://www.theguardian.com/music/2012/dec/05/dave-brubeck",
+        "https://www.davebrubeck.com/",
+        "https://www.allmusic.com/artist/dave-brubeck-mn0000958533"
       ]
     },
     {
@@ -3107,11 +3131,14 @@
       "kind": "group",
       "period": {
         "start": 1979,
-        "precision": "circa"
+        "precision": "year"
       },
       "sources": [
-        "https://www.allmusic.com/artist/incognito-mn0000772721"
-      ]
+        "https://www.allmusic.com/artist/incognito-mn0000772721",
+        "https://www.incognito.london/incognito",
+        "https://en.wikipedia.org/wiki/Incognito_(band)"
+      ],
+      "description": "London jazz-funk collective led by Jean-Paul 'Bluey' Maunick, later signed to Gilles Peterson's Talkin' Loud label during the acid-jazz boom."
     },
     {
       "id": "artist:infected-mushroom",
@@ -3256,8 +3283,12 @@
         "precision": "year"
       },
       "sources": [
-        "https://www.allmusic.com/artist/mn0000176358"
-      ]
+        "https://www.allmusic.com/artist/mn0000176358",
+        "https://www.officialcharts.com/artist/28264/jamiroquai/",
+        "https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/",
+        "https://en.wikipedia.org/wiki/Jamiroquai"
+      ],
+      "description": "London funk and acid-jazz band fronted by Jay Kay, first signed to Acid Jazz and among the genre’s most commercially successful acts."
     },
     {
       "id": "artist:jeff-mills",
@@ -8188,8 +8219,8 @@
       },
       "description": "Thomas Edison’s 1877 tinfoil phonograph recorded and reproduced sound. Later wax-cylinder machines made recorded music practical for commercial distribution.",
       "sources": [
+        "https://www.nps.gov/edis/learn/historyculture/origins-of-sound-recording-thomas-edison.htm",
         "https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/",
-        "https://www.nps.gov/edis/learn/historyculture/phonograph.htm",
         "https://www.si.edu/newsdesk/factsheets/early-sound-recording-collection-and-sound-recovery-project"
       ],
       "significance": "landmark"
@@ -8447,23 +8478,42 @@
       "sources": [
         "https://www.allmusic.com/genre/acid-jazz-ma0000002414",
         "https://www.jamestaylorquartet.co.uk/jtq/biography/",
-        "https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/"
+        "https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/",
+        "https://en.wikipedia.org/wiki/Acid_jazz"
       ],
       "phases": [
         {
           "start": 1987,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "medium",
+          "note": "Late-1980s London club scene; Acid Jazz label grows from Re-Elect the President (1987–88).",
+          "sources": [
+            "https://www.jamestaylorquartet.co.uk/jtq/biography/",
+            "https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/"
+          ]
         },
         {
           "start": 1991,
-          "prominence": "golden-age"
+          "prominence": "golden-age",
+          "confidence": "medium",
+          "note": "Chart run of Brand New Heavies (1991–94) and Jamiroquai (from 1993).",
+          "sources": [
+            "https://www.officialcharts.com/artist/27209/brand-new-heavies/",
+            "https://www.officialcharts.com/artist/28264/jamiroquai/"
+          ]
         },
         {
           "start": 1995,
-          "prominence": "niche"
+          "prominence": "niche",
+          "intensity": 0,
+          "confidence": "low",
+          "note": "Mid-1990s decline as electronic club music rises; later absorbed into nu jazz and jazz-funk.",
+          "sources": [
+            "https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/"
+          ]
         }
       ],
-      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
+      "phaseNote": "Editorial shading, not a measured ranking: emergence, chart peak and decline follow the WDET primer, the JTQ biography and UK chart histories. The 1997 end marks the close of acid jazz as a distinct movement; boundaries are approximate."
     },
     {
       "id": "genre:afrobeat",
@@ -8898,23 +8948,38 @@
       },
       "description": "Small-group jazz with fast tempos, intricate melodies, and improvisation over rapidly moving chord changes. A foundational language of modern jazz.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Bebop"
+        "https://en.wikipedia.org/wiki/Bebop",
+        "https://www.britannica.com/art/bebop",
+        "https://timeline.carnegiehall.org/genres/bebop"
       ],
       "phases": [
         {
           "start": 1940,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "high",
+          "note": "Early-1940s Minton’s jam sessions and experiments by Gillespie, Parker, Monk and Clarke.",
+          "sources": [
+            "https://www.britannica.com/art/bebop",
+            "https://timeline.carnegiehall.org/genres/bebop"
+          ]
         },
         {
-          "start": 1948,
-          "prominence": "golden-age"
+          "start": 1945,
+          "prominence": "golden-age",
+          "confidence": "medium",
+          "note": "1945 Parker–Gillespie recordings (“Koko”, “Shaw ’Nuff”); bebop splits jazz in the later 1940s.",
+          "sources": [
+            "https://timeline.carnegiehall.org/genres/bebop",
+            "https://www.britannica.com/art/bebop"
+          ]
         },
         {
-          "start": 1958,
-          "prominence": "niche"
+          "start": 1951,
+          "prominence": "established",
+          "confidence": "low"
         }
       ],
-      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
+      "phaseNote": "Editorial shading, not a measured ranking: early-1940s emergence and a later-1940s peak are well documented (Britannica, Carnegie Hall); the 1950s “established” phase reflects bop becoming the common modern-jazz vocabulary while hard bop and cool took the spotlight. The 1960 end marks the close of bebop as the leading style, not its disappearance."
     },
     {
       "id": "genre:big-beat",
@@ -9553,23 +9618,38 @@
       },
       "description": "Restrained dynamics, lighter timbres, and carefully arranged textures in postwar jazz. Includes, but is not synonymous with, West Coast jazz.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Cool_jazz"
+        "https://en.wikipedia.org/wiki/Cool_jazz",
+        "https://www.britannica.com/art/cool-jazz",
+        "https://timeline.carnegiehall.org/genres/cool-jazz"
       ],
       "phases": [
         {
           "start": 1948,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "medium",
+          "note": "Late-1940s emergence; Davis’s Birth of the Cool sessions (1949–50).",
+          "sources": [
+            "https://www.britannica.com/art/cool-jazz",
+            "https://timeline.carnegiehall.org/genres/cool-jazz"
+          ]
         },
         {
-          "start": 1953,
-          "prominence": "golden-age"
+          "start": 1952,
+          "prominence": "golden-age",
+          "confidence": "medium",
+          "note": "Early-to-mid-1950s West Coast recording boom (Mulligan quartet 1952, Brubeck).",
+          "sources": [
+            "https://www.britannica.com/art/cool-jazz",
+            "https://www.britannica.com/biography/Chet-Baker"
+          ]
         },
         {
-          "start": 1958,
-          "prominence": "niche"
+          "start": 1957,
+          "prominence": "established",
+          "confidence": "low"
         }
       ],
-      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
+      "phaseNote": "Editorial shading, not a measured ranking: cool jazz emerges in the late 1940s and its publicity peak is the early–middle-1950s West Coast scene (Britannica, Carnegie Hall); the late-1950s phase reflects hard bop and modal jazz overtaking it. Boundaries are approximate."
     },
     {
       "id": "genre:country",
@@ -10377,28 +10457,41 @@
       "family": "jazz",
       "period": {
         "start": 1959,
-        "precision": "circa",
-        "end": 1975
+        "precision": "circa"
       },
       "description": "Jazz that experiments with or abandons fixed chord progressions, regular meter, and conventional ensemble roles in favor of freer improvisation.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Free_jazz"
+        "https://en.wikipedia.org/wiki/Free_jazz",
+        "https://www.britannica.com/art/free-jazz",
+        "https://www.arts.gov/honors/jazz/ornette-coleman"
       ],
       "phases": [
         {
           "start": 1959,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "high",
+          "note": "Ornette Coleman’s 1958–59 groups; the 1960 album Free Jazz names the idiom.",
+          "sources": [
+            "https://www.britannica.com/art/free-jazz"
+          ]
         },
         {
           "start": 1965,
-          "prominence": "golden-age"
+          "prominence": "golden-age",
+          "confidence": "medium",
+          "note": "Mid-1960s energy music of Coltrane, Sanders, Ayler and Taylor.",
+          "sources": [
+            "https://www.britannica.com/art/free-jazz"
+          ]
         },
         {
           "start": 1973,
-          "prominence": "niche"
+          "prominence": "established",
+          "confidence": "low",
+          "intensity": 0.35
         }
       ],
-      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
+      "phaseNote": "Editorial shading, not a measured ranking. Britannica dates emergence to the late 1950s, the height to the 1960s, and says free jazz “remained a major development” thereafter (AACM, European free improvisation), so the former 1975 end was removed and the post-1973 phase is a lower-intensity established tradition."
     },
     {
       "id": "genre:french-house",
@@ -29647,9 +29740,12 @@
       "type": "key_artist_of",
       "from": "artist:albert-ayler",
       "to": "genre:free-jazz",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "https://en.wikipedia.org/wiki/Free_jazz"
+        "https://en.wikipedia.org/wiki/Free_jazz",
+        "https://www.britannica.com/biography/Albert-Ayler",
+        "https://www.britannica.com/art/free-jazz",
+        "https://www.npr.org/2001/05/08/1122654/avant-garde-made-easy-albert-ayler"
       ]
     },
     {
@@ -29688,9 +29784,11 @@
       "type": "key_artist_of",
       "from": "artist:chet-baker",
       "to": "genre:cool-jazz",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "https://en.wikipedia.org/wiki/Cool_jazz"
+        "https://en.wikipedia.org/wiki/Cool_jazz",
+        "https://www.britannica.com/biography/Chet-Baker",
+        "https://www.latimes.com/archives/la-xpm-1988-12-18-ca-769-story.html"
       ]
     },
     {
@@ -29909,9 +30007,11 @@
       "to": "genre:acid-jazz",
       "sources": [
         "https://www.allmusic.com/genre/acid-jazz-ma0000002414",
-        "https://www.allmusic.com/artist/the-brand-new-heavies-mn0000628684"
+        "https://www.allmusic.com/artist/the-brand-new-heavies-mn0000628684",
+        "https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/",
+        "https://en.wikipedia.org/wiki/The_Brand_New_Heavies"
       ],
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "key:brian-eno-ambient",
@@ -29950,9 +30050,11 @@
       "type": "key_artist_of",
       "from": "artist:dave-brubeck",
       "to": "genre:cool-jazz",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "https://en.wikipedia.org/wiki/Cool_jazz"
+        "https://en.wikipedia.org/wiki/Cool_jazz",
+        "https://www.britannica.com/art/cool-jazz",
+        "https://www.britannica.com/biography/Dave-Brubeck"
       ]
     },
     {
@@ -30192,9 +30294,11 @@
       "type": "key_artist_of",
       "from": "artist:ornette-coleman",
       "to": "genre:free-jazz",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "https://en.wikipedia.org/wiki/Free_jazz"
+        "https://en.wikipedia.org/wiki/Free_jazz",
+        "https://www.britannica.com/art/free-jazz",
+        "https://www.arts.gov/honors/jazz/ornette-coleman"
       ]
     },
     {
@@ -30392,9 +30496,11 @@
       "type": "key_artist_of",
       "from": "artist:miles-davis",
       "to": "genre:cool-jazz",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "https://en.wikipedia.org/wiki/Cool_jazz"
+        "https://en.wikipedia.org/wiki/Cool_jazz",
+        "https://www.britannica.com/art/cool-jazz",
+        "https://timeline.carnegiehall.org/genres/cool-jazz"
       ]
     },
     {
@@ -31018,9 +31124,11 @@
       "type": "key_artist_of",
       "from": "artist:dizzy-gillespie",
       "to": "genre:bebop",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "https://en.wikipedia.org/wiki/Bebop"
+        "https://en.wikipedia.org/wiki/Bebop",
+        "https://www.britannica.com/art/bebop",
+        "https://timeline.carnegiehall.org/genres/bebop"
       ]
     },
     {
@@ -31307,7 +31415,9 @@
       "to": "genre:acid-jazz",
       "sources": [
         "https://www.allmusic.com/genre/acid-jazz-ma0000002414",
-        "https://www.allmusic.com/artist/incognito-mn0000772721"
+        "https://www.allmusic.com/artist/incognito-mn0000772721",
+        "https://www.incognito.london/incognito",
+        "https://en.wikipedia.org/wiki/Incognito_(band)"
       ],
       "confidence": "medium"
     },
@@ -31368,9 +31478,11 @@
       "to": "genre:acid-jazz",
       "sources": [
         "https://www.allmusic.com/genre/acid-jazz-ma0000002414",
-        "https://www.allmusic.com/artist/mn0000176358"
+        "https://www.allmusic.com/artist/mn0000176358",
+        "https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/",
+        "https://www.officialcharts.com/artist/28264/jamiroquai/"
       ],
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "key:jeff-mills-techno",
@@ -32296,9 +32408,11 @@
       "type": "key_artist_of",
       "from": "artist:thelonious-monk",
       "to": "genre:bebop",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "https://en.wikipedia.org/wiki/Bebop"
+        "https://en.wikipedia.org/wiki/Bebop",
+        "https://www.britannica.com/art/bebop",
+        "https://timeline.carnegiehall.org/genres/bebop"
       ]
     },
     {
@@ -32539,9 +32653,11 @@
       "type": "key_artist_of",
       "from": "artist:charlie-parker",
       "to": "genre:bebop",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "https://en.wikipedia.org/wiki/Bebop"
+        "https://en.wikipedia.org/wiki/Bebop",
+        "https://www.britannica.com/art/bebop",
+        "https://timeline.carnegiehall.org/genres/bebop"
       ]
     },
     {
@@ -33435,9 +33551,12 @@
       "type": "key_artist_of",
       "from": "artist:cecil-taylor",
       "to": "genre:free-jazz",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "https://en.wikipedia.org/wiki/Free_jazz"
+        "https://en.wikipedia.org/wiki/Free_jazz",
+        "https://www.britannica.com/art/free-jazz",
+        "https://www.npr.org/sections/therecord/2018/04/06/535064217/cecil-taylor-jazz-icon-of-the-avant-garde-dies-at-89",
+        "https://www.theguardian.com/music/2018/apr/06/cecil-taylor-free-jazz-pioneer-dies-age-89-new-york-pianist-avant-garde"
       ]
     },
     {
@@ -34109,9 +34228,12 @@
       "from": "genre:acid-jazz",
       "to": "genre:funk",
       "sources": [
-        "https://www.allmusic.com/genre/acid-jazz-ma0000002414"
+        "https://www.allmusic.com/genre/acid-jazz-ma0000002414",
+        "https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/",
+        "https://en.wikipedia.org/wiki/Acid_jazz",
+        "https://www.jamestaylorquartet.co.uk/jtq/biography/"
       ],
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "lineage:acid-jazz-jazz",
@@ -34119,9 +34241,12 @@
       "from": "genre:acid-jazz",
       "to": "genre:jazz",
       "sources": [
-        "https://www.allmusic.com/genre/acid-jazz-ma0000002414"
+        "https://www.allmusic.com/genre/acid-jazz-ma0000002414",
+        "https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/",
+        "https://en.wikipedia.org/wiki/Acid_jazz",
+        "https://www.jamestaylorquartet.co.uk/jtq/biography/"
       ],
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "lineage:afrobeat-funk",
@@ -34267,9 +34392,11 @@
       "type": "influences",
       "from": "genre:bebop",
       "to": "genre:cool-jazz",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "https://en.wikipedia.org/wiki/Cool_jazz"
+        "https://en.wikipedia.org/wiki/Cool_jazz",
+        "https://timeline.carnegiehall.org/genres/cool-jazz",
+        "https://www.britannica.com/art/cool-jazz"
       ]
     },
     {
@@ -34277,9 +34404,10 @@
       "type": "subgenre_of",
       "from": "genre:bebop",
       "to": "genre:jazz",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "https://en.wikipedia.org/wiki/Bebop"
+        "https://en.wikipedia.org/wiki/Bebop",
+        "https://www.britannica.com/art/bebop"
       ]
     },
     {
@@ -34551,9 +34679,10 @@
       "type": "subgenre_of",
       "from": "genre:cool-jazz",
       "to": "genre:jazz",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "https://en.wikipedia.org/wiki/Cool_jazz"
+        "https://en.wikipedia.org/wiki/Cool_jazz",
+        "https://www.britannica.com/art/cool-jazz"
       ]
     },
     {
@@ -34848,9 +34977,10 @@
       "type": "subgenre_of",
       "from": "genre:free-jazz",
       "to": "genre:jazz",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        "https://en.wikipedia.org/wiki/Free_jazz"
+        "https://en.wikipedia.org/wiki/Free_jazz",
+        "https://www.britannica.com/art/free-jazz"
       ]
     },
     {

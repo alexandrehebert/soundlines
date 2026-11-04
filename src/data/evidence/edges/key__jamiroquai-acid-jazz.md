@@ -2,10 +2,16 @@
 
 Graph ID `key:jamiroquai-acid-jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — key role confirmed; raised to high
 
-**Relationship** · key_artist_of · medium
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/acid-jazz-ma0000002414>), [2](<https://www.allmusic.com/artist/mn0000176358>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+- [WDET, Progressive Underground primer to acid jazz](https://wdet.org/2020/08/28/the-progressive-undergrounds-primer-to-acid-jazz/) — “perhaps the most noteworthy act from the acid jazz genre”.
+- [Official Charts, Jamiroquai](https://www.officialcharts.com/artist/28264/jamiroquai/) — “funk and acid jazz band”.
+- [AllMusic, acid jazz genre](https://www.allmusic.com/genre/acid-jazz-ma0000002414) — (blocked) not re-read; retained as reference listing.
+
+## Assessment
+
+Confidence → high; later albums drift to funk/disco/pop, but the acid-jazz association is well documented.

@@ -2,10 +2,15 @@
 
 Graph ID `lineage:free-jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — subgenre relation confirmed; raised to high
 
-**Relationship** · subgenre_of · medium
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Free_jazz>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, free jazz](https://www.britannica.com/art/free-jazz) — “an approach to jazz improvisation”.
+- [Wikipedia, free jazz](https://en.wikipedia.org/wiki/Free_jazz) — original citation.
+
+## Assessment
+
+Uncontroversial. Confidence → high.

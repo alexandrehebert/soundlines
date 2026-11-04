@@ -15,3 +15,6 @@ Graph ID `track:children-robert-miles`
 ## Evidence review
 
 Official Charts dates the single to November 1995 and documents its UK number-two peak in 1996. Insomniac traces the original DBX release and subsequent UK licensing. The later chart run measures crossover, while the association with dream trance is a genre assessment. The graph title leaves the mix unspecified. [Official Charts](https://www.officialcharts.com/songs/robert-miles-children/), [Insomniac release history](https://www.insomniac.com/music/from-the-crate-robert-miles-children/)
+
+## Structural flag
+Duplicate of `track:children` (same recording). Both IDs are kept because graph IDs are never deleted; consolidate edges in a future cleanup.

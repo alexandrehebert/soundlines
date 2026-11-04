@@ -2,10 +2,15 @@
 
 Graph ID `lineage:cool-jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — subgenre relation confirmed; raised to high
 
-**Relationship** · subgenre_of · medium
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Cool_jazz>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, cool jazz](https://www.britannica.com/art/cool-jazz) — “a style of jazz” emerging in the late 1940s.
+- [Wikipedia, cool jazz](https://en.wikipedia.org/wiki/Cool_jazz) — original citation.
+
+## Assessment
+
+Uncontroversial. Confidence → high.

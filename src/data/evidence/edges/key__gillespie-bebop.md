@@ -2,10 +2,15 @@
 
 Graph ID `key:gillespie-bebop`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — founding role confirmed; raised to high
 
-**Relationship** · key_artist_of · medium
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Bebop>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, bebop](https://www.britannica.com/art/bebop) — bebop originated in Gillespie’s playing (early 1940s).
+- [Carnegie Hall timeline, bebop](https://timeline.carnegiehall.org/genres/bebop) — development “often attributed in large part” to Gillespie.
+
+## Assessment
+
+Confidence → high; sources added. Node evidence previously reviewed.

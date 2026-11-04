@@ -2,10 +2,15 @@
 
 Graph ID `key:coleman-free`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — founding role confirmed; raised to high
 
-**Relationship** · key_artist_of · medium
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Free_jazz>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, free jazz](https://www.britannica.com/art/free-jazz) — free jazz “began with the small groups led in 1958–59” by Coleman; named after his Free Jazz (1960).
+- [NEA Jazz Masters, Ornette Coleman](https://www.arts.gov/honors/jazz/ornette-coleman) — not re-fetched; read in the prior node review.
+
+## Assessment
+
+Coleman is the canonical founder of free jazz. Confidence → high. Endpoint node already reviewed.

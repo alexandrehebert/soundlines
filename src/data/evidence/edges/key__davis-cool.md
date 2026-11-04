@@ -2,10 +2,16 @@
 
 Graph ID `key:davis-cool`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — pioneer role confirmed; raised to high
 
-**Relationship** · key_artist_of · medium
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Cool_jazz>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Britannica, cool jazz](https://www.britannica.com/art/cool-jazz) — Davis “himself a pioneer of cool”.
+- [Carnegie Hall timeline, cool jazz](https://timeline.carnegiehall.org/genres/cool-jazz) — Birth of the Cool (1949–50) credited as cool’s development.
+- [Wikipedia, cool jazz](https://en.wikipedia.org/wiki/Cool_jazz) — original citation.
+
+## Assessment
+
+Two institutional sources state the role directly. Confidence → high. Miles Davis node evidence kept as previously reviewed.

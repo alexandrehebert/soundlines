@@ -9,3 +9,6 @@ Graph ID `track:i-feel-love`
 ## Evidence review
 
 The Registry and Cary O’Dell’s essay agree on 1977 and document the three co-writers. The Registry describes predominantly electronic instrumentation and separately discusses Patrick Cowley’s remixes. The description drops the unsupported claim of a technical first. Both sources share a publisher.
+
+## Structural flag
+Duplicate of `track:i-feel-love-donna-summer` (same recording). Both IDs are kept because graph IDs are never deleted; consolidate edges in a future cleanup.
