@@ -2,18 +2,22 @@
 
 Graph ID `instrument:cor-anglais`
 
-**Review status** · Pending source review
+**Review status** · Early development, orchestral adoption and repertoire corroborated
 
-**Graph period** · 1800 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Double-reed instrument pitched a fifth below the oboe, featured in the Largo of Dvořák’s New World Symphony.
+## Sources checked
 
-**Graph citations** · [1](<https://philharmonia.co.uk/resources/instruments/>)
+- [Philharmonia directory, original citation](https://philharmonia.co.uk/resources/instruments/) — Directory fetched in the immediately preceding instrument review; it links the specific cor anglais guide but supplies no origin chronology.
+- [Philharmonia cor anglais guide](https://philharmonia.co.uk/resources/instruments/cor-anglais/) — Text read; video not reviewed. Confirms double-reed family and bulb bell; cites Jommelli’s Ezio around 1749 as an early orchestral part.
+- [Metropolitan Museum of Art, Fornari English horn](https://www.metmuseum.org/art/collection/search/501500) — Read 1832 object record: bulb bells circa 1700, curved form circa 1720, angular forms later, wider use from mid-1800s. These are distinct developments.
+- [Vienna Symphonic Library instrument guide](https://www.vsl.co.at/academy/woodwinds/english-horn) — Read construction/history: F tuning and fifth transposition, circa-1720 development, earlier tenor oboes, later straight-form refinements. Its proposed Silesian origin is qualified, not certain.
+- [Antonín Dvořák work guide](https://www.antonin-dvorak.cz/en/work/symphony-no-9/) — Work analysis retrieved; the Largo’s main melody is assigned to cor anglais over muted strings. Supports the retained repertoire example.
 
-**Graph phase rationale** · A single editorial phase represents documented use. Its start is an approximate timeline anchor.
+## Assessment
 
-## Phases
+Circa 1800 was neither an evidenced origin nor a clear adoption threshold. Use circa 1720 for early curved forms, with medium confidence and explicit antecedents. Mid-1800s wider use is independently anchored by museum history, while the earlier Jommelli example prevents conflating adoption with first orchestral use. Retain the accurate Dvořák example and clarify F tuning.
 
-- 1800 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+Early shapes developed gradually; the chosen start does not encompass every earlier tenor oboe. Name etymology is disputed and omitted. Relationships are deferred.

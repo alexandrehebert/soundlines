@@ -2,20 +2,22 @@
 
 Graph ID `instrument:electric-bass`
 
-**Review status** · Pending source review
+**Review status** · Pre-Fender history corrected; commercial adoption distinguished
 
-**Graph period** · 1951 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Fretted, amplified bass introduced as the Fender Precision Bass in 1951; it replaced the upright in most popular music and drives the grooves of soul, funk, reggae, and disco.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Bass_guitar>), [2](<https://en.wikipedia.org/wiki/Fender_Precision_Bass>)
+- [Museum of Pop Culture, Audiovox Model 736](https://mopop.emuseum.com/objects/8245/audiovox-model-736-electric-bass-guitar-c-1935) — Indexed collection record checked: title circa 1935, description 1936; identifies fretted, guitar-position electric bass. Direct access returned 403. Preserve approximate dating.
+- [Peter Blecha, HistoryLink](https://www.historylink.org/file/7479) — Article read: 1935 electrified upright prototype followed by horizontal Model 736, regional sales and limited distribution; distinguishes Tutmarc from Fender’s 1951 success.
+- [Fender, Precision Bass history](https://www.fender.com/articles/behind-the-scenes/legendary-lows-the-precision-bass-story) — Manufacturer history read: October 1951 production. Its claim that no such instrument existed earlier is contradicted by the museum and historical account; accept product date, reject invention priority.
+- [Wikipedia: Bass guitar](https://en.wikipedia.org/wiki/Bass_guitar) — Original citation retrieved; historical section distinguishes 1930s and 1950s developments.
+- [Wikipedia: Fender Precision Bass](https://en.wikipedia.org/wiki/Fender_Precision_Bass) — Original citation retrieved; model-specific scope rather than the entire instrument’s invention.
 
-**Graph phase rationale** · Confidence: medium. Commercial introduction, 1960s uptake, and later standard use in popular ensembles anchor the broad shifts. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+Move the start to circa 1935, medium confidence, and correct the description. Fender is useful primary evidence for its own product date, but commercially interested and unreliable on priority here. Do not retain the sweeping claim that the upright was replaced in most popular music without comparative evidence.
 
-- 1951 emerging · medium · No phase note · None recorded
-- 1960 golden-age · medium · No phase note · None recorded
-- 1980 established · medium · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Full MoPOP page remains inaccessible. The exact Audiovox model dating is unresolved within the museum’s indexed record; the circa boundary explicitly preserves that uncertainty.

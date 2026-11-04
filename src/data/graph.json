@@ -14602,30 +14602,38 @@
       "family": "winds",
       "period": {
         "start": 1829,
-        "precision": "circa"
+        "precision": "year"
       },
-      "description": "Bellows-driven free-reed instrument patented in Vienna in 1829; carried by migrants worldwide, it anchors Colombian cumbia, Dominican merengue típico, and Russian folk music.",
+      "description": "Bellows-driven free-reed instrument named in Cyrill Demian and his sons’ 1829 Vienna patent; later forms developed melody and accompaniment keyboards. Used in European dance music and Colombian accordion cumbia, among many regional traditions.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Accordion"
+        "https://en.wikipedia.org/wiki/Accordion",
+        "https://www.henrydoktorski.com/free-reed/history/demian.html",
+        "https://www.metmuseum.org/art/collection/search/503502",
+        "https://www.institut-savoirfaire.fr/savoir-faire-rare/facture-daccordeon",
+        "https://libraries.indiana.edu/cumbia"
       ],
       "phases": [
         {
           "start": 1829,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "high",
+          "note": "Patent-year anchor for the named accordion, not the invention of free reeds or every modern accordion form.",
+          "sources": [
+            "https://www.henrydoktorski.com/free-reed/history/demian.html",
+            "https://www.institut-savoirfaire.fr/savoir-faire-rare/facture-daccordeon"
+          ]
         },
         {
-          "start": 1900,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1950,
+          "start": 1830,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Approximate early manufacturing expansion: Paris became a major production center in the 1830s. This is a regional adoption anchor, not a worldwide popularity threshold.",
+          "sources": [
+            "https://www.metmuseum.org/art/collection/search/503502"
+          ]
         }
       ],
-      "phaseNote": "Confidence: low. Its manufacture and spread across folk, dance, and popular traditions support a broad adoption-to-continuity outline. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The 1829 patent is well supported. The circa-1830 adoption marker reflects documented Paris manufacture. Remove the unsupported global 1900 golden age and 1950 transition; French musette and production history cannot establish worldwide peaks."
     },
     {
       "id": "instrument:auto-tune",
@@ -14940,28 +14948,38 @@
         "start": 1700,
         "precision": "circa"
       },
-      "description": "Single-reed woodwind developed from the chalumeau around 1700 by Johann Christoph Denner's workshop; a Mozart favourite and the lead voice of early New Orleans jazz and swing.",
+      "description": "Single-reed woodwind developed from the chalumeau around the beginning of the 18th century, associated with the Denner family in Nuremberg. Used in Mozart’s music and as a frontline voice alongside cornet and trombone in early New Orleans jazz.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Clarinet"
+        "https://en.wikipedia.org/wiki/Clarinet",
+        "https://www.mim.be/en/collection-piece/clarinet",
+        "https://www.metmuseum.org/art/collection/search/506724",
+        "https://www.niu.edu/gbarrett/resources/development.shtml",
+        "https://www.nps.gov/jazz/learn/historyculture/jazz_history.htm",
+        "https://philharmonia.co.uk/products/phibbs-and-mozart-clarinet-concertos/"
       ],
       "phases": [
         {
           "start": 1700,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Approximate early-18th-century development; attribution to Johann Christoph rather than Jacob Denner is disputed.",
+          "sources": [
+            "https://www.mim.be/en/collection-piece/clarinet",
+            "https://www.metmuseum.org/art/collection/search/506724",
+            "https://www.niu.edu/gbarrett/resources/development.shtml"
+          ]
         },
         {
-          "start": 1780,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1900,
+          "start": 1770,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Approximate construction-history anchor: the five-key instrument was known by 1770. This represents established instrument development, not a quantified popularity threshold.",
+          "sources": [
+            "https://www.niu.edu/gbarrett/resources/development.shtml"
+          ]
         }
       ],
-      "phaseNote": "Confidence: low. The phases reflect its early-18th-century development, classical orchestral adoption, and later popular/jazz use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Circa 1700 is an approximate development date, not a documented invention year. The later phase uses the five-key instrument known by 1770 as an editorial anchor. Remove the unsupported 1780 golden age and 1900 global transition; jazz adoption does not define the instrument’s overall prominence."
     },
     {
       "id": "instrument:claves",
@@ -15140,32 +15158,40 @@
       "name": "Electric bass",
       "family": "strings",
       "period": {
-        "start": 1951,
+        "start": 1935,
         "precision": "circa"
       },
-      "description": "Fretted, amplified bass introduced as the Fender Precision Bass in 1951; it replaced the upright in most popular music and drives the grooves of soul, funk, reggae, and disco.",
+      "description": "Electrically amplified bass guitar, with early fretted, horizontally played examples made by Paul Tutmarc’s Audiovox company in the mid-1930s. Fender’s Precision Bass, introduced in 1951, brought the design to a much wider market.",
       "sources": [
         "https://en.wikipedia.org/wiki/Bass_guitar",
-        "https://en.wikipedia.org/wiki/Fender_Precision_Bass"
+        "https://en.wikipedia.org/wiki/Fender_Precision_Bass",
+        "https://mopop.emuseum.com/objects/8245/audiovox-model-736-electric-bass-guitar-c-1935",
+        "https://www.historylink.org/file/7479",
+        "https://www.fender.com/articles/behind-the-scenes/legendary-lows-the-precision-bass-story"
       ],
       "phases": [
         {
-          "start": 1951,
+          "start": 1935,
           "prominence": "emerging",
-          "confidence": "medium"
+          "confidence": "medium",
+          "note": "Mid-1930s Audiovox development; museum catalog title and description differ between circa 1935 and 1936.",
+          "sources": [
+            "https://www.historylink.org/file/7479",
+            "https://mopop.emuseum.com/objects/8245/audiovox-model-736-electric-bass-guitar-c-1935"
+          ]
         },
         {
-          "start": 1960,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1980,
+          "start": 1951,
           "prominence": "established",
-          "confidence": "medium"
+          "confidence": "medium",
+          "note": "Fender Precision Bass production began in October 1951. This is a commercial turning point, not proof of immediate universal adoption.",
+          "sources": [
+            "https://www.fender.com/articles/behind-the-scenes/legendary-lows-the-precision-bass-story",
+            "https://www.historylink.org/file/7479"
+          ]
         }
       ],
-      "phaseNote": "Confidence: medium. Commercial introduction, 1960s uptake, and later standard use in popular ensembles anchor the broad shifts. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The previous start conflated Fender’s 1951 commercial model with invention of the electric bass guitar. Circa 1935 accommodates early Audiovox examples; 1951 anchors the later commercial breakthrough. Remove unsupported 1960 golden-age and 1980 transition. Phase labels are editorial; manufacturing dates do not measure popularity."
     },
     {
       "id": "instrument:electric-guitar",
@@ -15342,33 +15368,36 @@
         "start": 1935,
         "precision": "circa"
       },
-      "description": "Electric tonewheel organ launched in 1935 as an affordable substitute for pipe organs; its growl through a Leslie speaker became a signature of soul jazz, R&B, reggae, and progressive rock.",
+      "description": "Electric organ using rotating tonewheels, commercially introduced in 1935 after development in 1934. Originally marketed as an alternative to pipe organs, it became prominent in gospel, jazz and popular music; Jimmy Smith’s recordings helped establish the B-3 in jazz.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Hammond_organ"
+        "https://en.wikipedia.org/wiki/Hammond_organ",
+        "https://hammond.eu/Info/Story",
+        "https://hammondorganco.com/the-hammond-story-2",
+        "https://music.si.edu/object-day/hammond-electric-organ",
+        "https://www.arts.gov/honors/jazz/jimmy-smith"
       ],
       "phases": [
         {
           "start": 1935,
           "prominence": "emerging",
-          "confidence": "low"
-        },
-        {
-          "start": 1955,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1975,
-          "prominence": "established",
-          "note": "Hammond reports that production of the classic B-3 ended in 1975. This supports the manufacturing milestone; the broader “established” phase should not be read as a popularity measurement.",
+          "confidence": "medium",
+          "note": "Commercial introduction anchor; Smithsonian dates its early Model A to 1934 and its church purchase to 1935.",
           "sources": [
-            "https://hammond.eu/Info/Story",
+            "https://music.si.edu/object-day/hammond-electric-organ"
+          ]
+        },
+        {
+          "start": 1956,
+          "prominence": "established",
+          "confidence": "medium",
+          "note": "Jimmy Smith’s Blue Note recordings from 1956 anchor growing jazz prominence, not the first use of Hammond organs in jazz.",
+          "sources": [
+            "https://www.arts.gov/honors/jazz/jimmy-smith",
             "https://hammondorganco.com/the-hammond-story-2"
-          ],
-          "confidence": "low"
+          ]
         }
       ],
-      "phaseNote": "Illustrative editorial shading: the Hammond peaks from soul jazz to late-1960s rock; tonewheel production ended in 1975 as synthesizers spread. Not a measured ranking."
+      "phaseNote": "Separate early manufacture and commercial sale from later musical adoption. The 1956 milestone is specific to jazz, not a universal popularity threshold. Remove unsupported 1955 golden-age and 1975 phase change: the end of classic B-3 production does not establish a decline or new era in all Hammond use."
     },
     {
       "id": "instrument:harmonica",
@@ -15704,30 +15733,35 @@
       "family": "electronic",
       "period": {
         "start": 1970,
-        "precision": "circa"
+        "precision": "year"
       },
-      "description": "Moog's 1970 portable, pre-wired synthesizer put the modular sound on stage; its fat lead and bass lines run through prog, funk, jazz fusion, and G-funk.",
+      "description": "Portable monophonic analog synthesizer with internally connected sound modules and an integrated keyboard. Model D production began in 1970 after earlier prototypes, making modular-derived synthesis easier to use in performance.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Minimoog"
+        "https://en.wikipedia.org/wiki/Minimoog",
+        "https://artsandculture.google.com/story/BwWxC5g1sP9LAA",
+        "https://back.moogmusic.com/sites/default/files/2022-11/Minimoog_Model_D_Manual.pdf"
       ],
       "phases": [
         {
           "start": 1970,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "high",
+          "note": "The Moogseum documents shipment of the first production Model D on November 19, 1970.",
+          "sources": [
+            "https://artsandculture.google.com/story/BwWxC5g1sP9LAA"
+          ]
         },
         {
-          "start": 1971,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1980,
+          "start": 1972,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "A dedicated 1972 catalog and named professional users document early adoption, not a measured popularity peak.",
+          "sources": [
+            "https://artsandculture.google.com/story/BwWxC5g1sP9LAA"
+          ]
         }
       ],
-      "phaseNote": "Confidence: low. The outline follows its launch, rapid adoption as a portable performance synthesizer, and continuing influence. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Distinguish 1969–70 prototypes from the 1970 production Model D. The 1972 adoption marker is editorial, supported by contemporary catalog evidence. Remove unsupported 1971 golden-age and 1980 transition; manufacturing and use histories are different."
     },
     {
       "id": "instrument:modular-synthesizer",
@@ -15839,29 +15873,35 @@
         "start": 1700,
         "precision": "circa"
       },
-      "description": "Bartolomeo Cristofori's hammer-action keyboard of around 1700 could play both soft and loud; it became the central instrument of Classical and Romantic music, stride and bebop jazz, and rock and roll.",
+      "description": "Hammer-action stringed keyboard developed by Bartolomeo Cristofori around 1700, allowing touch-controlled dynamics. It became a leading instrument of European concert and domestic music in the late eighteenth and nineteenth centuries.",
       "sources": [
         "https://en.wikipedia.org/wiki/Piano",
-        "https://en.wikipedia.org/wiki/Bartolomeo_Cristofori"
+        "https://en.wikipedia.org/wiki/Bartolomeo_Cristofori",
+        "https://www.metmuseum.org/essays/the-piano-the-pianofortes-of-bartolomeo-cristofori-1655-1731",
+        "https://www.rijksmuseum.nl/en/collection/object/Square-piano--98ccde85f4542829be4e0ff01f1f15cf"
       ],
       "phases": [
         {
           "start": 1700,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "high",
+          "note": "Cristofori’s hammer-action instrument is documented in a 1700 Medici inventory.",
+          "sources": [
+            "https://www.metmuseum.org/essays/the-piano-the-pianofortes-of-bartolomeo-cristofori-1655-1731"
+          ]
         },
         {
-          "start": 1800,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1900,
+          "start": 1780,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Approximate late-eighteenth-century adoption: the Met gives the last quarter of the century, while the Rijksmuseum places wider popularity around 1785.",
+          "sources": [
+            "https://www.metmuseum.org/essays/the-piano-the-pianofortes-of-bartolomeo-cristofori-1655-1731",
+            "https://www.rijksmuseum.nl/en/collection/object/Square-piano--98ccde85f4542829be4e0ff01f1f15cf"
+          ]
         }
       ],
-      "phaseNote": "Confidence: low. The outline follows the early instrument, 19th-century growth into a central domestic and concert instrument, and continuing use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The 1700 boundary is documentary evidence for the early instrument. Circa 1780 represents late-eighteenth-century adoption, not a precise popularity threshold. Removed unsupported 1800 golden-age and 1900 transition; continued use does not imply unchanged repertory or construction."
     },
     {
       "id": "instrument:pipe-organ",
@@ -16074,30 +16114,37 @@
       "family": "winds",
       "period": {
         "start": 1846,
-        "precision": "circa"
+        "precision": "year"
       },
-      "description": "Adolphe Sax's 1846 patent paired a single-reed mouthpiece with a conical metal body; it became the defining voice of jazz from swing and bebop to free jazz, and of R&B.",
+      "description": "A family of single-reed wind instruments patented by Adolphe Sax in 1846. The saxophone found a place in military and civilian bands before becoming prominent in jazz and popular music.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Saxophone"
+        "https://en.wikipedia.org/wiki/Saxophone",
+        "https://www.mim.be/index.php/en/collection-piece/alto-saxophone",
+        "https://www.metmuseum.org/art/collection/search/503909?locale=en&pg=1"
       ],
       "phases": [
         {
           "start": 1846,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "high",
+          "note": "Documented patent year.",
+          "sources": [
+            "https://www.mim.be/index.php/en/collection-piece/alto-saxophone",
+            "https://www.metmuseum.org/art/collection/search/503909?locale=en&pg=1"
+          ]
         },
         {
-          "start": 1920,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1950,
+          "start": 1863,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "A surviving 1863 alto bears Sax’s imperial military supplier designation, providing a dated anchor for established band use.",
+          "sources": [
+            "https://www.mim.be/index.php/en/collection-piece/alto-saxophone",
+            "https://www.metmuseum.org/art/collection/search/503909?locale=en&pg=1"
+          ]
         }
       ],
-      "phaseNote": "Confidence: low. The outline follows the instrument’s development, jazz-era prominence, and continuing use in jazz and other genres. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "1846 marks the patent. The 1863 artifact documents an established military association by that year. The chronology of wider adoption varies by repertory and region."
     },
     {
       "id": "instrument:sho",
@@ -22913,19 +22960,35 @@
         "start": 1880,
         "precision": "circa"
       },
-      "description": "Four-string plucked instrument developed in Hawaiʻi from the Portuguese machete. It later found an audience in vaudeville and pop.",
+      "description": "Small four-string plucked instrument developed in Hawaiʻi around the early 1880s by adapting Madeiran instruments, including the machete and rajão, to local musical tastes. It later found audiences in vaudeville and pop.",
       "sources": [
         "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/american-indian-and-native-alaskan/hawaiian/",
-        "https://www.theguardian.com/music/2010/aug/17/ukulele"
+        "https://www.theguardian.com/music/2010/aug/17/ukulele",
+        "https://www.metmuseum.org/art/collection/search/501343",
+        "https://mim.org/news/new-additions-enhance-musical-stories-in-the-oceania-gallery/"
       ],
       "phases": [
         {
           "start": 1880,
+          "prominence": "emerging",
+          "confidence": "medium",
+          "note": "Approximate development anchor supported by museum histories; 1879 immigrant arrival is not an exact invention date.",
+          "sources": [
+            "https://www.metmuseum.org/art/collection/search/501343",
+            "https://mim.org/news/new-additions-enhance-musical-stories-in-the-oceania-gallery/"
+          ]
+        },
+        {
+          "start": 1888,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Local production by three makers documented by 1888; represents Hawaiian adoption, not a worldwide popularity threshold.",
+          "sources": [
+            "https://www.metmuseum.org/art/collection/search/501343"
+          ]
         }
       ],
-      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
+      "phaseNote": "Retain circa 1880 for development, distinguishing it from the 1879 arrival of Madeiran immigrants. The 1888 phase is a local-manufacture anchor. Later global visibility does not establish a single measurable golden age."
     },
     {
       "id": "instrument:euphonium",
@@ -22933,22 +22996,29 @@
       "name": "Euphonium",
       "family": "brass",
       "period": {
-        "start": 1840,
+        "start": 1843,
         "precision": "circa"
       },
-      "description": "Low-register valved brass instrument used in brass bands and concert bands, with parts in some late Romantic orchestral works.",
+      "description": "Low-register valved brass instrument, usually in B-flat, with a more conical bore than the baritone horn. Associated with Sommer’s developments around 1843, it is used principally in military, brass and concert bands, with occasional orchestral use.",
       "sources": [
         "https://www.yamahamusiclondon.com/Brass/Euphoniums/",
-        "https://hub.yamaha.com/winds/brass/whats-the-difference-between-baritone-horn-and-euphonium/"
+        "https://hub.yamaha.com/winds/brass/whats-the-difference-between-baritone-horn-and-euphonium/",
+        "https://digital.library.unt.edu/ark:/67531/metadc4529/m2/1/high_res_d/dissertation.pdf",
+        "https://wmic.net/euphonium-bb-john-stratton/"
       ],
       "phases": [
         {
-          "start": 1840,
+          "start": 1843,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Approximate introduction and early band-use anchor, not proof of immediate widespread adoption. A single phase represents continuing use without asserting a peak.",
+          "sources": [
+            "https://digital.library.unt.edu/ark:/67531/metadc4529/m2/1/high_res_d/dissertation.pdf",
+            "https://wmic.net/euphonium-bb-john-stratton/"
+          ]
         }
       ],
-      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
+      "phaseNote": "Circa 1843 is supported by historical scholarship and a collection account, but original invention or patent documents have not been checked. Band use is better supported than claims of routine orchestral membership. No popularity peak or precisely dated adoption transition is inferred."
     },
     {
       "id": "instrument:timpani",
@@ -22956,21 +23026,40 @@
       "name": "Timpani",
       "family": "percussion",
       "period": {
-        "start": 1700,
+        "start": 1500,
         "precision": "circa"
       },
-      "description": "Tunable kettledrums that reinforce accents and provide pitched percussion in orchestral music.",
+      "description": "Tunable kettledrums with military and ceremonial antecedents. European screw-tensioned forms developed in the 16th century and entered orchestral use in the 17th; modern pedal instruments provide pitched percussion and rhythmic emphasis.",
       "sources": [
-        "https://philharmonia.co.uk/resources/instruments/"
+        "https://philharmonia.co.uk/resources/instruments/",
+        "https://philharmonia.co.uk/resources/instruments/timpani/",
+        "https://collections.museumsvictoria.com.au/articles/2789",
+        "https://www.metmuseum.org/art/collection/search/501905",
+        "https://www.vsl.co.at/academy/percussion/timpani"
       ],
       "phases": [
         {
-          "start": 1700,
+          "start": 1500,
+          "prominence": "emerging",
+          "confidence": "medium",
+          "note": "Approximate 16th-century development of screw-tensioned European kettledrums, not the origin of kettledrums worldwide.",
+          "sources": [
+            "https://collections.museumsvictoria.com.au/articles/2789",
+            "https://www.vsl.co.at/academy/percussion/timpani"
+          ]
+        },
+        {
+          "start": 1675,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Approximate orchestral-adoption anchor given by Museums Victoria; not an absolute first-use claim or global popularity threshold.",
+          "sources": [
+            "https://collections.museumsvictoria.com.au/articles/2789",
+            "https://philharmonia.co.uk/resources/instruments/timpani/"
+          ]
         }
       ],
-      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
+      "phaseNote": "The timeline follows European tunable timpani: circa 1500 marks screw-tension development and circa 1675 orchestral adoption. Older kettledrum traditions predate both. Dates are approximate; no golden age is inferred."
     },
     {
       "id": "instrument:triangle",
@@ -22993,7 +23082,7 @@
           "confidence": "low"
         }
       ],
-      "phaseNote": "The medieval start is an approximate documentation anchor. The phase spans documented use through later orchestral adoption."
+      "phaseNote": "The circa-1000 boundary remains provisional and low confidence: Blades discusses a medieval manuscript, but the relevant PDF text is incompletely extracted and its exact dating has not been verified. It must not be read as a proven invention date. Later medieval illustrations and modern use are better supported."
     },
     {
       "id": "instrument:piccolo",
@@ -23001,21 +23090,42 @@
       "name": "Piccolo",
       "family": "winds",
       "period": {
-        "start": 1800,
+        "start": 1700,
         "precision": "circa"
       },
-      "description": "Small transverse flute that sounds an octave above the concert flute and adds a bright upper register to the orchestra.",
+      "description": "Small transverse flute, normally pitched an octave above the concert flute, used in orchestras and military or concert bands. Early keyed forms developed during the 18th century; its high register adds brilliance and color.",
       "sources": [
-        "https://philharmonia.co.uk/resources/instruments/"
+        "https://philharmonia.co.uk/resources/instruments/",
+        "https://philharmonia.co.uk/resources/instruments/piccolo/",
+        "https://www.vsl.co.at/academy/woodwinds/piccolo",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1252",
+        "https://sites.duke.edu/dumic/instruments/woodwinds/north-america/piccolo/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9605226/"
       ],
       "phases": [
         {
+          "start": 1700,
+          "prominence": "emerging",
+          "confidence": "low",
+          "note": "Broad early-18th-century development anchor for keyed transverse piccolos, not an exact invention date; early instrument names can also denote recorders.",
+          "sources": [
+            "https://www.vsl.co.at/academy/woodwinds/piccolo",
+            "https://sites.duke.edu/dumic/instruments/woodwinds/north-america/piccolo/"
+          ]
+        },
+        {
           "start": 1800,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Approximate symphonic adoption marker supported by Grinnell and Beethoven-era examples; earlier opera and military uses preceded it.",
+          "sources": [
+            "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1252",
+            "https://philharmonia.co.uk/resources/instruments/piccolo/",
+            "https://www.vsl.co.at/academy/woodwinds/piccolo"
+          ]
         }
       ],
-      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
+      "phaseNote": "Circa 1700 represents broadly dated early keyed forms with low confidence in the numerical boundary. Circa 1800 represents symphonic adoption, not invention or universal establishment. No measured popularity peak is claimed."
     },
     {
       "id": "instrument:bass-clarinet",
@@ -23023,21 +23133,41 @@
       "name": "Bass clarinet",
       "family": "winds",
       "period": {
-        "start": 1850,
+        "start": 1765,
         "precision": "circa"
       },
-      "description": "Low-register clarinet used for dark orchestral colors and solos in Romantic and later repertoire.",
+      "description": "Low-register single-reed member of the clarinet family, with surviving experimental forms from the 18th century. Nineteenth-century developments supported its orchestral role, including dark colors and exposed solos in Romantic and later repertoire.",
       "sources": [
-        "https://philharmonia.co.uk/resources/instruments/"
+        "https://philharmonia.co.uk/resources/instruments/",
+        "https://philharmonia.co.uk/resources/instruments/bass-clarinet/",
+        "https://www.circb.info/?q=node/12567",
+        "https://www.circb.info/?q=node/44",
+        "https://www.vsl.co.at/academy/woodwinds/bass-clarinet"
       ],
       "phases": [
         {
+          "start": 1765,
+          "prominence": "emerging",
+          "confidence": "medium",
+          "note": "Approximate anchor for the Mayrhofer instrument dated 1760–1770; earlier prototypes have uncertain dates. Not an exact invention year.",
+          "sources": [
+            "https://www.circb.info/?q=node/12567",
+            "https://www.circb.info/?q=node/44"
+          ]
+        },
+        {
           "start": 1850,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Approximate mid-19th-century orchestral adoption, following documented opera use in the 1830s; not the instrument’s origin.",
+          "sources": [
+            "https://www.vsl.co.at/academy/woodwinds/bass-clarinet",
+            "https://philharmonia.co.uk/resources/instruments/bass-clarinet/",
+            "https://www.circb.info/?q=node/12567"
+          ]
         }
       ],
-      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
+      "phaseNote": "Separate 18th-century experimental instruments from mid-19th-century orchestral establishment. Circa 1765 represents a surviving instrument’s estimated date, not a first invention claim. Circa 1850 reflects orchestral adoption, not worldwide popularity or a golden age."
     },
     {
       "id": "instrument:cor-anglais",
@@ -23045,21 +23175,40 @@
       "name": "Cor anglais",
       "family": "winds",
       "period": {
-        "start": 1800,
+        "start": 1720,
         "precision": "circa"
       },
-      "description": "Double-reed instrument pitched a fifth below the oboe, featured in the Largo of Dvořák’s New World Symphony.",
+      "description": "Double-reed member of the oboe family, also called English horn, pitched in F a fifth below the oboe. Early forms developed in the 18th century; its solos include the Largo of Dvořák’s New World Symphony.",
       "sources": [
-        "https://philharmonia.co.uk/resources/instruments/"
+        "https://philharmonia.co.uk/resources/instruments/",
+        "https://philharmonia.co.uk/resources/instruments/cor-anglais/",
+        "https://www.metmuseum.org/art/collection/search/501500",
+        "https://www.vsl.co.at/academy/woodwinds/english-horn",
+        "https://www.antonin-dvorak.cz/en/work/symphony-no-9/"
       ],
       "phases": [
         {
-          "start": 1800,
+          "start": 1720,
+          "prominence": "emerging",
+          "confidence": "medium",
+          "note": "Approximate development of curved, bulb-bell forms; related tenor oboes and bulb bells existed earlier. Not a precise invention date.",
+          "sources": [
+            "https://www.metmuseum.org/art/collection/search/501500",
+            "https://www.vsl.co.at/academy/woodwinds/english-horn"
+          ]
+        },
+        {
+          "start": 1850,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Approximate wider-use marker from the Met’s mid-1800s account; orchestral parts existed by the mid-18th century.",
+          "sources": [
+            "https://www.metmuseum.org/art/collection/search/501500",
+            "https://philharmonia.co.uk/resources/instruments/cor-anglais/"
+          ]
         }
       ],
-      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
+      "phaseNote": "Replace the unsupported circa-1800 origin with circa-1720 early-form development. Separate that from wider use around the mid-19th century. Both are approximate historical markers; neither denotes a measured popularity peak."
     },
     {
       "id": "instrument:juno-106",
@@ -23068,20 +23217,27 @@
       "family": "electronic",
       "period": {
         "start": 1984,
-        "precision": "circa"
+        "precision": "year"
       },
-      "description": "Six-voice analog synthesizer released in 1984. Its chorus and polyphonic sounds became part of the palette of house and techno.",
+      "description": "Six-voice analog synthesizer introduced in 1984, with digitally controlled oscillators, programmable sounds, MIDI and built-in chorus.",
       "sources": [
-        "https://rolandcorp.com.au/blog/juno-legendary-heritage-future-classic"
+        "https://rolandcorp.com.au/blog/juno-legendary-heritage-future-classic",
+        "https://support.roland.com/hc/en-us/articles/201966419-JUNO-106-Technical-Specifications",
+        "https://nmc.emuseum.com/objects/1872/juno-106"
       ],
       "phases": [
         {
           "start": 1984,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Documented product availability from 1984; a single phase represents continuing use, not immediate widespread adoption.",
+          "sources": [
+            "https://support.roland.com/hc/en-us/articles/201966419-JUNO-106-Technical-Specifications",
+            "https://rolandcorp.com.au/blog/juno-legendary-heritage-future-classic"
+          ]
         }
       ],
-      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
+      "phaseNote": "1984 is a well-supported release year. A single editorial phase avoids inventing a peak. Manufacturer pages disagree about production duration; no production end is used as an end to musical use."
     }
   ],
   "edges": [

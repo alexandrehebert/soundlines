@@ -2,20 +2,17 @@
 
 Graph ID `instrument:piano`
 
-**Review status** · Pending source review
+**Review status** · Invention and adoption cross-checked; unsupported peak removed
 
-**Graph period** · 1700 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Bartolomeo Cristofori's hammer-action keyboard of around 1700 could play both soft and loud; it became the central instrument of Classical and Romantic music, stride and bebop jazz, and rock and roll.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Piano>), [2](<https://en.wikipedia.org/wiki/Bartolomeo_Cristofori>)
+- [Wendy Powers, Metropolitan Museum of Art (2003)](https://www.metmuseum.org/essays/the-piano-the-pianofortes-of-bartolomeo-cristofori-1655-1731) — Essay read: 1700 inventory, 1711 published description, surviving instruments from 1720 onward, late-eighteenth-century prominence. Oldest surviving example is not the invention date.
+- [Rijksmuseum, square piano BK-KOG-733](https://www.rijksmuseum.nl/en/collection/object/Square-piano--98ccde85f4542829be4e0ff01f1f15cf) — Collection description read: circa-1700 invention; growing interest through Zumpe; broader popularity around 1785.
+- [Wikipedia: Piano](https://en.wikipedia.org/wiki/Piano) — Original citation retrieved; specialist museum accounts used for chronology decisions.
+- [Wikipedia: Bartolomeo Cristofori](https://en.wikipedia.org/wiki/Bartolomeo_Cristofori) — Original citation retrieved; not counted as independent primary corroboration.
 
-**Graph phase rationale** · Confidence: low. The outline follows the early instrument, 19th-century growth into a central domestic and concert instrument, and continuing use. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 1700 emerging · low · No phase note · None recorded
-- 1800 golden-age · low · No phase note · None recorded
-- 1900 established · low · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Keep circa 1700. Raise confidence for the documentary start, retain medium confidence for the approximate adoption phase, and remove an unsubstantiated universal golden age. Narrow the description to claims supported by the consulted specialist sources; jazz and rock relationships remain for the later link audit.

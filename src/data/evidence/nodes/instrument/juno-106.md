@@ -2,18 +2,20 @@
 
 Graph ID `instrument:juno-106`
 
-**Review status** · Pending source review
+**Review status** · Launch and specifications corroborated; production-end disagreement noted
 
-**Graph period** · 1984 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Six-voice analog synthesizer released in 1984. Its chorus and polyphonic sounds became part of the palette of house and techno.
+## Sources checked
 
-**Graph citations** · [1](<https://rolandcorp.com.au/blog/juno-legendary-heritage-future-classic>)
+- [Roland technical specifications](https://support.roland.com/hc/en-us/articles/201966419-JUNO-106-Technical-Specifications) — Page read: six voices, 1984–85 date range, DCO controls, chorus, memory and MIDI.
+- [Roland Australia history, original citation](https://rolandcorp.com.au/blog/juno-legendary-heritage-future-classic) — Page read: 1984 introduction and six voices; claims four years of production, differing from support-page range. Both pages share manufacturer provenance.
+- [National Music Centre collection](https://nmc.emuseum.com/objects/1872/juno-106) — Indexed collection record dates instrument to 1984 and discusses MIDI; direct page inaccessible.
 
-**Graph phase rationale** · A single editorial phase represents documented use. Its start is an approximate timeline anchor.
+## Assessment
 
-## Phases
+Raise launch precision from circa to year. Technical description is supported directly. Remove unsubstantiated house/techno generalization from this node’s description pending the later relationship audit. Medium phase confidence reflects editorial continuous-use shading; high confidence applies only to launch and specifications.
 
-- 1984 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+Production-end discrepancy remains unresolved and is not needed for the graph’s use period. Full National Music Centre page was not retrieved.

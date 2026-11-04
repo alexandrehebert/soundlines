@@ -2,20 +2,16 @@
 
 Graph ID `instrument:saxophone`
 
-**Review status** · Pending source review
+**Review status** · Patent and military adoption corroborated
 
-**Graph period** · 1846 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Adolphe Sax's 1846 patent paired a single-reed mouthpiece with a conical metal body; it became the defining voice of jazz from swing and bebop to free jazz, and of R&B.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Saxophone>)
+- [Musical Instruments Museum, Brussels](https://www.mim.be/index.php/en/collection-piece/alto-saxophone) — Collection record read. The 1863 alto carries the military supplier designation. The museum describes the 1846 patent and later band and jazz use.
+- [Metropolitan Museum of Art](https://www.metmuseum.org/art/collection/search/503909?locale=en&pg=1) — Object record read. Confirms 1846 patent and early success in bands, followed by later prominence in jazz and pop.
+- [Wikipedia, original citation](https://en.wikipedia.org/wiki/Saxophone) — Page retrieved. Museum records supply the dated anchors.
 
-**Graph phase rationale** · Confidence: low. The outline follows the instrument’s development, jazz-era prominence, and continuing use in jazz and other genres. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 1846 emerging · low · No phase note · None recorded
-- 1920 golden-age · low · No phase note · None recorded
-- 1950 established · low · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Use year precision for the patent and medium confidence for an editorial adoption marker anchored to the 1863 artifact. Remove the 1920 golden-age and 1950 transition because the consulted records do not establish those thresholds.

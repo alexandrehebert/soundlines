@@ -2,18 +2,20 @@
 
 Graph ID `instrument:triangle`
 
-**Review status** · Pending source review
+**Review status** · Partial review; medieval date unresolved
 
-**Graph period** · 1000 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A suspended metal rod bent into an open triangle and struck with a metal beater. Documented in medieval Europe, it entered Western opera and symphony orchestras during the eighteenth century.
+## Sources checked
 
-**Graph citations** · [1](<https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1824>), [2](<https://www.examenapium.it/cs/biblio/Blades1973.pdf>)
+- [Grinnell College, original citation](https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1824) — Direct retrieval returned 403; remains unverified in this pass.
+- [James Blades, original citation](https://www.examenapium.it/cs/biblio/Blades1973.pdf) — PDF retrieved. Printed page 14 discusses medieval triangles, varying shapes and rings, and Hamburg Opera in 1710. Text extraction truncates the manuscript-date passage; screenshot attempt did not yield an inspectable image. Do not certify circa 1000 from this extraction.
+- [Smithsonian, William T. Armstrong triangle](https://www.si.edu/object/triangle:nmah_607012) — Search excerpt describes a metal triangle dated circa 1900–1910 used in vaudeville and silent-film theaters. Direct retrieval failed; full record remains unverified.
 
-**Graph phase rationale** · The medieval start is an approximate documentation anchor. The phase spans documented use through later orchestral adoption.
+## Assessment
 
-## Phases
+Existing medieval chronology cannot yet be certified. Retain low confidence and explicitly flag the numerical boundary pending a legible reading or independent source. Record a museum lead for later use without treating the search excerpt as verified evidence. The record is partial rather than completed.
 
-- 1000 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Read the full triangle paragraph on printed page 14 of Blades and verify the cited manuscript and date; retrieve Grinnell; corroborate construction and eighteenth-century orchestral adoption independently. No new prominence thresholds added.
