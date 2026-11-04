@@ -2,21 +2,19 @@
 
 Graph ID `instrument:harpsichord`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Met chronology added
 
-**Graph period** · 1400 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Keyboard instrument that plucks its strings with quills, first documented around 1400; the continuo heart of Baroque music before the piano displaced it, then revived in the 20th century.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Harpsichord>)
+- [The Met, Musical Terms for the Seventeenth and Eighteenth Centuries](https://www.metmuseum.org/de/essays/musical-terms-for-the-seventeenth-and-eighteenth-centuries) — Late-14th-century reference; surviving instruments from 16th century; major 17th–18th-century role; decline by c.1810 and revival from 1880s.
+- [The Met, Keyboard Instruments bulletin](https://resources.metmuseum.org/resources/metpublications/pdf/Keyboard_Instruments_The_Metropolitan_Museum_of_Art_Bulletin_v_47_no_1_Summer_1989.pdf) — Collection bulletin supports early keyboard chronology and 20th-century revival.
 
-**Graph phase rationale** · Illustrative editorial shading: the harpsichord peaks in the Baroque continuo era, is largely eclipsed by the piano around 1800, and returns with the 20th-century revival. Not a measured ranking.
+## Assessment
 
-## Phases
+Met sources support the chronology more strongly than the previous Wikipedia-only citation. “Golden age” replaced with established because sources describe role and repertory, not quantitative popularity.
 
-- 1400 emerging · low · No phase note · None recorded
-- 1600 golden-age · low · No phase note · None recorded
-- 1800 niche (0) · low · A broad historical marker: the piano had largely displaced the harpsichord by around 1800 in many European contexts; later revival and continued performance mean this is not a global end date. · [1](https://stanfordmag.org/contents/perfect-for-the-parlor), [2](https://online.ucpress.edu/jm/article-abstract/30/2/180/63530/The-Death-and-Second-Life-of-the-Harpsichord?redirectedFrom=PDF)
-- 1903 established (0.35) · medium · The Met documents the instrument’s twentieth-century revival in historically informed performance. The start is an approximate marker for that revival. · [1](https://resources.metmuseum.org/resources/metpublications/pdf/Keyboard_Instruments_The_Metropolitan_Museum_of_Art_Bulletin_v_47_no_1_Summer_1989.pdf)
+## Remaining uncertainty
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+The graph’s Stanford and Journal of Musicology sources remain to be inspected directly.

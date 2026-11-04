@@ -2,20 +2,16 @@
 
 Graph ID `instrument:oboe`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · invention and adoption distinguished
 
-**Graph period** · 1650 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Double-reed woodwind that developed from the shawm in mid-17th-century France and entered court and orchestral music.
+## Sources checked
 
-**Graph citations** · [1](<https://www.metmuseum.org/art/collection/search/501504>), [2](<https://www.rijksmuseum.nl/en/collection/object/Oboe--ad2ef82562d457a461a2aec7e538218c>)
+- [The Met, Watteau: Music and Theater](https://resources.metmuseum.org/resources/metpublications/pdf/Watteau_Music_and_Theater.pdf) — Dates oboe development to France mid-17th century, court use in 1650s, continental spread by century end.
+- [The Met, Hendrik Richters oboe](https://www.metmuseum.org/art/collection/search/503673) — 18th-century instrument object and design context.
+- [Rijksmuseum, oboe object](https://www.rijksmuseum.nl/en/collection/object/Oboe--ad2ef82562d457a461a2aec7e538218c) — Independent collection record cited by graph; not directly examined in this pass.
 
-**Graph phase rationale** · Confidence: medium. The phases reflect its mid-17th-century development, orchestral adoption, and continuing ensemble role. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 1650 emerging · medium · No phase note · None recorded
-- 1750 golden-age · medium · No phase note · None recorded
-- 1800 established · medium · No phase note · None recorded
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Museum history directly supports development/adoption dates; phases represent adoption rather than popularity peaks.

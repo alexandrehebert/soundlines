@@ -2,22 +2,20 @@
 
 Graph ID `instrument:lute`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · European chronology scoped
 
-**Graph period** · 1250 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Pear-shaped, fretted plucked instrument that reached Europe from the Arabic oud through Moorish Spain and Sicily, becoming the leading solo and song-accompaniment instrument of Renaissance courts.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Lute>)
+- [The Met, The Lute](https://www.metmuseum.org/de/essays/the-lute) — European depiction in 1283; 14th-century four-course forms and 1372 written record; Renaissance polyphonic repertoire.
+- [The Met, Listening to Paintings](https://www.metmuseum.org/de/perspectives/listening-to-paintings) — Describes lute’s historical European popularity and relation to oud.
+- [The Met, Pietro Railich lute](https://www.metmuseum.org/art/collection/search/505741) — 1669 object record and 1720 adaptation illustrate continuing form change.
 
-**Graph phase rationale** · Illustrative editorial shading: the lute peaks in the 16th century, fades as keyboards and the guitar take over in the late 18th century, and returns through the 20th-century early-music revival. Not a measured ranking.
+## Assessment
 
-## Phases
+Met sources support European chronology and Renaissance prominence. Removed a single settled “Moorish Spain” origin story and unsupported universal decline/revival phases.
 
-- 1250 emerging · low · No phase note · None recorded
-- 1500 golden-age · low · No phase note · None recorded
-- 1650 established · low · No phase note · None recorded
-- 1780 niche (0) · low · No phase note · None recorded
-- 1950 established (0.3) · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Broad label encompasses distinct regional lute families.

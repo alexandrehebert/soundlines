@@ -2,20 +2,19 @@
 
 Graph ID `instrument:harmonica`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · dates and phase confidence revised
 
-**Graph period** · 1825 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Pocket-sized free-reed instrument developed in 1820s Germany and mass-produced by Hohner; bent notes made it the wailing second voice of blues, folk, and country.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Harmonica>)
+- [Smithsonian Magazine, A Brief History of the Harmonica](https://www.smithsonianmag.com/arts-culture/history-harmonica-180977157/) — Pocket mouth organ spread from 1820s; Hohner formed 1857; cites interwar golden age and postwar blues/pop traditions.
+- [Smithsonian Magazine, Industrial Espionage and Cutthroat Competition](https://www.smithsonianmag.com/history/industrial-espionage-and-cutthroat-competition-fueled-rise-humble-harmonica-180952733/) — Independent historical account reports German commercial development and manufacturers in 1820s–40s.
 
-**Graph phase rationale** · Confidence: low. Blues recording and later folk, country, and popular use anchor the broad prominence shifts. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+The original 1825 exact year overstated certainty: reputable source uses the 1820s. Smithsonian directly supports Hohner’s 1857 founding and interwar cultural prominence; confidence raised from low accordingly. The mid-century “established” phase is retained only as a broad postwar marker for documented blues/pop adoption.
 
-- 1825 emerging · low · No phase note · None recorded
-- 1920 golden-age · low · No phase note · None recorded
-- 1950 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+A specialist scholarly history would strengthen the manufacturer and early-priority chronology.

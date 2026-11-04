@@ -46,7 +46,7 @@ describe('time scale', () => {
 
   it('preserves padded coordinate round trips across compressed eras', () => {
     const padded = { start: MIN_YEAR, end: MAX_YEAR, width: 640, padding: TIMELINE_PADDING }
-    for (const year of [MIN_YEAR, 1100, 1400, 1750, 1900, MAX_YEAR]) {
+    for (const year of [MIN_YEAR, -2000, -1, 0, 1, 500, 1100, 1400, 1750, 1900, MAX_YEAR]) {
       expect(xToYear(padded, yearToX(padded, year))).toBeCloseTo(year)
     }
     expect(timeTicks(padded)).toEqual(timeTicks({ ...padded, width: 592, padding: 0 }))
@@ -61,7 +61,7 @@ describe('time scale', () => {
   })
 
   it('round-trips era time', () => {
-    for (const year of [500, 1100, 1400, 1600, 1750, 1820, 1900, 1985, 2028]) {
+    for (const year of [-3000, -1000, -1, 0, 1, 500, 1100, 1400, 1600, 1750, 1820, 1900, 1985, 2028]) {
       expect(fromEraTime(toEraTime(year))).toBeCloseTo(year)
     }
   })
@@ -78,9 +78,13 @@ describe('time scale', () => {
 
   it('thins ticks in compressed eras', () => {
     const ticks = timeTicks({ start: MIN_YEAR, end: MAX_YEAR, width: 1200 })
-    const medieval = ticks.filter((year) => year < 1400)
+    const medieval = ticks.filter((year) => year >= 500 && year < 1400)
     expect(medieval.length).toBeLessThan(10)
     expect(ticks.filter((year) => year >= 1950).length).toBeGreaterThan(1)
+  })
+
+  it('includes negative years for BCE timelines', () => {
+    expect(timeTicks({ start: -3000, end: -1000, width: 1000 }).some((year) => year < 0)).toBe(true)
   })
 })
 
@@ -165,7 +169,7 @@ describe('panRange', () => {
     expect(DEFAULT_START_YEAR).toBe(1948)
     const span = MAX_YEAR - DEFAULT_START_YEAR
     expect(panRange(DEFAULT_START_YEAR, MAX_YEAR, -10000, MIN_YEAR, MAX_YEAR))
-      .toEqual([500, 500 + span])
+      .toEqual([MIN_YEAR, MIN_YEAR + span])
     const [start, end] = zoomRange(1700, 1800, 1750, 100, MIN_YEAR, MAX_YEAR)
     expect([start, end]).toEqual([MIN_YEAR, MAX_YEAR])
   })
@@ -173,7 +177,7 @@ describe('panRange', () => {
   describe('revealYearRange', () => {
     it('reveals historical selections at the existing zoom level', () => {
       expect(revealYearRange(1948, 2028, 1600, MIN_YEAR, 2028)).toEqual([1580, 1660])
-      expect(revealYearRange(1948, 2028, 500, MIN_YEAR, 2028)).toEqual([500, 580])
+      expect(revealYearRange(1948, 2028, MIN_YEAR, MIN_YEAR, 2028)).toEqual([MIN_YEAR, MIN_YEAR + 80])
     })
 
     it('keeps an already visible year and clamps a recent selection to the upper bound', () => {
@@ -185,7 +189,8 @@ describe('panRange', () => {
   it('pans and zooms in era time', () => {
     const [start, end] = panYearRange([DEFAULT_START_YEAR, MAX_YEAR], -1000)
     expect(start).toBeCloseTo(MIN_YEAR)
-    expect(end).toBeCloseTo(1440)
+    expect(end).toBeGreaterThan(MIN_YEAR)
+    expect(end).toBeLessThan(1400)
     const [zStart, zEnd] = zoomYearRange([1950, 2000], 1975, 100)
     expect(zStart).toBeCloseTo(MIN_YEAR)
     expect(zEnd).toBeCloseTo(MAX_YEAR)

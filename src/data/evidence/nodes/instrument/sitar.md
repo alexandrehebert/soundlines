@@ -2,20 +2,16 @@
 
 Graph ID `instrument:sitar`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · modern form and global visibility separated
 
-**Graph period** · 1700 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Long-necked lute with movable frets and sympathetic strings that took shape in 18th-century North India; Ravi Shankar carried it to global audiences and into 1960s psychedelic rock.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Sitar>)
+- [Grinnell College Musical Instrument Collection, sitar](https://omeka-s.grinnell.edu/s/MusicalInstruments/item/631) — Cites Oxford/Garland scholarship: name in early 18th century; current-like form followed later string additions.
+- [The Met, Musical Instruments of the Indian Subcontinent](https://www.metmuseum.org/fr/essays/musical-instruments-of-the-indian-subcontinent) — Notes western popularization via Ravi Shankar and George Harrison.
+- [UC eScholarship dissertation excerpt](https://escholarship.org/content/qt4gh1g3v3/qt4gh1g3v3_noSplash_c046ac58b5c831e956197d0971279407.pdf) — Discusses 1739 written mention, late-18th-century players and later modern form; separates evidence from legend.
 
-**Graph phase rationale** · Confidence: low. The outline reflects its modern North Indian form, mid-20th-century classical prominence, and international visibility after the 1960s. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 1700 emerging · low · No phase note · None recorded
-- 1950 golden-age · low · No phase note · None recorded
-- 1965 established · low · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The original period and mid-century “golden age” were overconfident; sources support early written record, structural evolution and 1960s international visibility.

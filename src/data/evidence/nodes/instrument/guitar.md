@@ -2,20 +2,20 @@
 
 Graph ID `instrument:guitar`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · chronology and phases corrected
 
-**Graph period** · 1500 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Waisted, fretted plucked instrument that grew from Renaissance four-course guitars into the six-string form standardised by Antonio de Torres in 19th-century Spain; the everyday accompaniment of blues, folk, country, and bossa nova.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Guitar>), [2](<https://en.wikipedia.org/wiki/Classical_guitar>)
+- [The Met, The Spanish Guitar](https://www.metmuseum.org/es/essays/the-spanish-guitar) — Renaissance written record; fifth course at end of 16th century; six single strings spread from early 19th century; Torres standardized concert-guitar features from 1850s.
+- [The Met, The Guitar](https://www.metmuseum.org/fr/essays/the-guitar) — Museum overview notes guitar history is difficult to establish before Renaissance and traces five-course spread in 17th–18th centuries.
+- [The Met, Guitar object record](https://www.metmuseum.org/art/collection/search/503932) — Surviving early six-string single-course guitar; museum record contextualizes late-18th-century adoption in Naples.
 
-**Graph phase rationale** · Confidence: low. The outline reflects the Renaissance form, 19th-century standardization and expansion, then broad modern use. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+The graph’s original four-course-to-Torres outline was broadly sound but phases implied general popularity peaks without evidence. The Met supports distinct constructional transitions; the entry now says “written history” rather than treating the instrument’s origin as Renaissance.
 
-- 1500 emerging · low · No phase note · None recorded
-- 1800 golden-age · low · No phase note · None recorded
-- 1950 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The umbrella entry covers diverse acoustic and electric traditions; genre-specific reach should be described in focused artist/genre entries.

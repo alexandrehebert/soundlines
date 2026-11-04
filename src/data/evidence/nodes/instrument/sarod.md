@@ -2,20 +2,17 @@
 
 Graph ID `instrument:sarod`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · 19th-century development qualified
 
-**Graph period** · 1820 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A fretless, plucked North Indian lute that took shape from the Afghan rubab in the early 19th century. Its sustained, sliding notes became a major voice in Hindustani instrumental music.
+## Sources checked
 
-**Graph citations** · [1](<https://www.metmuseum.org/art/collection/search/500717>), [2](<https://www.metmuseum.org/zh/essays/musical-instruments-of-the-indian-subcontinent>)
+- [The Met, Sarod object](https://www.metmuseum.org/art/collection/search/500717) — Late-19th-century object notes earlier accompaniment use and pre-metal-fingerboard form.
+- [The Met, Musical Instruments of the Indian Subcontinent](https://www.metmuseum.org/fr/essays/musical-instruments-of-the-indian-subcontinent) — Characterizes sarod as relatively recent to South Asia.
+- [Philharmonie de Paris, Sarod](https://collectionsdumusee.philharmoniedeparis.fr/collectionsdumusee/doc/MUSEE/0158479/luth-a-touche-lisse-sarod?_lg=fr-FR) — Museum synthesis describes rapid 19th-century development and public standing.
+- [Weisser and Demoucron, Sympathetic strings](https://dipot.ulb.ac.be/dspace/bitstream/2013/336895/3/Weisser-Demoucron_POMA.pdf) — Academic study dates sarod elaboration from rubab to second half of 19th century.
 
-**Graph phase rationale** · Confidence: medium. The phases reflect the modern instrument’s formation and its continuing role in Hindustani classical performance. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 1820 emerging · medium · No phase note · None recorded
-- 1900 golden-age · medium · No phase note · None recorded
-- 1950 established · medium · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Sources vary on precise lineage but support recent, 19th-century formation. Century-level date avoids false precision.

@@ -42,7 +42,7 @@ interface GraphNode {
   id: string            // "<type>:<slug>", e.g. "genre:deep-house", "artist:kraftwerk"
   type: 'genre' | 'artist' | 'instrument' | 'label' | 'place' | 'track' | 'scene' | 'event'
   name: string          // Display name, e.g. "Deep house"
-  period?: { start: number; end?: number | null; precision?: 'year' | 'decade' | 'circa' }
+  period?: { start: number; end?: number | null; precision?: 'year' | 'decade' | 'circa' } // Negative years are BCE
   description?: string  // 1–3 sentences, editorial and evocative but factual
   family?: GenreFamily | InstrumentFamily  // Timeline lane (required for genres and instruments)
   kind?: 'person' | 'group' | 'collective'   // Artists only
@@ -146,9 +146,9 @@ approximate first documented appearance of the recognizable form, usually with
 Each instrument needs a `description`, `sources`, and at least one sourced
 `featured_in` edge.
 
-The supported period range starts at year 500. When an instrument's documented
-history begins earlier, do not treat 500 as its origin. Describe the earlier
-history and make clear which later form the timeline start represents.
+The instrument timeline supports years from -3000 (3000 BCE). Negative years
+display as BCE; positive years display as written. When no reasonable prominence
+curve is supported, omit `phases` so the instrument appears as a neutral bar.
 
 ### Events (chronology)
 
@@ -344,7 +344,8 @@ Ids must be unique across all edges.
 3. Every edge's `from` and `to` reference an existing node.
 4. Only the node types, edge types, and families listed above are used, unless a new family is
    explicitly proposed (§2).
-5. `period.start` is an integer ≥ **500** and < 2100. `period.end`, when set, is an
+5. `period.start` is an integer ≥ **-3000** and < 2100. Negative years are BCE.
+   `period.end`, when set, is an
    integer ≥ `start`. Use `null` or omit `end` for "still active".
 6. **Every genre** has a `family` **and** a `period`. **Every artist** has a
    `period` and either an explicit `family` or a `key_artist_of` relationship
@@ -415,6 +416,8 @@ Rules:
 - Revivals: return from `niche` to `emerging`/`established` later.
 - `phaseNote` is **required** when `phases` exists. It gives the node-level summary of
   the full sequence and states that the shading is editorial, not a measured ranking.
+- Omit `phases` when no defensible prominence history exists; such nodes render as
+  neutral bars and do not require a `phaseNote`.
 - A phase-level `note` is optional. Use it only when a phase has its own useful rationale
   or a specific transition to explain; keep it concise and do not repeat the node-level
   `phaseNote`. When a note makes a specific historical claim, add phase-level `sources`

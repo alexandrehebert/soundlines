@@ -2,20 +2,16 @@
 
 Graph ID `instrument:violin`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · mid-16th-century form strengthened
 
-**Graph period** · 1530 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Four-string bowed instrument shaped by northern Italian makers from Andrea Amati to Stradivari; the core of the orchestra, and as the fiddle, a lead voice in bluegrass and country.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Violin>)
+- [The Met, Violin Makers: Amati and Stradivari](https://www.metmuseum.org/de/essays/violin-makers-nicolo-amati-1596-1684-and-antonio-stradivari-1644-1737) — Documents Amati instruments and workshop from mid-16th century.
+- [The Met, Renaissance Violins](https://www.metmuseum.org/pt/essays/renaissance-violins) — Describes 16th-century violin form and 17th-century ensemble adoption.
+- [The Met, Amati and The King cello](https://www.metmuseum.org/de/perspectives/laurence-witten-king-cello) — Corroborates Andrea Amati’s role in establishing violin-family forms.
 
-**Graph phase rationale** · Confidence: low. The outline reflects Renaissance form development, Baroque/classical orchestral prominence, and continuing global use. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 1530 emerging · low · No phase note · None recorded
-- 1600 golden-age · low · No phase note · None recorded
-- 1800 established · low · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Met historical and collection sources strengthen the mid-16th-century chronology. Removed generalized popularity peaks.

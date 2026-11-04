@@ -2,20 +2,20 @@
 
 Graph ID `instrument:cello`
 
-**Review status** · Pending source review
+**Review status** · Reviewed; early history cross-checked; popularity phases removed
 
-**Graph period** · 1550 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Bowed bass instrument of the violin family, represented by surviving Cremonese examples from the mid-16th century; it became a central solo and ensemble voice in Western classical music.
+## Sources checked
 
-**Graph citations** · [1](<https://www.metmuseum.org/de/press-releases/amati-king-cello-2015-news>), [2](<https://www.galleriaaccademiafirenze.it/en/artworks/cello-amati/>)
+- [The Met: Andrea Amati’s “King” Cello](https://www.metmuseum.org/de/press-releases/amati-king-cello-2015-news) — Met release describes Andrea Amati’s mid-16th-century instrument as the world’s earliest known cello; accessed German page, which supplies the dating and maker.
+- [The Met: “Amaryllis Fleming” Cello](https://www.metmuseum.org/art/collection/search/898377) — Met curatorial record says the cello traces to the mid-16th-century formative period and documents variation in early size and string count.
+- [Galleria dell’Accademia di Firenze: Amati Cello](https://www.galleriaaccademiafirenze.it/en/artworks/cello-amati/) — Museum source states the cello dates to the early 16th century and describes its c.1650 Niccolò Amati example; request returned 502, so date not treated as independently verified here.
 
-**Graph phase rationale** · Confidence: medium. The phases reflect early instrument formation, solo/ensemble expansion, and continuing orchestral and chamber use. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+The mid-16th-century origin is supported by Met material on Andrea Amati and is consistent with its collection record of later early examples. The original graph’s broader story about solo/ensemble centrality and dated popularity phases was unsupported by its citations; this revision narrows the description and removes those phases.
 
-- 1550 emerging · medium · No phase note · None recorded
-- 1700 golden-age · medium · No phase note · None recorded
-- 1800 established · medium · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Further music-history sources are needed to document the cello’s transition into solo repertoire and its later ensemble role. Accademia source could not be opened during this check.

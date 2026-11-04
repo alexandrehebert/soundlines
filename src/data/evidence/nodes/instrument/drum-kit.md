@@ -2,20 +2,20 @@
 
 Graph ID `instrument:drum-kit`
 
-**Review status** · Pending source review
+**Review status** · Reviewed; pedal history and early-jazz emergence corroborated
 
-**Graph period** · 1910 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Bass drum pedals of the 1900s let one player cover several drums and cymbals; the "trap kit" of early jazz grew into the backbeat engine of swing, rock and roll, funk, Afrobeat, and metal.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Drum_kit>)
+- [Smithsonian Folkways: The Birth of the Drum Set](https://music.si.edu/story/birth-drum-set) — Smithsonian history links the kit’s coalescence to early-1900s New Orleans and describes the 1896 Chandler pedal photograph.
+- [Smithsonian Folkways: Birth of an Icon—Drum Set and Early Jazz Drumming](https://folkways.si.edu/the-birth-of-an-icon-learning-and-performing-the-origins-of-the-drum-set-and-early-jazz-drumming-in-new-orleans-louisiana/music/tools-for-teaching/smithsonian) — Lesson notes late-1880s pedals, 1890s trap use, Chandler’s mid-1890s New Orleans adoption, Ludwig’s 1909 improvement, and early-20th-century jazz-driven drum-set spread.
+- [Drum kit (Wikipedia, original graph citation)](https://en.wikipedia.org/wiki/Drum_kit) — Checked one-player set definition and commercial pedal timeline against Smithsonian Folkways history.
 
-**Graph phase rationale** · Confidence: low. The phases reflect consolidation of the multi-drum kit, the swing-era prominence, and its continuing central role in popular music. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+The kit is a composite instrument rather than one invention date. Smithsonian Folkways supports a late-19th-century trap precursor and early-20th-century consolidation with jazz. Replaced the graph’s arbitrary 1910/1930/1950 arc with documented development milestones.
 
-- 1910 emerging · low · No phase note · None recorded
-- 1930 golden-age · low · No phase note · None recorded
-- 1950 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The first bass drum pedal and the first recognizable multi-piece kit are different milestones; sources credit earlier English pedals and Chandler’s mid-1890s New Orleans trap set before Ludwig’s 1909 commercial pedal.

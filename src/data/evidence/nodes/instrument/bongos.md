@@ -2,20 +2,20 @@
 
 Graph ID `instrument:bongos`
 
-**Review status** · Pending source review
+**Review status** · Reviewed; eastern Cuba origin and early son use corroborated; origin dating uncertain
 
-**Graph period** · 1880 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Pair of small, open-bottomed drums developed in eastern Cuba from African-derived drum traditions and closely associated with son and later salsa ensembles.
+## Sources checked
 
-**Graph citations** · [1](<https://americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary>), [2](<https://folkways-media.si.edu/docs/folkways/artwork/ARH07006.pdf>)
+- [National Museum of American History: Latin Jazz Glossary](https://www.americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary) — Smithsonian defines bongos as two joined small hand drums and says they developed in eastern Cuba from African predecessors; direct page request returned 500, so checked via its search-index extract.
+- [Smithsonian Folkways: Sexteto Boloña liner notes](https://folkways-media.si.edu/docs/folkways/artwork/ARH07006.pdf) — Liner notes describe Cuban-born bongos as a trademark of son, connect bongosero practice to African drum traditions, and identify bongo players on Sexteto Habanero recordings from 1918; full PDF was too large to open, but targeted passages were retrieved.
+- [Bongó, Diccionario histórico de la lengua española (RAE)](https://temporalraeweb.rae.es/dhle/bong%C3%B3) — The historical Spanish dictionary records a 1889 occurrence of “bongó,” but explicitly warns that the witness may refer to another drum; it cannot establish the modern bongo’s date.
 
-**Graph phase rationale** · Confidence: medium. Cuban son and later Latin jazz/salsa expansion anchor the 20th-century use markers. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+Smithsonian sources support eastern Cuban development, African-derived antecedents, and the bongos’ role in son by 1918. The available evidence does not establish an exact invention year or the old 1940–60 prominence arc; origin confidence remains low.
 
-- 1880 emerging · medium · No phase note · None recorded
-- 1940 golden-age · medium · No phase note · None recorded
-- 1960 established · medium · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+An accessible specialist history is still needed to establish the first appearance/date and regional development more precisely. The 1889 dictionary entry is ambiguous and was not treated as definitive.

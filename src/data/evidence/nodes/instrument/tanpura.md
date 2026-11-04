@@ -2,18 +2,16 @@
 
 Graph ID `instrument:tanpura`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · chronology caution retained
 
-**Graph period** · 1600 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Long-necked, fretless drone lute that sustains the tonic and related pitches through South Asian classical performance; a 17th-century treatise provides early textual documentation.
+## Sources checked
 
-**Graph citations** · [1](<https://www.tandfonline.com/doi/full/10.1080/00856401.2022.2118480>), [2](<https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian>)
+- [South Asia: Journal of South Asian Studies, Changing Ecology of the Kolkata Tanpura](https://www.tandfonline.com/doi/full/10.1080/00856401.2022.2118480) — Notes 17th-century treatise mention without description; cautions against projecting modern form backward.
+- [Duke University Musical Instrument Collections, Tambura](https://sites.duke.edu/dumic/instruments/strings/southern-and-eastern-asia/tambura/) — Identifies tanpura as standard classical ensemble addition since 16th century while distinguishing older drone practice.
+- [Smithsonian Folkways, Pakistan: The Music of the Qawal](https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian) — Documents tanpura in qawwali ensemble recording.
 
-**Graph phase rationale** · Confidence: low. A continuous phase reflects its sustaining role across South Asian classical performance, not a popularity curve. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 1600 established · low · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Existing graph correctly distinguished documentation from origin but over-specified the year. Stronger sources support a 16th–17th-century form and continuing ensemble role.

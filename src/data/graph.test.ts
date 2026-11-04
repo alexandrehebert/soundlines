@@ -18,13 +18,16 @@ import {
 const graph = rawGraph as MusicGraph
 
 describe('graph.json integrity', () => {
-  it('gives every instrument a phase with explicit confidence', () => {
+  it('uses explicit confidence for instrument phases when a phase curve is justified', () => {
     for (const node of graph.nodes.filter((candidate) => candidate.type === 'instrument')) {
-      expect(node.phases?.length ?? 0, node.id).toBeGreaterThan(0)
       for (const phase of node.phases ?? []) {
         expect(['low', 'medium', 'high'], node.id).toContain(phase.confidence)
       }
     }
+    const harp = graph.nodes.find((node) => node.id === 'instrument:harp')
+    expect(harp?.period?.start).toBe(-3000)
+    expect(harp?.phases).toBeUndefined()
+    expect(harp?.phaseNote).toContain('No single global prominence curve is defensible')
   })
 
   it('has ordered, known editorial phases within each genre, artist, or instrument lifespan', () => {
@@ -280,7 +283,7 @@ describe('graph.json integrity', () => {
     ['artist:yo-yo-ma', 1960, 'circa'],
     ['instrument:french-horn', 1660, 'circa'],
     ['instrument:pedal-steel-guitar', 1940, 'circa'],
-    ['instrument:transverse-flute', 1680, 'circa'],
+    ['instrument:transverse-flute', 1681, 'year'],
   ] as const)('anchors %s to a documented performance or instrument form', (id, start, precision) => {
     expect(graph.nodes.find((node) => node.id === id)?.period).toMatchObject({ start, precision })
   })

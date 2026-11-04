@@ -2,20 +2,19 @@
 
 Graph ID `instrument:tuba`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · patent and concert/band role verified
 
-**Graph period** · 1835 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Valved bass brass instrument patented in Prussia in 1835; the bass of the Romantic orchestra and brass bands, and the bass line of early New Orleans jazz before the string bass.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Tuba>)
+- [Yamaha, Birth of the Tuba](https://www.yamaha.com/en/musical_instrument_guide/tuba/structure/) — Dates patent application for bass tuba to September 12, 1835.
+- [Vienna Symphonic Library, Bass tuba](https://www.vsl.co.at/academy/brass/bass-tuba) — Confirms 1835 Prussian patent by Moritz and Wieprecht.
 
-**Graph phase rationale** · Confidence: low. The outline follows its 19th-century invention, orchestral and band adoption, and continuing ensemble use. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+Patent date corroborated independently by two instrument histories. The broad entry’s later phase list lacked evidence and was removed.
 
-- 1835 emerging · low · No phase note · None recorded
-- 1850 golden-age · low · No phase note · None recorded
-- 1900 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Add primary patent or museum object catalogue for the period instrument.

@@ -2,20 +2,17 @@
 
 Graph ID `instrument:trombone`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · museum and academic evidence added
 
-**Graph period** · 1450 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Slide brass instrument that appeared in 15th-century Burgundy as the sackbut; it accompanied Renaissance church choirs and later supplied the tailgate and riff lines of jazz and ska horn sections.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Trombone>), [2](<https://en.wikipedia.org/wiki/Sackbut>)
+- [Oxford Bate Collection, Trombones](https://www.bate.ox.ac.uk/trombones) — Collection history dates trombone to around the 15th century.
+- [Kunsthistorisches Museum, Tenor sackbut](https://www.khm.at/en/artworks/sackbut-tenor-85248) — Museum record documents 1557 sackbut, described as second oldest in its collection context.
+- [UNT Digital Library, Historical Documentation and Graphic Representations](https://digital.library.unt.edu/ark:/67531/metadc330589/m2/1/high_res_d/1002714265-Mitchell.pdf) — Research discusses ca.1420 Florentine painting as early graphic evidence.
+- [Grinnell College Musical Instrument Collection, tenor sackbut](https://omeka-s.grinnell.edu/s/MusicalInstruments/item/942) — Source synthesis says likely 15th-century development; page directly accessible via search extract.
 
-**Graph phase rationale** · Confidence: low. The outline reflects sackbut origins, later orchestral development, and continuing orchestral, jazz, and popular use. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 1450 emerging · low · No phase note · None recorded
-- 1700 golden-age · low · No phase note · None recorded
-- 1900 established · low · No phase note · None recorded
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Historical sources support early date and evolving nomenclature, not 1700/1900 popularity phases.

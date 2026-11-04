@@ -2,20 +2,16 @@
 
 Graph ID `instrument:pipe-organ`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · western-European scope explicit
 
-**Graph period** · 700 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Keyboard instrument sounding air through pipes; the organ returned to western Europe in the 8th century and became central to church, court, and concert music. Organ traditions elsewhere have separate histories.
+## Sources checked
 
-**Graph citations** · [1](<https://organhistoricalsociety.org/OrganHistory/history/hist001.htm>), [2](<https://www.metmuseum.org/ja/essays/renaissance-organs>)
+- [The Met, Renaissance Organs](https://www.metmuseum.org/de/essays/renaissance-organs) — Outlines ancient hydraulis antecedent and European organ history.
+- [Organ Historical Society, Organ History](https://organhistoricalsociety.org/OrganHistory/history/hist001.htm) — Existing specialist graph citation for western-European return; not opened in this pass.
+- [Associated Press, medieval pipe-organ discovery](https://apnews.com/article/bf56eb5b5ce8b56dd773f638b8b372e7) — Reports physical evidence from an 11th-century European pipe organ.
 
-**Graph phase rationale** · Confidence: medium. The long history and varied religious, civic, and concert roles do not support a single global peak; phases are broad markers only. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 700 emerging · medium · No phase note · None recorded
-- 1400 golden-age · medium · No phase note · None recorded
-- 1800 established · medium · No phase note · None recorded
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The 700s marker is now explicitly about western Europe, not invention; “golden age” was unsupported.

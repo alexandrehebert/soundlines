@@ -3,6 +3,7 @@ import { useExplorer } from '../ExplorerContext.ts'
 import { lineageHighlight } from '../graph/graph.ts'
 import { ERA_SEGMENTS, MAX_YEAR, TIMELINE_PADDING, timeTicks, yearToX, type TimeScale } from '../graph/layout.ts'
 import { VIEW_LABELS } from '../graph/timeline.ts'
+import { formatYear } from '../theme.ts'
 import { AXIS_H, offscreenIndicators, positionRowLabels, positionTimeline, revealBarScrollTop, type BarLabel } from './timeline/geometry.ts'
 import { TimelineBar } from './timeline/TimelineBar.tsx'
 import { TimelineLinks } from './timeline/TimelineLinks.tsx'
@@ -133,7 +134,9 @@ export function Timeline() {
               {ticks.map(({ year, x }) => (
                 <g key={year} data-year-tick={year}>
                   <line x1={x} y1={AXIS_H - 8} x2={x} y2={AXIS_H} stroke="#1e293b" strokeWidth={1} />
-                  <text x={x + 5} y={18} fill="#94a3b8" fontSize={width < 480 ? 10 : 11} fontWeight={600}>{year}</text>
+                  <text x={x + 5} y={18} fill="#94a3b8" fontSize={width < 480 ? 10 : 11} fontWeight={600}>
+                    {formatYear(year)}
+                  </text>
                 </g>
               ))}
               {compressedSegments.map((segment) => segment.x2 - segment.x1 > compressionLabelMinWidth && (

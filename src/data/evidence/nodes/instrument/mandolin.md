@@ -2,20 +2,19 @@
 
 Graph ID `instrument:mandolin`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · chronology still provisional
 
-**Graph period** · 1740 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Small, steel-strung lute developed by the Vinaccia family of Naples in the mid-18th century; Bill Monroe made its chopped off-beat and fast tremolo central to bluegrass.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Mandolin>)
+- [The Met, The Guitar](https://www.metmuseum.org/it/essays/the-guitar) — Context for changing early-modern plucked-string families; not direct mandolin evidence.
+- [The Met, José Massague guitar](https://www.metmuseum.org/art/collection/search/503390) — Mid-18th-century object context for five-course stringed instruments; not direct mandolin evidence.
 
-**Graph phase rationale** · Confidence: low. The markers reflect its Neapolitan development, 19th-century popularity, and continuing folk and popular use. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+The graph’s prior Wikipedia citation does not substantiate the Vinaccia claim or popularity phases. Reduced confidence and removed unsupported details.
 
-- 1740 emerging · low · No phase note · None recorded
-- 1880 golden-age · low · No phase note · None recorded
-- 1950 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+Find mandolin-specific institutional documentation before restoring the Vinaccia attribution or bluegrass phase.

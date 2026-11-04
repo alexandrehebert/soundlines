@@ -2,20 +2,20 @@
 
 Graph ID `instrument:jinghu`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · late-Qing opera chronology qualified
 
-**Graph period** · 1800 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Small, high-pitched bowed spike fiddle and principal melodic instrument of Peking opera; extant museum examples document its 19th-century form.
+## Sources checked
 
-**Graph citations** · [1](<https://www.metmuseum.org/art/collection/search/500667>)
+- [Grinnell College Musical Instrument Collection, jinghu](https://omeka-s.grinnell.edu/s/MusicalInstruments/item/641) — Collection history says jinghu probably entered Beijing-opera ensemble in late 18th century; page itself blocked, indexed text checked.
+- [The Met, Jinghu object](https://www.metmuseum.org/art/collection/search/500667) — Museum record provides 19th-century object documentation.
+- [Cambridge, Yearbook for Traditional Music](https://www.cambridge.org/core/journals/yearbook-for-traditional-music/article/an-unorthodox-voice-the-rise-of-female-qinshi-their-challenges-and-their-pursuits/F3CDC26411AB995B3C2806F628B5224F) — Academic article identifies jinghu as lead Peking-opera accompaniment.
 
-**Graph phase rationale** · Confidence: low. The phases reflect its association with Peking opera and continuing use in that performance tradition. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+Distinguishes qualified ensemble adoption from later physical documentation; removes unsupported popularity peaks.
 
-- 1800 emerging · low · No phase note · None recorded
-- 1900 golden-age · low · No phase note · None recorded
-- 1950 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Late-18th-century date rests on Grinnell secondary synthesis; page returned 403.

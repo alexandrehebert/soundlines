@@ -2,20 +2,20 @@
 
 Graph ID `instrument:algerian-mandole`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · 1930s claim corrected to reported 1935 design
 
-**Graph period** · 1932 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A large, fretted plucked instrument used in Algerian chaâbi. Its Algerian form was developed in the 1930s with input from El Anka and luthier Jean Bélido.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Algerian_mandole>), [2](<https://en.wikipedia.org/wiki/El_Hadj_M%27Hamed_El_Anka>)
+- [L’Echo d’Algérie, El Anka profile](https://lechodalgerie.dz/musique-chaabi-el-hadj-mhamed-el-anka-une-institution-musicale/) — Quotes El Anka saying he drew plans in 1935 and gave them to luthier Jean Bélido.
+- [University ethnomusicology proceedings, Chaâbi](https://www.sibetrans.com/etno/public/docs/cuadernos-de-etnomusicologia-2.pdf) — Scholarly account associates Algerian mandole with El Anka and chaâbi, without securing exact manufacture year.
+- [Country-specific secondary historical account](https://www.depechedekabylie.com/29971-le-genie-de-son-siecle/) — Local press account confirms collaboration with Bélido but not exact year.
 
-**Graph phase rationale** · Confidence: medium. The dates follow its documented 1930s development and establishment in Algerian chaâbi performance. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+Graph’s 1932 year was unsupported and conflicts with direct quotation of a 1935 design recollection. Status now separates retrospective design claim from manufacture and avoids false exactness.
 
-- 1932 emerging · medium · No phase note · None recorded
-- 1940 golden-age · medium · No phase note · None recorded
-- 1960 established · medium · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Find primary Kateb Yacine interview or an instrument museum catalogue to resolve whether production began 1932 or 1935.

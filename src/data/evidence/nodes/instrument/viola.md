@@ -2,20 +2,16 @@
 
 Graph ID `instrument:viola`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · unsupported prominence arc removed
 
-**Graph period** · 1500 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Middle-register bowed member of the violin family, documented in northern Italy in the first half of the 16th century and used in chamber and orchestral music.
+## Sources checked
 
-**Graph citations** · [1](<https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1808>), [2](<https://www.yamaha.com/en/musical_instrument_guide/violin/structure/structure004.html>)
+- [Grinnell College Musical Instrument Collection, viola](https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1808) — Existing collection source for early form; page not directly opened here.
+- [Yamaha, violin-family structure](https://www.yamaha.com/en/musical_instrument_guide/violin/structure/structure004.html) — Educational source on family and construction.
+- [The Met, Renaissance Violins](https://www.metmuseum.org/pt/essays/renaissance-violins) — Museum account supports 16th-century violin-family development.
 
-**Graph phase rationale** · Confidence: medium. The phases reflect Renaissance-era development, orchestral/chamber consolidation, and continuing ensemble use. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 1500 emerging · medium · No phase note · None recorded
-- 1700 golden-age · medium · No phase note · None recorded
-- 1800 established · medium · No phase note · None recorded
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Prior phases implied shifting prominence without evidence; retained only early documentation.

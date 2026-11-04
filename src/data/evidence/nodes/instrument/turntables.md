@@ -2,20 +2,17 @@
 
 Graph ID `instrument:turntables`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · hip-hop origin claim narrowed
 
-**Graph period** · 1973 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Record players used as instruments: DJ Kool Herc's extended breaks in 1973 Bronx parties led to scratching and beat juggling, the founding techniques of hip-hop DJing.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Turntablism>), [2](<https://en.wikipedia.org/wiki/Technics_SL-1200>)
+- [Smithsonian Magazine, Bronx party and Kool Herc](https://www.smithsonianmag.com/arts-culture/they-were-just-having-back-school-party-apartment-rec-room-little-did-they-know-they-were-creating-hip-hip-180988814/) — Details two-turntable break isolation and looping at August 1973 Bronx party.
+- [Cornell University Library, Hip-Hop DJ display](https://www.library.cornell.edu/about/news/display-celebrates-the-50th-anniversary-of-hip-hop/) — Library collection account corroborates two-turntable breakbeat practice in 1973.
+- [Smithsonian NMAH, Hip-Hop turntables and samplers](https://americanhistory.si.edu/explore/stories/sazon-hip-hop) — Smithsonian article places turntable use among early Bronx hip-hop DJs.
+- [Smithsonian Music, Grand Wizzard Theodore turntables](https://music.si.edu/story/grand-wizzard-theodores-turntables-smithsonian-year-music-object-day-august-13) — Connects turntables and turntablism to hip-hop history.
 
-**Graph phase rationale** · Confidence: low. The markers follow early hip-hop DJ techniques, later turntablism prominence, and continuing performance use. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 1973 emerging · low · No phase note · None recorded
-- 1980 golden-age · low · No phase note · None recorded
-- 1990 established · low · No phase note · None recorded
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Original entry risked implying Kool Herc invented turntables; now scopes 1973 to creative hip-hop DJ use and removes subjective phase peaks.

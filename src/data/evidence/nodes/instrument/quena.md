@@ -2,20 +2,20 @@
 
 Graph ID `instrument:quena`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · origin date uncertainty explicit
 
-**Graph period** · 1500 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · An end-blown Andean flute with deep pre-Columbian roots; sixteenth-century accounts document Indigenous Andean flutes, while the quena remains a prominent voice in Andean folk and nueva canción.
+## Sources checked
 
-**Graph citations** · [1](<https://guides.loc.gov/indigenous-andes-folklife/music>), [2](<https://folkways.si.edu/la-nueva-cancion-new-song-movement-south-america/latin-world-struggle-protest/music/article/smithsonian>), [3](<https://www.metmuseum.org/it/essays/music-in-the-ancient-andes>)
+- [Library of Congress, Indigenous Peoples of the Andes: Music](https://guides.loc.gov/indigenous-andes-folklife/music) — Lists quena as a common end-blown flute in Andean music.
+- [Smithsonian Folkways, Nueva Canción](https://folkways.si.edu/la-nueva-cancion-new-song-movement-south-america/latin-world-struggle-protest/music/article/smithsonian) — Graph citation for movement context; not directly revisited here.
+- [The Met, Music in the Ancient Andes](https://www.metmuseum.org/it/essays/music-in-the-ancient-andes) — Historical Andean music overview; does not establish modern quena origin date.
 
-**Graph phase rationale** · Confidence: medium. Longstanding Andean use continues; the later marker reflects renewed international visibility through folk revival movements. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+LOC confirms present Andean role, not pre-Columbian modern form. Early date remains low-confidence documentation marker.
 
-- 1500 established · medium · No phase note · None recorded
-- 1960 golden-age · medium · No phase note · None recorded
-- 1980 established · medium · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Verify the specific colonial passages and Folkways article before stronger origin claims.

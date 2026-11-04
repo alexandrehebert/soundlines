@@ -2,18 +2,21 @@
 
 Graph ID `instrument:harp`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · 2026-11-04
 
-**Graph period** · 800 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A plucked-string instrument with ancient forms; arched harps are attested in the ancient Near East, and frame harps appear in medieval Europe. The timeline anchor uses the documented European frame-harp form within the graph’s supported date range.
+## Sources checked
 
-**Graph citations** · [1](<https://collectionsdumusee.philharmoniedeparis.fr/histoires-d-instruments-la-harpe.aspx?_lg=fr-FR>), [2](<https://www.dublincity.ie/ga/library/blog/irelands-harp-shaping-nations-identity-transcript>)
+- [Encyclopaedia Iranica — Harp](https://www.iranicaonline.org/articles/harp/) — Specialist survey by Bo Lawergren: Persian arched harps in the third millennium BCE; explicitly warns a proposed early terracotta date is uncertain. Distinguishes forms and regional timelines.
+- [The Metropolitan Museum of Art — Harp, ca. 1580–1295 BCE](https://www.metmuseum.org/art/collection/search/555866?searchField=All) — Curatorial object record documents an ancient Egyptian arched harp and its musical use; direct dated artifact corroborates ancient attestation.
+- [Dublin City Council — Ireland’s Harp: shaping a nation’s identity](https://www.dublincity.ie/ga/library/blog/irelands-harp-shaping-nations-identity-transcript) — Talk transcript says Irish harp origins are speculative; early images on stone crosses are dated around 7th–8th centuries. Supports not collapsing regional harp history into one date.
+- [Cité de la musique — Histoires d’instruments: la harpe](https://collectionsdumusee.philharmoniedeparis.fr/histoires-d-instruments-la-harpe.aspx?_lg=fr-FR) — Existing graph citation retained; page could not be fetched in this pass.
 
-**Graph phase rationale** · Confidence: low. A continuous phase is used because the node covers many distinct harp traditions with no defensible single global prominence curve. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+Existing 800 CE start was overly narrow for the general harp node: it captured an early medieval European frame-harp anchor while ignoring much earlier Near Eastern evidence. Replaced with an approximate third-millennium BCE attestation and described date uncertainty; did not imply a single invention point. Removed the unsupported universal prominence phase.
 
-- 800 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Check regional European frame harp dates separately only if the graph later splits regional forms.

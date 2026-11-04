@@ -2,20 +2,20 @@
 
 Graph ID `instrument:guiro`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · origins and documentary date qualified
 
-**Graph period** · 1788 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Scraped idiophone traditionally made from a ridged gourd and of pre-Columbian Taíno origin. A reported late-18th-century textual reference is uncertain; the date is a provisional documentation anchor, not the instrument’s origin.
+## Sources checked
 
-**Graph citations** · [1](<https://www.si.edu/object/guiro%3Anmah_602447>), [2](<https://americanhistory.si.edu/collections/object/nmah_602444>), [3](<https://omeka-s.grinnell.edu/s/MusicalInstruments/item/2688>), [4](<https://dimultimusic.co.id/vst/research/guiro/>)
+- [The Metropolitan Museum of Art, Güiro object record](https://www.metmuseum.org/art/collection/search/501300) — Cuban tin güiro dated late 19th century; classified as scraped idiophone and collected in 1889.
+- [Smithsonian Folkways, El Coquí teaching guide](https://folkways.si.edu/el-coqui/music/tools-for-teaching/smithsonian) — Identifies güiro as a Taíno rhythm instrument made from gourd and scraped ridges; supports cultural association, not exclusive origin.
+- [DMI Research, Guiro](https://dimultimusic.co.id/vst/research/guiro/) — Cross-check flags that 1788 source names gourds rather than instrument explicitly; origin attributions vary. Used cautiously as secondary research synthesis.
 
-**Graph phase rationale** · Confidence: medium. Long-standing regional use and later prominence in Latin dance ensembles anchor a cautious outline. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+Museum record independently supports the instrument’s documented Cuban form by the late 19th century. Smithsonian educational material supports Taíno association; neither establishes a single exclusive origin. The 1788 date remains a weak documentary anchor, not origin date.
 
-- 1788 established · medium · No phase note · None recorded
-- 1900 golden-age · medium · No phase note · None recorded
-- 1950 established · medium · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.
+Find and inspect the underlying 1788 text before treating it as a secure first instrument reference.

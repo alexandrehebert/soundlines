@@ -2,20 +2,20 @@
 
 Graph ID `instrument:koto`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · multiple traditions distinguished
 
-**Graph period** · 700 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Long Japanese zither with movable bridges, introduced from Tang China around the 8th century; first heard in the gagaku court orchestra before developing its own solo and chamber repertoire.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Koto_(instrument)>)
+- [Smithsonian National Museum of Asian Art, Sawai Koto Ensemble](https://archive.asia.si.edu/podcasts/related/sawaikoto/progNotes.asp) — States koto introduced from China/Korea in 7th century and 17-string variant developed in early 20th century.
+- [Smithsonian Folkways, Japan: Semiclassical and Folk Music](https://folkways-media.si.edu/docs/folkways/artwork/UNES08016.pdf) — Liner notes place new koto solo/song genre with Yatsuhashi in 17th century.
+- [Imperial Household Agency, Gagaku](https://www.kunaicho.go.jp/en/learn/culture/gagaku.html) — Lists sō/koto in Japanese court music and continental influence.
 
-**Graph phase rationale** · Confidence: low. The outline reflects court use, later development of solo and ensemble repertories, and continuing practice; exact boundaries are broad. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+Separates introduction from later repertoire development; sources support multiple contexts.
 
-- 700 established · low · No phase note · None recorded
-- 1600 golden-age · low · No phase note · None recorded
-- 1900 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Specialist Japanese music history could strengthen transmission chronology.

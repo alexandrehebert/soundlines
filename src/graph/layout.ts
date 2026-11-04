@@ -13,7 +13,7 @@ import { visibleEnd } from './phases.ts'
  */
 
 export const CURRENT_YEAR = new Date().getFullYear()
-export const MIN_YEAR = 500
+export const MIN_YEAR = -3000
 export const DEFAULT_START_YEAR = 1948
 export const MAX_YEAR = CURRENT_YEAR + 2
 export const TIMELINE_PADDING = 24
@@ -37,7 +37,8 @@ export interface TimeScale {
  * and maps one year to `weight` units of "era time".
  */
 export const ERA_SEGMENTS: readonly { from: number; weight: number; label: string }[] = [
-  { from: MIN_YEAR, weight: 0.08, label: 'Medieval' },
+  { from: MIN_YEAR, weight: 0.01, label: 'Ancient' },
+  { from: 500, weight: 0.08, label: 'Medieval' },
   { from: 1400, weight: 0.2, label: 'Renaissance – Baroque' },
   { from: 1750, weight: 0.5, label: 'Classical – Romantic' },
   { from: 1900, weight: 1, label: 'Modern' },

@@ -2,20 +2,20 @@
 
 Graph ID `instrument:auto-tune`
 
-**Review status** · Pending source review
+**Review status** · Reviewed; launch and vocal-effect adoption checked
 
-**Graph period** · 1997 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Pitch-correction software released by Antares in 1997; pushed to extreme settings, from Cher's "Believe" to trap and Afrobeats, it became a deliberate vocal effect.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Auto-Tune>)
+- [Antares: AutoTune history](https://antarestech.com/about) — Manufacturer dates first release to 1997 and identifies Cher’s 1998 “Believe” as the effect’s major early public breakthrough; useful for release facts, not independent impact evaluation.
+- [“Auto-Tune as instrument,” Popular Music (Cambridge University Press)](https://resolve.cambridge.org/core/services/aop-cambridge-core/content/view/C5B160BE7E8AB29576E92CC7CD9D60B7/S0261143024000369a.pdf/auto-tune-as-instrument-trap-musics-embrace-of-a-repurposed-technology.pdf) — Peer-reviewed article distinguishes 1996 development from 1997 commercial release, cites “Believe” (1998), and analyzes 2010s trap use as creative/instrumental.
+- [Auto-Tune (Wikipedia, original graph citation)](https://en.wikipedia.org/wiki/Auto-Tune) — Launch and Cher-effect claims checked against Antares and Cambridge scholarship; current entry’s specific Afrobeats example was not verified and was removed.
 
-**Graph phase rationale** · Confidence: low. Commercial release, early hit use, and later routine/creative studio use anchor the broad transitions. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+Release year is high confidence: manufacturer and scholarly source distinguish development (1996) from commercial release (1997). Cambridge supports Cher’s 1998 breakthrough and later trap practice. Original phases implied a quantified/general arc; now only documented release and stylistic shift remain.
 
-- 1997 emerging · low · No phase note · None recorded
-- 2000 golden-age · low · No phase note · None recorded
-- 2010 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Antares is an interested source for the company’s product history. Broader genre-by-genre diffusion, including Afrobeats, needs separate source work.

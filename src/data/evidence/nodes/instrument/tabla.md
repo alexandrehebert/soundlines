@@ -2,20 +2,21 @@
 
 Graph ID `instrument:tabla`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · disputed origin claims removed
 
-**Graph period** · 1700 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Pair of tuned hand drums that emerged in 18th-century North India; its spoken syllables and complex cycles accompany Hindustani classical music and qawwali.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Tabla>)
+- [Duke University Musical Instrument Collections, Tabla](https://sites.duke.edu/dumic/instruments/percussion/south-asia/tabla/) — Explains disputed origin legend and role in Hindustani khayal; notes historical uncertainty.
+- [Kippen, Hindustani Tala / Garland Encyclopedia excerpt](https://music.arts.uci.edu/abauer/148_2018/readings/Kippen_Hindustani_Tala_Garland.pdf) — Pictorial evidence appears c.1745; shape changes until early 1800s; 1738 Delhi Album lacks tabla reference; argues likely emergence early 1740s.
+- [The Met, Musical Instruments of Indian Subcontinent](https://www.metmuseum.org/it/essays/musical-instruments-of-the-indian-subcontinent) — Identifies tabla among instruments commonly used in Hindustani classical music.
+- [Smithsonian Folkways, Pakistan: The Music of the Qawal](https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian) — Catalog documents tabla in a 1970s qawwali ensemble.
 
-**Graph phase rationale** · Confidence: low. The outline reflects the instrument’s modern historical formation, later concert and recording prominence, and continuing classical use. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+Important correction: a commonly repeated medieval invention story is contradicted by a contemporary 1738 source’s silence and pictorial evidence only from c.1745. Increased confidence in cautious documentary emergence; later popularity phases removed.
 
-- 1700 emerging · low · No phase note · None recorded
-- 1950 golden-age · low · No phase note · None recorded
-- 1970 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The claimed early-19th-century stabilization and exact 1740s emergence are secondary scholarly syntheses; review Kippen citations for exact primary source chain.

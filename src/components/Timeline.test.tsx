@@ -116,6 +116,11 @@ describe('timeline year axis', () => {
     expect(plot).not.toContain('time ×2 compressed')
   })
 
+  it('labels BCE axis years', () => {
+    const markup = renderTimeline('instrument', 'family', [-3000, 2026])
+    expect(markup).toContain('3000 BCE')
+  })
+
   it('updates the shared ticks for narrow viewports and different time ranges', () => {
     viewport.width = 360
     const viewRange: [number, number] = [1948, 2026]

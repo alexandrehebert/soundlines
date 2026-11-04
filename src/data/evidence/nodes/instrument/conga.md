@@ -2,20 +2,20 @@
 
 Graph ID `instrument:conga`
 
-**Review status** · Pending source review
+**Review status** · Reviewed; origin and rumba adoption dates qualified
 
-**Graph period** · 1900 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Tall, single-headed Afro-Cuban drum (tumbadora) that took shape around the turn of the 20th century; it moved from rumba into son, mambo, salsa, and Latin jazz.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Conga>)
+- [U.S. National Park Service: Salsa Is More Than Salsa](https://home.nps.gov/articles/000/salsa-is-more-than-salsa.htm) — NPS timeline places tumbadoras/congas among instruments created by dock-working Afro-Cubans in Matanzas during the 1870s–90s.
+- [University of Arizona thesis: Recipe for a Guaguancó Sabroso—Understanding Quinto Drum](https://repository.arizona.edu/bitstream/10150/578636/1/azu_etd_14181_sip1_m.pdf) — Thesis, drawing on Cuban music scholarship, says earliest mention is in the first decades of the 20th century, dates tumbadora’s introduction into rumba to the 1930s, and describes later naming distinction: “conga” used interchangeably by the early 1950s.
+- [Conga (Wikipedia, original graph citation)](https://en.wikipedia.org/wiki/Conga) — Checked general late-19th/early-20th-century Cuban origin and lineage against NPS and the Arizona thesis; retained its uncertainty about exact origins.
 
-**Graph phase rationale** · Confidence: low. Afro-Cuban rumba and later mambo/salsa circulation anchor the main shifts in recorded and performed use. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+NPS supports a late-19th-century creation context; the Arizona thesis separates this from the earliest written mention and gives a firmer 1930s adoption marker for rumba. Replaced low-confidence phase arc with these narrower, qualified dates.
 
-- 1900 emerging · low · No phase note · None recorded
-- 1940 golden-age · low · No phase note · None recorded
-- 1960 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Origins are explicitly uncertain and the earliest mention does not equal invention; historians’ evidence and terminology vary between tumbadora and conga.

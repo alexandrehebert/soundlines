@@ -2,20 +2,17 @@
 
 Graph ID `instrument:timbales`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · turn-of-century development corroborated
 
-**Graph period** · 1900 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A pair of shallow, single-headed metal drums adapted in Cuba from 19th-century kettledrums. Their portable form developed in charanga ensembles around the turn of the 20th century and became a signature sound in salsa and Latin jazz.
+## Sources checked
 
-**Graph citations** · [1](<https://www.americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary>), [2](<https://www.pbs.org/buenavista/music/a_timbales.html>), [3](<https://www.pbs.org/buenavista/music/a_charanga.html>), [4](<https://music.si.edu/object-day/tito-puentes-timbales>)
+- [The Met, Calixto Rafael Rivera timbales](https://www.metmuseum.org/art/collection/search/503910) — Museum account dates development around 1900, charanga integration, U.S. use and Afro-Cuban/Latin role.
+- [Smithsonian NMAH Jazz Glossary](https://www.americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary) — Defines charanga instrumentation with timbales and güiro.
+- [Smithsonian NMAH, Tito Puente timbales](https://americanhistory.si.edu/press/releases/museum-moment-king-latin-jazz-lives-through-his-timbales) — Confirms the instrument’s later Latin-music prominence through Puente object/history.
+- [Smithsonian Learning Lab, Cuban danzón](https://learninglab.si.edu/resources/view/163735) — Notes Creole timpani evolved into timbales within Cuban orchestral traditions.
 
-**Graph phase rationale** · Confidence: medium. The markers follow Cuban charanga and later mambo/salsa ensemble visibility, with continuing use. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 1900 emerging · medium · No phase note · None recorded
-- 1940 golden-age · medium · No phase note · None recorded
-- 1960 established · medium · No phase note · None recorded
-
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Met supports original period claim but not intervening 1940 phase; replaced subjective golden age with evidence-based adoption and later cultural prominence.

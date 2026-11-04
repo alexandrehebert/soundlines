@@ -2,20 +2,16 @@
 
 Graph ID `instrument:pedal-steel-guitar`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · phases anchored in documented adoption
 
-**Graph period** · 1940 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Horizontally played steel guitar with pedals that change string pitch. Its non-pedal predecessors developed in Hawai‘i; pedal-operated models emerged around 1940 and became a defining country instrument.
+## Sources checked
 
-**Graph citations** · [1](<https://music.si.edu/object-day/electric-console-steel-guitar-built-felton-w-williams-jr>), [2](<https://countrymusichalloffame.org/learn/family-and-community-resources/history-of-country-music-instruments>), [3](<https://countrymusichalloffame.org/hall-of-fame/pete-drake>), [4](<https://www.premierguitar.com/artists/pedal-to-the-metal-a-short-history-of-the-pedal-steel-guitar>)
+- [Country Music Hall of Fame, History of Country Music Instruments](https://countrymusichalloffame.org/learn/family-and-community-resources/history-of-country-music-instruments) — Documents 1939 Electraharp design, 1948 Bigsby/Speedy West model, 1949 recording, and adoption after 1954 “Slowly.”
+- [Smithsonian Music, Electric Console Steel Guitar](https://music.si.edu/object-day/electric-console-steel-guitar-built-felton-w-williams-jr) — Graph citation for instrument object and console-steel development.
+- [Country Music Hall of Fame, Pete Drake](https://countrymusichalloffame.org/hall-of-fame/pete-drake) — Graph citation for later country-session prominence.
 
-**Graph phase rationale** · Confidence: medium. Country Hall of Fame and Smithsonian histories support the postwar adoption and continuing country use markers. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 1940 emerging · medium · No phase note · None recorded
-- 1950 golden-age · medium · No phase note · None recorded
-- 1970 established · medium · No phase note · None recorded
-
-**Citation retrieval** · 3 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Source-supported pathway is invention to country adoption; broad popularity labels replaced with historical milestones.

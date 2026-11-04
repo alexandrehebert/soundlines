@@ -2,18 +2,20 @@
 
 Graph ID `instrument:maracas`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Taíno association corroborated
 
-**Graph period** · 1500 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Seed-filled rattles with Indigenous American and African-diasporic histories; early colonial accounts document Taíno gourd rattles. The 16th-century timeline anchor records colonial-era documentation, not the instrument’s origin.
+## Sources checked
 
-**Graph citations** · [1](<https://www.si.edu/object/maracas%3Anmah_602467>), [2](<https://omeka-s.grinnell.edu/s/MusicalInstruments/item/2400>), [3](<https://worldinstruments.org/instruments/maraca/>)
+- [Smithsonian Folkways, Aguinaldo Percussion lesson](https://folkways-media.si.edu/docs/folkways/lessons/SFLN063_teacher_guide.pdf) — Describes paired handled maracas and documents Taíno association in Puerto Rican music.
+- [Smithsonian NMAI, Taíno gallery guide](https://americanindian.si.edu/nk360/pdf/Taino-Gallery-Guide-Spanish.pdf) — Connects gourd maracas with Taíno cultural heritage.
+- [National Museum of American History, Maracas object](https://www.si.edu/object/maracas%3Anmah_602467) — Collection object offers material documentation; date/provenance still need direct confirmation.
 
-**Graph phase rationale** · Confidence: low. A continuous phase avoids flattening distinct Indigenous and Afro-diasporic maraca traditions into one popularity curve. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+Supports Taíno association without claiming exclusive origin across all maraca traditions.
 
-- 1500 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Inspect NMAH object date/provenance before relying on 16th-century marker.

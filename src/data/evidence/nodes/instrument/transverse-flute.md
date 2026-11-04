@@ -2,20 +2,21 @@
 
 Graph ID `instrument:transverse-flute`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Baroque traverso scope refined
 
-**Graph period** · 1680 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Side-blown flute; this entry follows the European baroque traverso developed by Paris makers in the late 17th century. Earlier transverse flutes existed in Europe and other traditions.
+## Sources checked
 
-**Graph citations** · [1](<https://music.duke.edu/dumic/boehms-ghost>), [2](<https://www.metmuseum.org/art/collection/search/504256>), [3](<https://caslabs.case.edu/medren/baroque-instruments/flute-baroque/>)
+- [The Met, Watteau: Music and Theater](https://resources.metmuseum.org/resources/metpublications/pdf/Watteau_Music_and_Theater.pdf) — Identifies 1681 Lully ballet as French-court debut; object discussed likely post-1720 four-section design.
+- [The Met, Garion transverse flute](https://www.metmuseum.org/art/collection/search/504256) — Collection record describes three-joint design pioneered by Hotteterre family in 17th century.
+- [Milan Castello Sforzesco, Transverse flute](https://www.milanocastello.it/i-musei/museo-degli-strumenti-musicali/percorso-multimediale/il-flauto-traverso) — Museum account separates Baroque flute from Boehm’s 1832 redesign; direct page blocked (403).
+- [International Council of Museums, wooden instrument-making research](https://cimcim.mini.icom.museum/wp-content/uploads/sites/7/2023/06/Perez-and-Le-Conte-2016-Making-wooden-musical-instruments.pdf) — Specialist museum-conservation publication places Hotteterre flute-making innovations in late 17th century.
 
-**Graph phase rationale** · Confidence: medium. The phases follow the Baroque traverso, later orchestral standardization, and continuing performance use. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+Original node stated traverso scope but timeline continued through Boehm modernization as though one stable instrument. Now draws the distinction and removes unsupported popularity arc.
 
-- 1680 emerging · medium · No phase note · None recorded
-- 1750 golden-age · medium · No phase note · None recorded
-- 1850 established · medium · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The 1750 “established” marker is broad and European-specific; no measured popularity series available.

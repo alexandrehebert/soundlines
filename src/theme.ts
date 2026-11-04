@@ -72,11 +72,17 @@ export const NODE_TYPE_COLORS: Record<NodeType, string> = {
   event: '#f87171',
 }
 
+export function formatYear(year: number): string {
+  if (year < 0) return `${Math.abs(year)} BCE`
+  if (year === 0) return '1 BCE'
+  return String(year)
+}
+
 export function formatPeriod(period: Period | undefined): string | null {
   if (!period) return null
   const prefix = period.precision === 'circa' ? 'c. ' : ''
   const { start, end } = period
-  if (end === start) return `${prefix}${start}`
-  if (end == null) return `${prefix}${start} – now`
-  return `${prefix}${start} – ${end}`
+  if (end === start) return `${prefix}${formatYear(start)}`
+  if (end == null) return `${prefix}${formatYear(start)} – now`
+  return `${prefix}${formatYear(start)} – ${formatYear(end)}`
 }

@@ -2,22 +2,19 @@
 
 Graph ID `instrument:recorder`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Met chronology added
 
-**Graph period** · 1350 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Duct flute with a thumb hole, documented in Europe from the 14th century; prized in Renaissance consorts and Baroque sonatas, it faded with the transverse flute and was revived in the 20th century.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Recorder_(musical_instrument)>)
+- [The Met, The Development of the Recorder](https://www.metmuseum.org/essays/the-development-of-the-recorder) — Surviving 14th-century recorders; 15th–16th-century use and Baroque repertory; revival chronology.
+- [The Met, Bassano tenor recorder](https://www.metmuseum.org/art/collection/search/506723) — Object supports recorder use in European art music from 15th century.
 
-**Graph phase rationale** · Illustrative editorial shading: the recorder peaks in Renaissance consorts, gives way to the transverse flute in the mid-18th century, and returns with the 20th-century early-music and school revival. Not a measured ranking.
+## Assessment
 
-## Phases
+Met specialist history is stronger than the graph’s former Wikipedia-only citation. Popularity peaks and abrupt decline are not retained.
 
-- 1350 emerging · low · No phase note · None recorded
-- 1500 golden-age · low · No phase note · None recorded
-- 1700 established · low · No phase note · None recorded
-- 1760 niche (0) · low · No phase note · None recorded
-- 1920 established (0.4) · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Verify exact 1880s revival wording in the article body if refining this phase.

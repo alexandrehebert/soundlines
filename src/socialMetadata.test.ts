@@ -50,7 +50,7 @@ describe('social metadata', () => {
 
   it('uses the dataset description when available and a meaningful fallback otherwise', () => {
     const timbales = socialMetadata(new URL('/?focus=instrument%3Atimbales', origin), index.nodeById)
-    expect(timbales.description).toContain('shallow, single-headed metal drums')
+    expect(timbales.description).toContain('shallow, single-headed Cuban metal drums')
 
     const node: GraphNode = { id: 'artist:no-description', type: 'artist', name: 'Example Artist' }
     const fallback = socialMetadata(new URL('/?focus=artist%3Ano-description', origin), new Map([[node.id, node]]))

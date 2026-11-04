@@ -2,21 +2,20 @@
 
 Graph ID `instrument:theremin`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1920 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Electronic instrument played without touch, invented by Leon Theremin in 1920; its eerie glissandi featured in concert works and 1950s sci-fi films, then in the occasional rock record.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Theremin>)
+- [The Met: RCA Theremin](https://www.metmuseum.org/art/collection/search/739621) — Museum object and curator text date invention to 1920; RCA manufactured about 500 in 1929, but high cost and playing difficulty limited mass adoption.
+- [Museum of Making Music: RCA Theremin](https://museumofmakingmusic.org/momm_artifact/rca-theremin/) — Confirms 1920 invention, no-touch antenna control, 1928 patent, 1929 RCA manufacture, and weak commercial prospects after the crash.
+- [Theremin (Wikipedia, original graph citation)](https://en.wikipedia.org/wiki/Theremin) — Used only as a lead; checked invention and historical-usage passages against the Met and instrument-museum records.
 
-**Graph phase rationale** · Illustrative editorial shading: the theremin peaks with mid-century film scores, fades as synthesizers spread, and returns with 1990s kit instruments. Not a measured ranking.
+## Assessment
 
-## Phases
+The start year is corroborated by two instrument-museum sources. The original graph overstated cultural prominence: the Met says it never achieved mass popularity, while the cited history describes postwar interest as brief. Replaced “golden-age” and the unsupported 1965/1994 markers with a cautious postwar niche marker; phases remain qualitative.
 
-- 1920 emerging · low · No phase note · None recorded
-- 1945 golden-age · low · No phase note · None recorded
-- 1965 niche (0) · low · No phase note · None recorded
-- 1994 established (0.3) · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The postwar “flurry” and later science-fiction association rely partly on a general historical synthesis rather than a quantitative or filmography-based study; the exact period and breadth of use are not measured.

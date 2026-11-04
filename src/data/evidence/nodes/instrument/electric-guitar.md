@@ -2,20 +2,21 @@
 
 Graph ID `instrument:electric-guitar`
 
-**Review status** · Pending source review
+**Review status** · Reviewed; prototype, commercial launch, and later solid-body models distinguished
 
-**Graph period** · 1932 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Guitar amplified through magnetic pickups, from Rickenbacker's 1932 "Frying Pan" to the Fender and Gibson solid bodies of the early 1950s; its volume and distortion defined electric blues, rock, and metal.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Electric_guitar>)
+- [Smithsonian Magazine: The Electric Guitar’s Long (And Louder), Strange Trip](https://www.smithsonianmag.com/smithsonian-institution/electric-guitars-long-and-louder-strange-trip-180954193/) — Dates the Frying Pan design to 1931, explains its electromagnetic pickup, and documents Gibson Les Paul (1952) and Fender Stratocaster (1954) solid-body models.
+- [Musical Instrument Museum: Guitars That Changed Music History](https://mim.org/guitars-that-changed-music-history/) — Curatorial account identifies a 1934 Rickenbacker Frying Pan as the first commercially successful amplified guitar and describes its influence on later electric models.
+- [Lemelson Center: The Invention of the Electric Guitar](https://invention.si.edu/invention-stories/invention-electric-guitar) — Smithsonian search extract confirms the Frying Pan was marketed in 1932; direct page request timed out.
+- [Electric guitar (Wikipedia, original graph citation)](https://en.wikipedia.org/wiki/Electric_guitar) — Checked the design/market chronology against Smithsonian and MIM sources; the graph’s phases overstated the evidence for a fixed popularity curve.
 
-**Graph phase rationale** · Confidence: low. The phases reflect early commercial models, postwar mass adoption, and continuing use across popular genres. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+The 1931 invention and 1932 marketing dates describe different events; MIM’s 1934 instrument record calls it the first commercially successful amplified guitar. Retained 1932 as the launch date but removed the unsupported 1950 “golden age” and 1960 establishment markers.
 
-- 1932 emerging · low · No phase note · None recorded
-- 1950 golden-age · low · No phase note · None recorded
-- 1960 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+Sources vary between invention, marketing, and commercial success dates; use each date only for its specific milestone.

@@ -14642,30 +14642,27 @@
       "family": "electronic",
       "period": {
         "start": 1997,
-        "precision": "circa"
+        "precision": "year"
       },
-      "description": "Pitch-correction software released by Antares in 1997; pushed to extreme settings, from Cher's \"Believe\" to trap and Afrobeats, it became a deliberate vocal effect.",
+      "description": "Pitch-correction software released by Antares in 1997. Cher’s 1998 “Believe” made its conspicuous robotic effect widely known; later uses include trap, where the software became a creative instrument as well as a corrective tool.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Auto-Tune"
+        "https://en.wikipedia.org/wiki/Auto-Tune",
+        "https://antarestech.com/about",
+        "https://resolve.cambridge.org/core/services/aop-cambridge-core/content/view/C5B160BE7E8AB29576E92CC7CD9D60B7/S0261143024000369a.pdf/auto-tune-as-instrument-trap-musics-embrace-of-a-repurposed-technology.pdf"
       ],
       "phases": [
         {
           "start": 1997,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "high"
         },
         {
-          "start": 2000,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 2010,
+          "start": 1998,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. Commercial release, early hit use, and later routine/creative studio use anchor the broad transitions. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The first marker is the documented commercial release; the second marks the highly visible stylistic use on “Believe.” Scholarly work documents later routine and creative use in 2010s trap. Removed unsupported 2000 “golden age” and 2010 establishment markers: no evidence here supports a general popularity curve."
     },
     {
       "id": "instrument:balalaika",
@@ -14676,10 +14673,11 @@
         "start": 1688,
         "precision": "year"
       },
-      "description": "Three-stringed Russian folk lute documented in writing in 1688; Vasily Andreyev and collaborators standardized concert forms and organized balalaika ensembles in the late 19th century.",
+      "description": "Three-stringed Russian folk lute documented in 1688. Vasily Andreyev revived its popularity and standardized concert forms for orchestral ensembles in the late 19th century; its ancestry remains debated.",
       "sources": [
         "https://collection.powerhouse.com.au/object/319134",
-        "https://music-museum.ru/collections/expomusic/vasilij-andreev.html"
+        "https://music-museum.ru/collections/expomusic/vasilij-andreev.html",
+        "https://en.wikipedia.org/wiki/Balalaika"
       ],
       "phases": [
         {
@@ -14688,17 +14686,12 @@
           "confidence": "medium"
         },
         {
-          "start": 1880,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1950,
+          "start": 1886,
           "prominence": "established",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. The documented folk instrument and later concert standardization support a distinction between early use and organized concert visibility. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The 1688 marker is the earliest documented reference cited by Powerhouse, not the instrument’s invention. The 1886 marker denotes Andreyev’s public revival and later concert standardization. Removed the unsupported 1950 marker; Powerhouse describes Soviet-era prominence broadly (1917–1991), without evidence for a specific 1950 transition."
     },
     {
       "id": "instrument:bandoneon",
@@ -14743,35 +14736,35 @@
       "name": "Banjo",
       "family": "strings",
       "period": {
-        "start": 1687,
-        "precision": "circa"
+        "start": 1680,
+        "precision": "decade"
       },
-      "description": "Gourd-bodied lutes made by enslaved Africans in the Caribbean, documented from the late 17th century, evolved into the commercial five-string banjo of 19th-century America and the rolling drive of bluegrass.",
+      "description": "Gourd-bodied banjo predecessors were developed in the Americas by enslaved Africans and their descendants from West African instrument traditions. The instrument was documented by the 17th century, commercialized in the 19th century, and later became central to old-time and bluegrass music.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Banjo"
+        "https://en.wikipedia.org/wiki/Banjo",
+        "https://home.nps.gov/blri/learn/historyculture/the-banjo.htm",
+        "https://guides.loc.gov/African-american-banjo/"
       ],
       "phases": [
         {
-          "start": 1687,
+          "start": 1680,
           "prominence": "emerging",
           "confidence": "low"
         },
         {
-          "start": 1840,
+          "start": 1830,
           "prominence": "golden-age",
           "confidence": "medium",
-          "note": "Nineteenth-century commercial production and the instrument’s role in minstrel shows support this approximate expansion marker.",
-          "sources": [
-            "https://www.loc.gov/item/hlas-bi2020002633/"
-          ]
+          "note": "Early 19th-century minstrel performance spread the banjo and drove commercialization; this marker names a historical expansion, while recognizing the racist blackface context."
         },
         {
-          "start": 1930,
+          "start": 1950,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Approximate mid-20th-century folk revival consolidated the banjo in Appalachian folk and bluegrass traditions."
         }
       ],
-      "phaseNote": "Illustrative editorial shading: the banjo peaks with 19th-century minstrel and parlour music and early jazz, then continues mainly through old-time and bluegrass. Not a measured ranking."
+      "phaseNote": "These are qualitative historical markers, not a popularity ranking. The early date is decade-level because the sources checked support 17th-century documentation but do not substantiate a specific year. NPS supports early-19th-century minstrel-era spread/commercialization and a mid-20th-century folk revival."
     },
     {
       "id": "instrument:bansuri",
@@ -14780,32 +14773,28 @@
       "family": "winds",
       "period": {
         "start": 1940,
-        "precision": "circa"
+        "precision": "decade"
       },
-      "description": "Side-blown bamboo flute with long-standing South Asian roots; the modern concert bansuri was developed into a solo instrument for Hindustani classical performance in the mid-20th century.",
+      "description": "Side-blown bamboo flute with long roots in South Asian music. Pannalal Ghosh adapted the bansuri for the North Indian classical concert stage in the 1930s–40s; it is now performed as a Hindustani classical solo instrument.",
       "sources": [
         "https://folkways.si.edu/hariprasad-zakir-hussain/venu/world/music/album/smithsonian",
         "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/2108",
-        "https://dimultimusic.co.id/vst/research/bansuri/"
+        "https://dimultimusic.co.id/vst/research/bansuri/",
+        "https://journal.iftawm.org/previous/vol1no2/clements/"
       ],
       "phases": [
         {
           "start": 1940,
           "prominence": "emerging",
-          "confidence": "medium"
-        },
-        {
-          "start": 1960,
-          "prominence": "golden-age",
-          "confidence": "medium"
+          "confidence": "high"
         },
         {
           "start": 1980,
           "prominence": "established",
-          "confidence": "medium"
+          "confidence": "low"
         }
       ],
-      "phaseNote": "Confidence: medium. The dates follow the modern concert bansuri’s development and later establishment as a Hindustani solo instrument. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The 1940s marker describes Pannalal Ghosh’s adaptation for the classical stage, not invention of the flute. Smithsonian Folkways documents a Hindustani bansuri recital recorded in 1974 and released in 1989, showing established performance by then; the exact 1980 adoption threshold is editorial and low-confidence. Removed the unsupported 1960 “golden-age” marker."
     },
     {
       "id": "instrument:bassoon",
@@ -14814,31 +14803,27 @@
       "family": "winds",
       "period": {
         "start": 1650,
-        "precision": "circa"
+        "precision": "decade"
       },
-      "description": "Low double-reed woodwind developed from the dulcian; its multi-jointed form emerged in the second half of the 17th century and became a bass voice in orchestras and continuo groups.",
+      "description": "Low double-reed woodwind that succeeded the curtal or dulcian. The jointed bassoon form developed in the second half of the 17th century; it became an important bass voice in Baroque continuo and orchestral writing.",
       "sources": [
         "https://www.metmuseum.org/art/collection/search/503660",
-        "https://www.vam.ac.uk/__data/assets/pdf_file/0011/178499/Catalogue_Wind_Instruments.pdf"
+        "https://www.vam.ac.uk/__data/assets/pdf_file/0011/178499/Catalogue_Wind_Instruments.pdf",
+        "https://www.bate.ox.ac.uk/bassoons"
       ],
       "phases": [
         {
           "start": 1650,
           "prominence": "emerging",
-          "confidence": "medium"
+          "confidence": "high"
         },
         {
           "start": 1750,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1800,
           "prominence": "established",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. The phases reflect its emergence from earlier double-reed instruments and its consolidation in orchestral repertory. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Oxford’s Bate Collection places added keys around 1650 and identifies the curtal as predecessor; the V&A catalogue describes the four-jointed bassoon as a second-half-17th-century modification. The Met documents its Baroque continuo role. Removed unsupported “golden-age” and 1800 transition markers."
     },
     {
       "id": "instrument:bongos",
@@ -14849,29 +14834,26 @@
         "start": 1880,
         "precision": "circa"
       },
-      "description": "Pair of small, open-bottomed drums developed in eastern Cuba from African-derived drum traditions and closely associated with son and later salsa ensembles.",
+      "description": "Pair of small, open-bottomed hand drums developed in eastern Cuba from African-derived drum traditions. The Cuban-born bongos became a distinctive part of son; Smithsonian Folkways notes bongo players on recordings by 1918.",
       "sources": [
         "https://americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary",
-        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07006.pdf"
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07006.pdf",
+        "https://www.americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary",
+        "https://temporalraeweb.rae.es/dhle/bong%C3%B3"
       ],
       "phases": [
         {
           "start": 1880,
           "prominence": "emerging",
-          "confidence": "medium"
+          "confidence": "low"
         },
         {
-          "start": 1940,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1960,
+          "start": 1918,
           "prominence": "established",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. Cuban son and later Latin jazz/salsa expansion anchor the 20th-century use markers. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The circa-1880 origin is retained as a low-confidence late-19th-century estimate: Smithsonian confirms eastern Cuban development but gives no date, and the earliest evidence checked here is bongo performance on 1918 recordings. Removed 1940 “golden-age” and 1960 establishment markers because these sources do not show those instrument-wide transitions."
     },
     {
       "id": "instrument:cello",
@@ -14882,29 +14864,20 @@
         "start": 1550,
         "precision": "circa"
       },
-      "description": "Bowed bass instrument of the violin family, represented by surviving Cremonese examples from the mid-16th century; it became a central solo and ensemble voice in Western classical music.",
+      "description": "Bowed bass member of the violin family whose form developed through experimentation in 16th-century Italy. Early cellos varied in size and string count before later forms became standardized.",
       "sources": [
         "https://www.metmuseum.org/de/press-releases/amati-king-cello-2015-news",
-        "https://www.galleriaaccademiafirenze.it/en/artworks/cello-amati/"
+        "https://www.galleriaaccademiafirenze.it/en/artworks/cello-amati/",
+        "https://www.metmuseum.org/art/collection/search/898377"
       ],
       "phases": [
         {
           "start": 1550,
           "prominence": "emerging",
-          "confidence": "medium"
-        },
-        {
-          "start": 1700,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1800,
-          "prominence": "established",
-          "confidence": "medium"
+          "confidence": "high"
         }
       ],
-      "phaseNote": "Confidence: medium. The phases reflect early instrument formation, solo/ensemble expansion, and continuing orchestral and chamber use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The Met identifies Andrea Amati’s mid-16th-century “King” cello and describes early experimentation in size and string count; its later 1610–20 Amati cello record shows those early forms continued to vary. Removed broad 1700 “golden-age” and 1800 establishment claims because the cited sources do not substantiate those popularity shifts."
     },
     {
       "id": "instrument:charango",
@@ -14913,31 +14886,28 @@
       "family": "strings",
       "period": {
         "start": 1700,
-        "precision": "circa"
+        "precision": "decade"
       },
-      "description": "A small fretted Andean lute shaped through Indigenous and Spanish instrument-making traditions, known in the Andes by the early 18th century. It is a bright rhythmic and melodic voice in Andean folk music.",
+      "description": "Small fretted Andean lute combining Spanish-guitar features with Indigenous adaptations. The Met says the charango is known from the early 18th century; it is used across Andean musical traditions.",
       "sources": [
         "https://www.metmuseum.org/pt/perspectives/curator-interview-armadilloshell-charango-or-jarana",
-        "https://guides.loc.gov/indigenous-andes-folklife/music"
+        "https://guides.loc.gov/indigenous-andes-folklife/music",
+        "https://www.metmuseum.org/es/perspectives/curator-interview-armadilloshell-charango-or-jarana",
+        "https://sites.duke.edu/dumic/instruments/strings/central-and-south-america/charango/"
       ],
       "phases": [
         {
           "start": 1700,
-          "prominence": "established",
+          "prominence": "emerging",
           "confidence": "medium"
         },
         {
           "start": 1960,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1980,
           "prominence": "established",
-          "confidence": "medium"
+          "confidence": "low"
         }
       ],
-      "phaseNote": "Confidence: medium. The Andean instrument remains in use; the later marker reflects modern folkloric and Nueva Canción visibility rather than an origin date. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The early-18th-century origin is supported by the Met curator’s account, while Duke’s collection suggests Potosí/Bolivia and Indigenous makers but cites secondary materials. LOC documents worldwide diffusion of Andean sound through 1960s Nueva Canción; this is indirect evidence for charango visibility, not proof of an instrument-specific peak. Removed the unsupported 1980 marker."
     },
     {
       "id": "instrument:clarinet",
@@ -14990,30 +14960,22 @@
         "start": 1500,
         "precision": "circa"
       },
-      "description": "Pair of hardwood sticks struck together; Cuban sources place their use in Havana by the 16th–17th centuries, and the clave pattern is foundational in son, rumba, and salsa.",
+      "description": "Pair of hardwood sticks struck together. A Cuban music history citing ethnographer Fernando Ortiz places claves in Havana in the 16th–17th centuries; today the sticks articulate clave patterns central to Afro-Cuban music and salsa.",
       "sources": [
         "https://www.si.edu/object/claves-used-mongo-santamaria%3Anmah_1290068",
         "https://www.cubamusic.com/es-ES/Pages/PageDetailCubaMusicalInstruments/Claves",
-        "https://latino.si.edu/exposiciones/puro-ritmo/qr/salsas-roots-case"
+        "https://latino.si.edu/exposiciones/puro-ritmo/qr/salsas-roots-case",
+        "https://latino.si.edu/es/exhibitions/puro-ritmo/qr/la-vitrina-las-raices-de-la-salsa",
+        "https://www.nps.gov/articles/000/materiales-a-digital-salsa-exhibit.htm"
       ],
       "phases": [
         {
           "start": 1500,
-          "prominence": "established",
-          "confidence": "medium"
-        },
-        {
-          "start": 1900,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1950,
-          "prominence": "established",
+          "prominence": "emerging",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. The instrument has long-standing Cuban use; the later marker indicates prominent place in recorded Afro-Cuban and salsa ensembles. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The early marker follows a secondary Cuban account attributing the Havana origin to Fernando Ortiz; it is a historical attribution, not direct documentary verification. Smithsonian sources document the claves’ present-day structural role in salsa. Removed unsupported 1900 and 1950 prominence transitions."
     },
     {
       "id": "instrument:conga",
@@ -15021,31 +14983,28 @@
       "name": "Conga",
       "family": "percussion",
       "period": {
-        "start": 1900,
-        "precision": "circa"
+        "start": 1870,
+        "precision": "decade"
       },
-      "description": "Tall, single-headed Afro-Cuban drum (tumbadora) that took shape around the turn of the 20th century; it moved from rumba into son, mambo, salsa, and Latin jazz.",
+      "description": "Tall, single-headed Afro-Cuban drum, also called tumbadora. The exact origin is uncertain: NPS places its creation among Afro-Cuban dock workers in Matanzas in the late 19th century; a University of Arizona thesis says its earliest mention is in the early 20th century and documents its entry into rumba in the 1930s.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Conga"
+        "https://en.wikipedia.org/wiki/Conga",
+        "https://home.nps.gov/articles/000/salsa-is-more-than-salsa.htm",
+        "https://repository.arizona.edu/bitstream/10150/578636/1/azu_etd_14181_sip1_m.pdf"
       ],
       "phases": [
         {
-          "start": 1900,
+          "start": 1870,
           "prominence": "emerging",
           "confidence": "low"
         },
         {
-          "start": 1940,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1960,
+          "start": 1930,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. Afro-Cuban rumba and later mambo/salsa circulation anchor the main shifts in recorded and performed use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The late-19th-century start follows NPS, while the specialist thesis distinguishes this proposed development period from the earliest mention (early 20th century) and adoption into rumba (1930s). Removed unsupported 1940 “golden age” and 1960 establishment markers; these sources do not establish a general popularity curve."
     },
     {
       "id": "instrument:dobro",
@@ -15056,32 +15015,19 @@
         "start": 1928,
         "precision": "year"
       },
-      "description": "Trade-name resonator guitar introduced by the Dopyera brothers’ Dobro Manufacturing Company in 1928; its amplified projection made it influential in country and bluegrass playing.",
+      "description": "Trade-name single-cone resonator guitar associated with the Dopyera brothers’ Dobro company, formed around 1928–29. The Smithsonian dates one surviving Dobro guitar to about 1933–37; resonators were designed to increase acoustic volume and later became influential in country and blues.",
       "sources": [
-        "https://americanhistory.si.edu/collections/object/nmah_1067396"
+        "https://americanhistory.si.edu/collections/object/nmah_1067396",
+        "https://publications.gc.ca/collections/collection_2018/mstc-cstm/NM33-1-19-eng.pdf"
       ],
       "phases": [
         {
           "start": 1928,
           "prominence": "emerging",
-          "confidence": "low",
-          "note": "The Dobro Manufacturing Company was formed in 1928. The Smithsonian’s surviving Dobro instrument record dates the object later (1933–37), so this phase marks the commercial form’s company history, not a dated surviving specimen.",
-          "sources": [
-            "https://www.si.edu/object/dobro-guitar%3Anmah_1067396"
-          ]
-        },
-        {
-          "start": 1935,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1950,
-          "prominence": "established",
-          "confidence": "low"
+          "confidence": "high"
         }
       ],
-      "phaseNote": "Confidence: low. The 1928 commercial form and its subsequent country and bluegrass use anchor the broad phases. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The 1928 marker reflects the company/name origin, not a surviving instrument dated that year; Smithsonian’s cataloged Dobro specimen is c.1933–37. Removed later “golden-age” and 1950 establishment markers because no source here supports an instrument-wide popularity curve."
     },
     {
       "id": "instrument:double-bass",
@@ -15089,36 +15035,30 @@
       "name": "Double bass",
       "family": "strings",
       "period": {
-        "start": 1550,
-        "precision": "circa"
+        "start": 1590,
+        "precision": "decade"
       },
-      "description": "The largest bowed string instrument, descended from the violone; the low foundation of the orchestra and, plucked, the walking-bass pulse of jazz, early rock and roll, and bluegrass.",
+      "description": "Largest and lowest-pitched bowed string instrument in the modern orchestra. Its form draws on both viol and violin-family traditions, and its precise lineage remains debated; it later became common in orchestral, jazz, blues, rockabilly, and bluegrass settings.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Double_bass"
+        "https://en.wikipedia.org/wiki/Double_bass",
+        "https://academicbassportal.com/10a/01ic/06_16/",
+        "https://www.vsl.co.at/academy/strings/double-bass",
+        "https://academic.oup.com/reference/62400/reference-article-abstract/571523994",
+        "https://www.carnegiehall.org/-/media/CarnegieHall/Files/PDFs/Education/Educators/Toolbox/Grade-5/Music-of-Mexico/Toolbox-Grade-5-Music-of-Mexico-Activity-2.pdf?la=en"
       ],
       "phases": [
         {
-          "start": 1550,
+          "start": 1590,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium"
         },
         {
           "start": 1700,
           "prominence": "established",
-          "confidence": "low"
-        },
-        {
-          "start": 1930,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1950,
-          "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. Orchestral establishment and the later prominence of plucked walking bass in jazz anchor these markers. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "An organology reference places the earliest specimens recognizably leading to the modern double bass in the late 16th century, around the 1590s, while cautioning that they differed from modern basses. Vienna Symphonic Library notes acceptance into opera orchestras around 1700. Removed unsupported 1930s “golden age” and 1950 marker."
     },
     {
       "id": "instrument:drum-kit",
@@ -15126,31 +15066,28 @@
       "name": "Drum kit",
       "family": "percussion",
       "period": {
-        "start": 1910,
-        "precision": "circa"
+        "start": 1890,
+        "precision": "decade"
       },
-      "description": "Bass drum pedals of the 1900s let one player cover several drums and cymbals; the \"trap kit\" of early jazz grew into the backbeat engine of swing, rock and roll, funk, Afrobeat, and metal.",
+      "description": "A coordinated set of drums, cymbals, pedals, and auxiliary percussion arranged so one player can perform multiple percussion parts. Bass-drum pedals enabled the late-19th-century trap set; the modern drum kit coalesced with early jazz in New Orleans.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Drum_kit"
+        "https://en.wikipedia.org/wiki/Drum_kit",
+        "https://music.si.edu/story/birth-drum-set",
+        "https://folkways.si.edu/the-birth-of-an-icon-learning-and-performing-the-origins-of-the-drum-set-and-early-jazz-drumming-in-new-orleans-louisiana/music/tools-for-teaching/smithsonian"
       ],
       "phases": [
         {
-          "start": 1910,
+          "start": 1890,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium"
         },
         {
-          "start": 1930,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1950,
+          "start": 1910,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "high"
         }
       ],
-      "phaseNote": "Confidence: low. The phases reflect consolidation of the multi-drum kit, the swing-era prominence, and its continuing central role in popular music. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Smithsonian Folkways traces trap sets to late-19th-century pedals and dates Ludwig & Ludwig’s pedal improvement to 1909; its drum-set history links early kit proliferation to New Orleans jazz in the early 20th century. These are development/use milestones, not a popularity ranking. Removed unsupported 1930 golden-age and 1950 establishment phases."
     },
     {
       "id": "instrument:electric-bass",
@@ -15200,30 +15137,23 @@
       "family": "strings",
       "period": {
         "start": 1932,
-        "precision": "circa"
+        "precision": "year"
       },
-      "description": "Guitar amplified through magnetic pickups, from Rickenbacker's 1932 \"Frying Pan\" to the Fender and Gibson solid bodies of the early 1950s; its volume and distortion defined electric blues, rock, and metal.",
+      "description": "A guitar whose pickups convert string vibration into an electrical signal for amplification. The Frying Pan was designed in 1931 and marketed by 1932; later solid-body models such as the Gibson Les Paul and Fender Stratocaster broadened the instrument’s role in popular music.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Electric_guitar"
+        "https://en.wikipedia.org/wiki/Electric_guitar",
+        "https://www.smithsonianmag.com/smithsonian-institution/electric-guitars-long-and-louder-strange-trip-180954193/",
+        "https://mim.org/guitars-that-changed-music-history/",
+        "https://invention.si.edu/invention-stories/invention-electric-guitar"
       ],
       "phases": [
         {
           "start": 1932,
           "prominence": "emerging",
-          "confidence": "low"
-        },
-        {
-          "start": 1950,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1960,
-          "prominence": "established",
-          "confidence": "low"
+          "confidence": "high"
         }
       ],
-      "phaseNote": "Confidence: low. The phases reflect early commercial models, postwar mass adoption, and continuing use across popular genres. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The 1931 design date and 1932 marketing date are distinct; 1932 is retained as the commercial launch marker. Smithsonian sources document influential solid-body models in the 1950s, but do not establish a measurable electric-guitar “golden age” or a 1960 establishment threshold. Removed those unsupported phases."
     },
     {
       "id": "instrument:electric-piano",
@@ -15231,32 +15161,37 @@
       "name": "Electric piano",
       "family": "keyboards",
       "period": {
-        "start": 1954,
-        "precision": "circa"
+        "start": 1931,
+        "precision": "year"
       },
-      "description": "Struck tines and reeds picked up electrically, from the Wurlitzer of the mid-1950s to the Fender Rhodes of 1965; its bell-like chords colour jazz fusion, soul, and neo-soul.",
+      "description": "Electromechanical keyboard instruments with struck strings, reeds, or tines captured by pickups. The Neo-Bechstein electroacoustic grand appeared in 1931; Wurlitzer launched a struck-reed model in 1954, and Fender Rhodes introduced its tine-based full-size piano in 1965. Rhodes became popular in 1970s rock, R&B, and jazz.",
       "sources": [
         "https://en.wikipedia.org/wiki/Electric_piano",
-        "https://en.wikipedia.org/wiki/Rhodes_piano"
+        "https://en.wikipedia.org/wiki/Rhodes_piano",
+        "https://www.bechstein.com/en/die-welt-von-bechstein/tradition/1930-1945/",
+        "https://www.kunstmuseum.nl/en/collection/neo-bechstein-electronic-grand-piano",
+        "https://collection.powerhouse.com.au/object/611665",
+        "https://music.si.edu/object-day/fender-rhodes-electric-piano",
+        "https://academic.oup.com/book/27042/chapter-abstract/196323611"
       ],
       "phases": [
         {
-          "start": 1954,
+          "start": 1931,
           "prominence": "emerging",
-          "confidence": "medium"
+          "confidence": "high"
         },
         {
-          "start": 1960,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1975,
+          "start": 1954,
           "prominence": "established",
+          "confidence": "medium"
+        },
+        {
+          "start": 1970,
+          "prominence": "golden-age",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. The markers follow mid-century adoption, the 1960s–70s Rhodes/Wurlitzer prominence, and later continued use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The graph’s 1954 origin omitted the 1931 Neo-Bechstein, an earlier electroacoustic piano. Museum/manufacturer sources distinguish this string-based instrument from Wurlitzer’s 1954 struck-reed piano and the 1965 Rhodes. Smithsonian describes Rhodes popularity in 1970s rock, R&B, and jazz; “golden age” is a qualitative description, not a measured market peak. Removed the unsupported 1975 phase."
     },
     {
       "id": "instrument:french-horn",
@@ -15267,7 +15202,7 @@
         "start": 1660,
         "precision": "circa"
       },
-      "description": "Coiled brass orchestral horn developed from European hunting horns; the familiar hoop form emerged in 17th-century France and was used in compositions by 1664.",
+      "description": "Brass instrument whose familiar hoop-shaped hunting-horn form emerged in 17th-century France. Horns appeared in Lully compositions by 1664, entered instrumental ensembles during the 18th century, and gained chromatic range with the widespread adoption of valves in the mid-19th century.",
       "sources": [
         "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1535",
         "https://artandmusic.yale.edu/handels-london/vauxhall-gardens/vauxhall-gallery6-trompe-de-chasse"
@@ -15280,16 +15215,11 @@
         },
         {
           "start": 1750,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1800,
           "prominence": "established",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. The outline reflects the horn’s orchestral development and continuing use; it does not imply a single global popularity peak. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Yale’s instrument-history essay supports the French hoop form and 1664 compositional use, followed by regular ensemble and solo use in the 18th century. Yale dates widespread valve-horn adoption to the mid-19th century, a technological change rather than evidence for a popularity peak. Removed the unsupported 1800 phase."
     },
     {
       "id": "instrument:guiro",
@@ -15300,31 +15230,23 @@
         "start": 1788,
         "precision": "circa"
       },
-      "description": "Scraped idiophone traditionally made from a ridged gourd and of pre-Columbian Taíno origin. A reported late-18th-century textual reference is uncertain; the date is a provisional documentation anchor, not the instrument’s origin.",
+      "description": "Scraped idiophone, commonly made from a ridged gourd and important in Caribbean music. Taíno associations are documented in Smithsonian educational material, while origins are described variously; the often-repeated 1788 date is not a secure first mention of the instrument itself.",
       "sources": [
         "https://www.si.edu/object/guiro%3Anmah_602447",
         "https://americanhistory.si.edu/collections/object/nmah_602444",
         "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/2688",
-        "https://dimultimusic.co.id/vst/research/guiro/"
+        "https://dimultimusic.co.id/vst/research/guiro/",
+        "https://www.metmuseum.org/art/collection/search/501300",
+        "https://folkways.si.edu/el-coqui/music/tools-for-teaching/smithsonian"
       ],
       "phases": [
         {
           "start": 1788,
-          "prominence": "established",
-          "confidence": "medium"
-        },
-        {
-          "start": 1900,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1950,
-          "prominence": "established",
-          "confidence": "medium"
+          "prominence": "emerging",
+          "confidence": "low"
         }
       ],
-      "phaseNote": "Confidence: medium. Long-standing regional use and later prominence in Latin dance ensembles anchor a cautious outline. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "One cautious documentary marker only: the 1788 reference is disputed as an instrument attestation. Removed broad “golden age” and later phases unsupported by evidence."
     },
     {
       "id": "instrument:guitar",
@@ -15335,29 +15257,25 @@
         "start": 1500,
         "precision": "circa"
       },
-      "description": "Waisted, fretted plucked instrument that grew from Renaissance four-course guitars into the six-string form standardised by Antonio de Torres in 19th-century Spain; the everyday accompaniment of blues, folk, country, and bossa nova.",
+      "description": "Fretted plucked instrument with a written history reaching back to Renaissance Europe. Course counts changed over time: four-course guitars preceded the five-course Spanish guitar, while six single strings spread from the late 18th and early 19th centuries; Antonio de Torres standardized key modern classical-guitar features from the 1850s.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Guitar",
-        "https://en.wikipedia.org/wiki/Classical_guitar"
+        "https://www.metmuseum.org/es/essays/the-spanish-guitar",
+        "https://www.metmuseum.org/fr/essays/the-guitar",
+        "https://www.metmuseum.org/art/collection/search/503932"
       ],
       "phases": [
         {
           "start": 1500,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium"
         },
         {
-          "start": 1800,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1950,
+          "start": 1850,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. The outline reflects the Renaissance form, 19th-century standardization and expansion, then broad modern use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Broad historical markers only: Renaissance written record and 19th-century concert-guitar standardization are documented. Removed unsupported “golden age” and generic 1950 phase; prominence labels are editorial, not quantitative."
     },
     {
       "id": "instrument:hammond-organ",
@@ -15405,31 +15323,32 @@
       "name": "Harmonica",
       "family": "winds",
       "period": {
-        "start": 1825,
-        "precision": "circa"
+        "start": 1820,
+        "precision": "decade"
       },
-      "description": "Pocket-sized free-reed instrument developed in 1820s Germany and mass-produced by Hohner; bent notes made it the wailing second voice of blues, folk, and country.",
+      "description": "Pocket-sized free-reed mouth organ whose commercial development began in 1820s Germany. Hohner began manufacturing in 1857; the harmonica later became prominent in blues and other American popular traditions.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Harmonica"
+        "https://www.smithsonianmag.com/arts-culture/history-harmonica-180977157/",
+        "https://www.smithsonianmag.com/history/industrial-espionage-and-cutthroat-competition-fueled-rise-humble-harmonica-180952733/"
       ],
       "phases": [
         {
-          "start": 1825,
+          "start": 1820,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium"
         },
         {
           "start": 1920,
           "prominence": "golden-age",
-          "confidence": "low"
+          "confidence": "medium"
         },
         {
-          "start": 1950,
+          "start": 1940,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. Blues recording and later folk, country, and popular use anchor the broad prominence shifts. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Smithsonian Magazine places the “golden age” between the World Wars and documents postwar blues and later folk/rock/soul use. These are editorial cultural markers, not measured popularity estimates."
     },
     {
       "id": "instrument:harmonium",
@@ -15437,32 +15356,29 @@
       "name": "Harmonium",
       "family": "keyboards",
       "period": {
-        "start": 1840,
-        "precision": "circa"
+        "start": 1842,
+        "precision": "exact"
       },
-      "description": "A free-reed keyboard instrument adapted in South Asia as a portable, hand-pumped accompaniment. It became a defining melodic support in qawwali ensembles and other vocal traditions.",
+      "description": "Free-reed keyboard instrument patented by Alexandre-François Debain in 1842. In South Asia, portable hand-pumped forms became vocal accompaniment, including in qawwali and Hindustani traditions; adoption and adaptation occurred over time.",
       "sources": [
+        "https://folkways.si.edu/indian-harmonium/music/playlist/smithsonian",
+        "https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian",
         "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1526",
-        "https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian"
+        "https://www.ocf.berkeley.edu/~mrahaim/that%20ban%28e%29%20of%20indian%20music.pdf"
       ],
       "phases": [
         {
-          "start": 1840,
+          "start": 1842,
           "prominence": "emerging",
-          "confidence": "medium"
+          "confidence": "high"
         },
         {
-          "start": 1880,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1950,
+          "start": 1900,
           "prominence": "established",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. The phases reflect invention in Europe and its subsequent adaptation and establishment in South Asian devotional and classical performance. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "1842 patent is supported by the cited collection synthesis. Smithsonian Folkways places vocal accompaniment in India in the 20th century; 1900 is a coarse adoption marker, not a measured popularity peak. Removed unsupported 1880 “golden age” and 1950 phase."
     },
     {
       "id": "instrument:harp",
@@ -15470,22 +15386,17 @@
       "name": "Harp",
       "family": "strings",
       "period": {
-        "start": 800,
+        "start": -3000,
         "precision": "circa"
       },
-      "description": "A plucked-string instrument with ancient forms; arched harps are attested in the ancient Near East, and frame harps appear in medieval Europe. The timeline anchor uses the documented European frame-harp form within the graph’s supported date range.",
+      "description": "A plucked-string instrument family with distinct regional forms. Archaeological and iconographic evidence places harps in the ancient Near East by the third millennium BCE; the earliest proposed dates are uncertain, and the European frame-harp tradition has its own later history.",
       "sources": [
         "https://collectionsdumusee.philharmoniedeparis.fr/histoires-d-instruments-la-harpe.aspx?_lg=fr-FR",
-        "https://www.dublincity.ie/ga/library/blog/irelands-harp-shaping-nations-identity-transcript"
+        "https://www.dublincity.ie/ga/library/blog/irelands-harp-shaping-nations-identity-transcript",
+        "https://www.iranicaonline.org/articles/harp/",
+        "https://www.metmuseum.org/art/collection/search/555866?searchField=All"
       ],
-      "phases": [
-        {
-          "start": 800,
-          "prominence": "established",
-          "confidence": "low"
-        }
-      ],
-      "phaseNote": "Confidence: low. A continuous phase is used because the node covers many distinct harp traditions with no defensible single global prominence curve. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "No single global prominence curve is defensible for a family of instruments spanning many regions and millennia."
     },
     {
       "id": "instrument:harpsichord",
@@ -15493,47 +15404,40 @@
       "name": "Harpsichord",
       "family": "keyboards",
       "period": {
-        "start": 1400,
+        "start": 1390,
         "precision": "circa"
       },
-      "description": "Keyboard instrument that plucks its strings with quills, first documented around 1400; the continuo heart of Baroque music before the piano displaced it, then revived in the 20th century.",
+      "description": "European keyboard instrument that plucks strings with quills. Earliest written reference dates to the late 14th century; surviving examples date from the 16th century. It served as a major continuo and solo instrument in 17th- and 18th-century Europe, declined as the piano spread, and revived from the late 19th century.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Harpsichord"
+        "https://en.wikipedia.org/wiki/Harpsichord",
+        "https://www.metmuseum.org/de/essays/musical-terms-for-the-seventeenth-and-eighteenth-centuries",
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Keyboard_Instruments_The_Metropolitan_Museum_of_Art_Bulletin_v_47_no_1_Summer_1989.pdf"
       ],
       "phases": [
         {
-          "start": 1400,
+          "start": 1390,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium"
         },
         {
           "start": 1600,
-          "prominence": "golden-age",
-          "confidence": "low"
+          "prominence": "established",
+          "confidence": "high"
         },
         {
-          "start": 1800,
+          "start": 1810,
           "prominence": "niche",
           "intensity": 0,
-          "note": "A broad historical marker: the piano had largely displaced the harpsichord by around 1800 in many European contexts; later revival and continued performance mean this is not a global end date.",
-          "sources": [
-            "https://stanfordmag.org/contents/perfect-for-the-parlor",
-            "https://online.ucpress.edu/jm/article-abstract/30/2/180/63530/The-Death-and-Second-Life-of-the-Harpsichord?redirectedFrom=PDF"
-          ],
-          "confidence": "low"
+          "confidence": "medium"
         },
         {
-          "start": 1903,
+          "start": 1880,
           "prominence": "established",
           "intensity": 0.35,
-          "confidence": "medium",
-          "note": "The Met documents the instrument’s twentieth-century revival in historically informed performance. The start is an approximate marker for that revival.",
-          "sources": [
-            "https://resources.metmuseum.org/resources/metpublications/pdf/Keyboard_Instruments_The_Metropolitan_Museum_of_Art_Bulletin_v_47_no_1_Summer_1989.pdf"
-          ]
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Illustrative editorial shading: the harpsichord peaks in the Baroque continuo era, is largely eclipsed by the piano around 1800, and returns with the 20th-century revival. Not a measured ranking."
+      "phaseNote": "The Met documents late-14th-century textual reference, 17th–18th-century centrality, decline by about 1810, and revival beginning in the 1880s. These are broad European historical phases, not measured global popularity."
     },
     {
       "id": "instrument:hichiriki",
@@ -15544,19 +15448,22 @@
         "start": 700,
         "precision": "circa"
       },
-      "description": "Small double-reed instrument with a strong, penetrating tone; a principal melody instrument in Japanese gagaku court ensembles.",
+      "description": "Small, penetrating double-reed pipe and one of the principal melodic instruments in Japanese gagaku. The 8th-century timeline anchor refers to gagaku’s court tradition, not a securely dated invention of the instrument.",
       "sources": [
         "https://asia.si.edu/explore-art-culture/audio/sukeyasu-shibas-gagaku-universe-the-reigakusha-ensemble-2/",
-        "https://folkways.si.edu/lesson/gagaku/imperial-court-music-of-japan"
+        "https://folkways.si.edu/lesson/gagaku/imperial-court-music-of-japan",
+        "https://www.kunaicho.go.jp/en/learn/culture/gagaku.html",
+        "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/column.html"
       ],
       "phases": [
         {
           "start": 700,
           "prominence": "established",
           "confidence": "medium",
-          "note": "Japan Arts Council documents this instrument in gagaku kangen, an ensemble tradition transmitted for over a millennium. The start approximates early court use.",
+          "note": "Gagaku sources document hichiriki in a court tradition transmitted for over a millennium; this is a tradition marker, not a popularity estimate.",
           "sources": [
-            "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/kangen/ka1.html"
+            "https://www.kunaicho.go.jp/en/learn/culture/gagaku.html",
+            "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/column.html"
           ]
         }
       ],
@@ -15568,31 +15475,23 @@
       "name": "Jinghu",
       "family": "strings",
       "period": {
-        "start": 1800,
-        "precision": "circa"
+        "start": 1780,
+        "precision": "century"
       },
-      "description": "Small, high-pitched bowed spike fiddle and principal melodic instrument of Peking opera; extant museum examples document its 19th-century form.",
+      "description": "Small, high-pitched bowed huqin with a bamboo neck and snakeskin soundboard, serving as lead melodic accompaniment in Beijing (Peking) opera. Its use in the ensemble is likely from the late 18th century; museum examples document later forms.",
       "sources": [
-        "https://www.metmuseum.org/art/collection/search/500667"
+        "https://www.metmuseum.org/art/collection/search/500667",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/641",
+        "https://www.cambridge.org/core/journals/yearbook-for-traditional-music/article/an-unorthodox-voice-the-rise-of-female-qinshi-their-challenges-and-their-pursuits/F3CDC26411AB995B3C2806F628B5224F"
       ],
       "phases": [
         {
-          "start": 1800,
+          "start": 1780,
           "prominence": "emerging",
-          "confidence": "low"
-        },
-        {
-          "start": 1900,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1950,
-          "prominence": "established",
           "confidence": "low"
         }
       ],
-      "phaseNote": "Confidence: low. The phases reflect its association with Peking opera and continuing use in that performance tradition. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Cautious emergence marker follows Grinnell’s qualified (“probably”) account; removed unsupported 1900/1950 popularity phases."
     },
     {
       "id": "instrument:koto",
@@ -15603,28 +15502,26 @@
         "start": 700,
         "precision": "circa"
       },
-      "description": "Long Japanese zither with movable bridges, introduced from Tang China around the 8th century; first heard in the gagaku court orchestra before developing its own solo and chamber repertoire.",
+      "description": "Long Japanese zither (sō) associated with court gagaku and later solo and chamber traditions. Sources trace its introduction from continental Asia in the 7th century; distinct solo repertoire developed in the 17th century, and the 17-string bass koto dates to the 20th century.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Koto_(instrument)"
+        "https://en.wikipedia.org/wiki/Koto_(instrument)",
+        "https://archive.asia.si.edu/podcasts/related/sawaikoto/progNotes.asp",
+        "https://folkways-media.si.edu/docs/folkways/artwork/UNES08016.pdf",
+        "https://www.kunaicho.go.jp/en/learn/culture/gagaku.html"
       ],
       "phases": [
         {
           "start": 700,
-          "prominence": "established",
-          "confidence": "low"
+          "prominence": "emerging",
+          "confidence": "medium"
         },
         {
           "start": 1600,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1900,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. The outline reflects court use, later development of solo and ensemble repertories, and continuing practice; exact boundaries are broad. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Markers refer to introduction and documented Edo-period solo/chamber repertoire, not popularity peaks."
     },
     {
       "id": "instrument:lute",
@@ -15632,43 +15529,29 @@
       "name": "Lute",
       "family": "strings",
       "period": {
-        "start": 1250,
+        "start": 1283,
         "precision": "circa"
       },
-      "description": "Pear-shaped, fretted plucked instrument that reached Europe from the Arabic oud through Moorish Spain and Sicily, becoming the leading solo and song-accompaniment instrument of Renaissance courts.",
+      "description": "Fretted plucked-string family with a bent-back pegbox and historical relation to the oud. European depictions and records attest lutes by the 13th–14th centuries; Renaissance forms expanded their courses and polyphonic solo repertoire. Regional lute-family histories differ.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Lute"
+        "https://en.wikipedia.org/wiki/Lute",
+        "https://www.metmuseum.org/de/essays/the-lute",
+        "https://www.metmuseum.org/de/perspectives/listening-to-paintings",
+        "https://www.metmuseum.org/art/collection/search/505741"
       ],
       "phases": [
         {
-          "start": 1250,
+          "start": 1283,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium"
         },
         {
           "start": 1500,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1650,
           "prominence": "established",
-          "confidence": "low"
-        },
-        {
-          "start": 1780,
-          "prominence": "niche",
-          "intensity": 0,
-          "confidence": "low"
-        },
-        {
-          "start": 1950,
-          "prominence": "established",
-          "intensity": 0.3,
-          "confidence": "low"
+          "confidence": "high"
         }
       ],
-      "phaseNote": "Illustrative editorial shading: the lute peaks in the 16th century, fades as keyboards and the guitar take over in the late 18th century, and returns through the 20th-century early-music revival. Not a measured ranking."
+      "phaseNote": "Met evidence supports European attestation and Renaissance prominence, not a single global rise/decline/revival curve. Removed unsupported 1650–1950 phases."
     },
     {
       "id": "instrument:mandolin",
@@ -15677,30 +15560,22 @@
       "family": "strings",
       "period": {
         "start": 1740,
-        "precision": "circa"
+        "precision": "decade"
       },
-      "description": "Small, steel-strung lute developed by the Vinaccia family of Naples in the mid-18th century; Bill Monroe made its chopped off-beat and fast tremolo central to bluegrass.",
+      "description": "Plucked instrument in the lute family that developed in 18th-century Italy from earlier mandolino forms. Neapolitan designs evolved in the 18th century; Bill Monroe later made mandolin a defining bluegrass instrument.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Mandolin"
+        "https://en.wikipedia.org/wiki/Mandolin",
+        "https://www.metmuseum.org/it/essays/the-guitar",
+        "https://www.metmuseum.org/art/collection/search/503390"
       ],
       "phases": [
         {
           "start": 1740,
           "prominence": "emerging",
           "confidence": "low"
-        },
-        {
-          "start": 1880,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1950,
-          "prominence": "established",
-          "confidence": "low"
         }
       ],
-      "phaseNote": "Confidence: low. The markers reflect its Neapolitan development, 19th-century popularity, and continuing folk and popular use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Removed unsupported 1880 “golden age” and 1950 phase. Current sources do not adequately support later timeline shading."
     },
     {
       "id": "instrument:maracas",
@@ -15711,20 +15586,22 @@
         "start": 1500,
         "precision": "circa"
       },
-      "description": "Seed-filled rattles with Indigenous American and African-diasporic histories; early colonial accounts document Taíno gourd rattles. The 16th-century timeline anchor records colonial-era documentation, not the instrument’s origin.",
+      "description": "Seed-filled rattles, often played in pairs, with Taíno associations documented in Smithsonian Folkways educational material. Present-day maracas also occur across diverse Latin American and African-diasporic traditions; the 16th-century graph date is a colonial-era documentation marker, not an origin date.",
       "sources": [
         "https://www.si.edu/object/maracas%3Anmah_602467",
         "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/2400",
-        "https://worldinstruments.org/instruments/maraca/"
+        "https://worldinstruments.org/instruments/maraca/",
+        "https://folkways-media.si.edu/docs/folkways/lessons/SFLN063_teacher_guide.pdf",
+        "https://americanindian.si.edu/nk360/pdf/Taino-Gallery-Guide-Spanish.pdf"
       ],
       "phases": [
         {
           "start": 1500,
-          "prominence": "established",
+          "prominence": "emerging",
           "confidence": "low"
         }
       ],
-      "phaseNote": "Confidence: low. A continuous phase avoids flattening distinct Indigenous and Afro-diasporic maraca traditions into one popularity curve. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Chronology marks early documentation only; removed unsupported generalized “established” phase."
     },
     {
       "id": "instrument:minimoog",
@@ -15769,32 +15646,26 @@
       "name": "Modular synthesizer",
       "family": "electronic",
       "period": {
-        "start": 1964,
-        "precision": "circa"
+        "start": 1963,
+        "precision": "year"
       },
-      "description": "Voltage-controlled oscillators, filters, and envelopes patched together by cable, introduced by Robert Moog and Don Buchla in 1964; the sound source of early electronic, krautrock, and progressive rock records.",
+      "description": "Voltage-controlled electronic sound modules connected by patch cables. Don Buchla developed the Buchla 100 from 1963; Robert Moog introduced his complete voltage-controlled modular synthesizer in 1964. These parallel systems shaped later electronic music, but 1970s popularity phases need stronger evidence.",
       "sources": [
         "https://en.wikipedia.org/wiki/Modular_synthesizer",
-        "https://en.wikipedia.org/wiki/Moog_synthesizer"
+        "https://en.wikipedia.org/wiki/Moog_synthesizer",
+        "https://www.invent.org/inductees/robert-moog",
+        "https://nmc.emuseum.com/objects/199/buchla-100",
+        "https://buchla.com/history/",
+        "https://moogfoundation.org/timeline/"
       ],
       "phases": [
         {
-          "start": 1964,
+          "start": 1963,
           "prominence": "emerging",
-          "confidence": "medium"
-        },
-        {
-          "start": 1970,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1980,
-          "prominence": "established",
-          "confidence": "medium"
+          "confidence": "high"
         }
       ],
-      "phaseNote": "Confidence: medium. The outline follows early systems, wider use in electronic and experimental music, and continued studio practice. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "National Inventors Hall of Fame and instrument-history sources support separate 1963/1964 developments. Removed unsupported 1970 “golden age” and 1980 phase."
     },
     {
       "id": "instrument:oboe",
@@ -15805,29 +15676,26 @@
         "start": 1650,
         "precision": "circa"
       },
-      "description": "Double-reed woodwind that developed from the shawm in mid-17th-century France and entered court and orchestral music.",
+      "description": "Double-reed woodwind developed in France from the treble shawm around the mid-17th century. Oboes appeared at the French court in Lully and Cambert works in the 1650s, then spread across Europe and England by the end of the century.",
       "sources": [
         "https://www.metmuseum.org/art/collection/search/501504",
-        "https://www.rijksmuseum.nl/en/collection/object/Oboe--ad2ef82562d457a461a2aec7e538218c"
+        "https://www.rijksmuseum.nl/en/collection/object/Oboe--ad2ef82562d457a461a2aec7e538218c",
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Watteau_Music_and_Theater.pdf",
+        "https://www.metmuseum.org/art/collection/search/503673"
       ],
       "phases": [
         {
           "start": 1650,
           "prominence": "emerging",
-          "confidence": "medium"
+          "confidence": "high"
         },
         {
-          "start": 1750,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1800,
+          "start": 1700,
           "prominence": "established",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. The phases reflect its mid-17th-century development, orchestral adoption, and continuing ensemble role. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Met history supports mid-century French development and rapid court/orchestral adoption. Removed unsourced 1750 “golden age” and generic 1800 phase."
     },
     {
       "id": "instrument:pedal-steel-guitar",
@@ -15838,7 +15706,7 @@
         "start": 1940,
         "precision": "circa"
       },
-      "description": "Horizontally played steel guitar with pedals that change string pitch. Its non-pedal predecessors developed in Hawai‘i; pedal-operated models emerged around 1940 and became a defining country instrument.",
+      "description": "Horizontally played steel guitar with pedals that alter string pitch. Pedal systems were designed by Alvino Rey and John Moore in 1939; the instrument gained country adoption after Paul Bigsby’s 1948 model, Speedy West’s recordings, and Bud Isaacs’s influential 1954 solo on “Slowly.”",
       "sources": [
         "https://music.si.edu/object-day/electric-console-steel-guitar-built-felton-w-williams-jr",
         "https://countrymusichalloffame.org/learn/family-and-community-resources/history-of-country-music-instruments",
@@ -15849,20 +15717,15 @@
         {
           "start": 1940,
           "prominence": "emerging",
-          "confidence": "medium"
+          "confidence": "high"
         },
         {
-          "start": 1950,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1970,
+          "start": 1954,
           "prominence": "established",
-          "confidence": "medium"
+          "confidence": "high"
         }
       ],
-      "phaseNote": "Confidence: medium. Country Hall of Fame and Smithsonian histories support the postwar adoption and continuing country use markers. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Country Music Hall of Fame documents design, adoption, recordings and the 1954 hit that drove wider uptake. Removed unsupported 1950 “golden age” and 1970 phase."
     },
     {
       "id": "instrument:piano",
@@ -15912,10 +15775,12 @@
         "start": 700,
         "precision": "circa"
       },
-      "description": "Keyboard instrument sounding air through pipes; the organ returned to western Europe in the 8th century and became central to church, court, and concert music. Organ traditions elsewhere have separate histories.",
+      "description": "Keyboard instrument sounding air through pipes, with ancient Greek hydraulis antecedents and extensive medieval and Renaissance European development. The graph’s 8th-century anchor refers to the organ’s return to western Europe, not invention; other organ traditions have separate histories.",
       "sources": [
         "https://organhistoricalsociety.org/OrganHistory/history/hist001.htm",
-        "https://www.metmuseum.org/ja/essays/renaissance-organs"
+        "https://www.metmuseum.org/ja/essays/renaissance-organs",
+        "https://www.metmuseum.org/de/essays/renaissance-organs",
+        "https://apnews.com/article/bf56eb5b5ce8b56dd773f638b8b372e7"
       ],
       "phases": [
         {
@@ -15925,16 +15790,11 @@
         },
         {
           "start": 1400,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1800,
           "prominence": "established",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. The long history and varied religious, civic, and concert roles do not support a single global peak; phases are broad markers only. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Dates refer to western European history; removed unsupported “golden age” and generic 1800 endpoint."
     },
     {
       "id": "instrument:quena",
@@ -15943,9 +15803,9 @@
       "family": "winds",
       "period": {
         "start": 1500,
-        "precision": "circa"
+        "precision": "century"
       },
-      "description": "An end-blown Andean flute with deep pre-Columbian roots; sixteenth-century accounts document Indigenous Andean flutes, while the quena remains a prominent voice in Andean folk and nueva canción.",
+      "description": "End-blown flute used in Andean musical traditions, including huayno and nueva canción. Sixteenth-century colonial accounts document Indigenous Andean flutes, but reviewed sources do not establish that the modern quena originated then.",
       "sources": [
         "https://guides.loc.gov/indigenous-andes-folklife/music",
         "https://folkways.si.edu/la-nueva-cancion-new-song-movement-south-america/latin-world-struggle-protest/music/article/smithsonian",
@@ -15954,21 +15814,16 @@
       "phases": [
         {
           "start": 1500,
-          "prominence": "established",
-          "confidence": "medium"
+          "prominence": "emerging",
+          "confidence": "low"
         },
         {
           "start": 1960,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1980,
           "prominence": "established",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. Longstanding Andean use continues; the later marker reflects renewed international visibility through folk revival movements. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Early marker refers to colonial documentation, not proven quena origin. Removed unsupported 1980 phase."
     },
     {
       "id": "instrument:recorder",
@@ -15977,42 +15832,32 @@
       "family": "winds",
       "period": {
         "start": 1350,
-        "precision": "circa"
+        "precision": "century"
       },
-      "description": "Duct flute with a thumb hole, documented in Europe from the 14th century; prized in Renaissance consorts and Baroque sonatas, it faded with the transverse flute and was revived in the 20th century.",
+      "description": "Duct flute with a rear thumbhole and seven front fingerholes. Surviving recorders and documentary evidence date to the 14th century; the instrument was used in western European art music through the Renaissance and Baroque, then revived in the 20th century.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Recorder_(musical_instrument)"
+        "https://en.wikipedia.org/wiki/Recorder_(musical_instrument)",
+        "https://www.metmuseum.org/essays/the-development-of-the-recorder",
+        "https://www.metmuseum.org/art/collection/search/506723"
       ],
       "phases": [
         {
           "start": 1350,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium"
         },
         {
           "start": 1500,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1700,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "high"
         },
         {
-          "start": 1760,
-          "prominence": "niche",
-          "intensity": 0,
-          "confidence": "low"
-        },
-        {
-          "start": 1920,
+          "start": 1880,
           "prominence": "established",
-          "intensity": 0.4,
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Illustrative editorial shading: the recorder peaks in Renaissance consorts, gives way to the transverse flute in the mid-18th century, and returns with the 20th-century early-music and school revival. Not a measured ranking."
+      "phaseNote": "Met documents 14th-century instruments, Renaissance/Baroque repertory, and modern revival. Removed unsupported 1760 decline and “golden age” phases."
     },
     {
       "id": "instrument:ryuteki",
@@ -16023,18 +15868,21 @@
         "start": 700,
         "precision": "circa"
       },
-      "description": "Side-blown bamboo flute used in Japanese gagaku; it carries a high melodic line in court dance and orchestral repertories.",
+      "description": "Side-blown Japanese flute used in gagaku, carrying a high melodic line alongside hichiriki and shō. Gagaku’s court ensemble formed through continental Asian and Japanese traditions; the 8th-century marker refers to this court-music history, not a securely dated ryūteki invention.",
       "sources": [
         "https://asia.si.edu/whats-on/blog/posts/from-court-to-concert-hall-the-origins-of-classical-music-in-japan/",
-        "https://folkways.si.edu/lesson/gagaku/imperial-court-music-of-japan"
+        "https://folkways.si.edu/lesson/gagaku/imperial-court-music-of-japan",
+        "https://www.kunaicho.go.jp/en/learn/culture/gagaku.html",
+        "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/kangen/ka1.html"
       ],
       "phases": [
         {
           "start": 700,
           "prominence": "established",
           "confidence": "medium",
-          "note": "Japan Arts Council documents this instrument in gagaku kangen, an ensemble tradition transmitted for over a millennium. The start approximates early court use.",
+          "note": "Gagaku court tradition provides historical context and continuity; phase does not imply popularity.",
           "sources": [
+            "https://www.kunaicho.go.jp/en/learn/culture/gagaku.html",
             "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/kangen/ka1.html"
           ]
         }
@@ -16047,32 +15895,31 @@
       "name": "Sampler",
       "family": "electronic",
       "period": {
-        "start": 1979,
-        "precision": "circa"
+        "start": 1963,
+        "precision": "decade"
       },
-      "description": "Instruments that record and replay sound, from the Fairlight CMI of 1979 to the Akai MPC of 1988; chopped breaks and loops built hip-hop, jungle, big beat, and trip-hop.",
+      "description": "Instrument category for recording and replaying sound. Tape-based instruments such as the Mellotron predate digital samplers; the Fairlight CMI, introduced in 1979, was an early influential polyphonic digital sampling synthesizer. Later devices such as the Akai MPC integrated sampling into beat production.",
       "sources": [
         "https://en.wikipedia.org/wiki/Sampler_(musical_instrument)",
-        "https://en.wikipedia.org/wiki/Akai_MPC"
+        "https://en.wikipedia.org/wiki/Akai_MPC",
+        "https://www.nfsa.gov.au/collection/item/sampling-sounds-fairlight-cmi",
+        "https://collections.museumsvictoria.com.au/items/1095198",
+        "https://www.ocopy.net/wp-content/uploads/2017/10/davies-hugh_a-history-of-sampling.pdf",
+        "https://era.ed.ac.uk/bitstream/1842/22943/2/Harkins2016.pdf"
       ],
       "phases": [
         {
-          "start": 1979,
+          "start": 1963,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium"
         },
         {
-          "start": 1988,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1995,
+          "start": 1979,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "high"
         }
       ],
-      "phaseNote": "Confidence: low. The markers follow early commercial digital sampling, hip-hop/electronic adoption, and continued production use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The timeline separates earlier tape-based sampling from the 1979 Fairlight milestone. Removed unsupported 1988 “golden age” and 1995 phase."
     },
     {
       "id": "instrument:sarod",
@@ -16080,32 +15927,30 @@
       "name": "Sarod",
       "family": "strings",
       "period": {
-        "start": 1820,
-        "precision": "circa"
+        "start": 1800,
+        "precision": "century"
       },
-      "description": "A fretless, plucked North Indian lute that took shape from the Afghan rubab in the early 19th century. Its sustained, sliding notes became a major voice in Hindustani instrumental music.",
+      "description": "Fretless North Indian plucked lute in the rubab family. Precise origins are debated; its modern metal fingerboard and strings took shape through 19th-century developments, with late-19th-century museum examples documenting later forms.",
       "sources": [
         "https://www.metmuseum.org/art/collection/search/500717",
-        "https://www.metmuseum.org/zh/essays/musical-instruments-of-the-indian-subcontinent"
+        "https://www.metmuseum.org/zh/essays/musical-instruments-of-the-indian-subcontinent",
+        "https://www.metmuseum.org/fr/essays/musical-instruments-of-the-indian-subcontinent",
+        "https://collectionsdumusee.philharmoniedeparis.fr/collectionsdumusee/doc/MUSEE/0158479/luth-a-touche-lisse-sarod?_lg=fr-FR",
+        "https://dipot.ulb.ac.be/dspace/bitstream/2013/336895/3/Weisser-Demoucron_POMA.pdf"
       ],
       "phases": [
         {
-          "start": 1820,
+          "start": 1800,
           "prominence": "emerging",
           "confidence": "medium"
         },
         {
-          "start": 1900,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1950,
+          "start": 1850,
           "prominence": "established",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. The phases reflect the modern instrument’s formation and its continuing role in Hindustani classical performance. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Separates early development hypotheses from documented form and performance; removed unsupported 1900 “golden age” and 1950 phase."
     },
     {
       "id": "instrument:saxophone",
@@ -16155,18 +16000,21 @@
         "start": 700,
         "precision": "circa"
       },
-      "description": "Japanese free-reed mouth organ, modeled on the Chinese sheng and central to the wind section of gagaku court music.",
+      "description": "Japanese free-reed mouth organ related to the Chinese sheng, used in gagaku for sustained chordal tones and harmonies. Its history is tied to continental Asian influences on Japanese court music; the 8th-century marker refers to gagaku context, not securely dated invention.",
       "sources": [
         "https://asia.si.edu/explore-art-culture/audio/sukeyasu-shibas-gagaku-universe-the-reigakusha-ensemble-2/",
-        "https://folkways.si.edu/lesson/gagaku/imperial-court-music-of-japan"
+        "https://folkways.si.edu/lesson/gagaku/imperial-court-music-of-japan",
+        "https://www.kunaicho.go.jp/en/learn/culture/gagaku.html",
+        "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/kangen/ka1.html"
       ],
       "phases": [
         {
           "start": 700,
           "prominence": "established",
           "confidence": "medium",
-          "note": "Japan Arts Council documents this instrument in gagaku kangen, an ensemble tradition transmitted for over a millennium. The start approximates early court use.",
+          "note": "Gagaku court context supports continuity, not a popularity estimate.",
           "sources": [
+            "https://www.kunaicho.go.jp/en/learn/culture/gagaku.html",
             "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/kangen/ka1.html"
           ]
         }
@@ -16179,31 +16027,29 @@
       "name": "Sitar",
       "family": "strings",
       "period": {
-        "start": 1700,
-        "precision": "circa"
+        "start": 1730,
+        "precision": "decade"
       },
-      "description": "Long-necked lute with movable frets and sympathetic strings that took shape in 18th-century North India; Ravi Shankar carried it to global audiences and into 1960s psychedelic rock.",
+      "description": "Long-necked plucked lute whose name and early forms are documented in 18th-century North India; its present form developed through later changes, including sympathetic strings added by the late 19th century. Ravi Shankar and George Harrison helped popularize it internationally in the 1960s.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Sitar"
+        "https://en.wikipedia.org/wiki/Sitar",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/631",
+        "https://www.metmuseum.org/fr/essays/musical-instruments-of-the-indian-subcontinent",
+        "https://escholarship.org/content/qt4gh1g3v3/qt4gh1g3v3_noSplash_c046ac58b5c831e956197d0971279407.pdf"
       ],
       "phases": [
         {
-          "start": 1700,
+          "start": 1730,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium"
         },
         {
-          "start": 1950,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1965,
+          "start": 1960,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. The outline reflects its modern North Indian form, mid-20th-century classical prominence, and international visibility after the 1960s. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Sources support 18th-century documentation and 1960s international popularization. Removed unsupported 1950 “golden age”; phases describe cultural visibility, not measured popularity."
     },
     {
       "id": "instrument:steelpan",
@@ -16211,31 +16057,30 @@
       "name": "Steelpan",
       "family": "percussion",
       "period": {
-        "start": 1939,
-        "precision": "circa"
+        "start": 1930,
+        "precision": "decade"
       },
-      "description": "Tuned percussion hammered from oil drums in Trinidad in the late 1930s and 1940s; steel bands became central to calypso and Carnival music.",
+      "description": "Tuned steel percussion developed in Trinidad and Tobago from Afro-Trinidadian Carnival traditions and experiments with metal containers in the 1930s–40s. Modern steelpan forms emerged by the mid-1940s; steelbands became central to Carnival and national musical life.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Steelpan"
+        "https://en.wikipedia.org/wiki/Steelpan",
+        "https://www.natt.gov.tt/node/184",
+        "https://folklife.si.edu/magazine/art-of-rebellion-tamboo-bamboo-trinidad",
+        "https://folkways.si.edu/celebrating-trinidadian-steelband/music/tools-for-teaching/smithsonian",
+        "https://www.nalis.gov.tt/resources/tt-content-guide/steelband/"
       ],
       "phases": [
         {
-          "start": 1939,
+          "start": 1930,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "high"
         },
         {
-          "start": 1950,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1960,
+          "start": 1940,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. The markers follow the instrument’s Trinidadian development, postwar steelband growth, and continuing cultural role. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Sources agree on development across the 1930s–40s, not one uncontested invention year. Removed unsupported 1950 “golden age” and 1960 phase."
     },
     {
       "id": "instrument:tabla",
@@ -16243,31 +16088,30 @@
       "name": "Tabla",
       "family": "percussion",
       "period": {
-        "start": 1700,
-        "precision": "circa"
+        "start": 1740,
+        "precision": "decade"
       },
-      "description": "Pair of tuned hand drums that emerged in 18th-century North India; its spoken syllables and complex cycles accompany Hindustani classical music and qawwali.",
+      "description": "Pair of tuned hand drums central to North Indian Hindustani music. The popular Amir Khusrau invention legend is not supported by contemporary evidence; pictorial evidence appears from about 1745, and the instrument’s form continued developing into the early 19th century.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Tabla"
+        "https://en.wikipedia.org/wiki/Tabla",
+        "https://sites.duke.edu/dumic/instruments/percussion/south-asia/tabla/",
+        "https://music.arts.uci.edu/abauer/148_2018/readings/Kippen_Hindustani_Tala_Garland.pdf",
+        "https://www.metmuseum.org/it/essays/musical-instruments-of-the-indian-subcontinent",
+        "https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian"
       ],
       "phases": [
         {
-          "start": 1700,
+          "start": 1740,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium"
         },
         {
-          "start": 1950,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1970,
+          "start": 1800,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. The outline reflects the instrument’s modern historical formation, later concert and recording prominence, and continuing classical use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Duke’s collection and musicological writing place documented emergence in the 18th century, with early-19th-century recognizable form. Removed unsupported 1950/1970 phases."
     },
     {
       "id": "instrument:tanpura",
@@ -16276,21 +16120,22 @@
       "family": "strings",
       "period": {
         "start": 1600,
-        "precision": "circa"
+        "precision": "century"
       },
-      "description": "Long-necked, fretless drone lute that sustains the tonic and related pitches through South Asian classical performance; a 17th-century treatise provides early textual documentation.",
+      "description": "Long-necked, fretless drone lute used to sustain a tonal reference in South Asian classical music. Sources place the recognizable tanpura around the 16th–17th centuries; earlier texts refer to related drone functions but do not clearly describe the modern form.",
       "sources": [
         "https://www.tandfonline.com/doi/full/10.1080/00856401.2022.2118480",
-        "https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian"
+        "https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian",
+        "https://sites.duke.edu/dumic/instruments/strings/southern-and-eastern-asia/tambura/"
       ],
       "phases": [
         {
           "start": 1600,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. A continuous phase reflects its sustaining role across South Asian classical performance, not a popularity curve. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Century-level date reflects uncertainty in the modern instrument’s early form; phase describes documented tradition, not popularity."
     },
     {
       "id": "instrument:tb-303",
@@ -16337,38 +16182,27 @@
       "name": "Theremin",
       "family": "electronic",
       "period": {
-        "start": 1920,
-        "precision": "circa"
+        "start": 1920
       },
-      "description": "Electronic instrument played without touch, invented by Leon Theremin in 1920; its eerie glissandi featured in concert works and 1950s sci-fi films, then in the occasional rock record.",
+      "description": "Early electronic instrument played without physical contact: the performer controls pitch and volume by moving their hands near two antennas. Invented by Leon Theremin in 1920; later associated with science-fiction film, avant-garde experimentation, and electronic music.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Theremin"
+        "https://en.wikipedia.org/wiki/Theremin",
+        "https://www.metmuseum.org/art/collection/search/739621",
+        "https://museumofmakingmusic.org/momm_artifact/rca-theremin/"
       ],
       "phases": [
         {
           "start": 1920,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "high"
         },
         {
           "start": 1945,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1965,
           "prominence": "niche",
-          "intensity": 0,
-          "confidence": "low"
-        },
-        {
-          "start": 1994,
-          "prominence": "established",
-          "intensity": 0.3,
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Illustrative editorial shading: the theremin peaks with mid-century film scores, fades as synthesizers spread, and returns with 1990s kit instruments. Not a measured ranking."
+      "phaseNote": "The 1920 marker records the documented invention, not measured popularity. The postwar phase is kept as niche: the cited history describes a brief postwar flurry followed by declining use among serious musicians; no quantitative popularity series supports a golden-age or 1990s-return curve."
     },
     {
       "id": "instrument:timbales",
@@ -16379,31 +16213,29 @@
         "start": 1900,
         "precision": "circa"
       },
-      "description": "A pair of shallow, single-headed metal drums adapted in Cuba from 19th-century kettledrums. Their portable form developed in charanga ensembles around the turn of the 20th century and became a signature sound in salsa and Latin jazz.",
+      "description": "Pair of shallow, single-headed Cuban metal drums that developed around the turn of the 20th century from orchestral kettledrum traditions. Timbales became integral to charanga ensembles and later Afro-Cuban and Latin music; by mid-century, performers such as Tito Puente brought them to wider audiences.",
       "sources": [
         "https://www.americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary",
         "https://www.pbs.org/buenavista/music/a_timbales.html",
         "https://www.pbs.org/buenavista/music/a_charanga.html",
-        "https://music.si.edu/object-day/tito-puentes-timbales"
+        "https://music.si.edu/object-day/tito-puentes-timbales",
+        "https://www.metmuseum.org/art/collection/search/503910",
+        "https://americanhistory.si.edu/press/releases/museum-moment-king-latin-jazz-lives-through-his-timbales",
+        "https://learninglab.si.edu/resources/view/163735"
       ],
       "phases": [
         {
           "start": 1900,
           "prominence": "emerging",
-          "confidence": "medium"
+          "confidence": "high"
         },
         {
-          "start": 1940,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1960,
+          "start": 1950,
           "prominence": "established",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. The markers follow Cuban charanga and later mambo/salsa ensemble visibility, with continuing use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Met documents Cuban development around 1900, charanga role, and spread in the U.S. Removed unsupported 1940 “golden age” and generic 1960 marker."
     },
     {
       "id": "instrument:tr-808",
@@ -16488,33 +16320,31 @@
       "name": "Transverse flute",
       "family": "winds",
       "period": {
-        "start": 1680,
-        "precision": "circa"
+        "start": 1681,
+        "precision": "year"
       },
-      "description": "Side-blown flute; this entry follows the European baroque traverso developed by Paris makers in the late 17th century. Earlier transverse flutes existed in Europe and other traditions.",
+      "description": "Side-blown flute with a much longer history across regions. This graph entry focuses on the European Baroque traverso: the transverse flute debuted in the French court ballet Le Triomphe de l’Amour in 1681, with Hotteterre-family designs shaping its late-17th-century form. The modern Boehm-system flute is a separate 19th-century redesign.",
       "sources": [
         "https://music.duke.edu/dumic/boehms-ghost",
         "https://www.metmuseum.org/art/collection/search/504256",
-        "https://caslabs.case.edu/medren/baroque-instruments/flute-baroque/"
+        "https://caslabs.case.edu/medren/baroque-instruments/flute-baroque/",
+        "https://resources.metmuseum.org/resources/metpublications/pdf/Watteau_Music_and_Theater.pdf",
+        "https://www.milanocastello.it/i-musei/museo-degli-strumenti-musicali/percorso-multimediale/il-flauto-traverso",
+        "https://cimcim.mini.icom.museum/wp-content/uploads/sites/7/2023/06/Perez-and-Le-Conte-2016-Making-wooden-musical-instruments.pdf"
       ],
       "phases": [
         {
-          "start": 1680,
+          "start": 1681,
           "prominence": "emerging",
           "confidence": "medium"
         },
         {
           "start": 1750,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1850,
           "prominence": "established",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. The phases follow the Baroque traverso, later orchestral standardization, and continuing performance use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Met material supports a French court debut in 1681 and later Baroque form. Removed “golden age” as unmeasured and 1850 endpoint that conflated traverso with Boehm flute."
     },
     {
       "id": "instrument:trombone",
@@ -16525,29 +16355,28 @@
         "start": 1450,
         "precision": "circa"
       },
-      "description": "Slide brass instrument that appeared in 15th-century Burgundy as the sackbut; it accompanied Renaissance church choirs and later supplied the tailgate and riff lines of jazz and ska horn sections.",
+      "description": "Slide brass instrument known in Renaissance Europe as sackbut. It emerged in the early-to-mid 15th century, with visual evidence around 1420 and surviving 16th-century instruments. The modern trombone retains the slide principle, though terminology and designs changed over time.",
       "sources": [
         "https://en.wikipedia.org/wiki/Trombone",
-        "https://en.wikipedia.org/wiki/Sackbut"
+        "https://en.wikipedia.org/wiki/Sackbut",
+        "https://www.bate.ox.ac.uk/trombones",
+        "https://www.khm.at/en/artworks/sackbut-tenor-85248",
+        "https://digital.library.unt.edu/ark:/67531/metadc330589/m2/1/high_res_d/1002714265-Mitchell.pdf",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/942"
       ],
       "phases": [
         {
           "start": 1450,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium"
         },
         {
-          "start": 1700,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1900,
+          "start": 1550,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. The outline reflects sackbut origins, later orchestral development, and continuing orchestral, jazz, and popular use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Sources support 15th-century emergence and Renaissance use; removed unsupported 1700 “golden age” and 1900 phase."
     },
     {
       "id": "instrument:trumpet",
@@ -16556,31 +16385,23 @@
       "family": "brass",
       "period": {
         "start": 1818,
-        "precision": "circa"
+        "precision": "year"
       },
-      "description": "Valves patented by Stölzel and Blühmel in 1818 let the old natural trumpet play every chromatic note; the result became the lead horn of jazz, from Louis Armstrong to Miles Davis.",
+      "description": "Brass instrument family with ancient natural trumpets and later valved forms. The 1818 joint patent by Heinrich Stölzel and Friedrich Blühmel covered early brass-instrument valves; valves enabled chromatic playing and transformed trumpet design over subsequent decades.",
       "sources": [
         "https://en.wikipedia.org/wiki/Trumpet",
-        "https://en.wikipedia.org/wiki/Brass_instrument_valve"
+        "https://en.wikipedia.org/wiki/Brass_instrument_valve",
+        "https://www.rijksmuseum.nl/en/collection/publication/Trumpets-and-other-high-brass-a-history-inspired-by-the-Joe-R-and-Joella-F-Utley-Collection--37c0f60089a2c9f3e66df32ec4942dc5",
+        "https://www.metmuseum.org/art/collection/search/"
       ],
       "phases": [
         {
           "start": 1818,
           "prominence": "emerging",
-          "confidence": "low"
-        },
-        {
-          "start": 1920,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1950,
-          "prominence": "established",
-          "confidence": "low"
+          "confidence": "high"
         }
       ],
-      "phaseNote": "Confidence: low. The outline follows the valved form, early-to-mid-20th-century jazz prominence, and continuing broad use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Rijksmuseum-based scholarship supports the 1818 patent. Removed unsupported 1920 “golden age” and generic 1950 phase; a broad trumpet node spans far older traditions."
     },
     {
       "id": "instrument:tuba",
@@ -16589,30 +16410,27 @@
       "family": "brass",
       "period": {
         "start": 1835,
-        "precision": "circa"
+        "precision": "year"
       },
-      "description": "Valved bass brass instrument patented in Prussia in 1835; the bass of the Romantic orchestra and brass bands, and the bass line of early New Orleans jazz before the string bass.",
+      "description": "Valved bass brass instrument patented in Prussia in 1835 by Wilhelm Wieprecht and Johann Moritz. The tuba developed as a low voice for 19th-century orchestras and brass bands; later New Orleans jazz also used bass tuba before string bass became common in many ensembles.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Tuba"
+        "https://en.wikipedia.org/wiki/Tuba",
+        "https://www.yamaha.com/en/musical_instrument_guide/tuba/structure/",
+        "https://www.vsl.co.at/academy/brass/bass-tuba"
       ],
       "phases": [
         {
           "start": 1835,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "high"
         },
         {
           "start": 1850,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1900,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. The outline follows its 19th-century invention, orchestral and band adoption, and continuing ensemble use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "1835 patent is supported by instrument-history references; removed unsupported 1850 “golden age” and 1900 phase."
     },
     {
       "id": "instrument:turntables",
@@ -16621,31 +16439,30 @@
       "family": "electronic",
       "period": {
         "start": 1973,
-        "precision": "circa"
+        "precision": "year"
       },
-      "description": "Record players used as instruments: DJ Kool Herc's extended breaks in 1973 Bronx parties led to scratching and beat juggling, the founding techniques of hip-hop DJing.",
+      "description": "Record players used creatively by DJs, especially through cueing, looping, scratching and manipulating recorded sound. Hip-hop’s Bronx park jams of the early 1970s, including DJ Kool Herc’s August 1973 party, used two turntables to extend instrumental breaks; turntablism then developed as a musical practice. Record players predate this use by decades.",
       "sources": [
         "https://en.wikipedia.org/wiki/Turntablism",
-        "https://en.wikipedia.org/wiki/Technics_SL-1200"
+        "https://en.wikipedia.org/wiki/Technics_SL-1200",
+        "https://www.smithsonianmag.com/arts-culture/they-were-just-having-back-school-party-apartment-rec-room-little-did-they-know-they-were-creating-hip-hip-180988814/",
+        "https://www.library.cornell.edu/about/news/display-celebrates-the-50th-anniversary-of-hip-hop/",
+        "https://americanhistory.si.edu/explore/stories/sazon-hip-hop",
+        "https://music.si.edu/story/grand-wizzard-theodores-turntables-smithsonian-year-music-object-day-august-13"
       ],
       "phases": [
         {
           "start": 1973,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "high"
         },
         {
           "start": 1980,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1990,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. The markers follow early hip-hop DJ techniques, later turntablism prominence, and continuing performance use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "1973 anchors documented hip-hop DJ practice, not invention of turntables. Removed unsupported 1980 “golden age” and 1990 generic phase."
     },
     {
       "id": "instrument:vibraphone",
@@ -16653,31 +16470,28 @@
       "name": "Vibraphone",
       "family": "percussion",
       "period": {
-        "start": 1921,
-        "precision": "circa"
+        "start": 1921
       },
-      "description": "Metal-barred mallet instrument with motor-driven resonator vibrato, introduced by the Leedy company in the early 1920s; jazz swing and bebop players made it a lead voice.",
+      "description": "Keyboard percussion instrument with metal bars, resonators, and motor-driven rotating discs that create a tremolo effect. Leedy refined and named its version in 1921; Lionel Hampton helped establish it in jazz from the late 1920s, with a 1930 recording debut.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Vibraphone"
+        "https://en.wikipedia.org/wiki/Vibraphone",
+        "https://www.in.gov/history/state-historical-markers/find-a-marker/find-historical-markers-by-county/indiana-historical-markers-by-county/leedy-manufacturing-company/",
+        "https://digital.library.unt.edu/ark:/67531/metadc9030/m2/1/high_res_d/dissertation.pdf",
+        "https://www.arts.gov/honors/jazz/lionel-hampton"
       ],
       "phases": [
         {
           "start": 1921,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "high"
         },
         {
           "start": 1930,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1950,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. Swing and bebop-era adoption anchor the main prominence marker; it remains in jazz and other ensemble settings. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "The 1921 marker reflects the Leedy instrument’s refined rotating-disc mechanism and naming, not a popularity peak. The 1930 marker reflects documented jazz adoption and Hampton’s recording debut; it does not claim an overall market “golden age.”"
     },
     {
       "id": "instrument:viola",
@@ -16688,29 +16502,20 @@
         "start": 1500,
         "precision": "circa"
       },
-      "description": "Middle-register bowed member of the violin family, documented in northern Italy in the first half of the 16th century and used in chamber and orchestral music.",
+      "description": "Middle-register bowed member of the violin family, documented in northern Italy in the first half of the 16th century. Sizes and roles varied; available evidence does not support a single popularity curve.",
       "sources": [
         "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1808",
-        "https://www.yamaha.com/en/musical_instrument_guide/violin/structure/structure004.html"
+        "https://www.yamaha.com/en/musical_instrument_guide/violin/structure/structure004.html",
+        "https://www.metmuseum.org/pt/essays/renaissance-violins"
       ],
       "phases": [
         {
           "start": 1500,
           "prominence": "emerging",
           "confidence": "medium"
-        },
-        {
-          "start": 1700,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1800,
-          "prominence": "established",
-          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. The phases reflect Renaissance-era development, orchestral/chamber consolidation, and continuing ensemble use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Kept the supported 16th-century documentation marker; removed unsupported 1700 golden-age and 1800 established transitions."
     },
     {
       "id": "instrument:violin",
@@ -16718,31 +16523,29 @@
       "name": "Violin",
       "family": "strings",
       "period": {
-        "start": 1530,
-        "precision": "circa"
+        "start": 1550,
+        "precision": "century"
       },
-      "description": "Four-string bowed instrument shaped by northern Italian makers from Andrea Amati to Stradivari; the core of the orchestra, and as the fiddle, a lead voice in bluegrass and country.",
+      "description": "Four-string, unfretted bowed instrument whose modern form took shape in mid-16th-century Cremona, especially in Andrea Amati’s workshop. It became central to European instrumental ensembles and developed distinct folk traditions such as the fiddle.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Violin"
+        "https://en.wikipedia.org/wiki/Violin",
+        "https://www.metmuseum.org/de/essays/violin-makers-nicolo-amati-1596-1684-and-antonio-stradivari-1644-1737",
+        "https://www.metmuseum.org/pt/essays/renaissance-violins",
+        "https://www.metmuseum.org/de/perspectives/laurence-witten-king-cello"
       ],
       "phases": [
         {
-          "start": 1530,
+          "start": 1550,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "high"
         },
         {
           "start": 1600,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1800,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: low. The outline reflects Renaissance form development, Baroque/classical orchestral prominence, and continuing global use. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Met sources support Amati’s mid-16th-century form and 17th-century ensemble adoption. Removed unsupported “golden age” and generic 1800 phase."
     },
     {
       "id": "label:4ad",
@@ -22407,32 +22210,30 @@
       "name": "Algerian mandole",
       "family": "strings",
       "period": {
-        "start": 1932,
+        "start": 1935,
         "precision": "year"
       },
-      "description": "A large, fretted plucked instrument used in Algerian chaâbi. Its Algerian form was developed in the 1930s with input from El Anka and luthier Jean Bélido.",
+      "description": "Large-bodied, long-necked plucked instrument central to Algerian chaâbi. Singer El Hadj M’hamed El Anka later recalled drawing its design in 1935 and giving it to luthier Jean Bélido; this is a reported design date, while some secondary accounts give different build dates.",
       "sources": [
         "https://en.wikipedia.org/wiki/Algerian_mandole",
-        "https://en.wikipedia.org/wiki/El_Hadj_M%27Hamed_El_Anka"
+        "https://en.wikipedia.org/wiki/El_Hadj_M%27Hamed_El_Anka",
+        "https://lechodalgerie.dz/musique-chaabi-el-hadj-mhamed-el-anka-une-institution-musicale/",
+        "https://www.sibetrans.com/etno/public/docs/cuadernos-de-etnomusicologia-2.pdf",
+        "https://www.depechedekabylie.com/29971-le-genie-de-son-siecle/"
       ],
       "phases": [
         {
-          "start": 1932,
+          "start": 1935,
           "prominence": "emerging",
           "confidence": "medium"
         },
         {
           "start": 1940,
-          "prominence": "golden-age",
-          "confidence": "medium"
-        },
-        {
-          "start": 1960,
           "prominence": "established",
           "confidence": "medium"
         }
       ],
-      "phaseNote": "Confidence: medium. The dates follow its documented 1930s development and establishment in Algerian chaâbi performance. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "A 2022 Algerian press history quotes El Anka’s recollection of a 1935 design. Removed exact 1932 claim and unsupported “golden age”/1960 phases."
     },
     {
       "id": "track:didi-khaled",

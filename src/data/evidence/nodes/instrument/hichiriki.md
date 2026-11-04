@@ -2,18 +2,16 @@
 
 Graph ID `instrument:hichiriki`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · role and continuity corroborated
 
-**Graph period** · 700 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Small double-reed instrument with a strong, penetrating tone; a principal melody instrument in Japanese gagaku court ensembles.
+## Sources checked
 
-**Graph citations** · [1](<https://asia.si.edu/explore-art-culture/audio/sukeyasu-shibas-gagaku-universe-the-reigakusha-ensemble-2/>), [2](<https://folkways.si.edu/lesson/gagaku/imperial-court-music-of-japan>)
+- [Imperial Household Agency, Gagaku](https://www.kunaicho.go.jp/en/learn/culture/gagaku.html) — Lists hichiriki among gagaku winds and explains court tradition transmission.
+- [Japan Arts Council, Gagaku instruments](https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/column.html) — States hichiriki tradition continued for more than a thousand years.
+- [Smithsonian Folkways, Imperial Court Music of Japan](https://folkways.si.edu/lesson/gagaku/imperial-court-music-of-japan) — Independent educational source on instrument and ensemble context.
 
-**Graph phase rationale** · Confidence: low. A continuous phase reflects its sustained role in gagaku; the graph’s date is a broad timeline anchor, not a claimed invention date. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
-
-- 700 established · medium · Japan Arts Council documents this instrument in gagaku kangen, an ensemble tradition transmitted for over a millennium. The start approximates early court use. · [1](https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/kangen/ka1.html)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Institutional Japanese and Smithsonian sources support the role and continuity. The timeline is about broader gagaku history, not instrument invention.

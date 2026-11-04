@@ -2,20 +2,21 @@
 
 Graph ID `instrument:modular-synthesizer`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · 1960s origins supported; popularity phases removed
 
-**Graph period** · 1964 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Voltage-controlled oscillators, filters, and envelopes patched together by cable, introduced by Robert Moog and Don Buchla in 1964; the sound source of early electronic, krautrock, and progressive rock records.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Modular_synthesizer>), [2](<https://en.wikipedia.org/wiki/Moog_synthesizer>)
+- [National Inventors Hall of Fame, Robert Moog](https://www.invent.org/inductees/robert-moog) — States Moog introduced first complete voltage-controlled modular synthesizer in 1964.
+- [National Music Centre, Buchla 100](https://nmc.emuseum.com/objects/199/buchla-100) — Collection record documents Buchla 100 as an early commercial voltage-controlled modular system.
+- [Buchla, History](https://buchla.com/history/) — Manufacturer history dates Buchla modular conception/work to 1963.
+- [Bob Moog Foundation, synthesis timeline](https://moogfoundation.org/timeline/) — Timeline lists Moog and Buchla systems in 1964.
 
-**Graph phase rationale** · Confidence: medium. The outline follows early systems, wider use in electronic and experimental music, and continued studio practice. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+Entry now recognizes parallel Moog and Buchla development rather than one 1964 invention attribution. Peak/popularity labels removed without sales or use evidence.
 
-- 1964 emerging · medium · No phase note · None recorded
-- 1970 golden-age · medium · No phase note · None recorded
-- 1980 established · medium · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Exact order/definition of “first modular synth” varies by how prototypes and complete commercial systems are counted.

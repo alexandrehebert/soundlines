@@ -2,20 +2,20 @@
 
 Graph ID `instrument:dobro`
 
-**Review status** · Pending source review
+**Review status** · Reviewed; company origin distinguished from surviving-object date
 
-**Graph period** · 1928 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Trade-name resonator guitar introduced by the Dopyera brothers’ Dobro Manufacturing Company in 1928; its amplified projection made it influential in country and bluegrass playing.
+## Sources checked
 
-**Graph citations** · [1](<https://americanhistory.si.edu/collections/object/nmah_1067396>)
+- [National Museum of American History: Dobro Guitar](https://americanhistory.si.edu/collections/object/nmah_1067396) — Smithsonian search extract dates a Dobro-made resonator guitar to c.1933–37 and says the Dobro name originated in 1928 when the brothers formed the company; direct page returned 500.
+- [Canada Science and Technology Museum publication: New Worlds of Sound—Electronics and the Evolution of Music in Canada](https://publications.gc.ca/collections/collection_2018/mstc-cstm/NM33-1-19-eng.pdf) — Museum history explains the resonator’s acoustic-volume purpose, distinguishes the earlier National instruments from Dobro’s single-cone design, and describes the Dopyeras’ Dobro company and 1934 merger.
+- [Smithsonian National Museum of American History: Dobro Guitar](https://americanhistory.si.edu/collections/object/nmah_1067396) — The graph’s existing citation is the Smithsonian catalog record; its relevant extract was checked above.
 
-**Graph phase rationale** · Confidence: low. The 1928 commercial form and its subsequent country and bluegrass use anchor the broad phases. Editorial shading only, not a measured popularity ranking; the transition years are approximate.
+## Assessment
 
-## Phases
+The 1928 claim refers to company/name formation, while the cited surviving instrument dates to the 1930s. The Canadian museum history supports the resonator design context and Dobro’s single-cone form. Popularity phases were unsupported, so only the documented commercial emergence remains.
 
-- 1928 emerging · low · The Dobro Manufacturing Company was formed in 1928. The Smithsonian’s surviving Dobro instrument record dates the object later (1933–37), so this phase marks the commercial form’s company history, not a dated surviving specimen. · [1](https://www.si.edu/object/dobro-guitar%3Anmah_1067396)
-- 1935 golden-age · low · No phase note · None recorded
-- 1950 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Smithsonian page returned 500 on direct access. The company’s exact formation date varies across secondary histories (1928 vs. 1929); keep the graph’s year at 1928 with high confidence only for the Smithsonian’s account of name origin.
