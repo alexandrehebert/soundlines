@@ -1,0 +1,11 @@
+# My Bloody Valentine → Dream pop
+
+Graph ID `key:my-bloody-valentine-dream-pop`
+
+**Review status** · Pending source review
+
+**Relationship** · key_artist_of · high
+
+**Graph citations** · [1](<https://www.allmusic.com/genre/dream-pop-ma0000012303>), [2](<https://academic.oup.com/ml/article-abstract/98/4/601/4828180>), [3](<https://www.allmusic.com/artist/my-bloody-valentine-mn0000514219>)
+
+**Citation retrieval** · 0 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.

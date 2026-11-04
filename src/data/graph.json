@@ -263,12 +263,17 @@
       "name": "Aníbal Troilo",
       "kind": "person",
       "period": {
-        "start": 1930,
+        "start": 1925,
         "end": 1975,
-        "precision": "decade"
+        "precision": "circa"
       },
       "sources": [
-        "https://www.allmusic.com/style/tango-ma0000002891"
+        "https://www.allmusic.com/style/tango-ma0000002891",
+        "https://www.argentina.gob.ar/node/465370",
+        "https://www.argentina.gob.ar/noticias/110-anos-del-nacimiento-de-anibal-troilo-un-emblema-de-la-musica-ciudadana",
+        "https://buenosaireshistoria.org/fotografias/anibal-carmelo-troilo/",
+        "https://www.todotango.com/historias/cronica/444/Orquesta-Tipica-Anibal-Troilo",
+        "https://www.serargentino.com/argentina/biografias/anibal-troilo-pa-que-bailen-los-muchachos"
       ]
     },
     {
@@ -461,12 +466,15 @@
       "name": "Astor Piazzolla",
       "kind": "person",
       "period": {
-        "start": 1930,
-        "end": 1992,
-        "precision": "decade"
+        "start": 1939,
+        "end": 1990,
+        "precision": "circa"
       },
       "sources": [
-        "https://www.allmusic.com/style/tango-ma0000002891"
+        "https://www.allmusic.com/style/tango-ma0000002891",
+        "https://www.argentina.gob.ar/noticias/astor-piazzolla-el-tango-como-lenguaje-universal",
+        "https://www.argentina.gob.ar/noticias/110-anos-del-nacimiento-de-anibal-troilo-un-emblema-de-la-musica-ciudadana",
+        "https://astorpiazzolla.com/es/a-puro-piazzolla/"
       ]
     },
     {
@@ -829,12 +837,16 @@
       "kind": "person",
       "period": {
         "start": 1930,
-        "precision": "decade",
-        "end": 1959
+        "end": 1959,
+        "precision": "circa"
       },
       "sources": [
-        "https://www.allmusic.com/style/vocal-jazz-ma0000002948"
-      ]
+        "https://www.allmusic.com/style/vocal-jazz-ma0000002948",
+        "https://billieholiday.com/billie-holiday-timeline/",
+        "https://www.loc.gov/item/today-in-history/april-07",
+        "https://billieholiday.com/bio/"
+      ],
+      "description": "Jazz singer whose rhythmic phrasing and expressive interpretation reshaped popular-song performance. Began singing in Harlem clubs around 1930–31 and recorded from 1933 through 1959."
     },
     {
       "id": "artist:black-sabbath",
@@ -1137,7 +1149,9 @@
         "precision": "decade"
       },
       "sources": [
-        "https://www.allmusic.com/style/tango-ma0000002891"
+        "https://www.allmusic.com/style/tango-ma0000002891",
+        "https://www.argentina.gob.ar/noticias/carlos-gardel-memoria-y-vigencia-del-zorzal-criollo",
+        "https://media.unesco.org/sites/default/files/webform/mow001/uruguay_records_carlos_gardel.pdf"
       ]
     },
     {
@@ -1214,12 +1228,15 @@
       "name": "Charlie Parker",
       "kind": "person",
       "period": {
-        "start": 1937,
-        "end": 1955
+        "start": 1935,
+        "end": 1955,
+        "precision": "year"
       },
       "description": "Alto saxophonist whose melodic and harmonic innovations were central to bebop.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Charlie_Parker"
+        "https://en.wikipedia.org/wiki/Charlie_Parker",
+        "https://historicmissourians.shsmo.org/charlie-parker/",
+        "https://www.nps.gov/people/charlie-parker.htm"
       ]
     },
     {
@@ -1875,7 +1892,9 @@
       },
       "description": "Trumpeter and composer central to bebop and the development of Afro-Cuban jazz.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Dizzy_Gillespie"
+        "https://en.wikipedia.org/wiki/Dizzy_Gillespie",
+        "https://collections.library.vanderbilt.edu/repositories/2/resources/2009",
+        "https://www.arts.gov/honors/jazz/john-birks-dizzy-gillespie"
       ]
     },
     {
@@ -2175,11 +2194,14 @@
       "kind": "person",
       "period": {
         "start": 1914,
-        "end": 1974
+        "end": 1974,
+        "precision": "circa"
       },
       "description": "Pianist, bandleader, and composer whose orchestra expanded jazz's expressive and structural possibilities.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Duke_Ellington"
+        "https://en.wikipedia.org/wiki/Duke_Ellington",
+        "https://assets.cambridge.org/97805218/81197/frontmatter/9780521881197_frontmatter.pdf",
+        "https://www.decfa.org/aboutduke"
       ]
     },
     {
@@ -2255,12 +2277,16 @@
       "kind": "person",
       "period": {
         "start": 1934,
-        "precision": "decade",
-        "end": 1995
+        "end": 1992,
+        "precision": "circa"
       },
       "sources": [
-        "https://www.allmusic.com/style/vocal-jazz-ma0000002948"
-      ]
+        "https://www.allmusic.com/style/vocal-jazz-ma0000002948",
+        "https://www.ellafitzgerald.com/biography/",
+        "https://www.arts.gov/honors/jazz/ella-fitzgerald",
+        "https://findingaids.loc.gov/repositories/15/resources/1237"
+      ],
+      "description": "Jazz vocalist celebrated for scat improvisation and interpretations of the American songbook. Her career began with the 1934 Apollo amateur contest; the Library of Congress dates her final performance to December 1992."
     },
     {
       "id": "artist:elvis-presley",
@@ -3355,7 +3381,9 @@
       },
       "description": "Saxophonist whose work moved from bebop and hard bop into modal and freer improvisation.",
       "sources": [
-        "https://en.wikipedia.org/wiki/John_Coltrane"
+        "https://en.wikipedia.org/wiki/John_Coltrane",
+        "https://www.johncoltrane.com/biography",
+        "https://northcarolinamusichalloffame.org/inductee-item/john-coltrane/"
       ]
     },
     {
@@ -4042,12 +4070,15 @@
       "name": "Louis Armstrong",
       "kind": "person",
       "period": {
-        "start": 1919,
-        "end": 1971
+        "start": 1914,
+        "end": 1971,
+        "precision": "circa"
       },
       "description": "New Orleans trumpeter and singer whose improvisation helped make the jazz soloist central to the music.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Louis_Armstrong"
+        "https://en.wikipedia.org/wiki/Louis_Armstrong",
+        "https://www.louisarmstronghouse.org/biography/",
+        "https://prologue.blogs.archives.gov/2024/02/14/louis-armstrong-harlem-renaissance-pioneer/"
       ]
     },
     {
@@ -4442,12 +4473,15 @@
       "name": "Miles Davis",
       "kind": "person",
       "period": {
-        "start": 1944,
-        "end": 1991
+        "start": 1942,
+        "end": 1991,
+        "precision": "circa"
       },
       "description": "Trumpeter and bandleader whose changing ensembles helped shape cool jazz, modal jazz, and electric fusion.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Miles_Davis"
+        "https://en.wikipedia.org/wiki/Miles_Davis",
+        "https://www.arts.gov/honors/jazz/miles-davis",
+        "https://www.milesdavis.com/timeline/"
       ]
     },
     {
@@ -4874,11 +4908,14 @@
       "kind": "person",
       "period": {
         "start": 1944,
-        "end": 2014
+        "end": 2014,
+        "precision": "circa"
       },
       "description": "Saxophonist and composer whose late-1950s ensembles helped establish free jazz.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Ornette_Coleman"
+        "https://en.wikipedia.org/wiki/Ornette_Coleman",
+        "https://www.arts.gov/honors/jazz/ornette-coleman",
+        "https://www.robertchristgau.com/xg/music/coleman-14.php"
       ]
     },
     {
@@ -6580,12 +6617,15 @@
       "name": "Thelonious Monk",
       "kind": "person",
       "period": {
-        "start": 1941,
-        "end": 1976
+        "start": 1935,
+        "end": 1976,
+        "precision": "circa"
       },
       "description": "Pianist and composer with a distinctive rhythmic and harmonic language, associated with the emergence of bebop.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Thelonious_Monk"
+        "https://en.wikipedia.org/wiki/Thelonious_Monk",
+        "https://www.theloniousmonkmusic.com/bio/",
+        "https://nac-cna.ca/en/bio/thelonious-monk"
       ]
     },
     {
@@ -7254,9 +7294,10 @@
         "end": 1887,
         "precision": "year"
       },
-      "description": "Emile Berliner’s gramophone patent introduced lateral-groove disc recording, a format that later helped make mass-produced records and playback commercially viable.",
+      "description": "Emile Berliner patented a lateral-groove recording system in 1887. He developed it into a flat-disc gramophone that later made commercially successful disc records possible.",
       "sources": [
-        "https://www.loc.gov/collections/emile-berliner/articles-and-essays/gramophone/"
+        "https://www.loc.gov/collections/emile-berliner/articles-and-essays/gramophone/",
+        "https://americanhistory.si.edu/explore/exhibitions/americas-listening/online/berliners-gramophone"
       ],
       "significance": "notable"
     },
@@ -7350,13 +7391,15 @@
       "name": "Compact discs enter the consumer market",
       "category": "technology",
       "period": {
-        "start": 1983,
-        "end": 1983,
+        "start": 1982,
+        "end": 1982,
         "precision": "year"
       },
-      "description": "Philips and Sony marketed the compact disc and player in 1983, establishing digital audio as a mass-market recorded-music format over the following decade.",
+      "description": "Sony launched the CDP-101 and CBS/Sony released an initial catalog of compact discs in Japan in October 1982. The format, jointly developed with Philips, reached additional markets in 1983.",
       "sources": [
-        "https://www.loc.gov/static/managed-content/uploads/sites/6/2017/02/recorded_sound_timeline-2013.pdf"
+        "https://www.loc.gov/static/managed-content/uploads/sites/6/2017/02/recorded_sound_timeline-2013.pdf",
+        "https://www.sony.com/en/SonyInfo/IR/library/ar/8ido18000005fmhn-att/1982-E.pdf",
+        "https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-07.html"
       ],
       "significance": "notable"
     },
@@ -7847,9 +7890,10 @@
         "end": 1948,
         "precision": "year"
       },
-      "description": "Columbia Records introduced the 12-inch 33⅓ rpm long-playing record in 1948. Its longer playing time changed album programming and became a major format for jazz, classical, and popular music.",
+      "description": "Columbia Records introduced its 33⅓ rpm microgroove LP in 1948 in 10-inch and 12-inch editions. The format’s longer playing time let labels fit complete works and longer programs on fewer discs.",
       "sources": [
-        "https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/"
+        "https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/",
+        "https://blogs.loc.gov/now-see-hear/2019/04/inside-the-archival-box-the-first-long-playing-disc/"
       ],
       "significance": "landmark"
     },
@@ -8142,10 +8186,11 @@
         "end": 1877,
         "precision": "year"
       },
-      "description": "Thomas Edison’s 1877 tinfoil phonograph could both record and reproduce sound, establishing a practical path toward recorded music in homes and public venues.",
+      "description": "Thomas Edison’s 1877 tinfoil phonograph recorded and reproduced sound. Later wax-cylinder machines made recorded music practical for commercial distribution.",
       "sources": [
         "https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/",
-        "https://www.nps.gov/edis/learn/historyculture/phonograph.htm"
+        "https://www.nps.gov/edis/learn/historyculture/phonograph.htm",
+        "https://www.si.edu/newsdesk/factsheets/early-sound-recording-collection-and-sound-recovery-project"
       ],
       "significance": "landmark"
     },
@@ -8307,10 +8352,11 @@
         "end": 1979,
         "precision": "year"
       },
-      "description": "Sony launched the TPS-L2 Walkman in 1979, making personal portable cassette listening a mass-market product and changing where and how people listened to recorded music.",
+      "description": "Sony launched the TPS-L2 portable cassette player in Japan in July 1979. It reached the United States in June 1980 under the Sound-About name and helped popularize portable headphone listening.",
       "sources": [
         "https://www.sony.com/en/SonyInfo/CorporateInfo/History/sonyhistory/2-01.html",
-        "https://www.sony.com/en/SonyInfo/News/Press/201907/19-067E/"
+        "https://www.sony.com/en/SonyInfo/News/Press/201907/19-067E/",
+        "https://music.si.edu/story/smithsonian-collections-object-sony-tps-l2-%E2%80%9Cwalkman%E2%80%9D-cassette-player-national-museum-american"
       ],
       "significance": "notable"
     },
@@ -8353,23 +8399,39 @@
       "name": "Acid house",
       "family": "house",
       "period": {
-        "start": 1986,
-        "end": 1990,
-        "precision": "decade"
+        "start": 1985,
+        "end": null,
+        "precision": "circa"
       },
       "description": "A house style in which the resonant filter sweeps of the Roland TB-303 became a defining sound; Phuture’s “Acid Tracks” was a pivotal early recording. Chicago records reached the UK through DJs and clubs, where acid house helped drive a distinct late-1980s rave movement.",
       "sources": [
         "https://en.wikipedia.org/wiki/Acid_house",
         "https://britishculturearchive.co.uk/acid-house/",
-        "https://academic.oup.com/tcbh/article/34/2/299/7040380"
+        "https://academic.oup.com/tcbh/article/34/2/299/7040380",
+        "https://articles.roland.com/lifetime-achievement-dj-pierre-and-phuture/",
+        "https://djmag.com/content/game-changers-phuture-acid-tracks"
       ],
       "phases": [
         {
-          "start": 1986,
-          "prominence": "golden-age"
+          "start": 1985,
+          "prominence": "emerging",
+          "confidence": "medium",
+          "note": "Ron Hardy received an early tape of Phuture’s recording in Chicago.",
+          "sources": [
+            "https://articles.roland.com/lifetime-achievement-dj-pierre-and-phuture/"
+          ]
+        },
+        {
+          "start": 1988,
+          "prominence": "established",
+          "confidence": "medium",
+          "note": "By summer 1988, acid house had spread through British clubs and warehouses.",
+          "sources": [
+            "https://britishculturearchive.co.uk/acid-house/"
+          ]
         }
       ],
-      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
+      "phaseNote": "Medium confidence for both editorial anchors. The first tracks Chicago tape circulation and the second tracks a documented British club wave. The 1987 Trax release falls between them."
     },
     {
       "id": "genre:acid-jazz",
@@ -8805,22 +8867,24 @@
         "precision": "circa",
         "end": null
       },
-      "description": "Songs of Bengal’s Baul communities, joining poetry, melody and embodied spiritual practice. The tradition is transmitted through teacher-disciple lineages and varied local repertoires.",
+      "description": "Songs of Bengal’s Baul communities, joining poetry, melody and embodied spiritual practice. Transmission follows teacher-disciple lineages and varied local repertoires. The timeline marks a nineteenth-century documentary window, not the beginning of the older tradition.",
       "sources": [
         "https://ich.unesco.org/en/RL/baul-songs-00107",
-        "https://www.parvathybaul.com/about"
+        "https://www.parvathybaul.com/about",
+        "https://cultureincrisis.org/projects/songs-of-the-old-madmen-recovering-baul-songs-from-the-note-books-of-19th-and-20th-century-bengali-saint-composers"
       ],
       "phases": [
         {
           "start": 1800,
-          "prominence": "emerging"
-        },
-        {
-          "start": 1950,
-          "prominence": "established"
+          "prominence": "established",
+          "confidence": "low",
+          "sources": [
+            "https://cultureincrisis.org/projects/songs-of-the-old-madmen-recovering-baul-songs-from-the-note-books-of-19th-and-20th-century-bengali-saint-composers"
+          ],
+          "note": "Broad nineteenth-century documentary anchor, not the origin of Baul songs; earlier literary antecedents are reported by UNESCO."
         }
       ],
-      "phaseNote": "Provisional editorial staging from emergence into continued practice. The 1950 marker is a broad modern observation point, not a claim that the tradition began then or reached a measured peak; source-level review remains needed."
+      "phaseNote": "The former circa-1800 emergence and 1950 established transition were unsupported. UNESCO traces devotional songs to fifteenth-century Bengali literature, while the archive project documents nineteenth- and twentieth-century composers. Retain circa 1800 only as a low-confidence documentary-window marker; the sources do not establish a precise shared origin or popularity cycle."
     },
     {
       "id": "genre:bebop",
@@ -9727,32 +9791,40 @@
       "name": "Detroit techno",
       "family": "techno",
       "period": {
-        "start": 1985,
-        "end": 1995,
-        "precision": "decade"
+        "start": 1981,
+        "end": null,
+        "precision": "circa"
       },
       "description": "A regional form of techno developed by Detroit-area artists from the early to mid-1980s. Its history includes the Belleville Three, other Detroit producers and labels, Black radio and club culture, and exchanges with Chicago and Europe.",
       "sources": [
         "https://en.wikipedia.org/wiki/Detroit_techno",
         "https://timeline.carnegiehall.org/genres/detroit-techno",
         "https://bentley.umich.edu/about/collections-magazine/fall-2016/remixing-detroit-history/",
-        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/atkins-juan"
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/atkins-juan",
+        "https://www.wired.com/1994/07/techno/"
       ],
       "phases": [
         {
-          "start": 1985,
-          "prominence": "emerging"
+          "start": 1981,
+          "prominence": "emerging",
+          "confidence": "medium",
+          "note": "Early Cybotron releases provide a recorded milestone for a scene with earlier roots.",
+          "sources": [
+            "https://www.wired.com/1994/07/techno/",
+            "https://timeline.carnegiehall.org/genres/detroit-techno"
+          ]
         },
         {
-          "start": 1989,
-          "prominence": "golden-age"
-        },
-        {
-          "start": 1993,
-          "prominence": "niche"
+          "start": 1988,
+          "prominence": "golden-age",
+          "confidence": "medium",
+          "note": "A UK compilation marks international exposure. The prominence label is an editorial assessment.",
+          "sources": [
+            "https://timeline.carnegiehall.org/genres/detroit-techno"
+          ]
         }
       ],
-      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
+      "phaseNote": "The 1981 anchor marks early Cybotron work, and the 1988 anchor marks international exposure through a UK compilation. Both have medium confidence as phase boundaries. Later scene activity warrants leaving the period open."
     },
     {
       "id": "genre:disco",
@@ -10484,20 +10556,37 @@
       "period": {
         "start": 1992,
         "precision": "circa",
-        "end": 1998
+        "end": null
       },
       "description": "A Dutch hardcore dance style that emerged around Rotterdam in the early 1990s, marked by fast tempos, forceful kick drums, and deliberately distorted production. Its history belongs to the wider European hardcore continuum.",
       "sources": [
         "https://en.wikipedia.org/wiki/Gabber",
-        "https://www.allmusic.com/style/hardcore-techno-ma0000002654"
+        "https://www.allmusic.com/style/hardcore-techno-ma0000002654",
+        "https://artsandculture.google.com/story/ugXxcmEzFVvjKQ?hl=en",
+        "https://www.canonvannederland.nl/nl/page/292759/gabber"
       ],
       "phases": [
         {
           "start": 1992,
-          "prominence": "golden-age"
+          "prominence": "emerging",
+          "confidence": "medium",
+          "note": "Rotterdam Records began releasing local hardcore in 1992, following earlier Dutch hardcore events.",
+          "sources": [
+            "https://artsandculture.google.com/story/ugXxcmEzFVvjKQ?hl=en"
+          ]
+        },
+        {
+          "start": 1996,
+          "prominence": "established",
+          "confidence": "medium",
+          "note": "By the mid-1990s, Thunderdome compilations and Dutch music television gave the scene wider exposure.",
+          "sources": [
+            "https://artsandculture.google.com/story/ugXxcmEzFVvjKQ?hl=en",
+            "https://www.canonvannederland.nl/nl/page/292759/gabber"
+          ]
         }
       ],
-      "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
+      "phaseNote": "Medium confidence in both phase boundaries. Rotterdam Records anchors early releases in 1992. Thunderdome and Dutch television document broader circulation by the mid-1990s."
     },
     {
       "id": "genre:gagaku",
@@ -10512,15 +10601,31 @@
       "description": "Japanese court music and dance encompassing instrumental repertories and vocal forms, shaped through historical exchange with continental Asian traditions. UNESCO describes it as the oldest of Japan’s traditional performing arts.",
       "sources": [
         "https://ich.unesco.org/en/RL/gagaku-00265",
-        "https://www.kunaicho.go.jp/en/learn/culture/gagaku.html"
+        "https://www.kunaicho.go.jp/en/learn/culture/gagaku.html",
+        "https://www.metmuseum.org/art/collection/search/45520"
       ],
       "phases": [
         {
           "start": 600,
-          "prominence": "established"
+          "prominence": "emerging",
+          "confidence": "medium",
+          "sources": [
+            "https://www.metmuseum.org/art/collection/search/45520"
+          ],
+          "note": "Broad sixth/seventh-century marker for the combination of continental music and native songs; not an exact origin."
+        },
+        {
+          "start": 900,
+          "prominence": "established",
+          "confidence": "medium",
+          "sources": [
+            "https://www.metmuseum.org/art/collection/search/45520",
+            "https://www.kunaicho.go.jp/en/learn/culture/gagaku.html"
+          ],
+          "note": "Broad tenth-century marker for the developed court tradition; not a measured popularity peak."
         }
       ],
-      "phaseNote": "A single continuing phase is used because this broad, long-running tradition does not have a defensible shared peak cycle in the current graph sources. Shading is editorial, not a measured ranking; regional histories may require separate phases."
+      "phaseNote": "Sources distinguish early continental transmission from the later developed court repertory. Circa 600 and circa 900 represent broad sixth/seventh- and tenth-century stages, respectively. The Imperial Household Agency dates incoming continental music earlier, from approximately the fifth century; that is a precursor rather than the completed form."
     },
     {
       "id": "genre:gamelan",
@@ -11133,12 +11238,21 @@
         "https://www.allmusic.com/genre/house-ma0000002651",
         "https://www.allmusic.com/artist/frankie-knuckles-mn0000793821",
         "https://www.allmusic.com/artist/marshall-jefferson-mn0000373844",
-        "https://www.allmusic.com/artist/larry-heard-mn0000138578"
+        "https://www.allmusic.com/artist/larry-heard-mn0000138578",
+        "https://www.encyclopedia.chicagohistory.org/pages/1041.html",
+        "https://www.encyclopedia.chicagohistory.org/pages/410072.html",
+        "https://www.officialcharts.com/charts/singles-chart/19870118/7501/"
       ],
       "phases": [
         {
           "start": 1980,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "medium",
+          "note": "The Warehouse residency brackets the circa-1980 Chicago scene anchor. The date and intensity are editorial estimates.",
+          "sources": [
+            "https://www.encyclopedia.chicagohistory.org/pages/1041.html",
+            "https://www.encyclopedia.chicagohistory.org/pages/410072.html"
+          ]
         },
         {
           "start": 1985,
@@ -11153,7 +11267,7 @@
           "prominence": "established"
         }
       ],
-      "phaseNote": "Editorial outline of Chicago’s early scene formation and house’s spread into a larger international club culture. The shade is not a chart or global popularity measure."
+      "phaseNote": "The circa-1980 anchor reflects Chicago club formation and has medium confidence. A UK number one for Steve “Silk” Hurley in January 1987 documents crossover by that year. Later phase boundaries and intensity values are editorial estimates."
     },
     {
       "id": "genre:hyphy",
@@ -11579,30 +11693,30 @@
       "name": "Tuvan throat singing (xöömei)",
       "family": "country-folk",
       "period": {
-        "start": 1900,
+        "start": 1934,
         "precision": "circa",
         "end": null
       },
-      "description": "A family of Tuvan vocal techniques in which singers bring out harmonics above a low fundamental tone. UNESCO recognizes the Mongolian art of khoomei, while Tuvan xöömei has its own regional practices and names.",
+      "description": "Tuvan vocal traditions that emphasize harmonics to produce distinct simultaneous pitches, with pastoral and sound-imitation practices. The timeline begins at a documented 1934 recording milestone, not the origin of the older oral tradition.",
       "sources": [
         "https://ich.unesco.org/en/RL/mongolian-art-of-singing-khoomei-00210?RL=00210",
-        "https://folkways.si.edu/throat-singing-unique-vocalization-three-cultures/world/music/article/smithsonian"
+        "https://folkways.si.edu/throat-singing-unique-vocalization-three-cultures/world/music/article/smithsonian",
+        "https://nit.tuva.asia/nit/en/article/view/706",
+        "https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/"
       ],
       "phases": [
         {
-          "start": 1900,
-          "prominence": "emerging"
-        },
-        {
-          "start": 1915,
-          "prominence": "golden-age"
-        },
-        {
-          "start": 2010,
-          "prominence": "established"
+          "start": 1934,
+          "prominence": "established",
+          "confidence": "medium",
+          "note": "Recording-history anchor for an already existing tradition; no origin or popularity peak is asserted.",
+          "sources": [
+            "https://nit.tuva.asia/nit/en/article/view/706",
+            "https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/"
+          ]
         }
       ],
-      "phaseNote": "Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed."
+      "phaseNote": "Removed unsupported 1900 emergence, 1915 golden-age and 2010 transition. The 1934 discography milestone marks documentation, not invention. UNESCO’s Mongolian listings are contextual evidence, not a Tuvan origin or phase boundary. Earlier oral history cannot be dated precisely from these sources."
     },
     {
       "id": "genre:krautrock",
@@ -11612,48 +11726,36 @@
       "period": {
         "start": 1968,
         "end": null,
-        "precision": "decade"
+        "precision": "circa"
       },
       "phases": [
         {
           "start": 1968,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "medium",
+          "note": "Approximate anchor for the late-1960s emergence described in the scholarship.",
+          "sources": [
+            "https://www.cambridge.org/core/books/abs/cambridge-companion-to-krautrock/introduction/53DFF7E1B1FBC4A09925676C4356B96D",
+            "https://www.cambridge.org/core/books/abs/cambridge-companion-to-krautrock/krautrock-and-the-radical-politics-of-1968/44940BF421701F6A6BCE261BF0519EE3"
+          ]
         },
         {
           "start": 1971,
-          "prominence": "golden-age"
-        },
-        {
-          "start": 1975,
-          "prominence": "established"
-        },
-        {
-          "start": 1984,
-          "prominence": "niche"
-        },
-        {
-          "start": 1994,
-          "prominence": "established"
-        },
-        {
-          "start": 2000,
-          "prominence": "niche"
-        },
-        {
-          "start": 2008,
-          "prominence": "established"
-        },
-        {
-          "start": 2014,
-          "prominence": "niche"
+          "prominence": "golden-age",
+          "confidence": "medium",
+          "note": "Early-1970s anchor for the original scene’s documented period of activity.",
+          "sources": [
+            "https://www.cambridge.org/core/books/abs/cambridge-companion-to-krautrock/introduction/53DFF7E1B1FBC4A09925676C4356B96D"
+          ]
         }
       ],
-      "phaseNote": "Illustrative shading of the West German scene’s activity and later international rediscovery, not mainstream popularity: the original scene is concentrated in the late 1960s and early-to-mid-1970s; renewed reception followed from the mid-1990s onward. No measured popularity series is implied.",
-      "description": "West German experimental rock — motorik repetition and early synthesizers. The laboratory Kraftwerk emerged from.",
+      "phaseNote": "Medium confidence for both approximate anchors. Scholarship documents the original scene from the late 1960s to the mid-1970s. The intensity and timing of later rediscovery remain unquantified.",
+      "description": "An umbrella term for experimental music that emerged in West Germany in the late 1960s. Groups such as Can, Amon Düül II, Neu! and Kraftwerk took distinct approaches to rhythm, improvisation, and electronics.",
       "sources": [
         "https://www.cambridge.org/core/books/abs/cambridge-companion-to-krautrock/introduction/53DFF7E1B1FBC4A09925676C4356B96D",
         "https://www.jstor.org/stable/10.3998/mpub.9206841",
-        "https://press.umich.edu/Books/K/Krautrock2"
+        "https://press.umich.edu/Books/K/Krautrock2",
+        "https://www.cambridge.org/core/books/abs/cambridge-companion-to-krautrock/krautrock-and-the-radical-politics-of-1968/44940BF421701F6A6BCE261BF0519EE3"
       ]
     },
     {
@@ -12168,15 +12270,30 @@
       "description": "A Korean epic vocal art in which one singer narrates and sings a long story with a drummer. Its surviving repertory and performance practice carry regional histories and continue to evolve.",
       "sources": [
         "https://ich.unesco.org/en/RL/pansori-epic-chant-00070",
-        "https://www.korea.net/K-InfoHub/SubMainDetail/view?articleId=3981&headwordCd=77&headwordGroupCd=17&pageIndex=1"
+        "https://www.korea.net/K-InfoHub/SubMainDetail/view?articleId=3981&headwordCd=77&headwordGroupCd=17&pageIndex=1",
+        "https://contents.history.go.kr/front/tz/view.do?levelId=tz_b48"
       ],
       "phases": [
         {
           "start": 1700,
-          "prominence": "established"
+          "prominence": "emerging",
+          "confidence": "medium",
+          "note": "Circa 1700 represents the late-seventeenth/early-eighteenth-century origin estimate; the earliest known written mention is dated 1754.",
+          "sources": [
+            "https://contents.history.go.kr/front/tz/view.do?levelId=tz_b48"
+          ]
+        },
+        {
+          "start": 1800,
+          "prominence": "established",
+          "confidence": "medium",
+          "note": "Broad nineteenth-century anchor for expansion among social classes and the master-singer tradition, not an exact boundary.",
+          "sources": [
+            "https://contents.history.go.kr/front/tz/view.do?levelId=tz_b48"
+          ]
         }
       ],
-      "phaseNote": "A single continuing phase is used because this broad, long-running tradition does not have a defensible shared peak cycle in the current graph sources. Shading is editorial, not a measured ranking; regional histories may require separate phases."
+      "phaseNote": "The National Institute of Korean History estimates an origin in the late seventeenth to early eighteenth century; UNESCO gives the seventeenth century. Circa 1700 is an approximate origin, not a first-documentation date. Nineteenth-century expansion and the 1964 safeguarding designation are documented; no measured popularity peak or continuous unchanging practice is implied."
     },
     {
       "id": "genre:peking-opera",
@@ -13249,19 +13366,31 @@
       },
       "description": "A music-and-dance tradition that developed around the Río de la Plata, especially Buenos Aires and Montevideo, with African, European and local histories that should not be reduced to a single origin story.",
       "sources": [
-        "https://www.allmusic.com/style/tango-ma0000002891"
+        "https://www.allmusic.com/style/tango-ma0000002891",
+        "https://ich.unesco.org/en/RL?RL=00258",
+        "https://www.loc.gov/item/14010455/"
       ],
       "phases": [
         {
           "start": 1880,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "low",
+          "note": "Circa 1880 is an editorial estimate for the emergence of tango in the Río de la Plata.",
+          "sources": [
+            "https://ich.unesco.org/en/RL?RL=00258"
+          ]
         },
         {
-          "start": 1950,
-          "prominence": "established"
+          "start": 1914,
+          "prominence": "established",
+          "confidence": "medium",
+          "note": "A 1914 U.S. dance manual documents international circulation by then.",
+          "sources": [
+            "https://www.loc.gov/item/14010455/"
+          ]
         }
       ],
-      "phaseNote": "Provisional editorial staging from emergence into continued practice. The 1950 marker is a broad modern observation point, not a claim that the tradition began then or reached a measured peak; source-level review remains needed."
+      "phaseNote": "The Río de la Plata origins are documented, while the circa-1880 anchor has low confidence as a precise boundary. A 1914 dance manual gives a medium-confidence marker for established international circulation."
     },
     {
       "id": "genre:tech-house",
@@ -13356,29 +13485,40 @@
       "family": "techno",
       "period": {
         "start": 1990,
-        "end": 2005,
-        "precision": "decade"
+        "end": null,
+        "precision": "circa"
       },
       "description": "A family of electronic dance music styles built around sustained rhythmic motion and extended, often melodic development. Early German scenes, including Frankfurt, were important to its formation, alongside wider European club networks.",
       "sources": [
         "https://en.wikipedia.org/wiki/Trance_music",
-        "https://www.allmusic.com/style/trance-ma0000002680"
+        "https://www.allmusic.com/style/trance-ma0000002680",
+        "https://www.theonecollection.co.uk/dance-2-trance",
+        "https://www.jamandspoon.com/",
+        "https://www.officialcharts.com/songs/robert-miles-children/",
+        "https://www.officialcharts.com/artist/13043/armin-van-buuren/"
       ],
       "phases": [
         {
           "start": 1990,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "medium",
+          "note": "Dance 2 Trance formed in Frankfurt around this time, one marker for the early European club scene.",
+          "sources": [
+            "https://www.theonecollection.co.uk/dance-2-trance",
+            "https://www.jamandspoon.com/"
+          ]
         },
         {
           "start": 1996,
-          "prominence": "golden-age"
-        },
-        {
-          "start": 2003,
-          "prominence": "niche"
+          "prominence": "established",
+          "confidence": "medium",
+          "note": "Robert Miles’s “Children” reached number two in the UK, documenting commercial crossover in that market.",
+          "sources": [
+            "https://www.officialcharts.com/songs/robert-miles-children/"
+          ]
         }
       ],
-      "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
+      "phaseNote": "Medium confidence for both phase anchors. Frankfurt activity around 1990 marks early formation. The 1996 UK chart milestone marks crossover in one market. Later trance releases continued to chart."
     },
     {
       "id": "genre:trap-rap",
@@ -13702,31 +13842,36 @@
       "name": "Bandoneon",
       "family": "winds",
       "period": {
-        "start": 1846,
+        "start": 1855,
         "precision": "circa"
       },
-      "description": "Square button concertina named after the German dealer Heinrich Band in the 1840s; brought to the Río de la Plata by immigrants, it became the soul of tango.",
+      "description": "A square, button-operated free-reed instrument developed in Germany and associated with Heinrich Band. It became a mainstay of tango ensembles in the Río de la Plata.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Bandoneon"
+        "https://en.wikipedia.org/wiki/Bandoneon",
+        "https://music.si.edu/object-day/bandoneon",
+        "https://folkways-media.si.edu/docs/folkways/artwork/SFW40431.pdf"
       ],
       "phases": [
         {
-          "start": 1846,
+          "start": 1855,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Around the mid-1850s, the Band family applied a distinct name to a recognizable free-reed design.",
+          "sources": [
+            "https://folkways-media.si.edu/docs/folkways/artwork/SFW40431.pdf"
+          ]
         },
         {
-          "start": 1880,
-          "prominence": "golden-age",
-          "confidence": "low"
-        },
-        {
-          "start": 1930,
+          "start": 1900,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "An approximate marker for early twentieth-century adoption in tango ensembles.",
+          "sources": [
+            "https://music.si.edu/object-day/bandoneon"
+          ]
         }
       ],
-      "phaseNote": "Confidence: low. The late-19th-century Río de la Plata adoption and tango association anchor the main prominence shift. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "Medium confidence for both approximate anchors. The first tracks the named German design and the second tracks its adoption in Río de la Plata tango."
     },
     {
       "id": "instrument:banjo",
@@ -15251,41 +15396,37 @@
       "family": "electronic",
       "period": {
         "start": 1981,
-        "precision": "circa"
+        "precision": "year"
       },
-      "description": "A 1981 bass-line machine meant for guitarists that sold poorly; cheap second-hand units twisted through its resonant filter became the squelch of acid house and acid techno.",
+      "description": "Roland launched the TB-303 bass synthesizer in 1981. Phuture’s manipulation of its resonant filter helped establish the signature sound of acid house.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TB-303"
+        "https://en.wikipedia.org/wiki/Roland_TB-303",
+        "https://www.roland.com/global/roland-50th-anniversary/1980s/",
+        "https://articles.roland.com/lifetime-achievement-dj-pierre-and-phuture/",
+        "https://djmag.com/content/game-changers-phuture-acid-tracks"
       ],
       "phases": [
         {
           "start": 1981,
           "prominence": "emerging",
-          "intensity": 0.2,
-          "confidence": "medium",
-          "note": "Roland introduced the TB-303 in 1981 as a bass accompaniment machine.",
+          "confidence": "high",
+          "note": "Roland dates the product launch to 1981.",
           "sources": [
-            "https://www.roland.com/RolandComSite/media/global/release/pdf/2019/20190303_1_RolandCloud_TB-303.pdf"
+            "https://www.roland.com/global/roland-50th-anniversary/1980s/"
           ]
         },
         {
           "start": 1987,
-          "prominence": "golden-age",
-          "note": "Phuture’s “Acid Tracks” (released in 1987) is a key marker in the TB-303’s adoption in acid house; Roland dates the instrument’s launch to 1981 and the scene’s rediscovery to the mid-1980s.",
-          "sources": [
-            "https://www.roland.com/uk/promos/303day/",
-            "https://www.roland.com/RolandComSite/media/global/release/pdf/2019/20190303_1_RolandCloud_TB-303.pdf"
-          ],
-          "confidence": "medium"
-        },
-        {
-          "start": 1993,
           "prominence": "established",
-          "intensity": 0.5,
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Phuture’s Trax release provides a public milestone after earlier Chicago tape circulation.",
+          "sources": [
+            "https://articles.roland.com/lifetime-achievement-dj-pierre-and-phuture/",
+            "https://djmag.com/content/game-changers-phuture-acid-tracks"
+          ]
         }
       ],
-      "phaseNote": "Illustrative editorial shading: a commercial failure until Phuture's 1987 \"Acid Tracks\" launched acid house, then a lasting dance-music staple. Not a measured ranking."
+      "phaseNote": "High confidence in the manufacturer’s 1981 launch year. Medium confidence in 1987 as an adoption anchor. Club use preceded the commercial release."
     },
     {
       "id": "instrument:theremin",
@@ -15368,51 +15509,35 @@
       "family": "electronic",
       "period": {
         "start": 1980,
-        "precision": "circa"
+        "precision": "year"
       },
-      "description": "Roland's 1980 analogue drum machine flopped commercially, but its booming kick and snapping claps became the foundation of electro, hip-hop, Miami bass, and trap.",
+      "description": "Roland launched the TR-808 analog drum machine in 1980. Its programmable sounds featured on early electro and hip-hop recordings, including “Planet Rock.”",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TR-808"
+        "https://en.wikipedia.org/wiki/Roland_TR-808",
+        "https://www.roland.com/global/roland-50th-anniversary/1980s/",
+        "https://www.smithsonianmag.com/arts-culture/history-tr-808-drum-machine-180975205/"
       ],
       "phases": [
         {
           "start": 1980,
           "prominence": "emerging",
-          "intensity": 0.25,
-          "note": "The TR-808 launched in 1980. Early recordings used it before Roland discontinued the machine in 1983.",
+          "confidence": "high",
+          "note": "Roland dates the launch to 1980.",
           "sources": [
-            "https://www.roland.com/ca/promos/roland_tr-808/?lang=en-CA",
-            "https://www.smithsonianmag.com/arts-culture/history-tr-808-drum-machine-180975205/",
-            "https://articles.roland.com/retracing-the-roland-sound-in-hip-hop/"
-          ],
-          "confidence": "medium"
+            "https://www.roland.com/global/roland-50th-anniversary/1980s/"
+          ]
         },
         {
           "start": 1982,
-          "prominence": "golden-age",
-          "confidence": "medium",
-          "note": "Early electro and hip-hop recordings helped establish the machine’s sound. The boundary marks that adoption around 1982.",
-          "sources": [
-            "https://articles.roland.com/retracing-the-roland-sound-in-hip-hop/"
-          ]
-        },
-        {
-          "start": 1990,
           "prominence": "established",
-          "intensity": 0.5,
           "confidence": "medium",
-          "note": "Hip-hop production continued to use the 808 after its initial adoption in electro. This boundary approximates that continuing role.",
+          "note": "Arthur Baker used the TR-808 on “Planet Rock,” which charted in 1982.",
           "sources": [
-            "https://articles.roland.com/retracing-the-roland-sound-in-hip-hop/"
+            "https://www.smithsonianmag.com/arts-culture/history-tr-808-drum-machine-180975205/"
           ]
-        },
-        {
-          "start": 2008,
-          "prominence": "golden-age",
-          "confidence": "low"
         }
       ],
-      "phaseNote": "Illustrative editorial shading: slow sales at launch, a peak with early-1980s electro and hip-hop, and a second peak as trap made the 808 bass ubiquitous. Not a measured ranking."
+      "phaseNote": "High confidence in the manufacturer’s launch year. Medium confidence in the later date as a phase boundary because it is anchored to a documented recording."
     },
     {
       "id": "instrument:tr-909",
@@ -15421,42 +15546,38 @@
       "family": "electronic",
       "period": {
         "start": 1983,
-        "precision": "circa"
+        "precision": "year"
       },
-      "description": "Roland's 1983 hybrid drum machine combined analogue drums with sampled cymbals; its punchy kick and hi-hats became the standard of house, techno, trance, and gabber.",
+      "description": "Roland launched the TR-909 in 1983. It combined analog drum synthesis with sampled cymbals and became prominent in house and techno production.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TR-909"
+        "https://en.wikipedia.org/wiki/Roland_TR-909",
+        "https://www.roland.com/global/roland-50th-anniversary/1980s/",
+        "https://www.roland.com/uk/promos/roland_tr-909/?lang=en-GB",
+        "https://www.detroithistorical.org/learn/online-research/collection/archive/label-transmat-rhythim-rhythim",
+        "https://mixmag.net/feature/909-brandededitorial"
       ],
       "phases": [
         {
           "start": 1983,
           "prominence": "emerging",
-          "confidence": "medium",
-          "note": "Roland dates the TR-909 launch to 1983 and reports a one-year production run.",
+          "confidence": "high",
+          "note": "Roland dates the launch to 1983.",
           "sources": [
-            "https://www.roland.com/uk/promos/roland_tr-909/?lang=en-GB"
+            "https://www.roland.com/global/roland-50th-anniversary/1980s/"
           ]
         },
         {
           "start": 1987,
-          "prominence": "golden-age",
-          "confidence": "medium",
-          "note": "Roland traces the machine’s adoption in house and techno across the mid-1980s and 1990s. This boundary approximates the earlier part of that transition.",
-          "sources": [
-            "https://www.roland.com/uk/promos/roland_tr-909/?lang=en-GB"
-          ]
-        },
-        {
-          "start": 1990,
           "prominence": "established",
           "confidence": "medium",
-          "note": "House and techno use continued through the 1990s. The boundary is an editorial division within that period of adoption.",
+          "note": "Roland documents the TR-909 on Derrick May’s “Strings of Life,” released in 1987.",
           "sources": [
-            "https://www.roland.com/uk/promos/roland_tr-909/?lang=en-GB"
+            "https://www.roland.com/uk/promos/roland_tr-909/?lang=en-GB",
+            "https://www.detroithistorical.org/learn/online-research/collection/archive/label-transmat-rhythim-rhythim"
           ]
         }
       ],
-      "phaseNote": "Confidence: low. The outline follows the machine’s release, adoption in house/techno, and continued use as a dance-music reference. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
+      "phaseNote": "High confidence in the manufacturer’s launch year. Medium confidence in the later date as a phase boundary because it is anchored to a documented recording."
     },
     {
       "id": "instrument:transverse-flute",
@@ -15964,7 +16085,12 @@
       "period": {
         "start": 1987
       },
-      "description": "Kevin Saunderson's label, bridge between Detroit techno and the global charts via Inner City."
+      "description": "Detroit techno label founded by Kevin Saunderson. The Michigan corporation dates to 1987.",
+      "sources": [
+        "https://ra.co/news/16637",
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/saunderson-kevin",
+        "https://businessprofiles.com/details/kms-records-inc/MI-282024"
+      ]
     },
     {
       "id": "label:kompakt",
@@ -15991,7 +16117,10 @@
       "sources": [
         "https://en.wikipedia.org/wiki/Metroplex_(record_label)",
         "https://en.wikipedia.org/wiki/Techno",
-        "https://detroit1967.org/learn/online-research/encyclopedia-of-detroit/atkins-juan"
+        "https://detroit1967.org/learn/online-research/encyclopedia-of-detroit/atkins-juan",
+        "https://metroplexrecords.bandcamp.com/music",
+        "https://www.wired.com/1994/07/techno/",
+        "https://model500.bandcamp.com/album/no-ufos-original-version"
       ]
     },
     {
@@ -16181,16 +16310,26 @@
       "period": {
         "start": 1986
       },
-      "description": "Derrick May's label. 'Strings of Life' and the Transmat seal: emotional futurism from Detroit."
+      "description": "Detroit techno label established by Derrick May in 1986. Its early catalog includes Rhythim Is Rhythim’s “Strings of Life.”",
+      "sources": [
+        "https://transmatrecords.com/",
+        "https://www.detroithistorical.org/learn/online-research/collection/archive/label-transmat-rhythim-rhythim"
+      ]
     },
     {
       "id": "label:trax",
       "type": "label",
       "name": "Trax Records",
       "period": {
-        "start": 1984
+        "start": 1985,
+        "precision": "circa"
       },
-      "description": "Chicago's chaotic house factory — 'Acid Tracks', 'Your Love', and most of the genre's canon on recycled vinyl."
+      "description": "An early Chicago house label that grew out of Larry Sherman’s pressing business and released records by artists including Marshall Jefferson and Phuture.",
+      "sources": [
+        "https://www.traxrecords.com/whats_happening",
+        "https://djmag.com/features/history-trax-records-and-fight-chicagos-house-pioneers-royalties",
+        "https://chicago.suntimes.com/2019/7/10/20685704/trax-records-house-music-chicago-label-anniversary-open-house-screamin-rachael-cain"
+      ]
     },
     {
       "id": "label:tresor",
@@ -16199,7 +16338,10 @@
       "period": {
         "start": 1991
       },
-      "description": "Berlin club and label in a bank vault under Potsdamer Platz; the Detroit–Berlin axis made concrete after the Wall fell."
+      "description": "Berlin techno label founded in 1991 alongside the Tresor club. Its early releases and collaborations helped connect Berlin and Detroit techno.",
+      "sources": [
+        "https://tresorberlin.com/info/about/"
+      ]
     },
     {
       "id": "label:underground-resistance",
@@ -16427,7 +16569,11 @@
       "id": "place:chicago",
       "type": "place",
       "name": "Chicago",
-      "description": "Where disco survived its backlash underground and mutated into house."
+      "description": "A center of early house music, which developed in Black gay clubs including the Warehouse on the West Loop.",
+      "sources": [
+        "https://www.encyclopedia.chicagohistory.org/pages/1041.html",
+        "https://www.encyclopedia.chicagohistory.org/pages/410072.html"
+      ]
     },
     {
       "id": "place:cologne",
@@ -16464,7 +16610,11 @@
       "id": "place:duesseldorf",
       "type": "place",
       "name": "Düsseldorf",
-      "description": "Rhineland industrial city; home of Kraftwerk's Kling Klang studio."
+      "description": "A center of West German electronic music and the former home of Kraftwerk’s Kling Klang studio.",
+      "sources": [
+        "https://www.visitduesseldorf.de/storys/en/2021/03/16/das-labor-von-kraftwerk",
+        "https://doi.org/10.1080/13619462.2021.1925551"
+      ]
     },
     {
       "id": "place:durban",
@@ -16646,7 +16796,11 @@
       "id": "place:london",
       "type": "place",
       "name": "London",
-      "description": "Sound-system capital where acid house became rave, and rave became a 30-year continuum."
+      "description": "A center of British acid house and rave, documented by late-1980s club flyers and scene memorabilia.",
+      "sources": [
+        "https://www.londonmuseum.org.uk/collections/v/object-465798/badge-pin-badge/",
+        "https://www.camdenpeoplesmuseum.org/projects/club-culture-in-camden-town-1988-2000"
+      ]
     },
     {
       "id": "place:los-angeles",
@@ -16758,7 +16912,11 @@
       "id": "place:new-york",
       "type": "place",
       "name": "New York",
-      "description": "Birthplace of disco DJ culture, hip-hop, and the Paradise Garage."
+      "description": "The Bronx was an early center of hip-hop, and Manhattan clubs such as Paradise Garage helped shape dance-floor culture.",
+      "sources": [
+        "https://blogs.loc.gov/music/2023/08/early-hip-hop-at-the-library-of-congress/",
+        "https://www.nyclgbtsites.org/site/paradise-garage/"
+      ]
     },
     {
       "id": "place:oakland",
@@ -17524,7 +17682,11 @@
         "start": 1988,
         "end": 1989
       },
-      "description": "Detroit's short-lived, juice-bar-only techno club — the home floor of the first and second waves."
+      "description": "A Detroit after-hours club founded by George Baker, Chez Damier and Alton Miller. Its house and techno nights ran from May 1988 to November 1989.",
+      "sources": [
+        "https://www.sydneyfestival.org.au/stories/whirlwind-history-lesson-detroit-music-institute",
+        "https://timeline.carnegiehall.org/genres/detroit-techno"
+      ]
     },
     {
       "id": "scene:nashville-country-music-scene",
@@ -17575,7 +17737,12 @@
         "start": 1977,
         "end": 1987
       },
-      "description": "Larry Levan's New York church of sound; 'garage' as a genre is its namesake."
+      "description": "A New York dance club at 84 King Street with resident DJ Larry Levan and a largely Black gay following. Construction parties began in 1977, the club officially opened as Paradise Garage in 1978, and it closed in 1987.",
+      "sources": [
+        "https://www.nyclgbtsites.org/site/paradise-garage/",
+        "https://www.parks.ny.gov/documents/shpo/FinalNYCLGBTContextStatement.pdf",
+        "https://findingaids.library.nyu.edu/fales/mss_483/"
+      ]
     },
     {
       "id": "scene:port-of-spain-calypso-scene",
@@ -17682,7 +17849,12 @@
         "start": 1988,
         "end": 1989
       },
-      "description": "Acid house hits Britain: warehouse parties, orbital raves, and a moral panic that forged UK dance culture."
+      "description": "A British acid house and rave wave that spread through clubs and warehouse parties in 1988 and continued into larger events in 1989.",
+      "sources": [
+        "https://www.londonmuseum.org.uk/collections/v/object-465798/badge-pin-badge/",
+        "https://britishculturearchive.co.uk/acid-house/",
+        "https://www.theransomnote.com/music/interviews/gone-to-a-rave-phatmedia-present-uk-rave-flyers-1988-1989/"
+      ]
     },
     {
       "id": "scene:seoul-k-pop-industry",
@@ -17735,7 +17907,11 @@
         "start": 1977,
         "end": 1982
       },
-      "description": "Frankie Knuckles' Chicago club. Members-only, mostly Black and gay — 'house music' is literally its record-store shorthand."
+      "description": "A Chicago club founded by Robert Williams, with Frankie Knuckles as resident DJ. Its predominantly Black gay dance floor helped shape early house music.",
+      "sources": [
+        "https://www.encyclopedia.chicagohistory.org/pages/410072.html",
+        "https://www.preservationchicago.org/wp-content/uploads/2023/12/Warehouse-Chi-7-2023-Final.pdf"
+      ]
     },
     {
       "id": "scene:tokyo-shibuya-kei-scene",
@@ -17885,7 +18061,11 @@
         "start": 1987,
         "end": 1987
       },
-      "description": "Phuture on Trax. Twelve minutes of TB-303 squelch that named and defined acid house."
+      "description": "Phuture’s TB-303-led acid house recording circulated in Ron Hardy’s Chicago club sets before its 1987 Trax release.",
+      "sources": [
+        "https://djmag.com/content/game-changers-phuture-acid-tracks",
+        "https://www.insomniac.com/music/from-the-crate-phuture-acid-tracks/"
+      ]
     },
     {
       "id": "track:all-the-small-things-blink-182",
@@ -18287,9 +18467,11 @@
         "end": 1995,
         "precision": "year"
       },
-      "description": "Children (1995), performed by Robert Miles; representative recording of Trance.",
+      "description": "Robert Miles’s piano-led dance single appeared in 1995 and reached number two on the UK singles chart in 1996.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Children_(Robert_Miles_song)"
+        "https://en.wikipedia.org/wiki/Children_(Robert_Miles_song)",
+        "https://www.officialcharts.com/songs/robert-miles-children/",
+        "https://www.insomniac.com/music/from-the-crate-robert-miles-children/"
       ]
     },
     {
@@ -18300,7 +18482,11 @@
         "start": 1983,
         "end": 1983
       },
-      "description": "Cybotron's electro landmark: the exact midpoint between 'Planet Rock' and techno."
+      "description": "Cybotron’s 1983 Fantasy single combined electronic production with a dance-floor rhythm. Juan Atkins and Richard Davis share the composition credit.",
+      "sources": [
+        "https://www.worldradiohistory.com/Archive-Billboard/80s/1983/BB-1983-09-24.pdf",
+        "https://www.qobuz.com/us-en/album/clear-cybotron/bnyc3ddg36zwc"
+      ]
     },
     {
       "id": "track:cross-road-blues-robert-johnson",
@@ -18478,9 +18664,12 @@
         "end": 1994,
         "precision": "year"
       },
-      "description": "For an Angel (1994), performed by Paul Van Dyk; representative recording of Trance.",
+      "description": "Paul van Dyk first released “For an Angel” on 45 RPM in 1994. His 1998 E-Werk Remix brought the track to a wider trance audience.",
       "sources": [
-        "https://en.wikipedia.org/wiki/For_an_Angel"
+        "https://en.wikipedia.org/wiki/For_an_Angel",
+        "https://www.paulvandyk.com/out-now-for-an-angel-30th-anniversary-edition/",
+        "https://djmag.com/features/how-paul-van-dyks-angel-changed-trance-forever",
+        "https://www.officialcharts.com/songs/paul-van-dyk-for-an-angel/"
       ]
     },
     {
@@ -18687,7 +18876,11 @@
         "start": 1977,
         "end": 1977
       },
-      "description": "Donna Summer, produced by Giorgio Moroder — the first all-sequencer dance hit. Eno: 'This is the sound of the future.'"
+      "description": "Donna Summer’s 1977 disco single, co-written with producers Giorgio Moroder and Pete Bellotte. Moog synthesizers supplied most of the instrumental sounds.",
+      "sources": [
+        "https://www.loc.gov/item/prn-12-107/",
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/i%20feel%20love--FINAL.pdf"
+      ]
     },
     {
       "id": "track:i-feel-love-donna-summer",
@@ -19004,9 +19197,12 @@
         "end": 1974,
         "precision": "year"
       },
-      "description": "Libertango (1974), performed by Astor Piazzolla; representative recording of Tango.",
+      "description": "Astor Piazzolla recorded this bandoneón-led concert tango in Milan in 1974 for the album Libertango.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Libertango"
+        "https://en.wikipedia.org/wiki/Libertango",
+        "https://astorpiazzolla.com/es/a-puro-piazzolla/",
+        "https://www.allmusic.com/album/piazzolla-libertango-mw0000314492",
+        "https://www.allmusic.com/composition/libertango-tango-mc0002382010"
       ]
     },
     {
@@ -19216,7 +19412,10 @@
       },
       "description": "Mood Indigo (1930), performed by Duke Ellington; representative recording of Swing.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Mood_Indigo"
+        "https://en.wikipedia.org/wiki/Mood_Indigo",
+        "https://americanhistory.si.edu/collections/object/nmah_1061308",
+        "https://ellingtonia.com/discography/1930-1939/",
+        "https://www.jazzstandards.com/compositions-1/moodindigo.htm"
       ]
     },
     {
@@ -19353,7 +19552,12 @@
         "start": 1985,
         "end": 1985
       },
-      "description": "Model 500 (Juan Atkins), Metroplex M-001. Widely cited as the first techno record."
+      "description": "An early Detroit techno single by Juan Atkins as Model 500, released on Metroplex in 1985.",
+      "sources": [
+        "https://model500.bandcamp.com/album/no-ufos-original-version",
+        "https://www.beatport.com/release/no-ufos-original-version/3166623",
+        "https://www.wired.com/1994/07/techno/"
+      ]
     },
     {
       "id": "track:nocturne-in-e-flat-major-op-9-no-2-chopin",
@@ -19464,7 +19668,9 @@
       },
       "description": "One O'Clock Jump (1937), performed by Count Basie; representative recording of Swing.",
       "sources": [
-        "https://en.wikipedia.org/wiki/One_O'Clock_Jump"
+        "https://en.wikipedia.org/wiki/One_O'Clock_Jump",
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/OneOClockJump.pdf",
+        "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/african-americans-on-the-recording-registry/"
       ]
     },
     {
@@ -20074,7 +20280,11 @@
         "start": 1987,
         "end": 1987
       },
-      "description": "Rhythim Is Rhythim (Derrick May). Piano stabs and strings with no bassline — techno's emotional anthem."
+      "description": "Derrick May released this Detroit techno track as Rhythim Is Rhythim on Transmat in 1987. It builds on Michael James’s piano sequence with percussion and sampled strings.",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/collection/archive/label-transmat-rhythim-rhythim",
+        "https://transmatrecords.com/2019/02/25/strings-of-life/"
+      ]
     },
     {
       "id": "track:sweet-home-chicago-robert-johnson",
@@ -20659,7 +20869,11 @@
         "start": 1987,
         "end": 1987
       },
-      "description": "Frankie Knuckles and Jamie Principle — Chicago house's tenderest anthem."
+      "description": "The 1987 Trax version of Jamie Principle’s Chicago house track, reworked by Frankie Knuckles. Principle’s earlier version appeared on Persona in 1986.",
+      "sources": [
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Your-Love_Snoman.pdf",
+        "https://djmag.com/news/jamie-principles-chicago-house-classic-your-love-inducted-national-recording-registry"
+      ]
     },
     {
       "id": "artist:franco",
@@ -22386,8 +22600,10 @@
       "confidence": "medium",
       "sources": [
         "https://en.wikipedia.org/wiki/Children_(Robert_Miles_song)",
-        "https://en.wikipedia.org/wiki/trance"
-      ]
+        "https://www.officialcharts.com/songs/robert-miles-children/",
+        "https://www.insomniac.com/music/from-the-crate-robert-miles-children/"
+      ],
+      "note": "A melodic dream-trance crossover that reached number two on the UK singles chart in 1996."
     },
     {
       "id": "anthem:cross-road-blues-blues-robert-johnson",
@@ -22518,8 +22734,11 @@
       "confidence": "medium",
       "sources": [
         "https://en.wikipedia.org/wiki/For_an_Angel",
-        "https://en.wikipedia.org/wiki/trance"
-      ]
+        "https://www.paulvandyk.com/out-now-for-an-angel-30th-anniversary-edition/",
+        "https://djmag.com/features/how-paul-van-dyks-angel-changed-trance-forever",
+        "https://www.officialcharts.com/songs/paul-van-dyk-for-an-angel/"
+      ],
+      "note": "The 1998 E-Werk Remix established the track as a trance anthem. The original appeared on 45 RPM in 1994."
     },
     {
       "id": "anthem:free-jazz-free-jazz-ornette-coleman",
@@ -22903,8 +23122,11 @@
       "confidence": "medium",
       "sources": [
         "https://en.wikipedia.org/wiki/Libertango",
-        "https://en.wikipedia.org/wiki/tango"
-      ]
+        "https://astorpiazzolla.com/es/a-puro-piazzolla/",
+        "https://www.allmusic.com/album/piazzolla-libertango-mw0000314492",
+        "https://www.allmusic.com/composition/libertango-tango-mc0002382010"
+      ],
+      "note": "A representative concert tango from Piazzolla’s nuevo tango repertoire."
     },
     {
       "id": "anthem:like-a-rolling-stone-folk-bob-dylan",
@@ -23068,8 +23290,11 @@
       "confidence": "medium",
       "sources": [
         "https://en.wikipedia.org/wiki/Mood_Indigo",
-        "https://en.wikipedia.org/wiki/swing"
-      ]
+        "https://americanhistory.si.edu/collections/object/nmah_1061308",
+        "https://ellingtonia.com/discography/1930-1939/",
+        "https://www.jazzstandards.com/compositions-1/moodindigo.htm"
+      ],
+      "note": "An early Ellington orchestra standard. Its standing in the band’s repertoire supports the swing association."
     },
     {
       "id": "anthem:move-your-body-chicago-house-marshall-jefferson",
@@ -23252,11 +23477,13 @@
       "type": "anthem_of",
       "from": "track:one-o-clock-jump-count-basie",
       "to": "genre:swing",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         "https://en.wikipedia.org/wiki/One_O'Clock_Jump",
-        "https://en.wikipedia.org/wiki/swing"
-      ]
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/OneOClockJump.pdf",
+        "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/african-americans-on-the-recording-registry/"
+      ],
+      "note": "Basie’s 1937 Decca recording was his orchestra’s signature theme and a landmark of Kansas City big-band swing."
     },
     {
       "id": "anthem:original-nuttah-jungle-shy-fx",
@@ -23593,11 +23820,13 @@
       "type": "anthem_of",
       "from": "track:sing-sing-sing-benny-goodman",
       "to": "genre:swing",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
         "https://en.wikipedia.org/wiki/Sing,_Sing,_Sing",
-        "https://en.wikipedia.org/wiki/swing"
-      ]
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/BennyGoodman.pdf",
+        "https://www.carnegiehall.org/-/media/CarnegieHall/Files/PDFs/About/Press-Resources/National-Youth-Ensembles/2024/Snapshot-of-the-History-of-Jazz.pdf?la=en"
+      ],
+      "note": "Already an audience favorite, the piece featured in Goodman’s landmark 1938 Carnegie Hall swing concert."
     },
     {
       "id": "anthem:smells-like-teen-spirit-grunge-nirvana",
@@ -24310,7 +24539,12 @@
       "type": "influences",
       "from": "genre:hi-nrg",
       "to": "genre:chicago-house",
-      "confidence": "low"
+      "confidence": "low",
+      "sources": [
+        "https://www.worldradiohistory.com/UK/Record-Mirror/80s/86/Record-Mirror-1986-09-06.pdf",
+        "https://909originals.com/wp-content/uploads/2017/08/house-the-face-1986.pdf"
+      ],
+      "note": "Contemporary coverage heard similarities to Hi-NRG and documented fast disco in early Chicago sets. House drew on several dance-floor traditions."
     },
     {
       "id": "e014",
@@ -24389,12 +24623,13 @@
       "type": "influences",
       "from": "genre:funk",
       "to": "genre:detroit-techno",
-      "confidence": "medium",
-      "note": "'Like George Clinton and Kraftwerk stuck in an elevator.'",
+      "confidence": "high",
+      "note": "Early Detroit techno drew on George Clinton and Parliament-Funkadelic.",
       "sources": [
+        "https://timeline.carnegiehall.org/genres/detroit-techno",
+        "https://www.wired.com/1994/07/techno/",
         "https://en.wikipedia.org/wiki/Detroit_techno",
-        "https://en.wikipedia.org/wiki/Funk",
-        "https://www.wired.com/1994/07/techno/"
+        "https://en.wikipedia.org/wiki/Funk"
       ]
     },
     {
@@ -24464,7 +24699,12 @@
       "type": "influences",
       "from": "genre:detroit-techno",
       "to": "genre:trance",
-      "confidence": "low"
+      "confidence": "low",
+      "sources": [
+        "https://groove.de/2019/10/11/sven-vaeth-i-suggested-omen-as-a-possible-name-of-the-club-part-2/",
+        "https://amp.dw.com/en/how-frankfurt-became-an-early-techno-music-hub/a-64879803"
+      ],
+      "note": "Frankfurt and Detroit had overlapping early techno histories. The specific influence of Detroit recordings on the emergence of trance is uncertain."
     },
     {
       "id": "e027",
@@ -24472,7 +24712,11 @@
       "from": "genre:gabber",
       "to": "genre:detroit-techno",
       "confidence": "low",
-      "note": "Via Rotterdam's hardcore techno scene."
+      "note": "Parkzicht DJs played Detroit techno alongside other imports before Rotterdam producers developed their own hardcore sound.",
+      "sources": [
+        "https://www.electronicbeats.net/rotterdam-feature",
+        "https://researchportal.lsbu.ac.uk/files/6415752/848ef23b_Gabber_Techno_20meets_20Metal-EDITS-6AUG2020-ACCEPTED.pdf"
+      ]
     },
     {
       "id": "e028",
@@ -24601,12 +24845,14 @@
       "type": "influences",
       "from": "artist:kraftwerk",
       "to": "genre:detroit-techno",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
+        "https://timeline.carnegiehall.org/genres/detroit-techno",
+        "https://www.wired.com/1994/07/techno/",
         "https://en.wikipedia.org/wiki/Juan_Atkins",
-        "https://en.wikipedia.org/wiki/Techno",
-        "https://www.wired.com/1994/07/techno/"
-      ]
+        "https://en.wikipedia.org/wiki/Techno"
+      ],
+      "note": "Kraftwerk was one of the electronic influences on Detroit techno’s early producers."
     },
     {
       "id": "e044",
@@ -24694,9 +24940,11 @@
       "type": "key_artist_of",
       "from": "artist:juan-atkins",
       "to": "genre:detroit-techno",
-      "confidence": "medium",
-      "note": "Coined the word 'techno'.",
+      "confidence": "high",
+      "note": "Atkins helped pioneer Detroit techno through Cybotron and his solo releases as Model 500.",
       "sources": [
+        "https://timeline.carnegiehall.org/genres/detroit-techno",
+        "https://www.wired.com/1994/07/techno/",
         "https://en.wikipedia.org/wiki/Juan_Atkins",
         "https://en.wikipedia.org/wiki/Detroit_techno"
       ]
@@ -24922,15 +25170,24 @@
       "type": "signed_to",
       "from": "artist:phuture",
       "to": "label:trax",
-      "confidence": "low"
+      "confidence": "low",
+      "note": "Trax released Phuture’s “Acid Tracks” in 1987.",
+      "sources": [
+        "https://djmag.com/content/game-changers-phuture-acid-tracks",
+        "https://www.traxrecords.com/40th-anniversary"
+      ]
     },
     {
       "id": "e074",
       "type": "signed_to",
       "from": "artist:frankie-knuckles",
       "to": "label:trax",
-      "note": "'Your Love' and 'Baby Wants to Ride'.",
-      "confidence": "low"
+      "note": "Trax issued the Frankie Knuckles version of “Your Love” in 1987.",
+      "confidence": "low",
+      "sources": [
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Your-Love_Snoman.pdf",
+        "https://www.traxrecords.com/40th-anniversary"
+      ]
     },
     {
       "id": "e075",
@@ -25021,8 +25278,12 @@
       "type": "originated_in",
       "from": "genre:krautrock",
       "to": "place:duesseldorf",
-      "note": "Also Cologne, Munich, and Berlin.",
-      "confidence": "low"
+      "note": "Düsseldorf was a center of the wider West German scene through groups such as Kraftwerk. The umbrella style had multiple regional centers.",
+      "confidence": "low",
+      "sources": [
+        "https://doi.org/10.1080/13619462.2021.1925551",
+        "https://www.jstor.org/stable/10.3998/mpub.9206841"
+      ]
     },
     {
       "id": "e086",
@@ -25254,7 +25515,12 @@
       "type": "anthem_of",
       "from": "track:i-feel-love",
       "to": "genre:hi-nrg",
-      "confidence": "low"
+      "confidence": "low",
+      "sources": [
+        "https://doras.dcu.ie/27918/1/PhD%20Carroll.pdf",
+        "https://www.loc.gov/item/prn-12-107/"
+      ],
+      "note": "The 1977 disco single was a precursor to Hi-NRG. Patrick Cowley’s later remix links it to a key producer in the style."
     },
     {
       "id": "e111",
@@ -26964,9 +27230,12 @@
       "from": "instrument:bandoneon",
       "to": "genre:tango",
       "sources": [
-        "https://en.wikipedia.org/wiki/Bandoneon"
+        "https://en.wikipedia.org/wiki/Bandoneon",
+        "https://music.si.edu/object-day/bandoneon",
+        "https://folkways-media.si.edu/docs/folkways/artwork/SFW40431.pdf"
       ],
-      "confidence": "medium"
+      "confidence": "high",
+      "note": "The bandoneón became a mainstay of tango ensembles in the Río de la Plata."
     },
     {
       "id": "featured:banjo-bluegrass",
@@ -28328,9 +28597,13 @@
       "from": "instrument:tb-303",
       "to": "genre:acid-house",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TB-303"
+        "https://en.wikipedia.org/wiki/Roland_TB-303",
+        "https://www.roland.com/global/roland-50th-anniversary/1980s/",
+        "https://articles.roland.com/lifetime-achievement-dj-pierre-and-phuture/",
+        "https://djmag.com/content/game-changers-phuture-acid-tracks"
       ],
-      "confidence": "medium"
+      "confidence": "high",
+      "note": "Phuture’s “Acid Tracks” made the TB-303’s resonant filter a defining part of acid house."
     },
     {
       "id": "featured:tb-303-psytrance",
@@ -28400,9 +28673,12 @@
       "from": "instrument:tr-808",
       "to": "genre:electro",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TR-808"
+        "https://en.wikipedia.org/wiki/Roland_TR-808",
+        "https://www.smithsonianmag.com/arts-culture/history-tr-808-drum-machine-180975205/",
+        "https://articles.roland.com/nothing-sounds-quite-like-an-808-analyzing-the-bass-that-changed-music/"
       ],
-      "confidence": "medium"
+      "confidence": "high",
+      "note": "Arthur Baker used a TR-808 on “Planet Rock,” an early electro recording."
     },
     {
       "id": "featured:tr-808-hip-hop",
@@ -28410,9 +28686,12 @@
       "from": "instrument:tr-808",
       "to": "genre:hip-hop",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TR-808"
+        "https://en.wikipedia.org/wiki/Roland_TR-808",
+        "https://www.smithsonianmag.com/arts-culture/history-tr-808-drum-machine-180975205/",
+        "https://articles.roland.com/nothing-sounds-quite-like-an-808-analyzing-the-bass-that-changed-music/"
       ],
-      "confidence": "medium"
+      "confidence": "high",
+      "note": "The TR-808 appears on early hip-hop recordings including “Planet Rock.”"
     },
     {
       "id": "featured:tr-808-southern-rap",
@@ -28420,9 +28699,11 @@
       "from": "instrument:tr-808",
       "to": "genre:southern-rap",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TR-808"
+        "https://en.wikipedia.org/wiki/Roland_TR-808",
+        "https://articles.roland.com/nothing-sounds-quite-like-an-808-analyzing-the-bass-that-changed-music/"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "note": "Southern rap producers used sampled 808 kicks and synthesized 808-style basslines."
     },
     {
       "id": "featured:tr-808-trap-rap",
@@ -28430,9 +28711,11 @@
       "from": "instrument:tr-808",
       "to": "genre:trap-rap",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TR-808"
+        "https://en.wikipedia.org/wiki/Roland_TR-808",
+        "https://articles.roland.com/nothing-sounds-quite-like-an-808-analyzing-the-bass-that-changed-music/"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "note": "Trap rap uses sustained 808-style bass derived from the drum machine’s kick sound."
     },
     {
       "id": "featured:tr-909-chicago-house",
@@ -28440,9 +28723,12 @@
       "from": "instrument:tr-909",
       "to": "genre:chicago-house",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TR-909"
+        "https://en.wikipedia.org/wiki/Roland_TR-909",
+        "https://daily.redbullmusicacademy.com/2018/02/frankie-knuckles-1995-interview/",
+        "https://web03125.microsites03.redbull.com/2017/05/interview-derrick-may/"
       ],
-      "confidence": "medium"
+      "confidence": "high",
+      "note": "Frankie Knuckles recalled using a TR-909, and Derrick May recalled selling him the machine."
     },
     {
       "id": "featured:tr-909-detroit-techno",
@@ -28450,9 +28736,12 @@
       "from": "instrument:tr-909",
       "to": "genre:detroit-techno",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TR-909"
+        "https://en.wikipedia.org/wiki/Roland_TR-909",
+        "https://www.roland.com/uk/promos/roland_tr-909/?lang=en-GB",
+        "https://mixmag.net/feature/909-brandededitorial"
       ],
-      "confidence": "medium"
+      "confidence": "high",
+      "note": "The TR-909 featured on Derrick May’s “Strings of Life.” Jeff Mills recalls acquiring one in 1986."
     },
     {
       "id": "featured:tr-909-gabber",
@@ -28460,9 +28749,12 @@
       "from": "instrument:tr-909",
       "to": "genre:gabber",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TR-909"
+        "https://en.wikipedia.org/wiki/Roland_TR-909",
+        "https://schatkamer.beeldengeluid.nl/serie/2101608030024879731/3doc/aflevering/2101608150133578631",
+        "https://www.electronicbeats.net/rotterdam-feature"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "note": "A Dutch broadcast archive documents a DJ demonstrating gabber beats on a TR-909."
     },
     {
       "id": "featured:tr-909-techno",
@@ -28470,9 +28762,12 @@
       "from": "instrument:tr-909",
       "to": "genre:techno",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TR-909"
+        "https://en.wikipedia.org/wiki/Roland_TR-909",
+        "https://www.roland.com/uk/promos/roland_tr-909/?lang=en-GB",
+        "https://mixmag.net/feature/909-brandededitorial"
       ],
-      "confidence": "medium"
+      "confidence": "high",
+      "note": "Derrick May used a TR-909 on “Strings of Life,” and Jeff Mills used it in his production and performance practice."
     },
     {
       "id": "featured:tr-909-trance",
@@ -28480,9 +28775,12 @@
       "from": "instrument:tr-909",
       "to": "genre:trance",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TR-909"
+        "https://en.wikipedia.org/wiki/Roland_TR-909",
+        "https://www.edmcanada.com/blog/2014/3/21/interview-mike-push",
+        "https://www.fazemag.de/im-studio-mit-ferry-corsten/"
       ],
-      "confidence": "medium"
+      "confidence": "high",
+      "note": "M.I.K.E. Push described using his TR-909 while developing a more melodic sound. Ferry Corsten also listed the machine among his studio equipment."
     },
     {
       "id": "featured:transverse-flute-baroque",
@@ -29195,9 +29493,12 @@
       "from": "artist:anibal-troilo",
       "to": "genre:tango",
       "sources": [
-        "https://www.allmusic.com/style/tango-ma0000002891"
+        "https://www.allmusic.com/style/tango-ma0000002891",
+        "https://www.argentina.gob.ar/node/465370",
+        "https://www.argentina.gob.ar/noticias/110-anos-del-nacimiento-de-anibal-troilo-un-emblema-de-la-musica-ciudadana"
       ],
-      "confidence": "medium"
+      "confidence": "high",
+      "note": "Troilo led his own tango orchestra from 1937, recording extensively and performing on Buenos Aires radio."
     },
     {
       "id": "key:anton-webern-serialism",
@@ -29279,9 +29580,13 @@
       "from": "artist:astor-piazzolla",
       "to": "genre:tango",
       "sources": [
-        "https://www.allmusic.com/style/tango-ma0000002891"
+        "https://www.allmusic.com/style/tango-ma0000002891",
+        "https://www.argentina.gob.ar/noticias/astor-piazzolla-el-tango-como-lenguaje-universal",
+        "https://www.argentina.gob.ar/noticias/110-anos-del-nacimiento-de-anibal-troilo-un-emblema-de-la-musica-ciudadana",
+        "https://astorpiazzolla.com/es/a-puro-piazzolla/"
       ],
-      "confidence": "medium"
+      "confidence": "high",
+      "note": "Piazzolla developed nuevo tango after working as a bandoneonist and arranger in Aníbal Troilo’s orchestra."
     },
     {
       "id": "key:astral-projection-psytrance",
@@ -29726,9 +30031,12 @@
       "from": "artist:carlos-gardel",
       "to": "genre:tango",
       "sources": [
-        "https://www.allmusic.com/style/tango-ma0000002891"
+        "https://www.allmusic.com/style/tango-ma0000002891",
+        "https://www.argentina.gob.ar/noticias/carlos-gardel-memoria-y-vigencia-del-zorzal-criollo",
+        "https://media.unesco.org/sites/default/files/webform/mow001/uruguay_records_carlos_gardel.pdf"
       ],
-      "confidence": "medium"
+      "confidence": "high",
+      "note": "Gardel’s 1917 recording of “Mi noche triste” was a formative recording of tango canción."
     },
     {
       "id": "key:carlos-vives-cumbia",
@@ -35696,10 +36004,11 @@
       "type": "derived_from",
       "from": "instrument:tr-909",
       "to": "instrument:tr-808",
-      "confidence": "medium",
-      "note": "Roland's successor to the TR-808, adding sampled cymbals and MIDI.",
+      "confidence": "high",
+      "note": "Roland developed the TR-909 as a successor to the TR-808, adding sampled cymbals and MIDI.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TR-909"
+        "https://en.wikipedia.org/wiki/Roland_TR-909",
+        "https://www.roland.com/uk/promos/roland_tr-909/?lang=en-GB"
       ]
     },
     {
@@ -40562,8 +40871,12 @@
       "from": "event:berliner-gramophone-patent",
       "to": "genre:romantic",
       "sources": [
-        "https://www.loc.gov/collections/emile-berliner/articles-and-essays/gramophone/"
-      ]
+        "https://www.loc.gov/collections/emile-berliner/articles-and-essays/gramophone/",
+        "https://www.loc.gov/item/jukebox-119158/",
+        "https://tile.loc.gov/storage-services/service/ndnp/prru/batch_prru_gato_ver02/data/sn91099747/00271766233/1910101801/0348.pdf"
+      ],
+      "confidence": "low",
+      "note": "The later commercial disc format circulated late nineteenth-century operatic repertoire, including Caruso’s recordings of Leoncavallo."
     },
     {
       "id": "shaped:billboard-hot-100-launch-pop",
@@ -40619,8 +40932,12 @@
       "from": "event:compact-disc-market-launch",
       "to": "genre:pop",
       "sources": [
-        "https://www.loc.gov/static/managed-content/uploads/sites/6/2017/02/recorded_sound_timeline-2013.pdf"
-      ]
+        "https://www.loc.gov/static/managed-content/uploads/sites/6/2017/02/recorded_sound_timeline-2013.pdf",
+        "https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-07.html",
+        "https://www.riaa.com/goldandplatinum60/"
+      ],
+      "confidence": "medium",
+      "note": "The compact disc changed how pop albums were distributed. Pop appeared in the initial Japanese catalog, and U.S. CD sales overtook cassette sales by 1992 across genres."
     },
     {
       "id": "shaped:congolese-rumba-emerges-congolese-rumba",
@@ -40917,8 +41234,12 @@
       "from": "event:lp-introduced",
       "to": "genre:cool-jazz",
       "sources": [
-        "https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/"
-      ]
+        "https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/",
+        "https://www.loc.gov/collections/gerry-mulligan/articles-and-essays/jeru-in-the-words-of-gerry-mulligan/miles-davis/",
+        "https://tile.loc.gov/storage-services/service/gdc/gdcfindingaidpdfs/mu011017/mu011017.pdf"
+      ],
+      "confidence": "medium",
+      "note": "The LP helped circulate cool jazz as an album program. Capitol compiled recordings from Miles Davis’s 1949–1950 sessions as Birth of the Cool in 1957."
     },
     {
       "id": "shaped:lutheran-chorale-printing-renaissance",
@@ -41103,8 +41424,12 @@
       "to": "genre:romantic",
       "sources": [
         "https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/",
-        "https://www.nps.gov/edis/learn/historyculture/phonograph.htm"
-      ]
+        "https://www.nps.gov/edis/learn/historyculture/phonograph.htm",
+        "https://www.loc.gov/loc/lcib/0303/sound.html",
+        "https://www.loc.gov/collections/edison-company-motion-pictures-and-sound-recordings/articles-and-essays/history-of-edison-sound-recordings/history-of-the-cylinder-phonograph/"
+      ],
+      "confidence": "low",
+      "note": "Later cylinder phonographs preserved excerpts of opera performances. The connection concerns preservation of repertoire and performance."
     },
     {
       "id": "shaped:renaissance-musical-exchange-renaissance",
@@ -41197,8 +41522,12 @@
       "to": "genre:pop",
       "sources": [
         "https://www.sony.com/en/SonyInfo/CorporateInfo/History/sonyhistory/2-01.html",
-        "https://www.sony.com/en/SonyInfo/News/Press/201907/19-067E/"
-      ]
+        "https://www.sony.com/en/SonyInfo/News/Press/201907/19-067E/",
+        "https://journals.sagepub.com/doi/10.1177/14614440122226047",
+        "https://music.si.edu/story/smithsonian-collections-object-sony-tps-l2-%E2%80%9Cwalkman%E2%80%9D-cassette-player-national-museum-american"
+      ],
+      "confidence": "low",
+      "note": "The Walkman helped make recorded music part of private, portable headphone listening. The documented effect concerns listening habits across genres."
     },
     {
       "id": "shaped:woodstock-festival-rock",
