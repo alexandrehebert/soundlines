@@ -226,7 +226,12 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, placement,
                   <g key={phase.start} data-prominence={phase.prominence} pointerEvents="all">
                     <rect x={x} y={bar.yCenter - BAR_H / 2}
                       width={Math.max(0, endX - x)} height={BAR_H} fill="transparent" />
-                    <title>{`${labels[phase.prominence]}: c. ${phase.start}–${phase.end}. ${bar.node.phaseNote ?? ''}`}</title>
+                    <title>{[
+                      `${labels[phase.prominence]}: c. ${phase.start}–${phase.end}.`,
+                      phase.note,
+                      phase.confidence ? `Phase confidence: ${phase.confidence}.` : undefined,
+                      bar.node.phaseNote,
+                    ].filter(Boolean).join(' ')}</title>
                   </g>
                 )
               })}

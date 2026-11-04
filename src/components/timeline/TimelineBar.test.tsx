@@ -46,6 +46,22 @@ describe('bar selection outline', () => {
     { id: 'artist:a', type: 'artist', name: 'Artist', family: 'jazz', period: { start: 1960 } },
   ]
 
+  it('includes phase-specific context and confidence in the phase tooltip', () => {
+    const node: GraphNode = {
+      ...nodes[1],
+      phaseNote: 'Editorial summary.',
+      phases: [
+        { start: 1960, prominence: 'golden-age', confidence: 'medium', note: 'A documented transition.' },
+        { start: 1980, prominence: 'established' },
+      ],
+    }
+    const markup = renderBar(node, false)
+    expect(markup).toContain(
+      '<title>Golden age: c. 1960–1980. A documented transition. Phase confidence: medium. Editorial summary.</title>',
+    )
+    expect(markup).toContain('<title>Continuing: c. 1980–2000. Editorial summary.</title>')
+  })
+
   it('fades historical bar tails all the way to transparency', () => {
     const node: GraphNode = {
       id: 'genre:historical', type: 'genre', name: 'Historical', family: 'classical',

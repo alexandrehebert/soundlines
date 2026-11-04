@@ -117,21 +117,38 @@ export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
             </h3>
             <ul className="flex flex-col gap-2">
               {phases.map((phase) => (
-                <li key={phase.start} className="flex items-center justify-between gap-3 text-xs text-slate-300">
-                  <span className="flex items-center gap-2">
-                    <svg width="24" height="14" aria-hidden="true">
-                      {phaseIntensity(phase) > 0 ? (
-                        <rect x="0" y="2" width="24" height="10" rx="3"
-                          fill={intensityColor(typeColor, phaseIntensity(phase))}
-                          opacity={intensityOpacity(phaseIntensity(phase))} />
-                      ) : (
-                        <rect x="0.5" y="2.5" width="23" height="9" rx="3"
-                          fill="none" stroke="#475569" strokeDasharray="2 2" />
+                <li key={phase.start} className="text-xs text-slate-300">
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="flex items-center gap-2">
+                      <svg width="24" height="14" aria-hidden="true">
+                        {phaseIntensity(phase) > 0 ? (
+                          <rect x="0" y="2" width="24" height="10" rx="3"
+                            fill={intensityColor(typeColor, phaseIntensity(phase))}
+                            opacity={intensityOpacity(phaseIntensity(phase))} />
+                        ) : (
+                          <rect x="0.5" y="2.5" width="23" height="9" rx="3"
+                            fill="none" stroke="#475569" strokeDasharray="2 2" />
+                        )}
+                      </svg>
+                      {labels[phase.prominence]}
+                    </span>
+                    <span className="flex flex-wrap items-center justify-end gap-x-2 gap-y-0.5">
+                      {phase.confidence && (
+                        <span
+                          className="text-[10px] font-semibold"
+                          style={{ color: CONFIDENCE_COLORS[phase.confidence] }}
+                          title={`Phase confidence: ${phase.confidence}`}
+                        >
+                          Confidence: {phase.confidence}
+                        </span>
                       )}
-                    </svg>
-                    {labels[phase.prominence]}
-                  </span>
-                  <span>c. {phase.start} – {phase.end === CURRENT_YEAR && node.period?.end == null ? 'now' : phase.end}</span>
+                      <span>c. {phase.start} – {phase.end === CURRENT_YEAR && node.period?.end == null ? 'now' : phase.end}</span>
+                    </span>
+                  </div>
+                  {phase.note && (
+                    <p className="mt-1 leading-relaxed text-slate-400">{phase.note}</p>
+                  )}
+                  <SourceLinks sources={phase.sources} />
                 </li>
               ))}
             </ul>

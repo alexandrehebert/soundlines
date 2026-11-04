@@ -37,6 +37,37 @@ describe('graph.json integrity', () => {
       }
     }
   })
+
+  it('uses valid optional phase-level evidence', () => {
+    for (const node of graph.nodes) {
+      for (const phase of node.phases ?? []) {
+        const label = `${node.id}, phase ${phase.start}`
+        if (phase.confidence !== undefined) {
+          expect(['low', 'medium', 'high'], label).toContain(phase.confidence)
+        }
+        if (phase.note !== undefined) {
+          expect(typeof phase.note, label).toBe('string')
+          expect(phase.note.trim().length, label).toBeGreaterThan(0)
+        }
+        if (phase.sources !== undefined) {
+          expect(Array.isArray(phase.sources), label).toBe(true)
+          expect(phase.sources.length, label).toBeGreaterThan(0)
+        }
+      }
+    }
+  })
+
+  it('includes additional genre and instrument phases and sourced phase notes', () => {
+    const maqam = graph.nodes.find((node) => node.id === 'genre:arabic-maqam')
+    const piano = graph.nodes.find((node) => node.id === 'instrument:piano')
+    const tb303 = graph.nodes.find((node) => node.id === 'instrument:tb-303')
+    expect(maqam?.phases?.length).toBeGreaterThan(0)
+    expect(piano?.phases?.some((phase) => phase.confidence !== undefined)).toBe(true)
+    const acidPhase = tb303?.phases?.find((phase) => phase.start === 1987)
+    expect(acidPhase?.note).toBeTruthy()
+    expect(acidPhase?.sources?.length).toBeGreaterThan(0)
+  })
+
   it('has unique node ids', () => {
     const ids = graph.nodes.map((node) => node.id)
     expect(new Set(ids).size).toBe(ids.length)
@@ -529,7 +560,7 @@ describe('graph.json integrity', () => {
     }
   })
 
-  it('provides valid HTTPS sources for every artist and artist relationship', () => {
+  it('requires artist sources and validates HTTPS sources throughout the graph', () => {
     const artists = graph.nodes.filter((node) => node.type === 'artist')
     const artistIds = new Set(artists.map((node) => node.id))
     for (const artist of artists) {
@@ -543,6 +574,7 @@ describe('graph.json integrity', () => {
     for (const source of [
       ...graph.nodes.flatMap((node) => node.sources ?? []),
       ...graph.edges.flatMap((edge) => edge.sources ?? []),
+      ...graph.nodes.flatMap((node) => (node.phases ?? []).flatMap((phase) => phase.sources ?? [])),
     ]) {
       const url = new URL(source)
       expect(url.protocol).toBe('https:')

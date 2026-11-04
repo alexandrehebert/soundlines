@@ -46,6 +46,33 @@ function renderPanel(data: MusicGraph, selectedId: string) {
 }
 
 describe('detail panel sources', () => {
+  it('shows phase-specific confidence, notes, and sources alongside the editorial summary', () => {
+    const data: MusicGraph = {
+      ...graph,
+      nodes: graph.nodes.map((node) => node.id === 'genre:jazz' ? {
+        ...node,
+        phases: [
+          {
+            start: 1900, prominence: 'emerging', confidence: 'medium',
+            note: 'A documented transition.', sources: ['https://example.com/Phase'],
+          },
+          { start: 1920, prominence: 'established' },
+        ],
+        phaseNote: 'Editorial shading, not a measured ranking.',
+      } : node),
+    }
+    const markup = renderPanel(data, 'genre:jazz')
+
+    expect(markup).toContain('title="Phase confidence: medium"')
+    expect(markup).toContain('Confidence: medium')
+    expect(markup.match(/title="Phase confidence:/g)).toHaveLength(1)
+    expect(markup).toContain('A documented transition.')
+    expect(markup).toContain('href="https://example.com/Phase"')
+    expect(markup).toContain('Editorial shading, not a measured ranking.')
+    expect(markup).toContain('Continuing')
+    expect(markup).not.toContain('undefined')
+  })
+
   it('shows event category, landmark status, approximate dates, and graph links', () => {
     const data: MusicGraph = {
       ...graph,

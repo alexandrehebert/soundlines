@@ -112,6 +112,12 @@ export type Prominence = 'emerging' | 'golden-age' | 'established' | 'niche'
 export interface ProminencePhase {
   start: number
   prominence: Prominence
+  /** Evidence strength for this phase interpretation. */
+  confidence?: Confidence
+  /** Phase-specific rationale or historical context. */
+  note?: string
+  /** Sources supporting the phase-specific note or boundary. */
+  sources?: string[]
   /** Optional finer shade (0–1) than the prominence default; 0 hides the bar. */
   intensity?: number
 }
@@ -161,7 +167,7 @@ export interface GraphNode {
   /** Events only. */
   significance?: EventSignificance
   sources?: string[]
-  /** Editorial genre or career prominence, not measured popularity. */
+  /** Editorial genre, career, or instrument-use prominence, not measured popularity. */
   phases?: ProminencePhase[]
   phaseNote?: string
 }

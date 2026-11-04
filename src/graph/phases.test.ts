@@ -33,6 +33,27 @@ describe('historical prominence', () => {
     ])
   })
 
+  it('preserves phase-level evidence when calculating intervals', () => {
+    const annotated: GraphNode = {
+      ...node,
+      phases: [{
+        start: 1955,
+        prominence: 'emerging',
+        confidence: 'medium',
+        note: 'An approximate transition.',
+        sources: ['https://example.com/phase'],
+      }],
+    }
+    expect(prominencePhases(annotated, 2026)).toEqual([{
+      start: 1955,
+      end: 2026,
+      prominence: 'emerging',
+      confidence: 'medium',
+      note: 'An approximate transition.',
+      sources: ['https://example.com/phase'],
+    }])
+  })
+
   it('does not infer prominence for unannotated genres', () => {
     expect(prominencePhases({ ...node, phases: undefined }, 2026)).toEqual([])
   })

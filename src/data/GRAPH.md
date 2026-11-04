@@ -383,11 +383,16 @@ Ids must be unique across all edges.
 ## 5. Prominence phases (optional, genres, artists & instruments)
 
 `phases` describes editorial prominence over time. It does not measure sales or streams.
+When available, phase-level confidence and notes appear in visible timeline-bar
+tooltips and the detail panel; phase-level sources are linked in the detail panel.
 
 ```ts
 interface ProminencePhase {
   start: number            // Integer year
   prominence: 'emerging' | 'golden-age' | 'established' | 'niche'
+  confidence?: 'low' | 'medium' | 'high' // Evidence strength for this phase interpretation
+  note?: string            // Why this phase begins or what distinguishes it
+  sources?: string[]       // Sources supporting this phase-specific note or boundary
   intensity?: number       // 0–1. It overrides the default shade
 }
 ```
@@ -398,10 +403,25 @@ Rules:
 - Phases are strictly ascending by `start`; each lasts until the next starts.
 - If `period.end` is set, every phase `start` must be `< period.end`.
 - `niche` hides the bar. If `intensity` is given with `niche`, it **must be 0**.
+- `confidence` is optional and uses the graph-wide `low` / `medium` / `high`
+  vocabulary. It describes evidence for phase boundaries and prominence
+  interpretation, not the precision of `period`, a measured popularity value,
+  or confidence that the genre or instrument exists. Use `high` only when strong,
+  independent sources directly support the transition; `medium` when the broad
+  transition is supported but boundaries remain approximate; and `low` for a
+  provisional editorial estimate or thin evidence. Keep `phaseNote` to explain
+  the basis.
 - Default intensities: emerging 0.35, golden-age 1, established 0.45, niche 0.
 - Revivals: return from `niche` to `emerging`/`established` later.
-- `phaseNote` is **required** when `phases` exists. It explains what the shading is based
-  on and states that it is editorial, not a measured ranking.
+- `phaseNote` is **required** when `phases` exists. It gives the node-level summary of
+  the full sequence and states that the shading is editorial, not a measured ranking.
+- A phase-level `note` is optional. Use it only when a phase has its own useful rationale
+  or a specific transition to explain; keep it concise and do not repeat the node-level
+  `phaseNote`. When a note makes a specific historical claim, add phase-level `sources`
+  that support that claim or boundary. If present, `sources` must contain at least one
+  valid HTTPS URL and follow the same rules as node sources. Do not copy all node
+  sources into every phase. An absent note or source does not imply that a phase boundary
+  has been independently verified.
 - For artists, phases describe the **active career** (labels: Emerging / Peak
   years / Continuing / Low profile or hiatus), anchored to documented milestones
   (key albums, breakups, reunions). Do not include posthumous popularity.
@@ -420,8 +440,11 @@ Example:
   "id": "genre:soul", "type": "genre", "name": "Soul", "family": "blues-soul",
   "period": { "start": 1955 },
   "phases": [
-    { "start": 1955, "prominence": "emerging", "intensity": 0.3 },
-    { "start": 1965, "prominence": "golden-age", "intensity": 1 },
+    { "start": 1955, "prominence": "emerging", "intensity": 0.3, "confidence": "medium" },
+    { "start": 1960, "prominence": "established", "confidence": "medium",
+      "note": "Soul became prominent in the 1960s; this is an approximate period, not a measured score.",
+      "sources": ["https://timeline.carnegiehall.org/genres/soul"] },
+    { "start": 1965, "prominence": "golden-age", "intensity": 1, "confidence": "medium" },
     { "start": 1978, "prominence": "established", "intensity": 0.55 },
     { "start": 1996, "prominence": "established", "intensity": 0.6 }
   ],
@@ -597,6 +620,10 @@ patch** in this exact shape:
 - [ ] Lineage directions follow the table in §3
 - [ ] `phases` (if any) start at `period.start`, ascend, have a `phaseNote`, and
       `niche` intensity is 0
+- [ ] Phase `confidence` values (if present) use `low`, `medium`, or `high` and are
+      explained in `phaseNote`
+- [ ] Phase `note` values (if present) add a specific rationale; claim-level
+      `sources` support factual dates or transitions
 - [ ] New families are listed in `newFamilies`
 - [ ] Every new event has `category`, `period`, `description`, `sources`, a
       timeline-caption `name`, and ≥ 1 sourced `shaped` edge; it duplicates no
