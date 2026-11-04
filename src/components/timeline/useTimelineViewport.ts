@@ -7,10 +7,13 @@ type TimelinePointerEvent = Pick<
   'button' | 'clientX' | 'clientY' | 'currentTarget' | 'pointerId' | 'pointerType' | 'target'
 >
 
+const VERTICAL_OVERSCAN = 180
+
 export function useTimelineViewport() {
   const { viewRange, setViewRange, selectNode } = useExplorer()
   const containerRef = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState(0)
+  const [verticalViewport, setVerticalViewport] = useState<{ top: number; bottom: number } | null>(null)
   const suppressClick = useRef(false)
   const activePointers = useRef(new Map<number, { x: number; y: number }>())
   const pinch = useRef<{
@@ -34,20 +37,44 @@ export function useTimelineViewport() {
   useEffect(() => {
     const element = containerRef.current
     if (!element) return
-    const observer = new ResizeObserver((entries) => setWidth(entries[0].contentRect.width))
+    const updateViewport = () => setVerticalViewport({
+      top: element.scrollTop - VERTICAL_OVERSCAN,
+      bottom: element.scrollTop + element.clientHeight + VERTICAL_OVERSCAN,
+    })
+    const observer = new ResizeObserver((entries) => {
+      setWidth(entries[0].contentRect.width)
+      updateViewport()
+    })
     observer.observe(element)
-    return () => observer.disconnect()
+    element.addEventListener('scroll', updateViewport, { passive: true })
+    return () => {
+      observer.disconnect()
+      element.removeEventListener('scroll', updateViewport)
+    }
   }, [])
 
   useEffect(() => {
     const element = containerRef.current
     if (!element) return
+    let frame: number | null = null
+    let updates: ((current: [number, number]) => [number, number])[] = []
+    const enqueue = (update: (current: [number, number]) => [number, number]) => {
+      updates.push(update)
+      if (frame !== null) return
+      frame = requestAnimationFrame(() => {
+        frame = null
+        const pending = updates
+        updates = []
+        setViewRange((current) => pending.reduce((range, apply) => apply(range), current))
+      })
+    }
     const onWheel = (event: WheelEvent) => {
+      if (!event.ctrlKey && !event.metaKey && Math.abs(event.deltaX) <= Math.abs(event.deltaY)) return
       const rect = element.querySelector('svg')?.getBoundingClientRect()
       if (!rect?.width) return
       if (event.ctrlKey || event.metaKey) {
         event.preventDefault()
-        setViewRange((current) => {
+        enqueue((current) => {
           const focusYear = xToYear(
             { start: current[0], end: current[1], width: rect.width, padding: TIMELINE_PADDING },
             event.clientX - rect.left,
@@ -56,11 +83,14 @@ export function useTimelineViewport() {
         })
       } else if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
         event.preventDefault()
-        setViewRange((current) => panYearRange(current, event.deltaX / (rect.width - 2 * TIMELINE_PADDING)))
+        enqueue((current) => panYearRange(current, event.deltaX / Math.max(1, rect.width - 2 * TIMELINE_PADDING)))
       }
     }
     element.addEventListener('wheel', onWheel, { passive: false })
-    return () => element.removeEventListener('wheel', onWheel)
+    return () => {
+      element.removeEventListener('wheel', onWheel)
+      if (frame !== null) cancelAnimationFrame(frame)
+    }
   }, [setViewRange])
 
   const onPointerDown = (event: TimelinePointerEvent) => {
@@ -218,7 +248,7 @@ export function useTimelineViewport() {
   }
 
   return {
-    containerRef, width, select,
+    containerRef, width, verticalViewport, select,
     handlers: {
       onPointerDown, onPointerMove, onPointerUp: endDrag, onPointerCancel: cancelDrag,
       onClick: () => select(null),

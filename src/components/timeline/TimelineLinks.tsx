@@ -8,9 +8,10 @@ interface TimelineLinksProps {
   barById: Map<string, BarPosition>
   scale: TimeScale
   highlightedEdges: Set<string> | null
+  verticalViewport?: { top: number; bottom: number } | null
 }
 
-export function TimelineLinks({ barById, scale, highlightedEdges }: TimelineLinksProps) {
+export function TimelineLinks({ barById, scale, highlightedEdges, verticalViewport }: TimelineLinksProps) {
   const { model } = useExplorer()
   const view = model.view
   return model.index.graph.edges.map((edge) => {
@@ -19,6 +20,8 @@ export function TimelineLinks({ barById, scale, highlightedEdges }: TimelineLink
     const parent = sourceId ? barById.get(sourceId) : undefined
     const child = targetId ? barById.get(targetId) : undefined
     if (!parent?.visibleSpans.length || !child?.visibleSpans.length) return null
+    if (verticalViewport && (Math.max(parent.yCenter, child.yCenter) + BAR_H < verticalViewport.top
+      || Math.min(parent.yCenter, child.yCenter) - BAR_H > verticalViewport.bottom)) return null
     const goingDown = child.yCenter >= parent.yCenter
     const linkX = view === 'artist'
       ? yearToX(scale, edge.period?.start ?? child.node.period!.start)

@@ -117,7 +117,9 @@ historical events. Artist lanes and detail badges use the same families.
   label density on narrow screens.
   Reduced-motion preferences shorten interface transitions.
 - Horizontal trackpad momentum is handled by the timeline without native
-  horizontal overscroll; rapid wheel updates accumulate rather than overwrite one another.
+  horizontal overscroll; rapid wheel updates accumulate in input order and render
+  once per animation frame. Detailed bars and links render near the vertical
+  viewport, while every bar remains keyboard-accessible; focusing a row reveals it.
 - Both timeline modes pad the time range by 24px on each side within a full-width
   drawing surface; panning and background bands extend all the way to the edges.
 - Click a bar or focus it and press Enter/Space for details; every relation in the panel is navigable

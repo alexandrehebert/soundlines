@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type SetStateAction } from 'react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { panYearRange, TIMELINE_PADDING, xToYear, zoomYearRange } from '../../graph/layout.ts'
+import { MIN_YEAR, panYearRange, TIMELINE_PADDING, xToYear, zoomYearRange } from '../../graph/layout.ts'
 import { useTimelineViewport } from './useTimelineViewport.ts'
 
 type YearRange = [number, number]
@@ -29,6 +29,7 @@ describe('timeline wheel input', () => {
   const width = 800
   let surface: EventTarget
   let cleanup: ReturnType<Parameters<typeof useEffect>[0]>
+  let frames: Map<number, FrameRequestCallback>
 
   const wheel = (deltaX: number, deltaY = 0, ctrlKey = false) => {
     const event = new Event('wheel', { cancelable: true })
@@ -42,6 +43,9 @@ describe('timeline wheel input', () => {
   }
 
   const flush = () => {
+    const callbacks = [...frames.values()]
+    frames.clear()
+    for (const callback of callbacks) callback(0)
     for (const update of explorer.pending.splice(0)) {
       explorer.range = typeof update === 'function' ? update(explorer.range) : update
     }
@@ -51,6 +55,13 @@ describe('timeline wheel input', () => {
     vi.clearAllMocks()
     explorer.range = [1800, 2000]
     explorer.pending = []
+    frames = new Map()
+    let frameId = 0
+    vi.stubGlobal('requestAnimationFrame', vi.fn((callback: FrameRequestCallback) => {
+      frames.set(++frameId, callback)
+      return frameId
+    }))
+    vi.stubGlobal('cancelAnimationFrame', vi.fn((id: number) => frames.delete(id)))
     surface = Object.assign(new EventTarget(), {
       querySelector: () => ({ getBoundingClientRect: () => ({ width, left: 0 }) }),
     })
@@ -61,12 +72,18 @@ describe('timeline wheel input', () => {
     cleanup = vi.mocked(useEffect).mock.calls[1][0]()
   })
 
-  afterEach(() => { cleanup?.() })
+  afterEach(() => {
+    cleanup?.()
+    vi.unstubAllGlobals()
+  })
 
   it('accumulates a rapid horizontal burst before React commits', () => {
     const expected = panYearRange(explorer.range, -100 / (width - 2 * TIMELINE_PADDING))
     for (let i = 0; i < 20; i++) expect(wheel(-5).defaultPrevented).toBe(true)
+    expect(explorer.setViewRange).not.toHaveBeenCalled()
+    expect(frames.size).toBe(1)
     flush()
+    expect(explorer.setViewRange).toHaveBeenCalledTimes(1)
     expect(explorer.range[0]).toBeCloseTo(expected[0])
     expect(explorer.range[1]).toBeCloseTo(expected[1])
   })
@@ -92,12 +109,64 @@ describe('timeline wheel input', () => {
     expect(explorer.range).toEqual(zoomYearRange(panned, focus, 0.89))
   })
 
+  it('preserves reversals at the range boundary within a frame', () => {
+    explorer.range = [MIN_YEAR, MIN_YEAR + 200]
+    const expected = panYearRange(
+      panYearRange(explorer.range, -100 / (width - 2 * TIMELINE_PADDING)),
+      40 / (width - 2 * TIMELINE_PADDING),
+    )
+    wheel(-100)
+    wheel(40)
+    flush()
+    expect(explorer.range).toEqual(expected)
+    expect(explorer.range[0]).toBeGreaterThan(MIN_YEAR)
+  })
+
+  it('cancels a pending frame when the timeline unmounts', () => {
+    wheel(-40)
+    cleanup?.()
+    expect(cancelAnimationFrame).toHaveBeenCalledTimes(1)
+    flush()
+    expect(explorer.setViewRange).not.toHaveBeenCalled()
+  })
+
   it('preserves native vertical scrolling and removes the listener on cleanup', () => {
     expect(wheel(1, 40).defaultPrevented).toBe(false)
     expect(explorer.pending).toHaveLength(0)
     cleanup?.()
     expect(wheel(-40).defaultPrevented).toBe(false)
     expect(explorer.pending).toHaveLength(0)
+  })
+})
+
+describe('timeline vertical viewport', () => {
+  it('tracks resize and native scroll with overscan, and cleans up both listeners', () => {
+    vi.clearAllMocks()
+    const surface = Object.assign(new EventTarget(), { scrollTop: 0, clientHeight: 500 })
+    const setViewport = vi.fn()
+    const disconnect = vi.fn()
+    let resize: ResizeObserverCallback | undefined
+    vi.stubGlobal('ResizeObserver', class {
+      constructor(callback: ResizeObserverCallback) { resize = callback }
+      observe = vi.fn()
+      disconnect = disconnect
+    })
+    vi.mocked(useRef).mockImplementation((initial) => ({ current: initial }))
+      .mockReturnValueOnce({ current: surface })
+    vi.mocked(useState).mockReturnValueOnce([800, vi.fn()]).mockReturnValueOnce([null, setViewport])
+    useTimelineViewport()
+    const cleanup = vi.mocked(useEffect).mock.calls[0][0]()
+    resize?.([{ contentRect: { width: 800 } } as ResizeObserverEntry], {} as ResizeObserver)
+    expect(setViewport).toHaveBeenLastCalledWith({ top: -180, bottom: 680 })
+    surface.scrollTop = 1000
+    surface.dispatchEvent(new Event('scroll'))
+    expect(setViewport).toHaveBeenLastCalledWith({ top: 820, bottom: 1680 })
+    cleanup?.()
+    expect(disconnect).toHaveBeenCalledOnce()
+    setViewport.mockClear()
+    surface.dispatchEvent(new Event('scroll'))
+    expect(setViewport).not.toHaveBeenCalled()
+    vi.unstubAllGlobals()
   })
 })
 

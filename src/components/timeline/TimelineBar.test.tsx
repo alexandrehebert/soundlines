@@ -10,7 +10,7 @@ import { TimelineBar } from './TimelineBar.tsx'
 import type { BarPosition, OffscreenIndicator } from './geometry.ts'
 
 function renderBar(node: GraphNode, selected: boolean, indicator?: OffscreenIndicator, position?: Partial<BarPosition>,
-  scale: TimeScale = { start: 1948, end: 2026, width: 800 }) {
+  scale: TimeScale = { start: 1948, end: 2026, width: 800 }, renderDetails = true) {
   const index = buildIndex({ version: 1, nodes: [node], edges: [] })
   const view = node.type === 'artist' ? 'artist' : 'genre'
   const bar: BarPosition = {
@@ -28,7 +28,7 @@ function renderBar(node: GraphNode, selected: boolean, indicator?: OffscreenIndi
     }}>
       <svg>
         <TimelineBar bar={bar} scale={scale}
-          dimmed={false} indicator={indicator} onSelect={vi.fn()} />
+          dimmed={false} indicator={indicator} renderDetails={renderDetails} onSelect={vi.fn()} />
       </svg>
     </ExplorerContext.Provider>,
   )
@@ -45,6 +45,17 @@ describe('bar selection outline', () => {
       ] },
     { id: 'artist:a', type: 'artist', name: 'Artist', family: 'jazz', period: { start: 1960 } },
   ]
+
+  it('retains a keyboard-accessible bar without expensive offscreen SVG details', () => {
+    const markup = renderBar(nodes[1], false, undefined, undefined, undefined, false)
+    expect(markup).toContain('data-timeline-bar="genre:phased"')
+    expect(markup).toContain('role="button" tabindex="0" aria-label="Phased" aria-pressed="false"')
+    expect(markup).toContain('<title>Phased</title>')
+    expect(markup).not.toContain('<path')
+    expect(markup).not.toContain('<defs')
+    expect(markup).not.toContain('data-label-measure')
+    expect(markup).toContain('<rect x="0" y="32" width="800" height="36" fill="none" pointer-events="none"')
+  })
 
   it('includes phase-specific context and confidence in the phase tooltip', () => {
     const node: GraphNode = {

@@ -8,10 +8,14 @@ import type { MusicGraph } from '../graph/types.ts'
 import { Timeline } from './Timeline.tsx'
 import { AXIS_H } from './timeline/geometry.ts'
 
-const viewport = vi.hoisted(() => ({ width: 800 }))
+const viewport = vi.hoisted(() => ({
+  width: 800,
+  verticalViewport: null as { top: number; bottom: number } | null,
+}))
 vi.mock('./timeline/useTimelineViewport.ts', () => ({
   useTimelineViewport: () => ({
-    containerRef: { current: null }, width: viewport.width, select: vi.fn(), handlers: {},
+    containerRef: { current: null }, width: viewport.width, verticalViewport: viewport.verticalViewport,
+    select: vi.fn(), handlers: {},
   }),
 }))
 
@@ -28,15 +32,20 @@ const graph: MusicGraph = {
     { id: 'instrument:piano', type: 'instrument', name: 'Piano', family: 'keyboards', period: { start: 1700 } },
     { id: 'instrument:flute', type: 'instrument', name: 'Flute', family: 'winds', period: { start: 1000 } },
   ],
-  edges: [],
+  edges: [
+    { id: 'early-link', from: 'artist:historical', to: 'artist:earlier', type: 'influences' },
+    { id: 'middle-link', from: 'artist:earlier', to: 'artist:a', type: 'influences' },
+    { id: 'late-link', from: 'artist:a', to: 'artist:later', type: 'influences' },
+    { id: 'crossing-link', from: 'artist:historical', to: 'artist:later', type: 'influences' },
+  ],
 }
 
-function renderTimeline(view: TimelineView, order: TimelineOrder, viewRange: [number, number]) {
+function renderTimeline(view: TimelineView, order: TimelineOrder, viewRange: [number, number], selectedId: string | null = null) {
   const index = buildIndex(graph)
   return renderToStaticMarkup(
     <ExplorerContext.Provider value={{
       index, model: createTimelineModel(index, view), view,
-      selectedId: null, selectNode: vi.fn(), changeView: vi.fn(),
+      selectedId, selectNode: vi.fn(), changeView: vi.fn(),
       order, changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(),
       historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
       viewRange, setViewRange: vi.fn(),
@@ -46,9 +55,38 @@ function renderTimeline(view: TimelineView, order: TimelineOrder, viewRange: [nu
   )
 }
 
-describe('timeline year axis', () => {
-  beforeEach(() => { viewport.width = 800 })
+beforeEach(() => {
+  viewport.width = 800
+  viewport.verticalViewport = null
+})
 
+describe('timeline viewport rendering', () => {
+  it('only renders nearby row details while retaining every keyboard target', () => {
+    viewport.verticalViewport = { top: 50, bottom: 80 }
+    const markup = renderTimeline('artist', 'oldest-first', [1700, 2026])
+    expect(markup.match(/data-timeline-bar=/g)).toHaveLength(4)
+    expect(markup.match(/role="button" tabindex="0"/g)).toHaveLength(4)
+    expect([...markup.matchAll(/data-label-measure="([^"]+)"/g)].map((match) => match[1]))
+      .toEqual(['artist:historical'])
+
+    const selected = renderTimeline('artist', 'oldest-first', [1700, 2026], 'artist:later')
+    expect(selected).toContain('data-label-measure="artist:later"')
+  })
+
+  it('retains links crossing the viewport even when both endpoint rows are outside', () => {
+    viewport.verticalViewport = { top: 132, bottom: 145 }
+    const markup = renderTimeline('artist', 'oldest-first', [1700, 2026])
+    expect(markup).not.toContain('data-timeline-link="early-link"')
+    expect(markup).toContain('data-timeline-link="middle-link"')
+    expect(markup).toContain('data-timeline-link="late-link"')
+    expect(markup).toContain('data-timeline-link="crossing-link"')
+
+    viewport.verticalViewport = { top: -100, bottom: -50 }
+    expect(renderTimeline('artist', 'oldest-first', [1700, 2026])).not.toContain('data-timeline-link=')
+  })
+})
+
+describe('timeline year axis', () => {
   it.each([
     ['genre', 'family'],
     ['genre', 'oldest-first'],

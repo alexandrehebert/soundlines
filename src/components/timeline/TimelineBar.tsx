@@ -23,6 +23,7 @@ interface TimelineBarProps {
   indicator?: OffscreenIndicator
   rowBars?: BarPosition[]
   placement?: BarLabel | null
+  renderDetails?: boolean
   onSelect: (id: string, revealYear?: number) => void
 }
 
@@ -51,8 +52,9 @@ function BarSelectionOutline({ x, y, width, ended = false }: {
   )
 }
 
-export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, placement, onSelect }: TimelineBarProps) {
-  const { selectedId, selectNode, viewRange, setViewRange } = useExplorer()
+function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSelected }: Pick<
+  TimelineBarProps, 'bar' | 'scale' | 'indicator' | 'rowBars' | 'placement'
+> & { isSelected: boolean }) {
   const measureRef = useRef<SVGTextElement>(null)
   const [labelMetrics, setLabelMetrics] = useState<(BarLabelMetrics & { name: string; weight: number }) | null>(null)
   const hasVisibleSpan = bar.visibleSpans.some(([start, end]) =>
@@ -90,7 +92,6 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, placement,
   }, [bar.node.name, labelMaxWidth, labelFontSize, measureWeight, metrics])
 
   if (!bar.visibleSpans.length) return null
-  const isSelected = bar.node.id === selectedId
   const shape = barShape(bar)
   const bounds = barBounds(bar)
   const phases = prominencePhases(bar.node, bar.end)
@@ -114,37 +115,13 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, placement,
   const hasHiddenPhase = visibility.some((stop) => stop.level < 1)
   const isArtist = bar.node.type === 'artist'
   const labels = prominenceLabels(bar.node.type)
-  const revealYear = indicator ? xToYear(scale, indicator.targetX) : undefined
-  const offscreenLabel = indicator ? `${bar.node.name} · off-screen to the ${indicator.direction}; activate to reveal` : null
   const maskPadding = Math.max(4, (SELECTION_OUTLINE.outlineWidth + SELECTION_OUTLINE.outlineOffset) * DEFAULT_BUBBLE_ZOOM)
   const visibleLabel = label ? fitBarLabel(bar.node.name, label.maxWidth, labelFontSize, metrics) : ''
   const indicatorLabel = indicator
     ? fitBarLabel(bar.node.name, Math.max(0, indicator.width - 42), BAR_LABEL_FONT_SIZE, metrics) : ''
 
   return (
-    <g
-      data-timeline-bar={bar.node.id}
-      className="visualization-item"
-      data-node-type={bar.node.type}
-      data-offscreen-direction={indicator?.direction}
-      role="button"
-      tabIndex={0}
-      aria-label={offscreenLabel ?? bar.node.name}
-      aria-pressed={isSelected}
-      opacity={dimmed ? 0.2 : 1}
-      style={{ cursor: 'pointer', outline: 'none' }}
-      onKeyDown={(event) => {
-        if (event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault()
-          selectNode(bar.node.id)
-          if (revealYear !== undefined) setViewRange(revealEraRange(viewRange, revealYear))
-        }
-      }}
-      onClick={(event) => {
-        event.stopPropagation()
-        onSelect(bar.node.id, revealYear)
-      }}
-    >
+    <>
       {hasMeasurement && (
         <text ref={measureRef} data-label-measure={bar.node.id} data-label-weight={measureWeight}
           visibility="hidden" pointerEvents="none" aria-hidden="true"
@@ -282,7 +259,52 @@ export function TimelineBar({ bar, scale, dimmed, indicator, rowBars, placement,
           </text>
         </g>
       )}
-      <title>{offscreenLabel ?? `${bar.node.name}${isArtist && !phases.length ? ' · prominence not annotated' : ''}`}</title>
+    </>
+  )
+}
+
+export function TimelineBar({
+  bar, scale, dimmed, indicator, rowBars, placement, renderDetails = true, onSelect,
+}: TimelineBarProps) {
+  const { selectedId, selectNode, viewRange, setViewRange } = useExplorer()
+  if (!bar.visibleSpans.length) return null
+  const isSelected = bar.node.id === selectedId
+  const revealYear = indicator ? xToYear(scale, indicator.targetX) : undefined
+  const offscreenLabel = indicator ? `${bar.node.name} · off-screen to the ${indicator.direction}; activate to reveal` : null
+  return (
+    <g
+      data-timeline-bar={bar.node.id}
+      className="visualization-item"
+      data-node-type={bar.node.type}
+      data-offscreen-direction={indicator?.direction}
+      role="button"
+      tabIndex={0}
+      aria-label={offscreenLabel ?? bar.node.name}
+      aria-pressed={isSelected}
+      opacity={dimmed ? 0.2 : 1}
+      style={{ cursor: 'pointer', outline: 'none' }}
+      onKeyDown={(event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault()
+          selectNode(bar.node.id)
+          if (revealYear !== undefined) setViewRange(revealEraRange(viewRange, revealYear))
+        }
+      }}
+      onClick={(event) => {
+        event.stopPropagation()
+        onSelect(bar.node.id, revealYear)
+      }}
+    >
+      {renderDetails ? (
+        <TimelineBarContents bar={bar} scale={scale} indicator={indicator} rowBars={rowBars}
+          placement={placement} isSelected={isSelected} />
+      ) : (
+        // Native keyboard scrolling needs the offscreen target's actual row bounds.
+        <rect x={0} y={bar.yCenter - 18} width={scale.width} height={36}
+          fill="none" pointerEvents="none" aria-hidden="true" />
+      )}
+      <title>{offscreenLabel ?? `${bar.node.name}${bar.node.type === 'artist' && !prominencePhases(bar.node, bar.end).length
+        ? ' · prominence not annotated' : ''}`}</title>
     </g>
   )
 }

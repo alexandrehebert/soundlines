@@ -13744,15 +13744,22 @@
       "phases": [
         {
           "start": 1687,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "low"
         },
         {
           "start": 1840,
-          "prominence": "golden-age"
+          "prominence": "golden-age",
+          "confidence": "medium",
+          "note": "Nineteenth-century commercial production and the instrument’s role in minstrel shows support this approximate expansion marker.",
+          "sources": [
+            "https://www.loc.gov/item/hlas-bi2020002633/"
+          ]
         },
         {
           "start": 1930,
-          "prominence": "established"
+          "prominence": "established",
+          "confidence": "low"
         }
       ],
       "phaseNote": "Illustrative editorial shading: the banjo peaks with 19th-century minstrel and parlour music and early jazz, then continues mainly through old-time and bluegrass. Not a measured ranking."
@@ -14341,11 +14348,13 @@
       "phases": [
         {
           "start": 1935,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "low"
         },
         {
           "start": 1955,
-          "prominence": "golden-age"
+          "prominence": "golden-age",
+          "confidence": "low"
         },
         {
           "start": 1975,
@@ -14354,7 +14363,8 @@
           "sources": [
             "https://hammond.eu/Info/Story",
             "https://hammondorganco.com/the-hammond-story-2"
-          ]
+          ],
+          "confidence": "low"
         }
       ],
       "phaseNote": "Illustrative editorial shading: the Hammond peaks from soul jazz to late-1960s rock; tonewheel production ended in 1975 as synthesizers spread. Not a measured ranking."
@@ -14463,11 +14473,13 @@
       "phases": [
         {
           "start": 1400,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "low"
         },
         {
           "start": 1600,
-          "prominence": "golden-age"
+          "prominence": "golden-age",
+          "confidence": "low"
         },
         {
           "start": 1800,
@@ -14477,12 +14489,18 @@
           "sources": [
             "https://stanfordmag.org/contents/perfect-for-the-parlor",
             "https://online.ucpress.edu/jm/article-abstract/30/2/180/63530/The-Death-and-Second-Life-of-the-Harpsichord?redirectedFrom=PDF"
-          ]
+          ],
+          "confidence": "low"
         },
         {
           "start": 1903,
           "prominence": "established",
-          "intensity": 0.35
+          "intensity": 0.35,
+          "confidence": "medium",
+          "note": "The Met documents the instrument’s twentieth-century revival in historically informed performance. The start is an approximate marker for that revival.",
+          "sources": [
+            "https://resources.metmuseum.org/resources/metpublications/pdf/Keyboard_Instruments_The_Metropolitan_Museum_of_Art_Bulletin_v_47_no_1_Summer_1989.pdf"
+          ]
         }
       ],
       "phaseNote": "Illustrative editorial shading: the harpsichord peaks in the Baroque continuo era, is largely eclipsed by the piano around 1800, and returns with the 20th-century revival. Not a measured ranking."
@@ -14505,7 +14523,11 @@
         {
           "start": 700,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Japan Arts Council documents this instrument in gagaku kangen, an ensemble tradition transmitted for over a millennium. The start approximates early court use.",
+          "sources": [
+            "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/kangen/ka1.html"
+          ]
         }
       ],
       "phaseNote": "Confidence: low. A continuous phase reflects its sustained role in gagaku; the graph’s date is a broad timeline anchor, not a claimed invention date. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
@@ -14590,25 +14612,30 @@
       "phases": [
         {
           "start": 1250,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "low"
         },
         {
           "start": 1500,
-          "prominence": "golden-age"
+          "prominence": "golden-age",
+          "confidence": "low"
         },
         {
           "start": 1650,
-          "prominence": "established"
+          "prominence": "established",
+          "confidence": "low"
         },
         {
           "start": 1780,
           "prominence": "niche",
-          "intensity": 0
+          "intensity": 0,
+          "confidence": "low"
         },
         {
           "start": 1950,
           "prominence": "established",
-          "intensity": 0.3
+          "intensity": 0.3,
+          "confidence": "low"
         }
       ],
       "phaseNote": "Illustrative editorial shading: the lute peaks in the 16th century, fades as keyboards and the guitar take over in the late 18th century, and returns through the 20th-century early-music revival. Not a measured ranking."
@@ -14918,25 +14945,30 @@
       "phases": [
         {
           "start": 1350,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "low"
         },
         {
           "start": 1500,
-          "prominence": "golden-age"
+          "prominence": "golden-age",
+          "confidence": "low"
         },
         {
           "start": 1700,
-          "prominence": "established"
+          "prominence": "established",
+          "confidence": "low"
         },
         {
           "start": 1760,
           "prominence": "niche",
-          "intensity": 0
+          "intensity": 0,
+          "confidence": "low"
         },
         {
           "start": 1920,
           "prominence": "established",
-          "intensity": 0.4
+          "intensity": 0.4,
+          "confidence": "low"
         }
       ],
       "phaseNote": "Illustrative editorial shading: the recorder peaks in Renaissance consorts, gives way to the transverse flute in the mid-18th century, and returns with the 20th-century early-music and school revival. Not a measured ranking."
@@ -14959,7 +14991,11 @@
         {
           "start": 700,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Japan Arts Council documents this instrument in gagaku kangen, an ensemble tradition transmitted for over a millennium. The start approximates early court use.",
+          "sources": [
+            "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/kangen/ka1.html"
+          ]
         }
       ],
       "phaseNote": "Confidence: low. A continuous phase reflects its continuing function in gagaku ensembles rather than an assumed prominence cycle. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
@@ -15080,7 +15116,11 @@
         {
           "start": 700,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Japan Arts Council documents this instrument in gagaku kangen, an ensemble tradition transmitted for over a millennium. The start approximates early court use.",
+          "sources": [
+            "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/kangen/ka1.html"
+          ]
         }
       ],
       "phaseNote": "Confidence: low. A continuous phase reflects its sustained gagaku role; the chronology is a broad graph anchor. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
@@ -15221,20 +15261,28 @@
         {
           "start": 1981,
           "prominence": "emerging",
-          "intensity": 0.2
+          "intensity": 0.2,
+          "confidence": "medium",
+          "note": "Roland introduced the TB-303 in 1981 as a bass accompaniment machine.",
+          "sources": [
+            "https://www.roland.com/RolandComSite/media/global/release/pdf/2019/20190303_1_RolandCloud_TB-303.pdf"
+          ]
         },
         {
           "start": 1987,
           "prominence": "golden-age",
           "note": "Phuture’s “Acid Tracks” (released in 1987) is a key marker in the TB-303’s adoption in acid house; Roland dates the instrument’s launch to 1981 and the scene’s rediscovery to the mid-1980s.",
           "sources": [
-            "https://www.roland.com/uk/promos/303day/"
-          ]
+            "https://www.roland.com/uk/promos/303day/",
+            "https://www.roland.com/RolandComSite/media/global/release/pdf/2019/20190303_1_RolandCloud_TB-303.pdf"
+          ],
+          "confidence": "medium"
         },
         {
           "start": 1993,
           "prominence": "established",
-          "intensity": 0.5
+          "intensity": 0.5,
+          "confidence": "low"
         }
       ],
       "phaseNote": "Illustrative editorial shading: a commercial failure until Phuture's 1987 \"Acid Tracks\" launched acid house, then a lasting dance-music staple. Not a measured ranking."
@@ -15255,21 +15303,25 @@
       "phases": [
         {
           "start": 1920,
-          "prominence": "emerging"
+          "prominence": "emerging",
+          "confidence": "low"
         },
         {
           "start": 1945,
-          "prominence": "golden-age"
+          "prominence": "golden-age",
+          "confidence": "low"
         },
         {
           "start": 1965,
           "prominence": "niche",
-          "intensity": 0
+          "intensity": 0,
+          "confidence": "low"
         },
         {
           "start": 1994,
           "prominence": "established",
-          "intensity": 0.3
+          "intensity": 0.3,
+          "confidence": "low"
         }
       ],
       "phaseNote": "Illustrative editorial shading: the theremin peaks with mid-century film scores, fades as synthesizers spread, and returns with 1990s kit instruments. Not a measured ranking."
@@ -15327,24 +15379,37 @@
           "start": 1980,
           "prominence": "emerging",
           "intensity": 0.25,
-          "note": "The TR-808 launched in 1980 and was produced through 1982; later use in electro and hip-hop changed its reception. This phase start marks release, not initial commercial popularity.",
+          "note": "The TR-808 launched in 1980. Early recordings used it before Roland discontinued the machine in 1983.",
           "sources": [
             "https://www.roland.com/ca/promos/roland_tr-808/?lang=en-CA",
-            "https://www.smithsonianmag.com/arts-culture/history-tr-808-drum-machine-180975205/"
-          ]
+            "https://www.smithsonianmag.com/arts-culture/history-tr-808-drum-machine-180975205/",
+            "https://articles.roland.com/retracing-the-roland-sound-in-hip-hop/"
+          ],
+          "confidence": "medium"
         },
         {
           "start": 1982,
-          "prominence": "golden-age"
+          "prominence": "golden-age",
+          "confidence": "medium",
+          "note": "Early electro and hip-hop recordings helped establish the machine’s sound. The boundary marks that adoption around 1982.",
+          "sources": [
+            "https://articles.roland.com/retracing-the-roland-sound-in-hip-hop/"
+          ]
         },
         {
           "start": 1990,
           "prominence": "established",
-          "intensity": 0.5
+          "intensity": 0.5,
+          "confidence": "medium",
+          "note": "Hip-hop production continued to use the 808 after its initial adoption in electro. This boundary approximates that continuing role.",
+          "sources": [
+            "https://articles.roland.com/retracing-the-roland-sound-in-hip-hop/"
+          ]
         },
         {
           "start": 2008,
-          "prominence": "golden-age"
+          "prominence": "golden-age",
+          "confidence": "low"
         }
       ],
       "phaseNote": "Illustrative editorial shading: slow sales at launch, a peak with early-1980s electro and hip-hop, and a second peak as trap made the 808 bass ubiquitous. Not a measured ranking."
@@ -15366,17 +15431,29 @@
         {
           "start": 1983,
           "prominence": "emerging",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Roland dates the TR-909 launch to 1983 and reports a one-year production run.",
+          "sources": [
+            "https://www.roland.com/uk/promos/roland_tr-909/?lang=en-GB"
+          ]
         },
         {
           "start": 1987,
           "prominence": "golden-age",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "Roland traces the machine’s adoption in house and techno across the mid-1980s and 1990s. This boundary approximates the earlier part of that transition.",
+          "sources": [
+            "https://www.roland.com/uk/promos/roland_tr-909/?lang=en-GB"
+          ]
         },
         {
           "start": 1990,
           "prominence": "established",
-          "confidence": "low"
+          "confidence": "medium",
+          "note": "House and techno use continued through the 1990s. The boundary is an editorial division within that period of adoption.",
+          "sources": [
+            "https://www.roland.com/uk/promos/roland_tr-909/?lang=en-GB"
+          ]
         }
       ],
       "phaseNote": "Confidence: low. The outline follows the machine’s release, adoption in house/techno, and continued use as a dance-music reference. Editorial shading only, not a measured popularity ranking; the transition years are approximate."
@@ -21756,6 +21833,162 @@
         "https://en.wikipedia.org/wiki/Jamie_xx",
         "https://www.theguardian.com/music/2015/may/24/jamie-xx-in-colour-review-larging-it-for-introverts"
       ]
+    },
+    {
+      "id": "instrument:ukulele",
+      "type": "instrument",
+      "name": "Ukulele",
+      "family": "strings",
+      "period": {
+        "start": 1880,
+        "precision": "circa"
+      },
+      "description": "Four-string plucked instrument developed in Hawaiʻi from the Portuguese machete. It later found an audience in vaudeville and pop.",
+      "sources": [
+        "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/american-indian-and-native-alaskan/hawaiian/",
+        "https://www.theguardian.com/music/2010/aug/17/ukulele"
+      ],
+      "phases": [
+        {
+          "start": 1880,
+          "prominence": "established",
+          "confidence": "low"
+        }
+      ],
+      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
+    },
+    {
+      "id": "instrument:euphonium",
+      "type": "instrument",
+      "name": "Euphonium",
+      "family": "brass",
+      "period": {
+        "start": 1840,
+        "precision": "circa"
+      },
+      "description": "Low-register valved brass instrument used in brass bands and concert bands, with parts in some late Romantic orchestral works.",
+      "sources": [
+        "https://www.yamahamusiclondon.com/Brass/Euphoniums/",
+        "https://hub.yamaha.com/winds/brass/whats-the-difference-between-baritone-horn-and-euphonium/"
+      ],
+      "phases": [
+        {
+          "start": 1840,
+          "prominence": "established",
+          "confidence": "low"
+        }
+      ],
+      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
+    },
+    {
+      "id": "instrument:timpani",
+      "type": "instrument",
+      "name": "Timpani",
+      "family": "percussion",
+      "period": {
+        "start": 1700,
+        "precision": "circa"
+      },
+      "description": "Tunable kettledrums that reinforce accents and provide pitched percussion in orchestral music.",
+      "sources": [
+        "https://philharmonia.co.uk/resources/instruments/"
+      ],
+      "phases": [
+        {
+          "start": 1700,
+          "prominence": "established",
+          "confidence": "low"
+        }
+      ],
+      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
+    },
+    {
+      "id": "instrument:piccolo",
+      "type": "instrument",
+      "name": "Piccolo",
+      "family": "winds",
+      "period": {
+        "start": 1800,
+        "precision": "circa"
+      },
+      "description": "Small transverse flute that sounds an octave above the concert flute and adds a bright upper register to the orchestra.",
+      "sources": [
+        "https://philharmonia.co.uk/resources/instruments/"
+      ],
+      "phases": [
+        {
+          "start": 1800,
+          "prominence": "established",
+          "confidence": "low"
+        }
+      ],
+      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
+    },
+    {
+      "id": "instrument:bass-clarinet",
+      "type": "instrument",
+      "name": "Bass clarinet",
+      "family": "winds",
+      "period": {
+        "start": 1850,
+        "precision": "circa"
+      },
+      "description": "Low-register clarinet used for dark orchestral colors and solos in Romantic and later repertoire.",
+      "sources": [
+        "https://philharmonia.co.uk/resources/instruments/"
+      ],
+      "phases": [
+        {
+          "start": 1850,
+          "prominence": "established",
+          "confidence": "low"
+        }
+      ],
+      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
+    },
+    {
+      "id": "instrument:cor-anglais",
+      "type": "instrument",
+      "name": "Cor anglais",
+      "family": "winds",
+      "period": {
+        "start": 1800,
+        "precision": "circa"
+      },
+      "description": "Double-reed instrument pitched a fifth below the oboe, featured in the Largo of Dvořák’s New World Symphony.",
+      "sources": [
+        "https://philharmonia.co.uk/resources/instruments/"
+      ],
+      "phases": [
+        {
+          "start": 1800,
+          "prominence": "established",
+          "confidence": "low"
+        }
+      ],
+      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
+    },
+    {
+      "id": "instrument:juno-106",
+      "type": "instrument",
+      "name": "Roland JUNO-106",
+      "family": "electronic",
+      "period": {
+        "start": 1984,
+        "precision": "circa"
+      },
+      "description": "Six-voice analog synthesizer released in 1984. Its chorus and polyphonic sounds became part of the palette of house and techno.",
+      "sources": [
+        "https://rolandcorp.com.au/blog/juno-legendary-heritage-future-classic"
+      ],
+      "phases": [
+        {
+          "start": 1984,
+          "prominence": "established",
+          "confidence": "low"
+        }
+      ],
+      "phaseNote": "A single editorial phase represents documented use. Its start is an approximate timeline anchor."
     }
   ],
   "edges": [
@@ -42519,6 +42752,76 @@
         "https://en.wikipedia.org/wiki/Moby",
         "https://www.allmusic.com/artist/moby-mn0000477116"
       ]
+    },
+    {
+      "id": "featured:ukulele-pop",
+      "type": "featured_in",
+      "from": "instrument:ukulele",
+      "to": "genre:pop",
+      "sources": [
+        "https://www.theguardian.com/music/2010/aug/17/ukulele"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "featured:euphonium-romantic",
+      "type": "featured_in",
+      "from": "instrument:euphonium",
+      "to": "genre:romantic",
+      "sources": [
+        "https://www.yamahamusiclondon.com/Brass/Euphoniums/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "featured:timpani-classical-period",
+      "type": "featured_in",
+      "from": "instrument:timpani",
+      "to": "genre:classical-period",
+      "sources": [
+        "https://philharmonia.co.uk/resources/instruments/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "featured:piccolo-romantic",
+      "type": "featured_in",
+      "from": "instrument:piccolo",
+      "to": "genre:romantic",
+      "sources": [
+        "https://philharmonia.co.uk/resources/instruments/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "featured:bass-clarinet-romantic",
+      "type": "featured_in",
+      "from": "instrument:bass-clarinet",
+      "to": "genre:romantic",
+      "sources": [
+        "https://philharmonia.co.uk/resources/instruments/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "featured:cor-anglais-romantic",
+      "type": "featured_in",
+      "from": "instrument:cor-anglais",
+      "to": "genre:romantic",
+      "sources": [
+        "https://philharmonia.co.uk/resources/instruments/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "featured:juno-106-house",
+      "type": "featured_in",
+      "from": "instrument:juno-106",
+      "to": "genre:house",
+      "sources": [
+        "https://rolandcorp.com.au/blog/juno-legendary-heritage-future-classic"
+      ],
+      "confidence": "medium"
     }
   ]
 }

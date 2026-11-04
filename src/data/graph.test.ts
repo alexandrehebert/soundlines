@@ -18,6 +18,15 @@ import {
 const graph = rawGraph as MusicGraph
 
 describe('graph.json integrity', () => {
+  it('gives every instrument a phase with explicit confidence', () => {
+    for (const node of graph.nodes.filter((candidate) => candidate.type === 'instrument')) {
+      expect(node.phases?.length ?? 0, node.id).toBeGreaterThan(0)
+      for (const phase of node.phases ?? []) {
+        expect(['low', 'medium', 'high'], node.id).toContain(phase.confidence)
+      }
+    }
+  })
+
   it('has ordered, known editorial phases within each genre, artist, or instrument lifespan', () => {
     for (const node of graph.nodes.filter((candidate) => candidate.phases !== undefined)) {
       expect(['genre', 'artist', 'instrument']).toContain(node.type)

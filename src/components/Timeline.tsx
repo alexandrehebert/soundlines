@@ -11,7 +11,7 @@ import { useTimelineViewport } from './timeline/useTimelineViewport.ts'
 export function Timeline() {
   const { model, selectedId, viewRange, order } = useExplorer()
   const view = model.view
-  const { containerRef, width, select, handlers } = useTimelineViewport()
+  const { containerRef, width, verticalViewport, select, handlers } = useTimelineViewport()
   const [labelWidths, setLabelWidths] = useState<Map<string, { name: string; weight: string; width: number }>>(() => new Map())
   const lastRevealedId = useRef<string | null>(null)
   const plotRef = useRef<SVGSVGElement>(null)
@@ -89,7 +89,7 @@ export function Timeline() {
       // oxlint-disable-next-line react/set-state-in-effect
       setLabelWidths(updated)
     }
-  }, [bars, labelWidths])
+  }, [bars, labelWidths, verticalViewport])
 
   useEffect(() => {
     if (!width || lastRevealedId.current === selectedId) return
@@ -103,6 +103,16 @@ export function Timeline() {
   return (
     <div ref={containerRef} className="timeline-surface h-full w-full overflow-y-auto"
       role="region" aria-label={`${VIEW_LABELS[view]} timeline`}
+      onFocusCapture={(event) => {
+        if (!(event.target instanceof Element)) return
+        const id = event.target.closest('[data-timeline-bar]')?.getAttribute('data-timeline-bar')
+        const bar = id ? barById.get(id) : undefined
+        if (bar) {
+          event.currentTarget.scrollTop = revealBarScrollTop(
+            bar.yCenter, event.currentTarget.scrollTop, event.currentTarget.clientHeight,
+          )
+        }
+      }}
       data-timeline-view={view} data-timeline-order={order} style={{ scrollPaddingTop: AXIS_H }}>
       {width > 0 && (
         <>
@@ -152,12 +162,15 @@ export function Timeline() {
                 </text>
               </g>
             ))}
-            <TimelineLinks barById={barById} scale={scale} highlightedEdges={highlight?.edges ?? null} />
+            <TimelineLinks barById={barById} scale={scale} highlightedEdges={highlight?.edges ?? null}
+              verticalViewport={verticalViewport} />
             {bars.map((bar) => (
               <TimelineBar key={bar.node.id} bar={bar} scale={scale}
                 rowBars={barsByRow.get(bar.yCenter)}
                 placement={labelPositions.get(bar.node.id) ?? null}
                 indicator={indicators.get(bar.node.id)}
+                renderDetails={!verticalViewport || bar.node.id === selectedId
+                  || (bar.yCenter >= verticalViewport.top && bar.yCenter <= verticalViewport.bottom)}
                 dimmed={highlight !== null && !highlight.nodes.has(bar.node.id)}
                 onSelect={select} />
             ))}
