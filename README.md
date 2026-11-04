@@ -302,3 +302,6 @@ Stories use the real music graph with an isolated, in-memory explorer provider.
 Selections, search, related-node navigation, view changes, panning, and zoom
 are interactive without changing the app's URL or starting its page-loading
 transition. The source links in detail panels still open their actual websites.
+Timeline labels wait for SVG layout before measuring text, including when an
+initially hidden preview is revealed.
+

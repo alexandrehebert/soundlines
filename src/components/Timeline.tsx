@@ -6,6 +6,7 @@ import { VIEW_LABELS } from '../graph/timeline.ts'
 import { AXIS_H, offscreenIndicators, positionRowLabels, positionTimeline, revealBarScrollTop, type BarLabel } from './timeline/geometry.ts'
 import { TimelineBar } from './timeline/TimelineBar.tsx'
 import { TimelineLinks } from './timeline/TimelineLinks.tsx'
+import { afterSvgLayout } from './timeline/svgLayout.ts'
 import { useTimelineViewport } from './timeline/useTimelineViewport.ts'
 
 export function Timeline() {
@@ -74,21 +75,23 @@ export function Timeline() {
   useLayoutEffect(() => {
     const plot = plotRef.current
     if (!plot) return
-    let updated: Map<string, { name: string; weight: string; width: number }> | undefined
-    for (const text of plot.querySelectorAll<SVGTextElement>('[data-label-measure]')) {
-      const id = text.getAttribute('data-label-measure')
-      const name = text.textContent?.slice(0, -1)
-      const weight = text.getAttribute('data-label-weight')
-      const previous = id ? labelWidths.get(id) : undefined
-      if (!id || name === undefined || !weight || (previous?.name === name && previous.weight === weight)) continue
-      updated ??= new Map(labelWidths)
-      updated.set(id, { name, weight, width: name.length ? text.getSubStringLength(0, name.length) : 0 })
-    }
-    if (updated) {
-      // SVG text widths are only available after the plot has rendered.
-      // oxlint-disable-next-line react/set-state-in-effect
-      setLabelWidths(updated)
-    }
+    return afterSvgLayout(plot, () => {
+      let updated: Map<string, { name: string; weight: string; width: number }> | undefined
+      for (const text of plot.querySelectorAll<SVGTextElement>('[data-label-measure]')) {
+        const id = text.getAttribute('data-label-measure')
+        const name = text.textContent?.slice(0, -1)
+        const weight = text.getAttribute('data-label-weight')
+        const previous = id ? labelWidths.get(id) : undefined
+        if (!id || name === undefined || !weight || (previous?.name === name && previous.weight === weight)) continue
+        updated ??= new Map(labelWidths)
+        updated.set(id, { name, weight, width: name.length ? text.getSubStringLength(0, name.length) : 0 })
+      }
+      if (updated) {
+        // SVG text widths are only available after the plot has rendered.
+        // oxlint-disable-next-line react/set-state-in-effect
+        setLabelWidths(updated)
+      }
+    })
   }, [bars, labelWidths, verticalViewport])
 
   useEffect(() => {

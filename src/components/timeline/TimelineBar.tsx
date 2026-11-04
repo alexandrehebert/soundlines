@@ -15,6 +15,7 @@ import {
   ABOVE_BAR_LABEL_FONT_SIZE, BAR_H, BAR_LABEL_FONT_SIZE, barBounds, barLabel, barShape, fitBarLabel,
   tailFadeOffset, type BarLabel, type BarLabelMetrics, type BarPosition, type OffscreenIndicator,
 } from './geometry.ts'
+import { afterSvgLayout } from './svgLayout.ts'
 
 interface TimelineBarProps {
   bar: BarPosition
@@ -70,11 +71,13 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
     const text = measureRef.current
     if (!hasMeasurement || !text) return
     const length = bar.node.name.length
-    setLabelMetrics({
-      name: bar.node.name,
-      weight: measureWeight,
-      width: length ? text.getSubStringLength(0, length) : 0,
-      ellipsisWidth: text.getSubStringLength(length, 1),
+    return afterSvgLayout(text, () => {
+      setLabelMetrics({
+        name: bar.node.name,
+        weight: measureWeight,
+        width: length ? text.getSubStringLength(0, length) : 0,
+        ellipsisWidth: text.getSubStringLength(length, 1),
+      })
     })
   }, [bar.node.name, hasMeasurement, measureWeight])
 
@@ -82,13 +85,15 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
     const text = measureRef.current
     if (labelMaxWidth === undefined || !metrics || metrics.prefixWidths || !text
       || metrics.width * labelFontSize / BAR_LABEL_FONT_SIZE + 1 <= labelMaxWidth) return
-    let length = 0
-    const prefixWidths = [...bar.node.name].map((character) => {
-      length += character.length
-      return text.getSubStringLength(0, length)
+    return afterSvgLayout(text, () => {
+      let length = 0
+      const prefixWidths = [...bar.node.name].map((character) => {
+        length += character.length
+        return text.getSubStringLength(0, length)
+      })
+      setLabelMetrics((current) => current?.name === bar.node.name && current.weight === measureWeight
+        ? { ...current, prefixWidths } : current)
     })
-    setLabelMetrics((current) => current?.name === bar.node.name && current.weight === measureWeight
-      ? { ...current, prefixWidths } : current)
   }, [bar.node.name, labelMaxWidth, labelFontSize, measureWeight, metrics])
 
   if (!bar.visibleSpans.length) return null
