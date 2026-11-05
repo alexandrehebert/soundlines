@@ -2,12 +2,16 @@
 
 Graph ID `artist:kode9`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 2000
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Scottish DJ and producer associated with dubstep and the Hyperdub label.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Kode9>)
+- [Resident Advisor, Kode9 biography](https://ra.co/dj/kode9/biography) — Documents Hyperdub’s 2004 founding and his DJ/producer identity.
+- [AllMusic, Kode9 biography](https://www.allmusic.com/artist/kode9-p844499/biography) — Dates his first Hyperdub release, Sine of the Dub, to 2004 and identifies his role in early UK dubstep.
+- [The FADER, Kode9 interview](https://www.thefader.com/2011/04/11/interview-kode9) — Contemporaneous interview confirms Kode9 founded Hyperdub in 2004.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Set 2004 as the first well-documented year of Kode9’s label and recording activity; the old 2000 value lacked citation and may conflate earlier DJ or academic activity. Confidence: high for 2004 public music milestone, medium for total career onset.

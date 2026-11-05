@@ -2,12 +2,20 @@
 
 Graph ID `artist:four-tet`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1998
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Stage name of English producer Kieran Hebden, who left the post-rock band Fridge for solo electronic work. Blends acoustic samples and club rhythms, and has collaborated with Burial and Madlib.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Four_Tet>), [2](<https://www.allmusic.com/artist/four-tet-mn0000741236>)
+- [Four Tet interview, Pitchfork](https://pitchfork.com/features/interview/9132-four-tet/) — Hebden identifies “Thirtysixtwentyfive” (1998) as his first release under the Four Tet name.
+- [Four Tet biography, AllMusic](https://www.allmusic.com/artist/four-tet-mn0000741236) — Profile dates debut album Dialogue to 1999.
+- [Four Tet profile, Mixmag](https://mixmag.net/artist/four-tet) — Electronic music publication confirms 1998 first Four Tet release and 1999 album.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Kept 1998 as exact start for the Four Tet project; the artist’s earlier Fridge career is separate and predates the alias.
+
+## Remaining uncertainty
+
+None material for the project start.

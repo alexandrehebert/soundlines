@@ -2,21 +2,20 @@
 
 Graph ID `genre:taarab`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1880 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A Swahili coastal music tradition associated with Zanzibar and East Africa, shaped by exchanges among African, Arab and Indian Ocean cultures. Orchestras and singers including Siti binti Saad brought its songs into recordings, clubs and community celebrations.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Taarab>), [2](<https://www.persee.fr/doc/jafr_0399-0346_2002_num_72_2_1315>)
+- [African Music, “Travel on a song—the roots of Zanzibar taarab”](https://journal.ru.ac.za/index.php/africanmusic/article/view/1805) — Ethnomusicology journal describes taarab’s Zanzibar roots and African, Arabic, Indian, and other influences.
+- [Eisenberg, “The Swahili Art of Indian Taarab”](https://bpb-us-e1.wpmucdn.com/wp.nyu.edu/dist/4/23414/files/2022/01/eisenberg-indian-taarab.pdf.pdf) — Research chapter dates a syncretic form to late-nineteenth-century Zanzibar and coastal Kenya and its broader popularization to Siti binti Saad’s late-1920s recordings.
+- [Ghent University dissertation on taarab and Siti binti Saad](https://libstore.ugent.be/fulltxt/RUG01/002/789/859/RUG01_002_789_859_2019_0001_AC.pdf) — Research identifies Siti binti Saad’s 1920s Swahili performances as helping make taarab accessible beyond the elite.
 
-**Graph phase rationale** · Confidence: low to medium. Markers sketch early urban orchestral growth, later recording and performance prominence, and continued practice; the tradition varies across the Swahili coast. Editorial shading, not a measured ranking.
+## Assessment
 
-## Phases
+Circa 1880 remains defensible as a simplified late-nineteenth-century formation marker; sources associate early court culture with Zanzibar’s late nineteenth-century sultanate but do not prove a single birth date. The 1920s popularization marker is directly supported. Removed the unsupported 1930 “golden age,” 1960 and 2000 generic phases. Confidence: medium for late-nineteenth-century roots; high for 1920s popularization.
 
-- 1880 emerging · low · No phase note · None recorded
-- 1930 golden-age · low · No phase note · None recorded
-- 1960 established · low · No phase note · None recorded
-- 2000 established · low · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Taarab is a family of coastal traditions with different trajectories in Zanzibar, Pemba, Mombasa, and Lamu; a single origin date simplifies that history.

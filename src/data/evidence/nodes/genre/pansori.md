@@ -2,14 +2,21 @@
 
 Graph ID `genre:pansori`
 
-**Review status** · Chronology and phases cross-checked; one original page remains inaccessible
+**Review status** · Reviewed
+
+**Reviewed** · 2026-11-04
 
 ## Sources checked
 
-- [National Institute of Korean History](https://contents.history.go.kr/front/tz/view.do?levelId=tz_b48) — Full transcript read. Earliest known written mention: Yu Jinhan’s 1754 poem; inferred beginnings late seventeenth/early eighteenth century. Nineteenth-century master singers expanded audiences across classes. Performance decline preceded the 1964 safeguarding designation.
-- [UNESCO](https://ich.unesco.org/en/RL/pansori-epic-chant-00070) — Search-index text read; direct opening returned a human-verification page. Places origins in the seventeenth century and confirms 1964 safeguarding. This differs slightly from the Korean institute’s narrower estimate; neither supports an exact origin year.
-- [Korea.net](https://www.korea.net/K-InfoHub/SubMainDetail/view?articleId=3981&headwordCd=77&headwordGroupCd=17&pageIndex=1) — Direct opening failed with redirect loop. Search excerpt describes the five surviving stories; not used as chronology evidence.
+- [UNESCO Intangible Cultural Heritage, Pansori Epic Chant](https://ich.unesco.org/en/RL/pansori-epic-chant-00070) — International heritage record describes singer-and-drummer performance and historical origins; cross-checks the basic definition.
+- [National Institute of Korean History, Pansori Epic Chant](https://contents.history.go.kr/front/tz/view.do?levelId=tz_b48) — Historian Chae Soo-jung dates the earliest written mention to 1754 and cautiously infers late 17th/early 18th-century beginnings; supports the existing phase note’s distinction.
+- [Korea.net, Pansori](https://www.korea.net/K-InfoHub/SubMainDetail/view?articleId=3981&headwordCd=77&headwordGroupCd=17&pageIndex=1) — Government cultural overview describes a 17th-century regional origin and 19th-century maturation.
+- [Koreana, Pansori: Korean Singer of Tales](https://www.koreana.or.kr/koreana/na/ntt/selectNttInfo.do?bbsId=1114&nttSn=50090) — Korean Foundation cultural journal independently describes late-17th-century spread and a mid-19th-century popularity peak.
 
-## Decision
+## Assessment
 
-Retain circa 1700 as a medium-confidence approximate origin; change the initial phase from established to emerging. Add a broad established phase circa 1800 for nineteenth-century expansion. Avoid precise peak boundaries or treating 1964 protection as proof of popularity. The previous claim that no defensible staging existed was too strong.
+Cross-check confirms the c.1700 origin as a broad estimate, with the earliest known written mention later (1754); the two dates are not interchangeable. Existing sourced phases appropriately distinguish early formation, 19th-century development and modern safeguarding, and do not imply a measured prominence curve. Confidence: medium-high for description and approximate historical framing.
+
+## Remaining uncertainty
+
+The origin is reconstructed from sparse records; exact chronology is not recoverable.

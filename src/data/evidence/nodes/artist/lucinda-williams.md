@@ -2,10 +2,16 @@
 
 Graph ID `artist:lucinda-williams`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1978 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.allmusic.com/style/americana-ma0000004415>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Smithsonian Folkways, Lucinda Williams](https://folkways.si.edu/lucinda-williams-blues/music/article/smithsonian) — Documents her first Smithsonian Folkways recording Ramblin’ on My Mind in 1979 and the 1980 album Happy Woman Blues.
+- [Austin City Limits Hall of Fame, Lucinda Williams](https://acltv.com/hall-of-fame/inductee-details/?name=lucinda-williams) — Distinguishes 1979 debut recording from her 1980 first album of original songs and documents later career activity.
+- [Apple Music, Lucinda Williams](https://music.apple.com/us/artist/lucinda-williams/267658) — Catalog biography confirms her 1979 debut album/early releases.
+
+## Assessment
+
+Refine the 1970s decade marker to 1979, her first recorded album; Happy Woman Blues, her first album of original songs, followed in 1980. She remains active, so no end date. Confidence: high.

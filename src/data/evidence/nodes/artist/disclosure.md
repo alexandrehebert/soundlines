@@ -2,12 +2,20 @@
 
 Graph ID `artist:disclosure`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 2010
+**Reviewed** · 2026-11-04
 
-**Graph claim** · English production duo of brothers Howard and Guy Lawrence. Their 2013 debut Settle brought UK garage and house rhythms back into the pop charts.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Disclosure_(band)>), [2](<https://www.allmusic.com/artist/disclosure-mn0002528416>)
+- [Disclosure profile, Grammy.com](https://www.grammy.com/artists/disclosure/18202/) — Grammy profile dates the duo’s formation to 2010 and notes 2013 debut album.
+- [Disclosure artist bio, Myspace](https://myspace.com/disclosure/bio) — Band bio describes 2010 uploads and debut Moshi Moshi single.
+- [Disclosure profile, Insomniac](https://www.insomniac.com/music/artists/disclosure/) — Festival bio confirms first single “Offline Dexterity” in 2010 and distinguishes 2012 breakthrough.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Confirmed 2010 as both formation and first public music; no date change. Clarified 2012–13 milestones.
+
+## Remaining uncertainty
+
+No material uncertainty about start year.

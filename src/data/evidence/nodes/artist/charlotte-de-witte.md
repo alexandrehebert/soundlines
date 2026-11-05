@@ -2,12 +2,20 @@
 
 Graph ID `artist:charlotte-de-witte`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 2010
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Belgian DJ and producer of stripped-back acid and minimal techno who first recorded as Raving George. Founded the KNTXT label.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Charlotte_de_Witte>), [2](<https://xlr8r.com/features/20-questions-charlotte-de-witte/>), [3](<https://mixmag.net/feature/charlotte-de-witte-cover-feature-interview-kntxt>)
+- [Charlotte de Witte profile, AllMusic](https://www.allmusic.com/artist/de-witte-mn0003386641) — Profile dates her first DJ activity to 2010, at age 17.
+- [Charlotte de Witte interview, XLR8R](https://xlr8r.com/features/20-questions-charlotte-de-witte/) — Artist says she began DJing in 2010 and producing around 2012–13; first EP under her name was 2015.
+- [Charlotte de Witte profile, Mixmag](https://mixmag.net/feature/get-to-know-charlotte-de-witte-the-belgian-artist-crafting-dense-and-dark-techno) — Interview recalls first gig on 22 January 2010.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Confirmed 2010 as first DJ activity; separated that from production beginning around 2012 and first own-name EP in 2015.
+
+## Remaining uncertainty
+
+None material for start year; exact first gig date is reported in interview.

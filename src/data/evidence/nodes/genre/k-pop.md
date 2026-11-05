@@ -2,20 +2,20 @@
 
 Graph ID `genre:k-pop`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: first-generation genre history separated from later global recognition
 
-**Graph period** · 1990 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · South Korean popular music industry and style incorporating local language and performance conventions with global pop, hip-hop, R&B and electronic production.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/k-pop-ma0000011907>)
+- [Oxford Research Encyclopedia: Global South Korea and the K-Pop Phenomenon](https://academic.oup.com/edited-volume/61883/chapter-abstract/547833378?login=false) — Scholarly chapter dates first K-pop groups to the early 1990s and describes their musical influences and later generations.
+- [Inter-Asia Cultural Studies: J-pop and K-pop cultural history](https://www.tandfonline.com/doi/abs/10.1080/14649370903166093) — Peer-reviewed comparative account offers context for Korean popular music’s category and transnational framing.
+- [Keio University repository: The developments of Korean Wave and K-POP](https://koara.lib.keio.ac.jp/xoonips/modules/xoonips/download.php/KO40003001-00002021-3856.pdf?file_id=165235) — Academic research traces the 1990s industry and subsequent regional spread.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed.
+## Assessment
 
-## Phases
+Kept 1990s as the documented first-generation period and removed the unsupported 2001 “golden age” and 2018 phase. Those dates conflate subsequent waves and international reach with the genre’s emergence.
 
-- 1990 emerging · unrated · No phase note · None recorded
-- 2001 golden-age · unrated · No phase note · None recorded
-- 2018 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+“K-pop” can mean Korean popular music broadly or the later idol-centered industry; the graph description explicitly covers both without backdating the name to all Korean pop.

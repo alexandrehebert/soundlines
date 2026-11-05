@@ -2,12 +2,16 @@
 
 Graph ID `artist:tchaikovsky`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1865–1893
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Romantic composer of symphonies, operas, concertos, and ballet scores.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky>)
+- [London Symphony Orchestra composer guide](https://www.lso.co.uk/news-and-stories/composer-guide/pyotr-ilyich-tchaikovsky/) — Dates his move to full-time music study to 1863 and describes his first professional breakthrough with the First Symphony and other works.
+- [Paris Opera biography](https://www.operadeparis.fr/en/artists/piotr-ilyitch-tchaikovski) — Dates his first symphony to 1866 and describes the start of his Moscow Conservatory career.
+- [Royal Ballet and Opera biography](https://www.rbo.org.uk/people/pyotr-ilyich-tchaikovsky) — Confirms 1840–1893 lifespan and conservatory study from 1862–65.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Kept 1865 as the transition to professional composition after conservatory training; his first symphony was composed in 1866. The existing end 1893 is his death year. This prevents the first major symphony from being mistaken for the start of his musical career.

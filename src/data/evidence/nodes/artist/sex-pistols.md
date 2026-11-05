@@ -2,12 +2,16 @@
 
 Graph ID `artist:sex-pistols`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1975
+**Reviewed** · 2026-11-04
 
-**Graph claim** · British punk band whose original 1975-1978 run became culturally defining. The career envelope includes sporadic reunions and a later lineup.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Sex_Pistols>)
+- [Sex Pistols official timeline](https://www.sexpistolsofficial.com/bio/timeline/) — Dates the band’s first live performance under the Sex Pistols name to November 1975 and documents 1978 events.
+- [London Museum history](https://www.londonmuseum.org.uk/collections/london-stories/sex-pistols-londons-resident-punk-rebels/) — Summarizes the group’s central 1975–78 punk period.
+- [Associated Press, 2025 North American tour](https://apnews.com/article/5494f39cb72f5b309722d98e6c1c5ccf) — Reports a 2025 tour with Frank Carter, so 1978 cannot be treated as the band’s final activity.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Kept 1975 as the first performance under this name, while separating the iconic original period from later activity. Removed the implied career endpoint; the 2025 lineup/tour is not the original lineup.

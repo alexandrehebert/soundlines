@@ -2,21 +2,21 @@
 
 Graph ID `genre:romantic`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1800–1910 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Expanded orchestras, expressive harmony, virtuoso soloists, and musical storytelling. Dates describe a historical era whose repertoire remains active.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Romantic_music>)
+- [Richard Taruskin, Oxford History of Western Music, “Music in the Nineteenth Century” preface](https://files.cercomp.ufg.br/weby/up/269/o/TARUSKIN_-_Oxford_History_of_Western_Music__Richard_Taruskin_Vol.3a.pdf) — Musicologist argues the Romantic period began in the last quarter of the 18th century, challenging a simple 1800 start and showing style/period boundaries are debatable.
+- [Cambridge, Romantic Music Aesthetics](https://www.cambridge.org/core/books/abs/romantic-music-aesthetics/introduction/4488A6D4FD07ECB24536FF4E97937AA0) — Recent scholarly account examines the conventional c.1800 watershed and continuity with 18th-century sentimentality.
+- [Princeton University, 19th-Century Music research guide](https://libguides.princeton.edu/19th-century-music/introduction) — University guide explains the long 19th century as 1789–1914 and current use of Romantic Era/Music terms.
+- [Cambridge Companion to Music and Romanticism](https://www.cambridge.org/core/books/cambridge-companion-to-music-and-romanticism/3FF81D42544798C52F238BD3780BC79B) — Scholarly collection challenges treating Romanticism as a single style or strictly bounded period.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Kept c.1800 as a conventional graph marker for the broad historical/style umbrella, but extended the endpoint from 1910 to c.1914 to align with the common long-19th-century transition and avoid implying the period ends before World War I. Sources also place beginnings as early as the late 18th century and commonly distinguish early Romantic c.1815–20, so boundaries are inherently approximate. Removed unsupported prominence phases. Confidence: medium.
 
-- 1800 emerging · unrated · No phase note · None recorded
-- 1815 golden-age · unrated · No phase note · None recorded
-- 1888 established · unrated · No phase note · None recorded
-- 1908 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+This is a teaching periodization, not a uniform endpoint across national histories or stylistic currents; Romantic traits appear before and after the chosen range.

@@ -2,12 +2,20 @@
 
 Graph ID `artist:nina-kraviz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 2008
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Russian DJ, producer and singer known for raw, hypnotic techno sets and her own vocal productions.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Nina_Kraviz>), [2](<https://www.allmusic.com/artist/nina-kraviz-mn0002135861>)
+- [Nina Kraviz profile, Insomniac](https://www.insomniac.com/music/artists/nina-kraviz/) — Profile says her discography began with a 2007 12-inch on B77, followed by 2008 releases.
+- [Nina Kraviz interview, Insomniac / fabric](https://www.insomniac.com/magazine/nina-kraviz-restless-fearless/) — Interview says she left her band in 2008 and began making music solo.
+- [Nina Kraviz biography, Resident Advisor](https://ra.co/dj/ninakraviz/biography) — Dance publication dates a solo production breakthrough to 2009.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Adjusted 2008 to circa 2007 to include the documented first 12-inch, while the solo-project transition occurred in 2008 and releases widened in 2009.
+
+## Remaining uncertainty
+
+Sources describe distinct recording and solo-performance phases, so circa precision is retained.

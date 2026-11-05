@@ -2,20 +2,20 @@
 
 Graph ID `genre:mbalax`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1970 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Senegalese urban dance music combining local vocal and sabar-drum traditions with electric bands and influences from across Africa and the Atlantic. Dakar groups and singers including Youssou N’Dour helped develop its modern sound.
+## Sources checked
 
-**Graph citations** · [1](<https://www.britannica.com/biography/Youssou-NDour>), [2](<https://en.wikipedia.org/wiki/Mbalax>)
+- [Oxford Bibliographies in Music, “Youssou N’Dour”](https://academic.oup.com/reference/62400/reference-article-abstract/561714377?login=false) — Musicology reference says N’Dour and other Senegalese musicians experimented with mbalax; many scholars credit him with naming and popularizing it.
+- [University of São Paulo, Sankofa, “Mbalax – Música Popular no Senegal”](https://revistas.usp.br/sankofa/pt_BR/article/view/119064) — Academic article situates mbalax in the modern Senegalese music tradition and N’Dour’s role in internationalizing it.
+- [JSTOR, Masters of the Sabar: Wolof Griot Percussionists of Senegal](https://www.jstor.org/stable/j.ctt14bszp3) — Ethnomusicological book identifies sabar as the rhythmic backbone connecting mbalax to Wolof traditions and international pop.
 
-**Graph phase rationale** · Confidence: medium. Markers sketch the 1970s emergence, 1980s expansion with Senegalese dance bands, and continuing practice. Editorial shading, not a measured ranking; boundaries are approximate.
+## Assessment
 
-## Phases
+The 1970s onset is a broad period marker; source evidence supports development by Senegalese performers and the central role of N’Dour, but not a precise founding year. Removed the unsubstantiated 1980s “golden age” and 1990s generic phase. Confidence: medium for period and lineage; low for exact year-specific staging.
 
-- 1970 emerging · medium · No phase note · None recorded
-- 1980 golden-age · medium · No phase note · None recorded
-- 1990 established · medium · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+The name and sound may have emerged through several groups and performers; scholarship does not identify a single undisputed inventor.

@@ -2,12 +2,20 @@
 
 Graph ID `artist:black-coffee`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1994
+**Reviewed** · 2026-11-04
 
-**Graph claim** · South African DJ and producer who gained attention through the 2004 Red Bull Music Academy and founded Soulistic Music. His deep, soulful house later won a Grammy for Best Dance/Electronic Album.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Black_Coffee_(DJ)>), [2](<https://www.allmusic.com/artist/black-coffee-mn0002006338>)
+- [Black Coffee profile, Durban University of Technology / Mercury](https://www.dut.ac.za/wp-content/uploads/news_files/Former-DUT-Student.pdf) — University publication states he began deejaying in 1994 while in high school, then formed Shana during music studies.
+- [Black Coffee profile, SAGE reference book](https://uk.sagepub.com/sites/default/files/upm-assets/81490_book_item_81490.pdf) — Academic publisher profile gives 1994 career start and says he became nationally prominent by 2007.
+- [Black Coffee artist profile, Insomniac](https://www.insomniac.com/music/artists/black-coffee/) — Festival biography summarizes his later international rise and career arc.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Kept 1994, corroborated by institutional and academic-publisher references; noted that broader recognition came later.
+
+## Remaining uncertainty
+
+Some biographies date his wider scene breakthrough to Red Bull Music Academy in 2003–04, not the start of DJ work.

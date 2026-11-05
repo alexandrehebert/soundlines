@@ -2,20 +2,20 @@
 
 Graph ID `genre:industrial-metal`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: origin period retained, false endpoint removed
 
-**Graph period** · 1988–2000 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A metal style that combines distorted guitar riffs with industrial electronics, samples and mechanical production. Ministry and Nine Inch Nails helped bring the sound to wider audiences.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/industrial-metal-ma0000012276>)
+- [University of Turku: Modern Heavy Metal conference paper](https://iipc.utu.fi/MHM/Clifford.pdf) — Academic conference paper identifies industrial metal as a subgenre led by performers including Ministry and Rammstein.
+- [AllMusic: Industrial Metal](https://www.allmusic.com/style/industrial-metal-ma0000012276) — Genre reference identifies the style; page blocked during direct retrieval.
+- [Ministry: The Land of Rape and Honey (official discography)](https://www.sire.com/artist/ministry/) — Label artist catalog can corroborate Ministry’s late-1980s shift, but this check did not find an album-specific page.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Kept 1988 as a circa marker for the late-1980s industrial-metal breakthrough associated with Ministry, but removed the unsupported 2000 end and subjective phase curve; the style continued afterward, including Rammstein. Confidence is medium because the precise emergence date and boundaries vary by account.
 
-- 1988 emerging · unrated · No phase note · None recorded
-- 1993 golden-age · unrated · No phase note · None recorded
-- 1998 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+This review supports the late-1980s breakthrough more strongly than the first use of the genre label; an earlier precursor date may be defensible.

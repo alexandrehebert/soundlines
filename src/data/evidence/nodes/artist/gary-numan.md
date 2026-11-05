@@ -2,27 +2,20 @@
 
 Graph ID `artist:gary-numan`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1976
+**Reviewed** · 2026-11-04
 
-**Graph claim** · English singer and songwriter whose early electronic pop helped shape synth-pop.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Gary_Numan>)
+- [AllMusic Gary Numan artist profile](https://www.allmusic.com/artist/p5049) — Career record cross-reference for the early Gary Numan/Lasers years.
+- [Universal Music Publishing Group, Gary Numan](https://www.umusicpub.com/uk/artists/gary-numan) — Documents Tubeway Army and 1979 success; supports separating earlier group activity from breakthrough.
+- [Beggars Banquet, Tubeway Army BBC sessions](https://beggarsbanquetrecords.com/wp/tubeway-army-bbc-sessions/) — Label archive documents Tubeway Army sessions and release timeline.
 
-**Graph phase rationale** · Editorial career prominence: Tubeway Army and the 1979 solo breakthrough, a quieter period, the darker sound from Sacrifice onward, and the later Savage and Intruder releases. Milestone dates are documented; these relative shades are not measured popularity.
+## Assessment
 
-## Phases
+Corrected the earlier note/graph mismatch: the graph starts in 1976 because AllMusic documents Numan’s pre-Tubeway Army Lasers activity that year. Tubeway Army formed in 1977, a distinct subsequent milestone; its debut release came later. The source note’s former circa-1977 wording conflated those events. Confidence: medium-high for this documented early-career date.
 
-- 1976 emerging (0.3) · unrated · No phase note · None recorded
-- 1978 emerging (0.6) · unrated · No phase note · None recorded
-- 1979 golden-age (1) · unrated · The 1979 release and chart success of “Cars” and The Pleasure Principle anchor this phase; the prominence label is interpretive. · [1](https://www.umusicpub.com/us/artists/gary-numan)
-- 1981 golden-age (0.75) · unrated · No phase note · None recorded
-- 1985 established (0.4) · unrated · No phase note · None recorded
-- 1992 established (0.25) · unrated · No phase note · None recorded
-- 1994 established (0.5) · unrated · No phase note · None recorded
-- 2000 established (0.55) · unrated · No phase note · None recorded
-- 2017 established (0.75) · unrated · No phase note · None recorded
-- 2021 established (0.7) · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The 1976 marker represents early band activity, not a solo career or the better-known Tubeway Army lineup.

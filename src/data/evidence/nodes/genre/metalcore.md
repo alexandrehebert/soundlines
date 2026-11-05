@@ -2,20 +2,20 @@
 
 Graph ID `genre:metalcore`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: hybrid roots and commercial phase separated
 
-**Graph period** · 1990 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A metal and hardcore-derived style built around heavy riffs, breakdowns and a mix of melodic and harsh vocals. Its later waves expanded into many different production and performance approaches.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/metalcore-ma0000013405>)
+- [University of Turku: Modern Heavy Metal conference paper on metalcore](https://iipc.utu.fi/MHM/Kennedy.pdf) — Scholarship on genre labels notes metalcore’s late-1980s roots, continuing use, and different accounts of its codification.
+- [Bloomsbury Academic: Metalcore and genre codification](https://www.bloomsbury.com/uk/metalcore-9798765103289/) — Academic music series treats metalcore as an evolving category and its changing genre codification.
+- [AllMusic: Metalcore](https://www.allmusic.com/style/metalcore-ma0000013405) — Reference overview describes the hybrid style and later popularization; page itself was not retrievable in this check.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed.
+## Assessment
 
-## Phases
+Kept a circa-1988 start for late-1980s roots, removed the unsupported golden-age and 2018 established markers, and left the style open-ended. Description distinguishes early metallic hardcore from the 2000s popular category.
 
-- 1990 emerging · unrated · No phase note · None recorded
-- 2001 golden-age · unrated · No phase note · None recorded
-- 2018 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The label is applied differently across scenes: some accounts treat the late-1980s crossover as metalcore, while others date codification to the 1990s or later.

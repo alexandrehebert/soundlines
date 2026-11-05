@@ -2,12 +2,20 @@
 
 Graph ID `artist:sasha`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1989
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Welsh DJ and producer who started out playing acid house in the late 1980s. His 1990s mix albums with John Digweed shaped progressive house.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Sasha_(DJ)>), [2](<https://www.allmusic.com/artist/sasha-mn0002141576>)
+- [Sasha profile, Insomniac](https://www.insomniac.com/music/artists/sasha/) — Festival bio describes his start as a club DJ in the late 1980s.
+- [Sasha interview, Jazz Weekly](https://www.jazzweekly.com/interviews/sasha.htm) — Interview says he began clubbing at Manchester’s Haçienda around 1988 before pursuing DJ gigs.
+- [Sasha biography, Encyclopedia.com](https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/sasha) — Reference places club sessions and Shelly’s residency in the late 1980s.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Changed the specific 1989 start to circa 1988 because the sources support late-1980s entry but do not establish an exact professional start year.
+
+## Remaining uncertainty
+
+1988 marks early scene involvement; first paid performance is not dated.

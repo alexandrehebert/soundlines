@@ -2,10 +2,16 @@
 
 Graph ID `artist:linkin-park`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 2000 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Official Linkin Park biography](https://www.linkinpark.com/about) — Band biography confirms the Xero and Hybrid Theory names and 2000 debut album.
+- [Linkin Park Association, band biography](https://www.lpassociation.com/bio/) — Detailed chronology dates the Xero formation to 1996 and the later name change.
+- [AllMusic, Linkin Park biography](https://www.allmusic.com/artist/linkin-park-mn0000289599) — Independent music reference documents their releases and career.
+
+## Assessment
+
+The original 2000 start conflated debut album with band formation. Xero began in 1996; the name Linkin Park came later, before the 2000 debut. Confidence: high for formation sequence.

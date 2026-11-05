@@ -2,10 +2,16 @@
 
 Graph ID `artist:luzmila-carpio`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1960 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.allmusic.com/style/andean-folk-ma0000002426>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [La Razón, interview with Luzmila Carpio](https://hemeroteca.larazon.bo/la-revista/2016/01/10/luzmila-carpio-si-olvidamos-la-lengua-originaria-tambien-olvidamos-el-pensamiento/) — Reports professional debut at age 11 and a record contract after a 1970 contest.
+- [El País, Luzmila Carpio profile](https://elpais.com/america-colombia/2024-08-17/luzmila-carpio-abre-sus-alas-en-bogota.html) — Reports her first recordings in 1969 and national recognition in the early 1970s.
+- [AllMusic, Luzmila Carpio biography](https://www.allmusic.com/artist/luzmila-carpio-mn0000205536/biography) — Discography biography places her first documented recordings in 1969.
+
+## Assessment
+
+The 1960s decade is defensible for a professional debut at age 11 and recordings by 1969. The checked sources support the broad decade and recording milestone, not an exact birth-year-derived career start. Confidence: medium-high.

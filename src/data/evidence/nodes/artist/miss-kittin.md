@@ -2,12 +2,19 @@
 
 Graph ID `artist:miss-kittin`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1998
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Miss Kittin is documented in the cited specialist genre histories and artist reference.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/miss-kittin-mn0000497290>)
+- [Kittin official biography](https://misskittin.com/about/) — First-person career account dates first commissioned track and first official EP with The Hacker to 1995; clarifies billing name.
+- [AllMusic artist profile](https://www.allmusic.com/artist/miss-kittin-mn0000497290) — Specialist music reference for artist identity and discography.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Corrected the 1998 onset to 1995, when her official biography says she made her first commissioned track and first EP with The Hacker. Later fame from “Frank Sinatra” and “1982” should not be mistaken for career start. No end date is supported.
+
+## Remaining uncertainty
+
+The 1995 account is autobiographical and does not provide an exact release day.

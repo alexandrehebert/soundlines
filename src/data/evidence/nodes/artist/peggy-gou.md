@@ -2,12 +2,20 @@
 
 Graph ID `artist:peggy-gou`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 2014
+**Reviewed** · 2026-11-04
 
-**Graph claim** · South Korean DJ, producer and singer based in Berlin who released EPs on Ninja Tune and Phonica. Launched Gudu Records in 2019 and released her debut album I Hear You in 2024.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Peggy_Gou>), [2](<https://www.allmusic.com/artist/peggy-gou-mn0003556247>)
+- [Peggy Gou profile, Sónar](https://production-portal.sonar.es/en/activity/peggy-gou) — Festival profile dates her move to Berlin to 2014, a career-context marker rather than first DJ set.
+- [Peggy Gou profile, Mixmag](https://mixmag.net/feature/impact-peggy-gou/) — Contemporary 2016 feature says she released her first EP at the start of 2016.
+- [Peggy Gou artist profile, Insomniac](https://www.insomniac.com/music/artists/peggy-gou/) — Festival bio confirms later catalog milestones and 2024 debut album.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Softened the exact year to circa because 2014 is the move to Berlin, while public releases begin in 2016; clarified those phases.
+
+## Remaining uncertainty
+
+The graph’s 2014 may refer to the beginning of her Berlin DJ work; an exact first public set was not sourced.

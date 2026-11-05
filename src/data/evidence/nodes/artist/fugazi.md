@@ -2,12 +2,19 @@
 
 Graph ID `artist:fugazi`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: hiatus and last performance date checked
 
-**Graph period** · 1987
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Fugazi is documented in the cited genre histories and artist reference.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/fugazi-mn0000183938>)
+- [Dischord Records: Fugazi](https://dischord.com/band/fugazi) — The band’s label dates its first show to 3 September 1987 and describes its self-management and low-cost, all-ages policy.
+- [Dischord Records: Fugazi Live Series streaming announcement](https://next.dischord.com/news/762/2025/5/fugazi-live-series-recordings-available-on-bandcamp-and-streaming-services) — Label announcement identifies the 4 November 2002 London date as Fugazi’s to-date final performance and describes its continuing archive.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 1987 start is exact. Set 2002 as the last performance endpoint; this represents active performance years, not a formal breakup, since Dischord describes the group as on indefinite hiatus since 2003.
+
+## Remaining uncertainty
+
+The group is inactive rather than formally disbanded; archival activity continues.

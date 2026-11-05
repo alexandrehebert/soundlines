@@ -2,12 +2,16 @@
 
 Graph ID `artist:run-dmc`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1983–2002
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Queens hip-hop group that helped bring rap to a wider audience.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Run-DMC>)
+- [Long Island Music and Entertainment Hall of Fame](https://www.limusichalloffame.org/inductees/run-dmc/) — Dates the trio’s first single, “It’s Like That,” to 1983 and reviews its mainstream impact.
+- [AllMusic biography](https://www.allmusic.com/artist/p121003/biography) — Confirms the 1983 debut single, 1984 first album, and influence in establishing hip-hop as an album format.
+- [Rock & Roll Hall of Fame](https://www.rockhall.com/inductees/run-dmc) — Authoritative retrospective on the trio’s musical and cultural influence.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+1983 is well-supported by the debut single. Kept 2002 as the effective end of the group’s active career; clarified the role of Jam Master Jay’s death rather than treating the date as an ordinary breakup.

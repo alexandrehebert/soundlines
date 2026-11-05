@@ -2,12 +2,20 @@
 
 Graph ID `artist:bi-kidude`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1940–2013 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Zanzibar singer associated with taarab and Unyago. The approximate timeline starts with her return to Zanzibar in the 1940s; her earlier chronology is uncertain.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Bi_Kidude>)
+- [Bi Kidude obituary, The Guardian](https://www.theguardian.com/music/2013/apr/17/bi-kidude-dies) — Obituary notes uncertain birth year, an almost 50-year lull in singing, and a revival in the 1980s.
+- [Bi Kidude obituary, Tanzanian Affairs](https://www.tzaffairs.org/2013/09/obituaries-59/) — Reports she sang for a living from the 1920s and released her first solo album in 1994.
+- [Bi Kidude profile, Egypt State Information Service](https://africa.sis.gov.eg/english/figures/art/bi-kidude/) — Estimates birth around 1910 and identifies her as a major Zanzibar taarab singer.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Kept the decade-level start and 2013 endpoint, noting oral-history uncertainty and the long interruption followed by renewed activity.
+
+## Remaining uncertainty
+
+Precise start year is unknowable from sources reviewed; the 1940s point is not a continuous professional career date.

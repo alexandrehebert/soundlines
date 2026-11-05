@@ -2,20 +2,20 @@
 
 Graph ID `genre:old-school-rap`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1975–1985 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · An early New York rap style built around party rhymes, DJ-led breaks, call-and-response and the block-party culture from which hip-hop emerged. The label is retrospective; the style continues to be performed.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/old-school-rap-ma0000002762>), [2](<https://www.allmusic.com/artist/kurtis-blow-mn0000116388>)
+- [USC Scalar, Rap and Hip Hop USA: The Making of a National Culture](https://scalar.usc.edu/works/music-in-global-america/rap-and-hip-hop-usa-the-making-of-a-national-culture.36) — Professor-authored teaching resource periodizes the first, retrospectively named old-school era as 1974–1986, centered on the South Bronx.
+- [AllMusic old-school rap overview](https://www.allmusic.com/style/old-school-rap-ma0000002762) — Specialist genre taxonomy offers a useful cross-reference; not used to assert universal dates.
+- [AllMusic Kurtis Blow artist profile](https://www.allmusic.com/artist/kurtis-blow-mn0000116388) — Artist example helps check the early commercial period; not evidence of a hard genre endpoint.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Replaced the graph’s unsupported 1975–1985 decade-precision window with USC’s explicit 1974–1986 periodization. Kept the description’s warning that “old school” is retrospective and performance continues. Removed editorial golden-age phases because they were not source-measured. Confidence: medium-high for this specific periodization, not a universal boundary.
 
-- 1975 emerging · unrated · No phase note · None recorded
-- 1979 golden-age · unrated · No phase note · None recorded
-- 1983 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Other histories use different cutoffs depending on whether they mark block-party origins, recording history or changes in rap production.

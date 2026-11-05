@@ -2,12 +2,16 @@
 
 Graph ID `artist:ltj-bukem`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1988
+**Reviewed** · 2026-11-04
 
-**Graph claim** · English DJ and producer associated with atmospheric jungle and drum and bass.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/LTJ_Bukem>)
+- [Insomniac, LTJ Bukem](https://www.insomniac.com/music/artists/ltj-bukem/) — Profile dates his reputation for distinctive DJ sets to 1988 and career commitment to 1989, distinguishing later releases and breakthrough.
+- [AllMusic, LTJ Bukem biography](https://www.allmusic.com/artist/ltj-bukem-mn0000834320) — Independent discography reference covers his early DJ and production work.
+- [Native Instruments, LTJ Bukem](https://blog.native-instruments.com/traktor-signatures-ltj-bukem/) — Producer interview discusses his 1980s DJ development and continuing approach.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 1988 date is reasonable as the beginning of a public DJ reputation; Bukem’s own career commitment is reported as 1989, with recorded releases following later. Preserve 1988 as an approximate DJ-activity marker. Confidence: medium-high.

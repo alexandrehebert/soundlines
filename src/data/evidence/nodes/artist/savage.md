@@ -2,12 +2,15 @@
 
 Graph ID `artist:savage`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1984
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Italian singer associated with Italo disco.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Savage_(musician)>)
+- [Savage official website](https://www.savage-music.com/) — Identifies Savage as Roberto Zanetti and dates “Don’t Cry Tonight” to November 1983.
+- [AllMusic artist profile](https://www.allmusic.com/artist/savage-mn0000256873) — Discography and overview place the project in the 1980s Italo disco scene.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Changed the 1984 start to 1983 based on the artist’s own dated history of his first solo single. “Savage” is both a performance identity and Zanetti’s singer persona, not a separate anonymous act.

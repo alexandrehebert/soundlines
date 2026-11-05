@@ -2,20 +2,20 @@
 
 Graph ID `artist:otis-redding`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1958–1967
+**Reviewed** · 2026-11-04
 
-**Graph claim** · American soul singer and songwriter associated with Southern soul.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Otis_Redding>)
+- [Otis Redding official biography](https://otisredding.com/the-man/) — Official estate history dates his joining Johnny Jenkins and the Pinetoppers to 1958 and documents late-career plans.
+- [Rock & Roll Hall of Fame profile](https://rockhall.com/inductees/otis-redding/) — Institutional profile confirms his death in December 1967 and legacy.
+- [Georgia Music Hall of Fame biography](https://www.georgiaencyclopedia.org/articles/arts-culture/otis-redding-1941-1967/) — State encyclopedia gives career context and life dates.
 
-**Graph phase rationale** · Editorial career prominence: early recordings followed by his mid-1960s Stax breakthrough. The career ends with his death in 1967; the posthumous success of (Sittin' On) The Dock of the Bay is not treated as another active-career phase.
+## Assessment
 
-## Phases
+Existing 1958–1967 years are corroborated. Clarified the start as an early band phase, preceding the solo breakthrough with “These Arms of Mine” in 1962.
 
-- 1958 emerging (0.3) · unrated · No phase note · None recorded
-- 1962 emerging (0.6) · unrated · No phase note · None recorded
-- 1965 golden-age (1) · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The graph captures public music work beginning in 1958; earlier church singing and local talent shows are not precisely dated.

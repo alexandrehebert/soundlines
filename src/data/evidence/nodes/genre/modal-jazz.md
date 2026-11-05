@@ -2,20 +2,20 @@
 
 Graph ID `genre:modal-jazz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: defining late-1950s milestones separated from genre lifespan
 
-**Graph period** · 1958–1970 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Improvisation organized around modes and longer harmonic spaces rather than dense sequences of chord changes.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Modal_jazz>)
+- [Smithsonian Music: Jazz](https://music.si.edu/story/jazz/) — Smithsonian history describes modal improvisation’s impact following Davis’s 1959 Kind of Blue and credits George Russell’s earlier theorizing.
+- [Smithsonian Folkways: Jazz—The Smithsonian Anthology](https://folkways-media.si.edu/docs/folkways/artwork/SFW40820.pdf) — Liner essay explains the modal method on Kind of Blue and its distinct role in jazz, not a separate closed era.
+- [University of Rochester: Miles Davis’s “So What” as modal jazz case study](https://urresearch.rochester.edu/institutionalPublicationPublicView.action?institutionalItemId=13845&versionNumber=1) — Academic dissertation identifies modal jazz as an approach emerging in the late 1950s and 1960s.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Kept a circa-1958 start as an approximate marker for the early Davis recordings and removed the 1970 endpoint and “niche” phase. Modal jazz is a continuing compositional approach rather than a style that ended in 1970.
 
-- 1958 emerging · unrated · No phase note · None recorded
-- 1963 golden-age · unrated · No phase note · None recorded
-- 1968 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+The 1958 date points to “Milestones”; Kind of Blue (1959) is the clearer landmark, but neither alone defines the whole genre.

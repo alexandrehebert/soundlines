@@ -42,7 +42,7 @@ interface GraphNode {
   id: string            // "<type>:<slug>", e.g. "genre:deep-house", "artist:kraftwerk"
   type: 'genre' | 'artist' | 'instrument' | 'label' | 'place' | 'track' | 'scene' | 'event'
   name: string          // Display name, e.g. "Deep house"
-  period?: { start: number; end?: number | null; precision?: 'year' | 'decade' | 'circa' } | null // Negative years are BCE
+  period?: { start: number; end?: number | null; precision?: 'year' | 'decade' | 'century' | 'circa' } | null // Negative years are BCE
   description?: string  // 1–3 sentences, editorial and evocative but factual
   family?: GenreFamily | InstrumentFamily  // Timeline lane (required for genres and instruments)
   kind?: 'person' | 'group' | 'collective'   // Artists only
@@ -71,6 +71,8 @@ interface GraphNode {
 Supply a period when a defensible date is available; omit it or use `null` when
 it is not. Undated genres, artists, instruments, and events remain searchable
 and appear separately from dated timelines without an invented year.
+Use `year` for a known year, `decade` or `century` for broader precision, and
+`circa` for an approximate date.
 
 Optional node-level `confidence` describes the evidence for the overall entry,
 not every individual claim, date, phase, or relationship. It appears in the

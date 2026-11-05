@@ -2,12 +2,20 @@
 
 Graph ID `artist:youssou-ndour`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1970 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Senegalese singer whose work with Dakar bands helped develop and popularize mbalax.
+## Sources checked
 
-**Graph citations** · [1](<https://www.britannica.com/biography/Youssou-NDour>), [2](<https://en.wikipedia.org/wiki/Youssou_N%27Dour>)
+- [Youssou N’Dour profile, Sharjah Art Foundation](https://www.sharjahart.org/en/people/details/youssou-ndour) — Art institution dates his Star Band entry to four years after 1959 and formation of Étoile de Dakar to 1977.
+- [Praemium Imperiale laureate biography](https://www.praemiumimperiale.org/en/laureate/ndour/) — Award biography confirms Star Band and formation of Étoile de Dakar in 1979, demonstrating date variation.
+- [Universal Music France profile](https://www.universalmusic.fr/artistes/20000088991) — Label profile confirms early activity with Star Band and Super Diamono.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Retained 1970 decade precision because reputable institutional biographies disagree on the exact Étoile founding year (1977 vs 1979) and the earlier Star Band entry is earlier still. Removed misleading precision. Artist remains active.
+
+## Remaining uncertainty
+
+Early career chronology varies; decade-level start best reflects the evidence.

@@ -2,16 +2,20 @@
 
 Graph ID `artist:thelonious-monk`
 
-**Review status** · Career boundaries and musical description cross-checked
+**Review status** · Reviewed
 
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-04
 
 ## Sources checked
 
-- [Robin D. G. Kelley, official biography](https://www.theloniousmonkmusic.com/bio/) — Scholarly biography read: touring pianist circa 1935; Minton’s appointment 1941; final public appearance July 1976. Explains stride roots and distinctive rhythm alongside bebop.
-- [National Arts Centre](https://nac-cna.ca/en/bio/thelonious-monk) — Indexed biography corroborates earlier playing and the 1941 Minton’s milestone; direct access returned 503.
-- [Wikipedia, original citation](https://en.wikipedia.org/wiki/Thelonious_Monk) — Page retrieved; early-career and later-life sections identified.
+- [Thelonious Monk official biography](https://www.theloniousmonkmusic.com/bio/) — Says Monk began working as a traveling evangelist’s pianist around 1935 and made his final public appearance in 1976.
+- [Blue Note Records biography](https://www.bluenote.com/artist/thelonious-monk/) — Documents his early touring work, major Blue Note recording period (1947–52) and later career.
+- [North Carolina Music Hall of Fame biography](https://northcarolinamusichalloffame.org/inductee-item/thelonious-monk/) — Confirms his bebop significance and first studio work with Coleman Hawkins in 1944.
 
 ## Assessment
 
-Move start from 1941 to circa 1935: Minton’s was a later appointment, not his first paid musical work. Retain 1976 as performance endpoint rather than 1982 death. Medium confidence in approximate beginning, high in the documented final appearance. Retain description and avoid treating his idiom as interchangeable with other bebop pianists. No authored phases.
+Kept 1935–1976 as performance-career bounds, but clarified that 1935 is his early touring job, not first recording. His first studio recordings were with Coleman Hawkins (1944); first session as a leader came in 1947. The old circa marker is removed because the graph years refer to distinct documented milestones.
+
+## Remaining uncertainty
+
+The 1935 touring start is approximate, while 1944 and 1947 recording milestones are firmer.

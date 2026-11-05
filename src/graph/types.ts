@@ -46,7 +46,8 @@ export type EdgeType =
 
 export type Confidence = 'low' | 'medium' | 'high'
 
-export type DatePrecision = 'year' | 'decade' | 'circa'
+export const DATE_PRECISIONS = ['year', 'decade', 'century', 'circa'] as const
+export type DatePrecision = (typeof DATE_PRECISIONS)[number]
 
 export interface Period {
   /** Start year. */

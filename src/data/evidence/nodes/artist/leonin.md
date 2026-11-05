@@ -2,12 +2,16 @@
 
 Graph ID `artist:leonin`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1150–1201 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Notre-Dame school composer associated with early polyphonic organum. Activity dates are approximate because biographical evidence is limited.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/L%C3%A9onin>)
+- [Library of Congress authority record, Léonin](https://lccn.loc.gov/n87807575) — Authority record gives “fl. 1150s–c.1201” and flags attribution and source limitations.
+- [Larousse, Léonin](https://www.larousse.fr/encyclopedie/musdico/L%C3%A9onin/168774) — Reference entry cautions that archival evidence is sparse and places activity at Notre-Dame roughly 1160–1180.
+- [AllMusic, Léonin biography](https://www.allmusic.com/artist/l%C3%A9onin-mn0002287591/biography) — Music reference catalogs his traditional lifespan/activity dates and works attributed to him.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Keep the approximate 1150s–c.1201 date as conventional activity bounds, not verified birth and death dates. The Library of Congress notes limited contemporary evidence and attribution issues; confidence: medium-low for exact bounds, high for a late-twelfth-century Notre-Dame association.

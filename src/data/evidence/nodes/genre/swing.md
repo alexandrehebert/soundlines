@@ -2,21 +2,38 @@
 
 Graph ID `genre:swing`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1930 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A jazz style and dance-music idiom built around swinging rhythms, arranged sections, and improvisation, performed by large bands and smaller groups. It became the dominant U.S. popular-music form in the 1930s and 1940s, while later swing traditions continued in different settings.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Swing_music>), [2](<https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/great-depression-and-world-war-ii-1929-1945/art-and-entertainment-in-1930s-1940s/>), [3](<https://jazzphiladelphia.org/for-listeners/timeline/>), [4](<https://en.wikipedia.org/wiki/Swing_era>)
+- [Carnegie Hall, The Orchestra Swings teacher guide](https://www.carnegiehall.org/-/media/CarnegieHall/Files/PDFs/Education/Educators/Link-Up/The-Orchestra-Swings/LU-Orchestra-Swings-Teacher-Guide-2023-2024.pdf?hash=4BDE53AAE95C9DF4AEE47AC510F2BB0B&la=en) — Education resource defines the Swing Era approximately 1935–45 and ties it to US dance halls and big bands.
+- [Smithsonian Music, Jazz history](https://music.si.edu/story/jazz) — Museum chronology traces swing development by the end of the 1920s, its big-band popularity and later continuities.
+- [Library of Congress, 1930s–40s art and entertainment](https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/great-depression-and-world-war-ii-1929-1945/art-and-entertainment-in-1930s-1940s/) — Institutional history situates swing within 1930s/40s US entertainment.
+- [Jazz Philadelphia, jazz timeline](https://jazzphiladelphia.org/for-listeners/timeline/) — Local jazz institution provides additional era context.
 
-**Graph phase rationale** · Approximate U.S. popular-music visibility: the Library of Congress and Philadelphia jazz histories place swing and the big-band era at the center of popular music from the 1930s into the mid-1940s. Swing continued as a practice after its period of national dominance; these are not worldwide measurements.
+## Assessment
 
-## Phases
+Retained c.1930 as the style’s transition into broad prominence, but removed a fixed end date because swing remained an active style after the 1935–45 Swing Era. Kept only the well-supported 1935 golden-age marker, clarifying it refers to popularity of big-band swing in the US. Confidence: high for the era window, medium for global applicability.
 
-- 1930 emerging · unrated · Jazz histories place swing’s rise and mainstream popularity in the 1930s, with a broad heyday from the mid-1930s to mid-1940s; the phase boundary is approximate. · [1](https://jazzphiladelphia.org/for-listeners/timeline/)
-- 1933 golden-age · unrated · No phase note · None recorded
-- 1947 established · unrated · No phase note · None recorded
-- 1955 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.
+“Swing” also names a rhythmic feel and later revival scenes beyond the historical Swing Era.
+
+## Retained phase annotations
+
+The original phase markers are retained below. The timeline uses a neutral bar because these markers do not form a complete, strictly ordered curve under the graph phase rules.
+
+```json
+[
+  {
+    "start": 1935,
+    "prominence": "golden-age",
+    "sources": [
+      "https://www.carnegiehall.org/-/media/CarnegieHall/Files/PDFs/Education/Educators/Link-Up/The-Orchestra-Swings/LU-Orchestra-Swings-Teacher-Guide-2023-2024.pdf?hash=4BDE53AAE95C9DF4AEE47AC510F2BB0B&la=en",
+      "https://music.si.edu/story/jazz"
+    ]
+  }
+]
+```

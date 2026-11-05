@@ -2,12 +2,16 @@
 
 Graph ID `artist:the-cure`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1978
+**Reviewed** · 2026-11-04
 
-**Graph claim** · British band emerging from post-punk, with a catalogue ranging from stark gothic textures to pop.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Cure>)
+- [The Cure official biography](https://www.thecure.com/bio/) — Band chronology says Easy Cure began in 1976; describes recording and 2024 album work.
+- [Official Charts artist history](https://www.officialcharts.com/artist/18409/cure/) — Documents the group’s long chart history and releases.
+- [Capitol Records artist page](https://www.capitolrecords.com/the-cure/) — Current label artist page corroborates ongoing catalog and releases.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Graph’s 1978 can represent adoption of The Cure name; the band’s origin as Easy Cure dates to 1976. Left start as 1978 to preserve the named act’s start and spelled out the earlier precursor. Open period is supported by later recording and performance.

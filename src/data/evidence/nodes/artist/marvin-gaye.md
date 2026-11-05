@@ -2,23 +2,16 @@
 
 Graph ID `artist:marvin-gaye`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1957–1984
+**Reviewed** · 2026-11-04
 
-**Graph claim** · American soul singer and songwriter known for socially engaged and intimate recordings.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Marvin_Gaye>)
+- [Rock & Roll Hall of Fame, Marvin Gaye](https://rockhall.com/inductees/marvin-gaye/) — Institutional biography says his solo career began in 1962 and describes prior group work.
+- [Marvin Gaye official biography](https://www.marvingaye.net/about/) — Documents 1957 recordings with the Marquees/Moonglows and his 1984 death.
+- [Detroit Historical Society, Marvin Gaye](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/gaye-marvin) — Independent institutional biography confirms early group work and 1984 death.
 
-**Graph phase rationale** · Editorial career prominence: early Motown success, the 1971 What's Going On period, later-1970s recordings, and the 1982 Sexual Healing comeback. Dates anchor a qualitative interpretation of his biography, not measured popularity; the active career ends in 1984.
+## Assessment
 
-## Phases
-
-- 1957 emerging (0.3) · unrated · No phase note · None recorded
-- 1963 golden-age (0.8) · unrated · No phase note · None recorded
-- 1971 golden-age (1) · unrated · What’s Going On was released in 1971 and marks a major career and artistic turning point; prominence remains an editorial judgment. · [1](https://www.rockhall.com/wp-content/uploads/2024/03/Marvin_Gaye_1987.pdf)
-- 1976 golden-age (0.85) · unrated · No phase note · None recorded
-- 1980 established (0.4) · unrated · No phase note · None recorded
-- 1982 golden-age (0.8) · unrated · “Sexual Healing” (1982) marked a late-career commercial comeback; the phase label is qualitative. · [1](https://www.rockhall.com/wp-content/uploads/2024/03/Marvin_Gaye_1987.pdf)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+The 1957 start is supported as early group recordings; his solo Motown career began in 1962. The 1984 endpoint is confirmed. Confidence: high for span, with the group/solo distinction.

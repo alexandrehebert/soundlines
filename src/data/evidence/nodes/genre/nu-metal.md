@@ -2,20 +2,20 @@
 
 Graph ID `genre:nu-metal`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1994–2005 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A 1990s heavy style that combined metal riffs with hip-hop rhythms, alternative rock, turntable or electronic textures, and a wide range of vocal approaches. The scene was diverse and its boundaries remain debated.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547>)
+- [University of Western Ontario dissertation on nu-metal formation and reception](https://ir.lib.uwo.ca/etd/10162/) — Peer-reviewed doctoral research explicitly studies formation, peak, decline and continuing genre reception.
+- [Massey University repository, nu-metal emergence and revival](https://mro.massey.ac.nz/items/fce65c7b-f63a-458a-a371-1ac2bdaff8be) — Research abstract locates commercial flourishing in the mid-1990s and discusses later reprisal, challenging a fixed 2005 end.
+- [AllMusic nu-metal overview](https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547) — Specialist genre overview retained as a reference; its broad category does not justify an exact terminal date.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Circa 1994 is a defensible emergence marker anchored by Korn’s debut and scholarly accounts of the mid-1990s scene. Nu metal had a major late-1990s/early-2000s commercial wave, but it continued and later returned; the old 2005 end and 1998/2003 phase labels falsely imply a clean end and measured prominence curve. Confidence: medium; formation date is approximate and the category’s boundaries are contested.
 
-- 1994 emerging · unrated · No phase note · None recorded
-- 1998 golden-age · unrated · No phase note · None recorded
-- 2003 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Exact first use of the label and the extent of later revival vary by source.

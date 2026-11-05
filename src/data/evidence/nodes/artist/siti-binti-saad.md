@@ -2,12 +2,20 @@
 
 Graph ID `artist:siti-binti-saad`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1928–1950
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Zanzibar taarab singer known for early commercial recordings and songs in Swahili. The timeline starts with her documented 1928 recording sessions, not her first performances.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Siti_binti_Saad>), [2](<https://en.wikipedia.org/wiki/Taarab>)
+- [Siti binti Saad biography, Encyclopedia.com](https://www.encyclopedia.com/women/encyclopedias-almanacs-transcripts-and-maps/saad-siti-binti-c-1880-1950) — Biographical reference dates her HMV contract to 1928 and documents her expanding reputation during the 1920s.
+- [Sounding the Indian Ocean, scholarly book](https://www.luminosoa.org/books/175/files/82efdc1c-2aa8-4890-af54-b7984daccd06.pdf) — Academic history documents first titles recorded in Bombay in 1928–29.
+- [Journal of International Library of African Music article](https://journal.ru.ac.za/index.php/africanmusic/article/download/1805/898) — Research article specifies recording sessions in 1928, 1929 and 1930.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+The start and end years are supported; 1928 marks first commercial recordings, rather than the start of her earlier performance career.
+
+## Remaining uncertainty
+
+Birth year estimates vary; not changed as this audit concerns career period.

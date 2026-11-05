@@ -2,21 +2,20 @@
 
 Graph ID `genre:juju`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: historical origins and continued practice distinguished
 
-**Graph period** · 1930–1980 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A Yoruba popular music tradition from Nigeria, shaped by interlocking guitars, percussion and talking drums. Its ensembles expanded dramatically in the mid-twentieth century.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/juju-ma0000002646>), [2](<https://www.britannica.com/art/juju-music>)
+- [Cambridge University Press, Popular Music: A diachronic study of change in juju music](https://www.cambridge.org/core/journals/popular-music/article/abs/diachronic-study-of-change-in-juju-music/6C359B104E11472083E09727E7958672) — Peer-reviewed article states juju first emerged in Lagos in the third decade of the 20th century.
+- [University of Chicago Press: Juju, a Social History and Ethnography](https://ucp-press-web10.uchicago.edu/ucp/books/book/chicago/J/bo3774389.html) — Ethnomusicological monograph documents juju’s Yoruba origins and social history.
+- [South African History Online: Origin and Development of Juju Music](https://www.ajol.info/index.php/ejotmas/article/download/121044/110471) — Academic article surveys Nigerian juju from 1900–1990 and its stylistic evolution.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining prominence wave, consolidation, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Kept a circa-1920 origin supported by music scholarship and removed the 1980 endpoint and unsupported prominence phases. Juju is a living tradition with changing styles, not a genre that ended when one period of commercial prominence passed.
 
-- 1930 emerging · unrated · No phase note · None recorded
-- 1940 golden-age · unrated · No phase note · None recorded
-- 1970 established · unrated · No phase note · None recorded
-- 1978 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+The Cambridge source gives a broad decade, not a single year; 1920 is only a timeline marker.

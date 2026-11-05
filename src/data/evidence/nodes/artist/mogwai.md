@@ -2,12 +2,20 @@
 
 Graph ID `artist:mogwai`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1997
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Mogwai is documented in the cited genre histories and artist reference.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/mogwai-mn0000488946>)
+- [Sub Pop artist biography](https://www.subpop.com/artists/mogwai) — Label biography dates Glasgow formation to 1995 and debut album to 1997.
+- [Mogwai official Bandcamp](https://mogwai.bandcamp.com/) — Official artist page identifies Mogwai as formed in Glasgow in 1995.
+- [AllMusic biography](https://www.allmusic.com/artist/p224692/biography) — Independent music reference corroborates formation in 1995 and early releases.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Changed the 1997 start, which tracked debut album, to the independently corroborated 1995 band formation. The album date remains in the description to distinguish milestones. No end date is supported.
+
+## Remaining uncertainty
+
+None material for the formation year.

@@ -2,12 +2,16 @@
 
 Graph ID `artist:judas-priest`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1969
+**Reviewed** · 2026-11-04
 
-**Graph claim** · British heavy-metal band known for twin-guitar arrangements and powerful vocals.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Judas_Priest>)
+- [Sony Music UK, Judas Priest](https://www.sonymusic.co.uk/artist/judas-priest/) — Label biography dates the band’s formation in Birmingham to 1969.
+- [Metal Hall of Fame, Judas Priest](https://metalhalloffame.org/inductees/judas-priest/) — Institutional biography corroborates 1969 formation and musical identity.
+- [Rock & Roll Hall of Fame, Judas Priest](https://rockhall.com/inductees/Judas-Priest/) — Institutional profile describes the band’s later heavy-metal influence.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 1969 start is confirmed by the label and Hall of Fame biographies. It marks the original band’s formation; the classic lineup and first album came later. Removed dependence on Wikipedia. Confidence: high.

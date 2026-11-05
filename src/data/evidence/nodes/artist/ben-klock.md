@@ -2,12 +2,20 @@
 
 Graph ID `artist:ben-klock`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1998
+**Reviewed** · 2026-11-04
 
-**Graph claim** · German techno DJ and producer who became a resident at Berghain in Berlin. Founded the Klockworks label in 2006.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Ben_Klock>), [2](<https://crackmagazine.net/article/long-reads/now-time-marcel-dettmann-ben-klock-interviewed/>)
+- [Ben Klock biography, AllMusic](https://www.allmusic.com/artist/ben-klock-mn0000279288) — Says he first DJed Berlin clubs in the mid-1990s, before his 1998 releases.
+- [Ben Klock profile, Resident Advisor](https://ra.co/dj/benklock/biography) — Confirms Berghain residency from 2005 as a later career milestone.
+- [Ben Klock interview, XLR8R](https://xlr8r.com/features/interview-ben-klock/) — Interview dates Berghain residency to 2004 and debut album One to 2008.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Changed 1998 to circa 1995 to reflect DJ work predating recorded releases; the 1998 year refers to early production, while 2004–05 marks residency.
+
+## Remaining uncertainty
+
+The mid-1990s start is approximate; no first set date was identified.

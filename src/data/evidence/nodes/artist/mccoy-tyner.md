@@ -2,12 +2,16 @@
 
 Graph ID `artist:mccoy-tyner`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1960–2014
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Pianist associated with John Coltrane's quartet and a powerful modal harmonic language.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/McCoy_Tyner>)
+- [National Endowment for the Arts, McCoy Tyner](https://www.arts.gov/honors/jazz/mccoy-tyner) — NEA biography documents his work with Coltrane in the early 1960s.
+- [Official McCoy Tyner biography](https://mccoytyner.com/about/) — Artist biography dates key recordings with Benny Golson and Coltrane to 1960.
+- [The Guardian, McCoy Tyner obituary](https://www.theguardian.com/music/2020/mar/09/mccoy-tyner-obituary) — Obituary dates his career partnership with Coltrane to 1960 and death to 2020.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+Keep 1960 as the key recorded-career milestone; his professional work began earlier, but his prominence and international career grew with the Coltrane Quartet. Correct the prior 2014 endpoint to 2020, his death year. Confidence: high.

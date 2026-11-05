@@ -2,19 +2,21 @@
 
 Graph ID `genre:merengue`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: contested 19th-century origin and living tradition clarified
 
-**Graph period** · 1850 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A Dominican music-and-dance tradition with regional and ensemble variations, including the modern merengue típico and orchestral forms. It remains central to Dominican popular culture.
+## Sources checked
 
-**Graph citations** · [1](<https://ich.unesco.org/en/RL/music-and-dance-of-the-merengue-in-the-dominican-republic-01162?lang=en>), [2](<https://onda.gob.do/noticias/la-onda-rinde-homenaje-a-merengueros-en-el-dia-nacional-del-merengue/>)
+- [Paul Austerlitz, Merengue: Dominican Music and Dominican Identity](https://www.paulausterlitz.org/Merengue.shtml) — Ethnomusicological monograph surveys 19th-century history and distinguishes origin stories from well-supported evidence.
+- [Library of Congress, Handbook of Latin American Studies: Danza antillana and merengue](https://www.loc.gov/item/hlas-bi2009002350/) — Scholarly bibliography describes research using materials from 1848 onward to examine merengue’s historical development and Dominican context.
+- [UNESCO: Music and dance of the merengue in the Dominican Republic](https://ich.unesco.org/en/RL/music-and-dance-of-the-merengue-in-the-dominican-republic-01162?lang=en) — UNESCO inscription recognizes merengue as a living Dominican musical and dance tradition.
+- [CUNY Dominican Studies Institute: Juan Luis Guerra and the Merengue](https://academicworks.cuny.edu/dsi_pubs/2/) — Research monograph traces development from the late 19th century to the present.
 
-**Graph phase rationale** · Provisional editorial staging from emergence into continued practice. The 1950 marker is a broad modern observation point, not a claim that the tradition began then or reached a measured peak; source-level review remains needed.
+## Assessment
 
-## Phases
+Kept circa 1850 as a broad mid-19th-century marker while explicitly noting disputed origin narratives. Removed unsupported emergence/established phase markers; this is a living tradition rather than a closed historical style.
 
-- 1850 emerging · unrated · No phase note · None recorded
-- 1950 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+Some national origin stories attach merengue to particular 1840s events, but scholarship treats those claims cautiously.

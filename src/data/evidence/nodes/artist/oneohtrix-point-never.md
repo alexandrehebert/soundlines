@@ -2,12 +2,20 @@
 
 Graph ID `artist:oneohtrix-point-never`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 2007
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Oneohtrix Point Never is documented in the cited genre histories and artist reference.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/oneohtrix-point-never-mn0001582159>)
+- [Vanity Fair interview](https://www.vanityfair.com/culture/2015/10/oneohtrix-point-nevers-daniel-lopatin-interview) — Dates Lopatin’s use of the alias to 2007.
+- [AllMusic artist biography](https://www.allmusic.com/artist/oneohtrix-point-never-p1185195/biography) — Reference identifies the project and distinguishes its early independent work from later Warp releases.
+- [Warp Records artist page](https://warp.net/artists/oneohtrix-point-never) — Label catalogue confirms continuing releases and later career phases.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 2007 start is supported for the alias/project; earlier music activity existed under other projects and should not be conflated with OPN. No end date is supported.
+
+## Remaining uncertainty
+
+The exact first use/release under the name is not specified in the biography.

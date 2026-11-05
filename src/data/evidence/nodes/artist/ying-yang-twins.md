@@ -2,10 +2,16 @@
 
 Graph ID `artist:ying-yang-twins`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 2000 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/ying-yang-twins-mn0000584041>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [AllMusic artist profile](https://www.allmusic.com/artist/p392373) — Dates formation to 1997 and the debut album Thug Walkin’ to 2000.
+- [Billboard chart history](https://www.billboard.com/artist/ying-yang-twins/) — Chart record for the group’s singles and albums.
+- [RIAA artist page](https://www.riaa.com/gold-platinum/?tab_active=default-award&se=Ying+Yang+Twins) — Certification database cross-check for major releases.
+
+## Assessment
+
+Changed the approximate 2000s onset to 1997, the duo’s formation year; their first major single and album followed in 2000. The source evidence reviewed establishes this early phase, while later release activity should determine whether an end date is appropriate.

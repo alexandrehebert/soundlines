@@ -2,20 +2,21 @@
 
 Graph ID `genre:salsa`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1960–1980 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A pan-Caribbean and New York-centered dance-music movement drawing especially on Cuban son and related Afro-Cuban forms, with distinct regional histories.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/subgenre/salsa-ma0000002840>)
+- [Smithsonian, Celia Cruz: Queen of Salsa](https://www.si.edu/spotlight/celia-cruz-salsa) — National museum page identifies salsa as a New York style emerging in the 1960s and 1970s.
+- [Marisol Negrón, Made in NuYoRico: Fania Records, Latin Music, and Salsa’s Nuyorican Meanings](https://www.jstor.org/stable/jj.19092165) — Scholarly cultural history traces the salsa industry’s global formation from Fania Records’ establishment in 1964 and centers Nuyorican meanings.
+- [U.S. National Park Service, Salsa Is More Than Salsa](https://home.nps.gov/articles/000/salsa-is-more-than-salsa.htm) — Public historical interpretation explains salsa’s roots, New York label economy and broader musical lineages.
+- [USPTO historical account, Inventing Salsa](https://www.uspto.gov/learning-and-resources/journeys-innovation/historical-stories/inventing-salsa) — Documents Fania and Johnny Pacheco’s role in popularizing a New York version of Cuban dance music during the 1960s.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Changed the graph start from 1960s decade precision to c.1964, marking the formation of the Fania-led New York salsa industry, not the start of Cuban and Puerto Rican musical roots. Removed the unsupported 1980 endpoint and editorial 1968/1978 phases; salsa continued and diversified. Confidence: medium-high for New York commercial naming/consolidation, lower for a single origin because roots predate the label.
 
-- 1960 emerging · unrated · No phase note · None recorded
-- 1968 golden-age · unrated · No phase note · None recorded
-- 1978 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Keep Caribbean antecedents and New York salsa consolidation separate in description; the broad term covers several national and diasporic histories.

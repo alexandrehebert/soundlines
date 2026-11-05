@@ -2,12 +2,20 @@
 
 Graph ID `artist:ramones`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1974–1996
+**Reviewed** · 2026-11-04
 
-**Graph claim** · New York band whose fast, concise songs became a blueprint for punk rock.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Ramones>)
+- [Grammy Museum Ramones exhibit](https://grammymuseum.org/exhibit/hey-ho-lets-go-ramones-and-the-birth-of-punk/) — Museum exhibit dates inception to 1974, final concert to 1996, and key early albums.
+- [Rhino Records, The Sire Years](https://media.rhino.com/press-release/sire-years-1976-1981) — Label history confirms formation in 1974 and debut album in 1976.
+- [Rock & Roll Hall of Fame Ramones profile](https://rockhall.com/inductees/ramones/) — Institutional profile documents the band’s legacy and membership.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Existing 1974–1996 span is corroborated. Clarified the early group formation versus 1976 debut and that the 1996 endpoint reflects the final concert/disbanding, not the deaths of former members that followed.
+
+## Remaining uncertainty
+
+None material to the year-level span.

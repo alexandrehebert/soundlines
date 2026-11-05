@@ -2,12 +2,16 @@
 
 Graph ID `artist:masters-at-work`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1987
+**Reviewed** · 2026-11-04
 
-**Graph claim** · American house production and DJ duo of Kenny Dope and Louie Vega.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Masters_at_Work>)
+- [Red Bull Music Academy, Masters at Work lecture transcript](https://www.redbullmusicacademy.com/lectures/newyork-masters-at-work/?template=RBMA_Lecture%2Ftranscript) — Interview transcript distinguishes Todd Terry’s 1987 use of the name from Vega and Gonzalez’s later meeting and collaboration.
+- [AllMusic, Masters at Work biography](https://www.allmusic.com/artist/mn0000383284) — Discography biography documents the duo’s production/remix output and the 1980s-to-1990s transition.
+- [DJ Mag, Louie Vega / Masters at Work interview](https://djmag.com/features/louie-vega-masters-at-work-nuyorican-soul-interview) — Vega discusses meeting Gonzalez around 1990 and early shared production work.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Correct 1987: AllMusic and the participants explain that Todd Terry used the Masters at Work name for early releases before Vega and Gonzalez became the duo. Set 1990 as approximate collaborative onset; later MAW releases followed. Confidence: medium-high.

@@ -2,12 +2,16 @@
 
 Graph ID `artist:talking-heads`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1975–1991
+**Reviewed** · 2026-11-04
 
-**Graph claim** · New York band combining art-school experimentation, punk-era independence, and funk-influenced rhythm.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Talking_Heads>)
+- [Official Charts Talking Heads biography](https://www.officialcharts.com/artist/18789/talking-heads/) — Dates formation to 1975 and activity through 1991.
+- [Associated Press, Stop Making Sense reunion](https://apnews.com/article/860d58d5d05ba365f7565244fe0306a3) — Confirms the band officially broke up in 1991 and that later gatherings were reunion/promotion events.
+- [Rock & Roll Hall of Fame, Talking Heads](https://www.rockhall.com/inductees/talking-heads) — Institutional history of the band’s impact and induction.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+1975–1991 remains well supported. Subsequent public appearances were one-off promotion and Hall of Fame events, not a resumed recording or touring phase; the end date is credible.

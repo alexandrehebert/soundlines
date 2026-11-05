@@ -2,10 +2,20 @@
 
 Graph ID `artist:nas`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1991 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/nas-mn0000373634>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Library of Congress, Illmatic essay](https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Illmatic_McDuffie.pdf) — Essay states his career began with the 1991 Main Source appearance and discusses Illmatic’s importance.
+- [Sony Music Japan artist profile](https://www.sonymusic.co.jp/artist/Nas/profile/) — Label profile also dates his breakthrough feature and Columbia signing to 1991.
+- [Los Angeles Philharmonic artist profile](https://www.laphil.com/people/nas) — Institutional profile confirms Illmatic as his first full-length album in 1994.
+
+## Assessment
+
+Kept the graph’s 1991 onset but upgraded precision from decade to year and added a career-specific description. The marker refers to recorded public debut, not private demos or songwriting. No end date is appropriate.
+
+## Remaining uncertainty
+
+Some biographies place his private rapping and demos earlier; 1991 is the strongest public recorded milestone.

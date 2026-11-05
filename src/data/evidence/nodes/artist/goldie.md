@@ -2,23 +2,20 @@
 
 Graph ID `artist:goldie`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: first recording years and subjective prominence curve challenged
 
-**Graph period** · 1991
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Graffiti writer turned jungle auteur. 'Timeless' and his Metalheadz label took drum and bass to the world.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Goldie>)
+- [Metalheadz: Goldie](https://www.metalheadz.co.uk/artist/goldie) — Official label biography places his early jungle breakthrough in the 1990s and documents Timeless’s importance to drum and bass.
+- [London Records: Goldie](https://londonrecords.co.uk/artists/goldie/) — Label history dates Metalheadz to 1994 and the chart-crossing Timeless album to 1995.
+- [Resident Advisor: Goldie biography](https://ra.co/dj/goldie/biography) — Scene biography documents Goldie’s Rufige Kru releases, Metalheadz and continued work beyond the 1990s.
 
-**Graph phase rationale** · Editorial career prominence centered on the early jungle singles and the 1995 Timeless breakthrough, followed by ongoing production and later releases. This is scene-relative editorial shading, not a ranking against mainstream artists or measured listening.
+## Assessment
 
-## Phases
+Changed the start to circa-1992, closer to his early recording releases than his 1991 discovery of the scene. Removed multiple yearly phases and intensity values; Timeless is a documented milestone, but the rest of the curve was editorial rather than measured.
 
-- 1991 emerging (0.3) · unrated · No phase note · None recorded
-- 1994 golden-age (0.8) · unrated · No phase note · None recorded
-- 1995 golden-age (1) · unrated · Timeless was released in September 1995 and is described as a landmark in UK dance music; the prominence label is scene-relative editorial interpretation. · [1](https://www.theguardian.com/music/2011/jun/15/goldie-releases-timeless)
-- 1998 established (0.65) · unrated · No phase note · None recorded
-- 2003 established (0.35) · unrated · No phase note · None recorded
-- 2017 established (0.55) · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+Goldie’s early identity spans graffiti and music; the date marks his recorded music career, not his wider artistic career.

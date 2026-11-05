@@ -2,12 +2,20 @@
 
 Graph ID `artist:paul-oakenfold`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1980
+**Reviewed** · 2026-11-04
 
-**Graph claim** · English DJ and producer who brought Balearic club sounds back to London in the late 1980s. Moved into trance and remixed acts from U2 to Madonna.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Paul_Oakenfold>), [2](<https://www.allmusic.com/artist/paul-oakenfold-mn0000749222>)
+- [Paul Oakenfold profile, BMI](https://www.bmi.com/advice/20030618paul_oakenfold_paul_oakenfold) — BMI dates his DJ career to the late 1970s and production career to 1988.
+- [Paul Oakenfold profile, Space Ibiza](https://www.spaceibiza.com/en/component/k2/item/871-paul-oakenfold) — Ibiza venue profile dates early Covent Garden DJ work to the late 1970s and discusses 1987 influence.
+- [Paul Oakenfold biography, AllMusic](https://www.allmusic.com/artist/p44920/biography) — Profile describes his 1987 Ibiza trip as a turning point rather than career start.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Corrected graph’s 1980 to late-1970s DJ beginnings; separated this from 1987 Balearic breakthrough and 1988 production start.
+
+## Remaining uncertainty
+
+Exact year of first wine-bar DJ work is not established; decade precision is appropriate.

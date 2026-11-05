@@ -1,11 +1,12 @@
 import { describe, expect, it } from 'vitest'
 import rawGraph from './graph.json'
-import type { GenreFamily, GraphNode, MusicGraph, NodeType } from '../graph/types.ts'
+import type { GenreFamily, MusicGraph, NodeType } from '../graph/types.ts'
 import { MAX_YEAR, MIN_YEAR } from '../graph/layout.ts'
 import { buildIndex, lineage, neighbors, searchNodes } from '../graph/graph.ts'
 import { artistFamily, createTimelineModel, timelineFamily } from '../graph/timeline.ts'
 import { FAMILY_COLORS } from '../theme.ts'
 import {
+  DATE_PRECISIONS,
   EDGE_TYPE_LABELS,
   EVENT_CATEGORY_LABELS,
   FAMILY_LABELS,
@@ -35,7 +36,9 @@ describe('graph.json integrity', () => {
       'genre:g-funk', 'genre:garage-house', 'genre:garage-rock', 'genre:girl-groups',
       'genre:gnawa', 'genre:gothic-rock', 'genre:gqom', 'genre:grime', 'genre:grunge',
       'genre:heavy-metal', 'genre:highlife', 'genre:hip-hop', 'genre:horrorcore', 'genre:hyphy',
-      'genre:minimal-techno', 'genre:minimalism', 'genre:neo-soul', 'genre:soukous',
+      'genre:minimal-techno', 'genre:minimalism', 'genre:neo-soul', 'genre:pop-punk',
+      'genre:reggae', 'genre:soukous', 'genre:surf-rock', 'genre:swing', 'genre:synth-pop',
+      'genre:trap-rap', 'genre:trip-hop', 'genre:vocal-jazz',
       'instrument:clarinet', 'instrument:theremin', 'instrument:euphonium',
     ]
     for (const id of ids) {
@@ -95,6 +98,10 @@ describe('graph.json integrity', () => {
 
   it('uses valid optional phase-level evidence', () => {
     for (const node of graph.nodes) {
+      if (node.phaseNote !== undefined) {
+        expect(typeof node.phaseNote, node.id).toBe('string')
+        expect(node.phaseNote.trim().length, node.id).toBeGreaterThan(0)
+      }
       for (const phase of node.phases ?? []) {
         const label = `${node.id}, phase ${phase.start}`
         if (phase.confidence !== undefined) {
@@ -171,19 +178,19 @@ describe('graph.json integrity', () => {
   })
 
   it('has sane periods (start <= end, plausible years)', () => {
-    const withPeriod = graph.nodes.filter(
-      (node): node is GraphNode & { period: { start: number; end?: number | null } } =>
-        node.period != null,
-    )
-    expect(withPeriod.length).toBeGreaterThan(0)
-    for (const node of withPeriod) {
-      expect(Number.isInteger(node.period.start), node.id).toBe(true)
-      expect(node.period.start, node.id).toBeGreaterThanOrEqual(MIN_YEAR)
-      expect(node.period.start).toBeLessThan(2100)
-      if (node.period.end != null) {
-        expect(Number.isInteger(node.period.end), node.id).toBe(true)
-        expect(node.period.end).toBeGreaterThanOrEqual(node.period.start)
+    const items = [...graph.nodes, ...graph.edges]
+    expect(items.some((item) => item.period != null)).toBe(true)
+    for (const item of items) {
+      const period = item.period
+      if (period == null) continue
+      expect(Number.isInteger(period.start), item.id).toBe(true)
+      expect(period.start, item.id).toBeGreaterThanOrEqual(MIN_YEAR)
+      expect(period.start, item.id).toBeLessThan(2100)
+      if (period.end != null) {
+        expect(Number.isInteger(period.end), item.id).toBe(true)
+        expect(period.end, item.id).toBeGreaterThanOrEqual(period.start)
       }
+      if (period.precision !== undefined) expect(DATE_PRECISIONS, item.id).toContain(period.precision)
     }
   })
 
@@ -319,13 +326,15 @@ describe('graph.json integrity', () => {
 
   it.each([
     ['artist:mongo-santamaria', 1937, 'year'],
-    ['artist:vasily-andreyev', 1884, 'year'],
-    ['artist:yo-yo-ma', 1960, 'circa'],
+    ['artist:vasily-andreyev', 1884, undefined],
+    ['artist:yo-yo-ma', 1960, undefined],
     ['instrument:french-horn', 1660, 'circa'],
     ['instrument:pedal-steel-guitar', 1940, 'circa'],
     ['instrument:transverse-flute', 1681, 'year'],
   ] as const)('anchors %s to a documented performance or instrument form', (id, start, precision) => {
-    expect(graph.nodes.find((node) => node.id === id)?.period).toMatchObject({ start, precision })
+    const period = graph.nodes.find((node) => node.id === id)?.period
+    expect(period?.start).toBe(start)
+    expect(period?.precision).toBe(precision)
   })
 
   it('traces instrument lineage on the instrument timeline only', () => {

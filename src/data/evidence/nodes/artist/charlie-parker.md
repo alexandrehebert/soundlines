@@ -2,16 +2,16 @@
 
 Graph ID `artist:charlie-parker`
 
-**Review status** · Professional start corrected and bebop role corroborated
+**Review status** · Reviewed
 
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-04
 
 ## Sources checked
 
-- [State Historical Society of Missouri](https://historicmissourians.shsmo.org/charlie-parker/) — Biography read: professional playing began in 1935; 1937 marked development and Buster Smith work; death March 1955.
-- [National Park Service](https://www.nps.gov/people/charlie-parker.htm) — Biography read: left school to pursue music in 1935; corroborates bebop role and 1955 death. Some prose errors mean it is not treated as infallible.
-- [Wikipedia, original citation](https://en.wikipedia.org/wiki/Charlie_Parker) — Page retrieved; original overview retained, superseded by specific historical sources for the start-year decision.
+- [U.S. National Park Service, Charlie Parker](https://www.nps.gov/people/charlie-parker.htm) — Dates his pursuit of saxophone career to 1935 and death to 1955.
+- [State Historical Society of Missouri, Historic Missourians](https://historicmissourians.shsmo.org/charlie-parker/) — Documents professional playing from 1935 and death in 1955.
+- [Kansas Historical Society, Kansapedia](https://www.kansashistory.gov/kansapedia/charles-christopher-parker/12163) — Independent state history confirms life dates and Kansas City background.
 
 ## Assessment
 
-Move start from 1937 to 1935, supported by professional work rather than later stylistic maturation. Retain 1955 and the alto-saxophone/bebop description. High confidence in endpoints; no authored phases to audit.
+Current 1935–1955 span is well supported as professional career through death; 1935 is his professional start, though wider recognition and bebop innovations came later. Confidence: high.

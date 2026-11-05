@@ -2,23 +2,20 @@
 
 Graph ID `genre:soul`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1955 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A Black American popular-music family formed through gospel and rhythm-and-blues practices, with distinct label, regional, and studio traditions. Soul became a prominent crossover style in the 1960s; later artists continued to rework its vocal and musical approaches.
+## Sources checked
 
-**Graph citations** · [1](<https://academic.oup.com/california-scholarship-online/book/19140/chapter-abstract/177594468>), [2](<https://www.cambridge.org/core/books/abs/popular-music-genres/soul-from-gospel-to-groove/F3703EC57D97F3A283CBA6513333F2E5>), [3](<https://carnegie-hall.vercel.app/genres/neo-soul>), [4](<https://www.smithsonianmag.com/smithsonian-institution/museum-curators-reflect-legacy-queen-soul-180970009/>)
+- [Carnegie Hall, “History of Soul Music”](https://timeline.carnegiehall.org/genres/soul) — Dates the gospel-influenced R&B style to the late 1950s, its distinctive popularity to the 1960s and popularity peak to the mid-1970s.
+- [Cambridge University Press, “Soul: From Gospel to Groove”](https://www.cambridge.org/core/books/abs/popular-music-genres/soul-from-gospel-to-groove/F3703EC57D97F3A283CBA6513333F2E5) — Scholarly overview identifies soul as a crossover category by the early 1960s and notes disco’s partial eclipse in the mid-1970s.
+- [Library of Congress, Rhythm and Blues article](https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rhythm-and-blues) — Institutional history describes soul as an R&B style emerging in the 1960s with stronger gospel vocal influence.
 
-**Graph phase rationale** · Approximate U.S. recording and crossover visibility: soul became a major Black popular-music category in the 1960s, with a broad mid-1960s peak; later soul and neo-soul scenes renewed the style. These are editorial periods, not measured chart rankings or a global popularity curve.
+## Assessment
 
-## Phases
+The onset is defensible as c.1955–late 1950s, with the year 1955 referring to an early Ray Charles gospel-to-R&B milestone rather than a single agreed naming date. Carnegie Hall supports distinct 1960s popularity and a mid-1970s popularity peak. Removed unsupported 1996/2004 phase marks and the unsubstantiated 1965 “golden age.” Confidence: high for broad arc, medium for exact onset.
 
-- 1955 emerging · unrated · No phase note · None recorded
-- 1960 established · unrated · Soul emerged as a distinct popular-music style in the late 1950s and became prominent in the 1960s; Carnegie Hall places a broad peak in the mid-1970s. This supports the period, not a numerical prominence score. · [1](https://timeline.carnegiehall.org/genres/soul)
-- 1965 golden-age · unrated · No phase note · None recorded
-- 1975 established · unrated · No phase note · None recorded
-- 1996 established · unrated · No phase note · None recorded
-- 2004 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 3 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Soul developed across several regional label and studio traditions; these U.S.-focused popularity markers do not represent every community or later continuation.

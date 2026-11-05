@@ -2,12 +2,20 @@
 
 Graph ID `artist:hassan-hakmoun`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1970 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Moroccan musician and guembri player known for Gnawa performance and collaborations across musical traditions.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Hassan_Hakmoun>)
+- [Hassan Hakmoun official biography](https://hassanhakmoun.com/bio/) — Artist biography says he began studying Gnawa arts at age seven and gives a 1970 career timeline.
+- [University Musical Society program biography](https://aadl.org/sites/default/files/documents/pdf/ums/programs_20050401b.pdf) — Concert program independently describes his early Gnawa study and career.
+- [Hassan Hakmoun official site](https://www.hassanhakmoun.com/) — Confirms artist identity and continuing activity.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Kept the 1970 decade start as a marker of childhood study, not a professional debut. Artist remains active.
+
+## Remaining uncertainty
+
+The official bio uses a year-level timeline but does not clearly identify 1970 as a first public performance.

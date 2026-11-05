@@ -2,20 +2,20 @@
 
 Graph ID `genre:math-rock`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: late-1980s emergence confirmed; end date removed
 
-**Graph period** · 1988–2000 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Experimental rock associated with intricate irregular meters, angular guitar figures and tightly coordinated ensemble playing.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/math-rock-ma0000002579>), [2](<https://academic.oup.com/book/6294>)
+- [Bloomsbury Academic: Math Rock, 33⅓ Genre](https://www.bloomsbury.com/uk/math-rock-9798765103371/) — Academic book presents a dedicated history of math rock and explicitly treats its history as a genre question.
+- [Riffs: Given math rock’s lack of mainstream exposure](https://orca.cardiff.ac.uk/id/eprint/127369/1/RiffsV3_I2_OConnell.pdf) — Research essay discusses the term’s rhythmic etymology and its complicated evolving scene history.
+- [AllMusic: Polvo biography](https://www.allmusic.com/artist/p22023/biography) — Reference biography describes Polvo as part of the math-rock offshoot and documents its 1990 formation.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Kept circa 1988 as a broad late-1980s emergence marker and removed the unsupported 2000 endpoint and all three subjective phases. Math rock continues, and its label remains disputed.
 
-- 1988 emerging · unrated · No phase note · None recorded
-- 1993 golden-age · unrated · No phase note · None recorded
-- 1998 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 1 unsuccessful, 0 pending.
+Genre naming is retrospective and some musicians reject it; 1988 is an approximate scene marker rather than a settled invention year.

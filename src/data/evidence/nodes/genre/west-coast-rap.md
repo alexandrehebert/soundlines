@@ -2,20 +2,20 @@
 
 Graph ID `genre:west-coast-rap`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1980 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A regional family of styles associated with California and the wider western United States, including gangsta rap, G-funk and later Bay Area movements. Its sound and subject matter have never been uniform.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/west-coast-rap-ma0000002932>), [2](<https://www.allmusic.com/artist/nwa-mn0000314793>)
+- [National Museum of African American History and Culture, “Hip-Hop Origins”](https://www.searchablemuseum.com/hip-hop-origins/) — Museum history traces West Coast development to the late 1970s and describes Los Angeles gangsta rap from the mid-1980s.
+- [AllMusic, West Coast Rap overview](https://www.allmusic.com/subgenre/west-coast-rap-ma0000002932) — Discography overview treats N.W.A.’s 1989 Straight Outta Compton as an establishing landmark and describes early-1990s Death Row commercial success.
+- [Carnegie Hall, “Gangsta Rap: Production, Marketing and Controversy”](https://timeline.carnegiehall.org/stories/gangsta-rap-production-marketing-and-controversy) — Institutional timeline documents early West Coast gangsta rap, including Toddy Tee’s 1985 “Batterram.”
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed.
+## Assessment
 
-## Phases
+The node’s 1980s start understated the late-1970s roots that NMAAHC documents; revise to circa 1978. 1989 is a defensible consolidation marker through N.W.A.’s landmark release. Removed the exact 1994 “golden age” and 2018 established label because current sources did not demonstrate those genre-wide turning points. Confidence: high for late-1970s/1980s development; medium for a single start year.
 
-- 1980 emerging · unrated · No phase note · None recorded
-- 1994 golden-age · unrated · No phase note · None recorded
-- 2018 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+West Coast rap covers multiple regional scenes (including Los Angeles and the Bay Area); one album cannot represent the whole coast.

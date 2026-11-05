@@ -2,12 +2,20 @@
 
 Graph ID `artist:dr-nico`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1957–1985 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Congolese guitarist and composer, first known for his work with African Jazz and later a founder of African Fiesta. His high-register guitar playing helped shape early Congolese rumba.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/dr-nico-mn0000954985>), [2](<https://www.imageandnarrative.be/inarchive/worldmusica/jessesambawheeler.htm>)
+- [Le Grand Kallé and African Jazz, academic chapter](https://repository.uwl.ac.uk/9671/2/1_Independence%20Cha%20Cha%20Chapter%20SZT-v4.pdf) — Academic chapter says Nico began studio work in 1952 and joined the professional music scene after graduating in 1957.
+- [Dr. Nico biography, AllMusic](https://www.allmusic.com/artist/dr-nico-mn0000954985) — Confirms African Jazz membership, African Fiesta founding, 1960 nickname context, later retirement.
+- [BnF authority record](https://catalogue.bnf.fr/ark:/12148/cb14008157w.public) — National library authority record confirms identity and lifespan 1939–1985.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Changed the approximate 1957 start to 1952 based on the academic history of first studio work. This means first documented musical work, not independent band leadership. End remains 1985.
+
+## Remaining uncertainty
+
+The 1952 studio-work detail is a secondary historical account; no primary studio ledger was located in this pass.

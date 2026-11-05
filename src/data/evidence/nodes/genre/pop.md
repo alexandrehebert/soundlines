@@ -2,20 +2,20 @@
 
 Graph ID `genre:pop`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1950 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A broad, changing popular-music category shaped by memorable songwriting, recording technology, mass media and cross-pollination with many styles; it is not a single-origin genre.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/pop-ma0000012254>)
+- [The Oxford Handbook of Pop Music](https://academic.oup.com/edited-volume/62613) — Scholarly collection shows “pop” as a broad, changing field with histories crossing regions and decades; does not support a single origin.
+- [Oxford Music, “Popular music”](https://is.muni.cz/el/phil/jaro2017/VH_741b/um/Popular_Music_rozcestnik__Oxford_.pdf) — Oxford reference states that discussion of post-1955 music is treated under pop and related entries, supporting a mid-1950s modern category marker.
+- [AllMusic pop overview](https://www.allmusic.com/genre/pop-ma0000012254) — Specialist taxonomy cross-reference; not used to imply popular music began in 1950.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed.
+## Assessment
 
-## Phases
+Changed the decade-only 1950 start to circa 1955 as an approximate marker for postwar modern pop usage; popular music and popular song predate it by a long margin. Removed unsupported 1965 golden-age and 2010 established phases: “pop” is a shifting umbrella, not a single movement with a universal lifecycle. Confidence: medium-low for a precise start because the term’s scope changes by place and period.
 
-- 1950 emerging · unrated · No phase note · None recorded
-- 1965 golden-age · unrated · No phase note · None recorded
-- 2010 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+This entry needs to remain explicit that the date marks a modern usage/category, not the beginning of popular music.

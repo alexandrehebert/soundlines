@@ -2,12 +2,16 @@
 
 Graph ID `artist:soundgarden`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1984–2026
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Seattle band combining heavy riffs and unusual meters. Dates include the 1997-2010 breakup, the 2017 dissolution, and occasional reunion performances through September 2026; they do not imply continuous activity.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Soundgarden>)
+- [Soundgarden official band history](https://www.soundgardenworld.com/explore/the-band/) — Band history documents the earlier 1997–2010 hiatus and chronology; aligns with an intermittent rather than continuous career.
+- [Red Light Management biography](https://redlightmanagement.com/artists/soundgarden/) — Dates formation to 1984 and describes the band’s end in 2017 after Cornell’s death.
+- [Guitar World, September 2026 return](https://www.guitarworld.com/artists/concerts-gigs-tours/soundgarden-return-to-the-stage-with-taylor-momsen-and-mike-mccready-at-nfl-seahawks-halftime-show) — Reports the group’s September 2026 performance with guest vocalists and new album activity.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The end year 2026 is defensible only as the latest intermittent activity, not continuous touring: the band’s main run ended in 2017, with later appearances in 2024–26 and continued work on Cornell-era recordings. Existing note already makes this qualification.

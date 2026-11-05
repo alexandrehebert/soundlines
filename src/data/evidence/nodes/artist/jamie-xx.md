@@ -2,12 +2,20 @@
 
 Graph ID `artist:jamie-xx`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 2007
+**Reviewed** · 2026-11-04
 
-**Graph claim** · English DJ and producer who shapes the sound of the indie band the xx. His solo album In Colour draws on UK garage and rave and earned a Mercury Prize nomination.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Jamie_xx>), [2](<https://www.theguardian.com/music/2015/may/24/jamie-xx-in-colour-review-larging-it-for-introverts>)
+- [Jamie xx profile, Opéra national de Paris](https://www.operadeparis.fr/en/artists/jamie-xx) — Opera profile documents his career both as a member of The xx and solo producer.
+- [Jamie xx profile, AllMusic](https://www.allmusic.com/artist/jamie-xx-mn0002602648) — Profile says he was known as Jamie xx by 2009 and identifies The xx debut.
+- [Jamie xx profile, Exclaim!](https://exclaim.ca/Music/article/jamie_xx-dancing_on_his_own) — Music magazine says he became a permanent member of The xx in 2006 and describes 2009 production/remix activity.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Changed 2007 to circa 2006 because sources place him joining The xx in 2006; 2009 marks first use of Jamie xx name and 2011 solo single.
+
+## Remaining uncertainty
+
+Sources vary slightly on whether he joined in 2006, 2007 or 2008; circa precision reflects that.

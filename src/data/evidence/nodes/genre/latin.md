@@ -2,20 +2,20 @@
 
 Graph ID `genre:latin`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: US category distinguished from its musical traditions
 
-**Graph period** · 1900 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · An umbrella term used by the music industry for diverse Latin American and diasporic traditions; it is a navigational parent here, not a claim of one shared musical origin.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/latin-ma0000002692>)
+- [Smithsonian Music: Exhibiting Music History](https://music.si.edu/story/exhibiting-music-history-us-exhibits-latin-american-and-latino-musicians-and-their-traditions) — Smithsonian history says Latin music emerged as a U.S. musical category in the 1930s, with New York as a key production center.
+- [Harvard University, Instituto Cervantes: Pop in Spanish in the U.S.](https://cervantesobservatorio.fas.harvard.edu/en/reports/pop-spanish-us-space-articulate-latino-identity) — Research report describes “Latin music” as a changing, heterogeneous U.S. category with roots in 19th-century discourse.
+- [Oxford Research Encyclopedia: Latin Jazz and Salsa](https://academic.oup.com/edited-volume/61644/chapter-abstract/539900420) — Scholarly overview shows how “Latin” and “salsa” labels can function as broad categories rather than one musical style.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, a defining recognition wave, and continuing activity in the current graph snapshot. These broad markers are not measured popularity data; source-level review remains needed.
+## Assessment
 
-## Phases
+Kept circa 1930 only for the emergence of the U.S. category, not the many Latin American musical traditions themselves. Removed the unsupported 1915 “golden age” and present-day “established” markers; no shared lifecycle can be assigned to this umbrella.
 
-- 1900 emerging · unrated · No phase note · None recorded
-- 1915 golden-age · unrated · No phase note · None recorded
-- 2010 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+The term’s uses and boundaries have shifted over time; this entry is specifically about the U.S. category.

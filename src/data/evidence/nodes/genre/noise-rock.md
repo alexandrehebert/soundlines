@@ -2,20 +2,20 @@
 
 Graph ID `genre:noise-rock`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: underground roots retained; false endpoint removed
 
-**Graph period** · 1980–2000 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Abrasive rock foregrounding distortion, feedback, dissonance and unconventional performance; intersects post-punk, no wave and alternative rock.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/noise-rock-ma0000004455>), [2](<https://academic.oup.com/book/6294>)
+- [University of California Press eScholarship: Japanoise](https://escholarship.org/uc/item/0qk6w6p3) — Ethnomusicologist David Novak places 1980s underground “noise music” across feedback, distortion, punk, industrial, post-punk and no wave scenes.
+- [Music Theory Online: What Happens after the Primal Burn?](https://mtosmt.org/ojs/index.php/mto/article/view/467) — Peer-reviewed analysis traces Sonic Youth to late-1970s/early-1980s no wave and its exploration of noise.
+- [Oxford Academic: The Musical Language of Rock](https://academic.oup.com/book/6294) — Musicology reference supplies analytical context for alternative rock styles and timbre, though it does not define noise rock as a bounded genre.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Kept circa-1980 as a broad scene marker and removed the 2000 endpoint and unsupported phase curve. Noise rock and related underground practice continued beyond the 1990s; these subgenre borders were porous.
 
-- 1980 emerging · unrated · No phase note · None recorded
-- 1988 golden-age · unrated · No phase note · None recorded
-- 1998 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 1 unsuccessful, 0 pending.
+Noise rock overlaps with the wider “noise music” category, so a sharp start date or uniform sound cannot be supported.

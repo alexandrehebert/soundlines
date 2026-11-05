@@ -2,18 +2,20 @@
 
 Graph ID `genre:jazz-rap`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: emergence narrowed to late-1980s/early-1990s
 
-**Graph period** · 1987–1995 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A hip-hop branch that places jazz sampling, instrumentation and improvisational ideas alongside rap. Groups such as A Tribe Called Quest, De La Soul and Gang Starr helped establish its distinctive sound.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/style/jazz-rap-ma0000012180/artists>), [2](<https://www.allmusic.com/artist/gang-starr-mn0000193601>)
+- [University of California Press, Journal of Musicology: The Construction of Jazz Rap as High Art](https://online.ucpress.edu/jm/article-abstract/27/4/435/63457/The-Construction-of-Jazz-Rap-as-High-Art-in-Hip?redirectedFrom=fulltext) — Peer-reviewed article identifies jazz rap as a subgenre and examines its late-1980s/early-1990s status and media framing.
+- [UCLA Ethnomusicology Review: We Got the Jazz](https://ethnomusicologyreview.ucla.edu/content/we-got-jazz-next-generation-jazz-hip-hop-and-digital-scene) — Scholarly account places the trend from the mid-to-late 1980s into the 1990s and identifies 1988–91 recordings.
+- [Critical Studies in Improvisation: Retaining a New Format](https://www.criticalimprov.com/index.php/csieci/article/view/3118) — Academic article describes jazz rap emerging in the late 1980s and early 1990s.
 
-**Graph phase rationale** · Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review.
+## Assessment
 
-## Phases
+Kept 1987 as an approximate emergence marker and removed the false 1995 endpoint and unsupported single-year “golden age.” Jazz rap continued as a style and lineage after its early-1990s visibility.
 
-- 1987 golden-age · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+The style emerged across multiple related recordings and labels; the exact start depends on whether one dates precursors, naming, or a recognizable subgenre.

@@ -2,12 +2,20 @@
 
 Graph ID `artist:david-guetta`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1984
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Paris club DJ turned producer whose 2009 album One Love paired house production with pop and R&B vocalists. Topped the DJ Mag Top 100 poll several times.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/David_Guetta>), [2](<https://www.allmusic.com/artist/david-guetta-mn0000213561>)
+- [David Guetta profile, DJ Mag](https://djmag.com/top100djs/2011/1/David-Guetta) — Profile says he first started DJing in Paris in the mid-1980s at age 17.
+- [David Guetta interview, Le Monde](https://www.lemonde.fr/musiques/article/2020/11/15/david-guetta-toute-ma-vie-a-ete-de-rassembler-les-gens_6059778_1654986.html) — Interview reflects on early club work at age 17, without supplying a precise first year.
+- [David Guetta career profile, Resident Advisor](https://ra.co/dj/davidguetta/biography) — Dance-music publication distinguishes 1992 first production from 2002 debut album and later international-level career.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Kept 1984 as an approximate active-career start but softened precision: age 17 and “mid-1980s” are supported, not a specific year. 2002 is album/global-career milestone, not DJ debut.
+
+## Remaining uncertainty
+
+His birth year and age 17 imply approximately 1984, but available sources favor mid-1980s rather than an exact date.

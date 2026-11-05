@@ -2,18 +2,19 @@
 
 Graph ID `genre:idm`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: term and stylistic roots separated
 
-**Graph period** · 1992–2000 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A 1990s label for experimental electronic listening music associated especially with Warp’s Artificial Intelligence releases; criticized as hierarchical, and many artists prefer other names.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/idm-ma0000004477>), [2](<https://academic.oup.com/book/44623/chapter-abstract/378621525>)
+- [Dancecult: IDM as a “Minor” Literature](https://www.distantreader.org/stacks/journals/dancecult/dancecult-268.pdf) — Peer-reviewed journal traces 1993 mailing-list use and links the label to Warp’s 1992–94 Artificial Intelligence series; explains contested definition.
+- [The Music Sound (IDM history section)](https://philpapers.org/archive/NICTMS-2.pdf) — Reference survey distinguishes 1992–93 mentions, the 1993 list, and continued expansion in the late 1990s/2000s; supports keeping the genre open-ended.
 
-**Graph phase rationale** · Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review.
+## Assessment
 
-## Phases
+Kept 1992 as the documented Warp series onset, while separating it from the term’s 1993 mailing-list circulation. Removed the unsupported 2000 endpoint and single-year “golden age”; the label and practice continued into later scenes.
 
-- 1992 golden-age · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+“IDM” remains contested and does not describe a stable sound or universally accepted genre boundary.

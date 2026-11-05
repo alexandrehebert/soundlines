@@ -2,21 +2,22 @@
 
 Graph ID `genre:shoegaze`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1988 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Late-1980s/early-1990s British indie rock marked by layered guitar effects, dense noise, blended vocals and introspective songwriting.
+## Sources checked
 
-**Graph citations** · [1](<https://ans-names.pitt.edu/ans/article/download/2124/2123/4330>), [2](<https://www.allmusic.com/genre/shoegaze-ma0000004454>), [3](<https://www.allmusic.com/genre/noise-pop-ma0000012156>)
+- [Zac Smith, “Shoegaze Music”](https://conf.ling.cornell.edu/zacsmith/zacsmith_shoegaze2018preprint.pdf) — Research paper dates the term to late 1980s/early 1990s and identifies Loveless (1991) as an influential representative album.
+- [University of Pittsburgh Names journal article](https://ans-names.pitt.edu/ans/article/download/2124/2123/4330) — Onomastic study examines the name and its circulation in British music journalism.
+- [Uppsala University thesis on shoegaze popularity](https://uu.diva-portal.org/smash/get/diva2%3A1672772/FULLTEXT01.pdf) — Research reports early-1990s popularity peak and a later renewed role, not permanent disappearance.
+- [AllMusic shoegaze overview](https://www.allmusic.com/genre/shoegaze-ma0000004454) — Specialist genre overview for sound/style cross-reference; does not support a 1994 endpoint.
+- [Spotify newsroom, Shoegaze gains ground again](https://newsroom.spotify.com/2019-01-24/shoegaze-the-90s-rock-genre-once-again-gains-ground/) — Catalog data and music journalism document ongoing/revived listening and the 1991 breakthrough.
 
-**Graph phase rationale** · Editorial outline of UK music-press visibility and later critical revival: the original scene is concentrated around the turn of the 1990s, followed by reappraisal and new waves from the 2000s onward. It is not a measure of record sales or global popularity.
+## Assessment
 
-## Phases
+Kept c.1988 for the late-1980s scene emergence and the early-1990s label, but removed an endpoint and prominence labels as genre lifecycle claims. Loveless (1991) is a well-supported defining release and early-1990s peak marker; later revival demonstrates continuity. Confidence: medium-high for initial British scene; boundaries and “shoegaze” term application vary.
 
-- 1988 emerging · unrated · No phase note · None recorded
-- 1991 golden-age · unrated · No phase note · None recorded
-- 1994 niche · unrated · No phase note · None recorded
-- 2010 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Some adjacent dream-pop/noise-pop acts predate the name; do not assume all precursors self-identified as shoegaze.

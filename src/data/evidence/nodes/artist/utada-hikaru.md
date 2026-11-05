@@ -2,10 +2,16 @@
 
 Graph ID `artist:utada-hikaru`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1990 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.allmusic.com/style/j-pop-ma0000004490>), [2](<https://www.allmusic.com/artist/hikaru-utada-mn0000435885>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+- [Hikaru Utada official profile](https://www.utadahikaru.jp/profile/) — Dates her Japanese debut single “Automatic/time will tell” to December 1998.
+- [Universal Music Japan biography](https://www.universal-music.co.jp/utada-hikaru/biography/) — Confirms 1998 debut single and 2024 best-of release/tour.
+- [Sony Music Japan artist profile](https://www.sonymusic.co.jp/artist/utadahikaru/) — Shows 2026 official activity, supporting an open career period.
+
+## Assessment
+
+Changed the broad 1990s start to 1998, the official Japanese-language debut year. Earlier work as Cubic U is a separate English-language project, so it should not be folded into Hikaru Utada’s Japanese solo career without qualification.

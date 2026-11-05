@@ -2,12 +2,16 @@
 
 Graph ID `artist:the-stooges`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1969
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The Stooges is documented in the cited genre histories and artist reference.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/the-stooges-mn0000567138>)
+- [Rock & Roll Hall of Fame profile](https://rockhall.com/inductees/stooges/) — Institutional history covers the group’s provocative early sound and influence.
+- [Rock & Roll Hall of Fame archival essay](https://www.rockhall.com/wp-content/uploads/2024/03/The_Stooges_2010.pdf) — Dates the band’s debut performance to Halloween 1967 and summarizes its early history.
+- [AllMusic biography](https://www.allmusic.com/artist/the-stooges-mn0000562304/biography) — Dates formation to 1967, debut album to 1969 and traces the later reunion era.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 1967 start is supported by the documented first performance; the 1969 debut album is a later milestone. The Stooges name returned in a reunion period, but after Scott Asheton’s death and the 2013 album the group stopped regular activity.

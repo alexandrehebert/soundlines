@@ -2,12 +2,20 @@
 
 Graph ID `artist:moby`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1978
+**Reviewed** · 2026-11-04
 
-**Graph claim** · American musician who moved from punk bands to DJing, producing and remixing in New York around 1989. His 1991 single "Go" brought rave techno to the charts.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Moby>), [2](<https://www.allmusic.com/artist/moby-mn0000477116>)
+- [Moby biography, Encyclopedia.com](https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/moby) — Biographical chronology classifies his music career as beginning in the late 1970s and lists later bands and DJ work.
+- [Moby profile, Resident Advisor](https://ra.co/dj/moby/biography) — Dance publication places his introduction to dance music in the mid-1980s and describes early recordings.
+- [Moby biography, AllMusic](https://www.allmusic.com/artist/p13697) — Profile documents 1988–91 recordings and later dance-club DJ work.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Kept decade-level start as reference chronology supports late-1970s musical activity; clarified that recorded electronic work and club DJing came later.
+
+## Remaining uncertainty
+
+No precise public debut in 1978 was located; date remains decade approximation.

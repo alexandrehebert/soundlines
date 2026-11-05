@@ -2,20 +2,20 @@
 
 Graph ID `genre:new-wave`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: movement history separated from lasting genre label
 
-**Graph period** · 1977–1989 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A diverse late-1970s and 1980s pop-rock field that followed punk while embracing synthesizers, art-school ideas, dance rhythms and concise song forms.
+## Sources checked
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/new-wave-ma0000002750>)
+- [University of Michigan Press: Are We Not New Wave?](https://press.umich.edu/Books/A/Are-We-Not-New-Wave2) — Scholarly history traces new wave from mid-1970s punk through early-1980s MTV prominence and describes its mid-1980s decline.
+- [JSTOR: Are We Not New Wave?](https://www.jstor.org/stable/10.3998/mpub.152565) — Book record summarizes the label’s late-1970s marketing and changing U.S. industry use.
+- [Oxford Academic: The Musical Language of Rock](https://academic.oup.com/book/6294) — Music-theory reference includes new wave among the diverse late-20th-century Anglo-American popular styles.
 
-**Graph phase rationale** · Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition.
+## Assessment
 
-## Phases
+Kept a late-1970s start and revised the end from 1989 to a circa-1985 marker for the original movement’s mid-decade retreat from prominence. Removed the arbitrary 1982 “golden age” and 1987 “niche” phases.
 
-- 1977 emerging · unrated · No phase note · None recorded
-- 1982 golden-age · unrated · No phase note · None recorded
-- 1987 niche · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+New wave was a contested marketing label whose meaning differed across the UK and U.S.; circa-1985 describes its original mainstream wave, not disappearance of the label.

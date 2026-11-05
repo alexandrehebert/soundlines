@@ -2,12 +2,20 @@
 
 Graph ID `artist:martin-garrix`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 2012
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Dutch DJ and producer whose 2013 single "Animals" launched him as a teenage festival headliner. Founded the Stmpd Rcrds label in 2016.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Martin_Garrix>), [2](<https://www.allmusic.com/artist/martin-garrix-mn0003011915>)
+- [Martin Garrix profile, Grammy.com](https://www.grammy.com/news/video-martin-garrix-goes-wild/) — Reports that he signed to Spinnin’ Records and released “BFAM” in 2012.
+- [Martin Garrix official release page, “Animals”](https://martingarrix.com/music/animals/) — Official site describes “Animals” as the track that launched mainstream prominence, not his first release.
+- [Martin Garrix profile, Insomniac](https://www.insomniac.com/music/artists/martin-garrix/) — Festival profile identifies 2013 “Animals” as breakthrough while distinguishing his decade-long career.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Kept 2012 as the first-release year and clarified 2013 as breakthrough. Current period remains open.
+
+## Remaining uncertainty
+
+Pre-2012 amateur production activity is not represented by this professional release-based start.

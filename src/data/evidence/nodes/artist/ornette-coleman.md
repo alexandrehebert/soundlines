@@ -2,20 +2,21 @@
 
 Graph ID `artist:ornette-coleman`
 
-**Review status** · Musical role and 2014 appearance checked; first-work boundary uncertain
+**Review status** · Reviewed
 
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-04
 
 ## Sources checked
 
-- [National Endowment for the Arts](https://www.arts.gov/honors/jazz/ornette-coleman) — Biography read: began alto at fourteen (1944), local R&B work, pivotal 1959 New York engagement, Free Jazz and later ensembles. Death 2015. The page’s association of Tomorrow Is the Question! with Atlantic is not adopted.
-- [Robert Christgau, contemporary Billboard concert report](https://www.robertchristgau.com/xg/music/coleman-14.php) — Firsthand June 12, 2014 report read: Coleman actually played saxophone at the Prospect Park tribute, rather than merely attending.
-- [Wikipedia, original citation](https://en.wikipedia.org/wiki/Ornette_Coleman) — Page retrieved; retained as secondary overview.
+- [National Endowment for the Arts jazz biography](https://www.arts.gov/honors/jazz/ornette-coleman) — Government arts biography discusses his 1959 move into Atlantic recordings and influence.
+- [Pulitzer Prize biography](https://www.pulitzer.org/winners/ornette-coleman) — Dates the debut album Something Else!!!! to 1958 and summarizes his innovations.
+- [Texas State Historical Association Handbook](https://www.tshaonline.org/handbook/entries/coleman-ornette) — Scholarly state encyclopedia provides detailed career history and early recordings.
+- [Los Angeles Times obituary](https://www.latimes.com/local/obituaries/la-me-ornette-coleman-20150611-story.html) — Reports his 1959 Five Spot engagement as a national breakthrough; confirms death in 2015.
 
 ## Assessment
 
-Retain late-1950s free-jazz description and 2014 performance endpoint. Change precision to circa: 1944 is documented as beginning the instrument, not independently established first professional work. Medium confidence in displayed span. No authored phases.
+Corrected the graph’s 1944 approximate start, which appears to capture early performance activity without a clear basis, to the well-documented 1958 recording debut. Corrected the terminal year from 2014 to 2015, the year he died.
 
 ## Remaining uncertainty
 
-A specific first professional engagement is still needed; do not equate beginning saxophone study with paid activity.
+Coleman performed in R&B bands before 1958; exact professional onset is less well dated than the recording debut.

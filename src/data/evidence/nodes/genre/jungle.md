@@ -2,23 +2,20 @@
 
 Graph ID `genre:jungle`
 
-**Review status** · Pending source review
+**Review status** · Reviewed: early scene emergence retained; subjective lifecycle removed
 
-**Graph period** · 1991 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A Black British club and sound-system formation that grew from the UK rave continuum in the early 1990s, bringing breakbeat programming into dialogue with Jamaican sound-system practices, reggae and dancehall bass, and pirate radio. It developed into multiple branches and later drum-and-bass scenes.
+## Sources checked
 
-**Graph citations** · [1](<https://www.bl.uk/about/press/releases/beyond-the-bassline-500-years-of-black-british-music-opens-at-the-british-library>), [2](<https://ra.co/features/1974>), [3](<https://www.musicradar.com/news/everything-you-need-to-know-about-jungle>), [4](<https://www.miaminewtimes.com/music/jungle-revival-timeline-from-sully-and-tim-reaper-to-sherelle-and-nia-archives-17639564/>)
+- [Cambridge University Press: Jungle: the Breakbeat’s Revenge](https://www.cambridge.org/core/books/abs/popular-music-genres/jungle-the-breakbeats-revenge/965A1EC312D4D61AE7337564835EAE59) — Scholarly chapter discusses the contested naming of 1990s breakbeat dance music and its Black London context.
+- [Martin James, State of Bass: The Origins of Jungle/Drum & Bass](https://pure.solent.ac.uk/en/publications/state-of-bass-the-origins-of-jungledrum-amp-bass/) — University research repository catalogs an interview-based history of the UK scene and traces its Jamaican sound-system and urban rave roots.
+- [A London Sound: The Evolution of Jungle Music](https://www.acm.ac.uk/a-london-sound-the-evolution-of-jungle-music/) — Museum account places jungle on the early-1990s UK dance scene and describes its reggae/rave lineage.
 
-**Graph phase rationale** · Approximate UK scene and media visibility: jungle’s early-1990s breakthrough and mid-decade move into broader radio attention are documented, followed by a long specialist presence and renewed 2010s/2020s interest. Visibility differed across pirate radio, clubs, charts, and countries; this is not a global popularity score.
+## Assessment
 
-## Phases
+Retained early-1990s emergence, but removed the unsupported end date and complex “golden age / niche / revival” phase curve. Such phases imply comparable global popularity measures that the cited material does not provide.
 
-- 1991 emerging · unrated · No phase note · None recorded
-- 1993 golden-age · unrated · No phase note · None recorded
-- 1995 established · unrated · No phase note · None recorded
-- 1998 niche · unrated · No phase note · None recorded
-- 2010 niche · unrated · The 2010s marker refers to renewed interest and a younger UK producer generation; jungle remained active in specialist scenes before this revival. The “niche” label is a broad editorial summary. · [1](https://live.grammy.com/news/new-uk-jungle-artists-to-know-nia-archives-pink-pantheress-videos/)
-- 2019 established · unrated · No phase note · None recorded
+## Remaining uncertainty
 
-**Citation retrieval** · 3 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+There is no single agreed start year; early jungle emerged from a fast-moving UK rave continuum.

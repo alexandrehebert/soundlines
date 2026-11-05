@@ -2,12 +2,20 @@
 
 Graph ID `artist:eric-prydz`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 2001
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Swedish DJ and producer who also records as Pryda and Cirez D. Broke through with "Call on Me" in 2004 and released the album Opus in 2016.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Eric_Prydz>), [2](<https://www.allmusic.com/artist/eric-prydz-mn0000184677>)
+- [Eric Prydz profile, Resident Advisor](https://ra.co/dj/ericprydz/biography) — Dance publication documents his production aliases and 2004 “Call On Me” breakthrough.
+- [Eric Prydz profile, Universal Music France](https://universalmusic.fr/artistes/40069983435) — Label biography says he had a career in Sweden before wider recognition through “Call On Me” in 2004.
+- [Eric Prydz discography, AllMusic](https://www.allmusic.com/artist/p661792/charts-awards/billboard-singles) — Profile highlights “Call On Me” as a major release, but did not confirm 2001 as first production.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Kept the early-2000s start approximate and clarified that 2004 is breakthrough, not necessarily debut. Current start year 2001 lacks independent confirmation in sources found.
+
+## Remaining uncertainty
+
+First credited public release is not conclusively established here; 2001 remains a tentative marker.

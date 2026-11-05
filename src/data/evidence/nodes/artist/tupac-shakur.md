@@ -2,10 +2,16 @@
 
 Graph ID `artist:tupac-shakur`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1991–1996 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/tupac-shakur-mn0000205185>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Rock & Roll Hall of Fame biography](https://rockhall.com/inductees/tupac-shakur/) — Documents the 1991 Digital Underground appearance and 2Pacalypse Now; summarizes his musical evolution.
+- [Tupac official biography](https://www.2pac.com/bio/) — Confirms his death in 1996 and continuing catalog significance.
+- [Associated Press biography](https://apnews.com/article/aa766bea8d70e0c5a98ecaf4af806116) — Summarizes his five-year professional recording career, 1991 debut and later albums.
+
+## Assessment
+
+Changed 1991 from a decade-level estimate to the year his national recording career began: he appeared on Digital Underground’s “Same Song” and released 2Pacalypse Now. 1996 is his death and the end of new recordings during his lifetime; posthumous albums do not extend his active career.
