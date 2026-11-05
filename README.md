@@ -149,7 +149,7 @@ historical events. Artist lanes and detail badges use the same families.
   until closed; selected artists and genres bring their bars into view.
 - The year axis and compressed-era annotations stay visible while scrolling
   through either timeline, follow horizontal panning and zoom, and reduce
-  label density on narrow screens.
+  label density on narrow screens, with extra spacing for BCE labels.
   Reduced-motion preferences shorten interface transitions.
 - Horizontal trackpad momentum is handled by the timeline without native
   horizontal overscroll; rapid wheel updates accumulate in input order and render

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import { expect, userEvent, waitFor, within } from 'storybook/test'
+import { expect, fireEvent, userEvent, waitFor, within } from 'storybook/test'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
 import { Timeline } from '../components/Timeline.tsx'
 
@@ -51,6 +51,35 @@ export const ArtistOffscreenNavigation: Story = {
 
 export const Instruments: Story = {
   parameters: { explorer: { initialView: 'instrument' } },
+}
+
+export const ZoomedOutBceLabels: Story = {
+  play: async ({ canvasElement }) => {
+    const axis = await waitFor(() => {
+      const svg = canvasElement.querySelector<SVGSVGElement>('[data-timeline-axis] svg')
+      if (!svg) throw new Error('Timeline axis is missing')
+      return svg
+    })
+    const bounds = axis.getBoundingClientRect()
+    for (let step = 0; step < 20; step++) {
+      fireEvent.wheel(axis, {
+        ctrlKey: true,
+        deltaY: 100,
+        clientX: bounds.left + bounds.width / 2,
+        clientY: bounds.top + bounds.height / 2,
+      })
+      await new Promise<void>((resolve) => requestAnimationFrame(() => requestAnimationFrame(() => resolve())))
+      const labels = [...axis.querySelectorAll<SVGTextElement>('[data-year-tick] text')]
+      for (let i = 1; i < labels.length; i++) {
+        const previous = labels[i - 1].getBoundingClientRect()
+        const current = labels[i].getBoundingClientRect()
+        expect(current.left - previous.right).toBeGreaterThanOrEqual(4)
+      }
+    }
+    const labels = [...axis.querySelectorAll<SVGTextElement>('[data-year-tick] text')]
+    expect(labels.length).toBeGreaterThan(1)
+    expect(labels.some((label) => label.textContent?.includes('BCE'))).toBe(true)
+  },
 }
 
 export const InstrumentsOldestFirst: Story = {

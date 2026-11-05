@@ -94,6 +94,7 @@ const TICK_STEPS = [10, 20, 25, 50, 100, 200, 250, 500]
 /**
  * Tick years covering the visible range. The step adapts to the local
  * pixels-per-year so compressed eras get sparser ticks (decades when space allows).
+ * The returned ticks are always at least `minSpacing` pixels apart.
  */
 export function timeTicks(scale: TimeScale, minSpacing = 56): number[] {
   const span = toEraTime(scale.end) - toEraTime(scale.start)
@@ -107,7 +108,7 @@ export function timeTicks(scale: TimeScale, minSpacing = 56): number[] {
     const tick = Math.ceil(year / step) * step
     if (tick > scale.end) break
     const last = ticks.at(-1)
-    if (last === undefined || yearToX(scale, tick) - yearToX(scale, last) >= minSpacing * 0.75) {
+    if (last === undefined || yearToX(scale, tick) - yearToX(scale, last) >= minSpacing) {
       ticks.push(tick)
     }
     year = tick + 1

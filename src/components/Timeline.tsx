@@ -11,6 +11,8 @@ import { afterSvgLayout } from './timeline/svgLayout.ts'
 import { useTimelineViewport } from './timeline/useTimelineViewport.ts'
 import { UndatedEntries } from './UndatedEntries.tsx'
 
+const MIN_BCE_TICK_SPACING = 64
+
 export function Timeline() {
   const { model, selectedId, selectNode, viewRange, order } = useExplorer()
   const view = model.view
@@ -22,6 +24,7 @@ export function Timeline() {
     start: viewRange[0], end: viewRange[1], width, padding: TIMELINE_PADDING,
   }), [viewRange, width])
   const tickSpacing = width < 360 ? 100 : width < 480 ? 96 : width < 768 ? 72 : 56
+  const minimumTickSpacing = scale.start <= 0 ? Math.max(tickSpacing, MIN_BCE_TICK_SPACING) : tickSpacing
   const compressionLabelMinWidth = width < 480 ? 128 : 90
   const { bars, bands, height } = useMemo(
     () => positionTimeline(model.lanes, scale, order), [model, scale, order],
@@ -64,7 +67,7 @@ export function Timeline() {
   const highlight = useMemo(
     () => lineageHighlight(model.index, selectedId, model.orientation), [selectedId, model],
   )
-  const ticks = timeTicks(scale, tickSpacing).map((year) => ({ year, x: yearToX(scale, year) }))
+  const ticks = timeTicks(scale, minimumTickSpacing).map((year) => ({ year, x: yearToX(scale, year) }))
   const compressedSegments = ERA_SEGMENTS.flatMap((segment, i) => {
     if (segment.weight >= 1) return []
     const segmentEnd = ERA_SEGMENTS[i + 1]?.from ?? MAX_YEAR

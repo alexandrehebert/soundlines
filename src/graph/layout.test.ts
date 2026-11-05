@@ -86,6 +86,22 @@ describe('time scale', () => {
   it('includes negative years for BCE timelines', () => {
     expect(timeTicks({ start: -3000, end: -1000, width: 1000 }).some((year) => year < 0)).toBe(true)
   })
+
+  it.each([
+    ['compact desktop', { start: MIN_YEAR, end: MAX_YEAR, width: 768, padding: TIMELINE_PADDING }, 56],
+    ['desktop', { start: MIN_YEAR, end: MAX_YEAR, width: 900, padding: TIMELINE_PADDING }, 56],
+    ['wide desktop', { start: MIN_YEAR, end: MAX_YEAR, width: 1920, padding: TIMELINE_PADDING }, 56],
+    ['partial BCE range', { start: -2800, end: 1700, width: 900, padding: TIMELINE_PADDING }, 56],
+    ['compressed eras', { start: 400, end: MAX_YEAR, width: 768, padding: TIMELINE_PADDING }, 56],
+    ['phone', { start: MIN_YEAR, end: 500, width: 320, padding: TIMELINE_PADDING }, 100],
+  ])('keeps ticks at least the requested spacing on %s', (_description, scale, minSpacing) => {
+    const ticks = timeTicks(scale, minSpacing)
+    expect(ticks.length).toBeGreaterThan(1)
+    for (let i = 1; i < ticks.length; i++) {
+      expect(yearToX(scale, ticks[i]) - yearToX(scale, ticks[i - 1]))
+        .toBeGreaterThanOrEqual(minSpacing - 1e-6)
+    }
+  })
 })
 
 describe('layoutFamilies', () => {

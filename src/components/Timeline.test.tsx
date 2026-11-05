@@ -2,7 +2,7 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { ExplorerContext } from '../ExplorerContext.ts'
 import { buildIndex } from '../graph/graph.ts'
-import { TIMELINE_PADDING, timeTicks, yearToX, type TimelineOrder } from '../graph/layout.ts'
+import { MAX_YEAR, MIN_YEAR, TIMELINE_PADDING, timeTicks, yearToX, type TimelineOrder } from '../graph/layout.ts'
 import { createTimelineModel, type TimelineView } from '../graph/timeline.ts'
 import type { MusicGraph } from '../graph/types.ts'
 import { Timeline } from './Timeline.tsx'
@@ -154,9 +154,22 @@ describe('timeline year axis', () => {
     expect(plot).not.toContain('time ×2 compressed')
   })
 
-  it('labels BCE axis years', () => {
-    const markup = renderTimeline('instrument', 'family', [-3000, 2026])
+  it('spaces BCE axis labels and keeps their grid lines aligned when zoomed out', () => {
+    viewport.width = 900
+    const markup = renderTimeline('instrument', 'family', [MIN_YEAR, MAX_YEAR])
+    const axisStart = markup.indexOf('data-timeline-axis=')
+    const plotStart = markup.indexOf('data-timeline-plot=')
+    const axisTicks = [...markup.slice(axisStart, plotStart).matchAll(/data-year-tick="(-?\d+)"><line x1="([^"]+)"/g)]
+      .map((match) => [Number(match[1]), Number(match[2])])
+    const gridTicks = [...markup.slice(plotStart).matchAll(/data-year-grid="(-?\d+)" x1="([^"]+)"/g)]
+      .map((match) => [Number(match[1]), Number(match[2])])
+
     expect(markup).toContain('3000 BCE')
+    expect(axisTicks.some(([year]) => year < 0)).toBe(true)
+    expect(gridTicks).toEqual(axisTicks)
+    for (let i = 1; i < axisTicks.length; i++) {
+      expect(axisTicks[i][1] - axisTicks[i - 1][1]).toBeGreaterThanOrEqual(64 - 1e-6)
+    }
   })
 
   it('updates the shared ticks for narrow viewports and different time ranges', () => {
