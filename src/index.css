@@ -76,12 +76,15 @@ body {
   }
 }
 
-[data-timeline-bar] [data-bar-selection-outline] {
+[data-timeline-bar] [data-bar-selection-outline],
+[data-undated-node] [data-bar-selection-outline] {
   visibility: hidden;
 }
 
 [data-timeline-bar][aria-pressed="true"] [data-bar-selection-outline],
-[data-timeline-bar]:focus-visible [data-bar-selection-outline] {
+[data-timeline-bar]:focus-visible [data-bar-selection-outline],
+[data-undated-node][aria-pressed="true"] [data-bar-selection-outline],
+[data-undated-node]:focus-visible [data-bar-selection-outline] {
   visibility: visible;
 }
 

@@ -10,7 +10,7 @@ import {
   visibilityStops,
 } from '../../graph/phases.ts'
 import { prominenceLabels } from '../../graph/types.ts'
-import { DEFAULT_BUBBLE_ZOOM, SELECTION_BORDER, SELECTION_OUTLINE } from '../../theme.ts'
+import { DEFAULT_BUBBLE_ZOOM, SELECTION_BORDER, SELECTION_OUTLINE, timelineBarOpacity } from '../../theme.ts'
 import {
   ABOVE_BAR_LABEL_FONT_SIZE, BAR_H, BAR_LABEL_FONT_SIZE, barBounds, barLabel, barShape, fitBarLabel,
   tailFadeOffset, type BarLabel, type BarLabelMetrics, type BarPosition, type OffscreenIndicator,
@@ -195,7 +195,7 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
             <path
               d={shape}
               fill={bar.color}
-              opacity={isSelected ? 0.95 : isArtist ? 0.32 : 0.55}
+              opacity={timelineBarOpacity(bar.node.type, isSelected)}
             />
           ) : (
             <g clipPath={`url(#${clipId})`}>

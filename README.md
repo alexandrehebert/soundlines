@@ -24,6 +24,10 @@ Disco & House; Techno & Trance; and Breakbeat & Bass. Genres are
 spread across these 16 families rather than catch-all
 "Roots" or "UK continuum" lanes. Curved links and highlighting stay within the active mode.
 
+At tablet widths (640–767px), bottom navigation labels match the Options button's
+14px semibold text. Narrower phones retain compact labels; desktop navigation
+keeps its existing sizing.
+
 ### Music history
 
 The **History** view presents the graph's curated events in chronological order,
@@ -57,6 +61,9 @@ Genres, artists, and instruments without a period appear in an **Undated**
 strip above their timeline rather than as bars at invented dates. They remain
 searchable, selectable, and connected to related entries; undated genres also
 remain in the bubble map.
+Undated entries use compact, family-colored bars with the timeline's label size,
+hover treatment, bright selected fill, and selection/focus outline. Selecting one
+opens the same detail panel and dims unrelated entries without inventing dates.
 
 Families are recognizable browsing groups, not claims that every member is a
 subgenre of the lane name or shares a single origin. For example, Disco & House

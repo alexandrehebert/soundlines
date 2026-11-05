@@ -16,6 +16,10 @@ export const SELECTION_OUTLINE = {
   outlineOffset: 4,
 } as const
 
+export function timelineBarOpacity(type: NodeType, selected: boolean): number {
+  return selected ? 0.95 : type === 'artist' ? 0.32 : 0.55
+}
+
 export const FAMILY_COLORS: Record<LaneFamily, string> = {
   classical: '#fda4af',
   'blues-soul': '#f59e0b',

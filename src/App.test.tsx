@@ -96,6 +96,19 @@ describe('view toggle', () => {
     expect(buttons.every((button) => button.includes('min-h-9') && button.includes('md:py-1.5'))).toBe(true)
   })
 
+  it('matches tablet view labels to Options while preserving phone and desktop sizes', () => {
+    const markup = render(graph, <Explorer />)
+    const buttons = markup.match(/<button\b[^>]*role="radio"[^>]*>/g) ?? []
+    const viewButtons = buttons.filter((button) => button.includes('text-[11px]'))
+    const optionsButton = markup.match(/<button\b[^>]*aria-label="Timeline options and legend"[^>]*>/)?.[0]
+
+    expect(viewButtons).toHaveLength(8)
+    expect(viewButtons.every((button) =>
+      button.includes('sm:text-sm') && button.includes('md:text-xs') && button.includes('font-semibold'),
+    )).toBe(true)
+    expect(optionsButton).toContain('text-sm font-semibold')
+  })
+
   it('spaces mobile options from the view list and hides its label below the small breakpoint', () => {
     const markup = render(graph, <Explorer />)
     const mobileNavigation = markup.match(/<div class="[^"]*\bmd:hidden"[^>]*><div[^>]*role="radiogroup"[\s\S]*?aria-label="Timeline options and legend"[\s\S]*?<\/button><\/div>/)?.[0]
