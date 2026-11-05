@@ -2,12 +2,20 @@
 
 Graph ID `label:island-records`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1959
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Record label started by Chris Blackwell in Jamaica, initially releasing Jamaican music before expanding internationally and moving its base to London in the early 1960s.
+## Sources checked
 
-**Graph citations** · [1](<https://www.islandrecords.com/pages/about>), [2](<https://www.islandrecords.co.uk/history-backup/>)
+- [Island Records official history](https://www.islandrecords.co.uk/history-backup/) — Label history dates the Jamaica start to 1959 and relocation to London to 1962.
+- [Island Records official store about page](https://www.islandrecords.com/pages/about) — Official current label profile confirms the 1959 Jamaica origin.
+- [Chris Blackwell profile, Polar Music Prize](https://www.polarmusicprize.org/laureates/chris-blackwell/) — Award biography documents the 1962 move to London and international expansion.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Kept 1959 founding year and clarified that the operation began in Jamaica, with London relocation in 1962. This corrects any implication it was initially a London label.
+
+## Remaining uncertainty
+
+Some sources differ on the exact founding partners; current wording attributes the start to Blackwell, who is consistently identified as central founder.

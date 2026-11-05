@@ -16501,10 +16501,13 @@
       "id": "label:4ad",
       "type": "label",
       "name": "4AD",
-      "description": "British independent label founded in London in 1980; its catalogue includes influential alternative acts such as the Pixies.",
+      "description": "British independent label launched in London in 1980 after an earlier Axis imprint identity. Its visually distinctive catalogue came to include artists such as Bauhaus, Cocteau Twins, Pixies, and later Big Thief.",
       "sources": [
         "https://4ad.com/about",
-        "https://beggars.com/labels/4ad/"
+        "https://beggars.com/labels/4ad/",
+        "https://beggarsbanquetrecords.com/about/",
+        "https://beggars.com/martin-mills-qa/",
+        "https://elpais.com/icon/2025-07-06/una-motown-maniaco-depresiva-4ad-o-los-dos-tipos-raros-que-descubrieron-a-decenas-de-estrellas.html"
       ],
       "period": {
         "start": 1980,
@@ -16515,10 +16518,13 @@
       "id": "label:atlantic-records",
       "type": "label",
       "name": "Atlantic Records",
-      "description": "New York-founded label whose long history spans blues, jazz, soul, rock and pop, including artists such as Aretha Franklin and John Coltrane.",
+      "description": "New York independent label founded by Ahmet Ertegun and Herb Abramson in 1947, initially focused on jazz and rhythm and blues. Atlantic later expanded into soul, rock and pop.",
       "sources": [
         "https://www.atlanticrecords.com/",
-        "https://www.atlanticrecords.com/artists/aretha-franklin"
+        "https://www.atlanticrecords.com/artists/aretha-franklin",
+        "https://festival.si.edu/2011/rhythm-and-blues/the-independents/smithsonian",
+        "https://catalog.rockhall.com/rrhof-ais/Details/archive/110000027",
+        "https://www.sec.gov/Archives/edgar/data/1319161/000119312506150308/dex991.htm"
       ],
       "period": {
         "start": 1947,
@@ -16530,22 +16536,28 @@
       "type": "label",
       "name": "Blue Note Records",
       "period": {
-        "start": 1939
+        "start": 1939,
+        "precision": "year"
       },
-      "description": "New York jazz label founded by Alfred Lion, whose recording program documented successive currents from boogie-woogie and early jazz through bebop, hard bop, and later styles.",
+      "description": "New York jazz label founded by Alfred Lion, with Francis Wolff joining as partner. Its first recording session took place on 6 January 1939 with boogie-woogie pianists Albert Ammons and Meade “Lux” Lewis; the catalogue later became central to bebop, hard bop, soul jazz, and avant-garde jazz.",
       "sources": [
         "https://www.bluenote.com/blue-note-80-2019-year-in-review/",
-        "https://www.bluenote.com/blue-note-records-celebrates-85th-anniversary/"
+        "https://www.bluenote.com/blue-note-records-celebrates-85th-anniversary/",
+        "https://www.bluenote.com/blue-note-records-kicks-off-75th-anniversary/",
+        "https://bluenoterecords-film.com/en/film/",
+        "https://www.washingtonpost.com/entertainment/blue-note-records-highlights-from-the-past-75-years/2014/04/24/428831ee-cb23-11e3-a75e-463587891b57_story.html"
       ]
     },
     {
       "id": "label:cash-money-records",
       "type": "label",
       "name": "Cash Money Records",
-      "description": "New Orleans label founded by brothers Bryan “Birdman” and Ronald “Slim” Williams, later home to artists including Lil Wayne.",
+      "description": "New Orleans independent hip-hop label founded by brothers Ronald “Slim” and Bryan “Baby” Williams in 1991. Its early local bounce releases preceded a 1998 Universal distribution deal and a much larger national roster.",
       "sources": [
         "https://www.cashmoney-records.com/history-of-the-label/",
-        "https://www.bmi.com/news/bmi_to_honor_the_2013_bmi_r_and_b_hip_hop_awards"
+        "https://www.bmi.com/news/bmi_to_honor_the_2013_bmi_r_and_b_hip_hop_awards",
+        "https://www.bmi.com/advice/20030702cash_money_cash_money",
+        "https://acloserwalknola.com/places/cash-money-records-office/"
       ],
       "period": {
         "start": 1991,
@@ -16556,10 +16568,11 @@
       "id": "label:chess-records",
       "type": "label",
       "name": "Chess Records",
-      "description": "Chicago record label founded by Leonard and Phil Chess; its blues and R&B catalogue includes recordings by Muddy Waters and Chuck Berry.",
+      "description": "Chicago record label renamed Chess Records in 1950 by brothers Leonard and Phil Chess. Its releases helped document Chicago electric blues and rhythm and blues, with later influence on rock and soul.",
       "sources": [
         "https://www.chessrecords.com/history/",
-        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/chess-records"
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/chess-records",
+        "https://www.encyclopedia.chicagohistory.org/pages/234.html"
       ],
       "period": {
         "start": 1950,
@@ -16570,11 +16583,14 @@
       "id": "label:columbia-records",
       "type": "label",
       "name": "Columbia Records",
-      "description": "American record label organized in Washington, D.C., in 1888 and incorporated in 1889. Its later history involved a Bridgeport manufacturing plant and a major recording operation in New York.",
+      "description": "American recording company whose Columbia Phonograph operation was organized in Washington, D.C., in 1888 as a regional franchise and formally incorporated in 1889. The label name became one of the longest-running brands in recorded sound.",
       "sources": [
         "https://rme.rilm.org/articles/ers00100/1.0/ers00100",
         "https://timbrooks.net/PDFs/colhist02.pdf",
-        "https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/north-american-phonograph-company/"
+        "https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/north-american-phonograph-company/",
+        "https://www.loc.gov/static/managed-content/uploads/sites/6/2017/02/recorded_sound_timeline-2013.pdf",
+        "https://findingaids.loc.gov/repositories/11/resources/795",
+        "https://www.ibew.org.uk/dvarch/DV01472.pdf"
       ],
       "period": {
         "start": 1888,
@@ -16585,10 +16601,13 @@
       "id": "label:crydamoure",
       "type": "label",
       "name": "Crydamoure",
-      "description": "French electronic label co-founded by Guy-Manuel de Homem-Christo and Éric Chedeville, closely associated with the French Touch network.",
+      "description": "French house label founded in 1997 by Guy-Manuel de Homem-Christo and Éric Chedeville. Its first release, by their Le Knight Club project, placed the label within the French Touch scene; releases became sparse after the early 2000s.",
       "sources": [
         "https://www.djmag.com/features/cry-damoure-daft-punk-why-the-label-still-matters",
-        "https://www.discogs.com/label/681-Crydamoure"
+        "https://www.discogs.com/label/681-Crydamoure",
+        "https://www.djmag.fr/dossier-daft-punk-eric-rico-the-wizzard-chedeville-raconte-lepopee-crydamoure/",
+        "https://lbbonline.com/news/radio-lbb-revisiting-90s-french-house-labels",
+        "https://musicbrainz.org/label/98f2ab71-8a7f-4f17-bd41-9902d5e7631c"
       ],
       "period": {
         "start": 1997,
@@ -16599,10 +16618,12 @@
       "id": "label:death-row-records",
       "type": "label",
       "name": "Death Row Records",
-      "description": "Los Angeles-area label founded in 1991 by Suge Knight, Dr. Dre and others; central to a major early-1990s West Coast rap catalogue.",
+      "description": "Los Angeles-area hip-hop label established in 1991 around Suge Knight, Dr. Dre, and The D.O.C. Its early-1990s releases by Dr. Dre, Snoop Doggy Dogg, and later Tupac Shakur made it a major force in West Coast rap.",
       "sources": [
         "https://store.deathrowpictures.com/pages/about",
-        "https://www.rockhall.com/inductees/nwa"
+        "https://www.rockhall.com/inductees/nwa",
+        "https://abcnews.com/Entertainment/SummerConcert/story?id=5406064",
+        "https://www.ironmountain.com/resources/case-studies/d/death-row-records"
       ],
       "period": {
         "start": 1991,
@@ -16614,22 +16635,26 @@
       "type": "label",
       "name": "Def Jam Recordings",
       "period": {
-        "start": 1984
+        "start": 1984,
+        "precision": "year"
       },
-      "description": "New York label founded by Rick Rubin and Russell Simmons, initially built around emerging hip-hop and punk-informed independent practice; its roster later spanned multiple popular music styles.",
+      "description": "New York hip-hop label launched by Rick Rubin in his NYU dorm in 1984, then built with Russell Simmons. Early releases connected hip-hop with punk-informed independent production; later ownership and rosters broadened across popular music.",
       "sources": [
         "https://www.umgcatalog.com/labels/def-jam-recordings/",
-        "https://www.universalmusic.com/label/def-jam/"
+        "https://www.universalmusic.com/label/def-jam/",
+        "https://legistar.council.nyc.gov/View.ashx?GUID=F3FE3E59-146B-4194-9913-C40C47399B15&ID=12578812&M=F",
+        "https://time.com/3780916/bring-the-noise-25-years-of-def-jam/"
       ]
     },
     {
       "id": "label:ecm-records",
       "type": "label",
       "name": "ECM Records",
-      "description": "Munich independent label founded by Manfred Eicher in 1969, with catalogues spanning jazz, improvised music and contemporary composition.",
+      "description": "Munich independent label founded by producer Manfred Eicher in 1969. Its catalogue spans jazz, improvisation, and contemporary composition, with a distinctive approach to recording, sequencing, and visual design.",
       "sources": [
         "https://ecmrecords.com/story/",
-        "https://www.hausderkunst.de/en/eintauchen/ecm-a-cultural-archaeology"
+        "https://www.hausderkunst.de/en/eintauchen/ecm-a-cultural-archaeology",
+        "https://www.ecmrecords.com/"
       ],
       "period": {
         "start": 1969,
@@ -16640,10 +16665,13 @@
       "id": "label:ed-banger-records",
       "type": "label",
       "name": "Ed Banger Records",
-      "description": "Paris-based electronic label founded by Pedro Winter in 2003 and closely associated with a later French Touch generation.",
+      "description": "Paris electronic label founded by Pedro Winter in 2003. Its roster—including Justice, DJ Mehdi, SebastiAn, Breakbot, and Uffie—helped define a later French electronic generation.",
       "sources": [
         "https://becausegroup.tv/en/becausemusic/",
-        "https://ra.co/labels/ed-banger-records"
+        "https://ra.co/labels/ed-banger-records",
+        "https://www.amsterdam-dance-event.nl/en/artists-speakers/pedro-winter/8362/",
+        "https://djmag.com/content/ed-banger-take-10",
+        "https://www.lemonde.fr/en/m-le-mag/article/2024/04/06/justice-s-new-quest_6667576_117.html"
       ],
       "period": {
         "start": 2003,
@@ -16654,10 +16682,13 @@
       "id": "label:f-communications",
       "type": "label",
       "name": "F Communications",
-      "description": "French electronic label founded by Éric Morand and Laurent Garnier, an important home for French techno and house.",
+      "description": "French electronic label founded in 1994 by Éric Morand and Laurent Garnier with PIAS support. It became a key outlet for French house and techno; after its last releases around 2007–08, the label was described by its founders as dormant rather than formally closed.",
       "sources": [
         "https://www.discogs.com/label/317-F-Communications",
-        "https://www.redbullmusicacademy.com/lectures/laurent-garnier/"
+        "https://www.redbullmusicacademy.com/lectures/laurent-garnier/",
+        "https://www1.rfi.fr/musiqueen/articles/060/article_6636.asp",
+        "https://www.qobuz.com/ch-fr/magazine/story/2020/06/16/f-communications-leveil-de-la-scene-electronique-francaise/",
+        "https://www.telerama.fr/musiques/f-communications-25-years-edition-limitee%2Cn6718103.php"
       ],
       "period": {
         "start": 1994,
@@ -16670,23 +16701,27 @@
       "name": "Factory Records",
       "period": {
         "start": 1978,
-        "end": 1992
+        "end": 1992,
+        "precision": "circa"
       },
-      "description": "Manchester independent label associated with Joy Division, New Order, A Certain Ratio, and Happy Mondays. Its work extended beyond releasing records into visual identity, club culture, and the Haçienda; the original company became insolvent in 1992.",
+      "description": "Manchester label and cultural project associated with Tony Wilson, Alan Erasmus, and others. A Factory club night began in 1978, its first record release followed in January 1979, and Factory Communications Limited went bankrupt in 1992; the FAC numbering tradition continued later.",
       "sources": [
         "https://www.factorymanchester.com/history/",
         "https://collection.sciencemuseumgroup.org.uk/people/cp153720",
-        "https://www.theguardian.com/culture/2000/jan/12/artsfeatures.tonywilson"
+        "https://www.theguardian.com/culture/2000/jan/12/artsfeatures.tonywilson",
+        "https://factoryrecords.org/",
+        "https://www.nme.com/features/factory-records-in-10-key-releases-tony-wilson-2997590"
       ]
     },
     {
       "id": "label:fania-records",
       "type": "label",
       "name": "Fania Records",
-      "description": "New York label founded in 1964 by Johnny Pacheco and Jerry Masucci, central to the development and international circulation of salsa.",
+      "description": "New York label founded in 1964 by Johnny Pacheco and Jerry Masucci. Through its artists, recordings, and Fania All-Stars, it became a major force in the commercial naming, circulation, and international reach of salsa, building on existing Afro-Caribbean traditions.",
       "sources": [
         "https://fania.com/history/",
-        "https://www.uspto.gov/learning-and-resources/journeys-innovation/historical-stories/inventing-salsa"
+        "https://www.uspto.gov/learning-and-resources/journeys-innovation/historical-stories/inventing-salsa",
+        "https://folkways-media.si.edu/docs/folkways/lessons/SFLN069_teacher_guide.pdf"
       ],
       "period": {
         "start": 1964,
@@ -16697,13 +16732,15 @@
       "id": "label:impulse-records",
       "type": "label",
       "name": "Impulse! Records",
-      "description": "American jazz label founded in 1961, strongly associated with John Coltrane and a broad range of adventurous jazz artists.",
+      "description": "American jazz label founded by Creed Taylor in 1960 as part of ABC-Paramount; its first releases followed in 1961. It became especially associated with John Coltrane and adventurous jazz under successive producers.",
       "sources": [
         "https://www.impulserecords.com/our-story/",
-        "https://www.impulserecords.com/artist/john-coltrane-0/"
+        "https://www.impulserecords.com/artist/john-coltrane-0/",
+        "https://www.jazztimes.com/features/profiles/the-impulse-records-story-the-house-that-trane-built/?v=a672068055fa",
+        "https://jazz.fm/impulse-records-60th-anniversary-reissues-releases/"
       ],
       "period": {
-        "start": 1961,
+        "start": 1960,
         "precision": "year"
       }
     },
@@ -16712,22 +16749,27 @@
       "type": "label",
       "name": "Island Records",
       "period": {
-        "start": 1959
+        "start": 1959,
+        "precision": "year"
       },
-      "description": "Record label started by Chris Blackwell in Jamaica, initially releasing Jamaican music before expanding internationally and moving its base to London in the early 1960s.",
+      "description": "Record label started in Jamaica by Chris Blackwell in 1959, initially releasing local Jamaican music. Blackwell moved the operation to London in 1962, helping connect Jamaican recordings with British audiences before the label broadened its roster internationally.",
       "sources": [
         "https://www.islandrecords.com/pages/about",
-        "https://www.islandrecords.co.uk/history-backup/"
+        "https://www.islandrecords.co.uk/history-backup/",
+        "https://www.polarmusicprize.org/laureates/chris-blackwell/"
       ]
     },
     {
       "id": "label:kitsune-musique",
       "type": "label",
       "name": "Kitsuné Musique",
-      "description": "Paris-based independent label and fashion/music collective founded in 2002 by Gildas Loaëc and Masaya Kuroki.",
+      "description": "Paris label founded in 2002 by Gildas Loaëc and Masaya Kuroki as part of the Kitsuné music-and-fashion venture. Its compilations and releases cross electronic, indie, and pop music.",
       "sources": [
         "https://kitsune.fr/pages/about",
-        "https://www.discogs.com/label/59346-Kitsun%C3%A9-Music"
+        "https://www.discogs.com/label/59346-Kitsun%C3%A9-Music",
+        "https://maisonkitsune.com/mk/fr/les-fondateurs-maison-kitsune/",
+        "https://www.beatportal.com/articles/1581604-behind-the-label-kitsune-musique",
+        "https://www.scmp.com/magazines/post-magazine/article/1599326/behind-label-maison-kitsune"
       ],
       "period": {
         "start": 2002,
@@ -16739,23 +16781,28 @@
       "type": "label",
       "name": "KMS",
       "period": {
-        "start": 1987
+        "start": 1985,
+        "precision": "circa"
       },
-      "description": "Detroit techno label founded by Kevin Saunderson. The Michigan corporation dates to 1987.",
+      "description": "Detroit techno label established by Kevin Saunderson around 1985 and named for his initials. The label issued his own records and work by other Detroit artists; its business/corporate registration is sometimes dated later, to 1987.",
       "sources": [
         "https://ra.co/news/16637",
         "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/saunderson-kevin",
-        "https://businessprofiles.com/details/kms-records-inc/MI-282024"
+        "https://businessprofiles.com/details/kms-records-inc/MI-282024",
+        "https://musictech.com/features/interviews/kevin-saunderson-interview-past-present-future-techno/",
+        "https://www.discogs.com/label/1036-KMS-Records"
       ]
     },
     {
       "id": "label:kompakt",
       "type": "label",
       "name": "Kompakt",
-      "description": "Cologne electronic music label and company that grew from local record-shop and producer networks in the 1990s.",
+      "description": "Cologne electronic music label founded in 1993 by Wolfgang Voigt, Jürgen Paape, Reinhard Voigt, and Michael Mayer. It grew from the city’s record-shop and producer network and became closely associated with minimal techno.",
       "sources": [
         "https://kompakt.fm/about",
-        "https://artsandculture.google.com/story/the-history-of-kompakt-kompakt/bAWxxTH2nWDhnQ?hl=en"
+        "https://artsandculture.google.com/story/the-history-of-kompakt-kompakt/bAWxxTH2nWDhnQ?hl=en",
+        "https://kompakt.fm/label",
+        "https://ra.co/features/1436"
       ],
       "period": {
         "start": 1993,
@@ -16767,16 +16814,19 @@
       "type": "label",
       "name": "Metroplex",
       "period": {
-        "start": 1985
+        "start": 1985,
+        "precision": "year"
       },
-      "description": "Detroit label founded by Juan Atkins in 1985. It released Model 500’s “No UFOs,” a seminal early techno record, and helped establish the independent label network around Detroit’s first techno generation.",
+      "description": "Detroit techno label founded by Juan Atkins in 1985. Its early releases as Model 500, including “No UFOs,” helped establish a Detroit independent network and bring the city’s electronic music to wider audiences.",
       "sources": [
         "https://en.wikipedia.org/wiki/Metroplex_(record_label)",
         "https://en.wikipedia.org/wiki/Techno",
         "https://detroit1967.org/learn/online-research/encyclopedia-of-detroit/atkins-juan",
         "https://metroplexrecords.bandcamp.com/music",
         "https://www.wired.com/1994/07/techno/",
-        "https://model500.bandcamp.com/album/no-ufos-original-version"
+        "https://model500.bandcamp.com/album/no-ufos-original-version",
+        "https://ra.co/labels/7018",
+        "https://www.roland.com/CMSPages/GetFile.aspx?guid=4b86826b-f1d5-405d-804e-59183a417da5"
       ]
     },
     {
@@ -16784,22 +16834,27 @@
       "type": "label",
       "name": "Motown Records",
       "period": {
-        "start": 1959
+        "start": 1959,
+        "precision": "year"
       },
-      "description": "Detroit label founded by Berry Gordy as part of a Black-owned music business that developed a distinctive, highly organized soul and pop production system. The label’s roster and sound helped bring its artists to broad national and international audiences.",
+      "description": "Detroit music company begun by Berry Gordy as Tamla Records on 12 January 1959; the Motown label name followed later that year, with Motown Record Corporation formally incorporated in 1960. Its artist, songwriting, production, and studio system became a major force in American soul and pop.",
       "sources": [
         "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/motown-records",
-        "https://www.motownmuseum.org/about/"
+        "https://www.motownmuseum.org/about/",
+        "https://apnews.com/article/fcd844cd1174d0c135e3c8156a1f3405"
       ]
     },
     {
       "id": "label:prestige-records",
       "type": "label",
       "name": "Prestige Records",
-      "description": "Independent jazz label launched in 1949; its catalogue includes important recordings by Miles Davis, John Coltrane and Sonny Rollins.",
+      "description": "New York jazz label launched by Bob Weinstock in 1949, initially under the New Jazz name before adopting Prestige. Its independent catalog documented bebop, hard bop, and other modern jazz, including recordings by Miles Davis, Thelonious Monk, and Sonny Rollins.",
       "sources": [
         "https://concord.com/labels/prestige-records/",
-        "https://www.milesdavis.com/timeline-1950/"
+        "https://www.milesdavis.com/timeline-1950/",
+        "https://concord.com/concord-albums/prestige-records-story-2/",
+        "https://www.washingtonpost.com/archive/local/2006/01/18/bob-weinstock/cdcb916f-ea8e-49d6-b1ae-ea5973ed5984/",
+        "https://www.downbeat.com/digitaledition/2014/DB1410/_art/DB1410.pdf"
       ],
       "period": {
         "start": 1949,
@@ -16810,10 +16865,12 @@
       "id": "label:rock-action-records",
       "type": "label",
       "name": "Rock Action Records",
-      "description": "Glasgow label founded by members of Mogwai, supporting Scottish and international independent artists.",
+      "description": "Glasgow independent label owned and run by Mogwai. Its first release was the band’s 1996 single “Tuner/Lower,” after which the label gradually added releases by the band’s associates and other artists.",
       "sources": [
         "https://rockactionrecords.com/about",
-        "https://mogwai.scot/biography/"
+        "https://mogwai.scot/biography/",
+        "https://rockaction.scot/pages/the-story",
+        "https://rockaction.scot/collections/all"
       ],
       "period": {
         "start": 1996,
@@ -16824,10 +16881,12 @@
       "id": "label:rotterdam-records",
       "type": "label",
       "name": "Rotterdam Records",
-      "description": "Dutch hardcore label founded by Paul Elstak in Rotterdam in the early 1990s and associated with the rise of gabber.",
+      "description": "Rotterdam hardcore label founded by DJ Paul Elstak in 1992 while he worked at the city’s Mid-Town Records store. Its releases helped define the emerging Dutch gabber scene.",
       "sources": [
         "https://artsandculture.google.com/story/a-brief-history-of-gabber-the-netherlands-institute-for-sound-and-vision/ugXxcmEzFVvjKQ?hl=en",
-        "https://www.canonvannederland.nl/nl/page/292759/gabber"
+        "https://www.canonvannederland.nl/nl/page/292759/gabber",
+        "https://www.nporadio2.nl/soulenjazz/muziek/artiesten/3f921ea5-f1eb-46b3-b596-d568b6596974/dj-paul-elstak",
+        "https://djmag.com/features/gabber-30-hard-fast-and-louder-ever"
       ],
       "period": {
         "start": 1992,
@@ -16838,10 +16897,13 @@
       "id": "label:rough-trade-records",
       "type": "label",
       "name": "Rough Trade Records",
-      "description": "Independent label and record-store network that began in London and became closely associated with post-punk and independent music.",
+      "description": "London independent label that grew from Geoff Travis’s Rough Trade record shop, opened in 1976. The label’s first releases followed in 1978, and it became closely associated with post-punk and later independent music.",
       "sources": [
         "https://www.roughtraderecords.com/about",
-        "https://www.beggars.com/history/"
+        "https://www.beggars.com/history/",
+        "https://www.roughtrade.com/about/our-story",
+        "https://shop.roughtraderecords.com/about?lang=en_GB",
+        "https://roughtradepublishing.com/about/"
       ],
       "period": {
         "start": 1978,
@@ -16852,10 +16914,13 @@
       "id": "label:roule",
       "type": "label",
       "name": "Roulé",
-      "description": "French electronic music label established by Thomas Bangalter, whose releases became part of the French Touch club network.",
+      "description": "French house label established by Thomas Bangalter in 1995. Its first releases included his Trax on da Rocks EP; later releases by Stardust and Together became key parts of the French Touch catalog.",
       "sources": [
         "https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en",
-        "https://ra.co/labels/roule"
+        "https://ra.co/labels/roule",
+        "https://fr.ra.co/labels/7006",
+        "https://www.allmusic.com/artist/thomas-bangalter-mn0000926200",
+        "https://www.discogs.com/label/681-Roul%C3%A9"
       ],
       "period": {
         "start": 1995,
@@ -16866,38 +16931,46 @@
       "id": "label:ruthless-records",
       "type": "label",
       "name": "Ruthless Records",
-      "description": "Compton-associated label founded by Eazy-E and Jerry Heller, central to the early N.W.A. catalogue.",
+      "description": "Compton hip-hop label founded by Eazy-E, with Jerry Heller as an early business partner and manager. Its label activity began around 1986; the early N.W.A. and related catalog helped bring West Coast rap to national audiences.",
       "sources": [
         "https://www.ruthlessrecords.com/about",
-        "https://www.comptonmuseum.org/previous-exhibitions/sounds-of-the-city"
+        "https://www.comptonmuseum.org/previous-exhibitions/sounds-of-the-city",
+        "https://vault.fbi.gov/jerry-heller/Jerry%20Heller%20Part%2001%20%28Final%29",
+        "https://escholarship.org/content/qt3hd2d12n/qt3hd2d12n.pdf"
       ],
       "period": {
         "start": 1986,
-        "precision": "year"
+        "precision": "circa"
       }
     },
     {
       "id": "label:sire-records",
       "type": "label",
       "name": "Sire Records",
-      "description": "Independent label founded in New York by Seymour Stein and Richard Gottehrer; its history includes punk, new wave and pop artists.",
+      "description": "New York label begun by Seymour Stein and Richard Gottehrer as Sire Productions in 1966; the Sire Records imprint launched the following year. It became known for punk, new wave, and pop artists.",
       "sources": [
         "https://www.rhino.com/article/the-history-of-sire-records",
-        "https://www.warnerrecords.com/sire-records"
+        "https://www.warnerrecords.com/sire-records",
+        "https://www.sirerecords.com/seymour-stein-story",
+        "https://www.wmg.com/news/2017-year-sire-label-marks-50th-anniversary-22056",
+        "https://www.limusichalloffame.org/inductees/seymour-stein/"
       ],
       "period": {
         "start": 1966,
-        "precision": "year"
+        "precision": "circa"
       }
     },
     {
       "id": "label:soma-quality-recordings",
       "type": "label",
       "name": "Soma Quality Recordings",
-      "description": "Independent electronic label founded in Glasgow by Slam, with an early catalogue that included Daft Punk’s “Da Funk.”",
+      "description": "Glasgow independent electronic label formed in 1991 by a network of DJs and producers including members of Slam. It released early work by Slam and Daft Punk, including the original Soma release of “Da Funk” in 1995, before the track’s later international success.",
       "sources": [
         "https://www.somarecords.com/about",
-        "https://www.francemusic.com/french-touch-guide/"
+        "https://www.francemusic.com/french-touch-guide/",
+        "https://www.somarecords.com/news/",
+        "https://www.electronicsound.co.uk/features/time-machine/soma-recordings/",
+        "https://mixmag.net/feature/label-focus-soma"
       ],
       "period": {
         "start": 1991,
@@ -16908,10 +16981,13 @@
       "id": "label:source-records",
       "type": "label",
       "name": "Source Records",
-      "description": "French label launched within Virgin France that released early work by Air and Phoenix and helped connect French electronic/pop artists to wider audiences.",
+      "description": "Virgin France imprint launched in 1995 under Philippe Ascoli and Emmanuel de Buretel. It became associated with French electronic and alternative pop acts including Air and Phoenix; the Source name was later revived under new management.",
       "sources": [
         "https://www.radio-cerise.fr/french-touch-1997-2003/",
-        "https://www.musicbusinessworldwide.com/source-records-relaunches-with-new-management-team-and-ambitious-growth-plans/"
+        "https://www.musicbusinessworldwide.com/source-records-relaunches-with-new-management-team-and-ambitious-growth-plans/",
+        "https://www.worldradiohistory.com/UK/Music-and-Media/90s/1995/MM-1995-04-08.pdf",
+        "https://www.musicbusinessworldwide.com/pias-relaunches-source-the-anglo-french-label-behind-air-phoenix-and-kings-of-convenience/",
+        "https://www.lemonde.fr/archives/article/1998/01/20/emmanuel-de-buretel-president-directeur-general-de-virgin-france_3623302_1819218.html"
       ],
       "period": {
         "start": 1995,
@@ -16922,10 +16998,13 @@
       "id": "label:stax-records",
       "type": "label",
       "name": "Stax Records",
-      "description": "Memphis soul label founded as Satellite Records; its artists and house band helped create a distinctive Southern soul catalogue.",
+      "description": "Memphis record company founded by Jim Stewart as Satellite Records in 1957; after Estelle Axton joined the business, the name changed to Stax in 1961. The label and its house band became central to Memphis soul.",
       "sources": [
         "https://staxmuseum.com/stax-records/",
-        "https://www.memphistravel.com/music"
+        "https://www.memphistravel.com/music",
+        "https://staxrecords.com/history/",
+        "https://staxmuseum.com/1957-1968/",
+        "https://staxmuseum.org/stax-museums-electronic-press-kit/"
       ],
       "period": {
         "start": 1957,
@@ -16937,22 +17016,28 @@
       "type": "label",
       "name": "Sub Pop",
       "period": {
-        "start": 1988
+        "start": 1988,
+        "precision": "year"
       },
-      "description": "Seattle independent label founded by Bruce Pavitt and Jonathan Poneman. Its early releases and promotional work helped bring several Northwest bands, including Nirvana and Mudhoney, to wider attention; it did not create the scene it marketed.",
+      "description": "Seattle independent label formally incorporated by Bruce Pavitt and Jonathan Poneman in 1988. Its roots include Pavitt’s earlier fanzine and compilations, and its promotion helped bring Northwest bands including Nirvana and Mudhoney to wider attention without creating the regional scene.",
       "sources": [
         "https://www.subpop.com/about",
-        "https://www.mopop.org/experience/puget-sound-stories"
+        "https://www.mopop.org/experience/puget-sound-stories",
+        "https://brucepavitt.com/biography/",
+        "https://guides.lib.uw.edu/therocketexhibit/subpop"
       ]
     },
     {
       "id": "label:sun-records",
       "type": "label",
       "name": "Sun Records",
-      "description": "Memphis label and studio founded by Sam Phillips, known for landmark blues, country and early rock recordings.",
+      "description": "Memphis record label founded by Sam Phillips in 1952, recording blues, country, and early rockabilly and rock and roll.",
       "sources": [
         "https://www.sunrecords.com/about",
-        "https://www.memphistravel.com/music"
+        "https://www.memphistravel.com/music",
+        "https://sunrecords.com/history/",
+        "https://npgallery.nps.gov/NRHP/GetAsset/a456618c-7d74-4764-8d73-42e46dfa35cc",
+        "https://www.neh.gov/humanities/2016/januaryfebruary/statement/the-birth-rock-%E2%80%98n%E2%80%99-roll-found-sam-phillips%E2%80%99s-sun-records"
       ],
       "period": {
         "start": 1952,
@@ -16964,12 +17049,16 @@
       "type": "label",
       "name": "Transmat",
       "period": {
-        "start": 1986
+        "start": 1986,
+        "precision": "year"
       },
-      "description": "Detroit techno label established by Derrick May in 1986. Its early catalog includes Rhythim Is Rhythim’s “Strings of Life.”",
+      "description": "Detroit techno label founded by Derrick May in 1986. Its releases include Rhythim Is Rhythim’s “Strings of Life,” a major early Detroit techno record.",
       "sources": [
         "https://transmatrecords.com/",
-        "https://www.detroithistorical.org/learn/online-research/collection/archive/label-transmat-rhythim-rhythim"
+        "https://www.detroithistorical.org/learn/online-research/collection/archive/label-transmat-rhythim-rhythim",
+        "https://transmat.net/en-au/pages/transmat",
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/may-derrick",
+        "https://www.worldradiohistory.com/UK/Music-Week/1988/MW-1988-04-23.pdf"
       ]
     },
     {
@@ -16980,11 +17069,12 @@
         "start": 1985,
         "precision": "circa"
       },
-      "description": "An early Chicago house label that grew out of Larry Sherman’s pressing business and released records by artists including Marshall Jefferson and Phuture.",
+      "description": "Chicago house label that emerged around 1985 from Larry Sherman’s pressing-plant business and the city’s early house network. Its catalog includes defining records by artists such as Marshall Jefferson and Phuture.",
       "sources": [
         "https://www.traxrecords.com/whats_happening",
         "https://djmag.com/features/history-trax-records-and-fight-chicagos-house-pioneers-royalties",
-        "https://chicago.suntimes.com/2019/7/10/20685704/trax-records-house-music-chicago-label-anniversary-open-house-screamin-rachael-cain"
+        "https://chicago.suntimes.com/2019/7/10/20685704/trax-records-house-music-chicago-label-anniversary-open-house-screamin-rachael-cain",
+        "https://www.traxrecords.com/about-trax"
       ]
     },
     {
@@ -16992,11 +17082,14 @@
       "type": "label",
       "name": "Tresor",
       "period": {
-        "start": 1991
+        "start": 1991,
+        "precision": "year"
       },
-      "description": "Berlin techno label founded in 1991 alongside the Tresor club. Its early releases and collaborations helped connect Berlin and Detroit techno.",
+      "description": "Berlin techno label founded in 1991 alongside the Tresor club. Its releases and Detroit connections helped build an influential Berlin–Detroit techno exchange.",
       "sources": [
-        "https://tresorberlin.com/info/about/"
+        "https://tresorberlin.com/info/about/",
+        "https://ra.co/labels/999",
+        "https://tresor.foundation/geschichte/"
       ]
     },
     {
@@ -17004,26 +17097,33 @@
       "type": "label",
       "name": "Underground Resistance",
       "period": {
-        "start": 1989
+        "start": 1989,
+        "precision": "circa"
       },
-      "description": "Detroit record label launched by Mike Banks and Jeff Mills in 1989, alongside the collective of the same name. It issued music by a changing roster of Detroit artists and built its own distribution and community infrastructure.",
+      "description": "Detroit techno label and collective formed around 1989 by Mike Banks and Jeff Mills. Its music and distribution network supported a changing roster of Detroit artists and an explicitly independent, politically engaged identity.",
       "sources": [
         "https://en.wikipedia.org/wiki/Underground_Resistance",
         "https://www.allmusic.com/artist/underground-resistance-mn0000184031",
-        "https://www.roland.com/RolandComSite/media/global/release/pdf/2024/20240301_1_Somewhere_in_Detroit.pdf"
+        "https://www.roland.com/RolandComSite/media/global/release/pdf/2024/20240301_1_Somewhere_in_Detroit.pdf",
+        "https://www.thewire.co.uk/in-writing/interviews/jeff-mills-interview-by-derek-walmsley",
+        "https://www.redbullmusicacademy.com/lectures/jeff-mills-lecture/",
+        "https://www.axios.com/newsletters/axios-detroit-0ea10f20-f472-11ef-9c81-71a40ad4c40c"
       ]
     },
     {
       "id": "label:virgin-records",
       "type": "label",
       "name": "Virgin Records",
-      "description": "British label founded in London in 1972; its later roster and imprints include major French electronic acts such as Daft Punk and Air.",
+      "description": "British record label launched in 1973 with Mike Oldfield’s Tubular Bells as its first release. Its later history spans progressive rock, punk, pop, and numerous international imprints.",
       "sources": [
         "https://www.virginrecords.com/about/",
-        "https://www.francemusic.com/french-touch-guide/"
+        "https://www.francemusic.com/french-touch-guide/",
+        "https://com.prod.loyalty.virgin.com/about-virgin/timeline",
+        "https://com.prod.loyalty.virgin.com/virgin-companies/virgin-records",
+        "https://www.worldradiohistory.com/UK/Music-Week/1977/Music-Week-1977-11-05.pdf"
       ],
       "period": {
-        "start": 1972,
+        "start": 1973,
         "precision": "year"
       }
     },
@@ -17032,11 +17132,14 @@
       "type": "label",
       "name": "Warp Records",
       "period": {
-        "start": 1989
+        "start": 1989,
+        "precision": "year"
       },
-      "description": "Independent label founded in Sheffield that became an important home for electronic, experimental, and later cross-genre work. Its catalog includes artists such as Aphex Twin, Autechre, and Squarepusher.",
+      "description": "Independent label founded in Sheffield in 1989, initially rooted in the city’s electronic dance scene and later known for experimental music across electronic, hip-hop, and rock.",
       "sources": [
-        "https://sheffieldmusicarchive.co.uk/cp-books/warp-labels-unlimited/"
+        "https://sheffieldmusicarchive.co.uk/cp-books/warp-labels-unlimited/",
+        "https://warp.net/",
+        "https://uwe-repository.worktribe.com/index.php/OutputFile/915565"
       ]
     },
     {
@@ -17044,26 +17147,33 @@
       "type": "label",
       "name": "Women on Wax Recordings",
       "period": {
-        "start": 2001
+        "start": 2001,
+        "precision": "year"
       },
-      "description": "Independent Detroit dance-music label founded by DJ Minx in 2001. It has released Minx’s work and music by local and international artists.",
+      "description": "Independent Detroit electronic-music label founded by DJ Minx in 2001, growing out of her Women on Wax DJ collective, which began in 1996.",
       "sources": [
         "https://womenonwax.com/catalogue/",
         "https://ra.co/labels/7463",
-        "https://www.insomniac.com/music/artists/dj-minx/"
+        "https://www.insomniac.com/music/artists/dj-minx/",
+        "https://womenonwax.com/artists-dj-minx/",
+        "https://ra.co/dj/djminx/biography",
+        "https://djmag.com/content/detroit-club-legend-dj-minx-talks-history-house-and-spirit-motor-city"
       ]
     },
     {
       "id": "label:yellow-productions",
       "type": "label",
       "name": "Yellow Productions",
-      "description": "French label founded by DJs Bob Sinclar and DJ Yellow, associated with French house and club music.",
+      "description": "French independent label founded in 1993 by DJ Yellow (Alain Ho) and Bob Sinclar (Christophe Le Friant), associated with house, jazz, soul, Brazilian music, and French club culture.",
       "sources": [
         "https://www.discogs.com/label/877-Yellow-Productions",
-        "https://www.francemusic.com/french-touch-guide/"
+        "https://www.francemusic.com/french-touch-guide/",
+        "https://www.yellowprod.fr/",
+        "https://ovumrecordings.com/artists/dj-yellow/",
+        "https://catalogue.bnf.fr/ark:/12148/cb13979535s"
       ],
       "period": {
-        "start": 1994,
+        "start": 1993,
         "precision": "year"
       }
     },

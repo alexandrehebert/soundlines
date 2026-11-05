@@ -2,12 +2,23 @@
 
 Graph ID `label:sub-pop`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1988
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Seattle independent label founded by Bruce Pavitt and Jonathan Poneman. Its early releases and promotional work helped bring several Northwest bands, including Nirvana and Mudhoney, to wider attention; it did not create the scene it marketed.
+## Sources checked
 
-**Graph citations** · [1](<https://www.subpop.com/about>), [2](<https://www.mopop.org/experience/puget-sound-stories>)
+- [Sub Pop official history](https://www.subpop.com/about) — Label states it was founded by Bruce Pavitt and Jonathan Poneman in 1988.
+- [Bruce Pavitt biography](https://brucepavitt.com/biography/) — Founder biography dates formal incorporation to 1 April 1988 and traces earlier Subterranean Pop work.
+- [Sub Pop history guide, University of Washington Libraries](https://guides.lib.uw.edu/therocketexhibit/subpop) — Academic library guide discusses early compilations, formal label formation, and its Northwest context.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+Kept 1988 for the formal label while clarifying roots in earlier fanzine and compilation activity. Existing description’s “did not create the scene” caveat is supported by historical context and avoids an overclaim often attached to grunge coverage.
+
+## Remaining uncertainty
+
+Some retrospectives use 1986 for Pavitt’s first compilation LP; formal label incorporation is 1988.
+## Existing graph citations not independently checked in this pass
+
+- [mopop.org](https://www.mopop.org/experience/puget-sound-stories) — Already present in the graph source list; not independently checked during this review.

@@ -2,12 +2,20 @@
 
 Graph ID `label:ecm-records`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1969 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Munich independent label founded by Manfred Eicher in 1969, with catalogues spanning jazz, improvised music and contemporary composition.
+## Sources checked
 
-**Graph citations** · [1](<https://ecmrecords.com/story/>), [2](<https://www.hausderkunst.de/en/eintauchen/ecm-a-cultural-archaeology>)
+- [ECM official history](https://ecmrecords.com/story/) — Label’s own history dates its founding to 1969 and describes more than 1,700 releases across styles.
+- [ECM: A Cultural Archaeology, Haus der Kunst](https://www.hausderkunst.de/en/eintauchen/ecm-a-cultural-archaeology) — Museum exhibition documents ECM’s role, sound, and visual identity.
+- [ECM anniversary and discography overview](https://www.ecmrecords.com/) — Official site confirms current independent label profile and continuing catalog.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+Confirmed year and founder from the label itself and a museum source; no career phases assigned because a popularity curve is not documented by these sources.
+
+## Remaining uncertainty
+
+None material for the founding date; “Munich” identifies its base, while the node need not imply that every recording was made there.

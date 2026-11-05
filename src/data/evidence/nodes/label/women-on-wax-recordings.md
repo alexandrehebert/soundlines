@@ -2,12 +2,25 @@
 
 Graph ID `label:women-on-wax-recordings`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 2001
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Independent Detroit dance-music label founded by DJ Minx in 2001. It has released Minx’s work and music by local and international artists.
+## Sources checked
 
-**Graph citations** · [1](<https://womenonwax.com/catalogue/>), [2](<https://ra.co/labels/7463>), [3](<https://www.insomniac.com/music/artists/dj-minx/>)
+- [Women on Wax — DJ Minx / label history](https://womenonwax.com/artists-dj-minx/) — Founder’s official site distinguishes the Women on Wax collective (1996) from the record label (2001).
+- [Resident Advisor — DJ Minx biography](https://ra.co/dj/djminx/biography) — Independent artist biography dates the label launch to 2001 and describes its role amplifying Detroit women artists.
+- [DJ Mag — Detroit club legend DJ Minx](https://djmag.com/content/detroit-club-legend-dj-minx-talks-history-house-and-spirit-motor-city) — Profile corroborates the collective-to-label lineage, though it gives 2002 for label expansion.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Kept 2001 based on the founder’s own account and Resident Advisor; DJ Mag’s 2002 date may reflect a later expansion or differ in recollection. The graph now distinguishes the 1996 collective from the label.
+
+## Remaining uncertainty
+
+DJ Mag gives 2002 rather than 2001; founder history and Resident Advisor support 2001.
+## Existing graph citations not independently checked in this pass
+
+- [womenonwax.com](https://womenonwax.com/catalogue/) — Already present in the graph source list; not independently checked during this review.
+- [ra.co](https://ra.co/labels/7463) — Already present in the graph source list; not independently checked during this review.
+- [insomniac.com](https://www.insomniac.com/music/artists/dj-minx/) — Already present in the graph source list; not independently checked during this review.

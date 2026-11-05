@@ -2,12 +2,24 @@
 
 Graph ID `label:rock-action-records`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1996 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Glasgow label founded by members of Mogwai, supporting Scottish and international independent artists.
+## Sources checked
 
-**Graph citations** · [1](<https://rockactionrecords.com/about>), [2](<https://mogwai.scot/biography/>)
+- [Rock Action Records official story](https://rockaction.scot/pages/the-story) — Label page states ROCKACT1 was released in 1996 and early activity was modest and largely Mogwai-focused.
+- [Rock Action Records catalog](https://rockaction.scot/collections/all) — Official catalog confirms its ongoing independent activity and releases.
+- [Mogwai label overview, Scottish Music Centre](https://www.scottishmusiccentre.com/artists/mogwai) — Music organization contextualizes Mogwai’s independent label work and Glasgow base.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Kept 1996, confirmed by the label’s own first-release account. Description avoids implying a large external roster from the outset.
+
+## Remaining uncertainty
+
+The early label was described by its owners as a hobby, but its first release provides a clear start marker.
+## Existing graph citations not independently checked in this pass
+
+- [rockactionrecords.com](https://rockactionrecords.com/about) — Already present in the graph source list; not independently checked during this review.
+- [mogwai.scot](https://mogwai.scot/biography/) — Already present in the graph source list; not independently checked during this review.

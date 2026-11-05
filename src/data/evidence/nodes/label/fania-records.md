@@ -2,12 +2,20 @@
 
 Graph ID `label:fania-records`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1964 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · New York label founded in 1964 by Johnny Pacheco and Jerry Masucci, central to the development and international circulation of salsa.
+## Sources checked
 
-**Graph citations** · [1](<https://fania.com/history/>), [2](<https://www.uspto.gov/learning-and-resources/journeys-innovation/historical-stories/inventing-salsa>)
+- [Fania Records official history](https://fania.com/history/) — Label history names both founders, dates 1964, and describes the 1971 Cheetah concert as a key transition.
+- [Fania teaching guide, Smithsonian Folkways](https://folkways-media.si.edu/docs/folkways/lessons/SFLN069_teacher_guide.pdf) — Smithsonian resource documents founding, roster, and New York Caribbean community context.
+- [Inventing salsa, USPTO](https://www.uspto.gov/learning-and-resources/journeys-innovation/historical-stories/inventing-salsa) — Government history dates the label to 1964 and describes its later trademark and business history.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+Confirmed 1964 and founders. Reframed influence carefully: Fania helped define and circulate salsa as an industry category; it did not originate the diverse musical traditions that fed it.
+
+## Remaining uncertainty
+
+The Cheetah concert is often framed as a singular “birth” moment for salsa; the graph avoids that simplification.

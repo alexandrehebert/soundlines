@@ -2,12 +2,20 @@
 
 Graph ID `label:chess-records`
 
-**Review status** · Pending source review
+**Review status** · Reviewed
 
-**Graph period** · 1950 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Chicago record label founded by Leonard and Phil Chess; its blues and R&B catalogue includes recordings by Muddy Waters and Chuck Berry.
+## Sources checked
 
-**Graph citations** · [1](<https://www.chessrecords.com/history/>), [2](<https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/chess-records>)
+- [Chess Records, Encyclopedia of Chicago](https://www.encyclopedia.chicagohistory.org/pages/234.html) — Chicago-history reference dates the label to 1950 and describes the brothers’ earlier recording activity.
+- [Chess Records history, official site](https://www.chessrecords.com/history/) — Label history contextualizes its founding and catalogue.
+- [Chess Records collection, Detroit Historical Society](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/chess-records) — Museum history summarizes Chess’s artists and cultural significance.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Confirmed 1950 as the Chess name/label start; recording activity began earlier under Aristocrat Records, so the graph should not imply the Chess brothers’ operation began from nothing in 1950.
+
+## Remaining uncertainty
+
+Some accounts use 1947 for the preceding Aristocrat company; 1950 is appropriate for Chess Records specifically.

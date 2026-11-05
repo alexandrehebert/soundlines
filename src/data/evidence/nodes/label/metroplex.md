@@ -2,10 +2,31 @@
 
 Graph ID `label:metroplex`
 
-**Review status** · Founding and early catalog checked
+**Review status** · Reviewed
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Metroplex_(record_label)>), [2](<https://en.wikipedia.org/wiki/Techno>), [3](<https://detroit1967.org/learn/online-research/encyclopedia-of-detroit/atkins-juan>), [4](<https://metroplexrecords.bandcamp.com/music>), [5](<https://www.wired.com/1994/07/techno/>), [6](<https://model500.bandcamp.com/album/no-ufos-original-version>)
+**Reviewed** · 2026-11-04
 
-## Evidence review
+## Sources checked
 
-Metroplex’s label catalog and Dan Sicko’s 1994 interview agree that Atkins founded it in 1985. The Model 500 release catalog separately identifies Metroplex as the rights holder for “No UFO’s” and dates it to that year.
+- [Metroplex label profile, Resident Advisor](https://ra.co/labels/7018) — Label profile dates its founding to 1985 and identifies Atkins.
+- [Juan Atkins interview, WIRED](https://www.wired.com/1994/07/techno/) — Contemporary long-form profile says Atkins formed Metroplex in 1985 and discusses early Model 500 work.
+- [Metroplex 40th anniversary, Roland](https://www.roland.com/CMSPages/GetFile.aspx?guid=4b86826b-f1d5-405d-804e-59183a417da5) — Manufacturer’s anniversary note dates founding to 1985 and documents the label’s techno influence.
+
+## Assessment
+
+Confirmed 1985 through label-history and interview sources; no change to period needed. Avoided claiming one label alone created Detroit techno.
+
+## Remaining uncertainty
+
+No material uncertainty about start year.
+## Existing graph citations not independently checked in this pass
+
+- [en.wikipedia.org](https://en.wikipedia.org/wiki/Metroplex_%28record_label%29) — Already present in the graph source list; not independently checked during this review.
+- [en.wikipedia.org](https://en.wikipedia.org/wiki/Techno) — Already present in the graph source list; not independently checked during this review.
+- [detroit1967.org](https://detroit1967.org/learn/online-research/encyclopedia-of-detroit/atkins-juan) — Already present in the graph source list; not independently checked during this review.
+- [metroplexrecords.bandcamp.com](https://metroplexrecords.bandcamp.com/music) — Already present in the graph source list; not independently checked during this review.
+- [model500.bandcamp.com](https://model500.bandcamp.com/album/no-ufos-original-version) — Already present in the graph source list; not independently checked during this review.
+
+## Existing graph citations not independently checked in this pass
+
+- [en.wikipedia.org](https://en.wikipedia.org/wiki/Metroplex_%28record_label%29) — Already present in the graph source list; not independently checked during this review.
