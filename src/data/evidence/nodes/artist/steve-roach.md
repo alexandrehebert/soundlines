@@ -10,4 +10,9 @@ Graph ID `artist:steve-roach`
 
 ## Findings
 
-Supports a person node and the description of his musical practice, including *Structures From Silence*. The biography places his beginnings in the late 1970s and his first solo album in 1982; neither is converted into an exact career-start year. Career period remains null.
+Supports a person node and the description of his musical practice, including *Structures From Silence*. The biography places his beginnings in the late 1970s and his first solo album in 1982; neither establishes an exact career-start year.
+
+## Estimated timeline placement (2026-11-05)
+
+The official biography was rechecked. The period now estimates 1978-to-present:
+1978 represents its late-1970s account, not an exact debut or the 1982 album date.

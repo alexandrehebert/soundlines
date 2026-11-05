@@ -19,3 +19,10 @@ The 1979 company appointment was a career transition, not her first public perfo
 ## Remaining uncertainty
 
 The checked sources do not establish the year of her earliest public performances.
+
+## Estimated timeline placement (2026-11-05)
+
+The period now uses an explicitly estimated 1960s-to-present placement, superseding
+the earlier undated decision. Korea.net's account of more than 55 years of singing
+in 2015 supports this broad context, not an exact professional debut. The period
+note preserves that limitation; 1979 remains a later career transition.

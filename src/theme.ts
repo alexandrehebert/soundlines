@@ -85,8 +85,9 @@ export function formatYear(year: number): string {
 export function formatPeriod(period: Period | null | undefined): string | null {
   if (!period) return null
   const prefix = period.precision === 'circa' ? 'c. ' : ''
+  const suffix = period.estimated ? ' (estimated)' : ''
   const { start, end } = period
-  if (end === start) return `${prefix}${formatYear(start)}`
-  if (end == null) return `${prefix}${formatYear(start)} – now`
-  return `${prefix}${formatYear(start)} – ${formatYear(end)}`
+  if (end === start) return `${prefix}${formatYear(start)}${suffix}`
+  if (end == null) return `${prefix}${formatYear(start)} – now${suffix}`
+  return `${prefix}${formatYear(start)} – ${formatYear(end)}${suffix}`
 }

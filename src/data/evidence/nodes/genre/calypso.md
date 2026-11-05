@@ -16,3 +16,10 @@ Graph ID `genre:calypso`
 ## Assessment
 
 Removed the graph’s 1900 origin, 1960 end, and unsupported 1912/1948/1958 prominence phases. Sources distinguish the late-documented name and recording industry from the much older, partly oral Carnival song tradition; a precise global inception year is not justified.
+
+## Estimated timeline placement (2026-11-05)
+
+An explicitly estimated nineteenth-century-to-present period now represents the
+Carnival song tradition's broad historical context. The 1800 anchor is not an
+exact origin, and neither the later name nor first recording defines its start.
+The former end and prominence phases remain removed.

@@ -1,11 +1,12 @@
 import type { ReactNode } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it, vi } from 'vitest'
-import { Explorer, ViewToggle } from './App.tsx'
+import { Explorer, GenreDisplaySelect, ViewToggle } from './App.tsx'
 import { ExplorerContext } from './ExplorerContext.ts'
 import { DatasetStats } from './components/DatasetStats.tsx'
+import { Legend } from './components/Legend.tsx'
 import { buildIndex } from './graph/graph.ts'
-import { createTimelineModel } from './graph/timeline.ts'
+import { createTimelineModel, type ExplorerView } from './graph/timeline.ts'
 import type { MusicGraph } from './graph/types.ts'
 
 vi.mock('./components/SearchBar.tsx', () => ({ SearchBar: () => null }))
@@ -28,12 +29,14 @@ const graph: MusicGraph = {
   ],
 }
 
-function render(graph: MusicGraph, children: ReactNode) {
+function render(
+  graph: MusicGraph, children: ReactNode, selectedId: string | null = null, view: ExplorerView = 'genre',
+) {
   const index = buildIndex(graph)
   return renderToStaticMarkup(
     <ExplorerContext.Provider value={{
-      index, model: createTimelineModel(index, 'genre'), view: 'genre',
-      selectedId: null, selectNode: vi.fn(), changeView: vi.fn(),
+      index, model: createTimelineModel(index, 'genre'), view,
+      selectedId, selectNode: vi.fn(), changeView: vi.fn(),
       order: 'family', changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(),
       historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
       viewRange: [1900, 2000], setViewRange: vi.fn(),
@@ -44,6 +47,18 @@ function render(graph: MusicGraph, children: ReactNode) {
 }
 
 describe('Explorer header statistics', () => {
+  it('explains estimated bar edges in the timeline legend', () => {
+    const estimatedGraph: MusicGraph = {
+      ...graph,
+      nodes: graph.nodes.map((node) => node.id === 'genre:jazz'
+        ? { ...node, period: { start: 1900, estimated: true } } : node),
+    }
+    const markup = render(estimatedGraph, <Legend />)
+
+    expect(markup).toContain('Soft edges indicate estimated dates')
+    expect(markup).toContain('linear-gradient(to right, transparent, #94a3b8 25%, #94a3b8 75%, transparent)')
+  })
+
   it.each([
     ['with links', graph],
     ['without links', { ...graph, edges: [] }],
@@ -61,23 +76,53 @@ describe('Explorer header statistics', () => {
     expect(header).not.toMatch(/\blinks\b/i)
   })
 
-  it('places genre display and ordering controls below the desktop legend', () => {
+  it('places desktop options next to the page selector and the legend outside the menu', () => {
     const markup = render(graph, <Explorer />)
     const headerEnd = markup.indexOf('</header>')
-    const legendEnd = markup.indexOf('Editorial phases, not popularity scores')
-    const toolbarStart = markup.indexOf('aria-label="Visualization controls"')
-    const mainStart = markup.indexOf('<main')
     const header = markup.slice(0, headerEnd)
-    const toolbar = markup.slice(toolbarStart, mainStart)
+    const selectorStart = header.indexOf('aria-label="Timeline view"')
+    const optionsStart = header.indexOf('aria-label="Timeline options"')
+    const optionsButton = header.match(/<button\b[^>]*aria-label="Timeline options"[^>]*>/)?.[0]
+    const legend = markup.match(/<div role="region" aria-label="Timeline legend"[^>]*>/)?.[0]
 
     expect(headerEnd).toBeGreaterThan(-1)
-    expect(legendEnd).toBeGreaterThan(headerEnd)
-    expect(toolbarStart).toBeGreaterThan(legendEnd)
-    expect(mainStart).toBeGreaterThan(toolbarStart)
-    expect(header).not.toContain('aria-label="Genre display"')
-    expect(header).not.toContain('Genre order')
-    expect(toolbar).toContain('aria-label="Genre display"')
-    expect(toolbar).toContain('aria-label="Genre order"')
+    expect(selectorStart).toBeGreaterThan(-1)
+    expect(optionsStart).toBeGreaterThan(selectorStart)
+    expect(optionsButton).toContain('aria-haspopup="dialog"')
+    expect(optionsButton).toContain('aria-expanded="false"')
+    expect(optionsButton).toContain('aria-controls=')
+    expect(markup).not.toContain('aria-label="Visualization controls"')
+    expect(markup).not.toContain('aria-label="Genre display"')
+    expect(markup).not.toContain('Genre order')
+    expect(legend).toContain('hidden')
+    expect(legend).toContain('md:block')
+    expect(markup.indexOf('aria-label="Timeline legend"')).toBeGreaterThan(headerEnd)
+    expect(markup.indexOf('Editorial phases, not popularity scores')).toBeLessThan(markup.indexOf('<main'))
+  })
+
+  it('places the sheet close action in its top row, without a duplicate inside the panel', () => {
+    const markup = render(graph, <Explorer />, 'genre:jazz')
+    const sheetStart = markup.indexOf('data-mobile-detail-sheet=""')
+    const sheet = markup.slice(sheetStart)
+    const closeButton = sheet.match(/<button\b[^>]*aria-label="Close panel"[^>]*>/)?.[0]
+
+    expect(sheetStart).toBeGreaterThan(-1)
+    expect(markup.slice(0, sheetStart)).toContain('aria-label="Close panel"')
+    expect(sheet.indexOf('aria-label="Expand details"')).toBeLessThan(sheet.indexOf('aria-label="Close panel"'))
+    expect(sheet.indexOf('aria-label="Close panel"')).toBeLessThan(sheet.indexOf('<aside'))
+    expect(sheet.match(/aria-label="Close panel"/g)).toHaveLength(1)
+    expect(closeButton).toContain('absolute right-1 top-1')
+    expect(closeButton).toContain('h-11 w-11')
+  })
+
+  it('omits empty desktop history options while retaining the mobile entry point', () => {
+    const markup = render(graph, <Explorer />, null, 'history')
+    const header = markup.slice(0, markup.indexOf('</header>'))
+    const mobileNavigation = markup.slice(markup.indexOf('</main>'))
+
+    expect(header).not.toContain('aria-label="History options"')
+    expect(header).toContain('show dataset statistics')
+    expect(mobileNavigation).toContain('aria-label="History options"')
   })
 
   it('keeps link counts in the statistics dialog', () => {
@@ -88,6 +133,17 @@ describe('Explorer header statistics', () => {
 })
 
 describe('view toggle', () => {
+  it('lets genre display options fill equal-width segments on desktop and mobile', () => {
+    const markup = render(graph, <GenreDisplaySelect />)
+    const buttons = markup.match(/<button\b[^>]*>/g) ?? []
+
+    expect(buttons).toHaveLength(2)
+    for (const button of buttons) {
+      expect(button).toContain('flex-1 justify-center')
+      expect(button).not.toContain('md:flex-none')
+    }
+  })
+
   it('uses taller desktop spacing while retaining mobile button height', () => {
     const markup = renderToStaticMarkup(<ViewToggle view="genre" changeView={vi.fn()} />)
     const buttons = markup.match(/<button\b[^>]*role="radio"[^>]*>/g) ?? []
@@ -100,13 +156,17 @@ describe('view toggle', () => {
     const markup = render(graph, <Explorer />)
     const buttons = markup.match(/<button\b[^>]*role="radio"[^>]*>/g) ?? []
     const viewButtons = buttons.filter((button) => button.includes('text-[11px]'))
-    const optionsButton = markup.match(/<button\b[^>]*aria-label="Timeline options and legend"[^>]*>/)?.[0]
+    const desktopOptions = markup.match(/<button\b[^>]*aria-label="Timeline options"[^>]*>/)?.[0]
+    const mobileOptions = markup.match(/<button\b[^>]*aria-label="Timeline options and legend"[^>]*>/)?.[0]
 
     expect(viewButtons).toHaveLength(8)
     expect(viewButtons.every((button) =>
       button.includes('sm:text-sm') && button.includes('md:text-xs') && button.includes('font-semibold'),
     )).toBe(true)
-    expect(optionsButton).toContain('text-sm font-semibold')
+    expect(desktopOptions).toContain('text-xs font-semibold')
+    expect(mobileOptions).toContain('text-sm font-semibold')
+    expect(desktopOptions).toContain('aria-expanded="false"')
+    expect(mobileOptions).toContain('aria-expanded="false"')
   })
 
   it('spaces mobile options from the view list and hides its label below the small breakpoint', () => {

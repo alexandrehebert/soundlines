@@ -50,7 +50,10 @@ function SourceLinks({ sources }: { sources?: string[] }) {
   )
 }
 
-export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
+export function DetailPanel({ onClose, showCloseButton = true }: {
+  onClose?: () => void
+  showCloseButton?: boolean
+} = {}) {
   const { index, selectedId, selectNode } = useExplorer()
   const node = selectedId ? index.nodeById.get(selectedId) : undefined
   if (!node) return null
@@ -68,7 +71,7 @@ export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
   return (
     <aside className="flex h-full w-full flex-col overflow-y-auto border-l-0 border-slate-800 bg-slate-950/95 backdrop-blur md:border-l">
       <div
-        className="sticky top-0 z-10 flex items-start justify-between gap-3 border-b border-slate-800 bg-slate-950/95 bg-contain bg-right-bottom bg-no-repeat p-4 md:p-5"
+        className={`sticky top-0 z-10 flex items-start border-b border-slate-800 bg-slate-950/95 bg-contain bg-right-bottom bg-no-repeat p-4 md:p-5 ${showCloseButton ? 'pr-14 md:pr-16' : ''}`}
         style={instrumentArtwork ? {
           backgroundImage: `url("${import.meta.env.BASE_URL}instrument-header-backgrounds/${instrumentArtwork}")`,
         } : undefined}
@@ -105,17 +108,24 @@ export function DetailPanel({ onClose }: { onClose?: () => void } = {}) {
               <div className="mt-1 text-sm font-medium text-slate-400">No period specified</div>
             )}
         </div>
-        <button
-          type="button"
-          onClick={onClose ?? (() => selectNode(null))}
-          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-slate-400 transition hover:bg-slate-800 hover:text-slate-200 md:h-8 md:w-8 md:text-slate-500"
-          aria-label="Close panel"
-        >
-          <X className="h-4 w-4" />
-        </button>
+        {showCloseButton && (
+          <button
+            type="button"
+            onClick={onClose ?? (() => selectNode(null))}
+            className="absolute right-1 top-1 flex h-11 w-11 items-center justify-center rounded-full text-slate-400 transition hover:bg-slate-800 hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
+            aria-label="Close panel"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        )}
       </div>
 
       <div className="flex flex-col gap-5 p-4 md:p-5">
+        {node.period?.estimated && (
+          <p className="text-xs leading-relaxed text-slate-400">
+            Estimated period: {node.period.estimateNote ?? 'Dates are approximate and subject to revision.'}
+          </p>
+        )}
         {node.description && (
           <p className="text-sm leading-relaxed text-slate-300">{node.description}</p>
         )}

@@ -10,4 +10,10 @@ Graph ID `artist:james-ferraro`
 
 ## Findings
 
-Supports the person node and a description deliberately focused on this documented foundational electronic work. The album date is not a career-start date and the article is not a full career chronology; period remains null.
+Supports the person node and a description deliberately focused on this documented foundational electronic work. The album date is not a career-start date and the article is not a full career chronology.
+
+## Estimated timeline placement (2026-11-05)
+
+[The biographical chronology](https://en.wikipedia.org/wiki/James_Ferraro)
+reports activity from 2004 and describes early work with the Skaters.
+The period now estimates 2004-to-present, rather than using the later 2011 album.

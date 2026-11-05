@@ -5,6 +5,9 @@ export function Legend() {
   const { model } = useExplorer()
   const view = model.view
   const labels = prominenceLabels(view)
+  const hasEstimatedPeriods = model.lanes.some((lane) =>
+    lane.bars.some((bar) => bar.node.period?.estimated),
+  )
   return (
     <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
       {(Object.keys(model.edgeColors) as EdgeType[]).map((type) => (
@@ -36,6 +39,16 @@ export function Legend() {
         </span>
       ))}
       <span className="text-[10px] text-slate-500">Editorial phases, not popularity scores</span>
+      {hasEstimatedPeriods && (
+        <span className="flex items-center gap-1.5 text-[10px] text-slate-500">
+          <span
+            aria-hidden="true"
+            className="h-2 w-8 shrink-0 rounded-full"
+            style={{ background: 'linear-gradient(to right, transparent, #94a3b8 25%, #94a3b8 75%, transparent)' }}
+          />
+          Soft edges indicate estimated dates
+        </span>
+      )}
       {view === 'artist' && <span className="text-[10px] text-slate-500">Unresearched artists stay neutral</span>}
       {view === 'instrument' && (
         <span className="text-[10px] text-slate-500">Bars start at first documented appearance · unannotated instruments stay neutral</span>

@@ -89,6 +89,27 @@ describe('bar selection outline', () => {
     expect(markup).toContain('</g></g><text data-bar-label="inside"')
   })
 
+  it.each([undefined, 2000])('gives estimated periods broad fades on both edges (end: %s)', (end) => {
+    const node: GraphNode = {
+      ...nodes[0],
+      period: { start: 1960, end, estimated: true, estimateNote: 'Approximate career context.' },
+    }
+    const markup = renderBar(node, true)
+    const gradient = markup.match(/<linearGradient id="bar-tail-genre-plain-gradient"[^>]*>(.*?)<\/linearGradient>/)?.[1]
+    expect(gradient).toBeDefined()
+    expect([...gradient!.matchAll(/<stop offset="([^"]+)" stop-color="#fff" stop-opacity="([^"]+)"/g)]
+      .map((match) => [Number(match[1]), Number(match[2])]))
+      .toEqual([[0, 0], [0.25, 1], [0.75, 1], [1, 0]])
+    expect(markup).toContain('mask="url(#bar-tail-genre-plain)"')
+    expect(markup).toContain('data-estimated-period="true"')
+    expect(markup).toContain(`aria-label="Plain · 1960 – ${end ?? 'now'} (estimated); dates are subject to estimation"`)
+    expect(markup).toContain('Approximate career context.')
+    expect(markup).toContain('</foreignObject></g></g><text data-bar-label=')
+    expect(markup).toMatch(/<text data-bar-label="inside"[^>]*fill="#f8fafc"/)
+    expect(markup).toContain('fill="transparent" pointer-events="all"')
+    expect(renderBar(nodes[0], false)).not.toContain('bar-tail-genre-plain')
+  })
+
   it('aligns prominence and hidden-phase stops with the era-weighted year positions', () => {
     const node: GraphNode = {
       id: 'genre:historical', type: 'genre', name: 'Historical', family: 'classical',

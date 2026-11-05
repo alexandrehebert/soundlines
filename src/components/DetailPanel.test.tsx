@@ -22,7 +22,7 @@ const graph: MusicGraph = {
   ],
 }
 
-function renderPanel(data: MusicGraph, selectedId: string) {
+function renderPanel(data: MusicGraph, selectedId: string, showCloseButton = true) {
   const index = buildIndex(data)
   return renderToStaticMarkup(
     <ExplorerContext.Provider value={{
@@ -40,12 +40,39 @@ function renderPanel(data: MusicGraph, selectedId: string) {
       viewRange: [1948, 2026],
       setViewRange: vi.fn(),
     }}>
-      <DetailPanel />
+      <DetailPanel showCloseButton={showCloseButton} />
     </ExplorerContext.Provider>,
   )
 }
 
 describe('detail panel sources', () => {
+  it('keeps the normal close action in the top-right and allows a sheet to provide its own', () => {
+    const normal = renderPanel(graph, 'genre:jazz')
+    const closeButton = normal.match(/<button\b[^>]*aria-label="Close panel"[^>]*>/)?.[0]
+    expect(closeButton).toContain('absolute right-1 top-1')
+    expect(closeButton).toContain('h-11 w-11')
+    const withoutCloseButton = renderPanel(graph, 'genre:jazz', false)
+    expect(withoutCloseButton).not.toContain('aria-label="Close panel"')
+    expect(withoutCloseButton).toContain('Jazz')
+  })
+
+  it('labels estimated periods and explains their evidence without implying a prominence curve', () => {
+    const data: MusicGraph = {
+      ...graph,
+      nodes: graph.nodes.map((node) => node.id === 'genre:jazz' ? {
+        ...node, period: {
+          start: 1900, estimated: true, precision: 'decade',
+          estimateNote: 'Broad historical context, not a verified inception year.',
+        },
+      } : node),
+    }
+    const markup = renderPanel(data, 'genre:jazz')
+    expect(markup).toContain('1900 – now (estimated)')
+    expect(markup).toContain('Estimated period: Broad historical context, not a verified inception year.')
+    expect(markup).not.toContain('Historical prominence')
+    expect(markup).toContain('href="https://example.com/Jazz"')
+  })
+
   it.each([undefined, null])('explains an undated entry and retains its sources and relationships (%s)', (period) => {
     const data: MusicGraph = {
       ...graph,

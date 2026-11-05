@@ -18,4 +18,12 @@ describe('historical date formatting', () => {
     expect(formatPeriod(undefined)).toBeNull()
     expect(formatPeriod(null)).toBeNull()
   })
+
+  it('labels estimated single dates, open careers, and historical ranges explicitly', () => {
+    expect(formatPeriod({ start: 1500, precision: 'century', estimated: true })).toBe('1500 – now (estimated)')
+    expect(formatPeriod({ start: 1965, end: 2013, precision: 'circa', estimated: true }))
+      .toBe('c. 1965 – 2013 (estimated)')
+    expect(formatPeriod({ start: -500, end: -500, estimated: true })).toBe('500 BCE (estimated)')
+    expect(formatPeriod({ start: 1900, estimated: false })).toBe('1900 – now')
+  })
 })

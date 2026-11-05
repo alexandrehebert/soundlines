@@ -20,6 +20,14 @@ UNESCO describes a living tradition and connects its communities to the trans-Sa
 
 A single origin date is unsupported; the historical relationship to slavery does not establish one.
 
+## Estimated timeline placement (2026-11-05)
+
+An explicitly estimated sixteenth-century-to-present placement now supersedes
+the undated decision. UNESCO's account was rechecked: it connects practitioners
+with slavery and the slave trade dating back at least to the sixteenth century.
+The 1500 anchor represents that context only, not a verified musical origin.
+The period note makes this distinction explicit; no phases are restored.
+
 ## Retained phase annotations
 
 These former annotations are preserved for review context. They may be provisional or unsupported and do not assert a continuous prominence curve; the former intensity values were editorial.

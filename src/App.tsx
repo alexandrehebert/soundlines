@@ -27,10 +27,47 @@ export function Explorer() {
   const showingHistory = view === 'history'
   const [optionsOpen, setOptionsOpen] = useState(false)
   const [statsTab, setStatsTab] = useState<StatsTab | null>(null)
+  const optionsRef = useRef<HTMLElement>(null)
+  const optionsId = useId()
   const stats = useMemo(() => {
     const count = (type: string) => index.graph.nodes.filter((node) => node.type === type).length
     return { genre: count('genre'), artist: count('artist'), instrument: count('instrument') }
   }, [index])
+
+  useEffect(() => {
+    if (!optionsOpen) return
+    const previous = document.activeElement instanceof HTMLElement ? document.activeElement : null
+    optionsRef.current?.querySelector<HTMLButtonElement>('button')?.focus()
+    return () => previous?.focus()
+  }, [optionsOpen])
+
+  useEffect(() => {
+    if (!optionsOpen || !showingHistory) return
+    const desktop = window.matchMedia('(min-width: 48rem)')
+    const closeOnDesktop = () => {
+      if (desktop.matches) setOptionsOpen(false)
+    }
+    desktop.addEventListener('change', closeOnDesktop)
+    closeOnDesktop()
+    return () => desktop.removeEventListener('change', closeOnDesktop)
+  }, [optionsOpen, showingHistory])
+
+  const trapOptionsFocus = (event: ReactKeyboardEvent<HTMLElement>) => {
+    if (event.key !== 'Tab' || !optionsRef.current) return
+    const focusable = [...optionsRef.current.querySelectorAll<HTMLElement>(
+      'button:not([disabled]):not([tabindex="-1"]), a[href]',
+    )].filter((element) => element.getClientRects().length > 0)
+    const first = focusable[0]
+    const last = focusable[focusable.length - 1]
+    if (!first || !last) return
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault()
+      last.focus()
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault()
+      first.focus()
+    }
+  }
 
   useEffect(() => {
     if (!optionsOpen && !selectedId && !statsTab) return
@@ -46,7 +83,7 @@ export function Explorer() {
 
   return (
     <div className="flex h-dvh flex-col">
-      <header className="z-20 flex shrink-0 items-center gap-2 border-b border-slate-800 bg-slate-950/90 px-3 py-2 md:flex-wrap md:gap-x-6 md:gap-y-3 md:px-5 md:py-3">
+      <header className={`${optionsOpen ? 'z-50' : 'z-20'} flex shrink-0 items-center gap-2 border-b border-slate-800 bg-slate-950/90 px-3 py-2 md:flex-wrap md:gap-x-6 md:gap-y-3 md:px-5 md:py-3`}>
         <a
           href="/"
           aria-label="Soundlines home"
@@ -70,7 +107,94 @@ export function Explorer() {
         <div className="ml-auto shrink-0 md:ml-0 md:w-80">
           <SearchBar />
         </div>
-        <ViewToggle view={view} changeView={changeView} className="hidden md:flex" />
+        <div className="contents md:relative md:flex md:shrink-0 md:items-center md:gap-2">
+          <ViewToggle view={view} changeView={changeView} className="hidden md:flex" />
+          {!showingHistory && (
+            <button
+              type="button"
+              onClick={() => setOptionsOpen((open) => !open)}
+              className="hidden min-h-9 shrink-0 items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-xs font-semibold text-slate-300 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:flex"
+              aria-label="Timeline options"
+              aria-haspopup="dialog"
+              aria-expanded={optionsOpen}
+              aria-controls={optionsId}
+            >
+              <SlidersHorizontal className="h-4 w-4" />
+              Options
+            </button>
+          )}
+          <AnimatePresence>
+            {optionsOpen && (
+              <motion.div
+                className="fixed inset-0 z-40 flex items-end md:absolute md:inset-auto md:right-0 md:top-full md:mt-2 md:block md:w-[min(28rem,calc(100vw-2.5rem))]"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setOptionsOpen(false)}
+              >
+                <div className="absolute inset-0 bg-black/60 md:fixed md:bg-transparent" aria-hidden="true" />
+                <motion.section
+                  ref={optionsRef}
+                  id={optionsId}
+                  role="dialog"
+                  aria-modal="true"
+                  aria-label={showingHistory ? 'History options' : 'Timeline options'}
+                  className="relative max-h-[85dvh] w-full overflow-y-auto rounded-t-3xl border-t border-slate-700 bg-slate-950 px-5 pb-[calc(env(safe-area-inset-bottom)+1.5rem)] pt-3 md:max-h-[calc(100dvh-10rem)] md:rounded-2xl md:border md:p-5 md:shadow-2xl md:shadow-black/60"
+                  initial={{ y: 12 }}
+                  animate={{ y: 0 }}
+                  exit={{ y: 12 }}
+                  transition={{ type: 'spring', stiffness: 320, damping: 34 }}
+                  onClick={(event) => event.stopPropagation()}
+                  onKeyDown={trapOptionsFocus}
+                >
+                  <div className="mb-5 flex items-center justify-between">
+                    <div>
+                      <div className="text-base font-bold text-white">{showingHistory ? 'History options' : 'Timeline options'}</div>
+                      <div className="mt-1 text-xs text-slate-500">
+                        {showingHistory ? 'Explore dataset statistics' : (
+                          <>
+                            <span className="md:hidden">Adjust the view and explore the legend</span>
+                            <span className="hidden md:inline">Adjust the view</span>
+                          </>
+                        )}
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => setOptionsOpen(false)}
+                      className="flex h-11 w-11 items-center justify-center rounded-full text-slate-400 hover:bg-slate-800 active:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
+                      aria-label="Close options"
+                    >
+                      <X className="h-5 w-5" />
+                    </button>
+                  </div>
+                  {!showingHistory && (
+                    <div className="mb-6 space-y-6 md:mb-0">
+                      {view === 'genre' && <GenreDisplaySelect className="flex" />}
+                      {!showingBubbles && isTimelineView(view) && (
+                        <TimelineOrderSelect view={view} order={order} changeOrder={changeOrder} className="flex" />
+                      )}
+                    </div>
+                  )}
+                  {!showingBubbles && !showingHistory && (
+                    <div className="border-t border-slate-800 pt-4 md:hidden"><Legend /></div>
+                  )}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setOptionsOpen(false)
+                      setStatsTab('overview')
+                    }}
+                    className="mt-4 flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-sm font-semibold text-slate-300 hover:bg-slate-800 active:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:hidden"
+                  >
+                    <BarChart3 className="h-4 w-4" />
+                    Dataset statistics
+                  </button>
+                </motion.section>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
         <div className="-mr-2 ml-auto hidden items-center gap-1 text-xs font-medium text-slate-500 md:flex">
           {(['genre', 'artist', 'instrument'] as const).map((tab) => (
             <button
@@ -85,17 +209,10 @@ export function Explorer() {
           ))}
         </div>
       </header>
-      {!showingBubbles && !showingHistory && <div className="hidden border-b border-slate-800/60 bg-slate-950/70 px-5 py-1.5 lg:block"><Legend /></div>}
-      {!showingHistory && (
-        <div
-          role="group"
-          aria-label="Visualization controls"
-          className="hidden shrink-0 items-center justify-end gap-2 border-b border-slate-800/60 bg-slate-950/70 px-5 py-2 md:flex"
-        >
-          {view === 'genre' && <GenreDisplaySelect />}
-          {!showingBubbles && isTimelineView(view) && (
-            <TimelineOrderSelect view={view} order={order} changeOrder={changeOrder} />
-          )}
+      {!showingBubbles && !showingHistory && (
+        <div role="region" aria-label="Timeline legend"
+          className="hidden shrink-0 border-b border-slate-800/60 bg-slate-950/70 px-5 py-1.5 md:block">
+          <Legend />
         </div>
       )}
       <main className="relative flex min-h-0 flex-1">
@@ -124,69 +241,14 @@ export function Explorer() {
           onClick={() => setOptionsOpen(true)}
           className="flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-sm font-semibold text-slate-300 active:bg-slate-800"
           aria-label={showingHistory ? 'History options' : 'Timeline options and legend'}
+          aria-haspopup="dialog"
+          aria-expanded={optionsOpen}
+          aria-controls={optionsId}
         >
           <SlidersHorizontal className="h-4 w-4" />
           <span className="hidden sm:inline">Options</span>
         </button>
       </div>
-      <AnimatePresence>
-        {optionsOpen && (
-          <motion.div
-            className="fixed inset-0 z-40 flex items-end bg-black/60 md:hidden"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setOptionsOpen(false)}
-          >
-            <motion.section
-              role="dialog"
-              aria-modal="true"
-              aria-label={showingHistory ? 'History options' : 'Timeline options'}
-              className="max-h-[85dvh] w-full overflow-y-auto rounded-t-3xl border-t border-slate-700 bg-slate-950 px-5 pb-[calc(env(safe-area-inset-bottom)+1.5rem)] pt-3"
-              initial={{ y: '100%' }}
-              animate={{ y: 0 }}
-              exit={{ y: '100%' }}
-              transition={{ type: 'spring', stiffness: 320, damping: 34 }}
-              onClick={(event) => event.stopPropagation()}
-            >
-              <div className="mb-5 flex items-center justify-between">
-                <div>
-                  <div className="text-base font-bold text-white">{showingHistory ? 'History options' : 'Timeline options'}</div>
-                  <div className="mt-1 text-xs text-slate-500">
-                    {showingHistory ? 'Explore dataset statistics' : 'Adjust the view and explore the legend'}
-                  </div>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setOptionsOpen(false)}
-                  className="flex h-11 w-11 items-center justify-center rounded-full text-slate-400 active:bg-slate-800"
-                  aria-label="Close options"
-                >
-                  <X className="h-5 w-5" />
-                </button>
-              </div>
-              {view === 'genre' && (
-                <GenreDisplaySelect className="mb-6 flex" />
-              )}
-              {!showingBubbles && isTimelineView(view) && (
-                <TimelineOrderSelect view={view} order={order} changeOrder={changeOrder} className="mb-6 flex" />
-              )}
-              {!showingBubbles && !showingHistory && <div className="border-t border-slate-800 pt-4"><Legend /></div>}
-              <button
-                type="button"
-                onClick={() => {
-                  setOptionsOpen(false)
-                  setStatsTab('overview')
-                }}
-                className="mt-4 flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-sm font-semibold text-slate-300 active:bg-slate-800"
-              >
-                <BarChart3 className="h-4 w-4" />
-                Dataset statistics
-              </button>
-            </motion.section>
-          </motion.div>
-        )}
-      </AnimatePresence>
       <AnimatePresence>
         {statsTab && <DatasetStats key="dataset-stats" initialTab={statsTab} onClose={() => setStatsTab(null)} />}
       </AnimatePresence>
@@ -230,17 +292,18 @@ function MobileDetailSheet({ onClose }: { onClose: () => void }) {
 
   return (
     <motion.div
-      className="fixed inset-x-0 bottom-0 z-30 overflow-hidden rounded-t-3xl border-t border-slate-700 bg-slate-950 shadow-2xl shadow-black/60 md:hidden"
+      data-mobile-detail-sheet=""
+      className="fixed inset-x-0 bottom-0 z-30 flex flex-col overflow-hidden rounded-t-3xl border-t border-slate-700 bg-slate-950 shadow-2xl shadow-black/60 md:hidden"
       initial={{ y: '100%' }}
       animate={{ y: expanded ? 0 : `${MOBILE_DETAIL_COLLAPSED_OFFSET * 100}%` }}
       exit={{ y: '100%' }}
       transition={{ type: 'spring', stiffness: 320, damping: 34 }}
       style={{ height: `${MOBILE_DETAIL_HEIGHT * 100}dvh`, paddingBottom: 'env(safe-area-inset-bottom)' }}
     >
-      <div className="flex h-8 items-center justify-center">
+      <div className="relative flex shrink-0 items-center justify-center py-1">
         <button
           type="button"
-          className="flex h-8 w-16 touch-none items-center justify-center"
+          className="flex h-11 w-16 touch-none items-center justify-center rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
           aria-label={expanded ? 'Collapse details' : 'Expand details'}
           onClick={() => {
             if (suppressClick.current) {
@@ -257,9 +320,17 @@ function MobileDetailSheet({ onClose }: { onClose: () => void }) {
         >
           <span className="h-1 w-10 rounded-full bg-slate-600" />
         </button>
+        <button
+          type="button"
+          onClick={onClose}
+          className="absolute right-1 top-1 flex h-11 w-11 items-center justify-center rounded-full text-slate-400 transition hover:bg-slate-800 hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
+          aria-label="Close panel"
+        >
+          <X className="h-4 w-4" />
+        </button>
       </div>
-      <div className="h-[calc(100%-2rem)] overflow-y-auto overscroll-contain">
-        <DetailPanel onClose={onClose} />
+      <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
+        <DetailPanel onClose={onClose} showCloseButton={false} />
       </div>
     </motion.div>
   )
@@ -375,7 +446,7 @@ export function GenreDisplaySelect({ className = '' }: { className?: string }) {
             type="button"
             aria-pressed={selected}
             onClick={() => changeGenreDisplay(display)}
-            className={`${toggleButtonClass(selected)} min-w-0 flex-1 justify-center md:flex-none`}
+            className={`${toggleButtonClass(selected)} min-w-0 flex-1 justify-center`}
           >
             {selected && <ToggleIndicator layoutId={`genre-display-indicator-${indicatorId}`} />}
             <span className="relative flex items-center gap-1.5">
@@ -427,7 +498,7 @@ export function TimelineOrderSelect({
             aria-checked={selected}
             tabIndex={selected ? 0 : -1}
             onClick={() => changeOrder(option)}
-            className={`${toggleButtonClass(selected)} min-w-0 flex-1 justify-center whitespace-nowrap md:flex-none`}
+            className={`${toggleButtonClass(selected)} min-w-0 flex-1 justify-center whitespace-nowrap`}
           >
             {selected && <ToggleIndicator layoutId={`timeline-order-indicator-${indicatorId}`} />}
             <span className="relative">{option === 'family' ? 'Family groups' : 'Oldest first'}</span>

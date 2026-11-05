@@ -86,6 +86,19 @@ describe('timeline viewport rendering', () => {
     expect(renderTimeline('genre', 'family', [1700, 2026])).not.toContain('aria-label="Undated genres"')
   })
 
+  it('plots estimated entries normally and explains the soft edges', () => {
+    const data: MusicGraph = {
+      ...graph,
+      nodes: graph.nodes.map((node) => node.id === 'genre:jazz'
+        ? { ...node, period: { start: 1900, estimated: true } } : node),
+    }
+    const markup = renderTimeline('genre', 'oldest-first', [1700, 2026], 'genre:jazz', data)
+    expect(markup).toContain('data-timeline-bar="genre:jazz"')
+    expect(markup).toContain('data-estimated-period="true"')
+    expect(markup).not.toContain('Soft edges indicate estimated dates')
+    expect(markup).not.toContain('data-undated-node')
+  })
+
   it('only renders nearby row details while retaining every keyboard target', () => {
     viewport.verticalViewport = { top: 50, bottom: 80 }
     const markup = renderTimeline('artist', 'oldest-first', [1700, 2026])

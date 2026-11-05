@@ -11,4 +11,10 @@ Graph ID `artist:arsenio-rodriguez`
 
 ## Findings
 
-Supports a person node for the Cuban tres player, composer and bandleader, with descriptions restricted to the documented musical innovations. These specialist essays discuss recordings from particular years, not complete career boundaries; period remains null. Books and discographies linked by the essays were not independently read and are not claimed as checked sources.
+Supports a person node for the Cuban tres player, composer and bandleader, with descriptions restricted to the documented musical innovations. These specialist essays discuss recordings from particular years, not complete career boundaries. Books and discographies linked by the essays were not independently read and are not claimed as checked sources.
+
+## Estimated timeline placement (2026-11-05)
+
+[The biographical account](https://en.wikipedia.org/wiki/Arsenio_Rodr%C3%ADguez)
+reports activity from 1929 to 1970. The period now rounds that to an explicitly
+estimated 1930-1970 career span, independently of his birth date.

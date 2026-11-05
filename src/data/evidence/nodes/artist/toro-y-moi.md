@@ -11,4 +11,11 @@ Graph ID `artist:toro-y-moi`
 
 ## Findings
 
-Person node, not a group merely because the project performs with other musicians. The description concerns the formative recordings, not an exclusive lifelong genre classification. These readings do not establish an exact career boundary; period remains null.
+Person node, not a group merely because the project performs with other musicians. The description concerns the formative recordings, not an exclusive lifelong genre classification. These readings do not establish an exact career boundary.
+
+## Estimated timeline placement (2026-11-05)
+
+[The biographical chronology](https://en.wikipedia.org/wiki/Toro_y_Moi)
+reports activity from 2008. The period now uses an explicitly estimated
+2008-to-present project span, consistent with the 2009 coverage, without dating
+the beginning of all private music-making.

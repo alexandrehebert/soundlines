@@ -58,6 +58,10 @@ export interface Period {
   /** End year; null/absent means "still active". */
   end?: number | null
   precision?: DatePrecision
+  /** Editorial timeline placement rather than verified date boundaries. */
+  estimated?: boolean
+  /** Evidence and limitations of an estimated placement. */
+  estimateNote?: string
 }
 
 export type GenreFamily =

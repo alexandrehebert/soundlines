@@ -36,6 +36,8 @@ describe('timeline order toggle', () => {
       expect(radio).toContain('role="radio"')
       expect(radio).toContain(`aria-checked="${selected}"`)
       expect(radio).toMatch(new RegExp(`tabindex="${selected ? 0 : -1}"`, 'i'))
+      expect(radio).toContain('flex-1 justify-center')
+      expect(radio).not.toContain('md:flex-none')
       if (selected) {
         expect(radio).toContain('border-cyan-500/50 bg-cyan-500/15')
       } else {

@@ -10,4 +10,11 @@ Graph ID `artist:ebo-taylor`
 
 ## Findings
 
-Person node for the Ghanaian musician. The obituary supports the description and identifies his importance to highlife and Afrobeat. Period remains null: the chronology of bands and releases is not converted into an exact start/end of professional activity, nor are birth/death dates used as a career period.
+Person node for the Ghanaian musician. The obituary supports the description and identifies his importance to highlife and Afrobeat. Its chronology does not establish exact professional boundaries.
+
+## Estimated timeline placement (2026-11-05)
+
+The obituary was rechecked. A mid-1950s anchor (1955) estimates early band work
+before the early-1960s London studies; 2025 represents the late Jazz Is Dead album.
+This explicitly estimated career envelope does not use his birth or death as
+automatic career boundaries.

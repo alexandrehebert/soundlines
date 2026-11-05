@@ -67,6 +67,8 @@ describe('history chronology', () => {
     expect(formatEventPeriod({ start: 1940, end: 1949, precision: 'circa' })).toBe('c. 1940 – 1949')
     expect(formatEventPeriod({ start: 1910, end: 1970, precision: 'decade' })).toBe('1910 – 1970 (approx.)')
     expect(formatEventPeriod({ start: 2000 })).toBe('2000 – now')
+    expect(formatEventPeriod({ start: 1800, end: 1850, precision: 'circa', estimated: true }))
+      .toBe('c. 1800 – 1850 (estimated)')
   })
 
   it('keeps undated events separate without inventing dates or losing their filters', () => {

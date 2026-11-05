@@ -15,3 +15,10 @@ Graph ID `genre:andean-folk`
 ## Assessment
 
 Removed the unsupported circa-1900 origin and invented 1915 golden-age/2010 established phases. The scholarly framing treats Andean music as a changing regional umbrella, not a single genre with a common start.
+
+## Estimated timeline placement (2026-11-05)
+
+An explicitly estimated 1500-to-present period now places the umbrella in the
+colonial-era layering discussed by Smithsonian and the Library of Congress.
+This is a contextual anchor, not a shared origin: Indigenous roots predate it.
+No prominence phases have been restored.

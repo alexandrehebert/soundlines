@@ -28,6 +28,16 @@ At tablet widths (640–767px), bottom navigation labels match the Options butto
 14px semibold text. Narrower phones retain compact labels; desktop navigation
 keeps its existing sizing.
 
+On desktop, **Options** sits beside the page selector and opens a dropdown
+containing display and ordering controls; the timeline legend stays visible
+below the header, and the header counts open dataset statistics. History has no
+desktop Options button because it has no controls in that dropdown. On mobile,
+the bottom navigation's **Options** button opens the controls, legend, and
+dataset statistics in a bottom sheet. Click outside or press Escape to close;
+keyboard focus stays inside the open options panel and returns to its trigger on
+close. The mobile detail sheet has its close button in the top-right corner,
+alongside the expand/collapse handle.
+
 ### Music history
 
 The **History** view presents the graph's curated events in chronological order,
@@ -57,8 +67,19 @@ not part of the shared URL.
 
 ### Bar timelines
 
+All current genres, artists, and instruments have timeline periods. Where exact
+boundaries are not established, sourced editorial estimates use
+`period.estimated: true` and an `estimateNote` explaining the evidence and its
+limits. Estimated bars fade from transparent to full strength across their first
+quarter and back to transparent across their last quarter, including open-ended
+periods. The timeline legend includes a faded-bar sample and explains this
+convention. Labels stay crisp, selection and keyboard access are preserved, and
+tooltips and the detail panel explicitly identify estimated dates. Historical
+context anchors for broad traditions are not claims of a single origin year.
+
 Genres, artists, and instruments without a period appear in an **Undated**
-strip above their timeline rather than as bars at invented dates. They remain
+fallback strip above their timeline if future entries lack even a defensible
+estimate. They remain
 searchable, selectable, and connected to related entries; undated genres also
 remain in the bubble map.
 Undated entries use compact, family-colored bars with the timeline's label size,
@@ -229,7 +250,7 @@ as historical claims. The JSON supports adding or revising phases without changi
 
 All data lives in [src/data/graph.json](./src/data/graph.json) as a single property graph:
 
-- **Nodes** (`genre`, `artist`, `instrument`, `label`, `place`, `track`, `scene`, `event`) with stable `type:slug` ids, optional `period` (`start`/`end`/`precision`), `family` lanes, descriptions, and editorial confidence in the overall entry.
+- **Nodes** (`genre`, `artist`, `instrument`, `label`, `place`, `track`, `scene`, `event`) with stable `type:slug` ids, optional `period` (`start`/`end`/`precision`/`estimated`/`estimateNote`), `family` lanes, descriptions, and editorial confidence in the overall entry.
 - **Edges** with a type, optional `period`, `confidence` (`low`/`medium`/`high`), `note`, and source URLs. Lineage edge types (`influences`, `derived_from`, `subgenre_of`, `fusion_of`, `cross_pollination`, `revival_of`) carry an orientation so the JSON reads naturally in both directions (see `LINEAGE_ORIENTATION` in [src/graph/types.ts](./src/graph/types.ts)).
 - Nodes can include `sources` URLs; the detail panel links only the selected node's sources, with each source's website shown beside the link. Relationship citations remain in the graph data rather than relationship lists.
 

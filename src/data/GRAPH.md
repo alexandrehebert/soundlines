@@ -42,7 +42,7 @@ interface GraphNode {
   id: string            // "<type>:<slug>", e.g. "genre:deep-house", "artist:kraftwerk"
   type: 'genre' | 'artist' | 'instrument' | 'label' | 'place' | 'track' | 'scene' | 'event'
   name: string          // Display name, e.g. "Deep house"
-  period?: { start: number; end?: number | null; precision?: 'year' | 'decade' | 'century' | 'circa' } | null // Negative years are BCE
+  period?: { start: number; end?: number | null; precision?: 'year' | 'decade' | 'century' | 'circa'; estimated?: boolean; estimateNote?: string } | null // Negative years are BCE
   description?: string  // 1–3 sentences, editorial and evocative but factual
   family?: GenreFamily | InstrumentFamily  // Timeline lane (required for genres and instruments)
   kind?: 'person' | 'group' | 'collective'   // Artists only
@@ -68,9 +68,17 @@ interface GraphNode {
 | `scene`  | Club, venue, party, radio show, or movement   | Active years                           |
 | `event`  | A turning point in music history (invention, format, broadcast, premiere, festival, law, migration) | When it happened (`start` = `end` for a single date, or a range for a process) |
 
-Supply a period when a defensible date is available; omit it or use `null` when
-it is not. Undated genres, artists, instruments, and events remain searchable
-and appear separately from dated timelines without an invented year.
+Supply a period when a defensible date or broad historical placement is available.
+If boundaries are inferred rather than verified, set `period.estimated: true`
+and supply `period.estimateNote` explaining the source-based rationale and limits.
+Estimates remain normal chronological bars but have broad transparent fades on
+both ends, with explicit estimated labels in tooltips and details. This flag is
+independent of precision, entry confidence and prominence phases: do not invent
+a prominence curve just to place an entry. For regional or oral traditions,
+state when the start is a contextual anchor rather than a common origin.
+All current genre, artist and instrument entries have periods.
+Omit the period or use `null` only if no defensible placement is possible.
+Such entries remain searchable and appear separately from dated timelines.
 Use `year` for a known year, `decade` or `century` for broader precision, and
 `circa` for an approximate date.
 
@@ -658,7 +666,7 @@ patch** in this exact shape:
 - [ ] Every new genre with a well-supported parent or influence connects by lineage;
       preserve independent traditions as roots rather than inventing ancestry
 - [ ] Every new artist has `sources`, `kind`, and at least one edge
-- [ ] Supply a supported `period` where possible; leave it undated rather than inventing one
+- [ ] Supply a supported `period`; flag inferred placements with `estimated: true` and an evidence-based `estimateNote`. Leave undated only when no defensible estimate is possible.
 - [ ] Every artist has an explicit `family` or a `key_artist_of` relationship
       to a genre with a family
 - [ ] Every source is a valid HTTPS URL to a relevant, credible source, and the

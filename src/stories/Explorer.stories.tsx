@@ -148,8 +148,12 @@ export const IndependentOrders: Story = {
       await userEvent.click(within(viewToggle).getByRole('radio', { name: label }))
     }
     const chooseOrder = async (label: string, order: string) => {
-      const toggle = canvas.getByRole('radiogroup', { name: `${label} order` })
+      await userEvent.click(canvas.getByRole('button', { name: /^Timeline options$/ }))
+      const options = await canvas.findByRole('dialog', { name: 'Timeline options' })
+      const toggle = within(options).getByRole('radiogroup', { name: `${label} order` })
       await userEvent.click(within(toggle).getByRole('radio', { name: order }))
+      await userEvent.click(within(options).getByRole('button', { name: 'Close options' }))
+      await waitFor(() => expect(canvas.queryByRole('dialog', { name: 'Timeline options' })).not.toBeInTheDocument())
     }
     const expectOrder = async (view: string, order: string) => {
       await waitFor(() => expect(canvasElement.querySelector(`[data-timeline-view="${view}"]`))
@@ -188,12 +192,67 @@ export const Mobile: Story = {
   globals: { viewport: { value: 'mobile2', isRotated: false } },
 }
 
+export const DesktopOptions: Story = {
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const trigger = canvas.getByRole('button', { name: /^Timeline options$/ })
+    await userEvent.click(trigger)
+    const options = await canvas.findByRole('dialog', { name: 'Timeline options' })
+    expect(trigger).toHaveAttribute('aria-expanded', 'true')
+    expect(within(options).getByRole('group', { name: 'Genre display' })).toBeVisible()
+    expect(within(options).getByRole('radiogroup', { name: 'Genre order' })).toBeVisible()
+    await waitFor(() => {
+      const groups = [
+        within(options).getByRole('group', { name: 'Genre display' }),
+        within(options).getByRole('radiogroup', { name: 'Genre order' }),
+      ]
+      for (const group of groups) {
+        const buttons = Array.from(group.querySelectorAll('button'))
+        expect(Math.abs(buttons[0].getBoundingClientRect().width - buttons[1].getBoundingClientRect().width)).toBeLessThan(1)
+      }
+      const dialogBounds = options.getBoundingClientRect()
+      const firstGroupBounds = groups[0].getBoundingClientRect()
+      const lastGroupBounds = groups[1].getBoundingClientRect()
+      const leftInset = firstGroupBounds.left - dialogBounds.left
+      expect(Math.abs(dialogBounds.right - firstGroupBounds.right - leftInset)).toBeLessThan(1)
+      expect(Math.abs(dialogBounds.bottom - lastGroupBounds.bottom - leftInset)).toBeLessThan(1)
+    })
+    expect(within(options).queryByRole('button', { name: 'Dataset statistics' })).not.toBeInTheDocument()
+    const legend = canvas.getByRole('region', { name: 'Timeline legend' })
+    expect(within(legend).getByText('Editorial phases, not popularity scores')).toBeVisible()
+    expect(within(options).getByText('Editorial phases, not popularity scores')).not.toBeVisible()
+    const close = within(options).getByRole('button', { name: 'Close options' })
+    expect(close).toHaveFocus()
+    await userEvent.tab({ shift: true })
+    expect(within(options).getByRole('radio', { name: 'Family groups' })).toHaveFocus()
+    await userEvent.tab()
+    expect(close).toHaveFocus()
+    await userEvent.keyboard('{Escape}')
+    await waitFor(() => expect(options).not.toBeInTheDocument())
+    expect(trigger).toHaveFocus()
+  },
+}
+
 export const MobileOptions: Story = {
   globals: { viewport: { value: 'mobile2', isRotated: false } },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
     await userEvent.click(canvas.getByRole('button', { name: 'Timeline options and legend' }))
-    await waitFor(() => expect(canvas.getByRole('dialog', { name: 'Timeline options' })).toBeVisible())
+    const options = await canvas.findByRole('dialog', { name: 'Timeline options' })
+    expect(within(options).getByText('Editorial phases, not popularity scores')).toBeVisible()
+    expect(within(options).getByRole('button', { name: 'Dataset statistics' })).toBeVisible()
+  },
+}
+
+export const MobileHistoryOptions: Story = {
+  globals: { viewport: { value: 'mobile2', isRotated: false } },
+  parameters: { explorer: { initialView: 'history' } },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    await userEvent.click(canvas.getByRole('button', { name: 'History options' }))
+    const options = await canvas.findByRole('dialog', { name: 'History options' })
+    await userEvent.click(within(options).getByRole('button', { name: 'Dataset statistics' }))
+    expect(await canvas.findByRole('dialog', { name: 'Dataset statistics' })).toBeVisible()
   },
 }
 
@@ -214,4 +273,34 @@ export const MobileInstrumentOrder: Story = {
 export const MobileDetails: Story = {
   globals: { viewport: { value: 'mobile2', isRotated: false } },
   parameters: { explorer: { initialSelectedId: 'genre:house' } },
+}
+
+export const MobileDetailControls: Story = {
+  globals: { viewport: { value: 'mobile2', isRotated: false } },
+  parameters: { explorer: { initialSelectedId: 'genre:house' } },
+  play: async ({ canvasElement }) => {
+    const sheet = canvasElement.querySelector<HTMLElement>('[data-mobile-detail-sheet]')
+    if (!sheet) throw new Error('Mobile detail sheet is missing')
+    const close = within(sheet).getByRole('button', { name: 'Close panel' })
+    await userEvent.hover(close)
+    await waitFor(() => {
+      const sheetRect = sheet.getBoundingClientRect()
+      const closeRect = close.getBoundingClientRect()
+      expect(closeRect.width).toBeGreaterThanOrEqual(44)
+      expect(closeRect.height).toBeGreaterThanOrEqual(44)
+      const topInset = closeRect.top - sheetRect.top - sheet.clientTop
+      const rightInset = sheetRect.right - closeRect.right
+      expect(topInset).toBeGreaterThan(0)
+      expect(Math.abs(topInset - rightInset)).toBeLessThan(1)
+      const bottomHit = canvasElement.ownerDocument.elementFromPoint(
+        closeRect.left + closeRect.width / 2,
+        closeRect.bottom - 2,
+      )
+      expect(close.contains(bottomHit)).toBe(true)
+    })
+    await userEvent.click(within(sheet).getByRole('button', { name: 'Expand details' }))
+    expect(within(sheet).getByRole('button', { name: 'Collapse details' })).toBeVisible()
+    await userEvent.click(close)
+    await waitFor(() => expect(sheet).not.toBeInTheDocument())
+  },
 }

@@ -88,5 +88,5 @@ export function formatEventPeriod(period: Period): string {
   const prefix = period.precision === 'circa' ? 'c. ' : ''
   const end = period.end == null ? ' – now' : period.end === period.start ? '' : ` – ${period.end}`
   const approximate = period.precision === 'decade' ? ' (approx.)' : ''
-  return `${prefix}${period.start}${end}${approximate}`
+  return `${prefix}${period.start}${end}${approximate}${period.estimated ? ' (estimated)' : ''}`
 }

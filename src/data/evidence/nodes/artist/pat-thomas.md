@@ -10,4 +10,11 @@ Graph ID `artist:pat-thomas`
 
 ## Findings
 
-Person node for the singer, not a node for the entire Kwashibu Area Band. The source supports the highlife, Afrobeat and Afro-pop description. Its examples of professional activity do not establish a precise career beginning or end; period remains null.
+Person node for the singer, not a node for the entire Kwashibu Area Band. The source supports the highlife, Afrobeat and Afro-pop description. Its examples of professional activity do not establish a precise career beginning or end.
+
+## Estimated timeline placement (2026-11-05)
+
+[The biographical account](https://en.wikipedia.org/wiki/Pat_Thomas_(Ghanaian_musician))
+describes the 2015 album as marking 50 years of his career. The period now
+estimates a 1965-to-present span, rather than treating a later band or release
+as an exact debut.

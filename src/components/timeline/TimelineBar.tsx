@@ -10,7 +10,7 @@ import {
   visibilityStops,
 } from '../../graph/phases.ts'
 import { prominenceLabels } from '../../graph/types.ts'
-import { DEFAULT_BUBBLE_ZOOM, SELECTION_BORDER, SELECTION_OUTLINE, timelineBarOpacity } from '../../theme.ts'
+import { DEFAULT_BUBBLE_ZOOM, formatPeriod, SELECTION_BORDER, SELECTION_OUTLINE, timelineBarOpacity } from '../../theme.ts'
 import {
   ABOVE_BAR_LABEL_FONT_SIZE, BAR_H, BAR_LABEL_FONT_SIZE, barBounds, barLabel, barShape, fitBarLabel,
   tailFadeOffset, type BarLabel, type BarLabelMetrics, type BarPosition, type OffscreenIndicator,
@@ -117,6 +117,8 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
   const gradientId = `bar-prominence-${id}`
   const visibilityId = `bar-visibility-${id}`
   const tailId = `bar-tail-${id}`
+  const estimated = bar.node.period?.estimated === true
+  const hasEdgeFade = bar.ended || estimated
   const hasHiddenPhase = visibility.some((stop) => stop.level < 1)
   const isArtist = bar.node.type === 'artist'
   const labels = prominenceLabels(bar.node.type)
@@ -134,11 +136,19 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
       )}
       <defs>
         <clipPath id={clipId}><path d={shape} /></clipPath>
-        {bar.ended && (
+        {hasEdgeFade && (
           <>
             <linearGradient id={`${tailId}-gradient`} gradientUnits="userSpaceOnUse"
               x1={bounds.x} y1={bar.yCenter} x2={bounds.x + bounds.width} y2={bar.yCenter}>
-              <stop offset={tailFadeOffset(bar, scale)} stopColor="#fff" stopOpacity="1" />
+              {estimated ? (
+                <>
+                  <stop offset="0" stopColor="#fff" stopOpacity="0" />
+                  <stop offset="0.25" stopColor="#fff" stopOpacity="1" />
+                  <stop offset="0.75" stopColor="#fff" stopOpacity="1" />
+                </>
+              ) : (
+                <stop offset={tailFadeOffset(bar, scale)} stopColor="#fff" stopOpacity="1" />
+              )}
               <stop offset="1" stopColor="#fff" stopOpacity="0" />
             </linearGradient>
             <mask id={tailId} maskUnits="userSpaceOnUse"
@@ -186,7 +196,7 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
           aria-hidden="true"
         />
       ))}
-      <g mask={bar.ended ? `url(#${tailId})` : undefined}>
+      <g mask={hasEdgeFade ? `url(#${tailId})` : undefined}>
         {/* SVG masks don't affect hit-testing; hidden phases have no hit rect. */}
         <g mask={hasHiddenPhase ? `url(#${visibilityId})` : undefined}
           pointerEvents={hasHiddenPhase ? 'none' : undefined}>
@@ -227,7 +237,7 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
         <text data-bar-label={label.outside ? 'outside' : 'inside'}
           x={label.x} y={bar.yCenter + (label.above ? -14.5 : 4)} textAnchor={label.textAnchor}
           clipPath={label.outside ? undefined : `url(#${clipId})`}
-          fill={label.outside || phases.length > 0 || isArtist ? '#f8fafc' : '#020617'}
+          fill={label.outside || phases.length > 0 || isArtist || estimated ? '#f8fafc' : '#020617'}
           stroke={label.outside ? '#020617' : undefined}
           strokeWidth={label.outside ? 3 : undefined} paintOrder={label.outside ? 'stroke' : undefined}
           fontSize={labelFontSize} fontWeight={700}>
@@ -276,15 +286,21 @@ export function TimelineBar({
   const isSelected = bar.node.id === selectedId
   const revealYear = indicator ? xToYear(scale, indicator.targetX) : undefined
   const offscreenLabel = indicator ? `${bar.node.name} · off-screen to the ${indicator.direction}; activate to reveal` : null
+  const estimatedLabel = bar.node.period?.estimated
+    ? ` · ${formatPeriod(bar.node.period)}; dates are subject to estimation` : ''
+  const prominenceLabel = !offscreenLabel && bar.node.type === 'artist' && !prominencePhases(bar.node, bar.end).length
+    ? ' · prominence not annotated' : ''
+  const estimateNote = bar.node.period?.estimated ? bar.node.period.estimateNote : undefined
   return (
     <g
       data-timeline-bar={bar.node.id}
       className="visualization-item"
       data-node-type={bar.node.type}
+      data-estimated-period={bar.node.period?.estimated || undefined}
       data-offscreen-direction={indicator?.direction}
       role="button"
       tabIndex={0}
-      aria-label={offscreenLabel ?? bar.node.name}
+      aria-label={`${offscreenLabel ?? bar.node.name}${estimatedLabel}`}
       aria-pressed={isSelected}
       opacity={dimmed ? 0.2 : 1}
       style={{ cursor: 'pointer', outline: 'none' }}
@@ -308,8 +324,7 @@ export function TimelineBar({
         <rect x={0} y={bar.yCenter - 18} width={scale.width} height={36}
           fill="none" pointerEvents="none" aria-hidden="true" />
       )}
-      <title>{offscreenLabel ?? `${bar.node.name}${bar.node.type === 'artist' && !prominencePhases(bar.node, bar.end).length
-        ? ' · prominence not annotated' : ''}`}</title>
+      <title>{`${offscreenLabel ?? bar.node.name}${prominenceLabel}${estimatedLabel}${estimateNote ? `. ${estimateNote}` : ''}`}</title>
     </g>
   )
 }

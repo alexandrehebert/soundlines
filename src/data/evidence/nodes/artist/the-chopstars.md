@@ -10,4 +10,10 @@ Graph ID `artist:the-chopstars`
 
 ## Findings
 
-Collective node, rather than a solo performer. NPR establishes a sustained practice of honoring and extending DJ Screw's sound through the collective's own works. The article does not establish exact collective formation or dissolution dates; period remains null.
+Collective node, rather than a solo performer. NPR establishes a sustained practice of honoring and extending DJ Screw's sound through the collective's own works. The article does not establish exact collective formation or dissolution dates.
+
+## Estimated timeline placement (2026-11-05)
+
+[The collective's biographical account](https://en.wikipedia.org/wiki/The_Chopstars)
+reports activity from 2007. The period now estimates 2007-to-present for the
+collective, not the members' earlier individual careers.

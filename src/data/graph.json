@@ -134,7 +134,12 @@
       "type": "artist",
       "name": "Ahn Sook-sun",
       "kind": "person",
-      "period": null,
+      "period": {
+        "start": 1960,
+        "precision": "decade",
+        "estimated": true,
+        "estimateNote": "Approximate career placement around the 1960s: Korea.net described more than 55 years of singing in 2015, and the Korea Times documents theater and hotel performances before 1979. The first professional performance year is not established."
+      },
       "sources": [
         "https://world.kbs.co.kr/service/news_view.htm?Seq_Code=172233&lang=e",
         "https://world.kbs.co.kr/service/contents_view.htm?board_seq=42446&id=&lang=e&menu_cate=culture",
@@ -10346,6 +10351,12 @@
       "type": "genre",
       "name": "Andean folk",
       "family": "latin",
+      "period": {
+        "start": 1500,
+        "precision": "century",
+        "estimated": true,
+        "estimateNote": "Broad placement from the colonial-era layering of Indigenous, European and African musical practices described by the Library of Congress and Smithsonian. Indigenous roots are much older; 1500 is an approximate contextual anchor, not a common origin date for Andean traditions."
+      },
       "description": "A broad catalogue label for diverse musical practices across the Andes, including Indigenous, folkloric, regional, and popular forms that incorporate these elements. It is not one historically bounded genre; regional and community distinctions matter.",
       "sources": [
         "https://www.allmusic.com/style/andean-folk-ma0000002426",
@@ -10782,6 +10793,12 @@
       "type": "genre",
       "name": "Calypso",
       "family": "reggae",
+      "period": {
+        "start": 1800,
+        "precision": "century",
+        "estimated": true,
+        "estimateNote": "Broad nineteenth-century placement for the Afro-Trinidadian Carnival song tradition discussed by NALIS and UWI. Its oral roots predate the name documented around 1900; 1800 is a contextual estimate, not a verified inception year."
+      },
       "description": "A Trinidadian song tradition closely tied to Carnival, shaped by Afro-Trinidadian performance and known for topical lyrics, social commentary, and competitive singing. The word “calypso” is documented around 1900, but the musical tradition predates that label; its exact early chronology remains difficult to establish.",
       "sources": [
         "https://www.allmusic.com/style/calypso-ma0000002494",
@@ -22539,7 +22556,12 @@
       "type": "genre",
       "name": "Gnawa",
       "family": "african",
-      "period": null,
+      "period": {
+        "start": 1500,
+        "precision": "century",
+        "estimated": true,
+        "estimateNote": "UNESCO connects the communities practicing Gnawa with the slave trade dating back at least to the sixteenth century. This is a broad historical placement, not evidence that the musical tradition began in 1500; a single origin remains unknown."
+      },
       "description": "Moroccan musical and ritual tradition practiced by Gnawa communities, combining African-derived practices with Arab-Muslim and Amazigh contexts. Lila ceremonies and public performances use singing, guembri and metal castanets. Community history is connected to the trans-Saharan slave trade, but scholarship cautions that a single origin date cannot be established.",
       "sources": [
         "https://ich.unesco.org/en/RL/gnawa-01170?RL=01170",
@@ -24178,11 +24200,18 @@
       "type": "artist",
       "name": "Junior Murvin",
       "kind": "person",
-      "period": null,
+      "period": {
+        "start": 1965,
+        "end": 2013,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Approximate mid-1960s to 2013 career span, following the biographical chronology of early Junior Soul recordings and later performances. This estimates musical activity, not his disputed birth year."
+      },
       "description": "Jamaican reggae singer best known for the 1976 roots-reggae recording “Police and Thieves,” produced by Lee “Scratch” Perry at Black Ark Studio.",
       "sources": [
         "https://vprecords.com/junior-murvins-1987-version-of-police-and-thieves-makes-its-streaming-debut/",
-        "https://music.apple.com/us/album/police-thieves/1443279502"
+        "https://music.apple.com/us/album/police-thieves/1443279502",
+        "https://en.wikipedia.org/wiki/Junior_Murvin"
       ],
       "family": "reggae"
     },
@@ -24208,7 +24237,12 @@
       "type": "artist",
       "name": "Steve Roach",
       "kind": "person",
-      "period": null,
+      "period": {
+        "start": 1978,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The official biography places the start of his music-making in the late 1970s. 1978 represents that approximate period, rather than treating his first solo album in 1982 as his career beginning."
+      },
       "description": "Electronic and ambient pioneer whose synthesizer music ranges from the suspended harmonies of Structures From Silence to sequencer-driven and tribal-ambient soundworlds.",
       "sources": [
         "https://steveroach.com/about/"
@@ -24219,7 +24253,12 @@
       "type": "artist",
       "name": "DJ Scud",
       "kind": "person",
-      "period": null,
+      "period": {
+        "start": 1995,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Approximate mid-1990s placement from XLR8R's account of the early Ambush and breakcore scene. Neither his first DJ performance nor a definitive retirement date is established; the open end is provisional."
+      },
       "description": "Breakcore DJ and producer behind the Ambush label; his work with Nomex, including “Total Destruction,” helped establish the style’s mixture of hyperkinetic breaks, noise and Jamaican elements.",
       "sources": [
         "https://xlr8r.com/features/breakcore-live-fast/"
@@ -24230,11 +24269,17 @@
       "type": "artist",
       "name": "Toro y Moi",
       "kind": "person",
-      "period": null,
+      "period": {
+        "start": 2008,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Approximate late-2000s project start from the biographical chronology and the 2009 recordings discussed by Consequence and the Guardian. Earlier private music-making is not assigned an exact boundary."
+      },
       "description": "Singer, songwriter and producer Chaz Bundick, whose early Toro y Moi recordings helped define chillwave through hazy synth textures, intimate vocals and groove-oriented pop.",
       "sources": [
         "https://consequence.net/2012/04/album-review-toro-y-moi-june-2009/",
-        "https://www.theguardian.com/music/2009/aug/13/new-band-toro-y-moi"
+        "https://www.theguardian.com/music/2009/aug/13/new-band-toro-y-moi",
+        "https://en.wikipedia.org/wiki/Toro_y_Moi"
       ]
     },
     {
@@ -24242,10 +24287,16 @@
       "type": "artist",
       "name": "The Chopstars",
       "kind": "collective",
-      "period": null,
+      "period": {
+        "start": 2007,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Approximate collective period from the reported 2007 formation and the continuing remix practice documented by NPR. This is not the start of the members' individual careers."
+      },
       "description": "DJ collective extending DJ Screw’s chopped-and-screwed tradition through projects including Purple Moonlight and reworkings of Frank Ocean, Solange and Beyoncé.",
       "sources": [
-        "https://www.npr.org/sections/allsongs/2017/02/27/517502542/moonlight-director-boosts-a-chopped-and-screwed-version-of-its-soundtrack"
+        "https://www.npr.org/sections/allsongs/2017/02/27/517502542/moonlight-director-boosts-a-chopped-and-screwed-version-of-its-soundtrack",
+        "https://en.wikipedia.org/wiki/The_Chopstars"
       ]
     },
     {
@@ -24269,7 +24320,13 @@
       "type": "artist",
       "name": "Ebo Taylor",
       "kind": "person",
-      "period": null,
+      "period": {
+        "start": 1955,
+        "end": 2025,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Approximate span from his early highlife-band work before studying in London in the early 1960s through the 2025 Jazz Is Dead album described in the Guardian obituary. The start is rounded to the mid-1950s; the end reflects late recorded work, not an automatic death-date boundary."
+      },
       "description": "Ghanaian guitarist, arranger, composer and bandleader who developed highlife alongside jazz, funk and Afrobeat influences, recording with his own bands and collaborating with Pat Thomas.",
       "sources": [
         "https://www.theguardian.com/music/2026/feb/09/ebo-taylor-ghanaian-highlife-pioneer-dies-age-90"
@@ -24280,10 +24337,16 @@
       "type": "artist",
       "name": "Pat Thomas",
       "kind": "person",
-      "period": null,
+      "period": {
+        "start": 1965,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Approximate mid-1960s career start: the biographical account describes the 2015 album as marking 50 years of his musical career, alongside Music In Africa's account of his highlife work."
+      },
       "description": "Ghanaian vocalist and songwriter known for his work with Ebo Taylor’s highlife bands, including the Blue Monks, and for recordings spanning highlife, Afrobeat and Afro-pop.",
       "sources": [
-        "https://musicinafrica.net/directory/pat-thomas-and-kwashibu-area-band/"
+        "https://musicinafrica.net/directory/pat-thomas-and-kwashibu-area-band/",
+        "https://en.wikipedia.org/wiki/Pat_Thomas_(Ghanaian_musician)"
       ]
     },
     {
@@ -24291,10 +24354,16 @@
       "type": "artist",
       "name": "Don Caballero",
       "kind": "group",
-      "period": null,
+      "period": {
+        "start": 1991,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Broad career envelope from the reported 1991 formation through the announced 2026 reunion. Includes substantial breaks, notably 2000-2003 and 2009-2026; the continuous bar does not assert uninterrupted activity."
+      },
       "description": "Rock group associated with the formative math-rock scene; Pitchfork identifies Don Caballero alongside Polvo and Ruins as bands that spearheaded the sound.",
       "sources": [
-        "https://pitchfork.com/reviews/albums/hella-hold-your-horse-is-deluxe-reissue/"
+        "https://pitchfork.com/reviews/albums/hella-hold-your-horse-is-deluxe-reissue/",
+        "https://en.wikipedia.org/wiki/Don_Caballero"
       ]
     },
     {
@@ -24302,10 +24371,17 @@
       "type": "artist",
       "name": "Hella",
       "kind": "group",
-      "period": null,
+      "period": {
+        "start": 2001,
+        "end": 2011,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Approximate band period from the reported 2001 formation through the 2011 recording era. These are broad activity boundaries, not exact first-performance or formal dissolution dates."
+      },
       "description": "Sacramento band formed around guitarist Spencer Seim and drummer Zach Hill, whose intensely choreographed, technically intricate music combines noise-rock force with adventurous rhythmic interplay.",
       "sources": [
-        "https://pitchfork.com/reviews/albums/hella-hold-your-horse-is-deluxe-reissue/"
+        "https://pitchfork.com/reviews/albums/hella-hold-your-horse-is-deluxe-reissue/",
+        "https://en.wikipedia.org/wiki/Hella_(band)"
       ]
     },
     {
@@ -24313,11 +24389,18 @@
       "type": "artist",
       "name": "Arsenio Rodríguez",
       "kind": "person",
-      "period": null,
+      "period": {
+        "start": 1930,
+        "end": 1970,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Rounded career placement from the biographical 1929-1970 activity span, supported by the recorded-work history discussed by Timba. The boundary around 1930 is an estimate, not a birth date or an exact debut."
+      },
       "description": "Cuban tres player, composer and bandleader whose son recordings transformed ensemble arranging through piano, conga, multiple horns and innovative melodic bass patterns.",
       "sources": [
         "https://www.timba.com/encyclopedia_pages/the-roots-of-timba-1",
-        "https://www.timba.com/encyclopedia_pages/1945-no-hay-yaya-sin-guayac-n"
+        "https://www.timba.com/encyclopedia_pages/1945-no-hay-yaya-sin-guayac-n",
+        "https://en.wikipedia.org/wiki/Arsenio_Rodr%C3%ADguez"
       ]
     },
     {
@@ -24325,7 +24408,13 @@
       "type": "artist",
       "name": "Pharoah Sanders",
       "kind": "person",
-      "period": null,
+      "period": {
+        "start": 1960,
+        "end": 2022,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Approximate career envelope around the West Coast activity in 1959, New York move in 1961 and late work including Promises in 2021, described by NPR's 2022 obituary. Neither boundary asserts an exact first or final performance."
+      },
       "description": "Tenor and soprano saxophonist whose spirit-driven improvisation, work with John Coltrane and Impulse! recordings such as Karma, Thembi and Black Unity helped shape a lasting jazz tradition.",
       "sources": [
         "https://www.npr.org/2022/09/24/1124925662/pharoah-sanders-dies-at-81-obituary"
@@ -24336,7 +24425,12 @@
       "type": "artist",
       "name": "Terry Francis",
       "kind": "person",
-      "period": null,
+      "period": {
+        "start": 1990,
+        "precision": "decade",
+        "estimated": true,
+        "estimateNote": "Broad 1990s placement for the releases and established DJ practice preceding fabric's opening in 1999. The resident biography supports earlier activity, not an exact 1990 debut."
+      },
       "description": "DJ and producer associated with London’s formative tech-house scene, releases on Wiggle and related labels, and a long-standing residency at fabric.",
       "sources": [
         "https://www.fabriclondon.com/residents/terry-francis"
@@ -24347,10 +24441,16 @@
       "type": "artist",
       "name": "James Ferraro",
       "kind": "person",
-      "period": null,
+      "period": {
+        "start": 2004,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Approximate early-2000s start from the biographical chronology of the Skaters and early solo work. Far Side Virtual in 2011 is a later milestone, not the beginning of his career."
+      },
       "description": "Experimental electronic musician whose 2011 album Far Side Virtual helped establish vaporwave’s utopian-virtual strand through pristine digital sounds drawn from computer and consumer culture.",
       "sources": [
-        "https://daily.bandcamp.com/lists/vaporwave-genres-list"
+        "https://daily.bandcamp.com/lists/vaporwave-genres-list",
+        "https://en.wikipedia.org/wiki/James_Ferraro"
       ]
     }
   ],

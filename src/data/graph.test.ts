@@ -51,17 +51,41 @@ describe('graph.json integrity', () => {
     }
 
     expect(graph.nodes.find((node) => node.id === 'genre:girl-groups')?.period?.end).toBeNull()
-    expect(graph.nodes.find((node) => node.id === 'genre:gnawa')?.period).toBeNull()
+    expect(graph.nodes.find((node) => node.id === 'genre:gnawa')?.period)
+      .toMatchObject({ start: 1500, estimated: true, precision: 'century' })
   })
 
-  it('does not use later career milestones as unsupported artist starts', () => {
+  it('estimates early career context instead of using later milestones as exact starts', () => {
     const ahn = graph.nodes.find((node) => node.id === 'artist:ahn-sook-sun')
     const monroe = graph.nodes.find((node) => node.id === 'artist:bill-monroe')
-    expect(ahn?.period).toBeNull()
+    expect(ahn?.period).toMatchObject({ start: 1960, precision: 'decade', estimated: true })
+    expect(ahn?.period?.estimateNote).toContain('first professional performance year is not established')
     expect(ahn?.description).toContain('before joining the National Changgeuk Company in 1979')
     expect(monroe?.period).toEqual({ start: 1930, end: 1996, precision: 'circa' })
-    expect(createTimelineModel(buildIndex(graph), 'artist').undated.map((node) => node.id))
-      .toContain('artist:ahn-sook-sun')
+    expect(createTimelineModel(buildIndex(graph), 'artist').lanes.flatMap((lane) => lane.bars)
+      .some((bar) => bar.node.id === 'artist:ahn-sook-sun')).toBe(true)
+  })
+
+  it.each(['genre', 'artist', 'instrument'] as const)('places every catalogued %s on its timeline', (view) => {
+    const model = createTimelineModel(buildIndex(graph), view)
+    expect(model.undated).toEqual([])
+    expect(model.lanes.flatMap((lane) => lane.bars).map((bar) => bar.node.id).sort())
+      .toEqual(graph.nodes.filter((node) => node.type === view).map((node) => node.id).sort())
+  })
+
+  it('keeps estimated placements explicit, sourced and explained independently of prominence', () => {
+    const estimates = graph.nodes.filter((node) => node.period?.estimated)
+    expect(estimates).toHaveLength(17)
+    for (const node of graph.nodes) {
+      if (node.period?.estimated !== undefined) expect(typeof node.period.estimated, node.id).toBe('boolean')
+      if (node.period?.estimateNote !== undefined) expect(node.period.estimated, node.id).toBe(true)
+    }
+    for (const node of estimates) {
+      expect(['circa', 'decade', 'century'], node.id).toContain(node.period?.precision)
+      expect(node.period?.estimateNote?.trim().length, node.id).toBeGreaterThan(30)
+      expect(node.sources?.length, node.id).toBeGreaterThan(0)
+      expect(node.phases ?? [], node.id).toEqual([])
+    }
   })
 
   it('uses explicit confidence for instrument phases when a phase curve is justified', () => {
@@ -597,12 +621,7 @@ describe('graph.json integrity', () => {
     const genreModel = createTimelineModel(index, 'genre')
     const hasDatedBar = genreModel.lanes.find((lane) => lane.family === 'african')
       ?.bars.some((bar) => bar.node.id === genreId)
-    if (genre === 'gnawa') {
-      expect(hasDatedBar).toBe(false)
-      expect(genreModel.undated.map((node) => node.id)).toContain(genreId)
-    } else {
-      expect(hasDatedBar).toBe(true)
-    }
+    expect(hasDatedBar).toBe(true)
 
     const artistModel = createTimelineModel(index, 'artist')
     for (const artist of artists) {
