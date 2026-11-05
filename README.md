@@ -33,9 +33,11 @@ containing display and ordering controls; the timeline legend stays visible
 below the header, and the header counts open dataset statistics. History has no
 desktop Options button because it has no controls in that dropdown. On mobile,
 the bottom navigation's **Options** button opens the controls, legend, and
-dataset statistics in a bottom sheet. Click outside or press Escape to close;
-keyboard focus stays inside the open options panel and returns to its trigger on
-close. The mobile detail sheet has its close button in the top-right corner,
+dataset statistics in a bottom sheet. The desktop dropdown leaves the rest of the
+UI interactive and closes on outside interaction or when focus moves away.
+The mobile sheet keeps keyboard focus inside. Click outside or press Escape to
+close; closing from within the panel returns focus to its trigger.
+The mobile detail sheet has its close button in the top-right corner,
 alongside the expand/collapse handle.
 
 ### Music history

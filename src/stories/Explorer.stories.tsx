@@ -199,6 +199,7 @@ export const DesktopOptions: Story = {
     await userEvent.click(trigger)
     const options = await canvas.findByRole('dialog', { name: 'Timeline options' })
     expect(trigger).toHaveAttribute('aria-expanded', 'true')
+    expect(options).toHaveAttribute('aria-modal', 'false')
     expect(within(options).getByRole('group', { name: 'Genre display' })).toBeVisible()
     expect(within(options).getByRole('radiogroup', { name: 'Genre order' })).toBeVisible()
     await waitFor(() => {
@@ -224,12 +225,52 @@ export const DesktopOptions: Story = {
     const close = within(options).getByRole('button', { name: 'Close options' })
     expect(close).toHaveFocus()
     await userEvent.tab({ shift: true })
-    expect(within(options).getByRole('radio', { name: 'Family groups' })).toHaveFocus()
+    expect(trigger).toHaveFocus()
     await userEvent.tab()
     expect(close).toHaveFocus()
     await userEvent.keyboard('{Escape}')
     await waitFor(() => expect(options).not.toBeInTheDocument())
     expect(trigger).toHaveFocus()
+  },
+}
+
+export const DesktopOptionsOutsideInteraction: Story = {
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const trigger = canvas.getByRole('button', { name: /^Timeline options$/ })
+    await userEvent.click(trigger)
+    let options = await canvas.findByRole('dialog', { name: 'Timeline options' })
+    const artists = canvas.getByRole('radio', { name: 'Artists' })
+    const bounds = artists.getBoundingClientRect()
+    const hit = canvasElement.ownerDocument.elementFromPoint(
+      bounds.left + bounds.width / 2, bounds.top + bounds.height / 2,
+    )
+    expect(artists.contains(hit)).toBe(true)
+    await userEvent.click(artists)
+    await waitFor(() => expect(options).not.toBeInTheDocument())
+    expect(artists).toHaveAttribute('aria-checked', 'true')
+
+    await userEvent.click(trigger)
+    options = await canvas.findByRole('dialog', { name: 'Timeline options' })
+    within(options).getByRole('radio', { name: 'Family groups' }).focus()
+    await userEvent.tab()
+    const statistics = canvas.getByRole('button', { name: /genres – show dataset statistics$/ })
+    expect(statistics).toHaveFocus()
+    await waitFor(() => expect(options).not.toBeInTheDocument())
+    expect(statistics).toHaveFocus()
+
+    await userEvent.click(trigger)
+    options = await canvas.findByRole('dialog', { name: 'Timeline options' })
+    const search = canvas.getByRole('combobox')
+    await userEvent.click(search)
+    await waitFor(() => expect(options).not.toBeInTheDocument())
+    expect(search).toHaveFocus()
+
+    await userEvent.click(trigger)
+    options = await canvas.findByRole('dialog', { name: 'Timeline options' })
+    await userEvent.click(statistics)
+    expect(await canvas.findByRole('dialog', { name: 'Dataset statistics' })).toBeVisible()
+    await waitFor(() => expect(options).not.toBeInTheDocument())
   },
 }
 
@@ -239,8 +280,14 @@ export const MobileOptions: Story = {
     const canvas = within(canvasElement)
     await userEvent.click(canvas.getByRole('button', { name: 'Timeline options and legend' }))
     const options = await canvas.findByRole('dialog', { name: 'Timeline options' })
+    expect(options).toHaveAttribute('aria-modal', 'true')
     expect(within(options).getByText('Editorial phases, not popularity scores')).toBeVisible()
-    expect(within(options).getByRole('button', { name: 'Dataset statistics' })).toBeVisible()
+    const statistics = within(options).getByRole('button', { name: 'Dataset statistics' })
+    expect(statistics).toBeVisible()
+    await userEvent.tab({ shift: true })
+    expect(statistics).toHaveFocus()
+    await userEvent.tab()
+    expect(within(options).getByRole('button', { name: 'Close options' })).toHaveFocus()
   },
 }
 

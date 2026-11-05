@@ -26,8 +26,11 @@ export function Explorer() {
   const showingBubbles = view === 'genre' && genreDisplay === 'bubbles'
   const showingHistory = view === 'history'
   const [optionsOpen, setOptionsOpen] = useState(false)
+  const [isDesktop, setIsDesktop] = useState(false)
   const [statsTab, setStatsTab] = useState<StatsTab | null>(null)
   const optionsRef = useRef<HTMLElement>(null)
+  const optionsTriggerRef = useRef<HTMLButtonElement>(null)
+  const restoreOptionsFocusRef = useRef(true)
   const optionsId = useId()
   const stats = useMemo(() => {
     const count = (type: string) => index.graph.nodes.filter((node) => node.type === type).length
@@ -36,24 +39,47 @@ export function Explorer() {
 
   useEffect(() => {
     if (!optionsOpen) return
+    restoreOptionsFocusRef.current = true
     const previous = document.activeElement instanceof HTMLElement ? document.activeElement : null
-    optionsRef.current?.querySelector<HTMLButtonElement>('button')?.focus()
-    return () => previous?.focus()
+    const panel = optionsRef.current
+    panel?.querySelector<HTMLButtonElement>('button')?.focus()
+    return () => {
+      if (restoreOptionsFocusRef.current
+        && (document.activeElement === document.body || panel?.contains(document.activeElement))) previous?.focus()
+    }
   }, [optionsOpen])
 
   useEffect(() => {
-    if (!optionsOpen || !showingHistory) return
     const desktop = window.matchMedia('(min-width: 48rem)')
-    const closeOnDesktop = () => {
-      if (desktop.matches) setOptionsOpen(false)
+    const syncLayout = () => {
+      setIsDesktop(desktop.matches)
+      if (!optionsOpen) return
+      if (desktop.matches && showingHistory) setOptionsOpen(false)
+      else if (!desktop.matches && !optionsRef.current?.contains(document.activeElement)) {
+        optionsRef.current?.querySelector<HTMLButtonElement>('button')?.focus()
+      }
     }
-    desktop.addEventListener('change', closeOnDesktop)
-    closeOnDesktop()
-    return () => desktop.removeEventListener('change', closeOnDesktop)
+    desktop.addEventListener('change', syncLayout)
+    syncLayout()
+    return () => desktop.removeEventListener('change', syncLayout)
   }, [optionsOpen, showingHistory])
 
+  useEffect(() => {
+    if (!optionsOpen || !isDesktop) return
+    const dismissOutside = (event: Event) => {
+      if (event.target instanceof Node
+        && !optionsRef.current?.contains(event.target)
+        && !optionsTriggerRef.current?.contains(event.target)) {
+        restoreOptionsFocusRef.current = false
+        setOptionsOpen(false)
+      }
+    }
+    document.addEventListener('pointerdown', dismissOutside)
+    return () => document.removeEventListener('pointerdown', dismissOutside)
+  }, [optionsOpen, isDesktop])
+
   const trapOptionsFocus = (event: ReactKeyboardEvent<HTMLElement>) => {
-    if (event.key !== 'Tab' || !optionsRef.current) return
+    if (isDesktop || event.key !== 'Tab' || !optionsRef.current) return
     const focusable = [...optionsRef.current.querySelectorAll<HTMLElement>(
       'button:not([disabled]):not([tabindex="-1"]), a[href]',
     )].filter((element) => element.getClientRects().length > 0)
@@ -111,6 +137,7 @@ export function Explorer() {
           <ViewToggle view={view} changeView={changeView} className="hidden md:flex" />
           {!showingHistory && (
             <button
+              ref={optionsTriggerRef}
               type="button"
               onClick={() => setOptionsOpen((open) => !open)}
               className="hidden min-h-9 shrink-0 items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-xs font-semibold text-slate-300 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:flex"
@@ -132,12 +159,12 @@ export function Explorer() {
                 exit={{ opacity: 0 }}
                 onClick={() => setOptionsOpen(false)}
               >
-                <div className="absolute inset-0 bg-black/60 md:fixed md:bg-transparent" aria-hidden="true" />
+                <div className="absolute inset-0 bg-black/60 md:hidden" aria-hidden="true" />
                 <motion.section
                   ref={optionsRef}
                   id={optionsId}
                   role="dialog"
-                  aria-modal="true"
+                  aria-modal={!isDesktop}
                   aria-label={showingHistory ? 'History options' : 'Timeline options'}
                   className="relative max-h-[85dvh] w-full overflow-y-auto rounded-t-3xl border-t border-slate-700 bg-slate-950 px-5 pb-[calc(env(safe-area-inset-bottom)+1.5rem)] pt-3 md:max-h-[calc(100dvh-10rem)] md:rounded-2xl md:border md:p-5 md:shadow-2xl md:shadow-black/60"
                   initial={{ y: 12 }}
@@ -146,6 +173,13 @@ export function Explorer() {
                   transition={{ type: 'spring', stiffness: 320, damping: 34 }}
                   onClick={(event) => event.stopPropagation()}
                   onKeyDown={trapOptionsFocus}
+                  onBlur={(event) => {
+                    if (isDesktop && !event.currentTarget.contains(event.relatedTarget)
+                      && !optionsTriggerRef.current?.contains(event.relatedTarget)) {
+                      restoreOptionsFocusRef.current = false
+                      setOptionsOpen(false)
+                    }
+                  }}
                 >
                   <div className="mb-5 flex items-center justify-between">
                     <div>
