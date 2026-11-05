@@ -1,4 +1,4 @@
-import { BarChart3, BookCheck, Disc3, Guitar, Link2, Users, X, type LucideIcon } from 'lucide-react'
+import { BarChart3, BookCheck, Check, Disc3, Guitar, Link2, Users, X, type LucideIcon } from 'lucide-react'
 import { motion } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent, type ReactNode } from 'react'
 import reviewStatus from '../data/review-status.json'
@@ -167,7 +167,7 @@ export function DatasetStats({
                 aria-controls={`${id}-panel`}
                 tabIndex={selected ? 0 : -1}
                 onClick={() => setTab(value)}
-                className={`flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 ${
+                className={`flex shrink-0 items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70${value === 'review' ? ' ml-auto' : ''} ${
                   selected ? 'bg-cyan-500/15 text-cyan-200 ring-1 ring-cyan-500/50' : 'text-slate-500 hover:text-slate-300'
                 }`}
               >
@@ -337,6 +337,23 @@ function ReviewPanel({ stats }: { stats: ReviewStats }) {
         evidence note in the repository.
         {stats.lastReviewed && <span className="text-slate-600"> Last review {stats.lastReviewed}.</span>}
       </p>
+      <Section title="Progress">
+        <div className="flex items-center gap-3">
+          <div className="min-w-0 flex-1">
+            <ProgressBar label="All entries and links" reviewed={stats.reviewed} total={stats.total} />
+          </div>
+          {stats.total > 0 && stats.reviewed === stats.total ? (
+            <span className="flex shrink-0 items-center gap-1 text-[10px] font-semibold uppercase tracking-wide text-green-400">
+              <Check aria-hidden="true" size={12} />
+              Review finished
+            </span>
+          ) : (
+            <span className="shrink-0 text-[10px] font-semibold uppercase tracking-wide text-slate-500">
+              In progress
+            </span>
+          )}
+        </div>
+      </Section>
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
         <Metric label="Reviewed overall" value={percent(stats.reviewed, stats.total)} hint={`${number.format(stats.reviewed)} / ${number.format(stats.total)}`} />
         <Metric label="Entries reviewed" value={number.format(stats.reviewedNodes)} hint={percent(stats.reviewedNodes, nodeTotal)} />
@@ -347,24 +364,6 @@ function ReviewPanel({ stats }: { stats: ReviewStats }) {
           hint={`${stats.averageSources.pending.toFixed(1)} pending`}
         />
       </div>
-      <Section title="Progress">
-        <ProgressBar label="All entries and links" reviewed={stats.reviewed} total={stats.total} />
-      </Section>
-      <Section title="Entries by type">
-        <ProgressList
-          items={stats.nodeTypes.map((item) => ({ ...item, label: pluralType(item.key), color: NODE_TYPE_COLORS[item.key] }))}
-        />
-      </Section>
-      <Section title="Links by kind">
-        <ProgressList items={stats.linkGroups.map((item) => ({ ...item, label: LINK_GROUPS[item.key].label, color: '#38bdf8' }))} />
-      </Section>
-      {stats.families.length > 0 && (
-        <Section title="Genres & artists by family">
-          <ProgressList
-            items={stats.families.map((item) => ({ ...item, label: FAMILY_LABELS[item.key], color: FAMILY_COLORS[item.key] }))}
-          />
-        </Section>
-      )}
       {stats.reviewedEdges > 0 && (
         <Section title="Confidence after review" subtitle="reviewed links only">
           <StackedBar
@@ -377,6 +376,14 @@ function ReviewPanel({ stats }: { stats: ReviewStats }) {
           />
         </Section>
       )}
+      <Section title="Entries by type">
+        <ProgressList
+          items={stats.nodeTypes.map((item) => ({ ...item, label: pluralType(item.key), color: NODE_TYPE_COLORS[item.key] }))}
+        />
+      </Section>
+      <Section title="Links by kind">
+        <ProgressList items={stats.linkGroups.map((item) => ({ ...item, label: LINK_GROUPS[item.key].label, color: '#38bdf8' }))} />
+      </Section>
       {stats.sourceDomains.length > 0 && (
         <Section title="Most cited in reviewed items">
           <BarList

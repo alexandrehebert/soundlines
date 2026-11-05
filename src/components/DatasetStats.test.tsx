@@ -16,7 +16,7 @@ const graph: MusicGraph = {
   edges: [{ id: 'e1', type: 'key_artist_of', from: 'artist:miles', to: 'genre:jazz', confidence: 'high' }],
 }
 
-function render(initialTab: StatsTab) {
+function render(initialTab: StatsTab, reviewed = ['genre:jazz', 'e1']) {
   const index = buildIndex(graph)
   return renderToStaticMarkup(
     <ExplorerContext.Provider value={{
@@ -26,7 +26,7 @@ function render(initialTab: StatsTab) {
       historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
       viewRange: [1900, 2000], setViewRange: vi.fn(),
     }}>
-      <DatasetStats initialTab={initialTab} onClose={vi.fn()} review={{ reviewed: ['genre:jazz', 'e1'], lastReviewed: '2026-11-03' }} />
+      <DatasetStats initialTab={initialTab} onClose={vi.fn()} review={{ reviewed, lastReviewed: '2026-11-03' }} />
     </ExplorerContext.Provider>,
   )
 }
@@ -37,6 +37,7 @@ describe('DatasetStats', () => {
     expect(markup).toContain('role="dialog"')
     expect(markup).toContain('aria-modal="true"')
     expect(markup).toMatch(/aria-selected="true"[^>]*>.*?Artists/)
+    expect(markup).toMatch(/<button[^>]*id="[^"]+-tab-review"[^>]*class="[^"]*\bml-auto\b[^"]*"/)
     expect(markup).toContain('When artists emerged')
     expect(markup).toContain('Miles Davis')
     expect(markup).toContain('Individuals')
@@ -61,7 +62,16 @@ describe('DatasetStats', () => {
     expect(markup).toContain('Last review 2026-11-03')
     expect(markup).toContain('67%')
     expect(markup).toContain('aria-label="All entries and links: 2 of 3 reviewed"')
-    expect(markup).toContain('Genres &amp; artists by family')
+    expect(markup).toContain('Reviewed overall')
+    expect(markup).not.toContain('Genres &amp; artists by family')
     expect(markup).toContain('Confidence after review')
+    expect(markup.indexOf('aria-label="All entries and links: 2 of 3 reviewed"')).toBeLessThan(markup.indexOf('Reviewed overall'))
+    expect(markup.indexOf('Reviewed overall')).toBeLessThan(markup.indexOf('Confidence after review'))
+    expect(markup).toContain('In progress')
+  })
+
+  it('marks source review finished beside the progress bar when all items are reviewed', () => {
+    const markup = render('review', ['genre:jazz', 'artist:miles', 'e1'])
+    expect(markup).toContain('Review finished')
   })
 })
