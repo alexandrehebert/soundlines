@@ -2,10 +2,15 @@
 
 Graph ID `involved:eroica-premiere-beethoven`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — cross-checked against the reviewed event record
 
-**Relationship** · involved · unrated
+**Relationship** · involved · high
 
 **Graph citations** · [1](<https://www.beethoven.de/en/work/view/5130000000000/Symphony+No.+3+in+E-flat+major+op.+55>)
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The graph cites sources that identify Ludwig van Beethoven as directly participating in or belonging to “Beethoven’s Eroica symphony premieres.” The participant/association is supported at high confidence.

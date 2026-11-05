@@ -2,10 +2,8 @@
 
 Graph ID `key:tabu-ley-congolese-rumba`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · unrated
+**Finding** · UNESCO’s Congolese rumba heritage entry names Tabu Ley Rochereau among the genre’s leading artists. The source page served an anti-bot screen on open, but its indexed record identifies the artist.
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/tabu-ley-rochereau-mn0000015762>), [2](<https://ich.unesco.org/en/RL/congolese-rumba-01711?RL=01711>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source(s)** · https://ich.unesco.org/en/RL/congolese-rumba-01711?RL=01711

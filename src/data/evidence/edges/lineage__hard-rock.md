@@ -1,11 +1,16 @@
-# Hard rock → Rock
+# Hard Rock
 
 Graph ID `lineage:hard-rock`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Relationship** · subgenre_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Hard_rock>)
+**Finding** · Hard rock is a type/style of rock music. This broad parent relation is valid, despite fuzzy borders with heavy metal and blues rock.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.allmusic.com/genre/hard-rock-ma0000002636](https://www.allmusic.com/genre/hard-rock-ma0000002636)
+- [https://dictionary.cambridge.org/dictionary/english/hard-rock?topic=pop-rock-and-soul](https://dictionary.cambridge.org/dictionary/english/hard-rock?topic=pop-rock-and-soul)
+
+**Assessment** · Confidence reflects the strength and scope of this taxonomy/lineage claim. Hybrid roots, regional contexts, and broad umbrella labels remain explicit in the finding.

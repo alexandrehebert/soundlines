@@ -2,10 +2,10 @@
 
 Graph ID `lineage:dream-pop-alternative-rock`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · subgenre_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/dream-pop-ma0000012303>), [2](<https://academic.oup.com/ml/article-abstract/98/4/601/4828180>)
+**Findings** · AllMusic explicitly defines dream pop as an atmospheric subgenre of alternative rock.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/genre/dream-pop-ma0000012303)

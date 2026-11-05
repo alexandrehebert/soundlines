@@ -2,10 +2,10 @@
 
 Graph ID `anthem:la-mer-impressionism-debussy`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/La_mer_(Debussy)>), [2](<https://en.wikipedia.org/wiki/impressionism>)
+**Findings** · Both place *La mer* in the Debussy orchestral repertoire; LA Phil explicitly warns that “Impressionist” is a problematic label for Debussy. Impressionism is a common retrospective association, not an uncontested self-description. High canonical status, moderate genre confidence.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.laphil.com/works/la-mer) · [2](https://www.berliner-philharmoniker.de/en/programme-notes/claude-debussy-la-mer/)

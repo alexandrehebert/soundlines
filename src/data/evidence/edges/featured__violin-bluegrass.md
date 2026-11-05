@@ -1,11 +1,11 @@
-# Violin → Bluegrass
+# Violin Bluegrass
 
 Graph ID `featured:violin-bluegrass`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Violin>)
+**Finding** · Country Music Hall of Fame says Bill Monroe placed fiddle (violin) at the center of bluegrass and details the bluegrass fiddle tradition.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://countrymusichalloffame.org/learn/family-and-community-resources/history-of-country-music-instruments](https://countrymusichalloffame.org/learn/family-and-community-resources/history-of-country-music-instruments).

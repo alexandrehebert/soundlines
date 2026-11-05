@@ -1,11 +1,15 @@
-# Smoke on the Water → Hard rock
+# anthem:smoke-on-the-water-hard-rock-deep-purple
 
 Graph ID `anthem:smoke-on-the-water-hard-rock-deep-purple`
 
-**Review status** · Pending source review
+**Review status** · Source checked; caveats retained (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Smoke_on_the_Water>), [2](<https://en.wikipedia.org/wiki/hard_rock>)
+**Finding** · Sources verify Deep Purple’s recording and hard-rock context; the Rock Hall essay emphasizes the riff’s embedded place in popular culture. Strong canonical claim and reasonable broad anthem label, but evidence is more direct for cultural recognition than for “anthem” wording.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://rockhall.com/inductees/deep-purple/
+- https://americanhistory.si.edu/collections/object/nmah_669500
+- https://rockhall.com/wp-content/uploads/2024/03/Deep_Purple_2016.pdf

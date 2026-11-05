@@ -2,12 +2,15 @@
 
 Graph ID `event:four-seasons-publication`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1725 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Antonio Vivaldi’s concertos later known as The Four Seasons were published in Amsterdam in the collection Il cimento dell’armonia e dell’inventione, Op. 8.
+## Sources checked
 
-**Graph citations** · [1](<https://www.britannica.com/topic/The-Four-Seasons-by-Vivaldi>)
+- [Morgan Library & Museum, Vivaldi Op. 8](https://www.themorgan.org/music-manuscripts-and-printed-music/102126) — Catalogs the Amsterdam edition circa 1725 and identifies the first four concertos as The Four Seasons.
+- [Library of Congress National Recording Registry essay, The Four Seasons](https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/The-Four-Seasons_Furuya.pdf) — Documents the first edition published in Amsterdam in 1725.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 1725 publication date and Amsterdam location are supported. This is publication of the concertos later grouped as The Four Seasons; it does not establish their composition date.

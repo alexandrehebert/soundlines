@@ -1,13 +1,14 @@
-# Ambient → Downtempo
+# lineage:downtempo-ambient
 
 Graph ID `lineage:downtempo-ambient`
 
-**Review status** · Pending source review
+**Review status** · Influence/direction and evidence checked (2026-11-05)
 
-**Relationship** · influences · high
+**Relationship** · influences · medium
 
-**Graph note** · A broad umbrella, not a single tightly bounded genre.
+**Finding** · Ambient texture/approach is documented within chill-out/downbeat contexts, supporting ambient as one input to downtempo. Downtempo is a broad, heterogeneous umbrella and overlaps ambient; high overstates a single directional lineage.
 
-**Graph citations** · [1](<https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/chill-out/56E251BCE9BAD5EF081F738AD3336156>), [2](<https://www.allmusic.com/style/downbeat-ma0000012193>)
+**Sources checked**
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/chill-out/56E251BCE9BAD5EF081F738AD3336156
+- https://www.allmusic.com/style/downbeat-ma0000012193

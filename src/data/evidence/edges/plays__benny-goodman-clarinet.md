@@ -2,10 +2,10 @@
 
 Graph ID `plays:benny-goodman-clarinet`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · plays · medium
+**Relationship** · plays · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Benny_Goodman>)
+**Finding** · Goodman’s official biography documents his clarinet training, professional career, and clarinet performances.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [https://www.bennygoodman.com/biography/](https://www.bennygoodman.com/biography/).

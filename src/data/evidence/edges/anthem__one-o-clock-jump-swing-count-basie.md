@@ -4,6 +4,8 @@ Graph ID `anthem:one-o-clock-jump-swing-count-basie`
 
 **Review status** · 1937 recording and swing significance cross-checked
 
+**Reviewed** · 2026-11-04
+
 **Relationship** · anthem_of · high
 
 **Graph citations** · [1](<https://en.wikipedia.org/wiki/One_O'Clock_Jump>), [2](<https://www.loc.gov/static/programs/national-recording-preservation-board/documents/OneOClockJump.pdf>), [3](<https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/african-americans-on-the-recording-registry/>)

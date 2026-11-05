@@ -2,10 +2,10 @@
 
 Graph ID `featured:euphonium-romantic`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://www.yamahamusiclondon.com/Brass/Euphoniums/>)
+**Finding** · A University of North Texas doctoral dissertation describes the euphonium and close relatives tenorhorn/baryton as playing a major role in late-Romantic brass chamber music, including works by Victor Ewald and Oskar Böhme. Direct scholarly support.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [University of North Texas dissertation](https://digital.library.unt.edu/ark%3A/67531/metadc332434/m2/1/high_res_d/1002714652-Winter.pdf).

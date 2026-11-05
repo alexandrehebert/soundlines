@@ -1,11 +1,14 @@
-# Strawberry Fields Forever → Psychedelic rock
+# anthem:strawberry-fields-forever-psychedelic-rock-the-beatles
 
 Graph ID `anthem:strawberry-fields-forever-psychedelic-rock-the-beatles`
 
-**Review status** · Pending source review
+**Review status** · Source checked; caveats retained (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Strawberry_Fields_Forever>), [2](<https://en.wikipedia.org/wiki/psychedelic_rock>)
+**Finding** · Official Beatles sources classify the song as psychedelic rock/pop and describe it as a psychedelic classic and defining rock-history moment. Exact track and canonical genre claim are secure.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.thebeatles.com/strawberry-fields-forever
+- https://www.thebeatles.com/strawberry-fields-forever-0

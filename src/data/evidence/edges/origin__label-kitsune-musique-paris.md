@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-kitsune-musique-paris`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Findings** · Maison Kitsuné’s own French history says it was founded in Paris in 2002 by Gildas Loaëc and Masaya Kuroki and includes the Kitsuné Musique label ().
 
-**Graph citations** · [1](<https://kitsune.fr/pages/about>), [2](<https://www.discogs.com/label/59346-Kitsun%C3%A9-Music>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://maisonkitsune.com/fr/a-propos-kitsune)

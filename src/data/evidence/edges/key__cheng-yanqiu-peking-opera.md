@@ -2,10 +2,10 @@
 
 Graph ID `key:cheng-yanqiu-peking-opera`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://english.scio.gov.cn/m/chinafacts/2017-04/13/content_40612142.htm>)
+**Findings** · Hong Kong government account identifies Cheng as one of the four great Peking opera dan-role performers and founder of the Cheng school (Hong Kong government); HKU exhibit independently identifies him as a Peking opera singer (HKU).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.info.gov.hk/gia/general/201807/13/P2018071300482.htm) · [2](https://learning.hku.hk/ccch9051/group-35/items/show/14)

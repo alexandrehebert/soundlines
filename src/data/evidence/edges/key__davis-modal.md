@@ -2,10 +2,10 @@
 
 Graph ID `key:davis-modal`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Modal_jazz>)
+**Findings** · The NEA explains Davis’s turn to modes in place of standard chord changes and its relation to *Kind of Blue*; the Davis estate likewise says the album drew on modal structures (,). The category describes a major period/album, not his full career.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.arts.gov/honors/jazz/miles-davis) · [2](https://www.milesdavis.com/albums/kind-of-blue/)

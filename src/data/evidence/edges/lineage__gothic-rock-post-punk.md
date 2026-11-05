@@ -1,11 +1,16 @@
-# Gothic rock → Post-punk
+# Gothic Rock Post Punk
 
 Graph ID `lineage:gothic-rock-post-punk`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · subgenre_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/rock-ma0000002623>), [2](<https://academic.oup.com/book/6294>)
+**Finding** · Music scholarship traces “gothic/goth” as a label for post-punk bands and describes the scene’s roots in punk/post-punk. Gothic rock is a recognized branch within the wider, fragmented post-punk field.
 
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://ddd.uab.cat/pub/artpub/2002/116270/gotstu_a2002v4n1p28iENG.pdf](https://ddd.uab.cat/pub/artpub/2002/116270/gotstu_a2002v4n1p28iENG.pdf)
+- [https://www.cambridge.org/core/books/abs/cambridge-companion-to-krautrock/krautrock-and-british-postpunk/F3E4EE8B0100BE9799D9BC9EC6DA5B8E](https://www.cambridge.org/core/books/abs/cambridge-companion-to-krautrock/krautrock-and-british-postpunk/F3E4EE8B0100BE9799D9BC9EC6DA5B8E)
+
+**Assessment** · Confidence reflects the strength and scope of this taxonomy/lineage claim. Hybrid roots, regional contexts, and broad umbrella labels remain explicit in the finding.

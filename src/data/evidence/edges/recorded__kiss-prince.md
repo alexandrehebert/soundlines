@@ -2,10 +2,10 @@
 
 Graph ID `recorded:kiss-prince`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Kiss_(Prince_song)>)
+**Findings** · Prince’s official discography calls “Kiss” the first single from *Parade* and discusses it as Prince’s hit (); Apple’s track-level listing bills the recording to Prince & The Revolution ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://discography.prince.com/albums/parade) · [2](https://music.apple.com/us/song/260336471)

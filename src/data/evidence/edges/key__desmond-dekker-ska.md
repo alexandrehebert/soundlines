@@ -2,10 +2,10 @@
 
 Graph ID `key:desmond-dekker-ska`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/ska-ma0000002857>)
+**Findings** · ODNB says his debut was recorded in ska style and traces his early ska success; Guardian situates him across ska, rocksteady and reggae.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://academic.oup.com/oxford-dictionary-of-national-biography/reference/63486/reference-article-abstract/579968320) · [2](https://www.theguardian.com/news/2006/may/27/guardianobituaries.artsobituaries)

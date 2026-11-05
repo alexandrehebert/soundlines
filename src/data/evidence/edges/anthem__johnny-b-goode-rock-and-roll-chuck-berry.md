@@ -2,10 +2,10 @@
 
 Graph ID `anthem:johnny-b-goode-rock-and-roll-chuck-berry`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Johnny_B._Goode>), [2](<https://en.wikipedia.org/wiki/rock_and_roll>)
+**Findings** · Hall of Fame calls Berry’s work foundational to rock & roll; his official biography notes “Johnny B. Goode” was selected for the Voyager record as a representation of the genre’s reach. Strong genre and iconic-status evidence.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://rockhall.com/inductees/chuck-berry/) · [2](https://www.chuckberry.com/about)

@@ -1,11 +1,14 @@
-# Perturbator → Darksynth
+# key:perturbator-darksynth
 
 Graph ID `key:perturbator-darksynth`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://riviste.unimi.it/index.php/sss/article/view/14136>), [2](<https://www.allmusic.com/style/synthwave-ma0000013553>), [3](<https://www.allmusic.com/artist/perturbator-mn0002975247>)
+**Finding** · Nuclear Blast directly calls Perturbator a dark-synth artist; AllMusic supports his broader synthwave identity. Dark synth is central to his project, though it remains adjacent to the wider synthwave label.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.nuclearblast.com/pages/perturbator
+- https://www.allmusic.com/artist/perturbator-mn0002975247

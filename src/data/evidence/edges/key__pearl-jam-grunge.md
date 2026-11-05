@@ -2,10 +2,8 @@
 
 Graph ID `key:pearl-jam-grunge`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · medium
+**Finding** · Rock Hall describes Pearl Jam’s beginnings as a “grungy” update on classic rock, directly supporting the association.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Grunge>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://rockhall.com/inductees/pearl-jam/](https://rockhall.com/inductees/pearl-jam/)

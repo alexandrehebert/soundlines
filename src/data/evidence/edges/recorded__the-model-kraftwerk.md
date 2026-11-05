@@ -2,10 +2,10 @@
 
 Graph ID `recorded:the-model-kraftwerk`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Model_(Kraftwerk_song)>)
+**Findings** · Kraftwerk’s official artist channel distributes “The Model”; the album track listing places it on the 1978 *The Man-Machine* (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.youtube.com/watch?v=C3nL7c34VK0) · [2](https://kraftwerk.hu/honlap/lemezek/mm.html)

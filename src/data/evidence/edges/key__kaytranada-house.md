@@ -1,11 +1,17 @@
-# Kaytranada → House
+# Kaytranada House
 
 Graph ID `key:kaytranada-house`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Kaytranada>), [2](<https://www.allmusic.com/artist/kaytranada-mn0003306945>)
+**Finding** · Label and promoter biographies directly describe his house grooves; RA identifies the deep-house rhythms central to his breakthrough. He is a cross-genre producer rather than a house-only specialist, so medium is accurate.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.rcarecords.co.uk/artists/kaytranada](https://www.rcarecords.co.uk/artists/kaytranada)
+- [https://www.insomniac.com/music/artists/kaytranada/](https://www.insomniac.com/music/artists/kaytranada/)
+- [https://ra.co/dj/kaytranada](https://ra.co/dj/kaytranada)
+
+**Assessment** · Confidence applies to the exact artist–genre relation, distinguishing central genre association from period-specific, hybrid, or influence-only evidence.

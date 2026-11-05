@@ -2,10 +2,10 @@
 
 Graph ID `featured:bassoon-romantic`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://www.metmuseum.org/art/collection/search/503528>)
+**Finding** · The same instrument history says the bassoon retained its orchestral role in later styles and that the contrabassoon was added from the Romantic era to reinforce larger orchestras. Direct period evidence.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [Vienna Symphonic Library](https://www.vsl.co.at/academy/woodwinds/bassoon).

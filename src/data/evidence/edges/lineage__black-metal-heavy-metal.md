@@ -1,13 +1,14 @@
-# Black metal → Heavy metal
+# lineage:black-metal-heavy-metal
 
 Graph ID `lineage:black-metal-heavy-metal`
 
-**Review status** · Pending source review
+**Review status** · Source checked; relation scope/type updated where indicated (2026-11-05)
 
-**Relationship** · derived_from · medium
+**Relationship** · subgenre_of · high
 
-**Graph note** · Black metal developed within heavy metal and later formed distinct regional scenes.
+**Finding** · Black metal is conventionally an extreme metal subgenre. A taxonomy edge is clearer than a general historical derivation; the origin story also includes early extreme-metal acts and several scenes.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/black-metal-ma0000002463>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://www.allmusic.com/style/black-metal-ma0000002463
+- https://academic.oup.com/book/62310/chapter/552774038

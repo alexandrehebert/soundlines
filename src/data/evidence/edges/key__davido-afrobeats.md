@@ -2,10 +2,10 @@
 
 Graph ID `key:davido-afrobeats`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/davido-mn0003057150>)
+**Findings** · GRAMMY.com calls Davido a standard-bearer of Afrobeats; Sony Music UK describes him among the most successful Afrobeats artists ever (,). Both support centrality as well as participation.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.grammy.com/news/davido-timeless-interview-2024-grammys-meet-first-time-nominee/) · [2](https://www.sonymusic.co.uk/artist/davido/)

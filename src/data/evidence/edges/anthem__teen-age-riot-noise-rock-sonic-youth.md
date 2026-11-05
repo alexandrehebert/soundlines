@@ -1,11 +1,15 @@
-# Teen Age Riot → Noise rock
+# anthem:teen-age-riot-noise-rock-sonic-youth
 
 Graph ID `anthem:teen-age-riot-noise-rock-sonic-youth`
 
-**Review status** · Pending source review
+**Review status** · Source checked; caveats retained (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Teen_Age_Riot>), [2](<https://en.wikipedia.org/wiki/noise_rock>)
+**Finding** · Sources describe *Daydream Nation* as archetypal noise rock, tag this exact Sonic Youth track noise-rock, and call it a generational statement/indie anthem. Anthem status is scene-specific rather than universal, but link is well supported.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://yalereview.org/article/michael-azerrad-sonic-youth
+- https://www.allmusic.com/song/teen-age-riot-mt0010584159
+- https://www.latimes.com/archives/la-xpm-2007-jul-19-wk-pop19-story.html

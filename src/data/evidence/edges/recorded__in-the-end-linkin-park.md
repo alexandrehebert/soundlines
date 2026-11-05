@@ -2,10 +2,10 @@
 
 Graph ID `recorded:in-the-end-linkin-park`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/In_the_End_(Linkin_Park_song)>)
+**Findings** · Warner’s *Hybrid Theory* edition identifies the album as Linkin Park’s and places “In the End” at track 8 ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://linkinpark.warnerrecords.com/products/hybrid-theory-20th-anniversary-edition-deluxe-2cd)

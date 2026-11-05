@@ -1,11 +1,11 @@
-# Gamelan Madu Sari → Gamelan
+# Gamelan Madu Sari → gamelan
 
 Graph ID `key:gamelan-madu-sari-gamelan`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Gamelan Madu Sari: About](https://www.gamelanmadusari.com/about) — identifies the group as Vancouver’s Javanese gamelan and says it studies and performs traditional music and dance (lines 16–20, 25).
 
-**Graph citations** · [1](<https://www.allmusic.com/style/gamelan-ma0000002610>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+High confidence. The direct ensemble source identifies its Javanese gamelan tradition.

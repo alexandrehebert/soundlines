@@ -2,10 +2,10 @@
 
 Graph ID `recorded:alright-kendrick-lamar`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Alright_(Kendrick_Lamar_song)>)
+**Findings** · Interscope’s *To Pimp a Butterfly* track listing includes “Alright” (label listing); Apple Music identifies the album as Kendrick Lamar’s (album).
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://interscope.com/collections/kendrick-lamar/products/to-pimp-a-butterfly-cd) · [2](https://music.apple.com/us/album/to-pimp-a-butterfly/1440871877?l=en-US)

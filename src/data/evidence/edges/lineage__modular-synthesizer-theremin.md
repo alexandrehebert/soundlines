@@ -1,13 +1,15 @@
-# Theremin → Modular synthesizer
+# lineage:modular-synthesizer-theremin
 
 Graph ID `lineage:modular-synthesizer-theremin`
 
-**Review status** · Pending source review
+**Review status** · Influence/direction and evidence checked (2026-11-05)
 
-**Relationship** · influences · medium
+**Relationship** · influences · low
 
-**Graph note** · Moog began by building theremins before designing voltage-controlled modules.
+**Finding** · The present direction is theremin → modular synthesizer. Sources support Moog’s early theremin work and subsequent synthesizer development, but not a strong causal design lineage from theremin technology to modular synthesis. Reframe as Moog’s career/instrument-making influence and lower confidence.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Modular_synthesizer>)
+**Sources checked**
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+- https://www.metmuseum.org/art/collection/search/739621
+- https://omeka-s.grinnell.edu/s/MusicalInstruments/item/8038
+- https://moogfoundation.org/timeline/

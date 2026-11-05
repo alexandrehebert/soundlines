@@ -2,10 +2,10 @@
 
 Graph ID `key:charlotte-de-witte-techno`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Charlotte_de_Witte>), [2](<https://xlr8r.com/features/20-questions-charlotte-de-witte/>), [3](<https://www.theskinny.co.uk/music/reviews/ep/charlotte-de-witte-heart-of-mine-ep-review>)
+**Findings** · Venue/artist profile describes her as a Belgian techno DJ/producer and leading global techno name (UNVRS); Resident Advisor awards entry and ADE profile corroborate techno-scene standing (RA, ADE). Existing edge is unrated; recommend high.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.unvrs.com/artists/charlotte-de-witte) · [2](https://ra.co/dj/charlottedewitte/biography) · [3](https://www.amsterdam-dance-event.nl/en/artists-speakers/charlotte-de-witte/20340/)

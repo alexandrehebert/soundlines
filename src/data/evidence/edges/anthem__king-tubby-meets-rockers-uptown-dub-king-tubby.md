@@ -2,10 +2,10 @@
 
 Graph ID `anthem:king-tubby-meets-rockers-uptown-dub-king-tubby`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/King_Tubby_Meets_Rockers_Uptown>), [2](<https://en.wikipedia.org/wiki/dub>)
+**Findings** · Both identify the 1976 dub title track and the Augustus Pablo/King Tubby collaboration. Apple describes the album as a dub milestone; track naming is often shortened, while the version is built from Jacob Miller’s “Baby I Love You So” rhythm. Preserve accurate performer/version credits; strong dub/canonical association, “anthem” wording somewhat broader.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://music.apple.com/us/album/king-tubbys-meets-rockers-uptown/1533707240) · [2](https://www.banquetrecords.com/king-tubby/meets-rockers-uptown/CT0085)

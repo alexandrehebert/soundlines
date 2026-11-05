@@ -1,11 +1,14 @@
-# Stoner rock → Hard rock
+# lineage:stoner-rock-hard-rock
 
 Graph ID `lineage:stoner-rock-hard-rock`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
-**Relationship** · fusion_of · high
+**Relationship** · fusion_of · medium
 
-**Graph citations** · [1](<https://www.allmusic.com/style/stoner-metal-ma0000011961>), [2](<https://www.cambridge.org/core/books/abs/cambridge-companion-to-metal-music/get-your-double-kicks-on-route-666/9B2F59F9AEC8DE60D2D7E13FD68FF3D2>)
+**Finding** · The style draws on heavy, blues-based hard rock and long, psychedelic jams, but stoner rock/metal is also frequently classified as a hard-rock or doom-metal subgenre. Medium reflects porous taxonomy rather than a clean two-parent fusion.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/style/ma0000011961
+- https://caml.journals.yorku.ca/index.php/caml/article/download/32101/29347/33362

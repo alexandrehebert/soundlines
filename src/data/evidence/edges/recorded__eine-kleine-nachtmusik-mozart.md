@@ -1,11 +1,9 @@
-# Eine kleine Nachtmusik → Wolfgang Amadeus Mozart
+# Eine kleine Nachtmusik → Mozart (relation corrected)
 
-Graph ID `recorded:eine-kleine-nachtmusik-mozart`
+Former graph ID `recorded:eine-kleine-nachtmusik-mozart`
 
-**Review status** · Pending source review
+**Disposition** · Replaced incorrect `recorded_by` claim with `composed_by:eine-kleine-nachtmusik-mozart`.
 
-**Relationship** · recorded_by · medium
+**Finding** · The Mozarteum catalogue identifies Mozart as the composer; it does not support the claim that he recorded the work.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Eine_kleine_Nachtmusik>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [International Mozarteum Foundation KV catalogue](https://kv.mozarteum.at/en/work/eine-kleine-nachtmusik-a-little-night-music-6049).

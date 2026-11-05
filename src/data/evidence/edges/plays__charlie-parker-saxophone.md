@@ -2,10 +2,10 @@
 
 Graph ID `plays:charlie-parker-saxophone`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · plays · medium
+**Relationship** · plays · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Charlie_Parker>)
+**Finding** · National Park Service documents Parker’s saxophone training and professional saxophonist career.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.nps.gov/people/charlie-parker.htm](https://www.nps.gov/people/charlie-parker.htm).

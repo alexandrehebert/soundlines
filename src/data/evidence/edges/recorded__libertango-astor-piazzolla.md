@@ -2,10 +2,10 @@
 
 Graph ID `recorded:libertango-astor-piazzolla`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Libertango>)
+**Findings** · The BnF sound-recording catalogue names Piazzolla both as composer and as a performer on a *Libertango* recording (); Apple’s *Tangos 4* listing credits him on accordion and as composer ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://catalogue.bnf.fr/ark:/12148/cb39028654j) · [2](https://music.apple.com/us/song/899373897)

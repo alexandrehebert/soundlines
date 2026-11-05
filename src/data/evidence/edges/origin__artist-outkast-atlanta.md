@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-outkast-atlanta`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Atlanta hip-hop duo; the city is central to their formation and early career.
+**Finding** · The New Georgia Encyclopedia says OutKast formed through a meeting at an Atlanta-area high school and identifies them as an Atlanta-based duo. The Rock & Roll Hall of Fame also frames them as Atlanta hip-hop innovators. This directly supports the scene/formation association.
 
-**Graph citations** · [1](<https://www.gpb.org/news/2023/07/19/how-atlanta-became-the-center-of-the-rap-universe>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [New Georgia Encyclopedia](https://www.georgiaencyclopedia.org/articles/arts-culture/outkast/); [Rock & Roll Hall of Fame](https://rockhall.com/inductees/outkast/).

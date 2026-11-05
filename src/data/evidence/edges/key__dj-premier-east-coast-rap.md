@@ -2,10 +2,10 @@
 
 Graph ID `key:dj-premier-east-coast-rap`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/DJ_Premier>), [2](<https://www.allmusic.com/artist/dj-premier-mn0000949298>)
+**Findings** · He is half of Gang Starr and produced landmark records by major East Coast rappers including Nas, Biggie and Jay-Z.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.soundonsound.com/people/dj-premier) · [2](https://www.allmusic.com/artist/dj-premier-mn0000949298/biography)

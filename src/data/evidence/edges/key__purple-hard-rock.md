@@ -1,11 +1,14 @@
-# Deep Purple → Hard rock
+# key:purple-hard-rock
 
 Graph ID `key:purple-hard-rock`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Hard_rock>)
+**Finding** · The Hall of Fame calls them harbingers of hard rock; the band’s biography says it pioneered and defined the genre. Strong central association.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://rockhall.com/inductees/deep-purple/
+- https://deep-purple.com/biography/

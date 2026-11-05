@@ -2,10 +2,10 @@
 
 Graph ID `recorded:hey-good-lookin-hank-williams`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Hey_Good_Lookin'_(song)>)
+**Findings** · Country Music Hall of Fame’s entry includes Williams’s 1952 performance and distinguishes later pop covers; its biographical essay is adapted from the Oxford-published *Encyclopedia of Country Music* (CMHOF); Rock Hall says the country standards cited were written and sung by Williams (Rock Hall).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://countrymusichalloffame.org/hall-of-fame/hank-williams) · [2](https://rockhall.com/inductees/hank-williams/)

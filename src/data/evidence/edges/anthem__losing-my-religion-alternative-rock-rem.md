@@ -2,10 +2,10 @@
 
 Graph ID `anthem:losing-my-religion-alternative-rock-rem`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Losing_My_Religion>), [2](<https://en.wikipedia.org/wiki/alternative_rock>)
+**Findings** · AllMusic directly classifies the track as alternative/indie rock; R.E.M. documents its chart peak and enduring iconic video. Genre and canonical stature are strongly supported.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://remhq.com/news/losing-my-religion-turns-30/) · [2](https://www.allmusic.com/song/losing-my-religion-mt0059748623)

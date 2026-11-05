@@ -2,10 +2,10 @@
 
 Graph ID `recorded:orphan-s-lament-huun-huur-tu`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Huun-Huur-Tu>)
+**Findings** · Shanachie’s official label page identifies *The Orphan’s Lament* as a 1994 Huun-Huur-Tu album and lists its tracks; the album release catalog corroborates (,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.shanachie.com/album/the-orphans-lament-huunhuurtu) · [2](https://musicbrainz.org/release/4392bbb1-be30-4df1-a032-c89304c717fb)

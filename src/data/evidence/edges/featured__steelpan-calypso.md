@@ -2,10 +2,10 @@
 
 Graph ID `featured:steelpan-calypso`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Steelpan>)
+**Finding** · Both Smithsonian resources explicitly identify steel pans/steelbands in calypso, with examples and typical calypso instrumentation.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://folkways-media.si.edu/docs/lesson_plans/FLP10009_trinidad_steelband_short.pdf](https://folkways-media.si.edu/docs/lesson_plans/FLP10009_trinidad_steelband_short.pdf); [https://folkways.si.edu/catch-calypso-beat-put-on-your-feet/music/tools-for-teaching/smithsonian](https://folkways.si.edu/catch-calypso-beat-put-on-your-feet/music/tools-for-teaching/smithsonian).

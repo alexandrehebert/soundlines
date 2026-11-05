@@ -2,10 +2,10 @@
 
 Graph ID `plays:handel-harpsichord`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · plays · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/George_Frideric_Handel>)
+**Findings** · The National Arts Centre biography supports Handel’s study of harpsichord; the opened 1778–83 Britannica biography describes him playing it and taking Hamburg opera’s first harpsichord post. Retain medium because the clearest opened account is period biography and partly anecdotal.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://nac-cna.ca/en/bio/george-frideric-handel) · [2](https://jimclifford.ca/britannica-articles-1/a/EB.4/144850376/912.html)

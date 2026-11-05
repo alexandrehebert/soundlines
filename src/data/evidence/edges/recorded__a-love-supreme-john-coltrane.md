@@ -1,11 +1,11 @@
-# A Love Supreme → John Coltrane
+# John Coltrane recorded *A Love Supreme*
 
 Graph ID `recorded:a-love-supreme-john-coltrane`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/A_Love_Supreme>)
+**Finding** · The Coltrane Home states John recorded it in December 1964 with his quartet and names the session date and studio.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [https://thecoltranehome.org/music-of-the-home/a-love-supreme/](https://thecoltranehome.org/music-of-the-home/a-love-supreme/).

@@ -1,11 +1,3 @@
-# Lil Keke → Chopped and screwed
+# Removed edge: Lil’ Keke — chopped and screwed
 
-Graph ID `key:lil-keke-chopped-and-screwed`
-
-**Review status** · Pending source review
-
-**Relationship** · key_artist_of · medium
-
-**Graph citations** · [1](<https://www.allmusic.com/artist/lil-keke-mn0000826354>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Removed 2026-11-05: evidence supports Screwed Up Click membership and appearances on DJ Screw tapes, not key-artist status in the DJ Screw-originated production technique. See graph-edge-removals.md.

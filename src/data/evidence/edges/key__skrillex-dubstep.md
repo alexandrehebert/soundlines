@@ -2,10 +2,8 @@
 
 Graph ID `key:skrillex-dubstep`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · unrated
+**Finding** · Insomniac’s artist profile explicitly lists dubstep as a Skrillex genre.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Skrillex>), [2](<https://www.allmusic.com/artist/skrillex-mn0002365087>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Source** · [https://www.insomniac.com/music/artists/skrillex/](https://www.insomniac.com/music/artists/skrillex/)

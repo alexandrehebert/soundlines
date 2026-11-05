@@ -1,13 +1,16 @@
-# Grime → UK garage
+# Grime Uk Garage
 
 Graph ID `lineage:grime-uk-garage`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · derived_from · medium
 
-**Graph note** · Grime grew from UK garage and related pirate-radio scenes, while becoming a distinct MC-led style.
+**Finding** · UK garage is identified as a precursor and grime is linked to London’s garage scene, but grime also draws from jungle, dancehall, hip-hop, and sound-system culture. The existing derivation is plausible if qualified as a major lineage rather than a single source.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/grime-ma0000004464>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [https://www.npg.org.uk/collections/about/photographs-collection/featured-collections-archive/garage-and-grime-musicians/](https://www.npg.org.uk/collections/about/photographs-collection/featured-collections-archive/garage-and-grime-musicians/)
+- [https://kclpure.kcl.ac.uk/portal/en/publications/home-sweet-home-thats-where-i-come-from-where-i-got-my-knowledge-/](https://kclpure.kcl.ac.uk/portal/en/publications/home-sweet-home-thats-where-i-come-from-where-i-got-my-knowledge-/)
+
+**Assessment** · Confidence reflects the strength and scope of this taxonomy/lineage claim. Hybrid roots, regional contexts, and broad umbrella labels remain explicit in the finding.

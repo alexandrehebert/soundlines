@@ -1,11 +1,17 @@
-# Kevin Saunderson → Techno
+# Kevin Saunderson Techno
 
 Graph ID `key:kevin-saunderson-techno`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Kevin_Saunderson>), [2](<https://en.wikipedia.org/wiki/Techno>), [3](<https://timeline.carnegiehall.org/genres/detroit-techno>)
+**Finding** · Historical accounts identify Saunderson as one of the Belleville Three, credited with Detroit techno’s rise. Strong association as a foundational producer.
 
-**Citation retrieval** · 1 bulk responses, 1 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/saunderson-kevin](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/saunderson-kevin)
+- [https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/atkins-juan](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/atkins-juan)
+- [https://www.clickondetroit.com/news/local/2024/02/05/belleville-three-metro-detroits-techno-music-pioneers/](https://www.clickondetroit.com/news/local/2024/02/05/belleville-three-metro-detroits-techno-music-pioneers/)
+
+**Assessment** · Confidence applies to the exact artist–genre relation, distinguishing central genre association from period-specific, hybrid, or influence-only evidence.

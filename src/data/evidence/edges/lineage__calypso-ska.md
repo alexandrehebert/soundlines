@@ -1,11 +1,14 @@
-# Calypso → Ska
+# lineage:calypso-ska
 
 Graph ID `lineage:calypso-ska`
 
-**Review status** · Pending source review
+**Review status** · Influence/direction and evidence checked (2026-11-05)
 
-**Relationship** · influences · medium
+**Relationship** · influences · low
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/ska-ma0000002857>)
+**Finding** · Sources support calypso entering Jamaican mento and broader Caribbean exchange; ska’s commonly described foundations are Jamaican mento, R&B, and jazz. Direct calypso → ska is less established than a mediated influence. Existing medium confidence is generous unless note specifies the pathway.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://jis.gov.jm/jamaica/black-history-in-roots-reggae-music/
+- https://www.unesco.org/sites/default/files/medias/fichiers/2023/11/EN_Caribbean%20Cultural%20Resources.pdf

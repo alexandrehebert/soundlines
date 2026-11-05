@@ -1,11 +1,14 @@
-# Linkin Park → Nu metal
+# key:linkin-park-nu-metal
 
 Graph ID `key:linkin-park-nu-metal`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547>)
+**Finding** · GRAMMY explicitly describes Linkin Park’s turn-of-the-millennium sound as nu metal/rap rock; congressional testimony also characterizes *Hybrid Theory* and *Meteora* as nu metal and rap rock. Strong early-career association, though their later catalog broadens substantially.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.grammy.com/news/chester-bennington-death-anniversary-linkin-park-singer-legacy-influence-chris-cornell/
+- https://www.govinfo.gov/content/pkg/CHRG-110hhrg42829/pdf/CHRG-110hhrg42829.pdf

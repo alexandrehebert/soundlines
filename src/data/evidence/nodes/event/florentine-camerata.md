@@ -2,12 +2,15 @@
 
 Graph ID `event:florentine-camerata`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1570–1600 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A circle of Florentine humanists, poets, and musicians explored monodic song and dramatic music in the late sixteenth century. These experiments contributed to the conditions from which early opera emerged; no single inventor accounts for the genre.
+## Sources checked
 
-**Graph citations** · [1](<https://www.britannica.com/art/opera-music>)
+- [Oxford Academic, Opera: A History in Documents](https://academic.oup.com/book/49383/chapter-abstract/422387944) — Describes the Florentine circle of poets, singers, composers, and theorists meeting in the 1570s–80s and situates its work among the multiple precursors to opera.
+- [Rice University, Florentine Camerata overview](https://galileo.library.rice.edu/lib/student_work/florence96/camerata.html) — Institutional teaching resource summarizes the group and its association with early opera.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The approximate late-sixteenth-century period is appropriate. Opera emerged through several experiments and practitioners; avoid presenting the Camerata as a single inventor or as the sole cause. The current description is careful on this point.

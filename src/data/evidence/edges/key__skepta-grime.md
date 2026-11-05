@@ -2,10 +2,8 @@
 
 Graph ID `key:skepta-grime`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · medium
+**Finding** · AllMusic identifies Skepta as a veteran of the UK grime scene.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/grime-ma0000004464>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://www.allmusic.com/artist/skepta-mn0000558243](https://www.allmusic.com/artist/skepta-mn0000558243)

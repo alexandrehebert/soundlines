@@ -1,11 +1,14 @@
-# Lil Wayne → Southern rap
+# key:lil-wayne-southern-rap
 
 Graph ID `key:lil-wayne-southern-rap`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/southern-rap-ma0000002871>)
+**Finding** · AllMusic explicitly classifies Wayne as Southern rap/Dirty South; his New Orleans roots and Cash Money career make the regional identification straightforward.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/artist/lil-wayne-mn0000272689
+- https://www.allmusic.com/artist/lil-wayne-mn0000272689/biography

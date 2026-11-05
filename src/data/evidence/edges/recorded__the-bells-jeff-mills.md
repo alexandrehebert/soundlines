@@ -2,10 +2,10 @@
 
 Graph ID `recorded:the-bells-jeff-mills`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Bells_(Jeff_Mills_song)>)
+**Findings** · Axis Records’ official release page identifies Jeff Mills as the artist, provides “The Bells (Original),” and calls the track an anthem; XLR8R’s interview provides additional production context (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.axisrecords.com/product/the-bells/) · [2](https://xlr8r.com/features/jeff-mills-for-whom-the-bells-toll/)

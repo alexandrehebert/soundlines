@@ -2,10 +2,10 @@
 
 Graph ID `recorded:just-like-heaven-the-cure`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Just_like_Heaven>)
+**Findings** · The Cure’s official release record documents its 1987 single, label, and producer credits (); Apple’s album listing identifies the 1987 *Kiss Me, Kiss Me, Kiss Me* version as The Cure’s ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.thecure.com/release/just-like-heaven/) · [2](https://music.apple.com/us/album/kiss-me-kiss-me-kiss-me/31739756)

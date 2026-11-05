@@ -1,11 +1,15 @@
-# Major League DJz → Kwaito
+# key:major-league-djz-kwaito
 
 Graph ID `key:major-league-djz-kwaito`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit source checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://www.musicinafrica.net/magazine/popular-music-south-africa/>), [2](<https://www.washingtonpost.com/archive/lifestyle/style/1998/07/19/the-phat-of-the-homeland/1ba33e31-5fef-499b-be15-8f45dc4d4b7b>)
+**Finding** · The duo identifies their early crossover as “New Age kwaito,” and label material calls them key figures in that movement. Kwaito is a meaningful early-career/style link, but amapiano is the more defining present association; medium.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://press.atlanticrecords.com/sites/g/files/g2000014001/files/2023-02/NEW_%20Major%20League%20DJZ%20Bio%20-%202022.pdf
+- https://mg.co.za/friday/2022-06-10-major-league-djs-find-a-home-in-amapiano/
+- https://djmag.com/features/major-league-djz-amapianos-global-ambassadors

@@ -2,10 +2,10 @@
 
 Graph ID `recorded:ms-jackson-outkast`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Ms._Jackson_(song)>)
+**Findings** · OutKast’s official channel distributes the track from *Stankonia* under the group’s credit; track metadata names LaFace/Legacy as distributor (,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.youtube.com/watch?v=aUyP1Oz5kf4) · [2](https://music.apple.com/us/album/stankonia/266365499)

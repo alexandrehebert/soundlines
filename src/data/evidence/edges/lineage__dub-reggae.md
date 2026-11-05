@@ -2,12 +2,10 @@
 
 Graph ID `lineage:dub-reggae`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Relationship** · subgenre_of · high
 
-**Graph note** · Dub grew within reggae recording culture and remains closely related to reggae.
+**Findings** · Jamaica Information Service directly calls dub a subgenre of reggae, while noting that dub later extended beyond reggae through studio remix practices.;
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/dub-ma0000002559>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://jis.gov.jm/jamaica/dub/) · [2](https://researchportal.lsbu.ac.uk/en/publications/echoes-from-the-dub-diaspora-3/)

@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-cassius-paris`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Paris-based French Touch duo.
+**Findings** · Universal Music France lists Paris as origin and describes the duo’s Paris/French Touch context; AllMusic lists a Paris formation: Universal Music France, AllMusic.
 
-**Graph citations** · [1](<https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.universalmusic.fr/artistes/20000348861) · [2](https://www.allmusic.com/artist/cassius-mn0000193444/biography)

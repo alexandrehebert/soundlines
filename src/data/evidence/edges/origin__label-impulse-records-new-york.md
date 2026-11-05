@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-impulse-records-new-york`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Founding or primary base location; roster artists have diverse origins.
+**Findings** · Impulse’s official story dates the label’s activity to 1961; Universal’s uDiscover history says the New York-based ABC/Paramount created the jazz imprint (,).
 
-**Graph citations** · [1](<https://www.impulserecords.com/our-story/>), [2](<https://www.impulserecords.com/artist/john-coltrane-0/>)
-
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.impulserecords.com/our-story/) · [2](https://www.udiscovermusic.com/in-depth-features/story-of-impulse-records/)

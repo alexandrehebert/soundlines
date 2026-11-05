@@ -1,11 +1,11 @@
-# Double bass → Bebop
+# Double Bass Bebop
 
 Graph ID `featured:double-bass-bebop`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Double_bass>)
+**Finding** · Oklahoma Historical Society identifies Oscar Pettiford as a double-bass player and bebop pioneer, including his role in bebop combos; direct artist-level support.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://www.okhistory.org/publications/enc/entry?entry=PE024](https://www.okhistory.org/publications/enc/entry?entry=PE024).

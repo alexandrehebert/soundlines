@@ -2,12 +2,10 @@
 
 Graph ID `lineage:britpop-indie-rock`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · subgenre_of · high
+**Relationship** · subgenre_of · medium
 
-**Graph note** · Scene and media formation as well as sound; associated artists differed substantially.
+**Findings** · AllMusic describes Britpop as originating in the UK indie scene, but also as a deliberately commercial movement. Indie rock is a defensible lineage/scene parent, not a strict sound definition for every Britpop act.
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/britpop-ma0000002480>), [2](<https://pure.royalholloway.ac.uk/ws/portalfiles/portal/27633713/2017Luederscphd.pdf>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/style/ma0000002480)

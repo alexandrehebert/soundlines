@@ -2,12 +2,16 @@
 
 Graph ID `event:disco-demolition-night`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1979 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A Chicago White Sox promotion on 12 July 1979 invited fans to bring disco records for destruction; the event ended in a field invasion and forfeit. It became a visible episode in the backlash against disco, not the cause of disco’s decline by itself.
+## Sources checked
 
-**Graph citations** · [1](<https://www.chicagohistory.org/disco-demolition-night/>)
+- [Chicago History Museum, Disco Demolition Night at Comiskey Park](https://www.chicagohistory.org/disco-demolition-night/) — Museum account dates the event to 12 July 1979 and documents the promotion, crowd, field invasion, and forfeit.
+- [PBS American Experience, The War on Disco](https://www.pbs.org/wgbh/americanexperience/features/war-disco-we-rock-n-rollers-will-resistand-we-will-triumph/) — Historical account describes the event as exceeding a baseball promotion and discusses its social context.
+- [Associated Press retrospective](https://apnews.com/article/7391e4906a6093aaefb13729ce100ac3) — Confirms date, record-destruction stunt, riot and forfeiture.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+Event details are established. Its connection to anti-disco backlash is documented, but it did not cause disco’s decline by itself; the node already qualifies the claim appropriately.

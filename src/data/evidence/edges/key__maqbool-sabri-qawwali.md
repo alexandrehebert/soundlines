@@ -1,11 +1,15 @@
-# Maqbool Sabri → Qawwali
+# key:maqbool-sabri-qawwali
 
 Graph ID `key:maqbool-sabri-qawwali`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/qawwali-ma0000002742>)
+**Finding** · Pakistani reporting identifies him as a qawwali icon and co-leader of a major qawwali ensemble; the LA Times described the Sabri Brothers as leading practitioners. Strong direct association.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.dawn.com/news/660679
+- https://www.dawn.com/news/660883/maqbool-ahmed-sabri
+- https://www.latimes.com/archives/la-xpm-1996-11-08-ca-62364-story.html

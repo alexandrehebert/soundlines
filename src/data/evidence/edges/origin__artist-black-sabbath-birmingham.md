@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-black-sabbath-birmingham`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Formed in Aston, Birmingham.
+**Findings** · The band’s history says the group’s story began in Birmingham and names its founding lineup: Black Sabbath official history.
 
-**Graph citations** · [1](<https://visitbirmingham.com/blog/post/it-starts-here-how-the-west-midlands-shaped-global-music/>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.blacksabbath.com/history.html)

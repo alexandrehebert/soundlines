@@ -1,11 +1,15 @@
-# Kraftwerk → Ambient
+# key:kraftwerk-ambient
 
 Graph ID `key:kraftwerk-ambient`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · high
+**Relationship** · influences · medium
 
-**Graph citations** · [1](<https://academic.oup.com/book/44623/chapter-abstract/378621525>), [2](<https://www.allmusic.com/genre/ambient-ma0000002424>), [3](<https://en.wikipedia.org/wiki/Kraftwerk>)
+**Finding** · Kraftwerk contributed to experimental electronic lineages that informed ambient music, but is not primarily classified as an ambient act. Model as influence, not key-artist membership.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/subgenre/ambient-ma0000002424
+- https://www.allmusic.com/artist/kraftwerk-mn0000104714
+- https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/kraftwerk

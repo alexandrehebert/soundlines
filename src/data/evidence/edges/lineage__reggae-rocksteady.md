@@ -1,13 +1,13 @@
-# Reggae → Rocksteady
+# reggae → rocksteady
 
 Graph ID `lineage:reggae-rocksteady`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; derived audit 002)
 
 **Relationship** · derived_from · medium
 
-**Graph note** · Reggae took shape after rocksteady, while retaining links to ska and American R&B.
+**Finding** · Reggae followed rocksteady and ska; rocksteady is one important antecedent, not the sole source.
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/reggae-ma0000002820>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [AllMusic, Reggae overview](https://www.allmusic.com/genre/reggae-ma0000002820)

@@ -1,11 +1,11 @@
-# Archangel → Burial
+# Burial recorded “Archangel”
 
 Graph ID `recorded:archangel-burial`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Archangel_(Burial_song)>)
+**Finding** · Apple identifies Burial as the artist of *Untrue* and explicitly calls “Archangel” its second track; text credits William Emmanuel Bevan as writer/producer.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://music.apple.com/us/album/untrue/893175779](https://music.apple.com/us/album/untrue/893175779).

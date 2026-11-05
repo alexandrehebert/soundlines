@@ -2,10 +2,10 @@
 
 Graph ID `key:el-hadj-mhamed-el-anka-algerian-chaabi`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/El_Hadj_M%27Hamed_El_Anka>), [2](<https://www.npr.org/2008/08/11/93502483/chaabi-the-peoples-music-of-north-africa>)
+**Findings** · BnF states El Anka created a new genre in popular song, chaâbi; NPR’s account situates chaabi in North African/Algerian urban popular music. Strong key-artist relation; retain the Algerian qualifier.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://catalogue.bnf.fr/ark:/12148/cb13954501v) · [2](https://www.npr.org/2008/08/11/93502483/chaabi-the-peoples-music-of-north-africa)

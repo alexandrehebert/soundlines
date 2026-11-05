@@ -2,10 +2,10 @@
 
 Graph ID `plays:bach-pipe-organ`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · plays · medium
+**Relationship** · plays · high
 
-**Graph citations** · [1](<https://www.bach-leipzig.de/de/node/3231>), [2](<https://www.aso.org/composer/detail/johann-sebastian-bach>)
+**Finding** · Polish National Opera documents Bach’s organ training and posts; Washington Bach Consort confirms his court-organist post.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [https://teatrwielki.pl/en/people/johann-sebastian-bach/](https://teatrwielki.pl/en/people/johann-sebastian-bach/); [https://bachconsort.org/about-the-consort/](https://bachconsort.org/about-the-consort/).

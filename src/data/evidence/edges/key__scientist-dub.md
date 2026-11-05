@@ -1,11 +1,14 @@
-# Scientist → Dub
+# key:scientist-dub
 
 Graph ID `key:scientist-dub`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and style/period fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/dub-ma0000002559>)
+**Finding** · Easy Star directly calls Scientist a legendary Jamaican dub producer/engineer; AllMusic calls him a leading 1980s dub artist. Direct and central.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://easystar.com/artists/scientist/
+- https://www.allmusic.com/artist/scientist-mn0000303651

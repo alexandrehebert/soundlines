@@ -2,12 +2,15 @@
 
 Graph ID `event:mtv-launch`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1981 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · MTV began broadcasting in the United States on 1 August 1981. Its continuous music-video programming made visual presentation a central part of pop promotion and reshaped how artists reached audiences.
+## Sources checked
 
-**Graph citations** · [1](<https://www.britannica.com/topic/MTV>)
+- [Smithsonian National Museum of American History, MTV button catalog](https://americanhistory.si.edu/collections/object/nmah_1695158) — Museum record dates MTV’s official U.S. launch to 1 August 1981 and notes its limited initial market.
+- [Syndeo Institute Cable Hall of Fame, MTV](https://syndeoinstitute.org/honorees/past-honorees/2019-honorees/mtv/) — Documents launch date and the first video, “Video Killed the Radio Star.”
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The launch date is confirmed. MTV’s influence on promotion and visual presentation was substantial but varied by market and artist; describe it as a major force, not the start of music video itself.

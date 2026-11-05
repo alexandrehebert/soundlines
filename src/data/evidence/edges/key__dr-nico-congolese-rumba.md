@@ -1,11 +1,11 @@
-# Dr. Nico → Congolese rumba
+# Docteur Nico → Congolese rumba
 
 Graph ID `key:dr-nico-congolese-rumba`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · unrated
+## Sources checked
+- [The New York Review of Books: “The Docteur Is In”](https://www.nybooks.com/online/2026/03/11/the-docteur-is-in-nico-congolese-rumba/) — directly identifies Docteur Nico as a Congolese rumba pioneer (headline and deck).
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/dr-nico-mn0000954985>), [2](<https://www.imageandnarrative.be/inarchive/worldmusica/jessesambawheeler.htm>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+High confidence. Direct, artist-specific source supports the association.

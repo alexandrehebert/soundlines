@@ -2,12 +2,16 @@
 
 Graph ID `event:festac-77`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1977 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The Second World Black and African Festival of Arts and Culture took place in Lagos in 1977, presenting music, dance, theatre, and visual arts from across Africa and its diaspora.
+## Sources checked
 
-**Graph citations** · [1](<https://www.unesco.org/archives/multimedia/document-29>), [2](<https://www.britannica.com/event/FESTAC-77>)
+- [UNESCO Multimedia Archives, FESTAC ’77](https://www.unesco.org/archives/multimedia/document-29) — UNESCO archive documents the Second World Black and African Festival of Arts and Culture in Lagos in 1977.
+- [Northwestern University Libraries finding aid](https://findingaids.library.northwestern.edu/repositories/4/archival_objects/411651) — Archival record dates FESTAC in Lagos from 15 January to 12 February 1977.
+- [Oxford Research Encyclopedia of African History, FESTAC 77: A Black World’s Fair](https://history.ucla.edu/wp-content/uploads/2023/09/Apter_Festac_77_ore.pdf) — Scholarly account contextualizes the festival’s international cultural and political significance.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The date, Lagos setting, and arts scope are supported by archival and scholarly records. “Across Africa and its diaspora” is accurate at a high level; avoid reducing the festival to music alone.

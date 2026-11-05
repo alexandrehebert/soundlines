@@ -2,10 +2,10 @@
 
 Graph ID `key:ewan-pearson-tech-house`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/tech-house-ma0000005003>), [2](<https://www.allmusic.com/artist/ewan-pearson-mn0000155675>), [3](<https://www.allmusic.com/artist/ricardo-villalobos-mn0000472894>)
+**Findings** · AllMusic directly describes Pearson as a British tech-house producer/DJ. The direct career classification supports this more strongly than generic electronic-music tagging.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/artist/ewan-pearson-mn0000155675) · [2](https://ra.co/dj/ewanpearson/biography)

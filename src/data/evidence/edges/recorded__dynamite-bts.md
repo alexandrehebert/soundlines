@@ -2,10 +2,10 @@
 
 Graph ID `recorded:dynamite-bts`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Dynamite_(BTS_song)>)
+**Finding** · Label page identifies “Dynamite” as a BTS single and lists the track.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://ibighit.com/legacy/bts/dynamite-en.html](https://ibighit.com/legacy/bts/dynamite-en.html).

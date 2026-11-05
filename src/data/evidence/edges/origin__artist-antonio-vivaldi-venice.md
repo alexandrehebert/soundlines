@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-antonio-vivaldi-venice`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Born in Venice.
+**Findings** · Chamber Music Society of Lincoln Center identifies Vivaldi as born in Venice; Britannica agrees: CMS, Britannica.
 
-**Graph citations** · [1](<https://www.teatroallascala.org/it/stagione/2022-2023/concerti/invito-alla-scala/viva-vivaldi.html>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://chambermusicsociety.org/about-the-music/composers/antonio-vivaldi) · [2](https://www.britannica.com/biography/Antonio-Vivaldi)

@@ -2,10 +2,10 @@
 
 Graph ID `recorded:sexy-boy-air`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Sexy_Boy_(Air_song)>)
+**Findings** · Apple Music lists “Sexy Boy” on Air’s *Moon Safari*; the album’s release metadata identifies Air as main artist and Warner Music France/Parlophone as label (,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://music.apple.com/us/album/moon-safari/693063670) · [2](https://www.qobuz.com/no-en/album/moon-safari-air/0724384497859)

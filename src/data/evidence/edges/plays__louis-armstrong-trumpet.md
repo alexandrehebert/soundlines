@@ -1,11 +1,11 @@
-# Louis Armstrong → Valved trumpet
+# Louis Armstrong → Trumpet
 
 Graph ID `plays:louis-armstrong-trumpet`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · plays · medium
+**Relationship** · plays · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Louis_Armstrong>)
+**Finding** · The Library of Congress identifies Armstrong as a trumpet and cornet virtuoso and documents his early cornet training. The graph’s trumpet-family wording is supported.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [Library of Congress research guide](https://guides.loc.gov/louis-and-lil/).

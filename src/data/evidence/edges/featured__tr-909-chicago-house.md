@@ -4,6 +4,8 @@ Graph ID `featured:tr-909-chicago-house`
 
 **Review status** · Relationship evidence checked
 
+**Reviewed** · 2026-11-04
+
 **Relationship** · featured_in · high
 
 **Graph note** · Frankie Knuckles recalled using a TR-909, and Derrick May recalled selling him the machine.

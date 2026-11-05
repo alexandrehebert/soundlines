@@ -2,10 +2,10 @@
 
 Graph ID `anthem:i-can-t-be-satisfied-blues-muddy-waters`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/I_Can't_Be_Satisfied>), [2](<https://en.wikipedia.org/wiki/blues>)
+**Findings** · Folkways identifies a Muddy Waters blues collection and includes the track in its accompanying material; the PDF opened but text was not extractable in this tool. PBS page returned 403 and is not relied upon. Keep genre confidence moderate; anthem status lacks direct evidence here.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://folkways-media.si.edu/docs/folkways/artwork/SFW40091.pdf)

@@ -2,10 +2,10 @@
 
 Graph ID `recorded:sing-sing-sing-benny-goodman`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Sing,_Sing,_Sing>)
+**Findings** · Smithsonian NMAH catalogs the 1937 Victor recording as performed by Benny Goodman and his Orchestra and identifies both sides/parts ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.americanhistory.si.edu/collections/object/nmah_1061405)

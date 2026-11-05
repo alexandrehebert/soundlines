@@ -1,11 +1,14 @@
-# Lucinda Williams → Americana
+# key:lucinda-williams-americana
 
 Graph ID `key:lucinda-williams-americana`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/americana-ma0000004415>)
+**Finding** · Opry calls her early self-titled album a touchstone for the Americana movement; ACL describes *Car Wheels on a Gravel Road* as a watershed Americana album. High is well supported.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.opry.com/artists/lucinda-williams
+- https://acltv.com/hall-of-fame/inductee-details/?name=lucinda-williams

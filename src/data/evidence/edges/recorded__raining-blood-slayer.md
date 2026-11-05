@@ -2,10 +2,10 @@
 
 Graph ID `recorded:raining-blood-slayer`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Raining_Blood>)
+**Findings** · Slayer’s official album page lists “Raining Blood” on *Reign in Blood*; the official artist-channel audio credits it to Slayer, and the label’s reissue record corroborates (,,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.slayer.net/products/reign-in-blood) · [2](https://www.youtube.com/watch?v=CkaE237oiwE) · [3](https://www.qobuz.com/us-en/album/reign-in-blood-slayer/hxtfqrq8uuzpa)

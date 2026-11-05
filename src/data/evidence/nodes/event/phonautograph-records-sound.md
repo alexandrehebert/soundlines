@@ -2,12 +2,16 @@
 
 Graph ID `event:phonautograph-records-sound`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1857 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Édouard-Léon Scott de Martinville’s phonautograph traces sound waves onto paper but cannot play them back. Its surviving traces were later reconstructed digitally, making it an early milestone in sound recording.
+## Sources checked
 
-**Graph citations** · [1](<https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/>)
+- [National Park Service, Origins of Sound Recording: The Inventors](https://www.nps.gov/edis/learn/historyculture/origins-of-sound-recording-the-inventors.htm) — Dates Scott de Martinville’s phonautograph invention to 1857 and explains it traced sound without playback.
+- [Smithsonian National Museum of American History, Trilled R’s and the Dawn of Recorded Sound](https://americanhistory.si.edu/explore/stories/trilled-rs-and-dawn-recorded-sound-america) — Describes the phonautograph as a visual trace of sound, not an audible playback medium.
+- [Library of Congress, Phonautograms (c. 1853–61)](https://www.loc.gov/static/programs/national-recording-preservation-board/documents/phonautograms.pdf) — Documents surviving tracings and their later digital playback, while noting the 1857 patent and the history of reconstructions.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The key distinction is that Scott traced sound waves but could not play them back. Some sound traces date to before the 1857 patent; use 1857 as the invention/patent milestone, not necessarily the first ever traced sound.

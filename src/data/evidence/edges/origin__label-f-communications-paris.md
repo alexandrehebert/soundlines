@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-f-communications-paris`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Findings** · Resident Advisor records the 1994 founding by Éric Morand and Laurent Garnier; French music press documents the label’s role in the Paris-centered electronic scene (,).
 
-**Graph citations** · [1](<https://www.discogs.com/label/317-F-Communications>), [2](<https://www.redbullmusicacademy.com/lectures/laurent-garnier/>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://ra.co/labels/327) · [2](https://www.lemonde.fr/culture/article/2020/05/20/les-25-ans-de-la-french-touch-electro_6040202_6040202.html)

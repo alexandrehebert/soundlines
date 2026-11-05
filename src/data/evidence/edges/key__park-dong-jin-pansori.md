@@ -2,10 +2,8 @@
 
 Graph ID `key:park-dong-jin-pansori`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · medium
+**Finding** · Korea JoongAng Daily identifies Park as a master of pansori and documents his complete-cycle performances and teaching.
 
-**Graph citations** · [1](<https://www.koreajoongangdaily.com/korea/a-renowned-performer-of-korean-opera-is-dead/10642931>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [https://www.koreajoongangdaily.com/korea/a-renowned-performer-of-korean-opera-is-dead/10642931](https://www.koreajoongangdaily.com/korea/a-renowned-performer-of-korean-opera-is-dead/10642931)

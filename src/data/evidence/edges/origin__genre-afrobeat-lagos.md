@@ -2,10 +2,10 @@
 
 Graph ID `origin:genre-afrobeat-lagos`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · originated_in · medium
 
-**Graph citations** · [1](<https://eprints-prod-01.library.pitt.edu/10261/>)
+**Finding** · A University of Waterloo thesis credits Fela Kuti with founding Afrobeat and identifies the New Afrika Shrine in Ikeja, Lagos, as the genre’s first nightclub and home. The city is supported as a major cultural/performance center; this source does not establish Lagos as the genre’s sole point of invention, so medium confidence is retained.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [University of Waterloo thesis](https://uwspace.uwaterloo.ca/items/bf256702-1c77-4289-97d6-c937233d0e8c).

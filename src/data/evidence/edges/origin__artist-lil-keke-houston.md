@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-lil-keke-houston`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Houston rapper whose early career was part of the Screwed Up Click network.
+**Findings** · AllMusic identifies Lil’ Keke as an original member of Houston’s Screwed Up Click and a DJ Screw protégé; Apple Music describes his place in Houston rap:,.
 
-**Graph citations** · [1](<https://exhibits.lib.uh.edu/s/exhibits/page/dj-screw>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/artist/lil-keke-mn0000826354) · [2](https://music.apple.com/tj/artist/lil-keke/3195965)

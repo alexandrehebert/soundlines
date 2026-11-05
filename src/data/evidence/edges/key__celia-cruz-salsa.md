@@ -2,10 +2,10 @@
 
 Graph ID `key:celia-cruz-salsa`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/subgenre/salsa-ma0000002840>)
+**Findings** · Smithsonian calls her the Queen of Salsa and credits her popularity with bringing salsa into public view (Smithsonian); Rock & Roll Hall of Fame describes her contribution to salsa’s creation and popularization (Rock Hall, opened lines 31–36). Strong direct fit.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.si.edu/spotlight/latin-music-legends-stamps/celia-cruz) · [2](https://rockhall.com/inductees/celia-cruz/)

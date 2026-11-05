@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-johann-sebastian-bach-leipzig`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Leipzig was a major career and work center; Bach was born in Eisenach.
+**Findings** · Bach-Archiv Leipzig states he arrived in 1723 as Thomaskantor and lived at Thomaskirchhof; the Bach Museum states he served as Thomaskantor for 27 years:,.
 
-**Graph citations** · [1](<https://www.bachmuseumleipzig.de/en/bach-museum-leipzig/bach-leipzig>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.bach-leipzig.de/en/neutral/bach300-300-years-bach-leipzig) · [2](https://www.bachmuseumleipzig.de/en/bach-leipzig)

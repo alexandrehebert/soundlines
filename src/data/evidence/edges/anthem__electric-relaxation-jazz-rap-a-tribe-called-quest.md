@@ -2,10 +2,10 @@
 
 Graph ID `anthem:electric-relaxation-jazz-rap-a-tribe-called-quest`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Electric_Relaxation>), [2](<https://en.wikipedia.org/wiki/jazz_rap>)
+**Findings** · AllMusic’s album review directly calls “Electric Relaxation” a “jazz-rap anthem”; Qobuz verifies the track on the 1993 album. The exact hybrid genre and canonical status are well supported.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/album/MW0000621393) · [2](https://www.qobuz.com/se-en/album/midnight-marauders-a-tribe-called-quest/0012414149022)

@@ -1,13 +1,14 @@
-# Afrobeat → Funk
+# lineage:afrobeat-funk
 
 Graph ID `lineage:afrobeat-funk`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
-**Relationship** · fusion_of · medium
+**Relationship** · fusion_of · high
 
-**Graph note** · Fela Kuti and Tony Allen combined funk with West African rhythmic traditions.
+**Finding** · Scholarship directly names funk among the inputs synthesized into Fela’s Afrobeat, alongside highlife, jazz and Yoruba/African traditions. The component claim is strong, but do not imply funk was the only or equal source.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/afro-beat-ma0000004495>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://journals.ku.edu/amsj/article/download/4463/4304/8061
+- https://www.tandfonline.com/doi/full/10.1080/14725843.2025.2471441

@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-crydamoure-paris`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Findings** · Co-founder Eric Chedeville’s interview with DJ Mag France locates the Crydamoure studio in Neuilly, within the Paris metropolitan scene, and recounts the label’s relationship to Paris electronic music; Resident Advisor identifies it as a French house label (,).
 
-**Graph citations** · [1](<https://www.djmag.com/features/cry-damoure-daft-punk-why-the-label-still-matters>), [2](<https://www.discogs.com/label/681-Crydamoure>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.djmag.fr/dossier-daft-punk-eric-rico-the-wizzard-chedeville-raconte-lepopee-crydamoure/) · [2](https://ra.co/labels/7006)

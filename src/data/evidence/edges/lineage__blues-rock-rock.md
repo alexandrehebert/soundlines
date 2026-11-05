@@ -1,11 +1,13 @@
-# Blues rock → Rock
+# lineage:blues-rock-rock
 
 Graph ID `lineage:blues-rock-rock`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
 **Relationship** · fusion_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Blues_rock>)
+**Finding** · AllMusic describes blues-rock as borrowing the instrumental combo and loud amplification of rock and roll while retaining blues conventions. This supports a hybrid relation, though taxonomy also treats it as a rock subgenre.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/subgenre/blues-rock-ma0000002468

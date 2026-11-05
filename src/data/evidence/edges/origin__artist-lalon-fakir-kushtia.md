@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-lalon-fakir-kushtia`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · low
 
-**Graph note** · Lalon Shah lived and established a Baul song tradition in the Kushtia region.
+**Findings** · Bangladesh’s tourism portal places Lalon’s shrine in Kushtia and says the details of his early life are debated; academic writing likewise documents his shrine and community in Kushtia:,.
 
-**Graph citations** · [1](<https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://beautifulbangladesh.gov.bd/index.php/district-destination/kushtia/landmarks/67) · [2](https://knowledge.uchicago.edu/record/1875/files/Kibreah_uchicago_0330D_14824.pdf)

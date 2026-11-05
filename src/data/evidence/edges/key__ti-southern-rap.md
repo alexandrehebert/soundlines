@@ -1,11 +1,14 @@
-# T.I. → Southern rap
+# Ti → Southern Rap
 
 Graph ID `key:ti-southern-rap`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 030)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/southern-rap-ma0000002871>)
+**Finding** · AllMusic categorizes T.I. under Southern Rap and documents his Atlanta career. Southern rap is a broad regional umbrella.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [AllMusic artist profile](https://www.allmusic.com/artist/p483720)
+- [NPR report](https://www.npr.org/2023/06/16/1193297765/trap-music-southern-hip-hop)

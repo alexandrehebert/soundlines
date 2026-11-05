@@ -2,10 +2,10 @@
 
 Graph ID `key:daft-punk-french-touch`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · high
+**Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/>), [2](<https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208>), [3](<https://www.allmusic.com/artist/daft-punk-mn0000950458>)
+**Findings** · Sony Music France says Daft Punk helped create and popularize the French Touch movement; Universal Music France calls them ambassadors of it (,). This is primarily a 1990s/early-2000s scene attribution, closely overlapping French house; preserve both only if graph definitions distinguish sound/style from movement/scene.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.sonymusic.fr/artist/daft-punk/) · [2](https://universalmusic.fr/artistes/20000251367)

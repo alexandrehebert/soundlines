@@ -1,13 +1,14 @@
-# Breakbeat → Big beat
+# lineage:breakbeat-big-beat
 
 Graph ID `lineage:breakbeat-big-beat`
 
-**Review status** · Pending source review
+**Review status** · Source and direction checked (2026-11-05)
 
-**Relationship** · influences · high
+**Relationship** · influences · medium
 
-**Graph note** · The broken-beat rhythmic vocabulary informed this later scene, though each developed distinct local conventions.
+**Finding** · Cambridge identifies sped-up breakbeats as foundational material for big beat and other dance genres. This supports the source direction as a rhythmic/production input, but “breakbeat” can denote a technique, sample, or broad genre; it does not establish big beat as a strict descendant of one genre.
 
-**Graph citations** · [1](<https://api.pageplace.de/preview/DT0400.9781351568548_A30395611/preview-9781351568548_A30395611.pdf>), [2](<https://www.cambridge.org/core/books/abs/popular-music-genres/funk-the-breakbeat-starts-here/55837A608444BA396211AFFCF319C2C2>), [3](<https://www.allmusic.com/genre/big-beat-ma0000004997>)
+**Sources checked**
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://www.cambridge.org/core/journals/twentieth-century-music/article/breakdowns-and-the-aesthetic-of-disorientation-in-festivalhouse-music/A0748DBC5425594BE0F95D9AE0676DDC
+- https://www.allmusic.com/genre/big-beat-ma0000004997

@@ -2,10 +2,8 @@
 
 Graph ID `key:celia-cruz-son-cubano`
 
-**Review status** · Pending source review
+**Disposition** · Removed (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Reason** · FIU Libraries documents son cubano within Cruz’s broad Cuban dance repertoire, but the evidence does not establish her as a key artist of son cubano. Her stronger documented genre associations are salsa, guaracha and broader Afro-Cuban/Latin music.
 
-**Graph citations** · [1](<https://www.pbs.org/buenavista/music/a_son.html>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [FIU Libraries, Celia Cruz biography](https://latinpop.fiu.edu/discography/Celia_Cruz_Biography.cfm) · [NMAAHC, Celia Cruz](https://nmaahc.si.edu/latinx/celia-cruz)

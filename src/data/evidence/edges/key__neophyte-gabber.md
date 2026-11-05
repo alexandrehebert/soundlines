@@ -1,0 +1,13 @@
+# Neophyte → Gabber
+
+Graph ID `key:neophyte-gabber`
+
+**Review status** · Reviewed — Neophyte in gabber confirmed
+**Reviewed** · 2026-11-03
+
+## Sources checked
+- [Google Arts & Culture / Sound and Vision](https://artsandculture.google.com/story/ugXxcmEzFVvjKQ?hl=en) — DJ Neophyte in Forze DJ Team.
+- Wikipedia (kept).
+
+## Assessment
+Medium confidence is kept because few independent sources were reachable.

@@ -2,10 +2,10 @@
 
 Graph ID `key:aretha-franklin-r-and-b`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/r-b-ma0000002809>)
+**Finding** · Direct: describes Franklin as a well-respected R&B soul singer in the mid-1960s and documents R&B wins (lines 107–109).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.grammy.com/artists/aretha-franklin/11503/](https://www.grammy.com/artists/aretha-franklin/11503/).

@@ -1,13 +1,18 @@
-# San Francisco Bay Area hyphy scene → Oakland
+# Scene San Francisco Bay Area Hyphy Scene Oakland
 
 Graph ID `origin:scene-san-francisco-bay-area-hyphy-scene-oakland`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Scene geography is shared or regional where the description says so.
+**Finding** · KQED’s local reporting ties the hyphy name and early identity to East Oakland artist Keak da Sneak and documents Oakland’s sideshow culture; hyphy nevertheless spread across the Bay Area. [KQED, hyphy and Bay Area hip-hop](https://www.kqed.org/news/11881696/how-hyphy-came-to-define-bay-area-hip-hop); [KQED, Oakland sideshows](https://www.kqed.org/news/10647205/sideshows-the-birth-of-oaklands-hyphy-culture)
 
-**Graph citations** · [1](<https://newsroom.spotify.com/2021-06-23/in-honor-of-black-music-month-spotify-for-the-record-explores-go-go-hyphy-and-chopped-and-screwed/>)
+**Recommendation** · **Medium, retain with geographic caveat.** Oakland is a key early node; the graph’s wider Bay Area scene should not be reduced to Oakland alone.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.kqed.org/news/11881696/how-hyphy-came-to-define-bay-area-hip-hop](https://www.kqed.org/news/11881696/how-hyphy-came-to-define-bay-area-hip-hop)
+- [https://www.kqed.org/news/10647205/sideshows-the-birth-of-oaklands-hyphy-culture](https://www.kqed.org/news/10647205/sideshows-the-birth-of-oaklands-hyphy-culture)
+
+**Assessment** · A local scene, development center, or label address is distinguished from an exclusive genre birthplace. Confidence reflects the actual place relation asserted by the graph.

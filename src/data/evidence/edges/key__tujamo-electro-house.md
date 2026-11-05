@@ -1,11 +1,14 @@
-# Tujamo → Electro house
+# Tujamo → Electro House
 
 Graph ID `key:tujamo-electro-house`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 030)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/tujamo-mn0002643637>)
+**Finding** · DJ Mag directly describes the German producer as an electro-house artist; agency bio corroborates electro house among his styles.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [DJ Mag profile](https://djmag.com/top100djs/2024/59/tujamo)
+- [Burnagement artist profile](https://burnagement.com/en/artist/tujamo)

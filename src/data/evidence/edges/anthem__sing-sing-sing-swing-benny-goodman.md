@@ -4,6 +4,8 @@ Graph ID `anthem:sing-sing-sing-swing-benny-goodman`
 
 **Review status** · Swing repertoire association cross-checked
 
+**Reviewed** · 2026-11-04
+
 **Relationship** · anthem_of · high
 
 ## Evidence review

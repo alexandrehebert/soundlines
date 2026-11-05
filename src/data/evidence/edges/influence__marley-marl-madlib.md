@@ -1,11 +1,14 @@
-# Marley Marl → Madlib
+# influence:marley-marl-madlib
 
 Graph ID `influence:marley-marl-madlib`
 
-**Review status** · Pending source review
+**Review status** · Source and direction checked (2026-11-05)
 
-**Relationship** · influences · unrated
+**Relationship** · influences · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Marley_Marl>), [2](<https://web.archive.org/web/20200805065256/https://www.waxpoetics.com/blog/features/articles/astral-traveler/>)
+**Finding** · Madlib names Marley Marl among the producers who shaped his listening/production background; scholarship places Marley Marl among the foundational producers whose sampling practice informed later beatmakers including Madlib. Keep medium: a real influence within Madlib’s many influences, not an exclusive or documented direct mentorship.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.redbullmusicacademy.com/lectures/madlib-2016/
+- https://repository.uwl.ac.uk/5153/1/Hip-Hop%20Pedagogy%20as%20Production%20Practice%20-%20Reverse-Engineering%20the%20Sample-Based%20Aesthetic.pdf

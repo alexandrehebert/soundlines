@@ -1,11 +1,11 @@
-# Basket Case → Green Day
+# Green Day recorded “Basket Case”
 
 Graph ID `recorded:basket-case-green-day`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Basket_Case_(song)>)
+**Finding** · Official Charts names Green Day as the act for the single and gives Reprise catalogue details; supports credit, though it is chart metadata rather than recording-session documentation.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.officialcharts.com/songs/green-day-basket-case/](https://www.officialcharts.com/songs/green-day-basket-case/).

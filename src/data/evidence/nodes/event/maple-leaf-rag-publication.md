@@ -2,12 +2,16 @@
 
 Graph ID `event:maple-leaf-rag-publication`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1899 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The publication of Scott Joplin’s Maple Leaf Rag helped make ragtime a national sheet-music success and established an enduring model for syncopated piano composition.
+## Sources checked
 
-**Graph citations** · [1](<https://www.loc.gov/item/ihas.200035811/>), [2](<https://www.loc.gov/collections/jazz-music/articles-and-essays/jazz-and-ragtime/>)
+- [Library of Congress Magazine, The Magical Maple Leaf Rag](https://lcm.loc.gov/issue/march-april-2025/the-magical-maple-leaf-rag/) — Discusses the copies Joplin and publisher John Stark deposited at the Library in 1899.
+- [Morgan Library & Museum, Maple Leaf Rag](https://www.themorgan.org/music-manuscripts-and-printed-music/83582) — Catalogs the St. Louis John Stark & Son publication circa 1899.
+- [Smithsonian Folkways liner notes](https://folkways-media.si.edu/docs/folkways/artwork/ARH00420.pdf) — Describes the 1899 publication and subsequent success of the rag.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+The 1899 publication is documented. Its national popularity and influence are well established, but the song did not create ragtime; describe it as a major success within an existing genre.

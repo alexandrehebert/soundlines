@@ -1,11 +1,14 @@
-# Tunde Nightingale → Jùjú
+# Tunde Nightingale → Juju
 
 Graph ID `key:tunde-nightingale-juju`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 030)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://www.allmusic.com/style/juju-ma0000002646>)
+**Finding** · UNESCO’s exhibit identifies Nightingale as a contemporary who helped popularize juju in Lagos; AllMusic’s discography documents his juju-music presence. Evidence is less extensive than for better-documented artists.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [UNESCO REF Museum](https://unesco-ref.org/culture-tradition-and-heritage/)
+- [AllMusic biography](https://www.allmusic.com/artist/tunde-nightingale-mn0001649901/biography)

@@ -4,6 +4,8 @@ Graph ID `featured:tr-909-gabber`
 
 **Review status** · Relationship evidence checked
 
+**Reviewed** · 2026-11-04
+
 **Relationship** · featured_in · medium
 
 **Graph note** · A Dutch broadcast archive documents a DJ demonstrating gabber beats on a TR-909.

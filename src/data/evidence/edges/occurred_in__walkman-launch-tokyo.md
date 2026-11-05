@@ -2,10 +2,15 @@
 
 Graph ID `occurred_in:walkman-launch-tokyo`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — cross-checked against the reviewed event record
 
-**Relationship** · occurred_in · unrated
+**Relationship** · occurred_in · high
 
 **Graph citations** · [1](<https://www.sony.com/en/SonyInfo/CorporateInfo/History/sonyhistory/2-01.html>)
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The cited sources place “Sony launches the Walkman” in Tokyo. The location claim is supported at high confidence.

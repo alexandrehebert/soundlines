@@ -1,11 +1,15 @@
-# Peggy Gou → House
+# key:peggy-gou-house
 
 Graph ID `key:peggy-gou-house`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Peggy_Gou>), [2](<https://www.allmusic.com/artist/peggy-gou-mn0003556247>)
+**Finding** · Her productions and DJ career are firmly within house/techno; Insomniac specifically hears vintage deep-house and post-disco elements. House is valid but broad, and she should not be confined to it.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.insomniac.com/music/artists/Peggy-Gou/
+- https://elpais.com/eps/2024-10-06/peggy-gou-la-dj-del-momento-pero-yo-soy-grande.html
+- https://ra.co/dj/PeggyGou

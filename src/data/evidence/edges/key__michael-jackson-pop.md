@@ -1,11 +1,14 @@
-# Michael Jackson → Pop
+# key:michael-jackson-pop
 
 Graph ID `key:michael-jackson-pop`
 
-**Review status** · Pending source review
+**Review status** · Centrality and genre fit checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/pop-ma0000012254>)
+**Finding** · Rock Hall says Jackson redefined pop and names him the King of Pop. The edge is central despite his work crossing soul, funk, disco, and R&B.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://rockhall.com/inductees/michael-jackson/
+- https://www.allmusic.com/artist/michael-jackson-mn0000467206

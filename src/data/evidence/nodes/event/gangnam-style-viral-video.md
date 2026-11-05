@@ -2,12 +2,15 @@
 
 Graph ID `event:gangnam-style-viral-video`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 2012 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · PSY’s Gangnam Style became an early global music-video phenomenon on YouTube, demonstrating how online video sharing could propel a Korean-language pop song across national markets.
+## Sources checked
 
-**Graph citations** · [1](<https://blog.youtube/culture-and-trends/10-years-of-gangnam-style/>), [2](<https://www.bbc.com/news/technology-20578175>)
+- [YouTube Blog, Gangnam Style’s Billion Views Club anniversary](https://blog.youtube/creator-and-artist-stories/10-years-of-youtubes-billion-views-club-psy-gangnam-style/) — Dates the video’s release to July 2012 and its first-ever one-billion YouTube views to 21 December 2012.
+- [Guinness World Records, first video to receive one billion views](https://www.guinnessworldrecords.com/world-records/107048-first-video-to-receive-one-billion-views) — Confirms the 21 December 2012 view milestone.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+The viral milestone is well documented. If the graph means “global viral phenomenon,” 2012 is appropriate; adding 21 December would refer specifically to the first billion-view milestone, which is one indicator rather than the entire virality event.

@@ -2,10 +2,10 @@
 
 Graph ID `key:dj-shadow-trip-hop`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.cambridge.org/core/journals/organised-sound/article/abs/just-dont-call-it-trip-hop-reconciling-the-bristol-sound-style-with-the-trip-hop-genre/B4944FEFB7C30977DA7CF0CB3AC07465>), [2](<https://napier-repository.worktribe.com/output/4685880>), [3](<https://www.allmusic.com/artist/dj-shadow-mn0000788333>)
+**Findings** · AllMusic explicitly includes Shadow among artists labeled trip-hop, while RA centers instrumental hip-hop. Scholarship notes genre-label disputes; Shadow has reportedly resisted the label.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/genre/trip-hop-ma0000002906) · [2](https://ra.co/dj/djshadow/biography) · [3](https://libraetd.lib.virginia.edu/public_view/q811kk637)

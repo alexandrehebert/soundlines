@@ -1,11 +1,14 @@
-# Nina Kraviz → Techno
+# key:nina-kraviz-techno
 
 Graph ID `key:nina-kraviz-techno`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Nina_Kraviz>), [2](<https://www.allmusic.com/artist/nina-kraviz-mn0002135861>)
+**Finding** · RA explicitly characterizes her music as techno; Insomniac documents her minimal-techno work and international electronic-scene status. She spans house, ambient and experimental sounds, but techno remains a central practice.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://ra.co/dj/ninakraviz
+- https://www.insomniac.com/music/artists/nina-kraviz/

@@ -1,11 +1,9 @@
-# Petit-Pays → Makossa
+# Petit Pays → Makossa
 
 Graph ID `key:petit-pays-makossa`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · unrated
+**Finding** · Music In Africa’s artist profile says Petit Pays sings over makossa and zouk and identifies him as “King of Makossa Love.”
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Petit-Pays>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://musicinafrica.net/node/10667](https://musicinafrica.net/node/10667)

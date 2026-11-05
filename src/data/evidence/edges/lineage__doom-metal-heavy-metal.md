@@ -2,12 +2,10 @@
 
 Graph ID `lineage:doom-metal-heavy-metal`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Relationship** · subgenre_of · high
 
-**Graph note** · Doom is a recognized heavy-metal subgenre with strong early Black Sabbath influence.
+**Findings** · DDEX identifies Doom Metal as a form/subgenre of Metal, the broad heavy-metal family; scholarly metal studies likewise place doom within heavy metal’s lineages. The graph’s “heavy metal” parent is a reasonable label for DDEX’s broader Metal node.;
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/doom-metal-ma0000004496>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://service.ddex.net/dd/DD-AVS-CURRENT/dd/ddex_DoomMetal.html) · [2](https://caml.journals.yorku.ca/index.php/caml/article/download/32101/29347/33362)

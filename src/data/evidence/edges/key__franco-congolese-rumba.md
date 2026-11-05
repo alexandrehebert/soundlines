@@ -2,10 +2,10 @@
 
 Graph ID `key:franco-congolese-rumba`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/franco-mn0000159406>), [2](<https://www.imageandnarrative.be/inarchive/worldmusica/jessesambawheeler.htm>)
+**Findings** · Sources describe Franco as a towering Congolese rumba figure, founder/leader of OK Jazz and creator of the odemba rhythm. Strong, career-defining association within a collaborative Congolese tradition.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.karakosproductions.com/sonodisc/artist/franco-le-t-p-ok-jazz/en/) · [2](https://www.allmusic.com/artist/franco-mn0000159406) · [3](https://libres.uncg.edu/ir/wcu/f/Grice2011.pdf)

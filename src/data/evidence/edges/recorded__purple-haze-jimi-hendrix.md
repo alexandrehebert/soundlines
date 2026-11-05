@@ -2,10 +2,10 @@
 
 Graph ID `recorded:purple-haze-jimi-hendrix`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Purple_Haze>)
+**Findings** · The official Hendrix site documents the Experience’s studio sessions and final mix for the single; Rock Hall describes “Purple Haze” as one of the Jimi Hendrix Experience’s classic singles (,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.jimihendrix.com/encyclopedia/?cat=studio-recordings) · [2](https://rockhall.com/inductees/jimi-hendrix-experience/)

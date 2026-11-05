@@ -2,10 +2,10 @@
 
 Graph ID `plays:ali-akbar-khan-sarod`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · plays · high
 
-**Graph citations** · [1](<https://www.arts.gov/honors/heritage/ali-akbar-khan>), [2](<https://aliakbarkhan.com/the-maestro/>)
+**Finding** · NEA biography says he was directed toward the sarod and describes it; Sangeet Natak Akademi calls him a master of the sarod.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [National Endowment for the Arts](https://www.arts.gov/honors/heritage/ali-akbar-khan); [Sangeet Natak Akademi](https://sangeetnatak.gov.in/public/uploads/awardees/docs/1741249256_Ali%20Akbar%20Khan.pdf).

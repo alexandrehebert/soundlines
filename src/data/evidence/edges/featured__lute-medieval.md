@@ -2,10 +2,10 @@
 
 Graph ID `featured:lute-medieval`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Lute>)
+**Findings** · Medieval lute use is supported; the Case source distinguishes the plectrum-played, usually monophonic medieval instrument from later finger-plucked polyphonic lute practice. Avoid projecting the later Renaissance solo repertoire backward.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://caslabs.case.edu/medren/medieval-instruments/lute-medieval/) · [2](https://omeka-s.grinnell.edu/s/MusicalInstruments/item/650)

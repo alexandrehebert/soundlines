@@ -2,10 +2,10 @@
 
 Graph ID `recorded:sweet-home-chicago-robert-johnson`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Sweet_Home_Chicago>)
+**Findings** · The Blues Foundation’s award record identifies “Sweet Home Chicago” as Robert Johnson’s 1936 Vocalion recording, names him on vocal and guitar, and gives the 1936 San Antonio session and 1937 release ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.blues.org/award-search/sweet-home-chicago-has-become-an)

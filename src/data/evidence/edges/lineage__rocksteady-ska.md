@@ -1,13 +1,13 @@
-# Rocksteady → Ska
+# rocksteady → ska
 
 Graph ID `lineage:rocksteady-ska`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; derived audit 002)
 
-**Relationship** · derived_from · medium
+**Relationship** · derived_from · high
 
-**Graph note** · Rocksteady emerged from ska in Jamaica in the mid-1960s.
+**Finding** · Rocksteady developed out of Jamaican ska in the mid-1960s.
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/rocksteady-ma0000002830>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [AllMusic, Rocksteady overview](https://www.allmusic.com/style/rocksteady-ma0000002830)

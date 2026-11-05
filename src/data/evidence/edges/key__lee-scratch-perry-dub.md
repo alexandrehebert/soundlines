@@ -1,11 +1,15 @@
-# Lee “Scratch” Perry → Dub
+# key:lee-scratch-perry-dub
 
 Graph ID `key:lee-scratch-perry-dub`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/dub-ma0000002559>)
+**Finding** · Jamaica’s government source names Perry as one of dub’s pioneers; his production catalog is central to dub’s development. A defining artist-producer association.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://jis.gov.jm/jamaica/dub/
+- https://jis.gov.jm/jamaica/legendary-reggae-music-born-in-jamaica/
+- https://www.vprecords.com/artist/lee-scratch-perry/

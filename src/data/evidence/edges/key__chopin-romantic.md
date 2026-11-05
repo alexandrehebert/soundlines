@@ -2,10 +2,10 @@
 
 Graph ID `key:chopin-romantic`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Romantic_music>)
+**Findings** · Deutsche Grammophon identifies Chopin as an early Romantic composer (DG); PBS places him in the Romantic Era (PBS). Larousse adds nuance that his musical spirit retained classical qualities while he lived “in full Romanticism” (Larousse). Period attribution is robust.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.deutschegrammophon.com/en/composers/frederic-chopin) · [2](https://www.pbs.org/frontlineworld/frontlineworld/stories/poland503/chopin.html) · [3](https://www.larousse.fr/encyclopedie/personnage/Fr%C3%A9d%C3%A9ric_Chopin/113503)

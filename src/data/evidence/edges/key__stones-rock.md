@@ -2,12 +2,8 @@
 
 Graph ID `key:stones-rock`
 
-**Review status** · Reviewed — confirmed; upgraded to high
-**Reviewed** · 2026-11-03
+**Review status** · Source-checked; high confidence
 
-## Sources checked
-- [Rock & Roll Hall of Fame, The Rolling Stones](https://rockhall.com/inductees/rolling-stones/) — 60-plus-year career of “swaggering rock”.
-- [Rock & Roll Hall of Fame, The Who](https://rockhall.com/inductees/who/) essay — Beatles, Stones, Who revolutionized rock & roll.
+**Finding** · Rock Hall’s artist biography supports the group’s foundational rock classification. Removed unrelated Who and generic Wikipedia citations from this edge.
 
-## Assessment
-Directly supported. Raised to high.
+**Source(s)** · https://rockhall.com/inductees/rolling-stones/

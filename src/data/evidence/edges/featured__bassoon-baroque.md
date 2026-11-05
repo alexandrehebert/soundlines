@@ -2,10 +2,10 @@
 
 Graph ID `featured:bassoon-baroque`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://www.metmuseum.org/art/collection/search/503660>)
+**Finding** · The Metropolitan Museum of Art states that the bassoon was important in Baroque continuo playing. This directly supports the period association.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [The Met collection record](https://www.metmuseum.org/art/collection/search/503660).

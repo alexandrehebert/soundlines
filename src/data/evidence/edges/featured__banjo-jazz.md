@@ -1,11 +1,11 @@
-# Banjo → Jazz
+# Banjo Jazz
 
 Graph ID `featured:banjo-jazz`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Banjo>)
+**Finding** · LOC states that banjos were popular in 1920s jazz bands and ideal for leading rhythm sections.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [https://blogs.loc.gov/music/2024/07/playing-tenor-eddie-condons-journey-to-the-guitar/](https://blogs.loc.gov/music/2024/07/playing-tenor-eddie-condons-journey-to-the-guitar/).

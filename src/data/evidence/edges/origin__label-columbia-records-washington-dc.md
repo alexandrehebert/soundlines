@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-columbia-records-washington-dc`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · high
 
-**Graph note** · Corporate origin. Columbia's manufacturing history involved Bridgeport, Connecticut; that factory location is not the label's founding place.
+**Findings** · The Library of Congress timeline says Columbia Phonograph was organized in 1888 as a Mid-Atlantic franchise; Tim Brooks’s record-industry history documents the company’s early corporate origin and subsequent locations (,). Later manufacturing in Bridgeport should not be mistaken for the founding office.
 
-**Graph citations** · [1](<https://rme.rilm.org/articles/ers00100/1.0/ers00100>), [2](<https://timbrooks.net/PDFs/colhist02.pdf>), [3](<https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/north-american-phonograph-company/>)
-
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.loc.gov/static/managed-content/uploads/sites/6/2017/02/recorded_sound_timeline-2013.pdf) · [2](https://timbrooks.net/PDFs/colhist02.pdf)

@@ -2,10 +2,10 @@
 
 Graph ID `anthem:chega-de-saudade-bossa-nova-joao-gilberto`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Chega_de_Saudade_(song)>), [2](<https://en.wikipedia.org/wiki/bossa_nova>)
+**Finding** · Brazil’s Senate news agency says João Gilberto’s July 1958 recording formally marked bossa nova’s birth. This supports the song’s landmark status, while acknowledging that earlier recordings and precursors are part of the history.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Source** · [Agência Senado](https://www12.senado.leg.br/noticias/materias/2008/08/01/gravacao-de-chega-de-saudade-marca-o-nascimento-da-bossa-nova).

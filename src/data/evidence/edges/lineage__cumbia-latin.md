@@ -2,12 +2,10 @@
 
 Graph ID `lineage:cumbia-latin`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · subgenre_of · medium
 
-**Graph note** · Placed under the broad Latin umbrella; cumbia has distinct Colombian roots and regional histories.
+**Findings** · DDEX locates cumbia within Colombian traditional music; Duke University Press describes its northern Colombian roots and spread throughout Latin America. Latin is appropriate as a regional umbrella, while Colombian/Caribbean tradition is the more direct cultural parent.;;
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/latin-ma0000002692>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://service.ddex.net/dd/DD-AVS-CURRENT/dd/ddex_Cumbia.html) · [2](https://www.dukeupress.edu/cumbia) · [3](https://service.ddex.net/dd/DD-AVS-CURRENT/dd/ddex_Latin.html)

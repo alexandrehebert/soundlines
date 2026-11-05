@@ -1,11 +1,15 @@
-# Prince → Pop
+# key:prince-pop
 
 Graph ID `key:prince-pop`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/pop-ma0000012254>)
+**Finding** · The Rock Hall explicitly includes pop among the styles Prince transformed; reference coverage calls him a pop superstar. Pop is broad, but his central influence on popular music makes the parent association secure.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://rockhall.com/inductees/prince/
+- https://www.allmusic.com/artist/princes-mn0000361393
+- https://static.america.gov/uploads/sites/8/2016/05/American-Popular-Music_English_508.pdf

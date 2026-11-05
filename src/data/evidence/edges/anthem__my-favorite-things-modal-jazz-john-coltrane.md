@@ -2,10 +2,10 @@
 
 Graph ID `anthem:my-favorite-things-modal-jazz-john-coltrane`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/My_Favorite_Things_(John_Coltrane_album)>), [2](<https://en.wikipedia.org/wiki/modal_jazz>)
+**Findings** · Smithsonian’s track notes document Coltrane’s modal explorations and describe the performance’s sustained drone/pedal point; the discography record identifies the 1960 Quartet recording. It is a modal treatment of a show tune, not a composition originally written as modal jazz; canonical stature is strong.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://folkways-media.si.edu/docs/folkways/artwork/SFW40820.pdf) · [2](https://johncoltranediscography.org/release/my-favorite-things/)

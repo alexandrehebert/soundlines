@@ -2,10 +2,10 @@
 
 Graph ID `recorded:breaking-the-law-judas-priest`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Breaking_the_Law>)
+**Finding** · Official Charts identifies the song as a Judas Priest release and gives catalogue details; the band discography is consistent. Clear direct release credit.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.judaspriest.com/disc/](https://www.judaspriest.com/disc/); [https://www.officialcharts.com/songs/judas-priest-breaking-the-law/](https://www.officialcharts.com/songs/judas-priest-breaking-the-law/).

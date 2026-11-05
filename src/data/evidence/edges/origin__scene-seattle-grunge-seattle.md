@@ -1,11 +1,15 @@
-# Seattle underground rock scene → Seattle
+# origin:scene-seattle-grunge-seattle
 
 Graph ID `origin:scene-seattle-grunge-seattle`
 
-**Review status** · Pending source review
+**Review status** · Place/origin claim source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph citations** · [1](<https://www.seattle.gov/economic-development/key-industries/creative-industries/nightlife-and-music/seattle-music-history>)
+**Finding** · The city chronology and Sub Pop’s own history document the Seattle-centered cluster of early grunge bands and releases. Seattle helped consolidate and popularize the movement; related precursors and bands also existed elsewhere in the Pacific Northwest.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.mayor.seattle.gov/economic-development/key-industries/creative-industries/nightlife-and-music/seattle-music-history
+- https://www.subpop.com/about
+- https://www.seattle.gov/documents/departments/filmandmusic/seattlemusicmapcomplete.pdf

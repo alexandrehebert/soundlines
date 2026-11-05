@@ -1,13 +1,14 @@
-# Electro house → Electro
+# lineage:electro-house-electro
 
 Graph ID `lineage:electro-house-electro`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
-**Relationship** · fusion_of · medium
+**Relationship** · fusion_of · low
 
-**Graph note** · AllMusic describes electro house as a blend of house drum patterns and electro synth timbres.
+**Finding** · The scholarly sources confirm electro house as a recognized house subgenre, but the accessible evidence does not establish electro itself as a co-equal parent. The sound label often refers to electro-style timbres within house; treat this as a stylistic component, not a proven two-parent genre origin.
 
-**Graph citations** · [1](<https://www.allmusic.com/album/dirty-electro-house-mw0001174015>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://monami.hs-mittweida.de/frontdoor/index/index/docId/960
+- https://onlinelibrary.wiley.com/doi/10.1111/1468-4446.12726

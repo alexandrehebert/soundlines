@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-atlantic-records-new-york`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Findings** · PBS American Masters records Atlantic’s founding in New York City in 1947 by Ahmet Ertegun and Herb Abramson, with its first office on 56th Street. This supports the label’s founding location, not the origin of its artists.
 
-**Graph citations** · [1](<https://www.atlanticrecords.com/>), [2](<https://www.atlanticrecords.com/artists/aretha-franklin>)
-
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.pbs.org/wnet/americanmasters/ahmet-ertegun-career-timeline/98/) · [2](https://www.pbs.org/wnet/americanmasters/ahmet-ertegun-atlantic-records/97/)

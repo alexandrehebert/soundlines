@@ -2,10 +2,10 @@
 
 Graph ID `featured:guitar-country`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Guitar>)
+**Finding** · The museum states that country was an early popular style built around guitar and documents its central role in the Carter Family and Jimmie Rodgers recordings.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.countrymusichalloffame.org/learn/family-and-community-resources/history-of-country-music-instruments](https://www.countrymusichalloffame.org/learn/family-and-community-resources/history-of-country-music-instruments).

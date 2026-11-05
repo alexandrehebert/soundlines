@@ -2,10 +2,10 @@
 
 Graph ID `key:cream-blues-rock`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Blues_rock>)
+**Findings** · AllMusic says Cream laid foundations for blues-rock; *Encyclopedia of Recorded Sound* describes them as a prototypical blues-rock power trio (,). Their psychedelia and hard rock are additional elements, not reasons to reject this established category.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/artist/cream-mn0000112462) · [2](https://www.worldradiohistory.com/BOOKSHELF-ARH/History/Encyclopedia-of-Recorded-Sound-Hoffman-Vol-1-1993.pdf)

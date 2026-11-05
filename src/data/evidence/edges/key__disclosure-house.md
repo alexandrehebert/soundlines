@@ -2,10 +2,10 @@
 
 Graph ID `key:disclosure-house`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Disclosure_(band)>), [2](<https://www.allmusic.com/artist/disclosure-mn0002528416>)
+**Findings** · Artist biography describes their house influence and contribution to UK house; AllMusic lists house among styles.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://music.apple.com/us/artist/disclosure/520848228) · [2](https://www.allmusic.com/artist/disclosure-mn0002528416)

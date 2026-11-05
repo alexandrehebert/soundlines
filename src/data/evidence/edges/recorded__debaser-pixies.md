@@ -2,10 +2,10 @@
 
 Graph ID `recorded:debaser-pixies`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Debaser>)
+**Finding** · Feature attributes the song to Pixies and discusses its development and appearance on *Doolittle*. Supports performer attribution, though not a primary release credit.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.loudersound.com/bands-artists/the-story-behind-pixies-debaser](https://www.loudersound.com/bands-artists/the-story-behind-pixies-debaser).

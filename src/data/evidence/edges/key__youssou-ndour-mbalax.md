@@ -1,11 +1,14 @@
-# Youssou N’Dour → Mbalax
+# Youssou Ndour → Mbalax
 
 Graph ID `key:youssou-ndour-mbalax`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 031)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.britannica.com/biography/Youssou-NDour>), [2](<https://en.wikipedia.org/wiki/Youssou_N%27Dour>)
+**Finding** · Oxford’s scholarly overview says N’Dour was among the musicians who developed mbalax and that scholars credit him with naming and popularizing it. The edge is strongly supported and central.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- [Oxford Bibliographies in Music, “Youssou N’Dour”](https://academic.oup.com/reference/62400/reference-article-abstract/561714377?login=false)
+- [Encyclopaedia Britannica biography](https://www.britannica.com/biography/Youssou-NDour)

@@ -2,10 +2,10 @@
 
 Graph ID `recorded:ring-of-fire-johnny-cash`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Ring_of_Fire>)
+**Findings** · Cash’s official site provides the single version and its 1963 release context; Cash’s official discography catalogs the Columbia collection. The Rock Hall catalog gives statement of responsibility as Johnny Cash (,,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.johnnycash.com/track/ring-of-fire-mono/) · [2](https://www.johnnycash.com/music/complete-columbia-album-collection/) · [3](https://catalog.rockhall.com/rrhof-ais/Details/fullCatalogue/200022390)

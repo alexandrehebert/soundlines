@@ -1,11 +1,13 @@
-# Laurent Garnier → Techno
+# Laurent Garnier → techno
 
 Graph ID `key:laurent-garnier-techno`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · unrated
+## Sources checked
+- [Red Bull Music Academy lecture archive](https://www.redbullmusicacademy.com/lectures/laurent-garnier-lecture/) — identifies Garnier as a forefather of French electronic music and documents his work with techno.
+- [Resident Advisor biography](https://ra.co/dj/laurentgarnier/biography) — traces his techno career and label activity.
+- [Artist biography](https://www.laurentgarnier.com/lg--subpage--1966--biography.html) — documents his techno production and scene involvement.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Laurent_Garnier>), [2](<https://www.allmusic.com/artist/laurent-garnier-mn0000140786>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+High confidence. Removed Wikipedia citations.

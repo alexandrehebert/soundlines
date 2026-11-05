@@ -1,13 +1,14 @@
-# Rhythm and blues → Blues
+# r and b → blues
 
 Graph ID `lineage:r-and-b-blues`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; derived audit 002)
 
 **Relationship** · derived_from · medium
 
-**Graph note** · Postwar rhythm and blues grew from blues, jazz and gospel practices; it also helped shape later soul and rock.
+**Finding** · Blues is a major antecedent of R&B alongside gospel, jazz and other practices; this is not a single-source derivation.
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/r-b-ma0000002809>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Library of Congress, Rhythm and Blues](https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rhythm-and-blues/)
+- [Smithsonian Folklife](https://folklife.si.edu/magazine/freedom-sounds-tell-it-like-it-is-a-history-of-rhythm-and-blues)

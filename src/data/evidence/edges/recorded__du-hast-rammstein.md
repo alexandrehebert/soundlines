@@ -2,10 +2,10 @@
 
 Graph ID `recorded:du-hast-rammstein`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Du_hast>)
+**Finding** · Track listing identifies “Du hast” by Rammstein on *Sehnsucht*.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://music.apple.com/us/song/1682941083](https://music.apple.com/us/song/1682941083).

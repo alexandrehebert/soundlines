@@ -2,12 +2,15 @@
 
 Graph ID `event:grand-upright-v-warner`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1991 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · In Grand Upright Music, Ltd. v. Warner Bros. Records, a U.S. federal court ruled against Biz Markie’s uncleared sampling of Gilbert O’Sullivan’s recording. The decision became a prominent warning in debates over sample clearance in hip-hop.
+## Sources checked
 
-**Graph citations** · [1](<https://law.justia.com/cases/federal/district-courts/FSupp/780/182/1461486/>)
+- [Grand Upright Music, Ltd. v. Warner Bros. Records, Inc.](https://law.justia.com/cases/federal/district-courts/FSupp/780/182/1445286/) — Text of the 1991 Southern District of New York decision concerning Biz Markie’s unauthorized use of Gilbert O’Sullivan’s recording.
+- [George Washington University Music Copyright Infringement Resource](https://blogs.law.gwu.edu/mcir/case/grand-upright-v-warner/) — Legal commentary discusses the ruling’s language and subsequent influence on sampling and clearance practice.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The case is a landmark in industry practice, but it did not establish a simple rule that all sampling is infringement; it concerned unlicensed use of a particular recording and composition. Current node is directionally correct; prefer “prominent warning” over saying it single-handedly reshaped law.

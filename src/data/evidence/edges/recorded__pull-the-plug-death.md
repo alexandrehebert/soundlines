@@ -2,10 +2,10 @@
 
 Graph ID `recorded:pull-the-plug-death`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Pull_the_Plug_(Death_song)>)
+**Findings** · Death’s official Bandcamp lists “Pull the Plug” on *Leprosy* (); the official reissue page names Death as the album artist and includes the track ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://death.bandcamp.com/track/pull-the-plug-4) · [2](https://relapse.com/products/leprosy)

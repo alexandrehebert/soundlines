@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-yellow-productions-paris`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Findings** · Yellow Productions’ official site gives its Paris address and says the label was created in 1993; the Bibliothèque nationale de France record also documents its Paris publisher address (,).
 
-**Graph citations** · [1](<https://www.discogs.com/label/877-Yellow-Productions>), [2](<https://www.francemusic.com/french-touch-guide/>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.yellowprod.fr/) · [2](https://catalogue.bnf.fr/ark:/12148/cb13979535s)

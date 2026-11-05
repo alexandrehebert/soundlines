@@ -2,10 +2,10 @@
 
 Graph ID `recorded:chega-de-saudade-joao-gilberto`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Chega_de_Saudade_(song)>)
+**Finding** · Senate report states that João Gilberto recorded it on 10 July 1958. Direct historical attribution.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www12.senado.leg.br/noticias/materias/2008/08/01/gravacao-de-chega-de-saudade-marca-o-nascimento-da-bossa-nova](https://www12.senado.leg.br/noticias/materias/2008/08/01/gravacao-de-chega-de-saudade-marca-o-nascimento-da-bossa-nova).

@@ -1,11 +1,11 @@
-# Piano → Rock and roll
+# Piano Rock And Roll
 
 Graph ID `featured:piano-rock-and-roll`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Piano>)
+**Finding** · Library of Congress remembrance characterizes Jerry Lee Lewis’s piano playing as central to rock-and-roll; supports piano in the genre through a prominent performer.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://blogs.loc.gov/now-see-hear/2022/11/remembering-jerry-lee-lewis-1935-2022/](https://blogs.loc.gov/now-see-hear/2022/11/remembering-jerry-lee-lewis-1935-2022/).

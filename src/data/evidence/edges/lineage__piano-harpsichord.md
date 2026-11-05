@@ -1,13 +1,14 @@
-# Piano → Harpsichord
+# piano → harpsichord
 
 Graph ID `lineage:piano-harpsichord`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; derived audit 002)
 
 **Relationship** · derived_from · medium
 
-**Graph note** · Cristofori, a harpsichord maker, adapted its case and keyboard to a hammer action.
+**Finding** · Cristofori developed the piano from the harpsichord maker’s craft and keyboard instrument, replacing plucked jacks with hammer action; the piano is a distinct invention, not a harpsichord subtype.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Piano>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Metropolitan Museum of Art, Cristofori piano](https://www.metmuseum.org/art/collection/search/501788)
+- [Met essay](https://www.metmuseum.org/es/essays/the-piano-the-pianofortes-of-bartolomeo-cristofori-1655-1731)

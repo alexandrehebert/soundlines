@@ -1,11 +1,13 @@
-# Tiësto → Trance
+# Tiësto → trance
 
 Graph ID `key:tiesto-trance`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · unrated
+## Sources checked
+- [Insomniac history](https://www.insomniac.com/magazine/sound-evolution-the-musical-progression-of-tiesto/) — documents his move into trance and early scene.
+- [Generation Dance biography](https://generation.dance/en/artists/tiesto/) — records his trance label and compilation series.
+- [AllMusic profile](https://www.allmusic.com/artist/dj-tiesto-mn0000591459) — identifies trance and progressive trance among his styles.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Ti%C3%ABsto>), [2](<https://www.allmusic.com/artist/tiesto-mn0000591459>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+High confidence for his foundational career period; his later work shifted toward mainstream EDM.

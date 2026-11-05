@@ -1,11 +1,14 @@
-# Kyuss → Stoner rock
+# key:kyuss-stoner-rock
 
 Graph ID `key:kyuss-stoner-rock`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/stoner-metal-ma0000011961>), [2](<https://www.cambridge.org/core/books/abs/cambridge-companion-to-metal-music/get-your-double-kicks-on-route-666/9B2F59F9AEC8DE60D2D7E13FD68FF3D2>), [3](<https://www.allmusic.com/artist/kyuss-mn0000776011/biography>)
+**Finding** · AllMusic explicitly identifies Kyuss as a pioneer of 1990s stoner rock and describes their sound as a blueprint. The association is central and direct.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/artist/kyuss-mn0000776011/biography
+- https://www.allmusic.com/album/blues-for-the-red-sun-mw0000089586

@@ -1,13 +1,13 @@
-# Minimoog → Modular synthesizer
+# minimoog → modular synthesizer
 
 Graph ID `lineage:minimoog-modular-synthesizer`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; derived audit 002)
 
-**Relationship** · derived_from · medium
+**Relationship** · derived_from · high
 
-**Graph note** · Hard-wires a selection of Moog modular components into one portable instrument.
+**Finding** · The Minimoog translated modular-synth concepts into a compact fixed-configuration instrument; it was not itself modular.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Minimoog>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Apple Logic Pro guide](https://support.apple.com/en-euro/guide/logicpro/lgsife418277/mac)

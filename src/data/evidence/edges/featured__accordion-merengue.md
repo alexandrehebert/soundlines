@@ -1,11 +1,11 @@
-# Accordion → Merengue
+# Accordion Merengue
 
 Graph ID `featured:accordion-merengue`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Accordion>)
+**Finding** · Smithsonian Folkways identifies La India Canela as an accordionist and names accordion in her merengue típico ensemble.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [https://folkways.si.edu/la-india-canela/merengue-tipico-from-the-dominican-republic/caribbean-latin-world/music/album/smithsonian](https://folkways.si.edu/la-india-canela/merengue-tipico-from-the-dominican-republic/caribbean-latin-world/music/album/smithsonian).

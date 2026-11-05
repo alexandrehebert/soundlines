@@ -2,10 +2,8 @@
 
 Graph ID `key:romeo-santos-bachata`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · medium
+**Finding** · Sony Music Latin identifies Santos as “El Rey de la Bachata” and a global bachata icon.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/bachata-ma0000002441/artists>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://www.sonymusiclatin.com/artists/romeo-santos/](https://www.sonymusiclatin.com/artists/romeo-santos/)

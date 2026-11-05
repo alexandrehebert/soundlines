@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-motorbass-paris`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Paris-based French Touch project.
+**Finding** · AllMusic says the duo was formed by Philippe Zdar and Étienne de Crécy; France Music lists Motorbass among the Parisian French Touch roster. Evidence supports the project’s Paris/French Touch scene association but does not directly state a formation address, so medium confidence is retained.
 
-**Graph citations** · [1](<https://www.francemusic.com/french-touch-guide/>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [AllMusic biography](https://www.allmusic.com/artist/motorbass-mn0000503653/biography); [France Music French Touch guide](https://www.francemusic.com/french-touch-guide/).

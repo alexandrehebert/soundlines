@@ -1,11 +1,14 @@
-# Steve Reich → Minimalism
+# key:reich-minimalism
 
 Graph ID `key:reich-minimalism`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and style/period fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Minimal_music>)
+**Finding** · LSO calls Reich one of minimalism’s fathers; American Mavericks calls him a founder. Canonical composer and direct central association.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.lso.co.uk/news-and-stories/composer-guide/steve-reich/
+- https://americanmavericks.org/meet-the-mavericks/steve-reich

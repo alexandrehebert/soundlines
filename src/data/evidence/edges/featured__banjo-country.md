@@ -2,10 +2,10 @@
 
 Graph ID `featured:banjo-country`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Banjo>)
+**Finding** · The museum identifies the banjo as a recognizable instrument associated with country and documents its role in early country shows and recordings.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [https://www.countrymusichalloffame.org/learn/family-and-community-resources/history-of-country-music-instruments](https://www.countrymusichalloffame.org/learn/family-and-community-resources/history-of-country-music-instruments).

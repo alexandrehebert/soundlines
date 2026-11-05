@@ -2,10 +2,10 @@
 
 Graph ID `recorded:didi-khaled-khaled`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · unrated
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Didi_(song)>)
+**Finding** · Government education page lists Khaled as artist and identifies “Didi,” with release/label metadata. Direct release credit.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://eduscol.education.gouv.fr/chansonsquifontlhistoire/Didi.html](https://eduscol.education.gouv.fr/chansonsquifontlhistoire/Didi.html).

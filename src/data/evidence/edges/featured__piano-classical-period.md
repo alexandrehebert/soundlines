@@ -1,11 +1,11 @@
-# Piano → Classical era
+# Piano Classical Period
 
 Graph ID `featured:piano-classical-period`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Piano>)
+**Finding** · The Met states Viennese action pianos suited the musical styles now called Classical and composers wrote extensively for the instrument.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://www.metmuseum.org/pt/essays/the-piano-viennese-instruments](https://www.metmuseum.org/pt/essays/the-piano-viennese-instruments).

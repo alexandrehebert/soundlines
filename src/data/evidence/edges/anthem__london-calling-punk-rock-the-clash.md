@@ -2,10 +2,10 @@
 
 Graph ID `anthem:london-calling-punk-rock-the-clash`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/London_Calling_(song)>), [2](<https://en.wikipedia.org/wiki/punk_rock>)
+**Findings** · Official page verifies the album/song and emphasizes movement beyond punk into reggae, soul, rockabilly, funk and R&B. AllMusic characterizes the album’s anthemic punk function. Punk-rock is defensible, but the title track reflects a broader hybrid sound; anthem status is stronger at album/cultural level.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.theclash.com/music/london-calling) · [2](https://www.allmusic.com/album/london-calling-mw0000193070)

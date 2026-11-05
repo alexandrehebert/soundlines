@@ -2,10 +2,10 @@
 
 Graph ID `anthem:head-like-a-hole-industrial-metal-nine-inch-nails`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Head_Like_a_Hole>), [2](<https://en.wikipedia.org/wiki/industrial_metal>)
+**Sources checked** · [Rolling Stone](https://au.rollingstone.com/music/music-features/nine-inch-nails-head-like-a-hole-anthem-6303/) calls the song an enduring resistance anthem and an Eighties shock-rock anthem, and describes its ongoing sing-along role among fans. [NIN discography](https://www.nin.com/discography/) confirms the official release context. [AllMusic](https://www.allmusic.com/song/head-like-a-hole-mt0007337393) supplies industrial/industrial-metal style tagging.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Assessment** · The anthem claim is now directly supported. Medium confidence reflects the fact that Rolling Stone’s genre language is broader than the graph’s precise industrial-metal node; the direct industrial-metal classification comes from AllMusic’s editorial taxonomy.

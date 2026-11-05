@@ -1,0 +1,13 @@
+# Richie Hawtin → Detroit techno
+
+Graph ID `key:richie-hawtin-detroit-techno`
+
+**Review status** · Reviewed — Hawtin as partial/adjacent second-wave figure; kept medium
+**Reviewed** · 2026-11-03
+
+## Sources checked
+- [DMY Dummy Guide II](https://dmy.co/features/dummy-guide-to-detroit-techno-part-ii-the-second-wave-present-day) — second wave “partially included” Hawtin from Windsor.
+- [The Wire: Mike Banks interview](https://www.thewire.co.uk/in-writing/interviews/mike-banks-interview) — UR/Plus 8 rivalry.
+
+## Assessment
+Hawtin worked across the river in Windsor and is closely tied to Detroit, but he is not a Detroit native. Medium confidence fits.

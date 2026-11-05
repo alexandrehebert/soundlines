@@ -1,11 +1,11 @@
-# Bitches Brew → Miles Davis
+# Miles Davis recorded “Bitches Brew”
 
 Graph ID `recorded:bitches-brew-miles-davis`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Bitches_Brew>)
+**Finding** · Official artist page lists the title track under Davis’s album; LOC essay documents the Davis-led recording sessions and album.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.milesdavis.com/albums/bitches-brew/](https://www.milesdavis.com/albums/bitches-brew/); [https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Bitches-Brew_Kaplan.pdf](https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Bitches-Brew_Kaplan.pdf).

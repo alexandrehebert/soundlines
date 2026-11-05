@@ -1,11 +1,15 @@
-# Ricardo Villalobos → Tech house
+# key:ricardo-villalobos-tech-house
 
 Graph ID `key:ricardo-villalobos-tech-house`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and style/period fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/tech-house-ma0000005003>), [2](<https://www.allmusic.com/artist/ewan-pearson-mn0000155675>), [3](<https://www.allmusic.com/artist/ricardo-villalobos-mn0000472894>), [4](<https://en.wikipedia.org/wiki/Ricardo_Villalobos>)
+**Finding** · Tech-house tagging exists, but stronger biographical descriptions emphasize minimal techno, microhouse and minimal house. Tech-house is a defensible adjacent classification, not his clearest central lane; medium fits.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 4 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/artist/ricardo-villalobos-mn0000472894
+- https://ra.co/dj/ricardovillalobos/biography
+- https://seven.berlin/artists/ricardo-villalobos/

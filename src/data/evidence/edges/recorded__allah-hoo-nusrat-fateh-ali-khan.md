@@ -1,11 +1,11 @@
-# Allah Hoo → Nusrat Fateh Ali Khan
+# Nusrat Fateh Ali Khan recorded “Allah Hoo”
 
 Graph ID `recorded:allah-hoo-nusrat-fateh-ali-khan`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Allah_Hoo>)
+**Finding** · Label discography lists Nusrat Fateh Ali Khan as the artist and “Allah-Hu Allah-Hu” as track 1.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [https://www.jvcmusic.co.jp/-/Discography/A008159/VICG-60316.html](https://www.jvcmusic.co.jp/-/Discography/A008159/VICG-60316.html).

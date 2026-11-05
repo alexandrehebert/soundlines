@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-antonio-carlos-jobim-rio`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Rio is linked to Jobim’s bossa nova work and scene, not his birthplace.
+**Findings** · Jobim Institute biography places his birth in Tijuca, Rio de Janeiro: Instituto Antonio Carlos Jobim.
 
-**Graph citations** · [1](<https://www.abc.net.au/rn/features/bossanova/about.htm>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.jobim.org/jobim/bitstream/handle/2010/10873/biografia%20tom%20jobim.pdf?sequence=7)

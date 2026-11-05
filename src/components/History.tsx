@@ -21,7 +21,8 @@ function isEventCategory(value: string): value is EventCategory {
 function eventConnections(index: GraphIndex, id: string): GraphNode[] {
   const related = new Map<string, GraphNode>()
   for (const edge of index.outEdges.get(id) ?? []) {
-    if (edge.type !== 'shaped' && edge.type !== 'involved' && edge.type !== 'occurred_in') continue
+    if (edge.type !== 'shaped' && edge.type !== 'context_for' && edge.type !== 'recognized'
+      && edge.type !== 'involved' && edge.type !== 'occurred_in') continue
     const node = index.nodeById.get(edge.to)
     if (!node) throw new Error(`Event connection ${edge.id} references unknown node ${edge.to}`)
     related.set(node.id, node)

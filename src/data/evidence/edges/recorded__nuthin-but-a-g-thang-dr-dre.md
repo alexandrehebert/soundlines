@@ -2,10 +2,10 @@
 
 Graph ID `recorded:nuthin-but-a-g-thang-dr-dre`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Nuthin'_but_a_'G'_Thang>)
+**Findings** · Dr. Dre’s official discography lists the song on *The Chronic*; the National Library of New Zealand catalog records the album and track sequence (,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.drdre.com/releases-archive/chronic/) · [2](https://natlib.govt.nz/records/21858187)

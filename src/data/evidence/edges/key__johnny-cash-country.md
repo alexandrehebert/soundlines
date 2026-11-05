@@ -1,11 +1,16 @@
-# Johnny Cash → Country
+# Johnny Cash Country
 
 Graph ID `key:johnny-cash-country`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/country-ma0000002532>)
+**Finding** · Cash is an internationally recognized country artist and was inducted into the Country Music Hall of Fame. This direct category association is stronger than the retrospective Americana label on the separate edge.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.countrymusichalloffame.org/hall-of-fame/johnny-cash](https://www.countrymusichalloffame.org/hall-of-fame/johnny-cash)
+- [https://rockhall.com/inductees/johnny-cash/](https://rockhall.com/inductees/johnny-cash/)
+
+**Assessment** · Confidence applies to the exact artist–genre relation, distinguishing central genre association from period-specific, hybrid, or influence-only evidence.

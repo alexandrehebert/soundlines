@@ -1,11 +1,11 @@
-# Piano → Bebop
+# Piano Bebop
 
 Graph ID `featured:piano-bebop`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Piano>)
+**Finding** · LOC National Recording Registry essay identifies Monk as pianist and describes him diverging from dominant bebop idioms; supports piano in bebop-era jazz, while noting Monk’s stylistic independence.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://loc.gov/static/programs/national-recording-preservation-board/documents/BrilliantCorners.pdf](https://loc.gov/static/programs/national-recording-preservation-board/documents/BrilliantCorners.pdf).

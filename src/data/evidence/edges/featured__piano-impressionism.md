@@ -1,11 +1,11 @@
-# Piano → Impressionism
+# Piano Impressionism
 
 Graph ID `featured:piano-impressionism`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Piano>)
+**Finding** · OUP musicologist Eric Frederick Jensen notes Debussy’s Images for piano were associated with Impressionist imagery; relevant, though he cautions against treating all Debussy as Impressionist.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://blog.oup.com/2018/03/claude-debussy-impressionist-music/](https://blog.oup.com/2018/03/claude-debussy-impressionist-music/).

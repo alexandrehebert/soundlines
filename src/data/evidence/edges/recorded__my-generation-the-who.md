@@ -2,10 +2,10 @@
 
 Graph ID `recorded:my-generation-the-who`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/My_Generation>)
+**Findings** · The Who’s official archive identifies the 1965 single, release details, producers, and IBC Studios recording date (); the official album page includes it on the debut ().
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.thewho.com/music/my-generation-4/) · [2](https://www.thewho.com/music/my-generation/)

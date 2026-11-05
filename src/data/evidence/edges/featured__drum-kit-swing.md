@@ -2,10 +2,10 @@
 
 Graph ID `featured:drum-kit-swing`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Drum_kit>)
+**Findings** · Smithsonian traces the Swing Era and describes Gene Krupa’s swing-orchestra drumming and the drum kit’s rhythmic role in the style.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://music.si.edu/story/jazz) · [2](https://folkways.si.edu/magazine-winter-2011-jazz-cover-story/ragtime/music/article/smithsonian)

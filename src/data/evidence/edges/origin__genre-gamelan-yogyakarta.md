@@ -2,12 +2,10 @@
 
 Graph ID `origin:genre-gamelan-yogyakarta`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · high
+**Relationship** · originated_in · medium
 
-**Graph note** · One of the major regional traditions; gamelan is not exclusive to Yogyakarta.
+**Findings** · UNESCO inventory lists Yogyakarta among several Indonesian gamelan centers; Smithsonian covers Balinese regional styles, underscoring that gamelan is plural and distributed:,.
 
-**Graph citations** · [1](<https://ich.unesco.org/en/RL/gamelan-01607>), [2](<https://asia.si.edu/explore-art-culture/audio/javanese-gamelan-music/>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://ich.unesco.org/doc/src/47514.pdf) · [2](https://ich.unesco.org/en/RL/gamelan-01607)

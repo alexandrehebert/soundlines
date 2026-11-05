@@ -2,10 +2,10 @@
 
 Graph ID `recorded:my-favorite-things-john-coltrane`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/My_Favorite_Things_(John_Coltrane_album)>)
+**Findings** · Coltrane’s official store identifies *My Favorite Things* as his album; the John Coltrane discography gives the quartet’s Atlantic Studios session date and location (,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://store.johncoltrane.com/products/my-favorite-things-cd) · [2](https://johncoltranediscography.org/release/my-favorite-things/)

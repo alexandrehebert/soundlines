@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-rough-trade-records-london`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Findings** · Rough Trade’s official history says the shop opened in Ladbroke Grove, West London, in 1976 and that the record label grew from it (,).
 
-**Graph citations** · [1](<https://www.roughtraderecords.com/about>), [2](<https://www.beggars.com/history/>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://shop.roughtraderecords.com/about?lang=en_GB) · [2](https://www.roughtrade.com/about/our-story)

@@ -2,10 +2,10 @@
 
 Graph ID `key:dj-lag-gqom`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/gqom-ma0000013646>), [2](<https://www.allmusic.com/artist/dj-lag-mn0003558945>)
+**Findings** · Multiple specialist sources identify DJ Lag as a Gqom pioneer and directly associate his music with the Durban genre.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://ra.co/features/3917) · [2](https://djmag.com/content/recognise-dj-lag) · [3](https://www.allmusic.com/artist/dj-lag-mn0003558945)

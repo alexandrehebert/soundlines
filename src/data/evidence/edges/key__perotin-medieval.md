@@ -1,11 +1,15 @@
-# Pérotin → Medieval music
+# key:perotin-medieval
 
 Graph ID `key:perotin-medieval`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Medieval_music>)
+**Finding** · Pérotin is a central figure in medieval Notre-Dame polyphony. His biography and the attribution of surviving works are uncertain because the evidence is sparse; the period association itself is secure.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.notredamedeparis.fr/en/understand/music/polyphony-and-motets/
+- https://www.encyclopedia.com/literature-and-arts/performing-arts/music-history/perotin
+- https://escholarship.org/uc/item/10v1x47m

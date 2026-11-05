@@ -1,11 +1,15 @@
-# Miss Kittin → Electroclash
+# key:miss-kittin-electroclash
 
 Graph ID `key:miss-kittin-electroclash`
 
-**Review status** · Pending source review
+**Review status** · Centrality and genre fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/album/electroklash-urban-theory--mw0000222954>), [2](<https://www.allmusic.com/artist/miss-kittin-mn0000497290>), [3](<https://ra.co/features/4493>)
+**Finding** · Her own biography calls her an electroclash pioneer; contemporary coverage places her at the center of the movement. High confidence.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://misskittin.com/about/
+- https://ra.co/features/4493
+- https://www.dazeddigital.com/music/article/8290/1/electroclash-pioneer-miss-kittin

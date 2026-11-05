@@ -1,11 +1,16 @@
-# Quena → Andean folk
+# Quena Andean Folk — instrument–genre association
 
 Graph ID `featured:quena-andean-folk`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://guides.loc.gov/indigenous-andes-folklife/music>), [2](<https://folkways.si.edu/la-nueva-cancion-new-song-movement-south-america/latin-world-struggle-protest/music/article/smithsonian>)
+**Finding** · LOC lists quena among common instruments of Andean music; Smithsonian Folkways catalogs it across recorded Andean Peruvian music. A strong tradition-level association, though instruments vary among communities and regional ensembles.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://guides.loc.gov/indigenous-andes-folklife/music](https://guides.loc.gov/indigenous-andes-folklife/music)
+- [https://folkways.si.edu/peru-andean-music-of-life-work-and-celebration/world/music/album/smithsonian](https://folkways.si.edu/peru-andean-music-of-life-work-and-celebration/world/music/album/smithsonian)
+
+**Assessment** · The relation describes a characteristic, historically notable, or production-context association. It does not imply exclusivity or presence in every work of the genre.

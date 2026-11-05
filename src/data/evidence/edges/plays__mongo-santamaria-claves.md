@@ -2,10 +2,10 @@
 
 Graph ID `plays:mongo-santamaria-claves`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · plays · high
 
-**Graph citations** · [1](<https://www.si.edu/object/claves-used-mongo-santamaria%3Anmah_1290068>), [2](<https://sova.si.edu/record/nmah.ac.0893>)
+**Findings** · Smithsonian National Museum of American History catalogs an instrument as “Claves, used by Mongo Santamaría,” directly supporting the playing credit. Retain the collection object ID because direct retrieval was intermittently unreliable.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://americanhistory.si.edu/collections/object/nmah_1290068)

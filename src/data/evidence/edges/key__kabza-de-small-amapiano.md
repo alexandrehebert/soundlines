@@ -1,11 +1,17 @@
-# Kabza De Small → Amapiano
+# Kabza De Small Amapiano
 
 Graph ID `key:kabza-de-small-amapiano`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/kabza-de-small-mn0003886957>), [2](<https://www.newyorker.com/culture/culture-desk/how-far-can-amapiano-go>), [3](<https://djmag.com/features/these-are-most-exciting-amapiano-producers-right-now>)
+**Finding** · Sources identify Kabza as an amapiano artist and foundational contemporary producer; genre centrality is direct.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.allmusic.com/artist/kabza-de-small-mn0003886957](https://www.allmusic.com/artist/kabza-de-small-mn0003886957)
+- [https://musicinafrica.net/directory/kabza-de-small/](https://musicinafrica.net/directory/kabza-de-small/)
+- [https://viranova.co.za/artist/kabza-de-small](https://viranova.co.za/artist/kabza-de-small)
+
+**Assessment** · Confidence applies to the exact artist–genre relation, distinguishing central genre association from period-specific, hybrid, or influence-only evidence.

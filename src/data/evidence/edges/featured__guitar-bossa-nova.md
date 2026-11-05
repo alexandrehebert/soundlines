@@ -2,10 +2,10 @@
 
 Graph ID `featured:guitar-bossa-nova`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Guitar>)
+**Finding** · Smithsonian describes Gilberto developing bossa nova with nylon-string guitar and identifies guitar as a characteristic part of the genre’s percussion/rhythm texture.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.smithsonianmag.com/smart-news/remembering-bossa-nova-pioneer-joao-gilberto-180972578/](https://www.smithsonianmag.com/smart-news/remembering-bossa-nova-pioneer-joao-gilberto-180972578/).

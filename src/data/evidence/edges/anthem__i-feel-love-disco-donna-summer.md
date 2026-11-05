@@ -2,10 +2,10 @@
 
 Graph ID `anthem:i-feel-love-disco-donna-summer`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/I_Feel_Love>), [2](<https://en.wikipedia.org/wiki/disco>)
+**Findings** · LOC essay places the track in 1977 disco, details its Moog production, and calls it influential and timeless. The National Recording Registry notice was inaccessible (403); the opened essay does not call it an LGBTQ anthem. Disco association is strong; explicit anthem claim remains unverified.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/IFeelLove_Hamsley.pdf)

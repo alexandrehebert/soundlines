@@ -2,10 +2,8 @@
 
 Graph ID `key:parvathy-baul-baul-songs`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · medium
+**Finding** · Her official biography identifies her as a practitioner and performer of the Baul tradition from Bengal.
 
-**Graph citations** · [1](<https://www.parvathybaul.com/about>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [https://www.parvathybaul.com/about](https://www.parvathybaul.com/about)

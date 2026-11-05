@@ -2,10 +2,8 @@
 
 Graph ID `key:pistols-punk`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · medium
+**Finding** · Rock Hall says the Sex Pistols triggered the punk-rock movement.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Punk_rock>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://rockhall.com/inductees/sex-pistols/](https://rockhall.com/inductees/sex-pistols/)

@@ -7,7 +7,7 @@ example ChatGPT) along with `graph.json` when asking for the dataset to be
 **enriched, corrected, or expanded** (new genres, artists, lineage links, phases,
 events, and so on).
 
-> **Current priority:** deepen the chronology through the ages. The graph now has 81
+> **Current priority:** deepen the chronology through the ages. The graph now has 82
 > sourced events with significance labels; continue filling the pre-1600 and post-2010
 > gaps, then add more composition, artist, and track coverage in underrepresented
 > musical traditions. See §6, "Chronology coverage gaps".
@@ -31,7 +31,7 @@ rejected.**
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 1247 nodes (177 genres, 522 artists, 72 instruments, 41 labels, 87 places, 211 tracks, 56 scenes, 81 events) and 1977 edges.
+Current size: 1265 nodes (177 genres, 538 artists, 72 instruments, 41 labels, 89 places, 210 tracks, 56 scenes, 82 events) and 1907 edges (as of 2026-11-05).
 
 ---
 
@@ -222,9 +222,13 @@ editorial weight used to filter the chronology, not a ranking.
   shut down", "Guido of Arezzo's staff notation").
 - `description`, `category`, and at least one `sources` URL are required.
   `family`, `kind`, and `phases` are not allowed on events.
-- Every event needs **at least one `shaped` edge** to a genre, instrument,
-  label, or scene it changed, so the chronology can link back into the map. Add
-  `involved` edges for key participants and `occurred_in` for the place.
+- Add a sourced event edge only when an existing node has a meaningful relationship;
+  a standalone event is valid when no such relationship is documented. Use `shaped` only
+  when the event directly affected a genre, instrument, label, or scene; use
+  `context_for` for a historical or period connection without a direct influence
+  claim, and `recognized` for heritage inscriptions. Add `involved` edges for key
+  participants and `occurred_in` for the place. Do not invent a `shaped` edge just
+  to satisfy the link requirement.
 - Every edge touching an event has `sources`.
 - Prefer existing nodes as edge targets. Add new artist, place, or genre nodes only
   when they are worth having in their own right, and follow all their rules.
@@ -306,9 +310,12 @@ Read every edge as **`from` → label → `to`**:
 | `originated_in`     | genre/artist/label/scene → place | A originated in B | — |
 | `anthem_of`         | track → genre           | A is an anthem of B | — |
 | `recorded_by`       | track → artist          | A was recorded by B | — |
+| `composed_by`       | track → artist          | A was composed by B | — |
 | `featured_in`       | instrument → genre      | A is a defining instrument in genre B | — |
 | `plays`             | artist → instrument     | A is a notable player of B | — |
-| `shaped`            | event → genre/instrument/label/scene | Event A shaped B | — |
+| `shaped`            | event → genre/instrument/label/scene | Event A directly shaped B | — |
+| `context_for`       | event → genre/scene | Event A provides historical context for B; no direct influence is claimed | — |
+| `recognized`        | event → genre | Event A formally recognizes or inscribes B | — |
 | `involved`          | event → artist/track/instrument/label/scene | Event A involved B (key participant, record, or device) | — |
 | `occurred_in`       | event → place           | Event A took place in B | — |
 
@@ -327,8 +334,7 @@ Choose the most precise lineage type:
 
 ### Edge id conventions
 
-Existing ids include legacy `e001`–`e2xx`. For **new** edges, use descriptive
-prefixes:
+Use descriptive prefixes for edge IDs:
 
 - `lineage:<child>-<parent>` for genre lineage edges
 - `key:<artist-slug>-<genre-slug>` for `key_artist_of`
@@ -337,7 +343,9 @@ prefixes:
   `anthem:<track>-<genre>`, `recorded:<track>-<artist>`
 - `featured:<instrument>-<genre>`, `plays:<artist>-<instrument>`, and
   `lineage:<child>-<parent>` between instruments
-- `shaped:<event>-<target>`, `involved:<event>-<target>`, `occurred:<event>-<place>`
+- `shaped:<event>-<target>`, `context_for:<event>-<target>`,
+  `recognized:<event>-<target>`, `involved:<event>-<target>`,
+  `occurred_in:<event>-<place>` (legacy `occurred:` IDs may remain)
   (slugs without the type prefix, for example `shaped:mtv-launch-synth-pop`)
 
 Ids must be unique across all edges.
@@ -372,7 +380,10 @@ Ids must be unique across all edges.
 10. **Every source URL must be a valid HTTPS URL.** Prefer authoritative, relevant
     sources; source credibility and relevance are editorial requirements, not
     something the automated tests can determine.
-11. No orphan nodes. Every node has at least one edge.
+11. Every node has at least one edge, except the explicitly documented sourced
+    standalone events and unresolved tracks in the
+    [connectivity register](./evidence/disconnected-entries.md). Tests enforce
+    that exact exception set; never invent relationships to eliminate orphans.
 12. Preserve supported lineage relationships and these ancestor chains:
     romantic → medieval, grunge → blues, deep-house → jazz, synth-pop → rock.
     Keep genuinely independent traditions as roots instead of inventing an ancestry link
@@ -388,11 +399,11 @@ Ids must be unique across all edges.
     `influences` or `derived_from`. Every edge touching an instrument has `sources`.
     Event edges (`shaped`, `involved`) may also point to instruments.
 17. **Every event** has a `category` from the Events table, a
-    `description`, `sources`, and at least one `shaped` edge. `category` and
+    `description`, and `sources`; add relevant sourced event edges where documented. `category` and
     `significance` appear only on events. Events have no `family` or `phases`.
-18. `shaped`, `involved`, and `occurred_in` always start from an event and
-    point to the node types in §3. Events connect only through these three edge
-    types, and every edge touching an event has `sources`.
+18. `shaped`, `context_for`, `recognized`, `involved`, and `occurred_in` always
+    start from an event and point to the node types in §3. Events connect only
+    through these edge types, and every edge touching an event has `sources`.
 
 ## 5. Prominence phases (optional, genres, artists & instruments)
 
@@ -513,10 +524,17 @@ Example:
 Every node and edge has an evidence note in `src/data/evidence/`
 (`nodes/<type>/<slug>.md`, `edges/<id with ":" replaced by "__">.md`) recording
 the sources checked and the assessment. A note marked `Pending source review`
-has not been re-checked yet. After editing evidence notes, run
+has not been re-checked yet. Each live entry's reviewed note must include a
+``Graph ID `<id>` `` header and a `**Reviewed** · YYYY-MM-DD` stamp (dates in
+`**Review status**` lines are also recognized). Keep removal notes as historical
+evidence; the review-status generator excludes IDs no longer in the graph and
+explicitly removed dispositions, and counts duplicate reviewed notes only once.
+The [edge coverage tracker](./evidence/audits/graph-edge-coverage.csv) must contain
+exactly one row per live edge, with its current type and confidence and a link
+to the reviewed note, not a pending placeholder. After editing evidence notes, run
 `npm run review-status` to refresh `src/data/review-status.json`, which powers
 the **Source review** tab of the dataset statistics. A test fails if the file
-is out of date.
+is out of date or the tracker and live-edge evidence disagree.
 
 ### Suggested expansion areas
 
@@ -556,13 +574,12 @@ Dated nodes by `period.start`:
 
 Priorities, in order:
 
-1. **Improve event evidence and connections.** All 81 events now have a
-   `significance` value and at least one sourced `shaped` edge. There are 21
-   `involved` and 20 `occurred_in` edges. Add more participants, recordings,
-   venues, and locations only when a source supports the connection. 27 event
-   nodes currently cite more than one source; add independent sources for
-   consequential claims, especially where the graph still relies on a single
-   citation.
+1. **Improve event evidence and connections.** All 82 events have a
+   `significance` value and more than one cited source. There are 18 `shaped`,
+   51 `context_for`, 5 `recognized`, 19 `involved`, and 25 `occurred_in` edges.
+   Seven events remain standalone rather than asserting unsupported relationships.
+   Add participants, recordings, venues, and locations only when a source supports
+   the connection; multiple citations alone do not establish source quality.
 2. **Add pre-1600 depth.** Add representative compositions as `track` nodes
    using premiere or publication years; expand medieval and Renaissance
    composers, notation, and institutions. Continue documenting Arab, Persian,
@@ -624,7 +641,7 @@ patch** in this exact shape:
   "addNodes": [ /* full GraphNode objects */ ],
   "addEdges": [ /* full GraphEdge objects */ ],
   "updateNodes": [ { "id": "genre:soul", "set": { "description": "..." } } ],
-  "updateEdges": [ { "id": "e022", "set": { "sources": ["https://www.example.org/relevant-source"] } } ]
+  "updateEdges": [ { "id": "lineage:chicago-house-detroit-techno", "set": { "sources": ["https://www.example.org/relevant-source"] } } ]
 }
 ```
 
@@ -654,8 +671,8 @@ patch** in this exact shape:
 - [ ] Phase `note` values (if present) add a specific rationale; claim-level
       `sources` support factual dates or transitions
 - [ ] New families are listed in `newFamilies`
-- [ ] Every new event has `category`, `description`, `sources`, a
-      timeline-caption `name`, and ≥ 1 sourced `shaped` edge; it duplicates no
+- [ ] Every new event has `category`, `description`, `sources`, and a
+      timeline-caption `name`; add relevant, sourced event edges where documented. It duplicates no
       existing instrument, label, scene, or track
-- [ ] Every edge touching an event is `shaped`, `involved`, or `occurred_in`, starts
+- [ ] Every edge touching an event is `shaped`, `context_for`, `recognized`, `involved`, or `occurred_in`, starts
       from the event, and has `sources`

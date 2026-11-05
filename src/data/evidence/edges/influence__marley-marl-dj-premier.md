@@ -1,11 +1,14 @@
-# Marley Marl → DJ Premier
+# influence:marley-marl-dj-premier
 
 Graph ID `influence:marley-marl-dj-premier`
 
-**Review status** · Pending source review
+**Review status** · Source and direction checked (2026-11-05)
 
-**Relationship** · influences · unrated
+**Relationship** · influences · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Marley_Marl>), [2](<https://www.redbullmusicacademy.com/lectures/marley-marl-tokyo-2014>)
+**Finding** · Marley Marl recounts that Premier identified “Nobody Beats the Biz” as a blueprint for his production approach. This is direct testimony, specific to DJ Premier’s production development.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.redbullmusicacademy.com/lectures/marley-marl-tokyo-2014/
+- https://www.xxlmag.com/dj-premier-the-xxl-icon-interview/

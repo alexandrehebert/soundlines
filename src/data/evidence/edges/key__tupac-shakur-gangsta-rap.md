@@ -1,11 +1,13 @@
-# Tupac Shakur → Gangsta rap
+# Tupac Shakur → Gangsta Rap
 
 Graph ID `key:tupac-shakur-gangsta-rap`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 030)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/gangsta-rap-ma0000002611>)
+**Finding** · Rock Hall explicitly describes Shakur as evolving into an aggressive, defiant gangsta artist. This was one strand alongside socially conscious work and ballads.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [Rock & Roll Hall of Fame](https://rockhall.com/inductees/tupac-shakur/)

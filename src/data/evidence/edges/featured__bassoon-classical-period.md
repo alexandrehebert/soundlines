@@ -2,10 +2,10 @@
 
 Graph ID `featured:bassoon-classical-period`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://www.metmuseum.org/art/collection/search/503528>)
+**Finding** · Vienna Symphonic Library’s instrument history explicitly states that two bassoons became customary in the Classical-era orchestra, where they functioned as bass instruments. Direct support.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [Vienna Symphonic Library](https://www.vsl.co.at/academy/woodwinds/bassoon).

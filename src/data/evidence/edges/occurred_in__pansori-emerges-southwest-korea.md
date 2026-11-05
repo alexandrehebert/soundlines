@@ -2,10 +2,15 @@
 
 Graph ID `occurred_in:pansori-emerges-southwest-korea`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — cross-checked against the reviewed event record
 
-**Relationship** · occurred_in · unrated
+**Relationship** · occurred_in · high
 
 **Graph citations** · [1](<https://ich.unesco.org/en/RL/pansori-epic-chant-00070>)
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The cited sources place “Pansori develops in southwest Korea” in Southwest Korea. The location claim is supported at high confidence.

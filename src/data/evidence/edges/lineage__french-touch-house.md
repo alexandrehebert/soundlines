@@ -1,13 +1,15 @@
-# House → French Touch
+# lineage:french-touch-house
 
 Graph ID `lineage:french-touch-house`
 
-**Review status** · Pending source review
+**Review status** · Influence/direction and evidence checked (2026-11-05)
 
 **Relationship** · influences · medium
 
-**Graph note** · House and disco production practices were important ingredients, but French Touch is an umbrella for a heterogeneous French scene rather than a strict house subgenre.
+**Finding** · House is a clear musical and production source for French Touch. “French Touch” is a scene/umbrella with varied styles rather than one sharply bounded genre, so medium and the current scope note are apt.
 
-**Graph citations** · [1](<https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/>), [2](<https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208>), [3](<https://www.lemonde.fr/en/m-le-mag/article/2024/04/06/justice-s-new-quest_6667576_117.html>), [4](<https://www.lemonde.fr/culture/article/2020/05/20/les-25-ans-de-la-french-touch-electro_6040208_3246.html>)
+**Sources checked**
 
-**Citation retrieval** · 3 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/
+- https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208
+- https://www.lemonde.fr/en/m-le-mag/article/2024/04/06/justice-s-new-quest_6667576_117.html

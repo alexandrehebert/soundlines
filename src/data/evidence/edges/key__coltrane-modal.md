@@ -2,10 +2,10 @@
 
 Graph ID `key:coltrane-modal`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Modal_jazz>)
+**Findings** · Smithsonian Folkways anthology notes explicitly divide Coltrane’s playing into periods including a 1959–65 “modal period,” and identifies his modal recordings on *Kind of Blue* (Smithsonian Folkways PDF, lines 2246–2250). Direct institutional source strongly validates the edge, though it describes a career phase rather than his entire output.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://folkways-media.si.edu/docs/folkways/artwork/SFW40820.pdf)

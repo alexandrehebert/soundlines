@@ -1,0 +1,14 @@
+# Kraftwerk → Juan Atkins
+
+Graph ID `influence:kraftwerk-juan-atkins`
+
+**Review status** · Reviewed — confirmed; upgraded to high
+**Reviewed** · 2026-11-03
+
+## Sources checked
+- [Wired, 1994, Juan Atkins interview](https://www.wired.com/1994/07/techno/) — Atkins formed Cybotron “on the heels of the German group Kraftwerk”.
+- [RBMA Daily, Juan Atkins interview (2017)](https://daily.redbullmusicacademy.com/2017/05/interview-juan-atkins) — first heard Kraftwerk on Detroit radio; describes being inspired by them.
+- Wikipedia sources kept as supplementary.
+
+## Assessment
+Two independent interviews with Atkins document the influence. Raised to high; note unchanged.

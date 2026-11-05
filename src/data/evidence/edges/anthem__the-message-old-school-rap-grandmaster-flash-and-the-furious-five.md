@@ -2,10 +2,10 @@
 
 Graph ID `anthem:the-message-old-school-rap-grandmaster-flash-and-the-furious-five`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Message_(Grandmaster_Flash_and_the_Furious_Five_song)>), [2](<https://en.wikipedia.org/wiki/old_school_rap>)
+**Finding** · The Library of Congress essay describes “The Message” as a socially conscious track that expanded hip-hop’s lyrical range and became massively influential. It also clarifies the credit: Duke Bootee conceived, wrote, produced, and largely performed the track, with Melle Mel co-writing and providing the central vocal; Grandmaster Flash did not perform on it. The old-school rap classification is appropriate, though `landmark_of` would be more precise than a literal genre anthem.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [Library of Congress Recording Registry essay](https://www.loc.gov/static/programs/national-recording-preservation-board/documents/TheMessage.pdf).

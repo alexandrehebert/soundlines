@@ -2,10 +2,10 @@
 
 Graph ID `origin:label-def-jam-new-york`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph citations** · [1](<https://www.umgcatalog.com/labels/def-jam-recordings/>)
+**Findings** · Universal Music Group says Def Jam began in 1984, shaped by downtown New York City street culture and hip-hop (); the Smithsonian NMAAHC catalogue identifies the label as founded in 1984 ().
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.universalmusic.com/label/def-jam/) · [2](https://www.si.edu/object/advertisement-def-jam-recordings-and-box%3Anmaahc_2015.239.18)

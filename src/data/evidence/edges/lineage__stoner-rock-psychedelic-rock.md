@@ -1,13 +1,14 @@
-# Stoner rock → Psychedelic rock
+# lineage:stoner-rock-psychedelic-rock
 
 Graph ID `lineage:stoner-rock-psychedelic-rock`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
-**Relationship** · fusion_of · high
+**Relationship** · fusion_of · medium
 
-**Graph note** · The style combines hard-rock weight with psychedelic, extended-riff practice.
+**Finding** · AllMusic traces the style’s long jams to psychedelic and acid-rock precursors; the academic library study also notes psychedelia in stoner/doom metal. Strong component, but not a complete account of the style.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/stoner-metal-ma0000011961>), [2](<https://www.cambridge.org/core/books/abs/cambridge-companion-to-metal-music/get-your-double-kicks-on-route-666/9B2F59F9AEC8DE60D2D7E13FD68FF3D2>)
+**Sources checked**
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://www.allmusic.com/style/ma0000011961
+- https://caml.journals.yorku.ca/index.php/caml/article/download/32101/29347/33362

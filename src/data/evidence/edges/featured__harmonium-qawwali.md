@@ -2,10 +2,10 @@
 
 Graph ID `featured:harmonium-qawwali`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian>), [2](<https://elischolar.library.yale.edu/yjmr/vol8/iss2/1/>)
+**Findings** · Smithsonian Folkways describes qawwali singers accompanying themselves on harmonium; UNESCO’s ICHCAP account independently identifies the portable harmonium as a melodic instrument in qawwali.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://folkways.si.edu/pakistan-the-music-of-the-qawal/world/music/album/smithsonian) · [2](https://archive.unesco-ichcap.org/eng/ek/sub2017_2/sub3.php)

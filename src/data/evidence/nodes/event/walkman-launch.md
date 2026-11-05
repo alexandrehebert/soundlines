@@ -2,14 +2,16 @@
 
 Graph ID `event:walkman-launch`
 
-**Review status** · Launch date and scope cross-checked
+**Review status** · reviewed
 
-**Graph period** · 1979 (year)
+**Reviewed** · 2026-11-04
 
-## Evidence review
+## Sources checked
 
-The Smithsonian’s object essay corroborates the original launch on July 1, 1979, and gives June 1980 for the U.S. introduction. It documents distinct regional names and discusses the player’s role in personal listening. The date applies to the initial launch. [Archive evidence](https://music.si.edu/story/smithsonian-collections-object-sony-tps-l2-%E2%80%9Cwalkman%E2%80%9D-cassette-player-national-museum-american)
+- [Sony Group, 20th anniversary Walkman release](https://www.sony.com/en/SonyInfo/News/Press/199907/99-059/) — Sony dates the first TPS-L2 model to 1 July 1979.
+- [Smithsonian, Sony TPS-L2 Walkman](https://music.si.edu/object-day/sony-tps-l2-walkman-cassette-player) — Museum describes the product and market-specific naming, including Soundabout in the U.S.
+- [Sony Group History, A New Market Born from the Walkman](https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-03.html) — Company archival history discusses the July 1979 launch and early adoption.
 
-**Graph citations** · [1](<https://www.sony.com/en/SonyInfo/CorporateInfo/History/sonyhistory/2-01.html>), [2](<https://www.sony.com/en/SonyInfo/News/Press/201907/19-067E/>), [3](<https://music.si.edu/story/smithsonian-collections-object-sony-tps-l2-%E2%80%9Cwalkman%E2%80%9D-cassette-player-national-museum-american>)
+## Assessment
 
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 2 unsuccessful, 0 pending.
+The 1979 Japanese launch and later U.S. Soundabout name are supported. Portable audio devices predated Sony’s product; phrase its importance as popularizing personal stereo listening, not inventing portable sound.

@@ -2,12 +2,10 @@
 
 Graph ID `key:airplane-psychedelic`
 
-**Review status** · Reviewed — confirmed; upgraded to high
-**Reviewed** · 2026-11-03
+**Review status** · Source-checked
 
-## Sources checked
-- [Rock & Roll Hall of Fame, Jefferson Airplane](https://rockhall.com/inductees/jefferson-airplane/) — “voice of the psychedelic revolution”.
-- [BBC, A brief history of psychedelia in eight colours](https://www.bbc.co.uk/programmes/articles/4nWcSYlCbk9BDJryvdBZMNg/a-brief-history-of-psychedelia-in-eight-colours) — White Rabbit set the template.
+**Relationship** · key_artist_of · high
 
-## Assessment
-Rock Hall and BBC directly support. Raised to high.
+**Finding** · The Rock & Roll Hall of Fame describes Jefferson Airplane as a transformative voice of the psychedelic revolution and places its founder in the San Francisco sound. This directly supports the psychedelic association.
+
+**Source** · [Rock & Roll Hall of Fame](https://rockhall.com/inductees/jefferson-airplane/).

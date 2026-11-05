@@ -2,10 +2,10 @@
 
 Graph ID `anthem:gymnopedie-no-1-minimalism-erik-satie`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Gymnopédies>), [2](<https://en.wikipedia.org/wiki/minimalism>)
+**Findings** · LOC says Satie’s music had an unheard kind of minimalism decades before the genre was named. This is an anachronistic precursor relation rather than a contemporary genre assignment; keep moderate and explain that distinction.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://blogs.loc.gov/nls-music-notes/2021/05/erik-satie-and-the-art-of-simplicity/) · [2](https://catalogue.bnf.fr/ark:/12148/cb139451322)

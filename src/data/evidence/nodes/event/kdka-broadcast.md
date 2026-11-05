@@ -2,12 +2,15 @@
 
 Graph ID `event:kdka-broadcast`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1920 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · KDKA’s 2 November 1920 broadcast of U.S. election returns is often treated as a milestone in scheduled commercial radio broadcasting. The station also aired music, helping establish radio as a new channel for reaching listeners.
+## Sources checked
 
-**Graph citations** · [1](<https://blogs.loc.gov/now-see-hear/2018/10/adventures-in-research-a-radio-drama-of-discovery/>)
+- [Federal Judicial Center, Early Radio in the Federal Courts](https://www.fjc.gov/history/spotlight-judicial-history/early-radio-federal-courts) — Dates the KDKA election-return broadcast to 2 November 1920 and explains why it is often described as the first commercial radio broadcast.
+- [The Henry Ford, Results by Radio: Election Day 1920](https://www.thehenryford.org/collections/explore/articles/detail/articles/2020/10/15/results-by-radio-election-day-1920) — Documents that KDKA interspersed election returns with musical selections.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The date, election returns, and musical interludes are supported. “First commercial broadcast” is a common milestone label but depends on definition; amateur and experimental broadcasts predated it. Avoid a categorical first-broadcast claim.

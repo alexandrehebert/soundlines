@@ -4,6 +4,8 @@ Graph ID `anthem:libertango-tango-astor-piazzolla`
 
 **Review status** · Recording chronology and tango association cross-checked
 
+**Reviewed** · 2026-11-04
+
 **Relationship** · anthem_of · medium
 
 **Graph citations** · [1](<https://en.wikipedia.org/wiki/Libertango>), [2](<https://astorpiazzolla.com/es/a-puro-piazzolla/>), [3](<https://www.allmusic.com/album/piazzolla-libertango-mw0000314492>), [4](<https://www.allmusic.com/composition/libertango-tango-mc0002382010>)

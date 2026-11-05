@@ -1,13 +1,17 @@
-# Beijing Peking opera scene → Beijing
+# Scene Beijing Peking Opera Scene Beijing
 
 Graph ID `origin:scene-beijing-peking-opera-scene-beijing`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Scene geography is shared or regional where the description says so.
+**Finding** · Beijing’s municipal cultural history says Peking opera grew from Huiju traditions from south of the Yangtze, with Anhui troupes bringing it to Beijing in 1790; it then consolidated in Beijing with other regional forms and local tunes.
 
-**Graph citations** · [1](<https://english.beijing.gov.cn/beijinginfo/culture/culturaltreasures/cityofmuseums/list/202401/t20240116_3536780.html>)
+**Recommendation** · High for its formative Beijing scene; medium as a birthplace. Keep Beijing but make clear the form was assembled from multiple regional traditions and consolidated there.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://english.beijing.gov.cn/beijinginfo/culture/202005/t20200511_1894129.html?v=jt](https://english.beijing.gov.cn/beijinginfo/culture/202005/t20200511_1894129.html?v=jt)
+
+**Assessment** · Confidence reflects the exact place-to-scene/origin association. Where evidence describes a major center or local scene rather than a singular birthplace, the graph note preserves that distinction.

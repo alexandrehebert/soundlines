@@ -1,11 +1,14 @@
-# Terry Riley → Minimalism
+# key:riley-minimalism
 
 Graph ID `key:riley-minimalism`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and style/period fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Minimal_music>)
+**Finding** · American Mavericks ties Riley’s *In C* directly to minimalism and calls it a spiritual ancestor to later minimalist composers. Foundational relationship; high.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://americanmavericks.org/meet-the-mavericks/terry-riley
+- https://www.lso.co.uk/news-and-stories/composer-guide/steve-reich/

@@ -1,13 +1,14 @@
-# Stoner rock → Heavy metal
+# lineage:stoner-rock-heavy-metal
 
 Graph ID `lineage:stoner-rock-heavy-metal`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
-**Relationship** · fusion_of · high
+**Relationship** · fusion_of · medium
 
-**Graph note** · Heavy-metal riff weight is one of the style’s documented ingredients, alongside hard rock and psychedelia.
+**Finding** · Heavy/doom-metal riffs and weight are central to stoner metal, but this does not describe every use of “stoner rock,” and early influences also include acid rock and psychedelia. Medium, with naming variation noted.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/stoner-metal-ma0000011961>), [2](<https://www.cambridge.org/core/books/abs/cambridge-companion-to-metal-music/get-your-double-kicks-on-route-666/9B2F59F9AEC8DE60D2D7E13FD68FF3D2>)
+**Sources checked**
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://www.allmusic.com/style/ma0000011961
+- https://caml.journals.yorku.ca/index.php/caml/article/download/32101/29347/33362

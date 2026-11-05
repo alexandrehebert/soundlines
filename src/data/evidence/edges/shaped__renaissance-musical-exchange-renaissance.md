@@ -2,10 +2,16 @@
 
 Graph ID `shaped:renaissance-musical-exchange-renaissance`
 
-**Review status** · Pending source review
+**Review status** · Independently reviewed against source text
 
-**Relationship** · shaped · unrated
+**Relationship** · shaped · medium
 
-**Graph citations** · [1](<https://www.metmuseum.org/pt/essays/music-in-the-renaissance>)
+**Sources checked**
+- [www.metmuseum.org](https://www.metmuseum.org/pt/essays/music-in-the-renaissance) — checked for the event fact and this relationship.
+- [www.metmuseum.org](https://www.metmuseum.org/es/essays/music-in-the-renaissance) — checked for the event fact and this relationship.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The Met describes cross-European exchange as a driver of changes to Renaissance composition, genres, and dissemination. This supports a direct historical influence on Renaissance music; confidence is medium.

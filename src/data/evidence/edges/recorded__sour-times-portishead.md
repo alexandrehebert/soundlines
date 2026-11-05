@@ -2,10 +2,10 @@
 
 Graph ID `recorded:sour-times-portishead`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Sour_Times>)
+**Findings** · Portishead’s official *Dummy* listing names “Sour Times” among its singles and track listing; Official Charts documents the Portishead single (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://shop.portishead.co.uk/products/dummy-reissue-vinyl) · [2](https://www.officialcharts.com/songs/portishead-sour-times/)

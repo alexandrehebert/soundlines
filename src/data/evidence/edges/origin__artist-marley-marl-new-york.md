@@ -2,10 +2,16 @@
 
 Graph ID `origin:artist-marley-marl-new-york`
 
-**Review status** · Pending source review
+**Review status** · independently source-checked
 
-**Relationship** · originated_in · unrated
+**Relationship** · originated_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Marley_Marl>), [2](<https://www.allmusic.com/artist/marley-marl-mn0000286818>)
+**Sources checked**
+- [www.redbullmusicacademy.com](https://www.redbullmusicacademy.com/lectures/marley-marl-tokyo-2014/) — Red Bull Music Academy identifies Marley Marl as from Queens and records his Queensbridge background; AllMusic gives Queens, New York as his birthplace.
+- [www.allmusic.com](https://www.allmusic.com/artist/marley-marl-mn0000286818/biography) — Red Bull Music Academy identifies Marley Marl as from Queens and records his Queensbridge background; AllMusic gives Queens, New York as his birthplace.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+Red Bull Music Academy identifies Marley Marl as from Queens and records his Queensbridge background; AllMusic gives Queens, New York as his birthplace. The place association is supported.

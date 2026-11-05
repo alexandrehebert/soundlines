@@ -1,11 +1,14 @@
-# Lil Jon & the East Side Boyz → Crunk
+# key:lil-jon-east-side-boyz-crunk
 
 Graph ID `key:lil-jon-east-side-boyz-crunk`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/lil-jon-the-east-side-boyz-mn0000225892>)
+**Finding** · AP calls Lil Jon a central figure in crunk; his East Side Boyz collaboration is directly associated with popularizing the style. The combination is highly representative.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://apnews.com/article/9293200dd9936bffe5359c85314fa5dd
+- https://www.allmusic.com/artist/lil-jon-the-east-side-boyz-mn0000824216

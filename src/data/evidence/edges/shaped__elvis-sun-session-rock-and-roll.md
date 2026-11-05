@@ -2,10 +2,17 @@
 
 Graph ID `shaped:elvis-sun-session-rock-and-roll`
 
-**Review status** · Pending source review
+**Review status** · reviewed — relationship evidence cross-checked
 
-**Relationship** · shaped · unrated
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.memphismusichalloffame.com/inductee/elvis-presley/>)
+**Relationship** · shaped · high
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Sources checked
+
+- [memphismusichalloffame.com](https://www.memphismusichalloffame.com/inductee/elvis-presley/) — checked for the event and the claimed contribution to the linked tradition.
+- [loc.gov](https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/registry-by-induction-years/2002/) — checked for the event and the claimed contribution to the linked tradition.
+
+## Assessment
+
+The Sun session is a key early Rock-and-Roll recording milestone, not the sole origin of the genre.

@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-mei-lanfang-beijing`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Beijing was central to his Peking opera career; this does not state that he was born there.
+**Finding** · The National Museum of China states that Mei Lanfang was born in Beijing in 1894, while his ancestral home was Taizhou. This directly verifies the edge and corrects the prior note, which only described his career association.
 
-**Graph citations** · [1](<https://english.beijing.gov.cn/beijinginfo/culture/culturaltreasures/cityofmuseums/list/202401/t20240116_3536780.html>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [National Museum of China, Mei Lanfang exhibition](https://en.chnmuseum.cn/exhibition/exhibition_series/temporary_exhibitions/historical_and_cultural_exhibition/202201/t20220127_253498.html).

@@ -1,11 +1,15 @@
-# Madlib → Jazz rap
+# key:madlib-jazz-rap
 
 Graph ID `key:madlib-jazz-rap`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Madlib>), [2](<https://www.allmusic.com/artist/madlib-mn0000238375>)
+**Finding** · Scholarship includes Madlib among jazz-rap artists and Blue Note documents his extensive jazz projects. However, he is a broad hip-hop producer with jazz-rap work rather than an artist exclusively defined by that subgenre; medium is proportionate.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://ethnomusicologyreview.ucla.edu/content/we-got-jazz-next-generation-jazz-hip-hop-and-digital-scene
+- https://www.bluenote.com/artist/madlib/
+- https://www.newyorker.com/magazine/2021/01/25/the-obsessive-beat-making-of-madlib

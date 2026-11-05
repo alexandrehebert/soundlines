@@ -1,11 +1,14 @@
-# Warren G → G-funk
+# Warren G → G Funk
 
 Graph ID `key:warren-g-g-funk`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 030)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/g-funk-ma0000011824>)
+**Finding** · Official biography credits him with helping create G-funk; Grammy’s era retrospective situates his landmark work in the style.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [Warren G official biography](https://www.warreng.com/about)
+- [GRAMMY feature](https://www.grammy.com/news/remembering-the-g-funk-era)

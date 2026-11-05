@@ -1,11 +1,11 @@
-# 1999 → Cassius
+# Cassius recorded “1999”
 
 Graph ID `recorded:1999-cassius`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/1999_(Cassius_song)>)
+**Finding** · Chart record labels the song “CASSIUS 1999” by CASSIUS and gives Virgin catalogue details.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.officialcharts.com/songs/cassius-cassius-1999/](https://www.officialcharts.com/songs/cassius-cassius-1999/).

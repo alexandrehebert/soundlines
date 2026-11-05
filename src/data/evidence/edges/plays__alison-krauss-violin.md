@@ -2,10 +2,10 @@
 
 Graph ID `plays:alison-krauss-violin`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · plays · medium
+**Relationship** · plays · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Alison_Krauss>)
+**Finding** · The Bluegrass Music Hall of Fame lists fiddle as her primary instrument and documents violin lessons and fiddle competitions. Fiddle is a violin-family instrument.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [Bluegrass Music Hall of Fame & Museum](https://www.bluegrasshall.org/inductees/alison-krauss/).

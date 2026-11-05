@@ -1,0 +1,13 @@
+# Derrick May → Belleville Three
+
+Graph ID `member:derrick-may-belleville-three`
+
+**Review status** · Reviewed — May as a Belleville Three member confirmed
+**Reviewed** · 2026-11-03
+
+## Sources checked
+- [Detroit Historical Society](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/may-derrick) — the three Belleville High friends became known as the “Belleville Three”.
+- [Carnegie Hall timeline](https://timeline.carnegiehall.org/genres/detroit-techno) — Belleville Three 2017 performance.
+
+## Assessment
+This is core, uncontested membership. Confidence rises to high.

@@ -2,12 +2,15 @@
 
 Graph ID `event:grand-ole-opry-broadcast`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1925 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The WSM Barn Dance began in Nashville in November 1925 and later became the Grand Ole Opry, a long-running radio institution central to country music’s national circulation.
+## Sources checked
 
-**Graph citations** · [1](<https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/>)
+- [Grand Ole Opry, History](https://www.opry.com/about/history) — Institutional timeline dates the WSM Barn Dance launch to 28 November 1925 and distinguishes its later Grand Ole Opry name.
+- [Library of Congress, Music City 101](https://blogs.loc.gov/nls-music-notes/2018/03/music-city-101-nls-heads-to-nashville/) — Confirms the 1925 WSM Barn Dance broadcast and later Opry connection.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 1925 broadcast is confirmed. The original program was called the WSM Barn Dance; it was renamed Grand Ole Opry in 1927, so the node should not imply the show bore its later name from its first broadcast.

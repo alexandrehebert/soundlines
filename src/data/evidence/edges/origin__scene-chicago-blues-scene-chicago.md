@@ -1,13 +1,18 @@
-# Chicago blues scene → Chicago
+# Scene Chicago Blues Scene Chicago
 
 Graph ID `origin:scene-chicago-blues-scene-chicago`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · high
 
-**Graph note** · Scene geography is shared or regional where the description says so.
+**Finding** · The Library of Congress describes the Great Migration’s role in moving blues to northern cities, including Chicago; the *Encyclopedia of Chicago* explicitly relates Chicago blues to Southern migration and the modern music industry.)
 
-**Graph citations** · [1](<https://www.chessrecords.com/history/>), [2](<https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/blues/>)
+**Recommendation** · High. Chicago’s electric-blues scene is strongly supported. Retain the existing high confidence while preserving migration context.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/blues/](https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/blues/)
+- [https://www.encyclopedia.chicagohistory.org/pages/151.html](https://www.encyclopedia.chicagohistory.org/pages/151.html)
+
+**Assessment** · Confidence reflects the exact place-to-scene/origin association. Where evidence describes a major center or local scene rather than a singular birthplace, the graph note preserves that distinction.

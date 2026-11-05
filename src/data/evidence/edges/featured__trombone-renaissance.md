@@ -1,11 +1,11 @@
-# Trombone → Renaissance music
+# Trombone Renaissance
 
 Graph ID `featured:trombone-renaissance`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Trombone>)
+**Finding** · Philharmonia states trombone had a Renaissance golden era with substantial church music written for trombone groups.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://philharmonia.co.uk/resources/instruments/trombone/](https://philharmonia.co.uk/resources/instruments/trombone/).

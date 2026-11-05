@@ -2,10 +2,10 @@
 
 Graph ID `recorded:a-night-in-tunisia-dizzy-gillespie`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/A_Night_in_Tunisia>)
+**Findings** · Philharmonie de Paris’ Eduthèque recounts the 1944 Continental session as “Interlude” and a Jan. 1945 Gillespie recording under “Night in Tunisia” (source).
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://edutheque.philharmoniedeparis.fr/0756969-standards-night-in-tunisia.aspx?_lg=fr-FR)

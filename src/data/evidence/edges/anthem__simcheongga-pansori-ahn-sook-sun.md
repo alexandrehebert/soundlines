@@ -1,11 +1,14 @@
-# Simcheongga → Pansori
+# anthem:simcheongga-pansori-ahn-sook-sun
 
 Graph ID `anthem:simcheongga-pansori-ahn-sook-sun`
 
-**Review status** · Pending source review
+**Review status** · Source checked; caveats retained (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · low
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Simcheongga>), [2](<https://en.wikipedia.org/wiki/pansori>)
+**Finding** · Ahn Sook-sun is documented presenting the complete pansori work `Simcheongga`, a well-known tale. That validates artist/work/genre association, but the cited item describes a performance event, not a uniquely identified released track/master. A work’s canonical standing does not by itself establish this particular recording as a pansori anthem. Keep cautious pending exact recording evidence.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.koreatimes.co.kr/lifestyle/koreanheritage/20181225/master-pansori-singer-ahn-presents-simcheong-ga-for-year-end-conert
+- https://nl.go.kr/EN/contents/EN32901000000.do

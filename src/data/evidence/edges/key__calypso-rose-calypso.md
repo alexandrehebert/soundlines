@@ -2,10 +2,10 @@
 
 Graph ID `key:calypso-rose-calypso`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/calypso-ma0000002494>)
+**Findings** · Library and Archives Canada-hosted dissertation documents her five Calypso Queen titles and Road March wins; its passage also records her own description of calypso (LAC thesis PDF, lines 5942–5961). Direct and authoritative contextual evidence.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://central.bac-lac.canada.ca/.item?app=Library&id=TC-OOCC-23956&oclc_number=1032924176&op=pdf)

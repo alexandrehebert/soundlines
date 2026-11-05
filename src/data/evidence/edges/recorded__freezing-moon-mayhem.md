@@ -2,10 +2,10 @@
 
 Graph ID `recorded:freezing-moon-mayhem`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Freezing_Moon>)
+**Findings** · Mayhem’s official Bandcamp album page for *De Mysteriis Dom Sathanas* lists “Freezing Moon” (Bandcamp).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://mayhemindie.bandcamp.com/album/de-mysteriis-dom-sathanas)

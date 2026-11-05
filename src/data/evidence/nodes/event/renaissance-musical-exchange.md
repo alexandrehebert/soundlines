@@ -2,12 +2,15 @@
 
 Graph ID `event:renaissance-musical-exchange`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1400–1600 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Circulation among courts, churches, cities, and printers helped spread compositional practices across European regions and supported new secular and sacred repertories. This periodization describes documented exchange, not a single origin.
+## Sources checked
 
-**Graph citations** · [1](<https://www.metmuseum.org/pt/essays/music-in-the-renaissance>)
+- [Metropolitan Museum of Art, Music in the Renaissance](https://www.metmuseum.org/es/essays/music-in-the-renaissance) — Museum overview describes musical exchange across European regions in 1400–1600 and links it to changes in composition and dissemination.
+- [Oxford Academic, Printing Music in Renaissance Rome](https://academic.oup.com/book/46693) — Scholarly study documents the growth of print, repertory exchange, and musical culture from the late fifteenth to early seventeenth centuries.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+This is a broad periodization rather than a single historical event, and the graph’s phrasing appropriately says it describes documented exchange rather than an origin. Keep the description at this scale and avoid attributing all Renaissance style change to cross-border exchange alone.

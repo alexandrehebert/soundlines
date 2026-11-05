@@ -1,0 +1,13 @@
+# Kevin Saunderson → Detroit techno
+
+Graph ID `key:kevin-saunderson-detroit-techno`
+
+**Review status** · Reviewed — Saunderson as Detroit techno key artist confirmed
+**Reviewed** · 2026-11-03
+
+## Sources checked
+- [Detroit Historical Society: Saunderson](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/saunderson-kevin) — Belleville Three; KMS; Inner City.
+- [DHS Legends Plaza](https://www.detroithistorical.org/exhibitions/legends-plaza) — “Techno Music Pioneer”.
+
+## Assessment
+Confidence rises to high.

@@ -2,12 +2,16 @@
 
 Graph ID `collab:sasha-john-digweed`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · collaborated_with · unrated
+**Relationship** · collaborated_with · high
 
-**Graph note** · Toured and released mix albums together as Sasha & John Digweed from 1993.
+**Graph note** · Released joint mix albums, including Renaissance: The Mix Collection and Northern Exposure.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Sasha_(DJ)>), [2](<https://www.allmusic.com/artist/sasha-mn0002141576>), [3](<https://en.wikipedia.org/wiki/John_Digweed>), [4](<https://www.allmusic.com/artist/john-digweed-mn0000182989>)
+**Graph citations** · [1](<https://www.grammy.com/news/sasha-john-digweed-northern-exposure-25th-album-anniversary-record>)
 
 **Citation retrieval** · 0 bulk responses, 0 browser opens, 4 unsuccessful, 0 pending.
+
+## Source check (2026-11-05)
+
+GRAMMY documents joint mix releases including Renaissance: The Mix Collection and Northern Exposure; exact 1993 start and touring details are not established here.

@@ -1,11 +1,11 @@
-# Ella Fitzgerald → Vocal jazz
+# Ella Fitzgerald → vocal jazz
 
 Graph ID `key:ella-fitzgerald-vocal-jazz`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [National Endowment for the Arts: Ella Fitzgerald](https://www.arts.gov/honors/jazz/ella-fitzgerald) — calls her the quintessential jazz singer and discusses her scat improvisation (lines 31–33).
 
-**Graph citations** · [1](<https://www.allmusic.com/style/vocal-jazz-ma0000002948>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+High confidence for vocal jazz. The source explicitly supports jazz singing and improvisation.

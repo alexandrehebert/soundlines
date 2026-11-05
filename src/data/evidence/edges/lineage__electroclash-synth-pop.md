@@ -1,13 +1,15 @@
-# Electroclash → Synth-pop
+# lineage:electroclash-synth-pop
 
 Graph ID `lineage:electroclash-synth-pop`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
 **Relationship** · fusion_of · high
 
-**Graph note** · Electroclash revived and recombined synth-pop and new-wave signifiers with electro and punk club culture.
+**Finding** · Scholarship and contemporary coverage identify synth-pop among electroclash’s sources, alongside new wave, punk, techno and electro. Well supported as a component.
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/miss-kittin-mn0000497290>), [2](<https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1>)
+**Sources checked**
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://spectrum.library.concordia.ca/id/eprint/977861/
+- https://ra.co/features/4493
+- https://www.sfgate.com/entertainment/article/Surging-onto-the-scene-Electroclash-mixes-pop-2778564.php

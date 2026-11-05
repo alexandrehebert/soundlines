@@ -2,12 +2,16 @@
 
 Graph ID `event:fania-yankee-stadium`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1973 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The Fania All-Stars’ stadium concert made New York salsa visible on a mass scale and was recorded for the live album released in 1975. Sources differ on whether the concert fell on 23 or 24 August, so the graph records the year only.
+## Sources checked
 
-**Graph citations** · [1](<https://concord.com/concord-albums/fania-all-stars-live-at-yankee-stadium/>), [2](<https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FaniaAllStars.pdf>), [3](<https://concord.com/news/fania-all-stars-long-out-of-print-classic-latin-soul-rock-returns-to-vinyl-for-50th-anniversary/>)
+- [Fania Records history](https://fania.com/history/) — Label’s official chronology dates the All-Stars Yankee Stadium performance to 23 August 1973.
+- [Library of Congress National Recording Registry essay, Live at Yankee Stadium](https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/FaniaAllStars.pdf) — Discusses the concert and the two-volume 1975 album release; notes archival ambiguity in the concert chronology.
+- [Society for American Baseball Research, Concerts at Yankee Stadium](https://sabr.org/journal/article/concerts-at-yankee-stadium/) — Documents contemporary stadium concert date as 24 August, illustrating conflicting published dates.
 
-**Citation retrieval** · 3 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The concert year and its importance are clear; sources disagree between 23 and 24 August. Keeping year-only precision is the right choice. The live album followed in 1975, and that distinction is retained.

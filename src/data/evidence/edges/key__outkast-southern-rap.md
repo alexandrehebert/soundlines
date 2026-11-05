@@ -1,11 +1,14 @@
-# OutKast → Southern rap
+# key:outkast-southern-rap
 
 Graph ID `key:outkast-southern-rap`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/southern-rap-ma0000002871>)
+**Finding** · Rock Hall explicitly locates the duo in Southern hip-hop/Dirty South; Atlanta identity and central role make this a defining connection.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://rockhall.com/inductees/outkast/
+- https://www.allmusic.com/artist/outkast-mn0000420381

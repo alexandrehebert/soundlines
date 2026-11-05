@@ -1,13 +1,15 @@
-# Congolese rumba → Mbalax
+# lineage:mbalax-congolese-rumba
 
 Graph ID `lineage:mbalax-congolese-rumba`
 
-**Review status** · Pending source review
+**Review status** · Influence/direction and evidence checked (2026-11-05)
 
-**Relationship** · influences · unrated
+**Relationship** · influences · medium
 
-**Graph note** · One of several influences on Senegalese urban dance music, alongside local traditions.
+**Finding** · Sources place Congolese popular music among several influences on Senegalese urban music that developed into mbalax, alongside griot traditions and other transnational styles. Direction is plausible; do not state Congolese rumba as a sole or direct parent.
 
-**Graph citations** · [1](<https://www.britannica.com/biography/Youssou-NDour>), [2](<https://en.wikipedia.org/wiki/Mbalax>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+- https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file?accession=ohiou1510780384221502&disposition=inline
+- https://www.britannica.com/biography/Youssou-NDour
+- https://revistas.usp.br/sankofa/pt_BR/article/view/119064

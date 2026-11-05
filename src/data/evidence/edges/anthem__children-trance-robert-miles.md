@@ -4,6 +4,8 @@ Graph ID `anthem:children-trance-robert-miles`
 
 **Review status** · Release and crossover cross-checked
 
+**Reviewed** · 2026-11-04
+
 **Relationship** · anthem_of · medium
 
 **Graph citations** · [1](<https://en.wikipedia.org/wiki/Children_(Robert_Miles_song)>), [2](<https://www.officialcharts.com/songs/robert-miles-children/>), [3](<https://www.insomniac.com/music/from-the-crate-robert-miles-children/>)

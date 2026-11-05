@@ -1,11 +1,15 @@
-# Papa Wemba → Soukous
+# key:papa-wemba-soukous
 
 Graph ID `key:papa-wemba-soukous`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/soukous-ma0000002784/artists>)
+**Finding** · RBMA says Papa Wemba took Congo’s homegrown soukous to Europe and the world. He was a leading singer and bandleader in the style; high is warranted.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.redbullmusicacademy.com/lectures/papa-wemba-lecture/
+- https://www.britannica.com/art/soukous
+- https://www.bbc.com/news/world-africa-36123871

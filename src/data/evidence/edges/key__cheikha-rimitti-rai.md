@@ -2,10 +2,10 @@
 
 Graph ID `key:cheikha-rimitti-rai`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Cheikha_Rimitti>), [2](<https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894>), [3](<https://en.wikipedia.org/wiki/Ra%C3%AF>)
+**Findings** · Encyclopedia.com says she pioneered raï; Los Angeles Times obituary calls her the Mother of Rai (Encyclopedia.com, Los Angeles Times). Strong biographical evidence.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.encyclopedia.com/international/encyclopedias-almanacs-transcripts-and-maps/rimitti-cheikha-1923-2006) · [2](https://www.latimes.com/archives/la-xpm-2006-jun-04-me-rimitti4-story.html)

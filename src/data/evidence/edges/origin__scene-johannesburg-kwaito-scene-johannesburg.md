@@ -1,13 +1,18 @@
-# Johannesburg kwaito scene → Johannesburg
+# Scene Johannesburg Kwaito Scene Johannesburg
 
 Graph ID `origin:scene-johannesburg-kwaito-scene-johannesburg`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Scene geography is shared or regional where the description says so.
+**Finding** · Peer-reviewed *Popular Music and Society* research says kwaito’s style developed in the Johannesburg region; African Music scholarship situates the genre in post-apartheid township culture. The scene includes multiple townships and practitioners. [Popular Music and Society](https://www.tandfonline.com/doi/full/10.1080/03007766.2011.634097); [African Music](https://journal.ru.ac.za/index.php/africanmusic/article/view/1782)
 
-**Graph citations** · [1](<https://www.sahistory.org.za/article/kwaito-south-african-urban-music>)
+**Recommendation** · **High for the Johannesburg-area scene; retain.** Keep plural township geography and avoid making the whole scene city-center-only.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.tandfonline.com/doi/full/10.1080/03007766.2011.634097](https://www.tandfonline.com/doi/full/10.1080/03007766.2011.634097)
+- [https://journal.ru.ac.za/index.php/africanmusic/article/view/1782](https://journal.ru.ac.za/index.php/africanmusic/article/view/1782)
+
+**Assessment** · A local scene, development center, or label address is distinguished from an exclusive genre birthplace. Confidence reflects the actual place relation asserted by the graph.

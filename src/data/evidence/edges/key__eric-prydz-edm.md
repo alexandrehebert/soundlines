@@ -2,10 +2,10 @@
 
 Graph ID `key:eric-prydz-edm`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Eric_Prydz>), [2](<https://www.allmusic.com/artist/eric-prydz-mn0000184677>)
+**Findings** · His own and specialist profiles emphasize electronic dance music, house and progressive house; the broad EDM tag is valid as an umbrella but less precise than the latter subgenres. Keep medium.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/artist/eric-prydz-mn0000184677) · [2](https://www.insomniac.com/music/artists/eric-prydz/) · [3](https://musicbrainz.org/artist/35dac7d2-0b1f-470f-9a5a-c53c8821f6d6)

@@ -2,10 +2,14 @@
 
 Graph ID `anthem:a-change-is-gonna-come-soul-sam-cooke`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/A_Change_Is_Gonna_Come>), [2](<https://en.wikipedia.org/wiki/soul>)
+**Graph citations** · [1](<https://blogs.loc.gov/now-see-hear/2021/02/on-the-recording-registry-a-change-is-gonna-come-1964/>)
 
 **Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+## Source check (2026-11-05)
+
+LOC calls it a soulful ode and an anthem of the Civil Rights Movement; supports both soul association and anthem stature.

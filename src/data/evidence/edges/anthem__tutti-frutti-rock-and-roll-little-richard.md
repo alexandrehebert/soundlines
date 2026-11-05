@@ -1,11 +1,15 @@
-# Tutti Frutti → Rock and roll
+# anthem:tutti-frutti-rock-and-roll-little-richard
 
 Graph ID `anthem:tutti-frutti-rock-and-roll-little-richard`
 
-**Review status** · Pending source review
+**Review status** · Source checked; version/canonical-status caveats retained (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Tutti_Frutti_(song)>), [2](<https://en.wikipedia.org/wiki/rock_and_roll>)
+**Finding** · LOC describes the 1955 breakthrough and selected it for the National Recording Registry in 2009. A foundational rock-and-roll recording; the anthem/canonical characterization is well supported.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/african-americans-on-the-recording-registry/
+- https://blogs.loc.gov/now-see-hear/2014/05/awopbopaloomop-alopbamboom/
+- https://rockhall.com/inductees/little-richard/

@@ -1,11 +1,14 @@
-# Marley Marl → Old-school rap
+# key:marley-marl-old-school-rap
 
 Graph ID `key:marley-marl-old-school-rap`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Marley_Marl>), [2](<https://www.allmusic.com/artist/marley-marl-mn0000286818>)
+**Finding** · He is a first-generation hip-hop producer whose late-1980s work is central to old-school rap history. The term is period-relative, but clearly applies to his formative career.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/artist/p101803/biography
+- https://www.washingtonpost.com/archive/lifestyle/2004/08/27/pete-rock-hip-hops-soul-survivor/433fde74-7ae0-4586-89bf-d2ea3320a638/

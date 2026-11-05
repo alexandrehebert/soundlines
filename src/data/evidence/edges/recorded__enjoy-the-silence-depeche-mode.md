@@ -2,10 +2,10 @@
 
 Graph ID `recorded:enjoy-the-silence-depeche-mode`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Enjoy_the_Silence>)
+**Finding** · Archive page documents the single and lists “Enjoy the Silence” as its A-side. Artist attribution is clear in the official band archive context.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.archives.depechemode.com/discography/singles/25_enjoythesilence.html](https://www.archives.depechemode.com/discography/singles/25_enjoythesilence.html).

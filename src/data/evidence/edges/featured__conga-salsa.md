@@ -1,11 +1,11 @@
-# Conga → Salsa
+# Conga Salsa
 
 Graph ID `featured:conga-salsa`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Conga>)
+**Finding** · Smithsonian Folkways teaching resource includes conga in its salsa ensemble/performance activity.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://folkways.si.edu/caribbean-beats-blends/music/tools-for-teaching/smithsonian](https://folkways.si.edu/caribbean-beats-blends/music/tools-for-teaching/smithsonian).

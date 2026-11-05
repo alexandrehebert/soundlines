@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-rock-action-records-glasgow`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Findings** · The label’s official history calls Rock Action a Glasgow-based independent label owned and run by Mogwai ().
 
-**Graph citations** · [1](<https://rockactionrecords.com/about>), [2](<https://mogwai.scot/biography/>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://rockaction.scot/pages/the-story)

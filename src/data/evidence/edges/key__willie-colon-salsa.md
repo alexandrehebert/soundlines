@@ -1,11 +1,14 @@
-# Willie Colón → Salsa
+# Willie Colon → Salsa
 
 Graph ID `key:willie-colon-salsa`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 030)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/subgenre/salsa-ma0000002840>)
+**Finding** · Official biography calls him a salsa legend and LA Phil documents collaborations with major salsa singers. Strong central association.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [Willie Colón official biography](https://www.williecolon.com/bio)
+- [LA Philharmonic biography](https://www.laphil.com/people/willie-colon)

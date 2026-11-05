@@ -2,10 +2,10 @@
 
 Graph ID `key:college-synthwave`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · high
+**Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://online.ucpress.edu/jpms/article/33/1/70/116330/Reconstructed-NostalgiaAesthetic-Commonalities-and>), [2](<https://riviste.unimi.it/index.php/sss/article/view/14136>), [3](<https://www.allmusic.com/artist/college-mn0002009347>)
+**Findings** · AllMusic classifies College/David Grellier as synthwave, and College’s official site identifies the artist and electronic-composer project. SoundCloud’s editorial history places Grellier among early synthwave adopters. The genre is retrospective and porous; medium confidence fits better than high.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/artist/college-mn0002130572/biography) · [2](https://www.college-music.com/) · [3](https://soundcloud.com/stories/post/new-era-synthwave)

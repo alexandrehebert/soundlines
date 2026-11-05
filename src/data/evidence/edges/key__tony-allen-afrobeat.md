@@ -2,10 +2,13 @@
 
 Graph ID `key:tony-allen-afrobeat`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 030)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/afro-beat-ma0000004495>)
+**Finding** · Duke describes Allen as the rhythmic engine of Fela Kuti’s Afrobeat; Nonesuch credits him and Fela with creating the style. Central.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [Duke University Press](https://www.dukeupress.edu/tony-allen)
+- [Nonesuch Records biography](https://publicity.nonesuch.com/sites/g/files/g2000019346/files/2025-01/tony-allen-bio_1267824533220.pdf)

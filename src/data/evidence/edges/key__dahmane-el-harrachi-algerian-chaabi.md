@@ -2,10 +2,10 @@
 
 Graph ID `key:dahmane-el-harrachi-algerian-chaabi`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Dahmane_El_Harrachi>)
+**Findings** · The French National Library (BnF) authority record directly classifies him as a singer-songwriter-performer of Arabic chaabi popular song (). The specific “Algerian” scope is corroborated by the national government’s *Portraits de France*, which situates his career in chaabi musical circles in Algeria ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://catalogue.bnf.fr/ark:/12148/cb13954498s) · [2](https://www.ecologie.gouv.fr/sites/default/files/publications/2023-11-29-Portraits-de-France.pdf)

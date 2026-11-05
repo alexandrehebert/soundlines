@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-e-t-mensah-accra`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Accra Orchestra and the city’s highlife network were central to his career.
+**Findings** · The Langlois Foundation’s highlife collection and specialist music reference Amoeba both state Mensah was born in Accra: Langlois Foundation, Amoeba Music.
 
-**Graph citations** · [1](<https://www.si.edu/object/siris_sil_773265>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://fondation-langlois.org/html/e/page.php?NumPage=2278) · [2](https://www.amoeba.com/e-t-mensah/artist/115609/bio)

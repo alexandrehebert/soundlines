@@ -1,11 +1,15 @@
-# Ravi Shankar → Hindustani classical
+# key:ravi-shankar-hindustani-classical
 
 Graph ID `key:ravi-shankar-hindustani-classical`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and style/period fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://www.allmusic.com/style/indian-classical-ma0000002638>)
+**Finding** · India’s national academy recognizes him for Hindustani instrumental music; the Met describes his pivotal role in spreading Hindustani classical music internationally. The relation is direct and central.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.sangeetnatak.gov.in/public/uploads/awardees/docs/1740735753_Ravi%20Shankar.pdf
+- https://www.metmuseum.org/es/perspectives/shankar-birthday
+- https://folkways.si.edu/artist/ravi-shankar

@@ -2,10 +2,10 @@
 
 Graph ID `recorded:i-feel-love-donna-summer`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/I_Feel_Love>)
+**Findings** · The Library of Congress Registry essay says the track appeared on Summer’s *I Remember Yesterday* and was released in 1977 on Casablanca (LOC essay); Official Charts lists Donna Summer as the artist (Official Charts).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.loc.gov/static/programs/national-recording-preservation-board/documents/I-Feel-Love.pdf) · [2](https://www.officialcharts.com/songs/donna-summer-i-feel-love/)

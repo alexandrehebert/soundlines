@@ -1,11 +1,14 @@
-# Lucinda Williams → Alternative country
+# key:lucinda-williams-alt-country
 
 Graph ID `key:lucinda-williams-alt-country`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/alt-country-ma0000002421>)
+**Finding** · Encyclopedia of Arkansas explicitly calls her a leading light of alt-country; Smithsonian places her in the 1970s Texas alt-country scene. Strong direct fit.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://encyclopediaofarkansas.net/entries/lucinda-williams-3012/
+- https://folkways.si.edu/lucinda-williams-blues/music/article/smithsonian

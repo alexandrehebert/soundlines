@@ -4,6 +4,8 @@ Graph ID `anthem:mood-indigo-swing-duke-ellington`
 
 **Review status** · 1930 recording history and repertoire cross-checked
 
+**Reviewed** · 2026-11-04
+
 **Relationship** · anthem_of · medium
 
 **Graph citations** · [1](<https://en.wikipedia.org/wiki/Mood_Indigo>), [2](<https://americanhistory.si.edu/collections/object/nmah_1061308>), [3](<https://ellingtonia.com/discography/1930-1939/>), [4](<https://www.jazzstandards.com/compositions-1/moodindigo.htm>)

@@ -1,13 +1,16 @@
-# House → Disco
+# House Disco
 
 Graph ID `lineage:house-disco`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · derived_from · medium
 
-**Graph note** · Chicago house developed from post-disco club culture, reshaping disco records and DJ practices through drum machines and local production.
+**Finding** · House inherited and reworked disco records and DJ practices, but it became a distinct Chicago sound and social culture. Keep the derivation edge as historical lineage, not as a claim that house is simply electronic disco.
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/house-ma0000002651>), [2](<https://www.allmusic.com/artist/frankie-knuckles-mn0000793821>), [3](<https://www.allmusic.com/artist/marshall-jefferson-mn0000373844>), [4](<https://www.allmusic.com/artist/larry-heard-mn0000138578>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 4 unsuccessful, 0 pending.
+- [https://academic.oup.com/book/5894](https://academic.oup.com/book/5894)
+- [https://www.tandfonline.com/doi/abs/10.1080/03007766.2018.1519099](https://www.tandfonline.com/doi/abs/10.1080/03007766.2018.1519099)
+
+**Assessment** · Confidence reflects the strength and scope of this taxonomy/lineage claim. Hybrid roots, regional contexts, and broad umbrella labels remain explicit in the finding.

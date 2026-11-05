@@ -2,10 +2,10 @@
 
 Graph ID `lineage:french-house-house`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · subgenre_of · high
 
-**Graph citations** · [1](<https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/>), [2](<https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208>), [3](<https://www.allmusic.com/style/french-house-ma0000013529>)
+**Findings** · DDEX defines French House as House music with its own disco sampling, filter, and groove traits and explicitly lists House as its parent.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://service.ddex.net/dd/DD-AVS-CURRENT/dd/ddex_FrenchHouse.html)

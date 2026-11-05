@@ -2,10 +2,10 @@
 
 Graph ID `recorded:shutdown-skepta`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Shutdown_(Skepta_song)>)
+**Findings** · Skepta’s official channel credits the track to him and Boy Better Know; Apple Music and Official Charts list the 2015 single under Skepta (,,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.youtube.com/watch?v=MQOG5BkY2Bc) · [2](https://music.apple.com/us/album/shutdown-single/1168849247) · [3](https://www.officialcharts.com/songs/skepta-shutdown/)

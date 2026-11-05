@@ -39,8 +39,11 @@ export type EdgeType =
   // tracks
   | 'anthem_of'
   | 'recorded_by'
+  | 'composed_by'
   // events
   | 'shaped'
+  | 'context_for'
+  | 'recognized'
   | 'involved'
   | 'occurred_in'
 
@@ -303,7 +306,10 @@ export const EDGE_TYPE_LABELS: Record<EdgeType, string> = {
   originated_in: 'originated in',
   anthem_of: 'anthem of',
   recorded_by: 'recorded by',
+  composed_by: 'composed by',
   shaped: 'shaped',
+  context_for: 'provides historical context for',
+  recognized: 'recognizes',
   involved: 'involved',
   occurred_in: 'took place in',
 }
@@ -326,7 +332,10 @@ export const EDGE_TYPE_INVERSE_LABELS: Record<EdgeType, string> = {
   originated_in: 'birthplace of',
   anthem_of: 'anthems',
   recorded_by: 'recordings',
+  composed_by: 'compositions',
   shaped: 'shaped by',
+  context_for: 'historical context from',
+  recognized: 'recognized in',
   involved: 'involved in',
   occurred_in: 'events here',
 }

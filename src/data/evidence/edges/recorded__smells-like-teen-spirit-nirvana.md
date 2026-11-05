@@ -2,10 +2,10 @@
 
 Graph ID `recorded:smells-like-teen-spirit-nirvana`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Smells_Like_Teen_Spirit>)
+**Findings** · Nirvana’s official *Nevermind* page lists “Smells Like Teen Spirit” as track one; the official artist-channel remaster is credited to Nirvana and *Nevermind* (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.nirvana.com/releases-archive/nevermind/) · [2](https://www.youtube.com/watch?v=hqcoStdsQog)

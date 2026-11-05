@@ -2,12 +2,15 @@
 
 Graph ID `event:gauhar-jaan-recording-sessions`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1902 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Gramophone Company engineer Fred Gaisberg recorded Indian performers in Calcutta in 1902, including Gauhar Jaan. Historians dispute some “first Indian recording” claims, so this event marks a documented recording campaign rather than a definitive first.
+## Sources checked
 
-**Graph citations** · [1](<https://www.emiarchivetrust.org/the-sound-of-the-hound-11-to-india/>), [2](<https://indianexpress.com/article/lifestyle/a-voice-from-long-ago-sashimukhi-not-gauhar-jaan-was-the-first-indian-voice-to-be-recorded/>)
+- [EMI Archive Trust, The Sound of the Hound: To India](https://www.emiarchivetrust.org/the-sound-of-the-hound-11-to-india/) — Company archive history describes Fred Gaisberg’s 1902 Indian recording expedition and his recording of Gauhar Jaan in Calcutta.
+- [Archive of Indian Music via Google Arts & Culture](https://artsandculture.google.com/asset/gauhar-jaan/7wE_r0Yl-ZS9bQ) — Identifies Gauhar Jaan among the early commercial gramophone artists recorded in November 1902.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The 1902 Calcutta recording campaign and Gauhar Jaan’s participation are supported. “First Indian recording” claims vary by how Indian artist, territory, and commercial issue are defined; the node prudently avoids an absolute first.

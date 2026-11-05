@@ -2,10 +2,10 @@
 
 Graph ID `key:frankie-knuckles-house`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/house-ma0000002651>), [2](<https://www.allmusic.com/artist/frankie-knuckles-mn0000793821>), [3](<https://www.allmusic.com/artist/marshall-jefferson-mn0000373844>), [4](<https://www.allmusic.com/artist/larry-heard-mn0000138578>)
+**Findings** · The Hall identifies him as the inventor/popularizer of house music, named after Chicago’s Warehouse; his own historical interview describes the formative Warehouse/Power Plant era. This is a defining link.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 4 unsuccessful, 0 pending.
+**Sources** · [1](https://chicagolgbthalloffame.org/knuckles-frankie/) · [2](https://daily.redbullmusicacademy.com/2018/02/frankie-knuckles-1995-interview/?curator=MusicREDEF)

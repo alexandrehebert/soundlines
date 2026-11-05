@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import rawGraph from './graph.json'
 import type { GenreFamily, MusicGraph, NodeType } from '../graph/types.ts'
@@ -238,7 +239,7 @@ describe('graph.json integrity', () => {
     }
   })
 
-  it('gives every event a category, a description, sources, and sourced links', () => {
+  it('gives every event a category, a description, and sources; event links are sourced when present', () => {
     for (const node of graph.nodes) {
       if (node.type === 'event') continue
       expect(node.category, node.id).toBeUndefined()
@@ -253,8 +254,8 @@ describe('graph.json integrity', () => {
       }
       expect(event.description, event.id).toBeTruthy()
       expect(event.sources?.length, event.id).toBeGreaterThan(0)
-      const shaped = graph.edges.filter((edge) => edge.type === 'shaped' && edge.from === event.id)
-      expect(shaped.length, event.id).toBeGreaterThan(0)
+      const eventLinks = graph.edges.filter((edge) => edge.from === event.id)
+      for (const edge of eventLinks) expect(edge.sources?.length, edge.id).toBeGreaterThan(0)
     }
   })
 
@@ -262,6 +263,8 @@ describe('graph.json integrity', () => {
     const types = new Map(graph.nodes.map((node) => [node.id, node.type]))
     const targets: Record<string, readonly NodeType[]> = {
       shaped: ['genre', 'instrument', 'label', 'scene'],
+      context_for: ['genre', 'scene'],
+      recognized: ['genre'],
       involved: ['artist', 'track', 'instrument', 'label', 'scene'],
       occurred_in: ['place'],
     }
@@ -341,7 +344,7 @@ describe('graph.json integrity', () => {
     const index = createTimelineModel(buildIndex(graph), 'instrument').index
     expect(index.graph.nodes.every((node) => node.type === 'instrument')).toBe(true)
     expect(lineage(index, 'instrument:electric-guitar', createTimelineModel(buildIndex(graph), 'instrument').orientation)
-      .ancestors).toEqual(new Set(['instrument:guitar', 'instrument:lute']))
+      .ancestors).toEqual(new Set(['instrument:guitar']))
     expect(lineage(index, 'instrument:tr-909', createTimelineModel(buildIndex(graph), 'instrument').orientation)
       .ancestors).toEqual(new Set(['instrument:tr-808']))
     expect(searchNodes(graph, 'Roland TR-808')[0].node.id).toBe('instrument:tr-808')
@@ -497,6 +500,16 @@ describe('graph.json integrity', () => {
     expect(lineage(index, 'genre:grunge').ancestors).toContain('genre:blues')
     expect(lineage(index, 'genre:deep-house').ancestors).toContain('genre:jazz')
     expect(lineage(index, 'genre:synth-pop').ancestors).toContain('genre:rock')
+  })
+
+  it.each([
+    ['lineage:medieval-renaissance', 'genre:renaissance', 'genre:medieval'],
+    ['lineage:renaissance-baroque', 'genre:baroque', 'genre:renaissance'],
+    ['lineage:congolese-rumba-soukous', 'genre:soukous', 'genre:congolese-rumba'],
+    ['lineage:electro-hip-hop', 'genre:electro', 'genre:hip-hop'],
+  ])('keeps retyped descendant-to-parent edge %s in its documented direction', (id, from, to) => {
+    expect(graph.edges.find((edge) => edge.id === id)).toMatchObject({ from, to })
+    expect(lineage(buildIndex(graph), from).ancestors).toContain(to)
   })
 
   it('makes the added genres and artists searchable with their relationships', () => {
@@ -677,14 +690,20 @@ describe('graph.json integrity', () => {
     }
   })
 
-  it('leaves no node completely disconnected', () => {
+  it('keeps only explicitly documented standalone or unresolved nodes disconnected', () => {
+    const text = readFileSync(new URL('./evidence/disconnected-entries.md', import.meta.url), 'utf8')
+    const allowed = [...text.matchAll(/^\| `([^`]+)` \|/gm)].map((match) => match[1])
+    expect(allowed.length).toBe(new Set(allowed).size)
     const connected = new Set<string>()
     for (const edge of graph.edges) {
       connected.add(edge.from)
       connected.add(edge.to)
     }
-    for (const node of graph.nodes) {
-      expect(connected.has(node.id), node.id).toBe(true)
+    const disconnected = graph.nodes.filter((node) => !connected.has(node.id))
+    expect(new Set(disconnected.map(({ id }) => id))).toEqual(new Set(allowed))
+    for (const node of disconnected) {
+      expect(node.sources?.length, node.id).toBeGreaterThan(0)
+      expect(['event', 'track'], node.id).toContain(node.type)
     }
   })
 })

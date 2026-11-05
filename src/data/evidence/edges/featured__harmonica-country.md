@@ -2,10 +2,10 @@
 
 Graph ID `featured:harmonica-country`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Harmonica>)
+**Findings** · Country Music Hall of Fame documents the harmonica’s continuing role in country; Smithsonian catalogs country harmonica players and recordings.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.countrymusichalloffame.org/learn/family-and-community-resources/history-of-country-music-instruments) · [2](https://americanhistory.si.edu/collections/object/nmah_1306400)

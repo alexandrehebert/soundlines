@@ -9,7 +9,7 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 export interface ReviewStatus {
-  /** Most recent `**Reviewed** · YYYY-MM-DD` stamp across evidence files. */
+  /** Most recent review stamp or inline review-status date for a live entry. */
   lastReviewed: string | null
   /** Graph ids whose evidence file is no longer pending source review. */
   reviewed: string[]
@@ -18,6 +18,7 @@ export interface ReviewStatus {
 const ROOT = fileURLToPath(new URL('..', import.meta.url))
 export const EVIDENCE_DIR = join(ROOT, 'src/data/evidence')
 export const STATUS_FILE = join(ROOT, 'src/data/review-status.json')
+const GRAPH_FILE = join(ROOT, 'src/data/graph.json')
 
 function markdownFiles(dir: string): string[] {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
@@ -28,17 +29,22 @@ function markdownFiles(dir: string): string[] {
 }
 
 export function collectReviewStatus(dir = EVIDENCE_DIR): ReviewStatus {
-  const reviewed: string[] = []
+  const graph: { nodes: { id: string }[]; edges: { id: string }[] } =
+    JSON.parse(readFileSync(GRAPH_FILE, 'utf8'))
+  const liveIds = new Set([...graph.nodes, ...graph.edges].map(({ id }) => id))
+  const reviewed = new Set<string>()
   let lastReviewed: string | null = null
   for (const file of markdownFiles(dir)) {
     const text = readFileSync(file, 'utf8')
     const id = /^Graph ID `([^`]+)`/m.exec(text)?.[1]
-    if (!id || text.includes('Pending source review')) continue
-    reviewed.push(id)
+    if (!id || !liveIds.has(id) || text.includes('Pending source review')) continue
+    if (/^\*\*Disposition\*\*.*\bRemoved\b/im.test(text)) continue
+    reviewed.add(id)
     const date = /^\*\*Reviewed\*\* · (\d{4}-\d{2}-\d{2})/m.exec(text)?.[1]
+      ?? /^\*\*Review status\*\*[^\n]*?(\d{4}-\d{2}-\d{2})/m.exec(text)?.[1]
     if (date && (!lastReviewed || date > lastReviewed)) lastReviewed = date
   }
-  return { lastReviewed, reviewed: reviewed.sort() }
+  return { lastReviewed, reviewed: [...reviewed].sort() }
 }
 
 export function formatReviewStatus(status: ReviewStatus) {

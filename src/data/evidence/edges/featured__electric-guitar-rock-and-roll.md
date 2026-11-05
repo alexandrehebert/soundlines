@@ -1,11 +1,11 @@
-# Electric guitar → Rock and roll
+# Electric Guitar Rock And Roll
 
 Graph ID `featured:electric-guitar-rock-and-roll`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Electric_guitar>)
+**Finding** · Rock & Roll Hall of Fame educational material describes electric guitar as highly influential throughout rock-and-roll history.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [https://edu.rockhall.com/resource-type/edu-collection/](https://edu.rockhall.com/resource-type/edu-collection/).

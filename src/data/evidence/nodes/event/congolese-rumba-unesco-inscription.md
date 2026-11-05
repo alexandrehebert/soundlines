@@ -2,12 +2,15 @@
 
 Graph ID `event:congolese-rumba-unesco-inscription`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 2021 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The Democratic Republic of the Congo and the Republic of the Congo jointly secured inscription of Congolese rumba on UNESCO’s Representative List, recognizing a living urban music and dance tradition central to Congolese identity and diaspora life.
+## Sources checked
 
-**Graph citations** · [1](<https://ich.unesco.org/en/RL/congolese-rumba-01711?RL=01711>), [2](<https://ich.unesco.org/en/Decisions/16.COM/8.b.8>)
+- [UNESCO Intangible Cultural Heritage, Congolese rumba](https://ich.unesco.org/en/RL/congolese-rumba-01711?RL=01711) — Official record identifies the tradition across the two Congos and its 2021 inscription.
+- [UNESCO Intergovernmental Committee, Decision 16.COM 8.B.8](https://ich.unesco.org/en/decisions/16.COM/8.B.8) — Records the joint nomination and 2021 decision to inscribe Congolese rumba.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The joint nomination and 2021 inscription are confirmed. Frame this as recognition of a living tradition, not as UNESCO establishing or validating a single origin narrative.

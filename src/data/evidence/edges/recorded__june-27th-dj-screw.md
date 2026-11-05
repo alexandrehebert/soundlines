@@ -2,10 +2,10 @@
 
 Graph ID `recorded:june-27th-dj-screw`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/June_27th_(mixtape)>)
+**Findings** · University of Houston Libraries describes *June 27th* as DJ Screw’s mixtape, recorded for DeMo’s birthday, and identifies the central 35-minute freestyle as multiple S.U.C. members rapping over a Kris Kross beat (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://exhibits.lib.uh.edu/s/exhibits/item/18136) · [2](https://exhibits.lib.uh.edu/s/dj-screw-records/page/june-27th)

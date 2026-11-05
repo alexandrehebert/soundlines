@@ -2,12 +2,16 @@
 
 Graph ID `event:euridice-premiere`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1600 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Jacopo Peri’s Euridice was performed in Florence in 1600. It is the earliest complete opera to survive; Peri’s earlier Dafne (1598) is lost.
+## Sources checked
 
-**Graph citations** · [1](<https://prep.sfopera.com/learn/about-opera/a-timeline-of-opera-history/>)
+- [Metropolitan Opera, Obsessions with Orpheus](https://www.metopera.org/discover/education/educator-guides/eurydice/obsessions-with-orpheus/) — Describes Peri’s 1600 wedding-court Euridice as the earliest surviving complete opera and places Caccini’s work in the same context.
+- [Opera: A History in Documents, Oxford Academic](https://academic.oup.com/book/49383/chapter-abstract/422387949) — Places Euridice in the early opera history while acknowledging the priority of the lost Dafne.
+- [University of Bologna Corago catalog](https://corago.unibo.it/opera/Z000005496) — Catalog record dates Peri’s Euridice to 6 October 1600 at Palazzo Pitti, Florence.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The 1600 performance and “earliest complete surviving opera” distinction are supported. Do not call it the first opera without noting Peri and Corsi’s earlier Dafne is lost and opera emerged through several experiments.

@@ -1,13 +1,17 @@
-# Compton hip-hop scene → Compton
+# Scene Compton Hip Hop Scene Compton
 
 Graph ID `origin:scene-compton-hip-hop-scene-compton`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Scene geography is shared or regional where the description says so.
+**Finding** · Compton Art & History Museum’s “Sounds of the City” documents Compton’s local artists, spaces, and influence on hip-hop. This supports a Compton scene, although the graph’s current edge is a scene association rather than a claim that hip-hop began there.
 
-**Graph citations** · [1](<https://www.comptonmuseum.org/exhibitions/nwa-and-compton>)
+**Recommendation** · Medium. Keep as a local lineage within greater Los Angeles hip-hop history. The museum supports significance but does not alone establish Compton as the scene’s exclusive origin.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.comptonmuseum.org/previous-exhibitions/sounds-of-the-city](https://www.comptonmuseum.org/previous-exhibitions/sounds-of-the-city)
+
+**Assessment** · Confidence reflects the exact place-to-scene/origin association. Where evidence describes a major center or local scene rather than a singular birthplace, the graph note preserves that distinction.

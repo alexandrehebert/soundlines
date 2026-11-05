@@ -1,11 +1,11 @@
-# Round Midnight → Thelonious Monk
+# 'Round Midnight → Thelonious Monk
 
 Graph ID `recorded:round-midnight-thelonious-monk`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/'Round_Midnight>)
+**Findings** · Blue Note states it recorded Monk extensively beginning in 1947; the Blue Note catalog lists Monk’s “’Round About Midnight” master recorded November 21, 1947, with the band personnel (,).
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.bluenote.com/artist/thelonious-monk/) · [2](https://www.jazzdisco.org/blue-note-records/catalog-1500-series/)

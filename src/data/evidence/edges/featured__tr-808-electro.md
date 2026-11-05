@@ -2,10 +2,10 @@
 
 Graph ID `featured:tr-808-electro`
 
-**Review status** · Production evidence checked
+**Review status** · Source-checked
 
-**Relationship** · featured_in · high
+**Relationship** · featured_in · medium
 
-## Evidence review
+**Finding** · Roland describes the TR-808’s contribution to rap and electro; it identifies Mantronix’s “Fresh Is the Word” as an electro classic using 808 programming. Direct but label-authored retrospective evidence; medium.
 
-The Smithsonian account documents Baker’s use of the physical machine on “Planet Rock.” Roland’s sound history places the 808 in the development of electro. [Evidence 1](<https://www.smithsonianmag.com/arts-culture/history-tr-808-drum-machine-180975205/>) [Evidence 2](<https://articles.roland.com/nothing-sounds-quite-like-an-808-analyzing-the-bass-that-changed-music/>)
+**Sources** · [https://articles.roland.com/retracing-the-roland-sound-in-hip-hop/](https://articles.roland.com/retracing-the-roland-sound-in-hip-hop/); [https://www.roland.com/us/promos/roland_tr-808/?lang=en-US](https://www.roland.com/us/promos/roland_tr-808/?lang=en-US).

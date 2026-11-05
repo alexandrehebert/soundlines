@@ -1,11 +1,14 @@
-# Madonna → Pop
+# key:madonna-pop
 
 Graph ID `key:madonna-pop`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/pop-ma0000012254>)
+**Finding** · Hall of Fame identifies her as a shape-shifting pop icon; AllMusic calls her the Queen of Pop. Her genre range does not weaken the central pop association.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://rockhall.com/inductees/madonna/
+- https://www.allmusic.com/artist/madonna-mn0000237205

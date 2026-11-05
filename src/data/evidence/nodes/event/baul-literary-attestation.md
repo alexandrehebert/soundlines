@@ -2,12 +2,15 @@
 
 Graph ID `event:baul-literary-attestation`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1400–1499 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · UNESCO traces Baul devotional songs to the fifteenth century, when they first appeared in Bengali literature. This is a documentary reference point, not a claim that the living tradition began then.
+## Sources checked
 
-**Graph citations** · [1](<https://ich.unesco.org/en/RL/baul-songs-00107>)
+- [UNESCO: Baul Songs](https://ich.unesco.org/en/RL/baul-songs-00107) — States that Baul devotional songs can be traced to the fifteenth century in Bengali literature.
+- [UNESCO nomination document](https://ich.unesco.org/doc/src/00010-EN.pdf) — Provides the nomination dossier’s cultural and documentary framing of the tradition.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The fifteenth-century date is a documentary attestation in literature, not the origin date of a living, orally transmitted tradition. The node already makes that distinction; retain it.

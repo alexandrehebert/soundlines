@@ -1,11 +1,11 @@
-# Paint It Black → The Rolling Stones
+# Paint It, Black → The Rolling Stones
 
 Graph ID `recorded:paint-it-black-rolling-stones`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Paint_It_Black>)
+**Findings** · ABKCO’s official audio identifies the 1966 original single mono recording and credits the Rolling Stones; the catalog number and label agree with the single issue (,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.youtube.com/watch?v=b1uIM2nPocE) · [2](https://www.officialcharts.com/songs/rolling-stones-paint-it-black/)

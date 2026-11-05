@@ -2,10 +2,10 @@
 
 Graph ID `featured:electric-guitar-blues-rock`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Electric_guitar>)
+**Findings** · Smithsonian’s Lemelson Center documents the electric guitar’s adoption by blues musicians; Cambridge calls guitar predominant among blues instruments. Together support the broad blues-rock association, but the edge combines two related traditions.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://invention.si.edu/invention-stories/invention-electric-guitar) · [2](https://www.cambridge.org/core/books/abs/cambridge-companion-to-blues-and-gospel-music/guitar/169E48C59C42084777762EFB8A379DC1)

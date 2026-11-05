@@ -2,12 +2,10 @@
 
 Graph ID `origin:genre-reggaeton-san-juan`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Puerto Rico was a major developmental center alongside earlier Jamaican and Panamanian roots.
+**Findings** · San Juan’s marginalized urban communities were a defining developmental center, but reggaetón’s lineage also runs through earlier Panamanian reggae en español and Jamaican reggae/dancehall. Do not imply a single-city origin.
 
-**Graph citations** · [1](<https://www.si.edu/object/reggaeton%3Anmahc_2016.40.1>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.jstor.org/stable/j.ctv11hphs8) · [2](https://scholarworks.utrgv.edu/hist_fac/135/)

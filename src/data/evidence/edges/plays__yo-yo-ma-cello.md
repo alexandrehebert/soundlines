@@ -2,10 +2,10 @@
 
 Graph ID `plays:yo-yo-ma-cello`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · plays · high
 
-**Graph citations** · [1](<https://www.loc.gov/item/n80016911/yo-yo-ma/>), [2](<https://www.yo-yoma.com/biography/>)
+**Finding** · Ma’s official biography says he began learning cello at age four and describes his concert work for cello.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [Yo-Yo Ma official biography](https://www.yo-yoma.com/biography/).

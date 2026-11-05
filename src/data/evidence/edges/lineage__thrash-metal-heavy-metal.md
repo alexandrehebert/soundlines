@@ -1,13 +1,15 @@
-# Thrash metal → Heavy metal
+# lineage:thrash-metal-heavy-metal
 
 Graph ID `lineage:thrash-metal-heavy-metal`
 
-**Review status** · Pending source review
+**Review status** · Taxonomic hierarchy checked (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Relationship** · subgenre_of · high
 
-**Graph note** · Thrash is a branch of heavy metal.
+**Finding** · Thrash metal is an extreme/heavy-metal subgenre. It has distinct scenes and punk influences, but this parent taxonomy is established. High.
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/speed-thrash-metal-ma0000002874>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://www.allmusic.com/genre/speed-thrash-metal-ma0000002874
+- https://www.allmusic.com/genre/heavy-metal-ma0000002721
+- https://academic.oup.com/book/62310/chapter/552774038

@@ -2,10 +2,10 @@
 
 Graph ID `recorded:the-sindhi-bhairavi-mode-ali-akbar-khan`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Sindhi-Bhairavi_Mode>)
+**Findings** · Smithsonian Folkways’ track page identifies the exact “The Sindhi-Bhairavi Mode” recording in Ali Akbar Khan’s album catalog ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://folkways.si.edu/ali-akbar-khan/the-sindhi-bhairavi-mode/classical-india-world/music/track/smithsonian)

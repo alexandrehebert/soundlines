@@ -2,10 +2,10 @@
 
 Graph ID `recorded:i-got-you-i-feel-good-james-brown`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/I_Got_You_(I_Feel_Good)>)
+**Findings** · Xavier University’s King Records exhibit catalogs “I Got You (I Feel Good)” as a 1965 James Brown and the Famous Flames King release (Xavier/King exhibit); Qobuz records the King single (Qobuz).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.exhibit.xavier.edu/king_records/13/) · [2](https://www.qobuz.com/us-en/album/i-got-you-i-feel-good-james-brown-the-famous-flames/r7wwefn6qysqa)

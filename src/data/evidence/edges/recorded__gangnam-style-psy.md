@@ -2,10 +2,10 @@
 
 Graph ID `recorded:gangnam-style-psy`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Gangnam_Style>)
+**Findings** · YG Entertainment’s official channel published the official PSY “Gangnam Style” video; YouTube’s account of the release identifies it as PSY’s video (official video, YouTube editorial).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.youtube.com/watch?v=SW_iujvUAzQ) · [2](https://blog.youtube/creator-and-artist-stories/10-years-of-youtubes-billion-views-club-psy-gangnam-style/)

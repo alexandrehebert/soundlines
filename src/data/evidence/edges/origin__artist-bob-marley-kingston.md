@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-bob-marley-kingston`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Kingston is a documented center of Marley’s musical career; he was born in Nine Mile, Jamaica.
+**Findings** · Marley was born in Nine Miles, St. Ann; the National Library of Jamaica describes his move to Kingston and Trench Town friendships/music formation: National Library of Jamaica, Jamaica Information Service.
 
-**Graph citations** · [1](<https://www.si.edu/object/archives/components/sova-acma-03-027-ref1934>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://nlj.gov.jm/project/robert-nesta-marley-1945-1981/) · [2](https://jis.gov.jm/jamaica/bob-marley/)

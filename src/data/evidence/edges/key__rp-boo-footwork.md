@@ -1,11 +1,9 @@
-# RP Boo → Juke / footwork
+# RP Boo → Footwork
 
 Graph ID `key:rp-boo-footwork`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · medium
+**Finding** · Red Bull Music Academy identifies RP Boo as the inventor of footwork through his 1997 track “Baby Come On,” and describes him as a pioneer of the Chicago sound.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/juke-footwork-ma0000013543>), [2](<https://www.allmusic.com/artist/dj-rashad-mn0000998421>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Source** · [https://www.redbullmusicacademy.com/lectures/rp-boo-lecture/](https://www.redbullmusicacademy.com/lectures/rp-boo-lecture/)

@@ -2,12 +2,10 @@
 
 Graph ID `origin:genre-amapiano-pretoria`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · originated_in · medium
 
-**Graph note** · An early Gauteng center; accounts also identify Johannesburg and other townships.
+**Finding** · Wits University describes amapiano roots across Gauteng, particularly Pretoria and Johannesburg, and names townships in both regions. Pretoria is a key early center, but this evidence does not support an exclusive city of origin.
 
-**Graph citations** · [1](<https://www.wits.ac.za/curiosity/latest/issue-19/disruption/the-musical-that-moved-the-world-to-sas-beat.html>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [Wits University](https://www.wits.ac.za/curiosity/latest/issue-19/disruption/the-musical-that-moved-the-world-to-sas-beat.html).

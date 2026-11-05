@@ -2,10 +2,8 @@
 
 Graph ID `key:presley-rock-and-roll`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · medium
+**Finding** · Rock Hall identifies Presley as the first “King of Rock & Roll” and credits his role in bringing the genre to mainstream audiences.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Rock_and_roll>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://rockhall.com/inductees/elvis-presley/](https://rockhall.com/inductees/elvis-presley/)

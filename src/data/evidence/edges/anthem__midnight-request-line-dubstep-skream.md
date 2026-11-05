@@ -2,10 +2,10 @@
 
 Graph ID `anthem:midnight-request-line-dubstep-skream`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Midnight_Request_Line>), [2](<https://en.wikipedia.org/wiki/dubstep>)
+**Findings** · Sources identify the track as an influential early dubstep release; Bandcamp tags it dubstep and Planet Wax calls it a defining tune, though promotional superlatives are not independent evidence. Genre strong, canonical reputation plausible; avoid treating “biggest tune” marketing as objective fact.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://ra.co/reviews/23709) · [2](https://skreamizm.bandcamp.com/track/midnight-request-line) · [3](https://planetwax.net/products/tempa014)

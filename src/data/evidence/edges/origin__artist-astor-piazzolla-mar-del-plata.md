@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-astor-piazzolla-mar-del-plata`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Born in Mar del Plata.
+**Findings** · Argentina’s Culture Secretariat and National Library state he was born in Mar del Plata: Argentina Culture Secretariat, National Library of Argentina.
 
-**Graph citations** · [1](<https://www.argentina.gob.ar/cultura/mar-del-plata-astor-piazzolla>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.argentina.gob.ar/node/494391) · [2](https://www.bn.gov.ar/noticias/11-de-marzo-de-1921-nace-astor-piazzolla)

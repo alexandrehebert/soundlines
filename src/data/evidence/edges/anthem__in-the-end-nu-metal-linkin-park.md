@@ -2,10 +2,10 @@
 
 Graph ID `anthem:in-the-end-nu-metal-linkin-park`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/In_the_End_(Linkin_Park_song)>), [2](<https://en.wikipedia.org/wiki/nu_metal>)
+**Findings** · Louder calls it an anthemic single and describes the band’s metal/melody synthesis. This supports song stature; the opened feature does not explicitly call the song nu metal, so keep genre confidence moderate pending direct track classification.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.loudersound.com/bands-artists/interviews/linkin-park-numb-meaning-and-story-of-song) · [2](https://www.linkinpark.com/about)

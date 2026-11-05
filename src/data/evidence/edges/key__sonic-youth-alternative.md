@@ -2,10 +2,8 @@
 
 Graph ID `key:sonic-youth-alternative`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · medium
+**Finding** · AllMusic calls the group an alternative-rock institution and identifies its influence in the American underground.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Alternative_rock>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source(s)** · https://www.allmusic.com/artist/sonic-youth-p5474/biography

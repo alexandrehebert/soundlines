@@ -2,10 +2,10 @@
 
 Graph ID `anthem:moanin-hard-bop-art-blakey`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Moanin'_(Art_Blakey_composition)>), [2](<https://en.wikipedia.org/wiki/hard_bop>)
+**Findings** · Blue Note describes the 1958 album as quintessential hard bop and says the popularity of the title track led to the album being named *Moanin’*. The source supports the track’s hard-bop identity and canonical stature, though the confidence is album-label-adjacent.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://store.bluenote.com/products/art-blakey-the-jazz-messengers-moanin-lp-blue-note-classic-vinyl-edition)

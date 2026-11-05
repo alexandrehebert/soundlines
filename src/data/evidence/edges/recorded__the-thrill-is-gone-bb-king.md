@@ -2,10 +2,10 @@
 
 Graph ID `recorded:the-thrill-is-gone-bb-king`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Thrill_Is_Gone>)
+**Findings** · The NEA identifies B.B. King’s 1969 recording as his crossover hit; the official artist-channel upload carries the B.B. King credit and 1969 ℗ record (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.arts.gov/honors/heritage/riley-bb-king) · [2](https://www.youtube.com/watch?v=kpC69qIe02E)

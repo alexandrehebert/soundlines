@@ -1,11 +1,11 @@
-# Banjo → Bluegrass
+# Banjo Bluegrass
 
 Graph ID `featured:banjo-bluegrass`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Banjo>)
+**Finding** · LOC Registry essay discusses Earl Scruggs’s banjo performance and identifies the recording within bluegrass history.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FoggyMtBreakdown.pdf](https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FoggyMtBreakdown.pdf).

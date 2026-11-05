@@ -2,10 +2,10 @@
 
 Graph ID `recorded:i-can-t-be-satisfied-muddy-waters`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/I_Can't_Be_Satisfied>)
+**Findings** · The Clemson Aristocrat discography lists Muddy Waters with “I Can’t Be Satisfied” on Aristocrat 1305A, session Dec. 1947 and release June 1948 (Clemson discography); the LOC/PBS account also describes an earlier Library of Congress field take titled “Can’t Be Satisfied” (PBS).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://campber.people.clemson.edu/aristocrat.html) · [2](https://www.pbs.org/wnet/americanmasters/muddy-waters-cant-be-satisfied/730/)

@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-juan-luis-guerra-santo-domingo`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · high
 
-**Graph note** · Born in Santo Domingo.
+**Findings** · Guerra’s official biography identifies Santo Domingo as his birthplace; Grammy biography supports his Dominican identity and career:,.
 
-**Graph citations** · [1](<https://www.juanguerra.com/biografia>), [2](<https://www.grammy.com/artists/juan-luis-guerra/15361>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.juanguerra.com/biografia) · [2](https://www.grammy.com/artists/juan-luis-guerra/15361)

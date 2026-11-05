@@ -1,11 +1,14 @@
-# King Tubby → Dub
+# key:king-tubby-dub
 
 Graph ID `key:king-tubby-dub`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/dub-ma0000002559>)
+**Finding** · Jamaica’s government information service names King Tubby among dub’s pioneering engineers/producers; JNHT calls him a dub originator. A direct, defining association.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://jis.gov.jm/jamaica/dub/
+- https://www.jnht.com/documents/atlas_jm.pdf

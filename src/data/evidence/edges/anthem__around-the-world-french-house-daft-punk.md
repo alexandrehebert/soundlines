@@ -2,10 +2,14 @@
 
 Graph ID `anthem:around-the-world-french-house-daft-punk`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Around_the_World_(Daft_Punk_song)>), [2](<https://en.wikipedia.org/wiki/french_house>)
+**Graph citations** · [1](<https://articles.roland.com/listening-guide-french-house/>)
 
 **Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+
+## Source check (2026-11-05)
+
+Places Daft Punk’s “Around the World” among French house/French touch exemplars.

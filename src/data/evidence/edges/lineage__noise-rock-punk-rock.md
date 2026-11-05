@@ -1,11 +1,13 @@
-# Noise rock → Punk rock
+# noise rock → punk rock
 
 Graph ID `lineage:noise-rock-punk-rock`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; derived audit 002)
 
 **Relationship** · derived_from · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/noise-rock-ma0000004455>), [2](<https://academic.oup.com/book/6294>)
+**Finding** · **High.** Direct source explicitly calls noise-rock an outgrowth of punk rock. Current high is well supported.
 
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [AllMusic, Noise-Rock overview](https://www.allmusic.com/genre/noise-rock-ma0000004455)

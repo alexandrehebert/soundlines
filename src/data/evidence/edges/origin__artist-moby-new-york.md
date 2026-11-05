@@ -2,10 +2,16 @@
 
 Graph ID `origin:artist-moby-new-york`
 
-**Review status** · Pending source review
+**Review status** · independently source-checked
 
-**Relationship** · originated_in · unrated
+**Relationship** · originated_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Moby>), [2](<https://www.allmusic.com/artist/moby-mn0000477116>)
+**Sources checked**
+- [www.theguardian.com](https://www.theguardian.com/music/2021/apr/12/moby-on-fame-and-regret-i-was-an-out-of-control-utterly-entitled-drink-and-drug-addict) — The Guardian identifies Moby as born in Harlem, New York; AllMusic independently lists New York, NY.
+- [www.allmusic.com](https://www.allmusic.com/artist/moby-mn0000477116/biography) — The Guardian identifies Moby as born in Harlem, New York; AllMusic independently lists New York, NY.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The Guardian identifies Moby as born in Harlem, New York; AllMusic independently lists New York, NY. The place association is supported.

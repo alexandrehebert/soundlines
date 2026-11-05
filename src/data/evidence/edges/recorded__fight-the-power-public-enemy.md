@@ -2,10 +2,10 @@
 
 Graph ID `recorded:fight-the-power-public-enemy`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Fight_the_Power_(Public_Enemy_song)>)
+**Finding** · Direct song listing credits Public Enemy and gives Def Jam catalogue/release details.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.officialcharts.com/songs/public-enemy-fight-the-power/](https://www.officialcharts.com/songs/public-enemy-fight-the-power/).

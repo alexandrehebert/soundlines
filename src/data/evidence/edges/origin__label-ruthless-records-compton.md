@@ -2,12 +2,8 @@
 
 Graph ID `origin:label-ruthless-records-compton`
 
-**Review status** · Pending source review
+**Disposition** · Removed after source review (2026-11-05)
 
-**Relationship** · originated_in · high
+**Finding** · Ruthless’s own history identifies Eazy-E as a Compton native, but a contemporaneous Los Angeles Times account says he founded the label in the San Fernando Valley, away from his Compton neighborhood (,).
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
-
-**Graph citations** · [1](<https://www.ruthlessrecords.com/about>), [2](<https://www.comptonmuseum.org/previous-exhibitions/sounds-of-the-city>)
-
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources checked** · [1](https://www.ruthlessrecords.com/about) · [2](https://www.latimes.com/archives/la-xpm-1991-10-18-ca-472-story.html)

@@ -2,10 +2,10 @@
 
 Graph ID `recorded:brown-paper-bag-roni-size`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Brown_Paper_Bag_(Roni_Size_song)>)
+**Finding** · Names Roni Size and Reprazent with the track, and describes “Brown Paper Bag” as a single from *New Forms*. Graph’s Roni Size credit is supported, though the track is also credited to Reprazent; consider whether the artist node should reflect the full release credit.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.insomniac.com/music/roni-size-reprazent-brown-paper-bag/](https://www.insomniac.com/music/roni-size-reprazent-brown-paper-bag/).

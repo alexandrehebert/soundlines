@@ -2,10 +2,10 @@
 
 Graph ID `recorded:soul-makossa-manu-dibango-manu-dibango`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · unrated
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://www.britannica.com/biography/Manu-Dibango>), [2](<https://en.wikipedia.org/wiki/Soul_Makossa>)
+**Findings** · Paris’s National Museum of Immigration History recounts Dibango’s original recording and subsequent Decca/Atlantic release; Qobuz’s Mercury catalog identifies the 1972 album/single under Manu Dibango (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.histoire-immigration.fr/en/node/7547) · [2](https://www.qobuz.com/us-en/album/soul-makossa-manu-dibango/m7h0y5cyorqux)

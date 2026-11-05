@@ -1,11 +1,17 @@
-# Philip Glass → Minimalism
+# Glass Minimalism
 
 Graph ID `key:glass-minimalism`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Minimal_music>)
+**Finding** · NEA and Glass’s official biography directly describe the emergence of minimalism in his work; IRCAM traces the repetitive techniques in his early compositions. Foundational association.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.arts.gov/honors/opera/philip-glass](https://www.arts.gov/honors/opera/philip-glass)
+- [https://brahms.ircam.fr/en/composer/philip-glass/workcourse](https://brahms.ircam.fr/en/composer/philip-glass/workcourse)
+- [https://philipglass.com/biography/](https://philipglass.com/biography/)
+
+**Assessment** · Confidence applies to the full artist-to-genre “key artist” claim. Historical lineage, scene affiliation, or precursor status is stated explicitly where it is weaker than direct genre-defining evidence.

@@ -1,11 +1,11 @@
-# Conga → Latin jazz
+# Conga Latin Jazz
 
 Graph ID `featured:conga-latin-jazz`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Conga>)
+**Finding** · Smithsonian Folkways credits Mongo Santamaria on congas on a Latin-jazz recording.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://folkways.si.edu/mongo-santamaria/afro-blue/jazz-ragtime-latin-world/music/track/smithsonian](https://folkways.si.edu/mongo-santamaria/afro-blue/jazz-ragtime-latin-world/music/track/smithsonian).

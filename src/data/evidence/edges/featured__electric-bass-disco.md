@@ -2,10 +2,10 @@
 
 Graph ID `featured:electric-bass-disco`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Bass_guitar>)
+**Finding** · Brian F. Wright’s researched history describes electric bass as shaping disco and its 1960s–70s music landscape; direct genre-specific support.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://press.umich.edu/Books/T/The-Bastard-Instrument](https://press.umich.edu/Books/T/The-Bastard-Instrument).

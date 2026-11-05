@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-sire-records-new-york`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Findings** · Sire’s official founder history says Stein started the label with Richard Gottehrer in 1966 and recounts his return to New York; Long Island Music and Entertainment Hall of Fame documents the founding partnership (,).
 
-**Graph citations** · [1](<https://www.rhino.com/article/the-history-of-sire-records>), [2](<https://www.warnerrecords.com/sire-records>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.sirerecords.com/seymour-stein-story) · [2](https://www.limusichalloffame.org/inductees/seymour-stein/)

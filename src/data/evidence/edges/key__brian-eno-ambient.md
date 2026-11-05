@@ -2,10 +2,14 @@
 
 Graph ID `key:brian-eno-ambient`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://academic.oup.com/book/44623/chapter-abstract/378621525>), [2](<https://www.allmusic.com/genre/ambient-ma0000002424>), [3](<https://www.allmusic.com/artist/brian-eno-mn0000618138>)
+**Graph citations** · [1](<https://apnews.com/article/921b7fa6bc7e0c9ad3246d331d279721>), [2](<https://music.apple.com/us/artist/brian-eno/38124>)
 
 **Citation retrieval** · 0 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.
+
+## Source check (2026-11-05)
+
+AP calls Eno best known for pioneering ambient music; Apple Music says he codified the style beginning with *Ambient 1: Music for Airports*. Strong artist-wide association.

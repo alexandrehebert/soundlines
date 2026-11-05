@@ -2,10 +2,10 @@
 
 Graph ID `recorded:children-robert-miles`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Children_(Robert_Miles_song)>)
+**Finding** · Both identify “Children” as Robert Miles’s track; Official Charts also characterizes it as an instrumental dance track.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.officialcharts.com/songs/robert-miles-children/](https://www.officialcharts.com/songs/robert-miles-children/); [https://www.insomniac.com/music/from-the-crate-robert-miles-children/](https://www.insomniac.com/music/from-the-crate-robert-miles-children/).

@@ -2,10 +2,13 @@
 
 Graph ID `key:tito-puente-salsa`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 030)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/subgenre/salsa-ma0000002840>)
+**Finding** · Smithsonian explicitly identifies Puente as a salsa percussionist and major Latin bandleader. His career also spans mambo and Latin jazz.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [Smithsonian Tito Puente Papers](https://www.si.edu/object/archives/sova-nmah-ac-0894)
+- [Smithsonian Latin-music feature](https://www.si.edu/spotlight/latin-music-legends-stamps/tito-puente)

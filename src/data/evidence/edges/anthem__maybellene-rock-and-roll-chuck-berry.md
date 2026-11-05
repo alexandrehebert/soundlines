@@ -2,10 +2,10 @@
 
 Graph ID `anthem:maybellene-rock-and-roll-chuck-berry`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Maybellene>), [2](<https://en.wikipedia.org/wiki/rock_and_roll>)
+**Findings** · Rock Hall situates Berry’s work as foundational rock and roll and identifies “Maybellene” among his early hits; the artist biography provides composition/recording context. Track-level genre and historical importance are sound; explicit anthem language is weaker.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://rockhall.com/inductees/chuck-berry/) · [2](https://www.chuckberry.com/about)

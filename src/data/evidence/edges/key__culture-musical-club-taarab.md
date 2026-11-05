@@ -2,10 +2,10 @@
 
 Graph ID `key:culture-musical-club-taarab`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Culture_Musical_Club>)
+**Findings** · AramcoWorld identifies Culture Musical Club as one of Zanzibar’s most legendary taarab ensembles; Music in Africa calls it a prolific and successful taarab orchestra (,). Treat this as an ensemble-level relation, not a claim about every current or past member.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.aramcoworld.com/articles/2025/the-heart-moving-sound-of-zanzibar) · [2](https://musicinafrica.net/directory/culture-musical-club/)

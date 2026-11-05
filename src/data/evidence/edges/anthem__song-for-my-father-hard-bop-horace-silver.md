@@ -1,11 +1,15 @@
-# Song for My Father → Hard bop
+# anthem:song-for-my-father-hard-bop-horace-silver
 
 Graph ID `anthem:song-for-my-father-hard-bop-horace-silver`
 
-**Review status** · Pending source review
+**Review status** · Source checked; caveats retained (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Song_for_My_Father>), [2](<https://en.wikipedia.org/wiki/hard_bop>)
+**Finding** · Blue Note calls the tune indelible in the jazz canon and discusses its hard-bop groove; label catalog verifies the exact Silver release. Strong genre/canon evidence supports high, even if “anthem” is a shorthand.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.bluenote.com/spotlight/horace-silver-song-for-my-father/
+- https://store.bluenote.com/products/horace-silver-song-for-my-father-blue-note-classic-vinyl-edition
+- https://www.arts.gov/honors/jazz/horace-silver

@@ -191,8 +191,8 @@ export const LINK_GROUPS: Record<LinkGroup, { label: string; types: readonly Edg
   people: { label: 'Artists & members', types: ['key_artist_of', 'member_of', 'collaborated_with'] },
   instruments: { label: 'Instruments', types: ['featured_in', 'plays'] },
   industry: { label: 'Labels & places', types: ['signed_to', 'founded', 'originated_in'] },
-  tracks: { label: 'Tracks', types: ['anthem_of', 'recorded_by'] },
-  events: { label: 'Events', types: ['shaped', 'involved', 'occurred_in'] },
+  tracks: { label: 'Tracks', types: ['anthem_of', 'recorded_by', 'composed_by'] },
+  events: { label: 'Events', types: ['shaped', 'context_for', 'recognized', 'involved', 'occurred_in'] },
 }
 
 export interface ReviewProgress<K extends string> {

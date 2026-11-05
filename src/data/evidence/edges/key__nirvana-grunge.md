@@ -1,11 +1,14 @@
-# Nirvana → Grunge
+# key:nirvana-grunge
 
 Graph ID `key:nirvana-grunge`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Grunge>)
+**Finding** · Rock Hall explicitly describes *Nevermind*’s grunge sound and the band’s Pacific Northwest impact. Nirvana is a defining grunge act.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://rockhall.com/inductees/nirvana/
+- https://www.historylink.org/File/10250

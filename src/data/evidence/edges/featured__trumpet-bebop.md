@@ -1,11 +1,11 @@
-# Valved trumpet → Bebop
+# Trumpet Bebop
 
 Graph ID `featured:trumpet-bebop`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Trumpet>)
+**Finding** · LOC identifies Dizzy Gillespie as a trumpeter and bebop pioneer; direct instrument-plus-genre evidence.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://blogs.loc.gov/loc/2018/01/this-day-in-history-celebrating-dizzy-gillespie-through-photographs-and-more/](https://blogs.loc.gov/loc/2018/01/this-day-in-history-celebrating-dizzy-gillespie-through-photographs-and-more/).

@@ -1,14 +1,11 @@
-# Joseph Haydn → Classical era
+# Joseph Haydn → Classical period
 
 Graph ID `key:haydn-classical`
 
-**Review status** · Reviewed — Confirmed; upgraded to high
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-04
 
 ## Sources checked
-- [Wikipedia — Classical period](https://en.wikipedia.org/wiki/Classical_period_(music)) — Haydn as central figure
-- [Classic FM — Classical](https://www.classicfm.com/discover-music/periods-genres/classical/) — names Haydn
-- [Classic FM — Haydn](https://www.classicfm.com/composers/haydn/) — prominent composer of the Classical period
+- [Classic FM: Haydn biography](https://www.classicfm.com/composers/haydn/) — identifies him as one of the most prominent composers of the Classical period (lines 42–47).
 
 ## Assessment
-Canonical Classical-era composer; multiple sources. Confidence raised to high.
+High confidence. Direct period attribution.

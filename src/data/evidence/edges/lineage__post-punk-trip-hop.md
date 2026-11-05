@@ -1,13 +1,14 @@
-# Post-punk → Trip-hop
+# lineage:post-punk-trip-hop
 
 Graph ID `lineage:post-punk-trip-hop`
 
-**Review status** · Pending source review
+**Review status** · Influence/direction and evidence checked (2026-11-05)
 
-**Relationship** · influences · high
+**Relationship** · influences · medium
 
-**Graph note** · Bristol producers drew on local post-punk as well as hip-hop and reggae sound-system cultures; this records one strand of influence.
+**Finding** · Bristol artists drew on post-punk alongside dub/reggae sound systems and hip-hop. Good support for a strand of influence, but genre label is contested and trip-hop is multi-source; high overstates the edge.
 
-**Graph citations** · [1](<https://napier-repository.worktribe.com/output/4685880>), [2](<https://www.cambridge.org/core/journals/organised-sound/article/abs/just-dont-call-it-trip-hop-reconciling-the-bristol-sound-style-with-the-trip-hop-genre/B4944FEFB7C30977DA7CF0CB3AC07465>)
+**Sources checked**
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://www.cambridge.org/core/journals/organised-sound/article/abs/just-dont-call-it-trip-hop-reconciling-the-bristol-sound-style-with-the-trip-hop-genre/B4944FEFB7C30977DA7CF0CB3AC07465
+- https://research-information.bris.ac.uk/ws/portalfiles/portal/189626890/Final_Copy_2019_01_31_Charles_C_PhD.pdf

@@ -2,10 +2,17 @@
 
 Graph ID `shaped:bristol-sessions-country`
 
-**Review status** · Pending source review
+**Review status** · reviewed — relationship evidence cross-checked
 
-**Relationship** · shaped · unrated
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/registry-by-induction-years/2002/>), [2](<https://www.loc.gov/static/programs/national-recording-preservation-plan/documents/Bristol.pdf>)
+**Relationship** · shaped · high
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Sources checked
+
+- [loc.gov](https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/registry-by-induction-years/2002/) — checked for the event and the claimed contribution to the linked tradition.
+- [loc.gov](https://www.loc.gov/static/programs/national-recording-preservation-plan/documents/Bristol.pdf) — checked for the event and the claimed contribution to the linked tradition.
+
+## Assessment
+
+The Library of Congress treats the sessions as a watershed in Country’s commercial recording history, without making them the first country recordings.

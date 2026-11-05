@@ -1,11 +1,11 @@
-# Double bass → Jazz
+# Double Bass Jazz
 
 Graph ID `featured:double-bass-jazz`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Double_bass>)
+**Finding** · VSL directly describes double-bass roles across jazz styles, including walking bass.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://www.vsl.co.at/academy/strings/double-bass](https://www.vsl.co.at/academy/strings/double-bass).

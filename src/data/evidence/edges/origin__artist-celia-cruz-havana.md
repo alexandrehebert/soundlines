@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-celia-cruz-havana`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Celia Cruz was born in Havana.
+**Findings** · The Smithsonian and Rock & Roll Hall of Fame identify Havana as her birthplace: Smithsonian, Rock & Roll Hall of Fame.
 
-**Graph citations** · [1](<https://www.si.edu/spotlight/latin-music-legends-stamps/celia-cruz>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.si.edu/spotlight/latin-music-legends-stamps/celia-cruz) · [2](https://rockhall.com/inductees/celia-cruz/)

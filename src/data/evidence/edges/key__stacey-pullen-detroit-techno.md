@@ -1,0 +1,13 @@
+# Stacey Pullen → Detroit techno
+
+Graph ID `key:stacey-pullen-detroit-techno`
+
+**Review status** · Reviewed — Pullen as second-wave Detroit techno confirmed
+**Reviewed** · 2026-11-03
+
+## Sources checked
+- [DMY Dummy Guide II](https://dmy.co/features/dummy-guide-to-detroit-techno-part-ii-the-second-wave-present-day) — “another second wave artist”.
+- [Detroit Historical Society: May](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/may-derrick) — Transmat released Pullen.
+
+## Assessment
+Medium confidence is kept.

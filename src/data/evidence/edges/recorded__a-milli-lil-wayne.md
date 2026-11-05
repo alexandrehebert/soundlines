@@ -1,11 +1,11 @@
-# A Milli → Lil Wayne
+# Lil Wayne recorded “A Milli”
 
 Graph ID `recorded:a-milli-lil-wayne`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/A_Milli>)
+**Finding** · Apple’s release listing names Lil Wayne as artist; the Recording Academy independently identifies it as his 2008 single.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [https://music.apple.com/us/song/1440738491](https://music.apple.com/us/song/1440738491); [https://www.grammy.com/news/armani-white-lil-wayne-a-milli-cover-performance-hip-hop-redefined/](https://www.grammy.com/news/armani-white-lil-wayne-a-milli-cover-performance-hip-hop-redefined/).

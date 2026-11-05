@@ -1,11 +1,11 @@
-# Automatic → Hikaru Utada
+# Hikaru Utada recorded “Automatic”
 
 Graph ID `recorded:automatic-utada-hikaru`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Automatic_(Hikaru_Utada_song)>)
+**Finding** · Official release page identifies “Automatic” as a song on Utada’s debut single and says all songs were written by Hikaru Utada.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.utadahikaru.jp/music/shcx__bss1z/](https://www.utadahikaru.jp/music/shcx__bss1z/).

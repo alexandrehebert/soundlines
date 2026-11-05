@@ -2,10 +2,10 @@
 
 Graph ID `recorded:one-o-clock-jump-count-basie`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/One_O'Clock_Jump>)
+**Findings** · The Library of Congress Registry essay names the 1937 recording as Count Basie and His Orchestra, identifies its Decca release, and calls Basie the bandleader; the Missouri Valley Special Collections provides the Decca 78 catalog record (,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/OneOClockJump.pdf) · [2](https://www.pendergastkc.org/collection/internet-archive/gbia0014924a-0001/one-oclock-jump)

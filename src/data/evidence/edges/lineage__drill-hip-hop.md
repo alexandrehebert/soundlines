@@ -2,12 +2,10 @@
 
 Graph ID `lineage:drill-hip-hop`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Relationship** · subgenre_of · high
 
-**Graph note** · Drill is a hip-hop style whose sound and context vary across local scenes.
+**Findings** · LSE legal scholarship and its consultation response situate drill as a rap subgenre developed from Chicago rap and the wider HipHop scene. The relation is broad enough to encompass Chicago and later UK drill variants.;
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/drill-ma0000013643>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://researchonline.lse.ac.uk/id/eprint/112788/1/The_Irrelevance_of_Rap_Accepted_version.pdf) · [2](https://www.lse.ac.uk/law/Assets/Documents/legal-advice-centre/Response-to-consultation-on-musical-expression.pdf)

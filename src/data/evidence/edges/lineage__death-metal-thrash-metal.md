@@ -1,13 +1,14 @@
-# Death metal → Thrash metal
+# lineage:death-metal-thrash-metal
 
 Graph ID `lineage:death-metal-thrash-metal`
 
-**Review status** · Pending source review
+**Review status** · Source checked; relation scope/type updated where indicated (2026-11-05)
 
 **Relationship** · derived_from · medium
 
-**Graph note** · Death metal grew out of late-1980s thrash, while also drawing on earlier heavy metal.
+**Finding** · Thrash was one important precursor to death metal, but the latter also drew on other heavy-metal/extreme-metal currents. The edge is directionally plausible if explicitly scoped as one strand, not sole derivation.
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/death-metal-ma0000002547>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://www.allmusic.com/genre/death-metal-ma0000002547
+- https://academic.oup.com/book/62310/chapter/552774038

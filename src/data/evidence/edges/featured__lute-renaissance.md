@@ -2,10 +2,10 @@
 
 Graph ID `featured:lute-renaissance`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Lute>)
+**Findings** · The lute was among the Renaissance’s most popular instruments, with extensive solo repertoire and expected ensemble participation by the mid-sixteenth century. Strong characteristic association.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.vam.ac.uk/articles/renaissance-music) · [2](https://caslabs.case.edu/medren/renaissance-instruments/lute-renaissance/)

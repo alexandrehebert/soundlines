@@ -1,11 +1,8 @@
-# Sekarinotan → Gamelan
+# Removed edge: anthem:sekarinotan-gamelan-gamelan-madu-sari
 
-Graph ID `anthem:sekarinotan-gamelan-gamelan-madu-sari`
+Removed 2026-11-05. Smithsonian identifies this 1994 recording by a gamelan orchestra in Teges, Ubud. Gamelan association is sound; no evidence found for anthem/canonical status. The track-level record supports identity but does not substantiate a genre-anthem claim.
 
-**Review status** · Pending source review
+**Sources checked**
 
-**Relationship** · anthem_of · medium
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Sekarinotan>), [2](<https://en.wikipedia.org/wiki/gamelan>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+- https://folkways.si.edu/sekarinotan/world/music/track/smithsonian
+- https://folkways.si.edu/music-for-the-gods-the-fahnestock-south-sea-expedition-indonesia/world/album/smithsonian

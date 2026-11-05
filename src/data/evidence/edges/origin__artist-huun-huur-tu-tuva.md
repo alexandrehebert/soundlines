@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-huun-huur-tu-tuva`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Tuvan ensemble known for xöömei; the group has also spent much of its career touring internationally.
+**Findings** · Smithsonian National Museum of Asian Art calls Huun-Huur-Tu an ensemble from Tuva and its pre-eminent international representative; AllMusic lists formation in Tuva: Smithsonian NMAA, AllMusic.
 
-**Graph citations** · [1](<https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/) · [2](https://www.allmusic.com/artist/huun-huur-tu-mn0000603660)

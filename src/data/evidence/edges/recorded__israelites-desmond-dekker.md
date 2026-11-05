@@ -2,10 +2,10 @@
 
 Graph ID `recorded:israelites-desmond-dekker`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Israelites_(song)>)
+**Findings** · The National Library of Jamaica says Dekker’s remembered hits with backing group The Aces included “Israelites” (); Official Charts’ original hit entry bills it “Desmond Dekker and the Aces” ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.nlj.gov.jm/REGGAE%20EXHIBITION/Desmond%20Dekker.htm) · [2](https://www.officialcharts.com/songs/desmond-dekker-and-the-aces-the-israelites/)

@@ -12,4 +12,4 @@ Graph ID `artist:kraftwerk`
 - [Wikipedia, Kraftwerk](https://en.wikipedia.org/wiki/Kraftwerk) — 1970–present.
 
 ## Assessment
-Active since 1970 and phases anchored to Autobahn, TEE, Computer World and the 2003 return are consistent with sources. Description’s claims about Atkins and Bambaataa are supported (see e244/e245).
+Active since 1970 and phases anchored to Autobahn, TEE, Computer World and the 2003 return are consistent with sources. Description’s claims about Atkins and Bambaataa are supported (see `influence:kraftwerk-juan-atkins` and `influence:kraftwerk-afrika-bambaataa`).

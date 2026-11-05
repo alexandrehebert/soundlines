@@ -2,10 +2,10 @@
 
 Graph ID `recorded:so-what-miles-davis`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/So_What_(Miles_Davis_composition)>)
+**Findings** · Davis’s official *Kind of Blue* page identifies “So What” as the opening track and names the recording period; the track page lists John Coltrane, Cannonball Adderley, Bill Evans and the other quartet personnel (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.milesdavis.com/albums/kind-of-blue/) · [2](https://www.milesdavis.com/track/so-what-feat-john-coltrane-cannonball-adderley-bill-evans/)

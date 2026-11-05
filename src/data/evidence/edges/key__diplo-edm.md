@@ -2,10 +2,11 @@
 
 Graph ID `key:diplo-edm`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · unrated
+## Sources checked
+- [Recording Academy biography](https://www.grammy.com/artists/diplo/8548/) — documents his DJ and production career across dance music.
+- [AllMusic profile](https://www.allmusic.com/artist/diplo-mn0000793225) — lists EDM among a broad, cross-genre set of styles.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Diplo>), [2](<https://www.allmusic.com/artist/diplo-mn0000793225>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+Medium confidence: EDM is a valid broad association, but Diplo’s work spans many distinct genres.

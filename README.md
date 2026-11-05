@@ -244,12 +244,17 @@ The historical expansion adds **27 genre/era nodes**: seven Western classical
 traditions (Medieval through minimalism), blues, eight jazz styles (early jazz,
 swing, bebop, cool jazz, hard bop, modal jazz, free jazz, and fusion), and eleven
 rock branches (rock and roll through grunge). Each has at least three cited
-representative artists. Classical-era succession uses influence links rather
-than treating historical periods as subgenres of each other; jazz fusion has
+representative artists. Classical-era succession uses influence and qualified
+continuity/derivation links, not subgenre claims; jazz fusion has
 multiple parents. Blues, jazz harmony, and krautrock connect the new branches to
 the original catalogue. Origins and era boundaries are approximate and overlapping,
 not exact invention dates or popularity measurements. New nodes deliberately have
 neutral bars rather than invented prominence histories.
+
+The [connectivity register](./src/data/evidence/disconnected-entries.md) explicitly
+records sourced standalone events and unresolved track attributions. Stable IDs
+are retained without inventing relationships; tests enforce this exact exception
+set as well as the live-edge evidence tracker and generated review-status index.
 
 Composer dates describe approximate creative/professional activity, not birth
 years. Some new band periods span documented breaks and reunion appearances;

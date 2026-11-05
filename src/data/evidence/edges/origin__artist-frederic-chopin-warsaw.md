@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-frederic-chopin-warsaw`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Studied and began his public career in Warsaw; he was born in Żelazowa Wola.
+**Findings** · Chopin was born in Żelazowa Wola, then moved to Warsaw as an infant, grew up and studied there: Chopin Museum, Chamber Music Society of Lincoln Center.
 
-**Graph citations** · [1](<https://chopin.museum/en/chopin-and-warsaw/>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://chopin.museum/en/chopin-and-warsaw/) · [2](https://chambermusicsociety.org/about-the-music/composers/frederic-chopin)

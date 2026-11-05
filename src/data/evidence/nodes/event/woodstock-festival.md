@@ -2,12 +2,16 @@
 
 Graph ID `event:woodstock-festival`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1969 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The Woodstock Music & Art Fair took place in Bethel, New York, from 15 to 18 August 1969. Its scale, documentation, and later circulation made it a touchstone in the history of rock festivals.
+## Sources checked
 
-**Graph citations** · [1](<https://home.nps.gov/places/woodstock-music-festival-site.htm>), [2](<https://www.americanhistory.si.edu/explore/stories/remembering-woodstock>)
+- [National Park Service, Woodstock Music Festival Site](https://www.nps.gov/places/woodstock-music-festival-site.htm) — Documents the festival at the Bethel, New York site from 15 to 18 August 1969 and its historical status.
+- [Smithsonian National Museum of American History, Remembering Woodstock](https://americanhistory.si.edu/explore/stories/remembering-woodstock) — Places the event at Max Yasgur’s farm near Bethel and dates it 15–18 August 1969.
+- [Bethel Woods Center for the Arts, Woodstock History](https://www.bethelwoodscenter.org/museum/woodstock-history) — Museum archive and historical interpretation of the event and site.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Date and location are established; the festival was in Bethel, not the town of Woodstock. Its scale and later media circulation made it a cultural touchstone, but it was one event among a wider festival movement.

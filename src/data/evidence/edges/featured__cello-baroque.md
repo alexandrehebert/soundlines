@@ -2,10 +2,10 @@
 
 Graph ID `featured:cello-baroque`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://www.metmuseum.org/de/press-releases/amati-king-cello-2015-news>)
+**Finding** · Classical Archives’ instrument history identifies the cello’s Baroque bass/continuo role and Baroque sonatas and concertos. Supports the association, but a specialist institutional source would strengthen this review.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [Classical Archives](https://www.classicalarchives.com/instrument/Cello.html).

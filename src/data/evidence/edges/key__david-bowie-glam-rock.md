@@ -2,10 +2,10 @@
 
 Graph ID `key:david-bowie-glam-rock`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://academic.oup.com/book/6294>), [2](<https://www.allmusic.com/genre/glam-rock-ma0000002619>), [3](<https://www.allmusic.com/artist/david-bowie-mn0000531986>)
+**Findings** · Bowie’s official site credits Ziggy Stardust with launching a worldwide glam explosion; GRAMMY.com also identifies Ziggy as his glam-rock alter ego (,). Strong for the early-1970s Ziggy/Aladdin Sane phase, not a summary of Bowie’s full stylistically shifting career.
 
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.davidbowie.com/about) · [2](https://www.grammy.com/artists/david-bowie/4819/)

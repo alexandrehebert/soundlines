@@ -2,12 +2,16 @@
 
 Graph ID `event:afm-recording-ban-ends`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1944 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · By late 1944, settlements with major record companies ended the American Federation of Musicians’ recording ban. The dispute helped bring royalty payments for musicians’ recorded work into industry negotiations.
+## Sources checked
 
-**Graph citations** · [1](<https://findingaids.loc.gov/repositories/11/resources/801>)
+- [Library of Congress: Jack Kapp Collection finding aid](https://findingaids.loc.gov/repositories/11/resources/801) — Documents the 1943 Decca settlement and final late-1944 agreements with Columbia and RCA.
+- [Music Performance Trust Fund history](https://musicpf.org/establishment-of-mptf-led-to-the-formation-of-afms-pension-and-residual-funds/) — Institutional account explains the royalty/trust-fund settlements and staged end of the dispute.
+- [Oxford University Press, “Facing the Music: Recorded Sound”](https://doi.org/10.1093/acprof:oso/9780190467036.003.0009) — Provides scholarly context for the 1942–44 strike.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The end was staggered: Decca settled in 1943, while RCA and Columbia settled in late 1944. Keep 1944 for the full end, but say the ban ended for major holdouts after successive company agreements rather than implying all recording stopped until then.

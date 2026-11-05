@@ -1,11 +1,17 @@
-# James Brown → Rhythm and blues
+# James Brown R And B
 
 Graph ID `key:james-brown-r-and-b`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/r-b-ma0000002809>)
+**Finding** · Rock Hall connects Brown’s first R&B hit and his transformation of gospel into R&B; Songwriters Hall documents his R&B chart impact. Strong historical association, even though soul/funk are also central.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://library.rockhall.com/james_brown](https://library.rockhall.com/james_brown)
+- [https://www.songhall.org/profiles/james-brown](https://www.songhall.org/profiles/james-brown)
+- [https://www.georgiaencyclopedia.org/articles/arts-culture/james-brown-ca-1933-2006/](https://www.georgiaencyclopedia.org/articles/arts-culture/james-brown-ca-1933-2006/)
+
+**Assessment** · Confidence applies to an artist’s central or representative association with this genre, not exclusivity or sole origin. Period, substyle, and scene caveats are retained where relevant.

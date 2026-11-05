@@ -1,13 +1,11 @@
-# Miss Kittin → Grenoble
+# Kittin (Miss Kittin) → Grenoble
 
 Graph ID `origin:artist-miss-kittin-grenoble`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Born in Grenoble.
+**Finding** · Kittin’s official biography identifies Caroline Hervé as born in Grenoble and explains her former Miss Kittin moniker. This directly supports the location.
 
-**Graph citations** · [1](<https://www.insomniac.com/music/artists/miss-kittin/>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [Official biography](https://misskittin.com/about/).

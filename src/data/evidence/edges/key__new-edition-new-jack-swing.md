@@ -1,11 +1,15 @@
-# New Edition → New jack swing
+# key:new-edition-new-jack-swing
 
 Graph ID `key:new-edition-new-jack-swing`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://www.allmusic.com/style/new-jack-swing-ma0000005027>), [2](<https://www.allmusic.com/artist/teddy-riley-mn0000018176>)
+**Finding** · AP identifies New Edition as performing New Jack Swing material; the style is strongly associated with the group’s later period and Bobby Brown, but Teddy Riley/Guy and other acts are more directly identified as architects. Medium suits an important representative association, not originator status.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://apnews.com/article/2b22fe8d98336f18eadee09457b0090d
+- https://www.teddyriley.com/about
+- https://timeline.carnegiehall.org/genres/new-jack-swing

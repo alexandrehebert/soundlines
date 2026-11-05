@@ -2,10 +2,10 @@
 
 Graph ID `lineage:alt-country-country`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Relationship** · subgenre_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/alt-country-ma0000002421>)
+**Findings** · DDEX classifies Alternative Country as a subgenre of CountryMusic, while stressing that it rejects contemporary mainstream country tropes and industry. The graph’s parent relation is sound; retain its alternative, often rock-inflected scope.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://service.ddex.net/dd/DD-AVS-CURRENT/dd/ddex_AlternativeCountry.html)

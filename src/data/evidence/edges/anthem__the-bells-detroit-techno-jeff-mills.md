@@ -1,11 +1,14 @@
-# The Bells → Detroit techno
+# anthem:the-bells-detroit-techno-jeff-mills
 
 Graph ID `anthem:the-bells-detroit-techno-jeff-mills`
 
-**Review status** · Pending source review
+**Review status** · Source checked; caveats retained (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Bells_(Jeff_Mills_song)>), [2](<https://en.wikipedia.org/wiki/detroit_techno>)
+**Finding** · Axis calls `The Bells` an anthem and probably the most played techno track in history; Insomniac characterizes it as an iconic techno tune. This directly supports the recording, genre and anthem claim.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.axisrecords.com/product/the-bells/
+- https://www.insomniac.com/music/artists/jeff-mills/

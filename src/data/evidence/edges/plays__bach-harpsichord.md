@@ -2,10 +2,10 @@
 
 Graph ID `plays:bach-harpsichord`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · plays · medium
+**Relationship** · plays · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Johann_Sebastian_Bach>)
+**Finding** · American Bach Soloists documents that Bach played the Berlin Mietke harpsichords and his concertos for harpsichord.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://americanbach.org/recordings/Harpsichord/](https://americanbach.org/recordings/Harpsichord/).

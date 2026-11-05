@@ -1,0 +1,14 @@
+# Basic Channel → Dub techno
+
+Graph ID `key:basic-channel-dub-techno`
+
+**Review status** · Reviewed — Basic Channel as dub techno originators confirmed
+**Reviewed** · 2026-11-03
+
+## Sources checked
+- [Pitchfork BCD-2](https://pitchfork.com/reviews/albums/12081-bcd-2/) — “Basic Channel invented dub techno”.
+- [Pitchfork BCD](https://pitchfork.com/reviews/albums/basic-channel-bcd) — genre’s defining document.
+- [The Quietus](https://thequietus.com/opinion-and-essays/anniversary/basic-channel-review-anniversary/) — 1993–94 singles.
+
+## Assessment
+Confidence rises to high.

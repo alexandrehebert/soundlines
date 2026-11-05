@@ -2,10 +2,10 @@
 
 Graph ID `featured:juno-106-house`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://rolandcorp.com.au/blog/juno-legendary-heritage-future-classic>)
+**Finding** · Roland says the JUNO-106 played a major role in house music’s emergence. This is direct manufacturer-history evidence; an independent corroborating source would improve confidence.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [Roland](https://rolandcorp.com.au/blog/juno-legendary-heritage-future-classic).

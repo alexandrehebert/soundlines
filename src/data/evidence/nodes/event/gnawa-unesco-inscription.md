@@ -2,12 +2,15 @@
 
 Graph ID `event:gnawa-unesco-inscription`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 2019 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · UNESCO inscribed Morocco’s Gnawa practices on its Representative List of the Intangible Cultural Heritage of Humanity, recognizing music, ritual and community transmission.
+## Sources checked
 
-**Graph citations** · [1](<https://ich.unesco.org/en/RL/gnawa-01170>)
+- [UNESCO Intangible Cultural Heritage, Gnawa](https://ich.unesco.org/en/RL/gnawa-01170?RL=01170) — Official listing identifies Gnawa and confirms its 2019 inscription on the Representative List.
+- [UNESCO Intergovernmental Committee decision 14.COM 10.B.26](https://ich.unesco.org/en/decisions/14.COM/10.B.26) — Records Morocco’s nomination and committee decision for inscription in 2019.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The inscription date and Moroccan nomination are confirmed. UNESCO recognition concerns safeguarding a living practice; it does not certify a single origin story or freeze the tradition.

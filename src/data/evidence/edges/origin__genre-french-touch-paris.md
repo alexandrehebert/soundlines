@@ -2,12 +2,10 @@
 
 Graph ID `origin:genre-french-touch-paris`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Paris is a central network; Versailles was another key pole.
+**Findings** · The same peer-reviewed analysis explicitly defines French Touch as a Parisian electronic music current of the late 1990s/early 2000s:.
 
-**Graph citations** · [1](<https://www.francemusic.com/french-touch-guide/>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/)

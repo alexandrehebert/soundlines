@@ -2,10 +2,10 @@
 
 Graph ID `origin:genre-chopped-and-screwed-houston`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph citations** · [1](<https://exhibits.lib.uh.edu/s/exhibits/page/dj-screw>)
+**Finding** · University of Houston Libraries says Houston is where chopped and screwed was born and describes DJ Screw’s local mixtape network and Houston neighborhoods. Its companion exhibit identifies Screw as originator of the genre.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [UH Libraries, Houston](https://exhibits.lib.uh.edu/s/dj-screw-records/page/houston); [UH Libraries, DJ Screw](https://exhibits.lib.uh.edu/s/exhibits/page/dj-screw).

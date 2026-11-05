@@ -2,12 +2,15 @@
 
 Graph ID `event:fantastique-premiere`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1830 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Hector Berlioz’s Symphonie fantastique premiered in Paris in 1830, using an unusually explicit program and expanded orchestral color to shape a landmark of Romantic symphonic music.
+## Sources checked
 
-**Graph citations** · [1](<https://www.britannica.com/topic/Symphonie-fantastique>)
+- [Philharmonie de Paris, Symphonie fantastique](https://pad.philharmoniedeparis.fr/0301457-symphonie-fantastique-de-hector-berlioz.aspx) — Institutional account dates the premiere to 5 December 1830 at the Paris Conservatoire under Habeneck.
+- [Berliner Philharmoniker programme note](https://www.berliner-philharmoniker.de/en/programme-notes/hector-berlioz-symphonie-fantastique-op-14/) — Confirms premiere date, venue, conductor, and programmatic design.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 1830 premiere is well supported. The programmatic character is factual; claims about its status as a “landmark” are interpretive but reasonable music-historical framing.

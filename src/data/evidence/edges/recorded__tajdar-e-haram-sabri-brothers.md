@@ -1,11 +1,15 @@
-# Tajdar-e-Haram → The Sabri Brothers
+# Tajdar-e-Haram — Sabri Brothers recording
 
 Graph ID `recorded:tajdar-e-haram-sabri-brothers`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Tajdar-e-Haram>)
+**Finding** · The Sabri Brothers’ official artist-channel delivery credits “Tajdar-e-Haram” on *Greatest Hits of Sabri Brothers, Vol. 1* (℗ 1990), confirming the recording-performer relation. Dawn separately documents the qawwali’s inclusion in the 1982 film *Saharay*. Do not conflate the film appearance with the compilation release or a recording-session date.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.youtube.com/watch?v=7GlT7-xzK-U
+- https://www.dawn.com/news/1824617
+- https://music.apple.com/us/album/tajdare-haram-vol-6/1784085620

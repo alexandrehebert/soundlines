@@ -2,10 +2,15 @@
 
 Graph ID `involved:fania-yankee-stadium-fania-all-stars`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — cross-checked against the reviewed event record
 
-**Relationship** · involved · unrated
+**Relationship** · involved · high
 
 **Graph citations** · [1](<https://concord.com/concord-albums/fania-all-stars-live-at-yankee-stadium/>), [2](<https://concord.com/artist/fania-all-stars/>)
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The graph cites sources that identify Fania All-Stars as directly participating in or belonging to “Fania All-Stars play Yankee Stadium.” The participant/association is supported at high confidence.

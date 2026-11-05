@@ -1,11 +1,13 @@
-# Post-punk → Punk rock
+# post punk → punk rock
 
 Graph ID `lineage:post-punk-punk`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; derived audit 002)
 
 **Relationship** · derived_from · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Post-punk>)
+**Finding** · Post-punk followed punk and developed partly from it, but its boundaries are contested and its influences extend well beyond punk.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [University of Michigan Press, *What Is Post-Punk?*](https://press.umich.edu/Books/W/What-Is-Post-Punk2)

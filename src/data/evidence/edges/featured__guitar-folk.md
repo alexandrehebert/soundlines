@@ -2,10 +2,10 @@
 
 Graph ID `featured:guitar-folk`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Guitar>)
+**Finding** · Smithsonian documents Cotten’s folk-music career and influential guitar playing, including the folk album Negro Folk Songs and Tunes and its guitar tunings.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://folkways.si.edu/artists/elizabeth-cotten](https://folkways.si.edu/artists/elizabeth-cotten).

@@ -1,11 +1,11 @@
-# Calvin Harris → Electro house
+# Calvin Harris → electro-house
 
 Graph ID `key:calvin-harris-electro-house`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · unrated
+## Sources checked
+- [AllMusic biography](https://www.allmusic.com/artist/calvin-harris-mn0000945951/biography) — discography profile; genre evidence is not as explicit or specific as for his broader dance-pop/EDM work.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Calvin_Harris>), [2](<https://www.allmusic.com/artist/calvin-harris-mn0000945951>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+Low confidence: the precise electro-house label is under-supported by the checked sources. Keep provisional pending a track/album-specific reliable source; do not infer it from EDM generally.

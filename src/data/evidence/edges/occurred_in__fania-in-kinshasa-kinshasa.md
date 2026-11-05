@@ -2,10 +2,15 @@
 
 Graph ID `occurred_in:fania-in-kinshasa-kinshasa`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — cross-checked against the reviewed event record
 
-**Relationship** · occurred_in · unrated
+**Relationship** · occurred_in · high
 
 **Graph citations** · [1](<https://concord.com/artist/fania-all-stars/>)
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The cited sources place “Fania All-Stars perform in Kinshasa” in Kinshasa. The location claim is supported at high confidence.

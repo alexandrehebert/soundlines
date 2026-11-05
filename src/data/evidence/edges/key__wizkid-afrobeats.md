@@ -2,10 +2,13 @@
 
 Graph ID `key:wizkid-afrobeats`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 030)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/mn0003081520>)
+**Finding** · Grammy directly credits Wizkid with helping popularize an Afrobeats style internationally; AllMusic corroborates the artist’s Afrobeats identity. His style is one strand of the larger, diverse genre.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [GRAMMY artist profile](https://www.grammy.com/artists/wizkid/20080)
+- [AllMusic biography](https://www.allmusic.com/artist/wizkid-mn0002285673/biography)

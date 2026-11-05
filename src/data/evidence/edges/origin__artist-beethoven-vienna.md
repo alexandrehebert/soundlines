@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-beethoven-vienna`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Vienna was Beethoven's principal adult home and career center; he was born in Bonn.
+**Findings** · Beethoven was born in Bonn but moved to Vienna in 1792 and lived there until his death: Austria Tourism, Beethoven-Haus Bonn.
 
-**Graph citations** · [1](<https://www.wien.info/en/art-culture/music-stage-shows/beethoven-memorials-340698>), [2](<https://internet.beethoven.de/en/exhibition/beethovens-capital/>)
-
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.austria.info/en-gb/profiles/ludwig-van-beethoven/) · [2](https://www.beethoven.de/en/beethoven)

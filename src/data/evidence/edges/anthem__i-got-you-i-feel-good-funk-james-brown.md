@@ -2,10 +2,10 @@
 
 Graph ID `anthem:i-got-you-i-feel-good-funk-james-brown`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · low
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/I_Got_You_(I_Feel_Good)>), [2](<https://en.wikipedia.org/wiki/funk>)
+**Findings** · Rock Hall confirms Brown’s foundational funk role, but the attempted AllMusic song page was inaccessible and its search metadata is not counted. No opened source directly classified this track; genre association is plausible but anthem confidence needs direct track-level support.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://rockhall.com/inductees/james-brown/)

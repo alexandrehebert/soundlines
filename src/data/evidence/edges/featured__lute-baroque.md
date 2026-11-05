@@ -2,10 +2,10 @@
 
 Graph ID `featured:lute-baroque`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Lute>)
+**Findings** · The lute family adapted to Baroque thorough-bass/continuo practice, including theorbo accompaniment, solo repertoire, song accompaniment, and court performance. “Lute” covers several related instruments; name theorbo/archlute when a particular source or edge needs precision.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.metmuseum.org/ja/essays/the-lute) · [2](https://lutesocietyofamerica.org/about/instruments/lute/)

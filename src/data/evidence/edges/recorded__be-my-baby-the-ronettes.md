@@ -1,11 +1,11 @@
-# Be My Baby → The Ronettes
+# The Ronettes recorded “Be My Baby”
 
 Graph ID `recorded:be-my-baby-the-ronettes`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Be_My_Baby>)
+**Finding** · LOC explicitly calls it a record recorded by the Ronettes and cites a 1963 single release; direct credit.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://blogs.loc.gov/now-see-hear/2023/08/be-my-baby-at-60/](https://blogs.loc.gov/now-see-hear/2023/08/be-my-baby-at-60/).

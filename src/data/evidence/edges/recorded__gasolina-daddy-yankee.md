@@ -2,10 +2,10 @@
 
 Graph ID `recorded:gasolina-daddy-yankee`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Gasolina_(song)>)
+**Findings** · The Library of Congress National Recording Registry essay names Daddy Yankee’s 2004 “Gasolina,” its writers and producers, and the song’s release/impact (LOC essay).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://blogs.loc.gov/now-see-hear/2024/09/gasolina/)

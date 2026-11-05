@@ -2,10 +2,10 @@
 
 Graph ID `key:fischerspooner-electroclash`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/album/electroklash-urban-theory--mw0000222954>), [2](<https://www.allmusic.com/artist/miss-kittin-mn0000497290>), [3](<https://www.allmusic.com/artist/fischerspooner-mn0000178051>), [4](<https://www.allmusic.com/artist/peaches-mn0000752770>)
+**Findings** · The duo’s early New York identity and releases are directly associated with electroclash/neo-electro; their performance-art presentation was integral to the scene. The relation is strongest for the early-2000s period.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 4 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/artist/fischerspooner-mn0000178051) · [2](https://www.allmusic.com/album/1-mw0000019652)

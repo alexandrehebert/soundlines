@@ -2,10 +2,10 @@
 
 Graph ID `key:celia-cruz-latin`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/latin-ma0000002692>)
+**Findings** · Smithsonian and NMAAHC identify Cruz as a Cuban American/Latin singer and a defining figure of Latin music (Smithsonian, NMAAHC). “Latin music” is an exceptionally broad umbrella, so medium is more informative than high for this edge.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.si.edu/spotlight/latin-music-legends-stamps/celia-cruz) · [2](https://nmaahc.si.edu/latinx/celia-cruz)

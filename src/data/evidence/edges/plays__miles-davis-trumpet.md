@@ -2,10 +2,10 @@
 
 Graph ID `plays:miles-davis-trumpet`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · plays · medium
+**Relationship** · plays · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Miles_Davis>)
+**Finding** · NEA biography documents Davis starting trumpet at 13 and his career as a trumpet player.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.arts.gov/honors/jazz/miles-davis](https://www.arts.gov/honors/jazz/miles-davis).

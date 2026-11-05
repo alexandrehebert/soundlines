@@ -2,10 +2,13 @@
 
 Graph ID `key:wiley-grime`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 030)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/grime-ma0000004464>)
+**Finding** · London Museum places Wiley in the early grime scene and documents his UK-garage-to-grime transition; Guardian identifies him as grime’s godfather. Central, with the early-scene caveat.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [London Museum](https://www.londonmuseum.org.uk/collections/london-stories/londons-grime-stars/)
+- [The Guardian](https://www.theguardian.com/music/2017/jan/24/wiley-godfather-grime)

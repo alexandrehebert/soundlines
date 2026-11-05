@@ -2,10 +2,10 @@
 
 Graph ID `anthem:move-your-body-chicago-house-marshall-jefferson`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Move_Your_Body_(Marshall_Jefferson_song)>), [2](<https://en.wikipedia.org/wiki/chicago_house>)
+**Findings** · Trax calls the 1986 single “The House-Music Anthem”; DJ Mag describes it as a house classic. Insomniac distinguishes the original Trax version from a later rerecording. Strong, with version specificity retained.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.traxrecords.com/marshall-jefferson) · [2](https://djmag.com/watch/marshall-jefferson-move-your-body-making-house-classic) · [3](https://www.insomniac.com/music/marshall-jefferson-move-your-body/)

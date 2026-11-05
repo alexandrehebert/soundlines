@@ -1,11 +1,7 @@
-# Re-Rewind → UK garage
+# Re-Rewind duplicate anthem edge
 
 Graph ID `anthem:re-rewind-uk-garage-artful-dodger`
 
-**Review status** · Pending source review
+**Disposition** · Consolidated after source review (2026-11-05)
 
-**Relationship** · anthem_of · medium
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Re-Rewind>), [2](<https://en.wikipedia.org/wiki/uk_garage>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Finding** · The duplicate track node `track:re-rewind-artful-dodger` represented the same 1999 Artful Dodger single as canonical node `track:re-rewind`. Its UK-garage anthem association was merged into `anthem:re-rewind-uk-garage` on the canonical node.

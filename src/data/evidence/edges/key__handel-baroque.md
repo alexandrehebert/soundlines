@@ -1,13 +1,11 @@
-# George Frideric Handel → Baroque music
+# George Frideric Handel → Baroque
 
 Graph ID `key:handel-baroque`
 
-**Review status** · Reviewed — Confirmed; upgraded to high
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-04
 
 ## Sources checked
-- [Wikipedia — Baroque music](https://en.wikipedia.org/wiki/Baroque_music) — Handel as a major late-Baroque composer
-- [Classic FM — Baroque](https://www.classicfm.com/discover-music/periods-genres/baroque/) — names Handel among the defining Baroque composers
+- [Classic FM: Baroque period](https://www.classicfm.com/discover-music/periods-genres/baroque/) — explicitly includes Handel among Baroque composers (lines 47–54).
 
 ## Assessment
-Canonical Baroque composer; two independent sources. Confidence raised to high.
+High confidence. Clear period attribution.

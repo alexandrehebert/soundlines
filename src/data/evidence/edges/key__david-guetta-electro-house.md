@@ -1,11 +1,12 @@
-# David Guetta → Electro house
+# David Guetta → electro-house
 
 Graph ID `key:david-guetta-electro-house`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · unrated
+## Sources checked
+- [AllMusic biography](https://www.allmusic.com/artist/david-guetta-mn0000213561/biography) — characterizes his early-2010s work as electro-house.
+- [TIME review of *Listen*](https://time.com/3602360/david-guetta-listen-album-review/) — discusses his electro-house sound and later EDM crossover.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/David_Guetta>), [2](<https://www.allmusic.com/artist/david-guetta-mn0000213561>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+Medium confidence: accurate for a major phase of his career, not a comprehensive or exclusive genre label.

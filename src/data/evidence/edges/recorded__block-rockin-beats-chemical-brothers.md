@@ -1,11 +1,11 @@
-# Block Rockin' Beats → The Chemical Brothers
+# Chemical Brothers recorded “Block Rockin’ Beats”
 
 Graph ID `recorded:block-rockin-beats-chemical-brothers`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Block_Rockin'_Beats>)
+**Finding** · Recording Academy identifies the song on *Dig Your Own Hole*, links its official video, and records the Chemical Brothers’ Grammy win for the track.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [https://www.grammy.com/news/chemical-brothers-dig-your-own-hole-25th-anniversary-block-rockin-beats/](https://www.grammy.com/news/chemical-brothers-dig-your-own-hole-25th-anniversary-block-rockin-beats/); [https://www.grammy.com/awards/categories/best-rock-instrumental-performance/1998/](https://www.grammy.com/awards/categories/best-rock-instrumental-performance/1998/).

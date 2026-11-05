@@ -2,10 +2,10 @@
 
 Graph ID `recorded:midnight-request-line-skream`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Midnight_Request_Line>)
+**Findings** · Skream’s official Bandcamp lists “Midnight Request Line” on the 2005 *Midnight Request Line / I* release; the artist and Tempa release are independently catalogued (,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://skreamizm.bandcamp.com/track/midnight-request-line) · [2](https://musicbrainz.org/release/2a051f63-ac82-46fa-9756-1e34f064a04c)

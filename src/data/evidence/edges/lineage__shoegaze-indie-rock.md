@@ -1,13 +1,15 @@
-# Shoegaze → Indie rock
+# lineage:shoegaze-indie-rock
 
 Graph ID `lineage:shoegaze-indie-rock`
 
-**Review status** · Pending source review
+**Review status** · Taxonomic hierarchy checked (2026-11-05)
 
-**Relationship** · subgenre_of · high
+**Relationship** · subgenre_of · medium
 
-**Graph note** · Retrospective label overlapping dream pop and noise pop.
+**Finding** · Shoegaze is a rock subgenre and is strongly associated with indie-rock scenes and labels. It also overlaps with noise-pop and dream-pop; indie-rock is a defensible, if not exclusive, parent.
 
-**Graph citations** · [1](<https://ans-names.pitt.edu/ans/article/download/2124/2123/4330>), [2](<https://www.allmusic.com/genre/shoegaze-ma0000004454>), [3](<https://www.allmusic.com/genre/noise-pop-ma0000012156>)
+**Sources checked**
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+- https://www.allmusic.com/genre/shoegaze-ma0000004454
+- https://www.tandfonline.com/doi/abs/10.1080/00277738.2017.1304105
+- https://salford-repository.worktribe.com/preview/1497897/Shoegaze.pdf

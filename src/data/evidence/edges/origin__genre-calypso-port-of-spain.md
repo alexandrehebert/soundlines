@@ -2,12 +2,10 @@
 
 Graph ID `origin:genre-calypso-port-of-spain`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · A major urban center within Trinidadian and Caribbean traditions.
+**Finding** · Oxford Academic’s scholarly chapter says late-19th-century calypso developed in the burgeoning city of Port of Spain, in barrack yards, stick-fights, carnival tents, and city streets. The city is a key origin site within the wider Trinidadian tradition.
 
-**Graph citations** · [1](<https://folkways.si.edu/calypso/music/album/smithsonian>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [Njoroge Njoroge, “The Trinidadian Calypso to 1940,” Oxford Academic](https://doi.org/10.14325/mississippi/9781496806895.003.0002).

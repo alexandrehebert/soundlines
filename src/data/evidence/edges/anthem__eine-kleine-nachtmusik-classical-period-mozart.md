@@ -2,10 +2,14 @@
 
 Graph ID `anthem:eine-kleine-nachtmusik-classical-period-mozart`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Eine_kleine_Nachtmusik>), [2](<https://en.wikipedia.org/wiki/classical_period>)
+**Graph citations** · [1](<https://kv.mozarteum.at/en/work/eine-kleine-nachtmusik-a-little-night-music-6049>), [2](<https://www.themorgan.org/exhibitions/online/mozart/435>)
 
 **Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+
+## Source check (2026-11-05)
+
+Mozarteum verifies the work/date (1787), authorship, and that it is one of Mozart’s best-known pieces; Morgan describes it as exemplifying the Classical era. Strong.

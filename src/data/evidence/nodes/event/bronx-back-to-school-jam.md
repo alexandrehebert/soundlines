@@ -2,12 +2,15 @@
 
 Graph ID `event:bronx-back-to-school-jam`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1973 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · At a back-to-school party organized with his sister Cindy Campbell on 11 August 1973, DJ Kool Herc used extended break sections to keep dancers moving. The gathering is often cited as a foundational moment in hip-hop, while the culture developed through a wider community and many events.
+## Sources checked
 
-**Graph citations** · [1](<https://www.smithsonianmag.com/smithsonian-institution/how-the-block-party-became-an-urban-phenomenon-180980560/>), [2](<https://www.pbs.org/opb/historydetectives/investigation/birthplace-of-hip-hop/>)
+- [PBS History Detectives, Birthplace of Hip Hop](https://www.pbs.org/opb/historydetectives/investigation/birthplace-of-hip-hop/) — Presents 11 August 1973 and the Sedgwick Avenue party as the widely told account, while investigating the limits of the origin story.
+- [PBS NewsHour, Hip-hop turns 50](https://www.pbs.org/newshour/arts/hip-hop-turns-50-reinventing-itself-and-swaths-of-the-world-along-the-way) — Retrospective documents the conventional date and Kool Herc’s breakbeat method.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Retain the 11 August date as the widely documented anniversary account, but present it as a foundational gathering, not a single definitive birth of hip-hop. The graph’s community-oriented qualification appropriately avoids an origin myth. Exact details rely partly on retrospective testimony.

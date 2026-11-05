@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-sven-vath-frankfurt`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Frankfurt was a central base for Väth's club career, including Omen; it is not his birthplace.
+**Finding** · Väth’s official career timeline says he began DJing around Frankfurt, became resident and co-founder of Omen, and founded Eye Q and Harthouse, which defined the Frankfurt Sound. The edge describes a career base, not birthplace.
 
-**Graph citations** · [1](<https://www.omenfrankfurt.de/history/>), [2](<https://www.sven-vaeth.de/biografie/>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [Official career timeline](https://www.sven-vaeth.de/karriere/); [Official biography](https://www.sven-vaeth.de/biografie/).

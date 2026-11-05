@@ -1,11 +1,11 @@
-# Double bass → Rock and roll
+# Double Bass Rock And Roll
 
 Graph ID `featured:double-bass-rock-and-roll`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Double_bass>)
+**Finding** · Carnegie Hall Weill Music Institute resource explicitly lists double bass in early rock-and-roll instrumentation; direct but educational overview rather than focused scholarship.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://www.carnegiehall.org/-/media/CarnegieHall/Files/PDFs/Education/Educators/Toolbox/Grade-5/Music-of-Mexico/Toolbox-Grade-5-Music-of-Mexico-Activity-2.pdf?la=en](https://www.carnegiehall.org/-/media/CarnegieHall/Files/PDFs/Education/Educators/Toolbox/Grade-5/Music-of-Mexico/Toolbox-Grade-5-Music-of-Mexico-Activity-2.pdf?la=en).

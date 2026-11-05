@@ -2,10 +2,10 @@
 
 Graph ID `plays:jimi-hendrix-electric-guitar`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · plays · medium
+**Relationship** · plays · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Jimi_Hendrix>)
+**Finding** · The Library of Congress describes Hendrix’s electric-guitar technique and influence on the instrument.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [Library of Congress, NLS Music Notes](https://blogs.loc.gov/nls-music-notes/2020/12/flashing-back-on-jimi-hendrix/).

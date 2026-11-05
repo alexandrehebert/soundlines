@@ -1,11 +1,14 @@
-# Ramones → Punk rock
+# key:ramones-punk
 
 Graph ID `key:ramones-punk`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and style/period fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Punk_rock>)
+**Finding** · The Rock Hall directly credits the Ramones with taking punk rock on its “maiden voyage.” Punk is central and historically defining; high is warranted.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://rockhall.com/inductees/ramones/
+- https://www.allmusic.com/style/punk-ma0000002803

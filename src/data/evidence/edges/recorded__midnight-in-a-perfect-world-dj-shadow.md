@@ -2,10 +2,10 @@
 
 Graph ID `recorded:midnight-in-a-perfect-world-dj-shadow`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Midnight_in_a_Perfect_World>)
+**Findings** · DJ Shadow’s official store’s Mo’ Wax Singles set includes “Midnight In A Perfect World” (); Apple lists the original track on *Endtroducing* under DJ Shadow ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://djshadow.com/collections/music/products/dj-shadow-mo-wax-singles-deluxe-box-set) · [2](https://music.apple.com/us/song/1660367636)

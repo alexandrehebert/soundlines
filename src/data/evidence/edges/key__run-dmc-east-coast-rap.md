@@ -1,11 +1,15 @@
-# Run-DMC → East Coast rap
+# key:run-dmc-east-coast-rap
 
 Graph ID `key:run-dmc-east-coast-rap`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and style/period fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://www.allmusic.com/style/east-coast-rap-ma0000002563>)
+**Finding** · AllMusic names Run-D.M.C. among early New York acts; the group’s Queens origin and formative role make East Coast rap a direct fit.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/style/east-coast-rap-ma0000002563
+- https://www.allmusic.com/artist/run-dmc-mn0000358408
+- https://rockhall.com/inductees/run-dmc/

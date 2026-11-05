@@ -1,11 +1,15 @@
-# N.W.A → Gangsta rap
+# key:nwa-gangsta-rap
 
 Graph ID `key:nwa-gangsta-rap`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/gangsta-rap-ma0000002611>)
+**Finding** · Rock Hall says N.W.A. solidified gangsta rap; LOC calls *Straight Outta Compton* its standard bearer. The group’s centrality is well established, while recognizing earlier contributors such as Schoolly D and Ice-T.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://rockhall.com/inductees/NWA/
+- https://www.loc.gov/static/programs/national-recording-preservation-board/documents/StraightOuttaCompton.pdf
+- https://www.tshaonline.org/handbook/entries/rap-and-hip-hop

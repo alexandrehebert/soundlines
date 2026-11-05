@@ -2,10 +2,10 @@
 
 Graph ID `recorded:cross-road-blues-robert-johnson`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Cross_Road_Blues>)
+**Finding** · LOC discusses Johnson’s original releases and includes “Cross Road Blues” among recordings associated with his catalog. The accessible essay supports the historical attribution; it is not a session-level discography.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [https://www.loc.gov/static/programs/national-recording-preservation-board/documents/RobertJohnsonCompleteRecordings.pdf](https://www.loc.gov/static/programs/national-recording-preservation-board/documents/RobertJohnsonCompleteRecordings.pdf).

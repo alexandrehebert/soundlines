@@ -2,10 +2,15 @@
 
 Graph ID `involved:four-seasons-publication-the-four-seasons-vivaldi`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — cross-checked against the reviewed event record
 
-**Relationship** · involved · unrated
+**Relationship** · involved · high
 
 **Graph citations** · [1](<https://www.britannica.com/topic/The-Four-Seasons-by-Vivaldi>)
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The graph cites sources that identify The Four Seasons (Le quattro stagioni) as directly participating in or belonging to “Vivaldi publishes The Four Seasons.” The participant/association is supported at high confidence.

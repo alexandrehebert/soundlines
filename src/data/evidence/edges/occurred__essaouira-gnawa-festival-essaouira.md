@@ -2,10 +2,15 @@
 
 Graph ID `occurred:essaouira-gnawa-festival-essaouira`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — cross-checked against the reviewed event record
 
-**Relationship** · occurred_in · unrated
+**Relationship** · occurred_in · high
 
-**Graph citations** · [1](<https://www.arabculturefund.org/Programs/Jurors/341>), [2](<https://en.wikipedia.org/wiki/Gnaoua_World_Music_Festival>)
+**Graph citations** · [1](<https://www.festival-gnaoua.net/en/organisation/>), [2](<https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_3a642ad6-8cca-4230-bcd3-96635c041502?_=224698eng.pdf>)
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The cited sources place “Gnaoua World Music Festival begins in Essaouira” in Essaouira. The location claim is supported at high confidence.

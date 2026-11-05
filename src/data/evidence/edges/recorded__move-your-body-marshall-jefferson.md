@@ -2,10 +2,10 @@
 
 Graph ID `recorded:move-your-body-marshall-jefferson`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Move_Your_Body_(Marshall_Jefferson_song)>)
+**Findings** · Trax Records identifies Jefferson’s 1986 single “Move Your Body” and the original release as “The House-Music Anthem”; Insomniac distinguishes it from a later rerecording (,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.traxrecords.com/marshall-jefferson) · [2](https://www.insomniac.com/music/marshall-jefferson-move-your-body/)

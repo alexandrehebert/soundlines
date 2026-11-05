@@ -2,10 +2,13 @@
 
 Graph ID `key:washed-out-chillwave`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 030)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.cambridge.org/core/journals/journal-of-the-society-for-american-music/article/reverb-chillwave-and-the-disinterested-hipster/2A88D5ECA8EAFD40F62D60F38FDB64A9>), [2](<https://www.allmusic.com/style/chillwave-ma0000013410>), [3](<https://www.allmusic.com/artist/washed-out-mn0001639356>)
+**Finding** · AllMusic says *Life of Leisure* helped define chillwave; Sub Pop notes the “Godfather of Chillwave” moniker. The style applies especially to his early work.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- [AllMusic artist profile](https://www.allmusic.com/artist/washed-out-mn0002136598)
+- [Sub Pop artist page](https://www.subpop.com/artists/washed_out)

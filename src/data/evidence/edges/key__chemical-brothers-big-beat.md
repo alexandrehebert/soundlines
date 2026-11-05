@@ -2,10 +2,10 @@
 
 Graph ID `key:chemical-brothers-big-beat`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/big-beat-ma0000004997>), [2](<https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1>), [3](<https://www.allmusic.com/artist/the-chemical-brothers-mn0000067631>)
+**Findings** · Associated Press describes the Chemical Brothers as pioneers of big beat (AP); Cambridge Companion scholarship provides genre context through the existing graph citation. The group helped popularize the style; avoid suggesting sole invention.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://apnews.com/article/8684219ab7506a29561b13fe681f327f)

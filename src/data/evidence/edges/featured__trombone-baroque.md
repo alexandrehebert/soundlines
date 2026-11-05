@@ -1,11 +1,11 @@
-# Trombone → Baroque music
+# Trombone Baroque
 
 Graph ID `featured:trombone-baroque`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Trombone>)
+**Finding** · Case Western Reserve Early Music Instrument Database documents Baroque trombone repertoire and sacred music use.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://caslabs.case.edu/medren/baroque-instruments/trombone-baroque/](https://caslabs.case.edu/medren/baroque-instruments/trombone-baroque/).

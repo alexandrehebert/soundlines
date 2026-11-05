@@ -2,10 +2,15 @@
 
 Graph ID `occurred_in:benny-goodman-carnegie-new-york`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — cross-checked against the reviewed event record
 
-**Relationship** · occurred_in · unrated
+**Relationship** · occurred_in · high
 
-**Graph citations** · [1](<https://www.carnegiehall.org/Explore/Articles/2023/01/16/Benny-Goodman-at-Carnegie-Hall>)
+**Graph citations** · [1](<https://www.carnegiehall.org/Explore/Articles/2023/01/16/Benny-Goodman-at-Carnegie-Hall>), [2](<https://www.si.edu/object/carnegie-hall-jazz-concert-sound-recording%3Asiris_arc_315450>), [3](<https://academic.oup.com/book/4016>), [4](<https://www.capradio.org/music/jazz/2018/01/12/benny-goodmans-1938-carnegie-hall-concert-from-the-guy-who-wrote-the-book-on-that/>)
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The cited sources place “Benny Goodman performs at Carnegie Hall” in New York. The location claim is supported at high confidence.

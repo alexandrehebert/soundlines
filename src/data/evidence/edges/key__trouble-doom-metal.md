@@ -1,11 +1,14 @@
-# Trouble → Doom metal
+# Trouble → Doom Metal
 
 Graph ID `key:trouble-doom-metal`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 030)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/doom-metal-ma0000004496>)
+**Finding** · AllMusic identifies Trouble’s slow, Sabbath-rooted style as doom metal. Later records also draw on psychedelic/stoner metal, but the core edge is strong.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [AllMusic biography](https://www.allmusic.com/artist/trouble-mn0000747243)
+- [AllMusic album review](https://www.allmusic.com/album/trouble-mw0000652072)

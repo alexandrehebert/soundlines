@@ -2,9 +2,10 @@
 
 Graph ID `featured:bandoneon-tango`
 
-**Review status** · Instrument history and tango association checked
+**Review status** · Source-checked
 
-## Evidence review
+**Relationship** · featured_in · high
 
-- The Folkways notes distinguish generic early free-reed instruments from the specific design named Bandonion after 1855. That gives the graph a circa-1855 anchor, with medium confidence. The notes caution that historical instrument names were inconsistent. [Folkways notes](https://folkways-media.si.edu/docs/folkways/artwork/SFW40431.pdf)
-- The Smithsonian catalogs a bandoneón made in 1870 and describes early twentieth-century adoption by Argentine tango bands. The strong instrument–genre association supports high confidence for the edge. Circa 1900 is a medium-confidence adoption marker. The sources give no basis for the previous 1880 golden-age and 1930 transition markers. [Smithsonian object record](https://music.si.edu/object-day/bandoneon)
+**Finding** · Smithsonian Folkways describes tango ensembles built around bandoneons, and Smithsonian’s National Museum of American History calls the bandoneon a mainstay of tango bands. The evidence directly supports the relationship.
+
+**Source** · [Smithsonian Folkways](https://folkways.si.edu/dance-traditions-argentina/chacarera-tango/music/tools-for-teaching/smithsonian); [Smithsonian NMAH](https://music.si.edu/object-day/bandoneon).

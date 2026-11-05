@@ -2,10 +2,10 @@
 
 Graph ID `featured:tr-808-trap-rap`
 
-**Review status** · Production evidence checked
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-## Evidence review
+**Finding** · Roland’s account directly traces the 808-based Triggerman loop as a building block for trap, linking TR-808-derived production to trap rap.
 
-Roland traces trap bass to stretched kick samples and synthesized 808-style sounds. The original hardware’s sound is the point of reference, while individual recordings may use samples or software. [Evidence 1](<https://articles.roland.com/nothing-sounds-quite-like-an-808-analyzing-the-bass-that-changed-music/>)
+**Sources** · [https://articles.roland.com/retracing-the-roland-sound-in-hip-hop/](https://articles.roland.com/retracing-the-roland-sound-in-hip-hop/).

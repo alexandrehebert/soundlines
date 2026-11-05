@@ -1,11 +1,15 @@
-# My Bloody Valentine → Shoegaze
+# key:my-bloody-valentine-shoegaze
 
 Graph ID `key:my-bloody-valentine-shoegaze`
 
-**Review status** · Pending source review
+**Review status** · Centrality and genre fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://ans-names.pitt.edu/ans/article/download/2124/2123/4330>), [2](<https://www.allmusic.com/genre/shoegaze-ma0000004454>), [3](<https://www.allmusic.com/artist/my-bloody-valentine-mn0000514219>)
+**Finding** · MBV are widely recognized as architects of shoegaze, with *Loveless* central to the style’s history. Strong defining association.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/genre/shoegaze-ma0000004454
+- https://salford-repository.worktribe.com/preview/1497897/Shoegaze.pdf
+- https://www.irishtimes.com/culture/music/2025/11/15/my-bloody-valentine-the-most-important-irish-band-of-the-21st-century/

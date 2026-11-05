@@ -1,0 +1,13 @@
+# Juan Atkins → Belleville Three
+
+Graph ID `member:juan-atkins-belleville-three`
+
+**Review status** · Reviewed — Atkins as a Belleville Three member confirmed
+**Reviewed** · 2026-11-03
+
+## Sources checked
+- [Detroit Historical Society](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/saunderson-kevin) — the three Belleville High friends became known as the “Belleville Three”.
+- [Pitchfork Atkins obituary](https://pitchfork.com/story/juan-atkins-co-founder-of-techno-music-dies-at-64/) — Belleville Three co-founder.
+
+## Assessment
+This is core, uncontested membership. Confidence rises to high.

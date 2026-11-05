@@ -2,10 +2,10 @@
 
 Graph ID `anthem:music-for-18-musicians-minimalism-steve-reich`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Music_for_18_Musicians>), [2](<https://en.wikipedia.org/wiki/minimalism>)
+**Findings** · Cornell’s study calls the 1974–76 work a hallmark of minimalism and Reich’s best-known work; IRCAM catalogs the composition. This is a canonical minimalist work; “anthem” is metaphorical, but the combined edge is strong.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://ecommons.cornell.edu/entities/publication/de44c517-207a-472e-8494-b2b2b490d652) · [2](https://ressources.ircam.fr/en/work/music-for-eighteen-musicians) · [3](https://stevereich.com/composition/music-for-18-musicians/)

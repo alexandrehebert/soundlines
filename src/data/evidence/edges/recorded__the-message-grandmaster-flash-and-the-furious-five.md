@@ -2,10 +2,10 @@
 
 Graph ID `recorded:the-message-grandmaster-flash-and-the-furious-five`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Message_(Grandmaster_Flash_and_the_Furious_Five_song)>)
+**Findings** · Smithsonian NMAAHC catalogs the 1982 Sugar Hill album by Grandmaster Flash and the Furious Five; the Library of Congress Registry essay documents the group's recording (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://nmaahc.si.edu/object/nmaahc_2013.1.3ab) · [2](https://memory.loc.gov/static/programs/national-recording-preservation-board/documents/TheMessage.pdf)

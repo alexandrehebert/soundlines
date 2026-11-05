@@ -1,11 +1,11 @@
-# Valved trumpet → Cool jazz
+# Trumpet Cool Jazz
 
 Graph ID `featured:trumpet-cool-jazz`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Trumpet>)
+**Finding** · NEA identifies Miles Davis as a trumpeter and documents his nonet’s Birth of the Cool recording; direct instrument and cool-jazz-associated work evidence.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://www.arts.gov/honors/jazz/miles-davis](https://www.arts.gov/honors/jazz/miles-davis).

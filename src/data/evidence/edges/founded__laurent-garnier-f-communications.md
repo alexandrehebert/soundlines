@@ -2,10 +2,10 @@
 
 Graph ID `founded:laurent-garnier-f-communications`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · founded · medium
+**Relationship** · founded · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Laurent_Garnier>), [2](<https://www.allmusic.com/artist/laurent-garnier-mn0000140786>)
+**Finding** · Philharmonie states Garnier founded and ran F Communications; his RBMA interview recounts starting it with Eric Morand; RA confirms the 1994 co-founding by both. Treat Garnier as a co-founder.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [https://philharmoniedeparis.fr/fr/live/concert/0935678-laurent-garnier](https://philharmoniedeparis.fr/fr/live/concert/0935678-laurent-garnier); [https://www.redbullmusicacademy.com/lectures/laurent-garnier-lecture/](https://www.redbullmusicacademy.com/lectures/laurent-garnier-lecture/); [https://ra.co/labels/327](https://ra.co/labels/327).

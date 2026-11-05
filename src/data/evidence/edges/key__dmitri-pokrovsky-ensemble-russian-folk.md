@@ -2,13 +2,11 @@
 
 Graph ID `key:dmitri-pokrovsky-ensemble-russian-folk`
 
-**Review status** · Reviewed — raised to high
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-04
 
 ## Sources checked
-- [Encyclopedia.com (Encyclopedia of Russian History): Folk music](https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/folk-music-0) — the Pokrovsky village-style revival brought international attention.
-- [Wikipedia: Dmitri Pokrovsky Ensemble](https://en.wikipedia.org/wiki/Dmitri_Pokrovsky_Ensemble).
-- [AllMusic: Russian traditions](https://www.allmusic.com/style/russian-traditions-ma0000002838) (blocked; existing).
+- [Mariinsky Theatre: Dmitry Pokrovsky Ensemble](https://www.mariinsky.ru/en/company/priglashennye_kollektivy/pokrovsky_orchestra/) — describes its folklore practice and Russian regional-song repertoire (lines 25–29).
+- [Encyclopedia.com: Folk music](https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/folk-music-0) — notes the ensemble’s role in the Russian folk revival.
 
 ## Assessment
-A reference encyclopedia names Pokrovsky's ensemble as the key 1970s revival of Russian folk performance. Confidence is now high. See node evidence.
+High confidence. The ensemble performs Russian folk repertoire, alongside other material; the graph edge reflects its key association, not an exclusive genre.

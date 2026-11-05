@@ -2,10 +2,10 @@
 
 Graph ID `featured:bongos-latin-jazz`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://americanhistory.si.edu/node/610>)
+**Finding** · Smithsonian Folkways classifies the anthology as Latin jazz and lists bongos among the instruments in this collection. This supports occurrence in the genre, not prevalence in every Latin jazz ensemble.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [Smithsonian Folkways, Latin Jazz: La Combinación Perfecta](<https://folkways.si.edu/latin-jazz-la-combinacion-perfecta/ragtime-latin-world/music/album/smithsonian>).

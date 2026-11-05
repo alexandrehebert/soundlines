@@ -2,10 +2,10 @@
 
 Graph ID `key:a-tribe-called-quest-alternative-rap`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://www.allmusic.com/style/alternative-rap-ma0000012203>)
+**Finding** · Opened studio press release describes Tribe as widely claimed pioneers of alternative rap (lines 0–8). Good corroboration, but genre-label consensus is broad rather than exclusive.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.sonyclassics.com/downloads/Beats-Release.pdf](https://www.sonyclassics.com/downloads/Beats-Release.pdf).

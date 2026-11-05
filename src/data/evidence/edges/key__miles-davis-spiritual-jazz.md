@@ -1,11 +1,3 @@
-# Miles Davis → Spiritual jazz
+# Removed edge: key:miles-davis-spiritual-jazz
 
-Graph ID `key:miles-davis-spiritual-jazz`
-
-**Review status** · Pending source review
-
-**Relationship** · key_artist_of · medium
-
-**Graph citations** · [1](<https://www.allmusic.com/style/spiritual-jazz-ma0000013403>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+Removed 2026-11-05; reviewed sources establish adjacent or occasional relation, not key-artist centrality. Reference genre highlights identify Coltrane and Pharoah Sanders, not Davis; the biographical classification centers Davis on bebop, modal jazz, funk, and fusion. Spiritual dimensions in some work do not establish him as a key artist of this specific genre. Remove rather than confuse spirituality with genre membership.

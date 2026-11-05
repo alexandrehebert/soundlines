@@ -1,11 +1,18 @@
-# The Drunken Beauty → Mei Lanfang
+# recorded:the-drunken-beauty-mei-lanfang
 
 Graph ID `recorded:the-drunken-beauty-mei-lanfang`
 
-**Review status** · Pending source review
+**Review status** · Source checked
 
-**Relationship** · recorded_by · medium
+**Reviewed** · 2026-11-05
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Drunken_Beauty>)
+**Relationship** · recorded_by · high
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Finding
+
+The recording catalogue identifies Mei Lanfang performing “The Drunken Concubine” (Guifei Zuijiu), the work known here as The Drunken Beauty. ChinaCulture identifies the same opera as a representative Mei role. The original recording date remains unknown; later compilation dates are not treated as original releases.
+
+## Sources checked
+
+- https://music.apple.com/us/album/the-drunken-concubine-gui-fei-zui-jiu/268774725?i=268774739
+- https://en.chinaculture.org/2014-12/02/content_579408.htm

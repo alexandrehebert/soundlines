@@ -1,11 +1,11 @@
-# DJ Spinn → Juke / footwork
+# DJ Spinn → footwork
 
 Graph ID `key:dj-spinn-footwork`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Red Bull Music Academy, DJ Spinn & DJ Rashad](https://www.redbullmusicacademy.com/lectures/dj-rashad-dj-spinn-windy-city-boom/) — calls them prime movers of Chicago footwork and key figures in the movement (lines 15–21).
 
-**Graph citations** · [1](<https://www.allmusic.com/style/juke-footwork-ma0000013543>), [2](<https://www.allmusic.com/artist/dj-rashad-mn0000998421>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+High confidence. Direct specialist source supports both genre and artist relation.

@@ -2,10 +2,10 @@
 
 Graph ID `plays:frankie-knuckles-tr-909`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · plays · medium
+**Relationship** · plays · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Frankie_Knuckles>)
+**Finding** · In a first-person interview, Knuckles says Derrick May gave him his first TR-909 and describes programming and using it live.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://daily.redbullmusicacademy.com/2018/02/frankie-knuckles-1995-interview/?curator=MusicREDEF](https://daily.redbullmusicacademy.com/2018/02/frankie-knuckles-1995-interview/?curator=MusicREDEF).

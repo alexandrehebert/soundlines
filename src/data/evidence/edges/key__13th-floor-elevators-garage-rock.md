@@ -2,10 +2,10 @@
 
 Graph ID `key:13th-floor-elevators-garage-rock`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/garage-rock-ma0000004458>), [2](<https://academic.oup.com/book/6294>), [3](<https://www.allmusic.com/artist/mn0000504928>)
+**Finding** · Direct: entry calls them a garage rock band (line 11), while also describing the group as psychedelic rock. Keep the genre association high.
 
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [https://www.tshaonline.org/handbook/entries/13th-floor-elevators](https://www.tshaonline.org/handbook/entries/13th-floor-elevators).

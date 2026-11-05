@@ -2,10 +2,10 @@
 
 Graph ID `key:cheb-hasni-rai`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Cheb_Hasni>)
+**Findings** · Le Monde obituary calls him a raï star and the champion of sentimental raï, explicitly describing the rhythmic background as raï (Le Monde). Strong primary-era reporting; specify sentimental raï if available.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.lemonde.fr/archives/article/1994/10/01/algerie-cheb-hasni-le-champion-du-rai-sentimental_3853888_1819218.html)

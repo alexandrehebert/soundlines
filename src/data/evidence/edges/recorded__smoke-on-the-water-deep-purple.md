@@ -2,10 +2,10 @@
 
 Graph ID `recorded:smoke-on-the-water-deep-purple`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Smoke_on_the_Water>)
+**Findings** · Deep Purple’s official retrospective recounts the making of “Smoke on the Water” during the *Machine Head* sessions; the band’s official channel and original release materials credit it to Deep Purple (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://deep-purple.com/smoke-clears-inthestudio-for-the-40th-anniversary-of-deep-purples-machine-head/) · [2](https://www.youtube.com/watch?v=_zO6lWfvM0g)

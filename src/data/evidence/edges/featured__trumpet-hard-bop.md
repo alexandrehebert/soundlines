@@ -1,11 +1,11 @@
-# Valved trumpet → Hard bop
+# Trumpet Hard Bop
 
 Graph ID `featured:trumpet-hard-bop`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Trumpet>)
+**Finding** · Miles Davis estate history identifies his trumpeter road band as playing to hard-bop fans; supports direct association, though primary-source framing.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://www.milesdavis.com/timeline-1955/](https://www.milesdavis.com/timeline-1955/).

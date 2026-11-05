@@ -2,12 +2,15 @@
 
 Graph ID `event:spotify-launch`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 2008 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Spotify launched in several European markets in October 2008, helping establish on-demand subscription streaming as a major way to access recorded music.
+## Sources checked
 
-**Graph citations** · [1](<https://newsroom.spotify.com/spotify-timeline/>), [2](<https://www.bbc.com/news/technology-43673014>)
+- [Spotify Newsroom, Visual History](https://newsroom.spotify.com/spotify-timeline/) — Timeline identifies October 2008 launch in Spain, Sweden, and the U.K.
+- [Spotify Newsroom, Celebrating a Decade of Discovery](https://newsroom.spotify.com/2018-10-10/celebrating-a-decade-of-discovery-on-spotify/) — Retrospective confirms the service was available from October 2008.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 2008 European launch is supported. “Subscription streaming” was one access option, alongside ad-supported listening; describe Spotify as on-demand streaming, not subscription-only.

@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-ludwig-van-beethoven-bonn`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Born in Bonn.
+**Finding** · Beethoven-Haus Bonn states that Beethoven was born in Bonn in 1770 and lived there until 1792. This is a birthplace claim and is strongly supported.
 
-**Graph citations** · [1](<https://www.beethoven.de/en/museum>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [Beethoven-Haus Bonn biography](https://www.beethoven.de/en/beethoven).

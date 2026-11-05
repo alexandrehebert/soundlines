@@ -1,11 +1,13 @@
-# Carl Cox → Techno
+# Carl Cox → techno
 
 Graph ID `key:carl-cox-techno`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · unrated
+## Sources checked
+- [Carl Cox official biography](https://carlcox.com/biography/) — describes him as a champion of techno and documents his turn toward underground techno.
+- [Technics artist profile](https://eu.technics.com/dj/artista/carl-cox/) — identifies Cox as a techno pioneer and acid-house figure.
+- [DJ Mag profile](https://djmag.com/cover-features/carl-cox-still-searching-his-perfect-techno-sound) — describes him as a techno champion.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Carl_Cox>), [2](<https://www.allmusic.com/artist/carl-cox-mn0000174470>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+High confidence. Replaced Wikipedia with artist, manufacturer, and specialist editorial sources.

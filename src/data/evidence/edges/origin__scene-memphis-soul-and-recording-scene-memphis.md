@@ -1,13 +1,19 @@
-# Memphis soul and recording scene → Memphis
+# Scene Memphis Soul And Recording Scene Memphis
 
 Graph ID `origin:scene-memphis-soul-and-recording-scene-memphis`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · high
 
-**Graph note** · Scene geography is shared or regional where the description says so.
+**Finding** · Smithsonian materials document Stax’s Memphis location and the city’s soul recording history; the Memphis Rock ’n’ Soul Museum traces the city’s sound to the interaction of blues, gospel, R&B, Stax, and Hi Records. [Smithsonian NMAH, Stax archival collection](https://americanhistory.si.edu/ne/collections/archival-item/sova-nmah-ac-0879-ref355); [Memphis Rock ’n’ Soul Museum](https://www.memphisrocknsoul.org/about-us); [Smithsonian, Stax collection search](https://collections.si.edu/search/results.htm?q=%22Stax+Records%22)
 
-**Graph citations** · [1](<https://www.memphistravel.com/music>), [2](<https://staxmuseum.com/stax-records/>)
+**Recommendation** · **High for a recording scene; retain.** Memphis was a major center, while the sound drew on a larger Southern musical geography.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://americanhistory.si.edu/ne/collections/archival-item/sova-nmah-ac-0879-ref355](https://americanhistory.si.edu/ne/collections/archival-item/sova-nmah-ac-0879-ref355)
+- [https://www.memphisrocknsoul.org/about-us](https://www.memphisrocknsoul.org/about-us)
+- [https://collections.si.edu/search/results.htm?q=%22Stax+Records%22](https://collections.si.edu/search/results.htm?q=%22Stax+Records%22)
+
+**Assessment** · A local scene, development center, or label address is distinguished from an exclusive genre birthplace. Confidence reflects the actual place relation asserted by the graph.

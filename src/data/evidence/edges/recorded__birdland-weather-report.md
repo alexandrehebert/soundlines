@@ -1,11 +1,11 @@
-# Birdland → Weather Report
+# Weather Report recorded “Birdland”
 
 Graph ID `recorded:birdland-weather-report`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Birdland_(Weather_Report_song)>)
+**Finding** · The annotated discography lists “Birdland” as track 1 on *Heavy Weather* and provides album credits. Useful direct discographic evidence; seek label/primary confirmation before rating high.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.weatherreportdiscography.org/heavy-weather/](https://www.weatherreportdiscography.org/heavy-weather/).

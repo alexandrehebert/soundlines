@@ -1,11 +1,11 @@
-# Rite of Spring → Igor Stravinsky
+# The Rite of Spring → Igor Stravinsky
 
 Graph ID `recorded:rite-of-spring-stravinsky`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Rite_of_Spring>)
+**Findings** · Although the graph node currently represents the composition and uses 1913, Stravinsky did conduct a Columbia Symphony Orchestra recording in 1960. LOC’s Registry essay discusses the Stravinsky-conducted recording and Apple catalogs the recording under Igor Stravinsky and the orchestra (,,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/TheRiteOfSpring.pdf) · [2](https://music.apple.com/us/album/stravinsky-conducts-the-rite-of-spring-petrushka/1086773980) · [3](https://catalog.dmpl.org/Record/221312)

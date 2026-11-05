@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-illapu-antofagasta`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Founded in Antofagasta in 1971.
+**Findings** · Illapu’s official history says the group began in Antofagasta in 1971; Chile’s Memoria Chilena also identifies Antofagasta as its birth city: Illapu official history, Memoria Chilena PDF.
 
-**Graph citations** · [1](<https://www.cooperativa.cl/noticias/entretencion/musica/illapu/illapu-celebra-sus-50-anos-de-historia-con-nuevo-disco-y-concierto/2021-04-20/113449.html>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://illapu.cl/historia/) · [2](https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0006509.pdf)

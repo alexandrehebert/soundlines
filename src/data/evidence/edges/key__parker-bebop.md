@@ -2,15 +2,11 @@
 
 Graph ID `key:parker-bebop`
 
-**Review status** · Reviewed — founding role confirmed; raised to high
-
-**Reviewed** · 2026-11-03
+**Review status** · Source-checked; high confidence
 
 ## Sources checked
-
-- [Britannica, bebop](https://www.britannica.com/art/bebop) — Parker “the most richly endowed” of bebop’s originators.
-- [Carnegie Hall timeline, bebop](https://timeline.carnegiehall.org/genres/bebop) — Parker central; “Koko”, “Ornithology”.
+- [Kansas Historical Society — Charles Christopher Parker](https://www.kansashistory.gov/kansapedia/charles-christopher-parker/12163) — says Parker’s musical innovations shaped bebop and calls the sound his trademark.
+- [State Historical Society of Missouri — Charlie “Bird” Parker](https://historicmissourians.shsmo.org/charlie-parker/) — identifies Parker as a pioneering figure who founded the bebop style.
 
 ## Assessment
-
-Confidence → high; consistent with the reviewed Parker node.
+The two state historical institutions directly support the artist–genre relationship. Confidence remains high.

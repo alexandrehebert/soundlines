@@ -2,10 +2,10 @@
 
 Graph ID `key:ellington-swing`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Swing_music>)
+**Findings** · NMAAHC says “It Don’t Mean a Thing (If It Ain’t Got That Swing)” became an anthem of the Swing Era. This supports Ellington’s central swing-era role, while swing is only one phase of his much longer jazz career.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://nmaahc.si.edu/explore/stories/jazz-appreciation-month-duke-ellington)

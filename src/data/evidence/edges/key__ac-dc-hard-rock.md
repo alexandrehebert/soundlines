@@ -2,10 +2,10 @@
 
 Graph ID `key:ac-dc-hard-rock`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Hard_rock>)
+**Finding** · Direct: Hall calls AC/DC’s niche “between punky hard rock and heavy metal” (opened profile, around lines 27–32).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://rockhall.com/inductees/acdc/?pubDate=20250725](https://rockhall.com/inductees/acdc/?pubDate=20250725).

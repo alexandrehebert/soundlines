@@ -2,10 +2,10 @@
 
 Graph ID `plays:manu-dibango-saxophone`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · plays · unrated
+**Relationship** · plays · high
 
-**Graph citations** · [1](<https://www.britannica.com/biography/Manu-Dibango>)
+**Findings** · Madrid’s Círculo de Bellas Artes says he began playing saxophone in Brussels jazz groups; Universal Music France independently identifies him as a saxophonist and documents the instrument in his work.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.circulobellasartes.com/en/biografia/manu-dibango/) · [2](https://universalmusic.fr/artistes/20000085946)

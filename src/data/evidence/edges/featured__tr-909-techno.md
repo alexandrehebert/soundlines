@@ -4,6 +4,8 @@ Graph ID `featured:tr-909-techno`
 
 **Review status** · Relationship evidence checked
 
+**Reviewed** · 2026-11-04
+
 **Relationship** · featured_in · high
 
 **Graph note** · Derrick May used a TR-909 on “Strings of Life,” and Jeff Mills used it in his production and performance practice.

@@ -1,11 +1,17 @@
-# Juan Atkins → Techno
+# Juan Atkins Techno
 
 Graph ID `key:juan-atkins-techno`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Juan_Atkins>), [2](<https://en.wikipedia.org/wiki/Techno>), [3](<https://www.wired.com/1994/07/techno/>)
+**Finding** · Atkins is a foundational techno creator and member of the Belleville Three. Institutional histories support a defining association, while the collaborative nature of Detroit techno should remain explicit.
 
-**Citation retrieval** · 1 bulk responses, 1 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/atkins-juan](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/atkins-juan)
+- [https://archives.iu.edu/html/VAE6885.html](https://archives.iu.edu/html/VAE6885.html)
+- [https://www.detroithistorical.org/learn/online-research/blog/flashback-2002-detroit-electronic-music-festival](https://www.detroithistorical.org/learn/online-research/blog/flashback-2002-detroit-electronic-music-festival)
+
+**Assessment** · Confidence applies to the exact artist–genre relation, distinguishing central genre association from period-specific, hybrid, or influence-only evidence.

@@ -2,12 +2,15 @@
 
 Graph ID `event:crazy-blues-recording`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1920 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Mamie Smith’s Crazy Blues was recorded and released by Okeh in 1920. Its commercial success helped establish a market for blues records by Black women singers, though it was not the first blues performance or blues recording in history.
+## Sources checked
 
-**Graph citations** · [1](<https://www.si.edu/object/crazy-blues-its-right-here-you%3Anmaahc_2016.69.2>), [2](<https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/>)
+- [Library of Congress, Crazy Blues essay](https://www.loc.gov/static/programs/national-recording-preservation-board/documents/CrazyBlues.pdf) — Dates the recording to 10 August 1920 and release that fall; describes its success and influence on the market for blues by Black women.
+- [Library of Congress, Early Sound Recordings of Amazing Grace](https://www.loc.gov/collections/amazing-grace/articles-and-essays/early-sound-recordings-of-amazing-grace/) — Estimates roughly 250,000 sales and describes its role in prompting labels to expand blues recording.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+The recording and release year are sound. “Helped establish a market” is better than treating it as the first blues or the sole cause of race-record marketing; the existing description appropriately cautions against that overclaim.

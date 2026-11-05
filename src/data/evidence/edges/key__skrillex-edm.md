@@ -2,10 +2,11 @@
 
 Graph ID `key:skrillex-edm`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · unrated
+## Sources checked
+- [Recording Academy artist page](https://www.grammy.com/artists/skrillex/6363/) — documents his dance/electronic work and awards.
+- [Insomniac artist profile](https://www.insomniac.com/music/artists/skrillex/) — identifies him as an electronic dance artist.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Skrillex>), [2](<https://www.allmusic.com/artist/skrillex-mn0002365087>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+High confidence for broad EDM association; dubstep remains the more precise defining tag.

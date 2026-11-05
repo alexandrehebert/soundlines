@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-ravi-shankar-varanasi`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Born in Varanasi.
+**Finding** · The Polar Music Prize biography and India’s Sangeet Natak Akademi both identify Varanasi as Ravi Shankar’s birthplace in 1920.
 
-**Graph citations** · [1](<https://www.praemiumimperiale.org/en/laureate/india/shankar>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [Polar Music Prize](https://www.polarmusicprize.org/laureates/ravi-shankar/); [Sangeet Natak Akademi](https://www.sangeetnatak.gov.in/public/uploads/awardees/docs/1740735753_Ravi%20Shankar.pdf).

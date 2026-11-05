@@ -2,10 +2,10 @@
 
 Graph ID `recorded:black-pearl-jam`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Black_(Pearl_Jam_song)>)
+**Findings** · Pearl Jam’s official *Ten* page lists “Black” on the album (Pearl Jam).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://pearljam.com/music/album/ten)

@@ -1,13 +1,18 @@
-# Balinese gamelan traditions → Bali
+# Scene Balinese Gamelan Traditions Bali
 
 Graph ID `origin:scene-balinese-gamelan-traditions-bali`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Regional scene geography; not an exclusive origin claim.
+**Finding** · Smithsonian National Museum of Asian Art and Smithsonian Folkways document Balinese gamelan as a varied, island-wide ensemble tradition used in temple, village, ceremonial, and performance contexts, not a single-city genre.)
 
-**Graph citations** · [1](<https://asia.si.edu/shimmering-sounds-from-bali-the-gamelan-ensemble-of-the-indonesian-institute-of-the-arts/>)
+**Recommendation** · High, regional. Bali is the relevant cultural geography. Keep the edge as regional tradition geography, not a point-origin claim.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://asia.si.edu/balinese-music-and-dance-gamelan-mitra-kusuma/](https://asia.si.edu/balinese-music-and-dance-gamelan-mitra-kusuma/)
+- [https://folkways.si.edu/bali-court-music-and-banjar-music/world/music/album/smithsonian](https://folkways.si.edu/bali-court-music-and-banjar-music/world/music/album/smithsonian)
+
+**Assessment** · Confidence reflects the exact place-to-scene/origin association. Where evidence describes a major center or local scene rather than a singular birthplace, the graph note preserves that distinction.

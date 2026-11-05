@@ -2,10 +2,15 @@
 
 Graph ID `involved:woodstock-festival-jimi-hendrix`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — cross-checked against the reviewed event record
 
-**Relationship** · involved · unrated
+**Relationship** · involved · high
 
 **Graph citations** · [1](<https://home.nps.gov/places/woodstock-music-festival-site.htm>)
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The graph cites sources that identify Jimi Hendrix as directly participating in or belonging to “Woodstock Music & Art Fair takes place.” The participant/association is supported at high confidence.

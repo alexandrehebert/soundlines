@@ -1,11 +1,9 @@
-# Einstein on the Beach → Philip Glass
+# Einstein on the Beach → Philip Glass (relation corrected)
 
-Graph ID `recorded:einstein-on-the-beach-philip-glass`
+Former graph ID `recorded:einstein-on-the-beach-philip-glass`
 
-**Review status** · Pending source review
+**Disposition** · Replaced underspecified `recorded_by` claim with `composed_by:einstein-on-the-beach-philip-glass`.
 
-**Relationship** · recorded_by · medium
+**Finding** · Glass’s official catalogue establishes his authorship of the opera; recording credits require naming a specific recording or performing ensemble.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Einstein_on_the_Beach>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [Philip Glass official composition page](https://philipglass.com/compositions/einstein_on_the_beach/).

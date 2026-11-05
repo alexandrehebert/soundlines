@@ -2,10 +2,16 @@
 
 Graph ID `origin:artist-skrillex-los-angeles`
 
-**Review status** · Pending source review
+**Review status** · independently source-checked
 
-**Relationship** · originated_in · unrated
+**Relationship** · originated_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Skrillex>), [2](<https://www.allmusic.com/artist/skrillex-mn0002365087>)
+**Sources checked**
+- [www.grammy.com](https://www.grammy.com/artists/skrillex/6363/) — The Recording Academy biography gives Skrillex’s birthplace as Los Angeles; Insomniac describes him as from Los Angeles.
+- [www.insomniac.com](https://www.insomniac.com/music/artists/skrillex/) — The Recording Academy biography gives Skrillex’s birthplace as Los Angeles; Insomniac describes him as from Los Angeles.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The Recording Academy biography gives Skrillex’s birthplace as Los Angeles; Insomniac describes him as from Los Angeles. The place association is supported.

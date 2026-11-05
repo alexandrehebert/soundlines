@@ -1,13 +1,18 @@
-# Congolese rumba → Soukous
+# lineage:congolese-rumba-soukous
 
 Graph ID `lineage:congolese-rumba-soukous`
 
-**Review status** · Pending source review
+**Review status** · Influence/direction and evidence checked (2026-11-05)
 
-**Relationship** · influences · high
+**Relationship** · derived_from · high
 
-**Graph note** · The later soukous sound developed from Congolese rumba.
+**Finding** · Academic account characterizes soukous as a later variation/evolution of Congolese rumba. Direction and high certainty fit, but relation is closer to historical derivation than a separate influence.
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/tabu-ley-rochereau-mn0000015762>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://libstore.ugent.be/fulltxt/RUG01/003/013/321/RUG01-003013321_2021_0001_AC.pdf
+- https://www.allmusic.com/artist/tabu-ley-rochereau-mn0000015762
+
+## Direction correction (2026-11-05)
+
+The reviewed finding above describes the newer style as deriving from or fusing the older style. The graph endpoints now read `genre:soukous` → `derived_from` → `genre:congolese-rumba`, consistent with that finding and the graph's descendant-to-parent convention. The stable edge ID is unchanged.

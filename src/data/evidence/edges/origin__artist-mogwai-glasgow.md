@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-mogwai-glasgow`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Formed in Glasgow.
+**Finding** · Sub Pop’s artist biography and AllMusic identify Mogwai as formed in Glasgow in 1995.
 
-**Graph citations** · [1](<https://mogwai.scot/biography/>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [Sub Pop](https://www.subpop.com/artists/mogwai); [AllMusic](https://www.allmusic.com/artist/mogwai-mn0000923705).

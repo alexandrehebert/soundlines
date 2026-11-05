@@ -1,11 +1,17 @@
-# Khaled (Cheb Khaled) → Raï
+# Khaled Rai
 
 Graph ID `key:khaled-rai`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Khaled_(musician)>), [2](<https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894>)
+**Finding** · Institutional catalog and editorial reference identify Khaled as a raï singer, often called its “King.” His international pop crossover does not weaken this central genre association.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://catalogue.royalalberthall.com/Record.aspx?id=DS%2FUK%2F20014&src=CalmView.Persons](https://catalogue.royalalberthall.com/Record.aspx?id=DS%2FUK%2F20014&src=CalmView.Persons)
+- [https://www.allmusic.com/artist/mn0001604255](https://www.allmusic.com/artist/mn0001604255)
+- [https://www.thenationalnews.com/weekend/2022/12/30/khaled-on-his-vibrant-new-album-and-how-rai-is-the-music-of-the-algerian-working-class/](https://www.thenationalnews.com/weekend/2022/12/30/khaled-on-his-vibrant-new-album-and-how-rai-is-the-music-of-the-algerian-working-class/)
+
+**Assessment** · Confidence applies to the exact artist–genre relation, distinguishing central genre association from period-specific, hybrid, or influence-only evidence.

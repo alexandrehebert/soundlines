@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-prince-minneapolis`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Minneapolis is the key home base of Prince’s recording and performance network.
+**Finding** · Explore Minnesota and the Television Academy identify Minneapolis as Prince’s birthplace; the city was also central to his music career. This supports the location, though the graph label combines birthplace and career origin.
 
-**Graph citations** · [1](<https://mn.gov/admin/shpo/architectural-history/minneapolis-sound/>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [Explore Minnesota](https://www.exploreminnesota.com/minnesota-icons/prince-frequently-asked-questions); [Television Academy biography](https://www.televisionacademy.com/bios/prince).

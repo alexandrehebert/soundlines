@@ -2,10 +2,10 @@
 
 Graph ID `plays:mozart-piano`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · plays · medium
+**Relationship** · plays · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart>)
+**Findings** · The International Mozarteum Foundation museum record identifies Mozart’s fortepiano as his concert instrument and documents public performances in Vienna. Fortepiano is the period piano; the graph’s generic piano node includes it.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://mozarteum.at/en/mozart-museums/mozarts-birthplace)

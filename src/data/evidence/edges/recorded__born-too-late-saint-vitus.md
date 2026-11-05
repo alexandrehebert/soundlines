@@ -2,10 +2,10 @@
 
 Graph ID `recorded:born-too-late-saint-vitus`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Born_Too_Late_(Saint_Vitus_song)>)
+**Finding** · Identifies *Born Too Late* as an album by Saint Vitus and the title track. This establishes the title track/album artist credit; recording-session details were not checked.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://music.apple.com/us/album/born-too-late/117748132](https://music.apple.com/us/album/born-too-late/117748132).

@@ -2,10 +2,10 @@
 
 Graph ID `recorded:chase-giorgio-moroder`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Chase_(Giorgio_Moroder_song)>)
+**Finding** · His official page lists “Chase” among the soundtrack tracks, which supports his recording credit. Track-level personnel/session information was not checked.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.giorgiomoroder.com/music/midnight-express/](https://www.giorgiomoroder.com/music/midnight-express/).

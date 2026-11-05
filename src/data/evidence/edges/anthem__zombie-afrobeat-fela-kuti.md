@@ -1,11 +1,15 @@
-# Zombie → Afrobeat
+# anthem:zombie-afrobeat-fela-kuti
 
 Graph ID `anthem:zombie-afrobeat-fela-kuti`
 
-**Review status** · Pending source review
+**Review status** · Exact version, genre and anthem framing checked (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Zombie_(Fela_Kuti_song)>), [2](<https://en.wikipedia.org/wiki/afrobeat>)
+**Finding** · AP verifies the 1976 title track’s political resonance in Nigeria and situates Fela as Afrobeat’s originator; scholarship analyzes the song’s critique and political reception. Its status as a protest anthem is plausible, but the checked sources more directly call it a political statement/greatest hit than an anthem. Medium-high for genre canon with this caveat.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://apnews.com/article/9eacb46f0197a1bf8399716b45a60265
+- https://repositories.cdlib.org/uc/item/6q14n95c
+- https://music.apple.com/us/album/zombie/559710299

@@ -2,10 +2,10 @@
 
 Graph ID `key:compay-segundo-son-cubano`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.pbs.org/buenavista/music/a_son.html>)
+**Findings** · The specialist *Encyclopedia of Latin American History and Culture* account says Los Compadres played mainly sones and boleros; PBS locates Segundo in Santiago, identified as the birthplace of Cuban son, and his interview discusses his son composition “Chan Chan” (,,). The link is strong, though his repertoire also included trova and bolero.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/compay-segundo-1907-2003) · [2](https://www.pbs.org/buenavista/musicians/bios.html) · [3](https://www.pbs.org/buenavista/musicians/bios/compay_interview_eng.html)

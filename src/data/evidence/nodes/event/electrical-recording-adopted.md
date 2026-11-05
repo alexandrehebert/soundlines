@@ -2,12 +2,15 @@
 
 Graph ID `event:electrical-recording-adopted`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1925 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Electrical microphones and amplification entered commercial recording in the mid-1920s, improving fidelity and changing studio practice and the sound of records.
+## Sources checked
 
-**Graph citations** · [1](<https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/>)
+- [Library of Congress, Historical Background Timeline](https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/) — States Columbia and Victor successfully implemented and introduced electrical recording in 1925.
+- [Library of Congress, Acoustical Recording](https://www.loc.gov/collections/national-jukebox/articles-and-essays/acoustical-recording/) — Defines the acoustical era as ending around 1925 and explains the change from mechanical recording to microphones and electrical amplification.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 1925 transition is well supported. Earlier experimental electrical recordings existed; describe this as commercial adoption by major labels, not the invention or first-ever use of electrical recording.

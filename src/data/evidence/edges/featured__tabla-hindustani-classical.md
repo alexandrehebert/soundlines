@@ -2,10 +2,10 @@
 
 Graph ID `featured:tabla-hindustani-classical`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Tabla>)
+**Finding** · The dissertation traces tabla’s role in Hindustani classical rhythm and khayal; Smithsonian Folkways independently identifies it as a core North Indian classical percussion instrument.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://escholarship.org/content/qt2z31581v/qt2z31581v.pdf](https://escholarship.org/content/qt2z31581v/qt2z31581v.pdf); [https://folkways-media.si.edu/docs/lesson_plans/FLP10104_Music_of_North_India.pdf](https://folkways-media.si.edu/docs/lesson_plans/FLP10104_Music_of_North_India.pdf).

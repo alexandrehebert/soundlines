@@ -2,10 +2,10 @@
 
 Graph ID `key:division-post-punk`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Post-punk>)
+**Findings** · AllMusic calls them the first band in the post-punk movement; scholarly article identifies them as foundational to post-punk.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/artist/joy-division-mn0000290812) · [2](https://intellectdiscover.com/content/journals/10.1386/punk.1.2.139_1)

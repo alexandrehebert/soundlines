@@ -1,11 +1,11 @@
-# Blitzkrieg Bop → Ramones
+# Ramones recorded “Blitzkrieg Bop”
 
 Graph ID `recorded:blitzkrieg-bop-ramones`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Blitzkrieg_Bop>)
+**Finding** · The official Ramones release and Rock Hall store both list “Blitzkrieg Bop” on the Ramones debut album. LOC’s registry listing surfaced as a result but its page returned 403, so it is not counted as read.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://store.ramones.com/products/ramones-picture-disc](https://store.ramones.com/products/ramones-picture-disc); [https://shop.rockhall.com/products/ramones-ramones-vinyl-lp](https://shop.rockhall.com/products/ramones-ramones-vinyl-lp).

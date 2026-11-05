@@ -2,12 +2,8 @@
 
 Graph ID `origin:genre-salsa-cali`
 
-**Review status** · Pending source review
+**Disposition** · Removed after source review (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Finding** · Cali became a major salsa consumption, performance, and local-style center, but academic history explicitly says salsa roots do not originate in Colombia. This is a scene/cultural-hub relationship, not a strict genre-origin edge; Cali salsa-scene coverage belongs in the separate scene relation.
 
-**Graph note** · Cali developed a distinctive local salsa culture; salsa has broader Caribbean and New York histories.
-
-**Graph citations** · [1](<https://folklife.si.edu/magazine/la-vieja-guardia-salsa-dancing-cali-colombia>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked** · [University of Illinois dissertation record](https://www.ideals.illinois.edu/items/87144) · [Smithsonian Folklife, Cali salsa scene](https://folklife.si.edu/magazine/la-vieja-guardia-salsa-dancing-cali-colombia)

@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-los-angeles-azules-mexico-city`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · The group formed in Iztapalapa, Mexico City, and helped shape Mexican cumbia sonidera.
+**Finding** · OCESA Seitrack identifies the band as originating in Iztapalapa, Mexico City, and says it began in 1976. Mexico’s culture portal independently describes it as cumbia sonidera from Iztapalapa, active officially from 1983. The location is well supported; dates distinguish initial formation from official activity.
 
-**Graph citations** · [1](<https://www.seitrack.mx/angeles-azules>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [OCESA Seitrack](https://www.seitrack.mx/angeles-azules); [Secretaría de Cultura](https://www.cultura.gob.mx/regiones_de_mexico/sur/detalle.php?act=195459).

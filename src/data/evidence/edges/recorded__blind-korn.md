@@ -1,11 +1,11 @@
-# Blind → Korn
+# Korn recorded “Blind”
 
 Graph ID `recorded:blind-korn`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Blind_(Korn_song)>)
+**Finding** · Apple identifies Korn as the 1994 album artist and describes “Blind” as its opener.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://music.apple.com/us/album/korn/423045626](https://music.apple.com/us/album/korn/423045626).

@@ -1,11 +1,15 @@
-# Mighty Sparrow → Calypso
+# key:mighty-sparrow-calypso
 
 Graph ID `key:mighty-sparrow-calypso`
 
-**Review status** · Pending source review
+**Review status** · Centrality and genre fit checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/calypso-ma0000002494>)
+**Finding** · NALIS documents his breakthrough as calypso became widely recorded; Smithsonian identifies him as “Calypso King.” A defining calypsonian.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.nalis.gov.tt/portfolio-item/calypso/
+- https://folkways.si.edu/the-mighty-sparrow/sparrow-in-hi-fi/caribbean-world/music/album/smithsonian
+- https://apnews.com/article/26b420e1ba287e1e1280cd24f9a8cc67

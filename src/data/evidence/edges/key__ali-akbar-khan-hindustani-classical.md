@@ -2,10 +2,10 @@
 
 Graph ID `key:ali-akbar-khan-hindustani-classical`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/indian-classical-ma0000002638>)
+**Finding** · Direct: NEA bio places Khan in North Indian classical tradition and describes his classical music background (lines 20, 29–31).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.arts.gov/honors/heritage/ali-akbar-khan](https://www.arts.gov/honors/heritage/ali-akbar-khan).

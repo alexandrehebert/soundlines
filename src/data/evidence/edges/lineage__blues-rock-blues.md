@@ -1,11 +1,13 @@
-# Blues rock → Blues
+# lineage:blues-rock-blues
 
 Graph ID `lineage:blues-rock-blues`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
 **Relationship** · fusion_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Blues_rock>)
+**Finding** · The reference overview explicitly describes blues-rock as retaining blues song forms and idioms. Blues is a core component; the current `fusion_of` label is reasonable, although blues-rock is also commonly classified as a rock subgenre.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/subgenre/blues-rock-ma0000002468

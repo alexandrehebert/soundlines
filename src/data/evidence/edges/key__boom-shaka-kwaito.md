@@ -2,10 +2,14 @@
 
 Graph ID `key:boom-shaka-kwaito`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.musicinafrica.net/magazine/popular-music-south-africa/>), [2](<https://www.washingtonpost.com/archive/lifestyle/style/1998/07/19/the-phat-of-the-homeland/1ba33e31-5fef-499b-be15-8f45dc4d4b7b>)
+**Graph citations** · [1](<https://sahistory.org.za/people/lebo-mathosa>), [2](<https://africanmusiclibrary.org/band/Boom%20Shaka>)
 
 **Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+## Source check (2026-11-05)
+
+South African History Online directly calls Boom Shaka one of the most successful kwaito groups of the 1990s (lines 70–73); the African Music Library calls them kwaito pioneers. Strong local context.

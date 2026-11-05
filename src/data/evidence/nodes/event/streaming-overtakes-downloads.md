@@ -2,12 +2,15 @@
 
 Graph ID `event:streaming-overtakes-downloads`
 
-**Review status** · Pending source review
+**Review status** · independently checked against IFPI’s report and its stated data year
 
-**Graph period** · 2015 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · IFPI reported that streaming revenue overtook download revenue in 37 markets in 2015, reflecting a rapid shift toward access-based listening. The milestone varied by territory and should not be read as a universal crossover date.
+## Sources checked
 
-**Graph citations** · [1](<https://ifpicr.cz/recording-industry-in-numbers-2015>)
+- [IFPI member announcement of Recording Industry in Numbers 2015](https://ifpicr.cz/recording-industry-in-numbers-2015) — identifies 2014 market data and reports that streaming had overtaken downloads in 37 markets.
+- [SNEP summary of IFPI’s 2015 report](https://snepmusique.com/actualites-du-snep/ifpi-publication-du-recording-industry-numbers-2015-les-chiffres-mondiaux-de-la-musique-enregistree/) — corroborates the report year and market transition.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The report was published in 2015 but describes 2014 revenue data. The event period is therefore 2014; the description now distinguishes the data year from the report date and avoids implying a single global crossover.

@@ -2,10 +2,10 @@
 
 Graph ID `recorded:the-number-of-the-beast-iron-maiden`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Number_of_the_Beast_(song)>)
+**Findings** · Iron Maiden’s official album page lists “The Number of the Beast” among the tracks, gives the March 1982 release date, and identifies the recording as the band’s album ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.ironmaiden.com/studio-album/the-number-of-the-beast/)

@@ -2,12 +2,16 @@
 
 Graph ID `origin:label-kompakt-cologne`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Graph note** · Kompakt’s own history on Google Arts & Culture traces it from Cologne’s Delirium record shop into a label and documents its Cologne location and founders.
 
-**Graph citations** · [1](<https://kompakt.fm/about>), [2](<https://artsandculture.google.com/story/the-history-of-kompakt-kompakt/bAWxxTH2nWDhnQ?hl=en>)
+**Graph citations** · [1](<https://artsandculture.google.com/story/the-history-of-kompakt-kompakt/bAWxxTH2nWDhnQ?hl=en>)
 
 **Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+## Source check (2026-11-05)
+
+Kompakt’s own history on Google Arts & Culture traces it from Cologne’s Delirium record shop into a label and documents its Cologne location and founders.

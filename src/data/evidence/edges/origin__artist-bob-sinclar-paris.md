@@ -2,10 +2,8 @@
 
 Graph ID `origin:artist-bob-sinclar-paris`
 
-**Review status** · Pending source review
+**Disposition** · Removed (2026-11-05)
 
-**Relationship** · originated_in · unrated
+**Reason** · Reviewed biography places Bob Sinclar’s birth in Brittany and documents early DJ work in Paris. The available evidence supports a career location, not an origin or formation claim.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Bob_Sinclar>), [2](<https://www.allmusic.com/artist/bob-sinclar-mn0000075329>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [FNAC biography](https://www.fnac.com/Bob-Sinclar/ia248395/bio)

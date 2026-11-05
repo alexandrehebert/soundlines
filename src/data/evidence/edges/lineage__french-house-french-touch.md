@@ -2,12 +2,8 @@
 
 Graph ID `lineage:french-house-french-touch`
 
-**Review status** · Pending source review
+**Disposition** · Removed after taxonomy review (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Finding** · A peer-reviewed Musurgia article says “French house” is called “French Touch” in France and analyzes French Touch as a Parisian electronic movement with distinct musical features. This is an overlapping style/movement label or near-synonym, not a clear parent-child relation; consider retyping or removing this subgenre edge.; The research identifies these as overlapping style/movement labels, not a strict parent-child hierarchy.
 
-**Graph note** · French house is one central musical branch associated with French Touch; the terms are often conflated but are not synonyms, and French Touch also covers adjacent sounds and a broader scene.
-
-**Graph citations** · [1](<https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/>), [2](<https://journals.sub.uni-hamburg.de/apropos/en/article/view/2208>), [3](<https://www.lemonde.fr/en/m-le-mag/article/2024/04/06/justice-s-new-quest_6667576_117.html>)
-
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked** · [1](https://musurgia.fr/lebray-sebastien-elements-pour-une-definition-plus-musicale-de-la-french-touch-musurgia-30-2-2023/) · [2](https://service.ddex.net/dd/DD-AVS-CURRENT/dd/ddex_FrenchHouse.html)

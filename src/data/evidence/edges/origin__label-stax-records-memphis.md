@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-stax-records-memphis`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · high
+**Relationship** · originated_in · medium
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Findings** · Stax’s official history says Jim Stewart founded Satellite Records in Brunswick, Tennessee, in 1957; the label later moved to Memphis and became Stax ().
 
-**Graph citations** · [1](<https://staxmuseum.com/stax-records/>), [2](<https://www.memphistravel.com/music>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://staxrecords.com/history/)

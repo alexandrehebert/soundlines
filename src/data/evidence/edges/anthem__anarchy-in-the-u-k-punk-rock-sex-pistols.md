@@ -2,10 +2,14 @@
 
 Graph ID `anthem:anarchy-in-the-u-k-punk-rock-sex-pistols`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Anarchy_in_the_U.K.>), [2](<https://en.wikipedia.org/wiki/punk_rock>)
+**Graph citations** · [1](<https://www.sexpistolsofficial.com/records/anarchy-in-the-uk-7/>)
 
 **Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+## Source check (2026-11-05)
+
+Official artist site calls it widely regarded as the definitive punk anthem.

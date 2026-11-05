@@ -2,12 +2,16 @@
 
 Graph ID `origin:label-cash-money-records-new-orleans`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Graph note** · BMI says the Williams brothers were New Orleans-area natives and founded Cash Money in 1991. This supports association with New Orleans, but does not establish the exact founding location.
 
-**Graph citations** · [1](<https://www.cashmoney-records.com/history-of-the-label/>), [2](<https://www.bmi.com/news/bmi_to_honor_the_2013_bmi_r_and_b_hip_hop_awards>)
+**Graph citations** · [1](<https://www.bmi.com/advice/20030702cash_money_cash_money>)
 
 **Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+## Source check (2026-11-05)
+
+BMI says the Williams brothers were New Orleans-area natives and founded Cash Money in 1991. This supports association with New Orleans, but does not establish the exact founding location.

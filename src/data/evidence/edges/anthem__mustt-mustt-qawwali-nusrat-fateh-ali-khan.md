@@ -2,10 +2,10 @@
 
 Graph ID `anthem:mustt-mustt-qawwali-nusrat-fateh-ali-khan`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Mustt_Mustt>), [2](<https://en.wikipedia.org/wiki/qawwali>)
+**Findings** · The label calls Nusrat a qawwali master and describes the opening “Mustt Mustt” as devotional; its feature explains the Massive Attack remix as a qawwali/dub fusion and chart milestone. Keep the genre link, but distinguish the original from the remix; “anthem” means influential/crossover classic here.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://realworldrecords.com/releases/mustt-mustt/) · [2](https://realworldrecords.com/features/blogs/track-of-the-day-mustt-mustt-by-nusrat-fateh-ali-khan/) · [3](https://realworldrecords.com/releases/mustt-mustt-massive-attack-remix/)

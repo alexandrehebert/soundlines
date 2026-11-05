@@ -1,11 +1,16 @@
-# Recorder → Baroque music
+# Recorder Baroque — instrument–genre association
 
 Graph ID `featured:recorder-baroque`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Recorder_(musical_instrument)>)
+**Finding** · The Met says the alto recorder became a leading solo instrument by about 1690 and documents Baroque repertory; Case Western describes Baroque recorder development. Strong period-specific association, especially for solo and chamber music.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.metmuseum.org/essays/the-development-of-the-recorder](https://www.metmuseum.org/essays/the-development-of-the-recorder)
+- [https://caslabs.case.edu/medren/medieval-instruments/recorder-baroque/](https://caslabs.case.edu/medren/medieval-instruments/recorder-baroque/)
+
+**Assessment** · The relation describes a characteristic, historically notable, or production-context association. It does not imply exclusivity or presence in every work of the genre.

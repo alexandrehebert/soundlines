@@ -1,11 +1,14 @@
-# Jazz rap → Jazz
+# lineage:jazz-rap-jazz
 
 Graph ID `lineage:jazz-rap-jazz`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
-**Relationship** · fusion_of · medium
+**Relationship** · fusion_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/jazz-rap-ma0000012180/artists>)
+**Finding** · The sources document jazz instrumentation, improvisation, repertoire and samples as core to jazz-rap. The fusion claim is direct; individual tracks vary in how much live jazz they contain.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://timeline.carnegiehall.org/genres/jazz-hip-hop-fusion
+- https://ethnomusicologyreview.ucla.edu/content/we-got-jazz-next-generation-jazz-hip-hop-and-digital-scene

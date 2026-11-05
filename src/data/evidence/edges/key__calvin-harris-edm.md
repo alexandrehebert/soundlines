@@ -2,10 +2,11 @@
 
 Graph ID `key:calvin-harris-edm`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · unrated
+## Sources checked
+- [Apple Music artist biography](https://music.apple.com/us/artist/calvin-harris/201955086) — describes his role in EDM’s pop crossover.
+- [Insomniac artist profile](https://www.insomniac.com/music/artists/calvin-harris/) — identifies his career as a dance-music producer.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Calvin_Harris>), [2](<https://www.allmusic.com/artist/calvin-harris-mn0000945951>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+High confidence for his EDM crossover work.

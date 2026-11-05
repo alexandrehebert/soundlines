@@ -2,12 +2,16 @@
 
 Graph ID `event:ars-subtilior`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1380–1420 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Late-fourteenth-century composers developed highly intricate rhythmic notation and composition now grouped under the scholarly term ars subtilior. The date marks an approximate period, not a single founding event.
+## Sources checked
 
-**Graph citations** · [1](<https://www.loc.gov/collections/moldenhauer-archives/articles-and-essays/guide-to-archives/music-history/>)
+- [Cambridge Core, “An ‘Episode in the South’? Ars subtilior and the Patronage of French Princes”](https://www.cambridge.org/core/journals/early-music-history/article/abs/an-episode-in-the-south-ars-subtilior-and-the-patronage-of-french-princes/4F5EA81CC0345A850C971836859832A6) — Peer-reviewed study situates the repertory in the late fourteenth and early fifteenth centuries and cautions about surviving source distribution.
+- [DIAMM: Rethinking Ars Subtilior](https://www.diamm.ac.uk/resources/doctoral-dissertations/rethinking-ars-subtilior-context-language-study-and-performance/) — Oxford-based Digital Image Archive of Medieval Music resource describes the phenomenon as late fourteenth/early fifteenth century.
+- [Oxford Music / medieval repertory overview](https://academic.oup.com/ml/article/103/4/772/6748880) — Scholarly article discusses ars subtilior manuscript evidence and chronology.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The circa 1380–1420 span is a reasonable shorthand for a repertory, not a discrete event or a formal movement with an agreed start date. Description now states that limitation.

@@ -1,11 +1,9 @@
-# Psy → K-pop
+# PSY → K-pop
 
 Graph ID `key:psy-k-pop`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · medium
+**Finding** · KBS World’s artist entry classifies PSY’s genres as K-pop and hip-hop.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/k-pop-ma0000011907>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://world.kbs.co.kr/service/contents_view.htm?board_seq=423133&lang=e&menu_cate=artist](https://world.kbs.co.kr/service/contents_view.htm?board_seq=423133&lang=e&menu_cate=artist)

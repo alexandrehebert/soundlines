@@ -2,10 +2,10 @@
 
 Graph ID `origin:artist-j-dilla-detroit`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · unrated
+**Relationship** · originated_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/J_Dilla>), [2](<https://www.allmusic.com/artist/j-dilla-mn0000428126>)
+**Findings** · Smithsonian NMAAHC says Yancey grew up in Detroit; the J Dilla estate biography says he was born there:,.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://nmaahc.si.edu/explore/stories/j-dillas-distinctive-sound) · [2](https://jdilla.com/catalog/biography.html)

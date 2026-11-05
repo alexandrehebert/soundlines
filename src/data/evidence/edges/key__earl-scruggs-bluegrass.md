@@ -1,11 +1,11 @@
-# Earl Scruggs → Bluegrass
+# Earl Scruggs → bluegrass
 
 Graph ID `key:earl-scruggs-bluegrass`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [National Endowment for the Arts: Earl Scruggs](https://www.arts.gov/honors/heritage/earl-scruggs) — labels him a bluegrass banjo player and says the band he joined helped establish the bluegrass sound (lines 18–22, 34–35).
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/bluegrass-ma0000002466>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+High confidence. Direct NEA profile supports this central genre association.

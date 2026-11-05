@@ -2,10 +2,14 @@
 
 Graph ID `signed:johnny-cash-sun-records`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · signed_to · medium
+**Relationship** · signed_to · high
 
-**Graph citations** · [1](<https://www.sunrecords.com/about>)
+**Graph citations** · [1](<https://www.johnnycash.com/timeline/johnny-cash-signs-with-sun-records/>)
 
 **Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+## Source check (2026-11-05)
+
+Cash’s official timeline says he and the Tennessee Two signed a Sun deal on 17 October 1954.

@@ -1,11 +1,14 @@
-# Larry Heard → House
+# key:larry-heard-house
 
 Graph ID `key:larry-heard-house`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/house-ma0000002651>), [2](<https://www.allmusic.com/artist/frankie-knuckles-mn0000793821>), [3](<https://www.allmusic.com/artist/marshall-jefferson-mn0000373844>), [4](<https://www.allmusic.com/artist/larry-heard-mn0000138578>)
+**Finding** · He is a foundational Chicago house producer and a leading proponent of the original house style. This broader parent-genre edge is well supported alongside the deep-house edge.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 4 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://ra.co/dj/larryheard
+- https://www.normanrecords.com/artist/30337-larry-heard/about

@@ -2,10 +2,10 @@
 
 Graph ID `founded:bob-sinclar-yellow-productions`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · founded · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Bob_Sinclar>), [2](<https://www.allmusic.com/artist/bob-sinclar-mn0000075329>)
+**Finding** · Insomniac says Christophe Le Friant (Bob Sinclar) founded Yellow Productions in 1993 with Alain Ho. The graph relation is valid, but the entry’s display name is a stage name and it should be clear this was a co-founding.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [https://www.insomniac.com/music/artists/bob-sinclar/](https://www.insomniac.com/music/artists/bob-sinclar/).

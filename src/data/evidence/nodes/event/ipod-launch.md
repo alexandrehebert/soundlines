@@ -2,12 +2,15 @@
 
 Graph ID `event:ipod-launch`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 2001 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Apple introduced the iPod in October 2001, combining portable digital playback with computer-based music libraries and later online purchasing.
+## Sources checked
 
-**Graph citations** · [1](<https://www.apple.com/newsroom/2001/10/23Apple-Presents-iPod/>)
+- [Apple, Apple Presents iPod](https://www.apple.com/newsroom/2001/10/23Apple-Presents-iPod/) — Apple’s contemporaneous press release dates the product announcement to 23 October 2001 and describes its 1,000-song capacity and iTunes integration.
+- [Computer History Museum, October 23: Apple Computer Releases the iPod](https://www.computerhistory.org/tdih/october/23/) — Museum chronology confirms the iPod announcement date and its capacity relative to portable players.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The launch date and initial product features are documented by Apple’s own release. The iPod’s later effects on purchasing and listening developed alongside the iTunes Store, so don’t attribute those later changes to the 2001 device alone.

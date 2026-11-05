@@ -2,10 +2,8 @@
 
 Graph ID `key:sonic-youth-noise-rock`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · high
+**Finding** · AllMusic describes Sonic Youth as pioneers in noise rock; this directly supports the genre association.
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/noise-rock-ma0000004455>), [2](<https://academic.oup.com/book/6294>), [3](<https://en.wikipedia.org/wiki/Sonic_Youth>)
-
-**Citation retrieval** · 1 bulk responses, 1 browser opens, 1 unsuccessful, 0 pending.
+**Source(s)** · https://www.allmusic.com/artist/sonic-youth-p5474/biography

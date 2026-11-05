@@ -1,11 +1,11 @@
-# Dolly Parton → Country
+# Dolly Parton → country
 
 Graph ID `key:dolly-parton-country`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Country Music Hall of Fame and Museum: Dolly Parton](https://www.countrymusichalloffame.org/hall-of-fame/dolly-parton) — profile identifies her as a country singer and songwriter.
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/country-ma0000002532>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+High confidence. Direct museum biography supports this core genre association.

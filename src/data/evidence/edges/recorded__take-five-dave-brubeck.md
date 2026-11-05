@@ -2,10 +2,10 @@
 
 Graph ID `recorded:take-five-dave-brubeck`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Take_Five>)
+**Findings** · The Brubeck Collection’s archival *Time Out* entry lists “Take Five” and names Dave Brubeck on piano alongside Paul Desmond, Eugene Wright and Joe Morello ().
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.brubeckcollection.org/Detail/occurrences/2222)

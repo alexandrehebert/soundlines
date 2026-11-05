@@ -1,11 +1,11 @@
-# All the Small Things → blink-182
+# Blink-182 recorded “All the Small Things”
 
 Graph ID `recorded:all-the-small-things-blink-182`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/All_the_Small_Things>)
+**Finding** · Official album page lists the song on *Enema of the State* and identifies the album as Blink-182’s.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [https://www.blink182.com/collections/enema-of-the-state/products/enema-of-the-state-lp-explicit](https://www.blink182.com/collections/enema-of-the-state/products/enema-of-the-state-lp-explicit).

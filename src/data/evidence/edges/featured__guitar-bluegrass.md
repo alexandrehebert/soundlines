@@ -2,10 +2,10 @@
 
 Graph ID `featured:guitar-bluegrass`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Guitar>)
+**Finding** · Smithsonian names flat-top guitar among typical bluegrass instruments; Blue Ridge Heritage documents Doc Watson’s guitar as a lead instrument and lists standard bluegrass instrumentation.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://folkways.si.edu/bluegrass-folkways-american-roots-tradition/history/music/article/smithsonian](https://folkways.si.edu/bluegrass-folkways-american-roots-tradition/history/music/article/smithsonian); [https://www.blueridgeheritage.com/heritage/music/bluegrass/](https://www.blueridgeheritage.com/heritage/music/bluegrass/).

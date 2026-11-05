@@ -2,12 +2,15 @@
 
 Graph ID `event:eck-robertson-commercial-recording`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1922 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Victor recorded fiddler Eck Robertson in 1922, among the earliest commercial records marketed as country or “hillbilly” music. The label is historical and reflects the period’s industry language.
+## Sources checked
 
-**Graph citations** · [1](<https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/country/>)
+- [Library of Congress, Country Music Timeline](https://www.loc.gov/collections/dolly-parton-and-the-roots-of-country-music/articles-and-essays/country-music-timeline/) — Dates Victor’s 1922 recordings of Eck Robertson and identifies him as an early country recording artist.
+- [Library of Congress, National Recording Registry essay](https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/) — Recognizes Robertson’s 1922 Victor records as among the first country recordings.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The year and Victor recording context are supported. “First country” is a retrospective genre label; retain the existing phrasing that attributes it to historical recognition and notes period language.

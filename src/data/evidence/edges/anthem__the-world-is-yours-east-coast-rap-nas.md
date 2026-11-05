@@ -1,11 +1,15 @@
-# The World Is Yours → East Coast rap
+# anthem:the-world-is-yours-east-coast-rap-nas
 
 Graph ID `anthem:the-world-is-yours-east-coast-rap-nas`
 
-**Review status** · Pending source review
+**Review status** · Source checked; version/canonical-status caveats retained (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_World_Is_Yours_(Nas_song)>), [2](<https://en.wikipedia.org/wiki/east_coast_rap>)
+**Finding** · Official release metadata verifies the Nas recording; LOC discusses the song in the context of the influential *Illmatic*. Scholarship treats its refrain as a globalized hip-hop phrase. Strong canonical song case, though “anthem” varies by listener/community.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.youtube.com/watch?v=OtcgB5wMknQ
+- https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/Illmatic_McDuffie.pdf
+- https://www.tandfonline.com/doi/abs/10.1080/13504630.2015.1121569

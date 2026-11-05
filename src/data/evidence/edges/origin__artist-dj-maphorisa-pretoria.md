@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-dj-maphorisa-pretoria`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Born in Soshanguve, north of Pretoria.
+**Findings** · Viranova and News24 place Maphorisa’s birth in Soshanguve, north of Pretoria: Viranova, News24.
 
-**Graph citations** · [1](<https://viranova.co.za/artist/dj-maphorisa>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://viranova.co.za/artist/dj-maphorisa) · [2](https://www.news24.com/truelove/i-try-different-sounds-because-i-never-want-to-be-boxed-in-dj-maphorisa-20170911)

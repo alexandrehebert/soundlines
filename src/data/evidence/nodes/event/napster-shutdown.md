@@ -2,12 +2,15 @@
 
 Graph ID `event:napster-shutdown`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 2001 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · After federal court orders in copyright litigation, Napster suspended its original peer-to-peer file-sharing service in 2001. The episode accelerated debate over digital music access, licensing, and online distribution.
+## Sources checked
 
-**Graph citations** · [1](<https://www.copyright.gov/docs/napsteramicus.html>)
+- [Ninth Circuit, A&M Records v. Napster (2002)](https://law.justia.com/cases/federal/appellate-courts/F3/284/1091/495542/) — Court opinion states Napster ceased operations in July 2001 after failing to comply with the modified preliminary injunction.
+- [U.S. Copyright Office, Intentional Inducement of Copyright Infringements Act background](https://copyright.gov/docs/regstat072204.html) — Government summary describes the injunction and service shutdown timeline.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The original service suspended transfers in July 2001 under injunction pressure; the company later filed for bankruptcy in 2002. Keep the graph specifically about the shutdown of the original peer-to-peer service.

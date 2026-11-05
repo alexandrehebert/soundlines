@@ -1,13 +1,14 @@
-# Bluegrass → Country
+# lineage:bluegrass-country
 
 Graph ID `lineage:bluegrass-country`
 
-**Review status** · Pending source review
+**Review status** · Source checked; relation scope/type updated where indicated (2026-11-05)
 
-**Relationship** · derived_from · medium
+**Relationship** · subgenre_of · medium
 
-**Graph note** · Bluegrass developed from older country and string-band traditions; the relationship is historical rather than exclusive.
+**Finding** · Bluegrass is rooted in country and old-time string-band music; LOC calls it a new genre built on country sounds and locates it within country-and-western tradition. It is commonly treated as a country subgenre, so the current historical edge is defensible but less useful than hierarchy.
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/bluegrass-ma0000002466>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://www.loc.gov/collections/dolly-parton-and-the-roots-of-country-music/articles-and-essays/bluegrass-music/
+- https://guides.loc.gov/bluegrass-folklife

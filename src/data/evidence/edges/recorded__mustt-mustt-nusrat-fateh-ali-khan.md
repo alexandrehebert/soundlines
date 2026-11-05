@@ -2,10 +2,10 @@
 
 Graph ID `recorded:mustt-mustt-nusrat-fateh-ali-khan`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Mustt_Mustt>)
+**Findings** · Real World Records’ release page describes the title song and its 1990 recording sessions, including Nusrat recording with Farrukh Fateh Ali Khan; the label’s artist page identifies the album among their studio collaborations (,).
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://realworldrecords.com/releases/mustt-mustt/) · [2](https://realworldrecords.com/artists/nusratfatehalikhan/)

@@ -1,11 +1,15 @@
-# Queen → Glam rock
+# key:queen-glam-rock
 
 Graph ID `key:queen-glam-rock`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://academic.oup.com/book/6294>), [2](<https://www.allmusic.com/genre/glam-rock-ma0000002619>), [3](<https://www.allmusic.com/artist/queen-mn0000858827>)
+**Finding** · Scholarship explicitly analyzes Queen’s 1970s work in relation to glam rock, and reference sources identify their early glam presentation. Glam is one period/style within a broad catalog; medium is appropriate.
 
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://academic.oup.com/book/39865/chapter-abstract/340042551
+- https://www.allmusic.com/genre/glam-rock-ma0000002619/artists
+- https://www.allmusic.com/artist/queen-mn0000858827

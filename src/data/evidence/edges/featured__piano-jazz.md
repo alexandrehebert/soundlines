@@ -1,11 +1,15 @@
-# Piano → Jazz
+# Piano Jazz — instrument–genre association
 
 Graph ID `featured:piano-jazz`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Piano>)
+**Finding** · Smithsonian describes early jazz as including solo piano music in New Orleans sporting houses and documents pianists across jazz history. The piano is a central solo and ensemble instrument, though jazz instrumentation is not limited to it.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://music.si.edu/story/jazz/](https://music.si.edu/story/jazz/)
+
+**Assessment** · The relation describes a characteristic, historically notable, or production-context association. It does not imply exclusivity or presence in every work of the genre.

@@ -1,11 +1,15 @@
-# Macintosh Plus → Vaporwave
+# key:macintosh-plus-vaporwave
 
 Graph ID `key:macintosh-plus-vaporwave`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit source checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://academic.oup.com/ml/article-abstract/98/4/601/4828180>), [2](<https://www.repository.cam.ac.uk/items/a33d041f-0e86-47a2-9763-3b37a147d0aa>), [3](<https://www.allmusic.com/artist/macintosh-plus-mn0002911101>)
+**Finding** · Scholarship treats *Floral Shoppe* as one of vaporwave’s best-known defining examples; the Oulu study calls it an epitome of the style. This is a project/alias edge (Vektroid), not a conventional band identity.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://online.ucpress.edu/jpms/article-abstract/30/4/123/106377/VaporwavePolitics-Protest-and-Identity
+- https://oulurepo.oulu.fi/bitstream/handle/10024/13411/nbnfioulu-201906182561.pdf?isAllowed=y&sequence=1
+- https://www.allmusic.com/artist/macintosh-plus-mn0002911101

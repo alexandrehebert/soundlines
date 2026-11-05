@@ -2,10 +2,10 @@
 
 Graph ID `key:fred-again-house`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Fred_Again>), [2](<https://www.allmusic.com/artist/fred-again-mn0003882656>)
+**Findings** · AllMusic describes his solo material as blending house and electronica; Mixmag discusses tracks built as house tunes. His pop songwriting/production work is extensive, so medium is suitable for a broad artist–genre relation.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/artist/fred-again-mn0003882656/biography) · [2](https://mixmag.net/feature/fred-again-cover-feature-interview) · [3](https://www.insomniac.com/music/artists/fred-again/)

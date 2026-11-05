@@ -1,11 +1,11 @@
-# Maâlem Hamid El Kasri → Gnawa
+# Hamid El Kasri → Gnawa
 
 Graph ID `key:hamid-el-kasri-gnawa`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · unrated
+## Sources checked
+- [Essaouira Gnaoua World Music Festival biography](https://www.festival-gnaoua.net/artiste/maalem-hamid-el-kasri/) — calls him a major figure and one of the genre’s most popular artists (lines 69–83).
 
-**Graph citations** · [1](<https://www.festival-gnaoua.net/artiste/maalem-hamid-el-kasri/>), [2](<https://en.wikipedia.org/wiki/Hamid_El_Kasri>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+High confidence. Direct artist profile from the genre’s major festival.

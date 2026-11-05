@@ -1,11 +1,14 @@
-# New jack swing → Rhythm and blues
+# lineage:new-jack-swing-r-and-b
 
 Graph ID `lineage:new-jack-swing-r-and-b`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
-**Relationship** · fusion_of · medium
+**Relationship** · fusion_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/new-jack-swing-ma0000005027>)
+**Finding** · New jack swing retains contemporary R&B songwriting and vocal style while incorporating hip-hop production. Strong component relation; the graph should avoid suggesting R&B is a minor or optional ingredient.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://timeline.carnegiehall.org/genres/new-jack-swing
+- https://service.ddex.net/dd/DD-AVS-001/dd/ddex_NewJackSwing.html

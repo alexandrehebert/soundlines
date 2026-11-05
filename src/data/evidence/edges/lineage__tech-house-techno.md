@@ -1,13 +1,14 @@
-# Tech house → Techno
+# lineage:tech-house-techno
 
 Graph ID `lineage:tech-house-techno`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
-**Relationship** · fusion_of · high
+**Relationship** · influences · high
 
-**Graph note** · Tech-house blends house groove with techno’s stripped-down textures and repetition.
+**Finding** · Techno-derived sounds and production are documented as a defining ingredient of tech-house. The genre is still usually categorized as a house subgenre, not an equal hybrid of two independent parents.
 
-**Graph citations** · [1](<https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1>), [2](<https://www.allmusic.com/genre/tech-house-ma0000005003>)
+**Sources checked**
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://era.ed.ac.uk/bitstream/handle/1842/9478/Gadir2014.pdf?sequence=2
+- https://musicbrainz.org/genre/1f9c4b4a-c43d-40bd-b806-357153641fd0

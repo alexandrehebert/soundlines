@@ -1,11 +1,17 @@
-# Ye → Burna Boy
+# Ye Burna Boy
 
 Graph ID `recorded:ye-burna-boy`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Ye_(Burna_Boy_song)>)
+**Finding** · Burna Boy’s official audio and 2018 album context identify him as performer; label metadata is Atlantic/Bad Habit/Spaceship. Keep the 2018 artist credit.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.youtube.com/watch?v=4rz_kQiBxaQ](https://www.youtube.com/watch?v=4rz_kQiBxaQ)
+- [https://artists.youtube/news/burna-boy-beyond-borders/](https://artists.youtube/news/burna-boy-beyond-borders/)
+- [https://music.apple.com/us/album/outside/1330670537](https://music.apple.com/us/album/outside/1330670537)
+
+**Assessment** · The relation identifies the principal performer for the specific recording/version. Production, composition, featured vocals, and ensemble performance are distinguished in the finding and graph note where relevant.

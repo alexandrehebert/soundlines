@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-dorival-caymmi-salvador`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Born in Salvador, Bahia.
+**Findings** · Brazil’s Fundação Joaquim Nabuco encyclopedia and Bahia’s Legislative Assembly place his birth in Salvador: Fundaj, Bahia Legislative Assembly.
 
-**Graph citations** · [1](<https://pesquisaescolar.fundaj.gov.br/en/artigo/dorival-caymmi/>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://pesquisaescolar.fundaj.gov.br/en/artigo/dorival-caymmi/) · [2](https://www.al.ba.gov.br/midia-center/noticias/6279)

@@ -1,13 +1,14 @@
-# Salsa → Son cubano
+# salsa → son cubano
 
 Graph ID `lineage:salsa-son-cubano`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; derived audit 002)
 
-**Relationship** · derived_from · medium
+**Relationship** · derived_from · high
 
-**Graph note** · Cuban son is one of salsa’s central musical foundations; salsa also draws on other Caribbean forms.
+**Finding** · Cuban son is one foundational ancestor of salsa, alongside other Cuban and Caribbean forms; this is not an exclusive derivation.
 
-**Graph citations** · [1](<https://www.academicworks.cuny.edu/jj_pubs/315/>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Smithsonian National Museum of the American Latino, “Salsa’s Roots”](https://latino.si.edu/exposiciones/puro-ritmo/qr/salsas-roots-case)
+- [Smithsonian Folkways teaching guide](https://folkways-media.si.edu/docs/folkways/lessons/SFLN069_teacher_guide.pdf)

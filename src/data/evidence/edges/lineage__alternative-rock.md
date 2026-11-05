@@ -2,10 +2,10 @@
 
 Graph ID `lineage:alternative-rock`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Relationship** · subgenre_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Alternative_rock>)
+**Findings** · DDEX explicitly describes Alternative Rock as a wide-ranging subgenre of Rock, with roots in underground music including punk.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://service.ddex.net/dd/DD-AVS-CURRENT/dd/ddex_AlternativeRock.html)

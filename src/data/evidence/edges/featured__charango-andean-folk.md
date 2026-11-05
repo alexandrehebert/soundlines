@@ -2,10 +2,10 @@
 
 Graph ID `featured:charango-andean-folk`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://guides.loc.gov/indigenous-andes-folklife/music>), [2](<https://folkways.si.edu/la-nueva-cancion-new-song-movement-south-america/latin-world-struggle-protest/music/article/smithsonian>)
+**Finding** · The Library of Congress guide lists the charango among common Andean music instruments; Smithsonian Folkways independently documents it in Andean/Latin American repertoire. Direct support.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [Library of Congress](https://guides.loc.gov/indigenous-andes-folklife/music); [Smithsonian Folkways](https://folkways.si.edu/la-nueva-cancion-new-song-movement-south-america/latin-world-struggle-protest/music/article/smithsonian).

@@ -2,10 +2,10 @@
 
 Graph ID `anthem:ko-ko-bebop-charlie-parker`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Ko-Ko_(composition)>), [2](<https://en.wikipedia.org/wiki/bebop>)
+**Findings** · LOC identifies Parker’s “Ko-Ko” recording and frames it as signaling a new bebop era. Direct track-level and historical support; canonical bebop claim is strong.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.loc.gov/item/ihas.100010326/) · [2](https://www.loc.gov/static/programs/national-recording-preservation-board/documents/ko-ko.pdf)

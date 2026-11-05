@@ -2,10 +2,10 @@
 
 Graph ID `recorded:heartbreak-hotel-elvis-presley`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Heartbreak_Hotel>)
+**Findings** · Elvis Presley’s official site gives the recording date and RCA Nashville studio, with Presley named among the performers (official track page).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.elvisthemusic.com/track/heartbreak-hotel/)

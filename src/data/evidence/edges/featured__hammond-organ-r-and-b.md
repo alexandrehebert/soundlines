@@ -2,10 +2,10 @@
 
 Graph ID `featured:hammond-organ-r-and-b`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Hammond_organ>)
+**Findings** · A music-history study identifies the Hammond B-3 across R&B and popular music; the evidence supports the instrument in the broader style, without implying it is exclusive to R&B.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://pure.eur.nl/files/56255974/the_microdynamics_of_musical_innovation_629b51c40df7e.pdf) · [2](https://www.cambridge.org/core/books/abs/cambridge-companion-to-the-electric-guitar/bass-guitar-in-popular-music/56BB190106B9C68A9412EDC99FACD86B)

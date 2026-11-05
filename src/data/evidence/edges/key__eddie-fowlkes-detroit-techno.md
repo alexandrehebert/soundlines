@@ -1,0 +1,15 @@
+# Eddie Fowlkes → Detroit techno
+
+Graph ID `key:eddie-fowlkes-detroit-techno`
+
+**Review status** · Reviewed — Fowlkes as first-wave pioneer confirmed
+**Reviewed** · 2026-11-03
+
+## Sources checked
+- [Detroit Historical Society: Fowlkes](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/fowlkes-eddie) — 1986 Metroplex debut.
+- [DHS Legends Plaza](https://www.detroithistorical.org/exhibitions/legends-plaza) — “Techno Music Pioneer”.
+- [RA “The Belleville Fourth”](https://ra.co/features/1641) — title framing.
+- [WDET (2022)](https://wdet.org/2022/05/26/who-created-detroit-techno-new-documentary-shines-light-on-pioneering-musicians/) — among six originators.
+
+## Assessment
+Multiple institutional sources name him a pioneer. Confidence rises to high.

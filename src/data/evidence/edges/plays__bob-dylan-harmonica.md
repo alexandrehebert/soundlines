@@ -2,10 +2,10 @@
 
 Graph ID `plays:bob-dylan-harmonica`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · plays · medium
+**Relationship** · plays · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Bob_Dylan>)
+**Finding** · Songwriters Hall of Fame biography states Dylan learned harmonica early and documents his performance career.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.songhall.org/profiles/bob-dylan](https://www.songhall.org/profiles/bob-dylan).

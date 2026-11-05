@@ -2,10 +2,10 @@
 
 Graph ID `recorded:stayin-alive-bee-gees`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Stayin'_Alive>)
+**Findings** · Australia’s National Film and Sound Archive catalogs the 1977 recording as “Stayin’ Alive” by the Bee Gees and identifies its role on the *Saturday Night Fever* soundtrack; the Library of Congress Registry lists the Bee Gees as performers on the soundtrack recording (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.nfsa.gov.au/collection/item/stayin-alive-bee-gees) · [2](https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/complete-national-recording-registry-listing/additional-information/)

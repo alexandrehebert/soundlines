@@ -2,12 +2,10 @@
 
 Graph ID `origin:genre-psytrance-goa`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Goa is a major early scene context, not the only contributor to psychedelic trance.
+**Findings** · Peer-reviewed Dancecult work roots the scene in Goa’s seasonal dance-party culture; a University of Lisbon thesis says the genre emerged in Goa in the late 1980s:,.
 
-**Graph citations** · [1](<https://dj.dancecult.net/index.php/dancecult/article/view/318>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://dj.dancecult.net/index.php/dancecult/article/view/328) · [2](https://repositorio.ulisboa.pt/entities/publication/de7d6419-9633-4f68-ba40-7b66341b826f)

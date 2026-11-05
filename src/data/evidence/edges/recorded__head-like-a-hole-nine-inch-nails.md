@@ -2,10 +2,10 @@
 
 Graph ID `recorded:head-like-a-hole-nine-inch-nails`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Head_Like_a_Hole>)
+**Findings** · Nine Inch Nails’ official discography lists “Head Like a Hole” among the first NIN releases, and the official *Pretty Hate Machine* page identifies the album (NIN discography, album page).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.nin.com/discography/) · [2](https://www.nin.com/music/pretty-hate-machine/)

@@ -2,10 +2,8 @@
 
 Graph ID `key:richard-rock-and-roll`
 
-**Review status** · Pending source review
+**Review status** · Source-checked; high confidence
 
-**Relationship** · key_artist_of · medium
+**Finding** · Rock Hall says Little Richard set the tone for the future of rock and roll.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Rock_and_roll>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://rockhall.com/inductees/little-richard/](https://rockhall.com/inductees/little-richard/)

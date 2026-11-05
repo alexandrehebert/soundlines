@@ -2,12 +2,15 @@
 
 Graph ID `event:covid-live-music-shutdown`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 2020 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · COVID-19 lockdowns and public-health restrictions cancelled or halted live events across many countries. Musicians and institutions shifted concerts and festivals to livestreams, exposing both the reach and limits of digital performance.
+## Sources checked
 
-**Graph citations** · [1](<https://unctad.org/news/how-covid-19-exposed-music-industry-fault-lines-and-what-can-be-done>)
+- [UNESCO, ResiliArt movement](https://www.unesco.org/en/resiliart) — Documents the pandemic’s severe disruption of cultural work and UNESCO’s global response.
+- [IFPI, Global Music Report 2021](https://www.ifpi.org/ifpi-issues-annual-global-music-report-2021/) — Industry reporting describes the pandemic-era collapse of live music alongside growth in streaming.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The global disruption in 2020 and substantial shift toward livestreaming are supported. Restrictions began on different dates and varied by jurisdiction, so this should remain a broad global event rather than a single worldwide shutdown date.

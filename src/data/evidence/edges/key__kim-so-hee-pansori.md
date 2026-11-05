@@ -1,11 +1,17 @@
-# Kim So-hee → Pansori
+# Kim So Hee Pansori
 
 Graph ID `key:kim-so-hee-pansori`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://world.kbs.co.kr/service/contents_view.htm?board_code=tmusic&board_seq=42446&id=&lang=en&menu_cate=culture&page=65>)
+**Finding** · AKS identifies Kim So-hee as a nationally designated pansori master and tradition bearer; KBS corroborates her intangible-heritage status and work in Chunhyangga. Direct fit.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://encykorea.aks.ac.kr/Article/E0009537](https://encykorea.aks.ac.kr/Article/E0009537)
+- [https://world.kbs.co.kr/service/contents_view.htm?board_code=&board_seq=42361&id=&lang=e&menu_cate=culture&page=146](https://world.kbs.co.kr/service/contents_view.htm?board_code=&board_seq=42361&id=&lang=e&menu_cate=culture&page=146)
+- [https://ich.unesco.org/en/RL/pansori-epic-chant-00070](https://ich.unesco.org/en/RL/pansori-epic-chant-00070)
+
+**Assessment** · Confidence applies to the exact artist–genre relation, distinguishing central genre association from period-specific, hybrid, or influence-only evidence.

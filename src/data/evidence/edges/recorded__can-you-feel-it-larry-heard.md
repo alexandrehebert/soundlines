@@ -2,10 +2,10 @@
 
 Graph ID `recorded:can-you-feel-it-larry-heard`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Can_You_Feel_It_(Larry_Heard_song)>)
+**Finding** · Release is credited to Mr. Fingers, Larry Heard’s performing alias. The graph’s personal-name attribution is valid, but the alias is the release credit.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.officialcharts.com/songs/mr-fingers-can-you-feel-it/](https://www.officialcharts.com/songs/mr-fingers-can-you-feel-it/).

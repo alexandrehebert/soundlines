@@ -2,10 +2,10 @@
 
 Graph ID `key:com-truise-synthwave`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · high
+**Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://online.ucpress.edu/jpms/article/33/1/70/116330/Reconstructed-NostalgiaAesthetic-Commonalities-and>), [2](<https://riviste.unimi.it/index.php/sss/article/view/14136>), [3](<https://www.allmusic.com/artist/com-truise-mn0002534440>)
+**Findings** · Artist interview directly accepts “synthwave” as a fitting label while discussing genre ambiguity; Las Vegas Weekly independently calls Com Truise a synthwave alias (NewRetroWave interview, Las Vegas Weekly). Keep medium because the self-description is qualified and genre boundaries remain fluid.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://newretrowave.com/2017/06/12/an-interview-with-com-truise/) · [2](https://lasvegasweekly.com/ae/music/2016/may/25/com-truise-electronic-musician-interview-seth-hale/)

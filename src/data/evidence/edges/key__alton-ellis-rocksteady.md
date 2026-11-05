@@ -2,10 +2,10 @@
 
 Graph ID `key:alton-ellis-rocksteady`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/rocksteady-ma0000002830>)
+**Finding** · Primary artist estate site explicitly identifies Ellis as Godfather of Rocksteady and describes his emergence alongside the genre.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://altonellis.com/history/](https://altonellis.com/history/).

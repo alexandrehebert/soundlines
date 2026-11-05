@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-the-beatles-liverpool`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Formed in Liverpool.
+**Finding** · The Beatles Story museum identifies Liverpool as the band’s birthplace, and the Cavern Club documents the city’s early role in the group’s story.
 
-**Graph citations** · [1](<https://www.cavernclub.com/history/>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [The Beatles Story](https://www.beatlesstory.com/about-us/); [Cavern Club history](https://www.cavernclub.com/history/).

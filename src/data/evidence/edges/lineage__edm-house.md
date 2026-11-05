@@ -1,11 +1,14 @@
-# EDM → House
+# lineage:edm-house
 
 Graph ID `lineage:edm-house`
 
-**Review status** · Pending source review
+**Review status** · Source checked; relation scope/type updated where indicated (2026-11-05)
 
-**Relationship** · derived_from · medium
+**Relationship** · subgenre_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/edm-ma0000013412>)
+**Finding** · EDM is a broad category/umbrella, not a parent genre historically derived from house. The current direction (`EDM` derived from `house`) is inverted; house is one genre included under EDM.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://doi.org/10.1177/10298649251321709
+- https://research.google.com/audioset/ontology/electronic_music_1.html

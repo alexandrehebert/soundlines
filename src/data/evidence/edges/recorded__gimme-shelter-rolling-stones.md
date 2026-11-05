@@ -2,10 +2,10 @@
 
 Graph ID `recorded:gimme-shelter-rolling-stones`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Gimme_Shelter>)
+**Findings** · ABKCO describes “Gimme Shelter” among the standout songs on the Stones’ *Let It Bleed* (ABKCO); MusicBrainz release data identifies the song as part of the 1969 album (release record).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.abkco.com/store/let-it-bleed/) · [2](https://musicbrainz.org/release/e763bb99-3098-4934-a1ab-fa91a9c1dff7)

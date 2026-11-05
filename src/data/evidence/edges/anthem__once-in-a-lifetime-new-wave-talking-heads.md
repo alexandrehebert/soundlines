@@ -2,10 +2,10 @@
 
 Graph ID `anthem:once-in-a-lifetime-new-wave-talking-heads`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Once_in_a_Lifetime_(Talking_Heads_song)>), [2](<https://en.wikipedia.org/wiki/new_wave>)
+**Findings** · Rock Hall characterizes Talking Heads’ catalog as funky New Wave hits; AllMusic calls this track a new-wave classic and memorable cult classic. It was not initially a major chart hit, so describe canonical/cult status rather than mass-market anthem.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://rockhall.com/inductees/talking-heads/) · [2](https://www.allmusic.com/song/once-in-a-lifetime-mt0005481939)

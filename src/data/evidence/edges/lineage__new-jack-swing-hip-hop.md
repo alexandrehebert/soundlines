@@ -1,11 +1,14 @@
-# New jack swing → Hip-hop
+# lineage:new-jack-swing-hip-hop
 
 Graph ID `lineage:new-jack-swing-hip-hop`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
-**Relationship** · fusion_of · medium
+**Relationship** · fusion_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/new-jack-swing-ma0000005027>)
+**Finding** · Carnegie Hall and the music-industry genre standard describe hip-hop drum production/techniques as a defining ingredient, combined with R&B vocal and songwriting approaches. Strong support.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://timeline.carnegiehall.org/genres/new-jack-swing
+- https://service.ddex.net/dd/DD-AVS-001/dd/ddex_NewJackSwing.html

@@ -2,10 +2,10 @@
 
 Graph ID `recorded:one-more-time-daft-punk`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/One_More_Time_(Daft_Punk_song)>)
+**Findings** · Daft Punk’s official *Discovery* page lists “One More Time”; the official audio channel credits the track to Daft Punk and the album (,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://daftpunk.com/discovery/) · [2](https://www.youtube.com/watch?v=fa5IWHDbftI)

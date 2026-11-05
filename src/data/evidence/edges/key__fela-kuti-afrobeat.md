@@ -2,10 +2,10 @@
 
 Graph ID `key:fela-kuti-afrobeat`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Rock & Roll Hall of Fame: Fela Kuti](https://rockhall.com/inductees/fela-kuti/) — calls him an Afrobeat pioneer and says he named the hybrid Afrobeat (lines 31–33).
 
-**Graph citations** · [1](<https://www.allmusic.com/style/afro-beat-ma0000004495>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+High confidence. Direct institutional biography supports this foundational genre relation.

@@ -2,10 +2,15 @@
 
 Graph ID `involved:rite-of-spring-premiere-the-rite-of-spring-stravinsky`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — cross-checked against the reviewed event record
 
-**Relationship** · involved · unrated
+**Relationship** · involved · high
 
 **Graph citations** · [1](<https://www.loc.gov/loc/lcib/09078/rite.html>), [2](<https://www.loc.gov/exhibits/ballet-russes/exhibition-items.html>)
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The graph cites sources that identify The Rite of Spring as directly participating in or belonging to “The Rite of Spring premieres in Paris.” The participant/association is supported at high confidence.

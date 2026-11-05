@@ -1,11 +1,11 @@
-# Transverse flute → Baroque music
+# Transverse Flute Baroque
 
 Graph ID `featured:transverse-flute-baroque`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://caslabs.case.edu/medren/baroque-instruments/flute-baroque/>)
+**Finding** · Case Western Reserve Early Music Instrument Database dates the Baroque traverso’s emergence to the late seventeenth century.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [https://caslabs.case.edu/medren/baroque-instruments/flute-baroque/](https://caslabs.case.edu/medren/baroque-instruments/flute-baroque/).

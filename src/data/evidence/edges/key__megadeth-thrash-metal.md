@@ -1,11 +1,15 @@
-# Megadeth → Thrash metal
+# key:megadeth-thrash-metal
 
 Graph ID `key:megadeth-thrash-metal`
 
-**Review status** · Pending source review
+**Review status** · Centrality and genre fit checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/speed-thrash-metal-ma0000002874>)
+**Finding** · Megadeth is routinely grouped with the foundational thrash “Big Four”; AllMusic calls the band a thrash-metal institution. Strong core association.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/artist/megadeth-mn0000406294
+- https://loudwire.com/big-4-thrash-metal-bands-history/
+- https://www.megadeth.com/pages/band

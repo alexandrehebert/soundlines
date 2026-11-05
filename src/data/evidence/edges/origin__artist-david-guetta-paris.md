@@ -2,10 +2,10 @@
 
 Graph ID `origin:artist-david-guetta-paris`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · unrated
+**Relationship** · originated_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/David_Guetta>), [2](<https://www.allmusic.com/artist/david-guetta-mn0000213561>)
+**Findings** · AllMusic describes Guetta as a Paris native: AllMusic.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/artist/david-guetta-mn0000213561/biography)

@@ -2,10 +2,10 @@
 
 Graph ID `origin:makossa-douala`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · unrated
+**Relationship** · originated_in · high
 
-**Graph citations** · [1](<https://www.britannica.com/biography/Manu-Dibango>), [2](<https://en.wikipedia.org/wiki/Makossa>)
+**Findings** · The *Historical Dictionary of the Republic of Cameroon* says makossa began in the 1950s and traces it to Douala’s Duala dance kossa ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://shcas.shnu.edu.cn/_upload/article/files/0e/08/4b0564f84fd9b9a65bde70ec5e4a/67ccaabe-3afc-4fb2-9df9-b7b27b0ebc0a.pdf)

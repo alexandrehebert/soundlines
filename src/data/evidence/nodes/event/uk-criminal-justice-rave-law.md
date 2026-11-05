@@ -2,12 +2,15 @@
 
 Graph ID `event:uk-criminal-justice-rave-law`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1994 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The UK Criminal Justice and Public Order Act 1994 created police powers concerning certain unlicensed gatherings and defined a category of repetitive beats. The law became a major point of conflict around rave culture and public space.
+## Sources checked
 
-**Graph citations** · [1](<https://www.legislation.gov.uk/ukpga/1994/33/contents>)
+- [UK legislation, Criminal Justice and Public Order Act 1994, section 63](https://www.legislation.gov.uk/ukpga/1994/33/section/63) — Primary legislation sets out police powers regarding certain gatherings and defines music through “a succession of repetitive beats.”
+- [UK legislation, section 63 at enactment](https://www.legislation.gov.uk/ukpga/1994/33/section/63/england%2Bwales/1994-11-03) — Historical text confirms the original 1994 statutory language.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The year and statutory language are confirmed. The Act did not simply ban all rave events; its powers applied under specified conditions to gatherings and land. The existing description is suitably qualified.

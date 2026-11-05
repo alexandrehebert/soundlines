@@ -1,11 +1,17 @@
-# Zungguzungguguzeng → Yellowman
+# Zungguzungguguzeng Yellowman
 
 Graph ID `recorded:zungguzungguguzeng-yellowman`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Zungguzungguguzeng>)
+**Finding** · VP identifies the track as Yellowman’s enduring signature and as the lead single/title track of the 1983 album. Keep.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.vprecords.com/honoring-king-yellowman/](https://www.vprecords.com/honoring-king-yellowman/)
+- [https://www.vprecords.com/artist/yellowman/](https://www.vprecords.com/artist/yellowman/)
+- [https://www.vprecords.com/yellowmans-zunggunzungguguzungguzeng-turns-40/](https://www.vprecords.com/yellowmans-zunggunzungguguzungguzeng-turns-40/)
+
+**Assessment** · The relation identifies the principal performer for the specific recording/version. Production, composition, featured vocals, and ensemble performance are distinguished in the finding and graph note where relevant.

@@ -2,10 +2,18 @@
 
 Graph ID `shaped:hamburg-public-opera-baroque`
 
-**Review status** · Pending source review
+**Review status** · reviewed — relationship evidence cross-checked
 
-**Relationship** · shaped · unrated
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.hamburgische-staatsoper.de/en/history>)
+**Relationship** · shaped · medium
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Sources checked
+
+- [hamburgische-staatsoper.de](https://www.hamburgische-staatsoper.de/en/history) — checked for the event and the claimed contribution to the linked tradition.
+- [die-hamburgische-staatsoper.de](https://www.die-hamburgische-staatsoper.de/de/ueberuns/haus) — checked for the event and the claimed contribution to the linked tradition.
+- [hamburg.de](https://www.hamburg.de/politik-und-verwaltung/behoerden/finanzbehoerde/wir-ueber-uns/historie-gaensemarkt-203400) — checked for the event and the claimed contribution to the linked tradition.
+
+## Assessment
+
+The opera house contributed to Baroque opera’s spread beyond court settings; it is not called Europe’s first public opera house.

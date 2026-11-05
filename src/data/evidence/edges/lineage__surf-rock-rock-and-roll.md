@@ -1,13 +1,15 @@
-# Surf rock → Rock and roll
+# lineage:surf-rock-rock-and-roll
 
 Graph ID `lineage:surf-rock-rock-and-roll`
 
-**Review status** · Pending source review
+**Review status** · Taxonomic hierarchy checked (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Relationship** · subgenre_of · high
 
-**Graph note** · Surf rock is an instrumental branch of early rock and roll.
+**Finding** · Surf rock developed as a form of early-1960s American rock and roll. Parent edge is direct; note surf music also spans instrumental and vocal forms.
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/surf-ma0000002868>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://www.allmusic.com/subgenre/surf-ma0000002883
+- https://www.ebsco.com/research-starters/music/surf-music
+- https://www.encyclopedia.com/media/encyclopedias-almanacs-transcripts-and-maps/surf-music

@@ -4,6 +4,8 @@ Graph ID `anthem:for-an-angel-trance-paul-van-dyk`
 
 **Review status** · Original release and remix cross-checked
 
+**Reviewed** · 2026-11-04
+
 **Relationship** · anthem_of · medium
 
 **Graph citations** · [1](<https://en.wikipedia.org/wiki/For_an_Angel>), [2](<https://www.paulvandyk.com/out-now-for-an-angel-30th-anniversary-edition/>), [3](<https://djmag.com/features/how-paul-van-dyks-angel-changed-trance-forever>), [4](<https://www.officialcharts.com/songs/paul-van-dyk-for-an-angel/>)

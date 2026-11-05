@@ -1,11 +1,14 @@
-# Run-DMC → Old-school rap
+# key:run-dmc-old-school-rap
 
 Graph ID `key:run-dmc-old-school-rap`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and style/period fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://www.allmusic.com/style/old-school-rap-ma0000002762>)
+**Finding** · Run-D.M.C. are foundational early hip-hop and fit the retrospective old-school rap period. This is a period/style label rather than their uniquely defining subgenre; medium-high is appropriate.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/style/old-school-rap-ma0000002762
+- https://rockhall.com/inductees/run-dmc/

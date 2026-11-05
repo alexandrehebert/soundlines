@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-fela-kuti-lagos`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · high
+**Relationship** · originated_in · medium
 
-**Graph note** · Lagos is central to Kuti’s Afrobeat career and performance history; he was born in Abeokuta.
+**Findings** · Fela’s official site says he was born in Abeokuta but established his Lagos club, the Afrika Shrine, and sustained his music career there: Fela Kuti official site.
 
-**Graph citations** · [1](<https://www.biography.com/musicians/fela-kuti>), [2](<https://eprints-prod-01.library.pitt.edu/10261/>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://felakuti.com/about)

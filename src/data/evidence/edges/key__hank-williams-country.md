@@ -1,11 +1,11 @@
-# Hank Williams → Country
+# Hank Williams → country
 
 Graph ID `key:hank-williams-country`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Country Music Hall of Fame and Museum: Hank Williams](https://www.countrymusichalloffame.org/hall-of-fame/hank-williams) — authoritative biographical profile of a central country artist.
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/country-ma0000002532>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+High confidence for country.

@@ -2,12 +2,15 @@
 
 Graph ID `event:fania-in-kinshasa`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1974 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The group’s 1974 appearance in Kinshasa carried New York salsa into a major African concert setting; Concord identifies the performance at Stade du Hai and its connection to the film Live in Africa.
+## Sources checked
 
-**Graph citations** · [1](<https://concord.com/artist/fania-all-stars/>), [2](<https://historias.nyc/nueva-york-chronicles/topic/salsa-at-yankee-stadium-fania-s-global-moment/>)
+- [Fania Records, Fania All-Stars biography](https://fania.com/artist/fania-all-stars/) — Label history documents the 1974 appearance at Statu Hai stadium in Kinshasa and its connection with the film Live in Africa.
+- [Museum of the City of New York, Fania All-Stars: Live in Africa](https://www.mcny.org/event/past-event-fania-all-stars-live-africa) — Museum program places the performance in the 1974 Zaire cultural moment.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The 1974 performance and film connection are supported. The graph’s general statement about salsa in a major African concert setting is sound; avoid attributing a specific crowd figure without a reliable primary record.

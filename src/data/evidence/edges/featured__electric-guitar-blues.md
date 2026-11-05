@@ -1,11 +1,11 @@
-# Electric guitar → Blues
+# Electric Guitar Blues
 
 Graph ID `featured:electric-guitar-blues`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Electric_guitar>)
+**Finding** · NEA account documents John Lee Hooker using electric guitar in blues recordings and performances.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [https://www.arts.gov/sites/default/files/2011-Heritage.pdf](https://www.arts.gov/sites/default/files/2011-Heritage.pdf).

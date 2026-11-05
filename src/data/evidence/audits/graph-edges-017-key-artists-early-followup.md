@@ -1,0 +1,7 @@
+# Key-artist early pending follow-up (2026-11-05)
+
+| Graph ID | Verdict | Confidence | Findings |
+|---|---|---|---|
+| `key:acen-breakbeat-hardcore` | supported | medium | Bucks Music Group identifies Acen’s first hit “Close Your Eyes” as a hardcore breakbeat anthem, released through Production House, and describes “Trip II the Moon” as a landmark club record. This supports a notable artist–scene association; medium reflects his small catalog and the promotional nature of the label biography. [1](https://www.bucksmusicgroup.com/artists/177-acen) [2](https://www.allmusic.com/artist/acen-mn0000589397) |
+| `key:babes-wodumo-gqom` | supported | medium | A 2020 article studies Babes Wodumo as a Gqom artist and analyzes her Gqom recordings’ transformation of isiZulu game songs. AllMusic characterizes her as an early breakout star from Durban’s Gqom scene who brought international attention to the style. This supports a major scene association, not genre origination. [1](https://mankindquarterly.org/archive/issue/61-1/9) [2](https://www.allmusic.com/artist/babes-wodumo-mn0003713358) |
+| `key:blink-182-pop-punk` | supported | high | Store norske leksikon identifies Blink-182 as an American pop-punk band and one of the leading bands of California’s skate-punk scene; the official discography calls pop-punk their usual sound while noting later experimentation. This is a defining association with an album-specific phase caveat. [1](https://snl.no/blink-182) [2](https://www.blink182.com/pages/discography) |

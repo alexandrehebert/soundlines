@@ -1,13 +1,14 @@
-# Electric guitar → Guitar
+# lineage:electric-guitar-guitar
 
 Graph ID `lineage:electric-guitar-guitar`
 
-**Review status** · Pending source review
+**Review status** · Source checked; relation scope/type updated where indicated (2026-11-05)
 
 **Relationship** · derived_from · medium
 
-**Graph note** · Adds electromagnetic pickups and amplification to the guitar.
+**Finding** · Electric guitar is a guitar form whose amplified pickup changes sound production and performance context. Derivation is reasonable, but it is not merely an acoustic guitar with amplification; construction and playing practices diversified.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Electric_guitar>)
+**Sources checked**
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+- https://music.si.edu/story/5-intriguing-electric-guitars-our-collections
+- https://publications.gc.ca/collections/collection_2018/mstc-cstm/NM33-1-19-eng.pdf

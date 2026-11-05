@@ -1,11 +1,15 @@
-# Punk rock → Rock
+# lineage:punk-rock
 
 Graph ID `lineage:punk-rock`
 
-**Review status** · Pending source review
+**Review status** · Taxonomic hierarchy checked (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Relationship** · subgenre_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Punk_rock>)
+**Finding** · Punk rock is an offshoot of rock music and is commonly treated as a rock subgenre. High confidence.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/genre/punk-ma0000002806
+- https://artsandculture.google.com/entity/punk-rock/m05r6t?hl=en
+- https://www.collinsdictionary.com/dictionary/english/punk-rock

@@ -1,11 +1,15 @@
-# The Number of the Beast → Heavy metal
+# anthem:the-number-of-the-beast-heavy-metal-iron-maiden
 
 Graph ID `anthem:the-number-of-the-beast-heavy-metal-iron-maiden`
 
-**Review status** · Pending source review
+**Review status** · Source checked; version/canonical-status caveats retained (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Number_of_the_Beast_(song)>), [2](<https://en.wikipedia.org/wiki/heavy_metal>)
+**Finding** · Official band material verifies the song and album. Its status as a defining heavy-metal song is widely plausible, but these sources do not specifically establish “anthem” status. Keep medium-high rather than treating the genre’s subjective canon as a fact.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.ironmaiden.com/single/the-number-of-the-beast/
+- https://www.ironmaiden.com/studio-album/the-number-of-the-beast/
+- https://www.allmusic.com/style/heavy-metal-ma0000002721

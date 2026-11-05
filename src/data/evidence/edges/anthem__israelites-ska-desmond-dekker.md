@@ -2,10 +2,10 @@
 
 Graph ID `anthem:israelites-ska-desmond-dekker`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Israelites_(song)>), [2](<https://en.wikipedia.org/wiki/ska>)
+**Findings** · Jamaica’s National Library calls Dekker’s voice characteristic of the rocksteady era and documents “Israelites” as his signature hit; NPG labels him a Jamaican ska and reggae singer and lists the song artifact. Ska is plausible, but the track crosses ska/rocksteady/reggae boundaries; avoid overprecision.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.nlj.gov.jm/REGGAE%20EXHIBITION/Desmond%20Dekker.htm) · [2](https://www.npg.org.uk/collections/search/person/mp97460/desmond-dekker-ne-desmond-adolphus-dacres)

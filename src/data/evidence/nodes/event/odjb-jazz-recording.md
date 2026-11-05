@@ -2,12 +2,16 @@
 
 Graph ID `event:odjb-jazz-recording`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1917 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The Original Dixieland Jazz Band recorded and released widely circulated jazz sides for Victor in 1917. “First jazz recording” is a conventional label for this commercially successful release, not proof that earlier Black jazz performance did not exist.
+## Sources checked
 
-**Graph citations** · [1](<https://blogs.loc.gov/now-see-hear/2017/03/the-first-jazz-recording-one-hundred-years-later/>), [2](<https://blogs.loc.gov/folklife/2017/02/birth-of-blues-and-jazz/>)
+- [Library of Congress, First Jazz Recording: One Hundred Years Later](https://blogs.loc.gov/now-see-hear/2017/03/the-first-jazz-recording-one-hundred-years-later/) — Documents the Original Dixieland Jass Band’s 1917 recording and its release.
+- [Library of Congress National Jukebox, Livery Stable Blues](https://www.loc.gov/item/jukebox-186254/) — Catalog record dates the recording to February 26, 1917.
+- [Library of Congress Folklife Today, The Painful Birth of Blues and Jazz](https://blogs.loc.gov/folklife/2017/02/birth-of-blues-and-jazz/) — Qualifies the “first” as the first generally acknowledged jazz recording, noting it was a white band commercializing a Black-origin genre.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The 1917 recording is well documented, but “first jazz recording” is a commercial-record milestone, not the origin of jazz or of Black jazz performance. The graph already gives this necessary qualification.

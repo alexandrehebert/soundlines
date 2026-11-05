@@ -2,10 +2,10 @@
 
 Graph ID `key:byrd-renaissance`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Renaissance_music>)
+**Findings** · Oxford Bibliographies in Music identifies William Byrd as among the most versatile and prolific English Renaissance composers and details works across contemporary genres (Oxford Academic, accessed lines 2506–2510). This directly supports the period attribution.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://academic.oup.com/reference/62400/reference-article-abstract/555398707)

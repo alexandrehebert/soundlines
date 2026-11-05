@@ -1,13 +1,14 @@
-# Salsa → Mbalax
+# lineage:mbalax-salsa
 
 Graph ID `lineage:mbalax-salsa`
 
-**Review status** · Pending source review
+**Review status** · Influence/direction and evidence checked (2026-11-05)
 
-**Relationship** · influences · unrated
+**Relationship** · influences · low
 
-**Graph note** · One of several influences on Senegalese urban dance music, alongside local traditions.
+**Finding** · Afro-Cuban/Senegalese salsa was a major preceding urban dance idiom, while mbalax later challenged its cultural dominance; this establishes context and continuity better than direct borrowing. Keep only as one broad influence with a note; confidence should be below medium absent more explicit musical evidence.
 
-**Graph citations** · [1](<https://www.britannica.com/biography/Youssou-NDour>), [2](<https://en.wikipedia.org/wiki/Mbalax>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+- https://openurl.ebsco.com/contentitem/doi%3A10.3366%2Fe0001972009000680?id=ebsco%3Adoi%3A10.3366%2Fe0001972009000680&sid=ebsco%3Aplink%3Acrawler
+- https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file?accession=ohiou1510780384221502&disposition=inline

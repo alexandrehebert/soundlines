@@ -1,11 +1,17 @@
-# I.K. Dairo → Jùjú
+# Ik Dairo Juju
 
 Graph ID `key:ik-dairo-juju`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://compassrecords.com/artist/chief-ik-dairo/>)
+**Finding** · Compass identifies Dairo as a foundational modern juju musician whose band helped develop the style; Nigerian scholarship credits his recordings and ensemble innovations with popularizing juju. Strong representative/key-artist fit.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://compassrecords.com/artist/chief-ik-dairo/](https://compassrecords.com/artist/chief-ik-dairo/)
+- [https://www.nigerianjournalsonline.org/index.php/AFUJMA/article/download/814/776](https://www.nigerianjournalsonline.org/index.php/AFUJMA/article/download/814/776)
+- [https://www.si.edu/object/siris_sil_409101](https://www.si.edu/object/siris_sil_409101)
+
+**Assessment** · Confidence applies to an artist’s central or representative association with this genre, not exclusivity or sole origin. Period, substyle, and scene caveats are retained where relevant.

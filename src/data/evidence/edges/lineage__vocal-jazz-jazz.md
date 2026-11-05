@@ -1,11 +1,15 @@
-# Vocal jazz → Jazz
+# lineage:vocal-jazz-jazz
 
 Graph ID `lineage:vocal-jazz-jazz`
 
-**Review status** · Pending source review
+**Review status** · Taxonomic hierarchy checked (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Relationship** · subgenre_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/vocal-jazz-ma0000002948>)
+**Finding** · Vocal jazz applies jazz improvisation, interpretation and musicianship to singing. The subtype is clear, though it overlaps with swing, blues and popular song.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/style/vocal-jazz-ma0000002948
+- https://www.loc.gov/exhibits/jazz-singers/overview.html
+- https://music.si.edu/story/jazz/

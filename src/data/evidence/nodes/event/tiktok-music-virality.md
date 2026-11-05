@@ -2,12 +2,16 @@
 
 Graph ID `event:tiktok-music-virality`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 2016–2018 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · TikTok’s emergence from Douyin and its later integration with Musical.ly helped make short-form video a major channel for music discovery and user-created circulation. The period is approximate and does not imply that TikTok alone caused viral music trends.
+## Sources checked
 
-**Graph citations** · [1](<https://newsroom.tiktok.com/en-us/one-year-of-tiktok-in-the-us>), [2](<https://newsroom.tiktok.com/musical-ly-and/?lang=en>), [3](<https://newsroom.tiktok.com/year-on-tiktok-music-2020?lang=en>)
+- [TikTok Newsroom, musical.ly and TikTok unite](https://newsroom.tiktok.com/musical-ly-and/?lang=en) — Company announcement dates the global musical.ly/TikTok consolidation to August 2018.
+- [ByteDance corporate history](https://www.bytedance.com/capcut/) — Parent-company chronology dates Douyin to 2016, international TikTok to 2017, and musical.ly acquisition/merger to 2017–18.
+- [TikTok and Luminate Music Impact Report](https://newsroom.tiktok.com/music-impact-report-confirms-tiktok-fuels-music-discovery/?lang=en) — Company-commissioned research documents the platform’s association with music discovery, with findings based on defined user and market samples.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 2016–18 span should distinguish Douyin’s China launch, TikTok’s international launch, and the 2018 musical.ly consolidation. TikTok later became an important discovery channel, but do not imply the platform began globally in 2016 or independently caused virality.

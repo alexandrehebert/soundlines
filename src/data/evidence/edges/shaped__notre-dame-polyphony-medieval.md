@@ -2,10 +2,18 @@
 
 Graph ID `shaped:notre-dame-polyphony-medieval`
 
-**Review status** · Pending source review
+**Review status** · reviewed — relationship evidence cross-checked
 
-**Relationship** · shaped · unrated
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.loc.gov/collections/moldenhauer-archives/articles-and-essays/guide-to-archives/music-history/>)
+**Relationship** · shaped · medium
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Sources checked
+
+- [loc.gov](https://www.loc.gov/collections/moldenhauer-archives/articles-and-essays/guide-to-archives/music-history/) — checked for the event and the claimed contribution to the linked tradition.
+- [cambridge.org](https://www.cambridge.org/core/books/abs/cambridge-history-of-medieval-music/notre-dame/94C93F0FE9B8B2690D8329693A9FCA83) — checked for the event and the claimed contribution to the linked tradition.
+- [notredamedeparis.fr](https://www.notredamedeparis.fr/en/understand/music/polyphony-and-motets/) — checked for the event and the claimed contribution to the linked tradition.
+
+## Assessment
+
+Sources support a major development in medieval polyphony; caveats about retrospective school labels and attribution remain.

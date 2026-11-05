@@ -2,10 +2,10 @@
 
 Graph ID `recorded:thank-you-falettinme-be-mice-elf-agin-sly-and-the-family-stone`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Thank_You_(Falettinme_Be_Mice_Elf_Agin)>)
+**Findings** · The official Sly Stone site says the recording was inducted into the 2017 GRAMMY Hall of Fame; the official artist channel provides the single version under Sly & The Family Stone (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.slystonemusic.com/news/sly-family-stones-thank-falettinme-mice-elf-agin-selected-2017-grammy-hall-fame/) · [2](https://www.youtube.com/watch?v=_Jhn2AfPWPo)

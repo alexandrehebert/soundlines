@@ -1,11 +1,15 @@
-# Try a Little Tenderness → Soul
+# anthem:try-a-little-tenderness-soul-otis-redding
 
 Graph ID `anthem:try-a-little-tenderness-soul-otis-redding`
 
-**Review status** · Pending source review
+**Review status** · Source checked; version/canonical-status caveats retained (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Try_a_Little_Tenderness>), [2](<https://en.wikipedia.org/wiki/soul>)
+**Finding** · Memphis Hall describes the signature dynamic build in Redding’s performance; Rock Hall identifies him as a titan of soul. This refers to Redding’s 1966 soul reworking of a 1932 song, not the original composition in all forms.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://memphismusichalloffame.com/inductee/otisredding/
+- https://rockhall.com/inductees/otis-redding/
+- https://staxmuseum.com/

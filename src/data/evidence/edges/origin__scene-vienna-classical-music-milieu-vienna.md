@@ -1,13 +1,15 @@
-# Vienna classical music milieu → Vienna
+# origin:scene-vienna-classical-music-milieu-vienna
 
 Graph ID `origin:scene-vienna-classical-music-milieu-vienna`
 
-**Review status** · Pending source review
+**Review status** · Place/origin claim source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Scene geography is shared or regional where the description says so.
+**Finding** · Vienna’s importance as a center for composers, institutions and performance is well documented. “Classical music milieu” is broader than a discrete genre with one place of origin; retain only if the edge means a historically influential local center.
 
-**Graph citations** · [1](<https://www.wien.info/en/art-culture/music-stage-shows/classical-music-345730>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://www.wien.info/en/art-culture/music-stage-shows/classical-music-345730
+- https://whc.unesco.org/en/list/1033
+- https://www.musicaustria.at/wp-content/uploads/Musik-Export-Handbuch_EN.pdf

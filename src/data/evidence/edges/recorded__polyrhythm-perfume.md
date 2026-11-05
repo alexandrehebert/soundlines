@@ -2,10 +2,10 @@
 
 Graph ID `recorded:polyrhythm-perfume`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Polyrhythm_(Perfume_song)>)
+**Findings** · Perfume’s official discography and Tokuma Japan identify “Polyrhythm” as the group’s 2007 single (,).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.perfume-web.jp/discography/detail.php?id=15) · [2](https://www.tkma.co.jp/jpop_release_detail/perfume.html?rid=98)

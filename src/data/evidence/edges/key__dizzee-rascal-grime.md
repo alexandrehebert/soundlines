@@ -2,10 +2,10 @@
 
 Graph ID `key:dizzee-rascal-grime`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/grime-ma0000004464>)
+**Findings** · NPG explicitly identifies him as a UK grime pioneer; AllMusic describes him as a leading artist associated with London grime.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.npg.org.uk/collections/search/person/mp71618/dizzee-rascal-dylan-mills) · [2](https://www.allmusic.com/artist/dizzee-rascal-mn0000161773)

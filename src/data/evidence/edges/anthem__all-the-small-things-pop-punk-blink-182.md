@@ -2,10 +2,10 @@
 
 Graph ID `anthem:all-the-small-things-pop-punk-blink-182`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/All_the_Small_Things>), [2](<https://en.wikipedia.org/wiki/pop_punk>)
+**Finding** · Louder describes Blink-182’s sound as punk-pop and calls this song their indelible anthem and biggest hit; AllMusic classifies the track as pop punk. Together these support the genre association and anthem status.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [Louder feature](https://www.loudersound.com/features/how-blink-182-wrote-their-biggest-ever-hit); [AllMusic track entry](https://www.allmusic.com/song/all-the-small-things-mt0008132691).

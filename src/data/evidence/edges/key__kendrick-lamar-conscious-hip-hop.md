@@ -1,11 +1,17 @@
-# Kendrick Lamar → Conscious hip-hop
+# Kendrick Lamar Conscious Hip Hop
 
 Graph ID `key:kendrick-lamar-conscious-hip-hop`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://www.liveabout.com/conscious-rap-defined-2857304>)
+**Finding** · LOC calls Lamar’s music socially conscious; scholarship examines his social/political rap. This is a strong strand rather than a full-career genre label; medium is appropriate.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://guides.loc.gov/kendrick-lamar](https://guides.loc.gov/kendrick-lamar)
+- [https://www.pulitzer.org/winners/kendrick-lamar](https://www.pulitzer.org/winners/kendrick-lamar)
+- [https://www.business-services.upenn.edu/raps-resistance](https://www.business-services.upenn.edu/raps-resistance)
+
+**Assessment** · Confidence applies to the exact artist–genre relation, distinguishing central genre association from period-specific, hybrid, or influence-only evidence.

@@ -2,12 +2,10 @@
 
 Graph ID `origin:genre-reggae-kingston`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · UNESCO describes reggae as emerging within a cultural space in western Kingston; this link identifies a central place, not an exclusive origin.
+**Findings** · UNESCO says reggae originated in a cultural space mainly in Western Kingston; Jamaica’s cultural service discusses the city’s urban musical precursors:,.
 
-**Graph citations** · [1](<https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398) · [2](https://jis.gov.jm/jamaica/legendary-reggae-music-born-in-jamaica/)

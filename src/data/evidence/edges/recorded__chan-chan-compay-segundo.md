@@ -2,10 +2,10 @@
 
 Graph ID `recorded:chan-chan-compay-segundo`
 
-**Review status** · Pending source review
+**Review status** · Source-checked with credit caveat
 
 **Relationship** · recorded_by · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Chan_Chan_(song)>)
+**Finding** · Official tracklist includes “Chan Chan”; the album notes identify Compay Segundo as guitarist/vocalist and describe the song as his composition. The page supports his connection but does not explicitly assign his performance on this specific track; seek track-level personnel before raising confidence.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.buenavistasocialclub.com/albums/buena-vista-social-club/](https://www.buenavistasocialclub.com/albums/buena-vista-social-club/).

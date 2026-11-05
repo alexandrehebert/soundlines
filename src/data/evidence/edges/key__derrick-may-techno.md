@@ -2,10 +2,10 @@
 
 Graph ID `key:derrick-may-techno`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Derrick_May_(musician)>), [2](<https://en.wikipedia.org/wiki/Techno>), [3](<https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/may-derrick>)
+**Findings** · Detroit Historical Society calls May a Belleville Three pioneer; RBMA describes their blueprint for techno.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/may-derrick) · [2](https://daily.redbullmusicacademy.com/2017/05/interview-derrick-may/?curator=MusicREDEF)

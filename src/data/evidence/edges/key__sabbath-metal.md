@@ -1,11 +1,14 @@
-# Black Sabbath → Heavy metal
+# key:sabbath-metal
 
 Graph ID `key:sabbath-metal`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and style/period fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Heavy_metal_music>)
+**Finding** · The Rock Hall credits Black Sabbath with bringing heavy metal into the world. The graph endpoint is the broad metal category, but heavy metal is their exact, defining association.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://rockhall.com/inductees/Black-Sabbath/
+- https://www.allmusic.com/artist/black-sabbath-mn0000771436

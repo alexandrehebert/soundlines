@@ -1,11 +1,14 @@
-# The Sabri Brothers → Qawwali
+# key:sabri-brothers-qawwali
 
 Graph ID `key:sabri-brothers-qawwali`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and style/period fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/qawwali-ma0000002742>)
+**Finding** · Real World calls them a foremost Qawwali ensemble; Radio Pakistan describes their innovations within Qawwali. Direct and central association.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://realworldrecords.com/artists/the-sabri-brothers/
+- https://radio.gov.pk/05-04-2022/28th-death-anniversary-of-qawwal-ghulam-farid-sabri-observed

@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-roule-paris`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · high
+**Relationship** · originated_in · medium
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Findings** · Resident Advisor calls Roulé a French house label founded by Thomas Bangalter in 1995; Work Division’s design history identifies it as one of Bangalter’s independent French electronic labels (,). The French house movement was centered in Paris ().
 
-**Graph citations** · [1](<https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en>), [2](<https://ra.co/labels/roule>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://ra.co/labels/7006) · [2](https://workdivision.paris/roule-scratche/) · [3](https://www.francemusic.com/french-touch-guide/)

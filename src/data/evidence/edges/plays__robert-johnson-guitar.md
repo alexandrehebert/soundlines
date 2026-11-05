@@ -2,10 +2,10 @@
 
 Graph ID `plays:robert-johnson-guitar`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · plays · medium
+**Relationship** · plays · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Robert_Johnson>)
+**Findings** · The Handbook of Texas identifies him as a Delta blues guitarist, describes his shift from harmonica to guitar, and documents recording sessions. The Robert Johnson Blues Foundation independently identifies him as a singer-guitarist.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.tshaonline.org/handbook/entries/johnson-robert) · [2](https://www.robertjohnsonbluesfoundation.org/biography/)

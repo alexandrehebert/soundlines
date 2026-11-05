@@ -2,10 +2,10 @@
 
 Graph ID `key:dorival-caymmi-samba`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/dorival-caymmi-mn0000066276>)
+**Findings** · Brazilian music reference documents Caymmi’s signature samba “O que é que a baiana tem?”; Música Brasilis classifies its score as samba. His career also centers Bahian song traditions, so samba is important but not exhaustive.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://dicionariompb.com.br/artista/dorival-caymmi/) · [2](https://musicabrasilis.org.br/pt-br/partituras/dorival-caymmi-o-que-e-que-a-baiana-tem/)

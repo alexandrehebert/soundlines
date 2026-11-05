@@ -1,11 +1,14 @@
-# Louis Armstrong → Vocal jazz
+# key:louis-armstrong-vocal-jazz
 
 Graph ID `key:louis-armstrong-vocal-jazz`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/vocal-jazz-ma0000002948>)
+**Finding** · Smithsonian documents Armstrong’s influential singing and scat improvisation as well as his trumpet playing. Vocal jazz is a core, representative dimension of his career, though he is also foundational to instrumental jazz.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://music.si.edu/story/louis-armstrong
+- https://americanhistory.si.edu/explore/projects/smithsonian-jazz/education/louis-education-kit

@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-prestige-records-new-york`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Founding or primary base location; roster artists have diverse origins.
+**Findings** · DownBeat’s Prestige anniversary history dates the label to 1949; the scholarly Prestige history identifies its New York founding and early address (,,).
 
-**Graph citations** · [1](<https://concord.com/labels/prestige-records/>), [2](<https://www.milesdavis.com/timeline-1950/>)
-
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://downbeat.com/microsites/prestige/about.html) · [2](https://www.jstor.org/stable/jj.33902526) · [3](https://www.bsnpubs.com/new/prestige.pdf)

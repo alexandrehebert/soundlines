@@ -1,11 +1,14 @@
-# Ministry → Industrial metal
+# key:ministry-industrial-metal
 
 Graph ID `key:ministry-industrial-metal`
 
-**Review status** · Pending source review
+**Review status** · Centrality and genre fit checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/industrial-metal-ma0000012276>)
+**Finding** · AllMusic calls Ministry one of the leaders/founders of industrial metal; AP places the group before the style’s mainstream spread. Strong central fit, though its earliest synth-pop phase differs.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/artist/ministry-mn0000420133/biography
+- https://apnews.com/article/d2e87990b9101ecca9eea89fc3af3769

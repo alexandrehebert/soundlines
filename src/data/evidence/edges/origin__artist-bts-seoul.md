@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-bts-seoul`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · BTS formed in Seoul; this records the group's origin, not the origin of K-pop as a whole.
+**Findings** · AllMusic specifies BTS formed in Seoul; Apple’s artist snapshot independently reports formation in Seoul: AllMusic, Apple Music.
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/bts-mn0003136056/biography>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.allmusic.com/artist/bts-mn0003136056/biography) · [2](https://snapshot.apple.com/us/band/6670612859)

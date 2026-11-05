@@ -2,10 +2,10 @@
 
 Graph ID `recorded:soy-peor-bad-bunny`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Soy_Peor>)
+**Findings** · Apple Music identifies the 2016 “Soy Peor” single under Bad Bunny and Rimas Entertainment; the official artist-channel video is also distributed under his artist credit (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://music.apple.com/us/album/soy-peor-single/1470492098) · [2](https://www.youtube.com/watch?v=De7tGWrL9Sg)

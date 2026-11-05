@@ -1,16 +1,11 @@
-# Dizzy Gillespie → Bebop
+# Dizzy Gillespie → bebop
 
 Graph ID `key:gillespie-bebop`
 
-**Review status** · Reviewed — founding role confirmed; raised to high
-
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-04
 
 ## Sources checked
-
-- [Britannica, bebop](https://www.britannica.com/art/bebop) — bebop originated in Gillespie’s playing (early 1940s).
-- [Carnegie Hall timeline, bebop](https://timeline.carnegiehall.org/genres/bebop) — development “often attributed in large part” to Gillespie.
+- [Carnegie Hall: History of Bebop](https://timeline.carnegiehall.org/genres/bebop) — identifies Gillespie as one of the movement’s originators and credits his role in developing it (lines 98–114).
 
 ## Assessment
-
-Confidence → high; sources added. Node evidence previously reviewed.
+High confidence. Scholarly-authored institutional history gives direct support.

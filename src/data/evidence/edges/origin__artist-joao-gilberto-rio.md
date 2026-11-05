@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-joao-gilberto-rio`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Rio is linked to Gilberto’s bossa nova work and scene; he moved there from Bahia.
+**Findings** · RILM and Dicionário Cravo Albin say Gilberto was born in Juazeiro and arrived in Rio in 1949 to sing with Garotos da Lua:,.
 
-**Graph citations** · [1](<https://www.abc.net.au/rn/features/bossanova/about.htm>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://rme.rilm.org/articles/emb01357/1.0/emb01357) · [2](https://dicionariompb.com.br/artista/joao-gilberto/)

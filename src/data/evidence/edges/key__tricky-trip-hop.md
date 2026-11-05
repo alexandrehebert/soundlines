@@ -1,11 +1,14 @@
-# Tricky → Trip-hop
+# Tricky → Trip Hop
 
 Graph ID `key:tricky-trip-hop`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; audit batch 030)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.cambridge.org/core/journals/organised-sound/article/abs/just-dont-call-it-trip-hop-reconciling-the-bristol-sound-style-with-the-trip-hop-genre/B4944FEFB7C30977DA7CF0CB3AC07465>), [2](<https://napier-repository.worktribe.com/output/4685880>), [3](<https://www.allmusic.com/artist/tricky-mn0000020626>)
+**Finding** · AllMusic directly calls Tricky a trip-hop pioneer and links him to Bristol’s scene. Strong artist-to-genre connection.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- [AllMusic biography](https://www.allmusic.com/artist/tricky-mn0000025462/biography)
+- [MusicBrainz artist profile](https://musicbrainz.org/artist/5bf64d94-efd9-4334-96fd-e6197b0b02b8)

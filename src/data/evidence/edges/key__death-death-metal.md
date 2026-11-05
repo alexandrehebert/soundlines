@@ -2,10 +2,10 @@
 
 Graph ID `key:death-death-metal`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/death-metal-ma0000002547>)
+**Findings** · Death is directly described as a pioneering death-metal band; founder Chuck Schuldiner’s role is central.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://death.bandcamp.com/) · [2](https://www.allmusic.com/artist/death-mn0000228323)

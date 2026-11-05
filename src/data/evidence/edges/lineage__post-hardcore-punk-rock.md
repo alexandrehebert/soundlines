@@ -1,11 +1,14 @@
-# Post-hardcore → Punk rock
+# post hardcore → punk rock
 
 Graph ID `lineage:post-hardcore-punk-rock`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; derived audit 002)
 
-**Relationship** · derived_from · high
+**Relationship** · derived_from · medium
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/post-hardcore-ma0000012125>), [2](<https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41>)
+**Finding** · Post-hardcore emerged from hardcore punk, itself a punk-rock branch, and broadened its musical expression. The graph lacks a hardcore-punk endpoint, so this is a coarse parent link.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- [AllMusic, Post-Hardcore](https://www.allmusic.com/style/post-hardcore-ma0000012125)
+- [AllMusic, Hardcore Punk](https://www.allmusic.com/genre/hardcore-punk-ma0000002641)

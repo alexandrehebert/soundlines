@@ -2,10 +2,10 @@
 
 Graph ID `recorded:ja-funmi-king-sunny-ade`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Ja_Funmi>)
+**Findings** · Apple’s artist catalogue lists “Ja Funmi” on *Juju Music* (1982) under King Sunny Ade (); the original album retailer listing identifies King Sunny Ade & His African Beats ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://music.apple.com/us/artist/king-sunny-ade/77539) · [2](https://www.groovierecords.com/products/juju-music-4)

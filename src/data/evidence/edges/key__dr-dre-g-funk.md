@@ -2,10 +2,10 @@
 
 Graph ID `key:dr-dre-g-funk`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · medium
+## Sources checked
+- [Library of Congress National Recording Registry essay: The Chronic](https://www.loc.gov/static/programs/national-recording-preservation-board/documents/the-chronic.pdf) — says Dre experimented with G-funk production on Niggaz4Life, which became his defining production motif (page 1, lines 11–15).
 
-**Graph citations** · [1](<https://www.allmusic.com/style/g-funk-ma0000011824>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+High confidence. Directly supported by the LOC essay; this is a key association, not a claim that all of Dre’s work is G-funk.

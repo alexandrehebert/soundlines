@@ -2,16 +2,16 @@
 
 Graph ID `event:compact-disc-market-launch`
 
-**Review status** · Launch date and scope cross-checked
+**Review status** · reviewed
 
-**Graph period** · 1982 (year)
+**Reviewed** · 2026-11-04
 
-## Evidence review
+## Sources checked
 
-- Sony’s contemporary annual report records an October 1982 Japanese launch and describes the European and U.S. rollout as subsequent. It credits Philips as co-developer. [Sony annual report](https://www.sony.com/en/SonyInfo/IR/library/ar/8ido18000005fmhn-att/1982-E.pdf)
-- Sony’s corporate history dates the CDP-101 launch to October 1 and documents an accompanying catalog of fifty CBS/Sony titles. This corroborates the existence of a consumer hardware and music launch, although both Sony accounts share institutional provenance. [Sony corporate history](https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-07.html)
-- The existing Library of Congress chronology uses 1983. That year fits the wider rollout. The event’s broad title calls for the first consumer launch, so the graph uses 1982 and names Japan. [Library of Congress chronology](https://www.loc.gov/static/managed-content/uploads/sites/6/2017/02/recorded_sound_timeline-2013.pdf)
+- [Sony Group history, Digitizing Music](https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-07.html) — Company history dates the CDP-101 player and first commercial CD titles in Japan to 1 October 1982.
+- [Philips Museum, Compact Disc: the audio revolution](https://www.philips.nl/en/a-w/philips-museum/stories/compact-disc.html) — Philips describes the joint format introduction in Japan in late 1982 and European/U.S. market launch in 1983.
+- [National Institute of Nature and Science, first CD player](https://sts.kahaku.go.jp/english/material/2019pdf/no270.pdf) — Japanese museum record identifies the CDP-101 as the first compact disc player, introduced in 1982.
 
-**Graph citations** · [1](<https://www.loc.gov/static/managed-content/uploads/sites/6/2017/02/recorded_sound_timeline-2013.pdf>), [2](<https://www.sony.com/en/SonyInfo/IR/library/ar/8ido18000005fmhn-att/1982-E.pdf>), [3](<https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-07.html>)
+## Assessment
 
-**Citation retrieval** · 1 bulk responses, 2 browser opens, 0 unsuccessful, 0 pending.
+The graph’s 1982 consumer market entry is accurate for Japan; additional markets followed in 1983. Make geographic scope explicit so it is not mistaken for a simultaneous worldwide launch.

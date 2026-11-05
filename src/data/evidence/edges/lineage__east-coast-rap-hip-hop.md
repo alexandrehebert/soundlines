@@ -2,10 +2,10 @@
 
 Graph ID `lineage:east-coast-rap-hip-hop`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Relationship** · subgenre_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/east-coast-rap-ma0000002563>)
+**Findings** · DDEX explicitly defines East Coast HipHop/Rap as a style of HipHop, lists HipHop as the parent, and treats East Coast Rap as a synonym.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://service.ddex.net/dd/DD-AVS-CURRENT/dd/ddex_EastCoastHipHop.html)

@@ -1,11 +1,11 @@
-# Valved trumpet → Jazz
+# Trumpet Jazz
 
 Graph ID `featured:trumpet-jazz`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Trumpet>)
+**Finding** · LOC Registry essay by jazz scholar Gene Anderson documents Armstrong as a trumpet player and traces the Hot Five/Seven jazz recordings.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://memory.loc.gov/static/programs/national-recording-preservation-board/documents/Hot-5-and-Hot-7-Recordings_Anderson.pdf](https://memory.loc.gov/static/programs/national-recording-preservation-board/documents/Hot-5-and-Hot-7-Recordings_Anderson.pdf).

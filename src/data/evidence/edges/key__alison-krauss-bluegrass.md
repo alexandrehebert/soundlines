@@ -2,10 +2,10 @@
 
 Graph ID `key:alison-krauss-bluegrass`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/bluegrass-ma0000002466>)
+**Finding** · Direct: institutional biography calls her one of the most influential performers associated with bluegrass (lines 47, 52).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.bluegrasshall.org/inductees/alison-krauss/](https://www.bluegrasshall.org/inductees/alison-krauss/).

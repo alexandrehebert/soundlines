@@ -1,11 +1,15 @@
-# Richie Hawtin → Techno
+# key:richie-hawtin-techno
 
 Graph ID `key:richie-hawtin-techno`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and style/period fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Richie_Hawtin>), [2](<https://en.wikipedia.org/wiki/Techno>)
+**Finding** · His career as a techno DJ and producer is well established, including Detroit techno roots and influential releases. Minimal and acid techno are more precise substyles, but the parent techno edge is secure.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://ra.co/dj/richiehawtin/biography
+- https://www.ableton.com/en/pages/artists/richie_hawtin/
+- https://www.allmusic.com/artist/richie-hawtin-mn0000353622/biography

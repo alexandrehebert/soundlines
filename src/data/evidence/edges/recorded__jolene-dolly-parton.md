@@ -2,10 +2,10 @@
 
 Graph ID `recorded:jolene-dolly-parton`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Jolene_(song)>)
+**Findings** · Parton’s official album entry says the 1974 *Jolene* contains the title track and lists it first ().
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.dollyparton.com/album/jolene)

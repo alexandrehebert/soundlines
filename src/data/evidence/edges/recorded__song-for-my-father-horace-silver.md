@@ -2,10 +2,10 @@
 
 Graph ID `recorded:song-for-my-father-horace-silver`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Song_for_My_Father>)
+**Findings** · Blue Note’s history states that Horace Silver recorded the title track on October 26, 1964 for the album of the same name; the label’s album page supplies the release context (;).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.bluenote.com/spotlight/horace-silver-song-for-my-father/) · [2](https://store.bluenote.com/products/horace-silver-song-for-my-father-blue-note-classic-vinyl-edition)

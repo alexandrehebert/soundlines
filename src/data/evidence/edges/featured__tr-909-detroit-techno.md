@@ -4,6 +4,8 @@ Graph ID `featured:tr-909-detroit-techno`
 
 **Review status** · Relationship evidence checked
 
+**Reviewed** · 2026-11-04
+
 **Relationship** · featured_in · high
 
 **Graph note** · The TR-909 featured on Derrick May’s “Strings of Life.” Jeff Mills recalls acquiring one in 1986.

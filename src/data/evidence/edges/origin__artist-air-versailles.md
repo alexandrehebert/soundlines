@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-air-versailles`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · The duo formed in Versailles.
+**Findings** · LA Philharmonic says AIR was born in Versailles in 1995; AllMusic lists formation in Versailles: LA Phil, AllMusic.
 
-**Graph citations** · [1](<https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.laphil.com/people/air) · [2](https://www.allmusic.com/artist/air-mn0000607202)

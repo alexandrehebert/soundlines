@@ -1,13 +1,15 @@
-# San Juan reggaeton scene → San Juan
+# origin:scene-san-juan-reggaeton-scene-san-juan
 
 Graph ID `origin:scene-san-juan-reggaeton-scene-san-juan`
 
-**Review status** · Pending source review
+**Review status** · Place/origin claim source checked (2026-11-05)
 
 **Relationship** · originated_in · medium
 
-**Graph note** · Scene geography is shared or regional where the description says so.
+**Finding** · Scholarship and Smithsonian materials locate an important formative reggaetón scene in San Juan’s urban communities. The genre also developed through Jamaican dancehall, Panamanian reggae en español and local Puerto Rican styles; this is a key scene, not an exclusive birthplace.
 
-**Graph citations** · [1](<https://www.si.edu/object/reggaeton%3Anmahc_2016.40.1>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://www.si.edu/object/remixing-reggaet%C3%B3n-cultural-politics-race-puerto-rico-petra-r-rivera-rideau%3Asiris_sil_1083961
+- https://folkways-media.si.edu/docs/folkways/lessons/SFLN069_teacher_guide.pdf
+- https://www.loc.gov/item/hlas-bi2013001267/

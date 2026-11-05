@@ -2,10 +2,10 @@
 
 Graph ID `recorded:autobahn-kraftwerk`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Autobahn_(song)>)
+**Findings** · Rhino’s official anniversary release calls *Autobahn* Kraftwerk’s landmark 1974 album and describes work from the original master tapes (Rhino).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://media.rhino.com/press-release/autobahn)

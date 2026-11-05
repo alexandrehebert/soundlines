@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-duke-ellington-washington-d-c`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Born in Washington, D.C.; later rose to fame in New York.
+**Findings** · Smithsonian identifies Washington, D.C. as Ellington’s birthplace: Smithsonian.
 
-**Graph citations** · [1](<https://www.si.edu/spotlight/duke-ellington>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.si.edu/spotlight/duke-ellington)

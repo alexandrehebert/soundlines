@@ -1,13 +1,16 @@
-# Afrobeats → Hip-hop
+# Scholarship treats Afrobeats as a broad, fluid category that intersects with hip-hop in West African scenes and global markets. Retain as cultural and stylistic exchange, not a one-way genre descent.
 
 Graph ID `lineage:afrobeats-hip-hop`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · cross_pollination · medium
 
-**Graph note** · Contemporary Afrobeats scenes exchange sounds with global hip-hop and pop; this does not imply descent from Fela’s Afrobeat.
+**Finding** · Scholarship treats Afrobeats as a broad, fluid category that intersects with hip-hop in West African scenes and global markets. Retain as cultural and stylistic exchange, not a one-way genre descent.
 
-**Graph citations** · [1](<https://online.ucpress.edu/jpms/article-abstract/36/4/25/203941/Genre-or-HypernymDeconstructing-Afrobeats-in-the?redirectedFrom=fulltext>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [https://online.ucpress.edu/jpms/article-abstract/36/4/25/203941/Genre-or-HypernymDeconstructing-Afrobeats-in-the?redirectedFrom=fulltext](https://online.ucpress.edu/jpms/article-abstract/36/4/25/203941/Genre-or-HypernymDeconstructing-Afrobeats-in-the?redirectedFrom=fulltext)
+- [https://intellectdiscover.com/content/journals/10.1386/ghhs_00049_1](https://intellectdiscover.com/content/journals/10.1386/ghhs_00049_1)
+
+**Assessment** · This edge records historically documented exchange or influence. It does not imply that one genre is a subgenre of the other.

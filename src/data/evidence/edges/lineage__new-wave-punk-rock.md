@@ -1,13 +1,14 @@
-# New wave → Punk rock
+# new wave → punk rock
 
 Graph ID `lineage:new-wave-punk-rock`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05; derived audit 002)
 
 **Relationship** · derived_from · medium
 
-**Graph note** · New wave emerged alongside punk and shared personnel and venues, while branching into more pop-oriented and electronic forms.
+**Finding** · New wave emerged in punk’s wake and in punk’s image, then broadened toward more pop-oriented and electronic forms; it shared scenes and personnel with punk.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/new-wave-ma0000002745>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [University of Michigan Press, *Are We Not New Wave?*](https://press.umich.edu/Books/A/Are-We-Not-New-Wave2)
+- [AllMusic](https://www.allmusic.com/genre/new-wave-ma0000002750)

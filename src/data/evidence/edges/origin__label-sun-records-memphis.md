@@ -2,12 +2,10 @@
 
 Graph ID `origin:label-sun-records-memphis`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Findings** · Sun’s official history says Sam Phillips launched the company in 1952; the Memphis Heritage record documents the Memphis Recording Service/Sun Studio connection (,).
 
-**Graph citations** · [1](<https://www.sunrecords.com/about>), [2](<https://www.memphistravel.com/music>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://sunrecords.com/history/) · [2](https://www.memphisheritage.org/historic-properties/sun-record-company-memphis-recording-service/)

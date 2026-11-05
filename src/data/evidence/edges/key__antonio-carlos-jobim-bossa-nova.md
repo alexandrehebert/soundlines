@@ -2,10 +2,10 @@
 
 Graph ID `key:antonio-carlos-jobim-bossa-nova`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/bossa-nova-ma0000002548>)
+**Finding** · Direct: Hall bio identifies bossa nova as the genre Jobim helped shape and credits him with its international breakthrough (opened page lines 11–15).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.songhall.org/profiles/antonio-carlos-jobim](https://www.songhall.org/profiles/antonio-carlos-jobim).

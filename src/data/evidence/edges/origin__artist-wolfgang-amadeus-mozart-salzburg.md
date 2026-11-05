@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-wolfgang-amadeus-mozart-salzburg`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Born in Salzburg.
+**Finding** · The International Mozarteum Foundation identifies Getreidegasse 9 in Salzburg as Mozart’s birthplace.
 
-**Graph citations** · [1](<https://mozarteum.at/en/mozart-museums/mozarts-birthplace>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [International Mozarteum Foundation](https://mozarteum.at/en/mozart-museums/mozarts-birthplace).

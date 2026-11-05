@@ -2,10 +2,10 @@
 
 Graph ID `featured:harmonica-blues`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Harmonica>)
+**Findings** · Smithsonian Folkways’ collection documents harmonica blues performers across the tradition; PBS describes country blues as commonly guitar- or harmonica-accompanied.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://folkways.si.edu/classic-harmonica-blues/music/album/smithsonian) · [2](https://www.pbs.org/theblues/classroom/glossary.html)

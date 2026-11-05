@@ -1,11 +1,17 @@
-# Kavinsky → Synthwave
+# Kavinsky Synthwave
 
 Graph ID `key:kavinsky-synthwave`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://online.ucpress.edu/jpms/article/33/1/70/116330/Reconstructed-NostalgiaAesthetic-Commonalities-and>), [2](<https://riviste.unimi.it/index.php/sss/article/view/14136>), [3](<https://www.allmusic.com/artist/kavinsky-mn0000907351>)
+**Finding** · AllMusic says Kavinsky helped give rise to synthwave; SACEM describes him as an inspiration to the scene. Strong genre-defining association.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- [https://www.allmusic.com/artist/kavinskys-mn0000907351](https://www.allmusic.com/artist/kavinskys-mn0000907351)
+- [https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/SimpleExhibitions?id=5910](https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/SimpleExhibitions?id=5910)
+- [https://ra.co/news/85668](https://ra.co/news/85668)
+
+**Assessment** · Confidence applies to the exact artist–genre relation, distinguishing central genre association from period-specific, hybrid, or influence-only evidence.

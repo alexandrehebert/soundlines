@@ -1,11 +1,13 @@
-# Laurent Garnier → House
+# Laurent Garnier → house
 
 Graph ID `key:laurent-garnier-house`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · unrated
+## Sources checked
+- [Resident Advisor biography](https://ra.co/dj/laurentgarnier/biography) — documents his first-hand experience of acid house in Manchester and broader house work.
+- [AllMusic profile](https://www.allmusic.com/artist/laurent-garnier-mn0000140786) — catalogs house among his central styles.
+- [Red Bull Music Academy lecture](https://www.redbullmusicacademy.com/lectures/laurent-garnier-lecture/) — Garnier discusses house and techno as core strands of his musical practice.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Laurent_Garnier>), [2](<https://www.allmusic.com/artist/laurent-garnier-mn0000140786>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+High confidence. Removed Wikipedia citations.

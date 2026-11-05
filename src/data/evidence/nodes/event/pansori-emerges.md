@@ -2,12 +2,16 @@
 
 Graph ID `event:pansori-emerges`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1600–1699 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · UNESCO dates pansori’s emergence in southwest Korea to the seventeenth century, probably as a new expression of shamanic narrative songs; the exact beginnings remain uncertain.
+## Sources checked
 
-**Graph citations** · [1](<https://ich.unesco.org/en/RL/pansori-epic-chant-00070>)
+- [Korea.net, Pansori cultural profile](https://www.korea.net/K-InfoHub/SubMainDetail/view?articleId=3981&headwordCd=77&headwordGroupCd=17&pageIndex=1) — Korean government cultural profile dates emergence to the seventeenth century in southwestern Korea and says it matured in the nineteenth century.
+- [UNESCO-ICHCAP, Republic of Korea heritage overview](https://archive.unesco-ichcap.org/kor/ek/sub1/pdf_file/east_asia/Republic_of_Korea_2013_05_The_Representative_List_of_the_Intangible_Cultural_Heritage_of_Humanity.pdf) — Nomination overview uses a qualified seventeenth-century emergence account and explicitly says “probably.”
+- [Korea.net, Storytelling for the Masses](https://www.korea.net/NewsFocus/Culture/view?articleId=186705) — Notes that little is known about exact origins and surviving written references are later.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The seventeenth-century dating is a conventional, qualified estimate, not a precisely documented origin. Retain “develops” and uncertainty language; avoid treating the date as an event with exact year.

@@ -2,12 +2,16 @@
 
 Graph ID `event:great-migration-musical-circulation`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1910–1970 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The Great Migration moved millions of African Americans from the South to cities across the United States. It created new audiences and networks and reshaped blues, jazz, gospel, and later popular music; music histories describe multiple waves rather than a single date.
+## Sources checked
 
-**Graph citations** · [1](<https://www.loc.gov/exhibits/african/afam009.html>), [2](<https://www.loc.gov/collections/songs-of-america/articles-and-essays/historical-topics/immigration-and-migration/>), [3](<https://www.smithsonianmag.com/history/long-lasting-legacy-great-migration-180960118/>)
+- [Library of Congress, The Great Migration](https://www.loc.gov/classroom-materials/great-migration/) — Defines the broad migration from the 1910s through 1970 and its transformation of U.S. society.
+- [Library of Congress, Immigration and Migration: Songs of America](https://www.loc.gov/collections/songs-of-america/articles-and-essays/historical-topics/immigration-and-migration/) — Specifically connects African American migration to wider circulation of gospel and blues and to musical innovation in northern and western cities.
+- [U.S. Census Bureau, The Great Migration 1910–1970](https://www.census.gov/library/visualizations/time-series/demo/the-great-migration.html) — Distinguishes the first and second migration waves across 1910–1970.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+The decade-spanning period and multi-wave framing are supported. Music effects were diverse and city-specific; retain “reshapes” as broad historical interpretation, not as a single causal claim.

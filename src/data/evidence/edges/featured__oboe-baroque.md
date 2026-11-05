@@ -2,10 +2,10 @@
 
 Graph ID `featured:oboe-baroque`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://www.metmuseum.org/art/collection/search/501504>)
+**Finding** · The Met’s historical oboe record supports the instrument’s period history, but this review did not find a direct statement tying this specific source to the Baroque genre relationship. Retain medium pending repertoire-level corroboration.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [The Met collection record](https://www.metmuseum.org/art/collection/search/501504).

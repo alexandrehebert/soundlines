@@ -2,14 +2,15 @@
 
 Graph ID `event:lp-introduced`
 
-**Review status** · Launch date and scope cross-checked
+**Review status** · reviewed
 
-**Graph period** · 1948 (year)
+**Reviewed** · 2026-11-04
 
-## Evidence review
+## Sources checked
 
-Library of Congress archivists examined Columbia’s original pressing and label paperwork. It identifies the Mendelssohn Violin Concerto as the first 12-inch LP and documents two 10-inch releases prepared for June 1948 distribution. The archive corroborates the year in the existing chronology and broadens the account to cover both sizes. [Archive evidence](https://blogs.loc.gov/now-see-hear/2019/04/inside-the-archival-box-the-first-long-playing-disc/)
+- [Library of Congress, Inside the Archival Box: The First Long-Playing Disc](https://blogs.loc.gov/now-see-hear/2019/04/inside-the-archival-box-the-first-long-playing-disc/) — Dates Columbia’s 33⅓ rpm microgroove LP release to June 1948 and notes 10- and 12-inch formats.
+- [Library of Congress finding aid, Columbia Records paperwork](https://findingaids.loc.gov/repositories/11/resources/795) — Confirms CBS introduced the 33⅓ rpm microgroove LP in 1948.
 
-**Graph citations** · [1](<https://www.loc.gov/programs/national-recording-preservation-plan/tools-and-resources/historical-background/timeline/>), [2](<https://blogs.loc.gov/now-see-hear/2019/04/inside-the-archival-box-the-first-long-playing-disc/>)
+## Assessment
 
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 1 unsuccessful, 0 pending.
+The 1948 introduction is confirmed. Longer playing time expanded album programming, though the format’s adoption and repertoire changes occurred over time; avoid implying all complete works immediately moved to LP.

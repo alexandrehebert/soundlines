@@ -2,10 +2,14 @@
 
 Graph ID `signed:justice-ed-banger-records`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · signed_to · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Justice_(band)>), [2](<https://www.allmusic.com/artist/justice-mn0000648106>)
+**Graph citations** · [1](<https://www.lemonde.fr/en/m-le-mag/article/2024/04/06/justice-s-new-quest_6667576_117.html>)
 
 **Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+
+## Source check (2026-11-05)
+
+Le Monde reports Pedro Winter signed Justice to Ed Banger in 2003.

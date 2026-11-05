@@ -2,10 +2,10 @@
 
 Graph ID `anthem:gasolina-reggaeton-daddy-yankee`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Gasolina_(song)>), [2](<https://en.wikipedia.org/wiki/reggaeton>)
+**Findings** · LOC calls “Gasolina” the song that started the reggaeton revolution, says its sound became characteristic of mid-2000s reggaeton, and calls it a party anthem. Strong genre and anthem evidence.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://blogs.loc.gov/now-see-hear/2024/09/gasolina/)

@@ -2,12 +2,16 @@
 
 Graph ID `origin:label-chess-records-chicago`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · Label headquarters/founding location; this does not imply every artist on its roster came from the city.
+**Graph note** · Chess Records’ official site calls the label Chicago-based and identifies its establishment in 1950; directly supports the Chicago association.
 
-**Graph citations** · [1](<https://www.chessrecords.com/history/>), [2](<https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/chess-records>)
+**Graph citations** · [1](<https://www.chessrecords.com/>)
 
 **Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+## Source check (2026-11-05)
+
+Chess Records’ official site calls the label Chicago-based and identifies its establishment in 1950; directly supports the Chicago association.

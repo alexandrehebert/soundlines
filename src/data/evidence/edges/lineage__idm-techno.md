@@ -1,13 +1,7 @@
-# IDM / intelligent dance music → Techno
+# Removed edge: lineage:idm-techno
 
-Graph ID `lineage:idm-techno`
+Removed 2026-11-05: checked sources do not establish IDM as a direct fusion of techno and another genre. Techno influence may be documented separately where artist-specific. AllMusic describes IDM as emerging from a fusion of hard-edged rave-floor dance music and downtempo chill-out music; it does not identify techno as a direct co-parent. Techno influence is plausible for parts of IDM, but a categorical fusion edge overstates the checked evidence.
 
-**Review status** · Pending source review
-
-**Relationship** · fusion_of · high
-
-**Graph note** · “Intelligent” is a historical marketing label, not a value judgement.
-
-**Graph citations** · [1](<https://www.allmusic.com/genre/idm-ma0000004477>), [2](<https://academic.oup.com/book/44623/chapter-abstract/378621525>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+Sources checked:
+- https://www.allmusic.com/subgenre/idm-ma0000004477
+- https://spectrum.library.concordia.ca/id/eprint/977861/

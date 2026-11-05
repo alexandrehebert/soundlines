@@ -1,11 +1,11 @@
-# Violin → Country
+# Violin Country
 
 Graph ID `featured:violin-country`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Violin>)
+**Finding** · Country Music Hall of Fame identifies fiddle as a principal country instrument and documents prominent country fiddlers; fiddle is colloquial violin.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://countrymusichalloffame.org/learn/family-and-community-resources/history-of-country-music-instruments](https://countrymusichalloffame.org/learn/family-and-community-resources/history-of-country-music-instruments).

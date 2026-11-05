@@ -2,10 +2,10 @@
 
 Graph ID `founded:mogwai-rock-action`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · founded · medium
+**Relationship** · founded · high
 
-**Graph citations** · [1](<https://rockactionrecords.com/about>)
+**Finding** · Label history says Mogwai created Rock Action to issue its first Tuner/Lower 7-inch, released in March 1996; it also states Mogwai owns and runs the label.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://rockaction.scot/pages/the-story](https://rockaction.scot/pages/the-story).

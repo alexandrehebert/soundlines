@@ -1,11 +1,14 @@
-# Marley Marl → Pete Rock
+# influence:marley-marl-pete-rock
 
 Graph ID `influence:marley-marl-pete-rock`
 
-**Review status** · Pending source review
+**Review status** · Source and direction checked (2026-11-05)
 
-**Relationship** · influences · unrated
+**Relationship** · influences · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Marley_Marl>), [2](<https://www.redbullmusicacademy.com/lectures/marley-marl-tokyo-2014>)
+**Finding** · Pete Rock explicitly confirms Marley Marl influenced him and discusses the impact of Marl’s sampling technique. Marley’s lecture independently documents their early radio connection. Direct artist testimony.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://magazine.waxpoetics.com/article/pete-rock-primary-colors/
+- https://www.redbullmusicacademy.com/lectures/marley-marl-tokyo-2014/

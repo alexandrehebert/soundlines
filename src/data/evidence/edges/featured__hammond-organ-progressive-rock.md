@@ -2,10 +2,10 @@
 
 Graph ID `featured:hammond-organ-progressive-rock`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Hammond_organ>)
+**Findings** · A University of Huddersfield thesis analyzes keyboard roles in progressive rock and identifies organ as a mainstay keyboard; the Rock Hall documents Keith Emerson’s organ-centered sound.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://eprints.hud.ac.uk/id/eprint/34986/) · [2](https://library.rockhall.com/progressive_rock)

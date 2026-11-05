@@ -2,10 +2,18 @@
 
 Graph ID `shaped:beatles-ed-sullivan-rock`
 
-**Review status** · Pending source review
+**Review status** · reviewed — relationship evidence cross-checked
 
-**Relationship** · shaped · unrated
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.loc.gov/item/ihas.200196441/>)
+**Relationship** · shaped · medium
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Sources checked
+
+- [loc.gov](https://www.loc.gov/item/ihas.200196441/) — checked for the event and the claimed contribution to the linked tradition.
+- [edsullivan.com](https://www.edsullivan.com/timeline/the-beatles-first-appearance/) — checked for the event and the claimed contribution to the linked tradition.
+- [apnews.com](https://apnews.com/article/897ee8d8244071e0bc8178591b0c2813) — checked for the event and the claimed contribution to the linked tradition.
+
+## Assessment
+
+Sources support this event as a documented landmark in the linked tradition; the wording does not claim it was the sole origin or cause.

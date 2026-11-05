@@ -2,10 +2,10 @@
 
 Graph ID `recorded:hoochie-coochie-man-muddy-waters`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Hoochie_Coochie_Man>)
+**Findings** · The Chess session/label catalog lists Muddy Waters’s “I’m Your Hoochie Cooche Man” on Chess 1560, recorded Jan. 7, 1954 (Clemson Chess discography); LOC lists the 1954 recording among Registry selections (LOC).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://campber.people.clemson.edu/chess2.html) · [2](https://loc.gov/loc/lcib/0504/piano.html)

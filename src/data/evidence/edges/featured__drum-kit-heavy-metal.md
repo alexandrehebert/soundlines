@@ -2,10 +2,10 @@
 
 Graph ID `featured:drum-kit-heavy-metal`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Drum_kit>)
+**Findings** · Oxford research discusses metal-specific drum patterns; peer-reviewed production study addresses metal’s drum and percussion sound. The drum kit is part of the genre’s rhythm section, though distorted electric guitar—not drums alone—is the genre’s defining timbre.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://academic.oup.com/book/62310?searchresult=1) · [2](https://doi.org/10.1080/19401159.2022.2109358)

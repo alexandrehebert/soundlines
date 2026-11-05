@@ -1,13 +1,15 @@
-# Tango → Latin music
+# lineage:tango-latin
 
 Graph ID `lineage:tango-latin`
 
-**Review status** · Pending source review
+**Review status** · Taxonomic hierarchy checked (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Relationship** · subgenre_of · low
 
-**Graph note** · Broad catalogue classification for navigation; tango remains a Río de la Plata tradition with its own history.
+**Finding** · Tango is a Río de la Plata music-and-dance tradition, often grouped under Latin music catalogs, but it has an independent regional history and distinct genre identity. The broad parent is catalog convenience; low-medium.
 
-**Graph citations** · [1](<https://www.allmusic.com/style/tango-ma0000002891>), [2](<https://www.allmusic.com/genre/latin-ma0000002692>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+- https://ich.unesco.org/en/RL/tango-00258
+- https://www.allmusic.com/style/tango-ma0000002891
+- https://www.allmusic.com/genre/latin-ma0000002692

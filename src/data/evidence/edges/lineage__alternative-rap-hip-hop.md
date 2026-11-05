@@ -2,10 +2,10 @@
 
 Graph ID `lineage:alternative-rap-hip-hop`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · subgenre_of · medium
+**Relationship** · subgenre_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/alternative-rap-ma0000012203>)
+**Findings** · DDEX defines Alternative Rap as a boundary-crossing form of HipHop and explicitly lists HipHop as its parent; AllMusic likewise describes alternative rap groups as hip-hop groups.;
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://service.ddex.net/dd/DD-AVS-CURRENT/dd/ddex_AlternativeRap.html) · [2](https://www.allmusic.com/subgenre/alternative-rap-ma0000012203)

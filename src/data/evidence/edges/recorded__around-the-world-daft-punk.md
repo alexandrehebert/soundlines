@@ -1,11 +1,11 @@
-# Around the World → Daft Punk
+# Daft Punk recorded “Around the World”
 
 Graph ID `recorded:around-the-world-daft-punk`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Around_the_World_(Daft_Punk_song)>)
+**Finding** · Official page lists the song on *Homework* and states the album was recorded by Daft Punk.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://daftpunk.com/homework/](https://daftpunk.com/homework/).

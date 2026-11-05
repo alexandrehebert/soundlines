@@ -1,13 +1,14 @@
-# Electro house → House
+# lineage:electro-house-house
 
 Graph ID `lineage:electro-house-house`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
-**Relationship** · fusion_of · medium
+**Relationship** · subgenre_of · high
 
-**Graph note** · AllMusic describes electro house as a blend of house drum patterns and electro synth timbres.
+**Finding** · House is the clear parent tradition: a sociology study explicitly lists electro house as a house subgenre. The `fusion_of` edge captures house as an ingredient but `subgenre_of` would be taxonomically more exact if the graph permits one relation per pair.
 
-**Graph citations** · [1](<https://www.allmusic.com/album/dirty-electro-house-mw0001174015>)
+**Sources checked**
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://onlinelibrary.wiley.com/doi/10.1111/1468-4446.12726
+- https://monami.hs-mittweida.de/frontdoor/index/index/docId/960

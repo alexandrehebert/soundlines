@@ -1,11 +1,11 @@
-# Double bass → Bluegrass
+# Double Bass Bluegrass
 
 Graph ID `featured:double-bass-bluegrass`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Double_bass>)
+**Finding** · Bluegrass Music Hall of Fame documents Jake Tullock as an early bluegrass string-bass player; direct genre/instrument support.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://www.bluegrasshall.org/inductees/jake-tullock/](https://www.bluegrasshall.org/inductees/jake-tullock/).

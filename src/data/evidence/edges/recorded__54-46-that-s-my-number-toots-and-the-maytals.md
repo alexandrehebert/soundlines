@@ -1,11 +1,11 @@
-# 54-46 That's My Number → Toots & the Maytals
+# Toots and the Maytals recorded “54-46 (That’s My Number)”
 
 Graph ID `recorded:54-46-that-s-my-number-toots-and-the-maytals`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/54-46_That's_My_Number>)
+**Finding** · Observer identifies the 1968 Beverly’s vinyl release as by Toots and the Maytals; artist biography corroborates their recorded repertoire, though it does not name this song.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [https://www.jamaicaobserver.com/2026/02/10/toots-maytals-strike-gold-new-zealand-54-46/](https://www.jamaicaobserver.com/2026/02/10/toots-maytals-strike-gold-new-zealand-54-46/); [https://www.tootsandthemaytals.net/biography/](https://www.tootsandthemaytals.net/biography/).

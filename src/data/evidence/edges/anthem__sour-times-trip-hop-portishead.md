@@ -1,11 +1,15 @@
-# Sour Times → Trip-hop
+# anthem:sour-times-trip-hop-portishead
 
 Graph ID `anthem:sour-times-trip-hop-portishead`
 
-**Review status** · Pending source review
+**Review status** · Source checked; caveats retained (2026-11-05)
 
 **Relationship** · anthem_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Sour_Times>), [2](<https://en.wikipedia.org/wiki/trip_hop>)
+**Finding** · Official label and chart records establish the Portishead recording; *Dummy* is firmly situated in trip-hop, with the track central to the album’s identity. The genre association is reliable, but checked material more clearly supports classic/representative track status than an explicit trip-hop anthem claim. Medium is appropriate.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://shop.portishead.co.uk/collections/frontpage/products/dummy-cd
+- https://www.officialcharts.com/songs/portishead-sour-times/
+- https://www.allmusic.com/album/dummy-mw0000116740

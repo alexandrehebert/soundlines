@@ -2,10 +2,10 @@
 
 Graph ID `recorded:electric-relaxation-a-tribe-called-quest`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Electric_Relaxation>)
+**Finding** · Track listing directly credits A Tribe Called Quest and places the song on *Midnight Marauders*.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://music.apple.com/us/song/266768672](https://music.apple.com/us/song/266768672).

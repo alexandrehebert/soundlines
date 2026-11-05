@@ -2,10 +2,10 @@
 
 Graph ID `featured:electric-guitar-mbalax`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · unrated
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://www.britannica.com/biography/Youssou-NDour>)
+**Finding** · The thesis describes mbalax’s modernized Senegalese rhythms being rendered with electric keyboard and guitar alongside sabar and tama; direct support.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://repository.up.ac.za/bitstream/handle/2263/22921/Complete.pdf?sequence=7](https://repository.up.ac.za/bitstream/handle/2263/22921/Complete.pdf?sequence=7).

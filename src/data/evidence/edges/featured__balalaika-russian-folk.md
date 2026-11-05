@@ -2,10 +2,10 @@
 
 Graph ID `featured:balalaika-russian-folk`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://collection.powerhouse.com.au/object/319134>)
+**Finding** · Powerhouse Collection describes this balalaika as a traditional Russian instrument and documents its use in Russian folk songs. This directly supports the association.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [Powerhouse Collection](https://collection.powerhouse.com.au/object/319134).

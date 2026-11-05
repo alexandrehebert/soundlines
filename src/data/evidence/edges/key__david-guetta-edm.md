@@ -2,10 +2,12 @@
 
 Graph ID `key:david-guetta-edm`
 
-**Review status** · Pending source review
+**Reviewed** · 2026-11-04
 
-**Relationship** · key_artist_of · unrated
+## Sources checked
+- [Sound On Sound profile](https://www.soundonsound.com/people/david-guetta) — describes Guetta as bringing EDM from underground to the mainstream.
+- [Insomniac artist profile](https://www.insomniac.com/music/artists/david-guetta/) — describes his large-scale electronic dance career.
+- [Recording Academy artist page](https://www.grammy.com/artists/david-guetta/12848/) — corroborates his dance/electronic recording work and recognition.
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/David_Guetta>), [2](<https://www.allmusic.com/artist/david-guetta-mn0000213561>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+High confidence for his major role in mainstream EDM.

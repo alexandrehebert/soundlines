@@ -2,10 +2,10 @@
 
 Graph ID `key:a-tribe-called-quest-jazz-rap`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/style/jazz-rap-ma0000012180/artists>)
+**Finding** · Direct: describes The Low End Theory as the definitive record of jazz and rap fusion and identifies A Tribe Called Quest (article text, “The Low End Theory”).
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.loc.gov/static/portals/about/documents/gazette/15_Gazette_041522_web.pdf](https://www.loc.gov/static/portals/about/documents/gazette/15_Gazette_041522_web.pdf).

@@ -1,11 +1,11 @@
-# Electric guitar → Punk rock
+# Electric Guitar Punk Rock
 
 Graph ID `featured:electric-guitar-punk-rock`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Electric_guitar>)
+**Finding** · Rock Hall connects Link Wray’s distorted electric-guitar sound and power chords with punk’s foundations.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Source** · [https://rockhall.com/inductees/link-wray/](https://rockhall.com/inductees/link-wray/).

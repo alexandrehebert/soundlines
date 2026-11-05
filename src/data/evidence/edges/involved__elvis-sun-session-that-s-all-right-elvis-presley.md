@@ -2,10 +2,15 @@
 
 Graph ID `involved:elvis-sun-session-that-s-all-right-elvis-presley`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — cross-checked against the reviewed event record
 
-**Relationship** · involved · unrated
+**Relationship** · involved · high
 
 **Graph citations** · [1](<https://www.memphismusichalloffame.com/inductee/elvis-presley/>)
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+
+**Reviewed** · 2026-11-04
+
+## Assessment
+
+The graph cites sources that identify That's All Right (Mama) as directly participating in or belonging to “Elvis Presley records at Sun Studio.” The participant/association is supported at high confidence.

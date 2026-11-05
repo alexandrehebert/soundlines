@@ -2,10 +2,10 @@
 
 Graph ID `founded:dj-minx-women-on-wax-label`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · founded · high
 
-**Graph citations** · [1](<https://womenonwax.com/catalogue/>), [2](<https://ra.co/labels/7463>), [3](<https://www.insomniac.com/music/artists/dj-minx/>)
+**Finding** · Label’s own catalogue says Women on Wax Recordings launched in 2001 by DJ Minx; Insomniac also says she established it as her own label in 2001.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://womenonwax.com/catalogue/](https://womenonwax.com/catalogue/); [https://www.insomniac.com/music/artists/dj-minx/](https://www.insomniac.com/music/artists/dj-minx/).

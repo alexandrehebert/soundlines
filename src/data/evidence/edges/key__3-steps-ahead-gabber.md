@@ -1,0 +1,13 @@
+# 3 Steps Ahead → Gabber
+
+Graph ID `key:3-steps-ahead-gabber`
+
+**Review status** · Reviewed — 3 Steps Ahead in gabber confirmed
+**Reviewed** · 2026-11-03
+
+## Sources checked
+- [The Guardian (2019)](https://www.theguardian.com/music/2019/oct/30/thunderdome-the-dutch-rave-with-the-worlds-fastest-hardest-music) — “Drop It” a cult hit.
+- Wikipedia (kept).
+
+## Assessment
+Medium confidence is kept.

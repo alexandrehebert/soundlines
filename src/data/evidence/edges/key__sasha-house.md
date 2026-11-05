@@ -1,11 +1,14 @@
-# Sasha → House
+# key:sasha-house
 
 Graph ID `key:sasha-house`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and style/period fit checked (2026-11-05)
 
-**Relationship** · key_artist_of · unrated
+**Relationship** · key_artist_of · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Sasha_(DJ)>), [2](<https://www.allmusic.com/artist/sasha-mn0002141576>)
+**Finding** · Sasha is firmly rooted in house and club culture, but progressive house and trance are more discriminating career descriptors. Broad house is valid but less informative; medium.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/artist/sasha-mn0002141576
+- https://www.allmusic.com/style/house-ma0000002659

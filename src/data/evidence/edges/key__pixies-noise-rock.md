@@ -1,11 +1,15 @@
-# Pixies → Noise rock
+# key:pixies-noise-rock
 
 Graph ID `key:pixies-noise-rock`
 
-**Review status** · Pending source review
+**Review status** · Artist centrality and genre fit checked (2026-11-05)
 
 **Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/noise-rock-ma0000004455>), [2](<https://academic.oup.com/book/6294>), [3](<https://en.wikipedia.org/wiki/Pixies_(band)>)
+**Finding** · The band’s abrasive guitar textures and experimental recording are compatible with noise rock, and the graph’s sources link the band’s sonic innovations to the style. Noise rock is a secondary lens rather than their principal classification; keep medium.
 
-**Citation retrieval** · 0 bulk responses, 1 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/genre/noise-rock-ma0000004455
+- https://academic.oup.com/book/6294
+- https://www.allmusic.com/artist/pixies-mn0000895136

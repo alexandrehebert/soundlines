@@ -1,11 +1,14 @@
-# Post-punk → Alternative rock
+# lineage:post-punk-alternative
 
 Graph ID `lineage:post-punk-alternative`
 
-**Review status** · Pending source review
+**Review status** · Influence/direction and evidence checked (2026-11-05)
 
 **Relationship** · influences · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Alternative_rock>)
+**Finding** · Post-punk is documented as a formative strand for later alternative/indie rock, especially through scenes and bands. “Alternative rock” is a broad umbrella that can itself include post-punk; medium and a non-exclusive lineage caveat are appropriate.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://academic.oup.com/edinburgh-scholarship-online/book/56671/chapter-abstract/453351344
+- https://www.masterclass.com/articles/post-punk-music-guide

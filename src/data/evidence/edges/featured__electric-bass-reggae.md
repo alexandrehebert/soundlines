@@ -1,11 +1,11 @@
-# Electric bass → Reggae
+# Electric Bass Reggae
 
 Graph ID `featured:electric-bass-reggae`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · featured_in · medium
+**Relationship** · featured_in · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Bass_guitar>)
+**Finding** · LOC music history directly discusses reggae’s thick bass tone and the adoption of electric bass in Jamaican styles.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/93/41/2020719341/2020719341.pdf](https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/93/41/2020719341/2020719341.pdf).

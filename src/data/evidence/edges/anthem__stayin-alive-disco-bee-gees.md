@@ -1,11 +1,16 @@
-# Stayin' Alive → Disco
+# anthem:stayin-alive-disco-bee-gees
 
 Graph ID `anthem:stayin-alive-disco-bee-gees`
 
-**Review status** · Pending source review
+**Review status** · Source checked; caveats retained (2026-11-05)
 
-**Relationship** · anthem_of · medium
+**Relationship** · anthem_of · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Stayin'_Alive>), [2](<https://en.wikipedia.org/wiki/disco>)
+**Finding** · Sources verify the Bee Gees recording and *Saturday Night Fever* context, document major cultural impact, and credit the film/song with helping bring disco into the mainstream. High is justified.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.nfsa.gov.au/collection/item/stayin-alive-bee-gees
+- https://www.loc.gov/item/95781649/
+- https://www.loc.gov/static/programs/national-recording-preservation-board/documents/SatNightFever.pdf
+- https://www.beegees.com/releases-archive/saturday-night-fever/

@@ -2,10 +2,10 @@
 
 Graph ID `recorded:cars-gary-numan`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
-**Relationship** · recorded_by · medium
+**Relationship** · recorded_by · high
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Cars_(song)>)
+**Finding** · Direct release listing identifies “Cars” by Gary Numan.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.officialcharts.com/songs/gary-numan-cars/](https://www.officialcharts.com/songs/gary-numan-cars/).

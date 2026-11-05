@@ -2,10 +2,10 @@
 
 Graph ID `featured:bansuri-hindustani-classical`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://folkways.si.edu/hariprasad-zakir-hussain/venu/world/music/album/smithsonian>)
+**Finding** · Smithsonian Folkways identifies the bansuri in a classical Indian instrumental album by Hariprasad Chaurasia. Album context supports the association, though the catalog metadata does not explicitly name Hindustani classical.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [Smithsonian Folkways](https://folkways.si.edu/hariprasad-zakir-hussain/venu/world/music/album/smithsonian).

@@ -2,12 +2,10 @@
 
 Graph ID `origin:artist-daft-punk-paris`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · medium
+**Relationship** · originated_in · high
 
-**Graph note** · The duo formed in Paris; French Touch networks also linked the capital with Versailles.
+**Findings** · Sony Music France calls Daft Punk a Paris-origin group; Universal calls them a Parisian duo founded in 1993: Sony Music France, Universal Music France.
 
-**Graph citations** · [1](<https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en>)
-
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+**Sources** · [1](https://www.sonymusic.fr/artist/daft-punk/) · [2](https://universalmusic.fr/artistes/20000251367)

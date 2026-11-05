@@ -2,12 +2,15 @@
 
 Graph ID `event:eroica-premiere`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1805 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Beethoven’s Symphony No. 3, the Eroica, was first performed privately in 1804 and publicly in Vienna in 1805; it enlarged the scale and expressive ambitions of the symphony.
+## Sources checked
 
-**Graph citations** · [1](<https://www.beethoven.de/en/work/view/5130000000000/Symphony+No.+3+in+E-flat+major+op.+55>)
+- [Eastman School of Music, Beethoven Symphony Basics: Symphony No. 3](https://www.esm.rochester.edu/beethoven/symphony-no-3/) — Distinguishes a private performance in 1804 from the public performance on 7 April 1805.
+- [Boston Symphony Orchestra, Beethoven: The Nine Symphonies](https://www.bso.org/works/beethoven-the-nine-symphonies) — Confirms private performances in 1804 and first public performance on 7 April 1805.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The public premiere date is 7 April 1805; a private performance occurred in 1804. As this node represents a public premiere, set the period to 1805 and retain both in the description.

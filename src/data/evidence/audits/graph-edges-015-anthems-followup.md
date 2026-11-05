@@ -1,0 +1,14 @@
+# Anthem batch 015 follow-up (2026-11-05)
+
+| Graph ID | Verdict | Confidence | Findings |
+|---|---|---|---|
+| `anthem:gimme-shelter-rock-rolling-stones` | source checked | medium | Rock & Roll Hall of Fame lists “Gimme Shelter” among the Stones’ signature tracks and describes it as an anthem of youthful rebellion; ABKCO confirms its placement on *Let It Bleed*. The rock association follows its album/band context, but the checked sources do not supply a narrow track-level genre taxonomy; medium reflects that scope. [1](https://rockhall.com/inductees/rolling-stones/) [2](https://www.abkco.com/store/let-bleed-vinyl/) |
+| `anthem:inner-city-life-jungle` | source checked | medium | DJ Mag identifies “Inner City Life” as Goldie’s 1994 single and calls it an iconic drum-and-bass track instrumental in the scene’s mainstream breakthrough; London Records confirms its place on *Timeless*. Because the graph’s jungle node overlaps with early drum and bass, retain medium and explain the period terminology rather than imply the labels are identical. [1](https://djmag.com/watch/goldie-inner-city-life-making-of-drum-bass-classic) [2](https://londonrecords.co.uk/artists/goldie/) [3](https://www.officialcharts.com/songs/goldie-presents-metalheads-inner-city-life/) |
+| `anthem:just-like-heaven-alternative-rock-the-cure` | source checked | medium | The Cure’s official archive confirms the 1987 single and versions. RockLists reports extensive radio-canon placements and ranks it among alternative songs of 1987 and all time; AllMusic calls it an undisputed 1980s classic. Alternative-rock classification is supported as a broad retrospective taxonomy, and classic status is clearer than literal community-anthem language; keep medium. [1](https://www.thecure.com/release/just-like-heaven/) [2](https://www.rocklists.com/artists/the-cure/just-like-heaven/) [3](https://www.allmusic.com/song/just-like-heaven-mt0007008319) |
+| `anthem:head-like-a-hole-industrial-metal-nine-inch-nails` | genre supported; anthem unresolved | low | NIN discography verifies release; AllMusic genre indexing calls it industrial metal/cult favorite but does not establish anthem status. Remains pending. |
+
+
+### Additional follow-up (2026-11-05)
+
+- `anthem:head-like-a-hole-industrial-metal-nine-inch-nails` — upgraded from low/pending to medium/source checked. Rolling Stone explicitly calls it an enduring resistance anthem and an Eighties shock-rock anthem; AllMusic supplies the industrial-metal category support.
+- `anthem:police-and-thieves-reggae-junior-murvin` — corrected the performer-qualified track ID and upgraded to high/source checked. VP Records identifies the 1976 original as Junior Murvin’s and calls it a reggae anthem. The graph now distinguishes Murvin as performer from Lee “Scratch” Perry as producer, and adds the supported `recorded_by` edge.

@@ -1,11 +1,8 @@
-# Sekar djepun → Gamelan
+# Removed edge: anthem:sekar-djepun-gamelan-gamelan-sekar-tunjung
 
-Graph ID `anthem:sekar-djepun-gamelan-gamelan-sekar-tunjung`
+Removed 2026-11-05. Smithsonian catalogs `Sekar djepun` (also rendered `Sekar Jepun`) performed by Gong Kebyar of Peliatan. This supports the exact track and gamelan tradition, but no checked source calls it an anthem or establishes canonical status. Keep only as a low, interpretive edge or remove.
 
-**Review status** · Pending source review
+**Sources checked**
 
-**Relationship** · anthem_of · medium
-
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Sekar_djepun>), [2](<https://en.wikipedia.org/wiki/gamelan>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+- https://folkways.si.edu/gong-kebyar-of-peliatan/sekar-jepun/music/track/smithsonian
+- https://folkways.si.edu/bali-court-music-and-banjar-music/world/music/album/smithsonian

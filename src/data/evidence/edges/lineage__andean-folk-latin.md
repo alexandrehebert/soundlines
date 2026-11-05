@@ -2,12 +2,10 @@
 
 Graph ID `lineage:andean-folk-latin`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
 **Relationship** · subgenre_of · medium
 
-**Graph note** · Broad browsing classification only; the Latin umbrella does not imply a shared origin or erase regional and Indigenous distinctions.
+**Findings** · The Library of Congress groups Andean music collections from Peru, Colombia, Ecuador, Chile, Argentina and Bolivia, supporting Latin as a broad regional/linguistic umbrella. This is not a narrow stylistic parent relation; preserve the regional and Indigenous diversity of Andean traditions.;
 
-**Graph citations** · [1](<https://www.allmusic.com/style/andean-folk-ma0000002426>), [2](<https://www.allmusic.com/genre/latin-ma0000002692>)
-
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+**Sources** · [1](https://guides.loc.gov/indigenous-andes-folklife/music) · [2](https://service.ddex.net/dd/DD-AVS-CURRENT/dd/ddex_Latin.html)

@@ -2,10 +2,10 @@
 
 Graph ID `featured:theremin-modern-classical`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Theremin>)
+**Finding** · Oxford documents original/adapted recital works by Messiaen, Milhaud, and Rachmaninoff and theremin works by composers, supporting use in modern art-music contexts. Medium reflects the genre label’s breadth.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [https://www.ertegun.ox.ac.uk/article/afternoon-music-theremin-ondes-martenot-and-piano](https://www.ertegun.ox.ac.uk/article/afternoon-music-theremin-ondes-martenot-and-piano).

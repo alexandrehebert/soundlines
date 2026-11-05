@@ -2,10 +2,10 @@
 
 Graph ID `origin:algerian-chaabi-algiers`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · originated_in · unrated
+**Relationship** · originated_in · high
 
-**Graph citations** · [1](<https://www.npr.org/2008/08/11/93502483/chaabi-the-peoples-music-of-north-africa>), [2](<https://en.wikipedia.org/wiki/Chaabi_(Algeria)>)
+**Findings** · Algeria’s embassy account says chaabi was born in Algiers’ working-class neighborhoods in the first half of the 20th century: Algerian Embassy in Croatia.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources** · [1](https://www.ambalgzagreb.com/algerian-music/)

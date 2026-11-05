@@ -1,13 +1,15 @@
-# Electroclash → Electro
+# lineage:electroclash-electro
 
 Graph ID `lineage:electroclash-electro`
 
-**Review status** · Pending source review
+**Review status** · Component relation and source checked (2026-11-05)
 
 **Relationship** · fusion_of · high
 
-**Graph note** · Scene label and musical description overlap but are not identical.
+**Finding** · Electroclash drew on Detroit electro and related electronic dance styles while combining them with new wave, punk and synth-pop. Strong as one component, not a complete account of the genre.
 
-**Graph citations** · [1](<https://www.allmusic.com/artist/miss-kittin-mn0000497290>), [2](<https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/genre-classification-in-electronic-dance-music-culture/03A42C982EE299F9C666D757DDB24AD1>)
+**Sources checked**
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- https://spectrum.library.concordia.ca/id/eprint/977861/
+- https://ra.co/features/4493
+- https://reverb.com/news/a-not-so-brief-history-of-electro

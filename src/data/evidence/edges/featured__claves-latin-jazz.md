@@ -2,10 +2,10 @@
 
 Graph ID `featured:claves-latin-jazz`
 
-**Review status** · Pending source review
+**Review status** · Source-checked
 
 **Relationship** · featured_in · medium
 
-**Graph citations** · [1](<https://americanhistory.si.edu/explore/projects/smithsonian-jazz/collections-and-archives/latin-jazz/glossary>)
+**Finding** · Smithsonian Folkways classifies the anthology as Latin jazz and lists “Clave” among the instruments in this collection. This supports occurrence in the genre, not prevalence in every Latin jazz ensemble.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Source** · [Smithsonian Folkways, Latin Jazz: La Combinación Perfecta](<https://folkways.si.edu/latin-jazz-la-combinacion-perfecta/ragtime-latin-world/music/album/smithsonian>).

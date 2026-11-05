@@ -1,11 +1,15 @@
-# Lee “Scratch” Perry → Reggae
+# key:lee-scratch-perry-reggae
 
 Graph ID `key:lee-scratch-perry-reggae`
 
-**Review status** · Pending source review
+**Review status** · Source checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/reggae-ma0000002820>)
+**Finding** · Perry was a major reggae producer, singer and songwriter before and alongside his dub innovations; Jamaican and label sources document his pivotal reggae production work.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://jis.gov.jm/jamaica/legendary-reggae-music-born-in-jamaica/
+- https://www.vprecords.com/artist/lee-scratch-perry/
+- https://www.reggaecollector.com/feature/artist.php?artist_id=613

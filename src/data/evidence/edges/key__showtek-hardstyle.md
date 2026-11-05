@@ -2,12 +2,8 @@
 
 Graph ID `key:showtek-hardstyle`
 
-**Review status** · Reviewed — Showtek’s 2000s hardstyle role supported
-**Reviewed** · 2026-11-03
+**Review status** · Source-checked; high confidence
 
-## Sources checked
-- [Hard News (2023)](https://hardnews.nl/en/showtek-back-at-qlimax-after-15-years-expect-new-remixes-and-edits/) — Qlimax return after 15 years.
-- [We Rave You (2023)](https://weraveyou.com/2023/11/showtek-dear-hardstyle/) — return to hardstyle.
+**Finding** · AllMusic says the duo has worked in hardstyle; Hardstyle.com documents a dedicated hardstyle album release.
 
-## Assessment
-Their main hardstyle years were in the 2000s, before the EDM crossover. Medium confidence is kept.
+**Source** · [https://www.allmusic.com/artist/showtek-mn0000440831; https://hardstyle.com/en/news/showtek-releases-long-awaited-hardstyle-album-360-blue](https://www.allmusic.com/artist/showtek-mn0000440831; https://hardstyle.com/en/news/showtek-releases-long-awaited-hardstyle-album-360-blue)

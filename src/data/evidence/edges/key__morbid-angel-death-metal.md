@@ -1,11 +1,15 @@
-# Morbid Angel → Death metal
+# key:morbid-angel-death-metal
 
 Graph ID `key:morbid-angel-death-metal`
 
-**Review status** · Pending source review
+**Review status** · Centrality and genre fit checked (2026-11-05)
 
-**Relationship** · key_artist_of · medium
+**Relationship** · key_artist_of · high
 
-**Graph citations** · [1](<https://www.allmusic.com/genre/death-metal-ma0000002547>)
+**Finding** · Morbid Angel is consistently identified as a pioneering and defining Florida death-metal band. Strong genre-central fit.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+**Sources checked**
+
+- https://www.allmusic.com/artist/morbid-angel-mn0000599772
+- https://www.allmusic.com/genre/death-metal-ma0000002547
+- https://www.tampabay.com/life-culture/music/2023/03/03/tampa-death-metal-morbid-angel-obituary/
