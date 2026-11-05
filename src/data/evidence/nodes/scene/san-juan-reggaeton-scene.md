@@ -2,12 +2,16 @@
 
 Graph ID `scene:san-juan-reggaeton-scene`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1990 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A Puerto Rican urban music network that helped shape reggaeton, with roots in Jamaican dancehall, Panama and local styles.
+## Sources checked
 
-**Graph citations** · [1](<https://www.si.edu/object/reggaeton%3Anmahc_2016.40.1>)
+- [Duke University Press: *Remixing Reggaetón*](https://www.jstor.org/stable/j.ctv11hphs8) — Raquel Z. Rivera-Rideau traces the music’s transformation from San Juan’s marginalized neighborhoods into global pop.
+- [Popular Music and Society: “Oye mi canto”](https://www.tandfonline.com/doi/abs/10.1080/03007760802218046) — Philip Samponaro traces reggaetón from Panamanian origins through Puerto Rico and its wider Latino youth culture.
+- [Library of Congress: “Nación Reggaetón”](https://www.loc.gov/item/hlas-bi2013001267/) — Bibliographic annotation for an academic collection on Puerto Rican reggaetón and its cultural development.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+A Puerto Rican urban music network that helped shape reggaeton, with roots in Jamaican dancehall, Panama and local styles. Overall confidence: medium.

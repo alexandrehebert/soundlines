@@ -2,8 +2,16 @@
 
 Graph ID `scene:second-summer-of-love`
 
-**Review status** · Scene chronology checked
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-## Evidence review
+**Reviewed** · 2026-11-04
 
-London Museum’s badge catalog associates the name with 1988. The British Culture Archive documents the spread through British clubs, warehouse parties and temporary venues that summer. Phatmedia’s flyer selection documents the scene in both 1988 and 1989, including Sunrise events. Keep 1988–1989 as the range of the wider wave while acknowledging that sources use the name for 1988 specifically. [London Museum](https://www.londonmuseum.org.uk/collections/v/object-465798/badge-pin-badge/), [British Culture Archive](https://britishculturearchive.co.uk/acid-house/), [Phatmedia flyer selection](https://www.theransomnote.com/music/interviews/gone-to-a-rave-phatmedia-present-uk-rave-flyers-1988-1989/)
+## Sources checked
+
+- [Queen’s University Belfast: Acid house and the Home Office](https://pure.qub.ac.uk/en/activities/most-of-us-enjoy-a-good-party-acid-house-and-the-home-office/) — Research covers the 1988–90 acid-house and rave phenomenon and its political and legal context.
+- [Contemporary British History: Memory of acid house and rave](https://ueaeprints.uea.ac.uk/id/eprint/97031/) — Peer-reviewed article examines contested histories of UK rave from the late 1980s onward.
+- [British Culture Archive: Acid House](https://britishculturearchive.co.uk/acid-house/) — Archive account identifies Shoom and The Haçienda as distinct venues and 1988 as the Second Summer of Love.
+
+## Assessment
+
+A British acid house and rave wave that spread through clubs and warehouse parties in 1988 and continued into larger events in 1989. Overall confidence: high.

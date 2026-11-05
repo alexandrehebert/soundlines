@@ -2,12 +2,16 @@
 
 Graph ID `track:zombie-fela-kuti`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1976 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Zombie (1976), performed by Fela Kuti; representative recording of Afrobeat.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Zombie_(Fela_Kuti_song)>)
+- [Fela Kuti official product/catalog page](https://felakuti.com/us/products/142305-zombie-19761977) — Documents the politically consequential Zombie album and reissue catalog details.
+- [Apple Music album catalog](https://music.apple.com/us/album/zombie/559710299) — Dates the Zombie album to 1976.
+- [Associated Press historical report](https://apnews.com/article/9eacb46f0197a1bf8399716b45a60265) — Reports the song’s 1976 release and historical confrontation with military power.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The recording belongs to the 1976 album and the artist’s Africa 70 period. Afrobeat is high confidence; album-level attribution can be expanded to include Africa 70.

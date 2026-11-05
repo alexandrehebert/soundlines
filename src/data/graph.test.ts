@@ -481,6 +481,7 @@ describe('graph.json integrity', () => {
     ['artist:brian-eno', 'electronica'],
     ['artist:the-human-league', 'pop'],
     ['artist:women-on-wax', 'techno'],
+    ['artist:dune', 'techno'],
   ] as const)('places %s in the %s artist lane', (id, family) => {
     const model = createTimelineModel(buildIndex(graph), 'artist')
     expect(model.index.nodeById.get(id)?.family).toBe(family)

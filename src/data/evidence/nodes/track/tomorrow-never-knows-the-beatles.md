@@ -2,12 +2,16 @@
 
 Graph ID `track:tomorrow-never-knows-the-beatles`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1966 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Tomorrow Never Knows (1966), performed by The Beatles; representative recording of Psychedelic Rock.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Tomorrow_Never_Knows>)
+- [The Beatles official track catalog](https://www.thebeatles.com/tomorrow-never-knows) — Confirms 5 August 1966 release and that it was the first Revolver track recorded.
+- [The Beatles official Revolver page](https://www.thebeatles.com/revolver) — Confirms album release and track context.
+- [The Beatles recording-session note](https://www.thebeatles.com/6th-april-1966-wednesday-beginning-revolver) — Dates the first session to 6 April 1966.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+The release year and performance are verified. Retain the psychedelic rock association, but treat it as medium confidence because the track is also often described through experimental/studio-pop terms.

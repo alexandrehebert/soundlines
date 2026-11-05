@@ -2,12 +2,23 @@
 
 Graph ID `track:blitzkrieg-bop-ramones`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — single and album chronology checked
 
-**Graph period** · 1976 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Blitzkrieg Bop (1976), performed by Ramones; representative recording of Punk Rock.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Blitzkrieg_Bop>)
+- [MusicBrainz — official single release record](https://musicbrainz.org/release/3a1cd4aa-5b52-47ad-b4a8-316a4abe0db0) — Release metadata identifies an official Ramones 7-inch single, lists the recording and credits, and documents a 1976 release event; MusicBrainz notes event territories are version-specific.
+- [Rock & Roll Hall of Fame — Ramones artist history](https://www.rockhall.com/inductees/ramones) — Institutional profile documents the band’s influence in establishing punk’s fast, stripped-down approach.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+1976 and the single/album relationship are supported; the graph’s year refers to the original release period. The broad punk-rock classification is historically secure. MusicBrainz offers curated release metadata but its particular listing is Netherlands-specific.
+
+## Remaining uncertainty
+
+Exact first-market release date and chronology can differ across the single and album editions; no exact day is asserted.
+
+## Original graph citations retained
+
+- [https://en.wikipedia.org/wiki/Blitzkrieg_Bop](<https://en.wikipedia.org/wiki/Blitzkrieg_Bop>) — original graph citation retained for traceability; supplemental sources are reviewed above.

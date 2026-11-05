@@ -2,12 +2,15 @@
 
 Graph ID `track:the-sindhi-bhairavi-mode-ali-akbar-khan`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1955 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The Sindhi-Bhairavi Mode (1955), performed by Ali Akbar Khan; representative recording of Hindustani Classical.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Sindhi-Bhairavi_Mode>)
+- [Smithsonian Folkways track catalog](https://folkways.si.edu/ali-akbar-khan/the-sindhi-bhairavi-mode/classical-india-world/music/track/smithsonian) — Lists Ali Akbar Khan, The Sindhi-Bhairavi Mode, and 1955.
+- [Smithsonian Folkways artist catalog](https://folkways.si.edu/artist/ali-akbar-khan) — Confirms the track within Khan’s 1955 catalog.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The original 1955 date and performer are verified by the issuing archive. Hindustani classical is consistent with the album’s catalog classification; raise the anthem edge to high confidence.

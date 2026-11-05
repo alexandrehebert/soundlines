@@ -2,12 +2,15 @@
 
 Graph ID `scene:compton-hip-hop-scene`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1986 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A local hip-hop lineage associated with N.W.A. and Ruthless Records, within a much larger and varied Los Angeles-area history.
+## Sources checked
 
-**Graph citations** · [1](<https://www.comptonmuseum.org/previous-exhibitions/sounds-of-the-city>), [2](<https://www.nmaahc.si.edu/explore/stories/hip-hop-west-coast>)
+- [Compton Art & History Museum: Sounds of the City](https://www.comptonmuseum.org/previous-exhibitions/sounds-of-the-city) — Local museum examines Compton’s impact on hip-hop and the rise of gangsta rap in the 1980s.
+- [National Museum of African American History and Culture: West Coast hip-hop](https://nmaahc.si.edu/explore/stories/hip-hop-west-coast) — Smithsonian account contextualizes N.W.A. and West Coast rap within a broader regional history.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+A local hip-hop lineage associated with N.W.A. and Ruthless Records, within a much larger and varied Los Angeles-area history. Overall confidence: high.

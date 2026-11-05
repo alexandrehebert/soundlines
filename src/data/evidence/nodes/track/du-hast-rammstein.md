@@ -2,12 +2,24 @@
 
 Graph ID `track:du-hast-rammstein`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — single and album dates checked
 
-**Graph period** · 1997 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Du Hast (1997), performed by Rammstein; representative recording of Industrial Metal.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Du_hast>)
+- [Rammstein official history](https://www.rammstein.de/en/history/) — Band chronology identifies Du Hast as Sehnsucht’s second single and says it entered German charts in August 1997.
+- [Official Rammstein audio — Du Hast](https://www.youtube.com/watch?v=kiw_VxQ2oXo) — Universal metadata places the track on Sehnsucht and dates its copyright to 1997.
+- [Apple Music — Sehnsucht](https://music.apple.com/us/album/sehnsucht/1390562159) — Album editorial describes the industrial-leaning metal sound and identifies Du Hast as a defining track.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+1997 is supported for album and single era. The band’s own chronology corroborates August 1997 chart arrival; Neue Deutsche Härte/industrial metal remains an established genre association.
+
+## Remaining uncertainty
+
+The official history page is script-rendered and has no readable lines in direct retrieval; its indexed chronology is used with label metadata.
+
+## Original graph citations retained
+
+- [https://en.wikipedia.org/wiki/Du_hast](<https://en.wikipedia.org/wiki/Du_hast>) — initial graph citation retained for traceability; supplemental sources are reviewed above.

@@ -2,12 +2,16 @@
 
 Graph ID `track:the-world-is-yours-nas`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1994 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The World Is Yours (1994), performed by Nas; representative recording of East Coast Rap.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_World_Is_Yours_(Nas_song)>)
+- [Nas official artist-channel audio](https://www.youtube.com/watch?v=OtcgB5wMknQ) — Columbia metadata identifies the track, Nas, Illmatic, release date 19 April 1994 and Pete Rock.
+- [Library of Congress: Illmatic registry entry](https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/complete-national-recording-registry-listing/additional-information/) — Confirms the 1994 Columbia album and track-level contribution data.
+- [MusicBrainz Illmatic release group](https://musicbrainz.org/release-group/28298e2c-4d70-3eed-a0f5-a3280c662b3d) — Catalogs the 1994 Columbia release.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The track and year are confirmed by Columbia metadata and the Library of Congress. East Coast rap fits Nas’s Queensbridge context and the contemporary album, but genre assignment remains medium rather than exclusive.

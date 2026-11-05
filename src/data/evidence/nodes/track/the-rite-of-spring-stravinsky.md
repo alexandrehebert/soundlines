@@ -2,12 +2,15 @@
 
 Graph ID `track:the-rite-of-spring-stravinsky`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1913 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The Rite of Spring (1913), performed by Stravinsky; representative recording of Modern Classical.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Rite_of_Spring>)
+- [Library of Congress: The Rite of Spring](https://www.loc.gov/loc/lcib/09078/rite.html) — Documents the work, premiere date and original Ballets Russes context.
+- [Library of Congress: Ballets Russes exhibition](https://www.loc.gov/exhibits/ballet-russes/exhibition-items.html) — Catalogs original production materials and identifies Stravinsky’s score.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+1913 is the premiere year, not an identified recording date. Corrected the description to identify the composition and removed Stravinsky as recording performer. Modern Classical remains a broad but defensible umbrella; confidence medium.

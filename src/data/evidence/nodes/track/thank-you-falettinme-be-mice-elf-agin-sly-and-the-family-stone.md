@@ -2,12 +2,24 @@
 
 Graph ID `track:thank-you-falettinme-be-mice-elf-agin-sly-and-the-family-stone`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1969 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Thank You (Falettinme Be Mice Elf Agin) (1969), performed by Sly And The Family Stone; representative recording of Funk.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Thank_You_(Falettinme_Be_Mice_Elf_Agin)>)
+- [Sly Stone official site — biography](https://www.slystonemusic.com/biography/) — Official artist biography identifies Thank You as a career-defining Sly and the Family Stone single.
+- [Epic/Legacy — single version](https://www.youtube.com/watch?v=_Jhn2AfPWPo) — Rights-holder audio metadata gives original 1969 release, Sly Stone as producer/vocalist, and the band personnel.
+- [National Recording Registry — complete list](https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/complete-national-recording-registry-list/) — Registry documents the group's historically significant recording context.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+1969, band credit and funk identity strongly confirmed; raised genre confidence to high. This fast funk single is distinct from the slower 1971 album re-recording “Thank You for Talkin’ to Me, Africa.”
+
+## Remaining uncertainty
+
+Single and album versioning matters; note describes the 1969 single.
+
+## Original graph citations retained
+
+- [https://en.wikipedia.org/wiki/Thank_You_(Falettinme_Be_Mice_Elf_Agin)](<https://en.wikipedia.org/wiki/Thank_You_(Falettinme_Be_Mice_Elf_Agin)>) — initial graph citation retained for traceability; supplemental sources are reviewed above.

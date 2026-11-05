@@ -2,12 +2,16 @@
 
 Graph ID `track:unfinished-sympathy-massive-attack`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1991 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Unfinished Sympathy (1991), performed by Massive Attack; representative recording of Trip Hop.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Unfinished_Sympathy>)
+- [Abbey Road: Unfinished Sympathy at 30](https://www.abbeyroad.com/news/30-years-of-massive-attacks-unfinished-sympathy-2907) — Documents the 1991 release, writing credits, Shara Nelson vocal, and recording/orchestration details.
+- [Official Charts entry](https://www.officialcharts.com/songs/massive-attack-unfinished-sympathy/) — Confirms the charting 1991 single.
+- [Massive Attack official Blue Lines page](https://store.massiveattack.com/products/blue-lines) — Album catalog context.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+1991, Massive Attack, and Shara Nelson’s vocal are well verified. Trip hop is a defining contextual classification, high confidence, though it does not capture the orchestral soul arrangement.

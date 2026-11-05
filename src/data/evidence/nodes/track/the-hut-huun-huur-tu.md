@@ -2,12 +2,20 @@
 
 Graph ID `track:the-hut-huun-huur-tu`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 2000 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The Hut (2000), performed by Huun Huur Tu; representative recording of Khoomei.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Huun-Huur-Tu>)
+- [Huun-Huur-Tu official release groups, MusicBrainz](https://musicbrainz.org/artist/6e3d75a2-b371-4156-a1c1-7b56e1c965a3) — Catalogued release groups from 1993 onward did not substantiate a track called “The Hut.”
+- [Huun-Huur-Tu artist catalog, Apple Music](https://music.apple.com/us/artist/huun-huur-tu/48833295) — Checked the streaming artist catalog for the disputed title.
+- [More Live track list](https://www.platomania.nl/article/52352/more_live/huun_huur_tu) — Independent catalog shows the 2002 live album and its track list; no “The Hut.”
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The claimed 2000 Huun-Huur-Tu recording is not supported by the band catalogs checked. Removed the exact year and recording attribution, and lowered confidence in the Khoomei anthem edge to low pending an identifiable recording.
+
+## Remaining uncertainty
+
+The track title may be a mistranslation or metadata error. Keep as unresolved placeholder until a recording identifier or original title is found.

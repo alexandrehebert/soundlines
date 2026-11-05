@@ -2,12 +2,16 @@
 
 Graph ID `scene:dusseldorf-krautrock-scene`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1970 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A West German experimental music network associated with Kraftwerk and other groups, part of the broader and internally diverse Krautrock history.
+## Sources checked
 
-**Graph citations** · [1](<https://www.theguardian.com/music/2020/may/25/from-germany-to-detroit-and-back-how-kraftwerk-forged-an-industrial-exchange>), [2](<https://www.kraftwerk.com/history/>)
+- [Cambridge University Press: Kraftwerk and Krautrock](https://www.cambridge.org/core/books/abs/german-in-the-world/reterritorializing-german-pop-kraftwerks-industrielle-volksmusik-as-a-transnational-phenomenon/4542D472DA08D1A1E70A3573424E38C0) — Scholarly chapter locates Kraftwerk in Düsseldorf and notes Krautrock grouped distinct German centers and sounds retrospectively.
+- [Contemporary British History: NEU! Europe](https://doi.org/10.1080/13619462.2021.1925551) — Academic article discusses Düsseldorf’s Kraftwerk and diverse West German countercultures.
+- [Kraftwerk official history](https://www.kraftwerk.com/history/) — Band source documents its Düsseldorf origins and development.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+A West German experimental music network associated with Kraftwerk and other groups, part of the broader and internally diverse Krautrock history. Overall confidence: high.

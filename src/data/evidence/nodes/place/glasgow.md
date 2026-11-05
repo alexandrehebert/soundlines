@@ -2,10 +2,16 @@
 
 Graph ID `place:glasgow`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · UNESCO and label biography support Glasgow’s music ecosystem and Mogwai’s formation there.
 
-**Graph claim** · Scottish city with a major music ecosystem and the formation point for Mogwai.
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.unesco.org/en/creative-cities/glasgow>), [2](<https://mogwai.scot/biography/>)
+## Sources checked
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [UNESCO in the UK: Glasgow City of Music](https://unesco.org.uk/our-network/creative-cities/glasgow) — Documents Glasgow’s designation as a UNESCO City of Music and the breadth of its music infrastructure.
+- [Sub Pop Records: Mogwai](https://www.subpop.com/artists/mogwai) — Label biography states the band formed in Glasgow in 1995.
+- [Glasgow UNESCO City of Music](https://www.glasgowmusiccity.org/) — City music organization documents the continuing local music ecosystem.
+
+## Assessment
+
+The graph distinguishes Mogwai’s formation point from Glasgow’s broader music life. Overall confidence: high.

@@ -2,12 +2,15 @@
 
 Graph ID `scene:minneapolis-sound`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1978 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A cross-genre studio and performance idiom associated with Prince and the musicians and venues around him in Minneapolis.
+## Sources checked
 
-**Graph citations** · [1](<https://mn.gov/admin/shpo/architectural-history/minneapolis-sound/>)
+- [Minnesota State Historic Preservation Office: Prince MPDF](https://mn.gov/admin/shpo/about/preservation-program/princempdf.jsp) — Historic-preservation documentation identifies Prince as a seminal innovator of the Minneapolis Sound in the early 1980s.
+- [City of Minneapolis: African American historic context study](https://lims.minneapolismn.gov/Download/Agenda/7570/5365/MinneapolisAAContextStudy_Final.pdf) — Municipal research describes Prince as a core figure in creating a sound that influenced musicians locally and beyond.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+A cross-genre studio and performance idiom associated with Prince and the musicians and venues around him in Minneapolis. Overall confidence: high.

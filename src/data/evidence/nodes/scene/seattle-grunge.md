@@ -2,12 +2,16 @@
 
 Graph ID `scene:seattle-grunge`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1985–1994 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A locally connected rock scene spanning independent labels, clubs, and bands whose sound drew on punk, metal, and other regional influences. “Grunge” later became a media and industry category, not a complete description of Seattle music.
+## Sources checked
 
-**Graph citations** · [1](<https://www.seattle.gov/economic-development/key-industries/creative-industries/nightlife-and-music/seattle-music-history>), [2](<https://www.historylink.org/file/2374>)
+- [University of Washington Libraries: History of The Rocket](https://guides.lib.uw.edu/therocketexhibit/history) — Documents the local magazine’s role in chronicling Seattle’s underground rock scene and the rise of the “Seattle Sound.”
+- [UC eScholarship dissertation on grunge](https://escholarship.org/uc/item/76t7z7n9) — Studies grunge as a scene and genre rooted in the Pacific Northwest, rather than solely Seattle.
+- [Sub Pop Records: About](https://www.subpop.com/about) — Label history documents its Seattle base and early releases associated with grunge.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+A locally connected rock scene spanning independent labels, clubs, and bands whose sound drew on punk, metal, and other regional influences. “Grunge” later became a media and industry category, not a complete description of Seattle music. Overall confidence: high.

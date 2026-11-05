@@ -2,12 +2,16 @@
 
 Graph ID `scene:memphis-soul-and-recording-scene`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1950 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A network of studios and musicians around Sun and Stax that helped shape blues, soul and early rock recordings. The sound drew on a much wider Southern musical world.
+## Sources checked
 
-**Graph citations** · [1](<https://www.memphistravel.com/music>), [2](<https://staxmuseum.com/stax-records/>), [3](<https://www.sunrecords.com/about>)
+- [Memphis Rock ’n’ Soul Museum: Exhibits](https://www.memphisrocknsoul.org/exhibits) — Museum history connects rural Southern traditions, Memphis studios, and labels including Sun, Stax, and Hi Records.
+- [Soulsville Foundation: Stax history](https://soulsvillefoundation.org/history/) — Institutional history documents Stax’s growth in Memphis and its contribution to Southern soul.
+- [Sun Records: About](https://www.sunrecords.com/about) — Label archive documents Sun’s Memphis recording history; it supports a multi-label scene rather than a single “Memphis sound.”
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 3 unsuccessful, 0 pending.
+## Assessment
+
+A network of studios and musicians around Sun and Stax that helped shape blues, soul and early rock recordings. The sound drew on a much wider Southern musical world. Overall confidence: high.

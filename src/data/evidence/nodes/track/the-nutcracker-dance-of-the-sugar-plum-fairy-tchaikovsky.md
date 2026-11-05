@@ -1,13 +1,17 @@
-# The Nutcracker: Dance of the Sugar Plum Fairy
+# Dance of the Sugar Plum Fairy
 
 Graph ID `track:the-nutcracker-dance-of-the-sugar-plum-fairy-tchaikovsky`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1892 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The Nutcracker: Dance of the Sugar Plum Fairy (1892), performed by Tchaikovsky; representative recording of Romantic.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Nutcracker>)
+- [Marius Petipa Society: The Nutcracker](https://petipasociety.com/the-nutcracker/) — Provides the 18 December 1892 premiere date and original ballet context.
+- [Tchaikovsky Research: The Nutcracker suite](https://en.tchaikovsky-research.net/pages/The_Nutcracker_%28suite%29) — Documents the suite’s 1892 preparation and orchestral numbers.
+- [Dance Notation Bureau catalog](https://www.dancenotation.org/catalog/the-nutcracker-act-iii-variation-of-the-sugar-plum-fairy/) — Catalogs the variation as part of the ballet.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The year is correct for the ballet premiere, but the prior text incorrectly described Tchaikovsky as a performer. This is a composition excerpt, so retain the Romantic-period association and remove the `recorded_by Tchaikovsky` edge.

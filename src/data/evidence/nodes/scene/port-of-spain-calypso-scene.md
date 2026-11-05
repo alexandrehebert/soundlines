@@ -2,12 +2,16 @@
 
 Graph ID `scene:port-of-spain-calypso-scene`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1900 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A major calypso center within a tradition rooted in Trinidadian communities and spread across the Caribbean and diaspora.
+## Sources checked
 
-**Graph citations** · [1](<https://folkways.si.edu/calypso/music/album/smithsonian>), [2](<https://www.unesco.org/en/creative-cities/port-of-spain>)
+- [Oxford University Press: Trinidadian calypso to 1940](https://doi.org/10.14325/mississippi/9781496806895.003.0002) — Historical chapter traces calypso’s development in Port of Spain among working-class communities.
+- [Smithsonian Folkways: Calypso](https://folkways.si.edu/calypso/music/album/smithsonian) — Recording collection documents Trinidadian calypso performance and its Carnival and dance-hall contexts.
+- [UNESCO Creative Cities: Port of Spain](https://www.unesco.org/en/creative-cities/port-of-spain) — Documents the city’s contemporary cultural institutions and musical activity; calypso remains rooted in Trinidad more broadly.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+A major calypso center within a tradition rooted in Trinidadian communities and spread across the Caribbean and diaspora. Overall confidence: high.

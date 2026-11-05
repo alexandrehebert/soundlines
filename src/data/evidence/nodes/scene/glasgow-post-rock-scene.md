@@ -2,12 +2,15 @@
 
 Graph ID `scene:glasgow-post-rock-scene`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1995 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Glasgow’s independent music network around the formation of Mogwai and the later Rock Action label.
+## Sources checked
 
-**Graph citations** · [1](<https://mogwai.scot/biography/>), [2](<https://rockactionrecords.com/about/>)
+- [Mogwai official biography](https://mogwai.scot/biography/) — Band history confirms formation in Glasgow in 1995.
+- [Rock Action Records: About](https://rockactionrecords.com/about/) — Label source documents the Glasgow band’s independent label and local network.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+## Assessment
+
+Glasgow’s independent music network around the formation of Mogwai and the later Rock Action label. Overall confidence: medium.

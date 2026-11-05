@@ -2,12 +2,15 @@
 
 Graph ID `scene:baul-music-tradition`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1800 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A devotional and philosophical music practice of itinerant minstrels across rural Bangladesh and West Bengal; the tradition has no single city of origin.
+## Sources checked
 
-**Graph citations** · [1](<https://ich.unesco.org/en/RL/baul-songs-00107>), [2](<https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047>)
+- [UNESCO Intangible Cultural Heritage: Baul songs](https://ich.unesco.org/en/RL/baul-songs-00107) — Describes Bauls as devotional minstrels in rural Bangladesh and West Bengal, with music, poetry, and dance.
+- [UNESCO safeguarding plan for Baul songs](https://ich.unesco.org/en/projects/action-plan-for-the-safeguarding-of-baul-songs-00047) — Frames safeguarding as work with tradition bearers across Bangladesh and West Bengal rather than a single-origin locality.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+A devotional and philosophical music practice of itinerant minstrels across rural Bangladesh and West Bengal; the tradition has no single city of origin. Overall confidence: high.

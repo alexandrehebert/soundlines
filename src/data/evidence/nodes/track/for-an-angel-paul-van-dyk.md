@@ -2,16 +2,16 @@
 
 Graph ID `track:for-an-angel-paul-van-dyk`
 
-**Review status** · Original release and remix cross-checked
+**Review status** · Reviewed
 
-**Graph period** · 1994 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Paul van Dyk first released “For an Angel” on 45 RPM in 1994. His 1998 E-Werk Remix brought the track to a wider trance audience.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/For_an_Angel>), [2](<https://www.paulvandyk.com/out-now-for-an-angel-30th-anniversary-edition/>), [3](<https://djmag.com/features/how-paul-van-dyks-angel-changed-trance-forever>), [4](<https://www.officialcharts.com/songs/paul-van-dyk-for-an-angel/>)
+- [Paul van Dyk official 30th anniversary edition](https://www.paulvandyk.com/out-now-for-an-angel-30th-anniversary-edition/) — Distinguishes the 1994 original from the 1998 E-Werk remix.
+- [Official Charts](https://www.officialcharts.com/songs/paul-van-dyk-for-an-angel/) — Documents the charting 1998 version.
+- [DJ Mag history](https://djmag.com/features/how-paul-van-dyks-angel-changed-trance-forever) — Explains how the 1998 remix became the best-known trance version.
 
-**Citation retrieval** · 1 bulk response and 3 web sources accessed.
+## Assessment
 
-## Evidence review
-
-Van Dyk’s release history and the DJ Mag interview distinguish the 1994 album track from the 1998 E-Werk Remix. The UK chart shows the later commercial run. Medium confidence reflects the graph edge pointing to the 1994 track while the strongest evidence of anthem status concerns the 1998 rework. [Artist release history](https://www.paulvandyk.com/out-now-for-an-angel-30th-anniversary-edition/), [DJ Mag interview](https://djmag.com/features/how-paul-van-dyks-angel-changed-trance-forever), [Official Charts](https://www.officialcharts.com/songs/paul-van-dyk-for-an-angel/)
+The node’s 1994 date means the original release, not the 1998 remix that became the international hit. Trance fits strongly; retain medium confidence because versions are often conflated.

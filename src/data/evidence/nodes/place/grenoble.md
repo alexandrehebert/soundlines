@@ -2,10 +2,15 @@
 
 Graph ID `place:grenoble`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Miss Kittin's birthplace verified by her official biography.
 
-**Graph claim** · French Alpine city and birthplace of DJ and producer Miss Kittin.
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.insomniac.com/music/artists/miss-kittin/>)
+## Sources checked
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+- [Kittin: About](https://misskittin.com/about/) — The artist's official biography identifies Caroline Hervé as born in Grenoble, France.
+- [AllMusic: Miss Kittin biography](https://www.allmusic.com/artist/miss-kittin-mn0000497290/biography) — Independent music reference likewise describes her as a Grenoble native and connects her to the early-1990s rave scene.
+
+## Assessment
+
+The birthplace claim is narrow and corroborated. Overall confidence: high.

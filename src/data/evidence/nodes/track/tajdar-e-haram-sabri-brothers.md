@@ -2,12 +2,24 @@
 
 Graph ID `track:tajdar-e-haram-sabri-brothers`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1982 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Tajdar-e-Haram (1982), performed by Sabri Brothers; representative recording of Qawwali.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Tajdar-e-Haram>)
+- [Apple Music — Tajdare Haram, Vol. 6](https://music.apple.com/us/album/tajdare-haram-vol-6/1784085620) — Label/copyright catalog identifies Sabri Brothers, 1982 and Oriental Star Agencies; album contains the recording.
+- [The Tribune — original Sabri Brothers rendition](https://tribune.com.pk/story/2263250/watch-this-cover-of-tajdar-e-haram) — Pakistani newspaper describes the Sabri Brothers' foundational version and identifies the 1982 recording context.
+- [Supraphonline — Tajdare Haram, Vol. 6](https://www.supraphonline.cz/album/855931-tajdare-haram-vol-6/flac) — Retail catalog records the 1982 Oriental Star issue and Sabri Brothers credit.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Sabri Brothers and 1982 issue are corroborated. Qawwali is central to the form; raised the association confidence to high.
+
+## Remaining uncertainty
+
+Later reissues and variants have differing titles/durations; graph is the 1982 version.
+
+## Original graph citations retained
+
+- [https://en.wikipedia.org/wiki/Tajdar-e-Haram](<https://en.wikipedia.org/wiki/Tajdar-e-Haram>) — initial graph citation retained for traceability; supplemental sources are reviewed above.

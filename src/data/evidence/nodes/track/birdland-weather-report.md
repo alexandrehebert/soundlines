@@ -2,12 +2,24 @@
 
 Graph ID `track:birdland-weather-report`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — album context and style checked
 
-**Graph period** · 1977 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Birdland (1977), performed by Weather Report; representative recording of Jazz Fusion.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Birdland_(Weather_Report_song)>)
+- [Weather Report Annotated Discography — Heavy Weather](https://www.weatherreportdiscography.org/heavy-weather/) — Detailed discography says Birdland opens Heavy Weather and was issued as a single; contextualizes the album’s fusion significance and documents 1977 contemporary reviews and awards.
+- [Jaco Pastorius official site — Heavy Weather](https://jacopastorius.com/music/heavy-weather/) — Artist estate discography identifies Birdland as the opening track on Weather Report’s 1977 album.
+- [DownBeat contemporary review archive](https://www.worldradiohistory.com/Archive-All-Music/DownBeat/70s/77/DB-1977-04-21.pdf) — 1977 magazine issue provides period context for Heavy Weather and the ensemble’s jazz-rock style.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+1977 and the album/single relationship are well supported, and jazz-fusion is consistent with contemporary and retrospective framing. The track’s exact single release differed by market; the graph uses the album year.
+
+## Remaining uncertainty
+
+A specialist annotated discography is used for historical detail; a direct label archive with the original single’s territory-specific date was not located.
+
+## Original graph citations retained
+
+- [https://en.wikipedia.org/wiki/Birdland_(Weather_Report_song)](<https://en.wikipedia.org/wiki/Birdland_(Weather_Report_song)>) — starting graph citation retained for traceability; additional sources are reviewed above.

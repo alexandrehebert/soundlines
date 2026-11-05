@@ -2,12 +2,16 @@
 
 Graph ID `scene:tuvan-xoomei-tradition`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1900 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A living vocal music tradition of Tuva, practiced in multiple styles and communities; Huun-Huur-Tu is one internationally known ensemble.
+## Sources checked
 
-**Graph citations** · [1](<https://folkways.si.edu/throat-singing-unique-vocalization-three-cultures/world/music/article/smithsonian>), [2](<https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/>)
+- [Smithsonian Folkways: Throat-singing in three cultures](https://folkways.si.edu/throat-singing-unique-vocalization-three-cultures/world/music/article/smithsonian) — Describes Tuvan throat-singing as a living practice and emblem of Tuvan identity.
+- [UNESCO: Mongolian art of singing, Khoomei](https://ich.unesco.org/en/RL/mongolian-art-of-singing-khoomei-00210) — Documents related practices across communities in Inner Mongolia, western Mongolia, and Tuva.
+- [Smithsonian National Museum of Asian Art: Huun-Huur-Tu](https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/) — Explains Tuvan xöömei styles and terminology through performers and music scholars.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+A living vocal music tradition of Tuva, practiced in multiple styles and communities; Huun-Huur-Tu is one internationally known ensemble. Overall confidence: high.

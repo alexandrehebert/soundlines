@@ -2,12 +2,15 @@
 
 Graph ID `track:the-number-of-the-beast-iron-maiden`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1982 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · The Number of the Beast (1982), performed by Iron Maiden; representative recording of Heavy Metal.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/The_Number_of_the_Beast_(song)>)
+- [Iron Maiden official album page](https://www.ironmaiden.com/studio-album/the-number-of-the-beast/) — Lists the title track and gives the album release date as 22 March 1982.
+- [Iron Maiden band biography](https://www.ironmaiden.com/the-band/) — Describes the band’s heavy-rock and New Wave of British Heavy Metal context.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 1982 date and Iron Maiden recording are directly confirmed by the band’s catalog. Heavy metal classification is well supported; raise the anthem edge from medium to high confidence.

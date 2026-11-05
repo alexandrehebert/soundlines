@@ -2,10 +2,16 @@
 
 Graph ID `place:kingston`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · UNESCO and music scholarship confirm Kingston’s central role in Jamaica’s music and sound-system histories.
 
-**Graph claim** · Jamaica’s capital and a central site in the development of reggae and its sound-system culture; UNESCO identifies western Kingston as a key cultural space for reggae’s emergence.
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398>), [2](<https://www.si.edu/object/archives/components/sova-acma-03-027-ref1934>)
+## Sources checked
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [Jamaica National Commission for UNESCO: Kingston, Creative City of Music](https://jncunesco.gov.jm/kingston-creative-city-of-music/) — Documents the 2015 designation and the city’s music venues, studios, radio, and sound systems.
+- [“Placing the Music: Kingston, Reggae Music, and the Rise of a Popular Culture”](https://www.researchwithnj.com/en/publications/placing-the-music-kingston-reggae-music-and-the-rise-of-a-popular/) — Scholarly account traces reggae to specific inner-city communities and technological changes including sound systems.
+- [Jamaica Information Service: Black History in Roots Reggae Music](https://jis.gov.jm/jamaica/black-history-in-roots-reggae-music/) — Government history documents urban Kingston sound-system dances and their influence on young musicians.
+
+## Assessment
+
+Kingston is a central site, while sound-system and reggae histories are rooted in particular neighborhoods and connect to Jamaica-wide practices. Overall confidence: high.

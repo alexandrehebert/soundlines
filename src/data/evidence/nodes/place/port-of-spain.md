@@ -2,10 +2,16 @@
 
 Graph ID `place:port-of-spain`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Trinidad’s National Carnival Commission and National Library document calypso’s social history and its Port of Spain center.
 
-**Graph claim** · Trinidad and Tobago’s capital and a major center for calypso; the tradition is rooted across Trinidad and the wider Caribbean.
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://folkways.si.edu/calypso/music/album/smithsonian>), [2](<https://www.unesco.org/en/creative-cities/port-of-spain>)
+## Sources checked
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 2 unsuccessful, 0 pending.
+- [National Carnival Commission of Trinidad and Tobago: History of Carnival](https://ncctt.org/history-of-carnival-and-its-elements/) — Official history describes calypso’s African roots and the role of Port of Spain’s communities in Carnival music.
+- [NALIS: Calypso](https://www.nalis.gov.tt/portfolio-item/calypso/) — National library account discusses calypso as Trinidadian folk music and a vehicle for social commentary.
+- [NALIS: Carnival](https://www.nalis.gov.tt/resources/tt-content-guide/carnival/) — National library guide situates calypso and Carnival within Trinidad and Tobago’s broader national history.
+
+## Assessment
+
+Port of Spain is a major center, but calypso is rooted across Trinidad and its history is broader than the capital alone. Overall confidence: high.

@@ -2,17 +2,16 @@
 
 Graph ID `track:mood-indigo-duke-ellington`
 
-**Review status** · 1930 recording history and repertoire cross-checked
+**Review status** · Reviewed
 
-**Graph period** · 1930 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Mood Indigo (1930), performed by Duke Ellington; representative recording of Swing.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Mood_Indigo>), [2](<https://americanhistory.si.edu/collections/object/nmah_1061308>), [3](<https://ellingtonia.com/discography/1930-1939/>), [4](<https://www.jazzstandards.com/compositions-1/moodindigo.htm>)
+- [Smithsonian National Museum of American History catalog](https://americanhistory.si.edu/collections/object/nmah_1061308) — Catalogs Duke Ellington and His Orchestra’s Victor 24486 recording and dates it 1930.
+- [Ellingtonia discography](https://ellingtonia.com/discography/1930-1939/) — Session discography identifies the 1930 recording and personnel.
+- [Recorded Sound Archive catalog](https://rsa.fau.edu/album/11611) — Lists the 10 December 1930 session and the recording’s composer credits.
 
+## Assessment
 
-## Evidence review
-
-The Smithsonian catalogs a Victor pressing with a 1930 recording date. Ellingtonia documents the early Brunswick take, issued as “Dreamy Blues” in December 1930. The graph year fits the first issues, though the generic title leaves the intended take unspecified. JazzStandards traces the early performances and later recognition. Medium confidence suits the swing anthem link, an editorial classification of an Ellington standard. [Smithsonian](https://americanhistory.si.edu/collections/object/nmah_1061308), [Ellingtonia](https://ellingtonia.com/discography/1930-1939/), [JazzStandards](https://www.jazzstandards.com/compositions-1/moodindigo.htm)
-
-**Citation retrieval** · 0 bulk responses, 3 browser opens, 1 unsuccessful, 0 pending.
+This is the 1930 Duke Ellington and His Orchestra recording; 1928 in the Smithsonian object refers to another recording on the same disc. Swing is plausible but the slow, muted arrangement is not a generic swing exemplar; keep medium confidence.

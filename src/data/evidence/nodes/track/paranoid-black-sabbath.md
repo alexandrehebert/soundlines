@@ -2,12 +2,24 @@
 
 Graph ID `track:paranoid-black-sabbath`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1970 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Paranoid (1970), performed by Black Sabbath; representative recording of Heavy Metal.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Paranoid_(Black_Sabbath_song)>)
+- [Paranoid — Tony Iommi official site](https://www.iommi.com/album/paranoid/) — Guitarist’s official site confirms title track and describes its writing/recording during album sessions; album context.
+- [Paranoid — Official Charts](https://www.officialcharts.com/songs/black-sabbath-paranoid/) — Official UK chart archive shows first chart date 29 August 1970.
+- [Paranoid — Black Sabbath official site](https://www.blacksabbath.com/news-details.html?n_id=429.html) — Band website confirms single’s release and chart success, while noting the band’s discomfort with singles.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Period, artist and single/album status are strongly supported. Heavy metal is unequivocally appropriate; medium edge confidence appears conservative and could be raised to high.
+
+## Remaining uncertainty
+
+Exact regional release day differs from first chart date; graph only specifies year.
+
+## Original graph citations retained
+
+- [https://en.wikipedia.org/wiki/Paranoid_(Black_Sabbath_song)](<https://en.wikipedia.org/wiki/Paranoid_(Black_Sabbath_song)>) — initial graph citation retained for traceability; supplemental sources are reviewed above.

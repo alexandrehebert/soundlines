@@ -2,12 +2,16 @@
 
 Graph ID `track:what-s-going-on-marvin-gaye`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1971 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · What's Going On (1971), performed by Marvin Gaye; representative recording of Soul.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/What's_Going_On_(Marvin_Gaye_song)>)
+- [Library of Congress National Recording Registry essay](https://www.loc.gov/static/programs/national-recording-preservation-board/documents/WhatsGoingOn.pdf) — Discusses the 1971 song and its recording/release context.
+- [Motown Museum Marvin Gaye biography](https://www.motownmuseum.org/artist/marvin-gaye/) — Places What’s Going On in Gaye’s 1971 creative shift.
+- [Official Marvin Gaye audio](https://www.youtube.com/watch?v=H-kA3UtBj4M) — Motown audio catalog and track identity.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 1971 date, Marvin Gaye recording, and socially conscious soul context are supported by Motown and LOC sources. Soul remains high confidence.

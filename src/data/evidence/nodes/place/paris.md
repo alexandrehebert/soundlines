@@ -2,10 +2,16 @@
 
 Graph ID `place:paris`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Paris scene role supported, with Versailles overlap preserved.
 
-**Graph claim** · French capital and a central meeting, club and label hub for the French Touch. The movement developed through overlapping Paris and Versailles networks.
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://www.francemusic.com/french-touch-guide/>), [2](<https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en>)
+## Sources checked
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+- [France Music: French Touch guide](https://www.francemusic.com/french-touch-guide/) — French music-export organization overview identifies the Paris-centered electronic movement and its artists.
+- [Le Monde: Daft Punk, pardon my French touch](https://www.lemonde.fr/en/summer-reads/article/2023/08/18/daft-punk-pardon-my-french-touch_6097225_183.html) — Reporting on the broader French electronic export wave describes Paris nightlife and the varied artists grouped under the French Touch label.
+- [Google Arts & Culture: The Producers of the French Touch](https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en) — Curated overview documents producer and label networks, though it is not a scholarly source.
+
+## Assessment
+
+Paris is a major hub in a broader French scene, not the exclusive birthplace. The current description explicitly recognizes Paris–Versailles overlap. Overall confidence: medium-high.

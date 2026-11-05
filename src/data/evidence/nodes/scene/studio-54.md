@@ -2,12 +2,16 @@
 
 Graph ID `scene:studio-54`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1977–1980 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · New York discotheque whose first period made it a globally visible symbol of disco-era nightlife, celebrity culture, and DJ-centered dancing. The club’s broader venue history continued after its initial 1980 closure.
+## Sources checked
 
-**Graph citations** · [1](<https://www.pbs.org/wgbh/americanexperience/features/war-disco-glimpse-glamorous-world-studio-54/>), [2](<https://www.history.com/this-day-in-history/april-26/studio-54-opens>)
+- [PBS American Experience: Studio 54](https://www.pbs.org/wgbh/americanexperience/features/war-disco-glimpse-glamorous-world-studio-54/) — Documents the club’s New York opening, celebrity culture, performers, and disco-era role.
+- [Brooklyn Museum: Studio 54—Night Magic](https://www.brooklynmuseum.org/press/2019/studio-54-night-magic) — Museum exhibition dates the club’s first famous period to 1977–80 and interprets its nightlife culture.
+- [History: Studio 54 opens](https://www.history.com/this-day-in-history/april-26/studio-54-opens) — Provides the opening date and first-period historical context.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+New York discotheque whose first period made it a globally visible symbol of disco-era nightlife, celebrity culture, and DJ-centered dancing. The club’s broader venue history continued after its initial 1980 closure. Overall confidence: high.

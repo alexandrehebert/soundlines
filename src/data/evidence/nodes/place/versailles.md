@@ -2,10 +2,15 @@
 
 Graph ID `place:versailles`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Local school and friendship-network role corroborated; avoid exclusive-origin framing.
 
-**Graph claim** · City west of Paris whose school and friendship networks produced several central French Touch acts, including Air and Phoenix; this is a regional contribution, not an exclusive origin claim.
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en>), [2](<https://www.versaillesgrandparc.fr/fileadmin/user_upload/gestion_doc/Fichiers_Documents_administratifs/Decisons/Decisions_2024/DECIS_dB.2024.065_Festival_ElectroChic_-_billeteries_en_ligne.pdf>)
+## Sources checked
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+- [Le Monde: At Versailles, the French Touch under the gaze of its graphic artists](https://www.lemonde.fr/culture/article/2024/03/09/a-versailles-la-french-touch-courant-musical-electro-sous-le-regard-de-ses-graphistes_6221061_3246.html) — Reporting on a Versailles exhibition describes school friendships and shared music-making among Air, Phoenix, Étienne de Crécy, and others.
+- [Google Arts & Culture: The Producers of the French Touch](https://artsandculture.google.com/story/the-producers-of-the-french-touch/wQXBKVXCbR5LJg?hl=en) — Curated account supports the Versailles network context for French electronic acts.
+
+## Assessment
+
+The local network claim is credible for named artists but does not make Versailles the sole origin of French Touch. Overall confidence: medium.

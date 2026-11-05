@@ -134,7 +134,9 @@ the inference (for example `artist:mozart` → `classical`), or when no
 `key_artist_of` relationship provides a family. Every artist needs a resolvable
 family; a missing family prevents the artist timeline from loading. For example,
 `artist:women-on-wax` explicitly uses `techno`
-without claiming a key-artist relationship.
+without claiming a key-artist relationship. `artist:dune`, added as a recording
+artist, also explicitly uses `techno` so it can appear in the Techno & Trance
+browsing lane without inventing a `key_artist_of` claim.
 
 ### Instrument families (Instruments timeline lanes)
 

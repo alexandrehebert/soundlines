@@ -2,10 +2,16 @@
 
 Graph ID `scene:paradise-garage`
 
-**Review status** · Venue dates and community checked
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-## Evidence review
+**Reviewed** · 2026-11-04
 
-The NYC LGBTQ Historic Sites Project documents construction parties at 84 King Street in 1977 and the official opening under the Paradise Garage name on January 28, 1978. New York State’s historic context statement uses 1977–1987 for the venue’s active years. The graph retains that range and identifies both milestones. The former description made a broad claim about genre naming. The revised description focuses on the documented venue, resident DJ, and community. [Historic Sites Project](https://www.nyclgbtsites.org/site/paradise-garage/), [New York State historic context statement](https://www.parks.ny.gov/documents/shpo/FinalNYCLGBTContextStatement.pdf)
+## Sources checked
 
-NYU catalogs the Larry Levan and Mel Cheren collection on the club, a source for future item-level checks. [NYU finding aid](https://findingaids.library.nyu.edu/fales/mss_483/)
+- [NYC LGBTQ Historic Sites Project: Paradise Garage](https://www.nyclgbtsites.org/site/paradise-garage/) — Documents the 1977–87 club, its importance to New York dance culture, and its primarily Black gay patronage.
+- [NYU Fales Library: Larry Levan and Mel Cheren collection](https://findingaids.library.nyu.edu/fales/mss_483/all/) — Archival finding aid documents club ephemera, DJ sets, and the Garage’s dance and house-music history.
+- [New York State historic context statement](https://www.parks.ny.gov/documents/shpo/FinalNYCLGBTContextStatement.pdf) — Places Paradise Garage among influential Manhattan LGBT dance clubs of the 1970s–80s.
+
+## Assessment
+
+A New York dance club at 84 King Street with resident DJ Larry Levan and a largely Black gay following. Construction parties began in 1977, the club officially opened as Paradise Garage in 1978, and it closed in 1987. Overall confidence: high.

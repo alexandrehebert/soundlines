@@ -2,12 +2,24 @@
 
 Graph ID `track:breaking-the-law-judas-priest`
 
-**Review status** · Pending source review
+**Review status** · Reviewed — album and single chronology checked
 
-**Graph period** · 1980 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Breaking the Law (1980), performed by Judas Priest; representative recording of Heavy Metal.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Breaking_the_Law>)
+- [Judas Priest official discography](https://www.judaspriest.com/disc/) — Band discography lists Breaking the Law on British Steel and dates the album 1980.
+- [Official Charts — Breaking the Law](https://www.officialcharts.com/songs/judas-priest-breaking-the-law/) — UK chart database documents a first chart date of June 7, 1980; this is chart timing, not necessarily the single’s exact release day.
+- [Judas Priest official audio](https://www.youtube.com/watch?v=BXtPycm5dGc) — Sony metadata identifies the British Steel recording and 1980 copyright.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+1980 is supported for album recording/release and UK chart period. The group’s own discography supports identity; heavy-metal classification is consistent with the band and album’s established historical role.
+
+## Remaining uncertainty
+
+Regional single issues and chart dates differ; graph uses the original year.
+
+## Original graph citations retained
+
+- [https://en.wikipedia.org/wiki/Breaking_the_Law](<https://en.wikipedia.org/wiki/Breaking_the_Law>) — initial graph citation retained for traceability; reviewed supplemental sources are above.

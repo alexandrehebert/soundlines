@@ -2,10 +2,16 @@
 
 Graph ID `place:goa`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Ethnographic and scholarly studies support Goa’s role in the development of Goa trance and its party networks.
 
-**Graph claim** · Indian coastal state whose seasonal beach-party networks and visiting DJs helped shape Goa trance; local musicians and residents are part of this history too.
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://pure.hud.ac.uk/en/publications/dj-goa-gil-kalifornian-exile-dark-yogi-and-dreaded-anomaly/>), [2](<https://dj.dancecult.net/index.php/dancecult/article/view/318>)
+## Sources checked
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+- [University of Huddersfield: “Goatrance Travelers”](https://pure.hud.ac.uk/en/publications/goatrance-travelers-psychedelic-trance-and-its-seasoned-progeny/) — Peer-reviewed chapter traces a seasonal dance-music scene in Goa during the 1980s, led by DJs mixing electronic music for international travelers.
+- [Charles, *Psytrance Culture* (University of Bristol thesis)](https://research-information.bris.ac.uk/ws/portalfiles/portal/189626890/Final_Copy_2019_01_31_Charles_C_PhD.pdf) — Doctoral research connects Goa trance to beach parties and wider psychedelic music networks.
+- [Saldanha, “Trance and visibility at dawn,” *Social & Cultural Geography*](https://www.tandfonline.com/doi/full/10.1080/14649360500258328) — Scholarly account analyzes how tourism, race, and space shaped Goa’s rave scene.
+
+## Assessment
+
+The cautious wording “helped shape” is apt: this was a transnational tourist scene in Goa, not an indigenous Goan genre origin story. The sources also reveal that local perspectives and unequal tourism dynamics need care. Overall confidence: medium.

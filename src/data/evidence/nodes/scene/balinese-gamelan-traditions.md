@@ -2,12 +2,15 @@
 
 Graph ID `scene:balinese-gamelan-traditions`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1910 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Distinct island-wide and local performance traditions, including gong kebyar, which emerged in northern Bali in the early twentieth century.
+## Sources checked
 
-**Graph citations** · [1](<https://asia.si.edu/shimmering-sounds-from-bali-the-gamelan-ensemble-of-the-indonesian-institute-of-the-arts/>), [2](<https://asia-archive.si.edu/essays/article-vitale/>)
+- [Smithsonian National Museum of Asian Art: Distant Explosions](https://asia.si.edu/research/essays/vitale/) — Ethnomusicologist Edward Herbst discusses kebyar’s North Bali origins and later movement of cultural institutions toward South Bali.
+- [Smithsonian Folkways: Balinese court music](https://folkways.si.edu/news-and-press/unesco-collection-week-34-balinese-court-music) — Documents gamelan traditions and the early twentieth-century emergence of gong kebyar in North Bali, followed by island-wide spread.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+Distinct island-wide and local performance traditions, including gong kebyar, which emerged in northern Bali in the early twentieth century. Overall confidence: high.

@@ -2,10 +2,16 @@
 
 Graph ID `place:jamaica`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · UNESCO and Jamaican government sources support the island’s interconnected musical lineages.
 
-**Graph claim** · Caribbean island whose musical traditions include mento, ska, rocksteady, reggae, dub, and dancehall; these forms developed through local practice and transnational exchange.
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398>), [2](<https://www.smithsonianmag.com/travel/jamaica-music-and-performing-arts-17745080/>)
+## Sources checked
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+- [UNESCO Intangible Cultural Heritage: Reggae music of Jamaica](https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398) — Describes reggae as Jamaican and situates it within earlier local styles and social contexts.
+- [Jamaica Information Service: Jamaica’s Heritage in Music](https://jis.gov.jm/information/jamaicas-heritage-dance-music/jamaicas-heritage-music/) — Government account traces mento, ska, reggae, and dancehall lineages.
+- [Jamaica Information Service: Mento](https://jis.gov.jm/jamaica/mento/) — Details mento’s local character and influence on ska and reggae.
+
+## Assessment
+
+The range of styles listed is supported, but each has its own chronology and social history; they should not be treated as a single linear chain. Overall confidence: high.

@@ -2,19 +2,16 @@
 
 Graph ID `track:children-robert-miles`
 
-**Review status** · Release and crossover cross-checked
+**Review status** · Reviewed
 
-**Graph period** · 1995 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Robert Miles’s piano-led dance single appeared in 1995 and reached number two on the UK singles chart in 1996.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Children_(Robert_Miles_song)>), [2](<https://www.officialcharts.com/songs/robert-miles-children/>), [3](<https://www.insomniac.com/music/from-the-crate-robert-miles-children/>)
+- [Official Charts](https://www.officialcharts.com/songs/robert-miles-children/) — Dates the UK single to November 1995 and identifies the dream-house classification.
+- [Insomniac history](https://www.insomniac.com/music/from-the-crate-robert-miles-children/) — Recounts the track’s club and safe-journey origins.
+- [Official Robert Miles catalog](https://www.youtube.com/watch?v=CC5ca6Hsb2Q) — Label metadata identifies the track and Dreamland album version.
 
-**Citation retrieval** · 2 web sources accessed, 1 prior citation unsuccessful.
+## Assessment
 
-## Evidence review
-
-Official Charts dates the single to November 1995 and documents its UK number-two peak in 1996. Insomniac traces the original DBX release and subsequent UK licensing. The later chart run measures crossover, while the association with dream trance is a genre assessment. The graph title leaves the mix unspecified. [Official Charts](https://www.officialcharts.com/songs/robert-miles-children/), [Insomniac release history](https://www.insomniac.com/music/from-the-crate-robert-miles-children/)
-
-## Structural flag
-Duplicate of `track:children` (same recording). Both IDs are kept because graph IDs are never deleted; consolidate edges in a future cleanup.
+The 1995 single date and Robert Miles attribution are confirmed. The current broad trance edge is medium: Official Charts uses “dream house,” and the piano-led track crosses ambient/dance territory.

@@ -2,10 +2,16 @@
 
 Graph ID `track:strings-of-life`
 
-**Review status** · Release and credits checked
+**Review status** · Reviewed
 
-**Graph citations** · [1](<https://www.detroithistorical.org/learn/online-research/collection/archive/label-transmat-rhythim-rhythim>), [2](<https://transmatrecords.com/2019/02/25/strings-of-life/>)
+**Reviewed** · 2026-11-04
 
-## Evidence review
+## Sources checked
 
-The Detroit Historical Society catalogs an original label with a 1987 Transmat copyright. Transmat’s history identifies James’s piano contribution and describes two different 1987 mixes. The graph title leaves the mix unspecified, so the description uses features shared by the release history.
+- [Detroit Historical Society: Transmat / Rhythim Is Rhythim](https://www.detroithistorical.org/learn/online-research/collection/archive/label-transmat-rhythim-rhythim) — Catalogs the Detroit label and release context.
+- [Transmat Records official history](https://transmatrecords.com/2019/02/25/strings-of-life/) — Label account identifies Derrick May’s Rhythim Is Rhythim release and its 1987 history.
+- [MusicBrainz release catalog](https://musicbrainz.org/release/2a3cbdb7-23e3-4f13-ae3d-7b3e6bd33dbd) — Cross-check for the 1987 release edition.
+
+## Assessment
+
+1987 release under Derrick May’s Rhythim Is Rhythim alias is supported by the label and local archive. Detroit techno is high confidence; the edge remains medium because “anthem” significance is evaluative.

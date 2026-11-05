@@ -2,12 +2,16 @@
 
 Graph ID `scene:san-francisco-psychedelic-scene`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1965 (decade)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A 1960s countercultural music network around venues and neighborhoods including Haight-Ashbury, with the Grateful Dead and Jefferson Airplane among its acts.
+## Sources checked
 
-**Graph citations** · [1](<https://www.gdao.org/exhibits/show/posters/acid-tests>), [2](<https://www.dead.net/features/year/1966>)
+- [Fine Arts Museums of San Francisco: Summer of Love](https://digitalstories.famsf.org/summer-of-love/) — Museum history documents local venues, organizers, bands, and the city’s 1960s counterculture.
+- [U.S. Government Publishing Office: Counterculture and psychedelic rock](https://www.govinfo.gov/content/pkg/GOVPUB-S20-PURL-gpo1267/pdf/GOVPUB-S20-PURL-gpo1267.pdf) — Federal cultural-history publication locates the scene in Haight-Ashbury and names bands and venues.
+- [University of Delaware: San Francisco rock posters collection](https://findingaids.lib.udel.edu/repositories/2/resources/2391) — Archival finding aid lists psychedelic bands, dance concerts, and Acid Test materials.
 
-**Citation retrieval** · 2 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+## Assessment
+
+A 1960s countercultural music network around venues and neighborhoods including Haight-Ashbury, with the Grateful Dead and Jefferson Airplane among its acts. Overall confidence: high.

@@ -2,12 +2,16 @@
 
 Graph ID `track:try-a-little-tenderness-otis-redding`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1966 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · Try a Little Tenderness (1966), performed by Otis Redding; representative recording of Soul.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/Try_a_Little_Tenderness>)
+- [Stax Records artist history](https://staxrecords.com/artist/otis-redding/) — Identifies the song as one of Redding’s signature Stax-era hits.
+- [Official Otis Redding audio and credits](https://www.youtube.com/watch?v=9dTSysEwNRA) — Atlantic/Rhino metadata credits Redding’s 1966 vocal recording and Stax musicians.
+- [Apple Music single catalog](https://music.apple.com/us/album/try-a-little-tenderness-im-sick-yall-single/330825885) — Catalogs the 1966 single.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 1966 Redding recording is distinct from the 1932 song. Soul is a strong classification; the date and performer are well supported.

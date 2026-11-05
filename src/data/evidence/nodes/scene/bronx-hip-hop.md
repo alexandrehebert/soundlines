@@ -2,12 +2,16 @@
 
 Graph ID `scene:bronx-hip-hop`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph period** · 1973–1980 (circa)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · A neighborhood-rooted cultural movement built by Black, Latino, and West Indian teenagers through DJing, MCing, dance, and visual art. Its early history is community-based and should not be reduced to a single inventor or party.
+## Sources checked
 
-**Graph citations** · [1](<https://nmaahc.si.edu/explore/stories/hip-hop-bronx>), [2](<https://timeline.carnegiehall.org/genres/rap-hip-hop>)
+- [National Museum of African American History and Culture: Hip-hop in the Bronx](https://nmaahc.si.edu/explore/stories/hip-hop-bronx) — Museum account locates the movement in the Bronx and describes its emergence from Black and Latino youth culture.
+- [Carnegie Hall: Rap and hip-hop timeline](https://timeline.carnegiehall.org/genres/rap-hip-hop) — Institutional timeline documents early Bronx hip-hop and its cultural forms.
+- [Smithsonian: The history of the first hip-hop block party](https://www.smithsonianmag.com/smithsonian-institution/how-the-block-party-became-an-urban-phenomenon-180980560/) — Recaps 1520 Sedgwick Avenue while retaining community context; useful caution against a single-inventor origin myth.
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+A neighborhood-rooted cultural movement built by Black, Latino, and West Indian teenagers through DJing, MCing, dance, and visual art. Its early history is community-based and should not be reduced to a single inventor or party. Overall confidence: high.

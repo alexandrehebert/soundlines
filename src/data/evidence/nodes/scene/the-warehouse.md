@@ -2,10 +2,16 @@
 
 Graph ID `scene:the-warehouse`
 
-**Review status** · Dates and venue history checked
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph citations** · [1](<https://www.encyclopedia.chicagohistory.org/pages/410072.html>), [2](<https://www.preservationchicago.org/wp-content/uploads/2023/12/Warehouse-Chi-7-2023-Final.pdf>)
+**Reviewed** · 2026-11-04
 
-## Evidence review
+## Sources checked
 
-The Encyclopedia of Chicago dates Knuckles’s residency to 1977–1982. Preservation Chicago identifies Williams as the club founder and also dates closure to 1982. The graph retains that range and describes the venue’s role in house without asserting a definitive etymology.
+- [WTTW Chicago Stories: House music foundations](https://www.wttw.com/chicago-stories/house-music/foundation-for-the-house-music-movement) — Public-media history documents the Warehouse, Frankie Knuckles, and Chicago’s Black and queer dance-floor community.
+- [Preservation Chicago: The Warehouse](https://www.preservationchicago.org/wp-content/uploads/2023/12/Warehouse-Chi-7-2023-Final.pdf) — Historic-preservation research identifies the club’s significance to house music and Chicago’s gay and Black communities.
+- [Encyclopedia of Chicago: The Warehouse](https://www.encyclopedia.chicagohistory.org/pages/410072.html) — Reference entry documents the club and its relation to Chicago house.
+
+## Assessment
+
+A Chicago club founded by Robert Williams, with Frankie Knuckles as resident DJ. Its predominantly Black gay dance floor helped shape early house music. Overall confidence: high.

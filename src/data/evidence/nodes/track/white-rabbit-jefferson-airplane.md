@@ -2,12 +2,16 @@
 
 Graph ID `track:white-rabbit-jefferson-airplane`
 
-**Review status** · Pending source review
+**Review status** · reviewed
 
-**Graph period** · 1967 (year)
+**Reviewed** · 2026-11-04
 
-**Graph claim** · White Rabbit (1967), performed by Jefferson Airplane; representative recording of Psychedelic Rock.
+## Sources checked
 
-**Graph citations** · [1](<https://en.wikipedia.org/wiki/White_Rabbit_(song)>)
+- [Jefferson Airplane official timeline](https://jeffersonairplane.com/timeline_slider_post/1967/) — Documents the 1967 Surrealistic Pillow-era release context.
+- [RCA/BMG Heritage audio metadata](https://www.youtube.com/watch?v=5aeWicwy7fA) — Credits Jefferson Airplane, Grace Slick, and the 1967 recording/release.
+- [Jefferson Airplane official single audio](https://www.youtube.com/watch?v=tUXxSIUYyYQ) — Labels the mono single version as originally released in 1967.
 
-**Citation retrieval** · 0 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.
+## Assessment
+
+The 1967 recording and Grace Slick authorship are confirmed by artist and label metadata. Psychedelic rock is high confidence.

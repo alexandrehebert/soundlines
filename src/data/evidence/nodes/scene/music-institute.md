@@ -2,10 +2,16 @@
 
 Graph ID `scene:music-institute`
 
-**Review status** · Dates and venue history checked
+**Review status** · Reviewed · Claims cross-checked against institutional and scholarly sources.
 
-**Graph citations** · [1](<https://www.sydneyfestival.org.au/stories/whirlwind-history-lesson-detroit-music-institute>), [2](<https://timeline.carnegiehall.org/genres/detroit-techno>)
+**Reviewed** · 2026-11-04
 
-## Evidence review
+## Sources checked
 
-Sydney Festival dates the opening to May 1988 and cites the November 1989 closing flyer. Carnegie Hall names the same founders and documents the club’s role in Detroit techno, but gives a range through 1990. The graph keeps 1989 because the closing flyer supplies more specific evidence.
+- [Carnegie Hall: Detroit techno timeline](https://timeline.carnegiehall.org/genres/detroit-techno) — Institutional timeline documents Detroit techno’s artists, institutions, and scene context.
+- [Red Bull Music Academy: Nightclubbing, The Music Institute](https://daily.redbullmusicacademy.com/2017/05/music-institute-nightclubbing/) — Detailed historical account dates the Detroit after-hours club to May 1988 and describes its role in the city’s techno network.
+- [Quarter Detroit: The Music Institute](https://www.quarterdetroit.com/place/?lang=en&slug=the-music-institute) — Local cultural-history project records the downtown club’s 1988–89 dates and significance.
+
+## Assessment
+
+A Detroit after-hours club founded by George Baker, Chez Damier and Alton Miller. Its house and techno nights ran from May 1988 to November 1989. Overall confidence: high.

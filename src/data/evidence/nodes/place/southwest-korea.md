@@ -2,10 +2,16 @@
 
 Graph ID `place:southwest-korea`
 
-**Review status** · Pending source review
+**Review status** · Reviewed · UNESCO's broad regional designation confirmed by Korean government history.
 
-**Graph claim** · A broad region identified by UNESCO as the historical home of pansori’s emergence.
+**Reviewed** · 2026-11-04
 
-**Graph citations** · [1](<https://ich.unesco.org/en/RL/pansori-epic-chant-00070>)
+## Sources checked
 
-**Citation retrieval** · 1 bulk responses, 0 browser opens, 0 unsuccessful, 0 pending.
+- [UNESCO Intangible Cultural Heritage: Pansori epic chant](https://ich.unesco.org/en/RL/pansori-epic-chant-00070) — UNESCO says pansori originated in south-west Korea in the seventeenth century, probably from shamanic narrative songs.
+- [Korea.net: Pansori—Korea’s Traditional Epic Vocal Art](https://www.korea.net/K-InfoHub/SubMainDetail/view?articleId=3981&headwordCd=77&headwordGroupCd=17&pageIndex=1) — Republic of Korea government source also places the origin in southwestern regions and describes later regional styles across Jeolla, Gyeonggi, and Chungcheong.
+- [Academy of Korean Studies: Korean Intangible Heritage](https://www.aks.ac.kr/ikorea/upload/intl/korean/UserFiles/Heritage_eng.pdf) — Reference document identifies Jeolla Province as the origin area while noting transmission across other regions.
+
+## Assessment
+
+The graph's broad “Southwest Korea” phrasing avoids assigning the tradition to one city or province. The origin account is a scholarly-historical framing rather than a precisely documented event. Overall confidence: medium-high.
