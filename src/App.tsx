@@ -10,6 +10,7 @@ import { SearchBar } from './components/SearchBar.tsx'
 import { Timeline } from './components/Timeline.tsx'
 import { GenreBubbles } from './components/GenreBubbles.tsx'
 import { History } from './components/History.tsx'
+import { BrandLink } from './components/BrandLink.tsx'
 import { Home } from './components/Home.tsx'
 import { MOBILE_DETAIL_COLLAPSED_OFFSET, MOBILE_DETAIL_HEIGHT } from './components/mobileDetailSheet.ts'
 import rawGraph from './data/graph.json'
@@ -111,8 +112,9 @@ export function Explorer() {
   return (
     <div className="flex h-dvh flex-col">
       <header className={`${optionsOpen ? 'z-50' : 'z-20'} flex shrink-0 items-center gap-2 border-b border-slate-800 bg-slate-950/90 px-3 py-2 md:flex-wrap md:gap-x-6 md:gap-y-3 md:px-5 md:py-3`}>
-        <a
+        <BrandLink
           href="/"
+          iconClassName="h-5 w-5 text-violet-400 md:h-6 md:w-6"
           aria-label="Soundlines home"
           onClick={(event) => {
             if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
@@ -123,14 +125,13 @@ export function Explorer() {
           }}
           className="flex shrink-0 items-center gap-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:gap-2.5"
         >
-          <Disc3 className="h-5 w-5 text-violet-400 md:h-6 md:w-6" />
           <div>
             <h1 className="text-lg font-bold leading-tight tracking-tight text-white">Soundlines</h1>
             <p className="hidden text-[11px] font-medium leading-tight text-slate-500 md:block">
-              a chronological map of music lineages
+              an atlas of musical lineages
             </p>
           </div>
-        </a>
+        </BrandLink>
         <div className="ml-auto shrink-0 md:ml-0 md:w-80">
           <SearchBar />
         </div>

@@ -1,10 +1,11 @@
 import { ArrowDown, ArrowLeftRight, ArrowRight, ArrowUpRight, Bubbles, ChartGantt, Disc3, Guitar, Headphones, Heart, History, Landmark, Radio, Users, type LucideIcon } from 'lucide-react'
 import { motion, useReducedMotion, useScroll, useSpring, useTransform } from 'motion/react'
-import { useId, useMemo, useState, type MouseEvent, type ReactNode } from 'react'
+import { useId, useMemo, useRef, useState, type MouseEvent, type ReactNode } from 'react'
 import { useExplorer } from '../ExplorerContext.ts'
 import { formatEventPeriod } from '../graph/history.ts'
 import { VIEW_PATHS, viewForNode, type ExplorerView } from '../graph/timeline.ts'
 import { EDGE_TYPE_LABELS, NODE_TYPE_LABELS, type GraphNode } from '../graph/types.ts'
+import { BrandLink } from './BrandLink.tsx'
 import { GenreSample } from './GenreSample.tsx'
 import { SearchBar } from './SearchBar.tsx'
 import './Home.css'
@@ -119,6 +120,7 @@ function SpotlightWidget({ title, icon: Icon, picks, relationship, nextLabel, sc
 export function Home() {
   const { index } = useExplorer()
   const reduceMotion = useReducedMotion()
+  const widgetsRef = useRef<HTMLElement>(null)
   const scrollReveal = reduceMotion ? undefined : reveal
   const [connectionIndex, setConnectionIndex] = useState(0)
   const [listeningIndex, setListeningIndex] = useState(0)
@@ -143,7 +145,7 @@ export function Home() {
     <div className="discovery">
       <header className="discovery-header">
         <div className="discovery-width discovery-header-inner">
-          <a className="discovery-brand" href="/" aria-current="page"><Disc3 aria-hidden="true" /> Soundlines</a>
+          <BrandLink className="discovery-brand" href="/" aria-current="page">Soundlines</BrandLink>
           <div className="discovery-search"><SearchBar /></div>
         </div>
       </header>
@@ -156,12 +158,18 @@ export function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: reduceMotion ? 0 : 0.65, ease: 'easeOut' }}
           >
-            <p className="discovery-kicker"><span /> An atlas of music history</p>
+            <p className="discovery-kicker"><span /> an atlas of musical lineages</p>
             <h1 id="discovery-heading">Follow the<br /> <em>sound.</em></h1>
             <p className="discovery-intro">Trace the genres, artists and instruments that shaped the music we hear today.</p>
             <div className="discovery-actions">
               <ViewLink view="genre" className="discovery-primary"><ChartGantt size={17} aria-hidden="true" /> Open the timeline <ArrowRight size={17} aria-hidden="true" /></ViewLink>
-              <a className="discovery-secondary" href="#discover">Discover <ArrowDown size={15} aria-hidden="true" /></a>
+              <button
+                type="button"
+                className="discovery-secondary"
+                onClick={() => widgetsRef.current?.scrollIntoView({ behavior: reduceMotion ? 'instant' : 'smooth' })}
+              >
+                Discover <ArrowDown size={15} aria-hidden="true" />
+              </button>
             </div>
           </motion.div>
           <div className="discovery-record" aria-hidden="true">
@@ -182,7 +190,7 @@ export function Home() {
           ))}
         </motion.nav>
 
-        <section id="discover" className="discovery-widgets" aria-labelledby="discovery-widgets-heading">
+        <section ref={widgetsRef} id="discover" className="discovery-widgets" aria-labelledby="discovery-widgets-heading">
           <motion.h2 {...scrollReveal} id="discovery-widgets-heading">Discover the catalogue</motion.h2>
           <div className="discovery-grid">
             <div className="discovery-column">
