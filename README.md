@@ -5,13 +5,19 @@ A chronological map of music genres, artists, instruments, labels, scenes, histo
 Vite, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vitest, linted with oxlint, and deployable to Vercel.
 
 The header and browser favicon share the same violet vinyl-disc icon.
-On first load, a centered spinning vinyl logo covers the page before React starts.
+On first load, the landing page's grooved vinyl spins in the center before React
+starts. Once the landing page is ready, the cover fades away and the vinyl moves
+into its hero position over 700ms. Other entry pages simply fade out the cover.
+The hero copy stays in its final position throughout; catalogue widgets fade in
+as they enter the viewport without shifting their alignment.
+Clicking the header brand while already on the landing page does not reload it
+or replay the opening animation; modified clicks retain normal link behavior.
 The same overlay appears when changing modes, genre layout, or sort order
 (including cross-mode search, related-node navigation, and browser history).
 It appears instantly before the next view renders, stays visible for at least
-550ms, and fades out over 400ms after the new view
+550ms, and fades out over 520ms after the new view
 has rendered and the document has loaded. Ordinary selections, panning, and zoom
-do not trigger it. Reduced-motion preferences disable the spin and fade.
+do not trigger it. Reduced-motion preferences disable the spin, fade, and movement.
 
 ## The timeline
 
@@ -166,6 +172,8 @@ historical events. Artist lanes and detail badges use the same families.
 - The year axis and compressed-era annotations stay visible while scrolling
   through either timeline, follow horizontal panning and zoom, and reduce
   label density on narrow screens, with extra spacing for BCE labels.
+  Its opaque cover overlaps the upper edge by 1px to prevent scrolling bars
+  showing through fractional-pixel seams below the legend.
   Reduced-motion preferences shorten interface transitions.
 - Horizontal trackpad momentum is handled by the timeline without native
   horizontal overscroll; rapid wheel updates accumulate in input order and render

@@ -32,9 +32,9 @@ const HISTORY_PICKS = ['event:phonograph-invented', 'event:bronx-back-to-school-
 
 const PAGE_SIZE = 5
 const reveal = {
-  initial: { opacity: 0.55, y: 18 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, amount: 0.15 },
+  initial: { opacity: 0.55 },
+  whileInView: { opacity: 1 },
+  viewport: { once: true, amount: 0 },
   transition: { duration: 0.55, ease: 'easeOut' },
 } as const
 
@@ -47,10 +47,10 @@ function SpinningVinyl() {
 }
 const dateFormatter = new Intl.DateTimeFormat('en', { dateStyle: 'medium', timeZone: 'UTC' })
 
-function follow(event: MouseEvent<HTMLAnchorElement>, navigate: () => void) {
+function follow(event: MouseEvent<HTMLAnchorElement>, navigate?: () => void) {
   if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
   event.preventDefault()
-  navigate()
+  navigate?.()
 }
 
 function ViewLink({ view, className, children }: { view: ExplorerView; className: string; children: ReactNode }) {
@@ -145,7 +145,7 @@ export function Home() {
     <div className="discovery">
       <header className="discovery-header">
         <div className="discovery-width discovery-header-inner">
-          <BrandLink className="discovery-brand" href="/" aria-current="page">Soundlines</BrandLink>
+          <BrandLink className="discovery-brand" href="/" aria-current="page" onClick={(event) => follow(event)}>Soundlines</BrandLink>
           <div className="discovery-search"><SearchBar /></div>
         </div>
       </header>

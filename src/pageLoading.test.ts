@@ -1,24 +1,37 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 describe('page loading lifecycle', () => {
-  let overlay: { dataset: { loading: string }; setAttribute: ReturnType<typeof vi.fn> }
+  let overlay: {
+    dataset: { loading: string; opening?: string; docking?: string }
+    setAttribute: ReturnType<typeof vi.fn>
+    hasAttribute: ReturnType<typeof vi.fn>
+    querySelector: ReturnType<typeof vi.fn>
+    animate: ReturnType<typeof vi.fn>
+  }
   let root: { setAttribute: ReturnType<typeof vi.fn> }
-  let documentState: { readyState: string; getElementById: (id: string) => unknown }
+  let documentState: { readyState: string; getElementById: (id: string) => unknown; querySelector: ReturnType<typeof vi.fn> }
   let events: EventTarget
   let loading: typeof import('./pageLoading.ts')
 
   beforeEach(async () => {
     vi.resetModules()
     vi.useFakeTimers()
-    overlay = { dataset: { loading: 'true' }, setAttribute: vi.fn() }
+    overlay = {
+      dataset: { loading: 'true', opening: '' },
+      setAttribute: vi.fn(),
+      hasAttribute: vi.fn((name) => name === 'data-opening' && overlay.dataset.opening !== undefined),
+      querySelector: vi.fn(),
+      animate: vi.fn(),
+    }
     root = { setAttribute: vi.fn() }
     events = new EventTarget()
     documentState = {
       readyState: 'complete',
       getElementById: (id) => id === 'page-loading' ? overlay : root,
+      querySelector: vi.fn(),
     }
     vi.stubGlobal('document', documentState)
-    vi.stubGlobal('window', Object.assign(events, { matchMedia: () => ({ matches: false }) }))
+    vi.stubGlobal('window', Object.assign(events, { matchMedia: () => ({ matches: false }), innerWidth: 1200, innerHeight: 800 }))
     vi.stubGlobal('requestAnimationFrame', (callback: FrameRequestCallback) =>
       setTimeout(() => callback(performance.now()), 16))
     vi.stubGlobal('cancelAnimationFrame', clearTimeout)
@@ -96,6 +109,80 @@ describe('page loading lifecycle', () => {
     expect(overlay.dataset.loading).toBe('true')
     loading.finishPageLoading()
     vi.advanceTimersByTime(33)
+    expect(overlay.dataset.loading).toBe('false')
+  })
+
+  function mockLandingVinyl() {
+    const cancel = vi.fn()
+    const animate = vi.fn(() => ({ cancel }))
+    overlay.animate = animate
+    const record = { animate }
+    const vinyl = {
+      querySelector: vi.fn(() => record),
+      getBoundingClientRect: () => ({ left: 400, top: 300, width: 200, height: 200 }),
+      animate,
+    }
+    const target = {
+      offsetWidth: 300,
+      getBoundingClientRect: () => ({ left: 800, top: 100, width: 360, height: 360 }),
+      parentElement: {},
+      closest: () => ({ getBoundingClientRect: () => ({ left: 20, top: 80, right: 1180, bottom: 600 }) }),
+    }
+    documentState.querySelector.mockReturnValue(target)
+    overlay.querySelector.mockReturnValue(vinyl)
+    vi.stubGlobal('getComputedStyle', () => ({ transform: 'rotate(-16deg)', opacity: '1', borderRadius: '24px' }))
+    return { animate, cancel }
+  }
+
+  it('moves the opening vinyl to the landing record center and size before revealing it', () => {
+    const { animate, cancel } = mockLandingVinyl()
+    loading.finishPageLoading()
+    vi.advanceTimersByTime(550)
+    expect(overlay.dataset.docking).toBe('')
+    expect(overlay.dataset.loading).toBe('true')
+    expect(animate).toHaveBeenCalledWith([
+      { transform: 'translate(0, 0) scale(1)', opacity: 1 },
+      { transform: 'translate(480px, -120px) scale(1.5)', opacity: '1' },
+    ], expect.objectContaining({ duration: 700, fill: 'forwards' }))
+    expect(animate).toHaveBeenCalledWith([
+      { clipPath: 'inset(0px round 0px)', offset: 0 },
+      { clipPath: 'inset(0px round 0px)', offset: 0.5 },
+      { clipPath: 'inset(80px 20px 200px 20px round 24px)' },
+    ], expect.objectContaining({ duration: 700 }))
+    vi.advanceTimersByTime(699)
+    expect(overlay.dataset.loading).toBe('true')
+    vi.advanceTimersByTime(1)
+    expect(overlay.dataset.loading).toBe('false')
+    expect(cancel).toHaveBeenCalledTimes(3)
+  })
+
+  it('cancels docking animations and dismissal on navigation', () => {
+    const { cancel } = mockLandingVinyl()
+    loading.finishPageLoading()
+    vi.advanceTimersByTime(550)
+    loading.transitionPage(vi.fn())
+    expect(cancel).toHaveBeenCalledTimes(3)
+    expect(overlay.dataset.docking).toBeUndefined()
+    expect(overlay.dataset.opening).toBeUndefined()
+    vi.advanceTimersByTime(700)
+    expect(overlay.dataset.loading).toBe('true')
+  })
+
+  it('does not dock on subsequent navigation to the landing page', () => {
+    const { animate } = mockLandingVinyl()
+    delete overlay.dataset.opening
+    loading.finishPageLoading()
+    vi.advanceTimersByTime(550)
+    expect(animate).not.toHaveBeenCalled()
+    expect(overlay.dataset.loading).toBe('false')
+  })
+
+  it('reveals the landing vinyl without movement for reduced motion', () => {
+    const { animate } = mockLandingVinyl()
+    vi.stubGlobal('window', Object.assign(events, { matchMedia: () => ({ matches: true }) }))
+    loading.finishPageLoading()
+    vi.advanceTimersByTime(550)
+    expect(animate).not.toHaveBeenCalled()
     expect(overlay.dataset.loading).toBe('false')
   })
 })

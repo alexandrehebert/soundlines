@@ -1,3 +1,5 @@
+@import "../vinyl.css";
+
 .discovery {
   --home-accent: #c4b5fd;
   --home-muted: #a8b0c8;
@@ -120,29 +122,8 @@
 .discovery-record { display: grid; justify-items: center; gap: 1rem; padding: 1.5rem; }
 
 .discovery-vinyl {
-  display: grid;
-  place-items: center;
   width: min(100%, 21rem);
-  aspect-ratio: 1;
-  border: 1px solid #766095;
-  border-radius: 50%;
-  background:
-    conic-gradient(from 65deg, transparent 0%, #9a78d544 10%, transparent 24%, #12101b8c 38%, #ac88e066 62%, transparent 73%),
-    repeating-radial-gradient(circle, #2b203c 0 1px, #181324 2px 4px, #231a33 5px 6px);
-  box-shadow: 0 1rem 3rem #0c071bba, inset 0 0 1.4rem #0b071c;
   transform: rotate(-16deg);
-}
-
-.discovery-label {
-  display: grid;
-  place-items: center;
-  width: 31%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 1px solid #f1dcff96;
-  color: #2d1c4d;
-  background: linear-gradient(135deg, #f4d9ff, #a586ef 57%, #795fca);
-  box-shadow: 0 0 0 .35rem #181026;
 }
 
 .discovery-nav { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin-top: 1rem; }
@@ -292,20 +273,4 @@
   .discovery-grid { grid-template-columns: minmax(0, 1fr); }
   .discovery-destination { gap: .45rem; }
   .discovery-destination-icon, .discovery-destination .discovery-link-arrow { width: 1rem; }
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .discovery-hero-copy, .discovery-record {
-    transition: translate 600ms cubic-bezier(.2, .75, .25, 1), opacity 520ms ease-out;
-  }
-
-  #page-loading[data-opening][data-loading="true"] ~ #root .discovery-hero-copy {
-    opacity: .65;
-    translate: 0 12px;
-  }
-
-  #page-loading[data-opening][data-loading="true"] ~ #root .discovery-record {
-    translate: 0 16px;
-  }
 }

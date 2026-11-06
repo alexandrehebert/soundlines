@@ -161,7 +161,8 @@ body {
 
 .timeline-axis {
   background: #020617;
-  box-shadow: 0 1px 0 rgb(30 41 59 / 0.9);
+  /* Cover subpixel gaps above the composited sticky header without moving ticks. */
+  box-shadow: 0 -1px 0 #020617, 0 1px 0 rgb(30 41 59 / 0.9);
 }
 
 .visualization-item {

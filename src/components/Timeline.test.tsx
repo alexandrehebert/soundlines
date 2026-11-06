@@ -135,6 +135,13 @@ describe('timeline viewport rendering', () => {
 })
 
 describe('timeline year axis', () => {
+  it('covers fractional-pixel seams above the sticky axis without changing its geometry', () => {
+    const css = readFileSync(new URL('../index.css', import.meta.url), 'utf8')
+    const axisStyles = css.match(/\.timeline-axis\s*\{([^}]+)\}/)?.[1]
+    expect(axisStyles).toContain('background: #020617')
+    expect(axisStyles).toContain('box-shadow: 0 -1px 0 #020617, 0 1px 0 rgb(30 41 59 / 0.9)')
+  })
+
   it.each([
     ['genre', 'family'],
     ['genre', 'oldest-first'],
@@ -226,3 +233,4 @@ describe('timeline ordering', () => {
     expect(sorted).toContain('Historical · off-screen to the left; activate to reveal')
   })
 })
+import { readFileSync } from 'node:fs'

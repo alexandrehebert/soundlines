@@ -1,3 +1,5 @@
+@import "./vinyl.css";
+
 #page-loading {
   position: fixed;
   inset: 0;
@@ -49,10 +51,34 @@
 }
 
 .page-loading-vinyl {
-  width: clamp(120px, 24vw, 180px);
-  height: auto;
-  filter: drop-shadow(0 0 28px rgb(139 92 246 / 35%));
+  width: clamp(180px, 32vw, 336px);
+  aspect-ratio: 1;
+}
+
+.page-loading-vinyl .discovery-vinyl {
   animation: page-loading-spin 1.8s linear infinite;
+}
+
+#page-loading[data-docking] {
+  background: transparent;
+  transition: background 520ms ease;
+}
+
+#page-loading[data-docking] .page-loading-wordmark {
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+#page-loading[data-docking][data-loading="false"] {
+  transition: none;
+}
+
+#page-loading[data-docking][data-loading="false"] .page-loading-record {
+  transition: none;
+}
+
+#page-loading[data-opening][data-loading="true"] ~ #root .discovery-vinyl {
+  visibility: hidden;
 }
 
 @keyframes page-loading-spin {
@@ -65,7 +91,7 @@
     transition: none;
   }
 
-  .page-loading-vinyl {
+  .page-loading-vinyl .discovery-vinyl {
     animation: none;
   }
 }

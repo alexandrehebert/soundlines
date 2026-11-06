@@ -1,0 +1,25 @@
+.discovery-vinyl {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  box-sizing: border-box;
+  border: 1px solid #766095;
+  border-radius: 50%;
+  background:
+    conic-gradient(from 65deg, transparent 0%, #9a78d544 10%, transparent 24%, #12101b8c 38%, #ac88e066 62%, transparent 73%),
+    repeating-radial-gradient(circle, #2b203c 0 1px, #181324 2px 4px, #231a33 5px 6px);
+  box-shadow: 0 1rem 3rem #0c071bba, inset 0 0 1.4rem #0b071c;
+}
+
+.discovery-label {
+  display: grid;
+  place-items: center;
+  width: 31%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid #f1dcff96;
+  color: #2d1c4d;
+  background: linear-gradient(135deg, #f4d9ff, #a586ef 57%, #795fca);
+  box-shadow: 0 0 0 .35rem #181026;
+}
