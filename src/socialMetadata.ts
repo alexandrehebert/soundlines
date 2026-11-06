@@ -1,5 +1,5 @@
 import {
-  readTimelineOrders, VIEW_PATHS, viewForNode, viewFromUrl, writeTimelineOrders, type ExplorerView,
+  isHomeUrl, readTimelineOrders, VIEW_PATHS, viewForNode, viewFromUrl, writeTimelineOrders, type ExplorerView,
 } from './graph/timeline.ts'
 import { NODE_TYPE_LABELS, type GraphNode } from './graph/types.ts'
 
@@ -25,6 +25,11 @@ const VIEW_METADATA: Record<ExplorerView, { title: string; description: string }
     title: 'Music History | Soundlines',
     description: 'Explore pivotal events, inventions, performances, and cultural movements throughout music history on Soundlines.',
   },
+}
+
+const HOME_METADATA = {
+  title: 'Soundlines | Discover Music History',
+  description: 'Follow the connections between music genres, discover new catalogue entries, and explore the history of music on Soundlines.',
 }
 
 const BUBBLE_METADATA = {
@@ -59,12 +64,13 @@ export function socialMetadata(url: URL, nodeById: ReadonlyMap<string, GraphNode
   const node = focus ? nodeById.get(focus) : undefined
   const view = viewForNode(node?.type, viewFromUrl(url))
   const bubbles = url.searchParams.get('layout') === 'bubbles'
-  const canonical = new URL(VIEW_PATHS[view], url.origin)
+  const home = isHomeUrl(url, Boolean(node))
+  const canonical = new URL(home ? '/' : VIEW_PATHS[view], url.origin)
   if (node) canonical.searchParams.set('focus', node.id)
   writeTimelineOrders(canonical.searchParams, readTimelineOrders(url.searchParams))
   if (bubbles) canonical.searchParams.set('layout', 'bubbles')
 
-  const page = view === 'genre' && bubbles ? BUBBLE_METADATA : VIEW_METADATA[view]
+  const page = home ? HOME_METADATA : view === 'genre' && bubbles ? BUBBLE_METADATA : VIEW_METADATA[view]
   const title = node ? `${node.name} | ${NODE_TYPE_LABELS[node.type]} | Soundlines` : page.title
   const description = node
     ? node.description?.trim() || `Discover ${node.name} (${NODE_TYPE_LABELS[node.type]}) and explore connections across music history on Soundlines.`

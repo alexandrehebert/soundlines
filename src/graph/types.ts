@@ -161,6 +161,8 @@ export interface GraphNode {
   id: string
   type: NodeType
   name: string
+  /** Catalogue addition date (YYYY-MM-DD), separate from the historical period. */
+  addedOn?: string
   period?: Period | null
   description?: string
   /**

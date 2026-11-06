@@ -139,6 +139,7 @@ export function ExplorerStoryProvider({
   const value = useMemo<NonNullable<ContextType<typeof ExplorerContext>>>(() => ({
     index,
     model,
+    isHome: false,
     ...location,
     order: location.orders[location.timelineView],
     selectNode,

@@ -22,7 +22,7 @@ function render(initialTab: StatsTab, reviewed = ['genre:jazz', 'e1']) {
     <ExplorerContext.Provider value={{
       index, model: createTimelineModel(index, 'genre'), view: 'genre',
       selectedId: null, selectNode: vi.fn(), changeView: vi.fn(),
-      order: 'family', changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(),
+      order: 'family', changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(), isHome: false,
       historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
       viewRange: [1900, 2000], setViewRange: vi.fn(),
     }}>

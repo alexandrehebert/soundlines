@@ -10,6 +10,7 @@ import { SearchBar } from './components/SearchBar.tsx'
 import { Timeline } from './components/Timeline.tsx'
 import { GenreBubbles } from './components/GenreBubbles.tsx'
 import { History } from './components/History.tsx'
+import { Home } from './components/Home.tsx'
 import { MOBILE_DETAIL_COLLAPSED_OFFSET, MOBILE_DETAIL_HEIGHT } from './components/mobileDetailSheet.ts'
 import rawGraph from './data/graph.json'
 import type { TimelineOrder } from './graph/layout.ts'
@@ -570,11 +571,16 @@ export function TimelineOrderSelect({
   )
 }
 
+function SoundlinesPage() {
+  const { isHome } = useExplorer()
+  return isHome ? <Home /> : <Explorer />
+}
+
 function App() {
   return (
     <ExplorerProvider graph={graph}>
       <MotionConfig reducedMotion="user">
-        <Explorer />
+        <SoundlinesPage />
       </MotionConfig>
     </ExplorerProvider>
   )

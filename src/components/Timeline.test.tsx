@@ -49,7 +49,7 @@ function renderTimeline(
     <ExplorerContext.Provider value={{
       index, model: createTimelineModel(index, view), view,
       selectedId, selectNode: vi.fn(), changeView: vi.fn(),
-      order, changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(),
+      order, changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(), isHome: false,
       historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
       viewRange, setViewRange: vi.fn(),
     }}>

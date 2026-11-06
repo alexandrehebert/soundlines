@@ -15,6 +15,7 @@ import { revealEraRange } from './graph/layout.ts'
 import {
   createTimelineModel,
   defaultViewRange,
+  isHomeUrl,
   isTimelineView,
   readTimelineOrders,
   VIEW_PATHS,
@@ -33,6 +34,7 @@ import { updateDocumentMetadata } from './socialMetadataClient.ts'
 
 type YearRange = [number, number]
 type ExplorerLocation = {
+  isHome: boolean
   view: ExplorerView
   timelineView: TimelineView
   selectedId: string | null
@@ -40,9 +42,10 @@ type ExplorerLocation = {
   genreDisplay: GenreDisplay
 }
 
-function explorerUrl({ view, selectedId, orders, genreDisplay }: ExplorerLocation): URL {
+function explorerUrl({ isHome, view, selectedId, orders, genreDisplay }: ExplorerLocation): URL {
   const url = new URL(window.location.href)
-  url.pathname = VIEW_PATHS[view]
+  url.pathname = isHome ? '/' : VIEW_PATHS[view]
+  if (!isHome && url.hash === '#discover') url.hash = ''
   url.searchParams.delete('view')
   if (selectedId) url.searchParams.set('focus', selectedId)
   else url.searchParams.delete('focus')
@@ -63,11 +66,11 @@ export function useExplorerState(graph: MusicGraph) {
     const timelineView = isTimelineView(view) ? view : 'genre'
     const orders = readTimelineOrders(params)
     const genreDisplay = params.get('layout') === 'bubbles' ? 'bubbles' : 'bars'
-    return { view, timelineView, selectedId: node?.id ?? null, orders, genreDisplay }
+    return { isHome: isHomeUrl(url, Boolean(node)), view, timelineView, selectedId: node?.id ?? null, orders, genreDisplay }
   }, [index])
   const [location, setLocation] = useState(readLocation)
   const [historyFilters, setHistoryFilters] = useState<HistoryFilters>(DEFAULT_HISTORY_FILTERS)
-  const { view, timelineView, selectedId, orders, genreDisplay } = location
+  const { isHome, view, timelineView, selectedId, orders, genreDisplay } = location
   const order = orders[timelineView]
   const [ranges, setRanges] = useState<Record<TimelineView, YearRange>>(() => {
     const node = location.selectedId ? index.nodeById.get(location.selectedId) : undefined
@@ -104,16 +107,17 @@ export function useExplorerState(graph: MusicGraph) {
   }, [index])
 
   const navigate = useCallback((next: ExplorerLocation) => {
+    const changesPage = next.isHome !== isHome || next.view !== view
     const update = () => {
-      if (next.view !== view) window.history.pushState(null, '', explorerUrl(next))
+      if (changesPage) window.history.pushState(null, '', explorerUrl(next))
       setLocation(next)
     }
-    if (next.view !== view || next.orders[next.timelineView] !== order || next.genreDisplay !== genreDisplay) {
+    if (changesPage || next.orders[next.timelineView] !== order || next.genreDisplay !== genreDisplay) {
       transitionPage(update)
     } else {
       update()
     }
-  }, [view, order, genreDisplay])
+  }, [isHome, view, order, genreDisplay])
 
   useEffect(() => {
     const url = explorerUrl(location)
@@ -137,6 +141,7 @@ export function useExplorerState(graph: MusicGraph) {
     const nextView = viewForNode(node?.type, view)
     const next = {
       ...location,
+      isHome: false,
       view: nextView,
       timelineView: isTimelineView(nextView) ? nextView : timelineView,
       selectedId: id,
@@ -146,14 +151,15 @@ export function useExplorerState(graph: MusicGraph) {
   }, [index, view, timelineView, location, revealSelection, navigate])
 
   const changeView = useCallback((nextView: ExplorerView) => {
-    if (view === nextView) return
+    if (!isHome && view === nextView) return
     navigate({
       ...location,
+      isHome: false,
       view: nextView,
       timelineView: isTimelineView(nextView) ? nextView : timelineView,
       selectedId: null,
     })
-  }, [view, timelineView, location, navigate])
+  }, [isHome, view, timelineView, location, navigate])
 
   const changeHistoryFilters = useCallback((next: HistoryFilters) => {
     const node = selectedId ? index.nodeById.get(selectedId) : undefined
@@ -183,7 +189,7 @@ export function useExplorerState(graph: MusicGraph) {
       artist: defaultViewRange('artist'),
       instrument: defaultViewRange('instrument'),
     })
-    navigate({ view: 'genre', timelineView: 'genre', selectedId: null, orders: readTimelineOrders(params), genreDisplay: 'bars' })
+    navigate({ isHome: true, view: 'genre', timelineView: 'genre', selectedId: null, orders: readTimelineOrders(params), genreDisplay: 'bars' })
   }, [navigate])
 
   const setViewRange = useCallback((range: SetStateAction<YearRange>) => {
@@ -195,10 +201,10 @@ export function useExplorerState(graph: MusicGraph) {
   }, [view])
 
   return useMemo(() => ({
-    index, model, view, selectedId, selectNode, changeView, order, changeOrder,
+    index, model, isHome, view, selectedId, selectNode, changeView, order, changeOrder,
     genreDisplay, changeGenreDisplay, goHome, historyFilters, changeHistoryFilters,
     viewRange: ranges[timelineView], setViewRange,
-  }), [index, model, view, timelineView, selectedId, selectNode, changeView, order, changeOrder, genreDisplay, changeGenreDisplay, goHome, historyFilters, changeHistoryFilters, ranges, setViewRange])
+  }), [index, model, isHome, view, timelineView, selectedId, selectNode, changeView, order, changeOrder, genreDisplay, changeGenreDisplay, goHome, historyFilters, changeHistoryFilters, ranges, setViewRange])
 }
 
 export const ExplorerContext = createContext<ReturnType<typeof useExplorerState> | null>(null)

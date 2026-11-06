@@ -40,7 +40,7 @@ function renderHistory(
     <ExplorerContext.Provider value={{
       index, model: createTimelineModel(index, 'genre'), view: 'history',
       selectedId, selectNode: vi.fn(), changeView: vi.fn(), order: 'family', changeOrder: vi.fn(),
-      genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(),
+      genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(), isHome: false,
       historyFilters: filters, changeHistoryFilters: vi.fn(),
       viewRange: [1948, 2026], setViewRange: vi.fn(),
     }}>

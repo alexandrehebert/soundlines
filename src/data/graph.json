@@ -19930,6 +19930,7 @@
       "id": "track:etenraku",
       "type": "track",
       "name": "Etenraku",
+      "addedOn": "2026-11-05",
       "description": "Etenraku, a traditional gagaku court-music piece. The melody’s history and transmission are debated; this node denotes the work generally, not a particular modern recording.",
       "sources": [
         "https://folkways.si.edu/lesson/gagaku/imperial-court-music-of-japan",
@@ -20118,6 +20119,7 @@
       "id": "track:hardcore-vibes-dune",
       "type": "track",
       "name": "Hardcore Vibes",
+      "addedOn": "2026-11-05",
       "period": {
         "start": 1995,
         "end": 1995,
@@ -20443,6 +20445,7 @@
       "id": "track:kalinka",
       "type": "track",
       "name": "Kalinka",
+      "addedOn": "2026-11-05",
       "period": {
         "start": 1860,
         "end": 1860,
@@ -21245,6 +21248,7 @@
       "id": "track:police-and-thieves-junior-murvin",
       "type": "track",
       "name": "Police and Thieves",
+      "addedOn": "2026-11-05",
       "period": {
         "start": 1976,
         "end": 1976,
@@ -23839,6 +23843,7 @@
       "id": "instrument:ukulele",
       "type": "instrument",
       "name": "Ukulele",
+      "addedOn": "2026-11-03",
       "family": "strings",
       "period": {
         "start": 1880,
@@ -23879,6 +23884,7 @@
       "id": "instrument:euphonium",
       "type": "instrument",
       "name": "Euphonium",
+      "addedOn": "2026-11-03",
       "family": "brass",
       "period": {
         "start": 1843,
@@ -23902,6 +23908,7 @@
       "id": "instrument:timpani",
       "type": "instrument",
       "name": "Timpani",
+      "addedOn": "2026-11-03",
       "family": "percussion",
       "period": {
         "start": 1500,
@@ -23944,6 +23951,7 @@
       "id": "instrument:triangle",
       "type": "instrument",
       "name": "Triangle",
+      "addedOn": "2026-11-03",
       "family": "percussion",
       "period": {
         "start": 1400,
@@ -23982,6 +23990,7 @@
       "id": "instrument:piccolo",
       "type": "instrument",
       "name": "Piccolo",
+      "addedOn": "2026-11-03",
       "family": "winds",
       "period": {
         "start": 1700,
@@ -24024,6 +24033,7 @@
       "id": "instrument:bass-clarinet",
       "type": "instrument",
       "name": "Bass clarinet",
+      "addedOn": "2026-11-03",
       "family": "winds",
       "period": {
         "start": 1765,
@@ -24068,6 +24078,7 @@
       "id": "instrument:cor-anglais",
       "type": "instrument",
       "name": "Cor anglais",
+      "addedOn": "2026-11-03",
       "family": "winds",
       "period": {
         "start": 1720,
@@ -24109,6 +24120,7 @@
       "id": "instrument:juno-106",
       "type": "instrument",
       "name": "Roland JUNO-106",
+      "addedOn": "2026-11-03",
       "family": "electronic",
       "period": {
         "start": 1984,
@@ -24138,6 +24150,7 @@
       "id": "artist:dune",
       "type": "artist",
       "name": "Dune",
+      "addedOn": "2026-11-04",
       "family": "techno",
       "period": {
         "start": 1995,
@@ -24161,6 +24174,7 @@
       "type": "event",
       "category": "industry",
       "name": "Berry Gordy establishes Tamla Records",
+      "addedOn": "2026-11-05",
       "period": {
         "start": 1959,
         "end": 1959,
@@ -24178,6 +24192,7 @@
       "id": "place:menlo-park",
       "type": "place",
       "name": "Menlo Park",
+      "addedOn": "2026-11-05",
       "description": "New Jersey community whose Edison laboratory was the site of the 1877 tinfoil phonograph invention.",
       "sources": [
         "https://www.nps.gov/edis/learn/historyculture/origins-of-sound-recording-thomas-edison.htm"
@@ -24188,6 +24203,7 @@
       "id": "place:pittsburgh",
       "type": "place",
       "name": "Pittsburgh",
+      "addedOn": "2026-11-05",
       "description": "Pennsylvania city and early broadcasting center; KDKA’s November 1920 election-results broadcast originated at a Westinghouse site in East Pittsburgh.",
       "sources": [
         "https://www.cbsnews.com/pittsburgh/news/kdkas-historic-broadcast/",
@@ -24199,6 +24215,7 @@
       "id": "artist:junior-murvin",
       "type": "artist",
       "name": "Junior Murvin",
+      "addedOn": "2026-11-05",
       "kind": "person",
       "period": {
         "start": 1965,
@@ -24219,6 +24236,7 @@
       "id": "artist:jamie-principle",
       "type": "artist",
       "name": "Jamie Principle",
+      "addedOn": "2026-11-05",
       "kind": "person",
       "period": {
         "start": 1982,
@@ -24236,6 +24254,7 @@
       "id": "artist:steve-roach",
       "type": "artist",
       "name": "Steve Roach",
+      "addedOn": "2026-11-05",
       "kind": "person",
       "period": {
         "start": 1978,
@@ -24252,6 +24271,7 @@
       "id": "artist:dj-scud",
       "type": "artist",
       "name": "DJ Scud",
+      "addedOn": "2026-11-05",
       "kind": "person",
       "period": {
         "start": 1995,
@@ -24268,6 +24288,7 @@
       "id": "artist:toro-y-moi",
       "type": "artist",
       "name": "Toro y Moi",
+      "addedOn": "2026-11-05",
       "kind": "person",
       "period": {
         "start": 2008,
@@ -24286,6 +24307,7 @@
       "id": "artist:the-chopstars",
       "type": "artist",
       "name": "The Chopstars",
+      "addedOn": "2026-11-05",
       "kind": "collective",
       "period": {
         "start": 2007,
@@ -24303,6 +24325,7 @@
       "id": "artist:rites-of-spring",
       "type": "artist",
       "name": "Rites of Spring",
+      "addedOn": "2026-11-05",
       "kind": "group",
       "period": {
         "start": 1984,
@@ -24319,6 +24342,7 @@
       "id": "artist:ebo-taylor",
       "type": "artist",
       "name": "Ebo Taylor",
+      "addedOn": "2026-11-05",
       "kind": "person",
       "period": {
         "start": 1955,
@@ -24336,6 +24360,7 @@
       "id": "artist:pat-thomas",
       "type": "artist",
       "name": "Pat Thomas",
+      "addedOn": "2026-11-05",
       "kind": "person",
       "period": {
         "start": 1965,
@@ -24353,6 +24378,7 @@
       "id": "artist:don-caballero",
       "type": "artist",
       "name": "Don Caballero",
+      "addedOn": "2026-11-05",
       "kind": "group",
       "period": {
         "start": 1991,
@@ -24370,6 +24396,7 @@
       "id": "artist:hella",
       "type": "artist",
       "name": "Hella",
+      "addedOn": "2026-11-05",
       "kind": "group",
       "period": {
         "start": 2001,
@@ -24388,6 +24415,7 @@
       "id": "artist:arsenio-rodriguez",
       "type": "artist",
       "name": "Arsenio Rodríguez",
+      "addedOn": "2026-11-05",
       "kind": "person",
       "period": {
         "start": 1930,
@@ -24407,6 +24435,7 @@
       "id": "artist:pharoah-sanders",
       "type": "artist",
       "name": "Pharoah Sanders",
+      "addedOn": "2026-11-05",
       "kind": "person",
       "period": {
         "start": 1960,
@@ -24424,6 +24453,7 @@
       "id": "artist:terry-francis",
       "type": "artist",
       "name": "Terry Francis",
+      "addedOn": "2026-11-05",
       "kind": "person",
       "period": {
         "start": 1990,
@@ -24440,6 +24470,7 @@
       "id": "artist:james-ferraro",
       "type": "artist",
       "name": "James Ferraro",
+      "addedOn": "2026-11-05",
       "kind": "person",
       "period": {
         "start": 2004,

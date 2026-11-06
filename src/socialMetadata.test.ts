@@ -10,6 +10,7 @@ const template = '<html><head><!-- social-metadata:start --><title>Old</title><!
 
 describe('social metadata', () => {
   it.each([
+    ['/', 'Soundlines | Discover Music History'],
     ['/genres', 'Music Genres | Soundlines'],
     ['/artists', 'Music Artists | Soundlines'],
     ['/instruments', 'Musical Instruments | Soundlines'],
@@ -50,7 +51,9 @@ describe('social metadata', () => {
   })
 
   it.each([
-    ['/', '/genres'],
+    ['/', '/'],
+    ['/index.html', '/'],
+    ['/?layout=bubbles', '/genres?layout=bubbles'],
     ['/?view=artists', '/artists'],
     ['/index.html?view=history', '/history'],
     ['/genres/?view=artists', '/genres'],

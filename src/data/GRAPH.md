@@ -42,6 +42,7 @@ interface GraphNode {
   id: string            // "<type>:<slug>", e.g. "genre:deep-house", "artist:kraftwerk"
   type: 'genre' | 'artist' | 'instrument' | 'label' | 'place' | 'track' | 'scene' | 'event'
   name: string          // Display name, e.g. "Deep house"
+  addedOn?: string      // Catalogue addition date (YYYY-MM-DD) shown on the home page
   period?: { start: number; end?: number | null; precision?: 'year' | 'decade' | 'century' | 'circa'; estimated?: boolean; estimateNote?: string } | null // Negative years are BCE
   description?: string  // 1–3 sentences, editorial and evocative but factual
   family?: GenreFamily | InstrumentFamily  // Timeline lane (required for genres and instruments)

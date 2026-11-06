@@ -93,6 +93,14 @@ export function viewFromUrl(url: URL): ExplorerView {
   return viewFromPath(url.pathname) ?? viewFromParam(url.searchParams.get('view'))
 }
 
+/** The root is discovery unless the URL requests a legacy explorer state. */
+export function isHomeUrl(url: URL, hasFocus: boolean): boolean {
+  if (url.pathname !== '/' && url.pathname !== '/index.html') return false
+  const params = url.searchParams
+  return !hasFocus && !params.has('view') && params.get('layout') !== 'bubbles'
+    && !Object.values(readTimelineOrders(params)).includes('oldest-first')
+}
+
 const INSTRUMENT_ORIENTATION: RelationOrientation = {
   influences: 'forward',
   derived_from: 'backward',
