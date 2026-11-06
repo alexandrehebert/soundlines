@@ -1,11 +1,14 @@
 const MINIMUM_LOADING_MS = 550
+const LOADER_FADE_IN_MS = 160
 let startedAt = performance.now()
 let navigationFrame = 0
+let navigationTimer: ReturnType<typeof setTimeout> | undefined
 let cancelFinish = () => {}
 
 function setLoading(loading: boolean) {
   const overlay = document.getElementById('page-loading')
   if (!overlay) throw new Error('Missing page loading overlay')
+  if (loading) delete overlay.dataset.opening
   overlay.dataset.loading = String(loading)
   overlay.setAttribute('aria-hidden', String(!loading))
   document.getElementById('root')?.setAttribute('aria-busy', String(loading))
@@ -14,11 +17,16 @@ function setLoading(loading: boolean) {
 export function transitionPage(update: () => void) {
   cancelFinish()
   cancelAnimationFrame(navigationFrame)
+  clearTimeout(navigationTimer)
   startedAt = performance.now()
   setLoading(true)
-  // Give the overlay a painted frame before building the next view.
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  // Cover the outgoing view before replacing it.
   navigationFrame = requestAnimationFrame(() => {
-    navigationFrame = requestAnimationFrame(update)
+    navigationFrame = requestAnimationFrame(() => {
+      if (reduceMotion) update()
+      else navigationTimer = setTimeout(update, LOADER_FADE_IN_MS)
+    })
   })
 }
 

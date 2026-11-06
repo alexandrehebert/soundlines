@@ -16,7 +16,36 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 400ms ease, visibility 0s 400ms;
+  transition: opacity 520ms ease, visibility 0s 520ms;
+}
+
+.page-loading-record {
+  display: grid;
+  justify-items: center;
+}
+
+.page-loading-wordmark {
+  display: none;
+}
+
+#page-loading[data-opening] .page-loading-wordmark {
+  display: block;
+  margin-top: 1rem;
+  color: #e2e8f0;
+  font: 600 .8rem/1.2 system-ui, sans-serif;
+  letter-spacing: .18em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #page-loading:not([data-opening])[data-loading="true"] {
+    transition: opacity 160ms ease-out;
+  }
+
+  #page-loading[data-loading="false"] .page-loading-record {
+    opacity: 0;
+    scale: 1.12;
+    transition: opacity 260ms ease-out, scale 360ms ease-out;
+  }
 }
 
 .page-loading-vinyl {

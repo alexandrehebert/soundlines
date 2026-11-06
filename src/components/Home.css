@@ -293,3 +293,19 @@
   .discovery-destination { gap: .45rem; }
   .discovery-destination-icon, .discovery-destination .discovery-link-arrow { width: 1rem; }
 }
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .discovery-hero-copy, .discovery-record {
+    transition: translate 600ms cubic-bezier(.2, .75, .25, 1), opacity 520ms ease-out;
+  }
+
+  #page-loading[data-opening][data-loading="true"] ~ #root .discovery-hero-copy {
+    opacity: .65;
+    translate: 0 12px;
+  }
+
+  #page-loading[data-opening][data-loading="true"] ~ #root .discovery-record {
+    translate: 0 16px;
+  }
+}

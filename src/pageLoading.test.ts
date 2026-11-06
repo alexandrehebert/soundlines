@@ -18,7 +18,7 @@ describe('page loading lifecycle', () => {
       getElementById: (id) => id === 'page-loading' ? overlay : root,
     }
     vi.stubGlobal('document', documentState)
-    vi.stubGlobal('window', events)
+    vi.stubGlobal('window', Object.assign(events, { matchMedia: () => ({ matches: false }) }))
     vi.stubGlobal('requestAnimationFrame', (callback: FrameRequestCallback) =>
       setTimeout(() => callback(performance.now()), 16))
     vi.stubGlobal('cancelAnimationFrame', clearTimeout)
@@ -57,9 +57,9 @@ describe('page loading lifecycle', () => {
     loading.transitionPage(update)
     expect(overlay.dataset.loading).toBe('true')
     expect(root.setAttribute).toHaveBeenLastCalledWith('aria-busy', 'true')
-    vi.advanceTimersByTime(16)
+    vi.advanceTimersByTime(191)
     expect(update).not.toHaveBeenCalled()
-    vi.advanceTimersByTime(16)
+    vi.advanceTimersByTime(1)
     expect(update).toHaveBeenCalledOnce()
     vi.advanceTimersByTime(1000)
     expect(overlay.dataset.loading).toBe('true')
@@ -78,13 +78,13 @@ describe('page loading lifecycle', () => {
     expect(overlay.dataset.loading).toBe('false')
   })
 
-  it('only performs the latest navigation if another starts before the next paint', () => {
+  it('only performs the latest navigation if another starts during the fade-in', () => {
     const obsolete = vi.fn()
     const latest = vi.fn()
     loading.transitionPage(obsolete)
-    vi.advanceTimersByTime(16)
+    vi.advanceTimersByTime(80)
     loading.transitionPage(latest)
-    vi.advanceTimersByTime(32)
+    vi.advanceTimersByTime(192)
     expect(obsolete).not.toHaveBeenCalled()
     expect(latest).toHaveBeenCalledOnce()
   })

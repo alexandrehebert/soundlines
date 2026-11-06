@@ -152,12 +152,7 @@ export function Home() {
 
       <main className="discovery-width discovery-main">
         <section className="discovery-hero" aria-labelledby="discovery-heading">
-          <motion.div
-            className="discovery-hero-copy"
-            initial={reduceMotion ? false : { opacity: 0.65, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: reduceMotion ? 0 : 0.65, ease: 'easeOut' }}
-          >
+          <div className="discovery-hero-copy">
             <p className="discovery-kicker"><span /> an atlas of musical lineages</p>
             <h1 id="discovery-heading">Follow the<br /> <em>sound.</em></h1>
             <p className="discovery-intro">Trace the genres, artists and instruments that shaped the music we hear today.</p>
@@ -171,7 +166,7 @@ export function Home() {
                 Discover <ArrowDown size={15} aria-hidden="true" />
               </button>
             </div>
-          </motion.div>
+          </div>
           <div className="discovery-record" aria-hidden="true">
             {reduceMotion
               ? <div className="discovery-vinyl"><div className="discovery-label"><Disc3 size={28} /></div></div>
