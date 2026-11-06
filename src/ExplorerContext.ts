@@ -35,6 +35,10 @@ import { socialMetadata } from './socialMetadata.ts'
 import { updateDocumentMetadata } from './socialMetadataClient.ts'
 
 type YearRange = [number, number]
+
+const HOME_TRANSITION = 'soundlines-home-transition'
+const VIEW_TRANSITION = 'soundlines-view-transition'
+const PAGE_TRANSITION_CLASSES = [HOME_TRANSITION, VIEW_TRANSITION]
 type ExplorerLocation = {
   isHome: boolean
   view: ExplorerView
@@ -71,7 +75,7 @@ export function useExplorerState(graph: MusicGraph) {
     return { isHome: isHomeUrl(url, Boolean(node)), view, timelineView, selectedId: node?.id ?? null, orders, genreDisplay }
   }, [index])
   const [location, setLocation] = useState(readLocation)
-  const homeTransition = useRef<ViewTransition | null>(null)
+  const pageTransition = useRef<ViewTransition | null>(null)
   const [historyFilters, setHistoryFilters] = useState<HistoryFilters>(DEFAULT_HISTORY_FILTERS)
   const { isHome, view, timelineView, selectedId, orders, genreDisplay } = location
   const order = orders[timelineView]
@@ -109,38 +113,46 @@ export function useExplorerState(graph: MusicGraph) {
     })
   }, [index])
 
+  const startPageTransition = useCallback((className: string, update: () => void, resetScroll: boolean) => {
+    if (!document.startViewTransition || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      update()
+      return
+    }
+
+    const root = document.documentElement
+    root.classList.remove(...PAGE_TRANSITION_CLASSES)
+    root.classList.add(className)
+    const transition = document.startViewTransition(() => {
+      if (pageTransition.current !== transition) return
+      flushSync(update)
+      if (resetScroll) window.scrollTo({ top: 0, behavior: 'instant' })
+    })
+    pageTransition.current = transition
+    const cleanup = () => {
+      if (pageTransition.current !== transition) return
+      pageTransition.current = null
+      root.classList.remove(className)
+    }
+    void transition.finished.then(cleanup, cleanup)
+  }, [])
+
   const navigate = useCallback((next: ExplorerLocation) => {
     const changesPage = next.isHome !== isHome || next.view !== view
     const update = () => {
       if (changesPage) window.history.pushState(null, '', explorerUrl(next))
       setLocation(next)
     }
+    const changesContent = changesPage || next.orders[next.timelineView] !== order || next.genreDisplay !== genreDisplay
+    // Home transitions run to completion; a newer explorer navigation replaces one still in progress.
+    const homeTransitionRunning = pageTransition.current && document.documentElement.classList.contains(HOME_TRANSITION)
     if (isHome !== next.isHome) {
-      if (homeTransition.current) return
-      if (!document.startViewTransition || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        update()
-        return
-      }
-
-      const root = document.documentElement
-      root.classList.add('soundlines-home-transition')
-      const transition = document.startViewTransition(() => {
-        if (homeTransition.current !== transition) return
-        flushSync(update)
-        window.scrollTo({ top: 0, behavior: 'instant' })
-      })
-      homeTransition.current = transition
-      const cleanup = () => {
-        if (homeTransition.current === transition) homeTransition.current = null
-        root.classList.remove('soundlines-home-transition')
-      }
-      void transition.finished.then(cleanup, cleanup)
-    } else if (changesPage || next.orders[next.timelineView] !== order || next.genreDisplay !== genreDisplay) {
-      transitionPage(update)
+      if (!homeTransitionRunning) startPageTransition(HOME_TRANSITION, update, true)
+    } else if (changesContent && !isHome) {
+      if (!homeTransitionRunning) startPageTransition(VIEW_TRANSITION, update, false)
     } else {
       update()
     }
-  }, [isHome, view, order, genreDisplay])
+  }, [isHome, view, order, genreDisplay, startPageTransition])
 
   useEffect(() => {
     const url = explorerUrl(location)
@@ -150,17 +162,20 @@ export function useExplorerState(graph: MusicGraph) {
 
   useEffect(() => {
     const onPopState = () => {
-      if (homeTransition.current) {
-        homeTransition.current.skipTransition()
-        homeTransition.current = null
+      if (pageTransition.current) {
+        pageTransition.current.skipTransition()
+        pageTransition.current = null
+        document.documentElement.classList.remove(...PAGE_TRANSITION_CLASSES)
       }
       const next = readLocation()
       revealSelection(next)
-      transitionPage(() => setLocation(next))
+      if (next.isHome !== isHome) transitionPage(() => setLocation(next))
+      else if (!isHome && next.view !== view) startPageTransition(VIEW_TRANSITION, () => setLocation(next), false)
+      else setLocation(next)
     }
     window.addEventListener('popstate', onPopState)
     return () => window.removeEventListener('popstate', onPopState)
-  }, [readLocation, revealSelection])
+  }, [isHome, view, readLocation, revealSelection, startPageTransition])
 
   const selectNode = useCallback((id: string | null) => {
     const node = id ? index.nodeById.get(id) : undefined

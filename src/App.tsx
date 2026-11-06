@@ -256,6 +256,7 @@ export function Explorer() {
       )}
       <main data-explorer-transition-content className="relative flex min-h-0 flex-1">
         <div
+          data-explorer-transition-view
           className="min-w-0 flex-1"
           onScrollCapture={(event) => {
             const surface = event.target

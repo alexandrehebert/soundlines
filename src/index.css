@@ -102,6 +102,31 @@ body {
     360ms ease-out 70ms both soundlines-page-in;
 }
 
+/* Explorer page switches keep the chrome static and crossfade only the content. */
+.soundlines-view-transition [data-explorer-transition-view] { view-transition-name: soundlines-explorer-view; }
+
+.soundlines-view-transition::view-transition-old(root),
+.soundlines-view-transition::view-transition-new(root) {
+  animation: none;
+}
+
+.soundlines-view-transition::view-transition-group(soundlines-explorer-view) {
+  animation-duration: 320ms;
+  animation-timing-function: cubic-bezier(.22, .75, .25, 1);
+}
+
+.soundlines-view-transition::view-transition-old(soundlines-explorer-view) {
+  animation: 140ms ease-in both soundlines-page-out;
+}
+
+.soundlines-view-transition::view-transition-new(soundlines-explorer-view) {
+  animation: 280ms cubic-bezier(.2, .7, .3, 1) 60ms both soundlines-view-in;
+}
+
+@keyframes soundlines-view-in {
+  from { opacity: 0; transform: translateY(6px); }
+}
+
 @keyframes soundlines-page-out {
   to { opacity: 0; }
 }

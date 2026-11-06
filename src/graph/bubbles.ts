@@ -24,7 +24,18 @@ export function createGenreBubbles(index: GraphIndex) {
     || a.node.name.localeCompare(b.node.name) || a.node.id.localeCompare(b.node.id))
 }
 
+const layoutCache = new WeakMap<GraphIndex, ReturnType<typeof computeGenreBubbleLayout>>()
+
 export function layoutGenreBubbles(index: GraphIndex) {
+  let layout = layoutCache.get(index)
+  if (!layout) {
+    layout = computeGenreBubbleLayout(index)
+    layoutCache.set(index, layout)
+  }
+  return layout
+}
+
+function computeGenreBubbleLayout(index: GraphIndex) {
   const familyCounts = new Map<string, number>()
   const bubbles = createGenreBubbles(index)
     .sort((a, b) => a.node.id.localeCompare(b.node.id))
@@ -56,6 +67,14 @@ export function layoutGenreBubbles(index: GraphIndex) {
     return [{ a, b }]
   })
 
+  const count = bubbles.length
+  const related = new Uint8Array(count * count)
+  for (let i = 0; i < count; i += 1) {
+    for (let j = i + 1; j < count; j += 1) {
+      if (pairs.has(`${bubbles[i].node.id}|${bubbles[j].node.id}`)) related[i * count + j] = 1
+    }
+  }
+
   // Springs bring lineage neighbors together; collision relaxation keeps labels separate.
   for (let iteration = 0; iteration < 700; iteration += 1) {
     if (iteration < 500) {
@@ -77,15 +96,18 @@ export function layoutGenreBubbles(index: GraphIndex) {
       }
     }
 
-    for (let i = 0; i < bubbles.length; i += 1) {
-      for (let j = i + 1; j < bubbles.length; j += 1) {
-        const a = bubbles[i]
+    const spacing = iteration < 500
+    for (let i = 0; i < count; i += 1) {
+      const a = bubbles[i]
+      for (let j = i + 1; j < count; j += 1) {
         const b = bubbles[j]
         const dx = b.x - a.x
         const dy = b.y - a.y
-        const distance = Math.hypot(dx, dy)
-        const unrelatedGap = iteration < 500 && !pairs.has(`${a.node.id}|${b.node.id}`) ? 32 : 0
+        const unrelatedGap = spacing && !related[i * count + j] ? 32 : 0
         const minimum = (a.diameter + b.diameter) / 2 + 12 + unrelatedGap
+        // Cheap squared-distance rejection before the square root.
+        if (dx * dx + dy * dy >= minimum * minimum) continue
+        const distance = Math.hypot(dx, dy)
         if (distance >= minimum) continue
         const angle = distance === 0 ? (i + j) * 2.399963 : Math.atan2(dy, dx)
         const push = (minimum - distance) / 2
