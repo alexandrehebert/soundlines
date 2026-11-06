@@ -1,5 +1,5 @@
 import { ArrowDownWideNarrow, BarChart3, Bubbles, ChartGantt, Disc3, Guitar, History as HistoryIcon, SlidersHorizontal, Users, X, type LucideIcon } from 'lucide-react'
-import { AnimatePresence, motion, MotionConfig } from 'motion/react'
+import { AnimatePresence, motion, MotionConfig, useMotionValue } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent, type PointerEvent } from 'react'
 import { useExplorer } from './ExplorerContext.ts'
 import { ExplorerProvider } from './ExplorerProvider.tsx'
@@ -34,6 +34,8 @@ export function Explorer() {
   const optionsTriggerRef = useRef<HTMLButtonElement>(null)
   const restoreOptionsFocusRef = useRef(true)
   const optionsId = useId()
+  const explorerScrollDistance = useMotionValue(0)
+  const scrollPositions = useRef(new WeakMap<HTMLElement, number>())
   const stats = useMemo(() => {
     const count = (type: string) => index.graph.nodes.filter((node) => node.type === type).length
     return { genre: count('genre'), artist: count('artist'), instrument: count('instrument') }
@@ -114,6 +116,7 @@ export function Explorer() {
       <header className={`${optionsOpen ? 'z-50' : 'z-20'} flex shrink-0 items-center gap-2 border-b border-slate-800 bg-slate-950/90 px-3 py-2 md:flex-wrap md:gap-x-6 md:gap-y-3 md:px-5 md:py-3`}>
         <BrandLink
           href="/"
+          scrollDistance={explorerScrollDistance}
           iconClassName="h-5 w-5 text-violet-400 md:h-6 md:w-6"
           aria-label="Soundlines home"
           onClick={(event) => {
@@ -252,7 +255,24 @@ export function Explorer() {
         </div>
       )}
       <main className="relative flex min-h-0 flex-1">
-        <div className="min-w-0 flex-1">
+        <div
+          className="min-w-0 flex-1"
+          onScrollCapture={(event) => {
+            const surface = event.target
+            if (!(surface instanceof HTMLElement)) return
+            const position = surface.scrollTop + surface.scrollLeft
+            const previous = scrollPositions.current.get(surface) ?? 0
+            scrollPositions.current.set(surface, position)
+            explorerScrollDistance.set(explorerScrollDistance.get() + position - previous)
+          }}
+          onWheelCapture={(event) => {
+            // Timeline panning changes the visible year range instead of scrollLeft.
+            if (event.ctrlKey || event.metaKey || Math.abs(event.deltaX) <= Math.abs(event.deltaY)
+              || !(event.target instanceof Element) || !event.target.closest('[data-timeline-view]')) return
+            const pixelsPerUnit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? event.currentTarget.clientWidth : 1
+            explorerScrollDistance.set(explorerScrollDistance.get() + event.deltaX * pixelsPerUnit)
+          }}
+        >
           {showingHistory ? <History /> : showingBubbles ? <GenreBubbles /> : <Timeline key={`${view}-${order}`} />}
         </div>
         <AnimatePresence>
