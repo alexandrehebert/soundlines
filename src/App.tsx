@@ -113,7 +113,7 @@ export function Explorer() {
 
   return (
     <div className="flex h-dvh flex-col">
-      <header className={`${optionsOpen ? 'z-50' : 'z-20'} flex shrink-0 items-center gap-2 border-b border-slate-800 bg-slate-950/90 px-3 py-2 md:flex-wrap md:gap-x-6 md:gap-y-3 md:px-5 md:py-3`}>
+      <header data-explorer-transition-header className={`${optionsOpen ? 'z-50' : 'z-20'} flex shrink-0 items-center gap-2 border-b border-slate-800 bg-slate-950/90 px-3 py-2 md:flex-wrap md:gap-x-6 md:gap-y-3 md:px-5 md:py-3`}>
         <BrandLink
           href="/"
           scrollDistance={explorerScrollDistance}
@@ -254,7 +254,7 @@ export function Explorer() {
           <Legend />
         </div>
       )}
-      <main className="relative flex min-h-0 flex-1">
+      <main data-explorer-transition-content className="relative flex min-h-0 flex-1">
         <div
           className="min-w-0 flex-1"
           onScrollCapture={(event) => {
@@ -290,7 +290,7 @@ export function Explorer() {
           )}
         </AnimatePresence>
       </main>
-      <div className="relative z-40 flex shrink-0 items-center justify-between gap-2 border-t border-slate-800 bg-slate-950/95 px-3 py-2 pb-[calc(env(safe-area-inset-bottom)+0.5rem)] md:hidden">
+      <div data-explorer-transition-navigation className="relative z-40 flex shrink-0 items-center justify-between gap-2 border-t border-slate-800 bg-slate-950/95 px-3 py-2 pb-[calc(env(safe-area-inset-bottom)+0.5rem)] md:hidden">
         <ViewToggle view={view} changeView={changeView} className="min-w-0 flex-1" />
         <button
           type="button"

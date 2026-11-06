@@ -4,8 +4,7 @@
   z-index: 1000;
   display: grid;
   place-items: center;
-  background: rgb(2 6 23 / 92%);
-  backdrop-filter: blur(8px);
+  background: #020617;
   color: #a78bfa;
   cursor: progress;
   opacity: 1;

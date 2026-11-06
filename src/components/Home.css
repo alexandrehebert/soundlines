@@ -264,6 +264,23 @@
   .discovery-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
+@media (width < 48rem) {
+  .discovery-brand {
+    gap: .5rem;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -.025em;
+  }
+
+  .discovery-brand svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-violet-400);
+  }
+}
+
 @media (max-width: 42rem) {
   .discovery-width { width: calc(100% - 1.5rem); }
   .discovery-main { padding-top: 1rem; }

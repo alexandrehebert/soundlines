@@ -4,9 +4,11 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type SetStateAction,
 } from 'react'
+import { flushSync } from 'react-dom'
 import { buildIndex } from './graph/graph.ts'
 import {
   DEFAULT_HISTORY_FILTERS, filtersForSelectedEvent, matchesHistoryFilters, type HistoryFilters,
@@ -69,6 +71,7 @@ export function useExplorerState(graph: MusicGraph) {
     return { isHome: isHomeUrl(url, Boolean(node)), view, timelineView, selectedId: node?.id ?? null, orders, genreDisplay }
   }, [index])
   const [location, setLocation] = useState(readLocation)
+  const homeTransition = useRef<ViewTransition | null>(null)
   const [historyFilters, setHistoryFilters] = useState<HistoryFilters>(DEFAULT_HISTORY_FILTERS)
   const { isHome, view, timelineView, selectedId, orders, genreDisplay } = location
   const order = orders[timelineView]
@@ -112,7 +115,27 @@ export function useExplorerState(graph: MusicGraph) {
       if (changesPage) window.history.pushState(null, '', explorerUrl(next))
       setLocation(next)
     }
-    if (changesPage || next.orders[next.timelineView] !== order || next.genreDisplay !== genreDisplay) {
+    if (isHome !== next.isHome) {
+      if (homeTransition.current) return
+      if (!document.startViewTransition || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        update()
+        return
+      }
+
+      const root = document.documentElement
+      root.classList.add('soundlines-home-transition')
+      const transition = document.startViewTransition(() => {
+        if (homeTransition.current !== transition) return
+        flushSync(update)
+        window.scrollTo({ top: 0, behavior: 'instant' })
+      })
+      homeTransition.current = transition
+      const cleanup = () => {
+        if (homeTransition.current === transition) homeTransition.current = null
+        root.classList.remove('soundlines-home-transition')
+      }
+      void transition.finished.then(cleanup, cleanup)
+    } else if (changesPage || next.orders[next.timelineView] !== order || next.genreDisplay !== genreDisplay) {
       transitionPage(update)
     } else {
       update()
@@ -127,6 +150,10 @@ export function useExplorerState(graph: MusicGraph) {
 
   useEffect(() => {
     const onPopState = () => {
+      if (homeTransition.current) {
+        homeTransition.current.skipTransition()
+        homeTransition.current = null
+      }
       const next = readLocation()
       revealSelection(next)
       transitionPage(() => setLocation(next))

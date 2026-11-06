@@ -23,6 +23,105 @@ body {
   background-color: rgb(167 139 250 / 0.35);
 }
 
+.soundlines-home-transition .soundlines-search-transition { view-transition-name: soundlines-search; }
+.soundlines-home-transition .discovery-vinyl { view-transition-name: soundlines-vinyl; }
+.soundlines-home-transition [data-explorer-transition-header] { view-transition-name: soundlines-explorer-header; }
+.soundlines-home-transition [data-explorer-transition-navigation] { view-transition-name: soundlines-explorer-navigation; }
+.soundlines-home-transition [data-explorer-transition-content] { view-transition-name: soundlines-explorer-content; }
+
+.soundlines-home-transition::view-transition-group(*) {
+  animation-duration: 480ms;
+  animation-timing-function: cubic-bezier(.22, .75, .25, 1);
+}
+
+.soundlines-home-transition::view-transition-group(soundlines-search) {
+  z-index: 1;
+}
+
+.soundlines-home-transition::view-transition-old(soundlines-search) {
+  display: none;
+}
+
+.soundlines-home-transition::view-transition-new(soundlines-search) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+@media (width < 48rem) {
+  .soundlines-home-transition [data-soundlines-brand] { view-transition-name: soundlines-brand; }
+
+  .soundlines-home-transition::view-transition-group(soundlines-brand) {
+    z-index: 1;
+  }
+
+  .soundlines-home-transition::view-transition-old(soundlines-brand) {
+    display: none;
+  }
+
+  .soundlines-home-transition::view-transition-new(soundlines-brand) {
+    animation: none;
+    mix-blend-mode: normal;
+  }
+}
+
+.soundlines-home-transition::view-transition-old(root) {
+  animation: 260ms ease-in both soundlines-page-out;
+}
+
+.soundlines-home-transition::view-transition-new(root) {
+  animation: 300ms ease-out both soundlines-page-in;
+}
+
+.soundlines-home-transition::view-transition-new(soundlines-explorer-header) {
+  animation: 340ms ease-out 60ms both soundlines-header-in;
+}
+
+.soundlines-home-transition::view-transition-new(soundlines-explorer-navigation) {
+  animation: 340ms ease-out 60ms both soundlines-content-in;
+}
+
+.soundlines-home-transition::view-transition-new(soundlines-explorer-content) {
+  animation: 410ms cubic-bezier(.2, .7, .3, 1) 130ms both soundlines-content-in;
+}
+
+.soundlines-home-transition::view-transition-old(soundlines-vinyl) {
+  animation:
+    460ms cubic-bezier(.45, .05, .8, .5) both soundlines-vinyl-spin-out,
+    360ms ease-out 100ms both soundlines-page-out;
+}
+
+.soundlines-home-transition::view-transition-old(soundlines-explorer-header),
+.soundlines-home-transition::view-transition-old(soundlines-explorer-navigation),
+.soundlines-home-transition::view-transition-old(soundlines-explorer-content) {
+  animation: 220ms ease-in both soundlines-page-out;
+}
+
+.soundlines-home-transition::view-transition-new(soundlines-vinyl) {
+  animation:
+    460ms cubic-bezier(.45, .05, .8, .5) reverse both soundlines-vinyl-spin-out,
+    360ms ease-out 70ms both soundlines-page-in;
+}
+
+@keyframes soundlines-page-out {
+  to { opacity: 0; }
+}
+
+@keyframes soundlines-page-in {
+  from { opacity: 0; }
+}
+
+@keyframes soundlines-header-in {
+  from { opacity: 0; transform: translateY(-8px); }
+}
+
+@keyframes soundlines-content-in {
+  from { opacity: 0; transform: translateY(14px); }
+}
+
+@keyframes soundlines-vinyl-spin-out {
+  to { transform: rotate(1.25turn) scale(.82); }
+}
+
 .timeline-surface {
   overflow-x: hidden;
   overscroll-behavior-x: none;

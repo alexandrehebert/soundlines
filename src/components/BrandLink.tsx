@@ -22,7 +22,7 @@ export function BrandLink({ children, iconClassName, scrollDistance, ...props }:
   const scrollRotation = useTransform(scrollDistance ?? scrollY, [0, 480], [0, 360], { clamp: false })
 
   return (
-    <motion.a {...props} initial="still" animate="rest" whileHover="spinning" whileFocus="spinning">
+    <motion.a {...props} data-soundlines-brand initial="still" animate="rest" whileHover="spinning" whileFocus="spinning">
       <motion.span style={reduceMotion ? undefined : { rotate: scrollRotation }} aria-hidden="true">
         <motion.span className="block" variants={recordVariants}>
           <motion.span className="block" variants={idleVariants}>

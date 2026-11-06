@@ -120,14 +120,14 @@ export function SearchBar() {
         ref={searchButtonRef}
         type="button"
         onClick={() => setMobileOpen(true)}
-        className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-700 bg-slate-900/80 text-slate-300 active:bg-slate-800 md:hidden"
+        className="soundlines-search-transition flex h-11 w-11 items-center justify-center rounded-full border border-slate-700 bg-slate-900/80 text-slate-300 active:bg-slate-800 md:hidden"
         aria-label="Search music"
         aria-haspopup="dialog"
         aria-expanded={mobileOpen}
       >
         <Search className="h-4 w-4" />
       </button>
-      <div className="relative hidden w-full max-w-xs md:block">
+      <div className="soundlines-search-transition relative hidden w-full max-w-xs md:block">
         <span id={desktopInstructionsId} className="sr-only">{SEARCH_INSTRUCTIONS}</span>
         <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" />
         <input

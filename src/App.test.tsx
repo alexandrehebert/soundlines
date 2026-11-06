@@ -186,10 +186,10 @@ describe('view toggle', () => {
 
   it('spaces mobile options from the view list and hides its label below the small breakpoint', () => {
     const markup = render(graph, <Explorer />)
-    const mobileNavigation = markup.match(/<div class="[^"]*\bmd:hidden"[^>]*><div[^>]*role="radiogroup"[\s\S]*?aria-label="Timeline options and legend"[\s\S]*?<\/button><\/div>/)?.[0]
+    const mobileNavigation = markup.match(/<div\b[^>]*\bclass="[^"]*\bmd:hidden"[^>]*><div[^>]*role="radiogroup"[\s\S]*?aria-label="Timeline options and legend"[\s\S]*?<\/button><\/div>/)?.[0]
 
     expect(mobileNavigation).toBeDefined()
-    expect(mobileNavigation).toMatch(/^<div class="[^"]*\bgap-2\b/)
+    expect(mobileNavigation).toMatch(/^<div\b[^>]*\bclass="[^"]*\bgap-2\b/)
     expect(mobileNavigation).toMatch(/<button[^>]*class="[^"]*\bshrink-0\b[^"]*"[^>]*aria-label="Timeline options and legend"/)
     expect(mobileNavigation).toContain('<span class="hidden sm:inline">Options</span>')
   })
