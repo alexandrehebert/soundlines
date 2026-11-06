@@ -86,6 +86,16 @@ describe('timeline viewport rendering', () => {
     expect(renderTimeline('genre', 'family', [1700, 2026])).not.toContain('aria-label="Undated genres"')
   })
 
+  it.each(['family', 'oldest-first'] as const)('shows instrument icons in %s order only', (order) => {
+    const instruments = renderTimeline('instrument', order, [500, 2026])
+    expect(instruments.match(/data-instrument-icon=/g)).toHaveLength(3)
+    expect(instruments).toContain('instrument-icons/guitar.svg')
+    expect(instruments).toContain('instrument-icons/piano.svg')
+    expect(instruments).toContain('instrument-icons/flute.svg')
+    expect(renderTimeline('genre', order, [500, 2026])).not.toContain('data-instrument-icon=')
+    expect(renderTimeline('artist', order, [500, 2026])).not.toContain('data-instrument-icon=')
+  })
+
   it('plots estimated entries normally and explains the soft edges', () => {
     const data: MusicGraph = {
       ...graph,

@@ -11,9 +11,11 @@ import {
 } from '../../graph/phases.ts'
 import { prominenceLabels } from '../../graph/types.ts'
 import { DEFAULT_BUBBLE_ZOOM, formatPeriod, SELECTION_BORDER, SELECTION_OUTLINE, timelineBarOpacity } from '../../theme.ts'
+import { InstrumentIcon } from '../InstrumentIcon.tsx'
 import {
   ABOVE_BAR_LABEL_FONT_SIZE, BAR_H, BAR_LABEL_FONT_SIZE, barBounds, barLabel, barShape, fitBarLabel,
-  tailFadeOffset, type BarLabel, type BarLabelMetrics, type BarPosition, type OffscreenIndicator,
+  INSTRUMENT_ICON_LABEL_GAP, INSTRUMENT_ICON_SIZE, instrumentIconPosition, tailFadeOffset,
+  type BarLabel, type BarLabelMetrics, type BarPosition, type OffscreenIndicator,
 } from './geometry.ts'
 import { afterSvgLayout } from './svgLayout.ts'
 
@@ -53,6 +55,20 @@ function BarSelectionOutline({ x, y, width, ended = false }: {
   )
 }
 
+function TimelineInstrumentIcon({ id, x, yCenter, color }: {
+  id: string
+  x: number
+  yCenter: number
+  color: string
+}) {
+  return (
+    <foreignObject x={x} y={yCenter - INSTRUMENT_ICON_SIZE / 2}
+      width={INSTRUMENT_ICON_SIZE} height={INSTRUMENT_ICON_SIZE} pointerEvents="none">
+      <InstrumentIcon id={id} className="block h-full w-full bg-current" style={{ color }} />
+    </foreignObject>
+  )
+}
+
 function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSelected }: Pick<
   TimelineBarProps, 'bar' | 'scale' | 'indicator' | 'rowBars' | 'placement'
 > & { isSelected: boolean }) {
@@ -64,7 +80,9 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
   const measureWeight = hasVisibleSpan ? 700 : 600
   const metrics = labelMetrics?.name === bar.node.name && labelMetrics.weight === measureWeight ? labelMetrics : undefined
   const label = placement === undefined ? barLabel(bar, scale.width, rowBars, metrics?.width) : placement
-  const labelMaxWidth = label?.maxWidth ?? (indicator ? Math.max(0, indicator.width - 42) : undefined)
+  const indicatorIconWidth = bar.node.type === 'instrument' ? INSTRUMENT_ICON_SIZE + INSTRUMENT_ICON_LABEL_GAP : 0
+  const indicatorLabelWidth = Math.max(0, (indicator?.width ?? 0) - 42 - indicatorIconWidth)
+  const labelMaxWidth = label?.maxWidth ?? (indicator ? indicatorLabelWidth : undefined)
   const labelFontSize = label?.above ? ABOVE_BAR_LABEL_FONT_SIZE : BAR_LABEL_FONT_SIZE
 
   useLayoutEffect(() => {
@@ -121,11 +139,12 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
   const hasEdgeFade = bar.ended || estimated
   const hasHiddenPhase = visibility.some((stop) => stop.level < 1)
   const isArtist = bar.node.type === 'artist'
+  const icon = instrumentIconPosition(bar, scale.width, rowBars)
   const labels = prominenceLabels(bar.node.type)
   const maskPadding = Math.max(4, (SELECTION_OUTLINE.outlineWidth + SELECTION_OUTLINE.outlineOffset) * DEFAULT_BUBBLE_ZOOM)
   const visibleLabel = label ? fitBarLabel(bar.node.name, label.maxWidth, labelFontSize, metrics) : ''
   const indicatorLabel = indicator
-    ? fitBarLabel(bar.node.name, Math.max(0, indicator.width - 42), BAR_LABEL_FONT_SIZE, metrics) : ''
+    ? fitBarLabel(bar.node.name, indicatorLabelWidth, BAR_LABEL_FONT_SIZE, metrics) : ''
 
   return (
     <>
@@ -233,6 +252,18 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
           <BarSelectionOutline {...bounds} ended={bar.ended} />
         </g>
       </g>
+      {icon && (
+        <g aria-hidden="true">
+          <rect x={icon.x} y={bar.yCenter - 18} width={INSTRUMENT_ICON_SIZE} height={36}
+            fill="transparent" pointerEvents="all" />
+          {icon.overlapsBar && (
+            <rect x={icon.x} y={bar.yCenter - INSTRUMENT_ICON_SIZE / 2}
+              width={INSTRUMENT_ICON_SIZE} height={INSTRUMENT_ICON_SIZE} rx={4}
+              fill="#020617" fillOpacity={0.85} pointerEvents="none" />
+          )}
+          <TimelineInstrumentIcon id={bar.node.id} x={icon.x} yCenter={bar.yCenter} color={bar.color} />
+        </g>
+      )}
       {label && visibleLabel && (
         <text data-bar-label={label.outside ? 'outside' : 'inside'}
           x={label.x} y={bar.yCenter + (label.above ? -14.5 : 4)} textAnchor={label.textAnchor}
@@ -253,8 +284,8 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
               <stop offset="1" stopColor={bar.color} stopOpacity={indicator.direction === 'right' ? 0.22 : 0.03} />
             </linearGradient>
             <clipPath id={`ghost-label-${id}`}>
-              <rect x={indicator.x + (indicator.direction === 'left' ? 27 : 10)}
-                y={bar.yCenter - BAR_H / 2} width={indicator.width - 42} height={BAR_H} />
+              <rect x={indicator.x + (indicator.direction === 'left' ? 27 : 10) + indicatorIconWidth}
+                y={bar.yCenter - BAR_H / 2} width={indicatorLabelWidth} height={BAR_H} />
             </clipPath>
           </defs>
           <rect x={indicator.x} y={bar.yCenter - BAR_H / 2} width={indicator.width} height={BAR_H}
@@ -267,7 +298,12 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
             ? `M ${indicator.x + 17} ${bar.yCenter - 4} l -4 4 l 4 4`
             : `M ${indicator.x + indicator.width - 17} ${bar.yCenter - 4} l 4 4 l -4 4`}
             stroke={bar.color} strokeWidth={1.5} fill="none" pointerEvents="none" />
-          <text data-indicator-label="" x={indicator.x + (indicator.direction === 'left' ? 27 : 10)} y={bar.yCenter + 4}
+          {bar.node.type === 'instrument' && (
+            <TimelineInstrumentIcon id={bar.node.id}
+              x={indicator.x + (indicator.direction === 'left' ? 27 : 10)} yCenter={bar.yCenter} color={bar.color} />
+          )}
+          <text data-indicator-label=""
+            x={indicator.x + (indicator.direction === 'left' ? 27 : 10) + indicatorIconWidth} y={bar.yCenter + 4}
             fill="#cbd5e1" fontSize={11.5} fontWeight={600} clipPath={`url(#ghost-label-${id})`}
             pointerEvents="none">
             {indicatorLabel}

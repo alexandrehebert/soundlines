@@ -203,6 +203,8 @@ from the koto (c. 700) and lute to the Roland TR-808, the TB-303, and Auto-Tune.
 All current instruments are still in use, so no bar ends. Curved links show sourced
 lineage between instruments. For example, the electric guitar derives from the guitar,
 the TR-909 derives from the TR-808, and the clarinet influenced the saxophone.
+Each instrument bar has a family-colored icon at its leading edge; off-screen
+indicators and undated instrument entries show the same icon.
 The detail panel lists the genres each instrument is featured in and its notable
 players. Both open the corresponding genre or artist. A few instruments, including the
 harpsichord, theremin, and TB-303, have editorial usage phases that show

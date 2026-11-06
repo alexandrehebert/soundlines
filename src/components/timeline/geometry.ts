@@ -7,6 +7,9 @@ export const AXIS_H = 40
 export const BAR_H = TIMELINE_BAR_HEIGHT
 export const BAR_LABEL_FONT_SIZE = 11.5
 export const ABOVE_BAR_LABEL_FONT_SIZE = 10.5
+export const INSTRUMENT_ICON_SIZE = 18
+export const INSTRUMENT_ICON_GAP = 3
+export const INSTRUMENT_ICON_LABEL_GAP = 4
 // Leave space between the first row's above-bar labels and the header or sticky axis.
 const LANE_HEADER = 28
 const ORDERED_TOP_INSET = 10
@@ -30,6 +33,24 @@ export interface BarPosition {
   yCenter: number
   color: string
   ended: boolean
+}
+
+export function instrumentIconPosition(bar: BarPosition, width: number, rowBars: BarPosition[] = []) {
+  if (bar.node.type !== 'instrument' || width < INSTRUMENT_ICON_SIZE) return null
+  const span = bar.visibleSpans.find(([start, end]) => Math.min(end, width) > Math.max(start, 0))
+  if (!span) return null
+
+  const start = Math.max(span[0], 0)
+  let x = Math.max(0, start - INSTRUMENT_ICON_SIZE - INSTRUMENT_ICON_GAP)
+  const overlapsNeighbor = rowBars.some((other) => other.node.id !== bar.node.id
+    && other.yCenter === bar.yCenter
+    && other.visibleSpans.some(([left, right]) => left < x + INSTRUMENT_ICON_SIZE && right > x))
+  if (overlapsNeighbor) x = Math.min(width - INSTRUMENT_ICON_SIZE, start + 2)
+
+  return {
+    x,
+    overlapsBar: bar.visibleSpans.some(([left, right]) => left < x + INSTRUMENT_ICON_SIZE && right > x),
+  }
 }
 
 function positionBar(bar: TimelineBar, scale: TimeScale, yCenter: number): BarPosition {
@@ -105,12 +126,15 @@ export function barLabel(
   rowBars: BarPosition[] = [],
   labelWidth = estimatedLabelWidth(bar.node.name, BAR_LABEL_FONT_SIZE),
 ): BarLabel | null {
+  const icon = instrumentIconPosition(bar, width, rowBars)
+  const iconRight = icon ? icon.x + INSTRUMENT_ICON_SIZE : 0
   const spans = bar.visibleSpans
     .map(([start, end]) => [Math.max(start, 0), Math.min(end, width)])
     .filter(([start, end]) => end > start)
   const requiredWidth = labelWidth + 2
   for (const [start, end] of spans) {
-    const x = start + 10
+    const x = icon && icon.x < end && iconRight > start
+      ? Math.max(start + 10, iconRight + INSTRUMENT_ICON_LABEL_GAP) : start + 10
     const maxWidth = Math.max(0, end - x - 6)
     if (end - start > 54 && maxWidth >= requiredWidth) {
       return { x, maxWidth, textAnchor: 'start', outside: false }
@@ -119,21 +143,39 @@ export function barLabel(
   if (!spans.length) return null
 
   const bounds = barBounds(bar)
-  const neighbors = rowBars.filter((other) => other.node.id !== bar.node.id && other.yCenter === bar.yCenter)
+  const neighbors = rowBars
+    .filter((other) => other.node.id !== bar.node.id && other.yCenter === bar.yCenter)
+    .map((other) => {
+      const otherIcon = instrumentIconPosition(other, width, rowBars)
+      return {
+        left: otherIcon ? Math.min(other.x1, otherIcon.x) : other.x1,
+        right: otherIcon ? Math.max(other.x2, otherIcon.x + INSTRUMENT_ICON_SIZE) : other.x2,
+      }
+    })
   const spaces = spans.map(([start, end]) => {
     const right = end === bar.x2 ? Math.min(width, bounds.x + bounds.width) : end
     const rightEdge = Math.min(width, ...neighbors
-      .filter((other) => other.x2 > right)
-      .map((other) => Math.max(right, Math.min(other.x1 - 8, (right + other.x1) / 2))))
+      .filter((other) => other.right > right)
+      .map((other) => Math.max(right, Math.min(other.left - 8, (right + other.left) / 2))))
     const leftEdge = Math.max(0, ...neighbors
-      .filter((other) => other.x1 < start)
-      .map((other) => Math.min(start, Math.max(other.x2 + 8, (start + other.x2) / 2))))
+      .filter((other) => other.left < start)
+      .map((other) => Math.min(start, Math.max(other.right + 8, (start + other.right) / 2))))
     return { start, right, leftEdge, rightEdge }
   })
   const candidates = spaces.flatMap(({ start, right, leftEdge, rightEdge }) => {
+    let rightX = right + 10
+    let leftX = start - 10
+    if (icon && rightX < iconRight + INSTRUMENT_ICON_LABEL_GAP
+      && rightX + requiredWidth > icon.x - INSTRUMENT_ICON_LABEL_GAP) {
+      rightX = iconRight + INSTRUMENT_ICON_LABEL_GAP
+    }
+    if (icon && leftX > icon.x - INSTRUMENT_ICON_LABEL_GAP
+      && leftX - requiredWidth < iconRight + INSTRUMENT_ICON_LABEL_GAP) {
+      leftX = icon.x - INSTRUMENT_ICON_LABEL_GAP
+    }
     return [
-      { x: right + 10, textAnchor: 'start' as const, space: rightEdge - right - 10 },
-      { x: start - 10, textAnchor: 'end' as const, space: start - leftEdge - 10 },
+      { x: rightX, textAnchor: 'start' as const, space: rightEdge - rightX },
+      { x: leftX, textAnchor: 'end' as const, space: leftX - leftEdge },
     ]
   })
   const best = candidates.sort((a, b) => b.space - a.space)[0]
@@ -141,10 +183,18 @@ export function barLabel(
     return { x: best.x, maxWidth: best.space - 4, textAnchor: best.textAnchor, outside: true }
   }
 
-  const corridors = spaces.map(({ start, leftEdge, rightEdge }) => {
+  const corridors = spaces.flatMap(({ start, leftEdge, rightEdge }) => {
     const left = Math.min(width, Math.max(4, leftEdge + 4))
     const right = Math.max(left, Math.min(width - 4, rightEdge - 4))
-    return { start, left, right, space: right - left }
+    if (!icon || icon.x - INSTRUMENT_ICON_LABEL_GAP >= right || iconRight + INSTRUMENT_ICON_LABEL_GAP <= left) {
+      return [{ start, left, right, space: right - left }]
+    }
+    const after = Math.min(right, Math.max(left, iconRight + INSTRUMENT_ICON_LABEL_GAP))
+    const before = Math.max(left, Math.min(right, icon.x - INSTRUMENT_ICON_LABEL_GAP))
+    return [
+      { start, left: after, right, space: right - after },
+      { start, left, right: before, space: before - left },
+    ]
   })
   const fitting = corridors.find((corridor) => corridor.space >= requiredWidth)
   if (fitting) {
@@ -295,6 +345,8 @@ export function offscreenIndicators(
     for (const bar of row) {
       if (!bar.visibleSpans.some(([start, end]) => end > 0 && start < width)) continue
       occupied.push([bar.x1, bar.x2])
+      const icon = instrumentIconPosition(bar, width, row)
+      if (icon) occupied.push([icon.x, icon.x + INSTRUMENT_ICON_SIZE])
       const label = options.visibleLabels?.get(bar.node.id)
       if (label && !label.above) {
         const labelWidth = Math.min(label.maxWidth, options.visibleLabelWidths?.get(bar.node.id)
@@ -317,7 +369,9 @@ export function offscreenIndicators(
       if (limit < indicatorWidth) continue
       const labelWidth = options.indicatorLabelWidths?.get(candidate.bar.node.id)
         ?? estimatedLabelWidth(candidate.bar.node.name, BAR_LABEL_FONT_SIZE)
-      chosen.push({ ...candidate, limit, needed: Math.min(limit, Math.max(80, labelWidth + 44)) })
+      const iconWidth = candidate.bar.node.type === 'instrument'
+        ? INSTRUMENT_ICON_SIZE + INSTRUMENT_ICON_LABEL_GAP : 0
+      chosen.push({ ...candidate, limit, needed: Math.min(limit, Math.max(80, labelWidth + 44 + iconWidth)) })
       directions.add(candidate.direction)
     }
 

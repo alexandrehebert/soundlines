@@ -15,6 +15,7 @@ import {
 import { formatPeriod, NODE_TYPE_COLORS } from '../theme.ts'
 import { prominencePhases, intensityColor, intensityOpacity, phaseIntensity } from '../graph/phases.ts'
 import { CURRENT_YEAR } from '../graph/layout.ts'
+import { InstrumentIcon } from './InstrumentIcon.tsx'
 
 const CONFIDENCE_COLORS: Record<Confidence, string> = {
   low: '#f87171',
@@ -210,14 +211,10 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
                     >
                       <span className="flex items-center gap-2">
                         {other.type === 'instrument' ? (
-                          <span
-                            aria-hidden="true"
+                          <InstrumentIcon
+                            id={other.id}
                             className="h-4 w-4 shrink-0 bg-current"
-                            style={{
-                              color: NODE_TYPE_COLORS.instrument,
-                              mask: `url("${import.meta.env.BASE_URL}instrument-icons/${encodeURIComponent(other.id.slice('instrument:'.length))}.svg") center / contain no-repeat`,
-                              WebkitMask: `url("${import.meta.env.BASE_URL}instrument-icons/${encodeURIComponent(other.id.slice('instrument:'.length))}.svg") center / contain no-repeat`,
-                            }}
+                            style={{ color: NODE_TYPE_COLORS.instrument }}
                           />
                         ) : (
                           <span

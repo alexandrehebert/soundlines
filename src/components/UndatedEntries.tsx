@@ -2,7 +2,8 @@ import { useEffect, useRef } from 'react'
 import type { GraphNode } from '../graph/types.ts'
 import { TIMELINE_BAR_HEIGHT } from '../graph/phases.ts'
 import { FAMILY_COLORS, NODE_TYPE_COLORS, SELECTION_BORDER, SELECTION_OUTLINE, timelineBarOpacity } from '../theme.ts'
-import { BAR_LABEL_FONT_SIZE } from './timeline/geometry.ts'
+import { BAR_LABEL_FONT_SIZE, INSTRUMENT_ICON_GAP, INSTRUMENT_ICON_SIZE } from './timeline/geometry.ts'
+import { InstrumentIcon } from './InstrumentIcon.tsx'
 
 interface UndatedEntriesProps {
   label: string
@@ -43,6 +44,7 @@ export function UndatedEntries({ label, nodes, selectedId, highlightedIds, onSel
         {nodes.map((node) => {
           const selected = node.id === selectedId
           const color = node.family ? FAMILY_COLORS[node.family] : NODE_TYPE_COLORS[node.type]
+          const instrument = node.type === 'instrument'
           return (
             <button
               key={node.id}
@@ -51,12 +53,16 @@ export function UndatedEntries({ label, nodes, selectedId, highlightedIds, onSel
               aria-pressed={selected}
               title={`${node.name}: no period specified`}
               onClick={() => onSelect(node.id)}
-              className="visualization-item relative flex min-h-9 shrink-0 items-center px-3 font-bold focus-visible:outline-none"
+              className={`visualization-item relative flex min-h-9 shrink-0 items-center font-bold focus-visible:outline-none ${instrument ? 'pl-0 pr-3' : 'px-3'}`}
               style={{ opacity: highlightedIds && !highlightedIds.has(node.id) ? 0.2 : 1 }}
             >
               <span
-                className="absolute inset-x-0 top-1/2 -translate-y-1/2 rounded-full"
-                style={{ height: TIMELINE_BAR_HEIGHT, backgroundColor: `color-mix(in srgb, ${color} 4%, #020617)` }}
+                className="absolute top-1/2 right-0 -translate-y-1/2 rounded-full"
+                style={{
+                  left: instrument ? INSTRUMENT_ICON_SIZE + INSTRUMENT_ICON_GAP : 0,
+                  height: TIMELINE_BAR_HEIGHT,
+                  backgroundColor: `color-mix(in srgb, ${color} 4%, #020617)`,
+                }}
                 aria-hidden="true"
               >
                 <span className="absolute inset-0 rounded-full" style={{
@@ -67,7 +73,12 @@ export function UndatedEntries({ label, nodes, selectedId, highlightedIds, onSel
                 <span data-bar-selection-outline="" className="absolute inset-0 rounded-full"
                   style={{ ...SELECTION_BORDER, ...SELECTION_OUTLINE }} />
               </span>
+              {instrument && (
+                <InstrumentIcon id={node.id} className="relative shrink-0 bg-current"
+                  style={{ color, width: INSTRUMENT_ICON_SIZE, height: INSTRUMENT_ICON_SIZE }} />
+              )}
               <span className="relative" style={{
+                marginLeft: instrument ? INSTRUMENT_ICON_GAP + 10 : undefined,
                 fontSize: BAR_LABEL_FONT_SIZE,
                 color: node.type === 'artist' ? '#f8fafc' : '#020617',
               }}>{node.name}</span>

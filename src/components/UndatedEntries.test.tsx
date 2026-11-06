@@ -49,6 +49,19 @@ describe('undated entries', () => {
     expect(buttons[1]).toContain('style="opacity:0.2"')
   })
 
+  it('puts a decorative instrument icon before an undated instrument bar', () => {
+    const markup = renderToStaticMarkup(
+      <UndatedEntries label="instruments" nodes={[nodes[2]]} selectedId={null} onSelect={vi.fn()} />,
+    )
+    expect(markup).toContain('data-instrument-icon="instrument:a" aria-hidden="true"')
+    expect(markup).toContain('instrument-icons/a.svg')
+    expect(markup).toContain('left:21px;height:22px')
+    expect(markup).toContain('margin-left:13px;font-size:11.5px')
+    expect(renderToStaticMarkup(
+      <UndatedEntries label="genres" nodes={[nodes[1]]} selectedId={null} onSelect={vi.fn()} />,
+    )).not.toContain('data-instrument-icon=')
+  })
+
   it('omits the strip when there are no undated entries', () => {
     expect(renderToStaticMarkup(
       <UndatedEntries label="artists" nodes={[]} selectedId={null} onSelect={vi.fn()} />,

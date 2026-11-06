@@ -1,7 +1,11 @@
 import { describe, expect, it } from 'vitest'
 import { layoutFamilies, yearToX, type TimeScale } from '../../graph/layout.ts'
 import type { MusicGraph } from '../../graph/types.ts'
-import { AXIS_H, BAR_H, barBounds, barLabel, barShape, fitBarLabel, offscreenIndicators, positionRowLabels, positionTimeline, revealBarScrollTop, snapToSpans, tailFadeOffset, type BarPosition } from './geometry.ts'
+import {
+  AXIS_H, BAR_H, barBounds, barLabel, barShape, fitBarLabel, instrumentIconPosition,
+  offscreenIndicators, positionRowLabels, positionTimeline, revealBarScrollTop, snapToSpans,
+  tailFadeOffset, type BarPosition,
+} from './geometry.ts'
 
 const bar: BarPosition = {
   node: { id: 'artist:a', type: 'artist', name: 'A', period: { start: 1960 } },
@@ -154,6 +158,91 @@ describe('shared bar geometry', () => {
       expect(positioned).toEqual({ ...original, yCenter: positioned.yCenter })
     }
     expect(lanes).toEqual(before)
+  })
+
+  describe('instrument icons', () => {
+    const instrument: BarPosition = {
+      ...bar,
+      node: { id: 'instrument:guitar', type: 'instrument', name: 'Guitar', family: 'strings' },
+      x1: 100, x2: 280, visibleSpans: [[100, 280]],
+    }
+
+    it('places an icon before the first visible stretch and clamps it at the viewport edge', () => {
+      expect(instrumentIconPosition(instrument, 300)).toEqual({ x: 79, overlapsBar: false })
+      expect(instrumentIconPosition({
+        ...instrument, x1: -100, visibleSpans: [[-100, 280]],
+      }, 300)).toEqual({ x: 0, overlapsBar: true })
+      expect(instrumentIconPosition({
+        ...instrument, x1: -200, visibleSpans: [[-200, -20], [100, 280]],
+      }, 300)).toEqual({ x: 79, overlapsBar: false })
+      expect(instrumentIconPosition(bar, 300)).toBeNull()
+      expect(instrumentIconPosition({ ...instrument, visibleSpans: [[310, 400]] }, 300)).toBeNull()
+      expect(instrumentIconPosition(instrument, 17)).toBeNull()
+    })
+
+    it('reserves space for an icon overlapping the visible bar and for a label on its left', () => {
+      const clipped = { ...instrument, x1: -100, visibleSpans: [[-100, 280]] as [number, number][] }
+      expect(barLabel(clipped, 300, [], 50))
+        .toEqual({ x: 22, maxWidth: 252, textAnchor: 'start', outside: false })
+
+      const short = { ...instrument, x1: 260, x2: 290, visibleSpans: [[260, 290]] as [number, number][] }
+      expect(barLabel(short, 300, [], 50))
+        .toEqual({ x: 235, maxWidth: 231, textAnchor: 'end', outside: true })
+    })
+
+    it('keeps visible labels clear of icons across narrow bars and viewport edges', () => {
+      for (const width of [120, 320, 800]) {
+        for (const start of [-100, 0, 10, 50, width - 25, width - 1]) {
+          for (const spanWidth of [1, 25, 55, 120, 400]) {
+            for (const labelWidth of [25, 75, 150, 300]) {
+              const candidate: BarPosition = {
+                ...instrument, x1: start, x2: start + spanWidth,
+                visibleSpans: [[start, start + spanWidth]],
+              }
+              const icon = instrumentIconPosition(candidate, width)
+              const label = barLabel(candidate, width, [], labelWidth)
+              if (!icon || !label || label.above || label.maxWidth <= 0) continue
+              const displayedWidth = Math.min(labelWidth, label.maxWidth)
+              const left = label.textAnchor === 'start' ? label.x : label.x - displayedWidth
+              const right = label.textAnchor === 'start' ? label.x + displayedWidth : label.x
+              expect(right <= icon.x || left >= icon.x + 18, JSON.stringify({
+                width, start, spanWidth, labelWidth, icon, label,
+              })).toBe(true)
+            }
+          }
+        }
+      }
+    })
+
+    it('moves an icon onto its own bar instead of covering a neighboring bar', () => {
+      const previous = {
+        ...instrument, node: { ...instrument.node, id: 'instrument:previous' },
+        x1: 20, x2: 100, visibleSpans: [[20, 100]] as [number, number][],
+      }
+      const current = { ...instrument, x1: 105, visibleSpans: [[105, 280]] as [number, number][] }
+      const row = [previous, current]
+      expect(instrumentIconPosition(current, 300, row)).toEqual({ x: 107, overlapsBar: true })
+      expect(barLabel(current, 300, row, 50))
+        .toEqual({ x: 129, maxWidth: 145, textAnchor: 'start', outside: false })
+    })
+
+    it('reserves indicator width for the icon and keeps ghosts away from visible icons', () => {
+      const left = {
+        ...instrument, x1: -100, x2: -10, visibleSpans: [[-100, -10]] as [number, number][],
+      }
+      const indicator = offscreenIndicators([left], 320, {
+        indicatorLabelWidths: new Map([[left.node.id, 100]]),
+      })
+      expect(indicator.get(left.node.id)).toEqual({ x: 8, width: 166, direction: 'left', targetX: -10 })
+
+      const visible = {
+        ...instrument, node: { ...instrument.node, id: 'instrument:visible' },
+        x1: 170, x2: 300, visibleSpans: [[170, 300]] as [number, number][],
+      }
+      expect(offscreenIndicators([left, visible], 320).has(left.node.id)).toBe(false)
+      const farther = { ...visible, x1: 210, visibleSpans: [[210, 300]] as [number, number][] }
+      expect(offscreenIndicators([left, farther], 320).has(left.node.id)).toBe(true)
+    })
   })
 
   it('labels the first visible stretch in the viewport, including a revival', () => {

@@ -85,6 +85,11 @@ export const UnannotatedArtist: Story = {
   parameters: { explorer: { initialView: 'artist' } },
 }
 
+export const Instrument: Story = {
+  args: { bar: exampleBar('instrument', 'instrument:guitar') },
+  parameters: { explorer: { initialView: 'instrument' } },
+}
+
 export const OffscreenIndicator: Story = {
   args: { bar: exampleBar('genre', 'genre:baroque') },
 }

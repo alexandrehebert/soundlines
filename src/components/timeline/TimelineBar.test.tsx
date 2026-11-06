@@ -12,7 +12,7 @@ import type { BarPosition, OffscreenIndicator } from './geometry.ts'
 function renderBar(node: GraphNode, selected: boolean, indicator?: OffscreenIndicator, position?: Partial<BarPosition>,
   scale: TimeScale = { start: 1948, end: 2026, width: 800 }, renderDetails = true) {
   const index = buildIndex({ version: 1, nodes: [node], edges: [] })
-  const view = node.type === 'artist' ? 'artist' : 'genre'
+  const view = node.type === 'artist' ? 'artist' : node.type === 'instrument' ? 'instrument' : 'genre'
   const bar: BarPosition = {
     node, start: 1960, end: 2026, x1: 20, x2: 300, yCenter: 50,
     visibleSpans: [[20, 300]], color: '#60a5fa', ended: !!node.period?.end, ...position,
@@ -242,6 +242,63 @@ describe('bar selection outline', () => {
       const label = markup.slice(start, markup.indexOf('</text>', start) + 7)
       expect(label).toMatch(/…<\/text>$/u)
       expect(markup).toContain('Short-lived genre · off-screen to the left; activate to reveal')
+    })
+  })
+
+  describe('instrument icons', () => {
+    const instrument: GraphNode = {
+      id: 'instrument:guitar', type: 'instrument', name: 'Guitar', family: 'strings', period: { start: 1960 },
+    }
+
+    it('renders a decorative, clickable icon before the visible bar', () => {
+      const markup = renderBar(instrument, false, undefined, {
+        x1: 100, x2: 300, visibleSpans: [[100, 300]],
+      })
+      expect(markup).toContain('role="button" tabindex="0" aria-label="Guitar" aria-pressed="false"')
+      expect(markup).toContain('<rect x="79" y="32" width="18" height="36" fill="transparent" pointer-events="all"')
+      expect(markup).toContain('<foreignObject x="79" y="41" width="18" height="18" pointer-events="none">')
+      expect(markup).toContain('data-instrument-icon="instrument:guitar" aria-hidden="true"')
+      expect(markup).toContain('instrument-icons/guitar.svg')
+      expect(markup).toContain('data-bar-label="inside"')
+    })
+
+    it('keeps an icon and label readable when the bar begins off-screen', () => {
+      const markup = renderBar(instrument, false, undefined, {
+        x1: -100, x2: 300, visibleSpans: [[-100, 300]],
+      })
+      expect(markup).toContain('<rect x="0" y="41" width="18" height="18" rx="4" fill="#020617" fill-opacity="0.85"')
+      expect(markup).toContain('<text data-bar-label="inside" x="22"')
+    })
+
+    it.each([
+      [{ x: 8, width: 120, direction: 'left' as const, targetX: -10 }, [-100, -10] as [number, number], 35, 57],
+      [{ x: 172, width: 120, direction: 'right' as const, targetX: 310 }, [310, 400] as [number, number], 182, 204],
+    ])('includes an icon and keeps the label clear in a $0.direction indicator', (indicator, span, iconX, labelX) => {
+      const markup = renderBar(instrument, false, indicator, {
+        x1: span[0], x2: span[1], visibleSpans: [span],
+      }, { start: 1948, end: 2026, width: 300 })
+      expect(markup).toContain(`<foreignObject x="${iconX}" y="41" width="18" height="18"`)
+      expect(markup).toContain(`<text data-indicator-label="" x="${labelX}"`)
+      expect(markup).toContain(`Guitar · off-screen to the ${indicator.direction}; activate to reveal`)
+      expect(markup).toContain('>Guitar</text>')
+    })
+
+    it('shortens a constrained indicator label while retaining its full accessible name', () => {
+      const node = { ...instrument, name: 'A very long instrument name' }
+      const markup = renderBar(node, false, { x: 8, width: 80, direction: 'left', targetX: -10 }, {
+        x1: -100, x2: -10, visibleSpans: [[-100, -10]],
+      })
+      const start = markup.indexOf('<text data-indicator-label=')
+      const label = markup.slice(start, markup.indexOf('</text>', start) + 7)
+      expect(label).toMatch(/…<\/text>$/u)
+      expect(markup).toContain('A very long instrument name · off-screen to the left; activate to reveal')
+    })
+
+    it('does not render icons for other node types or deferred row details', () => {
+      expect(renderBar(nodes[0], false)).not.toContain('data-instrument-icon=')
+      expect(renderBar(nodes[2], false)).not.toContain('data-instrument-icon=')
+      expect(renderBar(instrument, false, undefined, undefined, undefined, false))
+        .not.toContain('data-instrument-icon=')
     })
   })
 
