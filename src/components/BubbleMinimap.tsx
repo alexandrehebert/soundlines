@@ -1,36 +1,44 @@
-import { memo, useId, useLayoutEffect, useRef, useState, type PointerEvent, type RefObject } from 'react'
+import { memo, useId, useLayoutEffect, useMemo, useRef, useState, type PointerEvent, type RefObject } from 'react'
 import type { layoutGenreBubbles } from '../graph/bubbles.ts'
-import { FAMILY_COLORS } from '../theme.ts'
+import { bubbleSelectionStyle, FAMILY_COLORS, SELECTION_BORDER } from '../theme.ts'
 import type { BubblePoint } from './bubbleViewport.ts'
 
 type Layout = ReturnType<typeof layoutGenreBubbles>
 type Link = { id: string; x1: number; y1: number; x2: number; y2: number; color: string }
 
-const Overview = memo(function Overview({ bubbles, links }: { bubbles: Layout['bubbles']; links: Link[] }) {
+const Overview = memo(function Overview({ bubbles, links, distances }: {
+  bubbles: Layout['bubbles']
+  links: Link[]
+  distances: ReadonlyMap<string, number> | null
+}) {
   return (
     <>
       {links.map(({ id, color, x1, y1, x2, y2 }) => (
         <line key={id} x1={x1} y1={y1} x2={x2} y2={y2} stroke={color} strokeOpacity={0.22} strokeWidth={0.6} vectorEffect="non-scaling-stroke" />
       ))}
       {bubbles.map(({ node, x, y, diameter, family }) => (
-        <circle key={node.id} cx={x} cy={y} r={diameter / 2} fill={FAMILY_COLORS[family]} fillOpacity={0.65} />
+        <circle key={node.id} cx={x} cy={y} r={diameter / 2} fill={FAMILY_COLORS[family]} fillOpacity={0.65}
+          style={bubbleSelectionStyle(distances, node.id)} />
       ))}
     </>
   )
 })
 
-export function BubbleMinimap({ layout, links, zoom, surfaceRef, controlsRef }: {
+export function BubbleMinimap({ layout, links, selectedId, distances, zoom, surfaceRef }: {
   layout: Layout
   links: Link[]
+  selectedId: string | null
+  distances: ReadonlyMap<string, number> | null
   zoom: number
   surfaceRef: RefObject<HTMLDivElement | null>
-  controlsRef: RefObject<HTMLDivElement | null>
 }) {
   const [expanded, setExpanded] = useState(true)
   const [visible, setVisible] = useState<(BubblePoint & { width: number; height: number }) | null>(null)
   const drag = useRef<{ id: number; offset: BubblePoint; moved: boolean } | null>(null)
   const id = useId()
   const { width, height, bubbles } = layout
+  const selected = useMemo(() => selectedId ? bubbles.find(({ node }) => node.id === selectedId) : undefined,
+    [bubbles, selectedId])
 
   useLayoutEffect(() => {
     const surface = surfaceRef.current
@@ -69,7 +77,7 @@ export function BubbleMinimap({ layout, links, zoom, surfaceRef, controlsRef }: 
   }
 
   return (
-    <div ref={controlsRef} className="absolute left-3 top-3 z-10 overflow-hidden rounded-xl border border-slate-700 bg-slate-950/95 text-slate-300 shadow-lg">
+    <div className="overflow-hidden rounded-t-xl rounded-b-[27px] border border-slate-700 text-slate-300 shadow-lg [contain:inline-size]">
       <button
         type="button"
         aria-expanded={expanded}
@@ -78,11 +86,11 @@ export function BubbleMinimap({ layout, links, zoom, surfaceRef, controlsRef }: 
           drag.current = null
           setExpanded(!expanded)
         }}
-        className="flex min-h-11 w-full items-center justify-between gap-2 px-3 text-xs font-medium hover:bg-slate-800 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-cyan-400"
+        className="flex min-h-11 w-full items-center justify-between gap-2 bg-slate-950/90 px-3 text-xs font-medium backdrop-blur-md hover:bg-slate-800 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-cyan-400"
       >
         Minimap <span aria-hidden="true">{expanded ? '−' : '+'}</span>
       </button>
-      <div id={id} hidden={!expanded} className="border-t border-slate-800">
+      <div id={id} hidden={!expanded} className="border-t border-slate-800 bg-slate-950/95">
         {expanded && (
           <svg
             role="group"
@@ -91,8 +99,8 @@ export function BubbleMinimap({ layout, links, zoom, surfaceRef, controlsRef }: 
             tabIndex={0}
             viewBox={`0 0 ${width} ${height}`}
             preserveAspectRatio="none"
-            style={{ width: `min(34vw, 10rem, ${96 * width / height}px)`, aspectRatio: width / height }}
-            className="block touch-none cursor-grab select-none active:cursor-grabbing focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-cyan-400"
+            style={{ aspectRatio: width / height }}
+            className="block w-full touch-none cursor-grab select-none active:cursor-grabbing focus:outline-none focus-visible:bg-slate-800"
             onPointerDown={(event) => {
               if (event.button !== 0 || !event.isPrimary || !visible) return
               const point = mapPoint(event)
@@ -131,10 +139,15 @@ export function BubbleMinimap({ layout, links, zoom, surfaceRef, controlsRef }: 
               event.preventDefault()
             }}
           >
-            <Overview bubbles={bubbles} links={links} />
+            <Overview bubbles={bubbles} links={links} distances={distances} />
             {visible && (
               <rect {...visible} fill="#67e8f9" fillOpacity={0.1} stroke="#67e8f9"
                 strokeWidth={1.5} vectorEffect="non-scaling-stroke" />
+            )}
+            {selected && (
+              <circle cx={selected.x} cy={selected.y} r={selected.diameter / 2}
+                fill={FAMILY_COLORS[selected.family]} stroke={SELECTION_BORDER.borderColor}
+                strokeWidth={2} vectorEffect="non-scaling-stroke" pointerEvents="none" />
             )}
           </svg>
         )}

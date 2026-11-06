@@ -3,7 +3,7 @@ import { useExplorer } from '../ExplorerContext.ts'
 import { layoutGenreBubbles } from '../graph/bubbles.ts'
 import { lineageHighlight, lineageSource, lineageTarget } from '../graph/graph.ts'
 import { FAMILY_LABELS, FAMILY_ORDER } from '../graph/types.ts'
-import { FAMILY_COLORS, SELECTION_BORDER, SELECTION_OUTLINE } from '../theme.ts'
+import { bubbleSelectionStyle, FAMILY_COLORS, SELECTION_BORDER, SELECTION_OUTLINE } from '../theme.ts'
 import { bubbleScrollOffset } from './bubbleViewport.ts'
 import { BubbleMinimap } from './BubbleMinimap.tsx'
 import { BubbleZoomControls } from './BubbleZoomControls.tsx'
@@ -38,9 +38,11 @@ export function GenreBubbles() {
   const highlight = useMemo(
     () => lineageHighlight(model.index, selectedId, model.orientation), [selectedId, model],
   )
+  const highlightedLinks = useMemo(
+    () => highlight ? links.filter((link) => highlight.edges.has(link.id)) : [], [highlight, links],
+  )
   const { surfaceRef, zoom, zoomBy, handlers } = useBubbleViewport(layout.width, layout.height)
-  const zoomControls = useRef<HTMLDivElement>(null)
-  const minimap = useRef<HTMLDivElement>(null)
+  const mapControls = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const element = surfaceRef.current
@@ -59,8 +61,7 @@ export function GenreBubbles() {
         },
         window.innerHeight,
         !window.matchMedia('(min-width: 48rem)').matches,
-        zoomControls.current?.getBoundingClientRect(),
-        minimap.current?.getBoundingClientRect(),
+        mapControls.current?.getBoundingClientRect(),
       )
       element.scrollLeft += offset.x
       element.scrollTop += offset.y
@@ -91,13 +92,18 @@ export function GenreBubbles() {
           aria-description="Drag or scroll to move. Pinch or Cmd/Ctrl+scroll to zoom."
           className="h-full touch-none cursor-grab select-none overflow-auto overscroll-contain scroll-p-3 scroll-pt-20 active:cursor-grabbing"
           {...handlers}
+          onClick={(event) => {
+            if (selectedId && event.target instanceof Element && !event.target.closest('[data-bubble-id]')) {
+              selectNode(null)
+            }
+          }}
         >
           <div className="grid min-h-full min-w-full place-items-center" style={{ width: layout.width * zoom, height: layout.height * zoom }}>
             <div className="relative" style={{ width: layout.width * zoom, height: layout.height * zoom }}>
               <div className="absolute left-0 top-0 origin-top-left" style={{ width: layout.width, height: layout.height, transform: `scale(${zoom})` }}>
                 {highlight && (
                   <svg className="pointer-events-none absolute inset-0" width={layout.width} height={layout.height} aria-hidden="true">
-                    {links.filter((link) => highlight.edges.has(link.id)).map(({ id, sourceId, targetId, color, ...coordinates }, index) => {
+                    {highlightedLinks.map(({ id, sourceId, targetId, color, ...coordinates }, index) => {
                       const gradient = `${gradientPrefix}-${index}`
                       return (
                         <g key={id}>
@@ -121,7 +127,6 @@ export function GenreBubbles() {
                 {layout.bubbles.map(({ node, family, intensity, diameter, x, y }) => {
                   const color = FAMILY_COLORS[family]
                   const selected = selectedId === node.id
-                  const dimmed = highlight !== null && !highlight.nodes.has(node.id)
                   const description = `${node.name} · ${FAMILY_LABELS[family]}`
                   return (
                     <button
@@ -141,7 +146,7 @@ export function GenreBubbles() {
                         ...(selected
                           ? { ...SELECTION_BORDER, ...SELECTION_OUTLINE }
                           : { borderColor: color, borderWidth: 1 }),
-                        opacity: dimmed ? 0.2 : 1,
+                        ...bubbleSelectionStyle(highlight?.distances ?? null, node.id),
                         background: `radial-gradient(circle at 35% 25%, color-mix(in srgb, ${color} ${selected ? 55 + intensity * 40 : 30 + intensity * 65}%, #0f172a), color-mix(in srgb, ${color} ${selected ? 30 + intensity * 20 : 12 + intensity * 38}%, #020617))`,
                         boxShadow: `inset 0 1px 0 ${color}50`,
                         fontSize: `${11 + intensity * 5}px`,
@@ -155,10 +160,13 @@ export function GenreBubbles() {
             </div>
           </div>
         </div>
-        {layout.bubbles.length > 0 && (
-          <BubbleMinimap layout={layout} links={links} zoom={zoom} surfaceRef={surfaceRef} controlsRef={minimap} />
-        )}
-        <BubbleZoomControls controlsRef={zoomControls} zoom={zoom} onZoom={zoomBy} />
+        <div ref={mapControls} className="absolute right-3 top-3 z-10 flex flex-col gap-2">
+          <BubbleZoomControls zoom={zoom} onZoom={zoomBy} />
+          {layout.bubbles.length > 0 && (
+            <BubbleMinimap layout={layout} links={highlightedLinks} selectedId={selectedId} distances={highlight?.distances ?? null}
+              zoom={zoom} surfaceRef={surfaceRef} />
+          )}
+        </div>
       </div>
     </section>
   )

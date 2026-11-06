@@ -17,9 +17,9 @@ import {
   defaultViewRange,
   isTimelineView,
   readTimelineOrders,
-  VIEW_PARAMS,
+  VIEW_PATHS,
   viewForNode,
-  viewFromParam,
+  viewFromUrl,
   writeTimelineOrders,
   type ExplorerView,
   type TimelineOrders,
@@ -40,13 +40,26 @@ type ExplorerLocation = {
   genreDisplay: GenreDisplay
 }
 
+function explorerUrl({ view, selectedId, orders, genreDisplay }: ExplorerLocation): URL {
+  const url = new URL(window.location.href)
+  url.pathname = VIEW_PATHS[view]
+  url.searchParams.delete('view')
+  if (selectedId) url.searchParams.set('focus', selectedId)
+  else url.searchParams.delete('focus')
+  writeTimelineOrders(url.searchParams, orders)
+  if (genreDisplay === 'bubbles') url.searchParams.set('layout', 'bubbles')
+  else url.searchParams.delete('layout')
+  return url
+}
+
 export function useExplorerState(graph: MusicGraph) {
   const index = useMemo(() => buildIndex(graph), [graph])
   const readLocation = useCallback((): ExplorerLocation => {
-    const params = new URLSearchParams(window.location.search)
+    const url = new URL(window.location.href)
+    const params = url.searchParams
     const id = params.get('focus')
     const node = id ? index.nodeById.get(id) : undefined
-    const view = viewForNode(node?.type, viewFromParam(params.get('view')))
+    const view = viewForNode(node?.type, viewFromUrl(url))
     const timelineView = isTimelineView(view) ? view : 'genre'
     const orders = readTimelineOrders(params)
     const genreDisplay = params.get('layout') === 'bubbles' ? 'bubbles' : 'bars'
@@ -70,7 +83,7 @@ export function useExplorerState(graph: MusicGraph) {
   })
   const model = useMemo(() => createTimelineModel(index, timelineView), [index, timelineView])
 
-  useEffect(() => finishPageLoading(), [view, order, genreDisplay])
+  useEffect(() => finishPageLoading(), [location])
 
   const revealSelection = useCallback((next: ExplorerLocation) => {
     const node = next.selectedId ? index.nodeById.get(next.selectedId) : undefined
@@ -91,7 +104,10 @@ export function useExplorerState(graph: MusicGraph) {
   }, [index])
 
   const navigate = useCallback((next: ExplorerLocation) => {
-    const update = () => setLocation(next)
+    const update = () => {
+      if (next.view !== view) window.history.pushState(null, '', explorerUrl(next))
+      setLocation(next)
+    }
     if (next.view !== view || next.orders[next.timelineView] !== order || next.genreDisplay !== genreDisplay) {
       transitionPage(update)
     } else {
@@ -100,28 +116,20 @@ export function useExplorerState(graph: MusicGraph) {
   }, [view, order, genreDisplay])
 
   useEffect(() => {
-    const url = new URL(window.location.href)
-    if (selectedId) url.searchParams.set('focus', selectedId)
-    else url.searchParams.delete('focus')
-    const viewParam = VIEW_PARAMS[view]
-    if (viewParam) url.searchParams.set('view', viewParam)
-    else url.searchParams.delete('view')
-    writeTimelineOrders(url.searchParams, orders)
-    if (genreDisplay === 'bubbles') url.searchParams.set('layout', 'bubbles')
-    else url.searchParams.delete('layout')
-    window.history.replaceState(null, '', url)
+    const url = explorerUrl(location)
+    if (url.href !== window.location.href) window.history.replaceState(null, '', url)
     updateDocumentMetadata(document, socialMetadata(url, index.nodeById))
-  }, [index, selectedId, view, orders, genreDisplay])
+  }, [index, location])
 
   useEffect(() => {
     const onPopState = () => {
       const next = readLocation()
       revealSelection(next)
-      navigate(next)
+      transitionPage(() => setLocation(next))
     }
     window.addEventListener('popstate', onPopState)
     return () => window.removeEventListener('popstate', onPopState)
-  }, [readLocation, revealSelection, navigate])
+  }, [readLocation, revealSelection])
 
   const selectNode = useCallback((id: string | null) => {
     const node = id ? index.nodeById.get(id) : undefined

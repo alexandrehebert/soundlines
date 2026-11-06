@@ -40,15 +40,16 @@ describe('social page responses', () => {
     expect(response.headers.get('cache-control')).toBe('no-cache')
     expect(html).toContain('<title>Timbales | Instrument | Soundlines</title>')
     expect(html).toContain('content="Cuban metal drums."')
-    expect(html).toContain(`${origin}/?view=instruments&amp;focus=instrument%3Atimbales`)
+    expect(html).toContain(`${origin}/instruments?focus=instrument%3Atimbales`)
     expect(html).toContain(`content="${origin}/social-card.png"`)
     expect(html).toContain('<body>App</body>')
   })
 
   it('responds to HEAD consistently and rejects unsupported methods', async () => {
-    const get = await fetch(`${address}/?view=artists`)
+    const get = await fetch(`${address}/artists`)
     const html = await get.text()
-    const head = await fetch(`${address}/?view=artists`, { method: 'HEAD' })
+    expect(html).toContain('<title>Music Artists | Soundlines</title>')
+    const head = await fetch(`${address}/artists`, { method: 'HEAD' })
     expect(head.status).toBe(200)
     expect(head.headers.get('content-length')).toBe(String(Buffer.byteLength(html)))
     expect(await head.text()).toBe('')
@@ -58,16 +59,25 @@ describe('social page responses', () => {
     expect(post.headers.get('allow')).toBe('GET, HEAD')
   })
 
+  it('preserves route metadata when the function receives a Vercel rewrite', async () => {
+    const response = await fetch(`${address}/api/page?__page_path=/history&view=artists`)
+    const html = await response.text()
+    expect(html).toContain('<title>Music History | Soundlines</title>')
+    expect(html).toContain(`href="${address}/history"`)
+  })
+
   it('only intercepts HTML entry points and requires a valid host', () => {
-    expect(isPageRequest({ method: 'GET', url: '/?view=artists', headers: {} })).toBe(true)
+    for (const url of ['/', '/genres', '/artists', '/instruments', '/history/?focus=event%3Amtv-launch']) {
+      expect(isPageRequest({ method: 'GET', url, headers: {} })).toBe(true)
+    }
     expect(isPageRequest({ method: 'HEAD', url: '/index.html', headers: {} })).toBe(true)
     expect(isPageRequest({ method: 'GET', url: '/assets/index.js', headers: {} })).toBe(false)
     expect(isPageRequest({ method: 'POST', url: '/', headers: {} })).toBe(false)
     expect(pageRequestUrl({
       headers: { host: 'preview.example.test', 'x-forwarded-proto': 'https' },
-      url: '/?view=artists',
+      url: '/artists',
       method: 'GET',
-    }).href).toBe('https://preview.example.test/?view=artists')
+    }).href).toBe('https://preview.example.test/artists')
     expect(() => pageRequestUrl({ headers: {}, url: '/', method: 'GET' })).toThrow('valid Host')
     expect(() => pageRequestUrl({ headers: { host: 'site.test@evil.test' }, url: '/', method: 'GET' })).toThrow('valid Host')
   })

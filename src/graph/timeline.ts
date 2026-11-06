@@ -77,6 +77,22 @@ export function viewFromParam(param: string | null): ExplorerView {
   return EXPLORER_VIEWS.find((view) => param !== null && VIEW_PARAMS[view] === param) ?? 'genre'
 }
 
+export const VIEW_PATHS: Record<ExplorerView, string> = {
+  genre: '/genres',
+  artist: '/artists',
+  instrument: '/instruments',
+  history: '/history',
+}
+
+export function viewFromPath(path: string): ExplorerView | undefined {
+  const normalized = path.replace(/\/$/, '')
+  return EXPLORER_VIEWS.find((view) => VIEW_PATHS[view] === normalized)
+}
+
+export function viewFromUrl(url: URL): ExplorerView {
+  return viewFromPath(url.pathname) ?? viewFromParam(url.searchParams.get('view'))
+}
+
 const INSTRUMENT_ORIENTATION: RelationOrientation = {
   influences: 'forward',
   derived_from: 'backward',

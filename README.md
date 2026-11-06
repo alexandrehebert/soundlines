@@ -74,7 +74,7 @@ and all relationships in the detail panel, or use its connected-node chips to
 explore the graph. Selecting an event through search or a relationship opens
 History and reveals it even if the current filters would hide it.
 
-`?view=history` opens the view; `?focus=event:mtv-launch` shares a specific
+`/history` opens the view; `?focus=event:mtv-launch` shares a specific
 event. Filters are remembered while switching views during the session but are
 not part of the shared URL.
 
@@ -190,7 +190,7 @@ historical events. Artist lanes and detail badges use the same families.
   Escape clears and closes search. Search and related-node navigation switch
   modes automatically when selecting an artist, genre, instrument, or event and
   bring the selection into view.
-- Selection is shareable via `?focus=<node-id>`; `?view=artists`, `?view=instruments`, or `?view=history` opens a view without a selection
+- Selection is shareable via `?focus=<node-id>`; `/genres`, `/artists`, `/instruments`, or `/history` opens a view without a selection
 - Shared view and entity URLs return Open Graph and Twitter card metadata in the
   initial HTML, including a Soundlines preview image. Entity previews use their
   name and description (or a type-specific fallback). Genre bubbles have their
@@ -305,10 +305,10 @@ The UI never touches the JSON directly: all queries (neighbors, lineage traversa
 ### Shared explorer architecture
 
 - [ExplorerContext](./src/ExplorerContext.ts) owns the graph index, active mode, selection, per-mode ranges, and URL synchronization; the provider wires the UI without graph/selection prop drilling.
-- [Social metadata](./src/socialMetadata.ts) derives previews from those same URL
-  parameters and graph nodes. The Vercel [page function](./api/page.ts) injects
+- [Social metadata](./src/socialMetadata.ts) derives previews from those same routes,
+  URL parameters, and graph nodes. The Vercel [page function](./api/page.ts) injects
   them into the built HTML before it reaches social crawlers; Vite's dev and
-  preview servers do the same locally. Vercel routes `/` and `/index.html` to
+  preview servers do the same locally. Vercel routes the explorer pages to
   this function; the `vercel-build` script generates the HTML before the
   function bundles it. Other static hosts need equivalent server-side handling
   for entity-specific previews.

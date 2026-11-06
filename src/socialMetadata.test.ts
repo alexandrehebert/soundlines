@@ -10,11 +10,11 @@ const template = '<html><head><!-- social-metadata:start --><title>Old</title><!
 
 describe('social metadata', () => {
   it.each([
-    ['/', 'Music Genres | Soundlines'],
-    ['/?view=artists', 'Music Artists | Soundlines'],
-    ['/?view=instruments', 'Musical Instruments | Soundlines'],
-    ['/?view=history', 'Music History | Soundlines'],
-    ['/?layout=bubbles', 'Music Genre Map | Soundlines'],
+    ['/genres', 'Music Genres | Soundlines'],
+    ['/artists', 'Music Artists | Soundlines'],
+    ['/instruments', 'Musical Instruments | Soundlines'],
+    ['/history', 'Music History | Soundlines'],
+    ['/genres?layout=bubbles', 'Music Genre Map | Soundlines'],
   ])('describes the %s view', (path, title) => {
     const metadata = socialMetadata(new URL(path, origin), index.nodeById)
     expect(metadata.title).toBe(title)
@@ -24,16 +24,16 @@ describe('social metadata', () => {
   })
 
   it.each([
-    ['genre:house', 'House', 'Genre', null],
-    ['artist:juan-atkins', 'Juan Atkins', 'Artist', 'artists'],
-    ['instrument:timbales', 'Timbales', 'Instrument', 'instruments'],
-    ['label:metroplex', 'Metroplex', 'Label', 'artists'],
-    ['place:detroit', 'Detroit', 'Place', 'artists'],
-    ['track:clear', 'Clear', 'Track', 'artists'],
-    ['scene:the-warehouse', 'The Warehouse', 'Scene', 'artists'],
-    ['event:mtv-launch', 'MTV launches', 'Event', 'history'],
+    ['genre:house', 'House', 'Genre', '/genres'],
+    ['artist:juan-atkins', 'Juan Atkins', 'Artist', '/artists'],
+    ['instrument:timbales', 'Timbales', 'Instrument', '/instruments'],
+    ['label:metroplex', 'Metroplex', 'Label', '/artists'],
+    ['place:detroit', 'Detroit', 'Place', '/artists'],
+    ['track:clear', 'Clear', 'Track', '/artists'],
+    ['scene:the-warehouse', 'The Warehouse', 'Scene', '/artists'],
+    ['event:mtv-launch', 'MTV launches', 'Event', '/history'],
   ])('describes the %s entity and uses the effective view', (id, name, type, view) => {
-    const url = new URL('/?view=artists&sort=oldest-first&layout=bubbles&utm_source=example', origin)
+    const url = new URL('/artists?sort=oldest-first&layout=bubbles&utm_source=example', origin)
     url.searchParams.set('focus', id)
     const metadata = socialMetadata(url, index.nodeById)
     const canonical = new URL(metadata.url)
@@ -42,10 +42,20 @@ describe('social metadata', () => {
     expect(metadata.description).toBeTruthy()
     expect(Array.from(metadata.description).length).toBeLessThanOrEqual(200)
     expect(canonical.searchParams.get('focus')).toBe(id)
-    expect(canonical.searchParams.get('view')).toBe(view)
+    expect(canonical.pathname).toBe(view)
+    expect(canonical.searchParams.has('view')).toBe(false)
     expect(canonical.searchParams.get('sort')).toBe('oldest-first')
     expect(canonical.searchParams.get('layout')).toBe('bubbles')
     expect(canonical.searchParams.has('utm_source')).toBe(false)
+  })
+
+  it.each([
+    ['/', '/genres'],
+    ['/?view=artists', '/artists'],
+    ['/index.html?view=history', '/history'],
+    ['/genres/?view=artists', '/genres'],
+  ])('canonicalizes %s to %s', (path, canonical) => {
+    expect(socialMetadata(new URL(path, origin), index.nodeById).url).toBe(`${origin}${canonical}`)
   })
 
   it('uses the dataset description when available and a meaningful fallback otherwise', () => {
@@ -75,12 +85,12 @@ describe('social metadata', () => {
       index.nodeById,
     )
     expect(metadata.title).toBe('Musical Instruments | Soundlines')
-    expect(metadata.url).toBe(`${origin}/?view=instruments`)
+    expect(metadata.url).toBe(`${origin}/instruments`)
   })
 
   it('preserves the shared sort order for every timeline', () => {
     const metadata = socialMetadata(
-      new URL('/?view=artists&sort=oldest-first&artist-sort=oldest-first&instrument-sort=oldest-first', origin),
+      new URL('/artists?sort=oldest-first&artist-sort=oldest-first&instrument-sort=oldest-first', origin),
       index.nodeById,
     )
     const params = new URL(metadata.url).searchParams

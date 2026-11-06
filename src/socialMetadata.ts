@@ -1,5 +1,5 @@
 import {
-  readTimelineOrders, VIEW_PARAMS, viewForNode, viewFromParam, writeTimelineOrders, type ExplorerView,
+  readTimelineOrders, VIEW_PATHS, viewForNode, viewFromUrl, writeTimelineOrders, type ExplorerView,
 } from './graph/timeline.ts'
 import { NODE_TYPE_LABELS, type GraphNode } from './graph/types.ts'
 
@@ -57,11 +57,9 @@ function shortenDescription(description: string): string {
 export function socialMetadata(url: URL, nodeById: ReadonlyMap<string, GraphNode>): SocialMetadata {
   const focus = url.searchParams.get('focus')
   const node = focus ? nodeById.get(focus) : undefined
-  const view = viewForNode(node?.type, viewFromParam(url.searchParams.get('view')))
+  const view = viewForNode(node?.type, viewFromUrl(url))
   const bubbles = url.searchParams.get('layout') === 'bubbles'
-  const canonical = new URL('/', url.origin)
-  const viewParam = VIEW_PARAMS[view]
-  if (viewParam) canonical.searchParams.set('view', viewParam)
+  const canonical = new URL(VIEW_PATHS[view], url.origin)
   if (node) canonical.searchParams.set('focus', node.id)
   writeTimelineOrders(canonical.searchParams, readTimelineOrders(url.searchParams))
   if (bubbles) canonical.searchParams.set('layout', 'bubbles')

@@ -18,7 +18,7 @@ const meta = {
   render: function Render(args) {
     const [, updateArgs] = useArgs()
     return (
-      <div className="relative h-20 w-52">
+      <div className="flex h-20 w-52 items-start justify-end p-3">
         <BubbleZoomControls {...args} onZoom={(delta) => {
           args.onZoom(delta)
           const zoom = Math.min(MAX_BUBBLE_ZOOM, Math.max(MIN_BUBBLE_ZOOM, Math.round((args.zoom + delta) * 100) / 100))

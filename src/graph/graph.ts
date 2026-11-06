@@ -81,13 +81,14 @@ export function lineage(
   id: string,
   orientation: RelationOrientation = LINEAGE_ORIENTATION,
 ): Lineage {
-  const ancestors = new Set<string>()
-  const descendants = new Set<string>()
+  const { ancestors, descendants, edges } = traceLineage(index, id, orientation)
+  return { ancestors: new Set(ancestors.keys()), descendants: new Set(descendants.keys()), edges }
+}
+
+function traceLineage(index: GraphIndex, id: string, orientation: RelationOrientation) {
   const edges = new Set<string>()
-
-  walk(index, id, 'ancestors', ancestors, edges, orientation)
-  walk(index, id, 'descendants', descendants, edges, orientation)
-
+  const ancestors = walk(index, id, 'ancestors', edges, orientation)
+  const descendants = walk(index, id, 'descendants', edges, orientation)
   return { ancestors, descendants, edges }
 }
 
@@ -97,10 +98,15 @@ export function lineageHighlight(
   orientation: RelationOrientation = LINEAGE_ORIENTATION,
 ) {
   if (!id || !index.nodeById.has(id)) return null
-  const result = lineage(index, id, orientation)
+  const { ancestors, descendants, edges } = traceLineage(index, id, orientation)
+  const distances = new Map([[id, 0], ...ancestors])
+  for (const [node, distance] of descendants) {
+    distances.set(node, Math.min(distance, distances.get(node) ?? distance))
+  }
   return {
-    nodes: new Set([id, ...result.ancestors, ...result.descendants]),
-    edges: result.edges,
+    nodes: new Set(distances.keys()),
+    edges,
+    distances,
   }
 }
 
@@ -128,14 +134,13 @@ function walk(
   index: GraphIndex,
   start: string,
   toward: 'ancestors' | 'descendants',
-  visited: Set<string>,
   edges: Set<string>,
   orientation: RelationOrientation,
 ) {
   const queue = [start]
-  const seen = new Set([start])
-  while (queue.length > 0) {
-    const current = queue.shift()!
+  const distances = new Map([[start, 0]])
+  for (let i = 0; i < queue.length; i++) {
+    const current = queue[i]
     const touching = [
       ...(index.outEdges.get(current) ?? []),
       ...(index.inEdges.get(current) ?? []),
@@ -154,13 +159,14 @@ function walk(
             : null
       if (next === null) continue
       edges.add(edge.id)
-      if (!seen.has(next)) {
-        seen.add(next)
-        visited.add(next)
+      if (!distances.has(next)) {
+        distances.set(next, distances.get(current)! + 1)
         queue.push(next)
       }
     }
   }
+  distances.delete(start)
+  return distances
 }
 
 /** Nodes whose active period intersects [start, end]. */

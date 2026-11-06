@@ -2,6 +2,14 @@ import type { EdgeType, LaneFamily, NodeType, Period } from './graph/types.ts'
 
 export const DEFAULT_BUBBLE_ZOOM = 0.75
 
+export function bubbleSelectionStyle(distances: ReadonlyMap<string, number> | null, id: string) {
+  const distance = distances?.get(id)
+  return {
+    opacity: distances && distance === undefined ? 0.2 : 1,
+    filter: distance ? `saturate(${0.75 ** distance})` : undefined,
+  }
+}
+
 export const SELECTION_BORDER = {
   borderStyle: 'solid',
   borderColor: '#f8fafc',

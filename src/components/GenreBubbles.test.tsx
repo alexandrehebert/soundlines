@@ -44,7 +44,8 @@ describe('bubble lineage rendering', () => {
     expect(markup).not.toContain('<h2')
     expect(markup).not.toMatch(/<p(?:\s|>)/)
     expect(markup).not.toContain('A world of influence')
-    expect(markup).toContain('aria-label="Bubble zoom" class="absolute right-3 top-3')
+    expect(markup).toContain('class="absolute right-3 top-3 z-10 flex flex-col gap-2"><div role="group" aria-label="Bubble zoom"')
+    expect(markup.indexOf('aria-label="Bubble zoom"')).toBeLessThan(markup.indexOf('aria-label="Graph minimap"'))
     expect(markup).toContain('touch-none')
     expect(markup).toContain('Pinch or Cmd/Ctrl+scroll to zoom.')
     for (const label of ['Zoom out bubbles', 'Zoom in bubbles']) {
@@ -63,11 +64,15 @@ describe('bubble lineage rendering', () => {
     expect(markup).not.toContain('data-bubble-link')
   })
 
-  it('matches bar selection styling and dims unrelated branches to 20 percent', () => {
+  it('matches bar selection styling and desaturates connected bubbles by lineage distance', () => {
     const markup = renderBubbles('genre:B')
     for (const name of ['A', 'B', 'C']) {
       expect(bubbleMarkup(markup, name)).toContain('opacity:1')
     }
+    expect(bubbleMarkup(markup, 'B')).not.toContain('saturate(')
+    expect(bubbleMarkup(markup, 'A')).toContain('saturate(0.75)')
+    expect(bubbleMarkup(markup, 'C')).toContain('saturate(0.75)')
+    expect(bubbleMarkup(renderBubbles('genre:A'), 'C')).toContain('saturate(0.5625)')
     expect(bubbleMarkup(markup, 'D')).toContain('opacity:0.2')
     expect(bubbleMarkup(markup, 'B')).toContain('aria-pressed="true"')
     expect(bubbleMarkup(markup, 'B')).toContain('border-color:#f8fafc')

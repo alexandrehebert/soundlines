@@ -1,4 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'node:http'
+import { viewFromPath } from '../src/graph/timeline.ts'
 import type { GraphNode } from '../src/graph/types.ts'
 import { renderSocialMetadata, socialMetadata } from '../src/socialMetadata.ts'
 
@@ -6,7 +7,7 @@ type PageRequest = Pick<IncomingMessage, 'headers' | 'method' | 'url'>
 
 export function isPageRequest(request: PageRequest): boolean {
   const path = request.url?.split('?', 1)[0]
-  return (request.method === 'GET' || request.method === 'HEAD') && (path === '/' || path === '/index.html')
+  return (request.method === 'GET' || request.method === 'HEAD') && (path === '/' || path === '/index.html' || (path !== undefined && viewFromPath(path) !== undefined))
 }
 
 export function pageRequestUrl(request: PageRequest): URL {
@@ -17,7 +18,11 @@ export function pageRequestUrl(request: PageRequest): URL {
   const url = new URL(`${protocol}://${host}/`)
   const target = request.url ?? '/'
   const query = target.indexOf('?')
+  url.pathname = query < 0 ? target : target.slice(0, query)
   if (query >= 0) url.search = target.slice(query)
+  // Vercel can pass the rewritten path to the page function.
+  const pagePath = url.searchParams.get('__page_path')
+  if (url.pathname === '/api/page' && pagePath && viewFromPath(pagePath)) url.pathname = pagePath
   return url
 }
 

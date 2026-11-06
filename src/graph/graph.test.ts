@@ -103,13 +103,14 @@ describe('lineageHighlight', () => {
     expect(lineageHighlight(index, null)).toBeNull()
     expect(lineageHighlight(index, 'genre:missing')).toBeNull()
     expect(lineageHighlight(index, 'artist:dj')).toEqual({
-      nodes: new Set(['artist:dj']), edges: new Set(),
+      nodes: new Set(['artist:dj']), edges: new Set(), distances: new Map([['artist:dj', 0]]),
     })
   })
 
   it('preserves the active model orientation', () => {
     expect(lineageHighlight(index, 'artist:dj', { key_artist_of: 'forward' })).toEqual({
       nodes: new Set(['artist:dj', 'genre:house']), edges: new Set(['e4']),
+      distances: new Map([['artist:dj', 0], ['genre:house', 1]]),
     })
   })
 })
