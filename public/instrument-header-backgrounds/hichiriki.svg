@@ -1,24 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120">
-  <defs>
-    <linearGradient id="metal" x2=".34" y2="1" gradientUnits="objectBoundingBox">
-      <stop stop-color="#34d399"/><stop offset="1" stop-color="#165b42"/>
-    </linearGradient>
-    <linearGradient id="fade">
-      <stop offset=".32" stop-color="white" stop-opacity="0"/>
-      <stop offset=".58" stop-color="white" stop-opacity=".18"/>
-      <stop offset=".88" stop-color="white" stop-opacity=".54"/>
-      <stop offset="1" stop-color="white" stop-opacity=".22"/>
-    </linearGradient>
-    <radialGradient id="halo">
-      <stop stop-color="#34d399" stop-opacity=".16"/>
-      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
-    </radialGradient>
-    <mask id="reveal" maskUnits="userSpaceOnUse" x="0" y="0" width="360" height="120">
-      <rect width="360" height="120" fill="url(#fade)"/>
-    </mask>
-  </defs>
-  <ellipse cx="279" cy="72" rx="89" ry="56" fill="url(#halo)"/>
-  <g mask="url(#reveal)">
-    <g transform="translate(266 69) scale(.61)"><g transform="rotate(-16) scale(.76)"><path d="M-117 -6L81 -8Q97 -9 108 -15L112 -15L112 15L108 15Q95 9 81 8L-117 6Z" fill="url(#metal)" stroke="#f4d7ae" stroke-width="1.5"/><ellipse cx="-51" cy="0" rx="3" ry="3" fill="#24313b" stroke="#edd2a9" stroke-width="1"/><ellipse cx="-32" cy="0" rx="3" ry="3" fill="#24313b" stroke="#edd2a9" stroke-width="1"/><ellipse cx="-13" cy="0" rx="3" ry="3" fill="#24313b" stroke="#edd2a9" stroke-width="1"/><ellipse cx="6" cy="0" rx="3" ry="3" fill="#24313b" stroke="#edd2a9" stroke-width="1"/><ellipse cx="25" cy="0" rx="3" ry="3" fill="#24313b" stroke="#edd2a9" stroke-width="1"/><ellipse cx="44" cy="0" rx="3" ry="3" fill="#24313b" stroke="#edd2a9" stroke-width="1"/><ellipse cx="63" cy="0" rx="3" ry="3" fill="#24313b" stroke="#edd2a9" stroke-width="1"/></g></g>
-  </g>
+<defs>
+  <linearGradient id="wood" x1="0%" y1="0%" x2="38%" y2="100%"><stop stop-color="#34d399"/><stop offset="1" stop-color="#165b42"/></linearGradient>
+  <radialGradient id="halo"><stop stop-color="#34d399" stop-opacity=".18"/><stop offset="1" stop-color="#165b42" stop-opacity="0"/></radialGradient>
+  <linearGradient id='fade'><stop offset='.33' stop-color='white' stop-opacity='0'/><stop offset='.61' stop-color='white' stop-opacity='.27'/><stop offset='.88' stop-color='white' stop-opacity='.61'/><stop offset='1' stop-color='white' stop-opacity='.42'/></linearGradient><mask id='reveal' maskUnits='userSpaceOnUse'><rect width='360' height='120' fill='url(#fade)'/></mask>
+</defs>
+<ellipse cx="262" cy="64" rx="92" ry="58" fill="url(#halo)" stroke="none"/>
+<g mask="url(#reveal)"><g transform="translate(262 64) rotate(-9) scale(0.708)"><path d="M-70-8Q-21-10 80-12L87-11V11L80 12Q-21 10-70 8Z" fill="url(#wood)" stroke="#a7f3d0" stroke-width="1.3"/><path d="M-70-5L-85-5L-104-10L-111-8V8L-104 10L-85 5H-70Z" fill="#dfb977" stroke="#f9dd9e" stroke-width="1.3"/><rect x="-87" y="-6" width="12" height="12" rx="1" fill="#a07050" stroke="none"/><rect x="-64" y="-10" width="5" height="20" rx="1" fill="#aa8260" stroke="none"/><rect x="-45" y="-10" width="5" height="20" rx="1" fill="#aa8260" stroke="none"/><rect x="-24" y="-10" width="5" height="20" rx="1" fill="#aa8260" stroke="none"/><rect x="-3" y="-10" width="5" height="20" rx="1" fill="#aa8260" stroke="none"/><rect x="18" y="-10" width="5" height="20" rx="1" fill="#aa8260" stroke="none"/><rect x="39" y="-10" width="5" height="20" rx="1" fill="#aa8260" stroke="none"/><rect x="61" y="-10" width="5" height="20" rx="1" fill="#aa8260" stroke="none"/><rect x="76" y="-10" width="5" height="20" rx="1" fill="#aa8260" stroke="none"/><ellipse cx="-55" cy="0" rx="3.2" ry="3" fill="#111522" stroke="#a1a8ad"/><ellipse cx="-35" cy="0" rx="3.2" ry="3" fill="#111522" stroke="#a1a8ad"/><ellipse cx="-14" cy="0" rx="3.2" ry="3" fill="#111522" stroke="#a1a8ad"/><ellipse cx="7" cy="0" rx="3.2" ry="3" fill="#111522" stroke="#a1a8ad"/><ellipse cx="28" cy="0" rx="3.2" ry="3" fill="#111522" stroke="#a1a8ad"/><ellipse cx="50" cy="0" rx="3.2" ry="3" fill="#111522" stroke="#a1a8ad"/><ellipse cx="69" cy="0" rx="3.2" ry="3" fill="#111522" stroke="#a1a8ad"/></g></g>
 </svg>

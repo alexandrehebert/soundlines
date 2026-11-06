@@ -172,7 +172,15 @@ describe('detail panel sources', () => {
     expect(markup).toContain(`href="https://example.com/${source}"`)
     expect(markup).not.toContain(`href="https://example.com/${otherSource}"`)
     expect(markup).not.toContain('https://example.com/Relationship')
-    expect(markup.match(/<a /g)).toHaveLength(1)
+    const previewInfo = 'aria-label="About this audio preview"'
+    if (id.startsWith('genre:')) {
+      expect(markup).toContain(previewInfo)
+      expect(markup).toContain('href="https://ace-step.github.io/ACE-Step-1.5/"')
+      expect(markup).toContain('preview · 10 seconds')
+    } else {
+      expect(markup).not.toContain(previewInfo)
+    }
+    expect(markup.match(/<a /g)).toHaveLength(id.startsWith('genre:') ? 2 : 1)
     expect(markup).toContain(relatedName)
     expect(markup).toContain('Confidence: high')
     expect(markup).toContain('A representative artist.')
@@ -204,7 +212,7 @@ describe('detail panel sources', () => {
     const markup = renderPanel(data, 'genre:jazz')
 
     expect(markup).not.toContain('Sources')
-    expect(markup).not.toContain('<a ')
+    expect(markup.match(/<a /g)).toHaveLength(1)
     expect(markup).toContain('Example artist')
   })
 
@@ -221,7 +229,8 @@ describe('detail panel sources', () => {
       nodes: graph.nodes.map((node) => node.id === 'genre:jazz' ? { ...node, sources } : node),
     }
     const markup = renderPanel(data, 'genre:jazz')
-    const links = [...markup.matchAll(/<a\b[^>]*>.*?<\/a>/g)].map(([link]) => link)
+    const sourcesSection = markup.slice(markup.indexOf('Sources'))
+    const links = [...sourcesSection.matchAll(/<a\b[^>]*>.*?<\/a>/g)].map(([link]) => link)
 
     expect(links).toHaveLength(sources.length)
     for (const [index, title, website] of [

@@ -1,0 +1,407 @@
+{
+  "acid-house": {
+    "bpm": 124,
+    "meter": "4",
+    "prompt": "Late 1980s Chicago acid house on analog boxes. A single sliding, accented TB-303 pattern changes shape as its resonant filter opens over a dry drum-machine kick, clap and offbeat hats. Let the filter performance create the drama over an unbroken club pulse."
+  },
+  "alternative-rock": {
+    "bpm": 121,
+    "meter": "4",
+    "prompt": "Early 1990s alternative rock built around an angular electric-guitar figure and a driving live band. Contrast a lightly overdriven chiming part with wide crunchy accents, while bass and acoustic drums push a loose backbeat. Keep the ensemble dynamic and the guitar hook clearly audible."
+  },
+  "ambient": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Late 1970s-style ambient soundscape with no beat or fixed pulse. Slowly crossfade soft sustained organ tones, distant resonant notes and faint tape loops with slightly different cycle lengths. Leave quiet space between events and let long natural-sounding decay carry the piece."
+  },
+  "ambient-techno": {
+    "bpm": 117,
+    "meter": "4",
+    "prompt": "Early 1990s ambient techno. A soft, restrained four-on-the-floor pulse and tiny ticking percussion sit behind long layered pads, an airy arpeggio and distant dubby fragments. Use an enveloping stereo mix where the atmosphere carries as much weight as the drum machine."
+  },
+  "big-beat": {
+    "bpm": 118,
+    "meter": "4",
+    "prompt": "Mid-1990s UK big beat with a loud, swaggering sample-based groove. Loop an original live funk break with a hard snare, off-center kicks and roomy cymbals beneath a gritty distorted bass hook, short guitar chops and bold rave stabs. Use forceful drums with audible sampler texture."
+  },
+  "black-metal": {
+    "bpm": 174,
+    "meter": "4",
+    "prompt": "Early 1990s Norwegian second-wave black metal instrumental. Thin abrasive tremolo-picked guitars outline a bleak minor-key figure above a live blast beat and occasional fast cymbal accents. Use raw cold room production, with sustained guitar harmonies visible through the noise."
+  },
+  "blues-rock": {
+    "bpm": 108,
+    "meter": "4",
+    "prompt": "Late 1960s electric blues rock. A tube-amp guitar answers a blues-scale riff with bent notes and slides over a strong live shuffle, melodic electric bass and slightly late snare. Use natural kit bleed and enough space for the guitar phrases to breathe."
+  },
+  "breakbeat": {
+    "bpm": 130,
+    "meter": "4",
+    "prompt": "A club breakbeat instrumental with a clearly broken kick pattern, offbeat accents and a strong snare backbeat. Rearrange an original acoustic drum break in a repeating two-bar phrase, with small ghost notes and a varied turnaround against a rubbery bass riff. Keep the drums forward and leave room for the syncopation."
+  },
+  "breakbeat-hardcore": {
+    "bpm": 150,
+    "meter": "4",
+    "prompt": "Early 1990s UK breakbeat hardcore rave. A briskly chopped break and occasional house kick reinforce a rolling sub-bass, bright sampled piano chords and sharp acid or rave stabs. Use pitched-up sampler texture, clipped fills and a continuous high-energy dance section."
+  },
+  "breakcore": {
+    "bpm": 184,
+    "meter": "4",
+    "prompt": "Early 2000s breakcore with radically rearranged acoustic breaks. Switch between recognizably funky fragments and short bursts of chopped snares, reverse cymbals, stutters and displaced downbeats, over distorted bass and brief industrial noise. Preserve striking changes of texture and dynamics between the edits."
+  },
+  "britpop": {
+    "bpm": 120,
+    "meter": "4",
+    "prompt": "Mid-1990s British melodic guitar pop. Ringing rhythm guitars, buoyant melodic bass and a live drum kit drive a singable instrumental chorus, with bright picked figures weaving through the chord changes. Give the snare a lively room and keep the guitar layers clear."
+  },
+  "chicago-house": {
+    "bpm": 121,
+    "meter": "4",
+    "prompt": "Mid-1980s Chicago warehouse house, built like an independent 12-inch club mix. Straight drum-machine kick with handclaps on two and four, open hats on the offbeat, a springy single-note synth bass and clipped piano or organ chords lifted by human percussion accents. Keep the boxy, lively tape mix and leave space between stabs."
+  },
+  "chillwave": {
+    "bpm": 94,
+    "meter": "4",
+    "prompt": "Early 2010s bedroom chillwave. A muffled drum-machine backbeat and rounded bass support woozy detuned analog chords, a small nostalgic synth hook and distant wordless vocal wash. Give the arrangement saturated cassette haze and blurred reverb while keeping the pulse perceptible."
+  },
+  "darksynth": {
+    "bpm": 110,
+    "meter": "4",
+    "prompt": "Heavy horror-tinged darksynth from the 2010s. Distorted sequenced synth bass and low octave pulses drive gated electronic drums, with harsh industrial accents and a minor-key analog lead rising out of the low end. Keep the cinematic tension grounded in a steady drum groove."
+  },
+  "death-metal": {
+    "bpm": 167,
+    "meter": "4",
+    "prompt": "Early 1990s Florida death metal instrumental. Low distorted guitars trade chromatic palm-muted riffs with quick tremolo bursts while a live drummer moves from double kick to tightly synchronized stops. Keep the bass locked to the riff and the attack heavy but legible in a dry studio mix."
+  },
+  "deep-house": {
+    "bpm": 119,
+    "meter": "4",
+    "prompt": "Late 1980s Chicago deep house in a warm late-night pocket. A soft four-on-the-floor drum machine, rounded bass and shuffling hats carry languid electric-piano seventh chords and a slowly unfolding analog pad. Use syncopated chord changes and gentle room in the mix."
+  },
+  "detroit-techno": {
+    "bpm": 128,
+    "meter": "4",
+    "prompt": "Late 1980s Detroit techno built with sequencers and drum machines. A crisp club pulse and syncopated claps support a warm futuristic bass sequence, soulful minor-seventh synth chords and a bright, economical melodic figure. Balance machine precision with the warmth of the harmony."
+  },
+  "disco": {
+    "bpm": 119,
+    "meter": "4",
+    "prompt": "Late 1970s New York and Philadelphia dance-floor disco played by a live rhythm section. Kick every quarter note, snare on two and four, open hi-hat on the offbeat, nimble octave electric bass and choked clean guitar; strings answer the rhythmic electric piano with bright stabs. Give the kit natural cymbal decay and use warm multitrack studio depth."
+  },
+  "doom-metal": {
+    "bpm": 66,
+    "meter": "4",
+    "prompt": "Early 1980s traditional doom metal. A slow, sustained down-tuned guitar riff and saturated bass hang over a roomy kit with an emphatic, patient backbeat. Leave long rests and decays between weighty minor-key chord strikes, with a small blues inflection in the riff."
+  },
+  "downtempo": {
+    "bpm": 88,
+    "meter": "4",
+    "prompt": "Late 1990s instrumental chill-out downtempo. A soft syncopated break and brushed percussion leave room for deep mellow bass, gently repeated electric-piano voicings and a distant dub echo. Use an unhurried groove and subtle movement in the background textures."
+  },
+  "dream-pop": {
+    "bpm": 94,
+    "meter": "4",
+    "prompt": "Late 1980s dream pop with chiming clean guitars, chorus and long reverb, warm melodic bass and a soft steady drum pulse. A gauzy keyboard pad supports a slow, floating melody carried by a lightly effected guitar. Keep the texture spacious so the notes bloom and recede."
+  },
+  "drum-and-bass": {
+    "bpm": 174,
+    "meter": "4",
+    "prompt": "Late 1990s UK drum and bass, with a fast broken two-step drum pattern, sharp backbeat and subtle ghost snares under busy hats. A sustained low sub and moving detuned bass alternate with brief cold synth chords. Use a compact club mix with strong separation between fast transients and deep bass."
+  },
+  "dub-techno": {
+    "bpm": 123,
+    "meter": "4",
+    "prompt": "Early 1990s Berlin dub techno. A rounded kick and restrained offbeat hat keep time while a muted chord stab falls into long tape-delay repeats and gradually filtered reverb. Let the decay and background hiss occupy the arrangement, with a firm low end and minimal harmonic change."
+  },
+  "dubstep": {
+    "bpm": 140,
+    "meter": "4",
+    "prompt": "Early 2000s South London dubstep with a deep sound-system mix. A spacious half-time kick-snare skeleton, displaced percussion taps and long gaps give a dark sub-bass figure room to roll. Use faint dub-delay tails and sparse minor-key stabs, with the bass carrying the movement."
+  },
+  "edm": {
+    "bpm": 128,
+    "meter": "4",
+    "prompt": "Early 2010s festival dance music in its established melodic drop. A forceful four-on-the-floor kick, bright snare-clap and sidechained bass underpin wide layered saw chords and a simple bright lead hook. Use crisp modern separation and keep the drop rhythm continuous."
+  },
+  "electro": {
+    "bpm": 121,
+    "meter": "4",
+    "prompt": "Early 1980s electro street-dance instrumental. A syncopated TR-808 kick, dry clap and sharp cowbell interact with a precisely sequenced rubbery synth bass and bright robotic keyboard replies. Use a broken funk pattern with space between hits and a spare machine-room mix."
+  },
+  "electro-house": {
+    "bpm": 128,
+    "meter": "4",
+    "prompt": "Late 2000s electro house at club volume. Firm four-on-the-floor kick and bright claps anchor a syncopated, distorted saw-bass riff with abrupt rests and short detuned synth stabs. Bass ducks under the kick, and the groove stays in its driving peak section."
+  },
+  "electroclash": {
+    "bpm": 124,
+    "meter": "4",
+    "prompt": "Early 2000s electroclash club track with a deliberately rough edge. Dry analog drum machine and repetitive dirty mono synth bass carry a two-note icy keyboard hook, cheap-sounding retro synth textures and a punky distorted guitar accent. Keep the arrangement sparse and the groove danceable."
+  },
+  "emo": {
+    "bpm": 123,
+    "meter": "4",
+    "prompt": "Mid-1990s independent emo, with exposed clean arpeggios and an intimate bass line giving way to ringing overdriven chords. Use sensitive live drums that move from restrained accents to an urgent backbeat, and lead guitar melody with audible string and pick attack. Keep the dynamics and human timing of a small band room."
+  },
+  "footwork": {
+    "bpm": 160,
+    "meter": "4",
+    "prompt": "Chicago dance-battle footwork, early 2010s feel. Deep 808 bass and staggered kick-clap volleys leave open spaces for double-time skittering hats, triplet rolls and clipped wordless vocal or soul-chord chops that answer each other. Keep the pulse implicit through the rhythmic feints and use a lean sampler-and-drum-machine mix."
+  },
+  "french-house": {
+    "bpm": 124,
+    "meter": "4",
+    "prompt": "Late 1990s French filter house. An original two-bar disco-funk phrase of clipped guitar, strings and electric bass repeats beneath a square club kick, bright open hats and a clap. Sweep the low-pass filter gradually while the kick ducks the whole phrase, and keep the loop's original instrumental swing."
+  },
+  "french-touch": {
+    "bpm": 117,
+    "meter": "4",
+    "prompt": "Turn-of-the-millennium French Touch with disco and electro-pop colors. Crisp dance kick and handclaps support bright analog synth chords, an elastic bass line and short filtered fragments of original string and guitar playing. Give the hook a sleek studio sheen and a subtly funky offbeat."
+  },
+  "gabber": {
+    "bpm": 185,
+    "meter": "4",
+    "prompt": "Early 1990s Rotterdam gabber. An overdriven, pitched 909-style kick hammers every quarter note under clipped rave stabs and tightly timed machine percussion. Keep the attack sharp, the kick tail abrasively distorted and the energy unbroken."
+  },
+  "garage-house": {
+    "bpm": 121,
+    "meter": "4",
+    "prompt": "Late 1980s New York soulful garage house in the spirit of an extended club mix. Use a firm house kick, skipped shaker accents and handclaps, a warm bass groove, gospel-informed organ and piano chords, and brief wordless ensemble responses. Leave the piano and rhythm section plenty of space to answer each other."
+  },
+  "garage-rock": {
+    "bpm": 146,
+    "meter": "4",
+    "prompt": "Mid-1960s garage rock recorded by a small regional band. A bright primitive fuzz riff and reedy combo organ stab out a catchy chord progression over thumping bass and a live beat with tambourine and snare. Keep a spirited, slightly overloaded mono-style room sound."
+  },
+  "girl-groups": {
+    "bpm": 121,
+    "meter": "4",
+    "prompt": "Early 1960s girl-group pop with a bright female lead singing an original simple hook and close-harmony responses. A tambourine and handclaps reinforce the snare over warm bass, upright piano and soft orchestral touches. Use period chamber reverb and the depth of a compact mono-style studio arrangement."
+  },
+  "glam-rock": {
+    "bpm": 126,
+    "meter": "4",
+    "prompt": "Early 1970s British glam rock. A stomping kick and snare with handclaps, chunky guitar chords and bouncy bass support a theatrical pop hook picked out on guitar and piano. Use a bright punchy band mix with an exaggerated two-and-four accent."
+  },
+  "gothic-rock": {
+    "bpm": 115,
+    "meter": "4",
+    "prompt": "Mid-1980s gothic rock. A prominent pulsing bass ostinato and dark, steady drum-machine backbeat frame chiming chorus-treated guitar figures in a minor key. Let sparse low synth notes and cavernous reverb deepen the atmosphere without obscuring the rhythmic pulse."
+  },
+  "grunge": {
+    "bpm": 109,
+    "meter": "4",
+    "prompt": "Early 1990s Pacific Northwest grunge. A low rough guitar riff and melodic bass drive a heavy live drum kit, with abrupt shifts between dry muted playing and noisy open chords. Use natural cymbal decay, audible amplifier grit and a raw, dynamic band mix."
+  },
+  "hard-rock": {
+    "bpm": 121,
+    "meter": "4",
+    "prompt": "Late 1970s hard rock with a loud tube-amp blues-based electric guitar riff and a second guitar replying in the gaps. A heavy acoustic kit, assertive snare and picked electric bass drive broad accents into a compact instrumental chorus. Use natural room sound around the drums and keep the lead guitar expressive."
+  },
+  "hardstyle": {
+    "bpm": 150,
+    "meter": "4",
+    "prompt": "Mid-2000s Dutch hardstyle in a driving main section. Heavy pitched distorted kicks with long tonal tails alternate with tightly gated synth stabs, supported by a short hard-trance-influenced melody and emphatic percussion fills. Keep the kick and bass tail clear in a strong club mix."
+  },
+  "heavy-metal": {
+    "bpm": 134,
+    "meter": "4",
+    "prompt": "Early 1980s traditional heavy metal instrumental. Twin amplified guitars play a galloping palm-muted main riff and short harmonized melodic reply, with picked bass, powerful acoustic drums and ringing cymbals. Use a clear analog band mix that preserves the riff's articulation."
+  },
+  "hi-nrg": {
+    "bpm": 135,
+    "meter": "4",
+    "prompt": "Early-to-mid 1980s Hi-NRG club disco. Relentless four-on-the-floor drum machine, bright offbeat hats and an octave-jumping synth bass cycle tightly under soaring melodic synth chords and short emphatic fills. Let a clean lead carry the hook over a lean analog club mix."
+  },
+  "house": {
+    "bpm": 124,
+    "meter": "4",
+    "prompt": "House music in a classic club arrangement. A consistent quarter-note kick, crisp claps on two and four and offbeat open hats support a springy syncopated bass and short piano chord stabs. Maintain a grooving instrumental phrase and introduce movement with small percussion and filter changes."
+  },
+  "idm": {
+    "bpm": 108,
+    "meter": "4",
+    "prompt": "Late 1990s experimental electronic listening music. Put micro-edited kicks, ticks and off-grid snare bursts against a steady implied pulse and bittersweet synthesized chords; precise little glitches contrast with a soft rounded bass tone. Use detailed stereo placement without drowning the drum transients."
+  },
+  "indie-rock": {
+    "bpm": 126,
+    "meter": "4",
+    "prompt": "Late 1980s to early 1990s indie rock from a small independent studio. Interlocking jangly guitar lines, an imperfectly doubled chord part and a nimble bass melody sit against human-timed acoustic drums. Give the melodic hook a lightly fuzzy edge and retain room and amplifier texture."
+  },
+  "industrial-metal": {
+    "bpm": 124,
+    "meter": "4",
+    "prompt": "Early 1990s industrial metal. Mechanically repeated low guitar riffs lock to punchy machine-reinforced drums, with metallic sampled impacts and a terse electronic bass pulse. Use tightly gated edits and rough distortion while keeping the kick and main guitar riff sharply aligned."
+  },
+  "italo-disco": {
+    "bpm": 115,
+    "meter": "4",
+    "prompt": "Early 1980s Italian electronic disco. Steady machine kick and bright snare drive an arpeggiated analog bass pattern under bittersweet minor-key synth chords and a memorable simple lead melody. Use glassy keys and restrained period stereo delay with the drum machine clearly audible."
+  },
+  "j-pop": {
+    "bpm": 126,
+    "meter": "4",
+    "prompt": "Late 1990s Japanese pop with an energetic melodic instrumental chorus. Bright piano and synth leads trade the hook against clean guitar, lively live-kit fills and a fluid bass part. Use colorful major-key chord changes, a rising sequence and a crisp polished studio mix."
+  },
+  "jungle": {
+    "bpm": 166,
+    "meter": "4",
+    "prompt": "Early 1990s UK jungle rooted in sound-system dance. Rapid chopped acoustic funk drums with syncopated kick, snare ghost notes, displaced accents and ride cymbal swing race over a slower, deep reggae-influenced sub-bass line. Add a faint atmospheric pad and leave the rolling sampler-edited break in front."
+  },
+  "k-pop": {
+    "bpm": 116,
+    "meter": "4",
+    "prompt": "Late 2010s South Korean dance pop with a tight syncopated electronic groove, crisp drums and low synth bass. Layer bright short synth hooks against a smooth R&B-inflected chord bed, with quick call-and-answer transitions and an emphatic melodic chorus phrase. Use polished, precisely arranged studio production."
+  },
+  "krautrock": {
+    "bpm": 119,
+    "meter": "4",
+    "prompt": "Early 1970s West German experimental rock with a steady motorik pulse. A patient, almost unvarying live drum pattern carries repeating bass, clean delayed guitar fragments and an evolving analog keyboard tone. Let small improvised shifts develop within a continuous tape-recorded band performance."
+  },
+  "math-rock": {
+    "bpm": 124,
+    "meter": null,
+    "prompt": "Mid-1990s instrumental math rock in alternating seven-beat and four-beat phrases. Two clean, tightly picked electric guitars play interlocking angular lines; bass marks the changing accents, and a nimble dry live drummer lands stop-start hits with the ensemble. Keep every attack clear and preserve the irregular phrase lengths."
+  },
+  "metalcore": {
+    "bpm": 155,
+    "meter": "4",
+    "prompt": "Early 2000s metalcore in a tight live band mix. Melodic minor-key guitar runs and double-kick drive resolve into a strongly accented half-time breakdown with syncopated muted low chords and open rests. Keep guitar articulation and snare attack clear through the change."
+  },
+  "minimal-techno": {
+    "bpm": 127,
+    "meter": "4",
+    "prompt": "Early 1990s Detroit minimal techno. A firm kick and a short synth or rim-click figure form an exacting machine loop. Keep the materials spare and create movement with a shifted accent, a short mute and gradual changes in tone or velocity."
+  },
+  "new-wave": {
+    "bpm": 126,
+    "meter": "4",
+    "prompt": "Early 1980s new wave with a brisk danceable backbeat, wiry clean guitar chords and springy melodic bass. Bright angular synth accents punctuate a concise guitar-pop hook over a mix of live and machine drums. Use snappy dynamics and light period stereo effects."
+  },
+  "noise-rock": {
+    "bpm": 127,
+    "meter": "4",
+    "prompt": "Late 1980s underground noise rock. An abrasive detuned guitar scrapes, feeds back and locks into a dissonant riff over repetitive bass and a heavy dry acoustic drum pattern. Let the guitar noise surge between precisely struck ensemble accents in a raw room mix."
+  },
+  "nu-metal": {
+    "bpm": 96,
+    "meter": "4",
+    "prompt": "Late 1990s nu-metal instrumental. Down-tuned electric guitars and thick bass lock into a stop-start syncopated riff over a hip-hop-influenced live drum pocket, with a brief turntable-style texture behind it. Use thick dry distortion, sharp snare and deliberate gaps."
+  },
+  "pop": {
+    "bpm": 108,
+    "meter": "4",
+    "prompt": "Contemporary mainstream pop centered on a clear, memorable chorus melody. A clean punchy backbeat, light rhythmic guitar and warm bass support bright piano or synth chords with an obvious lift into the hook. Use modern studio polish and leave space for the melody to repeat."
+  },
+  "pop-punk": {
+    "bpm": 168,
+    "meter": "4",
+    "prompt": "Late 1990s pop-punk with fast downstroked power chords, a bright octave guitar lead and a punchy acoustic kit. Use tight palm-muted eighth notes against melodic chord changes, a concise major-key chorus hook and small tom fills. Keep the bass and kick lively beneath the two-guitar sound."
+  },
+  "post-hardcore": {
+    "bpm": 145,
+    "meter": "4",
+    "prompt": "Early 1990s post-hardcore with tightly coordinated stops, jagged overdriven guitar shapes and a forceful live rhythm section. Contrast tense, sparsely played phrases with sudden distorted ensemble accents and uneven bar-length turnarounds. Use a direct room sound with strong snare transients."
+  },
+  "post-punk": {
+    "bpm": 125,
+    "meter": "4",
+    "prompt": "Late 1970s British post-punk. A lean repeated bass figure leads the arrangement over a dry driving drum kit; angular trebly guitar scratches and occasional dub-like echoes leave space around the rhythm. Use sharp accents, spare harmony and the intimacy of a small studio."
+  },
+  "post-rock": {
+    "bpm": 86,
+    "meter": "4",
+    "prompt": "Late 1990s instrumental post-rock that builds a texture over time. A repeated clean guitar motif, chiming delay, bowed or sustained guitar layers and an understated live pulse gradually rise into a broader dynamic phrase. Preserve quiet detail and natural cymbal bloom as the arrangement grows."
+  },
+  "progressive-rock": {
+    "bpm": 112,
+    "meter": null,
+    "prompt": "Early 1970s progressive rock instrumental. A composed guitar and organ theme alternates uneven groupings with more flowing common-time phrases, answered by melodic bass and nimble live drums. Layer vintage Mellotron-like texture behind the theme and keep each rhythmic transition clear."
+  },
+  "psychedelic-rock": {
+    "bpm": 101,
+    "meter": "4",
+    "prompt": "Late 1960s psychedelic rock with a live, loose drum groove and droning bass. Let a fuzz guitar improvise around a modal hook while an organ sustains shifting color; add subtle tape echoes and a reversed-guitar accent at the phrase boundary. Use a warm spacious studio mix."
+  },
+  "psytrance": {
+    "bpm": 145,
+    "meter": "4",
+    "prompt": "Late 1990s psychedelic trance in a full-flowing section. A solid kick anchors a rolling tightly articulated sixteenth-note bass pattern while spiraling resonant arpeggios, panned squelches and fast clean percussion flicker overhead. Sustain the hypnotic forward motion and keep the low end precise."
+  },
+  "punk-rock": {
+    "bpm": 164,
+    "meter": "4",
+    "prompt": "Late 1970s punk rock in a small room. Fast downstroked distorted guitar chords, a picked bass running with the riff and a straight rough backbeat propel short two-bar phrases. Keep the takes raw, the fills simple and the guitar and drum attacks forceful."
+  },
+  "rock": {
+    "bpm": 112,
+    "meter": "4",
+    "prompt": "Classic 1970s guitar rock played by a live four-piece band. A crunching tube-amp riff and answering guitar line ride a steady bass pattern and acoustic drums with a strong backbeat and small human fills. Leave audible room around the kit and natural space between accents."
+  },
+  "rock-and-roll": {
+    "bpm": 155,
+    "meter": "4",
+    "prompt": "Mid-1950s rock and roll in a compact live studio take. A swinging backbeat and walking upright bass carry bright electric guitar, rolling boogie piano and short saxophone answers. Use hand-played rhythm, short slapback and the direct sound of a period recording."
+  },
+  "shoegaze": {
+    "bpm": 106,
+    "meter": "4",
+    "prompt": "Early 1990s British shoegaze. Layers of fuzz, pitch-shifted and reverse-reverb guitars swell into a broad blurred chord mass above simple live drums and a rounded bass line. A small melodic figure emerges through the haze with the kick and snare still audible."
+  },
+  "stoner-rock": {
+    "bpm": 88,
+    "meter": "4",
+    "prompt": "Late 1990s desert stoner rock. A massive low-tuned fuzz guitar riff repeats with subtle variations while thick bass and roomy acoustic drums settle into a loose, heavy pocket. Keep the riffs long and bluesy and let the amplifier sustain spill into the rests."
+  },
+  "surf-rock": {
+    "bpm": 153,
+    "meter": "4",
+    "prompt": "Early 1960s Southern California instrumental surf rock. Bright tremolo-picked electric guitar runs through splashy spring reverb over a driving bass and live kick-snare rhythm with quick tom and cymbal fills. Play a fast, clearly articulated minor-key lead hook in a punchy vintage studio mix."
+  },
+  "synth-pop": {
+    "bpm": 119,
+    "meter": "4",
+    "prompt": "Early 1980s synth-pop. A round mono synth bass and steady drum-machine backbeat support a simple melodic synth hook and bright polyphonic chord changes, with short filter and percussion variations. Use a clean analog mix and maintain the structure of a concise pop chorus."
+  },
+  "synthwave": {
+    "bpm": 105,
+    "meter": "4",
+    "prompt": "2010s cinematic synthwave recalling 1980s night-drive soundtracks. A steady octave analog arpeggio and round electric synth bass sit under gated drum-machine snare, pulsing pads and a clear melodic analog lead. Use polished stereo reverb and leave headroom around the drums."
+  },
+  "tech-house": {
+    "bpm": 126,
+    "meter": "4",
+    "prompt": "Late 1990s UK tech house with a restrained underground club mix. Use a solid quarter-note kick, offbeat sub-bass accents, swung closed hats and little metallic percussion shifts, with a very short filtered stab that enters and withdraws. Keep the low end tight and the harmony sparse."
+  },
+  "techno": {
+    "bpm": 132,
+    "meter": "4",
+    "prompt": "Underground club techno in a fully established groove. A deep quarter-note kick and bright offbeat hat drive syncopated metallic percussion, rolling low bass and one short filtered synth motif. Build intensity through subtle automation and rhythmic layering over a dry, powerful club mix."
+  },
+  "thrash-metal": {
+    "bpm": 184,
+    "meter": "4",
+    "prompt": "Mid-1980s thrash metal. Fast, tightly palm-muted electric guitar downpicking and aggressive chromatic riff accents push a precise live drum kit, with rapid kick patterns, ride cymbal and snare turnaround fills. Let the riff keep its attack through a raw, clear analog band mix."
+  },
+  "trance": {
+    "bpm": 138,
+    "meter": "4",
+    "prompt": "Late 1990s European melodic trance during its main instrumental theme. A consistent four-on-the-floor kick, bright offbeat bass and crisp percussion support a wide sustained chord progression and a clear, evolving synth arpeggio. Give the melodic lines clean stereo separation and sustain the club momentum."
+  },
+  "trip-hop": {
+    "bpm": 81,
+    "meter": "4",
+    "prompt": "Mid-1990s Bristol-influenced trip-hop instrumental. A dusty live break with a slightly late snare and small ghost notes carries a dark dub bass line, jazz electric piano and a faint turntable-textured ambience. Let the slow pocket and sparse arrangement make the tension."
+  },
+  "uk-garage": {
+    "bpm": 132,
+    "meter": "4",
+    "prompt": "Late 1990s London two-step garage. Skip kicks around a crisp snare, swing the sixteenth-note hats and shuffle little rim accents; a warm sub-bass follows the holes in the drum pattern. Short soulful organ and electric-piano chops provide a tight syncopated hook."
+  },
+  "vaporwave": {
+    "bpm": 74,
+    "meter": "4",
+    "prompt": "Early 2010s vaporwave with a slowed original lounge-keyboard phrase, soft synth bass and nostalgic mall-music harmonies. Repeat the chopped phrase with small pitch and tape-speed wobbles, a faint blurred backbeat and digital room wash. Give the low-register loop space to breathe."
+  }
+}

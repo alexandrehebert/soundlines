@@ -15,6 +15,17 @@ do not trigger it. Reduced-motion preferences disable the spin and fade.
 
 ## The timeline
 
+Select a genre in the timeline, bubble map, or search to play its 10-second
+ACE-Step preview in the detail panel. Previews load on play.
+
+ACE-Step previews live in `public/genre-previews`. The renderer takes the
+middle ten seconds of a 32-second performance and uses the genre briefs in
+`scripts/ace-briefs-*.json`. With the local ACE-Step API on port 8020 and its
+planner enabled, set `ACESTEP_PYTHON` to the ACE-Step environment's Python
+executable and `ACESTEP_PREVIEW_STATE` to a writable progress file, then run
+`node scripts/render-ace-previews.mjs`. Reuse the progress file to skip
+completed clips, or pass genre slugs to render a subset.
+
 The main view is a horizontal chronology with three bar modes: **Genres** (the default),
 **Artists**, and **Instruments**. A fourth **History** view follows dated events through
 the ages. Each bar mode renders its own nodes as bars, grouped into family

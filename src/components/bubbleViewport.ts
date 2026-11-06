@@ -55,15 +55,17 @@ export function bubbleScrollOffset(
   bubble: Bounds,
   viewportHeight: number,
   mobile: boolean,
-  controls?: Bounds,
+  ...controls: (Bounds | undefined)[]
 ) {
   const sheetTop = viewportHeight * (1 - MOBILE_DETAIL_HEIGHT * (1 - MOBILE_DETAIL_COLLAPSED_OFFSET))
   const visibleBottom = mobile ? Math.max(surface.top, Math.min(surface.bottom, sheetTop)) : surface.bottom
   const x = nearestOffset(bubble.left, bubble.right, surface.left, surface.right)
   let y = nearestOffset(bubble.top, bubble.bottom, surface.top, visibleBottom)
-  if (controls && bubble.left - x < controls.right && bubble.right - x > controls.left
-    && bubble.top - y < controls.bottom && bubble.bottom - y > controls.top) {
-    y = nearestOffset(bubble.top, bubble.bottom, Math.max(surface.top, controls.bottom + 8), visibleBottom)
+  for (const control of controls) {
+    if (control && bubble.left - x < control.right && bubble.right - x > control.left
+      && bubble.top - y < control.bottom && bubble.bottom - y > control.top) {
+      y = nearestOffset(bubble.top, bubble.bottom, Math.max(surface.top, control.bottom + 8), visibleBottom)
+    }
   }
   return { x, y }
 }

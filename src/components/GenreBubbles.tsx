@@ -1,22 +1,46 @@
-import { useEffect, useMemo, useRef } from 'react'
+import { useEffect, useId, useMemo, useRef } from 'react'
 import { useExplorer } from '../ExplorerContext.ts'
 import { layoutGenreBubbles } from '../graph/bubbles.ts'
 import { lineageHighlight, lineageSource, lineageTarget } from '../graph/graph.ts'
 import { FAMILY_LABELS, FAMILY_ORDER } from '../graph/types.ts'
 import { FAMILY_COLORS, SELECTION_BORDER, SELECTION_OUTLINE } from '../theme.ts'
 import { bubbleScrollOffset } from './bubbleViewport.ts'
+import { BubbleMinimap } from './BubbleMinimap.tsx'
 import { BubbleZoomControls } from './BubbleZoomControls.tsx'
 import { useBubbleViewport } from './useBubbleViewport.ts'
 
 export function GenreBubbles() {
   const { model, selectedId, selectNode } = useExplorer()
   const layout = useMemo(() => layoutGenreBubbles(model.index), [model])
-  const bubbleById = useMemo(() => new Map(layout.bubbles.map((bubble) => [bubble.node.id, bubble])), [layout])
+  const links = useMemo(() => {
+    const bubbleById = new Map(layout.bubbles.map((bubble) => [bubble.node.id, bubble]))
+    return model.index.graph.edges.flatMap((edge) => {
+      const sourceId = lineageSource(edge, model.orientation)
+      const targetId = lineageTarget(edge, model.orientation)
+      const source = sourceId ? bubbleById.get(sourceId) : undefined
+      const target = targetId ? bubbleById.get(targetId) : undefined
+      if (!source || !target || source === target) return []
+      const dx = target.x - source.x
+      const dy = target.y - source.y
+      const distance = Math.hypot(dx, dy)
+      if (!distance) return []
+      return [{
+        id: edge.id, sourceId, targetId,
+        x1: source.x + dx / distance * source.diameter / 2,
+        y1: source.y + dy / distance * source.diameter / 2,
+        x2: target.x - dx / distance * target.diameter / 2,
+        y2: target.y - dy / distance * target.diameter / 2,
+        color: model.edgeColors[edge.type] ?? '#64748b',
+      }]
+    })
+  }, [layout, model])
+  const gradientPrefix = useId()
   const highlight = useMemo(
     () => lineageHighlight(model.index, selectedId, model.orientation), [selectedId, model],
   )
   const { surfaceRef, zoom, zoomBy, handlers } = useBubbleViewport(layout.width, layout.height)
   const zoomControls = useRef<HTMLDivElement>(null)
+  const minimap = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const element = surfaceRef.current
@@ -36,6 +60,7 @@ export function GenreBubbles() {
         window.innerHeight,
         !window.matchMedia('(min-width: 48rem)').matches,
         zoomControls.current?.getBoundingClientRect(),
+        minimap.current?.getBoundingClientRect(),
       )
       element.scrollLeft += offset.x
       element.scrollTop += offset.y
@@ -72,30 +97,23 @@ export function GenreBubbles() {
               <div className="absolute left-0 top-0 origin-top-left" style={{ width: layout.width, height: layout.height, transform: `scale(${zoom})` }}>
                 {highlight && (
                   <svg className="pointer-events-none absolute inset-0" width={layout.width} height={layout.height} aria-hidden="true">
-                    {model.index.graph.edges.filter((edge) => highlight.edges.has(edge.id)).map((edge) => {
-                      const sourceId = lineageSource(edge, model.orientation)
-                      const targetId = lineageTarget(edge, model.orientation)
-                      const source = sourceId ? bubbleById.get(sourceId) : undefined
-                      const target = targetId ? bubbleById.get(targetId) : undefined
-                      if (!source || !target || source === target) return null
-                      const dx = target.x - source.x
-                      const dy = target.y - source.y
-                      const distance = Math.hypot(dx, dy)
-                      const x1 = source.x + dx / distance * source.diameter / 2
-                      const y1 = source.y + dy / distance * source.diameter / 2
-                      const x2 = target.x - dx / distance * target.diameter / 2
-                      const y2 = target.y - dy / distance * target.diameter / 2
+                    {links.filter((link) => highlight.edges.has(link.id)).map(({ id, sourceId, targetId, color, ...coordinates }, index) => {
+                      const gradient = `${gradientPrefix}-${index}`
                       return (
-                        <line
-                          key={edge.id}
-                          data-bubble-link={edge.id}
-                          data-source={sourceId}
-                          data-target={targetId}
-                          x1={x1} y1={y1} x2={x2} y2={y2}
-                          stroke={model.edgeColors[edge.type] ?? '#64748b'}
-                          strokeWidth={2}
-                          opacity={0.9}
-                        />
+                        <g key={id}>
+                          <defs><linearGradient id={gradient} gradientUnits="userSpaceOnUse" {...coordinates}>
+                            <stop offset="0%" stopColor={color} stopOpacity={0.25} />
+                            <stop offset="100%" stopColor={color} stopOpacity={0.6} />
+                          </linearGradient></defs>
+                          <line
+                            data-bubble-link={id}
+                            data-source={sourceId}
+                            data-target={targetId}
+                            {...coordinates}
+                            stroke={`url(#${gradient})`}
+                            strokeWidth={2}
+                          />
+                        </g>
                       )
                     })}
                   </svg>
@@ -137,6 +155,9 @@ export function GenreBubbles() {
             </div>
           </div>
         </div>
+        {layout.bubbles.length > 0 && (
+          <BubbleMinimap layout={layout} links={links} zoom={zoom} surfaceRef={surfaceRef} controlsRef={minimap} />
+        )}
         <BubbleZoomControls controlsRef={zoomControls} zoom={zoom} onZoom={zoomBy} />
       </div>
     </section>

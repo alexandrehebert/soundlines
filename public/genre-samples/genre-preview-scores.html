@@ -1,0 +1,59 @@
+<div id="soundlines-genre-scores">
+  <div class="viz-controls">
+    <label class="form-label">Search genres <input class="form-control" type="search"></label>
+    <label class="form-label">Sort by
+      <select class="form-select">
+        <option value="0">Genre (A–Z)</option>
+        <option value="1">Production quality (lowest first)</option>
+        <option value="-1">Production quality (highest first)</option>
+        <option value="-2">Enjoyment (highest first)</option>
+        <option value="-3">Usefulness (highest first)</option>
+        <option value="-4">Complexity (highest first)</option>
+      </select>
+    </label>
+  </div>
+  <p aria-live="polite"></p>
+  <div class="table-responsive">
+    <table class="table table-sm">
+      <caption class="sr-only">First-pass audio scores by genre</caption>
+      <thead><tr><th scope="col">Genre</th><th scope="col" class="text-end">Quality</th><th scope="col" class="text-end">Enjoyment</th><th scope="col" class="text-end">Usefulness</th><th scope="col" class="text-end">Complexity</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+<script>
+(() => {
+  const root = document.getElementById('soundlines-genre-scores');
+  const scores = [["Acid house",8.44142,7.58216,8.17197,5.81074],["Acid jazz",8.40381,7.4125,8.27364,5.84587],["Afrobeat",8.42719,7.82057,8.28581,6.17228],["Afrobeats",8.47973,7.97963,8.28749,6.03814],["Algerian chaâbi",8.49665,8.09607,8.43411,5.57285],["Alternative country",8.48135,8.01032,8.25769,6.05509],["Alternative rap",8.36911,7.83613,8.18074,5.84703],["Alternative rock",8.42821,7.94394,8.42277,5.79256],["Amapiano",8.33027,7.78536,8.22647,5.79588],["Ambient",8.17253,7.72894,8.00624,5.72749],["Ambient techno",8.41205,7.56583,8.20188,5.81598],["Americana",8.44962,8.0032,8.31772,5.27451],["Andean folk",8.26176,7.75029,8.24213,6.16068],["Arabic maqam traditions",8.49668,7.94524,8.35326,5.31569],["Bachata",8.46422,8.02347,8.4013,6.00921],["Baroque music",8.10618,7.91436,8.27223,5.21538],["Baul songs",8.32781,7.59397,8.15219,5.82893],["Bebop",8.54081,8.48123,8.45193,6.19255],["Big beat",8.41831,7.77414,8.15733,6.27523],["Black metal",8.53973,8.14347,8.47464,5.20742],["Bluegrass",8.22548,7.55946,8.20298,5.60544],["Blues",8.40946,7.74613,8.17077,5.48477],["Blues rock",8.55807,8.18807,8.43181,6.19125],["Boom bap",7.9321,7.61546,8.02293,5.63629],["Bossa nova",8.45568,7.99634,8.39858,5.71822],["Breakbeat",8.33285,7.67605,8.17911,6.58884],["Breakbeat hardcore",8.40844,7.80559,8.18821,6.47304],["Breakcore",8.22807,7.58078,8.24859,6.43045],["Britpop",8.46066,7.81108,8.19653,6.36906],["Calypso",8.61629,8.01857,8.52862,5.64227],["Carnatic music",8.0087,7.34999,7.68619,5.76411],["Chicago house",8.4628,7.62621,8.30451,5.85554],["Chillwave",8.45436,7.8307,8.28309,5.77427],["Chopped and screwed",7.75799,7.2265,7.72468,5.86497],["Classical era",8.04594,7.81938,8.06609,4.8392],["Congolese rumba",8.49984,8.11572,8.44263,5.9498],["Conscious hip-hop",8.4867,7.95477,8.40582,5.94799],["Contemporary R&B",8.35767,7.71242,8.1886,5.68808],["Cool jazz",8.42973,8.26755,8.40024,5.52471],["Country",8.51185,8.03882,8.42112,5.43117],["Crunk",8.29149,7.71148,8.11561,6.5053],["Cumbia",8.4741,8.13737,8.38053,6.16443],["Dancehall",8.31427,7.73641,8.00445,6.50897],["Darksynth",8.26111,7.51782,8.00081,6.34656],["Death metal",8.10153,7.63154,8.05389,6.01182],["Deep house",8.49252,7.89973,8.26075,5.92197],["Detroit techno",8.49435,7.67751,8.28611,5.85214],["Disco",8.44028,8.15742,8.25807,6.41852],["Doo-wop",8.22889,7.7451,7.98949,5.58659],["Doom metal",8.46235,8.18275,8.317,5.88824],["Downtempo",8.27901,7.90163,8.14591,6.04649],["Dream pop",8.41793,7.88927,8.37068,5.96739],["Drill",8.35015,7.65037,8.19595,6.02325],["Drum and bass",8.37599,7.61148,8.19975,6.58141],["Dub",8.14345,7.52571,8.09679,5.97277],["Dub techno",8.03205,7.34469,7.88669,5.96762],["Dubstep",8.06939,7.31038,7.91209,6.05786],["East Coast rap",8.36126,7.77963,8.22227,5.7245],["EDM",8.42657,7.80727,8.17607,6.80299],["Electro",8.50485,7.74202,8.29788,6.36011],["Electro house",8.21263,7.63765,7.94007,6.90562],["Electroclash",8.51121,7.54513,8.28999,6.16758],["Emo",8.2415,7.93897,8.34143,5.87216],["Folk revival",8.51486,7.99139,8.40565,5.09792],["Free jazz",8.54166,8.12106,8.36434,6.29023],["French house",8.49266,8.01891,8.34252,6.03055],["French Touch",8.48691,7.92967,8.29242,6.14915],["Funk",8.41248,7.93021,8.41032,5.81895],["G-funk",8.43478,8.09529,8.29736,6.36945],["Gabber",8.37268,7.31347,8.14795,6.63781],["Gagaku",8.53159,7.41626,8.3821,5.42134],["Gamelan",8.39343,7.79569,8.30787,6.21796],["Gangsta rap",8.31468,7.17268,7.96554,5.81],["Garage house",8.50383,7.78337,8.28979,6.12225],["Garage rock",8.31663,7.67577,8.23036,5.95341],["Girl groups",8.2599,7.63583,7.92238,6.71976],["Glam rock",8.49195,7.97397,8.37289,6.17806],["Gnawa",8.44251,7.96481,8.37758,5.82175],["Gothic rock",8.41792,7.8632,8.32781,6.00907],["Gqom",8.38605,7.54325,8.19197,6.10293],["Grime",8.25516,7.38262,7.9798,6.50908],["Grunge",8.04155,7.891,7.97173,6.5852],["Hard bop",8.51044,8.45151,8.48614,5.93545],["Hard rock",8.31208,7.97949,8.24555,6.03721],["Hardstyle",8.08078,6.78263,8.07577,6.23919],["Heavy metal",8.29009,7.65354,8.16338,6.21217],["Hi-NRG",8.15528,7.661,7.90319,6.17711],["Highlife",8.51329,7.70587,8.30486,5.96654],["Hindustani classical",8.32499,7.40199,8.04889,5.6624],["Hip-hop",8.34604,7.77768,8.05939,6.09634],["Honky-tonk",8.40414,7.84511,8.44539,5.62239],["Horrorcore",8.12198,7.34409,7.85232,6.42388],["House",8.45889,7.91866,8.19209,6.40473],["Hyphy",8.3854,7.55999,8.14277,6.37306],["IDM / intelligent dance music",8.47785,7.80926,8.11068,6.09344],["Impressionism",8.33903,7.32524,8.09465,4.89502],["Indie rock",8.4822,7.98948,8.37086,5.78453],["Industrial metal",8.32606,7.61614,8.13566,6.56373],["Italo disco",8.52567,7.96973,8.33545,6.21231],["J-pop",8.29931,7.6431,8.1892,6.38314],["Jazz",8.53009,8.23875,8.3576,5.84377],["Jazz fusion",8.47485,8.15247,8.33909,6.10289],["Jazz rap",8.55145,8.31413,8.32956,6.30558],["Jùjú",8.42545,8.19041,8.39949,5.83566],["Juke / footwork",8.33704,6.89397,8.05029,6.19419],["Jungle",8.30761,7.42532,8.14884,6.43134],["K-pop",8.51121,7.97243,8.16145,6.84817],["Krautrock",8.5432,8.02759,8.38902,5.75547],["Kwaito",8.49705,8.03815,8.32708,6.04226],["Latin jazz",8.51339,7.97171,8.37509,5.81219],["Latin music",8.4931,8.17842,8.2786,6.61694],["Makossa",8.49061,8.21007,8.2431,6.37203],["Math rock",8.47943,8.0587,8.38263,5.6951],["Mbalax",8.4738,7.93684,8.36061,6.27779],["Medieval music",7.99605,7.42891,7.88482,6.02224],["Merengue",8.41363,7.63909,8.16499,6.68629],["Metalcore",8.36636,7.69152,8.17688,6.45375],["Minimal techno",8.57416,7.73431,8.34579,6.07521],["Minimalism",8.4826,7.72107,8.41077,5.64868],["Modal jazz",8.4853,8.37442,8.37517,5.66861],["Modern classical",8.38293,7.95844,8.29009,5.33819],["Neo-soul",8.4377,8.16044,8.38174,5.91304],["New jack swing",8.52005,7.59901,8.16398,6.2218],["New wave",8.34845,7.55634,8.14698,6.06465],["Noise rock",8.36335,8.1025,8.28868,5.98294],["Nu metal",8.04572,7.88702,7.8971,6.53947],["Old-school rap",8.49722,7.76713,8.27343,5.86676],["Pansori",8.39845,7.32258,8.1047,6.49405],["Peking opera",8.1167,7.59359,7.92952,5.97773],["Pop",8.4203,7.85985,8.23342,6.35462],["Pop-punk",8.44589,7.96746,8.39997,6.09698],["Post-hardcore",8.32727,7.79526,8.23194,6.39299],["Post-punk",8.45851,7.94212,8.27737,6.25373],["Post-rock",8.3132,7.98096,8.22049,5.95112],["Progressive rock",8.34363,7.47812,8.03011,6.4252],["Psychedelic rock",8.20128,7.5539,8.02551,6.20002],["Psytrance",8.32753,7.39694,8.12489,6.27628],["Punk rock",8.45511,8.04515,8.30618,6.3945],["Qawwali",8.39136,7.73005,7.9932,6.86356],["Raï",8.49425,7.96126,8.35098,5.91882],["Reggae",8.35707,7.8322,8.19349,5.7801],["Reggaeton",8.50167,7.64499,8.17557,6.794],["Renaissance music",8.25551,7.45665,8.17136,6.31649],["Rhythm and blues",8.60034,8.08641,8.29313,6.47779],["Rock",8.36644,8.00306,8.33802,6.08307],["Rock and roll",8.58372,8.09132,8.45216,5.77734],["Rocksteady",8.48848,8.20412,8.43196,5.81722],["Romantic music",8.43488,7.64713,8.34584,5.57401],["Russian folk",8.49972,7.88835,8.11486,5.93898],["Salsa",8.45622,8.02577,8.4233,5.99498],["Samba",8.55675,8.09239,8.51039,5.57813],["Serialism",8.48363,7.83111,8.47181,5.33752],["Shoegaze",8.32383,7.79354,8.21745,6.0865],["Ska",8.51832,8.05652,8.3802,6.08035],["Son cubano",8.5321,7.96866,8.3878,5.64796],["Soukous",8.46158,7.97745,8.3367,6.10757],["Soul",8.55307,8.05355,8.40566,5.55067],["Southern rap",8.39757,7.54964,8.09485,6.16419],["Spiritual jazz",8.54527,8.23483,8.46926,5.76223],["Stoner rock",8.29119,7.84988,8.11612,5.90751],["Surf rock",8.39122,7.9544,8.36784,5.97976],["Swing",8.43437,8.18448,8.32285,6.29633],["Synth-pop",8.3886,7.40114,8.11321,6.06595],["Synthwave",8.45956,7.90064,8.286,6.34717],["Taarab",8.1771,7.69362,8.17632,5.74338],["Tango",8.48123,7.77078,8.38888,5.30545],["Tech house",8.35953,7.52544,8.2441,5.94873],["Techno",8.36868,7.39404,8.18259,6.06803],["Thrash metal",8.22907,7.76276,8.16114,6.57305],["Trance",8.36608,7.70319,8.11666,6.57139],["Trap rap",8.49061,7.65563,8.13248,6.19309],["Trip-hop",8.21345,7.804,7.9722,6.54177],["Tuvan throat singing (xöömei)",8.16269,7.72448,8.10919,6.0924],["UK garage",8.37719,7.71873,7.8942,6.72343],["Vaporwave",8.18683,7.58669,7.9436,5.73198],["Vocal jazz",8.38477,8.25595,8.42224,5.51117],["West Coast rap",8.23143,7.77861,8.12702,5.98541]];
+  const search = root.querySelector('input');
+  const order = root.querySelector('select');
+  const status = root.querySelector('p');
+  const body = root.querySelector('tbody');
+  function update() {
+    const query = search.value.trim().toLocaleLowerCase();
+    const rows = scores.filter(([genre]) => genre.toLocaleLowerCase().includes(query));
+    const direction = Number(order.value);
+    const column = Math.abs(direction);
+    if (column) rows.sort((a, b) => Math.sign(direction) * (a[column] - b[column]));
+    const result = document.createDocumentFragment();
+    for (const [genre, ...values] of rows) {
+      const row = document.createElement('tr');
+      const label = document.createElement('th');
+      label.scope = 'row';
+      label.textContent = genre;
+      row.append(label);
+      for (const value of values) {
+        const cell = row.insertCell();
+        cell.className = 'text-end';
+        cell.textContent = value.toFixed(2);
+      }
+      result.append(row);
+    }
+    body.replaceChildren(result);
+    status.textContent = rows.length + ' of ' + scores.length + ' genres';
+  }
+  search.addEventListener('input', update);
+  order.addEventListener('change', update);
+  update();
+})();
+</script>

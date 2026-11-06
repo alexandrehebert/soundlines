@@ -1,0 +1,232 @@
+{
+  "acid-jazz": {
+    "bpm": 106,
+    "meter": "4",
+    "prompt": "Early-1990s London acid jazz club band, instrumental. Hammond organ stabs and a bright tenor sax riff trade phrases over a nimble electric bass line, muted wah guitar and a dry pocket with hip-hop-influenced backbeat and loose closed hats. Live drums and warm studio texture with jazz-funk energy."
+  },
+  "alt-country": {
+    "bpm": 104,
+    "meter": "4",
+    "prompt": "Early-1990s American alternative country with an unpolished indie band feel. Steady acoustic strum, plaintive pedal steel and overdriven electric guitar trade phrases over electric bass and a slightly ragged acoustic kit backbeat. Keep the room sound and the push and pull of a live performance."
+  },
+  "americana": {
+    "bpm": 92,
+    "meter": "4",
+    "prompt": "Contemporary American roots instrumental in a folk-country vein. Alternating-bass acoustic guitar and upright bass lay down a gentle pulse while a woody mandolin and fiddle trade melodic fragments over brushed snare. Open strings, subtle blues inflections and an intimate live-room recording."
+  },
+  "arabic-maqam": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Solo oud taqsim in Arabic maqam Bayati on D, performed as a close acoustic recital. Begin from the tonic and explore the low Bayati tetrachord with its neutral second, melodic turns and relaxed pauses before settling back on D. Free rhythm, clear plectrum articulation and natural oud resonance."
+  },
+  "baroque": {
+    "bpm": 100,
+    "meter": "4",
+    "prompt": "Early-eighteenth-century Baroque chamber concerto movement for solo violin, two violins, viola, cello and harpsichord continuo. A buoyant repeated rhythmic figure moves through sequential harmony as the soloist and strings answer each other with imitative counterpoint. Crisp period bows, lightly articulated bass and warm chamber acoustics."
+  },
+  "baul-songs": {
+    "bpm": 90,
+    "meter": null,
+    "prompt": "Bengali Baul song in an intimate acoustic performance, centered on an expressive unamplified Bengali lead voice with curved ornaments and repeated lines. The ektara supplies a plucked drone pulse, dotara echoes the tune and a small dubki hand drum marks the lilt. Keep the sparse village ensemble texture and natural vocal breath."
+  },
+  "bebop": {
+    "bpm": 212,
+    "meter": "4",
+    "prompt": "Late-1940s New York bebop quintet with alto sax and trumpet playing a quick angular unison head before trading brief improvisatory figures. Walking upright bass and a swinging ride cymbal carry fast four, with light snare and kick accents and syncopated piano comping over fast ii–V changes. Close, dry live combo sound."
+  },
+  "bluegrass": {
+    "bpm": 156,
+    "meter": "2",
+    "prompt": "Mid-century Kentucky bluegrass breakdown played by an acoustic string band. Bright three-finger banjo rolls and flatpicked guitar run over the mandolin offbeat chop and upright bass two-beat, while the fiddle answers in short double-stop phrases. Quick, steady picking with audible string attack and one-room ensemble balance."
+  },
+  "blues": {
+    "bpm": 82,
+    "meter": "4",
+    "prompt": "1950s Chicago electric blues instrumental in a twelve-bar I–IV–V shuffle. A small tube-amp guitar bends and answers itself with clipped double stops, harmonica punctuates the gaps and bass and drum kit lean into triplet swing. Slight amp grit and a small warm room around the players."
+  },
+  "carnatic": {
+    "bpm": 92,
+    "meter": null,
+    "prompt": "South Indian Carnatic violin and mridangam recital with a sustained tambura drone. Let the violin trace raga Kalyani with connected gamaka ornaments and rhythmic swara phrases across an eight-beat adi tala, with crisp mridangam strokes answering each phrase. Natural bow, skin and string sounds in an intimate concert recording."
+  },
+  "classical-period": {
+    "bpm": 120,
+    "meter": "4",
+    "prompt": "Late-eighteenth-century Classical string quartet allegro. First violin states a clear balanced four-bar idea, then second violin and viola answer over a lightly articulated cello bass and a brief dominant cadence. Transparent acoustic balance, restrained vibrato and graceful dynamic contrasts."
+  },
+  "contemporary-r-and-b": {
+    "bpm": 76,
+    "meter": "4",
+    "prompt": "Late-1990s contemporary R&B instrumental with a deep half-time studio pocket. A warm bass synth and spaced kick anchor layered electric piano extensions, filtered clean guitar and a soft sampled rim backbeat with lightly swung hats. Polished low end, soft ambience and a melodic lead shaped like an R&B vocal phrase."
+  },
+  "cool-jazz": {
+    "bpm": 116,
+    "meter": "4",
+    "prompt": "Early-1950s cool jazz quartet in a relaxed midtempo swing. Airy tenor sax plays a measured lyrical line alongside soft piano chord answers, lightly walking upright bass and brushes. Keep dynamics restrained and arrangements spacious, with natural breath and a clear small studio sound."
+  },
+  "country": {
+    "bpm": 96,
+    "meter": "4",
+    "prompt": "Early-1970s Nashville country instrumental with an easy train-like guitar strum. Warm pedal steel slides between notes of a clear singable melody, fiddle answers, and upright piano, electric bass and light kit give the verse a steady two-and-four pulse. Natural pick attack and a warm close-miked studio mix."
+  },
+  "doo-wop": {
+    "bpm": 72,
+    "meter": "4",
+    "prompt": "Late-1950s doo-wop vocal group singing an original wordless tune in close harmony, with a high lead, low answering bass voice, and repeated soft doo-wah backing syllables. Gentle triplet sway over a repeating I–vi–IV–V turnaround, with very quiet piano and brushed snare behind the voices. Small-room mono-style vocal balance and a clear ensemble cadence."
+  },
+  "folk": {
+    "bpm": 88,
+    "meter": "4",
+    "prompt": "Early-1960s American folk revival instrumental. One close-miked steel-string guitar carries an original ballad melody over alternating thumb bass and open-string fingerpicking, with a second acoustic guitar occasionally answering softly. Natural tempo movement, audible fingers and a plain coffeehouse room sound."
+  },
+  "free-jazz": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Late-1960s free jazz trio in a live room. Tenor sax and bowed or plucked upright bass improvise short contrasting gestures, while drummer responds with loose cymbal swells and abrupt snare or tom accents. Elastic pulse, changing density and spontaneous group interplay without fixed changes."
+  },
+  "funk": {
+    "bpm": 102,
+    "meter": "4",
+    "prompt": "Early-1970s deep funk instrumental played live by a small rhythm section. Dry acoustic drums and slightly swung sixteenth-note hats leave room for a syncopated two-bar fingerstyle bass figure, muted electric guitar scratches, clavinet answers and short brass hits. Strong ensemble accent on beat one, natural player dynamics and a warm tape sound."
+  },
+  "gagaku": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Traditional Japanese court gagaku, an instrumental kangen ensemble. Slow broad phrases in a piercing hichiriki reed doubled and ornamented by ryuteki transverse flute unfold against sustained sho mouth-organ clusters, with widely spaced drum and shoko gong strokes. A spacious natural hall sound with deliberate breath and silence between gestures."
+  },
+  "gamelan": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Central Javanese court gamelan in slendro tuning. Let saron and lower demung present a steady core melody while bonang embellishes, kendhang cues the pace and kenong and the deep gong ageng articulate the recurring cycle. Preserve the ringing bronze, hand damping and natural ensemble blend."
+  },
+  "hard-bop": {
+    "bpm": 136,
+    "meter": "4",
+    "prompt": "Late-1950s hard bop quintet with punchy trumpet and tenor sax playing a bluesy, gospel-tinged head. Upright bass walks in four, ride cymbal pushes the groove and snare answers the horns, while piano comps with churchy voicings. Gritty acoustic horn tone and balanced classic jazz studio sound."
+  },
+  "hindustani-classical": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "North Indian Hindustani sitar recital in a medium-tempo gat over a 16-beat teentaal. Sitar outlines a raga through long meend slides, clear plucked figures and short chikari punctuations over continuous tanpura, while tabla voices the recurring theka and meets the sitar at sam. Intimate acoustic recording with natural sympathetic-string resonance."
+  },
+  "honky-tonk": {
+    "bpm": 112,
+    "meter": "2",
+    "prompt": "Early-1950s Texas dancehall honky-tonk instrumental. A two-step alternating bass supports a bright lap-steel guitar melody, answering fiddle and plunky upright piano, with snare on the backbeat and steady acoustic guitar chops. Keep the small electrified band loose and lively, with a close mono-style room sound."
+  },
+  "impressionism": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Turn-of-the-twentieth-century French impressionist solo piano miniature. Flowing rippling arpeggios surround a distant melody, with whole-tone and modal colors, widely spaced planing chords and soft pedal resonance. Flexible phrasing, nuanced touch and natural recital-hall decay."
+  },
+  "jazz": {
+    "bpm": 126,
+    "meter": "4",
+    "prompt": "Early New Orleans traditional jazz small ensemble. Cornet states an original blues-tinged melody, clarinet weaves a higher countermelody, and trombone answers underneath in collective improvisation over banjo, tuba and light trap drums. A buoyant two-beat dance feel with natural horns and compact ensemble balance."
+  },
+  "jazz-fusion": {
+    "bpm": 115,
+    "meter": "4",
+    "prompt": "Mid-1970s electric jazz fusion instrumental. A syncopated electric bass ostinato and agile live kit establish a funk pocket, with a Rhodes electric piano playing suspended harmonies and a lightly overdriven guitar taking angular improvisatory lines. Warm analog studio sound and crisp dynamics from real players."
+  },
+  "khoomei": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Traditional Tuvan khoomei overtone singing in an intimate solo performance. One singer sustains a steady low fundamental, shaping clearly stepped, flute-like upper harmonics through shifts of mouth resonance. Unaccompanied, with natural breathing and no steady drum pulse."
+  },
+  "latin-jazz": {
+    "bpm": 180,
+    "meter": "4",
+    "prompt": "Mid-century Afro-Cuban Latin jazz combo built around a consistent two-three son clave. Conga tumbao, bongo bell and a syncopated piano montuno interlock with the anticipated bass line, while trumpet and tenor sax play a brief angular jazz head. Bright hand percussion, warm live horns and a clear danceable acoustic mix."
+  },
+  "medieval": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Medieval Western European plainchant in a resonant stone chapel. A small unaccompanied ensemble sings a single modal line together, moving in speech-shaped phrases with occasional short melismas and natural breaths. Clear human voices, free rhythm and a long natural room decay."
+  },
+  "minimalism": {
+    "bpm": 124,
+    "meter": "4",
+    "prompt": "1970s acoustic process minimalism for paired marimbas and pianos. A steady stream of short interlocking pulses gradually shifts one accent at a time to reveal a new resultant pattern, with a narrow harmonic palette and precise touch. Let natural wooden attacks and room resonance carry the motion."
+  },
+  "modal-jazz": {
+    "bpm": 112,
+    "meter": "4",
+    "prompt": "Late-1950s acoustic modal jazz quintet, using a spacious D Dorian vamp. Muted trumpet and tenor sax improvise short motif variations over long harmonic spans, supported by quartal piano voicings, gently walking upright bass and a restrained swinging ride. Soft horn breath and a natural studio room."
+  },
+  "modern-classical": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Mid-twentieth-century modernist chamber music for flute, clarinet, viola, cello and prepared-sounding piano. Asymmetrical phrases and sharp dissonant accents alternate with spare sustained tones and meaningful silence, with the melody passed between contrasting timbres. Clear acoustic concert perspective with widely varied dynamics."
+  },
+  "neo-soul": {
+    "bpm": 83,
+    "meter": "4",
+    "prompt": "Late-1990s neo-soul instrumental with a deep behind-the-beat pocket. Loose live kick and snare play against swung hi-hat sixteenths, elastic fingered bass and warm Rhodes voicings, with clean guitar answering the electric piano. Warm close studio sound, strong bass and small human timing shifts."
+  },
+  "new-jack-swing": {
+    "bpm": 108,
+    "meter": "4",
+    "prompt": "Late-1980s new jack swing instrumental with hard shuffled drum-machine sixteenths, a layered kick and clap snare, tight sampled accents, punchy synth bass and bright keyboard chord hits. A quick melodic hook answers the beat in a crisp period digital studio mix."
+  },
+  "pansori": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Traditional Korean pansori in the sound of a bare stage performance with one singer and a single buk barrel drummer. The lead alternates short stylized Korean narration and forceful elongated sung phrases with rough-grained projection and wide expressive bends, punctuated by changing buk accents. Keep the intimate, exposed singer–drummer exchange."
+  },
+  "peking-opera": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Traditional Beijing opera instrumental stage interlude in a lively Xipi character. High two-string jinghu leads an ornamented phrase with yueqin plucks and a lower bowed double, interrupted by cues from sharp clapper, bangu drum and small gong. Brisk theatrical changes of pace and a bright, focused acoustic stage sound."
+  },
+  "qawwali": {
+    "bpm": 108,
+    "meter": null,
+    "prompt": "South Asian qawwali vocal ensemble in a small live devotional setting. A strong lead voice ornaments a rising phrase and an ensemble answers in unison, with handclaps, a harmonium doubling the line and interlocking tabla and dholak accents. Emphasize growing energy, audible breath and the communal acoustic pulse."
+  },
+  "r-and-b": {
+    "bpm": 112,
+    "meter": "4",
+    "prompt": "Early-1950s jump rhythm and blues instrumental in a blues-based dance-band style. A honking tenor sax plays a short riff over a barrelhouse piano shuffle, walking upright bass, choppy electric guitar and a brisk drum backbeat. Raw warm mono-style club balance and an emphatic turnaround."
+  },
+  "renaissance": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Late-sixteenth-century Renaissance motet for four unaccompanied voices. A short original modal subject enters successively in each voice, overlaps in smooth counterpoint and settles into a clear cadence, with light consonants and blended straight-tone singing. Natural chapel resonance and gentle breathing between phrases."
+  },
+  "romantic": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Mid-nineteenth-century Romantic piano nocturne, with singing upper melody over wide broken chords and inner countermelody. A supple rubato allows expressive appoggiaturas and chromatic harmony to swell into a tender cadence. Realistic hammer touch, pedal resonance and recital room acoustics."
+  },
+  "russian-folk": {
+    "bpm": 112,
+    "meter": "2",
+    "prompt": "Russian vernacular dance tune played by a small balalaika and garmon button accordion ensemble. Accordion carries a repeated, ornamented melody over alternating bass and bright strummed balalaika accents, with a lifted duple dance pulse and small phrase variations. Acoustic social-dance room sound with audible bellows and string attack."
+  },
+  "serialism": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Early-twentieth-century twelve-tone chamber miniature for piano, violin and clarinet. Pass a single ordered twelve-pitch row and its inversion between instruments in a sharply articulated dialogue, punctuated by rests and stark dynamic contrasts. Dry acoustic recital recording, clean separation of attacks and a deliberately unstable sense of pulse."
+  },
+  "soul": {
+    "bpm": 91,
+    "meter": "4",
+    "prompt": "Late-1960s Southern soul instrumental. A steady slightly laid-back drum backbeat supports a round melodic electric bass, clean clipped guitar, rolling Hammond organ and warm horn call and response. Use the direct sound of a small rhythm section playing together, with expressive pauses and a short gospel-colored turnaround."
+  },
+  "spiritual-jazz": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Early-1970s spiritual jazz ensemble building around a droning modal center and a repeating bowed-and-plucked bass figure. Tenor sax builds a searching melodic cry as piano spreads open chords and hand percussion and cymbals create a rolling, flexible pulse. Expansive but acoustic live room, with a patient devotional arc."
+  },
+  "swing": {
+    "bpm": 158,
+    "meter": "4",
+    "prompt": "Late-1930s big-band swing for a ballroom. A four-to-the-bar rhythm guitar and walking upright bass propel brushed or lightly tapped kit, while sax section riffs answer bright muted brass figures with tight section voicings. Clear swung eighths, short arranged breaks and a warm period-style band recording."
+  },
+  "vocal-jazz": {
+    "bpm": 94,
+    "meter": "4",
+    "prompt": "Mid-century small-group vocal jazz with a close, relaxed lead singing an original wordless scat phrase, placing consonants and bends slightly behind the beat. Piano trio answers the voice with brushed drums, upright bass and airy jazz voicings over an easy swing. Preserve breath, natural microphone presence and responsive ensemble timing."
+  }
+}

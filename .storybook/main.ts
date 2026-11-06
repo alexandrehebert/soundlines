@@ -10,7 +10,10 @@ const config: StorybookConfig = {
     name: '@storybook/react-vite',
     options: {},
   },
-  staticDirs: ['../public'],
+  staticDirs: [
+    '../public',
+    { from: '../src/stories/fixtures/instrument-artwork-v1', to: '/instrument-artwork-v1' },
+  ],
 }
 
 export default config

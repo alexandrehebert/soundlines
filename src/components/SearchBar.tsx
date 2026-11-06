@@ -277,7 +277,18 @@ function SearchResults({
             node.id === activeId ? 'bg-violet-900/70 ring-1 ring-inset ring-violet-400' : 'md:hover:bg-slate-800'
           }`}
         >
-          <span className="text-sm font-semibold text-slate-200">{node.name}</span>
+          <span className="flex min-w-0 items-center gap-2 text-sm font-semibold text-slate-200">
+            {node.type === 'instrument' && (
+              <img
+                src={`${import.meta.env.BASE_URL}instrument-avatars/${encodeURIComponent(node.id.slice('instrument:'.length))}.svg`}
+                alt=""
+                width={24}
+                height={24}
+                className="size-6 shrink-0 rounded"
+              />
+            )}
+            {node.name}
+          </span>
           <span
             className="text-[10px] font-bold uppercase tracking-widest"
             style={{ color: NODE_TYPE_COLORS[node.type] }}

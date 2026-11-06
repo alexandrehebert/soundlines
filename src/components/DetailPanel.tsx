@@ -15,6 +15,8 @@ import {
 import { formatPeriod, NODE_TYPE_COLORS } from '../theme.ts'
 import { prominencePhases, intensityColor, intensityOpacity, phaseIntensity } from '../graph/phases.ts'
 import { CURRENT_YEAR } from '../graph/layout.ts'
+import { AudioPreviewPlayer } from './AudioPreviewPlayer.tsx'
+import { InfoBadge } from './InfoBadge.tsx'
 import { InstrumentIcon } from './InstrumentIcon.tsx'
 
 const CONFIDENCE_COLORS: Record<Confidence, string> = {
@@ -51,15 +53,40 @@ function SourceLinks({ sources }: { sources?: string[] }) {
   )
 }
 
-export function DetailPanel({ onClose, showCloseButton = true, scrollable = true }: {
+function GenreSample({ id, name }: { id: string; name: string }) {
+  const slug = id.slice('genre:'.length)
+  const url = `${import.meta.env.BASE_URL}genre-previews/${encodeURIComponent(slug)}.m4a`
+
+  return (
+    <div className="relative mr-2 shrink-0">
+      <AudioPreviewPlayer url={url} label={`${name} preview`} />
+      <div className="absolute bottom-0 left-full translate-y-1/4">
+        <InfoBadge label="About this audio preview" align="end">
+          <a
+            href="https://ace-step.github.io/ACE-Step-1.5/"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-sm text-sky-400 underline underline-offset-2 hover:text-sky-300 focus-visible:outline-2 focus-visible:outline-sky-400"
+          >
+            ACE-Step
+          </a>{' preview · 10 seconds'}
+        </InfoBadge>
+      </div>
+    </div>
+  )
+}
+
+export function DetailPanel({ onClose, showCloseButton = true, scrollable = true, showGenreSample = true }: {
   onClose?: () => void
   showCloseButton?: boolean
   scrollable?: boolean
+  showGenreSample?: boolean
 } = {}) {
   const { index, selectedId, selectNode } = useExplorer()
   const node = selectedId ? index.nodeById.get(selectedId) : undefined
   if (!node) return null
 
+  const hasGenrePlayer = showGenreSample && node.type === 'genre'
   const typeColor = NODE_TYPE_COLORS[node.type]
   const period = node.type === 'event' && node.period ? formatEventPeriod(node.period) : formatPeriod(node.period)
   const groups = groupedRelations(index, node.id)
@@ -73,13 +100,13 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
   return (
     <aside className={`flex h-full w-full flex-col overscroll-contain border-l-0 border-slate-800 bg-slate-950/95 backdrop-blur md:border-l ${scrollable ? 'overflow-y-auto' : 'overflow-hidden'}`}>
       <div
-        className={`sticky top-0 z-10 flex items-start border-b border-slate-800 bg-slate-950/95 bg-contain bg-right-bottom bg-no-repeat p-4 md:p-5 ${showCloseButton ? 'pr-14 md:pr-16' : ''}`}
+        className={`sticky top-0 z-10 flex items-start border-b border-slate-800 bg-slate-950/95 bg-contain bg-right-bottom bg-no-repeat p-4 md:p-5 ${showCloseButton && !hasGenrePlayer ? 'pr-14 md:pr-16' : ''}`}
         style={instrumentArtwork ? {
           backgroundImage: `url("${import.meta.env.BASE_URL}instrument-header-backgrounds/${instrumentArtwork}")`,
         } : undefined}
       >
-        <div>
-          <div className="mb-2 flex flex-wrap items-center gap-2">
+        <div className="min-w-0 flex-1">
+          <div className={`mb-2 flex flex-wrap items-center gap-2 ${showCloseButton && hasGenrePlayer ? 'min-h-7 pr-10' : ''}`}>
             <span
               className="rounded-full px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-widest"
               style={{ backgroundColor: `${typeColor}22`, color: typeColor }}
@@ -103,12 +130,19 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
               </span>
             )}
           </div>
-          <h2 className="text-xl font-bold tracking-tight text-white">{node.name}</h2>
-          {period
-            ? <div className="mt-1 text-sm font-medium text-slate-400">{period}</div>
-            : (isTimelineView(node.type) || node.type === 'event') && (
-              <div className="mt-1 text-sm font-medium text-slate-400">No period specified</div>
+          <div className="flex items-center justify-between gap-3">
+            <div className="min-w-0">
+              <h2 className="break-words text-xl font-bold tracking-tight text-white">{node.name}</h2>
+              {period
+                ? <div className="mt-1 text-sm font-medium text-slate-400">{period}</div>
+                : (isTimelineView(node.type) || node.type === 'event') && (
+                  <div className="mt-1 text-sm font-medium text-slate-400">No period specified</div>
+                )}
+            </div>
+            {hasGenrePlayer && (
+              <GenreSample key={node.id} id={node.id} name={node.name} />
             )}
+          </div>
         </div>
         {showCloseButton && (
           <button
@@ -123,6 +157,15 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
       </div>
 
       <div className="flex flex-col gap-5 p-4 md:p-5">
+        {instrumentArtwork && (
+          <img
+            src={`${import.meta.env.BASE_URL}instrument-banners/${instrumentArtwork}`}
+            alt={`Illustration of ${node.name}`}
+            width={360}
+            height={160}
+            className="h-auto w-full rounded-xl border border-slate-800"
+          />
+        )}
         {node.period?.estimated && (
           <p className="text-xs leading-relaxed text-slate-400">
             Estimated period: {node.period.estimateNote ?? 'Dates are approximate and subject to revision.'}

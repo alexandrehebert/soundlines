@@ -1,0 +1,252 @@
+{
+  "afrobeat": {
+    "bpm": 108,
+    "meter": "4",
+    "prompt": "1970s Lagos Afrobeat instrumental with a live drummer playing interlocking kick, snare and hi-hat accents against shekere and bell. Repeat a lean electric bass ostinato under two clean guitars playing different syncopated figures, with a dry brass call and saxophone response in a warm live-room mix."
+  },
+  "afrobeats": {
+    "bpm": 104,
+    "meter": "4",
+    "prompt": "Late-2010s Nigerian Afrobeats instrumental with a soft skipping electronic kick, cross-stick, rattling shakers and a syncopated low bass that leaves space between phrases. Clean plucked electric guitar and bright keyboard chords trade short answers in a spacious contemporary pop mix."
+  },
+  "algerian-chaabi": {
+    "bpm": 88,
+    "meter": "4",
+    "prompt": "Mid-century Algiers Casbah chaâbi instrumental passage, with Algerian mandole doubled strings picking a winding Andalusian-derived melody against soft bowed violin answers. Derbouka taps articulate the pulse while the mandole ornaments and bends the line, captured in an intimate acoustic ensemble."
+  },
+  "alternative-rap": {
+    "bpm": 91,
+    "meter": "4",
+    "prompt": "Early-2000s independent alternative rap instrumental with a lopsided drum loop, loose snare and dusty kick. Slice an original toy-keyboard melody and detuned guitar chord into changing fragments over an elastic bass line, leaving generous space for an imagined rapper."
+  },
+  "amapiano": {
+    "bpm": 112,
+    "meter": "4",
+    "prompt": "South African soulful amapiano instrumental with lightly swung shakers, sparse kick and fine rim ticks. A resonant pitched FM log-drum bass pattern syncopates across the bar line under warm jazzy electric piano chords and soft sustained pads in a deep, spacious club mix."
+  },
+  "andean-folk": {
+    "bpm": 112,
+    "meter": "2",
+    "prompt": "Peruvian Andean huayno instrumental in a brisk duple dance pulse, with a breathy quena carrying a stepped pentatonic tune above bright charango strumming, acoustic guitar bass notes and a low bombo. Let the players breathe and repeat the melody with small ornaments in a natural ensemble recording."
+  },
+  "bachata": {
+    "bpm": 128,
+    "meter": "4",
+    "prompt": "Dominican guitar bachata instrumental with a bright requinto picking a lyrical upper-register phrase over a second guitar's arpeggios. Keep a supple four-count dance pulse with crisp bongó, scraped güira and a bass accent toward beat four, captured like a small live guitar ensemble."
+  },
+  "boom-bap": {
+    "bpm": 92,
+    "meter": "4",
+    "prompt": "Mid-1990s New York boom-bap instrumental, hard rounded kick and a cracking snare on two and four with late swung hats. Chop an original short soul chord phrase into a two-bar loop, add a warm bass note under the kick and a brief scratch accent, with grainy sampler transients."
+  },
+  "bossa-nova": {
+    "bpm": 126,
+    "meter": "2",
+    "prompt": "Late-1950s Rio bossa nova instrumental built around nylon-string guitar, the thumb marking the main pulses while soft upper chords anticipate them in a two-bar syncopation. Add restrained upright bass and delicate brushed percussion beneath intimate extended chords, with natural room sound and small dynamic changes."
+  },
+  "calypso": {
+    "bpm": 112,
+    "meter": "4",
+    "prompt": "1950s Trinidad Carnival calypso dance-band instrumental with syncopated guitar strums, maracas and a springy upright bass. Let clarinet and trumpet trade jaunty phrases with the rhythmic phrasing of a calypso singer, in a lively but lightly miked live ensemble sound."
+  },
+  "chopped-and-screwed": {
+    "bpm": 62,
+    "meter": "4",
+    "prompt": "1990s Houston chopped-and-screwed mixtape instrumental with the whole source beat slowed and pitched down, a heavy unhurried kick and snare and woozy low keyboard chords. Recut the same beat in short doubled fragments and drop it back into time, with subtle tape saturation and no modern hi-hat rolls."
+  },
+  "congolese-rumba": {
+    "bpm": 104,
+    "meter": "4",
+    "prompt": "1950s–1960s Kinshasa and Brazzaville Congolese rumba instrumental, with a relaxed, Cuban-influenced dance lilt, tumbling clean guitar phrases and answering rhythm guitar. Add light hand percussion, a gently syncopated bass and a warm horn reply, keeping the intimate sound of a vintage urban dance band."
+  },
+  "conscious-hip-hop": {
+    "bpm": 94,
+    "meter": "4",
+    "prompt": "Late-1990s conscious hip-hop instrumental with a poised head-nod drum groove and a circular Rhodes and bass progression. Let a restrained horn answer between phrases while warm tape color and open midrange leave room for deliberate, reflective delivery."
+  },
+  "crunk": {
+    "bpm": 146,
+    "meter": "4",
+    "prompt": "Early-2000s Atlanta crunk club instrumental at a slow-feeling half-time bounce, with huge sustained 808 lows, hard claps and blunt minor-key brass-synth stabs. Alternate two short lead motifs like a shouted call and group response, with dramatic rests and kick accents for the crowd."
+  },
+  "cumbia": {
+    "bpm": 98,
+    "meter": "2",
+    "prompt": "Colombian Caribbean cumbia in an acoustic gaita ensemble setting, with a steady offbeat llamador, rolling tambor alegre answers, low tambora accents and a continuous maraca pulse. Let breathy gaitas carry the melody in call and response over the swaying duple dance step, with live room dynamics."
+  },
+  "dancehall": {
+    "bpm": 96,
+    "meter": "4",
+    "prompt": "Late-1980s Jamaican digital dancehall instrumental built as a spare sound-system riddim. Use a dry syncopated drum-machine pattern, short electronic bass riff and clipped keyboard hits, repeating with subtle dropouts and enough space for a deejay."
+  },
+  "drill": {
+    "bpm": 140,
+    "meter": "4",
+    "prompt": "Early-2010s Chicago drill instrumental with a heavy half-time backbeat, threatening minor piano and a long low 808 punctuated by offbeat kicks. Add ticking trap hats and abrupt drum gaps with a stark, close-miked mix, centered on Chicago's deliberate bounce."
+  },
+  "dub": {
+    "bpm": 72,
+    "meter": "4",
+    "prompt": "1970s Jamaican dub version with deep round bass and a sparse live one-drop drum groove. Use the mixing desk as an instrument by muting and restoring guitar and organ offbeats, sending an isolated snare and horn hit into tape echo and spring reverb while the rhythm holds."
+  },
+  "east-coast-rap": {
+    "bpm": 96,
+    "meter": "4",
+    "prompt": "Early-1990s New York East Coast rap backing with a hard drum break, measured swing and a short chopped soul or horn figure. A lean electric bass loop and occasional turntable-style cut make an unhurried cipher pocket with a gritty room and plenty of vocal space."
+  },
+  "g-funk": {
+    "bpm": 94,
+    "meter": "4",
+    "prompt": "Early-1990s California G-funk instrumental with a sinuous high portamento analog lead above a deep melodic electric bass line. Keep a relaxed straight kick-snare pocket, clean guitar chanks and warm sustained synth chords in a polished, spacious studio mix."
+  },
+  "gangsta-rap": {
+    "bpm": 93,
+    "meter": "4",
+    "prompt": "Late-1980s Los Angeles gangsta rap instrumental with a hard-edged drum-machine kick and snare, a repeated low bass figure and a sharp, ominous funk break chop. Use sparse sampled-style brass hits and a scratch response, keeping the beat open for direct, rhythmic storytelling."
+  },
+  "gnawa": {
+    "bpm": 96,
+    "meter": "6",
+    "prompt": "Moroccan urban Gnawa ensemble instrumental passage with the skin-covered guembri plucking a low repeating bass melody against interlocking qraqeb metal castanets. Keep the cycle steady with subtle hand variation, leaving the space where a lead voice and group would answer, in a natural live room."
+  },
+  "gqom": {
+    "bpm": 125,
+    "meter": "4",
+    "prompt": "Early-2010s Durban gqom instrumental with a low, uneven kick pattern, dark resonant toms and clipped syncopated percussion across repeated bars. Build tension through displaced accents and short gaps, with sub pressure, a narrow shadowy synth and stark club production."
+  },
+  "grime": {
+    "bpm": 140,
+    "meter": "4",
+    "prompt": "Early-2000s London pirate-radio grime instrumental at 140 with a sparse, jagged two-step kick and snare, square-wave bass and thin detuned synth stabs. Leave abrupt pockets of silence for an MC, and use a raw, dry stereo mix with sharp synthetic transients."
+  },
+  "highlife": {
+    "bpm": 112,
+    "meter": "4",
+    "prompt": "1960s Ghanaian guitar-band highlife instrumental with two bright electric guitars weaving distinct syncopated parts over buoyant bass, bell and hand percussion. Add a short warm trumpet answer and keep the dance groove light, with vintage band-room balance."
+  },
+  "hip-hop": {
+    "bpm": 103,
+    "meter": "4",
+    "prompt": "Late-1970s Bronx block-party hip-hop instrumental with a live-sounding funk drum break extended in two-turntable style. Loop the strongest kick and snare measures under an original bass and guitar fragment, with occasional hand cuts and a lively dance-floor pocket."
+  },
+  "horrorcore": {
+    "bpm": 86,
+    "meter": "4",
+    "prompt": "Mid-1990s horrorcore rap instrumental with a dragging hard snare, low dirty kick and a looping dissonant organ phrase. Use occasional detuned bell hits and short spooky room tails around a thick bass note, keeping the macabre atmosphere sparse enough for storytelling."
+  },
+  "hyphy": {
+    "bpm": 100,
+    "meter": "4",
+    "prompt": "Mid-2000s Bay Area hyphy instrumental with a bouncing offbeat kick, dry clap and big rubbery bass. Bright synth-brass jabs and a brief siren-like answer make a playful car-stereo party groove, with stop-start rests and hard, uncluttered drum transients."
+  },
+  "jazz-rap": {
+    "bpm": 90,
+    "meter": "4",
+    "prompt": "Early-1990s jazz-rap instrumental with laid-back swung kick and snare under an original chopped upright-bass and jazz-piano figure. Answer the chords with brief muted horn fills, keeping the feel of a dusty jazz record loop blended with a sampler drum break."
+  },
+  "juju": {
+    "bpm": 110,
+    "meter": "4",
+    "prompt": "1970s Yoruba jùjú instrumental with multiple clean guitars picking complementary patterns across the bar and a gently moving bass line. Let dùndún talking drum phrases answer the guitars over shekere and light percussion, in a warm live ensemble mix."
+  },
+  "kwaito": {
+    "bpm": 108,
+    "meter": "4",
+    "prompt": "1990s South African township kwaito instrumental with a relaxed slowed-house four-on-the-floor pulse, warm repeating bass and clipped keyboard chords. Use light shaker percussion, short synth responses and an unhurried groove with room for spoken party refrains."
+  },
+  "latin": {
+    "bpm": 112,
+    "meter": "4",
+    "prompt": "A representative 1940s New York Latin dance-orchestra instrumental with a Cuban-influenced clave, bongo accents and a lightly syncopated bass. Let piano and a small trumpet-and-reed section trade tidy melodic phrases with the warmth and balance of a vintage ballroom recording."
+  },
+  "makossa": {
+    "bpm": 113,
+    "meter": "4",
+    "prompt": "1970s Douala makossa instrumental with the buoyant syncopated electric bass line leading two clean guitar figures and a supple kit groove. Punctuate the two-bar cycle with rounded saxophone and brass responses, keeping the bright live dance-band sound."
+  },
+  "mbalax": {
+    "bpm": 126,
+    "meter": "4",
+    "prompt": "1980s–1990s Dakar mbalax instrumental with interlocking sabar drums and explosive offbeat calls answered by a high tama talking drum. Electric bass and a clipped guitar figure anchor the underlying dance pulse while the percussion cuts across it, with lively ensemble dynamics."
+  },
+  "merengue": {
+    "bpm": 152,
+    "meter": "2",
+    "prompt": "Dominican merengue típico instrumental in a fast duple dance feel, with a nimble button accordion melody and short, emphatic runs. A metal güira scrapes steady subdivisions, the two-headed tambora alternates stick and hand accents, and bass reinforces the driving pulse."
+  },
+  "old-school-rap": {
+    "bpm": 110,
+    "meter": "4",
+    "prompt": "Early-1980s New York party rap backing with a crisp repeating funk break, a playful synth-bass figure and a sparse clavinet-like chord hit. Add a clean scratch on the phrase turnaround and leave large spaces for a call-and-response MC routine."
+  },
+  "rai": {
+    "bpm": 108,
+    "meter": "4",
+    "prompt": "1980s Oran raï instrumental using a nasal, highly ornamented keyboard melody that suggests the singer's phrasing. A tight darbuka and drum-machine groove supports handclaps, electric bass and short melodic answers, with the slightly saturated warmth of a cassette-era band."
+  },
+  "reggae": {
+    "bpm": 76,
+    "meter": "4",
+    "prompt": "1970s Jamaican roots reggae instrumental with an unhurried one-drop, kick and cross-stick together on beat three and an open drum downbeat. Short clean guitar skanks on the offbeats interlock with bubbling organ and a syncopated rounded bass, with human timing and a warm live-room sound."
+  },
+  "reggaeton": {
+    "bpm": 94,
+    "meter": "4",
+    "prompt": "Early-2000s Puerto Rican reggaeton instrumental with an unmistakable dembow loop, low repeated kick and syncopated sharply struck snare, tight hats and an uncluttered sub bass. Use a short dark synth figure and two-bar percussion variation over the persistent dance pulse."
+  },
+  "rocksteady": {
+    "bpm": 76,
+    "meter": "4",
+    "prompt": "Mid-1960s Jamaican rocksteady instrumental with a slow, relaxed dance pulse and melodic electric bass out front. Let short piano and guitar offbeats interlock above a light snare, with a smooth horn trio answering in the close harmony and warm sound of a small studio band."
+  },
+  "salsa": {
+    "bpm": 102,
+    "meter": "4",
+    "prompt": "1970s New York salsa instrumental at a brisk double-time dance feel, keeping a steady son clave. Interlock piano montuno, bass tumbao, conga and bongó with a cowbell carrying the pulse, then answer the piano with crisp trombone and trumpet punches in a live dance-band mix."
+  },
+  "samba": {
+    "bpm": 104,
+    "meter": "2",
+    "prompt": "Rio de Janeiro samba de terreiro instrumental with a rolling duple pulse anchored by surdo, quick pandeiro and rattling ganzá. Syncopated cavaquinho strums and acoustic guitar bass runs support a clear, fluid melody, with a lively small roda ensemble balance."
+  },
+  "ska": {
+    "bpm": 142,
+    "meter": "4",
+    "prompt": "Early-1960s Jamaican ska instrumental with a quick, buoyant offbeat guitar and piano chop over a walking bass line. Trumpet, trombone and saxophone play compact unison figures and answers while light live drums maintain the R&B-influenced bounce."
+  },
+  "son-cubano": {
+    "bpm": 100,
+    "meter": "4",
+    "prompt": "Traditional Cuban son sexteto instrumental in a loping 3–2 son clave, with bright tres guajeo, bongó martillo, maracas and anticipated bass notes. A single trumpet answers the tres in the montuno, with woody percussion and a close, unprocessed ensemble sound."
+  },
+  "soukous": {
+    "bpm": 132,
+    "meter": "4",
+    "prompt": "1980s Congolese soukous instrumental in an up-tempo sebene dance section. Layer three clean electric guitar parts with alternating bright high-register runs and syncopated chord figures over pulsing bass and a light kit, keeping each guitar audible in the stereo field."
+  },
+  "southern-rap": {
+    "bpm": 88,
+    "meter": "4",
+    "prompt": "A representative late-1990s New Orleans Southern rap bounce instrumental, driven by a quick recurring kick-and-clap break and an emphatic low bass. Clip a bright keyboard fragment into short response phrases and leave deliberate gaps for a dance-floor call."
+  },
+  "taarab": {
+    "bpm": 84,
+    "meter": "4",
+    "prompt": "Classical Zanzibari taarab orchestral instrumental interlude with ornamented oud and qanun answering a sweeping violin melody. Tablah marks a restrained recurring rhythmic cycle under double bass and soft accordion, keeping the heterophonic phrasing and warm space of a live coastal ensemble."
+  },
+  "tango": {
+    "bpm": 120,
+    "meter": "4",
+    "prompt": "1940s Río de la Plata tango orquesta típica instrumental with bandoneons, violins, piano and double bass. Play a firm marcato pulse with brief syncopated pushes and sudden rests, then contrast a sharp ensemble accent with a sliding, lyrical violin phrase in an intimate orchestra recording."
+  },
+  "trap-rap": {
+    "bpm": 144,
+    "meter": "4",
+    "prompt": "Early-2010s Atlanta trap rap instrumental with a half-time clap, deep tuned 808 bass and small bursts of rapid rolling hats. Let a stark minor-key bell motif repeat over sparse offbeat kicks, with hard transients and a wide empty pocket for rap delivery."
+  },
+  "west-coast-rap": {
+    "bpm": 99,
+    "meter": "4",
+    "prompt": "A representative early-1990s Los Angeles West Coast rap instrumental with a laid-back but crisp drum-machine groove, a plucked funk bass figure and wah-like rhythm guitar accents. Use clipped original soul-keyboard hits and a short scratch fill in a warm, open studio mix."
+  }
+}

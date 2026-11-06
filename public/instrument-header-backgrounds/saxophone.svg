@@ -1,28 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120">
-  <defs>
-    <linearGradient id="metal" x2=".34" y2="1" gradientUnits="objectBoundingBox">
-      <stop stop-color="#34d399"/><stop offset="1" stop-color="#165b42"/>
-    </linearGradient>
-    <linearGradient id="fade">
-      <stop offset=".32" stop-color="white" stop-opacity="0"/>
-      <stop offset=".58" stop-color="white" stop-opacity=".18"/>
-      <stop offset=".88" stop-color="white" stop-opacity=".54"/>
-      <stop offset="1" stop-color="white" stop-opacity=".22"/>
-    </linearGradient>
-    <radialGradient id="halo">
-      <stop stop-color="#34d399" stop-opacity=".16"/>
-      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
-    </radialGradient>
-    <mask id="reveal" maskUnits="userSpaceOnUse" x="0" y="0" width="360" height="120">
-      <rect width="360" height="120" fill="url(#fade)"/>
-    </mask>
-  </defs>
-  <ellipse cx="279" cy="72" rx="89" ry="56" fill="url(#halo)"/>
-  <g mask="url(#reveal)">
-    <g transform="translate(266 69) scale(.61)"><g transform="rotate(-61) scale(.9)"><path d="M-48-77Q-26-98-18-68L-2 53Q2 75 17 73Q34 71 35 42L37 9Q53 16 69 9L60 45Q52 96 20 98Q-13 100-24 61L-41-65Q-43-73-48-69Z" fill="url(#metal)" stroke="#89e3be" stroke-width="2"/>
-<ellipse cx="53" cy="10" rx="17" ry="5" transform="rotate(-12 53 10)" fill="#183e36" stroke="#a8e9cc" stroke-width="2"/>
-<path d="m-65-80 17-1 5 11-17-3z" fill="#202a30" stroke="#9bc9b9" stroke-width="1.5"/>
-<path d="M-37-51-20 52M28 65 43 35" fill="none" stroke="#b3dfcb" stroke-width="2"/>
-<ellipse cx="-33" cy="-47" rx="5" ry="3.6" fill="#d6e7dc" stroke="#39775e"/><ellipse cx="-29" cy="-31" rx="5" ry="3.6" fill="#d6e7dc" stroke="#39775e"/><ellipse cx="-27" cy="-15" rx="5" ry="3.6" fill="#d6e7dc" stroke="#39775e"/><ellipse cx="-25" cy="1" rx="5" ry="3.6" fill="#d6e7dc" stroke="#39775e"/><ellipse cx="-22" cy="17" rx="5" ry="3.6" fill="#d6e7dc" stroke="#39775e"/><ellipse cx="-20" cy="33" rx="5" ry="3.6" fill="#d6e7dc" stroke="#39775e"/><ellipse cx="-17" cy="49" rx="5" ry="3.6" fill="#d6e7dc" stroke="#39775e"/></g></g>
-  </g>
+<defs>
+  <linearGradient id="wood" x1="0%" y1="0%" x2="38%" y2="100%"><stop stop-color="#34d399"/><stop offset="1" stop-color="#165b42"/></linearGradient>
+  <radialGradient id="halo"><stop stop-color="#34d399" stop-opacity=".18"/><stop offset="1" stop-color="#165b42" stop-opacity="0"/></radialGradient>
+  <linearGradient id='fade'><stop offset='.33' stop-color='white' stop-opacity='0'/><stop offset='.61' stop-color='white' stop-opacity='.27'/><stop offset='.88' stop-color='white' stop-opacity='.61'/><stop offset='1' stop-color='white' stop-opacity='.42'/></linearGradient><mask id='reveal' maskUnits='userSpaceOnUse'><rect width='360' height='120' fill='url(#fade)'/></mask>
+</defs>
+<ellipse cx="262" cy="64" rx="92" ry="58" fill="url(#halo)" stroke="none"/>
+<g mask="url(#reveal)"><g transform="translate(262 64) rotate(-9) scale(0.622)"><g transform="scale(6) translate(-12 -12)"><path d="M3 5.5 6 4c2-1 4.3-.1 4.8 2.2l2.4 11a1.5 1.5 0 0 0 3-.1l.7-4.5-1-2.2 6 1.1-1.9 1.7-.9 4.5a4.7 4.7 0 0 1-9.2.1L7.2 7.3c-.2-.8-1-1.1-1.7-.8l-1.6.8Z" fill="url(#wood)" stroke="#a7f3d0" stroke-width="0.23"/><path d="M2.4 5.7l1.7-.9.9 1.9-1.1.6-1.7-.4Z" fill="#182730" stroke="#8cd7c1" stroke-width="0.15"/><g transform="rotate(10 19 11)"><ellipse cx="19" cy="11" rx="3.05" ry="0.82" fill="#12382f" stroke="#a7f3d0"/></g><path d="M8.1 8.3l2 9.1M10.4 8l1.9 8.7M14.7 17.6l3.2-1.2" fill="none" stroke="#a6d5c4" stroke-width="0.22"/><ellipse cx="9.4" cy="8.9" rx="0.64" ry="0.44" fill="#dcf7ea" stroke="#326c5e"/><ellipse cx="9.75" cy="10.4" rx="0.64" ry="0.44" fill="#dcf7ea" stroke="#326c5e"/><ellipse cx="10.1" cy="11.9" rx="0.64" ry="0.44" fill="#dcf7ea" stroke="#326c5e"/><ellipse cx="10.45" cy="13.4" rx="0.64" ry="0.44" fill="#dcf7ea" stroke="#326c5e"/><ellipse cx="10.8" cy="14.9" rx="0.64" ry="0.44" fill="#dcf7ea" stroke="#326c5e"/><ellipse cx="11.15" cy="16.4" rx="0.64" ry="0.44" fill="#dcf7ea" stroke="#326c5e"/><path d="M11.7 18.5q1.7 2.9 4.8 1.3" fill="none" stroke="#72c6aa" stroke-width="0.26"/></g></g></g>
 </svg>

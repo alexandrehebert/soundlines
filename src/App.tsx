@@ -263,7 +263,7 @@ export function Explorer() {
               transition={{ type: 'spring', stiffness: 320, damping: 32 }}
               className="hidden shrink-0 overflow-hidden md:block"
             >
-              <div className="h-full w-[360px]"><DetailPanel /></div>
+              <div className="h-full w-[360px]"><DetailPanel showGenreSample={isDesktop} /></div>
             </motion.div>
           )}
         </AnimatePresence>
@@ -288,7 +288,7 @@ export function Explorer() {
       </AnimatePresence>
       <AnimatePresence>
         {selectedId && (
-          <MobileDetailSheet key={selectedId} onClose={() => selectNode(null)} />
+          <MobileDetailSheet key={selectedId} onClose={() => selectNode(null)} showGenreSample={!isDesktop} />
         )}
       </AnimatePresence>
       <footer className="hidden border-t border-slate-800/60 bg-slate-950/90 px-5 py-1.5 text-[11px] font-medium text-slate-600 md:block">
@@ -302,13 +302,14 @@ export function Explorer() {
   )
 }
 
-function MobileDetailSheet({ onClose }: { onClose: () => void }) {
+function MobileDetailSheet({ onClose, showGenreSample }: { onClose: () => void; showGenreSample: boolean }) {
   const [expanded, setExpanded] = useState(false)
   const dragStart = useRef<{ pointerId: number; x: number; y: number } | null>(null)
   const suppressClick = useRef(false)
 
   const handlePointerDown = (event: PointerEvent<HTMLDivElement>) => {
     if (!event.isPrimary || event.button !== 0) return
+    if (event.target instanceof Element && event.target.closest('audio')) return
     if (expanded && (!(event.target instanceof Element)
       || !event.target.closest('[data-detail-drag-region]'))) return
     dragStart.current = { pointerId: event.pointerId, x: event.clientX, y: event.clientY }
@@ -383,7 +384,7 @@ function MobileDetailSheet({ onClose }: { onClose: () => void }) {
         </button>
       </div>
       <div className="min-h-0 flex-1 overflow-hidden">
-        <DetailPanel onClose={onClose} showCloseButton={false} scrollable={expanded} />
+        <DetailPanel onClose={onClose} showCloseButton={false} scrollable={expanded} showGenreSample={showGenreSample} />
       </div>
     </motion.div>
   )
