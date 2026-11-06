@@ -157,15 +157,6 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
       </div>
 
       <div className="flex flex-col gap-5 p-4 md:p-5">
-        {instrumentArtwork && (
-          <img
-            src={`${import.meta.env.BASE_URL}instrument-banners/${instrumentArtwork}`}
-            alt={`Illustration of ${node.name}`}
-            width={360}
-            height={160}
-            className="h-auto w-full rounded-xl border border-slate-800"
-          />
-        )}
         {node.period?.estimated && (
           <p className="text-xs leading-relaxed text-slate-400">
             Estimated period: {node.period.estimateNote ?? 'Dates are approximate and subject to revision.'}

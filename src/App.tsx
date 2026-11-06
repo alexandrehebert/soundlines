@@ -204,7 +204,7 @@ export function Explorer() {
                   </div>
                   {!showingHistory && (
                     <div className="mb-6 space-y-6 md:mb-0">
-                      {view === 'genre' && <GenreDisplaySelect className="flex" />}
+                      {view === 'genre' && <GenreDisplaySelect className="flex" onDisplayChange={() => setOptionsOpen(false)} />}
                       {!showingBubbles && isTimelineView(view) && (
                         <TimelineOrderSelect view={view} order={order} changeOrder={changeOrder} className="flex" />
                       )}
@@ -487,7 +487,10 @@ export function ViewToggle({
   )
 }
 
-export function GenreDisplaySelect({ className = '' }: { className?: string }) {
+export function GenreDisplaySelect({ className = '', onDisplayChange }: {
+  className?: string
+  onDisplayChange?: () => void
+}) {
   const { genreDisplay, changeGenreDisplay } = useExplorer()
   const indicatorId = useId()
   return (
@@ -499,7 +502,11 @@ export function GenreDisplaySelect({ className = '' }: { className?: string }) {
             key={display}
             type="button"
             aria-pressed={selected}
-            onClick={() => changeGenreDisplay(display)}
+            onClick={() => {
+              if (selected) return
+              changeGenreDisplay(display)
+              onDisplayChange?.()
+            }}
             className={`${toggleButtonClass(selected)} min-w-0 flex-1 justify-center`}
           >
             {selected && <ToggleIndicator layoutId={`genre-display-indicator-${indicatorId}`} />}

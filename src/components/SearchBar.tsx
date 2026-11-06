@@ -6,6 +6,7 @@ import { useExplorer } from '../ExplorerContext.ts'
 import { searchNodes } from '../graph/graph.ts'
 import { NODE_TYPE_LABELS } from '../graph/types.ts'
 import { NODE_TYPE_COLORS } from '../theme.ts'
+import { InstrumentIcon } from './InstrumentIcon.tsx'
 
 const SEARCH_INSTRUCTIONS = 'Use the up and down arrow keys to navigate search results. Press Enter to open the highlighted result, or the first result if none is highlighted. Press Escape to close search.'
 
@@ -279,12 +280,10 @@ function SearchResults({
         >
           <span className="flex min-w-0 items-center gap-2 text-sm font-semibold text-slate-200">
             {node.type === 'instrument' && (
-              <img
-                src={`${import.meta.env.BASE_URL}instrument-avatars/${encodeURIComponent(node.id.slice('instrument:'.length))}.svg`}
-                alt=""
-                width={24}
-                height={24}
-                className="size-6 shrink-0 rounded"
+              <InstrumentIcon
+                id={node.id}
+                className="size-6 shrink-0 bg-current"
+                style={{ color: NODE_TYPE_COLORS.instrument }}
               />
             )}
             {node.name}
