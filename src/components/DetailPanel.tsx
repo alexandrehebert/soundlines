@@ -50,9 +50,10 @@ function SourceLinks({ sources }: { sources?: string[] }) {
   )
 }
 
-export function DetailPanel({ onClose, showCloseButton = true }: {
+export function DetailPanel({ onClose, showCloseButton = true, scrollable = true }: {
   onClose?: () => void
   showCloseButton?: boolean
+  scrollable?: boolean
 } = {}) {
   const { index, selectedId, selectNode } = useExplorer()
   const node = selectedId ? index.nodeById.get(selectedId) : undefined
@@ -69,7 +70,7 @@ export function DetailPanel({ onClose, showCloseButton = true }: {
     : null
 
   return (
-    <aside className="flex h-full w-full flex-col overflow-y-auto border-l-0 border-slate-800 bg-slate-950/95 backdrop-blur md:border-l">
+    <aside className={`flex h-full w-full flex-col overscroll-contain border-l-0 border-slate-800 bg-slate-950/95 backdrop-blur md:border-l ${scrollable ? 'overflow-y-auto' : 'overflow-hidden'}`}>
       <div
         className={`sticky top-0 z-10 flex items-start border-b border-slate-800 bg-slate-950/95 bg-contain bg-right-bottom bg-no-repeat p-4 md:p-5 ${showCloseButton ? 'pr-14 md:pr-16' : ''}`}
         style={instrumentArtwork ? {

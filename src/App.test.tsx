@@ -115,6 +115,21 @@ describe('Explorer header statistics', () => {
     expect(closeButton).toContain('h-11 w-11')
   })
 
+  it('disables hidden content scrolling in the collapsed mobile sheet without changing desktop scrolling', () => {
+    const markup = render(graph, <Explorer />, 'genre:jazz')
+    const sheetStart = markup.indexOf('data-mobile-detail-sheet=""')
+    const sheet = markup.slice(sheetStart)
+    const sheetContainer = sheet.match(/data-mobile-detail-sheet=""[^>]*>/)?.[0]
+    const mobilePanel = sheet.match(/<aside\b[^>]*>/)?.[0]
+    const desktopPanel = markup.slice(0, sheetStart).match(/<aside\b[^>]*>/)?.[0]
+
+    expect(sheetContainer).toContain('touch-none')
+    expect(mobilePanel).toContain('overflow-hidden')
+    expect(mobilePanel).not.toContain('overflow-y-auto')
+    expect(desktopPanel).toContain('overflow-y-auto')
+    expect(sheet).toContain('data-detail-drag-region=""')
+  })
+
   it('omits empty desktop history options while retaining the mobile entry point', () => {
     const markup = render(graph, <Explorer />, null, 'history')
     const header = markup.slice(0, markup.indexOf('</header>'))

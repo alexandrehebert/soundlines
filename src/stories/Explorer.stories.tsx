@@ -351,3 +351,40 @@ export const MobileDetailControls: Story = {
     await waitFor(() => expect(sheet).not.toBeInTheDocument())
   },
 }
+
+export const MobileDetailSwipes: Story = {
+  globals: { viewport: { value: 'mobile2', isRotated: false } },
+  parameters: { explorer: { initialSelectedId: 'genre:house' } },
+  play: async ({ canvasElement }) => {
+    const sheet = canvasElement.querySelector<HTMLElement>('[data-mobile-detail-sheet]')
+    const content = sheet?.querySelector('aside')
+    const header = sheet?.querySelector<HTMLElement>('[data-detail-drag-region]')
+    if (!sheet || !content || !header) throw new Error('Mobile detail sheet is missing')
+    const swipe = async (target: HTMLElement, delta: number, cancelled = false) => {
+      const { top } = target.getBoundingClientRect()
+      const pointer = { pointerId: 1, isPrimary: true, button: 0, clientX: 30, clientY: top + 60 }
+      await fireEvent.pointerDown(target, pointer)
+      if (cancelled) await fireEvent.pointerCancel(target, pointer)
+      else await fireEvent.lostPointerCapture(target, pointer)
+      await fireEvent.pointerUp(target, {
+        ...pointer, clientY: pointer.clientY + delta,
+      })
+    }
+
+    expect(getComputedStyle(content).overflowY).toBe('hidden')
+    await swipe(content, -100, true)
+    expect(within(sheet).getByRole('button', { name: 'Expand details' })).toBeVisible()
+    await swipe(content, -20)
+    expect(within(sheet).getByRole('button', { name: 'Expand details' })).toBeVisible()
+    await swipe(content, -100)
+    expect(within(sheet).getByRole('button', { name: 'Collapse details' })).toBeVisible()
+    expect(getComputedStyle(content).overflowY).toBe('auto')
+    await swipe(content, 100)
+    expect(within(sheet).getByRole('button', { name: 'Collapse details' })).toBeVisible()
+    await swipe(header, 100)
+    expect(within(sheet).getByRole('button', { name: 'Expand details' })).toBeVisible()
+    expect(getComputedStyle(content).overflowY).toBe('hidden')
+    await swipe(content, 100)
+    await waitFor(() => expect(sheet).not.toBeInTheDocument())
+  },
+}

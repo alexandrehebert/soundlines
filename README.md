@@ -147,6 +147,9 @@ historical events. Artist lanes and detail badges use the same families.
   unchanged.
 - With a mouse, drag to move both axes; vertical scroll moves the timeline, horizontal scroll pans time, and Cmd/Ctrl+scroll zooms.
 - On touch screens, one-finger horizontal drags pan time, vertical swipes scroll the timeline, and two-finger pinches zoom. Tap a bar to open its draggable detail sheet.
+- Swipe up anywhere on the collapsed mobile detail sheet to expand it. Once
+  expanded, swipe through its content to scroll; use the top handle row to
+  collapse it, or swipe down again while collapsed to dismiss it.
 - Mobile search opens as a full-screen overlay and keeps keyboard focus inside
   until closed; selected artists and genres bring their bars into view.
 - The year axis and compressed-era annotations stay visible while scrolling
