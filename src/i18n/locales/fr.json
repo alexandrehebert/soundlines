@@ -12,6 +12,7 @@
   },
   "tagline": "un atlas des lignées musicales",
   "homeCopy": {
+    "theme": "Thème",
     "lightTheme": "Thème clair",
     "switchToLight": "Retourner à la face B · Thème clair",
     "switchToDark": "Retourner à la face A · Thème sombre",

@@ -34,7 +34,7 @@
 }
 
 /* Set by useColorTheme for two frames so per-element color transitions don't lag behind the page crossfade. */
-:root[data-theme-switching] *:not(.discovery-record-flip),
+:root[data-theme-switching] *:not(.discovery-record-flip, .discovery-knob-dial),
 :root[data-theme-switching] *::before,
 :root[data-theme-switching] *::after {
   transition: none !important;

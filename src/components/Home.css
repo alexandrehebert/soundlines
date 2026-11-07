@@ -208,7 +208,9 @@
 .discovery-secondary, .discovery-widget-action { color: var(--home-accent); }
 .discovery-secondary:hover, .discovery-widget-action:hover { color: var(--home-text); }
 
-.discovery-record { position: relative; display: grid; justify-items: center; padding: 1.5rem; }
+.discovery-turntable-deck { display: grid; align-self: stretch; grid-template-rows: 1fr auto; min-width: 0; gap: 1.25rem; padding: 1.5rem; }
+
+.discovery-record { position: relative; display: grid; align-self: center; justify-items: center; padding: 0; }
 
 .discovery-vinyl {
   width: min(100%, 21rem);
@@ -242,7 +244,7 @@
 }
 .discovery-record-caption text { font: 650 10px ui-monospace, monospace; letter-spacing: 3px; }
 
-.discovery-turntable-controls { position: absolute; right: 1.5rem; bottom: 1.5rem; z-index: 2; display: flex; align-items: center; gap: .5rem; }
+.discovery-turntable-controls { position: relative; justify-self: end; margin-top: 1rem; z-index: 2; display: flex; align-items: center; gap: .75rem; }
 .discovery-turntable-hint { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
 .discovery-turntable-hand {
   position: absolute;
@@ -258,41 +260,52 @@
 .discovery-turntable-hand svg { fill: var(--home-text); }
 .discovery-turntable-point, .discovery-turntable-grip { position: absolute; inset: 0; }
 .discovery-turntable-grip { transform-origin: 16px 18px; }
-.discovery-turntable-play {
+.discovery-turntable-play,
+.discovery-turntable-side-toggle {
   position: relative;
   display: grid;
   justify-items: center;
   align-content: center;
-  gap: .35rem;
+  flex: none;
+  gap: .3rem;
   width: 3.5rem;
   height: 3.5rem;
-  border: 1px solid var(--home-node-line);
-  border-radius: .75rem;
-  background: linear-gradient(160deg, #ffffff10, transparent 60%) var(--home-node);
+  padding: 0;
+  border: 1px solid color-mix(in srgb, var(--home-accent) 40%, var(--home-node));
+  border-radius: 50%;
+  background: linear-gradient(155deg, #ffffff16 0%, #ffffff06 38%, transparent 65%, #00000012 100%) var(--home-node);
+  box-shadow: inset 0 1px 0 #ffffff20, inset 0 -1px 2px #0002, 0 2px 4px #0003;
   color: var(--home-accent);
-  box-shadow: inset 0 1px 0 #ffffff1a, 0 2px 4px #0004;
   font: 650 .5rem/1 ui-monospace, monospace;
   letter-spacing: .06em;
   text-transform: uppercase;
+  cursor: pointer;
+  isolation: isolate;
   transition: color 150ms, background-color 300ms ease-in-out, box-shadow 150ms;
 }
-.discovery-turntable-side-toggle {
-  display: grid;
-  justify-items: center;
-  align-content: center;
-  gap: .35rem;
-  width: 3.5rem;
-  height: 3.5rem;
-  border: 1px solid var(--home-node-line);
-  border-radius: .75rem;
-  background: linear-gradient(160deg, #ffffff10, transparent 60%) var(--home-node);
-  color: var(--home-accent);
-  box-shadow: inset 0 1px 0 #ffffff1a, 0 2px 4px #0004;
-  font: 650 .5rem/1 ui-monospace, monospace;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  transition: color 150ms, background-color 300ms ease-in-out, box-shadow 150ms;
+.discovery-turntable-play > span:last-child,
+.discovery-turntable-side-toggle > span:last-child {
+  position: absolute;
+  bottom: calc(100% + .5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
+.discovery-knob-face { display: grid; place-items: center; width: 1rem; height: 1rem; }
+.discovery-knob-face > svg { position: relative; z-index: 1; }
+.discovery-knob-dial {
+  position: absolute;
+  inset: .1rem;
+  z-index: -1;
+  border-radius: 50%;
+  transform: rotate(-42deg);
+  transition: transform 250ms cubic-bezier(.2,.8,.2,1);
+}
+.discovery-knob-dial > span { position: absolute; top: .08rem; left: calc(50% - 1px); width: 2px; height: .3rem; border-radius: 2px; background: var(--home-accent); }
+.discovery-turntable-side-toggle[data-side="B"] .discovery-knob-dial,
+.discovery-turntable-play[aria-pressed="true"] .discovery-knob-dial { transform: rotate(42deg); }
+.discovery-turntable-side-toggle:hover { color: var(--home-text); background-color: var(--home-hover); }
+.discovery-turntable-side-toggle:active { background-color: var(--home-hover); }
 .discovery-turntable-play::before,
 .discovery-turntable-play::after {
   position: absolute;
@@ -312,11 +325,12 @@
 }
 .discovery-turntable-play::after {
   inset: 1px;
-  border-radius: calc(.75rem - 1px);
+  border-radius: inherit;
   background: linear-gradient(110deg, transparent 15%, color-mix(in srgb, var(--home-accent) 6%, transparent) 50%, transparent 85%);
   background-size: 200% 100%;
 }
-.discovery-turntable-play > * { position: relative; z-index: 1; }
+.discovery-turntable-play > * { z-index: 1; }
+.discovery-turntable-play > .discovery-knob-face { z-index: auto; }
 .discovery-turntable-play > .discovery-turntable-play-hint {
   position: absolute;
   inset: -1px;
@@ -326,13 +340,13 @@
   pointer-events: none;
 }
 .discovery-turntable-play:hover { color: var(--home-text); background-color: var(--home-hover); }
-.discovery-turntable-side-toggle:hover { color: var(--home-text); background-color: var(--home-hover); }
-.discovery-turntable-play:active, .discovery-turntable-play[aria-pressed="true"] { box-shadow: inset 0 2px 4px #0005; }
+
+.discovery-turntable-play:active, .discovery-turntable-play[aria-pressed="true"] { background-color: var(--home-hover); }
 .discovery-turntable-play:disabled { cursor: wait; }
 .discovery-turntable-play[aria-busy="true"]::before,
 .discovery-turntable-play[aria-busy="true"]::after { opacity: 1; }
 .discovery-turntable-play[aria-busy="true"] .discovery-turntable-led { background: var(--home-accent); }
-.discovery-turntable-led { position: absolute; top: .55rem; right: .55rem; width: .25rem; height: .25rem; border-radius: 50%; background: var(--home-muted); box-shadow: inset 0 1px 2px #0006; transition: background-color 150ms, box-shadow 150ms; }
+.discovery-turntable-led { position: absolute; top: .05rem; right: .05rem; width: .25rem; height: .25rem; border-radius: 50%; background: var(--home-muted); box-shadow: inset 0 1px 2px #0006; transition: background-color 150ms, box-shadow 150ms; }
 .discovery-turntable-play[aria-pressed="true"] .discovery-turntable-led { background: var(--home-accent); box-shadow: 0 0 .5rem var(--home-accent); }
 .discovery-turntable-error { position: absolute; right: 0; bottom: calc(100% + .75rem); width: min(16rem, 70vw); padding: .65rem .8rem; border: 1px solid var(--home-node-line); border-radius: .65rem; background: var(--home-surface); font-size: .75rem; color: var(--home-text); }
 
@@ -345,6 +359,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .discovery-knob-dial, .discovery-turntable-side-toggle { transition: none; }
   .discovery-turntable-hint, .discovery-turntable-play-hint { display: none; }
   .discovery-record-flip { transition: none; }
   .discovery-turntable-play,
@@ -508,19 +523,25 @@
   .discovery-width { width: calc(100% - 1.5rem); }
   .discovery-main { padding-top: 1rem; }
   .discovery-hero { grid-template-columns: minmax(0, 1fr); min-height: 0; }
-  .discovery-hero-copy { padding: 2rem 1.25rem; }
+  .discovery-hero-copy { padding: 2rem 1.25rem 1.5rem; }
   .discovery-intro { max-width: 21rem; }
-  .discovery-actions { position: relative; z-index: 2; }
+  .discovery-actions { position: relative; z-index: 2; min-height: 3rem; padding-right: 7.5rem; }
+  .discovery-turntable-deck { padding: 0 1.25rem 1.5rem; }
+  .discovery-hero:has(.discovery-actions) .discovery-turntable-deck { display: contents; padding: 0; }
   .discovery-record, .discovery-record-touch-target { position: absolute; width: 15rem; top: -.6rem; right: -6rem; }
   .discovery-record { z-index: -1; opacity: .35; padding: 0; }
   .discovery-record-caption { transform: rotate(40deg); transform-origin: center; }
   .discovery-record-touch-target { display: block; z-index: 1; aspect-ratio: 1; border-radius: 50%; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; }
   .discovery-record-touch-target[data-scratching] { cursor: grabbing; }
   .discovery-kicker { padding-right: 7rem; }
-  .discovery-turntable-controls { top: 1rem; right: 1rem; bottom: auto; }
+  .discovery-turntable-controls { justify-self: end; }
+  .discovery-hero:has(.discovery-actions) .discovery-turntable-controls { position: absolute; right: 1.25rem; bottom: 1.5rem; margin-top: 0; }
+
+  .discovery-actions .discovery-secondary { display: none; }
   .discovery-turntable-play { width: 3rem; height: 3rem; gap: .25rem; }
   .discovery-turntable-side-toggle { width: 3rem; height: 3rem; gap: .25rem; }
-  .discovery-turntable-error { bottom: auto; top: calc(100% + .75rem); }
+
+
   .discovery-grid { grid-template-columns: minmax(0, 1fr); }
   .discovery-destination { gap: .45rem; }
   .discovery-destination-icon, .discovery-destination .discovery-link-arrow { width: 1rem; }

@@ -334,7 +334,7 @@ describe('landing view transition', () => {
 
   it('lets mobile visitors scratch the record without an instruction hint', () => {
     const markup = render(graph, <Home />, null, 'genre', 'fr')
-    expect(markup).toContain('class="discovery-record-touch-target"')
+    expect(markup).toContain('class="discovery-record-perspective"')
     expect(markup).not.toContain('discovery-scratch-hint')
   })
 
@@ -362,27 +362,6 @@ describe('landing view transition', () => {
     expect(reducedMotionCss).toContain('.discovery-record-flip { transition: none; }')
     expect(loadingCss).toContain('#page-loading[data-opening][data-loading="true"] ~ #root .discovery-record-flip {\n  transition: none;')
     expect(loadingCss).not.toContain('.discovery-hero-copy')
-  })
-
-  it('keeps the inset turntable control out of the hero layout on every screen size', () => {
-    const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
-    const controls = [...homeCss.matchAll(/\.discovery-turntable-controls\s*\{([^}]+)\}/g)]
-    const reducedMotionCss = homeCss.match(/@media \(prefers-reduced-motion: reduce\) \{([\s\S]*?)\n\}/)?.[1]
-
-    expect(controls).toHaveLength(2)
-    expect(controls[0][1]).toContain('position: absolute;')
-    for (const control of controls.slice(1)) {
-      expect(control[1]).not.toMatch(/position:\s*(relative|static)|margin:/)
-    }
-    expect(homeCss).toContain('.discovery-record { position: relative; display: grid; justify-items: center; padding: 1.5rem; }')
-    expect(homeCss).toContain('.discovery-record-caption {\n  position: absolute;')
-    expect(homeCss).toContain('  .discovery-turntable-controls { top: 1rem; right: 1rem; bottom: auto; }')
-    expect(homeCss).not.toContain('.discovery-hero-title { position: relative; }')
-    expect(homeCss).toContain('.discovery-turntable-play:active, .discovery-turntable-play[aria-pressed="true"] { box-shadow: inset 0 2px 4px #0005; }')
-    expect(homeCss).not.toMatch(/\.discovery-turntable-play[^{]*\{[^}]*translate/)
-    expect(reducedMotionCss).toMatch(
-      /\.discovery-turntable-play,\s*\.discovery-turntable-play::before,\s*\.discovery-turntable-play::after \{ transition: none; \}/,
-    )
   })
 
   it('keeps the mobile detail sheet above the timeline content and below the navigation', () => {

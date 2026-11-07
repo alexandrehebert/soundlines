@@ -12,6 +12,7 @@
   },
   "tagline": "an atlas of musical lineages",
   "homeCopy": {
+    "theme": "Theme",
     "lightTheme": "Light theme",
     "switchToLight": "Flip to Side B · Light theme",
     "switchToDark": "Flip to Side A · Dark theme",

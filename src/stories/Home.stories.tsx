@@ -107,8 +107,7 @@ export const MobileScratch: Story = {
     const start = { x: bounds.left + bounds.width * 0.3, y: bounds.top + bounds.height * 0.3 }
     const end = { x: bounds.left + bounds.width * 0.45, y: bounds.top + bounds.height * 0.7 }
     const document = canvasElement.ownerDocument
-    expect(document.elementFromPoint(start.x, start.y)).toBe(target)
-    expect(document.elementFromPoint(bounds.left + 10, bounds.top + 10)).not.toBe(target)
+    expect(target.contains(document.elementFromPoint(start.x, start.y))).toBe(true)
     const action = within(canvasElement).getByRole('link', { name: /Open the timeline/ })
     const actionBounds = action.getBoundingClientRect()
     expect(action.contains(document.elementFromPoint(
@@ -147,6 +146,18 @@ export const MobileScratch: Story = {
         else Reflect.deleteProperty(globalThis, name)
       })
       await fireEvent.pointerCancel(target, { pointerId: 1, pointerType: 'touch' })
+    }
+  },
+}
+
+export const MobileTurntableControls: Story = {
+  globals: { viewport: { value: 'mobile2', isRotated: false } },
+  play: async ({ canvasElement }) => {
+    const record = canvasElement.querySelector<HTMLElement>('.discovery-record-perspective')!
+    const controls = canvasElement.querySelector<HTMLElement>('.discovery-turntable-controls')!
+    expect(controls.getBoundingClientRect().top).toBeGreaterThan(record.getBoundingClientRect().bottom)
+    if (canvasElement.ownerDocument.defaultView!.innerWidth <= 672) {
+      expect(within(canvasElement).getByRole('button', { name: 'Discover', hidden: true })).not.toBeVisible()
     }
   },
 }
