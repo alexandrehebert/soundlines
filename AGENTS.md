@@ -18,4 +18,4 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
   browser connectivity separately before starting another server; start one
   only when necessary, and stop only servers you started.
 
-See [Docker Compose](./README.md#docker-compose) for local testing details.
+See [Docker Compose](./docs/DEVELOPMENT.md#docker-compose) for local testing details.
