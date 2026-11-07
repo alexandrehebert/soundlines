@@ -112,7 +112,9 @@ export function Explorer() {
   }, [optionsOpen, selectedId, selectNode, statsTab])
 
   return (
-    <div className="flex h-dvh flex-col">
+    // Keep the navigation pinned when mobile browser chrome changes the viewport.
+    // Clip the exiting sheet so its translated bounds cannot enlarge the document.
+    <div className="fixed inset-0 flex flex-col overflow-clip">
       <header data-explorer-transition-header className={`${optionsOpen ? 'z-50' : 'z-20'} flex shrink-0 items-center gap-2 border-b border-slate-800 bg-slate-950/90 px-3 py-2 md:flex-wrap md:gap-x-6 md:gap-y-3 md:px-5 md:py-3`}>
         <BrandLink
           href={localizePath('/', locale)}
@@ -366,7 +368,7 @@ function MobileDetailSheet({ onClose, showGenreSample }: { onClose: () => void; 
   return (
     <motion.div
       data-mobile-detail-sheet=""
-      className={`fixed inset-x-0 bottom-0 z-30 flex flex-col overflow-hidden rounded-t-3xl border-t border-slate-700 bg-slate-950 shadow-2xl shadow-black/60 md:hidden ${expanded ? '' : 'touch-none'}`}
+      className={`absolute inset-x-0 bottom-0 z-30 flex flex-col overflow-hidden rounded-t-3xl border-t border-slate-700 bg-slate-950 shadow-2xl shadow-black/60 md:hidden ${expanded ? '' : 'touch-none'}`}
       onPointerDownCapture={() => { suppressClick.current = false }}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
@@ -386,7 +388,7 @@ function MobileDetailSheet({ onClose, showGenreSample }: { onClose: () => void; 
       animate={{ y: expanded ? 0 : `${MOBILE_DETAIL_COLLAPSED_OFFSET * 100}%` }}
       exit={{ y: '100%' }}
       transition={{ type: 'spring', stiffness: 320, damping: 34 }}
-      style={{ height: `${MOBILE_DETAIL_HEIGHT * 100}dvh`, paddingBottom: 'env(safe-area-inset-bottom)' }}
+      style={{ height: `${MOBILE_DETAIL_HEIGHT * 100}%`, paddingBottom: 'env(safe-area-inset-bottom)' }}
     >
       <div data-detail-drag-region="" className="relative flex shrink-0 touch-none items-center justify-center py-1">
         <button
