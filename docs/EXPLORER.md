@@ -19,9 +19,12 @@ The hero copy stays in its final position throughout; catalogue widgets fade in
 as they enter the viewport without shifting their alignment.
 The compact, beveled turntable button is inset into the hero card without adding
 height on desktop or mobile. Its raised face depresses during playback, with a
-lit status LED. Dark theme plays the original four-bar instrumental hip-hop loop;
-light theme selects its more aggressive trap arrangement with the same melody and tempo.
-Changing theme keeps the musical position and scratch speed, with an 80 ms crossfade.
+lit status LED; the labeled side/theme toggle sits beside it. The vinyl label has
+a centered icon without side lettering, while SOUNDLINES curves outside the
+record's lower-left edge. Dark theme plays the original four-bar instrumental
+hip-hop loop; light theme selects its more aggressive trap arrangement with the
+same melody and tempo. Changing theme keeps the musical position and scratch
+speed, with an 80 ms crossfade.
 It never starts paused audio. The first loop loads only on Play; after that,
 the other side loads on theme change and both sides stay cached for the visit.
 Dragging the record
@@ -35,9 +38,9 @@ Scratch gestures follow a circular arc, rotating the vinyl in sync.
 Both hand poses share the same wrist position for a stationary crossfade.
 Each demonstration lasts seven seconds, followed by a random 10–16-second pause;
 consecutive scenarios never repeat. Hints pause when the record leaves the
-viewport or the tab is hidden. Pointer presses, typing, and scrolling cancel the
-current hint and postpone the next one. They never play audio or block controls,
-and stop for the visit on scratch, Play, or keyboard focus on Play.
+viewport or the tab is hidden. Scrolling, typing, and unrelated pointer presses
+do not cancel the current hint. Hints never play audio or block controls,
+and fade out over 250 ms and stop for the visit only on scratch or Play.
 Reduced-motion preferences also disable this hint.
 The English and French controls show a retry message when audio cannot load.
 

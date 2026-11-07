@@ -311,13 +311,25 @@ describe('landing view transition', () => {
     expect(pages).toContain('aria-current="page"')
   })
 
-  it('renders both vinyl faces without side letters or an inline flip transform', () => {
-    const markup = render(graph, <Home />)
+  it.each([
+    ['en', 'Side', 'Flip to Side B · Light theme'],
+    ['fr', 'Face', 'Retourner à la face B · Thème clair'],
+  ] as const)('renders vinyl icons without side lettering and a labeled toggle in %s', (locale, toggleLabel, toggleAction) => {
+    const markup = render(graph, <Home />, null, 'genre', locale)
     const labels = [...markup.matchAll(/<div class="discovery-label">([\s\S]*?)<\/div>/g)]
+    const toggle = markup.match(/<button\b[^>]*class="discovery-turntable-side-toggle"[\s\S]*?<\/button>/)?.[0]
 
     expect(markup).toContain('<div class="discovery-record-flip">')
     expect(labels).toHaveLength(2)
-    for (const label of labels) expect(label[1]).toMatch(/^<svg\b[\s\S]*<\/svg>$/)
+    for (const label of labels) {
+      expect(label[1]).toMatch(/^<svg\b[\s\S]*<\/svg>$/)
+      expect(label[1]).not.toMatch(/<text(?:Path)?\b/)
+    }
+    expect(markup).toMatch(/class="discovery-turntable-controls">[\s\S]*class="discovery-turntable-side-toggle"/)
+    expect(toggle).toContain(`<span>${toggleLabel}</span>`)
+    expect(toggle).toContain(`aria-label="${toggleAction}"`)
+    expect(toggle).toContain('aria-pressed="false"')
+    expect(markup).toContain('class="discovery-record-caption"')
   })
 
   it('lets mobile visitors scratch the record without an instruction hint', () => {
@@ -362,7 +374,8 @@ describe('landing view transition', () => {
     for (const control of controls.slice(1)) {
       expect(control[1]).not.toMatch(/position:\s*(relative|static)|margin:/)
     }
-    expect(homeCss).toContain('.discovery-record { display: grid; justify-items: center; gap: 1rem; padding: 1.5rem; }')
+    expect(homeCss).toContain('.discovery-record { position: relative; display: grid; justify-items: center; padding: 1.5rem; }')
+    expect(homeCss).toContain('.discovery-record-caption {\n  position: absolute;')
     expect(homeCss).toContain('  .discovery-turntable-controls { top: 1rem; right: 1rem; bottom: auto; }')
     expect(homeCss).not.toContain('.discovery-hero-title { position: relative; }')
     expect(homeCss).toContain('.discovery-turntable-play:active, .discovery-turntable-play[aria-pressed="true"] { box-shadow: inset 0 2px 4px #0005; }')

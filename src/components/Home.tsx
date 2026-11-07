@@ -57,11 +57,12 @@ function pointerAngle(element: HTMLElement, event: PointerEvent<HTMLElement>) {
   return { angle: Math.atan2(y, x) * 180 / Math.PI, distance: Math.hypot(x, y), radius: box.width / 2 }
 }
 
-function TurntableHint({ record, play, progress, scenario }: {
+function TurntableHint({ record, play, progress, scenario, dismissed }: {
   record: RefObject<HTMLDivElement | null>
   play: RefObject<HTMLButtonElement | null>
   progress: MotionValue<number>
   scenario: MotionValue<TurntableHintScenario>
+  dismissed: boolean
 }) {
   const overlay = useRef<HTMLDivElement>(null)
   const [targets, setTargets] = useState<TurntableHintTargets | null>(null)
@@ -76,36 +77,38 @@ function TurntableHint({ record, play, progress, scenario }: {
   const gripRotate = useTransform(frame, (value) => value.angle)
 
   useEffect(() => {
-    if (!ready) return
+    if (!ready || dismissed) return
     const schedule = scheduleTurntableHints((next) => {
       scenario.set(next)
       progress.set(0)
       const animation = animate(progress, 1, { duration: 7, ease: 'linear' })
       return () => {
         animation.stop()
-        progress.set(0)
       }
     })
     let visible = false
     const eligible = () => visible && document.visibilityState === 'visible'
-    const update = () => { if (eligible()) schedule.resume(); else schedule.pause() }
-    const activity = () => { if (eligible()) schedule.restart() }
+    const update = () => {
+      if (eligible()) schedule.resume()
+      else {
+        schedule.pause()
+        progress.set(0)
+      }
+    }
     const observer = new IntersectionObserver(([entry]) => {
-      visible = entry.isIntersecting && entry.intersectionRatio >= .5
+      const nextVisible = entry.isIntersecting && entry.intersectionRatio >= .5
+      if (nextVisible === visible) return
+      visible = nextVisible
       update()
     }, { threshold: .5 })
     if (record.current) observer.observe(record.current)
     document.addEventListener('visibilitychange', update)
-    for (const event of ['pointerdown', 'keydown', 'wheel']) {
-      document.addEventListener(event, activity, { passive: true })
-    }
     return () => {
       schedule.dispose()
       observer.disconnect()
       document.removeEventListener('visibilitychange', update)
-      for (const event of ['pointerdown', 'keydown', 'wheel']) document.removeEventListener(event, activity)
     }
-  }, [progress, scenario, ready, record])
+  }, [progress, scenario, ready, record, dismissed])
 
   useEffect(() => {
     const layer = overlay.current
@@ -133,7 +136,13 @@ function TurntableHint({ record, play, progress, scenario }: {
   }, [record, play])
 
   return (
-    <div ref={overlay} className="discovery-turntable-hint" aria-hidden="true">
+    <motion.div
+      ref={overlay}
+      className="discovery-turntable-hint"
+      aria-hidden="true"
+      animate={{ opacity: dismissed ? 0 : 1 }}
+      transition={{ duration: .25, ease: 'easeOut' }}
+    >
       {targets && (
         <motion.div
           className="discovery-turntable-hand"
@@ -152,11 +161,11 @@ function TurntableHint({ record, play, progress, scenario }: {
           </motion.span>
         </motion.div>
       )}
-    </div>
+    </motion.div>
   )
 }
 
-function HeroTurntable({ theme, children }: { theme: ColorTheme; children: ReactNode }) {
+function HeroTurntable({ theme, toggleTheme, children }: { theme: ColorTheme; toggleTheme: () => void; children: ReactNode }) {
   const t = useTranslations()
   const tHome = useTranslations('homeCopy')
   const reduceMotion = useReducedMotion()
@@ -166,9 +175,10 @@ function HeroTurntable({ theme, children }: { theme: ColorTheme; children: React
   const scratchOffset = useMotionValue(0)
   const hintProgress = useMotionValue(0)
   const hintScenario = useMotionValue<TurntableHintScenario>('scratch-play')
+  const hintActive = useMotionValue(true)
   const hintFrame = useTransform(() => turntableHintFrame(hintProgress.get(), hintScenario.get()))
-  const hintRotation = useTransform(hintFrame, (frame) => frame.angle)
-  const hintPulse = useTransform(hintFrame, (frame) => frame.playPulse)
+  const hintRotation = useTransform(() => hintActive.get() ? hintFrame.get().angle : 0)
+  const hintPulse = useTransform(() => hintActive.get() ? hintFrame.get().playPulse : 0)
   const hintPulseScale = useTransform(hintPulse, [0, 1], [1, 1.18])
   const spinning = useTransform([spin, scratchOffset, hintRotation], ([base, offset, demo]: number[]) => base + offset + demo)
   const still = useTransform(scratchOffset, (offset) => offset - 16)
@@ -185,10 +195,11 @@ function HeroTurntable({ theme, children }: { theme: ColorTheme; children: React
   const mounted = useRef(true)
   const pendingPlay = useRef(false)
   const errorId = useId()
+  const captionPathId = useId()
 
   const dismissHint = () => {
     scratchOffset.set(scratchOffset.get() + hintRotation.get())
-    hintProgress.set(0)
+    hintActive.set(false)
     setHintDismissed(true)
   }
 
@@ -317,13 +328,23 @@ function HeroTurntable({ theme, children }: { theme: ColorTheme; children: React
               aria-busy={loading}
               aria-describedby={audioError ? errorId : undefined}
               disabled={loading}
-              onFocus={dismissHint}
               onClick={() => { void togglePlayback() }}
             >
               <span className="discovery-turntable-led" aria-hidden="true" />
               <motion.span className="discovery-turntable-play-hint" aria-hidden="true" style={{ opacity: hintPulse, scale: hintPulseScale }} />
               {playing ? <Pause size={16} aria-hidden="true" /> : <Play size={16} aria-hidden="true" />}
               <span>{tHome(playing ? 'pause' : 'play')}</span>
+            </button>
+            <button
+              type="button"
+              className="discovery-turntable-side-toggle"
+              onClick={toggleTheme}
+              aria-pressed={theme === 'light'}
+              aria-label={tHome(theme === 'dark' ? 'switchToLight' : 'switchToDark')}
+              title={tHome(theme === 'dark' ? 'switchToLight' : 'switchToDark')}
+            >
+              {theme === 'dark' ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}
+              <span>{tHome('side')}</span>
             </button>
             {audioError && <p id={errorId} className="discovery-turntable-error" role="alert">{tHome('loopError')}</p>}
           </div>
@@ -343,13 +364,22 @@ function HeroTurntable({ theme, children }: { theme: ColorTheme; children: React
             {(['A', 'B'] as const).map((side) => (
               <div key={side} className={`discovery-record-face discovery-record-face-${side.toLowerCase()}`}>
                 <motion.div className="discovery-vinyl" style={{ rotate }}>
-                  <div className="discovery-label"><Disc3 size={28} /></div>
+                  <div className="discovery-label">
+                    <Disc3 size={28} aria-hidden="true" />
+                  </div>
                 </motion.div>
               </div>
             ))}
           </div>
+          <svg className="discovery-record-caption" viewBox="0 0 360 360" aria-hidden="true">
+            <defs>
+              <path id={captionPathId} d="M 5 281 A 202 202 0 0 0 180 382" />
+            </defs>
+            <text>
+              <textPath href={`#${captionPathId}`} startOffset="50%" textAnchor="middle">SOUNDLINES</textPath>
+            </text>
+          </svg>
         </div>
-        <span className="discovery-record-caption">SOUNDLINES / {tHome(theme === 'dark' ? 'sideA' : 'sideB')}</span>
       </div>
       <div
         className="discovery-record-touch-target"
@@ -357,7 +387,7 @@ function HeroTurntable({ theme, children }: { theme: ColorTheme; children: React
         aria-hidden="true"
         {...scratchHandlers}
       />
-      {!reduceMotion && !hintDismissed && <TurntableHint record={record} play={playButton} progress={hintProgress} scenario={hintScenario} />}
+      {!reduceMotion && <TurntableHint record={record} play={playButton} progress={hintProgress} scenario={hintScenario} dismissed={hintDismissed} />}
     </>
   )
 }
@@ -470,17 +500,6 @@ export function Home() {
         <div className="discovery-width discovery-header-inner">
           <BrandLink className="discovery-brand" href={localizePath('/', locale)} aria-current="page" onClick={(event) => follow(event)}>Soundlines</BrandLink>
           <div className="discovery-search"><SearchBar /></div>
-          <button
-            type="button"
-            className="discovery-theme-toggle"
-            onClick={toggleTheme}
-            aria-pressed={theme === 'light'}
-            aria-label={tHome('lightTheme')}
-            title={tHome(theme === 'dark' ? 'switchToLight' : 'switchToDark')}
-          >
-            {theme === 'dark' ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}
-            <span>{tHome(theme === 'dark' ? 'sideA' : 'sideB')}</span>
-          </button>
           <a
             href={REPOSITORY_URL}
             className="discovery-repository"
@@ -496,7 +515,7 @@ export function Home() {
 
       <main className="discovery-width discovery-main">
         <section className="discovery-hero" aria-labelledby="discovery-heading">
-          <HeroTurntable theme={theme}>
+          <HeroTurntable theme={theme} toggleTheme={toggleTheme}>
             <p className="discovery-intro">{tHome('intro')}</p>
             <div className="discovery-actions">
               <ViewLink view="genre" className="discovery-primary"><ChartGantt size={17} aria-hidden="true" /> {tHome('openTimeline')} <ArrowRight size={17} aria-hidden="true" /></ViewLink>
