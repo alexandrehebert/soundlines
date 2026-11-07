@@ -12,6 +12,8 @@ The hero copy stays in its final position throughout; catalogue widgets fade in
 as they enter the viewport without shifting their alignment.
 Clicking the header brand while already on the landing page does not reload it
 or replay the opening animation; modified clicks retain normal link behavior.
+On narrow screens, where the vinyl overflows its clipped hero card, landing-page
+navigation fades it with the card. Wider screens retain the separate vinyl spin.
 The same overlay appears when changing modes, genre layout, or sort order
 (including cross-mode search, related-node navigation, and browser history).
 It appears instantly before the next view renders, stays visible for at least

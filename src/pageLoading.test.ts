@@ -117,9 +117,16 @@ describe('page loading lifecycle', () => {
     const animate = vi.fn(() => ({ cancel }))
     overlay.animate = animate
     const record = { animate }
+    const style = {
+      width: '',
+      removeProperty: vi.fn(() => { style.width = '' }),
+    }
     const vinyl = {
+      style,
       querySelector: vi.fn(() => record),
-      getBoundingClientRect: () => ({ left: 400, top: 300, width: 200, height: 200 }),
+      getBoundingClientRect: () => style.width === '300px'
+        ? { left: 350, top: 260, width: 300, height: 300 }
+        : { left: 400, top: 300, width: 200, height: 200 },
       animate,
     }
     const target = {
@@ -130,38 +137,49 @@ describe('page loading lifecycle', () => {
     }
     documentState.querySelector.mockReturnValue(target)
     overlay.querySelector.mockReturnValue(vinyl)
-    vi.stubGlobal('getComputedStyle', () => ({ transform: 'rotate(-16deg)', opacity: '1', borderRadius: '24px' }))
-    return { animate, cancel }
+    vi.stubGlobal('getComputedStyle', () => ({
+      transform: 'rotate(-16deg)',
+      opacity: '1',
+      borderRadius: '24px',
+      borderTopWidth: '1px',
+      borderRightWidth: '1px',
+      borderBottomWidth: '1px',
+      borderLeftWidth: '1px',
+    }))
+    return { animate, cancel, style }
   }
 
   it('moves the opening vinyl to the landing record center and size before revealing it', () => {
-    const { animate, cancel } = mockLandingVinyl()
+    const { animate, cancel, style } = mockLandingVinyl()
     loading.finishPageLoading()
     vi.advanceTimersByTime(550)
     expect(overlay.dataset.docking).toBe('')
     expect(overlay.dataset.loading).toBe('true')
+    expect(style.width).toBe('300px')
     expect(animate).toHaveBeenCalledWith([
-      { transform: 'translate(0, 0) scale(1)', opacity: 1 },
-      { transform: 'translate(480px, -120px) scale(1.5)', opacity: '1' },
+      { transform: `translate(0px, -10px) scale(${200 / 300})`, opacity: 1 },
+      { transform: 'translate(480px, -130px) scale(1)', opacity: '1' },
     ], expect.objectContaining({ duration: 700, fill: 'forwards' }))
     expect(animate).toHaveBeenCalledWith([
       { clipPath: 'inset(0px round 0px)', offset: 0 },
       { clipPath: 'inset(0px round 0px)', offset: 0.5 },
-      { clipPath: 'inset(80px 20px 200px 20px round 24px)' },
+      { clipPath: 'inset(81px 21px 201px 21px round 23px)' },
     ], expect.objectContaining({ duration: 700 }))
     vi.advanceTimersByTime(699)
     expect(overlay.dataset.loading).toBe('true')
     vi.advanceTimersByTime(1)
     expect(overlay.dataset.loading).toBe('false')
     expect(cancel).toHaveBeenCalledTimes(3)
+    expect(style.width).toBe('')
   })
 
   it('cancels docking animations and dismissal on navigation', () => {
-    const { cancel } = mockLandingVinyl()
+    const { cancel, style } = mockLandingVinyl()
     loading.finishPageLoading()
     vi.advanceTimersByTime(550)
     loading.transitionPage(vi.fn())
     expect(cancel).toHaveBeenCalledTimes(3)
+    expect(style.width).toBe('')
     expect(overlay.dataset.docking).toBeUndefined()
     expect(overlay.dataset.opening).toBeUndefined()
     vi.advanceTimersByTime(700)

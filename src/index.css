@@ -24,10 +24,14 @@ body {
 }
 
 .soundlines-home-transition .soundlines-search-transition { view-transition-name: soundlines-search; }
-.soundlines-home-transition .discovery-vinyl { view-transition-name: soundlines-vinyl; }
 .soundlines-home-transition [data-explorer-transition-header] { view-transition-name: soundlines-explorer-header; }
 .soundlines-home-transition [data-explorer-transition-navigation] { view-transition-name: soundlines-explorer-navigation; }
 .soundlines-home-transition [data-explorer-transition-content] { view-transition-name: soundlines-explorer-content; }
+
+/* On narrow screens the vinyl overflows the clipped hero card, so it fades with the page. */
+@media (width > 42rem) {
+  .soundlines-home-transition .discovery-vinyl { view-transition-name: soundlines-vinyl; }
+}
 
 .soundlines-home-transition::view-transition-group(*) {
   animation-duration: 480ms;
