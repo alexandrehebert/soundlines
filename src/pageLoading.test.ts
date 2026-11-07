@@ -130,13 +130,24 @@ describe('page loading lifecycle', () => {
     expect(overlay.dataset.loading).toBe('false')
   })
 
-  function mockLandingVinyl(recordOpacity = '1') {
+  function mockLandingVinyl(recordOpacity = '1', startDelay = 0) {
     const cancel = vi.fn()
     class MockKeyframeEffect {
       setKeyframes = vi.fn()
     }
     vi.stubGlobal('KeyframeEffect', MockKeyframeEffect)
-    const animate = vi.fn(() => ({ cancel, effect: new MockKeyframeEffect() }))
+    const animate = vi.fn(() => {
+      const animation = {
+        cancel: () => {
+          cancel()
+          clearTimeout(finished)
+        },
+        effect: new MockKeyframeEffect(),
+        onfinish: null as (() => void) | null,
+      }
+      const finished = setTimeout(() => animation.onfinish?.(), startDelay + 700)
+      return animation
+    })
     overlay.animate = animate
     const record = { animate }
     const style = {
@@ -224,6 +235,26 @@ describe('page loading lifecycle', () => {
     expect(overlay.dataset.loading).toBe('false')
   })
 
+  it('waits for the movement to finish when startup rendering delays the animation', () => {
+    const { animate, cancel, style } = mockLandingVinyl('1', 1000)
+    loading.finishPageLoading()
+    vi.advanceTimersByTime(1250)
+    expect(overlay.dataset.loading).toBe('true')
+    expect(style.width).toBe('300px')
+    expect(cancel).not.toHaveBeenCalled()
+
+    vi.advanceTimersByTime(999)
+    expect(overlay.dataset.loading).toBe('true')
+    vi.advanceTimersByTime(1)
+    expect(overlay.dataset.loading).toBe('false')
+    expect(cancel).toHaveBeenCalledTimes(3)
+    expect(style.width).toBe('')
+    const effects = animate.mock.results.map((result) => result.value.effect)
+    effects.forEach((effect) => effect.setKeyframes.mockClear())
+    vi.advanceTimersByTime(100)
+    effects.forEach((effect) => expect(effect.setKeyframes).not.toHaveBeenCalled())
+  })
+
   it.each(['dark', 'light'])('tracks scrolling and rotation throughout docking in the %s theme', (theme) => {
     documentState.documentElement.dataset.theme = theme
     const { animate, target, destination, hero } = mockLandingVinyl()
@@ -269,6 +300,7 @@ describe('page loading lifecycle', () => {
     expect(style.width).toBe('')
     expect(overlay.dataset.docking).toBeUndefined()
     expect(overlay.dataset.opening).toBeUndefined()
+    animate.mock.results.forEach((result) => expect(result.value.onfinish).toBeNull())
     vi.advanceTimersByTime(700)
     animate.mock.results.forEach((result) => expect(result.value.effect.setKeyframes).not.toHaveBeenCalled())
     expect(overlay.dataset.loading).toBe('true')

@@ -260,20 +260,70 @@
   font: 650 .5rem/1 ui-monospace, monospace;
   letter-spacing: .06em;
   text-transform: uppercase;
-  transition: color 150ms, background-color 150ms, box-shadow 150ms;
+  transition: color 150ms, background-color 300ms ease-in-out, box-shadow 150ms;
 }
+.discovery-turntable-play::before,
+.discovery-turntable-play::after {
+  position: absolute;
+  pointer-events: none;
+  content: "";
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+.discovery-turntable-play::before {
+  inset: -2px;
+  padding: 1.5px;
+  border-radius: inherit;
+  background: conic-gradient(from var(--discovery-play-angle), transparent 0deg 235deg, color-mix(in srgb, var(--home-accent) 45%, transparent) 280deg, var(--home-accent) 320deg, #fff 338deg, transparent 360deg);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.discovery-turntable-play::after {
+  inset: 1px;
+  border-radius: calc(.75rem - 1px);
+  background: linear-gradient(110deg, transparent 15%, color-mix(in srgb, var(--home-accent) 6%, transparent) 50%, transparent 85%);
+  background-size: 200% 100%;
+}
+.discovery-turntable-play > * { position: relative; z-index: 1; }
 .discovery-turntable-play:hover { color: var(--home-text); background-color: var(--home-hover); }
 .discovery-turntable-play:active, .discovery-turntable-play[aria-pressed="true"] { box-shadow: inset 0 2px 4px #0005; }
 .discovery-turntable-play:disabled { cursor: wait; }
+.discovery-turntable-play[aria-busy="true"]::before,
+.discovery-turntable-play[aria-busy="true"]::after { opacity: 1; }
 .discovery-turntable-play[aria-busy="true"] .discovery-turntable-led { background: var(--home-accent); }
 .discovery-turntable-led { position: absolute; top: .55rem; right: .55rem; width: .25rem; height: .25rem; border-radius: 50%; background: var(--home-muted); box-shadow: inset 0 1px 2px #0006; transition: background-color 150ms, box-shadow 150ms; }
 .discovery-turntable-play[aria-pressed="true"] .discovery-turntable-led { background: var(--home-accent); box-shadow: 0 0 .5rem var(--home-accent); }
 .discovery-turntable-error { position: absolute; right: 0; bottom: calc(100% + .75rem); width: min(16rem, 70vw); padding: .65rem .8rem; border: 1px solid var(--home-node-line); border-radius: .65rem; background: var(--home-surface); font-size: .75rem; color: var(--home-text); }
 
+@media (prefers-reduced-motion: no-preference) {
+  /* Preserve the current animation frame while the loading effects fade out. */
+  .discovery-turntable-play::before { animation: discovery-play-aura 1.6s linear infinite paused; }
+  .discovery-turntable-play::after { animation: discovery-play-shimmer 3s ease-in-out infinite paused; }
+  .discovery-turntable-play[aria-busy="true"]::before,
+  .discovery-turntable-play[aria-busy="true"]::after { animation-play-state: running; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .discovery-turntable-hint { display: none; }
   .discovery-record-flip { transition: none; }
-  .discovery-turntable-play { transition: none; }
+  .discovery-turntable-play,
+  .discovery-turntable-play::before,
+  .discovery-turntable-play::after { transition: none; }
+}
+
+@keyframes discovery-play-aura {
+  to { --discovery-play-angle: 1turn; }
+}
+
+@keyframes discovery-play-shimmer {
+  50% { background-position: 100% 0; }
+}
+
+@property --discovery-play-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
 }
 
 .discovery-nav { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin-top: 1rem; }

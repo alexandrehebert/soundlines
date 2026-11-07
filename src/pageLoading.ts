@@ -96,6 +96,13 @@ export function finishPageLoading() {
     const initialKeyframes = dockingKeyframes()
     animations = [overlay, vinyl, record].map((element, index) =>
       element.animate(initialKeyframes[index], options))
+    // Startup rendering can delay the animation's first frame; wait for its timeline, not wall-clock time.
+    animations[1].onfinish = () => {
+      cancelAnimationFrame(frame)
+      setLoading(false)
+      animations.forEach((animation) => animation.cancel())
+      vinyl.style.removeProperty('width')
+    }
     const trackDestination = () => {
       const keyframes = dockingKeyframes()
       animations.forEach((animation, index) => {
@@ -104,12 +111,6 @@ export function finishPageLoading() {
       frame = requestAnimationFrame(trackDestination)
     }
     frame = requestAnimationFrame(trackDestination)
-    timer = setTimeout(() => {
-      cancelAnimationFrame(frame)
-      setLoading(false)
-      animations.forEach((animation) => animation.cancel())
-      vinyl.style.removeProperty('width')
-    }, VINYL_DOCK_MS)
   }
   const finish = () => {
     frame = requestAnimationFrame(() => {
@@ -125,7 +126,10 @@ export function finishPageLoading() {
     window.removeEventListener('load', finish)
     cancelAnimationFrame(frame)
     clearTimeout(timer)
-    animations.forEach((animation) => animation.cancel())
+    animations.forEach((animation) => {
+      animation.onfinish = null
+      animation.cancel()
+    })
     overlay?.querySelector<HTMLElement>('.page-loading-vinyl')?.style.removeProperty('width')
     if (overlay) delete overlay.dataset.docking
   }

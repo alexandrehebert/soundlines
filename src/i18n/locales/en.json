@@ -17,7 +17,6 @@
     "pause": "Pause",
     "playLoop": "Play the hip-hop loop",
     "pauseLoop": "Pause the hip-hop loop",
-    "loadingLoop": "Loading",
     "loopError": "Audio could not play. Press Play to try again.",
     "headline": {
       "first": "Follow the",

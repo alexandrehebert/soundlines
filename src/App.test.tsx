@@ -336,6 +336,7 @@ describe('landing view transition', () => {
   it('keeps the inset turntable control out of the hero layout on every screen size', () => {
     const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
     const controls = [...homeCss.matchAll(/\.discovery-turntable-controls\s*\{([^}]+)\}/g)]
+    const reducedMotionCss = homeCss.match(/@media \(prefers-reduced-motion: reduce\) \{([\s\S]*?)\n\}/)?.[1]
 
     expect(controls).toHaveLength(2)
     expect(controls[0][1]).toContain('position: absolute;')
@@ -347,7 +348,9 @@ describe('landing view transition', () => {
     expect(homeCss).not.toContain('.discovery-hero-title { position: relative; }')
     expect(homeCss).toContain('.discovery-turntable-play:active, .discovery-turntable-play[aria-pressed="true"] { box-shadow: inset 0 2px 4px #0005; }')
     expect(homeCss).not.toMatch(/\.discovery-turntable-play[^{]*\{[^}]*translate/)
-    expect(homeCss).toContain('  .discovery-turntable-play { transition: none; }')
+    expect(reducedMotionCss).toMatch(
+      /\.discovery-turntable-play,\s*\.discovery-turntable-play::before,\s*\.discovery-turntable-play::after \{ transition: none; \}/,
+    )
   })
 
   it('keeps the mobile detail sheet above the timeline content and below the navigation', () => {

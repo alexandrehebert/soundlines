@@ -287,7 +287,7 @@ function HeroTurntable({ theme, children }: { theme: ColorTheme; children: React
             >
               <span className="discovery-turntable-led" aria-hidden="true" />
               {playing ? <Pause size={16} aria-hidden="true" /> : <Play size={16} aria-hidden="true" />}
-              <span>{tHome(loading ? 'loadingLoop' : playing ? 'pause' : 'play')}</span>
+              <span>{tHome(playing ? 'pause' : 'play')}</span>
             </button>
             {audioError && <p id={errorId} className="discovery-turntable-error" role="alert">{tHome('loopError')}</p>}
           </div>

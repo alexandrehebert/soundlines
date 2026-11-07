@@ -7,8 +7,10 @@ Next.js App Router, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vi
 The header and browser favicon share the same violet vinyl-disc icon.
 On first load, the landing page's grooved vinyl spins in the center before React
 starts. Once the landing page is ready, the cover fades away and the vinyl moves
-into its hero position over 700ms, tracking the hero position and scroll-driven
-rotation even when scrolling during loading. Other entry pages simply fade out the cover.
+into its hero position over 700ms of animation time, tracking the hero position and
+scroll-driven rotation even when scrolling during loading. The handoff waits for
+the movement to finish, including when startup rendering delays its first frame.
+Other entry pages simply fade out the cover.
 The hero copy stays in its final position throughout; catalogue widgets fade in
 as they enter the viewport without shifting their alignment.
 The compact, beveled turntable button is inset into the hero card without adding
