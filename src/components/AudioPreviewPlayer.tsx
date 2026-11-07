@@ -1,7 +1,9 @@
 import { Disc3, LoaderCircle, Pause, Play } from 'lucide-react'
 import { useCallback, useRef, useState } from 'react'
+import { useTranslations } from 'next-intl'
 
 export function AudioPreviewPlayer({ url, label }: { url: string; label: string }) {
+  const t = useTranslations('audio')
   const [status, setStatus] = useState<'idle' | 'loading' | 'playing' | 'paused' | 'failed'>('idle')
   const audio = useRef<HTMLAudioElement>(null)
   const attachAudio = useCallback((element: HTMLAudioElement | null) => {
@@ -31,7 +33,7 @@ export function AudioPreviewPlayer({ url, label }: { url: string; label: string 
   }
 
   if (status === 'failed') {
-    return <p role="status" className="text-xs text-slate-400">This sample could not be loaded.</p>
+    return <p role="status" className="text-xs text-slate-400">{t('failed')}</p>
   }
 
   const playing = status === 'playing'
@@ -51,8 +53,8 @@ export function AudioPreviewPlayer({ url, label }: { url: string; label: string 
       />
       <button
         type="button"
-        aria-label={`${playing || loading ? 'Pause' : 'Play'} ${label}`}
-        title={`${playing || loading ? 'Pause' : 'Play'} ${label}`}
+        aria-label={`${playing || loading ? t('pause') : t('play')} ${label}`}
+        title={`${playing || loading ? t('pause') : t('play')} ${label}`}
         onClick={togglePlayback}
         className="group relative grid h-11 w-11 place-items-center rounded-full border border-slate-700 bg-slate-900 text-slate-100 hover:border-cyan-400 hover:bg-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400 motion-safe:transition-colors motion-safe:duration-200"
       >
@@ -84,7 +86,7 @@ export function AudioPreviewPlayer({ url, label }: { url: string; label: string 
           <span className={loading ? 'motion-safe:animate-spin' : ''}><LoaderCircle size={21} /></span>
         </span>
       </button>
-      <span role="status" className="sr-only">{loading ? 'Buffering audio' : ''}</span>
+      <span role="status" className="sr-only">{loading ? t('buffering') : ''}</span>
     </>
   )
 }

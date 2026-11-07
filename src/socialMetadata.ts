@@ -1,47 +1,23 @@
+import { createTranslator } from 'next-intl'
 import {
-  isHomeUrl, readTimelineOrders, VIEW_PATHS, viewForNode, viewFromUrl, writeTimelineOrders, type ExplorerView,
+  isHomeUrl, readTimelineOrders, VIEW_PATHS, viewForNode, viewFromUrl, writeTimelineOrders,
 } from './graph/timeline.ts'
-import { NODE_TYPE_LABELS, type GraphNode } from './graph/types.ts'
+import type { GraphNode } from './graph/types.ts'
+import { DEFAULT_LOCALE, localeFromPath, localizePath, type Locale } from './i18n/routing.ts'
+import { pageMetadata } from './i18n/seo.ts'
+import { graphLabels } from './i18n/graphLabels.ts'
+import { catalogueFor } from './i18n/catalogue.ts'
 
 const START_MARKER = '<!-- social-metadata:start -->'
 const END_MARKER = '<!-- social-metadata:end -->'
-const IMAGE_ALT = 'Soundlines: a chronological map of music lineages'
 const DESCRIPTION_LIMIT = 200
-
-const VIEW_METADATA: Record<ExplorerView, { title: string; description: string }> = {
-  genre: {
-    title: 'Music Genres | Soundlines',
-    description: 'Explore the evolution of music genres and the lineages that connect them on the Soundlines timeline.',
-  },
-  artist: {
-    title: 'Music Artists | Soundlines',
-    description: 'Explore music artists, their influences, and their connections across history on the Soundlines timeline.',
-  },
-  instrument: {
-    title: 'Musical Instruments | Soundlines',
-    description: 'Explore the history of musical instruments and the sounds and musicians connected to them on Soundlines.',
-  },
-  history: {
-    title: 'Music History | Soundlines',
-    description: 'Explore pivotal events, inventions, performances, and cultural movements throughout music history on Soundlines.',
-  },
-}
-
-const HOME_METADATA = {
-  title: 'Soundlines | Discover Music History',
-  description: 'Follow the connections between music genres, discover new catalogue entries, and explore the history of music on Soundlines.',
-}
-
-const BUBBLE_METADATA = {
-  title: 'Music Genre Map | Soundlines',
-  description: 'Explore an interactive map of music genres and the lineages that connect them on Soundlines.',
-}
 
 export interface SocialMetadata {
   title: string
   description: string
   url: string
   image: string
+  imageAlt?: string
 }
 
 interface SocialMetaTag {
@@ -59,21 +35,30 @@ function shortenDescription(description: string): string {
   return `${(boundary > 0 ? excerpt.slice(0, boundary) : excerpt).trimEnd()}…`
 }
 
-export function socialMetadata(url: URL, nodeById: ReadonlyMap<string, GraphNode>): SocialMetadata {
+export function socialMetadata(
+  url: URL,
+  nodeById: ReadonlyMap<string, GraphNode>,
+  requestedLocale?: Locale,
+): SocialMetadata {
   const focus = url.searchParams.get('focus')
   const node = focus ? nodeById.get(focus) : undefined
   const view = viewForNode(node?.type, viewFromUrl(url))
   const bubbles = url.searchParams.get('layout') === 'bubbles'
   const home = isHomeUrl(url, Boolean(node))
-  const canonical = new URL(home ? '/' : VIEW_PATHS[view], url.origin)
+  const locale = requestedLocale ?? localeFromPath(url.pathname) ?? DEFAULT_LOCALE
+  const labels = graphLabels(locale)
+  const copy = catalogueFor(locale).social
+  const tSocial = createTranslator({ locale, messages: catalogueFor(locale), namespace: 'social' })
+  const canonical = new URL(localizePath(home ? '/' : VIEW_PATHS[view], locale), url.origin)
   if (node) canonical.searchParams.set('focus', node.id)
   writeTimelineOrders(canonical.searchParams, readTimelineOrders(url.searchParams))
   if (bubbles) canonical.searchParams.set('layout', 'bubbles')
 
-  const page = home ? HOME_METADATA : view === 'genre' && bubbles ? BUBBLE_METADATA : VIEW_METADATA[view]
-  const title = node ? `${node.name} | ${NODE_TYPE_LABELS[node.type]} | Soundlines` : page.title
+  const page = pageMetadata(locale, home ? 'home' : view === 'genre' && bubbles ? 'bubbles' : view)
+  const nodeTypeLabel = labels.nodeTypes[node?.type ?? 'genre']
+  const title = node ? `${node.name} | ${nodeTypeLabel} | Soundlines` : page.title
   const description = node
-    ? node.description?.trim() || `Discover ${node.name} (${NODE_TYPE_LABELS[node.type]}) and explore connections across music history on Soundlines.`
+    ? node.description?.trim() || tSocial('nodeDescription', { name: node.name, type: nodeTypeLabel })
     : page.description
 
   return {
@@ -81,10 +66,12 @@ export function socialMetadata(url: URL, nodeById: ReadonlyMap<string, GraphNode
     description: shortenDescription(description),
     url: canonical.href,
     image: new URL('/social-card.png', canonical).href,
+    imageAlt: copy.imageAlt,
   }
 }
 
 export function socialMetaTags(metadata: SocialMetadata): SocialMetaTag[] {
+  const imageAlt = metadata.imageAlt ?? catalogueFor(DEFAULT_LOCALE).social.imageAlt
   return [
     { attribute: 'name', key: 'description', content: metadata.description },
     { attribute: 'property', key: 'og:type', content: 'website' },
@@ -96,12 +83,12 @@ export function socialMetaTags(metadata: SocialMetadata): SocialMetaTag[] {
     { attribute: 'property', key: 'og:image:type', content: 'image/png' },
     { attribute: 'property', key: 'og:image:width', content: '1200' },
     { attribute: 'property', key: 'og:image:height', content: '630' },
-    { attribute: 'property', key: 'og:image:alt', content: IMAGE_ALT },
+    { attribute: 'property', key: 'og:image:alt', content: imageAlt },
     { attribute: 'name', key: 'twitter:card', content: 'summary_large_image' },
     { attribute: 'name', key: 'twitter:title', content: metadata.title },
     { attribute: 'name', key: 'twitter:description', content: metadata.description },
     { attribute: 'name', key: 'twitter:image', content: metadata.image },
-    { attribute: 'name', key: 'twitter:image:alt', content: IMAGE_ALT },
+    { attribute: 'name', key: 'twitter:image:alt', content: imageAlt },
   ]
 }
 

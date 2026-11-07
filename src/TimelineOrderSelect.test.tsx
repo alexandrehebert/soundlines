@@ -1,11 +1,11 @@
-import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it, vi } from 'vitest'
 import { TimelineOrderSelect } from './App.tsx'
 import type { TimelineOrder } from './graph/layout.ts'
 import type { TimelineView } from './graph/timeline.ts'
+import { renderWithIntl } from './i18n/test-utils.tsx'
 
 function renderOrder(view: TimelineView, order: TimelineOrder) {
-  const markup = renderToStaticMarkup(
+  const markup = renderWithIntl(
     <TimelineOrderSelect view={view} order={order} changeOrder={vi.fn()} />,
   )
   const radios = [...markup.matchAll(/<button\b[^>]*>[\s\S]*?<\/button>/g)].map(([radio]) => radio)

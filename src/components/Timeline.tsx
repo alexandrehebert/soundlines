@@ -1,9 +1,10 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { useExplorer } from '../ExplorerContext.ts'
 import { lineageHighlight } from '../graph/graph.ts'
 import { ERA_SEGMENTS, MAX_YEAR, TIMELINE_PADDING, timeTicks, yearToX, type TimeScale } from '../graph/layout.ts'
-import { VIEW_LABELS } from '../graph/timeline.ts'
-import { formatYear } from '../theme.ts'
+import { chartColor, formatYear } from '../theme.ts'
+import { graphLabels } from '../i18n/graphLabels.ts'
 import { AXIS_H, offscreenIndicators, positionRowLabels, positionTimeline, revealBarScrollTop, type BarLabel } from './timeline/geometry.ts'
 import { TimelineBar } from './timeline/TimelineBar.tsx'
 import { TimelineLinks } from './timeline/TimelineLinks.tsx'
@@ -14,7 +15,11 @@ import { UndatedEntries } from './UndatedEntries.tsx'
 const MIN_BCE_TICK_SPACING = 64
 
 export function Timeline() {
-  const { model, selectedId, selectNode, viewRange, order } = useExplorer()
+  const { model, locale, selectedId, selectNode, viewRange, order } = useExplorer()
+  const tViews = useTranslations('views')
+  const tTimeline = useTranslations('timeline')
+  const tTypeLabels = useTranslations('stats.typeLabels')
+  const graphText = graphLabels(locale)
   const view = model.view
   const { containerRef, width, verticalViewport, select, handlers } = useTimelineViewport()
   const [labelWidths, setLabelWidths] = useState<Map<string, { name: string; weight: string; width: number }>>(() => new Map())
@@ -110,7 +115,7 @@ export function Timeline() {
 
   const timelineSurface = (
     <div ref={containerRef} className="timeline-surface min-h-0 w-full flex-1 overflow-y-auto"
-      role="region" aria-label={`${VIEW_LABELS[view]} timeline`}
+      role="region" aria-label={tTimeline('region', { view: tViews(view).toLowerCase() })}
       onFocusCapture={(event) => {
         if (!(event.target instanceof Element)) return
         const id = event.target.closest('[data-timeline-bar]')?.getAttribute('data-timeline-bar')
@@ -139,14 +144,14 @@ export function Timeline() {
                 <g key={year} data-year-tick={year}>
                   <line x1={x} y1={AXIS_H - 8} x2={x} y2={AXIS_H} stroke="#1e293b" strokeWidth={1} />
                   <text x={x + 5} y={18} fill="#94a3b8" fontSize={width < 480 ? 10 : 11} fontWeight={600}>
-                    {formatYear(year)}
+                    {formatYear(year, locale)}
                   </text>
                 </g>
               ))}
               {compressedSegments.map((segment) => segment.x2 - segment.x1 > compressionLabelMinWidth && (
                 <text key={segment.from} x={segment.x2 - 6} y={34} textAnchor="end" fill="#64748b"
                   fontSize={9} fontStyle="italic" pointerEvents="none">
-                  time ×{Math.round(1 / segment.weight)} compressed
+                  {tTimeline('compressedTime', { factor: Math.round(1 / segment.weight) })}
                 </text>
               ))}
             </svg>
@@ -165,10 +170,10 @@ export function Timeline() {
             ))}
             {bands.map((band) => (
               <g key={band.family}>
-                <rect x={0} y={band.top} width={width} height={band.height} fill={band.color} opacity={0.04} />
-                <text x={TIMELINE_PADDING + 10} y={band.top + 16} fill={band.color} fontSize={11}
+                <rect x={0} y={band.top} width={width} height={band.height} fill={chartColor(band.color)} opacity={0.04} />
+                <text data-family-label="" x={TIMELINE_PADDING + 10} y={band.top + 16} fill={band.color} fontSize={11}
                   fontWeight={700} letterSpacing="0.12em" opacity={0.8}>
-                  {band.label.toUpperCase()}
+                  {graphText.families[band.family].toUpperCase()}
                 </text>
               </g>
             ))}
@@ -192,7 +197,7 @@ export function Timeline() {
 
   return (
     <div className="flex h-full min-h-0 flex-col">
-      <UndatedEntries label={`${view}s`} nodes={model.undated} selectedId={selectedId}
+      <UndatedEntries label={tTypeLabels(view).toLowerCase()} nodes={model.undated} selectedId={selectedId}
         highlightedIds={highlight?.nodes} onSelect={selectNode} />
       {timelineSurface}
     </div>

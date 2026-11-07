@@ -1,6 +1,9 @@
+'use client'
+
 import { ArrowDownWideNarrow, BarChart3, Bubbles, ChartGantt, Disc3, Guitar, History as HistoryIcon, SlidersHorizontal, Users, X, type LucideIcon } from 'lucide-react'
 import { AnimatePresence, motion, MotionConfig, useMotionValue } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent, type PointerEvent } from 'react'
+import { useTranslations } from 'next-intl'
 import { useExplorer } from './ExplorerContext.ts'
 import { ExplorerProvider } from './ExplorerProvider.tsx'
 import { DatasetStats } from './components/DatasetStats.tsx'
@@ -13,18 +16,18 @@ import { History } from './components/History.tsx'
 import { BrandLink } from './components/BrandLink.tsx'
 import { Home } from './components/Home.tsx'
 import { MOBILE_DETAIL_COLLAPSED_OFFSET, MOBILE_DETAIL_HEIGHT } from './components/mobileDetailSheet.ts'
-import rawGraph from './data/graph.json'
+import { graphForLocale } from './data/graphLocale.ts'
 import type { TimelineOrder } from './graph/layout.ts'
 import type { StatsTab } from './graph/stats.ts'
-import { EXPLORER_VIEWS, isTimelineView, VIEW_LABELS, type ExplorerView, type TimelineView } from './graph/timeline.ts'
-import type { MusicGraph } from './graph/types.ts'
-
-const graph = rawGraph as MusicGraph
-
-const STAT_LABELS = { genre: 'genres', artist: 'artists', instrument: 'instruments' } as const
+import { EXPLORER_VIEWS, isTimelineView, type ExplorerView, type TimelineView } from './graph/timeline.ts'
+import { DEFAULT_LOCALE, localizePath, type Locale } from './i18n/routing.ts'
+import { useColorTheme } from './useColorTheme.ts'
 
 export function Explorer() {
-  const { index, view, changeView, selectedId, selectNode, order, changeOrder, genreDisplay, goHome } = useExplorer()
+  const { index, locale, view, changeView, selectedId, selectNode, order, changeOrder, genreDisplay, goHome } = useExplorer()
+  const t = useTranslations()
+  const tEntityStats = useTranslations('entityStats')
+  const tTimelineFooter = useTranslations('timeline.footer')
   const showingBubbles = view === 'genre' && genreDisplay === 'bubbles'
   const showingHistory = view === 'history'
   const [optionsOpen, setOptionsOpen] = useState(false)
@@ -115,10 +118,10 @@ export function Explorer() {
     <div className="flex h-dvh flex-col">
       <header data-explorer-transition-header className={`${optionsOpen ? 'z-50' : 'z-20'} flex shrink-0 items-center gap-2 border-b border-slate-800 bg-slate-950/90 px-3 py-2 md:flex-wrap md:gap-x-6 md:gap-y-3 md:px-5 md:py-3`}>
         <BrandLink
-          href="/"
+          href={localizePath('/', locale)}
           scrollDistance={explorerScrollDistance}
           iconClassName="h-5 w-5 text-violet-400 md:h-6 md:w-6"
-          aria-label="Soundlines home"
+          aria-label={t('home')}
           onClick={(event) => {
             if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
             event.preventDefault()
@@ -131,7 +134,7 @@ export function Explorer() {
           <div>
             <h1 className="text-lg font-bold leading-tight tracking-tight text-white">Soundlines</h1>
             <p className="hidden text-[11px] font-medium leading-tight text-slate-500 md:block">
-              an atlas of musical lineages
+              {t('tagline')}
             </p>
           </div>
         </BrandLink>
@@ -145,14 +148,14 @@ export function Explorer() {
               ref={optionsTriggerRef}
               type="button"
               onClick={() => setOptionsOpen((open) => !open)}
-              className="hidden min-h-9 shrink-0 items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-xs font-semibold text-slate-300 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:flex"
-              aria-label="Timeline options"
+              className="hidden min-h-9 shrink-0 items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-xs font-semibold text-slate-300 hover:bg-(--control-hover) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:flex"
+              aria-label={t('timelineOptions')}
               aria-haspopup="dialog"
               aria-expanded={optionsOpen}
               aria-controls={optionsId}
             >
               <SlidersHorizontal className="h-4 w-4" />
-              Options
+              {t('options')}
             </button>
           )}
           <AnimatePresence>
@@ -170,7 +173,7 @@ export function Explorer() {
                   id={optionsId}
                   role="dialog"
                   aria-modal={!isDesktop}
-                  aria-label={showingHistory ? 'History options' : 'Timeline options'}
+                  aria-label={t(showingHistory ? 'historyOptions' : 'timelineOptions')}
                   className="relative max-h-[85dvh] w-full overflow-y-auto rounded-t-3xl border-t border-slate-700 bg-slate-950 px-5 pb-[calc(env(safe-area-inset-bottom)+1.5rem)] pt-3 md:max-h-[calc(100dvh-10rem)] md:rounded-2xl md:border md:p-5 md:shadow-2xl md:shadow-black/60"
                   initial={{ y: 12 }}
                   animate={{ y: 0 }}
@@ -188,12 +191,12 @@ export function Explorer() {
                 >
                   <div className="mb-5 flex items-center justify-between">
                     <div>
-                      <div className="text-base font-bold text-white">{showingHistory ? 'History options' : 'Timeline options'}</div>
+                      <div className="text-base font-bold text-white">{t(showingHistory ? 'historyOptions' : 'timelineOptions')}</div>
                       <div className="mt-1 text-xs text-slate-500">
-                        {showingHistory ? 'Explore dataset statistics' : (
+                        {showingHistory ? t('exploreStatistics') : (
                           <>
-                            <span className="md:hidden">Adjust the view and explore the legend</span>
-                            <span className="hidden md:inline">Adjust the view</span>
+                            <span className="md:hidden">{t('adjustViewAndLegend')}</span>
+                            <span className="hidden md:inline">{t('adjustView')}</span>
                           </>
                         )}
                       </div>
@@ -202,7 +205,7 @@ export function Explorer() {
                       type="button"
                       onClick={() => setOptionsOpen(false)}
                       className="flex h-11 w-11 items-center justify-center rounded-full text-slate-400 hover:bg-slate-800 active:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
-                      aria-label="Close options"
+                      aria-label={t('closeOptions')}
                     >
                       <X className="h-5 w-5" />
                     </button>
@@ -227,7 +230,7 @@ export function Explorer() {
                     className="mt-4 flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-sm font-semibold text-slate-300 hover:bg-slate-800 active:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:hidden"
                   >
                     <BarChart3 className="h-4 w-4" />
-                    Dataset statistics
+                    {t('datasetStatistics')}
                   </button>
                 </motion.section>
               </motion.div>
@@ -241,15 +244,15 @@ export function Explorer() {
               type="button"
               onClick={() => setStatsTab(tab)}
               className="rounded-md px-2 py-1 transition-colors hover:bg-slate-800/70 hover:text-slate-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
-              aria-label={`${stats[tab]} ${STAT_LABELS[tab]} – show dataset statistics`}
+              aria-label={`${stats[tab]} ${tEntityStats(tab)} – ${t('showDatasetStatistics')}`}
             >
-              <strong className="text-slate-300">{stats[tab]}</strong> {STAT_LABELS[tab]}
+              <strong className="text-slate-300">{stats[tab]}</strong> {tEntityStats(tab)}
             </button>
           ))}
         </div>
       </header>
       {!showingBubbles && !showingHistory && (
-        <div role="region" aria-label="Timeline legend"
+        <div role="region" aria-label={t('legend.region')}
           className="hidden shrink-0 border-b border-slate-800/60 bg-slate-950/70 px-5 py-1.5 md:block">
           <Legend />
         </div>
@@ -296,14 +299,14 @@ export function Explorer() {
         <button
           type="button"
           onClick={() => setOptionsOpen(true)}
-          className="flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-sm font-semibold text-slate-300 active:bg-slate-800"
-          aria-label={showingHistory ? 'History options' : 'Timeline options and legend'}
+          className="flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-sm font-semibold text-slate-300 active:bg-(--control-hover)"
+          aria-label={t(showingHistory ? 'historyOptions' : 'timelineOptionsAndLegend')}
           aria-haspopup="dialog"
           aria-expanded={optionsOpen}
           aria-controls={optionsId}
         >
           <SlidersHorizontal className="h-4 w-4" />
-          <span className="hidden sm:inline">Options</span>
+          <span className="hidden sm:inline">{t('options')}</span>
         </button>
       </div>
       <AnimatePresence>
@@ -316,16 +319,17 @@ export function Explorer() {
       </AnimatePresence>
       <footer className="hidden border-t border-slate-800/60 bg-slate-950/90 px-5 py-1.5 text-[11px] font-medium text-slate-600 md:block">
         {showingHistory
-          ? 'Scroll sideways or Shift + wheel through history · filter by topic or landmarks · select an event for connections and sources'
+          ? tTimelineFooter('history')
           : showingBubbles
-          ? 'Size and brightness show catalogue influence · drag or scroll to move · pinch or ⌘ scroll to zoom · click a bubble for details'
-          : 'Drag or scroll to move · pinch or ⌘ scroll to zoom · click a bar for details'}
+          ? tTimelineFooter('bubbles')
+          : tTimelineFooter('timeline')}
       </footer>
     </div>
   )
 }
 
 function MobileDetailSheet({ onClose, showGenreSample }: { onClose: () => void; showGenreSample: boolean }) {
+  const t = useTranslations()
   const [expanded, setExpanded] = useState(false)
   const dragStart = useRef<{ pointerId: number; x: number; y: number } | null>(null)
   const suppressClick = useRef(false)
@@ -391,7 +395,7 @@ function MobileDetailSheet({ onClose, showGenreSample }: { onClose: () => void; 
         <button
           type="button"
           className="flex h-11 w-16 touch-none items-center justify-center rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
-          aria-label={expanded ? 'Collapse details' : 'Expand details'}
+          aria-label={t(expanded ? 'collapseDetails' : 'expandDetails')}
           onClick={() => setExpanded((current) => !current)}
         >
           <span className="h-1 w-10 rounded-full bg-slate-600" />
@@ -401,7 +405,7 @@ function MobileDetailSheet({ onClose, showGenreSample }: { onClose: () => void; 
           onPointerDown={(event) => event.stopPropagation()}
           onClick={onClose}
           className="absolute right-1 top-1 flex h-11 w-11 items-center justify-center rounded-full text-slate-400 transition hover:bg-slate-800 hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
-          aria-label="Close panel"
+          aria-label={t('closePanel')}
         >
           <X className="h-4 w-4" />
         </button>
@@ -453,11 +457,11 @@ function useToggleNavigation<T extends string>(
   return { buttonRefs, handleKeyDown }
 }
 
-const VIEW_OPTIONS: Record<ExplorerView, { label: string; Icon: LucideIcon }> = {
-  genre: { label: 'Genres', Icon: Disc3 },
-  artist: { label: 'Artists', Icon: Users },
-  instrument: { label: 'Instruments', Icon: Guitar },
-  history: { label: 'History', Icon: HistoryIcon },
+const VIEW_OPTIONS: Record<ExplorerView, { Icon: LucideIcon }> = {
+  genre: { Icon: Disc3 },
+  artist: { Icon: Users },
+  instrument: { Icon: Guitar },
+  history: { Icon: HistoryIcon },
 }
 
 export function ViewToggle({
@@ -469,6 +473,8 @@ export function ViewToggle({
   changeView: (view: ExplorerView) => void
   className?: string
 }) {
+  const t = useTranslations()
+  const tViews = useTranslations('views')
   const indicatorId = useId()
   const options = EXPLORER_VIEWS
   const { buttonRefs, handleKeyDown } = useToggleNavigation(view, options, changeView)
@@ -477,12 +483,12 @@ export function ViewToggle({
     <div
       className={`${toggleContainerClass} ${className}`}
       role="radiogroup"
-      aria-label="Timeline view"
+      aria-label={t('timelineView')}
       onKeyDown={handleKeyDown}
     >
       {options.map((type) => {
         const selected = view === type
-        const { label, Icon } = VIEW_OPTIONS[type]
+        const { Icon } = VIEW_OPTIONS[type]
         return (
           <button
             key={type}
@@ -501,7 +507,7 @@ export function ViewToggle({
             {selected && <ToggleIndicator layoutId={`view-toggle-indicator-${indicatorId}`} />}
             <span className="relative flex items-center gap-1.5">
               <Icon className="hidden h-3.5 w-3.5 min-[380px]:block" aria-hidden="true" />
-              {label}
+              {tViews(type)}
             </span>
           </button>
         )
@@ -515,9 +521,10 @@ export function GenreDisplaySelect({ className = '', onDisplayChange }: {
   onDisplayChange?: () => void
 }) {
   const { genreDisplay, changeGenreDisplay } = useExplorer()
+  const t = useTranslations()
   const indicatorId = useId()
   return (
-    <div className={`${toggleContainerClass} ${className}`} role="group" aria-label="Genre display">
+    <div className={`${toggleContainerClass} ${className}`} role="group" aria-label={t('genreDisplay')}>
       {(['bars', 'bubbles'] as const).map((display) => {
         const selected = genreDisplay === display
         return (
@@ -537,7 +544,7 @@ export function GenreDisplaySelect({ className = '', onDisplayChange }: {
               {display === 'bars'
                 ? <ChartGantt className="h-3.5 w-3.5" aria-hidden="true" />
                 : <Bubbles className="h-3.5 w-3.5" aria-hidden="true" />}
-              {display === 'bars' ? 'Bars' : 'Bubbles'}
+              {t(display)}
             </span>
           </button>
         )
@@ -557,6 +564,8 @@ export function TimelineOrderSelect({
   changeOrder: (order: TimelineOrder) => void
   className?: string
 }) {
+  const tOrder = useTranslations('order')
+  const t = useTranslations()
   const indicatorId = useId()
   const options = ['family', 'oldest-first'] as const
   const { buttonRefs, handleKeyDown } = useToggleNavigation(order, options, changeOrder)
@@ -565,7 +574,7 @@ export function TimelineOrderSelect({
     <div
       className={`${toggleContainerClass} ${className}`}
       role="radiogroup"
-      aria-label={`${VIEW_LABELS[view]} order`}
+      aria-label={tOrder(view)}
       onKeyDown={handleKeyDown}
     >
       <ArrowDownWideNarrow className="mx-2 h-3.5 w-3.5 shrink-0 text-slate-400" aria-hidden="true" />
@@ -585,7 +594,7 @@ export function TimelineOrderSelect({
             className={`${toggleButtonClass(selected)} min-w-0 flex-1 justify-center whitespace-nowrap`}
           >
             {selected && <ToggleIndicator layoutId={`timeline-order-indicator-${indicatorId}`} />}
-            <span className="relative">{option === 'family' ? 'Family groups' : 'Oldest first'}</span>
+            <span className="relative">{t(option === 'family' ? 'familyGroups' : 'oldestFirst')}</span>
           </button>
         )
       })}
@@ -598,9 +607,17 @@ function SoundlinesPage() {
   return isHome ? <Home /> : <Explorer />
 }
 
-function App() {
+function App({
+  locale = DEFAULT_LOCALE,
+  initialUrl,
+}: {
+  locale?: Locale
+  initialUrl?: string
+}) {
+  useColorTheme()
+  const graph = useMemo(() => graphForLocale(locale), [locale])
   return (
-    <ExplorerProvider graph={graph}>
+    <ExplorerProvider graph={graph} locale={locale} initialUrl={initialUrl}>
       <MotionConfig reducedMotion="user">
         <SoundlinesPage />
       </MotionConfig>

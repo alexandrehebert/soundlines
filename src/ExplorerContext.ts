@@ -33,6 +33,7 @@ import type { GenreDisplay } from './graph/bubbles.ts'
 import { finishPageLoading, transitionPage } from './pageLoading.ts'
 import { socialMetadata } from './socialMetadata.ts'
 import { updateDocumentMetadata } from './socialMetadataClient.ts'
+import { DEFAULT_LOCALE, localizePath, type Locale } from './i18n/routing.ts'
 
 type YearRange = [number, number]
 
@@ -48,9 +49,12 @@ type ExplorerLocation = {
   genreDisplay: GenreDisplay
 }
 
-function explorerUrl({ isHome, view, selectedId, orders, genreDisplay }: ExplorerLocation): URL {
+function explorerUrl(
+  { isHome, view, selectedId, orders, genreDisplay }: ExplorerLocation,
+  locale: Locale,
+): URL {
   const url = new URL(window.location.href)
-  url.pathname = isHome ? '/' : VIEW_PATHS[view]
+  url.pathname = localizePath(isHome ? '/' : VIEW_PATHS[view], locale)
   if (!isHome && url.hash === '#discover') url.hash = ''
   url.searchParams.delete('view')
   if (selectedId) url.searchParams.set('focus', selectedId)
@@ -61,10 +65,10 @@ function explorerUrl({ isHome, view, selectedId, orders, genreDisplay }: Explore
   return url
 }
 
-export function useExplorerState(graph: MusicGraph) {
+export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOCALE, initialUrl?: string) {
   const index = useMemo(() => buildIndex(graph), [graph])
-  const readLocation = useCallback((): ExplorerLocation => {
-    const url = new URL(window.location.href)
+  const readLocation = useCallback((href?: string): ExplorerLocation => {
+    const url = new URL(href ?? window.location.href)
     const params = url.searchParams
     const id = params.get('focus')
     const node = id ? index.nodeById.get(id) : undefined
@@ -74,7 +78,7 @@ export function useExplorerState(graph: MusicGraph) {
     const genreDisplay = params.get('layout') === 'bubbles' ? 'bubbles' : 'bars'
     return { isHome: isHomeUrl(url, Boolean(node)), view, timelineView, selectedId: node?.id ?? null, orders, genreDisplay }
   }, [index])
-  const [location, setLocation] = useState(readLocation)
+  const [location, setLocation] = useState(() => readLocation(initialUrl))
   const pageTransition = useRef<ViewTransition | null>(null)
   const [historyFilters, setHistoryFilters] = useState<HistoryFilters>(DEFAULT_HISTORY_FILTERS)
   const { isHome, view, timelineView, selectedId, orders, genreDisplay } = location
@@ -139,7 +143,7 @@ export function useExplorerState(graph: MusicGraph) {
   const navigate = useCallback((next: ExplorerLocation) => {
     const changesPage = next.isHome !== isHome || next.view !== view
     const update = () => {
-      if (changesPage) window.history.pushState(null, '', explorerUrl(next))
+      if (changesPage) window.history.pushState(null, '', explorerUrl(next, locale))
       setLocation(next)
     }
     const changesContent = changesPage || next.orders[next.timelineView] !== order || next.genreDisplay !== genreDisplay
@@ -152,13 +156,13 @@ export function useExplorerState(graph: MusicGraph) {
     } else {
       update()
     }
-  }, [isHome, view, order, genreDisplay, startPageTransition])
+  }, [isHome, view, order, genreDisplay, locale, startPageTransition])
 
   useEffect(() => {
-    const url = explorerUrl(location)
+    const url = explorerUrl(location, locale)
     if (url.href !== window.location.href) window.history.replaceState(null, '', url)
     updateDocumentMetadata(document, socialMetadata(url, index.nodeById))
-  }, [index, location])
+  }, [index, location, locale])
 
   useEffect(() => {
     const onPopState = () => {
@@ -243,10 +247,10 @@ export function useExplorerState(graph: MusicGraph) {
   }, [view])
 
   return useMemo(() => ({
-    index, model, isHome, view, selectedId, selectNode, changeView, order, changeOrder,
+    index, model, locale, isHome, view, selectedId, selectNode, changeView, order, changeOrder,
     genreDisplay, changeGenreDisplay, goHome, historyFilters, changeHistoryFilters,
     viewRange: ranges[timelineView], setViewRange,
-  }), [index, model, isHome, view, timelineView, selectedId, selectNode, changeView, order, changeOrder, genreDisplay, changeGenreDisplay, goHome, historyFilters, changeHistoryFilters, ranges, setViewRange])
+  }), [index, model, locale, isHome, view, timelineView, selectedId, selectNode, changeView, order, changeOrder, genreDisplay, changeGenreDisplay, goHome, historyFilters, changeHistoryFilters, ranges, setViewRange])
 }
 
 export const ExplorerContext = createContext<ReturnType<typeof useExplorerState> | null>(null)

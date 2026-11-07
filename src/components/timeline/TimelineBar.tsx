@@ -1,4 +1,5 @@
 import { useLayoutEffect, useRef, useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { useExplorer } from '../../ExplorerContext.ts'
 import { revealEraRange, xToYear, yearToX, type TimeScale } from '../../graph/layout.ts'
 import {
@@ -9,8 +10,8 @@ import {
   prominencePhases,
   visibilityStops,
 } from '../../graph/phases.ts'
-import { prominenceLabels } from '../../graph/types.ts'
-import { DEFAULT_BUBBLE_ZOOM, formatPeriod, SELECTION_BORDER, SELECTION_OUTLINE, timelineBarOpacity } from '../../theme.ts'
+import { chartColor, chartTextColor, DEFAULT_BUBBLE_ZOOM, formatPeriod, formatYear, SELECTION_BORDER, SELECTION_OUTLINE, timelineBarOpacity } from '../../theme.ts'
+import type { Locale } from '../../i18n/routing.ts'
 import { InstrumentIcon } from '../InstrumentIcon.tsx'
 import {
   ABOVE_BAR_LABEL_FONT_SIZE, BAR_H, BAR_LABEL_FONT_SIZE, barBounds, barLabel, barShape, fitBarLabel,
@@ -69,9 +70,13 @@ function TimelineInstrumentIcon({ id, x, yCenter, color }: {
   )
 }
 
-function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSelected }: Pick<
+function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSelected, locale }: Pick<
   TimelineBarProps, 'bar' | 'scale' | 'indicator' | 'rowBars' | 'placement'
-> & { isSelected: boolean }) {
+> & { isSelected: boolean; locale: Locale }) {
+  const tTimeline = useTranslations('timeline')
+  const tDetail = useTranslations('detail')
+  const tDates = useTranslations('dates')
+  const tProminenceLabels = useTranslations('detail.prominenceLabels')
   const measureRef = useRef<SVGTextElement>(null)
   const [labelMetrics, setLabelMetrics] = useState<(BarLabelMetrics & { name: string; weight: number }) | null>(null)
   const hasVisibleSpan = bar.visibleSpans.some(([start, end]) =>
@@ -118,6 +123,7 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
   const shape = barShape(bar)
   const bounds = barBounds(bar)
   const phases = prominencePhases(bar.node, bar.end)
+  const color = chartColor(bar.color)
   const phaseStart = phases[0]?.start ?? bar.start
   const phaseEnd = phases.at(-1)?.end ?? bar.end
   const gradientStart = yearToX(scale, phaseStart)
@@ -140,7 +146,7 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
   const hasHiddenPhase = visibility.some((stop) => stop.level < 1)
   const isArtist = bar.node.type === 'artist'
   const icon = instrumentIconPosition(bar, scale.width, rowBars)
-  const labels = prominenceLabels(bar.node.type)
+  const prominenceType = bar.node.type === 'artist' || bar.node.type === 'instrument' ? bar.node.type : 'other'
   const maskPadding = Math.max(4, (SELECTION_OUTLINE.outlineWidth + SELECTION_OUTLINE.outlineOffset) * DEFAULT_BUBBLE_ZOOM)
   const visibleLabel = label ? fitBarLabel(bar.node.name, label.maxWidth, labelFontSize, metrics) : ''
   const indicatorLabel = indicator
@@ -182,7 +188,7 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
             x1={gradientStart} x2={gradientEnd} y1={bar.yCenter} y2={bar.yCenter}>
             {stops.map((stop) => (
               <stop key={stop.offset} offset={stop.offset}
-                stopColor={intensityColor(bar.color, stop.level)}
+                stopColor={intensityColor(color, stop.level)}
                 stopOpacity={intensityOpacity(stop.level)} />
             ))}
           </linearGradient>
@@ -219,11 +225,11 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
         {/* SVG masks don't affect hit-testing; hidden phases have no hit rect. */}
         <g mask={hasHiddenPhase ? `url(#${visibilityId})` : undefined}
           pointerEvents={hasHiddenPhase ? 'none' : undefined}>
-          <path d={shape} fill={`color-mix(in srgb, ${bar.color} 4%, #020617)`} />
+          <path className="timeline-bar-underlay" d={shape} fill={`color-mix(in srgb, ${bar.color} 4%, #020617)`} />
           {phases.length === 0 ? (
             <path
               d={shape}
-              fill={bar.color}
+              fill={color}
               opacity={timelineBarOpacity(bar.node.type, isSelected)}
             />
           ) : (
@@ -238,9 +244,16 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
                     <rect x={x} y={bar.yCenter - BAR_H / 2}
                       width={Math.max(0, endX - x)} height={BAR_H} fill="transparent" />
                     <title>{[
-                      `${labels[phase.prominence]}: c. ${phase.start}–${phase.end}.`,
+                      tTimeline('phasePeriod', {
+                        label: tProminenceLabels(`${prominenceType}.${phase.prominence}`),
+                        start: formatYear(phase.start, locale),
+                        end: formatYear(phase.end, locale),
+                        circa: tDates('circa'),
+                      }),
                       phase.note,
-                      phase.confidence ? `Phase confidence: ${phase.confidence}.` : undefined,
+                      phase.confidence
+                        ? `${tDetail('phaseConfidenceTitle')} ${tDetail(`confidence.${phase.confidence}`)}.`
+                        : undefined,
                       bar.node.phaseNote,
                     ].filter(Boolean).join(' ')}</title>
                   </g>
@@ -259,9 +272,9 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
           {icon.overlapsBar && (
             <rect x={icon.x} y={bar.yCenter - INSTRUMENT_ICON_SIZE / 2}
               width={INSTRUMENT_ICON_SIZE} height={INSTRUMENT_ICON_SIZE} rx={4}
-              fill="#020617" fillOpacity={0.85} pointerEvents="none" />
+              className="timeline-icon-underlay" fill="#020617" fillOpacity={0.85} pointerEvents="none" />
           )}
-          <TimelineInstrumentIcon id={bar.node.id} x={icon.x} yCenter={bar.yCenter} color={bar.color} />
+          <TimelineInstrumentIcon id={bar.node.id} x={icon.x} yCenter={bar.yCenter} color={chartTextColor(bar.color)} />
         </g>
       )}
       {label && visibleLabel && (
@@ -280,8 +293,8 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
         <g data-offscreen-indicator={bar.node.id}>
           <defs>
             <linearGradient id={`ghost-${id}`} x1="0" x2="1" y1="0" y2="0">
-              <stop offset="0" stopColor={bar.color} stopOpacity={indicator.direction === 'left' ? 0.22 : 0.03} />
-              <stop offset="1" stopColor={bar.color} stopOpacity={indicator.direction === 'right' ? 0.22 : 0.03} />
+              <stop offset="0" stopColor={color} stopOpacity={indicator.direction === 'left' ? 0.22 : 0.03} />
+              <stop offset="1" stopColor={color} stopOpacity={indicator.direction === 'right' ? 0.22 : 0.03} />
             </linearGradient>
             <clipPath id={`ghost-label-${id}`}>
               <rect x={indicator.x + (indicator.direction === 'left' ? 27 : 10) + indicatorIconWidth}
@@ -289,7 +302,7 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
             </clipPath>
           </defs>
           <rect x={indicator.x} y={bar.yCenter - BAR_H / 2} width={indicator.width} height={BAR_H}
-            rx={BAR_H / 2} fill={`url(#ghost-${id})`} stroke={isSelected ? 'none' : bar.color}
+            rx={BAR_H / 2} fill={`url(#ghost-${id})`} stroke={isSelected ? 'none' : color}
             strokeOpacity={0.4} strokeDasharray="3 4" />
           <rect className="visualization-hover-border" x={indicator.x} y={bar.yCenter - BAR_H / 2}
             width={indicator.width} height={BAR_H} rx={BAR_H / 2} pointerEvents="none" aria-hidden="true" />
@@ -297,10 +310,10 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
           <path d={indicator.direction === 'left'
             ? `M ${indicator.x + 17} ${bar.yCenter - 4} l -4 4 l 4 4`
             : `M ${indicator.x + indicator.width - 17} ${bar.yCenter - 4} l 4 4 l -4 4`}
-            stroke={bar.color} strokeWidth={1.5} fill="none" pointerEvents="none" />
+            stroke={color} strokeWidth={1.5} fill="none" pointerEvents="none" />
           {bar.node.type === 'instrument' && (
             <TimelineInstrumentIcon id={bar.node.id}
-              x={indicator.x + (indicator.direction === 'left' ? 27 : 10)} yCenter={bar.yCenter} color={bar.color} />
+              x={indicator.x + (indicator.direction === 'left' ? 27 : 10)} yCenter={bar.yCenter} color={chartTextColor(bar.color)} />
           )}
           <text data-indicator-label=""
             x={indicator.x + (indicator.direction === 'left' ? 27 : 10) + indicatorIconWidth} y={bar.yCenter + 4}
@@ -317,15 +330,19 @@ function TimelineBarContents({ bar, scale, indicator, rowBars, placement, isSele
 export function TimelineBar({
   bar, scale, dimmed, indicator, rowBars, placement, renderDetails = true, onSelect,
 }: TimelineBarProps) {
-  const { selectedId, selectNode, viewRange, setViewRange } = useExplorer()
+  const { locale, selectedId, selectNode, viewRange, setViewRange } = useExplorer()
+  const t = useTranslations('timeline')
+  const tDirections = useTranslations('timeline.directions')
   if (!bar.visibleSpans.length) return null
   const isSelected = bar.node.id === selectedId
   const revealYear = indicator ? xToYear(scale, indicator.targetX) : undefined
-  const offscreenLabel = indicator ? `${bar.node.name} · off-screen to the ${indicator.direction}; activate to reveal` : null
+  const offscreenLabel = indicator
+    ? t('offscreen', { name: bar.node.name, direction: tDirections(indicator.direction) })
+    : null
   const estimatedLabel = bar.node.period?.estimated
-    ? ` · ${formatPeriod(bar.node.period)}; dates are subject to estimation` : ''
+    ? t('estimatedPeriod', { period: formatPeriod(bar.node.period, locale) ?? '' }) : ''
   const prominenceLabel = !offscreenLabel && bar.node.type === 'artist' && !prominencePhases(bar.node, bar.end).length
-    ? ' · prominence not annotated' : ''
+    ? t('prominenceUnannotated') : ''
   const estimateNote = bar.node.period?.estimated ? bar.node.period.estimateNote : undefined
   return (
     <g
@@ -354,6 +371,7 @@ export function TimelineBar({
     >
       {renderDetails ? (
         <TimelineBarContents bar={bar} scale={scale} indicator={indicator} rowBars={rowBars}
+          locale={locale}
           placement={placement} isSelected={isSelected} />
       ) : (
         // Native keyboard scrolling needs the offscreen target's actual row bounds.

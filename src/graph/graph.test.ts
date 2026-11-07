@@ -139,6 +139,18 @@ describe('searchNodes', () => {
     expect(results.map((result) => result.node.name)).toContain('Acid house')
   })
 
+  it('searches translated names and their canonical-language aliases', () => {
+    const localizedGraph: MusicGraph = {
+      ...graph,
+      nodes: graph.nodes.map((node) => node.id === 'genre:house'
+        ? { ...node, name: 'Musique house' }
+        : node),
+    }
+    const canonicalNames = new Map([['genre:house', 'House']])
+    expect(searchNodes(localizedGraph, 'musique house', 8, canonicalNames)[0].node.id).toBe('genre:house')
+    expect(searchNodes(localizedGraph, 'house', 8, canonicalNames)[0].node.id).toBe('genre:house')
+  })
+
   it('matches Latin accents in composed, decomposed, and unaccented queries', () => {
     const accented: MusicGraph = {
       ...graph,

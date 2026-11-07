@@ -1,28 +1,32 @@
-import { ArrowDown, ArrowLeftRight, ArrowRight, ArrowUpRight, Bubbles, ChartGantt, Disc3, Guitar, Headphones, Heart, History, Landmark, Radio, Users, type LucideIcon } from 'lucide-react'
+import { ArrowDown, ArrowLeftRight, ArrowRight, ArrowUpRight, Bubbles, ChartGantt, Disc3, Guitar, Headphones, Heart, History, Landmark, Moon, Radio, Sun, Users, type LucideIcon } from 'lucide-react'
 import { motion, useReducedMotion, useScroll, useSpring, useTransform } from 'motion/react'
 import { useId, useMemo, useRef, useState, type MouseEvent, type ReactNode } from 'react'
+import { useTranslations } from 'next-intl'
 import { useExplorer } from '../ExplorerContext.ts'
 import { formatEventPeriod } from '../graph/history.ts'
 import { VIEW_PATHS, viewForNode, type ExplorerView } from '../graph/timeline.ts'
-import { EDGE_TYPE_LABELS, NODE_TYPE_LABELS, type GraphNode } from '../graph/types.ts'
+import type { GraphNode } from '../graph/types.ts'
 import { BrandLink } from './BrandLink.tsx'
 import { GenreSample } from './GenreSample.tsx'
 import { SearchBar } from './SearchBar.tsx'
 import './Home.css'
+import { localizePath } from '../i18n/routing.ts'
+import { graphLabels } from '../i18n/graphLabels.ts'
+import { useColorTheme, type ColorTheme } from '../useColorTheme.ts'
 
 const DESTINATIONS = [
-  { view: 'genre', title: 'Genres', detail: 'Trace styles and influences', icon: Bubbles },
-  { view: 'artist', title: 'Artists', detail: 'Meet the people behind the sound', icon: Users },
-  { view: 'instrument', title: 'Instruments', detail: 'Explore how sounds are made', icon: Guitar },
-  { view: 'history', title: 'History', detail: 'Find turning points in music', icon: History },
+  { view: 'genre', icon: Bubbles },
+  { view: 'artist', icon: Users },
+  { view: 'instrument', icon: Guitar },
+  { view: 'history', icon: History },
 ] as const
 
 const FEATURED_CONNECTIONS = [
-  ['genre:funk', 'influences', 'genre:detroit-techno'],
-  ['genre:alt-country', 'subgenre_of', 'genre:country'],
-  ['genre:bossa-nova', 'cross_pollination', 'genre:jazz', 'Brazilian bossa nova and jazz shaped each other as musicians brought the styles together.'],
-  ['genre:chicago-house', 'derived_from', 'genre:disco', 'Chicago DJs built on disco records and edits, adding influences from soul and experimenting with drum machines.'],
-  ['genre:acid-jazz', 'fusion_of', 'genre:funk', 'Acid jazz blends funk grooves with jazz and dance music.'],
+  ['genre:funk', 'influences', 'genre:detroit-techno', 'funk-detroit'],
+  ['genre:alt-country', 'subgenre_of', 'genre:country', 'altcountry-country'],
+  ['genre:bossa-nova', 'cross_pollination', 'genre:jazz', 'bossa-jazz'],
+  ['genre:chicago-house', 'derived_from', 'genre:disco', 'house-disco'],
+  ['genre:acid-jazz', 'fusion_of', 'genre:funk', 'acid-funk'],
 ] as const
 
 const LISTENING_PICKS = ['genre:bossa-nova', 'genre:acid-jazz', 'genre:detroit-techno'] as const
@@ -38,15 +42,26 @@ const reveal = {
   transition: { duration: 0.55, ease: 'easeOut' },
 } as const
 
-function SpinningVinyl() {
+function SpinningVinyl({ theme }: { theme: ColorTheme }) {
+  const reduceMotion = useReducedMotion()
   const { scrollY } = useScroll()
   const angle = useTransform(scrollY, [0, 480], [-16, 344])
   const rotate = useSpring(angle, { stiffness: 110, damping: 24 })
 
-  return <motion.div className="discovery-vinyl" style={{ rotate }}><div className="discovery-label"><Disc3 size={28} /></div></motion.div>
+  return (
+    <div className="discovery-record-perspective" data-side={theme === 'light' ? 'B' : 'A'}>
+      <div className="discovery-record-flip">
+        {(['A', 'B'] as const).map((side) => (
+          <div key={side} className={`discovery-record-face discovery-record-face-${side.toLowerCase()}`}>
+            <motion.div className="discovery-vinyl" style={{ rotate: reduceMotion ? -16 : rotate }}>
+              <div className="discovery-label"><Disc3 size={28} /></div>
+            </motion.div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
 }
-const dateFormatter = new Intl.DateTimeFormat('en', { dateStyle: 'medium', timeZone: 'UTC' })
-
 function follow(event: MouseEvent<HTMLAnchorElement>, navigate?: () => void) {
   if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
   event.preventDefault()
@@ -54,15 +69,15 @@ function follow(event: MouseEvent<HTMLAnchorElement>, navigate?: () => void) {
 }
 
 function ViewLink({ view, className, children }: { view: ExplorerView; className: string; children: ReactNode }) {
-  const { changeView } = useExplorer()
-  return <a className={className} href={VIEW_PATHS[view]} onClick={(event) => follow(event, () => changeView(view))}>{children}</a>
+  const { changeView, locale } = useExplorer()
+  return <a className={className} href={localizePath(VIEW_PATHS[view], locale)} onClick={(event) => follow(event, () => changeView(view))}>{children}</a>
 }
 
 function EntryLink({ node, className, children }: { node: GraphNode; className: string; children: ReactNode }) {
-  const { selectNode } = useExplorer()
+  const { selectNode, locale } = useExplorer()
   const params = new URLSearchParams({ focus: node.id })
   const path = VIEW_PATHS[viewForNode(node.type, 'genre')]
-  return <a className={className} href={`${path}?${params}`} onClick={(event) => follow(event, () => selectNode(node.id))}>{children}</a>
+  return <a className={className} href={`${localizePath(path, locale)}?${params}`} onClick={(event) => follow(event, () => selectNode(node.id))}>{children}</a>
 }
 
 function SpotlightWidget({ title, icon: Icon, picks, relationship, nextLabel, scrollReveal }: {
@@ -74,6 +89,7 @@ function SpotlightWidget({ title, icon: Icon, picks, relationship, nextLabel, sc
   scrollReveal: typeof reveal | undefined
 }) {
   const { index } = useExplorer()
+  const tHome = useTranslations('homeCopy')
   const headingId = useId()
   const [position, setPosition] = useState(0)
   const entries = picks.map((id) => index.nodeById.get(id)).filter((node) => node !== undefined)
@@ -99,7 +115,7 @@ function SpotlightWidget({ title, icon: Icon, picks, relationship, nextLabel, sc
         </EntryLink>
         {node.description && <p className="discovery-note">{node.description}</p>}
         {genres.length > 0 && (
-          <ul className="discovery-spotlight-genres" aria-label="Connected genres">
+          <ul className="discovery-spotlight-genres" aria-label={tHome('connectedGenres')}>
             {genres.map((genre) => (
               <li key={genre.id}>
                 <EntryLink node={genre} className="discovery-genre-chip">{genre.name}</EntryLink>
@@ -118,7 +134,15 @@ function SpotlightWidget({ title, icon: Icon, picks, relationship, nextLabel, sc
 }
 
 export function Home() {
-  const { index } = useExplorer()
+  const { theme, toggleTheme } = useColorTheme()
+  const { index, locale } = useExplorer()
+  const t = useTranslations()
+  const tHome = useTranslations('homeCopy')
+  const tViews = useTranslations('views')
+  const tDestinations = useTranslations('homeCopy.destinations')
+  const tConnectionNotes = useTranslations('connectionNotes')
+  const labels = graphLabels(locale)
+  const dateFormatter = useMemo(() => new Intl.DateTimeFormat(locale, { dateStyle: 'medium', timeZone: 'UTC' }), [locale])
   const reduceMotion = useReducedMotion()
   const widgetsRef = useRef<HTMLElement>(null)
   const scrollReveal = reduceMotion ? undefined : reveal
@@ -127,16 +151,16 @@ export function Home() {
   const { connections, listeningPicks, historyPicks, recent } = useMemo(() => ({
     listeningPicks: LISTENING_PICKS.map((id) => index.nodeById.get(id)).filter((node) => node?.type === 'genre'),
     historyPicks: HISTORY_PICKS.map((id) => index.nodeById.get(id)).filter((node): node is GraphNode => node?.type === 'event'),
-    connections: FEATURED_CONNECTIONS.flatMap(([fromId, type, toId, summary]) => {
+    connections: FEATURED_CONNECTIONS.flatMap(([fromId, type, toId, summaryId]) => {
       const from = index.nodeById.get(fromId)
       const to = index.nodeById.get(toId)
       const edge = index.outEdges.get(fromId)?.find((edge) => edge.to === toId && edge.type === type)
-      return from && to && edge ? [{ from, to, edge, note: summary ?? edge.note }] : []
+      return from && to && edge ? [{ from, to, edge, note: tConnectionNotes(summaryId) }] : []
     }),
     recent: index.graph.nodes
       .flatMap((node) => node.addedOn ? [{ node, date: node.addedOn }] : [])
       .sort((a, b) => b.date.localeCompare(a.date) || a.node.name.localeCompare(b.node.name)),
-  }), [index])
+  }), [index, tConnectionNotes])
   const connection = connections[connectionIndex]
   const listeningPick = listeningPicks[listeningIndex]
   const RelationArrow = connection?.edge.type === 'cross_pollination' ? ArrowLeftRight : ArrowRight
@@ -145,53 +169,62 @@ export function Home() {
     <div className="discovery">
       <header className="discovery-header">
         <div className="discovery-width discovery-header-inner">
-          <BrandLink className="discovery-brand" href="/" aria-current="page" onClick={(event) => follow(event)}>Soundlines</BrandLink>
+          <BrandLink className="discovery-brand" href={localizePath('/', locale)} aria-current="page" onClick={(event) => follow(event)}>Soundlines</BrandLink>
           <div className="discovery-search"><SearchBar /></div>
+          <button
+            type="button"
+            className="discovery-theme-toggle"
+            onClick={toggleTheme}
+            aria-pressed={theme === 'light'}
+            aria-label={tHome('lightTheme')}
+            title={tHome(theme === 'dark' ? 'switchToLight' : 'switchToDark')}
+          >
+            {theme === 'dark' ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}
+            <span>{tHome(theme === 'dark' ? 'sideA' : 'sideB')}</span>
+          </button>
         </div>
       </header>
 
       <main className="discovery-width discovery-main">
         <section className="discovery-hero" aria-labelledby="discovery-heading">
           <div className="discovery-hero-copy">
-            <p className="discovery-kicker"><span /> an atlas of musical lineages</p>
-            <h1 id="discovery-heading">Follow the<br /> <em>sound.</em></h1>
-            <p className="discovery-intro">Trace the genres, artists and instruments that shaped the music we hear today.</p>
+            <p className="discovery-kicker"><span /> {t('tagline')}</p>
+            <h1 id="discovery-heading">{tHome('headline.first')}<br /> <em>{tHome('headline.second')}</em></h1>
+            <p className="discovery-intro">{tHome('intro')}</p>
             <div className="discovery-actions">
-              <ViewLink view="genre" className="discovery-primary"><ChartGantt size={17} aria-hidden="true" /> Open the timeline <ArrowRight size={17} aria-hidden="true" /></ViewLink>
+              <ViewLink view="genre" className="discovery-primary"><ChartGantt size={17} aria-hidden="true" /> {tHome('openTimeline')} <ArrowRight size={17} aria-hidden="true" /></ViewLink>
               <button
                 type="button"
                 className="discovery-secondary"
                 onClick={() => widgetsRef.current?.scrollIntoView({ behavior: reduceMotion ? 'instant' : 'smooth' })}
               >
-                Discover <ArrowDown size={15} aria-hidden="true" />
+                {tHome('discover')} <ArrowDown size={15} aria-hidden="true" />
               </button>
             </div>
           </div>
           <div className="discovery-record" aria-hidden="true">
-            {reduceMotion
-              ? <div className="discovery-vinyl"><div className="discovery-label"><Disc3 size={28} /></div></div>
-              : <SpinningVinyl />}
-            <span className="discovery-record-caption">SOUNDLINES / SIDE A</span>
+            <SpinningVinyl theme={theme} />
+            <span className="discovery-record-caption">SOUNDLINES / {tHome(theme === 'dark' ? 'sideA' : 'sideB')}</span>
           </div>
         </section>
 
-        <motion.nav {...scrollReveal} className="discovery-nav" aria-label="Explore the catalogue">
-          {DESTINATIONS.map(({ view, title, detail, icon: Icon }) => (
+        <motion.nav {...scrollReveal} className="discovery-nav" aria-label={tHome('exploreCatalogue')}>
+          {DESTINATIONS.map(({ view, icon: Icon }) => (
             <ViewLink key={view} view={view} className="discovery-destination">
               <Icon size={21} className="discovery-destination-icon" aria-hidden="true" />
-              <span><strong>{title}</strong><small>{detail}</small></span>
+              <span><strong>{tViews(view)}</strong><small>{tDestinations(view)}</small></span>
               <ArrowUpRight size={16} className="discovery-link-arrow" aria-hidden="true" />
             </ViewLink>
           ))}
         </motion.nav>
 
         <section ref={widgetsRef} id="discover" className="discovery-widgets" aria-labelledby="discovery-widgets-heading">
-          <motion.h2 {...scrollReveal} id="discovery-widgets-heading">Discover the catalogue</motion.h2>
+          <motion.h2 {...scrollReveal} id="discovery-widgets-heading">{tHome('exploreCatalogue')}</motion.h2>
           <div className="discovery-grid">
             <div className="discovery-column">
               <motion.section {...scrollReveal} className="discovery-widget" aria-labelledby="connection-heading">
                 <div className="discovery-widget-heading">
-                  <h3 id="connection-heading"><Radio size={19} aria-hidden="true" /> Genre connections</h3>
+                  <h3 id="connection-heading"><Radio size={19} aria-hidden="true" /> {tHome('genreConnections')}</h3>
                   {connection && <span className="discovery-counter">{connectionIndex + 1} / {connections.length}</span>}
                 </div>
                 {connection ? (
@@ -205,7 +238,7 @@ export function Home() {
                       >
                         <div className="discovery-lineage">
                           <EntryLink node={connection.from} className="discovery-node">{connection.from.name}<ArrowUpRight size={15} aria-hidden="true" /></EntryLink>
-                          <span className="discovery-relation"><RelationArrow size={19} aria-hidden="true" />{EDGE_TYPE_LABELS[connection.edge.type]}</span>
+                          <span className="discovery-relation"><RelationArrow size={19} aria-hidden="true" />{labels.edges[connection.edge.type]}</span>
                           <EntryLink node={connection.to} className="discovery-node">{connection.to.name}<ArrowUpRight size={15} aria-hidden="true" /></EntryLink>
                         </div>
                         {connection.note && <p className="discovery-note">{connection.note}</p>}
@@ -213,19 +246,19 @@ export function Home() {
                     </div>
                     {connections.length > 1 && (
                       <button type="button" className="discovery-widget-action" onClick={() => setConnectionIndex((current) => (current + 1) % connections.length)}>
-                        Next connection <ArrowRight size={16} aria-hidden="true" />
+                        {tHome('nextConnection')} <ArrowRight size={16} aria-hidden="true" />
                       </button>
                     )}
                   </>
-                ) : <p className="discovery-note">Featured connections will appear here when available.</p>}
+                ) : <p className="discovery-note">{tHome('noFeaturedConnections')}</p>}
               </motion.section>
 
               {listeningPick && (
                 <motion.section {...scrollReveal} className="discovery-widget" aria-labelledby="listening-heading">
                   <div className="discovery-widget-heading">
-                    <h3 id="listening-heading"><Headphones size={19} aria-hidden="true" /> Listening booth</h3>
+                    <h3 id="listening-heading"><Headphones size={19} aria-hidden="true" /> {tHome('listeningBooth')}</h3>
                   </div>
-                  <p className="discovery-note">Hear a 10-second generated example of each genre’s sound.</p>
+                  <p className="discovery-note">{tHome('listeningDescription')}</p>
                   <div className="discovery-listening">
                     <GenreSample key={listeningPick.id} id={listeningPick.id} name={listeningPick.name} />
                     <div aria-live="polite">
@@ -236,72 +269,72 @@ export function Home() {
                   </div>
                   {listeningPicks.length > 1 && (
                     <button type="button" className="discovery-widget-action" onClick={() => setListeningIndex((current) => (current + 1) % listeningPicks.length)}>
-                      Next sound <ArrowRight size={16} aria-hidden="true" />
+                      {tHome('nextSound')} <ArrowRight size={16} aria-hidden="true" />
                     </button>
                   )}
                 </motion.section>
               )}
 
               <SpotlightWidget
-                title="Artist spotlight"
+                title={tHome('artistSpotlight')}
                 icon={Users}
                 picks={ARTIST_PICKS}
                 relationship="key_artist_of"
-                nextLabel="Next artist"
+                nextLabel={tHome('nextArtist')}
                 scrollReveal={scrollReveal}
               />
             </div>
             <div className="discovery-column">
               <motion.section {...scrollReveal} className="discovery-widget" aria-labelledby="recent-heading">
                 <div className="discovery-widget-heading">
-                  <h3 id="recent-heading"><History size={19} aria-hidden="true" /> Recently added</h3>
+                  <h3 id="recent-heading"><History size={19} aria-hidden="true" /> {tHome('recentlyAdded')}</h3>
                 </div>
                 {recent.length > 0 ? (
                   <ul className="discovery-recent">
                     {recent.slice(0, PAGE_SIZE).map(({ node, date }) => (
                       <li key={node.id}>
                         <EntryLink node={node} className="discovery-entry">
-                          <span><strong>{node.name}</strong><small>{NODE_TYPE_LABELS[node.type]}</small></span>
+                          <span><strong>{node.name}</strong><small>{labels.nodeTypes[node.type]}</small></span>
                           <time dateTime={date}>{dateFormatter.format(new Date(date))}</time>
                           <ArrowUpRight size={15} className="discovery-link-arrow" aria-hidden="true" />
                         </EntryLink>
                       </li>
                     ))}
                   </ul>
-                ) : <p className="discovery-note">New catalogue entries will appear here as they’re added.</p>}
+                ) : <p className="discovery-note">{tHome('newEntries')}</p>}
                 {recent.length > PAGE_SIZE && (
-                  <p className="discovery-note">And many more</p>
+                  <p className="discovery-note">{tHome('andMore')}</p>
                 )}
               </motion.section>
 
               {historyPicks.length > 0 && (
                 <motion.section {...scrollReveal} className="discovery-widget" aria-labelledby="landmarks-heading">
                   <div className="discovery-widget-heading">
-                    <h3 id="landmarks-heading"><Landmark size={19} aria-hidden="true" /> Turning points</h3>
+                    <h3 id="landmarks-heading"><Landmark size={19} aria-hidden="true" /> {tHome('turningPoints')}</h3>
                   </div>
                   <ul className="discovery-recent">
                     {historyPicks.map((event) => (
                       <li key={event.id}>
                         <EntryLink node={event} className="discovery-entry">
                           <strong>{event.name}</strong>
-                          {event.period && <span className="discovery-entry-date">{formatEventPeriod(event.period)}</span>}
+                          {event.period && <span className="discovery-entry-date">{formatEventPeriod(event.period, locale)}</span>}
                           <ArrowUpRight size={15} className="discovery-link-arrow" aria-hidden="true" />
                         </EntryLink>
                       </li>
                     ))}
                   </ul>
                   <ViewLink view="history" className="discovery-widget-action">
-                    Explore music history <ArrowRight size={16} aria-hidden="true" />
+                    {tHome('exploreMusicHistory')} <ArrowRight size={16} aria-hidden="true" />
                   </ViewLink>
                 </motion.section>
               )}
 
               <SpotlightWidget
-                title="Instrument spotlight"
+                title={tHome('instrumentSpotlight')}
                 icon={Guitar}
                 picks={INSTRUMENT_PICKS}
                 relationship="featured_in"
-                nextLabel="Next instrument"
+                nextLabel={tHome('nextInstrument')}
                 scrollReveal={scrollReveal}
               />
             </div>
@@ -311,10 +344,10 @@ export function Home() {
 
       <footer className="discovery-width discovery-footer">
         <p>
-          Made with <Heart className="discovery-footer-heart" size={16} aria-hidden="true" />
-          <span className="sr-only">love</span>{' '}by Alexandre <strong>“Axoune”</strong> Hebert
+          {tHome('madeWith')} <Heart className="discovery-footer-heart" size={16} aria-hidden="true" />
+          <span className="sr-only">{tHome('madeWithLove')}</span>{' '}{tHome('by')} Alexandre <strong>“Axoune”</strong> Hebert
         </p>
-        <p className="discovery-copyright">© 2026 Soundlines. All rights reserved.</p>
+        <p className="discovery-copyright">© 2026 Soundlines. {t('copyright')}</p>
       </footer>
     </div>
   )

@@ -1,6 +1,18 @@
 import type { EdgeType, LaneFamily, NodeType, Period } from './graph/types.ts'
+import { catalogueFor } from './i18n/catalogue.ts'
+import { DEFAULT_LOCALE, type Locale } from './i18n/routing.ts'
 
 export const DEFAULT_BUBBLE_ZOOM = 0.75
+
+// Shared source hues use one light-mode alias across charts, legends, and badges.
+export function chartColor(color: string): string {
+  return `var(--chart-${color.slice(1)}, ${color})`
+}
+
+export function chartTextColor(color: string): string {
+  const hue = chartColor(color)
+  return `color-mix(in srgb, ${hue} 35%, var(--chart-label-ink, ${hue}))`
+}
 
 export function bubbleSelectionStyle(distances: ReadonlyMap<string, number> | null, id: string) {
   const distance = distances?.get(id)
@@ -12,7 +24,7 @@ export function bubbleSelectionStyle(distances: ReadonlyMap<string, number> | nu
 
 export const SELECTION_BORDER = {
   borderStyle: 'solid',
-  borderColor: '#f8fafc',
+  borderColor: 'var(--chart-selection-border, #f8fafc)',
   borderWidth: 1.5,
 } as const
 
@@ -84,18 +96,20 @@ export const NODE_TYPE_COLORS: Record<NodeType, string> = {
   event: '#f87171',
 }
 
-export function formatYear(year: number): string {
-  if (year < 0) return `${Math.abs(year)} BCE`
-  if (year === 0) return '1 BCE'
+export function formatYear(year: number, locale: Locale = DEFAULT_LOCALE): string {
+  const era = catalogueFor(locale).dates.beforeCommonEra
+  if (year < 0) return `${Math.abs(year)} ${era}`
+  if (year === 0) return `1 ${era}`
   return String(year)
 }
 
-export function formatPeriod(period: Period | null | undefined): string | null {
+export function formatPeriod(period: Period | null | undefined, locale: Locale = DEFAULT_LOCALE): string | null {
   if (!period) return null
-  const prefix = period.precision === 'circa' ? 'c. ' : ''
-  const suffix = period.estimated ? ' (estimated)' : ''
+  const dates = catalogueFor(locale).dates
+  const prefix = period.precision === 'circa' ? `${dates.circa} ` : ''
+  const suffix = period.estimated ? dates.estimated : ''
   const { start, end } = period
-  if (end === start) return `${prefix}${formatYear(start)}${suffix}`
-  if (end == null) return `${prefix}${formatYear(start)} – now${suffix}`
-  return `${prefix}${formatYear(start)} – ${formatYear(end)}${suffix}`
+  if (end === start) return `${prefix}${formatYear(start, locale)}${suffix}`
+  if (end == null) return `${prefix}${formatYear(start, locale)} – ${dates.now}${suffix}`
+  return `${prefix}${formatYear(start, locale)} – ${formatYear(end, locale)}${suffix}`
 }

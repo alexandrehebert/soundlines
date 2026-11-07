@@ -1,9 +1,10 @@
-import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it, vi } from 'vitest'
 import { ExplorerContext } from '../ExplorerContext.ts'
 import { buildIndex } from '../graph/graph.ts'
 import { createTimelineModel } from '../graph/timeline.ts'
 import type { MusicGraph } from '../graph/types.ts'
+import type { Locale } from '../i18n/routing.ts'
+import { renderWithIntl } from '../i18n/test-utils.tsx'
 import { DetailPanel } from './DetailPanel.tsx'
 
 const graph: MusicGraph = {
@@ -22,12 +23,13 @@ const graph: MusicGraph = {
   ],
 }
 
-function renderPanel(data: MusicGraph, selectedId: string, showCloseButton = true) {
+function renderPanel(data: MusicGraph, selectedId: string, showCloseButton = true, locale: Locale = 'en-US') {
   const index = buildIndex(data)
-  return renderToStaticMarkup(
+  return renderWithIntl(
     <ExplorerContext.Provider value={{
       index,
       model: createTimelineModel(index, 'genre'),
+      locale,
       view: 'genre',
       selectedId,
       selectNode: vi.fn(),
@@ -42,10 +44,19 @@ function renderPanel(data: MusicGraph, selectedId: string, showCloseButton = tru
     }}>
       <DetailPanel showCloseButton={showCloseButton} />
     </ExplorerContext.Provider>,
+    locale,
   )
 }
 
 describe('detail panel sources', () => {
+  it('localizes source links without a page title', () => {
+    const data: MusicGraph = {
+      ...graph,
+      nodes: graph.nodes.map((node) => ({ ...node, sources: ['https://example.com/'] })),
+    }
+    expect(renderPanel(data, 'genre:jazz', true, 'fr')).toContain('Site web')
+    expect(renderPanel(data, 'genre:jazz')).toContain('Website')
+  })
   it('keeps the normal close action in the top-right and allows a sheet to provide its own', () => {
     const normal = renderPanel(graph, 'genre:jazz')
     const closeButton = normal.match(/<button\b[^>]*aria-label="Close panel"[^>]*>/)?.[0]
@@ -54,6 +65,16 @@ describe('detail panel sources', () => {
     const withoutCloseButton = renderPanel(graph, 'genre:jazz', false)
     expect(withoutCloseButton).not.toContain('aria-label="Close panel"')
     expect(withoutCloseButton).toContain('Jazz')
+  })
+
+  it('localizes panel controls and graph labels in French', () => {
+    const markup = renderPanel(graph, 'genre:jazz', true, 'fr')
+    expect(markup).toContain('aria-label="Fermer le panneau"')
+    expect(markup).toContain('title="Écouter Jazz"')
+    expect(markup).toContain('aria-label="À propos de cet extrait audio"')
+    expect(markup).toContain('1900 – aujourd’hui')
+    expect(markup).toContain('artistes clés')
+    expect(markup).not.toContain('Close panel')
   })
 
   it('labels estimated periods and explains their evidence without implying a prominence curve', () => {

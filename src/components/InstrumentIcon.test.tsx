@@ -10,7 +10,7 @@ describe('instrument icons', () => {
       <InstrumentIcon id="instrument:steel guitar" className="icon" style={{ color: '#123456' }} />,
     )
     expect(markup).toContain('data-instrument-icon="instrument:steel guitar" aria-hidden="true"')
-    expect(markup).toContain(`${import.meta.env.BASE_URL}instrument-icons/steel%20guitar.svg`)
+    expect(markup).toContain('/instrument-icons/steel%20guitar.svg')
     expect(markup).toContain('color:#123456')
     expect(markup).toContain('mask:')
     expect(markup).toContain('-webkit-mask:')

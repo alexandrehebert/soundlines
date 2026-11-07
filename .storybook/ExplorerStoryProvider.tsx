@@ -12,6 +12,7 @@ import {
   type ExplorerView, type TimelineOrders, type TimelineView,
 } from '../src/graph/timeline.ts'
 import type { GraphNode, MusicGraph } from '../src/graph/types.ts'
+import { DEFAULT_LOCALE } from '../src/i18n/routing.ts'
 
 type YearRange = [number, number]
 
@@ -139,6 +140,7 @@ export function ExplorerStoryProvider({
   const value = useMemo<NonNullable<ContextType<typeof ExplorerContext>>>(() => ({
     index,
     model,
+    locale: DEFAULT_LOCALE,
     isHome: false,
     ...location,
     order: location.orders[location.timelineView],

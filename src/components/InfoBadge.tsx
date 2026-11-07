@@ -41,7 +41,7 @@ export function InfoBadge({ label, children, align = 'start' }: {
             setOpen(!open)
           }
         }}
-        className="grid size-6 cursor-pointer place-items-center rounded-full bg-[radial-gradient(circle,theme(colors.slate.950)_28%,transparent_72%)] text-slate-300 hover:text-sky-300 focus-visible:outline-2 focus-visible:outline-sky-400"
+        className="grid size-6 cursor-pointer place-items-center rounded-full bg-[radial-gradient(circle,var(--color-slate-950)_28%,transparent_72%)] text-slate-300 hover:text-sky-300 focus-visible:outline-2 focus-visible:outline-sky-400"
       >
         <Info size={14} aria-hidden="true" />
       </button>

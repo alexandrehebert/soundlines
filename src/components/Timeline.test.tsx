@@ -1,4 +1,3 @@
-import { renderToStaticMarkup } from 'react-dom/server'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { ExplorerContext } from '../ExplorerContext.ts'
 import { buildIndex } from '../graph/graph.ts'
@@ -7,6 +6,7 @@ import { createTimelineModel, type TimelineView } from '../graph/timeline.ts'
 import type { MusicGraph } from '../graph/types.ts'
 import { Timeline } from './Timeline.tsx'
 import { AXIS_H } from './timeline/geometry.ts'
+import { renderWithIntl } from '../i18n/test-utils.tsx'
 
 const viewport = vi.hoisted(() => ({
   width: 800,
@@ -45,9 +45,9 @@ function renderTimeline(
   data: MusicGraph = graph,
 ) {
   const index = buildIndex(data)
-  return renderToStaticMarkup(
+  return renderWithIntl(
     <ExplorerContext.Provider value={{
-      index, model: createTimelineModel(index, view), view,
+      index, model: createTimelineModel(index, view), locale: 'en-US', view,
       selectedId, selectNode: vi.fn(), changeView: vi.fn(),
       order, changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(), isHome: false,
       historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),

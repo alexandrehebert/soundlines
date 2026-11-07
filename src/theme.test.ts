@@ -8,6 +8,13 @@ describe('historical date formatting', () => {
     expect(formatYear(1)).toBe('1')
   })
 
+  it('formats French historical dates and estimates', () => {
+    expect(formatYear(-3000, 'fr')).toBe('3000 AEC')
+    expect(formatYear(0, 'fr')).toBe('1 AEC')
+    expect(formatPeriod({ start: -3000, precision: 'circa' }, 'fr')).toBe('vers 3000 AEC – aujourd’hui')
+    expect(formatPeriod({ start: 1900, estimated: true }, 'fr')).toBe('1900 – aujourd’hui (estimée)')
+  })
+
   it('formats periods that begin or end in BCE', () => {
     expect(formatPeriod({ start: -3000, precision: 'circa' })).toBe('c. 3000 BCE – now')
     expect(formatPeriod({ start: -3000, end: -2500 })).toBe('3000 BCE – 2500 BCE')

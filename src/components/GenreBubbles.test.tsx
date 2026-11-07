@@ -1,9 +1,9 @@
-import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it, vi } from 'vitest'
 import { ExplorerContext } from '../ExplorerContext.ts'
 import { buildIndex } from '../graph/graph.ts'
 import { createTimelineModel } from '../graph/timeline.ts'
 import type { MusicGraph } from '../graph/types.ts'
+import { renderWithIntl } from '../i18n/test-utils.tsx'
 import { GenreBubbles } from './GenreBubbles.tsx'
 
 const graph: MusicGraph = {
@@ -20,9 +20,9 @@ const graph: MusicGraph = {
 
 function renderBubbles(selectedId: string | null) {
   const index = buildIndex(graph)
-  return renderToStaticMarkup(
+  return renderWithIntl(
     <ExplorerContext.Provider value={{
-      index, model: createTimelineModel(index, 'genre'), view: 'genre',
+      index, model: createTimelineModel(index, 'genre'), locale: 'en-US', view: 'genre',
       selectedId, selectNode: vi.fn(), changeView: vi.fn(),
       order: 'family', changeOrder: vi.fn(),
       genreDisplay: 'bubbles', changeGenreDisplay: vi.fn(), goHome: vi.fn(), isHome: false,
@@ -75,7 +75,7 @@ describe('bubble lineage rendering', () => {
     expect(bubbleMarkup(renderBubbles('genre:A'), 'C')).toContain('saturate(0.5625)')
     expect(bubbleMarkup(markup, 'D')).toContain('opacity:0.2')
     expect(bubbleMarkup(markup, 'B')).toContain('aria-pressed="true"')
-    expect(bubbleMarkup(markup, 'B')).toContain('border-color:#f8fafc')
+    expect(bubbleMarkup(markup, 'B')).toContain('border-color:var(--chart-selection-border, #f8fafc)')
     expect(bubbleMarkup(markup, 'B')).toContain('border-width:1.5px')
     expect(bubbleMarkup(markup, 'B')).toContain('outline-style:auto')
     expect(bubbleMarkup(markup, 'B')).toContain('outline-width:5px')

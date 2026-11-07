@@ -1,6 +1,7 @@
 import { memo, useId, useLayoutEffect, useMemo, useRef, useState, type PointerEvent, type RefObject } from 'react'
+import { useTranslations } from 'next-intl'
 import type { layoutGenreBubbles } from '../graph/bubbles.ts'
-import { bubbleSelectionStyle, FAMILY_COLORS, SELECTION_BORDER } from '../theme.ts'
+import { bubbleSelectionStyle, chartColor, FAMILY_COLORS, SELECTION_BORDER } from '../theme.ts'
 import type { BubblePoint } from './bubbleViewport.ts'
 
 type Layout = ReturnType<typeof layoutGenreBubbles>
@@ -17,7 +18,7 @@ const Overview = memo(function Overview({ bubbles, links, distances }: {
         <line key={id} x1={x1} y1={y1} x2={x2} y2={y2} stroke={color} strokeOpacity={0.22} strokeWidth={0.6} vectorEffect="non-scaling-stroke" />
       ))}
       {bubbles.map(({ node, x, y, diameter, family }) => (
-        <circle key={node.id} cx={x} cy={y} r={diameter / 2} fill={FAMILY_COLORS[family]} fillOpacity={0.65}
+        <circle key={node.id} cx={x} cy={y} r={diameter / 2} fill={chartColor(FAMILY_COLORS[family])} fillOpacity={0.65}
           style={bubbleSelectionStyle(distances, node.id)} />
       ))}
     </>
@@ -32,6 +33,7 @@ export function BubbleMinimap({ layout, links, selectedId, distances, zoom, surf
   zoom: number
   surfaceRef: RefObject<HTMLDivElement | null>
 }) {
+  const t = useTranslations('visualization')
   const [expanded, setExpanded] = useState(true)
   const [visible, setVisible] = useState<(BubblePoint & { width: number; height: number }) | null>(null)
   const drag = useRef<{ id: number; offset: BubblePoint; moved: boolean } | null>(null)
@@ -88,14 +90,14 @@ export function BubbleMinimap({ layout, links, selectedId, distances, zoom, surf
         }}
         className="flex min-h-11 w-full items-center justify-between gap-2 bg-slate-950/90 px-3 text-xs font-medium backdrop-blur-md hover:bg-slate-800 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-cyan-400"
       >
-        Minimap <span aria-hidden="true">{expanded ? '−' : '+'}</span>
+        {t('minimap')} <span aria-hidden="true">{expanded ? '−' : '+'}</span>
       </button>
       <div id={id} hidden={!expanded} className="border-t border-slate-800 bg-slate-950/95">
         {expanded && (
           <svg
             role="group"
-            aria-label="Graph minimap"
-            aria-description="Click or drag to move the graph, or use the arrow keys."
+            aria-label={t('minimapLabel')}
+            aria-description={t('minimapInstructions')}
             tabIndex={0}
             viewBox={`0 0 ${width} ${height}`}
             preserveAspectRatio="none"
@@ -141,12 +143,12 @@ export function BubbleMinimap({ layout, links, selectedId, distances, zoom, surf
           >
             <Overview bubbles={bubbles} links={links} distances={distances} />
             {visible && (
-              <rect {...visible} fill="#67e8f9" fillOpacity={0.1} stroke="#67e8f9"
+              <rect {...visible} fill={chartColor('#67e8f9')} fillOpacity={0.1} stroke={chartColor('#67e8f9')}
                 strokeWidth={1.5} vectorEffect="non-scaling-stroke" />
             )}
             {selected && (
               <circle cx={selected.x} cy={selected.y} r={selected.diameter / 2}
-                fill={FAMILY_COLORS[selected.family]} stroke={SELECTION_BORDER.borderColor}
+                fill={chartColor(FAMILY_COLORS[selected.family])} stroke={SELECTION_BORDER.borderColor}
                 strokeWidth={2} vectorEffect="non-scaling-stroke" pointerEvents="none" />
             )}
           </svg>

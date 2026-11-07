@@ -1,10 +1,15 @@
-import { EDGE_TYPE_LABELS, prominenceLabels, type EdgeType, type Prominence } from '../graph/types.ts'
+import type { EdgeType, Prominence } from '../graph/types.ts'
+import { useTranslations } from 'next-intl'
 import { intensityOpacity, PHASE_STYLE } from '../graph/phases.ts'
+import { graphLabels } from '../i18n/graphLabels.ts'
+import { chartColor } from '../theme.ts'
 
 export function Legend() {
-  const { model } = useExplorer()
+  const { model, locale } = useExplorer()
   const view = model.view
-  const labels = prominenceLabels(view)
+  const t = useTranslations('legend')
+  const tProminence = useTranslations('legend.prominence')
+  const edges = graphLabels(locale).edges
   const hasEstimatedPeriods = model.lanes.some((lane) =>
     lane.bars.some((bar) => bar.node.period?.estimated),
   )
@@ -16,11 +21,11 @@ export function Legend() {
             <path
               d="M 1 7 C 7 7, 11 1, 17 1"
               fill="none"
-              stroke={model.edgeColors[type]}
+              stroke={model.edgeColors[type] ? chartColor(model.edgeColors[type]) : undefined}
               strokeWidth={1.8}
             />
           </svg>
-          {EDGE_TYPE_LABELS[type]}
+          {edges[type]}
         </span>
       ))}
       <span className="h-3 border-l border-slate-700" aria-hidden="true" />
@@ -35,10 +40,10 @@ export function Legend() {
                 fill="none" stroke="#475569" strokeDasharray="2 2" />
             )}
           </svg>
-          {labels[phase]}
+          {tProminence(phase)}
         </span>
       ))}
-      <span className="text-[10px] text-slate-500">Editorial phases, not popularity scores</span>
+      <span className="text-[10px] text-slate-500">{t('editorialPhases')}</span>
       {hasEstimatedPeriods && (
         <span className="flex items-center gap-1.5 text-[10px] text-slate-500">
           <span
@@ -46,12 +51,12 @@ export function Legend() {
             className="h-2 w-8 shrink-0 rounded-full"
             style={{ background: 'linear-gradient(to right, transparent, #94a3b8 25%, #94a3b8 75%, transparent)' }}
           />
-          Soft edges indicate estimated dates
+          {t('estimatedDates')}
         </span>
       )}
-      {view === 'artist' && <span className="text-[10px] text-slate-500">Unresearched artists stay neutral</span>}
+      {view === 'artist' && <span className="text-[10px] text-slate-500">{t('unresearchedArtists')}</span>}
       {view === 'instrument' && (
-        <span className="text-[10px] text-slate-500">Bars start at first documented appearance · unannotated instruments stay neutral</span>
+        <span className="text-[10px] text-slate-500">{t('instrumentBars')}</span>
       )}
     </div>
   )

@@ -2,7 +2,7 @@
 
 A chronological map of music genres, artists, instruments, labels, scenes, historical events, and the lineages that connect them — the clean rebuild of the `music-tree` project.
 
-Vite, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vitest, linted with oxlint, and deployable to Vercel.
+Next.js App Router, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vitest, linted with oxlint, and deployable to Vercel.
 
 The header and browser favicon share the same violet vinyl-disc icon.
 On first load, the landing page's grooved vinyl spins in the center before React
@@ -314,14 +314,40 @@ The UI never touches the JSON directly: all queries (neighbors, lineage traversa
 
 ### Shared explorer architecture
 
+- The landing-page theme button flips the vinyl from Side A (dark) to Side B
+  (light). The app-wide palette is stored in `localStorage` as `soundlines-theme`;
+  dark remains the default. The preference is applied before hydration and
+  synchronized across tabs. Reduced-motion users see an instant side change.
+  Light mode uses parchment surfaces, warm brown text, terracotta UI accents, and a muted categorical
+  chart palette. Keep source hues in [theme.ts](./src/theme.ts) stable for dark
+  mode; rendering code uses `chartColor` to resolve shared light-mode aliases
+  from [colorTheme.css](./src/colorTheme.css). Bars blend over the theme's canvas,
+  with dark labels in light mode; prominence, date fades, and category meanings
+  remain unchanged. Colored text and instrument icons use `chartTextColor` for
+  contrast without changing dark-mode hues.
+
 - [ExplorerContext](./src/ExplorerContext.ts) owns the graph index, active mode, selection, per-mode ranges, and URL synchronization; the provider wires the UI without graph/selection prop drilling.
-- [Social metadata](./src/socialMetadata.ts) derives previews from those same routes,
-  URL parameters, and graph nodes. The Vercel [page function](./api/page.ts) injects
-  them into the built HTML before it reaches social crawlers; Vite's dev and
-  preview servers do the same locally. Vercel routes the explorer pages to
-  this function; the `vercel-build` script generates the HTML before the
-  function bundles it. Other static hosts need equivalent server-side handling
-  for entity-specific previews.
+- Locale-prefixed App Router URLs use `/en-US` and `/fr`. The root proxy negotiates
+  the initial locale from `Accept-Language`; explicit locale URLs remain stable.
+- App translations live in [English](./src/i18n/locales/en-US.json) and
+  [French](./src/i18n/locales/fr.json) JSON catalogues: UI copy, accessibility
+  labels, date wording, graph taxonomy labels, and page/social metadata.
+  The UI uses `next-intl`: client components call `useTranslations`, server
+  components use `getTranslations`, and ICU messages handle interpolation and
+  plurals. TypeScript checks message keys against the English catalogue; keep
+  catalogue keys and ICU parameters aligned across languages. Graph content
+  translations remain separate.
+- [French graph text](./src/data/graph.fr.json) is keyed by stable entity IDs
+  and overlays only translated fields on the canonical graph. The overlay is
+  currently partial: 96 of 1,265 names have distinct French translations and
+  193 of 1,224 descriptions are translated, including all 82 events. It also
+  includes three phase summaries, three individual phase notes, and one
+  period-estimate note; relationship notes remain untranslated. Artist, label,
+  and recording names generally retain their original form. Do not describe
+  French graph coverage as complete.
+- [Social metadata](./src/socialMetadata.ts) derives previews from the same
+  routes, URL parameters, and graph nodes. App Router metadata is rendered on
+  the server, including canonical and alternate-language URLs.
 - [Timeline model](./src/graph/timeline.ts) projects the graph for each mode, infers artist families, and restricts layout and traversal to same-view relationships.
 - [Timeline](./src/components/Timeline.tsx) composes shared [geometry](./src/components/timeline/geometry.ts), [bar rendering](./src/components/timeline/TimelineBar.tsx), [relationship rendering](./src/components/timeline/TimelineLinks.tsx), and [viewport interaction](./src/components/timeline/useTimelineViewport.ts).
 - [Prominence helpers](./src/graph/phases.ts) provide the same intensity, fade, and revival logic for both node types.
@@ -335,6 +361,7 @@ npm run dev
 npm test
 npm run lint
 npm run build
+npm run start
 npm run storybook
 npm run build-storybook
 ```
@@ -346,15 +373,16 @@ Run `npm run storybook` and open the local URL printed by the command (port
 `npm run storybook -- --port 6007` instead. `npm run build-storybook` creates a
 static, shareable build in `storybook-static/`.
 
-To run Storybook with Docker Compose:
+To run the app and Storybook with Docker Compose:
 
 ```bash
 docker compose up -d           # app and Storybook
 docker compose up -d storybook # Storybook only
 ```
 
-Compose serves Storybook at `http://localhost:6008` on the local machine. Set
-`STORYBOOK_PORT` to change the host port, for example
+Compose serves the app at `http://localhost:5173` and Storybook at
+`http://localhost:6008` on the local machine. Set `STORYBOOK_PORT` to change
+the Storybook host port, for example
 `STORYBOOK_PORT=6010 docker compose up -d storybook`. The app and Storybook use
 separate dependency volumes so their installs do not interrupt one another. The
 container image does not include Git, so Storybook's optional Git-based change

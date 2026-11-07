@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import rawGraph from '../data/graph.json'
 import { buildIndex, lineage } from './graph.ts'
-import { artistFamily, createTimelineModel, defaultViewRange, isTimelineView, viewForNode, viewFromParam, VIEW_PARAMS } from './timeline.ts'
+import { artistFamily, createTimelineModel, defaultViewRange, isTimelineView, viewForNode, viewFromParam, viewFromPath, VIEW_PARAMS } from './timeline.ts'
 import type { MusicGraph } from './types.ts'
 
 const graph: MusicGraph = {
@@ -35,6 +35,12 @@ const graph: MusicGraph = {
 
 describe('timeline projections', () => {
   const index = buildIndex(graph)
+
+  it('resolves explorer views from locale-prefixed paths', () => {
+    expect(viewFromPath('/fr/artists')).toBe('artist')
+    expect(viewFromPath('/en-US/instruments/')).toBe('instrument')
+    expect(viewFromPath('/fr')).toBeUndefined()
+  })
 
   it('keeps genre bars and links separate from artists', () => {
     const model = createTimelineModel(index, 'genre', 2026)

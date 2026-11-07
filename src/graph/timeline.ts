@@ -6,11 +6,13 @@ import {
   isGenreFamily,
   isInstrumentFamily,
   LINEAGE_ORIENTATION,
+  NODE_TYPE_LABELS,
   type GenreFamily,
   type GraphNode,
   type LaneFamily,
   type RelationOrientation,
 } from './types.ts'
+import { localeFromPath } from '../i18n/routing.ts'
 
 export type TimelineView = 'genre' | 'artist' | 'instrument'
 export type ExplorerView = TimelineView | 'history'
@@ -19,11 +21,7 @@ export type TimelineOrders = Record<TimelineView, TimelineOrder>
 export const TIMELINE_VIEWS: readonly TimelineView[] = ['genre', 'artist', 'instrument']
 export const EXPLORER_VIEWS: readonly ExplorerView[] = [...TIMELINE_VIEWS, 'history']
 
-export const VIEW_LABELS: Record<TimelineView, string> = {
-  genre: 'Genre',
-  artist: 'Artist',
-  instrument: 'Instrument',
-}
+export const VIEW_LABELS: Record<TimelineView, string> = NODE_TYPE_LABELS
 
 const ORDER_PARAMS: Record<TimelineView, string> = {
   genre: 'sort',
@@ -85,7 +83,9 @@ export const VIEW_PATHS: Record<ExplorerView, string> = {
 }
 
 export function viewFromPath(path: string): ExplorerView | undefined {
-  const normalized = path.replace(/\/$/, '')
+  const normalizedPath = path.replace(/\/$/, '')
+  const locale = localeFromPath(normalizedPath)
+  const normalized = locale ? normalizedPath.slice(locale.length + 1) || '/' : normalizedPath
   return EXPLORER_VIEWS.find((view) => VIEW_PATHS[view] === normalized)
 }
 
@@ -95,7 +95,9 @@ export function viewFromUrl(url: URL): ExplorerView {
 
 /** The root is discovery unless the URL requests a legacy explorer state. */
 export function isHomeUrl(url: URL, hasFocus: boolean): boolean {
-  if (url.pathname !== '/' && url.pathname !== '/index.html') return false
+  const locale = localeFromPath(url.pathname)
+  const pathname = locale ? url.pathname.slice(locale.length + 1) || '/' : url.pathname
+  if (pathname !== '/' && pathname !== '/index.html') return false
   const params = url.searchParams
   return !hasFocus && !params.has('view') && params.get('layout') !== 'bubbles'
     && !Object.values(readTimelineOrders(params)).includes('oldest-first')

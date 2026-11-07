@@ -1,16 +1,20 @@
 import { useEffect, useId, useMemo, useRef } from 'react'
+import { useTranslations } from 'next-intl'
 import { useExplorer } from '../ExplorerContext.ts'
 import { layoutGenreBubbles } from '../graph/bubbles.ts'
 import { lineageHighlight, lineageSource, lineageTarget } from '../graph/graph.ts'
-import { FAMILY_LABELS, FAMILY_ORDER } from '../graph/types.ts'
-import { bubbleSelectionStyle, FAMILY_COLORS, SELECTION_BORDER, SELECTION_OUTLINE } from '../theme.ts'
+import { FAMILY_ORDER } from '../graph/types.ts'
+import { bubbleSelectionStyle, chartColor, FAMILY_COLORS, SELECTION_BORDER, SELECTION_OUTLINE } from '../theme.ts'
+import { graphLabels } from '../i18n/graphLabels.ts'
 import { bubbleScrollOffset } from './bubbleViewport.ts'
 import { BubbleMinimap } from './BubbleMinimap.tsx'
 import { BubbleZoomControls } from './BubbleZoomControls.tsx'
 import { useBubbleViewport } from './useBubbleViewport.ts'
 
 export function GenreBubbles() {
-  const { model, selectedId, selectNode } = useExplorer()
+  const { model, locale, selectedId, selectNode } = useExplorer()
+  const t = useTranslations('visualization')
+  const labels = graphLabels(locale)
   const layout = useMemo(() => layoutGenreBubbles(model.index), [model])
   const links = useMemo(() => {
     const bubbleById = new Map(layout.bubbles.map((bubble) => [bubble.node.id, bubble]))
@@ -30,7 +34,7 @@ export function GenreBubbles() {
         y1: source.y + dy / distance * source.diameter / 2,
         x2: target.x - dx / distance * target.diameter / 2,
         y2: target.y - dy / distance * target.diameter / 2,
-        color: model.edgeColors[edge.type] ?? '#64748b',
+        color: chartColor(model.edgeColors[edge.type] ?? '#64748b'),
       }]
     })
   }, [layout, model])
@@ -73,13 +77,13 @@ export function GenreBubbles() {
   }, [selectedId, surfaceRef])
 
   return (
-    <section className="flex h-full flex-col" aria-label="Genre bubbles">
+    <section className="flex h-full flex-col" aria-label={t('genreBubbles')}>
       <div className="hidden shrink-0 flex-wrap gap-x-4 gap-y-1 border-b border-slate-800/60 bg-slate-950/70 px-5 py-1.5 lg:flex"
-        aria-label="Genre families">
+        aria-label={t('genreFamilies')}>
         {FAMILY_ORDER.map((family) => (
           <span key={family} className="flex items-center gap-1.5 text-[11px] text-slate-400">
-            <span className="h-2 w-2 rounded-full" style={{ backgroundColor: FAMILY_COLORS[family] }} />
-            {FAMILY_LABELS[family]}
+            <span className="h-2 w-2 rounded-full" style={{ backgroundColor: chartColor(FAMILY_COLORS[family]) }} />
+            {labels.families[family]}
           </span>
         ))}
       </div>
@@ -87,9 +91,9 @@ export function GenreBubbles() {
         <div
           ref={surfaceRef}
           role="region"
-          aria-label="Influence map"
+          aria-label={t('influenceMap')}
           tabIndex={0}
-          aria-description="Drag or scroll to move. Pinch or Cmd/Ctrl+scroll to zoom."
+          aria-description={t('influenceMapInstructions')}
           className="h-full touch-none cursor-grab select-none overflow-auto overscroll-contain scroll-p-3 scroll-pt-20 active:cursor-grabbing"
           {...handlers}
           onClick={(event) => {
@@ -125,9 +129,9 @@ export function GenreBubbles() {
                   </svg>
                 )}
                 {layout.bubbles.map(({ node, family, intensity, diameter, x, y }) => {
-                  const color = FAMILY_COLORS[family]
+                  const color = chartColor(FAMILY_COLORS[family])
                   const selected = selectedId === node.id
-                  const description = `${node.name} · ${FAMILY_LABELS[family]}`
+                  const description = `${node.name} · ${labels.families[family]}`
                   return (
                     <button
                       key={node.id}
@@ -147,8 +151,8 @@ export function GenreBubbles() {
                           ? { ...SELECTION_BORDER, ...SELECTION_OUTLINE }
                           : { borderColor: color, borderWidth: 1 }),
                         ...bubbleSelectionStyle(highlight?.distances ?? null, node.id),
-                        background: `radial-gradient(circle at 35% 25%, color-mix(in srgb, ${color} ${selected ? 55 + intensity * 40 : 30 + intensity * 65}%, #0f172a), color-mix(in srgb, ${color} ${selected ? 30 + intensity * 20 : 12 + intensity * 38}%, #020617))`,
-                        boxShadow: `inset 0 1px 0 ${color}50`,
+                        background: `radial-gradient(circle at 35% 25%, color-mix(in srgb, ${color} ${selected ? 55 + intensity * 40 : 30 + intensity * 65}%, var(--chart-bubble-base, #0f172a)), color-mix(in srgb, ${color} ${selected ? 30 + intensity * 20 : 12 + intensity * 38}%, var(--chart-underlay, #020617)))`,
+                        boxShadow: `inset 0 1px 0 color-mix(in srgb, ${color} 31%, transparent)`,
                         fontSize: `${11 + intensity * 5}px`,
                       }}
                     >

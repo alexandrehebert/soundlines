@@ -196,19 +196,35 @@ function normalizeSearchText(value: string): string {
 }
 
 /** Search ignores case, Latin accents, and apostrophe style: exact > prefix > substring > subsequence. */
-export function searchNodes(graph: MusicGraph, query: string, limit = 8): SearchResult[] {
+export function searchNodes(
+  graph: MusicGraph,
+  query: string,
+  limit = 8,
+  alternateNames?: ReadonlyMap<string, string>,
+): SearchResult[] {
   const q = normalizeSearchText(query.trim())
   if (q.length === 0) return []
   const results: SearchResult[] = []
   for (const node of graph.nodes) {
-    const name = normalizeSearchText(node.name)
+    const names = [node.name, alternateNames?.get(node.id)]
+      .filter((name): name is string => name !== undefined)
+      .map(normalizeSearchText)
     let score: number | null = null
-    if (name === q) score = 100
-    else if (name.startsWith(q)) score = 80
-    else if (name.includes(q)) score = 60
-    else if (isSubsequence(q, name)) score = 30
+    let matchedNameLength = Infinity
+    for (const name of names) {
+      const candidateScore = name === q ? 100
+        : name.startsWith(q) ? 80
+        : name.includes(q) ? 60
+        : isSubsequence(q, name) ? 30
+        : null
+      if (candidateScore !== null && (score === null || candidateScore > score
+        || candidateScore === score && name.length < matchedNameLength)) {
+        score = candidateScore
+        matchedNameLength = name.length
+      }
+    }
     if (score !== null) {
-      results.push({ node, score: score - name.length * 0.1 })
+      results.push({ node, score: score - matchedNameLength * 0.1 })
     }
   }
   results.sort((a, b) => b.score - a.score)

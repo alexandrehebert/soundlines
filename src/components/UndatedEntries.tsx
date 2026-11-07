@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react'
 import type { GraphNode } from '../graph/types.ts'
 import { TIMELINE_BAR_HEIGHT } from '../graph/phases.ts'
-import { FAMILY_COLORS, NODE_TYPE_COLORS, SELECTION_BORDER, SELECTION_OUTLINE, timelineBarOpacity } from '../theme.ts'
+import { chartColor, chartTextColor, FAMILY_COLORS, NODE_TYPE_COLORS, SELECTION_BORDER, SELECTION_OUTLINE, timelineBarOpacity } from '../theme.ts'
+import { useTranslations } from 'next-intl'
 import { BAR_LABEL_FONT_SIZE, INSTRUMENT_ICON_GAP, INSTRUMENT_ICON_SIZE } from './timeline/geometry.ts'
 import { InstrumentIcon } from './InstrumentIcon.tsx'
 
@@ -15,6 +16,7 @@ interface UndatedEntriesProps {
 
 export function UndatedEntries({ label, nodes, selectedId, highlightedIds, onSelect }: UndatedEntriesProps) {
   const listRef = useRef<HTMLDivElement>(null)
+  const t = useTranslations('timeline')
 
   useEffect(() => {
     const list = listRef.current
@@ -36,14 +38,14 @@ export function UndatedEntries({ label, nodes, selectedId, highlightedIds, onSel
   if (!nodes.length) return null
 
   return (
-    <section aria-label={`Undated ${label}`} className="flex shrink-0 items-center gap-3 border-b border-slate-800/60 bg-slate-950/70 px-3 md:px-5">
+    <section aria-label={t('undated', { label })} className="flex shrink-0 items-center gap-3 border-b border-slate-800/60 bg-slate-950/70 px-3 md:px-5">
       <span className="shrink-0 text-xs font-semibold text-slate-400">
-        Undated <span className="text-slate-500">{nodes.length}</span>
+        {t('undatedPrefix')} <span className="text-slate-500">{nodes.length}</span>
       </span>
       <div ref={listRef} className="flex min-w-0 flex-1 items-center gap-3 overflow-x-auto overscroll-x-contain px-2.5 py-1">
         {nodes.map((node) => {
           const selected = node.id === selectedId
-          const color = node.family ? FAMILY_COLORS[node.family] : NODE_TYPE_COLORS[node.type]
+          const color = chartColor(node.family ? FAMILY_COLORS[node.family] : NODE_TYPE_COLORS[node.type])
           const instrument = node.type === 'instrument'
           return (
             <button
@@ -51,7 +53,7 @@ export function UndatedEntries({ label, nodes, selectedId, highlightedIds, onSel
               type="button"
               data-undated-node={node.id}
               aria-pressed={selected}
-              title={`${node.name}: no period specified`}
+              title={t('undatedTitle', { name: node.name })}
               onClick={() => onSelect(node.id)}
               className={`visualization-item relative flex min-h-9 shrink-0 items-center font-bold focus-visible:outline-none ${instrument ? 'pl-0 pr-3' : 'px-3'}`}
               style={{ opacity: highlightedIds && !highlightedIds.has(node.id) ? 0.2 : 1 }}
@@ -61,7 +63,7 @@ export function UndatedEntries({ label, nodes, selectedId, highlightedIds, onSel
                 style={{
                   left: instrument ? INSTRUMENT_ICON_SIZE + INSTRUMENT_ICON_GAP : 0,
                   height: TIMELINE_BAR_HEIGHT,
-                  backgroundColor: `color-mix(in srgb, ${color} 4%, #020617)`,
+                  backgroundColor: `color-mix(in srgb, ${color} 4%, var(--chart-underlay, #020617))`,
                 }}
                 aria-hidden="true"
               >
@@ -75,9 +77,9 @@ export function UndatedEntries({ label, nodes, selectedId, highlightedIds, onSel
               </span>
               {instrument && (
                 <InstrumentIcon id={node.id} className="relative shrink-0 bg-current"
-                  style={{ color, width: INSTRUMENT_ICON_SIZE, height: INSTRUMENT_ICON_SIZE }} />
+                  style={{ color: chartTextColor(node.family ? FAMILY_COLORS[node.family] : NODE_TYPE_COLORS[node.type]), width: INSTRUMENT_ICON_SIZE, height: INSTRUMENT_ICON_SIZE }} />
               )}
-              <span className="relative" style={{
+              <span data-undated-label="" className="relative" style={{
                 marginLeft: instrument ? INSTRUMENT_ICON_GAP + 10 : undefined,
                 fontSize: BAR_LABEL_FONT_SIZE,
                 color: node.type === 'artist' ? '#f8fafc' : '#020617',

@@ -1,4 +1,8 @@
 import { EVENT_CATEGORY_LABELS, type EventCategory, type GraphNode, type MusicGraph, type Period } from './types.ts'
+import { catalogueFor } from '../i18n/catalogue.ts'
+import { DEFAULT_LOCALE, type Locale } from '../i18n/routing.ts'
+
+const eraLabels = catalogueFor(DEFAULT_LOCALE).history.eras
 
 export interface HistoryEntry extends GraphNode {
   type: 'event'
@@ -20,12 +24,12 @@ export const DEFAULT_HISTORY_FILTERS: HistoryFilters = {
 }
 
 export const HISTORY_ERAS = [
-  { id: 'before-1400', label: 'Before 1400', before: 1400 },
-  { id: '1400-1599', label: '1400–1599', before: 1600 },
-  { id: '1600-1899', label: '1600–1899', before: 1900 },
-  { id: '1900-1949', label: '1900–1949', before: 1950 },
-  { id: '1950-1999', label: '1950–1999', before: 2000 },
-  { id: '2000-onward', label: '2000 onward', before: Infinity },
+  { id: 'before-1400', label: eraLabels['before-1400'], before: 1400 },
+  { id: '1400-1599', label: eraLabels['1400-1599'], before: 1600 },
+  { id: '1600-1899', label: eraLabels['1600-1899'], before: 1900 },
+  { id: '1900-1949', label: eraLabels['1900-1949'], before: 1950 },
+  { id: '1950-1999', label: eraLabels['1950-1999'], before: 2000 },
+  { id: '2000-onward', label: eraLabels['2000-onward'], before: Infinity },
 ] as const
 
 export function createHistoryModel(graph: MusicGraph) {
@@ -84,9 +88,13 @@ export function groupHistoryEvents(events: readonly HistoryEvent[], filters: His
   return groups.filter((group) => group.events.length > 0)
 }
 
-export function formatEventPeriod(period: Period): string {
-  const prefix = period.precision === 'circa' ? 'c. ' : ''
-  const end = period.end == null ? ' – now' : period.end === period.start ? '' : ` – ${period.end}`
-  const approximate = period.precision === 'decade' ? ' (approx.)' : ''
-  return `${prefix}${period.start}${end}${approximate}${period.estimated ? ' (estimated)' : ''}`
+export function formatEventPeriod(period: Period, locale: Locale = DEFAULT_LOCALE): string {
+  const dates = catalogueFor(locale).dates
+  const prefix = period.precision === 'circa' ? `${dates.circa} ` : ''
+  const end = period.end == null
+    ? ` – ${dates.now}`
+    : period.end === period.start ? '' : ` – ${period.end}`
+  const approximate = period.precision === 'decade' ? dates.approximate : ''
+  const estimated = period.estimated ? dates.estimated : ''
+  return `${prefix}${period.start}${end}${approximate}${estimated}`
 }

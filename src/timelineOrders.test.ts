@@ -39,11 +39,11 @@ describe('timeline order URLs', () => {
     const node: GraphNode = {
       id: 'artist:example', type: 'artist', name: 'Example', family: 'jazz', period: { start: 1950 },
     }
-    const input = new URL('https://soundlines.example/?focus=artist%3Aexample&sort=oldest-first&artist-sort=oldest-first&instrument-sort=oldest-first&ignored=value')
+    const input = new URL('https://soundlines.example/en-US?focus=artist%3Aexample&sort=oldest-first&artist-sort=oldest-first&instrument-sort=oldest-first&ignored=value')
     const metadata = socialMetadata(input, new Map([[node.id, node]]))
     const canonical = new URL(metadata.url)
 
-    expect(canonical.pathname).toBe('/artists')
+    expect(canonical.pathname).toBe('/en-US/artists')
     expect(canonical.searchParams.get('focus')).toBe(node.id)
     expect(readTimelineOrders(canonical.searchParams)).toEqual({
       genre: 'oldest-first', artist: 'oldest-first', instrument: 'oldest-first',

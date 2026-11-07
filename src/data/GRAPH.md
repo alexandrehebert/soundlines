@@ -33,6 +33,18 @@ relationships between two node ids.
 
 Current size: 1265 nodes (177 genres, 538 artists, 72 instruments, 41 labels, 89 places, 210 tracks, 56 scenes, 82 events) and 1907 edges (as of 2026-11-05).
 
+`graph.json` remains the canonical source for entity ids, relationships, dates,
+sources, and English text. French display names and prose are maintained
+separately in [graph.fr.json](./graph.fr.json), keyed by those stable ids. The
+overlay may change text only; it must not duplicate or alter graph structure.
+Translation coverage is partial: 96 of 1,265 names have distinct French
+translations and 193 of 1,224 descriptions are translated, including all 82
+events. Three phase summaries, three individual phase notes, and one
+period-estimate note are also translated; relationship notes are not yet
+translated. Artist, label, and recording names generally retain their original
+form. Continue translating and reviewing the catalogue before describing French
+graph coverage as complete.
+
 ---
 
 ## 2. Nodes

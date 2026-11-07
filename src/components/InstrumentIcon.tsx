@@ -6,7 +6,7 @@ export function InstrumentIcon({ id, className, style }: {
   style?: CSSProperties
 }) {
   const file = `${encodeURIComponent(id.slice('instrument:'.length))}.svg`
-  const mask = `url("${import.meta.env.BASE_URL}instrument-icons/${file}") center / contain no-repeat`
+  const mask = `url("/instrument-icons/${file}") center / contain no-repeat`
 
   return (
     <span data-instrument-icon={id} aria-hidden="true" className={className}

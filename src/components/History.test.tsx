@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
-import { renderToStaticMarkup } from 'react-dom/server'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { ExplorerContext } from '../ExplorerContext.ts'
 import { buildIndex } from '../graph/graph.ts'
 import { DEFAULT_HISTORY_FILTERS, type HistoryFilters } from '../graph/history.ts'
 import { createTimelineModel } from '../graph/timeline.ts'
 import type { MusicGraph } from '../graph/types.ts'
+import type { Locale } from '../i18n/routing.ts'
+import { renderWithIntl } from '../i18n/test-utils.tsx'
 import { History } from './History.tsx'
 
 vi.mock('react', async (importOriginal) => {
@@ -33,12 +34,15 @@ const graph: MusicGraph = {
 }
 
 function renderHistory(
-  selectedId: string | null = null, filters: HistoryFilters = DEFAULT_HISTORY_FILTERS, data: MusicGraph = graph,
+  selectedId: string | null = null,
+  filters: HistoryFilters = DEFAULT_HISTORY_FILTERS,
+  data: MusicGraph = graph,
+  locale: Locale = 'en-US',
 ) {
   const index = buildIndex(data)
-  return renderToStaticMarkup(
+  return renderWithIntl(
     <ExplorerContext.Provider value={{
-      index, model: createTimelineModel(index, 'genre'), view: 'history',
+      index, model: createTimelineModel(index, 'genre'), locale, view: 'history',
       selectedId, selectNode: vi.fn(), changeView: vi.fn(), order: 'family', changeOrder: vi.fn(),
       genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(), isHome: false,
       historyFilters: filters, changeHistoryFilters: vi.fn(),
@@ -46,10 +50,22 @@ function renderHistory(
     }}>
       <History />
     </ExplorerContext.Provider>,
+    locale,
   )
 }
 
 describe('history view', () => {
+  it('localizes history filters, categories, eras, and dates in French', () => {
+    const markup = renderHistory(null, DEFAULT_HISTORY_FILTERS, graph, 'fr')
+    expect(markup).toContain('aria-label="Chronologie de l’histoire musicale"')
+    expect(markup).toContain('Tous les événements')
+    expect(markup).toContain('Tous les thèmes')
+    expect(markup).toContain('Théorie, notation et édition')
+    expect(markup).toContain('vers 1025')
+    expect(markup).not.toContain('All events')
+    expect(markup).not.toContain('Jump to an era')
+  })
+
   it('shows undated events separately and applies the same filters and selection', () => {
     const data: MusicGraph = {
       ...graph,

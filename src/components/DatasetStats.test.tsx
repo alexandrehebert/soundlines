@@ -1,10 +1,11 @@
-import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it, vi } from 'vitest'
 import { ExplorerContext } from '../ExplorerContext.ts'
 import { buildIndex } from '../graph/graph.ts'
 import type { StatsTab } from '../graph/stats.ts'
 import { createTimelineModel } from '../graph/timeline.ts'
 import type { MusicGraph } from '../graph/types.ts'
+import type { Locale } from '../i18n/routing.ts'
+import { renderWithIntl } from '../i18n/test-utils.tsx'
 import { DatasetStats } from './DatasetStats.tsx'
 
 const graph: MusicGraph = {
@@ -16,11 +17,11 @@ const graph: MusicGraph = {
   edges: [{ id: 'e1', type: 'key_artist_of', from: 'artist:miles', to: 'genre:jazz', confidence: 'high' }],
 }
 
-function render(initialTab: StatsTab, reviewed = ['genre:jazz', 'e1']) {
+function render(initialTab: StatsTab, reviewed = ['genre:jazz', 'e1'], locale: Locale = 'en-US') {
   const index = buildIndex(graph)
-  return renderToStaticMarkup(
+  return renderWithIntl(
     <ExplorerContext.Provider value={{
-      index, model: createTimelineModel(index, 'genre'), view: 'genre',
+      index, model: createTimelineModel(index, 'genre'), locale, view: 'genre',
       selectedId: null, selectNode: vi.fn(), changeView: vi.fn(),
       order: 'family', changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(), isHome: false,
       historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
@@ -28,10 +29,22 @@ function render(initialTab: StatsTab, reviewed = ['genre:jazz', 'e1']) {
     }}>
       <DatasetStats initialTab={initialTab} onClose={vi.fn()} review={{ reviewed, lastReviewed: '2026-11-03' }} />
     </ExplorerContext.Provider>,
+    locale,
   )
 }
 
 describe('DatasetStats', () => {
+  it('localizes the source-review experience in French', () => {
+    const markup = render('review', ['genre:jazz', 'e1'], 'fr')
+    expect(markup).toContain('Statistiques du catalogue')
+    expect(markup).toContain('Vérification des sources')
+    expect(markup).toContain('Toutes les entrées et tous les liens')
+    expect(markup).toContain('Ensemble vérifié')
+    expect(markup).toContain('Confiance après vérification')
+    expect(markup).not.toContain('Reviewed overall')
+    expect(markup).not.toContain('Source review')
+  })
+
   it('renders an accessible dialog with the requested tab selected', () => {
     const markup = render('artist')
     expect(markup).toContain('role="dialog"')

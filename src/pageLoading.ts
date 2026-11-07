@@ -38,10 +38,12 @@ export function finishPageLoading() {
   let animations: Animation[] = []
   const overlay = document.getElementById('page-loading')
   const dismiss = () => {
-    const target = document.querySelector<HTMLElement>('#root .discovery-vinyl')
+    const side = document.documentElement.dataset.theme === 'light' ? 'b' : 'a'
+    const target = document.querySelector<HTMLElement>(`#root .discovery-record-face-${side} .discovery-vinyl`)
+    const destination = target?.closest<HTMLElement>('.discovery-record-perspective')
     const vinyl = overlay?.querySelector<HTMLElement>('.page-loading-vinyl')
     const record = vinyl?.querySelector<HTMLElement>('.discovery-vinyl')
-    if (!overlay?.hasAttribute('data-opening') || !target || !vinyl || !record
+    if (!overlay?.hasAttribute('data-opening') || !target || !destination || !vinyl || !record
       || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       setLoading(false)
       return
@@ -52,7 +54,8 @@ export function finishPageLoading() {
     // Render the loader record at the landing size so grooves, borders and the icon match exactly when handed off.
     vinyl.style.width = `${size}px`
     const resized = vinyl.getBoundingClientRect()
-    const to = target.getBoundingClientRect()
+    // The perspective container stays centered even if a record face is flipping.
+    const to = destination.getBoundingClientRect()
     const hero = target.closest<HTMLElement>('.discovery-hero')!
     const bounds = hero.getBoundingClientRect()
     // The hero clips its overflow at the padding box, inside its border, so the docking clip must match.
@@ -79,7 +82,7 @@ export function finishPageLoading() {
       ], options),
       vinyl.animate([
         { transform: `translate(${startX}px, ${startY}px) scale(${from.width / size})`, opacity: 1 },
-        { transform: `translate(${x}px, ${y}px) scale(1)`, opacity: getComputedStyle(target.parentElement!).opacity },
+        { transform: `translate(${x}px, ${y}px) scale(1)`, opacity: getComputedStyle(target.closest('.discovery-record')!).opacity },
       ], options),
       record.animate([
         { transform: getComputedStyle(record).transform },

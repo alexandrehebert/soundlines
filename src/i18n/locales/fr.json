@@ -1,0 +1,445 @@
+{
+  "loading": "Chargement de Soundlines",
+  "requiresJavascript": "JavaScript est nécessaire pour explorer la carte musicale Soundlines.",
+  "notFoundTitle": "Page introuvable",
+  "notFoundDescription": "Cette page Soundlines n’existe pas.",
+  "returnHome": "Retourner à Soundlines",
+  "home": "Accueil Soundlines",
+  "tagline": "un atlas des lignées musicales",
+  "homeCopy": {
+    "lightTheme": "Thème clair",
+    "switchToLight": "Retourner à la face B · Thème clair",
+    "switchToDark": "Retourner à la face A · Thème sombre",
+    "sideA": "FACE A",
+    "sideB": "FACE B",
+    "headline": {
+      "first": "Suivez le",
+      "second": "son."
+    },
+    "intro": "Explorez les genres, les artistes et les instruments qui ont façonné la musique d’aujourd’hui.",
+    "openTimeline": "Ouvrir la chronologie",
+    "discover": "Découvrir",
+    "exploreCatalogue": "Explorer le catalogue",
+    "destinations": {
+      "genre": "Retracer les styles et leurs influences",
+      "artist": "Rencontrer les artistes derrière la musique",
+      "instrument": "Découvrir comment les sons sont créés",
+      "history": "Repérer les tournants de l’histoire musicale"
+    },
+    "genreConnections": "Liens entre les genres",
+    "nextConnection": "Lien suivant",
+    "noFeaturedConnections": "Les liens à la une apparaîtront ici.",
+    "listeningBooth": "Espace d’écoute",
+    "listeningDescription": "Écoutez un exemple musical généré de 10 secondes pour chaque genre.",
+    "nextSound": "Son suivant",
+    "artistSpotlight": "Artiste à la une",
+    "nextArtist": "Artiste suivant",
+    "recentlyAdded": "Ajouts récents",
+    "newEntries": "Les nouvelles entrées du catalogue apparaîtront ici.",
+    "andMore": "Et bien d’autres",
+    "turningPoints": "Moments marquants",
+    "exploreMusicHistory": "Explorer l’histoire de la musique",
+    "instrumentSpotlight": "Instrument à la une",
+    "nextInstrument": "Instrument suivant",
+    "connectedGenres": "Genres associés",
+    "madeWith": "Fait avec",
+    "madeWithLove": "amour",
+    "by": "par"
+  },
+  "search": {
+    "instructions": "Utilisez les flèches haut et bas pour parcourir les résultats. Appuyez sur Entrée pour ouvrir le résultat sélectionné, ou le premier résultat si aucun n’est sélectionné. Appuyez sur Échap pour fermer la recherche.",
+    "trigger": "Rechercher dans la musique",
+    "title": "Rechercher",
+    "close": "Fermer la recherche",
+    "desktopPlaceholder": "Genres, artistes, instruments, événements…",
+    "mobilePlaceholder": "Genres, artistes, instruments, événements…",
+    "emptyQuery": "Recherchez un genre, un artiste, un instrument, un événement ou un label.",
+    "noMatches": "Aucun résultat",
+    "results": "Résultats de recherche"
+  },
+  "timelineView": "Vue chronologique",
+  "datasetStatistics": "Statistiques du catalogue",
+  "views": {
+    "genre": "Genres",
+    "artist": "Artistes",
+    "instrument": "Instruments",
+    "history": "Histoire"
+  },
+  "timelineOptions": "Options de la chronologie",
+  "timelineOptionsAndLegend": "Options de la chronologie et légende",
+  "options": "Options",
+  "historyOptions": "Options de l’histoire",
+  "adjustView": "Ajuster l’affichage",
+  "adjustViewAndLegend": "Ajuster l’affichage et consulter la légende",
+  "exploreStatistics": "Explorer les statistiques du catalogue",
+  "closeOptions": "Fermer les options",
+  "genreDisplay": "Affichage des genres",
+  "bars": "Barres",
+  "bubbles": "Bulles",
+  "order": {
+    "genre": "Ordre des genres",
+    "artist": "Ordre des artistes",
+    "instrument": "Ordre des instruments"
+  },
+  "familyGroups": "Par familles",
+  "oldestFirst": "Du plus ancien au plus récent",
+  "entityStats": {
+    "genre": "genres",
+    "artist": "artistes",
+    "instrument": "instruments"
+  },
+  "connectionNotes": {
+    "funk-detroit": "Les rythmes et la production du funk ont contribué au son de la techno de Détroit.",
+    "altcountry-country": "L’alt-country revisite les traditions country à travers le rock indépendant et l’écriture de chansons.",
+    "bossa-jazz": "La bossa-nova brésilienne et le jazz se sont influencés mutuellement au fil de leurs rencontres.",
+    "house-disco": "À Chicago, les DJ ont prolongé l’héritage des disques et des remix disco, en y mêlant la soul et les boîtes à rythmes.",
+    "acid-funk": "L’acid jazz mêle les rythmes du funk au jazz et à la dance."
+  },
+  "copyright": "Tous droits réservés.",
+  "showDatasetStatistics": "afficher les statistiques du catalogue",
+  "closePanel": "Fermer le panneau",
+  "expandDetails": "Développer les détails",
+  "collapseDetails": "Réduire les détails",
+  "detail": {
+    "website": "Site web",
+    "landmark": "Repère",
+    "noPeriod": "Période non précisée",
+    "estimatedPeriod": "Période estimée :",
+    "estimatedPeriodFallback": "Les dates sont approximatives et susceptibles d’être révisées.",
+    "entryConfidenceTitle": "Niveau de confiance éditorial global pour cette fiche ; les affirmations et les périodes peuvent différer.",
+    "entryConfidence": "Confiance éditoriale :",
+    "prominence": {
+      "artist": "Importance de la carrière · éditoriale",
+      "instrument": "Importance de l’usage · éditoriale",
+      "other": "Importance historique · approximative"
+    },
+    "prominenceLabels": {
+      "artist": {
+        "emerging": "Émergence",
+        "golden-age": "Apogée",
+        "established": "Poursuite",
+        "niche": "Retrait / pause"
+      },
+      "instrument": {
+        "emerging": "Émergence",
+        "golden-age": "Usage maximal",
+        "established": "Poursuite",
+        "niche": "Rare / éclipsé"
+      },
+      "other": {
+        "emerging": "Émergence",
+        "golden-age": "Âge d’or",
+        "established": "Poursuite",
+        "niche": "Scène de niche"
+      }
+    },
+    "phaseConfidence": "Confiance :",
+    "phaseConfidenceTitle": "Confiance de la période :",
+    "confidence": {
+      "low": "faible",
+      "medium": "moyenne",
+      "high": "élevée"
+    },
+    "confidenceTitle": "Confiance :",
+    "now": "aujourd’hui",
+    "sources": "Sources"
+  },
+  "history": {
+    "region": "Chronologie de l’histoire musicale",
+    "importance": "Importance des événements",
+    "allEvents": "Tous les événements",
+    "landmarks": "Repères",
+    "topic": "Thème",
+    "allTopics": "Tous les thèmes",
+    "jumpToEra": "Accéder à une époque",
+    "eras": {
+      "before-1400": "Avant 1400",
+      "1400-1599": "1400–1599",
+      "1600-1899": "1600–1899",
+      "1900-1949": "1900–1949",
+      "1950-1999": "1950–1999",
+      "2000-onward": "Depuis 2000"
+    },
+    "showing": "{count, plural, =0 {Affichage de # événements} one {Affichage de # événement} other {Affichage de # événements}}{dating} · dates parfois approximatives, repères établis par la rédaction.",
+    "datesApproximate": "Les dates sont approximatives",
+    "editorialLandmarks": "Les repères sont établis par la rédaction",
+    "undated": "événements",
+    "noDatedMatches": "Aucun événement daté ne correspond à ces filtres.",
+    "noMatches": "Aucun événement ne correspond à ces filtres.",
+    "clearFilters": "Effacer les filtres",
+    "connected": "Associé à",
+    "dating": {
+      "dated": " classés par année de début",
+      "undated": " ({count, number} sans date ; événements datés classés par année de début)"
+    }
+  },
+  "legend": {
+    "region": "Légende de la chronologie",
+    "editorialPhases": "Périodes éditoriales, pas des scores de popularité",
+    "estimatedDates": "Les bords estompés indiquent des dates estimées",
+    "unresearchedArtists": "Les artistes non documentés restent neutres",
+    "instrumentBars": "Les barres commencent à la première apparition attestée · les instruments sans annotation restent neutres",
+    "prominence": {
+      "emerging": "Émergence",
+      "golden-age": "Âge d’or",
+      "established": "Poursuite",
+      "niche": "Scène de niche"
+    }
+  },
+  "stats": {
+    "title": "Statistiques du catalogue",
+    "close": "Fermer les statistiques",
+    "sections": "Rubriques des statistiques",
+    "tabs": {
+      "overview": "Vue d’ensemble",
+      "genre": "Genres",
+      "artist": "Artistes",
+      "instrument": "Instruments",
+      "links": "Liens",
+      "review": "Vérification des sources"
+    },
+    "summary": "{entries} entrées et {links} liens{span}",
+    "entries": "Entrées",
+    "links": "Liens",
+    "averageLinksPerEntry": "Liens moyens / entrée",
+    "sourcedEntries": "Entrées sourcées",
+    "entriesByType": "Entrées par type",
+    "mostConnectedEntries": "Entrées les plus connectées",
+    "noLinksYet": "{count, plural, =0 {# entrées ne possèdent encore aucun lien.} one {# entrée ne possède encore aucun lien.} other {# entrées ne possèdent encore aucun lien.}}",
+    "stillActive": "Toujours actif",
+    "timeSpan": "Période",
+    "years": "{count, plural, =0 {# ans} one {# an} other {# ans}}",
+    "averageLinks": "Liens moyens",
+    "whenEmerged": "Émergence des {plural}",
+    "emergenceSubtitle": "siècles avant 1900, décennies ensuite",
+    "artistKinds": "Types d’artistes",
+    "artistKindLabels": {
+      "person": "Personnes",
+      "group": "Groupes",
+      "collective": "Collectifs"
+    },
+    "byFamily": "Par famille",
+    "withoutFamily": "{count} sans famille",
+    "mostConnected": "Les plus connectés",
+    "oldest": "Les plus anciens",
+    "mostRecent": "Les plus récents",
+    "relationTypes": "Types de relations",
+    "confidenceRated": "Niveau de confiance évalué",
+    "sourcedLinks": "Liens sourcés",
+    "confidence": "Confiance",
+    "confidenceLabels": {
+      "high": "Élevée",
+      "medium": "Moyenne",
+      "low": "Faible",
+      "unrated": "Non évaluée"
+    },
+    "byRelationType": "Par type de relation",
+    "topCitedSources": "Sources les plus citées",
+    "acrossEntriesAndLinks": "sur les entrées et les liens",
+    "reviewDescription": "Les entrées et les liens sont vérifiés à nouveau à partir de sources reconnues : archives, musées, travaux universitaires, panthéons de la musique et presse fiable. Chaque vérification réévalue les dates, les périodes, les notes et les niveaux de confiance ; une note de vérification est conservée dans le dépôt.",
+    "lastReview": " Dernière vérification : {date}.",
+    "progress": "Progression",
+    "allEntriesAndLinks": "Toutes les entrées et tous les liens",
+    "reviewFinished": "Vérification terminée",
+    "inProgress": "En cours",
+    "reviewedOverall": "Ensemble vérifié",
+    "entriesReviewed": "Entrées vérifiées",
+    "linksReviewed": "Liens vérifiés",
+    "sourcesPerReviewedItem": "Sources / élément vérifié",
+    "pending": "en attente",
+    "confidenceAfterReview": "Confiance après vérification",
+    "reviewedLinksOnly": "liens vérifiés uniquement",
+    "linksByKind": "Liens par type",
+    "mostCitedReviewed": "Sources les plus citées parmi les éléments vérifiés",
+    "reviewedProgress": "{reviewed} sur {total} vérifiés",
+    "linksCount": "{count, plural, =0 {# liens} one {# lien} other {# liens}}",
+    "typeLabels": {
+      "genre": "Genres",
+      "artist": "Artistes",
+      "instrument": "Instruments",
+      "label": "Labels",
+      "place": "Lieux",
+      "track": "Morceaux",
+      "scene": "Scènes",
+      "event": "Événements"
+    },
+    "linkGroupLabels": {
+      "lineage": "Filiation des genres",
+      "people": "Artistes et membres",
+      "instruments": "Instruments",
+      "industry": "Labels et lieux",
+      "tracks": "Morceaux",
+      "events": "Événements"
+    },
+    "summarySpan": " sur la période {start} – {end}"
+  },
+  "visualization": {
+    "genreBubbles": "Bulles des genres",
+    "genreFamilies": "Familles de genres",
+    "influenceMap": "Carte des influences",
+    "influenceMapInstructions": "Faites glisser ou défiler pour vous déplacer. Pincez ou faites défiler avec ⌘/Ctrl pour zoomer.",
+    "bubbleZoom": "Zoom des bulles",
+    "zoomOut": "Dézoomer les bulles",
+    "zoomIn": "Zoomer les bulles",
+    "minimap": "Vue d’ensemble",
+    "minimapLabel": "Mini-carte des genres",
+    "minimapInstructions": "Cliquez ou faites glisser pour déplacer la carte, ou utilisez les flèches du clavier."
+  },
+  "timeline": {
+    "phasePeriod": "{label} : {circa} {start}–{end}.",
+    "region": "Chronologie des {view}",
+    "compressedTime": "temps compressé ×{factor}",
+    "undated": "{label} sans date",
+    "undatedPrefix": "Sans date",
+    "undatedTitle": "{name} : période non précisée",
+    "offscreen": "{name} · hors écran vers {direction} ; activer pour afficher",
+    "estimatedPeriod": " · {period} ; dates estimées",
+    "prominenceUnannotated": " · importance non annotée",
+    "footer": {
+      "history": "Faites défiler horizontalement ou avec Maj + molette · filtrez par thème ou par repères · sélectionnez un événement pour voir ses liens et ses sources",
+      "bubbles": "La taille et la luminosité indiquent l’influence dans le catalogue · faites glisser ou défiler pour vous déplacer · pincez ou utilisez ⌘ + molette pour zoomer · cliquez sur une bulle pour afficher les détails",
+      "timeline": "Faites glisser ou défiler pour vous déplacer · pincez ou utilisez ⌘ + molette pour zoomer · cliquez sur une barre pour afficher les détails"
+    },
+    "directions": {
+      "left": "la gauche",
+      "right": "la droite"
+    }
+  },
+  "audio": {
+    "play": "Écouter",
+    "pause": "Mettre en pause",
+    "failed": "Cet extrait n’a pas pu être chargé.",
+    "buffering": "Chargement de l’extrait audio",
+    "aboutPreview": "À propos de cet extrait audio",
+    "previewAttribution": "· extrait de 10 secondes"
+  },
+  "graphLabels": {
+    "nodeTypes": {
+      "genre": "Genre",
+      "artist": "Artiste",
+      "instrument": "Instrument",
+      "label": "Maison de disques",
+      "place": "Lieu",
+      "track": "Morceau",
+      "scene": "Scène",
+      "event": "Événement"
+    },
+    "families": {
+      "classical": "Classique",
+      "blues-soul": "Blues, R&B et soul",
+      "jazz": "Jazz",
+      "country-folk": "Country et folk",
+      "rock": "Rock",
+      "alternative-punk": "Alternatif et punk",
+      "metal": "Metal",
+      "pop": "Pop",
+      "hip-hop": "Hip-hop",
+      "reggae": "Reggae et ska",
+      "latin": "Latino",
+      "african": "Musiques africaines",
+      "electronica": "Électronique et ambient",
+      "house": "Disco et house",
+      "techno": "Techno et trance",
+      "breakbeat-bass": "Breakbeat et bass",
+      "strings": "Cordes",
+      "keyboards": "Claviers et orgues",
+      "winds": "Bois et anches",
+      "brass": "Cuivres",
+      "percussion": "Percussions",
+      "electronic": "Électronique et studio"
+    },
+    "eventCategories": {
+      "technology": "Technologies et formats",
+      "media": "Radio et médias",
+      "industry": "Industrie et droit",
+      "performance": "Concerts et festivals",
+      "publication": "Théorie, notation et édition",
+      "society": "Société et migrations"
+    },
+    "edges": {
+      "influences": "influence",
+      "derived_from": "dérivé de",
+      "subgenre_of": "sous-genre de",
+      "fusion_of": "fusion de",
+      "cross_pollination": "influences croisées avec",
+      "revival_of": "renaissance de",
+      "key_artist_of": "artiste majeur du genre",
+      "member_of": "membre de",
+      "collaborated_with": "a collaboré avec",
+      "featured_in": "présent dans",
+      "plays": "joue de",
+      "signed_to": "sous contrat chez",
+      "founded": "a fondé",
+      "originated_in": "est originaire de",
+      "anthem_of": "hymne de",
+      "recorded_by": "enregistré par",
+      "composed_by": "composé par",
+      "shaped": "a façonné",
+      "context_for": "apporte un contexte historique à",
+      "recognized": "reconnaît",
+      "involved": "a participé à",
+      "occurred_in": "a eu lieu à"
+    },
+    "inverseEdges": {
+      "influences": "influencé par",
+      "derived_from": "à l’origine de",
+      "subgenre_of": "parent de",
+      "fusion_of": "fusionné dans",
+      "cross_pollination": "influences croisées avec",
+      "revival_of": "relancé sous la forme de",
+      "key_artist_of": "artistes clés",
+      "member_of": "membres",
+      "collaborated_with": "a collaboré avec",
+      "featured_in": "mis en valeur dans",
+      "plays": "joué par",
+      "signed_to": "a signé chez",
+      "founded": "fondé par",
+      "originated_in": "lieu d’origine",
+      "anthem_of": "comprend l’hymne",
+      "recorded_by": "interprété par",
+      "composed_by": "composé par",
+      "shaped": "façonné par",
+      "context_for": "éclairé par",
+      "recognized": "reconnu par",
+      "involved": "comprend la participation de",
+      "occurred_in": "a accueilli"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Soundlines | Découvrez l’histoire de la musique",
+      "description": "Suivez les liens entre les genres musicaux, découvrez de nouvelles entrées du catalogue et explorez l’histoire de la musique."
+    },
+    "genre": {
+      "title": "Genres musicaux | Soundlines",
+      "description": "Explorez l’évolution des genres musicaux et les lignées qui les relient dans la chronologie Soundlines."
+    },
+    "artist": {
+      "title": "Artistes | Soundlines",
+      "description": "Découvrez des artistes, leurs influences et les liens qui les relient à travers l’histoire de la musique."
+    },
+    "instrument": {
+      "title": "Instruments de musique | Soundlines",
+      "description": "Explorez l’histoire des instruments de musique et les sons et musiciens qui leur sont associés."
+    },
+    "history": {
+      "title": "Histoire de la musique | Soundlines",
+      "description": "Explorez les événements, inventions, spectacles et mouvements culturels qui ont marqué l’histoire de la musique."
+    },
+    "bubbles": {
+      "title": "Carte des genres musicaux | Soundlines",
+      "description": "Explorez une carte interactive des genres musicaux et des lignées qui les relient."
+    }
+  },
+  "dates": {
+    "beforeCommonEra": "AEC",
+    "circa": "vers",
+    "now": "aujourd’hui",
+    "approximate": " (env.)",
+    "estimated": " (estimée)"
+  },
+  "social": {
+    "imageAlt": "Soundlines : une carte chronologique des lignées musicales",
+    "nodeDescription": "Découvrez {name} ({type}) et explorez ses liens avec l’histoire de la musique."
+  }
+}

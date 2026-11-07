@@ -71,7 +71,7 @@ function positionBar(bar: TimelineBar, scale: TimeScale, yCenter: number): BarPo
 
 export function positionTimeline(lanes: FamilyLane[], scale: TimeScale, order: TimelineOrder = 'family') {
   const bars: BarPosition[] = []
-  const bands: { family: string; label: string; top: number; height: number; color: string }[] = []
+  const bands: { family: FamilyLane['family']; label: string; top: number; height: number; color: string }[] = []
   if (order === 'oldest-first') {
     const ordered = lanes.flatMap((lane) => lane.bars).sort((a, b) =>
       a.start - b.start || a.node.name.localeCompare(b.node.name) || a.node.id.localeCompare(b.node.id))

@@ -1,14 +1,3 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "functions": {
-    "api/page.ts": {
-      "includeFiles": "dist/index.html"
-    }
-  },
-  "routes": [
-    { "src": "^/$", "dest": "/api/page" },
-    { "src": "^/index\\.html$", "dest": "/api/page" },
-    { "src": "^/(genres|artists|instruments|history)/?$", "dest": "/api/page?__page_path=/$1" },
-    { "handle": "filesystem" }
-  ]
+  "$schema": "https://openapi.vercel.sh/vercel.json"
 }

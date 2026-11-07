@@ -1,0 +1,130 @@
+:root {
+  color-scheme: dark;
+  --control-hover: #201a35;
+  /* Side B keeps its label while flipping back, after the light aliases are removed. */
+  --record-label-background: linear-gradient(135deg, #efd6b5, #d4a271 57%, #ad6c4a);
+  --record-label-ink: #44281d;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --control-hover: #efdfd0;
+  --color-slate-950: #eee9de;
+  --color-slate-900: #f4f0e6;
+  --color-slate-800: #ddd3c5;
+  --color-slate-700: #cbbfae;
+  --color-slate-600: #8f8072;
+  --color-slate-500: #6f6155;
+  --color-slate-400: #665649;
+  --color-slate-300: #57483c;
+  --color-slate-200: #463830;
+  --color-slate-100: #3b2f27;
+  --color-slate-50: #32261f;
+  --color-violet-900: #f0dccd;
+  --color-violet-500: #b5664a;
+  --color-violet-400: #9a5037;
+  --color-violet-300: #83432e;
+  --color-violet-200: #6c3726;
+  --color-cyan-500: #b5664a;
+  --color-cyan-400: #9a5037;
+  --color-cyan-300: #83432e;
+  --color-cyan-200: #6c3726;
+  --color-sky-400: #42636d;
+  --color-sky-300: #334e58;
+  --color-rose-300: #8a5046;
+  --color-green-400: #526d48;
+  --chart-underlay: #eee9de;
+  --chart-bubble-base: #f4f0e6;
+  --chart-selection-border: #9a5037;
+  --chart-label-ink: #32261f;
+  --chart-fda4af: #b39b9a;
+  --chart-f59e0b: #b79c72;
+  --chart-60a5fa: #8ca7b6;
+  --chart-d6b77a: #aea27d;
+  --chart-fb923c: #bb947e;
+  --chart-e879f9: #a49bab;
+  --chart-f87171: #af908e;
+  --chart-fb7185: #b59aab;
+  --chart-c084fc: #9d99b6;
+  --chart-4ade80: #91a594;
+  --chart-facc15: #b3a36f;
+  --chart-2dd4bf: #83a7a1;
+  --chart-a78bfa: #979fb5;
+  --chart-f472b6: #b19ca8;
+  --chart-22d3ee: #89a8ad;
+  --chart-a3e635: #a1ab82;
+  --chart-e2a76f: #b39b80;
+  --chart-818cf8: #979eaf;
+  --chart-34d399: #8fa89c;
+  --chart-fbbf24: #b5a174;
+  --chart-ef4444: #b79088;
+  --chart-38bdf8: #8da5b6;
+  --chart-67e8f9: #8da9b0;
+  --chart-fcd34d: #b5a174;
+  --chart-64748b: #939c96;
+  --chart-94a3b8: #939f98;
+  --color-rose-400: #ad837a;
+}
+
+.search-result-type { color: var(--search-result-type-color); }
+:root[data-theme="light"] .search-result-type {
+  color: color-mix(in srgb, var(--search-result-type-color) 35%, var(--color-slate-50));
+}
+
+/* Light chart surfaces and neutral UI text share the same charcoal ink. */
+@layer utilities {
+  :root[data-theme="light"] .text-white { color: var(--color-slate-50); }
+  @media (hover: hover) {
+    :root[data-theme="light"] .hover\:text-white:hover,
+    :root[data-theme="light"] .group:hover .group-hover\:text-white { color: var(--color-slate-50); }
+  }
+}
+
+:root[data-theme="light"] .timeline-axis {
+  background: var(--color-slate-950);
+  box-shadow: 0 -1px 0 var(--color-slate-950), 0 1px 0 var(--color-slate-800);
+}
+
+:root[data-theme="light"] svg text[fill="#94a3b8"],
+:root[data-theme="light"] svg text[fill="#64748b"],
+:root[data-theme="light"] svg text[fill="#cbd5e1"],
+:root[data-theme="light"] [data-bar-label] {
+  fill: var(--color-slate-400);
+  stroke: none;
+}
+
+:root[data-theme="light"] [data-bar-label="inside"],
+:root[data-theme="light"] [data-undated-label] { fill: var(--color-slate-50); color: var(--color-slate-50); }
+:root[data-theme="light"] .timeline-bar-underlay { fill: var(--chart-underlay); }
+:root[data-theme="light"] .timeline-icon-underlay { fill: var(--chart-bubble-base); }
+:root[data-theme="light"] [data-family-label] { fill: var(--color-slate-400); opacity: 1; }
+:root[data-theme="light"] [data-year-grid],
+:root[data-theme="light"] [data-year-tick] line { stroke: #d9cebf; }
+:root[data-theme="light"] ::selection { background: #ebc9b3; }
+
+/* Pale fills need to deepen on hover; brightening washes them out. */
+@media (hover: hover) {
+  :root[data-theme="light"] .visualization-item[aria-pressed="false"]:hover {
+    filter: brightness(0.9) saturate(1.25);
+  }
+}
+:root[data-theme="light"] .visualization-hover-border { stroke: rgb(50 38 31 / 0.45); }
+:root[data-theme="light"] .genre-bubble::after { border-color: rgb(50 38 31 / 0.45); }
+
+:root[data-theme="light"] #page-loading:not([data-docking]) { background: var(--color-slate-950); }
+:root[data-theme="light"] #page-loading .page-loading-wordmark { color: var(--color-slate-200); }
+:root[data-theme="light"] .discovery-label {
+  border-color: #ecd3b4;
+  box-shadow: 0 0 0 .35rem #2b2019;
+}
+:root[data-theme="light"] #page-loading .discovery-label {
+  background: var(--record-label-background);
+  color: var(--record-label-ink);
+}
+:root[data-theme="light"] .discovery-vinyl {
+  border-color: #8f8072;
+  background:
+    conic-gradient(from 65deg, transparent 0%, #c9b39a44 10%, transparent 24%, #2a211b8c 38%, #d9c5ac44 62%, transparent 73%),
+    repeating-radial-gradient(circle, #463a31 0 1px, #2b231d 2px 4px, #3b3029 5px 6px);
+  box-shadow: 0 1rem 3rem #3b2a1d40, inset 0 0 1.4rem #24190f;
+}

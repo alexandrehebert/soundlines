@@ -1,14 +1,16 @@
 import { readFileSync } from 'node:fs'
 import type { ReactNode } from 'react'
-import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it, vi } from 'vitest'
 import { Explorer, GenreDisplaySelect, ViewToggle } from './App.tsx'
 import { ExplorerContext } from './ExplorerContext.ts'
 import { DatasetStats } from './components/DatasetStats.tsx'
+import { Home } from './components/Home.tsx'
 import { Legend } from './components/Legend.tsx'
 import { buildIndex } from './graph/graph.ts'
 import { createTimelineModel, type ExplorerView } from './graph/timeline.ts'
 import type { MusicGraph } from './graph/types.ts'
+import { DEFAULT_LOCALE, type Locale } from './i18n/routing.ts'
+import { renderWithIntl } from './i18n/test-utils.tsx'
 
 vi.mock('./components/SearchBar.tsx', () => ({ SearchBar: () => null }))
 
@@ -31,12 +33,16 @@ const graph: MusicGraph = {
 }
 
 function render(
-  graph: MusicGraph, children: ReactNode, selectedId: string | null = null, view: ExplorerView = 'genre',
+  graph: MusicGraph,
+  children: ReactNode,
+  selectedId: string | null = null,
+  view: ExplorerView = 'genre',
+  locale: Locale = DEFAULT_LOCALE,
 ) {
   const index = buildIndex(graph)
-  return renderToStaticMarkup(
+  return renderWithIntl(
     <ExplorerContext.Provider value={{
-      index, model: createTimelineModel(index, 'genre'), view,
+      index, model: createTimelineModel(index, 'genre'), locale, view,
       selectedId, selectNode: vi.fn(), changeView: vi.fn(),
       order: 'family', changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(), isHome: false,
       historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
@@ -44,6 +50,7 @@ function render(
     }}>
       {children}
     </ExplorerContext.Provider>,
+    locale,
   )
 }
 
@@ -149,6 +156,13 @@ describe('Explorer header statistics', () => {
 })
 
 describe('view toggle', () => {
+  it('localizes view labels for a French route', () => {
+    const markup = render(graph, <ViewToggle view="genre" changeView={vi.fn()} />, null, 'genre', 'fr')
+    expect(markup).toContain('aria-label="Vue chronologique"')
+    expect(markup).toContain('Artistes')
+    expect(markup).toContain('Histoire')
+  })
+
   it('lets genre display options fill equal-width segments on desktop and mobile', () => {
     const markup = render(graph, <GenreDisplaySelect />)
     const buttons = markup.match(/<button\b[^>]*>/g) ?? []
@@ -161,7 +175,7 @@ describe('view toggle', () => {
   })
 
   it('uses taller desktop spacing while retaining mobile button height', () => {
-    const markup = renderToStaticMarkup(<ViewToggle view="genre" changeView={vi.fn()} />)
+    const markup = renderWithIntl(<ViewToggle view="genre" changeView={vi.fn()} />)
     const buttons = markup.match(/<button\b[^>]*role="radio"[^>]*>/g) ?? []
 
     expect(buttons).toHaveLength(4)
@@ -196,7 +210,7 @@ describe('view toggle', () => {
   })
 
   it('includes History as the selected fourth view', () => {
-    const markup = renderToStaticMarkup(<ViewToggle view="history" changeView={vi.fn()} />)
+    const markup = renderWithIntl(<ViewToggle view="history" changeView={vi.fn()} />)
     const buttons = markup.match(/<button\b[^>]*role="radio"[^>]*>[\s\S]*?<\/button>/g) ?? []
     expect(buttons).toHaveLength(4)
     const selected = buttons.filter((button) => button.includes('aria-checked="true"'))
@@ -209,6 +223,25 @@ describe('view toggle', () => {
 })
 
 describe('landing view transition', () => {
+  it('renders both vinyl faces without side letters or an inline flip transform', () => {
+    const markup = render(graph, <Home />)
+    const labels = [...markup.matchAll(/<div class="discovery-label">([\s\S]*?)<\/div>/g)]
+
+    expect(markup).toContain('<div class="discovery-record-flip">')
+    expect(labels).toHaveLength(2)
+    for (const label of labels) expect(label[1]).toMatch(/^<svg\b[\s\S]*<\/svg>$/)
+  })
+
+  it('restores the selected face without animating during the opening dock', () => {
+    const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
+    const loadingCss = readFileSync(new URL('./pageLoading.css', import.meta.url), 'utf8')
+
+    expect(homeCss).toContain(':root[data-theme="light"] .discovery-record-flip { transform: rotateY(180deg); }')
+    expect(homeCss).toContain('transition: transform .75s cubic-bezier(.22, .75, .25, 1);')
+    expect(homeCss).toMatch(/@media \(prefers-reduced-motion: reduce\) \{\s*\.discovery-record-flip \{ transition: none; \}/)
+    expect(loadingCss).toContain('#page-loading[data-opening][data-loading="true"] ~ #root .discovery-record-flip {\n  transition: none;')
+  })
+
   it('keeps the mobile detail sheet above the timeline content and below the navigation', () => {
     const css = readFileSync(new URL('./index.css', import.meta.url), 'utf8')
     expect(css).toContain('.soundlines-home-transition [data-mobile-detail-sheet] { view-transition-name: soundlines-detail-sheet; }')

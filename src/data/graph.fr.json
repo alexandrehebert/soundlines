@@ -1,0 +1,706 @@
+{
+  "nodes": {
+    "genre:acid-jazz": {
+      "description": "Un mouvement britannique des clubs et du disque qui a rapproché jazz-funk et soul-jazz du hip-hop, du funk et de la culture dance. Le terme apparaît à Londres en 1987 et s’associe au label Acid Jazz et à des artistes comme le James Taylor Quartet, Brand New Heavies et Jamiroquai. Le label et la scène se poursuivent au-delà des années 1990 : l’acid jazz relève davantage d’un vaste mouvement évolutif que d’un style aux frontières fixes."
+    },
+    "genre:bossa-nova": {
+      "name": "Bossa-nova",
+      "description": "Style musical brésilien né à Rio de Janeiro à la fin des années 1950, reconnaissable à sa guitare dérivée de la samba, à son chant retenu et à ses harmonies influencées par le jazz. Plusieurs enregistrements de 1958 sont considérés comme des jalons précoces ; aucun disque ne fait consensus comme acte de naissance unique."
+    },
+    "genre:country": {
+      "name": "Country",
+      "description": "Tradition populaire des États-Unis, façonnée par les ensembles ruraux à cordes, les ballades, le blues et les circuits musicaux régionaux. Ses formes commerciales comprennent notamment le honky-tonk, le bluegrass et la country-pop."
+    },
+    "genre:detroit-techno": {
+      "name": "Techno de Détroit",
+      "description": "Courant régional de techno développé par des artistes de la région de Détroit à partir du début et du milieu des années 1980. Son histoire comprend les Belleville Three, d’autres producteurs et labels de Détroit, les radios et clubs noirs, ainsi que des échanges avec Chicago et l’Europe."
+    },
+    "genre:disco": {
+      "name": "Disco",
+      "description": "Famille de musiques pour la danse façonnée dans les réseaux de clubs des années 1970, surtout à New York et Philadelphie, par les communautés noires, latino-américaines et LGBTQ+, ainsi que par des producteurs mêlant soul, funk et pop orchestrale. Les DJ, les versions longues et le maxi 45-tours ont joué un rôle important dans sa diffusion ; son histoire se poursuit après la réaction anti-disco de 1979 aux États-Unis."
+    },
+    "artist:fela-kuti": {
+      "description": "Compositeur, chef d’orchestre, saxophoniste et militant politique nigérian, Fela Kuti a contribué à façonner l’afrobeat avec ses expérimentations au sein de Koola Lobitos puis de ses groupes suivants. Il a travaillé quinze ans avec le batteur Tony Allen. Les recherches replacent la formation du style dans le contexte plus large de Lagos et reconnaissent d’autres contributeurs, plutôt qu’un inventeur unique."
+    },
+    "artist:celia-cruz": {
+      "description": "Chanteuse cubaine dont la carrière traverse la musique de danse cubaine, la guaracha et la salsa, qui lui vaut une renommée internationale. Elle rejoint La Sonora Matancera en 1949 ou 1950 et devient l’une des grandes interprètes de la salsa."
+    },
+    "artist:kraftwerk": {
+      "description": "Groupe de Düsseldorf qui a exploré la relation entre les humains et les machines. Juan Atkins et Afrika Bambaataa citent « Trans-Europe Express » et « Computer World » comme des œuvres fondatrices."
+    },
+    "artist:jeff-mills": {
+      "description": "Surnommé « The Wizard », il cofonde Underground Resistance, puis définit un techno minimaliste et puissant sur Axis et les premiers disques de Tresor."
+    },
+    "artist:miles-davis": {
+      "description": "Trompettiste, compositeur et chef d’orchestre de jazz américain, dont les formations successives ont contribué au bebop, au cool jazz, au jazz modal et à la fusion électrique. Davis s’installe à New York en 1944 pour étudier à Juilliard, mais rejoint rapidement la scène professionnelle du jazz ; ses premiers enregistrements comme sideman suivent en 1945. Sa carrière traverse d’importantes évolutions stylistiques jusqu’à sa mort en 1991."
+    },
+    "artist:prince": {
+      "description": "Chanteur, auteur-compositeur et multi-instrumentiste américain associé au funk de Minneapolis."
+    },
+    "artist:beethoven": {
+      "description": "Compositeur dont les symphonies, sonates et quatuors font le lien entre les formes classiques et l’expression romantique."
+    },
+    "artist:john-coltrane": {
+      "description": "Saxophoniste dont la musique évolue du bebop et du hard bop vers l’improvisation modale puis plus libre."
+    },
+    "artist:juan-atkins": {
+      "description": "DJ et producteur de Détroit (1962–2026), dont le travail avec Cybotron et sous le nom de Model 500 contribue à façonner les débuts de la techno. Atkins emploie le mot « techno » pour désigner la musique de Cybotron avant qu’il ne devienne le nom du style de Détroit ; il est l’un des Belleville Three et fonde Metroplex."
+    },
+    "artist:daft-punk": {
+      "description": "Duo français de musique électronique composé de Thomas Bangalter et Guy-Manuel de Homem-Christo, dont les productions house et dance contribuent à populariser la French house à l’international."
+    },
+    "artist:frankie-knuckles": {
+      "description": "DJ, producteur et remixeur né à New York, devenu une figure centrale de la house de Chicago. Sa résidence au Warehouse à partir de 1977 contribue à façonner le son et à donner son nom à la house ; il poursuit sa carrière d’artiste et de remixeur jusqu’à sa mort."
+    },
+    "artist:giorgio-moroder": {
+      "description": "Producteur, auteur-compositeur, interprète et DJ italien, dont les débuts dans des groupes pop ouvrent la voie à une carrière solo couronnée de succès et à un rôle déterminant dans le disco électronique. Son single « Looky Looky », paru en 1969, constitue un jalon commercial précoce ; ses productions ultérieures contribuent à façonner la musique de danse à base de synthétiseurs."
+    },
+    "artist:james-brown": {
+      "description": "Chanteur, chef d’orchestre et auteur-compositeur américain, figure centrale de la soul et du funk."
+    },
+    "artist:tito-puente": {
+      "description": "Timbalero, vibraphoniste et chef d’orchestre new-yorkais, surnommé le « roi du mambo » de l’époque du Palladium et l’une des grandes figures du jazz latino."
+    },
+    "artist:marley-marl": {
+      "description": "DJ et producteur américain qui contribue à façonner le hip-hop de Queensbridge grâce à ses activités à la radio et en studio au début des années 1980. Sa production de « Roxanne’s Revenge » en 1984 marque une percée majeure, suivie par la direction du Juice Crew."
+    },
+    "artist:afrika-bambaataa": {
+      "description": "DJ, producteur et organisateur hip-hop du South Bronx, connu pour ses fêtes de quartier du début des années 1970, l’Universal Zulu Nation et « Planet Rock » (1982), qui contribue à façonner l’électro et le hip-hop. Son héritage est également marqué par plusieurs accusations d’abus sexuels. Il nie publiquement des accusations antérieures ; dans une autre action civile, intentée en 2021, il ne comparaît pas et un jugement par défaut est rendu en 2025. Un premier accusateur se rétracte ensuite en 2024 : ces affaires ne doivent pas être confondues."
+    },
+    "artist:air": {
+      "description": "Duo français de musique électronique, AIR est formé à Versailles par Nicolas Godin et Jean-Benoît Dunckel. Le groupe mêle synthétiseurs analogiques, production électronique, mélodies pop et atmosphères cinématographiques ; Moon Safari (1998) lui apporte une percée internationale."
+    },
+    "artist:aretha-franklin": {
+      "description": "Chanteuse et pianiste américaine issue du gospel, dont les enregistrements chez Atlantic en 1967, notamment « Respect », deviennent des œuvres emblématiques de la soul et une bande-son majeure de l’époque du mouvement des droits civiques.",
+      "phaseNote": "Les phases de carrière marquent des transitions documentées, en particulier la percée liée au passage de Columbia à Atlantic et la période ultérieure chez Arista. Les niveaux de présence sont des approximations éditoriales et non des mesures de popularité. L’écoute posthume n’est pas modélisée.",
+      "phaseNotes": {
+        "1967": "La percée chez Atlantic est bien documentée ; son intitulé et son intensité sont des choix éditoriaux, et non une série de mesures de popularité.",
+        "1979": "Le passage chez Arista marque un changement de label et de répertoire ; il ne correspond pas à un seuil quantitatif de popularité.",
+        "1985": "Le regain de succès auprès de publics variés au milieu des années 1980 constitue une phase de carrière éditoriale ; aucune mesure numérique de popularité n’est sous-entendue."
+      }
+    },
+    "artist:bob-dylan": {
+      "description": "Auteur-compositeur-interprète américain, dont les chansons folk du début des années 1960 à Greenwich Village évoluent vers une carrière discographique très diversifiée. Il reçoit le prix Nobel de littérature en 2016."
+    },
+    "artist:bob-marley": {
+      "description": "Chanteur et auteur-compositeur jamaïcain, qui commence à enregistrer en 1961 ; son groupe The Wailing Wailers se forme en 1963. Sa musique contribue à faire connaître le reggae dans le monde entier."
+    },
+    "artist:chuck-berry": {
+      "description": "Guitariste, chanteur et auteur-compositeur américain, dont le mélange de country, de blues et de rhythm and blues, les riffs de guitare et l’art du récit contribuent à définir les débuts du rock and roll. Sa carrière dans les clubs de Saint-Louis commence en 1953 ; « Maybellene » lui apporte une reconnaissance nationale en 1955."
+    },
+    "artist:derrick-may": {
+      "description": "DJ et producteur de Détroit, membre des Belleville Three. Sous le nom de Rhythim Is Rhythim, il publie « Strings of Life » sur son label Transmat ; sa musique et ses tournées contribuent à faire connaître la techno de Détroit à l’international."
+    },
+    "artist:elvis-presley": {
+      "description": "Chanteur américain dont les enregistrements chez Sun en 1954 mêlent des influences de country et de rhythm and blues et contribuent à populariser le rock and roll auprès d’un large public."
+    },
+    "instrument:tr-808": {
+      "name": "Roland TR-808",
+      "description": "Boîte à rythmes analogique programmable lancée par Roland en 1980. D’abord un échec commercial, ses sons distinctifs de grosse caisse, caisse claire et percussions deviennent essentiels à l’électro, au hip-hop, à la pop, au R&B, à la house et à la techno. « Planet Rock » d’Afrika Bambaataa en est un jalon précoce."
+    },
+    "event:phonograph-invented": {
+      "name": "Edison construit le phonographe à feuille d’étain",
+      "description": "En 1877, le phonographe à feuille d’étain de Thomas Edison enregistre et reproduit le son. Les cylindres de cire qui suivent rendent possible la distribution commerciale d’enregistrements musicaux."
+    },
+    "event:bronx-back-to-school-jam": {
+      "name": "Kool Herc anime une fête de rentrée dans le Bronx",
+      "description": "Lors d’une fête de rentrée organisée avec sa sœur Cindy Campbell le 11 août 1973, DJ Kool Herc prolonge les passages instrumentaux pour faire danser le public. Souvent considérée comme un moment fondateur du hip-hop, cette soirée s’inscrit dans une culture créée par toute une communauté et de nombreux événements."
+    },
+    "event:napster-launch": {
+      "name": "Napster popularise le partage de musique de pair à pair",
+      "description": "Le service pair à pair de Napster rend populaire l’échange de fichiers MP3 entre ordinateurs personnels et remet en cause les modes de distribution établis ainsi que le droit d’auteur. Les procédures judiciaires entraînent la fermeture du service en 2001."
+    },
+    "event:mtv-launch": {
+      "name": "MTV commence ses émissions",
+      "description": "MTV commence à émettre aux États-Unis le 1er août 1981. Sa programmation continue de clips fait de l’image un élément central de la promotion pop et transforme la manière dont les artistes touchent leur public."
+    },
+    "genre:jazz": {
+      "name": "Jazz",
+      "description": "Musique afro-américaine apparue à La Nouvelle-Orléans autour du tournant du XXe siècle, fondée sur l’improvisation, le dialogue rythmique et les traditions du blues. Le terme désigne un vaste ensemble de styles distincts."
+    },
+    "genre:hip-hop": {
+      "name": "Hip-hop",
+      "description": "Mouvement musical et culturel apparu dans le Bronx, à New York, au cours des années 1970, façonné par les communautés noires et portoricaines ainsi que par les pratiques des diasporas caribéennes. Le DJing, le MCing, la danse, les arts visuels et, plus tard, les scènes rap régionales sont des composantes liées mais distinctes de son histoire."
+    },
+    "genre:baroque": {
+      "name": "Musique baroque",
+      "description": "Basse continue, opéra, concertos et invention contrapuntique. Les dates approximatives délimitent une période historique, et non la disparition de l’interprétation de la musique baroque."
+    },
+    "genre:house": {
+      "name": "House",
+      "description": "Tradition de musique électronique pour la danse, post-disco, née dans la culture des clubs de Chicago et développée par des DJ, producteurs et danseurs noirs et queer. Elle est devenue un ensemble mondial de scènes locales et de sous-genres distincts."
+    },
+    "genre:romantic": {
+      "name": "Musique romantique",
+      "description": "Orchestres élargis, harmonie expressive, solistes virtuoses et narration musicale. Les dates décrivent une période historique dont le répertoire reste vivant."
+    },
+    "genre:classical-period": {
+      "name": "Période classique",
+      "description": "La période classique, et non le terme générique « musique classique » : phrases équilibrées, forme sonate, symphonies et quatuors à cordes. Ses limites historiques chevauchent celles de l’époque romantique."
+    },
+    "genre:funk": {
+      "name": "Funk",
+      "description": "Famille de musiques afro-américaines centrées sur le rythme, développée par des artistes et des groupes dans les années 1960 et largement popularisée dans les années 1970. Elle comprend des styles régionaux et propres à différents groupes ; ses motifs de basse, de batterie et de cuivres ont continué à circuler dans le R&B et les échantillonnages hip-hop."
+    },
+    "genre:pop": {
+      "name": "Pop",
+      "description": "Catégorie vaste et changeante de musique populaire, façonnée par des chansons mémorables, les technologies d’enregistrement, les médias de masse et les échanges avec de nombreux styles ; elle ne provient pas d’une origine unique."
+    },
+    "genre:rock": {
+      "name": "Rock",
+      "description": "Large famille de musiques populaires qui, à partir du rock and roll du milieu du XXe siècle, s’est ramifiée en de nombreuses formes centrées sur la guitare, l’électronique, la voix ou le travail en studio. Le rock recoupe la catégorie plus étroite du rock and roll des débuts, sans s’y confondre."
+    },
+    "genre:blues": {
+      "name": "Blues",
+      "description": "Traditions musicales afro-américaines façonnées par une interprétation vocale expressive, les notes blues et des formes harmoniques récurrentes. Le blues a profondément nourri le jazz, le rhythm and blues et le rock and roll."
+    },
+    "genre:rock-and-roll": {
+      "name": "Rock and roll",
+      "description": "Style populaire du milieu du XXe siècle, formé à partir du rhythm and blues afro-américain, de la country, du gospel et d’autres traditions régionales. Il touche un large public jeune et national aux États-Unis au milieu des années 1950, mais ses racines et ses premiers contributeurs sont antérieurs à ce succès commercial."
+    },
+    "genre:soul": {
+      "name": "Soul",
+      "description": "Famille de musiques populaires afro-américaines née de pratiques issues du gospel et du rhythm and blues, avec des traditions propres à différents labels, régions et studios. La soul devient un style de premier plan au-delà de son public d’origine dans les années 1960 ; les artistes des décennies suivantes en réinventent les approches vocales et musicales."
+    },
+    "genre:techno": {
+      "name": "Techno",
+      "description": "Famille de musiques électroniques pour la danse, nommée et codifiée pour la première fois autour de Détroit au milieu des années 1980, puis développée dans des scènes distinctes à travers le monde. Les rythmes mécaniques répétitifs et la production en studio sont des repères fréquents, tandis que le son et le contexte social varient largement."
+    },
+    "genre:chicago-house": {
+      "name": "House de Chicago",
+      "description": "Style de house et pratique des clubs apparus à Chicago à la fin des années 1970 et dans les années 1980, au sein de la vie nocturne noire et queer, notamment au Warehouse et au Music Box. Les DJ retravaillent des enregistrements disco, funk et électroniques avec des montages et des boîtes à rythmes ; l’origine exacte du terme « house » reste discutée."
+    },
+    "genre:heavy-metal": {
+      "name": "Heavy metal",
+      "description": "Une sonorité puissante et amplifiée, la distorsion, des riffs appuyés et une interprétation théâtrale se développent à partir du hard rock de la fin des années 1960."
+    },
+    "genre:punk-rock": {
+      "name": "Punk rock",
+      "description": "Des chansons courtes et urgentes ainsi qu’une éthique DIY contestent le spectacle du rock et contribuent à établir des réseaux musicaux indépendants."
+    },
+    "genre:renaissance": {
+      "name": "Musique de la Renaissance",
+      "description": "Polyphonie vocale entrelacée, messes, motets et madrigaux dans l’Europe de la Renaissance. Les limites de la période sont approximatives ; ce répertoire est encore interprété."
+    },
+    "genre:salsa": {
+      "name": "Salsa",
+      "description": "Mouvement musical de danse pan-caribéen et centré sur New York, qui s’inspire en particulier du son cubain et de formes afro-cubaines apparentées, avec des histoires régionales distinctes."
+    },
+    "genre:synth-pop": {
+      "name": "Synthpop",
+      "description": "Musique électronique à visée pop où les synthétiseurs et la production électronique occupent une place importante, aux côtés des voix, des guitares, de la batterie et d’autres instruments. Le style apparaît dans plusieurs scènes à la fin des années 1970 et au début des années 1980 ; Kraftwerk et les groupes britanniques de new wave comptent parmi ses influences, mais aucun d’eux ne le définit à lui seul."
+    },
+    "genre:bebop": {
+      "name": "Bebop",
+      "description": "Jazz en petites formations, aux tempos rapides, aux mélodies complexes et à l’improvisation sur des enchaînements d’accords rapides. Un langage fondateur du jazz moderne."
+    },
+    "genre:electro": {
+      "description": "Style afro-américain de musique électronique pour la danse et le hip-hop, associé aux rythmes des boîtes à rythmes, aux basses synthétisées et aux vocoders. « Planet Rock » (1982) d’Afrika Bambaataa et de la Soulsonic Force est largement considéré comme un enregistrement fondateur de l’électro ; le style se poursuit au-delà de son essor du début des années 1980 et développe des courants régionaux."
+    },
+    "genre:swing": {
+      "description": "Style de jazz et idiome de musique de danse fondés sur des rythmes swing, des sections arrangées et l’improvisation, interprétés par de grands orchestres comme par de petites formations. Le swing devient la forme dominante de musique populaire aux États-Unis dans les années 1930 et 1940, tandis que des traditions ultérieures se poursuivent dans d’autres contextes."
+    },
+    "genre:trance": {
+      "description": "Famille de styles de musique électronique pour la danse, caractérisés par un mouvement rythmique soutenu et un développement prolongé, souvent mélodique. Les premières scènes allemandes, notamment à Francfort autour de 1990–1992, contribuent à façonner le genre avec les réseaux de clubs européens. Les sous-genres ultérieurs développent des sonorités et des publics distincts."
+    },
+    "genre:edm": {
+      "description": "Dans l’usage de l’industrie musicale nord-américaine, « EDM » devient à la fin des années 2000 une appellation générique pour les musiques électroniques de danse et de club, notamment les sonorités de festival à visée commerciale. Il s’agit d’une vaste catégorie marketing qui recoupe la house, la trance et d’autres styles, et non d’une forme musicale stable ou de l’origine de la musique électronique pour la danse."
+    },
+    "genre:jungle": {
+      "description": "Courant de clubs et de sound systems noirs britanniques, issu du continuum rave du Royaume-Uni au début des années 1990. Il fait dialoguer des breakbeats hachés avec les pratiques jamaïcaines des sound systems, les basses du reggae et du dancehall, les MC et les radios pirates. Il se ramifie ensuite en plusieurs courants et scènes de drum and bass."
+    },
+    "genre:krautrock": {
+      "description": "Terme générique forgé par la presse musicale britannique au début des années 1970 pour désigner le rock expérimental apparu en Allemagne de l’Ouest à la fin des années 1960. Can, Amon Düül II, Faust, Neu! et les premiers Kraftwerk explorent chacun à leur manière les rythmes répétitifs, l’improvisation, le collage sur bande et l’électronique."
+    },
+    "genre:medieval": {
+      "name": "Musique médiévale",
+      "description": "Vaste période historique de la musique sacrée et profane d’Europe occidentale, qui comprend le chant, les chansons de troubadours, les répertoires instrumentaux et les premières polyphonies. Les dates indiquent une limite chronologique conventionnelle, et non la fin des répertoires ou des pratiques vivantes."
+    },
+    "genre:breakbeat-hardcore": {
+      "description": "Style rave britannique du début des années 1990, qui mêle structures house et acid house, breakbeats hachés, échantillonnage et influences du hip-hop et de la culture sound system. La fragmentation de la scène rave donne naissance à des courants apparentés comme la jungle, le darkcore et le happy hardcore."
+    },
+    "genre:hindustani-classical": {
+      "name": "Musique classique hindoustanie",
+      "description": "Musique classique de l’Inde du Nord, fondée sur le raga et le tala, transmise par des lignées et des traditions d’interprétation. La date indique une vaste période de diffusion publique moderne, et non le début de la tradition."
+    },
+    "genre:latin": {
+      "name": "Musiques latines",
+      "description": "Catégorie générique qui regroupe dans l’industrie musicale et la culture populaire des États-Unis des styles variés d’Amérique latine et de ses diasporas. Elle ne désigne ni un son unique ni une origine commune ; cette catégorie se forme sur les marchés américains dans les années 1930."
+    },
+    "genre:latin-jazz": {
+      "name": "Jazz latin",
+      "description": "Famille de styles de jazz façonnés par les rythmes d’Amérique latine et des Caraïbes, notamment des éléments afro-cubains et brésiliens. Elle se développe à partir des années 1940 grâce aux échanges entre musiciens de jazz et chefs d’orchestre latino-américains."
+    },
+    "genre:psychedelic-rock": {
+      "name": "Rock psychédélique",
+      "description": "Rock transformé au milieu des années 1960 par la contre-culture de l’ère du LSD, l’expérimentation en studio, les sonorités de bourdon et d’influence indienne, ainsi que les longues improvisations. San Francisco et Londres en sont des centres importants. Sa première vague atteint son apogée vers 1967 et nourrit le rock progressif, le hard rock et de nouveaux renouveaux psychédéliques."
+    },
+    "genre:reggae": {
+      "description": "Musique populaire jamaïcaine issue du ska et du rocksteady, portée par une forte assise de basse et de batterie. Elle donne ensuite naissance à de nombreux courants, dont le roots reggae, le dub et le dancehall."
+    },
+    "genre:uk-garage": {
+      "description": "Style de danse centré sur Londres, développé au milieu des années 1990 à partir de disques de garage américains qui circulent dans les clubs britanniques et des pratiques des radios pirates et des raves. Le speed garage et le 2-step explorent des rythmes et des choix de production différents ; des courants ultérieurs comprennent le grime et le dubstep, sans que ces genres soient interchangeables."
+    },
+    "genre:bluegrass": {
+      "description": "Genre de musique acoustique en formation à cordes, façonné par Bill Monroe et les Blue Grass Boys à partir des anciennes traditions appalachiennes et de la country. L’arrivée d’Earl Scruggs en 1945 contribue à cristalliser la formation classique et le jeu de banjo à trois doigts."
+    },
+    "genre:hard-rock": {
+      "description": "Style de rock puissant et influencé par le blues, construit autour de la guitare électrique amplifiée, de sections rythmiques énergiques et de voix puissantes. Ses racines, au milieu et à la fin des années 1960, comprennent Cream, The Jimi Hendrix Experience, Blue Cheer et Steppenwolf ; le hard rock se poursuit dans les scènes d’aréna, de clubs et proches du metal."
+    },
+    "genre:minimalism": {
+      "name": "Minimalisme",
+      "description": "Tendance diverse de la musique expérimentale d’après-guerre, qui met l’accent sur la répétition, les sons tenus, les motifs modulaires et les processus graduels. Les œuvres à sons tenus de La Monte Young, In C de Terry Riley (1964), puis la musique de Steve Reich et de Philip Glass en deviennent des repères importants ; l’appellation et ses limites restent discutées."
+    },
+    "genre:qawwali": {
+      "description": "Tradition sud-asiatique de chant dévotionnel soufi, interprétée dans des sanctuaires et des lieux communautaires. Ses pratiques d’interprétation et ses significations sont liées à des contextes religieux et sociaux particuliers."
+    },
+    "genre:son-cubano": {
+      "description": "Tradition cubaine de chant et de danse, façonnée par des pratiques afro-cubaines et hispanophones, qui constitue ensuite une base importante du son montuno et de la salsa."
+    },
+    "genre:trip-hop": {
+      "description": "Appellation forgée par la presse pour une musique expérimentale downtempo et breakbeat fondée sur l’échantillonnage, influencée par le jazz, le funk et la soul et associée aux scènes britanniques des années 1990. Le Bristol Sound y est apparenté sans être identique ; Massive Attack, Portishead et Tricky ont rejeté l’étiquette trip-hop."
+    },
+    "artist:13th-floor-elevators": {
+      "description": "Groupe de rock psychédélique d’Austin, au Texas, formé en 1965 autour de Roky Erickson, Tommy Hall et Stacy Sutherland. La cruche amplifiée de Hall et le chant d’Erickson ont contribué à définir son son. Le groupe s’est séparé en 1969."
+    },
+    "artist:3-steps-ahead": {
+      "description": "Pseudonyme gabber et hardcore néerlandais du producteur Peter-Paul Pigmans, d’abord développé avec Rob Fabrie et Ed Bout avant que Pigmans ne poursuive en solo sous ce nom. « Drop It » est devenu l’un des morceaux les plus connus du projet ; Pigmans est mort en 2003.",
+      "phaseNote": "La période de carrière correspond à l’époque documentée du projet 3 Steps Ahead, et non à toute la vie de Pigmans ni aux rééditions posthumes ultérieures. Aucune phase de popularité n’est déduite des rares références discographiques."
+    },
+    "artist:a-tribe-called-quest": {
+      "description": "Groupe de hip-hop du Queens dont les productions fondées sur des samples de jazz et de soul, les thèmes afrocentriques et les textes ludiques et réfléchis ont élargi la palette sonore et les sujets du rap du début des années 1990. Formé au milieu des années 1980, le groupe a publié un dernier album en 2016 et donné ses derniers concerts en 2017."
+    },
+    "artist:ac-dc": {
+      "description": "Groupe australien de hard rock formé à Sydney en novembre 1973 par les frères Malcolm et Angus Young. Ses racines blues-rock et son identité hard rock recoupent le heavy metal, même si le groupe a décrit sa musique comme du rock and roll."
+    },
+    "artist:acen": {
+      "description": "Producteur anglais de musique électronique, Acen Razvi est un artiste majeur du label Production House dans la scène britannique breakbeat hardcore et rave. Ses singles « Close Your Eyes » (1991) et « Trip II the Moon » (1992) se sont imposés dans les classements dance ; il a ensuite publié de la musique sous d’autres noms avant de reprendre celui d’Acen."
+    },
+    "artist:africa-70": {
+      "description": "Ensemble nigérian d’afrobeat de Fela Kuti, rebaptisé Africa 70 le 1er janvier 1971 après avoir porté le nom de Nigeria 70. Le groupe devient une attraction majeure sur scène en Afrique de l’Ouest ; l’ensemble prend le nom d’Egypt 80 vers 1980–81."
+    },
+    "artist:ahn-sook-sun": {
+      "description": "Chanteuse sud-coréenne de pansori et maîtresse interprète de gugak, également formée au gayageum byeongchang. Elle se produit dans des théâtres et des hôtels avant de rejoindre la National Changgeuk Company en 1979, puis interprète l’intégralité du répertoire du pansori et reçoit une reconnaissance nationale au titre du patrimoine immatériel.",
+      "estimateNote": "Placement approximatif du début de carrière autour des années 1960 : Korea.net évoque plus de 55 ans de chant en 2015, et le Korea Times documente des prestations dans des théâtres et des hôtels avant 1979. L’année de sa première prestation professionnelle n’est pas établie."
+    },
+    "artist:alban-berg": {
+      "description": "Compositeur autrichien de la seconde école de Vienne. Après avoir commencé à étudier avec Arnold Schoenberg en 1904, Berg développe une synthèse personnelle de l’expressivité du romantisme tardif, de l’atonalité et de la technique dodécaphonique ; Wozzeck établit sa réputation auprès d’un plus large public après sa création en 1925."
+    },
+    "artist:albert-ayler": {
+      "description": "Saxophoniste dont le jeu puissant et chargé de spiritualité devient central dans le free jazz des années 1960."
+    },
+    "artist:ali-akbar-khan": {
+      "description": "Musicien et compositeur indien de musique classique hindoustanie, largement reconnu comme un grand virtuose du sarod. Sa carrière publique commence dans les années 1930 ; il fait ensuite découvrir la musique classique indienne à de nouveaux publics aux États-Unis, y enregistre en 1955 et fonde l’Ali Akbar College of Music."
+    },
+    "artist:alice-coltrane": {
+      "description": "Pianiste de jazz, organiste, harpiste, compositrice, cheffe d’orchestre et enseignante spirituelle américaine. Après des débuts dans le bebop au début des années 1960, elle rejoint le groupe de John Coltrane en 1966 et développe en solo un univers ample, faisant appel à la harpe, à l’orgue, à des instruments indiens et à des matériaux dévotionnels. Elle continue d’enregistrer de la musique spirituelle après s’être éloignée du jazz profane."
+    },
+    "artist:alison-krauss": {
+      "description": "Chanteuse, violoniste et cheffe de groupe de bluegrass américaine, dont le travail va du bluegrass traditionnel à la country, au folk et aux collaborations entre genres. Elle commence à se produire en public enfant, rejoint Union Station en 1986 et continue d’enregistrer et de tourner."
+    },
+    "artist:altern-8": {
+      "description": "Projet de rave électronique de Stafford formé par Mark Archer et Chris Peat, initialement comme une activité parallèle à Nexus 21. Dans sa première période au début des années 1990, il mêle breakbeats, basses puissantes, samples et facéties visuelles ; Archer reprend ensuite ce nom pour des concerts et de nouvelles sorties."
+    },
+    "artist:alton-ellis": {
+      "description": "Chanteur, auteur-compositeur et pianiste jamaïcain dont l’œuvre relie ska, rocksteady et reggae. Il commence à enregistrer avec Eddy Perkins sous le nom d’Alton & Eddie en 1959 ; ses enregistrements rocksteady des années 1960 contribuent à définir le style, et il continue d’enregistrer après son installation au Royaume-Uni."
+    },
+    "artist:amon-duul-ii": {
+      "description": "Groupe munichois issu de la communauté artistique Amon Düül en 1968, devenu l’un des principaux groupes de rock improvisé du krautrock grâce à des albums comme Yeti. Séparé en 1981, il se reforme ensuite, notamment en 1995, et reprend une activité à partir de 2010."
+    },
+    "artist:andy-c": {
+      "description": "DJ et producteur anglais de drum and bass, cofondateur de RAM Records avec Ant Miles. Ses premières sorties et ses DJ sets très remarqués font de lui une figure centrale, tandis que RAM devient un important label de drum and bass."
+    },
+    "artist:anton-webern": {
+      "description": "Compositeur, chef d’orchestre et musicologue autrichien dont les œuvres concises et rigoureusement organisées influencent la musique moderniste et sérielle. Ses premières compositions conservées datent de 1899 ; ses études auprès d’Arnold Schoenberg, commencées en 1904, façonnent ensuite son évolution. Sa musique est marginalisée sous le régime nazi et mieux reconnue après sa mort."
+    },
+    "artist:aphex-twin": {
+      "description": "Projet de musique électronique de Richard D. James, dont le premier disque paraît en 1991, connu pour ses œuvres allant de l’ambient et de la techno à la musique électronique expérimentale."
+    },
+    "artist:armand-van-helden": {
+      "description": "DJ et producteur américain de house issu de la scène des clubs de Boston, devenu célèbre à l’international grâce à ses productions et remixes house des années 1990."
+    },
+    "artist:armando": {
+      "description": "DJ et producteur de Chicago, Armando Gallop est une figure fondatrice de l’acid house, connu pour ses morceaux réalisés avec des machines, notamment « Land of Confusion » et « 151 »."
+    },
+    "artist:armin-van-buuren": {
+      "description": "DJ, producteur et animateur de radio néerlandais dont l’émission A State of Trance, diffusée depuis de longues années, et les productions font de lui une figure majeure de la trance."
+    },
+    "artist:art-blakey": {
+      "description": "Batteur dont les Jazz Messengers deviennent un ensemble emblématique du hard bop et un vivier pour de jeunes musiciens."
+    },
+    "artist:artful-dodger": {
+      "description": "Duo de production UK garage et 2-step de Southampton composé de Mark Hill et Pete Devereux, dont les productions de la fin des années 1990 et les collaborations avec Craig David ont porté le style dans les classements britanniques."
+    },
+    "artist:astor-piazzolla": {
+      "description": "Compositeur et bandonéoniste argentin qui transforme le tango par des œuvres associant ses traditions à des éléments de jazz et de musique classique."
+    },
+    "artist:astral-projection": {
+      "description": "Duo électronique israélien composé d’Avi Nissim et Lior Perlmutter, dont l’association de production antérieure SFX a nourri Astral Projection et la scène trance Goa et psychédélique."
+    },
+    "artist:astrud-gilberto": {
+      "description": "Chanteuse brésilo-américaine dont l’interprétation en anglais de « The Girl from Ipanema » contribue à faire connaître la bossa-nova à l’international ; elle construit ensuite une carrière discographique en solo."
+    },
+    "artist:at-the-drive-in": {
+      "description": "Groupe post-hardcore d’El Paso dont les tournées intensives et l’album Relationship of Command, paru en 2000, en font l’un des groupes marquants du rock alternatif de son époque ; le groupe se reforme par la suite."
+    },
+    "artist:autechre": {
+      "description": "Duo anglais de musique électronique composé de Rob Brown et Sean Booth, présent au catalogue de Warp ; son univers évolue de l’électro underground de la région de Manchester vers une musique électronique expérimentale et complexe."
+    },
+    "artist:avicii": {
+      "description": "DJ et producteur suédois Tim Bergling, connu sous le nom d’Avicii, dont les productions mélodiques de musique électronique dance ont touché le public pop mondial avant sa mort en 2018."
+    },
+    "artist:babes-wodumo": {
+      "description": "Chanteuse et danseuse sud-africaine Bongekile Simelane, figure du gqom dont le succès « Wololo » lui apporte une reconnaissance nationale en 2016."
+    },
+    "artist:bach": {
+      "description": "Compositeur baroque allemand dont les œuvres sacrées, orchestrales et pour clavier unissent un contrepoint complexe à une harmonie expressive."
+    },
+    "artist:bad-bunny": {
+      "description": "Chanteur et rappeur portoricain Benito Antonio Martínez Ocasio, connu sous le nom de Bad Bunny, qui se fait connaître par ses sorties en ligne et devient une figure majeure de la trap latino et du reggaeton."
+    },
+    "artist:baltimora": {
+      "description": "Projet studio d’Italo disco et de synth-pop basé à Milan, créé par le producteur Maurizio Bassi et incarné sur scène par le chanteur et danseur nord-irlandais Jimmy McShane ; il est surtout connu pour « Tarzan Boy »."
+    },
+    "artist:basic-channel": {
+      "description": "Duo et label berlinois de Moritz von Oswald et Mark Ernestus, liés au disquaire Hard Wax. Ses mystérieux maxis vinyles de 1993–94 contribuent à établir la dub techno et la techno minimale."
+    },
+    "artist:bauhaus": {
+      "description": "Groupe anglais de post-punk dont le single « Bela Lugosi’s Dead », paru en 1979, devient une référence du rock gothique ; le groupe d’origine se sépare en 1983 et se reforme par intermittence."
+    },
+    "artist:bb-king": {
+      "description": "Chanteur et guitariste de blues né dans le Mississippi, qui commence à enregistrer à Memphis en 1949 et devient un modèle de la guitare de blues urbain teintée de jazz, donnant des centaines de concerts par an jusque tard dans sa vie. Il se produisait localement depuis le début des années 1940."
+    },
+    "artist:bee-gees": {
+      "description": "Groupe vocal australo-britannique formé de frères, dont les harmonies serrées et les compositions traversent la pop, la soul et le disco ; la bande originale de Saturday Night Fever en fait une figure centrale du disco de la fin des années 1970.",
+      "phaseNote": "Le groupe commence son activité en Australie en 1958, connaît le succès international en 1967 et atteint un sommet majeur avec Saturday Night Fever en 1977. Le trio d’origine prend fin en 2003 ; les apparitions des membres survivants sont intermittentes. Aucune courbe complète de notoriété n’est attribuée."
+    },
+    "artist:beenie-man": {
+      "description": "Deejay et chanteur jamaïcain de dancehall, Moses Davis, connu sous le nom de Beenie Man, commence à enregistrer enfant et devient ensuite un artiste dancehall de renommée internationale."
+    },
+    "artist:belleville-three": {
+      "description": "Juan Atkins, Derrick May et Kevin Saunderson, amis de lycée à Belleville, dans le Michigan, façonnent la techno de Détroit dans les années 1980 grâce à leurs mixtapes et à leurs labels Metroplex, Transmat et KMS. Désignant surtout leurs carrières parallèles sous un nom commun, le trio se réunit sur scène sous le nom de Belleville Three en 2017."
+    },
+    "artist:benga": {
+      "description": "Producteur et DJ du sud de Londres, Adegbenga « Benga » Adejumo contribue aux débuts du dubstep ; son morceau « Skank », paru en 2002, est l’une des premières sorties du label Big Apple de Croydon."
+    },
+    "artist:benny-goodman": {
+      "description": "Clarinettiste et chef d’orchestre de jazz américain dont les débuts professionnels mènent à un orchestre de swing de renommée nationale et à la percée du Palomar Ballroom en 1935."
+    },
+    "artist:beyonce": {
+      "description": "Chanteuse de Houston qui se fait connaître avec Destiny’s Child à la fin des années 1990, puis entame une carrière solo avec Dangerously in Love (2003), récompensé par le Grammy du meilleur album de R&B contemporain. Elle commence à se produire dans le groupe du début des années 1990 qui devient Destiny’s Child."
+    },
+    "event:45rpm-record-introduced": {
+      "name": "RCA Victor introduit le single 45 tours",
+      "description": "RCA Victor introduit le disque 45 tours en 1949, intensifiant la concurrence entre les formats de disques et favorisant le single comme unité durable de publication de musique populaire."
+    },
+    "event:afm-recording-ban-ends": {
+      "name": "L’interdiction d’enregistrer de l’AFM prend fin pour les grandes maisons de disques",
+      "description": "Des accords successifs mettent fin à l’interdiction d’enregistrer de l’AFM : Decca conclut un accord en 1943, tandis que Columbia et RCA Victor en concluent à la fin de 1944. Le conflit établit le versement de redevances pour la musique enregistrée par l’intermédiaire d’un fonds fiduciaire."
+    },
+    "event:afm-recording-ban-start": {
+      "name": "L’interdiction d’enregistrer de l’AFM commence",
+      "description": "L’American Federation of Musicians lance une interdiction d’enregistrer en 1942 dans un contexte de désaccords sur la rémunération de la musique enregistrée. Cette action interrompt les enregistrements commerciaux des membres du syndicat et se poursuit, selon des modalités variables suivant les maisons de disques, jusqu’en 1944."
+    },
+    "event:alam-ara-premiere": {
+      "name": "Alam Ara introduit le cinéma sonore indien porté par la chanson",
+      "description": "Alam Ara d’Ardeshir Irani, sorti à Bombay le 14 mars 1931, est reconnu comme le premier long métrage sonore indien. Ses sept chansons contribuent à établir la place centrale de la chanson dans le cinéma populaire indien."
+    },
+    "event:ars-nova": {
+      "name": "La notation de l’ars nova élargit les possibilités rythmiques",
+      "description": "Les écrits théoriques et les pratiques du début du XIVe siècle associés à l’ars nova développent une notation permettant de distinguer plus précisément les valeurs rythmiques. La datation et l’attribution du traité habituellement lié à Philippe de Vitry restent débattues."
+    },
+    "event:ars-subtilior": {
+      "name": "L’ars subtilior pousse plus loin la notation de la fin du Moyen Âge",
+      "description": "Le répertoire de la fin du XIVe et du début du XVe siècle, aujourd’hui appelé ars subtilior par les chercheurs, est connu pour sa notation rythmique et sa pratique compositionnelle particulièrement complexes. La période est approximative et ne correspond pas à un événement fondateur unique."
+    },
+    "event:baul-literary-attestation": {
+      "name": "Les chants dévotionnels bauls apparaissent dans la littérature bengalie",
+      "description": "L’UNESCO fait remonter les chants dévotionnels bauls au XVe siècle, époque de leur première apparition dans la littérature bengalie. Il s’agit d’un repère documentaire, et non d’une affirmation selon laquelle cette tradition vivante aurait commencé à ce moment-là."
+    },
+    "event:beatles-ed-sullivan": {
+      "name": "The Beatles se produisent dans The Ed Sullivan Show",
+      "description": "L’apparition de The Beatles dans The Ed Sullivan Show le 9 février 1964 touche un vaste public télévisé aux États-Unis et accélère la percée américaine du groupe ainsi que la British Invasion."
+    },
+    "event:beethoven-ninth-premiere": {
+      "name": "La Neuvième Symphonie de Beethoven est créée",
+      "description": "La Neuvième Symphonie est créée à Vienne le 7 mai 1824. Son finale choral élargit les possibilités publiques et expressives de la symphonie, qui devient l’une des œuvres les plus reconnues du répertoire de concert."
+    },
+    "event:benny-goodman-carnegie": {
+      "name": "Benny Goodman se produit au Carnegie Hall",
+      "description": "L’orchestre, le trio et le quartet de Benny Goodman se produisent au Carnegie Hall le 16 janvier 1938. Le concert est enregistré à distance dans un studio voisin ; Columbia publie les enregistrements en 1950."
+    },
+    "event:berliner-gramophone-patent": {
+      "name": "Berliner dépose le brevet du gramophone",
+      "description": "Emile Berliner dépose en 1887 le brevet d’un système d’enregistrement à gravure latérale. Il le développe pour créer un gramophone à disques plats, qui rendra ensuite possible le succès commercial des disques."
+    },
+    "event:billboard-hot-100-launch": {
+      "name": "Billboard lance le Hot 100",
+      "description": "Le Hot 100 de Billboard paraît pour la première fois le 4 août 1958. Sa méthode initiale combine les ventes de disques, les diffusions à la radio et les passages dans les juke-boxes pour établir un classement national des singles ; sa méthodologie évolue au fil du temps."
+    },
+    "event:bristol-sessions": {
+      "name": "Des interprètes des Appalaches sont enregistrés lors des sessions de Bristol",
+      "description": "Les sessions de Victor à Bristol ont lieu dans le Tennessee en juillet et août 1927. Des interprètes, notamment la Carter Family et Jimmie Rodgers, y sont enregistrés ; ces sessions marquent un tournant dans l’histoire commerciale de la country."
+    },
+    "event:cairo-congress-arab-music": {
+      "name": "Le Caire accueille le premier Congrès de musique arabe",
+      "description": "Convoqué sous le règne du roi Fuad I, le congrès réunit musiciens et chercheurs au Caire du 28 mars au 3 avril pour documenter et débattre des pratiques musicales arabes. La BnF conserve des enregistrements réalisés pour cette rencontre."
+    },
+    "event:compact-cassette-introduced": {
+      "name": "Philips introduit la cassette compacte",
+      "description": "Philips introduit la cassette compacte en 1963. Ce petit format permet ensuite l’enregistrement domestique à faible coût, l’écoute portable et l’échange de musique en dehors de l’industrie du disque."
+    },
+    "event:compact-disc-market-launch": {
+      "name": "Le disque compact arrive sur le marché grand public",
+      "description": "Sony lance le CDP-101 et CBS/Sony publie un premier catalogue de disques compacts au Japon en octobre 1982. Le format, développé conjointement avec Philips, atteint d’autres marchés en 1983."
+    },
+    "event:congolese-rumba-emerges": {
+      "name": "La rumba congolaise émerge dans les villes du Congo",
+      "description": "À Léopoldville, aujourd’hui Kinshasa, et à Brazzaville, des musiciens congolais développent un style urbain grâce aux échanges avec les enregistrements cubains importés et aux pratiques locales d’interprétation. La fourchette de décennies reflète les divergences entre les récits de son émergence."
+    },
+    "event:congolese-rumba-unesco-inscription": {
+      "name": "La rumba congolaise est inscrite par l’UNESCO",
+      "description": "La République démocratique du Congo et la République du Congo obtiennent conjointement l’inscription de la rumba congolaise sur la liste représentative de l’UNESCO, qui reconnaît ainsi une tradition urbaine vivante de musique et de danse, essentielle à l’identité congolaise et à la vie de la diaspora."
+    },
+    "event:council-of-trent-music-reforms": {
+      "name": "Le concile de Trente se penche sur la musique d’église",
+      "description": "Au fil de ses sessions, le concile de Trente examine l’usage et l’intelligibilité de la musique dans le culte catholique. Ses discussions s’inscrivent dans une réforme catholique plus vaste ; elles n’imposent pas d’interdiction universelle unique de la polyphonie."
+    },
+    "event:covid-live-music-shutdown": {
+      "name": "Les fermetures liées à la COVID-19 déplacent la musique live en ligne",
+      "description": "Les confinements et les restrictions sanitaires liés à la COVID-19 annulent ou interrompent les spectacles dans de nombreux pays. Musiciens et institutions transfèrent concerts et festivals en diffusion directe sur Internet, révélant à la fois la portée et les limites des prestations numériques."
+    },
+    "event:crazy-blues-recording": {
+      "name": "Mamie Smith enregistre Crazy Blues",
+      "description": "Crazy Blues de Mamie Smith est enregistré et publié par Okeh en 1920. Son succès commercial contribue à établir un marché pour les disques de blues interprétés par des chanteuses noires, bien qu’il ne s’agisse ni de la première interprétation ni du premier enregistrement de blues de l’histoire."
+    },
+    "event:disco-demolition-night": {
+      "name": "La Disco Demolition Night éclate à Chicago",
+      "description": "Une opération promotionnelle des Chicago White Sox, le 12 juillet 1979, invite les spectateurs à apporter des disques disco pour les détruire ; l’événement se termine par une invasion du terrain et un match perdu par forfait. Il devient un épisode marquant de la réaction hostile au disco, sans être à lui seul la cause de son déclin."
+    },
+    "event:eck-robertson-commercial-recording": {
+      "name": "Eck Robertson enregistre de la country pour Victor",
+      "description": "L’enregistrement du violoniste Eck Robertson réalisé par Victor en 1922 figure parmi les premiers disques commerciaux vendus sous l’étiquette country ou « hillbilly ». Cette appellation est historique et reflète le langage de l’industrie de l’époque."
+    },
+    "event:electrical-recording-adopted": {
+      "name": "L’enregistrement électrique transforme le son des enregistrements commerciaux",
+      "description": "Les microphones électriques et l’amplification entrent dans l’enregistrement commercial au milieu des années 1920, améliorant la fidélité sonore et transformant les pratiques de studio ainsi que le son des disques."
+    },
+    "event:elvis-sun-session": {
+      "name": "Elvis Presley enregistre au Sun Studio",
+      "description": "La première séance d’enregistrement d’Elvis Presley chez Sun, en juillet 1954, donne naissance à « That’s All Right », un enregistrement précoce majeur dans l’émergence et la circulation commerciale du rock and roll."
+    },
+    "event:eroica-premiere": {
+      "name": "La symphonie Héroïque de Beethoven est créée",
+      "description": "La Symphonie no 3 de Beethoven, dite Héroïque, est essayée en privé en 1804 et donnée pour la première fois en public à Vienne le 7 avril 1805. Son ampleur et son étendue expressive élargissent le modèle symphonique."
+    },
+    "event:euridice-premiere": {
+      "name": "L’opéra Euridice de Peri est représenté",
+      "description": "L’opéra Euridice de Jacopo Peri est représenté à Florence en 1600. C’est le plus ancien opéra complet conservé ; le Dafne antérieur de Peri, datant de 1598, est perdu."
+    },
+    "event:fania-in-kinshasa": {
+      "name": "Les Fania All-Stars se produisent à Kinshasa",
+      "description": "La prestation du groupe à Kinshasa en 1974 porte la salsa new-yorkaise sur la scène d’un grand concert africain ; Concord situe la représentation au stade du Hai et la relie au film Live in Africa."
+    },
+    "event:fania-yankee-stadium": {
+      "name": "Les Fania All-Stars jouent au Yankee Stadium",
+      "description": "Le concert des Fania All-Stars au stade rend la salsa new-yorkaise visible à grande échelle et est enregistré pour l’album live publié en 1975. Les sources divergent sur la date du concert, le 23 ou le 24 août ; le graphe ne retient donc que l’année."
+    },
+    "event:fantastique-premiere": {
+      "name": "Berlioz crée la Symphonie fantastique",
+      "description": "La Symphonie fantastique d’Hector Berlioz est créée à Paris en 1830. Son programme exceptionnellement explicite et sa palette orchestrale élargie contribuent à en faire une œuvre majeure de la musique symphonique romantique."
+    },
+    "event:festac-77": {
+      "name": "FESTAC ’77 rassemble les arts africains et diasporiques à Lagos",
+      "description": "Le deuxième Festival mondial des arts et de la culture noirs et africains a lieu à Lagos en 1977, présentant des musiques, danses, pièces de théâtre et arts visuels venus de toute l’Afrique et de sa diaspora."
+    },
+    "event:florentine-camerata": {
+      "name": "La Camerata florentine expérimente le chant dramatique",
+      "description": "Un cercle d’humanistes, de poètes et de musiciens florentins explore le chant monodique et la musique dramatique à la fin du XVIe siècle. Ces expériences contribuent aux conditions d’émergence des premiers opéras ; on ne peut attribuer ce genre à un inventeur unique."
+    },
+    "event:four-seasons-publication": {
+      "name": "Vivaldi publie Les Quatre Saisons",
+      "description": "Les concertos d’Antonio Vivaldi connus plus tard sous le nom des Quatre Saisons sont publiés à Amsterdam dans le recueil Il cimento dell’armonia e dell’inventione, op. 8."
+    },
+    "event:gangnam-style-viral-video": {
+      "name": "Le clip de Gangnam Style devient viral dans le monde entier",
+      "description": "Gangnam Style de PSY devient un phénomène mondial précoce du clip musical sur YouTube, montrant comment le partage de vidéos en ligne peut propulser une chanson pop en coréen à travers les marchés nationaux."
+    },
+    "event:gauhar-jaan-recording-sessions": {
+      "name": "Des séances d’enregistrement commercial au gramophone commencent à Calcutta",
+      "description": "L’ingénieur de la Gramophone Company Fred Gaisberg enregistre des artistes indiens à Calcutta en 1902, dont Gauhar Jaan. Les historiens contestent certaines affirmations de « premier enregistrement indien » : cet événement marque donc une campagne d’enregistrement documentée plutôt qu’un premier enregistrement définitif."
+    },
+    "event:grand-ole-opry-broadcast": {
+      "name": "Le WSM Barn Dance commence à être diffusé",
+      "description": "Le WSM Barn Dance commence à Nashville en novembre 1925 et devient plus tard le Grand Ole Opry, une institution radiophonique durable et centrale dans la diffusion nationale de la country."
+    },
+    "event:grand-upright-v-warner": {
+      "name": "L’affaire Grand Upright contre Warner transforme les autorisations d’utilisation de samples",
+      "description": "Dans l’affaire Grand Upright Music, Ltd. v. Warner Bros. Records, un tribunal fédéral américain statue contre l’échantillonnage non autorisé par Biz Markie d’un enregistrement de Gilbert O’Sullivan. Cette décision devient un avertissement majeur dans les débats sur l’autorisation des samples dans le hip-hop."
+    },
+    "event:great-migration-musical-circulation": {
+      "name": "La Grande Migration transforme la vie musicale noire aux États-Unis",
+      "description": "La Grande Migration déplace des millions d’Afro-Américains du Sud vers des villes à travers les États-Unis. Elle crée de nouveaux publics et réseaux et transforme le blues, le jazz, le gospel puis la musique populaire ; les histoires de la musique décrivent plusieurs vagues plutôt qu’une date unique."
+    },
+    "event:guidonian-staff-notation": {
+      "name": "Guido d’Arezzo systématise la notation sur portée",
+      "description": "L’enseignement de Guido d’Arezzo place les neumes sur des lignes pour faciliter la lecture et l’enseignement des rapports de hauteur, étape importante vers la notation sur portée utilisée plus tard dans la musique écrite occidentale."
+    },
+    "event:hamburg-public-opera": {
+      "name": "L’opéra public de Hambourg ouvre ses portes",
+      "description": "L’Oper am Gänsemarkt ouvre à Hambourg en 1678, étendant le modèle commercial de l’opéra public au-delà de l’Italie, dans une grande ville germanophone."
+    },
+    "event:ipod-launch": {
+      "name": "Apple présente l’iPod",
+      "description": "Apple présente l’iPod en octobre 2001, associant la lecture numérique portable à des bibliothèques musicales sur ordinateur, puis aux achats en ligne."
+    },
+    "event:itunes-music-store-launch": {
+      "name": "L’iTunes Music Store ouvre au téléchargement",
+      "description": "Apple lance l’iTunes Music Store aux États-Unis le 28 avril 2003, proposant des morceaux numériques à l’unité dans une boutique en ligne sous licence. Le service contribue à normaliser le téléchargement payant comme mode d’achat grand public."
+    },
+    "event:jazz-singer-sound-film": {
+      "name": "The Jazz Singer introduit le chant synchronisé dans le long métrage",
+      "description": "The Jazz Singer popularise les dialogues et les chansons synchronisés dans le cinéma de long métrage en 1927, accélérant la transition depuis le cinéma muet et ouvrant de nouvelles voies de diffusion pour la musique populaire."
+    },
+    "event:kdka-broadcast": {
+      "name": "KDKA diffuse des résultats électoraux et de la musique",
+      "description": "La diffusion par KDKA des résultats électoraux américains le 2 novembre 1920 est souvent considérée comme un jalon de la radiodiffusion commerciale programmée. La station diffuse aussi de la musique, contribuant à faire de la radio un nouveau moyen d’atteindre les auditeurs."
+    },
+    "event:live-aid": {
+      "name": "Live Aid diffuse des concerts caritatifs à travers les continents",
+      "description": "Les concerts caritatifs reliés de Live Aid à Londres et à Philadelphie le 13 juillet 1985 utilisent la télévision par satellite pour toucher un public mondial et deviennent un jalon des spectacles de bienfaisance télévisés."
+    },
+    "event:lp-introduced": {
+      "name": "Columbia introduit le microsillon 33⅓ tours",
+      "description": "Columbia Records introduit son microsillon 33⅓ tours en 1948 dans des formats de 10 et 12 pouces. Sa durée de lecture plus longue permet aux labels de réunir des œuvres complètes et des programmes plus longs sur moins de disques."
+    },
+    "event:lutheran-chorale-printing": {
+      "name": "Les premiers chorals luthériens sont imprimés",
+      "description": "Les premiers recueils de cantiques luthériens publiés en 1524 contribuent à diffuser les chorals chantés par les assemblées dans l’Allemagne de la Réforme. Les recueils imprimés constituent l’un des canaux de diffusion de ces répertoires parmi d’autres."
+    },
+    "event:maple-leaf-rag-publication": {
+      "name": "Scott Joplin publie Maple Leaf Rag",
+      "description": "La publication de Maple Leaf Rag de Scott Joplin contribue à faire du ragtime un succès national en partitions et établit un modèle durable de composition syncopée pour piano."
+    },
+    "event:messiah-dublin-premiere": {
+      "name": "Le Messie de Haendel est créé à Dublin",
+      "description": "Le Messie de Haendel est donné pour la première fois en public à Dublin le 13 avril 1742, lors d’un concert de bienfaisance."
+    },
+    "event:midi-standard": {
+      "name": "La norme MIDI est adoptée",
+      "description": "Après des discussions entre fabricants d’instruments, la norme Musical Instrument Digital Interface est finalisée en 1983, permettant aux instruments électroniques et aux ordinateurs de différents fabricants d’échanger des données de jeu."
+    },
+    "event:monterey-pop-festival": {
+      "name": "Le Monterey International Pop Festival a lieu",
+      "description": "Le Monterey International Pop Festival présente en Californie, en juin 1967, une programmation variée de rock, de soul et de musique classique indienne et contribue à faire du festival un format de spectacle emblématique de l’époque."
+    },
+    "event:musica-enchiriadis-polyphony": {
+      "name": "Une polyphonie ancienne est notée dans un manuscrit conservé",
+      "description": "Un manuscrit de la fin du IXe ou du début du Xe siècle conserve de courts chants polyphoniques notés, parmi les plus anciens exemples écrits conservés de musique à plusieurs parties. Ce témoignage documente une transmission écrite, et non le début de la pratique polyphonique."
+    },
+    "event:napster-shutdown": {
+      "name": "Napster suspend son service initial de partage de fichiers",
+      "description": "À la suite de décisions d’un tribunal fédéral dans un litige sur le droit d’auteur, Napster suspend en 2001 son service initial de partage de fichiers de pair à pair. Cet épisode accélère le débat sur l’accès à la musique numérique, les licences et la distribution en ligne."
+    },
+    "event:notre-dame-polyphony": {
+      "name": "Les compositeurs de Notre-Dame développent la polyphonie à grande échelle",
+      "description": "Des compositeurs associés à l’école de Notre-Dame, dont Léonin et Pérotin, développent à Paris à la fin du XIIe siècle des mises en musique polyphoniques étendues du répertoire liturgique."
+    },
+    "event:odjb-jazz-recording": {
+      "name": "L’Original Dixieland Jazz Band enregistre et publie des faces de jazz",
+      "description": "L’Original Dixieland Jazz Band enregistre et publie chez Victor en 1917 des faces de jazz largement diffusées. La formule « premier enregistrement de jazz » est une désignation conventionnelle de cette sortie à succès commercial, et non la preuve qu’aucune prestation antérieure de jazz par des musiciens noirs n’existait."
+    },
+    "event:orfeo-premiere": {
+      "name": "L’Orfeo de Monteverdi est créé",
+      "description": "L’Orfeo de Claudio Monteverdi est représenté à la cour des Gonzague à Mantoue en 1607 et devient l’un des premiers opéras à conserver une place centrale dans le répertoire."
+    },
+    "event:pansori-baul-unesco-inscription": {
+      "name": "Le pansori et les chants bauls entrent sur la liste représentative de l’UNESCO",
+      "description": "L’UNESCO intègre en 2008 le pansori et les chants bauls à sa liste représentative du patrimoine culturel immatériel de l’humanité. Cette inscription reconnaît des traditions vivantes et des besoins de sauvegarde ; elle ne date pas leurs origines."
+    },
+    "event:pansori-emerges": {
+      "name": "Le pansori se développe dans le sud-ouest de la Corée",
+      "description": "L’UNESCO situe l’émergence du pansori dans le sud-ouest de la Corée au XVIIe siècle, probablement comme nouvelle expression de chants narratifs chamaniques ; ses débuts exacts restent incertains."
+    },
+    "event:paris-conservatoire-founded": {
+      "name": "Le Conservatoire de Paris est fondé",
+      "description": "Le Conservatoire de Paris est créé en 1795 comme établissement de formation musicale soutenu par l’État, dans le cadre d’un nouveau modèle d’enseignement public de la musique."
+    },
+    "event:petrucci-odhecaton": {
+      "name": "Petrucci imprime l’Odhecaton",
+      "description": "Ottaviano Petrucci publie à Venise Harmonice Musices Odhecaton A, le premier recueil imprimé important de musique polyphonique et un jalon dans la diffusion plus large du répertoire écrit."
+    },
+    "event:phonautograph-records-sound": {
+      "name": "Le phonautographe trace le son",
+      "description": "Le phonautographe d’Édouard-Léon Scott de Martinville trace les ondes sonores sur papier mais ne peut pas les restituer. Ses tracés conservés sont reconstruits numériquement par la suite ; l’appareil constitue un jalon précoce de l’enregistrement sonore."
+    },
+    "event:renaissance-musical-exchange": {
+      "name": "Les échanges musicaux de la Renaissance transforment la composition européenne",
+      "description": "La circulation entre cours, églises, villes et imprimeurs contribue à diffuser les pratiques de composition entre les régions européennes et favorise de nouveaux répertoires profanes et sacrés. Cette périodisation décrit des échanges documentés, et non une origine unique."
+    },
+    "event:rite-of-spring-premiere": {
+      "name": "Le Sacre du printemps est créé à Paris",
+      "description": "Le ballet Le Sacre du printemps d’Igor Stravinsky est créé à Paris le 29 mai 1913. Sa partition et sa mise en scène deviennent un jalon de la musique et de la danse modernes ; les récits du tumulte dans le public divergent dans leurs détails."
+    },
+    "event:san-cassiano-public-opera": {
+      "name": "Venise ouvre le Teatro San Cassiano au public payant de l’opéra",
+      "description": "Le Teatro San Cassiano ouvre comme opéra public à Venise en 1637, instituant un opéra accessible sur billet à un public payant au-delà des cadres de la cour et de l’aristocratie."
+    },
+    "event:soundcloud-launch": {
+      "name": "SoundCloud est fondé à Berlin",
+      "description": "L’histoire de l’entreprise SoundCloud situe sa fondation par Alexander Ljung et Eric Wahlforss à Berlin en 2007. Les recherches universitaires datent le lancement public de la plateforme de 2008 ; le graphe retient l’année de fondation sans la confondre avec celle du lancement public."
+    },
+    "event:spotify-launch": {
+      "name": "Spotify lance le streaming en Europe",
+      "description": "Spotify est lancé sur plusieurs marchés européens en octobre 2008, contribuant à établir le streaming à la demande par abonnement comme moyen majeur d’accès à la musique enregistrée."
+    },
+    "event:streaming-overtakes-downloads": {
+      "name": "Le streaming devient la première source de revenus de la musique numérique sur de nombreux marchés",
+      "description": "Le rapport Recording Industry in Numbers de l’IFPI publié en 2015, fondé sur les données du marché de 2014, constate que les revenus du streaming ont dépassé ceux des téléchargements sur 37 marchés. Il s’agit d’une transition propre à chaque marché, et non d’une date de basculement universelle."
+    },
+    "event:tiktok-music-virality": {
+      "name": "TikTok et les vidéos courtes transforment la découverte musicale",
+      "description": "L’émergence de TikTok à partir de Douyin puis son intégration à Musical.ly contribuent à faire de la vidéo courte un canal majeur de découverte musicale et de circulation de musique par les utilisateurs. La période est approximative et n’implique pas que TikTok ait causé à lui seul les tendances musicales virales."
+    },
+    "event:troubadour-song-circulation": {
+      "name": "Les chants des troubadours circulent dans la culture courtoise",
+      "description": "Les troubadours composent et interprètent des chants en langue vernaculaire, notamment dans les milieux courtois du sud de la France. Les manuscrits conservés documentent une partie d’une culture de l’interprétation plus vaste, sans en montrer toute l’étendue."
+    },
+    "event:uk-criminal-justice-rave-law": {
+      "name": "La Criminal Justice Act britannique cible les raves non autorisées",
+      "description": "La Criminal Justice and Public Order Act britannique de 1994 crée des pouvoirs de police concernant certains rassemblements non autorisés et définit une catégorie de rythmes répétitifs. La loi devient un point de conflit majeur autour de la culture rave et de l’espace public."
+    },
+    "event:walkman-launch": {
+      "name": "Sony lance le Walkman",
+      "description": "Sony lance au Japon le lecteur de cassettes portable TPS-L2 en juillet 1979. Il arrive aux États-Unis en juin 1980 sous le nom de Sound-About et contribue à populariser l’écoute portable au casque."
+    },
+    "event:woodstock-festival": {
+      "name": "Le Woodstock Music & Art Fair a lieu",
+      "description": "Le Woodstock Music & Art Fair se tient à Bethel, dans l’État de New York, du 15 au 18 août 1969. Son ampleur, sa documentation et sa diffusion ultérieure en font une référence dans l’histoire des festivals de rock."
+    },
+    "event:youtube-launch": {
+      "name": "YouTube est lancé comme plateforme vidéo ouverte au public",
+      "description": "La version bêta de YouTube est lancée en 2005 et le site de partage de vidéos s’ouvre plus largement au public plus tard la même année. Il devient un canal mondial majeur pour les clips, les prestations, la découverte musicale et la circulation entre fans."
+    },
+    "event:siti-binti-saad-recordings": {
+      "name": "Siti binti Saad enregistre du taarab à Bombay",
+      "description": "Siti binti Saad et ses musiciens enregistrent à Bombay en 1928, contribuant à diffuser le taarab en swahili sur des disques commerciaux au-delà de Zanzibar."
+    },
+    "event:essaouira-gnawa-festival": {
+      "name": "Le Gnaoua World Music Festival commence à Essaouira",
+      "description": "Le premier festival d’Essaouira crée une scène publique récurrente pour les musiciens gnaoua et les échanges avec des artistes d’autres traditions."
+    },
+    "event:gnawa-unesco-inscription": {
+      "name": "Les pratiques gnaoua sont inscrites sur la liste du patrimoine de l’UNESCO",
+      "description": "L’UNESCO inscrit les pratiques gnaoua du Maroc sur sa liste représentative du patrimoine culturel immatériel de l’humanité, reconnaissant leur musique, leurs rituels et leur transmission communautaire."
+    },
+    "event:rai-unesco-inscription": {
+      "name": "Le raï est inscrit sur la liste du patrimoine de l’UNESCO",
+      "description": "L’UNESCO inscrit le raï, chant populaire traditionnel d’Algérie, sur sa liste représentative du patrimoine culturel immatériel de l’humanité."
+    },
+    "event:tamla-records-founded": {
+      "name": "Berry Gordy fonde Tamla Records",
+      "description": "Berry Gordy crée sa maison de disques indépendante à Détroit le 12 janvier 1959, d’abord sous le nom de Tamla Records. Le nom Motown apparaît plus tard en 1959 ; Motown Record Corporation est officiellement constituée en 1960. Cette fondation pose les bases du système influent d’artistes, de composition, de production et de studio du label. Cette grande maison indépendante détenue par des personnes noires devient une force déterminante de la soul et de la pop américaines."
+    }
+  },
+  "edges": {}
+}

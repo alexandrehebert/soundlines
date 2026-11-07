@@ -1,11 +1,11 @@
 import { BarChart3, BookCheck, Check, Disc3, Guitar, Link2, Users, X, type LucideIcon } from 'lucide-react'
 import { motion } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent, type ReactNode } from 'react'
+import { useTranslations } from 'next-intl'
 import reviewStatus from '../data/review-status.json'
 import { useExplorer } from '../ExplorerContext.ts'
 import {
   datasetStats,
-  LINK_GROUPS,
   reviewStats,
   type EmergenceBin,
   type EntityStats,
@@ -14,25 +14,20 @@ import {
   type ReviewStats,
   type StatsTab,
 } from '../graph/stats.ts'
-import {
-  EDGE_TYPE_LABELS,
-  FAMILY_LABELS,
-  NODE_TYPE_LABELS,
-  type ArtistKind,
-  type Confidence,
-  type NodeType,
-} from '../graph/types.ts'
-import { FAMILY_COLORS, formatPeriod, NODE_TYPE_COLORS } from '../theme.ts'
+import type { Confidence, NodeType } from '../graph/types.ts'
+import { chartColor, FAMILY_COLORS, formatPeriod, NODE_TYPE_COLORS } from '../theme.ts'
+import { graphLabels } from '../i18n/graphLabels.ts'
+import type { Locale } from '../i18n/routing.ts'
 
 const STATS_TABS: readonly StatsTab[] = ['overview', 'genre', 'artist', 'instrument', 'links', 'review']
 
-const TAB_OPTIONS: Record<StatsTab, { label: string; Icon: LucideIcon }> = {
-  overview: { label: 'Overview', Icon: BarChart3 },
-  genre: { label: 'Genres', Icon: Disc3 },
-  artist: { label: 'Artists', Icon: Users },
-  instrument: { label: 'Instruments', Icon: Guitar },
-  links: { label: 'Links', Icon: Link2 },
-  review: { label: 'Source review', Icon: BookCheck },
+const TAB_OPTIONS: Record<StatsTab, LucideIcon> = {
+  overview: BarChart3,
+  genre: Disc3,
+  artist: Users,
+  instrument: Guitar,
+  links: Link2,
+  review: BookCheck,
 }
 
 const CONFIDENCE_COLORS: Record<Confidence | 'unrated', string> = {
@@ -42,14 +37,9 @@ const CONFIDENCE_COLORS: Record<Confidence | 'unrated', string> = {
   unrated: '#475569',
 }
 
-const ARTIST_KIND_LABELS: Record<ArtistKind, string> = {
-  person: 'Individuals',
-  group: 'Groups',
-  collective: 'Collectives',
-}
-
-const number = new Intl.NumberFormat('en')
 const percent = (part: number, total: number) => (total ? `${Math.round((part / total) * 100)}%` : '–')
+const formatNumber = (value: number, locale: Locale) =>
+  new Intl.NumberFormat(locale).format(value)
 
 export function DatasetStats({
   initialTab = 'overview',
@@ -61,7 +51,9 @@ export function DatasetStats({
   /** Ids reviewed against serious sources; defaults to the generated review-status.json. */
   review?: { reviewed: readonly string[]; lastReviewed?: string | null }
 }) {
-  const { index, selectNode } = useExplorer()
+  const { index, locale, selectNode } = useExplorer()
+  const t = useTranslations('stats')
+  const tTabs = useTranslations('stats.tabs')
   const stats = useMemo(() => datasetStats(index), [index])
   const sourceReview = useMemo(() => reviewStats(index, review), [index, review])
   const [tab, setTab] = useState<StatsTab>(initialTab)
@@ -130,30 +122,33 @@ export function DatasetStats({
       >
         <header className="flex shrink-0 items-start justify-between gap-4 border-b border-slate-800 px-5 pb-3 pt-4">
           <div>
-            <h2 id={`${id}-title`} className="text-base font-bold text-white">Dataset statistics</h2>
+            <h2 id={`${id}-title`} className="text-base font-bold text-white">{t('title')}</h2>
             <p className="mt-0.5 text-xs text-slate-500">
-              {number.format(stats.totalNodes)} entries and {number.format(stats.totalEdges)} links
-              {stats.span && <> spanning {stats.span.start} – {stats.span.end}</>}
+              {t('summary', {
+                entries: formatNumber(stats.totalNodes, locale),
+                links: formatNumber(stats.totalEdges, locale),
+                span: stats.span ? t('summarySpan', stats.span) : '',
+              })}
             </p>
           </div>
           <button
             type="button"
             onClick={onClose}
             className="-mr-2 flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-slate-400 hover:bg-slate-800 hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
-            aria-label="Close statistics"
+            aria-label={t('close')}
           >
             <X className="h-5 w-5" />
           </button>
         </header>
         <div
           role="tablist"
-          aria-label="Statistics sections"
+          aria-label={t('sections')}
           onKeyDown={handleTabKeyDown}
           className="flex shrink-0 gap-1 overflow-x-auto border-b border-slate-800 px-3 py-2"
         >
           {STATS_TABS.map((value) => {
             const selected = tab === value
-            const { label, Icon } = TAB_OPTIONS[value]
+            const Icon = TAB_OPTIONS[value]
             return (
               <button
                 key={value}
@@ -172,7 +167,7 @@ export function DatasetStats({
                 }`}
               >
                 <Icon className="h-3.5 w-3.5" aria-hidden="true" />
-                {label}
+                {tTabs(value)}
               </button>
             )
           })}
@@ -183,17 +178,18 @@ export function DatasetStats({
           aria-labelledby={`${id}-tab-${tab}`}
           className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-5 py-4 pb-[calc(env(safe-area-inset-bottom)+1rem)]"
         >
-          {tab === 'overview' && <OverviewPanel stats={stats} onOpen={open} />}
+          {tab === 'overview' && <OverviewPanel stats={stats} onOpen={open} locale={locale} />}
           {(tab === 'genre' || tab === 'artist' || tab === 'instrument') && (
             <EntityPanel
               type={tab}
               stats={stats.entities[tab]}
               artistKinds={tab === 'artist' ? stats.artistKinds : undefined}
               onOpen={open}
+              locale={locale}
             />
           )}
-          {tab === 'links' && <LinksPanel stats={stats} />}
-          {tab === 'review' && <ReviewPanel stats={sourceReview} />}
+          {tab === 'links' && <LinksPanel stats={stats} locale={locale} />}
+          {tab === 'review' && <ReviewPanel stats={sourceReview} locale={locale} />}
         </div>
       </motion.section>
     </motion.div>
@@ -202,27 +198,29 @@ export function DatasetStats({
 
 type Stats = ReturnType<typeof datasetStats>
 
-function OverviewPanel({ stats, onOpen }: { stats: Stats; onOpen: (id: string) => void }) {
+function OverviewPanel({ stats, onOpen, locale }: { stats: Stats; onOpen: (id: string) => void; locale: Locale }) {
+  const t = useTranslations('stats')
+  const tTypeLabels = useTranslations('stats.typeLabels')
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-        <Metric label="Entries" value={number.format(stats.totalNodes)} />
-        <Metric label="Links" value={number.format(stats.totalEdges)} />
-        <Metric label="Avg. links / entry" value={stats.averageDegree.toFixed(1)} />
-        <Metric label="Sourced entries" value={percent(stats.sourcedNodes, stats.totalNodes)} />
+        <Metric label={t('entries')} value={formatNumber(stats.totalNodes, locale)} />
+        <Metric label={t('links')} value={formatNumber(stats.totalEdges, locale)} />
+        <Metric label={t('averageLinksPerEntry')} value={stats.averageDegree.toFixed(1)} />
+        <Metric label={t('sourcedEntries')} value={percent(stats.sourcedNodes, stats.totalNodes)} />
       </div>
-      <Section title="Entries by type">
+      <Section title={t('entriesByType')}>
         <BarList
           items={stats.nodeTypes.map(({ type, count }) => ({
-            key: type, label: pluralType(type), count, color: NODE_TYPE_COLORS[type],
+            key: type, label: tTypeLabels(type), count, color: NODE_TYPE_COLORS[type],
           }))}
         />
       </Section>
-      <Section title="Most connected entries">
-        <RankedList items={stats.mostConnected} onOpen={onOpen} showType />
+      <Section title={t('mostConnectedEntries')}>
+        <RankedList items={stats.mostConnected} onOpen={onOpen} showType locale={locale} />
       </Section>
       {stats.isolated > 0 && (
-        <p className="text-xs text-slate-500">{stats.isolated} entries have no links yet.</p>
+        <p className="text-xs text-slate-500">{t('noLinksYet', { count: stats.isolated })}</p>
       )}
     </div>
   )
@@ -233,52 +231,58 @@ function EntityPanel({
   stats,
   artistKinds,
   onOpen,
+  locale,
 }: {
   type: NodeType
   stats: EntityStats
   artistKinds?: Stats['artistKinds']
   onOpen: (id: string) => void
+  locale: Locale
 }) {
-  const plural = pluralType(type).toLowerCase()
+  const t = useTranslations('stats')
+  const tTypeLabels = useTranslations('stats.typeLabels')
+  const tArtistKindLabels = useTranslations('stats.artistKindLabels')
+  const labels = graphLabels(locale)
+  const plural = tTypeLabels(type).toLowerCase()
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-        <Metric label={pluralType(type)} value={number.format(stats.total)} />
-        <Metric label="Still active" value={number.format(stats.active)} hint={percent(stats.active, stats.total)} />
-        <Metric label="Time span" value={stats.span ? `${stats.span.end - stats.span.start} yrs` : '–'} hint={stats.span ? `${stats.span.start} – ${stats.span.end}` : undefined} />
-        <Metric label="Avg. links" value={stats.averageDegree.toFixed(1)} />
+        <Metric label={tTypeLabels(type)} value={formatNumber(stats.total, locale)} />
+        <Metric label={t('stillActive')} value={formatNumber(stats.active, locale)} hint={percent(stats.active, stats.total)} />
+        <Metric label={t('timeSpan')} value={stats.span ? t('years', { count: stats.span.end - stats.span.start }) : '–'} hint={stats.span ? `${stats.span.start} – ${stats.span.end}` : undefined} />
+        <Metric label={t('averageLinks')} value={stats.averageDegree.toFixed(1)} />
       </div>
       {stats.emergence.length > 0 && (
-        <Section title={`When ${plural} emerged`} subtitle="centuries before 1900, decades after">
+        <Section title={t('whenEmerged', { plural })} subtitle={t('emergenceSubtitle')}>
           <Histogram bins={stats.emergence} color={NODE_TYPE_COLORS[type]} unit={plural} />
         </Section>
       )}
       {artistKinds && artistKinds.length > 0 && (
-        <Section title="Artist kinds">
+        <Section title={t('artistKinds')}>
           <StackedBar
             items={artistKinds.map(({ kind, count }, i) => ({
-              key: kind, label: ARTIST_KIND_LABELS[kind], count, color: ['#67e8f9', '#a78bfa', '#f472b6'][i % 3],
+              key: kind, label: tArtistKindLabels(kind), count, color: ['#67e8f9', '#a78bfa', '#f472b6'][i % 3],
             }))}
           />
         </Section>
       )}
-      <Section title="By family" subtitle={stats.unassigned ? `${stats.unassigned} without a family lane` : undefined}>
+      <Section title={t('byFamily')} subtitle={stats.unassigned ? t('withoutFamily', { count: stats.unassigned }) : undefined}>
         <BarList
           items={stats.families.map(({ family, count }) => ({
-            key: family, label: FAMILY_LABELS[family], count, color: FAMILY_COLORS[family],
+            key: family, label: labels.families[family], count, color: FAMILY_COLORS[family],
           }))}
         />
       </Section>
       <div className="grid gap-6 sm:grid-cols-2">
-        <Section title="Most connected">
-          <RankedList items={stats.mostConnected} onOpen={onOpen} />
+        <Section title={t('mostConnected')}>
+          <RankedList items={stats.mostConnected} onOpen={onOpen} locale={locale} />
         </Section>
         <div className="space-y-6">
-          <Section title="Oldest">
-            <PeriodList nodes={stats.oldest} onOpen={onOpen} />
+          <Section title={t('oldest')}>
+            <PeriodList nodes={stats.oldest} onOpen={onOpen} locale={locale} />
           </Section>
-          <Section title="Most recent">
-            <PeriodList nodes={stats.newest} onOpen={onOpen} />
+          <Section title={t('mostRecent')}>
+            <PeriodList nodes={stats.newest} onOpen={onOpen} locale={locale} />
           </Section>
         </div>
       </div>
@@ -286,35 +290,38 @@ function EntityPanel({
   )
 }
 
-function LinksPanel({ stats }: { stats: Stats }) {
+function LinksPanel({ stats, locale }: { stats: Stats; locale: Locale }) {
+  const t = useTranslations('stats')
+  const tConfidenceLabels = useTranslations('stats.confidenceLabels')
+  const labels = graphLabels(locale)
   const rated = stats.totalEdges - stats.confidence.unrated
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-        <Metric label="Links" value={number.format(stats.totalEdges)} />
-        <Metric label="Relation types" value={String(stats.edgeTypes.length)} />
-        <Metric label="Confidence rated" value={percent(rated, stats.totalEdges)} />
-        <Metric label="Sourced links" value={percent(stats.sourcedEdges, stats.totalEdges)} />
+        <Metric label={t('links')} value={formatNumber(stats.totalEdges, locale)} />
+        <Metric label={t('relationTypes')} value={String(stats.edgeTypes.length)} />
+        <Metric label={t('confidenceRated')} value={percent(rated, stats.totalEdges)} />
+        <Metric label={t('sourcedLinks')} value={percent(stats.sourcedEdges, stats.totalEdges)} />
       </div>
-      <Section title="Confidence">
+      <Section title={t('confidence')}>
         <StackedBar
           items={(['high', 'medium', 'low', 'unrated'] as const).map((level) => ({
             key: level,
-            label: level === 'unrated' ? 'Not rated' : capitalize(level),
+            label: tConfidenceLabels(level),
             count: stats.confidence[level],
             color: CONFIDENCE_COLORS[level],
           }))}
         />
       </Section>
-      <Section title="By relation type">
+      <Section title={t('byRelationType')}>
         <BarList
           items={stats.edgeTypes.map(({ type, count }) => ({
-            key: type, label: capitalize(EDGE_TYPE_LABELS[type]), count, color: '#38bdf8',
+            key: type, label: capitalize(labels.edges[type]), count, color: '#38bdf8',
           }))}
         />
       </Section>
       {stats.sourceDomains.length > 0 && (
-        <Section title="Top cited sources" subtitle="across entries and links">
+        <Section title={t('topCitedSources')} subtitle={t('acrossEntriesAndLinks')}>
           <BarList
             items={stats.sourceDomains.map(({ domain, count }) => ({
               key: domain, label: domain, count, color: '#94a3b8',
@@ -326,66 +333,68 @@ function LinksPanel({ stats }: { stats: Stats }) {
   )
 }
 
-function ReviewPanel({ stats }: { stats: ReviewStats }) {
+function ReviewPanel({ stats, locale }: { stats: ReviewStats; locale: Locale }) {
+  const t = useTranslations('stats')
+  const tConfidenceLabels = useTranslations('stats.confidenceLabels')
+  const tTypeLabels = useTranslations('stats.typeLabels')
+  const tLinkGroupLabels = useTranslations('stats.linkGroupLabels')
   const nodeTotal = stats.nodeTypes.reduce((sum, item) => sum + item.total, 0)
   const edgeTotal = stats.total - nodeTotal
   return (
     <div className="space-y-6">
       <p className="text-xs leading-relaxed text-slate-400">
-        Entries and links are being re-checked against serious sources such as archives, museums, scholarship,
-        halls of fame and reputable press. Each review challenges dates, phases, notes and confidence, and leaves an
-        evidence note in the repository.
-        {stats.lastReviewed && <span className="text-slate-600"> Last review {stats.lastReviewed}.</span>}
+        {t('reviewDescription')}
+        {stats.lastReviewed && <span className="text-slate-600">{t('lastReview', { date: stats.lastReviewed })}</span>}
       </p>
-      <Section title="Progress">
+      <Section title={t('progress')}>
         <div className="flex items-center gap-3">
           <div className="min-w-0 flex-1">
-            <ProgressBar label="All entries and links" reviewed={stats.reviewed} total={stats.total} />
+            <ProgressBar label={t('allEntriesAndLinks')} reviewed={stats.reviewed} total={stats.total} />
           </div>
           {stats.total > 0 && stats.reviewed === stats.total ? (
             <span className="flex shrink-0 items-center gap-1 text-[10px] font-semibold uppercase tracking-wide text-green-400">
               <Check aria-hidden="true" size={12} />
-              Review finished
+              {t('reviewFinished')}
             </span>
           ) : (
             <span className="shrink-0 text-[10px] font-semibold uppercase tracking-wide text-slate-500">
-              In progress
+              {t('inProgress')}
             </span>
           )}
         </div>
       </Section>
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-        <Metric label="Reviewed overall" value={percent(stats.reviewed, stats.total)} hint={`${number.format(stats.reviewed)} / ${number.format(stats.total)}`} />
-        <Metric label="Entries reviewed" value={number.format(stats.reviewedNodes)} hint={percent(stats.reviewedNodes, nodeTotal)} />
-        <Metric label="Links reviewed" value={number.format(stats.reviewedEdges)} hint={percent(stats.reviewedEdges, edgeTotal)} />
+        <Metric label={t('reviewedOverall')} value={percent(stats.reviewed, stats.total)} hint={`${formatNumber(stats.reviewed, locale)} / ${formatNumber(stats.total, locale)}`} />
+        <Metric label={t('entriesReviewed')} value={formatNumber(stats.reviewedNodes, locale)} hint={percent(stats.reviewedNodes, nodeTotal)} />
+        <Metric label={t('linksReviewed')} value={formatNumber(stats.reviewedEdges, locale)} hint={percent(stats.reviewedEdges, edgeTotal)} />
         <Metric
-          label="Sources / reviewed item"
+          label={t('sourcesPerReviewedItem')}
           value={stats.averageSources.reviewed.toFixed(1)}
-          hint={`${stats.averageSources.pending.toFixed(1)} pending`}
+          hint={`${stats.averageSources.pending.toFixed(1)} ${t('pending')}`}
         />
       </div>
       {stats.reviewedEdges > 0 && (
-        <Section title="Confidence after review" subtitle="reviewed links only">
+        <Section title={t('confidenceAfterReview')} subtitle={t('reviewedLinksOnly')}>
           <StackedBar
             items={(['high', 'medium', 'low', 'unrated'] as const).map((level) => ({
               key: level,
-              label: level === 'unrated' ? 'Not rated' : capitalize(level),
+              label: tConfidenceLabels(level),
               count: stats.confidence[level],
               color: CONFIDENCE_COLORS[level],
             }))}
           />
         </Section>
       )}
-      <Section title="Entries by type">
+      <Section title={t('entriesByType')}>
         <ProgressList
-          items={stats.nodeTypes.map((item) => ({ ...item, label: pluralType(item.key), color: NODE_TYPE_COLORS[item.key] }))}
+          items={stats.nodeTypes.map((item) => ({ ...item, label: tTypeLabels(item.key), color: NODE_TYPE_COLORS[item.key] }))}
         />
       </Section>
-      <Section title="Links by kind">
-        <ProgressList items={stats.linkGroups.map((item) => ({ ...item, label: LINK_GROUPS[item.key].label, color: '#38bdf8' }))} />
+      <Section title={t('linksByKind')}>
+        <ProgressList items={stats.linkGroups.map((item) => ({ ...item, label: tLinkGroupLabels(item.key), color: '#38bdf8' }))} />
       </Section>
       {stats.sourceDomains.length > 0 && (
-        <Section title="Most cited in reviewed items">
+        <Section title={t('mostCitedReviewed')}>
           <BarList
             items={stats.sourceDomains.map(({ domain, count }) => ({ key: domain, label: domain, count, color: '#94a3b8' }))}
           />
@@ -395,17 +404,23 @@ function ReviewPanel({ stats }: { stats: ReviewStats }) {
   )
 }
 
-function ProgressBar({ label, reviewed, total, color = '#4ade80' }: { label: string; reviewed: number; total: number; color?: string }) {
+function ProgressBar({ label, reviewed, total, color = '#4ade80' }: {
+  label: string
+  reviewed: number
+  total: number
+  color?: string
+}) {
+  const t = useTranslations('stats')
   return (
     <span
       className="block h-2 overflow-hidden rounded-full bg-slate-800/70"
       role="progressbar"
-      aria-label={`${label}: ${reviewed} of ${total} reviewed`}
+      aria-label={`${label}: ${t('reviewedProgress', { reviewed, total })}`}
       aria-valuemin={0}
       aria-valuemax={total}
       aria-valuenow={reviewed}
     >
-      <span className="block h-full rounded-full" style={{ width: `${total ? (reviewed / total) * 100 : 0}%`, backgroundColor: color }} />
+      <span className="block h-full rounded-full" style={{ width: `${total ? (reviewed / total) * 100 : 0}%`, backgroundColor: chartColor(color) }} />
     </span>
   )
 }
@@ -429,10 +444,6 @@ function ProgressList({ items }: { items: (ReviewProgress<string> & { label: str
 
 function capitalize(text: string) {
   return `${text[0].toUpperCase()}${text.slice(1)}`
-}
-
-function pluralType(type: NodeType) {
-  return `${NODE_TYPE_LABELS[type]}s`
 }
 
 function Section({ title, subtitle, children }: { title: string; subtitle?: string; children: ReactNode }) {
@@ -476,7 +487,7 @@ function BarList({ items }: { items: BarItem[] }) {
           <span className="h-2 overflow-hidden rounded-full bg-slate-800/70">
             <span
               className="block h-full rounded-full"
-              style={{ width: `${(item.count / max) * 100}%`, backgroundColor: item.color }}
+              style={{ width: `${(item.count / max) * 100}%`, backgroundColor: chartColor(item.color) }}
             />
           </span>
           <span className="text-right font-medium tabular-nums text-slate-400">{item.count}</span>
@@ -492,13 +503,13 @@ function StackedBar({ items }: { items: BarItem[] }) {
     <div>
       <div className="flex h-3 overflow-hidden rounded-full bg-slate-800/70" role="img" aria-label={items.map((item) => `${item.label}: ${item.count}`).join(', ')}>
         {items.filter((item) => item.count > 0).map((item) => (
-          <span key={item.key} style={{ width: `${(item.count / total) * 100}%`, backgroundColor: item.color }} />
+          <span key={item.key} style={{ width: `${(item.count / total) * 100}%`, backgroundColor: chartColor(item.color) }} />
         ))}
       </div>
       <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs">
         {items.map((item) => (
           <li key={item.key} className="flex items-center gap-1.5 text-slate-400">
-            <span className="h-2 w-2 rounded-full" style={{ backgroundColor: item.color }} />
+            <span className="h-2 w-2 rounded-full" style={{ backgroundColor: chartColor(item.color) }} />
             {item.label}
             <span className="font-medium tabular-nums text-slate-300">{item.count}</span>
             <span className="text-slate-600">{percent(item.count, total)}</span>
@@ -523,7 +534,7 @@ function Histogram({ bins, color, unit }: { bins: EmergenceBin[]; color: string;
           >
             <div
               className="w-full rounded-t-sm opacity-80 transition-opacity group-hover:opacity-100"
-              style={{ height: `${(bin.count / max) * 100}%`, minHeight: bin.count ? 2 : 0, backgroundColor: color }}
+              style={{ height: `${(bin.count / max) * 100}%`, minHeight: bin.count ? 2 : 0, backgroundColor: chartColor(color) }}
             />
           </div>
         ))}
@@ -551,17 +562,24 @@ function EntryButton({ id, onOpen, children }: { id: string; onOpen: (id: string
   )
 }
 
-function RankedList({ items, onOpen, showType = false }: { items: RankedNode[]; onOpen: (id: string) => void; showType?: boolean }) {
+function RankedList({ items, onOpen, showType = false, locale }: {
+  items: RankedNode[]
+  onOpen: (id: string) => void
+  showType?: boolean
+  locale: Locale
+}) {
+  const t = useTranslations('stats')
+  const labels = graphLabels(locale)
   return (
     <ol className="-mx-2">
       {items.map(({ node, degree }, i) => (
         <li key={node.id}>
           <EntryButton id={node.id} onOpen={onOpen}>
             <span className="w-4 text-right tabular-nums text-slate-600">{i + 1}</span>
-            <span className="h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: NODE_TYPE_COLORS[node.type] }} />
+            <span className="h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: chartColor(NODE_TYPE_COLORS[node.type]) }} />
             <span className="min-w-0 flex-1 truncate font-medium text-slate-200">{node.name}</span>
-            {showType && <span className="text-slate-600">{NODE_TYPE_LABELS[node.type]}</span>}
-            <span className="tabular-nums text-slate-400">{degree} links</span>
+            {showType && <span className="text-slate-600">{labels.nodeTypes[node.type]}</span>}
+            <span className="tabular-nums text-slate-400">{t('linksCount', { count: degree })}</span>
           </EntryButton>
         </li>
       ))}
@@ -569,14 +587,18 @@ function RankedList({ items, onOpen, showType = false }: { items: RankedNode[]; 
   )
 }
 
-function PeriodList({ nodes, onOpen }: { nodes: EntityStats['oldest']; onOpen: (id: string) => void }) {
+function PeriodList({ nodes, onOpen, locale }: {
+  nodes: EntityStats['oldest']
+  onOpen: (id: string) => void
+  locale: Locale
+}) {
   return (
     <ul className="-mx-2">
       {nodes.map((node) => (
         <li key={node.id}>
           <EntryButton id={node.id} onOpen={onOpen}>
             <span className="min-w-0 flex-1 truncate font-medium text-slate-200">{node.name}</span>
-            <span className="shrink-0 tabular-nums text-slate-500">{formatPeriod(node.period)}</span>
+            <span className="shrink-0 tabular-nums text-slate-500">{formatPeriod(node.period, locale)}</span>
           </EntryButton>
         </li>
       ))}

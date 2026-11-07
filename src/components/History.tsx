@@ -1,5 +1,6 @@
 import { ArrowUpRight, ChevronDown, Star } from 'lucide-react'
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { useExplorer } from '../ExplorerContext.ts'
 import type { GraphIndex } from '../graph/graph.ts'
 import {
@@ -9,10 +10,11 @@ import {
   matchesHistoryFilters,
 } from '../graph/history.ts'
 import { EVENT_CATEGORY_LABELS, type EventCategory, type GraphNode } from '../graph/types.ts'
-import { NODE_TYPE_COLORS } from '../theme.ts'
+import { chartColor, NODE_TYPE_COLORS } from '../theme.ts'
+import { graphLabels } from '../i18n/graphLabels.ts'
 import { UndatedEntries } from './UndatedEntries.tsx'
 
-const categories = Object.entries(EVENT_CATEGORY_LABELS) as [EventCategory, string][]
+const categories = Object.keys(EVENT_CATEGORY_LABELS) as EventCategory[]
 
 function isEventCategory(value: string): value is EventCategory {
   return Object.hasOwn(EVENT_CATEGORY_LABELS, value)
@@ -31,7 +33,10 @@ function eventConnections(index: GraphIndex, id: string): GraphNode[] {
 }
 
 export function History() {
-  const { index, selectedId, selectNode, historyFilters: filters, changeHistoryFilters } = useExplorer()
+  const { index, locale, selectedId, selectNode, historyFilters: filters, changeHistoryFilters } = useExplorer()
+  const t = useTranslations('history')
+  const tEras = useTranslations('history.eras')
+  const labels = graphLabels(locale)
   const history = useMemo(() => createHistoryModel(index.graph), [index.graph])
   const events = history.dated
   const undated = useMemo(
@@ -108,10 +113,10 @@ export function History() {
   }, [selectedEvent, groups])
 
   return (
-    <div className="flex h-full min-w-0 flex-col" role="region" aria-label="Music history timeline">
+    <div className="flex h-full min-w-0 flex-col" role="region" aria-label={t('region')}>
       <div className="shrink-0 border-b border-slate-800 bg-slate-950/95 px-5 py-3 sm:px-8 md:grid md:grid-cols-[auto_minmax(0,1fr)] md:items-center md:gap-x-6">
         <div className="flex flex-wrap items-center justify-between gap-3 md:justify-start">
-          <div className="flex rounded-full border border-slate-700 bg-slate-900 p-1" role="group" aria-label="Event importance">
+          <div className="flex rounded-full border border-slate-700 bg-slate-900 p-1" role="group" aria-label={t('importance')}>
             <button
               type="button"
               aria-pressed={!filters.landmarksOnly}
@@ -120,7 +125,7 @@ export function History() {
                 !filters.landmarksOnly ? 'bg-violet-500/20 text-violet-200' : 'text-slate-400 hover:text-slate-200'
               }`}
             >
-              All events
+              {t('allEvents')}
             </button>
             <button
               type="button"
@@ -130,11 +135,11 @@ export function History() {
                 filters.landmarksOnly ? 'bg-violet-500/20 text-violet-200' : 'text-slate-400 hover:text-slate-200'
               }`}
             >
-              Landmarks
+              {t('landmarks')}
             </button>
           </div>
           <label htmlFor={categoryId} className="relative block rounded-full border border-slate-700 bg-slate-900 p-1">
-            <span className="sr-only">Topic</span>
+            <span className="sr-only">{t('topic')}</span>
             <select
               id={categoryId}
               value={filters.category}
@@ -145,14 +150,14 @@ export function History() {
               }}
               className="block max-w-48 cursor-pointer appearance-none rounded-full bg-violet-500/20 py-1.5 pl-3 pr-8 text-xs font-semibold text-violet-200 transition-colors hover:bg-violet-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
             >
-              <option value="all" className="bg-slate-900 text-slate-200">All topics</option>
-              {categories.map(([category, label]) => <option key={category} value={category} className="bg-slate-900 text-slate-200">{label}</option>)}
+              <option value="all" className="bg-slate-900 text-slate-200">{t('allTopics')}</option>
+              {categories.map((category) => <option key={category} value={category} className="bg-slate-900 text-slate-200">{labels.eventCategories[category]}</option>)}
             </select>
             <ChevronDown className="pointer-events-none absolute right-4 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-violet-200" aria-hidden="true" />
           </label>
         </div>
         {groups.length > 0 && (
-          <nav ref={navigationRef} aria-label="Jump to an era" className="mt-2 flex w-fit max-w-full gap-0.5 overflow-x-auto rounded-lg border border-slate-800 bg-slate-900/50 p-0.5 md:mt-0">
+          <nav ref={navigationRef} aria-label={t('jumpToEra')} className="mt-2 flex w-fit max-w-full gap-0.5 overflow-x-auto rounded-lg border border-slate-800 bg-slate-900/50 p-0.5 md:mt-0">
             {groups.map((group) => (
               <button
                 key={group.id}
@@ -163,19 +168,20 @@ export function History() {
                   currentEraId === group.id ? 'bg-violet-500/20 text-violet-200' : 'text-slate-400 hover:bg-slate-800 hover:text-slate-100'
                 }`}
               >
-                <span>{group.label}</span>
+                <span>{tEras(group.id)}</span>
               </button>
             ))}
           </nav>
         )}
         <p aria-live="polite" className="mt-2 text-xs leading-relaxed text-slate-500 md:col-span-2">
-          Showing {resultCount} {resultCount === 1 ? 'event' : 'events'}
-          {undated.length ? ` (${undated.length} undated; dated events by start year)` : ' by start year'} · dates may be approximate,
-          landmarks are editorial.
+          {t('showing', {
+            count: resultCount,
+            dating: undated.length ? t('dating.undated', { count: undated.length }) : t('dating.dated'),
+          })}
         </p>
       </div>
 
-      <UndatedEntries label="events" nodes={undated} selectedId={selectedId} onSelect={selectNode} />
+      <UndatedEntries label={t('undated')} nodes={undated} selectedId={selectedId} onSelect={selectNode} />
 
       <div
         ref={viewportRef}
@@ -187,7 +193,7 @@ export function History() {
           {groups.length === 0 ? (
             <div role="status" className="rounded-2xl border border-slate-800 bg-slate-900/50 px-5 py-8 text-center">
               <p className="text-sm text-slate-300">
-                {undated.length ? 'No dated events match these filters.' : 'No events match these filters.'}
+                {undated.length ? t('noDatedMatches') : t('noMatches')}
               </p>
               {!undated.length && (
                 <button
@@ -195,7 +201,7 @@ export function History() {
                   onClick={() => changeHistoryFilters({ category: 'all', landmarksOnly: false })}
                   className="mt-4 rounded-full border border-slate-700 px-4 py-2 text-xs font-semibold text-slate-200 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
                 >
-                  Clear filters
+                  {t('clearFilters')}
                 </button>
               )}
             </div>
@@ -238,13 +244,13 @@ export function History() {
                         }`}
                       >
                         <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-                          <span className="text-sm font-bold tabular-nums text-rose-300">{formatEventPeriod(event.period)}</span>
+                          <span className="text-sm font-bold tabular-nums text-rose-300">{formatEventPeriod(event.period, locale)}</span>
                           <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
-                            {EVENT_CATEGORY_LABELS[event.category]}
+                            {labels.eventCategories[event.category]}
                           </span>
                           {event.significance === 'landmark' && (
                             <span className="inline-flex items-center gap-1 rounded-full bg-violet-400/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-violet-300">
-                              <Star className="h-3 w-3" aria-hidden="true" /> Landmark
+                              <Star className="h-3 w-3" aria-hidden="true" /> {t('landmarks')}
                             </span>
                           )}
                         </div>
@@ -261,7 +267,7 @@ export function History() {
                         {event.description && <p className="mt-2 text-sm leading-6 text-slate-400 md:text-[13px] md:leading-5">{event.description}</p>}
                         {related.length > 0 && (
                           <div className="mt-4 flex flex-wrap items-center gap-2">
-                            <span className="mr-1 text-[10px] font-bold uppercase tracking-wider text-slate-500">Connected</span>
+                            <span className="mr-1 text-[10px] font-bold uppercase tracking-wider text-slate-500">                            {t('connected')}</span>
                             {related.map((node) => (
                               <button
                                 key={node.id}
@@ -269,7 +275,7 @@ export function History() {
                                 onClick={() => selectNode(node.id)}
                                 className="inline-flex min-h-8 items-center gap-1.5 rounded-full border border-slate-700 bg-slate-950/60 px-2.5 py-1 text-xs font-medium text-slate-300 transition hover:border-slate-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
                               >
-                                <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: NODE_TYPE_COLORS[node.type] }} aria-hidden="true" />
+                                <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: chartColor(NODE_TYPE_COLORS[node.type]) }} aria-hidden="true" />
                                 {node.name}
                                 <ArrowUpRight className="h-3 w-3 text-slate-500" aria-hidden="true" />
                               </button>

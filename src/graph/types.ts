@@ -1,3 +1,5 @@
+import english from '../i18n/locales/en-US.json'
+
 /**
  * Property-graph data model.
  *
@@ -103,14 +105,7 @@ export type EventCategory =
   | 'publication'
   | 'society'
 
-export const EVENT_CATEGORY_LABELS: Record<EventCategory, string> = {
-  technology: 'Technology & formats',
-  media: 'Broadcast & media',
-  industry: 'Industry & law',
-  performance: 'Performances & festivals',
-  publication: 'Theory, notation & print',
-  society: 'Society & migration',
-}
+export const EVENT_CATEGORY_LABELS: Record<EventCategory, string> = english.graphLabels.eventCategories
 
 /** Editorial weight of an event in the chronology, not a measured ranking. */
 export type EventSignificance = 'landmark' | 'notable'
@@ -130,26 +125,11 @@ export interface ProminencePhase {
   intensity?: number
 }
 
-export const PROMINENCE_LABELS: Record<Prominence, string> = {
-  emerging: 'Emerging',
-  'golden-age': 'Golden age',
-  established: 'Continuing',
-  niche: 'Niche scene',
-}
+export const PROMINENCE_LABELS: Record<Prominence, string> = english.legend.prominence
 
-const ARTIST_PROMINENCE_LABELS: Record<Prominence, string> = {
-  emerging: 'Emerging',
-  'golden-age': 'Peak years',
-  established: 'Continuing',
-  niche: 'Low profile / hiatus',
-}
+const ARTIST_PROMINENCE_LABELS: Record<Prominence, string> = english.detail.prominenceLabels.artist
 
-const INSTRUMENT_PROMINENCE_LABELS: Record<Prominence, string> = {
-  emerging: 'Emerging',
-  'golden-age': 'Peak use',
-  established: 'Continuing',
-  niche: 'Rare / eclipsed',
-}
+const INSTRUMENT_PROMINENCE_LABELS: Record<Prominence, string> = english.detail.prominenceLabels.instrument
 
 export function prominenceLabels(type: NodeType): Record<Prominence, string> {
   if (type === 'artist') return ARTIST_PROMINENCE_LABELS
@@ -222,30 +202,7 @@ export const LINEAGE_EDGE_TYPES: readonly EdgeType[] = Object.keys(
   LINEAGE_ORIENTATION,
 ) as EdgeType[]
 
-export const FAMILY_LABELS: Record<LaneFamily, string> = {
-  classical: 'Classical',
-  'blues-soul': 'Blues, R&B & Soul',
-  jazz: 'Jazz',
-  'country-folk': 'Country & Folk',
-  rock: 'Rock',
-  'alternative-punk': 'Alternative & Punk',
-  metal: 'Metal',
-  pop: 'Pop',
-  'hip-hop': 'Hip-hop',
-  reggae: 'Reggae & Ska',
-  latin: 'Latin',
-  african: 'African',
-  electronica: 'Electronica & Ambient',
-  house: 'Disco & House',
-  techno: 'Techno & Trance',
-  'breakbeat-bass': 'Breakbeat & Bass',
-  strings: 'Strings',
-  keyboards: 'Keyboards & Organs',
-  winds: 'Woodwinds & Reeds',
-  brass: 'Brass',
-  percussion: 'Percussion',
-  electronic: 'Electronic & Studio',
-}
+export const FAMILY_LABELS: Record<LaneFamily, string> = english.graphLabels.families
 
 export const FAMILY_ORDER: readonly GenreFamily[] = [
   'classical',
@@ -283,65 +240,10 @@ export function isInstrumentFamily(family: LaneFamily | undefined): family is In
   return (INSTRUMENT_FAMILY_ORDER as readonly string[]).includes(family as string)
 }
 
-export const NODE_TYPE_LABELS: Record<NodeType, string> = {
-  genre: 'Genre',
-  artist: 'Artist',
-  instrument: 'Instrument',
-  label: 'Label',
-  place: 'Place',
-  track: 'Track',
-  scene: 'Scene',
-  event: 'Event',
-}
+export const NODE_TYPE_LABELS: Record<NodeType, string> = english.graphLabels.nodeTypes
 
 /** Phrasing when the focused node is the edge's `from` side. */
-export const EDGE_TYPE_LABELS: Record<EdgeType, string> = {
-  influences: 'influences',
-  derived_from: 'derived from',
-  subgenre_of: 'subgenre of',
-  fusion_of: 'fusion of',
-  cross_pollination: 'cross-pollination with',
-  revival_of: 'revival of',
-  key_artist_of: 'key artist of',
-  member_of: 'member of',
-  collaborated_with: 'collaborated with',
-  featured_in: 'featured in',
-  plays: 'plays',
-  signed_to: 'signed to',
-  founded: 'founded',
-  originated_in: 'originated in',
-  anthem_of: 'anthem of',
-  recorded_by: 'recorded by',
-  composed_by: 'composed by',
-  shaped: 'shaped',
-  context_for: 'provides historical context for',
-  recognized: 'recognizes',
-  involved: 'involved',
-  occurred_in: 'took place in',
-}
+export const EDGE_TYPE_LABELS: Record<EdgeType, string> = english.graphLabels.edges
 
 /** Phrasing when the focused node is the edge's `to` side. */
-export const EDGE_TYPE_INVERSE_LABELS: Record<EdgeType, string> = {
-  influences: 'influenced by',
-  derived_from: 'origin of',
-  subgenre_of: 'parent of',
-  fusion_of: 'fused into',
-  cross_pollination: 'cross-pollination with',
-  revival_of: 'revived as',
-  key_artist_of: 'key artists',
-  member_of: 'members',
-  collaborated_with: 'collaborated with',
-  featured_in: 'instruments',
-  plays: 'notable players',
-  signed_to: 'roster',
-  founded: 'founded by',
-  originated_in: 'birthplace of',
-  anthem_of: 'anthems',
-  recorded_by: 'recordings',
-  composed_by: 'compositions',
-  shaped: 'shaped by',
-  context_for: 'historical context from',
-  recognized: 'recognized in',
-  involved: 'involved in',
-  occurred_in: 'events here',
-}
+export const EDGE_TYPE_INVERSE_LABELS: Record<EdgeType, string> = english.graphLabels.inverseEdges

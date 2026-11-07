@@ -1,8 +1,9 @@
 import { useExplorer } from '../../ExplorerContext.ts'
 import { lineageSource, lineageTarget } from '../../graph/graph.ts'
 import { yearToX, type TimeScale } from '../../graph/layout.ts'
-import { EDGE_TYPE_LABELS } from '../../graph/types.ts'
+import { graphLabels } from '../../i18n/graphLabels.ts'
 import { BAR_H, snapToSpans, type BarPosition } from './geometry.ts'
+import { chartColor } from '../../theme.ts'
 
 interface TimelineLinksProps {
   barById: Map<string, BarPosition>
@@ -12,7 +13,8 @@ interface TimelineLinksProps {
 }
 
 export function TimelineLinks({ barById, scale, highlightedEdges, verticalViewport }: TimelineLinksProps) {
-  const { model } = useExplorer()
+  const { model, locale } = useExplorer()
+  const edgeLabels = graphLabels(locale).edges
   const view = model.view
   return model.index.graph.edges.map((edge) => {
     const sourceId = lineageSource(edge, model.orientation)
@@ -43,12 +45,12 @@ export function TimelineLinks({ barById, scale, highlightedEdges, verticalViewpo
         data-relation={edge.type}
         d={`M ${anchorX} ${y0} C ${anchorX} ${(y0 + y1) / 2}, ${(anchorX + endX) / 2} ${y1}, ${endX} ${y1}`}
         fill="none"
-        stroke={model.edgeColors[edge.type] ?? '#64748b'}
+        stroke={chartColor(model.edgeColors[edge.type] ?? '#64748b')}
         strokeWidth={lit ? 2 : 1.2}
         opacity={highlightedEdges ? lit ? 0.9 : 0.08 : 0.3}
         pointerEvents="none"
       >
-        <title>{`${model.index.nodeById.get(edge.from)?.name ?? edge.from} ${EDGE_TYPE_LABELS[edge.type]} ${model.index.nodeById.get(edge.to)?.name ?? edge.to}`}</title>
+        <title>{`${model.index.nodeById.get(edge.from)?.name ?? edge.from} ${edgeLabels[edge.type]} ${model.index.nodeById.get(edge.to)?.name ?? edge.to}`}</title>
       </path>
     )
   })

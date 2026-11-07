@@ -81,6 +81,10 @@
   visibility: hidden;
 }
 
+#page-loading[data-opening][data-loading="true"] ~ #root .discovery-record-flip {
+  transition: none;
+}
+
 @keyframes page-loading-spin {
   to { transform: rotate(360deg); }
 }

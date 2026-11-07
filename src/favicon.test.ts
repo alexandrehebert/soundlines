@@ -25,7 +25,7 @@ describe('favicon', () => {
   })
 
   it.each([
-    '../index.html',
+    '../app/[locale]/layout.tsx',
     '../.storybook/preview-head.html',
     '../.storybook/manager-head.html',
   ])('uses the cache-busted favicon in %s', (path) => {

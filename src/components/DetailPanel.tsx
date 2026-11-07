@@ -1,20 +1,14 @@
 import { X } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { useExplorer } from '../ExplorerContext.ts'
 import { groupedRelations } from '../graph/graph.ts'
 import { formatEventPeriod } from '../graph/history.ts'
 import { isTimelineView, timelineFamily } from '../graph/timeline.ts'
-import {
-  EDGE_TYPE_INVERSE_LABELS,
-  EDGE_TYPE_LABELS,
-  EVENT_CATEGORY_LABELS,
-  FAMILY_LABELS,
-  NODE_TYPE_LABELS,
-  prominenceLabels,
-  type Confidence,
-} from '../graph/types.ts'
-import { formatPeriod, NODE_TYPE_COLORS } from '../theme.ts'
+import type { Confidence } from '../graph/types.ts'
+import { chartColor, chartTextColor, formatPeriod, formatYear, NODE_TYPE_COLORS } from '../theme.ts'
 import { prominencePhases, intensityColor, intensityOpacity, phaseIntensity } from '../graph/phases.ts'
 import { CURRENT_YEAR } from '../graph/layout.ts'
+import { graphLabels } from '../i18n/graphLabels.ts'
 import { GenreSample } from './GenreSample.tsx'
 import { InstrumentIcon } from './InstrumentIcon.tsx'
 
@@ -24,7 +18,7 @@ const CONFIDENCE_COLORS: Record<Confidence, string> = {
   high: '#4ade80',
 }
 
-function SourceLinks({ sources }: { sources?: string[] }) {
+function SourceLinks({ sources, fallbackTitle }: { sources?: string[]; fallbackTitle: string }) {
   if (!sources?.length) return null
 
   return (
@@ -32,7 +26,7 @@ function SourceLinks({ sources }: { sources?: string[] }) {
       {sources.map((source) => {
         const url = new URL(source)
         const website = url.hostname.replace(/^www\./, '')
-        const title = decodeURIComponent(url.pathname.split('/').filter(Boolean).at(-1) ?? 'Website')
+        const title = decodeURIComponent(url.pathname.split('/').filter(Boolean).at(-1) ?? fallbackTitle)
           .replaceAll('_', ' ')
         return (
           <li key={source}>
@@ -58,16 +52,24 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
   scrollable?: boolean
   showGenreSample?: boolean
 } = {}) {
-  const { index, selectedId, selectNode } = useExplorer()
+  const { index, selectedId, selectNode, locale } = useExplorer()
+  const t = useTranslations('detail')
+  const tRoot = useTranslations()
+  const tConfidence = useTranslations('detail.confidence')
+  const tDates = useTranslations('dates')
+  const tProminenceLabels = useTranslations('detail.prominenceLabels')
   const node = selectedId ? index.nodeById.get(selectedId) : undefined
   if (!node) return null
 
+  const labels = graphLabels(locale)
   const hasGenrePlayer = showGenreSample && node.type === 'genre'
-  const typeColor = NODE_TYPE_COLORS[node.type]
-  const period = node.type === 'event' && node.period ? formatEventPeriod(node.period) : formatPeriod(node.period)
+  const typeColor = chartColor(NODE_TYPE_COLORS[node.type])
+  const period = node.type === 'event' && node.period
+    ? formatEventPeriod(node.period, locale)
+    : formatPeriod(node.period, locale)
   const groups = groupedRelations(index, node.id)
   const phases = prominencePhases(node, CURRENT_YEAR)
-  const labels = prominenceLabels(node.type)
+  const prominenceType = node.type === 'artist' || node.type === 'instrument' ? node.type : 'other'
   const family = timelineFamily(index, node)
   const instrumentArtwork = node.type === 'instrument'
     ? `${encodeURIComponent(node.id.slice('instrument:'.length))}.svg`
@@ -78,31 +80,34 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
       <div
         className={`sticky top-0 z-10 flex items-start border-b border-slate-800 bg-slate-950/95 bg-contain bg-right-bottom bg-no-repeat p-4 md:p-5 ${showCloseButton && !hasGenrePlayer ? 'pr-14 md:pr-16' : ''}`}
         style={instrumentArtwork ? {
-          backgroundImage: `url("${import.meta.env.BASE_URL}instrument-header-backgrounds/${instrumentArtwork}")`,
+          backgroundImage: `url("/instrument-header-backgrounds/${instrumentArtwork}")`,
         } : undefined}
       >
         <div className="min-w-0 flex-1">
           <div className={`mb-2 flex flex-wrap items-center gap-2 ${showCloseButton && hasGenrePlayer ? 'min-h-7 pr-10' : ''}`}>
             <span
               className="rounded-full px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-widest"
-              style={{ backgroundColor: `${typeColor}22`, color: typeColor }}
+              style={{
+                backgroundColor: `color-mix(in srgb, ${typeColor} 13%, transparent)`,
+                color: chartTextColor(NODE_TYPE_COLORS[node.type]),
+              }}
             >
-              {NODE_TYPE_LABELS[node.type]}
+              {labels.nodeTypes[node.type]}
               {node.kind ? ` · ${node.kind}` : ''}
             </span>
             {family && (
               <span className="rounded-full bg-slate-800 px-2.5 py-0.5 text-[11px] font-semibold text-slate-300">
-                {FAMILY_LABELS[family]}
+                {labels.families[family]}
               </span>
             )}
             {node.type === 'event' && node.category && (
               <span className="rounded-full bg-slate-800 px-2.5 py-0.5 text-[11px] font-semibold text-slate-300">
-                {EVENT_CATEGORY_LABELS[node.category]}
+                {labels.eventCategories[node.category]}
               </span>
             )}
             {node.type === 'event' && node.significance === 'landmark' && (
               <span className="rounded-full bg-violet-500/15 px-2.5 py-0.5 text-[11px] font-semibold text-violet-300">
-                Landmark
+                {t('landmark')}
               </span>
             )}
           </div>
@@ -112,7 +117,7 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
               {period
                 ? <div className="mt-1 text-sm font-medium text-slate-400">{period}</div>
                 : (isTimelineView(node.type) || node.type === 'event') && (
-                  <div className="mt-1 text-sm font-medium text-slate-400">No period specified</div>
+                  <div className="mt-1 text-sm font-medium text-slate-400">{t('noPeriod')}</div>
                 )}
             </div>
             {hasGenrePlayer && (
@@ -125,7 +130,7 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
             type="button"
             onClick={onClose ?? (() => selectNode(null))}
             className="absolute right-1 top-1 flex h-11 w-11 items-center justify-center rounded-full text-slate-400 transition hover:bg-slate-800 hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
-            aria-label="Close panel"
+            aria-label={tRoot('closePanel')}
           >
             <X className="h-4 w-4" />
           </button>
@@ -135,7 +140,7 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
       <div className="flex flex-col gap-5 p-4 md:p-5">
         {node.period?.estimated && (
           <p className="text-xs leading-relaxed text-slate-400">
-            Estimated period: {node.period.estimateNote ?? 'Dates are approximate and subject to revision.'}
+            {t('estimatedPeriod')} {node.period.estimateNote ?? t('estimatedPeriodFallback')}
           </p>
         )}
         {node.description && (
@@ -144,8 +149,8 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
 
         {node.confidence && (
           <p className="text-xs text-slate-400"
-            title="Overall editorial confidence in this entry; individual claims and phases may differ.">
-            Entry confidence: <span style={{ color: CONFIDENCE_COLORS[node.confidence] }}>{node.confidence}</span>
+            title={t('entryConfidenceTitle')}>
+            {t('entryConfidence')} <span style={{ color: CONFIDENCE_COLORS[node.confidence] }}>{tConfidence(node.confidence)}</span>
           </p>
         )}
 
@@ -157,8 +162,8 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
           <section>
             <h3 className="mb-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">
               {node.type === 'artist'
-                ? 'Career prominence · editorial'
-                : node.type === 'instrument' ? 'Usage prominence · editorial' : 'Historical prominence · approximate'}
+                ? t('prominence.artist')
+                : node.type === 'instrument' ? t('prominence.instrument') : t('prominence.other')}
             </h3>
             <ul className="flex flex-col gap-2">
               {phases.map((phase) => (
@@ -175,25 +180,29 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
                             fill="none" stroke="#475569" strokeDasharray="2 2" />
                         )}
                       </svg>
-                      {labels[phase.prominence]}
+                      {tProminenceLabels(`${prominenceType}.${phase.prominence}`)}
                     </span>
                     <span className="flex flex-wrap items-center justify-end gap-x-2 gap-y-0.5">
                       {phase.confidence && (
                         <span
                           className="text-[10px] font-semibold"
                           style={{ color: CONFIDENCE_COLORS[phase.confidence] }}
-                          title={`Phase confidence: ${phase.confidence}`}
+                          title={`${t('phaseConfidenceTitle')} ${tConfidence(phase.confidence)}`}
                         >
-                          Confidence: {phase.confidence}
+                          {t('phaseConfidence')} {tConfidence(phase.confidence)}
                         </span>
                       )}
-                      <span>c. {phase.start} – {phase.end === CURRENT_YEAR && node.period?.end == null ? 'now' : phase.end}</span>
+                      <span>
+                        {tDates('circa')} {formatYear(phase.start, locale)} – {
+                          phase.end === CURRENT_YEAR && node.period?.end == null ? t('now') : formatYear(phase.end, locale)
+                        }
+                      </span>
                     </span>
                   </div>
                   {phase.note && (
                     <p className="mt-1 leading-relaxed text-slate-400">{phase.note}</p>
                   )}
-                  <SourceLinks sources={phase.sources} />
+                  <SourceLinks sources={phase.sources} fallbackTitle={t('website')} />
                 </li>
               ))}
             </ul>
@@ -204,8 +213,8 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
         {groups.map((group) => {
           const label =
             group.direction === 'out'
-              ? EDGE_TYPE_LABELS[group.type]
-              : EDGE_TYPE_INVERSE_LABELS[group.type]
+              ? labels.edges[group.type]
+              : labels.inverseEdges[group.type]
           return (
             <section key={`${group.direction}:${group.type}`}>
               <h3 className="mb-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">
@@ -224,25 +233,25 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
                           <InstrumentIcon
                             id={other.id}
                             className="h-4 w-4 shrink-0 bg-current"
-                            style={{ color: NODE_TYPE_COLORS.instrument }}
+                            style={{ color: chartTextColor(NODE_TYPE_COLORS.instrument) }}
                           />
                         ) : (
                           <span
                             className="h-2 w-2 shrink-0 rounded-full"
-                            style={{ backgroundColor: NODE_TYPE_COLORS[other.type] }}
+                            style={{ backgroundColor: chartColor(NODE_TYPE_COLORS[other.type]) }}
                           />
                         )}
-                        <span className="text-sm font-semibold text-slate-200 group-hover:text-white">
+                        <span className="text-sm font-semibold text-slate-200 transition-colors group-hover:text-white">
                           {other.name}
                         </span>
                       </span>
                       {edge.confidence && (
                         <span
                           className="text-[10px] font-bold uppercase tracking-wider"
-                          style={{ color: CONFIDENCE_COLORS[edge.confidence] }}
-                          title={`Confidence: ${edge.confidence}`}
+                          style={{ color: chartTextColor(CONFIDENCE_COLORS[edge.confidence]) }}
+                          title={`${t('confidenceTitle')} ${tConfidence(edge.confidence)}`}
                         >
-                          {edge.confidence}
+                          {tConfidence(edge.confidence)}
                         </span>
                       )}
                     </button>
@@ -260,9 +269,9 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
         {!!node.sources?.length && (
           <section>
             <h3 className="mb-2 text-[11px] font-bold uppercase tracking-widest text-slate-500">
-              Sources
+              {t('sources')}
             </h3>
-            <SourceLinks sources={node.sources} />
+            <SourceLinks sources={node.sources} fallbackTitle={t('website')} />
           </section>
         )}
       </div>

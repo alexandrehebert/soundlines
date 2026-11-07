@@ -1,0 +1,75 @@
+import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
+import type { ReactNode } from 'react'
+import { NextIntlClientProvider } from 'next-intl'
+import { getMessages, getTranslations } from 'next-intl/server'
+import '../../src/index.css'
+import '../../src/pageLoading.css'
+import { isLocale, LOCALES } from '../../src/i18n/routing.ts'
+import { pageMetadata } from '../../src/i18n/seo.ts'
+
+export async function generateMetadata({ params }: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  if (!isLocale(locale)) notFound()
+  return {
+    ...pageMetadata(locale, 'home'),
+    icons: { icon: '/favicon.svg?v=disc3' },
+    openGraph: {
+      siteName: 'Soundlines',
+      type: 'website',
+    },
+    twitter: { card: 'summary_large_image' },
+  }
+}
+
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }))
+}
+
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
+  children: ReactNode
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  if (!isLocale(locale)) notFound()
+  const [messages, t] = await Promise.all([getMessages(), getTranslations()])
+
+  return (
+    <html lang={locale} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `try { document.documentElement.dataset.theme = localStorage.getItem('soundlines-theme') === 'light' ? 'light' : 'dark'; } catch (error) { console.warn('Unable to read the Soundlines theme preference.', error); }` }} />
+      </head>
+      <body>
+        <NextIntlClientProvider messages={messages}>
+          <div id="page-loading" role="status" aria-label={t('loading')} data-loading="true" data-opening>
+            <div className="page-loading-record" aria-hidden="true">
+              <div className="page-loading-vinyl">
+                <div className="discovery-vinyl">
+                  <div className="discovery-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M6 12c0-1.7.7-3.2 1.8-4.2" />
+                      <circle cx="12" cy="12" r="2" />
+                      <path d="M18 12c0 1.7-.7 3.2-1.8 4.2" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <span className="page-loading-wordmark">Soundlines</span>
+            </div>
+          </div>
+          <noscript>
+            <style>{'#page-loading { display: none; }'}</style>
+            {t('requiresJavascript')}
+          </noscript>
+          <div id="root" aria-busy="true">{children}</div>
+        </NextIntlClientProvider>
+      </body>
+    </html>
+  )
+}

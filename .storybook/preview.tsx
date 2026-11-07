@@ -1,13 +1,18 @@
 import type { Preview } from '@storybook/react-vite'
+import { NextIntlClientProvider } from 'next-intl'
 import { MotionConfig } from 'motion/react'
+import { catalogueFor } from '../src/i18n/catalogue.ts'
+import { DEFAULT_LOCALE } from '../src/i18n/routing.ts'
 import '../src/index.css'
 
 const preview: Preview = {
   decorators: [
     (Story) => (
-      <MotionConfig reducedMotion="user">
-        <Story />
-      </MotionConfig>
+      <NextIntlClientProvider locale={DEFAULT_LOCALE} messages={catalogueFor(DEFAULT_LOCALE)}>
+        <MotionConfig reducedMotion="user">
+          <Story />
+        </MotionConfig>
+      </NextIntlClientProvider>
     ),
   ],
   parameters: {

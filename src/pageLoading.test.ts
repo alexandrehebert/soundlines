@@ -9,7 +9,12 @@ describe('page loading lifecycle', () => {
     animate: ReturnType<typeof vi.fn>
   }
   let root: { setAttribute: ReturnType<typeof vi.fn> }
-  let documentState: { readyState: string; getElementById: (id: string) => unknown; querySelector: ReturnType<typeof vi.fn> }
+  let documentState: {
+    readyState: string
+    documentElement: { dataset: { theme: string } }
+    getElementById: (id: string) => unknown
+    querySelector: ReturnType<typeof vi.fn>
+  }
   let events: EventTarget
   let loading: typeof import('./pageLoading.ts')
 
@@ -27,6 +32,7 @@ describe('page loading lifecycle', () => {
     events = new EventTarget()
     documentState = {
       readyState: 'complete',
+      documentElement: { dataset: { theme: 'dark' } },
       getElementById: (id) => id === 'page-loading' ? overlay : root,
       querySelector: vi.fn(),
     }
@@ -112,7 +118,7 @@ describe('page loading lifecycle', () => {
     expect(overlay.dataset.loading).toBe('false')
   })
 
-  function mockLandingVinyl() {
+  function mockLandingVinyl(recordOpacity = '1') {
     const cancel = vi.fn()
     const animate = vi.fn(() => ({ cancel }))
     overlay.animate = animate
@@ -129,30 +135,47 @@ describe('page loading lifecycle', () => {
         : { left: 400, top: 300, width: 200, height: 200 },
       animate,
     }
+    const destination = {
+      getBoundingClientRect: () => ({ left: 830, top: 130, width: 300, height: 300 }),
+    }
+    const hero = {
+      getBoundingClientRect: () => ({ left: 20, top: 80, right: 1180, bottom: 600 }),
+    }
+    const recordContainer = {}
     const target = {
       offsetWidth: 300,
-      getBoundingClientRect: () => ({ left: 800, top: 100, width: 360, height: 360 }),
-      parentElement: {},
-      closest: () => ({ getBoundingClientRect: () => ({ left: 20, top: 80, right: 1180, bottom: 600 }) }),
+      getBoundingClientRect: vi.fn(() => ({ left: 900, top: 100, width: 20, height: 360 })),
+      closest: vi.fn((selector: string) => {
+        if (selector === '.discovery-record-perspective') return destination
+        if (selector === '.discovery-hero') return hero
+        if (selector === '.discovery-record') return recordContainer
+        return null
+      }),
     }
     documentState.querySelector.mockReturnValue(target)
     overlay.querySelector.mockReturnValue(vinyl)
-    vi.stubGlobal('getComputedStyle', () => ({
+    vi.stubGlobal('getComputedStyle', (element: unknown) => ({
       transform: 'rotate(-16deg)',
-      opacity: '1',
+      opacity: element === recordContainer ? recordOpacity : '1',
       borderRadius: '24px',
       borderTopWidth: '1px',
       borderRightWidth: '1px',
       borderBottomWidth: '1px',
       borderLeftWidth: '1px',
     }))
-    return { animate, cancel, style }
+    return { animate, cancel, style, target }
   }
 
-  it('moves the opening vinyl to the landing record center and size before revealing it', () => {
-    const { animate, cancel, style } = mockLandingVinyl()
+  it.each([
+    ['dark', 'a'],
+    ['light', 'b'],
+  ])('moves the opening vinyl to the stable landing center for the %s theme', (theme, side) => {
+    documentState.documentElement.dataset.theme = theme
+    const { animate, cancel, style, target } = mockLandingVinyl()
     loading.finishPageLoading()
     vi.advanceTimersByTime(550)
+    expect(documentState.querySelector).toHaveBeenCalledWith(`#root .discovery-record-face-${side} .discovery-vinyl`)
+    expect(target.getBoundingClientRect).not.toHaveBeenCalled()
     expect(overlay.dataset.docking).toBe('')
     expect(overlay.dataset.loading).toBe('true')
     expect(style.width).toBe('300px')
@@ -171,6 +194,17 @@ describe('page loading lifecycle', () => {
     expect(overlay.dataset.loading).toBe('false')
     expect(cancel).toHaveBeenCalledTimes(3)
     expect(style.width).toBe('')
+  })
+
+  it('matches the landing record opacity when docking on mobile', () => {
+    documentState.documentElement.dataset.theme = 'light'
+    const { animate } = mockLandingVinyl('0.35')
+    loading.finishPageLoading()
+    vi.advanceTimersByTime(550)
+    expect(animate).toHaveBeenCalledWith([
+      { transform: `translate(0px, -10px) scale(${200 / 300})`, opacity: 1 },
+      { transform: 'translate(480px, -130px) scale(1)', opacity: '0.35' },
+    ], expect.objectContaining({ duration: 700 }))
   })
 
   it('cancels docking animations and dismissal on navigation', () => {

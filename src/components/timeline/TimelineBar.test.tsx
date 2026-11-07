@@ -1,4 +1,3 @@
-import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it, vi } from 'vitest'
 import { ExplorerContext } from '../../ExplorerContext.ts'
 import { buildIndex } from '../../graph/graph.ts'
@@ -6,20 +5,22 @@ import { yearToX, type TimeScale } from '../../graph/layout.ts'
 import { intensityStops, visibilityStops } from '../../graph/phases.ts'
 import { createTimelineModel } from '../../graph/timeline.ts'
 import type { GraphNode } from '../../graph/types.ts'
+import type { Locale } from '../../i18n/routing.ts'
+import { renderWithIntl } from '../../i18n/test-utils.tsx'
 import { TimelineBar } from './TimelineBar.tsx'
 import type { BarPosition, OffscreenIndicator } from './geometry.ts'
 
 function renderBar(node: GraphNode, selected: boolean, indicator?: OffscreenIndicator, position?: Partial<BarPosition>,
-  scale: TimeScale = { start: 1948, end: 2026, width: 800 }, renderDetails = true) {
+  scale: TimeScale = { start: 1948, end: 2026, width: 800 }, renderDetails = true, locale: Locale = 'en-US') {
   const index = buildIndex({ version: 1, nodes: [node], edges: [] })
   const view = node.type === 'artist' ? 'artist' : node.type === 'instrument' ? 'instrument' : 'genre'
   const bar: BarPosition = {
     node, start: 1960, end: 2026, x1: 20, x2: 300, yCenter: 50,
     visibleSpans: [[20, 300]], color: '#60a5fa', ended: !!node.period?.end, ...position,
   }
-  return renderToStaticMarkup(
+  return renderWithIntl(
     <ExplorerContext.Provider value={{
-      index, model: createTimelineModel(index, view), view,
+      index, model: createTimelineModel(index, view), locale, view,
       selectedId: selected ? node.id : null, selectNode: vi.fn(), changeView: vi.fn(),
       order: 'family', changeOrder: vi.fn(),
       genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(), isHome: false,
@@ -31,6 +32,7 @@ function renderBar(node: GraphNode, selected: boolean, indicator?: OffscreenIndi
           dimmed={false} indicator={indicator} renderDetails={renderDetails} onSelect={vi.fn()} />
       </svg>
     </ExplorerContext.Provider>,
+    locale,
   )
 }
 
@@ -71,6 +73,17 @@ describe('bar selection outline', () => {
       '<title>Golden age: c. 1960–1980. A documented transition. Phase confidence: medium. Editorial summary.</title>',
     )
     expect(markup).toContain('<title>Continuing: c. 1980–2000. Editorial summary.</title>')
+  })
+
+  it('localizes phase dates and confidence in French tooltips', () => {
+    const node: GraphNode = {
+      ...nodes[1],
+      phases: [{ start: 1960, prominence: 'golden-age', confidence: 'medium' }],
+    }
+    const markup = renderBar(node, false, undefined, undefined, undefined, true, 'fr')
+    expect(markup).toContain('<title>Âge d’or : vers 1960–2000. Confiance de la période : moyenne.</title>')
+    expect(markup).not.toContain('Phase confidence')
+    expect(markup).not.toContain('c. 1960')
   })
 
   it('fades historical bar tails all the way to transparency', () => {
@@ -143,7 +156,7 @@ describe('bar selection outline', () => {
     expect(markup).not.toContain('stroke="#f8fafc"')
     expect(markup.match(/data-bar-selection-outline=/g)).toHaveLength(1)
     expect(markup).toContain('<foreignObject data-bar-selection-outline="" x="20" y="39" width="280" height="22" overflow="visible" pointer-events="none" aria-hidden="true"><div')
-    expect(markup).toContain('border-style:solid;border-color:#f8fafc;border-width:1.5px')
+    expect(markup).toContain('border-style:solid;border-color:var(--chart-selection-border, #f8fafc);border-width:1.5px')
     expect(markup).toContain('outline-style:auto;outline-width:5px;outline-color:-webkit-focus-ring-color;outline-offset:4px')
     expect(markup).toContain('transform:scale(0.75);transform-origin:top left')
     expect(markup).toContain(node.period?.end
@@ -266,7 +279,7 @@ describe('bar selection outline', () => {
       const markup = renderBar(instrument, false, undefined, {
         x1: -100, x2: 300, visibleSpans: [[-100, 300]],
       })
-      expect(markup).toContain('<rect x="0" y="41" width="18" height="18" rx="4" fill="#020617" fill-opacity="0.85"')
+      expect(markup).toContain('<rect x="0" y="41" width="18" height="18" rx="4" class="timeline-icon-underlay" fill="#020617" fill-opacity="0.85"')
       expect(markup).toContain('<text data-bar-label="inside" x="22"')
     })
 

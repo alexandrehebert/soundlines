@@ -1,22 +1,32 @@
 import { AnimatePresence, motion } from 'motion/react'
 import { Search, X } from 'lucide-react'
-import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from 'react'
+import { useEffect, useId, useMemo, useRef, useState, type CSSProperties, type KeyboardEvent as ReactKeyboardEvent } from 'react'
 import { createPortal } from 'react-dom'
+import { useTranslations } from 'next-intl'
 import { useExplorer } from '../ExplorerContext.ts'
 import { searchNodes } from '../graph/graph.ts'
-import { NODE_TYPE_LABELS } from '../graph/types.ts'
-import { NODE_TYPE_COLORS } from '../theme.ts'
+import { chartColor, chartTextColor, NODE_TYPE_COLORS } from '../theme.ts'
+import { DEFAULT_LOCALE, type Locale } from '../i18n/routing.ts'
+import { graphLabels } from '../i18n/graphLabels.ts'
+import { graphForLocale } from '../data/graphLocale.ts'
 import { InstrumentIcon } from './InstrumentIcon.tsx'
-
-const SEARCH_INSTRUCTIONS = 'Use the up and down arrow keys to navigate search results. Press Enter to open the highlighted result, or the first result if none is highlighted. Press Escape to close search.'
 
 function isComposing(event: ReactKeyboardEvent) {
   // Some browsers report keyCode 229 before isComposing is set.
   return event.nativeEvent.isComposing || event.nativeEvent.keyCode === 229
 }
 
+function searchResultTypeStyle(type: keyof typeof NODE_TYPE_COLORS): CSSProperties & { '--search-result-type-color': string } {
+  return { '--search-result-type-color': chartColor(NODE_TYPE_COLORS[type]) }
+}
+
 export function SearchBar() {
-  const { index, selectNode } = useExplorer()
+  const { index, locale, selectNode } = useExplorer()
+  const t = useTranslations('search')
+  // Let users also find entries by their default-locale names.
+  const alternateNames = useMemo(() => locale === DEFAULT_LOCALE
+    ? undefined
+    : new Map(graphForLocale(DEFAULT_LOCALE).nodes.map((node) => [node.id, node.name])), [locale])
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -26,7 +36,10 @@ export function SearchBar() {
   const mobileCloseRef = useRef<HTMLButtonElement>(null)
   const desktopInputRef = useRef<HTMLInputElement>(null)
   const mobileInputRef = useRef<HTMLInputElement>(null)
-  const results = useMemo(() => searchNodes(index.graph, query), [index.graph, query])
+  const results = useMemo(
+    () => searchNodes(index.graph, query, 8, alternateNames),
+    [index.graph, query, alternateNames],
+  )
   const activeIndex = results.findIndex(({ node }) => node.id === activeId)
   const desktopListId = `${searchId}-desktop-results`
   const mobileListId = `${searchId}-mobile-results`
@@ -121,14 +134,14 @@ export function SearchBar() {
         type="button"
         onClick={() => setMobileOpen(true)}
         className="soundlines-search-transition flex h-11 w-11 items-center justify-center rounded-full border border-slate-700 bg-slate-900/80 text-slate-300 active:bg-slate-800 md:hidden"
-        aria-label="Search music"
+        aria-label={t('trigger')}
         aria-haspopup="dialog"
         aria-expanded={mobileOpen}
       >
         <Search className="h-4 w-4" />
       </button>
       <div className="soundlines-search-transition relative hidden w-full max-w-xs md:block">
-        <span id={desktopInstructionsId} className="sr-only">{SEARCH_INSTRUCTIONS}</span>
+        <span id={desktopInstructionsId} className="sr-only">{t('instructions')}</span>
         <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" />
         <input
           ref={desktopInputRef}
@@ -147,14 +160,14 @@ export function SearchBar() {
           }}
           onKeyDown={handleKeyDown}
           role="combobox"
-          aria-label="Search music"
+          aria-label={t('trigger')}
           aria-autocomplete="list"
           aria-describedby={desktopInstructionsId}
           aria-expanded={desktopExpanded}
           aria-controls={desktopExpanded ? desktopListId : undefined}
           aria-activedescendant={desktopExpanded && activeIndex >= 0 ? `${desktopListId}-option-${activeIndex}` : undefined}
           autoComplete="off"
-          placeholder="Search genres, artists, instruments, events…"
+          placeholder={t('desktopPlaceholder')}
           className="w-full min-w-0 rounded-full border border-slate-700 bg-slate-900/80 py-2 pl-9 pr-4 text-sm text-slate-200 placeholder:text-slate-500 focus:border-violet-500 focus:outline-none"
         />
         {open && query.trim().length > 0 && (
@@ -164,26 +177,29 @@ export function SearchBar() {
               results={results}
               activeId={activeId}
               onPick={pick}
+              noMatches={t('noMatches')}
+              resultLabel={t('results')}
+              locale={locale}
               preventBlurOnPointerDown
             />
           </div>
         )}
       </div>
-      {createPortal(
+      {typeof document !== 'undefined' && createPortal(
         <AnimatePresence onExitComplete={() => searchButtonRef.current?.focus()}>
           {mobileOpen && (
             <motion.div
               className="fixed inset-0 z-50 flex h-dvh flex-col bg-slate-950 px-4 pb-[calc(env(safe-area-inset-bottom)+1rem)] pt-[calc(env(safe-area-inset-top)+0.75rem)] md:hidden"
               role="dialog"
               aria-modal="true"
-              aria-label="Search music"
+              aria-label={t('trigger')}
               onKeyDown={handleMobileDialogKeyDown}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
               <div className="flex items-center justify-between">
-                <h2 className="text-lg font-bold text-white">Search</h2>
+                <h2 className="text-lg font-bold text-white">{t('title')}</h2>
                 <button
                   ref={mobileCloseRef}
                   type="button"
@@ -192,13 +208,13 @@ export function SearchBar() {
                     setMobileOpen(false)
                   }}
                   className="flex h-11 w-11 items-center justify-center rounded-full text-slate-400 active:bg-slate-800"
-                  aria-label="Close search"
+                  aria-label={t('close')}
                 >
                   <X className="h-5 w-5" />
                 </button>
               </div>
               <div className="relative mt-2 shrink-0">
-                <span id={mobileInstructionsId} className="sr-only">{SEARCH_INSTRUCTIONS}</span>
+                <span id={mobileInstructionsId} className="sr-only">{t('instructions')}</span>
                 <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" />
                 <input
                   ref={mobileInputRef}
@@ -206,24 +222,32 @@ export function SearchBar() {
                   onChange={(event) => updateQuery(event.target.value)}
                   onKeyDown={handleKeyDown}
                   role="combobox"
-                  aria-label="Search music"
+                  aria-label={t('trigger')}
                   aria-autocomplete="list"
                   aria-describedby={mobileInstructionsId}
                   aria-expanded={mobileExpanded}
                   aria-controls={mobileExpanded ? mobileListId : undefined}
                   aria-activedescendant={mobileExpanded && activeIndex >= 0 ? `${mobileListId}-option-${activeIndex}` : undefined}
                   autoComplete="off"
-                  placeholder="Genres, artists, instruments, events…"
+                  placeholder={t('mobilePlaceholder')}
                   enterKeyHint="search"
                   className="w-full rounded-2xl border border-slate-700 bg-slate-900 py-3 pl-10 pr-4 text-base text-slate-100 placeholder:text-slate-500 focus:border-violet-500 focus:outline-none"
                 />
               </div>
               <div className="mt-3 min-h-0 flex-1 overflow-y-auto overscroll-contain">
                 {query.trim().length > 0 ? (
-                  <SearchResults listId={mobileListId} results={results} activeId={activeId} onPick={pick} />
+                  <SearchResults
+                    listId={mobileListId}
+                    results={results}
+                    activeId={activeId}
+                    onPick={pick}
+                    noMatches={t('noMatches')}
+                    resultLabel={t('results')}
+                    locale={locale}
+                  />
                 ) : (
                   <p className="px-1 py-3 text-sm text-slate-500">
-                    Search the timeline by genre, artist, instrument, event, or label.
+                    {t('emptyQuery')}
                   </p>
                 )}
               </div>
@@ -241,18 +265,24 @@ function SearchResults({
   results,
   activeId,
   onPick,
+  noMatches,
+  resultLabel,
+  locale,
   preventBlurOnPointerDown = false,
 }: {
   listId: string
   results: ReturnType<typeof searchNodes>
   activeId: string | null
   onPick: (id: string) => void
+  noMatches: string
+  resultLabel: string
+  locale: Locale
   preventBlurOnPointerDown?: boolean
 }) {
   if (results.length === 0) {
     return (
       <div role="status" className="rounded-2xl border border-slate-700 bg-slate-900 px-4 py-3 text-sm text-slate-400 md:shadow-2xl md:shadow-black/50">
-        No matches
+        {noMatches}
       </div>
     )
   }
@@ -261,7 +291,7 @@ function SearchResults({
     <ul
       id={listId}
       role="listbox"
-      aria-label="Search results"
+      aria-label={resultLabel}
       className="overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 md:max-h-[min(24rem,calc(100dvh-6rem))] md:overflow-y-auto md:shadow-2xl md:shadow-black/50"
     >
       {results.map(({ node }, index) => (
@@ -283,16 +313,16 @@ function SearchResults({
               <InstrumentIcon
                 id={node.id}
                 className="size-6 shrink-0 bg-current"
-                style={{ color: NODE_TYPE_COLORS.instrument }}
+                style={{ color: chartTextColor(NODE_TYPE_COLORS.instrument) }}
               />
             )}
             {node.name}
           </span>
           <span
-            className="text-[10px] font-bold uppercase tracking-widest"
-            style={{ color: NODE_TYPE_COLORS[node.type] }}
+            className="search-result-type text-[10px] font-bold uppercase tracking-widest"
+            style={searchResultTypeStyle(node.type)}
           >
-            {NODE_TYPE_LABELS[node.type]}
+            {graphLabels(locale).nodeTypes[node.type]}
           </span>
         </li>
       ))}
