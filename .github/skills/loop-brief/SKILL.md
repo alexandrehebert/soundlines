@@ -1,6 +1,6 @@
 ---
 name: loop-brief
-description: 'Write or revise the production brief for a Soundlines genre loop (scripts/loops/briefs/<slug>.json): genre-authentic tempo, meter, key, bar count, seeds and an ACE-Step prompt with the required loop-form, mix and originality clauses, linted by check-brief.mjs. Use when planning a loop for a new genre, when a review says a loop is not idiomatic, has vocals, an intro, a breakdown or a muffled mix, or before any ACE-Step loop render.'
+description: 'Write or revise the production brief for a Soundlines genre loop (docs/loops/briefs/<slug>.json): genre-authentic tempo, meter, key, bar count, seeds and an ACE-Step prompt with the required loop-form, mix and originality clauses, linted by check-brief.mjs. Use when planning a loop for a new genre, when a review says a loop is not idiomatic, has vocals, an intro, a breakdown or a muffled mix, or before any ACE-Step loop render.'
 argument-hint: 'Genre id or slug, e.g. "genre:amapiano", plus any review feedback to address'
 ---
 
@@ -8,7 +8,7 @@ argument-hint: 'Genre id or slug, e.g. "genre:amapiano", plus any review feedbac
 
 A brief is everything ACE-Step receives. It owns **what the loop should sound like**; rendering is
 `loop-produce`, measurement is `loop-validate`, the ship decision is `loop-review`.
-The reference is [scripts/loops/briefs/turntable-hip-hop.json](../../../scripts/loops/briefs/turntable-hip-hop.json): it
+The reference is [docs/loops/briefs/turntable-hip-hop.json](../../../docs/loops/briefs/turntable-hip-hop.json): it
 produced the shipped hip-hop loop, so copy its structure and density.
 
 ## Schema
@@ -34,7 +34,7 @@ produced the shipped hip-hop loop, so copy its structure and density.
 1. **Ground the genre.** `node .github/skills/graph-edit/scripts/lookup.mjs genre:<slug>` for the
    graph description, period and key artists (as context only). Check tempo range, meter, signature
    instruments and groove against a serious source (GRAPH.md §6 standards); cite it in `notes`.
-   Reuse the catalogue brief in `scripts/previews/briefs/*.json` as a starting point if one exists.
+   Reuse the catalogue brief in `docs/previews/briefs/*.json` as a starting point if one exists.
 2. **Choose musical parameters.** A typical, central tempo (not the genre extreme); a key the genre
    commonly uses; `bpm` and `meter` count the *felt* beat, because the extractor's beat tracker follows
    it. Compound feels (6/8, 12/8) are written as `meter: 2` or `4` at the dotted-quarter BPM; waltzes
@@ -54,7 +54,7 @@ produced the shipped hip-hop loop, so copy its structure and density.
    musical traits instead. The linter blocks graph artist/track names.
 5. **Pick five fresh seeds** for a new brief. When revising a brief after review, keep the seeds that
    produced good takes and replace the bad ones.
-6. **Lint**: `node .github/skills/loop-brief/scripts/check-brief.mjs scripts/loops/briefs/<slug>.json`
+6. **Lint**: `node .github/skills/loop-brief/scripts/check-brief.mjs docs/loops/briefs/<slug>.json`
    must PASS. Any prompt or meta change invalidates planned codes (by design).
 
 ## Revising after review

@@ -1,6 +1,6 @@
 ---
 description: 'Rules for Soundlines instrument artwork SVGs, their generator and visual briefs.'
-applyTo: 'public/instrument-*/**,scripts/artwork/**,src/stories/fixtures/instrument-artwork-v1/**'
+applyTo: 'public/instrument-*/**,scripts/artwork/**,docs/artwork/**,src/stories/fixtures/instrument-artwork-v1/**'
 ---
 # Instrument artwork
 

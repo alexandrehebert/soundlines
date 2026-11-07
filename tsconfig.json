@@ -39,6 +39,7 @@
   ],
   "exclude": [
     "node_modules",
+    "tools",
     ".storybook",
     "api",
     "server",

@@ -29,7 +29,7 @@ describe('review-status.json', () => {
   })
 
   it('tracks every live edge with matching, reviewed evidence', () => {
-    const root = resolve(EVIDENCE_DIR, '../..')
+    const root = resolve(EVIDENCE_DIR, '../../..')
     const rows = readFileSync(join(EVIDENCE_DIR, 'audits/graph-edge-coverage.csv'), 'utf8')
       .trim().split(/\r?\n/).slice(1).map((line) => line.split(','))
     expect(rows.map(([id]) => id).sort()).toEqual(graph.edges.map(({ id }) => id).sort())

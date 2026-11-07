@@ -1,0 +1,26 @@
+{
+  "slug": "rai",
+  "genre": "genre:rai",
+  "asset": "public/loops/rai.wav",
+  "bpm": 108,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    400192,
+    479815,
+    570958,
+    648408,
+    869487
+  ],
+  "prompt": "Original instrumental Raï, 108 BPM, 4/4, D minor. 1980s Oran raï instrumental using a nasal, highly ornamented keyboard melody that suggests the singer's phrasing. A tight darbuka and drum-machine groove supports handclaps, electric bass and short melodic answers, with the slightly saturated warmth of a cassette-era band. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (rai) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. Major/minor metadata is only a production tonal-center choice; modal ornaments need specialist listening review and may exceed model tuning support.",
+  "sources": [
+    "https://ich.unesco.org/en/RL/rai-popular-folk-song-of-algeria-01894",
+    "https://www.bpb.de/kurz-knapp/lexika/islam-lexikon/21636/rai/",
+    "https://www.cambridge.org/core/journals/twentieth-century-music/article/seeing-music-in-early-twentieth-century-colonial-algeria/70682F4BC3DF1BFB5B6438BFDFABD591"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

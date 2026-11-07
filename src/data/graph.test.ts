@@ -710,7 +710,7 @@ describe('graph.json integrity', () => {
   })
 
   it('keeps only explicitly documented standalone or unresolved nodes disconnected', () => {
-    const text = readFileSync(new URL('../../docs/evidence/disconnected-entries.md', import.meta.url), 'utf8')
+    const text = readFileSync(new URL('../../docs/graph/evidence/disconnected-entries.md', import.meta.url), 'utf8')
     const allowed = [...text.matchAll(/^\| `([^`]+)` \|/gm)].map((match) => match[1])
     expect(allowed.length).toBe(new Set(allowed).size)
     const connected = new Set<string>()

@@ -1,0 +1,26 @@
+{
+  "slug": "hi-nrg",
+  "genre": "genre:hi-nrg",
+  "asset": "public/loops/hi-nrg.wav",
+  "bpm": 135,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    913065,
+    138518,
+    105769,
+    402429,
+    433696
+  ],
+  "prompt": "Original instrumental Hi-NRG, 135 BPM, 4/4, F minor. Early-to-mid 1980s Hi-NRG club disco. Relentless four-on-the-floor drum machine, bright offbeat hats and an octave-jumping synth bass cycle tightly under soaring melodic synth chords and short emphatic fills. Let a clean lead carry the hook over a lean analog club mix. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (hi-nrg) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://academic.oup.com/book/38797/chapter-abstract/337627259",
+    "https://academic.oup.com/book/38797/chapter-abstract/337625905",
+    "https://academic.oup.com/mq/article/105/3-4/320/6780154"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

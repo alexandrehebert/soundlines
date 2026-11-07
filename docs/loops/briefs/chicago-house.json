@@ -1,0 +1,26 @@
+{
+  "slug": "chicago-house",
+  "genre": "genre:chicago-house",
+  "asset": "public/loops/chicago-house.wav",
+  "bpm": 121,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    515103,
+    973097,
+    451510,
+    636448,
+    970616
+  ],
+  "prompt": "Original instrumental Chicago house, 121 BPM, 4/4, F minor. Mid-1980s Chicago warehouse house, built like an independent 12-inch club mix. Straight drum-machine kick with handclaps on two and four, open hats on the offbeat, a springy single-note synth bass and clipped piano or organ chords lifted by human percussion accents. Keep the boxy, lively tape mix and leave space between stabs. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (chicago-house) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://academic.oup.com/book/5894/chapter-abstract/149189393",
+    "https://www.wcmu.org/music/music/2023-03-02/from-the-warehouse-to-the-world-chicago-and-the-birth-of-house-music",
+    "https://musicorigins.org/item/the-warehouse-the-place-where-house-music-got-its-name/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

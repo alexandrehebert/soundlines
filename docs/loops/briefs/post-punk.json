@@ -1,0 +1,26 @@
+{
+  "slug": "post-punk",
+  "genre": "genre:post-punk",
+  "asset": "public/loops/post-punk.wav",
+  "bpm": 125,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    995437,
+    792233,
+    170663,
+    905728,
+    949620
+  ],
+  "prompt": "Original instrumental Post-punk, 125 BPM, 4/4, E minor. Late 1970s British post-punk. A lean repeated bass figure leads the arrangement over a dry driving drum kit; angular trebly guitar scratches and occasional dub-like echoes leave space around the rhythm. Use sharp accents, spare harmony and the intimacy of a small studio. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (post-punk) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.fulcrum.org/concern/monographs/pr76f523b?locale=en&per_page=10&view=gallery",
+    "https://academic.oup.com/edited-volume/38573",
+    "https://www.cambridge.org/core/books/abs/cambridge-companion-to-krautrock/krautrock-and-british-postpunk/F3E4EE8B0100BE9799D9BC9EC6DA5B8E"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

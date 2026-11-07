@@ -1,0 +1,26 @@
+{
+  "slug": "tango",
+  "genre": "genre:tango",
+  "asset": "public/loops/tango.wav",
+  "bpm": 120,
+  "meter": 4,
+  "key": "A minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    620023,
+    140385,
+    587588,
+    863657,
+    274753
+  ],
+  "prompt": "Original instrumental Tango, 120 BPM, 4/4, A minor. 1940s Río de la Plata tango orquesta típica instrumental with bandoneons, violins, piano and double bass. Play a firm marcato pulse with brief syncopated pushes and sudden rests, then contrast a sharp ensemble accent with a sliding, lyrical violin phrase in an intimate orchestra recording. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (tango) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://academic.oup.com/reference/62400/reference-article-abstract/555404829",
+    "https://www.cambridge.org/core/books/abs/cambridge-companion-to-tango/brief-history-of-tango/46082B9A3C0529CCD1DF68474A7F7ECF",
+    "https://ich.unesco.org/en/RL/tango-00258"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

@@ -1,0 +1,128 @@
+{
+  "brief": "detroit-techno",
+  "profile": "final",
+  "source_seed": 95614,
+  "source_start_seconds": 5.1719,
+  "duration_seconds": 7.5,
+  "fitted_bpm": 127.669,
+  "loop_bpm": 128,
+  "sample_rate": 48000,
+  "candidates_compared": 18,
+  "rejected_takes": {
+    "38127": "Take gate: fitted 256.066 BPM, tempo error 100.052%"
+  },
+  "top": [
+    {
+      "seed": 95614,
+      "start": 5.172,
+      "score": 0.8446,
+      "seam": 0.5481,
+      "consistency": 2.1292,
+      "dynamics": 0.0836
+    },
+    {
+      "seed": 95614,
+      "start": 8.928,
+      "score": 0.9181,
+      "seam": 0.6534,
+      "consistency": 2.063,
+      "dynamics": 0.0584
+    },
+    {
+      "seed": 95614,
+      "start": 10.826,
+      "score": 0.9406,
+      "seam": 0.719,
+      "consistency": 1.7388,
+      "dynamics": 0.0477
+    },
+    {
+      "seed": 95614,
+      "start": 7.517,
+      "score": 0.9631,
+      "seam": 0.457,
+      "consistency": 2.6932,
+      "dynamics": 0.2368
+    },
+    {
+      "seed": 95614,
+      "start": 6.124,
+      "score": 0.9818,
+      "seam": 0.6287,
+      "consistency": 1.9776,
+      "dynamics": 0.1554
+    },
+    {
+      "seed": 95614,
+      "start": 3.297,
+      "score": 0.9835,
+      "seam": 0.7787,
+      "consistency": 1.0788,
+      "dynamics": 0.0969
+    },
+    {
+      "seed": 95614,
+      "start": 9.398,
+      "score": 1.002,
+      "seam": 0.5906,
+      "consistency": 1.9963,
+      "dynamics": 0.2118
+    },
+    {
+      "seed": 95614,
+      "start": 4.69,
+      "score": 1.0509,
+      "seam": 0.726,
+      "consistency": 2.3738,
+      "dynamics": 0.0875
+    }
+  ],
+  "tempo_conform": {
+    "method": "periodic Fourier resampling",
+    "source_frames": 360933,
+    "output_frames": 360000,
+    "reason": "Conform fitted 127.669 BPM loop to exact brief tempo; approximately 0.26% speed increase."
+  },
+  "review_status": "pending human listening",
+  "production_note": "Two 24-second takes for faster iteration; one passed take gate. Brightness warning retained.",
+  "validation": {
+    "verdict": "WARN",
+    "findings": [
+      "WARN high_band_db=-46.83 (needs >= -38.0)"
+    ],
+    "metrics": {
+      "seconds": 7.5,
+      "fitted_bpm": 127.978,
+      "tempo_error_pct": 0.017,
+      "peak_dbfs": -1.0,
+      "rms_dbfs": -14.5,
+      "clipped_samples": 0,
+      "longest_dropout_ms": 0,
+      "vocal_band_ratio": 0.0005,
+      "high_band_db": -46.83,
+      "low_end_correlation": 1.0,
+      "length_error_ms": 0.0,
+      "wrap_jump_ratio": 0.089,
+      "dc_offset": 2e-05,
+      "bar_rms_cv": 0.0836
+    }
+  },
+  "preview": {
+    "asset": "public/genre-previews/detroit-techno.m4a",
+    "source": "public/loops/detroit-techno.wav",
+    "duration_seconds": 10,
+    "encoding": "AAC 256 kbps",
+    "construction": "Repeat selected loop to ten seconds, 25 ms fade at preview edges."
+  },
+  "provenance": {
+    "model": "acestep-v15-xl-sft",
+    "inference_steps": 80,
+    "guidance_scale": 7,
+    "use_adg": true,
+    "shift": 1,
+    "thinking": false,
+    "planned_4B_codes_present": true
+  },
+  "source_take_sha256": "a07d667aef8d396ce3bb112a60cdcfa282dcd0240a72e61109c31ca99407adae",
+  "review_notes": "Spectrograms inspected: continuous instrumental harmonic structure, no obvious vocal formants or abrupt section change at seam. High-band warning requires human assessment of brightness, groove, originality and mix; listening sign-off pending."
+}

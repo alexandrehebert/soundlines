@@ -1,6 +1,6 @@
 ---
 name: loop-produce
-description: 'Render a pro-quality seamless genre loop with the local ACE-Step 1.5 install from an approved brief (scripts/loops/briefs/<slug>.json): server lifecycle, two-phase 4B-LM planning + XL SFT DiT rendering at 80 steps, take screening, grid-snapped loop extraction and export to public/loops/<slug>.wav. Use when generating, re-rendering, retaking or drafting an audio loop for a genre, or when ACE-Step renders fail, run out of memory or use the wrong model.'
+description: 'Render a pro-quality seamless genre loop with the local ACE-Step 1.5 install from an approved brief (docs/loops/briefs/<slug>.json): server lifecycle, two-phase 4B-LM planning + XL SFT DiT rendering at 80 steps, take screening, grid-snapped loop extraction and export to public/loops/<slug>.wav. Use when generating, re-rendering, retaking or drafting an audio loop for a genre, or when ACE-Step renders fail, run out of memory or use the wrong model.'
 argument-hint: 'Brief slug to render, e.g. "turntable-hip-hop", optionally "draft" or extra seeds'
 ---
 
@@ -26,20 +26,20 @@ ACESTEP_HOME is under `/tmp` or `/private/tmp`, warn the user: macOS purges it o
 
 ## Procedure (final quality)
 
-1. **Lint the brief** — `node .github/skills/loop-brief/scripts/check-brief.mjs scripts/loops/briefs/<slug>.json`.
+1. **Lint the brief** — `node .github/skills/loop-brief/scripts/check-brief.mjs docs/loops/briefs/<slug>.json`.
    On FAIL stop and hand back to `loop-brief`; never patch the prompt yourself.
 2. **Plan codes (LM phase, no server running)** — `$S/ace-server.sh stop`, then
-   `cd $ACESTEP_HOME && $PY <repo>/$S/plan-codes.py <repo>/scripts/loops/briefs/<slug>.json $STAGE`
+   `cd $ACESTEP_HOME && $PY <repo>/$S/plan-codes.py <repo>/docs/loops/briefs/<slug>.json $STAGE`
    (~1 min load + ~20 s/seed). Codes are keyed to a hash of prompt/bpm/meter/key/duration; a changed
    brief invalidates them automatically.
 3. **Render takes (DiT phase)** — `$S/ace-server.sh start final` (≈2 min, verifies the XL model is
-   loaded), then `node $S/render-takes.mjs scripts/loops/briefs/<slug>.json $STAGE final`. ≈7 min per
+   loaded), then `node $S/render-takes.mjs docs/loops/briefs/<slug>.json $STAGE final`. ≈7 min per
    seed (80 steps × ~5 s on 25 GB M-series); five seeds ≈ 40 min. Run it as an async/background
    command and wait for completion; it resumes and skips finished seeds if interrupted.
 4. **Screen takes** — have `loop-validate` run take mode on `$STAGE/takes/*.wav` with `--png-dir $STAGE/png`.
    Move FAIL takes to `$STAGE/rejected/` (with the reason) so the extractor ignores them. If fewer
    than two takes survive, render extra seeds (`render-takes.mjs … final <seed> …` after planning them).
-5. **Extract** — `$PY $S/extract-loop.py scripts/loops/briefs/<slug>.json $STAGE/takes <asset> scripts/loops/briefs/<slug>.selection.json`
+5. **Extract** — `$PY $S/extract-loop.py docs/loops/briefs/<slug>.json $STAGE/takes <asset> docs/loops/briefs/<slug>.selection.json`
    where `<asset>` is the brief's `asset` or `public/loops/<slug>.wav`.
 6. **Stop the server** — `$S/ace-server.sh stop` (it holds ~22 GB).
 7. **Hand off** to `loop-validate` (loop mode on the asset) and then `loop-review`, passing `$STAGE`.

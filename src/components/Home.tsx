@@ -13,6 +13,7 @@ import { angleDelta, createScratchDeck, NORMAL_SPEED_DEG_PER_SEC, type ScratchDe
 import './Home.css'
 import { localizePath } from '../i18n/routing.ts'
 import { graphLabels } from '../i18n/graphLabels.ts'
+import { PROJECT_SITE_URL, REPOSITORY_URL } from '../projectLinks.ts'
 import { useColorTheme, type ColorTheme } from '../useColorTheme.ts'
 import { scheduleTurntableHints, turntableHintFrame, turntableHintPosition, type TurntableHintScenario, type TurntableHintTargets } from './turntableHint.ts'
 
@@ -654,6 +655,10 @@ export function Home() {
             {DESTINATIONS.map(({ view }) => (
               <ViewLink key={view} view={view} className="discovery-footer-link">{tViews(view)}</ViewLink>
             ))}
+          </nav>
+          <nav className="discovery-footer-links discovery-footer-project" aria-label={t('projectLinks.navigation')}>
+            <a href={REPOSITORY_URL}>{t('projectLinks.repository')}</a>
+            <a href={`${PROJECT_SITE_URL}/${locale}/`}>{t('projectLinks.about')}</a>
           </nav>
           <div className="discovery-footer-meta">
             <p>

@@ -1,0 +1,26 @@
+{
+  "slug": "electro",
+  "genre": "genre:electro",
+  "asset": "public/loops/electro.wav",
+  "bpm": 121,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    278310,
+    313902,
+    465231,
+    316453,
+    662279
+  ],
+  "prompt": "Original instrumental Electro, 121 BPM, 4/4, D minor. Early 1980s electro street-dance instrumental. A syncopated TR-808 kick, dry clap and sharp cowbell interact with a precisely sequenced rubbery synth bass and bright robotic keyboard replies. Use a broken funk pattern with space between hits and a spare machine-room mix. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (electro) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.si.edu/object/archives/components/sova-acma-06-103-ref56",
+    "https://folkways.si.edu/smithsonian-anthology-of-hip-hop-and-rap-intl",
+    "https://www.si.edu/object/life-and-death-new-york-dance-floor-1980-1983-tim-lawrence:siris_sil_1075446"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

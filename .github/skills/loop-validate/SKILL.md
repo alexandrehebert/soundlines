@@ -14,9 +14,9 @@ judges musical taste or genre authenticity (`loop-review`), and never edits brie
 ```sh
 PY=${ACESTEP_HOME:-$HOME/Tools/ACE-Step-1.5}/.venv/bin/python
 V=.github/skills/loop-validate/scripts/check-loop.py
-node .github/skills/loop-brief/scripts/check-brief.mjs [scripts/loops/briefs/<slug>.json]     # brief lint
-$PY $V scripts/loops/briefs/<slug>.json $STAGE/takes/*.wav --takes --png-dir $STAGE/png     # take screening
-$PY $V scripts/loops/briefs/<slug>.json <asset.wav> --png-dir $STAGE/png                   # shipped loop
+node .github/skills/loop-brief/scripts/check-brief.mjs [docs/loops/briefs/<slug>.json]     # brief lint
+$PY $V docs/loops/briefs/<slug>.json $STAGE/takes/*.wav --takes --png-dir $STAGE/png     # take screening
+$PY $V docs/loops/briefs/<slug>.json <asset.wav> --png-dir $STAGE/png                   # shipped loop
 ```
 
 Exit code 1 means at least one FAIL. The PNGs (mel + harmonic 0-5 kHz; loops tiled ×2 with the seam in

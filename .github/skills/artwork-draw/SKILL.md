@@ -12,7 +12,7 @@ ship decision.
 
 ## Inputs
 
-`scripts/artwork/briefs/<slug>.json` (must pass `check-brief.mjs`; without a brief, stop and hand to
+`docs/artwork/briefs/<slug>.json` (must pass `check-brief.mjs`; without a brief, stop and hand to
 `artwork-brief`), the style guide, and neighbouring instruments of the same family for consistency.
 
 ## Procedure

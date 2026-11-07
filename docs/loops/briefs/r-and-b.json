@@ -1,0 +1,26 @@
+{
+  "slug": "r-and-b",
+  "genre": "genre:r-and-b",
+  "asset": "public/loops/r-and-b.wav",
+  "bpm": 112,
+  "meter": 4,
+  "key": "F major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    985339,
+    252933,
+    273944,
+    108325,
+    230159
+  ],
+  "prompt": "Original instrumental Rhythm and blues, 112 BPM, 4/4, F major. Early-1950s jump rhythm and blues instrumental in a blues-based dance-band style. A honking tenor sax plays a short riff over a barrelhouse piano shuffle, walking upright bass, choppy electric guitar and a brisk drum backbeat. Raw warm mono-style club balance and an emphatic turnaround. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/acoustic.json (r-and-b) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rhythm-and-blues",
+    "https://folklife.si.edu/magazine/freedom-sounds-tell-it-like-it-is-a-history-of-rhythm-and-blues",
+    "https://folkways-media.si.edu/docs/festival/2011/festival-program-book-rnb.pdf"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

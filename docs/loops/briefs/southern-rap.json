@@ -1,0 +1,26 @@
+{
+  "slug": "southern-rap",
+  "genre": "genre:southern-rap",
+  "asset": "public/loops/southern-rap.wav",
+  "bpm": 88,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    668399,
+    883558,
+    862007,
+    169341,
+    199224
+  ],
+  "prompt": "Original instrumental Southern rap, 88 BPM, 4/4, D minor. A representative late-1990s New Orleans Southern rap bounce instrumental, driven by a quick recurring kick-and-clap break and an emphatic low bass. Clip a bright keyboard fragment into short response phrases and leave deliberate gaps for a dance-floor call. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (southern-rap) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://southernspaces.org/2008/dirty-decade-rap-music-and-us-south-1997-2007/",
+    "https://blog.oup.com/2014/02/dirty-south-hip-hop-atlanta-rap/",
+    "https://www.grammy.com/news/guide-to-dirty-south-hip-hop-major-releases-artists-labels-history-playlist/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

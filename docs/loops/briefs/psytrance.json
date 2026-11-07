@@ -1,0 +1,26 @@
+{
+  "slug": "psytrance",
+  "genre": "genre:psytrance",
+  "asset": "public/loops/psytrance.wav",
+  "bpm": 145,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    467729,
+    552395,
+    251719,
+    495530,
+    822424
+  ],
+  "prompt": "Original instrumental Psytrance, 145 BPM, 4/4, F minor. Late 1990s psychedelic trance in a full-flowing section. A solid kick anchors a rolling tightly articulated sixteenth-note bass pattern while spiraling resonant arpeggios, panned squelches and fast clean percussion flicker overhead. Sustain the hypnotic forward motion and keep the low end precise. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (psytrance) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://pure.hud.ac.uk/en/publications/goatrance-travelers-psychedelic-trance-and-its-seasoned-progeny/",
+    "https://research-information.bris.ac.uk/ws/portalfiles/portal/189626890/Final_Copy_2019_01_31_Charles_C_PhD.pdf",
+    "https://dj.dancecult.net/index.php/dancecult/article/view/328"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

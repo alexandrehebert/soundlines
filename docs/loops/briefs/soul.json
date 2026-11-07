@@ -1,0 +1,26 @@
+{
+  "slug": "soul",
+  "genre": "genre:soul",
+  "asset": "public/loops/soul.wav",
+  "bpm": 91,
+  "meter": 4,
+  "key": "F major",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    846375,
+    544597,
+    313284,
+    474347,
+    789329
+  ],
+  "prompt": "Original instrumental Soul, 91 BPM, 4/4, F major. Late-1960s Southern soul instrumental. A steady slightly laid-back drum backbeat supports a round melodic electric bass, clean clipped guitar, rolling Hammond organ and warm horn call and response. Use the direct sound of a small rhythm section playing together, with expressive pauses and a short gospel-colored turnaround. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/acoustic.json (soul) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://timeline.carnegiehall.org/genres/soul",
+    "https://www.cambridge.org/core/books/abs/popular-music-genres/soul-from-gospel-to-groove/F3703EC57D97F3A283CBA6513333F2E5",
+    "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rhythm-and-blues"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

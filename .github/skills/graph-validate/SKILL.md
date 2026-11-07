@@ -1,6 +1,6 @@
 ---
 name: graph-validate
-description: 'Run the deterministic Soundlines graph validation gate and turn failures into fixes. Use after any edit to src/data/graph.json, a graph.<locale>.json overlay or docs/evidence; before committing or reviewing graph changes; when "npm run validate:graph", the Graph quality CI workflow or a src/data test fails; or to check schema, ids, edge directions, formatting, overlay coverage, evidence bookkeeping and documented counts.'
+description: 'Run the deterministic Soundlines graph validation gate and turn failures into fixes. Use after any edit to src/data/graph.json, a graph.<locale>.json overlay or docs/graph/evidence; before committing or reviewing graph changes; when "npm run validate:graph", the Graph quality CI workflow or a src/data test fails; or to check schema, ids, edge directions, formatting, overlay coverage, evidence bookkeeping and documented counts.'
 argument-hint: 'Optional: a failing test name or CI log to diagnose'
 ---
 
@@ -13,7 +13,7 @@ whether claims are true (`graph-fact-check`) or whether a change is editorially 
 ## Run
 
 ```sh
-npm run review-status        # regenerate src/data/review-status.json from docs/evidence (writes a file)
+npm run review-status        # regenerate src/data/review-status.json from docs/graph/evidence (writes a file)
 npm run validate:graph       # vitest run src/data src/graph
 ```
 
@@ -33,8 +33,8 @@ when the change intentionally alters it (a new genre in the family map, a new st
 | `graph` "sane periods", "estimated placements", "phases" | period/phase semantics | fix years, add `estimated` + `estimateNote`, order phases from `period.start` |
 | `graph` "groups every genre into recognizable families" | per-family genre lists in the test | add the new genre slug to the family list |
 | `graph` "at least three sourced key artists", "HTTPS sources" | sourcing minimums | add sourced `key_artist_of` edges / fix the URL; never invent sources |
-| `graph` "standalone or unresolved nodes disconnected", "roots" | orphans | link with a sourced edge, or document it in `docs/evidence/disconnected-entries.md` |
-| `festivals` * | festival register and audit JSON/MD alignment | update `docs/evidence/festivals.md` and `audits/festival-*.json` (+ `.md`) |
+| `graph` "standalone or unresolved nodes disconnected", "roots" | orphans | link with a sourced edge, or document it in `docs/graph/evidence/disconnected-entries.md` |
+| `festivals` * | festival register and audit JSON/MD alignment | update `docs/graph/evidence/festivals.md` and `audits/festival-*.json` (+ `.md`) |
 | `reviewStatus` "matches the evidence files" | `review-status.json` is fresh | `npm run review-status` |
 | `reviewStatus` "evidence note for every live node", "tracks every live edge" | evidence notes and `graph-edge-coverage.csv` rows match live entries | write the note / add or correct the CSV row (`graph-edit` evidence templates) |
 | `graphLocale` "registers exactly one graph.<locale>.json overlay" | overlay files ↔ `LOCALES` ↔ `GRAPH_OVERLAYS` | see `graph-translate` "Add a language" |

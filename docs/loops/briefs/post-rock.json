@@ -1,0 +1,26 @@
+{
+  "slug": "post-rock",
+  "genre": "genre:post-rock",
+  "asset": "public/loops/post-rock.wav",
+  "bpm": 86,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 26,
+  "seeds": [
+    236661,
+    711854,
+    616637,
+    799013,
+    112667
+  ],
+  "prompt": "Original instrumental Post-rock, 86 BPM, 4/4, E minor. Late 1990s instrumental post-rock in an established repeating textural passage. A repeated clean guitar motif, chiming delay, bowed or sustained guitar layers and an understated live pulse remain at a steady established intensity. Preserve quiet detail and natural cymbal bloom within the repeating phrase. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (post-rock) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.thewire.co.uk/in-writing/book-extracts/p%3D9949",
+    "https://researchcommons.waikato.ac.nz/bitstreams/1f7950b9-446f-4f13-8a26-adc624e02590/download",
+    "https://academic.oup.com/book/6294"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

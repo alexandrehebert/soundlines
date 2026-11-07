@@ -1,0 +1,26 @@
+{
+  "slug": "hardstyle",
+  "genre": "genre:hardstyle",
+  "asset": "public/loops/hardstyle.wav",
+  "bpm": 150,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    997339,
+    113425,
+    580613,
+    341521,
+    463743
+  ],
+  "prompt": "Original instrumental Hardstyle, 150 BPM, 4/4, F minor. Mid-2000s Dutch hardstyle in a driving main section. Heavy pitched distorted kicks with long tonal tails alternate with tightly gated synth stabs, supported by a short hard-trance-influenced melody and emphatic percussion fills. Keep the kick and bass tail clear in a strong club mix. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (hardstyle) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.allmusic.com/album/hardstyle-10-years-mw0002452091",
+    "https://hardnews.nl/en/project-one-confirms-return-with-one-time-only-classics-show/",
+    "https://www.theguardian.com/music/2020/jan/10/gift-of-the-gabber-the-return-of-dance-musics-gloriously-tasteless-subgenre"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

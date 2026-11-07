@@ -1,0 +1,26 @@
+{
+  "slug": "highlife",
+  "genre": "genre:highlife",
+  "asset": "public/loops/highlife.wav",
+  "bpm": 112,
+  "meter": 4,
+  "key": "G major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    789351,
+    246390,
+    276990,
+    220098,
+    628332
+  ],
+  "prompt": "Original instrumental Highlife, 112 BPM, 4/4, G major. 1960s Ghanaian guitar-band highlife instrumental with two bright electric guitars weaving distinct syncopated parts over buoyant bass, bell and hand percussion. Add a short warm trumpet answer and keep the dance groove light, with vintage band-room balance. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (highlife) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://journals.uew.edu.gh/index.php/jaac/article/view/507",
+    "https://ugspace.ug.edu.gh/bitstream/handle/123456789/5482/Abena%20Kyere_Comparative%20Study%20of%20the%20Lives%20and%20Works%20of%20Selected%20Ghanaian%20Female%20Musicians%20from%201980-2010_2012.pdf",
+    "https://www.jstage.jst.go.jp/article/africa1964/2002/60/2002_60_41/_article/-char/en"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

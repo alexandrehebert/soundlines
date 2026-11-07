@@ -1,0 +1,26 @@
+{
+  "slug": "footwork",
+  "genre": "genre:footwork",
+  "asset": "public/loops/footwork.wav",
+  "bpm": 160,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    884097,
+    921421,
+    675365,
+    281783,
+    615098
+  ],
+  "prompt": "Original instrumental Juke / footwork, 160 BPM, 4/4, F minor. Chicago dance-battle footwork, early 2010s feel. Deep 808 bass and staggered kick-clap volleys leave open spaces for double-time skittering hats, triplet rolls and clipped original electric-piano chord chops that answer each other. Keep the pulse implicit through the rhythmic feints and use a lean sampler-and-drum-machine mix. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (footwork) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://elischolar.library.yale.edu/gsas_dissertations/1375/",
+    "https://journals.sagepub.com/doi/full/10.1177/20563051221107644",
+    "https://ra.co/features/1235"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

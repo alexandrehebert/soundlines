@@ -1,0 +1,26 @@
+{
+  "slug": "house",
+  "genre": "genre:house",
+  "asset": "public/loops/house.wav",
+  "bpm": 124,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    223517,
+    253774,
+    414554,
+    474822,
+    261977
+  ],
+  "prompt": "Original instrumental House, 124 BPM, 4/4, F minor. House music in a classic club arrangement. A consistent quarter-note kick, crisp claps on two and four and offbeat open hats support a springy syncopated bass and short piano chord stabs. Maintain a grooving instrumental phrase and introduce movement with small percussion and filter changes. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (house) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://academic.oup.com/book/5894/chapter-abstract/149189393",
+    "https://api.pageplace.de/preview/DT0400.9780190698430_A35646664/preview-9780190698430_A35646664.pdf",
+    "https://www.officialcharts.com/songs/steve-silk-hurley-jack-your-body/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

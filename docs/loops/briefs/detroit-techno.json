@@ -1,0 +1,18 @@
+{
+  "slug": "detroit-techno",
+  "genre": "genre:detroit-techno",
+  "bpm": 128,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    38127,
+    95614,
+    62483,
+    17265,
+    84039
+  ],
+  "prompt": "Original instrumental late-1980s Detroit techno, 128 BPM, 4/4, F minor. A precise four-on-the-floor drum-machine kick, dry claps on two and four, ticking closed hats and open hats on the offbeats. A warm syncopated analog bass sequence interlocks with the kick. Minor-seventh synthesizer chord stabs answer a memorable original two-bar ascending bell-like synth motif, leaving space between phrases. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Premium studio mix, crisp separated drum transients, controlled sub-bass, warm analog saturation, restrained stereo ambience on synths, mono-compatible centered kick and bass. Polished and clear, not muffled. Entirely instrumental: no singing, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Uses the existing electric catalogue Detroit brief: sequenced drum machines, futuristic bass and warm synth harmony, at its 128 BPM. Context: https://timeline.carnegiehall.org/genres/detroit-techno . Faster production: 24-second source takes rather than 36; initially render two seeds, retain XL SFT 80-step and standalone 4B planning. Preview derived from the selected loop."
+}

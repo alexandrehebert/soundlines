@@ -1,0 +1,26 @@
+{
+  "slug": "breakbeat",
+  "genre": "genre:breakbeat",
+  "asset": "public/loops/breakbeat.wav",
+  "bpm": 130,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    560529,
+    704117,
+    807417,
+    786187,
+    760420
+  ],
+  "prompt": "Original instrumental Breakbeat, 130 BPM, 4/4, F minor. A club breakbeat instrumental with a clearly broken kick pattern, offbeat accents and a strong snare backbeat. Rearrange an original acoustic drum break in a repeating two-bar phrase, with small ghost notes and a varied turnaround against a rubbery bass riff. Keep the drums forward and leave room for the syncopation. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (breakbeat) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.cambridge.org/core/books/abs/popular-music-genres/funk-the-breakbeat-starts-here/55837A608444BA396211AFFCF319C2C2",
+    "https://repository.uwl.ac.uk/id/eprint/5150/",
+    "https://openresearch.lsbu.ac.uk/download/cc22adab77ea67b097c59ac741e3bcc76a2df6238aff27877c6810691013dd3e/217487/RIETVELD-Machine%20Possession%20-%20Accepted%202017.pdf"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

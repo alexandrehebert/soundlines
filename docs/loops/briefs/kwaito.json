@@ -1,0 +1,26 @@
+{
+  "slug": "kwaito",
+  "genre": "genre:kwaito",
+  "asset": "public/loops/kwaito.wav",
+  "bpm": 108,
+  "meter": 4,
+  "key": "A minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    306368,
+    234249,
+    717649,
+    294118,
+    353616
+  ],
+  "prompt": "Original instrumental Kwaito, 108 BPM, 4/4, A minor. 1990s South African township kwaito instrumental with a relaxed slowed-house four-on-the-floor pulse, warm repeating bass and clipped keyboard chords. Use light shaker percussion, short synth responses and an unhurried groove with room for spoken party refrains. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (kwaito) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://journal.ru.ac.za/index.php/africanmusic/article/view/1782",
+    "https://doi.org/10.7208/chicago/9780226362687.003.0002",
+    "https://sahistory.org.za/article/history-kwaito-music"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

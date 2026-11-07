@@ -21,11 +21,11 @@ Woodstock, Monterey Pop and Newport Folk; Bayreuth, Salzburg and Donaueschingen;
 Movement, Sónar and Tomorrowland; Reggae Sunsplash, FESPAM and Sauti za Busara;
 Cosquín, Viña del Mar and Rock al Parque; Sawai Gandharva, Java Jazz and Baalbeck;
 and further jazz, metal and cross-cultural institutions. All festivals have at
-least three references; the [source audit](./evidence/audits/festival-sources-001.md)
+least three references; the [source audit](./graph/evidence/audits/festival-sources-001.md)
 explains source scope, conflicts and High/Medium confidence decisions. Descriptions explain
 breakthrough performances, new-music platforms, regional traditions and musical
 exchange rather than assigning a popularity or influence score. The
-[coverage register](./evidence/festivals.md) lists every festival, country,
+[coverage register](./graph/evidence/festivals.md) lists every festival, country,
 first edition or chronology anchor and editorial caveat. This is a curated collection, not a
 comprehensive worldwide directory.
 Festivals are searchable and open in the detail panel within the current view.
@@ -36,7 +36,7 @@ in both directions. These links do not affect musical lineage or timeline lanes.
 Specific festival turning points also appear as separately sourced History
 events, including Dylan at Newport, the complete Ring at Bayreuth, and Daft
 Punk’s Coachella pyramid. All 39 festivals have a supplementary Wikipedia
-[cross-check](./evidence/audits/festival-wikipedia-events-002.md); conflicts
+[cross-check](./graph/evidence/audits/festival-wikipedia-events-002.md); conflicts
 are recorded alongside the stronger primary and institutional evidence.
 
 Festival periods normally start at the first edition; conventional chronology
@@ -87,7 +87,7 @@ the original catalogue. Origins and era boundaries are approximate and overlappi
 not exact invention dates or popularity measurements. New nodes deliberately have
 neutral bars rather than invented prominence histories.
 
-The [connectivity register](./evidence/disconnected-entries.md) explicitly
+The [connectivity register](./graph/evidence/disconnected-entries.md) explicitly
 records sourced standalone events and unresolved track attributions. Stable IDs
 are retained without inventing relationships; tests enforce this exact exception
 set as well as the live-edge evidence tracker and generated review-status index.

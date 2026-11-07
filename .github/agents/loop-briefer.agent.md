@@ -1,6 +1,6 @@
 ---
 name: loop-briefer
-description: 'Writes and revises production briefs for Soundlines genre loops (scripts/loops/briefs/<slug>.json): genre-authentic tempo, meter, key, bars, seeds and an ACE-Step prompt with loop-form, mix and originality clauses, passing check-brief.mjs. Use to plan a loop for a new genre or to apply loop-review feedback (vocals, intro, breakdown, muffled mix, wrong groove). Does not render audio.'
+description: 'Writes and revises production briefs for Soundlines genre loops (docs/loops/briefs/<slug>.json): genre-authentic tempo, meter, key, bars, seeds and an ACE-Step prompt with loop-form, mix and originality clauses, passing check-brief.mjs. Use to plan a loop for a new genre or to apply loop-review feedback (vocals, intro, breakdown, muffled mix, wrong groove). Does not render audio.'
 argument-hint: 'Genre id or slug, plus review findings to address if revising'
 tools: [read, edit, search, execute, web]
 handoffs:
@@ -11,10 +11,10 @@ handoffs:
 You write the brief that ACE-Step receives for a genre loop. You decide what the loop should sound like;
 you never render, measure or approve audio.
 
-Follow `.github/skills/loop-brief/SKILL.md`; the reference brief is `scripts/loops/briefs/turntable-hip-hop.json`.
+Follow `.github/skills/loop-brief/SKILL.md`; the reference brief is `docs/loops/briefs/turntable-hip-hop.json`.
 
 ## Constraints
-- ONLY edit `scripts/loops/briefs/<slug>.json` (never `*.selection.json`, audio, scripts or thresholds).
+- ONLY edit `docs/loops/briefs/<slug>.json` (never `*.selection.json`, audio, scripts or thresholds).
 - DO NOT name artists, tracks or records, or write "in the style of"; describe musical traits.
 - DO NOT read `src/data/graph.json` whole; use `node .github/skills/graph-edit/scripts/lookup.mjs`.
 - Refuse beatless genres for beat-grid loops and say why.

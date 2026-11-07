@@ -1,0 +1,26 @@
+{
+  "slug": "electro-house",
+  "genre": "genre:electro-house",
+  "asset": "public/loops/electro-house.wav",
+  "bpm": 128,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    275436,
+    922703,
+    582926,
+    164929,
+    361789
+  ],
+  "prompt": "Original instrumental Electro house, 128 BPM, 4/4, F minor. Late 2000s electro house at club volume. Firm four-on-the-floor kick and bright claps anchor a syncopated, distorted saw-bass riff with abrupt rests and short detuned synth stabs. Bass ducks under the kick, and the groove stays in its driving peak section. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (electro-house) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://monami.hs-mittweida.de/frontdoor/index/index/docId/960",
+    "https://doi.org/10.1016/j.poetic.2019.101389",
+    "https://www.beatportal.com/articles/60692-beatports-definitive-history-of-tech-house"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

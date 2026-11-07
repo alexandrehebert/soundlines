@@ -1,0 +1,26 @@
+{
+  "slug": "bachata",
+  "genre": "genre:bachata",
+  "asset": "public/loops/bachata.wav",
+  "bpm": 128,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    491607,
+    683151,
+    397700,
+    777699,
+    967430
+  ],
+  "prompt": "Original instrumental Bachata, 128 BPM, 4/4, D minor. Dominican guitar bachata instrumental with a bright requinto picking a lyrical upper-register phrase over a second guitar's arpeggios. Keep a supple four-count dance pulse with crisp bongó, scraped güira and a bass accent toward beat four, captured like a small live guitar ensemble. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (bachata) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://ich.unesco.org/en/RL/music-and-dance-of-dominican-bachata-01514?RL=01514",
+    "https://www.allmusic.com/style/bachata-ma0000002441/artists",
+    "https://www.cambridge.org/core/journals/latin-american-research-review/article/from-radio-guarachita-to-el-tieto-eshow-bachatas-imagined-communities/B1507CFD80DC5775668D191F2478AF57"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

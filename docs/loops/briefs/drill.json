@@ -1,0 +1,26 @@
+{
+  "slug": "drill",
+  "genre": "genre:drill",
+  "asset": "public/loops/drill.wav",
+  "bpm": 140,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    858876,
+    210577,
+    786930,
+    477769,
+    498668
+  ],
+  "prompt": "Original instrumental Drill, 140 BPM, 4/4, D minor. Early-2010s Chicago drill instrumental with a heavy half-time backbeat, threatening minor piano and a long low 808 punctuated by offbeat kicks. Add ticking trap hats and abrupt drum gaps with a stark, close-miked mix, centered on Chicago's deliberate bounce. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (drill) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.allmusic.com/genre/drill-ma0000013643",
+    "https://www.cambridge.org/core/books/abs/cambridge-companion-to-global-rap/art-of-capping/1767EE7D51C7CA43FBB5B8B57EA9865C",
+    "https://openaccess.city.ac.uk/id/eprint/23519/1/DigitalStreetCultureAcceptedVersion.pdf"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

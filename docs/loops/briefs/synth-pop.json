@@ -1,0 +1,26 @@
+{
+  "slug": "synth-pop",
+  "genre": "genre:synth-pop",
+  "asset": "public/loops/synth-pop.wav",
+  "bpm": 119,
+  "meter": 4,
+  "key": "C major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    379430,
+    535901,
+    577563,
+    228118,
+    165841
+  ],
+  "prompt": "Original instrumental Synth-pop, 119 BPM, 4/4, C major. Early 1980s synth-pop. A round mono synth bass and steady drum-machine backbeat support a simple melodic synth hook and bright polyphonic chord changes, with short filter and percussion variations. Use a clean analog mix and maintain the structure of a concise pop chorus. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (synth-pop) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.cambridge.org/core/books/abs/electronic-music/synth-pop/D121624A71DA46E80162B06844B56CB9",
+    "https://www.cambridge.org/core/books/abs/popular-music-genres/synthpop-into-the-digital-age/1D323A93B510BA279A4F5849D43CF252",
+    "https://academic.oup.com/book/1531/chapter/140938010"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

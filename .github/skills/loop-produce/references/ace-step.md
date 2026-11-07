@@ -19,7 +19,7 @@ its five takes, so these settings are the reference, not a guess.
 | Seeds | | 5 per brief (reference: 73192, 18409, 60217, 41126, 52880) |
 | Extraction | | 4 bars on regression-fitted beat grid, transient-snapped start −12 ms, 8 ms wrap crossfade, DC removed, −1 dBFS peak, PCM16 at 48 kHz |
 
-Draft profile (also used by `scripts/previews/render-ace-previews.mjs` for catalogue previews):
+Draft profile (also used by `.github/skills/preview-produce/scripts/render-ace-previews.mjs` for catalogue previews):
 `acestep-v15-turbo`, 8 steps, in-server `acestep-5Hz-lm-1.7B` with `thinking: true`. Fast and fine
 for 10 s previews, not for shipped loops. A first pass on `acestep-v15-base` at 64 steps was clearly
 behind XL SFT; do not use it.

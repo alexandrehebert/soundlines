@@ -4,8 +4,8 @@ import { buildIndex, groupedRelations, searchNodes } from '../graph/graph.ts'
 import { viewForNode } from '../graph/timeline.ts'
 import type { MusicGraph, NodeType } from '../graph/types.ts'
 import data from './graph.json'
-import sourceAudit from '../../docs/evidence/audits/festival-sources-001.json'
-import wikipediaReview from '../../docs/evidence/audits/festival-wikipedia-events-002.json'
+import sourceAudit from '../../docs/graph/evidence/audits/festival-sources-001.json'
+import wikipediaReview from '../../docs/graph/evidence/audits/festival-wikipedia-events-002.json'
 import { createHistoryModel } from '../graph/history.ts'
 
 const graph = data as MusicGraph
@@ -56,7 +56,7 @@ describe('sourced festival collection', () => {
   })
 
   it('documents the whole expanded worldwide collection in the coverage register', () => {
-    const register = readFileSync(new URL('../../docs/evidence/festivals.md', import.meta.url), 'utf8')
+    const register = readFileSync(new URL('../../docs/graph/evidence/festivals.md', import.meta.url), 'utf8')
     const rows = [...register.matchAll(/^\| `(festival:[^`]+)` \| ([^|]+) \| ([^|]+) \| (-?\d+) \|$/gm)]
     const festivals = graph.nodes.filter((node) => node.type === 'festival')
     expect(rows.map((row) => row[1]).sort()).toEqual(festivals.map((node) => node.id).sort())

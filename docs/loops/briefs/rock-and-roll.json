@@ -1,0 +1,26 @@
+{
+  "slug": "rock-and-roll",
+  "genre": "genre:rock-and-roll",
+  "asset": "public/loops/rock-and-roll.wav",
+  "bpm": 155,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    819173,
+    576724,
+    805566,
+    114648,
+    546777
+  ],
+  "prompt": "Original instrumental Rock and roll, 155 BPM, 4/4, E minor. Mid-1950s rock and roll in a compact live studio take. A swinging backbeat and walking upright bass carry bright electric guitar, rolling boogie piano and short saxophone answers. Use hand-played rhythm, short slapback and the direct sound of a period recording. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (rock-and-roll) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rock/",
+    "https://case.edu/ech/articles/r/rock-roll",
+    "https://www.cambridge.org/core/books/abs/cambridge-history-of-american-music/rock-and-roll-era/F4ECDF4D5E2B5AD13CA2C448B14ADAD"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "jazz-fusion",
+  "genre": "genre:jazz-fusion",
+  "asset": "public/loops/jazz-fusion.wav",
+  "bpm": 115,
+  "meter": 4,
+  "key": "F major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    507095,
+    873183,
+    364736,
+    913688,
+    368675
+  ],
+  "prompt": "Original instrumental Jazz fusion, 115 BPM, 4/4, F major. Mid-1970s electric jazz fusion instrumental. A syncopated electric bass ostinato and agile live kit establish a funk pocket, with a Rhodes electric piano playing suspended harmonies and a lightly overdriven guitar taking angular improvisatory lines. Warm analog studio sound and crisp dynamics from real players. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/acoustic.json (jazz-fusion) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.britannica.com/art/jazz-rock",
+    "https://timeline.carnegiehall.org/genres/jazz-fusion"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

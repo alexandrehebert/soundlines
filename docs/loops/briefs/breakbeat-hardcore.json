@@ -1,0 +1,26 @@
+{
+  "slug": "breakbeat-hardcore",
+  "genre": "genre:breakbeat-hardcore",
+  "asset": "public/loops/breakbeat-hardcore.wav",
+  "bpm": 150,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    710541,
+    411587,
+    996645,
+    853344,
+    806346
+  ],
+  "prompt": "Original instrumental Breakbeat hardcore, 150 BPM, 4/4, F minor. Early 1990s UK breakbeat hardcore rave. A briskly chopped break and occasional house kick reinforce a rolling sub-bass, bright sampled piano chords and sharp acid or rave stabs. Use pitched-up sampler texture, clipped fills and a continuous high-energy dance section. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (breakbeat-hardcore) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://journals.sagepub.com/doi/10.1177/17499755221134940",
+    "https://rave-archive.com/history/1992-1995/",
+    "https://pure.uva.nl/ws/files/138682492/Thesis.pdf"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

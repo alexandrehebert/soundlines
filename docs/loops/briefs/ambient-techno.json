@@ -1,0 +1,26 @@
+{
+  "slug": "ambient-techno",
+  "genre": "genre:ambient-techno",
+  "asset": "public/loops/ambient-techno.wav",
+  "bpm": 117,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    745332,
+    657880,
+    964948,
+    615289,
+    945703
+  ],
+  "prompt": "Original instrumental Ambient techno, 117 BPM, 4/4, F minor. Early 1990s ambient techno. A soft, restrained four-on-the-floor pulse and tiny ticking percussion sit behind long layered pads, an airy arpeggio and distant dubby fragments. Use an enveloping stereo mix where the atmosphere carries as much weight as the drum machine. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (ambient-techno) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.allmusic.com/style/ambient-techno-ma0000012032/artists",
+    "https://academic.oup.com/book/44623/chapter-abstract/378621525",
+    "https://pitchfork.com/reviews/albums/12864-pop-ambient-2009/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

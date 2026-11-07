@@ -1,0 +1,26 @@
+{
+  "slug": "gnawa",
+  "genre": "genre:gnawa",
+  "asset": "public/loops/gnawa.wav",
+  "bpm": 96,
+  "meter": 6,
+  "key": "A minor",
+  "bars": 4,
+  "duration": 29,
+  "seeds": [
+    381379,
+    579059,
+    604228,
+    752818,
+    731099
+  ],
+  "prompt": "Original instrumental Gnawa, 96 BPM, 6/4, A minor. Moroccan urban Gnawa ensemble instrumental passage with the skin-covered guembri plucking a low repeating bass melody against interlocking qraqeb metal castanets. Keep the cycle steady with subtle hand variation, leaving space between instrumental responses, in a natural live room. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (gnawa) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. Meter 6 is not verified end-to-end by the current loop extractor: draft and verify full phrase/downbeat alignment before final rendering. Preserve the six-beat cycle and guembri/qraqeb interplay; do not impose a four-on-the-floor rhythm.",
+  "sources": [
+    "https://ich.unesco.org/en/RL/gnawa-01170?RL=01170",
+    "https://central.bac-lac.gc.ca/.item?app=Library&id=TC-BVAU-42171&oclc_number=1032909770&op=pdf",
+    "https://doi.org/10.1017/S002185370800368X"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

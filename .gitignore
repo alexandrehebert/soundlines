@@ -2,6 +2,7 @@ node_modules
 .next
 dist
 storybook-static
+_site
 *.local
 .DS_Store
 .vercel

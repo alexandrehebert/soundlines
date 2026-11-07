@@ -1,0 +1,26 @@
+{
+  "slug": "dancehall",
+  "genre": "genre:dancehall",
+  "asset": "public/loops/dancehall.wav",
+  "bpm": 96,
+  "meter": 4,
+  "key": "A minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    650208,
+    440547,
+    365833,
+    946604,
+    757698
+  ],
+  "prompt": "Original instrumental Dancehall, 96 BPM, 4/4, A minor. Late-1980s Jamaican digital dancehall instrumental built as a spare sound-system riddim. Use a dry syncopated drum-machine pattern, short electronic bass riff and clipped keyboard hits, repeating with subtle upper-part mutes while the rhythm stays present and enough space for a deejay. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (dancehall) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://jis.gov.jm/information/jamaicas-heritage-dance-music/jamaicas-heritage-music/",
+    "https://www.dukeupress.edu/wake-the-town-and-tell-the-people",
+    "https://scholarworks.uno.edu/td/508/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

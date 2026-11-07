@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:site": "node site/build.mjs",
     "start": "next start",
     "vercel-build": "next build",
     "lint": "oxlint --ignore-pattern .next",

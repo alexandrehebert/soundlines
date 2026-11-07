@@ -1,0 +1,26 @@
+{
+  "slug": "drum-and-bass",
+  "genre": "genre:drum-and-bass",
+  "asset": "public/loops/drum-and-bass.wav",
+  "bpm": 174,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    475983,
+    396843,
+    673914,
+    326417,
+    415602
+  ],
+  "prompt": "Original instrumental Drum and bass, 174 BPM, 4/4, F minor. Late 1990s UK drum and bass, with a fast broken two-step drum pattern, sharp backbeat and subtle ghost snares under busy hats. A sustained low sub and moving detuned bass alternate with brief cold synth chords. Use a compact club mix with strong separation between fast transients and deep bass. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (drum-and-bass) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.bl.uk/about/press/releases/beyond-the-bassline-500-years-of-black-british-music-opens-at-the-british-library",
+    "https://www.cambridge.org/core/books/abs/cambridge-companion-to-electronic-dance-music/drum-and-bass-as-cultural-accelerator/D0B5BC519520218AC5034BBA6E83B15D",
+    "https://dj.dancecult.net/index.php/dancecult/article/download/695/697?inline=1"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

@@ -49,6 +49,43 @@ mean the service is down; check browser connectivity separately. Start another
 server only when necessary, such as when no suitable service is accessible or a
 test requires isolation, and stop only servers you started.
 
+## Project companion (GitHub Pages)
+
+The companion at <https://alexandrehebert.github.io/soundlines/> is separate from
+the Next.js explorer. It presents the project and the graph, artwork, audio, and
+contribution processes in English and French, with links to the full repository
+guides rather than automatically rendering the Markdown documentation.
+
+The site uses Node's built-in APIs, with no extra dependencies or client-side
+JavaScript. Curated copy lives in [site/content.mjs](../site/content.mjs), the
+shared HTML template and asset build in [site/build.mjs](../site/build.mjs), and
+the responsive visual style in [site/style.css](../site/style.css). Update both
+languages when changing copy. Keep workflow claims aligned with the technical
+guides; documentation changes are not automatically imported.
+
+```bash
+npm run build:site           # produces the ignored _site/ directory
+node --test site/check.mjs   # locales, generated pages, assets and link targets
+```
+
+Open `_site/en/index.html` locally, or serve `_site/` with a static HTTP server.
+Links and assets are relative so they also work under GitHub's `/soundlines/`
+project path. Only the logo and selected instrument examples are copied, not
+the full graph, audio library, or Next.js build.
+
+To enable publication once, open the repository's **Settings → Pages** and set
+**Build and deployment → Source** to **GitHub Actions**. Merge the changes to
+`main`, then run the **Project companion site** workflow manually if needed.
+The [workflow](../.github/workflows/project-pages.yml) validates and builds on
+relevant pull requests, and deploys on relevant `main` pushes or manual runs
+from `main`. The `github-pages` environment may require approval depending on
+repository settings. The public URL becomes available only after deployment.
+
+The app's source and companion URLs are in
+[src/projectLinks.ts](../src/projectLinks.ts). If moving the repository or site,
+also update `repository` and `siteUrl` in the companion content, the README
+links, and this guide.
+
 ## Storybook
 
 Run `npm run storybook` and open the local URL printed by the command (port

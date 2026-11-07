@@ -1,6 +1,6 @@
 ---
 name: artwork-brief
-description: 'Write or revise the visual brief for a Soundlines instrument artwork (scripts/artwork/briefs/<slug>.json): verified reference images and records, silhouette, defining anatomical features, the features an icon must keep, confusions to avoid and the drawing method, linted by check-brief.mjs. Use before drawing a new instrument, before redrawing one, or when an artwork review says the instrument is inaccurate, unrecognisable or reads as another instrument.'
+description: 'Write or revise the visual brief for a Soundlines instrument artwork (docs/artwork/briefs/<slug>.json): verified reference images and records, silhouette, defining anatomical features, the features an icon must keep, confusions to avoid and the drawing method, linted by check-brief.mjs. Use before drawing a new instrument, before redrawing one, or when an artwork review says the instrument is inaccurate, unrecognisable or reads as another instrument.'
 argument-hint: 'Instrument id or slug, e.g. "instrument:charango", plus any review findings to address'
 ---
 
@@ -8,7 +8,7 @@ argument-hint: 'Instrument id or slug, e.g. "instrument:charango", plus any revi
 
 The brief owns **what the instrument must look like**, with evidence. Drawing is `artwork-draw`,
 mechanical checks are `artwork-validate`, the ship decision is `artwork-review`.
-Reference: [scripts/artwork/briefs/charango.json](../../../scripts/artwork/briefs/charango.json).
+Reference: [docs/artwork/briefs/charango.json](../../../docs/artwork/briefs/charango.json).
 
 ## Schema
 
@@ -51,7 +51,7 @@ Reference: [scripts/artwork/briefs/charango.json](../../../scripts/artwork/brief
 6. **Pick `method`**: `generator` for anything the family builders (`plucked`, `bowed`, `indian`,
    `synthesizer`) or helpers can express; `hand` only when the shape needs bespoke paths. Existing
    instruments keep their current method unless the review asks otherwise.
-7. Lint: `node .github/skills/artwork-brief/scripts/check-brief.mjs scripts/artwork/briefs/<slug>.json`.
+7. Lint: `node .github/skills/artwork-brief/scripts/check-brief.mjs docs/artwork/briefs/<slug>.json`.
 
 ## Rules
 
@@ -59,4 +59,4 @@ Reference: [scripts/artwork/briefs/charango.json](../../../scripts/artwork/brief
   wordmarks (the lint rejects common brands). Model labels on electronic hardware are allowed only when
   they are the graph name.
 - Revisions address each review finding with a concrete change to `features`, `iconFeatures` or `avoid`.
-- Only `scripts/artwork/briefs/<slug>.json` is edited; never artwork files or scripts.
+- Only `docs/artwork/briefs/<slug>.json` is edited; never artwork files or scripts.

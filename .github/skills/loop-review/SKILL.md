@@ -12,7 +12,7 @@ finding to the owner.
 
 ## Inputs
 
-`scripts/loops/briefs/<slug>.json`, `<slug>.selection.json`, the asset, `$STAGE/png/*.png` and
+`docs/loops/briefs/<slug>.json`, `<slug>.selection.json`, the asset, `$STAGE/png/*.png` and
 `$STAGE/takes/*.request.json`.
 
 ## Procedure

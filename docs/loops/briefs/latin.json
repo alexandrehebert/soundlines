@@ -1,0 +1,26 @@
+{
+  "slug": "latin",
+  "genre": "genre:latin",
+  "asset": "public/loops/latin.wav",
+  "bpm": 112,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    450125,
+    101528,
+    800704,
+    985820,
+    575282
+  ],
+  "prompt": "Original instrumental Latin music, 112 BPM, 4/4, D minor. A representative 1940s New York Latin dance-orchestra instrumental with a Cuban-influenced clave, bongo accents and a lightly syncopated bass. Let piano and a small trumpet-and-reed section trade tidy melodic phrases with the warmth and balance of a vintage ballroom recording. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (latin) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://music.si.edu/story/exhibiting-music-history-us-exhibits-latin-american-and-latino-musicians-and-their-traditions",
+    "https://cervantesobservatorio.fas.harvard.edu/en/reports/pop-spanish-us-space-articulate-latino-identity",
+    "https://academic.oup.com/edited-volume/61644/chapter-abstract/539900420"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

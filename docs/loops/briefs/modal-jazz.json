@@ -1,0 +1,26 @@
+{
+  "slug": "modal-jazz",
+  "genre": "genre:modal-jazz",
+  "asset": "public/loops/modal-jazz.wav",
+  "bpm": 112,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    176077,
+    995256,
+    674806,
+    386195,
+    651949
+  ],
+  "prompt": "Original instrumental Modal jazz, 112 BPM, 4/4, D minor. Late-1950s acoustic modal jazz quintet, using a spacious D Dorian vamp. Muted trumpet and tenor sax improvise short motif variations over long harmonic spans, supported by quartal piano voicings, gently walking upright bass and a restrained swinging ride. Soft horn breath and a natural studio room. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/acoustic.json (modal-jazz) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. D minor is the API tonal-center label; retain D Dorian with its raised sixth as specified in the direction, not natural-minor-only harmony.",
+  "sources": [
+    "https://music.si.edu/story/jazz/",
+    "https://folkways-media.si.edu/docs/folkways/artwork/SFW40820.pdf",
+    "https://urresearch.rochester.edu/institutionalPublicationPublicView.action?institutionalItemId=13845&versionNumber=1"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

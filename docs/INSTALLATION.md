@@ -473,9 +473,9 @@ under `LOOP_STAGE_ROOT`. Stop the server you started after testing:
 
 ```bash
 bash .github/skills/loop-produce/scripts/ace-server.sh stop
-node .github/skills/loop-brief/scripts/check-brief.mjs scripts/loops/briefs/turntable-hip-hop.json
+node .github/skills/loop-brief/scripts/check-brief.mjs docs/loops/briefs/turntable-hip-hop.json
 "$ACESTEP_PYTHON" .github/skills/loop-validate/scripts/check-loop.py \
-  scripts/loops/briefs/turntable-hip-hop.json public/loops/turntable-hip-hop.wav \
+  docs/loops/briefs/turntable-hip-hop.json public/loops/turntable-hip-hop.wav \
   --png-dir "$LOOP_STAGE_ROOT/turntable-hip-hop-install-check/png"
 ```
 

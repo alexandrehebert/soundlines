@@ -6,12 +6,12 @@ import type { MusicGraph } from '../graph/types.ts'
 
 const ROOT = fileURLToPath(new URL('../..', import.meta.url))
 const DATA_DIR = join(ROOT, 'src/data')
-const AUDITS_DIR = join(ROOT, 'docs/evidence/audits')
+const AUDITS_DIR = join(ROOT, 'docs/graph/evidence/audits')
 
 const jsonFiles = [
   ...readdirSync(DATA_DIR).filter((file) => /^(graph(\.[a-z-]+)?|review-status)\.json$/i.test(file))
     .map((file) => join('src/data', file)),
-  ...readdirSync(AUDITS_DIR).filter((file) => file.endsWith('.json')).map((file) => join('docs/evidence/audits', file)),
+  ...readdirSync(AUDITS_DIR).filter((file) => file.endsWith('.json')).map((file) => join('docs/graph/evidence/audits', file)),
 ]
 
 describe('graph data files', () => {

@@ -1,0 +1,26 @@
+{
+  "slug": "grime",
+  "genre": "genre:grime",
+  "asset": "public/loops/grime.wav",
+  "bpm": 140,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    652118,
+    961906,
+    437896,
+    413592,
+    674944
+  ],
+  "prompt": "Original instrumental Grime, 140 BPM, 4/4, D minor. Early-2000s London pirate-radio grime instrumental at 140 with a sparse, jagged two-step kick and snare, square-wave bass and thin detuned synth stabs. Leave abrupt pockets of silence for an MC, and use a raw, dry stereo mix with sharp synthetic transients. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (grime) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.londonmuseum.org.uk/collections/london-stories/londons-grime-stars/",
+    "https://doi.org/10.1080/09555803.2022.2033300",
+    "https://www.theguardian.com/music/2013/apr/19/grime-watch-decade-birth-renewal"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

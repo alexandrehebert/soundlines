@@ -1,0 +1,26 @@
+{
+  "slug": "britpop",
+  "genre": "genre:britpop",
+  "asset": "public/loops/britpop.wav",
+  "bpm": 120,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    753174,
+    839224,
+    990822,
+    736217,
+    285553
+  ],
+  "prompt": "Original instrumental Britpop, 120 BPM, 4/4, E minor. Mid-1990s British melodic guitar pop. Ringing rhythm guitars, buoyant melodic bass and a live drum kit drive a singable instrumental chorus, with bright picked figures weaving through the chord changes. Give the snare a lively room and keep the guitar layers clear. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (britpop) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.allmusic.com/genre/britpop-ma0000002480",
+    "https://pure.royalholloway.ac.uk/ws/portalfiles/portal/27633713/2017Luederscphd.pdf",
+    "https://pure.royalholloway.ac.uk/en/publications/britpops-common-people-national-identity-popular-music-and-young-/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

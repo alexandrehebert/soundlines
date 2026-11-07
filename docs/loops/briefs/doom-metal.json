@@ -1,0 +1,26 @@
+{
+  "slug": "doom-metal",
+  "genre": "genre:doom-metal",
+  "asset": "public/loops/doom-metal.wav",
+  "bpm": 66,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 29,
+  "seeds": [
+    973693,
+    147281,
+    447039,
+    310726,
+    527992
+  ],
+  "prompt": "Original instrumental Doom metal, 66 BPM, 4/4, E minor. Early 1980s traditional doom metal. A slow, sustained down-tuned guitar riff and saturated bass hang over a roomy kit with an emphatic, patient backbeat. Leave long rests and decays between weighty minor-key chord strikes, with a small blues inflection in the riff. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (doom-metal) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.allmusic.com/genre/doom-metal-ma0000004496",
+    "https://caml.journals.yorku.ca/index.php/caml/article/download/32101/29347/33362",
+    "https://kahn-harris.org/wp-content/uploads/2021/05/PhD-full-run.pdf"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

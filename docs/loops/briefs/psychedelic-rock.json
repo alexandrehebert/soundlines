@@ -1,0 +1,26 @@
+{
+  "slug": "psychedelic-rock",
+  "genre": "genre:psychedelic-rock",
+  "asset": "public/loops/psychedelic-rock.wav",
+  "bpm": 101,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    299793,
+    747590,
+    219737,
+    863642,
+    560183
+  ],
+  "prompt": "Original instrumental Psychedelic rock, 101 BPM, 4/4, E minor. Late 1960s psychedelic rock with a live, loose drum groove and droning bass. Let a fuzz guitar improvise around a modal hook while an organ sustains shifting color; add subtle tape echoes and a reversed-guitar accent at the phrase boundary. Use a warm spacious studio mix. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (psychedelic-rock) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.bbc.co.uk/programmes/articles/4nWcSYlCbk9BDJryvdBZMNg/a-brief-history-of-psychedelia-in-eight-colours",
+    "https://rockhall.com/inductees/jefferson-airplane/",
+    "https://rockhall.com/inductees/grateful-dead/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "hyphy",
+  "genre": "genre:hyphy",
+  "asset": "public/loops/hyphy.wav",
+  "bpm": 100,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    309930,
+    351266,
+    539020,
+    933595,
+    140878
+  ],
+  "prompt": "Original instrumental Hyphy, 100 BPM, 4/4, D minor. Mid-2000s Bay Area hyphy instrumental with a bouncing offbeat kick, dry clap and big rubbery bass. Bright synth-brass jabs and a brief siren-like answer make a playful car-stereo party groove, with stop-start rests and hard, uncluttered drum transients. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (hyphy) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.latimes.com/archives/la-xpm-2006-jul-23-ca-music23-story.html",
+    "https://books.google.com/books/about/Hyphy_Intellect.html?hl=en&id=JAdZAQAACAAJ&output=html_text",
+    "https://iucat.iu.edu/iui/18874052"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

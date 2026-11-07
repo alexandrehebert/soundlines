@@ -1,0 +1,26 @@
+{
+  "slug": "glam-rock",
+  "genre": "genre:glam-rock",
+  "asset": "public/loops/glam-rock.wav",
+  "bpm": 126,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    231015,
+    490782,
+    294724,
+    252699,
+    790792
+  ],
+  "prompt": "Original instrumental Glam rock, 126 BPM, 4/4, E minor. Early 1970s British glam rock. A stomping kick and snare with handclaps, chunky guitar chords and bouncy bass support a theatrical pop hook picked out on guitar and piano. Use a bright punchy band mix with an exaggerated two-and-four accent. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (glam-rock) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://press.umich.edu/Books/P/Performing-Glam-Rock2",
+    "https://espace.curtin.edu.au/bitstream/20.500.11937/13847/2/145813_Stratton%20Aust%20J%20Cult%20Studies%204%281%29%201986.pdf",
+    "https://knowledge.lancashire.ac.uk/id/eprint/11875/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

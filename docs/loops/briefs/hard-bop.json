@@ -1,0 +1,26 @@
+{
+  "slug": "hard-bop",
+  "genre": "genre:hard-bop",
+  "asset": "public/loops/hard-bop.wav",
+  "bpm": 136,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    732374,
+    833667,
+    399426,
+    143473,
+    809615
+  ],
+  "prompt": "Original instrumental Hard bop, 136 BPM, 4/4, F minor. Late-1950s hard bop quintet with punchy trumpet and tenor sax playing a bluesy, gospel-tinged head. Upright bass walks in four, ride cymbal pushes the groove and snare answers the horns, while piano comps with churchy voicings. Gritty acoustic horn tone and balanced classic jazz studio sound. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/acoustic.json (hard-bop) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.britannica.com/art/hard-bop",
+    "https://timeline.carnegiehall.org/genres/hard-bop",
+    "https://www.britannica.com/biography/Horace-Silver"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

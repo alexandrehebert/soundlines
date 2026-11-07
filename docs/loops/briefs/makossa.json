@@ -1,0 +1,26 @@
+{
+  "slug": "makossa",
+  "genre": "genre:makossa",
+  "asset": "public/loops/makossa.wav",
+  "bpm": 113,
+  "meter": 4,
+  "key": "A minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    685327,
+    250870,
+    892431,
+    975502,
+    878308
+  ],
+  "prompt": "Original instrumental Makossa, 113 BPM, 4/4, A minor. 1970s Douala makossa instrumental with the buoyant syncopated electric bass line leading two clean guitar figures and a supple kit groove. Punctuate the two-bar cycle with rounded saxophone and brass responses, keeping the bright live dance-band sound. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (makossa) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://shcas.shnu.edu.cn/_upload/article/files/0e/08/4b0564f84fd9b9a65bde70ec5e4a/67ccaabe-3afc-4fb2-9df9-b7b27b0ebc0a.pdf",
+    "https://transatlantic-cultures.org/en/pdf/record/makossa",
+    "https://sk.sagepub.com/ency/edvol/embed/the-sage-international-encyclopedia-of-music-and-culture/chpt/cameroon-modern-contemporary-performance-practice"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

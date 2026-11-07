@@ -1,0 +1,26 @@
+{
+  "slug": "emo",
+  "genre": "genre:emo",
+  "asset": "public/loops/emo.wav",
+  "bpm": 123,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    175267,
+    207525,
+    337450,
+    780889,
+    814660
+  ],
+  "prompt": "Original instrumental Emo, 123 BPM, 4/4, E minor. Mid-1990s independent emo, with exposed clean arpeggios and an intimate bass line giving way to ringing overdriven chords. Use sensitive live drums that move from restrained accents to an urgent backbeat, and lead guitar melody with audible string and pick attack. Keep the dynamics and human timing of a small band room. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (emo) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://academic.oup.com/illinois-scholarship-online/book/42485/chapter-abstract/356766954",
+    "https://uipress.uiowa.edu/books/emo",
+    "https://www.newyorker.com/books/page-turner/when-emo-conquered-the-mainstream"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

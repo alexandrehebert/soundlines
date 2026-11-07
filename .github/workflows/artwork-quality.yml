@@ -5,6 +5,7 @@ on:
     paths:
       - 'public/instrument-*/**'
       - 'scripts/artwork/**'
+      - 'docs/artwork/**'
       - '.github/agents/artwork-*.agent.md'
       - '.github/skills/artwork-*/**'
       - '.github/instructions/instrument-artwork.instructions.md'
@@ -21,6 +22,7 @@ on:
     paths:
       - 'public/instrument-*/**'
       - 'scripts/artwork/**'
+      - 'docs/artwork/**'
       - '.github/agents/artwork-*.agent.md'
       - '.github/skills/artwork-*/**'
       - '.github/instructions/instrument-artwork.instructions.md'

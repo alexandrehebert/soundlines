@@ -1,0 +1,26 @@
+{
+  "slug": "hard-rock",
+  "genre": "genre:hard-rock",
+  "asset": "public/loops/hard-rock.wav",
+  "bpm": 121,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    807956,
+    823266,
+    470570,
+    797000,
+    186842
+  ],
+  "prompt": "Original instrumental Hard rock, 121 BPM, 4/4, E minor. Late 1970s hard rock with a loud tube-amp blues-based electric guitar riff and a second guitar replying in the gaps. A heavy acoustic kit, assertive snare and picked electric bass drive broad accents into a compact instrumental chorus. Use natural room sound around the drums and keep the lead guitar expressive. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (hard-rock) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41/listing",
+    "https://academic.oup.com/book/49450/chapter-abstract/422323317",
+    "https://www.routledge.com/Black-Sabbath-and-the-Rise-of-Heavy-Metal/Cope/p/book/9781138254138"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

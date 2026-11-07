@@ -1,0 +1,26 @@
+{
+  "slug": "g-funk",
+  "genre": "genre:g-funk",
+  "asset": "public/loops/g-funk.wav",
+  "bpm": 94,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    819985,
+    393487,
+    532055,
+    712838,
+    361208
+  ],
+  "prompt": "Original instrumental G-funk, 94 BPM, 4/4, D minor. Early-1990s California G-funk instrumental with a sinuous high portamento analog lead above a deep melodic electric bass line. Keep a relaxed straight kick-snare pocket, clean guitar chanks and warm sustained synth chords in a polished, spacious studio mix. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (g-funk) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/the-chronic.pdf",
+    "https://eprints.nottingham.ac.uk/11081/1/JustinWilliams_PhDfinal.pdf",
+    "https://escholarship.org/uc/item/3hd2d12n"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

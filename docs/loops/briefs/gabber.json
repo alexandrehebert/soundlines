@@ -1,0 +1,26 @@
+{
+  "slug": "gabber",
+  "genre": "genre:gabber",
+  "asset": "public/loops/gabber.wav",
+  "bpm": 93,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    789002,
+    870185,
+    627043,
+    865006,
+    440720
+  ],
+  "prompt": "Original instrumental Gabber, 93 BPM, 4/4, F minor. Early 1990s Rotterdam gabber. An overdriven, pitched 909-style kick hammers every quarter note under clipped rave stabs and tightly timed machine percussion. Keep the attack sharp, the kick tail abrasively distorted and the energy unbroken. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (gabber) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. Catalogue pulse 185 BPM represented at 93 BPM half-time for tracker support; retain fast subdivisions, with snare and riff accents making the intended fast feel explicit. This grouping needs a draft and tempo review.",
+  "sources": [
+    "https://www.allmusic.com/style/hardcore-techno-ma0000002654",
+    "https://artsandculture.google.com/story/ugXxcmEzFVvjKQ?hl=en",
+    "https://www.canonvannederland.nl/nl/page/292759/gabber"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

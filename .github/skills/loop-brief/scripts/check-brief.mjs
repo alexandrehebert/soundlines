@@ -1,11 +1,11 @@
-// Deterministic lint for loop briefs (scripts/loops/briefs/<slug>.json).
+// Deterministic lint for loop briefs (docs/loops/briefs/<slug>.json).
 //   node .github/skills/loop-brief/scripts/check-brief.mjs [brief.json ...]   (default: every brief)
 import { readdirSync, readFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = fileURLToPath(new URL('../../../../', import.meta.url))
-const folder = join(root, 'scripts/loops/briefs')
+const folder = join(root, 'docs/loops/briefs')
 const graph = JSON.parse(readFileSync(join(root, 'src/data/graph.json'), 'utf8'))
 const genres = new Set(graph.nodes.filter((n) => n.type === 'genre').map((n) => n.id))
 // Whole-word, case-sensitive names of real artists and recordings: prompts must not imitate them.

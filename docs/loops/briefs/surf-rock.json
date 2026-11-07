@@ -1,0 +1,26 @@
+{
+  "slug": "surf-rock",
+  "genre": "genre:surf-rock",
+  "asset": "public/loops/surf-rock.wav",
+  "bpm": 153,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    558923,
+    752591,
+    928475,
+    675246,
+    740130
+  ],
+  "prompt": "Original instrumental Surf rock, 153 BPM, 4/4, E minor. Early 1960s Southern California instrumental surf rock. Bright tremolo-picked electric guitar runs through splashy spring reverb over a driving bass and live kick-snare rhythm with quick tom and cymbal fills. Play a fast, clearly articulated minor-key lead hook in a punchy vintage studio mix. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (surf-rock) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.washingtonpost.com/archive/entertainment/1982/08/15/c00eadbf-4268-4701-b3b4-d34ba5cf0e46/",
+    "https://www.latimes.com/archives/la-xpm-1992-01-30-ol-1582-story.html",
+    "https://era.ed.ac.uk/bitstream/handle/1842/7954/Sanchez2012.pdf"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

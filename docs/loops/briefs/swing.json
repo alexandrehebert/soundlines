@@ -1,0 +1,26 @@
+{
+  "slug": "swing",
+  "genre": "genre:swing",
+  "asset": "public/loops/swing.wav",
+  "bpm": 158,
+  "meter": 4,
+  "key": "Bb major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    414129,
+    484817,
+    710557,
+    330423,
+    475441
+  ],
+  "prompt": "Original instrumental Swing, 158 BPM, 4/4, Bb major. Late-1930s big-band swing for a ballroom. A four-to-the-bar rhythm guitar and walking upright bass propel brushed or lightly tapped kit, while sax section riffs answer bright muted brass figures with tight section voicings. Clearly swung eighths, short arranged accents without dropping the pulse and a warm period-style band recording. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/acoustic.json (swing) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.carnegiehall.org/-/media/CarnegieHall/Files/PDFs/Education/Educators/Link-Up/The-Orchestra-Swings/LU-Orchestra-Swings-Teacher-Guide-2023-2024.pdf?hash=4BDE53AAE95C9DF4AEE47AC510F2BB0B&la=en",
+    "https://music.si.edu/story/jazz",
+    "https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/great-depression-and-world-war-ii-1929-1945/art-and-entertainment-in-1930s-1940s/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

@@ -1,6 +1,6 @@
 ---
 name: graph-fact-check
-description: 'Fact-check Soundlines graph entries against serious sources and record the verdict in docs/evidence. Use when verifying a node or edge, auditing a batch of relationships, re-checking periods/dates/descriptions/confidence, validating citations, clearing "Pending source review" notes, or deciding whether a claim should be kept, corrected, downgraded, retyped or removed.'
+description: 'Fact-check Soundlines graph entries against serious sources and record the verdict in docs/graph/evidence. Use when verifying a node or edge, auditing a batch of relationships, re-checking periods/dates/descriptions/confidence, validating citations, clearing "Pending source review" notes, or deciding whether a claim should be kept, corrected, downgraded, retyped or removed.'
 argument-hint: 'Ids, an edge type, or "pending" to pick unchecked entries'
 ---
 
@@ -17,7 +17,7 @@ not judge whether a change set is complete or mergeable (`graph-review`) or mech
 
 ## Modes
 
-- **Audit** (default): check existing entries, write verdicts into `docs/evidence/`, and report
+- **Audit** (default): check existing entries, write verdicts into `docs/graph/evidence/`, and report
   recommended data changes. Leave `graph.json` and overlays untouched unless asked to apply fixes.
 - **Verify for review** (called by `graph-review` / `graph-reviewer` on a change set): report verdicts
   only and write nothing. The reviewer turns contradictions into blocking findings.
@@ -31,7 +31,7 @@ node .github/skills/graph-edit/scripts/lookup.mjs <id>               # entry, so
 ```
 
 For a batch audit, take a coherent slice (one edge type, one family, one era) and record it as a
-ledger in `docs/evidence/audits/` named after the existing series (`graph-edges-NNN-<topic>.md`, next
+ledger in `docs/graph/evidence/audits/` named after the existing series (`graph-edges-NNN-<topic>.md`, next
 unused number).
 
 ## Verify each claim
@@ -48,7 +48,7 @@ phase boundaries, and for edges the relationship **type and direction** (GRAPH.m
 3. **Blocked sites**: AllMusic, Britannica and Resident Advisor often refuse automated fetches. Do not
    guess AllMusic ids; resolve them from Wikidata property P1728 via
    `https://www.wikidata.org/w/api.php?action=wbgetentities&ids=<Q-id>&props=claims&format=json`.
-   Record retrieval outcomes in `docs/evidence/fetch-status.jsonl` when doing bulk checks, and say in
+   Record retrieval outcomes in `docs/graph/evidence/fetch-status.jsonl` when doing bulk checks, and say in
    the note when a source was not directly readable.
 4. **Check semantics, not just facts**:
    - sharing a genre is not influence; a festival bill is not a collaboration
@@ -69,7 +69,7 @@ phase boundaries, and for edges the relationship **type and direction** (GRAPH.m
   [evidence-templates.md](../graph-edit/references/evidence-templates.md): `Graph ID`, a dated
   `**Reviewed** · YYYY-MM-DD` stamp (or dated `**Review status**`), `## Sources checked` with what each
   source states, `## Assessment`, `## Remaining uncertainty`. Keep earlier sections as history.
-- For edges, update the `review_status` cell in `docs/evidence/audits/graph-edge-coverage.csv`.
+- For edges, update the `review_status` cell in `docs/graph/evidence/audits/graph-edge-coverage.csv`.
 - Then run `npm run review-status` and `npm run validate:graph` (see `graph-validate`).
 
 ## When the check fails

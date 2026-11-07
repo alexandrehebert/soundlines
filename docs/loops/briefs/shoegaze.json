@@ -1,0 +1,26 @@
+{
+  "slug": "shoegaze",
+  "genre": "genre:shoegaze",
+  "asset": "public/loops/shoegaze.wav",
+  "bpm": 106,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    560998,
+    675545,
+    584951,
+    720567,
+    492268
+  ],
+  "prompt": "Original instrumental Shoegaze, 106 BPM, 4/4, E minor. Early 1990s British shoegaze. Layers of fuzz, pitch-shifted and reverse-reverb guitars swell into a broad blurred chord mass above simple live drums and a rounded bass line. A small melodic figure emerges through the haze with the kick and snare still audible. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (shoegaze) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://conf.ling.cornell.edu/zacsmith/zacsmith_shoegaze2018preprint.pdf",
+    "https://ans-names.pitt.edu/ans/article/download/2124/2123/4330",
+    "https://uu.diva-portal.org/smash/get/diva2%3A1672772/FULLTEXT01.pdf"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

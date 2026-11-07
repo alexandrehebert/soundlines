@@ -1,0 +1,26 @@
+{
+  "slug": "ska",
+  "genre": "genre:ska",
+  "asset": "public/loops/ska.wav",
+  "bpm": 142,
+  "meter": 4,
+  "key": "A minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    782173,
+    238872,
+    323776,
+    985818,
+    920046
+  ],
+  "prompt": "Original instrumental Ska, 142 BPM, 4/4, A minor. Early-1960s Jamaican ska instrumental with a quick, buoyant offbeat guitar and piano chop over a walking bass line. Trumpet, trombone and saxophone play compact unison figures and answers while light live drums maintain the R&B-influenced bounce. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (ska) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.tandfonline.com/doi/abs/10.1080/03007766.2011.600293",
+    "https://jis.gov.jm/jamaicas-heritage-music/",
+    "https://folklife.si.edu/magazine/black-history-in-roots-reggae-music"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

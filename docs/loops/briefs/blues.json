@@ -1,0 +1,25 @@
+{
+  "slug": "blues",
+  "genre": "genre:blues",
+  "asset": "public/loops/blues.wav",
+  "bpm": 82,
+  "meter": 4,
+  "key": "A major",
+  "bars": 4,
+  "duration": 26,
+  "seeds": [
+    931126,
+    942937,
+    371134,
+    706367,
+    191558
+  ],
+  "prompt": "Original instrumental Blues, 82 BPM, 4/4, A major. 1950s Chicago electric blues instrumental in a four-bar tonic shuffle vamp. A small tube-amp guitar bends and answers itself with clipped double stops, harmonica punctuates the gaps and bass and drum kit lean into triplet swing. Slight amp grit and a small warm room around the players. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/acoustic.json (blues) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. Loop is a four-bar tonic blues vamp, not a truncated twelve-bar progression.",
+  "sources": [
+    "https://timeline.carnegiehall.org/genres/rural-folk-blues",
+    "https://timeline.carnegiehall.org/genres/urban-blues"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

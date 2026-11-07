@@ -17,7 +17,7 @@ const overlays = readdirSync(join(ROOT, 'src/data'))
     return locale ? [[locale, JSON.parse(readFileSync(join(ROOT, 'src/data', file), 'utf8'))]] : []
   })
 const coverage = new Map(
-  readFileSync(join(ROOT, 'docs/evidence/audits/graph-edge-coverage.csv'), 'utf8')
+  readFileSync(join(ROOT, 'docs/graph/evidence/audits/graph-edge-coverage.csv'), 'utf8')
     .trim().split(/\r?\n/).slice(1).map((line) => line.split(','))
     .map(([id, , , note]) => [id, note]),
 )
@@ -26,8 +26,8 @@ const nodes = new Map(graph.nodes.map((node) => [node.id, node]))
 const edges = new Map(graph.edges.map((edge) => [edge.id, edge]))
 
 function evidencePath(entry) {
-  if (nodes.has(entry.id)) return `docs/evidence/nodes/${entry.type}/${entry.id.slice(entry.type.length + 1)}.md`
-  return coverage.get(entry.id) ?? `docs/evidence/edges/${entry.id.replace(':', '__')}.md`
+  if (nodes.has(entry.id)) return `docs/graph/evidence/nodes/${entry.type}/${entry.id.slice(entry.type.length + 1)}.md`
+  return coverage.get(entry.id) ?? `docs/graph/evidence/edges/${entry.id.replace(':', '__')}.md`
 }
 
 function evidenceStatus(entry) {

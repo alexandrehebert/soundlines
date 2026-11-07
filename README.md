@@ -13,6 +13,7 @@
   <a href="#explore-music-history">Features</a> ·
   <a href="#getting-started">Get started</a> ·
   <a href="#documentation">Docs</a> ·
+  <a href="https://alexandrehebert.github.io/soundlines/">Project guide</a> ·
   <a href="#credits">Credits</a> ·
   <a href="#license">License</a>
 </p>
@@ -58,6 +59,10 @@ docker compose up -d
 Compose serves the app at `http://localhost:5173` and Storybook at
 `http://localhost:6008`. See the [development guide](./docs/DEVELOPMENT.md) for
 server reuse, port overrides, and Storybook details.
+
+For the optional standalone ACE-Step rendering dashboard, see
+[ACE Monitor](./tools/ace-monitor/README.md). It runs in its own Compose stack at
+`http://localhost:5180`, without changing the Soundlines app or ACE server.
 
 ## Common commands
 
@@ -164,6 +169,14 @@ Previews use a separate renderer, not the seamless-loop pipeline. See the
 
 ## Documentation
 
+The [project companion](https://alexandrehebert.github.io/soundlines/) presents
+Soundlines and its graph, artwork, audio, and contribution workflows in
+[English](https://alexandrehebert.github.io/soundlines/en/) and
+[French](https://alexandrehebert.github.io/soundlines/fr/).
+It is a curated introduction; the guides below remain the detailed technical reference.
+See [GitHub Pages setup](./docs/DEVELOPMENT.md#project-companion-github-pages)
+for publishing and editing the companion.
+
 | Guide | Contents |
 |---|---|
 | [Installation](./docs/INSTALLATION.md) | Required and optional tools, agent/skill setup, local development, artwork, audio, and integrations |
@@ -175,8 +188,8 @@ Previews use a separate renderer, not the seamless-loop pipeline. See the
 | [Development](./docs/DEVELOPMENT.md) | Commands, Docker Compose, Storybook, and deployment notes |
 
 The canonical dataset is [graph.json](./src/data/graph.json); research and audits
-live in [docs/evidence](./docs/evidence). Tooling is documented in
-[scripts/README.md](./scripts/README.md).
+live in [docs/graph/evidence](./docs/graph/evidence). Tooling is documented in
+[docs/SCRIPTS.md](./docs/SCRIPTS.md).
 
 ## Credits
 
@@ -187,7 +200,7 @@ live in [docs/evidence](./docs/evidence). Tooling is documented in
   [ACE-Step 1.5](https://github.com/ace-step/ACE-Step-1.5). See the
   [audio guide](./docs/AUDIO.md) for details.
 - Music history sources are linked in the app and documented in the
-  [evidence notes](./docs/evidence).
+  [evidence notes](./docs/graph/evidence).
 
 ## License
 

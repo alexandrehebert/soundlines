@@ -1,6 +1,6 @@
 ---
 name: graph-review
-description: 'Gate a change to the Soundlines music graph (src/data/graph.json, graph.<locale>.json overlays, docs/evidence) before commit or merge. Use when reviewing a graph PR or diff, an enrichment batch, a merge patch, or agent-made data edits to decide if it is ready: validation result, wrong edge direction or type, unjustified confidence, missing or mismatched evidence, stale overlays, removed ids, and editorial problems.'
+description: 'Gate a change to the Soundlines music graph (src/data/graph.json, graph.<locale>.json overlays, docs/graph/evidence) before commit or merge. Use when reviewing a graph PR or diff, an enrichment batch, a merge patch, or agent-made data edits to decide if it is ready: validation result, wrong edge direction or type, unjustified confidence, missing or mismatched evidence, stale overlays, removed ids, and editorial problems.'
 argument-hint: 'Git ref to compare against (default HEAD), or a merge patch'
 ---
 

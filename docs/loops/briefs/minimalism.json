@@ -1,0 +1,26 @@
+{
+  "slug": "minimalism",
+  "genre": "genre:minimalism",
+  "asset": "public/loops/minimalism.wav",
+  "bpm": 124,
+  "meter": 4,
+  "key": "C major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    751518,
+    307952,
+    958843,
+    190580,
+    667932
+  ],
+  "prompt": "Original instrumental Minimalism, 124 BPM, 4/4, C major. 1970s acoustic process minimalism for paired marimbas and pianos. A steady stream of short interlocking pulses gradually shifts one accent at a time to reveal a new resultant pattern, with a narrow harmonic palette and precise touch. Let natural wooden attacks and room resonance carry the motion. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/acoustic.json (minimalism) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://academic.oup.com/reference/62400/reference-article-abstract/555408854",
+    "https://content.ucpress.edu/title/9780520382084/onminimalismexcerpt.pdf",
+    "https://academic.oup.com/book/1491"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

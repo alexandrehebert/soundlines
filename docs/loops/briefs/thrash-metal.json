@@ -1,0 +1,26 @@
+{
+  "slug": "thrash-metal",
+  "genre": "genre:thrash-metal",
+  "asset": "public/loops/thrash-metal.wav",
+  "bpm": 92,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    191571,
+    119452,
+    234386,
+    843268,
+    989417
+  ],
+  "prompt": "Original instrumental Thrash metal, 92 BPM, 4/4, E minor. Mid-1980s thrash metal. Fast, tightly palm-muted electric guitar downpicking and aggressive chromatic riff accents push a precise live drum kit, with rapid kick patterns, ride cymbal and snare turnaround fills. Let the riff keep its attack through a raw, clear analog band mix. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (thrash-metal) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. Catalogue pulse 184 BPM represented at 92 BPM half-time for tracker support; retain fast subdivisions, with snare and riff accents making the intended fast feel explicit. This grouping needs a draft and tempo review.",
+  "sources": [
+    "https://academic.oup.com/book/62310/chapter/552774328",
+    "https://admin.library.oapen.org/bitstream/handle/20.500.12657/102557/9781317587255.pdf?sequence=1",
+    "https://www.taylorfrancis.com/chapters/oa-edit/10.4324/9781315742816-8/voracious-souls-kevin-fellezs"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

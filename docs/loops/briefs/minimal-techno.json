@@ -1,0 +1,26 @@
+{
+  "slug": "minimal-techno",
+  "genre": "genre:minimal-techno",
+  "asset": "public/loops/minimal-techno.wav",
+  "bpm": 127,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    758169,
+    300012,
+    734823,
+    225912,
+    156447
+  ],
+  "prompt": "Original instrumental Minimal techno, 127 BPM, 4/4, F minor. Early 1990s Detroit minimal techno. A firm kick and a short synth or rim-click figure form an exacting machine loop. Keep the materials spare and create movement with a shifted accent, a short mute and gradual changes in tone or velocity. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (minimal-techno) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://eprints.hud.ac.uk/id/eprint/18067/1/nbougaiefffinalthesis.pdf",
+    "https://djmag.com/features/how-robert-hoods-minimal-nation-became-defining-work-minimal-techno",
+    "https://ra.co/reviews/25097"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

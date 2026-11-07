@@ -1,0 +1,26 @@
+{
+  "slug": "trance",
+  "genre": "genre:trance",
+  "asset": "public/loops/trance.wav",
+  "bpm": 138,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    730864,
+    888412,
+    324062,
+    476398,
+    660304
+  ],
+  "prompt": "Original instrumental Trance, 138 BPM, 4/4, F minor. Late 1990s European melodic trance during its main instrumental theme. A consistent four-on-the-floor kick, bright offbeat bass and crisp percussion support a wide sustained chord progression and a clear, evolving synth arpeggio. Give the melodic lines clean stereo separation and sustain the club momentum. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (trance) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://academic.oup.com/book/63077",
+    "https://www.theonecollection.co.uk/dance-2-trance",
+    "https://www.jamandspoon.com/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

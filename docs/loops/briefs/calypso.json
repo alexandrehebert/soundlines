@@ -1,0 +1,26 @@
+{
+  "slug": "calypso",
+  "genre": "genre:calypso",
+  "asset": "public/loops/calypso.wav",
+  "bpm": 112,
+  "meter": 4,
+  "key": "C major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    196466,
+    762779,
+    194428,
+    489357,
+    622317
+  ],
+  "prompt": "Original instrumental Calypso, 112 BPM, 4/4, C major. 1950s Trinidad Carnival calypso dance-band instrumental with syncopated guitar strums, maracas and a springy upright bass. Let clarinet and trumpet trade jaunty phrases with the rhythmic phrasing of a calypso singer, in a lively but lightly miked live ensemble sound. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (calypso) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.allmusic.com/style/calypso-ma0000002494",
+    "https://www.nalis.gov.tt/portfolio-item/calypso/",
+    "https://utt.edu.tt/index.php?article_key=8782&articles=1&show_archive=1&wk=1"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "reggaeton",
+  "genre": "genre:reggaeton",
+  "asset": "public/loops/reggaeton.wav",
+  "bpm": 94,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    761160,
+    199255,
+    648634,
+    451869,
+    597480
+  ],
+  "prompt": "Original instrumental Reggaeton, 94 BPM, 4/4, D minor. Early-2000s Puerto Rican reggaeton instrumental with an unmistakable dembow loop, low repeated kick and syncopated sharply struck snare, tight hats and an uncluttered sub bass. Use a short dark synth figure and two-bar percussion variation over the persistent dance pulse. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (reggaeton) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.tandfonline.com/doi/abs/10.1080/03007760802218046",
+    "https://escholarship.org/uc/item/09d1f6q0",
+    "https://www.loc.gov/item/hlas-bi2013001267/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

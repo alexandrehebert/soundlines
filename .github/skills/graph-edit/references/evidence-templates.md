@@ -1,10 +1,10 @@
 # Evidence note templates
 
-Evidence notes live in `docs/evidence/`. Paths:
+Evidence notes live in `docs/graph/evidence/`. Paths:
 
-- Node: `docs/evidence/nodes/<type>/<slug>.md` (slug = id without the `<type>:` prefix)
-- Edge: `docs/evidence/edges/<id with the first ":" replaced by "__">.md`
-- Removal: `docs/evidence/edges/removed__<slug>.md` (or the node equivalent), kept forever
+- Node: `docs/graph/evidence/nodes/<type>/<slug>.md` (slug = id without the `<type>:` prefix)
+- Edge: `docs/graph/evidence/edges/<id with the first ":" replaced by "__">.md`
+- Removal: `docs/graph/evidence/edges/removed__<slug>.md` (or the node equivalent), kept forever
 
 `scripts/graph/reviewStatus.ts` parses these lines, so keep them exact:
 
@@ -78,15 +78,15 @@ Former graph ID `<old id>`
 Sources: [<title>](<url>); [<title>](<url>).
 ```
 
-Also add a bullet to `docs/evidence/graph-edge-removals.md` (or `event-edge-removals.md` for event edges) describing the removal or retype.
+Also add a bullet to `docs/graph/evidence/graph-edge-removals.md` (or `event-edge-removals.md` for event edges) describing the removal or retype.
 
 ## Coverage tracker row
 
-`docs/evidence/audits/graph-edge-coverage.csv` has exactly one row per live edge:
+`docs/graph/evidence/audits/graph-edge-coverage.csv` has exactly one row per live edge:
 
 ```csv
 graph_id,type,confidence,evidence_note,review_status
-signed:pixies-4ad,signed_to,medium,docs/evidence/edges/signed__pixies-4ad.md,Source checked (2026-11-05)
+signed:pixies-4ad,signed_to,medium,docs/graph/evidence/edges/signed__pixies-4ad.md,Source checked (2026-11-05)
 ```
 
 - `type` and `confidence` must equal the live edge (`confidence` empty when the edge has none).

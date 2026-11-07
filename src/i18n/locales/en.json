@@ -5,6 +5,11 @@
   "notFoundDescription": "This Soundlines page does not exist.",
   "returnHome": "Return to Soundlines",
   "home": "Soundlines home",
+  "projectLinks": {
+    "navigation": "About the project",
+    "repository": "GitHub repository",
+    "about": "How Soundlines is made"
+  },
   "tagline": "an atlas of musical lineages",
   "homeCopy": {
     "lightTheme": "Light theme",

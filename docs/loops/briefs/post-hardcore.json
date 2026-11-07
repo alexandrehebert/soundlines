@@ -1,0 +1,26 @@
+{
+  "slug": "post-hardcore",
+  "genre": "genre:post-hardcore",
+  "asset": "public/loops/post-hardcore.wav",
+  "bpm": 145,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    796153,
+    741009,
+    584771,
+    398377,
+    119872
+  ],
+  "prompt": "Original instrumental Post-hardcore, 145 BPM, 4/4, E minor. Early 1990s post-hardcore with tightly coordinated stops, jagged overdriven guitar shapes and a forceful live rhythm section. Contrast tense, sparsely played phrases with sudden distorted ensemble accents and uneven bar-length turnarounds. Use a direct room sound with strong snare transients. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (post-hardcore) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://academic.oup.com/illinois-scholarship-online/book/42485/chapter-abstract/356766954",
+    "https://press.uchicago.edu/ucp/books/book/chicago/P/bo51959092.html",
+    "https://www.cambridge.org/core/books/popular-music-genres/8954EDBDDE6550E845DB5B3500B92D41"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

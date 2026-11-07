@@ -1,0 +1,26 @@
+{
+  "slug": "breakcore",
+  "genre": "genre:breakcore",
+  "asset": "public/loops/breakcore.wav",
+  "bpm": 92,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    472138,
+    990816,
+    709723,
+    843285,
+    213616
+  ],
+  "prompt": "Original instrumental Breakcore, 92 BPM, 4/4, F minor. Early 2000s breakcore with radically rearranged acoustic breaks. Switch between recognizably funky fragments and short bursts of chopped snares, reverse cymbals, stutters and displaced downbeats, over distorted bass and brief industrial noise. Preserve striking changes of texture and dynamics between the edits. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (breakcore) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. Catalogue pulse 184 BPM represented at 92 BPM half-time for tracker support; retain fast subdivisions, with snare and riff accents making the intended fast feel explicit. This grouping needs a draft and tempo review.",
+  "sources": [
+    "https://www.allmusic.com/style/breakcore-ma0000004991",
+    "https://sonaa.ca/en/styles/breaks/breakcore/",
+    "https://publica-rest.fraunhofer.de/server/api/core/bitstreams/2a7f3cf1-321a-4e47-a04b-db402103f7d4/content"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

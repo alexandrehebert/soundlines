@@ -48,18 +48,18 @@ node .github/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
      without an icon). Hand off to the artwork pipeline (`artwork-brief` → `artwork-draw` →
      `artwork-validate` → `artwork-review`); removing an instrument removes its four SVGs.
    - Standalone event or unresolved track with no edges: add it to
-     `docs/evidence/disconnected-entries.md` with the reason. Never invent edges to avoid this.
-   - Festival node or `festival_related` edge: update `docs/evidence/festivals.md` (register row),
-     `docs/evidence/audits/festival-sources-001.json` (+ `.md`) so confidence/sources match exactly, and
+     `docs/graph/evidence/disconnected-entries.md` with the reason. Never invent edges to avoid this.
+   - Festival node or `festival_related` edge: update `docs/graph/evidence/festivals.md` (register row),
+     `docs/graph/evidence/audits/festival-sources-001.json` (+ `.md`) so confidence/sources match exactly, and
      `festival-wikipedia-events-002.json` when a Wikipedia cross-check applies.
 5. **Update every locale overlay `src/data/graph.<locale>.json`** (currently `graph.fr.json`) for each
    new or changed English text field, following the `graph-translate` skill. Text only, keyed by the
    same ids. For a large batch, delegate a slice to the `graph-translator` agent.
-6. **Write evidence** in `docs/evidence/` using the
+6. **Write evidence** in `docs/graph/evidence/` using the
    [evidence templates](./references/evidence-templates.md):
    - one reviewed note per new or changed node and edge (not `Pending source review`)
-   - one row per live edge in `docs/evidence/audits/graph-edge-coverage.csv`, matching type/confidence
-   - removal or retype: a `removed__…` disposition note, a bullet in `docs/evidence/graph-edge-removals.md`
+   - one row per live edge in `docs/graph/evidence/audits/graph-edge-coverage.csv`, matching type/confidence
+   - removal or retype: a `removed__…` disposition note, a bullet in `docs/graph/evidence/graph-edge-removals.md`
      (or `event-edge-removals.md`), and delete or update the coverage row
 7. **Update GRAPH.md counts** when totals change: "Current size" in §1 (tested), family counts in §2,
    the chronology table and event-edge counts in §6. Use `--stats` for the numbers.

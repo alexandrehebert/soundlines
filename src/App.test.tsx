@@ -11,6 +11,7 @@ import { createTimelineModel, type ExplorerView } from './graph/timeline.ts'
 import type { MusicGraph } from './graph/types.ts'
 import { DEFAULT_LOCALE, type Locale } from './i18n/routing.ts'
 import { renderWithIntl } from './i18n/test-utils.tsx'
+import { PROJECT_SITE_URL, REPOSITORY_URL } from './projectLinks.ts'
 
 vi.mock('./components/SearchBar.tsx', () => ({ SearchBar: () => null }))
 
@@ -55,6 +56,22 @@ function render(
 }
 
 describe('Explorer header statistics', () => {
+  it.each([
+    ['en', 'GitHub repository', 'How Soundlines is made'],
+    ['fr', 'Dépôt GitHub', 'La fabrication de Soundlines'],
+  ] as const)('links to the source and companion in %s', (locale, repositoryLabel, aboutLabel) => {
+    const explorer = render(graph, <Explorer />, null, 'genre', locale)
+    const header = explorer.match(/<header\b[\s\S]*?<\/header>/)?.[0] ?? ''
+    expect(header).toContain(`href="${REPOSITORY_URL}"`)
+    expect(header).toContain(`aria-label="${repositoryLabel}"`)
+    const home = render(graph, <Home />, null, 'genre', locale)
+    const footer = home.match(/<footer\b[\s\S]*?<\/footer>/)?.[0] ?? ''
+    expect(footer).toContain(`href="${REPOSITORY_URL}"`)
+    expect(footer).toContain(`>${repositoryLabel}</a>`)
+    expect(footer).toContain(`href="${PROJECT_SITE_URL}/${locale}/"`)
+    expect(footer).toContain(`>${aboutLabel}</a>`)
+  })
+
   it.each([
     ['en', '/en'],
     ['fr', '/fr'],

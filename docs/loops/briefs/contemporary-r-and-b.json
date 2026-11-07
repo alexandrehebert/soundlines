@@ -1,0 +1,25 @@
+{
+  "slug": "contemporary-r-and-b",
+  "genre": "genre:contemporary-r-and-b",
+  "asset": "public/loops/contemporary-r-and-b.wav",
+  "bpm": 76,
+  "meter": 4,
+  "key": "F major",
+  "bars": 4,
+  "duration": 27,
+  "seeds": [
+    389427,
+    705649,
+    119464,
+    120864,
+    966631
+  ],
+  "prompt": "Original instrumental Contemporary R&B, 76 BPM, 4/4, F major. Late-1990s contemporary R&B instrumental with a deep half-time studio pocket. A warm bass synth and spaced kick anchor layered electric piano extensions, filtered clean guitar and a soft sampled rim backbeat with lightly swung hats. Polished low end, soft ambience and a lyrical electric-piano lead with short, rounded phrases. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/acoustic.json (contemporary-r-and-b) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.allmusic.com/subgenre/contemporary-r-b-ma0000002969",
+    "https://timeline.carnegiehall.org/genres/rb"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

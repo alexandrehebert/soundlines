@@ -7,7 +7,7 @@ import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 const repository = process.cwd()
 const briefValidator = resolve('.github/skills/artwork-brief/scripts/check-brief.mjs')
 const artworkValidator = resolve('.github/skills/artwork-validate/scripts/check-artwork.mjs')
-const validBrief = JSON.parse(readFileSync('scripts/artwork/briefs/charango.json', 'utf8'))
+const validBrief = JSON.parse(readFileSync('docs/artwork/briefs/charango.json', 'utf8'))
 let fixture: string
 
 function run(script: string, args: string[]) {

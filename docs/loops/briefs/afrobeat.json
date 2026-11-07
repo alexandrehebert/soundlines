@@ -1,0 +1,26 @@
+{
+  "slug": "afrobeat",
+  "genre": "genre:afrobeat",
+  "asset": "public/loops/afrobeat.wav",
+  "bpm": 108,
+  "meter": 4,
+  "key": "A minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    167976,
+    981680,
+    853012,
+    587735,
+    610756
+  ],
+  "prompt": "Original instrumental Afrobeat, 108 BPM, 4/4, A minor. 1970s Lagos Afrobeat instrumental with a live drummer playing interlocking kick, snare and hi-hat accents against shekere and bell. Repeat a lean electric bass ostinato under two clean guitars playing different syncopated figures, with a dry brass call and saxophone response in a warm live-room mix. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (afrobeat) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://doi.org/10.1558/jwpm.25695",
+    "https://eprints-prod-01.library.pitt.edu/10261/",
+    "https://www.dukeupress.edu/tony-allen"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

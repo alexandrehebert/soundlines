@@ -1,0 +1,26 @@
+{
+  "slug": "rock",
+  "genre": "genre:rock",
+  "asset": "public/loops/rock.wav",
+  "bpm": 112,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    776034,
+    681232,
+    121847,
+    186358,
+    318685
+  ],
+  "prompt": "Original instrumental Rock, 112 BPM, 4/4, E minor. Classic 1970s guitar rock played by a live four-piece band. A crunching tube-amp riff and answering guitar line ride a steady bass pattern and acoustic drums with a strong backbeat and small human fills. Leave audible room around the kit and natural space between accents. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (rock) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rock/",
+    "https://www.loc.gov/exhibits/british/brit-7.html",
+    "https://rockhall.com/inductees/beatles/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

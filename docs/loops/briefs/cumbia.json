@@ -1,0 +1,26 @@
+{
+  "slug": "cumbia",
+  "genre": "genre:cumbia",
+  "asset": "public/loops/cumbia.wav",
+  "bpm": 98,
+  "meter": 2,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    869744,
+    157122,
+    859204,
+    974497,
+    371483
+  ],
+  "prompt": "Original instrumental Cumbia, 98 BPM, 2/4, D minor. Colombian Caribbean cumbia in an acoustic gaita ensemble setting, with a steady offbeat llamador, rolling tambor alegre answers, low tambora accents and a continuous maraca pulse. Let breathy gaitas carry the melody in call and response over the swaying duple dance step, with live room dynamics. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (cumbia) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. Meter 2 is not verified end-to-end by the current loop extractor: draft and verify full phrase/downbeat alignment before final rendering.",
+  "sources": [
+    "https://www.mincultura.gov.co/direcciones/patrimonio-y-memoria/Paginas/servicios-informacion/LRPCI/cumbia-tradicional-del-caribe-colombiano.aspx",
+    "https://online.ucpress.edu/jams/article/74/3/659/119246/The-Invention-of-Latin-American-Music-A",
+    "https://folkways-media.si.edu/docs/folkways/artwork/SFW40531.pdf"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "samba",
+  "genre": "genre:samba",
+  "asset": "public/loops/samba.wav",
+  "bpm": 104,
+  "meter": 2,
+  "key": "G major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    667812,
+    520424,
+    472506,
+    944698,
+    378351
+  ],
+  "prompt": "Original instrumental Samba, 104 BPM, 2/4, G major. Rio de Janeiro samba de terreiro instrumental with a rolling duple pulse anchored by surdo, quick pandeiro and rattling ganzá. Syncopated cavaquinho strums and acoustic guitar bass runs support a clear, fluid melody, with a lively small roda ensemble balance. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (samba) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. Meter 2 is not verified end-to-end by the current loop extractor: draft and verify full phrase/downbeat alignment before final rendering.",
+  "sources": [
+    "https://academic.oup.com/illinois-scholarship-online/book/42538/chapter-abstract/356853943",
+    "https://www.jstor.org/stable/j.ctv113155n",
+    "https://musicabrasilis.org.br/pt-br/artigos/pelo-telefone-e-historia-do-samba/"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

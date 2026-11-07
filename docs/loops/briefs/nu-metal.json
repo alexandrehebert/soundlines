@@ -1,0 +1,26 @@
+{
+  "slug": "nu-metal",
+  "genre": "genre:nu-metal",
+  "asset": "public/loops/nu-metal.wav",
+  "bpm": 96,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    298785,
+    781226,
+    846196,
+    187310,
+    885801
+  ],
+  "prompt": "Original instrumental Nu metal, 96 BPM, 4/4, E minor. Late 1990s nu-metal instrumental. Down-tuned electric guitars and thick bass lock into a stop-start syncopated riff over a hip-hop-influenced live drum pocket, with a brief turntable-style texture behind it. Use thick dry distortion, sharp snare and deliberate gaps. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (nu-metal) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://ir.lib.uwo.ca/etd/10162/",
+    "https://mro.massey.ac.nz/items/fce65c7b-f63a-458a-a371-1ac2bdaff8be",
+    "https://www.allmusic.com/style/n%C3%BC-metal-ma0000004547"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

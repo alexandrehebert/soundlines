@@ -17,7 +17,7 @@ const planner =
   process.env.ACESTEP_PYTHON ??
   join(process.env.ACESTEP_HOME ?? join(homedir(), 'Tools/ACE-Step-1.5'), '.venv/bin/python')
 const endpoint = 'http://127.0.0.1:8020'
-const files = ['acoustic', 'electric', 'regional'].map((name) => join(root, 'scripts/previews/briefs', `${name}.json`))
+const files = ['acoustic', 'electric', 'regional'].map((name) => join(root, 'docs/previews/briefs', `${name}.json`))
 const approved = ['rock', 'funk']
 const selected = process.argv.slice(2)
 const targets = selected.length ? selected : genres

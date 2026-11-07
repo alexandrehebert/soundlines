@@ -1,0 +1,42 @@
+services:
+  ace-monitor:
+    image: node:26-alpine
+    restart: unless-stopped
+    working_dir: /app
+    command: sh -c "npm ci && npm run dev"
+    ports:
+      - "127.0.0.1:${ACE_MONITOR_PORT:-5180}:5180"
+    environment:
+      NEXT_TELEMETRY_DISABLED: "1"
+      ACE_API_URL: ${ACE_API_URL:-http://host.docker.internal:8020}
+      ACE_API_PORT_COUNT: ${ACE_API_PORT_COUNT:-10}
+      ACE_API_KEY: ${ACE_API_KEY:-}
+      ACE_CACHE_DB: /ace-cache/cache.db
+      ACE_LOG_PATH: /ace-logs/ace-server.log
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+      - next_cache:/app/.next
+      - type: bind
+        source: ${ACESTEP_HOME:-${HOME}/Tools/ACE-Step-1.5}/.cache/acestep/local_redis
+        target: /ace-cache
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ${LOOP_STAGE_ROOT:-${HOME}/.cache/soundlines-loops}
+        target: /ace-logs
+        read_only: true
+        bind:
+          create_host_path: false
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:5180/api/status').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 15s
+      start_period: 90s
+
+volumes:
+  node_modules:
+  next_cache:

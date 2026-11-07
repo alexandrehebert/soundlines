@@ -1,0 +1,26 @@
+{
+  "slug": "horrorcore",
+  "genre": "genre:horrorcore",
+  "asset": "public/loops/horrorcore.wav",
+  "bpm": 86,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 26,
+  "seeds": [
+    683282,
+    558556,
+    240368,
+    372435,
+    176091
+  ],
+  "prompt": "Original instrumental Horrorcore, 86 BPM, 4/4, D minor. Mid-1990s horrorcore rap instrumental with a dragging hard snare, low dirty kick and a looping dissonant organ phrase. Use occasional detuned bell hits and short spooky room tails around a thick bass note, keeping the macabre atmosphere sparse enough for storytelling. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (horrorcore) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://escholarship.org/content/qt8xg8182x/qt8xg8182x_noSplash_d89ba6960714bcc3d44c25368404fa59.pdf",
+    "https://academic.oup.com/north-carolina-scholarship-online/book/16871",
+    "https://www.washingtonpost.com/archive/style/2009/09/25/va-slayings-spur-harder-look-at-horrorcore/a0b4c9e8-5de7-4c01-af6c-8fa6d05d5542/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

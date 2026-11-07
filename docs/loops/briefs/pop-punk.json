@@ -1,0 +1,26 @@
+{
+  "slug": "pop-punk",
+  "genre": "genre:pop-punk",
+  "asset": "public/loops/pop-punk.wav",
+  "bpm": 168,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    851050,
+    520896,
+    580040,
+    464429,
+    490909
+  ],
+  "prompt": "Original instrumental Pop-punk, 168 BPM, 4/4, E minor. Late 1990s pop-punk with fast downstroked power chords, a bright octave guitar lead and a punchy acoustic kit. Use tight palm-muted eighth notes against melodic chord changes, a concise major-key chorus hook and small tom fills. Keep the bass and kick lively beneath the two-guitar sound. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (pop-punk) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.allmusic.com/style/pop-punk-ma0000004449",
+    "https://academic.oup.com/edited-volume/38573",
+    "https://www.theatlantic.com/magazine/2026/06/springsteen-petty-politics-osmon/686936/?utm_source=apple_news"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

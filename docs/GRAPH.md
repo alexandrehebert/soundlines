@@ -402,7 +402,7 @@ Ids must be unique across all edges.
     something the automated tests can determine.
 11. Every node has at least one edge, except the explicitly documented sourced
     standalone events and unresolved tracks in the
-    [connectivity register](./evidence/disconnected-entries.md). Tests enforce
+    [connectivity register](./graph/evidence/disconnected-entries.md). Tests enforce
     that exact exception set; never invent relationships to eliminate orphans.
 12. Preserve supported lineage relationships and these ancestor chains:
     romantic → medieval, grunge → blues, deep-house → jazz, synth-pop → rock.
@@ -541,7 +541,7 @@ Example:
 
 ### Evidence files and review status
 
-Every node and edge has an evidence note in `docs/evidence/`
+Every node and edge has an evidence note in `docs/graph/evidence/`
 (`nodes/<type>/<slug>.md`, `edges/<id with ":" replaced by "__">.md`) recording
 the sources checked and the assessment. A note marked `Pending source review`
 has not been re-checked yet. Each live entry's reviewed note must include a
@@ -549,7 +549,7 @@ has not been re-checked yet. Each live entry's reviewed note must include a
 `**Review status**` lines are also recognized). Keep removal notes as historical
 evidence; the review-status generator excludes IDs no longer in the graph and
 explicitly removed dispositions, and counts duplicate reviewed notes only once.
-The [edge coverage tracker](./evidence/audits/graph-edge-coverage.csv) must contain
+The [edge coverage tracker](./graph/evidence/audits/graph-edge-coverage.csv) must contain
 exactly one row per live edge, with its current type and confidence and a link
 to the reviewed note, not a pending placeholder. After editing evidence notes, run
 `npm run review-status` to refresh `src/data/review-status.json`, which powers
@@ -704,7 +704,7 @@ standalone gathering. Bound a standalone gathering’s period to its actual year
 do not imply that Woodstock 1969 or Monterey Pop 1967 ran continuously afterward.
 Preserve existing
 `event:` IDs for a dated edition or historical turning point; do not rename them.
-The expanded worldwide collection is documented in [festival coverage](./evidence/festivals.md).
+The expanded worldwide collection is documented in [festival coverage](./graph/evidence/festivals.md).
 
 A `festival_related` edge points **from any entity to a festival**. It requires
 at least one HTTPS source, a nonempty note specifying the supported connection,

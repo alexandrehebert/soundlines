@@ -1,0 +1,26 @@
+{
+  "slug": "trap-rap",
+  "genre": "genre:trap-rap",
+  "asset": "public/loops/trap-rap.wav",
+  "bpm": 144,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    753320,
+    225872,
+    394981,
+    426015,
+    317650
+  ],
+  "prompt": "Original instrumental Trap rap, 144 BPM, 4/4, D minor. Early-2010s Atlanta trap rap instrumental with a half-time clap, deep tuned 808 bass and small bursts of rapid rolling hats. Let a stark minor-key bell motif repeat over sparse offbeat kicks, with hard transients and a wide empty pocket for rap delivery. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (trap-rap) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://online.berklee.edu/takenote/trap-music-where-it-came-from-and-where-its-going/",
+    "https://artsandculture.google.com/story/a-brief-history-of-atlanta-39-s-rise-in-hip-hop/VgXRISv_xGKfyQ?hl=en",
+    "https://www.complex.com/music/a/david-drake/the-trap"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

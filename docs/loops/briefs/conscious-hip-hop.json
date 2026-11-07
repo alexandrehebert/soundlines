@@ -1,0 +1,26 @@
+{
+  "slug": "conscious-hip-hop",
+  "genre": "genre:conscious-hip-hop",
+  "asset": "public/loops/conscious-hip-hop.wav",
+  "bpm": 94,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    850785,
+    815009,
+    944198,
+    526426,
+    660819
+  ],
+  "prompt": "Original instrumental Conscious hip-hop, 94 BPM, 4/4, D minor. Late-1990s conscious hip-hop instrumental with a poised head-nod drum groove and a circular Rhodes and bass progression. Let a restrained horn answer between phrases while warm tape color and open midrange leave room for deliberate, reflective delivery. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (conscious-hip-hop) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://journals.sagepub.com/doi/10.2307/1389525",
+    "https://wnyc.org/story/289133-talib-kweli-on-mainstream-hip-hop-parenting-and-honoring-the-old-school/",
+    "https://academic.oup.com/edited-volume/41330/chapter/496997119"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

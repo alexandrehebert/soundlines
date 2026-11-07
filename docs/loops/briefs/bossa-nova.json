@@ -1,0 +1,26 @@
+{
+  "slug": "bossa-nova",
+  "genre": "genre:bossa-nova",
+  "asset": "public/loops/bossa-nova.wav",
+  "bpm": 126,
+  "meter": 2,
+  "key": "C major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    161650,
+    140066,
+    969268,
+    325204,
+    681461
+  ],
+  "prompt": "Original instrumental Bossa nova, 126 BPM, 2/4, C major. Late-1950s Rio bossa nova instrumental built around nylon-string guitar, the thumb marking the main pulses while soft upper chords anticipate them in a two-bar syncopation. Add restrained upright bass and delicate brushed percussion beneath intimate extended chords, with natural room sound and small dynamic changes. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (bossa-nova) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. Meter 2 is not verified end-to-end by the current loop extractor: draft and verify full phrase/downbeat alignment before final rendering.",
+  "sources": [
+    "https://www.allmusic.com/genre/bossa-nova-ma0000002548",
+    "https://www12.senado.leg.br/noticias/materias/2008/08/01/gravacao-de-chega-de-saudade-marca-o-nascimento-da-bossa-nova",
+    "https://blogs.loc.gov/music/2023/09/brazil-de-mis-amores/"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

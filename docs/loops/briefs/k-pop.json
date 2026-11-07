@@ -1,0 +1,26 @@
+{
+  "slug": "k-pop",
+  "genre": "genre:k-pop",
+  "asset": "public/loops/k-pop.wav",
+  "bpm": 116,
+  "meter": 4,
+  "key": "C major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    644679,
+    395079,
+    844155,
+    347204,
+    505689
+  ],
+  "prompt": "Original instrumental K-pop, 116 BPM, 4/4, C major. Late 2010s South Korean dance pop with a tight syncopated electronic groove, crisp drums and low synth bass. Layer bright short synth hooks against a smooth R&B-inflected chord bed, with quick call-and-answer transitions and an emphatic melodic chorus phrase. Use polished, precisely arranged studio production. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (k-pop) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://academic.oup.com/edited-volume/61883/chapter-abstract/547833378?login=false",
+    "https://www.tandfonline.com/doi/abs/10.1080/14649370903166093",
+    "https://koara.lib.keio.ac.jp/xoonips/modules/xoonips/download.php/KO40003001-00002021-3856.pdf?file_id=165235"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

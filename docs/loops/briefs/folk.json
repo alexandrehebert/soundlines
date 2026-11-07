@@ -1,0 +1,25 @@
+{
+  "slug": "folk",
+  "genre": "genre:folk",
+  "asset": "public/loops/folk.wav",
+  "bpm": 88,
+  "meter": 4,
+  "key": "C major",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    208917,
+    937702,
+    329174,
+    658141,
+    198153
+  ],
+  "prompt": "Original instrumental Folk revival, 88 BPM, 4/4, C major. Early-1960s American folk revival instrumental. One close-miked steel-string guitar carries an original ballad melody over alternating thumb bass and open-string fingerpicking, with a second acoustic guitar occasionally answering softly. Natural tempo movement, audible fingers and a plain coffeehouse room sound. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/acoustic.json (folk) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.allmusic.com/genre/folk-ma0000002592",
+    "https://www.woodyguthrie.org/biography/biography1.htm"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

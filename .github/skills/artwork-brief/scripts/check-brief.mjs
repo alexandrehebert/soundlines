@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-// Lint instrument artwork briefs (scripts/artwork/briefs/<slug>.json).
+// Lint instrument artwork briefs (docs/artwork/briefs/<slug>.json).
 // Usage (repository root): node .github/skills/artwork-brief/scripts/check-brief.mjs [brief.json ...]
 // Without arguments every brief is checked. Exit code 1 on any FAIL.
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { basename, join } from 'node:path'
 
-const DIR = 'scripts/artwork/briefs'
+const DIR = 'docs/artwork/briefs'
 const METHODS = ['generator', 'hand']
 const KEYS = ['slug', 'instrument', 'family', 'method', 'references', 'silhouette', 'features', 'iconFeatures', 'avoid', 'notes']
 // Brand marks are trademarks; a model name that is also the graph name (TB-303) is allowed.

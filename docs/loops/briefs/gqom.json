@@ -1,0 +1,26 @@
+{
+  "slug": "gqom",
+  "genre": "genre:gqom",
+  "asset": "public/loops/gqom.wav",
+  "bpm": 125,
+  "meter": 4,
+  "key": "A minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    630269,
+    370879,
+    772670,
+    918198,
+    954694
+  ],
+  "prompt": "Original instrumental Gqom, 125 BPM, 4/4, A minor. Early-2010s Durban gqom instrumental with a low, uneven kick pattern, dark resonant toms and clipped syncopated percussion across repeated bars. Build tension through displaced accents and short gaps, with sub pressure, a narrow shadowy synth and stark club production. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (gqom) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.cambridge.org/core/journals/africa/article/new-currents-old-boundaries-exploring-the-relationship-between-streaming-platforms-and-afrikaans-music/836CA8C06ECDC0789D07E33BDB738609",
+    "https://journals.co.za/doi/abs/10.2989/18121004.2021.2020964",
+    "https://ra.co/features/3917"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

@@ -1,0 +1,11 @@
+# Sven Väth → Trance
+
+Graph ID `key:sven-vath-trance`
+
+**Review status** · Pending source review
+
+**Relationship** · key_artist_of · medium
+
+**Graph citations** · [1](./<https:/en.wikipedia.org/wiki/Sven_V%C3%A4th>), [2](./<https:/en.wikipedia.org/wiki/Trance_music>)
+
+**Citation retrieval** · 1 bulk responses, 0 browser opens, 1 unsuccessful, 0 pending.

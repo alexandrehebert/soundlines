@@ -1,0 +1,26 @@
+{
+  "slug": "disco",
+  "genre": "genre:disco",
+  "asset": "public/loops/disco.wav",
+  "bpm": 119,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    245572,
+    648309,
+    658712,
+    851232,
+    776281
+  ],
+  "prompt": "Original instrumental Disco, 119 BPM, 4/4, F minor. Late 1970s New York and Philadelphia dance-floor disco played by a live rhythm section. Kick every quarter note, snare on two and four, open hi-hat on the offbeat, nimble octave electric bass and choked clean guitar; strings answer the rhythmic electric piano with bright stabs. Give the kit natural cymbal decay and use warm multitrack studio depth. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (disco) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.pbs.org/wgbh/americanexperience/features/war-disco-sounds-seventies/",
+    "https://www.smithsonianmag.com/smithsonian-institution/fifty-years-ago-this-irresistible-disco-song-and-dance-craze-swept-the-nation-and-changed-the-music-landscape-180986460/",
+    "https://www.pbs.org/show/disco-soundtrack-of-a-revolution/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

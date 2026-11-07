@@ -1,0 +1,26 @@
+{
+  "slug": "latin-jazz",
+  "genre": "genre:latin-jazz",
+  "asset": "public/loops/latin-jazz.wav",
+  "bpm": 180,
+  "meter": 4,
+  "key": "F major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    598802,
+    534223,
+    825084,
+    520045,
+    919905
+  ],
+  "prompt": "Original instrumental Latin jazz, 180 BPM, 4/4, F major. Mid-century Afro-Cuban Latin jazz combo built around a consistent two-three son clave. Conga tumbao, bongo bell and a syncopated piano montuno interlock with the anticipated bass line, while trumpet and tenor sax play a brief angular jazz head. Bright hand percussion, warm live horns and a clear danceable acoustic mix. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/acoustic.json (latin-jazz) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.allmusic.com/style/latin-jazz-ma0000002464",
+    "https://www.britannica.com/art/Latin-jazz",
+    "https://www.npr.org/sections/ablogsupreme/2013/04/20/178006676/tito-puente-90-years-of-getting-people-to-dance"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

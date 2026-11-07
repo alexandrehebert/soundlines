@@ -19,7 +19,7 @@ exactly 16 beats at 92.0 BPM (10.435 s), stereo 48 kHz PCM16, normalized to
 -1 dBFS peak with an 8 ms wrap crossfade. WAV avoids lossy encoder padding at
 the loop boundary.
 The deployed app serves this static asset; it does not require a running ACE-Step API.
-Its brief and selection report are in [scripts/loops/briefs](../scripts/loops/briefs). Loops for other
+Its brief and selection report are in [docs/loops/briefs](./loops/briefs). Loops for other
 genres follow the same pipeline through the `loop-briefer`, `loop-producer`, `loop-validator` and
 `loop-reviewer` agents; the bundled scripts and the verified ACE-Step configuration are in
 [.github/skills/loop-produce](../.github/skills/loop-produce).
@@ -41,8 +41,8 @@ downbeat. Both assets contain exactly 500,902 stereo frames at 48 kHz PCM16:
 16 beats at 91.994043 BPM. Extraction preserves the original phrase position,
 removes DC, applies the 8 ms wrap crossfade and normalizes to -1 dBFS.
 
-The [brief](../scripts/loops/briefs/turntable-trap.json) and generated
-[selection report](../scripts/loops/briefs/turntable-trap.selection.json) record
+The [brief](./loops/briefs/turntable-trap.json) and generated
+[selection report](./loops/briefs/turntable-trap.selection.json) record
 the source checksum, conditioning and candidate comparison. The mechanical gate
 passes, including exact source frame count and sample rate. Browser verification
 confirmed preserved playback phase in both directions of theme change and no
@@ -61,11 +61,18 @@ permits draft assets or skips mechanical validation and comparative listening.
 
 ACE-Step previews live in `public/genre-previews`. The renderer takes the
 middle ten seconds of a 32-second performance and uses the genre briefs in
-`scripts/previews/briefs/*.json`. With the local ACE-Step API on port 8020 and its
+`docs/previews/briefs/*.json`. With the local ACE-Step API on port 8020 and its
 planner enabled, set `ACESTEP_PYTHON` to the ACE-Step environment's Python
 executable and `ACESTEP_PREVIEW_STATE` to a writable progress file, then run
 `node .github/skills/preview-produce/scripts/render-ace-previews.mjs`. Reuse the progress file to skip
 completed clips, or pass genre slugs to render a subset.
+
+Detroit techno uses the higher-quality loop pipeline instead: standalone 4B planning,
+XL SFT at 80 steps, guidance 7 and ADG. Its brief uses 24-second source takes
+and initially renders two seeds to reduce generation time. The selected four-bar WAV
+is retained in `public/loops/detroit-techno.wav`; its genre preview is encoded from
+that loop at 256 kbps AAC. The brief and selection report are in
+`docs/loops/briefs/detroit-techno*`. Human listening review remains required.
 
 Dedicated catalogue agents are `preview-briefer`, `preview-producer` and `preview-reviewer`;
 their procedures live in `.github/skills/preview-{brief,produce,review}/SKILL.md`.

@@ -1,0 +1,26 @@
+{
+  "slug": "dubstep",
+  "genre": "genre:dubstep",
+  "asset": "public/loops/dubstep.wav",
+  "bpm": 140,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    565113,
+    709671,
+    960094,
+    344787,
+    736640
+  ],
+  "prompt": "Original instrumental Dubstep, 140 BPM, 4/4, F minor. Early 2000s South London dubstep with a deep sound-system mix. A spacious half-time kick-snare skeleton, displaced percussion taps and long gaps give a dark sub-bass figure room to roll. Use faint dub-delay tails and sparse minor-key stabs, with the bass carrying the movement. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (dubstep) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://academic.oup.com/edited-volume/42059/chapter/355876582",
+    "https://djmag.com/features/how-big-apple-records-became-birthplace-of-dubstep",
+    "https://research-information.bris.ac.uk/en/studentTheses/the-evolution-of-dubstep/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

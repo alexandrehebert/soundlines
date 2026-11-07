@@ -1,0 +1,25 @@
+{
+  "slug": "chillwave",
+  "genre": "genre:chillwave",
+  "asset": "public/loops/chillwave.wav",
+  "bpm": 94,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    951567,
+    363637,
+    332742,
+    900381,
+    859844
+  ],
+  "prompt": "Original instrumental Chillwave, 94 BPM, 4/4, D minor. Early 2010s bedroom chillwave. A muffled drum-machine backbeat and rounded bass support woozy detuned analog chords, a small nostalgic synth hook and distant sustained synthesizer wash. Give the arrangement saturated cassette haze and blurred reverb while keeping the pulse perceptible. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (chillwave) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.cambridge.org/core/journals/journal-of-the-society-for-american-music/article/reverb-chillwave-and-the-disinterested-hipster/2A88D5ECA8EAFD40F62D60F38FDB64A9",
+    "https://pitchfork.com/features/article/2010s-chillwave-best-coast-washed-out-neon-indian/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

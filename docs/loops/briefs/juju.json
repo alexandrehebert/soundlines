@@ -1,0 +1,26 @@
+{
+  "slug": "juju",
+  "genre": "genre:juju",
+  "asset": "public/loops/juju.wav",
+  "bpm": 110,
+  "meter": 4,
+  "key": "A major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    596573,
+    491295,
+    134625,
+    619051,
+    963800
+  ],
+  "prompt": "Original instrumental Jùjú, 110 BPM, 4/4, A major. 1970s Yoruba jùjú instrumental with multiple clean guitars picking complementary patterns across the bar and a gently moving bass line. Let dùndún talking drum phrases answer the guitars over shekere and light percussion, in a warm live ensemble mix. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (juju) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://www.cambridge.org/core/journals/popular-music/article/abs/diachronic-study-of-change-in-juju-music/6C359B104E11472083E09727E7958672",
+    "https://ucp-press-web10.uchicago.edu/ucp/books/book/chicago/J/bo3774389.html",
+    "https://www.ajol.info/index.php/ejotmas/article/download/121044/110471"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

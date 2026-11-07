@@ -5,7 +5,7 @@ description: "Write and revise genre-specific briefs for ten-second ACE-Step cat
 
 # Brief genre previews
 
-Write or revise entries in `scripts/previews/briefs/{acoustic,electric,regional}.json`. These are listening previews, not seamless loops. Read neighboring entries and preserve their schema.
+Write or revise entries in `docs/previews/briefs/{acoustic,electric,regional}.json`. These are listening previews, not seamless loops. Read neighboring entries and preserve their schema.
 
 Ground the genre in its graph description and evidence using `.github/skills/graph-edit/scripts/lookup.mjs`; describe characteristic instruments, rhythm, performance and production. Use concrete musical direction, original material, and no imitation of named artists or recordings. Preserve culturally relevant vocal traditions where appropriate; do not impose the loop workflow's instrumental-only, beat-grid, key or tempo restrictions. Ambient and free-time genres are supported.
 

@@ -1,0 +1,26 @@
+{
+  "slug": "reggae",
+  "genre": "genre:reggae",
+  "asset": "public/loops/reggae.wav",
+  "bpm": 76,
+  "meter": 4,
+  "key": "A minor",
+  "bars": 4,
+  "duration": 27,
+  "seeds": [
+    690765,
+    465292,
+    230872,
+    973651,
+    834302
+  ],
+  "prompt": "Original instrumental Reggae, 76 BPM, 4/4, A minor. 1970s Jamaican roots reggae instrumental with an unhurried one-drop, kick and cross-stick together on beat three and an open drum downbeat. Short clean guitar skanks on the offbeats interlock with bubbling organ and a syncopated rounded bass, with human timing and a warm live-room sound. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/regional.json (reggae) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://jis.gov.jm/jamaica/reggae/",
+    "https://folklife.si.edu/magazine/black-history-in-roots-reggae-music",
+    "https://www.smithsonianmag.com/travel/jamaica-music-and-performing-arts-17745080/"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/regional.json"
+}

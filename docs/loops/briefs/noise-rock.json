@@ -1,0 +1,26 @@
+{
+  "slug": "noise-rock",
+  "genre": "genre:noise-rock",
+  "asset": "public/loops/noise-rock.wav",
+  "bpm": 127,
+  "meter": 4,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    324379,
+    251020,
+    106538,
+    669366,
+    926977
+  ],
+  "prompt": "Original instrumental Noise rock, 127 BPM, 4/4, E minor. Late 1980s underground noise rock. An abrasive detuned guitar scrapes, feeds back and locks into a dissonant riff over repetitive bass and a heavy dry acoustic drum pattern. Let the guitar noise surge between precisely struck ensemble accents in a raw room mix. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Fit a newly composed lead motif and its answering phrase inside the four-bar cycle; leave space between responses. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space and restrained saturation, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Derived from docs/previews/briefs/electric.json (noise-rock) and graph description. Tempo/instruments/groove inherit the catalogue direction; key is a creative production choice, not a historical genre claim. Four-bar adaptation with shortest render >= loop + 14 s (minimum 24 s); plan/render the first two seeds initially, more if validation fails. Retain standalone 4B planning and XL SFT 80-step final quality. New brief: genre-informed listening and mechanical validation required before use. ",
+  "sources": [
+    "https://escholarship.org/uc/item/0qk6w6p3",
+    "https://mtosmt.org/ojs/index.php/mto/article/view/467",
+    "https://academic.oup.com/book/6294"
+  ],
+  "preparation_status": "prepared",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}
