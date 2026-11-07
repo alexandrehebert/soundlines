@@ -9,7 +9,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:site": "node site/build.mjs",
+    "dev:site": "vite --config site/vite.config.ts",
+    "build:site": "node site/scripts/build.ts",
+    "preview:site": "vite preview --config site/vite.config.ts",
+    "test:site": "tsc -p site && vitest run --config site/vite.config.ts",
     "start": "next start",
     "vercel-build": "next build",
     "lint": "oxlint --ignore-pattern .next",

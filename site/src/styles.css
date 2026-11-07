@@ -1,0 +1,90 @@
+@import 'tailwindcss' source('.');
+
+@theme {
+  --color-bg: #11101c;
+  --color-surface: #1a1829;
+  --color-line: #393449;
+  --color-fg: #f3eff7;
+  --color-muted: #beb6cc;
+  --color-accent: #c4b5fd;
+  --color-focus: #67e8f9;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+  a,
+  button {
+    transition: color 150ms, background-color 150ms, border-color 150ms;
+  }
+  a:hover {
+    color: var(--color-accent);
+  }
+  :is(a, button):focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 5px;
+    border-radius: 3px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@utility shell {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+  @variant sm {
+    width: min(1120px, calc(100% - 3rem));
+  }
+}
+
+@utility skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 10;
+  padding: 1rem;
+  background: var(--color-surface);
+  &:focus {
+    top: 1rem;
+  }
+}
+
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+@utility heading-2 {
+  font-size: 1.6rem;
+  font-weight: 650;
+  letter-spacing: -0.035em;
+  line-height: 1.3;
+}
+
+@utility card {
+  display: block;
+  padding: 1.75rem;
+  border: 1px solid var(--color-line);
+  border-radius: 1rem;
+  background: var(--color-surface);
+  &:hover {
+    border-color: var(--color-accent);
+    color: inherit;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}

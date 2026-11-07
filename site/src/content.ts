@@ -1,13 +1,46 @@
-export const repository = 'https://github.com/alexandrehebert/soundlines'
-export const siteUrl = 'https://alexandrehebert.github.io/soundlines'
+export { PROJECT_SITE_URL as siteUrl, REPOSITORY_URL as repository } from '../../src/projectLinks.ts'
 
-export const copy = {
+export const locales = ['en', 'fr'] as const
+export type Locale = (typeof locales)[number]
+export const slugs = ['index', 'graph', 'artwork', 'audio', 'contribute'] as const
+export type Slug = (typeof slugs)[number]
+
+export type Page = {
+  label: string
+  title: string
+  intro: string
+  sections: [title: string, text: string][]
+  steps?: [title: string, description: string][]
+  command?: string
+  showcase?: boolean
+  /** Repository-relative path (optionally with #anchor) and link text. */
+  resources: [path: string, title: string][]
+}
+
+export type Copy = {
+  skip: string
+  navigation: string
+  language: string
+  eyebrow: string
+  source: string
+  next: string
+  resources: string
+  workflow: string
+  footer: string
+  docsNote: string
+  copyCommand: string
+  copied: string
+  pages: Record<Slug, Page>
+}
+
+export const copy: Record<Locale, Copy> = {
   en: {
     skip: 'Skip to content', navigation: 'Project guide', language: 'Language',
     eyebrow: 'Music history, connected.', source: 'Explore the source', next: 'Inside the project',
     resources: 'Go deeper', workflow: 'From idea to reviewed contribution',
     footer: 'A curated atlas, not an exhaustive history. Sources, uncertainty, and human judgment matter.',
     docsNote: 'Detailed technical guides live in the repository and are currently in English.',
+    copyCommand: 'Copy', copied: 'Copied',
     pages: {
       index: {
         label: 'Overview', title: 'Music has no straight lines.',
@@ -93,6 +126,7 @@ export const copy = {
     resources: 'Pour aller plus loin', workflow: 'De l’idée à la contribution relue',
     footer: 'Un atlas éditorial, pas une histoire exhaustive. Les sources, les incertitudes et le jugement humain comptent.',
     docsNote: 'Les guides techniques détaillés sont dans le dépôt et sont actuellement en anglais.',
+    copyCommand: 'Copier', copied: 'Copié',
     pages: {
       index: {
         label: 'Présentation', title: 'La musique ne suit pas une ligne droite.',

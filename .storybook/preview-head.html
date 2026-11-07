@@ -1,1 +1,6 @@
 <link rel="icon" type="image/svg+xml" href="./favicon.svg?v=disc3" />
+<!-- next/navigation reads optional process.env flags that Next's bundler would inline. -->
+<script>
+  globalThis.process ??= { env: {} }
+  globalThis.process.env ??= {}
+</script>

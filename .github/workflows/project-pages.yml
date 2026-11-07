@@ -5,16 +5,22 @@ on:
     branches: [main]
     paths:
       - 'site/**'
+      - 'src/projectLinks.ts'
       - 'public/favicon.svg'
       - 'public/instrument-icons/**'
       - 'public/instrument-banners/**'
+      - 'package.json'
+      - 'package-lock.json'
       - '.github/workflows/project-pages.yml'
   pull_request:
     paths:
       - 'site/**'
+      - 'src/projectLinks.ts'
       - 'public/favicon.svg'
       - 'public/instrument-icons/**'
       - 'public/instrument-banners/**'
+      - 'package.json'
+      - 'package-lock.json'
       - '.github/workflows/project-pages.yml'
   workflow_dispatch:
 
@@ -33,8 +39,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 26
-      - run: node --test site/check.mjs
-      - run: node site/build.mjs
+          cache: npm
+      - run: npm ci
+      - run: npm run test:site
+      - run: npm run build:site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
