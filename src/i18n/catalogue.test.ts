@@ -48,7 +48,7 @@ describe('translation catalogues', () => {
         history('showing', { count, dating: history('dating.dated') }),
         history('showing', { count, dating: history('dating.undated', { count }) }),
         stats('noLinksYet', { count }), stats('years', { count }), stats('linksCount', { count }),
-        stats('withoutFamily', { count }), stats('reviewedProgress', { reviewed: count, total: 2000 }),
+        stats('withoutFamily', { count }),
         timeline('compressedTime', { factor: count }),
       ]
       for (const message of output) expect(message).not.toMatch(/\{\w+\}/)

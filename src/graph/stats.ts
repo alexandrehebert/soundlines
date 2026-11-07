@@ -215,7 +215,6 @@ export interface ReviewStats {
   /** Confidence of reviewed links only. */
   confidence: Record<Confidence | 'unrated', number>
   averageSources: { reviewed: number; pending: number }
-  sourceDomains: { domain: string; count: number }[]
 }
 
 function progress<K extends string>(items: Iterable<[K, boolean]>): ReviewProgress<K>[] {
@@ -272,10 +271,5 @@ export function reviewStats(
     families,
     confidence,
     averageSources: { reviewed: averageSources(reviewedItems), pending: averageSources(pendingItems) },
-    sourceDomains: sortedCounts(
-      tally(reviewedItems.flatMap((item) => item.sources ?? []).map(domainOf).filter((domain) => domain !== null)),
-    )
-      .slice(0, TOP)
-      .map(([domain, count]) => ({ domain, count })),
   }
 }

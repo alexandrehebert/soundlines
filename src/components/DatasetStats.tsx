@@ -1,4 +1,4 @@
-import { BarChart3, BookCheck, Check, Disc3, Guitar, Link2, Users, X, type LucideIcon } from 'lucide-react'
+import { ArrowUpRight, BarChart3, BookCheck, Check, Disc3, Guitar, Link2, Users, X, type LucideIcon } from 'lucide-react'
 import { motion } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent, type ReactNode } from 'react'
 import { useTranslations } from 'next-intl'
@@ -10,7 +10,6 @@ import {
   type EmergenceBin,
   type EntityStats,
   type RankedNode,
-  type ReviewProgress,
   type ReviewStats,
   type StatsTab,
 } from '../graph/stats.ts'
@@ -18,6 +17,7 @@ import type { Confidence, NodeType } from '../graph/types.ts'
 import { chartColor, FAMILY_COLORS, formatPeriod, NODE_TYPE_COLORS } from '../theme.ts'
 import { graphLabels } from '../i18n/graphLabels.ts'
 import type { Locale } from '../i18n/routing.ts'
+import { PROJECT_SITE_URL, REPOSITORY_URL } from '../projectLinks.ts'
 
 const STATS_TABS: readonly StatsTab[] = ['overview', 'genre', 'artist', 'instrument', 'links', 'review']
 
@@ -189,7 +189,7 @@ export function DatasetStats({
             />
           )}
           {tab === 'links' && <LinksPanel stats={stats} locale={locale} />}
-          {tab === 'review' && <ReviewPanel stats={sourceReview} locale={locale} />}
+          {tab === 'review' && <ReviewPanel stats={sourceReview} isolated={stats.isolated} locale={locale} />}
         </div>
       </motion.section>
     </motion.div>
@@ -219,9 +219,6 @@ function OverviewPanel({ stats, onOpen, locale }: { stats: Stats; onOpen: (id: s
       <Section title={t('mostConnectedEntries')}>
         <RankedList items={stats.mostConnected} onOpen={onOpen} showType locale={locale} />
       </Section>
-      {stats.isolated > 0 && (
-        <p className="text-xs text-slate-500">{t('noLinksYet', { count: stats.isolated })}</p>
-      )}
     </div>
   )
 }
@@ -292,7 +289,6 @@ function EntityPanel({
 
 function LinksPanel({ stats, locale }: { stats: Stats; locale: Locale }) {
   const t = useTranslations('stats')
-  const tConfidenceLabels = useTranslations('stats.confidenceLabels')
   const labels = graphLabels(locale)
   const rated = stats.totalEdges - stats.confidence.unrated
   return (
@@ -303,16 +299,6 @@ function LinksPanel({ stats, locale }: { stats: Stats; locale: Locale }) {
         <Metric label={t('confidenceRated')} value={percent(rated, stats.totalEdges)} />
         <Metric label={t('sourcedLinks')} value={percent(stats.sourcedEdges, stats.totalEdges)} />
       </div>
-      <Section title={t('confidence')}>
-        <StackedBar
-          items={(['high', 'medium', 'low', 'unrated'] as const).map((level) => ({
-            key: level,
-            label: tConfidenceLabels(level),
-            count: stats.confidence[level],
-            color: CONFIDENCE_COLORS[level],
-          }))}
-        />
-      </Section>
       <Section title={t('byRelationType')}>
         <BarList
           items={stats.edgeTypes.map(({ type, count }) => ({
@@ -333,8 +319,9 @@ function LinksPanel({ stats, locale }: { stats: Stats; locale: Locale }) {
   )
 }
 
-function ReviewPanel({ stats, locale }: { stats: ReviewStats; locale: Locale }) {
+function ReviewPanel({ stats, isolated, locale }: { stats: ReviewStats; isolated: number; locale: Locale }) {
   const t = useTranslations('stats')
+  const tProject = useTranslations('projectLinks')
   const tConfidenceLabels = useTranslations('stats.confidenceLabels')
   const tTypeLabels = useTranslations('stats.typeLabels')
   const tLinkGroupLabels = useTranslations('stats.linkGroupLabels')
@@ -346,25 +333,27 @@ function ReviewPanel({ stats, locale }: { stats: ReviewStats; locale: Locale }) 
         {t('reviewDescription')}
         {stats.lastReviewed && <span className="text-slate-600">{t('lastReview', { date: stats.lastReviewed })}</span>}
       </p>
-      <Section title={t('progress')}>
-        <div className="flex items-center gap-3">
-          <div className="min-w-0 flex-1">
-            <ProgressBar label={t('allEntriesAndLinks')} reviewed={stats.reviewed} total={stats.total} />
-          </div>
-          {stats.total > 0 && stats.reviewed === stats.total ? (
-            <span className="flex shrink-0 items-center gap-1 text-[10px] font-semibold uppercase tracking-wide text-green-400">
-              <Check aria-hidden="true" size={12} />
-              {t('reviewFinished')}
-            </span>
-          ) : (
-            <span className="shrink-0 text-[10px] font-semibold uppercase tracking-wide text-slate-500">
-              {t('inProgress')}
-            </span>
-          )}
-        </div>
-      </Section>
+      <div className="-mt-3 flex flex-wrap gap-2">
+        <ProjectLink href={`${PROJECT_SITE_URL}/${locale}/graph/`}>{t('reviewMethod')}</ProjectLink>
+        <ProjectLink href={REPOSITORY_URL}>{tProject('repository')}</ProjectLink>
+      </div>
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-        <Metric label={t('reviewedOverall')} value={percent(stats.reviewed, stats.total)} hint={`${formatNumber(stats.reviewed, locale)} / ${formatNumber(stats.total, locale)}`} />
+        <Metric
+          label={t('reviewedOverall')}
+          value={percent(stats.reviewed, stats.total)}
+          hint={`${formatNumber(stats.reviewed, locale)} / ${formatNumber(stats.total, locale)}`}
+        >
+          {stats.total > 0 && stats.reviewed === stats.total ? (
+            <div className="mt-1 flex items-center gap-1 text-[10px] font-semibold text-green-400">
+              <Check aria-hidden="true" className="shrink-0" size={12} />
+              {t('reviewFinished')}
+            </div>
+          ) : (
+            <div className="mt-1 text-[10px] font-semibold text-slate-500">
+              {t('inProgress')}
+            </div>
+          )}
+        </Metric>
         <Metric label={t('entriesReviewed')} value={formatNumber(stats.reviewedNodes, locale)} hint={percent(stats.reviewedNodes, nodeTotal)} />
         <Metric label={t('linksReviewed')} value={formatNumber(stats.reviewedEdges, locale)} hint={percent(stats.reviewedEdges, edgeTotal)} />
         <Metric
@@ -386,55 +375,73 @@ function ReviewPanel({ stats, locale }: { stats: ReviewStats; locale: Locale }) 
         </Section>
       )}
       <Section title={t('entriesByType')}>
-        <ProgressList
-          items={stats.nodeTypes.map((item) => ({ ...item, label: tTypeLabels(item.key), color: NODE_TYPE_COLORS[item.key] }))}
+        <ReviewLedger
+          items={stats.nodeTypes.map((item) => ({
+            ...item,
+            label: tTypeLabels(item.key),
+            color: NODE_TYPE_COLORS[item.key],
+          }))}
+          locale={locale}
         />
+        {isolated > 0 && (
+          <p className="mt-2 text-xs text-slate-500">{t('noLinksYet', { count: isolated })}</p>
+        )}
       </Section>
       <Section title={t('linksByKind')}>
-        <ProgressList items={stats.linkGroups.map((item) => ({ ...item, label: tLinkGroupLabels(item.key), color: '#38bdf8' }))} />
+        <ReviewLedger
+          items={stats.linkGroups.map((item) => ({ ...item, label: tLinkGroupLabels(item.key), color: '#38bdf8' }))}
+          locale={locale}
+        />
       </Section>
-      {stats.sourceDomains.length > 0 && (
-        <Section title={t('mostCitedReviewed')}>
-          <BarList
-            items={stats.sourceDomains.map(({ domain, count }) => ({ key: domain, label: domain, count, color: '#94a3b8' }))}
-          />
-        </Section>
-      )}
     </div>
   )
 }
 
-function ProgressBar({ label, reviewed, total, color = '#4ade80' }: {
-  label: string
-  reviewed: number
-  total: number
-  color?: string
-}) {
-  const t = useTranslations('stats')
+function ProjectLink({ href, children }: { href: string; children: ReactNode }) {
   return (
-    <span
-      className="block h-2 overflow-hidden rounded-full bg-slate-800/70"
-      role="progressbar"
-      aria-label={`${label}: ${t('reviewedProgress', { reviewed, total })}`}
-      aria-valuemin={0}
-      aria-valuemax={total}
-      aria-valuenow={reviewed}
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-1 rounded-full border border-slate-700 px-2.5 py-1 text-xs font-medium text-slate-300 hover:border-slate-500 hover:bg-slate-800/70 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
     >
-      <span className="block h-full rounded-full" style={{ width: `${total ? (reviewed / total) * 100 : 0}%`, backgroundColor: chartColor(color) }} />
-    </span>
+      {children}
+      <ArrowUpRight aria-hidden="true" className="h-3.5 w-3.5" />
+    </a>
   )
 }
 
-function ProgressList({ items }: { items: (ReviewProgress<string> & { label: string; color: string })[] }) {
+function ReviewLedger({
+  items,
+  locale,
+}: {
+  items: { key: string; reviewed: number; total: number; label: string; color: string }[]
+  locale: Locale
+}) {
+  const t = useTranslations('stats')
   return (
-    <ul className="space-y-1">
+    <ul className="divide-y divide-slate-800 rounded-xl border border-slate-800 bg-slate-900/40 px-3">
       {items.map((item) => (
-        <li key={item.key} className="grid grid-cols-[minmax(0,10rem)_1fr_5.5rem] items-center gap-3 text-xs">
-          <span className="truncate text-slate-300" title={item.label}>{item.label}</span>
-          <ProgressBar label={item.label} reviewed={item.reviewed} total={item.total} color={item.color} />
-          <span className="text-right tabular-nums text-slate-400">
-            <span className="font-medium text-slate-300">{item.reviewed}</span>
-            <span className="text-slate-600"> / {item.total}</span>
+        <li key={item.key} className="flex min-h-9 items-center justify-between gap-3 py-2 text-xs">
+          <span className="flex min-w-0 items-center gap-2 text-slate-300" title={item.label}>
+            <span className="h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: chartColor(item.color) }} aria-hidden="true" />
+            <span className="truncate">{item.label}</span>
+          </span>
+          <span className="flex shrink-0 items-center gap-2">
+            <span className="tabular-nums text-slate-400">
+              <span className="font-medium text-slate-200">{formatNumber(item.reviewed, locale)}</span>
+              <span className="text-slate-600"> / {formatNumber(item.total, locale)}</span>
+            </span>
+            {item.reviewed === item.total ? (
+              <span className="flex items-center gap-1 text-[10px] font-medium text-green-400">
+                <Check aria-hidden="true" size={12} />
+                {t('complete')}
+              </span>
+            ) : (
+              <span className="text-[10px] text-slate-500">
+                {t('pendingItems', { count: item.total - item.reviewed })}
+              </span>
+            )}
           </span>
         </li>
       ))}
@@ -458,7 +465,7 @@ function Section({ title, subtitle, children }: { title: string; subtitle?: stri
   )
 }
 
-function Metric({ label, value, hint }: { label: string; value: string; hint?: string }) {
+function Metric({ label, value, hint, children }: { label: string; value: string; hint?: string; children?: ReactNode }) {
   return (
     <div className="rounded-xl border border-slate-800 bg-slate-900/60 px-3 py-2.5">
       <div className="text-lg font-bold leading-tight text-white tabular-nums">{value}</div>
@@ -466,6 +473,7 @@ function Metric({ label, value, hint }: { label: string; value: string; hint?: s
         {label}
         {hint && <span className="text-slate-600"> · {hint}</span>}
       </div>
+      {children}
     </div>
   )
 }

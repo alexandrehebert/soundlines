@@ -114,9 +114,5 @@ describe('reviewStats', () => {
   it('summarizes confidence and sources of reviewed items', () => {
     expect(stats.confidence).toEqual({ high: 1, medium: 0, low: 0, unrated: 1 })
     expect(stats.averageSources).toEqual({ reviewed: 0.75, pending: 0 })
-    expect(stats.sourceDomains).toEqual([
-      { domain: 'wikipedia.org', count: 2 },
-      { domain: 'allmusic.com', count: 1 },
-    ])
   })
 })
