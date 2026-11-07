@@ -1,11 +1,20 @@
 """Render the reviewed instrument SVGs from banner masters and matching icon paths.
 
-Run from the repository root: python3 scripts/generate-instrument-artwork.py
+Run from the repository root:
+  python3 scripts/artwork/generate-instrument-artwork.py [slug ...]          # write (all or listed)
+  python3 scripts/artwork/generate-instrument-artwork.py --check [slug ...]  # exit 1 on drift
 """
 
+import json
+import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1] / 'public'
+REPO = Path(__file__).resolve().parents[2]
+ROOT = REPO / 'public'
+INSTRUMENTS = {node['id'][len('instrument:'):]
+               for node in json.loads((REPO / 'src/data/graph.json').read_text())['nodes']
+               if node['type'] == 'instrument'}
+OUTPUT = {}
 SVG = 'http://www.w3.org/2000/svg'
 ARTWORK_TILT = -9
 WOOD = 'url(#wood)'
@@ -361,10 +370,10 @@ ART = {
 
 
 def write(kind, slug, width, height, content):
+    assert slug in INSTRUMENTS, f'{slug} is not an instrument in src/data/graph.json'
     target = ROOT / f'instrument-{kind}' / f'{slug}.svg'
-    assert target.is_file(), target
     dimensions = ' width="24" height="24"' if kind == 'icons' else ''
-    target.write_text(f'<svg xmlns="{SVG}"{dimensions} viewBox="0 0 {width} {height}">\n{content}\n</svg>\n')
+    OUTPUT[target] = f'<svg xmlns="{SVG}"{dimensions} viewBox="0 0 {width} {height}">\n{content}\n</svg>\n'
 
 
 def illustration(kind, slug, width, height, geometry, scale):
@@ -423,8 +432,14 @@ ICON_ANGLES.update({
 })
 
 
-def main():
-    masters = {slug: (draw(slug), scale, icon) for slug,(draw,scale,icon) in ART.items()}
+def main(argv):
+    check = '--check' in argv
+    only = [arg for arg in argv if not arg.startswith('-')]
+    unknown = sorted(set(only) - ART.keys())
+    if unknown:
+        sys.exit(f'Not drawn by this generator: {", ".join(unknown)}')
+    selected = {slug: ART[slug] for slug in (only or ART)}
+    masters = {slug: (draw(slug), scale, icon) for slug,(draw,scale,icon) in selected.items()}
     for kind, width, height in [('banners',360,160), ('header-backgrounds',360,120), ('avatars',160,160)]:
         for slug, (geometry, scale, _) in masters.items():
             illustration(kind, slug, width, height, geometry, scale)
@@ -432,7 +447,17 @@ def main():
         angle = ICON_ANGLES.get(slug, 0)
         transform = f' transform="rotate({angle} 12 12)"' if angle else ''
         write('icons',slug,24,24,f'<path d="{icon}"{transform} fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>')
+    if check:
+        drift = [target for target, text in OUTPUT.items()
+                 if not target.is_file() or target.read_text() != text]
+        for target in drift:
+            print(f'DRIFT {target.relative_to(REPO)}')
+        print(f'{len(OUTPUT) - len(drift)}/{len(OUTPUT)} generated files match')
+        sys.exit(1 if drift else 0)
+    for target, text in OUTPUT.items():
+        target.write_text(text)
+    print(f'Wrote {len(OUTPUT)} files for {len(masters)} instruments')
 
 
 if __name__ == '__main__':
-    main()
+    main(sys.argv[1:])

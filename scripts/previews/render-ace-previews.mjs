@@ -9,12 +9,12 @@ import { promisify } from 'node:util'
 
 const exec = promisify(execFile)
 const scripts = fileURLToPath(new URL('.', import.meta.url))
-const graph = JSON.parse(readFileSync(join(scripts, '../src/data/graph.json'), 'utf8'))
+const graph = JSON.parse(readFileSync(join(scripts, '../../src/data/graph.json'), 'utf8'))
 const genres = graph.nodes.filter((node) => node.type === 'genre').map((node) => node.id.slice(6))
-const assets = process.env.ACESTEP_PREVIEW_OUTPUT ?? join(scripts, '../public/genre-previews')
+const assets = process.env.ACESTEP_PREVIEW_OUTPUT ?? join(scripts, '../../public/genre-previews')
 const planner = process.env.ACESTEP_PYTHON
 const endpoint = 'http://127.0.0.1:8020'
-const files = ['acoustic', 'electric', 'regional'].map((name) => join(scripts, `ace-briefs-${name}.json`))
+const files = ['acoustic', 'electric', 'regional'].map((name) => join(scripts, 'briefs', `${name}.json`))
 const approved = ['rock', 'funk']
 const selected = process.argv.slice(2)
 const targets = selected.length ? selected : genres

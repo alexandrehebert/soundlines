@@ -1,0 +1,18 @@
+{
+  "slug": "hip-hop",
+  "genre": "genre:hip-hop",
+  "bpm": 92,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 36,
+  "seeds": [
+    73192,
+    18409,
+    60217,
+    41126,
+    52880
+  ],
+  "prompt": "Original instrumental golden-era hip-hop, 92 BPM, 4/4, D minor. A confident head-nodding boom-bap pocket: punchy round kick with syncopated pickup notes, dry layered snare on two and four, lightly swung closed hi-hats and restrained ghost notes. Deep warm bass locks tightly with the kick. A memorable original two-bar motif of smoky jazz electric piano minor-ninth chords and a short muted brass reply, chopped with tasteful sampler texture. Sparse arrangement leaves space for a rapper and a DJ to scratch. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Premium studio mix, crisp separated drum transients, controlled sub-bass, warm analog saturation, subtle stereo ambience on the keys, mono-compatible centered kick and bass. Musical, energetic, polished, not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. All melodies and performances newly composed.",
+  "notes": "Reference brief for the landing turntable loop. Golden-era boom-bap: sparse so a DJ can scratch over it; 92 BPM sits in the 88-96 head-nod range."
+}

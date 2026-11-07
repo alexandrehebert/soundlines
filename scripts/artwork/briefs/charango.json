@@ -1,0 +1,43 @@
+{
+  "slug": "charango",
+  "instrument": "instrument:charango",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Bolivian_charango_001.jpg",
+      "shows": "Modern wooden charango, front view: waisted body, round sound hole, short fretted neck, ten tuning pegs on a flat head"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:210_Museu_de_la_M%C3%BAsica,_el_Bosc,_charango.jpg",
+      "shows": "Traditional armadillo-shell charango in the Museu de la Música de Barcelona, for body proportions and bridge placement"
+    },
+    {
+      "url": "https://sites.duke.edu/dumic/instruments/strings/central-and-south-america/charango/",
+      "shows": "Duke collection record: armadillo-shell resonator, ten pegs and ten metal strings, painted rosette around the sound hole"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Charango",
+      "shows": "Anatomy and size: about 66 cm long, ten strings in five double courses, wooden bodies now more common than armadillo"
+    }
+  ],
+  "silhouette": "Small waisted guitar-like lute, horizontal with the body on the left and the head on the right, tilted by the set angle; the neck is about as long as the body.",
+  "features": [
+    "Waisted figure-eight body that is small relative to the neck, not a full guitar body",
+    "Round sound hole with a rosette between the waist and the neck joint",
+    "Ten strings drawn as five close pairs (double courses)",
+    "Ten tuning pegs, five above and five below a flat head",
+    "Short fretted fingerboard joining the body near the upper bout",
+    "Bar bridge low on the lower bout"
+  ],
+  "iconFeatures": [
+    "Waisted body with a sound hole dot",
+    "Flat head wider than the neck, so it does not read as a ukulele"
+  ],
+  "avoid": [
+    "A ukulele: four single strings and four pegs",
+    "A full-size guitar: the body must stay small next to the neck",
+    "Armadillo scales on the front; the shell is the back and is not visible from the front"
+  ],
+  "notes": "Wooden modern form chosen over the armadillo shell because it is the common instrument today and the front view hides the back anyway. Pairs of strings and ten pegs are the features that separate it from a ukulele at banner size; at icon size only the small waisted body and the wide head survive."
+}
