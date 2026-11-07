@@ -17,6 +17,8 @@
     "pause": "Pause",
     "playLoop": "Lire la boucle hip-hop",
     "pauseLoop": "Mettre la boucle hip-hop en pause",
+    "playTrapLoop": "Lire la boucle trap",
+    "pauseTrapLoop": "Mettre la boucle trap en pause",
     "loopError": "La lecture audio a échoué. Appuyez sur Lecture pour réessayer.",
     "headline": {
       "first": "Suivez le",

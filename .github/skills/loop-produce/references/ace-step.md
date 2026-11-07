@@ -1,7 +1,7 @@
 # ACE-Step configuration and lessons
 
 Verified on ACE-Step 1.5 (MLX backend, macOS, 25 GB usable unified memory) while producing
-`public/loops/hip-hop.wav`. `extract-loop.py` reproduces that asset byte-for-byte from
+`public/loops/turntable-hip-hop.wav`. `extract-loop.py` reproduces that asset byte-for-byte from
 its five takes, so these settings are the reference, not a guess.
 
 ## Shipped ("final") profile
@@ -24,6 +24,19 @@ Draft profile (also used by `scripts/previews/render-ace-previews.mjs` for catal
 for 10 s previews, not for shipped loops. A first pass on `acestep-v15-base` at 64 steps was clearly
 behind XL SFT; do not use it.
 
+## Original-source arrangements
+
+The `arrangement` profile uses the same XL SFT DiT settings (80 steps, guidance 7, ADG, shift 1),
+but `task_type: cover` and uploaded original Soundlines audio instead of 4B LM codes.
+ACE-Step automatically bypasses LM planning for cover tasks (`docs/en/API.md` in the local
+checkout). Use multipart `src_audio` uploads: this install rejects absolute `src_audio_path`
+values with HTTP 400 despite the API documentation's path examples.
+`arrange-loop.py` repeats the original source for conditioning and extracts only full cycles at
+the original phrase position, with exactly the source frame count, sample rate and PCM16 format.
+Source and conditioning checksums are recorded in the request and selection report.
+Chroma comparisons guide candidate selection but cannot certify preservation of a melody;
+the unchanged mechanical gate and human comparative listening are both required.
+
 ## Failure modes met, and how the scripts avoid them
 
 | Symptom | Cause | Guard |
@@ -40,6 +53,7 @@ behind XL SFT; do not use it.
 | Hallucinated vocals, rap or DJ scratches in an "instrumental" | genre prior (hip-hop, R&B…) | `[Instrumental]` lyrics + explicit "no singing, no speech, no vocal samples, no pre-recorded scratching"; reviewer inspects harmonic spectrograms |
 | Muffled, lo-fi or over-compressed sound | weak production language | prompt ends with a mix paragraph (transients, controlled sub, stereo image, "not muffled") |
 | Seamless loop clicks after encoding | AAC/MP3 priming and padding | ship WAV; previews (non-looping) may stay AAC |
-| Install disappears | ACE-Step was installed under `/private/tmp`, purged on reboot | `ACESTEP_HOME` is a required variable; the skill warns about `/tmp` |
+| Install disappears | ACE-Step was installed under `/private/tmp`, purged on reboot | install at `~/Tools/ACE-Step-1.5` (the scripts' default `ACESTEP_HOME`); the skill warns about `/tmp` |
+| `ace-server.sh start` times out with `/health` 200 | upstream lazy-loads models (`models_initialized` stays false) | the script exports `ACESTEP_NO_INIT=false` for eager loading |
 | Lost renders | `/tmp` stage, no resume | stage under `~/.cache/soundlines-loops/<slug>`; renders resume per seed and write atomically |
 | Hung requests | XL takes ~7 min per seed | 30 min per-take deadline with 3 s polling; `/query_result` status 2 surfaces the server error |

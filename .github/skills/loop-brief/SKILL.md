@@ -8,7 +8,7 @@ argument-hint: 'Genre id or slug, e.g. "genre:amapiano", plus any review feedbac
 
 A brief is everything ACE-Step receives. It owns **what the loop should sound like**; rendering is
 `loop-produce`, measurement is `loop-validate`, the ship decision is `loop-review`.
-The reference is [scripts/loops/briefs/hip-hop.json](../../../scripts/loops/briefs/hip-hop.json): it
+The reference is [scripts/loops/briefs/turntable-hip-hop.json](../../../scripts/loops/briefs/turntable-hip-hop.json): it
 produced the shipped hip-hop loop, so copy its structure and density.
 
 ## Schema
@@ -58,6 +58,13 @@ produced the shipped hip-hop loop, so copy its structure and density.
    must PASS. Any prompt or meta change invalidates planned codes (by design).
 
 ## Revising after review
+
+For a source-conditioned arrangement of an existing original Soundlines loop, add
+`arrangement: { source: "public/loops/<slug>.wav", strength: 0.75 }`.
+Keep the source tempo, key, melody, bar count and phrase position explicit in the prompt.
+The arrangement pipeline preserves the source's fitted duration exactly rather than cutting
+an independently timed loop. Cite the original source and intended instrumentation changes in
+`notes`; source conditioning is not a guarantee of melody preservation.
 
 Map each review finding to one prompt change and record it in `notes`: vocals → stronger bans and
 remove vocal-associated words ("soulful", "hook", "chant"); intro/breakdown → loop-form sentence earlier

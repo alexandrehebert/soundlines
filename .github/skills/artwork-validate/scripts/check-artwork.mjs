@@ -166,7 +166,8 @@ async function loadSharp() {
   try {
     return (await import('sharp')).default
   } catch {
-    report('WARN', '-', '-', 'render', 'sharp is not installed: rendered checks and PNG sheets skipped (npm i --no-save sharp)')
+    report(args.includes('--require-render') ? 'FAIL' : 'WARN', '-', '-', 'render',
+      'sharp is not installed: rendered checks and PNG sheets skipped (npm i --no-save sharp)')
     return null
   }
 }
@@ -217,6 +218,25 @@ async function renderedChecks(sharp, { slug }) {
   }
   const icon = await pixels('icons', 24, 24, '#ffffff')
   if (icon) {
+    // Expand the viewport before rasterizing so clipped paths and strokes remain visible.
+    const svg = readFileSync(fileFor('icons', slug), 'utf8').replace(/<svg\b[^>]*>/, (root) =>
+      root.replace(/viewBox="[^"]*"/, 'viewBox="-24 -24 72 72"')
+        .replace(/\bwidth="[^"]*"/, 'width="72"')
+        .replace(/\bheight="[^"]*"/, 'height="72"'))
+    try {
+      const padded = await sharp(tint(svg, '#ffffff')).resize(72, 72).ensureAlpha().raw().toBuffer()
+      let overflow = false
+      for (let y = 0; y < 72; y++) {
+        for (let x = 0; x < 72; x++) {
+          if ((x < 24 || x >= 48 || y < 24 || y >= 48) && padded[(y * 72 + x) * 4 + 3] > 63) {
+            overflow = true
+          }
+        }
+      }
+      if (overflow) report('FAIL', slug, 'icons', 'overflow', 'ink extends outside the 24×24 canvas (clipped in the app)')
+    } catch (error) {
+      report('FAIL', slug, 'icons', 'render', error.message.split('\n')[0])
+    }
     let coverage = 0
     let [x0, y0, x1, y1] = [24, 24, -1, -1]
     for (let y = 0; y < 24; y++) {

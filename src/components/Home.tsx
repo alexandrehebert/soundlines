@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowLeftRight, ArrowRight, ArrowUpRight, Bubbles, ChartGantt, Disc3, Guitar, Headphones, Heart, History, Landmark, Moon, Pause, Play, Radio, Sun, Users, type LucideIcon } from 'lucide-react'
 import { animate, motion, useAnimationFrame, useMotionValue, useReducedMotion, useScroll, useSpring, useTransform, type MotionValue } from 'motion/react'
-import { useEffect, useId, useMemo, useRef, useState, type MouseEvent, type PointerEvent, type ReactNode, type RefObject } from 'react'
+import { useCallback, useEffect, useId, useMemo, useRef, useState, type MouseEvent, type PointerEvent, type ReactNode, type RefObject } from 'react'
 import { useTranslations } from 'next-intl'
 import { useExplorer } from '../ExplorerContext.ts'
 import { formatEventPeriod } from '../graph/history.ts'
@@ -14,7 +14,7 @@ import './Home.css'
 import { localizePath } from '../i18n/routing.ts'
 import { graphLabels } from '../i18n/graphLabels.ts'
 import { useColorTheme, type ColorTheme } from '../useColorTheme.ts'
-import { turntableHintFrame, turntableHintPosition, type TurntableHintTargets } from './turntableHint.ts'
+import { scheduleTurntableHints, turntableHintFrame, turntableHintPosition, type TurntableHintScenario, type TurntableHintTargets } from './turntableHint.ts'
 
 const DESTINATIONS = [
   { view: 'genre', icon: Bubbles },
@@ -56,16 +56,16 @@ function pointerAngle(element: HTMLElement, event: PointerEvent<HTMLElement>) {
   return { angle: Math.atan2(y, x) * 180 / Math.PI, distance: Math.hypot(x, y), radius: box.width / 2 }
 }
 
-function TurntableHint({ record, play, progress }: {
+function TurntableHint({ record, play, progress, scenario }: {
   record: RefObject<HTMLDivElement | null>
   play: RefObject<HTMLButtonElement | null>
   progress: MotionValue<number>
+  scenario: MotionValue<TurntableHintScenario>
 }) {
   const overlay = useRef<HTMLDivElement>(null)
   const [targets, setTargets] = useState<TurntableHintTargets | null>(null)
-  const [finished, setFinished] = useState(false)
   const ready = targets !== null
-  const frame = useTransform(progress, turntableHintFrame)
+  const frame = useTransform(() => turntableHintFrame(progress.get(), scenario.get()))
   const x = useTransform(() => targets ? turntableHintPosition(frame.get(), targets).x : 0)
   const y = useTransform(() => targets ? turntableHintPosition(frame.get(), targets).y : 0)
   const opacity = useTransform(frame, (value) => value.opacity)
@@ -76,18 +76,35 @@ function TurntableHint({ record, play, progress }: {
 
   useEffect(() => {
     if (!ready) return
-    progress.set(0)
-    const animation = animate(progress, 1, {
-      duration: 7,
-      delay: 2,
-      ease: 'linear',
-      onComplete: () => setFinished(true),
-    })
-    return () => {
-      animation.stop()
+    const schedule = scheduleTurntableHints((next) => {
+      scenario.set(next)
       progress.set(0)
+      const animation = animate(progress, 1, { duration: 7, ease: 'linear' })
+      return () => {
+        animation.stop()
+        progress.set(0)
+      }
+    })
+    let visible = false
+    const eligible = () => visible && document.visibilityState === 'visible'
+    const update = () => { if (eligible()) schedule.resume(); else schedule.pause() }
+    const activity = () => { if (eligible()) schedule.restart() }
+    const observer = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting && entry.intersectionRatio >= .5
+      update()
+    }, { threshold: .5 })
+    if (record.current) observer.observe(record.current)
+    document.addEventListener('visibilitychange', update)
+    for (const event of ['pointerdown', 'keydown', 'wheel']) {
+      document.addEventListener(event, activity, { passive: true })
     }
-  }, [progress, ready])
+    return () => {
+      schedule.dispose()
+      observer.disconnect()
+      document.removeEventListener('visibilitychange', update)
+      for (const event of ['pointerdown', 'keydown', 'wheel']) document.removeEventListener(event, activity)
+    }
+  }, [progress, scenario, ready, record])
 
   useEffect(() => {
     const layer = overlay.current
@@ -116,7 +133,7 @@ function TurntableHint({ record, play, progress }: {
 
   return (
     <div ref={overlay} className="discovery-turntable-hint" aria-hidden="true">
-      {targets && !finished && (
+      {targets && (
         <motion.div
           className="discovery-turntable-hand"
           style={{ x, y, opacity, scale }}
@@ -147,7 +164,11 @@ function HeroTurntable({ theme, children }: { theme: ColorTheme; children: React
   const spin = useSpring(angle, { stiffness: 110, damping: 24 })
   const scratchOffset = useMotionValue(0)
   const hintProgress = useMotionValue(0)
-  const hintRotation = useTransform(hintProgress, (progress) => turntableHintFrame(progress).angle)
+  const hintScenario = useMotionValue<TurntableHintScenario>('scratch-play')
+  const hintFrame = useTransform(() => turntableHintFrame(hintProgress.get(), hintScenario.get()))
+  const hintRotation = useTransform(hintFrame, (frame) => frame.angle)
+  const hintPulse = useTransform(hintFrame, (frame) => frame.playPulse)
+  const hintPulseScale = useTransform(hintPulse, [0, 1], [1, 1.18])
   const spinning = useTransform([spin, scratchOffset, hintRotation], ([base, offset, demo]: number[]) => base + offset + demo)
   const still = useTransform(scratchOffset, (offset) => offset - 16)
   const rotate = reduceMotion ? still : spinning
@@ -185,13 +206,24 @@ function HeroTurntable({ theme, children }: { theme: ColorTheme; children: React
     }
   })
 
-  const reportAudioError = (error: unknown) => {
+  const reportAudioError = useCallback((error: unknown) => {
     if (!mounted.current) return
     console.warn('Unable to play the turntable audio.', error)
     deck.current?.pause()
+    pendingPlay.current = false
     setPlaying(false)
     setAudioError(true)
-  }
+  }, [])
+
+  const loop = theme === 'dark' ? 'turntable-hip-hop' : 'turntable-trap'
+  useEffect(() => {
+    let cancelled = false
+    void deck.current?.setLoop(loop).catch((error: unknown) => {
+      if (!cancelled) reportAudioError(error)
+      else if (mounted.current) console.warn('Unable to load a superseded turntable side.', error)
+    })
+    return () => { cancelled = true }
+  }, [loop, reportAudioError])
 
   const togglePlayback = async () => {
     dismissHint()
@@ -205,10 +237,10 @@ function HeroTurntable({ theme, children }: { theme: ColorTheme; children: React
     pendingPlay.current = true
     setLoading(true)
     try {
-      deck.current ??= createScratchDeck(reportAudioError)
+      deck.current ??= createScratchDeck(reportAudioError, loop)
       if (!deck.current) throw new Error('Web Audio is not supported by this browser.')
       await deck.current.play()
-      if (mounted.current) setPlaying(true)
+      if (mounted.current && pendingPlay.current) setPlaying(true)
     } catch (error) {
       reportAudioError(error)
     } finally {
@@ -224,7 +256,7 @@ function HeroTurntable({ theme, children }: { theme: ColorTheme; children: React
     dismissHint()
     event.preventDefault()
     event.currentTarget.setPointerCapture(event.pointerId)
-    deck.current ??= createScratchDeck(reportAudioError)
+    deck.current ??= createScratchDeck(reportAudioError, loop)
     if (!deck.current) {
       reportAudioError(new Error('Web Audio is not supported by this browser.'))
       return
@@ -277,7 +309,9 @@ function HeroTurntable({ theme, children }: { theme: ColorTheme; children: React
               ref={playButton}
               type="button"
               className="discovery-turntable-play"
-              aria-label={tHome(playing ? 'pauseLoop' : 'playLoop')}
+              aria-label={tHome(theme === 'light'
+                ? playing ? 'pauseTrapLoop' : 'playTrapLoop'
+                : playing ? 'pauseLoop' : 'playLoop')}
               aria-pressed={playing}
               aria-busy={loading}
               aria-describedby={audioError ? errorId : undefined}
@@ -286,6 +320,7 @@ function HeroTurntable({ theme, children }: { theme: ColorTheme; children: React
               onClick={() => { void togglePlayback() }}
             >
               <span className="discovery-turntable-led" aria-hidden="true" />
+              <motion.span className="discovery-turntable-play-hint" aria-hidden="true" style={{ opacity: hintPulse, scale: hintPulseScale }} />
               {playing ? <Pause size={16} aria-hidden="true" /> : <Play size={16} aria-hidden="true" />}
               <span>{tHome(playing ? 'pause' : 'play')}</span>
             </button>
@@ -321,7 +356,7 @@ function HeroTurntable({ theme, children }: { theme: ColorTheme; children: React
         aria-hidden="true"
         {...scratchHandlers}
       />
-      {!reduceMotion && !hintDismissed && <TurntableHint record={record} play={playButton} progress={hintProgress} />}
+      {!reduceMotion && !hintDismissed && <TurntableHint record={record} play={playButton} progress={hintProgress} scenario={hintScenario} />}
     </>
   )
 }

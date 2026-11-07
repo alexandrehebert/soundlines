@@ -1,0 +1,16 @@
+{
+  "slug": "turntable-trap",
+  "genre": "genre:trap-rap",
+  "bpm": 92,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 36,
+  "arrangement": {
+    "source": "public/loops/turntable-hip-hop.wav",
+    "strength": 0.75
+  },
+  "seeds": [82613, 94721, 36589, 21847, 69311],
+  "prompt": "Original instrumental Southern US trap arrangement, 92 BPM, 4/4, D minor. Retain the supplied original electric-piano motif and muted brass reply, their pitches, phrasing, harmony and exact four-bar position. Replace the boom-bap percussion with crisp programmed kicks, hard snare and clap accents, busy closed hi-hats with short sixteenth and triplet rolls. A gritty sustained 808 bass locks to the kick and follows the existing harmony without obscuring the melody. Keep the source tempo and downbeat alignment unchanged; intensity comes from the percussion and bass, not faster playback. Repeat a coherent four-bar groove with subtle variations, keep the rhythm section fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Premium studio mix, sharp separated transients, controlled mono-compatible sub-bass, restrained bass saturation and spacious keys, energetic and not muffled. Entirely instrumental: no singing, no speech, no vocal samples, no pre-recorded scratching. Source melodies and performances are newly composed original Soundlines material; all added performances are newly composed.",
+  "notes": "Light-theme counterpart to public/loops/turntable-hip-hop.wav, not an independent melody. Use source-audio conditioning and verify melody preservation and sample-exact four-bar alignment before shipping. Match the source's fitted 91.994 BPM and exact sample count rather than independently extracting at nominal 92 BPM. Trap instrumentation is grounded in Berklee's description of busy hi-hats, heavy sub-bass, rhythmic snares and 808 drums: https://online.berklee.edu/takenote/trap-music-where-it-came-from-and-where-its-going/. The shared tempo is an intentional arrangement constraint. ACE-Step cover mode bypasses LM planning; this requires explicitly recorded reference-audio provenance rather than claiming text-to-music 4B codes."
+}

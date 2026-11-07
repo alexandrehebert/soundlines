@@ -17,7 +17,7 @@ from acestep.llm_inference import LLMHandler
 brief_path, stage = Path(sys.argv[1]), Path(sys.argv[2])
 brief = json.loads(brief_path.read_text())
 seeds = [int(seed) for seed in sys.argv[3:]] or brief["seeds"]
-home = Path(os.environ["ACESTEP_HOME"])
+home = Path(os.environ.get("ACESTEP_HOME", Path.home() / "Tools/ACE-Step-1.5"))
 port = int(os.environ.get("ACESTEP_API_PORT", "8020"))
 
 with socket.socket() as probe:

@@ -1,0 +1,57 @@
+name: Artwork quality
+
+on:
+  pull_request:
+    paths:
+      - 'public/instrument-*/**'
+      - 'scripts/artwork/**'
+      - '.github/agents/artwork-*.agent.md'
+      - '.github/skills/artwork-*/**'
+      - '.github/instructions/instrument-artwork.instructions.md'
+      - '.github/workflows/artwork-quality.yml'
+      - 'src/data/graph.json'
+      - 'src/theme.ts'
+      - 'src/components/InstrumentIcon*'
+      - 'src/stories/InstrumentArtwork.stories.tsx'
+      - 'src/stories/fixtures/instrument-artwork-v1/**'
+      - 'package.json'
+      - 'package-lock.json'
+  push:
+    branches: [main]
+    paths:
+      - 'public/instrument-*/**'
+      - 'scripts/artwork/**'
+      - '.github/agents/artwork-*.agent.md'
+      - '.github/skills/artwork-*/**'
+      - '.github/instructions/instrument-artwork.instructions.md'
+      - '.github/workflows/artwork-quality.yml'
+      - 'src/data/graph.json'
+      - 'src/theme.ts'
+      - 'src/components/InstrumentIcon*'
+      - 'src/stories/InstrumentArtwork.stories.tsx'
+      - 'src/stories/fixtures/instrument-artwork-v1/**'
+      - 'package.json'
+      - 'package-lock.json'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 26
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Lint artwork briefs
+        run: node .github/skills/artwork-brief/scripts/check-brief.mjs
+      - name: Validate artwork and generator output
+        run: node .github/skills/artwork-validate/scripts/check-artwork.mjs --require-render
+      - name: Test artwork validation and app icons
+        run: npx vitest run scripts/artwork/validation.test.ts src/components/InstrumentIcon.test.tsx

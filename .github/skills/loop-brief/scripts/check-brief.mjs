@@ -27,6 +27,11 @@ for (const file of files) {
   need(basename(file) === `${b.slug}.json`, 'file name must be <slug>.json')
   need(genres.has(b.genre), `genre ${b.genre} is not a genre id in graph.json`)
   need(b.asset === undefined || /^public\/loops\/[a-z0-9-]+\.wav$/.test(b.asset), 'asset must be a public/loops/<name>.wav path')
+  if (b.arrangement !== undefined) {
+    need(/^public\/loops\/[a-z0-9-]+\.wav$/.test(b.arrangement?.source ?? ''), 'arrangement source must be an original public/loops/<name>.wav')
+    need(Number.isFinite(b.arrangement?.strength) && b.arrangement.strength > 0 && b.arrangement.strength <= 1,
+      'arrangement strength must be in (0, 1]')
+  }
   need(Number.isInteger(b.bpm) && b.bpm >= 60 && b.bpm <= 180, 'bpm must be an integer 60-180 (felt beat; beat tracking is unreliable outside)')
   need([2, 3, 4, 6].includes(b.meter), 'meter must be one of ACE-Step time signatures 2, 3, 4, 6')
   need([2, 4, 8].includes(b.bars), 'bars must be 2, 4 or 8')

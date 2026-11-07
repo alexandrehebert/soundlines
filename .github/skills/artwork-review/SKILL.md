@@ -27,7 +27,8 @@ previous version in `src/stories/fixtures/instrument-artwork-v1/` when redrawn, 
    Any `avoid` item present, or a wrong count of strings, courses, pegs, keys or drums, is blocking.
 4. **Icon.** At 24 and 16 px in `$STAGE/<slug>.png` and among its neighbours in `icons.png`: the
    `iconFeatures` survive, it is not confusable with another icon in the set, weight and size match the
-   family.
+   family. Check the brief's natural playing pose and symmetry about the neck axis for symmetrical
+   string instruments. Rotation must preserve the complete shape and keep all strokes in the canvas.
 5. **Header.** Title area clear, art readable on the right, nothing important cut by the reveal.
 6. **Set consistency.** Tilt, palette, line weight, level of detail and framing match the family on the
    sheets; banner, avatar and header show the same drawing.

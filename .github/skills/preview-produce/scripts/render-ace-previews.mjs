@@ -1,7 +1,7 @@
 import { execFile } from 'node:child_process'
 import { existsSync, readFileSync } from 'node:fs'
 import { mkdir, mkdtemp, rename, rm, writeFile } from 'node:fs/promises'
-import { tmpdir } from 'node:os'
+import { homedir, tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { setTimeout as delay } from 'node:timers/promises'
 import { fileURLToPath } from 'node:url'
@@ -9,12 +9,15 @@ import { promisify } from 'node:util'
 
 const exec = promisify(execFile)
 const scripts = fileURLToPath(new URL('.', import.meta.url))
-const graph = JSON.parse(readFileSync(join(scripts, '../../src/data/graph.json'), 'utf8'))
+const root = fileURLToPath(new URL('../../../../', import.meta.url))
+const graph = JSON.parse(readFileSync(join(root, 'src/data/graph.json'), 'utf8'))
 const genres = graph.nodes.filter((node) => node.type === 'genre').map((node) => node.id.slice(6))
-const assets = process.env.ACESTEP_PREVIEW_OUTPUT ?? join(scripts, '../../public/genre-previews')
-const planner = process.env.ACESTEP_PYTHON
+const assets = process.env.ACESTEP_PREVIEW_OUTPUT ?? join(root, 'public/genre-previews')
+const planner =
+  process.env.ACESTEP_PYTHON ??
+  join(process.env.ACESTEP_HOME ?? join(homedir(), 'Tools/ACE-Step-1.5'), '.venv/bin/python')
 const endpoint = 'http://127.0.0.1:8020'
-const files = ['acoustic', 'electric', 'regional'].map((name) => join(scripts, 'briefs', `${name}.json`))
+const files = ['acoustic', 'electric', 'regional'].map((name) => join(root, 'scripts/previews/briefs', `${name}.json`))
 const approved = ['rock', 'funk']
 const selected = process.argv.slice(2)
 const targets = selected.length ? selected : genres
@@ -23,7 +26,7 @@ const failures = new Map()
 const inFlight = new Set()
 const finished = new Set()
 
-if (!planner) throw new Error('Set ACESTEP_PYTHON to the Python executable in the local ACE-Step environment.')
+if (!existsSync(planner)) throw new Error(`No ACE-Step Python at ${planner}; set ACESTEP_PYTHON (see docs/INSTALLATION.md).`)
 if (targets.some((id) => !genres.includes(id))) throw new Error('Use genre slugs from graph.json.')
 if (reviewRetake && (!selected.length || !process.env.ACESTEP_PREVIEW_OUTPUT)) {
   throw new Error('Specify the flagged genres and a staging output folder for review retakes.')

@@ -12,21 +12,32 @@ starts. Once the landing page is ready, the cover fades away and the vinyl moves
 into its hero position over 700ms of animation time, tracking the hero position and
 scroll-driven rotation even when scrolling during loading. The handoff waits for
 the movement to finish, including when startup rendering delays its first frame.
+Destination tracking begins only after the movement starts, so slow startup
+cannot keep the vinyl stuck in the center until the user scrolls.
 Other entry pages simply fade out the cover.
 The hero copy stays in its final position throughout; catalogue widgets fade in
 as they enter the viewport without shifting their alignment.
 The compact, beveled turntable button is inset into the hero card without adding
 height on desktop or mobile. Its raised face depresses during playback, with a
-lit status LED. It plays or pauses an original four-bar instrumental hip-hop loop.
-Audio loads only on Play. Dragging the record
+lit status LED. Dark theme plays the original four-bar instrumental hip-hop loop;
+light theme selects its more aggressive trap arrangement with the same melody and tempo.
+Changing theme keeps the musical position and scratch speed, with an 80 ms crossfade.
+It never starts paused audio. The first loop loads only on Play; after that,
+the other side loads on theme change and both sides stay cached for the visit.
+Dragging the record
 scratches that same stereo recording forward or backward; holding it stops the
 groove, and releasing it resumes normal playback. Navigation stops the audio.
 Reduced-motion preferences disable automatic record rotation, not playback.
-After a short pause, a decorative hand grips the record and scratches along a
-short circular arc, rotating the vinyl in sync, then points at and taps Play.
+After a two-second pause with the record in view, a decorative hand demonstrates
+one of four silent scenarios. Each combines a tap on Play with a scratch, in
+either order, with different scratching styles and a soft button pulse.
+Scratch gestures follow a circular arc, rotating the vinyl in sync.
 Both hand poses share the same wrist position for a stationary crossfade.
-It runs once per landing-page visit without playing audio or
-blocking controls, and disappears on scratch, Play, or keyboard focus on Play.
+Each demonstration lasts seven seconds, followed by a random 10–16-second pause;
+consecutive scenarios never repeat. Hints pause when the record leaves the
+viewport or the tab is hidden. Pointer presses, typing, and scrolling cancel the
+current hint and postpone the next one. They never play audio or block controls,
+and stop for the visit on scratch, Play, or keyboard focus on Play.
 Reduced-motion preferences also disable this hint.
 The English and French controls show a retry message when audio cannot load.
 

@@ -23,7 +23,7 @@ Reference: [scripts/artwork/briefs/charango.json](../../../scripts/artwork/brief
   ],
   "silhouette": "…",                     // 30-300 chars: overall shape, pose, proportions
   "features": ["…"],                     // 3-8 defining traits visible at banner size, with counts
-  "iconFeatures": ["…"],                 // 1-3 traits that must survive at 16-24 px
+  "iconFeatures": ["…"],                 // 1-3 traits, including the natural playing pose, at 16-24 px
   "avoid": ["…"],                        // 1-6 confusions with neighbours, anachronisms, wrong views
   "notes": "…"                           // which variant/era is drawn and why
 }
@@ -44,7 +44,9 @@ Reference: [scripts/artwork/briefs/charango.json](../../../scripts/artwork/brief
 4. **Write features as checkable facts**: shapes, counts (strings, courses, pegs, keys, pads, valves),
    where parts sit relative to each other, proportions ("neck about as long as the body"). Each should be
    something a reviewer can confirm on the PNG.
-5. **Write `iconFeatures`** as the 1-3 shapes that still identify the instrument at 16 px, and `avoid`
+5. **Write `iconFeatures`** as the 1-3 shapes that still identify the instrument at 16 px, including
+   its natural playing position. Put the pose rationale in `notes`. For symmetrical string bodies,
+   preserve symmetry around the neck axis before rotating the complete instrument. Write `avoid`
    with the nearest look-alikes in the set (`ls public/instrument-icons`).
 6. **Pick `method`**: `generator` for anything the family builders (`plucked`, `bowed`, `indian`,
    `synthesizer`) or helpers can express; `hand` only when the shape needs bespoke paths. Existing

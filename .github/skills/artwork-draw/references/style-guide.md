@@ -49,7 +49,16 @@ x ≥ 220 px ≥ 0.05.
   a mask, so colour is meaningless and partial opacity turns faint.
 - Keep the 1–3 `iconFeatures` from the brief and drop strings, knobs and small controls.
 - Coverage at 24 px 0.10–0.45 (set median 0.23); inked bounding box ≥ 16 px (median 20).
-- Rotate with `transform="rotate(<deg> 12 12)"` so long instruments read diagonally (`ICON_ANGLES`).
+- Choose a natural playing position, then rotate the complete silhouette around (12, 12) with
+  `ICON_ANGLES`. Side-blown flutes (including piccolo, bansuri and ryuteki) sit approximately
+  horizontal. End-blown winds sit near vertical. Bassoon has the bell up and boot down on a steep
+  diagonal. Saxophone keeps its curved neck above its U-shaped bow and upturned bell.
+- Keep the body and neck of symmetrical string instruments symmetrical about their shared axis.
+  Apply the diagonal rotation to the whole instrument. Preserve real asymmetry such as a lute's bent
+  pegbox, side pegs or an electric guitar's cutaways. Cello, double bass and jinghu sit more upright
+  than handheld guitars and lutes. Keyboards and mounted percussion sit level.
+- The large artwork's −9° presentation tilt is independent of the icon's playing position.
+- Keep the whole stroked icon inside its canvas, including bows, reeds, bells and tuning pegs.
 - Check 16 px: the timeline and undated list render it that small.
 
 ## Drawing rules

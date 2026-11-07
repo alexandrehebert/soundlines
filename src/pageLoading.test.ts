@@ -143,6 +143,7 @@ describe('page loading lifecycle', () => {
           clearTimeout(finished)
         },
         effect: new MockKeyframeEffect(),
+        startTime: 0 as number | null,
         onfinish: null as (() => void) | null,
       }
       const finished = setTimeout(() => animation.onfinish?.(), startDelay + 700)
@@ -253,6 +254,28 @@ describe('page loading lifecycle', () => {
     effects.forEach((effect) => effect.setKeyframes.mockClear())
     vi.advanceTimersByTime(100)
     effects.forEach((effect) => expect(effect.setKeyframes).not.toHaveBeenCalled())
+  })
+
+  it('does not replace keyframes until the docking movement starts', () => {
+    const { animate, destination } = mockLandingVinyl('1', 1000)
+    loading.finishPageLoading()
+    vi.advanceTimersByTime(550)
+    const animations = animate.mock.results.map((result) => result.value)
+    animations[1].startTime = null
+    destination.getBoundingClientRect.mockReturnValue({ left: 830, top: -70, width: 300, height: 300 })
+
+    vi.advanceTimersByTime(1000)
+    animations.forEach((animation) => expect(animation.effect.setKeyframes).not.toHaveBeenCalled())
+    expect(overlay.dataset.loading).toBe('true')
+
+    animations[1].startTime = performance.now()
+    vi.advanceTimersByTime(16)
+    expect(animations[1].effect.setKeyframes).toHaveBeenLastCalledWith([
+      { transform: `translate(0px, -10px) scale(${200 / 300})`, opacity: 1 },
+      { transform: 'translate(480px, -330px) scale(1)', opacity: '1' },
+    ])
+    vi.advanceTimersByTime(684)
+    expect(overlay.dataset.loading).toBe('false')
   })
 
   it.each(['dark', 'light'])('tracks scrolling and rotation throughout docking in the %s theme', (theme) => {

@@ -5,7 +5,8 @@
 #   ace-server.sh stop | status
 set -euo pipefail
 
-: "${ACESTEP_HOME:?Set ACESTEP_HOME to the ACE-Step checkout (the folder containing checkpoints/ and .venv/)}"
+ACESTEP_HOME="${ACESTEP_HOME:-$HOME/Tools/ACE-Step-1.5}"
+[ -x "$ACESTEP_HOME/.venv/bin/acestep-api" ] || { echo "No ACE-Step install at $ACESTEP_HOME; set ACESTEP_HOME (see docs/INSTALLATION.md)" >&2; exit 1; }
 PORT="${ACESTEP_API_PORT:-8020}"
 STATE="${LOOP_STAGE_ROOT:-$HOME/.cache/soundlines-loops}"
 PIDFILE="$STATE/ace-server.pid"
@@ -30,6 +31,8 @@ case "${1:-}" in
       *) echo "Unknown profile: $profile" >&2; exit 1 ;;
     esac
     cd "$ACESTEP_HOME"
+    # Upstream lazy-loads models by default; load at startup so readiness and the loaded model are verifiable.
+    export ACESTEP_NO_INIT=false
     nohup .venv/bin/acestep-api --host 127.0.0.1 --port "$PORT" --download-source huggingface >"$LOG" 2>&1 &
     echo $! >"$PIDFILE"
     # Loading the 19 GB XL checkpoint plus MLX/VAE compilation takes about two minutes.

@@ -7,7 +7,8 @@ class TestAudioContext {
   sampleRate = 1000
   currentTime = 0
   destination = {}
-  gain = { value: 0, setTargetAtTime: vi.fn() }
+  gain = this.createGainParameter()
+  gains: ReturnType<TestAudioContext['createGain']>[] = []
   sources: ReturnType<TestAudioContext['createBufferSource']>[] = []
   resume = vi.fn(() => new Promise<void>(() => {}))
   close = vi.fn(() => Promise.resolve())
@@ -22,8 +23,18 @@ class TestAudioContext {
     return { duration: length / sampleRate, length, sampleRate, numberOfChannels, getChannelData: (channel: number) => channels[channel] }
   }
 
+  createGainParameter() {
+    return { value: 0, setTargetAtTime: vi.fn(), cancelAndHoldAtTime: vi.fn(), linearRampToValueAtTime: vi.fn() }
+  }
+
   createGain() {
-    return { gain: this.gain, connect: () => ({ connect: () => {} }) }
+    const node = {
+      gain: this.gains.length ? this.createGainParameter() : this.gain,
+      connect: vi.fn(() => node),
+      disconnect: vi.fn(),
+    }
+    this.gains.push(node)
+    return node
   }
 
   createBiquadFilter() {
@@ -35,10 +46,11 @@ class TestAudioContext {
       buffer: null as ReturnType<TestAudioContext['createBuffer']> | null,
       loop: false,
       playbackRate: { value: 0, setTargetAtTime: vi.fn() },
-      connect: vi.fn(),
+      connect: vi.fn((node: ReturnType<TestAudioContext['createGain']>) => node),
       start: vi.fn((_when: number, _offset: number) => {}),
       stop: vi.fn(),
       disconnect: vi.fn(),
+      onended: null as (() => void) | null,
     }
     this.sources.push(source)
     return source
@@ -147,7 +159,7 @@ describe('vinyl scratch', () => {
 
     await deck.play()
     expect(fetchAudio).toHaveBeenCalledOnce()
-    expect(fetchAudio).toHaveBeenCalledWith('/loops/hip-hop.wav', expect.anything())
+    expect(fetchAudio).toHaveBeenCalledWith('/loops/turntable-hip-hop.wav', expect.anything())
     expect(context.sources[0].buffer).toBe(buffer)
     expect(context.sources[0].loop).toBe(true)
     context.currentTime = 0.5
@@ -201,5 +213,206 @@ describe('vinyl scratch', () => {
     deck.dispose()
     await play
     expect(context.sources).toHaveLength(0)
+  })
+
+  it('selects the initial theme silently and loads its side only on play', async () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    const fetchAudio = vi.fn(async () => ({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) }))
+    vi.stubGlobal('fetch', fetchAudio)
+    const deck = createScratchDeck(undefined, 'turntable-trap')!
+    const context = TestAudioContext.instances[0]
+    context.state = 'running'
+    await deck.setLoop('turntable-hip-hop')
+    await deck.setLoop('turntable-trap')
+    expect(fetchAudio).not.toHaveBeenCalled()
+    expect(context.sources).toHaveLength(0)
+    await deck.play()
+    expect(fetchAudio).toHaveBeenCalledWith('/loops/turntable-trap.wav', expect.anything())
+    deck.dispose()
+  })
+
+  it('crossfades at the current position and speed, and caches both sides', async () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    const fetchAudio = vi.fn(async () => ({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) }))
+    vi.stubGlobal('fetch', fetchAudio)
+    const deck = createScratchDeck()!
+    const context = TestAudioContext.instances[0]
+    context.state = 'running'
+    await deck.play()
+    const original = context.sources[0].buffer
+    const trap = context.createBuffer(2, 4000, 1000)
+    context.decodeAudioData.mockResolvedValueOnce(trap)
+    context.currentTime = 1.25
+    await deck.setLoop('turntable-trap')
+    expect(context.sources[1].buffer).toBe(trap)
+    expect(context.sources[1].start.mock.calls[0][0]).toBe(1.25)
+    expect(context.sources[1].start.mock.calls[0][1]).toBeCloseTo(1.238, 8)
+    expect(context.sources[1].playbackRate.value).toBeCloseTo(1, 8)
+    expect(context.sources[0].stop).toHaveBeenCalledWith(1.33)
+    expect(context.gains[1].gain.linearRampToValueAtTime).toHaveBeenLastCalledWith(0, 1.33)
+    expect(context.gains[2].gain.linearRampToValueAtTime).toHaveBeenLastCalledWith(1, 1.33)
+    context.sources[0].onended?.()
+    expect(context.gains[1].disconnect).toHaveBeenCalledOnce()
+    context.currentTime = 1.5
+    await deck.setLoop('turntable-hip-hop')
+    expect(context.sources[2].buffer).toBe(original)
+    expect(context.sources[2].start.mock.calls[0][1]).toBeCloseTo(1.488, 8)
+    expect(fetchAudio).toHaveBeenCalledTimes(2)
+    await deck.setLoop('turntable-hip-hop')
+    expect(context.sources).toHaveLength(3)
+    deck.dispose()
+  })
+
+  it('does not resume paused or held playback when switching sides', async () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) })))
+    const deck = createScratchDeck()!
+    const context = TestAudioContext.instances[0]
+    context.state = 'running'
+    await deck.play()
+    deck.pause()
+    context.currentTime = 1
+    context.state = 'suspended'
+    await deck.setLoop('turntable-trap')
+    expect(context.resume).not.toHaveBeenCalled()
+    expect(context.sources[1].playbackRate.value).toBeCloseTo(0)
+    expect(context.sources[1].playbackRate.setTargetAtTime).toHaveBeenLastCalledWith(0, 1, 0.012)
+    context.state = 'running'
+    await deck.play()
+    deck.hold()
+    context.currentTime = 2
+    await deck.setLoop('turntable-hip-hop')
+    expect(context.sources[2].playbackRate.setTargetAtTime).toHaveBeenLastCalledWith(0, 2, 0.012)
+    deck.release()
+    expect(context.sources[2].playbackRate.setTargetAtTime).toHaveBeenLastCalledWith(1, 2, 0.012)
+    deck.dispose()
+  })
+
+  it('preserves reverse scratching and stereo data when switching sides', async () => {
+    vi.useFakeTimers()
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) })))
+    const deck = createScratchDeck()!
+    const context = TestAudioContext.instances[0]
+    context.state = 'running'
+    await deck.play()
+    const trap = context.createBuffer(2, 4000, 1000)
+    trap.getChannelData(1)[0] = 0.75
+    context.decodeAudioData.mockResolvedValueOnce(trap)
+    deck.hold()
+    deck.scratch(-NORMAL_SPEED_DEG_PER_SEC / 2)
+    context.currentTime = 0.05
+    await deck.setLoop('turntable-trap')
+    const active = context.sources[2]
+    expect(active.buffer!.getChannelData(1)[3999]).toBe(0.75)
+    expect(active.start.mock.calls[0][1]).toBeCloseTo(0.0190930231, 8)
+    expect(active.playbackRate.value).toBeCloseTo(0.4922480732, 8)
+    expect(active.playbackRate.setTargetAtTime).toHaveBeenLastCalledWith(0.5, 0.05, 0.012)
+    deck.release()
+    expect(context.sources[3].buffer).toBe(trap)
+    deck.dispose()
+  })
+
+  it('rejects mismatched loop lengths without replacing the playing side', async () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) })))
+    const deck = createScratchDeck()!
+    const context = TestAudioContext.instances[0]
+    context.state = 'running'
+    await deck.play()
+    context.decodeAudioData.mockResolvedValueOnce(context.createBuffer(2, 4100, 1000))
+    await expect(deck.setLoop('turntable-trap')).rejects.toThrow('exact loop length')
+    expect(context.sources).toHaveLength(1)
+    expect(context.sources[0].stop).not.toHaveBeenCalled()
+    deck.dispose()
+  })
+
+  it('reports a side download failure and retries without restarting the original', async () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    const fetchAudio = vi.fn()
+      .mockResolvedValueOnce({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) })
+      .mockResolvedValueOnce({ ok: false, status: 503 })
+      .mockResolvedValueOnce({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) })
+    vi.stubGlobal('fetch', fetchAudio)
+    const deck = createScratchDeck()!
+    const context = TestAudioContext.instances[0]
+    context.state = 'running'
+    await deck.play()
+    await expect(deck.setLoop('turntable-trap')).rejects.toThrow('HTTP 503')
+    expect(context.sources).toHaveLength(1)
+    await deck.setLoop('turntable-trap')
+    expect(context.sources).toHaveLength(2)
+    deck.dispose()
+  })
+
+  it('ignores a late download after toggling back to the current side', async () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    const fetchAudio = vi.fn(async () => ({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) }))
+    vi.stubGlobal('fetch', fetchAudio)
+    const deck = createScratchDeck()!
+    const context = TestAudioContext.instances[0]
+    context.state = 'running'
+    await deck.play()
+    let finish!: (buffer: ReturnType<TestAudioContext['createBuffer']>) => void
+    context.decodeAudioData.mockImplementationOnce(() => new Promise((resolve) => { finish = resolve }))
+    const switchSide = deck.setLoop('turntable-trap')
+    await vi.waitFor(() => expect(context.decodeAudioData).toHaveBeenCalledTimes(2))
+    await deck.setLoop('turntable-hip-hop')
+    finish(context.createBuffer(2, 4000, 1000))
+    await switchSide
+    expect(context.sources).toHaveLength(1)
+    deck.dispose()
+  })
+
+  it('uses the latest theme when it changes during initial loading', async () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) })))
+    const deck = createScratchDeck()!
+    const context = TestAudioContext.instances[0]
+    context.state = 'running'
+    let finish!: (buffer: ReturnType<TestAudioContext['createBuffer']>) => void
+    context.decodeAudioData.mockImplementationOnce(() => new Promise((resolve) => { finish = resolve }))
+    const play = deck.play()
+    await vi.waitFor(() => expect(context.decodeAudioData).toHaveBeenCalledOnce())
+    const side = deck.setLoop('turntable-trap')
+    await side
+    const selected = context.sources.length
+    finish(context.createBuffer(2, 4000, 1000))
+    await play
+    expect(selected).toBe(0)
+    expect(context.sources).toHaveLength(1)
+    expect(context.decodeAudioData).toHaveBeenCalledTimes(2)
+    deck.dispose()
+  })
+
+  it('does not resume a play request cancelled while downloading', async () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) })))
+    const deck = createScratchDeck()!
+    const context = TestAudioContext.instances[0]
+    context.state = 'running'
+    const play = deck.play()
+    deck.pause()
+    await play
+    expect(context.sources).toHaveLength(0)
+    deck.dispose()
+  })
+
+  it('aborts downloads and stops every crossfading voice on disposal', async () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    const fetchAudio = vi.fn(async (_url: string, _options: { signal: AbortSignal }) => ({
+      ok: true, arrayBuffer: async () => new ArrayBuffer(8),
+    }))
+    vi.stubGlobal('fetch', fetchAudio)
+    const deck = createScratchDeck()!
+    TestAudioContext.instances[0].state = 'running'
+    await deck.play()
+    await deck.setLoop('turntable-trap')
+    deck.dispose()
+    const context = TestAudioContext.instances[0]
+    expect(context.sources[0].disconnect).toHaveBeenCalled()
+    expect(context.sources[1].stop).toHaveBeenCalled()
+    const options = fetchAudio.mock.calls[0][1]
+    expect(options.signal.aborted).toBe(true)
   })
 })

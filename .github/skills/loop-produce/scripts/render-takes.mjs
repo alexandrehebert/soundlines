@@ -4,26 +4,33 @@
 // draft: turbo DiT, 8 steps, in-server 1.7B LM planning. For brief iteration only; never ship a draft.
 import { existsSync, readFileSync } from 'node:fs'
 import { mkdir, rename, writeFile } from 'node:fs/promises'
-import { join } from 'node:path'
+import { join, resolve } from 'node:path'
 import { setTimeout as delay } from 'node:timers/promises'
 import { planningHash, readBrief } from './brief.mjs'
+import { createHash } from 'node:crypto'
 
 const [briefPath, stage, profile = 'final', ...only] = process.argv.slice(2)
-if (!briefPath || !stage || !['final', 'draft'].includes(profile)) {
-  throw new Error('Usage: node render-takes.mjs <brief.json> <stage-dir> [final|draft] [seed ...]')
+if (!briefPath || !stage || !['final', 'draft', 'arrangement'].includes(profile)) {
+  throw new Error('Usage: node render-takes.mjs <brief.json> <stage-dir> [final|draft|arrangement] [seed ...]')
 }
 const brief = readBrief(briefPath)
+if (brief.arrangement && profile !== 'arrangement') {
+  throw new Error('A source-conditioned brief must use the arrangement profile, not text-to-music or draft.')
+}
 const seeds = only.length ? only.map(Number) : brief.seeds
 const endpoint = `http://127.0.0.1:${process.env.ACESTEP_API_PORT ?? 8020}`
-const model = profile === 'final' ? 'acestep-v15-xl-sft' : 'acestep-v15-turbo'
-const takes = join(stage, profile === 'final' ? 'takes' : 'drafts')
+const finalQuality = profile !== 'draft'
+let sourceProvenance
+const model = finalQuality ? 'acestep-v15-xl-sft' : 'acestep-v15-turbo'
+const takes = join(stage, finalQuality ? 'takes' : 'drafts')
 await mkdir(takes, { recursive: true })
 
 async function call(path, payload) {
+  const multipart = payload instanceof FormData
   const response = await fetch(endpoint + path, {
     method: payload ? 'POST' : 'GET',
-    headers: { 'Content-Type': 'application/json' },
-    body: payload && JSON.stringify(payload),
+    headers: multipart ? undefined : { 'Content-Type': 'application/json' },
+    body: multipart ? payload : payload && JSON.stringify(payload),
     signal: AbortSignal.timeout(60_000),
   })
   if (!response.ok) throw new Error(`${path}: HTTP ${response.status} ${await response.text()}`)
@@ -36,6 +43,22 @@ async function call(path, payload) {
 const health = await call('/health')
 if (health.loaded_model !== model) {
   throw new Error(`Server has ${health.loaded_model} loaded; run ace-server.sh start ${profile}`)
+}
+if (finalQuality && health.llm_initialized) throw new Error('Final-quality renders need the LM disabled.')
+if (profile === 'arrangement') {
+  if (!brief.arrangement || !existsSync(join(stage, 'source.wav'))) {
+    throw new Error('Arrangement renders require a source-conditioned brief and prepared <stage>/source.wav.')
+  }
+  if (!Number.isFinite(brief.arrangement.strength) || brief.arrangement.strength <= 0 || brief.arrangement.strength > 1) {
+    throw new Error('Arrangement conditioning strength must be in (0, 1].')
+  }
+  sourceProvenance = JSON.parse(readFileSync(join(stage, 'source.json'), 'utf8'))
+  const digest = (path) => createHash('sha256').update(readFileSync(path)).digest('hex')
+  if (sourceProvenance.brief_sha256 !== digest(briefPath)
+      || sourceProvenance.source_sha256 !== digest(brief.arrangement.source)
+      || sourceProvenance.conditioning_sha256 !== digest(join(stage, 'source.wav'))) {
+    throw new Error('Arrangement source or brief changed; prepare conditioning again.')
+  }
 }
 if (profile === 'final') {
   if (health.llm_initialized) throw new Error('Final renders need the LM disabled (ace-server.sh start final).')
@@ -63,10 +86,16 @@ const common = {
 for (const seed of seeds) {
   const wav = join(takes, `${seed}.wav`)
   if (existsSync(wav)) {
+    if (profile === 'arrangement') {
+      const previous = JSON.parse(readFileSync(join(takes, `${seed}.request.json`), 'utf8'))
+      if (JSON.stringify(previous.source_provenance) !== JSON.stringify(sourceProvenance)) {
+        throw new Error(`seed ${seed}: existing take has stale source conditioning; use a fresh stage.`)
+      }
+    }
     console.log(`seed ${seed}: already rendered`)
     continue
   }
-  const request = profile === 'final'
+  const request = finalQuality
     ? {
         ...common,
         seed,
@@ -77,14 +106,31 @@ for (const seed of seeds) {
         shift: 1,
         dcw_enabled: false,
         thinking: false,
-        audio_code_string: readFileSync(join(stage, 'codes', `${seed}.codes.txt`), 'utf8').trim(),
+        ...(profile === 'arrangement'
+          ? {
+              task_type: 'cover',
+              src_audio_path: resolve(stage, 'source.wav'),
+              audio_cover_strength: brief.arrangement.strength,
+              source_provenance: sourceProvenance,
+            }
+          : { audio_code_string: readFileSync(join(stage, 'codes', `${seed}.codes.txt`), 'utf8').trim() }),
       }
     : { ...common, seed, model, inference_steps: 8, thinking: true }
   await writeFile(join(takes, `${seed}.request.json`), JSON.stringify(request, null, 2) + '\n')
-  const { task_id: id } = await call('/release_task', request)
+  const payload = { ...request }
+  delete payload.source_provenance
+  let submission = payload
+  if (profile === 'arrangement') {
+    const form = new FormData()
+    delete payload.src_audio_path
+    for (const [key, value] of Object.entries(payload)) form.set(key, String(value))
+    form.set('src_audio', new Blob([readFileSync(join(stage, 'source.wav'))], { type: 'audio/wav' }), 'source.wav')
+    submission = form
+  }
+  const { task_id: id } = await call('/release_task', submission)
   console.log(`seed ${seed}: queued ${id}`)
   // A final take takes ~6-8 min (≈5 s/step on M-series MPS + ~10 s VAE decode).
-  const deadline = Date.now() + (profile === 'final' ? 30 : 6) * 60_000
+  const deadline = Date.now() + (finalQuality ? 30 : 6) * 60_000
   let clip
   while (!clip) {
     if (Date.now() > deadline) throw new Error(`seed ${seed}: timed out`)

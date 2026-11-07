@@ -38,6 +38,9 @@ phases include sourced editorial judgments; they are not popularity rankings.
 
 ## Getting started
 
+For tool installation, agent/skill setup, and optional artwork and audio
+environments, see the [installation guide](./docs/INSTALLATION.md).
+
 Use Node.js 26, as specified in [package.json](./package.json).
 
 ```bash
@@ -78,7 +81,8 @@ assistant project-specific procedures, and specialized **agents** take
 responsibility for individual stages and handoffs. They guide work when
 invoked; they are not automatic pipelines. Deterministic validation and the
 human review or sign-off shown in each diagram remain explicit gates. Genre
-previews use a separate rendering script rather than the agent workflow.
+previews use dedicated `preview-briefer`, `preview-producer`, and `preview-reviewer` agents
+with the existing preview renderer, automated quality scoring and staged retake comparison.
 
 <details>
 <summary><strong>Music graph</strong> — research, enrichment, and source review</summary>
@@ -162,6 +166,7 @@ Previews use a separate renderer, not the seamless-loop pipeline. See the
 
 | Guide | Contents |
 |---|---|
+| [Installation](./docs/INSTALLATION.md) | Required and optional tools, agent/skill setup, local development, artwork, audio, and integrations |
 | [Explorer behavior](./docs/EXPLORER.md) | Views, navigation, gestures, loading transitions, dates, and prominence rendering |
 | [Audio](./docs/AUDIO.md) | Landing loop provenance, genre previews, and local generation |
 | [Data and contribution workflow](./docs/DATA.md) | Dataset scope, evidence, graph editing, and instrument artwork |

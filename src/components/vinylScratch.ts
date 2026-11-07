@@ -4,6 +4,7 @@ export const MAX_SCRATCH_RATE = 4
 const IDLE_RELEASE_MS = 60
 const RATE_SMOOTHING_SECONDS = 0.012
 const SAMPLE_SECONDS = 2.4
+const SIDE_CROSSFADE_SECONDS = 0.08
 
 /** Shortest signed angular difference in degrees, in (-180, 180]. */
 export function angleDelta(from: number, to: number) {
@@ -69,8 +70,12 @@ export interface ScratchDeck {
   hold: () => void
   scratch: (degPerSec: number) => void
   release: () => void
+  setLoop: (loop: string) => Promise<void>
   dispose: () => void
 }
+
+type LoopBuffers = { forward: AudioBuffer; reverse: AudioBuffer }
+type DeckVoice = { source: AudioBufferSourceNode; gain: GainNode }
 
 /** Public URL of a genre loop rendered by the loop pipeline (`public/loops/<slug>.wav`). */
 export function loopUrl(slug: string) {
@@ -78,7 +83,7 @@ export function loopUrl(slug: string) {
 }
 
 /** Creates a Web Audio deck whose sample position is driven by the record's motion. */
-export function createScratchDeck(onError?: (error: unknown) => void, loop = 'hip-hop'): ScratchDeck | null {
+export function createScratchDeck(onError?: (error: unknown) => void, loop = 'turntable-hip-hop'): ScratchDeck | null {
   const Context: AudioContextConstructor | undefined = globalThis.AudioContext
     ?? (globalThis as unknown as { webkitAudioContext?: AudioContextConstructor }).webkitAudioContext
   if (!Context) return null
@@ -93,8 +98,11 @@ export function createScratchDeck(onError?: (error: unknown) => void, loop = 'hi
   let playing = false
   let held = false
   let disposed = false
-  let loaded = false
-  let loading: Promise<void> | undefined
+  let selectedLoop = loop
+  let currentLoop: string | undefined
+  let playRequest = 0
+  let loading = false
+  const buffers = new Map<string, Promise<LoopBuffers>>()
   const download = new AbortController()
 
   const output = context.createGain()
@@ -104,7 +112,8 @@ export function createScratchDeck(onError?: (error: unknown) => void, loop = 'hi
   tone.frequency.value = 3200
   output.connect(tone).connect(context.destination)
 
-  let source: AudioBufferSourceNode | null = null
+  let voice: DeckVoice | null = null
+  const voices = new Set<DeckVoice>()
   let direction = 0
   let rate = 0
   let instantaneousRate = 0
@@ -135,16 +144,47 @@ export function createScratchDeck(onError?: (error: unknown) => void, loop = 'hi
     updatedAt = now
   }
 
-  const startSource = (nextDirection: number) => {
-    source?.stop()
-    source?.disconnect()
-    source = context.createBufferSource()
+  const stopVoices = () => {
+    for (const active of voices) {
+      active.source.stop()
+      active.source.disconnect()
+      active.gain.disconnect()
+    }
+    voices.clear()
+    voice = null
+  }
+
+  const startSource = (nextDirection: number, crossfade = false) => {
+    const now = context.currentTime
+    if (crossfade && voice) {
+      voice.gain.gain.cancelAndHoldAtTime(now)
+      voice.gain.gain.linearRampToValueAtTime(0, now + SIDE_CROSSFADE_SECONDS)
+      voice.source.stop(now + SIDE_CROSSFADE_SECONDS)
+    } else {
+      stopVoices()
+    }
+    const source = context.createBufferSource()
+    const gain = context.createGain()
+    const active = { source, gain }
+    voices.add(active)
+    voice = active
     source.buffer = nextDirection > 0 ? forward : reverse
     source.loop = true
-    source.playbackRate.value = 0
-    source.connect(output)
-    source.start(0, nextDirection > 0 ? position : (duration - position) % duration)
-    instantaneousRate = 0
+    source.playbackRate.value = crossfade ? Math.abs(instantaneousRate) : 0
+    gain.gain.value = crossfade ? 0 : 1
+    source.connect(gain).connect(output)
+    source.onended = () => {
+      source.disconnect()
+      gain.disconnect()
+      voices.delete(active)
+    }
+    source.start(now, nextDirection > 0 ? position : (duration - position) % duration)
+    if (crossfade) {
+      gain.gain.linearRampToValueAtTime(1, now + SIDE_CROSSFADE_SECONDS)
+      source.playbackRate.setTargetAtTime(Math.abs(rate), now, RATE_SMOOTHING_SECONDS)
+    } else {
+      instantaneousRate = 0
+    }
     direction = nextDirection
   }
 
@@ -155,48 +195,95 @@ export function createScratchDeck(onError?: (error: unknown) => void, loop = 'hi
     if (nextDirection !== 0 && nextDirection !== direction) startSource(nextDirection)
     rate = nextRate
     const now = context.currentTime
-    source?.playbackRate.setTargetAtTime(speed, now, RATE_SMOOTHING_SECONDS)
+    for (const active of voices) active.source.playbackRate.setTargetAtTime(speed, now, RATE_SMOOTHING_SECONDS)
     output.gain.setTargetAtTime(Math.min(1, speed * 1.4) * 0.8, now, speed > 0 ? 0.008 : 0.025)
+  }
+
+  const loadLoop = (slug: string) => {
+    let pending = buffers.get(slug)
+    if (!pending) {
+      pending = (async () => {
+        const response = await fetch(loopUrl(slug), { signal: download.signal })
+        if (!response.ok) throw new Error(`Unable to load the turntable loop: HTTP ${response.status}`)
+        const buffer = await context.decodeAudioData(await response.arrayBuffer())
+        if (!buffer.length || buffer.duration <= 0) throw new Error('The turntable loop is empty.')
+        const reversed = context.createBuffer(buffer.numberOfChannels, buffer.length, buffer.sampleRate)
+        for (let channel = 0; channel < buffer.numberOfChannels; channel += 1) {
+          reversed.getChannelData(channel).set(buffer.getChannelData(channel).slice().reverse())
+        }
+        return { forward: buffer, reverse: reversed }
+      })().catch((error: unknown) => {
+        buffers.delete(slug)
+        throw error
+      })
+      buffers.set(slug, pending)
+    }
+    return pending
+  }
+
+  const selectLoop = async () => {
+    while (!disposed && selectedLoop !== currentLoop) {
+      const slug = selectedLoop
+      let next: LoopBuffers
+      try {
+        next = await loadLoop(slug)
+      } catch (error) {
+        if (!disposed && selectedLoop !== slug) {
+          console.warn('Unable to load a superseded turntable loop.', error)
+          continue
+        }
+        throw error
+      }
+      if (disposed) return
+      if (selectedLoop !== slug) continue
+      if (currentLoop === slug) return
+      if (currentLoop && (next.forward.length !== forward.length || next.forward.sampleRate !== forward.sampleRate)) {
+        throw new Error('Turntable sides must have the same sample rate and exact loop length.')
+      }
+      advance()
+      const switching = currentLoop !== undefined
+      if (!switching) {
+        stopVoices()
+        direction = 0
+        rate = 0
+        instantaneousRate = 0
+        position = 0
+      }
+      forward = next.forward
+      reverse = next.reverse
+      duration = forward.duration
+      currentLoop = slug
+      tone.frequency.value = context.sampleRate / 2
+      if (switching && direction !== 0) startSource(direction, true)
+    }
   }
 
   return {
     activate,
+    async setLoop(slug) {
+      selectedLoop = slug
+      // Keep theme selection silent until the user has requested loop playback.
+      if (!currentLoop && !loading) return
+      await selectLoop()
+    },
     async play() {
       // Resume synchronously within the activating click, before downloading.
       const resumed = context.state === 'running' ? Promise.resolve() : context.resume()
-      if (!loaded && !loading) {
-        loading = (async () => {
-          const response = await fetch(loopUrl(loop), { signal: download.signal })
-          if (!response.ok) throw new Error(`Unable to load the turntable loop: HTTP ${response.status}`)
-          const buffer = await context.decodeAudioData(await response.arrayBuffer())
-          if (disposed) return
-          if (!buffer.length || buffer.duration <= 0) throw new Error('The turntable loop is empty.')
-          const reversed = context.createBuffer(buffer.numberOfChannels, buffer.length, buffer.sampleRate)
-          for (let channel = 0; channel < buffer.numberOfChannels; channel += 1) {
-            reversed.getChannelData(channel).set(buffer.getChannelData(channel).slice().reverse())
-          }
-          source?.stop()
-          source?.disconnect()
-          source = null
-          direction = 0
-          rate = 0
-          instantaneousRate = 0
-          position = 0
-          updatedAt = context.currentTime
-          forward = buffer
-          reverse = reversed
-          duration = buffer.duration
-          tone.frequency.value = context.sampleRate / 2
-          loaded = true
-        })().finally(() => { loading = undefined })
+      const request = ++playRequest
+      loading = true
+      try {
+        await Promise.all([resumed, selectLoop()])
+      } finally {
+        if (request === playRequest) loading = false
       }
-      await Promise.all([resumed, loading])
-      if (disposed) return
+      if (disposed || request !== playRequest) return
       playing = true
       clearTimeout(idleTimer)
       setRate(held ? 0 : 1)
     },
     pause() {
+      playRequest += 1
+      loading = false
       playing = false
       clearTimeout(idleTimer)
       setRate(0)
@@ -222,8 +309,8 @@ export function createScratchDeck(onError?: (error: unknown) => void, loop = 'hi
       disposed = true
       download.abort()
       clearTimeout(idleTimer)
-      source?.stop()
-      source?.disconnect()
+      stopVoices()
+      buffers.clear()
       void context.close().catch((error: unknown) => console.warn('Unable to close the vinyl audio.', error))
     },
   }

@@ -12,7 +12,7 @@ judges musical taste or genre authenticity (`loop-review`), and never edits brie
 ## Run
 
 ```sh
-PY=$ACESTEP_HOME/.venv/bin/python
+PY=${ACESTEP_HOME:-$HOME/Tools/ACE-Step-1.5}/.venv/bin/python
 V=.github/skills/loop-validate/scripts/check-loop.py
 node .github/skills/loop-brief/scripts/check-brief.mjs [scripts/loops/briefs/<slug>.json]     # brief lint
 $PY $V scripts/loops/briefs/<slug>.json $STAGE/takes/*.wav --takes --png-dir $STAGE/png     # take screening
@@ -41,6 +41,11 @@ the middle) are written for the reviewer; mention their paths.
 
 Reference: the shipped hip-hop loop measures length error 0.68 ms, tempo error 0.28 %, wrap ratio
 0.012, RMS −14.1 dBFS, bar CV 0.07, vocal band 0.022, high band −33.2 dB.
+
+Source-conditioned arrangements additionally FAIL on any frame-count or sample-rate difference
+from the brief's original source, or non-stereo/non-PCM16 output. They retain every existing
+threshold above. Phrase alignment and melody preservation belong to comparative `loop-review`,
+not just length, tempo or chroma checks.
 
 ## Rules
 

@@ -17,6 +17,8 @@
     "pause": "Pause",
     "playLoop": "Play the hip-hop loop",
     "pauseLoop": "Pause the hip-hop loop",
+    "playTrapLoop": "Play the trap loop",
+    "pauseTrapLoop": "Pause the trap loop",
     "loopError": "Audio could not play. Press Play to try again.",
     "headline": {
       "first": "Follow the",

@@ -104,10 +104,13 @@ export function finishPageLoading() {
       vinyl.style.removeProperty('width')
     }
     const trackDestination = () => {
-      const keyframes = dockingKeyframes()
-      animations.forEach((animation, index) => {
-        if (animation.effect instanceof KeyframeEffect) animation.effect.setKeyframes(keyframes[index])
-      })
+      // Replacing keyframes before the compositor starts can keep the movement pending indefinitely.
+      if (animations[1].startTime !== null) {
+        const keyframes = dockingKeyframes()
+        animations.forEach((animation, index) => {
+          if (animation.effect instanceof KeyframeEffect) animation.effect.setKeyframes(keyframes[index])
+        })
+      }
       frame = requestAnimationFrame(trackDestination)
     }
     frame = requestAnimationFrame(trackDestination)

@@ -4,6 +4,9 @@
 
 Paths in prose and commands are relative to the repository root.
 
+For prerequisites and installation steps, including agent/skill, artwork and
+audio tooling, see the [installation guide](./INSTALLATION.md).
+
 ## Commands
 
 ```bash

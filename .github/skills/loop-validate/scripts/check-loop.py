@@ -59,6 +59,11 @@ TAKE_RULES = [
     ("vocal_band_ratio", "<=", 0.08, "WARN"),
     ("high_band_db", ">=", -38.0, "WARN"),
 ]
+ARRANGEMENT_RULES = [
+    ("source_frame_error", "<=", 0, "FAIL"),
+    ("source_sample_rate_error", "<=", 0, "FAIL"),
+    ("pcm16_stereo_error", "<=", 0, "FAIL"),
+]
 
 
 def fitted_bpm(y):
@@ -114,6 +119,14 @@ def measure(path):
         "low_end_correlation": round(float(np.corrcoef(lowpass[0], lowpass[1])[0, 1]), 3),
     }
     if not takes_mode:
+        if brief.get("arrangement"):
+            source_info = sf.info(brief["arrangement"]["source"])
+            output_info = sf.info(path)
+            m |= {
+                "source_frame_error": abs(len(audio) - source_info.frames),
+                "source_sample_rate_error": abs(rate - source_info.samplerate),
+                "pcm16_stereo_error": int(output_info.subtype != "PCM_16" or output_info.channels != 2),
+            }
         expected = beats * 60 / brief["bpm"]
         bars = [float(np.sqrt(np.mean(p ** 2))) for p in np.array_split(mono, brief["bars"])]
         m |= {
@@ -143,7 +156,10 @@ def measure(path):
 
 def judge(m):
     findings = []
-    for metric, op, limit, severity in TAKE_RULES if takes_mode else LOOP_RULES:
+    rules = TAKE_RULES if takes_mode else LOOP_RULES
+    if not takes_mode and brief.get("arrangement"):
+        rules = rules + ARRANGEMENT_RULES
+    for metric, op, limit, severity in rules:
         value = m[metric]
         if not (value <= limit if op == "<=" else value >= limit):
             findings.append(f"{severity} {metric}={value} (needs {op} {limit})")

@@ -17,7 +17,9 @@ STAGE=${ARTWORK_STAGE_ROOT:-~/.cache/soundlines-artwork}/<slug>
 node $C                                  # whole set: coverage, orphans, generator drift
 node $C <slug> [<slug> ...] --png-dir $STAGE   # selected instruments + review sheets
 node $C --json                           # machine-readable findings
+node $C --require-render                 # fail if sharp is unavailable (used in CI)
 node .github/skills/artwork-brief/scripts/check-brief.mjs   # brief lint
+npx vitest run scripts/artwork/validation.test.ts src/components/InstrumentIcon.test.tsx
 ```
 
 Exit code 1 means at least one FAIL. Rendered checks and sheets use `sharp` (installed with Next); if it
@@ -42,6 +44,7 @@ detail-panel title, avatar, icon mask at 96/48/24/16 px in the family colour and
 | `monochrome`, `stroke` | FAIL/WARN | icon with colours, gradients, text, not `currentColor`; opacity or stroke outside 1.5–2 warns |
 | `coverage` | FAIL < 0.05 or > 0.6, WARN < 0.10 or > 0.45 | icon ink at 24 px (set 0.11–0.42, median 0.23) |
 | `extent` | FAIL < 12, WARN < 16 px | longest side of the inked icon box at 24 px (set 16–24, median 20) |
+| `overflow` | FAIL | ink outside the 24×24 icon canvas on a padded render → reframe the whole icon |
 | `text` | WARN | text outside the electronic family (only hardware panel labels are expected) |
 | `generator` | FAIL | a generated file differs from `generate-instrument-artwork.py --check` → edit the master, regenerate |
 | `family` | FAIL | the node's family has no colour in `src/theme.ts` → `graph-edit` |

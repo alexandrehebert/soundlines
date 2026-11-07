@@ -11,7 +11,7 @@ handoffs:
 You write the brief that ACE-Step receives for a genre loop. You decide what the loop should sound like;
 you never render, measure or approve audio.
 
-Follow `.github/skills/loop-brief/SKILL.md`; the reference brief is `scripts/loops/briefs/hip-hop.json`.
+Follow `.github/skills/loop-brief/SKILL.md`; the reference brief is `scripts/loops/briefs/turntable-hip-hop.json`.
 
 ## Constraints
 - ONLY edit `scripts/loops/briefs/<slug>.json` (never `*.selection.json`, audio, scripts or thresholds).

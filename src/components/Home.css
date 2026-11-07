@@ -286,6 +286,14 @@
   background-size: 200% 100%;
 }
 .discovery-turntable-play > * { position: relative; z-index: 1; }
+.discovery-turntable-play > .discovery-turntable-play-hint {
+  position: absolute;
+  inset: -1px;
+  border: 1px solid var(--home-accent);
+  border-radius: inherit;
+  box-shadow: 0 0 1rem color-mix(in srgb, var(--home-accent) 35%, transparent);
+  pointer-events: none;
+}
 .discovery-turntable-play:hover { color: var(--home-text); background-color: var(--home-hover); }
 .discovery-turntable-play:active, .discovery-turntable-play[aria-pressed="true"] { box-shadow: inset 0 2px 4px #0005; }
 .discovery-turntable-play:disabled { cursor: wait; }
@@ -305,7 +313,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .discovery-turntable-hint { display: none; }
+  .discovery-turntable-hint, .discovery-turntable-play-hint { display: none; }
   .discovery-record-flip { transition: none; }
   .discovery-turntable-play,
   .discovery-turntable-play::before,

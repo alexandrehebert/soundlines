@@ -18,9 +18,13 @@ finding to the owner.
 ## Procedure
 
 1. **Gate.** Run `loop-validate` (brief lint + loop mode). Any FAIL is blocking; do not continue judging.
-2. **Provenance.** `selection.json` names a take that exists in `$STAGE/takes`, `profile` is `final`,
-   and that take's `request.json` shows `acestep-v15-xl-sft`, 80 steps, guidance 7, ADG, `thinking`
-   false, a non-empty `audio_code_string`, and the brief's prompt verbatim. A mismatch is blocking.
+2. **Provenance.** `selection.json` names a take that exists in `$STAGE/takes`, `profile` is `final`
+   or `arrangement`, and that take's `request.json` shows `acestep-v15-xl-sft`, 80 steps, guidance 7,
+   ADG, `thinking` false and the brief's prompt verbatim. `final` requires a non-empty
+   `audio_code_string`. `arrangement` instead requires `task_type: cover`, the original source
+   checksum and exact frame count, source conditioning strength and phrase-aligned extraction.
+   Compare source and arrangement at the same position and require human confirmation of melody
+   preservation; tempo, key or chroma similarity alone is insufficient. A mismatch is blocking.
    Ignore `result.json.lm_model` (it shows the server's unloaded default, e.g. 0.6B, on final takes).
 3. **Spectrograms.** Open the loop PNG and the selected take PNG:
    - harmonic panel: wavy, gliding formant stacks = sung or spoken voice (blocking); dense noisy
