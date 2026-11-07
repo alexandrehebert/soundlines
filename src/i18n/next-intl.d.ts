@@ -1,4 +1,4 @@
-import type english from './locales/en-US.json'
+import type english from './locales/en.json'
 import type { Locale } from './routing.ts'
 
 declare module 'next-intl' {

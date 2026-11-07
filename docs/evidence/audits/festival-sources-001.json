@@ -1,0 +1,2064 @@
+{
+  "reviewedOn": "2026-11-07",
+  "rubric": {
+    "high": "Core claims are directly documented and corroborated by credible references, with historical scope stated. This is an editorial evidence grade, not a statistical probability.",
+    "medium": "A conventional/approximate date, conflicting chronology, weaker reference or contextual interpretation remains material to the entry.",
+    "low": "Important claims lack adequate support. Remove or narrow them before promotion; no entry is upgraded solely because its URL count increases.",
+    "sourceDiversity": "Multiple URLs or hostnames do not prove independence: operator pages, artist testimony, government/tourism promotion and archive metadata have different scopes. No automated percentage is assigned.",
+    "reviewMethod": "This pass used retrieved page text and indexed search excerpts/abstracts; full books, paywalled chapters and every cited PDF were not read in full. Reference-specific limitations are retained below."
+  },
+  "festivals": [
+    {
+      "id": "festival:glastonbury",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 2,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.glastonburyfestivals.co.uk/history/history-1970/",
+        "https://www.vam.ac.uk/articles/the-history-of-glastonbury-festival",
+        "https://en.wikipedia.org/wiki/Glastonbury_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": null,
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Glastonbury_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:montreux-jazz",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.montreuxjazzfestival.com/en/festival/about-montreux-jazz-festival/",
+        "https://www.unesco.org/fr/memory-world/montreux-jazz-festival-claude-nobs-legacy",
+        "https://en.wikipedia.org/wiki/Montreux_Jazz_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.unesco.org/fr/memory-world/montreux-jazz-festival-claude-nobs-legacy",
+        "publisher": "UNESCO",
+        "kind": "institutional archive",
+        "supports": "1967 creation and the preservation of concert recordings."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Montreux_Jazz_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:newport-jazz",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://newporthistory.org/history-bytes-the-1954-newport-jazz-festival-in-memory-of-george-wein/",
+        "https://www.loc.gov/preservation/conservators/bachbase/bbcsound/",
+        "https://en.wikipedia.org/wiki/Newport_Jazz_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.loc.gov/preservation/conservators/bachbase/bbcsound/",
+        "publisher": "Library of Congress",
+        "kind": "institutional archive",
+        "supports": "1954 organisation, subsequent broadcasts and preserved jazz recordings."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Newport_Jazz_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:roskilde",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 2,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.roskilde-festival.dk/en/news/jump-on-a-time-travel-through-the-stages",
+        "https://www.visitdenmark.com/denmark/plan-your-trip/roskilde-festival-northern-europes-largest-gdk619631",
+        "https://en.wikipedia.org/wiki/Roskilde_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": null,
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Roskilde_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:rock-in-rio",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.rockinrio.com/rio/pt-br/historia/",
+        "https://www.queenonline.com/live/1985",
+        "https://en.wikipedia.org/wiki/Rock_in_Rio"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.queenonline.com/live/1985",
+        "publisher": "Queen official archive",
+        "kind": "artist archive",
+        "supports": "Queen’s two Rock in Rio appearances in 1985; corroborates the original Brazilian edition."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Rock_in_Rio",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:womadelaide",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 2,
+      "sourceCount": 4,
+      "sources": [
+        "https://www.womadelaide.com.au/about/about",
+        "https://www.womadelaide.com.au/about/archive/1992",
+        "https://www.abc.net.au/news/2022-03-09/womadelaide-and-a-tree-celebrate-30-years-of-song-art-and-dance/100891304",
+        "https://en.wikipedia.org/wiki/WOMADelaide"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.abc.net.au/news/2022-03-09/womadelaide-and-a-tree-celebrate-30-years-of-song-art-and-dance/100891304",
+        "publisher": "Australian Broadcasting Corporation",
+        "kind": "reporting",
+        "supports": "1992 beginnings and subsequent Adelaide history."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/WOMADelaide",
+        "finding": "The 1992 first edition is consistent. Venue changes and the later standalone programme should not be read as evidence that every WOMAD event used Adelaide.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:fuji-rock",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 2,
+      "sourceCount": 4,
+      "sources": [
+        "https://fujirockfestival.com/history/1997",
+        "https://fujirockfestival.com/history/1999",
+        "https://www.japan.travel/id/id/experience-japan/887/",
+        "https://en.wikipedia.org/wiki/Fuji_Rock_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.japan.travel/id/id/experience-japan/887/",
+        "publisher": "Japan National Tourism Organization",
+        "kind": "tourism institution",
+        "supports": "1997 beginnings and the festival’s later Niigata/Naeba setting; not a programme witness."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Fuji_Rock_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:gnaoua-world-music",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.festival-gnaoua.net/en/organisation/",
+        "https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_3a642ad6-8cca-4230-bcd3-96635c041502?_=224698eng.pdf",
+        "https://en.wikipedia.org/wiki/Gnaoua_World_Music_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_3a642ad6-8cca-4230-bcd3-96635c041502?_=224698eng.pdf",
+        "publisher": "UNDP / UNESCO repository",
+        "kind": "institutional report",
+        "supports": "1998 launch and the Essaouira cultural platform."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Gnaoua_World_Music_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:cape-town-jazz",
+      "previousConfidence": "high",
+      "confidence": "medium",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://capetownjazzfest.com/history",
+        "https://oulitnet.co.za/klank/nsjf2.asp",
+        "https://en.wikipedia.org/wiki/Cape_Town_International_Jazz_Festival"
+      ],
+      "assessment": "The 2000 launch is corroborated, but the operator’s retrospective conflicts with contemporary 2004 reporting about the CTICC move. No precise move year is asserted in the node.",
+      "supplement": {
+        "url": "https://oulitnet.co.za/klank/nsjf2.asp",
+        "publisher": "LitNet",
+        "kind": "contemporary reporting",
+        "supports": "The 2004 festival’s move to CTICC and a fifth edition following the 2000 launch."
+      },
+      "removedReferences": [
+        "https://alpha.capetownjazzfest.com/history"
+      ],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Cape_Town_International_Jazz_Festival",
+        "finding": "Wikipedia’s chronology places the CTICC move in 2004, agreeing with contemporary reporting rather than the operator’s later 2005 account. The graph does not assert the disputed relocation year; Medium confidence is retained.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:petronio-alvarez",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.senalmemoria.co/articulos/el-petronio-alvarez-en-senal-memoria",
+        "https://riquezacompleta.javerianacali.edu.co/wp-content/uploads/RC_Petronio_guia_cultural.pdf",
+        "https://es.wikipedia.org/wiki/Festival_de_Música_del_Pacífico_Petronio_Álvarez"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://riquezacompleta.javerianacali.edu.co/wp-content/uploads/RC_Petronio_guia_cultural.pdf",
+        "publisher": "Pontificia Universidad Javeriana Cali",
+        "kind": "research publication",
+        "supports": "The festival’s 1997–2021 history; corroborates the period covered by the broadcasting archive."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://es.wikipedia.org/wiki/Festival_de_Música_del_Pacífico_Petronio_Álvarez",
+        "finding": "The Spanish article says 1996; the broadcasting archive and university history support a 1997 first edition. Retain 1997, distinguish earlier preparation from the first festival, and do not silently copy the Wikipedia date.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:woodstock",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://woodstock.com/about/",
+        "https://www.bethelwoodscenter.org/museum/woodstock-history",
+        "https://en.wikipedia.org/wiki/Woodstock"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.bethelwoodscenter.org/museum/woodstock-history",
+        "publisher": "Bethel Woods museum",
+        "kind": "museum history",
+        "supports": "The original 1969 gathering, its historic site and cultural context."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Woodstock",
+        "finding": "The article distinguishes scheduled 15–17 August from actual 15–18 August 1969. The graph already uses the bounded original 1969 gathering and its existing History entry.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:monterey-pop",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 2,
+      "sourceCount": 4,
+      "sources": [
+        "https://www.montereyinternationalpopfest.com/",
+        "https://janisjoplin.com/monterey/",
+        "https://www.loc.gov/static/programs/national-film-preservation-board/documents/Interview_Michelle-Phillips.pdf",
+        "https://en.wikipedia.org/wiki/Monterey_International_Pop_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.loc.gov/static/programs/national-film-preservation-board/documents/Interview_Michelle-Phillips.pdf",
+        "publisher": "Library of Congress",
+        "kind": "oral-history interview",
+        "supports": "The June 1967 Monterey gathering; participant testimony is identified as such."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Monterey_International_Pop_Festival",
+        "finding": "The article concerns the original June 1967 gathering. Preserve its bounded period and existing History event rather than duplicate that event.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:newport-folk",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://blogs.loc.gov/nls-music-notes/2019/07/on-this-day-in-history-of-rock-and-roll-and-folk-festivals-july-25-1965/",
+        "https://www.si.edu/object/archives/components/sova-cfch-davie-ref32",
+        "https://en.wikipedia.org/wiki/Newport_Folk_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.si.edu/object/archives/components/sova-cfch-davie-ref32",
+        "publisher": "Smithsonian Institution",
+        "kind": "photographic archive",
+        "supports": "Bob Dylan’s documented presence at Newport in 1965; not a founding-date source."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Newport_Folk_Festival",
+        "finding": "Wikipedia records interrupted activity and an update warning. Retain the 1959 first edition and use specific cited performances, not an uninterrupted yearly run.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:bayreuth",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.bayreuther-festspiele.de/en/festival/history/",
+        "https://sammlungen.theater.fu-berlin.de/objektdatenbank/s/theaterhistorische-sammlungen/item/435",
+        "https://en.wikipedia.org/wiki/Bayreuth_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://sammlungen.theater.fu-berlin.de/objektdatenbank/s/theaterhistorische-sammlungen/item/435",
+        "publisher": "Freie Universität Berlin",
+        "kind": "theatre collection",
+        "supports": "The Bayreuth Festspielhaus and its 1876 opening context."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Bayreuth_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:salzburg",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 2,
+      "sourceCount": 4,
+      "sources": [
+        "https://www.salzburgerfestspiele.at/en/about-us",
+        "https://www.salzburgerfestspiele.at/en/history-overview",
+        "https://www.salzburgerland.com/en/a-short-history-of-the-salzburg-festival/",
+        "https://en.wikipedia.org/wiki/Salzburg_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.salzburgerland.com/en/a-short-history-of-the-salzburg-festival/",
+        "publisher": "SalzburgerLand tourism",
+        "kind": "regional history",
+        "supports": "1920 founding and the development of opera, drama and concerts."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Salzburg_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:donaueschingen",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 2,
+      "sourceCount": 4,
+      "sources": [
+        "https://musikfreunde-donaueschingen.de/donaueschinger-musiktage",
+        "https://www.donaueschingen.de/Musiktage",
+        "https://epub.uni-regensburg.de/53046/",
+        "https://en.wikipedia.org/wiki/Donaueschingen_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://epub.uni-regensburg.de/53046/",
+        "publisher": "Universität Regensburg repository",
+        "kind": "scholarly publication record",
+        "supports": "Research on the festival’s 1921–1950 history; metadata/abstract, not access to the full book."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Donaueschingen_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:isle-of-wight",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://isleofwightfestival.com/info/history",
+        "https://www.reading.ac.uk/adlib/Details/collect/7315",
+        "https://en.wikipedia.org/wiki/Isle_of_Wight_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.reading.ac.uk/adlib/Details/collect/7315",
+        "publisher": "University of Reading / MERL",
+        "kind": "poster collection",
+        "supports": "A surviving 1970 festival poster and the contemporary gathering."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Isle_of_Wight_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:reading",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 2,
+      "sourceCount": 3,
+      "sources": [
+        "https://library.rockhall.com/greatest_festival_moments/reading_1992",
+        "https://media.reading.gov.uk/news/new-exhibition-at-reading-museum-celebrates-reading-festivals-50th-anniversary",
+        "https://en.wikipedia.org/wiki/Reading_and_Leeds_Festivals"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://media.reading.gov.uk/news/new-exhibition-at-reading-museum-celebrates-reading-festivals-50th-anniversary",
+        "publisher": "Reading Museum / Reading Borough Council",
+        "kind": "museum history",
+        "supports": "1961 Richmond precursor and 1971 arrival in Reading."
+      },
+      "removedReferences": [
+        "https://www.guinnessworldrecords.com/world-records/109747-first-pop-music-festival"
+      ],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Reading_and_Leeds_Festivals",
+        "finding": "Wikipedia covers both Reading and Leeds; the graph node is the Reading lineage. Retain the 1961 Richmond precursor and distinguish the 1971 Reading relocation and later Leeds branch.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:sonar",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 3,
+      "sourceCount": 3,
+      "sources": [
+        "https://sonar.es/es/about/ediciones-anteriores",
+        "https://www.accid.org/documents/cas_sonar.pdf",
+        "https://en.wikipedia.org/wiki/Sónar"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.accid.org/documents/cas_sonar.pdf",
+        "publisher": "ACCID / Universitat Internacional de Catalunya",
+        "kind": "academic case study",
+        "supports": "Barcelona’s festival from 1994 and the interaction of music, multimedia and innovation."
+      },
+      "removedReferences": [
+        "https://production-admin-portal.sonar.es/en/about/what-is-sonar",
+        "https://www.superstruct.com/our-network/sonar-barcelona"
+      ],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Sónar",
+        "finding": "The article includes a 2026 closure interpretation of an obituary-style announcement, while the checked operator archive advertises a 2027 edition. Do not infer permanent closure from this unresolved claim; the entry remains a historical account without upcoming-event guarantees.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:tomorrowland",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://belgium.tomorrowland.com/en/welcome/down-memory-lane/",
+        "https://www.brusselstimes.com/news/magazine/255362/tomorrowland-is-another-day",
+        "https://en.wikipedia.org/wiki/Tomorrowland_(festival)"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.brusselstimes.com/news/magazine/255362/tomorrowland-is-another-day",
+        "publisher": "The Brussels Times",
+        "kind": "reporting",
+        "supports": "2005 beginnings in Boom, named DJs and large themed production."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Tomorrowland_(festival)",
+        "finding": "Wikipedia’s infobox begins activity in 2004 but its body identifies the first edition in 2005. Retain the edition date 2005, not the planning year.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:movement-detroit",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/detroit-electronic-music-festival-movement",
+        "https://wdet.org/2020/10/09/the-motor-citys-techno-legacy-arrives-at-the-detroit-historical-museum/",
+        "https://en.wikipedia.org/wiki/Detroit_Electronic_Music_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://wdet.org/2020/10/09/the-motor-citys-techno-legacy-arrives-at-the-detroit-historical-museum/",
+        "publisher": "WDET public radio",
+        "kind": "reporting",
+        "supports": "The DEMF/Movement historical connection and the 2000 beginning."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Detroit_Electronic_Music_Festival",
+        "finding": "Wikipedia distinguishes the 2000 DEMF, 2003–2004 Movement, 2005 Fuse-In and the current producer’s Movement from 2006. The existing graph entry explicitly covers this festival lineage and does not assert one unchanged legal organisation.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:womad",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://petergabriel.com/release/live-at-womad-1982/",
+        "https://www.theguardian.com/culture/2022/jul/20/the-first-womad-festival-reviewed-archive-1982",
+        "https://en.wikipedia.org/wiki/World_of_Music,_Arts_and_Dance"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.theguardian.com/culture/2022/jul/20/the-first-womad-festival-reviewed-archive-1982",
+        "publisher": "The Guardian",
+        "kind": "contemporary review reprint",
+        "supports": "Contemporary report of the inaugural 1982 festival."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/World_of_Music,_Arts_and_Dance",
+        "finding": "Wikipedia dates organisation/planning to 1980 but the first festival to 1982. The graph period means first edition, so retain 1982.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:reggae-sunsplash",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://reggaesunsplashpreservationsociety.org/",
+        "https://www.jamaicaobserver.com/2022/05/19/the-birth-of-reggae-sunsplash/",
+        "https://en.wikipedia.org/wiki/Reggae_Sunsplash"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.jamaicaobserver.com/2022/05/19/the-birth-of-reggae-sunsplash/",
+        "publisher": "Jamaica Observer",
+        "kind": "reported oral history",
+        "supports": "1978 launch and the festival’s Jamaican concert platform; not proof of inventing dancehall."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Reggae_Sunsplash",
+        "finding": "The article records pauses, revivals and a 2020 virtual event and carries style/independence warnings. Retain the 1978 first edition and avoid uninterrupted-activity or dancehall-invention claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:fespam",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://fespam.cg/presentation/",
+        "https://www.ipsnews.net/1996/08/africa-music-rough-debut-for-biennial-musical-extravanganza/",
+        "https://fr.wikipedia.org/wiki/Festival_panafricain_de_musique"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.ipsnews.net/1996/08/africa-music-rough-debut-for-biennial-musical-extravanganza/",
+        "publisher": "Inter Press Service",
+        "kind": "contemporary reporting",
+        "supports": "The 1996 debut in Brazzaville; distinguishes the first edition from prior institutional planning."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://fr.wikipedia.org/wiki/Festival_panafricain_de_musique",
+        "finding": "The French article agrees on the 1996 first edition. Organisational planning and earlier Pan-African proposals do not replace the first-edition anchor.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:festival-au-desert",
+      "previousConfidence": "high",
+      "confidence": "medium",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.culanth.org/fieldsights/tourism-v-terrorism-le-festival-au-desert-tuareg-culture-and-the-malian-state",
+        "https://www.brandeis.edu/peacebuilding-arts/projects/impact/contributions/festival-in-desert.html",
+        "https://en.wikipedia.org/wiki/Festival_au_Désert"
+      ],
+      "assessment": "The 2001 beginning and exile are supported. Exact early sites and the changing scope of exile/touring activity are less securely bounded; the unofficial site is replaced by university/scholarly accounts.",
+      "supplement": {
+        "url": "https://www.brandeis.edu/peacebuilding-arts/projects/impact/contributions/festival-in-desert.html",
+        "publisher": "Brandeis University",
+        "kind": "participant conversation",
+        "supports": "2001 beginnings, Tuareg/Malian exchange and the festival’s peace-building context."
+      },
+      "removedReferences": [
+        "https://www.thefestivalinthedesert.com/"
+      ],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Festival_au_Désert",
+        "finding": "Wikipedia distinguishes original Malian editions in 2001–2012 from later exile/caravan activity. The graph’s institutional scope includes exile projects; do not describe an uninterrupted annual Malian concert or infer a fixed modern venue.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:sauti-za-busara",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://busaramusic.org/the-festival/",
+        "https://www.musicinafrica.net/magazine/call-artists-sauti-za-busara-2017",
+        "https://en.wikipedia.org/wiki/Sauti_za_Busara"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.musicinafrica.net/magazine/call-artists-sauti-za-busara-2017",
+        "publisher": "Music In Africa",
+        "kind": "dated industry report",
+        "supports": "2004 beginning and the 2016 interruption; reproduces organiser statements rather than independently proving impact figures."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Sauti_za_Busara",
+        "finding": "Wikipedia documents the 2016 cancellation and later activity; it does not by itself supply all founding/repertoire details. The 2004 anchor remains supported by operator and dated Music In Africa references.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:cosquin",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://aquicosquin.com.ar/linea-de-tiempo/",
+        "https://www.argentina.gob.ar/node/325785",
+        "https://en.wikipedia.org/wiki/Cosquín_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.argentina.gob.ar/node/325785",
+        "publisher": "Argentina Ministry of Culture",
+        "kind": "cultural history",
+        "supports": "Mercedes Sosa’s 1965 Cosquín appearance and its place in her career."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Cosquín_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:vina-del-mar",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.memoriachilena.gob.cl/602/w3-article-96432.html",
+        "https://radio.uchile.cl/2019/07/10/ricardo-garcia-alguna-calle-llevara-tu-nombre/",
+        "https://en.wikipedia.org/wiki/Viña_del_Mar_International_Song_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://radio.uchile.cl/2019/07/10/ricardo-garcia-alguna-calle-llevara-tu-nombre/",
+        "publisher": "Universidad de Chile radio",
+        "kind": "historical reporting",
+        "supports": "Ricardo García’s role in the song festival’s 1960 beginning; not the similarly named arts festival."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Viña_del_Mar_International_Song_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:rock-al-parque",
+      "previousConfidence": "high",
+      "confidence": "medium",
+      "previousSourceCount": 2,
+      "sourceCount": 4,
+      "sources": [
+        "https://rockalparque.gov.co/versiones/rock-al-parque-1995",
+        "https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/como-ha-sido-evolucion-de-rock-al-parque-desde-su-creacion-en-bogota",
+        "https://repository.udistrital.edu.co/bitstreams/21c745dc-8feb-47c4-b512-ee5ddd9167be/download",
+        "https://en.wikipedia.org/wiki/Rock_al_Parque"
+      ],
+      "assessment": "The 1995 launch and public-stage role are supported. Claims about a wider municipal cultural-policy model are historical interpretation rather than a measured causal result.",
+      "supplement": {
+        "url": "https://repository.udistrital.edu.co/bitstreams/21c745dc-8feb-47c4-b512-ee5ddd9167be/download",
+        "publisher": "Universidad Distrital repository",
+        "kind": "academic research",
+        "supports": "1995 first edition and civic context; interpretive conclusions remain contextual."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Rock_al_Parque",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:sawai-gandharva",
+      "previousConfidence": "high",
+      "confidence": "medium",
+      "previousSourceCount": 2,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.lib.uchicago.edu/e/su/southasia/record-news/trn2007.pdf",
+        "https://tourism.gov.in/sites/default/files/2021-05/Draft%20Final%20Report171108441%20Fairs%20FestivalsC41.pdf",
+        "https://en.wikipedia.org/wiki/Sawai_Gandharva_Bhimsen_Festival"
+      ],
+      "assessment": "1953 is corroborated by the collectors’ journal and a government-commissioned draft. The previously used promotional site contains inconsistent chronology; the draft also contains biographical errors, so retain medium confidence in the broader account.",
+      "supplement": {
+        "url": "https://tourism.gov.in/sites/default/files/2021-05/Draft%20Final%20Report171108441%20Fairs%20FestivalsC41.pdf",
+        "publisher": "India Ministry of Tourism / Kantar IMRB",
+        "kind": "draft research report",
+        "supports": "Pune and 1953 first edition. Draft status and inaccurate biographical wording limit this reference."
+      },
+      "removedReferences": [
+        "https://www.sawaigandharva.org/"
+      ],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Sawai_Gandharva_Bhimsen_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:java-jazz",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 2,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.javajazzfestival.com/history.php",
+        "https://www.antaranews.com/berita/27726/java-jazz-festival-seribu-musisi-dan-enam-spesial-show",
+        "https://en.wikipedia.org/wiki/Java_Jazz_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": null,
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Java_Jazz_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:coachella",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 2,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.coachella.com/past-festivals/",
+        "https://www.grammy.com/news/first-coachella-valley-music-festival-1999/",
+        "https://en.wikipedia.org/wiki/Coachella"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.grammy.com/news/first-coachella-valley-music-festival-1999/",
+        "publisher": "Recording Academy",
+        "kind": "historical reporting",
+        "supports": "9–10 October 1999 in Indio and the inaugural rock/electronic/alternative programme."
+      },
+      "removedReferences": [
+        "https://doc.coachella.com/"
+      ],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Coachella",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:lollapalooza",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://catalog.rockhall.com/rrhof-ais/Details/archive/110000155",
+        "https://iaspmjournal.net/index.php/IASPM_Journal/article/download/325/563",
+        "https://en.wikipedia.org/wiki/Lollapalooza"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://iaspmjournal.net/index.php/IASPM_Journal/article/download/325/563",
+        "publisher": "IASPM Journal",
+        "kind": "scholarly article",
+        "supports": "The 1991 launch and the revival of the touring rock-festival format."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Lollapalooza",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:sanremo",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.raicultura.it/amp/storia/foto/2020/01/Sanremo-86825077-9549-445f-b48e-e66ac0d90835.html",
+        "https://www.italia.it/en/liguria/things-to-do/sanremo-festival",
+        "https://en.wikipedia.org/wiki/Sanremo_Music_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://www.italia.it/en/liguria/things-to-do/sanremo-festival",
+        "publisher": "Italia.it / Italian tourism agency",
+        "kind": "institutional history",
+        "supports": "1951 casino beginning and postwar song/broadcast context."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Sanremo_Music_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:new-orleans-jazz-heritage",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.nojazzfest.com/history/",
+        "https://folkways.si.edu/news-and-press/remembering-george-wein",
+        "https://en.wikipedia.org/wiki/New_Orleans_Jazz_%26_Heritage_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://folkways.si.edu/news-and-press/remembering-george-wein",
+        "publisher": "Smithsonian Folkways",
+        "kind": "institutional remembrance",
+        "supports": "George Wein’s work on jazz/folk festivals and New Orleans’ festival model."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/New_Orleans_Jazz_%26_Heritage_Festival",
+        "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:wacken",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 2,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.wacken.de/freizeit-kultur/wacken-open-air",
+        "https://s.wacken.com/de/infos/historie/",
+        "https://en.wikipedia.org/wiki/Wacken_Open_Air"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": null,
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Wacken_Open_Air",
+        "finding": "Wikipedia distinguishes the 1989 idea from the first festival in 1990. Retain 1990.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:baalbeck",
+      "previousConfidence": "high",
+      "confidence": "high",
+      "previousSourceCount": 1,
+      "sourceCount": 3,
+      "sources": [
+        "https://www.baalbeck.org.lb/history/1000/",
+        "https://sursock.museum/sites/default/files/pdf/baalbek-exhibition_guide-en-web.pdf",
+        "https://en.wikipedia.org/wiki/Baalbeck_International_Festival"
+      ],
+      "assessment": "High: the stated founding/programme/location facts are corroborated by credible primary or institutional material. The account does not assert a measured influence score or an exclusive origin.",
+      "supplement": {
+        "url": "https://sursock.museum/sites/default/files/pdf/baalbek-exhibition_guide-en-web.pdf",
+        "publisher": "Sursock Museum",
+        "kind": "exhibition research",
+        "supports": "The 1956 festival and its role in Lebanese cultural institutions."
+      },
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Baalbeck_International_Festival",
+        "finding": "Wikipedia distinguishes 1955 organising/precursor activity from the named institution and committee in 1956. Retain the graph’s institutional 1956 anchor; do not collapse those different milestones.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:pythian-games",
+      "previousConfidence": null,
+      "confidence": "medium",
+      "previousSourceCount": 0,
+      "sourceCount": 5,
+      "sources": [
+        "https://www.ime.gr/olympics/ancient/en/otherg_pithia.html",
+        "https://delphi.culture.gr/archaelogical-site/site-history/",
+        "https://whc.unesco.org/en/list/393/",
+        "https://en.wikipedia.org/wiki/Pythian_Games",
+        "https://antiquitasviva.com/wp-content/uploads/2021/12/71.1-2.12.-jaric-j.-primary-written-records-as-a-source-for-cultural-change.pdf"
+      ],
+      "assessment": "Medium: the conventional reform date is not the first musical gathering. Later scholarship suggests games at Delphi were probably ongoing in 424 CE, contrary to the museum’s traditional 393/394 endpoint. The revised 424 display anchor is not a proven final edition.",
+      "supplement": null,
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Pythian_Games",
+        "finding": "Wikipedia cites continued celebration to at least 424 CE, conflicting with the museum’s traditional 393/394 cessation. Follow-up scholarship discusses Delphi games in 424 and says the Pythian games were probably ongoing. Use 424 as an approximate attestation anchor, not an established final edition; retain Medium confidence.",
+        "reviewedOn": "2026-11-07"
+      }
+    },
+    {
+      "id": "festival:three-choirs",
+      "previousConfidence": null,
+      "confidence": "medium",
+      "previousSourceCount": 0,
+      "sourceCount": 4,
+      "sources": [
+        "https://3choirs.org/about/history/",
+        "https://www.cambridge.org/core/books/abs/three-choirs-festival-a-history/origins/ECFAC2EDA97DFE4D9E6974900D65794B",
+        "https://www.rsmgb.org/news/from-the-archives-music-festivals",
+        "https://en.wikipedia.org/wiki/Three_Choirs_Festival"
+      ],
+      "assessment": "1715 is the conventional counting date, not a securely documented first meeting. The modern name dates to 1838 and operation was interrupted. Oldest-surviving-classical claims have a narrower scope than first music festival.",
+      "supplement": null,
+      "removedReferences": [],
+      "wikipediaReview": {
+        "url": "https://en.wikipedia.org/wiki/Three_Choirs_Festival",
+        "finding": "The article calls 1715 a believed first meeting and records later naming/history. Retain an estimated conventional date, not an exact first-ever festival or uninterrupted operation claim.",
+        "reviewedOn": "2026-11-07"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "festival_related:place-pilton-glastonbury",
+      "confidence": "high",
+      "sources": [
+        "https://www.vam.ac.uk/articles/the-history-of-glastonbury-festival"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-montreux-montreux-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://www.montreuxjazzfestival.com/en/festival/about-montreux-jazz-festival/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-newport-rhode-island-newport-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://newporthistory.org/history-bytes-the-1954-newport-jazz-festival-in-memory-of-george-wein/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-roskilde-roskilde",
+      "confidence": "high",
+      "sources": [
+        "https://www.visitdenmark.com/denmark/plan-your-trip/roskilde-festival-northern-europes-largest-gdk619631"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-rio-de-janeiro-rock-in-rio",
+      "confidence": "high",
+      "sources": [
+        "https://www.rockinrio.com/rio/pt-br/historia/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-adelaide-womadelaide",
+      "confidence": "high",
+      "sources": [
+        "https://www.womadelaide.com.au/about/about"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-naeba-fuji-rock",
+      "confidence": "high",
+      "sources": [
+        "https://fujirockfestival.com/history/1999"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-essaouira-gnaoua-world-music",
+      "confidence": "high",
+      "sources": [
+        "https://www.festival-gnaoua.net/en/organisation/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-cape-town-cape-town-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://capetownjazzfest.com/history"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-cali-petronio-alvarez",
+      "confidence": "high",
+      "sources": [
+        "https://www.senalmemoria.co/articulos/el-petronio-alvarez-en-senal-memoria"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-david-bowie-glastonbury",
+      "confidence": "high",
+      "sources": [
+        "https://www.glastonburyfestivals.co.uk/history/history-1971/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-ella-fitzgerald-montreux-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://www.montreuxjazzfestival.com/en/festival/about-montreux-jazz-festival/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-david-bowie-montreux-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://www.montreuxjazzfestival.com/en/festival/about-montreux-jazz-festival/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-ella-fitzgerald-newport-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://newporthistory.org/history-bytes-the-1954-newport-jazz-festival-in-memory-of-george-wein/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-dizzy-gillespie-newport-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://newporthistory.org/history-bytes-the-1954-newport-jazz-festival-in-memory-of-george-wein/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-bob-marley-roskilde",
+      "confidence": "high",
+      "sources": [
+        "https://www.roskilde-festival.dk/en/news/jump-on-a-time-travel-through-the-stages"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-nusrat-fateh-ali-khan-womadelaide",
+      "confidence": "high",
+      "sources": [
+        "https://www.womadelaide.com.au/about/archive/1992"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-youssou-ndour-womadelaide",
+      "confidence": "high",
+      "sources": [
+        "https://www.womadelaide.com.au/about/archive/1992"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-aphex-twin-fuji-rock",
+      "confidence": "high",
+      "sources": [
+        "https://fujirockfestival.com/history/1997"
+      ],
+      "assessment": "High for programme listing only. The 1997 archive includes announced acts and the festival suffered cancellation; this does not independently establish that every scheduled act performed."
+    },
+    {
+      "id": "festival_related:artist-massive-attack-fuji-rock",
+      "confidence": "high",
+      "sources": [
+        "https://fujirockfestival.com/history/1997"
+      ],
+      "assessment": "High for programme listing only. The 1997 archive includes announced acts and the festival suffered cancellation; this does not independently establish that every scheduled act performed."
+    },
+    {
+      "id": "festival_related:artist-the-prodigy-fuji-rock",
+      "confidence": "high",
+      "sources": [
+        "https://fujirockfestival.com/history/1997"
+      ],
+      "assessment": "High for programme listing only. The 1997 archive includes announced acts and the festival suffered cancellation; this does not independently establish that every scheduled act performed."
+    },
+    {
+      "id": "festival_related:artist-green-day-fuji-rock",
+      "confidence": "high",
+      "sources": [
+        "https://fujirockfestival.com/history/1997"
+      ],
+      "assessment": "High for programme listing only. The 1997 archive includes announced acts and the festival suffered cancellation; this does not independently establish that every scheduled act performed."
+    },
+    {
+      "id": "festival_related:genre-jazz-montreux-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://www.montreuxjazzfestival.com/en/festival/about-montreux-jazz-festival/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-soul-montreux-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://www.montreuxjazzfestival.com/en/festival/about-montreux-jazz-festival/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-blues-montreux-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://www.montreuxjazzfestival.com/en/festival/about-montreux-jazz-festival/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-jazz-newport-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://newporthistory.org/history-bytes-the-1954-newport-jazz-festival-in-memory-of-george-wein/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-gnawa-gnaoua-world-music",
+      "confidence": "high",
+      "sources": [
+        "https://www.festival-gnaoua.net/en/organisation/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-jazz-cape-town-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://capetownjazzfest.com/history"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:event-essaouira-gnawa-festival-gnaoua-world-music",
+      "confidence": "high",
+      "sources": [
+        "https://www.festival-gnaoua.net/en/organisation/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-bethel-woodstock",
+      "confidence": "high",
+      "sources": [
+        "https://woodstock.com/about/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-monterey-monterey-pop",
+      "confidence": "high",
+      "sources": [
+        "https://www.montereyinternationalpopfest.com/",
+        "https://janisjoplin.com/monterey/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-newport-rhode-island-newport-folk",
+      "confidence": "high",
+      "sources": [
+        "https://blogs.loc.gov/nls-music-notes/2019/07/on-this-day-in-history-of-rock-and-roll-and-folk-festivals-july-25-1965/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-bayreuth-bayreuth",
+      "confidence": "high",
+      "sources": [
+        "https://www.bayreuther-festspiele.de/en/festival/history/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-salzburg-salzburg",
+      "confidence": "high",
+      "sources": [
+        "https://www.salzburgerfestspiele.at/en/about-us",
+        "https://www.salzburgerfestspiele.at/en/history-overview"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-donaueschingen-donaueschingen",
+      "confidence": "high",
+      "sources": [
+        "https://musikfreunde-donaueschingen.de/donaueschinger-musiktage",
+        "https://www.donaueschingen.de/Musiktage"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-isle-of-wight-isle-of-wight",
+      "confidence": "high",
+      "sources": [
+        "https://isleofwightfestival.com/info/history"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-reading-reading",
+      "confidence": "high",
+      "sources": [
+        "https://media.reading.gov.uk/news/new-exhibition-at-reading-museum-celebrates-reading-festivals-50th-anniversary",
+        "https://library.rockhall.com/greatest_festival_moments/reading_1992"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-barcelona-sonar",
+      "confidence": "high",
+      "sources": [
+        "https://sonar.es/es/about/ediciones-anteriores",
+        "https://www.accid.org/documents/cas_sonar.pdf"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-boom-tomorrowland",
+      "confidence": "high",
+      "sources": [
+        "https://belgium.tomorrowland.com/en/welcome/down-memory-lane/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-detroit-movement-detroit",
+      "confidence": "high",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/detroit-electronic-music-festival-movement"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-shepton-mallet-womad",
+      "confidence": "high",
+      "sources": [
+        "https://petergabriel.com/release/live-at-womad-1982/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-montego-bay-reggae-sunsplash",
+      "confidence": "high",
+      "sources": [
+        "https://reggaesunsplashpreservationsociety.org/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-brazzaville-fespam",
+      "confidence": "high",
+      "sources": [
+        "https://fespam.cg/presentation/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-northern-mali-festival-au-desert",
+      "confidence": "high",
+      "sources": [
+        "https://www.brandeis.edu/peacebuilding-arts/projects/impact/contributions/festival-in-desert.html",
+        "https://www.culanth.org/fieldsights/tourism-v-terrorism-le-festival-au-desert-tuareg-culture-and-the-malian-state"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-zanzibar-sauti-za-busara",
+      "confidence": "high",
+      "sources": [
+        "https://busaramusic.org/the-festival/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-cosquin-cosquin",
+      "confidence": "high",
+      "sources": [
+        "https://aquicosquin.com.ar/linea-de-tiempo/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-vina-del-mar-vina-del-mar",
+      "confidence": "high",
+      "sources": [
+        "https://www.memoriachilena.gob.cl/602/w3-article-96432.html"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-bogota-rock-al-parque",
+      "confidence": "high",
+      "sources": [
+        "https://rockalparque.gov.co/versiones/rock-al-parque-1995",
+        "https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/como-ha-sido-evolucion-de-rock-al-parque-desde-su-creacion-en-bogota"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-pune-sawai-gandharva",
+      "confidence": "high",
+      "sources": [
+        "https://www.lib.uchicago.edu/e/su/southasia/record-news/trn2007.pdf",
+        "https://tourism.gov.in/sites/default/files/2021-05/Draft%20Final%20Report171108441%20Fairs%20FestivalsC41.pdf"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-jakarta-java-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://www.javajazzfestival.com/history.php",
+        "https://www.antaranews.com/berita/27726/java-jazz-festival-seribu-musisi-dan-enam-spesial-show"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-indio-coachella",
+      "confidence": "high",
+      "sources": [
+        "https://www.coachella.com/past-festivals/",
+        "https://www.grammy.com/news/first-coachella-valley-music-festival-1999/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-chicago-lollapalooza",
+      "confidence": "high",
+      "sources": [
+        "https://catalog.rockhall.com/rrhof-ais/Details/archive/110000155"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-sanremo-sanremo",
+      "confidence": "high",
+      "sources": [
+        "https://www.raicultura.it/amp/storia/foto/2020/01/Sanremo-86825077-9549-445f-b48e-e66ac0d90835.html"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-new-orleans-new-orleans-jazz-heritage",
+      "confidence": "high",
+      "sources": [
+        "https://www.nojazzfest.com/history/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-wacken-wacken",
+      "confidence": "high",
+      "sources": [
+        "https://www.wacken.de/freizeit-kultur/wacken-open-air",
+        "https://s.wacken.com/de/infos/historie/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-baalbeck-baalbeck",
+      "confidence": "high",
+      "sources": [
+        "https://www.baalbeck.org.lb/history/1000/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-jimi-hendrix-woodstock",
+      "confidence": "high",
+      "sources": [
+        "https://woodstock.com/about/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-the-who-woodstock",
+      "confidence": "high",
+      "sources": [
+        "https://woodstock.com/about/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-jimi-hendrix-monterey-pop",
+      "confidence": "high",
+      "sources": [
+        "https://www.montereyinternationalpopfest.com/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-ravi-shankar-monterey-pop",
+      "confidence": "high",
+      "sources": [
+        "https://www.montereyinternationalpopfest.com/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-otis-redding-monterey-pop",
+      "confidence": "high",
+      "sources": [
+        "https://www.montereyinternationalpopfest.com/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-the-who-monterey-pop",
+      "confidence": "high",
+      "sources": [
+        "https://www.montereyinternationalpopfest.com/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-bob-dylan-newport-folk",
+      "confidence": "high",
+      "sources": [
+        "https://blogs.loc.gov/nls-music-notes/2019/07/on-this-day-in-history-of-rock-and-roll-and-folk-festivals-july-25-1965/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-joan-baez-newport-folk",
+      "confidence": "high",
+      "sources": [
+        "https://blogs.loc.gov/nls-music-notes/2019/07/on-this-day-in-history-of-rock-and-roll-and-folk-festivals-july-25-1965/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-jimi-hendrix-isle-of-wight",
+      "confidence": "high",
+      "sources": [
+        "https://isleofwightfestival.com/info/history"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-the-who-isle-of-wight",
+      "confidence": "high",
+      "sources": [
+        "https://isleofwightfestival.com/info/history"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-joan-baez-isle-of-wight",
+      "confidence": "high",
+      "sources": [
+        "https://isleofwightfestival.com/info/history"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-nirvana-reading",
+      "confidence": "high",
+      "sources": [
+        "https://library.rockhall.com/greatest_festival_moments/reading_1992"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-armin-van-buuren-tomorrowland",
+      "confidence": "high",
+      "sources": [
+        "https://belgium.tomorrowland.com/en/welcome/down-memory-lane/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-nine-inch-nails-lollapalooza",
+      "confidence": "high",
+      "sources": [
+        "https://catalog.rockhall.com/rrhof-ais/Details/archive/110000155"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-duke-ellington-new-orleans-jazz-heritage",
+      "confidence": "high",
+      "sources": [
+        "https://www.nojazzfest.com/history/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-bi-kidude-sauti-za-busara",
+      "confidence": "high",
+      "sources": [
+        "https://busaramusic.org/the-festival/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-massive-attack-baalbeck",
+      "confidence": "high",
+      "sources": [
+        "https://www.baalbeck.org.lb/history/1000/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-mozart-salzburg",
+      "confidence": "high",
+      "sources": [
+        "https://www.salzburgerfestspiele.at/en/about-us"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-carl-craig-movement-detroit",
+      "confidence": "high",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/detroit-electronic-music-festival-movement"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-derrick-may-movement-detroit",
+      "confidence": "high",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/detroit-electronic-music-festival-movement"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-bhimsen-joshi-sawai-gandharva",
+      "confidence": "high",
+      "sources": [
+        "https://www.lib.uchicago.edu/e/su/southasia/record-news/trn2007.pdf"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-fairuz-baalbeck",
+      "confidence": "high",
+      "sources": [
+        "https://www.baalbeck.org.lb/history/1000/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-folk-newport-folk",
+      "confidence": "high",
+      "sources": [
+        "https://blogs.loc.gov/nls-music-notes/2019/07/on-this-day-in-history-of-rock-and-roll-and-folk-festivals-july-25-1965/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:instrument-electric-guitar-newport-folk",
+      "confidence": "high",
+      "sources": [
+        "https://www.pbs.org/opb/historydetectives/investigation/bob-dylan-guitar/index.html"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:track-like-a-rolling-stone-bob-dylan-newport-folk",
+      "confidence": "high",
+      "sources": [
+        "https://blogs.loc.gov/nls-music-notes/2019/07/on-this-day-in-history-of-rock-and-roll-and-folk-festivals-july-25-1965/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-modern-classical-donaueschingen",
+      "confidence": "medium",
+      "sources": [
+        "https://musikfreunde-donaueschingen.de/donaueschinger-musiktage"
+      ],
+      "assessment": "Medium: contemporary/advanced composition is documented; mapping the festival’s changing repertoire to the catalogue’s broad modern-classical node is editorial."
+    },
+    {
+      "id": "festival_related:genre-edm-tomorrowland",
+      "confidence": "medium",
+      "sources": [
+        "https://belgium.tomorrowland.com/en/welcome/down-memory-lane/"
+      ],
+      "assessment": "Medium: the programme supports electronic dance music broadly; mapping the whole festival to the catalogue’s EDM umbrella is editorial and does not describe every set."
+    },
+    {
+      "id": "festival_related:genre-detroit-techno-movement-detroit",
+      "confidence": "high",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/detroit-electronic-music-festival-movement"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-reggae-reggae-sunsplash",
+      "confidence": "high",
+      "sources": [
+        "https://reggaesunsplashpreservationsociety.org/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-dancehall-reggae-sunsplash",
+      "confidence": "medium",
+      "sources": [
+        "https://reggaesunsplashpreservationsociety.org/"
+      ],
+      "assessment": "Medium: the preservation society makes broad claims about dancehall’s relationship to the festival. This is a contextual association, not proof of genre invention."
+    },
+    {
+      "id": "festival_related:genre-taarab-sauti-za-busara",
+      "confidence": "high",
+      "sources": [
+        "https://busaramusic.org/the-festival/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-rock-rock-al-parque",
+      "confidence": "high",
+      "sources": [
+        "https://rockalparque.gov.co/versiones/rock-al-parque-1995"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-hindustani-classical-sawai-gandharva",
+      "confidence": "high",
+      "sources": [
+        "https://www.lib.uchicago.edu/e/su/southasia/record-news/trn2007.pdf",
+        "https://tourism.gov.in/sites/default/files/2021-05/Draft%20Final%20Report171108441%20Fairs%20FestivalsC41.pdf"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-jazz-java-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://www.antaranews.com/berita/27726/java-jazz-festival-seribu-musisi-dan-enam-spesial-show"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-alternative-rock-lollapalooza",
+      "confidence": "high",
+      "sources": [
+        "https://catalog.rockhall.com/rrhof-ais/Details/archive/110000155"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-jazz-new-orleans-jazz-heritage",
+      "confidence": "high",
+      "sources": [
+        "https://www.nojazzfest.com/history/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:genre-heavy-metal-wacken",
+      "confidence": "high",
+      "sources": [
+        "https://www.wacken.de/freizeit-kultur/wacken-open-air"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:scene-new-orleans-jazz-scene-new-orleans-jazz-heritage",
+      "confidence": "high",
+      "sources": [
+        "https://www.nojazzfest.com/history/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:festival-womadelaide-womad",
+      "confidence": "high",
+      "sources": [
+        "https://www.womadelaide.com.au/about/archive/1992"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:event-woodstock-festival-woodstock",
+      "confidence": "high",
+      "sources": [
+        "https://woodstock.com/about/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:event-monterey-pop-festival-monterey-pop",
+      "confidence": "high",
+      "sources": [
+        "https://www.montereyinternationalpopfest.com/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-delphi-pythian-games",
+      "confidence": "high",
+      "sources": [
+        "https://www.ime.gr/olympics/ancient/en/otherg_pithia.html",
+        "https://delphi.culture.gr/archaelogical-site/site-history/",
+        "https://whc.unesco.org/en/list/393/"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-gloucester-three-choirs",
+      "confidence": "high",
+      "sources": [
+        "https://3choirs.org/about/history/",
+        "https://www.cambridge.org/core/books/abs/three-choirs-festival-a-history/origins/ECFAC2EDA97DFE4D9E6974900D65794B"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-worcester-three-choirs",
+      "confidence": "high",
+      "sources": [
+        "https://3choirs.org/about/history/",
+        "https://www.cambridge.org/core/books/abs/three-choirs-festival-a-history/origins/ECFAC2EDA97DFE4D9E6974900D65794B"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:place-hereford-three-choirs",
+      "confidence": "high",
+      "sources": [
+        "https://3choirs.org/about/history/",
+        "https://www.cambridge.org/core/books/abs/three-choirs-festival-a-history/origins/ECFAC2EDA97DFE4D9E6974900D65794B"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:artist-handel-three-choirs",
+      "confidence": "high",
+      "sources": [
+        "https://www.cambridge.org/core/books/abs/three-choirs-festival-a-history/jubilee/D84B27B1CA042340DE02F611684DA7A0"
+      ],
+      "assessment": "High: the cited note is limited to a documented programme, location, repertoire, institutional affiliation or explicitly attributed context; it is not musical ancestry."
+    },
+    {
+      "id": "festival_related:event-pythian-games-panhellenic-reorganisation-festival-pythian-games",
+      "confidence": "high",
+      "sources": [
+        "https://www.ime.gr/olympics/ancient/en/otherg_pithia.html",
+        "https://delphi.culture.gr/archaelogical-site/site-history/",
+        "https://whc.unesco.org/en/list/393/",
+        "https://en.wikipedia.org/wiki/Pythian_Games"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-three-choirs-music-meetings-festival-three-choirs",
+      "confidence": "high",
+      "sources": [
+        "https://3choirs.org/about/history/",
+        "https://www.cambridge.org/core/books/abs/three-choirs-festival-a-history/origins/ECFAC2EDA97DFE4D9E6974900D65794B",
+        "https://www.rsmgb.org/news/from-the-archives-music-festivals",
+        "https://en.wikipedia.org/wiki/Three_Choirs_Festival"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-bayreuth-complete-ring-premiere-festival-bayreuth",
+      "confidence": "high",
+      "sources": [
+        "https://www.bayreuther-festspiele.de/en/festival/history/",
+        "https://www.staatsoper.de/stuecke/die-walkuere",
+        "https://en.wikipedia.org/wiki/Bayreuth_Festival"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-donaueschingen-contemporary-music-forum-festival-donaueschingen",
+      "confidence": "high",
+      "sources": [
+        "https://musikfreunde-donaueschingen.de/donaueschinger-musiktage",
+        "https://www.donaueschingen.de/Musiktage",
+        "https://epub.uni-regensburg.de/53046/",
+        "https://en.wikipedia.org/wiki/Donaueschingen_Festival"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-sanremo-first-radio-song-contest-festival-sanremo",
+      "confidence": "high",
+      "sources": [
+        "https://www.raicultura.it/amp/storia/foto/2020/01/Sanremo-86825077-9549-445f-b48e-e66ac0d90835.html",
+        "https://www.italia.it/en/liguria/things-to-do/sanremo-festival",
+        "https://en.wikipedia.org/wiki/Sanremo_Music_Festival"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-ellington-newport-1956-festival-newport-jazz",
+      "confidence": "high",
+      "sources": [
+        "https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/Duke-Ellington-at-Newport_Nass.pdf",
+        "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/registry-by-induction-years/2022/",
+        "https://en.wikipedia.org/wiki/Newport_Jazz_Festival"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-dylan-electric-newport-1965-festival-newport-folk",
+      "confidence": "high",
+      "sources": [
+        "https://blogs.loc.gov/nls-music-notes/2019/07/on-this-day-in-history-of-rock-and-roll-and-folk-festivals-july-25-1965/",
+        "https://library.rockhall.com/greatest_festival_moments/newport_folk_1965",
+        "https://en.wikipedia.org/wiki/Newport_Folk_Festival"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-mercedes-sosa-cosquin-breakthrough-festival-cosquin",
+      "confidence": "high",
+      "sources": [
+        "https://aquicosquin.com.ar/linea-de-tiempo/",
+        "https://www.argentina.gob.ar/node/325785",
+        "https://en.wikipedia.org/wiki/Cosquín_Festival"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-cecilia-vina-benidorm-exchange-festival-vina-del-mar",
+      "confidence": "high",
+      "sources": [
+        "https://www.memoriachilena.gob.cl/602/w3-article-96432.html",
+        "https://en.wikipedia.org/wiki/Viña_del_Mar_International_Song_Festival"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-fairuz-baalbeck-1957-festival-baalbeck",
+      "confidence": "high",
+      "sources": [
+        "https://www.aub.edu.lb/doctorates/recipients/Pages/fairuz-profile.aspx",
+        "https://www.baalbeck.org.lb/history/1000/",
+        "https://en.wikipedia.org/wiki/Baalbeck_International_Festival"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-reggae-sunsplash-launch-festival-reggae-sunsplash",
+      "confidence": "high",
+      "sources": [
+        "https://reggaesunsplashpreservationsociety.org/",
+        "https://www.jamaicaobserver.com/2022/05/19/the-birth-of-reggae-sunsplash/",
+        "https://en.wikipedia.org/wiki/Reggae_Sunsplash"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-womad-first-international-music-festival-festival-womad",
+      "confidence": "high",
+      "sources": [
+        "https://petergabriel.com/release/live-at-womad-1982/",
+        "https://www.theguardian.com/culture/2022/jul/20/the-first-womad-festival-reviewed-archive-1982",
+        "https://en.wikipedia.org/wiki/World_of_Music,_Arts_and_Dance"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-rock-in-rio-first-edition-festival-rock-in-rio",
+      "confidence": "high",
+      "sources": [
+        "https://www.rockinrio.com/rio/pt-br/historia/",
+        "https://www.queenonline.com/live/1985",
+        "https://en.wikipedia.org/wiki/Rock_in_Rio"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-rock-al-parque-public-rock-stage-festival-rock-al-parque",
+      "confidence": "high",
+      "sources": [
+        "https://rockalparque.gov.co/versiones/rock-al-parque-1995",
+        "https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/como-ha-sido-evolucion-de-rock-al-parque-desde-su-creacion-en-bogota",
+        "https://repository.udistrital.edu.co/bitstreams/21c745dc-8feb-47c4-b512-ee5ddd9167be/download",
+        "https://en.wikipedia.org/wiki/Rock_al_Parque"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-detroit-electronic-music-festival-launch-festival-movement-detroit",
+      "confidence": "high",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/detroit-electronic-music-festival-movement",
+        "https://wdet.org/2020/10/09/the-motor-citys-techno-legacy-arrives-at-the-detroit-historical-museum/",
+        "https://en.wikipedia.org/wiki/Detroit_Electronic_Music_Festival"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-daft-punk-coachella-pyramid-festival-coachella",
+      "confidence": "high",
+      "sources": [
+        "https://library.rockhall.com/greatest_festival_moments/coachella_2006",
+        "https://www.grammy.com/news/record-daft-punk-discovery-album-20-year-anniversary/",
+        "https://en.wikipedia.org/wiki/Coachella"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-glastonbury-first-pyramid-stage-festival-glastonbury",
+      "confidence": "high",
+      "sources": [
+        "https://www.glastonburyfestivals.co.uk/history/history-1971/",
+        "https://www.vam.ac.uk/articles/the-history-of-glastonbury-festival",
+        "https://en.wikipedia.org/wiki/Glastonbury_Festival"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-petronio-alvarez-public-pacific-music-platform-festival-petronio-alvarez",
+      "confidence": "high",
+      "sources": [
+        "https://www.senalmemoria.co/articulos/el-petronio-alvarez-en-senal-memoria",
+        "https://riquezacompleta.javerianacali.edu.co/wp-content/uploads/RC_Petronio_guia_cultural.pdf",
+        "https://es.wikipedia.org/wiki/Festival_de_Música_del_Pacífico_Petronio_Álvarez"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-new-orleans-jazz-heritage-launch-festival-new-orleans-jazz-heritage",
+      "confidence": "high",
+      "sources": [
+        "https://www.nojazzfest.com/history/",
+        "https://folkways.si.edu/news-and-press/remembering-george-wein",
+        "https://en.wikipedia.org/wiki/New_Orleans_Jazz_%26_Heritage_Festival"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-lollapalooza-alternative-music-tour-festival-lollapalooza",
+      "confidence": "high",
+      "sources": [
+        "https://catalog.rockhall.com/rrhof-ais/Details/archive/110000155",
+        "https://iaspmjournal.net/index.php/IASPM_Journal/article/download/325/563",
+        "https://en.wikipedia.org/wiki/Lollapalooza"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    },
+    {
+      "id": "festival_related:event-sonar-electronic-music-multimedia-launch-festival-sonar",
+      "confidence": "high",
+      "sources": [
+        "https://sonar.es/es/about/ediciones-anteriores",
+        "https://www.accid.org/documents/cas_sonar.pdf",
+        "https://en.wikipedia.org/wiki/Sónar"
+      ],
+      "assessment": "High for the documented association between this dated History event and its festival institution. Event confidence and editorial significance remain separate."
+    }
+  ],
+  "retiredReferences": [
+    {
+      "url": "https://alpha.capetownjazzfest.com/history",
+      "replacement": "https://capetownjazzfest.com/history",
+      "reason": "Use the canonical operator URL; this is not a new independent source."
+    },
+    {
+      "url": "https://www.guinnessworldrecords.com/world-records/109747-first-pop-music-festival",
+      "replacement": "https://media.reading.gov.uk/news/new-exhibition-at-reading-museum-celebrates-reading-festivals-50th-anniversary",
+      "reason": "Prefer the museum’s account of the 1961 precursor and 1971 relocation; avoid unqualified first-pop-festival framing."
+    },
+    {
+      "url": "https://production-admin-portal.sonar.es/en/about/what-is-sonar",
+      "replacement": "https://www.accid.org/documents/cas_sonar.pdf",
+      "reason": "Replace a production-admin endpoint with an academic case study; operator material is not independent corroboration."
+    },
+    {
+      "url": "https://www.superstruct.com/our-network/sonar-barcelona",
+      "replacement": "https://www.accid.org/documents/cas_sonar.pdf",
+      "reason": "The owner and festival are related publishers; replace duplicate promotional support with academic research."
+    },
+    {
+      "url": "https://www.sawaigandharva.org/",
+      "replacement": "https://tourism.gov.in/sites/default/files/2021-05/Draft%20Final%20Report171108441%20Fairs%20FestivalsC41.pdf",
+      "reason": "The previously used site has internally inconsistent chronology. The replacement draft is explicitly limited and does not justify automatic high confidence."
+    },
+    {
+      "url": "https://doc.coachella.com/",
+      "replacement": "https://www.grammy.com/news/first-coachella-valley-music-festival-1999/",
+      "reason": "The documentary endpoint was not retrievable in this audit; the Recording Academy article directly supports the retained inaugural claims."
+    },
+    {
+      "url": "https://www.thefestivalinthedesert.com/",
+      "replacement": "https://www.brandeis.edu/peacebuilding-arts/projects/impact/contributions/festival-in-desert.html",
+      "reason": "The dedicated site links onward to the official site and is not itself the organiser. Prefer university and anthropological accounts."
+    }
+  ]
+}

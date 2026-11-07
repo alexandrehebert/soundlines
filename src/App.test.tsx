@@ -56,7 +56,7 @@ function render(
 
 describe('Explorer header statistics', () => {
   it.each([
-    ['en-US', '/en'],
+    ['en', '/en'],
     ['fr', '/fr'],
   ] as const)('uses the public %s locale prefix for the home link', (locale, prefix) => {
     const markup = render(graph, <Explorer />, null, 'genre', locale)
@@ -244,7 +244,7 @@ describe('landing view transition', () => {
   })
 
   it.each([
-    ['en-US', '/en'],
+    ['en', '/en'],
     ['fr', '/fr'],
   ] as const)('uses the public %s locale prefix for landing links', (locale, prefix) => {
     const markup = render(graph, <Home />, null, 'genre', locale)
@@ -252,6 +252,44 @@ describe('landing view transition', () => {
       expect(markup).toContain(`href="${prefix}${path}"`)
     }
     expect(markup).not.toContain('href="/en-US')
+  })
+
+  it('keeps the footer border full-width while aligning its contents with the header', () => {
+    const markup = render(graph, <Home />)
+    const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
+
+    expect(markup).toContain('<header class="discovery-header"><div class="discovery-width discovery-header-inner">')
+    expect(markup).toContain('<footer class="discovery-footer"><div class="discovery-width">')
+    expect(homeCss).toContain('.discovery-header { border-bottom: 1px solid var(--home-line); }')
+    expect(homeCss).toMatch(/\.discovery-footer \{\s*border-top: 1px solid var\(--home-line\);/)
+  })
+
+  it.each([
+    ['en', '/en', 'Language', ['Home', 'Genres', 'Artists', 'Instruments', 'History']],
+    ['fr', '/fr', 'Langue', ['Accueil', 'Genres', 'Artistes', 'Instruments', 'Histoire']],
+  ] as const)('renders localized language and page links in the %s footer', (locale, prefix, languageLabel, pageLabels) => {
+    const markup = render(graph, <Home />, null, 'genre', locale)
+    const footer = markup.match(/<footer\b[\s\S]*?<\/footer>/)?.[0] ?? ''
+    const languages = footer.match(/<nav\b[^>]*class="discovery-footer-links discovery-footer-languages"[\s\S]*?<\/nav>/)?.[0] ?? ''
+    const pages = footer.match(/<nav\b[^>]*class="discovery-footer-links discovery-footer-pages"[\s\S]*?<\/nav>/)?.[0] ?? ''
+    const english = languages.match(/<a\b[^>]*>English<\/a>/)?.[0] ?? ''
+    const french = languages.match(/<a\b[^>]*>Français<\/a>/)?.[0] ?? ''
+
+    expect(languages).toContain(`aria-label="${languageLabel}"`)
+    expect(english).toContain('href="/en"')
+    expect(english).toContain('lang="en"')
+    expect(english).toContain('hrefLang="en"')
+    expect(french).toContain('href="/fr"')
+    expect(french).toContain('lang="fr"')
+    expect(french).toContain('hrefLang="fr"')
+    expect(english.includes('aria-current="page"')).toBe(locale === 'en')
+    expect(french.includes('aria-current="page"')).toBe(locale === 'fr')
+
+    expect(pages).toContain('aria-label="Pages"')
+    for (const [index, path] of ['', '/genres', '/artists', '/instruments', '/history'].entries()) {
+      expect(pages).toMatch(new RegExp(`<a\\b[^>]*href="${prefix}${path}"[^>]*>${pageLabels[index]}</a>`))
+    }
+    expect(pages).toContain('aria-current="page"')
   })
 
   it('renders both vinyl faces without side letters or an inline flip transform', () => {
@@ -263,23 +301,53 @@ describe('landing view transition', () => {
     for (const label of labels) expect(label[1]).toMatch(/^<svg\b[\s\S]*<\/svg>$/)
   })
 
-  it.each([
-    ['en-US', 'Tap the record, then drag to scratch'],
-    ['fr', 'Touchez le disque, puis faites-le glisser pour scratcher'],
-  ] as const)('offers a localized mobile scratch hint in %s', (locale, hint) => {
-    const markup = render(graph, <Home />, null, 'genre', locale)
+  it('lets mobile visitors scratch the record without an instruction hint', () => {
+    const markup = render(graph, <Home />, null, 'genre', 'fr')
     expect(markup).toContain('class="discovery-record-touch-target"')
-    expect(markup).toContain(hint)
+    expect(markup).not.toContain('discovery-scratch-hint')
+  })
+
+  it.each([
+    ['en', 'Play the hip-hop loop', 'Play'],
+    ['fr', 'Lire la boucle hip-hop', 'Lecture'],
+  ] as const)('offers an accessible, initially stopped turntable button in %s', (locale, label, text) => {
+    const markup = render(graph, <Home />, null, 'genre', locale)
+    const button = markup.match(/<button\b[^>]*class="discovery-turntable-play"[\s\S]*?<\/button>/)?.[0]
+    expect(button).toContain(`aria-label="${label}"`)
+    expect(button).toContain('aria-pressed="false"')
+    expect(button).toContain('aria-busy="false"')
+    expect(button).toContain(`<span>${text}</span>`)
+    expect(button).not.toContain('disabled')
+    expect(markup).not.toContain('<audio')
   })
 
   it('restores the selected face without animating during the opening dock', () => {
     const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
     const loadingCss = readFileSync(new URL('./pageLoading.css', import.meta.url), 'utf8')
+    const reducedMotionCss = homeCss.match(/@media \(prefers-reduced-motion: reduce\) \{([\s\S]*?)\n\}/)?.[1]
 
     expect(homeCss).toContain(':root[data-theme="light"] .discovery-record-flip { transform: rotateY(180deg); }')
     expect(homeCss).toContain('transition: transform .75s cubic-bezier(.22, .75, .25, 1);')
-    expect(homeCss).toMatch(/@media \(prefers-reduced-motion: reduce\) \{\s*\.discovery-record-flip \{ transition: none; \}/)
+    expect(reducedMotionCss).toContain('.discovery-record-flip { transition: none; }')
     expect(loadingCss).toContain('#page-loading[data-opening][data-loading="true"] ~ #root .discovery-record-flip {\n  transition: none;')
+    expect(loadingCss).not.toContain('.discovery-hero-copy')
+  })
+
+  it('keeps the inset turntable control out of the hero layout on every screen size', () => {
+    const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
+    const controls = [...homeCss.matchAll(/\.discovery-turntable-controls\s*\{([^}]+)\}/g)]
+
+    expect(controls).toHaveLength(2)
+    expect(controls[0][1]).toContain('position: absolute;')
+    for (const control of controls.slice(1)) {
+      expect(control[1]).not.toMatch(/position:\s*(relative|static)|margin:/)
+    }
+    expect(homeCss).toContain('.discovery-record { display: grid; justify-items: center; gap: 1rem; padding: 1.5rem; }')
+    expect(homeCss).toContain('  .discovery-turntable-controls { top: 1rem; right: 1rem; bottom: auto; }')
+    expect(homeCss).not.toContain('.discovery-hero-title { position: relative; }')
+    expect(homeCss).toContain('.discovery-turntable-play:active, .discovery-turntable-play[aria-pressed="true"] { box-shadow: inset 0 2px 4px #0005; }')
+    expect(homeCss).not.toMatch(/\.discovery-turntable-play[^{]*\{[^}]*translate/)
+    expect(homeCss).toContain('  .discovery-turntable-play { transition: none; }')
   })
 
   it('keeps the mobile detail sheet above the timeline content and below the navigation', () => {

@@ -88,10 +88,52 @@
 
 .discovery-footer {
   border-top: 1px solid var(--home-line);
-  padding: 2rem 0 2.75rem;
-  text-align: center;
+  padding: 1.5rem 0 2.75rem;
   color: var(--home-muted);
-  font-size: .875rem;
+  font-size: .8125rem;
+}
+
+.discovery-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 1.25rem;
+}
+
+.discovery-footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+.discovery-footer-links a:hover {
+  color: var(--home-text);
+  text-decoration: underline;
+}
+
+.discovery-footer-links a[aria-current] {
+  color: var(--home-text);
+  font-weight: 600;
+}
+
+.discovery-footer-languages {
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--home-line);
+}
+
+.discovery-footer-pages { padding-top: .5rem; }
+
+.discovery-footer-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .75rem 1.5rem;
+  padding-top: 1.25rem;
+  font-size: .75rem;
+}
+
+@media (min-width: 48rem) {
+  .discovery-footer-links a { min-height: 2rem; }
 }
 
 .discovery-footer strong { color: var(--home-text); font-weight: 600; }
@@ -105,7 +147,6 @@
 }
 
 .discovery-copyright {
-  margin-top: .7rem;
   color: var(--home-muted);
   font-size: .75rem;
 }
@@ -132,8 +173,10 @@
 .discovery-kicker { display: flex; align-items: center; gap: .65rem; }
 .discovery-kicker span { width: .5rem; height: .5rem; border-radius: 50%; background: var(--home-accent); box-shadow: 0 0 12px #a78bfa; }
 
+.discovery-hero-title { margin-block: 1rem; }
+
 .discovery-hero h1 {
-  margin-block: 1rem;
+  margin: 0;
   font: 750 clamp(3.65rem, 8vw, 7rem)/.88 "Avenir Next", ui-sans-serif, system-ui, sans-serif;
   letter-spacing: -.08em;
 }
@@ -146,7 +189,6 @@
 
 .discovery-intro { max-width: 29rem; color: var(--home-intro); line-height: 1.65; }
 .discovery-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem 1.25rem; margin-top: 1.6rem; }
-.discovery-scratch-hint { display: none; }
 
 .discovery-primary, .discovery-secondary, .discovery-widget-action {
   display: inline-flex;
@@ -186,8 +228,52 @@
 .discovery-record-face-b { transform: rotateY(180deg); }
 .discovery-record-face-b .discovery-label { background: var(--record-label-background); color: var(--record-label-ink); }
 
+.discovery-turntable-controls { position: absolute; right: 1.5rem; bottom: 1.5rem; z-index: 2; }
+.discovery-turntable-hint { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
+.discovery-turntable-hand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  margin: -2px 0 0 -16px;
+  transform-origin: 16px 2px;
+  color: var(--home-background);
+  filter: drop-shadow(0 2px 5px #0006);
+}
+.discovery-turntable-hand svg { fill: var(--home-text); }
+.discovery-turntable-point, .discovery-turntable-grip { position: absolute; inset: 0; }
+.discovery-turntable-grip { transform-origin: 16px 18px; }
+.discovery-turntable-play {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: .35rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid var(--home-node-line);
+  border-radius: .75rem;
+  background: linear-gradient(160deg, #ffffff10, transparent 60%) var(--home-node);
+  color: var(--home-accent);
+  box-shadow: inset 0 1px 0 #ffffff1a, 0 2px 4px #0004;
+  font: 650 .5rem/1 ui-monospace, monospace;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  transition: color 150ms, background-color 150ms, box-shadow 150ms;
+}
+.discovery-turntable-play:hover { color: var(--home-text); background-color: var(--home-hover); }
+.discovery-turntable-play:active, .discovery-turntable-play[aria-pressed="true"] { box-shadow: inset 0 2px 4px #0005; }
+.discovery-turntable-play:disabled { cursor: wait; }
+.discovery-turntable-play[aria-busy="true"] .discovery-turntable-led { background: var(--home-accent); }
+.discovery-turntable-led { position: absolute; top: .55rem; right: .55rem; width: .25rem; height: .25rem; border-radius: 50%; background: var(--home-muted); box-shadow: inset 0 1px 2px #0006; transition: background-color 150ms, box-shadow 150ms; }
+.discovery-turntable-play[aria-pressed="true"] .discovery-turntable-led { background: var(--home-accent); box-shadow: 0 0 .5rem var(--home-accent); }
+.discovery-turntable-error { position: absolute; right: 0; bottom: calc(100% + .75rem); width: min(16rem, 70vw); padding: .65rem .8rem; border: 1px solid var(--home-node-line); border-radius: .65rem; background: var(--home-surface); font-size: .75rem; color: var(--home-text); }
+
 @media (prefers-reduced-motion: reduce) {
+  .discovery-turntable-hint { display: none; }
   .discovery-record-flip { transition: none; }
+  .discovery-turntable-play { transition: none; }
 }
 
 .discovery-nav { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin-top: 1rem; }
@@ -337,12 +423,15 @@
   .discovery-hero-copy { padding: 2rem 1.25rem; }
   .discovery-intro { max-width: 21rem; }
   .discovery-actions { position: relative; z-index: 2; }
-  .discovery-scratch-hint { display: block; margin-top: .75rem; color: var(--home-muted); font: .72rem/1.5 ui-monospace, monospace; }
   .discovery-record, .discovery-record-touch-target { position: absolute; width: 15rem; top: -.6rem; right: -6rem; }
   .discovery-record { z-index: -1; opacity: .35; padding: 0; }
   .discovery-record-touch-target { display: block; z-index: 1; aspect-ratio: 1; border-radius: 50%; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; }
   .discovery-record-touch-target[data-scratching] { cursor: grabbing; }
   .discovery-record-caption { display: none; }
+  .discovery-kicker { padding-right: 3.5rem; }
+  .discovery-turntable-controls { top: 1rem; right: 1rem; bottom: auto; }
+  .discovery-turntable-play { width: 3rem; height: 3rem; gap: .25rem; }
+  .discovery-turntable-error { bottom: auto; top: calc(100% + .75rem); }
   .discovery-grid { grid-template-columns: minmax(0, 1fr); }
   .discovery-destination { gap: .45rem; }
   .discovery-destination-icon, .discovery-destination .discovery-link-arrow { width: 1rem; }

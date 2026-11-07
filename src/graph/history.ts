@@ -1,6 +1,7 @@
 import { EVENT_CATEGORY_LABELS, type EventCategory, type GraphNode, type MusicGraph, type Period } from './types.ts'
 import { catalogueFor } from '../i18n/catalogue.ts'
 import { DEFAULT_LOCALE, type Locale } from '../i18n/routing.ts'
+import { formatYear } from '../theme.ts'
 
 const eraLabels = catalogueFor(DEFAULT_LOCALE).history.eras
 
@@ -93,8 +94,8 @@ export function formatEventPeriod(period: Period, locale: Locale = DEFAULT_LOCAL
   const prefix = period.precision === 'circa' ? `${dates.circa} ` : ''
   const end = period.end == null
     ? ` – ${dates.now}`
-    : period.end === period.start ? '' : ` – ${period.end}`
+    : period.end === period.start ? '' : ` – ${formatYear(period.end, locale)}`
   const approximate = period.precision === 'decade' ? dates.approximate : ''
-  const estimated = period.estimated ? dates.estimated : ''
-  return `${prefix}${period.start}${end}${approximate}${estimated}`
+  const estimated = period.estimated && period.precision !== 'circa' ? dates.estimated : ''
+  return `${prefix}${formatYear(period.start, locale)}${end}${approximate}${estimated}`
 }

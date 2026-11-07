@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { ExplorerContext } from '../ExplorerContext.ts'
+import { graphForLocale } from '../data/graphLocale.ts'
 import { buildIndex } from '../graph/graph.ts'
 import { DEFAULT_HISTORY_FILTERS, type HistoryFilters } from '../graph/history.ts'
 import { createTimelineModel } from '../graph/timeline.ts'
@@ -37,7 +38,7 @@ function renderHistory(
   selectedId: string | null = null,
   filters: HistoryFilters = DEFAULT_HISTORY_FILTERS,
   data: MusicGraph = graph,
-  locale: Locale = 'en-US',
+  locale: Locale = 'en',
 ) {
   const index = buildIndex(data)
   return renderWithIntl(
@@ -55,6 +56,69 @@ function renderHistory(
 }
 
 describe('history view', () => {
+  afterEach(() => {
+    vi.clearAllMocks()
+    vi.unstubAllGlobals()
+  })
+
+  it('keeps full descriptions by default and reserves the desktop footer for connections', () => {
+    const markup = renderHistory()
+    expect(markup).toContain('An early development.')
+    expect(markup).toContain('history-event-description')
+    expect(markup).toContain('md:mt-auto md:pt-4')
+    expect(markup).not.toContain('Show more')
+    expect(markup).not.toContain('data-overflowing')
+  })
+
+  it.each(['en', 'fr'] as const)('localizes the overflow action in %s', (locale) => {
+    vi.mocked(useState)
+      .mockReturnValueOnce([null, vi.fn()])
+      .mockReturnValueOnce([true, vi.fn()])
+    const markup = renderHistory(null, DEFAULT_HISTORY_FILTERS, graph, locale)
+    expect(markup).toContain('data-overflowing="true"')
+    expect(markup).toContain(locale === 'fr' ? 'Voir plus' : 'Show more')
+    expect(markup).toContain('absolute bottom-0 right-0 hidden')
+    expect(markup).toContain('md:inline-flex')
+  })
+
+  it('measures description overflow, rechecks on resize, and disconnects on unmount', () => {
+    const paragraph = { scrollHeight: 120, clientHeight: 80 }
+    const setOverflowing = vi.fn()
+    let resize: ResizeObserverCallback | undefined
+    const observe = vi.fn()
+    const disconnect = vi.fn()
+    vi.stubGlobal('ResizeObserver', class {
+      constructor(callback: ResizeObserverCallback) { resize = callback }
+      observe = observe
+      disconnect = disconnect
+    })
+    vi.mocked(useRef)
+      .mockReturnValueOnce({ current: new Map() })
+      .mockReturnValueOnce({ current: new Map() })
+      .mockReturnValueOnce({ current: null })
+      .mockReturnValueOnce({ current: null })
+      .mockReturnValueOnce({ current: null })
+      .mockReturnValueOnce({ current: paragraph })
+    vi.mocked(useState)
+      .mockReturnValueOnce([null, vi.fn()])
+      .mockReturnValueOnce([false, setOverflowing])
+    renderHistory()
+    const effect = vi.mocked(useEffect).mock.calls.find(([, dependencies]) =>
+      dependencies?.[0] === 'An early development.')
+    expect(effect).toBeDefined()
+    const cleanup = effect?.[0]()
+    expect(observe).toHaveBeenCalledWith(paragraph)
+    expect(setOverflowing).toHaveBeenLastCalledWith(true)
+    paragraph.clientHeight = 120
+    resize?.([], {} as ResizeObserver)
+    expect(setOverflowing).toHaveBeenLastCalledWith(false)
+    paragraph.scrollHeight = 160
+    resize?.([], {} as ResizeObserver)
+    expect(setOverflowing).toHaveBeenLastCalledWith(true)
+    cleanup?.()
+    expect(disconnect).toHaveBeenCalledOnce()
+  })
+
   it('localizes history filters, categories, eras, and dates in French', () => {
     const markup = renderHistory(null, DEFAULT_HISTORY_FILTERS, graph, 'fr')
     expect(markup).toContain('aria-label="Chronologie de l’histoire musicale"')
@@ -64,6 +128,20 @@ describe('history view', () => {
     expect(markup).toContain('vers 1025')
     expect(markup).not.toContain('All events')
     expect(markup).not.toContain('Jump to an era')
+  })
+
+  it.each([
+    ['en', 'c. 586 BCE – 582 BCE'],
+    ['fr', 'vers 586 AEC – 582 AEC'],
+  ] as const)('shows the Pythian event’s estimated date range in %s', (locale, date) => {
+    const source = graphForLocale(locale)
+    const data: MusicGraph = {
+      ...source,
+      nodes: source.nodes.filter((node) => node.id === 'event:pythian-games-panhellenic-reorganisation'),
+      edges: [],
+    }
+    expect(data.nodes).toHaveLength(1)
+    expect(renderHistory(null, DEFAULT_HISTORY_FILTERS, data, locale)).toContain(date)
   })
 
   it('shows undated events separately and applies the same filters and selection', () => {

@@ -11,6 +11,39 @@ into its hero position over 700ms, tracking the hero position and scroll-driven
 rotation even when scrolling during loading. Other entry pages simply fade out the cover.
 The hero copy stays in its final position throughout; catalogue widgets fade in
 as they enter the viewport without shifting their alignment.
+The compact, beveled turntable button is inset into the hero card without adding
+height on desktop or mobile. Its raised face depresses during playback, with a
+lit status LED. It plays or pauses an original four-bar instrumental hip-hop loop.
+Audio loads only on Play. Dragging the record
+scratches that same stereo recording forward or backward; holding it stops the
+groove, and releasing it resumes normal playback. Navigation stops the audio.
+Reduced-motion preferences disable automatic record rotation, not playback.
+After a short pause, a decorative hand grips the record and scratches along a
+short circular arc, rotating the vinyl in sync, then points at and taps Play.
+Both hand poses share the same wrist position for a stationary crossfade.
+It runs once per landing-page visit without playing audio or
+blocking controls, and disappears on scratch, Play, or keyboard focus on Play.
+Reduced-motion preferences also disable this hint.
+The English and French controls show a retry message when audio cannot load.
+
+The [hip-hop loop](./public/loops/hip-hop.wav) played by the landing turntable was generated locally
+with ACE-Step 1.5's highest-quality pairing: the `acestep-v15-xl-sft` (4B) DiT at
+80 diffusion steps, guidance 7 with ADG, and the largest `acestep-5Hz-lm-4B`
+planner. Because both models do not fit in 25 GB of unified memory together, the
+planner's audio codes were generated first, then rendered by the XL DiT.
+Five original 36-second instrumental boom-bap takes in D minor at 92 BPM used
+seeds 73192, 18409, 60217, 41126, and 52880. Four-bar excerpts on a
+regression-fitted beat grid were compared for seam similarity, bar-to-bar
+consistency, and level stability. The selected seed is 41126, from 11.668 s:
+exactly 16 beats at 92.0 BPM (10.435 s), stereo 48 kHz PCM16, normalized to
+-1 dBFS peak with an 8 ms wrap crossfade. WAV avoids lossy encoder padding at
+the loop boundary.
+The deployed app serves this static asset; it does not require a running ACE-Step API.
+Its brief and selection report are in [scripts/loops/briefs](./scripts/loops/briefs). Loops for other
+genres follow the same pipeline through the `loop-briefer`, `loop-producer`, `loop-validator` and
+`loop-reviewer` agents; the bundled scripts and the verified ACE-Step configuration are in
+[.github/skills/loop-produce](./.github/skills/loop-produce).
+
 Clicking the header brand while already on the landing page does not reload it
 or replay the opening animation; modified clicks retain normal link behavior.
 On narrow screens, where the vinyl overflows its clipped hero card, landing-page
@@ -29,10 +62,10 @@ ACE-Step preview in the detail panel. Previews load on play.
 
 ACE-Step previews live in `public/genre-previews`. The renderer takes the
 middle ten seconds of a 32-second performance and uses the genre briefs in
-`scripts/ace-briefs-*.json`. With the local ACE-Step API on port 8020 and its
+`scripts/previews/briefs/*.json`. With the local ACE-Step API on port 8020 and its
 planner enabled, set `ACESTEP_PYTHON` to the ACE-Step environment's Python
 executable and `ACESTEP_PREVIEW_STATE` to a writable progress file, then run
-`node scripts/render-ace-previews.mjs`. Reuse the progress file to skip
+`node scripts/previews/render-ace-previews.mjs`. Reuse the progress file to skip
 completed clips, or pass genre slugs to render a subset.
 
 The main view is a horizontal chronology with three bar modes: **Genres** (the default),
@@ -65,15 +98,17 @@ alongside the expand/collapse handle.
 The **History** view presents the graph's curated events in chronological order,
 grouped into eras by their starting year. On desktop it fills the available width
 with a horizontally scrolling timeline. Events alternate above and below a
-central rail, filling the available window height; longer cards scroll internally,
-and very short windows can also scroll vertically. Mobile keeps a vertical list.
+central rail, filling the available window height. Connected-node chips stay at
+the bottom of each card; overflowing descriptions fade out with a **Show more**
+button that opens the full event in the detail panel. Very short windows can
+also scroll vertically. Mobile keeps a vertical list with full descriptions.
 Neighboring cards in each era share horizontal space on opposite sides of the rail,
 with a small gap between cards on the same side. Spacing is not proportional to
 elapsed time. The era buttons jump through the timeline, and selecting an event
 scrolls it into view on either layout.
 Dates marked `c.` or `approx.` are not exact, and events spanning years are
 listed under their start. The current event collection runs from approximately
-900 to 2022 and is not an exhaustive or geographically balanced account.
+582 BCE to 2022 and is not an exhaustive or geographically balanced account.
 Events without a period appear separately as **Undated** rather than being
 assigned an invented year; they remain selectable and follow the same filters.
 
@@ -227,6 +262,14 @@ lineage between instruments. For example, the electric guitar derives from the g
 the TR-909 derives from the TR-808, and the clarinet influenced the saxophone.
 Each instrument bar has a family-colored icon at its leading edge; off-screen
 indicators and undated instrument entries show the same icon.
+Every instrument has four SVGs (icon, banner, avatar, and detail-panel header
+background) in `public/instrument-*`. New or redrawn artwork follows one pipeline:
+a sourced visual brief (`artwork-briefer`), the drawing (`artwork-illustrator`,
+preferably as a master in [the generator](./scripts/artwork/generate-instrument-artwork.py)),
+a deterministic gate (`artwork-validator`), and a ship review (`artwork-reviewer`)
+with a final human check in Storybook. The style guide and scripts are in
+[.github/skills/artwork-draw](./.github/skills/artwork-draw) and
+[.github/skills/artwork-validate](./.github/skills/artwork-validate).
 The detail panel lists the genres each instrument is featured in and its notable
 players. Both open the corresponding genre or artist. A few instruments, including the
 harpsichord, theremin, and TB-303, have editorial usage phases that show
@@ -279,11 +322,64 @@ as historical claims. The JSON supports adding or revising phases without changi
 
 All data lives in [src/data/graph.json](./src/data/graph.json) as a single property graph:
 
-- **Nodes** (`genre`, `artist`, `instrument`, `label`, `place`, `track`, `scene`, `event`) with stable `type:slug` ids, optional `period` (`start`/`end`/`precision`/`estimated`/`estimateNote`), `family` lanes, descriptions, and editorial confidence in the overall entry.
+- **Nodes** (`genre`, `artist`, `instrument`, `label`, `place`, `track`, `scene`, `event`, `festival`) with stable `type:slug` ids, optional `period` (`start`/`end`/`precision`/`estimated`/`estimateNote`), `family` lanes, descriptions, and editorial confidence in the overall entry.
 - **Edges** with a type, optional `period`, `confidence` (`low`/`medium`/`high`), `note`, and source URLs. Lineage edge types (`influences`, `derived_from`, `subgenre_of`, `fusion_of`, `cross_pollination`, `revival_of`) carry an orientation so the JSON reads naturally in both directions (see `LINEAGE_ORIENTATION` in [src/graph/types.ts](./src/graph/types.ts)).
-- Nodes can include `sources` URLs; the detail panel links only the selected node's sources, with each source's website shown beside the link. Relationship citations remain in the graph data rather than relationship lists.
+- Nodes can include `sources` URLs; the detail panel links the selected node's sources, with each source's website shown beside the link. Festival relationships also show their own citations beside the connection. Festival confidence is reassessed against evidence, not inferred from citation counts.
 
-See [src/data/GRAPH.md](./src/data/GRAPH.md) for the full schema, validation rules, and an editing guide (also suitable as a prompt for LLM-assisted enrichment).
+### Music festivals
+
+The collection includes ancient Pythian Games and the approximately 1715 Three
+Choirs Festival alongside modern institutions: 39 festivals across 25 countries and six continents,
+selected for documented historical contributions and public recognition. It spans
+Woodstock, Monterey Pop and Newport Folk; Bayreuth, Salzburg and Donaueschingen;
+Movement, Sónar and Tomorrowland; Reggae Sunsplash, FESPAM and Sauti za Busara;
+Cosquín, Viña del Mar and Rock al Parque; Sawai Gandharva, Java Jazz and Baalbeck;
+and further jazz, metal and cross-cultural institutions. All festivals have at
+least three references; the [source audit](./docs/evidence/audits/festival-sources-001.md)
+explains source scope, conflicts and High/Medium confidence decisions. Descriptions explain
+breakthrough performances, new-music platforms, regional traditions and musical
+exchange rather than assigning a popularity or influence score. The
+[coverage register](./docs/evidence/festivals.md) lists every festival, country,
+first edition or chronology anchor and editorial caveat. This is a curated collection, not a
+comprehensive worldwide directory.
+Festivals are searchable and open in the detail panel within the current view.
+Any entity can link to a festival through `festival_related`; the relationship note
+states the connection and, when known, its edition year. Detail panels display
+festival connections only when the edge has an HTTPS source, with citations visible
+in both directions. These links do not affect musical lineage or timeline lanes.
+Specific festival turning points also appear as separately sourced History
+events, including Dylan at Newport, the complete Ring at Bayreuth, and Daft
+Punk’s Coachella pyramid. All 39 festivals have a supplementary Wikipedia
+[cross-check](./docs/evidence/audits/festival-wikipedia-events-002.md); conflicts
+are recorded alongside the stronger primary and institutional evidence.
+
+Festival periods normally start at the first edition; conventional chronology
+anchors are marked estimated and explained. They do not claim uninterrupted annual
+operation. Historically significant standalone gatherings, including the original
+Woodstock and Monterey Pop festivals, have bounded periods. Existing historical festival events retain their stable IDs: an event
+can describe the founding or one edition, while a festival node describes the
+institution. English and French text, per-entry evidence notes, and the review
+coverage register accompany this batch.
+
+See [docs/GRAPH.md](./docs/GRAPH.md) for the full schema, validation rules, and an editing guide (also suitable as a prompt for LLM-assisted enrichment).
+
+Graph changes follow one pipeline, with one owner per step:
+
+| Step | Question | Skill | Agent |
+|---|---|---|---|
+| Research | What is missing? | — | `graph-researcher` (proposes a merge patch, edits nothing) |
+| Edit | Apply the change and its coupled files | `graph-edit` | `graph-editor` (orchestrates the steps below) |
+| Translate | Is every text in every locale overlay? | `graph-translate` | `graph-translator` |
+| Validate | Is the data mechanically correct? | `graph-validate` | `graph-validator` (read-only) |
+| Fact-check | Is each claim true and sourced? | `graph-fact-check` | `graph-fact-checker` (writes evidence) |
+| Review | Is this change set ready to merge? | `graph-review` | `graph-reviewer` (read-only gate) |
+
+Validation is deterministic: `npm run validate:graph` runs the data and graph test suites (schema,
+ids, edge directions, canonical JSON formatting, overlay coverage for every locale, evidence and
+coverage-tracker bookkeeping, documented counts). The [Graph quality](./.github/workflows/graph-quality.yml)
+workflow runs it, plus a `review-status.json` freshness check, on every pull request touching graph data
+or docs. The skills in [.github/skills](./.github/skills) bundle `lookup.mjs` (query `graph.json` by id,
+name, or pending evidence) and `diff.mjs` (semantic diff of graph changes and overlays against a git ref).
 
 The expanded starter dataset connects at least three key artists to every genre
 and adds seven cited tracks. Artist pages document the people and groups;
@@ -301,7 +397,7 @@ the original catalogue. Origins and era boundaries are approximate and overlappi
 not exact invention dates or popularity measurements. New nodes deliberately have
 neutral bars rather than invented prominence histories.
 
-The [connectivity register](./src/data/evidence/disconnected-entries.md) explicitly
+The [connectivity register](./docs/evidence/disconnected-entries.md) explicitly
 records sourced standalone events and unresolved track attributions. Stable IDs
 are retained without inventing relationships; tests enforce this exact exception
 set as well as the live-edge evidence tracker and generated review-status index.
@@ -342,11 +438,14 @@ The UI never touches the JSON directly: all queries (neighbors, lineage traversa
   history and unrelated URL parameters. Legacy query links redirect to the
   corresponding explicit route. Pages render on demand so the initial server
   render reflects the request's query parameters.
-- Locale-prefixed App Router URLs use `/en` and `/fr`, while English retains the
-  `en-US` locale internally. Old `/en-US` links permanently redirect to `/en`,
-  preserving paths and query parameters. The root proxy negotiates the initial
-  locale from `Accept-Language`; explicit locale URLs remain stable.
-- App translations live in [English](./src/i18n/locales/en-US.json) and
+- Locales are language-only (`en` and `fr`). next-intl's default prefix routing
+  provides `/en` and `/fr`, without a custom prefix map or internal country-code
+  rewrite. The root proxy uses next-intl's built-in locale negotiation and
+  preference cookie; explicit locale URLs remain stable. A standard Next.js
+  redirect preserves old `/en-US` links, including paths and query parameters.
+- The landing-page footer links to each explorer page and lets visitors switch
+  between English and French.
+- App translations live in [English](./src/i18n/locales/en.json) and
   [French](./src/i18n/locales/fr.json) JSON catalogues: UI copy, accessibility
   labels, date wording, graph taxonomy labels, and page/social metadata.
   The UI uses `next-intl`: client components call `useTranslations`, server
@@ -354,8 +453,9 @@ The UI never touches the JSON directly: all queries (neighbors, lineage traversa
   plurals. TypeScript checks message keys against the English catalogue; keep
   catalogue keys and ICU parameters aligned across languages. Graph content
   translations remain separate.
-- [French graph text](./src/data/graph.fr.json) is keyed by stable entity IDs
-  and overlays only translated fields on the canonical graph. The overlay
+- Graph text for each non-English locale lives in `src/data/graph.<locale>.json`
+  (currently [French](./src/data/graph.fr.json)), registered in `GRAPH_OVERLAYS`. It is keyed by stable
+  entity IDs and overlays only translated fields on the canonical graph. The overlay
   covers descriptions, phase summaries, individual phase notes, period-estimate
   notes, and all relationship notes. Instruments, places, scenes, and applicable
   genre names have localized labels; artist, label, and recording names retain
@@ -391,12 +491,7 @@ The [Vercel configuration](./vercel.json) selects the Next.js framework preset.
 Do not configure a static `dist` output directory: App Router pages render on
 the server.
 
-### Storybook
-
-Run `npm run storybook` and open the local URL printed by the command (port
-6006 by default). If that port is in use, run
-`npm run storybook -- --port 6007` instead. `npm run build-storybook` creates a
-static, shareable build in `storybook-static/`.
+### Docker Compose
 
 To run the app and Storybook with Docker Compose:
 
@@ -412,6 +507,22 @@ the Storybook host port, for example
 separate dependency volumes so their installs do not interrupt one another. The
 container image does not include Git, so Storybook's optional Git-based change
 detection is unavailable; component hot reload still works.
+
+Before starting another server for browser verification, check
+`docker compose ps` and verify the relevant service responds, for example with
+`curl -fsS -o /dev/null http://localhost:5173/fr`. Reuse the running Compose
+app or Storybook when it is healthy and accessible: the services mount the
+working tree and pick up source changes. A browser-tool failure alone does not
+mean the service is down; check browser connectivity separately. Start another
+server only when necessary, such as when no suitable service is accessible or a
+test requires isolation, and stop only servers you started.
+
+### Storybook
+
+Run `npm run storybook` and open the local URL printed by the command (port
+6006 by default). If that port is in use, run
+`npm run storybook -- --port 6007` instead. `npm run build-storybook` creates a
+static, shareable build in `storybook-static/`.
 
 The catalog includes the project colors, view/layout/order toggles, bubble
 zoom buttons, search states, legends, detail panels, timeline bars, the timeline,

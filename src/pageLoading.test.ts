@@ -213,15 +213,15 @@ describe('page loading lifecycle', () => {
     expect(style.width).toBe('')
   })
 
-  it('matches the landing record opacity when docking on mobile', () => {
-    documentState.documentElement.dataset.theme = 'light'
+  it('fades out without docking on mobile, where the record sits behind the copy', () => {
     const { animate } = mockLandingVinyl('0.35')
+    vi.stubGlobal('window', Object.assign(events, {
+      matchMedia: (query: string) => ({ matches: query.includes('max-width: 42rem') }),
+    }))
     loading.finishPageLoading()
     vi.advanceTimersByTime(550)
-    expect(animate).toHaveBeenCalledWith([
-      { transform: `translate(0px, -10px) scale(${200 / 300})`, opacity: 1 },
-      { transform: 'translate(480px, -130px) scale(1)', opacity: '0.35' },
-    ], expect.objectContaining({ duration: 700 }))
+    expect(animate).not.toHaveBeenCalled()
+    expect(overlay.dataset.loading).toBe('false')
   })
 
   it.each(['dark', 'light'])('tracks scrolling and rotation throughout docking in the %s theme', (theme) => {

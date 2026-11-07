@@ -87,8 +87,6 @@ describe('social metadata', () => {
     ['/en?view=artists', '/en/artists'],
     ['/en/history?view=history', '/en/history'],
     ['/en/genres/?view=artists', '/en/genres'],
-    ['/en-US', '/en'],
-    ['/en-US/artists?sort=oldest-first', '/en/artists?sort=oldest-first'],
   ])('canonicalizes %s to %s', (path, canonical) => {
     expect(socialMetadata(new URL(path, origin), index.nodeById).url).toBe(`${origin}${canonical}`)
   })

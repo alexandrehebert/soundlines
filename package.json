@@ -15,7 +15,8 @@
     "test": "vitest run",
     "storybook": "storybook dev -p 6006 --disable-telemetry",
     "build-storybook": "storybook build --disable-telemetry",
-    "review-status": "node scripts/reviewStatus.ts"
+    "review-status": "node scripts/graph/reviewStatus.ts",
+    "validate:graph": "vitest run src/data src/graph"
   },
   "dependencies": {
     "lucide-react": "^1.47.0",

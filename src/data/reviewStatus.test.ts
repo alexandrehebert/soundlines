@@ -2,7 +2,7 @@ import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import { afterEach, describe, expect, it } from 'vitest'
-import { collectReviewStatus, EVIDENCE_DIR, formatReviewStatus, STATUS_FILE } from '../../scripts/reviewStatus.ts'
+import { collectReviewStatus, EVIDENCE_DIR, formatReviewStatus, STATUS_FILE } from '../../scripts/graph/reviewStatus.ts'
 import graph from './graph.json'
 
 describe('review-status.json', () => {
@@ -29,7 +29,7 @@ describe('review-status.json', () => {
   })
 
   it('tracks every live edge with matching, reviewed evidence', () => {
-    const root = resolve(EVIDENCE_DIR, '../../..')
+    const root = resolve(EVIDENCE_DIR, '../..')
     const rows = readFileSync(join(EVIDENCE_DIR, 'audits/graph-edge-coverage.csv'), 'utf8')
       .trim().split(/\r?\n/).slice(1).map((line) => line.split(','))
     expect(rows.map(([id]) => id).sort()).toEqual(graph.edges.map(({ id }) => id).sort())

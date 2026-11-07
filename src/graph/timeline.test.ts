@@ -41,12 +41,12 @@ describe('timeline projections', () => {
     expect(viewFromPath('/en/artists')).toBe('artist')
     expect(viewFromPath('/en/instruments/')).toBe('instrument')
     expect(viewFromPath('/en/history')).toBe('history')
-    expect(viewFromPath('/en-US/instruments/')).toBe('instrument')
+    expect(viewFromPath('/en-US/instruments/')).toBeUndefined()
     expect(viewFromPath('/en')).toBeUndefined()
     expect(viewFromPath('/fr')).toBeUndefined()
   })
 
-  it.each(['/en', '/en/', '/en-US', '/fr'])('recognizes %s as the discovery page', (path) => {
+  it.each(['/en', '/en/', '/fr'])('recognizes %s as the discovery page', (path) => {
     expect(isHomeUrl(new URL(path, 'https://soundlines.example'), false)).toBe(true)
     expect(isHomeUrl(new URL(`${path}?view=artists`, 'https://soundlines.example'), false)).toBe(false)
   })

@@ -3,31 +3,28 @@ import { isLocale, localeFromPath, localizePath, routing, stripLocalePrefix } fr
 
 describe('locale routing', () => {
   it('declares supported locales and the default locale for next-intl', () => {
-    expect(routing.locales).toEqual(['en-US', 'fr'])
-    expect(routing.defaultLocale).toBe('en-US')
-    expect(routing.localePrefix).toEqual({
-      mode: 'always',
-      prefixes: { 'en-US': '/en', fr: '/fr' },
-    })
+    expect(routing.locales).toEqual(['en', 'fr'])
+    expect(routing.defaultLocale).toBe('en')
+    expect(routing.localePrefix).toBeUndefined()
   })
 
-  it('recognizes locale prefixes without changing internal locale identifiers', () => {
+  it('uses language-only locale identifiers and URL prefixes', () => {
     expect(isLocale('fr')).toBe(true)
-    expect(isLocale('en-US')).toBe(true)
-    expect(isLocale('en')).toBe(false)
+    expect(isLocale('en')).toBe(true)
+    expect(isLocale('en-US')).toBe(false)
     expect(localeFromPath('/fr/artists')).toBe('fr')
-    expect(localeFromPath('/en')).toBe('en-US')
-    expect(localeFromPath('/en/genres')).toBe('en-US')
-    expect(localeFromPath('/en-US')).toBe('en-US')
-    expect(localeFromPath('/en-US/artists')).toBe('en-US')
+    expect(localeFromPath('/en')).toBe('en')
+    expect(localeFromPath('/en/genres')).toBe('en')
+    expect(localeFromPath('/en-US')).toBeUndefined()
+    expect(localeFromPath('/en-US/artists')).toBeUndefined()
     expect(localeFromPath('/enough/genres')).toBeUndefined()
     expect(localeFromPath('/de/genres')).toBeUndefined()
   })
 
   it('prefixes both root and nested paths without changing route names', () => {
-    expect(localizePath('/', 'en-US')).toBe('/en')
+    expect(localizePath('/', 'en')).toBe('/en')
     expect(localizePath('/', 'fr')).toBe('/fr')
-    expect(localizePath('/artists', 'en-US')).toBe('/en/artists')
+    expect(localizePath('/artists', 'en')).toBe('/en/artists')
     expect(localizePath('history', 'fr')).toBe('/fr/history')
   })
 
@@ -35,7 +32,7 @@ describe('locale routing', () => {
     ['/en', '/'],
     ['/en/', '/'],
     ['/en/genres', '/genres'],
-    ['/en-US/artists/', '/artists/'],
+    ['/en-US/artists/', '/en-US/artists/'],
     ['/fr/history', '/history'],
     ['/enough/genres', '/enough/genres'],
     ['/genres', '/genres'],

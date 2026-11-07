@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from 'vitest'
 import { ExplorerContext } from '../ExplorerContext.ts'
+import { graphForLocale } from '../data/graphLocale.ts'
 import { buildIndex } from '../graph/graph.ts'
 import { createTimelineModel } from '../graph/timeline.ts'
 import type { MusicGraph } from '../graph/types.ts'
@@ -23,7 +24,7 @@ const graph: MusicGraph = {
   ],
 }
 
-function renderPanel(data: MusicGraph, selectedId: string, showCloseButton = true, locale: Locale = 'en-US') {
+function renderPanel(data: MusicGraph, selectedId: string, showCloseButton = true, locale: Locale = 'en') {
   const index = buildIndex(data)
   return renderWithIntl(
     <ExplorerContext.Provider value={{
@@ -49,6 +50,31 @@ function renderPanel(data: MusicGraph, selectedId: string, showCloseButton = tru
 }
 
 describe('detail panel sources', () => {
+  it('shows festival relationship citations in both panels and omits an unsourced festival', () => {
+    const data: MusicGraph = {
+      ...graph,
+      nodes: [...graph.nodes,
+        { id: 'festival:example', type: 'festival', name: 'Cited festival' },
+        { id: 'festival:uncited', type: 'festival', name: 'Uncited festival' },
+      ],
+      edges: [...graph.edges,
+        { id: 'festival:cited', type: 'festival_related', from: 'genre:jazz', to: 'festival:example',
+          note: 'A documented jazz programme.', sources: ['https://example.com/Festival-programme'] },
+        { id: 'festival:uncited', type: 'festival_related', from: 'genre:jazz', to: 'festival:uncited' },
+      ],
+    }
+    const entityPanel = renderPanel(data, 'genre:jazz')
+    expect(entityPanel).toContain('Cited festival')
+    expect(entityPanel).toContain('festivals')
+    expect(entityPanel).toContain('href="https://example.com/Festival-programme"')
+    expect(entityPanel).not.toContain('Uncited festival')
+    const festivalPanel = renderPanel(data, 'festival:example')
+    expect(festivalPanel).toContain('connected entities')
+    expect(festivalPanel).toContain('Jazz')
+    expect(festivalPanel).toContain('href="https://example.com/Festival-programme"')
+    expect(renderPanel(data, 'festival:example', true, 'fr')).toContain('entités liées')
+  })
+
   it('localizes source links without a page title', () => {
     const data: MusicGraph = {
       ...graph,
@@ -92,6 +118,23 @@ describe('detail panel sources', () => {
     expect(markup).toContain('Estimated period: Broad historical context, not a verified inception year.')
     expect(markup).not.toContain('Historical prominence')
     expect(markup).toContain('href="https://example.com/Jazz"')
+  })
+
+  it.each([
+    ['en', 'c. 586 BCE – 582 BCE', 'Estimated period: The 586–582 BCE range'],
+    ['fr', 'vers 586 AEC – 582 AEC', 'Période estimée : La période 586–582'],
+  ] as const)('shows the Pythian date range and its explanation in %s', (locale, date, explanation) => {
+    const source = graphForLocale(locale)
+    const data: MusicGraph = {
+      ...source,
+      nodes: source.nodes.filter((node) => node.id === 'event:pythian-games-panhellenic-reorganisation'),
+      edges: [],
+    }
+    expect(data.nodes).toHaveLength(1)
+    const markup = renderPanel(data, 'event:pythian-games-panhellenic-reorganisation', true, locale)
+    expect(markup).toContain(date)
+    expect(markup).toContain(explanation)
+    expect(markup).not.toContain(`${date} (`)
   })
 
   it.each([undefined, null])('explains an undated entry and retains its sources and relationships (%s)', (period) => {

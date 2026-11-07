@@ -21,9 +21,9 @@ const origin = 'https://soundlines.example'
 
 describe('localized App Router pages', () => {
   it.each([
-    ['home', HomePage, homeMetadata, 'en-US', {}, '/en', '/fr'],
+    ['home', HomePage, homeMetadata, 'en', {}, '/en', '/fr'],
     ['genres', GenresPage, genresMetadata, 'fr', {}, '/en/genres', '/fr/genres'],
-    ['artists', ArtistsPage, artistsMetadata, 'en-US', { sort: 'oldest-first' }, '/en/artists?sort=oldest-first', '/fr/artists?sort=oldest-first'],
+    ['artists', ArtistsPage, artistsMetadata, 'en', { sort: 'oldest-first' }, '/en/artists?sort=oldest-first', '/fr/artists?sort=oldest-first'],
     ['instruments', InstrumentsPage, instrumentsMetadata, 'fr', {}, '/en/instruments', '/fr/instruments'],
     ['history', HistoryPage, historyMetadata, 'fr', { focus: 'event:mtv-launch' }, '/en/history?focus=event%3Amtv-launch', '/fr/history?focus=event%3Amtv-launch'],
   ] as const)('keeps %s in the shared layout with canonical and alternate URLs', async (_name, page, generateMetadata, locale, searchParams, english, french) => {
@@ -38,16 +38,16 @@ describe('localized App Router pages', () => {
     const canonical = `${origin}${locale === 'fr' ? french : english}`
     expect(metadata.alternates).toEqual({
       canonical,
-      languages: { 'en-US': `${origin}${english}`, fr: `${origin}${french}` },
+      languages: { en: `${origin}${english}`, fr: `${origin}${french}` },
     })
     expect(metadata.openGraph).toMatchObject({ url: canonical })
   })
 
   it.each([
-    ['legacy view', HomePage, 'en-US', { view: 'artists', 'artist-sort': 'oldest-first', other: '1' }, '/en/artists?artist-sort=oldest-first&other=1'],
+    ['legacy view', HomePage, 'en', { view: 'artists', 'artist-sort': 'oldest-first', other: '1' }, '/en/artists?artist-sort=oldest-first&other=1'],
     ['focused event', GenresPage, 'fr', { focus: 'event:mtv-launch', other: '1' }, '/fr/history?focus=event%3Amtv-launch&other=1'],
-    ['unknown focus', HomePage, 'en-US', { focus: 'artist:missing', other: '1' }, '/en?other=1'],
-    ['invalid order', ArtistsPage, 'en-US', { sort: 'invalid' }, '/en/artists'],
+    ['unknown focus', HomePage, 'en', { focus: 'artist:missing', other: '1' }, '/en?other=1'],
+    ['invalid order', ArtistsPage, 'en', { sort: 'invalid' }, '/en/artists'],
   ] as const)('redirects %s to the canonical route', async (_name, page, locale, searchParams, target) => {
     const props = { params: Promise.resolve({ locale }), searchParams: Promise.resolve(searchParams) }
     await expect(page(props)).rejects.toThrow(`REDIRECT ${target}`)
@@ -55,12 +55,12 @@ describe('localized App Router pages', () => {
 
   it('generates canonical metadata for a legacy home link', async () => {
     const metadata = await homeMetadata({
-      params: Promise.resolve({ locale: 'en-US' }),
+      params: Promise.resolve({ locale: 'en' }),
       searchParams: Promise.resolve({ view: 'artists' }),
     })
     expect(metadata.alternates).toEqual({
       canonical: `${origin}/en/artists`,
-      languages: { 'en-US': `${origin}/en/artists`, fr: `${origin}/fr/artists` },
+      languages: { en: `${origin}/en/artists`, fr: `${origin}/fr/artists` },
     })
   })
 

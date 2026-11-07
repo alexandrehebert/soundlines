@@ -13,7 +13,12 @@
     "sideA": "FACE A",
     "sideB": "FACE B",
     "scratchRecord": "Faites glisser le disque pour scratcher",
-    "touchScratchRecord": "Touchez le disque, puis faites-le glisser pour scratcher",
+    "play": "Lecture",
+    "pause": "Pause",
+    "playLoop": "Lire la boucle hip-hop",
+    "pauseLoop": "Mettre la boucle hip-hop en pause",
+    "loadingLoop": "Chargement",
+    "loopError": "La lecture audio a échoué. Appuyez sur Lecture pour réessayer.",
     "headline": {
       "first": "Suivez le",
       "second": "son."
@@ -46,16 +51,23 @@
     "connectedGenres": "Genres associés",
     "madeWith": "Fait avec",
     "madeWithLove": "amour",
-    "by": "par"
+    "by": "par",
+    "footer": {
+      "languages": "Langue",
+      "english": "English",
+      "french": "Français",
+      "pages": "Pages",
+      "home": "Accueil"
+    }
   },
   "search": {
     "instructions": "Utilisez les flèches haut et bas pour parcourir les résultats. Appuyez sur Entrée pour ouvrir le résultat sélectionné, ou le premier résultat si aucun n’est sélectionné. Appuyez sur Échap pour fermer la recherche.",
     "trigger": "Rechercher dans la musique",
     "title": "Rechercher",
     "close": "Fermer la recherche",
-    "desktopPlaceholder": "Genres, artistes, instruments, événements…",
-    "mobilePlaceholder": "Genres, artistes, instruments, événements…",
-    "emptyQuery": "Recherchez un genre, un artiste, un instrument, un événement ou un label.",
+    "desktopPlaceholder": "Rechercher genres, artistes, festivals…",
+    "mobilePlaceholder": "Genres, artistes, festivals…",
+    "emptyQuery": "Recherchez un genre, artiste, instrument, événement, label ou festival.",
     "noMatches": "Aucun résultat",
     "results": "Résultats de recherche"
   },
@@ -170,6 +182,7 @@
     "noMatches": "Aucun événement ne correspond à ces filtres.",
     "clearFilters": "Effacer les filtres",
     "connected": "Associé à",
+    "showMore": "Voir plus",
     "dating": {
       "dated": " classés par année de début",
       "undated": " ({count, number} sans date ; événements datés classés par année de début)"
@@ -263,7 +276,8 @@
       "place": "Lieux",
       "track": "Morceaux",
       "scene": "Scènes",
-      "event": "Événements"
+      "event": "Événements",
+      "festival": "Festivals"
     },
     "linkGroupLabels": {
       "lineage": "Filiation des genres",
@@ -271,7 +285,8 @@
       "instruments": "Instruments",
       "industry": "Labels et lieux",
       "tracks": "Morceaux",
-      "events": "Événements"
+      "events": "Événements",
+      "festivals": "Festivals"
     },
     "summarySpan": " sur la période {start} – {end}"
   },
@@ -324,7 +339,8 @@
       "place": "Lieu",
       "track": "Morceau",
       "scene": "Scène",
-      "event": "Événement"
+      "event": "Événement",
+      "festival": "Festival"
     },
     "families": {
       "classical": "Classique",
@@ -380,7 +396,8 @@
       "context_for": "apporte un contexte historique à",
       "recognized": "reconnaît",
       "involved": "a participé à",
-      "occurred_in": "a eu lieu à"
+      "occurred_in": "a eu lieu à",
+      "festival_related": "festivals"
     },
     "inverseEdges": {
       "influences": "influencé par",
@@ -404,7 +421,8 @@
       "context_for": "éclairé par",
       "recognized": "reconnu par",
       "involved": "comprend la participation de",
-      "occurred_in": "a accueilli"
+      "occurred_in": "a accueilli",
+      "festival_related": "entités liées"
     }
   },
   "seo": {

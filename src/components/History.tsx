@@ -32,6 +32,44 @@ function eventConnections(index: GraphIndex, id: string): GraphNode[] {
   return [...related.values()].slice(0, 3)
 }
 
+function HistoryDescription({ description, onSelect }: { description: string; onSelect: () => void }) {
+  const t = useTranslations('history')
+  const descriptionRef = useRef<HTMLParagraphElement>(null)
+  const [overflowing, setOverflowing] = useState(false)
+
+  useEffect(() => {
+    const element = descriptionRef.current
+    if (!element) return
+    const updateOverflow = () => setOverflowing(element.scrollHeight > element.clientHeight)
+    updateOverflow()
+    const observer = new ResizeObserver(updateOverflow)
+    observer.observe(element)
+    return () => observer.disconnect()
+  }, [description])
+
+  return (
+    <div className="history-event-description relative mt-2">
+      <p
+        ref={descriptionRef}
+        data-overflowing={overflowing || undefined}
+        className="text-sm leading-6 text-slate-400 md:text-[13px] md:leading-5"
+      >
+        {description}
+      </p>
+      {overflowing && (
+        <button
+          type="button"
+          onClick={onSelect}
+          className="absolute bottom-0 right-0 hidden items-center gap-1 rounded text-xs font-semibold text-slate-300 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:inline-flex"
+        >
+          {t('showMore')}
+          <ArrowUpRight className="h-3 w-3" aria-hidden="true" />
+        </button>
+      )}
+    </div>
+  )
+}
+
 export function History() {
   const { index, locale, selectedId, selectNode, historyFilters: filters, changeHistoryFilters } = useExplorer()
   const t = useTranslations('history')
@@ -243,7 +281,7 @@ export function History() {
                           selected ? 'border-violet-400/70 bg-violet-500/10' : 'border-slate-800 hover:border-slate-700'
                         }`}
                       >
-                        <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                        <div className="flex shrink-0 flex-wrap items-center gap-x-3 gap-y-2">
                           <span className="text-sm font-bold tabular-nums text-rose-300">{formatEventPeriod(event.period, locale)}</span>
                           <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
                             {labels.eventCategories[event.category]}
@@ -254,7 +292,7 @@ export function History() {
                             </span>
                           )}
                         </div>
-                        <h4 className="mt-2">
+                        <h4 className="mt-2 shrink-0">
                           <button
                             type="button"
                             aria-pressed={selected}
@@ -264,9 +302,9 @@ export function History() {
                             {event.name}
                           </button>
                         </h4>
-                        {event.description && <p className="mt-2 text-sm leading-6 text-slate-400 md:text-[13px] md:leading-5">{event.description}</p>}
+                        {event.description && <HistoryDescription description={event.description} onSelect={() => selectNode(event.id)} />}
                         {related.length > 0 && (
-                          <div className="mt-4 flex flex-wrap items-center gap-2">
+                          <div className="mt-4 flex shrink-0 flex-wrap items-center gap-2 md:mt-auto md:pt-4">
                             <span className="mr-1 text-[10px] font-bold uppercase tracking-wider text-slate-500">                            {t('connected')}</span>
                             {related.map((node) => (
                               <button

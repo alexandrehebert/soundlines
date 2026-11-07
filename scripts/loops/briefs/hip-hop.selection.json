@@ -1,0 +1,78 @@
+{
+  "brief": "hip-hop",
+  "profile": "final",
+  "source_seed": 41126,
+  "source_start_seconds": 11.6676,
+  "duration_seconds": 10.4355,
+  "fitted_bpm": 91.994,
+  "loop_bpm": 91.994,
+  "sample_rate": 48000,
+  "candidates_compared": 135,
+  "rejected_takes": {},
+  "top": [
+    {
+      "seed": 41126,
+      "start": 11.668,
+      "score": 0.3764,
+      "seam": 0.2246,
+      "consistency": 0.8258,
+      "dynamics": 0.0692
+    },
+    {
+      "seed": 41126,
+      "start": 14.274,
+      "score": 0.5061,
+      "seam": 0.3595,
+      "consistency": 0.7825,
+      "dynamics": 0.0683
+    },
+    {
+      "seed": 18409,
+      "start": 11.766,
+      "score": 0.5122,
+      "seam": 0.3149,
+      "consistency": 1.797,
+      "dynamics": 0.0176
+    },
+    {
+      "seed": 41126,
+      "start": 19.487,
+      "score": 0.5398,
+      "seam": 0.4146,
+      "consistency": 0.7514,
+      "dynamics": 0.0501
+    },
+    {
+      "seed": 41126,
+      "start": 10.356,
+      "score": 0.6044,
+      "seam": 0.497,
+      "consistency": 0.7944,
+      "dynamics": 0.0279
+    },
+    {
+      "seed": 60217,
+      "start": 9.856,
+      "score": 0.6485,
+      "seam": 0.4572,
+      "consistency": 1.3935,
+      "dynamics": 0.0519
+    },
+    {
+      "seed": 41126,
+      "start": 9.067,
+      "score": 0.6839,
+      "seam": 0.5246,
+      "consistency": 0.911,
+      "dynamics": 0.0682
+    },
+    {
+      "seed": 18409,
+      "start": 10.466,
+      "score": 0.6873,
+      "seam": 0.4472,
+      "consistency": 2.1163,
+      "dynamics": 0.0285
+    }
+  ]
+}

@@ -1,7 +1,12 @@
+import { readdirSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
 import englishGraph from './graph.json'
-import { frenchGraphTranslation, graphForLocale, translateGraph, type GraphTranslation } from './graphLocale.ts'
+import { GRAPH_OVERLAYS, graphForLocale, translateGraph, type GraphTranslation, type OverlayLocale } from './graphLocale.ts'
 import type { MusicGraph } from '../graph/types.ts'
+import { LOCALES } from '../i18n/routing.ts'
+
+const overlayLocales = Object.keys(GRAPH_OVERLAYS) as OverlayLocale[]
 
 function withoutTranslatedText(graph: MusicGraph): MusicGraph {
   const copy = structuredClone(graph)
@@ -22,8 +27,28 @@ function withoutTranslatedText(graph: MusicGraph): MusicGraph {
 }
 
 describe('localized graph overlays', () => {
+  it('registers exactly one graph.<locale>.json overlay per non-English app locale', () => {
+    const files = readdirSync(fileURLToPath(new URL('.', import.meta.url)))
+      .flatMap((file) => /^graph\.([a-z-]+)\.json$/i.exec(file)?.[1] ?? [])
+      .sort()
+    const expected = LOCALES.filter((locale) => locale !== 'en').sort()
+    expect(files).toEqual(expected)
+    expect([...overlayLocales].sort()).toEqual(expected)
+  })
+
+  it.each(overlayLocales)('keeps the graph structure and artist/track names unchanged in the %s overlay', (locale) => {
+    const english = englishGraph as MusicGraph
+    const localized = graphForLocale(locale)
+    expect(withoutTranslatedText(localized)).toStrictEqual(withoutTranslatedText(english))
+    for (const node of english.nodes) {
+      if (node.type === 'artist' || node.type === 'track') {
+        expect(GRAPH_OVERLAYS[locale].nodes[node.id]?.name, node.id).toBeUndefined()
+      }
+    }
+  })
+
   it('translates text without changing graph entities or relationships', () => {
-    const english = graphForLocale('en-US')
+    const english = graphForLocale('en')
     const french = graphForLocale('fr')
 
     expect(withoutTranslatedText(french)).toStrictEqual(withoutTranslatedText(english))
@@ -103,8 +128,8 @@ describe('localized graph overlays', () => {
     expect(graph.nodes[0].phases?.[0].note).toBe('Phase note')
   })
 
-  it('covers every node descriptive text field in the French overlay', () => {
-    const translations = frenchGraphTranslation()
+  it.each(overlayLocales)('covers every node descriptive text field in the %s overlay', (locale) => {
+    const translations = GRAPH_OVERLAYS[locale]
     const missing: string[] = []
     for (const node of (englishGraph as MusicGraph).nodes) {
       const translation = translations.nodes[node.id]
@@ -140,8 +165,8 @@ describe('localized graph overlays', () => {
     }
   })
 
-  it('covers every relationship note and period estimate in French', () => {
-    const translations = frenchGraphTranslation()
+  it.each(overlayLocales)('covers every relationship note and period estimate in the %s overlay', (locale) => {
+    const translations = GRAPH_OVERLAYS[locale]
     const missing: string[] = []
     for (const edge of (englishGraph as MusicGraph).edges) {
       const translation = translations.edges[edge.id]
@@ -168,7 +193,7 @@ describe('localized graph overlays', () => {
     }
 
     expect(() => translateGraph(miniGraph, translation))
-      .toThrow('French graph translation references unknown node artist:missing')
+      .toThrow('Graph translation references unknown node artist:missing')
   })
 
   it('rejects an edge estimate translation when the edge has no period', () => {
@@ -181,6 +206,6 @@ describe('localized graph overlays', () => {
     expect(() => translateGraph(graph, {
       nodes: {},
       edges: { 'edge:example': { estimateNote: 'Estimation' } },
-    })).toThrow('French estimate-note translation references edge without a period edge:example')
+    })).toThrow('Estimate-note translation references edge without a period edge:example')
   })
 })

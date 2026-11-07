@@ -47,8 +47,9 @@ export function finishPageLoading() {
     const destination = target?.closest<HTMLElement>('.discovery-record-perspective')
     const vinyl = overlay?.querySelector<HTMLElement>('.page-loading-vinyl')
     const record = vinyl?.querySelector<HTMLElement>('.discovery-vinyl')
+    // On mobile the landing record sits behind the hero copy, which the overlay record would cross, so just fade out.
     if (!overlay?.hasAttribute('data-opening') || !target || !destination || !vinyl || !record
-      || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      || window.matchMedia('(prefers-reduced-motion: reduce), (max-width: 42rem)').matches) {
       setLoading(false)
       return
     }

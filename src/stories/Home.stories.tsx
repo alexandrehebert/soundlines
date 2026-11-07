@@ -15,6 +15,27 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}
 
+export const TurntableHint: Story = {
+  play: async ({ canvasElement }) => {
+    const hint = canvasElement.querySelector<HTMLElement>('.discovery-turntable-hint')
+    if (!hint) throw new Error('Turntable hint is missing')
+    expect(hint).toHaveAttribute('aria-hidden', 'true')
+    expect(getComputedStyle(hint).pointerEvents).toBe('none')
+    await waitFor(() => expect(hint.querySelector('.discovery-turntable-hand')).not.toBeNull())
+    const point = hint.querySelector<HTMLElement>('.discovery-turntable-point')
+    const grip = hint.querySelector<HTMLElement>('.discovery-turntable-grip')
+    if (!point || !grip) throw new Error('Turntable hand poses are missing')
+    expect(grip.offsetTop).toBe(point.offsetTop)
+    expect(grip.offsetLeft).toBe(point.offsetLeft)
+    expect(getComputedStyle(grip).marginTop).toBe('0px')
+    const button = canvasElement.querySelector<HTMLButtonElement>('.discovery-turntable-play')
+    if (!button) throw new Error('Turntable play button is missing')
+    await fireEvent.focusIn(button)
+    await waitFor(() => expect(canvasElement.querySelector('.discovery-turntable-hint')).toBeNull())
+    expect(button).toHaveAttribute('aria-pressed', 'false')
+  },
+}
+
 export const MobileScratch: Story = {
   globals: { viewport: { value: 'mobile2', isRotated: false } },
   play: async ({ canvasElement }) => {
@@ -55,6 +76,7 @@ export const MobileScratch: Story = {
       const pointer = { pointerId: 1, pointerType: 'touch', isPrimary: true, button: 0 }
       const initialTransform = getComputedStyle(vinyl).transform
       await fireEvent.pointerDown(target, { ...pointer, clientX: start.x, clientY: start.y })
+      expect(canvasElement.querySelector('.discovery-turntable-hint')).toBeNull()
       expect(record).toHaveAttribute('data-scratching')
       await fireEvent.pointerMove(target, { ...pointer, clientX: end.x, clientY: end.y })
       await waitFor(() => expect(getComputedStyle(vinyl).transform).not.toBe(initialTransform))

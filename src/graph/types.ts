@@ -1,4 +1,4 @@
-import english from '../i18n/locales/en-US.json'
+import english from '../i18n/locales/en.json'
 
 /**
  * Property-graph data model.
@@ -18,6 +18,7 @@ export type NodeType =
   | 'track'
   | 'scene'
   | 'event'
+  | 'festival'
 
 export type EdgeType =
   // genre lineage
@@ -48,6 +49,8 @@ export type EdgeType =
   | 'recognized'
   | 'involved'
   | 'occurred_in'
+  // Any entity -> festival; the note specifies the documented connection.
+  | 'festival_related'
 
 export type Confidence = 'low' | 'medium' | 'high'
 

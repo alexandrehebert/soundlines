@@ -86,14 +86,15 @@ export const INSTRUMENT_EDGE_COLORS: Partial<Record<EdgeType, string>> = {
 }
 
 export const NODE_TYPE_COLORS: Record<NodeType, string> = {
-  genre: '#a78bfa',
-  artist: '#67e8f9',
-  instrument: '#fcd34d',
-  label: '#fbbf24',
-  place: '#4ade80',
-  track: '#f472b6',
-  scene: '#fb923c',
-  event: '#f87171',
+  genre: '#b6aaff',
+  artist: '#17d0d8',
+  instrument: '#efd369',
+  label: '#79befe',
+  place: '#7ace87',
+  track: '#fa93b7',
+  scene: '#fca864',
+  event: '#ff958e',
+  festival: '#e299e4',
 }
 
 export function formatYear(year: number, locale: Locale = DEFAULT_LOCALE): string {
@@ -107,7 +108,7 @@ export function formatPeriod(period: Period | null | undefined, locale: Locale =
   if (!period) return null
   const dates = catalogueFor(locale).dates
   const prefix = period.precision === 'circa' ? `${dates.circa} ` : ''
-  const suffix = period.estimated ? dates.estimated : ''
+  const suffix = period.estimated && period.precision !== 'circa' ? dates.estimated : ''
   const { start, end } = period
   if (end === start) return `${prefix}${formatYear(start, locale)}${suffix}`
   if (end == null) return `${prefix}${formatYear(start, locale)} – ${dates.now}${suffix}`

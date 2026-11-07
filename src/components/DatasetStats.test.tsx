@@ -17,7 +17,7 @@ const graph: MusicGraph = {
   edges: [{ id: 'e1', type: 'key_artist_of', from: 'artist:miles', to: 'genre:jazz', confidence: 'high' }],
 }
 
-function render(initialTab: StatsTab, reviewed = ['genre:jazz', 'e1'], locale: Locale = 'en-US') {
+function render(initialTab: StatsTab, reviewed = ['genre:jazz', 'e1'], locale: Locale = 'en') {
   const index = buildIndex(graph)
   return renderWithIntl(
     <ExplorerContext.Provider value={{

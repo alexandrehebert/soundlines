@@ -1,0 +1,882 @@
+{
+  "reviewedOn": "2026-11-07",
+  "policy": "Wikipedia is a supplementary cross-check and a route to references, not an automatic authority or confidence multiplier. History additions require a dated, source-backed performance, premiere, institutional format or circulation mechanism with a stated historical reason. Existing events are reused rather than duplicated.",
+  "festivals": [
+    {
+      "slug": "glastonbury",
+      "url": "https://en.wikipedia.org/wiki/Glastonbury_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:glastonbury",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:glastonbury-first-pyramid-stage"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "montreux-jazz",
+      "url": "https://en.wikipedia.org/wiki/Montreux_Jazz_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:montreux-jazz",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "newport-jazz",
+      "url": "https://en.wikipedia.org/wiki/Newport_Jazz_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:newport-jazz",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:ellington-newport-1956"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "roskilde",
+      "url": "https://en.wikipedia.org/wiki/Roskilde_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:roskilde",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "rock-in-rio",
+      "url": "https://en.wikipedia.org/wiki/Rock_in_Rio",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:rock-in-rio",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:rock-in-rio-first-edition"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "womadelaide",
+      "url": "https://en.wikipedia.org/wiki/WOMADelaide",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:womadelaide",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "The 1992 first edition is consistent. Venue changes and the later standalone programme should not be read as evidence that every WOMAD event used Adelaide.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "fuji-rock",
+      "url": "https://en.wikipedia.org/wiki/Fuji_Rock_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:fuji-rock",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "gnaoua-world-music",
+      "url": "https://en.wikipedia.org/wiki/Gnaoua_World_Music_Festival",
+      "status": "retrieved",
+      "permalink": "https://en.wikipedia.org/w/index.php?title=Gnawa_and_World_Music_Festival&oldid=1374564443",
+      "festivalId": "festival:gnaoua-world-music",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:essaouira-gnawa-festival"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "cape-town-jazz",
+      "url": "https://en.wikipedia.org/wiki/Cape_Town_International_Jazz_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:cape-town-jazz",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "Wikipedia’s chronology places the CTICC move in 2004, agreeing with contemporary reporting rather than the operator’s later 2005 account. The graph does not assert the disputed relocation year; Medium confidence is retained.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "petronio-alvarez",
+      "url": "https://es.wikipedia.org/wiki/Festival_de_Música_del_Pacífico_Petronio_Álvarez",
+      "status": "retrieved",
+      "permalink": "https://es.wikipedia.org/w/index.php?title=Festival_de_Música_del_Pacífico_Petronio_Álvarez&oldid=169225016",
+      "festivalId": "festival:petronio-alvarez",
+      "reviewedOn": "2026-11-07",
+      "language": "es",
+      "finding": "The Spanish article says 1996; the broadcasting archive and university history support a 1997 first edition. Retain 1997, distinguish earlier preparation from the first festival, and do not silently copy the Wikipedia date.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:petronio-alvarez-public-pacific-music-platform"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "woodstock",
+      "url": "https://en.wikipedia.org/wiki/Woodstock",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:woodstock",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "The article distinguishes scheduled 15–17 August from actual 15–18 August 1969. The graph already uses the bounded original 1969 gathering and its existing History entry.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:woodstock-festival"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "monterey-pop",
+      "url": "https://en.wikipedia.org/wiki/Monterey_International_Pop_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:monterey-pop",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "The article concerns the original June 1967 gathering. Preserve its bounded period and existing History event rather than duplicate that event.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:monterey-pop-festival"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "newport-folk",
+      "url": "https://en.wikipedia.org/wiki/Newport_Folk_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:newport-folk",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "Wikipedia records interrupted activity and an update warning. Retain the 1959 first edition and use specific cited performances, not an uninterrupted yearly run.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:dylan-electric-newport-1965"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "bayreuth",
+      "url": "https://en.wikipedia.org/wiki/Bayreuth_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:bayreuth",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:bayreuth-complete-ring-premiere"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "salzburg",
+      "url": "https://en.wikipedia.org/wiki/Salzburg_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:salzburg",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "donaueschingen",
+      "url": "https://en.wikipedia.org/wiki/Donaueschingen_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:donaueschingen",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:donaueschingen-contemporary-music-forum"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "isle-of-wight",
+      "url": "https://en.wikipedia.org/wiki/Isle_of_Wight_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:isle-of-wight",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "reading",
+      "url": "https://en.wikipedia.org/wiki/Reading_and_Leeds_Festivals",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:reading",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "Wikipedia covers both Reading and Leeds; the graph node is the Reading lineage. Retain the 1961 Richmond precursor and distinguish the 1971 Reading relocation and later Leeds branch.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "sonar",
+      "url": "https://en.wikipedia.org/wiki/Sónar",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:sonar",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "The article includes a 2026 closure interpretation of an obituary-style announcement, while the checked operator archive advertises a 2027 edition. Do not infer permanent closure from this unresolved claim; the entry remains a historical account without upcoming-event guarantees.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:sonar-electronic-music-multimedia-launch"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "tomorrowland",
+      "url": "https://en.wikipedia.org/wiki/Tomorrowland_(festival)",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:tomorrowland",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "Wikipedia’s infobox begins activity in 2004 but its body identifies the first edition in 2005. Retain the edition date 2005, not the planning year.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "movement-detroit",
+      "url": "https://en.wikipedia.org/wiki/Detroit_Electronic_Music_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:movement-detroit",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "Wikipedia distinguishes the 2000 DEMF, 2003–2004 Movement, 2005 Fuse-In and the current producer’s Movement from 2006. The existing graph entry explicitly covers this festival lineage and does not assert one unchanged legal organisation.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:detroit-electronic-music-festival-launch"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "womad",
+      "url": "https://en.wikipedia.org/wiki/World_of_Music,_Arts_and_Dance",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:womad",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "Wikipedia dates organisation/planning to 1980 but the first festival to 1982. The graph period means first edition, so retain 1982.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:womad-first-international-music-festival"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "reggae-sunsplash",
+      "url": "https://en.wikipedia.org/wiki/Reggae_Sunsplash",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:reggae-sunsplash",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "The article records pauses, revivals and a 2020 virtual event and carries style/independence warnings. Retain the 1978 first edition and avoid uninterrupted-activity or dancehall-invention claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:reggae-sunsplash-launch"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "fespam",
+      "url": "https://fr.wikipedia.org/wiki/Festival_panafricain_de_musique",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:fespam",
+      "reviewedOn": "2026-11-07",
+      "language": "fr",
+      "finding": "The French article agrees on the 1996 first edition. Organisational planning and earlier Pan-African proposals do not replace the first-edition anchor.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "festival-au-desert",
+      "url": "https://en.wikipedia.org/wiki/Festival_au_Désert",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:festival-au-desert",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "Wikipedia distinguishes original Malian editions in 2001–2012 from later exile/caravan activity. The graph’s institutional scope includes exile projects; do not describe an uninterrupted annual Malian concert or infer a fixed modern venue.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "sauti-za-busara",
+      "url": "https://en.wikipedia.org/wiki/Sauti_za_Busara",
+      "status": "retrieved",
+      "permalink": "https://en.wikipedia.org/w/index.php?title=Sauti_za_Busara&oldid=1344447878",
+      "festivalId": "festival:sauti-za-busara",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "Wikipedia documents the 2016 cancellation and later activity; it does not by itself supply all founding/repertoire details. The 2004 anchor remains supported by operator and dated Music In Africa references.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "cosquin",
+      "url": "https://en.wikipedia.org/wiki/Cosquín_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:cosquin",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:mercedes-sosa-cosquin-breakthrough"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "vina-del-mar",
+      "url": "https://en.wikipedia.org/wiki/Viña_del_Mar_International_Song_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:vina-del-mar",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:cecilia-vina-benidorm-exchange"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "rock-al-parque",
+      "url": "https://en.wikipedia.org/wiki/Rock_al_Parque",
+      "status": "retrieved",
+      "permalink": "https://en.wikipedia.org/w/index.php?title=Rock_al_Parque&oldid=1361028010",
+      "festivalId": "festival:rock-al-parque",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:rock-al-parque-public-rock-stage"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "sawai-gandharva",
+      "url": "https://en.wikipedia.org/wiki/Sawai_Gandharva_Bhimsen_Festival",
+      "status": "retrieved",
+      "permalink": "https://en.wikipedia.org/w/index.php?title=Sawai_Gandharva_Bhimsen_Festival&oldid=1355899958",
+      "festivalId": "festival:sawai-gandharva",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "java-jazz",
+      "url": "https://en.wikipedia.org/wiki/Java_Jazz_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:java-jazz",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "coachella",
+      "url": "https://en.wikipedia.org/wiki/Coachella",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:coachella",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:daft-punk-coachella-pyramid"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "lollapalooza",
+      "url": "https://en.wikipedia.org/wiki/Lollapalooza",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:lollapalooza",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:lollapalooza-alternative-music-tour"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "sanremo",
+      "url": "https://en.wikipedia.org/wiki/Sanremo_Music_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:sanremo",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:sanremo-first-radio-song-contest"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "new-orleans-jazz-heritage",
+      "url": "https://en.wikipedia.org/wiki/New_Orleans_Jazz_%26_Heritage_Festival",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:new-orleans-jazz-heritage",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "No material contradiction identified in the checked identifying/history material. Retain the primary and institutional references for detailed programme and impact claims.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:new-orleans-jazz-heritage-launch"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "wacken",
+      "url": "https://en.wikipedia.org/wiki/Wacken_Open_Air",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:wacken",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "Wikipedia distinguishes the 1989 idea from the first festival in 1990. Retain 1990.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [],
+      "historyDecision": "No additional dated History event selected in this pass. Being famous or having a founding year alone was insufficient; this does not assert historical unimportance."
+    },
+    {
+      "slug": "baalbeck",
+      "url": "https://en.wikipedia.org/wiki/Baalbeck_International_Festival",
+      "status": "retrieved",
+      "permalink": "https://en.wikipedia.org/w/index.php?title=Baalbeck_International_Festival&oldid=1369940325",
+      "festivalId": "festival:baalbeck",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "Wikipedia distinguishes 1955 organising/precursor activity from the named institution and committee in 1956. Retain the graph’s institutional 1956 anchor; do not collapse those different milestones.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:fairuz-baalbeck-1957"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "pythian-games",
+      "url": "https://en.wikipedia.org/wiki/Pythian_Games",
+      "status": "retrieved",
+      "permalink": null,
+      "festivalId": "festival:pythian-games",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "Wikipedia cites continued celebration to at least 424 CE, conflicting with the museum’s traditional 393/394 cessation. Follow-up scholarship discusses Delphi games in 424 and says the Pythian games were probably ongoing. Use 424 as an approximate attestation anchor, not an established final edition; retain Medium confidence.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:pythian-games-panhellenic-reorganisation"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    },
+    {
+      "slug": "three-choirs",
+      "url": "https://en.wikipedia.org/wiki/Three_Choirs_Festival",
+      "status": "retrieved",
+      "permalink": "https://en.wikipedia.org/w/index.php?title=Three_Choirs_Festival&oldid=1371081608",
+      "festivalId": "festival:three-choirs",
+      "reviewedOn": "2026-11-07",
+      "language": "en",
+      "finding": "The article calls 1715 a believed first meeting and records later naming/history. Retain an estimated conventional date, not an exact first-ever festival or uninterrupted operation claim.",
+      "confidenceChanged": false,
+      "sourceCaution": "Wikipedia is supplementary, editable and may cite the same operator sources already present; this is not automatically independent corroboration.",
+      "historyEventIds": [
+        "event:three-choirs-music-meetings"
+      ],
+      "historyDecision": "A sourced dated development is represented in History; full institutional life is kept in the festival node."
+    }
+  ],
+  "addedEvents": [
+    {
+      "id": "event:pythian-games-panhellenic-reorganisation",
+      "festivalId": "festival:pythian-games",
+      "year": -586,
+      "endYear": -582,
+      "confidence": "medium",
+      "significance": "landmark",
+      "inclusionReason": "Ancient institutionalisation of musical competition; keep the reform chronology distinct from an origin claim.",
+      "sources": [
+        "https://www.ime.gr/olympics/ancient/en/otherg_pithia.html",
+        "https://delphi.culture.gr/archaelogical-site/site-history/",
+        "https://whc.unesco.org/en/list/393/",
+        "https://en.wikipedia.org/wiki/Pythian_Games"
+      ]
+    },
+    {
+      "id": "event:three-choirs-music-meetings",
+      "festivalId": "festival:three-choirs",
+      "year": 1715,
+      "confidence": "medium",
+      "significance": "notable",
+      "inclusionReason": "An early enduring choral-festival institution, dated as a convention rather than a proven first meeting.",
+      "sources": [
+        "https://3choirs.org/about/history/",
+        "https://www.cambridge.org/core/books/abs/three-choirs-festival-a-history/origins/ECFAC2EDA97DFE4D9E6974900D65794B",
+        "https://www.rsmgb.org/news/from-the-archives-music-festivals",
+        "https://en.wikipedia.org/wiki/Three_Choirs_Festival"
+      ]
+    },
+    {
+      "id": "event:bayreuth-complete-ring-premiere",
+      "festivalId": "festival:bayreuth",
+      "year": 1876,
+      "confidence": "high",
+      "significance": "landmark",
+      "inclusionReason": "A documented complete-cycle premiere and an influential opera-presentation model.",
+      "sources": [
+        "https://www.bayreuther-festspiele.de/en/festival/history/",
+        "https://www.staatsoper.de/stuecke/die-walkuere",
+        "https://en.wikipedia.org/wiki/Bayreuth_Festival"
+      ]
+    },
+    {
+      "id": "event:donaueschingen-contemporary-music-forum",
+      "festivalId": "festival:donaueschingen",
+      "year": 1921,
+      "confidence": "high",
+      "significance": "notable",
+      "inclusionReason": "A documented new-music presentation institution, with historical scope supported by organiser and academic accounts.",
+      "sources": [
+        "https://musikfreunde-donaueschingen.de/donaueschinger-musiktage",
+        "https://www.donaueschingen.de/Musiktage",
+        "https://epub.uni-regensburg.de/53046/",
+        "https://en.wikipedia.org/wiki/Donaueschingen_Festival"
+      ]
+    },
+    {
+      "id": "event:sanremo-first-radio-song-contest",
+      "festivalId": "festival:sanremo",
+      "year": 1951,
+      "confidence": "high",
+      "significance": "notable",
+      "inclusionReason": "A dated broadcast milestone linking festival performance and national popular-song culture.",
+      "sources": [
+        "https://www.raicultura.it/amp/storia/foto/2020/01/Sanremo-86825077-9549-445f-b48e-e66ac0d90835.html",
+        "https://www.italia.it/en/liguria/things-to-do/sanremo-festival",
+        "https://en.wikipedia.org/wiki/Sanremo_Music_Festival"
+      ]
+    },
+    {
+      "id": "event:ellington-newport-1956",
+      "festivalId": "festival:newport-jazz",
+      "year": 1956,
+      "confidence": "high",
+      "significance": "landmark",
+      "inclusionReason": "A specifically documented performance/recording turning point in an existing jazz career.",
+      "sources": [
+        "https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/Duke-Ellington-at-Newport_Nass.pdf",
+        "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/registry-by-induction-years/2022/",
+        "https://en.wikipedia.org/wiki/Newport_Jazz_Festival"
+      ]
+    },
+    {
+      "id": "event:dylan-electric-newport-1965",
+      "festivalId": "festival:newport-folk",
+      "year": 1965,
+      "confidence": "high",
+      "significance": "landmark",
+      "inclusionReason": "A documented performance at the folk/rock boundary, with disputed audience interpretation kept qualified.",
+      "sources": [
+        "https://blogs.loc.gov/nls-music-notes/2019/07/on-this-day-in-history-of-rock-and-roll-and-folk-festivals-july-25-1965/",
+        "https://library.rockhall.com/greatest_festival_moments/newport_folk_1965",
+        "https://en.wikipedia.org/wiki/Newport_Folk_Festival"
+      ]
+    },
+    {
+      "id": "event:mercedes-sosa-cosquin-breakthrough",
+      "festivalId": "festival:cosquin",
+      "year": 1965,
+      "confidence": "high",
+      "significance": "notable",
+      "inclusionReason": "A documented career breakthrough with regional musical significance.",
+      "sources": [
+        "https://aquicosquin.com.ar/linea-de-tiempo/",
+        "https://www.argentina.gob.ar/node/325785",
+        "https://en.wikipedia.org/wiki/Cosquín_Festival"
+      ]
+    },
+    {
+      "id": "event:cecilia-vina-benidorm-exchange",
+      "festivalId": "festival:vina-del-mar",
+      "year": 1965,
+      "confidence": "high",
+      "significance": "notable",
+      "inclusionReason": "A specific, sourced transatlantic circulation mechanism rather than merely a festival founding.",
+      "sources": [
+        "https://www.memoriachilena.gob.cl/602/w3-article-96432.html",
+        "https://en.wikipedia.org/wiki/Viña_del_Mar_International_Song_Festival"
+      ]
+    },
+    {
+      "id": "event:fairuz-baalbeck-1957",
+      "festivalId": "festival:baalbeck",
+      "year": 1957,
+      "confidence": "high",
+      "significance": "notable",
+      "inclusionReason": "A dated performance tied to a documented platform for Lebanese musical creation.",
+      "sources": [
+        "https://www.aub.edu.lb/doctorates/recipients/Pages/fairuz-profile.aspx",
+        "https://www.baalbeck.org.lb/history/1000/",
+        "https://en.wikipedia.org/wiki/Baalbeck_International_Festival"
+      ]
+    },
+    {
+      "id": "event:reggae-sunsplash-launch",
+      "festivalId": "festival:reggae-sunsplash",
+      "year": 1978,
+      "confidence": "high",
+      "significance": "notable",
+      "inclusionReason": "A documented development in reggae concert presentation and circulation.",
+      "sources": [
+        "https://reggaesunsplashpreservationsociety.org/",
+        "https://www.jamaicaobserver.com/2022/05/19/the-birth-of-reggae-sunsplash/",
+        "https://en.wikipedia.org/wiki/Reggae_Sunsplash"
+      ]
+    },
+    {
+      "id": "event:womad-first-international-music-festival",
+      "festivalId": "festival:womad",
+      "year": 1982,
+      "confidence": "high",
+      "significance": "landmark",
+      "inclusionReason": "A documented festival-format innovation and cross-cultural circulation project, not the invention of non-Western music.",
+      "sources": [
+        "https://petergabriel.com/release/live-at-womad-1982/",
+        "https://www.theguardian.com/culture/2022/jul/20/the-first-womad-festival-reviewed-archive-1982",
+        "https://en.wikipedia.org/wiki/World_of_Music,_Arts_and_Dance"
+      ]
+    },
+    {
+      "id": "event:rock-in-rio-first-edition",
+      "festivalId": "festival:rock-in-rio",
+      "year": 1985,
+      "confidence": "high",
+      "significance": "notable",
+      "inclusionReason": "A documented international concert-presentation milestone in Brazil.",
+      "sources": [
+        "https://www.rockinrio.com/rio/pt-br/historia/",
+        "https://www.queenonline.com/live/1985",
+        "https://en.wikipedia.org/wiki/Rock_in_Rio"
+      ]
+    },
+    {
+      "id": "event:rock-al-parque-public-rock-stage",
+      "festivalId": "festival:rock-al-parque",
+      "year": 1995,
+      "confidence": "medium",
+      "significance": "notable",
+      "inclusionReason": "A documented public-cultural infrastructure development, with the policy claim and admission exception qualified.",
+      "sources": [
+        "https://rockalparque.gov.co/versiones/rock-al-parque-1995",
+        "https://bogota.gov.co/mi-ciudad/cultura-recreacion-y-deporte/como-ha-sido-evolucion-de-rock-al-parque-desde-su-creacion-en-bogota",
+        "https://repository.udistrital.edu.co/bitstreams/21c745dc-8feb-47c4-b512-ee5ddd9167be/download",
+        "https://en.wikipedia.org/wiki/Rock_al_Parque"
+      ]
+    },
+    {
+      "id": "event:detroit-electronic-music-festival-launch",
+      "festivalId": "festival:movement-detroit",
+      "year": 2000,
+      "confidence": "high",
+      "significance": "notable",
+      "inclusionReason": "A documented public presentation of an established local musical legacy; organisational succession is qualified.",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/detroit-electronic-music-festival-movement",
+        "https://wdet.org/2020/10/09/the-motor-citys-techno-legacy-arrives-at-the-detroit-historical-museum/",
+        "https://en.wikipedia.org/wiki/Detroit_Electronic_Music_Festival"
+      ]
+    },
+    {
+      "id": "event:daft-punk-coachella-pyramid",
+      "festivalId": "festival:coachella",
+      "year": 2006,
+      "confidence": "high",
+      "significance": "landmark",
+      "inclusionReason": "A specifically documented performance innovation with an explicit institutional historical assessment.",
+      "sources": [
+        "https://library.rockhall.com/greatest_festival_moments/coachella_2006",
+        "https://www.grammy.com/news/record-daft-punk-discovery-album-20-year-anniversary/",
+        "https://en.wikipedia.org/wiki/Coachella"
+      ]
+    },
+    {
+      "id": "event:glastonbury-first-pyramid-stage",
+      "festivalId": "festival:glastonbury",
+      "year": 1971,
+      "confidence": "high",
+      "significance": "notable",
+      "inclusionReason": "A documented stage/presentation milestone that distinguishes the 1971 fair from the original founding.",
+      "sources": [
+        "https://www.glastonburyfestivals.co.uk/history/history-1971/",
+        "https://www.vam.ac.uk/articles/the-history-of-glastonbury-festival",
+        "https://en.wikipedia.org/wiki/Glastonbury_Festival"
+      ]
+    },
+    {
+      "id": "event:petronio-alvarez-public-pacific-music-platform",
+      "festivalId": "festival:petronio-alvarez",
+      "year": 1997,
+      "confidence": "medium",
+      "significance": "notable",
+      "inclusionReason": "A source-backed regional musical platform; the Wikipedia discrepancy is made explicit.",
+      "sources": [
+        "https://www.senalmemoria.co/articulos/el-petronio-alvarez-en-senal-memoria",
+        "https://riquezacompleta.javerianacali.edu.co/wp-content/uploads/RC_Petronio_guia_cultural.pdf",
+        "https://es.wikipedia.org/wiki/Festival_de_Música_del_Pacífico_Petronio_Álvarez"
+      ]
+    },
+    {
+      "id": "event:new-orleans-jazz-heritage-launch",
+      "festivalId": "festival:new-orleans-jazz-heritage",
+      "year": 1970,
+      "confidence": "high",
+      "significance": "notable",
+      "inclusionReason": "A documented festival model rooted in local musical and community heritage.",
+      "sources": [
+        "https://www.nojazzfest.com/history/",
+        "https://folkways.si.edu/news-and-press/remembering-george-wein",
+        "https://en.wikipedia.org/wiki/New_Orleans_Jazz_%26_Heritage_Festival"
+      ]
+    },
+    {
+      "id": "event:lollapalooza-alternative-music-tour",
+      "festivalId": "festival:lollapalooza",
+      "year": 1991,
+      "confidence": "high",
+      "significance": "notable",
+      "inclusionReason": "A documented touring-festival format in alternative music, distinct from its later permanent venue.",
+      "sources": [
+        "https://catalog.rockhall.com/rrhof-ais/Details/archive/110000155",
+        "https://iaspmjournal.net/index.php/IASPM_Journal/article/download/325/563",
+        "https://en.wikipedia.org/wiki/Lollapalooza"
+      ]
+    },
+    {
+      "id": "event:sonar-electronic-music-multimedia-launch",
+      "festivalId": "festival:sonar",
+      "year": 1994,
+      "confidence": "high",
+      "significance": "notable",
+      "inclusionReason": "A dated music/multimedia presentation format, without inventing a later programme in 1994.",
+      "sources": [
+        "https://sonar.es/es/about/ediciones-anteriores",
+        "https://www.accid.org/documents/cas_sonar.pdf",
+        "https://en.wikipedia.org/wiki/Sónar"
+      ]
+    }
+  ],
+  "followUpSources": [
+    "https://antiquitasviva.com/wp-content/uploads/2021/12/71.1-2.12.-jaric-j.-primary-written-records-as-a-source-for-cultural-change.pdf"
+  ]
+}

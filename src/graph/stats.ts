@@ -181,7 +181,7 @@ export function datasetStats(index: GraphIndex, now = CURRENT_YEAR): DatasetStat
   }
 }
 
-export type LinkGroup = 'lineage' | 'people' | 'instruments' | 'industry' | 'tracks' | 'events'
+export type LinkGroup = 'lineage' | 'people' | 'instruments' | 'industry' | 'tracks' | 'events' | 'festivals'
 
 export const LINK_GROUPS: Record<LinkGroup, { label: string; types: readonly EdgeType[] }> = {
   lineage: {
@@ -193,6 +193,7 @@ export const LINK_GROUPS: Record<LinkGroup, { label: string; types: readonly Edg
   industry: { label: 'Labels & places', types: ['signed_to', 'founded', 'originated_in'] },
   tracks: { label: 'Tracks', types: ['anthem_of', 'recorded_by', 'composed_by'] },
   events: { label: 'Events', types: ['shaped', 'context_for', 'recognized', 'involved', 'occurred_in'] },
+  festivals: { label: 'Festivals', types: ['festival_related'] },
 }
 
 export interface ReviewProgress<K extends string> {

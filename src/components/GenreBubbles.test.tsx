@@ -22,7 +22,7 @@ function renderBubbles(selectedId: string | null) {
   const index = buildIndex(graph)
   return renderWithIntl(
     <ExplorerContext.Provider value={{
-      index, model: createTimelineModel(index, 'genre'), locale: 'en-US', view: 'genre',
+      index, model: createTimelineModel(index, 'genre'), locale: 'en', view: 'genre',
       selectedId, selectNode: vi.fn(), changeView: vi.fn(),
       order: 'family', changeOrder: vi.fn(),
       genreDisplay: 'bubbles', changeGenreDisplay: vi.fn(), goHome: vi.fn(), isHome: false,

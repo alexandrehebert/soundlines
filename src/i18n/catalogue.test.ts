@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { createTranslator } from 'next-intl'
-import english from './locales/en-US.json'
+import english from './locales/en.json'
 import french from './locales/fr.json'
 import { catalogueFor } from './catalogue.ts'
 import { graphLabels } from './graphLabels.ts'
@@ -69,7 +69,7 @@ describe('translation catalogues', () => {
   })
 
   it('preserves singular, zero, plural and grouped French counts', () => {
-    const en = createTranslator({ locale: 'en-US', messages: english })
+    const en = createTranslator({ locale: 'en', messages: english })
     const fr = createTranslator({ locale: 'fr', messages: french })
     expect(en('stats.noLinksYet', { count: 1 })).toBe('1 entry has no links yet.')
     expect(en('stats.noLinksYet', { count: 0 })).toBe('0 entries have no links yet.')

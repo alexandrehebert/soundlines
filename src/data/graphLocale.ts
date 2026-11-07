@@ -21,8 +21,10 @@ export interface GraphTranslation {
   edges: Record<string, EdgeTranslation>
 }
 
+/** Locales whose graph text comes from an overlay; English is the source graph itself. */
+export type OverlayLocale = Exclude<Locale, 'en'>
+
 const englishGraph = rawEnglishGraph as MusicGraph
-const frenchGraph = rawFrenchGraph as GraphTranslation
 const nodeTranslationFields = new Set(['name', 'description', 'phaseNote', 'estimateNote', 'phaseNotes'])
 const edgeTranslationFields = new Set(['note', 'estimateNote'])
 
@@ -40,7 +42,7 @@ function assertKnownTextFields(
 
 function translatedText(value: string | undefined, id: string, field: string): string | undefined {
   if (value === undefined) return undefined
-  if (!value.trim()) throw new Error(`Empty French translation for ${id}.${field}`)
+  if (!value.trim()) throw new Error(`Empty graph translation for ${id}.${field}`)
   return value
 }
 
@@ -52,22 +54,22 @@ export function translateGraph(graph: MusicGraph, translations: GraphTranslation
 
   for (const id of Object.keys(translations.nodes)) {
     const node = nodeById.get(id)
-    if (!node) throw new Error(`French graph translation references unknown node ${id}`)
+    if (!node) throw new Error(`Graph translation references unknown node ${id}`)
     const translation = translations.nodes[id]
     if (translation.estimateNote !== undefined && !node.period) {
-      throw new Error(`French estimate-note translation references node without a period ${id}`)
+      throw new Error(`Estimate-note translation references node without a period ${id}`)
     }
     for (const phaseStart of Object.keys(translation.phaseNotes ?? {})) {
       if (!node.phases?.some((phase) => String(phase.start) === phaseStart)) {
-        throw new Error(`French phase-note translation references unknown phase ${id}.${phaseStart}`)
+        throw new Error(`Phase-note translation references unknown phase ${id}.${phaseStart}`)
       }
     }
   }
   for (const id of Object.keys(translations.edges)) {
     const edge = edgeById.get(id)
-    if (!edge) throw new Error(`French graph translation references unknown edge ${id}`)
+    if (!edge) throw new Error(`Graph translation references unknown edge ${id}`)
     if (translations.edges[id].estimateNote !== undefined && !edge.period) {
-      throw new Error(`French estimate-note translation references edge without a period ${id}`)
+      throw new Error(`Estimate-note translation references edge without a period ${id}`)
     }
   }
 
@@ -111,13 +113,14 @@ export function translateGraph(graph: MusicGraph, translations: GraphTranslation
   return { ...graph, nodes, edges }
 }
 
-const graphTranslations: Partial<Record<Locale, GraphTranslation>> = { fr: frenchGraph }
-
-export function graphForLocale(locale: Locale): MusicGraph {
-  const translations = graphTranslations[locale]
-  return translations ? translateGraph(englishGraph, translations) : englishGraph
+/**
+ * One `graph.<locale>.json` overlay per non-English app locale. The type makes a new locale in
+ * `LOCALES` fail to compile until its overlay is registered here.
+ */
+export const GRAPH_OVERLAYS: Record<OverlayLocale, GraphTranslation> = {
+  fr: rawFrenchGraph as GraphTranslation,
 }
 
-export function frenchGraphTranslation(): GraphTranslation {
-  return frenchGraph
+export function graphForLocale(locale: Locale): MusicGraph {
+  return locale === 'en' ? englishGraph : translateGraph(englishGraph, GRAPH_OVERLAYS[locale])
 }

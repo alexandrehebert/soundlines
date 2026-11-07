@@ -68,7 +68,22 @@ describe('history chronology', () => {
     expect(formatEventPeriod({ start: 1910, end: 1970, precision: 'decade' })).toBe('1910 – 1970 (approx.)')
     expect(formatEventPeriod({ start: 2000 })).toBe('2000 – now')
     expect(formatEventPeriod({ start: 1800, end: 1850, precision: 'circa', estimated: true }))
-      .toBe('c. 1800 – 1850 (estimated)')
+      .toBe('c. 1800 – 1850')
+  })
+
+  it('labels ancient events and BCE ranges in the selected language', () => {
+    expect(formatEventPeriod({ start: -582, end: -582, precision: 'circa' })).toBe('c. 582 BCE')
+    expect(formatEventPeriod({ start: -582, end: -582, precision: 'circa' }, 'fr')).toContain('582 AEC')
+    expect(formatEventPeriod({ start: -586, end: -582 })).toBe('586 BCE – 582 BCE')
+    expect(formatEventPeriod({ start: -582, end: 424 })).toBe('582 BCE – 424')
+  })
+
+  it('uses the estimated reform chronology rather than a single year for the Pythian event', () => {
+    const event = createHistoryModel(rawGraph as MusicGraph).dated
+      .find((candidate) => candidate.id === 'event:pythian-games-panhellenic-reorganisation')
+    expect(event?.period).toMatchObject({ start: -586, end: -582, precision: 'circa', estimated: true })
+    expect(formatEventPeriod(event!.period)).toBe('c. 586 BCE – 582 BCE')
+    expect(formatEventPeriod(event!.period, 'fr')).toBe('vers 586 AEC – 582 AEC')
   })
 
   it('keeps undated events separate without inventing dates or losing their filters', () => {
@@ -108,7 +123,7 @@ describe('history chronology', () => {
     const grouped = groupHistoryEvents(events, DEFAULT_HISTORY_FILTERS).flatMap((group) => group.events)
     expect(events.length + model.undated.length).toBe(data.nodes.filter((node) => node.type === 'event').length)
     expect(grouped.map((event) => event.id)).toEqual(events.map((event) => event.id))
-    expect(events[0].period.start).toBe(900)
+    expect(events[0].period.start).toBe(-586)
     expect(events.at(-1)?.period.start).toBe(2022)
   })
 

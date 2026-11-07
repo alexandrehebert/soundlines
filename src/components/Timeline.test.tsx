@@ -47,7 +47,7 @@ function renderTimeline(
   const index = buildIndex(data)
   return renderWithIntl(
     <ExplorerContext.Provider value={{
-      index, model: createTimelineModel(index, view), locale: 'en-US', view,
+      index, model: createTimelineModel(index, view), locale: 'en', view,
       selectedId, selectNode: vi.fn(), changeView: vi.fn(),
       order, changeOrder: vi.fn(), genreDisplay: 'bars', changeGenreDisplay: vi.fn(), goHome: vi.fn(), isHome: false,
       historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),

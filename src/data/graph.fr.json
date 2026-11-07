@@ -4640,6 +4640,366 @@
     "artist:james-ferraro": {
       "description": "Musicien électronique expérimental dont l’album Far Side Virtual de 2011 a contribué à établir le volet utopique-virtuel de Vaporwave à travers des sons numériques immaculés tirés de l’informatique et de la culture de consommation.",
       "estimateNote": "Le début approximatif des années 2000 part de la chronologie biographique des Skaters et des premiers travaux solo. Far Side Virtual en 2011 est une étape ultérieure, pas le début de sa carrière."
+    },
+    "festival:glastonbury": {
+      "name": "Glastonbury Festival",
+      "description": "Festival de musique et des arts de la scène à Worthy Farm, à Pilton en Angleterre, créé en 1970. Ses premières éditions réunissaient des artistes de pop, de folk et de blues."
+    },
+    "festival:montreux-jazz": {
+      "name": "Montreux Jazz Festival",
+      "description": "Festival suisse fondé par Claude Nobs en 1967 au bord du Léman. Sa programmation dépasse ses racines jazz pour accueillir la soul, le blues, le rock et d’autres styles."
+    },
+    "festival:newport-jazz": {
+      "name": "Newport Jazz Festival",
+      "description": "Festival de jazz inauguré à Newport, dans le Rhode Island, en juillet 1954. Billie Holiday, Dizzy Gillespie et Ella Fitzgerald figuraient à sa première édition."
+    },
+    "festival:roskilde": {
+      "name": "Roskilde Festival",
+      "description": "Festival danois de musique et de culture dont la première édition, en 1971, portait le nom de Sound Festival. Ses archives scéniques documentent notamment le concert de Bob Marley en 1978."
+    },
+    "festival:rock-in-rio": {
+      "name": "Rock in Rio",
+      "description": "Festival de musique brésilien créé par Roberto Medina à Rio de Janeiro en 1985. Des éditions ultérieures ont aussi porté le festival au Portugal et en Espagne."
+    },
+    "festival:womadelaide": {
+      "name": "WOMADelaide",
+      "description": "Festival de musique, d’arts et de danse à Adélaïde, en Australie, présenté pour la première fois en 1992. Nusrat Fateh Ali Khan et Youssou N’Dour figuraient au programme inaugural."
+    },
+    "festival:fuji-rock": {
+      "name": "Fuji Rock Festival",
+      "description": "Festival de musique japonais inauguré à Fuji Tenjinyama en 1997, dont la programmation réunit rock et musiques électroniques. Il s’installe à la station de ski de Naeba en 1999."
+    },
+    "festival:gnaoua-world-music": {
+      "name": "Gnaoua and World Music Festival",
+      "description": "Festival créé à Essaouira, au Maroc, en 1998. Il réunit des maîtres gnaoua et des musiciens d’autres traditions lors de concerts et de collaborations."
+    },
+    "festival:cape-town-jazz": {
+      "name": "Cape Town International Jazz Festival",
+      "description": "Festival de jazz sud-africain lancé au Cap en 2000, initialement en partenariat avec les organisateurs de North Sea Jazz. Son histoire documente des artistes sud-africains et internationaux."
+    },
+    "festival:petronio-alvarez": {
+      "name": "Festival de Música del Pacífico Petronio Álvarez",
+      "description": "Festival des musiques du Pacifique colombien organisé à Cali depuis 1997. Les archives de la radiodiffusion publique colombienne conservent des enregistrements de ses premières éditions, notamment d’ensembles de marimba."
+    },
+    "place:pilton": {
+      "name": "Pilton",
+      "description": "Village du Somerset, en Angleterre, où Worthy Farm accueille le festival de Glastonbury."
+    },
+    "place:montreux": {
+      "name": "Montreux",
+      "description": "Ville suisse au bord du Léman, associée au Montreux Jazz Festival."
+    },
+    "place:newport-rhode-island": {
+      "name": "Newport, Rhode Island",
+      "description": "Ville américaine où le premier Newport Jazz Festival se tient au Newport Casino en 1954."
+    },
+    "place:roskilde": {
+      "name": "Roskilde",
+      "description": "Ville danoise située en Seeland, à l’ouest de Copenhague, qui accueille le festival de Roskilde."
+    },
+    "place:adelaide": {
+      "name": "Adélaïde",
+      "description": "Ville d’Australie-Méridionale dont le Botanic Park accueille WOMADelaide."
+    },
+    "place:naeba": {
+      "name": "Naeba",
+      "description": "Station de ski japonaise de Niigata où Fuji Rock s’installe en 1999."
+    },
+    "place:cape-town": {
+      "name": "Le Cap",
+      "description": "Ville sud-africaine qui accueille le premier festival de jazz du Cap au Good Hope Centre en 2000."
+    },
+    "festival:woodstock": {
+      "name": "Woodstock Music & Art Fair",
+      "description": "Le rassemblement d’août 1969 à Bethel, dans l’État de New York, devient une image marquante de la contre-culture rock. Les prestations de Jimi Hendrix, des Who et d’autres artistes font du festival une référence durable pour les grands rassemblements musicaux en plein air ; cette entrée concerne l’édition de 1969."
+    },
+    "festival:monterey-pop": {
+      "name": "Monterey International Pop Festival",
+      "description": "Le festival californien de juin 1967 contribue à faire des festivals de rock de grands rassemblements artistiques et offre une scène décisive à Janis Joplin. Son programme réunit Ravi Shankar et des artistes de rock et de soul, dont Jimi Hendrix et Otis Redding. Cette entrée concerne le festival original de 1967."
+    },
+    "festival:newport-folk": {
+      "name": "Newport Folk Festival",
+      "description": "Fondé dans le Rhode Island en 1959, Newport devient un lieu de rencontre du renouveau folk américain et des chansons de protestation de l’époque des droits civiques. La prestation électrique de Bob Dylan en 1965 place le festival au cœur des débats sur les rapports entre folk et rock."
+    },
+    "festival:bayreuth": {
+      "name": "Festival de Bayreuth",
+      "description": "Le festival de Richard Wagner ouvre à Bayreuth en 1876 dans un théâtre conçu pour ses drames musicaux. Sa salle spécialement construite, l’obscurité du parterre et l’orchestre en contrebas font de la présentation même de l’opéra une composante du projet artistique."
+    },
+    "place:bayreuth": {
+      "name": "Bayreuth",
+      "description": "Ville allemande où le théâtre de festival de Wagner ouvre en 1876."
+    },
+    "festival:salzburg": {
+      "name": "Festival de Salzbourg",
+      "description": "Fondé en 1920, Salzbourg développe un modèle de festival international associant opéra, concerts et théâtre parlé. Le répertoire de Mozart et les œuvres modernes se partagent sa programmation, reliant le patrimoine musical de la ville à l’évolution des pratiques d’interprétation."
+    },
+    "festival:donaueschingen": {
+      "name": "Donaueschinger Musiktage",
+      "description": "Fondé en 1921 comme forum de musique de chambre d’avant-garde, Donaueschingen devient une plateforme durable pour la composition contemporaine et l’expérimentation sonore. La collaboration avec le radiodiffuseur SWF, devenu SWR, élargit sa programmation orchestrale et vocale après 1950."
+    },
+    "place:donaueschingen": {
+      "name": "Donaueschingen",
+      "description": "Ville allemande associée au festival de musique contemporaine fondé en 1921."
+    },
+    "festival:isle-of-wight": {
+      "name": "Isle of Wight Festival",
+      "description": "Les festivals de 1968 à 1970 contribuent à définir l’ampleur des rassemblements rock britanniques en plein air. L’édition de 1970 accueille Jimi Hendrix, les Who et Joan Baez ; après une longue interruption, le festival revient en 2002."
+    },
+    "place:isle-of-wight": {
+      "name": "Île de Wight",
+      "description": "Île anglaise qui accueille les festivals originaux de 1968 à 1970 puis leur reprise."
+    },
+    "festival:reading": {
+      "name": "Reading Festival",
+      "description": "Le festival trouve son origine dans le National Jazz Festival lancé en 1961, avant son installation ultérieure à Reading. Son histoire rock comprend le concert de Nirvana en tête d’affiche en 1992, reconnu par le Rock and Roll Hall of Fame comme une prestation marquante de l’histoire des festivals."
+    },
+    "place:reading": {
+      "name": "Reading",
+      "description": "Ville anglaise associée au futur Reading Festival ; son précurseur de 1961 n’y débute pas."
+    },
+    "festival:sonar": {
+      "name": "Sónar",
+      "description": "Lancé à Barcelone en 1994 autour des musiques électroniques et expérimentales, Sónar associe concerts, arts multimédias et expérimentation technologique. Son programme Sónar+D et ses éditions internationales prolongent cette rencontre entre musique, création et culture numérique."
+    },
+    "place:barcelona": {
+      "name": "Barcelone",
+      "description": "Ville espagnole où Sónar débute en 1994."
+    },
+    "festival:tomorrowland": {
+      "name": "Tomorrowland",
+      "description": "Fondé à Boom en 2005, Tomorrowland passe d’un rassemblement belge de musiques électroniques à une marque internationale de festival. Ses décors thématiques, films en ligne et retransmissions deviennent un exemple marquant du spectacle associé aux festivals mondiaux de musique dance."
+    },
+    "place:boom": {
+      "name": "Boom",
+      "description": "Commune belge où le premier Tomorrowland se tient en 2005."
+    },
+    "festival:movement-detroit": {
+      "name": "Movement / Detroit Electronic Music Festival",
+      "description": "Créé sous le nom de Detroit Electronic Music Festival en 2000, ce festival célèbre le rôle de Detroit dans le développement de la techno. Carl Craig participe à l’organisation initiale ; Derrick May reprend la production en 2003, lors de l’introduction du nom Movement. Les producteurs et noms ultérieurs s’inscrivent dans cette histoire évolutive."
+    },
+    "festival:womad": {
+      "name": "WOMAD",
+      "description": "Le premier festival World of Music, Arts and Dance, dans le Somerset en 1982, réunit des musiciens de nombreux pays et des groupes de rock britanniques. Le cofondateur Peter Gabriel en présente l’objectif comme celui de donner la tête d’affiche à des artistes hors du courant dominant occidental ; le format voyage ensuite à l’international."
+    },
+    "place:shepton-mallet": {
+      "name": "Shepton Mallet",
+      "description": "Ville du Somerset associée au Bath and West Showground, site du premier WOMAD en 1982."
+    },
+    "festival:reggae-sunsplash": {
+      "name": "Reggae Sunsplash",
+      "description": "Présenté pour la première fois à Montego Bay en 1978, Reggae Sunsplash offre une scène internationale au reggae jamaïcain. Ses archives de concerts conservées documentent son rôle dans la présentation du reggae et du dancehall à des publics au-delà de l’île."
+    },
+    "place:montego-bay": {
+      "name": "Montego Bay",
+      "description": "Ville jamaïcaine où Reggae Sunsplash est présenté pour la première fois en 1978."
+    },
+    "festival:fespam": {
+      "name": "FESPAM — Festival panafricain de musique",
+      "description": "Présenté pour la première fois à Brazzaville en 1996, le FESPAM associe concerts, recherche et échanges professionnels autour des musiques africaines. La préservation, la circulation culturelle et la coopération panafricaine sont des objectifs institutionnels déclarés, et non des résultats mesurés indépendamment."
+    },
+    "festival:festival-au-desert": {
+      "name": "Festival au Désert",
+      "description": "Fondé dans le nord du Mali en 2001, le Festival au Désert relie les traditions de rassemblement touarègues à des musiciens internationaux invités. Ses collaborations en font un lieu de rencontre entre musiques sahariennes et mondiales ; l’insécurité déplace ensuite le festival vers l’exil et des projets itinérants."
+    },
+    "place:northern-mali": {
+      "name": "Nord du Mali",
+      "description": "Région malienne associée aux premiers rassemblements sahariens du Festival au Désert et à ses sites ultérieurs près de Tombouctou."
+    },
+    "festival:sauti-za-busara": {
+      "name": "Sauti za Busara",
+      "description": "Fondé à Zanzibar en 2004, Sauti za Busara offre aux musiciens africains et de la diaspora une scène réunissant styles traditionnels et contemporains. Sa programmation relie le patrimoine taarab de Zanzibar à des circuits africains plus larges et compte la chanteuse Bi Kidude parmi ses artistes passés."
+    },
+    "festival:cosquin": {
+      "name": "Festival Nacional de Folklore de Cosquín",
+      "description": "Fondé en 1961, Cosquín devient un lieu de rencontre des traditions folkloriques régionales argentines. La chronologie officielle retient les débuts de Mercedes Sosa en 1965, présentée par Jorge Cafrune, parmi ses moments marquants dans l’histoire de la chanson argentine."
+    },
+    "place:cosquin": {
+      "name": "Cosquín",
+      "description": "Ville argentine où le festival national de folklore débute en 1961."
+    },
+    "festival:vina-del-mar": {
+      "name": "Festival international de la chanson de Viña del Mar",
+      "description": "Le festival chilien de la chanson débute en 1960 et développe des concours de chanson folklorique et internationale. La Bibliothèque nationale du Chili documente comment la victoire de Cecilia en 1965 et l’échange avec le festival espagnol de Benidorm contribuent à porter la Nueva Ola chilienne en Europe."
+    },
+    "place:vina-del-mar": {
+      "name": "Viña del Mar",
+      "description": "Ville côtière chilienne où le festival de la chanson est lancé en 1960."
+    },
+    "festival:rock-al-parque": {
+      "name": "Rock al Parque",
+      "description": "Fondé à Bogotá en 1995, Rock al Parque offre aux groupes colombiens une grande scène publique aux côtés d’invités internationaux. Son développement comme festival en plein air largement accessible contribue à établir un modèle municipal de soutien à la musique vivante et aux festivals Al Parque ultérieurs."
+    },
+    "place:bogota": {
+      "name": "Bogotá",
+      "description": "Capitale colombienne où Rock al Parque débute en 1995."
+    },
+    "festival:sawai-gandharva": {
+      "name": "Sawai Gandharva Bhimsen Mahotsav",
+      "description": "Selon une revue de collectionneurs et une étude sur les festivals commandée par le gouvernement, Bhimsen Joshi crée un festival à Pune en 1953 en mémoire de son maître Sawai Gandharva. Ce rassemblement durable est associé à la musique classique hindoustanie ; les détails rétrospectifs au-delà de son origine nécessitent encore un examen critique."
+    },
+    "place:pune": {
+      "name": "Pune",
+      "description": "Ville indienne où Bhimsen Joshi crée le festival commémoratif Sawai Gandharva en 1953."
+    },
+    "festival:java-jazz": {
+      "name": "Java Jazz Festival",
+      "description": "Présenté pour la première fois à Jakarta en 2005, Java Jazz crée un grand lieu de rencontre indonésien pour les musiciens de jazz locaux et internationaux. Ses premières éditions réunissent de nombreux concerts dans un même programme et élargissent le circuit des festivals de jazz en Asie du Sud-Est."
+    },
+    "place:jakarta": {
+      "name": "Jakarta",
+      "description": "Ville indonésienne qui accueille le premier Java Jazz Festival au Jakarta Convention Center en 2005."
+    },
+    "festival:coachella": {
+      "name": "Coachella Valley Music and Arts Festival",
+      "description": "Présenté pour la première fois les 9 et 10 octobre 1999 à l’Empire Polo Club d’Indio, en Californie, Coachella réunit rock, musiques électroniques et artistes alternatifs dans un même programme. La programmation inaugurale et les difficultés financières initiales sont documentées par la Recording Academy et les archives du festival."
+    },
+    "place:indio": {
+      "name": "Indio",
+      "description": "Ville californienne associée au Coachella Valley Music and Arts Festival."
+    },
+    "festival:lollapalooza": {
+      "name": "Lollapalooza",
+      "description": "Créé par Perry Farrell en 1991 comme tournée d’adieu de Jane’s Addiction, Lollapalooza réunit le rock alternatif et d’autres scènes dans un programme itinérant commun. Il s’installe ensuite à Chicago en 2005 et développe des éditions internationales, passant d’une tournée à un réseau de festivals."
+    },
+    "festival:sanremo": {
+      "name": "Festival de Sanremo",
+      "description": "Diffusé pour la première fois par la RAI depuis le casino de Sanremo en 1951, le concours italien de la chanson devient une scène nationale récurrente de la chanson populaire d’après-guerre. Son histoire relie carrières musicales, radiodiffusion et évolution de la culture de masse italienne."
+    },
+    "place:sanremo": {
+      "name": "Sanremo",
+      "description": "Ville italienne dont le casino accueille le premier festival de la chanson de Sanremo en 1951."
+    },
+    "festival:new-orleans-jazz-heritage": {
+      "name": "New Orleans Jazz & Heritage Festival",
+      "description": "Fondé en 1970, Jazz Fest réunit musiques, cuisine, artisanat et traditions scéniques de Louisiane dans un même modèle de festival. La rencontre de Mahalia Jackson, Duke Ellington et d’un défilé de fanfare à sa première édition symbolise le lien entre jazz et patrimoine communautaire ; son retour en 2006 devient aussi un rassemblement après Katrina."
+    },
+    "festival:wacken": {
+      "name": "Wacken Open Air",
+      "description": "Présenté pour la première fois en 1990 dans le village allemand de Wacken, ce rassemblement devient un festival de heavy metal reconnu à l’international. Son histoire illustre la construction par un public spécialisé d’un lieu de festival durable en dehors d’une grande ville."
+    },
+    "place:wacken": {
+      "name": "Wacken",
+      "description": "Village allemand qui accueille le festival de metal Wacken Open Air depuis sa première édition en 1990."
+    },
+    "festival:baalbeck": {
+      "name": "Festival international de Baalbeck",
+      "description": "Créé en 1956 parmi les temples antiques de Baalbeck, le festival associe spectacles internationaux et scène pour les artistes libanais. Ses Nuits libanaises contribuent à faire connaître Fairuz, les frères Rahbani et d’autres créateurs locaux ; son histoire comprend une longue interruption pendant la guerre civile et une reprise en 1997."
+    },
+    "place:baalbeck": {
+      "name": "Baalbeck",
+      "description": "Ville libanaise dont le complexe de temples antiques est associé au festival international créé en 1956."
+    },
+    "festival:pythian-games": {
+      "name": "Jeux pythiques",
+      "description": "Festival religieux antique d’Apollon à Delphes, dont les concours musicaux précèdent l’ajout d’épreuves athlétiques. Sa réorganisation panhellénique est traditionnellement située au début du VIe siècle avant notre ère, vers 586–582 ; cette date ne désigne pas le premier rassemblement musical. Il constitue un précédent antique important, sans être établi comme le premier festival musical au monde.",
+      "estimateNote": "Le début est un repère conventionnel de réorganisation ou de numérotation vers 586–582 avant notre ère, et non celui des premiers rites musicaux. Le repère supérieur affiché est 424 de notre ère : la recherche évoque alors des jeux à Delphes et estime que les jeux pythiques se poursuivaient probablement. Il ne s’agit pas d’une dernière édition prouvée ; ce repère remplace le récit traditionnel d’une cessation en 393/394 du musée."
+    },
+    "festival:three-choirs": {
+      "name": "Festival des Trois Chœurs",
+      "description": "Rencontres musicales des cathédrales de Gloucester, Worcester et Hereford, traditionnellement comptées à partir d’environ 1715 et connues sous leur nom actuel depuis 1838. Le festival devient une scène pour le répertoire choral et les œuvres nouvelles, avec des interruptions pendant les guerres et la pandémie. Cette longue tradition classique encore vivante ne se confond pas avec le premier festival musical de l’histoire.",
+      "estimateNote": "1715 est la date conventionnelle à partir de laquelle les rencontres sont comptées, et non une première édition établie avec certitude. Le nom actuel apparaît en 1838 ; les interruptions dues aux guerres et à la pandémie excluent une activité annuelle ininterrompue."
+    },
+    "place:delphi": {
+      "name": "Delphes",
+      "description": "Sanctuaire grec antique d’Apollon associé aux concours musicaux et athlétiques pythiques."
+    },
+    "place:gloucester": {
+      "name": "Gloucester",
+      "description": "Ville cathédrale anglaise dont le chœur participe au Festival des Trois Chœurs."
+    },
+    "place:worcester": {
+      "name": "Worcester",
+      "description": "Ville cathédrale anglaise dont le chœur participe au Festival des Trois Chœurs."
+    },
+    "place:hereford": {
+      "name": "Hereford",
+      "description": "Ville cathédrale anglaise dont le chœur participe au Festival des Trois Chœurs."
+    },
+    "event:pythian-games-panhellenic-reorganisation": {
+      "name": "Les concours musicaux pythiques intègrent un festival panhellénique",
+      "description": "La réorganisation du festival d’Apollon à Delphes vers 586–582 avant notre ère élargit un concours musical antérieur en un rassemblement panhellénique quadriennal associant musique et sport. Elle documente une institution antique de concours musicaux publics, sans établir le premier festival musical au monde.",
+      "estimateNote": "La période 586–582 avant notre ère couvre la chronologie conventionnelle de réorganisation ou de numérotation ; 582 avant notre ère est un repère, et non une date de fondation établie avec précision. Des concours musicaux lui sont antérieurs ; aucun premier festival mondial n’est établi."
+    },
+    "event:three-choirs-music-meetings": {
+      "name": "Trois chœurs de cathédrale établissent des rencontres musicales récurrentes",
+      "description": "Les chœurs des cathédrales de Gloucester, Worcester et Hereford développent des rencontres musicales traditionnellement comptées à partir d’environ 1715. Leur collaboration récurrente fonde un festival choral britannique durable, devenu une scène pour des œuvres nouvelles. La première rencontre précise reste incertaine et le nom actuel date de 1838.",
+      "estimateNote": "1715 est la date conventionnelle de comptage, et non une première édition documentée avec certitude ; l’événement représente un développement institutionnel du début du XVIIIe siècle."
+    },
+    "event:bayreuth-complete-ring-premiere": {
+      "name": "Le cycle complet de L’Anneau est créé au premier Festival de Bayreuth",
+      "description": "Le premier Festival de Bayreuth présente le cycle complet de L’Anneau du Nibelung de Wagner en août 1876 dans un théâtre spécialement construit. Les représentations antérieures d’opéras isolés ne constituaient pas la création du cycle complet ; le festival associe le drame musical à un modèle particulier de salle et de mise en scène."
+    },
+    "event:donaueschingen-contemporary-music-forum": {
+      "name": "Donaueschingen établit un forum pour la musique de chambre contemporaine",
+      "description": "Le premier festival de musique de chambre de Donaueschingen, en 1921, donne aux compositions nouvelles une scène publique dédiée. Son intérêt pour les jeunes compositeurs et sa collaboration ultérieure avec la radio contribuent à pérenniser une institution de musique contemporaine plutôt qu’une école stylistique unique."
+    },
+    "event:sanremo-first-radio-song-contest": {
+      "name": "La RAI diffuse le premier concours de chanson de Sanremo",
+      "description": "Le premier concours de chanson de Sanremo est diffusé par la RAI depuis le casino de la ville en janvier 1951. Cette émission nationale récurrente devient un lieu de rencontre important entre chanson populaire, carrières d’interprètes et médias italiens."
+    },
+    "event:ellington-newport-1956": {
+      "name": "La prestation d’Ellington à Newport relance la notoriété de son orchestre",
+      "description": "L’orchestre de Duke Ellington joue à Newport le 7 juillet 1956 ; le long solo de Paul Gonsalves dans Diminuendo and Crescendo in Blue devient le moment décisif du concert. La prestation et l’enregistrement qui suit relancent l’attention portée à l’orchestre, sans créer le jazz ni la musique de big band."
+    },
+    "event:dylan-electric-newport-1965": {
+      "name": "Le concert électrique de Dylan à Newport met le folk et le rock en débat",
+      "description": "Bob Dylan joue avec un groupe électrique à Newport Folk en juillet 1965, notamment Like a Rolling Stone. Le concert devient un point central des débats sur le renouveau folk et le rock ; les récits divergent sur la réaction du public, et cette prestation n’invente pas le folk électrique."
+    },
+    "event:mercedes-sosa-cosquin-breakthrough": {
+      "name": "La prestation de Mercedes Sosa à Cosquín élargit sa reconnaissance publique",
+      "description": "Jorge Cafrune présente Mercedes Sosa à Cosquín en janvier 1965. Cette prestation marque une étape majeure de sa reconnaissance nationale et relie une voix marquante de la chanson latino-américaine au public folklorique du festival ; elle ne constitue pas sa première activité musicale."
+    },
+    "event:cecilia-vina-benidorm-exchange": {
+      "name": "L’échange de concours de Viña porte la Nueva Ola chilienne à l’étranger",
+      "description": "La prestation victorieuse de Cecilia à Viña del Mar en 1965 est liée à un échange avec le festival espagnol de Benidorm. La Bibliothèque nationale du Chili présente ce circuit comme un moyen de porter la Nueva Ola chilienne en Europe et de renforcer sa place dans la vie musicale du pays."
+    },
+    "event:fairuz-baalbeck-1957": {
+      "name": "Fairuz se produit à Baalbeck lors du développement des Nuits libanaises",
+      "description": "Fairuz donne un concert en plein air dans le complexe de temples de Baalbeck en 1957. Les Nuits libanaises du festival offrent une scène à Fairuz, aux frères Rahbani et à d’autres créateurs libanais aux côtés de la programmation internationale, contribuant à affirmer une présence scénique nationale distincte."
+    },
+    "event:reggae-sunsplash-launch": {
+      "name": "Reggae Sunsplash crée une grande scène de concert jamaïcaine",
+      "description": "Le premier Reggae Sunsplash se tient à Montego Bay en juin 1978. Sa scène de concert et son rayonnement international ultérieur participent à la circulation du reggae au-delà de la Jamaïque ; le festival n’est à l’origine ni du reggae ni du dancehall."
+    },
+    "event:womad-first-international-music-festival": {
+      "name": "Le premier WOMAD réunit des musiciens internationaux sur une scène de festival commune",
+      "description": "Le premier WOMAD se tient au Bath and West Showground, dans le Somerset, en juillet 1982. Sa programmation réunit des musiciens de nombreux pays et des groupes de rock britanniques, donnant une forme de festival à un projet d’échanges musicaux interculturels ensuite diffusé à l’international."
+    },
+    "event:rock-in-rio-first-edition": {
+      "name": "Rock in Rio réunit une grande affiche rock internationale à Rio",
+      "description": "La première édition de Rock in Rio, en janvier 1985, réunit artistes brésiliens et internationaux sur un grand site de concert à Rio de Janeiro. Les prestations de Queen en tête d’affiche illustrent sa place dans l’expansion des tournées rock internationales au Brésil ; il ne s’agit pas du premier festival musical brésilien."
+    },
+    "event:rock-al-parque-public-rock-stage": {
+      "name": "Rock al Parque établit une scène publique pour les groupes rock de Bogotá",
+      "description": "Le premier Rock al Parque, en mai 1995, réunit des groupes colombiens et des invités internationaux dans des espaces publics de Bogotá. Le festival devient une plateforme municipale de musique vivante ; son influence politique plus large relève de l’interprétation historique, et la première édition n’est pas gratuite dans tous les lieux."
+    },
+    "event:detroit-electronic-music-festival-launch": {
+      "name": "Le Detroit Electronic Music Festival célèbre l’héritage techno de la ville",
+      "description": "Le premier Detroit Electronic Music Festival se tient à Hart Plaza en 2000, avec Carl Craig parmi ses organisateurs. Il porte l’héritage électronique de Detroit sur une grande scène publique ; les noms ultérieurs Movement et Fuse-In impliquent différents producteurs, et la techno était déjà établie."
+    },
+    "event:daft-punk-coachella-pyramid": {
+      "name": "La pyramide de Daft Punk à Coachella renouvelle la production scénique électronique",
+      "description": "Le concert de Daft Punk à Coachella en 2006 associe une pyramide lumineuse à une synchronisation étroite de la musique et du multimédia. Le Rock and Roll Hall of Fame le présente comme un tournant de la production scénique des musiques électroniques de danse ; ce jugement concerne la présentation et l’influence, et non l’invention du concert électronique."
+    },
+    "event:glastonbury-first-pyramid-stage": {
+      "name": "Glastonbury Fair inaugure sa première Pyramid Stage",
+      "description": "Le Glastonbury Fair gratuit de 1971 inaugure la première Pyramid Stage du festival et accueille notamment David Bowie. L’association de musique, d’arts de la scène et de rassemblement contre-culturel participe à son identité en formation ; il s’agit d’une deuxième édition, et non de sa fondation en 1970."
+    },
+    "event:petronio-alvarez-public-pacific-music-platform": {
+      "name": "Petronio Álvarez offre une scène de festival aux musiques du Pacifique colombien",
+      "description": "Le festival Petronio Álvarez débute à Cali en 1997 selon les archives de la radiodiffusion colombienne et des histoires universitaires. Il crée une scène publique pour les traditions musicales du Pacifique colombien, notamment les ensembles de marimba. L’article Wikipédia espagnol consulté indique plutôt 1996 ; cette divergence de datation reste donc explicite."
+    },
+    "event:new-orleans-jazz-heritage-launch": {
+      "name": "Jazz Fest associe musique et patrimoine communautaire de Louisiane",
+      "description": "Le premier New Orleans Jazz & Heritage Festival, en 1970, associe musique, artisanat, cuisine et spectacles communautaires locaux. Mahalia Jackson et Duke Ellington participent au rassemblement inaugural ; ce modèle place les traditions culturelles locales au centre du festival plutôt qu’en toile de fond de vedettes invitées."
+    },
+    "event:lollapalooza-alternative-music-tour": {
+      "name": "Lollapalooza réunit des artistes alternatifs dans un festival itinérant",
+      "description": "La première tournée Lollapalooza, en 1991, réunit notamment Nine Inch Nails dans un programme itinérant conçu par Perry Farrell autour des adieux de Jane’s Addiction. Les archives et la recherche sur les musiques populaires le situent dans le développement du circuit des festivals de rock alternatif ; il ne s’agit pas encore de l’événement ultérieur de Chicago."
+    },
+    "event:sonar-electronic-music-multimedia-launch": {
+      "name": "Sónar associe musiques électroniques et arts multimédias",
+      "description": "Le premier Sónar, à Barcelone en 1994, associe musiques électroniques et expérimentales aux arts multimédias. Une étude universitaire documente cette combinaison comme un élément central de son format ; le congrès Sónar+D, créé ultérieurement, ne doit pas être antidaté à la première édition."
     }
   },
   "edges": {
@@ -7672,6 +8032,489 @@
     },
     "origin:artist-beethoven-vienna": {
       "note": "**Confiance moyenne** ; conserver seulement comme base de carrière ou ville d’adoption, pas comme lieu de naissance. Clarifier le sens des notes de relation."
+    },
+    "festival_related:place-pilton-glastonbury": {
+      "note": "Worthy Farm, à Pilton, accueille le premier festival en 1970."
+    },
+    "festival_related:place-montreux-montreux-jazz": {
+      "note": "Le festival se déroule à Montreux, au bord du Léman."
+    },
+    "festival_related:place-newport-rhode-island-newport-jazz": {
+      "note": "Le festival inaugural se tient au Newport Casino en 1954."
+    },
+    "festival_related:place-roskilde-roskilde": {
+      "note": "Le festival se déroule à Roskilde, au Danemark."
+    },
+    "festival_related:place-rio-de-janeiro-rock-in-rio": {
+      "note": "Rio de Janeiro accueille le festival original en 1985 ; ce lien ne situe pas toutes les éditions suivantes à Rio."
+    },
+    "festival_related:place-adelaide-womadelaide": {
+      "note": "WOMADelaide se déroule au Botanic Park/Tainmuntilla, à Adélaïde."
+    },
+    "festival_related:place-naeba-fuji-rock": {
+      "note": "Le festival s’installe à la station de ski de Naeba en 1999, après d’autres lieux."
+    },
+    "festival_related:place-essaouira-gnaoua-world-music": {
+      "note": "Le festival est créé à Essaouira en 1998."
+    },
+    "festival_related:place-cape-town-cape-town-jazz": {
+      "note": "La première édition se tient au Good Hope Centre du Cap en 2000."
+    },
+    "festival_related:place-cali-petronio-alvarez": {
+      "note": "Señal Memoria situe le festival et ses premières éditions enregistrées à Cali."
+    },
+    "festival_related:artist-david-bowie-glastonbury": {
+      "note": "Les archives du festival mentionnent David Bowie au programme de 1971."
+    },
+    "festival_related:artist-ella-fitzgerald-montreux-jazz": {
+      "note": "Les archives du festival mentionnent Ella Fitzgerald parmi les artistes accueillis."
+    },
+    "festival_related:artist-david-bowie-montreux-jazz": {
+      "note": "Les archives du festival mentionnent David Bowie parmi les artistes accueillis."
+    },
+    "festival_related:artist-ella-fitzgerald-newport-jazz": {
+      "note": "Les archives du festival mentionnent Ella Fitzgerald au programme de 1954."
+    },
+    "festival_related:artist-dizzy-gillespie-newport-jazz": {
+      "note": "Les archives du festival mentionnent Dizzy Gillespie au programme de 1954."
+    },
+    "festival_related:artist-bob-marley-roskilde": {
+      "note": "Les archives du festival mentionnent Bob Marley au programme de 1978."
+    },
+    "festival_related:artist-nusrat-fateh-ali-khan-womadelaide": {
+      "note": "Les archives du festival mentionnent Nusrat Fateh Ali Khan au programme de 1992."
+    },
+    "festival_related:artist-youssou-ndour-womadelaide": {
+      "note": "Les archives du festival mentionnent Youssou N’Dour au programme de 1992."
+    },
+    "festival_related:artist-aphex-twin-fuji-rock": {
+      "note": "Les archives du festival mentionnent Aphex Twin au programme de 1997."
+    },
+    "festival_related:artist-massive-attack-fuji-rock": {
+      "note": "Les archives du festival mentionnent Massive Attack au programme de 1997."
+    },
+    "festival_related:artist-the-prodigy-fuji-rock": {
+      "note": "Les archives du festival mentionnent The Prodigy au programme de 1997."
+    },
+    "festival_related:artist-green-day-fuji-rock": {
+      "note": "Les archives du festival mentionnent Green Day au programme de 1997."
+    },
+    "festival_related:genre-jazz-montreux-jazz": {
+      "note": "Le festival cite le jazz parmi ses racines musicales."
+    },
+    "festival_related:genre-soul-montreux-jazz": {
+      "note": "Le festival cite la soul parmi ses racines musicales."
+    },
+    "festival_related:genre-blues-montreux-jazz": {
+      "note": "Le festival cite le blues parmi ses racines musicales."
+    },
+    "festival_related:genre-jazz-newport-jazz": {
+      "note": "La société historique documente la programmation jazz dès l’édition inaugurale du festival."
+    },
+    "festival_related:genre-gnawa-gnaoua-world-music": {
+      "note": "Le festival est centré sur les maîtres gnaoua et les rencontres avec d’autres traditions musicales."
+    },
+    "festival_related:genre-jazz-cape-town-jazz": {
+      "note": "L’histoire du festival décrit une plateforme pour les musiciens de jazz locaux et internationaux."
+    },
+    "festival_related:event-essaouira-gnawa-festival-gnaoua-world-music": {
+      "note": "L’entrée historique existante marque la création de ce festival en 1998 ; le nœud festival représente l’institution récurrente."
+    },
+    "festival_related:place-bethel-woodstock": {
+      "note": "Le festival Woodstock original se tient dans une ferme de Bethel, et non dans la ville de Woodstock."
+    },
+    "festival_related:place-monterey-monterey-pop": {
+      "note": "Le festival original se déroule au Monterey Fairgrounds, en Californie."
+    },
+    "festival_related:place-newport-rhode-island-newport-folk": {
+      "note": "La Bibliothèque du Congrès présente Newport Folk comme le pendant du festival de jazz antérieur de la ville."
+    },
+    "festival_related:place-bayreuth-bayreuth": {
+      "note": "Ville allemande où le théâtre de festival de Wagner ouvre en 1876."
+    },
+    "festival_related:place-salzburg-salzburg": {
+      "note": "Le festival est ancré à Salzbourg ; la représentation fondatrice de Jedermann se tient sur la place de la Cathédrale en 1920."
+    },
+    "festival_related:place-donaueschingen-donaueschingen": {
+      "note": "Ville allemande associée au festival de musique contemporaine fondé en 1921."
+    },
+    "festival_related:place-isle-of-wight-isle-of-wight": {
+      "note": "Île anglaise qui accueille les festivals originaux de 1968 à 1970 puis leur reprise."
+    },
+    "festival_related:place-reading-reading": {
+      "note": "Reading accueille la prestation documentée de Nirvana au festival en 1992 ; le début en 1961 désigne son précurseur, et non son arrivée à Reading."
+    },
+    "festival_related:place-barcelona-sonar": {
+      "note": "Ville espagnole où Sónar débute en 1994."
+    },
+    "festival_related:place-boom-tomorrowland": {
+      "note": "Commune belge où le premier Tomorrowland se tient en 2005."
+    },
+    "festival_related:place-detroit-movement-detroit": {
+      "note": "Le festival débute à Hart Plaza, à Detroit, en 2000."
+    },
+    "festival_related:place-shepton-mallet-womad": {
+      "note": "Le premier WOMAD se tient au Bath and West Showground, dans le Somerset ; ce lieu inaugural ne désigne pas toutes les éditions suivantes."
+    },
+    "festival_related:place-montego-bay-reggae-sunsplash": {
+      "note": "Ville jamaïcaine où Reggae Sunsplash est présenté pour la première fois en 1978."
+    },
+    "festival_related:place-brazzaville-fespam": {
+      "note": "L’organisateur situe la première édition et l’ancrage institutionnel du festival à Brazzaville."
+    },
+    "festival_related:place-northern-mali-festival-au-desert": {
+      "note": "Le festival malien original utilise différents sites du nord, notamment près de Tombouctou ; ses projets en exil ne doivent pas être attribués à un lieu permanent unique."
+    },
+    "festival_related:place-zanzibar-sauti-za-busara": {
+      "note": "Le festival est ancré à Stone Town, à Zanzibar, en Tanzanie."
+    },
+    "festival_related:place-cosquin-cosquin": {
+      "note": "Ville argentine où le festival national de folklore débute en 1961."
+    },
+    "festival_related:place-vina-del-mar-vina-del-mar": {
+      "note": "Ville côtière chilienne où le festival de la chanson est lancé en 1960."
+    },
+    "festival_related:place-bogota-rock-al-parque": {
+      "note": "Capitale colombienne où Rock al Parque débute en 1995."
+    },
+    "festival_related:place-pune-sawai-gandharva": {
+      "note": "Ville indienne où Bhimsen Joshi crée le festival commémoratif Sawai Gandharva en 1953."
+    },
+    "festival_related:place-jakarta-java-jazz": {
+      "note": "Ville indonésienne qui accueille le premier Java Jazz Festival au Jakarta Convention Center en 2005."
+    },
+    "festival_related:place-indio-coachella": {
+      "note": "Ville californienne associée au Coachella Valley Music and Arts Festival."
+    },
+    "festival_related:place-chicago-lollapalooza": {
+      "note": "Grant Park, à Chicago, devient le lieu permanent de Lollapalooza en 2005, après ses années itinérantes ; ce lien ne situe pas toutes les éditions internationales à Chicago."
+    },
+    "festival_related:place-sanremo-sanremo": {
+      "note": "Ville italienne dont le casino accueille le premier festival de la chanson de Sanremo en 1951."
+    },
+    "festival_related:place-new-orleans-new-orleans-jazz-heritage": {
+      "note": "Le premier festival se tient à La Nouvelle-Orléans en 1970 ; il s’installe au Fair Grounds Race Course en 1972."
+    },
+    "festival_related:place-wacken-wacken": {
+      "note": "Village allemand qui accueille le festival de metal Wacken Open Air depuis sa première édition en 1990."
+    },
+    "festival_related:place-baalbeck-baalbeck": {
+      "note": "Ville libanaise dont le complexe de temples antiques est associé au festival international créé en 1956."
+    },
+    "festival_related:artist-jimi-hendrix-woodstock": {
+      "note": "La source documente Jimi Hendrix à l’édition de 1969."
+    },
+    "festival_related:artist-the-who-woodstock": {
+      "note": "La source documente The Who à l’édition de 1969."
+    },
+    "festival_related:artist-jimi-hendrix-monterey-pop": {
+      "note": "La source documente Jimi Hendrix à l’édition de 1967."
+    },
+    "festival_related:artist-ravi-shankar-monterey-pop": {
+      "note": "La source documente Ravi Shankar à l’édition de 1967."
+    },
+    "festival_related:artist-otis-redding-monterey-pop": {
+      "note": "La source documente Otis Redding à l’édition de 1967."
+    },
+    "festival_related:artist-the-who-monterey-pop": {
+      "note": "La source documente The Who à l’édition de 1967."
+    },
+    "festival_related:artist-bob-dylan-newport-folk": {
+      "note": "La source documente Bob Dylan à l’édition de 1965."
+    },
+    "festival_related:artist-joan-baez-newport-folk": {
+      "note": "La source documente Joan Baez à l’édition de 1959."
+    },
+    "festival_related:artist-jimi-hendrix-isle-of-wight": {
+      "note": "La source documente Jimi Hendrix à l’édition de 1970."
+    },
+    "festival_related:artist-the-who-isle-of-wight": {
+      "note": "La source documente The Who à l’édition de 1970."
+    },
+    "festival_related:artist-joan-baez-isle-of-wight": {
+      "note": "La source documente Joan Baez à l’édition de 1970."
+    },
+    "festival_related:artist-nirvana-reading": {
+      "note": "La source documente Nirvana à l’édition de 1992."
+    },
+    "festival_related:artist-armin-van-buuren-tomorrowland": {
+      "note": "La source documente Armin van Buuren à l’édition de 2005."
+    },
+    "festival_related:artist-nine-inch-nails-lollapalooza": {
+      "note": "La source documente Nine Inch Nails à l’édition de 1991."
+    },
+    "festival_related:artist-duke-ellington-new-orleans-jazz-heritage": {
+      "note": "La source documente Duke Ellington à l’édition de 1970."
+    },
+    "festival_related:artist-bi-kidude-sauti-za-busara": {
+      "note": "La source documente Bi Kidude parmi les artistes passés du festival."
+    },
+    "festival_related:artist-massive-attack-baalbeck": {
+      "note": "La source documente Massive Attack à l’édition de 2004."
+    },
+    "festival_related:artist-mozart-salzburg": {
+      "note": "Les œuvres de Mozart font partie du répertoire du festival ; ce lien concerne une programmation posthume, et non une apparition personnelle."
+    },
+    "festival_related:artist-carl-craig-movement-detroit": {
+      "note": "Carl Craig participe à l’organisation du premier Detroit Electronic Music Festival en 2000."
+    },
+    "festival_related:artist-derrick-may-movement-detroit": {
+      "note": "Derrick May produit le festival en 2003, lors de l’adoption du nom Movement."
+    },
+    "festival_related:artist-bhimsen-joshi-sawai-gandharva": {
+      "note": "Bhimsen Joshi crée le festival commémoratif de son maître Sawai Gandharva à Pune en 1953."
+    },
+    "festival_related:artist-fairuz-baalbeck": {
+      "note": "Les Nuits libanaises du festival contribuent à présenter Fairuz et les frères Rahbani ; ce lien ne prétend pas que le programme annulé de 2006 ait eu lieu à Baalbeck."
+    },
+    "festival_related:genre-folk-newport-folk": {
+      "note": "Newport offre une scène au renouveau folk américain et à la communauté de la chanson de protestation."
+    },
+    "festival_related:instrument-electric-guitar-newport-folk": {
+      "note": "PBS enquête sur la guitare électrique associée à la prestation documentée de Bob Dylan à Newport en 1965."
+    },
+    "festival_related:track-like-a-rolling-stone-bob-dylan-newport-folk": {
+      "note": "La Bibliothèque du Congrès mentionne Like a Rolling Stone dans le concert électrique de Dylan à Newport en 1965 ; l’enregistrement était déjà sorti."
+    },
+    "festival_related:genre-modern-classical-donaueschingen": {
+      "note": "Le festival débute comme forum de musique de chambre d’avant-garde et s’élargit aux œuvres orchestrales et vocales contemporaines."
+    },
+    "festival_related:genre-edm-tomorrowland": {
+      "note": "L’histoire de Tomorrowland documente les musiques électroniques de danse présentées au moyen de grandes scènes thématiques, de DJ sets et de retransmissions."
+    },
+    "festival_related:genre-detroit-techno-movement-detroit": {
+      "note": "Le festival est créé pour célébrer le rôle de Detroit comme berceau de la techno ; il ne crée pas le genre en 2000."
+    },
+    "festival_related:genre-reggae-reggae-sunsplash": {
+      "note": "La société de préservation documente la plateforme internationale et les archives de concerts de Sunsplash pour le reggae jamaïcain."
+    },
+    "festival_related:genre-dancehall-reggae-sunsplash": {
+      "note": "La société de préservation évoque le lien entre le festival et le dancehall ; cette association ne signifie pas que le festival ait inventé le genre à lui seul."
+    },
+    "festival_related:genre-taarab-sauti-za-busara": {
+      "note": "Le festival inclut explicitement le taarab traditionnel parmi les styles programmés."
+    },
+    "festival_related:genre-rock-rock-al-parque": {
+      "note": "L’histoire officielle documente une scène pour les groupes de rock colombiens et des invités internationaux dès sa première édition."
+    },
+    "festival_related:genre-hindustani-classical-sawai-gandharva": {
+      "note": "Le festival entretient la mémoire de son maître par l’interprétation de musique classique hindoustanie."
+    },
+    "festival_related:genre-jazz-java-jazz": {
+      "note": "Le compte rendu des premières éditions de Java Jazz documente des musiciens indonésiens et internationaux réunis dans une vaste programmation jazz."
+    },
+    "festival_related:genre-alternative-rock-lollapalooza": {
+      "note": "Le catalogue du Rock Hall situe les archives du Lollapalooza original dans l’histoire de la programmation des festivals de rock alternatif."
+    },
+    "festival_related:genre-jazz-new-orleans-jazz-heritage": {
+      "note": "L’histoire officielle présente le jazz et les traditions locales de Louisiane comme des éléments centraux du festival."
+    },
+    "festival_related:genre-heavy-metal-wacken": {
+      "note": "La commune de Wacken présente l’événement comme un festival de heavy metal organisé pour la première fois en 1990."
+    },
+    "festival_related:scene-new-orleans-jazz-scene-new-orleans-jazz-heritage": {
+      "note": "Le festival est conçu autour du patrimoine musical de La Nouvelle-Orléans et intègre les défilés de fanfares locales dès sa première édition."
+    },
+    "festival_related:festival-womadelaide-womad": {
+      "note": "Le premier WOMADelaide, en 1992, est présenté conjointement avec l’organisation WOMAD basée au Royaume-Uni."
+    },
+    "festival_related:event-woodstock-festival-woodstock": {
+      "note": "L’événement historique existant et cette entrée de festival décrivent le même rassemblement original de 1969 ; les deux identifiants stables sont conservés."
+    },
+    "festival_related:event-monterey-pop-festival-monterey-pop": {
+      "note": "L’entrée historique existante décrit le festival Monterey Pop original de 1967."
+    },
+    "festival_related:place-delphi-pythian-games": {
+      "note": "Le sanctuaire d’Apollon à Delphes accueille les concours musicaux et athlétiques pythiques."
+    },
+    "festival_related:place-gloucester-three-choirs": {
+      "note": "Gloucester est l’une des trois villes cathédrales associées aux rencontres musicales itinérantes ; ce lien n’attribue pas toutes les éditions à une seule ville."
+    },
+    "festival_related:place-worcester-three-choirs": {
+      "note": "Worcester est l’une des trois villes cathédrales associées aux rencontres musicales itinérantes ; ce lien n’attribue pas toutes les éditions à une seule ville."
+    },
+    "festival_related:place-hereford-three-choirs": {
+      "note": "Hereford est l’une des trois villes cathédrales associées aux rencontres musicales itinérantes ; ce lien n’attribue pas toutes les éditions à une seule ville."
+    },
+    "festival_related:artist-handel-three-choirs": {
+      "note": "L’histoire savante du festival documente le Messie de Haendel dans la programmation. Ce lien concerne le répertoire et ne prétend pas à une présence personnelle de Haendel."
+    },
+    "festival_related:event-pythian-games-panhellenic-reorganisation-festival-pythian-games": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-three-choirs-music-meetings-festival-three-choirs": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-bayreuth-complete-ring-premiere-festival-bayreuth": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-donaueschingen-contemporary-music-forum-festival-donaueschingen": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-sanremo-first-radio-song-contest-festival-sanremo": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-ellington-newport-1956-festival-newport-jazz": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-dylan-electric-newport-1965-festival-newport-folk": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-mercedes-sosa-cosquin-breakthrough-festival-cosquin": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-cecilia-vina-benidorm-exchange-festival-vina-del-mar": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-fairuz-baalbeck-1957-festival-baalbeck": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-reggae-sunsplash-launch-festival-reggae-sunsplash": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-womad-first-international-music-festival-festival-womad": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-rock-in-rio-first-edition-festival-rock-in-rio": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-rock-al-parque-public-rock-stage-festival-rock-al-parque": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-detroit-electronic-music-festival-launch-festival-movement-detroit": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-daft-punk-coachella-pyramid-festival-coachella": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-glastonbury-first-pyramid-stage-festival-glastonbury": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-petronio-alvarez-public-pacific-music-platform-festival-petronio-alvarez": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-new-orleans-jazz-heritage-launch-festival-new-orleans-jazz-heritage": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-lollapalooza-alternative-music-tour-festival-lollapalooza": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "festival_related:event-sonar-electronic-music-multimedia-launch-festival-sonar": {
+      "note": "Cet événement historique décrit un développement daté associé au festival, et non toute la durée de l’institution."
+    },
+    "occurred_in:event-pythian-games-panhellenic-reorganisation-place-delphi": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-bayreuth-complete-ring-premiere-place-bayreuth": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-donaueschingen-contemporary-music-forum-place-donaueschingen": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-sanremo-first-radio-song-contest-place-sanremo": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-ellington-newport-1956-place-newport-rhode-island": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-dylan-electric-newport-1965-place-newport-rhode-island": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-mercedes-sosa-cosquin-breakthrough-place-cosquin": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-cecilia-vina-benidorm-exchange-place-vina-del-mar": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-fairuz-baalbeck-1957-place-baalbeck": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-reggae-sunsplash-launch-place-montego-bay": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-womad-first-international-music-festival-place-shepton-mallet": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-rock-in-rio-first-edition-place-rio-de-janeiro": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-rock-al-parque-public-rock-stage-place-bogota": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-detroit-electronic-music-festival-launch-place-detroit": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-daft-punk-coachella-pyramid-place-indio": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-glastonbury-first-pyramid-stage-place-pilton": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-petronio-alvarez-public-pacific-music-platform-place-cali": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-new-orleans-jazz-heritage-launch-place-new-orleans": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "occurred_in:event-sonar-electronic-music-multimedia-launch-place-barcelona": {
+      "note": "L’événement cité est situé ici ; ce lien n’attribue pas toutes les éditions ultérieures du festival au même lieu."
+    },
+    "involved:event-ellington-newport-1956-artist-duke-ellington": {
+      "note": "Les sources documentent la participation de cet artiste au développement daté décrit ci-dessus."
+    },
+    "involved:event-dylan-electric-newport-1965-artist-bob-dylan": {
+      "note": "Les sources documentent la participation de cet artiste au développement daté décrit ci-dessus."
+    },
+    "involved:event-fairuz-baalbeck-1957-artist-fairuz": {
+      "note": "Les sources documentent la participation de cet artiste au développement daté décrit ci-dessus."
+    },
+    "involved:event-detroit-electronic-music-festival-launch-artist-carl-craig": {
+      "note": "Les sources documentent la participation de cet artiste au développement daté décrit ci-dessus."
+    },
+    "involved:event-daft-punk-coachella-pyramid-artist-daft-punk": {
+      "note": "Les sources documentent la participation de cet artiste au développement daté décrit ci-dessus."
+    },
+    "involved:event-glastonbury-first-pyramid-stage-artist-david-bowie": {
+      "note": "Les sources documentent la participation de cet artiste au développement daté décrit ci-dessus."
+    },
+    "involved:event-new-orleans-jazz-heritage-launch-artist-duke-ellington": {
+      "note": "Les sources documentent la participation de cet artiste au développement daté décrit ci-dessus."
+    },
+    "involved:event-lollapalooza-alternative-music-tour-artist-nine-inch-nails": {
+      "note": "Les sources documentent la participation de cet artiste au développement daté décrit ci-dessus."
+    },
+    "involved:event-dylan-electric-newport-1965-instrument-electric-guitar": {
+      "note": "Le concert électrique documenté de Newport comprend cet instrument ou cette chanson ; il ne s’agit pas de sa date d’invention ou de sortie."
+    },
+    "involved:event-dylan-electric-newport-1965-track-like-a-rolling-stone-bob-dylan": {
+      "note": "Le concert électrique documenté de Newport comprend cet instrument ou cette chanson ; il ne s’agit pas de sa date d’invention ou de sortie."
+    },
+    "context_for:event-donaueschingen-contemporary-music-forum-genre-modern-classical": {
+      "note": "L’événement fournit un contexte scénique ou institutionnel documenté pour cette musique, sans prétendre qu’il ait créé le genre."
+    },
+    "context_for:event-ellington-newport-1956-genre-jazz": {
+      "note": "L’événement fournit un contexte scénique ou institutionnel documenté pour cette musique, sans prétendre qu’il ait créé le genre."
+    },
+    "context_for:event-dylan-electric-newport-1965-genre-folk": {
+      "note": "L’événement fournit un contexte scénique ou institutionnel documenté pour cette musique, sans prétendre qu’il ait créé le genre."
+    },
+    "context_for:event-reggae-sunsplash-launch-genre-reggae": {
+      "note": "L’événement fournit un contexte scénique ou institutionnel documenté pour cette musique, sans prétendre qu’il ait créé le genre."
+    },
+    "context_for:event-detroit-electronic-music-festival-launch-genre-detroit-techno": {
+      "note": "L’événement fournit un contexte scénique ou institutionnel documenté pour cette musique, sans prétendre qu’il ait créé le genre."
+    },
+    "context_for:event-daft-punk-coachella-pyramid-genre-edm": {
+      "note": "L’événement fournit un contexte scénique ou institutionnel documenté pour cette musique, sans prétendre qu’il ait créé le genre."
+    },
+    "context_for:event-rock-al-parque-public-rock-stage-genre-rock": {
+      "note": "L’événement fournit un contexte scénique ou institutionnel documenté pour cette musique, sans prétendre qu’il ait créé le genre."
+    },
+    "context_for:event-new-orleans-jazz-heritage-launch-genre-jazz": {
+      "note": "L’événement fournit un contexte scénique ou institutionnel documenté pour cette musique, sans prétendre qu’il ait créé le genre."
+    },
+    "context_for:event-lollapalooza-alternative-music-tour-genre-alternative-rock": {
+      "note": "L’événement fournit un contexte scénique ou institutionnel documenté pour cette musique, sans prétendre qu’il ait créé le genre."
     }
   }
 }

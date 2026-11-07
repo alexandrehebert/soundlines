@@ -3,7 +3,7 @@ import { BubbleZoomControls } from './BubbleZoomControls.tsx'
 import { MAX_BUBBLE_ZOOM, MIN_BUBBLE_ZOOM } from './bubbleViewport.ts'
 import { renderWithIntl } from '../i18n/test-utils.tsx'
 
-function renderControls(zoom: number, locale: 'en-US' | 'fr' = 'en-US') {
+function renderControls(zoom: number, locale: 'en' | 'fr' = 'en') {
   return renderWithIntl(<BubbleZoomControls zoom={zoom} onZoom={vi.fn()} />, locale)
 }
 

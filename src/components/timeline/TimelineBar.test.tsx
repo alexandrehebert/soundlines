@@ -11,7 +11,7 @@ import { TimelineBar } from './TimelineBar.tsx'
 import type { BarPosition, OffscreenIndicator } from './geometry.ts'
 
 function renderBar(node: GraphNode, selected: boolean, indicator?: OffscreenIndicator, position?: Partial<BarPosition>,
-  scale: TimeScale = { start: 1948, end: 2026, width: 800 }, renderDetails = true, locale: Locale = 'en-US') {
+  scale: TimeScale = { start: 1948, end: 2026, width: 800 }, renderDetails = true, locale: Locale = 'en') {
   const index = buildIndex({ version: 1, nodes: [node], edges: [] })
   const view = node.type === 'artist' ? 'artist' : node.type === 'instrument' ? 'instrument' : 'genre'
   const bar: BarPosition = {

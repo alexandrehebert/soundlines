@@ -11,14 +11,15 @@ class TestAudioContext {
   sources: ReturnType<TestAudioContext['createBufferSource']>[] = []
   resume = vi.fn(() => new Promise<void>(() => {}))
   close = vi.fn(() => Promise.resolve())
+  decodeAudioData = vi.fn(async () => this.createBuffer(2, 4000, 1000))
 
   constructor() {
     TestAudioContext.instances.push(this)
   }
 
-  createBuffer(_channels: number, length: number, sampleRate: number) {
-    const data = new Float32Array(length)
-    return { duration: length / sampleRate, getChannelData: () => data }
+  createBuffer(numberOfChannels: number, length: number, sampleRate: number) {
+    const channels = Array.from({ length: numberOfChannels }, () => new Float32Array(length))
+    return { duration: length / sampleRate, length, sampleRate, numberOfChannels, getChannelData: (channel: number) => channels[channel] }
   }
 
   createGain() {
@@ -31,11 +32,11 @@ class TestAudioContext {
 
   createBufferSource() {
     const source = {
-      buffer: null,
+      buffer: null as ReturnType<TestAudioContext['createBuffer']> | null,
       loop: false,
       playbackRate: { value: 0, setTargetAtTime: vi.fn() },
       connect: vi.fn(),
-      start: vi.fn(),
+      start: vi.fn((_when: number, _offset: number) => {}),
       stop: vi.fn(),
       disconnect: vi.fn(),
     }
@@ -129,5 +130,76 @@ describe('vinyl scratch', () => {
     deck.activate()
     await vi.waitFor(() => expect(warn).toHaveBeenCalledWith('Unable to resume the vinyl scratch audio.', error))
     deck.dispose()
+  })
+
+  it('loads only on play, scratches the stereo loop in both directions, and resumes on release', async () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    const fetchAudio = vi.fn(async () => ({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) }))
+    vi.stubGlobal('fetch', fetchAudio)
+    const deck = createScratchDeck()!
+    const context = TestAudioContext.instances[0]
+    context.state = 'running'
+    const buffer = context.createBuffer(2, 4000, 1000)
+    buffer.getChannelData(0).set([0.1, 0.2])
+    buffer.getChannelData(1).set([0.3, 0.4])
+    context.decodeAudioData.mockResolvedValueOnce(buffer)
+    expect(fetchAudio).not.toHaveBeenCalled()
+
+    await deck.play()
+    expect(fetchAudio).toHaveBeenCalledOnce()
+    expect(fetchAudio).toHaveBeenCalledWith('/loops/hip-hop.wav', expect.anything())
+    expect(context.sources[0].buffer).toBe(buffer)
+    expect(context.sources[0].loop).toBe(true)
+    context.currentTime = 0.5
+    deck.hold()
+    expect(context.gain.setTargetAtTime).toHaveBeenLastCalledWith(0, 0.5, 0.025)
+    deck.scratch(-NORMAL_SPEED_DEG_PER_SEC)
+    const reverse = context.sources[1].buffer!
+    expect(reverse.numberOfChannels).toBe(2)
+    expect(reverse.getChannelData(1)[3999]).toBeCloseTo(0.3)
+    expect(context.sources[1].start).toHaveBeenCalledOnce()
+    expect(context.sources[1].start.mock.calls[0][1]).toBeCloseTo(3.512, 8)
+    deck.release()
+    expect(context.sources[2].buffer).toBe(buffer)
+    expect(context.sources[2].playbackRate.setTargetAtTime).toHaveBeenLastCalledWith(1, 0.5, 0.012)
+    deck.pause()
+    expect(context.gain.setTargetAtTime).toHaveBeenLastCalledWith(0, 0.5, 0.025)
+    await deck.play()
+    expect(fetchAudio).toHaveBeenCalledOnce()
+    deck.dispose()
+  })
+
+  it('uses a valid zero offset when reversing at the start of the loop', () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    const deck = createScratchDeck()!
+    deck.scratch(-NORMAL_SPEED_DEG_PER_SEC)
+    expect(TestAudioContext.instances[0].sources[0].start).toHaveBeenCalledWith(0, 0)
+    deck.dispose()
+  })
+
+  it('reports loading failures to the caller and allows retry', async () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    const fetchAudio = vi.fn()
+      .mockResolvedValueOnce({ ok: false, status: 503 })
+      .mockResolvedValueOnce({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) })
+    vi.stubGlobal('fetch', fetchAudio)
+    const deck = createScratchDeck()!
+    TestAudioContext.instances[0].state = 'running'
+    await expect(deck.play()).rejects.toThrow('HTTP 503')
+    await expect(deck.play()).resolves.toBeUndefined()
+    expect(fetchAudio).toHaveBeenCalledTimes(2)
+    deck.dispose()
+  })
+
+  it('does not start playback if unmounted while decoding', async () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) })))
+    const deck = createScratchDeck()!
+    const context = TestAudioContext.instances[0]
+    context.state = 'running'
+    const play = deck.play()
+    deck.dispose()
+    await play
+    expect(context.sources).toHaveLength(0)
   })
 })

@@ -81,6 +81,12 @@ describe('light chart palette', () => {
     ...Object.values(INSTRUMENT_EDGE_COLORS),
   ])]
 
+  it('gives every node type its own color and light alias', () => {
+    const colors = Object.values(NODE_TYPE_COLORS)
+    expect(new Set(colors).size).toBe(colors.length)
+    expect(new Set(colors.map((source) => chartRgb(source).join())).size).toBe(colors.length)
+  })
+
   it.each(sourceColors)('provides a restrained shared alias for %s while preserving the dark fallback', (source) => {
     const channels = chartRgb(source).map((channel) => channel / 255)
     const high = Math.max(...channels)

@@ -1,6 +1,6 @@
-import { ArrowDown, ArrowLeftRight, ArrowRight, ArrowUpRight, Bubbles, ChartGantt, Disc3, Guitar, Headphones, Heart, History, Landmark, Moon, Radio, Sun, Users, type LucideIcon } from 'lucide-react'
-import { motion, useMotionValue, useReducedMotion, useScroll, useSpring, useTransform } from 'motion/react'
-import { useEffect, useId, useMemo, useRef, useState, type MouseEvent, type PointerEvent, type ReactNode } from 'react'
+import { ArrowDown, ArrowLeftRight, ArrowRight, ArrowUpRight, Bubbles, ChartGantt, Disc3, Guitar, Headphones, Heart, History, Landmark, Moon, Pause, Play, Radio, Sun, Users, type LucideIcon } from 'lucide-react'
+import { animate, motion, useAnimationFrame, useMotionValue, useReducedMotion, useScroll, useSpring, useTransform, type MotionValue } from 'motion/react'
+import { useEffect, useId, useMemo, useRef, useState, type MouseEvent, type PointerEvent, type ReactNode, type RefObject } from 'react'
 import { useTranslations } from 'next-intl'
 import { useExplorer } from '../ExplorerContext.ts'
 import { formatEventPeriod } from '../graph/history.ts'
@@ -9,17 +9,23 @@ import type { GraphNode } from '../graph/types.ts'
 import { BrandLink } from './BrandLink.tsx'
 import { GenreSample } from './GenreSample.tsx'
 import { SearchBar } from './SearchBar.tsx'
-import { angleDelta, createScratchDeck, type ScratchDeck } from './vinylScratch.ts'
+import { angleDelta, createScratchDeck, NORMAL_SPEED_DEG_PER_SEC, type ScratchDeck } from './vinylScratch.ts'
 import './Home.css'
 import { localizePath } from '../i18n/routing.ts'
 import { graphLabels } from '../i18n/graphLabels.ts'
 import { useColorTheme, type ColorTheme } from '../useColorTheme.ts'
+import { turntableHintFrame, turntableHintPosition, type TurntableHintTargets } from './turntableHint.ts'
 
 const DESTINATIONS = [
   { view: 'genre', icon: Bubbles },
   { view: 'artist', icon: Users },
   { view: 'instrument', icon: Guitar },
   { view: 'history', icon: History },
+] as const
+
+const LANGUAGES = [
+  { locale: 'en', label: 'english' },
+  { locale: 'fr', label: 'french' },
 ] as const
 
 const FEATURED_CONNECTIONS = [
@@ -50,30 +56,181 @@ function pointerAngle(element: HTMLElement, event: PointerEvent<HTMLElement>) {
   return { angle: Math.atan2(y, x) * 180 / Math.PI, distance: Math.hypot(x, y), radius: box.width / 2 }
 }
 
-function SpinningVinyl({ theme }: { theme: ColorTheme }) {
+function TurntableHint({ record, play, progress }: {
+  record: RefObject<HTMLDivElement | null>
+  play: RefObject<HTMLButtonElement | null>
+  progress: MotionValue<number>
+}) {
+  const overlay = useRef<HTMLDivElement>(null)
+  const [targets, setTargets] = useState<TurntableHintTargets | null>(null)
+  const [finished, setFinished] = useState(false)
+  const ready = targets !== null
+  const frame = useTransform(progress, turntableHintFrame)
+  const x = useTransform(() => targets ? turntableHintPosition(frame.get(), targets).x : 0)
+  const y = useTransform(() => targets ? turntableHintPosition(frame.get(), targets).y : 0)
+  const opacity = useTransform(frame, (value) => value.opacity)
+  const scale = useTransform(frame, (value) => value.scale)
+  const gripOpacity = useTransform(frame, (value) => value.grip)
+  const pointOpacity = useTransform(frame, (value) => 1 - value.grip)
+  const gripRotate = useTransform(frame, (value) => value.angle)
+
+  useEffect(() => {
+    if (!ready) return
+    progress.set(0)
+    const animation = animate(progress, 1, {
+      duration: 7,
+      delay: 2,
+      ease: 'linear',
+      onComplete: () => setFinished(true),
+    })
+    return () => {
+      animation.stop()
+      progress.set(0)
+    }
+  }, [progress, ready])
+
+  useEffect(() => {
+    const layer = overlay.current
+    const vinyl = record.current
+    const button = play.current
+    if (!layer || !vinyl || !button) return
+    const measure = () => {
+      const bounds = layer.getBoundingClientRect()
+      const disc = vinyl.getBoundingClientRect()
+      const control = button.getBoundingClientRect()
+      setTargets({
+        centerX: disc.left - bounds.left + disc.width / 2,
+        centerY: disc.top - bounds.top + disc.height / 2,
+        diameter: disc.width,
+        playX: control.left - bounds.left + control.width / 2,
+        playY: control.top - bounds.top + control.height / 2,
+      })
+    }
+    measure()
+    const observer = new ResizeObserver(measure)
+    observer.observe(layer)
+    observer.observe(vinyl)
+    observer.observe(button)
+    return () => observer.disconnect()
+  }, [record, play])
+
+  return (
+    <div ref={overlay} className="discovery-turntable-hint" aria-hidden="true">
+      {targets && !finished && (
+        <motion.div
+          className="discovery-turntable-hand"
+          style={{ x, y, opacity, scale }}
+        >
+          <motion.span className="discovery-turntable-point" style={{ opacity: pointOpacity }}>
+            <svg width="36" height="36" viewBox="0 0 36 36" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round">
+              <path d="M13 20V5a3 3 0 0 1 6 0v10a3 3 0 0 1 5 2 3 3 0 0 1 5 2 3 3 0 0 1 4 3v4c0 4-2 6-4 8H16l-8-12a3 3 0 0 1 5-3Z" />
+            </svg>
+          </motion.span>
+          <motion.span className="discovery-turntable-grip" style={{ opacity: gripOpacity, rotate: gripRotate }}>
+            <svg width="36" height="36" viewBox="0 0 36 36" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round">
+              <path d="M8 19v-8a3 3 0 0 1 6 0V9a3 3 0 0 1 6 0v2a3 3 0 0 1 6 0v3a3 3 0 0 1 6 0v10c0 4-1 7-3 10H16L5 23a3 3 0 0 1 3-4Z" />
+              <path d="M14 11v6m6-6v6m6-3v4" fill="none" />
+            </svg>
+          </motion.span>
+        </motion.div>
+      )}
+    </div>
+  )
+}
+
+function HeroTurntable({ theme, children }: { theme: ColorTheme; children: ReactNode }) {
+  const t = useTranslations()
   const tHome = useTranslations('homeCopy')
   const reduceMotion = useReducedMotion()
   const { scrollY } = useScroll()
   const angle = useTransform(scrollY, [0, 480], [-16, 344])
   const spin = useSpring(angle, { stiffness: 110, damping: 24 })
   const scratchOffset = useMotionValue(0)
-  const spinning = useTransform([spin, scratchOffset], ([base, offset]: number[]) => base + offset)
+  const hintProgress = useMotionValue(0)
+  const hintRotation = useTransform(hintProgress, (progress) => turntableHintFrame(progress).angle)
+  const spinning = useTransform([spin, scratchOffset, hintRotation], ([base, offset, demo]: number[]) => base + offset + demo)
   const still = useTransform(scratchOffset, (offset) => offset - 16)
   const rotate = reduceMotion ? still : spinning
   const deck = useRef<ScratchDeck | null>(null)
   const gesture = useRef<{ pointerId: number; angle: number; time: number; velocity: number } | null>(null)
   const [scratching, setScratching] = useState(false)
+  const [playing, setPlaying] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [audioError, setAudioError] = useState(false)
+  const [hintDismissed, setHintDismissed] = useState(false)
+  const record = useRef<HTMLDivElement>(null)
+  const playButton = useRef<HTMLButtonElement>(null)
+  const mounted = useRef(true)
+  const pendingPlay = useRef(false)
+  const errorId = useId()
 
-  useEffect(() => () => deck.current?.dispose(), [])
+  const dismissHint = () => {
+    scratchOffset.set(scratchOffset.get() + hintRotation.get())
+    hintProgress.set(0)
+    setHintDismissed(true)
+  }
+
+  useEffect(() => {
+    mounted.current = true
+    return () => {
+      mounted.current = false
+      deck.current?.dispose()
+      deck.current = null
+    }
+  }, [])
+
+  useAnimationFrame((_time, delta) => {
+    if (playing && !scratching && !reduceMotion) {
+      scratchOffset.set(scratchOffset.get() + NORMAL_SPEED_DEG_PER_SEC * delta / 1000)
+    }
+  })
+
+  const reportAudioError = (error: unknown) => {
+    if (!mounted.current) return
+    console.warn('Unable to play the turntable audio.', error)
+    deck.current?.pause()
+    setPlaying(false)
+    setAudioError(true)
+  }
+
+  const togglePlayback = async () => {
+    dismissHint()
+    if (pendingPlay.current) return
+    setAudioError(false)
+    if (playing) {
+      deck.current?.pause()
+      setPlaying(false)
+      return
+    }
+    pendingPlay.current = true
+    setLoading(true)
+    try {
+      deck.current ??= createScratchDeck(reportAudioError)
+      if (!deck.current) throw new Error('Web Audio is not supported by this browser.')
+      await deck.current.play()
+      if (mounted.current) setPlaying(true)
+    } catch (error) {
+      reportAudioError(error)
+    } finally {
+      pendingPlay.current = false
+      if (mounted.current) setLoading(false)
+    }
+  }
 
   const startScratch = (event: PointerEvent<HTMLDivElement>) => {
     if (event.button !== 0 || gesture.current) return
     const { angle: start, distance, radius } = pointerAngle(event.currentTarget, event)
     if (distance > radius) return
+    dismissHint()
     event.preventDefault()
     event.currentTarget.setPointerCapture(event.pointerId)
-    deck.current ??= createScratchDeck()
+    deck.current ??= createScratchDeck(reportAudioError)
+    if (!deck.current) {
+      reportAudioError(new Error('Web Audio is not supported by this browser.'))
+      return
+    }
     deck.current?.activate()
+    deck.current?.hold()
     gesture.current = { pointerId: event.pointerId, angle: start, time: event.timeStamp, velocity: 0 }
     setScratching(true)
   }
@@ -111,8 +268,35 @@ function SpinningVinyl({ theme }: { theme: ColorTheme }) {
 
   return (
     <>
+      <div className="discovery-hero-copy">
+        <p className="discovery-kicker"><span /> {t('tagline')}</p>
+        <div className="discovery-hero-title">
+          <h1 id="discovery-heading">{tHome('headline.first')}<br /> <em>{tHome('headline.second')}</em></h1>
+          <div className="discovery-turntable-controls">
+            <button
+              ref={playButton}
+              type="button"
+              className="discovery-turntable-play"
+              aria-label={tHome(playing ? 'pauseLoop' : 'playLoop')}
+              aria-pressed={playing}
+              aria-busy={loading}
+              aria-describedby={audioError ? errorId : undefined}
+              disabled={loading}
+              onFocus={dismissHint}
+              onClick={() => { void togglePlayback() }}
+            >
+              <span className="discovery-turntable-led" aria-hidden="true" />
+              {playing ? <Pause size={16} aria-hidden="true" /> : <Play size={16} aria-hidden="true" />}
+              <span>{tHome(loading ? 'loadingLoop' : playing ? 'pause' : 'play')}</span>
+            </button>
+            {audioError && <p id={errorId} className="discovery-turntable-error" role="alert">{tHome('loopError')}</p>}
+          </div>
+        </div>
+        {children}
+      </div>
       <div className="discovery-record" aria-hidden="true">
         <div
+          ref={record}
           className="discovery-record-perspective"
           data-side={theme === 'light' ? 'B' : 'A'}
           data-scratching={scratching || undefined}
@@ -137,6 +321,7 @@ function SpinningVinyl({ theme }: { theme: ColorTheme }) {
         aria-hidden="true"
         {...scratchHandlers}
       />
+      {!reduceMotion && !hintDismissed && <TurntableHint record={record} play={playButton} progress={hintProgress} />}
     </>
   )
 }
@@ -265,9 +450,7 @@ export function Home() {
 
       <main className="discovery-width discovery-main">
         <section className="discovery-hero" aria-labelledby="discovery-heading">
-          <div className="discovery-hero-copy">
-            <p className="discovery-kicker"><span /> {t('tagline')}</p>
-            <h1 id="discovery-heading">{tHome('headline.first')}<br /> <em>{tHome('headline.second')}</em></h1>
+          <HeroTurntable theme={theme}>
             <p className="discovery-intro">{tHome('intro')}</p>
             <div className="discovery-actions">
               <ViewLink view="genre" className="discovery-primary"><ChartGantt size={17} aria-hidden="true" /> {tHome('openTimeline')} <ArrowRight size={17} aria-hidden="true" /></ViewLink>
@@ -279,9 +462,7 @@ export function Home() {
                 {tHome('discover')} <ArrowDown size={15} aria-hidden="true" />
               </button>
             </div>
-            <p className="discovery-scratch-hint" aria-hidden="true">{tHome('touchScratchRecord')}</p>
-          </div>
-          <SpinningVinyl theme={theme} />
+          </HeroTurntable>
         </section>
 
         <motion.nav {...scrollReveal} className="discovery-nav" aria-label={tHome('exploreCatalogue')}>
@@ -418,12 +599,35 @@ export function Home() {
         </section>
       </main>
 
-      <footer className="discovery-width discovery-footer">
-        <p>
-          {tHome('madeWith')} <Heart className="discovery-footer-heart" size={16} aria-hidden="true" />
-          <span className="sr-only">{tHome('madeWithLove')}</span>{' '}{tHome('by')} Alexandre <strong>“Axoune”</strong> Hebert
-        </p>
-        <p className="discovery-copyright">© 2026 Soundlines. {t('copyright')}</p>
+      <footer className="discovery-footer">
+        <div className="discovery-width">
+          <nav className="discovery-footer-links discovery-footer-languages" aria-label={tHome('footer.languages')}>
+            {LANGUAGES.map(({ locale: targetLocale, label }) => (
+              <a
+                key={targetLocale}
+                href={localizePath('/', targetLocale)}
+                lang={targetLocale}
+                hrefLang={targetLocale}
+                aria-current={locale === targetLocale ? 'page' : undefined}
+              >
+                {tHome(`footer.${label}`)}
+              </a>
+            ))}
+          </nav>
+          <nav className="discovery-footer-links discovery-footer-pages" aria-label={tHome('footer.pages')}>
+            <a href={localizePath('/', locale)} aria-current="page">{tHome('footer.home')}</a>
+            {DESTINATIONS.map(({ view }) => (
+              <ViewLink key={view} view={view} className="discovery-footer-link">{tViews(view)}</ViewLink>
+            ))}
+          </nav>
+          <div className="discovery-footer-meta">
+            <p>
+              {tHome('madeWith')} <Heart className="discovery-footer-heart" size={16} aria-hidden="true" />
+              <span className="sr-only">{tHome('madeWithLove')}</span>{' '}{tHome('by')} Alexandre <strong>“Axoune”</strong> Hebert
+            </p>
+            <p className="discovery-copyright">© 2026 Soundlines. {t('copyright')}</p>
+          </div>
+        </div>
       </footer>
     </div>
   )

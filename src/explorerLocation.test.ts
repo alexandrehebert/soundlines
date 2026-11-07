@@ -33,7 +33,7 @@ describe('explorer URL state', () => {
       timelineView: 'artist',
       selectedId: 'artist:example',
     })
-    expect(explorerUrl(location, 'en-US', `${origin}/en?focus=artist%3Aexample`).pathname).toBe('/en/artists')
+    expect(explorerUrl(location, 'en', `${origin}/en?focus=artist%3Aexample`).pathname).toBe('/en/artists')
   })
 
   it('selects history for an event and drops unknown focus values', () => {
@@ -42,7 +42,7 @@ describe('explorer URL state', () => {
 
     const unknown = readExplorerLocation(new URL('/en?focus=artist%3Amissing', origin), nodeById)
     expect(unknown).toMatchObject({ isHome: true, selectedId: null })
-    expect(explorerUrl(unknown, 'en-US', `${origin}/en?focus=artist%3Amissing`).searchParams.has('focus')).toBe(false)
+    expect(explorerUrl(unknown, 'en', `${origin}/en?focus=artist%3Amissing`).searchParams.has('focus')).toBe(false)
   })
 
   it('preserves independent sorting, layout, unrelated parameters, and non-discovery hashes', () => {
@@ -64,6 +64,6 @@ describe('explorer URL state', () => {
   it('removes the discovery anchor when entering the explorer', () => {
     const source = new URL('/en#discover', origin)
     const location = { ...readExplorerLocation(source, nodeById), isHome: false }
-    expect(explorerUrl(location, 'en-US', source).href).toBe(`${origin}/en/genres`)
+    expect(explorerUrl(location, 'en', source).href).toBe(`${origin}/en/genres`)
   })
 })

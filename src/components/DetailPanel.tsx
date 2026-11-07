@@ -260,6 +260,11 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
                         {edge.note}
                       </p>
                     )}
+                    {(node.type === 'festival' || other.type === 'festival') && (
+                      <div className="pl-3">
+                        <SourceLinks sources={edge.sources} fallbackTitle={t('website')} />
+                      </div>
+                    )}
                   </li>
                 ))}
               </ul>

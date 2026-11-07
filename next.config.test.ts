@@ -9,6 +9,7 @@ describe('locale URL routing', () => {
     ['/en-US', '/en'],
     ['/en-US/artists?focus=artist%3Ajuan-atkins&sort=oldest-first', '/en/artists?focus=artist%3Ajuan-atkins&sort=oldest-first'],
     ['/en-US/history', '/en/history'],
+    ['/en-US/archive/file.ext?other=1', '/en/archive/file.ext?other=1'],
   ])('permanently redirects %s to %s', async (path, target) => {
     const response = await unstable_getResponseFromNextConfig({
       url: `${origin}${path}`,
@@ -19,14 +20,13 @@ describe('locale URL routing', () => {
     expect(getRedirectUrl(response)).toBe(`${origin}${target}`)
   })
 
-  it.each(['/en', '/en/genres', '/fr/history', '/en-US-extra'])(
-    'does not redirect a non-legacy path %s through the legacy redirect',
+  it.each(['/en', '/en/genres?other=1', '/fr/history', '/en-US-extra'])(
+    'does not redirect language-only or non-legacy path %s',
     async (path) => {
       const response = await unstable_getResponseFromNextConfig({
         url: `${origin}${path}`,
         nextConfig,
       })
-
       expect(getRedirectUrl(response)).toBeNull()
     },
   )

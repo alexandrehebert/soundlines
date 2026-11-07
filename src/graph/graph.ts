@@ -246,7 +246,13 @@ export function groupedRelations(
   id: string,
 ): { type: EdgeType; direction: 'out' | 'in'; entries: NeighborEntry[] }[] {
   const groups = new Map<string, NeighborEntry[]>()
+  const isFestival = index.nodeById.get(id)?.type === 'festival'
   for (const entry of neighbors(index, id)) {
+    // Festival associations are displayed only when the relationship is cited.
+    if ((entry.node.type === 'festival' || isFestival)
+      && !entry.edge.sources?.some((source) => {
+        try { return new URL(source).protocol === 'https:' } catch { return false }
+      })) continue
     const key = `${entry.direction}:${entry.edge.type}`
     const list = groups.get(key)
     if (list) list.push(entry)
