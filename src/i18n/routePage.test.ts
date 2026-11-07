@@ -1,4 +1,3 @@
-import { isValidElement } from 'react'
 import { describe, expect, it, vi } from 'vitest'
 import HomePage, { generateMetadata as homeMetadata } from '../../app/[locale]/page.tsx'
 import GenresPage, { generateMetadata as genresMetadata } from '../../app/[locale]/genres/page.tsx'
@@ -18,8 +17,6 @@ vi.mock('next/navigation', () => ({
   redirect: (href: string) => { throw new Error(`REDIRECT ${href}`) },
 }))
 
-vi.mock('../App.tsx', () => ({ default: () => null }))
-
 const origin = 'https://soundlines.example'
 
 describe('localized App Router pages', () => {
@@ -29,12 +26,13 @@ describe('localized App Router pages', () => {
     ['artists', ArtistsPage, artistsMetadata, 'en-US', { sort: 'oldest-first' }, '/en/artists?sort=oldest-first', '/fr/artists?sort=oldest-first'],
     ['instruments', InstrumentsPage, instrumentsMetadata, 'fr', {}, '/en/instruments', '/fr/instruments'],
     ['history', HistoryPage, historyMetadata, 'fr', { focus: 'event:mtv-launch' }, '/en/history?focus=event%3Amtv-launch', '/fr/history?focus=event%3Amtv-launch'],
-  ] as const)('renders %s with canonical and alternate URLs', async (_name, page, generateMetadata, locale, searchParams, english, french) => {
+  ] as const)('keeps %s in the shared layout with canonical and alternate URLs', async (_name, page, generateMetadata, locale, searchParams, english, french) => {
     const props = {
       params: Promise.resolve({ locale }),
       searchParams: Promise.resolve(searchParams),
     }
-    expect(isValidElement(await page(props))).toBe(true)
+    // The shared layout owns the explorer so route commits cannot remount its open sheet.
+    expect(await page(props)).toBeNull()
 
     const metadata = await generateMetadata(props)
     const canonical = `${origin}${locale === 'fr' ? french : english}`

@@ -22,8 +22,12 @@
 }
 
 .page-loading-record {
+  position: relative;
   display: grid;
   justify-items: center;
+  /* Keep the label anchored while the vinyl is resized for its docking animation. */
+  width: clamp(180px, 32vw, 336px);
+  height: clamp(180px, 32vw, 336px);
 }
 
 .page-loading-wordmark {
@@ -32,6 +36,10 @@
 
 #page-loading[data-opening] .page-loading-wordmark {
   display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: 1rem;
   color: #e2e8f0;
 }

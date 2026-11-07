@@ -144,10 +144,29 @@ body {
 
 /* Explorer page switches keep the chrome static and crossfade only the content. */
 .soundlines-view-transition [data-explorer-transition-view] { view-transition-name: soundlines-explorer-view; }
+/* Keep the fixed sheet and navigation in their normal stacking order above the timeline. */
+.soundlines-view-transition [data-explorer-transition-navigation] { view-transition-name: soundlines-explorer-navigation; }
+.soundlines-view-transition::view-transition-group(soundlines-explorer-navigation) { z-index: 2; }
+.soundlines-view-transition::view-transition-old(soundlines-explorer-navigation) { display: none; }
+.soundlines-view-transition::view-transition-new(soundlines-explorer-navigation) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+.soundlines-view-transition [data-mobile-detail-sheet] { view-transition-name: soundlines-detail-sheet; }
+.soundlines-view-transition::view-transition-group(soundlines-detail-sheet) { z-index: 1; }
+.soundlines-view-transition::view-transition-old(soundlines-detail-sheet) { display: none; }
+.soundlines-view-transition::view-transition-new(soundlines-detail-sheet) {
+  animation: none;
+  mix-blend-mode: normal;
+}
 
-.soundlines-view-transition::view-transition-old(root),
+.soundlines-view-transition::view-transition-old(root) {
+  display: none;
+}
+
 .soundlines-view-transition::view-transition-new(root) {
   animation: none;
+  mix-blend-mode: normal;
 }
 
 .soundlines-view-transition::view-transition-group(soundlines-explorer-view) {
@@ -156,15 +175,14 @@ body {
 }
 
 .soundlines-view-transition::view-transition-old(soundlines-explorer-view) {
-  animation: 140ms ease-in both soundlines-page-out;
+  /* Keep the outgoing view opaque beneath the incoming view. */
+  animation: none;
+  mix-blend-mode: normal;
 }
 
 .soundlines-view-transition::view-transition-new(soundlines-explorer-view) {
-  animation: 280ms cubic-bezier(.2, .7, .3, 1) 60ms both soundlines-view-in;
-}
-
-@keyframes soundlines-view-in {
-  from { opacity: 0; transform: translateY(6px); }
+  animation: 320ms cubic-bezier(.2, .7, .3, 1) both soundlines-page-in;
+  mix-blend-mode: normal;
 }
 
 @keyframes soundlines-page-out {

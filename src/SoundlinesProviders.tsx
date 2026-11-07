@@ -2,6 +2,7 @@
 
 import { MotionConfig } from 'motion/react'
 import { useMemo, type ReactNode } from 'react'
+import App from './App.tsx'
 import { ExplorerProvider } from './ExplorerProvider.tsx'
 import { graphForLocale } from './data/graphLocale.ts'
 import type { Locale } from './i18n/routing.ts'
@@ -13,7 +14,11 @@ export function SoundlinesProviders({ locale, children }: { locale: Locale; chil
 
   return (
     <ExplorerProvider graph={graph} locale={locale}>
-      <MotionConfig reducedMotion="user">{children}</MotionConfig>
+      <MotionConfig reducedMotion="user">
+        {/* Keep local UI state through route commits; pages own redirects and metadata. */}
+        <App />
+        {children}
+      </MotionConfig>
     </ExplorerProvider>
   )
 }

@@ -1,4 +1,3 @@
-import App from '../../../src/App.tsx'
 import { ensureCanonicalPage, generateLocalizedMetadata, type LocalizedPageProps } from '../../../src/i18n/routePage.ts'
 
 export function generateMetadata(props: LocalizedPageProps) {
@@ -7,5 +6,5 @@ export function generateMetadata(props: LocalizedPageProps) {
 
 export default async function HistoryPage(props: LocalizedPageProps) {
   await ensureCanonicalPage(props, 'history')
-  return <App />
+  return null
 }

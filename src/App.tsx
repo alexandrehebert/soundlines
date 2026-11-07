@@ -257,7 +257,7 @@ export function Explorer() {
       <main data-explorer-transition-content className="relative flex min-h-0 flex-1">
         <div
           data-explorer-transition-view
-          className="min-w-0 flex-1"
+          className="min-w-0 flex-1 bg-slate-950"
           onScrollCapture={(event) => {
             const surface = event.target
             if (!(surface instanceof HTMLElement)) return
@@ -311,7 +311,7 @@ export function Explorer() {
       </AnimatePresence>
       <AnimatePresence>
         {selectedId && (
-          <MobileDetailSheet key={selectedId} onClose={() => selectNode(null)} showGenreSample={!isDesktop} />
+          <MobileDetailSheet key="mobile-panel" onClose={() => selectNode(null)} showGenreSample={!isDesktop} />
         )}
       </AnimatePresence>
       <footer className="hidden border-t border-slate-800/60 bg-slate-950/90 px-5 py-1.5 text-[11px] font-medium text-slate-600 md:block">
