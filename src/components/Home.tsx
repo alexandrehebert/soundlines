@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowLeftRight, ArrowRight, ArrowUpRight, Bubbles, ChartGantt, Disc3, Guitar, Headphones, Heart, History, Landmark, Moon, Radio, Sun, Users, type LucideIcon } from 'lucide-react'
-import { motion, useReducedMotion, useScroll, useSpring, useTransform } from 'motion/react'
-import { useId, useMemo, useRef, useState, type MouseEvent, type ReactNode } from 'react'
+import { motion, useMotionValue, useReducedMotion, useScroll, useSpring, useTransform } from 'motion/react'
+import { useEffect, useId, useMemo, useRef, useState, type MouseEvent, type PointerEvent, type ReactNode } from 'react'
 import { useTranslations } from 'next-intl'
 import { useExplorer } from '../ExplorerContext.ts'
 import { formatEventPeriod } from '../graph/history.ts'
@@ -9,6 +9,7 @@ import type { GraphNode } from '../graph/types.ts'
 import { BrandLink } from './BrandLink.tsx'
 import { GenreSample } from './GenreSample.tsx'
 import { SearchBar } from './SearchBar.tsx'
+import { angleDelta, createScratchDeck, type ScratchDeck } from './vinylScratch.ts'
 import './Home.css'
 import { localizePath } from '../i18n/routing.ts'
 import { graphLabels } from '../i18n/graphLabels.ts'
@@ -42,18 +43,76 @@ const reveal = {
   transition: { duration: 0.55, ease: 'easeOut' },
 } as const
 
+function pointerAngle(element: HTMLElement, event: PointerEvent<HTMLElement>) {
+  const box = element.getBoundingClientRect()
+  const x = event.clientX - (box.left + box.width / 2)
+  const y = event.clientY - (box.top + box.height / 2)
+  return { angle: Math.atan2(y, x) * 180 / Math.PI, distance: Math.hypot(x, y), radius: box.width / 2 }
+}
+
 function SpinningVinyl({ theme }: { theme: ColorTheme }) {
+  const tHome = useTranslations('homeCopy')
   const reduceMotion = useReducedMotion()
   const { scrollY } = useScroll()
   const angle = useTransform(scrollY, [0, 480], [-16, 344])
-  const rotate = useSpring(angle, { stiffness: 110, damping: 24 })
+  const spin = useSpring(angle, { stiffness: 110, damping: 24 })
+  const scratchOffset = useMotionValue(0)
+  const spinning = useTransform([spin, scratchOffset], ([base, offset]: number[]) => base + offset)
+  const still = useTransform(scratchOffset, (offset) => offset - 16)
+  const rotate = reduceMotion ? still : spinning
+  const deck = useRef<ScratchDeck | null>(null)
+  const gesture = useRef<{ pointerId: number; angle: number; time: number; velocity: number } | null>(null)
+  const [scratching, setScratching] = useState(false)
+
+  useEffect(() => () => deck.current?.dispose(), [])
+
+  const startScratch = (event: PointerEvent<HTMLDivElement>) => {
+    if (event.button !== 0 || gesture.current) return
+    const { angle: start, distance, radius } = pointerAngle(event.currentTarget, event)
+    if (distance > radius) return
+    event.preventDefault()
+    event.currentTarget.setPointerCapture(event.pointerId)
+    deck.current ??= createScratchDeck()
+    gesture.current = { pointerId: event.pointerId, angle: start, time: event.timeStamp, velocity: 0 }
+    setScratching(true)
+  }
+
+  const moveScratch = (event: PointerEvent<HTMLDivElement>) => {
+    const current = gesture.current
+    if (!current || current.pointerId !== event.pointerId) return
+    const { angle: next } = pointerAngle(event.currentTarget, event)
+    const delta = angleDelta(current.angle, next)
+    const elapsed = Math.max(1, event.timeStamp - current.time) / 1000
+    current.velocity = current.velocity * 0.35 + (delta / elapsed) * 0.65
+    current.angle = next
+    current.time = event.timeStamp
+    scratchOffset.set(scratchOffset.get() + delta)
+    deck.current?.scratch(current.velocity)
+  }
+
+  const endScratch = (event: PointerEvent<HTMLDivElement>) => {
+    if (gesture.current?.pointerId !== event.pointerId) return
+    gesture.current = null
+    deck.current?.release()
+    setScratching(false)
+  }
 
   return (
-    <div className="discovery-record-perspective" data-side={theme === 'light' ? 'B' : 'A'}>
+    <div
+      className="discovery-record-perspective"
+      data-side={theme === 'light' ? 'B' : 'A'}
+      data-scratching={scratching || undefined}
+      title={tHome('scratchRecord')}
+      onPointerDown={startScratch}
+      onPointerMove={moveScratch}
+      onPointerUp={endScratch}
+      onPointerCancel={endScratch}
+      onLostPointerCapture={endScratch}
+    >
       <div className="discovery-record-flip">
         {(['A', 'B'] as const).map((side) => (
           <div key={side} className={`discovery-record-face discovery-record-face-${side.toLowerCase()}`}>
-            <motion.div className="discovery-vinyl" style={{ rotate: reduceMotion ? -16 : rotate }}>
+            <motion.div className="discovery-vinyl" style={{ rotate }}>
               <div className="discovery-label"><Disc3 size={28} /></div>
             </motion.div>
           </div>

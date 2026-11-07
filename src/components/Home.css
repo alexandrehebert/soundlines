@@ -171,7 +171,8 @@
   transform: rotate(-16deg);
 }
 
-.discovery-record-perspective { width: min(100%, 21rem); aspect-ratio: 1; perspective: 1000px; }
+.discovery-record-perspective { width: min(100%, 21rem); aspect-ratio: 1; perspective: 1000px; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; }
+.discovery-record-perspective[data-scratching] { cursor: grabbing; }
 .discovery-record-flip {
   position: relative;
   width: 100%;

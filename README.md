@@ -325,6 +325,10 @@ The UI never touches the JSON directly: all queries (neighbors, lineage traversa
   with dark labels in light mode; prominence, date fades, and category meanings
   remain unchanged. Colored text and instrument icons use `chartTextColor` for
   contrast without changing dark-mode hues.
+- Dragging the landing-page vinyl scratches it: the record follows the pointer
+  and [vinylScratch.ts](./src/components/vinylScratch.ts) plays a synthesized
+  vocal sample through Web Audio. Its speed and direction follow the drag
+  (33⅓ rpm is normal speed). Audio starts only after the first drag.
 
 - [ExplorerContext](./src/ExplorerContext.ts) owns the graph index, active mode, selection, per-mode ranges, and URL synchronization; the provider wires the UI without graph/selection prop drilling.
 - Locale-prefixed App Router URLs use `/en-US` and `/fr`. The root proxy negotiates
