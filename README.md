@@ -387,6 +387,10 @@ npm run storybook
 npm run build-storybook
 ```
 
+The [Vercel configuration](./vercel.json) selects the Next.js framework preset.
+Do not configure a static `dist` output directory: App Router pages render on
+the server.
+
 ### Storybook
 
 Run `npm run storybook` and open the local URL printed by the command (port
