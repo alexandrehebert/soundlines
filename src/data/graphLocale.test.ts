@@ -103,16 +103,18 @@ describe('localized graph overlays', () => {
     expect(graph.nodes[0].phases?.[0].note).toBe('Phase note')
   })
 
-  it('covers every event text field in the French overlay', () => {
+  it('covers every node descriptive text field in the French overlay', () => {
     const translations = frenchGraphTranslation()
     const missing: string[] = []
-    for (const node of (englishGraph as MusicGraph).nodes.filter(({ type }) => type === 'event')) {
+    for (const node of (englishGraph as MusicGraph).nodes) {
       const translation = translations.nodes[node.id]
       const requireTranslation = (value: string | undefined, field: string) => {
         if (!value?.trim()) missing.push(`${node.id}.${field}`)
       }
 
-      requireTranslation(translation?.name, 'name')
+      if (['event', 'instrument', 'place', 'scene'].includes(node.type)) {
+        requireTranslation(translation?.name, 'name')
+      }
       if (node.description) requireTranslation(translation?.description, 'description')
       if (node.phaseNote) requireTranslation(translation?.phaseNote, 'phaseNote')
       if (node.period?.estimateNote) requireTranslation(translation?.estimateNote, 'estimateNote')
@@ -121,6 +123,33 @@ describe('localized graph overlays', () => {
       }
     }
 
+    expect(missing).toEqual([])
+  })
+
+  it('uses French graph labels while preserving artist and recording names', () => {
+    const french = graphForLocale('fr')
+    const names = new Map(french.nodes.map((node) => [node.id, node.name]))
+    expect(names.get('instrument:drum-kit')).toBe('Batterie')
+    expect(names.get('instrument:french-horn')).toBe('Cor d’harmonie')
+    expect(names.get('place:london')).toBe('Londres')
+    expect(names.get('genre:alternative-rock')).toBe('Rock alternatif')
+    for (const node of (englishGraph as MusicGraph).nodes) {
+      if (node.type === 'artist' || node.type === 'track') {
+        expect(names.get(node.id)).toBe(node.name)
+      }
+    }
+  })
+
+  it('covers every relationship note and period estimate in French', () => {
+    const translations = frenchGraphTranslation()
+    const missing: string[] = []
+    for (const edge of (englishGraph as MusicGraph).edges) {
+      const translation = translations.edges[edge.id]
+      if (edge.note && !translation?.note?.trim()) missing.push(`${edge.id}.note`)
+      if (edge.period?.estimateNote && !translation?.estimateNote?.trim()) {
+        missing.push(`${edge.id}.estimateNote`)
+      }
+    }
     expect(missing).toEqual([])
   })
 

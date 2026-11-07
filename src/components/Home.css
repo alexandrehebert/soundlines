@@ -126,8 +126,6 @@
 .discovery-hero-copy { padding: clamp(1.5rem, 5vw, 4rem); padding-right: 0; }
 
 .discovery-kicker, .discovery-record-caption {
-  font: 650 .69rem/1.5 ui-monospace, monospace;
-  letter-spacing: .17em;
   color: var(--home-accent);
 }
 

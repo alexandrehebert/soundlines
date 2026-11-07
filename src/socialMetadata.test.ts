@@ -12,12 +12,12 @@ const template = '<html><head><!-- social-metadata:start --><title>Old</title><!
 
 describe('social metadata', () => {
   it.each([
-    ['/en-US', 'Soundlines | Discover Music History'],
-    ['/en-US/genres', 'Music Genres | Soundlines'],
-    ['/en-US/artists', 'Music Artists | Soundlines'],
-    ['/en-US/instruments', 'Musical Instruments | Soundlines'],
-    ['/en-US/history', 'Music History | Soundlines'],
-    ['/en-US/genres?layout=bubbles', 'Music Genre Map | Soundlines'],
+    ['/en', 'Soundlines | Discover Music History'],
+    ['/en/genres', 'Music Genres | Soundlines'],
+    ['/en/artists', 'Music Artists | Soundlines'],
+    ['/en/instruments', 'Musical Instruments | Soundlines'],
+    ['/en/history', 'Music History | Soundlines'],
+    ['/en/genres?layout=bubbles', 'Music Genre Map | Soundlines'],
   ])('describes the %s view', (path, title) => {
     const metadata = socialMetadata(new URL(path, origin), index.nodeById)
     expect(metadata.title).toBe(title)
@@ -56,16 +56,16 @@ describe('social metadata', () => {
   })
 
   it.each([
-    ['genre:house', 'House', 'Genre', '/en-US/genres'],
-    ['artist:juan-atkins', 'Juan Atkins', 'Artist', '/en-US/artists'],
-    ['instrument:timbales', 'Timbales', 'Instrument', '/en-US/instruments'],
-    ['label:metroplex', 'Metroplex', 'Label', '/en-US/artists'],
-    ['place:detroit', 'Detroit', 'Place', '/en-US/artists'],
-    ['track:clear', 'Clear', 'Track', '/en-US/artists'],
-    ['scene:the-warehouse', 'The Warehouse', 'Scene', '/en-US/artists'],
-    ['event:mtv-launch', 'MTV launches', 'Event', '/en-US/history'],
+    ['genre:house', 'House', 'Genre', '/en/genres'],
+    ['artist:juan-atkins', 'Juan Atkins', 'Artist', '/en/artists'],
+    ['instrument:timbales', 'Timbales', 'Instrument', '/en/instruments'],
+    ['label:metroplex', 'Metroplex', 'Label', '/en/artists'],
+    ['place:detroit', 'Detroit', 'Place', '/en/artists'],
+    ['track:clear', 'Clear', 'Track', '/en/artists'],
+    ['scene:the-warehouse', 'The Warehouse', 'Scene', '/en/artists'],
+    ['event:mtv-launch', 'MTV launches', 'Event', '/en/history'],
   ])('describes the %s entity and uses the effective view', (id, name, type, view) => {
-    const url = new URL('/en-US/artists?sort=oldest-first&layout=bubbles&utm_source=example', origin)
+    const url = new URL('/en/artists?sort=oldest-first&layout=bubbles&utm_source=example', origin)
     url.searchParams.set('focus', id)
     const metadata = socialMetadata(url, index.nodeById)
     const canonical = new URL(metadata.url)
@@ -82,28 +82,30 @@ describe('social metadata', () => {
   })
 
   it.each([
-    ['/en-US', '/en-US'],
-    ['/en-US/genres?layout=bubbles', '/en-US/genres?layout=bubbles'],
-    ['/en-US?view=artists', '/en-US/artists'],
-    ['/en-US/history?view=history', '/en-US/history'],
-    ['/en-US/genres/?view=artists', '/en-US/genres'],
+    ['/en', '/en'],
+    ['/en/genres?layout=bubbles', '/en/genres?layout=bubbles'],
+    ['/en?view=artists', '/en/artists'],
+    ['/en/history?view=history', '/en/history'],
+    ['/en/genres/?view=artists', '/en/genres'],
+    ['/en-US', '/en'],
+    ['/en-US/artists?sort=oldest-first', '/en/artists?sort=oldest-first'],
   ])('canonicalizes %s to %s', (path, canonical) => {
     expect(socialMetadata(new URL(path, origin), index.nodeById).url).toBe(`${origin}${canonical}`)
   })
 
   it('uses the dataset description when available and a meaningful fallback otherwise', () => {
-    const timbales = socialMetadata(new URL('/en-US?focus=instrument%3Atimbales', origin), index.nodeById)
+    const timbales = socialMetadata(new URL('/en?focus=instrument%3Atimbales', origin), index.nodeById)
     expect(timbales.description).toContain('shallow, single-headed Cuban metal drums')
 
     const node: GraphNode = { id: 'artist:no-description', type: 'artist', name: 'Example Artist' }
-    const fallback = socialMetadata(new URL('/en-US?focus=artist%3Ano-description', origin), new Map([[node.id, node]]))
+    const fallback = socialMetadata(new URL('/en?focus=artist%3Ano-description', origin), new Map([[node.id, node]]))
     expect(fallback.description).toContain('Example Artist (Artist)')
     expect(fallback.description).toContain('connections across music history')
   })
 
   it('provides a usable preview and canonical focus for every graph entity', () => {
     for (const node of index.graph.nodes) {
-      const url = new URL('/en-US', origin)
+      const url = new URL('/en', origin)
       url.searchParams.set('focus', node.id)
       const metadata = socialMetadata(url, index.nodeById)
       expect(metadata.title).toContain(node.name)
@@ -114,16 +116,16 @@ describe('social metadata', () => {
 
   it('falls back to the requested view for unknown focus and removes unsupported parameters', () => {
     const metadata = socialMetadata(
-      new URL('/en-US?view=instruments&focus=instrument%3Aunknown&sort=invalid&layout=invalid&other=1', origin),
+      new URL('/en?view=instruments&focus=instrument%3Aunknown&sort=invalid&layout=invalid&other=1', origin),
       index.nodeById,
     )
     expect(metadata.title).toBe('Musical Instruments | Soundlines')
-    expect(metadata.url).toBe(`${origin}/en-US/instruments`)
+    expect(metadata.url).toBe(`${origin}/en/instruments`)
   })
 
   it('preserves the shared sort order for every timeline', () => {
     const metadata = socialMetadata(
-      new URL('/en-US/artists?sort=oldest-first&artist-sort=oldest-first&instrument-sort=oldest-first', origin),
+      new URL('/en/artists?sort=oldest-first&artist-sort=oldest-first&instrument-sort=oldest-first', origin),
       index.nodeById,
     )
     const params = new URL(metadata.url).searchParams
@@ -140,7 +142,7 @@ describe('social metadata', () => {
       description: 'A </title><script>alert("x")</script> & more',
     }
     const metadata = socialMetadata(
-      new URL('/en-US?focus=genre%3Aunsafe&layout=bubbles', origin),
+      new URL('/en?focus=genre%3Aunsafe&layout=bubbles', origin),
       new Map([[node.id, node]]),
     )
     const html = renderSocialMetadata(template, metadata)

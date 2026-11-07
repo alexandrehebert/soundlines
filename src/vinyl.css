@@ -1,3 +1,10 @@
+.discovery-kicker, .discovery-record-caption, .page-loading-wordmark {
+  font: 650 .69rem/1.5 ui-monospace, monospace;
+  letter-spacing: .17em;
+}
+
+.discovery-record-caption, .page-loading-wordmark { text-transform: uppercase; }
+
 .discovery-vinyl {
   display: grid;
   place-items: center;

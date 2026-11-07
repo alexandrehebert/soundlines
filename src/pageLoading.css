@@ -34,8 +34,6 @@
   display: block;
   margin-top: 1rem;
   color: #e2e8f0;
-  font: 600 .8rem/1.2 system-ui, sans-serif;
-  letter-spacing: .18em;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -3,7 +3,7 @@ import { headers } from 'next/headers'
 import type { Metadata } from 'next'
 import App from '../../../src/App.tsx'
 import { buildIndex } from '../../../src/graph/graph.ts'
-import { isLocale, LOCALES, localizePath, type Locale } from '../../../src/i18n/routing.ts'
+import { isLocale, LOCALES, localizePath, stripLocalePrefix, type Locale } from '../../../src/i18n/routing.ts'
 import { socialMetadata } from '../../../src/socialMetadata.ts'
 import type { GraphNode } from '../../../src/graph/types.ts'
 import { graphForLocale } from '../../../src/data/graphLocale.ts'
@@ -35,7 +35,7 @@ async function pageRequest(props: LocalizedPageProps) {
     if (Array.isArray(value)) value.forEach((entry) => search.append(key, entry))
     else if (value !== undefined) search.set(key, value)
   }
-  const pathname = `/${locale}${route ? `/${route}` : ''}`
+  const pathname = localizePath(route, locale)
   const host = (requestHeaders.get('x-forwarded-host') ?? requestHeaders.get('host'))?.split(',')[0].trim()
   if (!host || /[\s/?#@\\]/.test(host)) throw new Error('A valid request Host header is required')
   const forwardedProtocol = requestHeaders.get('x-forwarded-proto')?.split(',')[0].trim()
@@ -49,7 +49,7 @@ export async function generateMetadata(props: LocalizedPageProps): Promise<Metad
   const { locale, initialUrl } = await pageRequest(props)
   const metadata = socialMetadata(new URL(initialUrl), nodeByIdByLocale.get(locale)!, locale)
   const canonical = new URL(metadata.url)
-  const untranslatedPath = canonical.pathname.slice(`/${locale}`.length) || '/'
+  const untranslatedPath = stripLocalePrefix(canonical.pathname)
   const languages = Object.fromEntries(LOCALES.map((targetLocale) => {
     const alternate = new URL(canonical.href)
     alternate.pathname = localizePath(untranslatedPath, targetLocale)

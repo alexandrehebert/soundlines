@@ -120,7 +120,11 @@ describe('page loading lifecycle', () => {
 
   function mockLandingVinyl(recordOpacity = '1') {
     const cancel = vi.fn()
-    const animate = vi.fn(() => ({ cancel }))
+    class MockKeyframeEffect {
+      setKeyframes = vi.fn()
+    }
+    vi.stubGlobal('KeyframeEffect', MockKeyframeEffect)
+    const animate = vi.fn(() => ({ cancel, effect: new MockKeyframeEffect() }))
     overlay.animate = animate
     const record = { animate }
     const style = {
@@ -136,13 +140,14 @@ describe('page loading lifecycle', () => {
       animate,
     }
     const destination = {
-      getBoundingClientRect: () => ({ left: 830, top: 130, width: 300, height: 300 }),
+      getBoundingClientRect: vi.fn(() => ({ left: 830, top: 130, width: 300, height: 300 })),
     }
     const hero = {
-      getBoundingClientRect: () => ({ left: 20, top: 80, right: 1180, bottom: 600 }),
+      getBoundingClientRect: vi.fn(() => ({ left: 20, top: 80, right: 1180, bottom: 600 })),
     }
     const recordContainer = {}
     const target = {
+      transform: 'rotate(-16deg)',
       offsetWidth: 300,
       getBoundingClientRect: vi.fn(() => ({ left: 900, top: 100, width: 20, height: 360 })),
       closest: vi.fn((selector: string) => {
@@ -155,7 +160,7 @@ describe('page loading lifecycle', () => {
     documentState.querySelector.mockReturnValue(target)
     overlay.querySelector.mockReturnValue(vinyl)
     vi.stubGlobal('getComputedStyle', (element: unknown) => ({
-      transform: 'rotate(-16deg)',
+      transform: element === target ? target.transform : 'rotate(-16deg)',
       opacity: element === recordContainer ? recordOpacity : '1',
       borderRadius: '24px',
       borderTopWidth: '1px',
@@ -163,7 +168,7 @@ describe('page loading lifecycle', () => {
       borderBottomWidth: '1px',
       borderLeftWidth: '1px',
     }))
-    return { animate, cancel, style, target }
+    return { animate, cancel, style, target, destination, hero }
   }
 
   it.each([
@@ -207,8 +212,44 @@ describe('page loading lifecycle', () => {
     ], expect.objectContaining({ duration: 700 }))
   })
 
+  it.each(['dark', 'light'])('tracks scrolling and rotation throughout docking in the %s theme', (theme) => {
+    documentState.documentElement.dataset.theme = theme
+    const { animate, target, destination, hero } = mockLandingVinyl()
+    loading.finishPageLoading()
+    vi.advanceTimersByTime(550)
+    const effects = animate.mock.results.map((result) => result.value.effect)
+    destination.getBoundingClientRect.mockReturnValue({ left: 830, top: -70, width: 300, height: 300 })
+    hero.getBoundingClientRect.mockReturnValue({ left: 20, top: -120, right: 1180, bottom: 400 })
+    target.transform = 'rotate(134deg)'
+    vi.advanceTimersByTime(16)
+    expect(effects[0].setKeyframes).toHaveBeenLastCalledWith([
+      { clipPath: 'inset(0px round 0px)', offset: 0 },
+      { clipPath: 'inset(0px round 0px)', offset: 0.5 },
+      { clipPath: 'inset(0px 21px 401px 21px round 23px)' },
+    ])
+    expect(effects[1].setKeyframes).toHaveBeenLastCalledWith([
+      { transform: `translate(0px, -10px) scale(${200 / 300})`, opacity: 1 },
+      { transform: 'translate(480px, -330px) scale(1)', opacity: '1' },
+    ])
+    expect(effects[2].setKeyframes).toHaveBeenLastCalledWith([
+      { transform: 'rotate(-16deg)' },
+      { transform: 'rotate(134deg)' },
+    ])
+    target.transform = 'rotate(180deg)'
+    vi.advanceTimersByTime(16)
+    expect(effects[2].setKeyframes).toHaveBeenLastCalledWith([
+      { transform: 'rotate(-16deg)' },
+      { transform: 'rotate(180deg)' },
+    ])
+    vi.advanceTimersByTime(668)
+    expect(overlay.dataset.loading).toBe('false')
+    effects.forEach((effect) => effect.setKeyframes.mockClear())
+    vi.advanceTimersByTime(100)
+    effects.forEach((effect) => expect(effect.setKeyframes).not.toHaveBeenCalled())
+  })
+
   it('cancels docking animations and dismissal on navigation', () => {
-    const { cancel, style } = mockLandingVinyl()
+    const { animate, cancel, style } = mockLandingVinyl()
     loading.finishPageLoading()
     vi.advanceTimersByTime(550)
     loading.transitionPage(vi.fn())
@@ -217,6 +258,7 @@ describe('page loading lifecycle', () => {
     expect(overlay.dataset.docking).toBeUndefined()
     expect(overlay.dataset.opening).toBeUndefined()
     vi.advanceTimersByTime(700)
+    animate.mock.results.forEach((result) => expect(result.value.effect.setKeyframes).not.toHaveBeenCalled())
     expect(overlay.dataset.loading).toBe('true')
   })
 

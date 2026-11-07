@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import rawGraph from '../data/graph.json'
 import { buildIndex, lineage } from './graph.ts'
-import { artistFamily, createTimelineModel, defaultViewRange, isTimelineView, viewForNode, viewFromParam, viewFromPath, VIEW_PARAMS } from './timeline.ts'
+import { artistFamily, createTimelineModel, defaultViewRange, isHomeUrl, isTimelineView, viewForNode, viewFromParam, viewFromPath, VIEW_PARAMS } from './timeline.ts'
 import type { MusicGraph } from './types.ts'
 
 const graph: MusicGraph = {
@@ -38,8 +38,17 @@ describe('timeline projections', () => {
 
   it('resolves explorer views from locale-prefixed paths', () => {
     expect(viewFromPath('/fr/artists')).toBe('artist')
+    expect(viewFromPath('/en/artists')).toBe('artist')
+    expect(viewFromPath('/en/instruments/')).toBe('instrument')
+    expect(viewFromPath('/en/history')).toBe('history')
     expect(viewFromPath('/en-US/instruments/')).toBe('instrument')
+    expect(viewFromPath('/en')).toBeUndefined()
     expect(viewFromPath('/fr')).toBeUndefined()
+  })
+
+  it.each(['/en', '/en/', '/en-US', '/fr'])('recognizes %s as the discovery page', (path) => {
+    expect(isHomeUrl(new URL(path, 'https://soundlines.example'), false)).toBe(true)
+    expect(isHomeUrl(new URL(`${path}?view=artists`, 'https://soundlines.example'), false)).toBe(false)
   })
 
   it('keeps genre bars and links separate from artists', () => {

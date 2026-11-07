@@ -2,6 +2,7 @@ services:
   soundlines:
     image: node:22-alpine
     container_name: soundlines-dev
+    restart: unless-stopped
     working_dir: /app
     # Install inside the container (host node_modules has macOS-native
     # binaries) and expose Next.js outside the container network.
@@ -11,6 +12,7 @@ services:
     volumes:
       - .:/app
       - node_modules:/app/node_modules
+      - next_cache:/app/.next
 
   storybook:
     image: node:22-alpine
@@ -27,4 +29,5 @@ services:
 
 volumes:
   node_modules:
+  next_cache:
   storybook_node_modules:

@@ -7,7 +7,8 @@ Next.js App Router, React 19, TypeScript, Tailwind CSS 4, Motion. Tested with Vi
 The header and browser favicon share the same violet vinyl-disc icon.
 On first load, the landing page's grooved vinyl spins in the center before React
 starts. Once the landing page is ready, the cover fades away and the vinyl moves
-into its hero position over 700ms. Other entry pages simply fade out the cover.
+into its hero position over 700ms, tracking the hero position and scroll-driven
+rotation even when scrolling during loading. Other entry pages simply fade out the cover.
 The hero copy stays in its final position throughout; catalogue widgets fade in
 as they enter the viewport without shifting their alignment.
 Clicking the header brand while already on the landing page does not reload it
@@ -331,8 +332,10 @@ The UI never touches the JSON directly: all queries (neighbors, lineage traversa
   (33⅓ rpm is normal speed). Audio starts only after the first drag.
 
 - [ExplorerContext](./src/ExplorerContext.ts) owns the graph index, active mode, selection, per-mode ranges, and URL synchronization; the provider wires the UI without graph/selection prop drilling.
-- Locale-prefixed App Router URLs use `/en-US` and `/fr`. The root proxy negotiates
-  the initial locale from `Accept-Language`; explicit locale URLs remain stable.
+- Locale-prefixed App Router URLs use `/en` and `/fr`, while English retains the
+  `en-US` locale internally. Old `/en-US` links permanently redirect to `/en`,
+  preserving paths and query parameters. The root proxy negotiates the initial
+  locale from `Accept-Language`; explicit locale URLs remain stable.
 - App translations live in [English](./src/i18n/locales/en-US.json) and
   [French](./src/i18n/locales/fr.json) JSON catalogues: UI copy, accessibility
   labels, date wording, graph taxonomy labels, and page/social metadata.
@@ -342,13 +345,17 @@ The UI never touches the JSON directly: all queries (neighbors, lineage traversa
   catalogue keys and ICU parameters aligned across languages. Graph content
   translations remain separate.
 - [French graph text](./src/data/graph.fr.json) is keyed by stable entity IDs
-  and overlays only translated fields on the canonical graph. The overlay is
-  currently partial: 96 of 1,265 names have distinct French translations and
-  193 of 1,224 descriptions are translated, including all 82 events. It also
-  includes three phase summaries, three individual phase notes, and one
-  period-estimate note; relationship notes remain untranslated. Artist, label,
-  and recording names generally retain their original form. Do not describe
-  French graph coverage as complete.
+  and overlays only translated fields on the canonical graph. The overlay
+  covers descriptions, phase summaries, individual phase notes, period-estimate
+  notes, and all relationship notes. Instruments, places, scenes, and applicable
+  genre names have localized labels; artist, label, and recording names retain
+  their original form. Previously missing long-form text was machine-translated
+  with Google Translate, with manual corrections to visible musical terminology.
+  The remaining 860 relationship notes were translated directly, without an
+  external translation service, preserving source references and caveats.
+  This text remains a first pass for editorial review. Coverage tests require
+  every source descriptive field to have a nonempty French entry and verify
+  that translations preserve graph structure.
 - [Social metadata](./src/socialMetadata.ts) derives previews from the same
   routes, URL parameters, and graph nodes. App Router metadata is rendered on
   the server, including canonical and alternate-language URLs.

@@ -55,6 +55,15 @@ function render(
 }
 
 describe('Explorer header statistics', () => {
+  it.each([
+    ['en-US', '/en'],
+    ['fr', '/fr'],
+  ] as const)('uses the public %s locale prefix for the home link', (locale, prefix) => {
+    const markup = render(graph, <Explorer />, null, 'genre', locale)
+    expect(markup).toContain(`href="${prefix}"`)
+    expect(markup).not.toContain('href="/en-US')
+  })
+
   it('explains estimated bar edges in the timeline legend', () => {
     const estimatedGraph: MusicGraph = {
       ...graph,
@@ -223,6 +232,28 @@ describe('view toggle', () => {
 })
 
 describe('landing view transition', () => {
+  it('shares uppercase caption typography between the loader and landing vinyl', () => {
+    const vinylCss = readFileSync(new URL('./vinyl.css', import.meta.url), 'utf8')
+    const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
+    const loadingCss = readFileSync(new URL('./pageLoading.css', import.meta.url), 'utf8')
+
+    expect(homeCss).toContain('@import "../vinyl.css";')
+    expect(loadingCss).toContain('@import "./vinyl.css";')
+    expect(vinylCss).toMatch(/\.discovery-kicker,\s*\.discovery-record-caption,\s*\.page-loading-wordmark\s*\{\s*font: 650 \.69rem\/1\.5 ui-monospace, monospace;\s*letter-spacing: \.17em;/)
+    expect(vinylCss).toMatch(/\.discovery-record-caption,\s*\.page-loading-wordmark\s*\{\s*text-transform: uppercase;/)
+  })
+
+  it.each([
+    ['en-US', '/en'],
+    ['fr', '/fr'],
+  ] as const)('uses the public %s locale prefix for landing links', (locale, prefix) => {
+    const markup = render(graph, <Home />, null, 'genre', locale)
+    for (const path of ['', '/genres', '/artists', '/instruments', '/history']) {
+      expect(markup).toContain(`href="${prefix}${path}"`)
+    }
+    expect(markup).not.toContain('href="/en-US')
+  })
+
   it('renders both vinyl faces without side letters or an inline flip transform', () => {
     const markup = render(graph, <Home />)
     const labels = [...markup.matchAll(/<div class="discovery-label">([\s\S]*?)<\/div>/g)]
