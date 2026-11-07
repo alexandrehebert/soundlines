@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs'
 import type { ReactNode } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it, vi } from 'vitest'
@@ -204,5 +205,14 @@ describe('view toggle', () => {
     expect(markup).toContain('Genres')
     expect(markup).toContain('Artists')
     expect(markup).toContain('Instruments')
+  })
+})
+
+describe('landing view transition', () => {
+  it('keeps the mobile detail sheet above the timeline content and below the navigation', () => {
+    const css = readFileSync(new URL('./index.css', import.meta.url), 'utf8')
+    expect(css).toContain('.soundlines-home-transition [data-mobile-detail-sheet] { view-transition-name: soundlines-detail-sheet; }')
+    expect(css).toContain('.soundlines-home-transition::view-transition-group(soundlines-detail-sheet) { z-index: 1; }')
+    expect(css).toContain('.soundlines-home-transition::view-transition-group(soundlines-explorer-navigation) { z-index: 2; }')
   })
 })

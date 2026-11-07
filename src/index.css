@@ -27,6 +27,10 @@ body {
 .soundlines-home-transition [data-explorer-transition-header] { view-transition-name: soundlines-explorer-header; }
 .soundlines-home-transition [data-explorer-transition-navigation] { view-transition-name: soundlines-explorer-navigation; }
 .soundlines-home-transition [data-explorer-transition-content] { view-transition-name: soundlines-explorer-content; }
+/* The mobile detail sheet is fixed above the content, so it needs its own layer to stay in front of the timeline. */
+.soundlines-home-transition [data-mobile-detail-sheet] { view-transition-name: soundlines-detail-sheet; }
+.soundlines-home-transition::view-transition-group(soundlines-detail-sheet) { z-index: 1; }
+.soundlines-home-transition::view-transition-group(soundlines-explorer-navigation) { z-index: 2; }
 
 /* On narrow screens the vinyl overflows the clipped hero card, so it fades with the page. */
 @media (width > 42rem) {
@@ -84,7 +88,8 @@ body {
   animation: 340ms ease-out 60ms both soundlines-content-in;
 }
 
-.soundlines-home-transition::view-transition-new(soundlines-explorer-content) {
+.soundlines-home-transition::view-transition-new(soundlines-explorer-content),
+.soundlines-home-transition::view-transition-new(soundlines-detail-sheet) {
   animation: 410ms cubic-bezier(.2, .7, .3, 1) 130ms both soundlines-content-in;
 }
 
@@ -96,7 +101,8 @@ body {
 
 .soundlines-home-transition::view-transition-old(soundlines-explorer-header),
 .soundlines-home-transition::view-transition-old(soundlines-explorer-navigation),
-.soundlines-home-transition::view-transition-old(soundlines-explorer-content) {
+.soundlines-home-transition::view-transition-old(soundlines-explorer-content),
+.soundlines-home-transition::view-transition-old(soundlines-detail-sheet) {
   animation: 220ms ease-in both soundlines-page-out;
 }
 
