@@ -52,12 +52,12 @@ type ChromeProps = { c: Copy; locale: Locale; slug: Slug }
 function Header({ c, locale, slug }: ChromeProps) {
   return (
     <header className="shell flex items-center gap-2 py-6 sm:gap-6">
-      <a className="inline-flex items-center gap-2.5 text-lg font-bold tracking-tight sm:text-xl" href={href({ locale, slug: 'index' })}>
+      <a className="inline-flex shrink-0 items-center gap-2.5 text-lg font-bold tracking-tight sm:text-xl" href={href({ locale, slug: 'index' })}>
         <img src={favicon} width={34} height={34} alt="" />
-        Soundlines
+        <span className="max-[359px]:sr-only">Soundlines</span>
         <span className="ml-2 hidden border-l border-line pl-4 text-sm font-normal tracking-normal text-muted md:inline">{c.navigation}</span>
       </a>
-      <nav aria-label={c.language} className="ml-auto flex text-xs font-bold">
+      <nav aria-label={c.language} className="ml-auto flex shrink-0 text-xs font-bold">
         {(['en', 'fr'] as const).map((target) => (
           <a
             key={target}
@@ -65,13 +65,14 @@ function Header({ c, locale, slug }: ChromeProps) {
             lang={target}
             hrefLang={target}
             aria-current={target === locale ? 'page' : undefined}
-            className="rounded-full p-3 text-muted aria-[current=page]:bg-surface aria-[current=page]:text-fg"
+            className="rounded-full p-2.5 text-muted sm:p-3 aria-[current=page]:bg-surface aria-[current=page]:text-fg"
           >
             {target.toUpperCase()}
           </a>
         ))}
       </nav>
-      <a className="py-3 text-sm" href={repository}>GitHub {external}</a>
+      <a className="whitespace-nowrap py-3 text-xs sm:text-sm" href={`${siteUrl}/storybook/`}>Storybook<span className="hidden sm:inline"> {external}</span></a>
+      <a className="whitespace-nowrap py-3 text-xs sm:text-sm" href={repository}>GitHub<span className="hidden sm:inline"> {external}</span></a>
     </header>
   )
 }
@@ -184,7 +185,7 @@ function Resources({ c, page }: { c: Copy; page: Page }) {
       <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
         {page.resources.map(([path, title]) => (
           <li key={path}>
-            <a className="inline-block py-2 underline underline-offset-4" href={repositoryUrl(repository, path)}>
+            <a className="inline-block py-2 underline underline-offset-4" href={/^https?:/.test(path) ? path : repositoryUrl(repository, path)}>
               {title} {external}
             </a>
           </li>

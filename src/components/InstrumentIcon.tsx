@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react'
+import { publicAsset } from '../publicAsset.ts'
 
 export function InstrumentIcon({ id, className, style }: {
   id: string
@@ -6,7 +7,7 @@ export function InstrumentIcon({ id, className, style }: {
   style?: CSSProperties
 }) {
   const file = `${encodeURIComponent(id.slice('instrument:'.length))}.svg`
-  const mask = `url("/instrument-icons/${file}") center / contain no-repeat`
+  const mask = `url("${publicAsset(`/instrument-icons/${file}`)}") center / contain no-repeat`
 
   return (
     <span data-instrument-icon={id} aria-hidden="true" className={className}

@@ -1,11 +1,12 @@
 import { AudioPreviewPlayer } from './AudioPreviewPlayer.tsx'
 import { InfoBadge } from './InfoBadge.tsx'
+import { publicAsset } from '../publicAsset.ts'
 import { useTranslations } from 'next-intl'
 
 export function GenreSample({ id, name }: { id: string; name: string }) {
   const t = useTranslations('audio')
   const slug = id.slice('genre:'.length)
-  const url = `/genre-previews/${encodeURIComponent(slug)}.m4a`
+  const url = publicAsset(`/genre-previews/${encodeURIComponent(slug)}.m4a`)
 
   return (
     <div className="relative mr-2 shrink-0">

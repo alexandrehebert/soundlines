@@ -133,6 +133,18 @@ Run `npm run storybook` and open the local URL printed by the command (port
 `npm run storybook -- --port 6007` instead. `npm run build-storybook` creates a
 static, shareable build in `storybook-static/`.
 
+The companion workflow also publishes a curated, browse-only catalogue at
+<https://alexandrehebert.github.io/soundlines/storybook/>, linked from the
+"How it's built" page. `npm run build-storybook:public` (run after
+`npm run build:site`) builds it into `_site/storybook/` with
+`STORYBOOK_PUBLIC=1`: [.storybook/main.ts](../.storybook/main.ts) limits it to
+the listed stories and the assets they use (no genre previews), and
+[.storybook/manager.ts](../.storybook/manager.ts) hides the addon panel,
+toolbar and shortcuts. Because it is served below `/soundlines/storybook/`,
+components must build URLs to files in `public/` with `publicAsset()` from
+[src/publicAsset.ts](../src/publicAsset.ts), never a bare `/path`. Preview it
+with `npm run preview:site` and open `/soundlines/storybook/`.
+
 The catalog includes the project colors, view/layout/order toggles, bubble
 zoom buttons, search states, legends, detail panels, timeline bars, the timeline,
 the bubble map, and desktop/mobile explorer compositions. Use the Controls,

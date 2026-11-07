@@ -1,3 +1,4 @@
+import { PROJECT_SITE_URL } from '../../../src/projectLinks.ts'
 import type { Copy } from '../content.ts'
 
 export const en: Copy = {
@@ -429,6 +430,7 @@ export const en: Copy = {
         ['docs/ARCHITECTURE.md', 'Application architecture'],
         ['.github/agents', 'Specialised agents'],
         ['.github/skills', 'Reusable procedures'],
+        [`${PROJECT_SITE_URL}/storybook/`, 'Component gallery (Storybook)'],
       ],
     },
   },

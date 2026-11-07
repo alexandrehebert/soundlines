@@ -1,3 +1,5 @@
+import { publicAsset } from '../publicAsset.ts'
+
 /** Degrees per second of a record spinning at 33⅓ rpm, i.e. normal playback speed. */
 export const NORMAL_SPEED_DEG_PER_SEC = 200
 export const MAX_SCRATCH_RATE = 4
@@ -79,7 +81,7 @@ type DeckVoice = { source: AudioBufferSourceNode; gain: GainNode }
 
 /** Public URL of a genre loop rendered by the loop pipeline (`public/loops/<slug>.wav`). */
 export function loopUrl(slug: string) {
-  return `/loops/${slug}.wav`
+  return publicAsset(`/loops/${slug}.wav`)
 }
 
 /** Creates a Web Audio deck whose sample position is driven by the record's motion. */

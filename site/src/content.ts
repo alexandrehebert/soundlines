@@ -60,7 +60,7 @@ export type Page = {
   sections: [title: string, text: string][]
   example?: Example
   showcase?: boolean
-  /** Repository-relative path (optionally with #anchor) and link text. */
+  /** Repository-relative path (optionally with #anchor) or absolute URL, and link text. */
   resources: [path: string, title: string][]
 }
 

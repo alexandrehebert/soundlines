@@ -16,6 +16,9 @@ on:
       - '.github/skills/**'
       - 'package.json'
       - 'package-lock.json'
+      # The curated public Storybook is published under /storybook/.
+      - 'src/**'
+      - '.storybook/**'
       - '.github/workflows/project-pages.yml'
   pull_request:
     paths:
@@ -31,6 +34,9 @@ on:
       - '.github/skills/**'
       - 'package.json'
       - 'package-lock.json'
+      # The curated public Storybook is published under /storybook/.
+      - 'src/**'
+      - '.storybook/**'
       - '.github/workflows/project-pages.yml'
   workflow_dispatch:
 
@@ -53,6 +59,7 @@ jobs:
       - run: npm ci
       - run: npm run test:site
       - run: npm run build:site
+      - run: npm run build-storybook:public
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

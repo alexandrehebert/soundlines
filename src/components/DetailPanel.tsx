@@ -9,6 +9,7 @@ import { chartColor, chartTextColor, formatPeriod, formatYear, NODE_TYPE_COLORS 
 import { prominencePhases, intensityColor, intensityOpacity, phaseIntensity } from '../graph/phases.ts'
 import { CURRENT_YEAR } from '../graph/layout.ts'
 import { graphLabels } from '../i18n/graphLabels.ts'
+import { publicAsset } from '../publicAsset.ts'
 import { GenreSample } from './GenreSample.tsx'
 import { InstrumentIcon } from './InstrumentIcon.tsx'
 
@@ -80,7 +81,7 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
       <div
         className={`sticky top-0 z-10 flex items-start border-b border-slate-800 bg-slate-950/95 bg-contain bg-right-bottom bg-no-repeat p-4 md:p-5 ${showCloseButton && !hasGenrePlayer ? 'pr-14 md:pr-16' : ''}`}
         style={instrumentArtwork ? {
-          backgroundImage: `url("/instrument-header-backgrounds/${instrumentArtwork}")`,
+          backgroundImage: `url("${publicAsset(`/instrument-header-backgrounds/${instrumentArtwork}`)}")`,
         } : undefined}
       >
         <div className="min-w-0 flex-1">

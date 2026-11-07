@@ -11,7 +11,7 @@ import { hipHopLoop, instrumentBrief, instruments } from './components/assets.ts
 import { readIconBlueprint } from './components/blueprint.ts'
 import { Legend } from './components/Diagrams.tsx'
 import { PreviewView } from './components/Previews.tsx'
-import { actors, copy, locales, repository, slugs, stats, type Flow, type FlowStep } from './content.ts'
+import { actors, copy, locales, repository, siteUrl, slugs, stats, type Flow, type FlowStep } from './content.ts'
 import { matchRoute, repositoryUrl, routeFile, routePath, routes } from './routes.ts'
 
 const root = fileURLToPath(new URL('../../', import.meta.url))
@@ -46,11 +46,23 @@ describe('project companion content', () => {
 
   it('only links to repository paths that exist', () => {
     const paths = Object.values(copy.en.pages).flatMap((page) => [
-      ...page.resources.map(([path]) => path),
+      ...page.resources.map(([path]) => path).filter((path) => !/^https?:/.test(path)),
       ...(page.example ? [page.example.path] : []),
       ...(page.showcase ? instruments.map(({ slug }) => instrumentBrief(slug)) : []),
     ])
     for (const path of paths) expect(existsSync(`${root}${path.split('#')[0]}`), path).toBe(true)
+  })
+
+  it.each(locales)('links to the public Storybook on the %s build page', (locale) => {
+    const html = renderToStaticMarkup(<App locale={locale} slug="build" />)
+    expect(html).toContain(`href="${siteUrl}/storybook/"`)
+  })
+
+  it.each(routes)('links to the public Storybook next to GitHub in the header: $locale/$slug', (route) => {
+    const html = renderToStaticMarkup(<App {...route} />)
+    const header = html.slice(html.indexOf('<header'), html.indexOf('</header>'))
+    expect(header).toContain(`href="${siteUrl}/storybook/"`)
+    expect(header).toContain(`href="${repository}"`)
   })
 
   it.each(locales)('links directly to the evidence guide on the %s graph page', (locale) => {
