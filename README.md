@@ -72,6 +72,14 @@ npm run validate:graph # graph validation
 Expand a workflow for its stages and owners. These are contributor processes,
 not services required to run the app.
 
+The graph, artwork, and loop workflows describe this repository's
+AI-assisted contribution system: reusable **skills** give an AI coding
+assistant project-specific procedures, and specialized **agents** take
+responsibility for individual stages and handoffs. They guide work when
+invoked; they are not automatic pipelines. Deterministic validation and the
+human review or sign-off shown in each diagram remain explicit gates. Genre
+previews use a separate rendering script rather than the agent workflow.
+
 <details>
 <summary><strong>Music graph</strong> — research, enrichment, and source review</summary>
 
