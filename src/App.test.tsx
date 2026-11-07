@@ -62,9 +62,11 @@ describe('Explorer header statistics', () => {
   ] as const)('links to the source and companion in %s', (locale, repositoryLabel, aboutLabel) => {
     const explorer = render(graph, <Explorer />, null, 'genre', locale)
     const header = explorer.match(/<header\b[\s\S]*?<\/header>/)?.[0] ?? ''
-    expect(header).toContain(`href="${REPOSITORY_URL}"`)
-    expect(header).toContain(`aria-label="${repositoryLabel}"`)
+    expect(header).not.toContain(`href="${REPOSITORY_URL}"`)
     const home = render(graph, <Home />, null, 'genre', locale)
+    const homeHeader = home.match(/<header\b[\s\S]*?<\/header>/)?.[0] ?? ''
+    expect(homeHeader).toContain(`href="${REPOSITORY_URL}"`)
+    expect(homeHeader).toContain(`aria-label="${repositoryLabel}"`)
     const footer = home.match(/<footer\b[\s\S]*?<\/footer>/)?.[0] ?? ''
     expect(footer).toContain(`href="${REPOSITORY_URL}"`)
     expect(footer).toContain(`>${repositoryLabel}</a>`)

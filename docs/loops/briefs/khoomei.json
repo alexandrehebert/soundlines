@@ -1,0 +1,26 @@
+{
+  "slug": "khoomei",
+  "genre": "genre:khoomei",
+  "asset": "public/loops/khoomei.wav",
+  "bpm": 80,
+  "meter": 4,
+  "key": "A minor",
+  "bars": 4,
+  "duration": 26,
+  "seeds": [
+    475071,
+    679731,
+    643659,
+    861043,
+    213097
+  ],
+  "prompt": "Original instrumental khoomei adaptation, 80 BPM, 4/4, A minor. Tuvan steppe music carried instrumentally: igil horsehair fiddle and doshpuluur lute play a galloping melody over a deep bowed drone, jaw harp and a whistling flute-like overtone line evoke throat-singing harmonics, and a frame drum keeps a horse-gait pulse. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/khoomei.md, approved for catalogue production. Original constraint: Overtone singing is the defining sound and has no steady pulse; the instrumental/no-vocals gate is incompatible. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://ich.unesco.org/en/RL/mongolian-art-of-singing-khoomei-00210?RL=00210",
+    "https://folkways.si.edu/throat-singing-unique-vocalization-three-cultures/world/music/article/smithsonian",
+    "https://nit.tuva.asia/nit/en/article/view/706"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

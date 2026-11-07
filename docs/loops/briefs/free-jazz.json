@@ -1,0 +1,25 @@
+{
+  "slug": "free-jazz",
+  "genre": "genre:free-jazz",
+  "asset": "public/loops/free-jazz.wav",
+  "bpm": 120,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    107239,
+    828573,
+    810588,
+    193736,
+    841440
+  ],
+  "prompt": "Original instrumental free jazz adaptation, 120 BPM, 4/4, F minor. Free jazz-inspired small-group passage on a loose but steady swing pulse: raw tenor saxophone and trumpet trade spiky, searching phrases, piano throws dense clusters, upright bass drives restless walking lines, and drums churn cymbal washes with accents that still mark the cycle. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/free-jazz.md, approved for catalogue production. Original constraint: Elastic pulse and spontaneous interplay conflict with fixed bars and deterministic beat-grid validation. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://www.britannica.com/art/free-jazz",
+    "https://www.arts.gov/honors/jazz/ornette-coleman"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

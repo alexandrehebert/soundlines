@@ -318,32 +318,36 @@ def vibraphone():
     return frame + tubes + rails + bars
 
 
+# Alto saxophone after a Yamaha YAS-62 photo: long conical body, tight bow and a bell tube that rises
+# against the body (one shared seam) to a bell flaring out at mid-height.
 SAXOPHONE_OUTLINE = (
-    'M3 5.5 6 4c2-1 4.3-.1 4.8 2.2l2.4 11a1.5 1.5 0 0 0 3-.1'
-    'l.7-4.5-1-2.2 6 1.1-1.9 1.7-.9 4.5a4.7 4.7 0 0 1-9.2.1'
-    'L7.2 7.3c-.2-.8-1-1.1-1.7-.8l-1.6.8Z'
+    'M10.95 6C10.8 3.36 9.4 2.07 6.82 2.4L5.1 2.93 4 3.8l.87.64 2.05-.75'
+    'C8.33 3.47 9.2 4.44 9.16 6.35l1.9 12.57A3.4 3.4 0 0 0 17.7 17.54l-.45-2.54'
+    'Q17.8 13.7 20.1 13.4l-6.75-.8-.8-.15Z'
 )
+SAXOPHONE_SEAM = 'M13.35 12.6q.5.8.33 2.1l.8 3.35'
 
 
 def saxophone():
     return ('<g transform="scale(6) translate(-12 -12)">'
             + path(SAXOPHONE_OUTLINE, WOOD, '#a7f3d0', .23)
-            + path('M2.4 5.7l1.7-.9.9 1.9-1.1.6-1.7-.4Z', '#182730', '#8cd7c1', .15)
-            + '<g transform="rotate(10 19 11)">'
-            + ellipse(19,11,3.05,.82,'#12382f','#a7f3d0') + '</g>'
-            + path('M8.1 8.3l2 9.1M10.4 8l1.9 8.7M14.7 17.6l3.2-1.2',
-                   stroke='#a6d5c4', w=.22)
-            + ''.join(ellipse(x,y,.64,.44,'#dcf7ea','#326c5e')
-                      for x,y in [(9.4,8.9),(9.75,10.4),(10.1,11.9),(10.45,13.4),
-                                  (10.8,14.9),(11.15,16.4)])
-            + path('M11.7 18.5q1.7 2.9 4.8 1.3', stroke='#72c6aa', w=.26)
+            + path(SAXOPHONE_SEAM, stroke='#12382f', w=.34)
+            + path('M5.1 2.93 4 3.8l.87.64 1.41-.48-.22-1.3Z', '#182730', '#8cd7c1', .15)
+            + path('M6.11 2.66l.22 1.3', stroke='#8cd7c1', w=.22)
+            + '<ellipse cx="16.73" cy="13" rx="3.42" ry=".72" transform="rotate(7 16.73 13)"'
+              ' fill="#12382f" stroke="#a7f3d0" stroke-width=".3"/>'
+            + path('M9.83 7.5l1.83 10', stroke='#a6d5c4', w=.22)
+            + ''.join(f'<ellipse cx="{x}" cy="{y}" rx=".55" ry=".42" fill="#dcf7ea" stroke="#326c5e" stroke-width=".14"/>'
+                      for x,y in [(10.57,8.65),(10.89,10.14),(11.2,11.63),(11.51,13.13),
+                                  (11.82,14.62),(12.13,16.11)])
+            + path('M11.9 18.9A2.6 2.6 0 0 0 16.9 17.7', stroke='#72c6aa', w=.26)
             + '</g>')
 
 
 # Icon paths keep the banner's defining shapes and drop small controls and strings.
 ART = {
     'saxophone': (lambda _: saxophone(), 1.02,
-                  SAXOPHONE_OUTLINE + 'M17 12.6l3 .6M9.5 9.5h.01m.6 2.6h.01m.6 2.6h.01'),
+                  SAXOPHONE_OUTLINE + SAXOPHONE_SEAM + 'M10.6 8.7h.01m.6 3h.01m.6 3h.01'),
     'auto-tune': (lambda _: auto_tune(), 1.05, 'M2 5h20v14H2zM2 8h20M6 8v11M8.5 15h3m1-3h3m1 2h3'),
     'bassoon': (lambda _: bassoon(), 1.08, 'M20 7h2v4h-2M4 8h16v2H4M4 10l9 1v4H4M4 8H3q-1 0-1 1v5q0 1 1 1h1ZM13 13q2 0 3 2t3-1'),
     'conga': (lambda _: conga(), 1.03, 'M6.5 5c0-3 11-3 11 0s-11 3-11 0ZM6.5 5c-1 6 0 10 2.5 15q3 2 6 0c2.5-5 3.5-9 2.5-15M9 8v3m6-3v3'),

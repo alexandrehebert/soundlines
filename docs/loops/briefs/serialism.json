@@ -1,0 +1,26 @@
+{
+  "slug": "serialism",
+  "genre": "genre:serialism",
+  "asset": "public/loops/serialism.wav",
+  "bpm": 90,
+  "meter": 4,
+  "key": "C minor",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    144161,
+    482217,
+    509181,
+    474666,
+    744703
+  ],
+  "prompt": "Original instrumental serialism adaptation, 90 BPM, 4/4, C minor. Mid-century serialist chamber passage on a steady pulse: pointillistic piano, clarinet, violin and cello trade angular twelve-tone fragments with wide leaps, sharp dynamic contrasts and crisp articulations, with sparse pizzicato and woodblock accents marking the cycle. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/serialism.md, approved for catalogue production. Original constraint: Twelve-tone ordering, rests and unstable pulse are incompatible with mandatory major/minor keys and a regular groove. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://assets.cambridge.org/97805218/63414/excerpt/9780521863414_excerpt.htm",
+    "https://academic.oup.com/book/49294/chapter-abstract/422536119",
+    "https://www.cambridge.org/core/books/abs/cambridge-history-of-twentieth-century-music/proclaiming-the-mainstream-schoenberg-berg-and-webern/52CF958C178E7F1EDB53315E86B9422A"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

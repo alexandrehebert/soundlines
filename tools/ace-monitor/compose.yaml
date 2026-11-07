@@ -13,6 +13,7 @@ services:
       ACE_API_KEY: ${ACE_API_KEY:-}
       ACE_CACHE_DB: /ace-cache/cache.db
       ACE_LOG_PATH: /ace-logs/ace-server.log
+      ACE_CATALOGUE_PATH: /ace-logs/catalogue-queue.json
     extra_hosts:
       - "host.docker.internal:host-gateway"
     volumes:

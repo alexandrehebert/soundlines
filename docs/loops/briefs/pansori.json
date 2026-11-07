@@ -1,0 +1,26 @@
+{
+  "slug": "pansori",
+  "genre": "genre:pansori",
+  "asset": "public/loops/pansori.wav",
+  "bpm": 84,
+  "meter": 6,
+  "key": "E minor",
+  "bars": 4,
+  "duration": 32,
+  "seeds": [
+    395854,
+    316272,
+    979391,
+    672297,
+    732717
+  ],
+  "prompt": "Original instrumental pansori adaptation, 84 BPM, 6/8, E minor. Korean pansori accompaniment carried instrumentally in a jinyang-like compound pulse: the buk barrel drum shapes the cycle with strong rim and head strokes, a gayageum zither and a piri oboe trace the expressive narrative melody with deep vibrato and bends. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/pansori.md, approved for catalogue production. Original constraint: Narration and singing with changing drum cycles require a vocal-aware and cycle-aware workflow. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://ich.unesco.org/en/RL/pansori-epic-chant-00070",
+    "https://contents.history.go.kr/front/tz/view.do?levelId=tz_b48",
+    "https://www.korea.net/K-InfoHub/SubMainDetail/view?articleId=3981&headwordCd=77&headwordGroupCd=17&pageIndex=1"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

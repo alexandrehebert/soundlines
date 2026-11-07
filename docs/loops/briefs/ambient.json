@@ -1,0 +1,26 @@
+{
+  "slug": "ambient",
+  "genre": "genre:ambient",
+  "asset": "public/loops/ambient.wav",
+  "bpm": 70,
+  "meter": 4,
+  "key": "D major",
+  "bars": 4,
+  "duration": 28,
+  "seeds": [
+    991853,
+    781909,
+    445109,
+    745254,
+    816584
+  ],
+  "prompt": "Original instrumental ambient adaptation, 70 BPM, 4/4, D major. Late-1970s-style ambient soundscape adapted to a slow, soft pulse: sustained warm organ and synth pads crossfade over a barely audible felt-piano pulse, distant resonant bell tones and faint tape-loop shimmer, with long natural decay and quiet space between events. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/ambient.md, approved for catalogue production. Original constraint: The reference has no beat or fixed pulse. Needs texture-cycle extraction and a beatless seam gate. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://academic.oup.com/book/44623/chapter-abstract/378621525",
+    "https://www.allmusic.com/genre/ambient-ma0000002424",
+    "https://academic.oup.com/book/44623"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "impressionism",
+  "genre": "genre:impressionism",
+  "asset": "public/loops/impressionism.wav",
+  "bpm": 66,
+  "meter": 4,
+  "key": "Db major",
+  "bars": 4,
+  "duration": 29,
+  "seeds": [
+    760229,
+    494027,
+    389170,
+    601569,
+    800638
+  ],
+  "prompt": "Original instrumental impressionism adaptation, 66 BPM, 4/4, Db major. French impressionist piano and chamber passage on a gentle steady pulse: solo piano spreads parallel ninth chords and whole-tone colour, harp arpeggios ripple beneath, flute floats a soft modal melody, and muted strings add hazy sustained washes. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/impressionism.md, approved for catalogue production. Original constraint: Flexible piano phrasing, whole-tone color and rubato need phrase-aware extraction and harmonic review. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://pressbooks.cuny.edu/understandingmusicbmcc/chapter/2-impressionism/",
+    "https://rme.rilm.org/articles/emt00226/1.0/emt00226",
+    "https://www.cambridge.org/core/books/abs/debussy-in-context/debussys-impressionism-interrogated/63271DDF1BC7CB2309660D5590F4F0B0"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

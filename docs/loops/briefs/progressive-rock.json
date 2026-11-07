@@ -1,0 +1,26 @@
+{
+  "slug": "progressive-rock",
+  "genre": "genre:progressive-rock",
+  "asset": "public/loops/progressive-rock.wav",
+  "bpm": 112,
+  "meter": 4,
+  "key": "A minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    533174,
+    198468,
+    829515,
+    501890,
+    685716
+  ],
+  "prompt": "Original instrumental progressive rock adaptation, 112 BPM, 4/4, A minor. 1970s progressive rock in a common-time adaptation: Hammond organ and Mellotron strings stack rich chords, an analogue synth lead plays an intricate melodic line, melodic electric bass weaves counterpoint, and a busy, articulate rock drummer adds syncopated fills while keeping the cycle. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/progressive-rock.md, approved for catalogue production. Original constraint: Changing meters in the reference require a meter map, or a separately approved common-time adaptation. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://pitchfork.com/reviews/albums/king-crimson-in-the-court-of-the-crimson-king-50th-anniversary/",
+    "https://www.npr.org/2017/07/18/534577902/can-t-prog-rock-get-any-respect-around-here",
+    "https://www.theguardian.com/music/2010/jul/22/prog-rock-genesis-rush-mostly-autumn"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/electric.json"
+}

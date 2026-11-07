@@ -66,7 +66,8 @@
 
 .discovery-brand svg { color: var(--home-accent); }
 .discovery-search { display: flex; justify-content: flex-end; width: min(23rem, 55%); margin-left: auto; }
-.discovery-theme-toggle {
+.discovery-theme-toggle,
+.discovery-repository {
   display: inline-flex;
   flex: none;
   align-items: center;
@@ -79,10 +80,14 @@
   color: var(--home-accent);
   font: 650 .7rem ui-monospace, monospace;
 }
-.discovery-theme-toggle:hover { background: var(--home-hover); }
+.discovery-repository { justify-content: center; min-width: 2.75rem; padding-inline: 0; }
+.discovery-theme-toggle:hover,
+.discovery-repository:hover { background: var(--home-hover); }
 /* Match the desktop search field; mobile keeps the 44px touch target of the search button. */
 @media (min-width: 768px) {
-  .discovery-theme-toggle { min-height: 0; height: 2.375rem; padding-block: 0; }
+  .discovery-theme-toggle,
+  .discovery-repository { min-height: 0; height: 2.375rem; padding-block: 0; }
+  .discovery-repository { min-width: 2.375rem; }
 }
 .discovery-main { padding-block: 2.25rem 4rem; }
 

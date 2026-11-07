@@ -1,0 +1,25 @@
+{
+  "slug": "gamelan",
+  "genre": "genre:gamelan",
+  "asset": "public/loops/gamelan.wav",
+  "bpm": 90,
+  "meter": 4,
+  "key": "C major",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    379366,
+    469412,
+    544704,
+    424925,
+    833100
+  ],
+  "prompt": "Original instrumental gamelan adaptation, 90 BPM, 4/4, C major. Javanese gamelan passage on a steady colotomic cycle: saron and demung play interlocking balungan figures, bonang elaborates in quick pairs, kenong and kempul punctuate the cycle and a deep gong ageng closes it, with kendang drum guiding the pulse and a pentatonic, slendro-flavoured shimmer. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/gamelan.md, approved for catalogue production. Original constraint: Slendro tuning and colotomic gong cycles need tuning-aware generation and cycle-aware extraction. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://ich.unesco.org/en/RL/gamelan-01607",
+    "https://ich.unesco.org/doc/src/47514.pdf"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

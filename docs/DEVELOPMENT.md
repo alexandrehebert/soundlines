@@ -25,17 +25,19 @@ the server.
 
 ## Docker Compose
 
-To run the app and Storybook with Docker Compose:
+To run the app, Storybook and the companion site with Docker Compose:
 
 ```bash
-docker compose up -d           # app and Storybook
+docker compose up -d           # app, Storybook and companion site
 docker compose up -d storybook # Storybook only
+docker compose up -d site      # companion site only
 ```
 
-Compose serves the app at `http://localhost:5173` and Storybook at
-`http://localhost:6008` on the local machine. Set `STORYBOOK_PORT` to change
-the Storybook host port, for example
-`STORYBOOK_PORT=6010 docker compose up -d storybook`. The app and Storybook use
+Compose serves the app at `http://localhost:5173`, Storybook at
+`http://localhost:6008` and the live-reloading companion site at
+`http://localhost:5174/soundlines/` on the local machine. Set `STORYBOOK_PORT`
+or `SITE_PORT` to change those host ports, for example
+`STORYBOOK_PORT=6010 docker compose up -d storybook`. The services use
 separate dependency volumes so their installs do not interrupt one another. The
 container image does not include Git, so Storybook's optional Git-based change
 detection is unavailable; component hot reload still works.
@@ -52,28 +54,52 @@ test requires isolation, and stop only servers you started.
 ## Project companion (GitHub Pages)
 
 The companion at <https://alexandrehebert.github.io/soundlines/> is separate from
-the Next.js explorer. It presents the project and the graph, artwork, audio, and
-contribution processes in English and French, with links to the full repository
-guides rather than automatically rendering the Markdown documentation.
+the Next.js explorer. It explains, for curious non-specialists, how the content
+was produced: where graph facts come from and how sources are fetched and
+checked, how instrument artwork and audio are made, and how the app and its
+AI-assisted workflow are built. Each process is drawn as a workflow diagram whose
+steps are tagged by who performs them (person, AI assistant, AI model, code or
+automatic check), with real documented examples. Each page's legend includes
+only the actors used in its workflows. It is available in English and French
+and links to the full repository guides rather than rendering the Markdown
+documentation.
 
 The companion is a small React 19 + TypeScript app built with Vite and styled
 with Tailwind CSS v4, the same toolchain as the explorer's Storybook. Every page
 is prerendered to static HTML at build time, so it reads and indexes without
 JavaScript; the client bundle then hydrates the page for small interactions
-such as copying commands.
+such as the audio player.
 
 | Path | Purpose |
 | --- | --- |
-| [site/src/content.ts](../site/src/content.ts) | Typed English and French copy for every page |
-| [site/src/components/](../site/src/components/) | Page layout, sections and the artwork samples taken from `public/` |
+| [site/src/content.ts](../site/src/content.ts) | Page, workflow and example types; resolves `{figure}` placeholders |
+| [site/src/copy/](../site/src/copy/) | English and French copy for every page |
+| [site/scripts/stats.ts](../site/scripts/stats.ts) | Figures quoted in the copy, computed at build time from the graph, evidence, assets, agents and skills |
+| [site/src/components/](../site/src/components/) | Page layout, workflow diagrams, examples and the artwork and loop samples taken from `public/` |
+| [site/src/components/Previews.tsx](../site/src/components/Previews.tsx) | Small preview of what each workflow step produces, ending with the real result (app screenshot, artwork, loop) |
+| [site/src/components/blueprint.ts](../site/src/components/blueprint.ts) | Extracts the saxophone's generated outline, canvas and curve handles for the vector sketch |
+| [site/src/assets/screens/](../site/src/assets/screens/) | App screenshots per locale used as final results; retake them when the explorer UI changes noticeably |
+| [site/scripts/waveform.ts](../site/scripts/waveform.ts) | Reads the shipped loop at build time to draw its real waveform |
+| [site/src/components/playback.ts](../site/src/components/playback.ts) | Keeps the waveform cursor and played color aligned with the audio element's media clock, including seeks, pauses and loop restarts |
 | [site/src/routes.ts](../site/src/routes.ts) | Locale and page URLs (`/soundlines/<locale>/<page>/`) |
 | [site/src/entry-client.tsx](../site/src/entry-client.tsx), [site/src/entry-server.tsx](../site/src/entry-server.tsx) | Hydration and prerendering entries |
 | [site/scripts/build.ts](../site/scripts/build.ts) | Client + SSR build, page prerendering, sitemap, language-aware entry page and internal link check |
 | [site/src/site.test.tsx](../site/src/site.test.tsx) | Locale parity, repository links, routes and rendered pages |
 
+Raw takes are not stored in the repository, so the complete-take waveform in
+the audio selection preview is schematic. The highlighted section and the
+retained waveform use the shipped loop; their timing comes from its selection
+report. The final player's waveform is also read from that same WAV; its cursor
+and played color follow `currentTime / duration`, not an independent animation timer.
+The artwork sketch uses the generated saxophone icon's shared outline and
+first curve; its dimensions are SVG drawing units, not the instrument's physical size.
+
 Update both languages when changing copy; the types and tests reject missing
-fields. Keep workflow claims aligned with the technical guides; documentation
-changes are not automatically imported.
+fields and require the same workflow steps, actors, output kinds, preview kinds and loops (the steps a failure returns to) (what each
+step produces, shown on the arrow to the next step) in each language. Write
+counts as placeholders such as `{connections}` instead of literal numbers, so
+they follow the data. Keep workflow claims and examples aligned with the
+technical guides; documentation changes are not automatically imported.
 
 ```bash
 npm run dev:site       # live-reloading companion at http://localhost:5173/soundlines/
@@ -83,8 +109,9 @@ npm run preview:site   # serve _site/ under /soundlines/ (http://localhost:4173/
 ```
 
 The build fails if a page links to a missing page, asset or anchor. Only the
-logo and selected instrument examples are bundled, not the full graph, audio
-library, or Next.js build.
+logo, selected instrument examples and the landing hip-hop loop are bundled,
+not the full graph, audio library, or Next.js build; the graph contributes only
+its computed figures.
 
 To enable publication once, open the repository's **Settings → Pages** and set
 **Build and deployment → Source** to **GitHub Actions**. Merge the changes to

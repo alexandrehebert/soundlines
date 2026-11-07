@@ -35,8 +35,24 @@ export interface Task {
   result: Record<string, unknown>[]
 }
 
+export interface CatalogueJob {
+  slug: string
+  status: string
+  seed: string | null
+  error: string | null
+}
+
+export interface Catalogue {
+  status: string
+  current: string | null
+  updatedAt: string | null
+  jobs: CatalogueJob[]
+  blocked: CatalogueJob[]
+}
+
 export interface Snapshot {
   updatedAt: string
+  catalogue: Catalogue | null
   scannedPorts: { start: number; end: number } | null
   servers: ServerStatus[]
   tasks: Task[]

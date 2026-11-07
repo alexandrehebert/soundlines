@@ -1,0 +1,26 @@
+{
+  "slug": "romantic",
+  "genre": "genre:romantic",
+  "asset": "public/loops/romantic.wav",
+  "bpm": 72,
+  "meter": 3,
+  "key": "Ab major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    305233,
+    719303,
+    321649,
+    551352,
+    675592
+  ],
+  "prompt": "Original instrumental romantic adaptation, 72 BPM, 3/4, Ab major. Nineteenth-century Romantic chamber passage in a gentle waltz-like triple pulse: expressive piano plays sweeping arpeggios and lyrical melody, cello sings a warm countermelody, and violins swell with rich chromatic harmony while the pulse stays steady. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/romantic.md, approved for catalogue production. Original constraint: Expressive rubato and cadential motion require phrase-aware extraction, not a fixed-tempo four-bar crop. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://files.cercomp.ufg.br/weby/up/269/o/TARUSKIN_-_Oxford_History_of_Western_Music__Richard_Taruskin_Vol.3a.pdf",
+    "https://www.cambridge.org/core/books/abs/romantic-music-aesthetics/introduction/4488A6D4FD07ECB24536FF4E97937AA0",
+    "https://libguides.princeton.edu/19th-century-music/introduction"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

@@ -1,7 +1,7 @@
 import { copy, repository, siteUrl, type Copy, type Locale, type Page, type Slug } from '../content.ts'
 import { repositoryUrl, routePath, type Route } from '../routes.ts'
-import { favicon, instruments } from './assets.ts'
-import { CommandBlock } from './CommandBlock.tsx'
+import { favicon, instrumentBrief, instruments } from './assets.ts'
+import { ExampleCard, FlowDiagram, Legend, Overview, Stats } from './Diagrams.tsx'
 
 const base = import.meta.env.BASE_URL
 const href = (route: Route) => `${base}${routePath(route)}`
@@ -18,7 +18,14 @@ export function App({ locale, slug }: Route) {
       <PageNav c={c} locale={locale} slug={slug} className="border-b" />
       <main id="main" className="shell pb-12">
         <Hero c={c} page={page} home={home} />
-        {home && <Chapters c={c} locale={locale} />}
+        {home && <Stats c={c} locale={locale} />}
+        {page.overview && <Overview overview={page.overview} />}
+        <Legend c={c} flows={page.flows} />
+        {page.flows.map((flow, i) => (
+          <FlowDiagram key={flow.title} c={c} flow={flow} id={`flow-${i}`} locale={locale} />
+        ))}
+        {page.example && <ExampleCard c={c} example={page.example} href={repositoryUrl(repository, page.example.path)} />}
+        {page.showcase && <Showcase c={c} locale={locale} />}
         <div className="max-w-190 pt-4">
           {page.sections.map(([title, text], i) => (
             <section key={title} aria-labelledby={`section-${i}`} className="my-10">
@@ -27,9 +34,7 @@ export function App({ locale, slug }: Route) {
             </section>
           ))}
         </div>
-        {page.showcase && <Showcase locale={locale} />}
-        {page.steps && <Workflow c={c} steps={page.steps} />}
-        {page.command && <CommandBlock command={page.command} copyLabel={c.copyCommand} copiedLabel={c.copied} />}
+        {home && <Chapters c={c} locale={locale} />}
         <Resources c={c} page={page} />
         <PageNav c={c} locale={locale} slug={slug} className="border-t" />
       </main>
@@ -131,7 +136,7 @@ function Record() {
 function Chapters({ c, locale }: { c: Copy; locale: Locale }) {
   const chapters = Object.entries(c.pages).filter(([key]) => key !== 'index')
   return (
-    <section aria-labelledby="inside">
+    <section aria-labelledby="inside" className="my-14">
       <h2 id="inside" className="heading-2">{c.next}</h2>
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
         {chapters.map(([key, value], i) => (
@@ -147,35 +152,27 @@ function Chapters({ c, locale }: { c: Copy; locale: Locale }) {
   )
 }
 
-function Showcase({ locale }: { locale: Locale }) {
+function Showcase({ c, locale }: { c: Copy; locale: Locale }) {
   return (
-    <div className="grid gap-4 md:grid-cols-3">
-      {instruments.map((instrument) => (
-        <figure key={instrument.slug} className="rounded-xl border border-line bg-surface p-5">
-          <img src={instrument.banner} width={640} height={160} alt={instrument.name[locale]} loading="lazy" />
-          <figcaption className="flex items-center gap-3 pt-4 text-sm text-muted">
-            <img src={instrument.icon} width={24} height={24} alt="" className="box-content rounded bg-accent p-0.5" />
-            {instrument.name[locale]}
-          </figcaption>
-        </figure>
-      ))}
-    </div>
-  )
-}
-
-function Workflow({ c, steps }: { c: Copy; steps: NonNullable<Page['steps']> }) {
-  return (
-    <section aria-labelledby="workflow" className="my-12">
-      <h2 id="workflow" className="heading-2">{c.workflow}</h2>
-      <ol className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {steps.map(([title, description], i) => (
-          <li key={title} className="rounded-lg border border-t-3 border-line border-t-accent bg-surface p-6">
-            <span className="font-mono text-sm text-accent">0{i + 1} {i === steps.length - 1 ? '✓' : '→'}</span>
-            <h3 className="mt-3 font-semibold">{title}</h3>
-            <p className="mt-2 text-sm leading-[1.8] text-muted">{description}</p>
-          </li>
+    <section aria-labelledby="showcase" className="my-14">
+      <h2 id="showcase" className="eyebrow">{c.examples}</h2>
+      <div className="mt-4 grid gap-4 md:grid-cols-3">
+        {instruments.map((instrument) => (
+          <figure key={instrument.slug} className="rounded-xl border border-line bg-surface p-5">
+            <img src={instrument.banner} width={640} height={160} alt={instrument.name[locale]} loading="lazy" />
+            <figcaption className="flex flex-wrap items-center gap-3 pt-4 text-sm text-muted">
+              <img src={instrument.icon} width={24} height={24} alt="" className="box-content rounded bg-accent p-0.5" />
+              {instrument.name[locale]}
+              <a
+                className="ml-auto inline-block py-1 text-fg underline underline-offset-4"
+                href={repositoryUrl(repository, instrumentBrief(instrument.slug))}
+              >
+                {c.brief}<span className="sr-only"> ({instrument.name[locale]})</span> {external}
+              </a>
+            </figcaption>
+          </figure>
         ))}
-      </ol>
+      </div>
     </section>
   )
 }

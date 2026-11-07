@@ -1,0 +1,26 @@
+{
+  "slug": "spiritual-jazz",
+  "genre": "genre:spiritual-jazz",
+  "asset": "public/loops/spiritual-jazz.wav",
+  "bpm": 88,
+  "meter": 4,
+  "key": "F minor",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    502627,
+    585754,
+    332721,
+    351369,
+    958983
+  ],
+  "prompt": "Original instrumental spiritual jazz adaptation, 88 BPM, 4/4, F minor. Late-1960s spiritual jazz groove: a hypnotic modal bass ostinato, harp glissandi and piano quartal chords, a searching tenor saxophone melody, and drums, shakers and hand percussion keeping a meditative, insistent pulse. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/spiritual-jazz.md, approved for catalogue production. Original constraint: The reference has a flexible pulse and a developmental arc; a stable modal vamp needs a separately reviewed adaptation. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://music.si.edu/story/john-coltrane",
+    "https://academic.oup.com/jah/article-abstract/98/2/581/766095",
+    "https://repositories.cdlib.org/uc/item/1jb67281"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

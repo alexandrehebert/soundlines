@@ -49,16 +49,18 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by Next.js. Alternatively, run the app and Storybook
-with Docker Compose:
+Open the local URL printed by Next.js. Alternatively, run the app, Storybook and
+the companion site with Docker Compose:
 
 ```bash
 docker compose up -d
 ```
 
-Compose serves the app at `http://localhost:5173` and Storybook at
-`http://localhost:6008`. See the [development guide](./docs/DEVELOPMENT.md) for
-server reuse, port overrides, and Storybook details.
+Compose serves the app at `http://localhost:5173`, Storybook at
+`http://localhost:6008` and the companion site at
+`http://localhost:5174/soundlines/`. See the
+[development guide](./docs/DEVELOPMENT.md) for server reuse, port overrides,
+and Storybook details.
 
 For the optional standalone ACE-Step rendering dashboard, see
 [ACE Monitor](./tools/ace-monitor/README.md). It runs in its own Compose stack at
@@ -169,8 +171,9 @@ Previews use a separate renderer, not the seamless-loop pipeline. See the
 
 ## Documentation
 
-The [project companion](https://alexandrehebert.github.io/soundlines/) presents
-Soundlines and its graph, artwork, audio, and contribution workflows in
+The [project companion](https://alexandrehebert.github.io/soundlines/) explains,
+with visual workflows and real examples, how Soundlines' facts, instrument
+drawings and audio were sourced, produced and checked, and how the app is built, in
 [English](https://alexandrehebert.github.io/soundlines/en/) and
 [French](https://alexandrehebert.github.io/soundlines/fr/).
 It is a curated introduction; the guides below remain the detailed technical reference.

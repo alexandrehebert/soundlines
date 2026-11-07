@@ -1,0 +1,26 @@
+{
+  "slug": "gagaku",
+  "genre": "genre:gagaku",
+  "asset": "public/loops/gagaku.wav",
+  "bpm": 60,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 30,
+  "seeds": [
+    101828,
+    922856,
+    128520,
+    482678,
+    918184
+  ],
+  "prompt": "Original instrumental gagaku adaptation, 60 BPM, 4/4, D minor. Japanese gagaku court-ensemble passage on a slow, steady pulse: hichiriki and ryuteki carry broad breath-led melodic lines, sho mouth organ holds shimmering clustered chords, biwa and koto pluck sparse anchoring notes, and kakko, taiko and shoko mark the cycle. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/gagaku.md, approved for catalogue production. Original constraint: Broad breath-led phrases and court-ensemble timing need phrase-aware extraction rather than a Western club grid. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://ich.unesco.org/en/RL/gagaku-00265",
+    "https://www.kunaicho.go.jp/en/learn/culture/gagaku.html",
+    "https://www.metmuseum.org/art/collection/search/45520"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

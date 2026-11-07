@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import { App } from './components/App.tsx'
+import { favicon } from './components/assets.ts'
 import { copy } from './content.ts'
 import { matchRoute } from './routes.ts'
 import './styles.css'
@@ -20,5 +21,13 @@ if (container.firstElementChild) {
   // Dev server: pages are not prerendered, so render on the client and set the metadata it would have had.
   document.documentElement.lang = route.locale
   document.title = `${copy[route.locale].pages[route.slug].label} · Soundlines`
+  let icon = document.querySelector<HTMLLinkElement>('link[rel="icon"]')
+  if (!icon) {
+    icon = document.createElement('link')
+    icon.rel = 'icon'
+    document.head.append(icon)
+  }
+  icon.type = 'image/svg+xml'
+  icon.href = favicon
   createRoot(container).render(app)
 }

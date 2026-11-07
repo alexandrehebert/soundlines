@@ -49,6 +49,11 @@ sending the API key and only queries services identifying themselves as ACE-Step
 
 ## What it shows
 
+- The loop catalogue queue from `$LOOP_STAGE_ROOT/catalogue-queue.json`, when a
+  batch worker has written it: genres pending, in progress, awaiting review,
+  failed and blocked. The worker submits one render at a time, so this backlog
+  does not appear in the server's own queue count.
+
 - A card for each discovered server, with health, model readiness, loaded DiT and
   language models, queued/running/succeeded/failed counts, queue capacity and
   average render time. Counts come from that server's in-memory job store.

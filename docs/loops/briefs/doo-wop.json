@@ -1,0 +1,26 @@
+{
+  "slug": "doo-wop",
+  "genre": "genre:doo-wop",
+  "asset": "public/loops/doo-wop.wav",
+  "bpm": 72,
+  "meter": 6,
+  "key": "Bb major",
+  "bars": 4,
+  "duration": 34,
+  "seeds": [
+    569425,
+    774851,
+    202163,
+    607969,
+    611651
+  ],
+  "prompt": "Original instrumental doo wop adaptation, 72 BPM, 6/8, Bb major. 1950s street-corner doo-wop ballad in 12/8-style triplet feel, carried instrumentally: a soft saxophone carries the close-harmony lead line, warm organ chords imitate stacked harmony pads on the I-vi-IV-V progression, upright bass walks the roots, and brushed drums and triplet piano chords keep the sway. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/doo-wop.md, approved for catalogue production. Original constraint: Close vocal harmony defines the reference; replacing it with instruments would lose the genre cue. Needs a vocal-aware workflow. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://www.allmusic.com/genre/doo-wop-ma0000002556",
+    "https://timeline.carnegiehall.org/genres/rhythm-blues",
+    "https://rockhall.com/inductees/platters/"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import type { ServerStatus, Snapshot, Task } from '../lib/types'
+import type { Catalogue, ServerStatus, Snapshot, Task } from '../lib/types'
 
 function ServerCard({ server }: { server: ServerStatus }) {
   const { health, stats } = server
@@ -36,6 +36,50 @@ function ServerCard({ server }: { server: ServerStatus }) {
       <pre>{server.progressText}</pre>
     </div>}
   </article>
+}
+
+const idleStatuses = new Set(['awaiting-review', 'failed', 'pending', 'queued', 'blocked'])
+
+function CatalogueSection({ catalogue }: { catalogue: Catalogue }) {
+  const counts = new Map<string, number>()
+  for (const job of catalogue.jobs) counts.set(job.status, (counts.get(job.status) ?? 0) + 1)
+  const active = catalogue.jobs.filter(job => !idleStatuses.has(job.status))
+  const pending = catalogue.jobs.filter(job => job.status === 'pending' || job.status === 'queued')
+  const finished = catalogue.jobs.filter(job => job.status === 'awaiting-review' || job.status === 'failed')
+  return <section className="servers-section">
+    <div className="section-heading">
+      <h2>Loop catalogue queue</h2>
+      <span className="muted">Worker {catalogue.status}{catalogue.updatedAt ? ` · saved ${new Date(catalogue.updatedAt).toLocaleTimeString('en-US')}` : ''}</span>
+    </div>
+    <article className="server-card">
+      <div className="server-stats">
+        {[
+          ['Pending', pending.length],
+          ['In progress', active.length],
+          ['Awaiting review', counts.get('awaiting-review') ?? 0],
+          ['Failed', counts.get('failed') ?? 0],
+          ['Blocked', catalogue.blocked.length],
+        ].map(([label, value]) => <div className="server-stat" key={label}>
+          <span>{label}</span><strong>{value}</strong>
+        </div>)}
+      </div>
+      {active.map(job => <p key={job.slug}>
+        <span className="badge active">{job.status}</span> <strong>{job.slug}</strong>
+        {job.seed && <span className="muted"> · seed {job.seed}</span>}
+      </p>)}
+      <p className="muted">{catalogue.jobs.length - pending.length} of {catalogue.jobs.length} genres started. The worker sends one render at a time, so the ACE server queue stays near zero.</p>
+      {!!finished.length && <details><summary>Finished ({finished.length})</summary>
+        {finished.map(job => <p key={job.slug}><span className={`badge ${job.status === 'failed' ? 'failed' : 'succeeded'}`}>{job.status}</span> {job.slug}
+          {job.error && <span className="error"> {job.error}</span>}</p>)}
+      </details>}
+      {!!pending.length && <details><summary>Up next ({pending.length})</summary>
+        <p className="muted mono">{pending.map(job => job.slug).join(' · ')}</p>
+      </details>}
+      {!!catalogue.blocked.length && <details><summary>Blocked ({catalogue.blocked.length})</summary>
+        <p className="muted mono">{catalogue.blocked.map(job => job.slug).join(' · ')}</p>
+      </details>}
+    </article>
+  </section>
 }
 
 function TaskCard({ task }: { task: Task }) {
@@ -111,6 +155,7 @@ export default function Page() {
     <p className="muted">Updated {data ? new Date(data.updatedAt).toLocaleTimeString('en-US') : '...'} · {paused ? 'Live refresh paused' : 'Refreshes every 3 seconds'}{error ? ' · Last snapshot is stale' : ''}</p>
     {error && <p className="error" role="alert">{error}</p>}
     {!!data?.errors.length && <div className="errors" role="alert">{data.errors.map((message, i) => <p key={i}>{message}</p>)}</div>}
+    {data?.catalogue && <CatalogueSection catalogue={data.catalogue} />}
     <section className="servers-section">
       <div className="section-heading">
         <h2>Servers</h2>

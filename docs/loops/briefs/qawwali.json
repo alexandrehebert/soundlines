@@ -1,0 +1,26 @@
+{
+  "slug": "qawwali",
+  "genre": "genre:qawwali",
+  "asset": "public/loops/qawwali.wav",
+  "bpm": 110,
+  "meter": 4,
+  "key": "C minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    152791,
+    290235,
+    629188,
+    204207,
+    773250
+  ],
+  "prompt": "Original instrumental qawwali adaptation, 110 BPM, 4/4, C minor. Sufi qawwali ensemble passage carried instrumentally in an eight-beat cycle: harmonium plays the devotional melody with ornamented runs, tabla and dholak drive a rising rhythmic cycle, and steady group hand-claps lock the pulse. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/qawwali.md, approved for catalogue production. Original constraint: Lead and response vocals and the devotional arc are central; select a tala and build a vocal-aware cycle workflow. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://academic.oup.com/fordham-scholarship-online/book/24268/chapter-abstract/185921803",
+    "https://www.du.ac.in/uploads/new-web/29122022_Appendix-109.pdf",
+    "https://kclpure.kcl.ac.uk/ws/portalfiles/portal/42286233/2004BrownSchofieldPhD.pdf"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

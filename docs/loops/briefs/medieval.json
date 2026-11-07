@@ -1,0 +1,26 @@
+{
+  "slug": "medieval",
+  "genre": "genre:medieval",
+  "asset": "public/loops/medieval.wav",
+  "bpm": 72,
+  "meter": 3,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    490720,
+    546147,
+    261021,
+    222670,
+    353125
+  ],
+  "prompt": "Original instrumental medieval adaptation, 72 BPM, 3/4, D minor. Medieval European estampie-style instrumental passage in a lilting triple pulse on a Dorian-flavoured line: vielle and recorder play a modal dance melody over a hurdy-gurdy drone, citole plucks answers, and tabor and frame drum keep the steady step. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/medieval.md, approved for catalogue production. Original constraint: Unaccompanied free-rhythm plainchant requires vocals and chant-aware phrase extraction. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://academic.oup.com/book/44835/chapter-abstract/384399450",
+    "https://academic.oup.com/book/60817",
+    "https://assets.cambridge.org/97805215/13487/excerpt/9780521513487_excerpt.pdf"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

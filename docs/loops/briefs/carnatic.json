@@ -1,0 +1,25 @@
+{
+  "slug": "carnatic",
+  "genre": "genre:carnatic",
+  "asset": "public/loops/carnatic.wav",
+  "bpm": 84,
+  "meter": 4,
+  "key": "D major",
+  "bars": 4,
+  "duration": 26,
+  "seeds": [
+    853653,
+    981067,
+    940214,
+    821495,
+    410410
+  ],
+  "prompt": "Original instrumental carnatic adaptation, 84 BPM, 4/4, D major. South Indian Carnatic instrumental passage in an eight-beat adi-tala cycle on a Kalyani-flavoured scale: veena or violin plays a gamaka-rich melody over a tanpura drone, mridangam strokes articulate the tala, and a ghatam adds crisp clay-pot accents. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/carnatic.md, approved for catalogue production. Original constraint: Adi tala and raga Kalyani need tala-aware phrase boundaries and raga/gamaka conditioning; do not replace the raga with a major/minor key. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://www.allmusic.com/style/carnatic-ma0000012004",
+    "https://musicacademymadras.in/"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

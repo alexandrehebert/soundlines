@@ -1,0 +1,26 @@
+{
+  "slug": "arabic-maqam",
+  "genre": "genre:arabic-maqam",
+  "asset": "public/loops/arabic-maqam.wav",
+  "bpm": 92,
+  "meter": 4,
+  "key": "D minor",
+  "bars": 4,
+  "duration": 25,
+  "seeds": [
+    607925,
+    806309,
+    591991,
+    440527,
+    505430
+  ],
+  "prompt": "Original instrumental arabic maqam adaptation, 92 BPM, 4/4, D minor. Arabic takht ensemble passage on a steady maqsum-like cycle: oud plays a winding Bayati-flavoured melody with slides and ornaments, qanun answers with rippling plucked figures, nay breathes long notes, and riq and darbuka tap the cycle softly. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/arabic-maqam.md, approved for catalogue production. Original constraint: Free-rhythm taqsim and Bayati neutral intervals need non-grid extraction and maqam-aware conditioning; a major/minor key would misdescribe the pitch system. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://usna.edu/AAT/songs-poetry/introduction/traditional-classical-music.php",
+    "https://scalar.usc.edu/works/music-in-global-america/traditional-music-in-the-arab-world.147",
+    "https://maqamworld.com/en/maqam.php"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

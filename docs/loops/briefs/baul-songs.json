@@ -1,0 +1,26 @@
+{
+  "slug": "baul-songs",
+  "genre": "genre:baul-songs",
+  "asset": "public/loops/baul-songs.wav",
+  "bpm": 96,
+  "meter": 4,
+  "key": "G major",
+  "bars": 4,
+  "duration": 24,
+  "seeds": [
+    801047,
+    256835,
+    254453,
+    667504,
+    448892
+  ],
+  "prompt": "Original instrumental baul songs adaptation, 96 BPM, 4/4, G major. Bengali Baul folk passage, carried instrumentally: the one-string ektara plucks a buoyant drone-melody, a dotara picks the song line, khamak gives a bending twang, and dubki frame drum and ankle-bell jingles keep a lilting dadra-like pulse. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/baul-songs.md, approved for catalogue production. Original constraint: Expressive Bengali singing is central to this reference. Needs a vocal-aware workflow and confirmation of its rhythmic cycle. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://ich.unesco.org/en/RL/baul-songs-00107",
+    "https://academic.oup.com/jhs/article-abstract/16/3/344/7424424",
+    "https://searcharchives.bl.uk/catalog/032-003943569"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}

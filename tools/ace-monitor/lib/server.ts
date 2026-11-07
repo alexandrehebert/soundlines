@@ -1,6 +1,7 @@
 import { DatabaseSync } from 'node:sqlite'
 import { open } from 'node:fs/promises'
 import { aceData, discoverServers, serverEndpoints } from './ace.ts'
+import { readCatalogue } from './catalogue.ts'
 import { isRecord, parseTask } from './tasks.ts'
 import type { ServerStatus, Snapshot, Stats, Task } from './types.ts'
 
@@ -63,7 +64,7 @@ function parseStats(value: unknown): Stats {
 
 export async function snapshot(): Promise<Snapshot> {
   const data: Snapshot = {
-    updatedAt: new Date().toISOString(), scannedPorts: null, servers: [], tasks: [], log: null, errors: [],
+    updatedAt: new Date().toISOString(), catalogue: null, scannedPorts: null, servers: [], tasks: [], log: null, errors: [],
   }
   function report(name: string, error: unknown, errors: string[]) {
     console.error(`[ace-monitor] ${name}`, error)
@@ -85,6 +86,9 @@ export async function snapshot(): Promise<Snapshot> {
     if (!process.env.ACE_LOG_PATH) throw new Error('ACE_LOG_PATH is not configured')
     data.log = await readLog(process.env.ACE_LOG_PATH)
   })
+  const cataloguePromise = process.env.ACE_CATALOGUE_PATH ? capture('Loop catalogue queue', async () => {
+    data.catalogue = await readCatalogue(process.env.ACE_CATALOGUE_PATH!)
+  }) : Promise.resolve()
   const discoveryPromise = capture('Server discovery', async () => {
     const endpoints = serverEndpoints()
     data.scannedPorts = { start: endpoints[0].port, end: endpoints[endpoints.length - 1].port }
@@ -144,6 +148,6 @@ export async function snapshot(): Promise<Snapshot> {
       Number(b.status === 'active') - Number(a.status === 'active') ||
       (b.createdAt || 0) - (a.createdAt || 0))
   })
-  await Promise.all([idsPromise, logPromise, discoveryPromise])
+  await Promise.all([idsPromise, logPromise, cataloguePromise, discoveryPromise])
   return data
 }

@@ -1,0 +1,26 @@
+{
+  "slug": "renaissance",
+  "genre": "genre:renaissance",
+  "asset": "public/loops/renaissance.wav",
+  "bpm": 80,
+  "meter": 4,
+  "key": "G major",
+  "bars": 4,
+  "duration": 26,
+  "seeds": [
+    660613,
+    819025,
+    773872,
+    393901,
+    275692
+  ],
+  "prompt": "Original instrumental renaissance adaptation, 80 BPM, 4/4, G major. Renaissance consort dance passage, pavane-to-galliard style: recorders, viols and lute weave polyphonic lines in modal harmony, a sackbut supports the bass, and a soft tabor marks the steady dance pulse. Repeat a coherent four-bar cycle with subtle variations, keep the ensemble fully present from the opening beat through the middle, no intro, no breakdown, no fade-out. Detailed studio mix preserving the genre texture, separated transients, controlled low end, mono-compatible centered bass, natural stereo space, not muffled. Entirely instrumental: no singing, no vocals, no speech, no vocal samples. All melodies and performances newly composed.",
+  "notes": "Grid approximation of the special case docs/loops/special-cases/renaissance.md, approved for catalogue production. Original constraint: The reference is a vocal motet with overlapping counterpoint and cadences; needs vocal-aware phrase boundaries. Fixed BPM, meter and major/minor key are production choices, not genre claims; plan/render the first two seeds initially, more if validation fails. Retain 4B planning and XL SFT 80-step quality. Specialist genre listening review required before use.",
+  "sources": [
+    "https://academic.oup.com/reference/62400/reference-article-abstract/555391104",
+    "https://libguides.princeton.edu/renaissance-music",
+    "https://www.metmuseum.org/pt/essays/music-in-the-renaissance"
+  ],
+  "preparation_status": "needs-draft-review",
+  "preview_brief": "docs/previews/briefs/acoustic.json"
+}
