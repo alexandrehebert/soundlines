@@ -263,6 +263,15 @@ describe('landing view transition', () => {
     for (const label of labels) expect(label[1]).toMatch(/^<svg\b[\s\S]*<\/svg>$/)
   })
 
+  it.each([
+    ['en-US', 'Tap the record, then drag to scratch'],
+    ['fr', 'Touchez le disque, puis faites-le glisser pour scratcher'],
+  ] as const)('offers a localized mobile scratch hint in %s', (locale, hint) => {
+    const markup = render(graph, <Home />, null, 'genre', locale)
+    expect(markup).toContain('class="discovery-record-touch-target"')
+    expect(markup).toContain(hint)
+  })
+
   it('restores the selected face without animating during the opening dock', () => {
     const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
     const loadingCss = readFileSync(new URL('./pageLoading.css', import.meta.url), 'utf8')

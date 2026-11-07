@@ -2,6 +2,7 @@
 
 import { useSyncExternalStore } from 'react'
 import { flushSync } from 'react-dom'
+import { observeViewTransition } from './viewTransition.ts'
 
 export type ColorTheme = 'dark' | 'light'
 const THEME_EVENT = 'soundlines-theme-change'
@@ -58,7 +59,7 @@ function transitionTheme(update: () => void) {
   root.classList.add(THEME_TRANSITION_CLASS)
   const transition = document.startViewTransition(() => flushSync(update))
   const cleanup = () => root.classList.remove(THEME_TRANSITION_CLASS)
-  void transition.finished.then(cleanup, cleanup)
+  observeViewTransition(transition, cleanup)
 }
 
 export function useColorTheme() {

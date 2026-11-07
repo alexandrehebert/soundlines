@@ -1,34 +1,38 @@
-import { notFound } from 'next/navigation'
 import { headers } from 'next/headers'
+import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
-import App from '../../../src/App.tsx'
-import { buildIndex } from '../../../src/graph/graph.ts'
-import { isLocale, LOCALES, localizePath, stripLocalePrefix, type Locale } from '../../../src/i18n/routing.ts'
-import { socialMetadata } from '../../../src/socialMetadata.ts'
-import type { GraphNode } from '../../../src/graph/types.ts'
-import { graphForLocale } from '../../../src/data/graphLocale.ts'
+import { graphForLocale } from '../data/graphLocale.ts'
+import { explorerUrl, readExplorerLocation } from '../explorerLocation.ts'
+import { buildIndex } from '../graph/graph.ts'
+import type { GraphNode } from '../graph/types.ts'
+import { socialMetadata } from '../socialMetadata.ts'
+import { isLocale, LOCALES, localizePath, stripLocalePrefix, type Locale } from './routing.ts'
 
-const routePaths = new Set(['', 'genres', 'artists', 'instruments', 'history'])
-
-type LocalizedPageProps = {
-  params: Promise<{ locale: string; segments?: string[] }>
+export type LocalizedPageProps = {
+  params: Promise<{ locale: string }>
   searchParams: Promise<Record<string, string | string[] | undefined>>
 }
+
+type PageRoute = '' | 'genres' | 'artists' | 'instruments' | 'history'
 
 const nodeByIdByLocale = new Map<Locale, ReadonlyMap<string, GraphNode>>(
   LOCALES.map((locale) => [locale, buildIndex(graphForLocale(locale)).nodeById]),
 )
 
-async function pageRequest(props: LocalizedPageProps) {
-  const [{ locale: rawLocale, segments }, query, requestHeaders] = await Promise.all([
+function nodesForLocale(locale: Locale): ReadonlyMap<string, GraphNode> {
+  const nodes = nodeByIdByLocale.get(locale)
+  if (!nodes) throw new Error(`Missing graph index for locale ${locale}`)
+  return nodes
+}
+
+async function pageRequest(props: LocalizedPageProps, route: PageRoute) {
+  const [{ locale: rawLocale }, query, requestHeaders] = await Promise.all([
     props.params,
     props.searchParams,
     headers(),
   ])
   if (!isLocale(rawLocale)) notFound()
   const locale: Locale = rawLocale
-  const route = segments?.join('/') ?? ''
-  if (!routePaths.has(route)) notFound()
 
   const search = new URLSearchParams()
   for (const [key, value] of Object.entries(query)) {
@@ -45,9 +49,19 @@ async function pageRequest(props: LocalizedPageProps) {
   return { locale, initialUrl }
 }
 
-export async function generateMetadata(props: LocalizedPageProps): Promise<Metadata> {
-  const { locale, initialUrl } = await pageRequest(props)
-  const metadata = socialMetadata(new URL(initialUrl), nodeByIdByLocale.get(locale)!, locale)
+export async function ensureCanonicalPage(props: LocalizedPageProps, route: PageRoute): Promise<void> {
+  const { locale, initialUrl } = await pageRequest(props, route)
+  const url = new URL(initialUrl)
+  const location = readExplorerLocation(url, nodesForLocale(locale))
+  const canonical = explorerUrl(location, locale, url)
+  if (canonical.pathname !== url.pathname || canonical.search !== url.search) {
+    redirect(`${canonical.pathname}${canonical.search}`)
+  }
+}
+
+export async function generateLocalizedMetadata(props: LocalizedPageProps, route: PageRoute): Promise<Metadata> {
+  const { locale, initialUrl } = await pageRequest(props, route)
+  const metadata = socialMetadata(new URL(initialUrl), nodesForLocale(locale), locale)
   const canonical = new URL(metadata.url)
   const untranslatedPath = stripLocalePrefix(canonical.pathname)
   const languages = Object.fromEntries(LOCALES.map((targetLocale) => {
@@ -76,9 +90,4 @@ export async function generateMetadata(props: LocalizedPageProps): Promise<Metad
       images: [{ url: metadata.image, alt: metadata.imageAlt }],
     },
   }
-}
-
-export default async function LocalizedPage(props: LocalizedPageProps) {
-  const { locale, initialUrl } = await pageRequest(props)
-  return <App locale={locale} initialUrl={initialUrl} />
 }

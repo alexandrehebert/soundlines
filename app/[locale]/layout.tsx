@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { connection } from 'next/server'
 import type { ReactNode } from 'react'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations } from 'next-intl/server'
 import '../../src/index.css'
 import '../../src/pageLoading.css'
-import { isLocale, LOCALES } from '../../src/i18n/routing.ts'
+import { SoundlinesProviders } from '../../src/SoundlinesProviders.tsx'
+import { isLocale } from '../../src/i18n/routing.ts'
 import { pageMetadata } from '../../src/i18n/seo.ts'
 
 export async function generateMetadata({ params }: {
@@ -24,10 +26,6 @@ export async function generateMetadata({ params }: {
   }
 }
 
-export function generateStaticParams() {
-  return LOCALES.map((locale) => ({ locale }))
-}
-
 export default async function LocaleLayout({
   children,
   params,
@@ -37,6 +35,8 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params
   if (!isLocale(locale)) notFound()
+  // The explorer's initial server render depends on the request's search parameters.
+  await connection()
   const [messages, t] = await Promise.all([getMessages(), getTranslations()])
 
   return (
@@ -67,7 +67,9 @@ export default async function LocaleLayout({
             <style>{'#page-loading { display: none; }'}</style>
             {t('requiresJavascript')}
           </noscript>
-          <div id="root" aria-busy="true">{children}</div>
+          <div id="root" aria-busy="true">
+            <SoundlinesProviders locale={locale}>{children}</SoundlinesProviders>
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

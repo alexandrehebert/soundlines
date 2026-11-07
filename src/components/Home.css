@@ -146,6 +146,7 @@
 
 .discovery-intro { max-width: 29rem; color: var(--home-intro); line-height: 1.65; }
 .discovery-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem 1.25rem; margin-top: 1.6rem; }
+.discovery-scratch-hint { display: none; }
 
 .discovery-primary, .discovery-secondary, .discovery-widget-action {
   display: inline-flex;
@@ -171,6 +172,7 @@
 
 .discovery-record-perspective { width: min(100%, 21rem); aspect-ratio: 1; perspective: 1000px; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; }
 .discovery-record-perspective[data-scratching] { cursor: grabbing; }
+.discovery-record-touch-target { display: none; }
 .discovery-record-flip {
   position: relative;
   width: 100%;
@@ -334,7 +336,12 @@
   .discovery-hero { grid-template-columns: minmax(0, 1fr); min-height: 0; }
   .discovery-hero-copy { padding: 2rem 1.25rem; }
   .discovery-intro { max-width: 21rem; }
-  .discovery-record { position: absolute; z-index: -1; width: 15rem; top: -.6rem; right: -6rem; opacity: .35; padding: 0; }
+  .discovery-actions { position: relative; z-index: 2; }
+  .discovery-scratch-hint { display: block; margin-top: .75rem; color: var(--home-muted); font: .72rem/1.5 ui-monospace, monospace; }
+  .discovery-record, .discovery-record-touch-target { position: absolute; width: 15rem; top: -.6rem; right: -6rem; }
+  .discovery-record { z-index: -1; opacity: .35; padding: 0; }
+  .discovery-record-touch-target { display: block; z-index: 1; aspect-ratio: 1; border-radius: 50%; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; }
+  .discovery-record-touch-target[data-scratching] { cursor: grabbing; }
   .discovery-record-caption { display: none; }
   .discovery-grid { grid-template-columns: minmax(0, 1fr); }
   .discovery-destination { gap: .45rem; }

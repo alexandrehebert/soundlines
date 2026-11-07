@@ -13,6 +13,7 @@
     "sideA": "FACE A",
     "sideB": "FACE B",
     "scratchRecord": "Faites glisser le disque pour scratcher",
+    "touchScratchRecord": "Touchez le disque, puis faites-le glisser pour scratcher",
     "headline": {
       "first": "Suivez le",
       "second": "son."

@@ -329,9 +329,19 @@ The UI never touches the JSON directly: all queries (neighbors, lineage traversa
 - Dragging the landing-page vinyl scratches it: the record follows the pointer
   and [vinylScratch.ts](./src/components/vinylScratch.ts) plays a synthesized
   vocal sample through Web Audio. Its speed and direction follow the drag
-  (33⅓ rpm is normal speed). Audio starts only after the first drag.
+  (33⅓ rpm is normal speed). On mobile, tap the visible record to enable sound
+  if needed, then drag it; scrolling remains available outside the record. Audio
+  starts only after the first drag.
 
-- [ExplorerContext](./src/ExplorerContext.ts) owns the graph index, active mode, selection, per-mode ranges, and URL synchronization; the provider wires the UI without graph/selection prop drilling.
+- Explicit App Router pages cover home, genres, artists, instruments, and
+  history. The locale layout shares [SoundlinesProviders](./src/SoundlinesProviders.tsx)
+  across them; the pages currently render the shared [App](./src/App.tsx) UI.
+- [ExplorerContext](./src/ExplorerContext.ts) owns the graph index, active mode,
+  selection, per-mode ranges, history filters, and URL synchronization. Next's
+  router pushes view changes and replaces query-only changes, preserving browser
+  history and unrelated URL parameters. Legacy query links redirect to the
+  corresponding explicit route. Pages render on demand so the initial server
+  render reflects the request's query parameters.
 - Locale-prefixed App Router URLs use `/en` and `/fr`, while English retains the
   `en-US` locale internally. Old `/en-US` links permanently redirect to `/en`,
   preserving paths and query parameters. The root proxy negotiates the initial

@@ -9,6 +9,8 @@ import {
   type SetStateAction,
 } from 'react'
 import { flushSync } from 'react-dom'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { explorerUrl, readExplorerLocation, type ExplorerLocation } from './explorerLocation.ts'
 import { buildIndex } from './graph/graph.ts'
 import {
   DEFAULT_HISTORY_FILTERS, filtersForSelectedEvent, matchesHistoryFilters, type HistoryFilters,
@@ -17,69 +19,50 @@ import { revealEraRange } from './graph/layout.ts'
 import {
   createTimelineModel,
   defaultViewRange,
-  isHomeUrl,
   isTimelineView,
   readTimelineOrders,
-  VIEW_PATHS,
   viewForNode,
-  viewFromUrl,
-  writeTimelineOrders,
   type ExplorerView,
-  type TimelineOrders,
   type TimelineView,
 } from './graph/timeline.ts'
 import type { MusicGraph } from './graph/types.ts'
 import type { GenreDisplay } from './graph/bubbles.ts'
-import { finishPageLoading, transitionPage } from './pageLoading.ts'
-import { socialMetadata } from './socialMetadata.ts'
-import { updateDocumentMetadata } from './socialMetadataClient.ts'
-import { DEFAULT_LOCALE, localizePath, type Locale } from './i18n/routing.ts'
+import { cancelPageTransition, finishPageLoading, transitionPage } from './pageLoading.ts'
+import { DEFAULT_LOCALE, type Locale } from './i18n/routing.ts'
+import { observeViewTransition } from './viewTransition.ts'
 
 type YearRange = [number, number]
+type RunningPageTransition = { transition: ViewTransition; didUpdate: boolean }
 
 const HOME_TRANSITION = 'soundlines-home-transition'
 const VIEW_TRANSITION = 'soundlines-view-transition'
 const PAGE_TRANSITION_CLASSES = [HOME_TRANSITION, VIEW_TRANSITION]
-type ExplorerLocation = {
-  isHome: boolean
-  view: ExplorerView
-  timelineView: TimelineView
-  selectedId: string | null
-  orders: TimelineOrders
-  genreDisplay: GenreDisplay
+
+function sameLocation(first: ExplorerLocation, second: ExplorerLocation): boolean {
+  return first.isHome === second.isHome
+    && first.view === second.view
+    && first.timelineView === second.timelineView
+    && first.selectedId === second.selectedId
+    && first.genreDisplay === second.genreDisplay
+    && first.orders.genre === second.orders.genre
+    && first.orders.artist === second.orders.artist
+    && first.orders.instrument === second.orders.instrument
 }
 
-function explorerUrl(
-  { isHome, view, selectedId, orders, genreDisplay }: ExplorerLocation,
-  locale: Locale,
-): URL {
-  const url = new URL(window.location.href)
-  url.pathname = localizePath(isHome ? '/' : VIEW_PATHS[view], locale)
-  if (!isHome && url.hash === '#discover') url.hash = ''
-  url.searchParams.delete('view')
-  if (selectedId) url.searchParams.set('focus', selectedId)
-  else url.searchParams.delete('focus')
-  writeTimelineOrders(url.searchParams, orders)
-  if (genreDisplay === 'bubbles') url.searchParams.set('layout', 'bubbles')
-  else url.searchParams.delete('layout')
-  return url
-}
-
-export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOCALE, initialUrl?: string) {
+export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOCALE) {
+  const router = useRouter()
+  const pathname = usePathname()
+  const search = useSearchParams().toString()
+  const routeKey = `${pathname}?${search}`
   const index = useMemo(() => buildIndex(graph), [graph])
   const readLocation = useCallback((href?: string): ExplorerLocation => {
     const url = new URL(href ?? window.location.href)
-    const params = url.searchParams
-    const id = params.get('focus')
-    const node = id ? index.nodeById.get(id) : undefined
-    const view = viewForNode(node?.type, viewFromUrl(url))
-    const timelineView = isTimelineView(view) ? view : 'genre'
-    const orders = readTimelineOrders(params)
-    const genreDisplay = params.get('layout') === 'bubbles' ? 'bubbles' : 'bars'
-    return { isHome: isHomeUrl(url, Boolean(node)), view, timelineView, selectedId: node?.id ?? null, orders, genreDisplay }
+    return readExplorerLocation(url, index.nodeById)
   }, [index])
-  const [location, setLocation] = useState(() => readLocation(initialUrl))
-  const pageTransition = useRef<ViewTransition | null>(null)
+  const [location, setLocation] = useState(() => readLocation(new URL(routeKey, 'http://soundlines.invalid').href))
+  const pageTransition = useRef<RunningPageTransition | null>(null)
+  const pendingLoadingUpdate = useRef(false)
+  const handledRoute = useRef<string | null>(null)
   const [historyFilters, setHistoryFilters] = useState<HistoryFilters>(DEFAULT_HISTORY_FILTERS)
   const { isHome, view, timelineView, selectedId, orders, genreDisplay } = location
   const order = orders[timelineView]
@@ -117,6 +100,26 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
     })
   }, [index])
 
+  const cancelViewTransition = useCallback(() => {
+    const running = pageTransition.current
+    if (!running) return
+    pageTransition.current = null
+    running.transition.skipTransition()
+    document.documentElement.classList.remove(...PAGE_TRANSITION_CLASSES)
+  }, [])
+
+  const hasPendingUpdate = useCallback(() =>
+    pendingLoadingUpdate.current || Boolean(pageTransition.current && !pageTransition.current.didUpdate), [])
+
+  const cancelPendingUpdate = useCallback(() => {
+    if (pendingLoadingUpdate.current) {
+      pendingLoadingUpdate.current = false
+      cancelPageTransition()
+      finishPageLoading()
+    }
+    if (pageTransition.current && !pageTransition.current.didUpdate) cancelViewTransition()
+  }, [cancelViewTransition])
+
   const startPageTransition = useCallback((className: string, update: () => void, resetScroll: boolean) => {
     if (!document.startViewTransition || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       update()
@@ -127,59 +130,79 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
     root.classList.remove(...PAGE_TRANSITION_CLASSES)
     root.classList.add(className)
     const transition = document.startViewTransition(() => {
-      if (pageTransition.current !== transition) return
+      const running = pageTransition.current
+      if (running?.transition !== transition) return
+      running.didUpdate = true
       flushSync(update)
       if (resetScroll) window.scrollTo({ top: 0, behavior: 'instant' })
     })
-    pageTransition.current = transition
+    pageTransition.current = { transition, didUpdate: false }
     const cleanup = () => {
-      if (pageTransition.current !== transition) return
+      if (pageTransition.current?.transition !== transition) return
       pageTransition.current = null
       root.classList.remove(className)
     }
-    void transition.finished.then(cleanup, cleanup)
+    observeViewTransition(transition, cleanup)
   }, [])
 
   const navigate = useCallback((next: ExplorerLocation) => {
     const changesPage = next.isHome !== isHome || next.view !== view
     const update = () => {
-      if (changesPage) window.history.pushState(null, '', explorerUrl(next, locale))
+      const url = explorerUrl(next, locale, window.location.href)
+      const href = `${url.pathname}${url.search}${url.hash}`
+      if (url.pathname !== window.location.pathname) router.push(href, { scroll: false })
+      else if (url.href !== window.location.href) router.replace(href, { scroll: false })
       setLocation(next)
     }
     const changesContent = changesPage || next.orders[next.timelineView] !== order || next.genreDisplay !== genreDisplay
     // Home transitions run to completion; a newer explorer navigation replaces one still in progress.
     const homeTransitionRunning = pageTransition.current && document.documentElement.classList.contains(HOME_TRANSITION)
+    if (homeTransitionRunning && (isHome !== next.isHome || (changesContent && !isHome))) return
+    cancelPendingUpdate()
     if (isHome !== next.isHome) {
-      if (!homeTransitionRunning) startPageTransition(HOME_TRANSITION, update, true)
+      startPageTransition(HOME_TRANSITION, update, true)
     } else if (changesContent && !isHome) {
-      if (!homeTransitionRunning) startPageTransition(VIEW_TRANSITION, update, false)
+      startPageTransition(VIEW_TRANSITION, update, false)
     } else {
       update()
     }
-  }, [isHome, view, order, genreDisplay, locale, startPageTransition])
+  }, [isHome, view, order, genreDisplay, locale, router, cancelPendingUpdate, startPageTransition])
 
   useEffect(() => {
-    const url = explorerUrl(location, locale)
-    if (url.href !== window.location.href) window.history.replaceState(null, '', url)
-    updateDocumentMetadata(document, socialMetadata(url, index.nodeById))
-  }, [index, location, locale])
+    if (handledRoute.current === routeKey) return
+    handledRoute.current = routeKey
 
-  useEffect(() => {
-    const onPopState = () => {
-      if (pageTransition.current) {
-        pageTransition.current.skipTransition()
-        pageTransition.current = null
-        document.documentElement.classList.remove(...PAGE_TRANSITION_CLASSES)
+    const currentUrl = new URL(window.location.href)
+    const parsed = readLocation(currentUrl.href)
+    const canonical = explorerUrl(parsed, locale, currentUrl)
+    if (canonical.href !== currentUrl.href) {
+      const href = `${canonical.pathname}${canonical.search}${canonical.hash}`
+      if (canonical.pathname === currentUrl.pathname && canonical.search === currentUrl.search) {
+        // Next may treat removing an inherited redirect hash as a no-op.
+        window.history.replaceState(window.history.state, '', href)
+      } else {
+        router.replace(href, { scroll: false })
       }
-      const next = readLocation()
-      revealSelection(next)
-      if (next.isHome !== isHome) transitionPage(() => setLocation(next))
-      else if (!isHome && next.view !== view) startPageTransition(VIEW_TRANSITION, () => setLocation(next), false)
-      else setLocation(next)
     }
-    window.addEventListener('popstate', onPopState)
-    return () => window.removeEventListener('popstate', onPopState)
-  }, [isHome, view, readLocation, revealSelection, startPageTransition])
+
+    const next = parsed.view === 'history' && location.view === 'history'
+      ? { ...parsed, timelineView: location.timelineView }
+      : parsed
+    cancelPendingUpdate()
+    if (sameLocation(next, location)) return
+    cancelViewTransition()
+    // Reconcile selection and ranges with Next's completed navigation.
+    // oxlint-disable-next-line react/set-state-in-effect
+    revealSelection(next)
+    if (next.isHome !== location.isHome) {
+      pendingLoadingUpdate.current = true
+      transitionPage(() => {
+        pendingLoadingUpdate.current = false
+        setLocation(next)
+      })
+    } else if (!location.isHome && next.view !== location.view) startPageTransition(VIEW_TRANSITION, () => setLocation(next), false)
+    else setLocation(next)
+  }, [routeKey, location, locale, readLocation, revealSelection, router, cancelPendingUpdate, cancelViewTransition, startPageTransition])
 
   const selectNode = useCallback((id: string | null) => {
     const node = id ? index.nodeById.get(id) : undefined
@@ -197,7 +220,7 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
   }, [index, view, timelineView, location, revealSelection, navigate])
 
   const changeView = useCallback((nextView: ExplorerView) => {
-    if (!isHome && view === nextView) return
+    if (!isHome && view === nextView && !hasPendingUpdate()) return
     navigate({
       ...location,
       isHome: false,
@@ -205,7 +228,7 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
       timelineView: isTimelineView(nextView) ? nextView : timelineView,
       selectedId: null,
     })
-  }, [isHome, view, timelineView, location, navigate])
+  }, [isHome, view, timelineView, location, navigate, hasPendingUpdate])
 
   const changeHistoryFilters = useCallback((next: HistoryFilters) => {
     const node = selectedId ? index.nodeById.get(selectedId) : undefined
@@ -218,14 +241,14 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
     if (nextOrder !== 'family' && nextOrder !== 'oldest-first') {
       throw new Error(`Unknown timeline order ${nextOrder}`)
     }
-    if (order === nextOrder) return
+    if (order === nextOrder && !hasPendingUpdate()) return
     navigate({ ...location, orders: { ...orders, [view]: nextOrder } })
-  }, [view, order, orders, location, navigate])
+  }, [view, order, orders, location, navigate, hasPendingUpdate])
 
   const changeGenreDisplay = useCallback((display: GenreDisplay) => {
-    if (genreDisplay === display) return
+    if (genreDisplay === display && !hasPendingUpdate()) return
     navigate({ ...location, genreDisplay: display })
-  }, [genreDisplay, location, navigate])
+  }, [genreDisplay, location, navigate, hasPendingUpdate])
 
   const goHome = useCallback(() => {
     const params = new URLSearchParams()

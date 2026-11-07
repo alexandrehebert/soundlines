@@ -1,11 +1,10 @@
 'use client'
 
 import { ArrowDownWideNarrow, BarChart3, Bubbles, ChartGantt, Disc3, Guitar, History as HistoryIcon, SlidersHorizontal, Users, X, type LucideIcon } from 'lucide-react'
-import { AnimatePresence, motion, MotionConfig, useMotionValue } from 'motion/react'
+import { AnimatePresence, motion, useMotionValue } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent, type PointerEvent } from 'react'
 import { useTranslations } from 'next-intl'
 import { useExplorer } from './ExplorerContext.ts'
-import { ExplorerProvider } from './ExplorerProvider.tsx'
 import { DatasetStats } from './components/DatasetStats.tsx'
 import { DetailPanel } from './components/DetailPanel.tsx'
 import { Legend } from './components/Legend.tsx'
@@ -16,12 +15,10 @@ import { History } from './components/History.tsx'
 import { BrandLink } from './components/BrandLink.tsx'
 import { Home } from './components/Home.tsx'
 import { MOBILE_DETAIL_COLLAPSED_OFFSET, MOBILE_DETAIL_HEIGHT } from './components/mobileDetailSheet.ts'
-import { graphForLocale } from './data/graphLocale.ts'
 import type { TimelineOrder } from './graph/layout.ts'
 import type { StatsTab } from './graph/stats.ts'
 import { EXPLORER_VIEWS, isTimelineView, type ExplorerView, type TimelineView } from './graph/timeline.ts'
-import { DEFAULT_LOCALE, localizePath, type Locale } from './i18n/routing.ts'
-import { useColorTheme } from './useColorTheme.ts'
+import { localizePath } from './i18n/routing.ts'
 
 export function Explorer() {
   const { index, locale, view, changeView, selectedId, selectNode, order, changeOrder, genreDisplay, goHome } = useExplorer()
@@ -602,27 +599,7 @@ export function TimelineOrderSelect({
   )
 }
 
-function SoundlinesPage() {
+export default function App() {
   const { isHome } = useExplorer()
   return isHome ? <Home /> : <Explorer />
 }
-
-function App({
-  locale = DEFAULT_LOCALE,
-  initialUrl,
-}: {
-  locale?: Locale
-  initialUrl?: string
-}) {
-  useColorTheme()
-  const graph = useMemo(() => graphForLocale(locale), [locale])
-  return (
-    <ExplorerProvider graph={graph} locale={locale} initialUrl={initialUrl}>
-      <MotionConfig reducedMotion="user">
-        <SoundlinesPage />
-      </MotionConfig>
-    </ExplorerProvider>
-  )
-}
-
-export default App

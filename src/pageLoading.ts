@@ -15,10 +15,14 @@ function setLoading(loading: boolean) {
   document.getElementById('root')?.setAttribute('aria-busy', String(loading))
 }
 
-export function transitionPage(update: () => void) {
-  cancelFinish()
+export function cancelPageTransition() {
   cancelAnimationFrame(navigationFrame)
   clearTimeout(navigationTimer)
+}
+
+export function transitionPage(update: () => void) {
+  cancelFinish()
+  cancelPageTransition()
   startedAt = performance.now()
   setLoading(true)
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches

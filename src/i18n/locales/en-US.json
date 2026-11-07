@@ -13,6 +13,7 @@
     "sideA": "SIDE A",
     "sideB": "SIDE B",
     "scratchRecord": "Drag the record to scratch it",
+    "touchScratchRecord": "Tap the record, then drag to scratch",
     "headline": {
       "first": "Follow the",
       "second": "sound."

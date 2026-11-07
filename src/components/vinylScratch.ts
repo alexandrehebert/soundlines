@@ -62,6 +62,7 @@ export function renderScratchSample(sampleRate: number, seconds = SAMPLE_SECONDS
 type AudioContextConstructor = typeof AudioContext
 
 export interface ScratchDeck {
+  activate: () => void
   scratch: (degPerSec: number) => void
   release: () => void
   dispose: () => void
@@ -94,6 +95,15 @@ export function createScratchDeck(): ScratchDeck | null {
   let position = 0
   let updatedAt = context.currentTime
   let idleTimer: ReturnType<typeof setTimeout> | undefined
+  let pendingResumes = 0
+
+  const activate = () => {
+    if (context.state === 'running' || context.state === 'closed') return
+    pendingResumes += 1
+    void context.resume()
+      .catch((error: unknown) => console.warn('Unable to resume the vinyl scratch audio.', error))
+      .finally(() => { pendingResumes -= 1 })
+  }
 
   const advance = () => {
     const now = context.currentTime
@@ -125,8 +135,10 @@ export function createScratchDeck(): ScratchDeck | null {
   }
 
   return {
+    activate,
     scratch(degPerSec) {
-      if (context.state === 'suspended') void context.resume()
+      // A blocked resume can stay pending until a later activating gesture.
+      if (pendingResumes === 0) activate()
       setRate(scratchRate(degPerSec))
       clearTimeout(idleTimer)
       idleTimer = setTimeout(() => setRate(0), IDLE_RELEASE_MS)

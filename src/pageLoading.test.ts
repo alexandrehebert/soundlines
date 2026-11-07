@@ -108,6 +108,18 @@ describe('page loading lifecycle', () => {
     expect(latest).toHaveBeenCalledOnce()
   })
 
+  it('cancels a pending navigation and releases the loading overlay', () => {
+    const obsolete = vi.fn()
+    loading.transitionPage(obsolete)
+    vi.advanceTimersByTime(80)
+    loading.cancelPageTransition()
+    loading.finishPageLoading()
+    vi.advanceTimersByTime(1000)
+
+    expect(obsolete).not.toHaveBeenCalled()
+    expect(overlay.dataset.loading).toBe('false')
+  })
+
   it('cleans up pending work and supports StrictMode effect setup replay', () => {
     const cancel = loading.finishPageLoading()
     cancel()

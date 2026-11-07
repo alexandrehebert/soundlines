@@ -92,7 +92,7 @@ describe('color theme preference', () => {
     let finish!: () => void
     const startViewTransition = vi.fn((update: () => void) => {
       update()
-      return { finished: new Promise<void>((resolve) => { finish = resolve }) }
+      return { ready: Promise.resolve(), finished: new Promise<void>((resolve) => { finish = resolve }) }
     })
     Object.assign(document, { startViewTransition })
     Object.assign(document.documentElement, { classList: { add: (name: string) => classes.add(name), remove: (name: string) => classes.delete(name) } })

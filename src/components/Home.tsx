@@ -73,6 +73,7 @@ function SpinningVinyl({ theme }: { theme: ColorTheme }) {
     event.preventDefault()
     event.currentTarget.setPointerCapture(event.pointerId)
     deck.current ??= createScratchDeck()
+    deck.current?.activate()
     gesture.current = { pointerId: event.pointerId, angle: start, time: event.timeStamp, velocity: 0 }
     setScratching(true)
   }
@@ -93,32 +94,50 @@ function SpinningVinyl({ theme }: { theme: ColorTheme }) {
   const endScratch = (event: PointerEvent<HTMLDivElement>) => {
     if (gesture.current?.pointerId !== event.pointerId) return
     gesture.current = null
+    if (event.type === 'pointerup') deck.current?.activate()
     deck.current?.release()
     setScratching(false)
   }
 
+  const scratchHandlers = {
+    onPointerDown: startScratch,
+    onPointerMove: moveScratch,
+    onPointerUp: endScratch,
+    onPointerCancel: endScratch,
+    onLostPointerCapture: endScratch,
+    // Some mobile browsers unlock Web Audio only on touchend.
+    onTouchEnd: () => deck.current?.activate(),
+  }
+
   return (
-    <div
-      className="discovery-record-perspective"
-      data-side={theme === 'light' ? 'B' : 'A'}
-      data-scratching={scratching || undefined}
-      title={tHome('scratchRecord')}
-      onPointerDown={startScratch}
-      onPointerMove={moveScratch}
-      onPointerUp={endScratch}
-      onPointerCancel={endScratch}
-      onLostPointerCapture={endScratch}
-    >
-      <div className="discovery-record-flip">
-        {(['A', 'B'] as const).map((side) => (
-          <div key={side} className={`discovery-record-face discovery-record-face-${side.toLowerCase()}`}>
-            <motion.div className="discovery-vinyl" style={{ rotate }}>
-              <div className="discovery-label"><Disc3 size={28} /></div>
-            </motion.div>
+    <>
+      <div className="discovery-record" aria-hidden="true">
+        <div
+          className="discovery-record-perspective"
+          data-side={theme === 'light' ? 'B' : 'A'}
+          data-scratching={scratching || undefined}
+          title={tHome('scratchRecord')}
+          {...scratchHandlers}
+        >
+          <div className="discovery-record-flip">
+            {(['A', 'B'] as const).map((side) => (
+              <div key={side} className={`discovery-record-face discovery-record-face-${side.toLowerCase()}`}>
+                <motion.div className="discovery-vinyl" style={{ rotate }}>
+                  <div className="discovery-label"><Disc3 size={28} /></div>
+                </motion.div>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+        <span className="discovery-record-caption">SOUNDLINES / {tHome(theme === 'dark' ? 'sideA' : 'sideB')}</span>
       </div>
-    </div>
+      <div
+        className="discovery-record-touch-target"
+        data-scratching={scratching || undefined}
+        aria-hidden="true"
+        {...scratchHandlers}
+      />
+    </>
   )
 }
 function follow(event: MouseEvent<HTMLAnchorElement>, navigate?: () => void) {
@@ -260,11 +279,9 @@ export function Home() {
                 {tHome('discover')} <ArrowDown size={15} aria-hidden="true" />
               </button>
             </div>
+            <p className="discovery-scratch-hint" aria-hidden="true">{tHome('touchScratchRecord')}</p>
           </div>
-          <div className="discovery-record" aria-hidden="true">
-            <SpinningVinyl theme={theme} />
-            <span className="discovery-record-caption">SOUNDLINES / {tHome(theme === 'dark' ? 'sideA' : 'sideB')}</span>
-          </div>
+          <SpinningVinyl theme={theme} />
         </section>
 
         <motion.nav {...scrollReveal} className="discovery-nav" aria-label={tHome('exploreCatalogue')}>
