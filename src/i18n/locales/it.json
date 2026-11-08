@@ -33,6 +33,37 @@
     "openTimeline": "Apri la cronologia",
     "discover": "Scopri",
     "exploreCatalogue": "Esplora il catalogo",
+    "catalogueIntro": "Segui un legame, ascolta un suono o scopri gli artisti e gli strumenti dietro la musica.",
+    "chronologies": {
+      "title": "Cronologie",
+      "intro": "Colloca generi, artisti, strumenti ed eventi nel tempo.",
+      "preview": "Anteprima"
+    },
+    "topics": {
+      "genres": {
+        "title": "Generi",
+        "intro": "Scopri come nascono gli stili, come si influenzano e si ramificano, poi ascolta come suonano."
+      },
+      "artists": {
+        "title": "Artisti",
+        "intro": "Incontra i musicisti che hanno plasmato ogni stile e segui il loro percorso nel tempo."
+      },
+      "instruments": {
+        "title": "Strumenti",
+        "intro": "Scopri gli strumenti e le macchine che hanno dato a ogni stile il suo suono."
+      },
+      "history": {
+        "title": "Storia",
+        "intro": "Ripercorri le invenzioni, gli incontri e le svolte che hanno cambiato il modo di creare e condividere la musica."
+      },
+      "timelines": {
+        "label": "Cronologie · {topic}",
+        "genre": "Cronologia dei generi",
+        "artist": "Cronologia degli artisti",
+        "instrument": "Cronologia degli strumenti",
+        "history": "Cronologia degli eventi"
+      }
+    },
     "destinations": {
       "genre": "Segui stili e influenze",
       "artist": "Incontra le persone dietro il suono",
@@ -67,6 +98,54 @@
       "spanish": "Español",
       "pages": "Pagine",
       "home": "Pagina iniziale"
+    },
+    "soundtrails": {
+      "startJourney": "Inizia un viaggio",
+      "openFullTimeline": "Apri tutta la cronologia",
+      "title": "Soundtrails",
+      "intro": "Segui un percorso musicale, ascolta ogni tappa e scopri come i generi si collegano.",
+      "chooseTrail": "Scegli un percorso",
+      "stops": "{count, plural, one {# tappa} other {# tappe}}",
+      "allTrails": "Tutti i percorsi",
+      "progress": "Avanzamento del percorso",
+      "stopProgress": "Tappa {position} di {total}",
+      "listen": "Ascolta {name}",
+      "pause": "Metti in pausa {name}",
+      "previewFailed": "Non è stato possibile riprodurre questo estratto.",
+      "keyArtists": "Artisti chiave",
+      "anthem": "Inno",
+      "anthemBy": "«{track}» · {artist}",
+      "previous": "Tappa precedente",
+      "next": "Avanti: {name}",
+      "finished": "Sei arrivato a {name}. Nella cronologia ogni tappa del percorso resta evidenziata, insieme al resto del suo albero genealogico.",
+      "seeOnTimeline": "Guarda nella cronologia",
+      "anotherTrail": "Scegli un altro percorso",
+      "trails": {
+        "soul-to-techno": {
+          "title": "Dal soul alla techno",
+          "description": "I groove soul e funk riempiono le piste disco, poi incontrano le drum machine di Chicago e Detroit."
+        },
+        "breakbeat-science": {
+          "title": "La scienza del breakbeat",
+          "description": "Un break di batteria funk viene messo in loop nel Bronx, accelerato nei rave britannici e rallentato nel dubstep."
+        },
+        "island-bass": {
+          "title": "Bassi d’isola",
+          "description": "Dal calypso caraibico agli studi di Kingston, dove il basso passa in primo piano e il mixer diventa uno strumento."
+        },
+        "blues-to-grunge": {
+          "title": "Dal blues al grunge",
+          "description": "La chitarra blues diventa più forte, più veloce e più pesante, decennio dopo decennio."
+        },
+        "birth-of-cool": {
+          "title": "La nascita del cool",
+          "description": "Le radici blues, lo swing delle big band, la rivoluzione bebop e la risposta più calma che ne seguì."
+        },
+        "gamelan-to-synthwave": {
+          "title": "Dal gamelan alla synthwave",
+          "description": "I motivi del gamelan giavanese ispirano i compositori minimalisti, poi il kosmische rock tedesco e il synth-pop."
+        }
+      }
     }
   },
   "search": {

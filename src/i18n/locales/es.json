@@ -33,6 +33,37 @@
     "openTimeline": "Abrir la cronología",
     "discover": "Descubrir",
     "exploreCatalogue": "Explorar el catálogo",
+    "catalogueIntro": "Sigue una conexión, escucha un sonido o descubre a los artistas e instrumentos detrás de la música.",
+    "chronologies": {
+      "title": "Cronologías",
+      "intro": "Sitúa los géneros, artistas, instrumentos y acontecimientos en el tiempo.",
+      "preview": "Un vistazo"
+    },
+    "topics": {
+      "genres": {
+        "title": "Géneros",
+        "intro": "Sigue cómo nacen los estilos, cómo se influyen y se ramifican, y escucha cómo suenan."
+      },
+      "artists": {
+        "title": "Artistas",
+        "intro": "Conoce a los músicos que dieron forma a cada estilo y sigue su trayectoria en el tiempo."
+      },
+      "instruments": {
+        "title": "Instrumentos",
+        "intro": "Descubre los instrumentos y las máquinas que dieron a cada estilo su sonido."
+      },
+      "history": {
+        "title": "Historia",
+        "intro": "Recorre los inventos, encuentros y momentos clave que cambiaron la forma de crear y compartir música."
+      },
+      "timelines": {
+        "label": "Cronologías · {topic}",
+        "genre": "Cronología de géneros",
+        "artist": "Cronología de artistas",
+        "instrument": "Cronología de instrumentos",
+        "history": "Cronología de los acontecimientos"
+      }
+    },
     "destinations": {
       "genre": "Recorre estilos e influencias",
       "artist": "Conoce a las personas detrás del sonido",
@@ -67,6 +98,54 @@
       "spanish": "Español",
       "pages": "Páginas",
       "home": "Inicio"
+    },
+    "soundtrails": {
+      "startJourney": "Empezar un viaje",
+      "openFullTimeline": "Abrir toda la cronología",
+      "title": "Soundtrails",
+      "intro": "Sigue un recorrido musical, escucha cada parada y descubre cómo se conectan los géneros.",
+      "chooseTrail": "Elige un recorrido",
+      "stops": "{count, plural, one {# parada} other {# paradas}}",
+      "allTrails": "Todos los recorridos",
+      "progress": "Progreso del recorrido",
+      "stopProgress": "Parada {position} de {total}",
+      "listen": "Escuchar {name}",
+      "pause": "Pausar {name}",
+      "previewFailed": "No se pudo reproducir este fragmento.",
+      "keyArtists": "Artistas clave",
+      "anthem": "Himno",
+      "anthemBy": "«{track}» · {artist}",
+      "previous": "Parada anterior",
+      "next": "Siguiente: {name}",
+      "finished": "Has llegado a {name}. En la cronología, cada parada del recorrido sigue resaltada junto con el resto de su árbol genealógico.",
+      "seeOnTimeline": "Ver en la cronología",
+      "anotherTrail": "Elegir otro recorrido",
+      "trails": {
+        "soul-to-techno": {
+          "title": "Del soul al techno",
+          "description": "Los grooves de soul y funk llenan las pistas de disco y luego se encuentran con las cajas de ritmos de Chicago y Detroit."
+        },
+        "breakbeat-science": {
+          "title": "La ciencia del breakbeat",
+          "description": "Un break de batería funk se repite en bucle en el Bronx, se acelera en las raves británicas y se ralentiza hasta el dubstep."
+        },
+        "island-bass": {
+          "title": "Bajos de isla",
+          "description": "Del calipso caribeño a los estudios de Kingston, donde el bajo pasa al frente y la mesa de mezclas se vuelve un instrumento."
+        },
+        "blues-to-grunge": {
+          "title": "Del blues al grunge",
+          "description": "La guitarra blues se vuelve más fuerte, más rápida y más pesada, década tras década."
+        },
+        "birth-of-cool": {
+          "title": "El nacimiento del cool",
+          "description": "Raíces de blues, swing de big band, la revolución del bebop y la respuesta más serena que llegó después."
+        },
+        "gamelan-to-synthwave": {
+          "title": "Del gamelán al synthwave",
+          "description": "Los patrones del gamelán javanés inspiran a los compositores minimalistas, luego al kosmische rock alemán y al synth-pop."
+        }
+      }
     }
   },
   "search": {

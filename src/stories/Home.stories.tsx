@@ -3,6 +3,7 @@ import { expect, fireEvent, waitFor, within } from 'storybook/test'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
 import { Home } from '../components/Home.tsx'
 import { withFeatureFlag } from '../featureFlags.ts'
+import { publicAsset } from '../publicAsset.ts'
 
 const meta = {
   title: 'Screens/Home',
@@ -248,6 +249,127 @@ export const MobileTurntableControls: Story = {
     expect(controls.getBoundingClientRect().top).toBeGreaterThan(record.getBoundingClientRect().bottom)
     if (canvasElement.ownerDocument.defaultView!.innerWidth <= 672) {
       expect(within(canvasElement).getByRole('button', { name: 'Discover', hidden: true })).not.toBeVisible()
+    }
+  },
+}
+
+const checkCatalogueDiscovery = async ({ canvasElement }: { canvasElement: HTMLElement }) => {
+  const catalogue = within(canvasElement).getByRole('region', { name: 'Explore the catalogue' })
+  expect(within(catalogue).getAllByRole('heading', { level: 3 }).map((heading) => heading.textContent?.trim())).toEqual([
+    'Genre connections', 'Listening booth', 'Artist spotlight', 'Instrument spotlight', 'Turning points', 'Recently added',
+  ])
+
+  const advance = async (regionName: string, buttonName: string, contentSelector: string) => {
+    const region = within(catalogue).getByRole('region', { name: regionName })
+    const initial = region.querySelector(contentSelector)?.textContent
+    if (!initial) throw new Error(`${regionName} has no discovery content`)
+    await fireEvent.click(within(region).getByRole('button', { name: buttonName }))
+    await waitFor(() => expect(region.querySelector(contentSelector)?.textContent).not.toBe(initial))
+    return region
+  }
+
+  await advance('Genre connections', 'Next connection', '.discovery-lineage')
+  await advance('Listening booth', 'Next sound', '.discovery-listening-link')
+  await advance('Artist spotlight', 'Next artist', '.discovery-spotlight-title')
+  const instrument = await advance('Instrument spotlight', 'Next instrument', '.discovery-spotlight-title')
+  expect(instrument.querySelector('img')).toHaveAttribute('src', publicAsset('/instrument-avatars/theremin.svg'))
+
+  const featured = catalogue.querySelectorAll<HTMLElement>('.discovery-featured > .discovery-widget')
+  const viewport = canvasElement.ownerDocument.defaultView
+  if (featured.length !== 2 || !viewport) throw new Error('Catalogue layout is incomplete')
+  if (viewport.innerWidth <= 672) {
+    expect(featured[1].getBoundingClientRect().top).toBeGreaterThanOrEqual(featured[0].getBoundingClientRect().bottom)
+    expect(canvasElement.ownerDocument.documentElement.scrollWidth).toBeLessThanOrEqual(viewport.innerWidth)
+  } else {
+    expect(featured[0].getBoundingClientRect().width).toBeGreaterThan(featured[1].getBoundingClientRect().width)
+  }
+}
+
+const withLandingV2 = () => withFeatureFlag('landingV3', false)
+
+export const CatalogueDiscovery: Story = { beforeEach: withLandingV2, play: checkCatalogueDiscovery }
+export const MobileCatalogueDiscovery: Story = {
+  beforeEach: withLandingV2,
+  globals: { viewport: { value: 'mobile2', isRotated: false } },
+  play: checkCatalogueDiscovery,
+}
+
+const withLandingV3 = () => {
+  const restoreLanding = withFeatureFlag('landingV3', true)
+  const restoreSoundtrails = withFeatureFlag('soundtrails', true)
+  return () => {
+    restoreSoundtrails()
+    restoreLanding()
+  }
+}
+
+const checkTopicSections = async ({ canvasElement }: { canvasElement: HTMLElement }) => {
+  const canvas = within(canvasElement)
+  const topics = [
+    ['Genres', ['Genre timeline'], ['Genre connections', 'Listening booth', 'Soundtrails']],
+    ['Artists', ['Artist timeline'], ['Artist spotlight', 'Recently added']],
+    ['Instruments', ['Instrument timeline'], ['Instrument spotlight', 'Recently added']],
+    ['History', ['Timeline of events'], ['Turning points', 'Recently added']],
+  ] as const
+  const viewport = canvasElement.ownerDocument.defaultView
+  if (!viewport) throw new Error('Viewport is unavailable')
+  let previousBottom = -Infinity
+  for (const [title, timelines, widgets] of topics) {
+    const section = canvas.getByRole('region', { name: title })
+    expect(section.getBoundingClientRect().top).toBeGreaterThanOrEqual(previousBottom)
+    previousBottom = section.getBoundingClientRect().bottom
+    for (const name of timelines) expect(within(section).getByRole('link', { name })).toBeVisible()
+    expect(within(section).getAllByRole('heading', { level: 3 }).map((heading) => heading.textContent?.trim())).toEqual(widgets)
+  }
+
+  for (const title of ['Artists', 'Instruments', 'History']) {
+    const section = canvas.getByRole('region', { name: title })
+    const [feature, recent] = section.querySelectorAll<HTMLElement>('.discovery-topic-body > .discovery-widget')
+    expect(within(recent).getAllByRole('link').length).toBeGreaterThan(0)
+    if (viewport.innerWidth <= 672) expect(recent.getBoundingClientRect().top).toBeGreaterThanOrEqual(feature.getBoundingClientRect().bottom)
+    else expect(recent.getBoundingClientRect().top).toBe(feature.getBoundingClientRect().top)
+  }
+  expect(canvasElement.ownerDocument.documentElement.scrollWidth).toBeLessThanOrEqual(viewport.innerWidth)
+
+  fireEvent.click(canvas.getByRole('button', { name: 'Start a journey' }))
+  const trails = canvas.getByRole('region', { name: 'Soundtrails' })
+  fireEvent.click(within(trails).getByRole('button', { name: /From soul to techno/ }))
+  await waitFor(() => expect(within(trails).getByRole('heading', { level: 4, name: 'Soul' })).toBeVisible())
+}
+
+export const TopicSections: Story = { beforeEach: withLandingV3, play: checkTopicSections }
+export const MobileTopicSections: Story = {
+  beforeEach: withLandingV3,
+  globals: { viewport: { value: 'mobile2', isRotated: false } },
+  play: checkTopicSections,
+}
+
+export const Soundtrails: Story = {
+  beforeEach: () => withFeatureFlag('soundtrails', true),
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const section = canvas.getByRole('region', { name: 'Soundtrails' })
+    fireEvent.click(canvas.getByRole('button', { name: 'Start a journey' }))
+    fireEvent.click(within(section).getByRole('button', { name: /From soul to techno/ }))
+    await waitFor(() => expect(within(section).getByRole('heading', { level: 3, name: 'Soul' })).toBeVisible())
+    fireEvent.click(within(section).getByRole('button', { name: 'Next: Funk' }))
+    await waitFor(() => expect(within(section).getByRole('heading', { level: 3, name: 'Funk' })).toBeVisible())
+    fireEvent.click(within(section).getByRole('button', { name: 'Detroit techno' }))
+    await waitFor(() => expect(within(section).getByRole('link', { name: /See it on the timeline/ })).toBeVisible())
+  },
+}
+
+export const ChronologyPreviews: Story = {
+  beforeEach: () => withFeatureFlag('chronologyPreviews', true),
+  play: async ({ canvasElement }) => {
+    const card = canvasElement.querySelector<HTMLElement>('.discovery-timelines-card')
+    if (!card) throw new Error('Chronology preview card is missing')
+    expect(card.querySelector('[data-chronology-preview="genre"]')).not.toBeNull()
+    for (const [label, view, path] of [['Artists', 'artist', 'artists'], ['Instruments', 'instrument', 'instruments']] as const) {
+      await fireEvent.click(within(card).getByRole('button', { name: label }))
+      await waitFor(() => expect(card.querySelector(`[data-chronology-preview="${view}"]`)).not.toBeNull())
+      expect(card.querySelectorAll('[data-chronology-preview]')).toHaveLength(1)
+      expect(within(card).getByRole('link', { name: label })).toHaveAttribute('href', `/en/${path}`)
     }
   },
 }

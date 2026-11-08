@@ -33,6 +33,37 @@
     "openTimeline": "Open the timeline",
     "discover": "Discover",
     "exploreCatalogue": "Explore the catalogue",
+    "catalogueIntro": "Follow a connection, hear a sound, or discover the artists and instruments behind the music.",
+    "chronologies": {
+      "title": "Chronologies",
+      "intro": "Place genres, artists, instruments and key events in time.",
+      "preview": "A glimpse"
+    },
+    "topics": {
+      "genres": {
+        "title": "Genres",
+        "intro": "Follow how styles are born, borrow from one another and branch out, then hear what they sound like."
+      },
+      "artists": {
+        "title": "Artists",
+        "intro": "Meet the musicians who shaped each style and follow their careers through time."
+      },
+      "instruments": {
+        "title": "Instruments",
+        "intro": "Discover the instruments and machines that gave each style its sound."
+      },
+      "history": {
+        "title": "History",
+        "intro": "Revisit the inventions, gatherings and turning points that changed how music is made and shared."
+      },
+      "timelines": {
+        "label": "{topic} timelines",
+        "genre": "Genre timeline",
+        "artist": "Artist timeline",
+        "instrument": "Instrument timeline",
+        "history": "Timeline of events"
+      }
+    },
     "destinations": {
       "genre": "Trace styles and influences",
       "artist": "Meet the people behind the sound",
@@ -67,6 +98,54 @@
       "german": "Deutsch",
       "italian": "Italiano",
       "spanish": "Español"
+    },
+    "soundtrails": {
+      "startJourney": "Start a journey",
+      "openFullTimeline": "Open the full timeline",
+      "title": "Soundtrails",
+      "intro": "Follow a musical trail, listen at each stop and discover how the styles connect.",
+      "chooseTrail": "Choose a trail",
+      "stops": "{count, plural, one {# stop} other {# stops}}",
+      "allTrails": "All trails",
+      "progress": "Trail progress",
+      "stopProgress": "Stop {position} of {total}",
+      "listen": "Listen to {name}",
+      "pause": "Pause {name}",
+      "previewFailed": "This preview could not play.",
+      "keyArtists": "Key artists",
+      "anthem": "Anthem",
+      "anthemBy": "“{track}” · {artist}",
+      "previous": "Previous stop",
+      "next": "Next: {name}",
+      "finished": "You have reached {name}. On the timeline, every stop of this trail stays lit along with the rest of its family tree.",
+      "seeOnTimeline": "See it on the timeline",
+      "anotherTrail": "Choose another trail",
+      "trails": {
+        "soul-to-techno": {
+          "title": "From soul to techno",
+          "description": "Soul and funk grooves fill the disco floor, then meet the drum machines of Chicago and Detroit."
+        },
+        "breakbeat-science": {
+          "title": "Breakbeat science",
+          "description": "A funk drum break is looped in the Bronx, sped up at British raves and slowed down into dubstep."
+        },
+        "island-bass": {
+          "title": "Island bass",
+          "description": "From Caribbean calypso to Kingston studios, where the bass moves forward and the mixing desk becomes an instrument."
+        },
+        "blues-to-grunge": {
+          "title": "From the blues to grunge",
+          "description": "Blues guitar gets louder, faster and heavier, decade after decade."
+        },
+        "birth-of-cool": {
+          "title": "The birth of cool",
+          "description": "Blues roots, big-band swing, the bebop revolution and the calmer answer that followed."
+        },
+        "gamelan-to-synthwave": {
+          "title": "From gamelan to synthwave",
+          "description": "Javanese gamelan patterns inspire minimalist composers, then German kosmische rock and synthesizer pop."
+        }
+      }
     }
   },
   "search": {

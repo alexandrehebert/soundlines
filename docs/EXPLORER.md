@@ -6,6 +6,35 @@ Paths in prose and commands are relative to the repository root.
 
 ## Landing page and loading transitions
 
+Below the hero, the landing page introduces the Chronologies, optional Soundtrails, and
+Explore the catalogue sections in that order, each with a short description. The catalogue
+leads with a featured genre connection and a playable genre sample, followed by artist,
+instrument and history discoveries and recent additions. Visitors can cycle the featured
+picks or open their entries directly.
+
+Chronology preview cards are experimental and off by default. Set
+`NEXT_PUBLIC_FEATURE_CHRONOLOGY_PREVIEWS=true` before starting or building the app to
+enable them. Otherwise, the Chronologies section shows the original links to the genre,
+artist, instrument and history views.
+
+When enabled, the Chronologies section groups the genre, artist and instrument timelines
+in one card, with controls to switch the single visible preview and a link to open the full
+selected timeline. The history chronology has a separate card. Each preview is a read-only
+window onto the actual timeline or history component using the localized graph, not a
+separate sample list. Soundtrails has its own independent flag and, when enabled, appears
+after the chronology links or previews; Explore the catalogue follows last.
+
+An alternative landing page (v3) groups content by topic instead and is off by default.
+Set `NEXT_PUBLIC_FEATURE_LANDING_V3=true` to enable it. Its sections are Genres (genre
+timeline link, featured connection, listening booth and, when enabled, Soundtrails),
+Artists (artist timeline link, artist spotlight and the latest artists added), Instruments
+(instrument timeline link, instrument spotlight and the latest instruments added) and History
+(events timeline link, turning points and the latest events added). Each section has a
+title, a short description and its timeline link in the header; a spotlight is omitted
+when none of its picks exist in the graph, and a recent-additions list is omitted when no
+entry of that type carries an `addedOn` date. Chronology previews only
+apply to the default (v2) layout.
+
 The header and browser favicon share the same violet vinyl-disc icon.
 On first load, the landing page's grooved vinyl spins in the center before React
 starts. Once the landing page is ready, the cover fades away and the vinyl moves

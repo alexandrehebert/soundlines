@@ -33,6 +33,37 @@
     "openTimeline": "Ouvrir la chronologie",
     "discover": "Découvrir",
     "exploreCatalogue": "Explorer le catalogue",
+    "catalogueIntro": "Suivez une influence, écoutez un son ou découvrez les artistes et les instruments derrière la musique.",
+    "chronologies": {
+      "title": "Chronologies",
+      "intro": "Situez les genres, les artistes, les instruments et les événements dans le temps.",
+      "preview": "Aperçu"
+    },
+    "topics": {
+      "genres": {
+        "title": "Genres",
+        "intro": "Suivez la naissance des styles, leurs emprunts et leurs ramifications, puis écoutez à quoi ils ressemblent."
+      },
+      "artists": {
+        "title": "Artistes",
+        "intro": "Rencontrez les musiciens qui ont façonné chaque style et suivez leur parcours dans le temps."
+      },
+      "instruments": {
+        "title": "Instruments",
+        "intro": "Découvrez les instruments et les machines qui ont donné à chaque style son son."
+      },
+      "history": {
+        "title": "Histoire",
+        "intro": "Revivez les inventions, les rassemblements et les tournants qui ont changé la façon de créer et de partager la musique."
+      },
+      "timelines": {
+        "label": "Chronologies · {topic}",
+        "genre": "Chronologie des genres",
+        "artist": "Chronologie des artistes",
+        "instrument": "Chronologie des instruments",
+        "history": "Chronologie des événements"
+      }
+    },
     "destinations": {
       "genre": "Retracer les styles et leurs influences",
       "artist": "Rencontrer les artistes derrière la musique",
@@ -67,6 +98,54 @@
       "german": "Deutsch",
       "italian": "Italiano",
       "spanish": "Español"
+    },
+    "soundtrails": {
+      "startJourney": "Commencer un voyage",
+      "openFullTimeline": "Ouvrir toute la chronologie",
+      "title": "Soundtrails",
+      "intro": "Suivez un parcours musical, écoutez chaque étape et découvrez comment les genres se répondent.",
+      "chooseTrail": "Choisir un parcours",
+      "stops": "{count, plural, one {# étape} other {# étapes}}",
+      "allTrails": "Tous les parcours",
+      "progress": "Progression du parcours",
+      "stopProgress": "Étape {position} sur {total}",
+      "listen": "Écouter {name}",
+      "pause": "Mettre {name} en pause",
+      "previewFailed": "Cet extrait n’a pas pu être lu.",
+      "keyArtists": "Artistes clés",
+      "anthem": "Hymne",
+      "anthemBy": "« {track} » · {artist}",
+      "previous": "Étape précédente",
+      "next": "Suite : {name}",
+      "finished": "Vous êtes arrivé à {name}. Sur la chronologie, chaque étape du parcours reste en lumière, avec le reste de son arbre généalogique.",
+      "seeOnTimeline": "Voir sur la chronologie",
+      "anotherTrail": "Choisir un autre parcours",
+      "trails": {
+        "soul-to-techno": {
+          "title": "De la soul à la techno",
+          "description": "Les grooves soul et funk remplissent les pistes disco, puis rencontrent les boîtes à rythmes de Chicago et Détroit."
+        },
+        "breakbeat-science": {
+          "title": "La science du breakbeat",
+          "description": "Un break de batterie funk bouclé dans le Bronx, accéléré dans les raves britanniques puis ralenti en dubstep."
+        },
+        "island-bass": {
+          "title": "Basses insulaires",
+          "description": "Du calypso caribéen aux studios de Kingston, où la basse passe devant et la table de mixage devient un instrument."
+        },
+        "blues-to-grunge": {
+          "title": "Du blues au grunge",
+          "description": "La guitare blues devient plus forte, plus rapide et plus lourde, décennie après décennie."
+        },
+        "birth-of-cool": {
+          "title": "La naissance du cool",
+          "description": "Les racines blues, le swing des big bands, la révolution bebop puis la réponse plus calme qui a suivi."
+        },
+        "gamelan-to-synthwave": {
+          "title": "Du gamelan à la synthwave",
+          "description": "Les motifs du gamelan javanais inspirent les compositeurs minimalistes, puis le rock kosmische allemand et la pop synthétique."
+        }
+      }
     }
   },
   "search": {

@@ -1,10 +1,12 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
+import type { ReactNode } from 'react'
 import { ExplorerContext } from '../ExplorerContext.ts'
 import { buildIndex } from '../graph/graph.ts'
 import { MAX_YEAR, MIN_YEAR, TIMELINE_PADDING, timeTicks, yearToX, type TimelineOrder } from '../graph/layout.ts'
 import { createTimelineModel, type TimelineView } from '../graph/timeline.ts'
 import type { MusicGraph } from '../graph/types.ts'
 import { Timeline } from './Timeline.tsx'
+import { ChronologyPreview } from './ChronologyPreview.tsx'
 import { AXIS_H } from './timeline/geometry.ts'
 import { renderWithIntl } from '../i18n/test-utils.tsx'
 
@@ -43,6 +45,7 @@ const graph: MusicGraph = {
 function renderTimeline(
   view: TimelineView, order: TimelineOrder, viewRange: [number, number], selectedId: string | null = null,
   data: MusicGraph = graph,
+  children: ReactNode = <Timeline />,
 ) {
   const index = buildIndex(data)
   return renderWithIntl(
@@ -53,7 +56,7 @@ function renderTimeline(
       historyFilters: { category: 'all', landmarksOnly: false }, changeHistoryFilters: vi.fn(),
       viewRange, setViewRange: vi.fn(),
     }}>
-      <Timeline />
+      {children}
     </ExplorerContext.Provider>,
   )
 }
@@ -64,6 +67,24 @@ beforeEach(() => {
 })
 
 describe('timeline viewport rendering', () => {
+  it.each(['genre', 'artist', 'instrument'] as const)('isolates the %s miniature from explorer selection, range and ordering', (view) => {
+    const markup = renderTimeline('genre', 'oldest-first', [1950, 1960], 'genre:jazz', graph,
+      <><ChronologyPreview view={view} /><Timeline /></>,
+    )
+    const boundary = markup.indexOf('data-timeline-view="genre" data-timeline-order="oldest-first"')
+    const preview = markup.slice(0, boundary)
+    const explorer = markup.slice(boundary)
+    expect(preview).toContain(`data-timeline-view="${view}" data-timeline-order="family"`)
+    expect(preview).toContain('data-year-tick="2000"')
+    expect(preview).not.toContain('aria-pressed="true"')
+    for (const node of graph.nodes.filter((node) => node.type === view)) {
+      expect(preview).toContain(`data-timeline-bar="${node.id}"`)
+    }
+    expect(explorer).toContain('data-timeline-view="genre" data-timeline-order="oldest-first"')
+    expect(explorer).toContain('aria-pressed="true"')
+    expect(explorer).not.toContain('data-year-tick="2000"')
+  })
+
   it.each([
     ['genre', 'jazz', 'genres'],
     ['artist', 'jazz', 'artists'],

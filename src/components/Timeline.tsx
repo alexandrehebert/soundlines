@@ -14,7 +14,7 @@ import { UndatedEntries } from './UndatedEntries.tsx'
 
 const MIN_BCE_TICK_SPACING = 64
 
-export function Timeline() {
+export function Timeline({ initialFamily }: { initialFamily?: string }) {
   const { model, locale, selectedId, selectNode, viewRange, order } = useExplorer()
   const tViews = useTranslations('views')
   const tTimeline = useTranslations('timeline')
@@ -24,6 +24,7 @@ export function Timeline() {
   const { containerRef, width, verticalViewport, select, handlers } = useTimelineViewport()
   const [labelWidths, setLabelWidths] = useState<Map<string, { name: string; weight: string; width: number }>>(() => new Map())
   const lastRevealedId = useRef<string | null>(null)
+  const positionedInitialFamily = useRef<string | null>(null)
   const plotRef = useRef<SVGSVGElement>(null)
   const scale = useMemo<TimeScale>(() => ({
     start: viewRange[0], end: viewRange[1], width, padding: TIMELINE_PADDING,
@@ -103,6 +104,15 @@ export function Timeline() {
       }
     })
   }, [bars, labelWidths, verticalViewport])
+
+  useLayoutEffect(() => {
+    if (!initialFamily || !width || positionedInitialFamily.current === initialFamily) return
+    const element = containerRef.current
+    if (!element) return
+    const band = bands.find((entry) => entry.family === initialFamily)
+    element.scrollTop = band ? Math.max(0, band.top - AXIS_H) : 0
+    positionedInitialFamily.current = initialFamily
+  }, [bands, containerRef, initialFamily, width])
 
   useEffect(() => {
     if (!width || lastRevealedId.current === selectedId) return

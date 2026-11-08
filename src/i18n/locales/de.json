@@ -33,6 +33,37 @@
     "openTimeline": "Zeitleiste öffnen",
     "discover": "Entdecken",
     "exploreCatalogue": "Katalog erkunden",
+    "catalogueIntro": "Folge einer Verbindung, höre einen Klang oder entdecke die Menschen und Instrumente hinter der Musik.",
+    "chronologies": {
+      "title": "Zeitleisten",
+      "intro": "Ordne Genres, Künstler, Instrumente und wichtige Ereignisse zeitlich ein.",
+      "preview": "Einblick"
+    },
+    "topics": {
+      "genres": {
+        "title": "Genres",
+        "intro": "Verfolge, wie Stile entstehen, voneinander borgen und sich verzweigen – und hör, wie sie klingen."
+      },
+      "artists": {
+        "title": "Künstler",
+        "intro": "Lerne die Musiker kennen, die jeden Stil geprägt haben, und verfolge ihre Laufbahn durch die Zeit."
+      },
+      "instruments": {
+        "title": "Instrumente",
+        "intro": "Entdecke die Instrumente und Maschinen, die jedem Stil seinen Klang gaben."
+      },
+      "history": {
+        "title": "Geschichte",
+        "intro": "Entdecke die Erfindungen, Treffen und Wendepunkte, die verändert haben, wie Musik entsteht und geteilt wird."
+      },
+      "timelines": {
+        "label": "Zeitleisten · {topic}",
+        "genre": "Genre-Zeitleiste",
+        "artist": "Künstler-Zeitleiste",
+        "instrument": "Instrumenten-Zeitleiste",
+        "history": "Zeitleiste der Ereignisse"
+      }
+    },
     "destinations": {
       "genre": "Stile und Einflüsse verfolgen",
       "artist": "Die Menschen hinter der Musik kennenlernen",
@@ -67,6 +98,54 @@
       "german": "Deutsch",
       "italian": "Italiano",
       "spanish": "Español"
+    },
+    "soundtrails": {
+      "startJourney": "Reise starten",
+      "openFullTimeline": "Ganze Zeitleiste öffnen",
+      "title": "Soundtrails",
+      "intro": "Folge einer musikalischen Route, höre an jeder Station hinein und entdecke die Verbindungen zwischen den Stilen.",
+      "chooseTrail": "Route wählen",
+      "stops": "{count, plural, one {# Station} other {# Stationen}}",
+      "allTrails": "Alle Routen",
+      "progress": "Fortschritt der Route",
+      "stopProgress": "Station {position} von {total}",
+      "listen": "{name} anhören",
+      "pause": "{name} pausieren",
+      "previewFailed": "Diese Hörprobe konnte nicht abgespielt werden.",
+      "keyArtists": "Schlüsselfiguren",
+      "anthem": "Hymne",
+      "anthemBy": "„{track}“ · {artist}",
+      "previous": "Vorige Station",
+      "next": "Weiter: {name}",
+      "finished": "Du bist bei {name} angekommen. Auf der Zeitleiste bleibt jede Station dieser Route hervorgehoben, zusammen mit dem Rest ihres Stammbaums.",
+      "seeOnTimeline": "Auf der Zeitleiste ansehen",
+      "anotherTrail": "Andere Route wählen",
+      "trails": {
+        "soul-to-techno": {
+          "title": "Von Soul zu Techno",
+          "description": "Soul- und Funk-Grooves füllen die Disco-Tanzflächen und treffen dann auf die Drumcomputer von Chicago und Detroit."
+        },
+        "breakbeat-science": {
+          "title": "Breakbeat-Wissenschaft",
+          "description": "Ein Funk-Drumbreak wird in der Bronx geloopt, auf britischen Raves beschleunigt und zu Dubstep verlangsamt."
+        },
+        "island-bass": {
+          "title": "Inselbass",
+          "description": "Vom karibischen Calypso in die Studios von Kingston, wo der Bass nach vorne rückt und das Mischpult zum Instrument wird."
+        },
+        "blues-to-grunge": {
+          "title": "Vom Blues zum Grunge",
+          "description": "Die Bluesgitarre wird Jahrzehnt für Jahrzehnt lauter, schneller und schwerer."
+        },
+        "birth-of-cool": {
+          "title": "Die Geburt des Cool",
+          "description": "Blueswurzeln, Big-Band-Swing, die Bebop-Revolution und die ruhigere Antwort darauf."
+        },
+        "gamelan-to-synthwave": {
+          "title": "Vom Gamelan zum Synthwave",
+          "description": "Javanische Gamelan-Muster inspirieren Minimal-Music-Komponisten, dann den deutschen Krautrock und den Synthie-Pop."
+        }
+      }
     }
   },
   "search": {

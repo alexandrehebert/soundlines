@@ -1,19 +1,22 @@
 import { Disc3, LoaderCircle, Pause, Play } from 'lucide-react'
 import { useCallback, useRef, useState } from 'react'
 import { useTranslations } from 'next-intl'
+import { claimPlayback, releasePlayback } from './exclusivePlayback.ts'
 
 export function AudioPreviewPlayer({ url, label }: { url: string; label: string }) {
   const t = useTranslations('audio')
   const [status, setStatus] = useState<'idle' | 'loading' | 'playing' | 'paused' | 'failed'>('idle')
   const audio = useRef<HTMLAudioElement>(null)
+  const stopPlayback = useCallback(() => audio.current?.pause(), [])
   const attachAudio = useCallback((element: HTMLAudioElement | null) => {
     if (!element) return
     audio.current = element
     return () => {
       audio.current = null
+      releasePlayback(stopPlayback)
       element.pause()
     }
-  }, [])
+  }, [stopPlayback])
 
   const togglePlayback = async () => {
     const element = audio.current
@@ -45,6 +48,7 @@ export function AudioPreviewPlayer({ url, label }: { url: string; label: string 
         ref={attachAudio}
         src={url}
         preload="none"
+        onPlay={() => claimPlayback(stopPlayback)}
         onPlaying={(event) => { if (!event.currentTarget.paused) setStatus('playing') }}
         onWaiting={(event) => { if (!event.currentTarget.paused) setStatus('loading') }}
         onPause={() => setStatus('paused')}

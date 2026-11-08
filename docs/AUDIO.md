@@ -30,6 +30,15 @@ moves over the record while playing or scratching
 and returns to rest when both stop. It is hidden on mobile and touch-first devices,
 respects reduced-motion preferences, and does not interfere with record gestures.
 
+Soundtrails, curated listening journeys through a genre lineage on the landing page, are behind the
+`NEXT_PUBLIC_FEATURE_SOUNDTRAILS=true` build flag and off by default. Each stop plays its genre
+preview from `public/genre-previews`, and the last stop opens the genre timeline focused on the
+final genre so its lineage stays highlighted. The trails are defined in `src/graph/soundtrails.ts`;
+`src/graph/soundtrails.test.ts` checks them against the graph.
+
+Only one sound plays at a time: the turntable, genre previews and Soundtrails register with
+`src/components/exclusivePlayback.ts`, so starting one pauses whichever was playing.
+
 ### Theme-linked arrangements
 
 The landing turntable uses hip-hop on dark theme (side A) and

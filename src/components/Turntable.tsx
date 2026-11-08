@@ -5,6 +5,7 @@ import type { ColorTheme } from '../useColorTheme.ts'
 import { angleDelta, createScratchDeck, NORMAL_SPEED_DEG_PER_SEC, type ScratchDeck } from './vinylScratch.ts'
 import { scheduleTurntableHints, turntableHintFrame, turntableHintPosition, type TurntableHintScenario, type TurntableHintTargets } from './turntableHint.ts'
 import { VinylRecord } from './VinylRecord.tsx'
+import { claimPlayback, releasePlayback } from './exclusivePlayback.ts'
 import { TurntablePlayButton } from './TurntablePlayButton.tsx'
 import { TurntableSideKnob } from './TurntableSideKnob.tsx'
 import { TurntableTonearm } from './TurntableTonearm.tsx'
@@ -164,14 +165,21 @@ export function Turntable({ theme, toggleTheme, children }: { theme: ColorTheme;
     setHintDismissed(true)
   }
 
+  const stopPlayback = useCallback(() => {
+    deck.current?.pause()
+    pendingPlay.current = false
+    if (mounted.current) setPlaying(false)
+  }, [])
+
   useEffect(() => {
     mounted.current = true
     return () => {
       mounted.current = false
+      releasePlayback(stopPlayback)
       deck.current?.dispose()
       deck.current = null
     }
-  }, [])
+  }, [stopPlayback])
 
   useAnimationFrame((_time, delta) => {
     if (playing && !scratching && !reduceMotion) {
@@ -205,8 +213,10 @@ export function Turntable({ theme, toggleTheme, children }: { theme: ColorTheme;
     if (playing) {
       deck.current?.pause()
       setPlaying(false)
+      releasePlayback(stopPlayback)
       return
     }
+    claimPlayback(stopPlayback)
     pendingPlay.current = true
     setLoading(true)
     try {
@@ -234,6 +244,7 @@ export function Turntable({ theme, toggleTheme, children }: { theme: ColorTheme;
       reportAudioError(new Error('Web Audio is not supported by this browser.'))
       return
     }
+    claimPlayback(stopPlayback)
     deck.current?.activate()
     deck.current?.hold()
     gesture.current = { pointerId: event.pointerId, angle: start, time: event.timeStamp, velocity: 0 }
