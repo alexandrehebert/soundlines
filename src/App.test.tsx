@@ -12,6 +12,7 @@ import type { MusicGraph } from './graph/types.ts'
 import { DEFAULT_LOCALE, type Locale } from './i18n/routing.ts'
 import { renderWithIntl } from './i18n/test-utils.tsx'
 import { PROJECT_SITE_URL, REPOSITORY_URL } from './projectLinks.ts'
+import { withFeatureFlag } from './featureFlags.ts'
 
 vi.mock('./components/SearchBar.tsx', () => ({ SearchBar: () => null }))
 
@@ -336,6 +337,39 @@ describe('landing view transition', () => {
     const markup = render(graph, <Home />, null, 'genre', 'fr')
     expect(markup).toContain('class="discovery-record-perspective"')
     expect(markup).not.toContain('discovery-scratch-hint')
+  })
+
+  it('keeps the turntable arm behind its feature flag by default', () => {
+    const markup = render(graph, <Home />)
+    const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
+
+    expect(markup).not.toContain('discovery-tonearm')
+    expect(markup).not.toContain('data-tonearm')
+    expect(homeCss).not.toMatch(/(^|\n)\s*\.discovery-record > \.discovery-record-perspective/)
+  })
+
+  it('renders a decorative, initially parked turntable arm', () => {
+    const restore = withFeatureFlag('turntableTonearm', true)
+    let markup: string
+    try {
+      markup = render(graph, <Home />)
+    } finally {
+      restore()
+    }
+    const tonearm = markup.match(/<div class="discovery-tonearm"[^>]*>/)?.[0]
+    const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
+    const reducedMotionCss = homeCss.match(/@media \(prefers-reduced-motion: reduce\) \{([\s\S]*?)\n\}/)?.[1]
+    const loadingCss = readFileSync(new URL('./pageLoading.css', import.meta.url), 'utf8')
+
+    expect(tonearm).toContain('aria-hidden="true"')
+    expect(tonearm).not.toContain('data-active')
+    expect(markup).toContain('class="discovery-tonearm-swing"')
+    expect(homeCss).toMatch(/\.discovery-tonearm \{[^}]*pointer-events: none;/)
+    expect(homeCss).toContain('.discovery-tonearm[data-active] .discovery-tonearm-swing { transform: rotate(22deg); }')
+    expect(homeCss).toContain('@media (max-width: 42rem), (hover: none) and (pointer: coarse)')
+    expect(homeCss).toContain('.discovery-tonearm { display: none; }')
+    expect(reducedMotionCss).toContain('.discovery-tonearm-swing { transition: none; }')
+    expect(loadingCss).toContain('#page-loading[data-opening][data-loading="true"] ~ #root .discovery-tonearm')
   })
 
   it.each([

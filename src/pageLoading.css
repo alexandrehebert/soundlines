@@ -83,7 +83,8 @@
   transition: none;
 }
 
-#page-loading[data-opening][data-loading="true"] ~ #root .discovery-vinyl {
+#page-loading[data-opening][data-loading="true"] ~ #root .discovery-vinyl,
+#page-loading[data-opening][data-loading="true"] ~ #root .discovery-tonearm {
   visibility: hidden;
 }
 

@@ -7,6 +7,8 @@ import { scheduleTurntableHints, turntableHintFrame, turntableHintPosition, type
 import { VinylRecord } from './VinylRecord.tsx'
 import { TurntablePlayButton } from './TurntablePlayButton.tsx'
 import { TurntableSideKnob } from './TurntableSideKnob.tsx'
+import { TurntableTonearm } from './TurntableTonearm.tsx'
+import { featureFlags } from '../featureFlags.ts'
 import './Home.css'
 
 function pointerAngle(element: HTMLElement, event: PointerEvent<HTMLElement>) {
@@ -128,6 +130,7 @@ export function Turntable({ theme, toggleTheme, children }: { theme: ColorTheme;
   const t = useTranslations()
   const tHome = useTranslations('homeCopy')
   const reduceMotion = useReducedMotion()
+  const showTonearm = featureFlags.turntableTonearm
   const { scrollY } = useScroll()
   const angle = useTransform(scrollY, [0, 480], [-16, 344])
   const spin = useSpring(angle, { stiffness: 110, damping: 24 })
@@ -278,7 +281,7 @@ export function Turntable({ theme, toggleTheme, children }: { theme: ColorTheme;
         {children}
       </div>
       <div className="discovery-turntable-deck">
-        <div className="discovery-record" aria-hidden="true">
+        <div className="discovery-record" aria-hidden="true" data-tonearm={showTonearm || undefined}>
           <div
             ref={record}
             className="discovery-record-perspective"
@@ -289,6 +292,7 @@ export function Turntable({ theme, toggleTheme, children }: { theme: ColorTheme;
           >
             <VinylRecord rotate={rotate} />
           </div>
+          {showTonearm && <TurntableTonearm active={playing || scratching} />}
         </div>
         <div className="discovery-turntable-controls">
           <TurntablePlayButton

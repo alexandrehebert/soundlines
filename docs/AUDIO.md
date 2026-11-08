@@ -24,6 +24,12 @@ genres follow the same pipeline through the `loop-briefer`, `loop-producer`, `lo
 `loop-reviewer` agents; the bundled scripts and the verified ACE-Step configuration are in
 [.github/skills/loop-produce](../.github/skills/loop-produce).
 
+The landing-page tonearm is behind the `NEXT_PUBLIC_FEATURE_TURNTABLE_TONEARM=true` build flag
+and is off by default, which leaves the turntable layout unchanged. When enabled, the desktop arm
+moves over the record while playing or scratching
+and returns to rest when both stop. It is hidden on mobile and touch-first devices,
+respects reduced-motion preferences, and does not interfere with record gestures.
+
 ### Theme-linked arrangements
 
 The landing turntable uses hip-hop on dark theme (side A) and

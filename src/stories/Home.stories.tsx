@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, fireEvent, waitFor, within } from 'storybook/test'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
 import { Home } from '../components/Home.tsx'
+import { withFeatureFlag } from '../featureFlags.ts'
 
 const meta = {
   title: 'Screens/Home',
@@ -13,17 +14,71 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Default: Story = {}
+export const Default: Story = {
+  play: async ({ canvasElement }) => {
+    const record = canvasElement.querySelector<HTMLElement>('.discovery-record-perspective')
+    if (!record) throw new Error('Turntable record is missing')
+    expect(canvasElement.querySelector('.discovery-tonearm')).toBeNull()
+    expect(record.parentElement).not.toHaveAttribute('data-tonearm')
+    expect(getComputedStyle(record).transform).toBe('none')
+  },
+}
 
 const checkTurntableArtwork = async ({ canvasElement }: { canvasElement: HTMLElement }) => {
   await canvasElement.ownerDocument.fonts.ready
   const record = canvasElement.querySelector<HTMLElement>('.discovery-record-perspective')
   const caption = canvasElement.querySelector<SVGTextContentElement>('.discovery-record-caption text')
   const toggle = canvasElement.querySelector<HTMLButtonElement>('.discovery-turntable-side-toggle')
+  const tonearm = canvasElement.querySelector<HTMLElement>('.discovery-tonearm')
+  const pivot = tonearm?.querySelector<SVGCircleElement>('.discovery-tonearm-pivot')
+  const tube = tonearm?.querySelector<SVGPathElement>('.discovery-tonearm-tube')
+  const stylus = tonearm?.querySelector<SVGPathElement>('.discovery-tonearm-stylus')
+  const hero = canvasElement.querySelector<HTMLElement>('.discovery-hero')
   const side = record?.dataset.side
   const label = record?.querySelector<HTMLElement>(`.discovery-record-face-${side?.toLowerCase()} .discovery-label`)
   const icon = label?.querySelector<SVGElement>('svg')
-  if (!record || !caption || !toggle || !label || !icon) throw new Error('Turntable artwork is incomplete')
+  if (!record || !caption || !toggle || !label || !icon || !tonearm || !pivot || !tube || !stylus || !hero) throw new Error('Turntable artwork is incomplete')
+
+  expect(tonearm).toHaveAttribute('aria-hidden', 'true')
+  expect(tonearm).not.toHaveAttribute('data-active')
+  expect(getComputedStyle(tonearm).pointerEvents).toBe('none')
+  expect(tonearm.parentElement).toBe(record.parentElement)
+  const hideTonearm = canvasElement.ownerDocument.defaultView!.matchMedia('(max-width: 42rem), (hover: none) and (pointer: coarse)').matches
+  if (hideTonearm) {
+    expect(tonearm).not.toBeVisible()
+  } else {
+    expect(tonearm).toBeVisible()
+    const recordBounds = record.getBoundingClientRect()
+    const pivotBounds = pivot.getBoundingClientRect()
+    const heroBounds = hero.getBoundingClientRect()
+    const pivotX = (pivotBounds.left + pivotBounds.width / 2 - recordBounds.left) / recordBounds.width
+    const pivotY = (pivotBounds.top + pivotBounds.height / 2 - recordBounds.top) / recordBounds.height
+    const matrix = stylus.getScreenCTM()
+    if (!matrix) throw new Error('Turntable stylus is not rendered')
+    const tip = stylus.getPointAtLength(stylus.getTotalLength()).matrixTransform(matrix)
+    const tipX = (tip.x - recordBounds.left) / recordBounds.width
+    const tipY = (tip.y - recordBounds.top) / recordBounds.height
+    const armLength = Math.hypot(tipX - pivotX, tipY - pivotY)
+    expect(pivotBounds.left).toBeGreaterThanOrEqual(heroBounds.left)
+    expect(pivotBounds.right).toBeLessThanOrEqual(heroBounds.right)
+    expect(pivotBounds.top).toBeGreaterThanOrEqual(heroBounds.top)
+    expect(pivotBounds.bottom).toBeLessThanOrEqual(heroBounds.bottom)
+    expect(pivotX).toBeGreaterThan(1.05)
+    expect(pivotX).toBeLessThan(1.17)
+    expect(pivotY).toBeGreaterThan(.18)
+    expect(pivotY).toBeLessThan(.3)
+    expect(tipX).toBeGreaterThan(.9)
+    expect(tipX).toBeLessThan(1.05)
+    expect(tipY).toBeGreaterThan(.88)
+    expect(tipY).toBeLessThan(1.02)
+    expect(armLength).toBeGreaterThan(.65)
+    expect(armLength).toBeLessThan(.8)
+    const tubeLength = tube.getTotalLength()
+    const startX = tube.getPointAtLength(0).x
+    expect(tube.getPointAtLength(tubeLength * .25).x).toBeLessThan(startX - 3)
+    expect(tube.getPointAtLength(tubeLength * .6).x).toBeGreaterThan(startX + 3)
+    expect(tube.getPointAtLength(tubeLength).x).toBeLessThan(startX - 10)
+  }
 
   expect(toggle).toHaveTextContent('Side')
   const labels = record.querySelectorAll('.discovery-label')
@@ -49,11 +104,46 @@ const checkTurntableArtwork = async ({ canvasElement }: { canvasElement: HTMLEle
   }
 }
 
-export const TurntableArtwork: Story = { play: checkTurntableArtwork }
+const withTonearm = () => withFeatureFlag('turntableTonearm', true)
+
+export const TurntableArtwork: Story = { beforeEach: withTonearm, play: checkTurntableArtwork }
 
 export const MobileTurntableArtwork: Story = {
+  beforeEach: withTonearm,
   globals: { viewport: { value: 'mobile2', isRotated: false } },
   play: checkTurntableArtwork,
+}
+
+const checkTonearmScratch = async ({ canvasElement }: { canvasElement: HTMLElement }) => {
+  const record = canvasElement.querySelector<HTMLElement>('.discovery-record-perspective')
+  const touchTarget = canvasElement.querySelector<HTMLElement>('.discovery-record-touch-target')
+  const tonearm = canvasElement.querySelector<HTMLElement>('.discovery-tonearm')
+  if (!record || !touchTarget || !tonearm) throw new Error('Turntable scratch target or arm is missing')
+  const target = getComputedStyle(touchTarget).display === 'none' ? record : touchTarget
+  const hideTonearm = canvasElement.ownerDocument.defaultView!.matchMedia('(max-width: 42rem), (hover: none) and (pointer: coarse)').matches
+  const bounds = target.getBoundingClientRect()
+  const pointer = { pointerId: 1, pointerType: 'touch', isPrimary: true, button: 0, clientX: bounds.left + bounds.width / 2, clientY: bounds.top + bounds.height / 2 }
+  const setPointerCapture = target.setPointerCapture
+  target.setPointerCapture = () => {}
+  try {
+    expect(tonearm).not.toHaveAttribute('data-active')
+    expect(getComputedStyle(tonearm).display === 'none').toBe(hideTonearm)
+    await fireEvent.pointerDown(target, pointer)
+    expect(tonearm).toHaveAttribute('data-active', 'true')
+    expect(getComputedStyle(tonearm).display === 'none').toBe(hideTonearm)
+    await fireEvent.pointerUp(target, pointer)
+    expect(tonearm).not.toHaveAttribute('data-active')
+  } finally {
+    target.setPointerCapture = setPointerCapture
+    await fireEvent.pointerCancel(target, pointer)
+  }
+}
+
+export const TonearmScratch: Story = { beforeEach: withTonearm, play: checkTonearmScratch }
+export const MobileTonearmScratch: Story = {
+  beforeEach: withTonearm,
+  globals: { viewport: { value: 'mobile2', isRotated: false } },
+  play: checkTonearmScratch,
 }
 
 export const TurntableHint: Story = {
