@@ -10,6 +10,7 @@
 </p>
 
 <p align="center">
+  <a href="https://soundlines.hebert.app/">Open Soundlines</a> ·
   <a href="#explore-music-history">Features</a> ·
   <a href="#getting-started">Get started</a> ·
   <a href="#documentation">Docs</a> ·
@@ -32,7 +33,7 @@ Tested with Vitest, linted with oxlint, and deployable to Vercel.
 - Search the catalogue, follow relationships, and inspect sources in detail panels.
 - Share a view or selection through its URL.
 - Listen to genre previews and play or scratch the landing-page vinyl loop.
-- Switch between English and French, and dark and light themes.
+- Switch between English, French, German, Italian and Spanish, and dark and light themes.
 
 The catalogue is curated, not exhaustive. Dates, relationships, and prominence
 phases include sourced editorial judgments; they are not popularity rankings.
@@ -174,8 +175,11 @@ Previews use a separate renderer, not the seamless-loop pipeline. See the
 The [project companion](https://alexandrehebert.github.io/soundlines/) explains,
 with visual workflows and real examples, how Soundlines' facts, instrument
 drawings and audio were sourced, produced and checked, and how the app is built, in
-[English](https://alexandrehebert.github.io/soundlines/en/) and
-[French](https://alexandrehebert.github.io/soundlines/fr/).
+[English](https://alexandrehebert.github.io/soundlines/en/),
+[French](https://alexandrehebert.github.io/soundlines/fr/),
+[German](https://alexandrehebert.github.io/soundlines/de/),
+[Italian](https://alexandrehebert.github.io/soundlines/it/), and
+[Spanish](https://alexandrehebert.github.io/soundlines/es/).
 It is a curated introduction; the guides below remain the detailed technical reference.
 See [GitHub Pages setup](./docs/DEVELOPMENT.md#project-companion-github-pages)
 for publishing and editing the companion.

@@ -26,6 +26,9 @@ const DESTINATIONS = [
 const LANGUAGES = [
   { locale: 'en', label: 'english' },
   { locale: 'fr', label: 'french' },
+  { locale: 'de', label: 'german' },
+  { locale: 'it', label: 'italian' },
+  { locale: 'es', label: 'spanish' },
 ] as const
 
 const FEATURED_CONNECTIONS = [

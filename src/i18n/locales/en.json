@@ -63,7 +63,10 @@
       "english": "English",
       "french": "Français",
       "pages": "Pages",
-      "home": "Home"
+      "home": "Home",
+      "german": "Deutsch",
+      "italian": "Italiano",
+      "spanish": "Español"
     }
   },
   "search": {

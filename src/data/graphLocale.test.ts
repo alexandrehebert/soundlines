@@ -36,12 +36,12 @@ describe('localized graph overlays', () => {
     expect([...overlayLocales].sort()).toEqual(expected)
   })
 
-  it.each(overlayLocales)('keeps the graph structure and artist/track names unchanged in the %s overlay', (locale) => {
+  it.each(overlayLocales)('keeps the graph structure and artist/track/label names unchanged in the %s overlay', (locale) => {
     const english = englishGraph as MusicGraph
     const localized = graphForLocale(locale)
     expect(withoutTranslatedText(localized)).toStrictEqual(withoutTranslatedText(english))
     for (const node of english.nodes) {
-      if (node.type === 'artist' || node.type === 'track') {
+      if (node.type === 'artist' || node.type === 'track' || node.type === 'label') {
         expect(GRAPH_OVERLAYS[locale].nodes[node.id]?.name, node.id).toBeUndefined()
       }
     }
@@ -149,6 +149,233 @@ describe('localized graph overlays', () => {
     }
 
     expect(missing).toEqual([])
+  })
+
+  it.each(overlayLocales)('contains translated prose without markers, entities or English chronology in %s', (locale) => {
+    const translations = GRAPH_OVERLAYS[locale]
+    const invalid: string[] = []
+    const inspect = (value: unknown, path: string): void => {
+      if (typeof value === 'string') {
+        const prose = value.replace(/“[^”]*”|«[^»]*»|"[^"]*"/g, '')
+        if (
+          /ZXQ\d+ZX/i.test(value)
+          || /&(?:amp|lt|gt|quot|apos|#(?:\d+|x[\da-f]+));/i.test(value)
+          || /\b(?:(?:1[0-9]|20)\d{2}|[1-9]0)s\b/i.test(prose)
+          || /\b\d{1,2}(?:st|nd|rd|th)[ -]+century\b/i.test(prose)
+          || /\bClassical era\b/i.test(prose)
+        ) invalid.push(path)
+      } else if (value && typeof value === 'object') {
+        for (const [key, child] of Object.entries(value)) {
+          const childPath = `${path}.${key}`
+          if (/ZXQ\d+ZX/i.test(key)) invalid.push(childPath)
+          inspect(child, childPath)
+        }
+      }
+    }
+    inspect(translations, locale)
+    expect(invalid).toEqual([])
+
+    const unchanged: string[] = []
+    const normalize = (text: string) => text
+      .replace(/&amp;/gi, '&')
+      .replace(/[‘’]/g, "'")
+      .replace(/[“”]/g, '"')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .toLowerCase()
+    const compare = (source: string | undefined, target: string | undefined, field: string) => {
+      if (source && source.length > 40 && target && normalize(source) === normalize(target)) unchanged.push(field)
+    }
+
+    for (const node of (englishGraph as MusicGraph).nodes) {
+      const translation = translations.nodes[node.id]
+      compare(node.description, translation?.description, `${node.id}.description`)
+      compare(node.phaseNote, translation?.phaseNote, `${node.id}.phaseNote`)
+      compare(node.period?.estimateNote, translation?.estimateNote, `${node.id}.estimateNote`)
+      for (const phase of node.phases ?? []) {
+        compare(phase.note, translation?.phaseNotes?.[String(phase.start)], `${node.id}.phaseNotes.${phase.start}`)
+      }
+    }
+    for (const edge of (englishGraph as MusicGraph).edges) {
+      const translation = translations.edges[edge.id]
+      compare(edge.note, translation?.note, `${edge.id}.note`)
+      compare(edge.period?.estimateNote, translation?.estimateNote, `${edge.id}.estimateNote`)
+    }
+    expect(unchanged).toEqual([])
+  })
+
+  it('preserves the meaning of underground and low-tempo music', () => {
+    const italianHouse = GRAPH_OVERLAYS.it.nodes['genre:deep-house']?.description
+    const spanishHouse = GRAPH_OVERLAYS.es.nodes['genre:deep-house']?.description
+    const spanishDowntempo = GRAPH_OVERLAYS.es.nodes['genre:downtempo']?.description
+
+    expect(italianHouse).toMatch(/underground|sotterrane|indipendente/i)
+    expect(italianHouse).not.toMatch(/dalla metropolitana di Chicago/i)
+    expect(spanishHouse).toMatch(/underground|subterr[aá]ne|independiente/i)
+    expect(spanishHouse).not.toMatch(/del metro de Chicago/i)
+    expect(spanishDowntempo).toMatch(/tempo|ritmo/i)
+    expect(spanishDowntempo).not.toMatch(/temperatura/i)
+  })
+
+  it('keeps genre terminology and album titles intact', () => {
+    const ambient = GRAPH_OVERLAYS.de.nodes['genre:ambient']?.description
+    const germanReggae = GRAPH_OVERLAYS.de.nodes['genre:reggae']?.description
+    const italianReggae = GRAPH_OVERLAYS.it.nodes['genre:reggae']?.description
+    const italianBlues = GRAPH_OVERLAYS.it.nodes['genre:blues']?.description
+
+    expect(ambient).toContain('Ambient 1: Music for Airports')
+    expect(ambient).not.toMatch(/\bRegenschirm\b/i)
+    expect(germanReggae).toMatch(/roots reggae/i)
+    expect(italianReggae).toMatch(/roots reggae/i)
+    expect(italianBlues).not.toMatch(/a forma di|note azzurre/i)
+  })
+
+  it('preserves Spanish historical distinctions and recording titles', () => {
+    const rumba = GRAPH_OVERLAYS.es.nodes['genre:congolese-rumba']?.phaseNote
+    const techno = GRAPH_OVERLAYS.es.nodes['genre:detroit-techno']?.phaseNote
+    const oneLove = GRAPH_OVERLAYS.es.nodes['track:one-love-bob-marley']?.description
+
+    expect(rumba).toMatch(/orquest/i)
+    expect(techno).not.toMatch(/afeitad/i)
+    expect(oneLove).toMatch(/One Love\s*\/\s*People Get Ready/i)
+    expect(oneLove).toMatch(/1965/)
+    expect(oneLove).toMatch(/1977/)
+  })
+
+  it('avoids mixed-language prose and literal mistranslations in graph entries', () => {
+    const spanishTuva = GRAPH_OVERLAYS.es.nodes['place:tuva']?.description
+    const spanishFunk = GRAPH_OVERLAYS.es.edges['influence:funk-detroit-techno']?.note
+    const spanishMahavishnu = GRAPH_OVERLAYS.es.nodes['artist:mahavishnu-orchestra']?.phaseNotes?.['1984']
+    const italianRecording = GRAPH_OVERLAYS.it.nodes['track:54-46-that-s-my-number-toots-and-the-maytals']?.description
+    const germanRecording = GRAPH_OVERLAYS.de.nodes['track:west-end-girls-pet-shop-boys']?.description
+
+    expect(spanishTuva).toMatch(/rep[uú]blica/i)
+    expect(spanishTuva).not.toMatch(/garganta-singing/i)
+    expect(spanishFunk).not.toMatch(/\bdibuj(?:o|ó|aron)(?!\p{L})/iu)
+    expect(spanishMahavishnu).toMatch(/1984/)
+    expect(spanishMahavishnu).not.toMatch(/Re-formed lineup/i)
+    expect(italianRecording).toMatch(/54-46 Was My Number/i)
+    expect(italianRecording).not.toMatch(/\b(?:Giamaican|1968 song)\b/i)
+    expect(germanRecording).toMatch(/Stephen Hague/i)
+    expect(germanRecording).not.toMatch(/\bre-recorded\b/i)
+  })
+
+  it('preserves artist names in localized prose', () => {
+    expect(GRAPH_OVERLAYS.it.nodes['artist:fred-again']?.description).toMatch(/Fred again\.\./i)
+    expect(GRAPH_OVERLAYS.it.nodes['scene:sheffield-electronic-music-scene']?.description)
+      .toMatch(/Human League/i)
+    expect(GRAPH_OVERLAYS.es.nodes['artist:the-supremes']?.description).toMatch(/Supremes/i)
+    expect(GRAPH_OVERLAYS.es.nodes['artist:maqbool-sabri']?.description).toMatch(/Sabri Brothers/i)
+    expect(GRAPH_OVERLAYS.es.edges['anthem:your-love-chicago-house']?.note).not.toMatch(/original del Principio/i)
+  })
+
+  it('preserves unsupported-phase caveats in instrument notes', () => {
+    for (const slug of ['modular-synthesizer', 'pedal-steel-guitar', 'sampler', 'sarod', 'timbales', 'tuba']) {
+      const id = `instrument:${slug}`
+      expect(GRAPH_OVERLAYS.it.nodes[id]?.phaseNote, id)
+        .toMatch(/\b(?:non|senza|privi|prive|privo|priva|mancanza|infondat[aeio])\b/i)
+    }
+    for (const slug of ['maracas', 'modular-synthesizer', 'sampler', 'timbales', 'trumpet']) {
+      const id = `instrument:${slug}`
+      expect(GRAPH_OVERLAYS.es.nodes[id]?.phaseNote, id)
+        .toMatch(/\b(?:no|sin|falt[aeo]|carece(?:n)?|carentes?|carencia|infundad[oa]s?|injustificad[oa]s?)\b/i)
+    }
+  })
+
+  it('uses German performance and recording terminology for tracks', () => {
+    const invalid: string[] = []
+    for (const node of (englishGraph as MusicGraph).nodes) {
+      if (node.type !== 'track' || !node.description) continue
+      const description = GRAPH_OVERLAYS.de.nodes[node.id]?.description
+      if (!description) continue
+      if (/\bperformed by\b/i.test(node.description) && /durchgeführt von/i.test(description)) invalid.push(node.id)
+      if (/representative recording/i.test(node.description) && /repräsentative Aufzeichnung/i.test(description)) invalid.push(node.id)
+    }
+    expect(invalid).toEqual([])
+  })
+
+  it.each(['de', 'it', 'es'] as const)('preserves the tech-house genre name in %s relationships', (locale) => {
+    expect(GRAPH_OVERLAYS[locale].edges['lineage:tech-house-techno']?.note).toMatch(/tech[- ]house/i)
+  })
+
+  it('does not turn editorial confidence into an imperative in Spanish', () => {
+    expect(GRAPH_OVERLAYS.es.edges['key:jeff-mills-techno']?.note).not.toMatch(/mant[eé]nte alto/i)
+  })
+
+  it.each(['de', 'it', 'es'] as const)('preserves song titles inside %s graph notes', (locale) => {
+    expect(GRAPH_OVERLAYS[locale].nodes['genre:doo-wop']?.phaseNotes?.['1948'])
+      .toMatch(/It[’']s Too Soon to Know/i)
+    expect(GRAPH_OVERLAYS[locale].edges['anthem:zungguzungguguzeng-dancehall-yellowman']?.note)
+      .toContain('Zungguzungguguzungguzeng')
+  })
+
+  it.each(['de', 'it', 'es'] as const)('preserves source names and identifiers marked with backticks in %s', (locale) => {
+    const translations = GRAPH_OVERLAYS[locale]
+    const missing: string[] = []
+    const check = (source: string | undefined, target: string | undefined, field: string) => {
+      if (!source || !target) return
+      for (const [, token] of source.matchAll(/`([^`]+)`/g)) {
+        if (!target.includes(token)) missing.push(`${field}: ${token}`)
+      }
+    }
+
+    for (const node of (englishGraph as MusicGraph).nodes) {
+      const translation = translations.nodes[node.id]
+      check(node.description, translation?.description, `${node.id}.description`)
+      check(node.phaseNote, translation?.phaseNote, `${node.id}.phaseNote`)
+      check(node.period?.estimateNote, translation?.estimateNote, `${node.id}.estimateNote`)
+      for (const phase of node.phases ?? []) {
+        check(phase.note, translation?.phaseNotes?.[String(phase.start)], `${node.id}.phaseNotes.${phase.start}`)
+      }
+    }
+    for (const edge of (englishGraph as MusicGraph).edges) {
+      const translation = translations.edges[edge.id]
+      check(edge.note, translation?.note, `${edge.id}.note`)
+      check(edge.period?.estimateNote, translation?.estimateNote, `${edge.id}.estimateNote`)
+    }
+    expect(missing).toEqual([])
+  })
+
+  it('does not translate music scholarship as a grant in German', () => {
+    expect(GRAPH_OVERLAYS.de.edges['key:lauryn-hill-conscious-hip-hop']?.note).not.toMatch(/\bStipendium\b/i)
+  })
+
+  it.each([
+    ['de', /\bSingles\b/i],
+    ['it', /\bi singoli\b/i],
+    ['es', /\bsencillos\b/i],
+  ] as const)('does not mistake “singles out” for multiple singles in %s', (locale, mistranslation) => {
+    expect(GRAPH_OVERLAYS[locale].edges['anthem:archangel-dubstep-burial']?.note).not.toMatch(mistranslation)
+  })
+
+  it('does not turn a label-authored retrospective into an authorized one in Italian', () => {
+    expect(GRAPH_OVERLAYS.it.edges['featured:tr-808-electro']?.note).not.toMatch(/\bautorizzat/i)
+  })
+
+  it('describes musical influence rather than drawing in Italian lineage notes', () => {
+    for (const id of ['lineage:blues-hard-rock', 'lineage:grime-uk-garage']) {
+      expect(GRAPH_OVERLAYS.it.edges[id]?.note, id).not.toMatch(/\bdisegn/i)
+    }
+  })
+
+  it.each(['de', 'it', 'es'] as const)('localizes descriptive genre labels in %s', (locale) => {
+    for (const id of [
+      'genre:baroque',
+      'genre:classical-period',
+      'genre:khoomei',
+      'genre:latin',
+      'genre:medieval',
+      'genre:modern-classical',
+      'genre:peking-opera',
+      'genre:renaissance',
+      'genre:romantic',
+    ]) {
+      const englishName = (englishGraph as MusicGraph).nodes.find((node) => node.id === id)?.name
+      const localizedName = GRAPH_OVERLAYS[locale].nodes[id]?.name
+      expect(englishName, id).toBeTruthy()
+      expect(localizedName?.trim(), id).toBeTruthy()
+      expect(localizedName?.trim().toLowerCase(), id).not.toBe(englishName?.toLowerCase())
+    }
   })
 
   it('uses French graph labels while preserving artist and recording names', () => {

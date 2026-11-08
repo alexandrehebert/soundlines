@@ -1,9 +1,13 @@
 import { en } from './copy/en.ts'
 import { fr } from './copy/fr.ts'
+import { de } from './copy/de.ts'
+import { it } from './copy/it.ts'
+import { es } from './copy/es.ts'
+import { LOCALES } from '../../src/i18n/routing.ts'
 
 export { PROJECT_SITE_URL as siteUrl, REPOSITORY_URL as repository } from '../../src/projectLinks.ts'
 
-export const locales = ['en', 'fr'] as const
+export const locales = LOCALES
 export type Locale = (typeof locales)[number]
 export const slugs = ['index', 'graph', 'artwork', 'audio', 'build'] as const
 export type Slug = (typeof slugs)[number]
@@ -70,6 +74,7 @@ export type Copy = {
   skip: string
   navigation: string
   language: string
+  openApp: string
   eyebrow: string
   source: string
   next: string
@@ -108,4 +113,4 @@ const fillAll = <T,>(value: T, locale: Locale): T => {
 }
 
 /** Site copy with every figure placeholder already resolved. */
-export const copy: Record<Locale, Copy> = { en: fillAll(en, 'en'), fr: fillAll(fr, 'fr') }
+export const copy: Record<Locale, Copy> = { en: fillAll(en, 'en'), fr: fillAll(fr, 'fr'), de: fillAll(de, 'de'), it: fillAll(it, 'it'), es: fillAll(es, 'es') }

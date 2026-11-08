@@ -5,6 +5,7 @@ export const fr: Copy = {
   skip: 'Aller au contenu',
   navigation: 'Dans les coulisses',
   language: 'Langue',
+  openApp: 'Ouvrir Soundlines',
   eyebrow: 'Les coulisses d’un atlas musical',
   source: 'Explorer le code',
   next: 'Visiter chaque atelier',
@@ -53,7 +54,7 @@ export const fr: Copy = {
       sections: [
         [
           'Ce que montre l’application',
-          'Des chronologies des genres, artistes et instruments, une carte de bulles de la filiation des genres, une vue Histoire des moments marquants et des sons de genres à écouter, en anglais et en français. Chaque barre, bulle et lien à l’écran provient d’un seul fichier de données : ces pages expliquent donc tout ce que vous voyez.',
+          'Des chronologies des genres, artistes et instruments, une carte de bulles de la filiation des genres, une vue Histoire des moments marquants et des sons de genres à écouter, en anglais, français, allemand, italien et espagnol. Chaque barre, bulle et lien à l’écran provient d’un seul fichier de données : ces pages expliquent donc tout ce que vous voyez.',
         ],
         [
           'Fabriqué avec des assistants IA, vérifié par des personnes',
@@ -110,8 +111,8 @@ export const fr: Copy = {
             {
               actor: 'agent',
               title: 'Le consigner',
-              text: 'Un assistant d’édition met à jour le fichier de données, la traduction française et une note de preuves indiquant ce que chaque source établit, et ce qu’elle n’établit pas. Les descriptions sont rédigées avec ses propres mots.',
-              output: ['data', 'graph.json, traduction française et note de preuves'],
+              text: 'Un assistant d’édition met à jour le fichier de données, les traductions et une note de preuves indiquant ce que chaque source établit, et ce qu’elle n’établit pas. Les descriptions sont rédigées avec ses propres mots.',
+              output: ['data', 'graph.json, traductions et note de preuves'],
               preview: { kind: 'link', from: 'Disco', to: 'Chicago house', type: 'dérivé de', confidence: 'moyenne' },
             },
             {
@@ -119,7 +120,7 @@ export const fr: Copy = {
               title: 'Contrôles automatiques',
               text: 'Les tests refusent identifiants cassés, liens vers le vide, dates impossibles, directions erronées, traductions ou preuves manquantes.',
               output: ['report', 'Rapport réussi ou échoué'],
-              preview: { kind: 'checks', items: ['Identifiants et liens valides', 'Dates et direction cohérentes', 'Traduction française présente', 'Note de preuves présente'] },
+              preview: { kind: 'checks', items: ['Identifiants et liens valides', 'Dates et direction cohérentes', 'Traductions présentes', 'Note de preuves présente'] },
             },
             {
               actor: 'agent',
@@ -154,7 +155,7 @@ export const fr: Copy = {
         ],
         [
           'Traduire sans réécrire l’histoire',
-          'Le texte français est dans un fichier séparé, indexé par les mêmes identifiants. Il ne traduit que les mots : il ne peut ni ajouter d’entrées, ni changer de dates, ni déplacer de liens. Les textes longs manquants ont d’abord été traduits automatiquement, puis corrigés à la main pour le vocabulaire musical ; les notes de relations ont été traduites directement.',
+          'Chaque langue traduite possède un fichier séparé, indexé par les mêmes identifiants. Il ne traduit que les mots : il ne peut ni ajouter d’entrées, ni changer de dates, ni déplacer de liens. Les traductions assistées par machine font l’objet de vérifications du vocabulaire musical et de corrections éditoriales.',
         ],
       ],
       example: {
@@ -375,7 +376,7 @@ export const fr: Copy = {
             {
               actor: 'script',
               title: 'Le fichier de données',
-              text: 'graph.json contient toutes les entrées et tous les liens ; un fichier séparé contient le texte français.',
+              text: 'graph.json contient toutes les entrées et tous les liens ; des fichiers séparés contiennent les traductions.',
               output: ['data', 'Un fichier JSON par langue'],
               preview: { kind: 'files', items: ['graph.json', 'graph.fr.json'] },
             },
@@ -389,8 +390,8 @@ export const fr: Copy = {
             {
               actor: 'script',
               title: 'Les pages',
-              text: 'Next.js et React génèrent chaque page sur le serveur en anglais ou en français, puis chronologies, carte de bulles et audio deviennent interactifs.',
-              output: ['app', 'Pages interactives en anglais et en français'],
+              text: 'Next.js et React génèrent chaque page sur le serveur en anglais, français, allemand, italien ou espagnol, puis chronologies, carte de bulles et audio deviennent interactifs.',
+              output: ['app', 'Pages interactives en anglais, français, allemand, italien et espagnol'],
               preview: { kind: 'screen', shot: 'artwork', alt: 'La chronologie des instruments de Soundlines avec la fiche du saxophone ouverte' },
             },
             {
@@ -413,7 +414,7 @@ export const fr: Copy = {
       sections: [
         [
           'Les outils',
-          'TypeScript partout ; React 19 et l’App Router de Next.js pour l’application ; Tailwind CSS pour les styles ; next-intl pour l’anglais et le français ; Vitest et Storybook pour les tests et l’aperçu des composants ; Docker Compose pour un démarrage local en une commande. Ce site compagnon utilise React et Vite, pré-rendu en HTML statique.',
+          'TypeScript partout ; React 19 et l’App Router de Next.js pour l’application ; Tailwind CSS pour les styles ; next-intl pour l’anglais, le français, l’allemand, l’italien et l’espagnol ; Vitest et Storybook pour les tests et l’aperçu des composants ; Docker Compose pour un démarrage local en une commande. Ce site compagnon utilise React et Vite, pré-rendu en HTML statique.',
         ],
         [
           'Des procédures lisibles',

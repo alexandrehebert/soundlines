@@ -5,6 +5,7 @@ export const en: Copy = {
   skip: 'Skip to content',
   navigation: 'Behind the scenes',
   language: 'Language',
+  openApp: 'Open Soundlines',
   eyebrow: 'Behind the scenes of a music atlas',
   source: 'Explore the source',
   next: 'Visit each workshop',
@@ -53,7 +54,7 @@ export const en: Copy = {
       sections: [
         [
           'What you see in the app',
-          'Timelines of genres, artists and instruments, a bubble map of how genres descend from one another, a History view of turning points and genre sounds to listen to, in English and French. Every bar, bubble and link on screen comes from a single data file, so the pages here explain everything you can see.',
+          'Timelines of genres, artists and instruments, a bubble map of how genres descend from one another, a History view of turning points and genre sounds to listen to, in English, French, German, Italian and Spanish. Every bar, bubble and link on screen comes from a single data file, so the pages here explain everything you can see.',
         ],
         [
           'Made with AI assistants, checked by people',
@@ -110,8 +111,8 @@ export const en: Copy = {
             {
               actor: 'agent',
               title: 'Write it down',
-              text: 'An editing assistant updates the data file, the French translation and an evidence note recording what each source supports, and what it does not. Descriptions are written in its own words.',
-              output: ['data', 'graph.json, French overlay and evidence note'],
+              text: 'An editing assistant updates the data file, the translations and an evidence note recording what each source supports, and what it does not. Descriptions are written in its own words.',
+              output: ['data', 'graph.json, language overlays and evidence note'],
               preview: { kind: 'link', from: 'Disco', to: 'Chicago house', type: 'derived from', confidence: 'medium' },
             },
             {
@@ -119,7 +120,7 @@ export const en: Copy = {
               title: 'Machine checks',
               text: 'Tests reject broken IDs, links pointing nowhere, impossible dates, wrong directions, missing translations and missing evidence.',
               output: ['report', 'Pass or fail report'],
-              preview: { kind: 'checks', items: ['IDs and links resolve', 'Dates and direction make sense', 'French translation present', 'Evidence note present'] },
+              preview: { kind: 'checks', items: ['IDs and links resolve', 'Dates and direction make sense', 'Translations present', 'Evidence note present'] },
             },
             {
               actor: 'agent',
@@ -154,7 +155,7 @@ export const en: Copy = {
         ],
         [
           'Translating without rewriting history',
-          'French text lives in a separate file keyed by the same IDs. It only translates words: it cannot add entries, change dates or move connections. Missing long texts were first machine-translated, then hand-corrected for musical vocabulary; relationship notes were translated directly.',
+          'Each translated language lives in a separate file keyed by the same IDs. It only translates words: it cannot add entries, change dates or move connections. Machine-assisted translations are checked for musical vocabulary and refined through editorial corrections.',
         ],
       ],
       example: {
@@ -375,7 +376,7 @@ export const en: Copy = {
             {
               actor: 'script',
               title: 'The data file',
-              text: 'graph.json holds every entry and connection; a separate file holds the French text.',
+              text: 'graph.json holds every entry and connection; separate overlay files hold the translations.',
               output: ['data', 'One JSON file per language'],
               preview: { kind: 'files', items: ['graph.json', 'graph.fr.json'] },
             },
@@ -389,8 +390,8 @@ export const en: Copy = {
             {
               actor: 'script',
               title: 'Pages',
-              text: 'Next.js and React render each page on the server in English or French, then the timelines, bubble map and audio become interactive.',
-              output: ['app', 'Interactive pages in English and French'],
+              text: 'Next.js and React render each page on the server in English, French, German, Italian or Spanish, then the timelines, bubble map and audio become interactive.',
+              output: ['app', 'Interactive pages in English, French, German, Italian and Spanish'],
               preview: { kind: 'screen', shot: 'artwork', alt: 'The Soundlines instrument timeline with the saxophone panel open' },
             },
             {
@@ -413,7 +414,7 @@ export const en: Copy = {
       sections: [
         [
           'The stack',
-          'TypeScript throughout; React 19 and the Next.js App Router for the app; Tailwind CSS for styles; next-intl for English and French; Vitest and Storybook for tests and component previews; Docker Compose for a one-command local setup. This companion uses React and Vite, prerendered to static HTML.',
+          'TypeScript throughout; React 19 and the Next.js App Router for the app; Tailwind CSS for styles; next-intl for English, French, German, Italian and Spanish; Vitest and Storybook for tests and component previews; Docker Compose for a one-command local setup. This companion uses React and Vite, prerendered to static HTML.',
         ],
         [
           'Procedures you can read',

@@ -60,7 +60,7 @@ checked, how instrument artwork and audio are made, and how the app and its
 AI-assisted workflow are built. Each process is drawn as a workflow diagram whose
 steps are tagged by who performs them (person, AI assistant, AI model, code or
 automatic check), with real documented examples. Each page's legend includes
-only the actors used in its workflows. It is available in English and French
+only the actors used in its workflows. It is available in English, French, German, Italian and Spanish
 and links to the full repository guides rather than rendering the Markdown
 documentation.
 
@@ -68,12 +68,13 @@ The companion is a small React 19 + TypeScript app built with Vite and styled
 with Tailwind CSS v4, the same toolchain as the explorer's Storybook. Every page
 is prerendered to static HTML at build time, so it reads and indexes without
 JavaScript; the client bundle then hydrates the page for small interactions
-such as the audio player.
+such as the audio player. The language switcher keeps the current page and
+provides links without JavaScript; the app link opens the selected language.
 
 | Path | Purpose |
 | --- | --- |
 | [site/src/content.ts](../site/src/content.ts) | Page, workflow and example types; resolves `{figure}` placeholders |
-| [site/src/copy/](../site/src/copy/) | English and French copy for every page |
+| [site/src/copy/](../site/src/copy/) | English, French, German, Italian and Spanish copy for every page |
 | [site/scripts/stats.ts](../site/scripts/stats.ts) | Figures quoted in the copy, computed at build time from the graph, evidence, assets, agents and skills |
 | [site/src/components/](../site/src/components/) | Page layout, workflow diagrams, examples and the artwork and loop samples taken from `public/` |
 | [site/src/components/Previews.tsx](../site/src/components/Previews.tsx) | Small preview of what each workflow step produces, ending with the real result (app screenshot, artwork, loop) |

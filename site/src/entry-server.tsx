@@ -4,7 +4,7 @@ import { App, Head } from './components/App.tsx'
 import type { Route } from './routes.ts'
 
 export { routeFile, routes } from './routes.ts'
-export { siteUrl } from './content.ts'
+export { siteUrl, locales } from './content.ts'
 
 export function render(route: Route) {
   return {

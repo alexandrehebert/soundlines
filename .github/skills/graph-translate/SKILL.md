@@ -12,7 +12,8 @@ overlay, `src/data/graph.<locale>.json`, holding translated text only, keyed by 
 (`src/data/graphLocale.ts`), which rejects unknown ids, fields and empty strings. App UI copy is separate
 (`src/i18n/locales/<locale>.json`); never put graph text there.
 
-Language-specific style rules live in `references/<locale>.md` (currently [fr](./references/fr.md)).
+Language-specific style rules live in `references/<locale>.md`: [fr](./references/fr.md),
+[de](./references/de.md), [it](./references/it.md), and [es](./references/es.md).
 Read the one for your target locale first; if it does not exist, create it (see "Add a language").
 
 ## Overlay shape (identical for every locale)

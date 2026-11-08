@@ -3,7 +3,7 @@ import { isLocale, localeFromPath, localizePath, routing, stripLocalePrefix } fr
 
 describe('locale routing', () => {
   it('declares supported locales and the default locale for next-intl', () => {
-    expect(routing.locales).toEqual(['en', 'fr'])
+    expect(routing.locales).toEqual(['en', 'fr', 'de', 'it', 'es'])
     expect(routing.defaultLocale).toBe('en')
     expect(routing.localePrefix).toBeUndefined()
   })
@@ -18,7 +18,9 @@ describe('locale routing', () => {
     expect(localeFromPath('/en-US')).toBeUndefined()
     expect(localeFromPath('/en-US/artists')).toBeUndefined()
     expect(localeFromPath('/enough/genres')).toBeUndefined()
-    expect(localeFromPath('/de/genres')).toBeUndefined()
+    expect(localeFromPath('/de/genres')).toBe('de')
+    expect(localeFromPath('/it/artists')).toBe('it')
+    expect(localeFromPath('/es/instruments')).toBe('es')
   })
 
   it('prefixes both root and nested paths without changing route names', () => {

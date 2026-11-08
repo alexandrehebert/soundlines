@@ -15,6 +15,7 @@ type ServerEntry = {
   routes: Route[]
   routeFile: (route: Route) => string
   siteUrl: string
+  locales: string[]
 }
 
 await build({ configFile, logLevel: 'warn' })
@@ -35,15 +36,15 @@ try {
     )
   }
 
-  // Entry page: French browsers go to /fr/, everyone else (and crawlers) to /en/.
+  // Entry page follows the first supported browser language, falling back to English.
   await writeFile(
     join(outDir, 'index.html'),
     `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Soundlines</title>
 <link rel="canonical" href="${server.siteUrl}/en/">
-<script>location.replace('${base}' + (/^fr\\b/i.test(navigator.language) ? 'fr' : 'en') + '/')</script>
+<script>location.replace('${base}' + ((navigator.languages || [navigator.language]).map(language => language.toLowerCase().split('-')[0]).find(language => ${JSON.stringify(server.locales)}.includes(language)) || 'en') + '/')</script>
 <noscript><meta http-equiv="refresh" content="0;url=${base}en/"></noscript></head>
-<body><a href="${base}en/">English</a> · <a href="${base}fr/" lang="fr">Français</a></body></html>
+<body><a href="${base}en/">English</a> · <a href="${base}fr/" lang="fr">Français</a> · <a href="${base}de/" lang="de">Deutsch</a> · <a href="${base}it/" lang="it">Italiano</a> · <a href="${base}es/" lang="es">Español</a></body></html>
 `,
   )
   await writeFile(join(outDir, '404.html'), await readFile(join(outDir, 'en/index.html'), 'utf8'))

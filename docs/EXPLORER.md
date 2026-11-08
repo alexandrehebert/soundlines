@@ -42,7 +42,7 @@ viewport or the tab is hidden. Scrolling, typing, and unrelated pointer presses
 do not cancel the current hint. Hints never play audio or block controls,
 and fade out over 250 ms and stop for the visit only on scratch or Play.
 Reduced-motion preferences also disable this hint.
-The English and French controls show a retry message when audio cannot load.
+The controls show a localized retry message when audio cannot load.
 
 See the [audio guide](./AUDIO.md) for loop provenance and preview generation.
 

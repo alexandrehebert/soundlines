@@ -36,8 +36,10 @@ Current size: 1354 nodes (177 genres, 538 artists, 72 instruments, 41 labels, 11
 `graph.json` remains the canonical source for entity ids, relationships, dates,
 sources, and English text. Display names and prose for each other app locale are
 maintained separately in one overlay per locale, `src/data/graph.<locale>.json`
-(currently [graph.fr.json](../src/data/graph.fr.json)), keyed by those stable ids. An
-overlay may change text only; it must not duplicate or alter graph structure.
+(currently [French](../src/data/graph.fr.json), [German](../src/data/graph.de.json),
+[Italian](../src/data/graph.it.json), and [Spanish](../src/data/graph.es.json)),
+keyed by those stable ids. An overlay may change text only; it must not duplicate
+or alter graph structure.
 Every overlay covers every descriptive field and relationship note, as enforced by
 coverage tests. Proper names may retain their source-language form. Translations
 remain editorial text requiring review; structural coverage does not establish
@@ -717,9 +719,9 @@ moves explicitly rather than assigning an old location to every edition.
 Festival relationships appear in both entities’ details with source links.
 Unsourced festival relationships are omitted by `groupedRelations`. Festivals
 have no dedicated timeline, family, prominence phases, or inferred lineage.
-Add source-backed English/French descriptions and relationship notes, evidence
-files for every new node and edge, update `graph-edge-coverage.csv`, and run
-`npm run review-status` after enrichment.
+Add source-backed English descriptions and relationship notes, translations in
+every locale overlay, and evidence files for every new node and edge. Update
+`graph-edge-coverage.csv` and run `npm run review-status` after enrichment.
 
 
 ### Festival confidence and early chronology
@@ -736,8 +738,9 @@ each node/association assessment and must match the live graph.
 Ancient festivals can use negative years (BCE). Distinguish reorganisation,
 numbering, earliest attestation, first performance and later institutional names.
 An approximate chronology needs `period.estimated`, an `estimateNote` explaining
-its scope, and French text. Pythian Games uses -582 as a conventional reform
-anchor and an approximate 424 CE late-antique attestation anchor, not a world-first claim.
+its scope, and translations in every locale overlay. Pythian Games uses -582 as
+a conventional reform anchor and an approximate 424 CE late-antique attestation
+anchor, not a world-first claim.
 The corresponding History event uses the broader estimated 586–582 BCE reform range.
 Three Choirs uses c.1715 as a conventional counting date, not a proven first
 meeting. Do not claim uninterrupted operation or the oldest festival worldwide

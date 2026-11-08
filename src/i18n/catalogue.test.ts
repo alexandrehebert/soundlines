@@ -16,9 +16,9 @@ function leafEntries(value: unknown, path = ''): Record<string, unknown> {
 }
 
 describe('translation catalogues', () => {
-  it('keeps every key, value type, and interpolation parameter in sync', () => {
+  it.each(LOCALES)('keeps every %s key, value type, and interpolation parameter in sync', (locale) => {
     const source = leafEntries(english)
-    const translated = leafEntries(french)
+    const translated = leafEntries(catalogueFor(locale))
     expect(Object.keys(translated).sort()).toEqual(Object.keys(source).sort())
     for (const [key, value] of Object.entries(source)) {
       expect(typeof translated[key], key).toBe(typeof value)
@@ -54,7 +54,9 @@ describe('translation catalogues', () => {
       for (const message of output) expect(message).not.toMatch(/\{\w+\}/)
     }
     expect(stats('summary', { entries: '1', links: '2', span: '' })).not.toMatch(/\{\w+\}/)
-    expect(stats('summary', { entries: '1', links: '2', span: stats('summarySpan', { start: -500, end: 2026 }) })).toContain('-500 – 2026')
+    const summary = stats('summary', { entries: '1', links: '2', span: stats('summarySpan', { start: -500, end: 2026 }) })
+    expect(summary).toContain('-500')
+    expect(summary).toContain('2026')
     expect(stats('whenEmerged', { plural: 'genres' })).toContain('genres')
     expect(stats('lastReview', { date: '2026-11-06' })).toContain('2026-11-06')
     expect(timeline('region', { view: 'Genres' })).toContain('Genres')

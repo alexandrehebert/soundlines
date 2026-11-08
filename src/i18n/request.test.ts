@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import type { getRequestConfig } from 'next-intl/server'
 import english from './locales/en.json'
-import french from './locales/fr.json'
+import { catalogueFor } from './catalogue.ts'
 import requestConfig from './request.ts'
 import { LOCALES } from './routing.ts'
 
@@ -18,7 +18,6 @@ vi.mock('next/root-params', () => ({
 }))
 
 const params = { requestLocale: Promise.resolve(undefined) }
-const catalogues = { en: english, fr: french }
 
 describe('request locale configuration', () => {
   beforeEach(() => {
@@ -28,7 +27,7 @@ describe('request locale configuration', () => {
   it.each(LOCALES)('loads the %s root locale catalogue', async (locale) => {
     rootLocale.mockResolvedValue(locale)
 
-    expect(await requestConfig(params)).toEqual({ locale, messages: catalogues[locale] })
+    expect(await requestConfig(params)).toEqual({ locale, messages: catalogueFor(locale) })
   })
 
   it.each([undefined, '', 'unknown.txt'])('falls back for root locale %s', async (locale) => {
@@ -38,7 +37,7 @@ describe('request locale configuration', () => {
   })
 
   it.each(LOCALES)('uses explicit %s overrides without reading root params', async (locale) => {
-    expect(await requestConfig({ ...params, locale })).toEqual({ locale, messages: catalogues[locale] })
+    expect(await requestConfig({ ...params, locale })).toEqual({ locale, messages: catalogueFor(locale) })
     expect(rootLocale).not.toHaveBeenCalled()
   })
 

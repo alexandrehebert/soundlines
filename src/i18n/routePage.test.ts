@@ -1,4 +1,5 @@
 import { describe, expect, it, vi } from 'vitest'
+import { LOCALES, localizePath } from './routing.ts'
 import HomePage, { generateMetadata as homeMetadata } from '../../app/[locale]/page.tsx'
 import GenresPage, { generateMetadata as genresMetadata } from '../../app/[locale]/genres/page.tsx'
 import ArtistsPage, { generateMetadata as artistsMetadata } from '../../app/[locale]/artists/page.tsx'
@@ -38,7 +39,7 @@ describe('localized App Router pages', () => {
     const canonical = `${origin}${locale === 'fr' ? french : english}`
     expect(metadata.alternates).toEqual({
       canonical,
-      languages: { en: `${origin}${english}`, fr: `${origin}${french}` },
+      languages: Object.fromEntries(LOCALES.map((target) => [target, `${origin}${english.split('?')[0].replace(/^\/en(?=\/|$)/, `/${target}`)}${english.includes('?') ? '?' + english.split('?')[1] : ''}`])),
     })
     expect(metadata.openGraph).toMatchObject({ url: canonical })
   })
@@ -60,13 +61,27 @@ describe('localized App Router pages', () => {
     })
     expect(metadata.alternates).toEqual({
       canonical: `${origin}/en/artists`,
-      languages: { en: `${origin}/en/artists`, fr: `${origin}/fr/artists` },
+      languages: Object.fromEntries(LOCALES.map((target) => [target, `${origin}/${target}/artists`])),
     })
+  })
+
+  it.each(LOCALES)('serves every explorer route in %s', async (locale) => {
+    for (const [page, metadata, path] of [
+      [HomePage, homeMetadata, ''],
+      [GenresPage, genresMetadata, 'genres'],
+      [ArtistsPage, artistsMetadata, 'artists'],
+      [InstrumentsPage, instrumentsMetadata, 'instruments'],
+      [HistoryPage, historyMetadata, 'history'],
+    ] as const) {
+      const props = { params: Promise.resolve({ locale }), searchParams: Promise.resolve({}) }
+      expect(await page(props)).toBeNull()
+      expect((await metadata(props)).alternates?.canonical).toBe(`${origin}${localizePath(path, locale)}`)
+    }
   })
 
   it('rejects unsupported locales', async () => {
     await expect(homeMetadata({
-      params: Promise.resolve({ locale: 'de' }),
+      params: Promise.resolve({ locale: 'xx' }),
       searchParams: Promise.resolve({}),
     })).rejects.toThrow()
   })

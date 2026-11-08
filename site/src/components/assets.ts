@@ -22,9 +22,9 @@ export { favicon, hipHopLoop }
 
 /** Artwork shown on the artwork page; these files are produced by the app's artwork pipeline. */
 export const instruments: { slug: string; name: Record<Locale, string>; banner: string; icon: string }[] = [
-  { slug: 'theremin', name: { en: 'Theremin', fr: 'Thérémine' }, banner: thereminBanner, icon: thereminIcon },
-  { slug: 'tr-808', name: { en: 'TR-808', fr: 'TR-808' }, banner: tr808Banner, icon: tr808Icon },
-  { slug: 'timbales', name: { en: 'Timbales', fr: 'Timbales' }, banner: timbalesBanner, icon: timbalesIcon },
+  { slug: 'theremin', name: { en: 'Theremin', fr: 'Thérémine', de: 'Theremin', it: 'Theremin', es: 'Teremín' }, banner: thereminBanner, icon: thereminIcon },
+  { slug: 'tr-808', name: { en: 'TR-808', fr: 'TR-808', de: 'TR-808', it: 'TR-808', es: 'TR-808' }, banner: tr808Banner, icon: tr808Icon },
+  { slug: 'timbales', name: { en: 'Timbales', fr: 'Timbales', de: 'Timbales', it: 'Timbales', es: 'Timbales' }, banner: timbalesBanner, icon: timbalesIcon },
 ]
 
 /** Repository path of an instrument's visual brief. */
@@ -35,7 +35,7 @@ export const saxophone = { icon: saxophoneIcon, banner: saxophoneBanner, avatar:
 
 /** Screenshots of the running app (1280×800, scaled to 960 px), shown as final results. */
 export const screens: Record<'graph' | 'artwork' | 'home', Record<Locale, string>> = {
-  graph: { en: graphEn, fr: graphFr },
-  artwork: { en: artworkEn, fr: artworkFr },
-  home: { en: homeEn, fr: homeFr },
+  graph: { en: graphEn, fr: graphFr, de: graphEn, it: graphEn, es: graphEn },
+  artwork: { en: artworkEn, fr: artworkFr, de: artworkEn, it: artworkEn, es: artworkEn },
+  home: { en: homeEn, fr: homeFr, de: homeEn, it: homeEn, es: homeEn },
 }

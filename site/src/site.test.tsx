@@ -2,6 +2,7 @@ import { existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
+import { APP_URL } from '../../src/projectLinks.ts'
 import brief from '../../docs/loops/briefs/turntable-hip-hop.json'
 import selection from '../../docs/loops/briefs/turntable-hip-hop.selection.json'
 import saxophoneIcon from '../../public/instrument-icons/saxophone.svg?raw'
@@ -18,10 +19,10 @@ const root = fileURLToPath(new URL('../../', import.meta.url))
 const base = import.meta.env.BASE_URL
 
 describe('project companion content', () => {
-  it('gives English and French the same pages, workflows and resources', () => {
-    expect(copy.fr.stats.map(([key]) => key)).toEqual(copy.en.stats.map(([key]) => key))
+  it.each(locales)('gives %s the same pages, workflows and resources as English', (locale) => {
+    expect(copy[locale].stats.map(([key]) => key)).toEqual(copy.en.stats.map(([key]) => key))
     for (const slug of slugs) {
-      const [en, fr] = [copy.en.pages[slug], copy.fr.pages[slug]]
+      const [en, fr] = [copy.en.pages[slug], copy[locale].pages[slug]]
       expect(fr.sections).toHaveLength(en.sections.length)
       expect(fr.flows.map((flow) => [flow.steps.map((step) => [step.actor, step.output[0], step.preview.kind]), flow.loops?.map(({ from, to }) => [from, to])])).toEqual(
         en.flows.map((flow) => [flow.steps.map((step) => [step.actor, step.output[0], step.preview.kind]), flow.loops?.map(({ from, to }) => [from, to])]),
@@ -63,6 +64,15 @@ describe('project companion content', () => {
     const header = html.slice(html.indexOf('<header'), html.indexOf('</header>'))
     expect(header).toContain(`href="${siteUrl}/storybook/"`)
     expect(header).toContain(`href="${repository}"`)
+    expect(header).toContain(`href="${new URL(route.locale, APP_URL).href}"`)
+    expect(header).toContain(copy[route.locale].openApp)
+  })
+
+  it.each(routes)('provides $locale/$slug language links without JavaScript', (route) => {
+    const html = renderToStaticMarkup(<App {...route} />)
+    const fallback = html.match(/<noscript>([\s\S]*?)<\/noscript>/)?.[1]
+    expect(fallback).toBeDefined()
+    for (const locale of locales) expect(fallback).toContain(`href="${base}${routePath({ ...route, locale })}"`)
   })
 
   it.each(locales)('links directly to the evidence guide on the %s graph page', (locale) => {
@@ -204,7 +214,7 @@ describe('routes', () => {
   it('resolves every route from its URL and falls back to the English overview', () => {
     for (const route of routes) expect(matchRoute(`/soundlines/${routePath(route)}`, '/soundlines/')).toEqual(route)
     expect(matchRoute('/soundlines/', '/soundlines/')).toEqual({ locale: 'en', slug: 'index' })
-    expect(matchRoute('/soundlines/de/nope/', '/soundlines/')).toEqual({ locale: 'en', slug: 'index' })
+    expect(matchRoute('/soundlines/xx/nope/', '/soundlines/')).toEqual({ locale: 'en', slug: 'index' })
   })
 
   it('opens files as blobs and folders as trees on GitHub', () => {
@@ -216,7 +226,6 @@ describe('routes', () => {
 describe.each(routes)('$locale/$slug page', (route) => {
   const html = renderToStaticMarkup(<App {...route} />)
   const page = copy[route.locale].pages[route.slug]
-  const other = route.locale === 'en' ? 'fr' : 'en'
 
   it('has one title, a skip link and its translated content', () => {
     expect(html.match(/<h1\b/g)).toHaveLength(1)
@@ -225,14 +234,14 @@ describe.each(routes)('$locale/$slug page', (route) => {
     expect(html).toContain(renderToStaticMarkup(<>{page.title}</>))
   })
 
-  it('links to the same page in the other language and to the repository', () => {
-    expect(html).toContain(`href="${base}${routePath({ ...route, locale: other })}"`)
+  it('offers the same page in every language and links to the repository', () => {
+    for (const locale of locales) expect(html).toContain(`value="${base}${routePath({ ...route, locale })}"`)
     expect(html).toContain(`href="${repository}"`)
   })
 
   it('declares canonical and alternate URLs', () => {
     const head = renderToStaticMarkup(<Head {...route} />)
     expect(head).toContain(`<link rel="canonical" href="https://alexandrehebert.github.io/soundlines/${routePath(route)}"/>`)
-    expect(head).toContain(`hrefLang="${other}"`)
+    for (const locale of locales) expect(head).toContain(`hrefLang="${locale}"`)
   })
 })

@@ -1,5 +1,8 @@
 import rawEnglishGraph from './graph.json'
 import rawFrenchGraph from './graph.fr.json'
+import rawGermanGraph from './graph.de.json'
+import rawItalianGraph from './graph.it.json'
+import rawSpanishGraph from './graph.es.json'
 import type { GraphEdge, GraphNode, MusicGraph } from '../graph/types.ts'
 import type { Locale } from '../i18n/routing.ts'
 
@@ -119,6 +122,9 @@ export function translateGraph(graph: MusicGraph, translations: GraphTranslation
  */
 export const GRAPH_OVERLAYS: Record<OverlayLocale, GraphTranslation> = {
   fr: rawFrenchGraph as GraphTranslation,
+  de: rawGermanGraph as GraphTranslation,
+  it: rawItalianGraph as GraphTranslation,
+  es: rawSpanishGraph as GraphTranslation,
 }
 
 export function graphForLocale(locale: Locale): MusicGraph {

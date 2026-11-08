@@ -44,8 +44,8 @@ anchors are marked estimated and explained. They do not claim uninterrupted annu
 operation. Historically significant standalone gatherings, including the original
 Woodstock and Monterey Pop festivals, have bounded periods. Existing historical festival events retain their stable IDs: an event
 can describe the founding or one edition, while a festival node describes the
-institution. English and French text, per-entry evidence notes, and the review
-coverage register accompany this batch.
+institution. English text, localized overlays, per-entry evidence notes, and the
+review coverage register accompany this batch.
 
 ## Graph contribution workflow
 

@@ -27,33 +27,38 @@ Paths in prose and commands are relative to the repository root.
   history and unrelated URL parameters. Legacy query links redirect to the
   corresponding explicit route. Pages render on demand so the initial server
   render reflects the request's query parameters.
-- Locales are language-only (`en` and `fr`). next-intl's default prefix routing
-  provides `/en` and `/fr`, without a custom prefix map or internal country-code
-  rewrite. The root proxy uses next-intl's built-in locale negotiation and
-  preference cookie; explicit locale URLs remain stable. A standard Next.js
-  redirect preserves old `/en-US` links, including paths and query parameters.
+- Locales are language-only (`en`, `fr`, `de`, `it`, and `es`). next-intl's
+  default prefix routing provides a path for each language without a custom
+  prefix map or internal country-code rewrite. The root proxy uses next-intl's
+  built-in locale negotiation and preference cookie; explicit locale URLs remain
+  stable. A standard Next.js redirect preserves old `/en-US` links, including
+  paths and query parameters.
 - The landing-page footer links to each explorer page and lets visitors switch
-  between English and French.
-- App translations live in [English](../src/i18n/locales/en.json) and
-  [French](../src/i18n/locales/fr.json) JSON catalogues: UI copy, accessibility
-  labels, date wording, graph taxonomy labels, and page/social metadata.
+  between the supported languages.
+- App translations live in [English](../src/i18n/locales/en.json),
+  [French](../src/i18n/locales/fr.json), [German](../src/i18n/locales/de.json),
+  [Italian](../src/i18n/locales/it.json), and [Spanish](../src/i18n/locales/es.json)
+  JSON catalogues: UI copy, accessibility labels, date wording, graph taxonomy
+  labels, and page/social metadata.
   The UI uses `next-intl`: client components call `useTranslations`, server
   components use `getTranslations`, and ICU messages handle interpolation and
   plurals. TypeScript checks message keys against the English catalogue; keep
   catalogue keys and ICU parameters aligned across languages. Graph content
   translations remain separate.
 - Graph text for each non-English locale lives in `src/data/graph.<locale>.json`
-  (currently [French](../src/data/graph.fr.json)), registered in `GRAPH_OVERLAYS`. It is keyed by stable
-  entity IDs and overlays only translated fields on the canonical graph. The overlay
-  covers descriptions, phase summaries, individual phase notes, period-estimate
-  notes, and all relationship notes. Instruments, places, scenes, and applicable
+  ([French](../src/data/graph.fr.json), [German](../src/data/graph.de.json),
+  [Italian](../src/data/graph.it.json), and [Spanish](../src/data/graph.es.json)),
+  registered in `GRAPH_OVERLAYS`. Each is keyed by stable entity IDs and overlays
+  only translated fields on the canonical graph. Overlays cover descriptions,
+  phase summaries, individual phase notes, period-estimate notes, and all
+  relationship notes. Instruments, places, scenes, and applicable
   genre names have localized labels; artist, label, and recording names retain
-  their original form. Previously missing long-form text was machine-translated
+  their original form. Previously missing French long-form text was machine-translated
   with Google Translate, with manual corrections to visible musical terminology.
-  The remaining 860 relationship notes were translated directly, without an
+  The remaining 860 French relationship notes were translated directly, without an
   external translation service, preserving source references and caveats.
-  This text remains a first pass for editorial review. Coverage tests require
-  every source descriptive field to have a nonempty French entry and verify
+  All translations remain editorial text requiring review. Coverage tests require
+  every source descriptive field to have a nonempty entry in each overlay and verify
   that translations preserve graph structure.
 - [Social metadata](../src/socialMetadata.ts) derives previews from the same
   routes, URL parameters, and graph nodes. App Router metadata is rendered on
