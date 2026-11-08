@@ -8,3 +8,9 @@ Overlay file: `src/data/graph.es.json`.
 - Use Spanish punctuation and accents, sentence case for titles, and curly quotes where appropriate.
 - Dates: `1 de agosto de 1981`, `década de 1980`, `siglo XVIII`; BCE is `a. e. c.`.
 - Translate editorial confidence as `confianza`, not statistical probability. Distinguish descent (`deriva de`), influence and historical context.
+
+## False friends and fixed terms
+
+- `singles out` means destaca/señala, not `sencillos` (music releases).
+- `downtempo` refers to a musical tempo/style, not temperature.
+- In music history, `underground` means underground/subterráneo or independiente, not the Chicago metro.

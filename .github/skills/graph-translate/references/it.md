@@ -18,3 +18,10 @@ Overlay file: `src/data/graph.it.json`.
 - `sampling`: `campionamento`; `sound system`: retain the established musical term.
 - `lineage`: `genealogia`; `derived from`: `deriva da`; `cross-pollination`: `scambio di influenze`.
 - Preserve proper names, song titles and established genre vocabulary (house, soul, blues, acid jazz).
+
+## False friends and fixed terms
+
+- In musical lineage prose, `draws on` means si basa su/attinge a, not `disegna`.
+- `singles out` means mette in risalto, not `i singoli` (music releases).
+- `label-authored` means realizzato/scritto dall’etichetta, not `autorizzato`.
+- Translate the genre `blues` by its established name; do not render it as `note azzurre` or `a forma di`.

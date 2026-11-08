@@ -23,12 +23,19 @@ Follow `.github/skills/graph-translate/SKILL.md` and the target language's
   coverage test output.
 
 ## Approach
-1. Build the work list: coverage gaps from `npx vitest run src/data/graphLocale.test.ts`, plus every
-   changed English text field from `node .github/skills/graph-review/scripts/diff.mjs [ref]` (stale
-   translations are not caught by tests).
-2. Translate from the English source, following the locale's style reference.
-3. Run `npm run validate:graph` until the overlay tests and formatting test pass.
+1. Work on one locale per run and only the requested ids/fields. Build the work list from coverage
+   gaps (`npx vitest run src/data/graphLocale.test.ts`) plus every changed English text field from
+   `node .github/skills/graph-review/scripts/diff.mjs [ref]`; coverage tests do not catch stale text.
+2. Translate from the English source, following the locale's style reference. Never translate text
+   inside backticks; preserve those identifiers exactly.
+3. Run `node .github/skills/graph-translate/scripts/audit.mjs <locale> <ids...>` for the requested
+   ids (or the full locale when adding one) and `npm run validate:graph`. Resolve every audit error;
+   tests passing is not evidence that prose is idiomatic or accurate.
+4. Review a representative sample of 20 changed or completed fields across the requested scope,
+   comparing English and target text for meaning, proper names, dates, terminology, hedges and
+   negation. If fewer than 20 fields changed, review all of them.
 
 ## Output
-Locale(s), ids and fields translated or refreshed, terminology choices worth a human check, and the
-validation result.
+Report the locale, ids and fields translated or refreshed; the audit and validation results; the
+sampled English/target pairs (or all pairs if fewer than 20); terminology choices and unresolved
+uncertainties. Do not report completion until the work and checks are finished.

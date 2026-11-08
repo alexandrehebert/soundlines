@@ -58,16 +58,23 @@ npx vitest run src/data/graphLocale.test.ts              # lists every missing <
 1. List the gaps (test output above, or the ids from the change set) for **every** overlay, not just
    the one you know best. A change to English text means every overlay entry for that field is stale.
 2. Translate from the English text in `graph.json`, never from another overlay.
-3. Keep meaning exact: same facts, dates, hedges ("approximately", "editorial, not a measured ranking")
+3. Preserve every token inside English backticks exactly; these are graph identifiers or names, not
+   prose. Preserve quoted work titles and proper names unless the locale reference says otherwise.
+4. Keep meaning exact: same facts, dates, hedges ("approximately", "editorial, not a measured ranking")
    and confidence nuance. Add nothing the English and its sources do not support.
-4. Write natural editorial prose in the target language, following its `references/<locale>.md`.
-   Proper names keep their established form; places and instruments use the standard local name
-   when one exists.
-5. Insert entries next to related ones; keep the file as `JSON.stringify(data, null, 2) + '\n'`
+5. Write natural editorial prose in the target language, following its `references/<locale>.md`.
+   Check its false-friend notes before translating ambiguous English. Places and instruments use the
+   standard local name when one exists.
+6. Insert entries next to related ones; keep the file as `JSON.stringify(data, null, 2) + '\n'`
    (tested by `src/data/graphFiles.test.ts`).
-6. Validate with `npm run validate:graph`.
+7. Run `node .github/skills/graph-translate/scripts/audit.mjs <locale> <ids...>` for the ids in
+   scope (or omit ids to audit the full overlay) and resolve every error, then run
+   `npm run validate:graph`. The audit checks identifier and year preservation plus known
+   false-friend patterns; it cannot judge whether a translation is idiomatic or factually exact.
 
-Machine-assisted translation still needs human review; list any uncertain terminology in the summary.
+Machine-assisted translation still needs human review. Review a representative sample of 20 changed
+or completed fields (all fields if fewer than 20), comparing English and target text for meaning,
+proper names, dates, terminology, hedges and negation. List uncertain terminology in the summary.
 
 ## Add a language
 
@@ -84,4 +91,4 @@ A new graph language is also a new app locale; both must land together.
    typography, dates, centuries, eras such as BCE), modelled on [fr.md](./references/fr.md).
 5. Fill the overlay until the coverage tests pass; for a large backlog use the `graph-translator`
    agent per slice (one family or node type at a time).
-6. Run `npm run validate:graph` and `npm test`.
+6. Run the translation audit for the new locale, `npm run validate:graph` and `npm test`.
