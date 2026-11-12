@@ -4940,6 +4940,18 @@
     "event:sonar-electronic-music-multimedia-launch": {
       "name": "Sónar combina musica elettronica e arti multimediali",
       "description": "Il primo Sónar a Barcellona in 1994 si unì alla musica elettronica e sperimentale con le arti multimediali. Uno studio di casi accademici documenta questa combinazione come centrale del formato del festival; il successivo congresso Sónar+D non dovrebbe essere sostenuto alla prima edizione."
+    },
+    "genre:soca": {
+      "description": "Stile carnevalesco caraibico nato a Trinidad e Tobago che rielabora il calypso. Tra i primi esperimenti c’è «Indrani» (1973) di Lord Shorty, che unisce il calypso a dholak e dhantal suonati da musicisti dell’India orientale. Il soca si è sviluppato grazie a più contributori; secondo RBMA, lo stile si è consolidato intorno al 1976.",
+      "estimateNote": "Caribbean Beat colloca nel 1973 un primo sviluppo del soca con «Indrani» di Lord Shorty; RBMA afferma che il soca vero e proprio si consolidò intorno al 1976. Il 1973 è quindi un riferimento alle origini, non una data d’inizio definita del genere."
+    },
+    "artist:ras-shorty-i": {
+      "description": "Il calypsonian trinidadiano Garfield Blackman, inizialmente noto come Lord Shorty, fu un pioniere dell’emergere del soca. In seguito adottò il nome Ras Shorty I e sviluppò la musica religiosa Jamoo; alle origini del soca contribuirono più artisti.",
+      "estimateNote": "Secondo RBMA, le accuse formulate dopo la sua esibizione alla finale del Calypso Monarch del 1973 conclusero il suo primo decennio di carriera. L’inizio negli anni 1960 è dedotto, non documentato come debutto ufficiale. L’attività più recente documentata nelle fonti esaminate è l’album Jamoo Victory (1999); questo è un riferimento approssimativo per il periodo, non una data di cessazione accertata."
+    },
+    "artist:machel-montano": {
+      "description": "Interprete soca trinidadiano, è diventato una star da bambino e ha costruito una lunga carriera con influenze musicali diverse e collaborazioni tra generi.",
+      "estimateNote": "Un articolo di Caribbean Beat del 2023 descrive una carriera di 40 anni, suggerendo un riferimento approssimativo ai primi anni 1980; un profilo del 2009 racconta la sua ascesa da bambino prodigio senza indicare un anno d’inizio."
     }
   },
   "edges": {
@@ -8455,6 +8467,18 @@
     },
     "context_for:event-lollapalooza-alternative-music-tour-genre-alternative-rock": {
       "note": "L'evento fornisce performance documentate o contesto istituzionale per questa musica, non una pretesa che abbia dato origine al genere."
+    },
+    "lineage:soca-calypso": {
+      "note": "Le fonti descrivono il soca come una rielaborazione o evoluzione del calypso; i primi esperimenti incorporarono anche elementi ritmici dell’India orientale, senza fare del soca una semplice fusione di due tradizioni."
+    },
+    "key:ras-shorty-i-soca": {
+      "note": "RBMA indica Lord Shorty/Ras Shorty I come pioniere del soca e collega il suo «Indrani» del 1973 agli inizi del genere; Caribbean Beat sottolinea il contributo di più artisti."
+    },
+    "key:machel-montano-soca": {
+      "note": "Caribbean Beat descrive Montano come una star del soca e, in seguito, la più grande superstar del genere, sostenendone il ruolo rappresentativo."
+    },
+    "key:calypso-rose-soca": {
+      "note": "Caribbean Beat presenta Calypso Rose come un’icona del calypso che si è unita al soca e cita la sua registrazione del 1977, «Give More Tempo». Ciò sostiene il suo ruolo rappresentativo agli inizi del soca, anche se l’articolo esaminato non documenta un’influenza diretta sugli artisti successivi."
     }
   }
 }

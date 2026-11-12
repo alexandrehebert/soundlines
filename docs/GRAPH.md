@@ -31,7 +31,7 @@ test suite ([graph.test.ts](../src/data/graph.test.ts) and the other `src/data` 
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 1354 nodes (177 genres, 538 artists, 72 instruments, 41 labels, 118 places, 210 tracks, 56 scenes, 103 events, 39 festivals) and 2068 edges (as of 2026-11-07).
+Current size: 1357 nodes (178 genres, 540 artists, 72 instruments, 41 labels, 118 places, 210 tracks, 56 scenes, 103 events, 39 festivals) and 2072 edges (as of 2026-11-12).
 
 `graph.json` remains the canonical source for entity ids, relationships, dates,
 sources, and English text. Display names and prose for each other app locale are
@@ -123,7 +123,7 @@ Every genre **must** have a `family`. Lanes are rendered in this order:
 | `metal`             | Metal                  | 8      | heavy, thrash, death, black, doom, nu, industrial metal, metalcore |
 | `pop`               | Pop                    | 5      | pop, girl groups, synth-pop, K-pop, J-pop |
 | `hip-hop`           | Hip-hop                | 18     | regional rap, boom bap, jazz rap, crunk, G-funk, hyphy, trap, drill, grime |
-| `reggae`            | Reggae & Ska           | 6      | calypso, ska, rocksteady, reggae, dub, dancehall |
+| `reggae`            | Reggae & Ska           | 7      | calypso, soca, ska, rocksteady, reggae, dub, dancehall |
 | `latin`             | Latin                  | 11     | son cubano, salsa, bossa nova, cumbia, samba, tango, reggaeton |
 | `african`           | African                | 15     | highlife, Afrobeat, Congolese rumba, raï, Gnawa, Algerian chaâbi, mbalax, makossa, taarab |
 | `electronica`       | Electronica & Ambient  | 11     | electro, trip-hop, ambient, IDM, synthwave, downtempo, EDM |
@@ -131,7 +131,7 @@ Every genre **must** have a `family`. Lanes are rendered in this order:
 | `techno`            | Techno & Trance        | 9      | techno styles, trance, psytrance, gabber, hardstyle |
 | `breakbeat-bass`    | Breakbeat & Bass       | 8      | breakbeat hardcore, jungle, drum and bass, garage, dubstep, breakcore |
 
-These are navigational families, not strict genre ancestry. The 177 genres
+These are navigational families, not strict genre ancestry. The 178 genres
 currently have 5–18 members per family: enough granularity to avoid an oversized
 Electronic lane without creating one-genre lanes. Keep related styles together
 as the catalogue grows, and revisit the grouping if it becomes unbalanced rather
@@ -588,17 +588,17 @@ Dated nodes by `period.start`:
 
 | Era          | Genres | Artists | Tracks | Scenes | Instruments | Events |
 |--------------|-------:|--------:|-------:|-------:|------------:|-------:|
-| 500–1599     | 6      | 6       | 0      | 1      | 18          | 12     |
-| 1600–1899    | 17     | 14      | 8      | 5      | 24          | 15     |
-| 1900–1949    | 25     | 58      | 20     | 9      | 12          | 20     |
-| 1950–1999    | 114    | 377     | 161    | 39     | 10          | 20     |
-| 2000–present | 15     | 67      | 22     | 2      | 0           | 14     |
+| 500–1599     | 9      | 6       | 0      | 1      | 19          | 12     |
+| 1600–1899    | 18     | 16      | 8      | 5      | 31          | 17     |
+| 1900–1949    | 20     | 59      | 20     | 10     | 12          | 21     |
+| 1950–1999    | 117    | 391     | 153    | 38     | 9           | 36     |
+| 2000–present | 14     | 68      | 21     | 2      | 0           | 16     |
 
 Priorities, in order:
 
 1. **Improve event evidence and connections.** All 103 events have a
    `significance` value and more than one cited source. There are 18 `shaped`,
-   51 `context_for`, 5 `recognized`, 19 `involved`, and 25 `occurred_in` edges.
+   60 `context_for`, 5 `recognized`, 29 `involved`, and 44 `occurred_in` edges.
    Seven events remain standalone rather than asserting unsupported relationships.
    Add participants, recordings, venues, and locations only when a source supports
    the connection; multiple citations alone do not establish source quality.
