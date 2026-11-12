@@ -73,7 +73,29 @@ export interface ScratchDeck {
   scratch: (degPerSec: number) => void
   release: () => void
   setLoop: (loop: string) => Promise<void>
+  /** Fills `levels` with 0–1 log-spaced spectrum bands of what the deck is currently outputting. */
+  readLevels: (levels: Float32Array) => void
   dispose: () => void
+}
+
+const SPECTRUM_MIN_HZ = 40
+const SPECTRUM_MAX_HZ = 12000
+
+/** Averages FFT byte magnitudes into `levels.length` log-spaced bands normalised to 0–1. */
+export function spectrumBands(bins: Uint8Array, sampleRate: number, levels: Float32Array) {
+  const nyquist = sampleRate / 2
+  const maxHz = Math.min(SPECTRUM_MAX_HZ, nyquist)
+  const ratio = maxHz / SPECTRUM_MIN_HZ
+  for (let band = 0; band < levels.length; band += 1) {
+    const low = SPECTRUM_MIN_HZ * ratio ** (band / levels.length)
+    const high = SPECTRUM_MIN_HZ * ratio ** ((band + 1) / levels.length)
+    const start = Math.min(bins.length - 1, Math.floor(low / nyquist * bins.length))
+    const end = Math.min(bins.length, Math.max(start + 1, Math.ceil(high / nyquist * bins.length)))
+    let sum = 0
+    for (let bin = start; bin < end; bin += 1) sum += bins[bin]
+    levels[band] = sum / (end - start) / 255
+  }
+  return levels
 }
 
 type LoopBuffers = { forward: AudioBuffer; reverse: AudioBuffer }
@@ -112,7 +134,11 @@ export function createScratchDeck(onError?: (error: unknown) => void, loop = 'tu
   const tone = context.createBiquadFilter()
   tone.type = 'lowpass'
   tone.frequency.value = 3200
-  output.connect(tone).connect(context.destination)
+  const analyser = context.createAnalyser()
+  analyser.fftSize = 1024
+  analyser.smoothingTimeConstant = 0.72
+  const spectrum = new Uint8Array(analyser.frequencyBinCount)
+  output.connect(tone).connect(analyser).connect(context.destination)
 
   let voice: DeckVoice | null = null
   const voices = new Set<DeckVoice>()
@@ -306,6 +332,10 @@ export function createScratchDeck(onError?: (error: unknown) => void, loop = 'tu
       held = false
       clearTimeout(idleTimer)
       setRate(playing ? 1 : 0)
+    },
+    readLevels(levels) {
+      analyser.getByteFrequencyData(spectrum)
+      spectrumBands(spectrum, context.sampleRate, levels)
     },
     dispose() {
       disposed = true

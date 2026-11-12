@@ -155,6 +155,19 @@ the bubble map, and desktop/mobile explorer compositions. Use the Controls,
 Actions, Accessibility, and viewport panels to inspect variants and interactions;
 some stories also exercise keyboard and search behavior automatically.
 
+The official [dark favicon](../public/favicon.svg) and [light favicon](../public/favicon-light.svg)
+share the same still waveform frame. The app selects the favicon and header
+palette for its theme; the dark asset is also used by the companion site and
+Storybook. The **Foundations / Favicon** story shows both still variants and
+compares animated previews with the previous icon and alternative designs at 16,
+24, and 32 pixels and on light and dark browser tabs. The browser favicon itself
+does not animate; the header logo ([SoundlinesMark](../src/components/SoundlinesMark.tsx))
+plays the same wave motion on hover, focus and scroll, using the shared model in
+[soundlinesWave.ts](../src/components/soundlinesWave.ts).
+Preview animations can be paused and are disabled when reduced motion is
+requested. The studies are standalone SVGs in
+[src/stories/fixtures/favicon-concepts/](../src/stories/fixtures/favicon-concepts/).
+
 Stories use the real music graph with an isolated, in-memory explorer provider.
 Selections, search, related-node navigation, view changes, panning, and zoom
 are interactive without changing the app's URL or starting its page-loading

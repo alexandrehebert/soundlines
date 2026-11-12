@@ -14,7 +14,6 @@ export function TurntablePlayButton({ playing = false, loading = false, label, h
   const t = useTranslations('homeCopy')
   return (
     <button {...props} type="button" className="discovery-turntable-play" aria-label={label} aria-pressed={playing} aria-busy={loading} disabled={loading || disabled} title={label}>
-      <span className="discovery-turntable-led" aria-hidden="true" />
       {hint}
       <span className="discovery-knob-face" aria-hidden="true">
         <span className="discovery-knob-dial"><span /></span>

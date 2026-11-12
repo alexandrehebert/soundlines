@@ -4,6 +4,11 @@
   /* Side B keeps its label while flipping back, after the light aliases are removed. */
   --record-label-background: linear-gradient(135deg, #efd6b5, #d4a271 57%, #ad6c4a);
   --record-label-ink: #44281d;
+  --soundlines-mark-light-background: #f4f0e6;
+  --soundlines-mark-light-border: #cbbfae;
+  --soundlines-mark-light-blue: #49668d;
+  --soundlines-mark-light-pink: #994f65;
+  --soundlines-mark-light-endpoint: #76577c;
 }
 
 :root[data-theme="light"] {
@@ -74,6 +79,15 @@
   --chart-e299e4: #b292b2;
   --color-rose-400: #ad837a;
 }
+
+:root[data-theme="light"] [data-soundlines-mark] > circle {
+  fill: var(--soundlines-mark-light-background);
+  stroke: var(--soundlines-mark-light-border);
+  stroke-width: 1;
+}
+:root[data-theme="light"] [data-soundlines-mark] path[stroke="#22d3ee"] { stroke: var(--soundlines-mark-light-blue); }
+:root[data-theme="light"] [data-soundlines-mark] path[stroke="#f472b6"] { stroke: var(--soundlines-mark-light-pink); }
+:root[data-theme="light"] [data-soundlines-mark] > svg > circle { fill: var(--soundlines-mark-light-endpoint); }
 
 .search-result-type { color: var(--search-result-type-color); }
 :root[data-theme="light"] .search-result-type {

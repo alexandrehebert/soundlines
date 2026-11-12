@@ -28,23 +28,33 @@ function setup(theme = 'dark') {
   const dataset = { theme }
   const events = new EventTarget()
   const storage = { setItem: vi.fn() }
-  vi.stubGlobal('document', { documentElement: { dataset } })
+  const favicons = { dark: { setAttribute: vi.fn() }, light: { setAttribute: vi.fn() } }
+  vi.stubGlobal('document', {
+    documentElement: { dataset },
+    querySelector: (selector: string) => selector === 'link[data-soundlines-favicon="dark"]'
+      ? favicons.dark
+      : selector === 'link[data-soundlines-favicon="light"]' ? favicons.light : null,
+  })
   vi.stubGlobal('window', events)
   vi.stubGlobal('localStorage', storage)
-  return { dataset, events, storage }
+  return { dataset, events, favicons, storage }
 }
 
 describe('color theme preference', () => {
   it('flips both ways and saves the app-wide preference', () => {
-    const { dataset, storage } = setup()
+    const { dataset, favicons, storage } = setup()
     const { theme, toggleTheme } = useColorTheme()
     expect(theme).toBe('dark')
     toggleTheme()
     expect(dataset.theme).toBe('light')
+    expect(favicons.dark.setAttribute).toHaveBeenLastCalledWith('media', 'not all')
+    expect(favicons.light.setAttribute).toHaveBeenLastCalledWith('media', 'all')
     expect(storage.setItem).toHaveBeenLastCalledWith('soundlines-theme', 'light')
     expect(useColorTheme().theme).toBe('light')
     toggleTheme()
     expect(dataset.theme).toBe('dark')
+    expect(favicons.dark.setAttribute).toHaveBeenLastCalledWith('media', 'all')
+    expect(favicons.light.setAttribute).toHaveBeenLastCalledWith('media', 'not all')
     expect(storage.setItem).toHaveBeenLastCalledWith('soundlines-theme', 'dark')
   })
 
@@ -55,7 +65,7 @@ describe('color theme preference', () => {
   })
 
   it('notifies subscribers, synchronizes other tabs, and cleans up listeners', () => {
-    const { dataset, events } = setup()
+    const { dataset, events, favicons } = setup()
     const { toggleTheme } = useColorTheme()
     const notify = vi.fn()
     const unsubscribe = store.subscribe!(notify)
@@ -65,6 +75,8 @@ describe('color theme preference', () => {
     Object.assign(change, { key: 'soundlines-theme', newValue: 'dark' })
     events.dispatchEvent(change)
     expect(dataset.theme).toBe('dark')
+    expect(favicons.dark.setAttribute).toHaveBeenLastCalledWith('media', 'all')
+    expect(favicons.light.setAttribute).toHaveBeenLastCalledWith('media', 'not all')
     expect(notify).toHaveBeenCalledTimes(2)
     unsubscribe()
     toggleTheme()

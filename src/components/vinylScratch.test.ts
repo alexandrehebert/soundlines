@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { MAX_SCRATCH_RATE, NORMAL_SPEED_DEG_PER_SEC, angleDelta, createScratchDeck, renderScratchSample, scratchRate } from './vinylScratch.ts'
+import { MAX_SCRATCH_RATE, NORMAL_SPEED_DEG_PER_SEC, angleDelta, createScratchDeck, renderScratchSample, scratchRate, spectrumBands } from './vinylScratch.ts'
 
 class TestAudioContext {
   static instances: TestAudioContext[] = []
@@ -39,6 +39,10 @@ class TestAudioContext {
 
   createBiquadFilter() {
     return { type: '', frequency: { value: 0 } }
+  }
+
+  createAnalyser() {
+    return { fftSize: 0, smoothingTimeConstant: 0, frequencyBinCount: 512, getByteFrequencyData: vi.fn((bins: Uint8Array) => bins.fill(255)) }
   }
 
   createBufferSource() {
@@ -89,6 +93,23 @@ describe('vinyl scratch', () => {
 
   it('degrades gracefully without Web Audio', () => {
     expect(createScratchDeck()).toBeNull()
+  })
+
+  it('groups FFT bins into normalised log-spaced bands', () => {
+    const bins = new Uint8Array(512)
+    bins.fill(255, 0, 20)
+    const levels = spectrumBands(bins, 44100, new Float32Array(8))
+    expect(levels[0]).toBe(1)
+    expect(levels[7]).toBe(0)
+    expect(levels.every((level) => level >= 0 && level <= 1)).toBe(true)
+  })
+
+  it('exposes the output spectrum as levels', () => {
+    vi.stubGlobal('AudioContext', TestAudioContext)
+    const deck = createScratchDeck()!
+    const levels = new Float32Array(4)
+    deck.readLevels(levels)
+    expect([...levels]).toEqual([1, 1, 1, 1])
   })
 
   it('resumes suspended and interrupted audio on a gesture, including a retry while pending', () => {

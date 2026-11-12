@@ -39,7 +39,14 @@ when the graph has no entries of its type, and a recent-additions list is omitte
 entry of that type carries an `addedOn` date. Chronology previews only
 apply to the default (v2) layout.
 
-The header and browser favicon share the same violet vinyl-disc icon.
+The header logo and browser favicon share the Soundlines mark. Dark theme uses
+cyan and pink waveforms with violet endpoints on a dark circle; light theme uses
+muted blue, rose and violet on a warm cream circle. The favicon follows the app's
+theme. While the brand link is hovered or keyboard-focused, or while the page or
+explorer view scrolls, endless randomly generated waves (varying peak spacing
+and height) travel from left to right between their fixed endpoints. Afterwards
+the favicon's still frame flows back in from the left and the motion eases to a
+stop on it. Reduced motion keeps the mark still.
 On first load, the landing page's grooved vinyl spins in the center before React
 starts. Once the landing page is ready, the cover fades away and the vinyl moves
 into its hero position over 700ms of animation time, tracking the hero position and

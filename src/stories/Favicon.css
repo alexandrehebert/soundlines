@@ -1,0 +1,64 @@
+.favicon-preview {
+  display: block;
+  flex: none;
+  overflow: hidden;
+  border-radius: 21.875%;
+  background: #020617;
+}
+
+.favicon-preview--soundlines {
+  border-radius: 50%;
+}
+
+.favicon-preview--soundlines.favicon-preview--light {
+  background: var(--soundlines-mark-light-background);
+}
+
+.favicon-preview--light > svg > circle {
+  fill: var(--soundlines-mark-light-background);
+  stroke: var(--soundlines-mark-light-border);
+  stroke-width: 1;
+}
+.favicon-preview--light > svg > svg > path[stroke="#22d3ee"] { stroke: var(--soundlines-mark-light-blue); }
+.favicon-preview--light > svg > svg > path[stroke="#f472b6"] { stroke: var(--soundlines-mark-light-pink); }
+.favicon-preview--light > svg > svg > circle { fill: var(--soundlines-mark-light-endpoint); }
+
+.favicon-preview img,
+.favicon-preview > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .favicon-preview--vinyl img {
+    animation: favicon-spin 4s linear infinite;
+  }
+
+  .favicon-preview--lineage img {
+    transform-origin: 25% 72%;
+    animation: favicon-grow 4s ease-in-out infinite;
+  }
+
+  .favicon-preview--flowing-s img {
+    animation: favicon-flow 4s ease-in-out infinite;
+  }
+
+  .favicon-story--paused .favicon-preview img {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes favicon-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes favicon-grow {
+  0%, 100% { transform: scale(.8); }
+  50% { transform: scale(1); }
+}
+
+@keyframes favicon-flow {
+  0%, 15%, 85%, 100% { clip-path: inset(0); }
+  50% { clip-path: inset(0 40% 0 0); }
+}

@@ -24,6 +24,12 @@ function chartRgb(source: string): number[] {
   return rgb(value)
 }
 
+function markColor(name: string): string {
+  const value = css.match(new RegExp(`--soundlines-mark-light-${name}:\\s*(#[\\da-f]{6});`, 'i'))?.[1]
+  if (!value) throw new Error(`Missing light brand color: ${name}`)
+  return value
+}
+
 function rgb(hex: string): number[] {
   const value = hex.replace('#', '')
   return [0, 2, 4].map((index) => parseInt(value.slice(index, index + 2), 16))
@@ -71,6 +77,38 @@ describe('light theme menu colors', () => {
     expect(contrast(color('slate-500'), color('slate-900'))).toBeGreaterThanOrEqual(4.5)
     expect(Math.max(...color('slate-950'))).toBeLessThan(250)
     expect(Math.max(...color('slate-900'))).toBeLessThan(250)
+  })
+})
+
+describe('light theme brand mark', () => {
+  it('keeps distinct waves and endpoints readable on the warm background', () => {
+    const background = rgb(markColor('background'))
+    const colors = ['blue', 'pink', 'endpoint'].map(markColor)
+    expect(new Set(colors).size).toBe(colors.length)
+    for (const value of colors) expect(contrast(rgb(value), background)).toBeGreaterThanOrEqual(4.5)
+  })
+
+  it('keeps the blue wave distinct from the rose wave', () => {
+    const blue = rgb(markColor('blue'))
+    const pink = rgb(markColor('pink'))
+    expect(blue[2] - blue[1]).toBeGreaterThanOrEqual(25)
+    expect(Math.hypot(...blue.map((channel, index) => channel - pink[index]))).toBeGreaterThanOrEqual(80)
+  })
+
+  it('applies the light palette to the header and the matching static favicon', () => {
+    const favicon = readFileSync(new URL('../public/favicon-light.svg', import.meta.url), 'utf8')
+    const storyCss = readFileSync(new URL('./stories/Favicon.css', import.meta.url), 'utf8')
+    expect(css).toContain('[data-soundlines-mark] > circle {')
+    expect(css).toContain('[data-soundlines-mark] path[stroke="#22d3ee"] { stroke: var(--soundlines-mark-light-blue); }')
+    expect(css).toContain('[data-soundlines-mark] path[stroke="#f472b6"] { stroke: var(--soundlines-mark-light-pink); }')
+    expect(css).toContain('[data-soundlines-mark] > svg > circle { fill: var(--soundlines-mark-light-endpoint); }')
+    expect(favicon).toContain(`fill="${markColor('background')}" stroke="${markColor('border')}"`)
+    expect(favicon).toContain(`stroke="${markColor('blue')}"`)
+    expect(favicon).toContain(`stroke="${markColor('pink')}"`)
+    expect(favicon).toContain(`fill="${markColor('endpoint')}"`)
+    for (const name of ['background', 'border', 'blue', 'pink', 'endpoint']) {
+      expect(storyCss).toContain(`var(--soundlines-mark-light-${name})`)
+    }
   })
 })
 

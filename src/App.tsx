@@ -119,7 +119,7 @@ export function Explorer() {
         <BrandLink
           href={localizePath('/', locale)}
           scrollDistance={explorerScrollDistance}
-          iconClassName="h-5 w-5 text-violet-400 md:h-6 md:w-6"
+          iconClassName="h-6 w-6 shrink-0 md:h-7 md:w-7"
           aria-label={t('home')}
           onClick={(event) => {
             if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return

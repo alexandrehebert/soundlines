@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/favicon.svg" width="96" height="96" alt="Soundlines vinyl record logo" />
+  <img src="./public/favicon.svg" width="96" height="96" alt="Soundlines multicolored waveform logo" />
 </p>
 
 <h1 align="center">Soundlines</h1>
@@ -236,8 +236,9 @@ live in [docs/graph/evidence](./docs/graph/evidence). Tooling is documented in
 ## Credits
 
 - Created by [Alexandre “Axoune” Hebert](https://github.com/alexandrehebert).
-- The vinyl logo is adapted from [Lucide's Disc 3 icon](https://lucide.dev/icons/disc-3)
-  (ISC license); the full notice is in [favicon.svg](./public/favicon.svg).
+- The previous vinyl favicon was adapted from
+  [Lucide's Disc 3 icon](https://lucide.dev/icons/disc-3) (ISC license); the full
+  notice is in its [Storybook fixture](./src/stories/fixtures/favicon-concepts/vinyl.svg).
 - The landing loop and genre previews were generated with
   [ACE-Step 1.5](https://github.com/ace-step/ACE-Step-1.5). See the
   [audio guide](./docs/AUDIO.md) for details.

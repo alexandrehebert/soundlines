@@ -19,6 +19,8 @@ function applyTheme(theme: ColorTheme) {
   restoreTransitions?.()
   root.dataset.themeSwitching = ''
   root.dataset.theme = theme
+  document.querySelector('link[data-soundlines-favicon="dark"]')?.setAttribute('media', theme === 'dark' ? 'all' : 'not all')
+  document.querySelector('link[data-soundlines-favicon="light"]')?.setAttribute('media', theme === 'light' ? 'all' : 'not all')
   if (typeof window.requestAnimationFrame !== 'function') {
     delete root.dataset.themeSwitching
     return

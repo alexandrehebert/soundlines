@@ -8,6 +8,7 @@ const publicBase = `${new URL(PROJECT_SITE_URL).pathname.replace(/\/$/, '')}/sto
 
 const publicStories = [
   'Colors',
+  'Favicon',
   'InstrumentArtwork',
   'AudioPreviewPlayer',
   'Turntable',
@@ -29,6 +30,7 @@ const publicStaticDirs = [
     (folder) => ({ from: `../public/${folder}`, to: `/${folder}` }),
   ),
   { from: '../public/favicon.svg', to: '/favicon.svg' },
+  { from: '../public/favicon-light.svg', to: '/favicon-light.svg' },
   { from: '../public/genre-previews/jazz.m4a', to: '/genre-previews/jazz.m4a' },
   artworkFixture,
 ]

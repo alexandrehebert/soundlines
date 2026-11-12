@@ -8,6 +8,7 @@ import { VinylRecord } from './VinylRecord.tsx'
 import { claimPlayback, releasePlayback } from './exclusivePlayback.ts'
 import { TurntablePlayButton } from './TurntablePlayButton.tsx'
 import { TurntableSideKnob } from './TurntableSideKnob.tsx'
+import { TurntableLcd } from './TurntableLcd.tsx'
 import { TurntableTonearm } from './TurntableTonearm.tsx'
 import { featureFlags } from '../featureFlags.ts'
 import './Home.css'
@@ -306,6 +307,7 @@ export function Turntable({ theme, toggleTheme, children }: { theme: ColorTheme;
           {showTonearm && <TurntableTonearm active={playing || scratching} />}
         </div>
         <div className="discovery-turntable-controls">
+          <TurntableLcd source={deck} active={playing || scratching} playing={playing} loading={loading} theme={theme} />
           <TurntablePlayButton
             ref={playButton}
             playing={playing}
