@@ -75,10 +75,21 @@ jobs:
                 --input -
           )"
 
-          if ! jq -e 'any(.assignees[]?; .type == "Bot" and (.login == "Copilot" or .login == "copilot-swe-agent[bot]" or .login == "copilot-swe-agent"))' <<< "$assignment" > /dev/null; then
-            echo "::error::GitHub did not assign Copilot to the issue. Check the token and Copilot access."
-            exit 1
-          fi
+          copilot_assigned='any(.assignees[]?; .type == "Bot" and (.login == "Copilot" or .login == "copilot-swe-agent[bot]" or .login == "copilot-swe-agent"))'
+          # The assignment response can precede the asynchronous Copilot assignment, so re-read the issue.
+          for attempt in 1 2 3 4 5 6 7; do
+            if jq -e "$copilot_assigned" <<< "$assignment" > /dev/null; then
+              exit 0
+            fi
+            if [[ "$attempt" == 7 ]]; then
+              break
+            fi
+            sleep 10
+            assignment="$(gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER")"
+          done
+
+          echo "::error::GitHub did not assign Copilot to the issue. Check the token and Copilot access."
+          exit 1
 
       - name: Mark the issue as sent to the agent
         env:

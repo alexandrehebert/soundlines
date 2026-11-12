@@ -87,6 +87,15 @@ time matter, especially in Copilot cloud.
   claim-specific source per claim is enough, and one page may support several claims. Do not search for
   more after a claim is sourced. If a host is blocked or unreachable, do not retry it or try search
   engines; use another supplied source or leave the claim out and report it.
+- **Finding URLs:** never guess page URLs. Discover real ones cheaply: the external links of the
+  relevant Wikipedia article
+  (`https://en.wikipedia.org/w/api.php?action=parse&prop=externallinks&format=json&page=<Title>`) and
+  MusicBrainz URL relationships
+  (`https://musicbrainz.org/ws/2/artist/?query=<name>&fmt=json`, then `/ws/2/artist/<mbid>?inc=url-rels&fmt=json`).
+  Prefer links whose host is already cited in the graph, fetch them and confirm that the claim is on the page.
+- **Fetch results:** check the HTTP status and the page title. A 403 "Just a moment…" or CAPTCHA page
+  is bot protection rather than the firewall, so treat the host as unreachable for that session. A firewall
+  block shows up as a DNS or connection failure; report the host so a maintainer can allowlist it.
 - **Reading:** never read `graph.json`, overlays or the coverage CSV whole; use `lookup.mjs`, `grep`
   and narrow ranges. Read only the GRAPH.md sections the change touches.
 - **Delegation:** for small changes (roughly ten entities or fewer), translate, fact-check and review

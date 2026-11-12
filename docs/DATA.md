@@ -119,7 +119,10 @@ allowlist**, keeping the firewall enabled. For the Soca example, these source pa
 - `https://daily.redbullmusicacademy.com/2016/06/ras-shorty-i-the-soul-of-calypso/`
 
 Additional artist sources and redirect destinations may need their own reviewed rules.
-Allowlisting does not bypass a publisher's login, paywall or anti-bot restrictions.
+Allowlisting does not bypass a publisher's login, paywall or anti-bot restrictions: Britannica and
+Smithsonian Magazine, for example, answer automated requests with a 403 "Just a moment…" challenge.
+Keep `en.wikipedia.org` and `musicbrainz.org` allowlisted so the agent can discover real source URLs
+through their APIs instead of guessing them; it prefers hosts the graph already cites.
 See [GitHub's firewall documentation](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-the-firewall).
 
 A green assignment workflow means Copilot was assigned, not that graph editing succeeded.

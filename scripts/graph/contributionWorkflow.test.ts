@@ -15,21 +15,30 @@ function step(name: string) {
   return contents
 }
 
-function run(name: string, response: object, token = 'test-token', apiStatus = 0) {
+function run(name: string, response: object, token = 'test-token', apiStatus = 0, followUp: object = response) {
   const script = step(name).split('        run: |\n')[1]?.replace(/^          /gm, '')
   if (!script) throw new Error(`Missing workflow script: ${name}`)
   const fixture = mkdtempSync(join(tmpdir(), 'soundlines-contribution-workflow-'))
   const output = join(fixture, 'output')
   const payload = join(fixture, 'payload')
+  const calls = join(fixture, 'calls')
   writeFileSync(output, '')
   writeFileSync(payload, '')
+  writeFileSync(calls, '')
   try {
+    // The first gh call answers with the response; later calls (issue re-reads) answer with followUp.
     const result = spawnSync('bash', ['-e', '-o', 'pipefail', '-c', `
       gh() {
-        cat > "$TEST_PAYLOAD"
-        printf '%s\\n' "$TEST_RESPONSE"
+        echo "$*" >> "$TEST_CALLS"
+        if [[ "$(wc -l < "$TEST_CALLS")" -eq 1 ]]; then
+          cat > "$TEST_PAYLOAD"
+          printf '%s\\n' "$TEST_RESPONSE"
+        else
+          printf '%s\\n' "$TEST_FOLLOW_UP"
+        fi
         return "$TEST_API_STATUS"
       }
+      sleep() { :; }
       ${script}
     `], {
       encoding: 'utf8',
@@ -40,7 +49,9 @@ function run(name: string, response: object, token = 'test-token', apiStatus = 0
         ISSUE_NUMBER: '1',
         GITHUB_OUTPUT: output,
         TEST_PAYLOAD: payload,
+        TEST_CALLS: calls,
         TEST_RESPONSE: JSON.stringify(response),
+        TEST_FOLLOW_UP: JSON.stringify(followUp),
         TEST_API_STATUS: String(apiStatus),
       },
     })
@@ -48,6 +59,7 @@ function run(name: string, response: object, token = 'test-token', apiStatus = 0
       ...result,
       output: readFileSync(output, 'utf8'),
       payload: readFileSync(payload, 'utf8'),
+      calls: readFileSync(calls, 'utf8').split('\n').filter(Boolean),
     }
   } finally {
     rmSync(fixture, { recursive: true, force: true })
@@ -96,10 +108,18 @@ describe('graph contribution assignment workflow', () => {
     {},
     { assignees: [] },
     { assignees: [{ login: 'Copilot', type: 'User' }] },
-  ])('fails explicitly when the response has no Copilot bot %#', (response) => {
+  ])('fails explicitly when Copilot never appears as a bot assignee %#', (response) => {
     const result = run(assignStep, response)
     expect(result.status).toBe(1)
     expect(result.stdout).toContain('::error::GitHub did not assign Copilot')
+    expect(result.calls.filter((call) => call === 'api repos/alexandrehebert/soundlines/issues/1')).toHaveLength(6)
+  })
+
+  it('waits for the asynchronous Copilot assignment after an empty assignment response', () => {
+    const result = run(assignStep, { assignees: [] }, 'test-token', 0, { assignees: [{ login: 'Copilot', type: 'Bot' }] })
+    expect(result.status, result.stderr).toBe(0)
+    expect(result.stdout).not.toContain('::error::')
+    expect(result.calls).toHaveLength(2)
   })
 
   it('fails before calling GitHub when the token is missing', () => {
