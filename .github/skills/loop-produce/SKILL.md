@@ -35,7 +35,8 @@ ACESTEP_HOME is under `/tmp` or `/private/tmp`, warn the user: macOS purges it o
 3. **Render takes (DiT phase)** — `$S/ace-server.sh start final` (≈2 min, verifies the XL model is
    loaded), then `node $S/render-takes.mjs docs/loops/briefs/<slug>.json $STAGE final`. ≈7 min per
    seed (80 steps × ~5 s on 25 GB M-series); five seeds ≈ 40 min. Run it as an async/background
-   command and wait for completion; it resumes and skips finished seeds if interrupted.
+   command and wait for completion; it resumes and skips finished seeds if interrupted. Use a fresh
+   stage after changing the render request. The renderer rejects stale WAVs anywhere in the takes folder.
 4. **Screen takes** — have `loop-validate` run take mode on `$STAGE/takes/*.wav` with `--png-dir $STAGE/png`.
    Move FAIL takes to `$STAGE/rejected/` (with the reason) so the extractor ignores them. If fewer
    than two takes survive, render extra seeds (`render-takes.mjs … final <seed> …` after planning them).

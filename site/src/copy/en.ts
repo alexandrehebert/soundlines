@@ -125,8 +125,8 @@ export const en: Copy = {
             {
               actor: 'agent',
               title: 'Re-open the sources',
-              text: 'A fact-checker reads each source again and records a verdict: keep, correct, lower the confidence, change the type, or remove.',
-              output: ['doc', 'Verdict written in the evidence note'],
+              text: 'The fact-checker verifies the sources and recommends corrections, lower confidence, retyping or removal. During review, it reports findings to the reviewer, who sends necessary changes to the editor.',
+              output: ['doc', 'Fact-check findings'],
               preview: { kind: 'note', title: 'Evidence note', lines: ['Source checked, wording updated', 'Derived from · medium', 'Reviewed 2026-11-05'] },
             },
             {
@@ -137,7 +137,9 @@ export const en: Copy = {
               preview: { kind: 'screen', shot: 'graph', alt: 'Chicago house in the Soundlines genre timeline, with its line to disco' },
             },
           ],
-          loops: [{ from: [6, 7], to: 5, label: 'Failed check or weak source' }],
+          loops: [
+            { from: [6, 7, 8], to: 5, label: 'Validation, evidence or review findings' },
+          ],
         },
       ],
       sections: [
@@ -188,7 +190,7 @@ export const en: Copy = {
       flows: [
         {
           title: 'From museum photo to app icon',
-          caption: 'Every instrument goes through the same five stations.',
+          caption: 'From a sourced brief to human sign-off.',
           steps: [
             {
               actor: 'agent',
@@ -225,17 +227,18 @@ export const en: Copy = {
               output: ['report', 'Check report and PNG review sheets'],
               preview: { kind: 'checks', items: ['Family palette', 'File structure and size', 'Icon readable at 24 px', 'Matches the generator'] },
             },
+            { actor: 'agent', title: 'Review the artwork', text: 'The artwork reviewer compares the sheets with the brief and checks provenance. Correct a drawing that diverges from a sound brief, revise a flawed brief, and stop on failed validation or provenance.', output: ['report', 'Review verdict'], preview: { kind: 'checks', items: ['Drawing or asset checks need fixes', 'Brief or references need revision'] } },
             {
               actor: 'human',
               title: 'Look and approve',
-              text: 'Rendered sheets are compared with the brief, before and after. A person gives the final sign-off in Storybook, the component gallery.',
+              text: 'A person gives final sign-off in Storybook after the artwork reviewer clears it.',
               output: ['app', 'Artwork shown in the app'],
               preview: { kind: 'screen', shot: 'artwork', alt: 'The saxophone panel in the Soundlines instrument timeline' },
             },
           ],
           loops: [
-            { from: [4, 5], to: 2, label: 'Failed check or unreadable icon' },
-            { from: [5], to: 1, label: 'Wrong anatomy' },
+            { from: [4, 5], to: 2, label: 'Drawing or asset checks need fixes' },
+            { from: [5], to: 1, label: 'Brief or references need revision' },
           ],
         },
       ],
@@ -292,6 +295,7 @@ export const en: Copy = {
               output: ['audio', 'Raw takes'],
               preview: { kind: 'takes' },
             },
+            { actor: 'test', title: 'Screen the takes', text: 'Reject failed takes before extraction. If fewer than two survive, plan and render additional seeds.', output: ['audio', 'Screened takes'], preview: { kind: 'checks', items: ['Screened takes'] } },
             {
               actor: 'script',
               title: 'Find the perfect cut',
@@ -312,8 +316,9 @@ export const en: Copy = {
               title: 'Measure',
               text: 'Exact length and tempo, loudness, clipping, dropouts, bar-to-bar stability, mono bass and signs of hidden vocals in the spectrogram.',
               output: ['report', 'Measurements and spectrograms'],
-              preview: { kind: 'checks', items: ['Exactly 16 beats', 'No clipping or dropouts', 'Bass in mono', 'No hidden vocals'] },
+              preview: { kind: 'checks', items: ['Exactly 16 beats', 'No clipping or dropouts', 'Bass in mono', 'Vocal-band warning'] },
             },
+            { actor: 'agent', title: 'Review the loop', text: 'Review the spectrograms, musical fit and provenance. Failed checks or provenance block release. A reviewer can request another cut, another take or a revised brief.', output: ['report', 'Review verdict'], preview: { kind: 'checks', items: ['Review verdict'] } },
             {
               actor: 'human',
               title: 'Listen',
@@ -328,9 +333,20 @@ export const en: Copy = {
             },
           ],
           loops: [
-            { from: [5, 6], to: 2, label: 'Hidden vocals or audible seam: new takes' },
-            { from: [6], to: 1, label: 'Wrong groove: new brief' },
+            { from: [4, 7], to: 2, label: 'Too few usable takes or a new performance is needed' },
+            { from: [6, 7], to: 5, label: 'Wrong length or audible seam: try another cut' },
+            { from: [7], to: 1, label: 'Brief or originality problem: revise the brief' },
           ],
+        },
+        {
+          title: 'How catalogue previews are made',
+          caption: 'Catalogue previews have their own briefs, renderer and review process.',
+          steps: [
+            { actor: 'agent', title: 'Prepare a preview brief', text: 'Describe the genre and its instrumentation.', output: ['doc', 'Preview brief'], preview: { kind: 'checks', items: ['Preview brief'] } },
+            { actor: 'script', title: 'Render the preview', text: 'The standard renderer uses ACE-Step Turbo at eight steps with a 1.7B planner. It takes the middle ten seconds of a 32-second performance. Resume with the same progress file to skip completed clips and rerun failed genres.', output: ['audio', '10-second clip'], preview: { kind: 'checks', items: ['10-second clip'] } },
+            { actor: 'agent', title: 'Review and compare', text: 'Check playback and technical defects, then score the clips. For each flagged genre, revise the brief and stage one retake. Compare both versions using the same scorer and keep the original if the retake does not improve it.', output: ['report', 'Selected clip and comparison record'], preview: { kind: 'checks', items: ['Selected clip and comparison record'] } },
+          ],
+          loops: [{ from: [3], to: 1, label: 'One staged retake per flagged genre' }],
         },
       ],
       sections: [
@@ -397,7 +413,7 @@ export const en: Copy = {
             {
               actor: 'test',
               title: 'Tests and build',
-              text: 'Graph and artwork checks run on GitHub for every pull request; tests, linting and a production build run before merging, and Vercel builds the app again to deploy it.',
+              text: 'Graph and artwork checks run on GitHub when a pull request touches their configured paths. Run the relevant checks before merging. Vercel builds the app for deployment.',
               output: ['report', 'Green checks and a production build'],
               preview: { kind: 'checks', items: ['Graph checks', 'Artwork checks', 'Tests and linting', 'Production build'] },
             },

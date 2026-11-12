@@ -3,7 +3,7 @@
 // final: XL SFT DiT, 80 steps, guidance 7 + ADG, from the 4B LM codes in <stage>/codes (plan-codes.py).
 // draft: turbo DiT, 8 steps, in-server 1.7B LM planning. For brief iteration only; never ship a draft.
 import { existsSync, readFileSync } from 'node:fs'
-import { mkdir, rename, writeFile } from 'node:fs/promises'
+import { mkdir, readdir, rename, writeFile } from 'node:fs/promises'
 import { join, resolve } from 'node:path'
 import { setTimeout as delay } from 'node:timers/promises'
 import { planningHash, readBrief } from './brief.mjs'
@@ -83,15 +83,22 @@ const common = {
   use_random_seed: false,
 }
 
+// Extraction considers the whole takes directory, including seeds outside this invocation.
+for (const file of await readdir(takes)) {
+  if (!file.endsWith('.wav')) continue
+  const seed = file.slice(0, -4)
+  const requestPath = join(takes, `${seed}.request.json`)
+  const previous = existsSync(requestPath) ? JSON.parse(readFileSync(requestPath, 'utf8')) : null
+  if (!previous || previous.model !== model
+      || Object.entries(common).some(([key, value]) => previous[key] !== value)
+      || JSON.stringify(previous.source_provenance) !== JSON.stringify(sourceProvenance)) {
+    throw new Error(`seed ${seed}: existing take does not match the current render request; use a fresh stage.`)
+  }
+}
+
 for (const seed of seeds) {
   const wav = join(takes, `${seed}.wav`)
   if (existsSync(wav)) {
-    if (profile === 'arrangement') {
-      const previous = JSON.parse(readFileSync(join(takes, `${seed}.request.json`), 'utf8'))
-      if (JSON.stringify(previous.source_provenance) !== JSON.stringify(sourceProvenance)) {
-        throw new Error(`seed ${seed}: existing take has stale source conditioning; use a fresh stage.`)
-      }
-    }
     console.log(`seed ${seed}: already rendered`)
     continue
   }

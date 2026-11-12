@@ -142,18 +142,32 @@
     border-right-width: 0;
   }
   /* Leaves from the product icon (centre 0.925rem down, 0.45rem into the rail column). */
-  .flow-loop-out {
+  .flow-loop-out,
+  .flow-loop-branch {
     top: 0;
     right: -0.45rem;
     height: 0.925rem;
     border-bottom-width: 2px;
     border-bottom-left-radius: 0.6rem;
   }
-  .flow-loop-branch {
-    top: 0.925rem;
-    right: -0.45rem;
-    border-left-width: 0;
-    border-top-width: 2px;
+  /* Clear the shared dashed line behind the arrow and leave a gap below it. */
+  .flow-loop-branch::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    width: 4px;
+    height: 10px;
+    background: var(--color-bg);
+  }
+  .flow-loop-branch::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    border: 4px solid transparent;
+    border-top-width: 0;
+    border-bottom: 5px solid var(--color-accent);
   }
   .flow-step {
     position: relative;

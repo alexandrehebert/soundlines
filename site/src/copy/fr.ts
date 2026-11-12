@@ -125,8 +125,8 @@ export const fr: Copy = {
             {
               actor: 'agent',
               title: 'Rouvrir les sources',
-              text: 'Un vérificateur relit chaque source et consigne un verdict : conserver, corriger, baisser la confiance, changer le type ou supprimer.',
-              output: ['doc', 'Verdict inscrit dans la note de preuves'],
+              text: 'La vérification des sources peut recommander une correction, une baisse de confiance, un autre type de lien ou un retrait. En mode revue, les constats sont transmis à la personne chargée de la revue, qui renvoie les corrections nécessaires à l’agent d’édition.',
+              output: ['doc', 'Constats de vérification'],
               preview: { kind: 'note', title: 'Note de preuves', lines: ['Source vérifiée, formulation corrigée', 'Dérivé de · moyenne', 'Relu le 2026-11-05'] },
             },
             {
@@ -137,7 +137,9 @@ export const fr: Copy = {
               preview: { kind: 'screen', shot: 'graph', alt: 'La Chicago house dans la chronologie des genres de Soundlines, avec sa ligne vers le disco' },
             },
           ],
-          loops: [{ from: [6, 7], to: 5, label: 'Contrôle échoué ou source fragile' }],
+          loops: [
+            { from: [6, 7, 8], to: 5, label: 'Échec de la validation, preuve insuffisante ou problème relevé en revue' },
+          ],
         },
       ],
       sections: [
@@ -188,7 +190,7 @@ export const fr: Copy = {
       flows: [
         {
           title: 'De la photo de musée à l’icône',
-          caption: 'Chaque instrument passe par les cinq mêmes étapes.',
+          caption: 'Du brief documenté à l’accord humain.',
           steps: [
             {
               actor: 'agent',
@@ -225,17 +227,18 @@ export const fr: Copy = {
               output: ['report', 'Rapport de contrôles et planches PNG'],
               preview: { kind: 'checks', items: ['Palette de la famille', 'Structure et poids du fichier', 'Icône lisible à 24 px', 'Conforme au générateur'] },
             },
+            { actor: 'agent', title: 'Examiner l’illustration', text: 'L’agent compare les planches au brief et vérifie la provenance. Il demande de corriger un dessin qui s’écarte d’un brief solide, de revoir un brief défaillant, ou bloque la publication si les contrôles ou la provenance échouent.', output: ['report', 'Verdict de revue'], preview: { kind: 'checks', items: ['Dessin ou fichiers à corriger', 'Brief ou références à revoir'] } },
             {
               actor: 'human',
               title: 'Regarder et approuver',
-              text: 'Les planches rendues sont comparées au brief, avant et après. Une personne donne l’accord final dans Storybook, la galerie de composants.',
+              text: 'Une personne donne l’accord final dans Storybook après la revue de l’illustration.',
               output: ['app', 'Illustration affichée dans l’application'],
               preview: { kind: 'screen', shot: 'artwork', alt: 'La fiche du saxophone dans la chronologie des instruments de Soundlines' },
             },
           ],
           loops: [
-            { from: [4, 5], to: 2, label: 'Contrôle échoué ou icône illisible' },
-            { from: [5], to: 1, label: 'Anatomie fausse' },
+            { from: [4, 5], to: 2, label: 'Dessin ou fichiers à corriger' },
+            { from: [5], to: 1, label: 'Brief ou références à revoir' },
           ],
         },
       ],
@@ -292,6 +295,7 @@ export const fr: Copy = {
               output: ['audio', 'Prises brutes'],
               preview: { kind: 'takes' },
             },
+            { actor: 'test', title: 'Trier les prises', text: 'Écarter les prises qui échouent aux contrôles avant la découpe. S’il en reste moins de deux, planifier et générer des prises avec de nouvelles graines.', output: ['audio', 'Prises validées'], preview: { kind: 'checks', items: ['Prises validées'] } },
             {
               actor: 'script',
               title: 'Trouver la coupe parfaite',
@@ -312,8 +316,9 @@ export const fr: Copy = {
               title: 'Mesurer',
               text: 'Durée et tempo exacts, volume, écrêtage, coupures, stabilité d’une mesure à l’autre, basses en mono et indices de voix cachées dans le spectrogramme.',
               output: ['report', 'Mesures et spectrogrammes'],
-              preview: { kind: 'checks', items: ['Exactement 16 temps', 'Ni écrêtage ni coupure', 'Basses en mono', 'Aucune voix cachée'] },
+              preview: { kind: 'checks', items: ['Exactement 16 temps', 'Ni écrêtage ni coupure', 'Basses en mono', 'Alerte dans la bande vocale'] },
             },
+            { actor: 'agent', title: 'Examiner la boucle', text: 'L’agent examine les spectrogrammes, le rendu musical et la provenance. Un échec des contrôles ou un problème de provenance bloque la publication. Il peut demander une nouvelle découpe, une autre prise ou un brief révisé.', output: ['report', 'Verdict de revue'], preview: { kind: 'checks', items: ['Verdict de revue'] } },
             {
               actor: 'human',
               title: 'Écouter',
@@ -328,9 +333,20 @@ export const fr: Copy = {
             },
           ],
           loops: [
-            { from: [5, 6], to: 2, label: 'Voix cachée ou raccord audible : nouvelles prises' },
-            { from: [6], to: 1, label: 'Groove inadapté : nouveau brief' },
+            { from: [4, 7], to: 2, label: 'Trop peu de prises utilisables ou nouvelle interprétation nécessaire' },
+            { from: [6, 7], to: 5, label: 'Durée incorrecte ou raccord audible : essayer une autre découpe' },
+            { from: [7], to: 1, label: 'Problème de brief ou d’originalité : revoir le brief' },
           ],
+        },
+        {
+          title: 'Comment sont créés les extraits du catalogue',
+          caption: 'Les extraits ont leurs propres briefs, leur moteur de rendu et leur procédure de revue.',
+          steps: [
+            { actor: 'agent', title: 'Préparer le brief', text: 'Décrire le genre et son instrumentation.', output: ['doc', 'Brief de l’extrait'], preview: { kind: 'checks', items: ['Brief de l’extrait'] } },
+            { actor: 'script', title: 'Générer l’extrait', text: 'Le rendu standard utilise ACE-Step Turbo en huit étapes avec un planificateur de 1,7 milliard de paramètres. Il extrait les dix secondes centrales d’une prise de 32 secondes. Le fichier de suivi permet d’ignorer les extraits terminés et de relancer les échecs.', output: ['audio', 'Extrait de 10 secondes'], preview: { kind: 'checks', items: ['Extrait de 10 secondes'] } },
+            { actor: 'agent', title: 'Vérifier et comparer', text: 'Vérifier la lecture et les défauts techniques, puis noter les extraits. Pour chaque genre signalé, revoir le brief et générer une seule nouvelle prise à part. Comparer les deux avec le même outil de notation et garder l’original si la nouvelle prise ne l’améliore pas.', output: ['report', 'Extrait retenu et comparaison'], preview: { kind: 'checks', items: ['Extrait retenu et comparaison'] } },
+          ],
+          loops: [{ from: [3], to: 1, label: 'Une seule nouvelle prise par genre signalé' }],
         },
       ],
       sections: [
@@ -397,7 +413,7 @@ export const fr: Copy = {
             {
               actor: 'test',
               title: 'Tests et build',
-              text: 'Les contrôles du graphe et des dessins tournent sur GitHub à chaque pull request ; tests, lint et build de production passent avant la fusion, et Vercel reconstruit l’application pour la déployer.',
+              text: 'Les contrôles du graphe et des dessins tournent sur GitHub quand une pull request touche les chemins configurés. Lancez les contrôles pertinents avant la fusion. Vercel compile l’application pour la déployer.',
               output: ['report', 'Contrôles au vert et build de production'],
               preview: { kind: 'checks', items: ['Contrôles du graphe', 'Contrôles des illustrations', 'Tests et lint', 'Build de production'] },
             },
