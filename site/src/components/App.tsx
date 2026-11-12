@@ -1,4 +1,4 @@
-import { AudioLines, Cable, Hammer, House, Network, Palette } from 'lucide-react'
+import { AudioLines, Cable, ChevronDown, Hammer, House, Network, Palette } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { locales, slugs, copy, repository, siteUrl, type SiteCopy as Copy, type Locale, type Page, type Slug } from '../content.ts'
 import { appUrl, storybookUrl } from '../links.ts'
@@ -21,7 +21,7 @@ export function App({ locale, slug }: Route) {
     <>
       <a href="#main" className="skip-link">{c.skip}</a>
       <Header c={c} locale={locale} slug={slug} />
-      <PageNav c={c} locale={locale} slug={slug} className="border-b" />
+      <PageNav c={c} locale={locale} slug={slug} className="lg:border-b" />
       <main id="main" className="shell pb-12">
         <Hero c={c} page={page} home={home} />
         {home && <Stats c={c} locale={locale} />}
@@ -46,9 +46,10 @@ export function App({ locale, slug }: Route) {
         <PageNav c={c} locale={locale} slug={slug} className="border-t" />
       </main>
       <footer className="shell flex flex-wrap items-center gap-x-8 gap-y-2 border-t border-line py-8 text-sm text-muted">
-        <a className="font-bold tracking-tight text-fg" href={href({ locale, slug: 'index' })}>Soundlines</a>
+        <a className="font-bold tracking-tight text-fg" href={href({ locale, slug: 'index' })} target="_blank" rel="noopener noreferrer">Soundlines</a>
         <p className="mr-auto max-w-150">{c.footer}</p>
-        <a href={repository}>GitHub {external}</a>
+        <a href={storybookUrl} target="_blank" rel="noopener noreferrer">Storybook {external}</a>
+        <a href={repository} target="_blank" rel="noopener noreferrer">GitHub {external}</a>
       </footer>
     </>
   )
@@ -137,22 +138,33 @@ function HeaderIconLink({ href, label, children }: {
 }
 
 function PageNav({ c, locale, slug, className }: ChromeProps & { className: string }) {
+  const CurrentIcon = pageIcons[slug]
+  const links = slugs.map((key) => {
+    const Icon = pageIcons[key]
+    return (
+      <a
+        key={key}
+        href={href({ locale, slug: key })}
+        aria-current={key === slug ? 'page' : undefined}
+        className="flex items-center gap-1.5 py-3.5 text-sm text-muted hover:text-fg aria-[current=page]:text-accent lg:shrink-0 lg:whitespace-nowrap lg:aria-[current=page]:shadow-[inset_0_-2px_var(--color-accent)]"
+      >
+        <Icon size={16} aria-hidden="true" className="shrink-0" />
+        {c.pages[key].label}
+      </a>
+    )
+  })
+
   return (
-    <nav aria-label={c.navigation} className={`shell flex gap-x-5 overflow-x-auto border-line ${className}`}>
-      {slugs.map((key) => {
-        const Icon = pageIcons[key]
-        return (
-          <a
-            key={key}
-            href={href({ locale, slug: key })}
-            aria-current={key === slug ? 'page' : undefined}
-            className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap py-3.5 text-sm text-muted hover:text-fg aria-[current=page]:text-accent aria-[current=page]:shadow-[inset_0_-2px_var(--color-accent)]"
-          >
-            <Icon size={16} aria-hidden="true" />
-            {c.pages[key].label}
-          </a>
-        )
-      })}
+    <nav aria-label={c.navigation} className={`shell border-line ${className}`}>
+      <details className="group py-2 lg:hidden">
+        <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 rounded-lg border border-line bg-surface px-3 text-sm font-semibold text-fg [&::-webkit-details-marker]:hidden">
+          <CurrentIcon size={16} aria-hidden="true" className="shrink-0 text-accent" />
+          {c.pages[slug].label}
+          <ChevronDown size={16} aria-hidden="true" className="ml-auto shrink-0 group-open:rotate-180" />
+        </summary>
+        <div className="mt-1 divide-y divide-line px-3">{links}</div>
+      </details>
+      <div className="hidden flex-wrap gap-x-5 lg:flex">{links}</div>
     </nav>
   )
 }

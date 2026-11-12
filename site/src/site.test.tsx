@@ -50,7 +50,8 @@ describe('project companion content', () => {
     expect(html).toContain(MCP_URL)
     expect(html).toContain('npx @modelcontextprotocol/inspector')
     expect(html).toContain('genre:french-touch')
-    expect(html.match(/<details\b/g)).toHaveLength(4)
+    const tools = html.match(/<section aria-labelledby="mcp-tools">([\s\S]*?)<\/section>/)?.[1]
+    expect(tools?.match(/<details\b/g)).toHaveLength(4)
     expect(html).toContain('query_graph')
   })
 
