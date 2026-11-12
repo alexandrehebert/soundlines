@@ -14,3 +14,5 @@ Render 32-second performances, extracting seconds 10–20 as stereo with 25 ms e
 For retakes set `ACESTEP_PREVIEW_RETAKE=1`, explicit genre arguments, a fresh `ACESTEP_PREVIEW_STATE`, and `ACESTEP_PREVIEW_OUTPUT` pointing to a separate staging directory. Never overwrite originals before comparison. Rock and Funk are protected reference clips; the runner skips existing copies, so explicitly requested reference retakes require a fresh staging directory.
 
 Hand staged files, briefs, configuration and progress paths to preview-review. Stop only servers you started, including on failure. Do not claim to have listened or to have matched quality merely because settings match.
+
+Genres added by graph contributions are listed in `PENDING_GENRE_PREVIEWS` (`src/data/genrePreviews.ts`). When one of their previews ships to `public/genre-previews/`, remove its id from that set in the same change; `src/data/genreSamples.test.ts` fails if the list and the shipped files disagree.

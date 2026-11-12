@@ -85,6 +85,14 @@ the issue should include source links; the agent must leave out claims it cannot
 independently verify with the tools and source material available to it.
 New genres also need at least three sourced key-artist relationships; a genre's origin source
 alone is not sufficient for a complete addition.
+The agent does not render audio or artwork: a new genre is listed in `PENDING_GENRE_PREVIEWS`
+([genrePreviews.ts](../src/data/genrePreviews.ts)), which hides its player until a maintainer renders
+and reviews its preview locally with the preview pipeline. New instruments likewise wait for the
+local artwork pipeline.
+To keep runs cheap and short, the agent follows the "Cost and time budget" in the
+[graph-edit skill](../.github/skills/graph-edit/SKILL.md): it limits the change to the request,
+uses one authoritative source per claim, avoids subagents for small changes, runs targeted tests
+while iterating, and stops with a gap report instead of searching at length.
 The [Copilot setup workflow](../.github/workflows/copilot-setup-steps.yml) installs Node.js 26
 and the project dependencies for agent sessions running on GitHub Actions; it does not apply to
 cloud sandbox sessions.

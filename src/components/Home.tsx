@@ -3,6 +3,7 @@ import { motion, useReducedMotion } from 'motion/react'
 import { useId, useMemo, useRef, useState, useSyncExternalStore, type ReactNode, type Ref } from 'react'
 import { useNow, useTranslations } from 'next-intl'
 import { useExplorer } from '../ExplorerContext.ts'
+import { hasGenrePreview } from '../data/genrePreviews.ts'
 import { featureFlags } from '../featureFlags.ts'
 import { formatEventPeriod } from '../graph/history.ts'
 import { availableSoundtrails, type AvailableSoundtrail } from '../graph/soundtrails.ts'
@@ -229,7 +230,7 @@ function ListeningWidget({ scrollReveal }: { scrollReveal: ScrollReveal }) {
   const { index } = useExplorer()
   const tHome = useTranslations('homeCopy')
   const genres = useMemo(() => {
-    const all = [...index.nodeById.values()].filter((node) => node.type === 'genre')
+    const all = [...index.nodeById.values()].filter((node) => node.type === 'genre' && hasGenrePreview(node.id))
     const curated = LISTENING_PICKS.map((id) => index.nodeById.get(id)).filter((node): node is GraphNode => node?.type === 'genre')
     return { all, curated }
   }, [index])

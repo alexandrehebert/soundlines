@@ -12,6 +12,7 @@ import { graphLabels } from '../i18n/graphLabels.ts'
 import { localizePath } from '../i18n/routing.ts'
 import { APP_URL, newIssueUrl } from '../projectLinks.ts'
 import { publicAsset } from '../publicAsset.ts'
+import { hasGenrePreview } from '../data/genrePreviews.ts'
 import { GenreSample } from './GenreSample.tsx'
 import { InstrumentIcon } from './InstrumentIcon.tsx'
 
@@ -72,7 +73,7 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
     tFeedback('editBody', { entryUrl: entryUrl.href }),
   )
   const labels = graphLabels(locale)
-  const hasGenrePlayer = showGenreSample && node.type === 'genre'
+  const hasGenrePlayer = showGenreSample && hasGenrePreview(node.id)
   const typeColor = chartColor(NODE_TYPE_COLORS[node.type])
   const period = node.type === 'event' && node.period
     ? formatEventPeriod(node.period, locale)
