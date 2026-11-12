@@ -13,6 +13,7 @@
   <a href="https://soundlines.hebert.app/">Open Soundlines</a> ·
   <a href="#explore-music-history">Features</a> ·
   <a href="#getting-started">Get started</a> ·
+  <a href="#query-the-graph-with-mcp">MCP</a> ·
   <a href="#documentation">Docs</a> ·
   <a href="https://alexandrehebert.github.io/soundlines/">Project guide</a> ·
   <a href="#credits">Credits</a> ·
@@ -66,6 +67,22 @@ and Storybook details.
 For the optional standalone ACE-Step rendering dashboard, see
 [ACE Monitor](./tools/ace-monitor/README.md). It runs in its own Compose stack at
 `http://localhost:5180`, without changing the Soundlines app or ACE server.
+
+## Query the graph with MCP
+
+Connect ChatGPT or another Model Context Protocol (MCP) client to the public,
+read-only Soundlines server. It uses Streamable HTTP and requires no authentication.
+
+```text
+https://soundlines.hebert.app/api/mcp
+```
+
+Search for artists, genres, instruments, and other entries, or follow documented
+relationships and cite their sources. For example, ask: “Use Soundlines to find
+French Touch artists who signed with a record label and are also key artists in
+another genre. Cite the sources for each connection.”
+
+See the [MCP setup and tool reference](https://alexandrehebert.github.io/soundlines/en/mcp/).
 
 ## Common commands
 
