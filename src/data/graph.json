@@ -1473,6 +1473,64 @@
       "description": "Celia Cruz was a Cuban singer whose career included Cuban dance music, guaracha, and internationally prominent salsa. She joined La Sonora Matancera in 1949/1950 and became a defining salsa performer."
     },
     {
+      "id": "artist:cesaria-evora",
+      "type": "artist",
+      "name": "Cesária Évora",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "end": 2011,
+        "precision": "decade",
+        "estimated": true,
+        "estimateNote": "Broad career start based on biographies placing her first singing in local bars at sixteen; the exact year is not established. End reflects her death."
+      },
+      "description": "Cabo Verdean singer whose performances helped bring morna to international audiences; widely known as the “Queen of Morna.”",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ces%C3%A1ria_%C3%89vora",
+        "https://www.bbc.co.uk/news/entertainment-arts-16232543",
+        "https://musicbrainz.org/artist/ceafdf2f-bc18-4b99-8c71-d1834b0065c3"
+      ]
+    },
+    {
+      "id": "artist:bana",
+      "type": "artist",
+      "name": "Bana",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "end": 2013,
+        "precision": "decade",
+        "estimated": true,
+        "estimateNote": "Broad start marker: biographies place the beginning of his musical career during the 1950s; no exact first performance is established. End reflects his death."
+      },
+      "description": "Cabo Verdean singer known as the “King of Morna” and a prominent performer of the tradition.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bana_(singer)",
+        "https://www.publico.pt/cultura/noticia/morre-bana-o-rei-da-morna-de-cabo-verde-1600140",
+        "https://musicbrainz.org/artist/8589ab83-e07b-45a7-bd9f-0ea9547a312c"
+      ]
+    },
+    {
+      "id": "artist:ildo-lobo",
+      "type": "artist",
+      "name": "Ildo Lobo",
+      "kind": "person",
+      "period": {
+        "start": 1970,
+        "end": 2004,
+        "precision": "decade",
+        "estimated": true,
+        "estimateNote": "Broad career start for his work as vocalist with Os Tubarões; his solo album Nôs Morna (1996) is a later documented milestone, not his debut. End reflects his death."
+      },
+      "description": "Cabo Verdean vocalist known for his morna performances, including the album “Nôs Morna” (1996), and for his work with Os Tubarões.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ildo_Lobo",
+        "https://web.archive.org/web/20080517202804/http://www.worldmusiccentral.org/article.php/2004103107424374",
+        "https://www.lemonde.fr/archives/article/1998/03/27/paris_3653661_1819218.html",
+        "https://musicbrainz.org/artist/971841d4-58c6-4010-9937-4e790dfba7f8"
+      ]
+    },
+    {
       "id": "artist:charlie-parker",
       "type": "artist",
       "name": "Charlie Parker",
@@ -22766,6 +22824,24 @@
         }
       ],
       "phaseNote": "Late-nineteenth-century formation and 1920s popularization markers. Removed unsupported 1930 “golden age,” 1960 and 2000 generalized phases; taarab remains diverse across the Swahili coast."
+    },
+    {
+      "id": "genre:morna",
+      "type": "genre",
+      "name": "Morna",
+      "family": "african",
+      "period": {
+        "start": 1700,
+        "precision": "century",
+        "estimated": true,
+        "estimateNote": "A contextual anchor, not a settled origin: some accounts trace early forms to lundu in eighteenth-century Cabo Verde, while UNESCO describes the living practice without assigning a start date."
+      },
+      "description": "Traditional Cabo Verdean music-and-dance practice combining voice, instrumental music, poetry and dance. It may be sung or performed instrumentally, with guitar, violin, ten-string guitar and cavaquinho among its instruments, and is linked to community life in Cabo Verde.",
+      "confidence": "medium",
+      "sources": [
+        "https://ich.unesco.org/en/RL/morna-musical-practice-of-cabo-verde-01469",
+        "https://en.wikipedia.org/wiki/Morna_(music)"
+      ]
     },
     {
       "id": "artist:cheikha-rimitti",
@@ -51360,6 +51436,43 @@
       "note": "Caribbean Beat identifies Calypso Rose as a calypso icon who joined Soca and names her 1977 recording “Give More Tempo.” This supports her early representative role, though the reviewed article does not document a direct influence on later artists.",
       "sources": [
         "https://www.caribbean-beat.com/issue-174/soca-gold-backstory"
+      ]
+    },
+    {
+      "id": "key:cesaria-evora-morna",
+      "type": "key_artist_of",
+      "from": "artist:cesaria-evora",
+      "to": "genre:morna",
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Morna_(music)",
+        "https://www.bbc.co.uk/news/entertainment-arts-16232543",
+        "https://musicbrainz.org/artist/ceafdf2f-bc18-4b99-8c71-d1834b0065c3"
+      ]
+    },
+    {
+      "id": "key:bana-morna",
+      "type": "key_artist_of",
+      "from": "artist:bana",
+      "to": "genre:morna",
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bana_(singer)",
+        "https://www.publico.pt/cultura/noticia/morre-bana-o-rei-da-morna-de-cabo-verde-1600140",
+        "https://musicbrainz.org/artist/8589ab83-e07b-45a7-bd9f-0ea9547a312c"
+      ]
+    },
+    {
+      "id": "key:ildo-lobo-morna",
+      "type": "key_artist_of",
+      "from": "artist:ildo-lobo",
+      "to": "genre:morna",
+      "confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ildo_Lobo",
+        "https://en.wikipedia.org/wiki/Music_of_Cape_Verde",
+        "https://web.archive.org/web/20080517202804/http://www.worldmusiccentral.org/article.php/2004103107424374",
+        "https://musicbrainz.org/artist/971841d4-58c6-4010-9937-4e790dfba7f8"
       ]
     }
   ]

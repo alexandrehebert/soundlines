@@ -3,7 +3,7 @@
  * Graph contributions (including the cloud agent, which cannot run ACE-Step) add new genres here;
  * the preview pipeline removes them once `public/genre-previews/<slug>.m4a` is reviewed and shipped.
  */
-export const PENDING_GENRE_PREVIEWS: ReadonlySet<string> = new Set<string>(['genre:soca'])
+export const PENDING_GENRE_PREVIEWS: ReadonlySet<string> = new Set<string>(['genre:morna', 'genre:soca'])
 
 export function hasGenrePreview(id: string) {
   return id.startsWith('genre:') && !PENDING_GENRE_PREVIEWS.has(id)

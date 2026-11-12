@@ -234,6 +234,18 @@
     "artist:celia-cruz": {
       "description": "Celia Cruz war eine kubanische Sängerin, deren Karriere kubanische Tanzmusik, Guaracha und international bekannte salsa umfasste. Sie schloss sich La Sonora Matancera in 1949/1950 an und wurde eine definierende salsa-Performerin."
     },
+    "artist:cesaria-evora": {
+      "description": "Kapverdische Sängerin, deren Auftritte Morna einem internationalen Publikum näherbrachten; sie war weithin als „Königin der Morna“ bekannt.",
+      "estimateNote": "Der Karrierebeginn ist grob geschätzt: Biografien berichten, dass sie mit sechzehn in örtlichen Bars sang, nennen aber kein genaues Jahr. Das Ende entspricht ihrem Tod 2011."
+    },
+    "artist:bana": {
+      "description": "Kapverdischer Sänger, bekannt als „König der Morna“ und bedeutender Interpret dieser Tradition.",
+      "estimateNote": "Grober Anhaltspunkt: Biografien verorten den Beginn seiner Musikkarriere in den 1950er-Jahren, ohne einen genauen ersten Auftritt zu belegen. Das Ende entspricht seinem Tod 2013."
+    },
+    "artist:ildo-lobo": {
+      "description": "Kapverdischer Sänger, bekannt für seine Morna-Auftritte, darunter das Album „Nôs Morna“ (1996), und für seine Arbeit mit Os Tubarões.",
+      "estimateNote": "Grober Karrierebeginn für seine Arbeit als Sänger bei Os Tubarões; sein Soloalbum Nôs Morna (1996) ist ein späterer belegter Meilenstein, nicht sein Debüt. Das Ende entspricht seinem Tod 2004."
+    },
     "artist:charlie-parker": {
       "description": "Alto-Saxophonist, dessen melodische und harmonische Innovationen für bebop von zentraler Bedeutung waren."
     },
@@ -4262,6 +4274,11 @@
         "1950": "Ein historisches Nachschlagewerk verortet die Anfänge des Makossa im Douala der 1950er-Jahre, mit Wurzeln im Duala-Tanz und vielfältigen musikalischen Einflüssen.",
         "1972": "Soul Makossa brachte eine vom Makossa geprägte Aufnahme vor ein internationales Publikum; sie steht weder für die gesamte Geschichte des Genres noch für ein gemessenes goldenes Zeitalter."
       }
+    },
+    "genre:morna": {
+      "name": "Morna",
+      "description": "Eine traditionelle Musik- und Tanzpraxis aus Cabo Verde, die Gesang, Instrumentalmusik, Poesie und Tanz verbindet. Sie kann in lyrischen Strophen gesungen oder instrumental gespielt werden; zu den Instrumenten zählen Gitarre, Geige, zehnsaitige Gitarre und Cavaquinho. Die Tradition ist im Gemeinschaftsleben Cabo Verdes verankert.",
+      "estimateNote": "Ein kontextueller Anhaltspunkt, kein gesicherter Ursprung: Einige Darstellungen führen frühe Formen auf Lundu im Cabo Verde des 18. Jahrhunderts zurück; UNESCO beschreibt die lebendige Praxis ohne ein Anfangsdatum."
     },
     "genre:taarab": {
       "description": "Musiktradition der Swahili-Küste, verbunden mit Sansibar und Ostafrika und geprägt durch den Austausch zwischen Kulturen Afrikas, der arabischen Welt und des Indischen Ozeans. Orchester und Sänger, darunter Siti binti Saad, brachten ihre Lieder auf Aufnahmen, in Clubs und zu gemeinschaftlichen Feiern.",
