@@ -1,4 +1,4 @@
-import { PROJECT_SITE_URL } from '../../../src/projectLinks.ts'
+import { storybookUrl } from '../links.ts'
 import type { Copy } from '../content.ts'
 
 export const it: Copy = {
@@ -65,7 +65,7 @@ export const it: Copy = {
       resources:[['docs/DATA.md#instrument-artwork','Procedura per le illustrazioni'],['.github/skills/artwork-draw/SKILL.md','Procedura di disegno e stile del progetto'],['docs/artwork/briefs','Schede visive'],['scripts/artwork/generate-instrument-artwork.py','Generatore principale dei disegni']],
     },
     audio:{
-      label:'Audio',title:'Prodotto in locale. Riprodotto all’istante.',intro:'I suoni di Soundlines sono brani strumentali originali generati su un portatile con ACE-Step 1.5, un modello musicale open source, non estratti di dischi famosi. I visitatori scaricano soltanto i file finiti: durante la navigazione non viene eseguita alcuna IA.',
+      label:'Creazione dei suoni',title:'Come nascono i suoni di Soundlines?',intro:'I suoni di Soundlines sono brani strumentali originali generati su un portatile con ACE-Step 1.5, un modello musicale open source, non estratti di dischi famosi. I visitatori scaricano soltanto i file finiti: durante la navigazione non viene eseguita alcuna IA.',
       flows:[{title:'Come nasce un loop senza interruzioni',caption:'Il disco sulla pagina iniziale gira su loop realizzati in questo modo.',steps:[
         {actor:'agent',title:'Scrivere la scheda',text:'Tempo, tonalità, metro, durata e una descrizione strumentale originale del genere: niente voci, melodie famose, introduzioni o breakdown.',output:['doc','Scheda del loop'],preview:{kind:'note',title:'Scheda: loop hip-hop',lines:['Boom-bap · 92 BPM · re minore','4 battute, niente voci né introduzione','5 seed da provare']}},
         {actor:'model',title:'Pianificare la musica',text:'Un modello linguistico da 4 miliardi di parametri scrive prima un piano musicale compatto per ogni versione, sotto forma di codici audio.',output:['data','Codici audio per ogni versione'],preview:{kind:'codes'}},
@@ -88,7 +88,7 @@ export const it: Copy = {
         {actor:'script',title:'Hosting',text:'L’app è pubblicata su Vercel; questo sito complementare è un sito statico separato su GitHub Pages.',output:['app','L’app online e questo sito'],preview:{kind:'screen',shot:'home',alt:'La pagina iniziale di Soundlines con il suo giradischi'}},
       ]}],
       sections:[['Le tecnologie','TypeScript in tutto il progetto; React 19 e l’App Router di Next.js per l’app; Tailwind CSS per gli stili; next-intl per inglese, francese, tedesco, italiano e spagnolo; Vitest e Storybook per test e anteprime dei componenti; Docker Compose per una configurazione locale con un unico comando. Questo sito complementare usa React e Vite, con prerendering in HTML statico.'],['Procedure da leggere','Le skill sono procedure passo per passo, con i propri script, conservate nel repository; gli agenti sono descrizioni di ruoli che le utilizzano. Poiché sono versionate come il codice, chiunque può leggere esattamente che cosa è stato chiesto a un assistente e migliorarlo.'],['Vuoi contribuire?','Una fonte migliore, un legame corretto, una traduzione più chiara o uno strumento più riconoscibile contano quanto una nuova funzione. Mantieni le modifiche contenute, esegui i controlli pertinenti e spiega le tue prove nella pull request.']],
-      resources:[['docs/INSTALLATION.md','Configurazione di strumenti e ambiente'],['docs/DEVELOPMENT.md','Sviluppo e pubblicazione'],['docs/ARCHITECTURE.md','Architettura dell’applicazione'],['.github/agents','Agenti specializzati'],['.github/skills','Procedure riutilizzabili'],[`${PROJECT_SITE_URL}/storybook/`,'Galleria dei componenti (Storybook)']],
+      resources:[['docs/INSTALLATION.md','Configurazione di strumenti e ambiente'],['docs/DEVELOPMENT.md','Sviluppo e pubblicazione'],['docs/ARCHITECTURE.md','Architettura dell’applicazione'],['.github/agents','Agenti specializzati'],['.github/skills','Procedure riutilizzabili'],[storybookUrl,'Galleria dei componenti (Storybook)']],
     },
   },
 }

@@ -17,7 +17,7 @@ import type { Confidence, NodeType } from '../graph/types.ts'
 import { chartColor, FAMILY_COLORS, formatPeriod, NODE_TYPE_COLORS } from '../theme.ts'
 import { graphLabels } from '../i18n/graphLabels.ts'
 import type { Locale } from '../i18n/routing.ts'
-import { PROJECT_SITE_URL, REPOSITORY_URL } from '../projectLinks.ts'
+import { companionUrl, REPOSITORY_URL } from '../projectLinks.ts'
 
 const STATS_TABS: readonly StatsTab[] = ['overview', 'genre', 'artist', 'instrument', 'links', 'review']
 
@@ -334,7 +334,7 @@ function ReviewPanel({ stats, isolated, locale }: { stats: ReviewStats; isolated
         {stats.lastReviewed && <span className="text-slate-600">{t('lastReview', { date: stats.lastReviewed })}</span>}
       </p>
       <div className="-mt-3 flex flex-wrap gap-2">
-        <ProjectLink href={`${PROJECT_SITE_URL}/${locale}/graph/`}>{t('reviewMethod')}</ProjectLink>
+        <ProjectLink href={companionUrl(locale, 'graph/')}>{t('reviewMethod')}</ProjectLink>
         <ProjectLink href={REPOSITORY_URL}>{tProject('repository')}</ProjectLink>
       </div>
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">

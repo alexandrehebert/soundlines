@@ -7,6 +7,8 @@ services:
     # Install inside the container (host node_modules has macOS-native
     # binaries) and expose Next.js outside the container network.
     command: sh -c "npm ci && npm run dev -- --hostname 0.0.0.0 --port 5173"
+    environment:
+      NEXT_PUBLIC_SOUNDLINES_COMPANION_URL: http://localhost:${SITE_PORT:-5174}/soundlines
     ports:
       - "5173:5173"
     volumes:
@@ -20,6 +22,7 @@ services:
     command: sh -c 'npm ci && npm run storybook -- --host 0.0.0.0 --no-open --exact-port --port "$$STORYBOOK_PORT"'
     environment:
       STORYBOOK_DISABLE_TELEMETRY: "1"
+      NEXT_PUBLIC_SOUNDLINES_COMPANION_URL: http://localhost:${SITE_PORT:-5174}/soundlines
       STORYBOOK_PORT: ${STORYBOOK_PORT:-6008}
     ports:
       - "127.0.0.1:${STORYBOOK_PORT:-6008}:${STORYBOOK_PORT:-6008}"
@@ -33,6 +36,8 @@ services:
     command: sh -c 'npm ci && npm run dev:site -- --host 0.0.0.0 --strictPort --port "$$SITE_PORT"'
     environment:
       SITE_PORT: ${SITE_PORT:-5174}
+      VITE_SOUNDLINES_APP_URL: http://localhost:5173/
+      VITE_SOUNDLINES_STORYBOOK_URL: http://localhost:${STORYBOOK_PORT:-6008}/
     ports:
       - "127.0.0.1:${SITE_PORT:-5174}:${SITE_PORT:-5174}"
     volumes:

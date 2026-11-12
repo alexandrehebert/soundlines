@@ -19,7 +19,7 @@ import { Turntable } from './Turntable.tsx'
 import './Home.css'
 import { localizePath } from '../i18n/routing.ts'
 import { graphLabels } from '../i18n/graphLabels.ts'
-import { PROJECT_SITE_URL, REPOSITORY_URL } from '../projectLinks.ts'
+import { companionUrl, REPOSITORY_URL } from '../projectLinks.ts'
 import { publicAsset } from '../publicAsset.ts'
 import { chartColor, FAMILY_COLORS } from '../theme.ts'
 import { useColorTheme } from '../useColorTheme.ts'
@@ -660,7 +660,7 @@ export function Home() {
           </nav>
           <nav className="discovery-footer-links discovery-footer-project" aria-label={t('projectLinks.navigation')}>
             <a href={REPOSITORY_URL}>{t('projectLinks.repository')}</a>
-            <a href={`${PROJECT_SITE_URL}/${locale}/`}>{t('projectLinks.about')}</a>
+            <a href={companionUrl(locale)}>{t('projectLinks.about')}</a>
           </nav>
           <div className="discovery-footer-meta">
             <p>

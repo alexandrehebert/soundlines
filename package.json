@@ -24,12 +24,14 @@
     "validate:graph": "vitest run src/data src/graph"
   },
   "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
     "lucide-react": "^1.47.0",
     "motion": "^13.4.1",
     "next": "^16.3.0",
     "next-intl": "^4.14.9",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^10.6.5",

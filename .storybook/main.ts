@@ -1,5 +1,5 @@
 import type { StorybookConfig } from '@storybook/react-vite'
-import { PROJECT_SITE_URL } from '../src/projectLinks.ts'
+import { PROJECT_SITE_URL, companionBaseUrl } from '../src/projectLinks.ts'
 
 // `npm run build-storybook:public` publishes a read-only, curated catalogue with the
 // companion site, under /soundlines/storybook/.
@@ -45,15 +45,18 @@ const config: StorybookConfig = {
   },
   staticDirs: isPublic ? publicStaticDirs : ['../public', artworkFixture],
   managerHead: (head) => (isPublic ? `${head}\n<script>globalThis.SOUNDLINES_PUBLIC_STORYBOOK = true</script>` : head),
-  viteFinal: (viteConfig) =>
-    isPublic
-      ? {
-          ...viteConfig,
-          // Vite would otherwise copy all of public/ (genre previews included) next to staticDirs.
-          publicDir: false,
-          define: { ...viteConfig.define, 'process.env.STORYBOOK_ASSET_BASE': JSON.stringify(publicBase) },
-        }
-      : viteConfig,
+  viteFinal: (viteConfig) => {
+    viteConfig.define = {
+      ...viteConfig.define,
+      'process.env.NEXT_PUBLIC_SOUNDLINES_COMPANION_URL': JSON.stringify(isPublic ? PROJECT_SITE_URL : companionBaseUrl()),
+    }
+    if (isPublic) {
+      // Vite would otherwise copy all of public/ (genre previews included) next to staticDirs.
+      viteConfig.publicDir = false
+      viteConfig.define['process.env.STORYBOOK_ASSET_BASE'] = JSON.stringify(publicBase)
+    }
+    return viteConfig
+  },
 }
 
 export default config

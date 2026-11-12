@@ -1,4 +1,4 @@
-import { PROJECT_SITE_URL } from '../../../src/projectLinks.ts'
+import { storybookUrl } from '../links.ts'
 import type { Copy } from '../content.ts'
 
 export const es: Copy = {
@@ -111,7 +111,7 @@ export const es: Copy = {
       resources: [['docs/DATA.md#instrument-artwork', 'Proceso de ilustración'], ['.github/skills/artwork-draw/SKILL.md', 'Procedimiento de dibujo y estilo propio'], ['docs/artwork/briefs', 'Fichas visuales'], ['scripts/artwork/generate-instrument-artwork.py', 'Generador de ilustraciones originales']],
     },
     audio: {
-      label: 'Audio', title: 'Producido localmente. Reproducido al instante.',
+      label: 'Creación de sonidos', title: '¿Cómo se crean los sonidos de Soundlines?',
       intro: 'Los sonidos de Soundlines son piezas instrumentales originales generadas en un portátil con ACE-Step 1.5, un modelo musical de código abierto; no son fragmentos de discos famosos. Los visitantes solo descargan archivos terminados: no se ejecuta IA mientras navegas.',
       flows: [{
         title: 'Cómo se hace un bucle sin cortes', caption: 'El disco de la página de inicio gira con bucles creados de esta manera.',
@@ -161,7 +161,7 @@ export const es: Copy = {
         ['Procedimientos que puedes leer', 'Las habilidades son procedimientos paso a paso, con sus propios programas, almacenados en el repositorio; los agentes son descripciones de roles que los utilizan. Al versionarse como el código, cualquiera puede leer exactamente qué se pidió a un asistente y mejorarlo.'],
         ['¿Quieres ayudar?', 'Una fuente mejor, una conexión corregida, una traducción más clara o un instrumento más reconocible importan tanto como una función nueva. Haz cambios pequeños, ejecuta las comprobaciones pertinentes y explica la evidencia en la solicitud de cambios.'],
       ],
-      resources: [['docs/INSTALLATION.md', 'Configuración de herramientas y entorno'], ['docs/DEVELOPMENT.md', 'Desarrollo y despliegue'], ['docs/ARCHITECTURE.md', 'Arquitectura de la aplicación'], ['.github/agents', 'Agentes especializados'], ['.github/skills', 'Procedimientos reutilizables'], [`${PROJECT_SITE_URL}/storybook/`, 'Galería de componentes (Storybook)']],
+      resources: [['docs/INSTALLATION.md', 'Configuración de herramientas y entorno'], ['docs/DEVELOPMENT.md', 'Desarrollo y despliegue'], ['docs/ARCHITECTURE.md', 'Arquitectura de la aplicación'], ['.github/agents', 'Agentes especializados'], ['.github/skills', 'Procedimientos reutilizables'], [storybookUrl, 'Galería de componentes (Storybook)']],
     },
   },
 }

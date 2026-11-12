@@ -1,13 +1,17 @@
-import { APP_URL } from '../../../src/projectLinks.ts'
-import { locales, copy, repository, siteUrl, type Copy, type Locale, type Page, type Slug } from '../content.ts'
+import { AudioLines, Cable, Hammer, House, Network, Palette } from 'lucide-react'
+import type { ReactNode } from 'react'
+import { locales, slugs, copy, repository, siteUrl, type SiteCopy as Copy, type Locale, type Page, type Slug } from '../content.ts'
+import { appUrl, storybookUrl } from '../links.ts'
 import { repositoryUrl, routePath, type Route } from '../routes.ts'
 import { favicon, instrumentBrief, instruments } from './assets.ts'
 import { ExampleCard, FlowDiagram, Legend, Overview, Stats } from './Diagrams.tsx'
+import { McpReference } from './McpReference.tsx'
 
 const base = import.meta.env.BASE_URL
 const href = (route: Route) => `${base}${routePath(route)}`
 const external = <span aria-hidden="true">↗</span>
 const languageNames: Record<Locale, string> = { en: 'English', fr: 'Français', de: 'Deutsch', it: 'Italiano', es: 'Español' }
+const pageIcons = { index: House, graph: Network, artwork: Palette, audio: AudioLines, build: Hammer, mcp: Cable }
 
 export function App({ locale, slug }: Route) {
   const c = copy[locale]
@@ -36,6 +40,7 @@ export function App({ locale, slug }: Route) {
             </section>
           ))}
         </div>
+        {slug === 'mcp' && <McpReference locale={locale} />}
         {home && <Chapters c={c} locale={locale} />}
         <Resources c={c} page={page} />
         <PageNav c={c} locale={locale} slug={slug} className="border-t" />
@@ -55,13 +60,13 @@ function Header({ c, locale, slug }: ChromeProps) {
   return (
     <>
       <header className="shell relative flex items-center gap-1 py-4 sm:gap-3 lg:gap-6 lg:py-6">
-        <a className="inline-flex min-w-0 items-center gap-2 text-sm font-bold tracking-tight sm:text-xl" href={href({ locale, slug: 'index' })}>
+        <a className="inline-flex min-w-0 items-center gap-2 text-sm font-bold tracking-tight sm:text-xl" href={href({ locale, slug: 'index' })} target="_blank" rel="noopener noreferrer">
           <img src={favicon} width={34} height={34} alt="" className="size-7 shrink-0 sm:size-8.5" />
           <span className="truncate">Soundlines</span>
           <span className="ml-2 hidden shrink-0 border-l border-line pl-4 text-sm font-normal tracking-normal text-muted xl:inline">{c.navigation}</span>
         </a>
         <div className="ml-auto flex shrink-0 items-center gap-1 sm:gap-3">
-          <a className="flex h-11 min-w-11 shrink-0 items-center justify-center gap-1 whitespace-nowrap rounded-full bg-fg px-2 text-xs sm:px-4 font-bold text-bg sm:text-sm" href={new URL(locale, APP_URL).href} target="_blank" rel="noopener noreferrer">
+          <a className="flex h-11 min-w-11 shrink-0 items-center justify-center gap-1 whitespace-nowrap rounded-full bg-fg px-2 text-xs sm:px-4 font-bold text-bg sm:text-sm" href={new URL(locale, appUrl).href} target="_blank" rel="noopener noreferrer">
             <span className="sr-only sm:not-sr-only">{c.openApp}</span> {external}
           </a>
           <label className="site-language-select relative flex h-11 shrink-0 items-center gap-1.5 rounded-full bg-surface px-3 text-xs font-bold text-muted transition-colors hover:text-fg focus-within:ring-2 focus-within:ring-focus">
@@ -81,16 +86,16 @@ function Header({ c, locale, slug }: ChromeProps) {
             </select>
           </label>
           <div className="flex min-w-0 items-center gap-1 sm:gap-2">
-            <a className="ml-auto flex size-11 shrink-0 items-center justify-center rounded-full text-muted hover:bg-surface hover:text-fg lg:ml-0" href={`${siteUrl}/storybook/`} aria-label="Storybook" title="Storybook">
+            <HeaderIconLink href={storybookUrl} label="Storybook">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M16.34.15l-.12 2.71 1.1-.84.94.74-.1-2.72 2.29-.14a1.45 1.45 0 0 1 1.54 1.45v21.2A1.45 1.45 0 0 1 20.39 24L3.1 22.84a1.45 1.45 0 0 1-1.35-1.4L1.02 2.47A1.45 1.45 0 0 1 2.38.97L16.34.15zM14.8 9.2c0 .57 3.83.3 3.83-.38.1-4.12-2.1-6.28-6.13-6.28-4.03 0-6.28 2.2-6.28 5.49 0 5.73 7.74 5.83 7.74 8.96 0 .89-.43 1.42-1.38 1.42-1.23 0-1.72-.63-1.66-2.77 0-.47-3.96-.6-4.08 0-.3 5.18 2.91 6.67 5.8 6.67 2.8 0 6.07-1.49 6.07-5.37 0-6.14-7.86-5.98-7.86-9.02 0-1.24.92-1.4 1.46-1.4.6 0 1.65.11 1.49 2.68z" transform="translate(2 1) scale(.85)" />
               </svg>
-            </a>
-            <a className="flex size-11 shrink-0 items-center justify-center rounded-full text-muted hover:bg-surface hover:text-fg" href={repository} aria-label="GitHub" title="GitHub">
+            </HeaderIconLink>
+            <HeaderIconLink href={repository} label="GitHub">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.5-.29-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15a10.8 10.8 0 0 1 5.62 0c2.15-1.46 3.1-1.15 3.1-1.15.61 1.55.23 2.69.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.63 5.27-5.14 5.55.4.35.76 1.03.76 2.08v3.11c0 .3.2.65.77.54A11.25 11.25 0 0 0 12 .75z" />
               </svg>
-            </a>
+            </HeaderIconLink>
           </div>
         </div>
       </header>
@@ -108,19 +113,46 @@ function Header({ c, locale, slug }: ChromeProps) {
   )
 }
 
+function HeaderIconLink({ href, label, children }: {
+  href: string
+  label: string
+  children: ReactNode
+}) {
+  return (
+    <a
+      className="group relative flex size-10 shrink-0 items-center justify-center rounded-full text-muted hover:bg-surface hover:text-fg sm:size-11"
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+    >
+      {children}
+      <span aria-hidden="true" className="invisible absolute top-full right-0 z-10 pt-1 group-hover:visible group-focus-visible:visible">
+        <span className="block rounded-md border border-line bg-surface px-2 py-1 text-xs font-semibold whitespace-nowrap text-fg shadow-lg">
+          {label}
+        </span>
+      </span>
+    </a>
+  )
+}
+
 function PageNav({ c, locale, slug, className }: ChromeProps & { className: string }) {
   return (
     <nav aria-label={c.navigation} className={`shell flex gap-x-5 overflow-x-auto border-line ${className}`}>
-      {Object.entries(c.pages).map(([key, value]) => (
-        <a
-          key={key}
-          href={href({ locale, slug: key as Slug })}
-          aria-current={key === slug ? 'page' : undefined}
-          className="shrink-0 whitespace-nowrap py-3.5 text-sm text-muted hover:text-fg aria-[current=page]:text-accent aria-[current=page]:shadow-[inset_0_-2px_var(--color-accent)]"
-        >
-          {value.label}
-        </a>
-      ))}
+      {slugs.map((key) => {
+        const Icon = pageIcons[key]
+        return (
+          <a
+            key={key}
+            href={href({ locale, slug: key })}
+            aria-current={key === slug ? 'page' : undefined}
+            className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap py-3.5 text-sm text-muted hover:text-fg aria-[current=page]:text-accent aria-[current=page]:shadow-[inset_0_-2px_var(--color-accent)]"
+          >
+            <Icon size={16} aria-hidden="true" />
+            {c.pages[key].label}
+          </a>
+        )
+      })}
     </nav>
   )
 }
@@ -132,7 +164,7 @@ function Hero({ c, page, home }: { c: Copy; page: Page; home: boolean }) {
       className={home ? 'grid items-center gap-12 py-12 sm:py-20 md:grid-cols-[1.5fr_1fr]' : 'max-w-212 py-12 sm:pt-20'}
     >
       <div>
-        <p className="eyebrow">{home ? c.eyebrow : page.label}</p>
+        <p className="eyebrow">{home ? c.eyebrow : (page.eyebrow ?? page.label)}</p>
         <h1 id="title" className="my-5 text-[clamp(2.6rem,5.6vw,4.8rem)] leading-[1.06] font-bold tracking-[-0.065em] text-balance">
           {page.title}
         </h1>

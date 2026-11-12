@@ -1,4 +1,4 @@
-import { PROJECT_SITE_URL } from '../../../src/projectLinks.ts'
+import { storybookUrl } from '../links.ts'
 import type { Copy } from '../content.ts'
 
 export const en: Copy = {
@@ -262,8 +262,8 @@ export const en: Copy = {
       ],
     },
     audio: {
-      label: 'Audio',
-      title: 'Produced locally. Played instantly.',
+      label: 'Sound Production',
+      title: 'How are the sounds in Soundlines made?',
       intro:
         'The sounds in Soundlines are original instrumentals generated on a laptop with ACE-Step 1.5, an open-source music model, not excerpts of famous records. Visitors only download finished files: no AI runs while you browse.',
       flows: [
@@ -431,7 +431,7 @@ export const en: Copy = {
         ['docs/ARCHITECTURE.md', 'Application architecture'],
         ['.github/agents', 'Specialised agents'],
         ['.github/skills', 'Reusable procedures'],
-        [`${PROJECT_SITE_URL}/storybook/`, 'Component gallery (Storybook)'],
+        [storybookUrl, 'Component gallery (Storybook)'],
       ],
     },
   },

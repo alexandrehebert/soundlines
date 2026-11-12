@@ -1,4 +1,4 @@
-import { PROJECT_SITE_URL } from '../../../src/projectLinks.ts'
+import { storybookUrl } from '../links.ts'
 import type { Copy } from '../content.ts'
 
 export const de: Copy = {
@@ -71,7 +71,7 @@ export const de: Copy = {
       resources: [['docs/DATA.md#instrument-artwork', 'Zeichnungsverfahren'], ['.github/skills/artwork-draw/SKILL.md', 'Zeichenverfahren und Hausstil'], ['docs/artwork/briefs', 'Gestaltungskonzepte'], ['scripts/artwork/generate-instrument-artwork.py', 'Hauptgenerator für Zeichnungen']],
     },
     audio: {
-      label: 'Audio', title: 'Lokal produziert. Sofort abgespielt.',
+      label: 'Klangproduktion', title: 'Wie entstehen die Klänge in Soundlines?',
       intro: 'Die Klänge in Soundlines sind eigenständige Instrumentalstücke, die auf einem Laptop mit ACE-Step 1.5, einem quelloffenen Musikmodell, erzeugt wurden, keine Ausschnitte berühmter Aufnahmen. Besucher laden nur fertige Dateien herunter: Während des Surfens läuft keine KI.',
       flows: [{ title: 'So entsteht ein nahtloser Loop', caption: 'Die Schallplatte auf der Startseite dreht sich zu Loops, die so entstanden sind.', steps: [
         { actor: 'agent', title: 'Das Konzept schreiben', text: 'Tempo, Tonart, Taktart, Länge und eine eigenständige instrumentale Beschreibung des Genres: kein Gesang, keine bekannte Melodie, kein Intro oder Break.', output: ['doc', 'Loop-Konzept'], preview: { kind: 'note', title: 'Konzept: Hip-Hop-Loop', lines: ['Boom-Bap · 92 BPM · d-Moll', '4 Takte, kein Gesang, kein Intro', '5 Zufallsstartwerte ausprobieren'] } },
@@ -104,7 +104,7 @@ export const de: Copy = {
         ['Die Werkzeuge', 'Durchgehend TypeScript; React 19 und der Next.js App Router für die App; Tailwind CSS für Stile; next-intl für die fünf Sprachen; Vitest und Storybook für Tests und Komponentenvorschauen; Docker Compose für die lokale Einrichtung mit einem Befehl. Diese Begleitseite verwendet React und Vite, zu statischem HTML vorgerendert.'],
         ['Nachlesbare Verfahren', 'Skills sind schrittweise Verfahren mit eigenen Skripten im Repository; Agenten sind Rollenbeschreibungen, die sie verwenden. Da sie wie Code versioniert sind, kann jeder genau nachlesen, welchen Auftrag ein Assistent erhielt, und ihn verbessern.'],
         ['Möchtest du helfen?', 'Eine bessere Quelle, eine korrigierte Verbindung, eine klarere Übersetzung oder ein besser erkennbares Instrument sind ebenso wichtig wie eine neue Funktion. Halte Änderungen klein, führe die passenden Prüfungen aus und erläutere deine Belege in der Pull-Anfrage.'],
-      ], resources: [['docs/INSTALLATION.md', 'Werkzeuge und Umgebung einrichten'], ['docs/DEVELOPMENT.md', 'Entwicklung und Bereitstellung'], ['docs/ARCHITECTURE.md', 'Anwendungsarchitektur'], ['.github/agents', 'Spezialisierte Agenten'], ['.github/skills', 'Wiederverwendbare Verfahren'], [`${PROJECT_SITE_URL}/storybook/`, 'Komponentengalerie (Storybook)']],
+      ], resources: [['docs/INSTALLATION.md', 'Werkzeuge und Umgebung einrichten'], ['docs/DEVELOPMENT.md', 'Entwicklung und Bereitstellung'], ['docs/ARCHITECTURE.md', 'Anwendungsarchitektur'], ['.github/agents', 'Spezialisierte Agenten'], ['.github/skills', 'Wiederverwendbare Verfahren'], [storybookUrl, 'Komponentengalerie (Storybook)']],
     },
   },
 }

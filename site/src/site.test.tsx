@@ -2,7 +2,7 @@ import { existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
-import { APP_URL } from '../../src/projectLinks.ts'
+import { APP_URL, MCP_URL } from '../../src/projectLinks.ts'
 import brief from '../../docs/loops/briefs/turntable-hip-hop.json'
 import selection from '../../docs/loops/briefs/turntable-hip-hop.selection.json'
 import saxophoneIcon from '../../public/instrument-icons/saxophone.svg?raw'
@@ -45,6 +45,15 @@ describe('project companion content', () => {
     expect(html).not.toContain(removedTitle)
   })
 
+  it.each(locales)('renders the %s MCP configuration, query and tool schemas', (locale) => {
+    const html = renderToStaticMarkup(<App locale={locale} slug="mcp" />)
+    expect(html).toContain(MCP_URL)
+    expect(html).toContain('npx @modelcontextprotocol/inspector')
+    expect(html).toContain('genre:french-touch')
+    expect(html.match(/<details\b/g)).toHaveLength(4)
+    expect(html).toContain('query_graph')
+  })
+
   it('only links to repository paths that exist', () => {
     const paths = Object.values(copy.en.pages).flatMap((page) => [
       ...page.resources.map(([path]) => path).filter((path) => !/^https?:/.test(path)),
@@ -59,11 +68,15 @@ describe('project companion content', () => {
     expect(html).toContain(`href="${siteUrl}/storybook/"`)
   })
 
-  it.each(routes)('links to the public Storybook next to GitHub in the header: $locale/$slug', (route) => {
+  it.each(routes)('opens header links in new tabs: $locale/$slug', (route) => {
     const html = renderToStaticMarkup(<App {...route} />)
     const header = html.slice(html.indexOf('<header'), html.indexOf('</header>'))
     expect(header).toContain(`href="${siteUrl}/storybook/"`)
-    expect(header).toContain(`href="${repository}"`)
+    expect(header).toContain(`href="${repository}" target="_blank" rel="noopener noreferrer" aria-label="GitHub"`)
+    expect(header.match(/<a\b[^>]*>/g)).toHaveLength(4)
+    expect(header.match(/<a\b[^>]* target="_blank"[^>]*>/g)).toHaveLength(4)
+    expect(header).toContain('aria-label="Storybook"')
+    expect(header.match(/group-focus-visible:visible/g)).toHaveLength(2)
     expect(header).toContain(`href="${new URL(route.locale, APP_URL).href}"`)
     expect(header).toContain(copy[route.locale].openApp)
   })

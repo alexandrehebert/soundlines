@@ -37,8 +37,11 @@ Compose serves the app at `http://localhost:5173`, Storybook at
 `http://localhost:6008` and the live-reloading companion site at
 `http://localhost:5174/soundlines/` on the local machine. Set `STORYBOOK_PORT`
 or `SITE_PORT` to change those host ports, for example
-`STORYBOOK_PORT=6010 docker compose up -d storybook`. The services use
-separate dependency volumes so their installs do not interrupt one another. The
+`STORYBOOK_PORT=6010 docker compose up -d`. The services use
+separate dependency volumes so their installs do not interrupt one another.
+Compose also uses these host ports for the links between the explorer, companion
+and Storybook, including the MCP URL shown in the companion. Recreate the
+services with `docker compose up -d` after changing either port. The
 container image does not include Git, so Storybook's optional Git-based change
 detection is unavailable; component hot reload still works.
 
