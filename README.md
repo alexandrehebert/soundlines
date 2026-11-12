@@ -104,7 +104,7 @@ npm run validate:graph # graph validation
   for factual corrections.
 - **Propose an addition.** Tell us which artist, genre, instrument, or connection
   is missing. Include related entries and any sources that support the addition.
-  [Suggest an addition](https://github.com/alexandrehebert/soundlines/issues/new?title=New+entry+or+connection&body=%23%23%23+What+should+Soundlines+add%3F%0A%0A%0A%23%23%23+Related+entries+and+sources%0A)
+  [Suggest an addition](https://github.com/alexandrehebert/soundlines/issues/new?template=graph-contribution.yml)
 - **Give app feedback.** Tell us what worked well or what could improve. For a
   bug, include the page and steps to reproduce it when possible.
   [Give feedback](https://github.com/alexandrehebert/soundlines/issues/new?title=Soundlines+app+feedback&body=%23%23%23+What+would+you+like+to+share%3F%0A%0A%0A%23%23%23+Page+or+steps+to+reproduce%2C+if+relevant%0A)
@@ -121,11 +121,14 @@ not services required to run the app.
 The graph, artwork, and loop workflows describe this repository's
 AI-assisted contribution system: reusable **skills** give an AI coding
 assistant project-specific procedures, and specialized **agents** take
-responsibility for individual stages and handoffs. They guide work when
-invoked; they are not automatic pipelines. Deterministic validation and the
-human review or sign-off shown in each diagram remain explicit gates. Genre
-previews use dedicated `preview-briefer`, `preview-producer`, and `preview-reviewer` agents
-with the existing preview renderer, automated quality scoring and staged retake comparison.
+responsibility for individual stages and handoffs. Graph contributions can
+also be sent to Copilot cloud agent after a maintainer applies the approval
+label; its pull requests still require CI and human review. The other workflows
+guide work when invoked and are not automatic pipelines. Deterministic
+validation and the human review or sign-off shown in each diagram remain
+explicit gates. Genre previews use dedicated `preview-briefer`,
+`preview-producer`, and `preview-reviewer` agents with the existing preview
+renderer, automated quality scoring and staged retake comparison.
 
 <details>
 <summary><strong>Music graph</strong> — research, enrichment, and source review</summary>

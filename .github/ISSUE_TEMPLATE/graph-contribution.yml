@@ -1,0 +1,39 @@
+name: Graph contribution
+description: Suggest an addition or correction to the Soundlines music graph
+title: "[Graph] "
+body:
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Contribution type
+      options:
+        - Add an entry
+        - Correct an entry
+        - Add or correct a relationship
+    validations:
+      required: true
+  - type: textarea
+    id: entries
+    attributes:
+      label: Entry or entries
+      description: Include names and graph links or IDs when available.
+      placeholder: "e.g. artist:example, genre:example"
+    validations:
+      required: true
+  - type: textarea
+    id: requested_change
+    attributes:
+      label: What should change?
+      description: Describe the proposed addition or correction and why it belongs in the graph.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Share credible sources for the claims. If you could not find a source, say so.
+      placeholder: |-
+        https://...
+        Claim supported:
+    validations:
+      required: true

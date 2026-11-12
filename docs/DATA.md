@@ -69,6 +69,38 @@ workflow runs it, plus a `review-status.json` freshness check, on every pull req
 or docs. The skills in [.github/skills](../.github/skills) bundle `lookup.mjs` (query `graph.json` by id,
 name, or pending evidence) and `diff.mjs` (semantic diff of graph changes and overlays against a git ref).
 
+### Issue-to-pull-request automation
+
+Graph contributions can be submitted with the
+[Graph contribution issue form](../.github/ISSUE_TEMPLATE/graph-contribution.yml). A maintainer
+starts the cloud-agent workflow by applying the `graph:approved` issue label. The workflow launches
+the `graph-editor` custom agent to verify and implement the proposal, then asks it to open a pull
+request. The `graph:agent-started` label prevents the same issue from starting another task. Pull
+requests still require CI and human review; the agent does not merge them.
+Copilot cloud currently does not support the custom agent's web-search tool, so
+the issue should include source links; the agent must leave out claims it cannot
+independently verify with the tools and source material available to it.
+The [Copilot setup workflow](../.github/workflows/copilot-setup-steps.yml) installs Node.js 26
+and the project dependencies for agent sessions running on GitHub Actions; it does not apply to
+cloud sandbox sessions.
+
+To enable this for the repository:
+
+1. Enable GitHub Copilot cloud agent and Actions for the repository.
+2. Create the `graph:approved` and `graph:agent-started` issue labels in repository settings.
+3. Add a `COPILOT_AGENT_TOKEN` repository Actions secret containing a fine-grained personal access
+   token with read access to metadata and read/write access to **Actions, Contents, Issues, and Pull
+   requests** for this repository. The token must belong to an account with Copilot cloud agent
+   access. Do not put it in the workflow or repository files.
+4. Apply `graph:approved` to a graph contribution issue. The workflow records successful task starts
+   with `graph:agent-started`; a failed run can be retried after correcting its cause.
+
+The workflow uses the built-in Actions token only to read and label the triggering issue. The
+separate agent token is only used to assign the issue to Copilot. This issue-assignment API is in
+public preview; review
+[GitHub's Copilot API guide](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/use-cloud-agent-via-the-api)
+for current requirements before enabling the automation.
+
 ## Dataset scope and editorial caveats
 
 The expanded starter dataset connects at least three key artists to every genre
