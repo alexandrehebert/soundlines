@@ -763,6 +763,7 @@ key:byrd-renaissance,key_artist_of,high,docs/graph/evidence/edges/key__byrd-rena
 key:calvin-harris-edm,key_artist_of,high,docs/graph/evidence/edges/key__calvin-harris-edm.md,2026-11-04
 key:calvin-harris-electro-house,key_artist_of,low,docs/graph/evidence/edges/key__calvin-harris-electro-house.md,2026-11-04
 key:calypso-rose-calypso,key_artist_of,high,docs/graph/evidence/edges/key__calypso-rose-calypso.md,Source checked (2026-11-05)
+key:calypso-rose-soca,key_artist_of,low,docs/graph/evidence/edges/key__calypso-rose-soca.md,Source checked (2026-11-12)
 key:can-krautrock,key_artist_of,high,docs/graph/evidence/edges/key__can-krautrock.md,Reviewed — confirmed; upgraded to high
 key:candlemass-doom-metal,key_artist_of,high,docs/graph/evidence/edges/key__candlemass-doom-metal.md,Source checked (2026-11-05)
 key:cannibal-corpse-death-metal,key_artist_of,high,docs/graph/evidence/edges/key__cannibal-corpse-death-metal.md,Source checked (2026-11-05)
@@ -1037,6 +1038,7 @@ key:lucinda-williams-alt-country,key_artist_of,high,docs/graph/evidence/edges/ke
 key:lucinda-williams-americana,key_artist_of,high,docs/graph/evidence/edges/key__lucinda-williams-americana.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:luzmila-carpio-andean-folk,key_artist_of,medium,docs/graph/evidence/edges/key__luzmila-carpio-andean-folk.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:mac-dre-hyphy,key_artist_of,high,docs/graph/evidence/edges/key__mac-dre-hyphy.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
+key:machel-montano-soca,key_artist_of,medium,docs/graph/evidence/edges/key__machel-montano-soca.md,Source checked (2026-11-12)
 key:machito-latin-jazz,key_artist_of,high,docs/graph/evidence/edges/key__machito-latin-jazz.md,Reviewed — founding role confirmed; raised to high
 key:macintosh-plus-vaporwave,key_artist_of,high,docs/graph/evidence/edges/key__macintosh-plus-vaporwave.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:madlib-jazz-rap,key_artist_of,medium,docs/graph/evidence/edges/key__madlib-jazz-rap.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
@@ -1156,6 +1158,7 @@ key:rammstein-industrial-metal,key_artist_of,medium,docs/graph/evidence/edges/ke
 key:ramnad-krishnan-carnatic,key_artist_of,medium,docs/graph/evidence/edges/key__ramnad-krishnan-carnatic.md,Reviewed — Confirmed; medium kept
 key:ramones-pop-punk,key_artist_of,high,docs/graph/evidence/edges/key__ramones-pop-punk.md,Reviewed — genre centrality and career scope checked (2026-11-05)
 key:ramones-punk,key_artist_of,medium,docs/graph/evidence/edges/key__ramones-punk.md,"Reviewed — centrality, period and genre scope checked (2026-11-05)"
+key:ras-shorty-i-soca,key_artist_of,high,docs/graph/evidence/edges/key__ras-shorty-i-soca.md,Source checked (2026-11-12)
 key:ravi-shankar-hindustani-classical,key_artist_of,medium,docs/graph/evidence/edges/key__ravi-shankar-hindustani-classical.md,"Reviewed — centrality, period and genre scope checked (2026-11-05)"
 key:reich-minimalism,key_artist_of,medium,docs/graph/evidence/edges/key__reich-minimalism.md,"Reviewed — centrality, period and genre scope checked (2026-11-05)"
 key:reigakusha-gagaku,key_artist_of,high,docs/graph/evidence/edges/key__reigakusha-gagaku.md,Reviewed — Confirmed; upgraded to high
@@ -1489,6 +1492,7 @@ lineage:saxophone-clarinet,influences,medium,docs/graph/evidence/edges/lineage__
 lineage:serialism-modern-classical,subgenre_of,high,docs/graph/evidence/edges/lineage__serialism-modern-classical.md,Source checked (2026-11-05)
 lineage:shoegaze-indie-rock,subgenre_of,medium,docs/graph/evidence/edges/lineage__shoegaze-indie-rock.md,Reviewed — taxonomy checked; umbrella/contested-parent caveat recorded (2026-11-05)
 lineage:ska-r-and-b,influences,medium,docs/graph/evidence/edges/lineage__ska-r-and-b.md,Source checked (2026-11-05)
+lineage:soca-calypso,derived_from,medium,docs/graph/evidence/edges/lineage__soca-calypso.md,Source checked (2026-11-12)
 lineage:son-cubano-latin,subgenre_of,medium,docs/graph/evidence/edges/lineage__son-cubano-latin.md,Reviewed — taxonomy checked; umbrella/contested-parent caveat recorded (2026-11-05)
 lineage:soul-pop,cross_pollination,medium,docs/graph/evidence/edges/cross_pollination__soul-pop.md,Source checked (2026-11-05)
 lineage:southern-rap-hip-hop,subgenre_of,high,docs/graph/evidence/edges/lineage__southern-rap-hip-hop.md,Reviewed — taxonomy checked; umbrella/contested-parent caveat recorded (2026-11-05)

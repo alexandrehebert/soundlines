@@ -1261,6 +1261,44 @@
       "description": "Tobagonian calypsonian Linda McCartha Sandy-Lewis, known as Calypso Rose, who began performing in calypso tents as a teenager and became a leading songwriter and performer. She won Trinidad’s Road March in 1977 and Calypso Monarch in 1978."
     },
     {
+      "id": "artist:ras-shorty-i",
+      "type": "artist",
+      "name": "Ras Shorty I",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": 1999,
+        "precision": "decade",
+        "estimated": true,
+        "estimateNote": "RBMA says charges following his 1973 Calypso Monarch finals performance capped his first decade of career activity. The 1960s start is inferred, not a documented debut; the latest activity documented in the reviewed sources is the 1999 Jamoo Victory album, making 1999 an approximate period end rather than a confirmed career-cessation date."
+      },
+      "description": "Trinidadian calypsonian Garfield Blackman, first known as Lord Shorty, was a pioneer in soca’s emergence. He later adopted the name Ras Shorty I and developed faith-based Jamoo music; soca’s origins involved multiple contributors.",
+      "confidence": "medium",
+      "sources": [
+        "https://daily.redbullmusicacademy.com/2016/06/ras-shorty-i-the-soul-of-calypso/",
+        "https://www.caribbean-beat.com/issue-174/soca-gold-backstory",
+        "https://www.caribbean-beat.com/issue-121/take-ten-part-2-greatest-calypso-and-soca-singers-all-time"
+      ]
+    },
+    {
+      "id": "artist:machel-montano",
+      "type": "artist",
+      "name": "Machel Montano",
+      "kind": "person",
+      "period": {
+        "start": 1980,
+        "precision": "decade",
+        "estimated": true,
+        "estimateNote": "A 2023 Caribbean Beat feature describes a 40-year career, implying an approximate early-1980s anchor; a 2009 profile says he rose as a child star but gives no start year."
+      },
+      "description": "Trinidadian soca performer who rose as a child star and built a long-running career incorporating varied musical influences and cross-genre collaborations.",
+      "confidence": "medium",
+      "sources": [
+        "https://www.caribbean-beat.com/issue-98/machel-montano-man-mission",
+        "https://www.caribbean-beat.com/issue-174/soca-gold-backstory"
+      ]
+    },
+    {
       "id": "artist:can",
       "type": "artist",
       "name": "Can",
@@ -10806,6 +10844,24 @@
       ],
       "phases": [],
       "phaseNote": "No single measured prominence curve is defensible from the sources reviewed. 1900 is a term/documentation marker, not a musical birth date; 1914 marks the first commercial recording cited by the national library."
+    },
+    {
+      "id": "genre:soca",
+      "type": "genre",
+      "name": "Soca",
+      "family": "reggae",
+      "period": {
+        "start": 1973,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Caribbean Beat anchors an early evolution of soca in 1973 with Lord Shorty’s “Indrani”; RBMA says soca proper coalesced around 1976. 1973 is an origins marker, not a settled genre boundary."
+      },
+      "description": "A Caribbean Carnival style originating in Trinidad and Tobago that reworks calypso. Early experiments included Lord Shorty’s “Indrani” (1973), which brought calypso together with dholak and dhantal played by East Indian musicians. Soca developed through multiple contributors; RBMA describes the style as coalescing around 1976.",
+      "confidence": "medium",
+      "sources": [
+        "https://daily.redbullmusicacademy.com/2016/06/ras-shorty-i-the-soul-of-calypso/",
+        "https://www.caribbean-beat.com/issue-174/soca-gold-backstory"
+      ]
     },
     {
       "id": "genre:carnatic",
@@ -51256,6 +51312,54 @@
         "https://catalog.rockhall.com/rrhof-ais/Details/archive/110000155",
         "https://iaspmjournal.net/index.php/IASPM_Journal/article/download/325/563",
         "https://en.wikipedia.org/wiki/Lollapalooza"
+      ]
+    },
+    {
+      "id": "lineage:soca-calypso",
+      "type": "derived_from",
+      "from": "genre:soca",
+      "to": "genre:calypso",
+      "confidence": "medium",
+      "note": "Sources describe soca as a revisioning or evolution of calypso; early experiments also incorporated East Indian rhythmic elements, without making soca a simple two-parent fusion.",
+      "sources": [
+        "https://daily.redbullmusicacademy.com/2016/06/ras-shorty-i-the-soul-of-calypso/",
+        "https://www.caribbean-beat.com/issue-174/soca-gold-backstory"
+      ]
+    },
+    {
+      "id": "key:ras-shorty-i-soca",
+      "type": "key_artist_of",
+      "from": "artist:ras-shorty-i",
+      "to": "genre:soca",
+      "confidence": "high",
+      "note": "RBMA identifies Lord Shorty/Ras Shorty I as a soca pioneer and links his 1973 “Indrani” to the genre’s early development; Caribbean Beat presents the origin story as involving multiple contributors.",
+      "sources": [
+        "https://daily.redbullmusicacademy.com/2016/06/ras-shorty-i-the-soul-of-calypso/",
+        "https://www.caribbean-beat.com/issue-174/soca-gold-backstory",
+        "https://www.caribbean-beat.com/issue-121/take-ten-part-2-greatest-calypso-and-soca-singers-all-time"
+      ]
+    },
+    {
+      "id": "key:machel-montano-soca",
+      "type": "key_artist_of",
+      "from": "artist:machel-montano",
+      "to": "genre:soca",
+      "confidence": "medium",
+      "note": "Caribbean Beat describes Montano as a soca star and later as the genre’s biggest superstar, supporting representative status.",
+      "sources": [
+        "https://www.caribbean-beat.com/issue-98/machel-montano-man-mission",
+        "https://www.caribbean-beat.com/issue-174/soca-gold-backstory"
+      ]
+    },
+    {
+      "id": "key:calypso-rose-soca",
+      "type": "key_artist_of",
+      "from": "artist:calypso-rose",
+      "to": "genre:soca",
+      "confidence": "low",
+      "note": "Caribbean Beat identifies Calypso Rose as a calypso icon who joined Soca and names her 1977 recording “Give More Tempo.” This supports her early representative role, though the reviewed article does not document a direct influence on later artists.",
+      "sources": [
+        "https://www.caribbean-beat.com/issue-174/soca-gold-backstory"
       ]
     }
   ]

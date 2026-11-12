@@ -456,7 +456,7 @@ describe('graph.json integrity', () => {
         'conscious-hip-hop', 'southern-rap', 'crunk', 'g-funk', 'hyphy',
         'chopped-and-screwed', 'horrorcore',
       ],
-      reggae: ['ska', 'rocksteady', 'reggae', 'dub', 'dancehall', 'calypso'],
+      reggae: ['ska', 'rocksteady', 'reggae', 'dub', 'dancehall', 'calypso', 'soca'],
       latin: [
         'latin', 'son-cubano', 'salsa', 'bossa-nova', 'cumbia', 'samba',
         'tango', 'andean-folk', 'bachata', 'merengue', 'reggaeton',
