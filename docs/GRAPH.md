@@ -31,7 +31,7 @@ test suite ([graph.test.ts](../src/data/graph.test.ts) and the other `src/data` 
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 1357 nodes (178 genres, 540 artists, 72 instruments, 41 labels, 118 places, 210 tracks, 56 scenes, 103 events, 39 festivals) and 2072 edges (as of 2026-11-12).
+Current size: 1361 nodes (179 genres, 543 artists, 72 instruments, 41 labels, 118 places, 210 tracks, 56 scenes, 103 events, 39 festivals) and 2075 edges (as of 2026-11-12).
 
 `graph.json` remains the canonical source for entity ids, relationships, dates,
 sources, and English text. Display names and prose for each other app locale are
@@ -125,7 +125,7 @@ Every genre **must** have a `family`. Lanes are rendered in this order:
 | `hip-hop`           | Hip-hop                | 18     | regional rap, boom bap, jazz rap, crunk, G-funk, hyphy, trap, drill, grime |
 | `reggae`            | Reggae & Ska           | 7      | calypso, soca, ska, rocksteady, reggae, dub, dancehall |
 | `latin`             | Latin                  | 11     | son cubano, salsa, bossa nova, cumbia, samba, tango, reggaeton |
-| `african`           | African                | 15     | highlife, Afrobeat, Congolese rumba, raï, Gnawa, Algerian chaâbi, mbalax, makossa, taarab |
+| `african`           | African                | 16     | highlife, Afrobeat, Congolese rumba, raï, Gnawa, Algerian chaâbi, mbalax, makossa, taarab, Morna |
 | `electronica`       | Electronica & Ambient  | 11     | electro, trip-hop, ambient, IDM, synthwave, downtempo, EDM |
 | `house`             | Disco & House          | 13     | disco, Italo disco, hi-NRG, house styles, French Touch, footwork |
 | `techno`            | Techno & Trance        | 9      | techno styles, trance, psytrance, gabber, hardstyle |

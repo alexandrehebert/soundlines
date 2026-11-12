@@ -234,6 +234,18 @@
     "artist:celia-cruz": {
       "description": "Celia Cruz fu una cantante cubana la cui carriera comprendeva musica da ballo cubana, guaracha e salsa di rilievo internazionale. Entrò nella Sonora Matancera nel 1949/1950 e divenne un’interprete fondamentale della salsa."
     },
+    "artist:cesaria-evora": {
+      "description": "Cantante capoverdiana le cui interpretazioni contribuirono a far conoscere la morna a livello internazionale; era ampiamente chiamata la «Regina della morna».",
+      "estimateNote": "Inizio di carriera approssimativo: le biografie riferiscono che cantava nei bar locali a sedici anni, senza stabilire l’anno esatto. La fine coincide con la sua morte nel 2011."
+    },
+    "artist:bana": {
+      "description": "Cantante capoverdiano noto come «Re della morna» e interprete di spicco di questa tradizione.",
+      "estimateNote": "Indicazione approssimativa: le biografie collocano l’inizio della sua carriera musicale negli anni 1950, senza documentare la prima esibizione esatta. La fine coincide con la sua morte nel 2013."
+    },
+    "artist:ildo-lobo": {
+      "description": "Cantante capoverdiano noto per le sue interpretazioni di morna, tra cui l’album «Nôs Morna» (1996), e per il lavoro con gli Os Tubarões.",
+      "estimateNote": "Inizio approssimativo della carriera con gli Os Tubarões; l’album solista Nôs Morna (1996) è una tappa successiva documentata, non il suo debutto. La fine coincide con la sua morte nel 2004."
+    },
     "artist:charlie-parker": {
       "description": "Sassofonista contralto le cui innovazioni melodiche e armoniche furono centrali nel bebop."
     },
@@ -4262,6 +4274,11 @@
         "1950": "Una fonte storica colloca gli inizi del makossa nella Douala degli anni 1950, con radici nella danza Duala e influenze musicali varie.",
         "1972": "Soul Makossa portò una registrazione influenzata dal makossa al pubblico internazionale; non equivale alla storia completa del genere né a un’età d’oro misurata."
       }
+    },
+    "genre:morna": {
+      "name": "Morna",
+      "description": "Pratica musicale e coreutica tradizionale di Cabo Verde, la morna unisce voce, musica strumentale, poesia e danza. Può essere cantata in strofe liriche o eseguita solo con strumenti, tra cui chitarra, violino, chitarra a dieci corde e cavaquinho, ed è legata alla vita comunitaria capoverdiana.",
+      "estimateNote": "Riferimento contestuale, non un’origine accertata: alcune ricostruzioni collegano le prime forme al lundu nel Cabo Verde del XVIII secolo, mentre l’UNESCO descrive la pratica viva senza indicarne una data d’inizio."
     },
     "genre:taarab": {
       "description": "Tradizione musicale della costa swahili associata a Zanzibar e all’Africa orientale, plasmata dagli scambi tra culture africane, arabe e dell’Oceano Indiano. Orchestre e cantanti, tra cui Siti binti Saad, portarono le sue canzoni nelle registrazioni, nei club e nelle celebrazioni comunitarie.",

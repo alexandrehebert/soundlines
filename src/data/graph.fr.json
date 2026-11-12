@@ -39,6 +39,18 @@
     "artist:celia-cruz": {
       "description": "Chanteuse cubaine dont la carrière traverse la musique de danse cubaine, la guaracha et la salsa, qui lui vaut une renommée internationale. Elle rejoint La Sonora Matancera en 1949 ou 1950 et devient l’une des grandes interprètes de la salsa."
     },
+    "artist:cesaria-evora": {
+      "description": "Chanteuse capverdienne dont les interprétations ont contribué à faire connaître la morna dans le monde entier ; elle était largement surnommée la « Reine de la morna ».",
+      "estimateNote": "Début de carrière approximatif : les biographies indiquent qu’elle chantait dans des bars locaux à seize ans, sans établir l’année exacte. La fin correspond à son décès en 2011."
+    },
+    "artist:bana": {
+      "description": "Chanteur capverdien surnommé le « Roi de la morna » et interprète marquant de cette tradition.",
+      "estimateNote": "Repère approximatif : les biographies situent le début de sa carrière musicale dans les années 1950, sans première prestation précisément établie. La fin correspond à son décès en 2013."
+    },
+    "artist:ildo-lobo": {
+      "description": "Chanteur capverdien connu pour ses interprétations de morna, notamment l’album « Nôs Morna » (1996), ainsi que pour son travail avec Os Tubarões.",
+      "estimateNote": "Début de carrière approximatif pour son activité avec Os Tubarões ; son album solo Nôs Morna (1996) est un jalon ultérieur, pas ses débuts. La fin correspond à son décès en 2004."
+    },
     "artist:kraftwerk": {
       "description": "Groupe de Düsseldorf qui a exploré la relation entre les humains et les machines. Juan Atkins et Afrika Bambaataa citent « Trans-Europe Express » et « Computer World » comme des œuvres fondatrices.",
       "phaseNote": "Une carrière éditoriale importante ancrée dans Autobahn, Trans-Europe Express, Computer World et le retour des bandes originales du Tour de France 2003. Cela décrit la visibilité de l'ère de l'enregistrement, et non l'ampleur continue de l'influence ou de l'écoute mesurée de Kraftwerk.",
@@ -4306,6 +4318,11 @@
         "1950": "La référence historique situe les débuts de Makossa dans les années 1950 à Douala, avec des racines dans la danse Duala et des influences musicales variées.",
         "1972": "Soul Makossa a présenté un enregistrement influencé par Makossa au public international ; cela n’équivaut pas à l’histoire complète du genre ou à un âge d’or mesuré."
       }
+    },
+    "genre:morna": {
+      "name": "Morna",
+      "description": "Pratique musicale et chorégraphique traditionnelle du Cabo Verde, la morna associe voix, musique instrumentale, poésie et danse. Chantée en couplets lyriques ou jouée instrumentalement, elle fait notamment appel à la guitare, au violon, à la guitare à dix cordes et au cavaquinho, et reste liée à la vie communautaire capverdienne.",
+      "estimateNote": "Repère contextuel, pas une origine établie : certaines sources rattachent les formes anciennes au lundu présent au Cabo Verde au XVIIIe siècle, tandis que l’UNESCO décrit une pratique vivante sans en dater le début."
     },
     "genre:taarab": {
       "description": "Une tradition musicale côtière swahili associée à Zanzibar et à l'Afrique de l'Est, façonnée par les échanges entre les cultures africaines, arabes et de l'océan Indien. Des orchestres et des chanteurs, dont Siti binti Saad, ont intégré leurs chansons dans des enregistrements, des clubs et des célébrations communautaires.",

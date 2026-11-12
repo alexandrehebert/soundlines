@@ -464,6 +464,7 @@ describe('graph.json integrity', () => {
       african: [
         'highlife', 'afrobeat', 'afrobeats', 'juju', 'soukous', 'amapiano', 'gqom', 'kwaito',
         'congolese-rumba', 'rai', 'gnawa', 'algerian-chaabi', 'mbalax', 'makossa', 'taarab',
+        'morna',
       ],
       electronica: [
         'electro', 'trip-hop', 'ambient', 'idm', 'synthwave', 'darksynth',
@@ -589,6 +590,7 @@ describe('graph.json integrity', () => {
       'genre:algerian-chaabi',
       'genre:makossa',
       'genre:taarab',
+      'genre:morna',
     ])
     expect(ids.length).toBeGreaterThan(0)
     const visited = new Set([ids[0], ...roots])
