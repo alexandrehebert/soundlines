@@ -173,9 +173,9 @@ function Hero({ c, page, home }: { c: Copy; page: Page; home: boolean }) {
   return (
     <section
       aria-labelledby="title"
-      className={home ? 'grid items-center gap-12 py-12 sm:py-20 md:grid-cols-[1.5fr_1fr]' : 'max-w-212 py-12 sm:pt-20'}
+      className={`py-12 sm:pt-20 ${home ? 'grid items-center gap-12 sm:pb-20 md:grid-cols-[1.5fr_1fr]' : 'max-w-212'}`}
     >
-      <div>
+      <div className="self-start">
         <p className="eyebrow">{home ? c.eyebrow : (page.eyebrow ?? page.label)}</p>
         <h1 id="title" className="my-5 text-[clamp(2.6rem,5.6vw,4.8rem)] leading-[1.06] font-bold tracking-[-0.065em] text-balance">
           {page.title}
