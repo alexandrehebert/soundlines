@@ -24,7 +24,7 @@ body:
     id: requested_change
     attributes:
       label: What should change?
-      description: Describe the proposed addition or correction and why it belongs in the graph.
+      description: Describe the proposed addition or correction and why it belongs in the graph. For a new genre, suggest at least three representative artists with sources if possible; every genre needs three sourced key-artist relationships.
     validations:
       required: true
   - type: textarea
