@@ -10,6 +10,17 @@
     "repository": "GitHub repository",
     "about": "How Soundlines is made"
   },
+  "feedback": {
+    "edit": "Suggest an edit",
+    "editTitle": "Suggested edit: {name}",
+    "editBody": "Entry: {entryUrl}\n\n### What should change?\n\n\n### Sources for factual changes\n",
+    "add": "Suggest an addition",
+    "addTitle": "New entry or connection",
+    "addBody": "### What should Soundlines add?\n\n\n### Related entries and sources\n",
+    "app": "Give feedback",
+    "appTitle": "Soundlines app feedback",
+    "appBody": "### What would you like to share?\n\n\n### Page or steps to reproduce, if relevant\n"
+  },
   "tagline": "an atlas of musical lineages",
   "homeCopy": {
     "theme": "Theme",

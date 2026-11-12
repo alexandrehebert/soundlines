@@ -10,6 +10,17 @@
     "repository": "Repositorio de GitHub",
     "about": "Cómo se hace Soundlines"
   },
+  "feedback": {
+    "edit": "Sugerir un cambio",
+    "editTitle": "Cambio propuesto: {name}",
+    "editBody": "Ficha: {entryUrl}\n\n### ¿Qué habría que cambiar?\n\n\n### Fuentes para las correcciones de datos\n",
+    "add": "Proponer una incorporación",
+    "addTitle": "Nueva ficha o relación",
+    "addBody": "### ¿Qué debería añadir Soundlines?\n\n\n### Fichas relacionadas y fuentes\n",
+    "app": "Dar tu opinión",
+    "appTitle": "Comentarios sobre la aplicación Soundlines",
+    "appBody": "### ¿Qué te gustaría compartir?\n\n\n### Página o pasos para reproducir el problema, si procede\n"
+  },
   "tagline": "un atlas de genealogías musicales",
   "homeCopy": {
     "theme": "Tema",

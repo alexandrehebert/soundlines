@@ -4,6 +4,12 @@ export const STORYBOOK_URL = `${PROJECT_SITE_URL}/storybook/`
 export const APP_URL = 'https://soundlines.hebert.app/'
 export const MCP_URL = new URL('api/mcp', APP_URL).href
 
+export function newIssueUrl(title: string, body: string): string {
+  const url = new URL(`${REPOSITORY_URL}/issues/new`)
+  url.search = new URLSearchParams({ title, body }).toString()
+  return url.href
+}
+
 export function companionBaseUrl() {
   return process.env.NEXT_PUBLIC_SOUNDLINES_COMPANION_URL || PROJECT_SITE_URL
 }

@@ -244,7 +244,12 @@ describe('detail panel sources', () => {
     } else {
       expect(markup).not.toContain(previewInfo)
     }
-    expect(markup.match(/<a /g)).toHaveLength(id.startsWith('genre:') ? 2 : 1)
+    const suggestion = markup.match(/<a href="(https:\/\/github\.com\/[^" ]+\/issues\/new\?[^"]+)"[^>]*>/)
+    expect(suggestion?.[0]).toContain('target="_blank"')
+    const issue = new URL(suggestion![1].replaceAll('&amp;', '&'))
+    const [type] = id.split(':')
+    expect(issue.searchParams.get('body')).toContain(`https://soundlines.hebert.app/en/${type}s?focus=${encodeURIComponent(id)}`)
+    expect(markup.match(/<a /g)).toHaveLength(id.startsWith('genre:') ? 3 : 2)
     expect(markup).toContain(relatedName)
     expect(markup).toContain('Confidence: high')
     expect(markup).toContain('A representative artist.')
@@ -275,8 +280,8 @@ describe('detail panel sources', () => {
     }
     const markup = renderPanel(data, 'genre:jazz')
 
-    expect(markup).not.toContain('Sources')
-    expect(markup.match(/<a /g)).toHaveLength(1)
+    expect(markup).not.toContain('>Sources</h3>')
+    expect(markup.match(/<a /g)).toHaveLength(2)
     expect(markup).toContain('Example artist')
   })
 

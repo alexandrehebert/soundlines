@@ -10,6 +10,17 @@
     "repository": "GitHub-Repository",
     "about": "So entsteht Soundlines"
   },
+  "feedback": {
+    "edit": "Änderung vorschlagen",
+    "editTitle": "Änderungsvorschlag: {name}",
+    "editBody": "Eintrag: {entryUrl}\n\n### Was sollte geändert werden?\n\n\n### Quellen für sachliche Änderungen\n",
+    "add": "Ergänzung vorschlagen",
+    "addTitle": "Neuer Eintrag oder neue Verbindung",
+    "addBody": "### Was sollte Soundlines ergänzen?\n\n\n### Verwandte Einträge und Quellen\n",
+    "app": "Feedback geben",
+    "appTitle": "Feedback zur Soundlines-App",
+    "appBody": "### Was möchtest du uns mitteilen?\n\n\n### Seite oder Schritte zum Nachstellen, falls relevant\n"
+  },
   "tagline": "ein Atlas musikalischer Entwicklungslinien",
   "homeCopy": {
     "theme": "Design",

@@ -14,6 +14,7 @@
   <a href="#explore-music-history">Features</a> ·
   <a href="#getting-started">Get started</a> ·
   <a href="#query-the-graph-with-mcp">MCP</a> ·
+  <a href="#contributing">Contributing</a> ·
   <a href="#documentation">Docs</a> ·
   <a href="https://alexandrehebert.github.io/soundlines/">Project guide</a> ·
   <a href="#credits">Credits</a> ·
@@ -94,6 +95,23 @@ npm run start          # serve the production build
 npm run storybook      # component catalogue
 npm run validate:graph # graph validation
 ```
+
+## Contributing
+
+- **Suggest a correction.** Open the entry in [Soundlines](https://soundlines.hebert.app/)
+  and choose **Suggest an edit** below its description. The issue draft includes
+  the entry name and a direct link. Describe what should change and share sources
+  for factual corrections.
+- **Propose an addition.** Tell us which artist, genre, instrument, or connection
+  is missing. Include related entries and any sources that support the addition.
+  [Suggest an addition](https://github.com/alexandrehebert/soundlines/issues/new?title=New+entry+or+connection&body=%23%23%23+What+should+Soundlines+add%3F%0A%0A%0A%23%23%23+Related+entries+and+sources%0A)
+- **Give app feedback.** Tell us what worked well or what could improve. For a
+  bug, include the page and steps to reproduce it when possible.
+  [Give feedback](https://github.com/alexandrehebert/soundlines/issues/new?title=Soundlines+app+feedback&body=%23%23%23+What+would+you+like+to+share%3F%0A%0A%0A%23%23%23+Page+or+steps+to+reproduce%2C+if+relevant%0A)
+
+Submissions go to the public GitHub issue tracker and require a GitHub account.
+If you’re editing the dataset directly, see the
+[graph contribution workflow](./docs/DATA.md#graph-contribution-workflow).
 
 ## Workflows
 

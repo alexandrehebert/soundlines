@@ -19,7 +19,7 @@ import { Turntable } from './Turntable.tsx'
 import './Home.css'
 import { localizePath } from '../i18n/routing.ts'
 import { graphLabels } from '../i18n/graphLabels.ts'
-import { companionUrl, REPOSITORY_URL } from '../projectLinks.ts'
+import { companionUrl, newIssueUrl, REPOSITORY_URL } from '../projectLinks.ts'
 import { publicAsset } from '../publicAsset.ts'
 import { chartColor, FAMILY_COLORS } from '../theme.ts'
 import { useColorTheme } from '../useColorTheme.ts'
@@ -661,6 +661,8 @@ export function Home() {
           <nav className="discovery-footer-links discovery-footer-project" aria-label={t('projectLinks.navigation')}>
             <a href={REPOSITORY_URL}>{t('projectLinks.repository')}</a>
             <a href={companionUrl(locale)}>{t('projectLinks.about')}</a>
+            <a href={newIssueUrl(t('feedback.addTitle'), t('feedback.addBody'))} target="_blank" rel="noopener noreferrer">{t('feedback.add')}</a>
+            <a href={newIssueUrl(t('feedback.appTitle'), t('feedback.appBody'))} target="_blank" rel="noopener noreferrer">{t('feedback.app')}</a>
           </nav>
           <div className="discovery-footer-meta">
             <p>

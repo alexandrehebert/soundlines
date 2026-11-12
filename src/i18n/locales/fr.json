@@ -10,6 +10,17 @@
     "repository": "Dépôt GitHub",
     "about": "La fabrication de Soundlines"
   },
+  "feedback": {
+    "edit": "Suggérer une modification",
+    "editTitle": "Modification proposée : {name}",
+    "editBody": "Fiche : {entryUrl}\n\n### Que faudrait-il modifier ?\n\n\n### Sources pour les corrections factuelles\n",
+    "add": "Proposer un ajout",
+    "addTitle": "Nouvelle fiche ou relation",
+    "addBody": "### Que devrait ajouter Soundlines ?\n\n\n### Fiches liées et sources\n",
+    "app": "Donner un avis",
+    "appTitle": "Avis sur l’application Soundlines",
+    "appBody": "### Que souhaitez-vous nous dire ?\n\n\n### Page ou étapes pour reproduire le problème, le cas échéant\n"
+  },
   "tagline": "un atlas des lignées musicales",
   "homeCopy": {
     "theme": "Thème",
