@@ -71,6 +71,7 @@
       "history": "Scopri le svolte della musica"
     },
     "genreConnections": "Legami tra generi",
+    "previous": "Precedente",
     "nextConnection": "Legame successivo",
     "noFeaturedConnections": "I legami in evidenza appariranno qui quando disponibili.",
     "listeningBooth": "Cabina d’ascolto",
@@ -106,7 +107,6 @@
       "intro": "Segui un percorso musicale, ascolta ogni tappa e scopri come i generi si collegano.",
       "chooseTrail": "Scegli un percorso",
       "stops": "{count, plural, one {# tappa} other {# tappe}}",
-      "allTrails": "Tutti i percorsi",
       "progress": "Avanzamento del percorso",
       "stopProgress": "Tappa {position} di {total}",
       "listen": "Ascolta {name}",

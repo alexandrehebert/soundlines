@@ -71,6 +71,7 @@
       "history": "Wendepunkte der Musik entdecken"
     },
     "genreConnections": "Genreverbindungen",
+    "previous": "Zurück",
     "nextConnection": "Nächste Verbindung",
     "noFeaturedConnections": "Ausgewählte Verbindungen erscheinen hier, sobald sie verfügbar sind.",
     "listeningBooth": "Hörkabine",
@@ -106,7 +107,6 @@
       "intro": "Folge einer musikalischen Route, höre an jeder Station hinein und entdecke die Verbindungen zwischen den Stilen.",
       "chooseTrail": "Route wählen",
       "stops": "{count, plural, one {# Station} other {# Stationen}}",
-      "allTrails": "Alle Routen",
       "progress": "Fortschritt der Route",
       "stopProgress": "Station {position} von {total}",
       "listen": "{name} anhören",

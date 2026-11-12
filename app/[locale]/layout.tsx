@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { connection } from 'next/server'
 import type { ReactNode } from 'react'
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, getTranslations } from 'next-intl/server'
+import { getMessages, getNow, getTranslations } from 'next-intl/server'
 import '../../src/index.css'
 import '../../src/pageLoading.css'
 import { SoundlinesProviders } from '../../src/SoundlinesProviders.tsx'
@@ -37,7 +37,8 @@ export default async function LocaleLayout({
   if (!isLocale(locale)) notFound()
   // The explorer's initial server render depends on the request's search parameters.
   await connection()
-  const [messages, t] = await Promise.all([getMessages(), getTranslations()])
+  // Share the request time so daily selections match during hydration.
+  const [messages, t, now] = await Promise.all([getMessages(), getTranslations(), getNow()])
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -45,7 +46,7 @@ export default async function LocaleLayout({
         <script dangerouslySetInnerHTML={{ __html: `try { document.documentElement.dataset.theme = localStorage.getItem('soundlines-theme') === 'light' ? 'light' : 'dark'; } catch (error) { console.warn('Unable to read the Soundlines theme preference.', error); }` }} />
       </head>
       <body>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} now={now}>
           <div id="page-loading" role="status" aria-label={t('loading')} data-loading="true" data-opening>
             <div className="page-loading-record" aria-hidden="true">
               <div className="page-loading-vinyl">

@@ -71,6 +71,7 @@
       "history": "Find turning points in music"
     },
     "genreConnections": "Genre connections",
+    "previous": "Previous",
     "nextConnection": "Next connection",
     "noFeaturedConnections": "Featured connections will appear here when available.",
     "listeningBooth": "Listening booth",
@@ -106,7 +107,6 @@
       "intro": "Follow a musical trail, listen at each stop and discover how the styles connect.",
       "chooseTrail": "Choose a trail",
       "stops": "{count, plural, one {# stop} other {# stops}}",
-      "allTrails": "All trails",
       "progress": "Trail progress",
       "stopProgress": "Stop {position} of {total}",
       "listen": "Listen to {name}",

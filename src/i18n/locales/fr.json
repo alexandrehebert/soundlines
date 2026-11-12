@@ -71,6 +71,7 @@
       "history": "Repérer les tournants de l’histoire musicale"
     },
     "genreConnections": "Liens entre les genres",
+    "previous": "Précédent",
     "nextConnection": "Lien suivant",
     "noFeaturedConnections": "Les liens à la une apparaîtront ici.",
     "listeningBooth": "Espace d’écoute",
@@ -106,7 +107,6 @@
       "intro": "Suivez un parcours musical, écoutez chaque étape et découvrez comment les genres se répondent.",
       "chooseTrail": "Choisir un parcours",
       "stops": "{count, plural, one {# étape} other {# étapes}}",
-      "allTrails": "Tous les parcours",
       "progress": "Progression du parcours",
       "stopProgress": "Étape {position} sur {total}",
       "listen": "Écouter {name}",

@@ -565,11 +565,19 @@ describe('Soundtrails landing', () => {
       expect(markup).toContain(`<h3 id="${id}">`)
     }
     expect(markup).not.toContain('discovery-group-heading')
-    expect(markup).toContain(`src="${publicAsset('/instrument-avatars/tr-808.svg')}"`)
+    const spotlights = markup.match(/<section\b[^>]*class="discovery-widget discovery-spotlight"[\s\S]*?<\/section>/g) ?? []
+    expect(spotlights).toHaveLength(2)
+    for (const spotlight of spotlights) expect(spotlight).toContain('1 / 5')
+    expect(spotlights[1]).toMatch(/src="[^"]*\/instrument-avatars\/[^"]+\.svg"/)
   })
 
   it('omits empty discovery rows when spotlight and history entries are unavailable', () => {
-    const markup = renderHome(graph, false)
+    const source: MusicGraph = {
+      ...graph,
+      nodes: [],
+      edges: [],
+    }
+    const markup = renderHome(source, false)
     expect(markup).toContain('id="connection-heading"')
     expect(markup).not.toContain('id="listening-heading"')
     expect(markup).not.toContain('class="discovery-picks"')
@@ -580,7 +588,11 @@ describe('Soundtrails landing', () => {
   it('keeps a single available spotlight and its artwork without an empty history card', () => {
     const source: MusicGraph = {
       ...graph,
-      nodes: [...graph.nodes, { id: 'instrument:tr-808', type: 'instrument', name: 'Roland TR-808' }],
+      nodes: [
+        ...graph.nodes.filter((node) => node.type !== 'artist' && node.type !== 'instrument'),
+        { id: 'instrument:tr-808', type: 'instrument', name: 'Roland TR-808' },
+      ],
+      edges: [],
     }
     const markup = renderHome(source, false)
     expect(markup).toContain('class="discovery-picks"')
@@ -588,6 +600,38 @@ describe('Soundtrails landing', () => {
     expect(markup).not.toContain('Artist spotlight')
     expect(markup).toContain(`src="${publicAsset('/instrument-avatars/tr-808.svg')}"`)
     expect(markup).not.toContain('id="landmarks-heading"')
+  })
+
+  it('uses available catalogue entries rather than a fixed list of spotlight IDs', () => {
+    const markup = renderHome(graph, false)
+    expect(markup).toContain('Artist spotlight')
+    expect(markup).toContain('Instrument spotlight')
+    expect(markup).toContain('1 / 2')
+    expect(markup).toContain('1 / 3')
+    expect(markup).toMatch(/src="[^"]*\/instrument-avatars\/[abc]\.svg"/)
+  })
+
+  it.each([false, true])('changes both spotlights on the next UTC day in landing v3=%s', (landingV3) => {
+    vi.useFakeTimers()
+    try {
+      vi.setSystemTime(new Date('2026-11-11T23:59:59.000Z'))
+      const before = renderHome(rawGraph as MusicGraph, false, 'en', false, landingV3)
+      vi.setSystemTime(new Date('2026-11-12T00:00:00.000Z'))
+      const after = renderHome(rawGraph as MusicGraph, false, 'en', false, landingV3)
+      const spotlightLinks = (markup: string) => (markup.match(/<section\b[^>]*class="discovery-widget discovery-spotlight"[\s\S]*?<\/section>/g) ?? [])
+        .map((section) => section.match(/class="discovery-spotlight-title" href="([^"]+)"/)?.[1])
+      const first = spotlightLinks(before)
+      const next = spotlightLinks(after)
+      expect(first).toHaveLength(2)
+      expect(next).toHaveLength(2)
+      for (let i = 0; i < first.length; i++) {
+        expect(first[i]).toBeDefined()
+        expect(next[i]).toBeDefined()
+        expect(next[i]).not.toBe(first[i])
+      }
+    } finally {
+      vi.useRealTimers()
+    }
   })
 
   describe('v3 topic sections', () => {
@@ -637,7 +681,8 @@ describe('Soundtrails landing', () => {
       expect(instruments).toContain(`href="/${locale}/instruments"`)
       expect(instruments).not.toContain(`href="/${locale}/artists"`)
       expect(instruments).toContain(copy.instrumentSpotlight)
-      expect(instruments).toContain(`src="${publicAsset('/instrument-avatars/tr-808.svg')}"`)
+      expect(instruments).toMatch(/src="[^"]*\/instrument-avatars\/[^"]+\.svg"/)
+      expect(instruments).toContain('1 / 5')
       expect(instruments).toContain('<h3 id="instruments-recent-heading">')
       expect(instruments).toContain(escape(newest('instrument').name))
 
@@ -663,7 +708,12 @@ describe('Soundtrails landing', () => {
     })
 
     it('keeps the artist and instrument timelines when no spotlight is available', () => {
-      const markup = renderHome(graph, false, DEFAULT_LOCALE, false, true)
+      const source: MusicGraph = {
+        ...graph,
+        nodes: graph.nodes.filter((node) => node.type !== 'artist' && node.type !== 'instrument'),
+        edges: [],
+      }
+      const markup = renderHome(source, false, DEFAULT_LOCALE, false, true)
       const copy = catalogueFor(DEFAULT_LOCALE).homeCopy
       expect(markup).toContain('id="genres"')
       expect(sectionOf(markup, 'artists', 'instruments')).toContain('href="/en/artists"')

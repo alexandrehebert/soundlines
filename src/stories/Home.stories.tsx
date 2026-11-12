@@ -253,6 +253,29 @@ export const MobileTurntableControls: Story = {
   },
 }
 
+const checkSpotlightCarousel = async (container: HTMLElement, regionName: string, buttonName: string, instrument = false) => {
+  const region = within(container).getByRole('region', { name: regionName })
+  const seen: string[] = []
+  for (let position = 0; position < 5; position++) {
+    expect(region.querySelector('.discovery-counter')).toHaveTextContent(`${position + 1} / 5`)
+    const link = region.querySelector<HTMLAnchorElement>('.discovery-spotlight-title')
+    const href = link?.getAttribute('href')
+    if (!href) throw new Error(`${regionName} has no spotlight link`)
+    expect(seen).not.toContain(href)
+    seen.push(href)
+    if (instrument) {
+      const id = new URL(href, 'https://soundlines.test').searchParams.get('focus')
+      if (!id?.startsWith('instrument:')) throw new Error('Spotlight instrument ID is missing')
+      expect(region.querySelector('img')).toHaveAttribute('src', publicAsset(`/instrument-avatars/${encodeURIComponent(id.slice('instrument:'.length))}.svg`))
+    }
+    const viewport = container.ownerDocument.defaultView
+    if (viewport) expect(container.ownerDocument.documentElement.scrollWidth).toBeLessThanOrEqual(viewport.innerWidth)
+    await fireEvent.click(within(region).getByRole('button', { name: buttonName }))
+    await waitFor(() => expect(region.querySelector('.discovery-spotlight-title')?.getAttribute('href')).not.toBe(href))
+  }
+  expect(region.querySelector('.discovery-spotlight-title')?.getAttribute('href')).toBe(seen[0])
+}
+
 const checkCatalogueDiscovery = async ({ canvasElement }: { canvasElement: HTMLElement }) => {
   const catalogue = within(canvasElement).getByRole('region', { name: 'Explore the catalogue' })
   expect(within(catalogue).getAllByRole('heading', { level: 3 }).map((heading) => heading.textContent?.trim())).toEqual([
@@ -270,9 +293,8 @@ const checkCatalogueDiscovery = async ({ canvasElement }: { canvasElement: HTMLE
 
   await advance('Genre connections', 'Next connection', '.discovery-lineage')
   await advance('Listening booth', 'Next sound', '.discovery-listening-link')
-  await advance('Artist spotlight', 'Next artist', '.discovery-spotlight-title')
-  const instrument = await advance('Instrument spotlight', 'Next instrument', '.discovery-spotlight-title')
-  expect(instrument.querySelector('img')).toHaveAttribute('src', publicAsset('/instrument-avatars/theremin.svg'))
+  await checkSpotlightCarousel(catalogue, 'Artist spotlight', 'Next artist')
+  await checkSpotlightCarousel(catalogue, 'Instrument spotlight', 'Next instrument', true)
 
   const featured = catalogue.querySelectorAll<HTMLElement>('.discovery-featured > .discovery-widget')
   const viewport = canvasElement.ownerDocument.defaultView
@@ -330,6 +352,8 @@ const checkTopicSections = async ({ canvasElement }: { canvasElement: HTMLElemen
     else expect(recent.getBoundingClientRect().top).toBe(feature.getBoundingClientRect().top)
   }
   expect(canvasElement.ownerDocument.documentElement.scrollWidth).toBeLessThanOrEqual(viewport.innerWidth)
+  await checkSpotlightCarousel(canvasElement, 'Artist spotlight', 'Next artist')
+  await checkSpotlightCarousel(canvasElement, 'Instrument spotlight', 'Next instrument', true)
 
   fireEvent.click(canvas.getByRole('button', { name: 'Start a journey' }))
   const trails = canvas.getByRole('region', { name: 'Soundtrails' })

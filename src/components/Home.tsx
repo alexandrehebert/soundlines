@@ -1,7 +1,7 @@
-import { ArrowDown, ArrowLeftRight, ArrowRight, ArrowUpRight, Bubbles, ChartGantt, Guitar, Headphones, Heart, History, Landmark, Radio, Route, Users, type LucideIcon } from 'lucide-react'
+import { ArrowDown, ArrowLeft, ArrowLeftRight, ArrowRight, ArrowUpRight, Bubbles, ChartGantt, Guitar, Headphones, Heart, History, Landmark, Radio, Route, Users, type LucideIcon } from 'lucide-react'
 import { motion, useReducedMotion } from 'motion/react'
-import { useId, useMemo, useRef, useState, type ReactNode, type Ref } from 'react'
-import { useTranslations } from 'next-intl'
+import { useId, useMemo, useRef, useState, useSyncExternalStore, type ReactNode, type Ref } from 'react'
+import { useNow, useTranslations } from 'next-intl'
 import { useExplorer } from '../ExplorerContext.ts'
 import { featureFlags } from '../featureFlags.ts'
 import { formatEventPeriod } from '../graph/history.ts'
@@ -9,6 +9,7 @@ import { availableSoundtrails, type AvailableSoundtrail } from '../graph/soundtr
 import type { GraphNode, NodeType } from '../graph/types.ts'
 import { BrandLink } from './BrandLink.tsx'
 import { ChronologyPreview } from './ChronologyPreview.tsx'
+import { currentUtcDay, dailySpotlights, subscribeToUtcDay, utcDay } from './dailySpotlights.ts'
 import { GenreSample } from './GenreSample.tsx'
 import { follow } from './followLink.ts'
 import { EntryLink, ViewLink } from './HomeLinks.tsx'
@@ -49,8 +50,6 @@ const FEATURED_CONNECTIONS = [
 ] as const
 
 const LISTENING_PICKS = ['genre:bossa-nova', 'genre:acid-jazz', 'genre:detroit-techno'] as const
-const ARTIST_PICKS = ['artist:fela-kuti', 'artist:celia-cruz', 'artist:kraftwerk'] as const
-const INSTRUMENT_PICKS = ['instrument:tr-808', 'instrument:theremin', 'instrument:timbales'] as const
 const HISTORY_PICKS = ['event:phonograph-invented', 'event:bronx-back-to-school-jam', 'event:napster-launch'] as const
 
 const PAGE_SIZE = 5
@@ -74,10 +73,30 @@ function ConnectionNode({ node }: { node: GraphNode }) {
   )
 }
 
-function SpotlightWidget({ title, icon: Icon, picks, relationship, nextLabel, scrollReveal }: {
+function WidgetNav({ nextLabel, onPrevious, onNext, previousDisabled = false }: {
+  nextLabel: string
+  onPrevious: () => void
+  onNext: () => void
+  previousDisabled?: boolean
+}) {
+  const tHome = useTranslations('homeCopy')
+  return (
+    <div className="discovery-widget-nav">
+      <button type="button" className="discovery-widget-action" onClick={onPrevious} disabled={previousDisabled}>
+        <ArrowLeft size={16} aria-hidden="true" /> {tHome('previous')}
+      </button>
+      <button type="button" className="discovery-widget-action" onClick={onNext}>
+        {nextLabel} <ArrowRight size={16} aria-hidden="true" />
+      </button>
+    </div>
+  )
+}
+
+function SpotlightWidget({ title, icon: Icon, picks, day, relationship, nextLabel, scrollReveal }: {
   title: string
   icon: LucideIcon
-  picks: readonly string[]
+  picks: readonly GraphNode[]
+  day: number
   relationship: 'key_artist_of' | 'featured_in'
   nextLabel: string
   scrollReveal: typeof reveal | undefined
@@ -85,9 +104,9 @@ function SpotlightWidget({ title, icon: Icon, picks, relationship, nextLabel, sc
   const { index } = useExplorer()
   const tHome = useTranslations('homeCopy')
   const headingId = useId()
-  const [position, setPosition] = useState(0)
-  const entries = picks.map((id) => index.nodeById.get(id)).filter((node) => node !== undefined)
-  const node = entries[position]
+  const [selection, setSelection] = useState({ day, position: 0 })
+  const position = selection.day === day && picks.length > 0 ? selection.position % picks.length : 0
+  const node = picks[position]
   if (!node) return null
 
   const genres = [...new Set(index.outEdges.get(node.id)
@@ -101,7 +120,7 @@ function SpotlightWidget({ title, icon: Icon, picks, relationship, nextLabel, sc
     <motion.section {...scrollReveal} className="discovery-widget discovery-spotlight" aria-labelledby={headingId}>
       <div className="discovery-widget-heading">
         <h3 id={headingId}><Icon size={19} aria-hidden="true" /> {title}</h3>
-        {entries.length > 1 && <span className="discovery-counter">{position + 1} / {entries.length}</span>}
+        {picks.length > 1 && <span className="discovery-counter">{position + 1} / {picks.length}</span>}
       </div>
       <div aria-live="polite">
         <div className="discovery-spotlight-title-row">
@@ -130,16 +149,20 @@ function SpotlightWidget({ title, icon: Icon, picks, relationship, nextLabel, sc
           </ul>
         )}
       </div>
-      {entries.length > 1 && (
-        <button type="button" className="discovery-widget-action" onClick={() => setPosition((current) => (current + 1) % entries.length)}>
-          {nextLabel} <ArrowRight size={16} aria-hidden="true" />
-        </button>
+      {picks.length > 1 && (
+        <WidgetNav
+          nextLabel={nextLabel}
+          onPrevious={() => setSelection({ day, position: (position - 1 + picks.length) % picks.length })}
+          onNext={() => setSelection({ day, position: (position + 1) % picks.length })}
+        />
       )}
     </motion.section>
   )
 }
 
 type ScrollReveal = typeof reveal | undefined
+type SpotlightProps = { picks: readonly GraphNode[]; day: number; scrollReveal: ScrollReveal }
+type SpotlightSelections = { artists: GraphNode[]; instruments: GraphNode[]; day: number }
 
 function ConnectionWidget({ scrollReveal }: { scrollReveal: ScrollReveal }) {
   const { index, locale } = useExplorer()
@@ -181,9 +204,11 @@ function ConnectionWidget({ scrollReveal }: { scrollReveal: ScrollReveal }) {
             </motion.div>
           </div>
           {connections.length > 1 && (
-            <button type="button" className="discovery-widget-action" onClick={() => setPosition((current) => (current + 1) % connections.length)}>
-              {tHome('nextConnection')} <ArrowRight size={16} aria-hidden="true" />
-            </button>
+            <WidgetNav
+              nextLabel={tHome('nextConnection')}
+              onPrevious={() => setPosition((current) => (current - 1 + connections.length) % connections.length)}
+              onNext={() => setPosition((current) => (current + 1) % connections.length)}
+            />
           )}
         </>
       ) : <p className="discovery-note">{tHome('noFeaturedConnections')}</p>}
@@ -191,13 +216,43 @@ function ConnectionWidget({ scrollReveal }: { scrollReveal: ScrollReveal }) {
   )
 }
 
+function shuffled<T>(items: readonly T[]): T[] {
+  const result = [...items]
+  for (let i = result.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[result[i], result[j]] = [result[j], result[i]]
+  }
+  return result
+}
+
 function ListeningWidget({ scrollReveal }: { scrollReveal: ScrollReveal }) {
   const { index } = useExplorer()
   const tHome = useTranslations('homeCopy')
-  const [position, setPosition] = useState(0)
-  const picks = useMemo(() => LISTENING_PICKS.map((id) => index.nodeById.get(id)).filter((node) => node?.type === 'genre'), [index])
-  const pick = picks[position]
+  const genres = useMemo(() => {
+    const all = [...index.nodeById.values()].filter((node) => node.type === 'genre')
+    const curated = LISTENING_PICKS.map((id) => index.nodeById.get(id)).filter((node): node is GraphNode => node?.type === 'genre')
+    return { all, curated }
+  }, [index])
+  // `played` keeps every heard genre so “previous” can walk back; `upcoming` is refilled with a fresh shuffle.
+  const [booth, setBooth] = useState(() => {
+    const [first, ...rest] = genres.curated
+    return { played: first ? [first] : [], position: 0, upcoming: rest }
+  })
+  const pick = booth.played[booth.position]
   if (!pick) return null
+
+  const previous = () => setBooth((current) => ({ ...current, position: Math.max(0, current.position - 1) }))
+  const next = () => setBooth((current) => {
+    if (current.position + 1 < current.played.length) return { ...current, position: current.position + 1 }
+    let upcoming = current.upcoming
+    if (upcoming.length === 0) {
+      const recent = new Set(current.played.slice(-LISTENING_PICKS.length).map((node) => node.id))
+      const round = shuffled(genres.all)
+      upcoming = [...round.filter((node) => !recent.has(node.id)), ...round.filter((node) => recent.has(node.id))]
+    }
+    const [following, ...rest] = upcoming
+    return { played: [...current.played, following], position: current.played.length, upcoming: rest }
+  })
 
   return (
     <motion.section {...scrollReveal} className="discovery-widget discovery-listening-card" aria-labelledby="listening-heading">
@@ -213,10 +268,8 @@ function ListeningWidget({ scrollReveal }: { scrollReveal: ScrollReveal }) {
         </div>
       </div>
       <p className="discovery-note">{tHome('listeningDescription')}</p>
-      {picks.length > 1 && (
-        <button type="button" className="discovery-widget-action" onClick={() => setPosition((current) => (current + 1) % picks.length)}>
-          {tHome('nextSound')} <ArrowRight size={16} aria-hidden="true" />
-        </button>
+      {genres.all.length > 1 && (
+        <WidgetNav nextLabel={tHome('nextSound')} onPrevious={previous} onNext={next} previousDisabled={booth.position === 0} />
       )}
     </motion.section>
   )
@@ -314,14 +367,14 @@ function RecentWidget({ types, headingId = 'recent-heading', scrollReveal }: {
   )
 }
 
-function ArtistSpotlight({ scrollReveal }: { scrollReveal: ScrollReveal }) {
+function ArtistSpotlight({ picks, day, scrollReveal }: SpotlightProps) {
   const tHome = useTranslations('homeCopy')
-  return <SpotlightWidget title={tHome('artistSpotlight')} icon={Users} picks={ARTIST_PICKS} relationship="key_artist_of" nextLabel={tHome('nextArtist')} scrollReveal={scrollReveal} />
+  return <SpotlightWidget title={tHome('artistSpotlight')} icon={Users} picks={picks} day={day} relationship="key_artist_of" nextLabel={tHome('nextArtist')} scrollReveal={scrollReveal} />
 }
 
-function InstrumentSpotlight({ scrollReveal }: { scrollReveal: ScrollReveal }) {
+function InstrumentSpotlight({ picks, day, scrollReveal }: SpotlightProps) {
   const tHome = useTranslations('homeCopy')
-  return <SpotlightWidget title={tHome('instrumentSpotlight')} icon={Guitar} picks={INSTRUMENT_PICKS} relationship="featured_in" nextLabel={tHome('nextInstrument')} scrollReveal={scrollReveal} />
+  return <SpotlightWidget title={tHome('instrumentSpotlight')} icon={Guitar} picks={picks} day={day} relationship="featured_in" nextLabel={tHome('nextInstrument')} scrollReveal={scrollReveal} />
 }
 
 function ChronologiesSection({ scrollReveal }: { scrollReveal: ScrollReveal }) {
@@ -392,12 +445,14 @@ function ChronologiesSection({ scrollReveal }: { scrollReveal: ScrollReveal }) {
   )
 }
 
-function CatalogueSection({ ref, scrollReveal }: { ref: Ref<HTMLElement>; scrollReveal: ScrollReveal }) {
-  const { index } = useExplorer()
+function CatalogueSection({ ref, scrollReveal, spotlights }: {
+  ref: Ref<HTMLElement>
+  scrollReveal: ScrollReveal
+  spotlights: SpotlightSelections
+}) {
   const tHome = useTranslations('homeCopy')
   const historyPicks = useHistoryPicks()
-  const hasSpotlights = ARTIST_PICKS.some((id) => index.nodeById.has(id))
-    || INSTRUMENT_PICKS.some((id) => index.nodeById.has(id))
+  const hasSpotlights = spotlights.artists.length > 0 || spotlights.instruments.length > 0
 
   return (
     <section ref={ref} id="discover" className="discovery-widgets" aria-labelledby="discovery-widgets-heading">
@@ -411,8 +466,8 @@ function CatalogueSection({ ref, scrollReveal }: { ref: Ref<HTMLElement>; scroll
 
       {(hasSpotlights || historyPicks.length > 0) && (
         <div className="discovery-picks">
-          <ArtistSpotlight scrollReveal={scrollReveal} />
-          <InstrumentSpotlight scrollReveal={scrollReveal} />
+          <ArtistSpotlight picks={spotlights.artists} day={spotlights.day} scrollReveal={scrollReveal} />
+          <InstrumentSpotlight picks={spotlights.instruments} day={spotlights.day} scrollReveal={scrollReveal} />
           <MomentsWidget events={historyPicks} scrollReveal={scrollReveal} />
         </div>
       )}
@@ -452,17 +507,15 @@ function TopicSection({ id, title, intro, views, scrollReveal, children, ref }: 
   )
 }
 
-function TopicSections({ ref, soundtrails, soundtrailsRef, scrollReveal }: {
+function TopicSections({ ref, soundtrails, soundtrailsRef, scrollReveal, spotlights }: {
   ref: Ref<HTMLElement>
   soundtrails: AvailableSoundtrail[]
   soundtrailsRef: Ref<HTMLElement>
   scrollReveal: ScrollReveal
+  spotlights: SpotlightSelections
 }) {
-  const { index } = useExplorer()
   const tTopics = useTranslations('homeCopy.topics')
   const historyPicks = useHistoryPicks()
-  const hasArtists = ARTIST_PICKS.some((id) => index.nodeById.has(id))
-  const hasInstruments = INSTRUMENT_PICKS.some((id) => index.nodeById.has(id))
 
   return (
     <>
@@ -476,14 +529,14 @@ function TopicSections({ ref, soundtrails, soundtrailsRef, scrollReveal }: {
 
       <TopicSection id="artists" title={tTopics('artists.title')} intro={tTopics('artists.intro')} views={[DESTINATIONS[1]]} scrollReveal={scrollReveal}>
         <div className="discovery-topic-body">
-          {hasArtists && <ArtistSpotlight scrollReveal={scrollReveal} />}
+          {spotlights.artists.length > 0 && <ArtistSpotlight picks={spotlights.artists} day={spotlights.day} scrollReveal={scrollReveal} />}
           <RecentWidget types={['artist']} headingId="artists-recent-heading" scrollReveal={scrollReveal} />
         </div>
       </TopicSection>
 
       <TopicSection id="instruments" title={tTopics('instruments.title')} intro={tTopics('instruments.intro')} views={[DESTINATIONS[2]]} scrollReveal={scrollReveal}>
         <div className="discovery-topic-body">
-          {hasInstruments && <InstrumentSpotlight scrollReveal={scrollReveal} />}
+          {spotlights.instruments.length > 0 && <InstrumentSpotlight picks={spotlights.instruments} day={spotlights.day} scrollReveal={scrollReveal} />}
           <RecentWidget types={['instrument']} headingId="instruments-recent-heading" scrollReveal={scrollReveal} />
         </div>
       </TopicSection>
@@ -501,6 +554,8 @@ function TopicSections({ ref, soundtrails, soundtrailsRef, scrollReveal }: {
 export function Home() {
   const { theme, toggleTheme } = useColorTheme()
   const { index, locale } = useExplorer()
+  const initialDay = utcDay(useNow().getTime())
+  const day = useSyncExternalStore(subscribeToUtcDay, currentUtcDay, () => initialDay)
   const t = useTranslations()
   const tHome = useTranslations('homeCopy')
   const tViews = useTranslations('views')
@@ -508,6 +563,11 @@ export function Home() {
   const widgetsRef = useRef<HTMLElement>(null)
   const soundtrailsRef = useRef<HTMLElement>(null)
   const soundtrails = useMemo(() => featureFlags.soundtrails ? availableSoundtrails(index) : [], [index])
+  const spotlights = useMemo(() => ({
+    day,
+    artists: dailySpotlights(index.graph.nodes, 'artist', day),
+    instruments: dailySpotlights(index.graph.nodes, 'instrument', day),
+  }), [index, day])
   const showSoundtrails = soundtrails.length > 0
   const scrollReveal = reduceMotion ? undefined : reveal
 
@@ -567,12 +627,12 @@ export function Home() {
         </Turntable>
 
         {featureFlags.landingV3 ? (
-          <TopicSections ref={widgetsRef} soundtrails={soundtrails} soundtrailsRef={soundtrailsRef} scrollReveal={scrollReveal} />
+          <TopicSections ref={widgetsRef} soundtrails={soundtrails} soundtrailsRef={soundtrailsRef} scrollReveal={scrollReveal} spotlights={spotlights} />
         ) : (
           <>
             <ChronologiesSection scrollReveal={scrollReveal} />
             {showSoundtrails && <Soundtrails ref={soundtrailsRef} trails={soundtrails} />}
-            <CatalogueSection ref={widgetsRef} scrollReveal={scrollReveal} />
+            <CatalogueSection ref={widgetsRef} scrollReveal={scrollReveal} spotlights={spotlights} />
           </>
         )}
       </main>

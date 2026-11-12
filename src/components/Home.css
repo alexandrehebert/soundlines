@@ -519,6 +519,7 @@
 .discovery-node svg { flex: none; color: var(--home-accent); }
 .discovery-relation { max-width: 5rem; text-align: center; display: grid; align-content: center; justify-items: center; gap: .25rem; color: var(--home-accent); font-size: .7rem; }
 .discovery-note { margin-top: .9rem; color: var(--home-muted); font-size: .875rem; line-height: 1.65; }
+.discovery-connection .discovery-note { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .discovery-widget-action {
   display: flex;
   width: fit-content;
@@ -526,6 +527,17 @@
   margin-inline-start: auto;
   padding-top: .85rem;
 }
+.discovery-widget-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .25rem 1rem;
+  margin-top: auto;
+  padding-top: .85rem;
+}
+.discovery-widget-nav .discovery-widget-action { margin: 0; padding-top: 0; }
+.discovery-widget-action:disabled { opacity: .4; cursor: default; }
+.discovery-widget-action:disabled:hover { color: var(--home-accent); }
 .discovery-recent li { border-top: 1px solid var(--home-line); }
 
 .discovery-entry {
@@ -635,8 +647,6 @@
 .soundtrails-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; }
 .soundtrails-heading h2 { display: flex; align-items: center; gap: .6rem; font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 750; letter-spacing: -.035em; }
 .soundtrails-heading h2 svg { color: var(--home-accent); }
-.soundtrails-back { display: inline-flex; align-items: center; gap: .4rem; min-height: 2.5rem; color: var(--home-accent); font-size: .85rem; font-weight: 700; }
-.soundtrails-back:hover { color: var(--home-text); }
 .soundtrails-intro { max-width: 44rem; margin-top: .6rem; color: var(--home-muted); font-size: .92rem; line-height: 1.65; }
 
 .soundtrails-picker { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin-top: 1.25rem; }
@@ -662,8 +672,6 @@
 .soundtrails-card-path { margin-top: auto; padding-top: .35rem; color: var(--home-intro); font-size: .72rem; line-height: 1.5; }
 .soundtrails-card-start { display: inline-flex; align-items: center; gap: .35rem; color: var(--home-accent); font-size: .8rem; font-weight: 700; }
 
-.soundtrails-journey { margin-top: 1.25rem; padding: clamp(1.1rem, 3vw, 1.75rem); border: 1px solid var(--home-line); border-radius: 1.25rem; background: var(--home-surface); }
-.soundtrails-trail-title { color: var(--home-muted); font-size: .85rem; }
 
 .soundtrails-progress { display: flex; margin-top: 1.1rem; }
 .soundtrails-progress li { position: relative; flex: 1 1 0; min-width: 0; }
@@ -758,6 +766,82 @@
 
 .soundtrails-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; margin-top: 1.5rem; }
 .soundtrails-finish-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.25rem; margin-inline-start: auto; }
+
+.soundtrails-sheet {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  color: var(--home-text);
+  background: transparent;
+}
+
+.soundtrails-sheet::backdrop { background: transparent; }
+.soundtrails-sheet-backdrop { position: absolute; inset: 0; background: rgb(3 4 12 / .6); }
+
+.soundtrails-sheet-panel {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100dvh - 2.5rem);
+  padding-bottom: env(safe-area-inset-bottom);
+  border-top: 1px solid var(--home-line);
+  border-radius: 1.5rem 1.5rem 0 0;
+  background: var(--home-surface);
+  box-shadow: 0 -1.25rem 3.5rem rgb(0 0 0 / .45);
+}
+
+.soundtrails-sheet-header {
+  position: relative;
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: .5rem;
+  padding: 1.1rem .5rem .35rem 1.25rem;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.soundtrails-sheet-handle { position: absolute; top: .5rem; left: 50%; width: 2.5rem; height: .25rem; border-radius: 999px; background: var(--home-node-line); translate: -50% 0; }
+.soundtrails-sheet-title { display: flex; flex: 1; align-items: center; gap: .5rem; min-width: 0; color: var(--home-muted); font-size: .85rem; font-weight: 700; }
+.soundtrails-sheet-title svg { flex: none; color: var(--home-accent); }
+.soundtrails-sheet-close { display: grid; flex: none; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 999px; color: var(--home-muted); transition: color 150ms, background-color 150ms; }
+.soundtrails-sheet-close:hover { color: var(--home-text); background: var(--home-hover); }
+.soundtrails-sheet-body { flex: 1 1 auto; min-height: 0; padding: 0 1.25rem 1.5rem; overflow-y: auto; overscroll-behavior: contain; }
+.soundtrails-sheet-body .soundtrails-progress { margin-top: .5rem; }
+.soundtrails-sheet-footer { flex: none; padding: .75rem 1.25rem; border-top: 1px solid var(--home-line); }
+.soundtrails-sheet-footer .soundtrails-controls { margin-top: 0; }
+
+.soundtrails-sheet[data-variant="modal"] .soundtrails-sheet-panel {
+  inset: 0;
+  width: min(46rem, calc(100% - 3rem));
+  height: min(44rem, calc(100dvh - 4rem));
+  max-height: none;
+  margin: auto;
+  padding-bottom: 0;
+  border: 1px solid var(--home-line);
+  border-radius: 1.5rem;
+  box-shadow: 0 2rem 5rem rgb(0 0 0 / .5);
+}
+
+.soundtrails-sheet[data-variant="modal"] .soundtrails-sheet-header { padding: 1.1rem 1rem .5rem 1.75rem; cursor: auto; touch-action: auto; user-select: auto; -webkit-user-select: auto; }
+.soundtrails-sheet[data-variant="modal"] .soundtrails-sheet-body { padding: 0 1.75rem 1.75rem; scrollbar-gutter: stable; }
+.soundtrails-sheet[data-variant="modal"] .soundtrails-sheet-footer { padding: 1rem 1.75rem; }
+
+.soundtrails-sheet[data-variant="sheet"] .soundtrails-controls { flex-wrap: nowrap; }
+.soundtrails-sheet[data-variant="sheet"] .soundtrails-previous { position: relative; justify-content: center; flex: none; width: 2.75rem; height: 2.75rem; padding: 0; border: 1px solid var(--home-line); border-radius: 999px; }
+.soundtrails-sheet[data-variant="sheet"] .soundtrails-previous-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.soundtrails-sheet[data-variant="sheet"] .soundtrails-finish-actions { flex-wrap: nowrap; }
 
 @media (max-width: 56rem) {
   .discovery-nav-basic { grid-template-columns: repeat(2, minmax(0, 1fr)); }

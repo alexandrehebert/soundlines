@@ -10,7 +10,11 @@ Below the hero, the landing page introduces the Chronologies, optional Soundtrai
 Explore the catalogue sections in that order, each with a short description. The catalogue
 leads with a featured genre connection and a playable genre sample, followed by artist,
 instrument and history discoveries and recent additions. Visitors can cycle the featured
-picks or open their entries directly.
+picks or open their entries directly. The artist and instrument spotlights each cycle
+through five catalogue entries selected for the UTC day. Their selections are consistent
+across languages, change at midnight UTC even while the page remains open, and share no
+entries with the previous day when at least ten candidates are available. Smaller
+catalogues show up to five available entries.
 
 Chronology preview cards are experimental and off by default. Set
 `NEXT_PUBLIC_FEATURE_CHRONOLOGY_PREVIEWS=true` before starting or building the app to
@@ -31,7 +35,7 @@ Artists (artist timeline link, artist spotlight and the latest artists added), I
 (instrument timeline link, instrument spotlight and the latest instruments added) and History
 (events timeline link, turning points and the latest events added). Each section has a
 title, a short description and its timeline link in the header; a spotlight is omitted
-when none of its picks exist in the graph, and a recent-additions list is omitted when no
+when the graph has no entries of its type, and a recent-additions list is omitted when no
 entry of that type carries an `addedOn` date. Chronology previews only
 apply to the default (v2) layout.
 
