@@ -7,10 +7,12 @@ on:
       - 'src/graph/**'
       - 'src/i18n/routing.ts'
       - 'docs/**'
-      - 'scripts/graph/reviewStatus.ts'
+      - 'scripts/graph/**'
       - 'package.json'
       - 'package-lock.json'
       - '.github/workflows/graph-quality.yml'
+      - '.github/workflows/graph-contribution-agent.yml'
+      - '.github/ISSUE_TEMPLATE/graph-contribution.yml'
   push:
     branches: [main]
     paths:
@@ -18,10 +20,12 @@ on:
       - 'src/graph/**'
       - 'src/i18n/routing.ts'
       - 'docs/**'
-      - 'scripts/graph/reviewStatus.ts'
+      - 'scripts/graph/**'
       - 'package.json'
       - 'package-lock.json'
       - '.github/workflows/graph-quality.yml'
+      - '.github/workflows/graph-contribution-agent.yml'
+      - '.github/ISSUE_TEMPLATE/graph-contribution.yml'
 
 permissions:
   contents: read
@@ -36,6 +40,8 @@ jobs:
           node-version: 26
           cache: npm
       - run: npm ci
+      - name: Test graph contribution automation
+        run: npm test -- scripts/graph/contributionWorkflow.test.ts
       - name: Regenerate review status
         run: npm run review-status
       - name: Fail if generated review status is stale

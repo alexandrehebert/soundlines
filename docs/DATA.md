@@ -77,9 +77,22 @@ starts the cloud-agent workflow by applying the `graph:approved` issue label. Th
 the `graph-editor` custom agent to verify and implement the proposal, then asks it to open a pull
 request. The `graph:agent-started` label prevents the same issue from starting another task. Pull
 requests still require CI and human review; the agent does not merge them.
+The workflow also recognizes an existing Copilot bot assignment, including GitHub's `Copilot`
+REST login, so retrying a run that failed after assignment does not start another task. It adds
+the started label after either a verified new assignment or an already-started guard result.
 Copilot cloud currently does not support the custom agent's web-search tool, so
 the issue should include source links; the agent must leave out claims it cannot
 independently verify with the tools and source material available to it.
+New genres also need at least three sourced key-artist relationships; a genre's origin source
+alone is not sufficient for a complete addition.
+The agent does not render audio or artwork: a new genre is listed in `PENDING_GENRE_PREVIEWS`
+([genrePreviews.ts](../src/data/genrePreviews.ts)), which hides its player until a maintainer renders
+and reviews its preview locally with the preview pipeline. New instruments likewise wait for the
+local artwork pipeline.
+To keep runs cheap and short, the agent follows the "Cost and time budget" in the
+[graph-edit skill](../.github/skills/graph-edit/SKILL.md): it limits the change to the request,
+uses one authoritative source per claim, avoids subagents for small changes, runs targeted tests
+while iterating, and stops with a gap report instead of searching at length.
 The [Copilot setup workflow](../.github/workflows/copilot-setup-steps.yml) installs Node.js 26
 and the project dependencies for agent sessions running on GitHub Actions; it does not apply to
 cloud sandbox sessions.
@@ -94,6 +107,26 @@ To enable this for the repository:
    access. Do not put it in the workflow or repository files.
 4. Apply `graph:approved` to a graph contribution issue. The workflow records successful task starts
    with `graph:agent-started`; a failed run can be retried after correcting its cause.
+
+### Source access and blocked tasks
+
+Copilot's default firewall allows development dependencies, not arbitrary research websites.
+Before starting a contribution, review its sources and add the specific trusted domains or
+HTTPS paths under **Settings > Copilot > Internet access > Copilot in the cloud > Custom
+allowlist**, keeping the firewall enabled. For the Soca example, these source paths are:
+
+- `https://www.britannica.com/art/soca-music`
+- `https://daily.redbullmusicacademy.com/2016/06/ras-shorty-i-the-soul-of-calypso/`
+
+Additional artist sources and redirect destinations may need their own reviewed rules.
+Allowlisting does not bypass a publisher's login, paywall or anti-bot restrictions.
+See [GitHub's firewall documentation](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-the-firewall).
+
+A green assignment workflow means Copilot was assigned, not that graph editing succeeded.
+Check the agent session and PR for blocked-source warnings and completed validation.
+If an existing PR is blocked, fix access and ask `@copilot` in that PR to continue the graph
+workflow; rerunning the assignment workflow will not resume an already-started task.
+Do not merge an empty or blocked PR.
 
 The workflow uses the built-in Actions token only to read and label the triggering issue. The
 separate agent token is only used to assign the issue to Copilot. This issue-assignment API is in

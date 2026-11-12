@@ -42,6 +42,10 @@ node .github/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
    - New genre: add its slug to the family list in `src/data/graph.test.ts`
      ("groups every genre into recognizable families…"); a family holds 3–20 genres. If it is a
      deliberately unlinked tradition, add it to the `roots` set in "connects genres through lineage…".
+     Add its id to `PENDING_GENRE_PREVIEWS` in `src/data/genrePreviews.ts`; do not write preview
+     briefs or run ACE-Step, loop or preview pipelines from a graph edit. Audio is a separate
+     local follow-up, and the app hides the player while the preview is pending. Do not add a
+     pending genre to a Soundtrail in `src/graph/soundtrails.ts`: every Soundtrail stop must ship a preview.
    - New family: `src/graph/types.ts` (`GenreFamily`, `FAMILY_LABELS`, `FAMILY_ORDER`), `src/theme.ts`
      (`FAMILY_COLORS`), the test map above, and the family tables in GRAPH.md §2.
    - New instrument: it needs its four artwork SVGs (`src/components/InstrumentIcon.test.tsx` fails
@@ -70,6 +74,31 @@ node .github/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
    ```
    Fix failures by correcting data, not by loosening tests. Only edit a test's expected list when the
    change intentionally alters it (step 4).
+
+## Cost and time budget
+
+Aim for the smallest complete, well-sourced change, not exhaustive research. Tokens and wall-clock
+time matter, especially in Copilot cloud.
+
+- **Scope:** implement what was asked plus what the rules require. For a new genre, that means the node,
+  its sourced lineage edges, three key artists (prefer existing artist nodes), overlays and evidence.
+  Do not add optional tracks, phases, extra artists or neighbouring entries unless requested.
+- **Sources:** start with the supplied links and hosts already cited in the graph. One authoritative,
+  claim-specific source per claim is enough, and one page may support several claims. Do not search for
+  more after a claim is sourced. If a host is blocked or unreachable, do not retry it or try search
+  engines; use another supplied source or leave the claim out and report it.
+- **Reading:** never read `graph.json`, overlays or the coverage CSV whole; use `lookup.mjs`, `grep`
+  and narrow ranges. Read only the GRAPH.md sections the change touches.
+- **Delegation:** for small changes (roughly ten entities or fewer), translate, fact-check and review
+  inline. Subagents reload context and multiply cost; use them only for large batches.
+- **Validation:** while iterating, run only the failing file (for example
+  `npx vitest run src/data/graph.test.ts`); run `npm run review-status` and the full
+  `npm run validate:graph` once at the end, and again only after fixing a failure.
+- **Stop early:** if the required minimum (for a genre, three sourced key artists) cannot be verified
+  after a couple of attempts per claim, stop and open the PR with what is verified and a clear list of
+  gaps instead of continuing to search.
+- **Out of scope:** audio (ACE-Step loops and previews) and instrument artwork need local tools.
+  Record the pending follow-up as described in step 4 and never attempt to render them.
 
 ## Merge patches
 
