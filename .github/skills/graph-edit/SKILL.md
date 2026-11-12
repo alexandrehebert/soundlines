@@ -44,7 +44,8 @@ node .github/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
      deliberately unlinked tradition, add it to the `roots` set in "connects genres through lineage…".
      Add its id to `PENDING_GENRE_PREVIEWS` in `src/data/genrePreviews.ts`; do not write preview
      briefs or run ACE-Step, loop or preview pipelines from a graph edit. Audio is a separate
-     local follow-up, and the app hides the player while the preview is pending.
+     local follow-up, and the app hides the player while the preview is pending. Do not add a
+     pending genre to a Soundtrail in `src/graph/soundtrails.ts`: every Soundtrail stop must ship a preview.
    - New family: `src/graph/types.ts` (`GenreFamily`, `FAMILY_LABELS`, `FAMILY_ORDER`), `src/theme.ts`
      (`FAMILY_COLORS`), the test map above, and the family tables in GRAPH.md §2.
    - New instrument: it needs its four artwork SVGs (`src/components/InstrumentIcon.test.tsx` fails
