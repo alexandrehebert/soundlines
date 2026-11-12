@@ -248,7 +248,12 @@ function Resources({ c, page }: { c: Copy; page: Page }) {
       <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
         {page.resources.map(([path, title]) => (
           <li key={path}>
-            <a className="inline-block py-2 underline underline-offset-4" href={/^https?:/.test(path) ? path : repositoryUrl(repository, path)}>
+            <a
+              className="inline-block py-2 underline underline-offset-4"
+              href={/^https?:/.test(path) ? path : repositoryUrl(repository, path)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {title} {external}
             </a>
           </li>
