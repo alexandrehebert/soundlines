@@ -2,6 +2,318 @@
   "version": 4,
   "entries": [
     {
+      "commit": "1956375115e69ea4228da9fb1f53ade683a03c03",
+      "parent": "9551e4d77ab89581102fedda3ee3ae4cca4a8b9e",
+      "date": "2026-11-13T00:07:33-05:00",
+      "subject": "Add audio previews for 30 Soundlines genres",
+      "merge": false,
+      "entities": [
+        {
+          "category": "previews",
+          "items": [
+            {
+              "id": "genre:acid-techno",
+              "name": "Acid techno",
+              "status": "added"
+            },
+            {
+              "id": "genre:afro-house",
+              "name": "Afro house",
+              "status": "added"
+            },
+            {
+              "id": "genre:ambient-house",
+              "name": "Ambient house",
+              "status": "added"
+            },
+            {
+              "id": "genre:brazilian-funk",
+              "name": "Brazilian funk (funk carioca)",
+              "status": "added"
+            },
+            {
+              "id": "genre:chicago-blues",
+              "name": "Chicago blues",
+              "status": "added"
+            },
+            {
+              "id": "genre:city-pop",
+              "name": "City pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:country-pop",
+              "name": "Country pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:dance-pop",
+              "name": "Dance-pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:delta-blues",
+              "name": "Delta blues",
+              "status": "added"
+            },
+            {
+              "id": "genre:emo-rap",
+              "name": "Emo rap",
+              "status": "added"
+            },
+            {
+              "id": "genre:go-go",
+              "name": "Go-go",
+              "status": "added"
+            },
+            {
+              "id": "genre:hardcore-punk",
+              "name": "Hardcore punk",
+              "status": "added"
+            },
+            {
+              "id": "genre:hyperpop",
+              "name": "Hyperpop",
+              "status": "added"
+            },
+            {
+              "id": "genre:jazz-funk",
+              "name": "Jazz-funk",
+              "status": "added"
+            },
+            {
+              "id": "genre:latin-trap",
+              "name": "Latin trap",
+              "status": "added"
+            },
+            {
+              "id": "genre:liquid-drum-and-bass",
+              "name": "Liquid drum and bass",
+              "status": "added"
+            },
+            {
+              "id": "genre:mambo",
+              "name": "Mambo",
+              "status": "added"
+            },
+            {
+              "id": "genre:melodic-death-metal",
+              "name": "Melodic death metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:morna",
+              "name": "Morna",
+              "status": "added"
+            },
+            {
+              "id": "genre:neoclassicism",
+              "name": "Neoclassicism",
+              "status": "added"
+            },
+            {
+              "id": "genre:new-orleans-jazz",
+              "name": "New Orleans jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:outlaw-country",
+              "name": "Outlaw country",
+              "status": "added"
+            },
+            {
+              "id": "genre:power-metal",
+              "name": "Power metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:progressive-house",
+              "name": "Progressive house",
+              "status": "added"
+            },
+            {
+              "id": "genre:progressive-metal",
+              "name": "Progressive metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:roots-reggae",
+              "name": "Roots reggae",
+              "status": "added"
+            },
+            {
+              "id": "genre:soca",
+              "name": "Soca",
+              "status": "added"
+            },
+            {
+              "id": "genre:soul-jazz",
+              "name": "Soul jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:southern-rock",
+              "name": "Southern rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:uk-funky",
+              "name": "UK funky",
+              "status": "added"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "src/data/genrePreviews.ts"
+            }
+          ]
+        },
+        {
+          "category": "previews",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/previews/briefs/acoustic.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/previews/briefs/electric.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/previews/briefs/regional.json"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/acid-techno.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/afro-house.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/ambient-house.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/brazilian-funk.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/chicago-blues.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/city-pop.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/country-pop.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/dance-pop.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/delta-blues.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/emo-rap.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/go-go.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/hardcore-punk.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/hyperpop.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/jazz-funk.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/latin-trap.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/liquid-drum-and-bass.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/mambo.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/melodic-death-metal.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/morna.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/neoclassicism.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/new-orleans-jazz.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/outlaw-country.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/power-metal.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/progressive-house.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/progressive-metal.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/roots-reggae.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/soca.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/soul-jazz.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/southern-rock.m4a"
+            },
+            {
+              "status": "A",
+              "path": "public/genre-previews/uk-funky.m4a"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "2a3129d9c09a73ea770d382f14fea3a39bebeaaa",
       "parent": "366ff3765496346593967f5f1da1a6a6637a0284",
       "date": "2026-11-12T23:49:02-05:00",

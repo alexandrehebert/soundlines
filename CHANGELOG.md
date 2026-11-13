@@ -12,6 +12,13 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-13 — Add audio previews for 30 Soundlines genres
+
+[19563751](https://github.com/alexandrehebert/soundlines/commit/1956375115e69ea4228da9fb1f53ade683a03c03)
+
+- graph: 1 changed file
+- previews: 33 changed files
+
 ## 2026-11-12 — Refine Morna and Soca chronology and sourcing
 
 [2a3129d9](https://github.com/alexandrehebert/soundlines/commit/2a3129d9c09a73ea770d382f14fea3a39bebeaaa)
