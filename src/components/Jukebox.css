@@ -69,22 +69,48 @@
   box-shadow: 0 0 0 3px var(--home-accent), 0 0 1.5rem var(--home-accent);
   transition-delay: .15s;
 }
+@property --jukebox-disc-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #82829d;
+}
+
 .jukebox-disc {
-  position: absolute;
-  inset: .25rem;
+  --disc-base: var(--jukebox-disc-color, #82829d);
+  --disc-light: color-mix(in srgb, var(--disc-base) 30%, white);
+  --disc-shade: color-mix(in srgb, var(--disc-base) 65%, #171321);
   border: 1px solid #f5f3ff;
   border-radius: 50%;
   background:
-    radial-gradient(circle, #171321 0 6%, #f1eafa 7% 9%, #ab9fbc 10% 14%, #ece4f6 15% 17%, transparent 18%),
-    conic-gradient(from 35deg, #85829d, #ddd9ef 11%, #ffe5b0 18%, #e4b7ed 23%, #b3d9ef 29%, #827b99 39%, #eae7f5 56%, #fff0b7 63%, #d9abe6 69%, #b3e3df 75%, #82819d 84%, #85829d);
+    radial-gradient(circle, #171321 0 10%, var(--disc-light) 11% 16%, var(--disc-shade) 17% 20%, transparent 21%),
+    conic-gradient(from 35deg, var(--disc-shade), var(--disc-light) 14%, var(--disc-base) 28%, var(--disc-shade) 42%, var(--disc-light) 58%, var(--disc-base) 74%, var(--disc-shade));
+}
+.jukebox-player-disc {
+  position: absolute;
+  inset: .25rem;
+  transition: --jukebox-disc-color .55s ease-in-out;
   animation: jukebox-spin 3.5s linear infinite paused;
 }
-.jukebox-disc[data-spinning="true"] { animation-play-state: running; }
+.jukebox-player-disc::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle, #171321 0 6%, #f1eafa 7% 9%, #ab9fbc 10% 14%, #eae7f5 15% 17%, transparent 18%),
+    conic-gradient(from 35deg, #85829d, #ddd9ef 11%, #ffe5b0 18%, #e4b7ed 23%, #b3d9ef 29%, #827b99 39%, #eae7f5 56%, #fff0b7 63%, #d9abe6 69%, #b3e3df 75%, #82819d 84%, #85829d);
+  transition: opacity .55s ease-in-out;
+}
+.jukebox-player-disc[data-loaded="true"]::after { opacity: 0; }
+.jukebox-player-disc[data-spinning="true"] { animation-play-state: running; }
 @keyframes jukebox-spin { to { transform: rotate(1turn); } }
 
 @media (prefers-reduced-motion: reduce) {
-  .jukebox-disc { animation: none; }
-  .jukebox-platter { transition: none; }
+  .jukebox-player-disc {
+    animation: none;
+    transition: none;
+  }
+  .jukebox-player-disc::after, .jukebox-platter { transition: none; }
 }
 
 .jukebox-cabinet .jukebox-display {
@@ -153,9 +179,9 @@
 .jukebox-display-text small, .jukebox-attribution { color: var(--home-muted); font-size: .75rem; }
 
 .jukebox-controls {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) 2.9rem;
+  container-type: inline-size;
   gap: .55rem;
   padding: .8rem var(--deck-inset) .75rem;
 }
@@ -166,8 +192,8 @@
   justify-content: center;
   gap: .55rem;
   min-height: 2.9rem;
-  max-width: 100%;
-  padding: .35rem .65rem .35rem .75rem;
+  min-width: 0;
+  padding: .35rem;
   border: 1px solid var(--key-rim);
   border-radius: .65rem;
   background: #ece1c9;
@@ -196,6 +222,7 @@
   border-radius: .15rem;
   background: #f3dda5;
   color: #493c26;
+  text-align: center;
   box-shadow: 0 1px 2px #0003;
   font: 700 .75rem/1.25 ui-monospace, monospace;
   overflow-wrap: anywhere;
@@ -208,6 +235,12 @@
 }
 .jukebox-play .jukebox-key-label > span { grid-area: 1 / 1; }
 .jukebox-key-label [data-inactive="true"] { visibility: hidden; }
+@container (width < 20rem) {
+  .jukebox-controls button {
+    flex-direction: column;
+    gap: .25rem;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .jukebox-controls button { transition: transform .12s ease, box-shadow .12s ease, filter .12s ease; }
 }
@@ -266,7 +299,7 @@
 }
 .jukebox-track {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-columns: auto auto minmax(0, 1fr) auto;
   align-items: center;
   gap: .65rem;
   width: 100%;
@@ -281,6 +314,10 @@
 .jukebox-track:hover, .jukebox-track[aria-current="true"] {
   border-color: var(--home-accent);
   background: var(--home-node);
+}
+.jukebox-track-disc {
+  inline-size: 1.5rem;
+  aspect-ratio: 1;
 }
 .jukebox-track-label { display: grid; min-width: 0; overflow-wrap: anywhere; }
 .jukebox-track-label strong { color: var(--home-text); font-size: .875rem; }

@@ -8,6 +8,7 @@
     "select": "Scegli un CD",
     "player": "Lettore del jukebox",
     "surprise": "Sorprendimi",
+    "eject": "Espelli",
     "catalogue": "Selezione di CD",
     "count": "{count, plural, one {# estratto} other {# estratti}}",
     "search": "Cerca generi o famiglie",

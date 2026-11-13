@@ -8,6 +8,7 @@
     "select": "Wähle eine CD",
     "player": "Jukebox-Player",
     "surprise": "Überrasch mich",
+    "eject": "Auswerfen",
     "catalogue": "CD-Auswahl",
     "count": "{count, plural, one {# Hörprobe} other {# Hörproben}}",
     "search": "Genres oder Familien suchen",

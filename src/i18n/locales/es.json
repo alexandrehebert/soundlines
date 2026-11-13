@@ -8,6 +8,7 @@
     "select": "Elige un CD",
     "player": "Reproductor del jukebox",
     "surprise": "Sorpréndeme",
+    "eject": "Expulsar",
     "catalogue": "Selección de CD",
     "count": "{count, plural, one {# fragmento} other {# fragmentos}}",
     "search": "Buscar géneros o familias",

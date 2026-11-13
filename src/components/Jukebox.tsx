@@ -1,12 +1,13 @@
 'use client'
 
-import { Pause, Play, Search, Shuffle } from 'lucide-react'
+import { Eject, Pause, Play, Search, Shuffle } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { useCallback, useEffect, useId, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { useExplorer } from '../ExplorerContext.ts'
 import { hasGenrePreview } from '../data/genrePreviews.ts'
 import { graphLabels } from '../i18n/graphLabels.ts'
 import { publicAsset } from '../publicAsset.ts'
+import { FAMILY_COLORS } from '../theme.ts'
 import { useColorTheme } from '../useColorTheme.ts'
 import { DiscoveryFooter, DiscoveryHeader } from './DiscoveryChrome.tsx'
 import { claimPlayback, releasePlayback } from './exclusivePlayback.ts'
@@ -141,6 +142,7 @@ export function JukeboxPlayer({ embedded = false }: { embedded?: boolean }) {
         id, name, number,
         code: String(number + 1).padStart(3, '0'),
         family: family ? families[family] : '',
+        color: family ? FAMILY_COLORS[family] : undefined,
       }))
   }, [index, locale])
 
@@ -263,6 +265,16 @@ export function JukeboxPlayer({ embedded = false }: { embedded?: boolean }) {
     if (request.current === token) stopPlayback()
   }
 
+  function eject() {
+    stopPlayback()
+    setSelected(null)
+    const element = audio.current
+    if (element) {
+      element.removeAttribute('src')
+      element.load()
+    }
+  }
+
   function surprise() {
     const alternatives = results.filter(({ number }) => number !== selected)
     const choices = alternatives.length ? alternatives : results
@@ -274,7 +286,12 @@ export function JukeboxPlayer({ embedded = false }: { embedded?: boolean }) {
       <section className="jukebox-deck" aria-label={t('player')}>
         <div className="jukebox-glass" data-loading={status === 'loading'} aria-hidden="true">
           <div className="jukebox-platter">
-            <div className="jukebox-disc" data-spinning={active} />
+            <div
+              className="jukebox-disc jukebox-player-disc"
+              data-loaded={!!track}
+              data-spinning={active}
+              style={{ '--jukebox-disc-color': track?.color } as CSSProperties}
+            />
           </div>
         </div>
         <span role="status" className="sr-only">{status === 'loading' ? audioCopy('buffering') : ''}</span>
@@ -301,6 +318,9 @@ export function JukeboxPlayer({ embedded = false }: { embedded?: boolean }) {
             onClick={surprise}>
             <Shuffle size={20} aria-hidden="true" />
             <span className="jukebox-key-label">{t('surprise')}</span>
+          </button>
+          <button type="button" disabled={!track} onClick={eject} aria-label={t('eject')} title={t('eject')}>
+            <Eject size={20} aria-hidden="true" />
           </button>
         </div>
         <audio
@@ -332,12 +352,17 @@ export function JukeboxPlayer({ embedded = false }: { embedded?: boolean }) {
         </div>
         {results.length ? (
           <ul className="jukebox-tracks">
-            {results.map(({ id, code, name, family, number }) => (
+            {results.map(({ id, code, name, family, color, number }) => (
               <li key={id}>
                 <button type="button" className="jukebox-track" aria-current={selected === number || undefined}
                   aria-label={soundtrailCopy(active && selected === number ? 'pause' : 'listen', { name })}
                   onClick={() => toggle(number)}>
                   <span className="jukebox-code" aria-hidden="true">{code}</span>
+                  <span
+                    className="jukebox-disc jukebox-track-disc"
+                    style={{ '--jukebox-disc-color': color } as CSSProperties}
+                    aria-hidden="true"
+                  />
                   <span className="jukebox-track-label"><strong>{name}</strong><small>{family}</small></span>
                   {active && selected === number ? <Pause size={15} aria-hidden="true" /> : <Play size={15} aria-hidden="true" />}
                 </button>
