@@ -2,6 +2,25 @@
   "version": 4,
   "entries": [
     {
+      "commit": "9c119896689027c6b0aad8c77222f4d082be7ac7",
+      "parent": "3054aebf82949e762e0e56b34129adfce065f52b",
+      "date": "2026-11-13T12:25:29-05:00",
+      "subject": "Keep graph labels beside their arrows on mobile",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "src/components/DatasetGraph.tsx"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "4dd9532beaab9453adae4a6ec26e5d832549c2ed",
       "parent": "225487c7107a0c476bbd1b7d24c9a05a661863ee",
       "date": "2026-11-13T12:22:24-05:00",
