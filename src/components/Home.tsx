@@ -347,9 +347,24 @@ function RecentWidget({ types, headingId = 'recent-heading', scrollReveal }: {
   const typeKey = types?.join(',')
   const recent = useMemo(() => {
     const allowed = typeKey ? new Set(typeKey.split(',')) : undefined
-    return index.graph.nodes
+    const entries = index.graph.nodes
       .flatMap((node) => node.addedOn && (!allowed || allowed.has(node.type)) ? [{ node, date: node.addedOn }] : [])
-      .sort((a, b) => b.date.localeCompare(a.date) || a.node.name.localeCompare(b.node.name))
+      .sort((a, b) => b.date.localeCompare(a.date)
+        || a.node.type.localeCompare(b.node.type)
+        || (a.node.type === 'event' && b.node.type === 'event'
+          ? (b.node.period?.start ?? -Infinity) - (a.node.period?.start ?? -Infinity)
+          : 0)
+        || a.node.name.localeCompare(b.node.name))
+    if (allowed) return entries
+
+    // Give each type a turn within the same day so a large import cannot fill the preview.
+    const ranks = new Map<string, number>()
+    return entries.map((entry) => {
+      const key = `${entry.date}:${entry.node.type}`
+      const rank = ranks.get(key) ?? 0
+      ranks.set(key, rank + 1)
+      return { ...entry, rank }
+    }).sort((a, b) => b.date.localeCompare(a.date) || a.rank - b.rank)
   }, [index, typeKey])
   if (types && recent.length === 0) return null
   const scoped = types !== undefined

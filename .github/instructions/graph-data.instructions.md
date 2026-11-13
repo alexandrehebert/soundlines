@@ -11,4 +11,5 @@ applyTo: 'src/data/graph*.json,docs/graph/evidence/**'
   (`graph-fact-check`) → review (`graph-review`) → CI (`.github/workflows/graph-quality.yml`).
 - Every data change also updates each locale overlay, a reviewed note in `docs/graph/evidence/`,
   `docs/graph/evidence/audits/graph-edge-coverage.csv` (edges) and `src/data/review-status.json` (`npm run review-status`).
+- Set `addedOn` to the catalogue addition date (`YYYY-MM-DD`) on every new node. Preserve it when editing existing nodes.
 - Validate with `npm run validate:graph`; fix data, never loosen tests.

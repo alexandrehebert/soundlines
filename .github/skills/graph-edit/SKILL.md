@@ -35,6 +35,8 @@ node .github/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
    - id `<type>:<kebab-ascii-slug>`; edge id prefixes (§3 "Edge id conventions")
    - edge direction and the most precise lineage type (§3 table)
    - required fields per type (§2 node types, families, events, festivals; §4 hard rules)
+   - Set `addedOn` on every new node to the date it joins the catalogue (`YYYY-MM-DD`).
+     Preserve existing addition dates during edits. This date powers the landing page’s Recently added list.
    - `period` semantics (artist = active career; track = release year; estimated placements need
      `estimated: true` + `estimateNote`)
    - `phases` only with a defensible prominence history, plus `phaseNote` (§5)

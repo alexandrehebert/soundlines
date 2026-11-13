@@ -21,7 +21,7 @@
     "build-storybook": "storybook build --disable-telemetry",
     "build-storybook:public": "STORYBOOK_PUBLIC=1 storybook build --disable-telemetry --quiet -o _site/storybook",
     "review-status": "node scripts/graph/reviewStatus.ts",
-    "validate:graph": "vitest run src/data src/graph",
+    "validate:graph": "node scripts/graph/validateAddedOn.ts && vitest run src/data src/graph",
     "changelog": "node scripts/changelog/generate.ts",
     "test:changelog": "vitest run scripts/changelog"
   },

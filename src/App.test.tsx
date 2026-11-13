@@ -424,6 +424,14 @@ describe('Soundtrails landing', () => {
     }
   }
 
+  it.each([false, true])('shows the latest new History event on landing v3=%s', (landingV3) => {
+    const markup = renderHome(rawGraph as MusicGraph, false, 'en', false, landingV3)
+    const heading = landingV3 ? 'history-recent-heading' : 'recent-heading'
+    const recent = markup.split(`id="${heading}"`)[1]?.split('</section>')[0]
+    expect(recent).toContain('Tyla wins the first Best African Music Performance Grammy')
+    expect(recent).toContain('dateTime="2026-11-13"')
+  })
+
   it('keeps the timeline call to action while the flag is off', () => {
     const markup = renderHome(rawGraph as MusicGraph, false, DEFAULT_LOCALE, true)
     expect(markup).not.toContain('id="soundtrails"')

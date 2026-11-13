@@ -12,6 +12,9 @@ events, and so on).
 > gaps, then add more composition, artist, and track coverage in underrepresented
 > musical traditions. See §6, "Chronology coverage gaps".
 
+Every new node needs an `addedOn` date for the home page’s Recently added list.
+Use the calendar date the node joined the catalogue and preserve it when editing the node.
+
 The app reads the JSON as-is. The rules below are enforced by an automated
 test suite ([graph.test.ts](../src/data/graph.test.ts) and the other `src/data` tests), run with
 `npm run validate:graph` locally and in CI. **Output that breaks them will be rejected.**
@@ -54,7 +57,7 @@ interface GraphNode {
   id: string            // "<type>:<slug>", e.g. "genre:deep-house", "artist:kraftwerk"
   type: 'genre' | 'artist' | 'instrument' | 'label' | 'place' | 'track' | 'scene' | 'event' | 'festival'
   name: string          // Display name, e.g. "Deep house"
-  addedOn?: string      // Catalogue addition date (YYYY-MM-DD) shown on the home page
+  addedOn?: string      // Required for new nodes. Catalogue addition date (YYYY-MM-DD).
   period?: { start: number; end?: number | null; precision?: 'year' | 'decade' | 'century' | 'circa'; estimated?: boolean; estimateNote?: string } | null // Negative years are BCE
   description?: string  // 1–3 sentences, editorial and evocative but factual
   family?: GenreFamily | InstrumentFamily  // Timeline lane (required for genres and instruments)

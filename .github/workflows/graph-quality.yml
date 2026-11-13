@@ -35,6 +35,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 26
@@ -46,5 +48,7 @@ jobs:
         run: npm run review-status
       - name: Fail if generated review status is stale
         run: git diff --exit-code -- src/data/review-status.json
-      - name: Validate graph data, overlays, evidence and docs counts
+      - name: Validate graph data, catalogue dates, overlays, evidence and docs counts
+        env:
+          GRAPH_BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: npm run validate:graph

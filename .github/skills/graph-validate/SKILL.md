@@ -14,7 +14,7 @@ whether claims are true (`graph-fact-check`) or whether a change is editorially 
 
 ```sh
 npm run review-status        # regenerate src/data/review-status.json from docs/graph/evidence (writes a file)
-npm run validate:graph       # vitest run src/data src/graph
+npm run validate:graph       # check catalogue addition dates, then run graph tests
 ```
 
 CI runs both and fails if `review-status.json` changed, so commit the regenerated file. A pass means
@@ -22,6 +22,12 @@ zero failures; never skip, `.only`, or loosen a test to get there. Edit a test's
 when the change intentionally alters it (a new genre in the family map, a new standalone root).
 
 ## What is checked, and how to fix a failure
+
+The addition-date check compares the working graph to the merge base with `origin/main`
+(locally), or to the pull request base or previous push tip (CI). If `origin/main` is unavailable,
+local validation compares against `HEAD`. Set `GRAPH_BASE_REF` to compare against a specific revision.
+New nodes must have a valid, non-future `addedOn` date in `YYYY-MM-DD` format. A date already recorded
+on an existing node cannot be removed or changed. Use the date the node joined the catalogue.
 
 | Test file / test name contains | Checks | Usual fix |
 |---|---|---|
