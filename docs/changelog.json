@@ -2,6 +2,25 @@
   "version": 4,
   "entries": [
     {
+      "commit": "ac09db6a3b9182115a2d4ef79708cc3343a73592",
+      "parent": "252e3a84b5b3ad2e1e555220ee35184a858c12a4",
+      "date": "2026-11-12T23:23:27-05:00",
+      "subject": "Publish the app changelog asset with generated history",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/workflows/changelog.yml"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "beea8c248a63742c174f88d09cbdd727cf924bd4",
       "parent": "6857cd327933cdcf84d8889c9a73bdb9f90a84e7",
       "date": "2026-11-12T23:19:07-05:00",
