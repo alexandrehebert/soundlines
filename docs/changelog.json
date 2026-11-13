@@ -2,6 +2,49 @@
   "version": 4,
   "entries": [
     {
+      "commit": "d49032ccf2e032ea8664f0c9df749140a0e9d5d0",
+      "parent": "65de47aa2bface27b06abf18e1de9b42cefcb57f",
+      "date": "2026-11-13T15:21:22-05:00",
+      "subject": "Add color-matched jukebox CDs and eject control",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "src/components/Jukebox.css"
+            },
+            {
+              "status": "M",
+              "path": "src/components/Jukebox.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/en.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/it.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "4d70a925090b863cd4d2f904fdeb0e10e5ba03c4",
       "parent": "29f6088afc83c33d68a7795afb9a3d3815a2df36",
       "date": "2026-11-13T15:13:36-05:00",
