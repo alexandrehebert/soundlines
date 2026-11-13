@@ -2,6 +2,85 @@
   "version": 4,
   "entries": [
     {
+      "commit": "5c6b63589bbe3e2c9ecd691e4b49703bc6a8ea5b",
+      "parent": "93e26822ae42862f664bed73a3cb7890c1f4e05e",
+      "date": "2026-11-13T10:29:52-05:00",
+      "subject": "Add Soundlines jukebox and listening panel",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "A",
+              "path": "app/[locale]/jukebox/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/App.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/ExplorerContext.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/components/DatasetStats.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/DiscoveryChrome.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/Home.css"
+            },
+            {
+              "status": "M",
+              "path": "src/components/Home.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/Jukebox.css"
+            },
+            {
+              "status": "A",
+              "path": "src/components/Jukebox.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ModalPanel.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/explorerLocation.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/en.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/it.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "1956375115e69ea4228da9fb1f53ade683a03c03",
       "parent": "9551e4d77ab89581102fedda3ee3ae4cca4a8b9e",
       "date": "2026-11-13T00:07:33-05:00",
