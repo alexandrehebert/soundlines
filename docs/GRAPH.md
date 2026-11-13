@@ -34,7 +34,7 @@ test suite ([graph.test.ts](../src/data/graph.test.ts) and the other `src/data` 
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 1603 nodes (239 genres, 705 artists, 72 instruments, 41 labels, 118 places, 210 tracks, 56 scenes, 123 events, 39 festivals) and 2319 edges (as of 2026-11-13).
+Current size: 1608 nodes (239 genres, 705 artists, 77 instruments, 41 labels, 118 places, 210 tracks, 56 scenes, 123 events, 39 festivals) and 2325 edges (as of 2026-11-13).
 
 `graph.json` remains the canonical source for entity ids, relationships, dates,
 sources, and English text. Display names and prose for each other app locale are

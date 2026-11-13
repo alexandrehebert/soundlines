@@ -5777,6 +5777,26 @@
     "event:tyla-first-african-performance-grammy": {
       "name": "Tyla gewinnt den ersten Grammy für die beste afrikanische Musikdarbietung",
       "description": "Die südafrikanische Sängerin erhält den erstmals verliehenen Preis für „Water“, einen Popsong mit Einflüssen aus dem Amapiano."
+    },
+    "instrument:oud": {
+      "description": "Kurzhalslaute ohne Bünde mit birnenförmigem Korpus und gewölbtem Rücken. Sie prägt die Khaliji-Musik.",
+      "name": "Oud"
+    },
+    "instrument:cajon": {
+      "description": "Afroperuanisches Schlaginstrument aus Holz. Beim Spielen sitzt man auf der Kiste und schlägt gegen die Vorderseite. Das Cajón begleitet Música criolla und fand später Eingang in den Flamenco.",
+      "name": "Cajón"
+    },
+    "instrument:saron": {
+      "description": "Metallofon des javanischen Gamelans. Die Bronzestäbe liegen über einem Holzresonator und werden mit einem Schlägel angeschlagen. Der Panerus ist die kleine, hoch klingende Form des Saron.",
+      "name": "Saron"
+    },
+    "instrument:bouzouki": {
+      "description": "Griechische Langhalslaute mit Bünden, die zum Wahrzeichen des Rebetiko von Piräus wurde. Der Zeitstrahl markiert eine belegte Aufnahme.",
+      "name": "Bouzouki"
+    },
+    "instrument:guembri": {
+      "description": "Gezupfte Laute mit drei Saiten, die in der städtischen Gnawa-Musik Marokkos gespielt wird. Smithsonian Folkways dokumentiert das Instrument in seinen Aufnahmen aus Marokko von 1966.",
+      "name": "Guembri"
     }
   },
   "edges": {

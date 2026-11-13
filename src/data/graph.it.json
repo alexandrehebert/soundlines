@@ -5765,6 +5765,26 @@
     "event:tyla-first-african-performance-grammy": {
       "name": "Tyla vince il primo Grammy per la migliore esibizione di musica africana",
       "description": "La cantante sudafricana vince la prima edizione del premio con «Water», un brano pop influenzato dall’amapiano."
+    },
+    "instrument:oud": {
+      "description": "Liuto a manico corto senza tasti, con cassa a pera e fondo bombato. È uno strumento caratteristico della musica khaliji.",
+      "name": "Oud"
+    },
+    "instrument:cajon": {
+      "description": "Percussione afroperuviana a forma di cassa di legno. Chi suona si siede sulla cassa e ne percuote la faccia anteriore. Accompagna la música criolla ed è entrato in seguito nel flamenco.",
+      "name": "Cajón"
+    },
+    "instrument:saron": {
+      "description": "Metallofono del gamelan giavanese con barre di bronzo poste sopra un risonatore in legno e percosse con un battente. Il panerus è la variante piccola e acuta del saron.",
+      "name": "Saron"
+    },
+    "instrument:bouzouki": {
+      "description": "Liuto greco a manico lungo con tasti, divenuto emblematico del rebetiko del Pireo. La cronologia indica una registrazione documentata.",
+      "name": "Bouzouki"
+    },
+    "instrument:guembri": {
+      "description": "Liuto a tre corde pizzicate usato nella musica gnawa urbana del Marocco. Smithsonian Folkways documenta lo strumento nelle registrazioni realizzate in Marocco nel 1966.",
+      "name": "Guembri"
     }
   },
   "edges": {

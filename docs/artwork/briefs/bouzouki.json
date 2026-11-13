@@ -1,0 +1,31 @@
+{
+  "slug": "bouzouki",
+  "instrument": "instrument:bouzouki",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.getty.edu/vow/AATFullDisplay?find=tree&logic=null&note=&subjectid=300265860",
+      "shows": "Defines the long fretted neck and the three or four double courses."
+    },
+    {
+      "url": "https://education.nsw.gov.au/content/dam/main-education/teaching-and-learning/curriculum/key-learning-areas/creative-arts/media/documents/creative-arts-s4-kasca-sequences-music-handouts-music-of-the-world.pdf",
+      "shows": "Reference photograph shows a pear-shaped body and the long thin neck."
+    }
+  ],
+  "silhouette": "A compact pear-shaped bowl at the end of a long narrow fretted neck.",
+  "features": [
+    "Compact pear-shaped body",
+    "Long neck with transverse frets",
+    "Three double courses and six pegs"
+  ],
+  "iconFeatures": [
+    "Long narrow neck at a playing diagonal",
+    "Compact pear-shaped body"
+  ],
+  "avoid": [
+    "Short fretless oud neck",
+    "Bent oud pegbox"
+  ],
+  "notes": "Shows the three-course Greek form associated with early rebetiko."
+}

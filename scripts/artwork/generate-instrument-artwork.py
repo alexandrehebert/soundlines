@@ -345,7 +345,70 @@ def saxophone():
 
 
 # Icon paths keep the banner's defining shapes and drop small controls and strings.
+def oud():
+    return (path('M8 0Q-15-27-52-40Q-108-65-129-21Q-149 28-99 46Q-64 58-19 28Q-2 17 8 0Z', WOOD)
+            + path('M1-9L66-7V7L1 9Z', DARK)
+            + path('M65-7Q81-21 100-37L108-29Q87-8 65 7Z', '#8d593a')
+            + rosette(-67, 15) + ellipse(-35, -19, 6, 5, DARK, GOLD)
+            + ellipse(-35, 19, 6, 5, DARK, GOLD)
+            + rect(-106, -12, 5, 24, DARK)
+            + ''.join(ellipse(x, y, 2.7, 2, GOLD) for x, y in
+                      [(70,-3),(75,-8),(80,-13),(85,-18),(90,-23),(95,-28),
+                       (76,1),(81,-4),(86,-9),(91,-14),(96,-19)])
+            + strings(-103, 66, 11, 1.7))
+
+
+def bouzouki():
+    return (path('M-39 0Q-44-22-74-33Q-107-43-123-16Q-137 0-123 16Q-107 43-74 33Q-44 22-39 0Z', WOOD)
+            + path('M-48-8L89-5V5L-48 8Z', DARK)
+            + path('M89-6L115-9Q121 0 115 9L89 6Z', WOOD)
+            + ellipse(-64, 0, 10, 8, DARK, GOLD)
+            + path('M-93 9Q-80 22-64 12', stroke=DARK, w=3)
+            + rect(-109, -9, 4, 18, DARK)
+            + frets(-43, 88, 8, 'M{x} -6v12')
+            + pegs([(x, y) for x in (95, 103, 111) for y in (-11, 11)])
+            + strings(-107, 111, 6, 2))
+
+
+def guembri():
+    return (path('M-119-29Q-123-26-123-18V19Q-122 26-113 29H-36Q-27 27-25 20V-20Q-27-27-35-29Z', WOOD)
+            + path('M-117-23H-34L-31 20H-117Z', '#d4ad80')
+            + path('M-32-6L112-5Q122 0 112 5L-32 6Z', '#805337')
+            + path('M-116-20v40m5-40v40', stroke='#8c6149')
+            + rect(-94, -11, 4, 22, DARK)
+            + pegs([(76, 9), (93, -9), (108, 9)])
+            + strings(-92, 108, 3, 4))
+
+
+def cajon():
+    return (path('M-57-57L-36-69H63L40-57Z', '#b9704a')
+            + path('M40-57L63-69V48L40 63Z', '#671d1d')
+            + path('M-57-57H40V63H-57Z', WOOD)
+            + path('M-51-51H34V57H-51Z', stroke=GOLD, w=.8)
+            + ''.join(ellipse(x, y, 1.8, 1.8, DARK)
+                      for x in (-48, 31) for y in (-48, -22, 28, 53))
+            + path('M-31-37q-9 32 1 69m40-64q5 29-2 77', stroke='#a24e3b', w=.9))
+
+
+def saron():
+    bars = ''.join(path(f'M{x} -24h22l5 36h-26Z', 'url(#wood)', '#f3d5a5')
+                   + path(f'M{x+2} -18l3 23', stroke=GOLD, w=.8)
+                   for x in range(-87, 82, 27))
+    return (path('M-116 5H112L102 34H-105Z', '#671d1d')
+            + path('M-111 14H108V22H-109Z', '#a83935')
+            + path('M-115 5L-99-29H94L112 5Z', DARK)
+            + bars
+            + path('M-100 24q10 12 20 0q10-12 20 0q10 12 20 0m80 0q10 12 20 0q10-12 20 0q10 12 20 0', stroke=GOLD)
+            + path('M-10-40L64-53', stroke=GOLD, w=4)
+            + path('M-20-47l16-2 3 14-16 2Z', '#b9704a'))
+
+
 ART = {
+    'oud': (lambda _: oud(), 1.06, 'M12 8l5-4 3-2 2 2-2 3-2-1-4 5c0 5-4 10-8 9-3-.5-4-3-3-6 1-4 5-7 9-6ZM8 14h.01m2-3h.01'),
+    'bouzouki': (lambda _: bouzouki(), 1.10, 'M10.75 11V5H10V2h4v3h-.75v6c2 1 4 3.5 4 6.5a5.25 4.5 0 0 1-10.5 0c0-3 2-5.5 4-6.5ZM12 15h.01m-2 4h4'),
+    'guembri': (lambda _: guembri(), 1.13, 'M10.8 12V3q1.2-2 2.4 0v9H16l1 1v8l-1 1H8l-1-1v-8l1-1zM9 18h6m-4-10h-2m4-3h2'),
+    'cajon': (lambda _: cajon(), .93, 'M4 6l4-3h12v15l-4 3H4zM4 6h12v15m0-15 4-3M7 9h.01m6 0h.01M7 18h.01m6 0h.01'),
+    'saron': (lambda _: saron(), 1.16, 'M4 9h15l2 6H2zM2 15l2 4h15l2-4M7 9l-1 6m5-6v6m4-6 1 6M5 5l3 1 1-2-3-1zM9 5l9-2'),
     'saxophone': (lambda _: saxophone(), 1.02,
                   SAXOPHONE_OUTLINE + SAXOPHONE_SEAM + 'M10.6 8.7h.01m.6 3h.01m.6 3h.01'),
     'auto-tune': (lambda _: auto_tune(), 1.05, 'M2 5h20v14H2zM2 8h20M6 8v11M8.5 15h3m1-3h3m1 2h3'),
@@ -385,6 +448,8 @@ def illustration(kind, slug, width, height, geometry, scale):
         'auto-tune': ('#38bdf8', '#18516b'),
         'bassoon': ('#34d399', '#165b42'),
         'conga': ('#ef4444', '#671d1d'),
+        'cajon': ('#ef4444', '#671d1d'),
+        'saron': ('#ef4444', '#671d1d'),
         'harmonium': ('#818cf8', '#373c6b'),
         'juno-106': ('#38bdf8', '#18516b'),
         'minimoog': ('#38bdf8', '#18516b'),
@@ -429,6 +494,8 @@ ICON_ANGLES = dict.fromkeys(
 )
 ICON_ANGLES.update({
     'bassoon': -58,
+    'bouzouki': 38,
+    'guembri': 40,
     'cello': 15,
     'double-bass': 15,
     'hichiriki': 78,

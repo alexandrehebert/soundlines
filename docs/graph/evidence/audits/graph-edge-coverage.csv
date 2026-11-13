@@ -299,6 +299,9 @@ featured:bassoon-romantic,featured_in,high,docs/graph/evidence/edges/featured__b
 featured:bongos-latin-jazz,featured_in,medium,docs/graph/evidence/edges/featured__bongos-latin-jazz.md,Source-checked
 featured:bongos-salsa,featured_in,high,docs/graph/evidence/edges/featured__bongos-salsa.md,Source checked (2026-11-05)
 featured:bongos-son-cubano,featured_in,medium,docs/graph/evidence/edges/featured__bongos-son-cubano.md,Source checked (2026-11-05)
+featured:bouzouki-rebetiko,featured_in,high,docs/graph/evidence/edges/featured__bouzouki-rebetiko.md,Source checked (2026-11-13)
+featured:cajon-flamenco,featured_in,high,docs/graph/evidence/edges/featured__cajon-flamenco.md,Source checked (2026-11-13)
+featured:cajon-musica-criolla,featured_in,high,docs/graph/evidence/edges/featured__cajon-musica-criolla.md,Source checked (2026-11-13)
 featured:cello-baroque,featured_in,medium,docs/graph/evidence/edges/featured__cello-baroque.md,Source-checked
 featured:cello-classical-period,featured_in,high,docs/graph/evidence/edges/featured__cello-classical-period.md,Source checked (2026-11-05)
 featured:cello-romantic,featured_in,high,docs/graph/evidence/edges/featured__cello-romantic.md,Source checked (2026-11-05)
@@ -348,6 +351,7 @@ featured:euphonium-romantic,featured_in,high,docs/graph/evidence/edges/featured_
 featured:french-horn-baroque,featured_in,high,docs/graph/evidence/edges/featured__french-horn-baroque.md,Source checked (2026-11-05)
 featured:french-horn-classical-period,featured_in,medium,docs/graph/evidence/edges/featured__french-horn-classical-period.md,Source checked (2026-11-05)
 featured:french-horn-romantic,featured_in,high,docs/graph/evidence/edges/featured__french-horn-romantic.md,Source checked (2026-11-05)
+featured:guembri-gnawa,featured_in,high,docs/graph/evidence/edges/featured__guembri-gnawa.md,Source checked (2026-11-13)
 featured:guiro-cumbia,featured_in,medium,docs/graph/evidence/edges/featured__guiro-cumbia.md,Source checked (2026-11-05)
 featured:guiro-salsa,featured_in,high,docs/graph/evidence/edges/featured__guiro-salsa.md,Source checked (2026-11-05)
 featured:guiro-son-cubano,featured_in,high,docs/graph/evidence/edges/featured__guiro-son-cubano.md,Source checked (2026-11-05)
@@ -391,6 +395,7 @@ featured:modular-synthesizer-progressive-rock,featured_in,high,docs/graph/eviden
 featured:oboe-baroque,featured_in,medium,docs/graph/evidence/edges/featured__oboe-baroque.md,Source-checked
 featured:oboe-classical-period,featured_in,high,docs/graph/evidence/edges/featured__oboe-classical-period.md,Source checked (2026-11-05)
 featured:oboe-romantic,featured_in,medium,docs/graph/evidence/edges/featured__oboe-romantic.md,Source checked (2026-11-05)
+featured:oud-khaliji,featured_in,high,docs/graph/evidence/edges/featured__oud-khaliji.md,Source checked (2026-11-13)
 featured:pedal-steel-guitar-alt-country,featured_in,medium,docs/graph/evidence/edges/featured__pedal-steel-guitar-alt-country.md,Source checked (2026-11-05)
 featured:pedal-steel-guitar-country,featured_in,high,docs/graph/evidence/edges/featured__pedal-steel-guitar-country.md,Source checked (2026-11-05)
 featured:piano-bebop,featured_in,medium,docs/graph/evidence/edges/featured__piano-bebop.md,Source-checked
@@ -414,6 +419,7 @@ featured:sampler-hip-hop,featured_in,high,docs/graph/evidence/edges/featured__sa
 featured:sampler-jungle,featured_in,high,docs/graph/evidence/edges/featured__sampler-jungle.md,Source checked (2026-11-05)
 featured:sampler-trip-hop,featured_in,medium,docs/graph/evidence/edges/featured__sampler-trip-hop.md,Source checked (2026-11-05)
 featured:sarod-hindustani-classical,featured_in,high,docs/graph/evidence/edges/featured__sarod-hindustani-classical.md,Source checked (2026-11-05)
+featured:saron-gamelan,featured_in,high,docs/graph/evidence/edges/featured__saron-gamelan.md,Source checked (2026-11-13)
 featured:saxophone-bebop,featured_in,high,docs/graph/evidence/edges/featured__saxophone-bebop.md,Source checked (2026-11-05)
 featured:saxophone-free-jazz,featured_in,medium,docs/graph/evidence/edges/featured__saxophone-free-jazz.md,Source checked (2026-11-05)
 featured:saxophone-hard-bop,featured_in,high,docs/graph/evidence/edges/featured__saxophone-hard-bop.md,Source checked (2026-11-05)

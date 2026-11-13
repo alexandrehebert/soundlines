@@ -1,0 +1,31 @@
+{
+  "slug": "saron",
+  "instrument": "instrument:saron",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/501374",
+      "shows": "Nineteenth-century Javanese saron panerus showing bronze bars and a decorated wooden trough."
+    },
+    {
+      "url": "https://resources.metmuseum.org/resources/metpublications/pdf/Musical_Instruments_in_the_Metropolitan_Museum_The_Metropolitan_Museum_of_Art_Bulletin_v_35.pdf",
+      "shows": "The museum bulletin describes the bronze bars and the chambers chiseled in the wooden trough."
+    }
+  ],
+  "silhouette": "A low wooden trough supporting a row of bronze bars, with a single mallet above the bars.",
+  "features": [
+    "Seven bronze bars in a single row",
+    "Decorated low wooden resonator beneath the bars",
+    "Single mallet above the bars"
+  ],
+  "iconFeatures": [
+    "Single row of bars in playing position",
+    "Low trough and one mallet"
+  ],
+  "avoid": [
+    "Tubular resonators",
+    "Two rows of bars"
+  ],
+  "notes": "Shows a Javanese panerus with one row of slendro-tuned bars."
+}

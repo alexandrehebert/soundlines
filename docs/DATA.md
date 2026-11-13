@@ -12,6 +12,22 @@ All data lives in [src/data/graph.json](../src/data/graph.json) as a single prop
 - **Edges** with a type, optional `period`, `confidence` (`low`/`medium`/`high`), `note`, and source URLs. Lineage edge types (`influences`, `derived_from`, `subgenre_of`, `fusion_of`, `cross_pollination`, `revival_of`) carry an orientation so the JSON reads naturally in both directions (see `LINEAGE_ORIENTATION` in [src/graph/types.ts](../src/graph/types.ts)).
 - Nodes can include `sources` URLs; the detail panel links the selected node's sources, with each source's website shown beside the link. Festival relationships also show their own citations beside the connection. Festival confidence is reassessed against evidence, not inferred from citation counts.
 
+### Discovering instruments worldwide
+
+Use the [MusicBrainz instrument list](https://musicbrainz.org/instruments) to find instrument
+types and alternate names. Cross-check candidates with
+[Musical Instrument Museums Online](https://mimo-international.com/MIMO/DEFAULT/instrument-families.aspx)
+and [Grinnell’s collection](https://omeka-s.grinnell.edu/s/MusicalInstruments/page/about), which
+helps identify instruments by region and cultural association. Use the individual museum,
+archive, or heritage records to support the timeline anchor and each genre connection.
+
+These catalogs do not measure how widely instruments are played. For candidate discovery,
+[Wikimedia pageviews](https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/)
+could measure recent reader interest across language editions. MusicBrainz credits could
+measure documented use in recordings. Both have coverage biases, so keep the signals
+separate and select candidates across regions and instrument families. Do not use either
+signal as a historical prominence curve.
+
 ### Music festivals
 
 The collection includes ancient Pythian Games and the approximately 1715 Three

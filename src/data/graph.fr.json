@@ -5831,6 +5831,26 @@
     "event:tyla-first-african-performance-grammy": {
       "name": "Tyla remporte le premier Grammy de la meilleure performance de musique africaine",
       "description": "La chanteuse sud-africaine remporte le nouveau prix avec « Water », un titre pop marqué par l’amapiano."
+    },
+    "instrument:oud": {
+      "description": "Luth à manche court sans frettes, à caisse en forme de poire et au dos bombé. C’est un instrument caractéristique de la musique khaliji.",
+      "name": "Oud"
+    },
+    "instrument:cajon": {
+      "description": "Percussion afro-péruvienne en forme de caisse en bois. On s’assoit sur la caisse pour en frapper la face avant. Le cajón accompagne la música criolla et a ensuite été adopté dans le flamenco.",
+      "name": "Cajón"
+    },
+    "instrument:saron": {
+      "description": "Métallophone du gamelan javanais dont les lames de bronze, posées sur un résonateur en bois, sont frappées avec une mailloche. Le panerus est la petite variante aiguë du saron.",
+      "name": "Saron"
+    },
+    "instrument:bouzouki": {
+      "description": "Luth grec à long manche fretté, devenu emblématique du rébétiko du Pirée. La frise indique une date d’enregistrement attestée.",
+      "name": "Bouzouki"
+    },
+    "instrument:guembri": {
+      "description": "Luth à trois cordes pincées utilisé dans la musique gnawa des villes marocaines. Smithsonian Folkways documente l’instrument dans ses enregistrements réalisés au Maroc en 1966.",
+      "name": "Guembri"
     }
   },
   "edges": {

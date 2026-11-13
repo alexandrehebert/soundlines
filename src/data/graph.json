@@ -25309,6 +25309,87 @@
       "phaseNote": "1984 is a well-supported release year. A single editorial phase avoids inventing a peak. Manufacturer pages disagree about production duration; no production end is used as an end to musical use."
     },
     {
+      "id": "instrument:oud",
+      "type": "instrument",
+      "name": "Oud",
+      "addedOn": "2026-11-13",
+      "family": "strings",
+      "period": {
+        "start": 600,
+        "precision": "century"
+      },
+      "description": "A short-necked, fretless lute with a pear-shaped body and a rounded back. It is a characteristic instrument in Khaliji music.",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/503203",
+        "https://www.metmuseum.org/art/collection/search/776535",
+        "https://fieldsupport.dliflc.edu/products/cip/bahrain/bahrain.pdf"
+      ]
+    },
+    {
+      "id": "instrument:cajon",
+      "type": "instrument",
+      "name": "Cajón",
+      "addedOn": "2026-11-13",
+      "family": "percussion",
+      "period": {
+        "start": 1800,
+        "precision": "century"
+      },
+      "description": "Afro-Peruvian wooden box percussion. The player sits on the box and strikes its front face. It accompanies música criolla and later entered flamenco.",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/3327",
+        "https://www.peru.travel/es/inspirate/cajon-peruano-como-se-creo-uno-de-los-instrumentos-mas-conocidos-en-el-mundo"
+      ]
+    },
+    {
+      "id": "instrument:saron",
+      "type": "instrument",
+      "name": "Saron",
+      "addedOn": "2026-11-13",
+      "family": "percussion",
+      "period": {
+        "start": 1800,
+        "precision": "century"
+      },
+      "description": "Javanese gamelan metallophone with bronze bars mounted over a wooden resonator and struck with a mallet. The panerus is the small, high-pitched member of the saron family.",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/501374",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1218"
+      ]
+    },
+    {
+      "id": "instrument:bouzouki",
+      "type": "instrument",
+      "name": "Bouzouki",
+      "addedOn": "2026-11-13",
+      "family": "strings",
+      "period": {
+        "start": 1932,
+        "precision": "year"
+      },
+      "description": "Greek long-necked fretted lute that became emblematic of Piraeus rebetiko. The timeline marks a documented recording.",
+      "sources": [
+        "https://vmrebetiko.aegean.gr/en/item-en/?id=9872",
+        "https://vmrebetiko.aegean.gr/en/item-en/?id=5254"
+      ]
+    },
+    {
+      "id": "instrument:guembri",
+      "type": "instrument",
+      "name": "Guembri",
+      "addedOn": "2026-11-13",
+      "family": "strings",
+      "period": {
+        "start": 1966,
+        "precision": "year"
+      },
+      "description": "Three-string plucked lute used in urban Moroccan Gnawa music. Smithsonian Folkways documents the instrument in its 1966 recordings from Morocco.",
+      "sources": [
+        "https://folkways.si.edu/music-of-morocco/islamica-world/album/smithsonian",
+        "https://ich.unesco.org/doc/src/31303-FR.pdf"
+      ]
+    },
+    {
       "id": "artist:dune",
       "type": "artist",
       "name": "Dune",
@@ -58093,6 +58174,66 @@
       "sources": [
         "https://www.arabmediasociety.com/wp-content/uploads/2017/12/20101211162841_CaldwellDabke.pdf"
       ]
+    },
+    {
+      "id": "featured:oud-khaliji",
+      "type": "featured_in",
+      "from": "instrument:oud",
+      "to": "genre:khaliji",
+      "sources": [
+        "https://fieldsupport.dliflc.edu/products/cip/bahrain/bahrain.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:cajon-musica-criolla",
+      "type": "featured_in",
+      "from": "instrument:cajon",
+      "to": "genre:musica-criolla",
+      "sources": [
+        "https://www.peru.travel/es/inspirate/cajon-peruano-como-se-creo-uno-de-los-instrumentos-mas-conocidos-en-el-mundo"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:cajon-flamenco",
+      "type": "featured_in",
+      "from": "instrument:cajon",
+      "to": "genre:flamenco",
+      "sources": [
+        "https://www.peru.travel/es/inspirate/cajon-peruano-como-se-creo-uno-de-los-instrumentos-mas-conocidos-en-el-mundo"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:saron-gamelan",
+      "type": "featured_in",
+      "from": "instrument:saron",
+      "to": "genre:gamelan",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/501374"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:bouzouki-rebetiko",
+      "type": "featured_in",
+      "from": "instrument:bouzouki",
+      "to": "genre:rebetiko",
+      "sources": [
+        "https://vmrebetiko.aegean.gr/en/item-en/?id=5254"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:guembri-gnawa",
+      "type": "featured_in",
+      "from": "instrument:guembri",
+      "to": "genre:gnawa",
+      "sources": [
+        "https://ich.unesco.org/doc/src/31303-FR.pdf"
+      ],
+      "confidence": "high"
     }
   ]
 }

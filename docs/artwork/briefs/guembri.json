@@ -1,0 +1,31 @@
+{
+  "slug": "guembri",
+  "instrument": "instrument:guembri",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://music.si.edu/object-day/moroccan-gembri",
+      "shows": "Documents the skin resonator, three strings, and Gnawa use."
+    },
+    {
+      "url": "https://bazhum.muzhp.pl/media/texts/kwartalnik-modych-muzykologow-uj/2016-numer-30-3/kwartalnik_mlodych_muzykologow_uj-r2016-t-n30_3-s7-27.pdf",
+      "shows": "Shows the long fretless neck and elongated skin-faced resonator on the museum specimen."
+    }
+  ],
+  "silhouette": "A long straight neck extending from an elongated hide-faced wooden box.",
+  "features": [
+    "Elongated hide-covered resonator",
+    "Straight fretless neck",
+    "Three strings and three pegs"
+  ],
+  "iconFeatures": [
+    "Long neck on a playing diagonal",
+    "Box resonator"
+  ],
+  "avoid": [
+    "Round sound hole",
+    "Fretted neck"
+  ],
+  "notes": "Shows the bass lute used in urban Moroccan Gnawa performance."
+}

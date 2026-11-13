@@ -1,0 +1,31 @@
+{
+  "slug": "oud",
+  "instrument": "instrument:oud",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/776535",
+      "shows": "Syrian oud with a broad bowl and three decorative sound holes."
+    },
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/503203",
+      "shows": "Egyptian oud, showing the short neck and bent pegbox."
+    }
+  ],
+  "silhouette": "A broad pear-shaped bowl with a short straight fingerboard and a sharply bent pegbox.",
+  "features": [
+    "Broad pear-shaped soundboard",
+    "One large central rosette and two smaller sound holes",
+    "Short fretless neck and angled pegbox"
+  ],
+  "iconFeatures": [
+    "Pear-shaped body on a playing diagonal",
+    "Bent pegbox",
+    "Sound hole"
+  ],
+  "avoid": [
+    "Long fretted neck of a bouzouki"
+  ],
+  "notes": "A representative Arabic oud with five paired courses and one single course."
+}

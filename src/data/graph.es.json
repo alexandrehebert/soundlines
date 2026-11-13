@@ -5782,6 +5782,26 @@
     "event:tyla-first-african-performance-grammy": {
       "name": "Tyla gana el primer Grammy a la mejor interpretación musical africana",
       "description": "La cantante sudafricana gana la primera edición del premio con «Water», un tema pop con influencias del amapiano."
+    },
+    "instrument:oud": {
+      "description": "Laúd de mástil corto sin trastes, con caja en forma de pera y fondo abombado. Es un instrumento característico de la música khaliji.",
+      "name": "Oud"
+    },
+    "instrument:cajon": {
+      "description": "Instrumento de percusión afroperuano en forma de caja de madera. Se toca sentado sobre la caja, golpeando su cara frontal. Acompaña a la música criolla y más tarde se incorporó al flamenco.",
+      "name": "Cajón"
+    },
+    "instrument:saron": {
+      "description": "Metalófono del gamelán javanés con láminas de bronce sobre un resonador de madera, que se golpean con una baqueta. El panerus es la variante pequeña y aguda del saron.",
+      "name": "Saron"
+    },
+    "instrument:bouzouki": {
+      "description": "Laúd griego de mástil largo con trastes que se convirtió en emblema del rebético de El Pireo. La cronología señala una grabación documentada.",
+      "name": "Buzuki"
+    },
+    "instrument:guembri": {
+      "description": "Laúd de tres cuerdas pulsadas que se toca en la música gnawa urbana de Marruecos. Smithsonian Folkways lo documenta en sus grabaciones marroquíes de 1966.",
+      "name": "Guembri"
     }
   },
   "edges": {

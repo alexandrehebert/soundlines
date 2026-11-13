@@ -1,0 +1,31 @@
+{
+  "slug": "cajon",
+  "instrument": "instrument:cajon",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/3327",
+      "shows": "Collection specimen showing the flat front playing board and the box proportions."
+    },
+    {
+      "url": "https://www.peru.travel/es/inspirate/cajon-peruano-como-se-creo-uno-de-los-instrumentos-mas-conocidos-en-el-mundo",
+      "shows": "Performance photographs and standard dimensions of the Peruvian form."
+    }
+  ],
+  "silhouette": "A tall upright wooden box shown in three-quarter view, with a flat top and a broad striking face.",
+  "features": [
+    "Rectangular wooden box",
+    "Flat top that supports the seated player",
+    "Flat front playing face outlined by fasteners"
+  ],
+  "iconFeatures": [
+    "Upright box in playing position",
+    "Front panel with fasteners"
+  ],
+  "avoid": [
+    "Round drumhead",
+    "Sound hole on the front playing face"
+  ],
+  "notes": "Shows the Peruvian box from the front, leaving the rear sound hole out of sight."
+}
