@@ -122,13 +122,18 @@ export function DatasetGraph() {
         height: 16,
       }))
 
-      for (const chip of chips) {
+      // The vertical link has a narrow opening between two cards. Reserve that space first.
+      const placementOrder = chips.toSorted((a, b) =>
+        Math.abs(Number(a.dataset.tangentX)) - Math.abs(Number(b.dataset.tangentX)),
+      )
+      for (const chip of placementOrder) {
         const { width, height } = chip.getBoundingClientRect()
         const anchorX = Number(chip.dataset.x) * bounds.width / 100
         const anchorY = Number(chip.dataset.y) * bounds.height / 100
         const tangentX = Number(chip.dataset.tangentX) * bounds.width
         const tangentY = Number(chip.dataset.tangentY) * bounds.height
         const tangentLength = Math.hypot(tangentX, tangentY)
+        const maxGap = tangentX === 0 ? 84 : 65
         let best: typeof occupied[number] | undefined
         let bestDistance = Infinity
         for (let y = 2; y + height <= bounds.height - 2; y += 4) {
@@ -142,7 +147,7 @@ export function DatasetGraph() {
             const alongLink = Math.abs(centerX * tangentX + centerY * tangentY) / tangentLength
             const belowPenalty = centerY > 2 ? 12 : 0
             const distance = gap + 0.65 * alongLink + belowPenalty
-            if (distance >= bestDistance || gap > 65) continue
+            if (distance >= bestDistance || gap > maxGap) continue
             const candidate = { x, y, width, height }
             if (occupied.some((box) => overlaps(candidate, box, 8))
               || arrowheads.some((box) => overlaps(candidate, box, 3))
@@ -188,7 +193,7 @@ export function DatasetGraph() {
       <div className="border-t border-slate-800 bg-slate-950/60 px-2.5 py-6 sm:px-8"
         style={{ backgroundImage: 'radial-gradient(circle, #334155 1px, transparent 1px)', backgroundSize: '20px 20px' }}>
         <div ref={diagram} className="relative mx-auto max-w-xl">
-          <div className="relative h-72 sm:h-96">
+          <div className="relative h-80 sm:h-96">
             <svg aria-hidden="true" className="pointer-events-none absolute inset-0 size-full overflow-visible text-slate-500"
               viewBox="0 0 100 100" preserveAspectRatio="none">
               <defs>
@@ -214,7 +219,7 @@ export function DatasetGraph() {
             {edges.map(({ edge, from, to, mid, tangent }) => (
               <li key={edge.id} data-graph-label data-placed="false" data-x={mid.x} data-y={mid.y}
                 data-tangent-x={tangent.x} data-tangent-y={tangent.y} title={`${from.name} → ${to.name}`}
-                className="w-max max-w-[30%] rounded-md border border-slate-700 bg-slate-950 px-1.5 py-0.5 text-center text-xs leading-tight text-slate-200 sm:px-2">
+                className="w-max max-w-[29%] rounded-md border border-slate-700 bg-slate-950 px-1.5 py-0.5 text-center text-[11px] leading-tight text-slate-200 [overflow-wrap:anywhere] sm:max-w-[30%] sm:px-2 sm:text-xs">
                 <span className="sr-only">{from.name} → {to.name}: </span>
                 {labels.edges[edge.type]}
               </li>
