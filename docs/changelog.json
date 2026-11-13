@@ -2,6 +2,210 @@
   "version": 4,
   "entries": [
     {
+      "commit": "c041dd70194505bc8c2441431d85107a7e4c4a2a",
+      "parent": "f964cee4d7e2c809424fca5fbca8717bddfa61c5",
+      "date": "2026-11-13T15:06:17-05:00",
+      "subject": "Show new History events on the home page and validate addition dates",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "event:abba-waterloo-eurovision",
+              "name": "ABBA wins Eurovision with “Waterloo”",
+              "status": "updated"
+            },
+            {
+              "id": "event:acdc-back-in-black-uk-number-one",
+              "name": "AC/DC’s Back in Black tops the UK chart",
+              "status": "updated"
+            },
+            {
+              "id": "event:bachata-unesco-inscription",
+              "name": "UNESCO inscribes Dominican bachata",
+              "status": "updated"
+            },
+            {
+              "id": "event:battle-of-britpop",
+              "name": "Blur and Oasis face off on the UK chart",
+              "status": "updated"
+            },
+            {
+              "id": "event:black-sabbath-debut",
+              "name": "Black Sabbath’s debut reaches the UK Top 10",
+              "status": "updated"
+            },
+            {
+              "id": "event:bts-dynamite-hot-100-number-one",
+              "name": "BTS takes “Dynamite” to No. 1 in the US",
+              "status": "updated"
+            },
+            {
+              "id": "event:burna-boy-global-album-grammy",
+              "name": "Burna Boy wins the Global Music Album Grammy",
+              "status": "updated"
+            },
+            {
+              "id": "event:gamelan-unesco-inscription",
+              "name": "UNESCO inscribes Indonesian gamelan",
+              "status": "updated"
+            },
+            {
+              "id": "event:gasolina-recording-registry",
+              "name": "“Gasolina” enters the US Recording Registry",
+              "status": "updated"
+            },
+            {
+              "id": "event:getz-gilberto-grammy",
+              "name": "Getz/Gilberto wins Album of the Year",
+              "status": "updated"
+            },
+            {
+              "id": "event:kylie-cant-get-you-out-uk-number-one",
+              "name": "Kylie Minogue takes “Can’t Get You Out of My Head” to No. 1",
+              "status": "updated"
+            },
+            {
+              "id": "event:merengue-unesco-inscription",
+              "name": "UNESCO inscribes Dominican merengue",
+              "status": "updated"
+            },
+            {
+              "id": "event:morna-unesco-inscription",
+              "name": "UNESCO inscribes Cabo Verde’s morna",
+              "status": "updated"
+            },
+            {
+              "id": "event:nirvana-nevermind-billboard-number-one",
+              "name": "Nirvana’s Nevermind tops the US album chart",
+              "status": "updated"
+            },
+            {
+              "id": "event:nusrat-womad-1985",
+              "name": "Nusrat Fateh Ali Khan performs at WOMAD",
+              "status": "updated"
+            },
+            {
+              "id": "event:reggae-unesco-inscription",
+              "name": "UNESCO inscribes Jamaican reggae",
+              "status": "updated"
+            },
+            {
+              "id": "event:samba-de-roda-unesco-inscription",
+              "name": "UNESCO inscribes Bahia’s samba de roda",
+              "status": "updated"
+            },
+            {
+              "id": "event:straight-outta-compton-recording-registry",
+              "name": "Straight Outta Compton enters the US Recording Registry",
+              "status": "updated"
+            },
+            {
+              "id": "event:tango-unesco-inscription",
+              "name": "Argentina and Uruguay secure UNESCO recognition for tango",
+              "status": "updated"
+            },
+            {
+              "id": "event:tyla-first-african-performance-grammy",
+              "name": "Tyla wins the first Best African Music Performance Grammy",
+              "status": "updated"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/GRAPH.md"
+            },
+            {
+              "status": "A",
+              "path": "scripts/graph/validateAddedOn.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.json"
+            }
+          ]
+        },
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "package.json"
+            },
+            {
+              "status": "M",
+              "path": "src/App.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/Home.tsx"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/instructions/graph-data.instructions.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/graph-edit/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/graph-validate/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/workflows/graph-quality.yml"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [],
+          "updated": [
+            "event:abba-waterloo-eurovision",
+            "event:acdc-back-in-black-uk-number-one",
+            "event:bachata-unesco-inscription",
+            "event:battle-of-britpop",
+            "event:black-sabbath-debut",
+            "event:bts-dynamite-hot-100-number-one",
+            "event:burna-boy-global-album-grammy",
+            "event:gamelan-unesco-inscription",
+            "event:gasolina-recording-registry",
+            "event:getz-gilberto-grammy",
+            "event:kylie-cant-get-you-out-uk-number-one",
+            "event:merengue-unesco-inscription",
+            "event:morna-unesco-inscription",
+            "event:nirvana-nevermind-billboard-number-one",
+            "event:nusrat-womad-1985",
+            "event:reggae-unesco-inscription",
+            "event:samba-de-roda-unesco-inscription",
+            "event:straight-outta-compton-recording-registry",
+            "event:tango-unesco-inscription",
+            "event:tyla-first-african-performance-grammy"
+          ],
+          "removed": []
+        },
+        "edges": {
+          "added": [],
+          "updated": [],
+          "removed": []
+        }
+      }
+    },
+    {
       "commit": "352e256d6d54260036c7dab1b4df15be8cfe3832",
       "parent": "1123201ce410366c4986aec1687b5d1401263f9d",
       "date": "2026-11-13T15:00:52-05:00",
