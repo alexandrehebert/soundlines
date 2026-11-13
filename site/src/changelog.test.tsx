@@ -53,7 +53,7 @@ describe('public changelog', () => {
     const artwork = entitiesFor(mixed, 'artwork')
     expect(artwork).toHaveLength(1)
     expect(artwork[0].category).toBe('artwork')
-    expect(artwork[0].items.some(({ name }) => name === 'Saxophone')).toBe(true)
+    expect(artwork[0]).toEqual(mixed.entities.find(({ category }) => category === 'artwork'))
     expect(entitiesFor(mixed, 'assets')).toEqual(mixed.entities)
   })
 
