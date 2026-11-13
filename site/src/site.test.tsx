@@ -53,6 +53,14 @@ describe('project companion content', () => {
     expect(html).not.toContain('npx @modelcontextprotocol/inspector')
   })
 
+  it.each(locales)('links Open Data from the %s music data resources, not the page navigation', (locale) => {
+    const link = `href="${new URL(`${locale}/data`, APP_URL).href}"`
+    const graph = renderToStaticMarkup(<App locale={locale} slug="graph" />)
+    expect(graph.slice(graph.indexOf('id="resources"'))).toContain(link)
+    expect(graph.split(link)).toHaveLength(2)
+    expect(renderToStaticMarkup(<App locale={locale} slug="artwork" />)).not.toContain(link)
+  })
+
   it('only links to repository paths that exist', () => {
     const paths = Object.values(copy.en.pages).flatMap((page) => [
       ...page.resources.map(([path]) => path).filter((path) => !/^https?:/.test(path)),

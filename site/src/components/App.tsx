@@ -58,7 +58,7 @@ export function App({ locale, slug, page: pageNumber }: Route) {
           </section>
         )}
         {home && <Chapters c={c} locale={locale} />}
-        {!movedToApp && <Resources c={c} page={page} />}
+        {!movedToApp && <Resources c={c} page={page} openData={slug === 'graph' ? openDataHref(locale) : undefined} />}
       </main>
       <PageNav c={c} locale={locale} slug={slug} className="xl:border-t" />
       <footer className="shell flex flex-wrap items-center gap-x-8 gap-y-2 border-t border-line py-8 text-sm text-muted">
@@ -168,14 +168,7 @@ function PageNav({ c, locale, slug, className }: ChromeProps & { className: stri
         {c.pages[key].nav ?? c.pages[key].label}
       </a>
     )
-  }).concat(
-    <a key="open-data" href={openDataHref(locale)} target="_blank" rel="noopener noreferrer"
-      className="flex items-center gap-1.5 py-3.5 text-sm text-muted hover:text-fg xl:shrink-0 xl:whitespace-nowrap">
-      <Network size={16} aria-hidden="true" className="shrink-0" />
-      {c.openDataLink}
-      {external}
-    </a>,
-  )
+  })
 
   return (
     <nav aria-label={c.navigation} className={`shell border-line ${className}`}>
@@ -282,16 +275,18 @@ function Showcase({ c, locale }: { c: Copy; locale: Locale }) {
   )
 }
 
-function Resources({ c, page }: { c: Copy; page: Page }) {
+function Resources({ c, page, openData }: { c: Copy; page: Page; openData?: string }) {
+  const links: [href: string, title: string][] = page.resources.map(([path, title]) => [/^https?:/.test(path) ? path : repositoryUrl(repository, path), title])
+  if (openData) links.unshift([openData, c.openDataLink])
   return (
     <aside aria-labelledby="resources" className="my-12 border-l-3 border-accent bg-surface px-5 py-6 sm:px-8">
       <h2 id="resources" className="heading-2">{c.resources}</h2>
       <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
-        {page.resources.map(([path, title]) => (
-          <li key={path}>
+        {links.map(([link, title]) => (
+          <li key={link}>
             <a
               className="inline-block py-2 underline underline-offset-4"
-              href={/^https?:/.test(path) ? path : repositoryUrl(repository, path)}
+              href={link}
               target="_blank"
               rel="noopener noreferrer"
             >
