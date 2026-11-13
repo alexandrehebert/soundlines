@@ -13,7 +13,7 @@ Preview/loop entries document committed assets and production records, not untra
 
 ## 2026-11-12 — Add deterministic asset changelog to the companion site
 
-[5d2d6619](https://github.com/alexandrehebert/soundlines/commit/5d2d661999795dcb1a652c91e60eb8cf66441043)
+[83ad4de2](https://github.com/alexandrehebert/soundlines/commit/83ad4de253d7ff8315733fa2e2dd13b5b630307e)
 
 - app: 1 changed file
 - site: 14 changed files

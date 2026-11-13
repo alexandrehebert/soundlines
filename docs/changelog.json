@@ -2,9 +2,9 @@
   "version": 3,
   "entries": [
     {
-      "commit": "5d2d661999795dcb1a652c91e60eb8cf66441043",
+      "commit": "83ad4de253d7ff8315733fa2e2dd13b5b630307e",
       "parent": "c78833389d535654dedece83f126fca7623d795c",
-      "date": "2026-11-12T19:08:53-05:00",
+      "date": "2026-11-12T19:09:02-05:00",
       "subject": "Add deterministic asset changelog to the companion site",
       "merge": false,
       "entities": [],
