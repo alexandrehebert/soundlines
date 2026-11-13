@@ -49,6 +49,11 @@
     "meter": null,
     "prompt": "South Indian Carnatic violin and mridangam recital with a sustained tambura drone. Let the violin trace raga Kalyani with connected gamaka ornaments and rhythmic swara phrases across an eight-beat adi tala, with crisp mridangam strokes answering each phrase. Natural bow, skin and string sounds in an intimate concert recording."
   },
+  "chicago-blues": {
+    "bpm": 100,
+    "meter": "12/8",
+    "prompt": "Postwar electric Chicago blues, a swinging twelve-bar shuffle with amplified harmonica in the lead. Let the harp bend a high note and answer a short electric guitar lick. Piano triplets, walking electric bass and a lightly rattling snare keep the band moving together in a small room."
+  },
   "classical-period": {
     "bpm": 120,
     "meter": "4",
@@ -68,6 +73,18 @@
     "bpm": 96,
     "meter": "4",
     "prompt": "Early-1970s Nashville country instrumental with an easy train-like guitar strum. Warm pedal steel slides between notes of a clear singable melody, fiddle answers, and upright piano, electric bass and light kit give the verse a steady two-and-four pulse. Natural pick attack and a warm close-miked studio mix."
+  },
+  "country-pop": {
+    "bpm": 104,
+    "meter": "4",
+    "prompt": "Polished 1990s country pop with strummed acoustic guitar, bright pedal steel answers, a roomy Nashville backbeat and a tuneful electric bass. A warm lead vocal opens into a stacked harmony chorus.",
+    "lyrics": "[Chorus]\nLeave the porch light on tonight\nI can see it from the county line\nEvery mile brings me closer home\nLeave the porch light on tonight"
+  },
+  "delta-blues": {
+    "bpm": null,
+    "meter": null,
+    "prompt": "Solo Delta blues performance with resonator slide guitar, a droning bass string and flexible foot-tapped pulse. Alternate short sung lines with rough, ringing bottleneck replies in a close, dry room.",
+    "lyrics": "[Verse]\nSun came up across the field\nSun came up across the field\nI walked on till my feet could feel"
   },
   "doo-wop": {
     "bpm": 72,
@@ -124,6 +141,11 @@
     "meter": "4",
     "prompt": "Early New Orleans traditional jazz small ensemble. Cornet states an original blues-tinged melody, clarinet weaves a higher countermelody, and trombone answers underneath in collective improvisation over banjo, tuba and light trap drums. A buoyant two-beat dance feel with natural horns and compact ensemble balance."
   },
+  "jazz-funk": {
+    "bpm": 105,
+    "meter": "4",
+    "prompt": "Early 1970s jazz-funk small ensemble. Syncopated electric bass and tight live drums lock into a repeating vamp. A clavinet answers sustained electric piano voicings and a tenor saxophone improvises over the groove."
+  },
   "jazz-fusion": {
     "bpm": 115,
     "meter": "4",
@@ -164,10 +186,26 @@
     "meter": "4",
     "prompt": "Late-1990s neo-soul instrumental with a deep behind-the-beat pocket. Loose live kick and snare play against swung hi-hat sixteenths, elastic fingered bass and warm Rhodes voicings, with clean guitar answering the electric piano. Warm close studio sound, strong bass and small human timing shifts."
   },
+  "neoclassicism": {
+    "bpm": 116,
+    "meter": "4",
+    "prompt": "1920s neoclassical chamber music for oboe, bassoon, two violins, viola and cello. A clipped gavotte-like figure passes between winds and strings in clear counterpoint. Keep the phrases balanced and the textures transparent, with occasional bright dissonances and displaced accents within the older dance form."
+  },
   "new-jack-swing": {
     "bpm": 108,
     "meter": "4",
     "prompt": "Late-1980s new jack swing instrumental with hard shuffled drum-machine sixteenths, a layered kick and clap snare, tight sampled accents, punchy synth bass and bright keyboard chord hits. A quick melodic hook answers the beat in a crisp period digital studio mix."
+  },
+  "new-orleans-jazz": {
+    "bpm": 118,
+    "meter": "4",
+    "prompt": "Early New Orleans small-band jazz with collective improvisation over a buoyant two-beat dance pulse. Cornet plays an original syncopated melody as clarinet curls around it and trombone answers below with sliding accents. Banjo, tuba and lightly played snare keep the parts moving together."
+  },
+  "outlaw-country": {
+    "bpm": 104,
+    "meter": "4",
+    "prompt": "1970s outlaw country with a low, conversational lead vocal in English. A steady acoustic guitar strum and electric bass lock in with a firm live backbeat, while pedal steel and a lightly overdriven electric guitar answer the ends of the vocal lines. Let the band hold the same easy road groove under the refrain.",
+    "lyrics": "[Chorus]\nI took the road that runs beside the river\nAnd let the county line fall out of sight\nThe windows down, the evening getting cooler\nI’ll find a place to put the wheels up for the night"
   },
   "pansori": {
     "bpm": null,
@@ -213,6 +251,11 @@
     "bpm": 91,
     "meter": "4",
     "prompt": "Late-1960s Southern soul instrumental. A steady slightly laid-back drum backbeat supports a round melodic electric bass, clean clipped guitar, rolling Hammond organ and warm horn call and response. Use the direct sound of a small rhythm section playing together, with expressive pauses and a short gospel-colored turnaround."
+  },
+  "soul-jazz": {
+    "bpm": 113,
+    "meter": "4",
+    "prompt": "Small soul jazz combo with Hammond organ bass pedals, bluesy tenor saxophone, clean jazz guitar and a swinging ride cymbal. Let the organ and saxophone trade concise gospel-inflected phrases over a firmly established blues groove."
   },
   "spiritual-jazz": {
     "bpm": null,

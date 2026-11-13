@@ -4,6 +4,11 @@
     "meter": "4",
     "prompt": "Late 1980s Chicago acid house on analog boxes. A single sliding, accented TB-303 pattern changes shape as its resonant filter opens over a dry drum-machine kick, clap and offbeat hats. Let the filter performance create the drama over an unbroken club pulse."
   },
+  "acid-techno": {
+    "bpm": 142,
+    "meter": "4",
+    "prompt": "Early-1990s London free-party acid techno. Drive a hard, straight kick against open offbeat hats and dry snare accents. Push the Roland TB-303 through resonant slides, sharp accents and an opening filter sweep while a second quieter acid figure fills the gaps. Keep the groove relentless and minimally arranged."
+  },
   "alternative-rock": {
     "bpm": 121,
     "meter": "4",
@@ -13,6 +18,11 @@
     "bpm": null,
     "meter": null,
     "prompt": "Late 1970s-style ambient soundscape with no beat or fixed pulse. Slowly crossfade soft sustained organ tones, distant resonant notes and faint tape loops with slightly different cycle lengths. Leave quiet space between events and let long natural-sounding decay carry the piece."
+  },
+  "ambient-house": {
+    "bpm": 104,
+    "meter": "4",
+    "prompt": "Late-1980s British ambient house for a chill-out room. Let a soft four-beat drum-machine pulse and rounded bass sit low under long layered synth pads. Float a few distant bell notes and original snippets of field-recorded wind and room sounds across the stereo field. Keep the pulse easy to follow while the textures drift."
   },
   "ambient-techno": {
     "bpm": 117,
@@ -63,6 +73,18 @@
     "bpm": 94,
     "meter": "4",
     "prompt": "Early 2010s bedroom chillwave. A muffled drum-machine backbeat and rounded bass support woozy detuned analog chords, a small nostalgic synth hook and distant wordless vocal wash. Give the arrangement saturated cassette haze and blurred reverb while keeping the pulse perceptible."
+  },
+  "city-pop": {
+    "bpm": 109,
+    "meter": "4",
+    "prompt": "Japanese city pop with a clean syncopated electric guitar, melodic bass, bright electric piano and short brass accents. Smooth Japanese lead singing over a crisp studio backbeat, with close harmonies on the chorus.",
+    "lyrics": "[Chorus]\n街の灯りが窓を流れる\n夜風に乗って海まで行こう\n明日になれば君に会える"
+  },
+  "dance-pop": {
+    "bpm": 119,
+    "meter": "4",
+    "prompt": "Early-1980s New York dance-pop. A bright sung pop refrain sits over a steady drum-machine kick, claps and a springy synth-bass line. Use short keyboard chord hits and a single syncopated synth answer between phrases. Carry the hook with a compact, tightly arranged club groove.",
+    "lyrics": "[Chorus]\nCatch the light before it goes\nTurn the room into a glow\nIf the floor can hold the beat\nKeep a little time for me"
   },
   "darksynth": {
     "bpm": 110,
@@ -184,6 +206,12 @@
     "meter": "4",
     "prompt": "Early 1970s British glam rock. A stomping kick and snare with handclaps, chunky guitar chords and bouncy bass support a theatrical pop hook picked out on guitar and piano. Use a bright punchy band mix with an exaggerated two-and-four accent."
   },
+  "go-go": {
+    "bpm": 101,
+    "meter": "4",
+    "prompt": "Washington D.C. go-go band. Interlocking congas, cowbell and a swinging kick and snare maintain a continuous pocket beneath bass, clipped guitar and short horn punches. Lead voice trades rhythmic calls with a small group.",
+    "lyrics": "[Chorus]\nKeep it going!\nKeep it going!\nHear that drum!\nHear that drum!"
+  },
   "gothic-rock": {
     "bpm": 115,
     "meter": "4",
@@ -198,6 +226,12 @@
     "bpm": 121,
     "meter": "4",
     "prompt": "Late 1970s hard rock with a loud tube-amp blues-based electric guitar riff and a second guitar replying in the gaps. A heavy acoustic kit, assertive snare and picked electric bass drive broad accents into a compact instrumental chorus. Use natural room sound around the drums and keep the lead guitar expressive."
+  },
+  "hardcore-punk": {
+    "bpm": 184,
+    "meter": "4",
+    "prompt": "Early-1980s American hardcore punk. An abrasive downstroked guitar riff and racing bass lock with a hard kick-snare beat, short drum fills and brief stops. A dry shouted lead delivers the refrain in quick bursts, with the band answering the last words together. Keep the small-room band sound raw and direct.",
+    "lyrics": "[Chorus]\nThey locked the door, we found the stairs\nThey cut the lights, we’re still right here\nMake some room, make some room\nWe’re still right here"
   },
   "hardstyle": {
     "bpm": 150,
@@ -218,6 +252,12 @@
     "bpm": 124,
     "meter": "4",
     "prompt": "House music in a classic club arrangement. A consistent quarter-note kick, crisp claps on two and four and offbeat open hats support a springy syncopated bass and short piano chord stabs. Maintain a grooving instrumental phrase and introduce movement with small percussion and filter changes."
+  },
+  "hyperpop": {
+    "bpm": 152,
+    "meter": "4",
+    "prompt": "Maximalist digital pop with a bright clipped synth hook, pitch-shifted vocals, crunchy bass and sudden edits against a punchy drum-machine beat. Keep a clearly audible chorus melody through the dense production.",
+    "lyrics": "[Chorus]\nPixels falling in my room\nTurn the lights up, make it bloom\nI can hear the colors move"
   },
   "idm": {
     "bpm": 108,
@@ -259,10 +299,22 @@
     "meter": "4",
     "prompt": "Early 1970s West German experimental rock with a steady motorik pulse. A patient, almost unvarying live drum pattern carries repeating bass, clean delayed guitar fragments and an evolving analog keyboard tone. Let small improvised shifts develop within a continuous tape-recorded band performance."
   },
+  "liquid-drum-and-bass": {
+    "bpm": 172,
+    "meter": "4",
+    "prompt": "Late-1990s to early-2000s liquid funk with a rolling, lightly swung drum and bass break and smooth sub bass. Warm electric-piano seventh chords and a quiet funk guitar figure give the groove a soulful center. A short soft sung refrain floats above the quick snare and ghost notes.",
+    "lyrics": "[Chorus]\nLet the water carry me\nPast the lights I used to see\nLet the water carry me"
+  },
   "math-rock": {
     "bpm": 124,
     "meter": null,
     "prompt": "Mid-1990s instrumental math rock in alternating seven-beat and four-beat phrases. Two clean, tightly picked electric guitars play interlocking angular lines; bass marks the changing accents, and a nimble dry live drummer lands stop-start hits with the ensemble. Keep every attack clear and preserve the irregular phrase lengths."
+  },
+  "melodic-death-metal": {
+    "bpm": 174,
+    "meter": "4",
+    "prompt": "Early 1990s Gothenburg melodic death metal. Two distorted guitars harmonize a minor-key melody above palm-muted riffs, double-kick drums and short harsh vocal phrases. Keep the guitar harmonies distinct in the full band mix.",
+    "lyrics": "[Verse]\nCold wind over empty stone\nThrough the frost we walk alone"
   },
   "metalcore": {
     "bpm": 155,
@@ -314,6 +366,21 @@
     "meter": "4",
     "prompt": "Late 1990s instrumental post-rock that builds a texture over time. A repeated clean guitar motif, chiming delay, bowed or sustained guitar layers and an understated live pulse gradually rise into a broader dynamic phrase. Preserve quiet detail and natural cymbal bloom as the arrangement grows."
   },
+  "power-metal": {
+    "bpm": 170,
+    "meter": "4",
+    "prompt": "Late-1980s European power metal with galloping double-kick drums, palm-muted rhythm guitars and a soaring two-guitar harmony. A clear, high-register sung lead climbs into a layered melodic refrain. Keep the harmonic movement bright and the band precise underneath the vocal.",
+    "lyrics": "[Chorus]\nRaise the lantern through the snow\nOver ridges no one knows\nWhen the northern fires glow\nWe will take the mountain road"
+  },
+  "progressive-house": {
+    "bpm": 124,
+    "meter": "4",
+    "prompt": "Early-1990s British progressive house. A steady four-on-the-floor kick underpins clipped, syncopated breakbeat accents and a deep dub-influenced bass line. Let short echoing chord stabs and a slowly opening synth layer develop around the established groove."
+  },
+  "progressive-metal": {
+    "bpm": 133,
+    "prompt": "Progressive metal ensemble with tightly synchronized distorted guitar and bass riffs in changing meters, agile acoustic drums and a contrasting sustained keyboard harmony. Alternate a jagged riff with a clear soaring lead guitar motif."
+  },
   "progressive-rock": {
     "bpm": 112,
     "meter": null,
@@ -348,6 +415,11 @@
     "bpm": 106,
     "meter": "4",
     "prompt": "Early 1990s British shoegaze. Layers of fuzz, pitch-shifted and reverse-reverb guitars swell into a broad blurred chord mass above simple live drums and a rounded bass line. A small melodic figure emerges through the haze with the kick and snare still audible."
+  },
+  "southern-rock": {
+    "bpm": 110,
+    "meter": "4",
+    "prompt": "Early-1970s Southern rock instrumental with a blues-rock shuffle and two electric guitars. Let one guitar play a singing slide phrase while the other answers in harmony, above a lightly overdriven organ, melodic bass and two subtly interlocking drum parts. Keep the timing loose enough to feel like a band playing live."
   },
   "stoner-rock": {
     "bpm": 88,
@@ -393,6 +465,11 @@
     "bpm": 81,
     "meter": "4",
     "prompt": "Mid-1990s Bristol-influenced trip-hop instrumental. A dusty live break with a slightly late snare and small ghost notes carries a dark dub bass line, jazz electric piano and a faint turntable-textured ambience. Let the slow pocket and sparse arrangement make the tension."
+  },
+  "uk-funky": {
+    "bpm": 130,
+    "meter": "4",
+    "prompt": "Late-2000s London UK funky club instrumental. Syncopated kicks, tumbling hand drums and a sharp snare pattern drive a nimble house bassline. Add clipped synth chords and staggered percussion hits with room around the low end."
   },
   "uk-garage": {
     "bpm": 132,

@@ -1,4 +1,10 @@
 {
+  "afro-house": {
+    "bpm": 122,
+    "meter": "4",
+    "prompt": "South African Afro house with a steady club kick and overlapping layers of hand drums, shakers and rim accents. Build a spacious syncopated bass groove under warm minor chords and a short wordless group vocal response. Let the percussion parts weave across the pulse.",
+    "lyrics": "[Chorus]\nOh eh, oh eh\nAh oh, eh oh\nOh eh, oh eh"
+  },
   "afrobeat": {
     "bpm": 108,
     "meter": "4",
@@ -43,6 +49,12 @@
     "bpm": 126,
     "meter": "2",
     "prompt": "Late-1950s Rio bossa nova instrumental built around nylon-string guitar, the thumb marking the main pulses while soft upper chords anticipate them in a two-bar syncopation. Add restrained upright bass and delicate brushed percussion beneath intimate extended chords, with natural room sound and small dynamic changes."
+  },
+  "brazilian-funk": {
+    "bpm": 130,
+    "meter": "4",
+    "prompt": "Rio baile funk. A repeating tamborzão percussion pattern, deep electronic kick and sharp sampled drum accents support a Brazilian Portuguese MC chant with short group replies. Keep the beat spare and continuous.",
+    "lyrics": "[Chorus]\nNo baile a batida chamou\nA galera chegou, chegou\nBate palma, deixa o grave tocar"
   },
   "calypso": {
     "bpm": 112,
@@ -93,6 +105,12 @@
     "bpm": 96,
     "meter": "4",
     "prompt": "Early-1990s New York East Coast rap backing with a hard drum break, measured swing and a short chopped soul or horn figure. A lean electric bass loop and occasional turntable-style cut make an unhurried cipher pocket with a gritty room and plenty of vocal space."
+  },
+  "emo-rap": {
+    "bpm": 142,
+    "meter": "4",
+    "prompt": "Late-2010s SoundCloud emo rap with a half-time trap groove, sliding 808 bass and clipped hi-hat rolls. Chop an original clean, chorus-treated pop-punk guitar figure into a repeating sample. Deliver an intimate, half-sung rap refrain about a breakup, with a quiet doubled vocal on the final phrase.",
+    "lyrics": "[Chorus]\nYour streetlight still comes through the glass\nI leave the room and let it pass\nI send no words, just watch them fade\nThe empty space is what you made"
   },
   "g-funk": {
     "bpm": 94,
@@ -159,10 +177,21 @@
     "meter": "4",
     "prompt": "A representative 1940s New York Latin dance-orchestra instrumental with a Cuban-influenced clave, bongo accents and a lightly syncopated bass. Let piano and a small trumpet-and-reed section trade tidy melodic phrases with the warmth and balance of a vintage ballroom recording."
   },
+  "latin-trap": {
+    "bpm": 138,
+    "meter": "4",
+    "prompt": "Puerto Rican Latin trap with a sparse minor-key keyboard figure, sliding sub-bass, fast ticking hi-hat rolls and a half-time snare. A low, rhythmic Spanish rap stays clear over the beat.",
+    "lyrics": "[Verse]\nCruzo la calle, la noche me guía\nLuces prendidas, despierta la vía\nPaso tranquilo, contando los días\nGuardo mi voz para cuando amanezca"
+  },
   "makossa": {
     "bpm": 113,
     "meter": "4",
     "prompt": "1970s Douala makossa instrumental with the buoyant syncopated electric bass line leading two clean guitar figures and a supple kit groove. Punctuate the two-bar cycle with rounded saxophone and brass responses, keeping the bright live dance-band sound."
+  },
+  "mambo": {
+    "bpm": 174,
+    "meter": "4",
+    "prompt": "Mid-century Cuban big-band mambo. Interlock piano montuno and syncopated bass with congas, bongo bell and timbales against a clear clave. Brass and saxophones trade short syncopated riffs, with bright trumpet punches and rolling percussion fills keeping the dance moving."
   },
   "mbalax": {
     "bpm": 126,
@@ -173,6 +202,11 @@
     "bpm": 152,
     "meter": "2",
     "prompt": "Dominican merengue típico instrumental in a fast duple dance feel, with a nimble button accordion melody and short, emphatic runs. A metal güira scrapes steady subdivisions, the two-headed tambora alternates stick and hand accents, and bass reinforces the driving pulse."
+  },
+  "morna": {
+    "bpm": 70,
+    "meter": "4",
+    "prompt": "Slow Cabo Verdean morna with intimate nylon-string guitar, cavaquinho and a lyrical violin counterline. Unhurried pulse, soft dynamics and a gently expressive melody with space for the strings to answer."
   },
   "old-school-rap": {
     "bpm": 110,
@@ -199,6 +233,12 @@
     "meter": "4",
     "prompt": "Mid-1960s Jamaican rocksteady instrumental with a slow, relaxed dance pulse and melodic electric bass out front. Let short piano and guitar offbeats interlock above a light snare, with a smooth horn trio answering in the close harmony and warm sound of a small studio band."
   },
+  "roots-reggae": {
+    "bpm": 75,
+    "meter": "4",
+    "prompt": "1970s Jamaican roots reggae. Leave the first beat open in the drums and place kick and cross-stick together on beat three. Let a full, melodic bass line carry the groove while clean guitar skanks and bubbling organ interlock. A lead singer and close-harmony answers carry a short refrain about remembrance and resilience.",
+    "lyrics": "[Chorus]\nCarry the names from across the sea\nKeep them alive in your memory\nDeep are the roots of the sheltering tree\nWe hold the ground for the ones to be"
+  },
   "salsa": {
     "bpm": 102,
     "meter": "4",
@@ -213,6 +253,12 @@
     "bpm": 142,
     "meter": "4",
     "prompt": "Early-1960s Jamaican ska instrumental with a quick, buoyant offbeat guitar and piano chop over a walking bass line. Trumpet, trombone and saxophone play compact unison figures and answers while light live drums maintain the R&B-influenced bounce."
+  },
+  "soca": {
+    "bpm": 143,
+    "meter": "4",
+    "prompt": "Trinidad Carnival soca with a buoyant calypso-derived bassline, syncopated hand percussion, punchy brass and a bright steady dance pulse. Lead voice and group answer in short energetic Carnival calls.",
+    "lyrics": "[Chorus]\nRaise your hand and follow the sound\nStep to the rhythm, turn it around\nAll together, wave it high\nCarnival morning under the sky"
   },
   "son-cubano": {
     "bpm": 100,
