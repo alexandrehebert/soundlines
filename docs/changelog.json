@@ -2,6 +2,300 @@
   "version": 4,
   "entries": [
     {
+      "commit": "5b4fe5997f8c9be99083eaa3df2846af67e7dec6",
+      "parent": "1b4052044d833e50d2cc9e0b94fedaf12d3a7549",
+      "date": "2026-11-12T23:27:53-05:00",
+      "subject": "Fix the hyperpop dissertation citation URL",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "artist:100-gecs",
+              "name": "100 gecs",
+              "status": "updated"
+            },
+            {
+              "id": "artist:a-g-cook",
+              "name": "A. G. Cook",
+              "status": "updated"
+            },
+            {
+              "id": "artist:charli-xcx",
+              "name": "Charli XCX",
+              "status": "updated"
+            },
+            {
+              "id": "genre:hyperpop",
+              "name": "Hyperpop",
+              "status": "updated"
+            },
+            {
+              "id": "genre:pop",
+              "name": "Pop",
+              "status": "updated"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/edges/key__100-gecs-hyperpop.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/edges/key__a-g-cook-hyperpop.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/edges/key__charli-xcx-hyperpop.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/edges/lineage__hyperpop-pop.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/100-gecs.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/genre/hyperpop.md"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.json"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [],
+          "updated": [
+            "artist:100-gecs",
+            "genre:hyperpop"
+          ],
+          "removed": []
+        },
+        "edges": {
+          "added": [],
+          "updated": [
+            "key:100-gecs-hyperpop",
+            "key:a-g-cook-hyperpop",
+            "key:charli-xcx-hyperpop",
+            "lineage:hyperpop-pop"
+          ],
+          "removed": []
+        }
+      }
+    },
+    {
+      "commit": "1b4052044d833e50d2cc9e0b94fedaf12d3a7549",
+      "parent": "f6dcf01c00280466e785cba8e6c06fb0343a733f",
+      "date": "2026-11-12T23:27:33-05:00",
+      "subject": "Add hyperpop and Latin trap to the music graph",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "artist:100-gecs",
+              "name": "100 gecs",
+              "status": "added"
+            },
+            {
+              "id": "artist:a-g-cook",
+              "name": "A. G. Cook",
+              "status": "added"
+            },
+            {
+              "id": "artist:anuel-aa",
+              "name": "Anuel AA",
+              "status": "added"
+            },
+            {
+              "id": "artist:bad-bunny",
+              "name": "Bad Bunny",
+              "status": "updated"
+            },
+            {
+              "id": "artist:bryant-myers",
+              "name": "Bryant Myers",
+              "status": "added"
+            },
+            {
+              "id": "artist:charli-xcx",
+              "name": "Charli XCX",
+              "status": "added"
+            },
+            {
+              "id": "genre:hyperpop",
+              "name": "Hyperpop",
+              "status": "added"
+            },
+            {
+              "id": "genre:latin-trap",
+              "name": "Latin trap",
+              "status": "added"
+            },
+            {
+              "id": "genre:pop",
+              "name": "Pop",
+              "status": "updated"
+            },
+            {
+              "id": "genre:trap-rap",
+              "name": "Trap rap",
+              "status": "updated"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/GRAPH.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/audits/graph-edge-coverage.csv"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__100-gecs-hyperpop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__a-g-cook-hyperpop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__anuel-aa-latin-trap.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__bad-bunny-latin-trap.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__bryant-myers-latin-trap.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__charli-xcx-hyperpop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__hyperpop-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__latin-trap-trap-rap.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/100-gecs.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/a-g-cook.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/anuel-aa.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/bryant-myers.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/charli-xcx.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/hyperpop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/latin-trap.md"
+            },
+            {
+              "status": "M",
+              "path": "src/data/genrePreviews.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/review-status.json"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [
+            "artist:100-gecs",
+            "artist:a-g-cook",
+            "artist:anuel-aa",
+            "artist:bryant-myers",
+            "artist:charli-xcx",
+            "genre:hyperpop",
+            "genre:latin-trap"
+          ],
+          "updated": [],
+          "removed": []
+        },
+        "edges": {
+          "added": [
+            "key:100-gecs-hyperpop",
+            "key:a-g-cook-hyperpop",
+            "key:anuel-aa-latin-trap",
+            "key:bad-bunny-latin-trap",
+            "key:bryant-myers-latin-trap",
+            "key:charli-xcx-hyperpop",
+            "lineage:hyperpop-pop",
+            "lineage:latin-trap-trap-rap"
+          ],
+          "updated": [],
+          "removed": []
+        }
+      }
+    },
+    {
       "commit": "ac09db6a3b9182115a2d4ef79708cc3343a73592",
       "parent": "252e3a84b5b3ad2e1e555220ee35184a858c12a4",
       "date": "2026-11-12T23:23:27-05:00",

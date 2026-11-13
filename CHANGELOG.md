@@ -12,6 +12,26 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-12 — Fix the hyperpop dissertation citation URL
+
+[5b4fe599](https://github.com/alexandrehebert/soundlines/commit/5b4fe5997f8c9be99083eaa3df2846af67e7dec6)
+
+Graph nodes: +0 / ~2 / -0.
+
+Graph edges: +0 / ~4 / -0.
+
+- graph: 7 changed files
+
+## 2026-11-12 — Add hyperpop and Latin trap to the music graph
+
+[1b405204](https://github.com/alexandrehebert/soundlines/commit/1b4052044d833e50d2cc9e0b94fedaf12d3a7549)
+
+Graph nodes: +7 / ~0 / -0.
+
+Graph edges: +8 / ~0 / -0.
+
+- graph: 25 changed files
+
 ## 2026-11-12 — Publish the app changelog asset with generated history
 
 [ac09db6a](https://github.com/alexandrehebert/soundlines/commit/ac09db6a3b9182115a2d4ef79708cc3343a73592)
