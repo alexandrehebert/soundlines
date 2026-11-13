@@ -2,6 +2,25 @@
   "version": 4,
   "entries": [
     {
+      "commit": "6ee5a06825af0358edc37ef73aadc676853eb196",
+      "parent": "a3df25497aeb39d778118dfc5390731705f3b626",
+      "date": "2026-11-13T15:46:47-05:00",
+      "subject": "Fix companion changelog test against new history",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "site",
+          "files": [
+            {
+              "status": "M",
+              "path": "site/src/changelog.test.tsx"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "f82015a6bde794b6189e10e8bfa8df72b5f74bf9",
       "parent": "e64ba2abcde249323e5b9affd2189f6a7b7d5f0d",
       "date": "2026-11-13T15:34:31-05:00",
