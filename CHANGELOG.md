@@ -12,6 +12,12 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-13 — Round out the jukebox arch
+
+[4d70a925](https://github.com/alexandrehebert/soundlines/commit/4d70a925090b863cd4d2f904fdeb0e10e5ba03c4)
+
+- app: 1 changed file
+
 ## 2026-11-13 — Show new History events on the home page and validate addition dates
 
 [c041dd70](https://github.com/alexandrehebert/soundlines/commit/c041dd70194505bc8c2441431d85107a7e4c4a2a)

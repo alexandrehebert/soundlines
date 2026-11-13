@@ -2,6 +2,25 @@
   "version": 4,
   "entries": [
     {
+      "commit": "4d70a925090b863cd4d2f904fdeb0e10e5ba03c4",
+      "parent": "29f6088afc83c33d68a7795afb9a3d3815a2df36",
+      "date": "2026-11-13T15:13:36-05:00",
+      "subject": "Round out the jukebox arch",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "src/components/Jukebox.css"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "c041dd70194505bc8c2441431d85107a7e4c4a2a",
       "parent": "f964cee4d7e2c809424fca5fbca8717bddfa61c5",
       "date": "2026-11-13T15:06:17-05:00",
