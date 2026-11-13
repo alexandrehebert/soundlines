@@ -2,6 +2,326 @@
   "version": 4,
   "entries": [
     {
+      "commit": "f82015a6bde794b6189e10e8bfa8df72b5f74bf9",
+      "parent": "e64ba2abcde249323e5b9affd2189f6a7b7d5f0d",
+      "date": "2026-11-13T15:34:31-05:00",
+      "subject": "Expand worldwide instrument coverage",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "genre:flamenco",
+              "name": "Flamenco",
+              "status": "updated"
+            },
+            {
+              "id": "genre:gamelan",
+              "name": "Gamelan",
+              "status": "updated"
+            },
+            {
+              "id": "genre:gnawa",
+              "name": "Gnawa",
+              "status": "updated"
+            },
+            {
+              "id": "genre:khaliji",
+              "name": "Khaliji",
+              "status": "updated"
+            },
+            {
+              "id": "genre:musica-criolla",
+              "name": "Música criolla",
+              "status": "updated"
+            },
+            {
+              "id": "genre:rebetiko",
+              "name": "Rebetiko",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:bouzouki",
+              "name": "Bouzouki",
+              "status": "added"
+            },
+            {
+              "id": "instrument:cajon",
+              "name": "Cajón",
+              "status": "added"
+            },
+            {
+              "id": "instrument:guembri",
+              "name": "Guembri",
+              "status": "added"
+            },
+            {
+              "id": "instrument:oud",
+              "name": "Oud",
+              "status": "added"
+            },
+            {
+              "id": "instrument:saron",
+              "name": "Saron",
+              "status": "added"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "items": [
+            {
+              "id": "instrument:bouzouki",
+              "name": "Bouzouki",
+              "status": "added"
+            },
+            {
+              "id": "instrument:cajon",
+              "name": "Cajón",
+              "status": "added"
+            },
+            {
+              "id": "instrument:guembri",
+              "name": "Guembri",
+              "status": "added"
+            },
+            {
+              "id": "instrument:oud",
+              "name": "Oud",
+              "status": "added"
+            },
+            {
+              "id": "instrument:saron",
+              "name": "Saron",
+              "status": "added"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/DATA.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/GRAPH.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/audits/graph-edge-coverage.csv"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__bouzouki-rebetiko.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__cajon-flamenco.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__cajon-musica-criolla.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__guembri-gnawa.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__oud-khaliji.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__saron-gamelan.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/bouzouki.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/cajon.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/guembri.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/oud.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/saron.md"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/review-status.json"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "files": [
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/bouzouki.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/cajon.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/guembri.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/oud.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/saron.json"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/bouzouki.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/cajon.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/guembri.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/oud.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/saron.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/bouzouki.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/cajon.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/guembri.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/oud.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/saron.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/bouzouki.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/cajon.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/guembri.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/oud.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/saron.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/bouzouki.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/cajon.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/guembri.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/oud.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/saron.svg"
+            },
+            {
+              "status": "M",
+              "path": "scripts/artwork/generate-instrument-artwork.py"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [
+            "instrument:bouzouki",
+            "instrument:cajon",
+            "instrument:guembri",
+            "instrument:oud",
+            "instrument:saron"
+          ],
+          "updated": [],
+          "removed": []
+        },
+        "edges": {
+          "added": [
+            "featured:bouzouki-rebetiko",
+            "featured:cajon-flamenco",
+            "featured:cajon-musica-criolla",
+            "featured:guembri-gnawa",
+            "featured:oud-khaliji",
+            "featured:saron-gamelan"
+          ],
+          "updated": [],
+          "removed": []
+        }
+      }
+    },
+    {
       "commit": "d49032ccf2e032ea8664f0c9df749140a0e9d5d0",
       "parent": "65de47aa2bface27b06abf18e1de9b42cefcb57f",
       "date": "2026-11-13T15:21:22-05:00",
