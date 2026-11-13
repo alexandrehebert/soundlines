@@ -2,7 +2,7 @@ import { existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
-import { APP_URL, MCP_URL } from '../../src/projectLinks.ts'
+import { APP_URL } from '../../src/projectLinks.ts'
 import brief from '../../docs/loops/briefs/turntable-hip-hop.json'
 import selection from '../../docs/loops/briefs/turntable-hip-hop.selection.json'
 import saxophoneIcon from '../../public/instrument-icons/saxophone.svg?raw'
@@ -46,14 +46,11 @@ describe('project companion content', () => {
     expect(html).not.toContain(removedTitle)
   })
 
-  it.each(locales)('renders the %s MCP configuration, query and tool schemas', (locale) => {
+  it.each(locales)('routes the %s MCP page to Open Data in the app', (locale) => {
     const html = renderToStaticMarkup(<App locale={locale} slug="mcp" />)
-    expect(html).toContain(MCP_URL)
-    expect(html).toContain('npx @modelcontextprotocol/inspector')
-    expect(html).toContain('genre:french-touch')
-    const tools = html.match(/<section aria-labelledby="mcp-tools">([\s\S]*?)<\/section>/)?.[1]
-    expect(tools?.match(/<details\b/g)).toHaveLength(4)
-    expect(html).toContain('query_graph')
+    expect(html).toContain(new URL(`${locale}/data/query`, APP_URL).href)
+    expect(html).toContain(copy[locale].openDataLink)
+    expect(html).not.toContain('npx @modelcontextprotocol/inspector')
   })
 
   it('only links to repository paths that exist', () => {
@@ -246,7 +243,8 @@ describe.each(routes)('$locale/$slug page', (route) => {
     expect(html.match(/<h1\b/g)).toHaveLength(1)
     expect(html).toContain('href="#main"')
     expect(html).toContain('id="main"')
-    expect(html).toContain(renderToStaticMarkup(<>{page.title}</>))
+    const expectedTitle = route.slug === 'mcp' || route.slug === 'changelog' ? copy[route.locale].openDataTitle : page.title
+    expect(html).toContain(renderToStaticMarkup(<>{expectedTitle}</>))
   })
 
   it('offers the same page in every language and links to the repository', () => {

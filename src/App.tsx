@@ -4,6 +4,7 @@ import { ArrowDownWideNarrow, BarChart3, Bubbles, ChartGantt, Disc3, Guitar, His
 import { AnimatePresence, motion, useMotionValue } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent, type PointerEvent } from 'react'
 import { useTranslations } from 'next-intl'
+import { usePathname } from 'next/navigation'
 import { useExplorer } from './ExplorerContext.ts'
 import { DatasetStats } from './components/DatasetStats.tsx'
 import { DetailPanel } from './components/DetailPanel.tsx'
@@ -19,6 +20,7 @@ import type { TimelineOrder } from './graph/layout.ts'
 import type { StatsTab } from './graph/stats.ts'
 import { EXPLORER_VIEWS, isTimelineView, type ExplorerView, type TimelineView } from './graph/timeline.ts'
 import { localizePath } from './i18n/routing.ts'
+import { isOpenDataPath } from './openData.ts'
 
 export function Explorer() {
   const { index, locale, view, changeView, selectedId, selectNode, order, changeOrder, genreDisplay, goHome } = useExplorer()
@@ -603,5 +605,7 @@ export function TimelineOrderSelect({
 
 export default function App() {
   const { isHome } = useExplorer()
+  const pathname = usePathname()
+  if (isOpenDataPath(pathname)) return null
   return isHome ? <Home /> : <Explorer />
 }

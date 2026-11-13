@@ -80,6 +80,9 @@ export type Copy = {
   navigation: string
   language: string
   openApp: string
+  openDataTitle: string
+  openDataDescription: string
+  openDataLink: string
   eyebrow: string
   source: string
   next: string

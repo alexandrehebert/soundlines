@@ -300,6 +300,65 @@
       "niche": "Niche scene"
     }
   },
+  "openData": {
+    "title": "Open Data",
+    "intro": "Explore and query the curated music graph that powers Soundlines.",
+    "dataset": {
+      "title": "The dataset",
+      "description": "A curated, sourced property graph: entities are nodes, and documented musical relationships are directed edges. Stable IDs connect the English source graph to its translated overlays.",
+      "summary": "{entries} entities · {links} relationships",
+      "nodeTypes": "Entity types",
+      "edgeTypes": "Relationship types",
+      "github": "Data on GitHub",
+      "graphLink": "English source graph",
+      "translations": "Translated overlay",
+      "guide": "Data structure and editorial guide",
+      "sourceQuality": "Sources and confidence",
+      "sourceQualityText": "Records include source URLs where available. Relationship confidence is editorial and signals how strongly the documented claim is supported; it is not a statistical probability.",
+      "license": "License and attribution",
+      "licenseText": "Unless a record says otherwise, Soundlines data and original project work are available under Apache License 2.0. Cited sources and third-party material keep their own terms. Retain the notices and attribution when reusing the dataset.",
+      "notice": "Read the license and third-party notices"
+    },
+    "query": {
+      "title": "Query the graph",
+      "description": "Use the public, read-only Model Context Protocol endpoint to search entities, inspect relationships or find multi-step paths. No API key is required.",
+      "endpoint": "MCP endpoint",
+      "configuration": "Client configuration",
+      "example": "Example query",
+      "tools": "Available tools",
+      "schema": "Input schema",
+      "inspector": "MCP Inspector documentation",
+      "access": "Public access · read-only · no API key"
+    },
+    "changelog": {
+      "title": "Data changelog",
+      "description": "Follow changes to graph entities, audio previews, loops and instrument artwork. Select an entity to open it in the explorer.",
+      "fullHistory": "View the full repository history on GitHub",
+      "loading": "Loading data changes…",
+      "loadError": "The data changelog could not be loaded. Try again later.",
+      "source": "View changelog data on GitHub",
+      "search": "Search entities or commits",
+      "category": "Category",
+      "all": "All data changes",
+      "empty": "No matching data changes.",
+      "moreEntities": "Show remaining entities",
+      "pagination": "Data changelog pages",
+      "added": "Added",
+      "updated": "Updated",
+      "removed": "Removed",
+      "merge": "Merge",
+      "commit": "View commit",
+      "page": "Page {page} of {pages}",
+      "previous": "Previous",
+      "next": "Next",
+      "categories": {
+        "graph": "Graph",
+        "previews": "Audio previews",
+        "loops": "Audio loops",
+        "artwork": "Instrument artwork"
+      }
+    }
+  },
   "stats": {
     "title": "Dataset statistics",
     "close": "Close statistics",
@@ -543,6 +602,10 @@
     "history": {
       "title": "Music History | Soundlines",
       "description": "Explore pivotal events, inventions, performances, and cultural movements throughout music history on Soundlines."
+    },
+    "data": {
+      "title": "Open Data · Soundlines",
+      "description": "Browse and query the sourced music graph behind Soundlines. Explore entity types, relationship evidence, the public MCP interface and data history."
     },
     "bubbles": {
       "title": "Music Genre Map | Soundlines",

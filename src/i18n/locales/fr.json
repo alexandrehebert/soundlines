@@ -300,6 +300,65 @@
       "niche": "Scène de niche"
     }
   },
+  "openData": {
+    "title": "Données ouvertes",
+    "intro": "Explorez et interrogez le graphe musical documenté qui alimente Soundlines.",
+    "dataset": {
+      "title": "Le jeu de données",
+      "description": "Un graphe de propriétés documenté et éditorialisé : les entités sont des nœuds, et les relations musicales établies sont des liens orientés. Des identifiants stables relient le graphe anglais à ses traductions.",
+      "summary": "{entries} entités · {links} relations",
+      "nodeTypes": "Types d’entités",
+      "edgeTypes": "Types de relations",
+      "github": "Les données sur GitHub",
+      "graphLink": "Graphe source en anglais",
+      "translations": "Traduction",
+      "guide": "Structure des données et guide éditorial",
+      "sourceQuality": "Sources et confiance",
+      "sourceQualityText": "Les fiches comprennent des URL de sources lorsqu’elles sont disponibles. Le niveau de confiance des relations est éditorial : il indique la solidité de l’affirmation documentée, et non une probabilité statistique.",
+      "license": "Licence et attribution",
+      "licenseText": "Sauf indication contraire dans une fiche, les données Soundlines et les créations originales du projet sont publiées sous licence Apache 2.0. Les sources citées et les contenus tiers conservent leurs propres conditions. Conservez les mentions et l’attribution lorsque vous réutilisez le jeu de données.",
+      "notice": "Lire la licence et les mentions relatives aux contenus tiers"
+    },
+    "query": {
+      "title": "Interroger le graphe",
+      "description": "Utilisez le point d’accès public en lecture seule du Model Context Protocol pour rechercher des entités, examiner leurs relations ou trouver des parcours. Aucune clé API n’est nécessaire.",
+      "endpoint": "Point d’accès MCP",
+      "configuration": "Configuration du client",
+      "example": "Exemple de requête",
+      "tools": "Outils disponibles",
+      "schema": "Schéma des paramètres",
+      "inspector": "Documentation de MCP Inspector",
+      "access": "Accès public · lecture seule · sans clé API"
+    },
+    "changelog": {
+      "title": "Journal des données",
+      "description": "Suivez les changements apportés aux entités du graphe, aux aperçus audio, aux boucles et aux illustrations d’instruments. Sélectionnez une entité pour l’ouvrir dans l’explorateur.",
+      "fullHistory": "Voir l’historique complet du dépôt sur GitHub",
+      "loading": "Chargement des changements…",
+      "loadError": "Le journal des données n’a pas pu être chargé. Réessayez plus tard.",
+      "source": "Voir les données du journal sur GitHub",
+      "search": "Rechercher des entités ou des commits",
+      "category": "Catégorie",
+      "all": "Tous les changements de données",
+      "empty": "Aucun changement correspondant.",
+      "moreEntities": "Afficher les autres entités",
+      "pagination": "Pages du journal des données",
+      "added": "Ajouté",
+      "updated": "Modifié",
+      "removed": "Retiré",
+      "merge": "Fusion",
+      "commit": "Voir le commit",
+      "page": "Page {page} sur {pages}",
+      "previous": "Précédent",
+      "next": "Suivant",
+      "categories": {
+        "graph": "Graphe",
+        "previews": "Aperçus audio",
+        "loops": "Boucles audio",
+        "artwork": "Illustrations d’instruments"
+      }
+    }
+  },
   "stats": {
     "title": "Statistiques du catalogue",
     "close": "Fermer les statistiques",
@@ -543,6 +602,10 @@
     "history": {
       "title": "Histoire de la musique | Soundlines",
       "description": "Explorez les événements, inventions, spectacles et mouvements culturels qui ont marqué l’histoire de la musique."
+    },
+    "data": {
+      "title": "Données ouvertes · Soundlines",
+      "description": "Explorez et interrogez le graphe musical documenté de Soundlines : types d’entités, preuves des relations, accès MCP public et historique des données."
     },
     "bubbles": {
       "title": "Carte des genres musicaux | Soundlines",

@@ -300,6 +300,65 @@
       "niche": "Nischenszene"
     }
   },
+  "openData": {
+    "title": "Offene Daten",
+    "intro": "Entdecke und durchsuche den dokumentierten Musikgraphen hinter Soundlines.",
+    "dataset": {
+      "title": "Der Datensatz",
+      "description": "Ein kuratierter, belegter Eigenschaftsgraph: Entitäten sind Knoten, dokumentierte musikalische Beziehungen gerichtete Kanten. Stabile IDs verbinden den englischen Ursprungsgraphen mit seinen Übersetzungen.",
+      "summary": "{entries} Entitäten · {links} Beziehungen",
+      "nodeTypes": "Entitätstypen",
+      "edgeTypes": "Beziehungstypen",
+      "github": "Daten auf GitHub",
+      "graphLink": "Englischer Ursprungsgraph",
+      "translations": "Übersetzung",
+      "guide": "Datenstruktur und redaktioneller Leitfaden",
+      "sourceQuality": "Quellen und Vertrauenswürdigkeit",
+      "sourceQualityText": "Einträge enthalten, sofern verfügbar, Quellen-URLs. Die redaktionelle Vertrauenswürdigkeit einer Beziehung beschreibt, wie gut die dokumentierte Aussage belegt ist; sie ist keine statistische Wahrscheinlichkeit.",
+      "license": "Lizenz und Namensnennung",
+      "licenseText": "Sofern bei einem Eintrag nicht anders angegeben, stehen Soundlines-Daten und originale Projektarbeiten unter der Apache-Lizenz 2.0. Zitierte Quellen und Materialien Dritter behalten ihre eigenen Bedingungen. Bei der Wiederverwendung des Datensatzes müssen Hinweise und Namensnennung erhalten bleiben.",
+      "notice": "Lizenz und Hinweise zu Materialien Dritter lesen"
+    },
+    "query": {
+      "title": "Graph abfragen",
+      "description": "Nutze den öffentlichen, schreibgeschützten Model-Context-Protocol-Endpunkt, um Entitäten zu suchen, Beziehungen zu prüfen oder mehrstufige Pfade zu finden. Ein API-Schlüssel ist nicht erforderlich.",
+      "endpoint": "MCP-Endpunkt",
+      "configuration": "Client-Konfiguration",
+      "example": "Beispielabfrage",
+      "tools": "Verfügbare Werkzeuge",
+      "schema": "Eingabeschema",
+      "inspector": "Dokumentation zu MCP Inspector",
+      "access": "Öffentlich · schreibgeschützt · kein API-Schlüssel"
+    },
+    "changelog": {
+      "title": "Datenänderungen",
+      "description": "Verfolge Änderungen an Graph-Entitäten, Audiovorschauen, Loops und Instrumentenbildern. Öffne eine Entität im Explorer, indem du sie auswählst.",
+      "fullHistory": "Vollständige Repository-Historie auf GitHub ansehen",
+      "loading": "Datenänderungen werden geladen…",
+      "loadError": "Das Datenprotokoll konnte nicht geladen werden. Bitte versuche es später erneut.",
+      "source": "Protokolldaten auf GitHub ansehen",
+      "search": "Entitäten oder Commits suchen",
+      "category": "Kategorie",
+      "all": "Alle Datenänderungen",
+      "empty": "Keine passenden Änderungen.",
+      "moreEntities": "Weitere Entitäten anzeigen",
+      "pagination": "Seiten des Datenprotokolls",
+      "added": "Hinzugefügt",
+      "updated": "Aktualisiert",
+      "removed": "Entfernt",
+      "merge": "Merge",
+      "commit": "Commit ansehen",
+      "page": "Seite {page} von {pages}",
+      "previous": "Zurück",
+      "next": "Weiter",
+      "categories": {
+        "graph": "Graph",
+        "previews": "Audiovorschauen",
+        "loops": "Audio-Loops",
+        "artwork": "Instrumentenbilder"
+      }
+    }
+  },
   "stats": {
     "title": "Datenstatistik",
     "close": "Statistik schließen",
@@ -543,6 +602,10 @@
     "history": {
       "title": "Musikgeschichte | Soundlines",
       "description": "Erkunde wegweisende Ereignisse, Erfindungen, Aufführungen und kulturelle Bewegungen der Musikgeschichte auf Soundlines."
+    },
+    "data": {
+      "title": "Offene Daten · Soundlines",
+      "description": "Erkunde den belegten Musikgraphen hinter Soundlines und frage ihn ab. Entdecke Entitätstypen, Belege, die öffentliche MCP-Schnittstelle und die Datenhistorie."
     },
     "bubbles": {
       "title": "Karte der Musikgenres | Soundlines",

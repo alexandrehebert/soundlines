@@ -33,7 +33,7 @@ describe('translation catalogues', () => {
     const copy = catalogueFor(locale)
     expect(copy.homeCopy.headline.first).toBeTruthy()
     expect(graphLabels(locale)).toEqual(copy.graphLabels)
-    for (const page of ['home', 'genre', 'artist', 'instrument', 'history', 'bubbles'] as const) {
+    for (const page of ['home', 'genre', 'artist', 'instrument', 'history', 'bubbles', 'data'] as const) {
       expect(pageMetadata(locale, page)).toEqual(copy.seo[page])
     }
   })

@@ -7,6 +7,6 @@ export interface LocalizedPageMetadata {
   description: string
 }
 
-export function pageMetadata(locale: Locale, page: ExplorerView | 'home' | 'bubbles'): LocalizedPageMetadata {
+export function pageMetadata(locale: Locale, page: ExplorerView | 'home' | 'bubbles' | 'data'): LocalizedPageMetadata {
   return catalogueFor(locale).seo[page]
 }

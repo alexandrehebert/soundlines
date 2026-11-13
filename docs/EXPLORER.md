@@ -97,6 +97,27 @@ It appears instantly before the next view renders, stays visible for at least
 has rendered and the document has loaded. Ordinary selections, panning, and zoom
 do not trigger it. Reduced-motion preferences disable the spin, fade, and movement.
 
+## Open Data
+
+The landing-page footer and dataset statistics dialog link to a separate Open Data
+space inside the app. It reuses the landing page's header (brand, search, GitHub link)
+and footer; footer language links keep the current data page. It has three
+localized pages with shared navigation:
+
+- `/{locale}/data/dataset`: visual totals, entity and relationship charts, source
+  coverage and confidence, licensing, and links to the graph files on GitHub.
+- `/{locale}/data/query`: the public MCP endpoint, client configuration, an example
+  question and tool schemas.
+- `/{locale}/data/changelog`: searchable, filterable graph, preview, loop and artwork
+  changes, with links back into the explorer and to the changelog files on GitHub.
+
+`/{locale}/data` redirects to the dataset page. These are not explorer views:
+navigating between them must not reset or redirect into a chronology. The dataset
+dashboard and statistics dialog share chart components and derive their figures
+from the same graph index. Changelog data loads only on its own page, from the
+compact generated `public/open-data-changelog.json` artifact. The companion site's
+former query and changelog pages hand off to their corresponding app pages.
+
 ## The timeline
 
 Select a genre in the timeline, bubble map, or search to play its 10-second

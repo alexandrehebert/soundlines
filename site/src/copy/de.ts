@@ -3,6 +3,9 @@ import type { Copy } from '../content.ts'
 
 export const de: Copy = {
   skip: 'Zum Inhalt springen', navigation: 'Hinter den Kulissen', language: 'Sprache', openApp: 'Soundlines öffnen',
+  openDataTitle: 'Offene Daten in Soundlines',
+  openDataDescription: 'Der Datensatz, der Abfrageleitfaden und das Inhaltsprotokoll befinden sich jetzt in der Hauptanwendung.',
+  openDataLink: 'Offene Daten erkunden',
   eyebrow: 'Hinter den Kulissen eines Musikatlas', source: 'Quellcode erkunden', next: 'Alle Werkstätten besuchen',
   resources: 'Mehr erfahren', footer: 'Ein kuratierter Atlas, keine vollständige Geschichte. Quellen, Unsicherheit und menschliches Urteil zählen.',
   docsNote: 'Ausführliche technische Anleitungen stehen im Repository und sind derzeit auf Englisch.',

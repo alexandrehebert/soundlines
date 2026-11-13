@@ -4,7 +4,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { afterEach, describe, expect, it } from 'vitest'
-import { buildChangelog, categoryFor } from './generate.ts'
+import { buildChangelog, categoryFor, packAssetChangelog } from './generate.ts'
 
 const directories: string[] = []
 afterEach(() => {
@@ -60,6 +60,12 @@ describe('deterministic changelog', () => {
     expect(result.markdown).toContain('[full JSON audit](./docs/changelog.json)')
     expect(result.markdown).toContain('&lt;test>')
     expect(result.json).not.toContain('uncommitted')
+    const compact = JSON.parse(result.assetJson) as ReturnType<typeof packAssetChangelog>
+    expect(compact.entries.map(({ commit }) => commit)).toEqual([second, first])
+    expect(compact.entries[0].entities.map(({ category }) => category)).toEqual(['graph', 'previews', 'loops'])
+    expect(compact.entries[1].entities.map(({ category }) => category)).toEqual(['graph', 'previews'])
+    expect(compact.entries.flatMap(({ entities }) => entities.flatMap(({ items }) => items))
+      .every((packed) => Math.floor(packed / 3) < compact.names.length)).toBe(true)
     expect(buildChangelog(cwd)).toEqual(result)
   })
 
@@ -192,12 +198,18 @@ describe('deterministic changelog', () => {
     expect(() => buildChangelog(shallow)).toThrow('complete history')
   })
 
-  it('writes and checks both files, fails on drift and remains stable after a generated-only commit', () => {
+  it('writes and checks generated changelogs, fails on drift and remains stable after a generated-only commit', () => {
     const { cwd, write, commit } = fixture()
     write('docs/guide.md', 'guide')
     commit('Document workflow')
     const script = fileURLToPath(new URL('./generate.ts', import.meta.url))
     const run = (...args: string[]) => spawnSync(process.execPath, [script, ...args], { cwd, encoding: 'utf8' })
+    expect(run().status).toBe(0)
+    expect(run('--check').status).toBe(0)
+    write('public/open-data-changelog.json', 'stale')
+    const assetCheck = run('--check')
+    expect(assetCheck.status).not.toBe(0)
+    expect(assetCheck.stderr).toContain('public/open-data-changelog.json is stale')
     expect(run().status).toBe(0)
     expect(run('--check').status).toBe(0)
     commit('Update generated changelog')

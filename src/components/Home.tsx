@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowLeft, ArrowLeftRight, ArrowRight, ArrowUpRight, Bubbles, ChartGantt, Guitar, Headphones, Heart, History, Landmark, Radio, Route, Users, type LucideIcon } from 'lucide-react'
+import { ArrowDown, ArrowLeft, ArrowLeftRight, ArrowRight, ArrowUpRight, Bubbles, ChartGantt, Guitar, Headphones, History, Landmark, Radio, Route, Users, type LucideIcon } from 'lucide-react'
 import { motion, useReducedMotion } from 'motion/react'
 import { useId, useMemo, useRef, useState, useSyncExternalStore, type ReactNode, type Ref } from 'react'
 import { useNow, useTranslations } from 'next-intl'
@@ -8,19 +8,15 @@ import { featureFlags } from '../featureFlags.ts'
 import { formatEventPeriod } from '../graph/history.ts'
 import { availableSoundtrails, type AvailableSoundtrail } from '../graph/soundtrails.ts'
 import type { GraphNode, NodeType } from '../graph/types.ts'
-import { BrandLink } from './BrandLink.tsx'
+import { DiscoveryFooter, DiscoveryHeader } from './DiscoveryChrome.tsx'
 import { ChronologyPreview } from './ChronologyPreview.tsx'
 import { currentUtcDay, dailySpotlights, subscribeToUtcDay, utcDay } from './dailySpotlights.ts'
 import { GenreSample } from './GenreSample.tsx'
-import { follow } from './followLink.ts'
 import { EntryLink, ViewLink } from './HomeLinks.tsx'
-import { SearchBar } from './SearchBar.tsx'
 import { Soundtrails } from './Soundtrails.tsx'
 import { Turntable } from './Turntable.tsx'
 import './Home.css'
-import { localizePath } from '../i18n/routing.ts'
 import { graphLabels } from '../i18n/graphLabels.ts'
-import { companionUrl, newIssueUrl, REPOSITORY_URL } from '../projectLinks.ts'
 import { publicAsset } from '../publicAsset.ts'
 import { chartColor, FAMILY_COLORS } from '../theme.ts'
 import { useColorTheme } from '../useColorTheme.ts'
@@ -33,14 +29,6 @@ const TIMELINE_DESTINATIONS = [
 const HISTORY_DESTINATION = { view: 'history', icon: History } as const
 const { view: HISTORY_VIEW, icon: HistoryIcon } = HISTORY_DESTINATION
 const DESTINATIONS = [...TIMELINE_DESTINATIONS, HISTORY_DESTINATION]
-
-const LANGUAGES = [
-  { locale: 'en', label: 'english' },
-  { locale: 'fr', label: 'french' },
-  { locale: 'de', label: 'german' },
-  { locale: 'it', label: 'italian' },
-  { locale: 'es', label: 'spanish' },
-] as const
 
 const FEATURED_CONNECTIONS = [
   ['genre:funk', 'influences', 'genre:detroit-techno', 'funk-detroit'],
@@ -554,12 +542,10 @@ function TopicSections({ ref, soundtrails, soundtrailsRef, scrollReveal, spotlig
 
 export function Home() {
   const { theme, toggleTheme } = useColorTheme()
-  const { index, locale } = useExplorer()
+  const { index } = useExplorer()
   const initialDay = utcDay(useNow().getTime())
   const day = useSyncExternalStore(subscribeToUtcDay, currentUtcDay, () => initialDay)
-  const t = useTranslations()
   const tHome = useTranslations('homeCopy')
-  const tViews = useTranslations('views')
   const reduceMotion = useReducedMotion()
   const widgetsRef = useRef<HTMLElement>(null)
   const soundtrailsRef = useRef<HTMLElement>(null)
@@ -574,22 +560,7 @@ export function Home() {
 
   return (
     <div className="discovery">
-      <header className="discovery-header">
-        <div className="discovery-width discovery-header-inner">
-          <BrandLink className="discovery-brand" href={localizePath('/', locale)} aria-current="page" onClick={(event) => follow(event)}>Soundlines</BrandLink>
-          <div className="discovery-search"><SearchBar /></div>
-          <a
-            href={REPOSITORY_URL}
-            className="discovery-repository"
-            aria-label={t('projectLinks.repository')}
-            title={t('projectLinks.repository')}
-          >
-            <svg viewBox="0 0 24 24" width={18} height={18} fill="currentColor" aria-hidden="true">
-              <path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.94.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.57 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15a10.8 10.8 0 0 1 5.64 0c2.15-1.45 3.1-1.15 3.1-1.15.61 1.55.23 2.7.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.33-2.64 5.28-5.15 5.56.4.35.76 1.04.76 2.1v3.08c0 .3.2.65.78.54A11.25 11.25 0 0 0 12 .75Z" />
-            </svg>
-          </a>
-        </div>
-      </header>
+      <DiscoveryHeader current="home" />
 
       <main className="discovery-width discovery-main">
         <Turntable theme={theme} toggleTheme={toggleTheme}>
@@ -638,42 +609,7 @@ export function Home() {
         )}
       </main>
 
-      <footer className="discovery-footer">
-        <div className="discovery-width">
-          <nav className="discovery-footer-links discovery-footer-languages" aria-label={tHome('footer.languages')}>
-            {LANGUAGES.map(({ locale: targetLocale, label }) => (
-              <a
-                key={targetLocale}
-                href={localizePath('/', targetLocale)}
-                lang={targetLocale}
-                hrefLang={targetLocale}
-                aria-current={locale === targetLocale ? 'page' : undefined}
-              >
-                {tHome(`footer.${label}`)}
-              </a>
-            ))}
-          </nav>
-          <nav className="discovery-footer-links discovery-footer-pages" aria-label={tHome('footer.pages')}>
-            <a href={localizePath('/', locale)} aria-current="page">{tHome('footer.home')}</a>
-            {DESTINATIONS.map(({ view }) => (
-              <ViewLink key={view} view={view} className="discovery-footer-link">{tViews(view)}</ViewLink>
-            ))}
-          </nav>
-          <nav className="discovery-footer-links discovery-footer-project" aria-label={t('projectLinks.navigation')}>
-            <a href={REPOSITORY_URL}>{t('projectLinks.repository')}</a>
-            <a href={companionUrl(locale)}>{t('projectLinks.about')}</a>
-            <a href={newIssueUrl(t('feedback.addTitle'), t('feedback.addBody'))} target="_blank" rel="noopener noreferrer">{t('feedback.add')}</a>
-            <a href={newIssueUrl(t('feedback.appTitle'), t('feedback.appBody'))} target="_blank" rel="noopener noreferrer">{t('feedback.app')}</a>
-          </nav>
-          <div className="discovery-footer-meta">
-            <p>
-              {tHome('madeWith')} <Heart className="discovery-footer-heart" size={16} aria-hidden="true" />
-              <span className="sr-only">{tHome('madeWithLove')}</span>{' '}{tHome('by')} Alexandre <strong>“Axoune”</strong> Hebert
-            </p>
-            <p className="discovery-copyright">© 2026 Soundlines. {t('copyright')}</p>
-          </div>
-        </div>
-      </footer>
+      <DiscoveryFooter current="home" />
     </div>
   )
 }

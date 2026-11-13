@@ -1,11 +1,11 @@
 import { execFileSync } from 'node:child_process'
-import { readFileSync, writeFileSync } from 'node:fs'
-import { resolve } from 'node:path'
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { dirname, resolve } from 'node:path'
 import { isDeepStrictEqual } from 'node:util'
 import { pathToFileURL } from 'node:url'
 import { REPOSITORY_URL } from '../../src/projectLinks.ts'
 
-const generated = new Set(['CHANGELOG.md', 'docs/changelog.json'])
+const generated = new Set(['CHANGELOG.md', 'docs/changelog.json', 'public/open-data-changelog.json'])
 const graphPath = 'src/data/graph.json'
 const categories = ['graph', 'previews', 'loops', 'artwork', 'app', 'site', 'workflow', 'docs', 'other'] as const
 type Category = (typeof categories)[number]
@@ -27,6 +27,34 @@ export type Entry = {
   groups: { category: Category; files: FileChange[] }[]
   entities: AffectedEntities
   graph?: { nodes: Delta; edges: Delta }
+}
+type PackedChangelogEntry = Pick<Entry, 'commit' | 'date' | 'subject' | 'merge'> & {
+  entities: { category: AssetCategory; items: number[] }[]
+}
+
+export function packAssetChangelog(entries: Entry[]) {
+  const names: { id: string; name: string }[] = []
+  const indexes = new Map<string, number>()
+  const packedEntries: PackedChangelogEntry[] = entries.flatMap(({ commit, date, subject, merge, entities }) => {
+    const groups = entities.flatMap(({ category, items }) => {
+      if (!['graph', 'previews', 'loops', 'artwork'].includes(category)) return []
+      return [{
+        category: category as AssetCategory,
+        items: items.map(({ id, name, status }) => {
+          const key = `${id}\0${name}`
+          let index = indexes.get(key)
+          if (index === undefined) {
+            index = names.length
+            names.push({ id, name })
+            indexes.set(key, index)
+          }
+          return index * changeStatuses.length + changeStatuses.indexOf(status)
+        }),
+      }]
+    })
+    return groups.length ? [{ commit, date, subject, merge, entities: groups }] : []
+  })
+  return { names, entries: packedEntries }
 }
 
 export function categoryFor(path: string): Category {
@@ -215,7 +243,14 @@ export function buildChangelog(cwd = process.cwd()) {
     entries.push(entry)
   }
   const data = { version: 4, entries }
-  return { root, data, json: `${JSON.stringify(data, null, 2)}\n`, markdown: renderMarkdown(entries) }
+  const assets = packAssetChangelog(entries)
+  return {
+    root,
+    data,
+    json: `${JSON.stringify(data, null, 2)}\n`,
+    assetJson: `${JSON.stringify(assets)}\n`,
+    markdown: renderMarkdown(entries),
+  }
 }
 
 const escape = (text: string) => text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/([\\`*_[\]])/g, '\\$1')
@@ -253,11 +288,16 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
   const args = process.argv.slice(2)
   if (args.some((arg) => arg !== '--check')) throw new Error('Usage: npm run changelog [-- --check]')
   const result = buildChangelog()
-  for (const [path, content] of [['docs/changelog.json', result.json], ['CHANGELOG.md', result.markdown]]) {
+  for (const [path, content] of [
+    ['docs/changelog.json', result.json],
+    ['CHANGELOG.md', result.markdown],
+    ['public/open-data-changelog.json', result.assetJson],
+  ]) {
     const file = resolve(result.root, path)
     if (args.includes('--check')) {
       if (readFileSync(file, 'utf8') !== content) throw new Error(`${path} is stale. Run npm run changelog.`)
     } else {
+      mkdirSync(dirname(file), { recursive: true })
       writeFileSync(file, content)
     }
   }

@@ -30,6 +30,7 @@ import type { GenreDisplay } from './graph/bubbles.ts'
 import { cancelPageTransition, finishPageLoading, transitionPage } from './pageLoading.ts'
 import { DEFAULT_LOCALE, type Locale } from './i18n/routing.ts'
 import { observeViewTransition } from './viewTransition.ts'
+import { isOpenDataPath } from './openData.ts'
 
 type YearRange = [number, number]
 type RunningPageTransition = { transition: ViewTransition; didUpdate: boolean }
@@ -171,6 +172,7 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
   useEffect(() => {
     if (handledRoute.current === routeKey) return
     handledRoute.current = routeKey
+    if (isOpenDataPath(pathname)) return
 
     const currentUrl = new URL(window.location.href)
     const parsed = readLocation(currentUrl.href)
@@ -202,7 +204,7 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
       })
     } else if (!location.isHome && next.view !== location.view) startPageTransition(VIEW_TRANSITION, () => setLocation(next), false)
     else setLocation(next)
-  }, [routeKey, location, locale, readLocation, revealSelection, router, cancelPendingUpdate, cancelViewTransition, startPageTransition])
+  }, [routeKey, pathname, location, locale, readLocation, revealSelection, router, cancelPendingUpdate, cancelViewTransition, startPageTransition])
 
   const selectNode = useCallback((id: string | null) => {
     const node = id ? index.nodeById.get(id) : undefined

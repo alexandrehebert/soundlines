@@ -16,8 +16,9 @@ import {
 import type { Confidence, NodeType } from '../graph/types.ts'
 import { chartColor, FAMILY_COLORS, formatPeriod, NODE_TYPE_COLORS } from '../theme.ts'
 import { graphLabels } from '../i18n/graphLabels.ts'
-import type { Locale } from '../i18n/routing.ts'
+import { localizePath, type Locale } from '../i18n/routing.ts'
 import { companionUrl, REPOSITORY_URL } from '../projectLinks.ts'
+import { BarList, Metric, Section, StackedBar } from './DatasetStatsCharts.tsx'
 
 const STATS_TABS: readonly StatsTab[] = ['overview', 'genre', 'artist', 'instrument', 'links', 'review']
 
@@ -54,6 +55,7 @@ export function DatasetStats({
   const { index, locale, selectNode } = useExplorer()
   const t = useTranslations('stats')
   const tTabs = useTranslations('stats.tabs')
+  const tOpenData = useTranslations('openData')
   const stats = useMemo(() => datasetStats(index), [index])
   const sourceReview = useMemo(() => reviewStats(index, review), [index, review])
   const [tab, setTab] = useState<StatsTab>(initialTab)
@@ -131,14 +133,21 @@ export function DatasetStats({
               })}
             </p>
           </div>
-          <button
-            type="button"
-            onClick={onClose}
-            className="-mr-2 flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-slate-400 hover:bg-slate-800 hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
-            aria-label={t('close')}
-          >
-            <X className="h-5 w-5" />
-          </button>
+          <div className="flex shrink-0 items-center gap-2">
+            <a href={localizePath('/data', locale)}
+              className="rounded-full border border-slate-700 px-3 py-2 text-xs font-semibold text-cyan-200 hover:border-cyan-400"
+            >
+              {tOpenData('title')}
+            </a>
+            <button
+              type="button"
+              onClick={onClose}
+              className="-mr-2 flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-slate-400 hover:bg-slate-800 hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
+              aria-label={t('close')}
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
         </header>
         <div
           role="tablist"
@@ -451,81 +460,6 @@ function ReviewLedger({
 
 function capitalize(text: string) {
   return `${text[0].toUpperCase()}${text.slice(1)}`
-}
-
-function Section({ title, subtitle, children }: { title: string; subtitle?: string; children: ReactNode }) {
-  return (
-    <section>
-      <h3 className="mb-2 flex items-baseline gap-2 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
-        {title}
-        {subtitle && <span className="font-medium normal-case tracking-normal text-slate-600">{subtitle}</span>}
-      </h3>
-      {children}
-    </section>
-  )
-}
-
-function Metric({ label, value, hint, children }: { label: string; value: string; hint?: string; children?: ReactNode }) {
-  return (
-    <div className="rounded-xl border border-slate-800 bg-slate-900/60 px-3 py-2.5">
-      <div className="text-lg font-bold leading-tight text-white tabular-nums">{value}</div>
-      <div className="mt-0.5 text-[11px] font-medium text-slate-500">
-        {label}
-        {hint && <span className="text-slate-600"> · {hint}</span>}
-      </div>
-      {children}
-    </div>
-  )
-}
-
-interface BarItem {
-  key: string
-  label: string
-  count: number
-  color: string
-}
-
-function BarList({ items }: { items: BarItem[] }) {
-  const max = Math.max(1, ...items.map((item) => item.count))
-  return (
-    <ul className="space-y-1">
-      {items.map((item) => (
-        <li key={item.key} className="grid grid-cols-[minmax(0,10rem)_1fr_2.5rem] items-center gap-3 text-xs">
-          <span className="truncate text-slate-300" title={item.label}>{item.label}</span>
-          <span className="h-2 overflow-hidden rounded-full bg-slate-800/70">
-            <span
-              className="block h-full rounded-full"
-              style={{ width: `${(item.count / max) * 100}%`, backgroundColor: chartColor(item.color) }}
-            />
-          </span>
-          <span className="text-right font-medium tabular-nums text-slate-400">{item.count}</span>
-        </li>
-      ))}
-    </ul>
-  )
-}
-
-function StackedBar({ items }: { items: BarItem[] }) {
-  const total = items.reduce((sum, item) => sum + item.count, 0)
-  return (
-    <div>
-      <div className="flex h-3 overflow-hidden rounded-full bg-slate-800/70" role="img" aria-label={items.map((item) => `${item.label}: ${item.count}`).join(', ')}>
-        {items.filter((item) => item.count > 0).map((item) => (
-          <span key={item.key} style={{ width: `${(item.count / total) * 100}%`, backgroundColor: chartColor(item.color) }} />
-        ))}
-      </div>
-      <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs">
-        {items.map((item) => (
-          <li key={item.key} className="flex items-center gap-1.5 text-slate-400">
-            <span className="h-2 w-2 rounded-full" style={{ backgroundColor: chartColor(item.color) }} />
-            {item.label}
-            <span className="font-medium tabular-nums text-slate-300">{item.count}</span>
-            <span className="text-slate-600">{percent(item.count, total)}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
 }
 
 function Histogram({ bins, color, unit }: { bins: EmergenceBin[]; color: string; unit: string }) {

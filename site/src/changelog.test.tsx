@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import { changeStatuses } from '../../scripts/changelog/generate.ts'
+import { APP_URL } from '../../src/projectLinks.ts'
 import { changelogSummary } from '../scripts/changelog.ts'
 import { App, Head } from './components/App.tsx'
 import { Changelog } from './components/Changelog.tsx'
@@ -128,12 +129,13 @@ describe('public changelog', () => {
       expect(html).toContain(`value="${import.meta.env.BASE_URL}${locale}/changelog/page/2/"`)
       expect(head).toContain(`${locale}/changelog/page/2/`)
     }
-    expect(head).toContain('<title>Changelog · 2 · Soundlines</title>')
+    expect(head).toContain(`<title>${copy.en.openDataTitle} · 2 · Soundlines</title>`)
   })
 
-  it.each(locales)('links to the changelog from the %s overview and navigation', (locale) => {
+  it.each(locales)('links to Open Data from the %s overview and navigation', (locale) => {
     const html = renderToStaticMarkup(<App locale={locale} slug="index" />)
-    expect(html).toContain(`href="${import.meta.env.BASE_URL}${locale}/changelog/"`)
-    expect(html).toContain(copy[locale].pages.changelog.label)
+    expect(html).toContain(`href="${new URL(`${locale}/data`, APP_URL).href}"`)
+    expect(html).toContain(copy[locale].openDataTitle)
+    expect(html).not.toContain(`href="${import.meta.env.BASE_URL}${locale}/changelog/"`)
   })
 })

@@ -300,6 +300,65 @@
       "niche": "Escena de nicho"
     }
   },
+  "openData": {
+    "title": "Datos abiertos",
+    "intro": "Explora y consulta el grafo musical documentado que impulsa Soundlines.",
+    "dataset": {
+      "title": "El conjunto de datos",
+      "description": "Un grafo de propiedades seleccionado y documentado: las entidades son nodos y las relaciones musicales documentadas son aristas dirigidas. Los ID estables conectan el grafo original en inglés con sus traducciones.",
+      "summary": "{entries} entidades · {links} relaciones",
+      "nodeTypes": "Tipos de entidad",
+      "edgeTypes": "Tipos de relación",
+      "github": "Datos en GitHub",
+      "graphLink": "Grafo original en inglés",
+      "translations": "Traducción",
+      "guide": "Estructura de datos y guía editorial",
+      "sourceQuality": "Fuentes y confianza",
+      "sourceQualityText": "Las fichas incluyen URL de fuentes cuando están disponibles. El nivel editorial de confianza de una relación indica cuánto respaldo tiene la afirmación documentada; no es una probabilidad estadística.",
+      "license": "Licencia y atribución",
+      "licenseText": "Salvo que una ficha indique lo contrario, los datos de Soundlines y el trabajo original del proyecto se ofrecen bajo la Licencia Apache 2.0. Las fuentes citadas y el material de terceros conservan sus propios términos. Al reutilizar el conjunto de datos, conserva los avisos y la atribución.",
+      "notice": "Leer la licencia y los avisos del material de terceros"
+    },
+    "query": {
+      "title": "Consultar el grafo",
+      "description": "Usa el punto de acceso público y de solo lectura del Model Context Protocol para buscar entidades, consultar relaciones o encontrar rutas de varios pasos. No se necesita una clave de API.",
+      "endpoint": "Punto de acceso MCP",
+      "configuration": "Configuración del cliente",
+      "example": "Ejemplo de consulta",
+      "tools": "Herramientas disponibles",
+      "schema": "Esquema de entrada",
+      "inspector": "Documentación de MCP Inspector",
+      "access": "Público · solo lectura · sin clave de API"
+    },
+    "changelog": {
+      "title": "Cambios en los datos",
+      "description": "Sigue los cambios en las entidades del grafo, las muestras de audio, los bucles y las ilustraciones de instrumentos. Selecciona una entidad para abrirla en el explorador.",
+      "fullHistory": "Ver el historial completo del repositorio en GitHub",
+      "loading": "Cargando cambios en los datos…",
+      "loadError": "No se pudo cargar el registro de datos. Inténtalo más tarde.",
+      "source": "Ver los datos del registro en GitHub",
+      "search": "Buscar entidades o commits",
+      "category": "Categoría",
+      "all": "Todos los cambios de datos",
+      "empty": "No hay cambios coincidentes.",
+      "moreEntities": "Mostrar las demás entidades",
+      "pagination": "Páginas de cambios de datos",
+      "added": "Añadido",
+      "updated": "Actualizado",
+      "removed": "Eliminado",
+      "merge": "Fusión",
+      "commit": "Ver commit",
+      "page": "Página {page} de {pages}",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "categories": {
+        "graph": "Grafo",
+        "previews": "Muestras de audio",
+        "loops": "Bucles de audio",
+        "artwork": "Ilustraciones de instrumentos"
+      }
+    }
+  },
   "stats": {
     "title": "Estadísticas del conjunto de datos",
     "close": "Cerrar estadísticas",
@@ -543,6 +602,10 @@
     "history": {
       "title": "Historia de la música | Soundlines",
       "description": "Explora acontecimientos decisivos, inventos, actuaciones y movimientos culturales de la historia de la música en Soundlines."
+    },
+    "data": {
+      "title": "Datos abiertos · Soundlines",
+      "description": "Explora y consulta el grafo musical documentado de Soundlines. Descubre los tipos de entidad, las fuentes de las relaciones, la interfaz MCP pública y el historial de los datos."
     },
     "bubbles": {
       "title": "Mapa de géneros musicales | Soundlines",

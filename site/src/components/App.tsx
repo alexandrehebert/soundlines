@@ -5,18 +5,26 @@ import { appUrl, storybookUrl } from '../links.ts'
 import { repositoryUrl, routePath, type Route } from '../routes.ts'
 import { favicon, instrumentBrief, instruments } from './assets.ts'
 import { ExampleCard, FlowDiagram, Legend, Overview, Stats } from './Diagrams.tsx'
-import { McpReference } from './McpReference.tsx'
-import { Changelog } from './Changelog.tsx'
+import { openDataPath, type OpenDataSection } from '../../../src/openData.ts'
 
 const base = import.meta.env.BASE_URL
 const href = (route: Route) => `${base}${routePath(route)}`
+const openDataHref = (locale: Locale, section?: OpenDataSection) => new URL(`${locale}${section ? openDataPath(section) : '/data'}`, appUrl).href
 const external = <span aria-hidden="true">↗</span>
 const languageNames: Record<Locale, string> = { en: 'English', fr: 'Français', de: 'Deutsch', it: 'Italiano', es: 'Español' }
 const pageIcons = { index: House, graph: Network, artwork: Palette, audio: AudioLines, build: Hammer, mcp: Cable, changelog: History }
 
+function pageContent(c: Copy, slug: Slug): Page {
+  const page = c.pages[slug]
+  return slug === 'mcp' || slug === 'changelog'
+    ? { ...page, label: c.openDataTitle, title: c.openDataTitle, intro: c.openDataDescription, resources: [] }
+    : page
+}
+
 export function App({ locale, slug, page: pageNumber }: Route) {
   const c = copy[locale]
-  const page = c.pages[slug]
+  const movedToApp = slug === 'mcp' || slug === 'changelog'
+  const page = pageContent(c, slug)
   const home = slug === 'index'
   return (
     <>
@@ -41,10 +49,16 @@ export function App({ locale, slug, page: pageNumber }: Route) {
             </section>
           ))}
         </div>
-        {slug === 'mcp' && <McpReference locale={locale} />}
-        {slug === 'changelog' && <Changelog locale={locale} initialPage={pageNumber} />}
+        {movedToApp && (
+          <section aria-label={c.openDataTitle} className="max-w-190 rounded-2xl border border-line bg-surface p-6 sm:p-8">
+            <a className="inline-flex min-h-11 items-center gap-3 rounded-full bg-fg px-5 font-semibold text-bg transition-colors hover:bg-accent"
+              href={openDataHref(locale, slug === 'mcp' ? 'query' : 'changelog')} target="_blank" rel="noopener noreferrer">
+              {c.openDataLink} {external}
+            </a>
+          </section>
+        )}
         {home && <Chapters c={c} locale={locale} />}
-        <Resources c={c} page={page} />
+        {!movedToApp && <Resources c={c} page={page} />}
       </main>
       <PageNav c={c} locale={locale} slug={slug} className="xl:border-t" />
       <footer className="shell flex flex-wrap items-center gap-x-8 gap-y-2 border-t border-line py-8 text-sm text-muted">
@@ -141,7 +155,7 @@ function HeaderIconLink({ href, label, children }: {
 
 function PageNav({ c, locale, slug, className }: ChromeProps & { className: string }) {
   const CurrentIcon = pageIcons[slug]
-  const links = slugs.map((key) => {
+  const links = slugs.filter((key) => key !== 'mcp' && key !== 'changelog').map((key) => {
     const Icon = pageIcons[key]
     return (
       <a
@@ -154,7 +168,14 @@ function PageNav({ c, locale, slug, className }: ChromeProps & { className: stri
         {c.pages[key].nav ?? c.pages[key].label}
       </a>
     )
-  })
+  }).concat(
+    <a key="open-data" href={openDataHref(locale)} target="_blank" rel="noopener noreferrer"
+      className="flex items-center gap-1.5 py-3.5 text-sm text-muted hover:text-fg xl:shrink-0 xl:whitespace-nowrap">
+      <Network size={16} aria-hidden="true" className="shrink-0" />
+      {c.openDataLink}
+      {external}
+    </a>,
+  )
 
   return (
     <nav aria-label={c.navigation} className={`shell border-line ${className}`}>
@@ -212,7 +233,7 @@ function Record() {
 }
 
 function Chapters({ c, locale }: { c: Copy; locale: Locale }) {
-  const chapters = Object.entries(c.pages).filter(([key]) => key !== 'index')
+  const chapters = Object.entries(c.pages).filter(([key]) => key !== 'index' && key !== 'mcp' && key !== 'changelog')
   return (
     <section aria-labelledby="inside" className="my-14">
       <h2 id="inside" className="heading-2">{c.next}</h2>
@@ -225,6 +246,12 @@ function Chapters({ c, locale }: { c: Copy; locale: Locale }) {
             <span aria-hidden="true" className="mt-2 inline-block text-accent transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
           </a>
         ))}
+        <a href={openDataHref(locale)} target="_blank" rel="noopener noreferrer" className="card group">
+          <span className="eyebrow">Open Data</span>
+          <h3 className="mt-4 mb-2 text-2xl font-bold tracking-tight">{c.openDataTitle}</h3>
+          <p className="text-sm leading-[1.8] text-muted">{c.openDataDescription}</p>
+          <span aria-hidden="true" className="mt-2 inline-block text-accent transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+        </a>
       </div>
     </section>
   )
@@ -280,7 +307,7 @@ function Resources({ c, page }: { c: Copy; page: Page }) {
 
 /** Document metadata, rendered into <head> by the prerender step. */
 export function Head({ locale, slug, page: pageNumber }: Route) {
-  const page = copy[locale].pages[slug]
+  const page = pageContent(copy[locale], slug)
   const url = (target: Locale) => `${siteUrl}/${routePath({ locale: target, slug, page: pageNumber })}`
   const title = `${page.label}${pageNumber ? ` · ${pageNumber}` : ''} · Soundlines`
   return (
