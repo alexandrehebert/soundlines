@@ -33,22 +33,26 @@
   --deck-trim: color-mix(in srgb, var(--home-accent) 35%, var(--home-node));
   --deck-metal: color-mix(in srgb, var(--home-accent) 9%, var(--home-node));
   --deck-inset: clamp(.85rem, 2vw, 1.25rem);
+  --deck-outer-arch-rise: clamp(4rem, 18vw, 10rem);
+  --deck-arch-rise: calc(var(--deck-outer-arch-rise) - var(--deck-inset) - 1px);
   display: grid;
   align-self: start;
   min-width: 0;
   border: 1px solid var(--deck-trim);
-  border-radius: 1.65rem 1.65rem .85rem .85rem;
+  border-radius: 50% 50% .85rem .85rem / var(--deck-outer-arch-rise) var(--deck-outer-arch-rise) .85rem .85rem;
   background: var(--deck-metal);
   box-shadow: inset 0 1px 0 color-mix(in srgb, var(--home-accent) 20%, transparent);
 }
 .jukebox-glass {
   display: grid;
   place-items: center;
+  box-sizing: border-box;
+  min-block-size: calc(var(--deck-arch-rise) + 1rem);
   margin: var(--deck-inset) var(--deck-inset) 0;
   padding: 1rem .65rem;
   border: 1px solid var(--deck-trim);
   border-bottom: 0;
-  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+  border-radius: 50% 50% 0 0 / var(--deck-arch-rise) var(--deck-arch-rise) 0 0;
   background: radial-gradient(ellipse at top, var(--home-node), var(--home-background) 78%);
   box-shadow: inset 0 2px 6px #0003;
 }
@@ -304,6 +308,7 @@
 }
 
 @media (max-width: 44rem) and (max-height: 45rem) {
+  .jukebox-cabinet-embedded .jukebox-deck { border-radius: 1.65rem 1.65rem .85rem .85rem; }
   .jukebox-cabinet-embedded .jukebox-glass { display: none; }
   .jukebox-cabinet-embedded .jukebox-display {
     margin-top: var(--deck-inset);
