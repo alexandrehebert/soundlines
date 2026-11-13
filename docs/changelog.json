@@ -2,6 +2,1056 @@
   "version": 4,
   "entries": [
     {
+      "commit": "beea8c248a63742c174f88d09cbdd727cf924bd4",
+      "parent": "6857cd327933cdcf84d8889c9a73bdb9f90a84e7",
+      "date": "2026-11-12T23:19:07-05:00",
+      "subject": "Add 16 genres across Soundlines families",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "artist:allman-brothers-band",
+              "name": "The Allman Brothers Band",
+              "status": "added"
+            },
+            {
+              "id": "artist:bad-brains",
+              "name": "Bad Brains",
+              "status": "added"
+            },
+            {
+              "id": "artist:black-coffee",
+              "name": "Black Coffee",
+              "status": "updated"
+            },
+            {
+              "id": "artist:black-flag",
+              "name": "Black Flag",
+              "status": "added"
+            },
+            {
+              "id": "artist:black-motion",
+              "name": "Black Motion",
+              "status": "added"
+            },
+            {
+              "id": "artist:blind-guardian",
+              "name": "Blind Guardian",
+              "status": "added"
+            },
+            {
+              "id": "artist:bob-marley",
+              "name": "Bob Marley",
+              "status": "updated"
+            },
+            {
+              "id": "artist:burning-spear",
+              "name": "Burning Spear",
+              "status": "added"
+            },
+            {
+              "id": "artist:calibre",
+              "name": "Calibre",
+              "status": "added"
+            },
+            {
+              "id": "artist:chris-liberator",
+              "name": "Chris Liberator",
+              "status": "added"
+            },
+            {
+              "id": "artist:culoe-de-song",
+              "name": "Culoe De Song",
+              "status": "added"
+            },
+            {
+              "id": "artist:culture",
+              "name": "Culture",
+              "status": "added"
+            },
+            {
+              "id": "artist:dave-the-drummer",
+              "name": "D.A.V.E. The Drummer",
+              "status": "added"
+            },
+            {
+              "id": "artist:dead-kennedys",
+              "name": "Dead Kennedys",
+              "status": "added"
+            },
+            {
+              "id": "artist:fabio",
+              "name": "Fabio",
+              "status": "added"
+            },
+            {
+              "id": "artist:gamma-ray",
+              "name": "Gamma Ray",
+              "status": "added"
+            },
+            {
+              "id": "artist:helloween",
+              "name": "Helloween",
+              "status": "added"
+            },
+            {
+              "id": "artist:high-contrast",
+              "name": "High Contrast",
+              "status": "added"
+            },
+            {
+              "id": "artist:howlin-wolf",
+              "name": "Howlin’ Wolf",
+              "status": "added"
+            },
+            {
+              "id": "artist:janet-jackson",
+              "name": "Janet Jackson",
+              "status": "added"
+            },
+            {
+              "id": "artist:jelly-roll-morton",
+              "name": "Jelly Roll Morton",
+              "status": "updated"
+            },
+            {
+              "id": "artist:jessi-colter",
+              "name": "Jessi Colter",
+              "status": "added"
+            },
+            {
+              "id": "artist:john-digweed",
+              "name": "John Digweed",
+              "status": "updated"
+            },
+            {
+              "id": "artist:juice-wrld",
+              "name": "Juice WRLD",
+              "status": "added"
+            },
+            {
+              "id": "artist:king-oliver",
+              "name": "Joe “King” Oliver",
+              "status": "added"
+            },
+            {
+              "id": "artist:leftfield",
+              "name": "Leftfield",
+              "status": "added"
+            },
+            {
+              "id": "artist:lil-peep",
+              "name": "Lil Peep",
+              "status": "added"
+            },
+            {
+              "id": "artist:little-walter",
+              "name": "Little Walter",
+              "status": "added"
+            },
+            {
+              "id": "artist:louis-armstrong",
+              "name": "Louis Armstrong",
+              "status": "updated"
+            },
+            {
+              "id": "artist:lynyrd-skynyrd",
+              "name": "Lynyrd Skynyrd",
+              "status": "added"
+            },
+            {
+              "id": "artist:machito",
+              "name": "Machito",
+              "status": "updated"
+            },
+            {
+              "id": "artist:madonna",
+              "name": "Madonna",
+              "status": "updated"
+            },
+            {
+              "id": "artist:marshall-tucker-band",
+              "name": "The Marshall Tucker Band",
+              "status": "added"
+            },
+            {
+              "id": "artist:michael-jackson",
+              "name": "Michael Jackson",
+              "status": "updated"
+            },
+            {
+              "id": "artist:mixmaster-morris",
+              "name": "Mixmaster Morris",
+              "status": "added"
+            },
+            {
+              "id": "artist:muddy-waters",
+              "name": "Muddy Waters",
+              "status": "updated"
+            },
+            {
+              "id": "artist:paul-hindemith",
+              "name": "Paul Hindemith",
+              "status": "added"
+            },
+            {
+              "id": "artist:perez-prado",
+              "name": "Pérez Prado",
+              "status": "added"
+            },
+            {
+              "id": "artist:sasha",
+              "name": "Sasha",
+              "status": "updated"
+            },
+            {
+              "id": "artist:sergei-prokofiev",
+              "name": "Sergei Prokofiev",
+              "status": "added"
+            },
+            {
+              "id": "artist:stravinsky",
+              "name": "Igor Stravinsky",
+              "status": "updated"
+            },
+            {
+              "id": "artist:the-geezer",
+              "name": "The Geezer",
+              "status": "added"
+            },
+            {
+              "id": "artist:the-klf",
+              "name": "The KLF",
+              "status": "added"
+            },
+            {
+              "id": "artist:the-orb",
+              "name": "The Orb",
+              "status": "updated"
+            },
+            {
+              "id": "artist:tito-puente",
+              "name": "Tito Puente",
+              "status": "updated"
+            },
+            {
+              "id": "artist:waylon-jennings",
+              "name": "Waylon Jennings",
+              "status": "added"
+            },
+            {
+              "id": "artist:willie-nelson",
+              "name": "Willie Nelson",
+              "status": "added"
+            },
+            {
+              "id": "artist:xxxtentacion",
+              "name": "XXXTentacion",
+              "status": "added"
+            },
+            {
+              "id": "genre:acid-techno",
+              "name": "Acid techno",
+              "status": "added"
+            },
+            {
+              "id": "genre:afro-house",
+              "name": "Afro house",
+              "status": "added"
+            },
+            {
+              "id": "genre:ambient",
+              "name": "Ambient",
+              "status": "updated"
+            },
+            {
+              "id": "genre:ambient-house",
+              "name": "Ambient house",
+              "status": "added"
+            },
+            {
+              "id": "genre:blues",
+              "name": "Blues",
+              "status": "updated"
+            },
+            {
+              "id": "genre:chicago-blues",
+              "name": "Chicago blues",
+              "status": "added"
+            },
+            {
+              "id": "genre:country",
+              "name": "Country",
+              "status": "updated"
+            },
+            {
+              "id": "genre:dance-pop",
+              "name": "Dance-pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:drum-and-bass",
+              "name": "Drum and bass",
+              "status": "updated"
+            },
+            {
+              "id": "genre:emo-rap",
+              "name": "Emo rap",
+              "status": "added"
+            },
+            {
+              "id": "genre:hardcore-punk",
+              "name": "Hardcore punk",
+              "status": "added"
+            },
+            {
+              "id": "genre:heavy-metal",
+              "name": "Heavy metal",
+              "status": "updated"
+            },
+            {
+              "id": "genre:hip-hop",
+              "name": "Hip-hop",
+              "status": "updated"
+            },
+            {
+              "id": "genre:house",
+              "name": "House",
+              "status": "updated"
+            },
+            {
+              "id": "genre:jazz",
+              "name": "Jazz",
+              "status": "updated"
+            },
+            {
+              "id": "genre:liquid-drum-and-bass",
+              "name": "Liquid drum and bass",
+              "status": "added"
+            },
+            {
+              "id": "genre:mambo",
+              "name": "Mambo",
+              "status": "added"
+            },
+            {
+              "id": "genre:modern-classical",
+              "name": "Modern classical",
+              "status": "updated"
+            },
+            {
+              "id": "genre:neoclassicism",
+              "name": "Neoclassicism",
+              "status": "added"
+            },
+            {
+              "id": "genre:new-orleans-jazz",
+              "name": "New Orleans jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:outlaw-country",
+              "name": "Outlaw country",
+              "status": "added"
+            },
+            {
+              "id": "genre:pop",
+              "name": "Pop",
+              "status": "updated"
+            },
+            {
+              "id": "genre:power-metal",
+              "name": "Power metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:progressive-house",
+              "name": "Progressive house",
+              "status": "added"
+            },
+            {
+              "id": "genre:punk-rock",
+              "name": "Punk rock",
+              "status": "updated"
+            },
+            {
+              "id": "genre:reggae",
+              "name": "Reggae",
+              "status": "updated"
+            },
+            {
+              "id": "genre:rock",
+              "name": "Rock",
+              "status": "updated"
+            },
+            {
+              "id": "genre:roots-reggae",
+              "name": "Roots reggae",
+              "status": "added"
+            },
+            {
+              "id": "genre:son-cubano",
+              "name": "Son cubano",
+              "status": "updated"
+            },
+            {
+              "id": "genre:southern-rock",
+              "name": "Southern rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:techno",
+              "name": "Techno",
+              "status": "updated"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/GRAPH.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/audits/graph-edge-coverage.csv"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__allman-brothers-band-southern-rock.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__bad-brains-hardcore-punk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__black-coffee-afro-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__black-flag-hardcore-punk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__black-motion-afro-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__blind-guardian-power-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__bob-marley-roots-reggae.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__burning-spear-roots-reggae.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__calibre-liquid-drum-and-bass.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__chris-liberator-acid-techno.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__culoe-de-song-afro-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__culture-roots-reggae.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__dave-the-drummer-acid-techno.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__dead-kennedys-hardcore-punk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__fabio-liquid-drum-and-bass.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__gamma-ray-power-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__helloween-power-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__high-contrast-liquid-drum-and-bass.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__howlin-wolf-chicago-blues.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__janet-jackson-dance-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__jelly-roll-morton-new-orleans-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__jessi-colter-outlaw-country.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__john-digweed-progressive-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__juice-wrld-emo-rap.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__king-oliver-new-orleans-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__leftfield-progressive-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__lil-peep-emo-rap.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__little-walter-chicago-blues.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__louis-armstrong-new-orleans-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__lynyrd-skynyrd-southern-rock.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__machito-mambo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__madonna-dance-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__marshall-tucker-band-southern-rock.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__michael-jackson-dance-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__mixmaster-morris-ambient-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__muddy-waters-chicago-blues.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__paul-hindemith-neoclassicism.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__perez-prado-mambo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__sasha-progressive-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__sergei-prokofiev-neoclassicism.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__stravinsky-neoclassicism.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__the-geezer-acid-techno.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__the-klf-ambient-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__the-orb-ambient-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__tito-puente-mambo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__waylon-jennings-outlaw-country.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__willie-nelson-outlaw-country.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__xxxtentacion-emo-rap.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__acid-techno-techno.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__afro-house-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__ambient-house-ambient.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__ambient-house-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__chicago-blues-blues.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__dance-pop-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__emo-rap-hip-hop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__hardcore-punk-punk-rock.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__liquid-drum-and-bass-drum-and-bass.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__neoclassicism-modern-classical.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__new-orleans-jazz-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__outlaw-country-country.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__power-metal-heavy-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__progressive-house-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__roots-reggae-reggae.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__son-cubano-mambo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__southern-rock-rock.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/allman-brothers-band.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/bad-brains.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/black-flag.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/black-motion.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/blind-guardian.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/burning-spear.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/calibre.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/chris-liberator.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/culoe-de-song.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/culture.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/dave-the-drummer.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/dead-kennedys.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/fabio.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/gamma-ray.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/helloween.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/high-contrast.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/howlin-wolf.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/janet-jackson.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/jessi-colter.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/juice-wrld.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/king-oliver.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/leftfield.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/lil-peep.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/little-walter.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/lynyrd-skynyrd.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/marshall-tucker-band.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/mixmaster-morris.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/paul-hindemith.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/perez-prado.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/sergei-prokofiev.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/the-geezer.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/the-klf.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/waylon-jennings.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/willie-nelson.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/xxxtentacion.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/acid-techno.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/afro-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/ambient-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/chicago-blues.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/dance-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/emo-rap.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/hardcore-punk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/liquid-drum-and-bass.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/mambo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/neoclassicism.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/new-orleans-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/outlaw-country.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/power-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/progressive-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/roots-reggae.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/southern-rock.md"
+            },
+            {
+              "status": "M",
+              "path": "src/data/genrePreviews.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/review-status.json"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [
+            "artist:allman-brothers-band",
+            "artist:bad-brains",
+            "artist:black-flag",
+            "artist:black-motion",
+            "artist:blind-guardian",
+            "artist:burning-spear",
+            "artist:calibre",
+            "artist:chris-liberator",
+            "artist:culoe-de-song",
+            "artist:culture",
+            "artist:dave-the-drummer",
+            "artist:dead-kennedys",
+            "artist:fabio",
+            "artist:gamma-ray",
+            "artist:helloween",
+            "artist:high-contrast",
+            "artist:howlin-wolf",
+            "artist:janet-jackson",
+            "artist:jessi-colter",
+            "artist:juice-wrld",
+            "artist:king-oliver",
+            "artist:leftfield",
+            "artist:lil-peep",
+            "artist:little-walter",
+            "artist:lynyrd-skynyrd",
+            "artist:marshall-tucker-band",
+            "artist:mixmaster-morris",
+            "artist:paul-hindemith",
+            "artist:perez-prado",
+            "artist:sergei-prokofiev",
+            "artist:the-geezer",
+            "artist:the-klf",
+            "artist:waylon-jennings",
+            "artist:willie-nelson",
+            "artist:xxxtentacion",
+            "genre:acid-techno",
+            "genre:afro-house",
+            "genre:ambient-house",
+            "genre:chicago-blues",
+            "genre:dance-pop",
+            "genre:emo-rap",
+            "genre:hardcore-punk",
+            "genre:liquid-drum-and-bass",
+            "genre:mambo",
+            "genre:neoclassicism",
+            "genre:new-orleans-jazz",
+            "genre:outlaw-country",
+            "genre:power-metal",
+            "genre:progressive-house",
+            "genre:roots-reggae",
+            "genre:southern-rock"
+          ],
+          "updated": [],
+          "removed": []
+        },
+        "edges": {
+          "added": [
+            "key:allman-brothers-band-southern-rock",
+            "key:bad-brains-hardcore-punk",
+            "key:black-coffee-afro-house",
+            "key:black-flag-hardcore-punk",
+            "key:black-motion-afro-house",
+            "key:blind-guardian-power-metal",
+            "key:bob-marley-roots-reggae",
+            "key:burning-spear-roots-reggae",
+            "key:calibre-liquid-drum-and-bass",
+            "key:chris-liberator-acid-techno",
+            "key:culoe-de-song-afro-house",
+            "key:culture-roots-reggae",
+            "key:dave-the-drummer-acid-techno",
+            "key:dead-kennedys-hardcore-punk",
+            "key:fabio-liquid-drum-and-bass",
+            "key:gamma-ray-power-metal",
+            "key:helloween-power-metal",
+            "key:high-contrast-liquid-drum-and-bass",
+            "key:howlin-wolf-chicago-blues",
+            "key:janet-jackson-dance-pop",
+            "key:jelly-roll-morton-new-orleans-jazz",
+            "key:jessi-colter-outlaw-country",
+            "key:john-digweed-progressive-house",
+            "key:juice-wrld-emo-rap",
+            "key:king-oliver-new-orleans-jazz",
+            "key:leftfield-progressive-house",
+            "key:lil-peep-emo-rap",
+            "key:little-walter-chicago-blues",
+            "key:louis-armstrong-new-orleans-jazz",
+            "key:lynyrd-skynyrd-southern-rock",
+            "key:machito-mambo",
+            "key:madonna-dance-pop",
+            "key:marshall-tucker-band-southern-rock",
+            "key:michael-jackson-dance-pop",
+            "key:mixmaster-morris-ambient-house",
+            "key:muddy-waters-chicago-blues",
+            "key:paul-hindemith-neoclassicism",
+            "key:perez-prado-mambo",
+            "key:sasha-progressive-house",
+            "key:sergei-prokofiev-neoclassicism",
+            "key:stravinsky-neoclassicism",
+            "key:the-geezer-acid-techno",
+            "key:the-klf-ambient-house",
+            "key:the-orb-ambient-house",
+            "key:tito-puente-mambo",
+            "key:waylon-jennings-outlaw-country",
+            "key:willie-nelson-outlaw-country",
+            "key:xxxtentacion-emo-rap",
+            "lineage:acid-techno-techno",
+            "lineage:afro-house-house",
+            "lineage:ambient-house-ambient",
+            "lineage:ambient-house-house",
+            "lineage:chicago-blues-blues",
+            "lineage:dance-pop-pop",
+            "lineage:emo-rap-hip-hop",
+            "lineage:hardcore-punk-punk-rock",
+            "lineage:liquid-drum-and-bass-drum-and-bass",
+            "lineage:neoclassicism-modern-classical",
+            "lineage:new-orleans-jazz-jazz",
+            "lineage:outlaw-country-country",
+            "lineage:power-metal-heavy-metal",
+            "lineage:progressive-house-house",
+            "lineage:roots-reggae-reggae",
+            "lineage:son-cubano-mambo",
+            "lineage:southern-rock-rock"
+          ],
+          "updated": [],
+          "removed": []
+        }
+      }
+    },
+    {
       "commit": "a041f18f6adfbc4d417f9e6a0f76886594b3cf3e",
       "parent": "449afb7d5c38a0cd9602264caa8079a1c2803a64",
       "date": "2026-11-12T22:43:47-05:00",
