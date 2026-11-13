@@ -303,6 +303,20 @@
   "openData": {
     "title": "Open Data",
     "intro": "Explore and query the curated music graph that powers Soundlines.",
+    "contribute": {
+      "title": "Contribute",
+      "description": "Help improve the music graph with corrections, well-sourced additions and relationships.",
+      "actionsLabel": "Ways to contribute",
+      "editTitle": "Correct an entry",
+      "editText": "Open the relevant entry in Soundlines and choose Suggest an edit below its description. Explain what should change and include reliable sources that support the correction.",
+      "findEntry": "Find an entry",
+      "addTitle": "Suggest something missing",
+      "addText": "Propose a missing entry or relationship. Name related entries, explain why the addition belongs, and link sources for each claim. A new genre needs at least three sourced key-artist relationships.",
+      "githubNote": "Suggestions are submitted to the public GitHub issue tracker and require a GitHub account.",
+      "guideTitle": "Editing the graph directly?",
+      "guideText": "Read the graph contribution workflow for the schema, evidence, translations, validation and review process.",
+      "guide": "Read the graph contribution guide"
+    },
     "dataset": {
       "title": "The dataset",
       "description": "A curated, sourced property graph: entities are nodes, and documented musical relationships are directed edges. Stable IDs connect the English source graph to its translated overlays.",

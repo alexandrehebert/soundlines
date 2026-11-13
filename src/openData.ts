@@ -1,6 +1,6 @@
 import { stripLocalePrefix } from './i18n/routing.ts'
 
-export const OPEN_DATA_SECTIONS = ['dataset', 'query', 'changelog'] as const
+export const OPEN_DATA_SECTIONS = ['dataset', 'query', 'changelog', 'contribute'] as const
 export type OpenDataSection = (typeof OPEN_DATA_SECTIONS)[number]
 
 export function openDataPath(section: OpenDataSection) {

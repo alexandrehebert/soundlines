@@ -3,6 +3,7 @@ import DataPage from '../../app/[locale]/data/page.tsx'
 import { generateMetadata as datasetMetadata } from '../../app/[locale]/data/dataset/page.tsx'
 import { generateMetadata as queryMetadata } from '../../app/[locale]/data/query/page.tsx'
 import { generateMetadata as changelogMetadata } from '../../app/[locale]/data/changelog/page.tsx'
+import { generateMetadata as contributeMetadata } from '../../app/[locale]/data/contribute/page.tsx'
 import { APP_URL } from '../projectLinks.ts'
 import { catalogueFor } from './catalogue.ts'
 import { LOCALES, localizePath } from './routing.ts'
@@ -18,10 +19,10 @@ describe('localized Open Data pages', () => {
     await expect(DataPage({ params: Promise.resolve({ locale }) })).rejects.toThrow(`REDIRECT /${locale}/data/dataset`)
   })
 
-  it.each(LOCALES)('gives all three %s subpages independent canonical metadata', async (locale) => {
+  it.each(LOCALES)('gives all four %s subpages independent canonical metadata', async (locale) => {
     const copy = catalogueFor(locale)
     for (const [section, metadata] of [
-      ['dataset', datasetMetadata], ['query', queryMetadata], ['changelog', changelogMetadata],
+      ['dataset', datasetMetadata], ['query', queryMetadata], ['changelog', changelogMetadata], ['contribute', contributeMetadata],
     ] as const) {
       const result = await metadata({ params: Promise.resolve({ locale }) })
       const url = new URL(localizePath(`/data/${section}`, locale), APP_URL).href
@@ -41,5 +42,6 @@ describe('localized Open Data pages', () => {
     const props = { params: Promise.resolve({ locale: 'xx' }) }
     await expect(openDataLocale(props)).rejects.toThrow('NOT_FOUND')
     await expect(generateOpenDataMetadata(props, 'dataset')).rejects.toThrow('NOT_FOUND')
+    await expect(contributeMetadata(props)).rejects.toThrow('NOT_FOUND')
   })
 })

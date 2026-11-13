@@ -303,6 +303,20 @@
   "openData": {
     "title": "Offene Daten",
     "intro": "Entdecke und durchsuche den dokumentierten Musikgraphen hinter Soundlines.",
+    "contribute": {
+      "title": "Mitwirken",
+      "description": "Hilf, den Musikgraphen mit Korrekturen und gut belegten Ergänzungen und Beziehungen zu verbessern.",
+      "actionsLabel": "Möglichkeiten zur Mitarbeit",
+      "editTitle": "Eintrag korrigieren",
+      "editText": "Öffne den passenden Eintrag in Soundlines und wähle unter der Beschreibung „Änderung vorschlagen“. Erkläre die gewünschte Änderung und nenne verlässliche Quellen, die sie belegen.",
+      "findEntry": "Eintrag finden",
+      "addTitle": "Fehlendes vorschlagen",
+      "addText": "Schlage einen fehlenden Eintrag oder eine Beziehung vor. Nenne verwandte Einträge, erkläre, warum die Ergänzung in den Atlas gehört, und verlinke Quellen für jede Aussage. Ein neues Genre benötigt mindestens drei belegte Schlüssel-Künstler-Beziehungen.",
+      "githubNote": "Vorschläge werden im öffentlichen GitHub-Issue-Tracker eingereicht und erfordern ein GitHub-Konto.",
+      "guideTitle": "Den Graphen direkt bearbeiten?",
+      "guideText": "Der Graph-Beitragsleitfaden erklärt Schema, Quellen, Übersetzungen, Validierung und Prüfung.",
+      "guide": "Graph-Beitragsleitfaden lesen"
+    },
     "dataset": {
       "title": "Der Datensatz",
       "description": "Ein kuratierter, belegter Eigenschaftsgraph: Entitäten sind Knoten, dokumentierte musikalische Beziehungen gerichtete Kanten. Stabile IDs verbinden den englischen Ursprungsgraphen mit seinen Übersetzungen.",

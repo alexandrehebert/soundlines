@@ -13,10 +13,17 @@ import { OpenDataDataset } from './OpenDataDataset.tsx'
 import { OpenDataNavigation } from './OpenDataNavigation.tsx'
 import { OpenDataChangelog } from './OpenDataChangelog.tsx'
 import { DiscoveryFooter, DiscoveryHeader } from './DiscoveryChrome.tsx'
+import { ContributionPage } from './ContributionPage.tsx'
+import { OpenDataQuery } from './OpenDataQuery.tsx'
+import { createTranslator } from 'next-intl'
 import type { ReactNode } from 'react'
 
 const route = vi.hoisted(() => ({ pathname: '/en/data/dataset' }))
 vi.mock('next/navigation', () => ({ usePathname: () => route.pathname }))
+vi.mock('next-intl/server', () => ({
+  getTranslations: async ({ locale, namespace }: { locale: Locale; namespace: 'openData.contribute' | 'openData.query' | 'feedback' }) =>
+    createTranslator({ locale, messages: catalogueFor(locale), namespace }),
+}))
 
 const graph: MusicGraph = {
   version: 1,
@@ -42,6 +49,19 @@ function render(children: ReactNode, locale: Locale = 'en', isHome = false) {
 }
 
 describe('Open Data UI', () => {
+  it('uses the same title and subtitle styling across all four sections', async () => {
+    const sections = [
+      render(<OpenDataDataset />),
+      render(await OpenDataQuery({ locale: 'en' })),
+      render(<OpenDataChangelog locale="en" />),
+      render(await ContributionPage({ locale: 'en' })),
+    ]
+    for (const html of sections) {
+      expect(html.match(/<h2[^>]*class="([^"]*)"/)?.[1]).toBe('text-2xl font-bold tracking-tight')
+      expect(html.match(/<p class="([^"]*)"/)?.[1]).toBe('mt-3 max-w-3xl leading-relaxed text-slate-400')
+    }
+  })
+
   it.each(LOCALES)('uses source links, not downloads, in the %s dataset dashboard', (locale) => {
     const html = render(<OpenDataDataset />, locale)
     expect(html).toContain(catalogueFor(locale).openData.dataset.github)
@@ -80,6 +100,28 @@ describe('Open Data UI', () => {
     for (const locale of LOCALES) {
       expect(html).toContain(`href="/${locale}/data/query"`)
     }
+  })
+
+  it.each(LOCALES)('renders graph contribution options in %s', async (locale) => {
+    const copy = catalogueFor(locale)
+    const html = render(await ContributionPage({ locale }), locale)
+    expect(html).toContain(copy.openData.contribute.editTitle)
+    expect(html).toContain(copy.openData.contribute.addTitle)
+    expect(html).toContain(copy.feedback.edit)
+    expect(html).toContain(copy.openData.contribute.findEntry)
+    expect(html).toContain(`href="/${locale}"`)
+    expect(html).toContain(`${REPOSITORY_URL}/issues/new?template=graph-contribution.yml`)
+    expect(html).toContain(`${REPOSITORY_URL}/blob/main/docs/DATA.md#graph-contribution-workflow`)
+    expect(html).toContain(copy.openData.contribute.githubNote)
+  })
+
+  it('keeps the contribution section across footer language links', () => {
+    route.pathname = '/fr/data/contribute'
+    const html = render(<DiscoveryFooter current="data" />, 'fr')
+    for (const locale of LOCALES) {
+      expect(html).toContain(`href="/${locale}/data/contribute"`)
+    }
+    expect(html).toContain('href="/fr/data" aria-current="page"')
   })
 
   it('links changelog records to GitHub while retaining internal data loading', () => {

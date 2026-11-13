@@ -93,9 +93,9 @@ export function OpenDataChangelog({ locale }: { locale: Locale }) {
 
   return (
     <section aria-labelledby="open-data-changelog">
-      <header className="mb-6">
-        <h2 id="open-data-changelog" className="text-2xl font-bold tracking-tight text-white">{t('title')}</h2>
-        <p className="mt-2 max-w-3xl leading-relaxed text-slate-400">{t('description')}</p>
+      <header className="mb-8">
+        <h2 id="open-data-changelog" className="text-2xl font-bold tracking-tight">{t('title')}</h2>
+        <p className="mt-3 max-w-3xl leading-relaxed text-slate-400">{t('description')}</p>
         <div className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-sm text-cyan-300">
           <a className="underline underline-offset-4" href={`${REPOSITORY_URL}/blob/main/public/open-data-changelog.json`} target="_blank" rel="noopener noreferrer">
             {t('source')} ↗

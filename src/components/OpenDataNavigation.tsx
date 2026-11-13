@@ -3,11 +3,11 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
-import { Database, History, Terminal } from 'lucide-react'
+import { Database, HeartHandshake, History, Terminal } from 'lucide-react'
 import { localizePath, type Locale } from '../i18n/routing.ts'
 import { OPEN_DATA_SECTIONS, openDataPath } from '../openData.ts'
 
-const icons = { dataset: Database, query: Terminal, changelog: History }
+const icons = { dataset: Database, query: Terminal, changelog: History, contribute: HeartHandshake }
 
 export function OpenDataNavigation({ locale }: { locale: Locale }) {
   const pathname = usePathname()

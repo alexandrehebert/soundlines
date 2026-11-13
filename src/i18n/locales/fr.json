@@ -303,6 +303,20 @@
   "openData": {
     "title": "Données ouvertes",
     "intro": "Explorez et interrogez le graphe musical documenté qui alimente Soundlines.",
+    "contribute": {
+      "title": "Contribuer",
+      "description": "Aidez à améliorer le graphe musical grâce à des corrections, des ajouts et des relations bien sourcés.",
+      "actionsLabel": "Façons de contribuer",
+      "editTitle": "Corriger une fiche",
+      "editText": "Ouvrez la fiche concernée dans Soundlines et choisissez « Suggérer une modification » sous sa description. Expliquez le changement souhaité et ajoutez des sources fiables qui l’étayent.",
+      "findEntry": "Trouver une fiche",
+      "addTitle": "Signaler un manque",
+      "addText": "Proposez une fiche ou une relation manquante. Indiquez les fiches liées, expliquez pourquoi cet ajout est pertinent et fournissez des sources pour chaque affirmation. Un nouveau genre doit comporter au moins trois relations de figures clés sourcées.",
+      "githubNote": "Les propositions sont publiées sur le suivi public des tickets GitHub et nécessitent un compte GitHub.",
+      "guideTitle": "Vous modifiez le graphe directement ?",
+      "guideText": "Consultez le processus de contribution au graphe pour le schéma, les sources, les traductions, la validation et la revue.",
+      "guide": "Lire le guide de contribution au graphe"
+    },
     "dataset": {
       "title": "Le jeu de données",
       "description": "Un graphe de propriétés documenté et éditorialisé : les entités sont des nœuds, et les relations musicales établies sont des liens orientés. Des identifiants stables relient le graphe anglais à ses traductions.",

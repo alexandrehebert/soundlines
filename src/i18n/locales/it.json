@@ -303,6 +303,20 @@
   "openData": {
     "title": "Open Data",
     "intro": "Esplora e interroga il grafo musicale documentato che alimenta Soundlines.",
+    "contribute": {
+      "title": "Contribuisci",
+      "description": "Aiuta a migliorare il grafo musicale con correzioni, aggiunte e relazioni ben documentate.",
+      "actionsLabel": "Modi per contribuire",
+      "editTitle": "Correggere una voce",
+      "editText": "Apri la voce pertinente in Soundlines e scegli “Suggerisci una modifica” sotto la descrizione. Spiega la modifica proposta e aggiungi fonti affidabili a sostegno della correzione.",
+      "findEntry": "Trova una voce",
+      "addTitle": "Proporre ciò che manca",
+      "addText": "Proponi una voce o una relazione mancante. Indica le voci collegate, spiega perché l’aggiunta è pertinente e inserisci fonti per ogni affermazione. Un nuovo genere deve avere almeno tre relazioni documentate con artisti chiave.",
+      "githubNote": "Le proposte sono inviate al registro pubblico delle issue su GitHub e richiedono un account GitHub.",
+      "guideTitle": "Vuoi modificare direttamente il grafo?",
+      "guideText": "Consulta il processo di contributo al grafo per lo schema, le fonti, le traduzioni, la validazione e la revisione.",
+      "guide": "Leggi la guida ai contributi al grafo"
+    },
     "dataset": {
       "title": "Il set di dati",
       "description": "Un grafo di proprietà curato e corredato di fonti: le entità sono nodi, le relazioni musicali documentate sono archi orientati. ID stabili collegano il grafo originale inglese alle traduzioni.",
