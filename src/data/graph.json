@@ -1286,14 +1286,13 @@
       "name": "Machel Montano",
       "kind": "person",
       "period": {
-        "start": 1980,
-        "precision": "decade",
-        "estimated": true,
-        "estimateNote": "A 2023 Caribbean Beat feature describes a 40-year career, implying an approximate early-1980s anchor; a 2009 profile says he rose as a child star but gives no start year."
+        "start": 1982,
+        "precision": "year"
       },
-      "description": "Trinidadian soca performer who rose as a child star and built a long-running career incorporating varied musical influences and cross-genre collaborations.",
+      "description": "Trinidadian soca singer who began performing as a child and brought soca to U.S. television on Star Search in 1986. He has taken the music to wider audiences through performances and cross-genre collaborations.",
       "confidence": "medium",
       "sources": [
+        "https://machelmontano.com/biography/",
         "https://www.caribbean-beat.com/issue-98/machel-montano-man-mission",
         "https://www.caribbean-beat.com/issue-174/soca-gold-backstory"
       ]
@@ -10912,9 +10911,9 @@
         "start": 1973,
         "precision": "circa",
         "estimated": true,
-        "estimateNote": "Caribbean Beat anchors an early evolution of soca in 1973 with Lord Shorty’s “Indrani”; RBMA says soca proper coalesced around 1976. 1973 is an origins marker, not a settled genre boundary."
+        "estimateNote": "Lord Shorty’s 1973 recording “Indrani” is an early milestone. Accounts that date the recognizable style to around 1976 refer to its later consolidation."
       },
-      "description": "A Caribbean Carnival style originating in Trinidad and Tobago that reworks calypso. Early experiments included Lord Shorty’s “Indrani” (1973), which brought calypso together with dholak and dhantal played by East Indian musicians. Soca developed through multiple contributors; RBMA describes the style as coalescing around 1976.",
+      "description": "A Carnival dance-music style from Trinidad and Tobago that grew out of calypso. In “Indrani” (1973), Lord Shorty experimented with Indo-Trinidadian percussion, including dholak and dhantal. Other performers helped develop the sound that took hold at Carnival later in the decade.",
       "confidence": "medium",
       "sources": [
         "https://daily.redbullmusicacademy.com/2016/06/ras-shorty-i-the-soul-of-calypso/",
@@ -23310,16 +23309,17 @@
       "name": "Morna",
       "family": "african",
       "period": {
-        "start": 1700,
-        "precision": "century",
+        "start": 1848,
+        "precision": "circa",
         "estimated": true,
-        "estimateNote": "A contextual anchor, not a settled origin: some accounts trace early forms to lundu in eighteenth-century Cabo Verde, while UNESCO describes the living practice without assigning a start date."
+        "estimateNote": "An 1848 text mentions mornas, possibly as dances or gatherings. The date anchors the written record. The origins and the timing of the shift toward the slower song style remain uncertain."
       },
-      "description": "Traditional Cabo Verdean music-and-dance practice combining voice, instrumental music, poetry and dance. It may be sung or performed instrumentally, with guitar, violin, ten-string guitar and cavaquinho among its instruments, and is linked to community life in Cabo Verde.",
+      "description": "A Cabo Verdean tradition of song, instrumental music, poetry and dance. In its familiar slower form, lyrics often express sodade, a feeling of longing, over accompaniment such as guitar, cavaquinho or violin.",
       "confidence": "medium",
       "sources": [
         "https://ich.unesco.org/en/RL/morna-musical-practice-of-cabo-verde-01469",
-        "https://en.wikipedia.org/wiki/Morna_(music)"
+        "https://eng.caboverdeamusica.online/morna/",
+        "https://eng.caboverdeamusica.online/chronology-19th-century/"
       ]
     },
     {

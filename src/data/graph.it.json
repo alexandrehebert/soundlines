@@ -4277,8 +4277,8 @@
     },
     "genre:morna": {
       "name": "Morna",
-      "description": "Pratica musicale e coreutica tradizionale di Cabo Verde, la morna unisce voce, musica strumentale, poesia e danza. Può essere cantata in strofe liriche o eseguita solo con strumenti, tra cui chitarra, violino, chitarra a dieci corde e cavaquinho, ed è legata alla vita comunitaria capoverdiana.",
-      "estimateNote": "Riferimento contestuale, non un’origine accertata: alcune ricostruzioni collegano le prime forme al lundu nel Cabo Verde del XVIII secolo, mentre l’UNESCO descrive la pratica viva senza indicarne una data d’inizio."
+      "description": "Tradizione capoverdiana che unisce canto, musica strumentale, poesia e danza. Nella forma più lenta oggi familiare, i testi esprimono spesso la sodade, un sentimento di nostalgia, con l’accompagnamento di strumenti come chitarra, cavaquinho o violino.",
+      "estimateNote": "Un testo del 1848 menziona le mornas, forse come danze o ritrovi. La data è un riferimento nella documentazione scritta. Le origini e il momento del passaggio alla forma cantata più lenta restano incerti."
     },
     "genre:taarab": {
       "description": "Tradizione musicale della costa swahili associata a Zanzibar e all’Africa orientale, plasmata dagli scambi tra culture africane, arabe e dell’Oceano Indiano. Orchestre e cantanti, tra cui Siti binti Saad, portarono le sue canzoni nelle registrazioni, nei club e nelle celebrazioni comunitarie.",
@@ -4959,16 +4959,15 @@
       "description": "Il primo Sónar a Barcellona in 1994 si unì alla musica elettronica e sperimentale con le arti multimediali. Uno studio di casi accademici documenta questa combinazione come centrale del formato del festival; il successivo congresso Sónar+D non dovrebbe essere sostenuto alla prima edizione."
     },
     "genre:soca": {
-      "description": "Stile carnevalesco caraibico nato a Trinidad e Tobago che rielabora il calypso. Tra i primi esperimenti c’è «Indrani» (1973) di Lord Shorty, che unisce il calypso a dholak e dhantal suonati da musicisti dell’India orientale. Il soca si è sviluppato grazie a più contributori; secondo RBMA, lo stile si è consolidato intorno al 1976.",
-      "estimateNote": "Caribbean Beat colloca nel 1973 un primo sviluppo del soca con «Indrani» di Lord Shorty; RBMA afferma che il soca vero e proprio si consolidò intorno al 1976. Il 1973 è quindi un riferimento alle origini, non una data d’inizio definita del genere."
+      "description": "Musica da ballo del carnevale di Trinidad e Tobago, nata dal calypso. In “Indrani” (1973), Lord Shorty sperimentò con percussioni indo-trinidadiane, tra cui dholak e dhantal. Altri interpreti contribuirono a sviluppare il suono che si affermò al carnevale più avanti nel decennio.",
+      "estimateNote": "La registrazione di “Indrani” di Lord Shorty nel 1973 è una prima tappa. Le ricostruzioni che datano lo stile riconoscibile intorno al 1976 si riferiscono al suo successivo consolidamento."
     },
     "artist:ras-shorty-i": {
       "description": "Il calypsonian trinidadiano Garfield Blackman, inizialmente noto come Lord Shorty, fu un pioniere dell’emergere del soca. In seguito adottò il nome Ras Shorty I e sviluppò la musica religiosa Jamoo; alle origini del soca contribuirono più artisti.",
       "estimateNote": "Secondo RBMA, le accuse formulate dopo la sua esibizione alla finale del Calypso Monarch del 1973 conclusero il suo primo decennio di carriera. L’inizio negli anni 1960 è dedotto, non documentato come debutto ufficiale. L’attività più recente documentata nelle fonti esaminate è l’album Jamoo Victory (1999); questo è un riferimento approssimativo per il periodo, non una data di cessazione accertata."
     },
     "artist:machel-montano": {
-      "description": "Interprete soca trinidadiano, è diventato una star da bambino e ha costruito una lunga carriera con influenze musicali diverse e collaborazioni tra generi.",
-      "estimateNote": "Un articolo di Caribbean Beat del 2023 descrive una carriera di 40 anni, suggerendo un riferimento approssimativo ai primi anni 1980; un profilo del 2009 racconta la sua ascesa da bambino prodigio senza indicare un anno d’inizio."
+      "description": "Cantante soca di Trinidad che iniziò a esibirsi da bambino e portò la soca sulla televisione statunitense a “Star Search” nel 1986. Le esibizioni e le collaborazioni tra generi hanno fatto conoscere questa musica a un pubblico più ampio."
     },
     "genre:outlaw-country": {
       "description": "Movimento country degli anni 1970 legato ad artisti che cercavano maggiore controllo su cosa incidere e come farlo. La compilation Wanted! The Outlaws del 1976 fece conoscere il movimento al pubblico nazionale.",

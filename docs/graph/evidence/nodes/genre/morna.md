@@ -2,15 +2,19 @@
 
 Graph ID `genre:morna`
 
-**Review status** · Reviewed — description, broad placement and independent-tradition status checked
+**Review status** · Reviewed
 **Reviewed** · 2026-11-12
 
 ## Sources checked
-- [UNESCO, Morna, musical practice of Cabo Verde](https://ich.unesco.org/en/RL/morna-musical-practice-of-cabo-verde-01469) — identifies Morna as a traditional Cabo Verdean musical and choreographic practice combining voice, music, poetry and dance, with chordophone accompaniment.
-- [Wikipedia, Morna (music)](https://en.wikipedia.org/wiki/Morna_(music)) — MediaWiki API entry describes the tradition and records an eighteenth-century lundu account as one proposed historical context, not a settled origin.
+
+- [UNESCO, Morna musical practice of Cabo Verde](https://ich.unesco.org/en/RL/morna-musical-practice-of-cabo-verde-01469) — Describes the living tradition and lists guitar, cavaquinho and violin among its instruments.
+- [Cabo Verde & Its Music, nineteenth-century chronology](https://eng.caboverdeamusica.online/chronology-19th-century/) — Reproduces José Maria de Sousa Monteiro’s 1848 reference to mornas in the magazine *A Época*.
+- [Cabo Verde & Its Music, Morna](https://eng.caboverdeamusica.online/morna/) — Discusses the slower song style and sodade, and explains that nineteenth-century references could denote dancing or gatherings.
 
 ## Assessment
-UNESCO supports the description and the African family assignment. The period is an estimated contextual anchor from the proposed lundu history, not a claim that the genre began in 1700. No lineage edge is added because the available sources do not establish a definitive parent genre.
+
+The timeline now uses a dated written reference in place of a proposed eighteenth-century lundu precursor. The description draws on the heritage record and the virtual museum’s account of the familiar song style.
 
 ## Remaining uncertainty
-The tradition’s precise origin and start date are not established; the timeline placement is deliberately broad.
+
+The 1848 use of the word gives limited evidence about how the music sounded. The timing of the tradition’s emergence and later musical changes remains uncertain.

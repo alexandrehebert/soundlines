@@ -4277,8 +4277,8 @@
     },
     "genre:morna": {
       "name": "Morna",
-      "description": "Eine traditionelle Musik- und Tanzpraxis aus Cabo Verde, die Gesang, Instrumentalmusik, Poesie und Tanz verbindet. Sie kann in lyrischen Strophen gesungen oder instrumental gespielt werden; zu den Instrumenten zählen Gitarre, Geige, zehnsaitige Gitarre und Cavaquinho. Die Tradition ist im Gemeinschaftsleben Cabo Verdes verankert.",
-      "estimateNote": "Ein kontextueller Anhaltspunkt, kein gesicherter Ursprung: Einige Darstellungen führen frühe Formen auf Lundu im Cabo Verde des 18. Jahrhunderts zurück; UNESCO beschreibt die lebendige Praxis ohne ein Anfangsdatum."
+      "description": "Eine kapverdische Tradition aus Gesang, Instrumentalmusik, Dichtung und Tanz. In der vertrauten langsameren Form drücken die Texte oft Sodade aus, ein Gefühl der Sehnsucht, begleitet etwa von Gitarre, Cavaquinho oder Geige.",
+      "estimateNote": "Ein Text von 1848 erwähnt Mornas, möglicherweise Tänze oder Zusammenkünfte. Das Datum dient als Anhaltspunkt in der schriftlichen Überlieferung. Die Ursprünge und der Zeitpunkt des Übergangs zur langsameren Liedform bleiben ungewiss."
     },
     "genre:taarab": {
       "description": "Musiktradition der Swahili-Küste, verbunden mit Sansibar und Ostafrika und geprägt durch den Austausch zwischen Kulturen Afrikas, der arabischen Welt und des Indischen Ozeans. Orchester und Sänger, darunter Siti binti Saad, brachten ihre Lieder auf Aufnahmen, in Clubs und zu gemeinschaftlichen Feiern.",
@@ -4959,16 +4959,15 @@
       "description": "Die erste Sónar in Barcelona in 1994 verbindet elektronische und experimentelle Musik mit Multimedia-Kunst. Eine akademische Fallstudie dokumentiert diese Kombination als zentral für das Format des Festivals; der spätere Sónar+D-Kongress sollte nicht auf die erste Ausgabe zurückdatiert werden."
     },
     "genre:soca": {
-      "description": "Ein karibischer Karnevalsstil aus Trinidad und Tobago, der Calypso neu interpretiert. Zu den frühen Experimenten gehört Lord Shortys „Indrani“ (1973), das Calypso mit Dholak und Dhantal verbindet, gespielt von ostindischen Musikern. Soca entwickelte sich durch Beiträge mehrerer Musiker; RBMA zufolge kristallisierte sich der Stil um 1976 heraus.",
-      "estimateNote": "Caribbean Beat verortet eine frühe Entwicklung von Soca 1973 bei Lord Shortys „Indrani“; RBMA zufolge kristallisierte sich Soca im engeren Sinn um 1976 heraus. 1973 ist daher ein Ursprungsanker, keine gesicherte Genregrenze."
+      "description": "Eine Tanzmusik des Karnevals von Trinidad und Tobago, die aus Calypso hervorging. In „Indrani“ (1973) experimentierte Lord Shorty mit indotrinidadischen Perkussionsinstrumenten wie Dholak und Dhantal. Weitere Künstlerinnen und Künstler prägten den Klang, der sich später im Jahrzehnt beim Karneval durchsetzte.",
+      "estimateNote": "Lord Shortys Aufnahme von „Indrani“ aus dem Jahr 1973 ist ein früher Meilenstein. Darstellungen, die den erkennbaren Stil auf etwa 1976 datieren, beziehen sich auf seine spätere Festigung."
     },
     "artist:ras-shorty-i": {
       "description": "Der trinidadische Calypso-Sänger Garfield Blackman, zunächst als Lord Shorty bekannt, war ein Wegbereiter der Soca-Entstehung. Später nahm er den Namen Ras Shorty I an und entwickelte die religiös geprägte Jamoo-Musik; an der Entstehung von Soca waren mehrere beteiligt.",
       "estimateNote": "RBMA zufolge beendeten die nach seinem Auftritt im Finale des Calypso Monarch 1973 erhobenen Anklagen das erste Jahrzehnt seiner Karriere. Der Beginn in den 1960er-Jahren ist erschlossen, nicht als offizieller Karrierestart belegt. Seine jüngste in den geprüften Quellen dokumentierte Aktivität ist das Album Jamoo Victory (1999); dieses Jahr ist ein ungefährer Karriereanker, kein bestätigtes Karriereende."
     },
     "artist:machel-montano": {
-      "description": "Der Soca-Künstler aus Trinidad wurde als Kinderstar bekannt und entwickelte eine lange Karriere mit vielfältigen musikalischen Einflüssen und genreübergreifenden Kooperationen.",
-      "estimateNote": "Ein Beitrag von Caribbean Beat aus dem Jahr 2023 beschreibt eine 40-jährige Karriere und legt damit einen ungefähren Anker in den frühen 1980er-Jahren nahe; ein Porträt von 2009 beschreibt seinen Aufstieg als Kinderstar, nennt aber kein Startjahr."
+      "description": "Soca-Sänger aus Trinidad, der schon als Kind auftrat und Soca 1986 in „Star Search“ ins US-Fernsehen brachte. Mit Auftritten und genreübergreifenden Kooperationen erreichte er ein breiteres Publikum."
     },
     "genre:outlaw-country": {
       "name": "Outlaw Country",
