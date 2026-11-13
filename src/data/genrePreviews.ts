@@ -11,6 +11,8 @@ export const PENDING_GENRE_PREVIEWS: ReadonlySet<string> = new Set<string>([
   'genre:dance-pop',
   'genre:emo-rap',
   'genre:hardcore-punk',
+  'genre:hyperpop',
+  'genre:latin-trap',
   'genre:liquid-drum-and-bass',
   'genre:mambo',
   'genre:morna',

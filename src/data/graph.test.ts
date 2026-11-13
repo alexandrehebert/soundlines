@@ -449,7 +449,7 @@ describe('graph.json integrity', () => {
         'heavy-metal', 'thrash-metal', 'death-metal', 'black-metal', 'doom-metal',
         'nu-metal', 'metalcore', 'industrial-metal', 'power-metal',
       ],
-      pop: ['pop', 'synth-pop', 'k-pop', 'j-pop', 'girl-groups', 'dance-pop'],
+      pop: ['pop', 'synth-pop', 'k-pop', 'j-pop', 'girl-groups', 'dance-pop', 'hyperpop'],
       'hip-hop': [
         'hip-hop', 'grime', 'trap-rap', 'drill', 'old-school-rap', 'east-coast-rap',
         'west-coast-rap', 'gangsta-rap', 'boom-bap', 'jazz-rap', 'alternative-rap',
@@ -459,7 +459,7 @@ describe('graph.json integrity', () => {
       reggae: ['ska', 'rocksteady', 'reggae', 'dub', 'dancehall', 'calypso', 'soca', 'roots-reggae'],
       latin: [
         'latin', 'son-cubano', 'salsa', 'bossa-nova', 'cumbia', 'samba',
-        'tango', 'andean-folk', 'bachata', 'merengue', 'reggaeton', 'mambo',
+        'tango', 'andean-folk', 'bachata', 'merengue', 'reggaeton', 'mambo', 'latin-trap',
       ],
       african: [
         'highlife', 'afrobeat', 'afrobeats', 'juju', 'soukous', 'amapiano', 'gqom', 'kwaito',

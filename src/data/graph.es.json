@@ -5151,6 +5151,31 @@
     },
     "artist:high-contrast": {
       "description": "El productor y DJ de drum and bass Lincoln Barrett debutó discográficamente en 2001 con el sello Hospital Records."
+    },
+    "genre:hyperpop": {
+      "description": "Corriente experimental del pop que lleva al extremo la producción digital con sintetizadores distorsionados y voces de tono alterado. Los primeros lanzamientos de PC Music sentaron las bases y 100 gecs contribuyó a dar a conocer el género a finales de la década de 2010.",
+      "estimateNote": "La fecha toma como referencia la irrupción de 100 gecs en 2019. El sonido se había gestado antes, en esa misma década."
+    },
+    "artist:100-gecs": {
+      "description": "Dúo de Laura Les y Dylan Brady cuyo álbum 1000 gecs contribuyó a dar a conocer el hyperpop a un público más amplio en 2019."
+    },
+    "artist:charli-xcx": {
+      "description": "Cantante y compositora inglesa que empezó publicando música en internet y actuando en fiestas en almacenes de Londres. Más adelante trabajó con A. G. Cook, fundador de PC Music."
+    },
+    "artist:a-g-cook": {
+      "description": "Productor nacido en Londres que fundó PC Music en 2013 y se convirtió en colaborador habitual de Charli XCX."
+    },
+    "genre:latin-trap": {
+      "name": "Trap latino",
+      "description": "Rap en español que adapta los ritmos de graves marcados del trap del sur de Estados Unidos. A comienzos de la década de 2010, en Puerto Rico creció una escena a través de SoundCloud y sitios musicales locales antes de llegar a un público más amplio.",
+      "estimateNote": "La cronología toma 2012 como referencia para la incipiente escena puertorriqueña en internet. Grabaciones anteriores ya habían explorado este sonido."
+    },
+    "artist:anuel-aa": {
+      "description": "Rapero puertorriqueño. Entre sus primeras grabaciones y colaboraciones de trap figuran «Esclava Remix» y «La Ocasión»."
+    },
+    "artist:bryant-myers": {
+      "description": "Rapero puertorriqueño cuya canción «Esclava» se difundió por SoundCloud y se hizo viral en Puerto Rico.",
+      "estimateNote": "El lanzamiento de «Esclava» en 2015 sirve de referencia para la primera actividad de Myers en SoundCloud."
     }
   },
   "edges": {

@@ -670,8 +670,10 @@ involved:rite-of-spring-premiere-the-rite-of-spring-stravinsky,involved,high,doc
 involved:siti-binti-saad-recordings-siti-binti-saad,involved,high,docs/graph/evidence/edges/involved__siti-binti-saad-recordings-siti-binti-saad.md,Reviewed — cross-checked against the reviewed event record
 involved:tamla-records-founded-motown,involved,medium,docs/graph/evidence/edges/involved__tamla-records-founded-motown.md,Reviewed — clarified label naming chronology
 involved:woodstock-festival-jimi-hendrix,involved,high,docs/graph/evidence/edges/involved__woodstock-festival-jimi-hendrix.md,Reviewed — cross-checked against the reviewed event record
+key:100-gecs-hyperpop,key_artist_of,high,docs/graph/evidence/edges/key__100-gecs-hyperpop.md,Source checked (2026-11-12)
 key:13th-floor-elevators-garage-rock,key_artist_of,high,docs/graph/evidence/edges/key__13th-floor-elevators-garage-rock.md,Source-checked
 key:3-steps-ahead-gabber,key_artist_of,medium,docs/graph/evidence/edges/key__3-steps-ahead-gabber.md,Reviewed — 3 Steps Ahead in gabber confirmed
+key:a-g-cook-hyperpop,key_artist_of,high,docs/graph/evidence/edges/key__a-g-cook-hyperpop.md,Source checked (2026-11-12)
 key:a-tribe-called-quest-alternative-rap,key_artist_of,medium,docs/graph/evidence/edges/key__a-tribe-called-quest-alternative-rap.md,Source-checked
 key:a-tribe-called-quest-jazz-rap,key_artist_of,high,docs/graph/evidence/edges/key__a-tribe-called-quest-jazz-rap.md,Source-checked
 key:abdelkader-chaou-algerian-chaabi,key_artist_of,high,docs/graph/evidence/edges/key__abdelkader-chaou-algerian-chaabi.md,Source checked (2026-11-05)
@@ -696,6 +698,7 @@ key:andy-c-drum-and-bass,key_artist_of,high,docs/graph/evidence/edges/key__andy-
 key:anibal-troilo-tango,key_artist_of,high,docs/graph/evidence/edges/key__anibal-troilo-tango.md,Tango orchestra and 1937 debut checked
 key:anton-webern-serialism,key_artist_of,high,docs/graph/evidence/edges/key__anton-webern-serialism.md,Source checked (2026-11-05)
 key:antonio-carlos-jobim-bossa-nova,key_artist_of,high,docs/graph/evidence/edges/key__antonio-carlos-jobim-bossa-nova.md,Source-checked
+key:anuel-aa-latin-trap,key_artist_of,high,docs/graph/evidence/edges/key__anuel-aa-latin-trap.md,Source checked (2026-11-12)
 key:aphex-twin-breakcore,key_artist_of,medium,docs/graph/evidence/edges/key__aphex-twin-breakcore.md,Source checked (2026-11-05)
 key:aphex-twin-idm,key_artist_of,high,docs/graph/evidence/edges/key__aphex-twin-idm.md,Source checked (2026-11-05)
 key:aretha-franklin-r-and-b,key_artist_of,high,docs/graph/evidence/edges/key__aretha-franklin-r-and-b.md,Source-checked
@@ -717,6 +720,7 @@ key:ayler-free,key_artist_of,high,docs/graph/evidence/edges/key__ayler-free.md,R
 key:babes-wodumo-gqom,key_artist_of,medium,docs/graph/evidence/edges/key__babes-wodumo-gqom.md,Source checked (2026-11-05)
 key:bach-baroque,key_artist_of,high,docs/graph/evidence/edges/key__bach-baroque.md,Reviewed — Confirmed; upgraded to high
 key:bad-brains-hardcore-punk,key_artist_of,high,docs/graph/evidence/edges/key__bad-brains-hardcore-punk.md,Source checked (2026-11-11)
+key:bad-bunny-latin-trap,key_artist_of,high,docs/graph/evidence/edges/key__bad-bunny-latin-trap.md,Source checked (2026-11-12)
 key:bad-bunny-reggaeton,key_artist_of,high,docs/graph/evidence/edges/key__bad-bunny-reggaeton.md,Source checked (2026-11-05)
 key:baker-cool,key_artist_of,high,docs/graph/evidence/edges/key__baker-cool.md,Reviewed — key role confirmed; raised to high
 key:baltimora-italo-disco,key_artist_of,high,docs/graph/evidence/edges/key__baltimora-italo-disco.md,Source checked (2026-11-05)
@@ -763,6 +767,7 @@ key:brian-eno-ambient,key_artist_of,high,docs/graph/evidence/edges/key__brian-en
 key:bring-me-the-horizon-metalcore,key_artist_of,medium,docs/graph/evidence/edges/key__bring-me-the-horizon-metalcore.md,Source checked (2026-11-05)
 key:brown-hard-bop,key_artist_of,high,docs/graph/evidence/edges/key__brown-hard-bop.md,Reviewed — key status confirmed; raised to high
 key:brubeck-cool,key_artist_of,high,docs/graph/evidence/edges/key__brubeck-cool.md,Reviewed — key role confirmed; raised to high
+key:bryant-myers-latin-trap,key_artist_of,high,docs/graph/evidence/edges/key__bryant-myers-latin-trap.md,Source checked (2026-11-12)
 key:bts-k-pop,key_artist_of,high,docs/graph/evidence/edges/key__bts-k-pop.md,Source checked (2026-11-05)
 key:burial-dubstep,key_artist_of,high,docs/graph/evidence/edges/key__burial-dubstep.md,Source checked (2026-11-05)
 key:burna-boy-afrobeats,key_artist_of,medium,docs/graph/evidence/edges/key__burna-boy-afrobeats.md,Source checked (2026-11-05)
@@ -788,6 +793,7 @@ key:cassius-french-touch,key_artist_of,high,docs/graph/evidence/edges/key__cassi
 key:celia-cruz-latin,key_artist_of,medium,docs/graph/evidence/edges/key__celia-cruz-latin.md,Source checked (2026-11-05)
 key:celia-cruz-salsa,key_artist_of,high,docs/graph/evidence/edges/key__celia-cruz-salsa.md,Source checked (2026-11-05)
 key:cesaria-evora-morna,key_artist_of,medium,docs/graph/evidence/edges/key__cesaria-evora-morna.md,Source checked (2026-11-12)
+key:charli-xcx-hyperpop,key_artist_of,high,docs/graph/evidence/edges/key__charli-xcx-hyperpop.md,Source checked (2026-11-12)
 key:charlotte-de-witte-techno,key_artist_of,high,docs/graph/evidence/edges/key__charlotte-de-witte-techno.md,Source checked (2026-11-05)
 key:cheb-hasni-rai,key_artist_of,high,docs/graph/evidence/edges/key__cheb-hasni-rai.md,Source checked (2026-11-05)
 key:cheb-mami-rai,key_artist_of,high,docs/graph/evidence/edges/key__cheb-mami-rai.md,Source checked (2026-11-05)
@@ -1488,6 +1494,7 @@ lineage:hindustani-classical-jazz,influences,medium,docs/graph/evidence/edges/li
 lineage:honky-tonk-country,subgenre_of,high,docs/graph/evidence/edges/lineage__honky-tonk-country.md,Reviewed — raised to high
 lineage:horrorcore-hip-hop,subgenre_of,medium,docs/graph/evidence/edges/lineage__horrorcore-hip-hop.md,Source checked (2026-11-05)
 lineage:house-disco,derived_from,medium,docs/graph/evidence/edges/lineage__house-disco.md,Source checked (2026-11-05)
+lineage:hyperpop-pop,subgenre_of,medium,docs/graph/evidence/edges/lineage__hyperpop-pop.md,Source checked (2026-11-12)
 lineage:hyphy-west-coast-rap,subgenre_of,high,docs/graph/evidence/edges/lineage__hyphy-west-coast-rap.md,Source checked (2026-11-05)
 lineage:impressionism-modern-classical,subgenre_of,medium,docs/graph/evidence/edges/lineage__impressionism-modern-classical.md,Source checked (2026-11-05)
 lineage:industrial-metal-heavy-metal,subgenre_of,medium,docs/graph/evidence/edges/lineage__industrial-metal-heavy-metal.md,Source checked (2026-11-05)
@@ -1501,6 +1508,7 @@ lineage:k-pop-pop,subgenre_of,medium,docs/graph/evidence/edges/lineage__k-pop-po
 lineage:krautrock-rock,subgenre_of,medium,docs/graph/evidence/edges/lineage__krautrock-rock.md,Reviewed — confirmed; stale note replaced
 lineage:latin-jazz-jazz,fusion_of,high,docs/graph/evidence/edges/lineage__latin-jazz-jazz.md,Reviewed — fusion relation confirmed; raised to high
 lineage:latin-jazz-latin,fusion_of,high,docs/graph/evidence/edges/lineage__latin-jazz-latin.md,Reviewed — fusion relation confirmed; raised to high
+lineage:latin-trap-trap-rap,derived_from,high,docs/graph/evidence/edges/lineage__latin-trap-trap-rap.md,Source checked (2026-11-12)
 lineage:liquid-drum-and-bass-drum-and-bass,subgenre_of,high,docs/graph/evidence/edges/lineage__liquid-drum-and-bass-drum-and-bass.md,Source checked (2026-11-11)
 lineage:math-rock-indie-rock,derived_from,low,docs/graph/evidence/edges/lineage__math-rock-indie-rock.md,Source checked (2026-11-05)
 lineage:mbalax-congolese-rumba,influences,medium,docs/graph/evidence/edges/lineage__mbalax-congolese-rumba.md,Reviewed — direction and relation scope checked; caveat recorded (2026-11-05)

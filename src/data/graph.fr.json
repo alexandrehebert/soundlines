@@ -5200,6 +5200,31 @@
     },
     "artist:high-contrast": {
       "description": "Producteur et DJ de drum and bass, Lincoln Barrett a sorti ses premiers enregistrements sur Hospital Records en 2001."
+    },
+    "genre:hyperpop": {
+      "description": "Courant expérimental de la pop qui accentue les contrastes du son numérique avec des synthétiseurs distordus et des voix dont la hauteur est modifiée. Les premières sorties de PC Music ont préparé le terrain, et le duo 100 gecs a contribué à faire connaître le courant à la fin des années 2010.",
+      "estimateNote": "La date correspond à la percée de 100 gecs en 2019. Le son s’était formé plus tôt dans la décennie."
+    },
+    "artist:100-gecs": {
+      "description": "Duo formé par Laura Les et Dylan Brady, dont l’album 1000 gecs a contribué à faire connaître l’hyperpop à un public plus large en 2019."
+    },
+    "artist:charli-xcx": {
+      "description": "Chanteuse et autrice-compositrice anglaise qui a commencé par publier sa musique en ligne et se produire dans des entrepôts londoniens. Elle a ensuite travaillé avec A. G. Cook, fondateur de PC Music."
+    },
+    "artist:a-g-cook": {
+      "description": "Producteur né à Londres, il a fondé PC Music en 2013 et est devenu un collaborateur de longue date de Charli XCX."
+    },
+    "genre:latin-trap": {
+      "name": "Trap latino",
+      "description": "Rap en espagnol qui adapte les rythmes aux basses lourdes de la trap du sud des États-Unis. Au début des années 2010, une scène portoricaine s’est développée sur SoundCloud et les sites musicaux locaux avant de toucher un public plus large.",
+      "estimateNote": "La chronologie retient 2012 comme repère pour l’émergence de la scène portoricaine en ligne. Des enregistrements antérieurs exploraient déjà cette sonorité."
+    },
+    "artist:anuel-aa": {
+      "description": "Rappeur portoricain dont les premiers enregistrements et collaborations dans la trap comprennent « Esclava Remix » et « La Ocasión »."
+    },
+    "artist:bryant-myers": {
+      "description": "Rappeur portoricain dont le morceau « Esclava » s’est diffusé sur SoundCloud et est devenu viral à Porto Rico.",
+      "estimateNote": "La sortie d’« Esclava » en 2015 sert de repère pour les débuts de Myers sur SoundCloud."
     }
   },
   "edges": {

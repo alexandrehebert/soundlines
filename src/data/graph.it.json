@@ -5135,6 +5135,30 @@
     },
     "artist:high-contrast": {
       "description": "Il DJ e produttore di drum and bass Lincoln Barrett esordì nel 2001 con un disco per Hospital Records."
+    },
+    "genre:hyperpop": {
+      "description": "Filone sperimentale del pop che accentua i contrasti della produzione digitale con sintetizzatori distorti e voci dall’intonazione alterata. Le prime uscite di PC Music hanno preparato il terreno, mentre i 100 gecs hanno contribuito a far conoscere il genere alla fine degli anni 2010.",
+      "estimateNote": "La data prende come riferimento l’affermazione dei 100 gecs nel 2019. Il suono aveva iniziato a delinearsi prima, nel corso del decennio."
+    },
+    "artist:100-gecs": {
+      "description": "Duo formato da Laura Les e Dylan Brady. Il loro album 1000 gecs del 2019 ha contribuito a far conoscere l’hyperpop a un pubblico più ampio."
+    },
+    "artist:charli-xcx": {
+      "description": "Cantante e autrice inglese che ha iniziato pubblicando musica online ed esibendosi alle feste nei magazzini di Londra. In seguito ha lavorato con A. G. Cook, fondatore di PC Music."
+    },
+    "artist:a-g-cook": {
+      "description": "Produttore nato a Londra, ha fondato PC Music nel 2013 e ha avviato una lunga collaborazione con Charli XCX."
+    },
+    "genre:latin-trap": {
+      "description": "Rap in lingua spagnola che adatta i ritmi ricchi di bassi della trap del Sud degli Stati Uniti. All’inizio degli anni 2010 a Porto Rico si è sviluppata una scena attraverso SoundCloud e i siti musicali locali, prima di raggiungere un pubblico più vasto.",
+      "estimateNote": "La cronologia prende il 2012 come riferimento per la nascente scena portoricana online. Registrazioni precedenti avevano già sperimentato con questo suono."
+    },
+    "artist:anuel-aa": {
+      "description": "Rapper portoricano. Tra le sue prime registrazioni e collaborazioni trap figurano «Esclava Remix» e «La Ocasión»."
+    },
+    "artist:bryant-myers": {
+      "description": "Rapper portoricano il cui brano «Esclava» si è diffuso su SoundCloud ed è diventato virale a Porto Rico.",
+      "estimateNote": "La pubblicazione di «Esclava» nel 2015 serve da riferimento per la prima attività di Myers su SoundCloud."
     }
   },
   "edges": {

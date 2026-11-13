@@ -31,7 +31,7 @@ test suite ([graph.test.ts](../src/data/graph.test.ts) and the other `src/data` 
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 1412 nodes (195 genres, 578 artists, 72 instruments, 41 labels, 118 places, 210 tracks, 56 scenes, 103 events, 39 festivals) and 2140 edges (as of 2026-11-12).
+Current size: 1419 nodes (197 genres, 583 artists, 72 instruments, 41 labels, 118 places, 210 tracks, 56 scenes, 103 events, 39 festivals) and 2148 edges (as of 2026-11-12).
 
 `graph.json` remains the canonical source for entity ids, relationships, dates,
 sources, and English text. Display names and prose for each other app locale are
@@ -121,18 +121,18 @@ Every genre **must** have a `family`. Lanes are rendered in this order:
 | `rock`              | Rock                   | 12     | rock and roll, blues-rock, hard-rock, krautrock, surf-rock |
 | `alternative-punk`  | Alternative & Punk     | 17     | punk, post-punk, indie-rock, grunge, shoegaze, new-wave |
 | `metal`             | Metal                  | 9      | heavy, thrash, death, black, doom, nu, industrial metal, metalcore |
-| `pop`               | Pop                    | 6      | pop, girl groups, synth-pop, K-pop, J-pop |
+| `pop`               | Pop                    | 7      | pop, girl groups, synth-pop, K-pop, J-pop |
 | `hip-hop`           | Hip-hop                | 19     | regional rap, boom bap, jazz rap, crunk, G-funk, hyphy, trap, drill, grime |
 | `reggae`            | Reggae & Ska           | 8      | calypso, soca, ska, rocksteady, reggae, dub, dancehall |
-| `latin`             | Latin                  | 12     | son cubano, salsa, bossa nova, cumbia, samba, tango, reggaeton |
+| `latin`             | Latin                  | 13     | son cubano, salsa, bossa nova, cumbia, samba, tango, reggaeton |
 | `african`           | African                | 17     | highlife, Afrobeat, Congolese rumba, raï, Gnawa, Algerian chaâbi, mbalax, makossa, taarab, Morna |
 | `electronica`       | Electronica & Ambient  | 12     | electro, trip-hop, ambient, IDM, synthwave, downtempo, EDM |
 | `house`             | Disco & House          | 14     | disco, Italo disco, hi-NRG, house styles, French Touch, footwork |
 | `techno`            | Techno & Trance        | 10      | techno styles, trance, psytrance, gabber, hardstyle |
 | `breakbeat-bass`    | Breakbeat & Bass       | 9      | breakbeat hardcore, jungle, drum and bass, garage, dubstep, breakcore |
 
-These are navigational families, not strict genre ancestry. The 195 genres
-currently have 6–19 members per family: enough granularity to avoid an oversized
+These are navigational families, not strict genre ancestry. The 197 genres
+currently have 7–19 members per family: enough granularity to avoid an oversized
 Electronic lane without creating one-genre lanes. Keep related styles together
 as the catalogue grows, and revisit the grouping if it becomes unbalanced rather
 than putting unrelated traditions into a catch-all.
@@ -276,10 +276,10 @@ genre:g-funk genre:gabber genre:gagaku genre:gamelan genre:gangsta-rap genre:gar
 genre:garage-rock genre:girl-groups genre:glam-rock genre:gnawa genre:gothic-rock genre:gqom genre:grime
 genre:grunge genre:hard-bop genre:hard-rock genre:hardcore-punk genre:hardstyle genre:heavy-metal genre:hi-nrg
 genre:highlife genre:hindustani-classical genre:hip-hop genre:honky-tonk genre:horrorcore genre:house
-genre:hyphy genre:idm genre:impressionism genre:indie-rock genre:industrial-metal genre:italo-disco
+genre:hyperpop genre:hyphy genre:idm genre:impressionism genre:indie-rock genre:industrial-metal genre:italo-disco
 genre:j-pop genre:jazz genre:jazz-fusion genre:jazz-rap genre:juju genre:jungle
 genre:k-pop genre:khoomei genre:krautrock genre:kwaito genre:latin genre:latin-jazz
-genre:liquid-drum-and-bass genre:makossa genre:mambo genre:math-rock genre:mbalax genre:medieval genre:merengue genre:metalcore genre:minimal-techno genre:minimalism
+genre:latin-trap genre:liquid-drum-and-bass genre:makossa genre:mambo genre:math-rock genre:mbalax genre:medieval genre:merengue genre:metalcore genre:minimal-techno genre:minimalism
 genre:modal-jazz genre:modern-classical genre:morna genre:neo-soul genre:neoclassicism genre:new-jack-swing genre:new-orleans-jazz genre:new-wave genre:noise-rock
 genre:nu-metal genre:old-school-rap genre:outlaw-country genre:pansori genre:peking-opera genre:pop genre:pop-punk
 genre:post-hardcore genre:post-punk genre:post-rock genre:power-metal genre:progressive-house genre:progressive-rock genre:psychedelic-rock genre:psytrance
@@ -592,7 +592,7 @@ Dated nodes by `period.start`:
 | 1600–1899    | 20     | 16      | 8      | 5      | 31          | 17     |
 | 1900–1949    | 23     | 65      | 20     | 10     | 12          | 21     |
 | 1950–1999    | 128    | 417     | 153    | 38     | 9           | 36     |
-| 2000–present | 15     | 74      | 21     | 2      | 0           | 16     |
+| 2000–present | 17     | 79      | 21     | 2      | 0           | 16     |
 
 Priorities, in order:
 
@@ -609,7 +609,7 @@ Priorities, in order:
    without treating them as one origin or lineage.
 3. **Add post-2010 depth.** Expand the streaming-era chronology and add
    representative genres, artists, and tracks from the 2010s and 2020s (for
-   example hyperpop, phonk, Latin trap, Brazilian funk, bedroom
+   example phonk, Brazilian funk, bedroom
    pop, and UK drill), with sources and regional context.
 **Candidate events** to research. These are starting points: verify each date
 and claim against sources, correct anything wrong, skip anything you cannot

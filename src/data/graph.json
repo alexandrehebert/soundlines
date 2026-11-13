@@ -14608,6 +14608,24 @@
       ]
     },
     {
+      "id": "genre:hyperpop",
+      "type": "genre",
+      "name": "Hyperpop",
+      "addedOn": "2026-11-12",
+      "family": "pop",
+      "period": {
+        "start": 2019,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks the 2019 breakthrough of 100 gecs. The sound took shape earlier in the decade."
+      },
+      "description": "An experimental strain of pop that pushes digital production to extremes with distorted synths and pitch-shifted vocals. Early PC Music releases laid groundwork, and 100 gecs helped bring the sound to a wider audience in the late 2010s.",
+      "sources": [
+        "https://knowledge.uchicago.edu/record/15093/files/Dababneh_Dissertation.pdf",
+        "https://pitchfork.com/features/podcast/100-gecs-and-the-mystery-of-hyperpop/"
+      ]
+    },
+    {
       "id": "genre:synthwave",
       "type": "genre",
       "name": "Synthwave",
@@ -14691,6 +14709,24 @@
       "sources": [
         "https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/Mambo-No-5_Firmat.pdf",
         "https://www.redalyc.org/pdf/377/37716112.pdf"
+      ]
+    },
+    {
+      "id": "genre:latin-trap",
+      "type": "genre",
+      "name": "Latin trap",
+      "addedOn": "2026-11-12",
+      "family": "latin",
+      "period": {
+        "start": 2012,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The timeline uses 2012 as a marker for the emerging Puerto Rican online scene. Earlier recordings already experimented with the sound."
+      },
+      "description": "Spanish-language rap that adapts the bass-heavy beats of Southern U.S. trap. An early-2010s scene in Puerto Rico grew through SoundCloud and local music sites before reaching a wider audience.",
+      "sources": [
+        "https://journal.pubalaic.org/index.php/jlacr/article/view/123/123",
+        "https://www.washingtonpost.com/entertainment/music/record-labels-said-latin-trap-was-going-nowhere-billions-of-youtube-views-proved-them-wrong/2019/02/28/9d614286-2ee7-11e9-813a-0ab2f17e305b_story.html"
       ]
     },
     {
@@ -26904,6 +26940,89 @@
       "description": "Drum and bass producer and DJ Lincoln Barrett, who made his recording debut on Hospital Records in 2001.",
       "sources": [
         "https://1-more-thing.co.uk/interviews/the-story-of-high-contrast-true-colours/"
+      ]
+    },
+    {
+      "id": "artist:100-gecs",
+      "type": "artist",
+      "name": "100 gecs",
+      "addedOn": "2026-11-12",
+      "kind": "group",
+      "period": {
+        "start": 2015,
+        "precision": "year"
+      },
+      "description": "Duo of Laura Les and Dylan Brady whose 2019 album 1000 gecs helped bring hyperpop to a wider audience.",
+      "sources": [
+        "https://www.allmusic.com/artist/100-gecs-mn0003866157/biography",
+        "https://knowledge.uchicago.edu/record/15093/files/Dababneh_Dissertation.pdf"
+      ]
+    },
+    {
+      "id": "artist:charli-xcx",
+      "type": "artist",
+      "name": "Charli XCX",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 2007,
+        "precision": "year"
+      },
+      "description": "English singer and songwriter who began releasing music online and performing at London warehouse parties. She went on to work with PC Music founder A. G. Cook.",
+      "sources": [
+        "https://www.vogue.co.uk/article/charli-xcx-british-vogue-interview",
+        "https://www.rollingstone.co.uk/music/features/pc-music-a-g-cook-easyfun-namasenda-2022-interview-18584/"
+      ]
+    },
+    {
+      "id": "artist:a-g-cook",
+      "type": "artist",
+      "name": "A. G. Cook",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 2013,
+        "precision": "year"
+      },
+      "description": "London-born producer who founded PC Music in 2013 and became a longtime collaborator of Charli XCX.",
+      "sources": [
+        "https://www.rollingstone.co.uk/music/features/pc-music-a-g-cook-easyfun-namasenda-2022-interview-18584/",
+        "https://www.nme.com/features/music-interviews/ag-cook-britpop-pc-music-3755732"
+      ]
+    },
+    {
+      "id": "artist:anuel-aa",
+      "type": "artist",
+      "name": "Anuel AA",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 2010,
+        "precision": "circa"
+      },
+      "description": "Puerto Rican rapper whose early trap recordings and collaborations include “Esclava Remix” and “La Ocasión.”",
+      "sources": [
+        "https://www.revistagq.com/articulo/anuel-aa-entrevista",
+        "https://journal.pubalaic.org/index.php/jlacr/article/view/123/123",
+        "https://www.washingtonpost.com/entertainment/music/record-labels-said-latin-trap-was-going-nowhere-billions-of-youtube-views-proved-them-wrong/2019/02/28/9d614286-2ee7-11e9-813a-0ab2f17e305b_story.html"
+      ]
+    },
+    {
+      "id": "artist:bryant-myers",
+      "type": "artist",
+      "name": "Bryant Myers",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 2015,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The timeline uses the 2015 release of “Esclava” to anchor Myers’s early SoundCloud activity."
+      },
+      "description": "Puerto Rican rapper whose song “Esclava” spread through SoundCloud and went viral in Puerto Rico.",
+      "sources": [
+        "https://www.washingtonpost.com/entertainment/music/record-labels-said-latin-trap-was-going-nowhere-billions-of-youtube-views-proved-them-wrong/2019/02/28/9d614286-2ee7-11e9-813a-0ab2f17e305b_story.html",
+        "https://music.apple.com/us/artist/bryant-myers/1077639127"
       ]
     }
   ],
@@ -53012,6 +53131,90 @@
       "confidence": "high",
       "sources": [
         "https://www.beatportal.com/articles/4445-beatports-definitive-history-of-drum-bass"
+      ]
+    },
+    {
+      "id": "key:100-gecs-hyperpop",
+      "from": "artist:100-gecs",
+      "to": "genre:hyperpop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://knowledge.uchicago.edu/record/15093/files/Dababneh_Dissertation.pdf",
+        "https://pitchfork.com/features/podcast/100-gecs-and-the-mystery-of-hyperpop/"
+      ]
+    },
+    {
+      "id": "key:charli-xcx-hyperpop",
+      "from": "artist:charli-xcx",
+      "to": "genre:hyperpop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://knowledge.uchicago.edu/record/15093/files/Dababneh_Dissertation.pdf"
+      ]
+    },
+    {
+      "id": "key:a-g-cook-hyperpop",
+      "from": "artist:a-g-cook",
+      "to": "genre:hyperpop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.nme.com/features/music-interviews/ag-cook-britpop-pc-music-3755732",
+        "https://knowledge.uchicago.edu/record/15093/files/Dababneh_Dissertation.pdf"
+      ]
+    },
+    {
+      "id": "lineage:hyperpop-pop",
+      "from": "genre:hyperpop",
+      "to": "genre:pop",
+      "type": "subgenre_of",
+      "confidence": "medium",
+      "sources": [
+        "https://knowledge.uchicago.edu/record/15093/files/Dababneh_Dissertation.pdf"
+      ]
+    },
+    {
+      "id": "key:bad-bunny-latin-trap",
+      "from": "artist:bad-bunny",
+      "to": "genre:latin-trap",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://journal.pubalaic.org/index.php/jlacr/article/view/123/123"
+      ]
+    },
+    {
+      "id": "key:anuel-aa-latin-trap",
+      "from": "artist:anuel-aa",
+      "to": "genre:latin-trap",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://journal.pubalaic.org/index.php/jlacr/article/view/123/123",
+        "https://www.washingtonpost.com/entertainment/music/record-labels-said-latin-trap-was-going-nowhere-billions-of-youtube-views-proved-them-wrong/2019/02/28/9d614286-2ee7-11e9-813a-0ab2f17e305b_story.html"
+      ]
+    },
+    {
+      "id": "key:bryant-myers-latin-trap",
+      "from": "artist:bryant-myers",
+      "to": "genre:latin-trap",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://journal.pubalaic.org/index.php/jlacr/article/view/123/123",
+        "https://www.washingtonpost.com/entertainment/music/record-labels-said-latin-trap-was-going-nowhere-billions-of-youtube-views-proved-them-wrong/2019/02/28/9d614286-2ee7-11e9-813a-0ab2f17e305b_story.html"
+      ]
+    },
+    {
+      "id": "lineage:latin-trap-trap-rap",
+      "from": "genre:latin-trap",
+      "to": "genre:trap-rap",
+      "type": "derived_from",
+      "confidence": "high",
+      "sources": [
+        "https://www.washingtonpost.com/entertainment/music/record-labels-said-latin-trap-was-going-nowhere-billions-of-youtube-views-proved-them-wrong/2019/02/28/9d614286-2ee7-11e9-813a-0ab2f17e305b_story.html"
       ]
     }
   ]
