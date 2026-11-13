@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { connection } from 'next/server'
 import type { ReactNode } from 'react'
+import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getNow, getTranslations } from 'next-intl/server'
 import '../../src/index.css'
@@ -76,6 +78,8 @@ export default async function LocaleLayout({
             <SoundlinesProviders locale={locale}>{children}</SoundlinesProviders>
           </div>
         </NextIntlClientProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
