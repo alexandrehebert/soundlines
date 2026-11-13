@@ -12,6 +12,12 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-12 — Move companion Open Data link into music data resources
+
+[8c3c6c37](https://github.com/alexandrehebert/soundlines/commit/8c3c6c37899b0a0bc47fd87bdcb631c97653198c)
+
+- site: 2 changed files
+
 ## 2026-11-12 — Add Open Data space to the app
 
 [dc9e7b71](https://github.com/alexandrehebert/soundlines/commit/dc9e7b71f61f498c29a10919732f88f34f6a9905)

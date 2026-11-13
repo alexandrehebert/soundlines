@@ -2,6 +2,29 @@
   "version": 4,
   "entries": [
     {
+      "commit": "8c3c6c37899b0a0bc47fd87bdcb631c97653198c",
+      "parent": "b3c8ab18696f0477c36c406cbb4b18afe11a6693",
+      "date": "2026-11-12T22:08:21-05:00",
+      "subject": "Move companion Open Data link into music data resources",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "site",
+          "files": [
+            {
+              "status": "M",
+              "path": "site/src/components/App.tsx"
+            },
+            {
+              "status": "M",
+              "path": "site/src/site.test.tsx"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "dc9e7b71f61f498c29a10919732f88f34f6a9905",
       "parent": "9889a831b388eaea9e10ffcb27e9761877b1c99c",
       "date": "2026-11-12T22:04:22-05:00",
