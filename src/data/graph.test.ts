@@ -430,7 +430,7 @@ describe('graph.json integrity', () => {
       ],
       jazz: [
         'jazz', 'swing', 'bebop', 'cool-jazz', 'hard-bop', 'modal-jazz', 'free-jazz',
-        'jazz-fusion', 'acid-jazz', 'vocal-jazz', 'latin-jazz', 'spiritual-jazz', 'new-orleans-jazz',
+        'jazz-fusion', 'acid-jazz', 'vocal-jazz', 'latin-jazz', 'spiritual-jazz', 'new-orleans-jazz', 'soul-jazz',
       ],
       'country-folk': [
         'country', 'folk', 'bluegrass', 'russian-folk', 'baul-songs', 'khoomei',
@@ -447,7 +447,7 @@ describe('graph.json integrity', () => {
       ],
       metal: [
         'heavy-metal', 'thrash-metal', 'death-metal', 'black-metal', 'doom-metal',
-        'nu-metal', 'metalcore', 'industrial-metal', 'power-metal',
+        'nu-metal', 'metalcore', 'industrial-metal', 'power-metal', 'progressive-metal',
       ],
       pop: ['pop', 'synth-pop', 'k-pop', 'j-pop', 'girl-groups', 'dance-pop', 'hyperpop'],
       'hip-hop': [

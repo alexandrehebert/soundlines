@@ -21,8 +21,10 @@ export const PENDING_GENRE_PREVIEWS: ReadonlySet<string> = new Set<string>([
   'genre:outlaw-country',
   'genre:power-metal',
   'genre:progressive-house',
+  'genre:progressive-metal',
   'genre:roots-reggae',
   'genre:soca',
+  'genre:soul-jazz',
   'genre:southern-rock',
 ])
 

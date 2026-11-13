@@ -31,7 +31,7 @@ test suite ([graph.test.ts](../src/data/graph.test.ts) and the other `src/data` 
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 1419 nodes (197 genres, 583 artists, 72 instruments, 41 labels, 118 places, 210 tracks, 56 scenes, 103 events, 39 festivals) and 2148 edges (as of 2026-11-12).
+Current size: 1426 nodes (199 genres, 588 artists, 72 instruments, 41 labels, 118 places, 210 tracks, 56 scenes, 103 events, 39 festivals) and 2157 edges (as of 2026-11-12).
 
 `graph.json` remains the canonical source for entity ids, relationships, dates,
 sources, and English text. Display names and prose for each other app locale are
@@ -116,11 +116,11 @@ Every genre **must** have a `family`. Lanes are rendered in this order:
 |---------------------|------------------------|--------|------------------|
 | `classical`         | Classical              | 18     | Western eras, impressionism, serialism, Hindustani, Carnatic, gagaku, pansori |
 | `blues-soul`        | Blues, R&B & Soul      | 9      | blues, R&B, soul, funk, neo-soul, new jack swing, contemporary R&B |
-| `jazz`              | Jazz                   | 13     | swing, bebop, modal, free, fusion, acid, vocal, Latin, spiritual jazz |
+| `jazz`              | Jazz                   | 14     | swing, bebop, modal, free, fusion, acid, vocal, Latin, spiritual jazz |
 | `country-folk`      | Country & Folk         | 10      | country, honky-tonk, alt-country, Americana, folk, Baul songs, khoomei |
 | `rock`              | Rock                   | 12     | rock and roll, blues-rock, hard-rock, krautrock, surf-rock |
 | `alternative-punk`  | Alternative & Punk     | 17     | punk, post-punk, indie-rock, grunge, shoegaze, new-wave |
-| `metal`             | Metal                  | 9      | heavy, thrash, death, black, doom, nu, industrial metal, metalcore |
+| `metal`             | Metal                  | 10      | heavy, thrash, death, black, doom, nu, industrial metal, metalcore |
 | `pop`               | Pop                    | 7      | pop, girl groups, synth-pop, K-pop, J-pop |
 | `hip-hop`           | Hip-hop                | 19     | regional rap, boom bap, jazz rap, crunk, G-funk, hyphy, trap, drill, grime |
 | `reggae`            | Reggae & Ska           | 8      | calypso, soca, ska, rocksteady, reggae, dub, dancehall |
@@ -131,7 +131,7 @@ Every genre **must** have a `family`. Lanes are rendered in this order:
 | `techno`            | Techno & Trance        | 10      | techno styles, trance, psytrance, gabber, hardstyle |
 | `breakbeat-bass`    | Breakbeat & Bass       | 9      | breakbeat hardcore, jungle, drum and bass, garage, dubstep, breakcore |
 
-These are navigational families, not strict genre ancestry. The 197 genres
+These are navigational families, not strict genre ancestry. The 199 genres
 currently have 7–19 members per family: enough granularity to avoid an oversized
 Electronic lane without creating one-genre lanes. Keep related styles together
 as the catalogue grows, and revisit the grouping if it becomes unbalanced rather
@@ -282,11 +282,11 @@ genre:k-pop genre:khoomei genre:krautrock genre:kwaito genre:latin genre:latin-j
 genre:latin-trap genre:liquid-drum-and-bass genre:makossa genre:mambo genre:math-rock genre:mbalax genre:medieval genre:merengue genre:metalcore genre:minimal-techno genre:minimalism
 genre:modal-jazz genre:modern-classical genre:morna genre:neo-soul genre:neoclassicism genre:new-jack-swing genre:new-orleans-jazz genre:new-wave genre:noise-rock
 genre:nu-metal genre:old-school-rap genre:outlaw-country genre:pansori genre:peking-opera genre:pop genre:pop-punk
-genre:post-hardcore genre:post-punk genre:post-rock genre:power-metal genre:progressive-house genre:progressive-rock genre:psychedelic-rock genre:psytrance
+genre:post-hardcore genre:post-punk genre:post-rock genre:power-metal genre:progressive-house genre:progressive-metal genre:progressive-rock genre:psychedelic-rock genre:psytrance
 genre:punk-rock genre:qawwali genre:r-and-b genre:rai genre:reggae genre:reggaeton genre:renaissance
 genre:rock genre:rock-and-roll genre:rocksteady genre:romantic genre:roots-reggae genre:russian-folk genre:salsa
 genre:samba genre:serialism genre:shoegaze genre:ska genre:soca genre:son-cubano genre:soukous
-genre:soul genre:southern-rap genre:southern-rock genre:spiritual-jazz genre:stoner-rock genre:surf-rock genre:swing
+genre:soul genre:soul-jazz genre:southern-rap genre:southern-rock genre:spiritual-jazz genre:stoner-rock genre:surf-rock genre:swing
 genre:synth-pop genre:synthwave genre:taarab genre:tango genre:tech-house genre:techno genre:thrash-metal
 genre:trance genre:trap-rap genre:trip-hop genre:uk-garage genre:vaporwave genre:vocal-jazz
 genre:west-coast-rap
@@ -590,8 +590,8 @@ Dated nodes by `period.start`:
 |--------------|-------:|--------:|-------:|-------:|------------:|-------:|
 | 500–1599     | 9      | 6       | 0      | 1      | 19          | 12     |
 | 1600–1899    | 20     | 16      | 8      | 5      | 31          | 17     |
-| 1900–1949    | 23     | 65      | 20     | 10     | 12          | 21     |
-| 1950–1999    | 128    | 417     | 153    | 38     | 9           | 36     |
+| 1900–1949    | 23     | 66      | 20     | 10     | 12          | 21     |
+| 1950–1999    | 130    | 421     | 153    | 38     | 9           | 36     |
 | 2000–present | 17     | 79      | 21     | 2      | 0           | 16     |
 
 Priorities, in order:

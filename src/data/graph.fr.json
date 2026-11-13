@@ -5225,6 +5225,27 @@
     "artist:bryant-myers": {
       "description": "Rappeur portoricain dont le morceau « Esclava » s’est diffusé sur SoundCloud et est devenu viral à Porto Rico.",
       "estimateNote": "La sortie d’« Esclava » en 2015 sert de repère pour les débuts de Myers sur SoundCloud."
+    },
+    "genre:soul-jazz": {
+      "description": "Style de jazz issu du hard bop à la fin des années 1950. Le phrasé du blues et les rythmes bien marqués lui donnent son caractère. L’orgue Hammond tient souvent une place de choix dans les petites formations."
+    },
+    "artist:jimmy-smith": {
+      "description": "Organiste dont les séances pour Blue Note ont contribué à faire de l’orgue Hammond un instrument de référence dans les petites formations de jazz."
+    },
+    "artist:lou-donaldson": {
+      "description": "Saxophoniste alto dont le jeu imprégné de blues a contribué à façonner le hard bop et le soul jazz."
+    },
+    "genre:progressive-metal": {
+      "description": "Courant né dans les années 1980 du croisement entre le heavy metal et le rock progressif. Les changements de mesure en sont caractéristiques. « Operation: Mindcrime », album concept de Queensrÿche sorti en 1988, est l’un de ses premiers jalons."
+    },
+    "artist:queensryche": {
+      "description": "Groupe de metal américain dont l’album concept « Operation: Mindcrime » est devenu un jalon des débuts du metal progressif."
+    },
+    "artist:fates-warning": {
+      "description": "Groupe de metal progressif qui a sorti son premier album « Night on Bröcken » en 1984 et contribué à façonner le genre."
+    },
+    "artist:dream-theater": {
+      "description": "Groupe de metal progressif dont l’album « Images and Words » a fait découvrir ses arrangements complexes à un public plus large."
     }
   },
   "edges": {

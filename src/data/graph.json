@@ -14841,6 +14841,22 @@
       ]
     },
     {
+      "id": "genre:progressive-metal",
+      "type": "genre",
+      "name": "Progressive metal",
+      "addedOn": "2026-11-12",
+      "family": "metal",
+      "period": {
+        "start": 1985,
+        "precision": "circa"
+      },
+      "description": "A blend of heavy metal and progressive rock that took shape in the 1980s. Shifting meters are a hallmark, and Queensrÿche’s 1988 concept album Operation: Mindcrime was an early landmark.",
+      "sources": [
+        "https://mtosmt.org/issues/mto.13.19.2/mto.13.19.2.mccandless.pdf",
+        "https://www.metalblade.com/us/artists/fates-warning/"
+      ]
+    },
+    {
       "id": "genre:trance",
       "type": "genre",
       "name": "Trance",
@@ -15093,6 +15109,23 @@
       "sources": [
         "https://www.nps.gov/jazz/learn/historyculture/history_early.htm",
         "https://home.nps.gov/jazz/learn/historyculture/jazz_history.htm"
+      ]
+    },
+    {
+      "id": "genre:soul-jazz",
+      "type": "genre",
+      "name": "Soul jazz",
+      "addedOn": "2026-11-12",
+      "family": "jazz",
+      "period": {
+        "start": 1958,
+        "precision": "circa"
+      },
+      "description": "A jazz style that grew out of hard bop in the late 1950s. Blues phrasing and strong grooves give the music its character, and small groups often feature a Hammond organ.",
+      "sources": [
+        "https://www.wrti.org/arts-desk/2024-11-11/lou-donaldson-saxophonist-who-bridged-bebop-and-soul-dies-at-98",
+        "https://www.arts.gov/honors/jazz/jimmy-smith",
+        "https://store.bluenote.com/collections/soul-jazz"
       ]
     },
     {
@@ -27023,6 +27056,89 @@
       "sources": [
         "https://www.washingtonpost.com/entertainment/music/record-labels-said-latin-trap-was-going-nowhere-billions-of-youtube-views-proved-them-wrong/2019/02/28/9d614286-2ee7-11e9-813a-0ab2f17e305b_story.html",
         "https://music.apple.com/us/artist/bryant-myers/1077639127"
+      ]
+    },
+    {
+      "id": "artist:jimmy-smith",
+      "type": "artist",
+      "name": "Jimmy Smith",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1952,
+        "end": 2005,
+        "precision": "circa"
+      },
+      "description": "Organist whose Blue Note sessions helped make the Hammond organ a mainstay of small-group jazz.",
+      "sources": [
+        "https://www.arts.gov/honors/jazz/jimmy-smith",
+        "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1962/Billboard%201962-05-05.pdf"
+      ]
+    },
+    {
+      "id": "artist:lou-donaldson",
+      "type": "artist",
+      "name": "Lou Donaldson",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1945,
+        "end": 2017,
+        "precision": "year"
+      },
+      "description": "Alto saxophonist whose blues-inflected playing helped shape hard bop and soul jazz.",
+      "sources": [
+        "https://www.arts.gov/honors/jazz/lou-donaldson",
+        "https://downbeat.com/news/detail/in-memoriam-lou-donaldson-1926-2024",
+        "https://www.wrti.org/arts-desk/2024-11-11/lou-donaldson-saxophonist-who-bridged-bebop-and-soul-dies-at-98"
+      ]
+    },
+    {
+      "id": "artist:queensryche",
+      "type": "artist",
+      "name": "Queensrÿche",
+      "addedOn": "2026-11-12",
+      "kind": "group",
+      "period": {
+        "start": 1982,
+        "precision": "circa"
+      },
+      "description": "American metal band whose concept album Operation: Mindcrime became an early progressive metal landmark.",
+      "sources": [
+        "https://www.queensrycheofficial.com/band/",
+        "https://mtosmt.org/issues/mto.13.19.2/mto.13.19.2.mccandless.pdf"
+      ]
+    },
+    {
+      "id": "artist:fates-warning",
+      "type": "artist",
+      "name": "Fates Warning",
+      "addedOn": "2026-11-12",
+      "kind": "group",
+      "period": {
+        "start": 1984,
+        "precision": "circa"
+      },
+      "description": "Progressive metal band that released its debut album Night on Bröcken in 1984 and helped shape the genre.",
+      "sources": [
+        "https://www.metalblade.com/us/artists/fates-warning/"
+      ]
+    },
+    {
+      "id": "artist:dream-theater",
+      "type": "artist",
+      "name": "Dream Theater",
+      "addedOn": "2026-11-12",
+      "kind": "group",
+      "period": {
+        "start": 1985,
+        "precision": "year"
+      },
+      "description": "Progressive metal band whose album Images and Words brought its intricate arrangements to a wider audience.",
+      "sources": [
+        "https://dreamtheater.net/band/",
+        "https://www.loudersound.com/features/dream-theater-images-and-words-album-interview-2005",
+        "https://mtosmt.org/issues/mto.13.19.2/mto.13.19.2.mccandless.pdf"
       ]
     }
   ],
@@ -53215,6 +53331,98 @@
       "confidence": "high",
       "sources": [
         "https://www.washingtonpost.com/entertainment/music/record-labels-said-latin-trap-was-going-nowhere-billions-of-youtube-views-proved-them-wrong/2019/02/28/9d614286-2ee7-11e9-813a-0ab2f17e305b_story.html"
+      ]
+    },
+    {
+      "id": "key:jimmy-smith-soul-jazz",
+      "from": "artist:jimmy-smith",
+      "to": "genre:soul-jazz",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.arts.gov/honors/jazz/jimmy-smith",
+        "https://store.bluenote.com/collections/soul-jazz"
+      ]
+    },
+    {
+      "id": "key:lou-donaldson-soul-jazz",
+      "from": "artist:lou-donaldson",
+      "to": "genre:soul-jazz",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.bluenote.com/artist/lou-donaldson/"
+      ]
+    },
+    {
+      "id": "key:horace-silver-soul-jazz",
+      "from": "artist:horace-silver",
+      "to": "genre:soul-jazz",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://store.bluenote.com/collections/soul-jazz"
+      ]
+    },
+    {
+      "id": "lineage:soul-jazz-hard-bop",
+      "from": "genre:soul-jazz",
+      "to": "genre:hard-bop",
+      "type": "derived_from",
+      "confidence": "medium",
+      "sources": [
+        "https://www.wrti.org/arts-desk/2024-11-11/lou-donaldson-saxophonist-who-bridged-bebop-and-soul-dies-at-98"
+      ]
+    },
+    {
+      "id": "key:queensryche-progressive-metal",
+      "from": "artist:queensryche",
+      "to": "genre:progressive-metal",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://mtosmt.org/issues/mto.13.19.2/mto.13.19.2.mccandless.pdf"
+      ]
+    },
+    {
+      "id": "key:fates-warning-progressive-metal",
+      "from": "artist:fates-warning",
+      "to": "genre:progressive-metal",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.metalblade.com/us/artists/fates-warning/"
+      ]
+    },
+    {
+      "id": "key:dream-theater-progressive-metal",
+      "from": "artist:dream-theater",
+      "to": "genre:progressive-metal",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://mtosmt.org/issues/mto.13.19.2/mto.13.19.2.mccandless.pdf",
+        "https://www.loudersound.com/features/dream-theater-images-and-words-album-interview-2005"
+      ]
+    },
+    {
+      "id": "lineage:progressive-metal-heavy-metal",
+      "from": "genre:progressive-metal",
+      "to": "genre:heavy-metal",
+      "type": "fusion_of",
+      "confidence": "medium",
+      "sources": [
+        "https://mtosmt.org/issues/mto.13.19.2/mto.13.19.2.mccandless.pdf"
+      ]
+    },
+    {
+      "id": "lineage:progressive-metal-progressive-rock",
+      "from": "genre:progressive-metal",
+      "to": "genre:progressive-rock",
+      "type": "fusion_of",
+      "confidence": "medium",
+      "sources": [
+        "https://mtosmt.org/issues/mto.13.19.2/mto.13.19.2.mccandless.pdf"
       ]
     }
   ]

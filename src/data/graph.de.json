@@ -5171,6 +5171,27 @@
     "artist:bryant-myers": {
       "description": "Puerto-ricanischer Rapper, dessen Song „Esclava“ sich über SoundCloud verbreitete und in Puerto Rico viral ging.",
       "estimateNote": "Die Veröffentlichung von „Esclava“ im Jahr 2015 dient als Anhaltspunkt für Myers’ frühe Aktivitäten auf SoundCloud."
+    },
+    "genre:soul-jazz": {
+      "description": "Ein Jazzstil, der sich Ende der 1950er-Jahre aus dem Hard Bop entwickelte. Bluesphrasierung und markante Grooves prägen den Klang. In kleinen Besetzungen ist häufig eine Hammondorgel zu hören."
+    },
+    "artist:jimmy-smith": {
+      "description": "Organist, dessen Aufnahmen für Blue Note die Hammondorgel in kleinen Jazzensembles etablierten."
+    },
+    "artist:lou-donaldson": {
+      "description": "Altsaxofonist, dessen vom Blues geprägtes Spiel Hard Bop und Soul Jazz mitgestaltete."
+    },
+    "genre:progressive-metal": {
+      "description": "Eine Verbindung aus Heavy Metal und Progressive Rock, die in den 1980er-Jahren Gestalt annahm. Taktwechsel sind ein Kennzeichen. Das Queensrÿche-Konzeptalbum „Operation: Mindcrime“ von 1988 war ein früher Meilenstein."
+    },
+    "artist:queensryche": {
+      "description": "US-amerikanische Metalband, deren Konzeptalbum „Operation: Mindcrime“ ein früher Meilenstein des Progressive Metal wurde."
+    },
+    "artist:fates-warning": {
+      "description": "Progressive-Metal-Band, die 1984 ihr Debütalbum „Night on Bröcken“ veröffentlichte und das Genre mitprägte."
+    },
+    "artist:dream-theater": {
+      "description": "Progressive-Metal-Band, deren Album „Images and Words“ ihre komplexen Arrangements einem größeren Publikum bekannt machte."
     }
   },
   "edges": {
