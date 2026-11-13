@@ -2,6 +2,37 @@
   "version": 4,
   "entries": [
     {
+      "commit": "3597f0988196db4af99c2d959a313225e25d0d27",
+      "parent": "6417f675be02e844e2b1772fb64bb324ec544984",
+      "date": "2026-11-12T20:10:10-05:00",
+      "subject": "Add Vercel Web Analytics and Speed Insights",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "app/[locale]/layout.tsx"
+            },
+            {
+              "status": "M",
+              "path": "package-lock.json"
+            },
+            {
+              "status": "M",
+              "path": "package.json"
+            },
+            {
+              "status": "M",
+              "path": "proxy.ts"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "cd1a82f5286dacb7dc7f65c0dc3c87cd021841ff",
       "parent": "7ab6a8ad00ddecd3a14feb85ad6f85882b35da96",
       "date": "2026-11-12T19:15:20-05:00",
