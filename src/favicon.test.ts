@@ -1,5 +1,4 @@
 import { readFileSync } from 'node:fs'
-import { runInNewContext } from 'node:vm'
 import { Disc3 } from 'lucide-react'
 import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
@@ -8,7 +7,6 @@ import { Comparison } from './stories/Favicon.stories.tsx'
 import { BrandLink } from './components/BrandLink.tsx'
 import { HOVER_CYCLES_PER_SECOND, SOUNDLINES_BACKGROUND, SOUNDLINES_ENDPOINT_COLOR, SOUNDLINES_WAVES, SoundlinesWaveMotion } from './components/soundlinesMarkMotion.ts'
 import { createWaveModel, planWaveRest, sampleCubicPath, wavePathAt, wavePointsAt, WaveTape } from './components/soundlinesWave.ts'
-import { colorThemeBootstrap } from './colorThemeBootstrap.ts'
 import { faviconUrl } from './favicon.ts'
 
 function iconShapes(markup: string) {
@@ -53,43 +51,6 @@ describe('favicon', () => {
     expect(faviconUrl('light')).toBe('/favicon-light.svg?v=soundlines-blue')
     const storybook = readFileSync(new URL('../.storybook/main.ts', import.meta.url), 'utf8')
     expect(storybook).toContain("{ from: '../public/favicon-light.svg', to: '/favicon-light.svg' }")
-  })
-
-  it.each([
-    ['dark', 'dark'],
-    ['light', 'light'],
-    [null, 'dark'],
-  ] as const)('initializes the saved %s theme and favicon before hydration', (saved, expectedTheme) => {
-    const root = { dataset: { theme: '' } }
-    const dark: Record<string, string> = {}
-    const light: Record<string, string> = {}
-    const icons = {
-      dark: { setAttribute: (name: string, value: string) => { dark[name] = value } },
-      light: { setAttribute: (name: string, value: string) => { light[name] = value } },
-    }
-    runInNewContext(colorThemeBootstrap, {
-      document: {
-        documentElement: root,
-        querySelector: (selector: string) => selector === 'link[data-soundlines-favicon="dark"]'
-          ? icons.dark
-          : selector === 'link[data-soundlines-favicon="light"]' ? icons.light : null,
-      },
-      localStorage: { getItem: (key: string) => key === 'soundlines-theme' ? saved : null },
-      console,
-    })
-    expect(root.dataset.theme).toBe(expectedTheme)
-    expect(dark.media).toBe(expectedTheme === 'dark' ? 'all' : 'not all')
-    expect(light.media).toBe(expectedTheme === 'light' ? 'all' : 'not all')
-  })
-
-  it('warns when the saved theme cannot be read', () => {
-    const error = new Error('Storage unavailable')
-    const warnings: unknown[][] = []
-    runInNewContext(colorThemeBootstrap, {
-      localStorage: { getItem: () => { throw error } },
-      console: { warn: (...args: unknown[]) => warnings.push(args) },
-    })
-    expect(warnings).toEqual([['Unable to initialize the Soundlines theme preference.', error]])
   })
 
   it('keeps the light favicon on the same still waveform frame', () => {

@@ -1,16 +1,17 @@
 'use client'
 
 import { MotionConfig } from 'motion/react'
-import { useMemo, type ReactNode } from 'react'
+import { useLayoutEffect, useMemo, type ReactNode } from 'react'
 import App from './App.tsx'
 import { ExplorerProvider } from './ExplorerProvider.tsx'
 import { graphForLocale } from './data/graphLocale.ts'
 import type { Locale } from './i18n/routing.ts'
-import { useColorTheme } from './useColorTheme.ts'
+import { initializeColorTheme } from './useColorTheme.ts'
 
 export function SoundlinesProviders({ locale, children }: { locale: Locale; children: ReactNode }) {
   const graph = useMemo(() => graphForLocale(locale), [locale])
-  useColorTheme()
+  // Restore the preference before the loading screen reveals the page.
+  useLayoutEffect(initializeColorTheme, [])
 
   return (
     <ExplorerProvider graph={graph} locale={locale}>

@@ -5,6 +5,7 @@ import { flushSync } from 'react-dom'
 import { observeViewTransition } from './viewTransition.ts'
 
 export type ColorTheme = 'dark' | 'light'
+const THEME_STORAGE_KEY = 'soundlines-theme'
 const THEME_EVENT = 'soundlines-theme-change'
 
 function snapshot(): ColorTheme {
@@ -35,9 +36,20 @@ function applyTheme(theme: ColorTheme) {
   }
 }
 
+export function initializeColorTheme() {
+  let theme: ColorTheme = 'dark'
+  try {
+    theme = localStorage.getItem(THEME_STORAGE_KEY) === 'light' ? 'light' : 'dark'
+  } catch (error) {
+    console.warn('Unable to initialize the Soundlines theme preference.', error)
+  }
+  applyTheme(theme)
+  window.dispatchEvent(new Event(THEME_EVENT))
+}
+
 function subscribe(notify: () => void) {
   const onStorage = (event: StorageEvent) => {
-    if (event.key !== 'soundlines-theme' && event.key !== null) return
+    if (event.key !== THEME_STORAGE_KEY && event.key !== null) return
     applyTheme(event.newValue === 'light' ? 'light' : 'dark')
     notify()
   }
@@ -73,7 +85,7 @@ export function useColorTheme() {
       window.dispatchEvent(new Event(THEME_EVENT))
     })
     try {
-      localStorage.setItem('soundlines-theme', next)
+      localStorage.setItem(THEME_STORAGE_KEY, next)
     } catch (error) {
       console.warn('Unable to save the Soundlines theme preference.', error)
     }

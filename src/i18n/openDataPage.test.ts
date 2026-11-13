@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from 'vitest'
 import DataPage from '../../app/[locale]/data/page.tsx'
 import { generateMetadata as datasetMetadata } from '../../app/[locale]/data/dataset/page.tsx'
+import { generateMetadata as graphMetadata } from '../../app/[locale]/data/graph/page.tsx'
 import { generateMetadata as queryMetadata } from '../../app/[locale]/data/query/page.tsx'
 import { generateMetadata as changelogMetadata } from '../../app/[locale]/data/changelog/page.tsx'
 import { generateMetadata as contributeMetadata } from '../../app/[locale]/data/contribute/page.tsx'
@@ -19,10 +20,10 @@ describe('localized Open Data pages', () => {
     await expect(DataPage({ params: Promise.resolve({ locale }) })).rejects.toThrow(`REDIRECT /${locale}/data/dataset`)
   })
 
-  it.each(LOCALES)('gives all four %s subpages independent canonical metadata', async (locale) => {
+  it.each(LOCALES)('gives all %s subpages independent canonical metadata', async (locale) => {
     const copy = catalogueFor(locale)
     for (const [section, metadata] of [
-      ['dataset', datasetMetadata], ['query', queryMetadata], ['changelog', changelogMetadata], ['contribute', contributeMetadata],
+      ['dataset', datasetMetadata], ['graph', graphMetadata], ['query', queryMetadata], ['changelog', changelogMetadata], ['contribute', contributeMetadata],
     ] as const) {
       const result = await metadata({ params: Promise.resolve({ locale }) })
       const url = new URL(localizePath(`/data/${section}`, locale), APP_URL).href

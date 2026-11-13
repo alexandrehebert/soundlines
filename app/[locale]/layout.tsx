@@ -9,7 +9,6 @@ import { getMessages, getNow, getTranslations } from 'next-intl/server'
 import '../../src/index.css'
 import '../../src/pageLoading.css'
 import { SoundlinesProviders } from '../../src/SoundlinesProviders.tsx'
-import { colorThemeBootstrap } from '../../src/colorThemeBootstrap.ts'
 import { faviconUrl } from '../../src/favicon.ts'
 import { isLocale } from '../../src/i18n/routing.ts'
 import { pageMetadata } from '../../src/i18n/seo.ts'
@@ -46,10 +45,8 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        {/* The bootstrap selects the saved favicon before React hydrates. */}
         <link rel="icon" type="image/svg+xml" href={faviconUrl('dark')} media="all" data-soundlines-favicon="dark" suppressHydrationWarning />
         <link rel="icon" type="image/svg+xml" href={faviconUrl('light')} media="not all" data-soundlines-favicon="light" suppressHydrationWarning />
-        <script dangerouslySetInnerHTML={{ __html: colorThemeBootstrap }} />
       </head>
       <body>
         <NextIntlClientProvider messages={messages} now={now}>

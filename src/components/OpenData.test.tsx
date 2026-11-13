@@ -9,6 +9,7 @@ import { LOCALES, type Locale } from '../i18n/routing.ts'
 import { renderWithIntl } from '../i18n/test-utils.tsx'
 import { OPEN_DATA_SECTIONS } from '../openData.ts'
 import { REPOSITORY_URL } from '../projectLinks.ts'
+import { OpenDataGraph } from './OpenDataGraph.tsx'
 import { OpenDataDataset } from './OpenDataDataset.tsx'
 import { OpenDataNavigation } from './OpenDataNavigation.tsx'
 import { OpenDataChangelog } from './OpenDataChangelog.tsx'
@@ -21,7 +22,7 @@ import type { ReactNode } from 'react'
 const route = vi.hoisted(() => ({ pathname: '/en/data/dataset' }))
 vi.mock('next/navigation', () => ({ usePathname: () => route.pathname }))
 vi.mock('next-intl/server', () => ({
-  getTranslations: async ({ locale, namespace }: { locale: Locale; namespace: 'openData.contribute' | 'openData.query' | 'feedback' }) =>
+  getTranslations: async ({ locale, namespace }: { locale: Locale; namespace: 'openData.graph' | 'openData.contribute' | 'openData.query' | 'feedback' }) =>
     createTranslator({ locale, messages: catalogueFor(locale), namespace }),
 }))
 
@@ -49,9 +50,10 @@ function render(children: ReactNode, locale: Locale = 'en', isHome = false) {
 }
 
 describe('Open Data UI', () => {
-  it('uses the same title and subtitle styling across all four sections', async () => {
+  it('uses the same title and subtitle styling across all sections', async () => {
     const sections = [
       render(<OpenDataDataset />),
+      render(await OpenDataGraph({ locale: 'en' })),
       render(await OpenDataQuery({ locale: 'en' })),
       render(<OpenDataChangelog locale="en" />),
       render(await ContributionPage({ locale: 'en' })),
@@ -65,6 +67,8 @@ describe('Open Data UI', () => {
   it.each(LOCALES)('uses source links, not downloads, in the %s dataset dashboard', (locale) => {
     const html = render(<OpenDataDataset />, locale)
     expect(html).toContain(catalogueFor(locale).openData.dataset.github)
+    expect(html).toContain(`href="/${locale}/data/graph"`)
+    expect(html).not.toContain('dataset-graph-title')
     for (const file of ['graph.json', 'graph.fr.json', 'graph.de.json', 'graph.it.json', 'graph.es.json']) {
       expect(html).toContain(`href="${REPOSITORY_URL}/blob/main/src/data/${file}"`)
     }
