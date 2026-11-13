@@ -2,6 +2,216 @@
   "version": 4,
   "entries": [
     {
+      "commit": "9185ff1bc4d588b5fad06ad581064bb7caee1c0e",
+      "parent": "047d84c618713f4dbb6bb9b1b9cb4664569f0f91",
+      "date": "2026-11-12T23:35:09-05:00",
+      "subject": "Add soul jazz and progressive metal to the music graph",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "artist:dream-theater",
+              "name": "Dream Theater",
+              "status": "added"
+            },
+            {
+              "id": "artist:fates-warning",
+              "name": "Fates Warning",
+              "status": "added"
+            },
+            {
+              "id": "artist:horace-silver",
+              "name": "Horace Silver",
+              "status": "updated"
+            },
+            {
+              "id": "artist:jimmy-smith",
+              "name": "Jimmy Smith",
+              "status": "added"
+            },
+            {
+              "id": "artist:lou-donaldson",
+              "name": "Lou Donaldson",
+              "status": "added"
+            },
+            {
+              "id": "artist:queensryche",
+              "name": "Queensrÿche",
+              "status": "added"
+            },
+            {
+              "id": "genre:hard-bop",
+              "name": "Hard bop",
+              "status": "updated"
+            },
+            {
+              "id": "genre:heavy-metal",
+              "name": "Heavy metal",
+              "status": "updated"
+            },
+            {
+              "id": "genre:progressive-metal",
+              "name": "Progressive metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:progressive-rock",
+              "name": "Progressive rock",
+              "status": "updated"
+            },
+            {
+              "id": "genre:soul-jazz",
+              "name": "Soul jazz",
+              "status": "added"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/GRAPH.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/audits/graph-edge-coverage.csv"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__dream-theater-progressive-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__fates-warning-progressive-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__horace-silver-soul-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__jimmy-smith-soul-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__lou-donaldson-soul-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__queensryche-progressive-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__progressive-metal-heavy-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__progressive-metal-progressive-rock.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__soul-jazz-hard-bop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/dream-theater.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/fates-warning.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/jimmy-smith.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/lou-donaldson.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/queensryche.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/progressive-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/soul-jazz.md"
+            },
+            {
+              "status": "M",
+              "path": "src/data/genrePreviews.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/review-status.json"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [
+            "artist:dream-theater",
+            "artist:fates-warning",
+            "artist:jimmy-smith",
+            "artist:lou-donaldson",
+            "artist:queensryche",
+            "genre:progressive-metal",
+            "genre:soul-jazz"
+          ],
+          "updated": [],
+          "removed": []
+        },
+        "edges": {
+          "added": [
+            "key:dream-theater-progressive-metal",
+            "key:fates-warning-progressive-metal",
+            "key:horace-silver-soul-jazz",
+            "key:jimmy-smith-soul-jazz",
+            "key:lou-donaldson-soul-jazz",
+            "key:queensryche-progressive-metal",
+            "lineage:progressive-metal-heavy-metal",
+            "lineage:progressive-metal-progressive-rock",
+            "lineage:soul-jazz-hard-bop"
+          ],
+          "updated": [],
+          "removed": []
+        }
+      }
+    },
+    {
       "commit": "5b4fe5997f8c9be99083eaa3df2846af67e7dec6",
       "parent": "1b4052044d833e50d2cc9e0b94fedaf12d3a7549",
       "date": "2026-11-12T23:27:53-05:00",

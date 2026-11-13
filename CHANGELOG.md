@@ -12,6 +12,16 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-12 — Add soul jazz and progressive metal to the music graph
+
+[9185ff1b](https://github.com/alexandrehebert/soundlines/commit/9185ff1bc4d588b5fad06ad581064bb7caee1c0e)
+
+Graph nodes: +7 / ~0 / -0.
+
+Graph edges: +9 / ~0 / -0.
+
+- graph: 26 changed files
+
 ## 2026-11-12 — Fix the hyperpop dissertation citation URL
 
 [5b4fe599](https://github.com/alexandrehebert/soundlines/commit/5b4fe5997f8c9be99083eaa3df2846af67e7dec6)
