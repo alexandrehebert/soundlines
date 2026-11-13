@@ -3,7 +3,8 @@
 Generated from committed Git history by `npm run changelog`. Do not edit by hand.
 
 Commits with file changes reachable from HEAD are listed in Git topological order (newest first).
-Each commit is compared with its first parent; merge entries describe integration and may repeat branch changes.
+Each commit is compared with its parent. Merge commits only list files changed against every parent (such as conflict resolutions);
+clean merges are omitted because their branch commits are already listed.
 Moves appear as a deletion and an addition. Generated-changelog-only commits and uncommitted changes are excluded.
 Dates are commit timestamps. Commit messages and file paths are historical records, not editorial release notes.
 
@@ -19,16 +20,6 @@ Preview/loop entries document committed assets and production records, not untra
 - site: 14 changed files
 - workflow: 4 changed files
 - docs: 3 changed files
-
-## 2026-11-12 — Merge pull request #4 from alexandrehebert/copilot/add-morna-genre-entry
-
-[c7883338](https://github.com/alexandrehebert/soundlines/commit/c78833389d535654dedece83f126fca7623d795c) (merge)
-
-Graph nodes: +4 / ~0 / -0.
-
-Graph edges: +3 / ~0 / -0.
-
-- graph: 17 changed files
 
 ## 2026-11-12 — Add Morna to the music graph
 
@@ -47,30 +38,11 @@ Graph edges: +3 / ~0 / -0.
 - graph: 2 changed files
 - workflow: 2 changed files
 
-## 2026-11-12 — Merge pull request #2 from alexandrehebert/copilot/add-soca-to-music-graph
-
-[e56ed947](https://github.com/alexandrehebert/soundlines/commit/e56ed94743dda930bf86beae6bd63cb9da31cf6b) (merge)
-
-Graph nodes: +3 / ~0 / -0.
-
-Graph edges: +4 / ~0 / -0.
-
-- graph: 17 changed files
-
 ## 2026-11-12 — Mark soca as pending a genre preview
 
 [b870d8b7](https://github.com/alexandrehebert/soundlines/commit/b870d8b7c88d342a55f489a3259642c3dd9c8db1)
 
 - graph: 1 changed file
-
-## 2026-11-12 — Merge remote-tracking branch 'origin/main' into fix-soca-pr
-
-[cf86e6e5](https://github.com/alexandrehebert/soundlines/commit/cf86e6e5af4e7d1a2670fcdd39e3ee3ea10a75f4) (merge)
-
-- graph: 4 changed files
-- previews: 1 changed file
-- app: 2 changed files
-- workflow: 5 changed files
 
 ## 2026-11-12 — Keep pending-preview genres out of Soundtrails
 

@@ -137,7 +137,7 @@ describe('deterministic changelog', () => {
     expect(buildChangelog(cwd)).toEqual(before)
   })
 
-  it('records both branch commits and merge integration against the first parent', () => {
+  it('omits clean merges, whose branch commits are already listed, without repeating their changes', () => {
     const { cwd, write, commit, git } = fixture()
     write('README.md', 'root')
     commit('Root')
@@ -149,10 +149,35 @@ describe('deterministic changelog', () => {
     commit('Guide')
     git('merge', '--no-ff', 'preview', '-m', 'Integrate preview')
     const entries = buildChangelog(cwd).data.entries
-    expect(entries).toHaveLength(4)
-    expect(entries[0].merge).toBe(true)
-    expect(entries[0].groups).toEqual([{ category: 'previews', files: [{ status: 'A', path: 'public/audio/a.mp3' }] }])
-    expect(entries.some(({ commit }) => commit === branch)).toBe(true)
+    expect(entries.map(({ subject }) => subject).sort()).toEqual(['Guide', 'Preview', 'Root'])
+    expect(entries.some(({ merge }) => merge)).toBe(false)
+    expect(entries.filter(({ groups }) => groups.some(({ category }) => category === 'previews')).map(({ commit }) => commit)).toEqual([branch])
+  })
+
+  it('keeps only what a merge introduced itself, such as a conflict resolution', () => {
+    const { cwd, write, commit, git } = fixture()
+    const node = (id: string, name: string) => ({ id: `genre:${id}`, name })
+    write('src/data/graph.json', { nodes: [node('a', 'A')], edges: [] })
+    commit('Root')
+    git('checkout', '-b', 'branch')
+    write('src/data/graph.json', { nodes: [node('a', 'A'), node('b', 'B')], edges: [] })
+    commit('Add B')
+    git('checkout', 'main')
+    write('src/data/graph.json', { nodes: [node('a', 'A'), node('c', 'C')], edges: [] })
+    write('docs/guide.md', 'guide')
+    commit('Add C')
+    expect(() => git('merge', '--no-ff', 'branch', '-m', 'Merge branch')).toThrow()
+    write('src/data/graph.json', { nodes: [node('a', 'A renamed'), node('b', 'B'), node('c', 'C'), node('d', 'D')], edges: [] })
+    git('add', '.')
+    git('commit', '--no-edit')
+    const [merge] = buildChangelog(cwd).data.entries
+    expect(merge.merge).toBe(true)
+    expect(merge.groups).toEqual([{ category: 'graph', files: [{ status: 'M', path: 'src/data/graph.json' }] }])
+    expect(merge.graph?.nodes).toEqual({ added: ['genre:d'], updated: ['genre:a'], removed: [] })
+    expect(merge.entities).toEqual([{ category: 'graph', items: [
+      { id: 'genre:a', name: 'A renamed', status: 'updated' },
+      { id: 'genre:d', name: 'D', status: 'added' },
+    ] }])
   })
 
   it('rejects shallow history instead of silently publishing an incomplete backfill', () => {

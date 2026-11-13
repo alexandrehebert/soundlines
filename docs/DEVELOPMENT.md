@@ -166,7 +166,10 @@ npm run test:changelog        # isolated fixture repositories; no network or AI
 
 The [generator](../scripts/changelog/generate.ts) traverses all commits reachable
 from `HEAD`, newest first in Git topological order, and compares each tree with
-its first parent (or the empty tree for the initial commit). Every changed file
+its parent (or the empty tree for the initial commit). Merge commits are
+compared with every parent and only keep files, graph IDs and entities that
+differ from all of them (for example a conflict resolution); clean merges are
+omitted because their branch commits are already listed. Every changed file
 is categorized: graph/evidence/locales, previews, loops, artwork, explorer,
 companion, workflow/tooling, documentation or other. Audio's former
 `public/audio/` path is classified as previews. Moves appear as removal plus
@@ -186,8 +189,7 @@ preview brief entries follow their key; asset and brief files follow their Git
 status (A/M/D), and mixed signals within one commit read as an update.
 The client uses a deduplicated name dictionary, packing each entity reference
 with its status, rather than repeating names for every commit or embedding full file audits.
-Merge entries describe integration and may repeat the branch entries; do not
-sum their counts as unique production totals. Dates use the recorded commit
+Each change is therefore attributed to one entry. Dates use the recorded commit
 timestamp, not the generation time.
 
 Uncommitted files, unreachable branches, empty commits, raw untracked renders and commits

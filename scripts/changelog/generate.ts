@@ -155,36 +155,66 @@ export function buildChangelog(cwd = process.cwd()) {
     : { nodes: [], edges: [] }
   for (const commit of commits) {
     const [date, subject, parents] = git('show', '-s', '--no-show-signature', '--no-notes', '--format=%cI%x00%s%x00%P', commit).trimEnd().split('\0')
-    const parent = parents?.split(' ')[0] || null
-    // No rename detection: moves are explicitly represented as a deletion and an addition.
-    const parts = git('diff-tree', '--root', '--no-commit-id', '-r', '--no-renames', '--name-status', '-z',
-      ...(parent ? [parent, commit] : [commit])).split('\0')
-    const files: FileChange[] = []
-    for (let i = 0; i < parts.length - 1; i += 2) {
-      if (!generated.has(parts[i + 1])) files.push({ status: parts[i], path: parts[i + 1] })
+    const parentList = parents ? parents.split(' ').filter(Boolean) : []
+    const parent = parentList[0] ?? null
+    const against = (base: string | null) => {
+      // No rename detection: moves are explicitly represented as a deletion and an addition.
+      const parts = git('diff-tree', '--root', '--no-commit-id', '-r', '--no-renames', '--name-status', '-z',
+        ...(base ? [base, commit] : [commit])).split('\0')
+      const files: FileChange[] = []
+      for (let i = 0; i < parts.length - 1; i += 2) {
+        if (!generated.has(parts[i + 1])) files.push({ status: parts[i], path: parts[i + 1] })
+      }
+      return files
     }
+    // A merge only records what it introduced itself: files (and then entities) changed against every parent.
+    // Branch commits are listed separately, so comparing with the first parent alone would repeat them.
+    const perParent = (parentList.length ? parentList : [null]).map((base) => ({ base, files: against(base) }))
+    const own = perParent.slice(1).reduce((paths, { files }) => new Set(files.map(({ path }) => path).filter((path) => paths.has(path))),
+      new Set(perParent[0].files.map(({ path }) => path)))
+    const files = perParent[0].files.filter(({ path }) => own.has(path))
     files.sort((a, b) => a.path < b.path ? -1 : a.path > b.path ? 1 : 0)
     if (!files.length) continue
     const entry: Entry = {
-      commit, parent, date, subject, merge: (parents?.split(' ').length ?? 0) > 1, entities: [],
+      commit, parent, date, subject, merge: parentList.length > 1, entities: [],
       groups: categories.flatMap((category) => {
         const matching = files.filter(({ path }) => categoryFor(path) === category)
         return matching.length ? [{ category, files: matching }] : []
       }),
     }
-    const graphChange = files.find(({ path }) => path === graphPath)
     if (files.some(({ path }) => /^(src\/data\/graph(?:\.[^.]+)?\.json$|docs\/graph\/evidence\/(?:nodes|edges)\/|public\/(?:genre-previews|audio|loops|instrument-)|(?:docs|scripts)\/(?:previews|loops|artwork)\/briefs\/)/.test(path))) {
-      const before = graphAt(parent)
       const after = graphAt(commit)
-      if (graphChange) entry.graph = { nodes: delta(before.nodes, after.nodes), edges: delta(before.edges, after.edges) }
-      entry.entities = affectedEntities(files, before, after, entry.graph, (file) => [
-        !parent || file.status === 'A' ? {} : JSON.parse(git('show', `${parent}:${file.path}`)) as Record<string, unknown>,
-        file.status === 'D' ? {} : JSON.parse(git('show', `${commit}:${file.path}`)) as Record<string, unknown>,
-      ])
+      const changes = perParent.map(({ base, files: baseFiles }) => {
+        const scoped = baseFiles.filter(({ path }) => own.has(path))
+        const before = graphAt(base)
+        const graph = scoped.some(({ path }) => path === graphPath)
+          ? { nodes: delta(before.nodes, after.nodes), edges: delta(before.edges, after.edges) }
+          : undefined
+        const entities = affectedEntities(scoped, before, after, graph, (file) => [
+          !base || file.status === 'A' ? {} : JSON.parse(git('show', `${base}:${file.path}`)) as Record<string, unknown>,
+          file.status === 'D' ? {} : JSON.parse(git('show', `${commit}:${file.path}`)) as Record<string, unknown>,
+        ])
+        return { graph, entities }
+      })
+      const [first, ...others] = changes
+      const changedIds = (graph: Entry['graph'], kind: 'nodes' | 'edges') =>
+        new Set(graph ? [...graph[kind].added, ...graph[kind].updated, ...graph[kind].removed] : [])
+      const keep = (kind: 'nodes' | 'edges', id: string) => others.every(({ graph }) => changedIds(graph, kind).has(id))
+      if (first.graph) {
+        entry.graph = {
+          nodes: { added: first.graph.nodes.added.filter((id) => keep('nodes', id)), updated: first.graph.nodes.updated.filter((id) => keep('nodes', id)), removed: first.graph.nodes.removed.filter((id) => keep('nodes', id)) },
+          edges: { added: first.graph.edges.added.filter((id) => keep('edges', id)), updated: first.graph.edges.updated.filter((id) => keep('edges', id)), removed: first.graph.edges.removed.filter((id) => keep('edges', id)) },
+        }
+      }
+      entry.entities = first.entities.flatMap(({ category, items }) => {
+        const kept = items.filter(({ id }) => others.every(({ entities }) =>
+          entities.some((group) => group.category === category && group.items.some((item) => item.id === id))))
+        return kept.length ? [{ category, items: kept }] : []
+      })
     }
     entries.push(entry)
   }
-  const data = { version: 3, entries }
+  const data = { version: 4, entries }
   return { root, data, json: `${JSON.stringify(data, null, 2)}\n`, markdown: renderMarkdown(entries) }
 }
 
@@ -194,7 +224,8 @@ function renderMarkdown(entries: Entry[]) {
     '# Changelog', '',
     'Generated from committed Git history by `npm run changelog`. Do not edit by hand.', '',
     'Commits with file changes reachable from HEAD are listed in Git topological order (newest first).',
-    'Each commit is compared with its first parent; merge entries describe integration and may repeat branch changes.',
+    'Each commit is compared with its parent. Merge commits only list files changed against every parent (such as conflict resolutions);',
+    'clean merges are omitted because their branch commits are already listed.',
     'Moves appear as a deletion and an addition. Generated-changelog-only commits and uncommitted changes are excluded.',
     'Dates are commit timestamps. Commit messages and file paths are historical records, not editorial release notes.', '',
     'Graph summaries count added, updated and removed entities; follow the commit link for exact field and binary changes.',
