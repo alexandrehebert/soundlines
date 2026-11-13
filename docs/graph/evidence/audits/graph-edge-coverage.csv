@@ -687,6 +687,7 @@ key:alban-berg-serialism,key_artist_of,high,docs/graph/evidence/edges/key__alban
 key:ali-akbar-khan-hindustani-classical,key_artist_of,high,docs/graph/evidence/edges/key__ali-akbar-khan-hindustani-classical.md,Source-checked
 key:alice-coltrane-spiritual-jazz,key_artist_of,high,docs/graph/evidence/edges/key__alice-coltrane-spiritual-jazz.md,Source-checked
 key:alison-krauss-bluegrass,key_artist_of,high,docs/graph/evidence/edges/key__alison-krauss-bluegrass.md,Source-checked
+key:allman-brothers-band-southern-rock,key_artist_of,high,docs/graph/evidence/edges/key__allman-brothers-band-southern-rock.md,Source checked (2026-11-11)
 key:altern-8-breakbeat-hardcore,key_artist_of,medium,docs/graph/evidence/edges/key__altern-8-breakbeat-hardcore.md,Source checked (2026-11-05)
 key:alton-ellis-rocksteady,key_artist_of,high,docs/graph/evidence/edges/key__alton-ellis-rocksteady.md,Source-checked
 key:amon-duul-ii-krautrock,key_artist_of,high,docs/graph/evidence/edges/key__amon-duul-ii-krautrock.md,Reviewed — confirmed; upgraded to high
@@ -715,6 +716,7 @@ key:avicii-edm,key_artist_of,high,docs/graph/evidence/edges/key__avicii-edm.md,S
 key:ayler-free,key_artist_of,high,docs/graph/evidence/edges/key__ayler-free.md,Reviewed — key role confirmed; raised to high
 key:babes-wodumo-gqom,key_artist_of,medium,docs/graph/evidence/edges/key__babes-wodumo-gqom.md,Source checked (2026-11-05)
 key:bach-baroque,key_artist_of,high,docs/graph/evidence/edges/key__bach-baroque.md,Reviewed — Confirmed; upgraded to high
+key:bad-brains-hardcore-punk,key_artist_of,high,docs/graph/evidence/edges/key__bad-brains-hardcore-punk.md,Source checked (2026-11-11)
 key:bad-bunny-reggaeton,key_artist_of,high,docs/graph/evidence/edges/key__bad-bunny-reggaeton.md,Source checked (2026-11-05)
 key:baker-cool,key_artist_of,high,docs/graph/evidence/edges/key__baker-cool.md,Reviewed — key role confirmed; raised to high
 key:baltimora-italo-disco,key_artist_of,high,docs/graph/evidence/edges/key__baltimora-italo-disco.md,Source checked (2026-11-05)
@@ -737,16 +739,21 @@ key:bhimsen-joshi-hindustani-classical,key_artist_of,high,docs/graph/evidence/ed
 key:bi-kidude-taarab,key_artist_of,high,docs/graph/evidence/edges/key__bi-kidude-taarab.md,Source checked (2026-11-05)
 key:bill-monroe-bluegrass,key_artist_of,high,docs/graph/evidence/edges/key__bill-monroe-bluegrass.md,Source checked (2026-11-05)
 key:billie-holiday-vocal-jazz,key_artist_of,high,docs/graph/evidence/edges/key__billie-holiday-vocal-jazz.md,Source checked (2026-11-05)
+key:black-coffee-afro-house,key_artist_of,high,docs/graph/evidence/edges/key__black-coffee-afro-house.md,Source checked (2026-11-11)
 key:black-coffee-deep-house,key_artist_of,medium,docs/graph/evidence/edges/key__black-coffee-deep-house.md,Source checked (2026-11-05)
 key:black-coffee-house,key_artist_of,high,docs/graph/evidence/edges/key__black-coffee-house.md,Source checked (2026-11-05)
+key:black-flag-hardcore-punk,key_artist_of,high,docs/graph/evidence/edges/key__black-flag-hardcore-punk.md,Source checked (2026-11-11)
+key:black-motion-afro-house,key_artist_of,high,docs/graph/evidence/edges/key__black-motion-afro-house.md,Source checked (2026-11-11)
 key:blackpink-k-pop,key_artist_of,high,docs/graph/evidence/edges/key__blackpink-k-pop.md,Source checked (2026-11-05)
 key:blake-baxter-detroit-techno,key_artist_of,high,docs/graph/evidence/edges/key__blake-baxter-detroit-techno.md,Reviewed — Baxter as first-wave Detroit techno confirmed
 key:blakey-hard-bop,key_artist_of,high,docs/graph/evidence/edges/key__blakey-hard-bop.md,Reviewed — key status confirmed; raised to high
+key:blind-guardian-power-metal,key_artist_of,high,docs/graph/evidence/edges/key__blind-guardian-power-metal.md,Source checked (2026-11-11)
 key:blink-182-pop-punk,key_artist_of,high,docs/graph/evidence/edges/key__blink-182-pop-punk.md,Source checked (2026-11-05)
 key:blur-britpop,key_artist_of,high,docs/graph/evidence/edges/key__blur-britpop.md,Source checked (2026-11-05)
 key:bob-dylan-americana,key_artist_of,low,docs/graph/evidence/edges/key__bob-dylan-americana.md,Source checked (2026-11-05)
 key:bob-dylan-folk,key_artist_of,high,docs/graph/evidence/edges/key__bob-dylan-folk.md,Reviewed — raised to high
 key:bob-marley-reggae,key_artist_of,high,docs/graph/evidence/edges/key__bob-marley-reggae.md,Source checked (2026-11-05)
+key:bob-marley-roots-reggae,key_artist_of,high,docs/graph/evidence/edges/key__bob-marley-roots-reggae.md,Source checked (2026-11-11)
 key:bob-sinclar-french-house,key_artist_of,high,docs/graph/evidence/edges/key__bob-sinclar-french-house.md,Source checked (2026-11-05)
 key:bob-sinclar-french-touch,key_artist_of,high,docs/graph/evidence/edges/key__bob-sinclar-french-touch.md,Source checked (2026-11-05)
 key:bobby-orlando-hi-nrg,key_artist_of,medium,docs/graph/evidence/edges/key__bobby-orlando-hi-nrg.md,Source checked (2026-11-05)
@@ -759,8 +766,10 @@ key:brubeck-cool,key_artist_of,high,docs/graph/evidence/edges/key__brubeck-cool.
 key:bts-k-pop,key_artist_of,high,docs/graph/evidence/edges/key__bts-k-pop.md,Source checked (2026-11-05)
 key:burial-dubstep,key_artist_of,high,docs/graph/evidence/edges/key__burial-dubstep.md,Source checked (2026-11-05)
 key:burna-boy-afrobeats,key_artist_of,medium,docs/graph/evidence/edges/key__burna-boy-afrobeats.md,Source checked (2026-11-05)
+key:burning-spear-roots-reggae,key_artist_of,high,docs/graph/evidence/edges/key__burning-spear-roots-reggae.md,Source checked (2026-11-11)
 key:burzum-black-metal,key_artist_of,high,docs/graph/evidence/edges/key__burzum-black-metal.md,Source checked (2026-11-05)
 key:byrd-renaissance,key_artist_of,high,docs/graph/evidence/edges/key__byrd-renaissance.md,Source checked (2026-11-05)
+key:calibre-liquid-drum-and-bass,key_artist_of,high,docs/graph/evidence/edges/key__calibre-liquid-drum-and-bass.md,Source checked (2026-11-11)
 key:calvin-harris-edm,key_artist_of,high,docs/graph/evidence/edges/key__calvin-harris-edm.md,2026-11-04
 key:calvin-harris-electro-house,key_artist_of,low,docs/graph/evidence/edges/key__calvin-harris-electro-house.md,2026-11-04
 key:calypso-rose-calypso,key_artist_of,high,docs/graph/evidence/edges/key__calypso-rose-calypso.md,Source checked (2026-11-05)
@@ -790,6 +799,7 @@ key:chic-disco,key_artist_of,high,docs/graph/evidence/edges/key__chic-disco.md,2
 key:chief-keef-drill,key_artist_of,medium,docs/graph/evidence/edges/key__chief-keef-drill.md,Source checked (2026-11-05)
 key:chitti-babu-carnatic,key_artist_of,medium,docs/graph/evidence/edges/key__chitti-babu-carnatic.md,Reviewed — Confirmed; medium kept
 key:chopin-romantic,key_artist_of,high,docs/graph/evidence/edges/key__chopin-romantic.md,Source checked (2026-11-05)
+key:chris-liberator-acid-techno,key_artist_of,high,docs/graph/evidence/edges/key__chris-liberator-acid-techno.md,Source checked (2026-11-11)
 key:clash-punk,key_artist_of,high,docs/graph/evidence/edges/key__clash-punk.md,Source checked (2026-11-05)
 key:claude-debussy-impressionism,key_artist_of,medium,docs/graph/evidence/edges/key__claude-debussy-impressionism.md,Source checked (2026-11-05)
 key:coleman-free,key_artist_of,high,docs/graph/evidence/edges/key__coleman-free.md,Reviewed — founding role confirmed; raised to high
@@ -804,7 +814,9 @@ key:craig-david-uk-garage,key_artist_of,high,docs/graph/evidence/edges/key__crai
 key:cream-blues-rock,key_artist_of,high,docs/graph/evidence/edges/key__cream-blues-rock.md,Source checked (2026-11-05)
 key:crime-mob-crunk,key_artist_of,high,docs/graph/evidence/edges/key__crime-mob-crunk.md,Source checked (2026-11-05)
 key:crimson-progressive,key_artist_of,high,docs/graph/evidence/edges/key__crimson-progressive.md,Reviewed — confirmed; upgraded to high
+key:culoe-de-song-afro-house,key_artist_of,high,docs/graph/evidence/edges/key__culoe-de-song-afro-house.md,Source checked (2026-11-11)
 key:culture-musical-club-taarab,key_artist_of,high,docs/graph/evidence/edges/key__culture-musical-club-taarab.md,Source checked (2026-11-05)
+key:culture-roots-reggae,key_artist_of,high,docs/graph/evidence/edges/key__culture-roots-reggae.md,Source checked (2026-11-11)
 key:cure-post-punk,key_artist_of,medium,docs/graph/evidence/edges/key__cure-post-punk.md,Source checked (2026-11-05)
 key:cybotron-electro,key_artist_of,medium,docs/graph/evidence/edges/key__cybotron-electro.md,2026-11-04
 key:daddy-yankee-reggaeton,key_artist_of,high,docs/graph/evidence/edges/key__daddy-yankee-reggaeton.md,Source checked (2026-11-05)
@@ -815,6 +827,7 @@ key:dangelo-contemporary-r-and-b,key_artist_of,medium,docs/graph/evidence/edges/
 key:dangelo-neo-soul,key_artist_of,medium,docs/graph/evidence/edges/key__dangelo-neo-soul.md,Source checked (2026-11-05)
 key:daniel-bell-minimal-techno,key_artist_of,high,docs/graph/evidence/edges/key__daniel-bell-minimal-techno.md,Source checked (2026-11-05)
 key:darkthrone-black-metal,key_artist_of,high,docs/graph/evidence/edges/key__darkthrone-black-metal.md,Source checked (2026-11-05)
+key:dave-the-drummer-acid-techno,key_artist_of,high,docs/graph/evidence/edges/key__dave-the-drummer-acid-techno.md,Source checked (2026-11-11)
 key:david-bowie-glam-rock,key_artist_of,high,docs/graph/evidence/edges/key__david-bowie-glam-rock.md,Source checked (2026-11-05)
 key:david-guetta-edm,key_artist_of,high,docs/graph/evidence/edges/key__david-guetta-edm.md,2026-11-04
 key:david-guetta-electro-house,key_artist_of,medium,docs/graph/evidence/edges/key__david-guetta-electro-house.md,2026-11-04
@@ -824,6 +837,7 @@ key:davis-fusion,key_artist_of,high,docs/graph/evidence/edges/key__davis-fusion.
 key:davis-modal,key_artist_of,high,docs/graph/evidence/edges/key__davis-modal.md,Source checked (2026-11-05)
 key:de-la-soul-alternative-rap,key_artist_of,high,docs/graph/evidence/edges/key__de-la-soul-alternative-rap.md,Source checked (2026-11-05)
 key:de-la-soul-jazz-rap,key_artist_of,high,docs/graph/evidence/edges/key__de-la-soul-jazz-rap.md,Source checked (2026-11-05)
+key:dead-kennedys-hardcore-punk,key_artist_of,high,docs/graph/evidence/edges/key__dead-kennedys-hardcore-punk.md,Source checked (2026-11-11)
 key:dead-psychedelic,key_artist_of,high,docs/graph/evidence/edges/key__dead-psychedelic.md,Reviewed — confirmed; upgraded to high
 key:deadmau5-edm,key_artist_of,medium,docs/graph/evidence/edges/key__deadmau5-edm.md,Source checked (2026-11-05)
 key:death-death-metal,key_artist_of,high,docs/graph/evidence/edges/key__death-death-metal.md,Source checked (2026-11-05)
@@ -883,6 +897,7 @@ key:erik-satie-impressionism,key_artist_of,medium,docs/graph/evidence/edges/key_
 key:erykah-badu-neo-soul,key_artist_of,high,docs/graph/evidence/edges/key__erykah-badu-neo-soul.md,Source checked (2026-11-05)
 key:et-mensah-highlife,key_artist_of,high,docs/graph/evidence/edges/key__et-mensah-highlife.md,Source checked (2026-11-05)
 key:ewan-pearson-tech-house,key_artist_of,high,docs/graph/evidence/edges/key__ewan-pearson-tech-house.md,Source checked (2026-11-05)
+key:fabio-liquid-drum-and-bass,key_artist_of,high,docs/graph/evidence/edges/key__fabio-liquid-drum-and-bass.md,Source checked (2026-11-11)
 key:farley-jackmaster-funk-chicago-house,key_artist_of,high,docs/graph/evidence/edges/key__farley-jackmaster-funk-chicago-house.md,Source checked (2026-11-05)
 key:fatboy-slim-big-beat,key_artist_of,high,docs/graph/evidence/edges/key__fatboy-slim-big-beat.md,Source checked (2026-11-05)
 key:fatboy-slim-breakbeat,key_artist_of,medium,docs/graph/evidence/edges/key__fatboy-slim-breakbeat.md,Source checked (2026-11-05)
@@ -901,6 +916,7 @@ key:future-trap-rap,key_artist_of,high,docs/graph/evidence/edges/key__future-tra
 key:gamelan-madu-sari-gamelan,key_artist_of,medium,docs/graph/evidence/edges/key__gamelan-madu-sari-gamelan.md,2026-11-04
 key:gamelan-sekar-tunjung-gamelan,key_artist_of,medium,docs/graph/evidence/edges/key__gamelan-sekar-tunjung-gamelan.md,Source checked (2026-11-05)
 key:gamelan-son-of-lion-gamelan,key_artist_of,medium,docs/graph/evidence/edges/key__gamelan-son-of-lion-gamelan.md,Source checked (2026-11-05)
+key:gamma-ray-power-metal,key_artist_of,high,docs/graph/evidence/edges/key__gamma-ray-power-metal.md,Source checked (2026-11-11)
 key:gang-starr-boom-bap,key_artist_of,medium,docs/graph/evidence/edges/key__gang-starr-boom-bap.md,Source checked (2026-11-05)
 key:gang-starr-jazz-rap,key_artist_of,high,docs/graph/evidence/edges/key__gang-starr-jazz-rap.md,Source checked (2026-11-05)
 key:gary-numan-synth-pop,key_artist_of,medium,docs/graph/evidence/edges/key__gary-numan-synth-pop.md,2026-11-04
@@ -940,9 +956,12 @@ key:hazell-dean-hi-nrg,key_artist_of,high,docs/graph/evidence/edges/key__hazell-
 key:headhunterz-hardstyle,key_artist_of,high,docs/graph/evidence/edges/key__headhunterz-hardstyle.md,Reviewed — Headhunterz as a leading hardstyle figure confirmed
 key:heads-post-punk,key_artist_of,high,docs/graph/evidence/edges/key__heads-post-punk.md,Source checked (2026-11-05)
 key:hella-math-rock,key_artist_of,high,docs/graph/evidence/edges/key__hella-math-rock.md,Source checked (2026-11-05)
+key:helloween-power-metal,key_artist_of,high,docs/graph/evidence/edges/key__helloween-power-metal.md,Source checked (2026-11-11)
 key:hendrix-blues-rock,key_artist_of,medium,docs/graph/evidence/edges/key__hendrix-blues-rock.md,Source checked (2026-11-05)
 key:hendrix-psychedelic,key_artist_of,high,docs/graph/evidence/edges/key__hendrix-psychedelic.md,Reviewed — confirmed; upgraded to high
+key:high-contrast-liquid-drum-and-bass,key_artist_of,high,docs/graph/evidence/edges/key__high-contrast-liquid-drum-and-bass.md,Source checked (2026-11-11)
 key:hildegard-medieval,key_artist_of,high,docs/graph/evidence/edges/key__hildegard-medieval.md,Source checked (2026-11-05)
+key:howlin-wolf-chicago-blues,key_artist_of,high,docs/graph/evidence/edges/key__howlin-wolf-chicago-blues.md,Source checked (2026-11-11)
 key:huun-huur-tu-khoomei,key_artist_of,high,docs/graph/evidence/edges/key__huun-huur-tu-khoomei.md,Reviewed — raised to high
 key:ibrahim-ferrer-son-cubano,key_artist_of,high,docs/graph/evidence/edges/key__ibrahim-ferrer-son-cubano.md,Source checked (2026-11-05)
 key:ik-dairo-juju,key_artist_of,high,docs/graph/evidence/edges/key__ik-dairo-juju.md,Source checked (2026-11-05)
@@ -963,15 +982,19 @@ key:james-ferraro-vaporwave,key_artist_of,high,docs/graph/evidence/edges/key__ja
 key:jamie-principle-chicago-house,key_artist_of,high,docs/graph/evidence/edges/key__jamie-principle-chicago-house.md,Source checked (2026-11-05)
 key:jamie-xx-house,key_artist_of,medium,docs/graph/evidence/edges/key__jamie-xx-house.md,Source checked (2026-11-05)
 key:jamiroquai-acid-jazz,key_artist_of,high,docs/graph/evidence/edges/key__jamiroquai-acid-jazz.md,Reviewed — key role confirmed; raised to high
+key:janet-jackson-dance-pop,key_artist_of,high,docs/graph/evidence/edges/key__janet-jackson-dance-pop.md,Source checked (2026-11-11)
 key:jeff-mills-detroit-techno,key_artist_of,high,docs/graph/evidence/edges/key__jeff-mills-detroit-techno.md,Reviewed — Mills as Detroit techno key artist confirmed
 key:jeff-mills-minimal-techno,key_artist_of,medium,docs/graph/evidence/edges/key__jeff-mills-minimal-techno.md,2026-11-04
 key:jeff-mills-techno,key_artist_of,high,docs/graph/evidence/edges/key__jeff-mills-techno.md,Source checked (2026-11-05)
+key:jelly-roll-morton-new-orleans-jazz,key_artist_of,high,docs/graph/evidence/edges/key__jelly-roll-morton-new-orleans-jazz.md,Source checked (2026-11-11)
 key:jesse-saunders-chicago-house,key_artist_of,high,docs/graph/evidence/edges/key__jesse-saunders-chicago-house.md,Source checked (2026-11-05)
+key:jessi-colter-outlaw-country,key_artist_of,high,docs/graph/evidence/edges/key__jessi-colter-outlaw-country.md,Source checked (2026-11-11)
 key:joan-baez-folk,key_artist_of,high,docs/graph/evidence/edges/key__joan-baez-folk.md,Reviewed — raised to high
 key:joao-bosco-samba,key_artist_of,medium,docs/graph/evidence/edges/key__joao-bosco-samba.md,Source checked (2026-11-05)
 key:joao-gilberto-bossa-nova,key_artist_of,high,docs/graph/evidence/edges/key__joao-gilberto-bossa-nova.md,Source checked (2026-11-05)
 key:john-coltrane-spiritual-jazz,key_artist_of,medium,docs/graph/evidence/edges/key__john-coltrane-spiritual-jazz.md,Source checked (2026-11-05)
 key:john-digweed-house,key_artist_of,medium,docs/graph/evidence/edges/key__john-digweed-house.md,Source checked (2026-11-05)
+key:john-digweed-progressive-house,key_artist_of,high,docs/graph/evidence/edges/key__john-digweed-progressive-house.md,Source checked (2026-11-11)
 key:johnny-cash-americana,key_artist_of,medium,docs/graph/evidence/edges/key__johnny-cash-americana.md,Source checked (2026-11-05)
 key:johnny-cash-country,key_artist_of,high,docs/graph/evidence/edges/key__johnny-cash-country.md,Source checked (2026-11-05)
 key:johnny-ventura-merengue,key_artist_of,high,docs/graph/evidence/edges/key__johnny-ventura-merengue.md,Source checked (2026-11-05)
@@ -983,6 +1006,7 @@ key:juan-atkins-detroit-techno,key_artist_of,high,docs/graph/evidence/edges/key_
 key:juan-atkins-techno,key_artist_of,high,docs/graph/evidence/edges/key__juan-atkins-techno.md,Source checked (2026-11-05)
 key:juan-luis-guerra-bachata,key_artist_of,high,docs/graph/evidence/edges/key__juan-luis-guerra-bachata.md,Source checked (2026-11-05)
 key:juan-luis-guerra-merengue,key_artist_of,high,docs/graph/evidence/edges/key__juan-luis-guerra-merengue.md,Source checked (2026-11-05)
+key:juice-wrld-emo-rap,key_artist_of,high,docs/graph/evidence/edges/key__juice-wrld-emo-rap.md,Source checked (2026-11-11)
 key:justice-electro-house,key_artist_of,high,docs/graph/evidence/edges/key__justice-electro-house.md,Source checked (2026-11-05)
 key:justice-french-house,key_artist_of,medium,docs/graph/evidence/edges/key__justice-french-house.md,Source checked (2026-11-05)
 key:kabza-de-small-amapiano,key_artist_of,high,docs/graph/evidence/edges/key__kabza-de-small-amapiano.md,Source checked (2026-11-05)
@@ -1001,6 +1025,7 @@ key:khaled-rai,key_artist_of,high,docs/graph/evidence/edges/key__khaled-rai.md,S
 key:killswitch-engage-metalcore,key_artist_of,high,docs/graph/evidence/edges/key__killswitch-engage-metalcore.md,Source checked (2026-11-05)
 key:kim-so-hee-pansori,key_artist_of,high,docs/graph/evidence/edges/key__kim-so-hee-pansori.md,Source checked (2026-11-05)
 key:king-blues,key_artist_of,high,docs/graph/evidence/edges/key__king-blues.md,Reviewed — confidence → high; sources added
+key:king-oliver-new-orleans-jazz,key_artist_of,high,docs/graph/evidence/edges/key__king-oliver-new-orleans-jazz.md,Source checked (2026-11-11)
 key:king-sunny-ade-juju,key_artist_of,high,docs/graph/evidence/edges/key__king-sunny-ade-juju.md,Source checked (2026-11-05)
 key:king-tubby-dub,key_artist_of,high,docs/graph/evidence/edges/key__king-tubby-dub.md,Reviewed — evidence checked; confidence and claim scope updated (2026-11-05)
 key:kode9-dubstep,key_artist_of,high,docs/graph/evidence/edges/key__kode9-dubstep.md,Reviewed — evidence checked; confidence and claim scope updated (2026-11-05)
@@ -1026,25 +1051,32 @@ key:lauryn-hill-contemporary-r-and-b,key_artist_of,medium,docs/graph/evidence/ed
 key:lauryn-hill-neo-soul,key_artist_of,high,docs/graph/evidence/edges/key__lauryn-hill-neo-soul.md,Reviewed — evidence checked; confidence and claim scope updated (2026-11-05)
 key:lee-scratch-perry-dub,key_artist_of,high,docs/graph/evidence/edges/key__lee-scratch-perry-dub.md,Reviewed — evidence checked; confidence and claim scope updated (2026-11-05)
 key:lee-scratch-perry-reggae,key_artist_of,high,docs/graph/evidence/edges/key__lee-scratch-perry-reggae.md,Reviewed — evidence checked; confidence and claim scope updated (2026-11-05)
+key:leftfield-progressive-house,key_artist_of,high,docs/graph/evidence/edges/key__leftfield-progressive-house.md,Source checked (2026-11-11)
 key:lefty-frizzell-honky-tonk,key_artist_of,high,docs/graph/evidence/edges/key__lefty-frizzell-honky-tonk.md,Reviewed — raised to high
 key:leonin-medieval,key_artist_of,high,docs/graph/evidence/edges/key__leonin-medieval.md,Reviewed — evidence checked; confidence and claim scope updated (2026-11-05)
 key:lil-durk-drill,key_artist_of,medium,docs/graph/evidence/edges/key__lil-durk-drill.md,Reviewed — evidence checked; confidence and claim scope updated (2026-11-05)
 key:lil-jon-east-side-boyz-crunk,key_artist_of,high,docs/graph/evidence/edges/key__lil-jon-east-side-boyz-crunk.md,Reviewed — evidence checked; confidence and claim scope updated (2026-11-05)
+key:lil-peep-emo-rap,key_artist_of,high,docs/graph/evidence/edges/key__lil-peep-emo-rap.md,Source checked (2026-11-11)
 key:lil-wayne-southern-rap,key_artist_of,high,docs/graph/evidence/edges/key__lil-wayne-southern-rap.md,Reviewed — evidence checked; confidence and claim scope updated (2026-11-05)
 key:linkin-park-nu-metal,key_artist_of,high,docs/graph/evidence/edges/key__linkin-park-nu-metal.md,Reviewed — evidence checked; confidence and claim scope updated (2026-11-05)
+key:little-walter-chicago-blues,key_artist_of,high,docs/graph/evidence/edges/key__little-walter-chicago-blues.md,Source checked (2026-11-11)
 key:lord-kitchener-calypso,key_artist_of,high,docs/graph/evidence/edges/key__lord-kitchener-calypso.md,Reviewed — evidence checked; confidence and claim scope updated (2026-11-05)
 key:los-angeles-azules-cumbia,key_artist_of,high,docs/graph/evidence/edges/key__los-angeles-azules-cumbia.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
+key:louis-armstrong-new-orleans-jazz,key_artist_of,high,docs/graph/evidence/edges/key__louis-armstrong-new-orleans-jazz.md,Source checked (2026-11-11)
 key:louis-armstrong-vocal-jazz,key_artist_of,high,docs/graph/evidence/edges/key__louis-armstrong-vocal-jazz.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:ltj-bukem-drum-and-bass,key_artist_of,high,docs/graph/evidence/edges/key__ltj-bukem-drum-and-bass.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:ltj-bukem-jungle,key_artist_of,high,docs/graph/evidence/edges/key__ltj-bukem-jungle.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:lucinda-williams-alt-country,key_artist_of,high,docs/graph/evidence/edges/key__lucinda-williams-alt-country.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:lucinda-williams-americana,key_artist_of,high,docs/graph/evidence/edges/key__lucinda-williams-americana.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:luzmila-carpio-andean-folk,key_artist_of,medium,docs/graph/evidence/edges/key__luzmila-carpio-andean-folk.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
+key:lynyrd-skynyrd-southern-rock,key_artist_of,high,docs/graph/evidence/edges/key__lynyrd-skynyrd-southern-rock.md,Source checked (2026-11-11)
 key:mac-dre-hyphy,key_artist_of,high,docs/graph/evidence/edges/key__mac-dre-hyphy.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:machel-montano-soca,key_artist_of,medium,docs/graph/evidence/edges/key__machel-montano-soca.md,Source checked (2026-11-12)
 key:machito-latin-jazz,key_artist_of,high,docs/graph/evidence/edges/key__machito-latin-jazz.md,Reviewed — founding role confirmed; raised to high
+key:machito-mambo,key_artist_of,high,docs/graph/evidence/edges/key__machito-mambo.md,Source checked (2026-11-11)
 key:macintosh-plus-vaporwave,key_artist_of,high,docs/graph/evidence/edges/key__macintosh-plus-vaporwave.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:madlib-jazz-rap,key_artist_of,medium,docs/graph/evidence/edges/key__madlib-jazz-rap.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
+key:madonna-dance-pop,key_artist_of,high,docs/graph/evidence/edges/key__madonna-dance-pop.md,Source checked (2026-11-11)
 key:madonna-pop,key_artist_of,high,docs/graph/evidence/edges/key__madonna-pop.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:mahavishnu-fusion,key_artist_of,high,docs/graph/evidence/edges/key__mahavishnu-fusion.md,Reviewed — key status confirmed; raised to high
 key:mahmoud-guinia-gnawa,key_artist_of,high,docs/graph/evidence/edges/key__mahmoud-guinia-gnawa.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
@@ -1059,6 +1091,7 @@ key:marley-marl-east-coast-rap,key_artist_of,high,docs/graph/evidence/edges/key_
 key:marley-marl-old-school-rap,key_artist_of,high,docs/graph/evidence/edges/key__marley-marl-old-school-rap.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:marshall-jefferson-chicago-house,key_artist_of,high,docs/graph/evidence/edges/key__marshall-jefferson-chicago-house.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:marshall-jefferson-house,key_artist_of,high,docs/graph/evidence/edges/key__marshall-jefferson-house.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
+key:marshall-tucker-band-southern-rock,key_artist_of,high,docs/graph/evidence/edges/key__marshall-tucker-band-southern-rock.md,Source checked (2026-11-11)
 key:martin-garrix-edm,key_artist_of,high,docs/graph/evidence/edges/key__martin-garrix-edm.md,2026-11-04
 key:marvin-gaye-r-and-b,key_artist_of,medium,docs/graph/evidence/edges/key__marvin-gaye-r-and-b.md,Reviewed — centrality and genre fit checked; scope caveat recorded (2026-11-05)
 key:marvin-gaye-soul,key_artist_of,high,docs/graph/evidence/edges/key__marvin-gaye-soul.md,2026-11-04
@@ -1070,6 +1103,7 @@ key:mayhem-black-metal,key_artist_of,high,docs/graph/evidence/edges/key__mayhem-
 key:megadeth-thrash-metal,key_artist_of,high,docs/graph/evidence/edges/key__megadeth-thrash-metal.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
 key:mei-lanfang-peking-opera,key_artist_of,high,docs/graph/evidence/edges/key__mei-lanfang-peking-opera.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
 key:metallica-thrash-metal,key_artist_of,high,docs/graph/evidence/edges/key__metallica-thrash-metal.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
+key:michael-jackson-dance-pop,key_artist_of,high,docs/graph/evidence/edges/key__michael-jackson-dance-pop.md,Source checked (2026-11-11)
 key:michael-jackson-pop,key_artist_of,high,docs/graph/evidence/edges/key__michael-jackson-pop.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
 key:mighty-sparrow-calypso,key_artist_of,high,docs/graph/evidence/edges/key__mighty-sparrow-calypso.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
 key:mike-banks-detroit-techno,key_artist_of,high,docs/graph/evidence/edges/key__mike-banks-detroit-techno.md,Reviewed — confirmed; AllMusic URL corrected
@@ -1077,6 +1111,7 @@ key:milly-quezada-merengue,key_artist_of,high,docs/graph/evidence/edges/key__mil
 key:ministry-industrial-metal,key_artist_of,high,docs/graph/evidence/edges/key__ministry-industrial-metal.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
 key:minoru-muraoka-gagaku,key_artist_of,low,docs/graph/evidence/edges/key__minoru-muraoka-gagaku.md,Reviewed — Likely misattribution; set to low with note (flagged)
 key:miss-kittin-electroclash,key_artist_of,high,docs/graph/evidence/edges/key__miss-kittin-electroclash.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
+key:mixmaster-morris-ambient-house,key_artist_of,high,docs/graph/evidence/edges/key__mixmaster-morris-ambient-house.md,Source checked (2026-11-11)
 key:mj-cole-uk-garage,key_artist_of,high,docs/graph/evidence/edges/key__mj-cole-uk-garage.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
 key:moby-house,key_artist_of,medium,docs/graph/evidence/edges/key__moby-house.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
 key:moby-techno,key_artist_of,medium,docs/graph/evidence/edges/key__moby-techno.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
@@ -1087,6 +1122,7 @@ key:morbid-angel-death-metal,key_artist_of,high,docs/graph/evidence/edges/key__m
 key:morton-jazz,key_artist_of,high,docs/graph/evidence/edges/key__morton-jazz.md,Reviewed — key status confirmed; raised to high
 key:motorbass-french-house,key_artist_of,high,docs/graph/evidence/edges/key__motorbass-french-house.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
 key:mozart-classical,key_artist_of,high,docs/graph/evidence/edges/key__mozart-classical.md,Reviewed — Confirmed; upgraded to high
+key:muddy-waters-chicago-blues,key_artist_of,high,docs/graph/evidence/edges/key__muddy-waters-chicago-blues.md,Source checked (2026-11-11)
 key:my-bloody-valentine-dream-pop,key_artist_of,high,docs/graph/evidence/edges/key__my-bloody-valentine-dream-pop.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
 key:my-bloody-valentine-shoegaze,key_artist_of,high,docs/graph/evidence/edges/key__my-bloody-valentine-shoegaze.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
 key:nas-boom-bap,key_artist_of,medium,docs/graph/evidence/edges/key__nas-boom-bap.md,Reviewed — centrality and genre scope reassessed (2026-11-05)
@@ -1117,12 +1153,14 @@ key:parliament-funkadelic-funk,key_artist_of,high,docs/graph/evidence/edges/key_
 key:parvathy-baul-baul-songs,key_artist_of,high,docs/graph/evidence/edges/key__parvathy-baul-baul-songs.md,Source-checked; high confidence
 key:pat-thomas-highlife,key_artist_of,high,docs/graph/evidence/edges/key__pat-thomas-highlife.md,Source checked (2026-11-05)
 key:patrick-cowley-hi-nrg,key_artist_of,high,docs/graph/evidence/edges/key__patrick-cowley-hi-nrg.md,Reviewed — centrality checked; breadth/period caveat recorded (2026-11-05)
+key:paul-hindemith-neoclassicism,key_artist_of,high,docs/graph/evidence/edges/key__paul-hindemith-neoclassicism.md,Source checked (2026-11-11)
 key:paul-oakenfold-second-summer-of-love,key_artist_of,medium,docs/graph/evidence/edges/key__paul-oakenfold-second-summer-of-love.md,Reviewed — centrality checked; breadth/period caveat recorded (2026-11-05)
 key:paul-oakenfold-trance,key_artist_of,high,docs/graph/evidence/edges/key__paul-oakenfold-trance.md,Reviewed — centrality checked; breadth/period caveat recorded (2026-11-05)
 key:paul-van-dyk-trance,key_artist_of,high,docs/graph/evidence/edges/key__paul-van-dyk-trance.md,Reviewed — centrality checked; breadth/period caveat recorded (2026-11-05)
 key:peaches-electroclash,key_artist_of,high,docs/graph/evidence/edges/key__peaches-electroclash.md,Reviewed — centrality checked; breadth/period caveat recorded (2026-11-05)
 key:pearl-jam-grunge,key_artist_of,high,docs/graph/evidence/edges/key__pearl-jam-grunge.md,Source-checked; high confidence
 key:peggy-gou-house,key_artist_of,medium,docs/graph/evidence/edges/key__peggy-gou-house.md,Reviewed — centrality checked; breadth/period caveat recorded (2026-11-05)
+key:perez-prado-mambo,key_artist_of,high,docs/graph/evidence/edges/key__perez-prado-mambo.md,Source checked (2026-11-11)
 key:perfume-j-pop,key_artist_of,medium,docs/graph/evidence/edges/key__perfume-j-pop.md,Reviewed — centrality checked; breadth/period caveat recorded (2026-11-05)
 key:perotin-medieval,key_artist_of,high,docs/graph/evidence/edges/key__perotin-medieval.md,Reviewed — centrality checked; breadth/period caveat recorded (2026-11-05)
 key:perturbator-darksynth,key_artist_of,high,docs/graph/evidence/edges/key__perturbator-darksynth.md,Reviewed — genre centrality and career scope checked (2026-11-05)
@@ -1195,10 +1233,12 @@ key:sabri-brothers-qawwali,key_artist_of,medium,docs/graph/evidence/edges/key__s
 key:saint-vitus-doom-metal,key_artist_of,medium,docs/graph/evidence/edges/key__saint-vitus-doom-metal.md,"Reviewed — centrality, period and genre scope checked (2026-11-05)"
 key:sam-cooke-soul,key_artist_of,high,docs/graph/evidence/edges/key__sam-cooke-soul.md,2026-11-04
 key:sasha-house,key_artist_of,medium,docs/graph/evidence/edges/key__sasha-house.md,"Reviewed — centrality, period and genre scope checked (2026-11-05)"
+key:sasha-progressive-house,key_artist_of,high,docs/graph/evidence/edges/key__sasha-progressive-house.md,Source checked (2026-11-11)
 key:savage-italo-disco,key_artist_of,medium,docs/graph/evidence/edges/key__savage-italo-disco.md,"Reviewed — centrality, period and genre scope checked (2026-11-05)"
 key:schoenberg-modern,key_artist_of,medium,docs/graph/evidence/edges/key__schoenberg-modern.md,"Reviewed — centrality, period and genre scope checked (2026-11-05)"
 key:scientist-dub,key_artist_of,medium,docs/graph/evidence/edges/key__scientist-dub.md,"Reviewed — centrality, period and genre scope checked (2026-11-05)"
 key:selena-cumbia,key_artist_of,medium,docs/graph/evidence/edges/key__artist__of__selena-cumbia.md,Reviewed — source audit batch 028 (2026-11-05)
+key:sergei-prokofiev-neoclassicism,key_artist_of,high,docs/graph/evidence/edges/key__sergei-prokofiev-neoclassicism.md,Source checked (2026-11-11)
 key:shabba-ranks-dancehall,key_artist_of,high,docs/graph/evidence/edges/key__artist__of__shabba-ranks-dancehall.md,Reviewed — source audit batch 028 (2026-11-05)
 key:shang-xiaoyun-peking-opera,key_artist_of,high,docs/graph/evidence/edges/key__artist__of__shang-xiaoyun-peking-opera.md,Reviewed — source audit batch 028 (2026-11-05)
 key:showtek-hardstyle,key_artist_of,high,docs/graph/evidence/edges/key__showtek-hardstyle.md,Source-checked; high confidence
@@ -1232,6 +1272,7 @@ key:steve-roach-ambient,key_artist_of,high,docs/graph/evidence/edges/key__steve-
 key:stones-blues-rock,key_artist_of,medium,docs/graph/evidence/edges/key__artist__of__stones-blues-rock.md,Reviewed — source audit batch 028 (2026-11-05)
 key:stones-rock,key_artist_of,high,docs/graph/evidence/edges/key__stones-rock.md,Source-checked; high confidence
 key:stravinsky-modern,key_artist_of,medium,docs/graph/evidence/edges/key__artist__of__stravinsky-modern.md,Reviewed — source audit batch 028 (2026-11-05)
+key:stravinsky-neoclassicism,key_artist_of,high,docs/graph/evidence/edges/key__stravinsky-neoclassicism.md,Source checked (2026-11-11)
 key:suede-britpop,key_artist_of,high,docs/graph/evidence/edges/key__artist__of__suede-britpop.md,Reviewed — source audit batch 028 (2026-11-05)
 key:sunny-day-real-estate-emo,key_artist_of,high,docs/graph/evidence/edges/key__artist__of__sunny-day-real-estate-emo.md,Reviewed — source audit batch 028 (2026-11-05)
 key:sven-vath-trance,key_artist_of,medium,docs/graph/evidence/edges/key__artist__of__sven-vath-trance.md,Reviewed — source audit batch 028 (2026-11-05)
@@ -1256,9 +1297,12 @@ key:the-cure-dream-pop,key_artist_of,medium,docs/graph/evidence/edges/key__artis
 key:the-cure-gothic-rock,key_artist_of,high,docs/graph/evidence/edges/key__the-cure-gothic-rock.md,Source-checked; high confidence
 key:the-cure-new-wave,key_artist_of,medium,docs/graph/evidence/edges/key__artist__of__the-cure-new-wave.md,Reviewed — source audit batch 029 (2026-11-05)
 key:the-drifters-doo-wop,key_artist_of,medium,docs/graph/evidence/edges/key__the-drifters-doo-wop.md,Reviewed — note added; sources added; confidence unchanged
+key:the-geezer-acid-techno,key_artist_of,high,docs/graph/evidence/edges/key__the-geezer-acid-techno.md,Source checked (2026-11-11)
 key:the-heptones-rocksteady,key_artist_of,medium,docs/graph/evidence/edges/key__artist__of__the-heptones-rocksteady.md,Reviewed — source audit batch 029 (2026-11-05)
 key:the-human-league-new-wave,key_artist_of,medium,docs/graph/evidence/edges/key__artist__of__the-human-league-new-wave.md,Reviewed — source audit batch 029 (2026-11-05)
 key:the-human-league-synth-pop,key_artist_of,high,docs/graph/evidence/edges/key__the-human-league-synth-pop.md,Source-checked; high confidence
+key:the-klf-ambient-house,key_artist_of,high,docs/graph/evidence/edges/key__the-klf-ambient-house.md,Source checked (2026-11-11)
+key:the-orb-ambient-house,key_artist_of,high,docs/graph/evidence/edges/key__the-orb-ambient-house.md,Source checked (2026-11-11)
 key:the-orb-ambient-techno,key_artist_of,high,docs/graph/evidence/edges/key__the-orb-ambient-techno.md,Reviewed — The Orb as ambient-techno pioneers confirmed; AllMusic URL corrected
 key:the-orb-downtempo,key_artist_of,medium,docs/graph/evidence/edges/key__artist__of__the-orb-downtempo.md,Reviewed — source audit batch 029 (2026-11-05)
 key:the-orb-idm,key_artist_of,medium,docs/graph/evidence/edges/key__artist__of__the-orb-idm.md,Reviewed — source audit batch 029 (2026-11-05)
@@ -1282,6 +1326,7 @@ key:tiesto-edm,key_artist_of,high,docs/graph/evidence/edges/key__tiesto-edm.md,2
 key:tiesto-trance,key_artist_of,high,docs/graph/evidence/edges/key__tiesto-trance.md,2026-11-04
 key:tito-puente-latin,key_artist_of,medium,docs/graph/evidence/edges/key__tito-puente-latin.md,Reviewed — source audit batch 030 (2026-11-05)
 key:tito-puente-latin-jazz,key_artist_of,high,docs/graph/evidence/edges/key__tito-puente-latin-jazz.md,Reviewed — key status confirmed; raised to high
+key:tito-puente-mambo,key_artist_of,high,docs/graph/evidence/edges/key__tito-puente-mambo.md,Source checked (2026-11-11)
 key:tito-puente-salsa,key_artist_of,high,docs/graph/evidence/edges/key__tito-puente-salsa.md,Reviewed — source audit batch 030 (2026-11-05)
 key:todd-terry-garage-house,key_artist_of,medium,docs/graph/evidence/edges/key__todd-terry-garage-house.md,Reviewed — source audit batch 030 (2026-11-05)
 key:tony-allen-afrobeat,key_artist_of,high,docs/graph/evidence/edges/key__tony-allen-afrobeat.md,Reviewed — source audit batch 030 (2026-11-05)
@@ -1304,14 +1349,17 @@ key:vivaldi-baroque,key_artist_of,high,docs/graph/evidence/edges/key__vivaldi-ba
 key:warren-g-g-funk,key_artist_of,high,docs/graph/evidence/edges/key__warren-g-g-funk.md,Reviewed — source audit batch 030 (2026-11-05)
 key:washed-out-chillwave,key_artist_of,high,docs/graph/evidence/edges/key__washed-out-chillwave.md,Reviewed — source audit batch 030 (2026-11-05)
 key:waters-blues,key_artist_of,high,docs/graph/evidence/edges/key__waters-blues.md,Reviewed — confidence → high; sources added
+key:waylon-jennings-outlaw-country,key_artist_of,high,docs/graph/evidence/edges/key__waylon-jennings-outlaw-country.md,Source checked (2026-11-11)
 key:weather-report-fusion,key_artist_of,high,docs/graph/evidence/edges/key__weather-report-fusion.md,Reviewed — key status confirmed; raised to high
 key:who-rock,key_artist_of,high,docs/graph/evidence/edges/key__who-rock.md,Reviewed — confirmed; upgraded to high
 key:wildstylez-hardstyle,key_artist_of,medium,docs/graph/evidence/edges/key__wildstylez-hardstyle.md,Reviewed — Wildstylez as hardstyle key artist supported
 key:wiley-grime,key_artist_of,high,docs/graph/evidence/edges/key__wiley-grime.md,Reviewed — source audit batch 030 (2026-11-05)
 key:willie-colon-latin,key_artist_of,medium,docs/graph/evidence/edges/key__willie-colon-latin.md,Reviewed — source audit batch 030 (2026-11-05)
 key:willie-colon-salsa,key_artist_of,high,docs/graph/evidence/edges/key__willie-colon-salsa.md,Reviewed — source audit batch 030 (2026-11-05)
+key:willie-nelson-outlaw-country,key_artist_of,high,docs/graph/evidence/edges/key__willie-nelson-outlaw-country.md,Source checked (2026-11-11)
 key:wizkid-afrobeats,key_artist_of,high,docs/graph/evidence/edges/key__wizkid-afrobeats.md,Reviewed — source audit batch 030 (2026-11-05)
 key:woody-guthrie-folk,key_artist_of,high,docs/graph/evidence/edges/key__woody-guthrie-folk.md,Reviewed — raised to high
+key:xxxtentacion-emo-rap,key_artist_of,high,docs/graph/evidence/edges/key__xxxtentacion-emo-rap.md,Source checked (2026-11-11)
 key:yellowman-dancehall,key_artist_of,high,docs/graph/evidence/edges/key__yellowman-dancehall.md,Reviewed — source audit batch 031 (2026-11-05)
 key:yes-progressive,key_artist_of,high,docs/graph/evidence/edges/key__yes-progressive.md,Reviewed — confirmed; upgraded to high
 key:ying-yang-twins-crunk,key_artist_of,high,docs/graph/evidence/edges/key__ying-yang-twins-crunk.md,Reviewed — source audit batch 031 (2026-11-05)
@@ -1325,6 +1373,8 @@ key_artist_of:umm-kulthum-arabic-maqam,key_artist_of,high,docs/graph/evidence/ed
 lineage:acid-house-house,subgenre_of,medium,docs/graph/evidence/edges/lineage__acid-house-house.md,Source checked (2026-11-05)
 lineage:acid-jazz-funk,fusion_of,high,docs/graph/evidence/edges/lineage__acid-jazz-funk.md,Reviewed — fusion with funk confirmed; raised to high
 lineage:acid-jazz-jazz,fusion_of,high,docs/graph/evidence/edges/lineage__acid-jazz-jazz.md,Reviewed — fusion with jazz confirmed; raised to high
+lineage:acid-techno-techno,subgenre_of,high,docs/graph/evidence/edges/lineage__acid-techno-techno.md,Source checked (2026-11-11)
+lineage:afro-house-house,subgenre_of,high,docs/graph/evidence/edges/lineage__afro-house-house.md,Source checked (2026-11-11)
 lineage:afrobeat-funk,fusion_of,high,docs/graph/evidence/edges/lineage__afrobeat-funk.md,Reviewed — relation/parentage and component scope checked (2026-11-05)
 lineage:afrobeat-highlife,fusion_of,high,docs/graph/evidence/edges/lineage__afrobeat-highlife.md,Reviewed — relation/parentage and component scope checked (2026-11-05)
 lineage:afrobeats-hip-hop,cross_pollination,medium,docs/graph/evidence/edges/lineage__afrobeats-hip-hop.md,Source checked (2026-11-05)
@@ -1332,6 +1382,8 @@ lineage:alt-country-country,subgenre_of,high,docs/graph/evidence/edges/lineage__
 lineage:alternative-rap-hip-hop,subgenre_of,high,docs/graph/evidence/edges/lineage__alternative-rap-hip-hop.md,Source checked (2026-11-05)
 lineage:alternative-rock,subgenre_of,high,docs/graph/evidence/edges/lineage__alternative-rock.md,Source checked (2026-11-05)
 lineage:amapiano-house,subgenre_of,high,docs/graph/evidence/edges/lineage__amapiano-house.md,Source checked (2026-11-05)
+lineage:ambient-house-ambient,fusion_of,high,docs/graph/evidence/edges/lineage__ambient-house-ambient.md,Source checked (2026-11-11)
+lineage:ambient-house-house,fusion_of,high,docs/graph/evidence/edges/lineage__ambient-house-house.md,Source checked (2026-11-11)
 lineage:ambient-krautrock,influences,high,docs/graph/evidence/edges/lineage__ambient-krautrock.md,Reviewed — confirmed; source added
 lineage:ambient-techno-techno,fusion_of,high,docs/graph/evidence/edges/lineage__ambient-techno-techno.md,Reviewed — confirmed; endpoint evidence
 lineage:americana-country,subgenre_of,high,docs/graph/evidence/edges/lineage__americana-country.md,Source checked (2026-11-05)
@@ -1358,6 +1410,7 @@ lineage:breakbeat-jungle,influences,high,docs/graph/evidence/edges/lineage__brea
 lineage:breakcore-breakbeat-hardcore,derived_from,low,docs/graph/evidence/edges/lineage__breakcore-breakbeat-hardcore.md,Reviewed — relation scope/direction and confidence reassessed (2026-11-05)
 lineage:britpop-indie-rock,subgenre_of,medium,docs/graph/evidence/edges/lineage__britpop-indie-rock.md,Source checked (2026-11-05)
 lineage:calypso-ska,influences,low,docs/graph/evidence/edges/lineage__calypso-ska.md,Reviewed — direction and relation scope checked; caveat recorded (2026-11-05)
+lineage:chicago-blues-blues,subgenre_of,high,docs/graph/evidence/edges/lineage__chicago-blues-blues.md,Source checked (2026-11-11)
 lineage:chicago-house-detroit-techno,cross_pollination,medium,docs/graph/evidence/edges/lineage__chicago-house-detroit-techno.md,Source checked (2026-11-05)
 lineage:chicago-house-disco,derived_from,medium,docs/graph/evidence/edges/lineage__chicago-house-disco.md,Reviewed — relation scope/direction and confidence reassessed (2026-11-05)
 lineage:chillwave-synth-pop,influences,low,docs/graph/evidence/edges/lineage__chillwave-synth-pop.md,Reviewed — reframed as broad synth influence; specific synth-pop link remains approximate (2026-11-05)
@@ -1371,6 +1424,7 @@ lineage:cool-jazz,subgenre_of,high,docs/graph/evidence/edges/lineage__cool-jazz.
 lineage:crunk-hip-hop,subgenre_of,high,docs/graph/evidence/edges/lineage__crunk-hip-hop.md,Source checked (2026-11-05)
 lineage:crunk-southern-rap,subgenre_of,medium,docs/graph/evidence/edges/lineage__crunk-southern-rap.md,Source checked (2026-11-05)
 lineage:cumbia-latin,subgenre_of,medium,docs/graph/evidence/edges/lineage__cumbia-latin.md,Source checked (2026-11-05)
+lineage:dance-pop-pop,subgenre_of,high,docs/graph/evidence/edges/lineage__dance-pop-pop.md,Source checked (2026-11-11)
 lineage:dancehall-reggae,derived_from,medium,docs/graph/evidence/edges/lineage__dancehall-reggae.md,Reviewed — relation scope/direction and confidence reassessed (2026-11-05)
 lineage:darksynth-synthwave,subgenre_of,medium,docs/graph/evidence/edges/lineage__darksynth-synthwave.md,Source checked (2026-11-05)
 lineage:death-metal-thrash-metal,derived_from,medium,docs/graph/evidence/edges/lineage__death-metal-thrash-metal.md,Reviewed — relation scope/direction and confidence reassessed (2026-11-05)
@@ -1400,6 +1454,7 @@ lineage:electro-house-house,subgenre_of,high,docs/graph/evidence/edges/lineage__
 lineage:electroclash-electro,fusion_of,high,docs/graph/evidence/edges/lineage__electroclash-electro.md,Reviewed — relation/parentage and component scope checked (2026-11-05)
 lineage:electroclash-synth-pop,fusion_of,high,docs/graph/evidence/edges/lineage__electroclash-synth-pop.md,Reviewed — relation/parentage and component scope checked (2026-11-05)
 lineage:emo-punk-rock,derived_from,medium,docs/graph/evidence/edges/lineage__emo-punk-rock.md,Reviewed — relation scope/direction and confidence reassessed (2026-11-05)
+lineage:emo-rap-hip-hop,subgenre_of,high,docs/graph/evidence/edges/lineage__emo-rap-hip-hop.md,Source checked (2026-11-11)
 lineage:folk-blues,cross_pollination,medium,docs/graph/evidence/edges/lineage__folk-blues.md,Reviewed — kept medium; direction flagged
 lineage:footwork-house,subgenre_of,high,docs/graph/evidence/edges/lineage__footwork-house.md,Source checked (2026-11-05)
 lineage:free-jazz,subgenre_of,high,docs/graph/evidence/edges/lineage__free-jazz.md,Reviewed — subgenre relation confirmed; raised to high
@@ -1425,6 +1480,7 @@ lineage:grunge-alternative,subgenre_of,high,docs/graph/evidence/edges/lineage__g
 lineage:hard-bop-bebop,derived_from,high,docs/graph/evidence/edges/lineage__hard-bop-bebop.md,Reviewed — derivation confirmed; raised to high
 lineage:hard-bop-jazz,subgenre_of,high,docs/graph/evidence/edges/lineage__hard-bop-jazz.md,Reviewed — subgenre relation confirmed; raised to high
 lineage:hard-rock,subgenre_of,high,docs/graph/evidence/edges/lineage__hard-rock.md,Source checked (2026-11-05)
+lineage:hardcore-punk-punk-rock,subgenre_of,high,docs/graph/evidence/edges/lineage__hardcore-punk-punk-rock.md,Source checked (2026-11-11)
 lineage:hardstyle-gabber,fusion_of,medium,docs/graph/evidence/edges/lineage__hardstyle-gabber.md,Reviewed — hardcore input confirmed
 lineage:hardstyle-trance,fusion_of,medium,docs/graph/evidence/edges/lineage__hardstyle-trance.md,Reviewed — hard-trance input supported by Wikipedia; kept medium
 lineage:hi-nrg-disco,derived_from,high,docs/graph/evidence/edges/lineage__hi-nrg-disco.md,Source checked (2026-11-05)
@@ -1445,6 +1501,7 @@ lineage:k-pop-pop,subgenre_of,medium,docs/graph/evidence/edges/lineage__k-pop-po
 lineage:krautrock-rock,subgenre_of,medium,docs/graph/evidence/edges/lineage__krautrock-rock.md,Reviewed — confirmed; stale note replaced
 lineage:latin-jazz-jazz,fusion_of,high,docs/graph/evidence/edges/lineage__latin-jazz-jazz.md,Reviewed — fusion relation confirmed; raised to high
 lineage:latin-jazz-latin,fusion_of,high,docs/graph/evidence/edges/lineage__latin-jazz-latin.md,Reviewed — fusion relation confirmed; raised to high
+lineage:liquid-drum-and-bass-drum-and-bass,subgenre_of,high,docs/graph/evidence/edges/lineage__liquid-drum-and-bass-drum-and-bass.md,Source checked (2026-11-11)
 lineage:math-rock-indie-rock,derived_from,low,docs/graph/evidence/edges/lineage__math-rock-indie-rock.md,Source checked (2026-11-05)
 lineage:mbalax-congolese-rumba,influences,medium,docs/graph/evidence/edges/lineage__mbalax-congolese-rumba.md,Reviewed — direction and relation scope checked; caveat recorded (2026-11-05)
 lineage:mbalax-salsa,influences,low,docs/graph/evidence/edges/lineage__mbalax-salsa.md,Reviewed — direction and relation scope checked; caveat recorded (2026-11-05)
@@ -1461,12 +1518,15 @@ lineage:modal-jazz,subgenre_of,high,docs/graph/evidence/edges/lineage__modal-jaz
 lineage:modular-synthesizer-theremin,influences,low,docs/graph/evidence/edges/lineage__modular-synthesizer-theremin.md,Reviewed — direction and relation scope checked; caveat recorded (2026-11-05)
 lineage:neo-soul-hip-hop,influences,medium,docs/graph/evidence/edges/lineage__neo-soul-hip-hop.md,Reviewed — relation/parentage and component scope checked (2026-11-05)
 lineage:neo-soul-soul,fusion_of,high,docs/graph/evidence/edges/lineage__neo-soul-soul.md,Reviewed — relation/parentage and component scope checked (2026-11-05)
+lineage:neoclassicism-modern-classical,subgenre_of,high,docs/graph/evidence/edges/lineage__neoclassicism-modern-classical.md,Source checked (2026-11-11)
 lineage:new-jack-swing-hip-hop,fusion_of,high,docs/graph/evidence/edges/lineage__new-jack-swing-hip-hop.md,Reviewed — relation/parentage and component scope checked (2026-11-05)
 lineage:new-jack-swing-r-and-b,fusion_of,high,docs/graph/evidence/edges/lineage__new-jack-swing-r-and-b.md,Reviewed — relation/parentage and component scope checked (2026-11-05)
+lineage:new-orleans-jazz-jazz,subgenre_of,high,docs/graph/evidence/edges/lineage__new-orleans-jazz-jazz.md,Source checked (2026-11-11)
 lineage:new-wave-punk-rock,derived_from,medium,docs/graph/evidence/edges/lineage__new-wave-punk-rock.md,Reviewed — source audit derived 002 (2026-11-05)
 lineage:noise-rock-punk-rock,derived_from,high,docs/graph/evidence/edges/lineage__noise-rock-punk-rock.md,Reviewed — source audit derived 002 (2026-11-05)
 lineage:nu-metal-heavy-metal,subgenre_of,low,docs/graph/evidence/edges/lineage__nu-metal-heavy-metal.md,Reviewed — taxonomy checked; umbrella/contested-parent caveat recorded (2026-11-05)
 lineage:old-school-rap-hip-hop,subgenre_of,medium,docs/graph/evidence/edges/lineage__old-school-rap-hip-hop.md,Reviewed — taxonomy checked; umbrella/contested-parent caveat recorded (2026-11-05)
+lineage:outlaw-country-country,subgenre_of,high,docs/graph/evidence/edges/lineage__outlaw-country-country.md,Source checked (2026-11-11)
 lineage:piano-harpsichord,derived_from,medium,docs/graph/evidence/edges/lineage__piano-harpsichord.md,Reviewed — source audit derived 002 (2026-11-05)
 lineage:pop-punk-punk-rock,subgenre_of,medium,docs/graph/evidence/edges/lineage__pop-punk-punk-rock.md,Reviewed — taxonomy checked; umbrella/contested-parent caveat recorded (2026-11-05)
 lineage:pop-rock-and-roll,cross_pollination,low,docs/graph/evidence/edges/lineage__pop-rock-and-roll.md,Source checked (2026-11-05)
@@ -1474,6 +1534,8 @@ lineage:post-hardcore-punk-rock,derived_from,medium,docs/graph/evidence/edges/li
 lineage:post-punk-alternative,influences,medium,docs/graph/evidence/edges/lineage__post-punk-alternative.md,Reviewed — direction and relation scope checked; caveat recorded (2026-11-05)
 lineage:post-punk-punk,derived_from,medium,docs/graph/evidence/edges/lineage__post-punk-punk.md,Reviewed — source audit derived 002 (2026-11-05)
 lineage:post-punk-trip-hop,influences,medium,docs/graph/evidence/edges/lineage__post-punk-trip-hop.md,Reviewed — direction and relation scope checked; caveat recorded (2026-11-05)
+lineage:power-metal-heavy-metal,subgenre_of,high,docs/graph/evidence/edges/lineage__power-metal-heavy-metal.md,Source checked (2026-11-11)
+lineage:progressive-house-house,subgenre_of,high,docs/graph/evidence/edges/lineage__progressive-house-house.md,Source checked (2026-11-11)
 lineage:progressive-rock,subgenre_of,high,docs/graph/evidence/edges/lineage__progressive-rock.md,Reviewed — confirmed; upgraded to high
 lineage:psychedelic-progressive,influences,high,docs/graph/evidence/edges/lineage__psychedelic-progressive.md,Reviewed — confirmed; upgraded to high
 lineage:psychedelic-rock,subgenre_of,high,docs/graph/evidence/edges/lineage__psychedelic-rock.md,Reviewed — confirmed; upgraded to high
@@ -1489,6 +1551,7 @@ lineage:renaissance-baroque,derived_from,low,docs/graph/evidence/edges/lineage__
 lineage:rock-rock-and-roll,derived_from,high,docs/graph/evidence/edges/lineage__rock-rock-and-roll.md,Reviewed — confirmed; upgraded to high
 lineage:rocksteady-ska,derived_from,high,docs/graph/evidence/edges/lineage__rocksteady-ska.md,Reviewed — source audit derived 002 (2026-11-05)
 lineage:romantic-modern,influences,low,docs/graph/evidence/edges/lineage__romantic-modern.md,Reviewed — direction and relation scope checked; caveat recorded (2026-11-05)
+lineage:roots-reggae-reggae,subgenre_of,high,docs/graph/evidence/edges/lineage__roots-reggae-reggae.md,Source checked (2026-11-11)
 lineage:salsa-latin,subgenre_of,medium,docs/graph/evidence/edges/lineage__salsa-latin.md,Reviewed — taxonomy checked; umbrella/contested-parent caveat recorded (2026-11-05)
 lineage:salsa-son-cubano,derived_from,high,docs/graph/evidence/edges/lineage__salsa-son-cubano.md,Reviewed — source audit derived 002 (2026-11-05)
 lineage:saxophone-clarinet,influences,medium,docs/graph/evidence/edges/lineage__saxophone-clarinet.md,Source checked (2026-11-05)
@@ -1497,8 +1560,10 @@ lineage:shoegaze-indie-rock,subgenre_of,medium,docs/graph/evidence/edges/lineage
 lineage:ska-r-and-b,influences,medium,docs/graph/evidence/edges/lineage__ska-r-and-b.md,Source checked (2026-11-05)
 lineage:soca-calypso,derived_from,medium,docs/graph/evidence/edges/lineage__soca-calypso.md,Source checked (2026-11-12)
 lineage:son-cubano-latin,subgenre_of,medium,docs/graph/evidence/edges/lineage__son-cubano-latin.md,Reviewed — taxonomy checked; umbrella/contested-parent caveat recorded (2026-11-05)
+lineage:son-cubano-mambo,influences,high,docs/graph/evidence/edges/lineage__son-cubano-mambo.md,Source checked (2026-11-11)
 lineage:soul-pop,cross_pollination,medium,docs/graph/evidence/edges/cross_pollination__soul-pop.md,Source checked (2026-11-05)
 lineage:southern-rap-hip-hop,subgenre_of,high,docs/graph/evidence/edges/lineage__southern-rap-hip-hop.md,Reviewed — taxonomy checked; umbrella/contested-parent caveat recorded (2026-11-05)
+lineage:southern-rock-rock,subgenre_of,high,docs/graph/evidence/edges/lineage__southern-rock-rock.md,Source checked (2026-11-11)
 lineage:spiritual-jazz-jazz,subgenre_of,medium,docs/graph/evidence/edges/lineage__spiritual-jazz-jazz.md,Reviewed — taxonomy checked; umbrella/contested-parent caveat recorded (2026-11-05)
 lineage:stoner-rock-hard-rock,fusion_of,medium,docs/graph/evidence/edges/lineage__stoner-rock-hard-rock.md,Reviewed — relation/parentage and component scope checked (2026-11-05)
 lineage:stoner-rock-heavy-metal,fusion_of,medium,docs/graph/evidence/edges/lineage__stoner-rock-heavy-metal.md,Reviewed — relation/parentage and component scope checked (2026-11-05)

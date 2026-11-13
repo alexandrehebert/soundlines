@@ -14140,6 +14140,26 @@
       "phaseNote": "Editorial shading, not a measured ranking. The circa-1800 start is a documentation anchor for a much older oral tradition, not its origin; later markers follow professionalization (1896–1930s state ensembles) and the 1970s authentic-performance revival. The former 'emerging' first phase was removed as unsupported."
     },
     {
+      "id": "genre:outlaw-country",
+      "type": "genre",
+      "name": "Outlaw country",
+      "addedOn": "2026-11-11",
+      "family": "country-folk",
+      "period": {
+        "start": 1973,
+        "end": null,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "Landmark 1973 recordings and an Outlaw program in Nashville anchor the movement’s early years."
+      },
+      "description": "A 1970s country movement associated with artists seeking greater control over what they recorded and how they recorded it. The 1976 compilation Wanted! The Outlaws brought the movement to a national audience.",
+      "sources": [
+        "https://countrymusichalloffame.org/hall-of-fame/waylon-jennings",
+        "https://countrymusichalloffame.org/hall-of-fame/willie-nelson",
+        "https://countrymusichalloffame.org/hall-of-fame/jerry-bradley"
+      ]
+    },
+    {
       "id": "genre:salsa",
       "type": "genre",
       "name": "Salsa",
@@ -14197,6 +14217,25 @@
       "phases": []
     },
     {
+      "id": "genre:neoclassicism",
+      "type": "genre",
+      "name": "Neoclassicism",
+      "addedOn": "2026-11-11",
+      "family": "classical",
+      "period": {
+        "start": 1920,
+        "end": null,
+        "estimated": true,
+        "precision": "decade",
+        "estimateNote": "The style became established in the 1920s, with earlier precedents."
+      },
+      "description": "A twentieth-century composition movement that adapted older Classical and Baroque forms and textures. Stravinsky’s Pulcinella and Prokofiev’s Classical Symphony illustrate different ways of reworking earlier musical models.",
+      "sources": [
+        "https://digitalcommons.du.edu/etd/1157/",
+        "https://english.unl.edu/sbehrendt/courses/4802Modernism/ModernistMusicSp2017.html"
+      ]
+    },
+    {
       "id": "genre:shoegaze",
       "type": "genre",
       "name": "Shoegaze",
@@ -14215,6 +14254,26 @@
         "https://newsroom.spotify.com/2019-01-24/shoegaze-the-90s-rock-genre-once-again-gains-ground/"
       ],
       "phases": []
+    },
+    {
+      "id": "genre:hardcore-punk",
+      "type": "genre",
+      "name": "Hardcore punk",
+      "addedOn": "2026-11-11",
+      "family": "alternative-punk",
+      "period": {
+        "start": 1979,
+        "end": null,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "Early hardcore scenes took shape in the late 1970s and early 1980s."
+      },
+      "description": "A branch of punk rock that developed in the late 1970s and early 1980s. Early scenes in Southern California and Washington, D.C., pushed punk toward faster tempos, louder playing and a more abrasive sound.",
+      "sources": [
+        "https://drum.lib.umd.edu/items/dbe0407b-8e15-436e-85af-b822c3ab8d3d",
+        "https://www.loc.gov/static/programs/national-recording-preservation-plan/tools-and-resources/documents/Interview_Chris-Payne.pdf",
+        "https://www.blackflagband.com/"
+      ]
     },
     {
       "id": "genre:ska",
@@ -14255,6 +14314,21 @@
         }
       ],
       "phaseNote": "Provisional editorial staging of emergence, the defining prominence wave, and later niche status. Boundaries are approximate and not a measured ranking; the source record should be checked for each transition."
+    },
+    {
+      "id": "genre:roots-reggae",
+      "type": "genre",
+      "name": "Roots reggae",
+      "addedOn": "2026-11-11",
+      "family": "reggae",
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      },
+      "description": "A Jamaican reggae style closely tied to Rastafari. Its songs gave voice to Black history, spiritual belief and African identity in the years after independence.",
+      "sources": [
+        "https://folklife.si.edu/magazine/black-history-in-roots-reggae-music"
+      ]
     },
     {
       "id": "genre:son-cubano",
@@ -14336,6 +14410,26 @@
         "https://timeline.carnegiehall.org/genres/soul",
         "https://www.cambridge.org/core/books/abs/popular-music-genres/soul-from-gospel-to-groove/F3703EC57D97F3A283CBA6513333F2E5",
         "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rhythm-and-blues"
+      ]
+    },
+    {
+      "id": "genre:chicago-blues",
+      "type": "genre",
+      "name": "Chicago blues",
+      "addedOn": "2026-11-11",
+      "family": "blues-soul",
+      "period": {
+        "start": 1945,
+        "end": null,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "This placement marks the emergence of the electric style around the end of World War II."
+      },
+      "description": "An urban blues style shaped in Chicago as musicians arriving from the American South brought their traditions into the city. Electric guitar and lead harmonica became characteristic sounds.",
+      "sources": [
+        "https://www.chicagohistory.org/exhibition/sweet-home-chicago/",
+        "https://littlewalterfoundation.org/about",
+        "https://msbluestrail.org/blues-trail-markers/howlin-wolf"
       ]
     },
     {
@@ -14438,6 +14532,24 @@
       "phaseNote": "No complete prominence curve is assigned. The c.1959 start represents the earliest Southern California surf-instrumental scene; 1961 marks Dick Dale’s “Let’s Go Trippin’” and a broader surf-music craze. This phase describes a documented early-1960s wave only. Later revival and surf-influenced music continue."
     },
     {
+      "id": "genre:southern-rock",
+      "type": "genre",
+      "name": "Southern rock",
+      "addedOn": "2026-11-11",
+      "family": "rock",
+      "period": {
+        "start": 1969,
+        "end": null,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "The Allman Brothers Band formed in 1969, an early milestone for the style."
+      },
+      "description": "A rock style that emerged in the American South around the turn of the 1970s. The Allman Brothers Band’s blend of rock and roll, blues, country and jazz helped establish the genre.",
+      "sources": [
+        "https://www.georgiaencyclopedia.org/articles/arts-culture/allman-brothers-band"
+      ]
+    },
+    {
       "id": "genre:swing",
       "type": "genre",
       "name": "Swing",
@@ -14476,6 +14588,24 @@
       ],
       "phases": [],
       "phaseNote": "No complete prominence curve is assigned. The first marker covers late-1970s formation and precursor usage; the early-1980s marks a major British commercial wave. Synth-pop persisted beyond the 1985 peak and revived repeatedly; phases describe selected history, not terminal lifecycle."
+    },
+    {
+      "id": "genre:dance-pop",
+      "type": "genre",
+      "name": "Dance-pop",
+      "addedOn": "2026-11-11",
+      "family": "pop",
+      "period": {
+        "start": 1980,
+        "precision": "circa"
+      },
+      "description": "Dance-pop pairs pop hooks and compact song structures with rhythms made for the dance floor. Madonna brought the style from New York clubs to a mass audience in the early 1980s.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dance-pop",
+        "https://time.com/3724297/madonna-rocks-the-land/",
+        "https://www.rockhall.com/wp-content/uploads/2024/03/Janet_Jackson_2019.pdf",
+        "https://www.mcny.org/main-gallery"
+      ]
     },
     {
       "id": "genre:synthwave",
@@ -14548,6 +14678,22 @@
       "phaseNote": "These phases mark approximate local emergence and later transnational circulation, not a measured popularity curve. Tango has changed through the 20th and 21st centuries."
     },
     {
+      "id": "genre:mambo",
+      "type": "genre",
+      "name": "Mambo",
+      "addedOn": "2026-11-11",
+      "family": "latin",
+      "period": {
+        "start": 1940,
+        "precision": "decade"
+      },
+      "description": "Cuban dance music built on syncopated riffs and driving percussion. Pérez Prado’s recordings in Mexico and the mambo bands at New York’s Palladium Ballroom brought it to a wider audience.",
+      "sources": [
+        "https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/Mambo-No-5_Firmat.pdf",
+        "https://www.redalyc.org/pdf/377/37716112.pdf"
+      ]
+    },
+    {
       "id": "genre:tech-house",
       "type": "genre",
       "name": "Tech house",
@@ -14565,6 +14711,23 @@
         "https://www.allmusic.com/genre/tech-house-ma0000005003"
       ],
       "phases": []
+    },
+    {
+      "id": "genre:progressive-house",
+      "type": "genre",
+      "name": "Progressive house",
+      "addedOn": "2026-11-11",
+      "family": "house",
+      "period": {
+        "start": 1991,
+        "end": null,
+        "precision": "circa"
+      },
+      "description": "A house style that emerged in the early 1990s. Early British records layered dub-influenced bass and breakbeats over a steady house kick.",
+      "sources": [
+        "https://www.beatportal.com/articles/299799-beatports-definitive-history-of-house-music",
+        "https://www.leftfieldmusic.com/about/"
+      ]
     },
     {
       "id": "genre:techno",
@@ -14626,6 +14789,22 @@
       "phaseNote": "Provisional editorial shading for a short, concentrated prominence window. The dates follow this graph’s estimated period; they are not measured popularity data, and the exact boundaries need source-level review."
     },
     {
+      "id": "genre:power-metal",
+      "type": "genre",
+      "name": "Power metal",
+      "addedOn": "2026-11-11",
+      "family": "metal",
+      "period": {
+        "start": 1985,
+        "precision": "circa"
+      },
+      "description": "Power metal emphasizes fast playing, clear high-register singing and strong melodies. West German bands such as Helloween helped establish a sound that often turned to fantasy and mythology for its lyrics.",
+      "sources": [
+        "https://pure.hud.ac.uk/ws/files/14390095/Herbst_Teutonic_Metal.pdf",
+        "https://www.blind-guardian.com/band/"
+      ]
+    },
+    {
       "id": "genre:trance",
       "type": "genre",
       "name": "Trance",
@@ -14666,6 +14845,24 @@
         }
       ],
       "phaseNote": "Medium confidence for both phase anchors. Frankfurt activity around 1990 marks early formation. The 1996 UK chart milestone marks crossover in one market. Later trance releases continued to chart."
+    },
+    {
+      "id": "genre:acid-techno",
+      "type": "genre",
+      "name": "Acid techno",
+      "addedOn": "2026-11-11",
+      "family": "techno",
+      "period": {
+        "start": 1992,
+        "end": null,
+        "precision": "circa"
+      },
+      "description": "A techno style built around the squelching tones of the Roland TB-303. London’s free-party scene helped establish the sound in the early 1990s.",
+      "sources": [
+        "https://ra.co/news/76853",
+        "https://daily.redbullmusicacademy.com/2016/06/london-acid-techno-feature/",
+        "https://stayupforever.com/about-us/"
+      ]
     },
     {
       "id": "genre:trap-rap",
@@ -14760,6 +14957,24 @@
       ]
     },
     {
+      "id": "genre:liquid-drum-and-bass",
+      "type": "genre",
+      "name": "Liquid drum and bass",
+      "addedOn": "2026-11-11",
+      "family": "breakbeat-bass",
+      "period": {
+        "start": 1999,
+        "end": null,
+        "precision": "circa"
+      },
+      "description": "Also called liquid funk, this melodic strand of drum and bass emerged in the late 1990s, drawing on soul and funk and often featuring vocals.",
+      "sources": [
+        "https://ukf.com/read/in-conversation-with-fabio/",
+        "https://www.beatportal.com/articles/4445-beatports-definitive-history-of-drum-bass",
+        "https://1-more-thing.co.uk/interviews/the-story-of-high-contrast-true-colours/"
+      ]
+    },
+    {
       "id": "genre:vaporwave",
       "type": "genre",
       "name": "Vaporwave",
@@ -14789,6 +15004,23 @@
       "phaseNote": "Early-2010s emergence marker only. The form and community diversified and its definition remains contested; the prior “golden age,” “established,” and “niche” dates lacked support and were removed."
     },
     {
+      "id": "genre:ambient-house",
+      "type": "genre",
+      "name": "Ambient house",
+      "addedOn": "2026-11-11",
+      "family": "electronica",
+      "period": {
+        "start": 1989,
+        "end": null,
+        "precision": "circa"
+      },
+      "description": "A late-1980s British club style that grew out of chill-out rooms, combining house music with ambient textures and sampled sounds.",
+      "sources": [
+        "https://jointhefuture.net/2020/09/10/long-read-the-story-of-chill-out/",
+        "https://www.808state.com/various/interview/1990-03-10-MelodyMaker-Article.html"
+      ]
+    },
+    {
       "id": "genre:vocal-jazz",
       "type": "genre",
       "name": "Vocal jazz",
@@ -14807,6 +15039,25 @@
       ],
       "phases": [],
       "phaseNote": "No complete prominence curve is assigned. Vocal jazz reaches back to jazz’s early recorded decades. A 1930s/40s phase marks the rise and visibility of major singers and jazz vocal interpretation; it is not the origin or endpoint of vocal jazz, which continues."
+    },
+    {
+      "id": "genre:new-orleans-jazz",
+      "type": "genre",
+      "name": "New Orleans jazz",
+      "addedOn": "2026-11-11",
+      "family": "jazz",
+      "period": {
+        "start": 1895,
+        "end": null,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "The start marks the formative late-nineteenth-century period described by the National Park Service."
+      },
+      "description": "An early New Orleans style of jazz known for collective improvisation. Cornet, clarinet and trombone often improvised interlocking parts, drawing on the city’s brass-band and dance traditions.",
+      "sources": [
+        "https://www.nps.gov/jazz/learn/historyculture/history_early.htm",
+        "https://home.nps.gov/jazz/learn/historyculture/jazz_history.htm"
+      ]
     },
     {
       "id": "genre:west-coast-rap",
@@ -14843,6 +15094,24 @@
         }
       ],
       "phaseNote": "Regional scene formation and a widely cited late-1980s consolidation marker. Removed the unsupported exact 1994 “golden age” and 2018 status marker; regional traditions continue."
+    },
+    {
+      "id": "genre:emo-rap",
+      "type": "genre",
+      "name": "Emo rap",
+      "addedOn": "2026-11-11",
+      "family": "hip-hop",
+      "period": {
+        "start": 2015,
+        "precision": "circa"
+      },
+      "description": "A branch of hip-hop that reached a wide audience through SoundCloud in the late 2010s. Its melodic delivery and lyrics about heartbreak and isolation often draw on emo and pop-punk.",
+      "sources": [
+        "https://www.knkx.org/2024-04-04/emo-rap-at-its-limits",
+        "https://pitchfork.com/thepitch/emo-rap-is-back-here-we-go-again/",
+        "https://pitchfork.com/reviews/albums/lil-peep-come-over-when-youre-sober-part-one/",
+        "https://time.com/5746145/juice-wrld-dead/"
+      ]
     },
     {
       "id": "instrument:accordion",
@@ -22844,6 +23113,22 @@
       ]
     },
     {
+      "id": "genre:afro-house",
+      "type": "genre",
+      "name": "Afro house",
+      "addedOn": "2026-11-11",
+      "family": "african",
+      "period": {
+        "start": 1990,
+        "precision": "decade"
+      },
+      "description": "House music shaped in South Africa through layered percussion and local vocal and rhythmic traditions. Producers such as Black Coffee and Culoe De Song helped carry the sound to dance floors abroad.",
+      "sources": [
+        "https://www.scientificsound.asia/news/categories/afro-house/",
+        "https://defected.com/news/post/house-of-africa"
+      ]
+    },
+    {
       "id": "artist:cheikha-rimitti",
       "type": "artist",
       "name": "Cheikha Rimitti",
@@ -26051,6 +26336,574 @@
         "https://sonar.es/es/about/ediciones-anteriores",
         "https://www.accid.org/documents/cas_sonar.pdf",
         "https://en.wikipedia.org/wiki/Sónar"
+      ]
+    },
+    {
+      "id": "artist:sergei-prokofiev",
+      "type": "artist",
+      "name": "Sergei Prokofiev",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1908,
+        "end": 1953
+      },
+      "description": "Composer and pianist whose works include the Classical Symphony, Romeo and Juliet and Alexander Nevsky.",
+      "sources": [
+        "https://www.boosey.com/downloads/prokofjew_werkverzeichnis.pdf",
+        "https://www.boosey.com/pages/cr/composer/composer_main?composerid=2693&ttitle=Biography&ttype=BIOGRAPHY"
+      ]
+    },
+    {
+      "id": "artist:paul-hindemith",
+      "type": "artist",
+      "name": "Paul Hindemith",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1914,
+        "end": 1963
+      },
+      "description": "Composer, violist and conductor whose works include Kammermusik and the symphony Mathis der Maler.",
+      "sources": [
+        "https://www.schott-music.com/en/person/paul-hindemith",
+        "https://english.unl.edu/sbehrendt/courses/4802Modernism/ModernistMusicSp2017.html"
+      ]
+    },
+    {
+      "id": "artist:little-walter",
+      "type": "artist",
+      "name": "Little Walter",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1947,
+        "end": 1968,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "The start approximates his move to Chicago in the late 1940s, after earlier performances in New Orleans."
+      },
+      "description": "Blues harmonica player who joined Muddy Waters’s band in Chicago and recorded the instrumental hit “Juke.”",
+      "sources": [
+        "https://littlewalterfoundation.org/about"
+      ]
+    },
+    {
+      "id": "artist:howlin-wolf",
+      "type": "artist",
+      "name": "Howlin’ Wolf",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1928,
+        "end": 1976,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "The year of his first guitar provides a documented anchor for early performing activity that began in his teens."
+      },
+      "description": "Blues singer and guitarist who performed in the Mississippi Delta before recording for Chess and moving to Chicago.",
+      "sources": [
+        "https://msbluestrail.org/blues-trail-markers/howlin-wolf"
+      ]
+    },
+    {
+      "id": "artist:king-oliver",
+      "type": "artist",
+      "name": "Joe “King” Oliver",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1905,
+        "end": 1938,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "The date places his early brass-band career in turn-of-the-century New Orleans."
+      },
+      "description": "New Orleans jazz cornetist and bandleader who mentored Louis Armstrong and formed the Creole Jazz Band in Chicago.",
+      "sources": [
+        "https://64parishes.org/entry/king-oliver"
+      ]
+    },
+    {
+      "id": "artist:willie-nelson",
+      "type": "artist",
+      "name": "Willie Nelson",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1955,
+        "end": null,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "The date approximates the start of his documented recording career in the mid-1950s."
+      },
+      "description": "Country singer, songwriter and guitarist who helped establish outlaw country and recorded Shotgun Willie.",
+      "sources": [
+        "https://countrymusichalloffame.org/hall-of-fame/willie-nelson"
+      ]
+    },
+    {
+      "id": "artist:waylon-jennings",
+      "type": "artist",
+      "name": "Waylon Jennings",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1958,
+        "end": 2001
+      },
+      "description": "Country singer and guitarist who won greater creative control in Nashville and made Honky Tonk Heroes in 1973.",
+      "sources": [
+        "https://countrymusichalloffame.org/hall-of-fame/waylon-jennings"
+      ]
+    },
+    {
+      "id": "artist:jessi-colter",
+      "type": "artist",
+      "name": "Jessi Colter",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1961,
+        "end": null
+      },
+      "description": "Country singer-songwriter whose solo hits include “I’m Not Lisa” and who appeared on Wanted! The Outlaws.",
+      "sources": [
+        "https://www.azmusichalloffame.org/inductees/jessi-colter/"
+      ]
+    },
+    {
+      "id": "artist:allman-brothers-band",
+      "type": "artist",
+      "name": "The Allman Brothers Band",
+      "addedOn": "2026-11-11",
+      "kind": "group",
+      "period": {
+        "start": 1969,
+        "end": 2014
+      },
+      "description": "Band formed in 1969 that helped define Southern rock through its blend of blues, country, jazz and rock and roll.",
+      "sources": [
+        "https://www.georgiaencyclopedia.org/articles/arts-culture/allman-brothers-band"
+      ]
+    },
+    {
+      "id": "artist:lynyrd-skynyrd",
+      "type": "artist",
+      "name": "Lynyrd Skynyrd",
+      "addedOn": "2026-11-11",
+      "kind": "group",
+      "period": {
+        "start": 1969,
+        "end": null
+      },
+      "description": "Jacksonville band that adopted the name Lynyrd Skynyrd in 1969 and released its debut album in 1973.",
+      "sources": [
+        "https://lynyrdskynyrd.com/history"
+      ]
+    },
+    {
+      "id": "artist:marshall-tucker-band",
+      "type": "artist",
+      "name": "The Marshall Tucker Band",
+      "addedOn": "2026-11-11",
+      "kind": "group",
+      "period": {
+        "start": 1972,
+        "end": null
+      },
+      "description": "Band formed in Spartanburg, South Carolina, in 1972, whose early songs include “Can’t You See.”",
+      "sources": [
+        "https://marshalltucker.com/pages/bio"
+      ]
+    },
+    {
+      "id": "artist:bad-brains",
+      "type": "artist",
+      "name": "Bad Brains",
+      "addedOn": "2026-11-11",
+      "kind": "group",
+      "period": {
+        "start": 1979,
+        "end": null
+      },
+      "description": "Washington, D.C. band that paired very fast hardcore songs with dub-influenced reggae on its self-titled debut.",
+      "sources": [
+        "https://badbrains.com/pages/history"
+      ]
+    },
+    {
+      "id": "artist:black-flag",
+      "type": "artist",
+      "name": "Black Flag",
+      "addedOn": "2026-11-11",
+      "kind": "group",
+      "period": {
+        "start": 1976,
+        "end": null
+      },
+      "description": "Southern California band that became an influential early act in American hardcore.",
+      "sources": [
+        "https://www.blackflagband.com/"
+      ]
+    },
+    {
+      "id": "artist:dead-kennedys",
+      "type": "artist",
+      "name": "Dead Kennedys",
+      "addedOn": "2026-11-11",
+      "kind": "group",
+      "period": {
+        "start": 1978,
+        "end": null
+      },
+      "description": "San Francisco punk band founded in 1978 by musicians including East Bay Ray and Jello Biafra.",
+      "sources": [
+        "https://deadkennedys.com/"
+      ]
+    },
+    {
+      "id": "artist:helloween",
+      "type": "artist",
+      "name": "Helloween",
+      "addedOn": "2026-11-11",
+      "kind": "group",
+      "period": {
+        "start": 1984,
+        "precision": "year"
+      },
+      "description": "Hamburg band whose Keeper of the Seven Keys albums helped set the template for European power metal.",
+      "sources": [
+        "https://www.loudersound.com/bands-artists/interviews/helloween-i-want-out-story-behind-the-song",
+        "https://pure.hud.ac.uk/ws/files/14390095/Herbst_Teutonic_Metal.pdf"
+      ]
+    },
+    {
+      "id": "artist:blind-guardian",
+      "type": "artist",
+      "name": "Blind Guardian",
+      "addedOn": "2026-11-11",
+      "kind": "group",
+      "period": {
+        "start": 1985,
+        "precision": "year"
+      },
+      "description": "Krefeld band that grew out of speed metal and became known for layered vocals and fantasy-themed songs.",
+      "sources": [
+        "https://www.blind-guardian.com/band/",
+        "https://pure.hud.ac.uk/ws/files/14390095/Herbst_Teutonic_Metal.pdf"
+      ]
+    },
+    {
+      "id": "artist:gamma-ray",
+      "type": "artist",
+      "name": "Gamma Ray",
+      "addedOn": "2026-11-11",
+      "kind": "group",
+      "period": {
+        "start": 1989,
+        "precision": "circa"
+      },
+      "description": "German power metal band formed by guitarist and singer Kai Hansen after he left Helloween.",
+      "sources": [
+        "https://gammaray.org/en/band/history.html",
+        "https://pure.hud.ac.uk/ws/files/14390095/Herbst_Teutonic_Metal.pdf"
+      ]
+    },
+    {
+      "id": "artist:janet-jackson",
+      "type": "artist",
+      "name": "Janet Jackson",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1982,
+        "precision": "year"
+      },
+      "description": "American singer whose 1986 album Control, made with Jimmy Jam and Terry Lewis, helped shape dance-pop.",
+      "sources": [
+        "https://www.rockhall.com/wp-content/uploads/2024/03/Janet_Jackson_2019.pdf"
+      ]
+    },
+    {
+      "id": "artist:lil-peep",
+      "type": "artist",
+      "name": "Lil Peep",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 2015,
+        "end": 2017,
+        "precision": "year"
+      },
+      "description": "Rapper and singer who built songs around emo and pop-punk samples and programmed drums.",
+      "sources": [
+        "https://pitchfork.com/reviews/albums/lil-peep-come-over-when-youre-sober-part-one/",
+        "https://pitchfork.com/news/lil-peep-dead-at-21/"
+      ]
+    },
+    {
+      "id": "artist:juice-wrld",
+      "type": "artist",
+      "name": "Juice WRLD",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 2015,
+        "end": 2019,
+        "precision": "year"
+      },
+      "description": "Chicago-area rapper whose melodic delivery and introspective lyrics reached a broad audience with Lucid Dreams.",
+      "sources": [
+        "https://interscope.com/pages/artist/juice-wrld",
+        "https://time.com/5746145/juice-wrld-dead/"
+      ]
+    },
+    {
+      "id": "artist:xxxtentacion",
+      "type": "artist",
+      "name": "XXXTentacion",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 2014,
+        "end": 2018,
+        "precision": "circa"
+      },
+      "description": "Florida rapper who built a SoundCloud audience and broke through with Look at Me!.",
+      "sources": [
+        "https://pitchfork.com/news/xxxtentacion-shot-dead-at-20/"
+      ]
+    },
+    {
+      "id": "artist:burning-spear",
+      "type": "artist",
+      "name": "Burning Spear",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1968,
+        "precision": "circa"
+      },
+      "description": "Jamaican singer Winston Rodney made the teachings of Marcus Garvey a recurring theme in his roots reggae recordings.",
+      "sources": [
+        "https://www.laphil.com/people/burning-spear",
+        "https://folklife.si.edu/magazine/black-history-in-roots-reggae-music"
+      ]
+    },
+    {
+      "id": "artist:culture",
+      "type": "artist",
+      "name": "Culture",
+      "addedOn": "2026-11-11",
+      "kind": "group",
+      "period": {
+        "start": 1976,
+        "precision": "year"
+      },
+      "description": "Jamaican vocal trio led by Joseph Hill, whose 1977 album Two Sevens Clash became a roots reggae landmark.",
+      "sources": [
+        "https://www.laphil.com/people/culture",
+        "https://thereggaemuseum.com/musician/culture/"
+      ]
+    },
+    {
+      "id": "artist:perez-prado",
+      "type": "artist",
+      "name": "Pérez Prado",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1935,
+        "end": 1987,
+        "precision": "circa"
+      },
+      "description": "Cuban pianist, arranger and bandleader whose Mexican recordings, including Mambo No. 5, helped turn mambo into an international dance craze.",
+      "sources": [
+        "https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/Mambo-No-5_Firmat.pdf",
+        "https://fonotecanacional.cultura.gob.mx/escucha/miscelanea-sonora/damaso-perez-prado/linea-del-tiempo",
+        "https://www.latimes.com/archives/la-xpm-1989-09-16-mn-132-story.html"
+      ]
+    },
+    {
+      "id": "artist:culoe-de-song",
+      "type": "artist",
+      "name": "Culoe De Song",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 2007,
+        "precision": "year"
+      },
+      "description": "South African DJ and producer whose tracks for Black Coffee’s circle and the Innervisions label helped carry Afro house abroad.",
+      "sources": [
+        "https://ra.co/dj/culoedesong/biography",
+        "https://defected.com/news/post/house-of-africa"
+      ]
+    },
+    {
+      "id": "artist:black-motion",
+      "type": "artist",
+      "name": "Black Motion",
+      "addedOn": "2026-11-11",
+      "kind": "group",
+      "period": {
+        "start": 2010,
+        "precision": "year"
+      },
+      "description": "South African house act known for bringing live percussion into its DJ performances and recordings.",
+      "sources": [
+        "https://ra.co/dj/blackmotion/biography",
+        "https://defected.com/news/post/house-of-africa"
+      ]
+    },
+    {
+      "id": "artist:leftfield",
+      "type": "artist",
+      "name": "Leftfield",
+      "addedOn": "2026-11-11",
+      "kind": "group",
+      "period": {
+        "start": 1989,
+        "end": null,
+        "precision": "year"
+      },
+      "description": "British electronic music act formed by Neil Barnes and Paul Daley. Its 1990 single Not Forgotten helped establish progressive house.",
+      "sources": [
+        "https://www.leftfieldmusic.com/about/",
+        "https://www.beatportal.com/articles/299799-beatports-definitive-history-of-house-music"
+      ]
+    },
+    {
+      "id": "artist:the-klf",
+      "type": "artist",
+      "name": "The KLF",
+      "addedOn": "2026-11-11",
+      "kind": "group",
+      "period": {
+        "start": 1987,
+        "end": 1992,
+        "precision": "year"
+      },
+      "description": "Electronic music duo of Bill Drummond and Jimmy Cauty. Their 1990 album Chill Out helped define ambient house.",
+      "sources": [
+        "https://subcity.org/blog/subcity-30-year-rewind-klf-interview-3-november-1995/"
+      ]
+    },
+    {
+      "id": "artist:mixmaster-morris",
+      "type": "artist",
+      "name": "Mixmaster Morris",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1985,
+        "end": null,
+        "precision": "circa"
+      },
+      "description": "British DJ and producer Morris Gould, who recorded as The Irresistible Force and became a figure in the chill-out scene.",
+      "sources": [
+        "https://daily.bandcamp.com/features/irresistible-force-dance-dj-feature"
+      ]
+    },
+    {
+      "id": "artist:chris-liberator",
+      "type": "artist",
+      "name": "Chris Liberator",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1991,
+        "end": null,
+        "precision": "year"
+      },
+      "description": "London techno DJ and producer who helped found Stay Up Forever with the Liberator DJs.",
+      "sources": [
+        "https://stayupforever.com/about-us/"
+      ]
+    },
+    {
+      "id": "artist:dave-the-drummer",
+      "type": "artist",
+      "name": "D.A.V.E. The Drummer",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1995,
+        "end": null,
+        "precision": "year"
+      },
+      "description": "British producer and DJ Henry Cullen, who worked with the Liberator DJs and founded Hydraulix.",
+      "sources": [
+        "https://ra.co/dj/henrycullen/biography"
+      ]
+    },
+    {
+      "id": "artist:the-geezer",
+      "type": "artist",
+      "name": "The Geezer",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1990,
+        "end": null,
+        "precision": "decade"
+      },
+      "description": "London acid techno producer Guy McAffer, who released records on Stay Up Forever and founded the RAW label.",
+      "sources": [
+        "https://truelovemusic.com/guy-mcaffer/",
+        "https://rawtechno.bandcamp.com/",
+        "https://daily.redbullmusicacademy.com/2016/06/london-acid-techno-feature/"
+      ]
+    },
+    {
+      "id": "artist:fabio",
+      "type": "artist",
+      "name": "Fabio",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1985,
+        "end": null,
+        "precision": "circa"
+      },
+      "description": "London DJ who started in pirate radio and later championed liquid funk through radio, DJ sets and the Creative Source label.",
+      "sources": [
+        "https://www.redbullmusicacademy.com/lectures/fabio-the-root-to-the-shoot/",
+        "https://www.beatportal.com/articles/4445-beatports-definitive-history-of-drum-bass"
+      ]
+    },
+    {
+      "id": "artist:calibre",
+      "type": "artist",
+      "name": "Calibre",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 1995,
+        "end": null,
+        "precision": "year"
+      },
+      "description": "Belfast producer and DJ Dominick Martin, whose early drum and bass releases appeared on Fabio’s Creative Source label.",
+      "sources": [
+        "https://postburnout.com/in-a-rare-interview-the-trailblazing-belfast-producer-and-dj-calibre-talks-to-tymon-galka-about-his-latest-album-tricklemore-sea-and-how-hes-grown-with-his-music/",
+        "https://www.beatportal.com/articles/4445-beatports-definitive-history-of-drum-bass"
+      ]
+    },
+    {
+      "id": "artist:high-contrast",
+      "type": "artist",
+      "name": "High Contrast",
+      "addedOn": "2026-11-11",
+      "kind": "person",
+      "period": {
+        "start": 2001,
+        "end": null,
+        "precision": "year"
+      },
+      "description": "Drum and bass producer and DJ Lincoln Barrett, who made his recording debut on Hospital Records in 2001.",
+      "sources": [
+        "https://1-more-thing.co.uk/interviews/the-story-of-high-contrast-true-colours/"
       ]
     }
   ],
@@ -51473,6 +52326,692 @@
         "https://en.wikipedia.org/wiki/Music_of_Cape_Verde",
         "https://web.archive.org/web/20080517202804/http://www.worldmusiccentral.org/article.php/2004103107424374",
         "https://musicbrainz.org/artist/971841d4-58c6-4010-9937-4e790dfba7f8"
+      ]
+    },
+    {
+      "id": "key:stravinsky-neoclassicism",
+      "from": "artist:stravinsky",
+      "to": "genre:neoclassicism",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=ucin1148304385"
+      ]
+    },
+    {
+      "id": "key:sergei-prokofiev-neoclassicism",
+      "from": "artist:sergei-prokofiev",
+      "to": "genre:neoclassicism",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=ucin1148304385"
+      ]
+    },
+    {
+      "id": "key:paul-hindemith-neoclassicism",
+      "from": "artist:paul-hindemith",
+      "to": "genre:neoclassicism",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=ucin1148304385",
+        "https://english.unl.edu/sbehrendt/courses/4802Modernism/ModernistMusicSp2017.html"
+      ]
+    },
+    {
+      "id": "lineage:neoclassicism-modern-classical",
+      "from": "genre:neoclassicism",
+      "to": "genre:modern-classical",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://english.unl.edu/sbehrendt/courses/4802Modernism/ModernistMusicSp2017.html"
+      ]
+    },
+    {
+      "id": "key:muddy-waters-chicago-blues",
+      "from": "artist:muddy-waters",
+      "to": "genre:chicago-blues",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.chicagohistory.org/flerlage/"
+      ]
+    },
+    {
+      "id": "key:little-walter-chicago-blues",
+      "from": "artist:little-walter",
+      "to": "genre:chicago-blues",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://littlewalterfoundation.org/"
+      ]
+    },
+    {
+      "id": "key:howlin-wolf-chicago-blues",
+      "from": "artist:howlin-wolf",
+      "to": "genre:chicago-blues",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://msbluestrail.org/blues-trail-markers/howlin-wolf"
+      ]
+    },
+    {
+      "id": "lineage:chicago-blues-blues",
+      "from": "genre:chicago-blues",
+      "to": "genre:blues",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.chicagohistory.org/exhibition/sweet-home-chicago/"
+      ]
+    },
+    {
+      "id": "key:louis-armstrong-new-orleans-jazz",
+      "from": "artist:louis-armstrong",
+      "to": "genre:new-orleans-jazz",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://home.nps.gov/jazz/learn/historyculture/jazz_history.htm"
+      ]
+    },
+    {
+      "id": "key:jelly-roll-morton-new-orleans-jazz",
+      "from": "artist:jelly-roll-morton",
+      "to": "genre:new-orleans-jazz",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://home.nps.gov/jazz/learn/historyculture/jazz_history.htm"
+      ]
+    },
+    {
+      "id": "key:king-oliver-new-orleans-jazz",
+      "from": "artist:king-oliver",
+      "to": "genre:new-orleans-jazz",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://home.nps.gov/jazz/learn/historyculture/jazz_history.htm"
+      ]
+    },
+    {
+      "id": "lineage:new-orleans-jazz-jazz",
+      "from": "genre:new-orleans-jazz",
+      "to": "genre:jazz",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.nps.gov/jazz/learn/historyculture/history_early.htm"
+      ]
+    },
+    {
+      "id": "key:willie-nelson-outlaw-country",
+      "from": "artist:willie-nelson",
+      "to": "genre:outlaw-country",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://countrymusichalloffame.org/hall-of-fame/willie-nelson"
+      ]
+    },
+    {
+      "id": "key:waylon-jennings-outlaw-country",
+      "from": "artist:waylon-jennings",
+      "to": "genre:outlaw-country",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://countrymusichalloffame.org/hall-of-fame/waylon-jennings"
+      ]
+    },
+    {
+      "id": "key:jessi-colter-outlaw-country",
+      "from": "artist:jessi-colter",
+      "to": "genre:outlaw-country",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://countrymusichalloffame.org/hall-of-fame/jerry-bradley",
+        "https://www.azmusichalloffame.org/inductees/jessi-colter/"
+      ]
+    },
+    {
+      "id": "lineage:outlaw-country-country",
+      "from": "genre:outlaw-country",
+      "to": "genre:country",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://countrymusichalloffame.org/hall-of-fame/willie-nelson",
+        "https://countrymusichalloffame.org/hall-of-fame/jerry-bradley"
+      ]
+    },
+    {
+      "id": "key:allman-brothers-band-southern-rock",
+      "from": "artist:allman-brothers-band",
+      "to": "genre:southern-rock",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.georgiaencyclopedia.org/articles/arts-culture/allman-brothers-band"
+      ]
+    },
+    {
+      "id": "key:lynyrd-skynyrd-southern-rock",
+      "from": "artist:lynyrd-skynyrd",
+      "to": "genre:southern-rock",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.georgiaencyclopedia.org/articles/arts-culture/allman-brothers-band"
+      ]
+    },
+    {
+      "id": "key:marshall-tucker-band-southern-rock",
+      "from": "artist:marshall-tucker-band",
+      "to": "genre:southern-rock",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.georgiaencyclopedia.org/articles/arts-culture/allman-brothers-band",
+        "https://marshalltucker.com/pages/bio"
+      ]
+    },
+    {
+      "id": "lineage:southern-rock-rock",
+      "from": "genre:southern-rock",
+      "to": "genre:rock",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.georgiaencyclopedia.org/articles/arts-culture/allman-brothers-band"
+      ]
+    },
+    {
+      "id": "key:bad-brains-hardcore-punk",
+      "from": "artist:bad-brains",
+      "to": "genre:hardcore-punk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://drum.lib.umd.edu/items/dbe0407b-8e15-436e-85af-b822c3ab8d3d"
+      ]
+    },
+    {
+      "id": "key:black-flag-hardcore-punk",
+      "from": "artist:black-flag",
+      "to": "genre:hardcore-punk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.loc.gov/static/programs/national-recording-preservation-plan/tools-and-resources/documents/Interview_Chris-Payne.pdf",
+        "https://www.blackflagband.com/"
+      ]
+    },
+    {
+      "id": "key:dead-kennedys-hardcore-punk",
+      "from": "artist:dead-kennedys",
+      "to": "genre:hardcore-punk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.loc.gov/static/programs/national-recording-preservation-plan/tools-and-resources/documents/Interview_Chris-Payne.pdf"
+      ]
+    },
+    {
+      "id": "lineage:hardcore-punk-punk-rock",
+      "from": "genre:hardcore-punk",
+      "to": "genre:punk-rock",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://drum.lib.umd.edu/items/dbe0407b-8e15-436e-85af-b822c3ab8d3d"
+      ]
+    },
+    {
+      "id": "key:helloween-power-metal",
+      "from": "artist:helloween",
+      "to": "genre:power-metal",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://pure.hud.ac.uk/ws/files/14390095/Herbst_Teutonic_Metal.pdf",
+        "https://www.loudersound.com/bands-artists/interviews/helloween-i-want-out-story-behind-the-song"
+      ]
+    },
+    {
+      "id": "key:blind-guardian-power-metal",
+      "from": "artist:blind-guardian",
+      "to": "genre:power-metal",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://pure.hud.ac.uk/ws/files/14390095/Herbst_Teutonic_Metal.pdf",
+        "https://www.blind-guardian.com/band/"
+      ]
+    },
+    {
+      "id": "key:gamma-ray-power-metal",
+      "from": "artist:gamma-ray",
+      "to": "genre:power-metal",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://pure.hud.ac.uk/ws/files/14390095/Herbst_Teutonic_Metal.pdf",
+        "https://gammaray.org/en/band/history.html"
+      ]
+    },
+    {
+      "id": "lineage:power-metal-heavy-metal",
+      "from": "genre:power-metal",
+      "to": "genre:heavy-metal",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://pure.hud.ac.uk/ws/files/14390095/Herbst_Teutonic_Metal.pdf",
+        "https://www.blind-guardian.com/band/"
+      ]
+    },
+    {
+      "id": "key:madonna-dance-pop",
+      "from": "artist:madonna",
+      "to": "genre:dance-pop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://time.com/3724297/madonna-rocks-the-land/",
+        "https://en.wikipedia.org/wiki/Dance-pop"
+      ]
+    },
+    {
+      "id": "key:janet-jackson-dance-pop",
+      "from": "artist:janet-jackson",
+      "to": "genre:dance-pop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.rockhall.com/wp-content/uploads/2024/03/Janet_Jackson_2019.pdf"
+      ]
+    },
+    {
+      "id": "key:michael-jackson-dance-pop",
+      "from": "artist:michael-jackson",
+      "to": "genre:dance-pop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://rockhall.com/inductees/michael-jackson/5/",
+        "https://www.grammy.com/news/30-years-later-michael-jacksons-thrilling-grammy-night/",
+        "https://en.wikipedia.org/wiki/Dance-pop"
+      ]
+    },
+    {
+      "id": "lineage:dance-pop-pop",
+      "from": "genre:dance-pop",
+      "to": "genre:pop",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dance-pop",
+        "https://time.com/3724297/madonna-rocks-the-land/",
+        "https://www.rockhall.com/wp-content/uploads/2024/03/Janet_Jackson_2019.pdf"
+      ]
+    },
+    {
+      "id": "key:lil-peep-emo-rap",
+      "from": "artist:lil-peep",
+      "to": "genre:emo-rap",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.knkx.org/2024-04-04/emo-rap-at-its-limits",
+        "https://pitchfork.com/reviews/albums/lil-peep-come-over-when-youre-sober-part-one/"
+      ]
+    },
+    {
+      "id": "key:juice-wrld-emo-rap",
+      "from": "artist:juice-wrld",
+      "to": "genre:emo-rap",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.knkx.org/2024-04-04/emo-rap-at-its-limits",
+        "https://pitchfork.com/thepitch/emo-rap-is-back-here-we-go-again/"
+      ]
+    },
+    {
+      "id": "key:xxxtentacion-emo-rap",
+      "from": "artist:xxxtentacion",
+      "to": "genre:emo-rap",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.knkx.org/2024-04-04/emo-rap-at-its-limits",
+        "https://pitchfork.com/thepitch/emo-rap-is-back-here-we-go-again/"
+      ]
+    },
+    {
+      "id": "lineage:emo-rap-hip-hop",
+      "from": "genre:emo-rap",
+      "to": "genre:hip-hop",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.knkx.org/2024-04-04/emo-rap-at-its-limits",
+        "https://pitchfork.com/thepitch/emo-rap-is-back-here-we-go-again/",
+        "https://time.com/5746145/juice-wrld-dead/"
+      ]
+    },
+    {
+      "id": "key:bob-marley-roots-reggae",
+      "from": "artist:bob-marley",
+      "to": "genre:roots-reggae",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://folklife.si.edu/magazine/black-history-in-roots-reggae-music"
+      ]
+    },
+    {
+      "id": "key:burning-spear-roots-reggae",
+      "from": "artist:burning-spear",
+      "to": "genre:roots-reggae",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://folklife.si.edu/magazine/black-history-in-roots-reggae-music",
+        "https://www.laphil.com/people/burning-spear"
+      ]
+    },
+    {
+      "id": "key:culture-roots-reggae",
+      "from": "artist:culture",
+      "to": "genre:roots-reggae",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://folklife.si.edu/magazine/black-history-in-roots-reggae-music",
+        "https://www.laphil.com/people/culture"
+      ]
+    },
+    {
+      "id": "lineage:roots-reggae-reggae",
+      "from": "genre:roots-reggae",
+      "to": "genre:reggae",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://folklife.si.edu/magazine/black-history-in-roots-reggae-music"
+      ]
+    },
+    {
+      "id": "key:machito-mambo",
+      "from": "artist:machito",
+      "to": "genre:mambo",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.redalyc.org/pdf/377/37716112.pdf"
+      ]
+    },
+    {
+      "id": "key:tito-puente-mambo",
+      "from": "artist:tito-puente",
+      "to": "genre:mambo",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.redalyc.org/pdf/377/37716112.pdf"
+      ]
+    },
+    {
+      "id": "key:perez-prado-mambo",
+      "from": "artist:perez-prado",
+      "to": "genre:mambo",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/Mambo-No-5_Firmat.pdf",
+        "https://www.redalyc.org/pdf/377/37716112.pdf"
+      ]
+    },
+    {
+      "id": "lineage:son-cubano-mambo",
+      "from": "genre:son-cubano",
+      "to": "genre:mambo",
+      "type": "influences",
+      "confidence": "high",
+      "sources": [
+        "https://cubansinamerica.cubaninstitute.org/cuban-music/son/",
+        "https://www.redalyc.org/pdf/377/37716112.pdf"
+      ]
+    },
+    {
+      "id": "key:black-coffee-afro-house",
+      "from": "artist:black-coffee",
+      "to": "genre:afro-house",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.scientificsound.asia/news/categories/afro-house/",
+        "https://defected.com/news/post/house-of-africa"
+      ]
+    },
+    {
+      "id": "key:culoe-de-song-afro-house",
+      "from": "artist:culoe-de-song",
+      "to": "genre:afro-house",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.scientificsound.asia/news/categories/afro-house/",
+        "https://defected.com/news/post/house-of-africa"
+      ]
+    },
+    {
+      "id": "key:black-motion-afro-house",
+      "from": "artist:black-motion",
+      "to": "genre:afro-house",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.scientificsound.asia/news/categories/afro-house/",
+        "https://defected.com/news/post/house-of-africa"
+      ]
+    },
+    {
+      "id": "lineage:afro-house-house",
+      "from": "genre:afro-house",
+      "to": "genre:house",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.scientificsound.asia/news/categories/afro-house/",
+        "https://defected.com/news/post/house-of-africa"
+      ]
+    },
+    {
+      "id": "key:sasha-progressive-house",
+      "from": "artist:sasha",
+      "to": "genre:progressive-house",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.beatportal.com/articles/299799-beatports-definitive-history-of-house-music"
+      ]
+    },
+    {
+      "id": "key:john-digweed-progressive-house",
+      "from": "artist:john-digweed",
+      "to": "genre:progressive-house",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.beatportal.com/articles/299799-beatports-definitive-history-of-house-music"
+      ]
+    },
+    {
+      "id": "key:leftfield-progressive-house",
+      "from": "artist:leftfield",
+      "to": "genre:progressive-house",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.beatportal.com/articles/299799-beatports-definitive-history-of-house-music",
+        "https://www.leftfieldmusic.com/about/"
+      ]
+    },
+    {
+      "id": "lineage:progressive-house-house",
+      "from": "genre:progressive-house",
+      "to": "genre:house",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.beatportal.com/articles/299799-beatports-definitive-history-of-house-music"
+      ]
+    },
+    {
+      "id": "key:the-orb-ambient-house",
+      "from": "artist:the-orb",
+      "to": "genre:ambient-house",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://djmag.com/features/no-sounds-are-out-of-bounds-how-orb-brought-ambient-house-masses",
+        "https://www.808state.com/various/interview/1990-03-10-MelodyMaker-Article.html"
+      ]
+    },
+    {
+      "id": "key:the-klf-ambient-house",
+      "from": "artist:the-klf",
+      "to": "genre:ambient-house",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://subcity.org/blog/subcity-30-year-rewind-klf-interview-3-november-1995/"
+      ]
+    },
+    {
+      "id": "key:mixmaster-morris-ambient-house",
+      "from": "artist:mixmaster-morris",
+      "to": "genre:ambient-house",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://jointhefuture.net/2020/09/10/long-read-the-story-of-chill-out/"
+      ]
+    },
+    {
+      "id": "lineage:ambient-house-ambient",
+      "from": "genre:ambient-house",
+      "to": "genre:ambient",
+      "type": "fusion_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.808state.com/various/interview/1990-03-10-MelodyMaker-Article.html"
+      ]
+    },
+    {
+      "id": "lineage:ambient-house-house",
+      "from": "genre:ambient-house",
+      "to": "genre:house",
+      "type": "fusion_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.808state.com/various/interview/1990-03-10-MelodyMaker-Article.html"
+      ]
+    },
+    {
+      "id": "key:chris-liberator-acid-techno",
+      "from": "artist:chris-liberator",
+      "to": "genre:acid-techno",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://ra.co/news/76853",
+        "https://stayupforever.com/about-us/"
+      ]
+    },
+    {
+      "id": "key:dave-the-drummer-acid-techno",
+      "from": "artist:dave-the-drummer",
+      "to": "genre:acid-techno",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://ra.co/dj/henrycullen/biography",
+        "https://stayupforever.com/about-us/"
+      ]
+    },
+    {
+      "id": "key:the-geezer-acid-techno",
+      "from": "artist:the-geezer",
+      "to": "genre:acid-techno",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://truelovemusic.com/guy-mcaffer/",
+        "https://daily.redbullmusicacademy.com/2016/06/london-acid-techno-feature/"
+      ]
+    },
+    {
+      "id": "lineage:acid-techno-techno",
+      "from": "genre:acid-techno",
+      "to": "genre:techno",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://stayupforever.com/about-us/",
+        "https://daily.redbullmusicacademy.com/2016/06/london-acid-techno-feature/"
+      ]
+    },
+    {
+      "id": "key:fabio-liquid-drum-and-bass",
+      "from": "artist:fabio",
+      "to": "genre:liquid-drum-and-bass",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://ukf.com/read/in-conversation-with-fabio/",
+        "https://www.beatportal.com/articles/4445-beatports-definitive-history-of-drum-bass"
+      ]
+    },
+    {
+      "id": "key:calibre-liquid-drum-and-bass",
+      "from": "artist:calibre",
+      "to": "genre:liquid-drum-and-bass",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://ukf.com/read/in-conversation-with-fabio/",
+        "https://www.beatportal.com/articles/4445-beatports-definitive-history-of-drum-bass"
+      ]
+    },
+    {
+      "id": "key:high-contrast-liquid-drum-and-bass",
+      "from": "artist:high-contrast",
+      "to": "genre:liquid-drum-and-bass",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://1-more-thing.co.uk/interviews/the-story-of-high-contrast-true-colours/",
+        "https://www.beatportal.com/articles/4445-beatports-definitive-history-of-drum-bass"
+      ]
+    },
+    {
+      "id": "lineage:liquid-drum-and-bass-drum-and-bass",
+      "from": "genre:liquid-drum-and-bass",
+      "to": "genre:drum-and-bass",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.beatportal.com/articles/4445-beatports-definitive-history-of-drum-bass"
       ]
     }
   ]

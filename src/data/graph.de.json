@@ -4969,6 +4969,184 @@
     "artist:machel-montano": {
       "description": "Der Soca-Künstler aus Trinidad wurde als Kinderstar bekannt und entwickelte eine lange Karriere mit vielfältigen musikalischen Einflüssen und genreübergreifenden Kooperationen.",
       "estimateNote": "Ein Beitrag von Caribbean Beat aus dem Jahr 2023 beschreibt eine 40-jährige Karriere und legt damit einen ungefähren Anker in den frühen 1980er-Jahren nahe; ein Porträt von 2009 beschreibt seinen Aufstieg als Kinderstar, nennt aber kein Startjahr."
+    },
+    "genre:outlaw-country": {
+      "name": "Outlaw Country",
+      "description": "Eine Country-Bewegung der 1970er-Jahre, in der Künstler mehr Kontrolle darüber anstrebten, was sie aufnahmen und wie ihre Aufnahmen entstanden. Die Kompilation „Wanted! The Outlaws“ machte die Bewegung 1976 in den ganzen USA bekannt.",
+      "estimateNote": "Wegweisende Aufnahmen und ein Outlaw-Programm in Nashville aus dem Jahr 1973 geben Anhaltspunkte für die frühen Jahre der Bewegung."
+    },
+    "genre:neoclassicism": {
+      "name": "Neoklassizismus",
+      "description": "Eine Kompositionsrichtung des 20. Jahrhunderts, die ältere Formen und Satztechniken aus Klassik und Barock aufgriff. Strawinskys „Pulcinella“ und Prokofjews „Klassische Sinfonie“ zeigen, wie unterschiedlich sich frühere musikalische Vorbilder bearbeiten ließen.",
+      "estimateNote": "Die Richtung etablierte sich in den 1920er-Jahren und hatte bereits frühere Vorläufer."
+    },
+    "genre:hardcore-punk": {
+      "name": "Hardcore-Punk",
+      "description": "Eine Spielart des Punkrock, die sich Ende der 1970er- und Anfang der 1980er-Jahre entwickelte. Frühe Szenen in Südkalifornien und Washington, D.C., machten Punk schneller, lauter und rauer.",
+      "estimateNote": "Frühe Hardcore-Szenen formierten sich Ende der 1970er- und Anfang der 1980er-Jahre."
+    },
+    "genre:roots-reggae": {
+      "name": "Roots Reggae",
+      "description": "Ein jamaikanischer Reggae-Stil, der eng mit Rastafari verbunden ist. Seine Songs brachten in den Jahren nach der Unabhängigkeit Schwarze Geschichte, spirituellen Glauben und afrikanische Identität zum Ausdruck."
+    },
+    "genre:chicago-blues": {
+      "name": "Chicago Blues",
+      "description": "Ein urbaner Bluesstil, der in Chicago entstand, als Musiker aus den Südstaaten der USA ihre Traditionen in die Stadt brachten. E-Gitarre und solistische Mundharmonika wurden zu seinen charakteristischen Klängen.",
+      "estimateNote": "Die Datierung markiert die Entstehung des elektrisch verstärkten Stils um das Ende des Zweiten Weltkriegs."
+    },
+    "genre:southern-rock": {
+      "name": "Southern Rock",
+      "description": "Ein Rockstil, der um 1970 in den Südstaaten der USA entstand. Die Mischung aus Rock ’n’ Roll, Blues, Country und Jazz der Allman Brothers Band prägte die Entstehung des Genres.",
+      "estimateNote": "Die Gründung der Allman Brothers Band im Jahr 1969 war ein früher Meilenstein für den Stil."
+    },
+    "genre:dance-pop": {
+      "name": "Dance-Pop",
+      "description": "Dance-Pop verbindet eingängige Pop-Hooks und kompakte Songstrukturen mit tanzbaren Rhythmen. Madonna machte den Stil Anfang der 1980er-Jahre über die New Yorker Clubs hinaus einem breiten Publikum bekannt."
+    },
+    "genre:mambo": {
+      "description": "Kubanische Tanzmusik mit synkopierten Riffs und treibender Percussion. Pérez Prados Aufnahmen in Mexiko und die Mambo-Bands im New Yorker Palladium Ballroom machten den Stil einem breiteren Publikum bekannt."
+    },
+    "genre:progressive-house": {
+      "name": "Progressive House",
+      "description": "Ein House-Stil, der Anfang der 1990er-Jahre entstand. Frühe britische Produktionen kombinierten vom Dub geprägte Basslinien und Breakbeats mit einer gleichmäßigen House-Bassdrum."
+    },
+    "genre:power-metal": {
+      "name": "Power Metal",
+      "description": "Power Metal setzt auf hohes Spieltempo, klaren Gesang in hoher Lage und markante Melodien. Westdeutsche Bands wie Helloween prägten einen Stil, dessen Texte häufig von Fantasy und Mythologie inspiriert sind."
+    },
+    "genre:acid-techno": {
+      "name": "Acid Techno",
+      "description": "Ein Techno-Stil mit dem charakteristischen Blubbern des Roland TB-303. Londons Free-Party-Szene trug Anfang der 1990er-Jahre dazu bei, diesen Klang zu etablieren."
+    },
+    "genre:liquid-drum-and-bass": {
+      "name": "Liquid Drum and Bass",
+      "description": "Diese melodische Spielart des Drum and Bass, auch Liquid Funk genannt, entstand Ende der 1990er-Jahre. Sie greift auf Soul und Funk zurück und setzt häufig Gesang ein."
+    },
+    "genre:ambient-house": {
+      "name": "Ambient House",
+      "description": "Ein britischer Clubstil, der Ende der 1980er-Jahre in Chill-out-Räumen entstand und House mit Ambient-Klangflächen und Samples verband."
+    },
+    "genre:new-orleans-jazz": {
+      "name": "New-Orleans-Jazz",
+      "description": "Ein früher Jazzstil aus New Orleans, bekannt für kollektive Improvisation. Kornett, Klarinette und Posaune improvisierten häufig ineinandergreifende Stimmen, die an die Blaskapellen- und Tanztraditionen der Stadt anknüpften.",
+      "estimateNote": "Der Beginn markiert die Entstehungsphase Ende des 19. Jahrhunderts, die der National Park Service beschreibt."
+    },
+    "genre:emo-rap": {
+      "name": "Emo-Rap",
+      "description": "Eine Spielart des Hip-Hop, die Ende der 2010er-Jahre über SoundCloud ein breites Publikum erreichte. Der melodische Vortrag und die Texte über Liebeskummer und Einsamkeit greifen häufig Einflüsse aus Emo und Pop-Punk auf."
+    },
+    "genre:afro-house": {
+      "name": "Afro House",
+      "description": "Eine in Südafrika geprägte Form des House mit vielschichtiger Percussion und lokalen Gesangs- und Rhythmustraditionen. Produzenten wie Black Coffee und Culoe De Song trugen den Stil auf Tanzflächen im Ausland."
+    },
+    "artist:sergei-prokofiev": {
+      "description": "Komponist und Pianist, zu dessen Werken die „Klassische Sinfonie“, „Romeo und Julia“ und „Alexander Newski“ gehören."
+    },
+    "artist:paul-hindemith": {
+      "description": "Komponist, Bratschist und Dirigent, zu dessen Werken die „Kammermusik“ und die Sinfonie „Mathis der Maler“ gehören."
+    },
+    "artist:little-walter": {
+      "description": "Blues-Mundharmonikaspieler, der in Chicago in Muddy Waters’ Band einstieg und den Instrumentalhit „Juke“ aufnahm.",
+      "estimateNote": "Der Beginn entspricht ungefähr seinem Umzug nach Chicago Ende der 1940er-Jahre. Zuvor war er bereits in New Orleans aufgetreten."
+    },
+    "artist:howlin-wolf": {
+      "description": "Blues-Sänger und Gitarrist, der im Mississippi-Delta auftrat, bevor er für Chess Aufnahmen machte und nach Chicago zog.",
+      "estimateNote": "Das Jahr, in dem er seine erste Gitarre bekam, bietet einen dokumentierten Anhaltspunkt für seine ersten Auftritte als Jugendlicher."
+    },
+    "artist:king-oliver": {
+      "description": "Jazz-Kornettist und Bandleader aus New Orleans, der Louis Armstrong förderte und in Chicago die Creole Jazz Band gründete.",
+      "estimateNote": "Die Datierung ordnet seine frühe Zeit in Blaskapellen in New Orleans um die Wende zum 20. Jahrhundert ein."
+    },
+    "artist:willie-nelson": {
+      "description": "Country-Sänger, Songwriter und Gitarrist, der Outlaw Country mitbegründete und „Shotgun Willie“ aufnahm.",
+      "estimateNote": "Die Datierung gibt den Beginn seiner dokumentierten Aufnahmekarriere Mitte der 1950er-Jahre ungefähr wieder."
+    },
+    "artist:waylon-jennings": {
+      "description": "Country-Sänger und Gitarrist, der sich in Nashville mehr künstlerische Freiheit erkämpfte und 1973 „Honky Tonk Heroes“ aufnahm."
+    },
+    "artist:jessi-colter": {
+      "description": "Country-Sängerin und Songwriterin, zu deren Solo-Hits „I’m Not Lisa“ zählt und die auf „Wanted! The Outlaws“ zu hören ist."
+    },
+    "artist:allman-brothers-band": {
+      "description": "1969 gegründete Band, die den Southern Rock mit ihrer Mischung aus Blues, Country, Jazz und Rock ’n’ Roll mitprägte."
+    },
+    "artist:lynyrd-skynyrd": {
+      "description": "Band aus Jacksonville, die 1969 den Namen Lynyrd Skynyrd annahm und 1973 ihr Debütalbum veröffentlichte."
+    },
+    "artist:marshall-tucker-band": {
+      "description": "1972 in Spartanburg, South Carolina, gegründete Band, zu deren frühen Songs „Can’t You See“ gehört."
+    },
+    "artist:bad-brains": {
+      "description": "Band aus Washington, D.C., die auf ihrem selbstbetitelten Debüt sehr schnelle Hardcore-Songs mit Dub-geprägtem Reggae verband."
+    },
+    "artist:black-flag": {
+      "description": "Band aus Südkalifornien, die zu einem einflussreichen frühen Act des US-amerikanischen Hardcore wurde."
+    },
+    "artist:dead-kennedys": {
+      "description": "Punkband aus San Francisco, die 1978 unter anderem von East Bay Ray und Jello Biafra gegründet wurde."
+    },
+    "artist:helloween": {
+      "description": "Hamburger Band, deren „Keeper of the Seven Keys“-Alben zum Vorbild für den europäischen Power Metal wurden."
+    },
+    "artist:blind-guardian": {
+      "description": "Krefelder Band, die aus dem Speed Metal hervorging und für vielschichtigen Gesang und Songs mit Fantasy-Themen bekannt wurde."
+    },
+    "artist:gamma-ray": {
+      "description": "Deutsche Power-Metal-Band, die der Gitarrist und Sänger Kai Hansen nach seinem Ausstieg bei Helloween gründete."
+    },
+    "artist:janet-jackson": {
+      "description": "US-amerikanische Sängerin, deren 1986 mit Jimmy Jam und Terry Lewis entstandenes Album „Control“ den Dance-Pop mitprägte."
+    },
+    "artist:lil-peep": {
+      "description": "Rapper und Sänger, der seine Songs aus Emo- und Pop-Punk-Samples und programmierten Schlagzeugrhythmen aufbaute."
+    },
+    "artist:juice-wrld": {
+      "description": "Rapper aus dem Großraum Chicago, dessen melodischer Vortrag und nachdenkliche Texte mit „Lucid Dreams“ ein breites Publikum erreichten."
+    },
+    "artist:xxxtentacion": {
+      "description": "Rapper aus Florida, der sich auf SoundCloud ein Publikum aufbaute und mit „Look at Me!“ den Durchbruch schaffte."
+    },
+    "artist:burning-spear": {
+      "description": "Der jamaikanische Sänger Winston Rodney machte die Lehren von Marcus Garvey zu einem wiederkehrenden Thema seiner Roots-Reggae-Aufnahmen."
+    },
+    "artist:culture": {
+      "description": "Jamaikanisches Gesangstrio um Joseph Hill, dessen 1977 erschienenes Album „Two Sevens Clash“ zu einem Meilenstein des Roots Reggae wurde."
+    },
+    "artist:perez-prado": {
+      "description": "Kubanischer Pianist, Arrangeur und Bandleader, dessen in Mexiko entstandene Aufnahmen, darunter „Mambo No. 5“, den Mambo zu einer internationalen Tanzmode machten."
+    },
+    "artist:culoe-de-song": {
+      "description": "Südafrikanischer DJ und Produzent, dessen Tracks für das Umfeld von Black Coffee und das Label Innervisions Afro House auch im Ausland bekannt machten."
+    },
+    "artist:black-motion": {
+      "description": "Südafrikanischer House-Act, der für Live-Percussion in seinen DJ-Sets und Aufnahmen bekannt ist."
+    },
+    "artist:leftfield": {
+      "description": "Britisches Elektronikprojekt, gegründet von Neil Barnes und Paul Daley. Die Single „Not Forgotten“ von 1990 prägte die Entstehung des Progressive House."
+    },
+    "artist:the-klf": {
+      "description": "Elektronikduo aus Bill Drummond und Jimmy Cauty. Das Album „Chill Out“ von 1990 prägte den Ambient House."
+    },
+    "artist:mixmaster-morris": {
+      "description": "Britischer DJ und Produzent Morris Gould, der als The Irresistible Force veröffentlichte und zu einer prägenden Figur der Chill-out-Szene wurde."
+    },
+    "artist:chris-liberator": {
+      "description": "Londoner Techno-DJ und Produzent, der mit den Liberator DJs das Label Stay Up Forever mitgründete."
+    },
+    "artist:dave-the-drummer": {
+      "description": "Britischer Produzent und DJ Henry Cullen, der mit den Liberator DJs arbeitete und das Label Hydraulix gründete."
+    },
+    "artist:the-geezer": {
+      "description": "Londoner Acid-Techno-Produzent Guy McAffer, der auf Stay Up Forever veröffentlichte und das Label RAW gründete."
+    },
+    "artist:fabio": {
+      "description": "Londoner DJ, der beim Piratenradio begann und später Liquid Funk mit Radiosendungen, DJ-Sets und seinem Label Creative Source förderte."
+    },
+    "artist:calibre": {
+      "description": "Produzent und DJ Dominick Martin aus Belfast, dessen frühe Drum-and-Bass-Veröffentlichungen bei Fabios Label Creative Source erschienen."
+    },
+    "artist:high-contrast": {
+      "description": "Drum-and-Bass-Produzent und DJ Lincoln Barrett, dessen erste Aufnahme 2001 bei Hospital Records erschien."
     }
   },
   "edges": {
