@@ -2,6 +2,2414 @@
   "version": 4,
   "entries": [
     {
+      "commit": "352e256d6d54260036c7dab1b4df15be8cfe3832",
+      "parent": "1123201ce410366c4986aec1687b5d1401263f9d",
+      "date": "2026-11-13T15:00:52-05:00",
+      "subject": "Expand worldwide genre coverage and add music history events",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "artist:a-rafiq",
+              "name": "A. Rafiq",
+              "status": "added"
+            },
+            {
+              "id": "artist:ahmed-adaweyah",
+              "name": "Ahmed Adaweyah",
+              "status": "added"
+            },
+            {
+              "id": "artist:alaap",
+              "name": "Alaap",
+              "status": "added"
+            },
+            {
+              "id": "artist:alejo-duran",
+              "name": "Alejo Durán",
+              "status": "added"
+            },
+            {
+              "id": "artist:amalia-rodrigues",
+              "name": "Amália Rodrigues",
+              "status": "added"
+            },
+            {
+              "id": "artist:anita-mui",
+              "name": "Anita Mui",
+              "status": "added"
+            },
+            {
+              "id": "artist:apirana-ngata",
+              "name": "Āpirana Ngata",
+              "status": "added"
+            },
+            {
+              "id": "artist:apo-hiking-society",
+              "name": "APO Hiking Society",
+              "status": "added"
+            },
+            {
+              "id": "artist:asha-bhosle",
+              "name": "Asha Bhosle",
+              "status": "added"
+            },
+            {
+              "id": "artist:banda-el-recodo",
+              "name": "Banda El Recodo",
+              "status": "added"
+            },
+            {
+              "id": "artist:banda-la-costena",
+              "name": "Banda La Costeña",
+              "status": "added"
+            },
+            {
+              "id": "artist:banda-los-guamuchilenos",
+              "name": "Banda Los Guamuchileños",
+              "status": "added"
+            },
+            {
+              "id": "artist:bulimundo",
+              "name": "Bulimundo",
+              "status": "added"
+            },
+            {
+              "id": "artist:camaron-de-la-isla",
+              "name": "Camarón de la Isla",
+              "status": "added"
+            },
+            {
+              "id": "artist:carlos-do-carmo",
+              "name": "Carlos do Carmo",
+              "status": "added"
+            },
+            {
+              "id": "artist:caterina-valente",
+              "name": "Caterina Valente",
+              "status": "added"
+            },
+            {
+              "id": "artist:chabuca-granda",
+              "name": "Chabuca Granda",
+              "status": "added"
+            },
+            {
+              "id": "artist:chacalon-y-la-nueva-crema",
+              "name": "Chacalón y la Nueva Crema",
+              "status": "added"
+            },
+            {
+              "id": "artist:chitaozinho-e-xororo",
+              "name": "Chitãozinho & Xororó",
+              "status": "added"
+            },
+            {
+              "id": "artist:claude-francois",
+              "name": "Claude François",
+              "status": "added"
+            },
+            {
+              "id": "artist:code-di-dona",
+              "name": "Codé di Dona",
+              "status": "added"
+            },
+            {
+              "id": "artist:count-lasher",
+              "name": "Count Lasher",
+              "status": "added"
+            },
+            {
+              "id": "artist:dahlak-band",
+              "name": "Dahlak Band",
+              "status": "added"
+            },
+            {
+              "id": "artist:daniel-owino-misiani",
+              "name": "Daniel Owino Misiani",
+              "status": "added"
+            },
+            {
+              "id": "artist:danyel-waro",
+              "name": "Danyèl Waro",
+              "status": "added"
+            },
+            {
+              "id": "artist:diomedes-diaz",
+              "name": "Diomedes Díaz",
+              "status": "added"
+            },
+            {
+              "id": "artist:elvy-sukaesih",
+              "name": "Elvy Sukaesih",
+              "status": "added"
+            },
+            {
+              "id": "artist:fahad-al-kubaisi",
+              "name": "Fahad Al Kubaisi",
+              "status": "added"
+            },
+            {
+              "id": "artist:fairuz",
+              "name": "Fairuz",
+              "status": "updated"
+            },
+            {
+              "id": "artist:fanfan-sega",
+              "name": "Fanfan",
+              "status": "added"
+            },
+            {
+              "id": "artist:felipe-pinglo",
+              "name": "Felipe Pinglo Alva",
+              "status": "added"
+            },
+            {
+              "id": "artist:ferdi-tayfur",
+              "name": "Ferdi Tayfur",
+              "status": "added"
+            },
+            {
+              "id": "artist:ferro-gaita",
+              "name": "Ferro Gaita",
+              "status": "added"
+            },
+            {
+              "id": "artist:firmin-viry",
+              "name": "Firmin Viry",
+              "status": "added"
+            },
+            {
+              "id": "artist:francoise-hardy",
+              "name": "Françoise Hardy",
+              "status": "added"
+            },
+            {
+              "id": "artist:freddie-aguilar",
+              "name": "Freddie Aguilar",
+              "status": "added"
+            },
+            {
+              "id": "artist:freddy-quinn",
+              "name": "Freddy Quinn",
+              "status": "added"
+            },
+            {
+              "id": "artist:george-ramogi",
+              "name": "George Ramogi",
+              "status": "added"
+            },
+            {
+              "id": "artist:granmoun-lele",
+              "name": "Granmoun Lélé",
+              "status": "added"
+            },
+            {
+              "id": "artist:hailu-mergia",
+              "name": "Hailu Mergia",
+              "status": "added"
+            },
+            {
+              "id": "artist:hakim",
+              "name": "Hakim",
+              "status": "added"
+            },
+            {
+              "id": "artist:heera",
+              "name": "Heera",
+              "status": "added"
+            },
+            {
+              "id": "artist:jacob-desvarieux",
+              "name": "Jacob Desvarieux",
+              "status": "added"
+            },
+            {
+              "id": "artist:joao-pacifico",
+              "name": "João Pacífico",
+              "status": "added"
+            },
+            {
+              "id": "artist:jocelyne-beroard",
+              "name": "Jocelyne Béroard",
+              "status": "added"
+            },
+            {
+              "id": "artist:johnny-hallyday",
+              "name": "Johnny Hallyday",
+              "status": "added"
+            },
+            {
+              "id": "artist:junior-h",
+              "name": "Junior H",
+              "status": "added"
+            },
+            {
+              "id": "artist:kassav",
+              "name": "Kassav’",
+              "status": "added"
+            },
+            {
+              "id": "artist:kuljit-bhamra",
+              "name": "Kuljit Bhamra",
+              "status": "added"
+            },
+            {
+              "id": "artist:la-mona-jimenez",
+              "name": "La Mona Jiménez",
+              "status": "added"
+            },
+            {
+              "id": "artist:lata-mangeshkar",
+              "name": "Lata Mangeshkar",
+              "status": "added"
+            },
+            {
+              "id": "artist:leonor-marzano",
+              "name": "Leonor Marzano",
+              "status": "added"
+            },
+            {
+              "id": "artist:leslie-cheung",
+              "name": "Leslie Cheung",
+              "status": "added"
+            },
+            {
+              "id": "artist:lord-flea",
+              "name": "Lord Flea",
+              "status": "added"
+            },
+            {
+              "id": "artist:lord-fly",
+              "name": "Lord Fly",
+              "status": "added"
+            },
+            {
+              "id": "artist:los-alegres-de-teran",
+              "name": "Los Alegres de Terán",
+              "status": "added"
+            },
+            {
+              "id": "artist:los-relampagos-del-norte",
+              "name": "Los Relámpagos del Norte",
+              "status": "added"
+            },
+            {
+              "id": "artist:los-shapis",
+              "name": "Los Shapis",
+              "status": "added"
+            },
+            {
+              "id": "artist:los-tigres-del-norte",
+              "name": "Los Tigres del Norte",
+              "status": "added"
+            },
+            {
+              "id": "artist:lucha-reyes-peru",
+              "name": "Lucha Reyes",
+              "status": "added"
+            },
+            {
+              "id": "artist:mariza",
+              "name": "Mariza",
+              "status": "added"
+            },
+            {
+              "id": "artist:markos-vamvakaris",
+              "name": "Markos Vamvakaris",
+              "status": "added"
+            },
+            {
+              "id": "artist:mc-sadat",
+              "name": "MC Sadat",
+              "status": "added"
+            },
+            {
+              "id": "artist:mohammed-abdu",
+              "name": "Mohammed Abdu",
+              "status": "added"
+            },
+            {
+              "id": "artist:mohammed-rafi",
+              "name": "Mohammed Rafi",
+              "status": "added"
+            },
+            {
+              "id": "artist:mulatu-astatke",
+              "name": "Mulatu Astatke",
+              "status": "added"
+            },
+            {
+              "id": "artist:muslum-gurses",
+              "name": "Müslüm Gürses",
+              "status": "added"
+            },
+            {
+              "id": "artist:na-hoon-a",
+              "name": "Na Hoon-a",
+              "status": "added"
+            },
+            {
+              "id": "artist:nam-jin",
+              "name": "Nam Jin",
+              "status": "added"
+            },
+            {
+              "id": "artist:natanael-cano",
+              "name": "Natanael Cano",
+              "status": "added"
+            },
+            {
+              "id": "artist:ochieng-nelly-mengo",
+              "name": "Ochieng Nelly Mengo",
+              "status": "added"
+            },
+            {
+              "id": "artist:oka",
+              "name": "Oka",
+              "status": "added"
+            },
+            {
+              "id": "artist:omar-souleyman",
+              "name": "Omar Souleyman",
+              "status": "added"
+            },
+            {
+              "id": "artist:orhan-gencebay",
+              "name": "Orhan Gencebay",
+              "status": "added"
+            },
+            {
+              "id": "artist:ortega-mahraganat",
+              "name": "Ortega",
+              "status": "added"
+            },
+            {
+              "id": "artist:paco-de-lucia",
+              "name": "Paco de Lucía",
+              "status": "added"
+            },
+            {
+              "id": "artist:paraire-tomoana",
+              "name": "Paraire Tomoana",
+              "status": "added"
+            },
+            {
+              "id": "artist:pastora-pavon",
+              "name": "Pastora Pavón",
+              "status": "added"
+            },
+            {
+              "id": "artist:peso-pluma",
+              "name": "Peso Pluma",
+              "status": "added"
+            },
+            {
+              "id": "artist:peter-alexander",
+              "name": "Peter Alexander",
+              "status": "added"
+            },
+            {
+              "id": "artist:pintura-roja",
+              "name": "Pintura Roja",
+              "status": "added"
+            },
+            {
+              "id": "artist:rafael-escalona",
+              "name": "Rafael Escalona",
+              "status": "added"
+            },
+            {
+              "id": "artist:rhoma-irama",
+              "name": "Rhoma Irama",
+              "status": "added"
+            },
+            {
+              "id": "artist:rodrigo-bueno",
+              "name": "Rodrigo Bueno",
+              "status": "added"
+            },
+            {
+              "id": "artist:ryan-cayabyab",
+              "name": "Ryan Cayabyab",
+              "status": "added"
+            },
+            {
+              "id": "artist:sam-hui",
+              "name": "Sam Hui",
+              "status": "added"
+            },
+            {
+              "id": "artist:serge-lebrasse",
+              "name": "Serge Lebrasse",
+              "status": "added"
+            },
+            {
+              "id": "artist:shaaban-abdel-rahim",
+              "name": "Shaaban Abdel Rahim",
+              "status": "added"
+            },
+            {
+              "id": "artist:stella-haskil",
+              "name": "Stella Haskil",
+              "status": "added"
+            },
+            {
+              "id": "artist:talal-maddah",
+              "name": "Talal Maddah",
+              "status": "added"
+            },
+            {
+              "id": "artist:te-puea-herangi",
+              "name": "Te Puea Hērangi",
+              "status": "added"
+            },
+            {
+              "id": "artist:ti-frere",
+              "name": "Ti Frère",
+              "status": "added"
+            },
+            {
+              "id": "artist:tonico-e-tinoco",
+              "name": "Tonico & Tinoco",
+              "status": "added"
+            },
+            {
+              "id": "artist:vasilis-tsitsanis",
+              "name": "Vasilis Tsitsanis",
+              "status": "added"
+            },
+            {
+              "id": "artist:wadih-el-safi",
+              "name": "Wadih El Safi",
+              "status": "added"
+            },
+            {
+              "id": "artist:yi-nan-yeong",
+              "name": "Yi Nan-yeong",
+              "status": "added"
+            },
+            {
+              "id": "event:abba-waterloo-eurovision",
+              "name": "ABBA wins Eurovision with “Waterloo”",
+              "status": "added"
+            },
+            {
+              "id": "event:acdc-back-in-black-uk-number-one",
+              "name": "AC/DC’s Back in Black tops the UK chart",
+              "status": "added"
+            },
+            {
+              "id": "event:bachata-unesco-inscription",
+              "name": "UNESCO inscribes Dominican bachata",
+              "status": "added"
+            },
+            {
+              "id": "event:battle-of-britpop",
+              "name": "Blur and Oasis face off on the UK chart",
+              "status": "added"
+            },
+            {
+              "id": "event:black-sabbath-debut",
+              "name": "Black Sabbath’s debut reaches the UK Top 10",
+              "status": "added"
+            },
+            {
+              "id": "event:bts-dynamite-hot-100-number-one",
+              "name": "BTS takes “Dynamite” to No. 1 in the US",
+              "status": "added"
+            },
+            {
+              "id": "event:burna-boy-global-album-grammy",
+              "name": "Burna Boy wins the Global Music Album Grammy",
+              "status": "added"
+            },
+            {
+              "id": "event:gamelan-unesco-inscription",
+              "name": "UNESCO inscribes Indonesian gamelan",
+              "status": "added"
+            },
+            {
+              "id": "event:gasolina-recording-registry",
+              "name": "“Gasolina” enters the US Recording Registry",
+              "status": "added"
+            },
+            {
+              "id": "event:getz-gilberto-grammy",
+              "name": "Getz/Gilberto wins Album of the Year",
+              "status": "added"
+            },
+            {
+              "id": "event:kylie-cant-get-you-out-uk-number-one",
+              "name": "Kylie Minogue takes “Can’t Get You Out of My Head” to No. 1",
+              "status": "added"
+            },
+            {
+              "id": "event:merengue-unesco-inscription",
+              "name": "UNESCO inscribes Dominican merengue",
+              "status": "added"
+            },
+            {
+              "id": "event:morna-unesco-inscription",
+              "name": "UNESCO inscribes Cabo Verde’s morna",
+              "status": "added"
+            },
+            {
+              "id": "event:nirvana-nevermind-billboard-number-one",
+              "name": "Nirvana’s Nevermind tops the US album chart",
+              "status": "added"
+            },
+            {
+              "id": "event:nusrat-womad-1985",
+              "name": "Nusrat Fateh Ali Khan performs at WOMAD",
+              "status": "added"
+            },
+            {
+              "id": "event:reggae-unesco-inscription",
+              "name": "UNESCO inscribes Jamaican reggae",
+              "status": "added"
+            },
+            {
+              "id": "event:samba-de-roda-unesco-inscription",
+              "name": "UNESCO inscribes Bahia’s samba de roda",
+              "status": "added"
+            },
+            {
+              "id": "event:straight-outta-compton-recording-registry",
+              "name": "Straight Outta Compton enters the US Recording Registry",
+              "status": "added"
+            },
+            {
+              "id": "event:tango-unesco-inscription",
+              "name": "Argentina and Uruguay secure UNESCO recognition for tango",
+              "status": "added"
+            },
+            {
+              "id": "event:tyla-first-african-performance-grammy",
+              "name": "Tyla wins the first Best African Music Performance Grammy",
+              "status": "added"
+            },
+            {
+              "id": "genre:afrobeats",
+              "name": "Afrobeats",
+              "status": "updated"
+            },
+            {
+              "id": "genre:alternative-rock",
+              "name": "Alternative rock",
+              "status": "updated"
+            },
+            {
+              "id": "genre:amapiano",
+              "name": "Amapiano",
+              "status": "updated"
+            },
+            {
+              "id": "genre:andean-folk",
+              "name": "Andean folk",
+              "status": "updated"
+            },
+            {
+              "id": "genre:arabesk",
+              "name": "Arabesk",
+              "status": "added"
+            },
+            {
+              "id": "genre:bachata",
+              "name": "Bachata",
+              "status": "updated"
+            },
+            {
+              "id": "genre:banda-sinaloense",
+              "name": "Banda sinaloense",
+              "status": "added"
+            },
+            {
+              "id": "genre:benga",
+              "name": "Benga",
+              "status": "added"
+            },
+            {
+              "id": "genre:bossa-nova",
+              "name": "Bossa nova",
+              "status": "updated"
+            },
+            {
+              "id": "genre:britpop",
+              "name": "Britpop",
+              "status": "updated"
+            },
+            {
+              "id": "genre:cantopop",
+              "name": "Cantopop",
+              "status": "added"
+            },
+            {
+              "id": "genre:chicha",
+              "name": "Chicha",
+              "status": "added"
+            },
+            {
+              "id": "genre:corrido-tumbado",
+              "name": "Corrido tumbado",
+              "status": "added"
+            },
+            {
+              "id": "genre:cuarteto",
+              "name": "Cuarteto",
+              "status": "added"
+            },
+            {
+              "id": "genre:cumbia",
+              "name": "Cumbia",
+              "status": "updated"
+            },
+            {
+              "id": "genre:dabke-music",
+              "name": "Dabke music",
+              "status": "added"
+            },
+            {
+              "id": "genre:dance-pop",
+              "name": "Dance-pop",
+              "status": "updated"
+            },
+            {
+              "id": "genre:dangdut",
+              "name": "Dangdut",
+              "status": "added"
+            },
+            {
+              "id": "genre:egyptian-shaabi",
+              "name": "Egyptian shaabi",
+              "status": "added"
+            },
+            {
+              "id": "genre:ethio-jazz",
+              "name": "Ethio-jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:fado",
+              "name": "Fado",
+              "status": "added"
+            },
+            {
+              "id": "genre:filmi",
+              "name": "Filmi",
+              "status": "added"
+            },
+            {
+              "id": "genre:flamenco",
+              "name": "Flamenco",
+              "status": "added"
+            },
+            {
+              "id": "genre:funana",
+              "name": "Funaná",
+              "status": "added"
+            },
+            {
+              "id": "genre:funk",
+              "name": "Funk",
+              "status": "updated"
+            },
+            {
+              "id": "genre:gamelan",
+              "name": "Gamelan",
+              "status": "updated"
+            },
+            {
+              "id": "genre:gangsta-rap",
+              "name": "Gangsta rap",
+              "status": "updated"
+            },
+            {
+              "id": "genre:grunge",
+              "name": "Grunge",
+              "status": "updated"
+            },
+            {
+              "id": "genre:hard-rock",
+              "name": "Hard rock",
+              "status": "updated"
+            },
+            {
+              "id": "genre:heavy-metal",
+              "name": "Heavy metal",
+              "status": "updated"
+            },
+            {
+              "id": "genre:hip-hop",
+              "name": "Hip-hop",
+              "status": "updated"
+            },
+            {
+              "id": "genre:jazz",
+              "name": "Jazz",
+              "status": "updated"
+            },
+            {
+              "id": "genre:k-pop",
+              "name": "K-pop",
+              "status": "updated"
+            },
+            {
+              "id": "genre:khaliji",
+              "name": "Khaliji",
+              "status": "added"
+            },
+            {
+              "id": "genre:mahraganat",
+              "name": "Mahraganat",
+              "status": "added"
+            },
+            {
+              "id": "genre:maloya",
+              "name": "Maloya",
+              "status": "added"
+            },
+            {
+              "id": "genre:mento",
+              "name": "Mento",
+              "status": "added"
+            },
+            {
+              "id": "genre:merengue",
+              "name": "Merengue",
+              "status": "updated"
+            },
+            {
+              "id": "genre:morna",
+              "name": "Morna",
+              "status": "updated"
+            },
+            {
+              "id": "genre:musica-criolla",
+              "name": "Música criolla",
+              "status": "added"
+            },
+            {
+              "id": "genre:norteno",
+              "name": "Norteño",
+              "status": "added"
+            },
+            {
+              "id": "genre:opm",
+              "name": "Original Pilipino Music (OPM)",
+              "status": "added"
+            },
+            {
+              "id": "genre:pop",
+              "name": "Pop",
+              "status": "updated"
+            },
+            {
+              "id": "genre:punjabi-bhangra",
+              "name": "Punjabi bhangra",
+              "status": "added"
+            },
+            {
+              "id": "genre:qawwali",
+              "name": "Qawwali",
+              "status": "updated"
+            },
+            {
+              "id": "genre:rebetiko",
+              "name": "Rebetiko",
+              "status": "added"
+            },
+            {
+              "id": "genre:reggae",
+              "name": "Reggae",
+              "status": "updated"
+            },
+            {
+              "id": "genre:reggaeton",
+              "name": "Reggaeton",
+              "status": "updated"
+            },
+            {
+              "id": "genre:samba",
+              "name": "Samba",
+              "status": "updated"
+            },
+            {
+              "id": "genre:schlager",
+              "name": "Schlager",
+              "status": "added"
+            },
+            {
+              "id": "genre:sega",
+              "name": "Séga",
+              "status": "added"
+            },
+            {
+              "id": "genre:sertanejo",
+              "name": "Sertanejo",
+              "status": "added"
+            },
+            {
+              "id": "genre:ska",
+              "name": "Ska",
+              "status": "updated"
+            },
+            {
+              "id": "genre:taarab",
+              "name": "Taarab",
+              "status": "updated"
+            },
+            {
+              "id": "genre:tango",
+              "name": "Tango",
+              "status": "updated"
+            },
+            {
+              "id": "genre:trap-rap",
+              "name": "Trap rap",
+              "status": "updated"
+            },
+            {
+              "id": "genre:trot",
+              "name": "Trot",
+              "status": "added"
+            },
+            {
+              "id": "genre:vallenato",
+              "name": "Vallenato",
+              "status": "added"
+            },
+            {
+              "id": "genre:varietes-francaises",
+              "name": "Variétés françaises",
+              "status": "added"
+            },
+            {
+              "id": "genre:waiata-a-ringa",
+              "name": "Waiata-ā-ringa",
+              "status": "added"
+            },
+            {
+              "id": "genre:west-coast-rap",
+              "name": "West Coast rap",
+              "status": "updated"
+            },
+            {
+              "id": "genre:zouk",
+              "name": "Zouk",
+              "status": "added"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/GRAPH.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/audits/graph-edge-coverage.csv"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__abba-waterloo-eurovision-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__acdc-back-in-black-uk-number-one-hard-rock.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__battle-of-britpop-britpop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__black-sabbath-debut-heavy-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__bts-dynamite-hot-100-number-one-k-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__burna-boy-global-album-grammy-afrobeats.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__gasolina-recording-registry-reggaeton.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__getz-gilberto-grammy-bossa-nova.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__kylie-cant-get-you-out-uk-number-one-dance-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__nirvana-nevermind-billboard-number-one-alternative-rock.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__nirvana-nevermind-billboard-number-one-grunge.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__nusrat-womad-1985-qawwali.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__samba-de-roda-unesco-inscription-samba.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__straight-outta-compton-recording-registry-gangsta-rap.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__straight-outta-compton-recording-registry-hip-hop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__straight-outta-compton-recording-registry-west-coast-rap.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__tyla-first-african-performance-grammy-amapiano.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/context_for__tyla-first-african-performance-grammy-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__a-rafiq-dangdut.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__ahmed-adaweyah-egyptian-shaabi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__alaap-punjabi-bhangra.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__alejo-duran-vallenato.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__amalia-rodrigues-fado.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__anita-mui-cantopop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__apirana-ngata-waiata-a-ringa.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__apo-hiking-society-opm.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__asha-bhosle-filmi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__banda-el-recodo-banda-sinaloense.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__banda-la-costena-banda-sinaloense.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__banda-los-guamuchilenos-banda-sinaloense.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__bulimundo-funana.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__camaron-de-la-isla-flamenco.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__carlos-do-carmo-fado.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__caterina-valente-schlager.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__chabuca-granda-musica-criolla.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__chacalon-y-la-nueva-crema-chicha.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__chitaozinho-e-xororo-sertanejo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__claude-francois-varietes-francaises.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__code-di-dona-funana.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__count-lasher-mento.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__dahlak-band-ethio-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__daniel-owino-misiani-benga.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__danyel-waro-maloya.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__diomedes-diaz-vallenato.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__elvy-sukaesih-dangdut.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__fahad-al-kubaisi-khaliji.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__fairuz-dabke-music.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__fanfan-sega-sega.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__felipe-pinglo-musica-criolla.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__ferdi-tayfur-arabesk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__ferro-gaita-funana.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__firmin-viry-maloya.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__francoise-hardy-varietes-francaises.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__freddie-aguilar-opm.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__freddy-quinn-schlager.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__george-ramogi-benga.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__granmoun-lele-maloya.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__hailu-mergia-ethio-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__hakim-egyptian-shaabi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__heera-punjabi-bhangra.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__jacob-desvarieux-zouk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__joao-pacifico-sertanejo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__jocelyne-beroard-zouk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__johnny-hallyday-varietes-francaises.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__junior-h-corrido-tumbado.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__kassav-zouk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__kuljit-bhamra-punjabi-bhangra.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__la-mona-jimenez-cuarteto.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__lata-mangeshkar-filmi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__leonor-marzano-cuarteto.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__leslie-cheung-cantopop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__lord-flea-mento.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__lord-fly-mento.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__los-alegres-de-teran-norteno.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__los-relampagos-del-norte-norteno.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__los-shapis-chicha.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__los-tigres-del-norte-norteno.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__lucha-reyes-peru-musica-criolla.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__mariza-fado.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__markos-vamvakaris-rebetiko.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__mc-sadat-mahraganat.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__mohammed-abdu-khaliji.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__mohammed-rafi-filmi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__mulatu-astatke-ethio-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__muslum-gurses-arabesk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__na-hoon-a-trot.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__nam-jin-trot.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__natanael-cano-corrido-tumbado.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__ochieng-nelly-mengo-benga.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__oka-mahraganat.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__omar-souleyman-dabke-music.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__orhan-gencebay-arabesk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__ortega-mahraganat-mahraganat.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__paco-de-lucia-flamenco.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__paraire-tomoana-waiata-a-ringa.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__pastora-pavon-flamenco.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__peso-pluma-corrido-tumbado.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__peter-alexander-schlager.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__pintura-roja-chicha.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__rafael-escalona-vallenato.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__rhoma-irama-dangdut.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__rodrigo-bueno-cuarteto.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__ryan-cayabyab-opm.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__sam-hui-cantopop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__serge-lebrasse-sega.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__shaaban-abdel-rahim-egyptian-shaabi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__stella-haskil-rebetiko.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__talal-maddah-khaliji.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__te-puea-herangi-waiata-a-ringa.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__ti-frere-sega.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__tonico-e-tinoco-sertanejo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__vasilis-tsitsanis-rebetiko.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__wadih-el-safi-dabke-music.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__yi-nan-yeong-trot.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__cantopop-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__chicha-andean-folk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__chicha-cumbia.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__ethio-jazz-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__funk-zouk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__mahraganat-egyptian-shaabi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__mento-ska.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__trap-rap-corrido-tumbado.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__trot-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/recognized__bachata-unesco-inscription-bachata.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/recognized__gamelan-unesco-inscription-gamelan.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/recognized__merengue-unesco-inscription-merengue.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/recognized__morna-unesco-inscription-morna.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/recognized__reggae-unesco-inscription-reggae.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/recognized__tango-unesco-inscription-tango.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/a-rafiq.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/ahmed-adaweyah.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/alaap.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/alejo-duran.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/amalia-rodrigues.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/anita-mui.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/apirana-ngata.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/apo-hiking-society.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/asha-bhosle.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/banda-el-recodo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/banda-la-costena.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/banda-los-guamuchilenos.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/bulimundo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/camaron-de-la-isla.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/carlos-do-carmo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/caterina-valente.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/chabuca-granda.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/chacalon-y-la-nueva-crema.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/chitaozinho-e-xororo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/claude-francois.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/code-di-dona.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/count-lasher.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/dahlak-band.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/daniel-owino-misiani.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/danyel-waro.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/diomedes-diaz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/elvy-sukaesih.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/fahad-al-kubaisi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/fanfan-sega.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/felipe-pinglo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/ferdi-tayfur.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/ferro-gaita.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/firmin-viry.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/francoise-hardy.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/freddie-aguilar.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/freddy-quinn.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/george-ramogi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/granmoun-lele.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/hailu-mergia.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/hakim.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/heera.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/jacob-desvarieux.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/joao-pacifico.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/jocelyne-beroard.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/johnny-hallyday.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/junior-h.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/kassav.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/kuljit-bhamra.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/la-mona-jimenez.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/lata-mangeshkar.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/leonor-marzano.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/leslie-cheung.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/lord-flea.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/lord-fly.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/los-alegres-de-teran.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/los-relampagos-del-norte.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/los-shapis.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/los-tigres-del-norte.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/lucha-reyes-peru.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/mariza.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/markos-vamvakaris.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/mc-sadat.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/mohammed-abdu.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/mohammed-rafi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/mulatu-astatke.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/muslum-gurses.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/na-hoon-a.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/nam-jin.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/natanael-cano.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/ochieng-nelly-mengo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/oka.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/omar-souleyman.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/orhan-gencebay.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/ortega-mahraganat.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/paco-de-lucia.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/paraire-tomoana.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/pastora-pavon.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/peso-pluma.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/peter-alexander.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/pintura-roja.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/rafael-escalona.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/rhoma-irama.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/rodrigo-bueno.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/ryan-cayabyab.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/sam-hui.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/serge-lebrasse.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/shaaban-abdel-rahim.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/stella-haskil.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/talal-maddah.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/te-puea-herangi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/ti-frere.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/tonico-e-tinoco.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/vasilis-tsitsanis.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/wadih-el-safi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/yi-nan-yeong.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/abba-waterloo-eurovision.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/acdc-back-in-black-uk-number-one.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/bachata-unesco-inscription.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/battle-of-britpop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/black-sabbath-debut.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/bts-dynamite-hot-100-number-one.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/burna-boy-global-album-grammy.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/gamelan-unesco-inscription.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/gasolina-recording-registry.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/getz-gilberto-grammy.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/kylie-cant-get-you-out-uk-number-one.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/merengue-unesco-inscription.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/morna-unesco-inscription.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/nirvana-nevermind-billboard-number-one.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/nusrat-womad-1985.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/reggae-unesco-inscription.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/samba-de-roda-unesco-inscription.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/straight-outta-compton-recording-registry.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/tango-unesco-inscription.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/event/tyla-first-african-performance-grammy.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/arabesk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/banda-sinaloense.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/benga.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/cantopop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/chicha.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/corrido-tumbado.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/cuarteto.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/dabke-music.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/dangdut.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/egyptian-shaabi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/ethio-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/fado.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/filmi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/flamenco.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/funana.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/khaliji.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/mahraganat.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/maloya.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/mento.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/musica-criolla.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/norteno.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/opm.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/punjabi-bhangra.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/rebetiko.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/schlager.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/sega.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/sertanejo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/trot.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/vallenato.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/varietes-francaises.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/waiata-a-ringa.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/zouk.md"
+            },
+            {
+              "status": "M",
+              "path": "src/data/genrePreviews.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/review-status.json"
+            },
+            {
+              "status": "M",
+              "path": "src/graph/history.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/graph/history.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/graph/types.ts"
+            }
+          ]
+        },
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "src/ExplorerContext.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/colorTheme.css"
+            },
+            {
+              "status": "M",
+              "path": "src/components/History.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/History.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/en.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Explorer.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/theme.ts"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [
+            "artist:a-rafiq",
+            "artist:ahmed-adaweyah",
+            "artist:alaap",
+            "artist:alejo-duran",
+            "artist:amalia-rodrigues",
+            "artist:anita-mui",
+            "artist:apirana-ngata",
+            "artist:apo-hiking-society",
+            "artist:asha-bhosle",
+            "artist:banda-el-recodo",
+            "artist:banda-la-costena",
+            "artist:banda-los-guamuchilenos",
+            "artist:bulimundo",
+            "artist:camaron-de-la-isla",
+            "artist:carlos-do-carmo",
+            "artist:caterina-valente",
+            "artist:chabuca-granda",
+            "artist:chacalon-y-la-nueva-crema",
+            "artist:chitaozinho-e-xororo",
+            "artist:claude-francois",
+            "artist:code-di-dona",
+            "artist:count-lasher",
+            "artist:dahlak-band",
+            "artist:daniel-owino-misiani",
+            "artist:danyel-waro",
+            "artist:diomedes-diaz",
+            "artist:elvy-sukaesih",
+            "artist:fahad-al-kubaisi",
+            "artist:fanfan-sega",
+            "artist:felipe-pinglo",
+            "artist:ferdi-tayfur",
+            "artist:ferro-gaita",
+            "artist:firmin-viry",
+            "artist:francoise-hardy",
+            "artist:freddie-aguilar",
+            "artist:freddy-quinn",
+            "artist:george-ramogi",
+            "artist:granmoun-lele",
+            "artist:hailu-mergia",
+            "artist:hakim",
+            "artist:heera",
+            "artist:jacob-desvarieux",
+            "artist:joao-pacifico",
+            "artist:jocelyne-beroard",
+            "artist:johnny-hallyday",
+            "artist:junior-h",
+            "artist:kassav",
+            "artist:kuljit-bhamra",
+            "artist:la-mona-jimenez",
+            "artist:lata-mangeshkar",
+            "artist:leonor-marzano",
+            "artist:leslie-cheung",
+            "artist:lord-flea",
+            "artist:lord-fly",
+            "artist:los-alegres-de-teran",
+            "artist:los-relampagos-del-norte",
+            "artist:los-shapis",
+            "artist:los-tigres-del-norte",
+            "artist:lucha-reyes-peru",
+            "artist:mariza",
+            "artist:markos-vamvakaris",
+            "artist:mc-sadat",
+            "artist:mohammed-abdu",
+            "artist:mohammed-rafi",
+            "artist:mulatu-astatke",
+            "artist:muslum-gurses",
+            "artist:na-hoon-a",
+            "artist:nam-jin",
+            "artist:natanael-cano",
+            "artist:ochieng-nelly-mengo",
+            "artist:oka",
+            "artist:omar-souleyman",
+            "artist:orhan-gencebay",
+            "artist:ortega-mahraganat",
+            "artist:paco-de-lucia",
+            "artist:paraire-tomoana",
+            "artist:pastora-pavon",
+            "artist:peso-pluma",
+            "artist:peter-alexander",
+            "artist:pintura-roja",
+            "artist:rafael-escalona",
+            "artist:rhoma-irama",
+            "artist:rodrigo-bueno",
+            "artist:ryan-cayabyab",
+            "artist:sam-hui",
+            "artist:serge-lebrasse",
+            "artist:shaaban-abdel-rahim",
+            "artist:stella-haskil",
+            "artist:talal-maddah",
+            "artist:te-puea-herangi",
+            "artist:ti-frere",
+            "artist:tonico-e-tinoco",
+            "artist:vasilis-tsitsanis",
+            "artist:wadih-el-safi",
+            "artist:yi-nan-yeong",
+            "event:abba-waterloo-eurovision",
+            "event:acdc-back-in-black-uk-number-one",
+            "event:bachata-unesco-inscription",
+            "event:battle-of-britpop",
+            "event:black-sabbath-debut",
+            "event:bts-dynamite-hot-100-number-one",
+            "event:burna-boy-global-album-grammy",
+            "event:gamelan-unesco-inscription",
+            "event:gasolina-recording-registry",
+            "event:getz-gilberto-grammy",
+            "event:kylie-cant-get-you-out-uk-number-one",
+            "event:merengue-unesco-inscription",
+            "event:morna-unesco-inscription",
+            "event:nirvana-nevermind-billboard-number-one",
+            "event:nusrat-womad-1985",
+            "event:reggae-unesco-inscription",
+            "event:samba-de-roda-unesco-inscription",
+            "event:straight-outta-compton-recording-registry",
+            "event:tango-unesco-inscription",
+            "event:tyla-first-african-performance-grammy",
+            "genre:arabesk",
+            "genre:banda-sinaloense",
+            "genre:benga",
+            "genre:cantopop",
+            "genre:chicha",
+            "genre:corrido-tumbado",
+            "genre:cuarteto",
+            "genre:dabke-music",
+            "genre:dangdut",
+            "genre:egyptian-shaabi",
+            "genre:ethio-jazz",
+            "genre:fado",
+            "genre:filmi",
+            "genre:flamenco",
+            "genre:funana",
+            "genre:khaliji",
+            "genre:mahraganat",
+            "genre:maloya",
+            "genre:mento",
+            "genre:musica-criolla",
+            "genre:norteno",
+            "genre:opm",
+            "genre:punjabi-bhangra",
+            "genre:rebetiko",
+            "genre:schlager",
+            "genre:sega",
+            "genre:sertanejo",
+            "genre:trot",
+            "genre:vallenato",
+            "genre:varietes-francaises",
+            "genre:waiata-a-ringa",
+            "genre:zouk"
+          ],
+          "updated": [
+            "genre:taarab"
+          ],
+          "removed": []
+        },
+        "edges": {
+          "added": [
+            "context_for:abba-waterloo-eurovision-pop",
+            "context_for:acdc-back-in-black-uk-number-one-hard-rock",
+            "context_for:battle-of-britpop-britpop",
+            "context_for:black-sabbath-debut-heavy-metal",
+            "context_for:bts-dynamite-hot-100-number-one-k-pop",
+            "context_for:burna-boy-global-album-grammy-afrobeats",
+            "context_for:gasolina-recording-registry-reggaeton",
+            "context_for:getz-gilberto-grammy-bossa-nova",
+            "context_for:kylie-cant-get-you-out-uk-number-one-dance-pop",
+            "context_for:nirvana-nevermind-billboard-number-one-alternative-rock",
+            "context_for:nirvana-nevermind-billboard-number-one-grunge",
+            "context_for:nusrat-womad-1985-qawwali",
+            "context_for:samba-de-roda-unesco-inscription-samba",
+            "context_for:straight-outta-compton-recording-registry-gangsta-rap",
+            "context_for:straight-outta-compton-recording-registry-hip-hop",
+            "context_for:straight-outta-compton-recording-registry-west-coast-rap",
+            "context_for:tyla-first-african-performance-grammy-amapiano",
+            "context_for:tyla-first-african-performance-grammy-pop",
+            "key:a-rafiq-dangdut",
+            "key:ahmed-adaweyah-egyptian-shaabi",
+            "key:alaap-punjabi-bhangra",
+            "key:alejo-duran-vallenato",
+            "key:amalia-rodrigues-fado",
+            "key:anita-mui-cantopop",
+            "key:apirana-ngata-waiata-a-ringa",
+            "key:apo-hiking-society-opm",
+            "key:asha-bhosle-filmi",
+            "key:banda-el-recodo-banda-sinaloense",
+            "key:banda-la-costena-banda-sinaloense",
+            "key:banda-los-guamuchilenos-banda-sinaloense",
+            "key:bulimundo-funana",
+            "key:camaron-de-la-isla-flamenco",
+            "key:carlos-do-carmo-fado",
+            "key:caterina-valente-schlager",
+            "key:chabuca-granda-musica-criolla",
+            "key:chacalon-y-la-nueva-crema-chicha",
+            "key:chitaozinho-e-xororo-sertanejo",
+            "key:claude-francois-varietes-francaises",
+            "key:code-di-dona-funana",
+            "key:count-lasher-mento",
+            "key:dahlak-band-ethio-jazz",
+            "key:daniel-owino-misiani-benga",
+            "key:danyel-waro-maloya",
+            "key:diomedes-diaz-vallenato",
+            "key:elvy-sukaesih-dangdut",
+            "key:fahad-al-kubaisi-khaliji",
+            "key:fairuz-dabke-music",
+            "key:fanfan-sega-sega",
+            "key:felipe-pinglo-musica-criolla",
+            "key:ferdi-tayfur-arabesk",
+            "key:ferro-gaita-funana",
+            "key:firmin-viry-maloya",
+            "key:francoise-hardy-varietes-francaises",
+            "key:freddie-aguilar-opm",
+            "key:freddy-quinn-schlager",
+            "key:george-ramogi-benga",
+            "key:granmoun-lele-maloya",
+            "key:hailu-mergia-ethio-jazz",
+            "key:hakim-egyptian-shaabi",
+            "key:heera-punjabi-bhangra",
+            "key:jacob-desvarieux-zouk",
+            "key:joao-pacifico-sertanejo",
+            "key:jocelyne-beroard-zouk",
+            "key:johnny-hallyday-varietes-francaises",
+            "key:junior-h-corrido-tumbado",
+            "key:kassav-zouk",
+            "key:kuljit-bhamra-punjabi-bhangra",
+            "key:la-mona-jimenez-cuarteto",
+            "key:lata-mangeshkar-filmi",
+            "key:leonor-marzano-cuarteto",
+            "key:leslie-cheung-cantopop",
+            "key:lord-flea-mento",
+            "key:lord-fly-mento",
+            "key:los-alegres-de-teran-norteno",
+            "key:los-relampagos-del-norte-norteno",
+            "key:los-shapis-chicha",
+            "key:los-tigres-del-norte-norteno",
+            "key:lucha-reyes-peru-musica-criolla",
+            "key:mariza-fado",
+            "key:markos-vamvakaris-rebetiko",
+            "key:mc-sadat-mahraganat",
+            "key:mohammed-abdu-khaliji",
+            "key:mohammed-rafi-filmi",
+            "key:mulatu-astatke-ethio-jazz",
+            "key:muslum-gurses-arabesk",
+            "key:na-hoon-a-trot",
+            "key:nam-jin-trot",
+            "key:natanael-cano-corrido-tumbado",
+            "key:ochieng-nelly-mengo-benga",
+            "key:oka-mahraganat",
+            "key:omar-souleyman-dabke-music",
+            "key:orhan-gencebay-arabesk",
+            "key:ortega-mahraganat-mahraganat",
+            "key:paco-de-lucia-flamenco",
+            "key:paraire-tomoana-waiata-a-ringa",
+            "key:pastora-pavon-flamenco",
+            "key:peso-pluma-corrido-tumbado",
+            "key:peter-alexander-schlager",
+            "key:pintura-roja-chicha",
+            "key:rafael-escalona-vallenato",
+            "key:rhoma-irama-dangdut",
+            "key:rodrigo-bueno-cuarteto",
+            "key:ryan-cayabyab-opm",
+            "key:sam-hui-cantopop",
+            "key:serge-lebrasse-sega",
+            "key:shaaban-abdel-rahim-egyptian-shaabi",
+            "key:stella-haskil-rebetiko",
+            "key:talal-maddah-khaliji",
+            "key:te-puea-herangi-waiata-a-ringa",
+            "key:ti-frere-sega",
+            "key:tonico-e-tinoco-sertanejo",
+            "key:vasilis-tsitsanis-rebetiko",
+            "key:wadih-el-safi-dabke-music",
+            "key:yi-nan-yeong-trot",
+            "lineage:cantopop-pop",
+            "lineage:chicha-andean-folk",
+            "lineage:chicha-cumbia",
+            "lineage:ethio-jazz-jazz",
+            "lineage:funk-zouk",
+            "lineage:mahraganat-egyptian-shaabi",
+            "lineage:mento-ska",
+            "lineage:trap-rap-corrido-tumbado",
+            "lineage:trot-pop",
+            "recognized:bachata-unesco-inscription-bachata",
+            "recognized:gamelan-unesco-inscription-gamelan",
+            "recognized:merengue-unesco-inscription-merengue",
+            "recognized:morna-unesco-inscription-morna",
+            "recognized:reggae-unesco-inscription-reggae",
+            "recognized:tango-unesco-inscription-tango"
+          ],
+          "updated": [],
+          "removed": []
+        }
+      }
+    },
+    {
       "commit": "9c119896689027c6b0aad8c77222f4d082be7ac7",
       "parent": "3054aebf82949e762e0e56b34129adfce065f52b",
       "date": "2026-11-13T12:25:29-05:00",

@@ -12,6 +12,17 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-13 — Expand worldwide genre coverage and add music history events
+
+[352e256d](https://github.com/alexandrehebert/soundlines/commit/352e256d6d54260036c7dab1b4df15be8cfe3832)
+
+Graph nodes: +147 / ~1 / -0.
+
+Graph edges: +129 / ~0 / -0.
+
+- graph: 289 changed files
+- app: 11 changed files
+
 ## 2026-11-13 — Keep graph labels beside their arrows on mobile
 
 [9c119896](https://github.com/alexandrehebert/soundlines/commit/9c119896689027c6b0aad8c77222f4d082be7ac7)
