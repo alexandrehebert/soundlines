@@ -4,13 +4,14 @@ import { de } from './copy/de.ts'
 import { it } from './copy/it.ts'
 import { mcpPage } from './copy/mcp.ts'
 import { es } from './copy/es.ts'
+import { changelogPage } from './copy/changelog.ts'
 import { LOCALES } from '../../src/i18n/routing.ts'
 
 export { PROJECT_SITE_URL as siteUrl, REPOSITORY_URL as repository } from '../../src/projectLinks.ts'
 
 export const locales = LOCALES
 export type Locale = (typeof locales)[number]
-export const slugs = ['index', 'graph', 'artwork', 'audio', 'build', 'mcp'] as const
+export const slugs = ['index', 'graph', 'artwork', 'audio', 'build', 'mcp', 'changelog'] as const
 export type Slug = (typeof slugs)[number]
 
 /** Who performs a workflow step; each actor has its own colour and symbol in the diagrams. */
@@ -57,6 +58,8 @@ export type Example = { title: string; intro: string; rows: [label: string, valu
 
 export type Page = {
   label: string
+  /** Shorter label for the page navigation, when `label` is too long to fit one row. */
+  nav?: string
   eyebrow?: string
   title: string
   intro: string
@@ -92,7 +95,7 @@ export type Copy = {
   brief: string
   actors: Record<Actor, string>
   stats: [key: StatKey, label: string][]
-  pages: Record<Exclude<Slug, 'mcp'>, Page>
+  pages: Record<Exclude<Slug, 'mcp' | 'changelog'>, Page>
 }
 
 export const stats = __SITE_STATS__
@@ -118,7 +121,7 @@ const fillAll = <T,>(value: T, locale: Locale): T => {
 export type SiteCopy = Omit<Copy, 'pages'> & { pages: Record<Slug, Page> }
 
 function localizedCopy(content: Copy, locale: Locale): SiteCopy {
-  return fillAll({ ...content, pages: { ...content.pages, mcp: mcpPage(locale) } }, locale)
+  return fillAll({ ...content, pages: { ...content.pages, mcp: mcpPage(locale), changelog: changelogPage(locale) } }, locale)
 }
 
 export const copy: Record<Locale, SiteCopy> = {

@@ -20,7 +20,7 @@ if (container.firstElementChild) {
 } else {
   // Dev server: pages are not prerendered, so render on the client and set the metadata it would have had.
   document.documentElement.lang = route.locale
-  document.title = `${copy[route.locale].pages[route.slug].label} · Soundlines`
+  document.title = `${copy[route.locale].pages[route.slug].label}${route.page ? ` · ${route.page}` : ''} · Soundlines`
   let icon = document.querySelector<HTMLLinkElement>('link[rel="icon"]')
   if (!icon) {
     icon = document.createElement('link')

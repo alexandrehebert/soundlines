@@ -1,4 +1,4 @@
-import { AudioLines, Cable, ChevronDown, Hammer, House, Network, Palette } from 'lucide-react'
+import { AudioLines, Cable, ChevronDown, Hammer, History, House, Network, Palette } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { locales, slugs, copy, repository, siteUrl, type SiteCopy as Copy, type Locale, type Page, type Slug } from '../content.ts'
 import { appUrl, storybookUrl } from '../links.ts'
@@ -6,22 +6,23 @@ import { repositoryUrl, routePath, type Route } from '../routes.ts'
 import { favicon, instrumentBrief, instruments } from './assets.ts'
 import { ExampleCard, FlowDiagram, Legend, Overview, Stats } from './Diagrams.tsx'
 import { McpReference } from './McpReference.tsx'
+import { Changelog } from './Changelog.tsx'
 
 const base = import.meta.env.BASE_URL
 const href = (route: Route) => `${base}${routePath(route)}`
 const external = <span aria-hidden="true">↗</span>
 const languageNames: Record<Locale, string> = { en: 'English', fr: 'Français', de: 'Deutsch', it: 'Italiano', es: 'Español' }
-const pageIcons = { index: House, graph: Network, artwork: Palette, audio: AudioLines, build: Hammer, mcp: Cable }
+const pageIcons = { index: House, graph: Network, artwork: Palette, audio: AudioLines, build: Hammer, mcp: Cable, changelog: History }
 
-export function App({ locale, slug }: Route) {
+export function App({ locale, slug, page: pageNumber }: Route) {
   const c = copy[locale]
   const page = c.pages[slug]
   const home = slug === 'index'
   return (
     <>
       <a href="#main" className="skip-link">{c.skip}</a>
-      <Header c={c} locale={locale} slug={slug} />
-      <PageNav c={c} locale={locale} slug={slug} className="lg:border-b" />
+      <Header c={c} locale={locale} slug={slug} page={pageNumber} />
+      <PageNav c={c} locale={locale} slug={slug} className="xl:border-b" />
       <main id="main" className="shell pb-12">
         <Hero c={c} page={page} home={home} />
         {home && <Stats c={c} locale={locale} />}
@@ -41,10 +42,11 @@ export function App({ locale, slug }: Route) {
           ))}
         </div>
         {slug === 'mcp' && <McpReference locale={locale} />}
+        {slug === 'changelog' && <Changelog locale={locale} initialPage={pageNumber} />}
         {home && <Chapters c={c} locale={locale} />}
         <Resources c={c} page={page} />
-        <PageNav c={c} locale={locale} slug={slug} className="border-t" />
       </main>
+      <PageNav c={c} locale={locale} slug={slug} className="xl:border-t" />
       <footer className="shell flex flex-wrap items-center gap-x-8 gap-y-2 border-t border-line py-8 text-sm text-muted">
         <a className="font-bold tracking-tight text-fg" href={href({ locale, slug: 'index' })} target="_blank" rel="noopener noreferrer">Soundlines</a>
         <p className="mr-auto max-w-150">{c.footer}</p>
@@ -55,9 +57,9 @@ export function App({ locale, slug }: Route) {
   )
 }
 
-type ChromeProps = { c: Copy; locale: Locale; slug: Slug }
+type ChromeProps = { c: Copy } & Route
 
-function Header({ c, locale, slug }: ChromeProps) {
+function Header({ c, locale, slug, page }: ChromeProps) {
   return (
     <>
       <header className="shell relative flex items-center gap-1 py-4 sm:gap-3 lg:gap-6 lg:py-6">
@@ -76,11 +78,11 @@ function Header({ c, locale, slug }: ChromeProps) {
             </svg>
             <span aria-hidden="true">{locale.toUpperCase()}</span>
             <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>
-            <select aria-label={c.language} value={href({ locale, slug })}
+            <select aria-label={c.language} value={href({ locale, slug, page })}
               onChange={(event) => { window.location.href = event.target.value }}
               className="absolute inset-0 h-full w-full cursor-pointer opacity-0">
               {locales.map((target) => (
-                <option key={target} value={href({ locale: target, slug })} lang={target}>
+                <option key={target} value={href({ locale: target, slug, page })} lang={target}>
                   {languageNames[target]}
                 </option>
               ))}
@@ -104,7 +106,7 @@ function Header({ c, locale, slug }: ChromeProps) {
         <style>{'.site-language-select { display: none; }'}</style>
         <nav aria-label={c.language} className="shell flex flex-wrap gap-x-4 gap-y-2 pb-4 text-sm">
           {locales.map((target) => (
-            <a key={target} href={href({ locale: target, slug })} lang={target} hrefLang={target} aria-current={target === locale ? 'page' : undefined}>
+            <a key={target} href={href({ locale: target, slug, page })} lang={target} hrefLang={target} aria-current={target === locale ? 'page' : undefined}>
               {languageNames[target]}
             </a>
           ))}
@@ -146,17 +148,17 @@ function PageNav({ c, locale, slug, className }: ChromeProps & { className: stri
         key={key}
         href={href({ locale, slug: key })}
         aria-current={key === slug ? 'page' : undefined}
-        className="flex items-center gap-1.5 py-3.5 text-sm text-muted hover:text-fg aria-[current=page]:text-accent lg:shrink-0 lg:whitespace-nowrap lg:aria-[current=page]:shadow-[inset_0_-2px_var(--color-accent)]"
+        className="flex items-center gap-1.5 py-3.5 text-sm text-muted hover:text-fg aria-[current=page]:text-accent xl:shrink-0 xl:whitespace-nowrap xl:aria-[current=page]:shadow-[inset_0_-2px_var(--color-accent)]"
       >
         <Icon size={16} aria-hidden="true" className="shrink-0" />
-        {c.pages[key].label}
+        {c.pages[key].nav ?? c.pages[key].label}
       </a>
     )
   })
 
   return (
     <nav aria-label={c.navigation} className={`shell border-line ${className}`}>
-      <details className="group py-2 lg:hidden">
+      <details className="group py-2 xl:hidden">
         <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 rounded-lg border border-line bg-surface px-3 text-sm font-semibold text-fg [&::-webkit-details-marker]:hidden">
           <CurrentIcon size={16} aria-hidden="true" className="shrink-0 text-accent" />
           {c.pages[slug].label}
@@ -164,7 +166,7 @@ function PageNav({ c, locale, slug, className }: ChromeProps & { className: stri
         </summary>
         <div className="mt-1 divide-y divide-line px-3">{links}</div>
       </details>
-      <div className="hidden flex-wrap gap-x-5 lg:flex">{links}</div>
+      <div className="hidden gap-x-5 overflow-x-auto xl:flex">{links}</div>
     </nav>
   )
 }
@@ -277,10 +279,10 @@ function Resources({ c, page }: { c: Copy; page: Page }) {
 }
 
 /** Document metadata, rendered into <head> by the prerender step. */
-export function Head({ locale, slug }: Route) {
+export function Head({ locale, slug, page: pageNumber }: Route) {
   const page = copy[locale].pages[slug]
-  const url = (target: Locale) => `${siteUrl}/${routePath({ locale: target, slug })}`
-  const title = `${page.label} · Soundlines`
+  const url = (target: Locale) => `${siteUrl}/${routePath({ locale: target, slug, page: pageNumber })}`
+  const title = `${page.label}${pageNumber ? ` · ${pageNumber}` : ''} · Soundlines`
   return (
     <>
       <title>{title}</title>

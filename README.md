@@ -222,6 +222,13 @@ It is a curated introduction; the guides below remain the detailed technical ref
 See [GitHub Pages setup](./docs/DEVELOPMENT.md#project-companion-github-pages)
 for publishing and editing the companion.
 
+The [public changelog](https://alexandrehebert.github.io/soundlines/en/changelog/)
+traces graph, preview, loop, artwork, application and workflow changes from Git
+history, with an asset-first view, readable affected entity names and pagination.
+Its [Markdown log](./CHANGELOG.md) and
+[JSON history](./docs/changelog.json) are tracked in Git and updated automatically;
+see [changelog maintenance](./docs/DEVELOPMENT.md#changelog).
+
 | Guide | Contents |
 |---|---|
 | [Installation](./docs/INSTALLATION.md) | Required and optional tools, agent/skill setup, local development, artwork, audio, and integrations |

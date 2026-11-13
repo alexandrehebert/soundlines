@@ -3,23 +3,6 @@ name: Project companion site
 on:
   push:
     branches: [main]
-    paths:
-      - 'site/**'
-      - 'src/projectLinks.ts'
-      - 'public/favicon.svg'
-      # Figures quoted by the companion are computed from these at build time.
-      - 'src/data/graph.json'
-      - 'docs/graph/evidence/**'
-      - 'public/instrument-*/**'
-      - 'public/loops/**'
-      - '.github/agents/**'
-      - '.github/skills/**'
-      - 'package.json'
-      - 'package-lock.json'
-      # The curated public Storybook is published under /storybook/.
-      - 'src/**'
-      - '.storybook/**'
-      - '.github/workflows/project-pages.yml'
   pull_request:
     paths:
       - 'site/**'
@@ -38,6 +21,10 @@ on:
       - 'src/**'
       - '.storybook/**'
       - '.github/workflows/project-pages.yml'
+      - '.github/workflows/changelog.yml'
+      - 'scripts/changelog/**'
+      - 'CHANGELOG.md'
+      - 'docs/changelog.json'
   workflow_dispatch:
 
 permissions:
@@ -52,11 +39,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 26
           cache: npm
       - run: npm ci
+      # Generate from this build's history; do not wait for the bot's persistence commit.
+      - run: npm run changelog
       - run: npm run test:site
       - run: npm run build:site
       - run: npm run build-storybook:public

@@ -8,6 +8,9 @@
   --color-muted: #beb6cc;
   --color-accent: #c4b5fd;
   --color-focus: #67e8f9;
+  --color-added: #86efac;
+  --color-updated: #fcd34d;
+  --color-removed: #fca5a5;
 }
 
 /* Workflow actors, referenced through inline `--actor` variables, so always emitted. */

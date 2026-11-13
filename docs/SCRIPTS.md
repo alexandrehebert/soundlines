@@ -5,6 +5,7 @@ Run every script from the repository root. Executable code stays in `scripts/` o
 | Folder | Contents | Entry point |
 | --- | --- | --- |
 | [scripts/graph/](../scripts/graph) | Graph data tooling. `reviewStatus.ts` rebuilds `src/data/review-status.json` from `docs/graph/evidence`. | `npm run review-status` |
+| [scripts/changelog/](../scripts/changelog) | Rebuilds the readable `CHANGELOG.md` and full file/entity audit `docs/changelog.json` from committed Git history. See [maintenance and automation](./DEVELOPMENT.md#changelog). | `npm run changelog` (`-- --check` to verify) |
 | [loops/briefs/](./loops/briefs) | Genre loop briefs (`<slug>.json`) and selection reports (`<slug>.selection.json`) for the genre loops shipped as `public/loops/<slug>.wav`. | See the loop skills below |
 | [previews/briefs/](./previews/briefs) | Genre briefs for the 10-second ACE-Step previews in `public/genre-previews`. | `node .github/skills/preview-produce/scripts/render-ace-previews.mjs [genre ...]` |
 | [scripts/artwork/](../scripts/artwork) | Generates the instrument SVG artwork in `public/instrument-*` for the instruments drawn as code (`ART`), with visual briefs in `docs/artwork/briefs/<slug>.json`. | `python3 scripts/artwork/generate-instrument-artwork.py [slug ...] [--check]` |

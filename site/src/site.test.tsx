@@ -14,6 +14,7 @@ import { Legend } from './components/Diagrams.tsx'
 import { PreviewView } from './components/Previews.tsx'
 import { actors, copy, locales, repository, siteUrl, slugs, stats, type Flow, type FlowStep } from './content.ts'
 import { matchRoute, repositoryUrl, routeFile, routePath, routes } from './routes.ts'
+import { assetPageCount } from './changelog.ts'
 
 const root = fileURLToPath(new URL('../../', import.meta.url))
 const base = import.meta.env.BASE_URL
@@ -219,7 +220,7 @@ describe('landing loop player', () => {
 
 describe('routes', () => {
   it('covers every locale and page with clean, unique URLs', () => {
-    expect(routes).toHaveLength(locales.length * slugs.length)
+    expect(routes).toHaveLength(locales.length * (slugs.length + assetPageCount - 1))
     expect(new Set(routes.map(routeFile)).size).toBe(routes.length)
     expect(routePath({ locale: 'fr', slug: 'index' })).toBe('fr/')
     expect(routeFile({ locale: 'en', slug: 'graph' })).toBe('en/graph/index.html')

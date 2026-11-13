@@ -9,7 +9,7 @@ import { base } from '../vite.config.ts'
 const configFile = fileURLToPath(new URL('../vite.config.ts', import.meta.url))
 const outDir = fileURLToPath(new URL('../../_site', import.meta.url))
 
-type Route = { locale: string; slug: string }
+type Route = { locale: string; slug: string; page?: number }
 type ServerEntry = {
   render: (route: Route) => { head: string; html: string }
   routes: Route[]

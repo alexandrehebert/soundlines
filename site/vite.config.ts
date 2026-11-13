@@ -7,6 +7,7 @@ import { toolDefinitions } from '../src/mcp/tools.ts'
 import { PROJECT_SITE_URL } from '../src/projectLinks.ts'
 import { siteStats } from './scripts/stats.ts'
 import { wavPeaks } from './scripts/waveform.ts'
+import { changelogSummary } from './scripts/changelog.ts'
 
 const root = fileURLToPath(new URL('.', import.meta.url))
 
@@ -20,6 +21,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   // Figures quoted in the copy; only these numbers reach the bundle, not the graph itself.
   define: {
+    __CHANGELOG__: JSON.stringify(changelogSummary()),
     __MCP_TOOLS__: JSON.stringify(Object.entries(toolDefinitions).map(([name, { description, inputSchema }]) => ({
       name,
       description,

@@ -115,13 +115,14 @@ npm run preview:site   # serve _site/ under /soundlines/ (http://localhost:4173/
 The build fails if a page links to a missing page, asset or anchor. Only the
 logo, selected instrument examples and the landing hip-hop loop are bundled,
 not the full graph, audio library, or Next.js build; the graph contributes only
-its computed figures.
+its computed figures. The changelog adds compact commit summaries to the bundle
+and a separate, downloadable full JSON history.
 
 To enable publication once, open the repository's **Settings → Pages** and set
 **Build and deployment → Source** to **GitHub Actions**. Merge the changes to
 `main`, then run the **Project companion site** workflow manually if needed.
 The [workflow](../.github/workflows/project-pages.yml) validates and builds on
-relevant pull requests, and deploys on relevant `main` pushes or manual runs
+relevant pull requests, and deploys on every `main` push or manual runs
 from `main`. The `github-pages` environment may require approval depending on
 repository settings. The public URL becomes available only after deployment.
 
@@ -129,6 +130,86 @@ The app's source and companion URLs are in
 [src/projectLinks.ts](../src/projectLinks.ts), which the companion also uses for
 its links and its `/soundlines/` base path. If moving the repository or site,
 update that file, the README links, and this guide.
+
+## Changelog
+
+The companion's **Changelog** navigation item and overview card open
+`/soundlines/<locale>/changelog/` in every supported language. The page includes
+an asset-first view of graph, preview, loop and instrument artwork updates.
+Each update lists affected entities by readable name, including both endpoints
+of changed graph relationships. Entity names/IDs, commit messages and hashes
+are searchable. The category filter also exposes all repository changes.
+Entity chips are colored green (added), amber (updated) or red (removed), and
+also carry a `+`, `~` or `−` mark, a legend and a localized screen-reader
+label, so the status never relies on color alone.
+Commit messages, hashes, file counts and graph node/connection counts
+(added / updated / removed) are tucked into expandable commit details; the full
+JSON download is under the history information disclosure.
+Original commit messages and historical entity names are not translated.
+
+Updates are paginated in groups of 10. Default asset pages are prerendered at
+`/soundlines/<locale>/changelog/` and
+`/soundlines/<locale>/changelog/page/<number>/`, so the complete asset history
+and pagination links work without JavaScript. Language switching preserves the
+page number. Search and category filters paginate their results in the browser,
+resetting to page 1 when changed. Every affected name remains accessible in the
+HTML; long lists show the first eight names and expand to reveal the rest.
+
+The tracked [CHANGELOG.md](../CHANGELOG.md) and
+[docs/changelog.json](./changelog.json) are generated deterministically:
+
+```bash
+npm run changelog             # regenerate both files from committed history
+npm run changelog -- --check  # fail if either file differs from that history
+npm run test:changelog        # isolated fixture repositories; no network or AI
+```
+
+The [generator](../scripts/changelog/generate.ts) traverses all commits reachable
+from `HEAD`, newest first in Git topological order, and compares each tree with
+its first parent (or the empty tree for the initial commit). Every changed file
+is categorized: graph/evidence/locales, previews, loops, artwork, explorer,
+companion, workflow/tooling, documentation or other. Audio's former
+`public/audio/` path is classified as previews. Moves appear as removal plus
+addition. Graph snapshots yield added, updated and removed node and edge IDs;
+object-key or entity-list reordering does not count as an entity edit.
+Exact field changes and binary changes remain available through commit links.
+The Markdown log keeps readable category and graph counts; the JSON audit
+retains the complete file lists, Git statuses and changed graph entity IDs.
+It also records affected entity names from committed graph snapshots (including
+removed entities), evidence paths, locale-overlay diffs, changed preview brief
+entries and shipped asset paths. Repeated artwork variants are deduplicated by
+instrument; preview/loop paths resolve to their genre. If a historical name is
+not present in either graph snapshot, its slug is shown as readable words.
+Each affected entity has a status: a graph node's own added/updated/removed
+delta wins; relationship endpoints, evidence and overlay edits are updates;
+preview brief entries follow their key; asset and brief files follow their Git
+status (A/M/D), and mixed signals within one commit read as an update.
+The client uses a deduplicated name dictionary, packing each entity reference
+with its status, rather than repeating names for every commit or embedding full file audits.
+Merge entries describe integration and may repeat the branch entries; do not
+sum their counts as unique production totals. Dates use the recorded commit
+timestamp, not the generation time.
+
+Uncommitted files, unreachable branches, empty commits, raw untracked renders and commits
+changing only the generated changelog files are excluded. Audio history proves
+that assets or production records were committed, not that they passed a human
+listening gate. The generator rejects shallow clones: use a full checkout or
+`git fetch --unshallow`. Run regeneration **after** committing substantive
+changes; the generated-only follow-up commit does not create another entry.
+
+The [Changelog workflow](../.github/workflows/changelog.yml) tests the generator
+and commits refreshed files on every `main` push, or a manual run on `main`.
+Only its persistence job has write permission; pull requests run read-only
+checks. Repository rules must permit `github-actions[bot]` to push these
+generated-only commits to `main`; otherwise the push fails visibly and a
+maintainer must regenerate and commit them through the normal PR process.
+No AI credentials, external service or additional dependency is required.
+
+The companion publication workflow independently regenerates from its own full
+checkout before testing and building, so publication does not wait for the bot
+commit (GitHub does not trigger another workflow for a `GITHUB_TOKEN` push).
+Local site builds use the tracked snapshot and do not require Git in Docker;
+run regeneration on the host when a newer local history should be displayed.
 
 ## Storybook
 
