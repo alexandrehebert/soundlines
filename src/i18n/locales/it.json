@@ -278,6 +278,8 @@
     "landmarks": "Pietre miliari",
     "topic": "Argomento",
     "allTopics": "Tutti gli argomenti",
+    "genre": "Genere",
+    "allGenres": "Tutti i generi",
     "jumpToEra": "Vai a un’epoca",
     "eras": {
       "before-1400": "Prima del 1400",
@@ -513,7 +515,7 @@
     "estimatedPeriod": " · {period}; le date sono soggette a stima",
     "prominenceUnannotated": " · rilievo non annotato",
     "footer": {
-      "history": "Scorri lateralmente o usa Maiusc + rotella nella storia · filtra per argomento o pietre miliari · seleziona un evento per legami e fonti",
+      "history": "Scorri lateralmente o usa Maiusc + rotella nella storia · filtra per genere, argomento o pietre miliari · seleziona un evento per legami e fonti",
       "bubbles": "Dimensione e luminosità mostrano l’influenza nel catalogo · trascina o scorri per spostarti · pizzica o usa ⌘ + scorrimento per lo zoom · fai clic su una bolla per i dettagli",
       "timeline": "Trascina o scorri per spostarti · pizzica o usa ⌘ + scorrimento per lo zoom · fai clic su una barra per i dettagli"
     },
@@ -553,6 +555,9 @@
       "reggae": "Reggae e ska",
       "latin": "Latinoamericana",
       "african": "Africana",
+      "regional-mexican": "Musica regionale messicana",
+      "middle-eastern": "Mediorientale",
+      "indian-ocean": "Oceano Indiano",
       "electronica": "Elettronica e ambient",
       "house": "Disco e house",
       "techno": "Techno e trance",

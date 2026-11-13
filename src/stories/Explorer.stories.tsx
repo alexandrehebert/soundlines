@@ -99,6 +99,9 @@ export const HistoryFilters: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
     const history = within(canvas.getByRole('region', { name: 'Music history timeline' }))
+    await userEvent.selectOptions(history.getByLabelText('Genre'), 'genre:reggae')
+    expect(canvasElement.querySelector('[data-history-event="event:reggae-unesco-inscription"]')).toBeInTheDocument()
+    expect(canvasElement.querySelector('[data-history-event="event:abba-waterloo-eurovision"]')).not.toBeInTheDocument()
     await userEvent.click(history.getByRole('button', { name: 'Landmarks' }))
     await userEvent.selectOptions(history.getByLabelText('Topic'), 'technology')
     expect(canvasElement.querySelector('[data-history-event="event:afm-recording-ban-start"]')).not.toBeInTheDocument()
@@ -110,6 +113,7 @@ export const HistoryFilters: Story = {
     await waitFor(() => {
       expect(history.getByRole('button', { name: 'All events' })).toHaveAttribute('aria-pressed', 'true')
       expect(history.getByLabelText('Topic')).toHaveValue('all')
+      expect(history.getByLabelText('Genre')).toHaveValue('')
       expect(history.getByRole('button', { name: 'AFM recording ban begins' }))
         .toHaveAttribute('aria-pressed', 'true')
     })

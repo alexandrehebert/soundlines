@@ -1,0 +1,14 @@
+# Carlos do Carmo → Fado
+
+Graph ID `key:carlos-do-carmo-fado`
+
+**Review status** · Source checked (2026-11-13)
+
+**Relationship** · key_artist_of · medium
+
+## Sources checked
+
+- [Museu do Fado, Carlos do Carmo](https://www.museudofado.pt/pt/fado/personalidade/carlos-do-carmo) — Documents Carlos do Carmo’s fado repertoire and career.
+
+## Assessment
+Documents Carlos do Carmo’s fado repertoire and career.

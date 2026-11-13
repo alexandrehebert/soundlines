@@ -119,6 +119,14 @@ describe('history view', () => {
     expect(disconnect).toHaveBeenCalledOnce()
   })
 
+  it('offers linked genres and renders only matching events', () => {
+    const markup = renderHistory(null, { ...DEFAULT_HISTORY_FILTERS, genreId: 'genre:example' })
+    expect(markup).toContain('All genres')
+    expect(markup).toMatch(/<option[^>]*value="genre:example"[^>]*>Example genre<\/option>/)
+    expect(markup).toContain('data-history-event="event:early"')
+    expect(markup).not.toContain('data-history-event="event:later"')
+  })
+
   it('localizes history filters, categories, eras, and dates in French', () => {
     const markup = renderHistory(null, DEFAULT_HISTORY_FILTERS, graph, 'fr')
     expect(markup).toContain('aria-label="Chronologie de l’histoire musicale"')

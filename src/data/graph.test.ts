@@ -430,11 +430,11 @@ describe('graph.json integrity', () => {
       ],
       jazz: [
         'jazz', 'swing', 'bebop', 'cool-jazz', 'hard-bop', 'modal-jazz', 'free-jazz',
-        'jazz-fusion', 'acid-jazz', 'vocal-jazz', 'latin-jazz', 'spiritual-jazz', 'new-orleans-jazz', 'soul-jazz', 'jazz-funk',
+        'jazz-fusion', 'acid-jazz', 'vocal-jazz', 'latin-jazz', 'spiritual-jazz', 'new-orleans-jazz', 'soul-jazz', 'jazz-funk', 'ethio-jazz',
       ],
       'country-folk': [
         'country', 'folk', 'bluegrass', 'russian-folk', 'baul-songs', 'khoomei',
-        'americana', 'alt-country', 'honky-tonk', 'outlaw-country', 'country-pop',
+        'americana', 'alt-country', 'honky-tonk', 'outlaw-country', 'country-pop', 'flamenco', 'fado', 'rebetiko', 'waiata-a-ringa',
       ],
       rock: [
         'rock-and-roll', 'rock', 'blues-rock', 'psychedelic-rock', 'progressive-rock',
@@ -449,26 +449,31 @@ describe('graph.json integrity', () => {
         'heavy-metal', 'thrash-metal', 'death-metal', 'black-metal', 'doom-metal',
         'nu-metal', 'metalcore', 'industrial-metal', 'power-metal', 'progressive-metal', 'melodic-death-metal',
       ],
-      pop: ['pop', 'synth-pop', 'k-pop', 'j-pop', 'girl-groups', 'dance-pop', 'hyperpop', 'city-pop'],
+      pop: ['pop', 'synth-pop', 'k-pop', 'j-pop', 'girl-groups', 'dance-pop', 'hyperpop', 'city-pop', 'schlager', 'opm', 'varietes-francaises', 'dangdut', 'filmi', 'punjabi-bhangra', 'cantopop', 'trot'],
       'hip-hop': [
         'hip-hop', 'grime', 'trap-rap', 'drill', 'old-school-rap', 'east-coast-rap',
         'west-coast-rap', 'gangsta-rap', 'boom-bap', 'jazz-rap', 'alternative-rap',
         'conscious-hip-hop', 'southern-rap', 'crunk', 'g-funk', 'hyphy',
         'chopped-and-screwed', 'horrorcore', 'emo-rap',
       ],
-      reggae: ['ska', 'rocksteady', 'reggae', 'dub', 'dancehall', 'calypso', 'soca', 'roots-reggae'],
+      reggae: ['ska', 'rocksteady', 'reggae', 'dub', 'dancehall', 'calypso', 'soca', 'roots-reggae', 'mento'],
       latin: [
         'latin', 'son-cubano', 'salsa', 'bossa-nova', 'cumbia', 'samba',
-        'tango', 'andean-folk', 'bachata', 'merengue', 'reggaeton', 'mambo', 'latin-trap', 'brazilian-funk',
+        'tango', 'andean-folk', 'bachata', 'merengue', 'reggaeton', 'mambo', 'latin-trap', 'brazilian-funk', 'cuarteto', 'zouk', 'sertanejo', 'vallenato', 'chicha', 'musica-criolla',
       ],
       african: [
         'highlife', 'afrobeat', 'afrobeats', 'juju', 'soukous', 'amapiano', 'gqom', 'kwaito',
-        'congolese-rumba', 'rai', 'gnawa', 'algerian-chaabi', 'mbalax', 'makossa', 'taarab',
-        'morna', 'afro-house',
+        'congolese-rumba', 'rai', 'gnawa', 'algerian-chaabi', 'mbalax', 'makossa',
+        'morna', 'afro-house', 'funana', 'benga',
       ],
+      'regional-mexican': ['banda-sinaloense', 'norteno', 'corrido-tumbado',
+      ],
+      'middle-eastern': ['khaliji', 'arabesk', 'egyptian-shaabi', 'dabke-music',
+      ],
+      'indian-ocean': ['taarab', 'sega', 'maloya'],
       electronica: [
         'electro', 'trip-hop', 'ambient', 'idm', 'synthwave', 'darksynth',
-        'vaporwave', 'chillwave', 'downtempo', 'electroclash', 'edm', 'ambient-house',
+        'vaporwave', 'chillwave', 'downtempo', 'electroclash', 'edm', 'ambient-house', 'mahraganat',
       ],
       house: [
         'disco', 'italo-disco', 'hi-nrg', 'chicago-house', 'garage-house', 'deep-house',
@@ -575,6 +580,30 @@ describe('graph.json integrity', () => {
     const index = createTimelineModel(buildIndex(graph), 'genre').index
     const ids = index.graph.nodes.map((node) => node.id)
     const roots = new Set([
+      'genre:dabke-music',
+      'genre:egyptian-shaabi',
+      'genre:arabesk',
+      'genre:maloya',
+      'genre:sega',
+      'genre:benga',
+      'genre:funana',
+      'genre:punjabi-bhangra',
+      'genre:filmi',
+      'genre:khaliji',
+      'genre:musica-criolla',
+      'genre:vallenato',
+      'genre:norteno',
+      'genre:banda-sinaloense',
+      'genre:sertanejo',
+      'genre:dangdut',
+      'genre:varietes-francaises',
+      'genre:opm',
+      'genre:cuarteto',
+      'genre:waiata-a-ringa',
+      'genre:schlager',
+      'genre:rebetiko',
+      'genre:fado',
+      'genre:flamenco',
       'genre:carnatic',
       'genre:russian-folk',
       'genre:samba',
@@ -613,7 +642,7 @@ describe('graph.json integrity', () => {
     ['mbalax', 'mbalax', 'dakar', ['youssou-ndour', 'omar-pene', 'thione-seck']],
     ['makossa', 'makossa', 'douala', ['manu-dibango', 'eboa-lotin', 'petit-pays']],
     ['taarab', 'taarab', 'zanzibar', ['siti-binti-saad', 'bi-kidude', 'culture-musical-club']],
-  ] as const)('makes %s and its artists searchable in the African timelines', (genre, query, place, artists) => {
+  ] as const)('makes %s and its artists searchable in regional timelines', (genre, query, place, artists) => {
     const index = buildIndex(graph)
     const genreId = `genre:${genre}`
     expect(searchNodes(graph, query)[0]?.node.id).toBe(genreId)
@@ -621,7 +650,8 @@ describe('graph.json integrity', () => {
       expect.objectContaining({ type: 'originated_in', to: `place:${place}` }),
     ]))
     const genreModel = createTimelineModel(index, 'genre')
-    const hasDatedBar = genreModel.lanes.find((lane) => lane.family === 'african')
+    const family = genre === 'taarab' ? 'indian-ocean' : 'african'
+    const hasDatedBar = genreModel.lanes.find((lane) => lane.family === family)
       ?.bars.some((bar) => bar.node.id === genreId)
     expect(hasDatedBar).toBe(true)
 
@@ -631,7 +661,7 @@ describe('graph.json integrity', () => {
       expect(index.outEdges.get(artistId)).toEqual(expect.arrayContaining([
         expect.objectContaining({ type: 'key_artist_of', to: genreId }),
       ]))
-      expect(artistModel.lanes.find((lane) => lane.family === 'african')
+      expect(artistModel.lanes.find((lane) => lane.family === family)
         ?.bars.some((bar) => bar.node.id === artistId), artistId).toBe(true)
     }
   })

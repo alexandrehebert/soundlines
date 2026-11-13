@@ -278,6 +278,8 @@
     "landmarks": "Hitos",
     "topic": "Tema",
     "allTopics": "Todos los temas",
+    "genre": "Género",
+    "allGenres": "Todos los géneros",
     "jumpToEra": "Ir a una época",
     "eras": {
       "before-1400": "Antes de 1400",
@@ -513,7 +515,7 @@
     "estimatedPeriod": " · {period}; las fechas son estimadas",
     "prominenceUnannotated": " · relevancia sin anotar",
     "footer": {
-      "history": "Desplázate lateralmente o usa Mayús + rueda para recorrer la historia · filtra por tema o hitos · selecciona un acontecimiento para ver conexiones y fuentes",
+      "history": "Desplázate lateralmente o usa Mayús + rueda para recorrer la historia · filtra por género, tema o hitos · selecciona un acontecimiento para ver conexiones y fuentes",
       "bubbles": "El tamaño y el brillo muestran la influencia en el catálogo · arrastra o desplázate para moverte · pellizca o usa ⌘ + desplazamiento para ampliar · haz clic en una burbuja para ver detalles",
       "timeline": "Arrastra o desplázate para moverte · pellizca o usa ⌘ + desplazamiento para ampliar · haz clic en una barra para ver detalles"
     },
@@ -555,6 +557,9 @@
       "reggae": "Reggae y ska",
       "latin": "Latina",
       "african": "Africana",
+      "regional-mexican": "Regional mexicano",
+      "middle-eastern": "Oriente Medio",
+      "indian-ocean": "Océano Índico",
       "electronica": "Electrónica y ambient",
       "house": "Disco y house",
       "techno": "Techno y trance",

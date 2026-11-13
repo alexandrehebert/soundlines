@@ -7,6 +7,7 @@ import {
   filtersForSelectedEvent,
   formatEventPeriod,
   groupHistoryEvents,
+  matchesHistoryFilters,
 } from './history.ts'
 
 const graph: MusicGraph = {
@@ -59,6 +60,30 @@ describe('history chronology', () => {
       .toEqual({ category: 'media', landmarksOnly: false })
     expect(filtersForSelectedEvent({ category: 'all', landmarksOnly: false }, later))
       .toEqual(DEFAULT_HISTORY_FILTERS)
+  })
+
+  it('combines direct genre links with topic and landmark filters, including undated events', () => {
+    const undatedId = 'event:undated'
+    const data: MusicGraph = {
+      ...graph,
+      nodes: [...graph.nodes, { id: undatedId, type: 'event', name: 'Undated', category: 'media' }],
+      edges: [
+        { id: 'link:a', from: 'event:a', to: 'genre:other', type: 'shaped' },
+        { id: 'link:b', from: 'event:b', to: 'genre:other', type: 'recognized' },
+        { id: 'link:undated', from: undatedId, to: 'genre:other', type: 'context_for' },
+      ],
+    }
+    const { dated, undated } = createHistoryModel(data)
+    const filters = { ...DEFAULT_HISTORY_FILTERS, genreId: 'genre:other' }
+    expect(groupHistoryEvents(dated, filters).flatMap((group) => group.events.map((event) => event.id)))
+      .toEqual(['event:a', 'event:b'])
+    expect(groupHistoryEvents(dated, { ...filters, landmarksOnly: true, category: 'media' })).toEqual([])
+    expect(matchesHistoryFilters(undated[0], filters, undated[0].genreIds)).toBe(true)
+
+    const [early, , b] = dated
+    expect(filtersForSelectedEvent({ ...filters, landmarksOnly: true }, early, early.genreIds))
+      .toEqual({ category: 'all', landmarksOnly: true })
+    expect(filtersForSelectedEvent({ ...filters, landmarksOnly: true }, b, b.genreIds)).toEqual(filters)
   })
 
   it('represents single years, ranges, and approximate dates without implying false precision', () => {
@@ -124,7 +149,7 @@ describe('history chronology', () => {
     expect(events.length + model.undated.length).toBe(data.nodes.filter((node) => node.type === 'event').length)
     expect(grouped.map((event) => event.id)).toEqual(events.map((event) => event.id))
     expect(events[0].period.start).toBe(-586)
-    expect(events.at(-1)?.period.start).toBe(2022)
+    expect(events.find((event) => event.id === 'event:tyla-first-african-performance-grammy')?.period.start).toBe(2024)
   })
 
   it.each([

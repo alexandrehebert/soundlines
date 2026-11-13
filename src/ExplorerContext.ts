@@ -13,7 +13,7 @@ import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { explorerUrl, isJukeboxPath, readExplorerLocation, type ExplorerLocation } from './explorerLocation.ts'
 import { buildIndex } from './graph/graph.ts'
 import {
-  DEFAULT_HISTORY_FILTERS, filtersForSelectedEvent, matchesHistoryFilters, type HistoryFilters,
+  DEFAULT_HISTORY_FILTERS, filtersForSelectedEvent, historyEventGenreIds, matchesHistoryFilters, type HistoryFilters,
 } from './graph/history.ts'
 import { revealEraRange } from './graph/layout.ts'
 import {
@@ -86,7 +86,7 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
   const revealSelection = useCallback((next: ExplorerLocation) => {
     const node = next.selectedId ? index.nodeById.get(next.selectedId) : undefined
     if (node?.type === 'event') {
-      setHistoryFilters((current) => filtersForSelectedEvent(current, node))
+      setHistoryFilters((current) => filtersForSelectedEvent(current, node, historyEventGenreIds(index, node.id)))
     }
     if (!node?.period || !isTimelineView(next.view)) return
     const targetView = next.view
@@ -234,7 +234,7 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
 
   const changeHistoryFilters = useCallback((next: HistoryFilters) => {
     const node = selectedId ? index.nodeById.get(selectedId) : undefined
-    if (node?.type === 'event' && !matchesHistoryFilters(node, next)) selectNode(null)
+    if (node?.type === 'event' && !matchesHistoryFilters(node, next, historyEventGenreIds(index, node.id))) selectNode(null)
     setHistoryFilters(next)
   }, [index, selectedId, selectNode])
 

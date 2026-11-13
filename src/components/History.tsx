@@ -5,6 +5,7 @@ import { useExplorer } from '../ExplorerContext.ts'
 import type { GraphIndex } from '../graph/graph.ts'
 import {
   createHistoryModel,
+  DEFAULT_HISTORY_FILTERS,
   formatEventPeriod,
   groupHistoryEvents,
   matchesHistoryFilters,
@@ -75,10 +76,16 @@ export function History() {
   const t = useTranslations('history')
   const tEras = useTranslations('history.eras')
   const labels = graphLabels(locale)
-  const history = useMemo(() => createHistoryModel(index.graph), [index.graph])
+  const history = useMemo(() => createHistoryModel(index.graph, index), [index])
   const events = history.dated
+  const genreOptions = useMemo(() => {
+    const collator = new Intl.Collator(locale)
+    const ids = new Set([...history.dated, ...history.undated].flatMap((event) => event.genreIds))
+    return [...ids].map((id) => index.nodeById.get(id)!)
+      .sort((a, b) => collator.compare(a.name, b.name) || a.id.localeCompare(b.id))
+  }, [history, index, locale])
   const undated = useMemo(
-    () => history.undated.filter((event) => matchesHistoryFilters(event, filters)),
+    () => history.undated.filter((event) => matchesHistoryFilters(event, filters, event.genreIds)),
     [history.undated, filters],
   )
   const selectedEvent = useMemo(() => events.find((event) => event.id === selectedId), [events, selectedId])
@@ -94,6 +101,7 @@ export function History() {
   const [activeEraId, setActiveEraId] = useState<string | null>(null)
   const currentEraId = groups.find((group) => group.id === activeEraId)?.id ?? groups[0]?.id
   const categoryId = useId()
+  const genreId = useId()
   const resultCount = groups.reduce((count, group) => count + group.events.length, undated.length)
 
   useEffect(() => {
@@ -193,6 +201,19 @@ export function History() {
             </select>
             <ChevronDown className="pointer-events-none absolute right-4 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-violet-200" aria-hidden="true" />
           </label>
+          <label htmlFor={genreId} className="relative block rounded-full border border-slate-700 bg-slate-900 p-1">
+            <span className="sr-only">{t('genre')}</span>
+            <select
+              id={genreId}
+              value={filters.genreId ?? ''}
+              onChange={(event) => changeHistoryFilters({ ...filters, genreId: event.currentTarget.value || undefined })}
+              className="block max-w-48 cursor-pointer appearance-none rounded-full bg-violet-500/20 py-1.5 pl-3 pr-8 text-xs font-semibold text-violet-200 transition-colors hover:bg-violet-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
+            >
+              <option value="" className="bg-slate-900 text-slate-200">{t('allGenres')}</option>
+              {genreOptions.map(({ id, name }) => <option key={id} value={id} className="bg-slate-900 text-slate-200">{name}</option>)}
+            </select>
+            <ChevronDown className="pointer-events-none absolute right-4 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-violet-200" aria-hidden="true" />
+          </label>
         </div>
         {groups.length > 0 && (
           <nav ref={navigationRef} aria-label={t('jumpToEra')} className="mt-2 flex w-fit max-w-full gap-0.5 overflow-x-auto rounded-lg border border-slate-800 bg-slate-900/50 p-0.5 md:mt-0">
@@ -236,7 +257,7 @@ export function History() {
               {!undated.length && (
                 <button
                   type="button"
-                  onClick={() => changeHistoryFilters({ category: 'all', landmarksOnly: false })}
+                  onClick={() => changeHistoryFilters(DEFAULT_HISTORY_FILTERS)}
                   className="mt-4 rounded-full border border-slate-700 px-4 py-2 text-xs font-semibold text-slate-200 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70"
                 >
                   {t('clearFilters')}

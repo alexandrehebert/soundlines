@@ -1,3 +1,4 @@
+import { buildIndex, type GraphIndex } from './graph.ts'
 import { EVENT_CATEGORY_LABELS, type EventCategory, type GraphNode, type MusicGraph, type Period } from './types.ts'
 import { catalogueFor } from '../i18n/catalogue.ts'
 import { DEFAULT_LOCALE, type Locale } from '../i18n/routing.ts'
@@ -8,6 +9,7 @@ const eraLabels = catalogueFor(DEFAULT_LOCALE).history.eras
 export interface HistoryEntry extends GraphNode {
   type: 'event'
   category: EventCategory
+  genreIds: readonly string[]
 }
 
 export interface HistoryEvent extends HistoryEntry {
@@ -17,6 +19,7 @@ export interface HistoryEvent extends HistoryEntry {
 export interface HistoryFilters {
   category: EventCategory | 'all'
   landmarksOnly: boolean
+  genreId?: string
 }
 
 export const DEFAULT_HISTORY_FILTERS: HistoryFilters = {
@@ -33,7 +36,16 @@ export const HISTORY_ERAS = [
   { id: '2000-onward', label: eraLabels['2000-onward'], before: Infinity },
 ] as const
 
-export function createHistoryModel(graph: MusicGraph) {
+export function historyEventGenreIds(index: GraphIndex, id: string): string[] {
+  const ids = new Set<string>()
+  for (const { type, to } of index.outEdges.get(id) ?? []) {
+    if ((type === 'context_for' || type === 'recognized' || type === 'shaped')
+      && index.nodeById.get(to)?.type === 'genre') ids.add(to)
+  }
+  return [...ids]
+}
+
+export function createHistoryModel(graph: MusicGraph, index = buildIndex(graph)) {
   const dated: HistoryEvent[] = []
   const undated: HistoryEntry[] = []
   for (const node of graph.nodes) {
@@ -42,7 +54,7 @@ export function createHistoryModel(graph: MusicGraph) {
     if (!category || !Object.hasOwn(EVENT_CATEGORY_LABELS, category)) {
       throw new Error(`Historical event ${node.id} needs a known category`)
     }
-    const event = { ...node, type: 'event' as const, category }
+    const event = { ...node, type: 'event' as const, category, genreIds: historyEventGenreIds(index, node.id) }
     if (period == null) {
       undated.push(event)
       continue
@@ -65,14 +77,21 @@ export function createHistoryModel(graph: MusicGraph) {
 export function matchesHistoryFilters(
   event: Pick<GraphNode, 'category' | 'significance'>,
   filters: HistoryFilters,
+  genreIds: readonly string[] = [],
 ): boolean {
   return (filters.category === 'all' || event.category === filters.category)
+    && (!filters.genreId || genreIds.includes(filters.genreId))
     && (!filters.landmarksOnly || event.significance === 'landmark')
 }
 
-export function filtersForSelectedEvent(filters: HistoryFilters, event: GraphNode): HistoryFilters {
-  if (event.type !== 'event' || matchesHistoryFilters(event, filters)) return filters
+export function filtersForSelectedEvent(
+  filters: HistoryFilters,
+  event: GraphNode,
+  genreIds: readonly string[] = [],
+): HistoryFilters {
+  if (event.type !== 'event' || matchesHistoryFilters(event, filters, genreIds)) return filters
   return {
+    ...(filters.genreId && genreIds.includes(filters.genreId) ? { genreId: filters.genreId } : {}),
     category: filters.category === event.category ? filters.category : 'all',
     landmarksOnly: filters.landmarksOnly && event.significance === 'landmark',
   }
@@ -81,7 +100,7 @@ export function filtersForSelectedEvent(filters: HistoryFilters, event: GraphNod
 export function groupHistoryEvents(events: readonly HistoryEvent[], filters: HistoryFilters) {
   const groups = HISTORY_ERAS.map((era) => ({ ...era, events: [] as HistoryEvent[] }))
   for (const event of events) {
-    if (!matchesHistoryFilters(event, filters)) continue
+    if (!matchesHistoryFilters(event, filters, event.genreIds)) continue
     const group = groups.find((era) => event.period.start < era.before)
     if (!group) throw new Error(`No history era for ${event.id}`)
     group.events.push(event)

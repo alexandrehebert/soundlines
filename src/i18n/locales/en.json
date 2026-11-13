@@ -278,6 +278,8 @@
     "landmarks": "Landmarks",
     "topic": "Topic",
     "allTopics": "All topics",
+    "genre": "Genre",
+    "allGenres": "All genres",
     "jumpToEra": "Jump to an era",
     "eras": {
       "before-1400": "Before 1400",
@@ -513,7 +515,7 @@
     "estimatedPeriod": " · {period}; dates are subject to estimation",
     "prominenceUnannotated": " · prominence not annotated",
     "footer": {
-      "history": "Scroll sideways or Shift + wheel through history · filter by topic or landmarks · select an event for connections and sources",
+      "history": "Scroll sideways or Shift + wheel through history · filter by genre, topic, or landmarks · select an event for connections and sources",
       "bubbles": "Size and brightness show catalogue influence · drag or scroll to move · pinch or ⌘ scroll to zoom · click a bubble for details",
       "timeline": "Drag or scroll to move · pinch or ⌘ scroll to zoom · click a bar for details"
     },
@@ -555,6 +557,9 @@
       "reggae": "Reggae & Ska",
       "latin": "Latin",
       "african": "African",
+      "regional-mexican": "Regional Mexican",
+      "middle-eastern": "Middle Eastern",
+      "indian-ocean": "Indian Ocean",
       "electronica": "Electronica & Ambient",
       "house": "Disco & House",
       "techno": "Techno & Trance",

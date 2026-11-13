@@ -5304,6 +5304,484 @@
     "artist:roy-ayers": {
       "description": "Vibrafonista y compositor estadounidense que formó Ubiquity en los años setenta. El grupo contribuyó a abrir camino al jazz-funk con canciones como Everybody Loves the Sunshine.",
       "estimateNote": "El inicio marca su primer álbum en solitario en 1963. El final señala su gira de despedida en 2023."
+    },
+    "genre:flamenco": {
+      "description": "Tradición andaluza que reúne cante, baile y toque de guitarra, documentada en los cafés cantantes del siglo XIX."
+    },
+    "genre:fado": {
+      "description": "Tradición de canción urbana documentada en la Lisboa del siglo XIX, con una voz solista acompañada habitualmente por guitarra portuguesa."
+    },
+    "genre:rebetiko": {
+      "description": "Tradición urbana griega de canto y baile que se difundió entre las clases trabajadoras a principios del siglo XX."
+    },
+    "genre:schlager": {
+      "description": "Tradición de canción popular en alemán con melodías pegadizas, difundida en discos y películas musicales de posguerra."
+    },
+    "genre:waiata-a-ringa": {
+      "description": "Los cantos gestuales maoríes combinan canto y gestos. Hay ejemplos documentados hacia 1900 y la forma se difundió a partir de la Primera Guerra Mundial."
+    },
+    "genre:cuarteto": {
+      "description": "Música de baile social de Córdoba, Argentina, reconocible por su ritmo saltarín de piano llamado tunga tunga."
+    },
+    "artist:leonor-marzano": {
+      "description": "Pianista a quien se atribuye la creación del ritmo característico del cuarteto."
+    },
+    "artist:la-mona-jimenez": {
+      "description": "Cantante cordobés y figura central del cuarteto."
+    },
+    "artist:rodrigo-bueno": {
+      "description": "Cantante cordobés y popular intérprete de cuarteto."
+    },
+    "genre:mento": {
+      "description": "Música popular y de baile jamaicana interpretada tanto por conjuntos rurales como por orquestas urbanas. Fue una de las fuentes del ska.",
+      "estimateNote": "La fecha marca las primeras grabaciones comerciales jamaicanas de una tradición popular más antigua."
+    },
+    "artist:lord-flea": {
+      "description": "Cantante que figura en las primeras grabaciones jamaicanas de mento."
+    },
+    "artist:count-lasher": {
+      "description": "Cantante e intérprete de la primera época discográfica del mento jamaicano."
+    },
+    "artist:lord-fly": {
+      "description": "Uno de los primeros intérpretes de mento en publicar un disco grabado en Jamaica."
+    },
+    "genre:zouk": {
+      "description": "Música de baile del Caribe francés que Kassav’ ayudó a definir hacia 1980. El grupo combinó ritmos antillanos y voces en criollo con cajas de ritmos y sintetizadores."
+    },
+    "artist:kassav": {
+      "description": "Grupo formado en París que ayudó a crear y popularizar el zouk."
+    },
+    "artist:jacob-desvarieux": {
+      "description": "Guitarrista y productor que ayudó a definir el sonido de Kassav’."
+    },
+    "artist:jocelyne-beroard": {
+      "description": "Cantante martiniqueña y una de las voces principales de Kassav’."
+    },
+    "genre:opm": {
+      "description": "Término que engloba la música original de artistas filipinos. Se difundió en los años setenta, cuando canciones en lenguas filipinas, desde baladas hasta rock, encontraron un público local."
+    },
+    "artist:apo-hiking-society": {
+      "description": "Grupo filipino cuyo integrante Danny Javier acuñó el término OPM."
+    },
+    "artist:freddie-aguilar": {
+      "description": "Cantante y compositor de folk filipino cuya carrera recibió el impulso del festival Metropop."
+    },
+    "artist:ryan-cayabyab": {
+      "description": "Compositor filipino cuya carrera fue impulsada por el concurso de composición Metropop."
+    },
+    "genre:varietes-francaises": {
+      "description": "Canción popular francesa difundida por programas de variedades de radio y televisión. En los años sesenta, la ola yé-yé llevó a esos programas a jóvenes intérpretes y adaptaciones francesas de éxitos estadounidenses."
+    },
+    "artist:francoise-hardy": {
+      "description": "Cantante y compositora francesa que se dio a conocer en los comienzos del yé-yé."
+    },
+    "artist:claude-francois": {
+      "description": "Cantante que se convirtió en figura de las variedades francesas con la ola yé-yé."
+    },
+    "artist:johnny-hallyday": {
+      "description": "Cantante francés procedente del rock and roll que se convirtió en estrella de la generación yé-yé."
+    },
+    "genre:dangdut": {
+      "description": "Música popular indonesia nacida de las orquestas malayas, que se popularizó en los escenarios y en casete en los años setenta. Rhoma Irama y Elvy Sukaesih grabaron algunos de sus primeros éxitos."
+    },
+    "artist:rhoma-irama": {
+      "description": "Cantante indonesio de dangdut que fundó la orquesta Soneta."
+    },
+    "artist:elvy-sukaesih": {
+      "description": "Cantante indonesia de dangdut que grabó éxitos tempranos con Rhoma Irama."
+    },
+    "artist:a-rafiq": {
+      "description": "Cantante indonesio de dangdut que grabó Pengalaman Pertama en 1978."
+    },
+    "artist:pastora-pavon": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:camaron-de-la-isla": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:paco-de-lucia": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:amalia-rodrigues": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:carlos-do-carmo": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:mariza": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:markos-vamvakaris": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:vasilis-tsitsanis": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:stella-haskil": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:caterina-valente": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:peter-alexander": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:freddy-quinn": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:apirana-ngata": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:te-puea-herangi": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "artist:paraire-tomoana": {
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+    },
+    "genre:sertanejo": {
+      "description": "Música popular brasileña surgida de las tradiciones rurales caipiras, entre ellas las canciones acompañadas por la viola caipira."
+    },
+    "artist:tonico-e-tinoco": {
+      "description": "Dúo pionero arraigado en la música rural caipira."
+    },
+    "artist:chitaozinho-e-xororo": {
+      "description": "Dúo que ayudó a llevar el sertanejo a un público masivo."
+    },
+    "artist:joao-pacifico": {
+      "description": "Compositor cuyas obras se incorporaron al repertorio caipira."
+    },
+    "genre:banda-sinaloense": {
+      "description": "Música de banda de viento de Sinaloa, México, con metales, clarinetes y la tambora como base."
+    },
+    "artist:banda-el-recodo": {
+      "description": "Banda sinaloense dirigida durante sus primeras grabaciones por el clarinetista Cruz Lizárraga."
+    },
+    "artist:banda-la-costena": {
+      "description": "Banda sinaloense vinculada al arreglista Ramón López Alvarado."
+    },
+    "artist:banda-los-guamuchilenos": {
+      "description": "Una de las primeras bandas sinaloenses que grabaron en Ciudad de México."
+    },
+    "genre:norteno": {
+      "description": "Música de acordeón y bajo sexto que tomó forma a ambos lados de la frontera entre el noreste de México y Texas."
+    },
+    "artist:los-alegres-de-teran": {
+      "description": "Dúo pionero del norteño originario de Nuevo León."
+    },
+    "artist:los-relampagos-del-norte": {
+      "description": "Grupo norteño conocido por el acordeón y el bajo sexto."
+    },
+    "artist:los-tigres-del-norte": {
+      "description": "Grupo norteño cuyas grabaciones llevaron el estilo a un público internacional."
+    },
+    "genre:corrido-tumbado": {
+      "description": "Estilo contemporáneo de corrido mexicano que incorpora el fraseo y la actitud del trap a la tradición de la balada. Las grabaciones de Natanael Cano de 2019 ayudaron a definirlo."
+    },
+    "artist:natanael-cano": {
+      "description": "Cantante mexicano y pionero de los corridos tumbados."
+    },
+    "artist:junior-h": {
+      "description": "Cantante que ayudó a definir los corridos tumbados junto a Natanael Cano."
+    },
+    "artist:peso-pluma": {
+      "description": "Cantante mexicano que combina los corridos con sonidos contemporáneos, entre ellos el trap."
+    },
+    "genre:vallenato": {
+      "description": "Música narrativa del Caribe colombiano, interpretada tradicionalmente con acordeón, caja y guacharaca.",
+      "estimateNote": "La fecha señala las primeras grabaciones comerciales de la tradición anterior del Magdalena Grande."
+    },
+    "artist:rafael-escalona": {
+      "description": "Compositor cuyas canciones vallenatas retrataron el Caribe colombiano."
+    },
+    "artist:alejo-duran": {
+      "description": "Acordeonista de vallenato y uno de sus primeros intérpretes discográficos."
+    },
+    "artist:diomedes-diaz": {
+      "description": "Cantante y compositor que llevó el vallenato a un público internacional."
+    },
+    "genre:chicha": {
+      "description": "Cumbia peruana que combina ritmos de cumbia colombiana con huayno andino e instrumentos eléctricos."
+    },
+    "artist:chacalon-y-la-nueva-crema": {
+      "description": "Grupo de chicha que ayudó a definir un estilo propio en Lima."
+    },
+    "artist:los-shapis": {
+      "description": "Grupo peruano de chicha formado en Chupaca."
+    },
+    "artist:pintura-roja": {
+      "description": "Grupo peruano que amplió el sonido de la chicha con una voz femenina principal."
+    },
+    "genre:musica-criolla": {
+      "description": "Música popular de las comunidades costeras de Lima y Callao, en Perú, que incluye el vals criollo."
+    },
+    "artist:chabuca-granda": {
+      "description": "Cantante y compositora peruana de «La flor de la canela»."
+    },
+    "artist:felipe-pinglo": {
+      "description": "Compositor peruano del vals criollo «El Plebeyo»."
+    },
+    "artist:lucha-reyes-peru": {
+      "description": "Cantante peruana reconocida por sus interpretaciones de música criolla."
+    },
+    "genre:khaliji": {
+      "description": "Canción popular del Golfo, a menudo con instrumentos de cuerda como el laúd árabe. Su desarrollo comercial pasó por la radio, los conciertos y los discos."
+    },
+    "artist:talal-maddah": {
+      "description": "Cantante saudí que cofundó la discográfica Riyadhphone."
+    },
+    "artist:mohammed-abdu": {
+      "description": "Cantante saudí que se dio a conocer en los años setenta."
+    },
+    "artist:fahad-al-kubaisi": {
+      "description": "Cantante catarí conocido por el khaliji y por participar en una canción del Mundial de 2022."
+    },
+    "genre:filmi": {
+      "description": "Música escrita para el cine indio. En el cine de Bombay, los cantantes de playback grababan las canciones que los actores simulaban cantar, mientras los compositores recurrían a la música clásica, el folk, el jazz y el pop."
+    },
+    "artist:lata-mangeshkar": {
+      "description": "Cantante india de playback cuyas grabaciones se hicieron muy conocidas entre el público británico de origen surasiático."
+    },
+    "artist:asha-bhosle": {
+      "description": "Cantante india de playback cuyo trabajo llegó al público británico mediante películas y grabaciones."
+    },
+    "artist:mohammed-rafi": {
+      "description": "Cantante indio de playback cuyas canciones de cine se hicieron conocidas entre los oyentes británicos de origen surasiático."
+    },
+    "genre:punjabi-bhangra": {
+      "description": "Música de baile punyabí de raíz folclórica. En Gran Bretaña, los grupos de bodas la convirtieron en un estilo moderno al combinar el canto punyabí con instrumentos y técnicas de grabación occidentales."
+    },
+    "artist:alaap": {
+      "description": "Grupo pionero de la escena británica del bhangra."
+    },
+    "artist:heera": {
+      "description": "Grupo de bhangra de la primera ola británica de intérpretes."
+    },
+    "artist:kuljit-bhamra": {
+      "description": "Productor que contribuyó a definir el sonido del bhangra británico."
+    },
+    "genre:cantopop": {
+      "description": "Pop en cantonés de Hong Kong. El cine y la radio ayudaron a reunir un primer público y la emisión repetida de canciones de televisión y cine impulsó su popularidad en los años setenta."
+    },
+    "artist:sam-hui": {
+      "description": "Cantante de Hong Kong cuyo álbum The Private Eyes recibió un disco de platino en 1978."
+    },
+    "artist:anita-mui": {
+      "description": "Cantante de Hong Kong que se dio a conocer mediante un concurso de canto televisado."
+    },
+    "artist:leslie-cheung": {
+      "description": "Cantante de pop de Hong Kong cuyos trajes de escenario se conservan en el Museo de Patrimonio de Hong Kong."
+    },
+    "genre:trot": {
+      "description": "Canción popular coreana que surgió en la década de 1920. Sus intérpretes son conocidos por modular las notas y usar vibrato, y el género atrajo a un público amplio en los años sesenta y setenta."
+    },
+    "artist:yi-nan-yeong": {
+      "description": "Cantante coreana cuya grabación de Tears of Mokpo de 1935 se convirtió en un clásico del trot."
+    },
+    "artist:nam-jin": {
+      "description": "Cantante coreano que se convirtió en una estrella del trot en los años sesenta y setenta."
+    },
+    "artist:na-hoon-a": {
+      "description": "Cantante coreano de trot cuya larga rivalidad con Nam Jin marcó el apogeo del género."
+    },
+    "genre:funana": {
+      "description": "Música de baile caboverdiana que combina tradicionalmente el acordeón gaita con una barra de hierro raspada. Bulimundo popularizó un arreglo eléctrico después de la independencia.",
+      "estimateNote": "La clasificación patrimonial sitúa su probable aparición hacia 1900."
+    },
+    "artist:code-di-dona": {
+      "description": "Músico de funaná tradicional cuyas composiciones pasaron al repertorio de Bulimundo."
+    },
+    "artist:bulimundo": {
+      "description": "Grupo caboverdiano que popularizó los arreglos eléctricos del funaná."
+    },
+    "artist:ferro-gaita": {
+      "description": "Grupo de funaná que devolvió el protagonismo al acordeón gaita junto al bajo, la guitarra y la batería."
+    },
+    "genre:ethio-jazz": {
+      "description": "Estilo de jazz desarrollado por Mulatu Astatke que combina modos etíopes con arreglos de jazz, ritmos latinos y funk.",
+      "estimateNote": "Los experimentos de Astatke entre mediados y finales de los años sesenta sirven de referencia."
+    },
+    "artist:mulatu-astatke": {
+      "description": "Vibrafonista y compositor que desarrolló el ethio-jazz y publicó Mulatu of Ethiopia en 1972."
+    },
+    "artist:hailu-mergia": {
+      "description": "Teclista etíope que grabó el álbum instrumental de ethio-jazz Tche Belew con Walias Band."
+    },
+    "artist:dahlak-band": {
+      "description": "Grupo de Adís Abeba que grabó Wede Harer Guzo con Hailu Mergia en 1978."
+    },
+    "genre:benga": {
+      "description": "Música de baile keniana de ritmo rápido interpretada por grupos de guitarras. Surgió entre músicos luo a finales de los años sesenta y se extendió a otras comunidades.",
+      "estimateNote": "Las grabaciones y los grupos de guitarras luo de finales de los años sesenta sirven de referencia."
+    },
+    "artist:daniel-owino-misiani": {
+      "description": "Músico de benga que fundó Shirati Jazz en 1967."
+    },
+    "artist:george-ramogi": {
+      "description": "Pionero del benga luo que lideró Continental Kilo Dumbe Dumbe Jazz.",
+      "estimateNote": "La actividad documentada de su grupo en los años setenta sirve de referencia."
+    },
+    "artist:ochieng-nelly-mengo": {
+      "description": "Músico de benga que lideró Victoria Jazz junto a Collela Mazee.",
+      "estimateNote": "La actividad documentada de su grupo en los años setenta sirve de referencia."
+    },
+    "genre:sega": {
+      "description": "Música y danza del océano Índico con raíces en comunidades esclavizadas en las Mascareñas. En el séga tipik mauriciano se improvisa en criollo con tambor de marco, sonajero y triángulo.",
+      "estimateNote": "Descripciones del siglo XVIII documentan formas tempranas de la tradición en las Mascareñas."
+    },
+    "artist:ti-frere": {
+      "description": "Cantante mauriciano y destacado intérprete del séga tradicional."
+    },
+    "artist:serge-lebrasse": {
+      "description": "Cantante mauriciano de séga tradicional cuya trayectoria fue reconocida por el Estado."
+    },
+    "artist:fanfan-sega": {
+      "description": "Intérprete mauriciano del séga tipik tradicional.",
+      "estimateNote": "El inventario patrimonial sitúa su notoriedad en los años sesenta y setenta."
+    },
+    "genre:maloya": {
+      "description": "Música, canto y danza de Reunión, moldeados por personas esclavizadas de origen malgache y africano. Tradicionalmente, solista y coro se responden sobre un acompañamiento de percusión.",
+      "estimateNote": "La fecha sitúa su desarrollo inicial en la época de la esclavitud sin fijar un origen preciso."
+    },
+    "artist:danyel-waro": {
+      "description": "Intérprete de Reunión conocido por el maloya."
+    },
+    "artist:firmin-viry": {
+      "description": "Intérprete de Reunión y figura destacada del maloya."
+    },
+    "artist:granmoun-lele": {
+      "description": "Cantante y acordeonista de Reunión reconocido como una voz fundacional del maloya."
+    },
+    "genre:arabesk": {
+      "description": "Música popular turca que combina elementos de la música tradicional y culta turca con influencias egipcias. Encontró público entre quienes migraban del campo a la ciudad.",
+      "estimateNote": "La fecha refleja la aparición del estilo en Estambul a finales de los años sesenta."
+    },
+    "artist:orhan-gencebay": {
+      "description": "Pionero del arabesk conocido por emplear cuerdas y bağlama eléctrico en sus arreglos."
+    },
+    "artist:muslum-gurses": {
+      "description": "Cantante turco cuyas interpretaciones contribuyeron a definir el türkü arabesk, de raíz tradicional."
+    },
+    "artist:ferdi-tayfur": {
+      "description": "Cantante que ayudó a llevar el arabesk al gran público en Turquía."
+    },
+    "genre:egyptian-shaabi": {
+      "description": "Música popular de El Cairo vinculada a los barrios obreros. Abarca desde arreglos para acordeón, violín y flauta de caña hasta grabaciones posteriores con sintetizadores, batería y bajo eléctrico.",
+      "estimateNote": "Los estudios sitúan la aparición del género urbano moderno en El Cairo a finales de los años sesenta."
+    },
+    "artist:ahmed-adaweyah": {
+      "description": "Cantante egipcio cuyas grabaciones contribuyeron a definir el sonido del shaabi cairota.",
+      "estimateNote": "La fecha sitúa su aparición en el shaabi urbano hacia 1970."
+    },
+    "artist:hakim": {
+      "description": "Cantante que modernizó la instrumentación del shaabi con Hamid El Shaeri a principios de los años noventa.",
+      "estimateNote": "La fecha sitúa sus inicios aproximadamente a principios de los años noventa."
+    },
+    "artist:shaaban-abdel-rahim": {
+      "description": "Cantante egipcio conocido por sus grabaciones de shaabi."
+    },
+    "genre:mahraganat": {
+      "description": "Música electrónica egipcia de calle y de bodas que combina la canción popular local con ritmos programados. Sus temas se difundieron en bodas, por vías informales y en línea.",
+      "estimateNote": "La investigación sitúa los primeros ejemplos en El Cairo hacia 2006."
+    },
+    "artist:oka": {
+      "description": "Intérprete egipcio que aparece en el documental Electro Chaabi sobre la primera escena del mahraganat."
+    },
+    "artist:ortega-mahraganat": {
+      "description": "Intérprete cairota que aparece en Electro Chaabi por su trabajo en el mahraganat."
+    },
+    "artist:mc-sadat": {
+      "description": "MC cairota cuyas actuaciones de mahraganat quedaron documentadas en Electro Chaabi.",
+      "estimateNote": "La entrevista sitúa sus inicios en el mahraganat hacia 2007."
+    },
+    "genre:dabke-music": {
+      "description": "Música para bailes en fila del Levante en bodas y fiestas comunitarias. En Palestina, las interpretaciones tradicionales combinan instrumentos de viento como el yargul con canto popular.",
+      "estimateNote": "Los relatos sobre Beirut a mediados del siglo XIX aportan una referencia temprana para el baile y su música."
+    },
+    "artist:wadih-el-safi": {
+      "description": "Cantante libanés que interpretó con coro canciones de acompañamiento para la dabke."
+    },
+    "artist:omar-souleyman": {
+      "description": "Cantante sirio de bodas conocido por llevar la dabke de su región a escenarios internacionales."
+    },
+    "event:getz-gilberto-grammy": {
+      "name": "Getz/Gilberto gana el Grammy al álbum del año",
+      "description": "La colaboración entre músicos brasileños y el saxofonista estadounidense Stan Getz gana el premio al álbum del año. «The Girl from Ipanema» gana el de grabación del año y consolida la llegada de la bossa nova al gran público de Estados Unidos."
+    },
+    "event:black-sabbath-debut": {
+      "name": "El debut de Black Sabbath entra en el Top 10 británico",
+      "description": "El primer álbum del grupo de Birmingham llega al número ocho. Sus riffs sombríos se abren paso en las listas en una etapa clave para el heavy metal."
+    },
+    "event:abba-waterloo-eurovision": {
+      "name": "ABBA gana Eurovisión con «Waterloo»",
+      "description": "ABBA representa a Suecia y gana el concurso en Brighton. La emisión da a conocer al grupo a escala internacional y «Waterloo» llega al número uno británico."
+    },
+    "event:acdc-back-in-black-uk-number-one": {
+      "name": "Back in Black de AC/DC lidera la lista británica",
+      "description": "El primer álbum del grupo australiano de hard rock con Brian Johnson como cantante llega al número uno en agosto."
+    },
+    "event:nusrat-womad-1985": {
+      "name": "Nusrat Fateh Ali Khan actúa en el WOMAD",
+      "description": "Nusrat Fateh Ali Khan y su conjunto acercan el qawwali pakistaní a un nuevo público en Inglaterra. Real World Records publica más adelante una grabación del concierto."
+    },
+    "event:nirvana-nevermind-billboard-number-one": {
+      "name": "Nevermind de Nirvana lidera la lista de álbumes de Estados Unidos",
+      "description": "En enero, Nevermind llega al número uno del Billboard 200 y lleva el grunge de Seattle al gran público estadounidense."
+    },
+    "event:battle-of-britpop": {
+      "name": "Blur y Oasis se enfrentan en la lista británica",
+      "description": "En agosto, «Country House» de Blur supera a «Roll With It» de Oasis. La pugna por el número uno convierte al britpop en noticia nacional."
+    },
+    "event:kylie-cant-get-you-out-uk-number-one": {
+      "name": "Kylie Minogue alcanza el número uno con «Can’t Get You Out of My Head»",
+      "description": "El sencillo de dance pop de la cantante australiana pasa cuatro semanas en lo alto de la lista británica."
+    },
+    "event:samba-de-roda-unesco-inscription": {
+      "name": "La UNESCO inscribe la samba de roda de Bahía",
+      "description": "La UNESCO incorpora esta tradición musical y de baile del Recôncavo de Bahía a su Lista Representativa, tras proclamarla obra maestra en 2005. Forma parte de la familia de la samba."
+    },
+    "event:tango-unesco-inscription": {
+      "name": "La UNESCO reconoce el tango de Argentina y Uruguay",
+      "description": "La candidatura conjunta reconoce una cultura musical y de baile compartida, arraigada en Buenos Aires y Montevideo."
+    },
+    "event:straight-outta-compton-recording-registry": {
+      "name": "Straight Outta Compton entra en el registro sonoro de Estados Unidos",
+      "description": "La Biblioteca del Congreso selecciona el debut de N.W.A. de 1988. El álbum contribuyó a popularizar el gangsta rap y a difundir el hip-hop de la Costa Oeste."
+    },
+    "event:merengue-unesco-inscription": {
+      "name": "La UNESCO inscribe el merengue dominicano",
+      "description": "La música y el baile del merengue en la República Dominicana se incorporan a la Lista Representativa. La tradición se transmite en fiestas, reuniones y festivales."
+    },
+    "event:reggae-unesco-inscription": {
+      "name": "La UNESCO inscribe el reggae jamaicano",
+      "description": "La UNESCO añade el reggae de Jamaica a su Lista Representativa y destaca su papel en la crítica social y su proyección internacional."
+    },
+    "event:bachata-unesco-inscription": {
+      "name": "La UNESCO inscribe la bachata dominicana",
+      "description": "La UNESCO reconoce la música y el baile de la bachata dominicana, una tradición de las reuniones sociales que reúne influencias del bolero y de estilos afrocaribeños."
+    },
+    "event:morna-unesco-inscription": {
+      "name": "La UNESCO inscribe la morna de Cabo Verde",
+      "description": "La UNESCO incorpora a su Lista Representativa esta práctica caboverdiana que reúne música, poesía y danza."
+    },
+    "event:bts-dynamite-hot-100-number-one": {
+      "name": "BTS llega al número uno en Estados Unidos con «Dynamite»",
+      "description": "El grupo surcoreano debuta en el primer puesto del Billboard Hot 100 con su sencillo en inglés, un hito para el K-pop en Estados Unidos."
+    },
+    "event:burna-boy-global-album-grammy": {
+      "name": "Burna Boy gana el Grammy al mejor álbum de música global",
+      "description": "El músico nigeriano recibe el premio por Twice as Tall. El galardón da visibilidad internacional a su música, influida por el afrobeats y otros estilos."
+    },
+    "event:gamelan-unesco-inscription": {
+      "name": "La UNESCO inscribe el gamelán indonesio",
+      "description": "La tradición indonesia del gamelán entra en la Lista Representativa de la UNESCO, con sus instrumentos y prácticas transmitidos en comunidades y escuelas."
+    },
+    "event:gasolina-recording-registry": {
+      "name": "«Gasolina» entra en el registro sonoro de Estados Unidos",
+      "description": "La Biblioteca del Congreso selecciona la grabación de Daddy Yankee de 2004. El sencillo puertorriqueño ayudó a difundir el reguetón por todo el mundo."
+    },
+    "event:tyla-first-african-performance-grammy": {
+      "name": "Tyla gana el primer Grammy a la mejor interpretación musical africana",
+      "description": "La cantante sudafricana gana la primera edición del premio con «Water», un tema pop con influencias del amapiano."
     }
   },
   "edges": {

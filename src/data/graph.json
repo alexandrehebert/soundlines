@@ -2,6 +2,127 @@
   "version": 1,
   "nodes": [
     {
+      "id": "genre:khaliji",
+      "type": "genre",
+      "name": "Khaliji",
+      "addedOn": "2026-11-13",
+      "family": "middle-eastern",
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      },
+      "description": "Popular song from the Gulf, often featuring string instruments such as the oud. The commercial era took shape through radio, concerts and records.",
+      "sources": [
+        "https://saudipedia.com/en/timeline-of-saudi-singing",
+        "https://www.euronews.com/2023/06/10/rhythms-of-the-gulf-the-singing-star-bringing-khaliji-music-to-the-world"
+      ]
+    },
+    {
+      "id": "genre:arabesk",
+      "type": "genre",
+      "name": "Arabesk",
+      "addedOn": "2026-11-13",
+      "family": "middle-eastern",
+      "period": {
+        "start": 1968,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date reflects the style’s emergence in Istanbul in the late 1960s."
+      },
+      "description": "Turkish popular music that blends elements of Turkish folk and art music with Egyptian musical influences. It found an audience among rural migrants in cities.",
+      "sources": [
+        "https://ciaotest.cc.columbia.edu/book/bozdogan/bozdogan12.html",
+        "https://polen.itu.edu.tr/entities/publication/d34b8562-4583-4542-854c-709ae53fa4c2/full"
+      ]
+    },
+    {
+      "id": "genre:egyptian-shaabi",
+      "type": "genre",
+      "name": "Egyptian shaabi",
+      "addedOn": "2026-11-13",
+      "family": "middle-eastern",
+      "period": {
+        "start": 1968,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Studies trace the modern urban genre to Cairo in the late 1960s."
+      },
+      "description": "Cairo popular music associated with working-class neighborhoods. The style ranges from arrangements for accordion, violin and reed flute to later recordings with synthesizers, drums and electric bass.",
+      "sources": [
+        "https://journals.sagepub.com/doi/full/10.1177/14661381241302530"
+      ]
+    },
+    {
+      "id": "genre:dabke-music",
+      "type": "genre",
+      "name": "Dabke music",
+      "addedOn": "2026-11-13",
+      "family": "middle-eastern",
+      "period": {
+        "start": 1860,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Mid-nineteenth-century accounts from Beirut give an early documented placement for the dance and its music."
+      },
+      "description": "Music for Levantine line dancing at weddings and community celebrations. In Palestine, traditional performances combine wind instruments such as the yargul with popular singing.",
+      "sources": [
+        "https://www.cambridge.org/core/journals/international-journal-of-middle-east-studies/article/abs/negotiating-modernity-music-class-and-egyptian-influence-in-beirut-during-the-french-mandate/11F7A45605ABE48A3EB82AA9CA7ACDC1",
+        "https://ich.unesco.org/en/Decisions/18.COM/8.b.3",
+        "https://www.arabmediasociety.com/wp-content/uploads/2017/12/20101211162841_CaldwellDabke.pdf"
+      ]
+    },
+    {
+      "id": "genre:banda-sinaloense",
+      "type": "genre",
+      "name": "Banda sinaloense",
+      "addedOn": "2026-11-13",
+      "family": "regional-mexican",
+      "period": {
+        "start": 1920,
+        "precision": "decade"
+      },
+      "description": "Wind-band music from Sinaloa, Mexico, built around brass, clarinets and the tambora bass drum.",
+      "sources": [
+        "https://sic.cultura.gob.mx/ficha.php?table=frpintangible&table_id=422",
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07048.pdf"
+      ]
+    },
+    {
+      "id": "genre:norteno",
+      "type": "genre",
+      "name": "Norteño",
+      "addedOn": "2026-11-13",
+      "family": "regional-mexican",
+      "period": {
+        "start": 1930,
+        "precision": "decade"
+      },
+      "description": "Accordion and bajo sexto music shaped on both sides of the northeastern Mexico–Texas border.",
+      "sources": [
+        "https://www.scielo.org.mx/scielo.php?pid=S0188-62662018000200083&script=sci_arttext",
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07016.pdf"
+      ]
+    },
+    {
+      "id": "genre:corrido-tumbado",
+      "type": "genre",
+      "name": "Corrido tumbado",
+      "addedOn": "2026-11-13",
+      "family": "regional-mexican",
+      "period": {
+        "start": 2019,
+        "precision": "circa"
+      },
+      "description": "A contemporary Mexican corrido style that brings trap’s phrasing and attitude to the ballad tradition. Natanael Cano’s 2019 recordings helped establish it.",
+      "sources": [
+        "https://www.wmg.com/news/warner-chappell-music-signs-publishing-deal-corridos-tumbados-pioneer-and-hitmaker-natanael",
+        "https://music.apple.com/us/album/corridos-tumbados/1485388187"
+      ]
+    },
+    {
       "id": "artist:13th-floor-elevators",
       "type": "artist",
       "name": "The 13th Floor Elevators",
@@ -14178,6 +14299,66 @@
       ]
     },
     {
+      "id": "genre:flamenco",
+      "type": "genre",
+      "name": "Flamenco",
+      "addedOn": "2026-11-13",
+      "family": "country-folk",
+      "period": {
+        "start": 1850,
+        "precision": "circa"
+      },
+      "description": "An Andalusian tradition bringing together singing, dance and guitar playing, documented in nineteenth-century cafés cantantes.",
+      "sources": [
+        "https://www.andalucia.org/actividades-y-atracciones/flamenco/historia/edad-de-oro/"
+      ]
+    },
+    {
+      "id": "genre:fado",
+      "type": "genre",
+      "name": "Fado",
+      "addedOn": "2026-11-13",
+      "family": "country-folk",
+      "period": {
+        "start": 1820,
+        "precision": "circa"
+      },
+      "description": "An urban song tradition documented in nineteenth-century Lisbon, with a solo singer typically accompanied by Portuguese guitar.",
+      "sources": [
+        "https://museudofado.pt/en/fado-history-en"
+      ]
+    },
+    {
+      "id": "genre:rebetiko",
+      "type": "genre",
+      "name": "Rebetiko",
+      "addedOn": "2026-11-13",
+      "family": "country-folk",
+      "period": {
+        "start": 1900,
+        "precision": "decade"
+      },
+      "description": "An urban Greek song and dance tradition that spread through working-class communities in the early twentieth century.",
+      "sources": [
+        "https://ich.unesco.org/en/decisions/12.COM/11.B.11"
+      ]
+    },
+    {
+      "id": "genre:waiata-a-ringa",
+      "type": "genre",
+      "name": "Waiata-ā-ringa",
+      "addedOn": "2026-11-13",
+      "family": "country-folk",
+      "period": {
+        "start": 1900,
+        "precision": "circa"
+      },
+      "description": "Māori action songs coordinate singing with gestures. Early examples were documented around 1900 and the form spread widely from the First World War onwards.",
+      "sources": [
+        "https://teara.govt.nz/en/waiata-hou-contemporary-maori-songs/page-3"
+      ]
+    },
+    {
       "id": "genre:salsa",
       "type": "genre",
       "name": "Salsa",
@@ -14346,6 +14527,24 @@
       "description": "A Jamaican reggae style closely tied to Rastafari. Its songs gave voice to Black history, spiritual belief and African identity in the years after independence.",
       "sources": [
         "https://folklife.si.edu/magazine/black-history-in-roots-reggae-music"
+      ]
+    },
+    {
+      "id": "genre:mento",
+      "type": "genre",
+      "name": "Mento",
+      "addedOn": "2026-11-13",
+      "family": "reggae",
+      "period": {
+        "start": 1951,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks early Jamaican commercial recordings of an older folk tradition."
+      },
+      "description": "A Jamaican folk and dance music heard in both rural ensembles and urban dance bands. It was one of the sources of ska.",
+      "sources": [
+        "https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html",
+        "https://www.encyclopedia.com/literature-and-arts/performing-arts/music-popular-and-jazz/reggae"
       ]
     },
     {
@@ -14695,6 +14894,138 @@
       ]
     },
     {
+      "id": "genre:schlager",
+      "type": "genre",
+      "name": "Schlager",
+      "addedOn": "2026-11-13",
+      "family": "pop",
+      "period": {
+        "start": 1920,
+        "precision": "decade"
+      },
+      "description": "A German-language popular song tradition with memorable melodies, heard in recordings and in postwar musical films.",
+      "sources": [
+        "https://rock-popmuseum.de/wp-content/uploads/2025/03/Ausstellungskatalog_100-Jahre-deutscher-Schlager.pdf"
+      ]
+    },
+    {
+      "id": "genre:opm",
+      "type": "genre",
+      "name": "Original Pilipino Music (OPM)",
+      "addedOn": "2026-11-13",
+      "family": "pop",
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      },
+      "description": "An umbrella for original music by Filipino artists. The term spread in the 1970s as musicians found local audiences for songs in Philippine languages across styles from ballads to rock.",
+      "sources": [
+        "https://billboardphilippines.com/culture/scenes/the-history-and-future-of-filipino-pop-from-folk-love-songs-to-the-p-pop-wave/",
+        "https://www.philstar.com/lifestyle/supreme/2012/08/25/841695/apo-milestones",
+        "https://legacy.senate.gov.ph/press_release/2025/0603_padilla1.asp",
+        "https://www.maestroryancayabyab.com/about"
+      ]
+    },
+    {
+      "id": "genre:varietes-francaises",
+      "type": "genre",
+      "name": "Variétés françaises",
+      "addedOn": "2026-11-13",
+      "family": "pop",
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      },
+      "description": "French popular song as heard on radio and television variety shows. The 1960s yé-yé wave brought young singers and French adaptations of American hits to those programmes.",
+      "sources": [
+        "https://www.inatheque.fr/medias/inatheque_fr/fonds_audiovisuels/guides_thematiques/Guide_des_sources_les_varietes_dans_les_collections_de_l_INA.pdf",
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=3951"
+      ]
+    },
+    {
+      "id": "genre:dangdut",
+      "type": "genre",
+      "name": "Dangdut",
+      "addedOn": "2026-11-13",
+      "family": "pop",
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      },
+      "description": "Indonesian popular music that grew from Malay orchestras into a major stage and cassette phenomenon in the 1970s. Rhoma Irama and Elvy Sukaesih recorded some of its early hits.",
+      "sources": [
+        "https://www.academia.edu/102773866/DANGDUT_DALAM_CENGKERAMAN_TELEVISI",
+        "https://www.logos-verlag.de/PDFS/aemr.16-8.pdf"
+      ]
+    },
+    {
+      "id": "genre:filmi",
+      "type": "genre",
+      "name": "Filmi",
+      "addedOn": "2026-11-13",
+      "family": "pop",
+      "period": {
+        "start": 1931,
+        "precision": "year"
+      },
+      "description": "Music written for Indian films. In Bombay cinema, playback singers recorded songs for actors to mime, and composers drew on classical music, folk, jazz and pop.",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://www.southasianist.ed.ac.uk/southasianist/article/download/167/992/2102"
+      ]
+    },
+    {
+      "id": "genre:punjabi-bhangra",
+      "type": "genre",
+      "name": "Punjabi bhangra",
+      "addedOn": "2026-11-13",
+      "family": "pop",
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      },
+      "description": "Punjabi dance music with roots in folk performance. In Britain, wedding groups turned it into a modern recorded style by combining Punjabi song with Western instruments and recording techniques.",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://catalogue.royalalberthall.com/Record.aspx?id=DS/UK/14261&src=CalmView.Persons",
+        "https://kedarecords.com/artist/heera/",
+        "https://sadaa.co.uk/studio/files/Kaljit-Bhamra_biog.pdf"
+      ]
+    },
+    {
+      "id": "genre:cantopop",
+      "type": "genre",
+      "name": "Cantopop",
+      "addedOn": "2026-11-13",
+      "family": "pop",
+      "period": {
+        "start": 1950,
+        "precision": "decade"
+      },
+      "description": "Cantonese-language pop from Hong Kong. Film and radio helped build an early audience, and repeated broadcasts of television and film songs drove its popularity in the 1970s.",
+      "sources": [
+        "https://www.info.gov.hk/gia/general/200711/10/P200711090209.htm",
+        "https://www.info.gov.hk/gia/general/202107/27/P2021072700270p.htm"
+      ]
+    },
+    {
+      "id": "genre:trot",
+      "type": "genre",
+      "name": "Trot",
+      "addedOn": "2026-11-13",
+      "family": "pop",
+      "period": {
+        "start": 1920,
+        "precision": "decade"
+      },
+      "description": "Korean popular song that emerged in the 1920s. Its singers are known for bending notes and using vibrato, and the genre drew large audiences in the 1960s and 1970s.",
+      "sources": [
+        "https://www.mcst.go.kr/english/policy/kocis/newsView.jsp?pSeq=33",
+        "https://jmic.online/issues/v5n1/10/",
+        "https://www.koreatimes.co.kr/entertainment/music/20220220/veteran-trot-singer-na-hoon-a-to-release-new-album"
+      ]
+    },
+    {
       "id": "genre:synthwave",
       "type": "genre",
       "name": "Synthwave",
@@ -14814,6 +15145,102 @@
       "sources": [
         "https://new.scielo.br/j/vb/a/LCBRksv9HrGrNDMnbtGk7TC/?ilang=en&lang=en",
         "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/79/23/2020717923/2020717923.pdf"
+      ]
+    },
+    {
+      "id": "genre:cuarteto",
+      "type": "genre",
+      "name": "Cuarteto",
+      "addedOn": "2026-11-13",
+      "family": "latin",
+      "period": {
+        "start": 1940,
+        "precision": "circa"
+      },
+      "description": "Music for social dancing from Córdoba, Argentina, recognizable by its bouncing piano rhythm known as tunga tunga.",
+      "sources": [
+        "https://www.argentina.gob.ar/cultura/manifestaciones-del-patrimonio-cultural-inmaterial/cordoba/cuarteto-musica-y-danza"
+      ]
+    },
+    {
+      "id": "genre:zouk",
+      "type": "genre",
+      "name": "Zouk",
+      "addedOn": "2026-11-13",
+      "family": "latin",
+      "period": {
+        "start": 1980,
+        "precision": "circa"
+      },
+      "description": "French Caribbean dance music that Kassav’ helped establish around 1980. The band wove Antillean rhythms and Creole vocals together with drum machines and synthesizers.",
+      "sources": [
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=4731",
+        "https://daily.redbullmusicacademy.com/2015/12/zouk-feature/"
+      ]
+    },
+    {
+      "id": "genre:sertanejo",
+      "type": "genre",
+      "name": "Sertanejo",
+      "addedOn": "2026-11-13",
+      "family": "latin",
+      "period": {
+        "start": 1929,
+        "precision": "circa"
+      },
+      "description": "Brazilian popular music that grew from rural caipira traditions, including songs accompanied by the viola caipira.",
+      "sources": [
+        "https://repositorio-dspace.agricultura.gov.br/bitstream/1/397/4/minist%C3%A9rio%20da%20Agricultura%20150%20anos.pdf"
+      ]
+    },
+    {
+      "id": "genre:vallenato",
+      "type": "genre",
+      "name": "Vallenato",
+      "addedOn": "2026-11-13",
+      "family": "latin",
+      "period": {
+        "start": 1943,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks early commercial recordings of the older Magdalena Grande tradition."
+      },
+      "description": "Storytelling music from Colombia’s Caribbean region, traditionally played with accordion, caja drum and guacharaca scraper.",
+      "sources": [
+        "https://ich.unesco.org/es/RL/musica-vallenata-tradicional-del-caribe-colombiano-01095",
+        "https://www.redalyc.org/pdf/855/85553878002.pdf"
+      ]
+    },
+    {
+      "id": "genre:chicha",
+      "type": "genre",
+      "name": "Chicha",
+      "addedOn": "2026-11-13",
+      "family": "latin",
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      },
+      "description": "Peruvian cumbia that combines Colombian cumbia rhythms with Andean huayno and electric instrumentation.",
+      "sources": [
+        "https://repositorio.cultura.gob.pe/backend/api/core/bitstreams/86eb970f-9964-41ae-bcbf-34c0652f9d37/content",
+        "https://observatorio.cultura.gob.cl/wp-content/uploads/2019/03/Cumbia-peruana-en-di%C3%A1spora.pdf"
+      ]
+    },
+    {
+      "id": "genre:musica-criolla",
+      "type": "genre",
+      "name": "Música criolla",
+      "addedOn": "2026-11-13",
+      "family": "latin",
+      "period": {
+        "start": 1890,
+        "precision": "decade"
+      },
+      "description": "Popular music of Peru’s coastal Lima and Callao communities, including the vals criollo.",
+      "sources": [
+        "https://www.gob.pe/institucion/cultura/noticias/662178-declaran-patrimonio-cultural-de-la-nacion-a-la-musica-y-cancion-criolla-saberes-practicas-y-espacios-de-transmision-en-lima-y-callao",
+        "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/NL20170111.pdf"
       ]
     },
     {
@@ -15194,6 +15621,25 @@
       ]
     },
     {
+      "id": "genre:mahraganat",
+      "type": "genre",
+      "name": "Mahraganat",
+      "addedOn": "2026-11-13",
+      "family": "electronica",
+      "period": {
+        "start": 2006,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Research places the first examples in Cairo around 2006."
+      },
+      "description": "Egyptian electronic wedding and street music that combines local popular song with programmed beats. Its tracks spread through weddings, informal circulation and online sharing.",
+      "sources": [
+        "https://fis.uni-bamberg.de/server/api/core/bitstreams/05aa2b67-b8d4-4928-8700-a668084fc4b1/content",
+        "https://www.kexp.org/read/2014/5/21/siff-2014-face-the-music-preview-electro-chaabi/"
+      ]
+    },
+    {
       "id": "genre:vocal-jazz",
       "type": "genre",
       "name": "Vocal jazz",
@@ -15266,6 +15712,24 @@
         "https://www.arts.gov/honors/jazz/herbie-hancock",
         "https://www.bluenote.com/artist/donald-byrd/",
         "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/head-hunters.pdf"
+      ]
+    },
+    {
+      "id": "genre:ethio-jazz",
+      "type": "genre",
+      "name": "Ethio-jazz",
+      "addedOn": "2026-11-13",
+      "family": "jazz",
+      "period": {
+        "start": 1966,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Astatke’s experiments in the mid-to-late 1960s provide the timeline anchor."
+      },
+      "description": "A jazz style developed by Mulatu Astatke that sets Ethiopian modes alongside jazz arrangements, Latin rhythms and funk.",
+      "sources": [
+        "https://daily.bandcamp.com/features/mulatu-astatke-feature"
       ]
     },
     {
@@ -23271,7 +23735,7 @@
       "id": "genre:taarab",
       "type": "genre",
       "name": "Taarab",
-      "family": "african",
+      "family": "indian-ocean",
       "period": {
         "start": 1880,
         "precision": "circa"
@@ -23302,6 +23766,43 @@
         }
       ],
       "phaseNote": "Late-nineteenth-century formation and 1920s popularization markers. Removed unsupported 1930 “golden age,” 1960 and 2000 generalized phases; taarab remains diverse across the Swahili coast."
+    },
+    {
+      "id": "genre:sega",
+      "type": "genre",
+      "name": "Séga",
+      "addedOn": "2026-11-13",
+      "family": "indian-ocean",
+      "period": {
+        "start": 1750,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Eighteenth-century descriptions document early forms of the tradition in the Mascarene Islands."
+      },
+      "description": "Indian Ocean music and dance with roots in communities enslaved in the Mascarene Islands. In Mauritian séga tipik singers improvise in Creole over a frame drum, rattle and triangle.",
+      "sources": [
+        "https://ich.unesco.org/doc/src/30634-EN.pdf?t=1428911987",
+        "https://ich.unesco.org/en/decisions/9.COM/10.28"
+      ]
+    },
+    {
+      "id": "genre:maloya",
+      "type": "genre",
+      "name": "Maloya",
+      "addedOn": "2026-11-13",
+      "family": "indian-ocean",
+      "period": {
+        "start": 1800,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date places its early development in the slavery era without assigning a precise origin."
+      },
+      "description": "Réunionnais music, song and dance shaped by enslaved people of Malagasy and African origin. A solo singer and chorus traditionally answer one another over percussion.",
+      "sources": [
+        "https://ich.unesco.org/en/Decisions/4.COM/13.40"
+      ]
     },
     {
       "id": "genre:morna",
@@ -23336,6 +23837,44 @@
       "sources": [
         "https://www.scientificsound.asia/news/categories/afro-house/",
         "https://defected.com/news/post/house-of-africa"
+      ]
+    },
+    {
+      "id": "genre:funana",
+      "type": "genre",
+      "name": "Funaná",
+      "addedOn": "2026-11-13",
+      "family": "african",
+      "period": {
+        "start": 1900,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The heritage classification places its likely emergence around the turn of the twentieth century."
+      },
+      "description": "Cabo Verdean dance music whose traditional sound pairs the gaita accordion with a scraped iron bar. Bulimundo popularized an electric band arrangement after independence.",
+      "sources": [
+        "https://ipc.cv/noticias/funana-classificado-como-patrimonio-cultural-imaterial/",
+        "https://eng.caboverdeamusica.online/funana/"
+      ]
+    },
+    {
+      "id": "genre:benga",
+      "type": "genre",
+      "name": "Benga",
+      "addedOn": "2026-11-13",
+      "family": "african",
+      "period": {
+        "start": 1967,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Late-1960s Luo guitar-band recordings and ensembles anchor this placement."
+      },
+      "description": "Fast Kenyan guitar-band dance music that emerged among Luo musicians in the late 1960s and spread to other communities.",
+      "sources": [
+        "https://www.academia.edu/96675830/Continuities_and_innovation_in_Luo_song_style_creating_the_Benga_Beat_in_Kenya_1960_to_1995",
+        "https://www.edocs.maseno.ac.ke/bitstream/handle/123456789/904/GRADUATION%20THESIS.pdf?isAllowed=y&sequence=3"
       ]
     },
     {
@@ -27659,6 +28198,1895 @@
         "https://pitchfork.com/news/roy-ayers-influential-vibraphonist-and-jazz-funk-composer-dies-at-84/",
         "https://www.brightonandhovenews.org/2023/05/22/roy-ayers-plays-last-ever-brighton-show/"
       ]
+    },
+    {
+      "id": "artist:pastora-pavon",
+      "type": "artist",
+      "name": "Pastora Pavón",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://www.andalucia.org/listing/petenera/20628102/",
+        "https://artsandculture.google.com/story/cgUhXrz4GS3ESQ"
+      ],
+      "period": {
+        "start": 1910,
+        "end": 1950,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:camaron-de-la-isla",
+      "type": "artist",
+      "name": "Camarón de la Isla",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://en.andalucia.org/blog/post/the-route-of-camaron-de-la-isla/"
+      ],
+      "period": {
+        "start": 1960,
+        "end": 1992,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:paco-de-lucia",
+      "type": "artist",
+      "name": "Paco de Lucía",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://en.andalucia.org/blog/post/paco-de-lucia-se-asoma-a-las-aguas-del-estrecho-en/"
+      ],
+      "period": {
+        "start": 1973,
+        "end": 2014,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:amalia-rodrigues",
+      "type": "artist",
+      "name": "Amália Rodrigues",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://www.museudofado.pt/pt/fado/personalidade/amalia-rodrigues"
+      ],
+      "period": {
+        "start": 1939,
+        "end": 1999,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:carlos-do-carmo",
+      "type": "artist",
+      "name": "Carlos do Carmo",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://www.museudofado.pt/pt/fado/personalidade/carlos-do-carmo"
+      ],
+      "period": {
+        "start": 1963,
+        "end": 2019,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:mariza",
+      "type": "artist",
+      "name": "Mariza",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://www.museudofado.pt/fado/personalidade/mariza"
+      ],
+      "period": {
+        "start": 2001,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:markos-vamvakaris",
+      "type": "artist",
+      "name": "Markos Vamvakaris",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://online-collection-melmo.culture.gov.gr/index.php/Detail/objects/2081/lang/en_US",
+        "https://collection.melos-project.gr/archive/item/438"
+      ],
+      "period": {
+        "start": 1933,
+        "end": 1972,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:vasilis-tsitsanis",
+      "type": "artist",
+      "name": "Vasilis Tsitsanis",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://online-collection-melmo.culture.gov.gr/index.php/Detail/objects/2081/lang/en_US",
+        "https://olympias.lib.uoi.gr/jspui/bitstream/123456789/31067/1/%CE%9C.%CE%95.%20%CE%9C%CE%A0%CE%91%CE%9D%CE%A4%CE%97%20%CE%94%CE%97%CE%9C%CE%97%CE%A4%CE%A1%CE%91%20%CE%92.%202021.pdf"
+      ],
+      "period": {
+        "start": 1936,
+        "end": 1984,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:stella-haskil",
+      "type": "artist",
+      "name": "Stella Haskil",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://online-collection-melmo.culture.gov.gr/index.php/Detail/objects/2081/lang/en_US",
+        "https://collection.melos-project.gr/archive/item/3596?lang=en"
+      ],
+      "period": {
+        "start": 1948,
+        "end": 1954,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:caterina-valente",
+      "type": "artist",
+      "name": "Caterina Valente",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://www.goethe.de/prj/geg/en/thm/flm/27211817.html"
+      ],
+      "period": {
+        "start": 1955,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:peter-alexander",
+      "type": "artist",
+      "name": "Peter Alexander",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://www.goethe.de/prj/geg/en/thm/flm/27211817.html"
+      ],
+      "period": {
+        "start": 1955,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:freddy-quinn",
+      "type": "artist",
+      "name": "Freddy Quinn",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://www.goethe.de/prj/geg/en/thm/flm/27211817.html"
+      ],
+      "period": {
+        "start": 1961,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:apirana-ngata",
+      "type": "artist",
+      "name": "Āpirana Ngata",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://teara.govt.nz/en/waiata-hou-contemporary-maori-songs/page-3"
+      ],
+      "period": {
+        "start": 1900,
+        "end": 1950,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:te-puea-herangi",
+      "type": "artist",
+      "name": "Te Puea Hērangi",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://teara.govt.nz/en/waiata-hou-contemporary-maori-songs/page-3"
+      ],
+      "period": {
+        "start": 1917,
+        "end": 1952,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:paraire-tomoana",
+      "type": "artist",
+      "name": "Paraire Tomoana",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "sources": [
+        "https://teara.govt.nz/en/waiata-hou-contemporary-maori-songs/page-3"
+      ],
+      "period": {
+        "start": 1916,
+        "end": 1946,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
+      }
+    },
+    {
+      "id": "artist:leonor-marzano",
+      "type": "artist",
+      "name": "Leonor Marzano",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "period": {
+        "start": 1940,
+        "precision": "circa"
+      },
+      "description": "Pianist credited with creating cuarteto’s signature rhythm.",
+      "sources": [
+        "https://www.argentina.gob.ar/cultura/manifestaciones-del-patrimonio-cultural-inmaterial/cordoba/cuarteto-musica-y-danza"
+      ]
+    },
+    {
+      "id": "artist:la-mona-jimenez",
+      "type": "artist",
+      "name": "La Mona Jiménez",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Córdoba singer and a central figure in cuarteto.",
+      "sources": [
+        "https://www.argentina.gob.ar/noticias/rodrigo-bueno-el-idolo-cordobes-que-continua-despertando-pasiones",
+        "https://eldoce.tv/cuarteteando/la-mona-jimenez-debut-cuarteto-berna-audio-inedito-diez-monedas_126214/"
+      ],
+      "period": {
+        "start": 1967,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "artist:rodrigo-bueno",
+      "type": "artist",
+      "name": "Rodrigo Bueno",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Córdoba singer and popular interpreter of cuarteto.",
+      "sources": [
+        "https://www.argentina.gob.ar/noticias/rodrigo-bueno-el-idolo-cordobes-que-continua-despertando-pasiones"
+      ],
+      "period": {
+        "start": 1987,
+        "precision": "year",
+        "end": 2000
+      }
+    },
+    {
+      "id": "artist:lord-flea",
+      "type": "artist",
+      "name": "Lord Flea",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Singer heard on early Jamaican mento records.",
+      "sources": [
+        "https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html"
+      ],
+      "period": {
+        "start": 1954,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "artist:count-lasher",
+      "type": "artist",
+      "name": "Count Lasher",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Singer and recording artist of Jamaica’s early mento era.",
+      "sources": [
+        "https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html"
+      ],
+      "period": {
+        "start": 1954,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "artist:lord-fly",
+      "type": "artist",
+      "name": "Lord Fly",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "period": {
+        "start": 1951,
+        "precision": "circa"
+      },
+      "description": "One of the first mento performers to release a record made in Jamaica.",
+      "sources": [
+        "https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html"
+      ]
+    },
+    {
+      "id": "artist:kassav",
+      "type": "artist",
+      "name": "Kassav’",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "period": {
+        "start": 1979,
+        "precision": "year"
+      },
+      "description": "Band formed in Paris that helped create and popularize zouk.",
+      "sources": [
+        "https://daily.redbullmusicacademy.com/2015/12/zouk-feature/"
+      ]
+    },
+    {
+      "id": "artist:jacob-desvarieux",
+      "type": "artist",
+      "name": "Jacob Desvarieux",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Guitarist and producer who helped shape Kassav’s sound.",
+      "sources": [
+        "https://daily.redbullmusicacademy.com/2015/12/zouk-feature/",
+        "https://www.lemonde.fr/culture/article/2024/05/15/jocelyne-beroard-veut-entretenir-la-memoire-de-jacob-desvarieux_6233482_3246.html"
+      ],
+      "period": {
+        "start": 1979,
+        "precision": "year",
+        "end": 2021
+      }
+    },
+    {
+      "id": "artist:jocelyne-beroard",
+      "type": "artist",
+      "name": "Jocelyne Béroard",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Martinican singer and one of Kassav’s lead voices.",
+      "sources": [
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=4731",
+        "https://www.francetelevisions.fr/et-vous/notre-tele/les-programmes-a-ne-pas-rater/lhistoire-du-zouk-dans-un-podcast-52112",
+        "https://www.telerama.fr/musique/jocelyne-beroard-kassav-avec-sa-musique-traditionnelle-modernisee-proposait-quelque-chose-d-inedit-7011696.php"
+      ],
+      "period": {
+        "start": 1980,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "artist:apo-hiking-society",
+      "type": "artist",
+      "name": "APO Hiking Society",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "description": "Filipino group whose member Danny Javier coined the term OPM.",
+      "sources": [
+        "https://billboardphilippines.com/culture/scenes/the-history-and-future-of-filipino-pop-from-folk-love-songs-to-the-p-pop-wave/",
+        "https://www.philstar.com/lifestyle/supreme/2012/08/25/841695/apo-milestones",
+        "https://legacy.senate.gov.ph/press_release/2025/0603_padilla1.asp",
+        "https://www.maestroryancayabyab.com/about"
+      ],
+      "period": {
+        "start": 1969,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "artist:freddie-aguilar",
+      "type": "artist",
+      "name": "Freddie Aguilar",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Filipino folk singer and songwriter whose career was helped by the Metropop festival.",
+      "sources": [
+        "https://billboardphilippines.com/culture/scenes/the-history-and-future-of-filipino-pop-from-folk-love-songs-to-the-p-pop-wave/",
+        "https://www.philstar.com/lifestyle/supreme/2012/08/25/841695/apo-milestones",
+        "https://legacy.senate.gov.ph/press_release/2025/0603_padilla1.asp",
+        "https://www.maestroryancayabyab.com/about"
+      ],
+      "period": {
+        "start": 1970,
+        "precision": "decade",
+        "end": 2025
+      }
+    },
+    {
+      "id": "artist:ryan-cayabyab",
+      "type": "artist",
+      "name": "Ryan Cayabyab",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Filipino composer whose career was nurtured by the Metropop songwriting competition.",
+      "sources": [
+        "https://billboardphilippines.com/culture/scenes/the-history-and-future-of-filipino-pop-from-folk-love-songs-to-the-p-pop-wave/",
+        "https://www.philstar.com/lifestyle/supreme/2012/08/25/841695/apo-milestones",
+        "https://legacy.senate.gov.ph/press_release/2025/0603_padilla1.asp",
+        "https://www.maestroryancayabyab.com/about"
+      ],
+      "period": {
+        "start": 1978,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "artist:francoise-hardy",
+      "type": "artist",
+      "name": "Françoise Hardy",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "French singer and songwriter who rose to prominence in the early yé-yé wave.",
+      "sources": [
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=3951"
+      ],
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "artist:claude-francois",
+      "type": "artist",
+      "name": "Claude François",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Singer who became a figure of French variety through the yé-yé wave.",
+      "sources": [
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=3951"
+      ],
+      "period": {
+        "start": 1962,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "artist:johnny-hallyday",
+      "type": "artist",
+      "name": "Johnny Hallyday",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "French singer who came out of rock and roll and became a star of the yé-yé generation.",
+      "sources": [
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=3951"
+      ],
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "artist:rhoma-irama",
+      "type": "artist",
+      "name": "Rhoma Irama",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Indonesian dangdut singer who founded the Soneta orchestra.",
+      "sources": [
+        "https://www.academia.edu/102773866/DANGDUT_DALAM_CENGKERAMAN_TELEVISI",
+        "https://www.logos-verlag.de/PDFS/aemr.16-8.pdf"
+      ],
+      "period": {
+        "start": 1968,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "artist:elvy-sukaesih",
+      "type": "artist",
+      "name": "Elvy Sukaesih",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Indonesian dangdut singer who recorded early hits with Rhoma Irama.",
+      "sources": [
+        "https://www.academia.edu/102773866/DANGDUT_DALAM_CENGKERAMAN_TELEVISI",
+        "https://www.logos-verlag.de/PDFS/aemr.16-8.pdf"
+      ],
+      "period": {
+        "start": 1968,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "artist:a-rafiq",
+      "type": "artist",
+      "name": "A. Rafiq",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Indonesian dangdut singer who recorded Pengalaman Pertama in 1978.",
+      "sources": [
+        "https://www.academia.edu/102773866/DANGDUT_DALAM_CENGKERAMAN_TELEVISI",
+        "https://www.logos-verlag.de/PDFS/aemr.16-8.pdf"
+      ],
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "event:getz-gilberto-grammy",
+      "type": "event",
+      "name": "Getz/Gilberto wins Album of the Year",
+      "category": "industry",
+      "period": {
+        "start": 1965,
+        "end": 1965,
+        "precision": "year"
+      },
+      "description": "The collaboration between Brazilian musicians and US saxophonist Stan Getz wins the top album Grammy. “The Girl from Ipanema” also wins Record of the Year, marking bossa nova’s crossover into the US pop mainstream.",
+      "sources": [
+        "https://www.grammy.com/awards/7th-annual-grammy-awards/",
+        "https://blogs.loc.gov/now-see-hear/2021/08/from-the-recording-registry-the-girl-from-ipanema-1963/"
+      ],
+      "significance": "notable"
+    },
+    {
+      "id": "event:black-sabbath-debut",
+      "type": "event",
+      "name": "Black Sabbath’s debut reaches the UK Top 10",
+      "category": "media",
+      "period": {
+        "start": 1970,
+        "end": 1970,
+        "precision": "year"
+      },
+      "description": "The Birmingham band’s self-titled debut reaches No. 8 in the UK, bringing a darker, riff-driven sound into the album charts at a formative moment for heavy metal.",
+      "sources": [
+        "https://www.rockhall.com/wp-content/uploads/2024/03/Black_Sabbath_2006.pdf",
+        "https://www.officialcharts.com/albums/black-sabbath-black-sabbath/"
+      ],
+      "significance": "landmark"
+    },
+    {
+      "id": "event:abba-waterloo-eurovision",
+      "type": "event",
+      "name": "ABBA wins Eurovision with “Waterloo”",
+      "category": "performance",
+      "period": {
+        "start": 1974,
+        "end": 1974,
+        "precision": "year"
+      },
+      "description": "Representing Sweden, ABBA wins the Eurovision Song Contest in Brighton. The televised contest brings the group to an international audience and “Waterloo” goes on to top the UK singles chart.",
+      "sources": [
+        "https://www.abbaofficial.com/eurovision_1974.html",
+        "https://www.officialcharts.com/songs/abba-waterloo/"
+      ],
+      "significance": "landmark"
+    },
+    {
+      "id": "event:acdc-back-in-black-uk-number-one",
+      "type": "event",
+      "name": "AC/DC’s Back in Black tops the UK chart",
+      "category": "media",
+      "period": {
+        "start": 1980,
+        "end": 1980,
+        "precision": "year"
+      },
+      "description": "The Australian hard rock band’s first album with singer Brian Johnson reaches No. 1 on the UK albums chart in August.",
+      "sources": [
+        "https://www.officialcharts.com/albums/acdc-back-in-black/",
+        "https://www.officialcharts.com/charts/albums-chart/19800810/7502/"
+      ],
+      "significance": "notable"
+    },
+    {
+      "id": "event:nusrat-womad-1985",
+      "type": "event",
+      "name": "Nusrat Fateh Ali Khan performs at WOMAD",
+      "category": "performance",
+      "period": {
+        "start": 1985,
+        "end": 1985,
+        "precision": "year"
+      },
+      "description": "Nusrat Fateh Ali Khan and his ensemble perform at WOMAD in England, bringing Pakistani qawwali to a new festival audience. A recording of the performance is later issued by Real World Records.",
+      "sources": [
+        "https://realworldrecords.com/releases/live-at-womad-1985/"
+      ],
+      "significance": "landmark"
+    },
+    {
+      "id": "event:nirvana-nevermind-billboard-number-one",
+      "type": "event",
+      "name": "Nirvana’s Nevermind tops the US album chart",
+      "category": "media",
+      "period": {
+        "start": 1992,
+        "end": 1992,
+        "precision": "year"
+      },
+      "description": "In January, Nevermind reaches No. 1 on the Billboard 200. The chart breakthrough takes Seattle grunge into the US pop mainstream.",
+      "sources": [
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Nevermind.pdf",
+        "https://www.grammy.com/video/nirvanas-nevermind-record/"
+      ],
+      "significance": "landmark"
+    },
+    {
+      "id": "event:battle-of-britpop",
+      "type": "event",
+      "name": "Blur and Oasis face off on the UK chart",
+      "category": "media",
+      "period": {
+        "start": 1995,
+        "end": 1995,
+        "precision": "year"
+      },
+      "description": "Blur’s “Country House” beats Oasis’s “Roll With It” to No. 1 in August, turning a singles chart contest into a national media story about Britpop.",
+      "sources": [
+        "https://www.officialcharts.com/chart-news/blur-vs-oasis-and-seven-other-epic-official-chart-battles__10449/",
+        "https://www.officialcharts.com/charts/singles-chart/19950827/7501/"
+      ],
+      "significance": "notable"
+    },
+    {
+      "id": "event:kylie-cant-get-you-out-uk-number-one",
+      "type": "event",
+      "name": "Kylie Minogue takes “Can’t Get You Out of My Head” to No. 1",
+      "category": "media",
+      "period": {
+        "start": 2001,
+        "end": 2001,
+        "precision": "year"
+      },
+      "description": "The Australian singer reaches the top of the UK singles chart with a dance-pop single that spends four weeks at No. 1.",
+      "sources": [
+        "https://www.officialcharts.com/songs/kylie-minogue-cant-get-you-out-of-my-head/",
+        "https://www.officialcharts.com/chart-news/chart-flashback-2001-kylies-cant-get-you-out-of-my-head-put-the-uk-under-its-spell-20-years-ago-this-week-__16446/"
+      ],
+      "significance": "notable"
+    },
+    {
+      "id": "event:samba-de-roda-unesco-inscription",
+      "type": "event",
+      "name": "UNESCO inscribes Bahia’s samba de roda",
+      "category": "society",
+      "period": {
+        "start": 2008,
+        "end": 2008,
+        "precision": "year"
+      },
+      "description": "UNESCO adds the music and dance tradition of Brazil’s Recôncavo of Bahia to its Representative List, following its proclamation as a Masterpiece in 2005. The inscription covers this regional tradition within the wider samba family.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/samba-de-roda-of-the-recncavo-of-bahia-00101",
+        "https://bcr.iphan.gov.br/acoes-de-salvaguarda/reconhecimento-do-samba-de-roda-do-estado-da-bahia-pela-unesco-como-obra-prima-do-patrimonio-oral-e-imaterial-da-humanidade-e-posterior-incorporacao-a-lista-representativa/"
+      ],
+      "significance": "notable"
+    },
+    {
+      "id": "event:tango-unesco-inscription",
+      "type": "event",
+      "name": "Argentina and Uruguay secure UNESCO recognition for tango",
+      "category": "society",
+      "period": {
+        "start": 2009,
+        "end": 2009,
+        "precision": "year"
+      },
+      "description": "UNESCO inscribes the tango tradition jointly nominated by Argentina and Uruguay. The decision recognizes a shared musical and dance culture rooted in Buenos Aires and Montevideo.",
+      "sources": [
+        "https://ich.unesco.org/en/Decisions/4.COM/13.01",
+        "https://www.argentina.gob.ar/cultura/tango-es-patrimonio"
+      ],
+      "significance": "notable"
+    },
+    {
+      "id": "event:straight-outta-compton-recording-registry",
+      "type": "event",
+      "name": "Straight Outta Compton enters the US Recording Registry",
+      "category": "industry",
+      "period": {
+        "start": 2016,
+        "end": 2016,
+        "precision": "year"
+      },
+      "description": "The Library of Congress selects N.W.A.’s 1988 debut album for the National Recording Registry. Its selection recognizes a recording that helped popularize gangsta rap and brought West Coast hip-hop wider attention.",
+      "sources": [
+        "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/registry-by-induction-years/2016/",
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/StraightOuttaCompton.pdf"
+      ],
+      "significance": "notable"
+    },
+    {
+      "id": "event:merengue-unesco-inscription",
+      "type": "event",
+      "name": "UNESCO inscribes Dominican merengue",
+      "category": "society",
+      "period": {
+        "start": 2016,
+        "end": 2016,
+        "precision": "year"
+      },
+      "description": "UNESCO adds the music and dance of merengue in the Dominican Republic to its Representative List, documenting a tradition passed on at gatherings, celebrations and festivals.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/music-and-dance-of-the-merengue-in-the-dominican-republic-01162"
+      ],
+      "significance": "notable"
+    },
+    {
+      "id": "event:reggae-unesco-inscription",
+      "type": "event",
+      "name": "UNESCO inscribes Jamaican reggae",
+      "category": "society",
+      "period": {
+        "start": 2018,
+        "end": 2018,
+        "precision": "year"
+      },
+      "description": "UNESCO adds the reggae music of Jamaica to its Representative List. Its decision highlights reggae’s role in social commentary and its reach beyond Jamaica.",
+      "sources": [
+        "https://ich.unesco.org/en/Decisions/13.COM/10.b.18",
+        "https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398"
+      ],
+      "significance": "landmark"
+    },
+    {
+      "id": "event:bachata-unesco-inscription",
+      "type": "event",
+      "name": "UNESCO inscribes Dominican bachata",
+      "category": "society",
+      "period": {
+        "start": 2019,
+        "end": 2019,
+        "precision": "year"
+      },
+      "description": "UNESCO recognizes the music and dance of Dominican bachata, a tradition that combines influences from bolero and Afro-Caribbean styles and is practised at social gatherings.",
+      "sources": [
+        "https://ich.unesco.org/en/Decisions/14.COM/10.b.10",
+        "https://old.cultura.gob.do/index.php/noticias/item/1326-autoridades-y-bachateros-celebran-declaracion-de-la-bachata-como-patrimonio-cultural-inmaterial"
+      ],
+      "significance": "notable"
+    },
+    {
+      "id": "event:morna-unesco-inscription",
+      "type": "event",
+      "name": "UNESCO inscribes Cabo Verde’s morna",
+      "category": "society",
+      "period": {
+        "start": 2019,
+        "end": 2019,
+        "precision": "year"
+      },
+      "description": "UNESCO adds morna to its Representative List, recognizing a Cape Verdean practice that brings together music, poetry and dance.",
+      "sources": [
+        "https://ich.unesco.org/en/Decisions/14.COM/10.b.8",
+        "https://www.governo.cv/comissao-da-unesco-comunica-a-inscricao-da-morna-na-lista-representativa-de-patrimonio-cultural-imaterial-da-humanidade/"
+      ],
+      "significance": "notable"
+    },
+    {
+      "id": "event:bts-dynamite-hot-100-number-one",
+      "type": "event",
+      "name": "BTS takes “Dynamite” to No. 1 in the US",
+      "category": "media",
+      "period": {
+        "start": 2020,
+        "end": 2020,
+        "precision": "year"
+      },
+      "description": "South Korean group BTS debuts at No. 1 on the Billboard Hot 100 with its English-language single “Dynamite”, a US chart milestone for K-pop.",
+      "sources": [
+        "https://www.billboard.com/charts/hot-100/2020-09-05/"
+      ],
+      "significance": "landmark"
+    },
+    {
+      "id": "event:burna-boy-global-album-grammy",
+      "type": "event",
+      "name": "Burna Boy wins the Global Music Album Grammy",
+      "category": "industry",
+      "period": {
+        "start": 2021,
+        "end": 2021,
+        "precision": "year"
+      },
+      "description": "Nigerian artist Burna Boy wins Best Global Music Album with Twice as Tall. The award gives his music, which draws on Afrobeats and other styles, a prominent international platform.",
+      "sources": [
+        "https://www.grammy.com/news/burna-boy-wins-best-global-music-album-twice-tall-2021-grammy-awards-show/",
+        "https://www.grammy.com/news/2021-grammys-complete-winners-nominees-list/"
+      ],
+      "significance": "notable"
+    },
+    {
+      "id": "event:gamelan-unesco-inscription",
+      "type": "event",
+      "name": "UNESCO inscribes Indonesian gamelan",
+      "category": "society",
+      "period": {
+        "start": 2021,
+        "end": 2021,
+        "precision": "year"
+      },
+      "description": "Indonesia’s gamelan tradition enters UNESCO’s Representative List, including the music, instruments and practices passed on through communities and schools.",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gamelan-01607"
+      ],
+      "significance": "notable"
+    },
+    {
+      "id": "event:gasolina-recording-registry",
+      "type": "event",
+      "name": "“Gasolina” enters the US Recording Registry",
+      "category": "industry",
+      "period": {
+        "start": 2023,
+        "end": 2023,
+        "precision": "year"
+      },
+      "description": "The Library of Congress selects Daddy Yankee’s 2004 recording for preservation. The Puerto Rican single helped carry reggaeton to a much wider international audience.",
+      "sources": [
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Gasolina_Rivera-Rideau.pdf",
+        "https://newsroom.loc.gov/news/national-recording-registry-inducts-music-from-madonna--mariah-carey--queen-latifah--daddy-yankee/s/5a91b115-3825-4a5f-a702-35940b4de958"
+      ],
+      "significance": "notable"
+    },
+    {
+      "id": "event:tyla-first-african-performance-grammy",
+      "type": "event",
+      "name": "Tyla wins the first Best African Music Performance Grammy",
+      "category": "industry",
+      "period": {
+        "start": 2024,
+        "end": 2024,
+        "precision": "year"
+      },
+      "description": "South African singer Tyla wins the inaugural award with “Water”, a pop crossover that draws on amapiano. The new category gives African popular music a dedicated performance award.",
+      "sources": [
+        "https://www.grammy.com/songs/water/",
+        "https://www.grammy.com/news/tyla-winner-best-african-music-performance-water-2024-grammys-meaning/"
+      ],
+      "significance": "landmark"
+    },
+    {
+      "id": "artist:tonico-e-tinoco",
+      "type": "artist",
+      "name": "Tonico & Tinoco",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "period": {
+        "start": 1930,
+        "precision": "year",
+        "end": 1994
+      },
+      "description": "Pioneering duo rooted in rural caipira music.",
+      "sources": [
+        "https://www.saomanuel.sp.gov.br/portal/noticias/0/3/296/tonico-e-tinoco-estao-entre-os-artistas-que-mais-venderam-discos-na-historia"
+      ]
+    },
+    {
+      "id": "artist:chitaozinho-e-xororo",
+      "type": "artist",
+      "name": "Chitãozinho & Xororó",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "period": {
+        "start": 1970,
+        "precision": "circa"
+      },
+      "description": "Duo that helped bring sertanejo to a mass audience.",
+      "sources": [
+        "https://repositorio-dspace.agricultura.gov.br/bitstream/1/397/4/minist%C3%A9rio%20da%20Agricultura%20150%20anos.pdf",
+        "https://www.saomanuel.sp.gov.br/portal/noticias/0/3/296/tonico-e-tinoco-estao-entre-os-artistas-que-mais-venderam-discos-na-historia",
+        "https://hemeroteca-pdf.bn.gov.br/325538/per325538_1986_01599.pdf"
+      ]
+    },
+    {
+      "id": "artist:joao-pacifico",
+      "type": "artist",
+      "name": "João Pacífico",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "period": {
+        "start": 1930,
+        "precision": "decade"
+      },
+      "description": "Songwriter whose work became part of the caipira repertoire.",
+      "sources": [
+        "https://www.al.sp.gov.br/noticia/?id=295600",
+        "https://repositorio-dspace.agricultura.gov.br/bitstream/1/397/4/minist%C3%A9rio%20da%20Agricultura%20150%20anos.pdf"
+      ]
+    },
+    {
+      "id": "artist:banda-el-recodo",
+      "type": "artist",
+      "name": "Banda El Recodo",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "period": {
+        "start": 1954,
+        "precision": "circa"
+      },
+      "description": "Sinaloan banda led in its early recording years by clarinetist Cruz Lizárraga.",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07048.pdf"
+      ]
+    },
+    {
+      "id": "artist:banda-la-costena",
+      "type": "artist",
+      "name": "Banda La Costeña",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "period": {
+        "start": 1950,
+        "precision": "decade"
+      },
+      "description": "Sinaloan banda associated with arranger Ramón López Alvarado.",
+      "sources": [
+        "https://sic.cultura.gob.mx/ficha.php?table=frpintangible&table_id=422",
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07048.pdf"
+      ]
+    },
+    {
+      "id": "artist:banda-los-guamuchilenos",
+      "type": "artist",
+      "name": "Banda Los Guamuchileños",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "period": {
+        "start": 1940,
+        "precision": "decade"
+      },
+      "description": "Early Sinaloan banda that recorded in Mexico City.",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07048.pdf"
+      ]
+    },
+    {
+      "id": "artist:los-alegres-de-teran",
+      "type": "artist",
+      "name": "Los Alegres de Terán",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "period": {
+        "start": 1947,
+        "precision": "circa"
+      },
+      "description": "Pioneering norteño duo from Nuevo León.",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH09048.pdf"
+      ]
+    },
+    {
+      "id": "artist:los-relampagos-del-norte",
+      "type": "artist",
+      "name": "Los Relámpagos del Norte",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      },
+      "description": "Norteño group known for accordion and bajo sexto.",
+      "sources": [
+        "https://www.scielo.org.mx/scielo.php?pid=S0188-62662018000200083&script=sci_arttext",
+        "https://www.gob.mx/cultura/prensa/analizan-a-la-musica-nortena-como-simbolo-de-identidad-en-la-franja-fronteriza-noreste-de-mexico-y-el-sur-de-texas"
+      ]
+    },
+    {
+      "id": "artist:los-tigres-del-norte",
+      "type": "artist",
+      "name": "Los Tigres del Norte",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      },
+      "description": "Norteño band whose recordings brought the style to international audiences.",
+      "sources": [
+        "https://www.scielo.org.mx/scielo.php?pid=S0188-62662018000200083&script=sci_arttext"
+      ]
+    },
+    {
+      "id": "artist:natanael-cano",
+      "type": "artist",
+      "name": "Natanael Cano",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "period": {
+        "start": 2019,
+        "precision": "circa"
+      },
+      "description": "Mexican singer and pioneer of corridos tumbados.",
+      "sources": [
+        "https://www.wmg.com/news/warner-chappell-music-signs-publishing-deal-corridos-tumbados-pioneer-and-hitmaker-natanael"
+      ]
+    },
+    {
+      "id": "artist:junior-h",
+      "type": "artist",
+      "name": "Junior H",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "period": {
+        "start": 2019,
+        "precision": "circa"
+      },
+      "description": "Singer who helped shape corridos tumbados alongside Natanael Cano.",
+      "sources": [
+        "https://music.apple.com/us/album/corridos-tumbados/1485388187",
+        "https://music.apple.com/us/multi-room/6450966392?l=es"
+      ]
+    },
+    {
+      "id": "artist:peso-pluma",
+      "type": "artist",
+      "name": "Peso Pluma",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "period": {
+        "start": 2020,
+        "precision": "year"
+      },
+      "description": "Mexican singer who combines corridos with contemporary sounds, including trap.",
+      "sources": [
+        "https://music.apple.com/us/artist/peso-pluma/1500139475",
+        "https://www.latimes.com/entertainment-arts/music/story/2023-05-22/peso-pluma-regional-mexican-ella-baila-sola"
+      ]
+    },
+    {
+      "id": "artist:rafael-escalona",
+      "type": "artist",
+      "name": "Rafael Escalona",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "period": {
+        "start": 1943,
+        "precision": "year"
+      },
+      "description": "Composer whose vallenato songs chronicled Caribbean Colombia.",
+      "sources": [
+        "https://www.fundacionescalona.org/history"
+      ]
+    },
+    {
+      "id": "artist:alejo-duran",
+      "type": "artist",
+      "name": "Alejo Durán",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "period": {
+        "start": 1950,
+        "precision": "circa"
+      },
+      "description": "Vallenato accordionist and early recording artist.",
+      "sources": [
+        "https://biblioarchivo.bogota.gov.co/opac-tmpl/IMG_CINEP1/DJ02-1985-1S-4.pdf"
+      ]
+    },
+    {
+      "id": "artist:diomedes-diaz",
+      "type": "artist",
+      "name": "Diomedes Díaz",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "period": {
+        "start": 1976,
+        "precision": "circa",
+        "end": 2013
+      },
+      "description": "Singer and songwriter who brought vallenato to an international audience.",
+      "sources": [
+        "https://enciclopedia.banrepcultural.org/index.php?title=Diomedes_D%C3%ADaz"
+      ]
+    },
+    {
+      "id": "artist:chacalon-y-la-nueva-crema",
+      "type": "artist",
+      "name": "Chacalón y la Nueva Crema",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "period": {
+        "start": 1976,
+        "precision": "circa",
+        "end": 1994
+      },
+      "description": "Chicha group that helped define a distinct style in Lima.",
+      "sources": [
+        "https://repositorio.cultura.gob.pe/backend/api/core/bitstreams/86eb970f-9964-41ae-bcbf-34c0652f9d37/content",
+        "https://observatorio.cultura.gob.cl/wp-content/uploads/2019/03/Cumbia-peruana-en-di%C3%A1spora.pdf"
+      ]
+    },
+    {
+      "id": "artist:los-shapis",
+      "type": "artist",
+      "name": "Los Shapis",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "period": {
+        "start": 1981,
+        "precision": "year"
+      },
+      "description": "Peruvian chicha band formed in Chupaca.",
+      "sources": [
+        "https://lum.cultura.pe/cdi/fotografia/musica-los-shapis-musica-chicha"
+      ]
+    },
+    {
+      "id": "artist:pintura-roja",
+      "type": "artist",
+      "name": "Pintura Roja",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "period": {
+        "start": 1980,
+        "precision": "decade"
+      },
+      "description": "Peruvian group whose use of a woman’s lead voice broadened the sound of chicha.",
+      "sources": [
+        "https://repositorio.cultura.gob.pe/backend/api/core/bitstreams/86eb970f-9964-41ae-bcbf-34c0652f9d37/content"
+      ]
+    },
+    {
+      "id": "artist:chabuca-granda",
+      "type": "artist",
+      "name": "Chabuca Granda",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "period": {
+        "start": 1937,
+        "precision": "year",
+        "end": 1983
+      },
+      "description": "Peruvian singer and composer of “La flor de la canela.”",
+      "sources": [
+        "https://www.bnp.gob.pe/bnp-recuerda-a-chabuca-granda-luchas-reyes-y-felipe-pinglo/",
+        "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/NL20170111.pdf"
+      ]
+    },
+    {
+      "id": "artist:felipe-pinglo",
+      "type": "artist",
+      "name": "Felipe Pinglo Alva",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "period": {
+        "start": 1917,
+        "precision": "year",
+        "end": 1936
+      },
+      "description": "Peruvian composer of the vals criollo “El Plebeyo.”",
+      "sources": [
+        "https://www.bnp.gob.pe/bnp-recuerda-a-chabuca-granda-luchas-reyes-y-felipe-pinglo/",
+        "https://transparencia.cultura.gob.pe/sites/default/files/transparencia/2016/08/resoluciones-del-viceministerio-de-patrimonio-cultural-e-industrias-culturales/rvm108-declararpatrimonioculturaldelanacionalaobramusicaldefelipepingloalva.pdf",
+        "https://cdn.www.gob.pe/uploads/document/file/5339026/4784242-quipu-virtual-n-178-felipe-pinglo-y-la-cancion-criolla.pdf?v=1698385136"
+      ]
+    },
+    {
+      "id": "artist:lucha-reyes-peru",
+      "type": "artist",
+      "name": "Lucha Reyes",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "precision": "decade",
+        "end": 1973
+      },
+      "description": "Peruvian singer recognized for her performances of música criolla.",
+      "sources": [
+        "https://www.bnp.gob.pe/bnp-recuerda-a-chabuca-granda-luchas-reyes-y-felipe-pinglo/",
+        "https://www.bnp.gob.pe/la-voz-de-lucha-reyes-resono-en-la-gran-biblioteca-publica-de-lima-en-homenaje-por-el-90-aniversario-de-su-nacimiento/"
+      ]
+    },
+    {
+      "id": "artist:talal-maddah",
+      "type": "artist",
+      "name": "Talal Maddah",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Saudi singer who co-founded the record company Riyadhphone.",
+      "sources": [
+        "https://saudipedia.com/en/timeline-of-saudi-singing",
+        "https://www.euronews.com/2023/06/10/rhythms-of-the-gulf-the-singing-star-bringing-khaliji-music-to-the-world"
+      ],
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "artist:mohammed-abdu",
+      "type": "artist",
+      "name": "Mohammed Abdu",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Saudi singer who rose to prominence in the 1970s.",
+      "sources": [
+        "https://saudipedia.com/en/timeline-of-saudi-singing",
+        "https://www.euronews.com/2023/06/10/rhythms-of-the-gulf-the-singing-star-bringing-khaliji-music-to-the-world"
+      ],
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "artist:fahad-al-kubaisi",
+      "type": "artist",
+      "name": "Fahad Al Kubaisi",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Qatari singer known for Khaliji music and for performing on a 2022 World Cup song.",
+      "sources": [
+        "https://www.euronews.com/2023/06/10/rhythms-of-the-gulf-the-singing-star-bringing-khaliji-music-to-the-world",
+        "https://thepeninsulaqatar.com/article/01/04/2015/qatari-singer-ploughs-on-for-the-love-of-music"
+      ],
+      "period": {
+        "start": 2005,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "artist:lata-mangeshkar",
+      "type": "artist",
+      "name": "Lata Mangeshkar",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Indian playback singer whose recordings became widely known among British Asian audiences.",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://www.southasianist.ed.ac.uk/southasianist/article/download/167/992/2102"
+      ],
+      "period": {
+        "start": 1940,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "artist:asha-bhosle",
+      "type": "artist",
+      "name": "Asha Bhosle",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Indian film playback singer whose work reached audiences in Britain through films and recordings.",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://www.southasianist.ed.ac.uk/southasianist/article/download/167/992/2102"
+      ],
+      "period": {
+        "start": 1940,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "artist:mohammed-rafi",
+      "type": "artist",
+      "name": "Mohammed Rafi",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Indian playback singer whose film songs became familiar to British Asian listeners.",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://www.southasianist.ed.ac.uk/southasianist/article/download/167/992/2102"
+      ],
+      "period": {
+        "start": 1944,
+        "precision": "year",
+        "end": 1980
+      }
+    },
+    {
+      "id": "artist:alaap",
+      "type": "artist",
+      "name": "Alaap",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "description": "Pioneering group in the British bhangra scene.",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://catalogue.royalalberthall.com/Record.aspx?id=DS/UK/14261&src=CalmView.Persons",
+        "https://kedarecords.com/artist/heera/",
+        "https://sadaa.co.uk/studio/files/Kaljit-Bhamra_biog.pdf"
+      ],
+      "period": {
+        "start": 1977,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "artist:heera",
+      "type": "artist",
+      "name": "Heera",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "description": "Bhangra group from the first wave of British performers.",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://catalogue.royalalberthall.com/Record.aspx?id=DS/UK/14261&src=CalmView.Persons",
+        "https://kedarecords.com/artist/heera/",
+        "https://sadaa.co.uk/studio/files/Kaljit-Bhamra_biog.pdf"
+      ],
+      "period": {
+        "start": 1979,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "artist:kuljit-bhamra",
+      "type": "artist",
+      "name": "Kuljit Bhamra",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Producer who helped shape the sound of British bhangra.",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://catalogue.royalalberthall.com/Record.aspx?id=DS/UK/14261&src=CalmView.Persons",
+        "https://kedarecords.com/artist/heera/",
+        "https://sadaa.co.uk/studio/files/Kaljit-Bhamra_biog.pdf"
+      ],
+      "period": {
+        "start": 1980,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "artist:sam-hui",
+      "type": "artist",
+      "name": "Sam Hui",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Hong Kong singer whose album The Private Eyes earned a platinum disc in 1978.",
+      "sources": [
+        "https://www.info.gov.hk/gia/general/202107/27/P2021072700270p.htm",
+        "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/English/Sam-Hui_e.pdf",
+        "https://www.info.gov.hk/gia/general/202303/28/P2023032800258.htm"
+      ],
+      "period": {
+        "start": 1966,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "artist:anita-mui",
+      "type": "artist",
+      "name": "Anita Mui",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Hong Kong singer who rose to prominence through a televised singing competition.",
+      "sources": [
+        "https://artsandculture.google.com/story/anita-mui-ever-changing-singing-diva-hong-kong-heritage-museum/2wWBO4AGwW53MA?hl=en"
+      ],
+      "period": {
+        "start": 1982,
+        "precision": "circa",
+        "end": 2003
+      }
+    },
+    {
+      "id": "artist:leslie-cheung",
+      "type": "artist",
+      "name": "Leslie Cheung",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Hong Kong pop singer whose stage costumes are held by the Hong Kong Heritage Museum.",
+      "sources": [
+        "https://www.info.gov.hk/gia/general/202107/27/P2021072700270p.htm",
+        "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/English/Sam-Hui_e.pdf",
+        "https://www.info.gov.hk/gia/general/202303/28/P2023032800258.htm"
+      ],
+      "period": {
+        "start": 1977,
+        "precision": "year",
+        "end": 2003
+      }
+    },
+    {
+      "id": "artist:yi-nan-yeong",
+      "type": "artist",
+      "name": "Yi Nan-yeong",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Korean singer whose 1935 recording Tears of Mokpo became an enduring trot song.",
+      "sources": [
+        "https://jmic.online/issues/v5n1/10/"
+      ],
+      "period": {
+        "start": 1930,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "artist:nam-jin",
+      "type": "artist",
+      "name": "Nam Jin",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Korean singer who became a major trot star in the 1960s and 1970s.",
+      "sources": [
+        "https://www.mcst.go.kr/english/policy/kocis/newsView.jsp?pSeq=33",
+        "https://jmic.online/issues/v5n1/10/",
+        "https://www.koreatimes.co.kr/entertainment/music/20220220/veteran-trot-singer-na-hoon-a-to-release-new-album"
+      ],
+      "period": {
+        "start": 1960,
+        "precision": "decade"
+      }
+    },
+    {
+      "id": "artist:na-hoon-a",
+      "type": "artist",
+      "name": "Na Hoon-a",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Korean trot singer whose long rivalry with Nam Jin marked the genre’s popular peak.",
+      "sources": [
+        "https://www.mcst.go.kr/english/policy/kocis/newsView.jsp?pSeq=33",
+        "https://jmic.online/issues/v5n1/10/",
+        "https://www.koreatimes.co.kr/entertainment/music/20220220/veteran-trot-singer-na-hoon-a-to-release-new-album"
+      ],
+      "period": {
+        "start": 1968,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "artist:code-di-dona",
+      "type": "artist",
+      "name": "Codé di Dona",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Traditional funaná musician whose compositions entered Bulimundo’s repertoire.",
+      "sources": [
+        "https://eng.caboverdeamusica.online/funana/",
+        "https://www.caboverdeamusica.online/wp-content/uploads/2024/04/RBEC_N5_A7-Funana.pdf",
+        "https://www.caboverdeamusica.online/funana/"
+      ],
+      "period": {
+        "start": 1995,
+        "end": 2010
+      }
+    },
+    {
+      "id": "artist:bulimundo",
+      "type": "artist",
+      "name": "Bulimundo",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "description": "Cabo Verdean band that popularized electric arrangements of funaná.",
+      "sources": [
+        "https://eng.caboverdeamusica.online/funana/"
+      ],
+      "period": {
+        "start": 1978,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:ferro-gaita",
+      "type": "artist",
+      "name": "Ferro Gaita",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "description": "Funaná group that brought the gaita accordion back to the foreground alongside bass, guitar and drums.",
+      "sources": [
+        "https://eng.caboverdeamusica.online/funana/",
+        "https://www.caboverdeamusica.online/wp-content/uploads/2024/04/RBEC_N5_A7-Funana.pdf"
+      ],
+      "period": {
+        "start": 1996,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:mulatu-astatke",
+      "type": "artist",
+      "name": "Mulatu Astatke",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Vibraphonist and composer who developed Ethio-jazz and released Mulatu of Ethiopia in 1972.",
+      "sources": [
+        "https://daily.bandcamp.com/features/mulatu-astatke-feature"
+      ],
+      "period": {
+        "start": 1966,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:hailu-mergia",
+      "type": "artist",
+      "name": "Hailu Mergia",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Ethiopian keyboardist who recorded the instrumental Ethio-jazz album Tche Belew with the Walias Band.",
+      "sources": [
+        "https://www.factmag.com/2016/06/12/hailu-mergia-interview-ethiopia-awesome-tapes-from-africa/",
+        "https://hailumergia.bandcamp.com/album/tezeta"
+      ],
+      "period": {
+        "start": 1975,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:dahlak-band",
+      "type": "artist",
+      "name": "Dahlak Band",
+      "addedOn": "2026-11-13",
+      "kind": "group",
+      "description": "Addis Ababa group that recorded Wede Harer Guzo with Hailu Mergia in 1978.",
+      "sources": [
+        "https://www.factmag.com/2016/06/12/hailu-mergia-interview-ethiopia-awesome-tapes-from-africa/",
+        "https://www.secretlydistribution.com/resources/atfa021.pdf"
+      ],
+      "period": {
+        "start": 1978,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:daniel-owino-misiani",
+      "type": "artist",
+      "name": "Daniel Owino Misiani",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Benga musician who formed Shirati Jazz in 1967.",
+      "sources": [
+        "https://www.edocs.maseno.ac.ke/bitstream/handle/123456789/904/GRADUATION%20THESIS.pdf?isAllowed=y&sequence=3"
+      ],
+      "period": {
+        "start": 1967,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:george-ramogi",
+      "type": "artist",
+      "name": "George Ramogi",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Early Luo benga musician who led Continental Kilo Dumbe Dumbe Jazz.",
+      "sources": [
+        "https://www.edocs.maseno.ac.ke/bitstream/handle/123456789/904/GRADUATION%20THESIS.pdf?isAllowed=y&sequence=3"
+      ],
+      "period": {
+        "start": 1970,
+        "end": null,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "His band’s documented activity in the 1970s anchors the period."
+      }
+    },
+    {
+      "id": "artist:ochieng-nelly-mengo",
+      "type": "artist",
+      "name": "Ochieng Nelly Mengo",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Benga musician who fronted Victoria Jazz alongside Collela Mazee.",
+      "sources": [
+        "https://www.edocs.maseno.ac.ke/bitstream/handle/123456789/904/GRADUATION%20THESIS.pdf?isAllowed=y&sequence=3"
+      ],
+      "period": {
+        "start": 1970,
+        "end": null,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "His band’s documented activity in the 1970s anchors the period."
+      }
+    },
+    {
+      "id": "artist:ti-frere",
+      "type": "artist",
+      "name": "Ti Frère",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Mauritian singer and prominent performer of traditional séga.",
+      "sources": [
+        "https://journals.openedition.org/remi/pdf/13639"
+      ],
+      "period": {
+        "start": 1949,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:serge-lebrasse",
+      "type": "artist",
+      "name": "Serge Lebrasse",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Mauritian traditional séga singer recognized by the state for his practice.",
+      "sources": [
+        "https://ich.unesco.org/doc/src/26081-EN.pdf?v=1393439355",
+        "https://ich.unesco.org/doc/src/30634-EN.pdf?t=1428911987"
+      ],
+      "period": {
+        "start": 1958,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:fanfan-sega",
+      "type": "artist",
+      "name": "Fanfan",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Mauritian performer of traditional séga tipik.",
+      "sources": [
+        "https://ich.unesco.org/doc/src/26081-EN.pdf?v=1393439355",
+        "https://ich.unesco.org/doc/src/30634-EN.pdf?t=1428911987"
+      ],
+      "period": {
+        "start": 1960,
+        "end": null,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "The heritage inventory places his prominence in the 1960s and 1970s."
+      }
+    },
+    {
+      "id": "artist:danyel-waro",
+      "type": "artist",
+      "name": "Danyèl Waro",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Réunionnais performer known for maloya.",
+      "sources": [
+        "https://piros.re/artistes/granmoun-lele/",
+        "https://www.reunionnaisdumonde.com/IMG/pdf/MALOYA.pdf"
+      ],
+      "period": {
+        "start": 1994,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:firmin-viry",
+      "type": "artist",
+      "name": "Firmin Viry",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Réunionnais performer and a leading figure in maloya.",
+      "sources": [
+        "https://piros.re/artistes/granmoun-lele/",
+        "https://www.reunionnaisdumonde.com/IMG/pdf/MALOYA.pdf"
+      ],
+      "period": {
+        "start": 1976,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:granmoun-lele",
+      "type": "artist",
+      "name": "Granmoun Lélé",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Réunionnais singer and accordionist recognized as a founding voice of maloya.",
+      "sources": [
+        "https://piros.re/artistes/granmoun-lele/"
+      ],
+      "period": {
+        "start": 1948,
+        "end": 2004
+      }
+    },
+    {
+      "id": "artist:orhan-gencebay",
+      "type": "artist",
+      "name": "Orhan Gencebay",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Founding Arabesk musician known for using strings and electric bağlama in his arrangements.",
+      "sources": [
+        "https://polen.itu.edu.tr/entities/publication/d34b8562-4583-4542-854c-709ae53fa4c2/full",
+        "https://dergipark.org.tr/tr/download/article-file/3916915"
+      ],
+      "period": {
+        "start": 1968,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:muslum-gurses",
+      "type": "artist",
+      "name": "Müslüm Gürses",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Turkish singer whose performances helped shape the folk-based türkü arabesk style.",
+      "sources": [
+        "https://polen.itu.edu.tr/entities/publication/d34b8562-4583-4542-854c-709ae53fa4c2/full",
+        "https://www.dailysabah.com/portrait/2015/03/20/muslum-gurses-a-voice-of-the-ages"
+      ],
+      "period": {
+        "start": 1967,
+        "end": 2013
+      }
+    },
+    {
+      "id": "artist:ferdi-tayfur",
+      "type": "artist",
+      "name": "Ferdi Tayfur",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Singer who helped bring Arabesk to a mass audience in Turkey.",
+      "sources": [
+        "https://dergipark.org.tr/en/pub/olgusos/article/1711772",
+        "https://dergipark.org.tr/tr/download/article-file/3925766"
+      ],
+      "period": {
+        "start": 1967,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:ahmed-adaweyah",
+      "type": "artist",
+      "name": "Ahmed Adaweyah",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Egyptian singer whose recordings helped define the sound of Cairo shaabi.",
+      "sources": [
+        "https://journals.sagepub.com/doi/full/10.1177/14661381241302530"
+      ],
+      "period": {
+        "start": 1970,
+        "end": null,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "The date reflects his emergence with urban shaabi around 1970."
+      }
+    },
+    {
+      "id": "artist:hakim",
+      "type": "artist",
+      "name": "Hakim",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Singer who worked with Hamid El Shaeri to modernize shaabi’s instrumentation in the early 1990s.",
+      "sources": [
+        "https://journals.sagepub.com/doi/full/10.1177/14661381241302530"
+      ],
+      "period": {
+        "start": 1990,
+        "end": null,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "The start approximates his emergence in the early 1990s."
+      }
+    },
+    {
+      "id": "artist:shaaban-abdel-rahim",
+      "type": "artist",
+      "name": "Shaaban Abdel Rahim",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Egyptian singer known for his recordings in the shaabi tradition.",
+      "sources": [
+        "https://www.open-access.bcu.ac.uk/14036/1/Khyam%20Allami_PhD%20Thesis%20Published_Final%20Version_Submitted%2012%204%2022_Final%20Award%2018%2010%2022.pdf"
+      ],
+      "period": {
+        "start": 1999,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:oka",
+      "type": "artist",
+      "name": "Oka",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Egyptian performer featured in the documentary Electro Chaabi, which follows the early mahraganat scene.",
+      "sources": [
+        "https://www.kexp.org/read/2014/5/21/siff-2014-face-the-music-preview-electro-chaabi/",
+        "https://www.open-access.bcu.ac.uk/14036/1/Khyam%20Allami_PhD%20Thesis%20Published_Final%20Version_Submitted%2012%204%2022_Final%20Award%2018%2010%2022.pdf"
+      ],
+      "period": {
+        "start": 2011,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:ortega-mahraganat",
+      "type": "artist",
+      "name": "Ortega",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Cairo performer featured in Electro Chaabi for his work in mahraganat.",
+      "sources": [
+        "https://www.kexp.org/read/2014/5/21/siff-2014-face-the-music-preview-electro-chaabi/",
+        "https://www.open-access.bcu.ac.uk/14036/1/Khyam%20Allami_PhD%20Thesis%20Published_Final%20Version_Submitted%2012%204%2022_Final%20Award%2018%2010%2022.pdf"
+      ],
+      "period": {
+        "start": 2011,
+        "end": null
+      }
+    },
+    {
+      "id": "artist:mc-sadat",
+      "type": "artist",
+      "name": "MC Sadat",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Cairo MC whose mahraganat performances were documented in Electro Chaabi.",
+      "sources": [
+        "https://www.kexp.org/read/2014/5/21/siff-2014-face-the-music-preview-electro-chaabi/",
+        "https://www.theguardian.com/music/2013/dec/01/dj-sadat-mahraganat-salam-cairo"
+      ],
+      "period": {
+        "start": 2007,
+        "end": null,
+        "estimated": true,
+        "precision": "circa",
+        "estimateNote": "The interview places his first mahraganat work around 2007."
+      }
+    },
+    {
+      "id": "artist:wadih-el-safi",
+      "type": "artist",
+      "name": "Wadih El Safi",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Lebanese singer whose performances with chorus included songs accompanying dabke.",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/MON71383.pdf",
+        "https://media.al-akhbar.com/PDF_Files/2128/alakhbar20131012.pdf"
+      ],
+      "period": {
+        "start": 1938,
+        "end": 2013
+      }
+    },
+    {
+      "id": "artist:omar-souleyman",
+      "type": "artist",
+      "name": "Omar Souleyman",
+      "addedOn": "2026-11-13",
+      "kind": "person",
+      "description": "Syrian wedding singer known for bringing his regional dabke sound to international stages.",
+      "sources": [
+        "https://www.arabmediasociety.com/wp-content/uploads/2017/12/20101211162841_CaldwellDabke.pdf",
+        "https://escholarship.org/content/qt690867k7/qt690867k7_noSplash_9a6f760c7fb72d81f268ec5063568700.pdf"
+      ],
+      "period": {
+        "start": 1994,
+        "end": null
+      }
     }
   ],
   "edges": [
@@ -54287,6 +56715,1363 @@
       "confidence": "high",
       "sources": [
         "https://www.arts.gov/honors/jazz/herbie-hancock"
+      ]
+    },
+    {
+      "id": "key:pastora-pavon-flamenco",
+      "from": "artist:pastora-pavon",
+      "to": "genre:flamenco",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.andalucia.org/listing/petenera/20628102/"
+      ]
+    },
+    {
+      "id": "key:camaron-de-la-isla-flamenco",
+      "from": "artist:camaron-de-la-isla",
+      "to": "genre:flamenco",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://en.andalucia.org/blog/post/the-route-of-camaron-de-la-isla/"
+      ]
+    },
+    {
+      "id": "key:paco-de-lucia-flamenco",
+      "from": "artist:paco-de-lucia",
+      "to": "genre:flamenco",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://en.andalucia.org/blog/post/paco-de-lucia-se-asoma-a-las-aguas-del-estrecho-en/"
+      ]
+    },
+    {
+      "id": "key:amalia-rodrigues-fado",
+      "from": "artist:amalia-rodrigues",
+      "to": "genre:fado",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.museudofado.pt/pt/fado/personalidade/amalia-rodrigues"
+      ]
+    },
+    {
+      "id": "key:carlos-do-carmo-fado",
+      "from": "artist:carlos-do-carmo",
+      "to": "genre:fado",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.museudofado.pt/pt/fado/personalidade/carlos-do-carmo"
+      ]
+    },
+    {
+      "id": "key:mariza-fado",
+      "from": "artist:mariza",
+      "to": "genre:fado",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.museudofado.pt/fado/personalidade/mariza"
+      ]
+    },
+    {
+      "id": "key:markos-vamvakaris-rebetiko",
+      "from": "artist:markos-vamvakaris",
+      "to": "genre:rebetiko",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://online-collection-melmo.culture.gov.gr/index.php/Detail/objects/2081/lang/en_US"
+      ]
+    },
+    {
+      "id": "key:vasilis-tsitsanis-rebetiko",
+      "from": "artist:vasilis-tsitsanis",
+      "to": "genre:rebetiko",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://online-collection-melmo.culture.gov.gr/index.php/Detail/objects/2081/lang/en_US"
+      ]
+    },
+    {
+      "id": "key:stella-haskil-rebetiko",
+      "from": "artist:stella-haskil",
+      "to": "genre:rebetiko",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://online-collection-melmo.culture.gov.gr/index.php/Detail/objects/2081/lang/en_US"
+      ]
+    },
+    {
+      "id": "key:caterina-valente-schlager",
+      "from": "artist:caterina-valente",
+      "to": "genre:schlager",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.goethe.de/prj/geg/en/thm/flm/27211817.html"
+      ]
+    },
+    {
+      "id": "key:peter-alexander-schlager",
+      "from": "artist:peter-alexander",
+      "to": "genre:schlager",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.goethe.de/prj/geg/en/thm/flm/27211817.html"
+      ]
+    },
+    {
+      "id": "key:freddy-quinn-schlager",
+      "from": "artist:freddy-quinn",
+      "to": "genre:schlager",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.goethe.de/prj/geg/en/thm/flm/27211817.html"
+      ]
+    },
+    {
+      "id": "key:apirana-ngata-waiata-a-ringa",
+      "from": "artist:apirana-ngata",
+      "to": "genre:waiata-a-ringa",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://teara.govt.nz/en/waiata-hou-contemporary-maori-songs/page-3"
+      ]
+    },
+    {
+      "id": "key:te-puea-herangi-waiata-a-ringa",
+      "from": "artist:te-puea-herangi",
+      "to": "genre:waiata-a-ringa",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://teara.govt.nz/en/waiata-hou-contemporary-maori-songs/page-3"
+      ]
+    },
+    {
+      "id": "key:paraire-tomoana-waiata-a-ringa",
+      "from": "artist:paraire-tomoana",
+      "to": "genre:waiata-a-ringa",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://teara.govt.nz/en/waiata-hou-contemporary-maori-songs/page-3"
+      ]
+    },
+    {
+      "id": "key:leonor-marzano-cuarteto",
+      "from": "artist:leonor-marzano",
+      "to": "genre:cuarteto",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.argentina.gob.ar/cultura/manifestaciones-del-patrimonio-cultural-inmaterial/cordoba/cuarteto-musica-y-danza"
+      ]
+    },
+    {
+      "id": "key:la-mona-jimenez-cuarteto",
+      "from": "artist:la-mona-jimenez",
+      "to": "genre:cuarteto",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.argentina.gob.ar/noticias/rodrigo-bueno-el-idolo-cordobes-que-continua-despertando-pasiones"
+      ]
+    },
+    {
+      "id": "key:rodrigo-bueno-cuarteto",
+      "from": "artist:rodrigo-bueno",
+      "to": "genre:cuarteto",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.argentina.gob.ar/noticias/rodrigo-bueno-el-idolo-cordobes-que-continua-despertando-pasiones"
+      ]
+    },
+    {
+      "id": "key:lord-flea-mento",
+      "from": "artist:lord-flea",
+      "to": "genre:mento",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html"
+      ]
+    },
+    {
+      "id": "key:count-lasher-mento",
+      "from": "artist:count-lasher",
+      "to": "genre:mento",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html"
+      ]
+    },
+    {
+      "id": "key:lord-fly-mento",
+      "from": "artist:lord-fly",
+      "to": "genre:mento",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html"
+      ]
+    },
+    {
+      "id": "lineage:mento-ska",
+      "from": "genre:mento",
+      "to": "genre:ska",
+      "type": "influences",
+      "confidence": "medium",
+      "sources": [
+        "https://www.encyclopedia.com/literature-and-arts/performing-arts/music-popular-and-jazz/reggae"
+      ]
+    },
+    {
+      "id": "key:kassav-zouk",
+      "from": "artist:kassav",
+      "to": "genre:zouk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://daily.redbullmusicacademy.com/2015/12/zouk-feature/"
+      ]
+    },
+    {
+      "id": "key:jacob-desvarieux-zouk",
+      "from": "artist:jacob-desvarieux",
+      "to": "genre:zouk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://daily.redbullmusicacademy.com/2015/12/zouk-feature/"
+      ]
+    },
+    {
+      "id": "key:jocelyne-beroard-zouk",
+      "from": "artist:jocelyne-beroard",
+      "to": "genre:zouk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=4731",
+        "https://www.francetelevisions.fr/et-vous/notre-tele/les-programmes-a-ne-pas-rater/lhistoire-du-zouk-dans-un-podcast-52112"
+      ]
+    },
+    {
+      "id": "lineage:funk-zouk",
+      "from": "genre:funk",
+      "to": "genre:zouk",
+      "type": "influences",
+      "confidence": "medium",
+      "sources": [
+        "https://daily.redbullmusicacademy.com/2015/12/zouk-feature/"
+      ]
+    },
+    {
+      "id": "key:apo-hiking-society-opm",
+      "from": "artist:apo-hiking-society",
+      "to": "genre:opm",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://billboardphilippines.com/culture/scenes/the-history-and-future-of-filipino-pop-from-folk-love-songs-to-the-p-pop-wave/",
+        "https://www.philstar.com/lifestyle/supreme/2012/08/25/841695/apo-milestones",
+        "https://legacy.senate.gov.ph/press_release/2025/0603_padilla1.asp",
+        "https://www.maestroryancayabyab.com/about"
+      ]
+    },
+    {
+      "id": "key:freddie-aguilar-opm",
+      "from": "artist:freddie-aguilar",
+      "to": "genre:opm",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://billboardphilippines.com/culture/scenes/the-history-and-future-of-filipino-pop-from-folk-love-songs-to-the-p-pop-wave/",
+        "https://www.philstar.com/lifestyle/supreme/2012/08/25/841695/apo-milestones",
+        "https://legacy.senate.gov.ph/press_release/2025/0603_padilla1.asp",
+        "https://www.maestroryancayabyab.com/about"
+      ]
+    },
+    {
+      "id": "key:ryan-cayabyab-opm",
+      "from": "artist:ryan-cayabyab",
+      "to": "genre:opm",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://billboardphilippines.com/culture/scenes/the-history-and-future-of-filipino-pop-from-folk-love-songs-to-the-p-pop-wave/",
+        "https://www.philstar.com/lifestyle/supreme/2012/08/25/841695/apo-milestones",
+        "https://legacy.senate.gov.ph/press_release/2025/0603_padilla1.asp",
+        "https://www.maestroryancayabyab.com/about"
+      ]
+    },
+    {
+      "id": "key:francoise-hardy-varietes-francaises",
+      "from": "artist:francoise-hardy",
+      "to": "genre:varietes-francaises",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=3951"
+      ]
+    },
+    {
+      "id": "key:claude-francois-varietes-francaises",
+      "from": "artist:claude-francois",
+      "to": "genre:varietes-francaises",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=3951"
+      ]
+    },
+    {
+      "id": "key:johnny-hallyday-varietes-francaises",
+      "from": "artist:johnny-hallyday",
+      "to": "genre:varietes-francaises",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=3951"
+      ]
+    },
+    {
+      "id": "key:rhoma-irama-dangdut",
+      "from": "artist:rhoma-irama",
+      "to": "genre:dangdut",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.academia.edu/102773866/DANGDUT_DALAM_CENGKERAMAN_TELEVISI",
+        "https://www.logos-verlag.de/PDFS/aemr.16-8.pdf"
+      ]
+    },
+    {
+      "id": "key:elvy-sukaesih-dangdut",
+      "from": "artist:elvy-sukaesih",
+      "to": "genre:dangdut",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.academia.edu/102773866/DANGDUT_DALAM_CENGKERAMAN_TELEVISI",
+        "https://www.logos-verlag.de/PDFS/aemr.16-8.pdf"
+      ]
+    },
+    {
+      "id": "key:a-rafiq-dangdut",
+      "from": "artist:a-rafiq",
+      "to": "genre:dangdut",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.academia.edu/102773866/DANGDUT_DALAM_CENGKERAMAN_TELEVISI",
+        "https://www.logos-verlag.de/PDFS/aemr.16-8.pdf"
+      ]
+    },
+    {
+      "id": "context_for:getz-gilberto-grammy-bossa-nova",
+      "type": "context_for",
+      "from": "event:getz-gilberto-grammy",
+      "to": "genre:bossa-nova",
+      "sources": [
+        "https://www.grammy.com/awards/7th-annual-grammy-awards/",
+        "https://blogs.loc.gov/now-see-hear/2021/08/from-the-recording-registry-the-girl-from-ipanema-1963/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:black-sabbath-debut-heavy-metal",
+      "type": "context_for",
+      "from": "event:black-sabbath-debut",
+      "to": "genre:heavy-metal",
+      "sources": [
+        "https://www.rockhall.com/wp-content/uploads/2024/03/Black_Sabbath_2006.pdf",
+        "https://www.officialcharts.com/albums/black-sabbath-black-sabbath/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:abba-waterloo-eurovision-pop",
+      "type": "context_for",
+      "from": "event:abba-waterloo-eurovision",
+      "to": "genre:pop",
+      "sources": [
+        "https://www.abbaofficial.com/eurovision_1974.html",
+        "https://www.officialcharts.com/songs/abba-waterloo/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:acdc-back-in-black-uk-number-one-hard-rock",
+      "type": "context_for",
+      "from": "event:acdc-back-in-black-uk-number-one",
+      "to": "genre:hard-rock",
+      "sources": [
+        "https://www.officialcharts.com/albums/acdc-back-in-black/",
+        "https://www.officialcharts.com/charts/albums-chart/19800810/7502/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:nusrat-womad-1985-qawwali",
+      "type": "context_for",
+      "from": "event:nusrat-womad-1985",
+      "to": "genre:qawwali",
+      "sources": [
+        "https://realworldrecords.com/releases/live-at-womad-1985/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:nirvana-nevermind-billboard-number-one-grunge",
+      "type": "context_for",
+      "from": "event:nirvana-nevermind-billboard-number-one",
+      "to": "genre:grunge",
+      "sources": [
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Nevermind.pdf",
+        "https://www.grammy.com/video/nirvanas-nevermind-record/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:nirvana-nevermind-billboard-number-one-alternative-rock",
+      "type": "context_for",
+      "from": "event:nirvana-nevermind-billboard-number-one",
+      "to": "genre:alternative-rock",
+      "sources": [
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Nevermind.pdf",
+        "https://www.grammy.com/video/nirvanas-nevermind-record/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:battle-of-britpop-britpop",
+      "type": "context_for",
+      "from": "event:battle-of-britpop",
+      "to": "genre:britpop",
+      "sources": [
+        "https://www.officialcharts.com/chart-news/blur-vs-oasis-and-seven-other-epic-official-chart-battles__10449/",
+        "https://www.officialcharts.com/charts/singles-chart/19950827/7501/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:kylie-cant-get-you-out-uk-number-one-dance-pop",
+      "type": "context_for",
+      "from": "event:kylie-cant-get-you-out-uk-number-one",
+      "to": "genre:dance-pop",
+      "sources": [
+        "https://www.officialcharts.com/songs/kylie-minogue-cant-get-you-out-of-my-head/",
+        "https://www.officialcharts.com/chart-news/chart-flashback-2001-kylies-cant-get-you-out-of-my-head-put-the-uk-under-its-spell-20-years-ago-this-week-__16446/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:samba-de-roda-unesco-inscription-samba",
+      "type": "context_for",
+      "from": "event:samba-de-roda-unesco-inscription",
+      "to": "genre:samba",
+      "sources": [
+        "https://ich.unesco.org/en/RL/samba-de-roda-of-the-recncavo-of-bahia-00101",
+        "https://bcr.iphan.gov.br/acoes-de-salvaguarda/reconhecimento-do-samba-de-roda-do-estado-da-bahia-pela-unesco-como-obra-prima-do-patrimonio-oral-e-imaterial-da-humanidade-e-posterior-incorporacao-a-lista-representativa/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "recognized:tango-unesco-inscription-tango",
+      "type": "recognized",
+      "from": "event:tango-unesco-inscription",
+      "to": "genre:tango",
+      "sources": [
+        "https://ich.unesco.org/en/Decisions/4.COM/13.01",
+        "https://www.argentina.gob.ar/cultura/tango-es-patrimonio"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:straight-outta-compton-recording-registry-gangsta-rap",
+      "type": "context_for",
+      "from": "event:straight-outta-compton-recording-registry",
+      "to": "genre:gangsta-rap",
+      "sources": [
+        "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/registry-by-induction-years/2016/",
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/StraightOuttaCompton.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:straight-outta-compton-recording-registry-hip-hop",
+      "type": "context_for",
+      "from": "event:straight-outta-compton-recording-registry",
+      "to": "genre:hip-hop",
+      "sources": [
+        "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/registry-by-induction-years/2016/",
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/StraightOuttaCompton.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:straight-outta-compton-recording-registry-west-coast-rap",
+      "type": "context_for",
+      "from": "event:straight-outta-compton-recording-registry",
+      "to": "genre:west-coast-rap",
+      "sources": [
+        "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/registry-by-induction-years/2016/",
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/StraightOuttaCompton.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "recognized:merengue-unesco-inscription-merengue",
+      "type": "recognized",
+      "from": "event:merengue-unesco-inscription",
+      "to": "genre:merengue",
+      "sources": [
+        "https://ich.unesco.org/en/RL/music-and-dance-of-the-merengue-in-the-dominican-republic-01162"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "recognized:reggae-unesco-inscription-reggae",
+      "type": "recognized",
+      "from": "event:reggae-unesco-inscription",
+      "to": "genre:reggae",
+      "sources": [
+        "https://ich.unesco.org/en/Decisions/13.COM/10.b.18",
+        "https://ich.unesco.org/en/RL/reggae-music-of-jamaica-01398"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "recognized:bachata-unesco-inscription-bachata",
+      "type": "recognized",
+      "from": "event:bachata-unesco-inscription",
+      "to": "genre:bachata",
+      "sources": [
+        "https://ich.unesco.org/en/Decisions/14.COM/10.b.10",
+        "https://old.cultura.gob.do/index.php/noticias/item/1326-autoridades-y-bachateros-celebran-declaracion-de-la-bachata-como-patrimonio-cultural-inmaterial"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "recognized:morna-unesco-inscription-morna",
+      "type": "recognized",
+      "from": "event:morna-unesco-inscription",
+      "to": "genre:morna",
+      "sources": [
+        "https://ich.unesco.org/en/Decisions/14.COM/10.b.8",
+        "https://www.governo.cv/comissao-da-unesco-comunica-a-inscricao-da-morna-na-lista-representativa-de-patrimonio-cultural-imaterial-da-humanidade/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:bts-dynamite-hot-100-number-one-k-pop",
+      "type": "context_for",
+      "from": "event:bts-dynamite-hot-100-number-one",
+      "to": "genre:k-pop",
+      "sources": [
+        "https://www.billboard.com/charts/hot-100/2020-09-05/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:burna-boy-global-album-grammy-afrobeats",
+      "type": "context_for",
+      "from": "event:burna-boy-global-album-grammy",
+      "to": "genre:afrobeats",
+      "sources": [
+        "https://www.grammy.com/news/burna-boy-wins-best-global-music-album-twice-tall-2021-grammy-awards-show/",
+        "https://www.grammy.com/news/2021-grammys-complete-winners-nominees-list/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "recognized:gamelan-unesco-inscription-gamelan",
+      "type": "recognized",
+      "from": "event:gamelan-unesco-inscription",
+      "to": "genre:gamelan",
+      "sources": [
+        "https://ich.unesco.org/en/RL/gamelan-01607"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:gasolina-recording-registry-reggaeton",
+      "type": "context_for",
+      "from": "event:gasolina-recording-registry",
+      "to": "genre:reggaeton",
+      "sources": [
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Gasolina_Rivera-Rideau.pdf",
+        "https://newsroom.loc.gov/news/national-recording-registry-inducts-music-from-madonna--mariah-carey--queen-latifah--daddy-yankee/s/5a91b115-3825-4a5f-a702-35940b4de958"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:tyla-first-african-performance-grammy-amapiano",
+      "type": "context_for",
+      "from": "event:tyla-first-african-performance-grammy",
+      "to": "genre:amapiano",
+      "sources": [
+        "https://www.grammy.com/songs/water/",
+        "https://www.grammy.com/news/tyla-winner-best-african-music-performance-water-2024-grammys-meaning/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "context_for:tyla-first-african-performance-grammy-pop",
+      "type": "context_for",
+      "from": "event:tyla-first-african-performance-grammy",
+      "to": "genre:pop",
+      "sources": [
+        "https://www.grammy.com/songs/water/",
+        "https://www.grammy.com/news/tyla-winner-best-african-music-performance-water-2024-grammys-meaning/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "key:tonico-e-tinoco-sertanejo",
+      "from": "artist:tonico-e-tinoco",
+      "to": "genre:sertanejo",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.saomanuel.sp.gov.br/portal/noticias/0/3/296/tonico-e-tinoco-estao-entre-os-artistas-que-mais-venderam-discos-na-historia"
+      ]
+    },
+    {
+      "id": "key:chitaozinho-e-xororo-sertanejo",
+      "from": "artist:chitaozinho-e-xororo",
+      "to": "genre:sertanejo",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://repositorio-dspace.agricultura.gov.br/bitstream/1/397/4/minist%C3%A9rio%20da%20Agricultura%20150%20anos.pdf",
+        "https://www.saomanuel.sp.gov.br/portal/noticias/0/3/296/tonico-e-tinoco-estao-entre-os-artistas-que-mais-venderam-discos-na-historia"
+      ]
+    },
+    {
+      "id": "key:joao-pacifico-sertanejo",
+      "from": "artist:joao-pacifico",
+      "to": "genre:sertanejo",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.al.sp.gov.br/noticia/?id=295600",
+        "https://repositorio-dspace.agricultura.gov.br/bitstream/1/397/4/minist%C3%A9rio%20da%20Agricultura%20150%20anos.pdf"
+      ]
+    },
+    {
+      "id": "key:banda-el-recodo-banda-sinaloense",
+      "from": "artist:banda-el-recodo",
+      "to": "genre:banda-sinaloense",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07048.pdf"
+      ]
+    },
+    {
+      "id": "key:banda-la-costena-banda-sinaloense",
+      "from": "artist:banda-la-costena",
+      "to": "genre:banda-sinaloense",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://sic.cultura.gob.mx/ficha.php?table=frpintangible&table_id=422",
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07048.pdf"
+      ]
+    },
+    {
+      "id": "key:banda-los-guamuchilenos-banda-sinaloense",
+      "from": "artist:banda-los-guamuchilenos",
+      "to": "genre:banda-sinaloense",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07048.pdf"
+      ]
+    },
+    {
+      "id": "key:los-alegres-de-teran-norteno",
+      "from": "artist:los-alegres-de-teran",
+      "to": "genre:norteno",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH09048.pdf"
+      ]
+    },
+    {
+      "id": "key:los-relampagos-del-norte-norteno",
+      "from": "artist:los-relampagos-del-norte",
+      "to": "genre:norteno",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.scielo.org.mx/scielo.php?pid=S0188-62662018000200083&script=sci_arttext"
+      ]
+    },
+    {
+      "id": "key:los-tigres-del-norte-norteno",
+      "from": "artist:los-tigres-del-norte",
+      "to": "genre:norteno",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.scielo.org.mx/scielo.php?pid=S0188-62662018000200083&script=sci_arttext"
+      ]
+    },
+    {
+      "id": "key:natanael-cano-corrido-tumbado",
+      "from": "artist:natanael-cano",
+      "to": "genre:corrido-tumbado",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.wmg.com/news/warner-chappell-music-signs-publishing-deal-corridos-tumbados-pioneer-and-hitmaker-natanael"
+      ]
+    },
+    {
+      "id": "key:junior-h-corrido-tumbado",
+      "from": "artist:junior-h",
+      "to": "genre:corrido-tumbado",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://music.apple.com/us/album/corridos-tumbados/1485388187",
+        "https://music.apple.com/us/multi-room/6450966392?l=es"
+      ]
+    },
+    {
+      "id": "key:peso-pluma-corrido-tumbado",
+      "from": "artist:peso-pluma",
+      "to": "genre:corrido-tumbado",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://music.apple.com/us/artist/peso-pluma/1500139475"
+      ]
+    },
+    {
+      "id": "lineage:trap-rap-corrido-tumbado",
+      "from": "genre:trap-rap",
+      "to": "genre:corrido-tumbado",
+      "type": "influences",
+      "confidence": "medium",
+      "sources": [
+        "https://www.wmg.com/news/warner-chappell-music-signs-publishing-deal-corridos-tumbados-pioneer-and-hitmaker-natanael"
+      ]
+    },
+    {
+      "id": "key:rafael-escalona-vallenato",
+      "from": "artist:rafael-escalona",
+      "to": "genre:vallenato",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.fundacionescalona.org/history"
+      ]
+    },
+    {
+      "id": "key:alejo-duran-vallenato",
+      "from": "artist:alejo-duran",
+      "to": "genre:vallenato",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://biblioarchivo.bogota.gov.co/opac-tmpl/IMG_CINEP1/DJ02-1985-1S-4.pdf"
+      ]
+    },
+    {
+      "id": "key:diomedes-diaz-vallenato",
+      "from": "artist:diomedes-diaz",
+      "to": "genre:vallenato",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://enciclopedia.banrepcultural.org/index.php?title=Diomedes_D%C3%ADaz"
+      ]
+    },
+    {
+      "id": "key:chacalon-y-la-nueva-crema-chicha",
+      "from": "artist:chacalon-y-la-nueva-crema",
+      "to": "genre:chicha",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://repositorio.cultura.gob.pe/backend/api/core/bitstreams/86eb970f-9964-41ae-bcbf-34c0652f9d37/content",
+        "https://observatorio.cultura.gob.cl/wp-content/uploads/2019/03/Cumbia-peruana-en-di%C3%A1spora.pdf"
+      ]
+    },
+    {
+      "id": "key:los-shapis-chicha",
+      "from": "artist:los-shapis",
+      "to": "genre:chicha",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://lum.cultura.pe/cdi/fotografia/musica-los-shapis-musica-chicha"
+      ]
+    },
+    {
+      "id": "key:pintura-roja-chicha",
+      "from": "artist:pintura-roja",
+      "to": "genre:chicha",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://repositorio.cultura.gob.pe/backend/api/core/bitstreams/86eb970f-9964-41ae-bcbf-34c0652f9d37/content"
+      ]
+    },
+    {
+      "id": "lineage:chicha-cumbia",
+      "from": "genre:chicha",
+      "to": "genre:cumbia",
+      "type": "fusion_of",
+      "confidence": "medium",
+      "sources": [
+        "https://observatorio.cultura.gob.cl/wp-content/uploads/2019/03/Cumbia-peruana-en-di%C3%A1spora.pdf"
+      ]
+    },
+    {
+      "id": "lineage:chicha-andean-folk",
+      "from": "genre:chicha",
+      "to": "genre:andean-folk",
+      "type": "fusion_of",
+      "confidence": "medium",
+      "sources": [
+        "https://observatorio.cultura.gob.cl/wp-content/uploads/2019/03/Cumbia-peruana-en-di%C3%A1spora.pdf"
+      ]
+    },
+    {
+      "id": "key:chabuca-granda-musica-criolla",
+      "from": "artist:chabuca-granda",
+      "to": "genre:musica-criolla",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.bnp.gob.pe/bnp-recuerda-a-chabuca-granda-luchas-reyes-y-felipe-pinglo/",
+        "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/NL20170111.pdf"
+      ]
+    },
+    {
+      "id": "key:felipe-pinglo-musica-criolla",
+      "from": "artist:felipe-pinglo",
+      "to": "genre:musica-criolla",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.bnp.gob.pe/bnp-recuerda-a-chabuca-granda-luchas-reyes-y-felipe-pinglo/",
+        "https://transparencia.cultura.gob.pe/sites/default/files/transparencia/2016/08/resoluciones-del-viceministerio-de-patrimonio-cultural-e-industrias-culturales/rvm108-declararpatrimonioculturaldelanacionalaobramusicaldefelipepingloalva.pdf"
+      ]
+    },
+    {
+      "id": "key:lucha-reyes-peru-musica-criolla",
+      "from": "artist:lucha-reyes-peru",
+      "to": "genre:musica-criolla",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.bnp.gob.pe/bnp-recuerda-a-chabuca-granda-luchas-reyes-y-felipe-pinglo/"
+      ]
+    },
+    {
+      "id": "key:talal-maddah-khaliji",
+      "from": "artist:talal-maddah",
+      "to": "genre:khaliji",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://saudipedia.com/en/timeline-of-saudi-singing",
+        "https://www.euronews.com/2023/06/10/rhythms-of-the-gulf-the-singing-star-bringing-khaliji-music-to-the-world"
+      ]
+    },
+    {
+      "id": "key:mohammed-abdu-khaliji",
+      "from": "artist:mohammed-abdu",
+      "to": "genre:khaliji",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://saudipedia.com/en/timeline-of-saudi-singing",
+        "https://www.euronews.com/2023/06/10/rhythms-of-the-gulf-the-singing-star-bringing-khaliji-music-to-the-world"
+      ]
+    },
+    {
+      "id": "key:fahad-al-kubaisi-khaliji",
+      "from": "artist:fahad-al-kubaisi",
+      "to": "genre:khaliji",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.euronews.com/2023/06/10/rhythms-of-the-gulf-the-singing-star-bringing-khaliji-music-to-the-world",
+        "https://thepeninsulaqatar.com/article/01/04/2015/qatari-singer-ploughs-on-for-the-love-of-music"
+      ]
+    },
+    {
+      "id": "key:lata-mangeshkar-filmi",
+      "from": "artist:lata-mangeshkar",
+      "to": "genre:filmi",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://www.southasianist.ed.ac.uk/southasianist/article/download/167/992/2102"
+      ]
+    },
+    {
+      "id": "key:asha-bhosle-filmi",
+      "from": "artist:asha-bhosle",
+      "to": "genre:filmi",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://www.southasianist.ed.ac.uk/southasianist/article/download/167/992/2102"
+      ]
+    },
+    {
+      "id": "key:mohammed-rafi-filmi",
+      "from": "artist:mohammed-rafi",
+      "to": "genre:filmi",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://www.southasianist.ed.ac.uk/southasianist/article/download/167/992/2102"
+      ]
+    },
+    {
+      "id": "key:alaap-punjabi-bhangra",
+      "from": "artist:alaap",
+      "to": "genre:punjabi-bhangra",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://catalogue.royalalberthall.com/Record.aspx?id=DS/UK/14261&src=CalmView.Persons",
+        "https://kedarecords.com/artist/heera/",
+        "https://sadaa.co.uk/studio/files/Kaljit-Bhamra_biog.pdf"
+      ]
+    },
+    {
+      "id": "key:heera-punjabi-bhangra",
+      "from": "artist:heera",
+      "to": "genre:punjabi-bhangra",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://catalogue.royalalberthall.com/Record.aspx?id=DS/UK/14261&src=CalmView.Persons",
+        "https://kedarecords.com/artist/heera/",
+        "https://sadaa.co.uk/studio/files/Kaljit-Bhamra_biog.pdf"
+      ]
+    },
+    {
+      "id": "key:kuljit-bhamra-punjabi-bhangra",
+      "from": "artist:kuljit-bhamra",
+      "to": "genre:punjabi-bhangra",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
+        "https://catalogue.royalalberthall.com/Record.aspx?id=DS/UK/14261&src=CalmView.Persons",
+        "https://kedarecords.com/artist/heera/",
+        "https://sadaa.co.uk/studio/files/Kaljit-Bhamra_biog.pdf"
+      ]
+    },
+    {
+      "id": "key:sam-hui-cantopop",
+      "from": "artist:sam-hui",
+      "to": "genre:cantopop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.info.gov.hk/gia/general/202107/27/P2021072700270p.htm",
+        "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/English/Sam-Hui_e.pdf",
+        "https://www.info.gov.hk/gia/general/202303/28/P2023032800258.htm"
+      ]
+    },
+    {
+      "id": "key:anita-mui-cantopop",
+      "from": "artist:anita-mui",
+      "to": "genre:cantopop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://artsandculture.google.com/story/anita-mui-ever-changing-singing-diva-hong-kong-heritage-museum/2wWBO4AGwW53MA?hl=en"
+      ]
+    },
+    {
+      "id": "key:leslie-cheung-cantopop",
+      "from": "artist:leslie-cheung",
+      "to": "genre:cantopop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.info.gov.hk/gia/general/202107/27/P2021072700270p.htm",
+        "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/English/Sam-Hui_e.pdf",
+        "https://www.info.gov.hk/gia/general/202303/28/P2023032800258.htm"
+      ]
+    },
+    {
+      "id": "lineage:cantopop-pop",
+      "from": "genre:cantopop",
+      "to": "genre:pop",
+      "type": "subgenre_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.info.gov.hk/gia/general/200711/10/P200711090209.htm",
+        "https://www.info.gov.hk/gia/general/202107/27/P2021072700270p.htm"
+      ]
+    },
+    {
+      "id": "key:yi-nan-yeong-trot",
+      "from": "artist:yi-nan-yeong",
+      "to": "genre:trot",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://jmic.online/issues/v5n1/10/"
+      ]
+    },
+    {
+      "id": "key:nam-jin-trot",
+      "from": "artist:nam-jin",
+      "to": "genre:trot",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.mcst.go.kr/english/policy/kocis/newsView.jsp?pSeq=33",
+        "https://jmic.online/issues/v5n1/10/",
+        "https://www.koreatimes.co.kr/entertainment/music/20220220/veteran-trot-singer-na-hoon-a-to-release-new-album"
+      ]
+    },
+    {
+      "id": "key:na-hoon-a-trot",
+      "from": "artist:na-hoon-a",
+      "to": "genre:trot",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.mcst.go.kr/english/policy/kocis/newsView.jsp?pSeq=33",
+        "https://jmic.online/issues/v5n1/10/",
+        "https://www.koreatimes.co.kr/entertainment/music/20220220/veteran-trot-singer-na-hoon-a-to-release-new-album"
+      ]
+    },
+    {
+      "id": "lineage:trot-pop",
+      "from": "genre:trot",
+      "to": "genre:pop",
+      "type": "subgenre_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.mcst.go.kr/english/policy/kocis/newsView.jsp?pSeq=33",
+        "https://jmic.online/issues/v5n1/10/",
+        "https://www.koreatimes.co.kr/entertainment/music/20220220/veteran-trot-singer-na-hoon-a-to-release-new-album"
+      ]
+    },
+    {
+      "id": "key:code-di-dona-funana",
+      "from": "artist:code-di-dona",
+      "to": "genre:funana",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://eng.caboverdeamusica.online/funana/"
+      ]
+    },
+    {
+      "id": "key:bulimundo-funana",
+      "from": "artist:bulimundo",
+      "to": "genre:funana",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://eng.caboverdeamusica.online/funana/"
+      ]
+    },
+    {
+      "id": "key:ferro-gaita-funana",
+      "from": "artist:ferro-gaita",
+      "to": "genre:funana",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://eng.caboverdeamusica.online/funana/"
+      ]
+    },
+    {
+      "id": "key:mulatu-astatke-ethio-jazz",
+      "from": "artist:mulatu-astatke",
+      "to": "genre:ethio-jazz",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://daily.bandcamp.com/features/mulatu-astatke-feature"
+      ]
+    },
+    {
+      "id": "key:hailu-mergia-ethio-jazz",
+      "from": "artist:hailu-mergia",
+      "to": "genre:ethio-jazz",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.factmag.com/2016/06/12/hailu-mergia-interview-ethiopia-awesome-tapes-from-africa/"
+      ]
+    },
+    {
+      "id": "key:dahlak-band-ethio-jazz",
+      "from": "artist:dahlak-band",
+      "to": "genre:ethio-jazz",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.factmag.com/2016/06/12/hailu-mergia-interview-ethiopia-awesome-tapes-from-africa/"
+      ]
+    },
+    {
+      "id": "lineage:ethio-jazz-jazz",
+      "from": "genre:ethio-jazz",
+      "to": "genre:jazz",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://daily.bandcamp.com/features/mulatu-astatke-feature"
+      ]
+    },
+    {
+      "id": "key:daniel-owino-misiani-benga",
+      "from": "artist:daniel-owino-misiani",
+      "to": "genre:benga",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.edocs.maseno.ac.ke/bitstream/handle/123456789/904/GRADUATION%20THESIS.pdf?isAllowed=y&sequence=3"
+      ]
+    },
+    {
+      "id": "key:george-ramogi-benga",
+      "from": "artist:george-ramogi",
+      "to": "genre:benga",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.edocs.maseno.ac.ke/bitstream/handle/123456789/904/GRADUATION%20THESIS.pdf?isAllowed=y&sequence=3"
+      ]
+    },
+    {
+      "id": "key:ochieng-nelly-mengo-benga",
+      "from": "artist:ochieng-nelly-mengo",
+      "to": "genre:benga",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.edocs.maseno.ac.ke/bitstream/handle/123456789/904/GRADUATION%20THESIS.pdf?isAllowed=y&sequence=3"
+      ]
+    },
+    {
+      "id": "key:ti-frere-sega",
+      "from": "artist:ti-frere",
+      "to": "genre:sega",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://journals.openedition.org/remi/pdf/13639"
+      ]
+    },
+    {
+      "id": "key:serge-lebrasse-sega",
+      "from": "artist:serge-lebrasse",
+      "to": "genre:sega",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://ich.unesco.org/doc/src/26081-EN.pdf?v=1393439355"
+      ]
+    },
+    {
+      "id": "key:fanfan-sega-sega",
+      "from": "artist:fanfan-sega",
+      "to": "genre:sega",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://ich.unesco.org/doc/src/26081-EN.pdf?v=1393439355"
+      ]
+    },
+    {
+      "id": "key:danyel-waro-maloya",
+      "from": "artist:danyel-waro",
+      "to": "genre:maloya",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://piros.re/artistes/granmoun-lele/"
+      ]
+    },
+    {
+      "id": "key:firmin-viry-maloya",
+      "from": "artist:firmin-viry",
+      "to": "genre:maloya",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://piros.re/artistes/granmoun-lele/"
+      ]
+    },
+    {
+      "id": "key:granmoun-lele-maloya",
+      "from": "artist:granmoun-lele",
+      "to": "genre:maloya",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://piros.re/artistes/granmoun-lele/"
+      ]
+    },
+    {
+      "id": "key:orhan-gencebay-arabesk",
+      "from": "artist:orhan-gencebay",
+      "to": "genre:arabesk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://polen.itu.edu.tr/entities/publication/d34b8562-4583-4542-854c-709ae53fa4c2/full"
+      ]
+    },
+    {
+      "id": "key:muslum-gurses-arabesk",
+      "from": "artist:muslum-gurses",
+      "to": "genre:arabesk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://polen.itu.edu.tr/entities/publication/d34b8562-4583-4542-854c-709ae53fa4c2/full"
+      ]
+    },
+    {
+      "id": "key:ferdi-tayfur-arabesk",
+      "from": "artist:ferdi-tayfur",
+      "to": "genre:arabesk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://dergipark.org.tr/en/pub/olgusos/article/1711772"
+      ]
+    },
+    {
+      "id": "key:ahmed-adaweyah-egyptian-shaabi",
+      "from": "artist:ahmed-adaweyah",
+      "to": "genre:egyptian-shaabi",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://journals.sagepub.com/doi/full/10.1177/14661381241302530"
+      ]
+    },
+    {
+      "id": "key:hakim-egyptian-shaabi",
+      "from": "artist:hakim",
+      "to": "genre:egyptian-shaabi",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://journals.sagepub.com/doi/full/10.1177/14661381241302530"
+      ]
+    },
+    {
+      "id": "key:shaaban-abdel-rahim-egyptian-shaabi",
+      "from": "artist:shaaban-abdel-rahim",
+      "to": "genre:egyptian-shaabi",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.open-access.bcu.ac.uk/14036/1/Khyam%20Allami_PhD%20Thesis%20Published_Final%20Version_Submitted%2012%204%2022_Final%20Award%2018%2010%2022.pdf"
+      ]
+    },
+    {
+      "id": "key:oka-mahraganat",
+      "from": "artist:oka",
+      "to": "genre:mahraganat",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.kexp.org/read/2014/5/21/siff-2014-face-the-music-preview-electro-chaabi/"
+      ]
+    },
+    {
+      "id": "key:ortega-mahraganat-mahraganat",
+      "from": "artist:ortega-mahraganat",
+      "to": "genre:mahraganat",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.kexp.org/read/2014/5/21/siff-2014-face-the-music-preview-electro-chaabi/"
+      ]
+    },
+    {
+      "id": "key:mc-sadat-mahraganat",
+      "from": "artist:mc-sadat",
+      "to": "genre:mahraganat",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.kexp.org/read/2014/5/21/siff-2014-face-the-music-preview-electro-chaabi/"
+      ]
+    },
+    {
+      "id": "lineage:mahraganat-egyptian-shaabi",
+      "from": "genre:mahraganat",
+      "to": "genre:egyptian-shaabi",
+      "type": "derived_from",
+      "confidence": "high",
+      "sources": [
+        "https://www.open-access.bcu.ac.uk/14036/1/Khyam%20Allami_PhD%20Thesis%20Published_Final%20Version_Submitted%2012%204%2022_Final%20Award%2018%2010%2022.pdf",
+        "https://www.arab-reform.net/publication/the-egyptian-authorities-grip-on-local-culture-the-example-of-mahraganat-music/"
+      ]
+    },
+    {
+      "id": "key:fairuz-dabke-music",
+      "from": "artist:fairuz",
+      "to": "genre:dabke-music",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/MON71383.pdf"
+      ]
+    },
+    {
+      "id": "key:wadih-el-safi-dabke-music",
+      "from": "artist:wadih-el-safi",
+      "to": "genre:dabke-music",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/MON71383.pdf"
+      ]
+    },
+    {
+      "id": "key:omar-souleyman-dabke-music",
+      "from": "artist:omar-souleyman",
+      "to": "genre:dabke-music",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.arabmediasociety.com/wp-content/uploads/2017/12/20101211162841_CaldwellDabke.pdf"
       ]
     }
   ]

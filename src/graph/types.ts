@@ -82,6 +82,9 @@ export type GenreFamily =
   | 'reggae'
   | 'latin'
   | 'african'
+  | 'regional-mexican'
+  | 'middle-eastern'
+  | 'indian-ocean'
   | 'electronica'
   | 'house'
   | 'techno'
@@ -219,7 +222,10 @@ export const FAMILY_ORDER: readonly GenreFamily[] = [
   'hip-hop',
   'reggae',
   'latin',
+  'regional-mexican',
   'african',
+  'indian-ocean',
+  'middle-eastern',
   'electronica',
   'house',
   'techno',
