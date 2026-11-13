@@ -2,6 +2,101 @@
   "version": 4,
   "entries": [
     {
+      "commit": "cba993cb5b486b02b140a1099b8f8766ab91cf7d",
+      "parent": "031feaa689c2f2e5a33700bf7ffa9468e6876e42",
+      "date": "2026-11-13T12:09:33-05:00",
+      "subject": "Add a graph model and examples to Open Data",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "A",
+              "path": "app/[locale]/data/graph/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/layout.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/SoundlinesProviders.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/colorThemeBootstrap.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/DatasetGraph.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/GraphCardHeader.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/OpenData.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/OpenDataDataset.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/OpenDataGraph.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/OpenDataNavigation.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/favicon.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/en.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/openDataPage.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/openData.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/useColorTheme.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/useColorTheme.ts"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "5c6b63589bbe3e2c9ecd691e4b49703bc6a8ea5b",
       "parent": "93e26822ae42862f664bed73a3cb7890c1f4e05e",
       "date": "2026-11-13T10:29:52-05:00",
