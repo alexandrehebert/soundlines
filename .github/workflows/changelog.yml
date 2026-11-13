@@ -8,6 +8,7 @@ on:
       - 'scripts/changelog/**'
       - 'CHANGELOG.md'
       - 'docs/changelog.json'
+      - 'public/open-data-changelog.json'
       - 'src/projectLinks.ts'
       - 'package*.json'
       - '.github/workflows/changelog.yml'
@@ -53,7 +54,7 @@ jobs:
       - run: npm run changelog
       - name: Commit generated history
         run: |
-          git add -- CHANGELOG.md docs/changelog.json
+          git add -- CHANGELOG.md docs/changelog.json public/open-data-changelog.json
           if git diff --cached --quiet; then
             echo "Changelog is already current."
             exit 0
