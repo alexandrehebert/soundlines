@@ -12,6 +12,16 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-12 — Add eight genres across the Soundlines catalogue
+
+[4b26e6af](https://github.com/alexandrehebert/soundlines/commit/4b26e6afa88904ff516ff8f039f2ac14582c557d)
+
+Graph nodes: +30 / ~0 / -0.
+
+Graph edges: +33 / ~0 / -0.
+
+- graph: 73 changed files
+
 ## 2026-11-12 — Add soul jazz and progressive metal to the music graph
 
 [9185ff1b](https://github.com/alexandrehebert/soundlines/commit/9185ff1bc4d588b5fad06ad581064bb7caee1c0e)

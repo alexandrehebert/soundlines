@@ -2,6 +2,596 @@
   "version": 4,
   "entries": [
     {
+      "commit": "4b26e6afa88904ff516ff8f039f2ac14582c557d",
+      "parent": "166dc38f7757d94dbef8681c43399ab3b01b6376",
+      "date": "2026-11-12T23:45:39-05:00",
+      "subject": "Add eight genres across the Soundlines catalogue",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "artist:anri",
+              "name": "Anri",
+              "status": "added"
+            },
+            {
+              "id": "artist:at-the-gates",
+              "name": "At the Gates",
+              "status": "added"
+            },
+            {
+              "id": "artist:charley-patton",
+              "name": "Charley Patton",
+              "status": "added"
+            },
+            {
+              "id": "artist:chuck-brown",
+              "name": "Chuck Brown",
+              "status": "added"
+            },
+            {
+              "id": "artist:claudinho-e-buchecha",
+              "name": "Claudinho & Buchecha",
+              "status": "added"
+            },
+            {
+              "id": "artist:dark-tranquillity",
+              "name": "Dark Tranquillity",
+              "status": "added"
+            },
+            {
+              "id": "artist:dj-marlboro",
+              "name": "DJ Marlboro",
+              "status": "added"
+            },
+            {
+              "id": "artist:dolly-parton",
+              "name": "Dolly Parton",
+              "status": "updated"
+            },
+            {
+              "id": "artist:donaeo",
+              "name": "Donae’O",
+              "status": "added"
+            },
+            {
+              "id": "artist:donald-byrd",
+              "name": "Donald Byrd",
+              "status": "added"
+            },
+            {
+              "id": "artist:glen-campbell",
+              "name": "Glen Campbell",
+              "status": "added"
+            },
+            {
+              "id": "artist:herbie-hancock",
+              "name": "Herbie Hancock",
+              "status": "added"
+            },
+            {
+              "id": "artist:in-flames",
+              "name": "In Flames",
+              "status": "added"
+            },
+            {
+              "id": "artist:lil-silva",
+              "name": "Lil Silva",
+              "status": "added"
+            },
+            {
+              "id": "artist:mariya-takeuchi",
+              "name": "Mariya Takeuchi",
+              "status": "added"
+            },
+            {
+              "id": "artist:mc-marcinho",
+              "name": "MC Marcinho",
+              "status": "added"
+            },
+            {
+              "id": "artist:rare-essence",
+              "name": "Rare Essence",
+              "status": "added"
+            },
+            {
+              "id": "artist:robert-johnson",
+              "name": "Robert Johnson",
+              "status": "updated"
+            },
+            {
+              "id": "artist:roska",
+              "name": "Roska",
+              "status": "added"
+            },
+            {
+              "id": "artist:roy-ayers",
+              "name": "Roy Ayers",
+              "status": "added"
+            },
+            {
+              "id": "artist:shania-twain",
+              "name": "Shania Twain",
+              "status": "added"
+            },
+            {
+              "id": "artist:son-house",
+              "name": "Son House",
+              "status": "added"
+            },
+            {
+              "id": "artist:tatsuro-yamashita",
+              "name": "Tatsuro Yamashita",
+              "status": "added"
+            },
+            {
+              "id": "artist:trouble-funk",
+              "name": "Trouble Funk",
+              "status": "added"
+            },
+            {
+              "id": "genre:blues",
+              "name": "Blues",
+              "status": "updated"
+            },
+            {
+              "id": "genre:brazilian-funk",
+              "name": "Brazilian funk (funk carioca)",
+              "status": "added"
+            },
+            {
+              "id": "genre:city-pop",
+              "name": "City pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:country",
+              "name": "Country",
+              "status": "updated"
+            },
+            {
+              "id": "genre:country-pop",
+              "name": "Country pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:death-metal",
+              "name": "Death metal",
+              "status": "updated"
+            },
+            {
+              "id": "genre:delta-blues",
+              "name": "Delta blues",
+              "status": "added"
+            },
+            {
+              "id": "genre:electro",
+              "name": "Electro",
+              "status": "updated"
+            },
+            {
+              "id": "genre:funk",
+              "name": "Funk",
+              "status": "updated"
+            },
+            {
+              "id": "genre:go-go",
+              "name": "Go-go",
+              "status": "added"
+            },
+            {
+              "id": "genre:house",
+              "name": "House",
+              "status": "updated"
+            },
+            {
+              "id": "genre:jazz",
+              "name": "Jazz",
+              "status": "updated"
+            },
+            {
+              "id": "genre:jazz-funk",
+              "name": "Jazz-funk",
+              "status": "added"
+            },
+            {
+              "id": "genre:melodic-death-metal",
+              "name": "Melodic death metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:pop",
+              "name": "Pop",
+              "status": "updated"
+            },
+            {
+              "id": "genre:uk-funky",
+              "name": "UK funky",
+              "status": "added"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/GRAPH.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/audits/graph-edge-coverage.csv"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__anri-city-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__at-the-gates-melodic-death-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__charley-patton-delta-blues.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__chuck-brown-go-go.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__claudinho-e-buchecha-brazilian-funk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__dark-tranquillity-melodic-death-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__dj-marlboro-brazilian-funk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__dolly-parton-country-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__donaeo-uk-funky.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__donald-byrd-jazz-funk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__glen-campbell-country-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__herbie-hancock-jazz-funk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__in-flames-melodic-death-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__lil-silva-uk-funky.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__mariya-takeuchi-city-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__mc-marcinho-brazilian-funk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__rare-essence-go-go.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__robert-johnson-delta-blues.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__roska-uk-funky.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__roy-ayers-jazz-funk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__shania-twain-country-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__son-house-delta-blues.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__tatsuro-yamashita-city-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__trouble-funk-go-go.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__city-pop-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__country-pop-country.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__delta-blues-blues.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__electro-brazilian-funk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__funk-go-go.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__jazz-funk-funk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__jazz-funk-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__melodic-death-metal-death-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__uk-funky-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/anri.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/at-the-gates.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/charley-patton.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/chuck-brown.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/claudinho-e-buchecha.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/dark-tranquillity.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/dj-marlboro.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/donaeo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/donald-byrd.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/glen-campbell.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/herbie-hancock.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/in-flames.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/lil-silva.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/mariya-takeuchi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/mc-marcinho.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/rare-essence.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/roska.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/roy-ayers.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/shania-twain.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/son-house.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/tatsuro-yamashita.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/trouble-funk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/brazilian-funk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/city-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/country-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/delta-blues.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/go-go.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/jazz-funk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/melodic-death-metal.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/uk-funky.md"
+            },
+            {
+              "status": "M",
+              "path": "src/data/genrePreviews.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/review-status.json"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [
+            "artist:anri",
+            "artist:at-the-gates",
+            "artist:charley-patton",
+            "artist:chuck-brown",
+            "artist:claudinho-e-buchecha",
+            "artist:dark-tranquillity",
+            "artist:dj-marlboro",
+            "artist:donaeo",
+            "artist:donald-byrd",
+            "artist:glen-campbell",
+            "artist:herbie-hancock",
+            "artist:in-flames",
+            "artist:lil-silva",
+            "artist:mariya-takeuchi",
+            "artist:mc-marcinho",
+            "artist:rare-essence",
+            "artist:roska",
+            "artist:roy-ayers",
+            "artist:shania-twain",
+            "artist:son-house",
+            "artist:tatsuro-yamashita",
+            "artist:trouble-funk",
+            "genre:brazilian-funk",
+            "genre:city-pop",
+            "genre:country-pop",
+            "genre:delta-blues",
+            "genre:go-go",
+            "genre:jazz-funk",
+            "genre:melodic-death-metal",
+            "genre:uk-funky"
+          ],
+          "updated": [],
+          "removed": []
+        },
+        "edges": {
+          "added": [
+            "key:anri-city-pop",
+            "key:at-the-gates-melodic-death-metal",
+            "key:charley-patton-delta-blues",
+            "key:chuck-brown-go-go",
+            "key:claudinho-e-buchecha-brazilian-funk",
+            "key:dark-tranquillity-melodic-death-metal",
+            "key:dj-marlboro-brazilian-funk",
+            "key:dolly-parton-country-pop",
+            "key:donaeo-uk-funky",
+            "key:donald-byrd-jazz-funk",
+            "key:glen-campbell-country-pop",
+            "key:herbie-hancock-jazz-funk",
+            "key:in-flames-melodic-death-metal",
+            "key:lil-silva-uk-funky",
+            "key:mariya-takeuchi-city-pop",
+            "key:mc-marcinho-brazilian-funk",
+            "key:rare-essence-go-go",
+            "key:robert-johnson-delta-blues",
+            "key:roska-uk-funky",
+            "key:roy-ayers-jazz-funk",
+            "key:shania-twain-country-pop",
+            "key:son-house-delta-blues",
+            "key:tatsuro-yamashita-city-pop",
+            "key:trouble-funk-go-go",
+            "lineage:city-pop-pop",
+            "lineage:country-pop-country",
+            "lineage:delta-blues-blues",
+            "lineage:electro-brazilian-funk",
+            "lineage:funk-go-go",
+            "lineage:jazz-funk-funk",
+            "lineage:jazz-funk-jazz",
+            "lineage:melodic-death-metal-death-metal",
+            "lineage:uk-funky-house"
+          ],
+          "updated": [],
+          "removed": []
+        }
+      }
+    },
+    {
       "commit": "9185ff1bc4d588b5fad06ad581064bb7caee1c0e",
       "parent": "047d84c618713f4dbb6bb9b1b9cb4664569f0f91",
       "date": "2026-11-12T23:35:09-05:00",
