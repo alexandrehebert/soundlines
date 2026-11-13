@@ -2,6 +2,25 @@
   "version": 4,
   "entries": [
     {
+      "commit": "4dd9532beaab9453adae4a6ec26e5d832549c2ed",
+      "parent": "225487c7107a0c476bbd1b7d24c9a05a661863ee",
+      "date": "2026-11-13T12:22:24-05:00",
+      "subject": "Refine the Open Data example graph layout",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "src/components/DatasetGraph.tsx"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "cba993cb5b486b02b140a1099b8f8766ab91cf7d",
       "parent": "031feaa689c2f2e5a33700bf7ffa9468e6876e42",
       "date": "2026-11-13T12:09:33-05:00",
