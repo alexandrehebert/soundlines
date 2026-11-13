@@ -12,6 +12,15 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-12 — Add Open Data space to the app
+
+[dc9e7b71](https://github.com/alexandrehebert/soundlines/commit/dc9e7b71f61f498c29a10919732f88f34f6a9905)
+
+- app: 29 changed files
+- site: 9 changed files
+- workflow: 2 changed files
+- docs: 1 changed file
+
 ## 2026-11-12 — Add Vercel Web Analytics and Speed Insights
 
 [3597f098](https://github.com/alexandrehebert/soundlines/commit/3597f0988196db4af99c2d959a313225e25d0d27)

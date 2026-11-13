@@ -2,6 +2,200 @@
   "version": 4,
   "entries": [
     {
+      "commit": "dc9e7b71f61f498c29a10919732f88f34f6a9905",
+      "parent": "9889a831b388eaea9e10ffcb27e9761877b1c99c",
+      "date": "2026-11-12T22:04:22-05:00",
+      "subject": "Add Open Data space to the app",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "A",
+              "path": "app/[locale]/data/changelog/page.tsx"
+            },
+            {
+              "status": "A",
+              "path": "app/[locale]/data/dataset/page.tsx"
+            },
+            {
+              "status": "A",
+              "path": "app/[locale]/data/layout.tsx"
+            },
+            {
+              "status": "A",
+              "path": "app/[locale]/data/page.tsx"
+            },
+            {
+              "status": "A",
+              "path": "app/[locale]/data/query/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/App.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/ExplorerContext.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/colorTheme.css"
+            },
+            {
+              "status": "M",
+              "path": "src/components/DatasetStats.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/DatasetStatsCharts.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/DiscoveryChrome.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/Home.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/OpenData.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/OpenDataChangelog.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/OpenDataDataset.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/OpenDataNavigation.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/OpenDataPage.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/OpenDataQuery.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/catalogue.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/en.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/it.json"
+            },
+            {
+              "status": "A",
+              "path": "src/i18n/openDataPage.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/i18n/openDataPage.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/seo.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/openData.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/openData.ts"
+            }
+          ]
+        },
+        {
+          "category": "site",
+          "files": [
+            {
+              "status": "M",
+              "path": "site/src/changelog.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "site/src/components/App.tsx"
+            },
+            {
+              "status": "M",
+              "path": "site/src/content.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/copy/de.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/copy/en.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/copy/es.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/copy/fr.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/copy/it.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/site.test.tsx"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "M",
+              "path": "scripts/changelog/generate.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "scripts/changelog/generate.ts"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/EXPLORER.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "3597f0988196db4af99c2d959a313225e25d0d27",
       "parent": "6417f675be02e844e2b1772fb64bb324ec544984",
       "date": "2026-11-12T20:10:10-05:00",
