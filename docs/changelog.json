@@ -2,6 +2,86 @@
   "version": 4,
   "entries": [
     {
+      "commit": "2a3129d9c09a73ea770d382f14fea3a39bebeaaa",
+      "parent": "366ff3765496346593967f5f1da1a6a6637a0284",
+      "date": "2026-11-12T23:49:02-05:00",
+      "subject": "Refine Morna and Soca chronology and sourcing",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "artist:machel-montano",
+              "name": "Machel Montano",
+              "status": "updated"
+            },
+            {
+              "id": "genre:morna",
+              "name": "Morna",
+              "status": "updated"
+            },
+            {
+              "id": "genre:soca",
+              "name": "Soca",
+              "status": "updated"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/machel-montano.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/genre/morna.md"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.json"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [],
+          "updated": [
+            "artist:machel-montano",
+            "genre:morna",
+            "genre:soca"
+          ],
+          "removed": []
+        },
+        "edges": {
+          "added": [],
+          "updated": [],
+          "removed": []
+        }
+      }
+    },
+    {
       "commit": "4b26e6afa88904ff516ff8f039f2ac14582c557d",
       "parent": "166dc38f7757d94dbef8681c43399ab3b01b6376",
       "date": "2026-11-12T23:45:39-05:00",
