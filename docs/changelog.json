@@ -2,6 +2,78 @@
   "version": 4,
   "entries": [
     {
+      "commit": "a041f18f6adfbc4d417f9e6a0f76886594b3cf3e",
+      "parent": "449afb7d5c38a0cd9602264caa8079a1c2803a64",
+      "date": "2026-11-12T22:43:47-05:00",
+      "subject": "Add contribute page to open data",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "A",
+              "path": "app/[locale]/data/contribute/page.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ContributionPage.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/OpenData.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/OpenDataChangelog.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/OpenDataNavigation.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/en.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/openDataPage.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/openData.ts"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/EXPLORER.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "8c3c6c37899b0a0bc47fd87bdcb631c97653198c",
       "parent": "b3c8ab18696f0477c36c406cbb4b18afe11a6693",
       "date": "2026-11-12T22:08:21-05:00",
