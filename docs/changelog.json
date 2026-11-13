@@ -2,6 +2,47 @@
   "version": 4,
   "entries": [
     {
+      "commit": "cd1a82f5286dacb7dc7f65c0dc3c87cd021841ff",
+      "parent": "7ab6a8ad00ddecd3a14feb85ad6f85882b35da96",
+      "date": "2026-11-12T19:15:20-05:00",
+      "subject": "Stop repeating branch changes in merge changelog entries",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "site",
+          "files": [
+            {
+              "status": "M",
+              "path": "site/src/copy/changelog.ts"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "M",
+              "path": "scripts/changelog/generate.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "scripts/changelog/generate.ts"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/DEVELOPMENT.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "83ad4de253d7ff8315733fa2e2dd13b5b630307e",
       "parent": "c78833389d535654dedece83f126fca7623d795c",
       "date": "2026-11-12T19:09:02-05:00",

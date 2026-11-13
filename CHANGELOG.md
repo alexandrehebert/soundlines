@@ -12,6 +12,14 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-12 — Stop repeating branch changes in merge changelog entries
+
+[cd1a82f5](https://github.com/alexandrehebert/soundlines/commit/cd1a82f5286dacb7dc7f65c0dc3c87cd021841ff)
+
+- site: 1 changed file
+- workflow: 2 changed files
+- docs: 1 changed file
+
 ## 2026-11-12 — Add deterministic asset changelog to the companion site
 
 [83ad4de2](https://github.com/alexandrehebert/soundlines/commit/83ad4de253d7ff8315733fa2e2dd13b5b630307e)
