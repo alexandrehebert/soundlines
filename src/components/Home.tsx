@@ -1,6 +1,7 @@
-import { ArrowDown, ArrowLeft, ArrowLeftRight, ArrowRight, ArrowUpRight, Bubbles, ChartGantt, Guitar, Headphones, History, Landmark, Radio, Route, Users, type LucideIcon } from 'lucide-react'
+import { ArrowDown, ArrowLeft, ArrowLeftRight, ArrowRight, ArrowUpRight, Bubbles, ChartGantt, Disc3, Guitar, Headphones, History, Landmark, Radio, Route, Users, type LucideIcon } from 'lucide-react'
 import { motion, useReducedMotion } from 'motion/react'
 import { useId, useMemo, useRef, useState, useSyncExternalStore, type ReactNode, type Ref } from 'react'
+import { createPortal } from 'react-dom'
 import { useNow, useTranslations } from 'next-intl'
 import { useExplorer } from '../ExplorerContext.ts'
 import { hasGenrePreview } from '../data/genrePreviews.ts'
@@ -11,6 +12,8 @@ import type { GraphNode, NodeType } from '../graph/types.ts'
 import { DiscoveryFooter, DiscoveryHeader } from './DiscoveryChrome.tsx'
 import { ChronologyPreview } from './ChronologyPreview.tsx'
 import { currentUtcDay, dailySpotlights, subscribeToUtcDay, utcDay } from './dailySpotlights.ts'
+import { ModalPanel } from './ModalPanel.tsx'
+import { JukeboxPlayer } from './Jukebox.tsx'
 import { GenreSample } from './GenreSample.tsx'
 import { EntryLink, ViewLink } from './HomeLinks.tsx'
 import { Soundtrails } from './Soundtrails.tsx'
@@ -217,6 +220,8 @@ function shuffled<T>(items: readonly T[]): T[] {
 function ListeningWidget({ scrollReveal }: { scrollReveal: ScrollReveal }) {
   const { index } = useExplorer()
   const tHome = useTranslations('homeCopy')
+  const jukebox = useTranslations('jukebox')
+  const [jukeboxOpen, setJukeboxOpen] = useState(false)
   const genres = useMemo(() => {
     const all = [...index.nodeById.values()].filter((node) => node.type === 'genre' && hasGenrePreview(node.id))
     const curated = LISTENING_PICKS.map((id) => index.nodeById.get(id)).filter((node): node is GraphNode => node?.type === 'genre')
@@ -259,6 +264,24 @@ function ListeningWidget({ scrollReveal }: { scrollReveal: ScrollReveal }) {
       <p className="discovery-note">{tHome('listeningDescription')}</p>
       {genres.all.length > 1 && (
         <WidgetNav nextLabel={tHome('nextSound')} onPrevious={previous} onNext={next} previousDisabled={booth.position === 0} />
+      )}
+      <button type="button" className="discovery-widget-action" aria-haspopup="dialog"
+        aria-expanded={jukeboxOpen} onClick={() => setJukeboxOpen(true)}>
+        <Disc3 size={17} aria-hidden="true" /> {jukebox('open')} <ArrowRight size={15} aria-hidden="true" />
+      </button>
+      {jukeboxOpen && createPortal(
+        <div className="discovery contents">
+          <ModalPanel
+            title={jukebox('title')}
+            description={jukebox('description')}
+            closeLabel={jukebox('close')}
+            onClose={() => setJukeboxOpen(false)}
+            wide
+          >
+            <JukeboxPlayer embedded />
+          </ModalPanel>
+        </div>,
+        document.body,
       )}
     </motion.section>
   )

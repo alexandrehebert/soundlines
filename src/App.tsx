@@ -20,6 +20,7 @@ import type { TimelineOrder } from './graph/layout.ts'
 import type { StatsTab } from './graph/stats.ts'
 import { EXPLORER_VIEWS, isTimelineView, type ExplorerView, type TimelineView } from './graph/timeline.ts'
 import { localizePath } from './i18n/routing.ts'
+import { isJukeboxPath } from './explorerLocation.ts'
 import { isOpenDataPath } from './openData.ts'
 
 export function Explorer() {
@@ -606,6 +607,6 @@ export function TimelineOrderSelect({
 export default function App() {
   const { isHome } = useExplorer()
   const pathname = usePathname()
-  if (isOpenDataPath(pathname)) return null
+  if (isOpenDataPath(pathname) || isJukeboxPath(pathname)) return null
   return isHome ? <Home /> : <Explorer />
 }

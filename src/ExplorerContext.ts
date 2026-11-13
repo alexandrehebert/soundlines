@@ -10,7 +10,7 @@ import {
 } from 'react'
 import { flushSync } from 'react-dom'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-import { explorerUrl, readExplorerLocation, type ExplorerLocation } from './explorerLocation.ts'
+import { explorerUrl, isJukeboxPath, readExplorerLocation, type ExplorerLocation } from './explorerLocation.ts'
 import { buildIndex } from './graph/graph.ts'
 import {
   DEFAULT_HISTORY_FILTERS, filtersForSelectedEvent, matchesHistoryFilters, type HistoryFilters,
@@ -172,7 +172,7 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
   useEffect(() => {
     if (handledRoute.current === routeKey) return
     handledRoute.current = routeKey
-    if (isOpenDataPath(pathname)) return
+    if (isOpenDataPath(pathname) || isJukeboxPath(pathname)) return
 
     const currentUrl = new URL(window.location.href)
     const parsed = readLocation(currentUrl.href)

@@ -278,7 +278,7 @@
 .discovery-tonearm[data-active] .discovery-tonearm-swing { transform: rotate(22deg); }
 
 .discovery-turntable-controls { position: relative; justify-self: end; margin-top: 1rem; z-index: 2; display: flex; align-items: center; gap: .75rem; }
-.discovery-turntable-lcd {
+:is(.discovery-turntable-lcd, .jukebox-display) {
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -293,7 +293,7 @@
   color: color-mix(in srgb, var(--home-accent) 55%, var(--home-muted));
   transition: color .4s ease, box-shadow .4s ease;
 }
-.discovery-turntable-lcd[data-active] {
+:is(.discovery-turntable-lcd, .jukebox-display)[data-active] {
   color: var(--home-accent);
   box-shadow: inset 0 2px 6px #0006, 0 0 14px color-mix(in srgb, var(--home-accent) 22%, transparent);
 }

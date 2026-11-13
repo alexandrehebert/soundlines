@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { Heart } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
@@ -12,7 +13,7 @@ import { ViewLink } from './HomeLinks.tsx'
 import { SearchBar } from './SearchBar.tsx'
 import './Home.css'
 
-export type DiscoveryPage = 'home' | 'data'
+export type DiscoveryPage = 'home' | 'data' | 'jukebox'
 
 const FOOTER_VIEWS = ['genre', 'artist', 'instrument', 'history'] as const
 
@@ -73,6 +74,7 @@ export function DiscoveryFooter({ current }: { current: DiscoveryPage }) {
           {FOOTER_VIEWS.map((view) => (
             <ViewLink key={view} view={view} className="discovery-footer-link">{tViews(view)}</ViewLink>
           ))}
+          <Link href={localizePath('/jukebox', locale)} aria-current={current === 'jukebox' ? 'page' : undefined}>{t('jukebox.title')}</Link>
           <a href={localizePath('/data', locale)} aria-current={current === 'data' ? 'page' : undefined}>{t('openData.title')}</a>
         </nav>
         <nav className="discovery-footer-links discovery-footer-project" aria-label={t('projectLinks.navigation')}>

@@ -1,4 +1,18 @@
 {
+  "jukebox": {
+    "title": "Jukebox",
+    "description": "Wähle ein Genre und hör eine kurze Hörprobe.",
+    "open": "Jukebox öffnen",
+    "close": "Jukebox schließen",
+    "ready": "Bereit zum Abspielen",
+    "select": "Wähle eine CD",
+    "player": "Jukebox-Player",
+    "surprise": "Überrasch mich",
+    "catalogue": "CD-Auswahl",
+    "count": "{count, plural, one {# Hörprobe} other {# Hörproben}}",
+    "search": "Genres oder Familien suchen",
+    "empty": "Keine Genres entsprechen deiner Suche."
+  },
   "loading": "Soundlines wird geladen",
   "requiresJavascript": "Soundlines benötigt JavaScript, um die Musikkarte zu erkunden.",
   "notFoundTitle": "Seite nicht gefunden",

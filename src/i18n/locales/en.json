@@ -1,4 +1,18 @@
 {
+  "jukebox": {
+    "title": "Jukebox",
+    "description": "Pick a genre and hear a short preview.",
+    "open": "Open the jukebox",
+    "close": "Close jukebox",
+    "ready": "Ready to play",
+    "select": "Pick a CD",
+    "player": "Jukebox player",
+    "surprise": "Surprise me",
+    "catalogue": "CD selection",
+    "count": "{count, plural, one {# preview} other {# previews}}",
+    "search": "Search genres or families",
+    "empty": "No genres match your search."
+  },
   "loading": "Loading Soundlines",
   "requiresJavascript": "Soundlines requires JavaScript to explore the music map.",
   "notFoundTitle": "Page not found",

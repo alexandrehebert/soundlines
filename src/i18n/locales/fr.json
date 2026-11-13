@@ -1,4 +1,18 @@
 {
+  "jukebox": {
+    "title": "Jukebox",
+    "description": "Choisissez un genre et écoutez un court extrait.",
+    "open": "Ouvrir le jukebox",
+    "close": "Fermer le jukebox",
+    "ready": "Prêt à jouer",
+    "select": "Choisissez un CD",
+    "player": "Lecteur du jukebox",
+    "surprise": "Surprenez-moi",
+    "catalogue": "Sélection de CD",
+    "count": "{count, plural, one {# extrait} other {# extraits}}",
+    "search": "Rechercher un genre ou une famille",
+    "empty": "Aucun genre ne correspond à votre recherche."
+  },
   "loading": "Chargement de Soundlines",
   "requiresJavascript": "JavaScript est nécessaire pour explorer la carte musicale Soundlines.",
   "notFoundTitle": "Page introuvable",

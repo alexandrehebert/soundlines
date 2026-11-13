@@ -12,7 +12,11 @@ import {
   type TimelineView,
 } from './graph/timeline.ts'
 import type { GraphNode } from './graph/types.ts'
-import { localizePath, type Locale } from './i18n/routing.ts'
+import { localizePath, stripLocalePrefix, type Locale } from './i18n/routing.ts'
+
+export function isJukeboxPath(pathname: string | null) {
+  return pathname !== null && stripLocalePrefix(pathname).replace(/\/$/, '') === '/jukebox'
+}
 
 export type ExplorerLocation = {
   isHome: boolean

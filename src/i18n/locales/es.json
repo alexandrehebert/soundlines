@@ -1,4 +1,18 @@
 {
+  "jukebox": {
+    "title": "Jukebox",
+    "description": "Elige un género y escucha un breve fragmento.",
+    "open": "Abrir el jukebox",
+    "close": "Cerrar el jukebox",
+    "ready": "Listo para sonar",
+    "select": "Elige un CD",
+    "player": "Reproductor del jukebox",
+    "surprise": "Sorpréndeme",
+    "catalogue": "Selección de CD",
+    "count": "{count, plural, one {# fragmento} other {# fragmentos}}",
+    "search": "Buscar géneros o familias",
+    "empty": "Ningún género coincide con la búsqueda."
+  },
   "loading": "Cargando Soundlines",
   "requiresJavascript": "Soundlines necesita JavaScript para explorar el mapa musical.",
   "notFoundTitle": "Página no encontrada",
