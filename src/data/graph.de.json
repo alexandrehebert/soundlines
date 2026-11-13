@@ -5192,6 +5192,114 @@
     },
     "artist:dream-theater": {
       "description": "Progressive-Metal-Band, deren Album „Images and Words“ ihre komplexen Arrangements einem größeren Publikum bekannt machte."
+    },
+    "genre:go-go": {
+      "description": "Ein Funkstil, der in den 1970er-Jahren in Washington, D.C., entstand. Mehrere Percussionstimmen halten den Groove zwischen den Songs aufrecht. Ruf und Antwort machen das Publikum zum Teil der Darbietung."
+    },
+    "artist:chuck-brown": {
+      "description": "Gitarrist und Bandleader, der den Go-go aus Washington mitprägte und mit „Bustin’ Loose“ landesweit bekannt machte."
+    },
+    "artist:trouble-funk": {
+      "description": "Band aus Washington, die ihren Go-go-Sound in den USA und im Ausland auf die Bühne brachte."
+    },
+    "artist:rare-essence": {
+      "description": "Go-go-Band aus Washington, die aus einer Gruppe von Schulfreunden hervorging und vor Ort mehrere Generationen von Fans gewann."
+    },
+    "genre:melodic-death-metal": {
+      "description": "Ein Death-Metal-Stil, der markante Gitarrenmelodien mit rauem Gesang und aggressivem Schlagzeug verbindet. Die Szene im schwedischen Göteborg prägte den Stil Anfang der 1990er-Jahre."
+    },
+    "artist:at-the-gates": {
+      "description": "Band aus Göteborg, die den Melodic Death Metal mitprägte und 1992 ihr erstes Studioalbum veröffentlichte."
+    },
+    "artist:dark-tranquillity": {
+      "description": "Band aus Göteborg, die den Melodic-Death-Metal-Sound der Stadt mitprägte."
+    },
+    "artist:in-flames": {
+      "description": "Band aus Göteborg, die den Melodic Death Metal in der frühen Szene der Stadt mitprägte."
+    },
+    "genre:brazilian-funk": {
+      "description": "Diese Tanzmusik, auch Funk Carioca genannt, entwickelte sich auf den Bailes von Rio de Janeiro. Frühe Aufnahmen verbanden portugiesischsprachige Vocals mit bassbetonten elektronischen Beats, die vom Miami Bass inspiriert waren.",
+      "estimateNote": "Das Datum verweist auf DJ Marlboros Kompilation Funk Brasil. Die Baile-Szene und die Entwicklung des Sounds reichen weiter zurück.",
+      "name": "Brasilianischer Funk (Funk Carioca)"
+    },
+    "artist:dj-marlboro": {
+      "description": "Brasilianischer DJ und Produzent, dessen Kompilation Funk Brasil 1989 vor Ort aufgenommenen, portugiesischsprachigen Funk in die Plattenläden brachte."
+    },
+    "artist:claudinho-e-buchecha": {
+      "description": "Gesangsduo aus São Gonçalo, dessen melodischer Funk mit Liedern wie „Nosso Sonho“ ein Publikum in ganz Brasilien erreichte.",
+      "estimateNote": "Das Duo trat Anfang der 1990er-Jahre erstmals in São Gonçalo auf. Die Quellen nennen unterschiedliche Jahre für seinen ersten Festivalsieg."
+    },
+    "artist:mc-marcinho": {
+      "description": "Brasilianischer Sänger und Songwriter des Funk Melody, bekannt für „Rap do Solitário“ und „Glamurosa“.",
+      "estimateNote": "Der frühe Erfolg von „Rap do Solitário“ dient als Richtwert für Marcinhos Aktivität."
+    },
+    "genre:uk-funky": {
+      "description": "Londoner Clubstil, der Mitte der 2000er-Jahre aus House hervorging. Seine Produktionen verbinden synkopierte Percussion und Soundsystem-Bässe mit House-Tempi.",
+      "estimateNote": "Das Datum markiert die Entstehung einer eigenständigen Londoner Clubszene Mitte der 2000er-Jahre. Frühere Veröffentlichungen nahmen den Sound vorweg."
+    },
+    "artist:roska": {
+      "description": "DJ und Produzent aus Südlondon. „Feeline“ gehört zu seinen frühen UK-Funky-Veröffentlichungen auf Roska Kicks & Snares.",
+      "estimateNote": "Das Datum verweist auf Roskas erste Veröffentlichung. Zuvor war er bereits als MC aufgetreten."
+    },
+    "artist:donaeo": {
+      "description": "Sänger und Produzent, der mit Titeln wie „Party Hard“ vom UK Garage in die UK-Funky-Szene wechselte."
+    },
+    "artist:lil-silva": {
+      "description": "Britischer Produzent und DJ, dem 2008 mit „Seasons“ der Durchbruch in der Clubszene gelang.",
+      "estimateNote": "Das Datum verweist auf die erste offizielle Veröffentlichung. Lil Silva legte zu diesem Zeitpunkt bereits auf."
+    },
+    "genre:city-pop": {
+      "description": "Japanischer Pop mit ausgefeilten Arrangements und Liedern über Großstadtleben und Liebe. Der Stil nahm in den 1970er-Jahren Gestalt an, als Musiker wie Tatsuro Yamashita im Studio Soul und den Pop von Singer-Songwritern verbanden.",
+      "estimateNote": "Die Datierung auf Mitte der 1970er-Jahre steht für frühe Aufnahmen, die den Klang prägten. In Japan erreichte der Stil Anfang der 1980er-Jahre ein breiteres Publikum."
+    },
+    "artist:tatsuro-yamashita": {
+      "description": "Japanischer Sänger, Songwriter und Produzent, der 1975 mit Sugar Babe debütierte. Seine Solosingle Ride on Time machte City Pop 1980 einem breiteren Publikum bekannt."
+    },
+    "artist:mariya-takeuchi": {
+      "description": "Japanische Sängerin und Songwriterin, die 1978 ihr Plattendebüt gab. Ihr Lied Plastic Love fand durch das City-Pop-Revival im Internet ein neues internationales Publikum."
+    },
+    "artist:anri": {
+      "description": "Japanische Sängerin und Songwriterin, die 1978 debütierte. Ihre Hits Cat’s Eye und Kanashimi ga Tomaranai machten sie 1983 zu einer bekannten City-Pop-Sängerin."
+    },
+    "genre:country-pop": {
+      "description": "Countrymusik, die das Publikum von Country- und Popsendern anspricht. Der Crossover-Sound reicht von Glen Campbells Hits Ende der 1960er-Jahre über Dolly Partons Here You Come Again bis zu Shania Twains Pop- und Rockproduktionen in den 1990er-Jahren.",
+      "estimateNote": "Das Ende der 1960er-Jahre steht für Glen Campbells Crossover-Hits. Schon zuvor hatten Countryplatten das Poppublikum erreicht."
+    },
+    "artist:glen-campbell": {
+      "description": "Amerikanischer Sänger und Studiogitarrist, der mit Wichita Lineman und Rhinestone Cowboy Hits im Country und Pop hatte.",
+      "estimateNote": "Als Beginn dient seine belegte Tournee mit den Champs im Jahr 1960. Schon als Jugendlicher spielte er in einer Western-Swing-Band."
+    },
+    "artist:shania-twain": {
+      "description": "Kanadische Sängerin und Songwriterin, die mit The Woman in Me und Come on Over Produktionstechniken aus Rock und Pop in die Countrymusik einbrachte.",
+      "estimateNote": "Die Datierung bezieht sich auf ihr erstes Album von 1993. Zuvor trat sie bereits professionell in Clubs auf."
+    },
+    "genre:delta-blues": {
+      "description": "Country-Blues aus dem Mississippi-Delta, bei dem Sologesang und akustische Gitarre im Mittelpunkt stehen, manchmal ergänzt durch Mundharmonika. Aufnahmen von Künstlern wie Charley Patton und Robert Johnson verbreiteten den Stil über die Region hinaus.",
+      "estimateNote": "In den 1920er-Jahren entstanden die ersten Aufnahmen des Delta Blues. Die regionale Tradition hatte sich schon vor den ersten Aufnahmen entwickelt."
+    },
+    "artist:charley-patton": {
+      "description": "Bluessänger und Gitarrist aus Mississippi, der seinen Klang im Delta entwickelte. Seine Aufnahmen ab 1929 dokumentieren ein älteres Repertoire.",
+      "estimateNote": "Das Datum markiert den Beginn seiner belegten Aufnahmen im Jahr 1929. Er war bereits zuvor aufgetreten."
+    },
+    "artist:son-house": {
+      "description": "Delta-Blues-Sänger und Gitarrist, der 1930 für Paramount aufnahm und Robert Johnson und Muddy Waters beeinflusste. Während des Blues-Revivals der 1960er-Jahre trat er wieder auf.",
+      "estimateNote": "Seine professionelle Arbeit als Gitarrist ist ab 1926 belegt. Nach einer langen Pause und seiner Rückkehr im Zuge des Blues-Revivals zog er sich 1976 endgültig zurück."
+    },
+    "genre:jazz-funk": {
+      "description": "Fusion aus Jazzimprovisation und Funkgrooves, oft mit elektrischen Tasteninstrumenten und E-Bass. Anfang der 1970er-Jahre brachten Aufnahmen von Herbie Hancock und Donald Byrd diese Verbindung dem Jazz- und R&B-Publikum nahe.",
+      "estimateNote": "Das Datum steht für die Aufnahmen der frühen 1970er-Jahre, die den Klang einem breiteren Jazz- und R&B-Publikum bekannt machten. Die beiden Stile hatten sich schon vorher angenähert."
+    },
+    "artist:herbie-hancock": {
+      "description": "Amerikanischer Jazzpianist und Keyboarder, der auf seinem Album Head Hunters von 1973 Jazzimprovisation und Funk verband.",
+      "estimateNote": "Das Datum steht für seine belegte Zusammenarbeit mit Coleman Hawkins im Jahr 1960."
+    },
+    "artist:donald-byrd": {
+      "description": "Jazztrompeter aus Detroit, der mit den Mizell-Brüdern aufnahm und Blue-Note-Alben wie Places and Spaces einen Funk- und Soulklang gab.",
+      "estimateNote": "Seine Aufnahmekarriere nahm 1955 in New York Gestalt an. Ein belegter später Auftritt fand 2007 im Kennedy Center statt."
+    },
+    "artist:roy-ayers": {
+      "description": "Amerikanischer Vibrafonist und Komponist, der in den 1970er-Jahren Ubiquity gründete. Die Gruppe war mit Stücken wie Everybody Loves the Sunshine ein Wegbereiter des Jazz-Funk.",
+      "estimateNote": "Den Beginn markiert sein erstes Soloalbum von 1963, das Ende seine Abschiedstournee von 2023."
     }
   },
   "edges": {

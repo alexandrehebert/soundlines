@@ -426,15 +426,15 @@ describe('graph.json integrity', () => {
         'serialism', 'arabic-maqam', 'neoclassicism',
       ],
       'blues-soul': ['blues', 'soul', 'funk', 'r-and-b', 'doo-wop', 'neo-soul',
-        'new-jack-swing', 'contemporary-r-and-b', 'chicago-blues',
+        'new-jack-swing', 'contemporary-r-and-b', 'chicago-blues', 'go-go', 'delta-blues',
       ],
       jazz: [
         'jazz', 'swing', 'bebop', 'cool-jazz', 'hard-bop', 'modal-jazz', 'free-jazz',
-        'jazz-fusion', 'acid-jazz', 'vocal-jazz', 'latin-jazz', 'spiritual-jazz', 'new-orleans-jazz', 'soul-jazz',
+        'jazz-fusion', 'acid-jazz', 'vocal-jazz', 'latin-jazz', 'spiritual-jazz', 'new-orleans-jazz', 'soul-jazz', 'jazz-funk',
       ],
       'country-folk': [
         'country', 'folk', 'bluegrass', 'russian-folk', 'baul-songs', 'khoomei',
-        'americana', 'alt-country', 'honky-tonk', 'outlaw-country',
+        'americana', 'alt-country', 'honky-tonk', 'outlaw-country', 'country-pop',
       ],
       rock: [
         'rock-and-roll', 'rock', 'blues-rock', 'psychedelic-rock', 'progressive-rock',
@@ -447,9 +447,9 @@ describe('graph.json integrity', () => {
       ],
       metal: [
         'heavy-metal', 'thrash-metal', 'death-metal', 'black-metal', 'doom-metal',
-        'nu-metal', 'metalcore', 'industrial-metal', 'power-metal', 'progressive-metal',
+        'nu-metal', 'metalcore', 'industrial-metal', 'power-metal', 'progressive-metal', 'melodic-death-metal',
       ],
-      pop: ['pop', 'synth-pop', 'k-pop', 'j-pop', 'girl-groups', 'dance-pop', 'hyperpop'],
+      pop: ['pop', 'synth-pop', 'k-pop', 'j-pop', 'girl-groups', 'dance-pop', 'hyperpop', 'city-pop'],
       'hip-hop': [
         'hip-hop', 'grime', 'trap-rap', 'drill', 'old-school-rap', 'east-coast-rap',
         'west-coast-rap', 'gangsta-rap', 'boom-bap', 'jazz-rap', 'alternative-rap',
@@ -459,7 +459,7 @@ describe('graph.json integrity', () => {
       reggae: ['ska', 'rocksteady', 'reggae', 'dub', 'dancehall', 'calypso', 'soca', 'roots-reggae'],
       latin: [
         'latin', 'son-cubano', 'salsa', 'bossa-nova', 'cumbia', 'samba',
-        'tango', 'andean-folk', 'bachata', 'merengue', 'reggaeton', 'mambo', 'latin-trap',
+        'tango', 'andean-folk', 'bachata', 'merengue', 'reggaeton', 'mambo', 'latin-trap', 'brazilian-funk',
       ],
       african: [
         'highlife', 'afrobeat', 'afrobeats', 'juju', 'soukous', 'amapiano', 'gqom', 'kwaito',
@@ -472,7 +472,7 @@ describe('graph.json integrity', () => {
       ],
       house: [
         'disco', 'italo-disco', 'hi-nrg', 'chicago-house', 'garage-house', 'deep-house',
-        'acid-house', 'french-touch', 'french-house', 'tech-house', 'house', 'electro-house', 'footwork', 'progressive-house',
+        'acid-house', 'french-touch', 'french-house', 'tech-house', 'house', 'electro-house', 'footwork', 'progressive-house', 'uk-funky',
       ],
       techno: [
         'detroit-techno', 'minimal-techno', 'dub-techno', 'trance', 'gabber',

@@ -14160,6 +14160,25 @@
       ]
     },
     {
+      "id": "genre:country-pop",
+      "type": "genre",
+      "name": "Country pop",
+      "addedOn": "2026-11-12",
+      "family": "country-folk",
+      "period": {
+        "start": 1967,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The late 1960s mark Glen Campbell’s crossover hits. Country records had reached pop audiences before then."
+      },
+      "description": "Country music shaped for listeners on both country and pop radio. The crossover sound spans Glen Campbell’s late-1960s hits, Dolly Parton’s Here You Come Again and Shania Twain’s pop and rock production in the 1990s.",
+      "sources": [
+        "https://countrymusichalloffame.org/hall-of-fame/glen-campbell",
+        "https://countrymusichalloffame.org/hall-of-fame/dolly-parton",
+        "https://cmhof.imgix.net/wp-content/uploads/2023/08/24125004/SCH_WM_SongwriterBios_ShaniaTwain_23-7-12.pdf"
+      ]
+    },
+    {
       "id": "genre:salsa",
       "type": "genre",
       "name": "Salsa",
@@ -14433,6 +14452,39 @@
       ]
     },
     {
+      "id": "genre:go-go",
+      "type": "genre",
+      "name": "Go-go",
+      "addedOn": "2026-11-12",
+      "family": "blues-soul",
+      "period": {
+        "start": 1970,
+        "precision": "decade"
+      },
+      "description": "A Washington, D.C., funk style that emerged in the 1970s. Layered percussion keeps the groove going between songs, and call and response makes the crowd part of the performance.",
+      "sources": [
+        "https://americanhistory.si.edu/explore/stories/go-go-funky-percussive-music-invented-washington-dc",
+        "https://www.arts.gov/honors/heritage/chuck-brown"
+      ]
+    },
+    {
+      "id": "genre:delta-blues",
+      "type": "genre",
+      "name": "Delta blues",
+      "addedOn": "2026-11-12",
+      "family": "blues-soul",
+      "period": {
+        "start": 1920,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The 1920s mark the first recording era for Delta blues. The regional tradition was already developing before musicians recorded it."
+      },
+      "description": "A country blues style from the Mississippi Delta centered on a solo singer and acoustic guitar, sometimes joined by harmonica. Records by artists such as Charley Patton and Robert Johnson helped carry the style beyond the region.",
+      "sources": [
+        "https://blogs.loc.gov/nls-music-notes/2021/09/american-music-from-a-to-z-in-the-nls-music-collection-d-delta-blues/"
+      ]
+    },
+    {
       "id": "genre:southern-rap",
       "type": "genre",
       "name": "Southern rap",
@@ -14626,6 +14678,24 @@
       ]
     },
     {
+      "id": "genre:city-pop",
+      "type": "genre",
+      "name": "City pop",
+      "addedOn": "2026-11-12",
+      "family": "pop",
+      "period": {
+        "start": 1975,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The mid-1970s date marks early recordings that established the sound. Its broader Japanese breakthrough came in the early 1980s."
+      },
+      "description": "Japanese pop with polished arrangements and songs about city life and romance. It took shape in the 1970s as musicians such as Tatsuro Yamashita brought soul and singer-songwriter pop into the studio.",
+      "sources": [
+        "https://www.sg.emb-japan.go.jp/JCC/E-Magazine-May-2023-City-Pop.html",
+        "https://www.nippon.com/en/articles/-/15831"
+      ]
+    },
+    {
       "id": "genre:synthwave",
       "type": "genre",
       "name": "Synthwave",
@@ -14730,6 +14800,24 @@
       ]
     },
     {
+      "id": "genre:brazilian-funk",
+      "type": "genre",
+      "name": "Brazilian funk (funk carioca)",
+      "addedOn": "2026-11-12",
+      "family": "latin",
+      "period": {
+        "start": 1989,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks DJ Marlboro’s Funk Brasil compilation. The baile scene and the development of the sound predate the release."
+      },
+      "description": "Also called funk carioca, this dance music grew out of Rio de Janeiro’s bailes. Early records paired Portuguese-language vocals with bass-heavy electronic beats inspired by Miami bass.",
+      "sources": [
+        "https://new.scielo.br/j/vb/a/LCBRksv9HrGrNDMnbtGk7TC/?ilang=en&lang=en",
+        "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/79/23/2020717923/2020717923.pdf"
+      ]
+    },
+    {
       "id": "genre:tech-house",
       "type": "genre",
       "name": "Tech house",
@@ -14763,6 +14851,24 @@
       "sources": [
         "https://www.beatportal.com/articles/299799-beatports-definitive-history-of-house-music",
         "https://www.leftfieldmusic.com/about/"
+      ]
+    },
+    {
+      "id": "genre:uk-funky",
+      "type": "genre",
+      "name": "UK funky",
+      "addedOn": "2026-11-12",
+      "family": "house",
+      "period": {
+        "start": 2006,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks the emergence of a distinct London club scene in the mid-2000s. Earlier releases anticipated the sound."
+      },
+      "description": "A London club style that grew out of house in the mid-2000s. Its productions bring syncopated percussion and sound-system bass to house tempos.",
+      "sources": [
+        "https://daily.redbullmusicacademy.com/2015/03/uk-funky-revival-feature/",
+        "https://djmag.com/longreads/uk-funky-isn-t-back-it-never-left"
       ]
     },
     {
@@ -14854,6 +14960,22 @@
       "sources": [
         "https://mtosmt.org/issues/mto.13.19.2/mto.13.19.2.mccandless.pdf",
         "https://www.metalblade.com/us/artists/fates-warning/"
+      ]
+    },
+    {
+      "id": "genre:melodic-death-metal",
+      "type": "genre",
+      "name": "Melodic death metal",
+      "addedOn": "2026-11-12",
+      "family": "metal",
+      "period": {
+        "start": 1992,
+        "precision": "circa"
+      },
+      "description": "A branch of death metal that brings prominent guitar melodies to harsh vocals and aggressive drumming. A scene in Gothenburg, Sweden, helped define the style in the early 1990s.",
+      "sources": [
+        "https://www.loudersound.com/features/unchained-melody-we-revisit-the-influential-gothenburg-sound",
+        "https://www.diva-portal.org/smash/get/diva2%3A1192781/FULLTEXT01.pdf"
       ]
     },
     {
@@ -15126,6 +15248,25 @@
         "https://www.wrti.org/arts-desk/2024-11-11/lou-donaldson-saxophonist-who-bridged-bebop-and-soul-dies-at-98",
         "https://www.arts.gov/honors/jazz/jimmy-smith",
         "https://store.bluenote.com/collections/soul-jazz"
+      ]
+    },
+    {
+      "id": "genre:jazz-funk",
+      "type": "genre",
+      "name": "Jazz-funk",
+      "addedOn": "2026-11-12",
+      "family": "jazz",
+      "period": {
+        "start": 1970,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks the early-1970s recordings that brought the sound to wider jazz and R&B audiences. The two styles had been coming together before then."
+      },
+      "description": "A fusion that sets jazz improvisation against funk grooves, often using electric keyboards and bass. In the early 1970s, recordings by Herbie Hancock and Donald Byrd brought the combination to jazz and R&B audiences.",
+      "sources": [
+        "https://www.arts.gov/honors/jazz/herbie-hancock",
+        "https://www.bluenote.com/artist/donald-byrd/",
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/head-hunters.pdf"
       ]
     },
     {
@@ -27139,6 +27280,384 @@
         "https://dreamtheater.net/band/",
         "https://www.loudersound.com/features/dream-theater-images-and-words-album-interview-2005",
         "https://mtosmt.org/issues/mto.13.19.2/mto.13.19.2.mccandless.pdf"
+      ]
+    },
+    {
+      "id": "artist:chuck-brown",
+      "type": "artist",
+      "name": "Chuck Brown",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "end": 2012,
+        "precision": "decade"
+      },
+      "description": "Guitarist and bandleader who helped establish Washington go-go and brought it to a national audience with Bustin’ Loose.",
+      "sources": [
+        "https://www.arts.gov/honors/heritage/chuck-brown",
+        "https://folklife.si.edu/news-and-events/chuck-brown-1936-2012-is-remembered-watch-video-of-his-electrifying-performance-at-the-2000-folklife-festival"
+      ]
+    },
+    {
+      "id": "artist:trouble-funk",
+      "type": "artist",
+      "name": "Trouble Funk",
+      "addedOn": "2026-11-12",
+      "kind": "group",
+      "period": {
+        "start": 1978,
+        "precision": "year"
+      },
+      "description": "Washington band that took its go-go sound to audiences in the United States and abroad.",
+      "sources": [
+        "https://troublefunk.com/our-story"
+      ]
+    },
+    {
+      "id": "artist:rare-essence",
+      "type": "artist",
+      "name": "Rare Essence",
+      "addedOn": "2026-11-12",
+      "kind": "group",
+      "period": {
+        "start": 1976,
+        "precision": "year"
+      },
+      "description": "Washington go-go band that began with a group of school friends and built a multigenerational local following.",
+      "sources": [
+        "https://www.rareessence.com/"
+      ]
+    },
+    {
+      "id": "artist:at-the-gates",
+      "type": "artist",
+      "name": "At the Gates",
+      "addedOn": "2026-11-12",
+      "kind": "group",
+      "period": {
+        "start": 1990,
+        "precision": "year"
+      },
+      "description": "Gothenburg band that helped shape melodic death metal and released its first full-length album in 1992.",
+      "sources": [
+        "https://www.diva-portal.org/smash/get/diva2%3A1192781/FULLTEXT01.pdf",
+        "https://peaceville.com/bands/at-the-gates/"
+      ]
+    },
+    {
+      "id": "artist:dark-tranquillity",
+      "type": "artist",
+      "name": "Dark Tranquillity",
+      "addedOn": "2026-11-12",
+      "kind": "group",
+      "period": {
+        "start": 1990,
+        "precision": "circa"
+      },
+      "description": "Gothenburg band that helped establish the city’s melodic death metal sound.",
+      "sources": [
+        "https://www.loudersound.com/features/unchained-melody-we-revisit-the-influential-gothenburg-sound",
+        "https://www.diva-portal.org/smash/get/diva2%3A1192781/FULLTEXT01.pdf"
+      ]
+    },
+    {
+      "id": "artist:in-flames",
+      "type": "artist",
+      "name": "In Flames",
+      "addedOn": "2026-11-12",
+      "kind": "group",
+      "period": {
+        "start": 1990,
+        "precision": "circa"
+      },
+      "description": "Gothenburg band that helped establish melodic death metal in the city’s early scene.",
+      "sources": [
+        "https://www.loudersound.com/features/unchained-melody-we-revisit-the-influential-gothenburg-sound",
+        "https://www.diva-portal.org/smash/get/diva2%3A1192781/FULLTEXT01.pdf"
+      ]
+    },
+    {
+      "id": "artist:dj-marlboro",
+      "type": "artist",
+      "name": "DJ Marlboro",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1977,
+        "precision": "year"
+      },
+      "description": "Brazilian DJ and producer whose 1989 compilation Funk Brasil brought locally recorded, Portuguese-language funk to record buyers.",
+      "sources": [
+        "https://www.band.com.br/entretenimento/era-chacota-por-tentar-tocar-funk-em-sao-paulo-diz-dj-malboro-16516646",
+        "https://new.scielo.br/j/vb/a/LCBRksv9HrGrNDMnbtGk7TC/?ilang=en&lang=en"
+      ]
+    },
+    {
+      "id": "artist:claudinho-e-buchecha",
+      "type": "artist",
+      "name": "Claudinho & Buchecha",
+      "addedOn": "2026-11-12",
+      "kind": "group",
+      "period": {
+        "start": 1992,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The duo began performing in São Gonçalo in the early 1990s. Sources differ on the year of its first festival win.",
+        "end": 2002
+      },
+      "description": "Vocal duo from São Gonçalo whose melodic funk, including “Nosso Sonho,” reached a national audience.",
+      "sources": [
+        "https://dicionariompb.com.br/grupo/claudinho-e-buchecha/",
+        "https://dicionariompb.com.br/artista/claudinho/",
+        "https://dicionariompb.com.br/termo/black-music/"
+      ]
+    },
+    {
+      "id": "artist:mc-marcinho",
+      "type": "artist",
+      "name": "MC Marcinho",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1994,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date uses the early success of “Rap do Solitário” as a marker for Marcinho’s activity.",
+        "end": 2023
+      },
+      "description": "Brazilian singer and songwriter associated with funk melody, known for “Rap do Solitário” and “Glamurosa.”",
+      "sources": [
+        "https://gshow.globo.com/cultura-pop/famosos/noticia/morre-mc-marcinho-principe-do-funk-relembre-apresentacoes-e-entrevistas-na-globo.ghtml",
+        "https://dicionariompb.com.br/artista/mc-marcinho/"
+      ]
+    },
+    {
+      "id": "artist:roska",
+      "type": "artist",
+      "name": "Roska",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 2008,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks Roska’s first release. He had already performed as an MC."
+      },
+      "description": "South London DJ and producer whose early UK funky releases on Roska Kicks & Snares include “Feeline.”",
+      "sources": [
+        "https://mixmag.net/feature/why-didnt-uk-funky-break-the-mainstream",
+        "https://www.redbullmusicacademy.com/lectures/roska-the-kiss-factor/"
+      ]
+    },
+    {
+      "id": "artist:donaeo",
+      "type": "artist",
+      "name": "Donae’O",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 2003,
+        "precision": "circa"
+      },
+      "description": "Singer and producer who moved from UK garage into the UK funky scene with tracks including “Party Hard.”",
+      "sources": [
+        "https://earth-agency.com/artist/donaeo/",
+        "https://trenchtrenchtrench.com/features/donaeo-interview"
+      ]
+    },
+    {
+      "id": "artist:lil-silva",
+      "type": "artist",
+      "name": "Lil Silva",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 2008,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks the first official release. Lil Silva was already DJing by then."
+      },
+      "description": "British producer and DJ who broke through in the club scene in 2008 with “Seasons.”",
+      "sources": [
+        "https://www.truepanther.com/artists/lil-silva",
+        "https://i-d.co/article/from-craig-david-to-debussy-these-are-the-tracks-that-changed-lil-silvas-life/"
+      ]
+    },
+    {
+      "id": "artist:tatsuro-yamashita",
+      "type": "artist",
+      "name": "Tatsuro Yamashita",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1975,
+        "precision": "year"
+      },
+      "description": "Japanese singer, songwriter and producer who debuted with Sugar Babe in 1975. His solo single Ride on Time helped bring city pop to a broader audience in 1980.",
+      "sources": [
+        "https://tatsuro.co.jp/biography/",
+        "https://www.nippon.com/en/articles/-/15831"
+      ]
+    },
+    {
+      "id": "artist:mariya-takeuchi",
+      "type": "artist",
+      "name": "Mariya Takeuchi",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1978,
+        "precision": "year"
+      },
+      "description": "Japanese singer and songwriter who made her recording debut in 1978. Her song Plastic Love found a new international audience in the online city pop revival.",
+      "sources": [
+        "https://wmg.jp/mariya",
+        "https://www.sg.emb-japan.go.jp/JCC/E-Magazine-May-2023-City-Pop.html"
+      ]
+    },
+    {
+      "id": "artist:anri",
+      "type": "artist",
+      "name": "Anri",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1978,
+        "precision": "year"
+      },
+      "description": "Japanese singer and songwriter who debuted in 1978. Her 1983 hits Cat’s Eye and Kanashimi ga Tomaranai made her a prominent city pop singer.",
+      "sources": [
+        "https://anri-music.com/s/anri/page/ANRIpedia_eng?ima=0000"
+      ]
+    },
+    {
+      "id": "artist:glen-campbell",
+      "type": "artist",
+      "name": "Glen Campbell",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start uses his documented tour with the Champs in 1960. He played in a western swing band as a teenager.",
+        "end": 2013
+      },
+      "description": "American singer and session guitarist whose country and pop hits included Wichita Lineman and Rhinestone Cowboy.",
+      "sources": [
+        "https://countrymusichalloffame.org/hall-of-fame/glen-campbell"
+      ]
+    },
+    {
+      "id": "artist:shania-twain",
+      "type": "artist",
+      "name": "Shania Twain",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1993,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks her first album in 1993. She was singing professionally in clubs before that."
+      },
+      "description": "Canadian singer and songwriter who brought rock and pop production into country music on The Woman in Me and Come on Over.",
+      "sources": [
+        "https://cmhof.imgix.net/wp-content/uploads/2023/08/24125004/SCH_WM_SongwriterBios_ShaniaTwain_23-7-12.pdf"
+      ]
+    },
+    {
+      "id": "artist:charley-patton",
+      "type": "artist",
+      "name": "Charley Patton",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1929,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks the start of his documented recordings in 1929. He was performing before then.",
+        "end": 1934
+      },
+      "description": "Mississippi blues singer and guitarist who developed his sound in the Delta. His recordings began in 1929 and document an earlier repertoire.",
+      "sources": [
+        "https://msbluestrail.org/blues-trail-markers/charley-patton-birthplace",
+        "https://blogs.loc.gov/nls-music-notes/2021/09/american-music-from-a-to-z-in-the-nls-music-collection-d-delta-blues/"
+      ]
+    },
+    {
+      "id": "artist:son-house",
+      "type": "artist",
+      "name": "Son House",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1926,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "His professional guitar work is documented from 1926. He retired for good in 1976 after a long break and a revival-era comeback.",
+        "end": 1976
+      },
+      "description": "Delta blues singer and guitarist who recorded for Paramount in 1930 and was an influence on Robert Johnson and Muddy Waters. He resumed performing during the 1960s blues revival.",
+      "sources": [
+        "https://msbluestrail.org/blues-trail-markers/son-house",
+        "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/son-house"
+      ]
+    },
+    {
+      "id": "artist:herbie-hancock",
+      "type": "artist",
+      "name": "Herbie Hancock",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1960,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The date marks his documented work with Coleman Hawkins in 1960."
+      },
+      "description": "American jazz pianist and keyboardist who combined jazz improvisation and funk on his 1973 album Head Hunters.",
+      "sources": [
+        "https://www.arts.gov/honors/jazz/herbie-hancock"
+      ]
+    },
+    {
+      "id": "artist:donald-byrd",
+      "type": "artist",
+      "name": "Donald Byrd",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1955,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "His recording career took shape in New York in 1955. A documented later performance took place at the Kennedy Center in 2007.",
+        "end": 2007
+      },
+      "description": "Jazz trumpeter from Detroit who recorded with the Mizell brothers and brought a funk and soul sound to Blue Note albums such as Places and Spaces.",
+      "sources": [
+        "https://www.bluenote.com/artist/donald-byrd/",
+        "https://jazz.com/encyclopedia/byrd-donald-donaldson-toussaint-louverture"
+      ]
+    },
+    {
+      "id": "artist:roy-ayers",
+      "type": "artist",
+      "name": "Roy Ayers",
+      "addedOn": "2026-11-12",
+      "kind": "person",
+      "period": {
+        "start": 1963,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks his first solo album in 1963. The end marks his farewell tour in 2023.",
+        "end": 2023
+      },
+      "description": "American vibraphonist and composer who formed Ubiquity in the 1970s. The group helped pioneer jazz-funk with songs such as Everybody Loves the Sunshine.",
+      "sources": [
+        "https://www.laphil.com/people/roy-ayers",
+        "https://pitchfork.com/news/roy-ayers-influential-vibraphonist-and-jazz-funk-composer-dies-at-84/",
+        "https://www.brightonandhovenews.org/2023/05/22/roy-ayers-plays-last-ever-brighton-show/"
       ]
     }
   ],
@@ -53423,6 +53942,351 @@
       "confidence": "medium",
       "sources": [
         "https://mtosmt.org/issues/mto.13.19.2/mto.13.19.2.mccandless.pdf"
+      ]
+    },
+    {
+      "id": "key:chuck-brown-go-go",
+      "from": "artist:chuck-brown",
+      "to": "genre:go-go",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.arts.gov/honors/heritage/chuck-brown",
+        "https://folklife.si.edu/news-and-events/chuck-brown-1936-2012-is-remembered-watch-video-of-his-electrifying-performance-at-the-2000-folklife-festival"
+      ]
+    },
+    {
+      "id": "key:trouble-funk-go-go",
+      "from": "artist:trouble-funk",
+      "to": "genre:go-go",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://troublefunk.com/our-story"
+      ]
+    },
+    {
+      "id": "key:rare-essence-go-go",
+      "from": "artist:rare-essence",
+      "to": "genre:go-go",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.rareessence.com/"
+      ]
+    },
+    {
+      "id": "lineage:funk-go-go",
+      "from": "genre:funk",
+      "to": "genre:go-go",
+      "type": "influences",
+      "confidence": "medium",
+      "sources": [
+        "https://americanhistory.si.edu/explore/stories/go-go-funky-percussive-music-invented-washington-dc"
+      ]
+    },
+    {
+      "id": "key:at-the-gates-melodic-death-metal",
+      "from": "artist:at-the-gates",
+      "to": "genre:melodic-death-metal",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.diva-portal.org/smash/get/diva2%3A1192781/FULLTEXT01.pdf",
+        "https://peaceville.com/bands/at-the-gates/"
+      ]
+    },
+    {
+      "id": "key:dark-tranquillity-melodic-death-metal",
+      "from": "artist:dark-tranquillity",
+      "to": "genre:melodic-death-metal",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.loudersound.com/features/unchained-melody-we-revisit-the-influential-gothenburg-sound",
+        "https://www.diva-portal.org/smash/get/diva2%3A1192781/FULLTEXT01.pdf"
+      ]
+    },
+    {
+      "id": "key:in-flames-melodic-death-metal",
+      "from": "artist:in-flames",
+      "to": "genre:melodic-death-metal",
+      "type": "key_artist_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.loudersound.com/features/unchained-melody-we-revisit-the-influential-gothenburg-sound",
+        "https://www.diva-portal.org/smash/get/diva2%3A1192781/FULLTEXT01.pdf"
+      ]
+    },
+    {
+      "id": "lineage:melodic-death-metal-death-metal",
+      "from": "genre:melodic-death-metal",
+      "to": "genre:death-metal",
+      "type": "subgenre_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.loudersound.com/features/unchained-melody-we-revisit-the-influential-gothenburg-sound",
+        "https://www.diva-portal.org/smash/get/diva2%3A1192781/FULLTEXT01.pdf"
+      ]
+    },
+    {
+      "id": "key:dj-marlboro-brazilian-funk",
+      "from": "artist:dj-marlboro",
+      "to": "genre:brazilian-funk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://new.scielo.br/j/vb/a/LCBRksv9HrGrNDMnbtGk7TC/?ilang=en&lang=en"
+      ]
+    },
+    {
+      "id": "key:claudinho-e-buchecha-brazilian-funk",
+      "from": "artist:claudinho-e-buchecha",
+      "to": "genre:brazilian-funk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://dicionariompb.com.br/termo/black-music/"
+      ]
+    },
+    {
+      "id": "key:mc-marcinho-brazilian-funk",
+      "from": "artist:mc-marcinho",
+      "to": "genre:brazilian-funk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://dicionariompb.com.br/artista/mc-marcinho/"
+      ]
+    },
+    {
+      "id": "lineage:electro-brazilian-funk",
+      "from": "genre:electro",
+      "to": "genre:brazilian-funk",
+      "type": "influences",
+      "confidence": "medium",
+      "sources": [
+        "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/79/23/2020717923/2020717923.pdf"
+      ]
+    },
+    {
+      "id": "key:roska-uk-funky",
+      "from": "artist:roska",
+      "to": "genre:uk-funky",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://djmag.com/longreads/uk-funky-isn-t-back-it-never-left"
+      ]
+    },
+    {
+      "id": "key:donaeo-uk-funky",
+      "from": "artist:donaeo",
+      "to": "genre:uk-funky",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://earth-agency.com/artist/donaeo/",
+        "https://djmag.com/longreads/uk-funky-isn-t-back-it-never-left"
+      ]
+    },
+    {
+      "id": "key:lil-silva-uk-funky",
+      "from": "artist:lil-silva",
+      "to": "genre:uk-funky",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://djmag.com/longreads/uk-funky-isn-t-back-it-never-left"
+      ]
+    },
+    {
+      "id": "lineage:uk-funky-house",
+      "from": "genre:uk-funky",
+      "to": "genre:house",
+      "type": "derived_from",
+      "confidence": "high",
+      "sources": [
+        "https://daily.redbullmusicacademy.com/2015/03/uk-funky-revival-feature/"
+      ]
+    },
+    {
+      "id": "key:tatsuro-yamashita-city-pop",
+      "from": "artist:tatsuro-yamashita",
+      "to": "genre:city-pop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://tatsuro.co.jp/biography/",
+        "https://www.nippon.com/en/articles/-/15831"
+      ]
+    },
+    {
+      "id": "key:mariya-takeuchi-city-pop",
+      "from": "artist:mariya-takeuchi",
+      "to": "genre:city-pop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://wmg.jp/mariya",
+        "https://www.sg.emb-japan.go.jp/JCC/E-Magazine-May-2023-City-Pop.html"
+      ]
+    },
+    {
+      "id": "key:anri-city-pop",
+      "from": "artist:anri",
+      "to": "genre:city-pop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://anri-music.com/s/anri/page/ANRIpedia_eng?ima=0000"
+      ]
+    },
+    {
+      "id": "lineage:city-pop-pop",
+      "from": "genre:city-pop",
+      "to": "genre:pop",
+      "type": "subgenre_of",
+      "confidence": "medium",
+      "sources": [
+        "https://www.sg.emb-japan.go.jp/JCC/E-Magazine-May-2023-City-Pop.html",
+        "https://www.nippon.com/en/articles/-/15831"
+      ]
+    },
+    {
+      "id": "key:glen-campbell-country-pop",
+      "from": "artist:glen-campbell",
+      "to": "genre:country-pop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://countrymusichalloffame.org/hall-of-fame/glen-campbell"
+      ]
+    },
+    {
+      "id": "key:dolly-parton-country-pop",
+      "from": "artist:dolly-parton",
+      "to": "genre:country-pop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://countrymusichalloffame.org/hall-of-fame/dolly-parton"
+      ]
+    },
+    {
+      "id": "key:shania-twain-country-pop",
+      "from": "artist:shania-twain",
+      "to": "genre:country-pop",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://cmhof.imgix.net/wp-content/uploads/2023/08/24125004/SCH_WM_SongwriterBios_ShaniaTwain_23-7-12.pdf"
+      ]
+    },
+    {
+      "id": "lineage:country-pop-country",
+      "from": "genre:country-pop",
+      "to": "genre:country",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://cmhof.imgix.net/wp-content/uploads/2023/08/24125004/SCH_WM_SongwriterBios_ShaniaTwain_23-7-12.pdf",
+        "https://countrymusichalloffame.org/hall-of-fame/dolly-parton"
+      ]
+    },
+    {
+      "id": "key:charley-patton-delta-blues",
+      "from": "artist:charley-patton",
+      "to": "genre:delta-blues",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://msbluestrail.org/blues-trail-markers/charley-patton-birthplace",
+        "https://blogs.loc.gov/nls-music-notes/2021/09/american-music-from-a-to-z-in-the-nls-music-collection-d-delta-blues/"
+      ]
+    },
+    {
+      "id": "key:son-house-delta-blues",
+      "from": "artist:son-house",
+      "to": "genre:delta-blues",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://msbluestrail.org/blues-trail-markers/son-house",
+        "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/son-house"
+      ]
+    },
+    {
+      "id": "key:robert-johnson-delta-blues",
+      "from": "artist:robert-johnson",
+      "to": "genre:delta-blues",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://blogs.loc.gov/nls-music-notes/2021/09/american-music-from-a-to-z-in-the-nls-music-collection-d-delta-blues/"
+      ]
+    },
+    {
+      "id": "lineage:delta-blues-blues",
+      "from": "genre:delta-blues",
+      "to": "genre:blues",
+      "type": "subgenre_of",
+      "confidence": "high",
+      "sources": [
+        "https://blogs.loc.gov/nls-music-notes/2021/09/american-music-from-a-to-z-in-the-nls-music-collection-d-delta-blues/"
+      ]
+    },
+    {
+      "id": "key:herbie-hancock-jazz-funk",
+      "from": "artist:herbie-hancock",
+      "to": "genre:jazz-funk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.arts.gov/honors/jazz/herbie-hancock"
+      ]
+    },
+    {
+      "id": "key:donald-byrd-jazz-funk",
+      "from": "artist:donald-byrd",
+      "to": "genre:jazz-funk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.bluenote.com/artist/donald-byrd/",
+        "https://jazz.com/encyclopedia/byrd-donald-donaldson-toussaint-louverture"
+      ]
+    },
+    {
+      "id": "key:roy-ayers-jazz-funk",
+      "from": "artist:roy-ayers",
+      "to": "genre:jazz-funk",
+      "type": "key_artist_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.laphil.com/people/roy-ayers",
+        "https://pitchfork.com/news/roy-ayers-influential-vibraphonist-and-jazz-funk-composer-dies-at-84/",
+        "https://www.brightonandhovenews.org/2023/05/22/roy-ayers-plays-last-ever-brighton-show/"
+      ]
+    },
+    {
+      "id": "lineage:jazz-funk-jazz",
+      "from": "genre:jazz-funk",
+      "to": "genre:jazz",
+      "type": "fusion_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.arts.gov/honors/jazz/herbie-hancock"
+      ]
+    },
+    {
+      "id": "lineage:jazz-funk-funk",
+      "from": "genre:jazz-funk",
+      "to": "genre:funk",
+      "type": "fusion_of",
+      "confidence": "high",
+      "sources": [
+        "https://www.arts.gov/honors/jazz/herbie-hancock"
       ]
     }
   ]
