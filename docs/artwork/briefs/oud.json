@@ -27,5 +27,15 @@
   "avoid": [
     "Long fretted neck of a bouzouki"
   ],
-  "notes": "A representative Arabic oud with five paired courses and one single course."
+  "notes": "A representative Arabic oud with five paired courses and one single course.",
+  "geometry": {
+    "view": "Soundboard front",
+    "proportions": "Wide pear-shaped bowl-body and distinct short fretless neck.",
+    "partLayout": "Set the bridge low on the face, with rosettes above it. The pegbox angles backward beyond the nut.",
+    "documentedDimensions": {
+      "value": "76.2 cm long × 35.6 cm wide, about 2.1:1",
+      "source": "https://www.metmuseum.org/art/collection/search/776535",
+      "scope": "Ūd"
+    }
+  }
 }

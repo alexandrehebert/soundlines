@@ -16,6 +16,10 @@ const revisedInstruments = new Set([
   'pedal-steel-guitar', 'sarod', 'sitar', 'tanpura', 'tb-303', 'tr-909', 'viola',
   'auto-tune', 'bassoon', 'conga', 'harmonium', 'juno-106', 'minimoog', 'piccolo',
   'saxophone', 'vibraphone', 'violin',
+  'bass-drum', 'celesta', 'cuban-tres', 'cuica', 'dominican-tambora', 'erhu',
+  'kayamb', 'kora', 'maravann', 'ney', 'rouler', 'sabar', 'sheng',
+  'taiko', 'viola-da-gamba', 'yueqin',
+  'euphonium', 'french-horn', 'trombone', 'trumpet', 'tuba',
 ])
 
 const comparisonInstruments = instruments.filter(({ id }) => revisedInstruments.has(id.slice('instrument:'.length)))

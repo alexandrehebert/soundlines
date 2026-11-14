@@ -1,0 +1,40 @@
+{
+  "slug": "marimbula",
+  "instrument": "instrument:marimbula",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://latino.si.edu/exposiciones/puro-ritmo/qr/salsas-roots-case",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://americanhistory.si.edu/ko/collections/object/nmah_601901",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Large rectangular resonating wooden box. Sound opening on front.",
+  "features": [
+    "Large rectangular resonating wooden box",
+    "Sound opening on front",
+    "Short flat metal tongues fixed across the front",
+    "Flat seating surface"
+  ],
+  "iconFeatures": [
+    "Large rectangular resonating wooden box",
+    "Sound opening on front"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Front three-quarter",
+    "proportions": "Upright rectangular box with a wide playing face.",
+    "partLayout": "A row of short metal tongues sits over or near the round opening, with a narrow clamp above them.",
+    "referenceImage": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Marimbula.JPG/960px-Marimbula.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Marimbula.JPG"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "didgeridoo",
+  "instrument": "instrument:didgeridoo",
+  "family": "winds",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://collections.museumsvictoria.com.au/items/166456",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/503365",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Long subtly tapered hollow tube. Narrow opening at the mouth end.",
+  "features": [
+    "Long subtly tapered hollow tube",
+    "Narrow opening at the mouth end",
+    "Wider open bell end without flare hardware",
+    "Slight natural irregularity of the timber"
+  ],
+  "iconFeatures": [
+    "Long subtly tapered hollow tube",
+    "Narrow opening at the mouth end"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Side with both end openings visible",
+    "proportions": "Long irregular tube with a very gradual flare at the larger end.",
+    "partLayout": "Keep the smaller blowing end plain and open. Avoid side holes or regular metal joints.",
+    "documentedDimensions": {
+      "value": "157.5 cm long × 7 cm wide, about 22.5:1",
+      "source": "https://www.metmuseum.org/art/collection/search/503365",
+      "scope": "Yidaki (didjeridu)"
+    },
+    "referenceImage": {
+      "url": "https://murrundindi.com.au/cdn/shop/files/D1-1.jpg?v=1737349737",
+      "source": "https://murrundindi.com.au/products/yadiki-didgeridoo-1"
+    }
+  }
+}

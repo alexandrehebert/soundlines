@@ -39,5 +39,10 @@
     "A full-size guitar: the body must stay small next to the neck",
     "Armadillo scales on the front; the shell is the back and is not visible from the front"
   ],
-  "notes": "Wooden modern form chosen over the armadillo shell because it is the common instrument today and the front view hides the back anyway. Pairs of strings and ten pegs are the features that separate it from a ukulele at banner size; at icon size only the small waisted body and the wide head survive."
+  "notes": "Wooden modern form chosen over the armadillo shell because it is the common instrument today and the front view hides the back anyway. Pairs of strings and ten pegs are the features that separate it from a ukulele at banner size; at icon size only the small waisted body and the wide head survive.",
+  "geometry": {
+    "view": "Soundboard front",
+    "proportions": "Use a compact waisted body, distinct from the headstock and short fretted neck.",
+    "partLayout": "Ten strings run in five close pairs from the broad bridge to two rows of five pegs."
+  }
 }

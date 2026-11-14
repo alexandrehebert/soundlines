@@ -5797,6 +5797,203 @@
     "instrument:guembri": {
       "description": "Gezupfte Laute mit drei Saiten, die in der städtischen Gnawa-Musik Marokkos gespielt wird. Smithsonian Folkways dokumentiert das Instrument in seinen Aufnahmen aus Marokko von 1966.",
       "name": "Guembri"
+    },
+    "instrument:erhu": {
+      "name": "Erhu",
+      "description": "Chinesische zweisaitige, senkrecht gespielte Fidel, deren Bogenhaar zwischen den Saiten verläuft.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:pipa": {
+      "name": "Pipa",
+      "description": "Chinesische Zupflaute mit vier Saiten, birnenförmigem Korpus und Bünden, die bis auf die Decke reichen."
+    },
+    "instrument:dizi": {
+      "name": "Dizi",
+      "description": "Chinesische Querflöte mit einer dünnen Membran, die beim Spielen mitschwingt und einen sirrenden Klang erzeugt."
+    },
+    "instrument:suona": {
+      "name": "Suona",
+      "description": "Chinesische Schalmei mit Doppelrohrblatt, trichterförmigem Metallschallbecher und durchdringendem Klang."
+    },
+    "instrument:yueqin": {
+      "name": "Yueqin",
+      "description": "Chinesische Kurzhalslaute, die wegen ihres flachen, runden Korpus Mondlaute genannt wird.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:sheng": {
+      "name": "Sheng",
+      "description": "Chinesische Mundorgel mit freien Zungen und Pfeifen, die um eine Windkammer angeordnet sind."
+    },
+    "instrument:biwa": {
+      "name": "Biwa",
+      "description": "Japanische Bundlaute mit birnenförmigem Korpus, die mit einem breiten Plektrum gespielt wird."
+    },
+    "instrument:taiko": {
+      "name": "Taiko",
+      "description": "Japanische Trommeln, die mit Schlägeln gespielt werden. Im Gagaku gehören die aufgehängte Tsuri-Daiko und die größere Dadaiko dazu."
+    },
+    "instrument:soribuk": {
+      "name": "Soribuk",
+      "description": "Koreanische Fasstrommel zur Begleitung des Pansori-Gesangs, deren Felle mit Metallnägeln befestigt sind."
+    },
+    "instrument:saraswati-veena": {
+      "name": "Saraswati veena",
+      "description": "Südindische Bundlaute der karnatischen Musik, benannt nach der hinduistischen Göttin Sarasvati.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:mridangam": {
+      "name": "Mridangam",
+      "description": "Südindische Fasstrommel mit zwei Fellen, die in der karnatischen Musik rhythmisch begleitet."
+    },
+    "instrument:dhol": {
+      "name": "Dhol",
+      "description": "Doppelfellige Fasstrommel, die die Rhythmen des Punjabi-Bhangra prägt."
+    },
+    "instrument:sarangi": {
+      "name": "Sarangi",
+      "description": "Nordindische Streichlaute mit Resonanzsaiten, die in der klassischen hindustanischen Musik den Gesang begleitet."
+    },
+    "instrument:bonang": {
+      "name": "Bonang",
+      "description": "Satz kleiner gestimmter Gongs, die im indonesischen Gamelan waagerecht auf einem Gestell liegen und mit gepolsterten Schlägeln gespielt werden."
+    },
+    "instrument:javanese-rebab": {
+      "name": "Javanischer Rebab",
+      "description": "Zweisaitige Spießgeige, die im javanischen Gamelan Melodien ausgestaltet."
+    },
+    "instrument:kora": {
+      "name": "Kora",
+      "description": "Westafrikanische Zupfharfe der Mandé. Ihre Saiten führen über einen hohen Steg oberhalb eines hautbespannten Kalebassenresonators.",
+      "estimateNote": "Die Einordnung folgt einer mündlichen Überlieferung aus dem 18. Jahrhundert."
+    },
+    "instrument:djembe": {
+      "name": "Djembé",
+      "description": "Kelchtrommel der Mandé, die mit den Händen gespielt wird. Verschiedene Schläge erzeugen Bass, offene Töne und Slaps.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:qanun": {
+      "name": "Kanun",
+      "description": "Trapezförmige Zupfzither mit kleinen Hebeln, die die Tonhöhe der Saitenchöre dem jeweiligen Modus anpassen."
+    },
+    "instrument:ney": {
+      "name": "Ney",
+      "description": "Randgeblasene Rohrflöte der arabischen Kunstmusik.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:riqq": {
+      "name": "Riqq",
+      "description": "Kleine Rahmentrommel mit Fell und Metallschellen für Ensembles der arabischen Kunstmusik.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:darbuka": {
+      "name": "Darbuka",
+      "description": "Mit den Händen gespielte Kelchtrommel der arabischen Musik, regional unter anderem als Tabla und Dumbak bekannt.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:santur": {
+      "name": "Santur",
+      "description": "Trapezförmige Zither, deren Saiten mit leichten Schlägeln angeschlagen werden. Sie ist typisch für den irakischen Maqam.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:balafon": {
+      "name": "Balafon",
+      "description": "Westafrikanisches Xylofon mit Holzklangstäben und Kalebassenresonatoren, in den Traditionen der Mandé auch Bala genannt."
+    },
+    "instrument:ravann": {
+      "name": "Ravann",
+      "description": "Mauritische Rahmentrommel mit Fell, die im traditionellen Sega mit den Händen gespielt wird.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:maravann": {
+      "name": "Maravann",
+      "description": "Rechteckige mauritische Rassel mit Samenfüllung, die im traditionellen Sega waagerecht geschüttelt wird.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:sabar": {
+      "name": "Sabar",
+      "description": "Senegalesische Trommel, die mit einer Hand und einem Stock gespielt wird. Ihre Rhythmen bilden die Grundlage des Mbalax.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:tama": {
+      "name": "Tama",
+      "description": "Kleine Sprechtrommel der Wolof. Beim Anschlagen drückt der Spieler die Spannschnüre unter dem Arm zusammen und verändert so die Tonhöhe.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:kayamb": {
+      "name": "Kayamb",
+      "description": "Flache Rassel von La Réunion aus Pflanzenstängeln mit Samenfüllung. Sie gibt im Maloya den Puls an.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:rouler": {
+      "name": "Roulèr",
+      "description": "Große Fasstrommel von La Réunion. Der Spieler sitzt rittlings darauf und spielt die tiefen Rhythmen des Maloya.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:didgeridoo": {
+      "name": "Didgeridoo",
+      "description": "Langes hölzernes Blasinstrument aus Nordaustralien. Die Spieler erzeugen einen Bordun, indem sie ihre Lippen an der Öffnung vibrieren lassen. Yidaki ist eine Bezeichnung der Yolŋu für eine regionale Form.",
+      "estimateNote": "Ein auf etwa 1900 datiertes Museumsobjekt dient als Anhaltspunkt für diese ältere Tradition."
+    },
+    "instrument:yamaha-dx7": {
+      "name": "Yamaha DX7",
+      "description": "Digitaler Synthesizer, der mit Frequenzmodulation unter anderem helle E-Piano-Klänge und markante Bässe erzeugt."
+    },
+    "instrument:mellotron": {
+      "name": "Mellotron",
+      "description": "Elektromechanisches Tasteninstrument, das beim Drücken einer Taste ein Stück vorbespieltes Magnetband abspielt."
+    },
+    "instrument:fairlight-cmi": {
+      "name": "Fairlight CMI",
+      "description": "Australisches Computermusikinstrument, mit dem sich digitale Samples aufnehmen und über eine Tastatur abspielen lassen."
+    },
+    "instrument:jupiter-8": {
+      "name": "Roland JUPITER-8",
+      "description": "Achtstimmiger Analogsynthesizer mit Arpeggiator und einer Tastatur, die sich zwischen zwei Klängen aufteilen lässt."
+    },
+    "instrument:uilleann-pipes": {
+      "name": "Uilleann Pipes",
+      "description": "Irischer Dudelsack mit einem vom Ellenbogen betätigten Blasebalg, einer Melodiepfeife und Bordunpfeifen für anhaltende Töne."
+    },
+    "instrument:portuguese-guitar": {
+      "name": "Portugiesische Gitarre",
+      "description": "Portugiesisches Zupfinstrument mit sechs Metallsaitenpaaren, das bei der Begleitung des Fado eine zentrale Rolle spielt."
+    },
+    "instrument:cuban-tres": {
+      "name": "Kubanischer Tres",
+      "description": "Gitarrenähnliches kubanisches Instrument mit drei Saitenchören, das den Son cubano prägt."
+    },
+    "instrument:viola-da-gamba": {
+      "name": "Viola da gamba",
+      "description": "Gestrichenes Saiteninstrument mit Bünden, das aufrecht auf oder zwischen den Beinen gehalten und häufig in Gruppen aus Gamben verschiedener Größen gespielt wird."
+    },
+    "instrument:celesta": {
+      "name": "Celesta",
+      "description": "Tasteninstrument, dessen Filzhämmer Metallplatten anschlagen und einen weichen, glockenartigen Klang erzeugen."
+    },
+    "instrument:puerto-rican-cuatro": {
+      "name": "Puerto-ricanischer Cuatro",
+      "description": "Puerto-ricanisches Zupfinstrument mit violinförmigem Korpus und fünf Saitenpaaren in seiner modernen Form."
+    },
+    "instrument:marimbula": {
+      "name": "Marímbula",
+      "description": "Großer Holzkasten mit gezupften Metallzungen, die im frühen kubanischen Son die Basstöne liefern."
+    },
+    "instrument:hammered-dulcimer": {
+      "name": "Hackbrett",
+      "description": "Zither mit Saitenchören, die über einen flachen Resonanzkasten gespannt sind und mit kleinen Schlägeln angeschlagen werden."
+    },
+    "instrument:cuica": {
+      "name": "Cuíca",
+      "description": "Brasilianische Reibtrommel, die durch Reiben eines an der Innenseite des Trommelfells befestigten Stabes erklingt.",
+      "estimateNote": "Das Datum beruht auf einem erhaltenen Beleg für dieses ältere Instrument."
+    },
+    "instrument:bass-drum": {
+      "name": "Große Trommel",
+      "description": "Große, tief klingende Trommel, die in europäischen Orchestern und Militärkapellen oft zusammen mit Becken gespielt wurde."
+    },
+    "instrument:dominican-tambora": {
+      "name": "Dominikanische Tambora",
+      "description": "Dominikanische Trommel mit zwei Fellen, die im Merengue típico mit einer Hand und einem Stock gespielt wird."
     }
   },
   "edges": {

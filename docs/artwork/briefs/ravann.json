@@ -1,0 +1,40 @@
+{
+  "slug": "ravann",
+  "instrument": "instrument:ravann",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://ich.unesco.org/doc/src/26081-EN.pdf",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://ich.unesco.org/en/10-representative-list-00748?call=slideshow&id=01003&include=slideshow_inc.php&mode=scroll&width=620",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Large round wooden hoop. Single taut skin head.",
+  "features": [
+    "Large round wooden hoop",
+    "Single taut skin head",
+    "Shallow open frame",
+    "Plain rim without jingles"
+  ],
+  "iconFeatures": [
+    "Large round wooden hoop",
+    "Single taut skin head"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Head front with shallow side visible",
+    "proportions": "Wide round membrane over a single shallow wooden hoop.",
+    "partLayout": "Show the skin terminating at the rim. Leave the lower back open and omit jingles.",
+    "referenceImage": {
+      "url": "https://www.abaim.mu/images/shop/a9_06444.jpg",
+      "source": "https://www.abaim.mu/en/shop/traditional-instruments/ravann-m"
+    }
+  }
+}

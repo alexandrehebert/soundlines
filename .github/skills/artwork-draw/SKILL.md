@@ -32,7 +32,7 @@ ship decision.
    - `method: hand`: write the four files by hand on the canvases of the style guide, copying the
      structure of a hand-drawn neighbour (e.g. `accordion.svg`). Edit generated files only through the
      generator; the gate fails on drift.
-4. **Check every brief item on the PNG**: each `features` count and placement on the banner, each
+4. **Check every brief item on the PNG**: the `geometry` view, proportions and part layout, each `features` count and placement on the banner, each
    `iconFeatures` at 24 and 16 px, nothing in `avoid`. Iterate until all hold.
 5. **Gate.** `node .github/skills/artwork-validate/scripts/check-artwork.mjs <slug> --png-dir $STAGE`
    must PASS (WARNs explained), then the full set without arguments (orphans, generator drift).

@@ -1,0 +1,40 @@
+{
+  "slug": "hammered-dulcimer",
+  "instrument": "instrument:hammered-dulcimer",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://repository.si.edu/bitstream/handle/10088/2443/SSHT-0044_Lo_res.pdf",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://folkways-media.si.edu/docs/folkways/artwork/FLG00087-LP.pdf",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Wide trapezoidal soundbox. Exposed horizontal string courses.",
+  "features": [
+    "Wide trapezoidal soundbox",
+    "Exposed horizontal string courses",
+    "Two tall bridges across string courses",
+    "Pair of thin wooden hand hammers"
+  ],
+  "iconFeatures": [
+    "Wide trapezoidal soundbox",
+    "Exposed horizontal string courses"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "High three-quarter",
+    "proportions": "A wide symmetric trapezoid lies flat with a long edge toward the player.",
+    "partLayout": "Two staggered bridges subdivide courses stretching left to right. The separate hammers hover over strings rather than attaching to them.",
+    "referenceImage": {
+      "url": "https://cdn.prod.website-files.com/60be912aa3964cbf130271df/61b7a7a4b68f416ede5d48a5_D550-1.jpg",
+      "source": "https://manufacturing.dustystrings.com/dulcimer-models/d550"
+    }
+  }
+}

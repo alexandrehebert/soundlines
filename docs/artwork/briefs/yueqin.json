@@ -1,0 +1,48 @@
+{
+  "slug": "yueqin",
+  "instrument": "instrument:yueqin",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/500626",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/652",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Horniman_instruments_02.jpg",
+      "shows": "Horniman display provides a clear comparison between the round body and the short neck."
+    }
+  ],
+  "silhouette": "Round flat resonator. Short fretted neck and four lateral pegs.",
+  "features": [
+    "Round flat resonator",
+    "Short fretted neck and four lateral pegs",
+    "Four strings spaced into two courses"
+  ],
+  "iconFeatures": [
+    "Round flat resonator",
+    "Short fretted neck and four lateral pegs"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Soundboard front",
+    "proportions": "Broad circular body dwarfs the short, narrow fretted neck.",
+    "partLayout": "Four strings form two pairs. Lateral pegs sit close to the end of the neck; keep the border of the round body visible.",
+    "documentedDimensions": {
+      "value": "57.5 cm overall height and 34.5 cm body diameter; the body spans about 60% of the height",
+      "source": "https://www.metmuseum.org/art/collection/search/500626",
+      "scope": "Yueqin (月琴)"
+    },
+    "referenceImage": {
+      "url": "https://images.metmuseum.org/CRDImages/mi/web-large/DP218943.jpg",
+      "source": "https://www.metmuseum.org/art/collection/search/500626"
+    }
+  }
+}

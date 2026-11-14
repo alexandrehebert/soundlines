@@ -1,0 +1,48 @@
+{
+  "slug": "sheng",
+  "instrument": "instrument:sheng",
+  "family": "winds",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/503632",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://music.yale.edu/browse-collection/sheng-35091973",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/505403",
+      "shows": "The clustered pipes rise from a rounded wind chamber rather than a flat base."
+    }
+  ],
+  "silhouette": "Cup-shaped wind chamber with rounded lip. Overlapping upright pipes of staggered lengths.",
+  "features": [
+    "Cup-shaped wind chamber with rounded lip",
+    "Overlapping upright pipes of staggered lengths",
+    "Side mouthpiece below the cluster"
+  ],
+  "iconFeatures": [
+    "Cup-shaped wind chamber with rounded lip",
+    "Overlapping upright pipes of staggered lengths"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Front three-quarter",
+    "proportions": "A staggered crown of vertical pipes rises from a rounded, low wind chamber.",
+    "partLayout": "Attach the side mouthpiece to the chamber, below pipe roots, and leave upper pipe ends independent.",
+    "documentedDimensions": {
+      "value": "50.2 cm long × 11.4 cm wide including mouthpiece, about 4.4:1",
+      "source": "https://www.metmuseum.org/art/collection/search/503632",
+      "scope": "Sheng ( 笙 )"
+    },
+    "referenceImage": {
+      "url": "https://images.metmuseum.org/CRDImages/mi/web-large/DP102103.jpg",
+      "source": "https://www.metmuseum.org/art/collection/search/503632"
+    }
+  }
+}

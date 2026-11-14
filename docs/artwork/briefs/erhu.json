@@ -1,0 +1,48 @@
+{
+  "slug": "erhu",
+  "instrument": "instrument:erhu",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/500616",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://wesomeka.wesleyan.edu/vim2/items/show/69",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.amnh.org/explore/ology/anthropology/sounds-of-the-silk-road2",
+      "shows": "Museum photograph showing the slender neck, horizontal resonator and bow."
+    }
+  ],
+  "silhouette": "Small six-sided resonator. Tall fretless neck with two lateral pegs.",
+  "features": [
+    "Small six-sided resonator",
+    "Tall fretless neck with two lateral pegs",
+    "Bow hair passing between two strings"
+  ],
+  "iconFeatures": [
+    "Small six-sided resonator",
+    "Tall fretless neck with two lateral pegs"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Upright three-quarter",
+    "proportions": "Long thin neck extends from a tiny hexagonal resonator at its foot.",
+    "partLayout": "Two lateral pegs feed two strings. Lay out the bow and hair so the hair passes between the strings close to the resonator.",
+    "documentedDimensions": {
+      "value": "76 cm overall height and 6.2 cm resonator face diameter, about 12:1",
+      "source": "https://www.metmuseum.org/art/collection/search/500616",
+      "scope": "Erhu"
+    },
+    "referenceImage": {
+      "url": "https://images.metmuseum.org/CRDImages/mi/web-large/DP-13678-006.jpg",
+      "source": "https://www.metmuseum.org/art/collection/search/500616"
+    }
+  }
+}

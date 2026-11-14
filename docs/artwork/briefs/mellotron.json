@@ -1,0 +1,40 @@
+{
+  "slug": "mellotron",
+  "instrument": "instrument:mellotron",
+  "family": "electronic",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8094212/mellotron-fx-sound-effects-console",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co6047/mellotron-keyboard-musical-instruments",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Tall rectangular cabinet. Short piano keyboard.",
+  "features": [
+    "Tall rectangular cabinet",
+    "Short piano keyboard",
+    "Controls above or beside keys",
+    "Tape mechanism inside case"
+  ],
+  "iconFeatures": [
+    "Tall rectangular cabinet",
+    "Short piano keyboard"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Player-front three-quarter of M400",
+    "proportions": "Broad but compact cabinet with a single manual and a shallow upper rail.",
+    "partLayout": "Place the panel and knobs left of the keybed. Keep keys recessed between cheeks and the cabinet substantially thicker than a synthesizer slab.",
+    "referenceImage": {
+      "url": "https://www.outofphase.fr/wp-content/uploads/2018/04/silver_panel.jpg",
+      "source": "https://www.outofphase.fr/en/mellotron-m400-en/"
+    }
+  }
+}

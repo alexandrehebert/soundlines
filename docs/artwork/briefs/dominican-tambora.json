@@ -1,0 +1,44 @@
+{
+  "slug": "dominican-tambora",
+  "instrument": "instrument:dominican-tambora",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/505683",
+      "shows": "The Dominican collection specimen shows how the cords tie the two rims together."
+    },
+    {
+      "url": "https://folkways.si.edu/news-and-press/arts-and-witch-crafts-why-witches-still-fascinate-us",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Compact barrel-shaped shell. Two rims tied together with rope lacing.",
+  "features": [
+    "Compact barrel-shaped shell",
+    "Two rims tied together with rope lacing",
+    "One straight stick beside the drum"
+  ],
+  "iconFeatures": [
+    "Compact barrel-shaped shell",
+    "Two rims tied together with rope lacing"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Side three-quarter",
+    "proportions": "Compact barrel widens slightly in the middle, between two skin heads.",
+    "partLayout": "Show ropes joining opposite rim attachment points and a slim single stick alongside the shell.",
+    "documentedDimensions": {
+      "value": "45 cm long × 25 cm across, about 1.8:1",
+      "source": "https://www.metmuseum.org/art/collection/search/505683",
+      "scope": "Tambora"
+    },
+    "referenceImage": {
+      "url": "https://cdn11.bigcommerce.com/s-gs0pdv/images/stencil/728x728/products/10357/30229/LP271-WD__44770.1576865733.png?c=2",
+      "source": "https://www.cymbalfusion.com/lp-wood-rim-tambora-w-beaters/"
+    }
+  }
+}

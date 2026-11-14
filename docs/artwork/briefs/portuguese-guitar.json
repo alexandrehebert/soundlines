@@ -1,0 +1,40 @@
+{
+  "slug": "portuguese-guitar",
+  "instrument": "instrument:portuguese-guitar",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.museudofado.pt/historia-do-fado?name=2027",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.museudofado.pt/exposicao/o-som-da-saudade-a-citara-portuguesa",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Pear-shaped soundbox. Circular soundhole.",
+  "features": [
+    "Pear-shaped soundbox",
+    "Circular soundhole",
+    "Six paired wire courses",
+    "Fan-shaped headstock with twelve tuners"
+  ],
+  "iconFeatures": [
+    "Pear-shaped soundbox",
+    "Circular soundhole"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Soundboard front",
+    "proportions": "Round pear-shaped resonator below a narrow neck ending in a fan-shaped tuning head.",
+    "partLayout": "Show six paired courses meeting a central bridge. Keep fan tuners spread across the head rather than along its sides.",
+    "referenceImage": {
+      "url": "https://www.salaomusical.com/11714-thickbox_default/guitarra-portuguesa-artimusica-gp70c-simples-modelo-coimbra.jpg",
+      "source": "https://www.salaomusical.com/pt/guitarras-portuguesas/4510-guitarra-portuguesa-artimusica-gp70c-simples-modelo-coimbra.html"
+    }
+  }
+}

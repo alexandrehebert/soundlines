@@ -1,0 +1,45 @@
+{
+  "slug": "suona",
+  "instrument": "instrument:suona",
+  "family": "winds",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1249",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/505216",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Slender scalloped wood body. Large flared metal bell.",
+  "features": [
+    "Slender scalloped wood body",
+    "Large flared metal bell",
+    "Short double reed on a metal staple",
+    "Small disc below the reed"
+  ],
+  "iconFeatures": [
+    "Slender scalloped wood body",
+    "Large flared metal bell"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Side along the bore",
+    "proportions": "Short scalloped wooden body ends in a conspicuously wider metal flare.",
+    "partLayout": "Place the small disc and short double reed above the body. Align the bell neck with the axis of the wood tube.",
+    "documentedDimensions": {
+      "value": "40.6 cm long with a 14 cm bell diameter, about 2.9:1",
+      "source": "https://www.metmuseum.org/art/collection/search/505216",
+      "scope": "Suona (嗩吶 )"
+    },
+    "referenceImage": {
+      "url": "https://images.metmuseum.org/CRDImages/mi/original/DP216548.jpg",
+      "source": "https://www.metmuseum.org/art/collection/search/505216"
+    }
+  }
+}

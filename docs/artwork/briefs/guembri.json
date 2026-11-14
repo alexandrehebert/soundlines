@@ -27,5 +27,10 @@
     "Round sound hole",
     "Fretted neck"
   ],
-  "notes": "Shows the bass lute used in urban Moroccan Gnawa performance."
+  "notes": "Shows the bass lute used in urban Moroccan Gnawa performance.",
+  "geometry": {
+    "view": "Face-on with slight depth visible",
+    "proportions": "Long bare neck emerges from an elongated skin-faced box resonator.",
+    "partLayout": "Three strings cross the hide toward the bridge. Avoid a circular sound hole in the hide or regular frets on the neck."
+  }
 }

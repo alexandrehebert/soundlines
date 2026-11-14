@@ -1,0 +1,52 @@
+{
+  "slug": "kora",
+  "instrument": "instrument:kora",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/503060",
+      "shows": "Mamadou Kouyaté's 21-string kora shows the long neck with braided leather tuning collars, calabash, paired handles, and tall bridge."
+    },
+    {
+      "url": "https://www.clevelandart.org/art/1918.352",
+      "shows": "The neutral museum photograph shows the hide fasteners, hemispherical calabash and its proportions relative to the neck. Several strings are missing."
+    },
+    {
+      "url": "https://www.kora-music.com/e/stimmen.htm",
+      "shows": "A stringing demonstration explains and illustrates how strings pass through notches on both sides of the bridge and onto leather neck collars."
+    }
+  ],
+  "silhouette": "An upright three-quarter view, with a long neck above the skin-covered gourd, a tall projecting bridge and a pair of wooden handgrips framing the string fan.",
+  "features": [
+    "Hemispherical gourd resonator with a plain skin face",
+    "Long neck with leather tuning collars and a tail anchor below the resonator",
+    "Tall notched bridge projecting from a pad on the skin face",
+    "Twenty-one fine strings grouped into two ordered banks of eleven and ten",
+    "Two distinct upper ends of the parallel handgrips rising past the gourd"
+  ],
+  "iconFeatures": [
+    "Upright playing position with a round calabash at the bottom of a long neck",
+    "Projecting bridge and open triangular string silhouette"
+  ],
+  "avoid": [
+    "A neck lying across the canvas in the pose of a guitar",
+    "All strings converging on a single point on the bridge",
+    "Frets or guitar-style tuning keys on this leather-collar model"
+  ],
+  "notes": "Shows a traditional 21-string Mandinka kora with sliding leather collars. Fine strings and a plain skin face keep the bridge, grips and gourd readable at a glance.",
+  "geometry": {
+    "view": "Upright three-quarter",
+    "proportions": "A long narrow neck projects well above a wide round gourd.",
+    "partLayout": "Two banks of eleven and ten strings meet opposite sides of the projecting bridge. Twin handgrips rise from the skin on either side.",
+    "documentedDimensions": {
+      "value": "115.8 cm tall × 52.5 cm wide, about 2.2:1 overall",
+      "source": "https://www.metmuseum.org/art/collection/search/503060",
+      "scope": "Kora"
+    },
+    "referenceImage": {
+      "url": "https://openaccess-cdn.clevelandart.org/1918.352/1918.352_web.jpg",
+      "source": "https://www.clevelandart.org/art/1918.352"
+    }
+  }
+}

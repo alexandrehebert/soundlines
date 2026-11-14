@@ -1,0 +1,40 @@
+{
+  "slug": "fairlight-cmi",
+  "instrument": "instrument:fairlight-cmi",
+  "family": "electronic",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.nfsa.gov.au/collection/item/fairlight-cmi-peter-vogel-and-kim-ryrie",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.nfsa.gov.au/collection/item/sampling-sounds-fairlight-cmi",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Piano keyboard in its own case. Separate CRT monitor.",
+  "features": [
+    "Piano keyboard in its own case",
+    "Separate CRT monitor",
+    "Separate computer keyboard",
+    "Light pen and system unit"
+  ],
+  "iconFeatures": [
+    "Piano keyboard in its own case",
+    "Separate CRT monitor"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Front three-quarter of early workstation",
+    "proportions": "Separate CRT, computer cabinet and long musical keyboard form three distinct masses.",
+    "partLayout": "The monitor sits near the computer. Put the small alphanumeric keyboard and light pen apart from the piano-style keys.",
+    "referenceImage": {
+      "url": "https://www.perfectcircuit.com/media/wysiwyg/articles/fairlight-history/cmi-iix-1.jpg",
+      "source": "https://www.perfectcircuit.com/signal/fairlight-cmi-history"
+    }
+  }
+}

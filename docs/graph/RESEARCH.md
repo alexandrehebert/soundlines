@@ -20,6 +20,23 @@ do not force them into a single Western-style lineage.
 - **Asia & South Asia**: ghazal, Indian film music, Chinese regional styles
 - **Tracks**: representative anthems
 
+## Instrument coverage
+
+Soundlines catalogs instruments prominent in a documented musical tradition,
+as well as specific studio devices that shaped a recognizable sound. The
+catalog includes 122 instruments after the November 2026 expansion. It now
+covers more of Peking opera, Carnatic music, gamelan, Arabic maqam, mbalax,
+sega, maloya, and Caribbean traditions. Where a source documents an older
+instrument through a surviving object or recording, the date may serve as a
+timeline anchor.
+
+Further candidates include the mbira, duduk, morin khuur, shakuhachi,
+kamancheh, and Great Highland bagpipe. Research each instrument alongside
+the tradition that gives it context. Add that tradition to the graph first
+when the current catalog lacks a suitable genre. For existing links based
+on modern performances, such as the kora in mbalax, seek additional
+coverage of the instrument's home tradition.
+
 ## Chronology coverage gaps
 
 The dataset is strongest from 1960 to 1999. It now includes early notation,

@@ -1,0 +1,41 @@
+{
+  "slug": "biwa",
+  "instrument": "instrument:biwa",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/ge2.html",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/44801",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Squat pear-shaped body. Bent-back pegbox.",
+  "features": [
+    "Squat pear-shaped body",
+    "Bent-back pegbox",
+    "Raised frets",
+    "Broad triangular plectrum",
+    "Playing guard on the soundboard"
+  ],
+  "iconFeatures": [
+    "Squat pear-shaped body",
+    "Bent-back pegbox"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Soundboard front three-quarter",
+    "proportions": "Squat pear-shaped body meets a short neck and bent pegbox.",
+    "partLayout": "Large raised frets run toward the picking guard. Keep the broad triangular plectrum distinct from the soundbox.",
+    "referenceImage": {
+      "url": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/img/ct3_5_10.jpg",
+      "source": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/ge2.html"
+    }
+  }
+}

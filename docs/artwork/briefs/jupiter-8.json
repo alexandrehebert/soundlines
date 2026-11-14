@@ -1,0 +1,41 @@
+{
+  "slug": "jupiter-8",
+  "instrument": "instrument:jupiter-8",
+  "family": "electronic",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.roland.com/Global/products/rc_jupiter-8/",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://articles.roland.com/jupiter-king-of-the-polysynths/",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Full piano-style keyboard. Wide dark control panel.",
+  "features": [
+    "Full piano-style keyboard",
+    "Wide dark control panel",
+    "Banks of sliders and knobs",
+    "Colored patch buttons",
+    "Metal end cheeks"
+  ],
+  "iconFeatures": [
+    "Full piano-style keyboard",
+    "Wide dark control panel"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Top three-quarter",
+    "proportions": "A long wide keyboard with a broad low control panel.",
+    "partLayout": "Group slider rows above the keybed and align colored selector controls along the front of that panel.",
+    "referenceImage": {
+      "url": "https://static.roland.com/assets/images/products/main/rc_jupiter-8_main.jpg",
+      "source": "https://www.roland.com/Global/products/rc_jupiter-8/"
+    }
+  }
+}

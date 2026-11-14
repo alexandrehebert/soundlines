@@ -5851,6 +5851,203 @@
     "instrument:guembri": {
       "description": "Luth à trois cordes pincées utilisé dans la musique gnawa des villes marocaines. Smithsonian Folkways documente l’instrument dans ses enregistrements réalisés au Maroc en 1966.",
       "name": "Guembri"
+    },
+    "instrument:erhu": {
+      "name": "Erhu",
+      "description": "Vièle chinoise à deux cordes jouée à la verticale, dont la mèche de l’archet passe entre les cordes.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:pipa": {
+      "name": "Pipa",
+      "description": "Luth chinois à quatre cordes pincées, à la caisse piriforme et aux frettes qui se prolongent sur la table d’harmonie."
+    },
+    "instrument:dizi": {
+      "name": "Dizi",
+      "description": "Flûte traversière chinoise munie d’une fine membrane qui vibre et donne au son un timbre bourdonnant."
+    },
+    "instrument:suona": {
+      "name": "Suona",
+      "description": "Chalémie chinoise à anche double, au pavillon métallique évasé et au timbre pénétrant."
+    },
+    "instrument:yueqin": {
+      "name": "Yueqin",
+      "description": "Luth chinois à manche court, surnommé luth-lune en raison de sa caisse plate et ronde.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:sheng": {
+      "name": "Sheng",
+      "description": "Orgue à bouche chinois à anches libres dont les tuyaux entourent une chambre à air."
+    },
+    "instrument:biwa": {
+      "name": "Biwa",
+      "description": "Luth japonais à frettes et à caisse piriforme, joué avec un large plectre."
+    },
+    "instrument:taiko": {
+      "name": "Taiko",
+      "description": "Tambours japonais joués avec des baguettes. Dans le gagaku, ce nom englobe le tsuri-daiko suspendu et le dadaiko, plus grand."
+    },
+    "instrument:soribuk": {
+      "name": "Soribuk",
+      "description": "Tambour coréen en tonneau qui accompagne le chant pansori, dont les peaux sont fixées par des clous métalliques."
+    },
+    "instrument:saraswati-veena": {
+      "name": "Saraswati veena",
+      "description": "Luth fretté du sud de l’Inde associé à la musique carnatique et nommé en l’honneur de la déesse hindoue Sarasvati.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:mridangam": {
+      "name": "Mridangam",
+      "description": "Tambour du sud de l’Inde à deux peaux, en forme de tonneau, qui assure l’accompagnement rythmique dans la musique carnatique."
+    },
+    "instrument:dhol": {
+      "name": "Dhol",
+      "description": "Tambour en tonneau à deux peaux qui marque les rythmes du bhangra pendjabi."
+    },
+    "instrument:sarangi": {
+      "name": "Sarangi",
+      "description": "Vièle du nord de l’Inde à cordes sympathiques, qui accompagne le chant dans la musique classique hindoustanie."
+    },
+    "instrument:bonang": {
+      "name": "Bonang",
+      "description": "Ensemble de petits gongs accordés disposés à plat sur un cadre et frappés avec des mailloches rembourrées dans le gamelan indonésien."
+    },
+    "instrument:javanese-rebab": {
+      "name": "Rebab javanais",
+      "description": "Vièle à pique à deux cordes qui orne les mélodies du gamelan javanais."
+    },
+    "instrument:kora": {
+      "name": "Kora",
+      "description": "Harpe pincée d’Afrique de l’Ouest jouée par les musiciens mandingues. Ses cordes passent sur un chevalet haut au-dessus d’une calebasse recouverte de peau.",
+      "estimateNote": "Le placement suit un récit oral situant l’instrument au XVIIIe siècle."
+    },
+    "instrument:djembe": {
+      "name": "Djembé",
+      "description": "Tambour mandingue en forme de calice joué à mains nues. Différentes frappes produisent des sons graves, clairs et claqués.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:qanun": {
+      "name": "Qanoun",
+      "description": "Cithare trapézoïdale à cordes pincées dotée de petits leviers qui modifient la hauteur des chœurs selon le mode."
+    },
+    "instrument:ney": {
+      "name": "Ney",
+      "description": "Flûte en roseau à embouchure terminale utilisée dans la musique savante arabe.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:riqq": {
+      "name": "Riqq",
+      "description": "Petit tambour sur cadre à membrane et cymbalettes métalliques, utilisé dans les ensembles de musique savante arabe.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:darbuka": {
+      "name": "Darbouka",
+      "description": "Tambour en forme de calice joué à la main dans les musiques arabes, où il porte notamment les noms régionaux de tabla et de dumbak.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:santur": {
+      "name": "Santur",
+      "description": "Cithare trapézoïdale dont les cordes sont frappées avec de légères baguettes. C’est un instrument typique du maqâm irakien.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:balafon": {
+      "name": "Balafon",
+      "description": "Xylophone d’Afrique de l’Ouest à lames de bois et résonateurs en calebasse, aussi appelé bala dans les traditions mandingues."
+    },
+    "instrument:ravann": {
+      "name": "Ravanne",
+      "description": "Tambour sur cadre mauricien à membrane, joué à mains nues dans le séga traditionnel.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:maravann": {
+      "name": "Maravanne",
+      "description": "Hochet rectangulaire mauricien rempli de graines que l’on secoue à l’horizontale dans le séga traditionnel.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:sabar": {
+      "name": "Sabar",
+      "description": "Tambour sénégalais joué d’une main et d’une baguette. Ses rythmes sont à la base du mbalax.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:tama": {
+      "name": "Tama",
+      "description": "Petit tambour parlant wolof. Le musicien presse les cordes sous le bras pour moduler la hauteur des sons en le frappant.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:kayamb": {
+      "name": "Kayamb",
+      "description": "Hochet plat de La Réunion fabriqué avec des tiges végétales et rempli de graines. Il marque la pulsation du maloya.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:rouler": {
+      "name": "Roulèr",
+      "description": "Grand tambour en forme de tonneau de La Réunion que le musicien enfourche pour jouer les rythmes graves du maloya.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:didgeridoo": {
+      "name": "Didgeridoo",
+      "description": "Long instrument à vent en bois du nord de l’Australie. Le musicien fait vibrer ses lèvres à l’embouchure pour produire un bourdon. Yidaki est un nom yolŋu pour une forme régionale.",
+      "estimateNote": "Un exemplaire de musée daté d’environ 1900 situe cette tradition plus ancienne."
+    },
+    "instrument:yamaha-dx7": {
+      "name": "Yamaha DX7",
+      "description": "Synthétiseur numérique qui utilise la modulation de fréquence pour produire notamment des sons de piano électrique brillants et des basses percutantes."
+    },
+    "instrument:mellotron": {
+      "name": "Mellotron",
+      "description": "Clavier électromécanique qui lit un segment de bande magnétique préenregistrée lorsqu’on appuie sur une touche."
+    },
+    "instrument:fairlight-cmi": {
+      "name": "Fairlight CMI",
+      "description": "Instrument de musique informatique australien qui permet d’enregistrer et de jouer des échantillons numériques au clavier."
+    },
+    "instrument:jupiter-8": {
+      "name": "Roland JUPITER-8",
+      "description": "Synthétiseur analogique à huit voix doté d’un arpégiateur et d’un clavier que l’on peut diviser entre deux sons."
+    },
+    "instrument:uilleann-pipes": {
+      "name": "Cornemuse irlandaise (uilleann pipes)",
+      "description": "Cornemuse irlandaise alimentée par un soufflet actionné avec le coude, avec un chalumeau pour la mélodie et des bourdons qui tiennent d’autres notes."
+    },
+    "instrument:portuguese-guitar": {
+      "name": "Guitare portugaise",
+      "description": "Instrument portugais à cordes pincées muni de six paires de cordes métalliques, qui joue un rôle central dans l’accompagnement du fado."
+    },
+    "instrument:cuban-tres": {
+      "name": "Tres cubain",
+      "description": "Instrument cubain apparenté à la guitare, à trois chœurs de cordes, caractéristique du son cubano."
+    },
+    "instrument:viola-da-gamba": {
+      "name": "Viole de gambe",
+      "description": "Instrument à cordes frottées muni de frettes, tenu à la verticale sur les jambes ou entre les genoux et souvent joué en ensemble de violes de différentes tailles."
+    },
+    "instrument:celesta": {
+      "name": "Célesta",
+      "description": "Instrument à clavier dont les marteaux en feutre frappent des lames métalliques et produisent un son doux qui rappelle les cloches."
+    },
+    "instrument:puerto-rican-cuatro": {
+      "name": "Cuatro portoricain",
+      "description": "Instrument portoricain à cordes pincées dont la forme moderne possède une caisse en forme de violon et cinq paires de cordes."
+    },
+    "instrument:marimbula": {
+      "name": "Marímbula",
+      "description": "Grande caisse en bois munie de lamelles métalliques pincées qui fournissaient les notes graves dans les premières formes du son cubain."
+    },
+    "instrument:hammered-dulcimer": {
+      "name": "Dulcimer à marteaux",
+      "description": "Cithare dont les chœurs de cordes, tendus sur une caisse plate, sont frappés à l’aide de petits marteaux tenus à la main."
+    },
+    "instrument:cuica": {
+      "name": "Cuíca",
+      "description": "Tambour à friction brésilien que l’on fait sonner en frottant une tige fixée à l’intérieur de la peau.",
+      "estimateNote": "La date correspond à une attestation conservée de cet instrument plus ancien."
+    },
+    "instrument:bass-drum": {
+      "name": "Grosse caisse",
+      "description": "Grand tambour au son grave utilisé dans les orchestres et les fanfares militaires d’Europe, où il était souvent associé aux cymbales."
+    },
+    "instrument:dominican-tambora": {
+      "name": "Tambora dominicaine",
+      "description": "Tambour dominicain à deux peaux joué avec une main et une baguette dans le merengue típico."
     }
   },
   "edges": {

@@ -1,0 +1,40 @@
+{
+  "slug": "soribuk",
+  "instrument": "instrument:soribuk",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://artsandculture.google.com/story/QQXBWFVCGDVvKQ",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.igbf.kr/DataFiles/App/PDF/buk_en_link.pdf",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Squat barrel body. Two skin heads.",
+  "features": [
+    "Squat barrel body",
+    "Two skin heads",
+    "Metal tacks around the rim",
+    "One short thick wooden stick"
+  ],
+  "iconFeatures": [
+    "Squat barrel body",
+    "Two skin heads"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Side three-quarter",
+    "proportions": "Short, squat barrel with two skin heads of near-equal size.",
+    "partLayout": "Rows of tacks encircle the head rims. One thick stick sits beside the drum rather than crossing the opening.",
+    "referenceImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sori-Buk.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Sori-Buk.jpg"
+    }
+  }
+}

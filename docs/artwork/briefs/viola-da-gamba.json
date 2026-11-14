@@ -1,0 +1,44 @@
+{
+  "slug": "viola-da-gamba",
+  "instrument": "instrument:viola-da-gamba",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/es/essays/the-viol",
+      "shows": "The Richard Meares viol shows the characteristic waist, fretted neck and shaped sound holes."
+    },
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/503359",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Waisted body with curved sound holes. Fretted neck with six strings.",
+  "features": [
+    "Waisted body with curved sound holes",
+    "Fretted neck with six strings",
+    "Separate bow beside the instrument"
+  ],
+  "iconFeatures": [
+    "Waisted body with curved sound holes",
+    "Fretted neck with six strings"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Upright soundboard front",
+    "proportions": "Waisted viol outline with gently sloping shoulders and a fretted neck.",
+    "partLayout": "For the six-string form, space six strings over the bridge between curved sound holes. Place the bow beside the body.",
+    "documentedDimensions": {
+      "value": "119.5 cm total length on this example; the collection record supplies no frontal width",
+      "source": "https://www.metmuseum.org/art/collection/search/503359",
+      "scope": "Bass Viola da Gamba"
+    },
+    "referenceImage": {
+      "url": "https://images.metmuseum.org/CRDImages/mi/web-large/DP164634.jpg",
+      "source": "https://www.metmuseum.org/art/collection/search/503359"
+    }
+  }
+}

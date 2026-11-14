@@ -403,7 +403,668 @@ def saron():
             + path('M-20-47l16-2 3 14-16 2Z', '#b9704a'))
 
 
+
+
+
+
+
+
+def erhu():
+    body = (path('M-84-22l20-11 22 11v25l-22 12-20-12Z', WOOD)
+            + path('M-84-22l20 11v26m0-26 22-11', stroke=GOLD, w=1.7)
+            + path('M-63-9L81-6Q99-6 99-18', stroke=DARK, w=7)
+            + path('M-63-9L81-6Q99-6 99-18', stroke=EDGE, w=1.5)
+            + pegs(((73, 13), (86, 13)))
+            + path('M-69-5L84-5', stroke=WIRE, w=.9)
+            + path('M-100 25Q-38 14 38-18', stroke=GOLD, w=2.7)
+            + path('M-100 25L38-18', stroke='#efc78e', w=1.25)
+            + path('M-69 2L84 2', stroke=WIRE, w=1.05)
+            + path('M-70-5v8', stroke=GOLD, w=2))
+    return f'<g transform="rotate(-22)">{body}</g>'
+
+
+def pipa():
+    return (path('M-98-36Q-65-56-19-29L36-11L80-7Q100-10 102-20L115-17Q114-2 104 6L38 10L-19 29Q-61 56-98 36Q-121 23-121 0Q-121-23-98-36Z', WOOD)
+            + path('M-104-17v34', stroke=DARK, w=6)
+            + pegs(((65, -14), (77, 15), (90, -15), (103, 11)))
+            + ''.join(path(f'M{x} {-h}v{h*2}', stroke=GOLD, w=2.4) for x, h in
+                      [(-87, 17), (-69, 17), (-53, 16), (-38, 15), (-24, 14), (-11, 13),
+                       (0, 12), (11, 11), (21, 10), (30, 9), (41, 9), (52, 9)])
+            + strings(-104, 103, 4, 3))
+
+
+def dizi():
+    return (rect(-117, -7, 234, 14, WOOD, 2, EDGE)
+            + ''.join(path(f'M{x}-7v14', stroke=GOLD, w=1.65) for x in
+                      (-109, -76, -64, -30, -19, 39, 49, 88, 105))
+            + ellipse(-86, 0, 3.7, 3.1, DARK)
+            + ellipse(-54, 0, 3.8, 3.1, WIRE, DARK)
+            + ''.join(ellipse(x, 0, 2.9, 2.9, DARK) for x in (-9, 6, 20, 34, 61, 78)))
+
+
+def suona():
+    return (path('M-82-4Q-76-10-62-8Q-53-2-44-8Q-37-11-27-7Q-19-2-11-8Q-4-11 5-6Q14-2 23-10L58-12V12L23 10Q14 2 5 6Q-4 11-11 8Q-19 2-27 7Q-37 11-44 8Q-53 2-62 8Q-76 10-82 4Z', WOOD)
+            + path('M56-9C77-11 92-16 101-31V31C92 16 77 11 56 9Z', GOLD, EDGE)
+            + ellipse(101, 0, 8, 31, '#54442d', GOLD)
+            + path('M-115 0H-82m-13-8v16m-20-2v-12', stroke=GOLD, w=2.2)
+            + ''.join(ellipse(x, 0, 2.6, 2.5, DARK) for x in (-69, -54, -39, -24, -9, 10, 27)))
+
+
+def yueqin():
+    return (ellipse(-62, 0, 44, 44, WOOD, EDGE)
+            + ellipse(-62, 0, 40, 40, 'none', GOLD)
+            + path('M-25-9H22L33-6H59L66-2V2L59 6H33L22 9H-25Z', WOOD)
+            + path('M-89-13v26', stroke=DARK, w=5)
+            + pegs(((40, -15), (53, -15), (40, 15), (53, 15)))
+            + frets(-36, 30, 9, 'M{x}-8v16', 1.9)
+            + ''.join(path(f'M-89 {y}L58 {y*.64:g}', stroke=WIRE, w=.7) for y in (-4.5,-3,3,4.5)))
+
+
+def sheng():
+    pipes = ''.join(
+        rect(x, top, 6, 35-top, WOOD, 1, EDGE)
+        + path(f'M{x} {top+4}h6', stroke=GOLD, w=1)
+        + ellipse(x+3, 20, 1.1, 1.4, DARK)
+        for x, top in [(-31,-32), (-25,-42), (-19,-48), (-13,-52), (-7,-47),
+                       (-1,-37), (5,-31), (11,-28), (17,-34), (23,-44), (29,-40)])
+    return (''.join(rect(x, top, 5, 35-top, '#266447', 1, GOLD)
+                    for x,top in [(-35,-28),(-30,-36),(-21,-43),(12,-35),(21,-39),(34,-33)])
+            + pipes + path('M-39 30Q-41 52-18 55H21Q43 52 40 30Z', WOOD)
+            + ellipse(0, 31, 40, 6, '#4b9474', GOLD)
+            + path('M-32 46Q-54 43-78 52L-82 44Q-56 32-35 36Z', GOLD, EDGE)
+            + path('M-35 34H36M-30 47H29', stroke=GOLD, w=2))
+
+
+def court_biwa():
+    return (path('M22 0C6-21-27-39-64-40C-96-41-110-23-110 0S-96 41-64 40C-27 39 6 21 22 0Z', WOOD)
+            + path('M-17-9L69-7L75 7L-17 10Z', DARK)
+            + path('M67-7l15-19 18 6-20 19-5 8Z', WOOD)
+            + path('M-98-11Q-76-18-58-13V13Q-76 18-98 11Z', '#805337')
+            + path('M-66-23q-9 5 0 8m0 30q-9 5 0 8', stroke=DARK, w=2.3)
+            + rect(-94, -11, 5, 22, DARK)
+            + frets(6, 68, 15, 'M{x} -9v18', 2)
+            + pegs([(74, -19), (83, -23), (81, 3), (90, -5)])
+            + strings(-90, 71, 4, 2.8)
+            + path('M40 43L75 21Q81 37 84 47Z', '#d9b591'))
+
+
+def court_taiko():
+    return (ellipse(0, -3, 65, 54, 'none', GOLD)
+            + path('M-60 28v18h120V28M-49 48h98m-92-85 11 8m75-8-11 8', stroke=GOLD, w=3)
+            + path('M-39-27Q0-38 41-25V25Q0 38-39 27Z', WOOD)
+            + ellipse(28, 0, 22, 30, '#bf735c', EDGE)
+            + path('M-12-55l-4 20m33-18-4 19', stroke=WIRE, w=2.4)
+            + path('M-22-32H9M-23 32H9', stroke=GOLD, w=3)
+            + ellipse(-9, 0, 37, 35, '#e1b893', EDGE)
+            + ellipse(-9, 0, 30, 28, '#c68a73', GOLD)
+            + ''.join(f'<g transform="rotate({angle} -9 0)">'+path('M-9-2c-10 3-14-8-8-12 7-5 16 3 13 9q-2 5-5 9 1-4 0-6Z','#78423d','none')+'</g>' for angle in (0,120,240))
+            + path('M70 17l28-23M76 45l26-27', stroke=GOLD, w=3.7))
+
+
+def sori_barrel():
+    studs = ''.join(ellipse(x, y, 2, 2, GOLD) for x, y in (
+        (-42,-24),(-26,-31),(-5,-31),(16,-29),(37,-24),(-42,24),(-26,31),(-5,31),(16,29),(37,24),
+    ))
+    return (path('M-48-28Q-2-43 56-29V29Q-2 43-48 28Z', WOOD)
+            + path('M-39-23Q1-33 52-24M-39 23Q1 33 52 24', stroke=DARK, w=2.1)
+            + ellipse(-48, 0, 15, 28, '#875349', EDGE)
+            + ellipse(56, 0, 19, 29, '#e0b793', EDGE)
+            + ellipse(57, 0, 14, 23, 'none', '#ad6c55')
+            + studs
+            + path('M4-40l61-12', stroke=GOLD, w=4.5))
+
+
+def south_indian_veena():
+    return (ellipse(68, 22, 24, 19, '#b18349', EDGE)
+            + path('M-21-13Q-38-40-69-40Q-104-40-116-6Q-126 24-91 32Q-53 41-21 13Z', WOOD)
+            + path('M-34-12L92-10V10L-34 12Z', DARK)
+            + path('M86-12q14-10 27-2l9 7-7 7q-6-9-9 0l9 7-9 5-20-2Z', WOOD)
+            + path('M-30 13H86M-32-13H86', stroke=GOLD, w=1.6)
+            + frets(-28, 86, 6, 'M{x} -9v18', 1.6)
+            + rect(-85, -11, 8, 22, GOLD)
+            + path('M-103-10q13-16 37-13m-37 36q18 13 42 10', stroke=GOLD, w=1)
+            + strings(-83, 90, 4, 3.0)
+            + path('M-79 10L84 13M-79 13L84 16M-79 16L84 19', stroke=WIRE, w=.65))
+
+
+def carnatic_barrel():
+    straps = ''.join(path(f'M-75 {y:g}Q-8 {y*1.48:g} 67 {y*1.25:g}', stroke=GOLD, w=1.65)
+                     for y in (-23, -16, -9, 0, 9, 16, 23))
+    return (path('M-76-26C-37-38 12-43 65-34V34C12 43-37 38-76 26Z', WOOD)
+            + ellipse(-76, 0, 12, 26, '#d0a37a', EDGE)
+            + straps
+            + ellipse(65, 0, 18, 34, '#dcba99', EDGE)
+            + ellipse(66, 0, 13, 27, '#b28870', GOLD)
+            + ellipse(70, 0, 7, 14, DARK, EDGE))
+
+
+def punjabi_dhol():
+    laces = ''.join(path(f'M-64 {y}L61 {y+7}L-64 {y+14}', stroke=GOLD, w=1.4)
+                    for y in (-27,-13,1,15))
+    return (path('M-68-31C-22-43 28-43 68-31V31C28 43-22 43-68 31Z', WOOD)
+            + path('M-53-30Q-44-59-9-54Q25-48 47-32', stroke='#dc855c', w=4)
+            + ellipse(-68, 0, 16, 31, '#d0a27c', EDGE)
+            + laces
+            + path('M-40-35v12m33-15v12m27-10v12m25-10v12', stroke='#bd6454', w=4)
+            + ellipse(68, 0, 17, 31, '#c78a6f', EDGE)
+            + ellipse(69, 0, 13, 26, 'none', GOLD)
+            + path('M16 51l66-17m-93 17q-12 5-22-1l-17-11', stroke=GOLD, w=3.3))
+
+
+def classical_sarangi():
+    fine_pegs = ''.join(ellipse(x, 13+(i%2)*4, 2.3, 2.0, GOLD)
+                       for i, x in enumerate(range(-15, 73, 5)))
+    return (path('M-101-21Q-87-30-62-26L-52-17Q-44-12-34-23L-18-21L-12-17L-12 17L-18 21L-34 23Q-44 12-52 17L-62 26Q-87 30-101 21Q-109 0-101-21Z', WOOD)
+            + path('M-102-19Q-75-23-55-14V14Q-73 23-102 19Z', '#cead91')
+            + path('M-19-12L70-9V9L-19 12Z', DARK)
+            + path('M63-14Q82-24 101-17L104 16Q84 22 63 13Z', WOOD)
+            + fine_pegs
+            + pegs([(75,-18), (89,-21), (97,18)])
+            + rect(-78, -9, 4, 18, GOLD)
+            + strings(-93, 97, 3, 3.2)
+            + path('M-101 39Q-9 55 104 36M-101 39L104 36', stroke=GOLD, w=1.8))
+
+
+def bonang_gong_chime():
+    gongs = ''.join(ellipse(x, y, 13, 9, '#b58447', GOLD)
+                   + ellipse(x, y-2, 4.8, 3.7, '#daad68', DARK)
+                   for y, start in ((-21, -76), (5, -84))
+                   for x in range(start, start+181, 30))
+    return (path('M-114 16l13-54H103L114 16Z', DARK)
+            + path('M-113 16H114L107 36H-106Z', '#823b38')
+            + path('M-108 21H108M-106 33H107', stroke=GOLD, w=1.5)
+            + path('M-104 34v9m207-9v9', stroke=GOLD, w=3)
+            + path('M-101-10H103M-93-30H93M-107 12H106', stroke='#b26d58', w=4)
+            + gongs
+            + path('M-30-48l79 8m14-11 42 12', stroke=GOLD, w=2.8)
+            + ellipse(-31, -48, 6, 3, '#95524c', EDGE)
+            + ellipse(61, -52, 6, 3, '#95524c', EDGE))
+
+
+def gamelan_rebab():
+    return (path('M-114 0L101-5V5L-114 1Z', WOOD)
+            + path('M-88 0Q-84-11-73-17L-50-31Q-36-38-35-20L-35 20Q-36 38-50 31L-73 17Q-84 11-88 0Z', '#ba957a')
+            + path('M-83 0L-48-23V23Z', '#dac1a1', GOLD)
+            + path('M-34 0L93-3V3L-34 1Z', DARK)
+            + ellipse(98, 0, 9, 7, WOOD, EDGE)
+            + pegs([(76,-16), (89,16)])
+            + rect(-53, -7, 4, 14, DARK)
+            + strings(-68, 94, 2, 2.3)
+            + path('M-96 38Q-7 61 105 34M-96 38L105 34', stroke=GOLD, w=1.85))
+
+
+def kora():
+    # Two banks share one bridge. Keep the wire quieter than the wood silhouette.
+    banks = ''.join(
+        path(f'M{3 + side * 3} {-61 + index * 4.4:.1f}'
+             f'L{16 + side * 6} {31 + index * .83:.2f}',
+             stroke=('#e4bc8b', '#f5d8ae')[side], w=.47)
+        for side, count in ((0, 11), (1, 10))
+        for index in range(count)
+    )
+    return (ellipse(-5, 43, 38, 28, WOOD, EDGE)
+            + ellipse(-1, 41, 34, 25, '#b78356', '#d9a977')
+            + path('M-8 68L2-71Q7-76 11-70L1 69Z', WOOD, EDGE)
+            + path('M2-55l8 1M1-40l8 1M0-25l8 1M-1-10l8 1', stroke='#a37651', w=2)
+            + path('M-27 57l4-45M26 56l4-45', stroke=DARK, w=6)
+            + path('M-27 56l4-44M26 55l4-44', stroke=GOLD, w=3)
+            + path('M-2 46L14 29H23V39L6 51H-2Z', '#714730', EDGE)
+            + banks
+            + path('M17 40L-3 68M22 40L-1 68', stroke='#ca9a6e', w=.65))
+
+
+def djembe():
+    return (path('M-54-25Q-55 9-24 20L-35 43Q0 56 35 43L24 20Q55 9 54-25Z', WOOD)
+            + ellipse(0, -26, 54, 15, '#debc8c', EDGE)
+            + path('M-53-21Q0-1 53-21M-29 20Q0 31 29 20', stroke=DARK, w=3)
+            + ''.join(path(f'M{x} {-14+abs(x)*-.15:g}L{x*.51:g} 22', stroke=WIRE, w=1.45)
+                      for x in range(-48, 49, 12))
+            + path('M-30 37Q0 49 30 37', stroke=GOLD))
+
+
+def qanun():
+    return (path('M-111 34H111V-38H-45Z', WOOD)
+            + path('M80-34H105V30H80Z', '#c5a078')
+            + path('M79-34V30M90-34V30', stroke=GOLD, w=3)
+            + ''.join(path(f'M{-47-i*2.8:.1f} {-33+i*3}H99', stroke=WIRE, w=.62)
+                      for i in range(21))
+            + ellipse(38, 0, 10, 10, DARK, GOLD)
+            + ellipse(16, 15, 5, 5, DARK, GOLD))
+
+
+def reed_flute():
+    return (path('M-106-9L106-6Q112 0 106 6L-106 9Z', WOOD)
+            + ellipse(-107, 0, 4.6, 9, '#513d26', GOLD)
+            + ellipse(-108, 0, 2.3, 6.1, DARK)
+            + ellipse(107, 0, 2.5, 6, DARK, GOLD)
+            + ''.join(ellipse(x, 0, 2.7, 2.65, DARK, GOLD) for x in (-27, -10, 7, 24, 41, 58))
+            + path('M-79-8v16m32-15v14m37-14v14m38-13v12m38-12v12m35-12v12', stroke=GOLD, w=2))
+
+
+def riqq():
+    return (ellipse(0, 0, 56, 52, WOOD, EDGE)
+            + ellipse(0, -2, 42, 39, '#ba855f', GOLD)
+            + ''.join(f'<g transform="rotate({angle})">{ellipse(0, -47, 10, 4, GOLD, DARK)}'
+                      f'{ellipse(0, -51, 10, 4, GOLD, DARK)}</g>' for angle in range(0, 360, 72))
+            + ellipse(0, -2, 37, 34, 'none', EDGE))
+
+
+def darbuka():
+    return (path('M-39-42Q-40-13-17-1Q-16 15-28 43Q0 51 28 43Q16 15 17-1Q40-13 39-42Z', WOOD)
+            + ellipse(0, -42, 39, 11, '#cfad8e', EDGE)
+            + path('M-35-27Q0-16 35-27M-17 1Q0 9 17 1M-22 33Q0 43 22 33', stroke=GOLD, w=2.6)
+            + path('M-25-18l10 8 15-5 15 5 10-8m-43 43 9-8 9 12 9-12 9 8', stroke=WIRE))
+
+
+def santur():
+    return (path('M-109 35H109L68-34H-68Z', WOOD)
+            + ''.join(path(f'M{-73-i*5:g} {-28+i*7.2:g}H{73+i*5:g}', stroke=WIRE, w=.7)
+                      for i in range(9))
+            + ''.join(ellipse(x, y, 3.4, 2.6, GOLD, DARK)
+                      for i in range(9) for y in [-28+i*7.2]
+                      for x in [-23-i*2.5, 23+i*2.5])
+            + path('M-91-37l63 23m119-24-63 23', stroke=GOLD, w=3.4))
+
+
+def ravann():
+    return (ellipse(0, 5, 65, 48, WOOD, EDGE)
+            + ellipse(0, -2, 65, 47, '#b78365', GOLD)
+            + ellipse(0, -2, 60, 41, '#dbb693', EDGE)
+            + path('M-61 16Q0 89 61 16', stroke=DARK, w=2)
+            + ''.join(ellipse(x, y, 2.2, 2.7, DARK) for x, y in
+                      [(-50, 29), (-35, 39), (-18, 45), (0, 48), (18, 45), (35, 39), (50, 29)]))
+
+
+def maravann():
+    # The wooden side walls and cane face enclose the seeds.
+    cane = []
+    for index in range(39):
+        x = -89 + index * 4.35
+        top = -32 + index * .25
+        length = 57 - index * .18
+        lean = 6 + (index % 4) * .5
+        tint = ('#e6b97e', '#c99059', '#f1ce9a', '#b77b4d')[index % 4]
+        cane.append(path(f'M{x:.2f} {top:.2f}l{lean:.2f} {length:.2f}', stroke=tint, w=2.15))
+
+    return (path('M-104-40L88-29L105 34L-86 41L-97 47L-113-33Z', WOOD)
+            + path('M-104-40L-86 41L-97 47L-113-33Z', '#703b32', EDGE)
+            + path('M-86 41L105 34L98 41L-97 47Z', '#854c38', EDGE)
+            + path('M-94-33L81-23L95 28L-82 34Z', '#523329', GOLD)
+            + ''.join(cane)
+            + path('M-104-40L88-29L105 34L-86 41ZM-94-33L81-23L95 28L-82 34Z',
+                   stroke=GOLD, w=1.75)
+            + path('M-103-35l14 68m-3 11 181-7', stroke='#b87051', w=1.3))
+
+
+def kayamb():
+    reeds = ''.join(path(f'M{x} -26l9 52', stroke=GOLD, w=1.1)
+                    for x in range(-97, 97, 7))
+    return (path('M-109-26L-96 33H112L109 27H-97Z', '#815544', GOLD)
+            + path('M-109-27H97L109 27H-97Z', WOOD)
+            + reeds
+            + path('M-109-27H97L109 27H-97Z', stroke=GOLD, w=3)
+            + path('M-106-15H99M-102 14H106', stroke=DARK, w=3.5)
+            + path('M-94 30H108', stroke='#d29067', w=1.5)
+            + path('M-98-22h5m187 0h5m-185 44h5m187 0h5', stroke=WIRE, w=2))
+
+
+def balafon():
+    keys = ''.join(path(f'M{x} {-26+index:g}h9l1 {49-index*2}H{x-2}Z', WOOD)
+                   for index, x in enumerate(range(-100, 101, 12)))
+    gourds = ''.join(ellipse(x, 25, radius, radius*.85, '#b17a45', GOLD)
+                     for x, radius in zip(range(-96, 97, 16), range(19, 6, -1)))
+    return (path('M-114 26H112M-103 20v26m204-26v26', stroke=DARK, w=5)
+            + gourds + keys + path('M-108-12H108M-108 12H108', stroke=GOLD, w=1.8)
+            + path('M-73-45l65 19m49-19 52 15', stroke=WIRE, w=3)
+            + ellipse(-73, -45, 6, 5, DARK, GOLD) + ellipse(41, -45, 6, 5, DARK, GOLD))
+
+
+def sabar():
+    return (path('M-32-39L-20 22L-25 45Q0 52 25 45L20 22L32-39Z', WOOD)
+            + ellipse(0, -39, 32, 10, '#d5a887', EDGE)
+            + ''.join(path(f'M{x} -32l{x*-.35:g} 42l{x*.13:g} 31', stroke=WIRE, w=1.5)
+                      for x in (-28, -18, -8, 8, 18, 28))
+            + ''.join(path(f'M{x} {y}l{-3 if x<0 else 3} 12', stroke=DARK, w=6)
+                      + path(f'M{x} {y}l{-3 if x<0 else 3} 12', stroke=GOLD, w=3.6)
+                      + ellipse(x+(-3 if x<0 else 3), y+12, 2.8, 2.4, '#aa7453', EDGE)
+                      for x, y in ((-24,-18),(-12,-15),(0,-14),(12,-15),(24,-18)))
+            + path('M43 27Q52 2 61-23', stroke=GOLD, w=3))
+
+
+def tama():
+    return (path('M-59-25C-27-24-23-10 0-9S28-25 59-25V25C28 25 23 10 0 9S-28 25-59 25Z', WOOD)
+            + ellipse(-59, 0, 7, 25, '#c29074', EDGE)
+            + ellipse(59, 0, 7, 25, '#c29074', EDGE)
+            + ''.join(path(f'M-57 {y}H57', stroke=WIRE, w=1.3) for y in (-19, -12, -5, 5, 12, 19))
+            + path('M15-21Q30-52 56-35', stroke=GOLD, w=3))
+
+
+def rouler():
+    return (path('M-74-20Q-12-31 64-27V27Q-11 25-74 19Z', WOOD)
+            + ellipse(-74, 0, 14, 20, '#815544', EDGE)
+            + ellipse(-76, 0, 10, 16, DARK, GOLD)
+            + ellipse(64, 0, 14, 27, '#c79573', GOLD)
+            + path('M-43-24v47m33-51v53m50-54v56', stroke=GOLD, w=2.8)
+            + ''.join(path(f'M-65 {y}Q-6 {y*1.35:g} 59 {y*1.2:g}', stroke='#aa765c', w=1.15)
+                      for y in (-16, -8, 0, 8, 16))
+            + path('M-56-23v44m89-47v53', stroke='#624538', w=3))
+
+
+def didgeridoo():
+    return (path('M-115-7Q-68-8-33-5Q-15-2 5-6Q31-10 58-8L111-13Q119-11 119 0Q119 11 111 13L58 8Q31 10 5 6Q-15 3-33 5Q-68 8-115 7Z', WOOD)
+            + ellipse(-115, 0, 3.7, 7, DARK, GOLD)
+            + ellipse(113, 0, 5.5, 12, DARK, GOLD)
+            + path('M-105-7v14m12-14v14m179-17v20', stroke=GOLD, w=1.6)
+            + path('M-84 1Q-52-4-22 2T40 1T96 0', stroke=WIRE, w=1))
+
+
+def yamaha_dx7():
+    switches = ''.join(rect(x, -13 + row * 7, 9, 4, '#3eaa85', .3)
+                       for row in range(2) for x in range(-35, 96, 12))
+    return (rect(-109, -27, 218, 56, '#4d3740', 3, '#89ddc5')
+            + panel_text(-101, -15, 'DX7', 8, '#9ccac0')
+            + rect(-75, -15, 28, 8, '#a4b86f', .6)
+            + switches + keyboard(-82, 2, 183, 24, 36)
+            + rect(-103, 5, 6, 13, DARK) + rect(-93, 5, 6, 13, DARK))
+
+
+def mellotron():
+    return (path('M-78-34H75L85-25V30H-85V-25Z', '#c8996c', '#f3dfbf')
+            + rect(-80, -28, 160, 15, '#e6d2af', 1)
+            + panel_text(-73, -18, 'MELLOTRON', 6, DARK)
+            + knobs((38, 52, 66), -21, 3)
+            + keyboard(-70, -8, 140, 24, 21)
+            + path('M-81 19H81M-77 28H77', stroke='#9a6842', w=2))
+
+
+def fairlight_cmi():
+    return (rect(-15, -49, 69, 45, '#7b8291', 4, '#d8dff0')
+            + rect(-7, -43, 44, 28, '#282d40', 3, '#485b65')
+            + path('M0-33q5-10 9 0t11 0 11 0', stroke='#8cebb4', w=1.2)
+            + ellipse(46, -12, 2, 2, '#b8efb3')
+            + rect(60, -42, 34, 42, '#adb3c1', 2, '#dee4ef')
+            + path('M65-34h24m-24 8h24m-24 9h24', stroke='#3b4653', w=2)
+            + rect(-99, 1, 181, 36, '#71604d', 3, '#e5cfad')
+            + keyboard(-91, 8, 165, 25, 29)
+            + rect(-73, -17, 55, 13, '#4c4d63', 2, '#e5daf3')
+            + ''.join(path(f'M{x}-14v5', stroke='#e7dbef', w=1)
+                      for x in range(-66, -20, 4))
+            + path('M41-9l11 8', stroke='#ded3be', w=2.5))
+
+
+def jupiter_8():
+    slides = ''.join(path(f'M{x}-19v13m-2 {-6 + (i % 5) * 2}h4', stroke='#becbe1', w=1.05)
+                     for i, x in enumerate(range(-33, 102, 6)))
+    buttons = ''.join(rect(-30 + i * 9, -3, 7, 3, ['#c05c55', '#d39358', '#ddd778', '#88be78'][i // 3], .5)
+                      for i in range(12))
+    return (rect(-111, -30, 222, 60, '#334055', 3, '#93c9ee')
+            + rect(-111, -29, 6, 58, '#b8c5d2') + rect(105, -29, 6, 58, '#b8c5d2')
+            + panel_text(-102, -15, 'JUPITER-8', 8, '#f4d881')
+            + slides + buttons + keyboard(-82, 4, 183, 22, 36)
+            + rect(-101, 8, 10, 13, DARK) + path('M-96 9v7', stroke=GOLD, w=1.4))
+
+
+def uilleann_pipes():
+    return (path('M-41-26C-87-58-106-11-91 17Q-72 41-25 18L-13-2Q-18-16-41-26Z', '#684856')
+            + path('M-50-28Q-72-36-84-15M-80 14Q-60 26-36 18', stroke='#b68b82', w=1.1)
+            + path('M-39 3L78-12M-34 10L89 8M-41 15L75 22', stroke='#987050', w=6)
+            + path('M-39 3L78-12M-34 10L89 8M-41 15L75 22', stroke=GOLD, w=1.35)
+            + ''.join(rect(x - 2, y - 3, 4, 6, '#eee0af', 1) for x, y in
+                      ((77, -12), (88, 8), (74, 22), (28, 9), (56, 8), (29, -6), (55, -9)))
+            + path('M-28 5Q-22 22-8 31L18 49M-62-21Q-87-43-104-34', stroke='#a68068', w=4)
+            + path('M-103-42h26v15h-26q-7-7 0-15Z', '#98684a')
+            + ''.join(ellipse(x, y, 1.5, 1.5, DARK) for x, y in
+                      ((-15, 26), (-9, 31), (-3, 35), (3, 39), (9, 43))))
+
+
+def portuguese_guitar():
+    return (path('M-39-8Q-58-13-71-28Q-104-39-114-12Q-124 16-104 29Q-84 38-64 23Q-50 11-39 8Z', WOOD)
+            + path('M-53-7L75-4V4L-53 7Z', DARK)
+            + path('M71-6Q96-7 104-21Q120 0 104 21Q94 8 71 6Z', WOOD)
+            + rosette(-74, 11) + rect(-98, -9, 3, 18, DARK)
+            + frets(-48, 75, 8, 'M{x} -5v10')
+            + strings(-98, 99, 12, 1.1)
+            + ''.join(ellipse(103 + i * .7, s * (6 + i * 2.2), 1.6, 1.6, GOLD)
+                      for i in range(6) for s in (-1, 1)))
+
+
+def cuban_tres():
+    return (path('M-34-12Q-45-27-61-20Q-72-14-81-25Q-106-39-116-18Q-126 0-116 18Q-106 39-81 25Q-72 14-61 20Q-45 27-34 12Z', WOOD)
+            + path('M-49-7L85-5V5L-49 7Z', DARK)
+            + path('M84-6L111-9V9L84 6Z', WOOD)
+            + rosette(-63, 10) + rect(-102, -10, 4, 20, DARK)
+            + frets(-46, 85, 8, 'M{x} -5v10')
+            + pegs([(x, y) for x in (90, 98, 106) for y in (-12, 12)])
+            + ''.join(path(f'M-102 {y}L105 {y*.7:g}', stroke=WIRE, w=.68)
+                      for y in (-6,-4,-1,1,4,6)))
+
+
+def viola_da_gamba():
+    body = (path('M-29-9Q-42-13-54-26Q-66-28-75-19Q-82-11-92-29Q-118-38-129-16Q-138 0-129 16Q-118 38-92 29Q-82 11-75 19Q-66 28-54 26Q-42 13-29 9Z', WOOD)
+            + path('M-88-15q-7-3-4-9 2-4 7-3M-88 15q-7 3-4 9 2 4 7 3', stroke=DARK, w=2)
+            + path('M-87-10L63-5V5L-87 10Z', DARK)
+            + frets(-42, 62, 10, 'M{x} -6v12')
+            + path('M62-7h17q10 0 10 6q0 6-8 7q-5-1-4-4q6 1 5-2l-20 5Z', WOOD)
+            + pegs([(x, y) for x in (61, 68, 75) for y in (-11, 11)])
+            + path('M-127-4l28-4v16l-28-4Z', DARK)
+            + rect(-99, -11, 3, 22, GOLD) + strings(-126, 79, 6, 2.25)
+            + path('M-103 42q81-8 169-3m-168 3 168-3', stroke=GOLD, w=1.5))
+    return f'<g transform="translate(13 0) scale(.86) rotate(-13)">{body}</g>'
+
+
+def celesta():
+    return (path('M-83-44H77L83-34V26H-83Z', '#71505b', '#b8bcf8')
+            + rect(-78, -39, 153, 38, '#8c6974', 1, '#b5afdc')
+            + rect(-68, -33, 133, 23, '#795864', 1, '#a98db8')
+            + keyboard(-75, 1, 149, 17, 29)
+            + rect(-77, 21, 154, 5, '#694656', 1)
+            + path('M-73 26v19m146-19v19M-64 42H64', stroke='#a6818a', w=4)
+            + path('M4 26v16q6 4 14 1', stroke=GOLD, w=3.1))
+
+
+def puerto_rican_cuatro():
+    return (path('M-29-7Q-41-8-45-19Q-53-25-63-21L-68-15Q-76-10-81-19L-84-27Q-112-40-124-15Q-132 0-124 15Q-112 40-84 27L-81 19Q-76 10-68 15L-63 21Q-53 25-45 19Q-41 8-29 7Z', WOOD)
+            + path('M-44-7L71-5V5L-44 7Z', DARK)
+            + path('M70-5h38v10H70Z', WOOD)
+            + rosette(-66, 9) + rect(-107, -8, 4, 16, DARK)
+            + frets(-43, 69, 7, 'M{x} -5v10')
+            + pegs([(x, y) for x in (76, 83, 90, 97, 104) for y in (-9, 9)])
+            + strings(-106, 105, 10, 1.13))
+
+
+def marimbula():
+    return (path('M-83-26L-60-42H80L91-25V34H-83Z', WOOD)
+            + path('M-83-26L-60-42H80L91-25H-83Z', '#b08255')
+            + path('M75-25H91V34H75Z', '#6f4b3e')
+            + ellipse(-6, 7, 20, 19, DARK, GOLD)
+            + rect(-57, -14, 107, 7, '#a68a6b', 1, '#ecceaa')
+            + ''.join(path(f'M{x} -13v{15 + i % 4 * 2}', stroke='#b8becb', w=3)
+                      for i, x in enumerate(range(-48, 47, 13)))
+            + path('M-77 29H69', stroke='#bb8d64', w=1.1))
+
+
+def hammered_dulcimer():
+    courses = ''.join(path(f'M{-73-i*3} {-23+5*i}H{73+i*3}', stroke=WIRE, w=.7)
+                      for i in range(11))
+    return (path('M-73-28H73L109 35H-109Z', WOOD)
+            + path('M-70-22H70L100 30H-100Z', '#6d4e42', GOLD)
+            + ellipse(-54, 4, 8, 7, DARK) + ellipse(53, 4, 8, 7, DARK)
+            + path('M-22-24l-14 55M28-24l14 55', stroke=GOLD, w=3)
+            + courses
+            + path('M-63-37l40-10m-44 9q-3 7 5 7M32-44l41 10m-3 0q1 7 8 5', stroke=GOLD, w=2.1))
+
+
+def cuica():
+    return (path('M-60-35H30Q55-35 55 0T30 35H-60Z', '#7a5b66', '#e9adab')
+            + ellipse(-60, 0, 14, 35, '#e3c7a5', '#f9e2c1')
+            + ellipse(32, 0, 24, 35, '#393145', '#ecb2ae')
+            + ellipse(33, 1, 19, 29, '#1e1828', '#9d787e')
+            + path('M25-22Q17-6 25 18', stroke='#76524c', w=2)
+            + path('M-60-28H31M-59 28H31', stroke='#d4c5bd', w=1.2)
+            + ellipse(24, -1, 4, 5, '#8f624a', GOLD)
+            + path('M24-1L49 8', stroke=DARK, w=5)
+            + path('M24-1L49 8', stroke=GOLD, w=2.8)
+            + ''.join(rect(x, y, 9, 3, '#d8c5b5', 1) for x in (-50, 17) for y in (-24, 23)))
+
+
+def bass_drum():
+    return (path('M-58-39H57Q81-36 82 0Q81 36 57 39H-58Z', WOOD)
+            + path('M-52-35l22 69 23-69 23 69 23-69 19 69', stroke='#ead2ae', w=2.1)
+            + ellipse(57, 0, 24, 39, 'none', '#b8826d')
+            + ellipse(-58, 0, 27, 39, '#926251', '#f2c4a6')
+            + ellipse(-58, 0, 21, 34, '#e5c29d', '#ac7d65')
+            + path('M13-41l69-5', stroke='#c8a084', w=3.4)
+            + ellipse(88, -47, 12, 8, '#e5d5bd', '#c39983'))
+
+
+def dominican_tambora():
+    return (path('M-46-30Q0-44 46-30V30Q0 44-46 30Z', WOOD)
+            + ellipse(46, 0, 16, 31, '#c99b7c', '#f1c3a4')
+            + path('M-44-31Q0-38 44-31M-44 31Q0 38 44 31', stroke=GOLD, w=2.7)
+            + path('M-45-27L-21 29L-2-29L20 29L42-27', stroke='#fcdfae', w=2.6)
+            + ellipse(-49, 0, 16, 30, '#966c59', '#f6c6a5')
+            + ellipse(-49, 0, 12, 26, '#dcb696', '#a87c66')
+            + ''.join(ellipse(x,y,2.7,2.6,GOLD,DARK) for x,y in [(-43,-28),(-21,29),(-2,-29),(20,29),(42,-27)])
+            + path('M16-39l51-9', stroke='#f2c492', w=3))
+
+
+def brass_tube(d, width, highlight=1):
+    return (path(d, stroke='#503616', w=width+2)
+            + path(d, stroke='#bf8638', w=width)
+            + path(d, stroke='#f6cb79', w=max(1, width-3))
+            + path(d, stroke='#ffebaf', w=highlight))
+
+
+def brass_mouthpiece(x, y):
+    return (path(f'M{x} {y-5}h3l5 3h6v4h-6l-5 3h-3Z', '#d9c5a6', '#fff0cc', .9)
+            + ellipse(x, y, 1.8, 5, '#836747', '#fff0cc'))
+
+
+def brass_pistons(xs, y, height):
+    return ''.join(rect(x-4.5,y,9,height,'url(#wood)',1.8,EDGE)
+                   + rect(x-5.5,y-1,11,3,GOLD,1,EDGE)
+                   + rect(x-1,y-9,2,8,'#c0ab8a',.5)
+                   + ellipse(x,y-10,5.6,1.8,'#d7c4a4',EDGE)
+                   + rect(x-5,y+height-2,10,3,GOLD,1)
+                   for x in xs)
+
+
+def straight_trombone():
+    return (brass_tube('M-75-6H-95Q-109-6-109 1Q-109 8-95 8H-72', 9)
+            + path('M-86-9C-40-9 5-6 36-10Q57-13 68-26V14Q56 1 31-2C-9-5-42-2-86-2Z', WOOD)
+            + ellipse(68,-6,3.6,20,'#654722',GOLD)
+            + brass_tube('M-76 8H104C121 8 121 24 104 24H-80', 4.8)
+            + brass_tube('M-77 7v18M-63 7v18M-84-5v13', 3)
+            + path('M-60 6H-7M-60 22H-7', stroke='#fff1cf', w=1.35)
+            + brass_mouthpiece(-96,24))
+
+
+def piston_trumpet():
+    return (brass_tube('M-96-13H58C87-13 88 12 62 12H-39Q-56 12-56 0', 6)
+            + brass_tube('M-33 14V28Q-33 38-23 38H-2Q8 38 8 28V13', 5.8)
+            + brass_tube('M-7-3H22Q42-3 42 7Q42 18 22 18H-7', 6)
+            + brass_pistons((-28,-13,2), -16, 43)
+            + path('M-46-2C0-2 37-1 65-4Q93-7 110-24V24Q93 7 66 4C32 1-9 4-46 4Z', WOOD)
+            + ellipse(110,0,4.3,24,'#775022',GOLD)
+            + brass_mouthpiece(-108,-13))
+
+
+def single_f_horn():
+    return (brass_tube('M-55-49H-26C16-52 47-27 47 7C47 35 27 53-5 53C-38 53-55 34-53 8C-52-13-37-30-21-33', 6)
+            + brass_tube('M-15-30C-44-21-47 13-28 30C-13 44 19 41 27 20C38-4 21-29 2-29Z', 6)
+            + brass_tube('M-22-7C-35-12-35 11-22 11H8Q20 10 17-1Q14-10 3-9Z', 5.5)
+            + brass_tube('M-21 4C-32 10-32 24-21 28H10Q21 27 22 15Q22 6 12 5Z', 5.5)
+            + brass_tube('M-19-17H9Q23-18 22-9M-14 19Q-20 38 0 37H15', 4)
+            + ''.join(ellipse(x,-10,5.7,5.7,WOOD,EDGE) + path(f'M{x} -10l3-12h6',stroke=GOLD,w=2)
+                      for x in (-22,-10,2))
+            + path('M18 33C47 29 61 23 77 13L91 4L99 44L83 43C63 39 47 40 18 40Z', WOOD)
+            + '<g transform="rotate(-11 94 24)">'+ellipse(94,24,6.2,21,'#755022',GOLD)+'</g>'
+            + brass_mouthpiece(-68,-49))
+
+
+def upright_bass_brass(is_tuba):
+    # Both examples have four top-action pistons. The tuba has a wider bell,
+    # heavier outer bow, and broader wrap than the euphonium.
+    if is_tuba:
+        bell = 'M-72-60H-8C-29-45-31-26-27 3L-22 26C-20 42-4 44 11 44H30Q51 44 51 24V-10H64V27Q64 58 31 58H4Q-37 58-39 29L-43 1C-45-25-49-47-72-60Z'
+        lip = (-40,-60,32)
+        outer = 'M-23 38C-26 13-29-28-8-32L29-32Q41-32 41-20V31Q40 45 26 45H4Q-10 45-11 29L-14-10'
+        inner = 'M-17 13V30Q-17 39-8 39H28Q39 39 39 27V9M-14 19H7Q16 19 16 11V-9M57-10Q57-21 45-21H29Q19-21 19-13V3'
+        lead = 'M65-46H55Q42-46 36-33L22-9H8'
+        valves = (-14,-3,8,19)
+    else:
+        bell = 'M-51-61H3C-16-46-18-29-16-4L-13 24Q-12 37 2 37H20Q34 37 35 21V-6H44V22Q44 50 20 50H1Q-25 50-25 25L-27-4Q-28-44-51-61Z'
+        lip = (-24,-61,27)
+        outer = 'M-11 33V-8Q-11-28 3-28H18Q31-28 31-12V26Q31 37 19 37H4Q-3 37-3 27V3'
+        inner = 'M-14 13H11Q20 13 20 22Q20 31 11 31H-5M13 14V29Q13 41 21 41Q29 41 29 31V10M40-6Q40-17 27-17H21Q13-17 13-10V3'
+        lead = 'M54-46H45Q31-46 26-35L16-13Q13-8 2-8'
+        valves = (-14,-5,4,13)
+    x, y, r = lip
+    mouth = 65 if is_tuba else 54
+    return (path(bell, WOOD)
+            + ellipse(x,y,r,4.3,'#62451f',GOLD)
+            + brass_tube(outer, 8 if is_tuba else 5.8)
+            + brass_tube(inner, 5.6 if is_tuba else 4)
+            + f'<g transform="translate({mouth+13} 0) scale(-1 1)">'
+            + brass_mouthpiece(0, -46)
+            + '</g>'
+            + brass_tube(lead, 4.4)
+            + brass_pistons(valves,-14,31))
+
+
 ART = {
+    'trombone': (lambda _: straight_trombone(), 1.19, 'M2 8h7q4 0 7-3v6q-4-2-7-2H5q-3 0-3 3t3 3h15q2 0 2 2t-2 2H3m2-4v4m3-4v4'),
+    'trumpet': (lambda _: piston_trumpet(), 1.28, 'M2 9h4m0 0h8q6 0 7-4v13q-4-5-9-5H5q-2 0-2 2t2 2h10m-9-9v9m3-9v9m3-9v9M5 6h2m1 0h2m1 0h2'),
+    'french-horn': (lambda _: single_f_horn(), 1.25, 'M2 4h5q8-1 9 6 1 7-5 9-6 2-8-4-1-5 4-7 5-2 6 3 1 4-3 5m4 2 8-4v7Zm-8-7h1m1 0h1m1 0h1'),
+    'tuba': (lambda _: upright_bass_brass(True), 1.07, 'M2 2h11q-4 4-4 9v6q0 2 3 2h4q3 0 3-3V7m2 0h-3m-5 3v5m2-5v5m2-5v5m-5 7H8q-4 0-4-4V9q0-4-2-7Z'),
+    'euphonium': (lambda _: upright_bass_brass(False), 1.11, 'M4 2h9q-3 3-3 8v7q0 2 2 2 4 0 4-3V9q0-4 5-4m-9 4v5m2-5v5m-2 8H9q-3 0-3-4V9q0-4-2-7Z'),
+    'yamaha-dx7': (lambda _: yamaha_dx7(), 1.22, 'M2 7h20v10H2zm2 2h5m4 0h2m2 0h2M5 12h15m-12 0v5m4-5v5m4-5v5'),
+    'mellotron': (lambda _: mellotron(), 1.32, 'M4 6h16l2 3v11H2V9zm0 4h16M5 13h14v4H5zm4 0v4m3-4v4m3-4v4'),
+    'fairlight-cmi': (lambda _: fairlight_cmi(), 1.28, 'M8 3h10v8H8zm2 2h6v4h-6zm-8 9h20v7H2zm3 3v4m4-4v4m4-4v4m4-4v4'),
+    'jupiter-8': (lambda _: jupiter_8(), 1.20, 'M2 6h20v12H2zm4 2v3m3-3v3m3-3v3m3-3v3m3-3v3M4 13h16m-12 0v5m4-5v5m4-5v5'),
+    'uilleann-pipes': (lambda _: uilleann_pipes(), 1.33, 'M8 9C4 4 2 9 3 14c1 6 6 6 9 2l7 5M9 10l11-4m-9 7 10-1m-10 4 10 2M7 8l-2-4'),
+    'portuguese-guitar': (lambda _: portuguese_guitar(), 1.20, 'M11 11l7-7 2-2 2 2-2 3-7 7c1 4-2 8-6 8-5 0-7-6-3-9 2-2 4-2 7-2zm-4 4h.01m-2 3 3 3'),
+    'cuban-tres': (lambda _: cuban_tres(), 1.22, 'M10 11 18 3l3 3-8 8c0 4-2 7-6 7s-5-2-5-5 4-5 8-5Zm-4 5 2 2m3-5 2 2m4-9 2 2'),
+    'viola-da-gamba': (lambda _: viola_da_gamba(), 1.12, 'M11 9V3h3v6q5 0 4 4l-2 2 2 3q0 4-6 4t-6-4l2-3-2-2q-1-4 5-4Zm0 2h3m-3 2h3m-4 4h4M21 4v16'),
+    'celesta': (lambda _: celesta(), 1.38, 'M3 4h18v13H3zm1 8h16m-12 0v5m4-5v5m4-5v5M5 17v5m14-5v5m-7-5v4h3'),
+    'puerto-rican-cuatro': (lambda _: puerto_rican_cuatro(), 1.22, 'M11 10l8-8 3 3-9 8q3 3-2 4-1 5-5 5-5 0-4-5 0-3 4-4 0-4 5-3zm-3 5h.01m-3 3 3 2'),
+    'marimbula': (lambda _: marimbula(), 1.39, 'M3 8l4-4h14v16H3zm0 0h18M8 11h8m-7 0v4m3-4v6m3-6v4'),
+    'hammered-dulcimer': (lambda _: hammered_dulcimer(), 1.24, 'M5 8h14l3 12H2zm0 4h14M4 16h16M9 9l-1 10m6-10 2 10M5 5l5-2m4 0 5 2'),
+    'cuica': (lambda _: cuica(), 1.42, 'M6 5h11v14H6q-4 0-4-7t4-7Zm11 0c7 0 7 14 0 14-5 0-5-14 0-14Zm-1 6 4 2'),
+    'bass-drum': (lambda _: bass_drum(), 1.18, 'M5 7h10c5 0 5 14 0 14H5m0-14C1 7 1 21 5 21s4-14 0-14ZM10 9l3 9 3-9m-8-3 10-3m3 0a2 2 0 1 1-4 0 2 2 0 1 1 4 0'),
+    'dominican-tambora': (lambda _: dominican_tambora(), 1.22, 'M5 7q7-3 13 0v12q-7 3-13 0Zm0 0c-4 0-4 12 0 12m13-12c5 0 5 12 0 12M8 8l3 10 3-10 3 10m-4-13 8-3'),
+    'kora': (lambda _: kora(), .97, 'M10 14l1-12h2l-1 12 5-5-1 7c2 4 0 6-4 6s-7-2-7-5q0-3 5-3Zm-2 4v-5m7 6 2-5'),
+    'djembe': (lambda _: djembe(), 1.38, 'M4 7c0-4 16-4 16 0s-16 4-16 0Zm0 0c0 5 3 7 5 8l-2 5q5 2 10 0l-2-5c2-1 5-3 5-8M8 11l2 3m6-3-2 3'),
+    'qanun': (lambda _: qanun(), 1.16, 'M3 19 9 5h12v14ZM10 9h7M8 13h9M6 16h11m1-11v14'),
+    'ney': (lambda _: reed_flute(), 1.25, 'M3 8.5 21 12v3L3 12.5q-2-2 0-4Zm4 1v3m3-1h.01m3 1h.01m3 0h.01m3 1h.01'),
+    'riqq': (lambda _: riqq(), 1.27, 'M19 12a7 7 0 1 1-14 0 7 7 0 1 1 14 0ZM12 2v3m9 4-3 1m0 10-2-2m-8 0-2 2M3 9l3 1'),
+    'darbuka': (lambda _: darbuka(), 1.40, 'M5 5c0-3 14-3 14 0s-14 3-14 0Zm0 0c0 4 2 6 5 8 0 3-1 5-2 7q4 2 8 0c-1-2-2-4-2-7 3-2 5-4 5-8M10 14h4'),
+    'santur': (lambda _: santur(), 1.21, 'M3 19 7 7h10l4 12ZM7 15h10M9 12h6M2 5l7 4m13-4-7 4'),
+    'ravann': (lambda _: ravann(), 1.32, 'M21 10a9 6 0 1 1-18 0 9 6 0 1 1 18 0Zm0 0v3a9 6 0 0 1-18 0v-3M7 17v1m5 1v1m5-3v1'),
+    'maravann': (lambda _: maravann(), 1.15,
+                 'M2.5 6.5h17l2 10.5h-17zM2.5 6.5l-1 2 2 10.5h17l1-2'
+                 'M7 9l1 5.5m3-5.5 1 5.5m3-5.5 1 5.5'),
+    'kayamb': (lambda _: kayamb(), 1.31, 'M2 7h18l2 8H4Zm2 8v3h18v-3M6 7l2 8m3-8 2 8m3-8 2 8M3 11h18'),
+    'balafon': (lambda _: balafon(), 1.18, 'M3 9h18v7H3zM6 9v7m4-7v7m4-7v7m4-7v7M5 16v3h3v-3m3 0v4h3v-4m3 0v3h3v-3M4 5l7 3m9-3-5 3'),
+    'sabar': (lambda _: sabar(), 1.40, 'M5 5q6-4 12 0v1q-6 3-12 0Zm0 1 3 14q3 2 6 0l3-14M5 9l3 3m3-3v4m6-4-3 3m7-8-2 15'),
+    'tama': (lambda _: tama(), 1.4, 'M3 7q5 0 9 3 4-3 9-3v10q-5 0-9-3-4 3-9 3zM3 12h18M12 7q3-4 8-4'),
+    'rouler': (lambda _: rouler(), 1.30, 'M5 7q7-2 13 0v11q-7 2-13 0Zm0 0c-4 0-4 11 0 11m13-11c5 0 5 11 0 11M8 7v11m7-11v11'),
+    'didgeridoo': (lambda _: didgeridoo(), 1.24, 'M2 14q7-2 10-2t9-4v6q-4 1-9 1T2 17zM4 14v2m15-7v5'),
+    'biwa': (lambda _: court_biwa(), 1.12, 'M12 9V6l3-4 3 2-3 4v2c4 2 7 5 6 8-1 4-11 5-13 0-1-3 1-7 4-9Zm-1 7h6m-4-5 3 1M4 13l3 5-5 1z'),
+    'taiko': (lambda _: court_taiko(), 1.23, 'M12 2a10 9 0 0 0-8 14l-1 4h18l-1-4a10 9 0 0 0-8-14Zm6 8a6 6 0 1 1-12 0 6 6 0 1 1 12 0Zm-6-5v1m0 8v1M6 22h12'),
+    'soribuk': (lambda _: sori_barrel(), 1.17, 'M3 9q8-3 14 0v9q-8 3-14 0zM17 9q5 0 5 4.5T17 18M6 10v1m4-1v1m4-1v1M6 16v1m4-1v1m4-1v1M6 5l10-2'),
+    'saraswati-veena': (lambda _: south_indian_veena(), 1.04, 'M10 13V4l2-2h4v3h-3v8a6 5 0 1 1-3 0Zm0-5h3m-3 3h3m-3 7h3m0-11c6-2 7 4 0 4'),
+    'mridangam': (lambda _: carnatic_barrel(), 1.23, 'M3 9q7-4 14-2v11q-7 2-14-2ZM17 7q5 0 5 5.5T17 18m2-8v5M5 11l10-2m-10 4 10 1'),
+    'dhol': (lambda _: punjabi_dhol(), 1.18, 'M3 8q7-3 14-1v12q-7 2-14-1ZM17 7q4 0 4 6t-4 6M5 9l10 4-10 4m6-11 2-3 6 1M8 22l14-2'),
+    'sarangi': (lambda _: classical_sarangi(), 1.19, 'M9 11V3h6v8l2 1-1 3 2 4-1 2H7l-1-2 2-4-1-3Zm0 5h6m-4-11h4m-4 3h4M21 6v13'),
+    'bonang': (lambda _: bonang_gong_chime(), 1.13, 'M3 8h18l1 10H2zM4 13h16M6 10h.01m6 0h.01m6 0h.01M6 15.5h.01m6 0h.01m6 0h.01M6 5l10-2'),
+    'javanese-rebab': (lambda _: gamelan_rebab(), 1.15, 'M11 13V4l1-2 1 2v9l4 2-5 5-5-5Zm1 7v2M8 5h3m2 3h3m3-3q3 7 0 14'),
+    'erhu': (lambda _: erhu(), .99, 'M8 17 19 3q1-2 3-1M17 6l3 1m-4 2 3 1M4 16l3-2 3 2v4l-3 2-3-2zM7 16v6m-4-9 16 6'),
+    'pipa': (lambda _: pipa(), 1.20, 'M10 9 13 4q1-3 4-2l-.5 2.5L14 10c5 4 4 11-2 12-6 1-9-5-5-10zM9 13l6 3m-7 1 5 2m0-11 2 1'),
+    'dizi': (lambda _: dizi(), 1.23, 'M2 10h20v4H2zM5 10v4m3-4v4m3-2h.01m3 0h.01m3 0h.01m3-2v4'),
+    'suona': (lambda _: suona(), 1.24, 'M4 10 14 9q4 0 7-4v14q-3-4-7-4L4 14zM2 12h2m4 0h.01m3 0h.01m3 0h.01m7-7q3 7 0 14'),
+    'yueqin': (lambda _: yueqin(), 1.22, 'M12 9l5-6 3 2-4 6a6.5 6.5 0 1 1-4-2Zm4-2 3 2m-12 7 3 2'),
+    'sheng': (lambda _: sheng(), 1.26, 'M7 16V7h3v9m0-9V3h3v13m0-11h3v11m0-8h3v8M6 16h14q0 6-7 6T6 16Zm0 2-4 1'),
     'oud': (lambda _: oud(), 1.06, 'M12 8l5-4 3-2 2 2-2 3-2-1-4 5c0 5-4 10-8 9-3-.5-4-3-3-6 1-4 5-7 9-6ZM8 14h.01m2-3h.01'),
     'bouzouki': (lambda _: bouzouki(), 1.10, 'M10.75 11V5H10V2h4v3h-.75v6c2 1 4 3.5 4 6.5a5.25 4.5 0 0 1-10.5 0c0-3 2-5.5 4-6.5ZM12 15h.01m-2 4h4'),
     'guembri': (lambda _: guembri(), 1.13, 'M10.8 12V3q1.2-2 2.4 0v9H16l1 1v8l-1 1H8l-1-1v-8l1-1zM9 18h6m-4-10h-2m4-3h2'),
@@ -445,6 +1106,41 @@ def write(kind, slug, width, height, content):
 
 def illustration(kind, slug, width, height, geometry, scale):
     accent, shade = {
+        'trombone': ('#fbbf24', '#6c520f'),
+        'trumpet': ('#fbbf24', '#6c520f'),
+        'french-horn': ('#fbbf24', '#6c520f'),
+        'tuba': ('#fbbf24', '#6c520f'),
+        'euphonium': ('#fbbf24', '#6c520f'),
+        'yamaha-dx7': ('#38bdf8', '#18516b'),
+        'mellotron': ('#38bdf8', '#18516b'),
+        'fairlight-cmi': ('#38bdf8', '#18516b'),
+        'jupiter-8': ('#38bdf8', '#18516b'),
+        'uilleann-pipes': ('#34d399', '#165b42'),
+        'celesta': ('#818cf8', '#373c6b'),
+        'marimbula': ('#ef4444', '#671d1d'),
+        'cuica': ('#ef4444', '#671d1d'),
+        'bass-drum': ('#ef4444', '#671d1d'),
+        'dominican-tambora': ('#ef4444', '#671d1d'),
+        'djembe': ('#ef4444', '#671d1d'),
+        'ney': ('#34d399', '#165b42'),
+        'riqq': ('#ef4444', '#671d1d'),
+        'darbuka': ('#ef4444', '#671d1d'),
+        'ravann': ('#ef4444', '#671d1d'),
+        'maravann': ('#ef4444', '#671d1d'),
+        'kayamb': ('#ef4444', '#671d1d'),
+        'balafon': ('#ef4444', '#671d1d'),
+        'sabar': ('#ef4444', '#671d1d'),
+        'tama': ('#ef4444', '#671d1d'),
+        'rouler': ('#ef4444', '#671d1d'),
+        'didgeridoo': ('#34d399', '#165b42'),
+        'taiko': ('#ef4444', '#671d1d'),
+        'soribuk': ('#ef4444', '#671d1d'),
+        'mridangam': ('#ef4444', '#671d1d'),
+        'dhol': ('#ef4444', '#671d1d'),
+        'bonang': ('#ef4444', '#671d1d'),
+        'dizi': ('#34d399', '#165b42'),
+        'suona': ('#34d399', '#165b42'),
+        'sheng': ('#34d399', '#165b42'),
         'auto-tune': ('#38bdf8', '#18516b'),
         'bassoon': ('#34d399', '#165b42'),
         'conga': ('#ef4444', '#671d1d'),

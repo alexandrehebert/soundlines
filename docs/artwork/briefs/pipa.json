@@ -1,0 +1,45 @@
+{
+  "slug": "pipa",
+  "instrument": "instrument:pipa",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/503651",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/44801",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Pear-shaped flat-backed body. Four strings.",
+  "features": [
+    "Pear-shaped flat-backed body",
+    "Four strings",
+    "Bent-back head",
+    "Raised frets continue onto the soundboard"
+  ],
+  "iconFeatures": [
+    "Pear-shaped flat-backed body",
+    "Four strings"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Soundboard front",
+    "proportions": "Flattened pear body tapers smoothly into a short neck with a bent-back head.",
+    "partLayout": "Four strings cross raised frets that continue well onto the face, then meet the bridge low on the body.",
+    "documentedDimensions": {
+      "value": "94 cm long × 25.3 cm wide, about 3.7:1",
+      "source": "https://www.metmuseum.org/art/collection/search/503651",
+      "scope": "Pipa (琵琶 )"
+    },
+    "referenceImage": {
+      "url": "https://images.metmuseum.org/CRDImages/mi/web-large/DP319739.jpg",
+      "source": "https://www.metmuseum.org/art/collection/search/503651"
+    }
+  }
+}

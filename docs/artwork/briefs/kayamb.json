@@ -1,0 +1,43 @@
+{
+  "slug": "kayamb",
+  "instrument": "instrument:kayamb",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.portail-esclavage-reunion.fr/en/kayamb-bob-rouler-new-acquisitions-by-the-museum/",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.musee-villele.re/fr/notice/2021-3-1-kayam-b0b5a612-2bbf-4d1c-8188-68954cb8af9c",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.afromix.org/html/musique/instruments/kayamb/index.fr.html",
+      "shows": "Top and edge are visible together, including the parallel reeds and the shallow frame."
+    }
+  ],
+  "silhouette": "Straight frame with visible side wall. Parallel reeds across the broad face.",
+  "features": [
+    "Straight frame with visible side wall",
+    "Parallel reeds across the broad face",
+    "Cross braces restraining the reeds"
+  ],
+  "iconFeatures": [
+    "Straight frame with visible side wall",
+    "Parallel reeds across the broad face"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "High three-quarter",
+    "proportions": "Flat wide rectangle with reed surfaces and a shallow edge.",
+    "partLayout": "Parallel reeds span the broad face. Cross braces hold reeds in place and the shallow frame encloses the seeds.",
+    "referenceImage": {
+      "url": "https://www.afromix.org/html/musique/instruments/kayamb/photo_.jpg",
+      "source": "https://www.afromix.org/html/musique/instruments/kayamb/index.fr.html"
+    }
+  }
+}

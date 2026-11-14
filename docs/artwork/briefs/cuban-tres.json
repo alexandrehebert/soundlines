@@ -1,0 +1,43 @@
+{
+  "slug": "cuban-tres",
+  "instrument": "instrument:cuban-tres",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://mim.org/wp-content/uploads/2026/01/3.24.16_Cuba-Display_FINAL.pdf",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://folkways-media.si.edu/docs/folkways/artwork/ARH07006.pdf",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://guitarrasbros.com/tres-cubano-nogalito",
+      "shows": "Maker close-up shows the strings grouped in three paired courses."
+    }
+  ],
+  "silhouette": "Waisted soundbox and circular sound hole. Three clearly spaced pairs of strings.",
+  "features": [
+    "Waisted soundbox and circular sound hole",
+    "Three clearly spaced pairs of strings",
+    "Six tuning pegs arranged in two banks"
+  ],
+  "iconFeatures": [
+    "Waisted soundbox and circular sound hole",
+    "Three clearly spaced pairs of strings"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Soundboard front",
+    "proportions": "Waisted guitar-like body below a narrow fretted neck.",
+    "partLayout": "Group six strings into three visibly spaced pairs across the bridge and neck. Preserve the three course gaps at the nut.",
+    "referenceImage": {
+      "url": "https://guitarrasbros.com/public/images/1522228700_nogalito-4.jpg",
+      "source": "https://guitarrasbros.com/tres-cubano-nogalito"
+    }
+  }
+}

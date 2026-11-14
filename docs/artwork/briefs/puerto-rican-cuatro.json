@@ -1,0 +1,41 @@
+{
+  "slug": "puerto-rican-cuatro",
+  "instrument": "instrument:puerto-rican-cuatro",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://latino.si.edu/exhibitions/presente/latino-identity/cuatro",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://americanhistory.si.edu/explore/stories/yomo-toro-cuatro",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Violin-like waisted soundbox. Short fretted neck.",
+  "features": [
+    "Violin-like waisted soundbox",
+    "Short fretted neck",
+    "Round central soundhole",
+    "Five paired string courses",
+    "Ten headstock tuners"
+  ],
+  "iconFeatures": [
+    "Violin-like waisted soundbox",
+    "Short fretted neck"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Soundboard front",
+    "proportions": "Compact, distinctly waisted body with shoulders narrowing into a long fretted neck.",
+    "partLayout": "Show five paired courses and ten tuning pegs in the modern form. Keep bridge and sound hole centered.",
+    "referenceImage": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Phoenix-Musical_Instrument_Museum-Puerto_Rico_Exhibit-Cuatro_1900-1915.jpg/960px-Phoenix-Musical_Instrument_Museum-Puerto_Rico_Exhibit-Cuatro_1900-1915.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Phoenix-Musical_Instrument_Museum-Puerto_Rico_Exhibit-Cuatro_1900-1915.jpg"
+    }
+  }
+}

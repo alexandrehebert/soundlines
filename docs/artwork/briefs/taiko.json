@@ -1,0 +1,43 @@
+{
+  "slug": "taiko",
+  "instrument": "instrument:taiko",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/da3.html",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/da1.html",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.orientalartauctions.com/object/art2002296-tsuridaiko-diao-ritai-gu-hanging-court-or-shrine-drum",
+      "shows": "This hanging drum variant shows how the shell sits within the suspension frame."
+    }
+  ],
+  "silhouette": "Circular open frame above a low stand. Hangers leading to the round drum shell.",
+  "features": [
+    "Circular open frame above a low stand",
+    "Hangers leading to the round drum shell",
+    "Decorated skin head and two separate beaters"
+  ],
+  "iconFeatures": [
+    "Circular open frame above a low stand",
+    "Hangers leading to the round drum shell"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Straight front of court tsuri-daiko",
+    "proportions": "An upright round drum hangs within a larger open ring.",
+    "partLayout": "Support the ring with a low stand. The decorated head remains centered beneath the hangers; two beaters stay separate.",
+    "referenceImage": {
+      "url": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/img/tab_da2.jpg",
+      "source": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/da2.html"
+    }
+  }
+}

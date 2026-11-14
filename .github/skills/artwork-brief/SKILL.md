@@ -25,6 +25,13 @@ Reference: [docs/artwork/briefs/charango.json](../../../docs/artwork/briefs/char
   "features": ["…"],                     // 3-8 defining traits visible at banner size, with counts
   "iconFeatures": ["…"],                 // 1-3 traits, including the natural playing pose, at 16-24 px
   "avoid": ["…"],                        // 1-6 confusions with neighbours, anachronisms, wrong views
+  "geometry": {
+    "view": "Front, side, or three-quarter view and orientation",
+    "proportions": "Relative dimensions and silhouette in that view",
+    "partLayout": "Where parts sit and how they connect",
+    "documentedDimensions": { "value": "…", "source": "https://…", "scope": "Named model or specimen" },
+    "referenceImage": { "url": "https://…", "source": "https://…" }
+  },
   "notes": "…"                           // which variant/era is drawn and why
 }
 ```
@@ -41,17 +48,18 @@ Reference: [docs/artwork/briefs/charango.json](../../../docs/artwork/briefs/char
    block automated fetches; do not cite pages you could not read.
 3. **Choose the variant.** The common modern form unless the graph node describes a historical one
    (period, description). Say which in `notes`.
-4. **Write features as checkable facts**: shapes, counts (strings, courses, pegs, keys, pads, valves),
+4. **Write 2D construction guidance.** Use the reference view to describe relative widths, heights and lengths, major contour changes and where parts meet. Include physical measurements only when the source names a matching specimen or model. A physical diameter or depth is not the projected width in a three-quarter view. Link a direct reference image when the source provides one.
+5. **Write features as checkable facts**: shapes, counts (strings, courses, pegs, keys, pads, valves),
    where parts sit relative to each other, proportions ("neck about as long as the body"). Each should be
    something a reviewer can confirm on the PNG.
-5. **Write `iconFeatures`** as the 1-3 shapes that still identify the instrument at 16 px, including
+6. **Write `iconFeatures`** as the 1-3 shapes that still identify the instrument at 16 px, including
    its natural playing position. Put the pose rationale in `notes`. For symmetrical string bodies,
    preserve symmetry around the neck axis before rotating the complete instrument. Write `avoid`
    with the nearest look-alikes in the set (`ls public/instrument-icons`).
-6. **Pick `method`**: `generator` for anything the family builders (`plucked`, `bowed`, `indian`,
+7. **Pick `method`**: `generator` for anything the family builders (`plucked`, `bowed`, `indian`,
    `synthesizer`) or helpers can express; `hand` only when the shape needs bespoke paths. Existing
    instruments keep their current method unless the review asks otherwise.
-7. Lint: `node .github/skills/artwork-brief/scripts/check-brief.mjs docs/artwork/briefs/<slug>.json`.
+8. Lint: `node .github/skills/artwork-brief/scripts/check-brief.mjs docs/artwork/briefs/<slug>.json`.
 
 ## Rules
 

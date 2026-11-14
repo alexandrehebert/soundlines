@@ -27,5 +27,19 @@
     "Tubular resonators",
     "Two rows of bars"
   ],
-  "notes": "Shows a Javanese panerus with one row of slendro-tuned bars."
+  "notes": "Shows a Javanese panerus with one row of slendro-tuned bars.",
+  "geometry": {
+    "view": "High three-quarter",
+    "proportions": "Low trough with a single row of thick metal bars spanning its top.",
+    "partLayout": "Show the bar ends resting over a shaped wooden frame; keep one mallet separate from the bars.",
+    "documentedDimensions": {
+      "value": "66 × 25 cm footprint, about 2.6:1",
+      "source": "https://www.metmuseum.org/art/collection/search/501374",
+      "scope": "Saron Panerus Slendro"
+    },
+    "referenceImage": {
+      "url": "https://images.metmuseum.org/CRDImages/mi/web-large/211945.jpg",
+      "source": "https://www.metmuseum.org/art/collection/search/501374"
+    }
+  }
 }

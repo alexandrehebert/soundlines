@@ -1,0 +1,43 @@
+{
+  "slug": "sabar",
+  "instrument": "instrument:sabar",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://journal.ru.ac.za/index.php/africanmusic/article/view/2292",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.heritage.sn/articles/le-sabar-tambour-musique-et-danse-du-senegal",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://drummuseum.com/Africa/sabar-drum-senegal.html",
+      "shows": "Side view of a Senegalese sabar showing projecting tension pegs below the skin."
+    }
+  ],
+  "silhouette": "Tapered wooden shell. Single upper head joined to projecting tuning pegs.",
+  "features": [
+    "Tapered wooden shell",
+    "Single upper head joined to projecting tuning pegs",
+    "One curved stick beside the drum"
+  ],
+  "iconFeatures": [
+    "Tapered wooden shell",
+    "Single upper head joined to projecting tuning pegs"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Upright side three-quarter",
+    "proportions": "One broad head sits atop a tall tapering shell.",
+    "partLayout": "Peg ends project from the shell below the head and the ropes loop above them. Show one slim stick beside it.",
+    "referenceImage": {
+      "url": "https://drummuseum.com/Africa/images/sabar-drum-senegal.jpg",
+      "source": "https://drummuseum.com/Africa/sabar-drum-senegal.html"
+    }
+  }
+}

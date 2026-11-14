@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120">
+<defs>
+  <linearGradient id="wood" x1="0%" y1="0%" x2="38%" y2="100%"><stop stop-color="#ef4444"/><stop offset="1" stop-color="#671d1d"/></linearGradient>
+  <radialGradient id="halo"><stop stop-color="#ef4444" stop-opacity=".18"/><stop offset="1" stop-color="#671d1d" stop-opacity="0"/></radialGradient>
+  <linearGradient id='fade'><stop offset='.33' stop-color='white' stop-opacity='0'/><stop offset='.61' stop-color='white' stop-opacity='.27'/><stop offset='.88' stop-color='white' stop-opacity='.61'/><stop offset='1' stop-color='white' stop-opacity='.42'/></linearGradient><mask id='reveal' maskUnits='userSpaceOnUse'><rect width='360' height='120' fill='url(#fade)'/></mask>
+</defs>
+<ellipse cx="262" cy="64" rx="92" ry="58" fill="url(#halo)" stroke="none"/>
+<g mask="url(#reveal)"><g transform="translate(262 64) rotate(-9) scale(0.866)"><path d="M-60-35H30Q55-35 55 0T30 35H-60Z" fill="#7a5b66" stroke="#e9adab" stroke-width="1.3"/><ellipse cx="-60" cy="0" rx="14" ry="35" fill="#e3c7a5" stroke="#f9e2c1"/><ellipse cx="32" cy="0" rx="17" ry="35" fill="#393145" stroke="#ecb2ae"/><ellipse cx="33" cy="1" rx="12" ry="29" fill="#1e1828" stroke="#9d787e"/><path d="M-60-28H31M-59 28H31" fill="none" stroke="#d4c5bd" stroke-width="1.2"/><path d="M18-2h18m-3-1 7 2" fill="none" stroke="#edbc76" stroke-width="2"/><rect x="-50" y="-24" width="9" height="3" rx="1" fill="#d8c5b5" stroke="none"/><rect x="-50" y="23" width="9" height="3" rx="1" fill="#d8c5b5" stroke="none"/><rect x="17" y="-24" width="9" height="3" rx="1" fill="#d8c5b5" stroke="none"/><rect x="17" y="23" width="9" height="3" rx="1" fill="#d8c5b5" stroke="none"/></g></g>
+</svg>

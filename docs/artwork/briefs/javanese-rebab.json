@@ -1,0 +1,46 @@
+{
+  "slug": "javanese-rebab",
+  "instrument": "instrument:javanese-rebab",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/501344",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/505258",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Very long thin neck. Two strings.",
+  "features": [
+    "Very long thin neck",
+    "Two strings",
+    "Small triangular skin-fronted resonator",
+    "Pointed spike projecting below the body",
+    "Curved bow"
+  ],
+  "iconFeatures": [
+    "Very long thin neck",
+    "Two strings"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Upright three-quarter",
+    "proportions": "Very narrow long neck above a small triangular skin-faced resonator and pointed foot.",
+    "partLayout": "Two strings run down the neck to the bridge. Continue the spike below the resonator and keep the bow distinct.",
+    "documentedDimensions": {
+      "value": "117 cm long × 16.5 cm wide, about 7.1:1",
+      "source": "https://www.metmuseum.org/art/collection/search/501344",
+      "scope": "Rebab"
+    },
+    "referenceImage": {
+      "url": "https://images.metmuseum.org/CRDImages/mi/web-large/247911.jpg",
+      "source": "https://www.metmuseum.org/art/collection/search/501344"
+    }
+  }
+}

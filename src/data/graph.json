@@ -16969,6 +16969,22 @@
       "phaseNote": "Dates refer to western European history; removed unsupported “golden age” and generic 1800 endpoint."
     },
     {
+      "id": "instrument:celesta",
+      "type": "instrument",
+      "name": "Celesta",
+      "family": "keyboards",
+      "description": "Keyboard instrument whose felt hammers strike metal plates to produce a soft, bell-like sound.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.celesta-schiedmayer.de/en/celesta/all-about-the-celesta/"
+      ],
+      "period": {
+        "start": 1886,
+        "end": null,
+        "precision": "year"
+      }
+    },
+    {
       "id": "instrument:quena",
       "type": "instrument",
       "name": "Quena",
@@ -25279,6 +25295,112 @@
       "phaseNote": "Replace the unsupported circa-1800 origin with circa-1720 early-form development. Separate that from wider use around the mid-19th century. Both are approximate historical markers; neither denotes a measured popularity peak."
     },
     {
+      "id": "instrument:dizi",
+      "type": "instrument",
+      "name": "Dizi",
+      "family": "winds",
+      "description": "A Chinese transverse flute with a thin membrane that vibrates to give the notes a buzzing tone.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/503050",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1533"
+      ],
+      "period": {
+        "start": 1800,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:suona",
+      "type": "instrument",
+      "name": "Suona",
+      "family": "winds",
+      "description": "A Chinese double-reed shawm with a flared metal bell and a penetrating tone.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1249",
+        "https://www.metmuseum.org/art/collection/search/505216"
+      ],
+      "period": {
+        "start": 1300,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:sheng",
+      "type": "instrument",
+      "name": "Sheng",
+      "family": "winds",
+      "description": "A Chinese free-reed mouth organ with pipes arranged around a wind chamber.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1248",
+        "https://www.metmuseum.org/art/collection/search/503632"
+      ],
+      "period": {
+        "start": -450,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:ney",
+      "type": "instrument",
+      "name": "Ney",
+      "family": "winds",
+      "description": "An end-blown reed flute used in classical Arab music.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/501050"
+      ],
+      "period": {
+        "start": 1850,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:didgeridoo",
+      "type": "instrument",
+      "name": "Didgeridoo",
+      "family": "winds",
+      "description": "A long wooden wind instrument from northern Australia. Players vibrate their lips at its opening to produce a drone. Yidaki is a Yolŋu name for a regional form.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://collections.museumsvictoria.com.au/items/166456",
+        "https://aiatsis.gov.au/explore/didjeridu",
+        "https://www.metmuseum.org/art/collection/search/503365"
+      ],
+      "period": {
+        "start": 1900,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "A museum specimen dated to around 1900 anchors this older tradition."
+      }
+    },
+    {
+      "id": "instrument:uilleann-pipes",
+      "type": "instrument",
+      "name": "Uilleann pipes",
+      "family": "winds",
+      "description": "Irish bagpipes fed by elbow-operated bellows, with a chanter for the melody and drones that sustain other notes.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://pipers.ie/about/history/",
+        "https://ich.unesco.org/en/RL/uilleann-piping-01264"
+      ],
+      "period": {
+        "start": 1700,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
       "id": "instrument:juno-106",
       "type": "instrument",
       "name": "Roland JUNO-106",
@@ -25307,6 +25429,72 @@
         }
       ],
       "phaseNote": "1984 is a well-supported release year. A single editorial phase avoids inventing a peak. Manufacturer pages disagree about production duration; no production end is used as an end to musical use."
+    },
+    {
+      "id": "instrument:yamaha-dx7",
+      "type": "instrument",
+      "name": "Yamaha DX7",
+      "family": "electronic",
+      "description": "Digital synthesizer that uses frequency modulation to produce sounds such as bright electric pianos and punchy basses.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.yamaha.com/en/about/experience/innovation-road/collection/detail/2010/"
+      ],
+      "period": {
+        "start": 1983,
+        "end": null,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "instrument:mellotron",
+      "type": "instrument",
+      "name": "Mellotron",
+      "family": "electronic",
+      "description": "Electromechanical keyboard that plays a length of prerecorded magnetic tape when a key is pressed.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://collection.sciencemuseumgroup.org.uk/objects/co8094212/mellotron-fx-sound-effects-console"
+      ],
+      "period": {
+        "start": 1963,
+        "end": null,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "instrument:fairlight-cmi",
+      "type": "instrument",
+      "name": "Fairlight CMI",
+      "family": "electronic",
+      "description": "Australian computer musical instrument that lets musicians record and play back digital samples from a keyboard.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.nfsa.gov.au/collection/item/fairlight-cmi-peter-vogel-and-kim-ryrie",
+        "https://collection.powerhouse.com.au/object/152404"
+      ],
+      "period": {
+        "start": 1979,
+        "end": null,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "instrument:jupiter-8",
+      "type": "instrument",
+      "name": "Roland JUPITER-8",
+      "family": "electronic",
+      "description": "Eight-voice analog synthesizer with an arpeggiator and a keyboard that can be split between two sounds.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.roland.com/Global/products/rc_jupiter-8/",
+        "https://cdn.roland.com/assets/media/pdf/jupiter_series_brochure.pdf"
+      ],
+      "period": {
+        "start": 1981,
+        "end": null,
+        "precision": "year"
+      }
     },
     {
       "id": "instrument:oud",
@@ -25358,6 +25546,345 @@
       ]
     },
     {
+      "id": "instrument:taiko",
+      "type": "instrument",
+      "name": "Taiko",
+      "family": "percussion",
+      "description": "Japanese drums played with sticks. In gagaku the name includes the suspended tsuri-daiko and the larger dadaiko.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/index.html",
+        "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/da1.html"
+      ],
+      "period": {
+        "start": 900,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:soribuk",
+      "type": "instrument",
+      "name": "Soribuk",
+      "family": "percussion",
+      "description": "The Korean barrel drum that accompanies a pansori singer, with hide heads fixed by metal tacks.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.korea.net/Events/Overseas/view?articleId=9553",
+        "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003245205"
+      ],
+      "period": {
+        "start": 1750,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:mridangam",
+      "type": "instrument",
+      "name": "Mridangam",
+      "family": "percussion",
+      "description": "A double-headed South Indian barrel drum that provides rhythmic accompaniment in Carnatic music.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/503301",
+        "https://resources.metmuseum.org/resources/metpublications/pdf/The_Art_of_South_and_Southeast_Asia_A_Resource_for_Educators.pdf"
+      ],
+      "period": {
+        "start": 1620,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:dhol",
+      "type": "instrument",
+      "name": "Dhol",
+      "family": "percussion",
+      "description": "A double-headed barrel drum that drives Punjabi bhangra rhythms.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/504419",
+        "https://folklife.si.edu/magazine/tradition-of-now-sunny-jain"
+      ],
+      "period": {
+        "start": 1580,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:bonang",
+      "type": "instrument",
+      "name": "Bonang",
+      "family": "percussion",
+      "description": "A set of small tuned gongs arranged horizontally on a rack and played with padded beaters in Indonesian gamelan.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1220",
+        "https://www.metmuseum.org/art/collection/search/501379"
+      ],
+      "period": {
+        "start": 1750,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:djembe",
+      "type": "instrument",
+      "name": "Djembe",
+      "family": "percussion",
+      "description": "A Mandé goblet drum played with the hands. Different strokes produce distinct bass, tone and slap sounds.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/503286",
+        "https://www.metmuseum.org/art/collection/search/503722"
+      ],
+      "period": {
+        "start": 1900,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:riqq",
+      "type": "instrument",
+      "name": "Riqq",
+      "family": "percussion",
+      "description": "A small frame drum with a skin head and metal jingles, used in classical Arab ensembles.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/500950"
+      ],
+      "period": {
+        "start": 1875,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:darbuka",
+      "type": "instrument",
+      "name": "Darbuka",
+      "family": "percussion",
+      "description": "A goblet-shaped hand drum used in Arab music, with regional names that include tabla and dumbak.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/505776"
+      ],
+      "period": {
+        "start": 1850,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:balafon",
+      "type": "instrument",
+      "name": "Balafon",
+      "family": "percussion",
+      "description": "A West African xylophone with wooden bars and gourd resonators. It is also known as the bala in Mandé traditions.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/501109",
+        "https://ich.unesco.org/en/RL/cultural-space-of-sosso-bala-00009"
+      ],
+      "period": {
+        "start": 1250,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:ravann",
+      "type": "instrument",
+      "name": "Ravann",
+      "family": "percussion",
+      "description": "A Mauritian frame drum with a skin head, played with the hands in traditional sega.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://ich.unesco.org/doc/src/26081-EN.pdf",
+        "https://www.phoi.io/index.php/Articles/Display/Details/id/19"
+      ],
+      "period": {
+        "start": 1964,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:maravann",
+      "type": "instrument",
+      "name": "Maravann",
+      "family": "percussion",
+      "description": "A rectangular Mauritian rattle filled with seeds and shaken horizontally in traditional sega.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://ich.unesco.org/doc/src/26081-EN.pdf",
+        "https://www.phoi.io/index.php/Articles/Display/Details/id/19"
+      ],
+      "period": {
+        "start": 1964,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:sabar",
+      "type": "instrument",
+      "name": "Sabar",
+      "family": "percussion",
+      "description": "A Senegalese drum played with one hand and a stick. Its rhythms underpin mbalax.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://music.africamuseum.be/english/detailrec.php?id=MR.1959.13.8-A2",
+        "https://files.core.ac.uk/download/pdf/161443043.pdf"
+      ],
+      "period": {
+        "start": 1954,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:tama",
+      "type": "instrument",
+      "name": "Tama",
+      "family": "percussion",
+      "description": "A small Wolof talking drum. The player squeezes its cords under the arm to change the pitch while striking it.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://wmic.net/wolof-tama-happy/"
+      ],
+      "period": {
+        "start": 1925,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:kayamb",
+      "type": "instrument",
+      "name": "Kayamb",
+      "family": "percussion",
+      "description": "A flat Réunionese rattle built with plant stalks and filled with seeds. It marks the pulse in maloya.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.portail-esclavage-reunion.fr/en/kayamb-bob-rouler-new-acquisitions-by-the-museum/",
+        "https://dante.univ-tlse2.fr/files/original/795af431a18d1a741626d58c820d8d27a452c0af.pdf"
+      ],
+      "period": {
+        "start": 1976,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:rouler",
+      "type": "instrument",
+      "name": "Roulèr",
+      "family": "percussion",
+      "description": "A large Réunionese barrel drum that the player straddles to play the low rhythms of maloya.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.portail-esclavage-reunion.fr/en/kayamb-bob-rouler-new-acquisitions-by-the-museum/",
+        "https://dante.univ-tlse2.fr/files/original/795af431a18d1a741626d58c820d8d27a452c0af.pdf"
+      ],
+      "period": {
+        "start": 1976,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:marimbula",
+      "type": "instrument",
+      "name": "Marímbula",
+      "family": "percussion",
+      "description": "Large wooden box with plucked metal tongues that provide bass notes in early Cuban son.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/FW04064.pdf",
+        "https://latino.si.edu/exposiciones/puro-ritmo/qr/salsas-roots-case"
+      ],
+      "period": {
+        "start": 1880,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:cuica",
+      "type": "instrument",
+      "name": "Cuíca",
+      "family": "percussion",
+      "description": "Brazilian friction drum sounded by rubbing a rod attached to the inside of its drumhead.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://avpreservation.si.edu/object/acm_2003.0032.0388"
+      ],
+      "period": {
+        "start": 1940,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:bass-drum",
+      "type": "instrument",
+      "name": "Bass drum",
+      "family": "percussion",
+      "description": "Large low-pitched drum used in European orchestras and military bands, where it was often paired with cymbals.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/504262",
+        "https://www.metmuseum.org/de/essays/military-music-in-american-and-european-traditions"
+      ],
+      "period": {
+        "start": 1780,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:dominican-tambora",
+      "type": "instrument",
+      "name": "Dominican tambora",
+      "family": "percussion",
+      "description": "Double-headed Dominican drum played with one hand and a stick in merengue típico.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/505683",
+        "https://folkways-media.si.edu/docs/folkways/artwork/SFW40547.pdf"
+      ],
+      "period": {
+        "start": 1900,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
       "id": "instrument:bouzouki",
       "type": "instrument",
       "name": "Bouzouki",
@@ -25388,6 +25915,267 @@
         "https://folkways.si.edu/music-of-morocco/islamica-world/album/smithsonian",
         "https://ich.unesco.org/doc/src/31303-FR.pdf"
       ]
+    },
+    {
+      "id": "instrument:erhu",
+      "type": "instrument",
+      "name": "Erhu",
+      "family": "strings",
+      "description": "A Chinese two-string fiddle bowed upright, with the bow hair passing between the strings.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/500616"
+      ],
+      "period": {
+        "start": 1800,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:pipa",
+      "type": "instrument",
+      "name": "Pipa",
+      "family": "strings",
+      "description": "A Chinese plucked lute with four strings, a pear-shaped body, and frets extending onto the soundboard.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/es/essays/the-pipa",
+        "https://www.metmuseum.org/art/collection/search/503651"
+      ],
+      "period": {
+        "start": 450,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:yueqin",
+      "type": "instrument",
+      "name": "Yueqin",
+      "family": "strings",
+      "description": "A short-necked Chinese lute known as the moon lute for its flat circular body.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/500626"
+      ],
+      "period": {
+        "start": 1800,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:biwa",
+      "type": "instrument",
+      "name": "Biwa",
+      "family": "strings",
+      "description": "A Japanese fretted lute with a pear-shaped body, plucked with a broad plectrum.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/2137",
+        "https://www.metmuseum.org/art/collection/search/44801",
+        "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/ge2.html"
+      ],
+      "period": {
+        "start": 700,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:saraswati-veena",
+      "type": "instrument",
+      "name": "Saraswati veena",
+      "family": "strings",
+      "description": "A fretted South Indian lute associated with Carnatic music, named for the Hindu goddess Saraswati.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/505819",
+        "https://www.metmuseum.org/art/collection/search/506151"
+      ],
+      "period": {
+        "start": 1625,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:sarangi",
+      "type": "instrument",
+      "name": "Sarangi",
+      "family": "strings",
+      "description": "A bowed North Indian lute with sympathetic strings, used to accompany singers in Hindustani classical music.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/3436",
+        "https://www.metmuseum.org/art/collection/search/500752"
+      ],
+      "period": {
+        "start": 1860,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:javanese-rebab",
+      "type": "instrument",
+      "name": "Javanese rebab",
+      "family": "strings",
+      "description": "A two-string bowed spike fiddle that ornaments melodies in Javanese gamelan.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/626",
+        "https://www.metmuseum.org/art/collection/search/501344"
+      ],
+      "period": {
+        "start": 1500,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:kora",
+      "type": "instrument",
+      "name": "Kora",
+      "family": "strings",
+      "description": "A plucked West African harp used by Mandé musicians. Its strings pass over a tall bridge above a skin-covered gourd resonator.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/501115",
+        "https://folkways-media.si.edu/docs/folkways/artwork/SFW40494.pdf"
+      ],
+      "period": {
+        "start": 1750,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "Timeline placement follows an eighteenth-century oral account."
+      }
+    },
+    {
+      "id": "instrument:qanun",
+      "type": "instrument",
+      "name": "Qanun",
+      "family": "strings",
+      "description": "A trapezoidal plucked zither whose small levers change the pitches of its string courses for different modes.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/500957"
+      ],
+      "period": {
+        "start": 1750,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:santur",
+      "type": "instrument",
+      "name": "Santur",
+      "family": "strings",
+      "description": "A trapezoidal zither whose strings are struck with light mallets. It is a typical instrument in Iraqi maqam.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/500992"
+      ],
+      "period": {
+        "start": 1875,
+        "end": null,
+        "precision": "circa",
+        "estimated": true,
+        "estimateNote": "The start marks surviving documentation of this older instrument."
+      }
+    },
+    {
+      "id": "instrument:portuguese-guitar",
+      "type": "instrument",
+      "name": "Portuguese guitar",
+      "family": "strings",
+      "description": "Plucked Portuguese instrument with six pairs of metal strings and a central role in fado accompaniment.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.museudofado.pt/historia-do-fado?name=2027",
+        "https://ich.unesco.org/en/decisions/6.COM/13.39"
+      ],
+      "period": {
+        "start": 1800,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:cuban-tres",
+      "type": "instrument",
+      "name": "Cuban tres",
+      "family": "strings",
+      "description": "Cuban guitar-like instrument with three courses of strings and a characteristic role in son cubano.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/FW04064.pdf",
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07006.pdf"
+      ],
+      "period": {
+        "start": 1880,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:viola-da-gamba",
+      "type": "instrument",
+      "name": "Viola da gamba",
+      "family": "strings",
+      "description": "Bowed, fretted string instrument held upright on or between the legs and often played in groups of viols of different sizes.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/es/essays/the-viol",
+        "https://www.metmuseum.org/art/collection/search/503359"
+      ],
+      "period": {
+        "start": 1490,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:puerto-rican-cuatro",
+      "type": "instrument",
+      "name": "Puerto Rican cuatro",
+      "family": "strings",
+      "description": "Puerto Rican plucked instrument whose modern form has a violin-shaped body and five pairs of strings.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://latino.si.edu/exhibitions/presente/latino-identity/cuatro",
+        "https://americanhistory.si.edu/explore/stories/yomo-toro-cuatro"
+      ],
+      "period": {
+        "start": 1900,
+        "end": null,
+        "precision": "circa"
+      }
+    },
+    {
+      "id": "instrument:hammered-dulcimer",
+      "type": "instrument",
+      "name": "Hammered dulcimer",
+      "family": "strings",
+      "description": "Zither with courses of strings stretched across a flat soundbox and struck with small handheld hammers.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://repository.si.edu/bitstream/handle/10088/2443/SSHT-0044_Lo_res.pdf"
+      ],
+      "period": {
+        "start": 1400,
+        "end": null,
+        "precision": "circa"
+      }
     },
     {
       "id": "artist:dune",
@@ -58232,6 +59020,480 @@
       "to": "genre:gnawa",
       "sources": [
         "https://ich.unesco.org/doc/src/31303-FR.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:erhu-peking-opera",
+      "type": "featured_in",
+      "from": "instrument:erhu",
+      "to": "genre:peking-opera",
+      "sources": [
+        "https://english.beijing.gov.cn/beijinginfo/culture/202005/t20200511_1894129.html",
+        "https://www.metmuseum.org/art/collection/search/500616"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:pipa-peking-opera",
+      "type": "featured_in",
+      "from": "instrument:pipa",
+      "to": "genre:peking-opera",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/page/beijing",
+        "https://www.metmuseum.org/art/collection/search/503651"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:dizi-peking-opera",
+      "type": "featured_in",
+      "from": "instrument:dizi",
+      "to": "genre:peking-opera",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/page/beijing",
+        "https://english.scio.gov.cn/m/chinafacts/2017-04/13/content_40612142.htm"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:suona-peking-opera",
+      "type": "featured_in",
+      "from": "instrument:suona",
+      "to": "genre:peking-opera",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1249",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/page/beijing"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:yueqin-peking-opera",
+      "type": "featured_in",
+      "from": "instrument:yueqin",
+      "to": "genre:peking-opera",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/500626",
+        "https://english.beijing.gov.cn/beijinginfo/culture/202005/t20200511_1894129.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:sheng-peking-opera",
+      "type": "featured_in",
+      "from": "instrument:sheng",
+      "to": "genre:peking-opera",
+      "sources": [
+        "https://english.scio.gov.cn/m/chinafacts/2017-04/13/content_40612142.htm"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:biwa-gagaku",
+      "type": "featured_in",
+      "from": "instrument:biwa",
+      "to": "genre:gagaku",
+      "sources": [
+        "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/kangen/ka1.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:taiko-gagaku",
+      "type": "featured_in",
+      "from": "instrument:taiko",
+      "to": "genre:gagaku",
+      "sources": [
+        "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/da1.html",
+        "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/kangen/ka1.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:soribuk-pansori",
+      "type": "featured_in",
+      "from": "instrument:soribuk",
+      "to": "genre:pansori",
+      "sources": [
+        "https://www.korea.net/Events/Overseas/view?articleId=9553",
+        "https://ich.unesco.org/en/RL/pansori-epic-chant-00070"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:saraswati-veena-carnatic",
+      "type": "featured_in",
+      "from": "instrument:saraswati-veena",
+      "to": "genre:carnatic",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/505819"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:mridangam-carnatic",
+      "type": "featured_in",
+      "from": "instrument:mridangam",
+      "to": "genre:carnatic",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/503301"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:dhol-punjabi-bhangra",
+      "type": "featured_in",
+      "from": "instrument:dhol",
+      "to": "genre:punjabi-bhangra",
+      "sources": [
+        "https://folklife.si.edu/magazine/tradition-of-now-sunny-jain"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:sarangi-hindustani-classical",
+      "type": "featured_in",
+      "from": "instrument:sarangi",
+      "to": "genre:hindustani-classical",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/3436"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:bonang-gamelan",
+      "type": "featured_in",
+      "from": "instrument:bonang",
+      "to": "genre:gamelan",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1220",
+        "https://ich.unesco.org/doc/src/47516-EN.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:javanese-rebab-gamelan",
+      "type": "featured_in",
+      "from": "instrument:javanese-rebab",
+      "to": "genre:gamelan",
+      "sources": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/626",
+        "https://www.metmuseum.org/art/collection/search/505258"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:kora-mbalax",
+      "type": "featured_in",
+      "from": "instrument:kora",
+      "to": "genre:mbalax",
+      "sources": [
+        "https://s.francaisfacile.rfi.fr/media/display/57972d2e-3237-11f0-a39c-005056a90284/rfi_a2_fp_20250404_youssou_ndour_transcription.pdf",
+        "https://files.core.ac.uk/download/pdf/161443043.pdf"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "featured:djembe-mbalax",
+      "type": "featured_in",
+      "from": "instrument:djembe",
+      "to": "genre:mbalax",
+      "sources": [
+        "https://files.core.ac.uk/download/pdf/161443043.pdf"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "featured:qanun-arabic-maqam",
+      "type": "featured_in",
+      "from": "instrument:qanun",
+      "to": "genre:arabic-maqam",
+      "sources": [
+        "https://www.metmuseum.org/it/press-releases/concerts-november-2011-2011-news"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:ney-arabic-maqam",
+      "type": "featured_in",
+      "from": "instrument:ney",
+      "to": "genre:arabic-maqam",
+      "sources": [
+        "https://www.metmuseum.org/it/press-releases/concerts-november-2011-2011-news"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:riqq-arabic-maqam",
+      "type": "featured_in",
+      "from": "instrument:riqq",
+      "to": "genre:arabic-maqam",
+      "sources": [
+        "https://www.metmuseum.org/it/press-releases/concerts-november-2011-2011-news"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:darbuka-arabic-maqam",
+      "type": "featured_in",
+      "from": "instrument:darbuka",
+      "to": "genre:arabic-maqam",
+      "sources": [
+        "https://www.metmuseum.org/it/press-releases/concerts-november-2011-2011-news",
+        "https://ich.unesco.org/en/RL/iraqi-maqam-00076"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:santur-arabic-maqam",
+      "type": "featured_in",
+      "from": "instrument:santur",
+      "to": "genre:arabic-maqam",
+      "sources": [
+        "https://ich.unesco.org/en/RL/iraqi-maqam-00076",
+        "https://www.metmuseum.org/it/press-releases/concerts-november-2011-2011-news"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:balafon-mbalax",
+      "type": "featured_in",
+      "from": "instrument:balafon",
+      "to": "genre:mbalax",
+      "sources": [
+        "https://s.francaisfacile.rfi.fr/media/display/57972d2e-3237-11f0-a39c-005056a90284/rfi_a2_fp_20250404_youssou_ndour_transcription.pdf"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "featured:ravann-sega",
+      "type": "featured_in",
+      "from": "instrument:ravann",
+      "to": "genre:sega",
+      "sources": [
+        "https://ich.unesco.org/doc/src/26081-EN.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:maravann-sega",
+      "type": "featured_in",
+      "from": "instrument:maravann",
+      "to": "genre:sega",
+      "sources": [
+        "https://ich.unesco.org/doc/src/26081-EN.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:sabar-mbalax",
+      "type": "featured_in",
+      "from": "instrument:sabar",
+      "to": "genre:mbalax",
+      "sources": [
+        "https://files.core.ac.uk/download/pdf/161443043.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:tama-mbalax",
+      "type": "featured_in",
+      "from": "instrument:tama",
+      "to": "genre:mbalax",
+      "sources": [
+        "https://files.core.ac.uk/download/pdf/161443043.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:kayamb-maloya",
+      "type": "featured_in",
+      "from": "instrument:kayamb",
+      "to": "genre:maloya",
+      "sources": [
+        "https://www.portail-esclavage-reunion.fr/en/kayamb-bob-rouler-new-acquisitions-by-the-museum/",
+        "https://dante.univ-tlse2.fr/files/original/795af431a18d1a741626d58c820d8d27a452c0af.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:rouler-maloya",
+      "type": "featured_in",
+      "from": "instrument:rouler",
+      "to": "genre:maloya",
+      "sources": [
+        "https://www.portail-esclavage-reunion.fr/en/kayamb-bob-rouler-new-acquisitions-by-the-museum/",
+        "https://dante.univ-tlse2.fr/files/original/795af431a18d1a741626d58c820d8d27a452c0af.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:didgeridoo-pop",
+      "type": "featured_in",
+      "from": "instrument:didgeridoo",
+      "to": "genre:pop",
+      "sources": [
+        "https://aso.gov.au/titles/music/treaty/notes/",
+        "https://www.nfsa.gov.au/stories/deep-dives/national-songbook-song-treaty"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "featured:yamaha-dx7-pop",
+      "type": "featured_in",
+      "from": "instrument:yamaha-dx7",
+      "to": "genre:pop",
+      "sources": [
+        "https://uk.yamaha.com/en/musical-instruments/keyboards/explore/synth-50th/history/chapter002.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:mellotron-progressive-rock",
+      "type": "featured_in",
+      "from": "instrument:mellotron",
+      "to": "genre:progressive-rock",
+      "sources": [
+        "https://collection.sciencemuseumgroup.org.uk/objects/co8094212/mellotron-fx-sound-effects-console"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:fairlight-cmi-pop",
+      "type": "featured_in",
+      "from": "instrument:fairlight-cmi",
+      "to": "genre:pop",
+      "sources": [
+        "https://collection.powerhouse.com.au/object/66226",
+        "https://www.nfsa.gov.au/collection/item/sampling-sounds-fairlight-cmi"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:jupiter-8-synth-pop",
+      "type": "featured_in",
+      "from": "instrument:jupiter-8",
+      "to": "genre:synth-pop",
+      "sources": [
+        "https://articles.roland.com/jupiter-king-of-the-polysynths/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:uilleann-pipes-folk",
+      "type": "featured_in",
+      "from": "instrument:uilleann-pipes",
+      "to": "genre:folk",
+      "sources": [
+        "https://www.topicrecords.co.uk/2010/09/the-mcpeake-family-wild-mountain-thyme-tscd583/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:portuguese-guitar-fado",
+      "type": "featured_in",
+      "from": "instrument:portuguese-guitar",
+      "to": "genre:fado",
+      "sources": [
+        "https://www.museudofado.pt/historia-do-fado?name=2027",
+        "https://ich.unesco.org/en/decisions/6.COM/13.39"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:cuban-tres-son-cubano",
+      "type": "featured_in",
+      "from": "instrument:cuban-tres",
+      "to": "genre:son-cubano",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/FW04064.pdf",
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07006.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:viola-da-gamba-renaissance",
+      "type": "featured_in",
+      "from": "instrument:viola-da-gamba",
+      "to": "genre:renaissance",
+      "sources": [
+        "https://www.metmuseum.org/es/essays/the-viol",
+        "https://www.metmuseum.org/art/collection/search/503359"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:celesta-romantic",
+      "type": "featured_in",
+      "from": "instrument:celesta",
+      "to": "genre:romantic",
+      "sources": [
+        "https://www.celesta-schiedmayer.de/en/celesta/all-about-the-celesta/",
+        "https://www.yamaha.com/en/musical_instrument_guide/celesta/structure/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:puerto-rican-cuatro-salsa",
+      "type": "featured_in",
+      "from": "instrument:puerto-rican-cuatro",
+      "to": "genre:salsa",
+      "sources": [
+        "https://fania.com/artist/yomo-toro/",
+        "https://fania.com/record/asalto-navideno/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:marimbula-son-cubano",
+      "type": "featured_in",
+      "from": "instrument:marimbula",
+      "to": "genre:son-cubano",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/FW04064.pdf",
+        "https://latino.si.edu/exposiciones/puro-ritmo/qr/salsas-roots-case"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:hammered-dulcimer-folk",
+      "type": "featured_in",
+      "from": "instrument:hammered-dulcimer",
+      "to": "genre:folk",
+      "sources": [
+        "https://repository.si.edu/server/api/core/bitstreams/6068402c-6bfd-4aed-8d6d-43c0664ac300/content",
+        "https://folkways-media.si.edu/docs/folkways/artwork/FLG00087-LP.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:cuica-samba",
+      "type": "featured_in",
+      "from": "instrument:cuica",
+      "to": "genre:samba",
+      "sources": [
+        "https://avpreservation.si.edu/object/acm_2003.0032.0388",
+        "https://folkways.si.edu/danca-movement-brazil/samba/music/tools-for-teaching/smithsonian"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:bass-drum-classical-period",
+      "type": "featured_in",
+      "from": "instrument:bass-drum",
+      "to": "genre:classical-period",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/504262"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:dominican-tambora-merengue",
+      "type": "featured_in",
+      "from": "instrument:dominican-tambora",
+      "to": "genre:merengue",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/SFW40547.pdf"
       ],
       "confidence": "high"
     }

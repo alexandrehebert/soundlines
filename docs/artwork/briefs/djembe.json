@@ -1,0 +1,45 @@
+{
+  "slug": "djembe",
+  "instrument": "instrument:djembe",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/503286",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/503722",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Goblet-shaped carved wood body. Flared foot.",
+  "features": [
+    "Goblet-shaped carved wood body",
+    "Flared foot",
+    "Single broad skin head",
+    "Vertical tension ropes"
+  ],
+  "iconFeatures": [
+    "Goblet-shaped carved wood body",
+    "Flared foot"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Upright side three-quarter",
+    "proportions": "A wide single head contracts to a narrow waist before widening into an open foot.",
+    "partLayout": "Ropes run from the top ring to a smaller ring at the waist. Keep goblet silhouette clear through lacing.",
+    "documentedDimensions": {
+      "value": "49.7 cm drum length and 39 cm head diameter, about 1.3:1 on the larger specimen",
+      "source": "https://www.metmuseum.org/art/collection/search/503286",
+      "scope": "Jembe"
+    },
+    "referenceImage": {
+      "url": "https://www.percussion-africaine.com/IMG/jpg/djembe-dugura-mali-7115.jpg",
+      "source": "https://www.percussion-africaine.com/djembe-de-qualite-superieure-djembe-mali-premium-12224"
+    }
+  }
+}

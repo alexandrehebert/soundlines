@@ -22,7 +22,7 @@ previous version in `src/stories/fixtures/instrument-artwork-v1/` when redrawn, 
 2. **Provenance.** `method: generator` ⇒ the slug is in `ART` and `--check` is clean (no hand edits);
    `method: hand` ⇒ the slug is not in `ART`. The redraw keeps a v1 fixture and is listed in
    `revisedInstruments`.
-3. **Accuracy against the brief.** Open the sheet. For every `features` item, say where it is visible
+3. **Accuracy against the brief.** Open the sheet. Compare the drawing with the `geometry` view, proportions, and layout. For every `features` item, say where it is visible
    and whether counts and placement match; open at least one brief reference to compare proportions.
    Any `avoid` item present, or a wrong count of strings, courses, pegs, keys or drums, is blocking.
 4. **Icon.** At 24 and 16 px in `$STAGE/<slug>.png` and among its neighbours in `icons.png`: the

@@ -27,5 +27,10 @@
     "Short fretless oud neck",
     "Bent oud pegbox"
   ],
-  "notes": "Shows the three-course Greek form associated with early rebetiko."
+  "notes": "Shows the three-course Greek form associated with early rebetiko.",
+  "geometry": {
+    "view": "Soundboard front",
+    "proportions": "Long fretted neck dominates the pear-shaped bowl body.",
+    "partLayout": "Align string courses with bridge and rosette. Leave a continuous narrow neck between bowl and headstock."
+  }
 }

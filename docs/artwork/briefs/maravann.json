@@ -1,0 +1,38 @@
+{
+  "slug": "maravann",
+  "instrument": "instrument:maravann",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://web.mie.ac.mu/wp-content/uploads/2025/08/Guide-de-lenseignant.e_Grade-8_Musique_Lec%CC%A7on-7.pdf#page=4",
+      "shows": "Page 4 shows a standalone cane-faced maravanne with a broad wooden frame and a visible side wall."
+    },
+    {
+      "url": "https://nhf.govmu.org/nhf/?mdocs-file=622",
+      "shows": "The Sega Tipik inventory describes a closed seed-filled box held horizontally and shaken from side to side."
+    }
+  ],
+  "silhouette": "A broad rectangular wooden shaker held with the long edges nearly level. An oblique view shows its shallow closed walls and inset cane face.",
+  "features": [
+    "Four broad wooden rails make a continuous rectangular frame",
+    "Closely packed cane runs across the short dimension inside the frame",
+    "An oblique view shows one long wall and one short wall enclosing the shaker",
+    "The front rail leaves a visible lip between the cane and the side wall"
+  ],
+  "iconFeatures": [
+    "Nearly horizontal rectangular box in playing position",
+    "Offset bottom edges show depth",
+    "Three spaced marks suggest the inset cane face"
+  ],
+  "avoid": [
+    "Exposed transverse binding strips on a reed raft",
+    "Open slats or wooden bars that suggest a xylophone"
+  ],
+  "notes": "Shows the framed cane version pictured by the Mauritius Institute of Education. The broad face is tilted toward the viewer while the long axis remains near horizontal as in playing position.",
+  "geometry": {
+    "view": "High three-quarter",
+    "proportions": "Rectangular cane face sits inside a narrow frame with visible shallow walls.",
+    "partLayout": "Keep cane strips parallel and show the frame closing the ends, creating space for seeds inside."
+  }
+}

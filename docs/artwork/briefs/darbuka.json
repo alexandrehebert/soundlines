@@ -1,0 +1,40 @@
+{
+  "slug": "darbuka",
+  "instrument": "instrument:darbuka",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/505776",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/500960",
+      "shows": "Object record and image of a goblet-shaped drum from the Middle East."
+    }
+  ],
+  "silhouette": "Narrow waist and flared base. Wide single round drumhead.",
+  "features": [
+    "Narrow waist and flared base",
+    "Wide single round drumhead",
+    "Open bottom",
+    "Smooth goblet-shaped shell"
+  ],
+  "iconFeatures": [
+    "Narrow waist and flared base",
+    "Wide single round drumhead"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Upright side three-quarter",
+    "proportions": "Broad head tapers sharply into a narrow throat before flaring at the open foot.",
+    "partLayout": "Draw one head only. Keep taper and flare of the continuous shell recognizable without rope lacing.",
+    "referenceImage": {
+      "url": "https://images.metmuseum.org/CRDImages/mi/web-large/DP-26168-001.jpg",
+      "source": "https://www.metmuseum.org/art/collection/search/500960"
+    }
+  }
+}

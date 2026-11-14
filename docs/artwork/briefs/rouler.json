@@ -1,0 +1,43 @@
+{
+  "slug": "rouler",
+  "instrument": "instrument:rouler",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.portail-esclavage-reunion.fr/en/kayamb-bob-rouler-new-acquisitions-by-the-museum/",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Maloya01.jpg",
+      "shows": "Performance photograph of the ensemble and its traditional percussion."
+    },
+    {
+      "url": "https://www.apacr974.fr/album-photos/instruments-traditionnels-de-l-ile-de-la-reunion/",
+      "shows": "Photograph of a Réunion roulèr showing the barrel shell and the end profile."
+    }
+  ],
+  "silhouette": "Single skin on the wider end. Open rear with a visible wooden rim.",
+  "features": [
+    "Single skin on the wider end",
+    "Open rear with a visible wooden rim",
+    "Longitudinal barrel staves and hoops"
+  ],
+  "iconFeatures": [
+    "Single skin on the wider end",
+    "Open rear with a visible wooden rim"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Horizontal side three-quarter",
+    "proportions": "A stout tapered barrel with one broad playing end and an open rear.",
+    "partLayout": "Staves run lengthwise and hoops cross them. The filled front skin and dark rear opening should differ clearly.",
+    "referenceImage": {
+      "url": "https://www.apacr974.fr/medias/album/img-20170619-145547.jpg",
+      "source": "https://www.apacr974.fr/album-photos/instruments-traditionnels-de-l-ile-de-la-reunion/"
+    }
+  }
+}

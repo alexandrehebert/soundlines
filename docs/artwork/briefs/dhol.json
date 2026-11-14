@@ -1,0 +1,46 @@
+{
+  "slug": "dhol",
+  "instrument": "instrument:dhol",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/504419",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://folklife.si.edu/magazine/tradition-of-now-sunny-jain",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Wide barrel shell. Large round head at either end.",
+  "features": [
+    "Wide barrel shell",
+    "Large round head at either end",
+    "Longitudinal tension ropes or hardware",
+    "Shoulder strap",
+    "Two differently shaped sticks"
+  ],
+  "iconFeatures": [
+    "Wide barrel shell",
+    "Large round head at either end"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Side three-quarter",
+    "proportions": "Broad barrel with two large opposing heads and a rounded middle.",
+    "partLayout": "Longitudinal ropes or hardware link both rims. Place the shoulder strap above, and one curved and one straighter stick separately.",
+    "documentedDimensions": {
+      "value": "69.8 cm long × 45.7 cm in diameter, about 1.5:1",
+      "source": "https://www.metmuseum.org/art/collection/search/504419",
+      "scope": "Dhol"
+    },
+    "referenceImage": {
+      "url": "https://www.gandharvaloka.ca/wp-content/uploads/d-dhol-lrg.jpg",
+      "source": "https://www.gandharvaloka.ca/dol/"
+    }
+  }
+}

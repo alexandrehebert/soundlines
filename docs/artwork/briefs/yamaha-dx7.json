@@ -1,0 +1,40 @@
+{
+  "slug": "yamaha-dx7",
+  "instrument": "instrument:yamaha-dx7",
+  "family": "electronic",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.yamaha.com/en/about/experience/innovation-road/collection/detail/2010/",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.yamaha.com/en/tech-design/design/insights/id_009/",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Long low dark-brown body. Full keyboard.",
+  "features": [
+    "Long low dark-brown body",
+    "Full keyboard",
+    "Green flat membrane switches",
+    "Small rectangular display"
+  ],
+  "iconFeatures": [
+    "Long low dark-brown body",
+    "Full keyboard"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Top three-quarter",
+    "proportions": "Long thin chassis with a low flat panel and a full-width keyboard.",
+    "partLayout": "Keep the small display and membrane controls aligned across the upper panel. Place wheels to the left of the keys.",
+    "referenceImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/YAMAHA_DX7.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:YAMAHA_DX7.jpg"
+    }
+  }
+}

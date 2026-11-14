@@ -5802,6 +5802,203 @@
     "instrument:guembri": {
       "description": "Laúd de tres cuerdas pulsadas que se toca en la música gnawa urbana de Marruecos. Smithsonian Folkways lo documenta en sus grabaciones marroquíes de 1966.",
       "name": "Guembri"
+    },
+    "instrument:erhu": {
+      "name": "Erhu",
+      "description": "Fídula china de dos cuerdas que se toca en posición vertical, con las cerdas del arco entre las cuerdas.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:pipa": {
+      "name": "Pipa",
+      "description": "Laúd chino de cuatro cuerdas pulsadas, con caja en forma de pera y trastes que se prolongan sobre la tapa armónica."
+    },
+    "instrument:dizi": {
+      "name": "Dizi",
+      "description": "Flauta travesera china con una membrana fina que vibra y da a las notas un timbre zumbante."
+    },
+    "instrument:suona": {
+      "name": "Suona",
+      "description": "Chirimía china de lengüeta doble, con pabellón metálico acampanado y timbre penetrante."
+    },
+    "instrument:yueqin": {
+      "name": "Yueqin",
+      "description": "Laúd chino de mástil corto, conocido como laúd lunar por su caja plana y circular.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:sheng": {
+      "name": "Sheng",
+      "description": "Órgano de boca chino de lengüetas libres, con tubos dispuestos alrededor de una cámara de aire."
+    },
+    "instrument:biwa": {
+      "name": "Biwa",
+      "description": "Laúd japonés con trastes y caja en forma de pera, que se pulsa con un plectro ancho."
+    },
+    "instrument:taiko": {
+      "name": "Taiko",
+      "description": "Tambores japoneses que se tocan con baquetas. En el gagaku, el nombre abarca el tsuri-daiko suspendido y el dadaiko, de mayor tamaño."
+    },
+    "instrument:soribuk": {
+      "name": "Soribuk",
+      "description": "Tambor coreano de barril que acompaña al canto pansori, con parches de piel fijados mediante tachuelas metálicas."
+    },
+    "instrument:saraswati-veena": {
+      "name": "Saraswati veena",
+      "description": "Laúd con trastes del sur de la India, asociado a la música carnática y llamado así por la diosa hindú Sarasvati.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:mridangam": {
+      "name": "Mridangam",
+      "description": "Tambor de barril de dos parches del sur de la India que proporciona acompañamiento rítmico en la música carnática."
+    },
+    "instrument:dhol": {
+      "name": "Dhol",
+      "description": "Tambor de barril de dos parches que marca los ritmos del bhangra panyabí."
+    },
+    "instrument:sarangi": {
+      "name": "Sarangi",
+      "description": "Laúd de arco del norte de la India con cuerdas simpáticas, usado para acompañar el canto en la música clásica indostaní."
+    },
+    "instrument:bonang": {
+      "name": "Bonang",
+      "description": "Conjunto de pequeños gongs afinados, dispuestos horizontalmente sobre un bastidor y tocados con baquetas acolchadas en el gamelán indonesio."
+    },
+    "instrument:javanese-rebab": {
+      "name": "Rebab javanés",
+      "description": "Fídula de pica de dos cuerdas que ornamenta las melodías del gamelán javanés."
+    },
+    "instrument:kora": {
+      "name": "Kora",
+      "description": "Arpa de cuerda pulsada de África occidental que tocan los músicos mandé. Las cuerdas pasan por un puente alto sobre una caja de calabaza cubierta de piel.",
+      "estimateNote": "La ubicación sigue un relato oral que sitúa el instrumento en el siglo XVIII."
+    },
+    "instrument:djembe": {
+      "name": "Yembé",
+      "description": "Tambor mandé con forma de copa que se toca con las manos. Distintos golpes producen graves, tonos abiertos y sonidos secos.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:qanun": {
+      "name": "Qanun",
+      "description": "Cítara trapezoidal de cuerda pulsada con palancas que ajustan la altura de los órdenes de cuerdas según el modo."
+    },
+    "instrument:ney": {
+      "name": "Ney",
+      "description": "Flauta de caña de soplo terminal utilizada en la música culta árabe.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:riqq": {
+      "name": "Riqq",
+      "description": "Pequeño tambor de marco con membrana y sonajas metálicas que se usa en conjuntos de música culta árabe.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:darbuka": {
+      "name": "Darbuka",
+      "description": "Tambor con forma de copa que se toca con las manos en la música árabe y recibe nombres regionales como tabla y dumbak.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:santur": {
+      "name": "Santur",
+      "description": "Cítara trapezoidal cuyas cuerdas se golpean con ligeras baquetas. Es un instrumento típico del maqam iraquí.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:balafon": {
+      "name": "Balafón",
+      "description": "Xilófono de África occidental con láminas de madera y resonadores de calabaza, conocido también como bala en las tradiciones mandé."
+    },
+    "instrument:ravann": {
+      "name": "Ravann",
+      "description": "Tambor de marco mauriciano con membrana que se toca con las manos en el sega tradicional.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:maravann": {
+      "name": "Maravann",
+      "description": "Sonajero rectangular mauriciano relleno de semillas que se agita horizontalmente en el sega tradicional.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:sabar": {
+      "name": "Sabar",
+      "description": "Tambor senegalés que se toca con una mano y una baqueta. Sus ritmos son la base del mbalax.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:tama": {
+      "name": "Tama",
+      "description": "Pequeño tambor parlante wolof. Quien lo toca aprieta las cuerdas bajo el brazo para cambiar la altura del sonido al golpearlo.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:kayamb": {
+      "name": "Kayamb",
+      "description": "Sonajero plano de Reunión construido con tallos vegetales y relleno de semillas. Marca el pulso del maloya.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:rouler": {
+      "name": "Roulèr",
+      "description": "Gran tambor de barril de Reunión que se toca a horcajadas para marcar los ritmos graves del maloya.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:didgeridoo": {
+      "name": "Didyeridú",
+      "description": "Instrumento de viento largo de madera del norte de Australia. Quien lo toca hace vibrar los labios en la abertura para producir un bordón. Yidaki es un nombre yolŋu para una forma regional.",
+      "estimateNote": "Un ejemplar de museo fechado hacia 1900 sirve de referencia para esta tradición más antigua."
+    },
+    "instrument:yamaha-dx7": {
+      "name": "Yamaha DX7",
+      "description": "Sintetizador digital que utiliza la modulación de frecuencia para producir, entre otros, sonidos brillantes de piano eléctrico y bajos contundentes."
+    },
+    "instrument:mellotron": {
+      "name": "Mellotron",
+      "description": "Instrumento electromecánico de teclado que reproduce un tramo de cinta magnética pregrabada al pulsar una tecla."
+    },
+    "instrument:fairlight-cmi": {
+      "name": "Fairlight CMI",
+      "description": "Instrumento musical informático australiano que permite grabar muestras digitales y reproducirlas con un teclado."
+    },
+    "instrument:jupiter-8": {
+      "name": "Roland JUPITER-8",
+      "description": "Sintetizador analógico de ocho voces con arpegiador y teclado que se puede dividir entre dos sonidos."
+    },
+    "instrument:uilleann-pipes": {
+      "name": "Gaita irlandesa (uilleann pipes)",
+      "description": "Gaita irlandesa alimentada por un fuelle accionado con el codo, con un puntero para la melodía y bordones que sostienen otras notas."
+    },
+    "instrument:portuguese-guitar": {
+      "name": "Guitarra portuguesa",
+      "description": "Instrumento portugués de cuerda pulsada con seis pares de cuerdas metálicas y un papel central en el acompañamiento del fado."
+    },
+    "instrument:cuban-tres": {
+      "name": "Tres cubano",
+      "description": "Instrumento cubano parecido a una guitarra, con tres órdenes de cuerdas, característico del son cubano."
+    },
+    "instrument:viola-da-gamba": {
+      "name": "Viola da gamba",
+      "description": "Instrumento de cuerda frotada con trastes, que se sostiene en vertical sobre las piernas o entre ellas y suele tocarse en conjuntos de violas de distintos tamaños."
+    },
+    "instrument:celesta": {
+      "name": "Celesta",
+      "description": "Instrumento de teclado cuyos macillos de fieltro golpean placas metálicas y producen un sonido suave parecido al de las campanas."
+    },
+    "instrument:puerto-rican-cuatro": {
+      "name": "Cuatro puertorriqueño",
+      "description": "Instrumento puertorriqueño de cuerda pulsada cuya forma moderna tiene una caja parecida a la de un violín y cinco pares de cuerdas."
+    },
+    "instrument:marimbula": {
+      "name": "Marímbula",
+      "description": "Gran caja de madera con lengüetas metálicas pulsadas que aportan las notas graves en las primeras formas del son cubano."
+    },
+    "instrument:hammered-dulcimer": {
+      "name": "Dulcémele de martillos",
+      "description": "Cítara con órdenes de cuerdas tendidos sobre una caja plana que se golpean con pequeños macillos de mano."
+    },
+    "instrument:cuica": {
+      "name": "Cuíca",
+      "description": "Tambor de fricción brasileño que suena al frotar una varilla unida a la cara interna del parche.",
+      "estimateNote": "La fecha señala un testimonio conservado de este instrumento más antiguo."
+    },
+    "instrument:bass-drum": {
+      "name": "Bombo",
+      "description": "Tambor de gran tamaño y sonido grave utilizado en orquestas y bandas militares europeas, donde solía tocarse junto con los platillos."
+    },
+    "instrument:dominican-tambora": {
+      "name": "Tambora dominicana",
+      "description": "Tambor dominicano de dos parches que se toca con una mano y un palo en el merengue típico."
     }
   },
   "edges": {

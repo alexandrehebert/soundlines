@@ -1,0 +1,48 @@
+{
+  "slug": "ney",
+  "instrument": "instrument:ney",
+  "family": "winds",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/501050",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://trmkt.org/musical-instruments/",
+      "shows": "Identifies the ney as the flute in the museum’s collection of classical instruments."
+    },
+    {
+      "url": "https://demsanat.com/ney-siparis-formu.php",
+      "shows": "Maker photos compare the open end and the nodes of cane. The Turkish variants may include a projecting mouthpiece."
+    }
+  ],
+  "silhouette": "Open blowing edge visible at the upper end. Narrow natural reed tube with nodes.",
+  "features": [
+    "Open blowing edge visible at the upper end",
+    "Narrow natural reed tube with nodes",
+    "Small finger holes along the tube"
+  ],
+  "iconFeatures": [
+    "Open blowing edge visible at the upper end",
+    "Narrow natural reed tube with nodes"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Side with blowing end visible",
+    "proportions": "Long exceptionally narrow reed tube, with nearly constant width.",
+    "partLayout": "Keep the open upper end unblocked and show small finger holes in line, interrupted only by natural cane nodes.",
+    "documentedDimensions": {
+      "value": "74.7 cm long, with diameters about 1.7–2.3 cm; length is about 32 times the larger diameter",
+      "source": "https://www.metmuseum.org/art/collection/search/501050",
+      "scope": "Nāy"
+    },
+    "referenceImage": {
+      "url": "https://images.metmuseum.org/CRDImages/mi/web-large/midp89.4.432.jpg",
+      "source": "https://www.metmuseum.org/art/collection/search/501050"
+    }
+  }
+}

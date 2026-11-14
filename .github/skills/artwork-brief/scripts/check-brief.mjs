@@ -7,7 +7,7 @@ import { basename, join } from 'node:path'
 
 const DIR = 'docs/artwork/briefs'
 const METHODS = ['generator', 'hand']
-const KEYS = ['slug', 'instrument', 'family', 'method', 'references', 'silhouette', 'features', 'iconFeatures', 'avoid', 'notes']
+const KEYS = ['slug', 'instrument', 'family', 'method', 'references', 'silhouette', 'features', 'iconFeatures', 'avoid', 'notes', 'geometry']
 // Brand marks are trademarks; a model name that is also the graph name (TB-303) is allowed.
 const BRANDS = /\b(roland|moog|yamaha|korg|fender|gibson|steinway|hammond suzuki|selmer|ludwig|zildjian|technics|akai|antares)\b/i
 const IMITATION = /\b(in the style of|copy|trace|traced|replicate|exact replica)\b/i
@@ -22,6 +22,14 @@ const files = process.argv.slice(2).length
   : readdirSync(DIR).filter((file) => file.endsWith('.json')).map((file) => join(DIR, file))
 
 let failures = 0
+if (process.argv.length === 2) {
+  for (const node of nodes.values()) {
+    if (node.type === 'instrument' && !existsSync(join(DIR, node.id.slice('instrument:'.length) + '.json'))) {
+      console.error(`FAIL missing artwork brief for ${node.id}`)
+      failures++
+    }
+  }
+}
 for (const file of files) {
   const problems = []
   const fail = (message) => problems.push(`FAIL ${message}`)
@@ -72,6 +80,29 @@ for (const file of files) {
     const text = [silhouette, features, iconFeatures].flat().filter((item) => typeof item === 'string').join(' ')
     if (BRANDS.test(text)) fail(`asks for a brand mark (${text.match(BRANDS)[0]}): describe the hardware, never draw logos`)
     if (IMITATION.test(text)) fail('asks to copy or trace a reference: references inform anatomy only')
+    const geometry = brief.geometry
+    const record = (value) => value !== null && typeof value === 'object' && !Array.isArray(value)
+    const nonempty = (value) => typeof value === 'string' && value.trim().length >= 8
+    const https = (value) => typeof value === 'string' && /^https:\/\/[^\s]+$/.test(value)
+    if (!record(geometry)) {
+      fail('geometry must be an object')
+    } else {
+      for (const key of ['view', 'proportions', 'partLayout']) {
+        if (!nonempty(geometry[key])) fail(`geometry.${key} needs a drawing instruction`)
+      }
+      if (geometry.documentedDimensions !== undefined) {
+        const dimensions = geometry.documentedDimensions
+        if (!record(dimensions) || !nonempty(dimensions.value) || !(typeof dimensions.scope === 'string' && dimensions.scope.trim()) || !https(dimensions.source)) {
+          fail('geometry.documentedDimensions needs a value, specimen or model scope, and HTTPS source')
+        }
+      }
+      if (geometry.referenceImage !== undefined) {
+        const photo = geometry.referenceImage
+        if (!record(photo) || !https(photo.url) || !https(photo.source)) {
+          fail('geometry.referenceImage needs an HTTPS image URL and source page')
+        }
+      }
+    }
     if (method === 'generator' && validSlug) {
       const generator = readFileSync('scripts/artwork/generate-instrument-artwork.py', 'utf8')
       if (!new RegExp(`^ {4}'${slug}': \\(`, 'm').test(generator)) warn(`method is generator but ART has no '${slug}' master yet`)

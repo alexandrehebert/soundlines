@@ -1,0 +1,40 @@
+{
+  "slug": "uilleann-pipes",
+  "instrument": "instrument:uilleann-pipes",
+  "family": "winds",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://pipers.ie/about/history/",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://ich.unesco.org/en/RL/uilleann-piping-01264",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Soft bag tucked under arm. Separate bellows with elbow strap.",
+  "features": [
+    "Soft bag tucked under arm",
+    "Separate bellows with elbow strap",
+    "Dark wood melody chanter",
+    "Cluster of drones and regulators with metal mounts"
+  ],
+  "iconFeatures": [
+    "Soft bag tucked under arm",
+    "Separate bellows with elbow strap"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Player-front three-quarter of full set",
+    "proportions": "Soft bag sits under one arm, with a compact parallel pipe assembly across the lap.",
+    "partLayout": "Separate bellows, chanter and three drones. The chanter descends from the bag while the keyed regulators sit over the drones.",
+    "referenceImage": {
+      "url": "https://tales.nmc.unibas.ch/media/tales/markdownx/4f06f80e-219d-4624-9fa0-43bd21093e8f.jpg",
+      "source": "https://tales.nmc.unibas.ch/de/uilleann-pipes-57/analysieren-1-278/das-komplette-set-1677"
+    }
+  }
+}

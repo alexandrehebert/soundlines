@@ -1,0 +1,40 @@
+{
+  "slug": "tama",
+  "instrument": "instrument:tama",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://wmic.net/wolof-tama-happy/",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://sites.google.com/bc.edu/bc-west-african-music-ensemble/sabar-in-culture/drum-types",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Hourglass wooden body. Two small drumheads.",
+  "features": [
+    "Hourglass wooden body",
+    "Two small drumheads",
+    "Long connecting tension cords",
+    "Short curved stick"
+  ],
+  "iconFeatures": [
+    "Hourglass wooden body",
+    "Two small drumheads"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Side three-quarter",
+    "proportions": "Two small heads frame an hourglass shell with a distinct central waist.",
+    "partLayout": "Tension strings run straight from rim to rim over the waist. Keep the curved beater separate.",
+    "referenceImage": {
+      "url": "https://wmic.net/wp-content/uploads/2021/03/Tamaahss.jpg",
+      "source": "https://wmic.net/wolof-tama-happy/"
+    }
+  }
+}

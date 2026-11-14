@@ -1,0 +1,43 @@
+{
+  "slug": "celesta",
+  "instrument": "instrument:celesta",
+  "family": "keyboards",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.celesta-schiedmayer.de/en/celesta/all-about-the-celesta/",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.yamaha.com/en/musical_instrument_guide/celesta/structure/",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://antiquitymusic.com/schiedmayer-5-5-octave-studio-celesta",
+      "shows": "Studio celesta photograph shows the cabinet, raised supports and damper pedal."
+    }
+  ],
+  "silhouette": "Tall wooden keyboard cabinet. Open area below the front rail.",
+  "features": [
+    "Tall wooden keyboard cabinet",
+    "Open area below the front rail",
+    "Long damper pedal linked beneath the cabinet"
+  ],
+  "iconFeatures": [
+    "Tall wooden keyboard cabinet",
+    "Open area below the front rail"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Player-front three-quarter",
+    "proportions": "Rectangular upright cabinet fills the area above the keys, with a shallow opening below.",
+    "partLayout": "Draw the damper pedal on its linkage under the center of the front rail. Keep the cabinet visually separate from floor supports.",
+    "referenceImage": {
+      "url": "https://cdn.antiquitymusic.com/media/catalog/product/cache/1/image/268799b913174d96793200b0c1a85997/i/m/img_1114_1.jpg",
+      "source": "https://antiquitymusic.com/schiedmayer-5-5-octave-studio-celesta"
+    }
+  }
+}

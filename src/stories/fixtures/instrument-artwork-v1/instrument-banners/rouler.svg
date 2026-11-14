@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160">
+<defs>
+  <linearGradient id="wood" x1="0%" y1="0%" x2="38%" y2="100%"><stop stop-color="#ef4444"/><stop offset="1" stop-color="#671d1d"/></linearGradient>
+  <radialGradient id="halo"><stop stop-color="#ef4444" stop-opacity=".23"/><stop offset="1" stop-color="#671d1d" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#ef4444" stroke-opacity=".19" stroke-width="1"/></pattern>
+</defs>
+<rect x="0" y="0" width="360" height="160" rx="0" fill="#0b1020" stroke="none"/><ellipse cx="180.0" cy="80.0" rx="187.20000000000002" ry="81.6" fill="url(#halo)" stroke="none"/><rect x="0" y="0" width="360" height="160" rx="0" fill="url(#grid)" stroke="none"/>
+<g transform="translate(180 77) rotate(-9) scale(1.300)"><path d="M-74-20Q-12-31 64-27V27Q-11 25-74 19Z" fill="url(#wood)" stroke="#f3d5a5" stroke-width="1.3"/><ellipse cx="-74" cy="0" rx="13" ry="20" fill="#362535" stroke="#f3d5a5"/><ellipse cx="64" cy="0" rx="14" ry="27" fill="#c79573" stroke="#edbc76"/><path d="M-43-24v47m33-51v53m50-54v56" fill="none" stroke="#edbc76" stroke-width="2.8"/><path d="M-68-13Q0-24 58-16M-68 12Q0 10 58 17" fill="none" stroke="#fff0d2" stroke-width="1.3"/></g>
+</svg>

@@ -27,5 +27,10 @@
     "Round drumhead",
     "Sound hole on the front playing face"
   ],
-  "notes": "Shows the Peruvian box from the front, leaving the rear sound hole out of sight."
+  "notes": "Shows the Peruvian box from the front, leaving the rear sound hole out of sight.",
+  "geometry": {
+    "view": "Front three-quarter",
+    "proportions": "Upright narrow wooden rectangular box, with front face taller than wide.",
+    "partLayout": "The flat striking panel spans the front and fasteners sit near its edges. Keep the outlet on the rear if visible."
+  }
 }

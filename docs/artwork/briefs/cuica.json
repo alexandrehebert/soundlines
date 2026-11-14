@@ -1,0 +1,43 @@
+{
+  "slug": "cuica",
+  "instrument": "instrument:cuica",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://anacostia.si.edu/collection/object/acm_2003.0032.0388",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://folkways.si.edu/danca-movement-brazil/samba/music/tools-for-teaching/smithsonian",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cu%C3%ADca_underside,_Smithsonian,_before_1942.jpg",
+      "shows": "The underside photograph exposes the friction rod and its attachment inside the drum."
+    }
+  ],
+  "silhouette": "One skin head on the closed end. Open rear rim with a dark interior.",
+  "features": [
+    "One skin head on the closed end",
+    "Open rear rim with a dark interior",
+    "Friction rod attached to the inner membrane"
+  ],
+  "iconFeatures": [
+    "One skin head on the closed end",
+    "Open rear rim with a dark interior"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Side three-quarter looking into the open end",
+    "proportions": "A compact cylinder has one sealed membrane and an open opposite rim.",
+    "partLayout": "Show a slender friction rod projecting inward from the center of the membrane. Keep the inside attachment visible through the open rim.",
+    "referenceImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Cu%C3%ADca_underside%2C_Smithsonian%2C_before_1942.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cu%C3%ADca_underside,_Smithsonian,_before_1942.jpg"
+    }
+  }
+}

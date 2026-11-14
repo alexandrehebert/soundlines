@@ -1,0 +1,45 @@
+{
+  "slug": "mridangam",
+  "instrument": "instrument:mridangam",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/503301",
+      "shows": "Documents the construction and visible form of the instrument."
+    },
+    {
+      "url": "https://www.metmuseum.org/ja/essays/musical-instruments-of-the-indian-subcontinent",
+      "shows": "Documents the construction and visible form of the instrument."
+    }
+  ],
+  "silhouette": "Elongated tapered barrel shell. Differently sized skin heads.",
+  "features": [
+    "Elongated tapered barrel shell",
+    "Differently sized skin heads",
+    "Dark circular loading on the membrane",
+    "Longitudinal rawhide straps"
+  ],
+  "iconFeatures": [
+    "Elongated tapered barrel shell",
+    "Differently sized skin heads"
+  ],
+  "avoid": [
+    "Silhouettes or details from other instrument variants"
+  ],
+  "notes": "The drawing presents the documented form in the reference records.",
+  "geometry": {
+    "view": "Side three-quarter",
+    "proportions": "Elongated uneven barrel with differently sized heads at opposite ends.",
+    "partLayout": "Lengthwise straps join rims and follow the taper. Show dark loading on the visible playing head.",
+    "documentedDimensions": {
+      "value": "70 cm long × 25.5 cm in diameter, about 2.7:1",
+      "source": "https://www.metmuseum.org/art/collection/search/503301",
+      "scope": "Mrdangam"
+    },
+    "referenceImage": {
+      "url": "https://cdn.exoticindia.com/images/products/original/homeandliving/miu406_a01.jpg",
+      "source": "https://www.exoticindiaart.com/product/homeandliving/18-mridangam-musical-instrument-miu406/"
+    }
+  }
+}
