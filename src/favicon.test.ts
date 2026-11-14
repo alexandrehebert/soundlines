@@ -15,10 +15,11 @@ function iconShapes(markup: string) {
 }
 
 describe('favicon', () => {
-  it('uses the approved multicolored resting frame without animation', () => {
+  it('uses a larger version of the approved resting frame without animation', () => {
     const favicon = readFileSync(new URL('../public/favicon.svg', import.meta.url), 'utf8')
     const approved = readFileSync(new URL('./stories/fixtures/favicon-concepts/soundlines.svg', import.meta.url), 'utf8')
-    expect(favicon).toBe(approved)
+    expect(iconShapes(favicon)).toEqual(iconShapes(approved))
+    expect(favicon).toContain('width="32" height="32" viewBox="1 1 22 22"')
     expect(favicon).not.toMatch(/<(?:animate|animateTransform|script|style)\b/)
     expect(favicon).not.toMatch(/\bon\w+\s*=/)
   })
@@ -43,12 +44,12 @@ describe('favicon', () => {
     '../.storybook/manager-head.html',
   ])('uses the cache-busted dark favicon in %s', (path) => {
     const html = readFileSync(new URL(path, import.meta.url), 'utf8')
-    expect(html).toContain('favicon.svg?v=soundlines')
+    expect(html).toContain('favicon.svg?v=soundlines-wave')
   })
 
   it('uses cache-busted icons for both app themes and includes the light icon in public Storybook', () => {
-    expect(faviconUrl('dark')).toBe('/favicon.svg?v=soundlines')
-    expect(faviconUrl('light')).toBe('/favicon-light.svg?v=soundlines-blue')
+    expect(faviconUrl('dark')).toBe('/favicon.svg?v=soundlines-wave')
+    expect(faviconUrl('light')).toBe('/favicon-light.svg?v=soundlines-wave')
     const storybook = readFileSync(new URL('../.storybook/main.ts', import.meta.url), 'utf8')
     expect(storybook).toContain("{ from: '../public/favicon-light.svg', to: '/favicon-light.svg' }")
   })
@@ -162,13 +163,13 @@ describe('favicon comparison animations', () => {
 
   it('shows the official still separately from the retained motion previews', () => {
     const markup = renderToStaticMarkup(Comparison.render())
-    expect(markup).toContain('src="/favicon.svg?v=soundlines" alt="Official Soundlines favicon"')
-    expect(markup).toContain('src="/favicon-light.svg?v=soundlines-blue" alt="Light theme Soundlines favicon"')
+    expect(markup).toContain('src="/favicon.svg?v=soundlines-wave" alt="Official Soundlines favicon"')
+    expect(markup).toContain('src="/favicon-light.svg?v=soundlines-wave" alt="Light theme Soundlines favicon"')
     expect(markup).toContain('favicon-preview--soundlines favicon-preview--light')
     const currentCard = markup.match(/<article\b[^>]*>[\s\S]*?<\/article>/)?.[0]
     expect(currentCard).toContain('Soundlines')
     expect(currentCard).toContain('Current')
-    expect(currentCard).toContain('href="/favicon.svg?v=soundlines"')
+    expect(currentCard).toContain('href="/favicon.svg?v=soundlines-wave"')
     expect(markup).toContain('Previous')
   })
 
