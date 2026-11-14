@@ -2,6 +2,578 @@
   "version": 4,
   "entries": [
     {
+      "commit": "d4edee6cd89eb5a574706d560c875073c4829307",
+      "parent": "4a3dda36085de12f690aa63666715c4e8ae87550",
+      "date": "2026-11-13T20:31:52-05:00",
+      "subject": "Consolidate Soundlines source, docs, and tooling",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/DATA.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/GRAPH.md"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graphFiles.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graphLocale.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graphLocale.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/data/translateGraph.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/graph/timeline.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/graph/types.ts"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/workflows/artwork-quality.yml"
+            }
+          ]
+        },
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "app/[locale]/data/changelog/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/data/contribute/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/data/dataset/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/data/graph/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/data/layout.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/data/query/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/jukebox/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/layout.tsx"
+            },
+            {
+              "status": "M",
+              "path": "next.config.ts"
+            },
+            {
+              "status": "M",
+              "path": "package-lock.json"
+            },
+            {
+              "status": "M",
+              "path": "package.json"
+            },
+            {
+              "status": "M",
+              "path": "src/App.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/App.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/Explorer.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/SoundlinesProviders.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/TimelineOrderSelect.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ContributionPage.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/DatasetGraph.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/DiscoveryChrome.css"
+            },
+            {
+              "status": "M",
+              "path": "src/components/DiscoveryChrome.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ExplorerControls.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/GraphCardHeader.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/Home.css"
+            },
+            {
+              "status": "M",
+              "path": "src/components/Home.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/Jukebox.css"
+            },
+            {
+              "status": "D",
+              "path": "src/components/Jukebox.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/MobileDetailSheet.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/OpenData.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/OpenDataChangelog.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/OpenDataDataset.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/OpenDataGraph.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/OpenDataNavigation.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/OpenDataPage.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/OpenDataQuery.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/SearchBar.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/Turntable.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/TurntableLcd.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/TurntablePlayButton.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/TurntableSideKnob.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/TurntableTonearm.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/TurntableTonearm.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/VinylRecord.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/open-data/ContributionPage.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/open-data/DatasetGraph.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/open-data/GraphCardHeader.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/open-data/OpenData.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/open-data/OpenDataChangelog.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/open-data/OpenDataDataset.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/open-data/OpenDataGraph.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/open-data/OpenDataNavigation.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/open-data/OpenDataPage.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/open-data/OpenDataQuery.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/Jukebox.css"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/Jukebox.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/Turntable.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/TurntableLcd.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/TurntablePlayButton.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/TurntableSideKnob.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/TurntableTonearm.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/TurntableTonearm.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/VinylRecord.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/turntableHint.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/turntableHint.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/vinylScratch.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/vinylScratch.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/turntableHint.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/turntableHint.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/vinylScratch.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/vinylScratch.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/favicon.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/routePage.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/socialMetadata.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/socialMetadata.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Explorer.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/GenreDisplaySelect.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/TimelineOrderSelect.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Turntable.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/TurntablePlayButton.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/TurntableSideKnob.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/ViewToggle.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/VinylRecord.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "tools/ace-monitor/package-lock.json"
+            },
+            {
+              "status": "M",
+              "path": "tools/ace-monitor/package.json"
+            },
+            {
+              "status": "A",
+              "path": "tsconfig.build.json"
+            },
+            {
+              "status": "M",
+              "path": "tsconfig.json"
+            }
+          ]
+        },
+        {
+          "category": "site",
+          "files": [
+            {
+              "status": "D",
+              "path": "site/scripts/changelog.ts"
+            },
+            {
+              "status": "D",
+              "path": "site/src/changelog.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "site/src/changelog.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/components/App.tsx"
+            },
+            {
+              "status": "D",
+              "path": "site/src/components/Changelog.tsx"
+            },
+            {
+              "status": "D",
+              "path": "site/src/components/McpReference.tsx"
+            },
+            {
+              "status": "M",
+              "path": "site/src/content.ts"
+            },
+            {
+              "status": "D",
+              "path": "site/src/copy/changelog.ts"
+            },
+            {
+              "status": "D",
+              "path": "site/src/copy/de.ts"
+            },
+            {
+              "status": "D",
+              "path": "site/src/copy/en.ts"
+            },
+            {
+              "status": "D",
+              "path": "site/src/copy/es.ts"
+            },
+            {
+              "status": "D",
+              "path": "site/src/copy/fr.ts"
+            },
+            {
+              "status": "D",
+              "path": "site/src/copy/it.ts"
+            },
+            {
+              "status": "D",
+              "path": "site/src/copy/mcp.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/entry-client.tsx"
+            },
+            {
+              "status": "M",
+              "path": "site/src/env.d.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/links.ts"
+            },
+            {
+              "status": "A",
+              "path": "site/src/locales/de.ts"
+            },
+            {
+              "status": "A",
+              "path": "site/src/locales/en.ts"
+            },
+            {
+              "status": "A",
+              "path": "site/src/locales/es.ts"
+            },
+            {
+              "status": "A",
+              "path": "site/src/locales/fr.ts"
+            },
+            {
+              "status": "A",
+              "path": "site/src/locales/it.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/routes.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/site.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "site/vite.config.ts"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/skills/graph-edit/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/graph-validate/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".github/workflows/app-quality.yml"
+            },
+            {
+              "status": "M",
+              "path": ".github/workflows/changelog.yml"
+            },
+            {
+              "status": "M",
+              "path": ".github/workflows/copilot-setup-steps.yml"
+            },
+            {
+              "status": "M",
+              "path": ".github/workflows/graph-quality.yml"
+            },
+            {
+              "status": "M",
+              "path": ".github/workflows/project-pages.yml"
+            },
+            {
+              "status": "M",
+              "path": "compose.yaml"
+            },
+            {
+              "status": "M",
+              "path": "scripts/changelog/generate.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "scripts/changelog/generate.ts"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "README.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/DEVELOPMENT.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/INSTALLATION.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/SCRIPTS.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "6ee5a06825af0358edc37ef73aadc676853eb196",
       "parent": "a3df25497aeb39d778118dfc5390731705f3b626",
       "date": "2026-11-13T15:46:47-05:00",
