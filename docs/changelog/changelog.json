@@ -2,6 +2,72 @@
   "version": 4,
   "entries": [
     {
+      "commit": "34685e4300f4f3549a4985a5ca1738d7638caa10",
+      "parent": "2c99e3d9b22042ce676d13aa8008c1efde7c1c9f",
+      "date": "2026-11-13T20:44:52-05:00",
+      "subject": "Organize documentation by contribution task",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/DATA.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/GRAPH.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/RESEARCH.md"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "files": [
+            {
+              "status": "A",
+              "path": "docs/artwork/README.md"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/agents/graph-researcher.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/graph-edit/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": "AGENTS.md"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "README.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/README.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "da67e9ce86593786604afb9d66f3444673914af8",
       "parent": "d38647d0ac11216420bb1aed4d7ac6e56b712b6b",
       "date": "2026-11-13T20:34:08-05:00",
