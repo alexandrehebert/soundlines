@@ -2,6 +2,710 @@
   "version": 4,
   "entries": [
     {
+      "commit": "1450cfbdff7e665adca8b5104b097dc5aafa2ad3",
+      "parent": "15c79c8a5220e855004d05ee2cf8e83610ac927f",
+      "date": "2026-11-13T21:50:12-05:00",
+      "subject": "Refine explorer panels and expand the Soundlines styleguide",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "previews",
+          "files": [
+            {
+              "status": "M",
+              "path": ".storybook/preview.tsx"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/agents/artwork-validator.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/artwork-draw/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/artwork-validate/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/workflows/artwork-quality.yml"
+            }
+          ]
+        },
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": ".storybook/main.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/App.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/App.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/Explorer.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/ExplorerContext.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/TimelineOrderSelect.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/AudioPreviewPlayer.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/BrandLink.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/BubbleMinimap.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/BubbleZoomControls.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/BubbleZoomControls.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ChronologyPreview.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/DatasetStats.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/DatasetStats.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/DatasetStatsCharts.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/DetailPanel.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/DetailPanel.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/DiscoveryChrome.css"
+            },
+            {
+              "status": "D",
+              "path": "src/components/DiscoveryChrome.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ExplorerControls.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/GenreBubbles.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/GenreBubbles.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/GenreSample.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/History.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/History.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/Home.css"
+            },
+            {
+              "status": "D",
+              "path": "src/components/Home.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/HomeLinks.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/InfoBadge.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/InstrumentIcon.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/InstrumentIcon.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/Legend.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/MobileDetailSheet.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ModalPanel.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/SearchBar.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/SoundlinesMark.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/Soundtrails.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/Timeline.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/Timeline.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/UndatedEntries.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/UndatedEntries.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/bubbleViewport.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/bubbleViewport.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/bubbles/BubbleMinimap.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/bubbles/BubbleZoomControls.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/bubbles/BubbleZoomControls.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/bubbles/GenreBubbles.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/bubbles/GenreBubbles.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/bubbles/bubbleViewport.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/bubbles/bubbleViewport.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/bubbles/useBubbleViewport.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/bubbles/useBubbleViewport.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/dailySpotlights.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/dailySpotlights.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/dataset/DatasetStats.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/dataset/DatasetStats.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/dataset/DatasetStatsCharts.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/exclusivePlayback.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/exclusivePlayback.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/explorer/DetailPanel.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/explorer/DetailPanel.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/explorer/ExplorerControls.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/explorer/ExplorerOptions.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/explorer/InstrumentIcon.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/explorer/InstrumentIcon.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/explorer/Legend.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/explorer/MobileDetailSheet.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/explorer/mobileDetailSheet.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/followLink.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/home/ChronologyPreview.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/home/Home.css"
+            },
+            {
+              "status": "A",
+              "path": "src/components/home/Home.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/home/ListeningWidget.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/home/Soundtrails.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/home/WidgetNav.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/home/dailySpotlights.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/home/dailySpotlights.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/home/homeReveal.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/mobileDetailSheet.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/navigation/BrandLink.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/navigation/DiscoveryChrome.css"
+            },
+            {
+              "status": "A",
+              "path": "src/components/navigation/DiscoveryChrome.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/navigation/ExplorerLinks.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/navigation/SearchBar.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/navigation/SoundlinesMark.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/navigation/followLink.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/navigation/soundlinesMarkMotion.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/navigation/soundlinesWave.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/components/open-data/DatasetGraph.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/open-data/OpenData.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/open-data/OpenDataDataset.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/open-data/OpenDataPage.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/AudioPreviewPlayer.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/GenreSample.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/playback/Jukebox.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/playback/Turntable.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/playback/TurntablePlayButton.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/playback/TurntableSideKnob.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/playback/TurntableTonearm.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/playback/VinylRecord.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/exclusivePlayback.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/playback/exclusivePlayback.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/soundlinesMarkMotion.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/soundlinesWave.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/timeline/History.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/timeline/History.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/timeline/Timeline.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/timeline/Timeline.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/timeline/TimelineBar.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/timeline/UndatedEntries.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/timeline/UndatedEntries.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ui/BodyPortal.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ui/ExpandableSheet.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ui/InfoBadge.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ui/ModalPanel.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ui/SegmentedControl.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ui/SheetHeader.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ui/segmentedControlStyles.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ui/sheetMotion.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ui/trapTabFocus.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ui/usePanelHistory.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/components/ui/useSheetDrag.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/useBubbleViewport.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/useBubbleViewport.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/favicon.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/index.css"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/AudioPreviewPlayer.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/BubbleZoomControls.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/DatasetStats.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/DetailPanel.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Explorer.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Favicon.css"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Favicon.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/GenreBubbles.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/GenreDisplaySelect.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Home.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/InfoBadge.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Legend.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/ModalPanel.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/Overview.css"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/Overview.mdx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/Overview.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/SearchBar.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/SegmentedControl.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Timeline.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/TimelineOrderSelect.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Turntable.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/TurntablePlayButton.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/TurntableSideKnob.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/ViewToggle.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/VinylRecord.stories.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/stories/fixtures/favicon-concepts/flowing-s.svg"
+            },
+            {
+              "status": "D",
+              "path": "src/stories/fixtures/favicon-concepts/lineage.svg"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/skills/graph-edit/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/graph-translate/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": "scripts/changelog/generate.test.ts"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/ARCHITECTURE.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/AUDIO.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/DEVELOPMENT.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/INSTALLATION.md"
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "files": [
+            {
+              "status": "M",
+              "path": ".storybook/manager-head.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "ebcc39099d65d257d418d144ee4672d509920774",
       "parent": "d0a461bcffbc014e03086ad4f2a5a1afdc139f45",
       "date": "2026-11-13T20:49:32-05:00",
