@@ -18,6 +18,7 @@ import { graphLabels } from '../../i18n/graphLabels.ts'
 import { localizePath, type Locale } from '../../i18n/routing.ts'
 import { companionUrl, REPOSITORY_URL } from '../../projectLinks.ts'
 import { ModalPanel } from '../ui/ModalPanel.tsx'
+import { afterClosingHistoryPanel } from '../ui/usePanelHistory.ts'
 import { BarList, Metric, Section, StackedBar } from './DatasetStatsCharts.tsx'
 
 const STATS_TABS: readonly StatsTab[] = ['overview', 'genre', 'artist', 'instrument', 'links', 'review']
@@ -62,10 +63,7 @@ export function DatasetStats({
   const tabRefs = useRef<Partial<Record<StatsTab, HTMLButtonElement | null>>>({})
   const id = useId()
 
-  const open = (nodeId: string) => {
-    onClose()
-    selectNode(nodeId)
-  }
+  const open = (nodeId: string) => afterClosingHistoryPanel(() => selectNode(nodeId))
 
   const handleTabKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
     if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return
