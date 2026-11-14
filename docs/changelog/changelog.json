@@ -2,6 +2,1229 @@
   "version": 4,
   "entries": [
     {
+      "commit": "45a2c45ab5c3580ebe954dddbbc78b890a3f66ed",
+      "parent": "1d7fb97f838b07005190cde2bbf20101d30f217b",
+      "date": "2026-11-14T18:03:06-05:00",
+      "subject": "Refactor Soundlines UI into a Storybook design system",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "previews",
+          "files": [
+            {
+              "status": "M",
+              "path": ".storybook/preview.tsx"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/agents/artwork-validator.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/artwork-draw/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/artwork-validate/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/workflows/artwork-quality.yml"
+            }
+          ]
+        },
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": ".storybook/main.ts"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/data/changelog/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/data/contribute/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/data/dataset/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/data/graph/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/data/layout.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/data/query/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/jukebox/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "app/[locale]/layout.tsx"
+            },
+            {
+              "status": "M",
+              "path": "package-lock.json"
+            },
+            {
+              "status": "M",
+              "path": "package.json"
+            },
+            {
+              "status": "M",
+              "path": "src/App.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/App.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/Explorer.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/ExplorerContext.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/TimelineOrderSelect.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/colorTheme.css"
+            },
+            {
+              "status": "M",
+              "path": "src/colorTheme.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/bubbles/BubbleMinimap.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/bubbles/BubbleZoomControls.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/bubbles/BubbleZoomControls.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/bubbles/GenreBubbles.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/bubbles/GenreBubbles.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/bubbles/bubbleViewport.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/bubbles/bubbleViewport.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/bubbles/useBubbleViewport.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/bubbles/useBubbleViewport.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/dataset/DatasetStats.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/dataset/DatasetStats.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/dataset/DatasetStatsCharts.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/explorer/DetailPanel.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/explorer/DetailPanel.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/explorer/ExplorerControls.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/explorer/ExplorerOptions.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/explorer/InstrumentIcon.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/explorer/InstrumentIcon.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/explorer/Legend.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/explorer/MobileDetailSheet.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/explorer/mobileDetailSheet.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/home/ChronologyPreview.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/home/Home.css"
+            },
+            {
+              "status": "D",
+              "path": "src/components/home/Home.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/home/ListeningWidget.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/home/Soundtrails.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/home/WidgetNav.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/home/dailySpotlights.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/home/dailySpotlights.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/home/homeReveal.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/navigation/BrandLink.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/navigation/DiscoveryChrome.css"
+            },
+            {
+              "status": "D",
+              "path": "src/components/navigation/DiscoveryChrome.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/navigation/ExplorerLinks.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/navigation/SearchBar.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/navigation/SoundlinesMark.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/navigation/followLink.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/navigation/soundlinesMarkMotion.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/navigation/soundlinesWave.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/open-data/ContributionPage.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/open-data/DatasetGraph.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/open-data/GraphCardHeader.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/open-data/OpenData.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/open-data/OpenDataChangelog.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/open-data/OpenDataDataset.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/open-data/OpenDataGraph.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/open-data/OpenDataNavigation.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/open-data/OpenDataPage.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/open-data/OpenDataQuery.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/AudioPreviewPlayer.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/GenreSample.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/Jukebox.css"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/Jukebox.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/Turntable.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/TurntableLcd.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/TurntablePlayButton.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/TurntableSideKnob.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/TurntableTonearm.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/TurntableTonearm.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/VinylRecord.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/exclusivePlayback.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/exclusivePlayback.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/turntableHint.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/turntableHint.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/vinylScratch.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/playback/vinylScratch.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/History.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/History.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/Timeline.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/Timeline.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/TimelineBar.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/TimelineBar.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/TimelineLinks.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/UndatedEntries.test.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/UndatedEntries.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/geometry.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/geometry.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/svgLayout.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/svgLayout.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/useTimelineViewport.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/timeline/useTimelineViewport.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ui/BodyPortal.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ui/ExpandableSheet.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ui/InfoBadge.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ui/ModalPanel.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ui/SegmentedControl.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ui/SheetHeader.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ui/segmentedControlStyles.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ui/sheetMotion.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ui/trapTabFocus.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ui/usePanelHistory.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/components/ui/useSheetDrag.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/bubbles/BubbleMinimap.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/bubbles/BubbleMinimap.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/bubbles/BubbleZoomControls.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/bubbles/BubbleZoomControls.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/bubbles/GenreBubbles.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/bubbles/GenreBubbles.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/bubbles/bubbleViewport.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/bubbles/bubbleViewport.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/bubbles/useBubbleViewport.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/bubbles/useBubbleViewport.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/dataset/DatasetStats.interactions.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/dataset/DatasetStats.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/dataset/DatasetStats.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/dataset/DatasetStatsCharts.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/explorer/DetailPanel.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/explorer/DetailPanel.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/explorer/Explorer.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/explorer/ExplorerControls.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/explorer/ExplorerOptions.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/explorer/ExplorerOptions.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/explorer/InstrumentIcon.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/explorer/InstrumentIcon.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/explorer/Legend.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/explorer/MobileDetailSheet.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/explorer/mobileDetailSheet.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/foundations/colorTheme.css"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/foundations/index.css"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/foundations/vinyl.css"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/home/ChronologyPreview.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/home/Home.css"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/home/Home.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/home/ListeningWidget.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/home/ListeningWidget.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/home/Soundtrails.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/home/WidgetNav.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/home/WidgetNav.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/home/dailySpotlights.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/home/dailySpotlights.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/home/homeReveal.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/navigation/BrandLink.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/navigation/DiscoveryChrome.css"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/navigation/DiscoveryChrome.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/navigation/DiscoveryChrome.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/navigation/ExplorerLinks.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/navigation/ExplorerLinks.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/navigation/SearchBar.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/navigation/SoundlinesMark.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/navigation/followLink.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/navigation/soundlinesMarkMotion.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/navigation/soundlinesWave.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/open-data/ContributionPage.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/open-data/DatasetGraph.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/open-data/GraphCardHeader.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/open-data/OpenData.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/open-data/OpenDataChangelog.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/open-data/OpenDataCodeBlock.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/open-data/OpenDataDataset.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/open-data/OpenDataGraph.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/open-data/OpenDataInteractions.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/open-data/OpenDataNavigation.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/open-data/OpenDataPage.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/open-data/OpenDataQuery.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/open-data/OpenDataSectionHeading.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/AudioPreviewPlayer.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/AudioPreviewPlayer.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/GenreSample.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/Jukebox.css"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/Jukebox.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/Turntable.css"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/Turntable.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/TurntableKnob.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/TurntableLcd.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/TurntableTonearm.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/TurntableTonearm.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/VinylRecord.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/exclusivePlayback.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/exclusivePlayback.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/turntableHint.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/turntableHint.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/vinylScratch.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/playback/vinylScratch.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/History.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/History.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/Timeline.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/Timeline.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/TimelineBar.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/TimelineBar.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/TimelineLinks.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/UndatedEntries.interaction.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/UndatedEntries.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/UndatedEntries.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/geometry.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/geometry.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/svgLayout.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/svgLayout.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/useTimelineViewport.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/timeline/useTimelineViewport.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/BodyPortal.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/Controls.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/ExpandableSheet.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/InfoBadge.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/ModalPanel.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/PageLoading.css"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/PageLoading.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/PageLoading.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/PageLoading.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/SegmentedControl.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/SheetHeader.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/Sheets.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/segmentedControlStyles.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/sheetMotion.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/trapTabFocus.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/usePanelHistory.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/design-system/ui/useSheetDrag.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/favicon.test.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/index.css"
+            },
+            {
+              "status": "D",
+              "path": "src/pageLoading.css"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/AudioPreviewPlayer.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/BubbleMinimap.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/BubbleZoomControls.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/ChronologyPreview.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/DatasetGraph.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/DatasetStats.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/DatasetStatsCharts.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/DetailPanel.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/ExpandableSheet.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Explorer.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/ExplorerOptions.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Favicon.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/GenreBubbles.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/GenreDisplaySelect.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/GenreSample.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/History.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Home.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/InfoBadge.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/InstrumentIcon.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/InstrumentIconCatalog.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/InstrumentIconCatalog.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/Jukebox.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/JukeboxPlayer.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Legend.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/ListeningWidget.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/MobileDetailSheet.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/ModalPanel.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/Navigation.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/OpenData.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/OpenDataContent.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/OpenDataNavigation.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Overview.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/SearchBar.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/SegmentedControl.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/SheetHeader.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/Soundtrails.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Timeline.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/TimelineBar.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/TimelineLinks.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/TimelineOrderSelect.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Turntable.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/TurntableKnob.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/TurntableLcd.stories.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/stories/TurntablePlayButton.stories.tsx"
+            },
+            {
+              "status": "D",
+              "path": "src/stories/TurntableSideKnob.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/TurntableTonearm.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/UndatedEntries.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/ViewToggle.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/VinylRecord.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/WidgetNav.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/test/renderWithIntl.tsx"
+            },
+            {
+              "status": "A",
+              "path": "src/test/setup.ts"
+            },
+            {
+              "status": "D",
+              "path": "src/vinyl.css"
+            },
+            {
+              "status": "M",
+              "path": "vite.config.ts"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/skills/graph-edit/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/graph-translate/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/workflows/app-quality.yml"
+            },
+            {
+              "status": "M",
+              "path": "AGENTS.md"
+            },
+            {
+              "status": "M",
+              "path": "scripts/changelog/generate.test.ts"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/ARCHITECTURE.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/AUDIO.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/DESIGN_SYSTEM.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/DEVELOPMENT.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/INSTALLATION.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/README.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "85d2d544327d2525876176eb83ee87b57d3764d7",
       "parent": "5e0eb462e9be9133e333d3dfdc7bac12292ec5fe",
       "date": "2026-11-14T08:51:36-05:00",
