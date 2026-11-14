@@ -10,7 +10,7 @@ import { useExplorer } from '../../ExplorerContext.ts'
 import { graphLabels } from '../../i18n/graphLabels.ts'
 import { NODE_TYPE_COLORS } from '../../theme.ts'
 import { GraphCardHeader } from './GraphCardHeader.tsx'
-import { EntryLink } from '../HomeLinks.tsx'
+import { EntryLink } from '../navigation/ExplorerLinks.tsx'
 
 const positions = [
   { x: 50, y: 50 },

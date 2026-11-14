@@ -3,7 +3,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useEffect, useRef, useState } from 'react'
 import { faviconUrl } from '../favicon.ts'
-import { createWaveModel, sampleWave, WaveTape } from '../components/soundlinesWave.ts'
+import { createWaveModel, sampleWave, WaveTape } from '../components/navigation/soundlinesWave.ts'
 import soundlineSvg from './fixtures/favicon-concepts/soundline.svg?raw'
 import soundlinesSvg from './fixtures/favicon-concepts/soundlines.svg?raw'
 import './Favicon.css'
@@ -34,20 +34,6 @@ const favicons = [
     badge: 'Concept',
     description: 'A continuous waveform connects two points: sound moving along a line.',
     src: new URL('./fixtures/favicon-concepts/soundline.svg?no-inline', import.meta.url).href,
-  },
-  {
-    id: 'lineage',
-    name: 'Lineage',
-    badge: 'Concept',
-    description: 'A branching line connects musical ideas, echoing the influence map.',
-    src: new URL('./fixtures/favicon-concepts/lineage.svg?no-inline', import.meta.url).href,
-  },
-  {
-    id: 'flowing-s',
-    name: 'Flowing S',
-    badge: 'Concept',
-    description: 'An S drawn as one continuous line between two points.',
-    src: new URL('./fixtures/favicon-concepts/flowing-s.svg?no-inline', import.meta.url).href,
   },
 ] as const
 
@@ -182,7 +168,7 @@ function FaviconComparison() {
               <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-400">
                 The still frames above are the official dark and light favicons. The animated
                 previews below retain the motion studies for hover and scroll interactions,
-                alongside the previous icon and alternative designs.
+                alongside the previous vinyl icon and the Soundline concept.
               </p>
             </div>
           </div>
@@ -196,7 +182,7 @@ function FaviconComparison() {
           <p className="hidden text-xs text-slate-400 motion-reduce:block">Animations are off because reduced motion is enabled.</p>
         </div>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {favicons.map((favicon) => (
             <article key={favicon.id} className="flex min-w-0 flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
               <div className="flex items-center justify-between gap-2">

@@ -1,2 +1,0 @@
-export const MOBILE_DETAIL_HEIGHT = 0.85
-export const MOBILE_DETAIL_COLLAPSED_OFFSET = 0.65

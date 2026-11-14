@@ -24,7 +24,7 @@ const preview: Preview = {
     },
     controls: { expanded: true },
     options: {
-      storySort: { order: ['Foundations', 'Controls', 'Components', 'Visualizations', 'Screens'] },
+      storySort: { order: ['Overview', 'Foundations', 'Controls', 'Overlays', 'Visualizations', 'Playback', 'Screens'] },
     },
   },
   initialGlobals: {

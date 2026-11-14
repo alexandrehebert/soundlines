@@ -4,6 +4,23 @@
 
 Paths in prose and commands are relative to the repository root.
 
+## App components
+
+[src/components](../src/components/) is organized by feature. Keep styles,
+tests, and helpers beside the components that use them.
+
+| Folder | Owns |
+| --- | --- |
+| [home](../src/components/home/) | Landing page, daily spotlights, chronology previews, and Soundtrails |
+| [navigation](../src/components/navigation/) | Shared page chrome, branding, search, and explorer links |
+| [explorer](../src/components/explorer/) | View controls, legend, entry details, and instrument icons |
+| [bubbles](../src/components/bubbles/) | Genre bubble view, minimap, and zoom controls |
+| [timeline](../src/components/timeline/) | Timeline and history views, including undated entries |
+| [dataset](../src/components/dataset/) | Dataset statistics and charts |
+| [open-data](../src/components/open-data/) | Open Data pages and dataset graph |
+| [playback](../src/components/playback/) | Audio previews, jukebox, turntable, and playback coordination |
+| [ui](../src/components/ui/) | Reusable controls, panels, and badges |
+
 ## Shared explorer architecture
 
 - The landing-page theme button flips the vinyl from Side A (dark) to Side B
@@ -64,5 +81,5 @@ Paths in prose and commands are relative to the repository root.
   routes, URL parameters, and graph nodes. App Router metadata is rendered on
   the server, including canonical and alternate-language URLs.
 - [Timeline model](../src/graph/timeline.ts) projects the graph for each mode, infers artist families, and restricts layout and traversal to same-view relationships.
-- [Timeline](../src/components/Timeline.tsx) composes shared [geometry](../src/components/timeline/geometry.ts), [bar rendering](../src/components/timeline/TimelineBar.tsx), [relationship rendering](../src/components/timeline/TimelineLinks.tsx), and [viewport interaction](../src/components/timeline/useTimelineViewport.ts).
+- [Timeline](../src/components/timeline/Timeline.tsx) composes shared [geometry](../src/components/timeline/geometry.ts), [bar rendering](../src/components/timeline/TimelineBar.tsx), [relationship rendering](../src/components/timeline/TimelineLinks.tsx), and [viewport interaction](../src/components/timeline/useTimelineViewport.ts).
 - [Prominence helpers](../src/graph/phases.ts) provide the same intensity, fade, and revival logic for both node types.

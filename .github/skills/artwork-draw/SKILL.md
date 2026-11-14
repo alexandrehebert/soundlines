@@ -36,7 +36,7 @@ ship decision.
    `iconFeatures` at 24 and 16 px, nothing in `avoid`. Iterate until all hold.
 5. **Gate.** `node .github/skills/artwork-validate/scripts/check-artwork.mjs <slug> --png-dir $STAGE`
    must PASS (WARNs explained), then the full set without arguments (orphans, generator drift).
-6. **Tests.** `npx vitest run src/components/InstrumentIcon.test.tsx` (every instrument has an icon).
+6. **Tests.** `npx vitest run src/components/explorer/InstrumentIcon.test.tsx` (every instrument has an icon).
 
 ## Rules
 

@@ -35,15 +35,6 @@
     animation: favicon-spin 4s linear infinite;
   }
 
-  .favicon-preview--lineage img {
-    transform-origin: 25% 72%;
-    animation: favicon-grow 4s ease-in-out infinite;
-  }
-
-  .favicon-preview--flowing-s img {
-    animation: favicon-flow 4s ease-in-out infinite;
-  }
-
   .favicon-story--paused .favicon-preview img {
     animation-play-state: paused;
   }
@@ -51,14 +42,4 @@
 
 @keyframes favicon-spin {
   to { transform: rotate(360deg); }
-}
-
-@keyframes favicon-grow {
-  0%, 100% { transform: scale(.8); }
-  50% { transform: scale(1); }
-}
-
-@keyframes favicon-flow {
-  0%, 15%, 85%, 100% { clip-path: inset(0); }
-  50% { clip-path: inset(0 40% 0 0); }
 }

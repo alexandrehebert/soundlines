@@ -10,6 +10,8 @@ const publicStories = [
   'Colors',
   'Favicon',
   'InstrumentArtwork',
+  'SegmentedControl',
+  'ModalPanel',
   'AudioPreviewPlayer',
   'Turntable',
   'VinylRecord',
@@ -36,10 +38,15 @@ const publicStaticDirs = [
 ]
 
 const config: StorybookConfig = {
-  stories: isPublic ? publicStories : ['../src/**/*.stories.@(ts|tsx)'],
+  stories: ['../src/stories/Overview.mdx', ...(isPublic ? publicStories : ['../src/**/*.stories.@(ts|tsx)'])],
   addons: ['@storybook/addon-docs', '@storybook/addon-a11y'],
+  features: {
+    sidebarOnboardingChecklist: false,
+    menuOnboardingChecklist: false,
+  },
   core: {
     allowedHosts: ['localhost'],
+    disableWhatsNewNotifications: true,
   },
   framework: {
     name: '@storybook/react-vite',

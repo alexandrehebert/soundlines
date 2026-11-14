@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, fireEvent, userEvent, waitFor, within } from 'storybook/test'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
 import { useExplorer } from '../ExplorerContext.ts'
-import { SearchBar } from '../components/SearchBar.tsx'
+import { SearchBar } from '../components/navigation/SearchBar.tsx'
 
 function SearchExample() {
   const { index, selectedId } = useExplorer()
@@ -71,7 +71,8 @@ async function checkKeyboardNavigation(canvasElement: HTMLElement) {
 }
 
 const meta = {
-  title: 'Components/Search',
+  title: 'Controls/Search',
+  id: 'components-search',
   component: SearchBar,
   decorators: [withExplorer],
   render: () => <SearchExample />,
@@ -190,6 +191,28 @@ export const MobileKeyboardNavigation: Story = {
   globals: { viewport: { value: 'mobile2', isRotated: false } },
   play: async ({ canvasElement }) => {
     await checkKeyboardNavigation(canvasElement)
+  },
+}
+
+export const MobileBrowserBack: Story = {
+  globals: { viewport: { value: 'mobile2', isRotated: false } },
+  play: async ({ canvasElement }) => {
+    const browser = canvasElement.ownerDocument.defaultView!
+    const trigger = within(canvasElement).getByRole('button', { name: 'Search music' })
+    const search = within(canvasElement.ownerDocument.body)
+    const url = browser.location.href
+    await userEvent.click(trigger)
+    await search.findByRole('dialog', { name: 'Search music' })
+
+    browser.history.back()
+    await waitFor(() => expect(search.queryByRole('dialog')).not.toBeInTheDocument())
+    expect(trigger).toHaveFocus()
+    expect(browser.location.href).toBe(url)
+
+    browser.history.forward()
+    await search.findByRole('dialog', { name: 'Search music' })
+    await userEvent.click(search.getByRole('button', { name: 'Close search' }))
+    await waitFor(() => expect(search.queryByRole('dialog')).not.toBeInTheDocument())
   },
 }
 

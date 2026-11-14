@@ -37,7 +37,7 @@ final genre so its lineage stays highlighted. The trails are defined in `src/gra
 `src/graph/soundtrails.test.ts` checks them against the graph.
 
 Only one sound plays at a time: the turntable, genre previews and Soundtrails register with
-`src/components/exclusivePlayback.ts`, so starting one pauses whichever was playing.
+`src/components/playback/exclusivePlayback.ts`, so starting one pauses whichever was playing.
 
 ### Theme-linked arrangements
 

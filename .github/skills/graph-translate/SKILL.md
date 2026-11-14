@@ -83,7 +83,7 @@ A new graph language is also a new app locale; both must land together.
 1. Add the code to `LOCALES` in `src/i18n/routing.ts`.
 2. App UI: add `src/i18n/locales/<locale>.json` with the same keys and ICU placeholders as `en.json`,
    register it in `src/i18n/catalogue.ts`, and add the language switcher entry in
-   `src/components/Home.tsx` (plus its label key in every catalogue).
+   `src/components/navigation/DiscoveryChrome.tsx` (plus its label key in every catalogue).
 3. Graph: create `src/data/graph.<locale>.json` (`{ "nodes": {}, "edges": {} }`), import it in
    `src/data/graphLocale.ts` and register it in `GRAPH_OVERLAYS` (TypeScript fails until you do; the
    test "registers exactly one graph.<locale>.json overlay per non-English app locale" checks files).

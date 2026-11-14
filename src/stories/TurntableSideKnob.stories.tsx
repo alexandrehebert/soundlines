@@ -4,7 +4,8 @@ import { TurntableSideKnob } from '../components/playback/TurntableSideKnob.tsx'
 import { useColorTheme } from '../useColorTheme.ts'
 
 const meta = {
-  title: 'Controls/Turntable side knob',
+  title: 'Playback/Turntable side knob',
+  id: 'controls-turntable-side-knob',
   component: TurntableSideKnob,
   tags: ['autodocs'],
   args: { theme: 'dark', onClick: () => {} },

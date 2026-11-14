@@ -1,1 +1,8 @@
 <link rel="icon" type="image/svg+xml" href="./favicon.svg?v=soundlines" />
+<style>
+  /* Storybook's notification flag leaves the release notes tab in Settings. */
+  [role="tab"][id$="-tab-whats-new"],
+  [role="tabpanel"][id$="-tabpanel-about"] a[href=""][target="_top"] {
+    display: none;
+  }
+</style>

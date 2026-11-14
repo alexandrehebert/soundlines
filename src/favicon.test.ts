@@ -4,9 +4,9 @@ import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import { Comparison } from './stories/Favicon.stories.tsx'
-import { BrandLink } from './components/BrandLink.tsx'
-import { HOVER_CYCLES_PER_SECOND, SOUNDLINES_BACKGROUND, SOUNDLINES_ENDPOINT_COLOR, SOUNDLINES_WAVES, SoundlinesWaveMotion } from './components/soundlinesMarkMotion.ts'
-import { createWaveModel, planWaveRest, sampleCubicPath, wavePathAt, wavePointsAt, WaveTape } from './components/soundlinesWave.ts'
+import { BrandLink } from './components/navigation/BrandLink.tsx'
+import { HOVER_CYCLES_PER_SECOND, SOUNDLINES_BACKGROUND, SOUNDLINES_ENDPOINT_COLOR, SOUNDLINES_WAVES, SoundlinesWaveMotion } from './components/navigation/soundlinesMarkMotion.ts'
+import { createWaveModel, planWaveRest, sampleCubicPath, wavePathAt, wavePointsAt, WaveTape } from './components/navigation/soundlinesWave.ts'
 import { faviconUrl } from './favicon.ts'
 
 function iconShapes(markup: string) {
@@ -65,7 +65,7 @@ describe('favicon', () => {
 })
 
 describe('favicon concepts', () => {
-  const monochromeConcepts = ['soundline', 'lineage', 'flowing-s'] as const
+  const monochromeConcepts = ['soundline'] as const
   const concepts = [...monochromeConcepts, 'soundlines'] as const
   const previous = readFileSync(new URL('./stories/fixtures/favicon-concepts/vinyl.svg', import.meta.url), 'utf8')
   const readConcept = (name: typeof concepts[number]) => (
@@ -143,7 +143,7 @@ describe('favicon concepts', () => {
 })
 
 describe('favicon comparison animations', () => {
-  const ids = ['vinyl', 'soundline', 'soundlines', 'lineage', 'flowing-s'] as const
+  const ids = ['vinyl', 'soundline', 'soundlines'] as const
 
   it('renders each favicon at every preview size with a pause control', () => {
     const markup = renderToStaticMarkup(Comparison.render())
@@ -176,9 +176,7 @@ describe('favicon comparison animations', () => {
     const css = readFileSync(new URL('./stories/Favicon.css', import.meta.url), 'utf8')
     const motionStyles = css.match(/@media \(prefers-reduced-motion: no-preference\) \{([\s\S]*?)\n\}/)?.[1]
     expect(motionStyles).toBeDefined()
-    for (const id of ['vinyl', 'lineage', 'flowing-s']) {
-      expect(motionStyles).toMatch(new RegExp(`\\.favicon-preview--${id} img\\s*\\{[^}]*animation:`))
-    }
+    expect(motionStyles).toMatch(/\.favicon-preview--vinyl img\s*\{[^}]*animation:/)
     expect(motionStyles).toMatch(/\.favicon-story--paused \.favicon-preview img\s*\{[^}]*animation-play-state:\s*paused;/)
   })
 

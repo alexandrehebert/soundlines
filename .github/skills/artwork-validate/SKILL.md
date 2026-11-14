@@ -19,7 +19,7 @@ node $C <slug> [<slug> ...] --png-dir $STAGE   # selected instruments + review s
 node $C --json                           # machine-readable findings
 node $C --require-render                 # fail if sharp is unavailable (used in CI)
 node .github/skills/artwork-brief/scripts/check-brief.mjs   # brief lint
-npx vitest run scripts/artwork/validation.test.ts src/components/InstrumentIcon.test.tsx
+npx vitest run scripts/artwork/validation.test.ts src/components/explorer/InstrumentIcon.test.tsx
 ```
 
 Exit code 1 means at least one FAIL. Rendered checks and sheets use `sharp` (installed with Next); if it
@@ -55,7 +55,7 @@ Reference: the shipped set (72 instruments, 23 generated) passes with 0 FAIL, 0 
 
 - Never loosen a threshold to pass one asset. Change limits only with new calibration across the set, in
   `check-artwork.mjs`, with this table and the reference line updated.
-- The gate complements, not replaces, `src/components/InstrumentIcon.test.tsx` (icon per instrument).
+- The gate complements, not replaces, `src/components/explorer/InstrumentIcon.test.tsx` (icon per instrument).
 
 ## Report
 

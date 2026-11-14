@@ -9,7 +9,8 @@ function InteractiveTurntable() {
 }
 
 const meta = {
-  title: 'Components/Turntable',
+  title: 'Playback/Turntable',
+  id: 'components-turntable',
   component: Turntable,
   tags: ['autodocs'],
   args: { theme: 'dark', toggleTheme: () => {} },

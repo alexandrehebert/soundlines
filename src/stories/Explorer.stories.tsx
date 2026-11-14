@@ -144,6 +144,36 @@ export const MobileHistory: Story = {
   parameters: { explorer: { initialView: 'history' } },
 }
 
+export const MobileHistoryCardSelection: Story = {
+  ...MobileHistory,
+  play: async ({ canvasElement }) => {
+    const card = canvasElement.querySelector<HTMLElement>('[data-history-event] article')
+    if (!card) throw new Error('History event card is missing')
+    const title = within(card).getByRole('heading')
+    const select = within(title).getByRole('button')
+    await userEvent.click(card.querySelector('p') ?? card)
+    await waitFor(() => expect(select).toHaveAttribute('aria-pressed', 'true'))
+    const sheet = canvasElement.querySelector<HTMLElement>('[data-mobile-detail-sheet]')
+    expect(sheet).toBeInTheDocument()
+    if (!sheet) throw new Error('Mobile detail sheet is missing')
+    await userEvent.click(within(sheet).getByRole('button', { name: 'Expand details' }))
+    const sources = within(sheet).getByRole('heading', { name: 'Sources' })
+    const lastSource = sources.parentElement?.querySelector('li:last-child a')
+    const scroller = sheet.querySelector('aside')
+    const navigation = canvasElement.querySelector('[data-explorer-transition-navigation]')
+    if (!lastSource || !scroller || !navigation) throw new Error('Source link or mobile navigation is missing')
+    await waitFor(() => {
+      scroller.scrollTop = scroller.scrollHeight
+      expect(lastSource.getBoundingClientRect().bottom).toBeLessThanOrEqual(navigation.getBoundingClientRect().top)
+    })
+    const header = canvasElement.querySelector('[data-explorer-transition-header]')
+    if (!header) throw new Error('Explorer header is missing')
+    await userEvent.click(header)
+    await waitFor(() => expect(sheet).not.toBeInTheDocument())
+    expect(select).toHaveAttribute('aria-pressed', 'false')
+  },
+}
+
 export const IndependentOrders: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
@@ -343,6 +373,8 @@ export const MobileDetailControls: Story = {
       const rightInset = sheetRect.right - closeRect.right
       expect(topInset).toBeGreaterThan(0)
       expect(Math.abs(topInset - rightInset)).toBeLessThan(1)
+      const contentTop = sheet.querySelector('aside')!.getBoundingClientRect().top
+      expect(Math.abs(contentTop - closeRect.bottom)).toBeLessThan(1)
       const bottomHit = canvasElement.ownerDocument.elementFromPoint(
         closeRect.left + closeRect.width / 2,
         closeRect.bottom - 2,
@@ -362,7 +394,7 @@ export const MobileDetailSwipes: Story = {
   play: async ({ canvasElement }) => {
     const sheet = canvasElement.querySelector<HTMLElement>('[data-mobile-detail-sheet]')
     const content = sheet?.querySelector('aside')
-    const header = sheet?.querySelector<HTMLElement>('[data-detail-drag-region]')
+    const header = sheet?.querySelector<HTMLElement>('[data-sheet-drag-region]')
     if (!sheet || !content || !header) throw new Error('Mobile detail sheet is missing')
     const swipe = async (target: HTMLElement, delta: number, cancelled = false) => {
       const { top } = target.getBoundingClientRect()
@@ -376,19 +408,19 @@ export const MobileDetailSwipes: Story = {
     }
 
     expect(getComputedStyle(content).overflowY).toBe('hidden')
-    await swipe(content, -100, true)
+    await swipe(content, -150, true)
     expect(within(sheet).getByRole('button', { name: 'Expand details' })).toBeVisible()
     await swipe(content, -20)
     expect(within(sheet).getByRole('button', { name: 'Expand details' })).toBeVisible()
-    await swipe(content, -100)
+    await swipe(content, -150)
     expect(within(sheet).getByRole('button', { name: 'Collapse details' })).toBeVisible()
     expect(getComputedStyle(content).overflowY).toBe('auto')
-    await swipe(content, 100)
+    await swipe(content, 150)
     expect(within(sheet).getByRole('button', { name: 'Collapse details' })).toBeVisible()
-    await swipe(header, 100)
+    await swipe(header, 150)
     expect(within(sheet).getByRole('button', { name: 'Expand details' })).toBeVisible()
     expect(getComputedStyle(content).overflowY).toBe('hidden')
-    await swipe(content, 100)
+    await swipe(content, 150)
     await waitFor(() => expect(sheet).not.toBeInTheDocument())
   },
 }

@@ -12,7 +12,7 @@ import {
 } from '../../graph/phases.ts'
 import { chartColor, chartTextColor, DEFAULT_BUBBLE_ZOOM, formatPeriod, formatYear, SELECTION_BORDER, SELECTION_OUTLINE, timelineBarOpacity } from '../../theme.ts'
 import type { Locale } from '../../i18n/routing.ts'
-import { InstrumentIcon } from '../InstrumentIcon.tsx'
+import { InstrumentIcon } from '../explorer/InstrumentIcon.tsx'
 import {
   ABOVE_BAR_LABEL_FONT_SIZE, BAR_H, BAR_LABEL_FONT_SIZE, barBounds, barLabel, barShape, fitBarLabel,
   INSTRUMENT_ICON_LABEL_GAP, INSTRUMENT_ICON_SIZE, instrumentIconPosition, tailFadeOffset,

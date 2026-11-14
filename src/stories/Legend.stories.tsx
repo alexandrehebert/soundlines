@@ -1,9 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
-import { Legend } from '../components/Legend.tsx'
+import { Legend } from '../components/explorer/Legend.tsx'
 
 const meta = {
-  title: 'Components/Legend',
+  title: 'Visualizations/Legend',
+  id: 'components-legend',
   component: Legend,
   decorators: [withExplorer],
   tags: ['autodocs'],

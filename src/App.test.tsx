@@ -2,11 +2,11 @@ import { readFileSync } from 'node:fs'
 import type { ReactNode } from 'react'
 import { describe, expect, it, vi } from 'vitest'
 import { Explorer } from './Explorer.tsx'
-import { GenreDisplaySelect, ViewToggle } from './components/ExplorerControls.tsx'
+import { GenreDisplaySelect, ViewToggle } from './components/explorer/ExplorerControls.tsx'
 import { ExplorerContext } from './ExplorerContext.ts'
-import { DatasetStats } from './components/DatasetStats.tsx'
-import { Home } from './components/Home.tsx'
-import { Legend } from './components/Legend.tsx'
+import { DatasetStats } from './components/dataset/DatasetStats.tsx'
+import { Home } from './components/home/Home.tsx'
+import { Legend } from './components/explorer/Legend.tsx'
 import { graphForLocale } from './data/graphLocale.ts'
 import { buildIndex } from './graph/graph.ts'
 import { createTimelineModel, type ExplorerView } from './graph/timeline.ts'
@@ -19,7 +19,7 @@ import { publicAsset } from './publicAsset.ts'
 import { withFeatureFlag } from './featureFlags.ts'
 import rawGraph from './data/graph.json'
 
-vi.mock('./components/SearchBar.tsx', () => ({ SearchBar: () => null }))
+vi.mock('./components/navigation/SearchBar.tsx', () => ({ SearchBar: () => null }))
 
 const graph: MusicGraph = {
   version: 1,
@@ -112,9 +112,9 @@ describe('Explorer header statistics', () => {
     expect(header).toContain('aria-label="1 genres – show dataset statistics"')
     expect(header).toContain('aria-label="2 artists – show dataset statistics"')
     expect(header).toContain('aria-label="3 instruments – show dataset statistics"')
-    expect(header).toContain('>1</strong> genres')
-    expect(header).toContain('>2</strong> artists')
-    expect(header).toContain('>3</strong> instruments')
+    expect(header).toMatch(/>1<\/strong> <span[^>]*>genres<\/span>/)
+    expect(header).toMatch(/>2<\/strong> <span[^>]*>artists<\/span>/)
+    expect(header).toMatch(/>3<\/strong> <span[^>]*>instruments<\/span>/)
     expect(header).not.toMatch(/\blinks\b/i)
   })
 
@@ -153,7 +153,7 @@ describe('Explorer header statistics', () => {
     expect(sheet.indexOf('aria-label="Expand details"')).toBeLessThan(sheet.indexOf('aria-label="Close panel"'))
     expect(sheet.indexOf('aria-label="Close panel"')).toBeLessThan(sheet.indexOf('<aside'))
     expect(sheet.match(/aria-label="Close panel"/g)).toHaveLength(1)
-    expect(closeButton).toContain('absolute right-1 top-1')
+    expect(closeButton).toContain('data-sheet-close')
     expect(closeButton).toContain('h-11 w-11')
   })
 
@@ -169,7 +169,7 @@ describe('Explorer header statistics', () => {
     expect(mobilePanel).toContain('overflow-hidden')
     expect(mobilePanel).not.toContain('overflow-y-auto')
     expect(desktopPanel).toContain('overflow-y-auto')
-    expect(sheet).toContain('data-detail-drag-region=""')
+    expect(sheet).toContain('data-sheet-drag-region=""')
   })
 
   it('omits empty desktop history options while retaining the mobile entry point', () => {
@@ -259,10 +259,10 @@ describe('view toggle', () => {
 describe('landing view transition', () => {
   it('shares uppercase caption typography between the loader and landing vinyl', () => {
     const vinylCss = readFileSync(new URL('./vinyl.css', import.meta.url), 'utf8')
-    const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
+    const homeCss = readFileSync(new URL('./components/home/Home.css', import.meta.url), 'utf8')
     const loadingCss = readFileSync(new URL('./pageLoading.css', import.meta.url), 'utf8')
 
-    expect(homeCss).toContain('@import "../vinyl.css";')
+    expect(homeCss).toContain('@import "../../vinyl.css";')
     expect(loadingCss).toContain('@import "./vinyl.css";')
     expect(vinylCss).toMatch(/\.discovery-kicker,\s*\.discovery-record-caption,\s*\.page-loading-wordmark\s*\{\s*font: 650 \.69rem\/1\.5 ui-monospace, monospace;\s*letter-spacing: \.17em;/)
     expect(vinylCss).toMatch(/\.discovery-record-caption,\s*\.page-loading-wordmark\s*\{\s*text-transform: uppercase;/)
@@ -281,11 +281,11 @@ describe('landing view transition', () => {
 
   it('keeps the footer border full-width while aligning its contents with the header', () => {
     const markup = render(graph, <Home />)
-    const discoveryChromeCss = readFileSync(new URL('./components/DiscoveryChrome.css', import.meta.url), 'utf8')
+    const discoveryChromeCss = readFileSync(new URL('./components/navigation/DiscoveryChrome.css', import.meta.url), 'utf8')
 
-    expect(markup).toContain('<header class="discovery-header"><div class="discovery-width discovery-header-inner">')
+    expect(markup).toContain('<header class="soundlines-page-header discovery-header"><div class="discovery-width discovery-header-inner">')
     expect(markup).toContain('<footer class="discovery-footer"><div class="discovery-width">')
-    expect(discoveryChromeCss).toContain('.discovery-header { border-bottom: 1px solid var(--home-line); }')
+    expect(discoveryChromeCss).toMatch(/\.discovery-header \{[^}]*border-bottom: 1px solid var\(--home-line\);/)
     expect(discoveryChromeCss).toMatch(/\.discovery-footer \{\s*border-top: 1px solid var\(--home-line\);/)
   })
 
@@ -346,7 +346,7 @@ describe('landing view transition', () => {
 
   it('keeps the turntable arm behind its feature flag by default', () => {
     const markup = render(graph, <Home />)
-    const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
+    const homeCss = readFileSync(new URL('./components/home/Home.css', import.meta.url), 'utf8')
 
     expect(markup).not.toContain('discovery-tonearm')
     expect(markup).not.toContain('data-tonearm')
@@ -362,7 +362,7 @@ describe('landing view transition', () => {
       restore()
     }
     const tonearm = markup.match(/<div class="discovery-tonearm"[^>]*>/)?.[0]
-    const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
+    const homeCss = readFileSync(new URL('./components/home/Home.css', import.meta.url), 'utf8')
     const reducedMotionCss = homeCss.match(/@media \(prefers-reduced-motion: reduce\) \{([\s\S]*?)\n\}/)?.[1]
     const loadingCss = readFileSync(new URL('./pageLoading.css', import.meta.url), 'utf8')
 
@@ -392,7 +392,7 @@ describe('landing view transition', () => {
   })
 
   it('restores the selected face without animating during the opening dock', () => {
-    const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
+    const homeCss = readFileSync(new URL('./components/home/Home.css', import.meta.url), 'utf8')
     const loadingCss = readFileSync(new URL('./pageLoading.css', import.meta.url), 'utf8')
     const reducedMotionCss = homeCss.match(/@media \(prefers-reduced-motion: reduce\) \{([\s\S]*?)\n\}/)?.[1]
 

@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest'
-import { TimelineOrderSelect } from './components/ExplorerControls.tsx'
+import { TimelineOrderSelect } from './components/explorer/ExplorerControls.tsx'
 import type { TimelineOrder } from './graph/layout.ts'
 import type { TimelineView } from './graph/timeline.ts'
 import { renderWithIntl } from './i18n/test-utils.tsx'

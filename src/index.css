@@ -1,6 +1,26 @@
 @import "tailwindcss";
 @import "./colorTheme.css";
 
+.soundlines-page-header {
+  min-height: 3.8125rem;
+}
+
+@media (min-width: 48rem) {
+  .soundlines-page-header { min-height: 4.3125rem; }
+}
+
+@media (width < 48rem) {
+  /* The navigation marks the visible edge of the collapsed detail sheet. */
+  :has(> [data-mobile-detail-sheet][data-sheet-preview]) > [data-explorer-transition-navigation]::before {
+    content: "";
+    position: absolute;
+    inset: auto 0 100%;
+    height: 1.75rem;
+    pointer-events: none;
+    background: linear-gradient(to bottom, transparent, var(--color-slate-950));
+  }
+}
+
 /* Tailwind v4 preflight no longer sets cursor: pointer on buttons
    (https://tailwindcss.com/docs/upgrade-guide#buttons-use-the-default-cursor).
    Restore the v3 behavior for all interactive controls. */

@@ -30,6 +30,7 @@ import type { GenreDisplay } from './graph/bubbles.ts'
 import { cancelPageTransition, finishPageLoading, transitionPage } from './pageLoading.ts'
 import { DEFAULT_LOCALE, type Locale } from './i18n/routing.ts'
 import { observeViewTransition } from './viewTransition.ts'
+import { afterClosingHistoryPanel, backFromPanel } from './components/ui/usePanelHistory.ts'
 import { isOpenDataPath } from './openData.ts'
 
 type YearRange = [number, number]
@@ -152,7 +153,22 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
       const url = explorerUrl(next, locale, window.location.href)
       const href = `${url.pathname}${url.search}${url.hash}`
       if (url.pathname !== window.location.pathname) router.push(href, { scroll: false })
-      else if (url.href !== window.location.href) router.replace(href, { scroll: false })
+      else if (url.href !== window.location.href) {
+        const state = window.history.state
+        if (next.selectedId && !selectedId) window.history.pushState({ soundlinesDetails: true }, '', href)
+        else if (!next.selectedId && state?.soundlinesDetails) {
+          backFromPanel(() => {
+            if (window.location.pathname === url.pathname && window.location.href !== url.href) {
+              window.history.replaceState(null, '', href)
+            }
+            setLocation(next)
+          })
+          return
+        } else {
+          const data = state?.soundlinesDetails ? { soundlinesDetails: true } : null
+          window.history.replaceState(data, '', href)
+        }
+      }
       setLocation(next)
     }
     const changesContent = changesPage || next.orders[next.timelineView] !== order || next.genreDisplay !== genreDisplay
@@ -160,14 +176,16 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
     const homeTransitionRunning = pageTransition.current && document.documentElement.classList.contains(HOME_TRANSITION)
     if (homeTransitionRunning && (isHome !== next.isHome || (changesContent && !isHome))) return
     cancelPendingUpdate()
-    if (isHome !== next.isHome) {
-      startPageTransition(HOME_TRANSITION, update, true)
-    } else if (changesContent && !isHome) {
-      startPageTransition(VIEW_TRANSITION, update, false)
-    } else {
-      update()
-    }
-  }, [isHome, view, order, genreDisplay, locale, router, cancelPendingUpdate, startPageTransition])
+    afterClosingHistoryPanel(() => {
+      if (isHome !== next.isHome) {
+        startPageTransition(HOME_TRANSITION, update, true)
+      } else if (changesContent && !isHome) {
+        startPageTransition(VIEW_TRANSITION, update, false)
+      } else {
+        update()
+      }
+    })
+  }, [isHome, view, order, genreDisplay, selectedId, locale, router, cancelPendingUpdate, startPageTransition])
 
   useEffect(() => {
     if (handledRoute.current === routeKey) return

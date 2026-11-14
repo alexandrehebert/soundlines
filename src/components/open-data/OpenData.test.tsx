@@ -13,7 +13,7 @@ import { OpenDataGraph } from './OpenDataGraph.tsx'
 import { OpenDataDataset } from './OpenDataDataset.tsx'
 import { OpenDataNavigation } from './OpenDataNavigation.tsx'
 import { OpenDataChangelog } from './OpenDataChangelog.tsx'
-import { DiscoveryFooter, DiscoveryHeader } from '../DiscoveryChrome.tsx'
+import { DiscoveryFooter, DiscoveryHeader } from '../navigation/DiscoveryChrome.tsx'
 import { ContributionPage } from './ContributionPage.tsx'
 import { OpenDataQuery } from './OpenDataQuery.tsx'
 import { createTranslator } from 'next-intl'
@@ -94,7 +94,7 @@ describe('Open Data UI', () => {
   it('shares the home header and footer, keeping the current data page across languages', () => {
     route.pathname = '/fr/data/query'
     const html = render(<><DiscoveryHeader current="data" /><DiscoveryFooter current="data" /></>, 'fr')
-    expect(html).toContain('class="discovery-header"')
+    expect(html).toContain('class="soundlines-page-header discovery-header"')
     expect(html).toContain('class="discovery-footer"')
     expect(html).toContain('data-soundlines-brand')
     expect(html.match(/<a[^>]*aria-current="page"[^>]*>/g)).toEqual([

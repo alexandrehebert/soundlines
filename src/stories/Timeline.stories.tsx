@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, fireEvent, userEvent, waitFor, within } from 'storybook/test'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
-import { Timeline } from '../components/Timeline.tsx'
+import { Timeline } from '../components/timeline/Timeline.tsx'
 
 const meta = {
   title: 'Visualizations/Timeline',

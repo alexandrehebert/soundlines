@@ -1,11 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
-import { DetailPanel } from '../components/DetailPanel.tsx'
+import { DetailPanel } from '../components/explorer/DetailPanel.tsx'
 
 type DetailPanelProps = NonNullable<Parameters<typeof DetailPanel>[0]>
 
 const meta = {
-  title: 'Components/Detail panel',
+  title: 'Overlays/Detail panel',
+  id: 'components-detail-panel',
   component: DetailPanel,
   decorators: [
     withExplorer,

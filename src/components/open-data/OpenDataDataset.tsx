@@ -11,7 +11,7 @@ import { LOCALES, localizePath } from '../../i18n/routing.ts'
 import { openDataPath } from '../../openData.ts'
 import { REPOSITORY_URL } from '../../projectLinks.ts'
 import { NODE_TYPE_COLORS } from '../../theme.ts'
-import { BarList, Metric, Section, StackedBar } from '../DatasetStatsCharts.tsx'
+import { BarList, Metric, Section, StackedBar } from '../dataset/DatasetStatsCharts.tsx'
 
 const confidenceColors = { high: '#4ade80', medium: '#facc15', low: '#f87171', unrated: '#475569' } as const
 const percent = (part: number, total: number) => total ? `${Math.round((part / total) * 100)}%` : '–'

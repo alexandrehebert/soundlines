@@ -231,7 +231,7 @@ Create sheets outside the repository and run the relevant tests:
 export ARTWORK_STAGE_ROOT="$HOME/.cache/soundlines-artwork"
 node .github/skills/artwork-validate/scripts/check-artwork.mjs viola \
   --require-render --png-dir "$ARTWORK_STAGE_ROOT/viola"
-npx vitest run scripts/artwork/validation.test.ts src/components/InstrumentIcon.test.tsx
+npx vitest run scripts/artwork/validation.test.ts src/components/explorer/InstrumentIcon.test.tsx
 ```
 
 Expected output includes findings and PNG sheets. A gate failure can indicate

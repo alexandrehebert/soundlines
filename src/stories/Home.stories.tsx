@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, fireEvent, waitFor, within } from 'storybook/test'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
-import { Home } from '../components/Home.tsx'
+import { Home } from '../components/home/Home.tsx'
 import { withFeatureFlag } from '../featureFlags.ts'
 import { publicAsset } from '../publicAsset.ts'
 

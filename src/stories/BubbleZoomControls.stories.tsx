@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useArgs } from 'storybook/preview-api'
 import { expect, fn, userEvent, within } from 'storybook/test'
-import { BubbleZoomControls } from '../components/BubbleZoomControls.tsx'
-import { MAX_BUBBLE_ZOOM, MIN_BUBBLE_ZOOM } from '../components/bubbleViewport.ts'
+import { BubbleZoomControls } from '../components/bubbles/BubbleZoomControls.tsx'
+import { MAX_BUBBLE_ZOOM, MIN_BUBBLE_ZOOM } from '../components/bubbles/bubbleViewport.ts'
 import { DEFAULT_BUBBLE_ZOOM } from '../theme.ts'
 
 const meta = {

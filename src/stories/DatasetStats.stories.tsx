@@ -1,9 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
-import { DatasetStats } from '../components/DatasetStats.tsx'
+import { DatasetStats } from '../components/dataset/DatasetStats.tsx'
 
 const meta = {
-  title: 'Components/DatasetStats',
+  title: 'Overlays/Dataset stats',
+  id: 'components-datasetstats',
   component: DatasetStats,
   decorators: [withExplorer],
   args: { onClose: () => {} },

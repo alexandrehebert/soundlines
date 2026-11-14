@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useArgs } from 'storybook/preview-api'
 import { expect, fn, userEvent, waitFor, within } from 'storybook/test'
-import { TimelineOrderSelect } from '../components/ExplorerControls.tsx'
+import { TimelineOrderSelect } from '../components/explorer/ExplorerControls.tsx'
 
 const meta = {
   title: 'Controls/Timeline order',

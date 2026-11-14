@@ -200,28 +200,33 @@ The companion workflow also publishes a curated, browse-only catalogue at
 "How it's built" page. `npm run build-storybook:public` (run after
 `npm run build:site`) builds it into `_site/storybook/` with
 `STORYBOOK_PUBLIC=1`: [.storybook/main.ts](../.storybook/main.ts) limits it to
-the listed stories and the assets they use (no genre previews), and
+the listed stories and the assets they use, including a single genre preview sample, and
 [.storybook/manager.ts](../.storybook/manager.ts) hides the addon panel,
 toolbar and shortcuts. Because it is served below `/soundlines/storybook/`,
 components must build URLs to files in `public/` with `publicAsset()` from
 [src/publicAsset.ts](../src/publicAsset.ts), never a bare `/path`. Preview it
 with `npm run preview:site` and open `/soundlines/storybook/`.
 
-The catalog includes the project colors, view/layout/order toggles, bubble
-zoom buttons, search states, legends, detail panels, timeline bars, the timeline,
-the bubble map, and desktop/mobile explorer compositions. Use the Controls,
+The catalogue groups stories under Foundations, Controls, Overlays, Visualizations,
+Playback, and Screens. The segmented control and modal panel have standalone
+examples. Explorer screen stories cover the mobile detail sheet in context. Use the Controls,
 Actions, Accessibility, and viewport panels to inspect variants and interactions;
 some stories also exercise keyboard and search behavior automatically.
+
+On mobile, the shared sheet header and slide transition follow Soundtrails.
+Drag the header down to dismiss Modal Panel, Timeline Options, Search, or Soundtrails. The expandable entry sheet opens with an upward swipe
+and collapses or closes on a downward swipe. Its gesture and scroll behavior are
+covered by **Screens / Explorer / Mobile Detail Swipes**.
 
 The official [dark favicon](../public/favicon.svg) and [light favicon](../public/favicon-light.svg)
 share the same still waveform frame. The app selects the favicon and header
 palette for its theme; the dark asset is also used by the companion site and
 Storybook. The **Foundations / Favicon** story shows both still variants and
-compares animated previews with the previous icon and alternative designs at 16,
+compares animated previews with the previous vinyl icon and the Soundline concept at 16,
 24, and 32 pixels and on light and dark browser tabs. The browser favicon itself
-does not animate; the header logo ([SoundlinesMark](../src/components/SoundlinesMark.tsx))
+does not animate; the header logo ([SoundlinesMark](../src/components/navigation/SoundlinesMark.tsx))
 plays the same wave motion on hover, focus and scroll, using the shared model in
-[soundlinesWave.ts](../src/components/soundlinesWave.ts).
+[soundlinesWave.ts](../src/components/navigation/soundlinesWave.ts).
 Preview animations can be paused and are disabled when reduced motion is
 requested. The studies are standalone SVGs in
 [src/stories/fixtures/favicon-concepts/](../src/stories/fixtures/favicon-concepts/).

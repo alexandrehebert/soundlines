@@ -50,7 +50,7 @@ node .github/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
      pending genre to a Soundtrail in `src/graph/soundtrails.ts`: every Soundtrail stop must ship a preview.
    - New family: `src/graph/types.ts` (`GenreFamily`, `FAMILY_LABELS`, `FAMILY_ORDER`), `src/theme.ts`
      (`FAMILY_COLORS`), the test map above, and the family tables in GRAPH.md §2.
-   - New instrument: it needs its four artwork SVGs (`src/components/InstrumentIcon.test.tsx` fails
+   - New instrument: it needs its four artwork SVGs (`src/components/explorer/InstrumentIcon.test.tsx` fails
      without an icon). Hand off to the artwork pipeline (`artwork-brief` → `artwork-draw` →
      `artwork-validate` → `artwork-review`); removing an instrument removes its four SVGs.
    - Standalone event or unresolved track with no edges: add it to

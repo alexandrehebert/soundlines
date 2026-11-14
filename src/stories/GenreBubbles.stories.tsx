@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, userEvent, waitFor, within } from 'storybook/test'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
-import { GenreBubbles } from '../components/GenreBubbles.tsx'
+import { GenreBubbles } from '../components/bubbles/GenreBubbles.tsx'
 
 const meta = {
   title: 'Visualizations/Genre bubbles',

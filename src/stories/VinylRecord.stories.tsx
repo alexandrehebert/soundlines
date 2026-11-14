@@ -3,7 +3,8 @@ import { expect } from 'storybook/test'
 import { VinylRecord } from '../components/playback/VinylRecord.tsx'
 
 const meta = {
-  title: 'Components/Vinyl record',
+  title: 'Playback/Vinyl record',
+  id: 'components-vinyl-record',
   component: VinylRecord,
   tags: ['autodocs'],
   args: { rotate: -16 },

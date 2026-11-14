@@ -4,7 +4,8 @@ import { expect, userEvent, within } from 'storybook/test'
 import { TurntablePlayButton } from '../components/playback/TurntablePlayButton.tsx'
 
 const meta = {
-  title: 'Controls/Turntable play button',
+  title: 'Playback/Turntable play button',
+  id: 'controls-turntable-play-button',
   component: TurntablePlayButton,
   tags: ['autodocs'],
   args: { label: 'Play loop', playing: false, loading: false },

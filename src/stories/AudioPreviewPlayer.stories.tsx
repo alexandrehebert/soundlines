@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import { AudioPreviewPlayer } from '../components/AudioPreviewPlayer.tsx'
+import { AudioPreviewPlayer } from '../components/playback/AudioPreviewPlayer.tsx'
 
 const meta = {
-  title: 'Controls/Audio preview player',
+  title: 'Playback/Audio preview player',
+  id: 'controls-audio-preview-player',
   component: AudioPreviewPlayer,
   tags: ['autodocs'],
   args: {
