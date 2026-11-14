@@ -2,6 +2,614 @@
   "version": 4,
   "entries": [
     {
+      "commit": "5e0eb462e9be9133e333d3dfdc7bac12292ec5fe",
+      "parent": "93b303c3950f3149460deae0661703ac246646da",
+      "date": "2026-11-13T23:46:22-05:00",
+      "subject": "Audit instrument lineages and add four precursors",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "artist:grupo-de-folclore-do-porto-santo",
+              "name": "Grupo de Folclore do Porto Santo",
+              "status": "added"
+            },
+            {
+              "id": "artist:grupo-folclorico-da-ponta-do-sol",
+              "name": "Grupo Folclórico da Ponta do Sol",
+              "status": "added"
+            },
+            {
+              "id": "artist:xarabanda",
+              "name": "Xarabanda",
+              "status": "added"
+            },
+            {
+              "id": "genre:calypso",
+              "name": "Calypso",
+              "status": "updated"
+            },
+            {
+              "id": "genre:madeiran-traditional-music",
+              "name": "Madeiran traditional music",
+              "status": "added"
+            },
+            {
+              "id": "genre:new-orleans-jazz",
+              "name": "New Orleans jazz",
+              "status": "updated"
+            },
+            {
+              "id": "genre:synth-pop",
+              "name": "Synth-pop",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:bass-clarinet",
+              "name": "Bass clarinet",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:bass-drum",
+              "name": "Bass drum",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:biwa",
+              "name": "Biwa",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:charango",
+              "name": "Charango",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:clarinet",
+              "name": "Clarinet",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:double-bass",
+              "name": "Double bass",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:drum-kit",
+              "name": "Drum kit",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:electric-bass",
+              "name": "Electric bass",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:electric-guitar",
+              "name": "Electric guitar",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:electric-piano",
+              "name": "Electric piano",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:guitar",
+              "name": "Guitar",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:harpsichord",
+              "name": "Harpsichord",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:helicon",
+              "name": "Helicon",
+              "status": "added"
+            },
+            {
+              "id": "instrument:juno-106",
+              "name": "Roland JUNO-106",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:juno-60",
+              "name": "Roland JUNO-60",
+              "status": "added"
+            },
+            {
+              "id": "instrument:lute",
+              "name": "Lute",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:madeiran-machete",
+              "name": "Madeiran machete (braguinha)",
+              "status": "added"
+            },
+            {
+              "id": "instrument:minimoog",
+              "name": "Minimoog",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:modular-synthesizer",
+              "name": "Modular synthesizer",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:natural-trumpet",
+              "name": "Natural trumpet",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:oud",
+              "name": "Oud",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:piano",
+              "name": "Piano",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:pipa",
+              "name": "Pipa",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:saxophone",
+              "name": "Saxophone",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:sheng",
+              "name": "Sheng",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:sho",
+              "name": "Shō",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:sousaphone",
+              "name": "Sousaphone",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:steelpan",
+              "name": "Steelpan",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:tamboo-bamboo",
+              "name": "Tamboo bamboo",
+              "status": "added"
+            },
+            {
+              "id": "instrument:theremin",
+              "name": "Theremin",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:tr-808",
+              "name": "Roland TR-808",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:tr-909",
+              "name": "Roland TR-909",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:trumpet",
+              "name": "Valved trumpet",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:ukulele",
+              "name": "Ukulele",
+              "status": "updated"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "items": [
+            {
+              "id": "instrument:helicon",
+              "name": "Helicon",
+              "status": "added"
+            },
+            {
+              "id": "instrument:juno-60",
+              "name": "Roland JUNO-60",
+              "status": "added"
+            },
+            {
+              "id": "instrument:madeiran-machete",
+              "name": "Madeiran machete (braguinha)",
+              "status": "added"
+            },
+            {
+              "id": "instrument:tamboo-bamboo",
+              "name": "Tamboo bamboo",
+              "status": "added"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/GRAPH.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/RESEARCH.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/audits/graph-edge-coverage.csv"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/audits/graph-edges-032-instrument-lineage.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__helicon-new-orleans-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__juno-60-synth-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__madeiran-machete-madeiran-traditional-music.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__tamboo-bamboo-calypso.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__grupo-de-folclore-do-porto-santo-madeiran-traditional-music.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__grupo-folclorico-da-ponta-do-sol-madeiran-traditional-music.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/key__xarabanda-madeiran-traditional-music.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__biwa-pipa.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__charango-guitar.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__drum-kit-bass-drum.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/edges/lineage__electric-bass-double-bass.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/edges/lineage__electric-guitar-guitar.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/edges/lineage__electric-piano-piano.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__juno-106-juno-60.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__lute-oud.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/edges/lineage__minimoog-modular-synthesizer.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/edges/lineage__piano-harpsichord.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__saxophone-bass-clarinet.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__sho-sheng.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__sousaphone-helicon.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__steelpan-tamboo-bamboo.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/edges/lineage__tr-909-tr-808.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__trumpet-natural-trumpet.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/lineage__ukulele-madeiran-machete.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/removed__electric-bass-double-bass.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/removed__electric-piano-piano.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/removed__modular-synthesizer-theremin.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/removed__saxophone-clarinet.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/fetch-status.jsonl"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/graph-edge-removals.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/grupo-de-folclore-do-porto-santo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/grupo-folclorico-da-ponta-do-sol.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/artist/xarabanda.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/genre/madeiran-traditional-music.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/helicon.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/juno-60.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/madeiran-machete.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/tamboo-bamboo.md"
+            },
+            {
+              "status": "M",
+              "path": "src/data/genrePreviews.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/review-status.json"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "files": [
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/helicon.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/juno-60.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/madeiran-machete.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/tamboo-bamboo.json"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/helicon.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/juno-60.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/madeiran-machete.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/tamboo-bamboo.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/helicon.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/juno-60.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/madeiran-machete.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/tamboo-bamboo.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/helicon.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/juno-60.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/madeiran-machete.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/tamboo-bamboo.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/helicon.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/juno-60.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/madeiran-machete.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/tamboo-bamboo.svg"
+            },
+            {
+              "status": "M",
+              "path": "scripts/artwork/generate-instrument-artwork.py"
+            }
+          ]
+        },
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "src/components/timeline/Timeline.test.tsx"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/EXPLORER.md"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [
+            "artist:grupo-de-folclore-do-porto-santo",
+            "artist:grupo-folclorico-da-ponta-do-sol",
+            "artist:xarabanda",
+            "genre:madeiran-traditional-music",
+            "instrument:helicon",
+            "instrument:juno-60",
+            "instrument:madeiran-machete",
+            "instrument:tamboo-bamboo"
+          ],
+          "updated": [],
+          "removed": []
+        },
+        "edges": {
+          "added": [
+            "featured:helicon-new-orleans-jazz",
+            "featured:juno-60-synth-pop",
+            "featured:madeiran-machete-madeiran-traditional-music",
+            "featured:tamboo-bamboo-calypso",
+            "key:grupo-de-folclore-do-porto-santo-madeiran-traditional-music",
+            "key:grupo-folclorico-da-ponta-do-sol-madeiran-traditional-music",
+            "key:xarabanda-madeiran-traditional-music",
+            "lineage:biwa-pipa",
+            "lineage:charango-guitar",
+            "lineage:drum-kit-bass-drum",
+            "lineage:juno-106-juno-60",
+            "lineage:lute-oud",
+            "lineage:saxophone-bass-clarinet",
+            "lineage:sho-sheng",
+            "lineage:sousaphone-helicon",
+            "lineage:steelpan-tamboo-bamboo",
+            "lineage:trumpet-natural-trumpet",
+            "lineage:ukulele-madeiran-machete"
+          ],
+          "updated": [
+            "lineage:electric-bass-double-bass",
+            "lineage:electric-guitar-guitar",
+            "lineage:electric-piano-piano",
+            "lineage:minimoog-modular-synthesizer",
+            "lineage:piano-harpsichord",
+            "lineage:tr-909-tr-808"
+          ],
+          "removed": [
+            "lineage:modular-synthesizer-theremin",
+            "lineage:saxophone-clarinet"
+          ]
+        }
+      }
+    },
+    {
       "commit": "5845dcb6d49b8b3e278e6726f010ac1f76b840f3",
       "parent": "d3ea46c98dd80eaef0f2ce21db8ca5a04de6153d",
       "date": "2026-11-13T23:15:41-05:00",
