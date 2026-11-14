@@ -229,8 +229,10 @@ def bassoon():
             + path('M-107-14Q-119-14-119-3V16Q-119 24-109 24H-96V-14Z',
                    '#226e58', '#a7f3d0')
             + path('M-113-11V21M-98-13V23M113-19V1', stroke='#c9e7dc', w=2.6)
-            + path('M22 11C33 9 35 20 45 20S63 14 58 7', stroke='#e3ebe8', w=2.5)
-            + path('M58 7l-6-5', stroke='#efd19a', w=2.8)
+            # In the upright playing pose the crook turns toward the player,
+            # with the reed continuing along the tip of the tube.
+            + path('M22 11C32 10 34 17 43 19S55 20 61 30', stroke='#e3ebe8', w=2.5)
+            + path('M60 30L63.5 36.5L66.5 34.7L62 29Z', '#efd19a')
             + path('M-93-7H83M-94 14H11M-63 5V19M-28 4V18',
                    stroke='#bcd4d5', w=1.25)
             + ''.join(ellipse(x,y,rx,2.5,'#dbe8e6','#335457')
@@ -1179,7 +1181,7 @@ ART = {
     'saxophone': (lambda _: saxophone(), 1.02,
                   SAXOPHONE_OUTLINE + SAXOPHONE_SEAM + 'M10.6 8.7h.01m.6 3h.01m.6 3h.01'),
     'auto-tune': (lambda _: auto_tune(), 1.05, 'M2 5h20v14H2zM2 8h20M6 8v11M8.5 15h3m1-3h3m1 2h3'),
-    'bassoon': (lambda _: bassoon(), 1.08, 'M20 7h2v4h-2M4 8h16v2H4M4 10l9 1v4H4M4 8H3q-1 0-1 1v5q0 1 1 1h1ZM13 13q2 0 3 2t3-1'),
+    'bassoon': (lambda _: bassoon(), 1.08, 'M20 7h2v4h-2M4 8h16v2H4M4 10l9 1v4H4M4 8H3q-1 0-1 1v5q0 1 1 1h1ZM13 13c2-.1 1.8 2 3.1 2.4s1.7.5 2.6 2'),
     'conga': (lambda _: conga(), 1.03, 'M6.5 5c0-3 11-3 11 0s-11 3-11 0ZM6.5 5c-1 6 0 10 2.5 15q3 2 6 0c2.5-5 3.5-9 2.5-15M9 8v3m6-3v3'),
     'harmonium': (lambda _: harmonium(), 1.05, 'M2 9l2-5h16l2 5v11H2ZM3 7h18M2 9h20M5 11h14v5H5zM9 11v3m6-3v3M8 18h.01m4 0h.01m4 0h.01'),
     'juno-106': (synthesizer, 1.05, 'M2 7h20v10H2zM2 12h20M7 12v5m3-5v5m3-5v5m3-5v5m3-5v5M5 9.5h2m4-1v2m4-2v2m4-2v2'),
