@@ -2,6 +2,167 @@
   "version": 4,
   "entries": [
     {
+      "commit": "da67e9ce86593786604afb9d66f3444673914af8",
+      "parent": "d38647d0ac11216420bb1aed4d7ac6e56b712b6b",
+      "date": "2026-11-13T20:34:08-05:00",
+      "subject": "Clarify localized content names",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "src/App.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/DiscoveryChrome.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/Home.css"
+            },
+            {
+              "status": "M",
+              "path": "src/components/Home.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/Soundtrails.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/open-data/OpenData.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/playback/Jukebox.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/playback/Turntable.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/playback/TurntablePlayButton.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/playback/TurntableSideKnob.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/catalogue.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/en.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/locales/it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/openDataPage.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/openDataPage.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/pageLoading.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/pageLoading.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/socialMetadata.ts"
+            }
+          ]
+        },
+        {
+          "category": "site",
+          "files": [
+            {
+              "status": "M",
+              "path": "site/scripts/stats.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/components/App.tsx"
+            },
+            {
+              "status": "M",
+              "path": "site/src/components/Diagrams.tsx"
+            },
+            {
+              "status": "M",
+              "path": "site/src/content.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/entry-client.tsx"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/de.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/en.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/es.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/fr.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/it.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/site.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "site/vite.config.ts"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/DEVELOPMENT.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "d4edee6cd89eb5a574706d560c875073c4829307",
       "parent": "4a3dda36085de12f690aa63666715c4e8ae87550",
       "date": "2026-11-13T20:31:52-05:00",
