@@ -21,14 +21,14 @@ describe('localized Open Data pages', () => {
   })
 
   it.each(LOCALES)('gives all %s subpages independent canonical metadata', async (locale) => {
-    const copy = catalogueFor(locale)
+    const catalogue = catalogueFor(locale)
     for (const [section, metadata] of [
       ['dataset', datasetMetadata], ['graph', graphMetadata], ['query', queryMetadata], ['changelog', changelogMetadata], ['contribute', contributeMetadata],
     ] as const) {
       const result = await metadata({ params: Promise.resolve({ locale }) })
       const url = new URL(localizePath(`/data/${section}`, locale), APP_URL).href
-      expect(result.title).toBe(`${copy.openData[section].title} | ${copy.seo.data.title}`)
-      expect(result.description).toBe(copy.openData[section].description)
+      expect(result.title).toBe(`${catalogue.openData[section].title} | ${catalogue.seo.data.title}`)
+      expect(result.description).toBe(catalogue.openData[section].description)
       expect(result.alternates).toEqual({
         canonical: url,
         languages: Object.fromEntries(LOCALES.map((target) => [

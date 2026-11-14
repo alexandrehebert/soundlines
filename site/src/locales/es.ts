@@ -1,7 +1,7 @@
 import { storybookUrl } from '../links.ts'
-import type { Copy } from '../content.ts'
+import type { LocalizedContent } from '../content.ts'
 
-export const es: Copy = {
+export const es: LocalizedContent = {
   skip: 'Saltar al contenido',
   navigation: 'Entre bastidores',
   language: 'Idioma',

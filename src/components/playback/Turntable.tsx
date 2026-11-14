@@ -130,7 +130,7 @@ function TurntableHint({ record, play, progress, scenario, dismissed }: {
 
 export function Turntable({ theme, toggleTheme, children }: { theme: ColorTheme; toggleTheme: () => void; children?: ReactNode }) {
   const t = useTranslations()
-  const tHome = useTranslations('homeCopy')
+  const tHome = useTranslations('homeContent')
   const reduceMotion = useReducedMotion()
   const showTonearm = featureFlags.turntableTonearm
   const { scrollY } = useScroll()
@@ -285,7 +285,7 @@ export function Turntable({ theme, toggleTheme, children }: { theme: ColorTheme;
 
   return (
     <section className="discovery-hero" aria-label="Soundlines turntable">
-      <div className="discovery-hero-copy">
+      <div className="discovery-hero-text">
         <p className="discovery-kicker"><span /> {t('tagline')}</p>
         <div className="discovery-hero-title">
           <h1 id="discovery-heading">{tHome('headline.first')}<br /> <em>{tHome('headline.second')}</em></h1>

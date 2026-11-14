@@ -49,7 +49,7 @@ export function DiscoveryFooter({ current }: { current: DiscoveryPage }) {
   const { locale } = useExplorer()
   const pathname = usePathname()
   const t = useTranslations()
-  const tHome = useTranslations('homeCopy')
+  const tHome = useTranslations('homeContent')
   const tViews = useTranslations('views')
   // Language links keep the visitor on the same page, e.g. /fr/data/query -> /de/data/query.
   const localizedPath = current === 'home' || !pathname ? '/' : stripLocalePrefix(pathname)

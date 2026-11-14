@@ -29,20 +29,20 @@ describe('translation catalogues', () => {
     }
   })
 
-  it.each(LOCALES)('uses %s catalogue copy for UI, taxonomy and metadata', (locale) => {
-    const copy = catalogueFor(locale)
-    expect(copy.homeCopy.headline.first).toBeTruthy()
-    expect(graphLabels(locale)).toEqual(copy.graphLabels)
+  it.each(LOCALES)('uses %s catalogue for UI, taxonomy and metadata', (locale) => {
+    const catalogue = catalogueFor(locale)
+    expect(catalogue.homeContent.headline.first).toBeTruthy()
+    expect(graphLabels(locale)).toEqual(catalogue.graphLabels)
     for (const page of ['home', 'genre', 'artist', 'instrument', 'history', 'bubbles', 'data'] as const) {
-      expect(pageMetadata(locale, page)).toEqual(copy.seo[page])
+      expect(pageMetadata(locale, page)).toEqual(catalogue.seo[page])
     }
   })
 
   it.each(LOCALES)('formats dynamic %s messages without exposing placeholders', (locale) => {
-    const copy = catalogueFor(locale)
-    const history = createTranslator({ locale, messages: copy, namespace: 'history' })
-    const stats = createTranslator({ locale, messages: copy, namespace: 'stats' })
-    const timeline = createTranslator({ locale, messages: copy, namespace: 'timeline' })
+    const catalogue = catalogueFor(locale)
+    const history = createTranslator({ locale, messages: catalogue, namespace: 'history' })
+    const stats = createTranslator({ locale, messages: catalogue, namespace: 'stats' })
+    const timeline = createTranslator({ locale, messages: catalogue, namespace: 'timeline' })
     for (const count of [0, 1, 2, 1000]) {
       const output = [
         history('showing', { count, dating: history('dating.dated') }),
@@ -63,10 +63,10 @@ describe('translation catalogues', () => {
     expect(timeline('undated', { label: 'genres' })).toContain('genres')
     expect(timeline('undatedTitle', { name: 'Jazz' })).toContain('Jazz')
     expect(timeline('estimatedPeriod', { period: '1900' })).toContain('1900')
-    expect(timeline('phasePeriod', { label: 'Peak', circa: copy.dates.circa, start: '1960', end: '1980' })).toContain('1960–1980')
+    expect(timeline('phasePeriod', { label: 'Peak', circa: catalogue.dates.circa, start: '1960', end: '1980' })).toContain('1960–1980')
     for (const direction of ['left', 'right'] as const) {
-      expect(timeline('offscreen', { name: 'Jazz', direction: copy.timeline.directions[direction] }))
-        .toContain(copy.timeline.directions[direction])
+      expect(timeline('offscreen', { name: 'Jazz', direction: catalogue.timeline.directions[direction] }))
+        .toContain(catalogue.timeline.directions[direction])
     }
   })
 

@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import { App } from './components/App.tsx'
 import { favicon } from './components/assets.ts'
-import { copy } from './content.ts'
+import { contentByLocale } from './content.ts'
 import { matchRoute } from './routes.ts'
 import './styles.css'
 
@@ -20,7 +20,7 @@ if (container.firstElementChild) {
 } else {
   // Dev server: pages are not prerendered, so render on the client and set the metadata it would have had.
   document.documentElement.lang = route.locale
-  document.title = `${copy[route.locale].pages[route.slug].label} · Soundlines`
+  document.title = `${contentByLocale[route.locale].pages[route.slug].label} · Soundlines`
   let icon = document.querySelector<HTMLLinkElement>('link[rel="icon"]')
   if (!icon) {
     icon = document.createElement('link')

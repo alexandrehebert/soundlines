@@ -400,7 +400,7 @@ describe('landing view transition', () => {
     expect(homeCss).toContain('transition: transform .75s cubic-bezier(.22, .75, .25, 1);')
     expect(reducedMotionCss).toContain('.discovery-record-flip { transition: none; }')
     expect(loadingCss).toContain('#page-loading[data-opening][data-loading="true"] ~ #root .discovery-record-flip {\n  transition: none;')
-    expect(loadingCss).not.toContain('.discovery-hero-copy')
+    expect(loadingCss).not.toContain('.discovery-hero-text')
   })
 
   it('keeps the mobile detail sheet above the timeline content and below the navigation', () => {
@@ -548,22 +548,22 @@ describe('Soundtrails landing', () => {
 
   it.each(['en', 'fr', 'de', 'it', 'es'] as const)('presents the catalogue as direct discovery choices in %s', (locale) => {
     const markup = renderHome(graphForLocale(locale), true, locale)
-    const copy = catalogueFor(locale).homeCopy
+    const homeContent = catalogueFor(locale).homeContent
     const chronologies = markup.indexOf('id="chronologies"')
     const soundtrails = markup.indexOf('id="soundtrails"')
     const catalogue = markup.indexOf('id="discover"')
     expect(chronologies).toBeGreaterThan(-1)
     expect(soundtrails).toBeGreaterThan(chronologies)
     expect(catalogue).toBeGreaterThan(soundtrails)
-    expect(markup).toContain(copy.chronologies.intro)
-    expect(markup).toContain(copy.soundtrails.intro)
-    expect(markup).toContain(copy.catalogueIntro)
+    expect(markup).toContain(homeContent.chronologies.intro)
+    expect(markup).toContain(homeContent.soundtrails.intro)
+    expect(markup).toContain(homeContent.catalogueIntro)
 
     const choices = [
       'id="connection-heading"',
       'id="listening-heading"',
-      copy.artistSpotlight,
-      copy.instrumentSpotlight,
+      homeContent.artistSpotlight,
+      homeContent.instrumentSpotlight,
       'id="landmarks-heading"',
       'id="recent-heading"',
     ].map((text) => markup.indexOf(text))
@@ -650,7 +650,7 @@ describe('Soundtrails landing', () => {
     it.each(['en', 'fr', 'de', 'it', 'es'] as const)('groups timelines and widgets by topic in %s', (locale) => {
       const localized = graphForLocale(locale)
       const markup = renderHome(localized, true, locale, false, true)
-      const copy = catalogueFor(locale).homeCopy
+      const homeContent = catalogueFor(locale).homeContent
       const newest = (type: string) => localized.nodes
         .filter((node) => node.type === type && node.addedOn)
         .sort((a, b) => b.addedOn!.localeCompare(a.addedOn!) || a.name.localeCompare(b.name))[0]
@@ -664,41 +664,41 @@ describe('Soundtrails landing', () => {
       expect(markup).not.toContain('id="recent-heading"')
 
       const genres = sectionOf(markup, 'genres', 'artists')
-      expect(genres).toContain(`<h2 id="genres-heading">${copy.topics.genres.title}</h2>`)
-      expect(genres).toContain(copy.topics.genres.intro)
+      expect(genres).toContain(`<h2 id="genres-heading">${homeContent.topics.genres.title}</h2>`)
+      expect(genres).toContain(homeContent.topics.genres.intro)
       expect(genres).toContain(`href="/${locale}/genres"`)
-      expect(genres).toContain(copy.topics.timelines.genre)
+      expect(genres).toContain(homeContent.topics.timelines.genre)
       expect(genres).toContain('id="connection-heading"')
       expect(genres).toContain('id="listening-heading"')
       expect(genres).toContain('id="soundtrails"')
       expect(genres).toMatch(/<h3 id="soundtrails-heading">/)
-      expect(genres).not.toContain(copy.recentlyAdded)
+      expect(genres).not.toContain(homeContent.recentlyAdded)
 
       const artists = sectionOf(markup, 'artists', 'instruments')
-      expect(artists).toContain(`<h2 id="artists-heading">${copy.topics.artists.title}</h2>`)
-      expect(artists).toContain(copy.topics.artists.intro)
+      expect(artists).toContain(`<h2 id="artists-heading">${homeContent.topics.artists.title}</h2>`)
+      expect(artists).toContain(homeContent.topics.artists.intro)
       expect(artists).toContain(`href="/${locale}/artists"`)
       expect(artists).not.toContain(`href="/${locale}/instruments"`)
-      expect(artists).toContain(copy.artistSpotlight)
-      expect(artists).not.toContain(copy.instrumentSpotlight)
+      expect(artists).toContain(homeContent.artistSpotlight)
+      expect(artists).not.toContain(homeContent.instrumentSpotlight)
       expect(artists).toContain('<h3 id="artists-recent-heading">')
       expect(artists).toContain(escape(newest('artist').name))
 
       const instruments = sectionOf(markup, 'instruments', 'history')
-      expect(instruments).toContain(`<h2 id="instruments-heading">${copy.topics.instruments.title}</h2>`)
-      expect(instruments).toContain(copy.topics.instruments.intro)
+      expect(instruments).toContain(`<h2 id="instruments-heading">${homeContent.topics.instruments.title}</h2>`)
+      expect(instruments).toContain(homeContent.topics.instruments.intro)
       expect(instruments).toContain(`href="/${locale}/instruments"`)
       expect(instruments).not.toContain(`href="/${locale}/artists"`)
-      expect(instruments).toContain(copy.instrumentSpotlight)
+      expect(instruments).toContain(homeContent.instrumentSpotlight)
       expect(instruments).toMatch(/src="[^"]*\/instrument-avatars\/[^"]+\.svg"/)
       expect(instruments).toContain('1 / 5')
       expect(instruments).toContain('<h3 id="instruments-recent-heading">')
       expect(instruments).toContain(escape(newest('instrument').name))
 
       const history = sectionOf(markup, 'history')
-      expect(history).toContain(`<h2 id="history-heading">${copy.topics.history.title}</h2>`)
+      expect(history).toContain(`<h2 id="history-heading">${homeContent.topics.history.title}</h2>`)
       expect(history).toContain(`href="/${locale}/history"`)
-      expect(history).toContain(copy.topics.timelines.history)
+      expect(history).toContain(homeContent.topics.timelines.history)
       expect(history).toContain('id="landmarks-heading"')
       const phonograph = localized.nodes.find((node) => node.id === 'event:phonograph-invented')!
       expect(history).toContain(escape(catalogueFor(locale).graphLabels.eventCategories.technology))
@@ -723,12 +723,12 @@ describe('Soundtrails landing', () => {
         edges: [],
       }
       const markup = renderHome(source, false, DEFAULT_LOCALE, false, true)
-      const copy = catalogueFor(DEFAULT_LOCALE).homeCopy
+      const homeContent = catalogueFor(DEFAULT_LOCALE).homeContent
       expect(markup).toContain('id="genres"')
       expect(sectionOf(markup, 'artists', 'instruments')).toContain('href="/en/artists"')
       expect(sectionOf(markup, 'instruments', 'history')).toContain('href="/en/instruments"')
-      expect(markup).not.toContain(copy.artistSpotlight)
-      expect(markup).not.toContain(copy.instrumentSpotlight)
+      expect(markup).not.toContain(homeContent.artistSpotlight)
+      expect(markup).not.toContain(homeContent.instrumentSpotlight)
       expect(markup).toContain('id="history"')
       expect(markup).toContain('href="/en/history"')
     })

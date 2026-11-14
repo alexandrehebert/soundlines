@@ -11,7 +11,7 @@ type Props = Omit<ComponentProps<'button'>, 'children'> & {
 }
 
 export function TurntablePlayButton({ playing = false, loading = false, label, hint, disabled, ...props }: Props) {
-  const t = useTranslations('homeCopy')
+  const t = useTranslations('homeContent')
   return (
     <button {...props} type="button" className="discovery-turntable-play" aria-label={label} aria-pressed={playing} aria-busy={loading} disabled={loading || disabled} title={label}>
       {hint}

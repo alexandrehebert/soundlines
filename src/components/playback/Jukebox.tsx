@@ -93,8 +93,8 @@ export function JukeboxPlayer({ embedded = false }: { embedded?: boolean }) {
   const { index, locale } = useExplorer()
   const { theme } = useColorTheme()
   const t = useTranslations('jukebox')
-  const audioCopy = useTranslations('audio')
-  const soundtrailCopy = useTranslations('homeCopy.soundtrails')
+  const tAudio = useTranslations('audio')
+  const tSoundtrails = useTranslations('homeContent.soundtrails')
   const [query, setQuery] = useState('')
   const [selected, setSelected] = useState<number | null>(null)
   const [status, setStatus] = useState<'idle' | 'loading' | 'playing' | 'failed'>('idle')
@@ -294,24 +294,24 @@ export function JukeboxPlayer({ embedded = false }: { embedded?: boolean }) {
             />
           </div>
         </div>
-        <span role="status" className="sr-only">{status === 'loading' ? audioCopy('buffering') : ''}</span>
+        <span role="status" className="sr-only">{status === 'loading' ? tAudio('buffering') : ''}</span>
         <div className="jukebox-display" data-active={active || undefined} role="status">
           <div className="jukebox-display-text">
             <span>{track ? `№ ${track.code} / ${track.family}` : t('ready')}</span>
             <JukeboxTitle key={track?.id} name={track?.name ?? t('select')} />
-            {status === 'failed' && <small>{audioCopy('failed')}</small>}
+            {status === 'failed' && <small>{tAudio('failed')}</small>}
           </div>
           <TurntableLcd source={levels} active={status === 'playing'} playing={status === 'playing'} theme={theme} />
         </div>
         <div className="jukebox-controls">
           <button type="button" className="jukebox-play" disabled={!track}
-            aria-label={track ? `${audioCopy(active ? 'pause' : 'play')} · ${track.name}` : undefined}
+            aria-label={track ? `${tAudio(active ? 'pause' : 'play')} · ${track.name}` : undefined}
             onClick={() => track && toggle(track.number)}>
             {active ? <Pause size={20} fill="currentColor" aria-hidden="true" />
               : <Play size={20} fill="currentColor" aria-hidden="true" />}
             <span className="jukebox-key-label">
-              <span data-inactive={active} aria-hidden={active}>{audioCopy('play')}</span>
-              <span data-inactive={!active} aria-hidden={!active}>{audioCopy('pause')}</span>
+              <span data-inactive={active} aria-hidden={active}>{tAudio('play')}</span>
+              <span data-inactive={!active} aria-hidden={!active}>{tAudio('pause')}</span>
             </span>
           </button>
           <button type="button" className="jukebox-shuffle" disabled={!results.length}
@@ -336,7 +336,7 @@ export function JukeboxPlayer({ embedded = false }: { embedded?: boolean }) {
           onError={({ currentTarget }) => { if (currentTarget.error) fail() }}
         />
         <p className="jukebox-attribution">
-          <a href="https://ace-step.github.io/ACE-Step-1.5/">ACE-Step</a> {audioCopy('previewAttribution')}
+          <a href="https://ace-step.github.io/ACE-Step-1.5/">ACE-Step</a> {tAudio('previewAttribution')}
         </p>
       </section>
 
@@ -355,7 +355,7 @@ export function JukeboxPlayer({ embedded = false }: { embedded?: boolean }) {
             {results.map(({ id, code, name, family, color, number }) => (
               <li key={id}>
                 <button type="button" className="jukebox-track" aria-current={selected === number || undefined}
-                  aria-label={soundtrailCopy(active && selected === number ? 'pause' : 'listen', { name })}
+                  aria-label={tSoundtrails(active && selected === number ? 'pause' : 'listen', { name })}
                   onClick={() => toggle(number)}>
                   <span className="jukebox-code" aria-hidden="true">{code}</span>
                   <span

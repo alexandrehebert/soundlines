@@ -4,7 +4,7 @@ import type { ColorTheme } from '../../useColorTheme.ts'
 import '../Home.css'
 
 export function TurntableSideKnob({ theme, onClick }: { theme: ColorTheme; onClick: () => void }) {
-  const t = useTranslations('homeCopy')
+  const t = useTranslations('homeContent')
   const label = t(theme === 'dark' ? 'switchToLight' : 'switchToDark')
   return (
     <button type="button" className="discovery-turntable-side-toggle" onClick={onClick} aria-pressed={theme === 'light'} aria-label={label} title={label} data-side={theme === 'light' ? 'B' : 'A'}>

@@ -12,7 +12,7 @@ import { hipHopLoop, instrumentBrief, instruments } from './components/assets.ts
 import { readIconBlueprint } from './components/blueprint.ts'
 import { Legend } from './components/Diagrams.tsx'
 import { PreviewView } from './components/Previews.tsx'
-import { actors, copy, locales, repository, siteUrl, slugs, stats, type Flow, type FlowStep } from './content.ts'
+import { actors, contentByLocale, locales, repository, siteUrl, slugs, stats, type Flow, type FlowStep } from './content.ts'
 import { matchRoute, repositoryUrl, routeFile, routePath, routes } from './routes.ts'
 
 const root = fileURLToPath(new URL('../../', import.meta.url))
@@ -20,9 +20,9 @@ const base = import.meta.env.BASE_URL
 
 describe('project companion content', () => {
   it.each(locales)('gives %s the same pages, workflows and resources as English', (locale) => {
-    expect(copy[locale].stats.map(([key]) => key)).toEqual(copy.en.stats.map(([key]) => key))
+    expect(contentByLocale[locale].stats.map(([key]) => key)).toEqual(contentByLocale.en.stats.map(([key]) => key))
     for (const slug of slugs) {
-      const [en, fr] = [copy.en.pages[slug], copy[locale].pages[slug]]
+      const [en, fr] = [contentByLocale.en.pages[slug], contentByLocale[locale].pages[slug]]
       expect(fr.sections).toHaveLength(en.sections.length)
       expect(fr.flows.map((flow) => [flow.steps.map((step) => [step.actor, step.output[0], step.preview.kind]), flow.loops?.map(({ from, to }) => [from, to])])).toEqual(
         en.flows.map((flow) => [flow.steps.map((step) => [step.actor, step.output[0], step.preview.kind]), flow.loops?.map(({ from, to }) => [from, to])]),
@@ -39,7 +39,7 @@ describe('project companion content', () => {
     ['en', 'From a data file to your screen', 'The AI-assisted team'],
     ['fr', 'Du fichier de données à votre écran', 'L’équipe assistée par IA'],
   ] as const)('shows only the app workflow on the %s build page', (locale, title, removedTitle) => {
-    expect(copy[locale].pages.build.flows.map((flow) => flow.title)).toEqual([title])
+    expect(contentByLocale[locale].pages.build.flows.map((flow) => flow.title)).toEqual([title])
     const html = renderToStaticMarkup(<App locale={locale} slug="build" />)
     expect(html).toContain(title)
     expect(html).not.toContain(removedTitle)
@@ -54,7 +54,7 @@ describe('project companion content', () => {
   })
 
   it('only links to repository paths that exist', () => {
-    const paths = Object.values(copy.en.pages).flatMap((page) => [
+    const paths = Object.values(contentByLocale.en.pages).flatMap((page) => [
       ...page.resources.map(([path]) => path).filter((path) => !/^https?:/.test(path)),
       ...(page.example ? [page.example.path] : []),
       ...(page.showcase ? instruments.map(({ slug }) => instrumentBrief(slug)) : []),
@@ -77,7 +77,7 @@ describe('project companion content', () => {
     expect(header).toContain('aria-label="Storybook"')
     expect(header.match(/group-focus-visible:visible/g)).toHaveLength(2)
     expect(header).toContain(`href="${new URL(route.locale, APP_URL).href}"`)
-    expect(header).toContain(copy[route.locale].openApp)
+    expect(header).toContain(contentByLocale[route.locale].openApp)
   })
 
   it.each(routes)('provides $locale/$slug language links without JavaScript', (route) => {
@@ -94,7 +94,7 @@ describe('project companion content', () => {
   })
 
   it.each(routes)('shows real examples right after the workflows, with their brief: $locale/$slug', (route) => {
-    const page = copy[route.locale].pages[route.slug]
+    const page = contentByLocale[route.locale].pages[route.slug]
     if (!page.example && !page.showcase) return
     const html = renderToStaticMarkup(<App {...route} />)
     const lastFlow = html.indexOf(`id="flow-${page.flows.length - 1}"`)
@@ -109,14 +109,14 @@ describe('project companion content', () => {
   it('resolves every figure placeholder from the repository', () => {
     expect(stats.entries).toBeGreaterThan(0)
     expect(stats.connections).toBeGreaterThan(0)
-    for (const locale of locales) expect(JSON.stringify(copy[locale])).not.toMatch(/\{\w+\}/)
+    for (const locale of locales) expect(JSON.stringify(contentByLocale[locale])).not.toMatch(/\{\w+\}/)
   })
 })
 
 describe('workflow legends', () => {
   it('renders nothing when no workflow has steps', () => {
-    expect(renderToStaticMarkup(<Legend c={copy.en} flows={[]} />)).toBe('')
-    expect(renderToStaticMarkup(<Legend c={copy.en} flows={[{ title: 'Empty', caption: '', steps: [] }]} />)).toBe('')
+    expect(renderToStaticMarkup(<Legend content={contentByLocale.en} flows={[]} />)).toBe('')
+    expect(renderToStaticMarkup(<Legend content={contentByLocale.en} flows={[{ title: 'Empty', caption: '', steps: [] }]} />)).toBe('')
   })
 
   it('combines actors across workflows without duplicates, in the usual order', () => {
@@ -125,27 +125,27 @@ describe('workflow legends', () => {
       { title: 'First', caption: '', steps: [{ ...step, actor: 'script' }, { ...step, actor: 'agent' }, { ...step, actor: 'script' }] },
       { title: 'Second', caption: '', steps: [{ ...step, actor: 'human' }, { ...step, actor: 'test' }] },
     ]
-    const legend = renderToStaticMarkup(<Legend c={copy.en} flows={flows} />)
+    const legend = renderToStaticMarkup(<Legend content={contentByLocale.en} flows={flows} />)
     const labels = [...legend.matchAll(/>(Person|AI assistant|AI model|Code|Automatic check)<\/span>/g)].map((match) => match[1])
     expect(labels).toEqual(['Person', 'AI assistant', 'Code', 'Automatic check'])
   })
 
   it.each(routes)('shows exactly the actors used across the $locale/$slug page workflows', (route) => {
-    const c = copy[route.locale]
-    const page = c.pages[route.slug]
+    const content = contentByLocale[route.locale]
+    const page = content.pages[route.slug]
     const usedActors = new Set(page.flows.flatMap((flow) => flow.steps.map((step) => step.actor)))
-    const legend = renderToStaticMarkup(<Legend c={c} flows={page.flows} />)
+    const legend = renderToStaticMarkup(<Legend content={content} flows={page.flows} />)
     const html = renderToStaticMarkup(<App {...route} />)
 
     if (usedActors.size === 0) {
       expect(legend).toBe('')
-      expect(html).not.toContain(`>${c.legend}</span>`)
+      expect(html).not.toContain(`>${content.legend}</span>`)
     } else {
       expect(html).toContain(legend)
     }
 
     for (const actor of actors) {
-      const label = renderToStaticMarkup(<>{c.actors[actor]}</>)
+      const label = renderToStaticMarkup(<>{content.actors[actor]}</>)
       expect(legend.split(`>${label}</span>`)).toHaveLength(usedActors.has(actor) ? 2 : 1)
     }
   })
@@ -153,7 +153,7 @@ describe('workflow legends', () => {
 
 describe('artwork master preview', () => {
   it.each(locales)('shows the real outline, curve controls and drawing units in %s', (locale) => {
-    const preview = copy[locale].pages.artwork.flows[0].steps.find((step) => step.preview.kind === 'blueprint')?.preview
+    const preview = contentByLocale[locale].pages.artwork.flows[0].steps.find((step) => step.preview.kind === 'blueprint')?.preview
     if (!preview || preview.kind !== 'blueprint') throw new Error('Missing artwork blueprint preview')
     const blueprint = readIconBlueprint(saxophoneIcon)
     const html = renderToStaticMarkup(<PreviewView preview={preview} locale={locale} final={false} />)
@@ -173,7 +173,7 @@ describe('loop selection preview', () => {
     ['en', 'Full take', 'schematic waveform', 'Not kept', 'Selected section', 'Kept loop', '11.668 s', '22.103 s', '10.4 s', '11.67 s', '22.10 s'],
     ['fr', 'Prise complète', 'forme d’onde schématique', 'Non conservé', 'Passage sélectionné', 'Boucle conservée', '11,668 s', '22,103 s', '10,4 s', '11,67 s', '22,10 s'],
   ] as const)('shows the selected interval and retained loop in %s', (locale, take, schematic, discarded, selected, kept, start, end, length, startTick, endTick) => {
-    const preview = copy[locale].pages.audio.flows[0].steps.find((step) => step.preview.kind === 'loop')?.preview
+    const preview = contentByLocale[locale].pages.audio.flows[0].steps.find((step) => step.preview.kind === 'loop')?.preview
     expect(preview).toBeDefined()
     if (!preview) throw new Error('Missing loop selection preview')
 
@@ -196,7 +196,7 @@ describe('loop selection preview', () => {
 
 describe('landing loop player', () => {
   it.each(locales)('renders the actual shipped waveform, audio and initial cursor in %s', (locale) => {
-    const preview = copy[locale].pages.audio.flows[0].steps.find((step) => step.preview.kind === 'player')?.preview
+    const preview = contentByLocale[locale].pages.audio.flows[0].steps.find((step) => step.preview.kind === 'player')?.preview
     if (!preview || preview.kind !== 'player') throw new Error('Missing landing loop player')
     const html = renderToStaticMarkup(<PreviewView preview={preview} locale={locale} final />)
     expect(__LOOP_PEAKS__).toEqual(wavPeaks(`${root}public/loops/turntable-hip-hop.wav`))
@@ -237,7 +237,7 @@ describe('routes', () => {
 
 describe.each(routes)('$locale/$slug page', (route) => {
   const html = renderToStaticMarkup(<App {...route} />)
-  const page = copy[route.locale].pages[route.slug]
+  const page = contentByLocale[route.locale].pages[route.slug]
 
   it('has one title, a skip link and its translated content', () => {
     expect(html.match(/<h1\b/g)).toHaveLength(1)

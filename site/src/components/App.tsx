@@ -1,6 +1,6 @@
 import { AudioLines, ChevronDown, Hammer, House, Network, Palette } from 'lucide-react'
 import type { ReactNode } from 'react'
-import { locales, slugs, copy, repository, siteUrl, type Copy, type Locale, type Page, type Slug } from '../content.ts'
+import { locales, slugs, contentByLocale, repository, siteUrl, type LocalizedContent, type Locale, type Page, type Slug } from '../content.ts'
 import { appUrl, storybookUrl } from '../links.ts'
 import { repositoryUrl, routePath, type Route } from '../routes.ts'
 import { favicon, instrumentBrief, instruments } from './assets.ts'
@@ -14,24 +14,24 @@ const languageNames: Record<Locale, string> = { en: 'English', fr: 'Français', 
 const pageIcons = { index: House, graph: Network, artwork: Palette, audio: AudioLines, build: Hammer }
 
 export function App({ locale, slug }: Route) {
-  const c = copy[locale]
-  const page = c.pages[slug]
+  const content = contentByLocale[locale]
+  const page = content.pages[slug]
   const home = slug === 'index'
   return (
     <>
-      <a href="#main" className="skip-link">{c.skip}</a>
-      <Header c={c} locale={locale} slug={slug} />
-      <PageNav c={c} locale={locale} slug={slug} className="xl:border-b" />
+      <a href="#main" className="skip-link">{content.skip}</a>
+      <Header content={content} locale={locale} slug={slug} />
+      <PageNav content={content} locale={locale} slug={slug} className="xl:border-b" />
       <main id="main" className="shell pb-12">
-        <Hero c={c} page={page} home={home} />
-        {home && <Stats c={c} locale={locale} />}
+        <Hero content={content} page={page} home={home} />
+        {home && <Stats content={content} locale={locale} />}
         {page.overview && <Overview overview={page.overview} />}
-        <Legend c={c} flows={page.flows} />
+        <Legend content={content} flows={page.flows} />
         {page.flows.map((flow, i) => (
-          <FlowDiagram key={flow.title} c={c} flow={flow} id={`flow-${i}`} locale={locale} />
+          <FlowDiagram key={flow.title} content={content} flow={flow} id={`flow-${i}`} locale={locale} />
         ))}
-        {page.example && <ExampleCard c={c} example={page.example} href={repositoryUrl(repository, page.example.path)} />}
-        {page.showcase && <Showcase c={c} locale={locale} />}
+        {page.example && <ExampleCard content={content} example={page.example} href={repositoryUrl(repository, page.example.path)} />}
+        {page.showcase && <Showcase content={content} locale={locale} />}
         <div className="max-w-190 pt-4">
           {page.sections.map(([title, text], i) => (
             <section key={title} aria-labelledby={`section-${i}`} className="my-10">
@@ -40,13 +40,13 @@ export function App({ locale, slug }: Route) {
             </section>
           ))}
         </div>
-        {home && <Chapters c={c} locale={locale} />}
-        <Resources c={c} page={page} openData={slug === 'graph' ? openDataHref(locale) : undefined} />
+        {home && <Chapters content={content} locale={locale} />}
+        <Resources content={content} page={page} openData={slug === 'graph' ? openDataHref(locale) : undefined} />
       </main>
-      <PageNav c={c} locale={locale} slug={slug} className="xl:border-t" />
+      <PageNav content={content} locale={locale} slug={slug} className="xl:border-t" />
       <footer className="shell flex flex-wrap items-center gap-x-8 gap-y-2 border-t border-line py-8 text-sm text-muted">
         <a className="font-bold tracking-tight text-fg" href={href({ locale, slug: 'index' })} target="_blank" rel="noopener noreferrer">Soundlines</a>
-        <p className="mr-auto max-w-150">{c.footer}</p>
+        <p className="mr-auto max-w-150">{content.footer}</p>
         <a href={storybookUrl} target="_blank" rel="noopener noreferrer">Storybook {external}</a>
         <a href={repository} target="_blank" rel="noopener noreferrer">GitHub {external}</a>
       </footer>
@@ -54,20 +54,20 @@ export function App({ locale, slug }: Route) {
   )
 }
 
-type ChromeProps = { c: Copy } & Route
+type ChromeProps = { content: LocalizedContent } & Route
 
-function Header({ c, locale, slug }: ChromeProps) {
+function Header({ content, locale, slug }: ChromeProps) {
   return (
     <>
       <header className="shell relative flex items-center gap-1 py-4 sm:gap-3 lg:gap-6 lg:py-6">
         <a className="inline-flex min-w-0 items-center gap-2 text-sm font-bold tracking-tight sm:text-xl" href={href({ locale, slug: 'index' })} target="_blank" rel="noopener noreferrer">
           <img src={favicon} width={34} height={34} alt="" className="size-7 shrink-0 sm:size-8.5" />
           <span className="truncate">Soundlines</span>
-          <span className="ml-2 hidden shrink-0 border-l border-line pl-4 text-sm font-normal tracking-normal text-muted xl:inline">{c.navigation}</span>
+          <span className="ml-2 hidden shrink-0 border-l border-line pl-4 text-sm font-normal tracking-normal text-muted xl:inline">{content.navigation}</span>
         </a>
         <div className="ml-auto flex shrink-0 items-center gap-1 sm:gap-3">
           <a className="flex h-11 min-w-11 shrink-0 items-center justify-center gap-1 whitespace-nowrap rounded-full bg-fg px-2 text-xs sm:px-4 font-bold text-bg sm:text-sm" href={new URL(locale, appUrl).href} target="_blank" rel="noopener noreferrer">
-            <span className="sr-only sm:not-sr-only">{c.openApp}</span> {external}
+            <span className="sr-only sm:not-sr-only">{content.openApp}</span> {external}
           </a>
           <label className="site-language-select relative flex h-11 shrink-0 items-center gap-1.5 rounded-full bg-surface px-3 text-xs font-bold text-muted transition-colors hover:text-fg focus-within:ring-2 focus-within:ring-focus">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -75,7 +75,7 @@ function Header({ c, locale, slug }: ChromeProps) {
             </svg>
             <span aria-hidden="true">{locale.toUpperCase()}</span>
             <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>
-            <select aria-label={c.language} value={href({ locale, slug })}
+            <select aria-label={content.language} value={href({ locale, slug })}
               onChange={(event) => { window.location.href = event.target.value }}
               className="absolute inset-0 h-full w-full cursor-pointer opacity-0">
               {locales.map((target) => (
@@ -101,7 +101,7 @@ function Header({ c, locale, slug }: ChromeProps) {
       </header>
       <noscript>
         <style>{'.site-language-select { display: none; }'}</style>
-        <nav aria-label={c.language} className="shell flex flex-wrap gap-x-4 gap-y-2 pb-4 text-sm">
+        <nav aria-label={content.language} className="shell flex flex-wrap gap-x-4 gap-y-2 pb-4 text-sm">
           {locales.map((target) => (
             <a key={target} href={href({ locale: target, slug })} lang={target} hrefLang={target} aria-current={target === locale ? 'page' : undefined}>
               {languageNames[target]}
@@ -136,7 +136,7 @@ function HeaderIconLink({ href, label, children }: {
   )
 }
 
-function PageNav({ c, locale, slug, className }: ChromeProps & { className: string }) {
+function PageNav({ content, locale, slug, className }: ChromeProps & { className: string }) {
   const CurrentIcon = pageIcons[slug]
   const links = slugs.map((key) => {
     const Icon = pageIcons[key]
@@ -148,17 +148,17 @@ function PageNav({ c, locale, slug, className }: ChromeProps & { className: stri
         className="flex items-center gap-1.5 py-3.5 text-sm text-muted hover:text-fg aria-[current=page]:text-accent xl:shrink-0 xl:whitespace-nowrap xl:aria-[current=page]:shadow-[inset_0_-2px_var(--color-accent)]"
       >
         <Icon size={16} aria-hidden="true" className="shrink-0" />
-        {c.pages[key].nav ?? c.pages[key].label}
+        {content.pages[key].nav ?? content.pages[key].label}
       </a>
     )
   })
 
   return (
-    <nav aria-label={c.navigation} className={`shell border-line ${className}`}>
+    <nav aria-label={content.navigation} className={`shell border-line ${className}`}>
       <details className="group py-2 xl:hidden">
         <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 rounded-lg border border-line bg-surface px-3 text-sm font-semibold text-fg [&::-webkit-details-marker]:hidden">
           <CurrentIcon size={16} aria-hidden="true" className="shrink-0 text-accent" />
-          {c.pages[slug].label}
+          {content.pages[slug].label}
           <ChevronDown size={16} aria-hidden="true" className="ml-auto shrink-0 group-open:rotate-180" />
         </summary>
         <div className="mt-1 divide-y divide-line px-3">{links}</div>
@@ -168,14 +168,14 @@ function PageNav({ c, locale, slug, className }: ChromeProps & { className: stri
   )
 }
 
-function Hero({ c, page, home }: { c: Copy; page: Page; home: boolean }) {
+function Hero({ content, page, home }: { content: LocalizedContent; page: Page; home: boolean }) {
   return (
     <section
       aria-labelledby="title"
       className={`py-12 sm:pt-20 ${home ? 'grid items-center gap-12 sm:pb-20 md:grid-cols-[1.5fr_1fr]' : 'max-w-212'}`}
     >
       <div className="self-start">
-        <p className="eyebrow">{home ? c.eyebrow : (page.eyebrow ?? page.label)}</p>
+        <p className="eyebrow">{home ? content.eyebrow : (page.eyebrow ?? page.label)}</p>
         <h1 id="title" className="my-5 text-[clamp(2.6rem,5.6vw,4.8rem)] leading-[1.06] font-bold tracking-[-0.065em] text-balance">
           {page.title}
         </h1>
@@ -185,7 +185,7 @@ function Hero({ c, page, home }: { c: Copy; page: Page; home: boolean }) {
             className="mt-4 inline-flex gap-6 rounded-full border border-accent px-6 py-3.5 text-sm font-semibold hover:bg-accent hover:text-bg"
             href={repository}
           >
-            {c.source} {external}
+            {content.source} {external}
           </a>
         )}
       </div>
@@ -208,11 +208,11 @@ function Record() {
   )
 }
 
-function Chapters({ c, locale }: { c: Copy; locale: Locale }) {
-  const chapters = Object.entries(c.pages).filter(([key]) => key !== 'index')
+function Chapters({ content, locale }: { content: LocalizedContent; locale: Locale }) {
+  const chapters = Object.entries(content.pages).filter(([key]) => key !== 'index')
   return (
     <section aria-labelledby="inside" className="my-14">
-      <h2 id="inside" className="heading-2">{c.next}</h2>
+      <h2 id="inside" className="heading-2">{content.next}</h2>
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
         {chapters.map(([key, value], i) => (
           <a key={key} href={href({ locale, slug: key as Slug })} className="card group">
@@ -224,8 +224,8 @@ function Chapters({ c, locale }: { c: Copy; locale: Locale }) {
         ))}
         <a href={openDataHref(locale)} target="_blank" rel="noopener noreferrer" className="card group">
           <span className="eyebrow">Open Data</span>
-          <h3 className="mt-4 mb-2 text-2xl font-bold tracking-tight">{c.openDataTitle}</h3>
-          <p className="text-sm leading-[1.8] text-muted">{c.openDataDescription}</p>
+          <h3 className="mt-4 mb-2 text-2xl font-bold tracking-tight">{content.openDataTitle}</h3>
+          <p className="text-sm leading-[1.8] text-muted">{content.openDataDescription}</p>
           <span aria-hidden="true" className="mt-2 inline-block text-accent transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
         </a>
       </div>
@@ -233,10 +233,10 @@ function Chapters({ c, locale }: { c: Copy; locale: Locale }) {
   )
 }
 
-function Showcase({ c, locale }: { c: Copy; locale: Locale }) {
+function Showcase({ content, locale }: { content: LocalizedContent; locale: Locale }) {
   return (
     <section aria-labelledby="showcase" className="my-14">
-      <h2 id="showcase" className="eyebrow">{c.examples}</h2>
+      <h2 id="showcase" className="eyebrow">{content.examples}</h2>
       <div className="mt-4 grid gap-4 md:grid-cols-3">
         {instruments.map((instrument) => (
           <figure key={instrument.slug} className="rounded-xl border border-line bg-surface p-5">
@@ -248,7 +248,7 @@ function Showcase({ c, locale }: { c: Copy; locale: Locale }) {
                 className="ml-auto inline-block py-1 text-fg underline underline-offset-4"
                 href={repositoryUrl(repository, instrumentBrief(instrument.slug))}
               >
-                {c.brief}<span className="sr-only"> ({instrument.name[locale]})</span> {external}
+                {content.brief}<span className="sr-only"> ({instrument.name[locale]})</span> {external}
               </a>
             </figcaption>
           </figure>
@@ -258,12 +258,12 @@ function Showcase({ c, locale }: { c: Copy; locale: Locale }) {
   )
 }
 
-function Resources({ c, page, openData }: { c: Copy; page: Page; openData?: string }) {
+function Resources({ content, page, openData }: { content: LocalizedContent; page: Page; openData?: string }) {
   const links: [href: string, title: string][] = page.resources.map(([path, title]) => [/^https?:/.test(path) ? path : repositoryUrl(repository, path), title])
-  if (openData) links.unshift([openData, c.openDataLink])
+  if (openData) links.unshift([openData, content.openDataLink])
   return (
     <aside aria-labelledby="resources" className="my-12 border-l-3 border-accent bg-surface px-5 py-6 sm:px-8">
-      <h2 id="resources" className="heading-2">{c.resources}</h2>
+      <h2 id="resources" className="heading-2">{content.resources}</h2>
       <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
         {links.map(([link, title]) => (
           <li key={link}>
@@ -278,14 +278,14 @@ function Resources({ c, page, openData }: { c: Copy; page: Page; openData?: stri
           </li>
         ))}
       </ul>
-      <p className="mt-2 text-xs text-muted">{c.docsNote}</p>
+      <p className="mt-2 text-xs text-muted">{content.docsNote}</p>
     </aside>
   )
 }
 
 /** Document metadata, rendered into <head> by the prerender step. */
 export function Head({ locale, slug }: Route) {
-  const page = copy[locale].pages[slug]
+  const page = contentByLocale[locale].pages[slug]
   const url = (target: Locale) => `${siteUrl}/${routePath({ locale: target, slug })}`
   const title = `${page.label} · Soundlines`
   return (

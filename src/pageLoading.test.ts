@@ -225,7 +225,7 @@ describe('page loading lifecycle', () => {
     expect(style.width).toBe('')
   })
 
-  it('fades out without docking on mobile, where the record sits behind the copy', () => {
+  it('fades out without docking on mobile, where the record sits behind the text', () => {
     const { animate } = mockLandingVinyl('0.35')
     vi.stubGlobal('window', Object.assign(events, {
       matchMedia: (query: string) => ({ matches: query.includes('max-width: 42rem') }),

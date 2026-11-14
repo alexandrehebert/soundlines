@@ -107,16 +107,16 @@ describe('Open Data UI', () => {
   })
 
   it.each(LOCALES)('renders graph contribution options in %s', async (locale) => {
-    const copy = catalogueFor(locale)
+    const catalogue = catalogueFor(locale)
     const html = render(await ContributionPage({ locale }), locale)
-    expect(html).toContain(copy.openData.contribute.editTitle)
-    expect(html).toContain(copy.openData.contribute.addTitle)
-    expect(html).toContain(copy.feedback.edit)
-    expect(html).toContain(copy.openData.contribute.findEntry)
+    expect(html).toContain(catalogue.openData.contribute.editTitle)
+    expect(html).toContain(catalogue.openData.contribute.addTitle)
+    expect(html).toContain(catalogue.feedback.edit)
+    expect(html).toContain(catalogue.openData.contribute.findEntry)
     expect(html).toContain(`href="/${locale}"`)
     expect(html).toContain(`${REPOSITORY_URL}/issues/new?template=graph-contribution.yml`)
     expect(html).toContain(`${REPOSITORY_URL}/blob/main/docs/DATA.md#graph-contribution-workflow`)
-    expect(html).toContain(copy.openData.contribute.githubNote)
+    expect(html).toContain(catalogue.openData.contribute.githubNote)
   })
 
   it('keeps the contribution section across footer language links', () => {

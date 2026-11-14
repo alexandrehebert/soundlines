@@ -136,7 +136,7 @@ export function Soundtrails({ trails, ref, headingLevel = 2 }: { trails: Availab
   const Heading = headingLevel === 3 ? 'h3' : 'h2'
   const StopHeading = headingLevel === 3 ? 'h4' : 'h3'
   const { locale } = useExplorer()
-  const t = useTranslations('homeCopy.soundtrails')
+  const t = useTranslations('homeContent.soundtrails')
   const tAudio = useTranslations('audio')
   const tRoot = useTranslations()
   const isMobile = useIsMobile()

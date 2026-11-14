@@ -35,7 +35,7 @@ export function socialMetadata(
   const node = selectedId ? nodeById.get(selectedId) : undefined
   const locale = requestedLocale ?? localeFromPath(url.pathname) ?? DEFAULT_LOCALE
   const labels = graphLabels(locale)
-  const copy = catalogueFor(locale).social
+  const social = catalogueFor(locale).social
   const tSocial = createTranslator({ locale, messages: catalogueFor(locale), namespace: 'social' })
   const canonical = explorerUrl(location, locale, url.origin)
 
@@ -51,6 +51,6 @@ export function socialMetadata(
     description: shortenDescription(description),
     url: canonical.href,
     image: new URL('/social-card.png', canonical).href,
-    imageAlt: copy.imageAlt,
+    imageAlt: social.imageAlt,
   }
 }

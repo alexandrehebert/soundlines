@@ -37,7 +37,7 @@
     "appBody": "### ¿Qué te gustaría compartir?\n\n\n### Página o pasos para reproducir el problema, si procede\n"
   },
   "tagline": "un atlas de genealogías musicales",
-  "homeCopy": {
+  "homeContent": {
     "theme": "Tema",
     "lightTheme": "Tema claro",
     "switchToLight": "Dar la vuelta a la cara B · Tema claro",

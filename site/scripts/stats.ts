@@ -1,4 +1,4 @@
-// Project figures quoted by the companion, computed from the repository at build time so the copy never goes stale.
+// Project figures quoted by the companion, computed from the repository at build time so the published figures stay current.
 import { readdirSync, readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 

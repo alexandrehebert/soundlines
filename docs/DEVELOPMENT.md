@@ -80,7 +80,7 @@ provides links without JavaScript; the app link opens the selected language.
 | --- | --- |
 | [site/src/content.ts](../site/src/content.ts) | Page, workflow and example types; resolves `{figure}` placeholders |
 | [site/src/locales/](../site/src/locales/) | English, French, German, Italian and Spanish page content and interface text |
-| [site/scripts/stats.ts](../site/scripts/stats.ts) | Figures quoted in the copy, computed at build time from the graph, evidence, assets, agents and skills |
+| [site/scripts/stats.ts](../site/scripts/stats.ts) | Figures shown on the companion, computed at build time from the graph, evidence, assets, agents and skills |
 | [site/src/components/](../site/src/components/) | Page layout, workflow diagrams, examples and the artwork and loop samples taken from `public/` |
 | [site/src/components/Previews.tsx](../site/src/components/Previews.tsx) | Small preview of what each workflow step produces, ending with the real result (app screenshot, artwork, loop) |
 | [site/src/components/blueprint.ts](../site/src/components/blueprint.ts) | Extracts the saxophone's generated outline, canvas and curve handles for the vector sketch |
@@ -100,7 +100,7 @@ and played color follow `currentTime / duration`, not an independent animation t
 The artwork sketch uses the generated saxophone icon's shared outline and
 first curve; its dimensions are SVG drawing units, not the instrument's physical size.
 
-Update all five locales when changing copy. Types and tests check that workflow
+Update all five locales when changing localized content. Types and tests check that workflow
 steps, actors, output kinds, preview kinds and return paths match across locales. Write
 counts as placeholders such as `{connections}` instead of literal numbers, so
 they follow the data. Keep workflow claims and examples aligned with the

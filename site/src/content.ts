@@ -73,7 +73,7 @@ export type Page = {
 
 export type StatKey = keyof typeof __SITE_STATS__
 
-export type Copy = {
+export type LocalizedContent = {
   skip: string
   navigation: string
   language: string
@@ -118,7 +118,7 @@ const fillAll = <T,>(value: T, locale: Locale): T => {
   return value
 }
 
-export const copy: Record<Locale, Copy> = {
+export const contentByLocale: Record<Locale, LocalizedContent> = {
   en: fillAll(en, 'en'),
   fr: fillAll(fr, 'fr'),
   de: fillAll(de, 'de'),

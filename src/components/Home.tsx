@@ -71,7 +71,7 @@ function WidgetNav({ nextLabel, onPrevious, onNext, previousDisabled = false }: 
   onNext: () => void
   previousDisabled?: boolean
 }) {
-  const tHome = useTranslations('homeCopy')
+  const tHome = useTranslations('homeContent')
   return (
     <div className="discovery-widget-nav">
       <button type="button" className="discovery-widget-action" onClick={onPrevious} disabled={previousDisabled}>
@@ -94,7 +94,7 @@ function SpotlightWidget({ title, icon: Icon, picks, day, relationship, nextLabe
   scrollReveal: typeof reveal | undefined
 }) {
   const { index } = useExplorer()
-  const tHome = useTranslations('homeCopy')
+  const tHome = useTranslations('homeContent')
   const headingId = useId()
   const [selection, setSelection] = useState({ day, position: 0 })
   const position = selection.day === day && picks.length > 0 ? selection.position % picks.length : 0
@@ -158,7 +158,7 @@ type SpotlightSelections = { artists: GraphNode[]; instruments: GraphNode[]; day
 
 function ConnectionWidget({ scrollReveal }: { scrollReveal: ScrollReveal }) {
   const { index, locale } = useExplorer()
-  const tHome = useTranslations('homeCopy')
+  const tHome = useTranslations('homeContent')
   const tConnectionNotes = useTranslations('connectionNotes')
   const labels = graphLabels(locale)
   const reduceMotion = useReducedMotion()
@@ -219,7 +219,7 @@ function shuffled<T>(items: readonly T[]): T[] {
 
 function ListeningWidget({ scrollReveal }: { scrollReveal: ScrollReveal }) {
   const { index } = useExplorer()
-  const tHome = useTranslations('homeCopy')
+  const tHome = useTranslations('homeContent')
   const jukebox = useTranslations('jukebox')
   const [jukeboxOpen, setJukeboxOpen] = useState(false)
   const genres = useMemo(() => {
@@ -306,7 +306,7 @@ function MomentDetails({ event }: { event: GraphNode }) {
 
 function MomentsWidget({ events, wide = false, scrollReveal }: { events: GraphNode[]; wide?: boolean; scrollReveal: ScrollReveal }) {
   const { locale } = useExplorer()
-  const tHome = useTranslations('homeCopy')
+  const tHome = useTranslations('homeContent')
   if (events.length === 0) return null
 
   return (
@@ -341,7 +341,7 @@ function RecentWidget({ types, headingId = 'recent-heading', scrollReveal }: {
   scrollReveal: ScrollReveal
 }) {
   const { index, locale } = useExplorer()
-  const tHome = useTranslations('homeCopy')
+  const tHome = useTranslations('homeContent')
   const labels = graphLabels(locale)
   const dateFormatter = useMemo(() => new Intl.DateTimeFormat(locale, { dateStyle: 'medium', timeZone: 'UTC' }), [locale])
   const typeKey = types?.join(',')
@@ -395,19 +395,19 @@ function RecentWidget({ types, headingId = 'recent-heading', scrollReveal }: {
 }
 
 function ArtistSpotlight({ picks, day, scrollReveal }: SpotlightProps) {
-  const tHome = useTranslations('homeCopy')
+  const tHome = useTranslations('homeContent')
   return <SpotlightWidget title={tHome('artistSpotlight')} icon={Users} picks={picks} day={day} relationship="key_artist_of" nextLabel={tHome('nextArtist')} scrollReveal={scrollReveal} />
 }
 
 function InstrumentSpotlight({ picks, day, scrollReveal }: SpotlightProps) {
-  const tHome = useTranslations('homeCopy')
+  const tHome = useTranslations('homeContent')
   return <SpotlightWidget title={tHome('instrumentSpotlight')} icon={Guitar} picks={picks} day={day} relationship="featured_in" nextLabel={tHome('nextInstrument')} scrollReveal={scrollReveal} />
 }
 
 function ChronologiesSection({ scrollReveal }: { scrollReveal: ScrollReveal }) {
-  const tHome = useTranslations('homeCopy')
+  const tHome = useTranslations('homeContent')
   const tViews = useTranslations('views')
-  const tDestinations = useTranslations('homeCopy.destinations')
+  const tDestinations = useTranslations('homeContent.destinations')
   const [timelinePreviewView, setTimelinePreviewView] = useState<(typeof TIMELINE_DESTINATIONS)[number]['view']>('genre')
 
   return (
@@ -477,7 +477,7 @@ function CatalogueSection({ ref, scrollReveal, spotlights }: {
   scrollReveal: ScrollReveal
   spotlights: SpotlightSelections
 }) {
-  const tHome = useTranslations('homeCopy')
+  const tHome = useTranslations('homeContent')
   const historyPicks = useHistoryPicks()
   const hasSpotlights = spotlights.artists.length > 0 || spotlights.instruments.length > 0
 
@@ -513,7 +513,7 @@ function TopicSection({ id, title, intro, views, scrollReveal, children, ref }: 
   children: ReactNode
   ref?: Ref<HTMLElement>
 }) {
-  const tTopics = useTranslations('homeCopy.topics.timelines')
+  const tTopics = useTranslations('homeContent.topics.timelines')
   return (
     <section ref={ref} id={id} className="discovery-topic" aria-labelledby={`${id}-heading`}>
       <motion.div {...scrollReveal} className="discovery-topic-header">
@@ -541,7 +541,7 @@ function TopicSections({ ref, soundtrails, soundtrailsRef, scrollReveal, spotlig
   scrollReveal: ScrollReveal
   spotlights: SpotlightSelections
 }) {
-  const tTopics = useTranslations('homeCopy.topics')
+  const tTopics = useTranslations('homeContent.topics')
   const historyPicks = useHistoryPicks()
 
   return (
@@ -583,7 +583,7 @@ export function Home() {
   const { index } = useExplorer()
   const initialDay = utcDay(useNow().getTime())
   const day = useSyncExternalStore(subscribeToUtcDay, currentUtcDay, () => initialDay)
-  const tHome = useTranslations('homeCopy')
+  const tHome = useTranslations('homeContent')
   const reduceMotion = useReducedMotion()
   const widgetsRef = useRef<HTMLElement>(null)
   const soundtrailsRef = useRef<HTMLElement>(null)

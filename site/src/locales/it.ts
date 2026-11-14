@@ -1,7 +1,7 @@
 import { storybookUrl } from '../links.ts'
-import type { Copy } from '../content.ts'
+import type { LocalizedContent } from '../content.ts'
 
-export const it: Copy = {
+export const it: LocalizedContent = {
   skip: 'Vai al contenuto', navigation: 'Dietro le quinte', language: 'Lingua', openApp: 'Apri Soundlines',
   openDataTitle: 'Open Data è nell’app Soundlines',
   openDataDescription: 'Esplora il set di dati di Soundlines nell’app.',

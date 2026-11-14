@@ -37,7 +37,7 @@
     "appBody": "### Que souhaitez-vous nous dire ?\n\n\n### Page ou étapes pour reproduire le problème, le cas échéant\n"
   },
   "tagline": "un atlas des lignées musicales",
-  "homeCopy": {
+  "homeContent": {
     "theme": "Thème",
     "lightTheme": "Thème clair",
     "switchToLight": "Retourner à la face B · Thème clair",

@@ -1,6 +1,6 @@
 import type { CSSProperties, ReactNode } from 'react'
 import { PreviewView } from './Previews.tsx'
-import { actors, fill, type Actor, type Copy, type Example, type Flow, type FlowLoop, type Locale, type Output, type Page } from '../content.ts'
+import { actors, fill, type Actor, type LocalizedContent, type Example, type Flow, type FlowLoop, type Locale, type Output, type Page } from '../content.ts'
 
 const actorColor = (actor: Actor) => ({ '--actor': `var(--color-${actor})` }) as CSSProperties
 
@@ -71,20 +71,20 @@ function Icon({ children, className = 'size-4' }: { children: ReactNode; classNa
 
 const ActorIcon = ({ actor, className }: { actor: Actor; className?: string }) => <Icon className={className}>{icons[actor]}</Icon>
 
-export function Legend({ c, flows }: { c: Copy; flows: Flow[] }) {
+export function Legend({ content, flows }: { content: LocalizedContent; flows: Flow[] }) {
   const usedActors = new Set(flows.flatMap((flow) => flow.steps.map((step) => step.actor)))
   if (usedActors.size === 0) return null
 
   return (
     <div className="mt-4 border-y border-line py-5">
       <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-muted">
-        <span className="eyebrow text-muted">{c.legend}</span>
+        <span className="eyebrow text-muted">{content.legend}</span>
         {actors.filter((actor) => usedActors.has(actor)).map((actor) => (
           <span key={actor} className="inline-flex items-center gap-1.5" style={actorColor(actor)}>
             <span className="grid size-6 place-items-center rounded-full border border-(--actor) text-(--actor)">
               <ActorIcon actor={actor} className="size-3.5" />
             </span>
-            {c.actors[actor]}
+            {content.actors[actor]}
           </span>
         ))}
       </div>
@@ -116,7 +116,7 @@ function LoopLanes({ loops, step, row }: { loops: FlowLoop[]; step: number; row:
 }
 
 /** A workflow drawn as a vertical metro line; what each step produces sits on the arrow to the next. */
-export function FlowDiagram({ c, flow, id, locale }: { c: Copy; flow: Flow; id: string; locale: Locale }) {
+export function FlowDiagram({ content, flow, id, locale }: { content: LocalizedContent; flow: Flow; id: string; locale: Locale }) {
   const loops = [...(flow.loops ?? [])].sort((a, b) => loopEnd(a) - a.to - (loopEnd(b) - b.to))
   return (
     <section aria-labelledby={id} className="my-14">
@@ -136,7 +136,7 @@ export function FlowDiagram({ c, flow, id, locale }: { c: Copy; flow: Flow; id: 
                 <span className="flow-rail" />
               </span>
               <div className="pb-4">
-                <p className="text-[0.7rem] font-semibold tracking-widest text-(--actor) uppercase">{c.actors[step.actor]}</p>
+                <p className="text-[0.7rem] font-semibold tracking-widest text-(--actor) uppercase">{content.actors[step.actor]}</p>
                 <h3 className="mt-1 font-semibold leading-snug">{step.title}</h3>
                 <p className="mt-1.5 text-sm leading-[1.7] text-muted">{step.text}</p>
               </div>
@@ -149,7 +149,7 @@ export function FlowDiagram({ c, flow, id, locale }: { c: Copy; flow: Flow; id: 
               </span>
               <div className="grid min-w-0 justify-items-start gap-2.5 pt-1">
                 <p className="flex flex-wrap items-baseline gap-x-2 text-sm">
-                  <span className={`text-[0.65rem] font-semibold tracking-widest uppercase ${final ? 'text-accent' : 'text-muted'}`}>{final ? c.result : c.produces}</span>
+                  <span className={`text-[0.65rem] font-semibold tracking-widest uppercase ${final ? 'text-accent' : 'text-muted'}`}>{final ? content.result : content.produces}</span>
                   <span className="font-medium">{step.output[1]}</span>
                 </p>
                 <PreviewView preview={step.preview} locale={locale} final={final} />
@@ -160,7 +160,7 @@ export function FlowDiagram({ c, flow, id, locale }: { c: Copy; flow: Flow; id: 
                       <span aria-hidden="true" className="text-accent">↺</span>
                       {loop.label}
                       <span className="font-medium text-accent">
-                        → {c.backTo} {loop.to}
+                        → {content.backTo} {loop.to}
                       </span>
                     </p>
                   ))}
@@ -206,10 +206,10 @@ export function Overview({ overview }: { overview: NonNullable<Page['overview']>
   )
 }
 
-export function Stats({ c, locale }: { c: Copy; locale: Locale }) {
+export function Stats({ content, locale }: { content: LocalizedContent; locale: Locale }) {
   return (
     <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-3 lg:grid-cols-5">
-      {c.stats.map(([key, label]) => (
+      {content.stats.map(([key, label]) => (
         <div key={key} className="flex flex-col bg-surface p-5">
           <dt className="mt-1 text-sm text-muted">{label}</dt>
           <dd className="order-first text-3xl font-bold tracking-tight text-fg">{fill(`{${key}}`, locale)}</dd>
@@ -219,10 +219,10 @@ export function Stats({ c, locale }: { c: Copy; locale: Locale }) {
   )
 }
 
-export function ExampleCard({ c, example, href }: { c: Copy; example: Example; href: string }) {
+export function ExampleCard({ content, example, href }: { content: LocalizedContent; example: Example; href: string }) {
   return (
     <section aria-labelledby="example" className="my-14 max-w-212 rounded-2xl border border-accent/50 bg-surface p-6 sm:p-8">
-      <p className="eyebrow">{c.example}</p>
+      <p className="eyebrow">{content.example}</p>
       <h2 id="example" className="heading-2 mt-2">{example.title}</h2>
       <p className="mt-2 text-muted">{example.intro}</p>
       <dl className="mt-6 grid gap-x-6 gap-y-3 border-t border-line pt-6 text-sm sm:grid-cols-[9rem_1fr]">

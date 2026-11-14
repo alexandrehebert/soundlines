@@ -37,7 +37,7 @@
     "appBody": "### What would you like to share?\n\n\n### Page or steps to reproduce, if relevant\n"
   },
   "tagline": "an atlas of musical lineages",
-  "homeCopy": {
+  "homeContent": {
     "theme": "Theme",
     "lightTheme": "Light theme",
     "switchToLight": "Flip to Side B · Light theme",

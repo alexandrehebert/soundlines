@@ -18,7 +18,7 @@
   background: var(--home-hero);
 }
 
-.discovery-hero-copy { padding: clamp(1.5rem, 5vw, 4rem); padding-right: 0; }
+.discovery-hero-text { padding: clamp(1.5rem, 5vw, 4rem); padding-right: 0; }
 
 .discovery-kicker, .discovery-record-caption {
   color: var(--home-accent);
@@ -722,7 +722,7 @@
 
 @media (max-width: 42rem) {
   .discovery-hero { grid-template-columns: minmax(0, 1fr); min-height: 0; }
-  .discovery-hero-copy { padding: 2rem 1.25rem 1.5rem; }
+  .discovery-hero-text { padding: 2rem 1.25rem 1.5rem; }
   .discovery-intro { max-width: 21rem; }
   .discovery-actions { position: relative; z-index: 2; min-height: 3rem; padding-right: 7.5rem; }
   .discovery-turntable-deck { padding: 0 1.25rem 1.5rem; }
