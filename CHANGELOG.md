@@ -12,6 +12,17 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-13 — Add five brass instruments to the atlas
+
+[5845dcb6](https://github.com/alexandrehebert/soundlines/commit/5845dcb6d49b8b3e278e6726f010ac1f76b840f3)
+
+Graph nodes: +5 / ~0 / -0.
+
+Graph edges: +5 / ~0 / -0.
+
+- graph: 17 changed files
+- artwork: 26 changed files
+
 ## 2026-11-13 — Keep Explorer statistics accessible at tablet widths
 
 [2c6a896e](https://github.com/alexandrehebert/soundlines/commit/2c6a896e1a092a133c89dfd02e2dd71416be4537)

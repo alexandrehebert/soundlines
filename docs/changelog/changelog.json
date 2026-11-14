@@ -2,6 +2,303 @@
   "version": 4,
   "entries": [
     {
+      "commit": "5845dcb6d49b8b3e278e6726f010ac1f76b840f3",
+      "parent": "d3ea46c98dd80eaef0f2ce21db8ca5a04de6153d",
+      "date": "2026-11-13T23:15:41-05:00",
+      "subject": "Add five brass instruments to the atlas",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "genre:baroque",
+              "name": "Baroque music",
+              "status": "updated"
+            },
+            {
+              "id": "genre:jazz",
+              "name": "Jazz",
+              "status": "updated"
+            },
+            {
+              "id": "genre:new-orleans-jazz",
+              "name": "New Orleans jazz",
+              "status": "updated"
+            },
+            {
+              "id": "genre:renaissance",
+              "name": "Renaissance music",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:cornet",
+              "name": "Cornet",
+              "status": "added"
+            },
+            {
+              "id": "instrument:cornetto",
+              "name": "Cornetto",
+              "status": "added"
+            },
+            {
+              "id": "instrument:flugelhorn",
+              "name": "Flugelhorn",
+              "status": "added"
+            },
+            {
+              "id": "instrument:natural-trumpet",
+              "name": "Natural trumpet",
+              "status": "added"
+            },
+            {
+              "id": "instrument:sousaphone",
+              "name": "Sousaphone",
+              "status": "added"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "items": [
+            {
+              "id": "instrument:cornet",
+              "name": "Cornet",
+              "status": "added"
+            },
+            {
+              "id": "instrument:cornetto",
+              "name": "Cornetto",
+              "status": "added"
+            },
+            {
+              "id": "instrument:flugelhorn",
+              "name": "Flugelhorn",
+              "status": "added"
+            },
+            {
+              "id": "instrument:natural-trumpet",
+              "name": "Natural trumpet",
+              "status": "added"
+            },
+            {
+              "id": "instrument:sousaphone",
+              "name": "Sousaphone",
+              "status": "added"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/audits/graph-edge-coverage.csv"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__cornet-new-orleans-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__cornetto-renaissance.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__flugelhorn-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__natural-trumpet-baroque.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__sousaphone-new-orleans-jazz.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/cornet.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/cornetto.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/flugelhorn.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/natural-trumpet.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/sousaphone.md"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/review-status.json"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "files": [
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/cornet.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/cornetto.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/flugelhorn.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/natural-trumpet.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/sousaphone.json"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/cornet.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/cornetto.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/flugelhorn.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/natural-trumpet.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/sousaphone.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/cornet.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/cornetto.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/flugelhorn.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/natural-trumpet.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/sousaphone.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/cornet.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/cornetto.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/flugelhorn.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/natural-trumpet.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/sousaphone.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/cornet.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/cornetto.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/flugelhorn.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/natural-trumpet.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/sousaphone.svg"
+            },
+            {
+              "status": "M",
+              "path": "scripts/artwork/generate-instrument-artwork.py"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [
+            "instrument:cornet",
+            "instrument:cornetto",
+            "instrument:flugelhorn",
+            "instrument:natural-trumpet",
+            "instrument:sousaphone"
+          ],
+          "updated": [],
+          "removed": []
+        },
+        "edges": {
+          "added": [
+            "featured:cornet-new-orleans-jazz",
+            "featured:cornetto-renaissance",
+            "featured:flugelhorn-jazz",
+            "featured:natural-trumpet-baroque",
+            "featured:sousaphone-new-orleans-jazz"
+          ],
+          "updated": [],
+          "removed": []
+        }
+      }
+    },
+    {
       "commit": "2c6a896e1a092a133c89dfd02e2dd71416be4537",
       "parent": "78ba80647a3eab4330d22f4fc78798652aee5f96",
       "date": "2026-11-13T23:02:31-05:00",
