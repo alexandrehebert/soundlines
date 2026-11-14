@@ -2,6 +2,25 @@
   "version": 4,
   "entries": [
     {
+      "commit": "d4e7cd40d863ec8e9fd6e778ace3bc4447cf50e1",
+      "parent": "d1f91925b4405cdcd5dc9620ec91ff7bc21397b2",
+      "date": "2026-11-13T22:02:38-05:00",
+      "subject": "Open entry details from catalogue statistics",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "src/components/dataset/DatasetStats.tsx"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "cdf3c4d56c0407a8d2dd5f7579a2232bb5686bd4",
       "parent": "6ed15cf2f2499d48ee8ce8305771867f1bbf0bd5",
       "date": "2026-11-13T21:55:27-05:00",

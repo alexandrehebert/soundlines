@@ -12,6 +12,12 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-13 — Open entry details from catalogue statistics
+
+[d4e7cd40](https://github.com/alexandrehebert/soundlines/commit/d4e7cd40d863ec8e9fd6e778ace3bc4447cf50e1)
+
+- app: 1 changed file
+
 ## 2026-11-13 — Give the Soundlines favicon a larger waveform
 
 [cdf3c4d5](https://github.com/alexandrehebert/soundlines/commit/cdf3c4d56c0407a8d2dd5f7579a2232bb5686bd4)
