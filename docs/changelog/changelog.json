@@ -2,6 +2,52 @@
   "version": 4,
   "entries": [
     {
+      "commit": "85d2d544327d2525876176eb83ee87b57d3764d7",
+      "parent": "5e0eb462e9be9133e333d3dfdc7bac12292ec5fe",
+      "date": "2026-11-14T08:51:36-05:00",
+      "subject": "Correct bassoon bocal and reed direction",
+      "merge": false,
+      "entities": [
+        {
+          "category": "artwork",
+          "items": [
+            {
+              "id": "instrument:bassoon",
+              "name": "Bassoon",
+              "status": "updated"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "artwork",
+          "files": [
+            {
+              "status": "M",
+              "path": "public/instrument-avatars/bassoon.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-banners/bassoon.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-header-backgrounds/bassoon.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-icons/bassoon.svg"
+            },
+            {
+              "status": "M",
+              "path": "scripts/artwork/generate-instrument-artwork.py"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "5e0eb462e9be9133e333d3dfdc7bac12292ec5fe",
       "parent": "93b303c3950f3149460deae0661703ac246646da",
       "date": "2026-11-13T23:46:22-05:00",
