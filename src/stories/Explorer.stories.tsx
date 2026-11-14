@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, fireEvent, userEvent, waitFor, within } from 'storybook/test'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
-import { Explorer } from '../App.tsx'
+import { Explorer } from '../Explorer.tsx'
 
 const meta = {
   title: 'Screens/Explorer',

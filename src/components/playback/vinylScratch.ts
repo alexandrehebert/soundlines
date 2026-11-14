@@ -1,4 +1,4 @@
-import { publicAsset } from '../publicAsset.ts'
+import { publicAsset } from '../../publicAsset.ts'
 
 /** Degrees per second of a record spinning at 33⅓ rpm, i.e. normal playback speed. */
 export const NORMAL_SPEED_DEG_PER_SEC = 200

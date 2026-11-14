@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, fireEvent, waitFor } from 'storybook/test'
-import { Turntable } from '../components/Turntable.tsx'
+import { Turntable } from '../components/playback/Turntable.tsx'
 import { useColorTheme } from '../useColorTheme.ts'
 
 function InteractiveTurntable() {

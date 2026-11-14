@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect } from 'storybook/test'
-import { VinylRecord } from '../components/VinylRecord.tsx'
+import { VinylRecord } from '../components/playback/VinylRecord.tsx'
 
 const meta = {
   title: 'Components/Vinyl record',

@@ -1,4 +1,4 @@
-import { OpenDataGraph } from '../../../../src/components/OpenDataGraph.tsx'
+import { OpenDataGraph } from '../../../../src/components/open-data/OpenDataGraph.tsx'
 import { generateOpenDataMetadata, openDataLocale, type OpenDataPageProps } from '../../../../src/i18n/openDataPage.ts'
 
 export function generateMetadata(props: OpenDataPageProps) {

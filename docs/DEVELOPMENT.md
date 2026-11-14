@@ -10,9 +10,10 @@ audio tooling, see the [installation guide](./INSTALLATION.md).
 ## Commands
 
 ```bash
-npm run dev
+npm run dev              # Next.js defaults to http://localhost:3000
 npm test
 npm run lint
+npx tsc --noEmit -p tsconfig.build.json
 npm run build
 npm run start
 npm run storybook
@@ -38,9 +39,10 @@ Compose serves the app at `http://localhost:5173`, Storybook at
 `http://localhost:5174/soundlines/` on the local machine. Set `STORYBOOK_PORT`
 or `SITE_PORT` to change those host ports, for example
 `STORYBOOK_PORT=6010 docker compose up -d`. The services use
-separate dependency volumes so their installs do not interrupt one another.
+Node 26 and separate dependency volumes. The containers install their own
+dependencies. Run Git-based graph tooling and Python artwork checks on the host.
 Compose also uses these host ports for the links between the explorer, companion
-and Storybook, including the MCP URL shown in the companion. Recreate the
+and Storybook. Recreate the
 services with `docker compose up -d` after changing either port. The
 container image does not include Git, so Storybook's optional Git-based change
 detection is unavailable; component hot reload still works.
@@ -77,7 +79,7 @@ provides links without JavaScript; the app link opens the selected language.
 | Path | Purpose |
 | --- | --- |
 | [site/src/content.ts](../site/src/content.ts) | Page, workflow and example types; resolves `{figure}` placeholders |
-| [site/src/copy/](../site/src/copy/) | English, French, German, Italian and Spanish copy for every page |
+| [site/src/locales/](../site/src/locales/) | English, French, German, Italian and Spanish page content and interface text |
 | [site/scripts/stats.ts](../site/scripts/stats.ts) | Figures quoted in the copy, computed at build time from the graph, evidence, assets, agents and skills |
 | [site/src/components/](../site/src/components/) | Page layout, workflow diagrams, examples and the artwork and loop samples taken from `public/` |
 | [site/src/components/Previews.tsx](../site/src/components/Previews.tsx) | Small preview of what each workflow step produces, ending with the real result (app screenshot, artwork, loop) |
@@ -98,15 +100,14 @@ and played color follow `currentTime / duration`, not an independent animation t
 The artwork sketch uses the generated saxophone icon's shared outline and
 first curve; its dimensions are SVG drawing units, not the instrument's physical size.
 
-Update both languages when changing copy; the types and tests reject missing
-fields and require the same workflow steps, actors, output kinds, preview kinds and loops (the steps a failure returns to) (what each
-step produces, shown on the arrow to the next step) in each language. Write
+Update all five locales when changing copy. Types and tests check that workflow
+steps, actors, output kinds, preview kinds and return paths match across locales. Write
 counts as placeholders such as `{connections}` instead of literal numbers, so
 they follow the data. Keep workflow claims and examples aligned with the
 technical guides; documentation changes are not automatically imported.
 
 ```bash
-npm run dev:site       # live-reloading companion at http://localhost:5173/soundlines/
+npm run dev:site       # native companion at the URL Vite prints, under /soundlines/
 npm run test:site      # type-check and tests
 npm run build:site     # prerendered site in the ignored _site/ directory
 npm run preview:site   # serve _site/ under /soundlines/ (http://localhost:4173/soundlines/)
@@ -115,8 +116,7 @@ npm run preview:site   # serve _site/ under /soundlines/ (http://localhost:4173/
 The build fails if a page links to a missing page, asset or anchor. Only the
 logo, selected instrument examples and the landing hip-hop loop are bundled,
 not the full graph, audio library, or Next.js build; the graph contributes only
-its computed figures. The changelog adds compact commit summaries to the bundle
-and a separate, downloadable full JSON history.
+its computed figures.
 
 To enable publication once, open the repository's **Settings → Pages** and set
 **Build and deployment → Source** to **GitHub Actions**. Merge the changes to
@@ -133,35 +133,16 @@ update that file, the README links, and this guide.
 
 ## Changelog
 
-The companion's **Changelog** navigation item and overview card open
-`/soundlines/<locale>/changelog/` in every supported language. The page includes
-an asset-first view of graph, preview, loop and instrument artwork updates.
-Each update lists affected entities by readable name, including both endpoints
-of changed graph relationships. Entity names/IDs, commit messages and hashes
-are searchable. The category filter also exposes all repository changes.
-Entity chips are colored green (added), amber (updated) or red (removed), and
-also carry a `+`, `~` or `−` mark, a legend and a localized screen-reader
-label, so the status never relies on color alone.
-Commit messages, hashes, file counts and graph node/connection counts
-(added / updated / removed) are tucked into expandable commit details; the full
-JSON download is under the history information disclosure.
-Original commit messages and historical entity names are not translated.
+The app displays asset history under `/<locale>/data/changelog`.
 
-Updates are paginated in groups of 10. Default asset pages are prerendered at
-`/soundlines/<locale>/changelog/` and
-`/soundlines/<locale>/changelog/page/<number>/`, so the complete asset history
-and pagination links work without JavaScript. Language switching preserves the
-page number. Search and category filters paginate their results in the browser,
-resetting to page 1 when changed. Every affected name remains accessible in the
-HTML; long lists show the first eight names and expand to reveal the rest.
-
-The tracked [CHANGELOG.md](../CHANGELOG.md) and
-[docs/changelog.json](./changelog.json) are generated deterministically:
+The generator produces [CHANGELOG.md](../CHANGELOG.md),
+[docs/changelog/changelog.json](./changelog/changelog.json), and
+[public/open-data-changelog.json](../public/open-data-changelog.json).
 
 ```bash
-npm run changelog             # regenerate both files from committed history
-npm run changelog -- --check  # fail if either file differs from that history
-npm run test:changelog        # isolated fixture repositories; no network or AI
+npm run changelog             # regenerate all outputs from committed history
+npm run changelog -- --check  # verify the tracked outputs against committed history
+npm run test:changelog        # test the generator with fixture repositories
 ```
 
 The [generator](../scripts/changelog/generate.ts) traverses all commits reachable
@@ -206,12 +187,6 @@ checks. Repository rules must permit `github-actions[bot]` to push these
 generated-only commits to `main`; otherwise the push fails visibly and a
 maintainer must regenerate and commit them through the normal PR process.
 No AI credentials, external service or additional dependency is required.
-
-The companion publication workflow independently regenerates from its own full
-checkout before testing and building, so publication does not wait for the bot
-commit (GitHub does not trigger another workflow for a `GITHUB_TOKEN` push).
-Local site builds use the tracked snapshot and do not require Git in Docker;
-run regeneration on the host when a newer local history should be displayed.
 
 ## Storybook
 

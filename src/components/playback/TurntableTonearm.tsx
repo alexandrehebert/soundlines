@@ -1,5 +1,5 @@
 import { useId } from 'react'
-import './Home.css'
+import '../Home.css'
 
 export function TurntableTonearm({ active }: { active: boolean }) {
   const gradientId = useId()

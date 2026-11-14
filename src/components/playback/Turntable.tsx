@@ -1,17 +1,17 @@
 import { animate, motion, useAnimationFrame, useMotionValue, useReducedMotion, useScroll, useSpring, useTransform, type MotionValue } from 'motion/react'
 import { useCallback, useEffect, useId, useRef, useState, type PointerEvent, type ReactNode, type RefObject } from 'react'
 import { useTranslations } from 'next-intl'
-import type { ColorTheme } from '../useColorTheme.ts'
+import type { ColorTheme } from '../../useColorTheme.ts'
 import { angleDelta, createScratchDeck, NORMAL_SPEED_DEG_PER_SEC, type ScratchDeck } from './vinylScratch.ts'
 import { scheduleTurntableHints, turntableHintFrame, turntableHintPosition, type TurntableHintScenario, type TurntableHintTargets } from './turntableHint.ts'
 import { VinylRecord } from './VinylRecord.tsx'
-import { claimPlayback, releasePlayback } from './exclusivePlayback.ts'
+import { claimPlayback, releasePlayback } from '../exclusivePlayback.ts'
 import { TurntablePlayButton } from './TurntablePlayButton.tsx'
 import { TurntableSideKnob } from './TurntableSideKnob.tsx'
 import { TurntableLcd } from './TurntableLcd.tsx'
 import { TurntableTonearm } from './TurntableTonearm.tsx'
-import { featureFlags } from '../featureFlags.ts'
-import './Home.css'
+import { featureFlags } from '../../featureFlags.ts'
+import '../Home.css'
 
 function pointerAngle(element: HTMLElement, event: PointerEvent<HTMLElement>) {
   const box = element.getBoundingClientRect()

@@ -1,7 +1,7 @@
 import { Disc3 } from 'lucide-react'
 import { motion, type MotionValue } from 'motion/react'
 import { useId } from 'react'
-import './Home.css'
+import '../Home.css'
 
 /** The two record faces and fixed curved wordmark; gestures belong to the turntable. */
 export function VinylRecord({ rotate = -16 }: { rotate?: number | MotionValue<number> }) {

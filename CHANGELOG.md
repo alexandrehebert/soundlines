@@ -9,7 +9,7 @@ Moves appear as a deletion and an addition. Generated-changelog-only commits and
 Dates are commit timestamps. Commit messages and file paths are historical records, not editorial release notes.
 
 Graph summaries count added, updated and removed entities; follow the commit link for exact field and binary changes.
-The [full JSON audit](./docs/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
+The [full JSON audit](./docs/changelog/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
 ## 2026-11-13 — Fix companion changelog test against new history

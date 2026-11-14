@@ -1,4 +1,4 @@
-import { OpenDataChangelog } from '../../../../src/components/OpenDataChangelog.tsx'
+import { OpenDataChangelog } from '../../../../src/components/open-data/OpenDataChangelog.tsx'
 import { generateOpenDataMetadata, openDataLocale, type OpenDataPageProps } from '../../../../src/i18n/openDataPage.ts'
 
 export function generateMetadata(props: OpenDataPageProps) {

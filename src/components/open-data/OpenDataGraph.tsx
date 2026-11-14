@@ -1,7 +1,7 @@
 import { ArrowDown, ArrowRight, Boxes } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
-import type { Locale } from '../i18n/routing.ts'
-import { REPOSITORY_URL } from '../projectLinks.ts'
+import type { Locale } from '../../i18n/routing.ts'
+import { REPOSITORY_URL } from '../../projectLinks.ts'
 import { DatasetGraph } from './DatasetGraph.tsx'
 import { GraphCardHeader } from './GraphCardHeader.tsx'
 

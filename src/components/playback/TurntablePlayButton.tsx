@@ -1,7 +1,7 @@
 import { Pause, Play } from 'lucide-react'
 import type { ComponentProps, ReactNode } from 'react'
 import { useTranslations } from 'next-intl'
-import './Home.css'
+import '../Home.css'
 
 type Props = Omit<ComponentProps<'button'>, 'children'> & {
   playing?: boolean

@@ -3,12 +3,11 @@ import rawGraph from './data/graph.json'
 import { buildIndex } from './graph/graph.ts'
 import { graphForLocale } from './data/graphLocale.ts'
 import type { GraphNode, MusicGraph } from './graph/types.ts'
-import { renderSocialMetadata, socialMetadata, socialMetaTags } from './socialMetadata.ts'
+import { socialMetadata } from './socialMetadata.ts'
 
 const index = buildIndex(rawGraph as MusicGraph)
 const frenchIndex = buildIndex(graphForLocale('fr'))
 const origin = 'https://soundlines.example'
-const template = '<html><head><!-- social-metadata:start --><title>Old</title><!-- social-metadata:end --></head><body>App</body></html>'
 
 describe('social metadata', () => {
   it.each([
@@ -48,11 +47,6 @@ describe('social metadata', () => {
     expect(metadata.title).toBe('Jazz | Genre | Soundlines')
     expect(metadata.description).toContain('Musique afro-américaine')
     expect(metadata.imageAlt).toBe('Soundlines : une carte chronologique des lignées musicales')
-    expect(socialMetaTags(metadata)).toContainEqual({
-      attribute: 'property',
-      key: 'og:image:alt',
-      content: metadata.imageAlt,
-    })
   })
 
   it.each([
@@ -114,7 +108,7 @@ describe('social metadata', () => {
 
   it('falls back to the requested view for unknown focus and removes unsupported parameters', () => {
     const metadata = socialMetadata(
-      new URL('/en?view=instruments&focus=instrument%3Aunknown&sort=invalid&layout=invalid&other=1', origin),
+      new URL('/en?view=instruments&focus=instrument%3Aunknown&sort=invalid&layout=invalid&other=1#discover', origin),
       index.nodeById,
     )
     expect(metadata.title).toBe('Musical Instruments | Soundlines')
@@ -130,38 +124,5 @@ describe('social metadata', () => {
     expect(params.get('sort')).toBe('oldest-first')
     expect(params.get('artist-sort')).toBe('oldest-first')
     expect(params.get('instrument-sort')).toBe('oldest-first')
-  })
-
-  it('escapes entity text and URLs in the initial HTML without duplicating metadata', () => {
-    const node: GraphNode = {
-      id: 'genre:unsafe',
-      type: 'genre',
-      name: 'A & "B" <C>',
-      description: 'A </title><script>alert("x")</script> & more',
-    }
-    const metadata = socialMetadata(
-      new URL('/en?focus=genre%3Aunsafe&layout=bubbles', origin),
-      new Map([[node.id, node]]),
-    )
-    const html = renderSocialMetadata(template, metadata)
-
-    expect(html).toContain('<title>A &amp; &quot;B&quot; &lt;C&gt; | Genre | Soundlines</title>')
-    expect(html).toContain('&lt;/title&gt;&lt;script&gt;alert(&quot;x&quot;)&lt;/script&gt; &amp; more')
-    expect(html).toContain('genre%3Aunsafe&amp;layout=bubbles')
-    expect(html).not.toContain('<script>alert')
-    expect(html).toContain('<body>App</body>')
-    expect(renderSocialMetadata(html, metadata)).toBe(html)
-
-    for (const { attribute, key } of socialMetaTags(metadata)) {
-      expect(html.split(`<meta ${attribute}="${key}"`).length - 1).toBe(1)
-    }
-    expect(html).toContain('name="twitter:card" content="summary_large_image"')
-    expect(html).toContain('property="og:image:width" content="1200"')
-    expect(html).toContain('property="og:image:height" content="630"')
-  })
-
-  it('reports a missing HTML template marker instead of returning incomplete metadata', () => {
-    const metadata = socialMetadata(new URL('/', origin), index.nodeById)
-    expect(() => renderSocialMetadata('<html></html>', metadata)).toThrow('Social metadata markers are missing')
   })
 })

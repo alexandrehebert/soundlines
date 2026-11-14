@@ -15,7 +15,7 @@ covers the procedure and the files that must move together.
 `graph.json` is ~2 MB; never read it whole. Query it with the bundled script:
 
 ```sh
-node .github/skills/graph-edit/scripts/lookup.mjs <id>             # entry, touching edges, evidence path/status, FR overlay keys
+node .github/skills/graph-edit/scripts/lookup.mjs <id>             # entry, touching edges, evidence path/status, locale overlay keys
 node .github/skills/graph-edit/scripts/lookup.mjs --search <text>  # find existing nodes before creating one
 node .github/skills/graph-edit/scripts/lookup.mjs --pending [type] # evidence missing, pending or unstamped
 node .github/skills/graph-edit/scripts/lookup.mjs --stats          # counts by node/edge type
@@ -58,7 +58,7 @@ node .github/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
    - Festival node or `festival_related` edge: update `docs/graph/evidence/festivals.md` (register row),
      `docs/graph/evidence/audits/festival-sources-001.json` (+ `.md`) so confidence/sources match exactly, and
      `festival-wikipedia-events-002.json` when a Wikipedia cross-check applies.
-5. **Update every locale overlay `src/data/graph.<locale>.json`** (currently `graph.fr.json`) for each
+5. **Update every locale overlay `src/data/graph.<locale>.json`** (French, German, Italian and Spanish) for each
    new or changed English text field, following the `graph-translate` skill. Text only, keyed by the
    same ids. For a large batch, delegate a slice to the `graph-translator` agent.
 6. **Write evidence** in `docs/graph/evidence/` using the
@@ -67,7 +67,7 @@ node .github/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
    - one row per live edge in `docs/graph/evidence/audits/graph-edge-coverage.csv`, matching type/confidence
    - removal or retype: a `removed__…` disposition note, a bullet in `docs/graph/evidence/graph-edge-removals.md`
      (or `event-edge-removals.md`), and delete or update the coverage row
-7. **Update GRAPH.md counts** when totals change: "Current size" in §1 (tested), family counts in §2,
+7. **Update GRAPH.md counts** when totals change: family counts in §2,
    the chronology table and event-edge counts in §6. Use `--stats` for the numbers.
 8. **Validate** with the `graph-validate` skill:
    ```sh

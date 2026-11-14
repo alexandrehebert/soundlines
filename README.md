@@ -52,18 +52,8 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by Next.js. Alternatively, run the app, Storybook and
-the companion site with Docker Compose:
-
-```bash
-docker compose up -d
-```
-
-Compose serves the app at `http://localhost:5173`, Storybook at
-`http://localhost:6008` and the companion site at
-`http://localhost:5174/soundlines/`. See the
-[development guide](./docs/DEVELOPMENT.md) for server reuse, port overrides,
-and Storybook details.
+Open the local URL printed by Next.js. For Docker Compose, Storybook and
+the companion site, see the [development guide](./docs/DEVELOPMENT.md#docker-compose).
 
 For the optional standalone ACE-Step rendering dashboard, see
 [ACE Monitor](./tools/ace-monitor/README.md). It runs in its own Compose stack at
@@ -83,18 +73,7 @@ relationships and cite their sources. For example, ask: “Use Soundlines to fin
 French Touch artists who signed with a record label and are also key artists in
 another genre. Cite the sources for each connection.”
 
-See the [MCP setup and tool reference](https://alexandrehebert.github.io/soundlines/en/mcp/).
-
-## Common commands
-
-```bash
-npm test                # test suite
-npm run lint           # lint
-npm run build          # production build
-npm run start          # serve the production build
-npm run storybook      # component catalogue
-npm run validate:graph # graph validation
-```
+See the [MCP setup and tool reference](https://soundlines.hebert.app/en/data/query).
 
 ## Contributing
 
@@ -115,98 +94,11 @@ If you’re editing the dataset directly, see the
 
 ## Workflows
 
-Expand a workflow for its stages and owners. These are contributor processes,
-not services required to run the app.
-
-The graph, artwork, and loop workflows describe this repository's
-AI-assisted contribution system: reusable **skills** give an AI coding
-assistant project-specific procedures, and specialized **agents** take
-responsibility for individual stages and handoffs. Graph contributions can
-also be sent to Copilot cloud agent after a maintainer applies the approval
-label; its pull requests still require CI and human review. The other workflows
-guide work when invoked and are not automatic pipelines. Deterministic
-validation and the human review or sign-off shown in each diagram remain
-explicit gates. Genre previews use dedicated `preview-briefer`,
-`preview-producer`, and `preview-reviewer` agents with the existing preview
-renderer, automated quality scoring and staged retake comparison.
-
-<details>
-<summary><strong>Music graph</strong> — research, enrichment, and source review</summary>
-
-```mermaid
-flowchart TD
-  research["Research a sourced proposal<br/>graph-researcher"] --> edit["Edit graph and evidence<br/>graph-editor"]
-  edit --> translate["Translate locale overlays<br/>graph-translator"]
-  translate --> validate["Validate data and bookkeeping<br/>graph-validator"]
-  validate -->|Pass| check["Fact-check claims<br/>graph-fact-checker"]
-  validate -->|Fix| edit
-  check --> review["Review the change set<br/>graph-reviewer"]
-  check -->|Corrections| edit
-  review -->|Revise| edit
-  review -->|Approve| ready["Ready to merge"]
-```
-
-The editor keeps the graph, translations, evidence, and generated review status
-in sync. See the [graph contribution guide](./docs/DATA.md#graph-contribution-workflow)
-and [schema guide](./docs/GRAPH.md).
-
-</details>
-
-<details>
-<summary><strong>Instrument artwork</strong> — references to four SVG variants</summary>
-
-```mermaid
-flowchart TD
-  brief["Sourced visual brief<br/>artwork-briefer"] --> draw["Draw four SVG variants<br/>artwork-illustrator"]
-  draw --> validate["Deterministic quality gate<br/>artwork-validator"]
-  validate -->|Pass| review["Visual and provenance review<br/>artwork-reviewer"]
-  validate -->|Fix artwork| draw
-  validate -->|Fix brief| brief
-  review -->|Redraw| draw
-  review -->|Revise brief| brief
-  review -->|Approve| human["Human Storybook sign-off"]
-  human --> ready["Ready to ship"]
-```
-
-See the [instrument artwork guide](./docs/DATA.md#instrument-artwork).
-
-</details>
-
-<details>
-<summary><strong>Audio loops</strong> — genre briefs to seamless recordings</summary>
-
-```mermaid
-flowchart TD
-  brief["Approved production brief<br/>loop-briefer"] --> produce["Plan, render and extract<br/>loop-producer"]
-  produce --> validate["Validate the shipped loop<br/>loop-validator"]
-  validate -->|Pass| review["Musical and provenance review<br/>loop-reviewer"]
-  validate -->|Fix or retake| produce
-  review -->|Retake| produce
-  review -->|Revise brief| brief
-  review -->|Approve| human["Human listening sign-off"]
-  human --> ready["Ready to ship"]
-```
-
-Production also screens raw takes before extraction. See the
-[audio guide](./docs/AUDIO.md) and [loop production procedure](./.github/skills/loop-produce/SKILL.md).
-
-</details>
-
-<details>
-<summary><strong>Genre previews</strong> — short clips for the detail panel</summary>
-
-```mermaid
-flowchart TD
-  brief["Genre preview brief"] --> render["Render an ACE-Step performance"]
-  render --> extract["Extract the middle ten seconds"]
-  extract --> asset["Static genre preview"]
-  asset --> play["Load on Play in the detail panel"]
-```
-
-Previews use a separate renderer, not the seamless-loop pipeline. See the
-[preview generation guide](./docs/AUDIO.md#genre-previews).
-
-</details>
+The repository’s agents and skills guide graph research, artwork, and audio
+production. See the [graph contribution guide](./docs/DATA.md#graph-contribution-workflow),
+[instrument artwork guide](./docs/DATA.md#instrument-artwork), and
+[audio guide](./docs/AUDIO.md). The [project companion](https://alexandrehebert.github.io/soundlines/)
+shows the workflows with diagrams and examples.
 
 ## Documentation
 
@@ -222,11 +114,11 @@ It is a curated introduction; the guides below remain the detailed technical ref
 See [GitHub Pages setup](./docs/DEVELOPMENT.md#project-companion-github-pages)
 for publishing and editing the companion.
 
-The [public changelog](https://alexandrehebert.github.io/soundlines/en/changelog/)
+The [public changelog](https://soundlines.hebert.app/en/data/changelog)
 traces graph, preview, loop, artwork, application and workflow changes from Git
 history, with an asset-first view, readable affected entity names and pagination.
 Its [Markdown log](./CHANGELOG.md) and
-[JSON history](./docs/changelog.json) are tracked in Git and updated automatically;
+[JSON history](./docs/changelog/changelog.json) are tracked in Git and updated automatically;
 see [changelog maintenance](./docs/DEVELOPMENT.md#changelog).
 
 | Guide | Contents |

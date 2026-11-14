@@ -8,7 +8,7 @@ import { searchNodes } from '../graph/graph.ts'
 import { chartColor, chartTextColor, NODE_TYPE_COLORS } from '../theme.ts'
 import { DEFAULT_LOCALE, type Locale } from '../i18n/routing.ts'
 import { graphLabels } from '../i18n/graphLabels.ts'
-import { graphForLocale } from '../data/graphLocale.ts'
+import { englishGraph } from '../data/translateGraph.ts'
 import { InstrumentIcon } from './InstrumentIcon.tsx'
 
 function isComposing(event: ReactKeyboardEvent) {
@@ -26,7 +26,7 @@ export function SearchBar() {
   // Let users also find entries by their default-locale names.
   const alternateNames = useMemo(() => locale === DEFAULT_LOCALE
     ? undefined
-    : new Map(graphForLocale(DEFAULT_LOCALE).nodes.map((node) => [node.id, node.name])), [locale])
+    : new Map(englishGraph.nodes.map((node) => [node.id, node.name])), [locale])
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)

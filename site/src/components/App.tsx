@@ -1,35 +1,26 @@
-import { AudioLines, Cable, ChevronDown, Hammer, History, House, Network, Palette } from 'lucide-react'
+import { AudioLines, ChevronDown, Hammer, House, Network, Palette } from 'lucide-react'
 import type { ReactNode } from 'react'
-import { locales, slugs, copy, repository, siteUrl, type SiteCopy as Copy, type Locale, type Page, type Slug } from '../content.ts'
+import { locales, slugs, copy, repository, siteUrl, type Copy, type Locale, type Page, type Slug } from '../content.ts'
 import { appUrl, storybookUrl } from '../links.ts'
 import { repositoryUrl, routePath, type Route } from '../routes.ts'
 import { favicon, instrumentBrief, instruments } from './assets.ts'
 import { ExampleCard, FlowDiagram, Legend, Overview, Stats } from './Diagrams.tsx'
-import { openDataPath, type OpenDataSection } from '../../../src/openData.ts'
 
 const base = import.meta.env.BASE_URL
 const href = (route: Route) => `${base}${routePath(route)}`
-const openDataHref = (locale: Locale, section?: OpenDataSection) => new URL(`${locale}${section ? openDataPath(section) : '/data'}`, appUrl).href
+const openDataHref = (locale: Locale) => new URL(`${locale}/data`, appUrl).href
 const external = <span aria-hidden="true">↗</span>
 const languageNames: Record<Locale, string> = { en: 'English', fr: 'Français', de: 'Deutsch', it: 'Italiano', es: 'Español' }
-const pageIcons = { index: House, graph: Network, artwork: Palette, audio: AudioLines, build: Hammer, mcp: Cable, changelog: History }
+const pageIcons = { index: House, graph: Network, artwork: Palette, audio: AudioLines, build: Hammer }
 
-function pageContent(c: Copy, slug: Slug): Page {
-  const page = c.pages[slug]
-  return slug === 'mcp' || slug === 'changelog'
-    ? { ...page, label: c.openDataTitle, title: c.openDataTitle, intro: c.openDataDescription, resources: [] }
-    : page
-}
-
-export function App({ locale, slug, page: pageNumber }: Route) {
+export function App({ locale, slug }: Route) {
   const c = copy[locale]
-  const movedToApp = slug === 'mcp' || slug === 'changelog'
-  const page = pageContent(c, slug)
+  const page = c.pages[slug]
   const home = slug === 'index'
   return (
     <>
       <a href="#main" className="skip-link">{c.skip}</a>
-      <Header c={c} locale={locale} slug={slug} page={pageNumber} />
+      <Header c={c} locale={locale} slug={slug} />
       <PageNav c={c} locale={locale} slug={slug} className="xl:border-b" />
       <main id="main" className="shell pb-12">
         <Hero c={c} page={page} home={home} />
@@ -49,16 +40,8 @@ export function App({ locale, slug, page: pageNumber }: Route) {
             </section>
           ))}
         </div>
-        {movedToApp && (
-          <section aria-label={c.openDataTitle} className="max-w-190 rounded-2xl border border-line bg-surface p-6 sm:p-8">
-            <a className="inline-flex min-h-11 items-center gap-3 rounded-full bg-fg px-5 font-semibold text-bg transition-colors hover:bg-accent"
-              href={openDataHref(locale, slug === 'mcp' ? 'query' : 'changelog')} target="_blank" rel="noopener noreferrer">
-              {c.openDataLink} {external}
-            </a>
-          </section>
-        )}
         {home && <Chapters c={c} locale={locale} />}
-        {!movedToApp && <Resources c={c} page={page} openData={slug === 'graph' ? openDataHref(locale) : undefined} />}
+        <Resources c={c} page={page} openData={slug === 'graph' ? openDataHref(locale) : undefined} />
       </main>
       <PageNav c={c} locale={locale} slug={slug} className="xl:border-t" />
       <footer className="shell flex flex-wrap items-center gap-x-8 gap-y-2 border-t border-line py-8 text-sm text-muted">
@@ -73,7 +56,7 @@ export function App({ locale, slug, page: pageNumber }: Route) {
 
 type ChromeProps = { c: Copy } & Route
 
-function Header({ c, locale, slug, page }: ChromeProps) {
+function Header({ c, locale, slug }: ChromeProps) {
   return (
     <>
       <header className="shell relative flex items-center gap-1 py-4 sm:gap-3 lg:gap-6 lg:py-6">
@@ -92,11 +75,11 @@ function Header({ c, locale, slug, page }: ChromeProps) {
             </svg>
             <span aria-hidden="true">{locale.toUpperCase()}</span>
             <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="m4 6 4 4 4-4" /></svg>
-            <select aria-label={c.language} value={href({ locale, slug, page })}
+            <select aria-label={c.language} value={href({ locale, slug })}
               onChange={(event) => { window.location.href = event.target.value }}
               className="absolute inset-0 h-full w-full cursor-pointer opacity-0">
               {locales.map((target) => (
-                <option key={target} value={href({ locale: target, slug, page })} lang={target}>
+                <option key={target} value={href({ locale: target, slug })} lang={target}>
                   {languageNames[target]}
                 </option>
               ))}
@@ -120,7 +103,7 @@ function Header({ c, locale, slug, page }: ChromeProps) {
         <style>{'.site-language-select { display: none; }'}</style>
         <nav aria-label={c.language} className="shell flex flex-wrap gap-x-4 gap-y-2 pb-4 text-sm">
           {locales.map((target) => (
-            <a key={target} href={href({ locale: target, slug, page })} lang={target} hrefLang={target} aria-current={target === locale ? 'page' : undefined}>
+            <a key={target} href={href({ locale: target, slug })} lang={target} hrefLang={target} aria-current={target === locale ? 'page' : undefined}>
               {languageNames[target]}
             </a>
           ))}
@@ -155,7 +138,7 @@ function HeaderIconLink({ href, label, children }: {
 
 function PageNav({ c, locale, slug, className }: ChromeProps & { className: string }) {
   const CurrentIcon = pageIcons[slug]
-  const links = slugs.filter((key) => key !== 'mcp' && key !== 'changelog').map((key) => {
+  const links = slugs.map((key) => {
     const Icon = pageIcons[key]
     return (
       <a
@@ -226,7 +209,7 @@ function Record() {
 }
 
 function Chapters({ c, locale }: { c: Copy; locale: Locale }) {
-  const chapters = Object.entries(c.pages).filter(([key]) => key !== 'index' && key !== 'mcp' && key !== 'changelog')
+  const chapters = Object.entries(c.pages).filter(([key]) => key !== 'index')
   return (
     <section aria-labelledby="inside" className="my-14">
       <h2 id="inside" className="heading-2">{c.next}</h2>
@@ -301,10 +284,10 @@ function Resources({ c, page, openData }: { c: Copy; page: Page; openData?: stri
 }
 
 /** Document metadata, rendered into <head> by the prerender step. */
-export function Head({ locale, slug, page: pageNumber }: Route) {
-  const page = pageContent(copy[locale], slug)
-  const url = (target: Locale) => `${siteUrl}/${routePath({ locale: target, slug, page: pageNumber })}`
-  const title = `${page.label}${pageNumber ? ` · ${pageNumber}` : ''} · Soundlines`
+export function Head({ locale, slug }: Route) {
+  const page = copy[locale].pages[slug]
+  const url = (target: Locale) => `${siteUrl}/${routePath({ locale: target, slug })}`
+  const title = `${page.label} · Soundlines`
   return (
     <>
       <title>{title}</title>

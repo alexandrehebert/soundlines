@@ -1,7 +1,8 @@
 import { readFileSync } from 'node:fs'
 import type { ReactNode } from 'react'
 import { describe, expect, it, vi } from 'vitest'
-import { Explorer, GenreDisplaySelect, ViewToggle } from './App.tsx'
+import { Explorer } from './Explorer.tsx'
+import { GenreDisplaySelect, ViewToggle } from './components/ExplorerControls.tsx'
 import { ExplorerContext } from './ExplorerContext.ts'
 import { DatasetStats } from './components/DatasetStats.tsx'
 import { Home } from './components/Home.tsx'
@@ -280,12 +281,12 @@ describe('landing view transition', () => {
 
   it('keeps the footer border full-width while aligning its contents with the header', () => {
     const markup = render(graph, <Home />)
-    const homeCss = readFileSync(new URL('./components/Home.css', import.meta.url), 'utf8')
+    const discoveryChromeCss = readFileSync(new URL('./components/DiscoveryChrome.css', import.meta.url), 'utf8')
 
     expect(markup).toContain('<header class="discovery-header"><div class="discovery-width discovery-header-inner">')
     expect(markup).toContain('<footer class="discovery-footer"><div class="discovery-width">')
-    expect(homeCss).toContain('.discovery-header { border-bottom: 1px solid var(--home-line); }')
-    expect(homeCss).toMatch(/\.discovery-footer \{\s*border-top: 1px solid var\(--home-line\);/)
+    expect(discoveryChromeCss).toContain('.discovery-header { border-bottom: 1px solid var(--home-line); }')
+    expect(discoveryChromeCss).toMatch(/\.discovery-footer \{\s*border-top: 1px solid var\(--home-line\);/)
   })
 
   it.each([

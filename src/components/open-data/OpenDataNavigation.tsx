@@ -4,8 +4,8 @@ import Link, { useLinkStatus } from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { Database, HeartHandshake, History, LoaderCircle, Network, Terminal, type LucideIcon } from 'lucide-react'
-import { localizePath, type Locale } from '../i18n/routing.ts'
-import { OPEN_DATA_SECTIONS, openDataPath } from '../openData.ts'
+import { localizePath, type Locale } from '../../i18n/routing.ts'
+import { OPEN_DATA_SECTIONS, openDataPath } from '../../openData.ts'
 
 const icons = { dataset: Database, graph: Network, query: Terminal, changelog: History, contribute: HeartHandshake }
 

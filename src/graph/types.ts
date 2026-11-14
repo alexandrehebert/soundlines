@@ -204,10 +204,6 @@ export const LINEAGE_ORIENTATION: RelationOrientation = {
   revival_of: 'backward',
 }
 
-export const LINEAGE_EDGE_TYPES: readonly EdgeType[] = Object.keys(
-  LINEAGE_ORIENTATION,
-) as EdgeType[]
-
 export const FAMILY_LABELS: Record<LaneFamily, string> = english.graphLabels.families
 
 export const FAMILY_ORDER: readonly GenreFamily[] = [
@@ -255,4 +251,3 @@ export const NODE_TYPE_LABELS: Record<NodeType, string> = english.graphLabels.no
 export const EDGE_TYPE_LABELS: Record<EdgeType, string> = english.graphLabels.edges
 
 /** Phrasing when the focused node is the edge's `to` side. */
-export const EDGE_TYPE_INVERSE_LABELS: Record<EdgeType, string> = english.graphLabels.inverseEdges

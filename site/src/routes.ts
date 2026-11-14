@@ -1,16 +1,11 @@
 import { locales, slugs, type Locale, type Slug } from './content.ts'
-import { assetPageCount } from './changelog.ts'
 
-export type Route = { locale: Locale; slug: Slug; page?: number }
+export type Route = { locale: Locale; slug: Slug }
 
-export const routes: Route[] = locales.flatMap((locale) => [
-  ...slugs.map((slug) => ({ locale, slug })),
-  ...Array.from({ length: assetPageCount - 1 }, (_, index): Route => ({ locale, slug: 'changelog', page: index + 2 })),
-])
+export const routes: Route[] = locales.flatMap((locale) => slugs.map((slug) => ({ locale, slug })))
 
 /** Path relative to the site base, e.g. `fr/graph/`. */
-export const routePath = ({ locale, slug, page }: Route) =>
-  slug === 'index' ? `${locale}/` : `${locale}/${slug}/${slug === 'changelog' && page && page > 1 ? `page/${page}/` : ''}`
+export const routePath = ({ locale, slug }: Route) => slug === 'index' ? `${locale}/` : `${locale}/${slug}/`
 
 /** Output file relative to the build directory, e.g. `fr/graph/index.html`. */
 export const routeFile = (route: Route) => `${routePath(route)}index.html`
@@ -20,12 +15,10 @@ const isSlug = (value: string | undefined): value is Slug => slugs.includes(valu
 
 /** Resolves a pathname below `base`; unknown paths fall back to the English overview. */
 export function matchRoute(pathname: string, base: string): Route {
-  const [locale, slug, segment, number] = pathname.slice(pathname.startsWith(base) ? base.length : 0).split('/').filter(Boolean)
-  const page = slug === 'changelog' && segment === 'page' && /^[1-9]\d*$/.test(number ?? '') ? Number(number) : 1
+  const [locale, slug] = pathname.slice(pathname.startsWith(base) ? base.length : 0).split('/').filter(Boolean)
   return {
     locale: isLocale(locale) ? locale : 'en',
     slug: isSlug(slug) && slug !== 'index' ? slug : 'index',
-    ...(page > 1 && page <= assetPageCount ? { page } : {}),
   }
 }
 

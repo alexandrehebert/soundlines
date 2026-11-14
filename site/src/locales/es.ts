@@ -7,7 +7,7 @@ export const es: Copy = {
   language: 'Idioma',
   openApp: 'Abrir Soundlines',
   openDataTitle: 'Los datos abiertos están en Soundlines',
-  openDataDescription: 'El conjunto de datos, la guía de consultas y el registro de contenido ahora están en la aplicación principal.',
+  openDataDescription: 'Explora el conjunto de datos de Soundlines en la aplicación.',
   openDataLink: 'Explorar datos abiertos',
   eyebrow: 'Entre bastidores de un atlas musical',
   source: 'Explorar el código fuente',

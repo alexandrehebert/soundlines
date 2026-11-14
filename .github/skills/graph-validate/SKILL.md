@@ -32,7 +32,6 @@ on an existing node cannot be removed or changed. Use the date the node joined t
 | Test file / test name contains | Checks | Usual fix |
 |---|---|---|
 | `graphFiles` "canonical JSON formatting" | graph, overlays, review-status and audit JSON are `JSON.stringify(data, null, 2) + '\n'` | rewrite the file with that serializer |
-| `graphFiles` "documents the current graph size" | GRAPH.md §1 "Current size" matches node/edge counts | update the line from `lookup.mjs --stats` |
 | `graph` "unique … ids", "prefixes every node id", "only references existing nodes" | id integrity | fix the id or the dangling edge endpoint; never rename existing ids |
 | `graph` "known node types, edge types, and families", "family" tests | enums and family registry | use a documented value, or register a new family (types.ts, theme.ts, GRAPH.md §2) |
 | `graph` "documented directions", "lineage" | edge direction and allowed endpoints | flip or retype the edge per GRAPH.md §3 |

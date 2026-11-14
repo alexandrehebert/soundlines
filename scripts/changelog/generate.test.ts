@@ -45,7 +45,10 @@ describe('deterministic changelog', () => {
     const second = commit('Revise graph and audio')
     write('CHANGELOG.md', 'generated')
     write('docs/changelog.json', '{}')
-    commit('Update changelog')
+    commit('Update changelog at old path')
+    git('rm', 'docs/changelog.json')
+    write('docs/changelog/changelog.json', '{}')
+    commit('Move generated changelog')
     write('public/loops/uncommitted.wav', 'not shipped')
     const result = buildChangelog(cwd)
     expect(result.data.entries.map(({ commit }) => commit)).toEqual([second, first])
@@ -57,7 +60,7 @@ describe('deterministic changelog', () => {
     expect(result.data.entries[0].groups.map(({ category }) => category)).toEqual(['graph', 'previews', 'loops'])
     expect(result.data.entries[0].parent).toBe(first)
     expect(result.data.entries[0].groups[1].files).toEqual([{ status: 'D', path: 'public/audio/genre-a.mp3' }])
-    expect(result.markdown).toContain('[full JSON audit](./docs/changelog.json)')
+    expect(result.markdown).toContain('[full JSON audit](./docs/changelog/changelog.json)')
     expect(result.markdown).toContain('&lt;test>')
     expect(result.json).not.toContain('uncommitted')
     const compact = JSON.parse(result.assetJson) as ReturnType<typeof packAssetChangelog>
@@ -232,7 +235,7 @@ describe('deterministic changelog', () => {
     ['.github/skills/loop-produce/SKILL.md', 'loops'],
     ['public/instrument-icons/a.svg', 'artwork'],
     ['.github/instructions/instrument-artwork.instructions.md', 'artwork'],
-    ['site/src/copy/en.ts', 'site'],
+    ['site/src/locales/en.ts', 'site'],
     ['.github/workflows/graph-quality.yml', 'workflow'],
     ['docs/DEVELOPMENT.md', 'docs'],
     ['src/components/Timeline.tsx', 'app'],

@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { OpenDataPage } from '../../../src/components/OpenDataPage.tsx'
+import { OpenDataPage } from '../../../src/components/open-data/OpenDataPage.tsx'
 import { openDataLocale, type OpenDataPageProps } from '../../../src/i18n/openDataPage.ts'
 
 export default async function DataLayout(props: OpenDataPageProps & { children: ReactNode }) {

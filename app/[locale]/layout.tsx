@@ -8,6 +8,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getNow, getTranslations } from 'next-intl/server'
 import '../../src/index.css'
 import '../../src/pageLoading.css'
+import { GRAPH_OVERLAYS } from '../../src/data/graphLocale.ts'
 import { SoundlinesProviders } from '../../src/SoundlinesProviders.tsx'
 import { faviconUrl } from '../../src/favicon.ts'
 import { isLocale } from '../../src/i18n/routing.ts'
@@ -72,7 +73,7 @@ export default async function LocaleLayout({
             {t('requiresJavascript')}
           </noscript>
           <div id="root" aria-busy="true">
-            <SoundlinesProviders locale={locale}>{children}</SoundlinesProviders>
+            <SoundlinesProviders locale={locale} overlay={locale === 'en' ? undefined : GRAPH_OVERLAYS[locale]}>{children}</SoundlinesProviders>
           </div>
         </NextIntlClientProvider>
         <Analytics />

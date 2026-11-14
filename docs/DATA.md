@@ -181,7 +181,7 @@ years. Some new band periods span documented breaks and reunion appearances;
 their descriptions identify this career-envelope limitation. They are not
 claims of uninterrupted activity.
 
-The UI never touches the JSON directly: all queries (neighbors, lineage traversal, period filtering, search) go through [src/graph/graph.ts](../src/graph/graph.ts). Migrating to a graph database later (e.g. Neo4j: nodes → labeled vertices, edges → typed relationships, other fields → properties) only requires reimplementing that one module.
+[graphLocale.ts](../src/data/graphLocale.ts) loads the canonical JSON and applies locale overlays. [graph.ts](../src/graph/graph.ts) indexes a loaded graph and provides queries such as neighbors, traversal, and search. Validation, changelog generation, and published downloads also use the repository files.
 
 [src/data/graph.test.ts](../src/data/graph.test.ts) enforces dataset integrity: unique ids, no dangling edge endpoints, known types only, sane periods, and no orphan nodes.
 

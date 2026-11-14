@@ -7,7 +7,7 @@ on:
     paths:
       - 'scripts/changelog/**'
       - 'CHANGELOG.md'
-      - 'docs/changelog.json'
+      - 'docs/changelog/changelog.json'
       - 'public/open-data-changelog.json'
       - 'src/projectLinks.ts'
       - 'package*.json'
@@ -25,12 +25,12 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7.1.0
         with:
-          node-version: 26
+          node-version-file: .nvmrc
           cache: npm
       - run: npm ci
       - run: npm run test:changelog
@@ -44,17 +44,17 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
         with:
           ref: main
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7.1.0
         with:
-          node-version: 26
+          node-version-file: .nvmrc
       - run: npm run changelog
       - name: Commit generated history
         run: |
-          git add -- CHANGELOG.md docs/changelog.json public/open-data-changelog.json
+          git add -- CHANGELOG.md docs/changelog/changelog.json public/open-data-changelog.json
           if git diff --cached --quiet; then
             echo "Changelog is already current."
             exit 0

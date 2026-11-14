@@ -34,7 +34,8 @@ test suite ([graph.test.ts](../src/data/graph.test.ts) and the other `src/data` 
 It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
-Current size: 1608 nodes (239 genres, 705 artists, 77 instruments, 41 labels, 118 places, 210 tracks, 56 scenes, 123 events, 39 festivals) and 2325 edges (as of 2026-11-13).
+For live counts by entity and relationship type, run
+`node .github/skills/graph-edit/scripts/lookup.mjs --stats`.
 
 `graph.json` remains the canonical source for entity ids, relationships, dates,
 sources, and English text. Display names and prose for each other app locale are
@@ -580,10 +581,9 @@ do not force them into a single Western-style lineage.
   regional and diasporic styles
 - **Hip-hop**: Memphis rap, UK drill, regional scenes not yet represented
 - **Rock & metal**: noise pop, psychobilly, post-metal
-- **Electronic**: UK funky, progressive house, additional techno sub-styles
+- **Electronic**: additional techno sub-styles
 - **Asia & South Asia**: bhangra, ghazal, Indian film music, Chinese regional styles
-- **More labels**: Motown, Blue Note, Warp, Def Jam; **places**: Kingston, Lagos,
-  Rio; **scenes**: Studio 54, CBGB; and representative **tracks** (anthems)
+- **More places and tracks**: Rio and representative anthems
 
 ### Chronology coverage gaps (current priority)
 

@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "node_modules",
+    "tools",
+    "site",
+    ".storybook",
+    "api",
+    "server",
+    "vite.config.ts",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
+}

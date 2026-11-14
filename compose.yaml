@@ -1,6 +1,6 @@
 services:
   soundlines:
-    image: node:22-alpine
+    image: node:26-alpine
     container_name: soundlines-dev
     restart: unless-stopped
     working_dir: /app
@@ -17,7 +17,7 @@ services:
       - next_cache:/app/.next
 
   storybook:
-    image: node:22-alpine
+    image: node:26-alpine
     working_dir: /app
     command: sh -c 'npm ci && npm run storybook -- --host 0.0.0.0 --no-open --exact-port --port "$$STORYBOOK_PORT"'
     environment:
@@ -31,7 +31,7 @@ services:
       - storybook_node_modules:/app/node_modules
 
   site:
-    image: node:22-alpine
+    image: node:26-alpine
     working_dir: /app
     command: sh -c 'npm ci && npm run dev:site -- --host 0.0.0.0 --strictPort --port "$$SITE_PORT"'
     environment:

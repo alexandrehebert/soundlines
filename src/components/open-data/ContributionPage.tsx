@@ -1,7 +1,7 @@
 import { ArrowUpRight, CirclePlus, PencilLine } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
-import { localizePath, type Locale } from '../i18n/routing.ts'
-import { REPOSITORY_URL } from '../projectLinks.ts'
+import { localizePath, type Locale } from '../../i18n/routing.ts'
+import { REPOSITORY_URL } from '../../projectLinks.ts'
 
 export async function ContributionPage({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: 'openData.contribute' })

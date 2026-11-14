@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import { getTranslations } from 'next-intl/server'
-import type { Locale } from '../i18n/routing.ts'
-import { DiscoveryFooter, DiscoveryHeader } from './DiscoveryChrome.tsx'
+import type { Locale } from '../../i18n/routing.ts'
+import { DiscoveryFooter, DiscoveryHeader } from '../DiscoveryChrome.tsx'
 import { OpenDataNavigation } from './OpenDataNavigation.tsx'
 
 export async function OpenDataPage({ locale, children }: { locale: Locale; children: ReactNode }) {

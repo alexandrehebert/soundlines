@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, userEvent, within, waitFor } from 'storybook/test'
-import { TurntableSideKnob } from '../components/TurntableSideKnob.tsx'
+import { TurntableSideKnob } from '../components/playback/TurntableSideKnob.tsx'
 import { useColorTheme } from '../useColorTheme.ts'
 
 const meta = {

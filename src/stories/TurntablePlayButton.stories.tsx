@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useEffect, useState } from 'react'
 import { expect, userEvent, within } from 'storybook/test'
-import { TurntablePlayButton } from '../components/TurntablePlayButton.tsx'
+import { TurntablePlayButton } from '../components/playback/TurntablePlayButton.tsx'
 
 const meta = {
   title: 'Controls/Turntable play button',

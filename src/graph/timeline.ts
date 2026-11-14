@@ -6,7 +6,6 @@ import {
   isGenreFamily,
   isInstrumentFamily,
   LINEAGE_ORIENTATION,
-  NODE_TYPE_LABELS,
   type GenreFamily,
   type GraphNode,
   type LaneFamily,
@@ -21,7 +20,6 @@ export type TimelineOrders = Record<TimelineView, TimelineOrder>
 export const TIMELINE_VIEWS: readonly TimelineView[] = ['genre', 'artist', 'instrument']
 export const EXPLORER_VIEWS: readonly ExplorerView[] = [...TIMELINE_VIEWS, 'history']
 
-export const VIEW_LABELS: Record<TimelineView, string> = NODE_TYPE_LABELS
 
 const ORDER_PARAMS: Record<TimelineView, string> = {
   genre: 'sort',

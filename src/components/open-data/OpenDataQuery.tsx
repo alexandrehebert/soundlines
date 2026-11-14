@@ -1,9 +1,9 @@
 import { getTranslations } from 'next-intl/server'
 import { z } from 'zod/v4'
-import type { Locale } from '../i18n/routing.ts'
-import { frenchTouchQuery } from '../mcp/example.ts'
-import { toolDefinitions } from '../mcp/tools.ts'
-import { MCP_URL } from '../projectLinks.ts'
+import type { Locale } from '../../i18n/routing.ts'
+import { frenchTouchQuery } from '../../mcp/example.ts'
+import { toolDefinitions } from '../../mcp/tools.ts'
+import { MCP_URL } from '../../projectLinks.ts'
 
 const tools = Object.entries(toolDefinitions).map(([name, definition]) => ({
   name,

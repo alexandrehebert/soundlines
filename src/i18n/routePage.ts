@@ -3,7 +3,6 @@ import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import { graphForLocale } from '../data/graphLocale.ts'
 import { explorerUrl, readExplorerLocation } from '../explorerLocation.ts'
-import { buildIndex } from '../graph/graph.ts'
 import type { GraphNode } from '../graph/types.ts'
 import { socialMetadata } from '../socialMetadata.ts'
 import { isLocale, LOCALES, localizePath, stripLocalePrefix, type Locale } from './routing.ts'
@@ -15,13 +14,13 @@ export type LocalizedPageProps = {
 
 type PageRoute = '' | 'genres' | 'artists' | 'instruments' | 'history'
 
-const nodeByIdByLocale = new Map<Locale, ReadonlyMap<string, GraphNode>>(
-  LOCALES.map((locale) => [locale, buildIndex(graphForLocale(locale)).nodeById]),
-)
+const nodeByIdByLocale = new Map<Locale, ReadonlyMap<string, GraphNode>>()
 
 function nodesForLocale(locale: Locale): ReadonlyMap<string, GraphNode> {
-  const nodes = nodeByIdByLocale.get(locale)
-  if (!nodes) throw new Error(`Missing graph index for locale ${locale}`)
+  const cached = nodeByIdByLocale.get(locale)
+  if (cached) return cached
+  const nodes = new Map(graphForLocale(locale).nodes.map((node) => [node.id, node]))
+  nodeByIdByLocale.set(locale, nodes)
   return nodes
 }
 

@@ -1,4 +1,4 @@
-import { ContributionPage } from '../../../../src/components/ContributionPage.tsx'
+import { ContributionPage } from '../../../../src/components/open-data/ContributionPage.tsx'
 import { generateOpenDataMetadata, openDataLocale, type OpenDataPageProps } from '../../../../src/i18n/openDataPage.ts'
 
 export function generateMetadata(props: OpenDataPageProps) {

@@ -4,12 +4,16 @@ import { MotionConfig } from 'motion/react'
 import { useLayoutEffect, useMemo, type ReactNode } from 'react'
 import App from './App.tsx'
 import { ExplorerProvider } from './ExplorerProvider.tsx'
-import { graphForLocale } from './data/graphLocale.ts'
+import { englishGraph, translateGraph, type GraphTranslation } from './data/translateGraph.ts'
 import type { Locale } from './i18n/routing.ts'
 import { initializeColorTheme } from './useColorTheme.ts'
 
-export function SoundlinesProviders({ locale, children }: { locale: Locale; children: ReactNode }) {
-  const graph = useMemo(() => graphForLocale(locale), [locale])
+export function SoundlinesProviders({ locale, overlay, children }: {
+  locale: Locale
+  overlay?: GraphTranslation
+  children: ReactNode
+}) {
+  const graph = useMemo(() => overlay ? translateGraph(englishGraph, overlay) : englishGraph, [overlay])
   // Restore the preference before the loading screen reveals the page.
   useLayoutEffect(initializeColorTheme, [])
 

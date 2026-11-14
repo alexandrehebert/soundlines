@@ -1,19 +1,19 @@
 import { describe, expect, it, vi } from 'vitest'
-import App from '../App.tsx'
-import { ExplorerContext } from '../ExplorerContext.ts'
-import { buildIndex } from '../graph/graph.ts'
-import { createTimelineModel } from '../graph/timeline.ts'
-import type { MusicGraph } from '../graph/types.ts'
-import { catalogueFor } from '../i18n/catalogue.ts'
-import { LOCALES, type Locale } from '../i18n/routing.ts'
-import { renderWithIntl } from '../i18n/test-utils.tsx'
-import { OPEN_DATA_SECTIONS } from '../openData.ts'
-import { REPOSITORY_URL } from '../projectLinks.ts'
+import App from '../../App.tsx'
+import { ExplorerContext } from '../../ExplorerContext.ts'
+import { buildIndex } from '../../graph/graph.ts'
+import { createTimelineModel } from '../../graph/timeline.ts'
+import type { MusicGraph } from '../../graph/types.ts'
+import { catalogueFor } from '../../i18n/catalogue.ts'
+import { LOCALES, type Locale } from '../../i18n/routing.ts'
+import { renderWithIntl } from '../../i18n/test-utils.tsx'
+import { OPEN_DATA_SECTIONS } from '../../openData.ts'
+import { REPOSITORY_URL } from '../../projectLinks.ts'
 import { OpenDataGraph } from './OpenDataGraph.tsx'
 import { OpenDataDataset } from './OpenDataDataset.tsx'
 import { OpenDataNavigation } from './OpenDataNavigation.tsx'
 import { OpenDataChangelog } from './OpenDataChangelog.tsx'
-import { DiscoveryFooter, DiscoveryHeader } from './DiscoveryChrome.tsx'
+import { DiscoveryFooter, DiscoveryHeader } from '../DiscoveryChrome.tsx'
 import { ContributionPage } from './ContributionPage.tsx'
 import { OpenDataQuery } from './OpenDataQuery.tsx'
 import { createTranslator } from 'next-intl'
@@ -131,7 +131,7 @@ describe('Open Data UI', () => {
   it('links changelog records to GitHub while retaining internal data loading', () => {
     const html = renderWithIntl(<OpenDataChangelog locale="en" />)
     expect(html).toContain(`${REPOSITORY_URL}/blob/main/public/open-data-changelog.json`)
-    expect(html).toContain(`${REPOSITORY_URL}/blob/main/docs/changelog.json`)
+    expect(html).toContain(`${REPOSITORY_URL}/blob/main/docs/changelog/changelog.json`)
     expect(html).not.toContain('download=')
     expect(html).toContain('Loading data changes')
   })

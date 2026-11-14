@@ -2,9 +2,9 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslations } from 'next-intl'
-import { localizePath, type Locale } from '../i18n/routing.ts'
-import { publicAsset } from '../publicAsset.ts'
-import { REPOSITORY_URL } from '../projectLinks.ts'
+import { localizePath, type Locale } from '../../i18n/routing.ts'
+import { publicAsset } from '../../publicAsset.ts'
+import { REPOSITORY_URL } from '../../projectLinks.ts'
 
 const statuses = ['added', 'updated', 'removed'] as const
 const categories = ['graph', 'previews', 'loops', 'artwork'] as const
@@ -100,7 +100,7 @@ export function OpenDataChangelog({ locale }: { locale: Locale }) {
           <a className="underline underline-offset-4" href={`${REPOSITORY_URL}/blob/main/public/open-data-changelog.json`} target="_blank" rel="noopener noreferrer">
             {t('source')} ↗
           </a>
-          <a className="underline underline-offset-4" href={`${REPOSITORY_URL}/blob/main/docs/changelog.json`} target="_blank" rel="noopener noreferrer">
+          <a className="underline underline-offset-4" href={`${REPOSITORY_URL}/blob/main/docs/changelog/changelog.json`} target="_blank" rel="noopener noreferrer">
             {t('fullHistory')} ↗
           </a>
         </div>

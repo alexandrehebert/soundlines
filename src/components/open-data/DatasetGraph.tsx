@@ -3,14 +3,14 @@
 import { useId, useLayoutEffect, useRef, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { ArrowUpRight, Network } from 'lucide-react'
-import type { NeighborEntry } from '../graph/graph.ts'
-import { neighbors } from '../graph/graph.ts'
-import type { GraphNode } from '../graph/types.ts'
-import { useExplorer } from '../ExplorerContext.ts'
-import { graphLabels } from '../i18n/graphLabels.ts'
-import { NODE_TYPE_COLORS } from '../theme.ts'
+import type { NeighborEntry } from '../../graph/graph.ts'
+import { neighbors } from '../../graph/graph.ts'
+import type { GraphNode } from '../../graph/types.ts'
+import { useExplorer } from '../../ExplorerContext.ts'
+import { graphLabels } from '../../i18n/graphLabels.ts'
+import { NODE_TYPE_COLORS } from '../../theme.ts'
 import { GraphCardHeader } from './GraphCardHeader.tsx'
-import { EntryLink } from './HomeLinks.tsx'
+import { EntryLink } from '../HomeLinks.tsx'
 
 const positions = [
   { x: 50, y: 50 },

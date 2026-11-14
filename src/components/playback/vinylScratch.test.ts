@@ -1,5 +1,22 @@
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi, type Mock } from 'vitest'
 import { MAX_SCRATCH_RATE, NORMAL_SPEED_DEG_PER_SEC, angleDelta, createScratchDeck, renderScratchSample, scratchRate, spectrumBands } from './vinylScratch.ts'
+
+interface TestGain {
+  gain: ReturnType<TestAudioContext['createGainParameter']>
+  connect: Mock<() => TestGain>
+  disconnect: Mock
+}
+
+interface TestBufferSource {
+  buffer: ReturnType<TestAudioContext['createBuffer']> | null
+  loop: boolean
+  playbackRate: { value: number; setTargetAtTime: Mock }
+  connect: Mock<(node: TestGain) => TestGain>
+  start: Mock<(when: number, offset: number) => void>
+  stop: Mock
+  disconnect: Mock
+  onended: (() => void) | null
+}
 
 class TestAudioContext {
   static instances: TestAudioContext[] = []
@@ -8,8 +25,8 @@ class TestAudioContext {
   currentTime = 0
   destination = {}
   gain = this.createGainParameter()
-  gains: ReturnType<TestAudioContext['createGain']>[] = []
-  sources: ReturnType<TestAudioContext['createBufferSource']>[] = []
+  gains: TestGain[] = []
+  sources: TestBufferSource[] = []
   resume = vi.fn(() => new Promise<void>(() => {}))
   close = vi.fn(() => Promise.resolve())
   decodeAudioData = vi.fn(async () => this.createBuffer(2, 4000, 1000))
@@ -27,8 +44,8 @@ class TestAudioContext {
     return { value: 0, setTargetAtTime: vi.fn(), cancelAndHoldAtTime: vi.fn(), linearRampToValueAtTime: vi.fn() }
   }
 
-  createGain() {
-    const node = {
+  createGain(): TestGain {
+    const node: TestGain = {
       gain: this.gains.length ? this.createGainParameter() : this.gain,
       connect: vi.fn(() => node),
       disconnect: vi.fn(),
@@ -45,16 +62,16 @@ class TestAudioContext {
     return { fftSize: 0, smoothingTimeConstant: 0, frequencyBinCount: 512, getByteFrequencyData: vi.fn((bins: Uint8Array) => bins.fill(255)) }
   }
 
-  createBufferSource() {
-    const source = {
-      buffer: null as ReturnType<TestAudioContext['createBuffer']> | null,
+  createBufferSource(): TestBufferSource {
+    const source: TestBufferSource = {
+      buffer: null,
       loop: false,
       playbackRate: { value: 0, setTargetAtTime: vi.fn() },
-      connect: vi.fn((node: ReturnType<TestAudioContext['createGain']>) => node),
+      connect: vi.fn((node: TestGain) => node),
       start: vi.fn((_when: number, _offset: number) => {}),
       stop: vi.fn(),
       disconnect: vi.fn(),
-      onended: null as (() => void) | null,
+      onended: null,
     }
     this.sources.push(source)
     return source

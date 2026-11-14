@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, userEvent, waitFor, within } from 'storybook/test'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
-import { GenreDisplaySelect } from '../App.tsx'
+import { GenreDisplaySelect } from '../components/ExplorerControls.tsx'
 
 const meta = {
   title: 'Controls/Genre layout',

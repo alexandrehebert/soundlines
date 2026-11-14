@@ -5,7 +5,11 @@ import { isDeepStrictEqual } from 'node:util'
 import { pathToFileURL } from 'node:url'
 import { REPOSITORY_URL } from '../../src/projectLinks.ts'
 
-const generated = new Set(['CHANGELOG.md', 'docs/changelog.json', 'public/open-data-changelog.json'])
+const markdownPath = 'CHANGELOG.md'
+const auditPath = 'docs/changelog/changelog.json'
+const assetPath = 'public/open-data-changelog.json'
+// Exclude the old audit path when replaying history, including the move itself.
+const generated = new Set([markdownPath, auditPath, assetPath, 'docs/changelog.json'])
 const graphPath = 'src/data/graph.json'
 const categories = ['graph', 'previews', 'loops', 'artwork', 'app', 'site', 'workflow', 'docs', 'other'] as const
 type Category = (typeof categories)[number]
@@ -264,7 +268,7 @@ function renderMarkdown(entries: Entry[]) {
     'Moves appear as a deletion and an addition. Generated-changelog-only commits and uncommitted changes are excluded.',
     'Dates are commit timestamps. Commit messages and file paths are historical records, not editorial release notes.', '',
     'Graph summaries count added, updated and removed entities; follow the commit link for exact field and binary changes.',
-    'The [full JSON audit](./docs/changelog.json) records every changed file, its Git status and all changed graph entity IDs.',
+    `The [full JSON audit](./${auditPath}) records every changed file, its Git status and all changed graph entity IDs.`,
     'Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.', '',
   ]
   for (const entry of entries) {
@@ -289,9 +293,9 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
   if (args.some((arg) => arg !== '--check')) throw new Error('Usage: npm run changelog [-- --check]')
   const result = buildChangelog()
   for (const [path, content] of [
-    ['docs/changelog.json', result.json],
-    ['CHANGELOG.md', result.markdown],
-    ['public/open-data-changelog.json', result.assetJson],
+    [auditPath, result.json],
+    [markdownPath, result.markdown],
+    [assetPath, result.assetJson],
   ]) {
     const file = resolve(result.root, path)
     if (args.includes('--check')) {

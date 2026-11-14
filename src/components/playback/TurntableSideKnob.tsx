@@ -1,7 +1,7 @@
 import { Moon, Sun } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import type { ColorTheme } from '../useColorTheme.ts'
-import './Home.css'
+import type { ColorTheme } from '../../useColorTheme.ts'
+import '../Home.css'
 
 export function TurntableSideKnob({ theme, onClick }: { theme: ColorTheme; onClick: () => void }) {
   const t = useTranslations('homeCopy')

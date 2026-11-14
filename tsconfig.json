@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2023",
+    "types": ["node"],
     "lib": [
       "DOM",
       "DOM.Iterable",
@@ -44,8 +45,6 @@
     ".storybook",
     "api",
     "server",
-    "vite.config.ts",
-    "**/*.test.ts",
-    "**/*.test.tsx"
+    "vite.config.ts"
   ]
 }

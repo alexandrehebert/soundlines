@@ -4,7 +4,7 @@ import type { Copy } from '../content.ts'
 export const it: Copy = {
   skip: 'Vai al contenuto', navigation: 'Dietro le quinte', language: 'Lingua', openApp: 'Apri Soundlines',
   openDataTitle: 'Open Data è nell’app Soundlines',
-  openDataDescription: 'Il set di dati, la guida alle query e il registro dei contenuti sono ora nell’app principale.',
+  openDataDescription: 'Esplora il set di dati di Soundlines nell’app.',
   openDataLink: 'Esplora gli Open Data',
   eyebrow: 'Dietro le quinte di un atlante musicale', source: 'Esplora il codice sorgente', next: 'Visita ogni laboratorio', resources: 'Approfondisci',
   footer: 'Un atlante curato, non una storia esaustiva. Fonti, incertezza e giudizio umano contano.',

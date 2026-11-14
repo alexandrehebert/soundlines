@@ -11,7 +11,7 @@ import { BrandLink } from './BrandLink.tsx'
 import { follow } from './followLink.ts'
 import { ViewLink } from './HomeLinks.tsx'
 import { SearchBar } from './SearchBar.tsx'
-import './Home.css'
+import './DiscoveryChrome.css'
 
 export type DiscoveryPage = 'home' | 'data' | 'jukebox'
 

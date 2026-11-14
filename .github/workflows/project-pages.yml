@@ -21,10 +21,6 @@ on:
       - 'src/**'
       - '.storybook/**'
       - '.github/workflows/project-pages.yml'
-      - '.github/workflows/changelog.yml'
-      - 'scripts/changelog/**'
-      - 'CHANGELOG.md'
-      - 'docs/changelog.json'
   workflow_dispatch:
 
 permissions:
@@ -38,20 +34,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
         with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 26
+          node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      # Generate from this build's history; do not wait for the bot's persistence commit.
-      - run: npm run changelog
       - run: npm run test:site
       - run: npm run build:site
       - run: npm run build-storybook:public
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: _site
 
@@ -68,4 +60,4 @@ jobs:
     steps:
       - name: Deploy GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5.0.1

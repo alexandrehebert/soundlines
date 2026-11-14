@@ -14,7 +14,6 @@ import { Legend } from './components/Diagrams.tsx'
 import { PreviewView } from './components/Previews.tsx'
 import { actors, copy, locales, repository, siteUrl, slugs, stats, type Flow, type FlowStep } from './content.ts'
 import { matchRoute, repositoryUrl, routeFile, routePath, routes } from './routes.ts'
-import { assetPageCount } from './changelog.ts'
 
 const root = fileURLToPath(new URL('../../', import.meta.url))
 const base = import.meta.env.BASE_URL
@@ -44,13 +43,6 @@ describe('project companion content', () => {
     const html = renderToStaticMarkup(<App locale={locale} slug="build" />)
     expect(html).toContain(title)
     expect(html).not.toContain(removedTitle)
-  })
-
-  it.each(locales)('routes the %s MCP page to Open Data in the app', (locale) => {
-    const html = renderToStaticMarkup(<App locale={locale} slug="mcp" />)
-    expect(html).toContain(new URL(`${locale}/data/query`, APP_URL).href)
-    expect(html).toContain(copy[locale].openDataLink)
-    expect(html).not.toContain('npx @modelcontextprotocol/inspector')
   })
 
   it.each(locales)('links Open Data from the %s music data resources, not the page navigation', (locale) => {
@@ -225,7 +217,7 @@ describe('landing loop player', () => {
 
 describe('routes', () => {
   it('covers every locale and page with clean, unique URLs', () => {
-    expect(routes).toHaveLength(locales.length * (slugs.length + assetPageCount - 1))
+    expect(routes).toHaveLength(locales.length * slugs.length)
     expect(new Set(routes.map(routeFile)).size).toBe(routes.length)
     expect(routePath({ locale: 'fr', slug: 'index' })).toBe('fr/')
     expect(routeFile({ locale: 'en', slug: 'graph' })).toBe('en/graph/index.html')
@@ -251,8 +243,7 @@ describe.each(routes)('$locale/$slug page', (route) => {
     expect(html.match(/<h1\b/g)).toHaveLength(1)
     expect(html).toContain('href="#main"')
     expect(html).toContain('id="main"')
-    const expectedTitle = route.slug === 'mcp' || route.slug === 'changelog' ? copy[route.locale].openDataTitle : page.title
-    expect(html).toContain(renderToStaticMarkup(<>{expectedTitle}</>))
+    expect(html).toContain(renderToStaticMarkup(<>{page.title}</>))
   })
 
   it('offers the same page in every language and links to the repository', () => {

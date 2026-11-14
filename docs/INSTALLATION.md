@@ -6,11 +6,6 @@ Install only the tools needed for your workflow. Running Soundlines does **not**
 require an AI assistant, an audio model server, a database, or cloud credentials.
 The agents and skills are contributor workflows, not application services.
 
-This guide uses the current repository documentation and scripts, plus the
-upstream installation references linked below. Earlier setup conversations were
-not retrievable during preparation; historical audio settings come from the
-repository's recorded provenance, not an assumed machine configuration.
-
 Commands are run from the repository root unless a section explicitly changes
 directory. The primary setup below is macOS; Apple Silicon is the recorded
 reference platform for audio production.
@@ -97,86 +92,10 @@ environment or global agent integrations.
 
 ## 3. Run the local app and Storybook
 
-### Native development
-
-```bash
-npm run dev
-```
-
-Open the URL printed by Next.js (normally `http://localhost:3000`). The French
-app is available at `/fr`. In another terminal:
-
-```bash
-npm run storybook
-```
-
-Native Storybook defaults to `http://localhost:6006`. For port overrides,
-production builds and server reuse, see [Development](./DEVELOPMENT.md).
-
-### Docker Compose
-
-Install [Docker Desktop](https://docs.docker.com/desktop/) for your OS and start
-it. On Linux, Docker Engine plus the Compose plugin is an alternative. Verify
-both the CLI and running daemon:
-
-```bash
-docker version
-docker compose version
-```
-
-Before starting anything, check for an existing service:
-
-```bash
-docker compose ps
-curl -fsS -o /dev/null http://localhost:5173/fr
-```
-
-Reuse a healthy existing service. Otherwise:
-
-```bash
-docker compose up -d
-docker compose logs --tail=50 soundlines storybook
-```
-
-| Service | Compose URL | Native default |
-| --- | --- | --- |
-| App | `http://localhost:5173` | `http://localhost:3000` |
-| Storybook | `http://localhost:6008` | `http://localhost:6006` |
-| ACE-Step, only for audio production | Not included in Compose | `http://127.0.0.1:8020` |
-
-Compose installs dependencies itself, bind-mounts the working tree, and keeps
-container dependencies in separate named volumes. Source changes hot reload;
-host `npm ci` is still needed for host-side tests and skill scripts.
-
-**Current compatibility caveat:** [compose.yaml](../compose.yaml) specifies
-`node:22-alpine`, while the package engine and CI use Node 26. A working existing
-container is not evidence of Node 26 parity, and `npm ci` can report an engine
-warning. Use the native Node 26 route when you need the declared runtime;
-updating the Compose runtime is a separate repository change.
-
-The container image also lacks Git and Python. Run graph diff tooling and the
-full artwork gate on the host unless you explicitly provision a container for
-them. Stop only services you own; do not remove dependency volumes to resolve
-an unrelated tool or browser error.
-
-### Core installation checks
-
-```bash
-npm run lint
-npm test
-npm run build
-```
-
-For graph-specific work, also run:
-
-```bash
-npm run review-status
-npm run validate:graph
-```
-
-The first command intentionally regenerates
-[review-status.json](../src/data/review-status.json); inspect the resulting diff.
-Graph procedures are documented in [Data](./DATA.md).
+For startup commands, ports, server reuse and checks, see [Development](./DEVELOPMENT.md).
+For containers, install and start [Docker Desktop](https://docs.docker.com/desktop/),
+or install Docker Engine and the Compose plugin on Linux. Verify the running
+daemon and plugin with `docker version` and `docker compose version`.
 
 ## 4. Enable repository agents and skills
 
