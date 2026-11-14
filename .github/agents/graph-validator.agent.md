@@ -1,6 +1,6 @@
 ---
 name: graph-validator
-description: 'Runs the deterministic Soundlines graph validation gate (npm run validate:graph) and explains each failure with its cause and fix. Use after graph edits, before commit or review, when the Graph quality CI workflow fails, or to check schema, ids, edge directions, formatting, locale overlay coverage, evidence bookkeeping and documented counts. Read-only.'
+description: 'Runs the deterministic Soundlines graph validation gate (npm run validate:graph) and explains each failure with its cause and fix. Use after graph edits, before commit or review, when the Graph quality CI workflow fails, or to check schema, ids, edge directions, formatting, locale overlay coverage, and evidence bookkeeping. Read-only.'
 argument-hint: 'Optional: a failing test name or CI log'
 tools: [read, search, execute]
 handoffs:

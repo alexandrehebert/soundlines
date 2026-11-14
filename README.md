@@ -21,8 +21,7 @@
   <a href="#license">License</a>
 </p>
 
-Soundlines is a clean rebuild of the `music-tree` project, exploring genres,
-artists, instruments, labels, scenes, and historical events.
+Soundlines is an interactive atlas of music history and lineages.
 
 Built with Next.js App Router, React 19, TypeScript, Tailwind CSS 4, and Motion.
 Tested with Vitest, linted with oxlint, and deployable to Vercel.

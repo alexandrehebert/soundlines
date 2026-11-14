@@ -1,6 +1,6 @@
 ---
 name: graph-validate
-description: 'Run the deterministic Soundlines graph validation gate and turn failures into fixes. Use after any edit to src/data/graph.json, a graph.<locale>.json overlay or docs/graph/evidence; before committing or reviewing graph changes; when "npm run validate:graph", the Graph quality CI workflow or a src/data test fails; or to check schema, ids, edge directions, formatting, overlay coverage, evidence bookkeeping and documented counts.'
+description: 'Run the deterministic Soundlines graph validation gate and turn failures into fixes. Use after any edit to src/data/graph.json, a graph.<locale>.json overlay or docs/graph/evidence; before committing or reviewing graph changes; when "npm run validate:graph", the Graph quality CI workflow or a src/data test fails; or to check schema, ids, edge directions, formatting, overlay coverage, and evidence bookkeeping.'
 argument-hint: 'Optional: a failing test name or CI log to diagnose'
 ---
 

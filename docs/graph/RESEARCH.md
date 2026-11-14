@@ -11,14 +11,14 @@ do not force them into a single Western-style lineage.
 - **Pop, soul & vocal**: Gospel; Motown sound (as a genre/style), with Motown
   Records represented separately as a label
 - **Caribbean**: mento
-- **Latin**: mambo, bolero, tropicália, vallenato
+- **Latin**: bolero and tropicália
 - **African**: mbira traditions, Moroccan chaâbi, Kabyle song, and additional
   regional and diasporic styles
 - **Hip-hop**: Memphis rap, UK drill, regional scenes not yet represented
 - **Rock & metal**: noise pop, psychobilly, post-metal
 - **Electronic**: additional techno sub-styles
-- **Asia & South Asia**: bhangra, ghazal, Indian film music, Chinese regional styles
-- **More places and tracks**: Rio and representative anthems
+- **Asia & South Asia**: ghazal, Indian film music, Chinese regional styles
+- **Tracks**: representative anthems
 
 ## Chronology coverage gaps
 
@@ -27,14 +27,14 @@ print, opera, several Asian and Bengali traditions, and additional North, West,
 Central, and East African styles, but the pre-1600 record and the post-2010 era
 remain thin. Persian, Ottoman, West African griot, Chinese regional, Japanese,
 and Indian court traditions still need their own documented lineages.
-Snapshot of dated nodes by `period.start`:
+Coverage snapshot from November 13, 2026, grouped by `period.start`. Check the live graph before using these figures to plan new work.
 
 | Era          | Genres | Artists | Tracks | Scenes | Instruments | Events |
 |--------------|-------:|--------:|-------:|-------:|------------:|-------:|
-| 500–1599     | 9      | 6       | 0      | 1      | 19          | 12     |
-| 1600–1899    | 26     | 16      | 8      | 5      | 31          | 17     |
-| 1900–1949    | 35     | 91      | 20     | 10     | 12          | 21     |
-| 1950–1999    | 149    | 502     | 153    | 38     | 9           | 43     |
+| 500–1599     | 9      | 6       | 0      | 1      | 20          | 12     |
+| 1600–1899    | 26     | 16      | 8      | 5      | 33          | 17     |
+| 1900–1949    | 35     | 91      | 20     | 10     | 13          | 21     |
+| 1950–1999    | 149    | 502     | 153    | 38     | 10          | 43     |
 | 2000–present | 20     | 90      | 21     | 2      | 0           | 29     |
 
 Priorities, in order:

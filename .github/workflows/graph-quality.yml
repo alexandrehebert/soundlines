@@ -48,7 +48,7 @@ jobs:
         run: npm run review-status
       - name: Fail if generated review status is stale
         run: git diff --exit-code -- src/data/review-status.json
-      - name: Validate graph data, catalogue dates, overlays, evidence and docs counts
+      - name: Validate graph data, catalogue dates, overlays and evidence
         env:
           GRAPH_BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: npm run validate:graph

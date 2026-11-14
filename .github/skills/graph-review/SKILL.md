@@ -66,7 +66,7 @@ Completeness and consistency:
 - [ ] Translation quality spot-check against `graph-translate/references/<locale>.md`
 - [ ] Festival changes: register, source-audit JSON/MD and Wikipedia ledger tell the same story
 - [ ] Standalone entries are genuinely unlinkable, not under-researched
-- [ ] GRAPH.md §2/§6 counts and priorities still read correctly (§1 is tested)
+- [ ] Affected family counts in GRAPH.md §2 match the graph
 
 ## 5. Report
 

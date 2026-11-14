@@ -264,42 +264,14 @@ editorial weight used to filter the chronology, not a ranking.
   ancient Greek theory), anchor the event to the medieval form that the
   timeline represents, and explain the earlier history in the description.
 
-### Existing genre ids (do not duplicate)
+### Check for existing entities
 
-```
-genre:acid-house genre:acid-jazz genre:acid-techno genre:afro-house genre:afrobeat genre:afrobeats genre:algerian-chaabi genre:alt-country genre:alternative-rap
-genre:alternative-rock genre:amapiano genre:ambient genre:ambient-house genre:ambient-techno genre:americana genre:andean-folk genre:arabesk genre:arabic-maqam
-genre:bachata genre:banda-sinaloense genre:baroque genre:baul-songs genre:bebop genre:benga genre:big-beat genre:black-metal
-genre:bluegrass genre:blues genre:blues-rock genre:boom-bap genre:bossa-nova genre:brazilian-funk genre:breakbeat
-genre:breakbeat-hardcore genre:breakcore genre:britpop genre:calypso genre:cantopop genre:carnatic genre:chicago-blues genre:chicago-house
-genre:chicha genre:chillwave genre:chopped-and-screwed genre:city-pop genre:classical-period genre:congolese-rumba genre:conscious-hip-hop genre:contemporary-r-and-b genre:cool-jazz
-genre:corrido-tumbado genre:country genre:country-pop genre:crunk genre:cuarteto genre:cumbia genre:dabke-music genre:dance-pop genre:dancehall genre:dangdut genre:darksynth genre:death-metal
-genre:deep-house genre:delta-blues genre:detroit-techno genre:disco genre:doo-wop genre:doom-metal genre:downtempo
-genre:dream-pop genre:drill genre:drum-and-bass genre:dub genre:dub-techno genre:dubstep
-genre:east-coast-rap genre:edm genre:egyptian-shaabi genre:electro genre:electro-house genre:electroclash genre:emo
-genre:emo-rap genre:ethio-jazz genre:fado genre:filmi genre:flamenco genre:folk genre:footwork genre:free-jazz genre:french-house genre:french-touch genre:funana genre:funk
-genre:g-funk genre:gabber genre:gagaku genre:gamelan genre:gangsta-rap genre:garage-house
-genre:garage-rock genre:girl-groups genre:glam-rock genre:gnawa genre:go-go genre:gothic-rock genre:gqom genre:grime
-genre:grunge genre:hard-bop genre:hard-rock genre:hardcore-punk genre:hardstyle genre:heavy-metal genre:hi-nrg
-genre:highlife genre:hindustani-classical genre:hip-hop genre:honky-tonk genre:horrorcore genre:house
-genre:hyperpop genre:hyphy genre:idm genre:impressionism genre:indie-rock genre:industrial-metal genre:italo-disco
-genre:j-pop genre:jazz genre:jazz-funk genre:jazz-fusion genre:jazz-rap genre:juju genre:jungle
-genre:k-pop genre:khaliji genre:khoomei genre:krautrock genre:kwaito genre:latin genre:latin-jazz
-genre:latin-trap genre:liquid-drum-and-bass genre:mahraganat genre:makossa genre:maloya genre:mambo genre:math-rock genre:mbalax genre:medieval genre:melodic-death-metal genre:mento genre:merengue genre:metalcore genre:minimal-techno genre:minimalism
-genre:modal-jazz genre:modern-classical genre:morna genre:musica-criolla genre:neo-soul genre:neoclassicism genre:new-jack-swing genre:new-orleans-jazz genre:new-wave genre:noise-rock
-genre:norteno genre:nu-metal genre:old-school-rap genre:opm genre:outlaw-country genre:pansori genre:peking-opera genre:pop genre:pop-punk
-genre:post-hardcore genre:post-punk genre:post-rock genre:power-metal genre:progressive-house genre:progressive-metal genre:progressive-rock genre:psychedelic-rock genre:psytrance
-genre:punjabi-bhangra genre:punk-rock genre:qawwali genre:r-and-b genre:rai genre:rebetiko genre:reggae genre:reggaeton genre:renaissance
-genre:rock genre:rock-and-roll genre:rocksteady genre:romantic genre:roots-reggae genre:russian-folk genre:salsa
-genre:samba genre:schlager genre:sega genre:serialism genre:sertanejo genre:shoegaze genre:ska genre:soca genre:son-cubano genre:soukous
-genre:soul genre:soul-jazz genre:southern-rap genre:southern-rock genre:spiritual-jazz genre:stoner-rock genre:surf-rock genre:swing
-genre:synth-pop genre:synthwave genre:taarab genre:tango genre:tech-house genre:techno genre:thrash-metal
-genre:trance genre:trap-rap genre:trip-hop genre:trot genre:uk-funky genre:uk-garage genre:vallenato genre:vaporwave genre:varietes-francaises genre:vocal-jazz
-genre:waiata-a-ringa genre:west-coast-rap genre:zouk
-```
+Search the live graph before proposing a node. Try its name, alternate spellings,
+and likely slug. Use the matching ID when adding a connection.
 
-Always check `graph.json` for an existing artist, label, place, track, or scene
-before creating one.
+```sh
+node .github/skills/graph-edit/scripts/lookup.mjs --search "<name or slug>"
+```
 
 ---
 
