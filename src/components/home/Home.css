@@ -672,7 +672,22 @@
   box-shadow: 0 2rem 5rem rgb(0 0 0 / .5);
 }
 
-.soundtrails-sheet[data-variant="modal"] .soundtrails-sheet-body { padding: 0 1.75rem 1.75rem; scrollbar-gutter: stable; }
+.soundtrails-sheet[data-variant="modal"] .soundtrails-sheet-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.75rem 1.75rem;
+  scrollbar-gutter: stable;
+}
+.soundtrails-sheet[data-variant="modal"] .soundtrails-progress { flex: none; }
+.soundtrails-sheet[data-variant="modal"] .soundtrails-stop {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+.soundtrails-sheet[data-variant="modal"] .soundtrails-listen-for {
+  margin-top: auto;
+  padding-top: 1.1rem;
+}
 .soundtrails-sheet[data-variant="modal"] .soundtrails-sheet-footer { padding: 1rem 1.75rem; }
 
 .soundtrails-sheet[data-variant="sheet"] .soundtrails-controls { flex-wrap: nowrap; }
