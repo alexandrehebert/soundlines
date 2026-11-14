@@ -1,0 +1,37 @@
+{
+  "slug": "tamboo-bamboo",
+  "instrument": "instrument:tamboo-bamboo",
+  "family": "percussion",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://ncctt.org/history-of-carnival-and-its-elements/",
+      "shows": "Describes tubes cut to different lengths for contrasting pitches in the Carnival percussion ensemble."
+    },
+    {
+      "url": "https://mittcott.com/history-of-pan/",
+      "shows": "Describes bamboo cut in several lengths and sizes to provide contrasting ensemble voices."
+    }
+  ],
+  "silhouette": "A small group of upright bamboo tubes of unequal length, with open rims and narrow nodes showing the shape of the stalks.",
+  "features": [
+    "Bamboo tubes in three contrasting lengths",
+    "Open upper rims",
+    "Visible nodes across the stalks",
+    "A slender striker beside the short tube"
+  ],
+  "iconFeatures": [
+    "Unequal upright tubes with open rims",
+    "Short diagonal striker beside the tubes"
+  ],
+  "avoid": [
+    "A pan flute with many evenly spaced pipes",
+    "A stand, drumheads or metal bowls"
+  ],
+  "geometry": {
+    "view": "Front three-quarter",
+    "proportions": "Show three separate tubes of different heights and widths as representative examples.",
+    "partLayout": "Align the bases, expose the open rims and show the separate striker to the right."
+  },
+  "notes": "The three tubes illustrate different sizes from an ensemble. The long tube is shown in its upright stamping position."
+}

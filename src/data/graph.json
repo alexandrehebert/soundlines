@@ -31056,6 +31056,136 @@
         "start": 1994,
         "end": null
       }
+    },
+    {
+      "id": "instrument:madeiran-machete",
+      "type": "instrument",
+      "name": "Madeiran machete (braguinha)",
+      "addedOn": "2026-11-13",
+      "family": "strings",
+      "period": {
+        "start": 1846,
+        "precision": "year"
+      },
+      "description": "Small fretted lute from Madeira with four single strings, traditionally tuned D–G–B–D. An 1846 manuscript preserves pieces for it, and Madeiran migrants brought the instrument to Hawaiʻi in the late nineteenth century.",
+      "sources": [
+        "https://www.mim.be/en/collection-piece/braguinha",
+        "https://www.arquipelagos.pt/imagem/machete-drumond-de-vasconcelos-1846/",
+        "https://www.metmuseum.org/art/collection/search/501343"
+      ]
+    },
+    {
+      "id": "instrument:juno-60",
+      "type": "instrument",
+      "name": "Roland JUNO-60",
+      "addedOn": "2026-11-13",
+      "family": "electronic",
+      "period": {
+        "start": 1982,
+        "precision": "year"
+      },
+      "description": "Six-voice analog synthesizer released in 1982. It pairs digitally controlled oscillators with a 61-key keyboard, 56 patch memories and Roland’s DCB interface.",
+      "sources": [
+        "https://www.rolandus.com/blog/2014/02/19/roland-synth-chronicle-1973-through-2013/",
+        "https://support.roland.com/hc/en-us/articles/201955179-JUNO-60-Technical-Specifications"
+      ]
+    },
+    {
+      "id": "instrument:tamboo-bamboo",
+      "type": "instrument",
+      "name": "Tamboo bamboo",
+      "addedOn": "2026-11-13",
+      "family": "percussion",
+      "period": {
+        "start": 1890,
+        "precision": "decade"
+      },
+      "description": "Trinidadian Carnival percussion made from bamboo tubes of different lengths. Players stamp larger tubes on the ground and strike smaller ones to layer rhythms for street processions and chants.",
+      "sources": [
+        "https://ncctt.org/history-of-carnival-and-its-elements/",
+        "https://mittcott.com/history-of-pan/",
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07010.pdf"
+      ]
+    },
+    {
+      "id": "genre:madeiran-traditional-music",
+      "type": "genre",
+      "name": "Madeiran traditional music",
+      "addedOn": "2026-11-13",
+      "family": "country-folk",
+      "period": {
+        "start": 1846,
+        "precision": "year"
+      },
+      "description": "Madeira’s traditional repertoire includes work calls, ballads, song duels, social dances and instrumental pieces. The nineteenth-century machete repertoire provides a dated reference, and local ensembles have collected and revived island music since the late twentieth century.",
+      "sources": [
+        "https://folkways.si.edu/portugal-music-and-dance-from-madeira/world/music/album/smithsonian",
+        "https://www.arquipelagos.pt/imagem/machete-drumond-de-vasconcelos-1846/",
+        "https://www.visitmadeira.com/en/what-to-do/culture-passionates/folklore/",
+        "https://raizesdoatlantico.madeira.gov.pt/artistas-2026/xarabanda-2026.html"
+      ]
+    },
+    {
+      "id": "artist:xarabanda",
+      "type": "artist",
+      "name": "Xarabanda",
+      "kind": "group",
+      "period": {
+        "start": 1981,
+        "precision": "year"
+      },
+      "description": "Madeiran ensemble founded as Algozes in 1981. It researches and performs local repertoire and adopted the name Xarabanda with its first album in 1989.",
+      "sources": [
+        "https://raizesdoatlantico.madeira.gov.pt/artistas-2026/xarabanda-2026.html",
+        "https://folkways.si.edu/portugal-music-and-dance-from-madeira/world/music/album/smithsonian"
+      ],
+      "addedOn": "2026-11-13"
+    },
+    {
+      "id": "artist:grupo-folclorico-da-ponta-do-sol",
+      "type": "artist",
+      "name": "Grupo Folclórico da Ponta do Sol",
+      "kind": "group",
+      "period": {
+        "start": 1996,
+        "precision": "circa"
+      },
+      "description": "Madeiran folklore ensemble documented in Smithsonian Folkways field recordings of dance songs and local dances from the 1990s.",
+      "sources": [
+        "https://folkways.si.edu/portugal-music-and-dance-from-madeira/world/music/album/smithsonian"
+      ],
+      "addedOn": "2026-11-13"
+    },
+    {
+      "id": "artist:grupo-de-folclore-do-porto-santo",
+      "type": "artist",
+      "name": "Grupo de Folclore do Porto Santo",
+      "kind": "group",
+      "period": {
+        "start": 1996,
+        "precision": "circa"
+      },
+      "description": "Folklore ensemble from Porto Santo in the Madeira archipelago. Its recorded repertoire includes the dance song Baile da Meia-Volta.",
+      "sources": [
+        "https://folkways.si.edu/portugal-music-and-dance-from-madeira/world/music/album/smithsonian"
+      ],
+      "addedOn": "2026-11-13"
+    },
+    {
+      "id": "instrument:helicon",
+      "type": "instrument",
+      "name": "Helicon",
+      "addedOn": "2026-11-13",
+      "family": "brass",
+      "period": {
+        "start": 1860,
+        "precision": "decade"
+      },
+      "description": "Valved bass brass instrument in the tuba family, with circular tubing that wraps around the player for use while standing or marching. An instrument made by Distin & Co. in the 1860s survives in Duke University’s collection.",
+      "sources": [
+        "https://sites.duke.edu/dumic/instruments/brass/north-america/helicon-tuba-in-e-flat/",
+        "https://www.scielo.org.mx/scielo.php?lng=en&nrm=iso&pid=S0187-73722024000100109&script=sci_arttext&tlng=en"
+      ]
     }
   ],
   "edges": [
@@ -44643,15 +44773,13 @@
     },
     {
       "id": "lineage:electric-bass-double-bass",
-      "type": "derived_from",
-      "from": "instrument:electric-bass",
-      "to": "instrument:double-bass",
+      "type": "influences",
+      "from": "instrument:double-bass",
+      "to": "instrument:electric-bass",
       "confidence": "medium",
-      "note": "The electric bass was designed as a portable, amplified alternative to the upright/double bass and retained its tuning/register function, but is a distinct fretted instrument. Keep only with this design-ancestry qualification.",
+      "note": "The upright bass set the tuning and musical role of the Fender Precision Bass, which offered a more portable, amplified alternative with frets.",
       "sources": [
-        "https://music.si.edu/story/5-intriguing-electric-guitars-our-collections",
-        "https://press.umich.edu/Books/T/The-Bastard-Instrument",
-        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1835"
+        "https://www.fender.com/articles/behind-the-scenes/legendary-lows-the-precision-bass-story"
       ]
     },
     {
@@ -44660,23 +44788,22 @@
       "from": "instrument:electric-guitar",
       "to": "instrument:guitar",
       "confidence": "medium",
-      "note": "Electric guitar is a guitar form whose amplified pickup changes sound production and performance context. Derivation is reasonable, but it is not merely an acoustic guitar with amplification; construction and playing practices diversified.",
+      "note": "Early electric guitars adapted existing guitar forms for amplification; later solid-body designs could dispense with the acoustic soundbox.",
       "sources": [
-        "https://music.si.edu/story/5-intriguing-electric-guitars-our-collections",
+        "https://mim.org/guitars-that-changed-music-history/",
         "https://publications.gc.ca/collections/collection_2018/mstc-cstm/NM33-1-19-eng.pdf"
       ]
     },
     {
       "id": "lineage:electric-piano-piano",
-      "type": "derived_from",
-      "from": "instrument:electric-piano",
-      "to": "instrument:piano",
+      "type": "influences",
+      "from": "instrument:piano",
+      "to": "instrument:electric-piano",
       "confidence": "medium",
-      "note": "“Electric piano” covers electro-mechanical instruments such as Rhodes/Wurlitzer with different sound-producing mechanisms, as well as electric amplification variants. Retain ancestry only with a note that the label spans distinct mechanisms, not a uniform piano subtype.",
+      "note": "The acoustic piano guided the design of electric pianos. The Neo-Bechstein kept hammer-struck strings; Wurlitzer and Rhodes used reeds or tines.",
       "sources": [
-        "https://americanhistory.si.edu/collections/object/nmah_1203041",
         "https://publications.gc.ca/collections/collection_2018/mstc-cstm/NM33-1-19-eng.pdf",
-        "https://mim.org/news/exploring-the-history-of-the-piano/"
+        "https://collection.powerhouse.com.au/object/611665"
       ]
     },
     {
@@ -45360,9 +45487,10 @@
       "from": "instrument:minimoog",
       "to": "instrument:modular-synthesizer",
       "confidence": "high",
-      "note": "The Minimoog translated modular-synth concepts into a compact fixed-configuration instrument; it was not itself modular.",
+      "note": "The Minimoog grew out of Moog’s modular system. The Model B prototype used modular circuit boards behind a single control panel.",
       "sources": [
-        "https://support.apple.com/en-euro/guide/logicpro/lgsife418277/mac"
+        "https://artsandculture.google.com/story/minimoog-prototypes-emeapp/TgWhRtaYLMR3Zg?hl=en",
+        "https://moogfoundation.org/timeline/"
       ]
     },
     {
@@ -45377,19 +45505,6 @@
         "https://jazzinamerica.org/LessonPlan/11/6/145"
       ],
       "note": "Grove defines modal jazz as a style of jazz; RILM and Jazz at Lincoln Center likewise describe it as a jazz style/movement. The hierarchy is direct."
-    },
-    {
-      "id": "lineage:modular-synthesizer-theremin",
-      "type": "influences",
-      "from": "instrument:theremin",
-      "to": "instrument:modular-synthesizer",
-      "confidence": "low",
-      "note": "The present direction is theremin → modular synthesizer. Sources support Moog’s early theremin work and subsequent synthesizer development, but not a strong causal design lineage from theremin technology to modular synthesis. Reframe as Moog’s career/instrument-making influence and lower confidence.",
-      "sources": [
-        "https://www.metmuseum.org/art/collection/search/739621",
-        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/8038",
-        "https://moogfoundation.org/timeline/"
-      ]
     },
     {
       "id": "lineage:neo-soul-hip-hop",
@@ -45494,7 +45609,7 @@
       "from": "instrument:piano",
       "to": "instrument:harpsichord",
       "confidence": "medium",
-      "note": "Cristofori developed the piano from the harpsichord maker’s craft and keyboard instrument, replacing plucked jacks with hammer action; the piano is a distinct invention, not a harpsichord subtype.",
+      "note": "Cristofori developed the first piano from the harpsichord form, using a new hammer action in place of plucked strings to let players vary the volume by touch.",
       "sources": [
         "https://www.metmuseum.org/art/collection/search/501788",
         "https://www.metmuseum.org/es/essays/the-piano-the-pianofortes-of-bartolomeo-cristofori-1655-1731"
@@ -45792,18 +45907,6 @@
       ]
     },
     {
-      "id": "lineage:saxophone-clarinet",
-      "type": "influences",
-      "from": "instrument:clarinet",
-      "to": "instrument:saxophone",
-      "confidence": "medium",
-      "note": "Adolphe Sax experimented by fitting a bass-clarinet mouthpiece to an ophicleide; this clarinet-derived single-reed idea contributed to the saxophone, alongside a new brass body and bore. This is a design influence, not a claim that the saxophone descends from the clarinet alone.",
-      "sources": [
-        "https://www.metmuseum.org/art/collection/search/504684",
-        "https://collectionsdumusee.philharmoniedeparis.fr/histoires-d-instruments-le-saxophone.aspx?_lg=fr-FR"
-      ]
-    },
-    {
       "id": "lineage:shoegaze-indie-rock",
       "type": "subgenre_of",
       "from": "genre:shoegaze",
@@ -46010,10 +46113,90 @@
       "from": "instrument:tr-909",
       "to": "instrument:tr-808",
       "confidence": "high",
-      "note": "Roland developed the TR-909 as a successor to the TR-808, adding sampled cymbals and MIDI.",
+      "note": "Roland developed the TR-909 as the successor to the TR-808, retaining analog drums and adding sampled hi-hats and cymbals as well as MIDI.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Roland_TR-909",
         "https://www.roland.com/uk/promos/roland_tr-909/?lang=en-GB"
+      ]
+    },
+    {
+      "id": "lineage:saxophone-bass-clarinet",
+      "type": "influences",
+      "from": "instrument:bass-clarinet",
+      "to": "instrument:saxophone",
+      "confidence": "medium",
+      "note": "The bass clarinet influenced the mouthpiece of Sax’s early saxophone; contemporary accounts differ on how closely its body followed the ophicleide.",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/504684",
+        "https://historicbrass.org/images/hbj/hbj-2018/HBSJ_2018_JL01_004_Carter.pdf"
+      ]
+    },
+    {
+      "id": "lineage:biwa-pipa",
+      "type": "derived_from",
+      "from": "instrument:biwa",
+      "to": "instrument:pipa",
+      "confidence": "medium",
+      "note": "The Japanese biwa developed from an early form of the Chinese pipa; it retains the use of a broad plectrum.",
+      "sources": [
+        "https://www.metmuseum.org/es/essays/the-pipa",
+        "https://www.metmuseum.org/art/collection/search/44801"
+      ]
+    },
+    {
+      "id": "lineage:sho-sheng",
+      "type": "derived_from",
+      "from": "instrument:sho",
+      "to": "instrument:sheng",
+      "confidence": "medium",
+      "note": "The Japanese shō developed from the Chinese sheng and became part of gagaku court music.",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/503052"
+      ]
+    },
+    {
+      "id": "lineage:lute-oud",
+      "type": "derived_from",
+      "from": "instrument:lute",
+      "to": "instrument:oud",
+      "confidence": "medium",
+      "note": "The European lute developed from the medieval Arab oud tradition introduced into Iberia.",
+      "sources": [
+        "https://www.metmuseum.org/de/essays/the-lute",
+        "https://www.clevelandart.org/print/art/1918.350"
+      ]
+    },
+    {
+      "id": "lineage:trumpet-natural-trumpet",
+      "type": "derived_from",
+      "from": "instrument:trumpet",
+      "to": "instrument:natural-trumpet",
+      "confidence": "medium",
+      "note": "The valved trumpet developed from earlier natural trumpets as makers added valves to change the sounding length of the tubing.",
+      "sources": [
+        "https://libmma.contentdm.oclc.org/digital/api/collection/p16028coll12/id/14150/download",
+        "https://www.yamaha.com/en/musical_instrument_guide/trumpet/structure/structure002.html"
+      ]
+    },
+    {
+      "id": "lineage:drum-kit-bass-drum",
+      "type": "influences",
+      "from": "instrument:bass-drum",
+      "to": "instrument:drum-kit",
+      "confidence": "medium",
+      "note": "Fitting a bass drum with a foot pedal helped make the drum kit possible: one player could operate the bass drum while playing other percussion by hand.",
+      "sources": [
+        "https://folkways.si.edu/the-birth-of-an-icon-learning-and-performing-the-origins-of-the-drum-set-and-early-jazz-drumming-in-new-orleans-louisiana/music/tools-for-teaching/smithsonian"
+      ]
+    },
+    {
+      "id": "lineage:charango-guitar",
+      "type": "influences",
+      "from": "instrument:guitar",
+      "to": "instrument:charango",
+      "confidence": "medium",
+      "note": "Spanish guitar features helped shape the Andean charango alongside Indigenous adaptations.",
+      "sources": [
+        "https://www.metmuseum.org/pt/perspectives/curator-interview-armadilloshell-charango-or-jarana"
       ]
     },
     {
@@ -59626,6 +59809,129 @@
         "https://music.yale.edu/2011/04/01/student-viewpoint-master-class-in-natural-trumpet"
       ],
       "confidence": "high"
+    },
+    {
+      "id": "key:xarabanda-madeiran-traditional-music",
+      "type": "key_artist_of",
+      "from": "artist:xarabanda",
+      "to": "genre:madeiran-traditional-music",
+      "confidence": "medium",
+      "sources": [
+        "https://raizesdoatlantico.madeira.gov.pt/artistas-2026/xarabanda-2026.html",
+        "https://folkways.si.edu/portugal-music-and-dance-from-madeira/world/music/album/smithsonian"
+      ]
+    },
+    {
+      "id": "key:grupo-folclorico-da-ponta-do-sol-madeiran-traditional-music",
+      "type": "key_artist_of",
+      "from": "artist:grupo-folclorico-da-ponta-do-sol",
+      "to": "genre:madeiran-traditional-music",
+      "confidence": "medium",
+      "sources": [
+        "https://folkways.si.edu/portugal-music-and-dance-from-madeira/world/music/album/smithsonian"
+      ]
+    },
+    {
+      "id": "key:grupo-de-folclore-do-porto-santo-madeiran-traditional-music",
+      "type": "key_artist_of",
+      "from": "artist:grupo-de-folclore-do-porto-santo",
+      "to": "genre:madeiran-traditional-music",
+      "confidence": "medium",
+      "sources": [
+        "https://folkways.si.edu/portugal-music-and-dance-from-madeira/world/music/album/smithsonian"
+      ]
+    },
+    {
+      "id": "featured:madeiran-machete-madeiran-traditional-music",
+      "type": "featured_in",
+      "from": "instrument:madeiran-machete",
+      "to": "genre:madeiran-traditional-music",
+      "confidence": "medium",
+      "sources": [
+        "https://www.mim.be/en/collection-piece/braguinha",
+        "https://www.visitmadeira.com/en/what-to-do/culture-passionates/folklore/",
+        "https://xarabanda.pt/tangedores-do-atlantico/"
+      ]
+    },
+    {
+      "id": "featured:juno-60-synth-pop",
+      "type": "featured_in",
+      "from": "instrument:juno-60",
+      "to": "genre:synth-pop",
+      "confidence": "medium",
+      "sources": [
+        "https://rolandcorp.com.au/blog/juno-legendary-heritage-future-classic"
+      ]
+    },
+    {
+      "id": "featured:tamboo-bamboo-calypso",
+      "type": "featured_in",
+      "from": "instrument:tamboo-bamboo",
+      "to": "genre:calypso",
+      "confidence": "medium",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/SFW40453.pdf",
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07010.pdf",
+        "https://ncctt.org/history-of-carnival-and-its-elements/"
+      ]
+    },
+    {
+      "id": "lineage:ukulele-madeiran-machete",
+      "type": "derived_from",
+      "from": "instrument:ukulele",
+      "to": "instrument:madeiran-machete",
+      "confidence": "medium",
+      "sources": [
+        "https://www.mim.be/en/collection-piece/braguinha",
+        "https://www.metmuseum.org/art/collection/search/501343"
+      ]
+    },
+    {
+      "id": "lineage:juno-106-juno-60",
+      "type": "derived_from",
+      "from": "instrument:juno-106",
+      "to": "instrument:juno-60",
+      "confidence": "high",
+      "sources": [
+        "https://www.rolandus.com/blog/2014/02/19/roland-synth-chronicle-1973-through-2013/"
+      ]
+    },
+    {
+      "id": "lineage:steelpan-tamboo-bamboo",
+      "type": "influences",
+      "from": "instrument:tamboo-bamboo",
+      "to": "instrument:steelpan",
+      "confidence": "medium",
+      "note": "Trinidadian Carnival bands moved from bamboo percussion to metal containers, creating the setting in which steelpan developed.",
+      "sources": [
+        "https://ncctt.org/history-of-carnival-and-its-elements/",
+        "https://www.natt.gov.tt/node/184",
+        "https://mittcott.com/history-of-pan/"
+      ]
+    },
+    {
+      "id": "lineage:sousaphone-helicon",
+      "type": "derived_from",
+      "from": "instrument:sousaphone",
+      "to": "instrument:helicon",
+      "confidence": "medium",
+      "note": "At John Philip Sousa’s request, J. W. Pepper adapted the wearable helicon into a bass brass instrument with a large upward-facing bell.",
+      "sources": [
+        "https://www.scielo.org.mx/scielo.php?lng=en&nrm=iso&pid=S0187-73722024000100109&script=sci_arttext&tlng=en",
+        "https://sites.duke.edu/dumic/instruments/brass/north-america/helicon-tuba-in-e-flat/",
+        "https://museumofmakingmusic.org/momm_artifact/bb-sousaphone/"
+      ]
+    },
+    {
+      "id": "featured:helicon-new-orleans-jazz",
+      "type": "featured_in",
+      "from": "instrument:helicon",
+      "to": "genre:new-orleans-jazz",
+      "confidence": "medium",
+      "sources": [
+        "https://www.ibew.org.uk/dvarch/DV01731.pdf",
+        "https://pearl-hifi.com/06_Lit_Archive/02_PEARL_Arch/Vol_16/Sec_53/Hi-Fi_Stereo_Review/1960-11-hifi-stereo-review.pdf"
+      ]
     }
   ]
 }

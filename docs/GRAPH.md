@@ -116,7 +116,7 @@ Every genre **must** have a `family`. Lanes are rendered in this order:
 | `classical`         | Classical              | 18     | Western eras, impressionism, serialism, Hindustani, Carnatic, gagaku, pansori |
 | `blues-soul`        | Blues, R&B & Soul      | 11      | blues, R&B, soul, funk, neo-soul, new jack swing, contemporary R&B |
 | `jazz`              | Jazz                   | 16     | swing, bebop, modal, free, fusion, acid, vocal, Latin, spiritual jazz |
-| `country-folk`      | Country & Folk         | 15      | country, honky-tonk, alt-country, Americana, folk, Baul songs, khoomei |
+| `country-folk`      | Country & Folk         | 16      | country, honky-tonk, alt-country, Americana, folk, Baul songs, khoomei |
 | `rock`              | Rock                   | 12     | rock and roll, blues-rock, hard-rock, krautrock, surf-rock |
 | `alternative-punk`  | Alternative & Punk     | 17     | punk, post-punk, indie-rock, grunge, shoegaze, new-wave |
 | `metal`             | Metal                  | 11      | heavy, thrash, death, black, doom, nu, industrial metal, metalcore |
@@ -133,7 +133,7 @@ Every genre **must** have a `family`. Lanes are rendered in this order:
 | `techno`            | Techno & Trance        | 10      | techno styles, trance, psytrance, gabber, hardstyle |
 | `breakbeat-bass`    | Breakbeat & Bass       | 9      | breakbeat hardcore, jungle, drum and bass, garage, dubstep, breakcore |
 
-These are navigational families, not strict genre ancestry. The 239 genres
+These are navigational families, not strict genre ancestry. The 240 genres
 currently have 3–20 members per family: enough granularity to avoid an oversized
 Electronic lane without creating one-genre lanes. Keep related styles together
 as the catalogue grows, and revisit the grouping if it becomes unbalanced rather

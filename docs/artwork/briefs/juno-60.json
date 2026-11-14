@@ -1,0 +1,37 @@
+{
+  "slug": "juno-60",
+  "instrument": "instrument:juno-60",
+  "family": "electronic",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://artsandculture.google.com/story/roland-juno-6-and-roland-juno-60-eboardmuseum/7gVRlRgIbJB0Gw?hl=en-US",
+      "shows": "Museum hardware photos show the flat panel, wood side cheeks and grouping of controls above the keyboard."
+    },
+    {
+      "url": "https://support.roland.com/hc/en-us/articles/201955179-JUNO-60-Technical-Specifications",
+      "shows": "Roland identifies the 61-key keyboard and programmable six-voice architecture."
+    }
+  ],
+  "silhouette": "Broad shallow keyboard with wooden side cheeks, a flat dark control panel and a keybed across most of its width.",
+  "features": [
+    "Sixty-one-key keyboard",
+    "Wooden side cheeks around a shallow panel",
+    "Grouped sliders and a row of square patch controls",
+    "Pitch control to the left of the keybed"
+  ],
+  "iconFeatures": [
+    "Low keyboard with horizontal control panel",
+    "Square patch buttons above the keys"
+  ],
+  "avoid": [
+    "An upright organ or hinged-panel Minimoog",
+    "A raised display or manufacturer wordmark"
+  ],
+  "geometry": {
+    "view": "Top three-quarter",
+    "proportions": "Low, wide rectangular chassis, with keys taking up most of the width.",
+    "partLayout": "Keyboard below groupings of sliders and square controls. Pitch lever sits at the lower left."
+  },
+  "notes": "Use the original JUNO-60 hardware and omit logos and tiny legends."
+}

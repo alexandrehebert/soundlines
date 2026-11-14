@@ -1,0 +1,37 @@
+{
+  "slug": "helicon",
+  "instrument": "instrument:helicon",
+  "family": "brass",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://sites.duke.edu/dumic/instruments/brass/north-america/helicon-tuba-in-e-flat/",
+      "shows": "Distin helicon with circular brass tubing, three Périnet valves and low flared bell."
+    },
+    {
+      "url": "https://sites.duke.edu/dumic/instruments/brass/north-america/helicon-tuba-in-bb-flat/",
+      "shows": "Another helicon specimen showing the wearable circular coil and a bell set low at the side."
+    }
+  ],
+  "silhouette": "Wearable brass bass with a wide circular coil and a compact flaring bell carried to one side at the height of the coil.",
+  "features": [
+    "Circular outer tube",
+    "Three valves on the inner loop",
+    "Low bell opening diagonally to the side",
+    "Angled mouthpipe entering the valve section"
+  ],
+  "iconFeatures": [
+    "Circular coil in playing position",
+    "Side bell with a short flare"
+  ],
+  "avoid": [
+    "A sousaphone’s tall bell",
+    "A concert tuba’s upright oval layout"
+  ],
+  "geometry": {
+    "view": "Front three-quarter",
+    "proportions": "Circular coil dominates the instrument, with a bell staying near its upper edge.",
+    "partLayout": "Place the valve group inside the coil, with the mouthpiece near one shoulder and bell emerging at the other side."
+  },
+  "notes": "Use the three-valve E-flat Distin specimen as the reference for the main shapes."
+}

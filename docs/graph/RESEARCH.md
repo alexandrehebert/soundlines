@@ -24,7 +24,7 @@ do not force them into a single Western-style lineage.
 
 Soundlines catalogs instruments prominent in a documented musical tradition,
 as well as specific studio devices that shaped a recognizable sound. The
-catalog includes 122 instruments after the November 2026 expansion. It now
+catalog includes 131 instruments as of November 13, 2026. It now
 covers more of Peking opera, Carnatic music, gamelan, Arabic maqam, mbalax,
 sega, maloya, and Caribbean traditions. Where a source documents an older
 instrument through a surviving object or recording, the date may serve as a
@@ -36,6 +36,11 @@ the tradition that gives it context. Add that tradition to the graph first
 when the current catalog lacks a suitable genre. For existing links based
 on modern performances, such as the kora in mbalax, seek additional
 coverage of the instrument's home tradition.
+
+The [instrument lineage audit](./evidence/audits/graph-edges-032-instrument-lineage.md)
+distinguishes gaps in catalog coverage from comparisons that still lack evidence
+of direct influence or descent. Its follow-up adds the Madeiran machete,
+Roland JUNO-60, tamboo bamboo and the helicon.
 
 ## Chronology coverage gaps
 

@@ -21,6 +21,7 @@ export const PENDING_GENRE_PREVIEWS: ReadonlySet<string> = new Set<string>([
   'genre:funana',
   'genre:khaliji',
   'genre:mahraganat',
+  'genre:madeiran-traditional-music',
   'genre:maloya',
   'genre:mento',
   'genre:musica-criolla',

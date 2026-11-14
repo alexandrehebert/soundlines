@@ -435,6 +435,7 @@ describe('graph.json integrity', () => {
       'country-folk': [
         'country', 'folk', 'bluegrass', 'russian-folk', 'baul-songs', 'khoomei',
         'americana', 'alt-country', 'honky-tonk', 'outlaw-country', 'country-pop', 'flamenco', 'fado', 'rebetiko', 'waiata-a-ringa',
+        'madeiran-traditional-music',
       ],
       rock: [
         'rock-and-roll', 'rock', 'blues-rock', 'psychedelic-rock', 'progressive-rock',
@@ -603,6 +604,7 @@ describe('graph.json integrity', () => {
       'genre:schlager',
       'genre:rebetiko',
       'genre:fado',
+      'genre:madeiran-traditional-music',
       'genre:flamenco',
       'genre:carnatic',
       'genre:russian-folk',

@@ -2,6 +2,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 import type { ReactNode } from 'react'
 import { ExplorerContext } from '../../ExplorerContext.ts'
 import { buildIndex } from '../../graph/graph.ts'
+import rawGraph from '../../data/graph.json'
 import { MAX_YEAR, MIN_YEAR, TIMELINE_PADDING, timeTicks, yearToX, type TimelineOrder } from '../../graph/layout.ts'
 import { createTimelineModel, type TimelineView } from '../../graph/timeline.ts'
 import type { MusicGraph } from '../../graph/types.ts'
@@ -152,6 +153,15 @@ describe('timeline viewport rendering', () => {
 
     viewport.verticalViewport = { top: -100, bottom: -50 }
     expect(renderTimeline('artist', 'oldest-first', [1700, 2026])).not.toContain('data-timeline-link=')
+  })
+
+  it.each(['family', 'oldest-first'] as const)('draws the audited instrument lineage in historical direction in %s order', (order) => {
+    const markup = renderTimeline('instrument', order, [MIN_YEAR, MAX_YEAR], null, rawGraph as MusicGraph)
+    expect(markup).toContain('data-timeline-link="lineage:biwa-pipa" data-source="instrument:pipa" data-target="instrument:biwa" data-relation="derived_from"')
+    expect(markup).toContain('data-timeline-link="lineage:saxophone-bass-clarinet" data-source="instrument:bass-clarinet" data-target="instrument:saxophone" data-relation="influences"')
+    expect(markup).toContain('data-timeline-link="lineage:drum-kit-bass-drum" data-source="instrument:bass-drum" data-target="instrument:drum-kit" data-relation="influences"')
+    expect(markup).not.toContain('data-timeline-link="lineage:modular-synthesizer-theremin"')
+    expect(markup).not.toContain('data-timeline-link="lineage:saxophone-clarinet"')
   })
 })
 

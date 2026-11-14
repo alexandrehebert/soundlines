@@ -4361,3 +4361,9 @@
 {"url": "https://archives.motownmuseum.org/people-acts/people-acts/active_tab/actor/item/gordy-berry-1929-present", "attempts": [], "status": "reviewed", "reviewAttempts": [{"date": "2026-11-04", "method": "web", "status": "reviewed"}]}
 {"url": "https://www.loc.gov/exhibits/civil-rights-act/civil-rights-era-timeline.html", "attempts": [], "status": "reviewed", "reviewAttempts": [{"date": "2026-11-04", "method": "web", "status": "reviewed"}]}
 {"url": "https://www.motownmuseum.org/legacy/berry-gordy/", "attempts": [], "status": "reviewed", "reviewAttempts": [{"date": "2026-11-04", "method": "web", "status": "reviewed"}]}
+{"url":"https://music.si.edu/story/5-intriguing-electric-guitars-our-collections","status":"access-rejected","attempts":[],"reviewAttempts":[{"date":"2026-11-13","method":"web","status":"access-rejected"}]}
+{"url":"https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1835","status":"forbidden","attempts":[],"reviewAttempts":[{"date":"2026-11-13","method":"web","status":"forbidden"}]}
+{"url":"https://americanhistory.si.edu/collections/object/nmah_1203041","status":"timeout","attempts":[],"reviewAttempts":[{"date":"2026-11-13","method":"web","status":"timeout"}]}
+{"url":"https://support.apple.com/en-euro/guide/logicpro/lgsife418277/mac","status":"rate-limited","attempts":[],"reviewAttempts":[{"date":"2026-11-13","method":"web","status":"rate-limited"}]}
+{"url":"https://omeka-s.grinnell.edu/s/MusicalInstruments/item/8038","status":"forbidden","attempts":[],"reviewAttempts":[{"date":"2026-11-13","method":"web","status":"forbidden"}]}
+{"url":"https://collectionsdumusee.philharmoniedeparis.fr/histoires-d-instruments-le-saxophone.aspx?_lg=fr-FR","status":"timeout","attempts":[],"reviewAttempts":[{"date":"2026-11-13","method":"web","status":"timeout"}]}

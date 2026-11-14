@@ -317,7 +317,8 @@ instrument's approximate first documented appearance in its recognizable form,
 from the koto (c. 700) and lute to the Roland TR-808, the TB-303, and Auto-Tune.
 All current instruments are still in use, so no bar ends. Curved links show sourced
 lineage between instruments. For example, the electric guitar derives from the guitar,
-the TR-909 derives from the TR-808, and the clarinet influenced the saxophone.
+the TR-909 derives from the TR-808, and the bass clarinet influenced the
+mouthpiece of the early saxophone.
 Each instrument bar has a family-colored icon at its leading edge; off-screen
 indicators and undated instrument entries show the same icon.
 See the [instrument artwork workflow](./DATA.md#instrument-artwork) for assets,

@@ -21,3 +21,7 @@
 - Removed `lineage:trance-acid-house`: checked sources did not establish the graph's claimed derived-from relationship/direction; disposition note records evidence and caveat.
 - Retyped `lineage:trip-hop-hip-hop` as `influence:hip-hop-trip-hop`: scholarly sources support hip-hop as one influence on trip-hop/Bristol sound, alongside dub/reggae and post-punk, not an uncomplicated single-parent derivation.
 - Removed `lineage:vaporwave-hip-hop`: checked sources did not establish the graph's claimed derived-from relationship/direction; disposition note records evidence and caveat.
+
+- Removed `lineage:modular-synthesizer-theremin`: Moog’s early theremin work and the development of modular synthesis are documented, but the sources do not establish a direct instrument design influence at the scope of these entries. Disposition: [removed__modular-synthesizer-theremin.md](edges/removed__modular-synthesizer-theremin.md).
+- Replaced `lineage:saxophone-clarinet` with `lineage:saxophone-bass-clarinet`: the mouthpiece evidence identifies the bass clarinet. Disposition: [removed__saxophone-clarinet.md](edges/removed__saxophone-clarinet.md).
+- Retyped `lineage:electric-bass-double-bass` and `lineage:electric-piano-piano` from `derived_from` to `influences` and reversed their stored endpoints to keep the ancestor first. Dispositions: [electric bass](edges/removed__electric-bass-double-bass.md) and [electric piano](edges/removed__electric-piano-piano.md).

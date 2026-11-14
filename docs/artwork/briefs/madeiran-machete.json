@@ -1,0 +1,37 @@
+{
+  "slug": "madeiran-machete",
+  "instrument": "instrument:madeiran-machete",
+  "family": "strings",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.mim.be/en/collection-piece/braguinha",
+      "shows": "The conventional guitar-shaped specimen, no. 2497, and the four single strings."
+    },
+    {
+      "url": "https://www.visitmadeira.com/en/what-to-do/culture-passionates/folklore/",
+      "shows": "Regional context for the instrument among Madeiran traditional instruments."
+    }
+  ],
+  "silhouette": "Small waisted lute shown face-on, body at left and a short fretted neck extending to the right.",
+  "features": [
+    "Waisted wooden body",
+    "Round sound hole over the upper body",
+    "Four single strings running from the bridge to four pegs",
+    "Short fretted neck joining a flared head"
+  ],
+  "iconFeatures": [
+    "Waisted body and compact neck held diagonally",
+    "Round sound hole and flared head"
+  ],
+  "avoid": [
+    "Portuguese guitar with a fan-shaped head",
+    "The museum’s novelty fish- and heart-shaped bodies"
+  ],
+  "geometry": {
+    "view": "Soundboard front",
+    "proportions": "Compact body with a short neck and small flared head.",
+    "partLayout": "Bridge on lower bout. Neck, hole and bridge share the centerline."
+  },
+  "notes": "Use the museum’s conventional guitar-shaped Madeiran specimen."
+}

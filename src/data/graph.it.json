@@ -6002,6 +6002,35 @@
     "instrument:natural-trumpet": {
       "name": "Tromba naturale",
       "description": "Tromba senza valvole che produce le note della serie armonica naturale. I musicisti barocchi usavano gli armonici acuti per le melodie."
+    },
+    "instrument:madeiran-machete": {
+      "name": "Machete di Madeira (braguinha)",
+      "description": "Piccolo liuto a tasti di Madeira con quattro corde singole, tradizionalmente accordate in re–sol–si–re. Un manoscritto del 1846 ne conserva alcuni brani. I migranti di Madeira portarono lo strumento alle Hawaii alla fine del XIX secolo."
+    },
+    "instrument:juno-60": {
+      "name": "Roland JUNO-60",
+      "description": "Sintetizzatore analogico a sei voci uscito nel 1982. Abbina oscillatori a controllo digitale a una tastiera di 61 tasti, 56 memorie per i suoni e l’interfaccia DCB di Roland."
+    },
+    "instrument:tamboo-bamboo": {
+      "name": "Tamboo bamboo",
+      "description": "Percussione del carnevale di Trinidad composta da tubi di bambù di diverse lunghezze. I musicisti battono i tubi più grandi a terra e percuotono quelli più piccoli per sovrapporre ritmi nelle sfilate e nei canti."
+    },
+    "genre:madeiran-traditional-music": {
+      "name": "Musica tradizionale di Madeira",
+      "description": "Il repertorio tradizionale di Madeira comprende richiami di lavoro, ballate, duelli cantati, danze collettive e brani strumentali. Il repertorio ottocentesco del machete offre un riferimento datato. Dalla fine del Novecento, gruppi locali raccolgono e riportano in vita le musiche dell’isola."
+    },
+    "artist:xarabanda": {
+      "description": "Gruppo di Madeira fondato nel 1981 con il nome Algozes. Studia e interpreta il repertorio locale e ha adottato il nome Xarabanda con il primo album nel 1989."
+    },
+    "artist:grupo-folclorico-da-ponta-do-sol": {
+      "description": "Gruppo folcloristico di Madeira documentato da registrazioni sul campo di Smithsonian Folkways con canti da ballo e danze locali degli anni Novanta."
+    },
+    "artist:grupo-de-folclore-do-porto-santo": {
+      "description": "Gruppo folcloristico di Porto Santo, nell’arcipelago di Madeira. Il suo repertorio registrato comprende il canto da ballo Baile da Meia-Volta."
+    },
+    "instrument:helicon": {
+      "name": "Elicòne",
+      "description": "Ottone grave a valvole della famiglia della tuba. Il tubo circolare avvolge il musicista e permette di suonare in piedi o in marcia. La collezione della Duke University conserva un esemplare costruito da Distin & Co. negli anni Sessanta dell’Ottocento."
     }
   },
   "edges": {
@@ -7707,13 +7736,13 @@
       "note": "Stesso errore di categoria-ombrello del bordo house: la definizione accademica elenca esplicitamente trance tra i generi EDM e gli stati EDM è un tipo/categoria, non un genere."
     },
     "lineage:electric-bass-double-bass": {
-      "note": "Il basso elettrico è stato progettato come un'alternativa portatile e amplificata al basso verticale/doppio e ha mantenuto la sua funzione di sintonizzazione/registrazione, ma è uno strumento separato. Tenere solo con questa qualifica di design-ancestry."
+      "note": "Il contrabbasso ha fornito l’accordatura e il ruolo musicale del Fender Precision Bass, un’alternativa amplificata, più facile da trasportare e dotata di tasti."
     },
     "lineage:electric-guitar-guitar": {
-      "note": "Chitarra elettrica è una forma di chitarra il cui pickup amplificato cambia la produzione sonora e il contesto di performance. Derivation è ragionevole, ma non è solo una chitarra acustica con amplificazione; la costruzione e le pratiche di gioco diversificate."
+      "note": "Le prime chitarre elettriche adattarono all’amplificazione forme di chitarra già esistenti; i successivi modelli a corpo pieno poterono fare a meno della cassa di risonanza."
     },
     "lineage:electric-piano-piano": {
-      "note": "Il “piano elettrico” copre gli strumenti meccanici electro come Rhodes/Wurlitzer con diversi meccanismi di produzione del suono, così come le varianti di amplificazione elettrica. Mantenere la discendenza solo con una nota che l'etichetta abbraccia meccanismi distinti, non un sottotipo piano uniforme."
+      "note": "Il pianoforte acustico ha orientato la progettazione dei pianoforti elettrici. Il Neo-Bechstein ha mantenuto le corde percosse da martelletti; Wurlitzer e Rhodes hanno usato lamelle o barrette vibranti."
     },
     "lineage:electro-house-electro": {
       "note": "Le fonti accademiche confermano l’electro house come sottogenere house riconosciuto, ma le prove accessibili non stabiliscono l’electro stesso come genere madre di pari peso. L’etichetta sonora si riferisce spesso a timbri in stile electro all’interno della house; considerarlo una componente stilistica, non un’origine del genere da due generi madre comprovata."
@@ -7842,13 +7871,10 @@
       "note": "Minimalism è un movimento compositivo nell'arte / musica classica contemporanea, ma appare anche nella musica popolare ed elettronica. `modern-classical` è un genitore ampio utile per questo grafico, non una tassonomia esclusiva. Medio."
     },
     "lineage:minimoog-modular-synthesizer": {
-      "note": "Il Minimoog tradusse concetti modulari-synth in uno strumento compatto di configurazione fissa; non era esso stesso modulare."
+      "note": "Il Minimoog è nato dal sistema modulare di Moog. Il prototipo Model B usava schede del sistema modulare dietro un unico pannello di controllo."
     },
     "lineage:modal-jazz": {
       "note": "Grove definisce modal jazz come uno stile di jazz; RILM e Jazz al Lincoln Center lo descrivono anche come uno stile/movimento jazz. La gerarchia è diretta."
-    },
-    "lineage:modular-synthesizer-theremin": {
-      "note": "La direzione attuale è theremin → sintetizzatore modulare. Le fonti supportano il lavoro iniziale di Moog e il successivo sviluppo del sintetizzatore, ma non una forte linea di design causale dalla tecnologia theremin alla sintesi modulare. Ristrutturazione come la carriera di Moog/influenza-strument-making e minore fiducia."
     },
     "lineage:neo-soul-hip-hop": {
       "note": "Neo-soul si è sviluppato in un ambiente contemporary R&B a forma di hip-hop, con ritmo hip-hop e produzione che influenza alcuni artisti. La revival Soul e la strumentazione live sono più definiti; il medium è appropriato e il bordo non deve implicare la fusione uguale in tutti gli neo-soul."
@@ -7872,7 +7898,7 @@
       "note": "Old-school rap è un primo sottoinsieme storico/stile di hip-hop, anche se i limiti di periodo e la distinzione tra musica rap e cultura hip-hop variano. Tenere medio e preservare il senso del periodo."
     },
     "lineage:piano-harpsichord": {
-      "note": "Cristofori ha sviluppato il pianoforte dallo strumento di artigianato e tastiera del produttore di clavicembali, sostituendo jack con azione martello; il pianoforte è un'invenzione distinta, non un sottotipo di clavicembalo."
+      "note": "Cristofori sviluppò il primo pianoforte a partire dalla forma del clavicembalo. Una nuova meccanica a martelletti sostituiva il pizzico delle corde e permetteva di variare il volume con il tocco."
     },
     "lineage:pop-punk-punk-rock": {
       "note": "Pop-punk combina la velocità/attitudine di punk con la melodia pop ed è regolarmente classificata nella famiglia punk-rock. Le tassonomie variano, ma la direzione da bambino a genitore è suono."
@@ -7931,9 +7957,6 @@
     "lineage:salsa-son-cubano": {
       "note": "Il figlio cubano è un antenato fondamentale di salsa, insieme ad altre forme cubane e caraibiche; questa non è una derivazione esclusiva."
     },
-    "lineage:saxophone-clarinet": {
-      "note": "Adolphe Sax ha sperimentato montando un bocchino basso-clarinet a un oppicleide; questa idea a singolo reed clarinetto ha contribuito al sassofono, insieme a un nuovo corpo in ottone e cinghia. Questa è un'influenza progettuale, non una pretesa che il sassofono discenda dal clarinetto solo."
-    },
     "lineage:shoegaze-indie-rock": {
       "note": "Shoegaze è un sottogenere rock ed è fortemente associato a scene ed etichette indie-rock. Si sovrappone anche con rumore-pop e dream-pop; indie-rock è un genitore defensibile, se non esclusivo."
     },
@@ -7983,7 +8006,7 @@
       "note": "Thrash metal è un sottogenere estremo/pesante-metal. Ha scene distinte e influenze punk, ma questa tassonomia genitore è stabilita. Alto."
     },
     "lineage:tr-909-tr-808": {
-      "note": "Roland sviluppò il TR-909 come successore del TR-808, aggiungendo cimbali e MIDI."
+      "note": "Roland ha progettato la TR-909 come successore della TR-808, mantenendo i suoni analogici dei tamburi e aggiungendo campioni di charleston e piatti, oltre al MIDI."
     },
     "lineage:trap-rap-hip-hop": {
       "note": "DDEX colloca esplicitamente trap sotto HipHop; AllMusic e NPR lo collegano al rap e al Southern hip-hop. La relazione genitoriale è diretta."
@@ -9529,6 +9552,33 @@
     },
     "key:calypso-rose-soca": {
       "note": "Caribbean Beat presenta Calypso Rose come un’icona del calypso che si è unita al soca e cita la sua registrazione del 1977, «Give More Tempo». Ciò sostiene il suo ruolo rappresentativo agli inizi del soca, anche se l’articolo esaminato non documenta un’influenza diretta sugli artisti successivi."
+    },
+    "lineage:biwa-pipa": {
+      "note": "Il biwa giapponese deriva da una forma antica del pipa cinese e conserva l’uso di un ampio plettro."
+    },
+    "lineage:charango-guitar": {
+      "note": "Alcune caratteristiche della chitarra spagnola contribuirono a dare forma al charango andino, insieme agli adattamenti indigeni."
+    },
+    "lineage:drum-kit-bass-drum": {
+      "note": "L’aggiunta di un pedale alla grancassa contribuì alla nascita della batteria: una sola persona poteva suonare la grancassa con il piede e altre percussioni con le mani."
+    },
+    "lineage:lute-oud": {
+      "note": "Il liuto europeo deriva dalla tradizione medievale dell’oud arabo, introdotta nella penisola iberica."
+    },
+    "lineage:saxophone-bass-clarinet": {
+      "note": "Il clarinetto basso influenzò il bocchino dei primi sassofoni di Sax; le testimonianze dell’epoca divergono su quanto il corpo riprendesse quello dell’oficleide."
+    },
+    "lineage:sho-sheng": {
+      "note": "Lo shō giapponese deriva dallo sheng cinese ed è entrato a far parte del gagaku, la musica di corte giapponese."
+    },
+    "lineage:trumpet-natural-trumpet": {
+      "note": "La tromba a valvole deriva dalle precedenti trombe naturali: i costruttori aggiunsero valvole per variare la lunghezza effettiva del tubo."
+    },
+    "lineage:steelpan-tamboo-bamboo": {
+      "note": "I gruppi del carnevale di Trinidad passarono dalle percussioni di bambù ai recipienti metallici, creando il contesto in cui nacque lo steelpan."
+    },
+    "lineage:sousaphone-helicon": {
+      "note": "Su richiesta di John Philip Sousa, J. W. Pepper adattò l’elicòne da indossare, ricavandone un ottone grave con una grande campana rivolta verso l’alto."
     }
   }
 }

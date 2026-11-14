@@ -60,6 +60,15 @@ def rosette(x, radius=10):
 
 
 def plucked(name):
+    if name == 'madeiran-machete':
+        return (path('M-28-16C-40-28-61-20-70-25C-97-43-126-30-126 0'
+                     'C-126 30-97 43-70 25C-61 20-40 28-28 16Z', WOOD)
+                + path('M-37-8L47-5V5L-37 8Z', DARK)
+                + path('M47-6L74-11Q82 0 74 11L47 6Z', '#8d593a', GOLD)
+                + rosette(-57, 9) + rect(-103, -9, 5, 18, DARK)
+                + frets(-33, 47, 6, 'M{x} -6v12')
+                + pegs([(x, y) for x in (56, 69) for y in (-13, 13)])
+                + strings(-100, 69, 4, 2.8))
     if name == 'algerian-mandole':
         # Long scale and teardrop soundbox on the Farid Chafaa reference.
         return (path('M-39-10Q-67-31-85-32Q-118-32-120 0Q-118 32-85 32Q-67 31-39 10Z', WOOD)
@@ -292,6 +301,35 @@ def synthesizer(name):
             body += ellipse(x+offset,y,5,5,'#27384b','#a8cde2')
             body += path(f'M{x+offset} {y}v-3', stroke='#dae9f5', w=1)
     return body + panel_text(-91,-46,'MINIMOOG MODEL D',5.5,'#d6eefa')
+
+
+def juno_60():
+    sliders = ''.join(
+        path(f'M{x}-29v18', stroke='#718697', w=.85)
+        + rect(x-1.6, -26 + (i % 4) * 3, 3.2, 3, '#bfccd7', .45)
+        for i, x in enumerate((-88, -79, -64, -55, -46, -30, -21, -12, 4, 13, 22, 35, 44, 53))
+    )
+    buttons = ''.join(rect(65 + i * 6, -12, 4, 4, '#d2d8e0', .45) for i in range(8))
+    return (rect(-128, -40, 256, 83, '#253241', 3, '#afc4d3')
+            + rect(-128, -40, 9, 83, '#906246', 2, '#c69668')
+            + rect(119, -40, 9, 83, '#906246', 2, '#c69668')
+            + path('M-117-2H117', stroke='#597f9a', w=1.8)
+            + sliders + buttons + rect(68, -29, 13, 7, '#6e3d43', 1)
+            + keyboard(-86, 5, 202, 32, 36)
+            + rect(-115, 14, 21, 13, DARK, 1)
+            + path('M-109 20h8', stroke='#b1c0c9', w=2))
+
+
+def tamboo_bamboo():
+    tubes = ''
+    for x, top, width in ((-46, -59, 27), (-7, -38, 23), (29, -15, 19)):
+        bottom = 51
+        tubes += rect(x, top, width, bottom-top, '#9c7846', 3, '#e3be7f')
+        tubes += ellipse(x + width / 2, top, width / 2, 4, '#352a23', '#dfb873')
+        tubes += path(f'M{x+4} {top+8}V{bottom-3}', stroke='#c7a568', w=1.4)
+        for node in range(top + 26, bottom - 7, 25):
+            tubes += path(f'M{x+1} {node}q{width/2-1:g} 3 {width-2} 0', stroke='#5e4c31', w=2)
+    return tubes + path('M55 44l23-63', stroke='#c99f61', w=4)
 
 
 def piccolo():
@@ -1042,6 +1080,18 @@ def sousaphone():
             + brass_mouthpiece(-53,-34))
 
 
+def helicon():
+    return (brass_tube('M-37-23C-55-17-65-3-64 15C-62 43-32 60 4 55'
+                       'C35 50 53 25 53 5C53-11 44-24 32-28', 10, 1.8)
+            + brass_tube('M-48-27H-23Q-15-27-15-15V-6', 4.5)
+            + brass_tube('M-36 3V18Q-36 30-23 30H17Q32 30 32 17V-23', 6)
+            + brass_tube('M-26 9V16Q-26 21-18 21H-14Q-10 21-10 13V8', 3.8)
+            + brass_pistons((-34,-22,-10), -10, 28)
+            + path('M24-29Q49-30 60-41L77-24Q65-13 43-16Q33-17 24-18Z', WOOD)
+            + '<g transform="rotate(-41 70 -32)">'+ellipse(70,-32,5,12,'#735022',GOLD)+'</g>'
+            + brass_mouthpiece(-55,-27))
+
+
 def cornetto():
     return (path('M-102-21C-33-22 28-12 87 12L101 17L96 32C41 6-31-11-102-13Z', '#734c32', '#f0c982')
             + path('M-95-17Q8-17 94 24', stroke='#dfa962', w=1.65)
@@ -1060,6 +1110,10 @@ def natural_trumpet():
 
 
 ART = {
+    'helicon': (lambda _: helicon(), 1.18, 'M4 7h4m4 0C7 3 2 8 3 14c1 6 8 8 12 4 2-2 3-6 1-8m-2 1c2 0 5 0 7-2l-3-5c-1 2-3 3-6 3M7 10v5m3-5v5'),
+    'madeiran-machete': (plucked, 1.28, 'M11 10V4L10 2h4l-1 2v6c2-1 4 0 3 2l-.5 2c0 1 2.5 2 2.5 4 0 4-12 4-12 0 0-2 2.5-3 2.5-4L8 12c-1-2 1-3 3-2ZM12 15h.01M10 18h4'),
+    'juno-60': (lambda _: juno_60(), 1.05, 'M2 7h20v10H2zM2 12h20M7 12v5m3-5v5m3-5v5m3-5v5m3-5v5M5 9v1m4-1v1m4-1v1m4-1h2'),
+    'tamboo-bamboo': (lambda _: tamboo_bamboo(), 1.13, 'M3 4q2-2 4 0v16H3ZM3 5h4m-4 6h4m-4 5h4M10 7q2-2 4 0v13h-4Zm0 1h4m-4 7h4m3-3q1.5-2 3 0v8h-3Zm0 1h3m.5-4 1.5-4'),
     'cornet': (lambda _: cornet(), 1.29, 'M2 9h4m0 0h10q3-1 5-4v11q-3-4-7-4H7q-3 0-3 3t3 3h7q4 0 4-3M7 7v11m3-11v11m3-11v8'),
     'flugelhorn': (lambda _: flugelhorn(), 1.22, 'M2 8h5m0 0h7q4-1 8-5v13q-4-4-9-4H6q-2 0-2 3v2q0 3 3 3h9q4 0 4-4M7 6v11m3-11v11m3-11v10'),
     'sousaphone': (lambda _: sousaphone(), 1.1, 'M4 7h4m-2 0a8 8 0 1 0 10 1m-2 3 2-7 5-2 1 7-6 2m-9 0v5m3-5v5'),
@@ -1161,6 +1215,7 @@ def illustration(kind, slug, width, height, geometry, scale):
         'cornet': ('#fbbf24', '#6c520f'),
         'flugelhorn': ('#fbbf24', '#6c520f'),
         'sousaphone': ('#fbbf24', '#6c520f'),
+        'helicon': ('#fbbf24', '#6c520f'),
         'cornetto': ('#fbbf24', '#6c520f'),
         'natural-trumpet': ('#fbbf24', '#6c520f'),
         'trombone': ('#fbbf24', '#6c520f'),
@@ -1169,6 +1224,7 @@ def illustration(kind, slug, width, height, geometry, scale):
         'tuba': ('#fbbf24', '#6c520f'),
         'euphonium': ('#fbbf24', '#6c520f'),
         'yamaha-dx7': ('#38bdf8', '#18516b'),
+        'juno-60': ('#38bdf8', '#18516b'),
         'mellotron': ('#38bdf8', '#18516b'),
         'fairlight-cmi': ('#38bdf8', '#18516b'),
         'jupiter-8': ('#38bdf8', '#18516b'),
@@ -1177,6 +1233,7 @@ def illustration(kind, slug, width, height, geometry, scale):
         'marimbula': ('#ef4444', '#671d1d'),
         'cuica': ('#ef4444', '#671d1d'),
         'bass-drum': ('#ef4444', '#671d1d'),
+        'tamboo-bamboo': ('#ef4444', '#671d1d'),
         'dominican-tambora': ('#ef4444', '#671d1d'),
         'djembe': ('#ef4444', '#671d1d'),
         'ney': ('#34d399', '#165b42'),
@@ -1246,6 +1303,7 @@ ICON_ANGLES = dict.fromkeys(
     ('algerian-mandole', 'charango', 'sarod', 'sitar', 'viola', 'violin'), 42,
 )
 ICON_ANGLES.update({
+    'madeiran-machete': 42,
     'bassoon': -58,
     'bouzouki': 38,
     'guembri': 40,
