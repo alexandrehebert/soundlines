@@ -2,6 +2,3184 @@
   "version": 4,
   "entries": [
     {
+      "commit": "2c6a896e1a092a133c89dfd02e2dd71416be4537",
+      "parent": "78ba80647a3eab4330d22f4fc78798652aee5f96",
+      "date": "2026-11-13T23:02:31-05:00",
+      "subject": "Keep Explorer statistics accessible at tablet widths",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "src/App.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/Explorer.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/explorer/ExplorerOptions.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/components/navigation/SearchBar.tsx"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/EXPLORER.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commit": "78ba80647a3eab4330d22f4fc78798652aee5f96",
+      "parent": "2b97b4e2c1115dbbef2959c2d2530a0e94c3cd04",
+      "date": "2026-11-13T23:02:12-05:00",
+      "subject": "Expand instrument catalog and improve artwork briefs",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "genre:arabic-maqam",
+              "name": "Arabic maqam traditions",
+              "status": "updated"
+            },
+            {
+              "id": "genre:carnatic",
+              "name": "Carnatic music",
+              "status": "updated"
+            },
+            {
+              "id": "genre:classical-period",
+              "name": "Classical era",
+              "status": "updated"
+            },
+            {
+              "id": "genre:fado",
+              "name": "Fado",
+              "status": "updated"
+            },
+            {
+              "id": "genre:folk",
+              "name": "Folk revival",
+              "status": "updated"
+            },
+            {
+              "id": "genre:gagaku",
+              "name": "Gagaku",
+              "status": "updated"
+            },
+            {
+              "id": "genre:gamelan",
+              "name": "Gamelan",
+              "status": "updated"
+            },
+            {
+              "id": "genre:hindustani-classical",
+              "name": "Hindustani classical",
+              "status": "updated"
+            },
+            {
+              "id": "genre:maloya",
+              "name": "Maloya",
+              "status": "updated"
+            },
+            {
+              "id": "genre:mbalax",
+              "name": "Mbalax",
+              "status": "updated"
+            },
+            {
+              "id": "genre:merengue",
+              "name": "Merengue",
+              "status": "updated"
+            },
+            {
+              "id": "genre:pansori",
+              "name": "Pansori",
+              "status": "updated"
+            },
+            {
+              "id": "genre:peking-opera",
+              "name": "Peking opera",
+              "status": "updated"
+            },
+            {
+              "id": "genre:pop",
+              "name": "Pop",
+              "status": "updated"
+            },
+            {
+              "id": "genre:progressive-rock",
+              "name": "Progressive rock",
+              "status": "updated"
+            },
+            {
+              "id": "genre:punjabi-bhangra",
+              "name": "Punjabi bhangra",
+              "status": "updated"
+            },
+            {
+              "id": "genre:renaissance",
+              "name": "Renaissance music",
+              "status": "updated"
+            },
+            {
+              "id": "genre:romantic",
+              "name": "Romantic music",
+              "status": "updated"
+            },
+            {
+              "id": "genre:salsa",
+              "name": "Salsa",
+              "status": "updated"
+            },
+            {
+              "id": "genre:samba",
+              "name": "Samba",
+              "status": "updated"
+            },
+            {
+              "id": "genre:sega",
+              "name": "Séga",
+              "status": "updated"
+            },
+            {
+              "id": "genre:son-cubano",
+              "name": "Son cubano",
+              "status": "updated"
+            },
+            {
+              "id": "genre:synth-pop",
+              "name": "Synth-pop",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:balafon",
+              "name": "Balafon",
+              "status": "added"
+            },
+            {
+              "id": "instrument:bass-drum",
+              "name": "Bass drum",
+              "status": "added"
+            },
+            {
+              "id": "instrument:biwa",
+              "name": "Biwa",
+              "status": "added"
+            },
+            {
+              "id": "instrument:bonang",
+              "name": "Bonang",
+              "status": "added"
+            },
+            {
+              "id": "instrument:celesta",
+              "name": "Celesta",
+              "status": "added"
+            },
+            {
+              "id": "instrument:cuban-tres",
+              "name": "Cuban tres",
+              "status": "added"
+            },
+            {
+              "id": "instrument:cuica",
+              "name": "Cuíca",
+              "status": "added"
+            },
+            {
+              "id": "instrument:darbuka",
+              "name": "Darbuka",
+              "status": "added"
+            },
+            {
+              "id": "instrument:dhol",
+              "name": "Dhol",
+              "status": "added"
+            },
+            {
+              "id": "instrument:didgeridoo",
+              "name": "Didgeridoo",
+              "status": "added"
+            },
+            {
+              "id": "instrument:dizi",
+              "name": "Dizi",
+              "status": "added"
+            },
+            {
+              "id": "instrument:djembe",
+              "name": "Djembe",
+              "status": "added"
+            },
+            {
+              "id": "instrument:dominican-tambora",
+              "name": "Dominican tambora",
+              "status": "added"
+            },
+            {
+              "id": "instrument:erhu",
+              "name": "Erhu",
+              "status": "added"
+            },
+            {
+              "id": "instrument:fairlight-cmi",
+              "name": "Fairlight CMI",
+              "status": "added"
+            },
+            {
+              "id": "instrument:hammered-dulcimer",
+              "name": "Hammered dulcimer",
+              "status": "added"
+            },
+            {
+              "id": "instrument:javanese-rebab",
+              "name": "Javanese rebab",
+              "status": "added"
+            },
+            {
+              "id": "instrument:jupiter-8",
+              "name": "Roland JUPITER-8",
+              "status": "added"
+            },
+            {
+              "id": "instrument:kayamb",
+              "name": "Kayamb",
+              "status": "added"
+            },
+            {
+              "id": "instrument:kora",
+              "name": "Kora",
+              "status": "added"
+            },
+            {
+              "id": "instrument:maravann",
+              "name": "Maravann",
+              "status": "added"
+            },
+            {
+              "id": "instrument:marimbula",
+              "name": "Marímbula",
+              "status": "added"
+            },
+            {
+              "id": "instrument:mellotron",
+              "name": "Mellotron",
+              "status": "added"
+            },
+            {
+              "id": "instrument:mridangam",
+              "name": "Mridangam",
+              "status": "added"
+            },
+            {
+              "id": "instrument:ney",
+              "name": "Ney",
+              "status": "added"
+            },
+            {
+              "id": "instrument:pipa",
+              "name": "Pipa",
+              "status": "added"
+            },
+            {
+              "id": "instrument:portuguese-guitar",
+              "name": "Portuguese guitar",
+              "status": "added"
+            },
+            {
+              "id": "instrument:puerto-rican-cuatro",
+              "name": "Puerto Rican cuatro",
+              "status": "added"
+            },
+            {
+              "id": "instrument:qanun",
+              "name": "Qanun",
+              "status": "added"
+            },
+            {
+              "id": "instrument:ravann",
+              "name": "Ravann",
+              "status": "added"
+            },
+            {
+              "id": "instrument:riqq",
+              "name": "Riqq",
+              "status": "added"
+            },
+            {
+              "id": "instrument:rouler",
+              "name": "Roulèr",
+              "status": "added"
+            },
+            {
+              "id": "instrument:sabar",
+              "name": "Sabar",
+              "status": "added"
+            },
+            {
+              "id": "instrument:santur",
+              "name": "Santur",
+              "status": "added"
+            },
+            {
+              "id": "instrument:sarangi",
+              "name": "Sarangi",
+              "status": "added"
+            },
+            {
+              "id": "instrument:saraswati-veena",
+              "name": "Saraswati veena",
+              "status": "added"
+            },
+            {
+              "id": "instrument:sheng",
+              "name": "Sheng",
+              "status": "added"
+            },
+            {
+              "id": "instrument:soribuk",
+              "name": "Soribuk",
+              "status": "added"
+            },
+            {
+              "id": "instrument:suona",
+              "name": "Suona",
+              "status": "added"
+            },
+            {
+              "id": "instrument:taiko",
+              "name": "Taiko",
+              "status": "added"
+            },
+            {
+              "id": "instrument:tama",
+              "name": "Tama",
+              "status": "added"
+            },
+            {
+              "id": "instrument:uilleann-pipes",
+              "name": "Uilleann pipes",
+              "status": "added"
+            },
+            {
+              "id": "instrument:viola-da-gamba",
+              "name": "Viola da gamba",
+              "status": "added"
+            },
+            {
+              "id": "instrument:yamaha-dx7",
+              "name": "Yamaha DX7",
+              "status": "added"
+            },
+            {
+              "id": "instrument:yueqin",
+              "name": "Yueqin",
+              "status": "added"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "items": [
+            {
+              "id": "instrument:accordion",
+              "name": "Accordion",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:algerian-mandole",
+              "name": "Algerian mandole",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:auto-tune",
+              "name": "Auto-Tune",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:balafon",
+              "name": "Balafon",
+              "status": "added"
+            },
+            {
+              "id": "instrument:balalaika",
+              "name": "Balalaika",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:bandoneon",
+              "name": "Bandoneon",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:banjo",
+              "name": "Banjo",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:bansuri",
+              "name": "Bansuri",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:bass-clarinet",
+              "name": "Bass clarinet",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:bass-drum",
+              "name": "Bass drum",
+              "status": "added"
+            },
+            {
+              "id": "instrument:bassoon",
+              "name": "Bassoon",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:biwa",
+              "name": "Biwa",
+              "status": "added"
+            },
+            {
+              "id": "instrument:bonang",
+              "name": "Bonang",
+              "status": "added"
+            },
+            {
+              "id": "instrument:bongos",
+              "name": "Bongos",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:bouzouki",
+              "name": "Bouzouki",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:cajon",
+              "name": "Cajón",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:celesta",
+              "name": "Celesta",
+              "status": "added"
+            },
+            {
+              "id": "instrument:cello",
+              "name": "Cello",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:charango",
+              "name": "Charango",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:clarinet",
+              "name": "Clarinet",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:claves",
+              "name": "Claves",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:conga",
+              "name": "Conga",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:cor-anglais",
+              "name": "Cor anglais",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:cuban-tres",
+              "name": "Cuban tres",
+              "status": "added"
+            },
+            {
+              "id": "instrument:cuica",
+              "name": "Cuíca",
+              "status": "added"
+            },
+            {
+              "id": "instrument:darbuka",
+              "name": "Darbuka",
+              "status": "added"
+            },
+            {
+              "id": "instrument:dhol",
+              "name": "Dhol",
+              "status": "added"
+            },
+            {
+              "id": "instrument:didgeridoo",
+              "name": "Didgeridoo",
+              "status": "added"
+            },
+            {
+              "id": "instrument:dizi",
+              "name": "Dizi",
+              "status": "added"
+            },
+            {
+              "id": "instrument:djembe",
+              "name": "Djembe",
+              "status": "added"
+            },
+            {
+              "id": "instrument:dobro",
+              "name": "Dobro resonator guitar",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:dominican-tambora",
+              "name": "Dominican tambora",
+              "status": "added"
+            },
+            {
+              "id": "instrument:double-bass",
+              "name": "Double bass",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:drum-kit",
+              "name": "Drum kit",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:electric-bass",
+              "name": "Electric bass",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:electric-guitar",
+              "name": "Electric guitar",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:electric-piano",
+              "name": "Electric piano",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:erhu",
+              "name": "Erhu",
+              "status": "added"
+            },
+            {
+              "id": "instrument:euphonium",
+              "name": "Euphonium",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:fairlight-cmi",
+              "name": "Fairlight CMI",
+              "status": "added"
+            },
+            {
+              "id": "instrument:french-horn",
+              "name": "French horn",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:guembri",
+              "name": "Guembri",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:guiro",
+              "name": "Güiro",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:guitar",
+              "name": "Guitar",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:hammered-dulcimer",
+              "name": "Hammered dulcimer",
+              "status": "added"
+            },
+            {
+              "id": "instrument:hammond-organ",
+              "name": "Hammond organ",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:harmonica",
+              "name": "Harmonica",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:harmonium",
+              "name": "Harmonium",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:harp",
+              "name": "Harp",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:harpsichord",
+              "name": "Harpsichord",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:hichiriki",
+              "name": "Hichiriki",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:javanese-rebab",
+              "name": "Javanese rebab",
+              "status": "added"
+            },
+            {
+              "id": "instrument:jinghu",
+              "name": "Jinghu",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:juno-106",
+              "name": "Roland JUNO-106",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:jupiter-8",
+              "name": "Roland JUPITER-8",
+              "status": "added"
+            },
+            {
+              "id": "instrument:kayamb",
+              "name": "Kayamb",
+              "status": "added"
+            },
+            {
+              "id": "instrument:kora",
+              "name": "Kora",
+              "status": "added"
+            },
+            {
+              "id": "instrument:koto",
+              "name": "Koto",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:lute",
+              "name": "Lute",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:mandolin",
+              "name": "Mandolin",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:maracas",
+              "name": "Maracas",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:maravann",
+              "name": "Maravann",
+              "status": "added"
+            },
+            {
+              "id": "instrument:marimbula",
+              "name": "Marímbula",
+              "status": "added"
+            },
+            {
+              "id": "instrument:mellotron",
+              "name": "Mellotron",
+              "status": "added"
+            },
+            {
+              "id": "instrument:minimoog",
+              "name": "Minimoog",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:modular-synthesizer",
+              "name": "Modular synthesizer",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:mridangam",
+              "name": "Mridangam",
+              "status": "added"
+            },
+            {
+              "id": "instrument:ney",
+              "name": "Ney",
+              "status": "added"
+            },
+            {
+              "id": "instrument:oboe",
+              "name": "Oboe",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:oud",
+              "name": "Oud",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:pedal-steel-guitar",
+              "name": "Pedal steel guitar",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:piano",
+              "name": "Piano",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:piccolo",
+              "name": "Piccolo",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:pipa",
+              "name": "Pipa",
+              "status": "added"
+            },
+            {
+              "id": "instrument:pipe-organ",
+              "name": "Pipe organ",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:portuguese-guitar",
+              "name": "Portuguese guitar",
+              "status": "added"
+            },
+            {
+              "id": "instrument:puerto-rican-cuatro",
+              "name": "Puerto Rican cuatro",
+              "status": "added"
+            },
+            {
+              "id": "instrument:qanun",
+              "name": "Qanun",
+              "status": "added"
+            },
+            {
+              "id": "instrument:quena",
+              "name": "Quena",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:ravann",
+              "name": "Ravann",
+              "status": "added"
+            },
+            {
+              "id": "instrument:recorder",
+              "name": "Recorder",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:riqq",
+              "name": "Riqq",
+              "status": "added"
+            },
+            {
+              "id": "instrument:rouler",
+              "name": "Roulèr",
+              "status": "added"
+            },
+            {
+              "id": "instrument:ryuteki",
+              "name": "Ryūteki",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:sabar",
+              "name": "Sabar",
+              "status": "added"
+            },
+            {
+              "id": "instrument:sampler",
+              "name": "Sampler",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:santur",
+              "name": "Santur",
+              "status": "added"
+            },
+            {
+              "id": "instrument:sarangi",
+              "name": "Sarangi",
+              "status": "added"
+            },
+            {
+              "id": "instrument:saraswati-veena",
+              "name": "Saraswati veena",
+              "status": "added"
+            },
+            {
+              "id": "instrument:sarod",
+              "name": "Sarod",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:saron",
+              "name": "Saron",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:saxophone",
+              "name": "Saxophone",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:sheng",
+              "name": "Sheng",
+              "status": "added"
+            },
+            {
+              "id": "instrument:sho",
+              "name": "Shō",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:sitar",
+              "name": "Sitar",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:soribuk",
+              "name": "Soribuk",
+              "status": "added"
+            },
+            {
+              "id": "instrument:steelpan",
+              "name": "Steelpan",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:suona",
+              "name": "Suona",
+              "status": "added"
+            },
+            {
+              "id": "instrument:tabla",
+              "name": "Tabla",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:taiko",
+              "name": "Taiko",
+              "status": "added"
+            },
+            {
+              "id": "instrument:tama",
+              "name": "Tama",
+              "status": "added"
+            },
+            {
+              "id": "instrument:tanpura",
+              "name": "Tanpura",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:tb-303",
+              "name": "Roland TB-303",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:theremin",
+              "name": "Theremin",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:timbales",
+              "name": "Timbales",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:timpani",
+              "name": "Timpani",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:tr-808",
+              "name": "Roland TR-808",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:tr-909",
+              "name": "Roland TR-909",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:transverse-flute",
+              "name": "Transverse flute",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:triangle",
+              "name": "Triangle",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:trombone",
+              "name": "Trombone",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:trumpet",
+              "name": "Valved trumpet",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:tuba",
+              "name": "Tuba",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:turntables",
+              "name": "Turntables",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:uilleann-pipes",
+              "name": "Uilleann pipes",
+              "status": "added"
+            },
+            {
+              "id": "instrument:ukulele",
+              "name": "Ukulele",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:vibraphone",
+              "name": "Vibraphone",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:viola",
+              "name": "Viola",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:viola-da-gamba",
+              "name": "Viola da gamba",
+              "status": "added"
+            },
+            {
+              "id": "instrument:violin",
+              "name": "Violin",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:yamaha-dx7",
+              "name": "Yamaha DX7",
+              "status": "added"
+            },
+            {
+              "id": "instrument:yueqin",
+              "name": "Yueqin",
+              "status": "added"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/graph/RESEARCH.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/audits/graph-edge-coverage.csv"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__balafon-mbalax.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__bass-drum-classical-period.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__biwa-gagaku.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__bonang-gamelan.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__celesta-romantic.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__cuban-tres-son-cubano.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__cuica-samba.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__darbuka-arabic-maqam.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__dhol-punjabi-bhangra.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__didgeridoo-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__dizi-peking-opera.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__djembe-mbalax.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__dominican-tambora-merengue.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__erhu-peking-opera.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__fairlight-cmi-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__hammered-dulcimer-folk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__javanese-rebab-gamelan.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__jupiter-8-synth-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__kayamb-maloya.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__kora-mbalax.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__maravann-sega.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__marimbula-son-cubano.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__mellotron-progressive-rock.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__mridangam-carnatic.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__ney-arabic-maqam.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__pipa-peking-opera.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__portuguese-guitar-fado.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__puerto-rican-cuatro-salsa.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__qanun-arabic-maqam.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__ravann-sega.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__riqq-arabic-maqam.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__rouler-maloya.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__sabar-mbalax.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__santur-arabic-maqam.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__sarangi-hindustani-classical.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__saraswati-veena-carnatic.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__sheng-peking-opera.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__soribuk-pansori.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__suona-peking-opera.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__taiko-gagaku.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__tama-mbalax.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__uilleann-pipes-folk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__viola-da-gamba-renaissance.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__yamaha-dx7-pop.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/featured__yueqin-peking-opera.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/balafon.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/bass-drum.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/biwa.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/bonang.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/celesta.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/cuban-tres.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/cuica.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/darbuka.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/dhol.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/didgeridoo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/dizi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/djembe.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/dominican-tambora.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/erhu.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/fairlight-cmi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/hammered-dulcimer.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/javanese-rebab.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/jupiter-8.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/kayamb.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/kora.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/maravann.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/marimbula.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/mellotron.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/mridangam.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/ney.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/pipa.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/portuguese-guitar.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/puerto-rican-cuatro.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/qanun.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/ravann.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/riqq.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/rouler.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/sabar.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/santur.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/sarangi.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/saraswati-veena.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/sheng.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/soribuk.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/suona.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/taiko.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/tama.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/uilleann-pipes.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/viola-da-gamba.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/yamaha-dx7.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/nodes/instrument/yueqin.md"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/review-status.json"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/skills/artwork-brief/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/artwork-brief/scripts/check-brief.mjs"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/artwork-draw/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/artwork-review/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/README.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/accordion.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/algerian-mandole.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/auto-tune.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/balafon.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/balalaika.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/bandoneon.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/banjo.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/bansuri.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/bass-clarinet.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/bass-drum.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/bassoon.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/biwa.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/bonang.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/bongos.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/bouzouki.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/cajon.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/celesta.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/cello.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/charango.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/clarinet.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/claves.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/conga.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/cor-anglais.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/cuban-tres.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/cuica.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/darbuka.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/dhol.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/didgeridoo.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/dizi.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/djembe.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/dobro.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/dominican-tambora.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/double-bass.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/drum-kit.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/electric-bass.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/electric-guitar.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/electric-piano.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/erhu.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/euphonium.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/fairlight-cmi.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/french-horn.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/guembri.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/guiro.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/guitar.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/hammered-dulcimer.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/hammond-organ.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/harmonica.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/harmonium.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/harp.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/harpsichord.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/hichiriki.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/javanese-rebab.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/jinghu.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/juno-106.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/jupiter-8.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/kayamb.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/kora.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/koto.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/lute.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/mandolin.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/maracas.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/maravann.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/marimbula.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/mellotron.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/minimoog.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/modular-synthesizer.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/mridangam.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/ney.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/oboe.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/oud.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/pedal-steel-guitar.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/piano.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/piccolo.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/pipa.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/pipe-organ.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/portuguese-guitar.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/puerto-rican-cuatro.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/qanun.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/quena.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/ravann.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/recorder.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/riqq.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/rouler.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/ryuteki.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/sabar.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/sampler.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/santur.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/sarangi.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/saraswati-veena.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/sarod.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/saron.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/saxophone.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/sheng.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/sho.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/sitar.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/soribuk.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/steelpan.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/suona.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/tabla.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/taiko.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/tama.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/tanpura.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/tb-303.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/theremin.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/timbales.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/timpani.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/tr-808.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/tr-909.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/transverse-flute.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/triangle.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/trombone.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/trumpet.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/tuba.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/turntables.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/uilleann-pipes.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/ukulele.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/vibraphone.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/viola-da-gamba.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/viola.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/violin.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/yamaha-dx7.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/yueqin.json"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/balafon.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/bass-drum.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/biwa.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/bonang.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/celesta.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/cuban-tres.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/cuica.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/darbuka.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/dhol.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/didgeridoo.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/dizi.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/djembe.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/dominican-tambora.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/erhu.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-avatars/euphonium.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/fairlight-cmi.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-avatars/french-horn.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/hammered-dulcimer.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/javanese-rebab.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/jupiter-8.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/kayamb.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/kora.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/maravann.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/marimbula.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/mellotron.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/mridangam.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/ney.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/pipa.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/portuguese-guitar.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/puerto-rican-cuatro.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/qanun.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/ravann.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/riqq.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/rouler.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/sabar.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/santur.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/sarangi.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/saraswati-veena.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/sheng.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/soribuk.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/suona.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/taiko.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/tama.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-avatars/trombone.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-avatars/trumpet.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-avatars/tuba.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/uilleann-pipes.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/viola-da-gamba.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/yamaha-dx7.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-avatars/yueqin.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/balafon.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/bass-drum.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/biwa.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/bonang.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/celesta.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/cuban-tres.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/cuica.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/darbuka.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/dhol.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/didgeridoo.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/dizi.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/djembe.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/dominican-tambora.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/erhu.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-banners/euphonium.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/fairlight-cmi.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-banners/french-horn.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/hammered-dulcimer.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/javanese-rebab.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/jupiter-8.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/kayamb.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/kora.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/maravann.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/marimbula.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/mellotron.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/mridangam.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/ney.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/pipa.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/portuguese-guitar.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/puerto-rican-cuatro.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/qanun.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/ravann.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/riqq.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/rouler.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/sabar.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/santur.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/sarangi.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/saraswati-veena.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/sheng.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/soribuk.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/suona.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/taiko.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/tama.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-banners/trombone.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-banners/trumpet.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-banners/tuba.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/uilleann-pipes.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/viola-da-gamba.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/yamaha-dx7.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-banners/yueqin.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/balafon.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/bass-drum.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/biwa.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/bonang.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/celesta.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/cuban-tres.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/cuica.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/darbuka.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/dhol.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/didgeridoo.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/dizi.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/djembe.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/dominican-tambora.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/erhu.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-header-backgrounds/euphonium.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/fairlight-cmi.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-header-backgrounds/french-horn.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/hammered-dulcimer.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/javanese-rebab.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/jupiter-8.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/kayamb.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/kora.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/maravann.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/marimbula.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/mellotron.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/mridangam.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/ney.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/pipa.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/portuguese-guitar.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/puerto-rican-cuatro.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/qanun.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/ravann.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/riqq.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/rouler.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/sabar.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/santur.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/sarangi.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/saraswati-veena.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/sheng.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/soribuk.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/suona.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/taiko.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/tama.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-header-backgrounds/trombone.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-header-backgrounds/trumpet.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-header-backgrounds/tuba.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/uilleann-pipes.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/viola-da-gamba.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/yamaha-dx7.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-header-backgrounds/yueqin.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/balafon.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/bass-drum.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/biwa.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/bonang.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/celesta.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/cuban-tres.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/cuica.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/darbuka.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/dhol.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/didgeridoo.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/dizi.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/djembe.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/dominican-tambora.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/erhu.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-icons/euphonium.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/fairlight-cmi.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-icons/french-horn.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/hammered-dulcimer.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/javanese-rebab.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/jupiter-8.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/kayamb.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/kora.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/maravann.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/marimbula.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/mellotron.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/mridangam.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/ney.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/pipa.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/portuguese-guitar.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/puerto-rican-cuatro.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/qanun.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/ravann.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/riqq.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/rouler.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/sabar.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/santur.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/sarangi.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/saraswati-veena.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/sheng.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/soribuk.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/suona.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/taiko.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/tama.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-icons/trombone.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-icons/trumpet.svg"
+            },
+            {
+              "status": "M",
+              "path": "public/instrument-icons/tuba.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/uilleann-pipes.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/viola-da-gamba.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/yamaha-dx7.svg"
+            },
+            {
+              "status": "A",
+              "path": "public/instrument-icons/yueqin.svg"
+            },
+            {
+              "status": "M",
+              "path": "scripts/artwork/generate-instrument-artwork.py"
+            },
+            {
+              "status": "M",
+              "path": "scripts/artwork/validation.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/bass-drum.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/celesta.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/cuban-tres.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/cuica.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/dominican-tambora.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/erhu.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/euphonium.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/french-horn.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/kayamb.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/kora.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/maravann.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/ney.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/rouler.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/sabar.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/sheng.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/taiko.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/trombone.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/trumpet.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/tuba.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/viola-da-gamba.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-avatars/yueqin.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/bass-drum.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/celesta.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/cuban-tres.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/cuica.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/dominican-tambora.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/erhu.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/euphonium.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/french-horn.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/kayamb.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/kora.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/maravann.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/ney.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/rouler.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/sabar.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/sheng.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/taiko.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/trombone.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/trumpet.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/tuba.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/viola-da-gamba.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-banners/yueqin.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/bass-drum.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/celesta.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/cuban-tres.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/cuica.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/dominican-tambora.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/erhu.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/euphonium.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/french-horn.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/kayamb.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/kora.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/maravann.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/ney.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/rouler.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/sabar.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/sheng.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/taiko.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/trombone.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/trumpet.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/tuba.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/viola-da-gamba.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/yueqin.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/bass-drum.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/celesta.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/cuban-tres.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/cuica.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/dominican-tambora.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/erhu.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/euphonium.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/french-horn.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/kayamb.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/kora.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/maravann.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/ney.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/rouler.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/sabar.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/sheng.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/taiko.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/trombone.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/trumpet.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/tuba.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/viola-da-gamba.svg"
+            },
+            {
+              "status": "A",
+              "path": "src/stories/fixtures/instrument-artwork-v1/instrument-icons/yueqin.svg"
+            }
+          ]
+        },
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "src/stories/InstrumentArtwork.stories.tsx"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [
+            "instrument:balafon",
+            "instrument:bass-drum",
+            "instrument:biwa",
+            "instrument:bonang",
+            "instrument:celesta",
+            "instrument:cuban-tres",
+            "instrument:cuica",
+            "instrument:darbuka",
+            "instrument:dhol",
+            "instrument:didgeridoo",
+            "instrument:dizi",
+            "instrument:djembe",
+            "instrument:dominican-tambora",
+            "instrument:erhu",
+            "instrument:fairlight-cmi",
+            "instrument:hammered-dulcimer",
+            "instrument:javanese-rebab",
+            "instrument:jupiter-8",
+            "instrument:kayamb",
+            "instrument:kora",
+            "instrument:maravann",
+            "instrument:marimbula",
+            "instrument:mellotron",
+            "instrument:mridangam",
+            "instrument:ney",
+            "instrument:pipa",
+            "instrument:portuguese-guitar",
+            "instrument:puerto-rican-cuatro",
+            "instrument:qanun",
+            "instrument:ravann",
+            "instrument:riqq",
+            "instrument:rouler",
+            "instrument:sabar",
+            "instrument:santur",
+            "instrument:sarangi",
+            "instrument:saraswati-veena",
+            "instrument:sheng",
+            "instrument:soribuk",
+            "instrument:suona",
+            "instrument:taiko",
+            "instrument:tama",
+            "instrument:uilleann-pipes",
+            "instrument:viola-da-gamba",
+            "instrument:yamaha-dx7",
+            "instrument:yueqin"
+          ],
+          "updated": [],
+          "removed": []
+        },
+        "edges": {
+          "added": [
+            "featured:balafon-mbalax",
+            "featured:bass-drum-classical-period",
+            "featured:biwa-gagaku",
+            "featured:bonang-gamelan",
+            "featured:celesta-romantic",
+            "featured:cuban-tres-son-cubano",
+            "featured:cuica-samba",
+            "featured:darbuka-arabic-maqam",
+            "featured:dhol-punjabi-bhangra",
+            "featured:didgeridoo-pop",
+            "featured:dizi-peking-opera",
+            "featured:djembe-mbalax",
+            "featured:dominican-tambora-merengue",
+            "featured:erhu-peking-opera",
+            "featured:fairlight-cmi-pop",
+            "featured:hammered-dulcimer-folk",
+            "featured:javanese-rebab-gamelan",
+            "featured:jupiter-8-synth-pop",
+            "featured:kayamb-maloya",
+            "featured:kora-mbalax",
+            "featured:maravann-sega",
+            "featured:marimbula-son-cubano",
+            "featured:mellotron-progressive-rock",
+            "featured:mridangam-carnatic",
+            "featured:ney-arabic-maqam",
+            "featured:pipa-peking-opera",
+            "featured:portuguese-guitar-fado",
+            "featured:puerto-rican-cuatro-salsa",
+            "featured:qanun-arabic-maqam",
+            "featured:ravann-sega",
+            "featured:riqq-arabic-maqam",
+            "featured:rouler-maloya",
+            "featured:sabar-mbalax",
+            "featured:santur-arabic-maqam",
+            "featured:sarangi-hindustani-classical",
+            "featured:saraswati-veena-carnatic",
+            "featured:sheng-peking-opera",
+            "featured:soribuk-pansori",
+            "featured:suona-peking-opera",
+            "featured:taiko-gagaku",
+            "featured:tama-mbalax",
+            "featured:uilleann-pipes-folk",
+            "featured:viola-da-gamba-renaissance",
+            "featured:yamaha-dx7-pop",
+            "featured:yueqin-peking-opera"
+          ],
+          "updated": [],
+          "removed": []
+        }
+      }
+    },
+    {
       "commit": "564e0866e5fe265bd3502fc12ed776c3f7cd8959",
       "parent": "775c6efc188551d1d6eccb154bbae962461540e6",
       "date": "2026-11-13T22:13:17-05:00",
