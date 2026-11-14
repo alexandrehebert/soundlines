@@ -42,11 +42,21 @@ export function ExplorerOptions({ optionsId, optionsOpen, setOptionsOpen, isDesk
 
   useEffect(() => {
     if (!optionsOpen) return
-    if (isDesktop && showingHistory) setOptionsOpen(false)
-    else if (!isDesktop && !optionsRef.current?.contains(document.activeElement)) {
+    if (!isDesktop && !optionsRef.current?.contains(document.activeElement)) {
       optionsRef.current?.querySelector<HTMLButtonElement>('button')?.focus()
     }
-  }, [isDesktop, optionsOpen, setOptionsOpen, showingHistory])
+  }, [isDesktop, optionsOpen])
+
+  useEffect(() => {
+    if (!optionsOpen || !showingHistory) return
+    const wideHeader = window.matchMedia('(min-width: 80rem)')
+    const closeWhenStatsAreInHeader = () => {
+      if (wideHeader.matches) setOptionsOpen(false)
+    }
+    closeWhenStatsAreInHeader()
+    wideHeader.addEventListener('change', closeWhenStatsAreInHeader)
+    return () => wideHeader.removeEventListener('change', closeWhenStatsAreInHeader)
+  }, [optionsOpen, setOptionsOpen, showingHistory])
 
   useEffect(() => {
     if (!optionsOpen || !isDesktop) return
@@ -64,21 +74,19 @@ export function ExplorerOptions({ optionsId, optionsOpen, setOptionsOpen, isDesk
 
   return (
     <>
-      {!showingHistory && (
-        <button
-          ref={optionsTriggerRef}
-          type="button"
-          onClick={() => setOptionsOpen((open) => !open)}
-          className="hidden min-h-9 shrink-0 items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-xs font-semibold text-slate-300 hover:bg-(--control-hover) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:flex"
-          aria-label={t('timelineOptions')}
-          aria-haspopup="dialog"
-          aria-expanded={optionsOpen}
-          aria-controls={optionsId}
-        >
-          <SlidersHorizontal className="h-4 w-4" />
-          <span className="hidden lg:inline">{t('options')}</span>
-        </button>
-      )}
+      <button
+        ref={optionsTriggerRef}
+        type="button"
+        onClick={() => setOptionsOpen((open) => !open)}
+        className={`hidden min-h-9 shrink-0 items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-xs font-semibold text-slate-300 hover:bg-(--control-hover) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:flex ${showingHistory ? 'xl:hidden' : ''}`}
+        aria-label={t(showingHistory ? 'historyOptions' : 'timelineOptions')}
+        aria-haspopup="dialog"
+        aria-expanded={optionsOpen}
+        aria-controls={optionsId}
+      >
+        <SlidersHorizontal className="h-4 w-4" />
+        <span className="hidden lg:inline">{t('options')}</span>
+      </button>
       <AnimatePresence>
         {optionsOpen && (
           <motion.div
@@ -152,7 +160,7 @@ export function ExplorerOptions({ optionsId, optionsOpen, setOptionsOpen, isDesk
                 <button
                   type="button"
                   onClick={onShowStatistics}
-                  className="mt-4 flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-sm font-semibold text-slate-300 hover:bg-slate-800 active:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:hidden"
+                  className="mt-4 flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-3 text-sm font-semibold text-slate-300 hover:bg-slate-800 active:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 xl:hidden"
                 >
                   <BarChart3 className="h-4 w-4" />
                   {t('datasetStatistics')}

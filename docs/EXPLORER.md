@@ -139,9 +139,10 @@ At tablet widths (640–767px), bottom navigation labels match the Options butto
 keeps its existing sizing.
 
 On desktop, **Options** sits beside the page selector and opens a dropdown
-containing display and ordering controls; the timeline legend stays visible
-below the header, and the header counts open dataset statistics. History has no
-desktop Options button because it has no controls in that dropdown. On mobile,
+containing display and ordering controls. The timeline legend stays visible
+below the header. At widths of 1280px and above, labeled header counts open
+dataset statistics, and History omits its Options button. At 768–1279px,
+the Options dropdown includes **Dataset Statistics** in every view. On mobile,
 the bottom navigation's **Options** button opens the controls, legend, and
 dataset statistics in a bottom sheet. The desktop dropdown leaves the rest of the
 UI interactive and closes on outside interaction or when focus moves away.

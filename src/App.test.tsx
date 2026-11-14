@@ -112,9 +112,10 @@ describe('Explorer header statistics', () => {
     expect(header).toContain('aria-label="1 genres – show dataset statistics"')
     expect(header).toContain('aria-label="2 artists – show dataset statistics"')
     expect(header).toContain('aria-label="3 instruments – show dataset statistics"')
-    expect(header).toMatch(/>1<\/strong> <span[^>]*>genres<\/span>/)
-    expect(header).toMatch(/>2<\/strong> <span[^>]*>artists<\/span>/)
-    expect(header).toMatch(/>3<\/strong> <span[^>]*>instruments<\/span>/)
+    expect(header).toContain('hidden items-center gap-1 text-xs font-medium text-slate-500 xl:flex')
+    expect(header).toContain('>1</strong> genres</button>')
+    expect(header).toContain('>2</strong> artists</button>')
+    expect(header).toContain('>3</strong> instruments</button>')
     expect(header).not.toMatch(/\blinks\b/i)
   })
 
@@ -172,12 +173,13 @@ describe('Explorer header statistics', () => {
     expect(sheet).toContain('data-sheet-drag-region=""')
   })
 
-  it('omits empty desktop history options while retaining the mobile entry point', () => {
+  it('provides a History options trigger on tablet and mobile', () => {
     const markup = render(graph, <Explorer />, null, 'history')
     const header = markup.slice(0, markup.indexOf('</header>'))
     const mobileNavigation = markup.slice(markup.indexOf('</main>'))
 
-    expect(header).not.toContain('aria-label="History options"')
+    const optionsButton = header.match(/<button\b[^>]*aria-label="History options"[^>]*>/)?.[0]
+    expect(optionsButton).toContain('md:flex xl:hidden')
     expect(header).toContain('show dataset statistics')
     expect(mobileNavigation).toContain('aria-label="History options"')
   })

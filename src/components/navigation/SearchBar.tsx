@@ -24,7 +24,7 @@ function searchResultTypeStyle(type: keyof typeof NODE_TYPE_COLORS): CSSProperti
   return { '--search-result-type-color': chartColor(NODE_TYPE_COLORS[type]) }
 }
 
-export function SearchBar() {
+export function SearchBar({ fillWidth = false }: { fillWidth?: boolean }) {
   const { index, locale, selectNode } = useExplorer()
   const t = useTranslations('search')
   // Let users also find entries by their default-locale names.
@@ -151,7 +151,7 @@ export function SearchBar() {
       >
         <Search className="h-4 w-4" />
       </button>
-      <div className="soundlines-search-transition relative hidden w-full max-w-xs md:block">
+      <div className={`soundlines-search-transition relative hidden w-full md:block ${fillWidth ? '' : 'max-w-xs'}`}>
         <span id={desktopInstructionsId} className="sr-only">{t('instructions')}</span>
         <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" />
         <input

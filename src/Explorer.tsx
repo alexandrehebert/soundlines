@@ -109,8 +109,8 @@ export function Explorer() {
             </p>
           </div>
         </BrandLink>
-        <div className="ml-auto shrink-0 md:ml-0 md:w-80 md:min-w-0 md:shrink">
-          <SearchBar />
+        <div className="ml-auto shrink-0 md:ml-0 md:min-w-0 md:max-xl:flex-1 xl:w-80 xl:shrink">
+          <SearchBar fillWidth />
         </div>
         <div className="contents md:relative md:flex md:shrink-0 md:items-center md:gap-2">
           <ViewToggle view={view} changeView={changeView} className="hidden md:flex" />
@@ -119,10 +119,13 @@ export function Explorer() {
             optionsOpen={optionsOpen}
             setOptionsOpen={setOptionsOpen}
             isDesktop={isDesktop}
-            onShowStatistics={() => openPanel('overview', { replace: true })}
+            onShowStatistics={() => {
+              setDesktopOptionsOpen(false)
+              openPanel('overview', { replace: true })
+            }}
           />
         </div>
-        <div className="-mr-2 ml-auto hidden items-center gap-1 text-xs font-medium text-slate-500 md:flex">
+        <div className="-mr-2 ml-auto hidden items-center gap-1 text-xs font-medium text-slate-500 xl:flex">
           {(['genre', 'artist', 'instrument'] as const).map((tab) => (
             <button
               key={tab}
@@ -132,7 +135,7 @@ export function Explorer() {
               aria-label={`${stats[tab]} ${tEntityStats(tab)} – ${t('showDatasetStatistics')}`}
             >
               <strong className="text-slate-300">{stats[tab]}</strong>{' '}
-              <span className="hidden xl:inline">{tEntityStats(tab)}</span>
+              {tEntityStats(tab)}
             </button>
           ))}
         </div>
