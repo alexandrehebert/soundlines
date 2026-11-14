@@ -102,6 +102,8 @@ shows the workflows with diagrams and examples.
 
 ## Documentation
 
+Find guides by task in the [documentation index](./docs/README.md).
+
 The [project companion](https://alexandrehebert.github.io/soundlines/) explains,
 with visual workflows and real examples, how Soundlines' facts, instrument
 drawings and audio were sourced, produced and checked, and how the app is built, in

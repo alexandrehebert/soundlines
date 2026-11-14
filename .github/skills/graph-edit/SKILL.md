@@ -67,8 +67,7 @@ node .github/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
    - one row per live edge in `docs/graph/evidence/audits/graph-edge-coverage.csv`, matching type/confidence
    - removal or retype: a `removed__…` disposition note, a bullet in `docs/graph/evidence/graph-edge-removals.md`
      (or `event-edge-removals.md`), and delete or update the coverage row
-7. **Update GRAPH.md counts** when totals change: family counts in §2,
-   the chronology table and event-edge counts in §6. Use `--stats` for the numbers.
+7. **Update family counts** in GRAPH.md §2 when affected. Use `--stats` for live counts.
 8. **Validate** with the `graph-validate` skill:
    ```sh
    npm run review-status

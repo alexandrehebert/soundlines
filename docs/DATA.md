@@ -10,7 +10,7 @@ All data lives in [src/data/graph.json](../src/data/graph.json) as a single prop
 
 - **Nodes** (`genre`, `artist`, `instrument`, `label`, `place`, `track`, `scene`, `event`, `festival`) with stable `type:slug` ids, optional `period` (`start`/`end`/`precision`/`estimated`/`estimateNote`), `family` lanes, descriptions, and editorial confidence in the overall entry.
 - **Edges** with a type, optional `period`, `confidence` (`low`/`medium`/`high`), `note`, and source URLs. Lineage edge types (`influences`, `derived_from`, `subgenre_of`, `fusion_of`, `cross_pollination`, `revival_of`) carry an orientation so the JSON reads naturally in both directions (see `LINEAGE_ORIENTATION` in [src/graph/types.ts](../src/graph/types.ts)).
-- Nodes can include `sources` URLs; the detail panel links the selected node's sources, with each source's website shown beside the link. Festival relationships also show their own citations beside the connection. Festival confidence is reassessed against evidence, not inferred from citation counts.
+- Nodes can include `sources` URLs; the detail panel links the selected node's sources, with each source's website shown beside the link.
 
 ### Discovering instruments worldwide
 
@@ -30,38 +30,14 @@ signal as a historical prominence curve.
 
 ### Music festivals
 
-The collection includes ancient Pythian Games and the approximately 1715 Three
-Choirs Festival alongside modern institutions: 39 festivals across 25 countries and six continents,
-selected for documented historical contributions and public recognition. It spans
-Woodstock, Monterey Pop and Newport Folk; Bayreuth, Salzburg and Donaueschingen;
-Movement, Sónar and Tomorrowland; Reggae Sunsplash, FESPAM and Sauti za Busara;
-Cosquín, Viña del Mar and Rock al Parque; Sawai Gandharva, Java Jazz and Baalbeck;
-and further jazz, metal and cross-cultural institutions. All festivals have at
-least three references; the [source audit](./graph/evidence/audits/festival-sources-001.md)
-explains source scope, conflicts and High/Medium confidence decisions. Descriptions explain
-breakthrough performances, new-music platforms, regional traditions and musical
-exchange rather than assigning a popularity or influence score. The
-[coverage register](./graph/evidence/festivals.md) lists every festival, country,
-first edition or chronology anchor and editorial caveat. This is a curated collection, not a
-comprehensive worldwide directory.
-Festivals are searchable and open in the detail panel within the current view.
-Any entity can link to a festival through `festival_related`; the relationship note
-states the connection and, when known, its edition year. Detail panels display
-festival connections only when the edge has an HTTPS source, with citations visible
-in both directions. These links do not affect musical lineage or timeline lanes.
-Specific festival turning points also appear as separately sourced History
-events, including Dylan at Newport, the complete Ring at Bayreuth, and Daft
-Punk’s Coachella pyramid. All 39 festivals have a supplementary Wikipedia
-[cross-check](./graph/evidence/audits/festival-wikipedia-events-002.md); conflicts
-are recorded alongside the stronger primary and institutional evidence.
+Festivals are searchable and open in the detail panel. A festival node represents
+a festival institution or a standalone gathering. A History event can describe a
+specific edition, performance, or turning point.
 
-Festival periods normally start at the first edition; conventional chronology
-anchors are marked estimated and explained. They do not claim uninterrupted annual
-operation. Historically significant standalone gatherings, including the original
-Woodstock and Monterey Pop festivals, have bounded periods. Existing historical festival events retain their stable IDs: an event
-can describe the founding or one edition, while a festival node describes the
-institution. English text, localized overlays, per-entry evidence notes, and the
-review coverage register accompany this batch.
+The [festival coverage register](./graph/evidence/festivals.md) lists entries,
+dates, and source audits. The [festival editing guide](./GRAPH.md#music-festival-enrichment)
+covers chronology, sourcing, and `festival_related` edges. The [node type reference](./GRAPH.md#node-types)
+defines all nine entity types.
 
 ## Graph contribution workflow
 
@@ -80,7 +56,7 @@ Graph changes follow one pipeline, with one owner per step:
 
 Validation is deterministic: `npm run validate:graph` runs the data and graph test suites (schema,
 ids, edge directions, canonical JSON formatting, overlay coverage for every locale, evidence and
-coverage-tracker bookkeeping, documented counts). The [Graph quality](../.github/workflows/graph-quality.yml)
+coverage-tracker bookkeeping). The [Graph quality](../.github/workflows/graph-quality.yml)
 workflow runs it, plus a `review-status.json` freshness check, on every pull request touching graph data
 or docs. The skills in [.github/skills](../.github/skills) bundle `lookup.mjs` (query `graph.json` by id,
 name, or pending evidence) and `diff.mjs` (semantic diff of graph changes and overlays against a git ref).
@@ -187,11 +163,4 @@ claims of uninterrupted activity.
 
 ## Instrument artwork
 
-Every instrument has four SVGs (icon, banner, avatar, and detail-panel header
-background) in `public/instrument-*`. New or redrawn artwork follows one pipeline:
-a sourced visual brief (`artwork-briefer`), the drawing (`artwork-illustrator`,
-preferably as a master in [the generator](../scripts/artwork/generate-instrument-artwork.py)),
-a deterministic gate (`artwork-validator`), and a ship review (`artwork-reviewer`)
-with a final human check in Storybook. The style guide and scripts are in
-[.github/skills/artwork-draw](../.github/skills/artwork-draw) and
-[.github/skills/artwork-validate](../.github/skills/artwork-validate).
+See the [instrument artwork guide](./artwork/README.md) for briefs, drawing, validation, and review.

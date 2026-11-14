@@ -8,6 +8,11 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
+## Project documentation
+
+Use the [documentation index](./docs/README.md) to find the guide, skill, and
+validation command for your task.
+
 ## Local browser verification
 
 - Before starting a server, check `docker compose ps` and whether the app at
