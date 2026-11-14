@@ -30,7 +30,7 @@ import type { GenreDisplay } from './graph/bubbles.ts'
 import { cancelPageTransition, finishPageLoading, transitionPage } from './pageLoading.ts'
 import { DEFAULT_LOCALE, type Locale } from './i18n/routing.ts'
 import { observeViewTransition } from './viewTransition.ts'
-import { afterClosingHistoryPanel, backFromPanel } from './components/ui/usePanelHistory.ts'
+import { afterClosingHistoryPanel, backFromPanel } from './design-system/ui/usePanelHistory.ts'
 import { isOpenDataPath } from './openData.ts'
 
 type YearRange = [number, number]

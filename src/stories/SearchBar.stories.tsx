@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, fireEvent, userEvent, waitFor, within } from 'storybook/test'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
 import { useExplorer } from '../ExplorerContext.ts'
-import { SearchBar } from '../components/navigation/SearchBar.tsx'
+import { SearchBar } from '../design-system/navigation/SearchBar.tsx'
 
 function SearchExample() {
   const { index, selectedId } = useExplorer()

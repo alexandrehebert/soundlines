@@ -21,3 +21,4 @@ jobs:
       - run: npm run lint
       - run: npx tsc --noEmit -p tsconfig.build.json
       - run: npm test
+      - run: npm run build-storybook

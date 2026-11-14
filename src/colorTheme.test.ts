@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { ARTIST_EDGE_COLORS, chartColor, FAMILY_COLORS, INSTRUMENT_EDGE_COLORS, LINEAGE_EDGE_COLORS, NODE_TYPE_COLORS } from './theme.ts'
 
-const css = readFileSync(new URL('./colorTheme.css', import.meta.url), 'utf8')
+const css = readFileSync(new URL('./design-system/foundations/colorTheme.css', import.meta.url), 'utf8')
 
 function readLightTheme(): string {
   const block = css.match(/:root\[data-theme="light"\] \{([\s\S]*?)\}/)?.[1]

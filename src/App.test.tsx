@@ -1,12 +1,12 @@
 import { readFileSync } from 'node:fs'
 import type { ReactNode } from 'react'
 import { describe, expect, it, vi } from 'vitest'
-import { Explorer } from './Explorer.tsx'
-import { GenreDisplaySelect, ViewToggle } from './components/explorer/ExplorerControls.tsx'
+import { Explorer } from './design-system/explorer/Explorer.tsx'
+import { GenreDisplaySelect, ViewToggle } from './design-system/explorer/ExplorerControls.tsx'
 import { ExplorerContext } from './ExplorerContext.ts'
-import { DatasetStats } from './components/dataset/DatasetStats.tsx'
-import { Home } from './components/home/Home.tsx'
-import { Legend } from './components/explorer/Legend.tsx'
+import { DatasetStats } from './design-system/dataset/DatasetStats.tsx'
+import { Home } from './design-system/home/Home.tsx'
+import { Legend } from './design-system/explorer/Legend.tsx'
 import { graphForLocale } from './data/graphLocale.ts'
 import { buildIndex } from './graph/graph.ts'
 import { createTimelineModel, type ExplorerView } from './graph/timeline.ts'
@@ -19,7 +19,7 @@ import { publicAsset } from './publicAsset.ts'
 import { withFeatureFlag } from './featureFlags.ts'
 import rawGraph from './data/graph.json'
 
-vi.mock('./components/navigation/SearchBar.tsx', () => ({ SearchBar: () => null }))
+vi.mock('./design-system/navigation/SearchBar.tsx', () => ({ SearchBar: () => null }))
 
 const graph: MusicGraph = {
   version: 1,
@@ -260,12 +260,12 @@ describe('view toggle', () => {
 
 describe('landing view transition', () => {
   it('shares uppercase caption typography between the loader and landing vinyl', () => {
-    const vinylCss = readFileSync(new URL('./vinyl.css', import.meta.url), 'utf8')
-    const homeCss = readFileSync(new URL('./components/home/Home.css', import.meta.url), 'utf8')
-    const loadingCss = readFileSync(new URL('./pageLoading.css', import.meta.url), 'utf8')
+    const vinylCss = readFileSync(new URL('./design-system/foundations/vinyl.css', import.meta.url), 'utf8')
+    const homeCss = readFileSync(new URL('./design-system/home/Home.css', import.meta.url), 'utf8')
+    const loadingCss = readFileSync(new URL('./design-system/ui/PageLoading.css', import.meta.url), 'utf8')
 
-    expect(homeCss).toContain('@import "../../vinyl.css";')
-    expect(loadingCss).toContain('@import "./vinyl.css";')
+    expect(homeCss).toContain('@import "../foundations/vinyl.css";')
+    expect(loadingCss).toContain('@import "../foundations/vinyl.css";')
     expect(vinylCss).toMatch(/\.discovery-kicker,\s*\.discovery-record-caption,\s*\.page-loading-wordmark\s*\{\s*font: 650 \.69rem\/1\.5 ui-monospace, monospace;\s*letter-spacing: \.17em;/)
     expect(vinylCss).toMatch(/\.discovery-record-caption,\s*\.page-loading-wordmark\s*\{\s*text-transform: uppercase;/)
   })
@@ -283,7 +283,7 @@ describe('landing view transition', () => {
 
   it('keeps the footer border full-width while aligning its contents with the header', () => {
     const markup = render(graph, <Home />)
-    const discoveryChromeCss = readFileSync(new URL('./components/navigation/DiscoveryChrome.css', import.meta.url), 'utf8')
+    const discoveryChromeCss = readFileSync(new URL('./design-system/navigation/DiscoveryChrome.css', import.meta.url), 'utf8')
 
     expect(markup).toContain('<header class="soundlines-page-header discovery-header"><div class="discovery-width discovery-header-inner">')
     expect(markup).toContain('<footer class="discovery-footer"><div class="discovery-width">')
@@ -348,7 +348,7 @@ describe('landing view transition', () => {
 
   it('keeps the turntable arm behind its feature flag by default', () => {
     const markup = render(graph, <Home />)
-    const homeCss = readFileSync(new URL('./components/home/Home.css', import.meta.url), 'utf8')
+    const homeCss = readFileSync(new URL('./design-system/home/Home.css', import.meta.url), 'utf8')
 
     expect(markup).not.toContain('discovery-tonearm')
     expect(markup).not.toContain('data-tonearm')
@@ -364,9 +364,9 @@ describe('landing view transition', () => {
       restore()
     }
     const tonearm = markup.match(/<div class="discovery-tonearm"[^>]*>/)?.[0]
-    const homeCss = readFileSync(new URL('./components/home/Home.css', import.meta.url), 'utf8')
+    const homeCss = readFileSync(new URL('./design-system/home/Home.css', import.meta.url), 'utf8')
     const reducedMotionCss = homeCss.match(/@media \(prefers-reduced-motion: reduce\) \{([\s\S]*?)\n\}/)?.[1]
-    const loadingCss = readFileSync(new URL('./pageLoading.css', import.meta.url), 'utf8')
+    const loadingCss = readFileSync(new URL('./design-system/ui/PageLoading.css', import.meta.url), 'utf8')
 
     expect(tonearm).toContain('aria-hidden="true"')
     expect(tonearm).not.toContain('data-active')
@@ -394,8 +394,8 @@ describe('landing view transition', () => {
   })
 
   it('restores the selected face without animating during the opening dock', () => {
-    const homeCss = readFileSync(new URL('./components/home/Home.css', import.meta.url), 'utf8')
-    const loadingCss = readFileSync(new URL('./pageLoading.css', import.meta.url), 'utf8')
+    const homeCss = readFileSync(new URL('./design-system/home/Home.css', import.meta.url), 'utf8')
+    const loadingCss = readFileSync(new URL('./design-system/ui/PageLoading.css', import.meta.url), 'utf8')
     const reducedMotionCss = homeCss.match(/@media \(prefers-reduced-motion: reduce\) \{([\s\S]*?)\n\}/)?.[1]
 
     expect(homeCss).toContain(':root[data-theme="light"] .discovery-record-flip { transform: rotateY(180deg); }')
@@ -406,7 +406,7 @@ describe('landing view transition', () => {
   })
 
   it('keeps the mobile detail sheet above the timeline content and below the navigation', () => {
-    const css = readFileSync(new URL('./index.css', import.meta.url), 'utf8')
+    const css = readFileSync(new URL('./design-system/foundations/index.css', import.meta.url), 'utf8')
     expect(css).toContain('.soundlines-home-transition [data-mobile-detail-sheet] { view-transition-name: soundlines-detail-sheet; }')
     expect(css).toContain('.soundlines-home-transition::view-transition-group(soundlines-detail-sheet) { z-index: 1; }')
     expect(css).toContain('.soundlines-home-transition::view-transition-group(soundlines-explorer-navigation) { z-index: 2; }')

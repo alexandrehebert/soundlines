@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useState } from 'react'
 import { expect, userEvent, waitFor, within } from 'storybook/test'
-import { ModalPanel } from '../components/ui/ModalPanel.tsx'
+import { ModalPanel } from '../design-system/ui/ModalPanel.tsx'
 
 function Example() {
   const [open, setOpen] = useState(false)

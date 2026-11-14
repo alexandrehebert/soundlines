@@ -1,0 +1,51 @@
+.soundlines-turntable {
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 32rem);
+  margin-inline: auto;
+  border: 1px solid var(--home-node-line);
+  border-radius: .9rem;
+  background: linear-gradient(145deg, var(--home-node), var(--home-surface) 60%);
+  box-shadow: inset 0 1px 0 #ffffff24, inset 0 -5px 0 #0003, 0 .75rem 2rem #0005;
+  color: var(--home-text);
+  --home-hover: #201a35;
+}
+
+.soundlines-turntable[data-side="B"] { --home-hover: #efdfd0; }
+.soundlines-turntable[data-side="A"] .discovery-record-flip { transform: rotateY(0deg); }
+.soundlines-turntable[data-side="B"] .discovery-record-flip { transform: rotateY(180deg); }
+.soundlines-turntable[data-side="A"] .discovery-turntable-led { --turntable-led-on: #3ee07a; }
+.soundlines-turntable[data-side="B"] .discovery-turntable-led { --turntable-led-on: #17a34a; }
+
+.soundlines-turntable .discovery-turntable-deck {
+  gap: 1.65rem;
+  padding: clamp(.9rem, 4vw, 1.75rem);
+}
+
+.soundlines-turntable .discovery-record-perspective::before {
+  position: absolute;
+  inset: -.32rem;
+  content: "";
+  border: 1px solid var(--home-node-line);
+  border-radius: 50%;
+  background: repeating-radial-gradient(circle, var(--home-node) 0 1px, var(--home-line) 1px 2px);
+}
+
+.soundlines-turntable .discovery-turntable-controls {
+  display: grid;
+  grid-template-columns: auto minmax(0, 9.5rem) auto;
+  justify-content: space-between;
+  justify-self: stretch;
+  gap: .5rem;
+}
+
+.soundlines-turntable .discovery-turntable-lcd {
+  display: flex;
+  grid-area: 1 / 2;
+  min-width: 0;
+  margin-right: 0;
+}
+
+.soundlines-turntable .discovery-turntable-lcd-screen { min-width: 0; }
+.soundlines-turntable .discovery-turntable-play { grid-area: 1 / 1; }
+.soundlines-turntable .discovery-turntable-side-toggle { grid-area: 1 / 3; }

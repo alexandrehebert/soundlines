@@ -1,8 +1,8 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import { Home } from './components/home/Home.tsx'
-import { Explorer } from './Explorer.tsx'
+import { Home } from './design-system/home/Home.tsx'
+import { Explorer } from './design-system/explorer/Explorer.tsx'
 import { useExplorer } from './ExplorerContext.ts'
 import { isJukeboxPath } from './explorerLocation.ts'
 import { isOpenDataPath } from './openData.ts'

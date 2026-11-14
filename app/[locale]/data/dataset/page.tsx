@@ -1,4 +1,4 @@
-import { OpenDataDataset } from '../../../../src/components/open-data/OpenDataDataset.tsx'
+import { OpenDataDataset } from '../../../../src/design-system/open-data/OpenDataDataset.tsx'
 import { generateOpenDataMetadata, openDataLocale, type OpenDataPageProps } from '../../../../src/i18n/openDataPage.ts'
 
 export function generateMetadata(props: OpenDataPageProps) {

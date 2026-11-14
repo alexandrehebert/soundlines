@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useState } from 'react'
 import { expect, userEvent, within } from 'storybook/test'
-import { SegmentedControl } from '../components/ui/SegmentedControl.tsx'
+import { SegmentedControl } from '../design-system/ui/SegmentedControl.tsx'
 
 const options = [
   { value: 'all', content: 'All' },

@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect } from 'storybook/test'
-import { VinylRecord } from '../components/playback/VinylRecord.tsx'
+import { VinylRecord } from '../design-system/playback/VinylRecord.tsx'
 
 const meta = {
-  title: 'Playback/Vinyl record',
+  title: 'Playback/Turntable/Vinyl record',
   id: 'components-vinyl-record',
   component: VinylRecord,
   tags: ['autodocs'],

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, userEvent, within } from 'storybook/test'
-import { InfoBadge } from '../components/ui/InfoBadge.tsx'
+import { InfoBadge } from '../design-system/ui/InfoBadge.tsx'
 
 const meta = {
   title: 'Controls/Info badge',

@@ -207,7 +207,7 @@ components must build URLs to files in `public/` with `publicAsset()` from
 [src/publicAsset.ts](../src/publicAsset.ts), never a bare `/path`. Preview it
 with `npm run preview:site` and open `/soundlines/storybook/`.
 
-The catalogue groups stories under Foundations, Controls, Overlays, Visualizations,
+The catalogue groups stories under Foundations, Navigation, Controls, Overlays, Visualizations,
 Playback, and Screens. The segmented control and modal panel have standalone
 examples. Explorer screen stories cover the mobile detail sheet in context. Use the Controls,
 Actions, Accessibility, and viewport panels to inspect variants and interactions;
@@ -224,9 +224,9 @@ palette for its theme; the dark asset is also used by the companion site and
 Storybook. The **Foundations / Favicon** story shows both still variants and
 compares animated previews with the previous vinyl icon and the Soundline concept at 16,
 24, and 32 pixels and on light and dark browser tabs. The browser favicon itself
-does not animate; the header logo ([SoundlinesMark](../src/components/navigation/SoundlinesMark.tsx))
+does not animate; the header logo ([SoundlinesMark](../src/design-system/navigation/SoundlinesMark.tsx))
 plays the same wave motion on hover, focus and scroll, using the shared model in
-[soundlinesWave.ts](../src/components/navigation/soundlinesWave.ts).
+[soundlinesWave.ts](../src/design-system/navigation/soundlinesWave.ts).
 Preview animations can be paused and are disabled when reduced motion is
 requested. The studies are standalone SVGs in
 [src/stories/fixtures/favicon-concepts/](../src/stories/fixtures/favicon-concepts/).

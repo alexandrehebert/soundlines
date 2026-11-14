@@ -7,6 +7,7 @@ const sections = [
     title: 'Foundations',
     links: [
       ['Genre family colors', 'foundations-colors--genre-families'],
+      ['Instrument icons', 'foundations-instrument-icon--catalog'],
       ['Instrument artwork', 'foundations-instrument-artwork--catalog'],
     ],
   },

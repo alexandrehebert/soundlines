@@ -4,22 +4,23 @@
 
 Paths in prose and commands are relative to the repository root.
 
-## App components
+## Webapp design system
 
-[src/components](../src/components/) is organized by feature. Keep styles,
-tests, and helpers beside the components that use them.
+[src/design-system](../src/design-system/) is organized by UI responsibility.
+Follow the [design system guide](./DESIGN_SYSTEM.md) when adding or changing UI.
 
 | Folder | Owns |
 | --- | --- |
-| [home](../src/components/home/) | Landing page, daily spotlights, chronology previews, and Soundtrails |
-| [navigation](../src/components/navigation/) | Shared page chrome, branding, search, and explorer links |
-| [explorer](../src/components/explorer/) | View controls, legend, entry details, and instrument icons |
-| [bubbles](../src/components/bubbles/) | Genre bubble view, minimap, and zoom controls |
-| [timeline](../src/components/timeline/) | Timeline and history views, including undated entries |
-| [dataset](../src/components/dataset/) | Dataset statistics and charts |
-| [open-data](../src/components/open-data/) | Open Data pages and dataset graph |
-| [playback](../src/components/playback/) | Audio previews, jukebox, turntable, and playback coordination |
-| [ui](../src/components/ui/) | Reusable controls, panels, and badges |
+| [foundations](../src/design-system/foundations/) | Global styles, theme tokens, and vinyl styling |
+| [home](../src/design-system/home/) | Landing page, daily spotlights, chronology previews, and Soundtrails |
+| [navigation](../src/design-system/navigation/) | Shared page chrome, branding, search, and explorer links |
+| [explorer](../src/design-system/explorer/) | View controls, legend, entry details, and instrument icons |
+| [bubbles](../src/design-system/bubbles/) | Genre bubble view, minimap, and zoom controls |
+| [timeline](../src/design-system/timeline/) | Timeline and history views, including undated entries |
+| [dataset](../src/design-system/dataset/) | Dataset statistics and charts |
+| [open-data](../src/design-system/open-data/) | Open Data pages and dataset graph |
+| [playback](../src/design-system/playback/) | Audio previews, jukebox, turntable, and playback coordination |
+| [ui](../src/design-system/ui/) | Reusable controls, panels, and badges |
 
 ## Shared explorer architecture
 
@@ -30,7 +31,7 @@ tests, and helpers beside the components that use them.
   Light mode uses parchment surfaces, warm brown text, terracotta UI accents, and a muted categorical
   chart palette. Keep source hues in [theme.ts](../src/theme.ts) stable for dark
   mode; rendering code uses `chartColor` to resolve shared light-mode aliases
-  from [colorTheme.css](../src/colorTheme.css). Bars blend over the theme's canvas,
+  from [colorTheme.css](../src/design-system/foundations/colorTheme.css). Bars blend over the theme's canvas,
   with dark labels in light mode; prominence, date fades, and category meanings
   remain unchanged. Colored text and instrument icons use `chartTextColor` for
   contrast without changing dark-mode hues.
@@ -81,5 +82,5 @@ tests, and helpers beside the components that use them.
   routes, URL parameters, and graph nodes. App Router metadata is rendered on
   the server, including canonical and alternate-language URLs.
 - [Timeline model](../src/graph/timeline.ts) projects the graph for each mode, infers artist families, and restricts layout and traversal to same-view relationships.
-- [Timeline](../src/components/timeline/Timeline.tsx) composes shared [geometry](../src/components/timeline/geometry.ts), [bar rendering](../src/components/timeline/TimelineBar.tsx), [relationship rendering](../src/components/timeline/TimelineLinks.tsx), and [viewport interaction](../src/components/timeline/useTimelineViewport.ts).
+- [Timeline](../src/design-system/timeline/Timeline.tsx) composes shared [geometry](../src/design-system/timeline/geometry.ts), [bar rendering](../src/design-system/timeline/TimelineBar.tsx), [relationship rendering](../src/design-system/timeline/TimelineLinks.tsx), and [viewport interaction](../src/design-system/timeline/useTimelineViewport.ts).
 - [Prominence helpers](../src/graph/phases.ts) provide the same intensity, fade, and revival logic for both node types.

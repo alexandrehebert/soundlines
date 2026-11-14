@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import { AudioPreviewPlayer } from '../components/playback/AudioPreviewPlayer.tsx'
+import { AudioPreviewPlayer } from '../design-system/playback/AudioPreviewPlayer.tsx'
 
 const meta = {
   title: 'Playback/Audio preview player',

@@ -13,6 +13,15 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 Use the [documentation index](./docs/README.md) to find the guide, skill, and
 validation command for your task.
 
+## Webapp UI changes
+
+- Before changing webapp UI, read the [design system guide](./docs/DESIGN_SYSTEM.md)
+  and check Storybook for an existing component to reuse.
+- Use components and tokens from `src/design-system`. Add a component or
+  extend its API there when the catalogue lacks the required behavior.
+- Update the Storybook story and relevant behavior tests in the same change as
+  any UI addition or change. Run `npm test` and `npm run build-storybook`.
+
 ## Local browser verification
 
 - Before starting a server, check `docker compose ps` and whether the app at

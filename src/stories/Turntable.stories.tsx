@@ -1,34 +1,42 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import { expect, fireEvent, waitFor } from 'storybook/test'
-import { Turntable } from '../components/playback/Turntable.tsx'
-import { useColorTheme } from '../useColorTheme.ts'
-
-function InteractiveTurntable() {
-  const { theme, toggleTheme } = useColorTheme()
-  return <div className="discovery" style={{ minHeight: 0, padding: '1.5rem' }}><Turntable theme={theme} toggleTheme={toggleTheme}><p className="discovery-intro">Drag the vinyl to scratch. Press play to listen, and use Side to change the appearance and record side.</p></Turntable></div>
-}
+import { useArgs } from 'storybook/preview-api'
+import { expect, userEvent, waitFor } from 'storybook/test'
+import { Turntable } from '../design-system/playback/Turntable.tsx'
 
 const meta = {
-  title: 'Playback/Turntable',
+  title: 'Playback/Turntable/Deck',
   id: 'components-turntable',
   component: Turntable,
   tags: ['autodocs'],
   args: { theme: 'dark', toggleTheme: () => {} },
-  parameters: { layout: 'fullscreen' },
-  render: () => <InteractiveTurntable />,
+  parameters: { layout: 'padded' },
+  render: function Deck(args) {
+    const [{ theme }, updateArgs] = useArgs<typeof args>()
+    return <Turntable {...args} theme={theme} toggleTheme={() => updateArgs({ theme: theme === 'dark' ? 'light' : 'dark' })} />
+  },
 } satisfies Meta<typeof Turntable>
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Interactive: Story = {
-  play: async ({ canvasElement }) => {
-    const knob = canvasElement.querySelector<HTMLButtonElement>('.discovery-turntable-side-toggle')!
-    const record = canvasElement.querySelector<HTMLElement>('.discovery-record-perspective')!
-    const previous = record.dataset.side
-    await fireEvent.click(knob)
-    await waitFor(() => expect(record.dataset.side).not.toBe(previous))
-    expect(knob.dataset.side).toBe(record.dataset.side)
-    await fireEvent.click(knob)
+  play: async ({ canvas }) => {
+    const deck = canvas.getByRole('region', { name: 'Turntable' })
+    const side = canvas.getByRole('button', { name: /flip to side/i })
+    const initialSide = deck.getAttribute('data-side')
+    await userEvent.click(side)
+    await waitFor(() => expect(deck).not.toHaveAttribute('data-side', initialSide))
+    await userEvent.keyboard('{Enter}')
+    await waitFor(() => expect(deck).toHaveAttribute('data-side', initialSide))
   },
 }
-export const Mobile: Story = { globals: { viewport: { value: 'mobile2', isRotated: false } } }
+
+export const SideB: Story = { args: { theme: 'light' } }
+
+export const Mobile: Story = {
+  globals: { viewport: { value: 'mobile2', isRotated: false } },
+  play: async ({ canvas }) => {
+    const deck = canvas.getByRole('region', { name: 'Turntable' })
+    await expect(deck.querySelector('.discovery-tonearm')).toBeVisible()
+    await expect(deck.querySelector('.discovery-turntable-lcd')).toBeVisible()
+  },
+}

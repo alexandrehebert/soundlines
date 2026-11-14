@@ -3,7 +3,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useEffect, useRef, useState } from 'react'
 import { faviconUrl } from '../favicon.ts'
-import { createWaveModel, sampleWave, WaveTape } from '../components/navigation/soundlinesWave.ts'
+import { createWaveModel, sampleWave, WaveTape } from '../design-system/navigation/soundlinesWave.ts'
 import soundlineSvg from './fixtures/favicon-concepts/soundline.svg?raw'
 import soundlinesSvg from './fixtures/favicon-concepts/soundlines.svg?raw'
 import './Favicon.css'

@@ -3,7 +3,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { MotionConfig } from 'motion/react'
 import { catalogueFor } from '../src/i18n/catalogue.ts'
 import { DEFAULT_LOCALE } from '../src/i18n/routing.ts'
-import '../src/index.css'
+import '../src/design-system/foundations/index.css'
 
 const preview: Preview = {
   decorators: [
@@ -24,7 +24,7 @@ const preview: Preview = {
     },
     controls: { expanded: true },
     options: {
-      storySort: { order: ['Overview', 'Foundations', 'Controls', 'Overlays', 'Visualizations', 'Playback', 'Screens'] },
+      storySort: { order: ['Overview', 'Foundations', 'Navigation', 'Controls', 'Overlays', 'Visualizations', 'Playback', 'Screens'] },
     },
   },
   initialGlobals: {

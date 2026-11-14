@@ -1,4 +1,4 @@
-import { OpenDataQuery } from '../../../../src/components/open-data/OpenDataQuery.tsx'
+import { OpenDataQuery } from '../../../../src/design-system/open-data/OpenDataQuery.tsx'
 import { generateOpenDataMetadata, openDataLocale, type OpenDataPageProps } from '../../../../src/i18n/openDataPage.ts'
 
 export function generateMetadata(props: OpenDataPageProps) {

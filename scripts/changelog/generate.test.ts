@@ -239,6 +239,7 @@ describe('deterministic changelog', () => {
     ['.github/workflows/graph-quality.yml', 'workflow'],
     ['docs/DEVELOPMENT.md', 'docs'],
     ['src/components/timeline/Timeline.tsx', 'app'],
+    ['src/design-system/timeline/Timeline.tsx', 'app'],
     ['LICENSE', 'other'],
   ])('classifies %s as %s', (path, category) => {
     expect(categoryFor(path)).toBe(category)
