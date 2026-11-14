@@ -2,6 +2,63 @@
   "version": 4,
   "entries": [
     {
+      "commit": "ebcc39099d65d257d418d144ee4672d509920774",
+      "parent": "d0a461bcffbc014e03086ad4f2a5a1afdc139f45",
+      "date": "2026-11-13T20:49:32-05:00",
+      "subject": "Refine graph contribution documentation",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/GRAPH.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/RESEARCH.md"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/agents/graph-validator.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/graph-review/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/graph-validate/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/workflows/graph-quality.yml"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "README.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/README.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "34685e4300f4f3549a4985a5ca1738d7638caa10",
       "parent": "2c99e3d9b22042ce676d13aa8008c1efde7c1c9f",
       "date": "2026-11-13T20:44:52-05:00",

@@ -12,6 +12,14 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-13 — Refine graph contribution documentation
+
+[ebcc3909](https://github.com/alexandrehebert/soundlines/commit/ebcc39099d65d257d418d144ee4672d509920774)
+
+- graph: 2 changed files
+- workflow: 4 changed files
+- docs: 2 changed files
+
 ## 2026-11-13 — Organize documentation by contribution task
 
 [34685e43](https://github.com/alexandrehebert/soundlines/commit/34685e4300f4f3549a4985a5ca1738d7638caa10)
