@@ -1012,7 +1012,59 @@ def upright_bass_brass(is_tuba):
             + brass_pistons(valves,-14,31))
 
 
+def cornet():
+    return (brass_tube('M-76-12H38Q57-12 57 5Q57 24 38 24H-46Q-67 24-67 8Q-67-4-51-4H16', 6.5)
+            + brass_tube('M-47 14V29Q-47 39-37 39H-10Q0 39 0 29V12', 6)
+            + brass_tube('M-1 12H23Q36 12 36 20Q36 31 23 31H3', 5)
+            + brass_pistons((-38,-23,-8), -16, 38)
+            + path('M-29-2C19-2 42-1 64-7Q76-10 88-21V21Q72 9 60 6C39 2 12 4-29 4Z', WOOD)
+            + ellipse(88,0,4.2,21,'#765020',GOLD)
+            + brass_mouthpiece(-89,-12))
+
+
+def flugelhorn():
+    return (brass_tube('M-81-17H36Q63-17 63 7V16Q63 39 38 39H-42Q-70 39-70 14V-4', 8)
+            + brass_tube('M-61 21Q-58 31-44 31H-6Q10 31 10 15V-3', 6)
+            + brass_tube('M-8 18H15Q28 18 28 28H45', 5)
+            + brass_pistons((-48,-33,-18), -19, 41)
+            + path('M-30-4C13-4 34-7 53-13Q76-21 91-34V30Q72 17 51 12C31 7 3 4-30 4Z', WOOD)
+            + ellipse(91,-2,6,32,'#765020',GOLD)
+            + brass_mouthpiece(-94,-17))
+
+
+def sousaphone():
+    return (brass_tube('M-34-44C-57-35-70-14-64 11C-57 39-32 56-5 53C22 50 43 31 47 9C52-16 35-34 13-41', 12, 1.8)
+            + path('M17-35Q31-58 46-59Q65-62 86-64L104-27Q80-19 60-28Q46-35 28-20Z', WOOD)
+            + '<g transform="rotate(-29 93 -44)">'+ellipse(93,-44,8,22,'#735022',GOLD)+'</g>'
+            + brass_tube('M-40-34H-21Q-13-34-12-25L-8-13', 4.5)
+            + brass_tube('M-35 1v16q0 12 11 12h17q10 0 10-12V-2M-24 4v9q0 8 7 8h7', 4.5)
+            + brass_pistons((-32,-21,-10), -14, 30)
+            + brass_mouthpiece(-53,-34))
+
+
+def cornetto():
+    return (path('M-102-21C-33-22 28-12 87 12L101 17L96 32C41 6-31-11-102-13Z', '#734c32', '#f0c982')
+            + path('M-95-17Q8-17 94 24', stroke='#dfa962', w=1.65)
+            + ''.join(ellipse(x,y,3,2.6,'#2b1d17','#dba75f')
+                      for x,y in [(-57,-15),(-36,-14),(-15,-11),(7,-7),(29,-2),(51,5)])
+            + '<g transform="rotate(23 98 24)">'+ellipse(98,24,3.3,7.7,'#302016',GOLD)+'</g>'
+            + brass_mouthpiece(-115,-17))
+
+
+def natural_trumpet():
+    return (brass_tube('M-127-10H94Q105-10 105 0Q105 10 94 10H-96Q-108 10-108 0Q-108-10-97-10H-57', 4.5)
+            + brass_tube('M-68-9V9M21-9V9', 2.8)
+            + path('M-61-13C18-13 63-12 90-16Q109-19 122-28V8Q109-2 91-4C55-7 6-7-61-7Z', WOOD)
+            + ellipse(122,-10,4,18,'#745123',GOLD)
+            + brass_mouthpiece(-139,-10))
+
+
 ART = {
+    'cornet': (lambda _: cornet(), 1.29, 'M2 9h4m0 0h10q3-1 5-4v11q-3-4-7-4H7q-3 0-3 3t3 3h7q4 0 4-3M7 7v11m3-11v11m3-11v8'),
+    'flugelhorn': (lambda _: flugelhorn(), 1.22, 'M2 8h5m0 0h7q4-1 8-5v13q-4-4-9-4H6q-2 0-2 3v2q0 3 3 3h9q4 0 4-4M7 6v11m3-11v11m3-11v10'),
+    'sousaphone': (lambda _: sousaphone(), 1.1, 'M4 7h4m-2 0a8 8 0 1 0 10 1m-2 3 2-7 5-2 1 7-6 2m-9 0v5m3-5v5'),
+    'cornetto': (lambda _: cornetto(), 1.1, 'M3 6q8 0 19 8l-2 3Q12 10 3 9Zm4 2h.01m3 1h.01m3 1h.01m3 2h.01m3 1h.01'),
+    'natural-trumpet': (lambda _: natural_trumpet(), 1.1, 'M2 9h13q4 0 7-4v9q-3-3-7-3H5q-3 0-3 3t3 3h16M8 11v6m7-6v6'),
     'trombone': (lambda _: straight_trombone(), 1.19, 'M2 8h7q4 0 7-3v6q-4-2-7-2H5q-3 0-3 3t3 3h15q2 0 2 2t-2 2H3m2-4v4m3-4v4'),
     'trumpet': (lambda _: piston_trumpet(), 1.28, 'M2 9h4m0 0h8q6 0 7-4v13q-4-5-9-5H5q-2 0-2 2t2 2h10m-9-9v9m3-9v9m3-9v9M5 6h2m1 0h2m1 0h2'),
     'french-horn': (lambda _: single_f_horn(), 1.25, 'M2 4h5q8-1 9 6 1 7-5 9-6 2-8-4-1-5 4-7 5-2 6 3 1 4-3 5m4 2 8-4v7Zm-8-7h1m1 0h1m1 0h1'),
@@ -1106,6 +1158,11 @@ def write(kind, slug, width, height, content):
 
 def illustration(kind, slug, width, height, geometry, scale):
     accent, shade = {
+        'cornet': ('#fbbf24', '#6c520f'),
+        'flugelhorn': ('#fbbf24', '#6c520f'),
+        'sousaphone': ('#fbbf24', '#6c520f'),
+        'cornetto': ('#fbbf24', '#6c520f'),
+        'natural-trumpet': ('#fbbf24', '#6c520f'),
         'trombone': ('#fbbf24', '#6c520f'),
         'trumpet': ('#fbbf24', '#6c520f'),
         'french-horn': ('#fbbf24', '#6c520f'),

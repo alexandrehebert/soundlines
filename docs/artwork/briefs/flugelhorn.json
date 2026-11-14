@@ -1,0 +1,39 @@
+{
+  "slug": "flugelhorn",
+  "instrument": "instrument:flugelhorn",
+  "family": "brass",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/504681",
+      "shows": "Documents the historical specimen or origin of the instrument."
+    },
+    {
+      "url": "https://sg.yamaha.com/en/musical-instruments/brass-woodwinds/products/flugelhorns/yfh-631g/",
+      "shows": "Shows the construction or outline of the chosen instrument form."
+    }
+  ],
+  "silhouette": "Broad bell flare over a deep, rounded wrap.",
+  "features": [
+    "Broad bell flare over a deep, rounded wrap.",
+    "The three piston buttons sit above the loop.",
+    "The taper opens earlier and more broadly than on the trumpet."
+  ],
+  "iconFeatures": [
+    "Broad bell flare over a deep, rounded wrap."
+  ],
+  "avoid": [
+    "Contours that obscure the characteristic tubing path"
+  ],
+  "notes": "Shows the variant described in the geometry. The icon preserves the major outer contours.",
+  "geometry": {
+    "view": "Side view, with the rim visible from a slight angle",
+    "proportions": "Broad bell flare over a deep, rounded wrap.",
+    "partLayout": "The three piston buttons sit above the loop. The taper opens earlier and more broadly than on the trumpet.",
+    "documentedDimensions": {
+      "value": "34 cm overall length and 16 cm bell diameter on the historical specimen.",
+      "source": "https://www.metmuseum.org/art/collection/search/504681",
+      "scope": "Met 89.4.2302"
+    }
+  }
+}

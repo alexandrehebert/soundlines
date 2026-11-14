@@ -1,0 +1,34 @@
+{
+  "slug": "sousaphone",
+  "instrument": "instrument:sousaphone",
+  "family": "brass",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://dornsife.usc.edu/news/stories/a-sousa-phony-exposed/",
+      "shows": "Documents the historical specimen or origin of the instrument."
+    },
+    {
+      "url": "https://www.yamaha.com/en/about/experience/innovation-road/collection/detail/6022/",
+      "shows": "Shows the construction or outline of the chosen instrument form."
+    }
+  ],
+  "silhouette": "A torso-sized circular wrap under a large forward-facing bell.",
+  "features": [
+    "A torso-sized circular wrap under a large forward-facing bell.",
+    "Keep the center open for the player.",
+    "Place the valves on one side of the hoop and the narrow mouthpipe at shoulder level."
+  ],
+  "iconFeatures": [
+    "A torso-sized circular wrap under a large forward-facing bell."
+  ],
+  "avoid": [
+    "Contours that obscure the characteristic tubing path"
+  ],
+  "notes": "Shows the variant described in the geometry. The icon preserves the major outer contours.",
+  "geometry": {
+    "view": "Front three-quarter of a bell-front model",
+    "proportions": "A torso-sized circular wrap under a large forward-facing bell.",
+    "partLayout": "Keep the center open for the player. Place the valves on one side of the hoop and the narrow mouthpipe at shoulder level."
+  }
+}

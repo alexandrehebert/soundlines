@@ -5999,6 +5999,26 @@
     "instrument:dominican-tambora": {
       "name": "Tambora dominicana",
       "description": "Tambor dominicano de dos parches que se toca con una mano y un palo en el merengue típico."
+    },
+    "instrument:cornet": {
+      "name": "Corneta de pistones",
+      "description": "Instrumento de metal compacto con pistones. Su tubo plegado le da un perfil más corto que el de la trompeta."
+    },
+    "instrument:flugelhorn": {
+      "name": "Fliscorno",
+      "description": "Instrumento de metal con pistones, tubo mayormente cónico y campana ancha. Su timbre redondo lo convirtió en una alternativa a la trompeta para los solistas de jazz."
+    },
+    "instrument:sousaphone": {
+      "name": "Sousafón",
+      "description": "Instrumento grave de metal con pistones, cuyo tubo rodea al intérprete. En la versión de campana frontal, esta sobresale por encima del hombro."
+    },
+    "instrument:cornetto": {
+      "name": "Corneta renacentista",
+      "description": "Instrumento renacentista que se toca con una pequeña boquilla de copa. Los orificios de su cuerpo curvo de madera cambian la longitud vibrante."
+    },
+    "instrument:natural-trumpet": {
+      "name": "Trompeta natural",
+      "description": "Trompeta sin válvulas que produce las notas de su serie armónica natural. Los músicos barrocos usaban los armónicos agudos para tocar melodías."
     }
   },
   "edges": {

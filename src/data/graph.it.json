@@ -5982,6 +5982,26 @@
     "instrument:dominican-tambora": {
       "name": "Tambora dominicana",
       "description": "Tamburo dominicano a due membrane suonato con una mano e una bacchetta nel merengue típico."
+    },
+    "instrument:cornet": {
+      "name": "Cornetta",
+      "description": "Ottone compatto a pistoni. Il tubo ripiegato gli conferisce un profilo più corto di quello della tromba."
+    },
+    "instrument:flugelhorn": {
+      "name": "Flicorno soprano",
+      "description": "Ottone a pistoni con canneggio in gran parte conico e campana larga. Il timbro rotondo ne ha fatto un’alternativa alla tromba per i solisti jazz."
+    },
+    "instrument:sousaphone": {
+      "name": "Sousafono",
+      "description": "Ottone grave a pistoni con un tubo che avvolge il musicista. Nella versione con campana frontale, la campana larga sporge sopra la spalla."
+    },
+    "instrument:cornetto": {
+      "name": "Cornetto",
+      "description": "Strumento rinascimentale suonato con un piccolo bocchino a tazza. I fori del corpo ricurvo in legno cambiano la lunghezza vibrante."
+    },
+    "instrument:natural-trumpet": {
+      "name": "Tromba naturale",
+      "description": "Tromba senza valvole che produce le note della serie armonica naturale. I musicisti barocchi usavano gli armonici acuti per le melodie."
     }
   },
   "edges": {

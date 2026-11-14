@@ -5994,6 +5994,26 @@
     "instrument:dominican-tambora": {
       "name": "Dominikanische Tambora",
       "description": "Dominikanische Trommel mit zwei Fellen, die im Merengue típico mit einer Hand und einem Stock gespielt wird."
+    },
+    "instrument:cornet": {
+      "name": "Kornett",
+      "description": "Kompaktes Blechblasinstrument mit Ventilen. Seine eng gewundene Röhre ergibt eine kürzere Bauform als bei einer Trompete."
+    },
+    "instrument:flugelhorn": {
+      "name": "Flügelhorn",
+      "description": "Blechblasinstrument mit Ventilen, weitgehend konischer Bohrung und breitem Schallbecher. Sein runder Klang machte es für Jazzsolisten zur Alternative zur Trompete."
+    },
+    "instrument:sousaphone": {
+      "name": "Sousaphon",
+      "description": "Tiefes Blechblasinstrument mit Ventilen und einer Röhre, die den Spieler umschließt. Bei der verbreiteten Form zeigt der breite Schallbecher über der Schulter nach vorn."
+    },
+    "instrument:cornetto": {
+      "name": "Zink",
+      "description": "Instrument der Renaissance mit kleinem Kesselmundstück. Grifflöcher im gekrümmten Holzkorpus verändern die klingende Rohrlänge."
+    },
+    "instrument:natural-trumpet": {
+      "name": "Naturtrompete",
+      "description": "Ventillose Trompete, die die Töne ihrer Naturtonreihe erzeugt. Barocktrompeter spielten Melodien mit den hohen Naturtönen."
     }
   },
   "edges": {

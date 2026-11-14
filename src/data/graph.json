@@ -25083,6 +25083,86 @@
       "phaseNote": "Circa 1843 is a conventional development marker, but related designs and an alternative 1838 attribution complicate a single invention date. No complete prominence curve is assigned."
     },
     {
+      "id": "instrument:cornet",
+      "type": "instrument",
+      "name": "Cornet",
+      "family": "brass",
+      "period": {
+        "start": 1833,
+        "precision": "year"
+      },
+      "description": "A compact valved brass instrument. Its closely folded tubing gives it a shorter profile than a trumpet.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/503546",
+        "https://hub.yamaha.com/winds/brass/whats-the-difference-between-a-trumpet-and-a-cornet/"
+      ]
+    },
+    {
+      "id": "instrument:flugelhorn",
+      "type": "instrument",
+      "name": "Flugelhorn",
+      "family": "brass",
+      "period": {
+        "start": 1875,
+        "precision": "circa"
+      },
+      "description": "A valved brass instrument with a largely conical bore and a broad bell. Its rounded tone made it an alternative to the trumpet for jazz soloists.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/504681",
+        "https://sg.yamaha.com/en/musical-instruments/brass-woodwinds/products/flugelhorns/yfh-631g/"
+      ]
+    },
+    {
+      "id": "instrument:sousaphone",
+      "type": "instrument",
+      "name": "Sousaphone",
+      "family": "brass",
+      "period": {
+        "start": 1895,
+        "precision": "year"
+      },
+      "description": "A valved bass brass instrument whose tubing loops around the player. In the familiar bell-front form, the wide bell projects above the shoulder.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://dornsife.usc.edu/news/stories/a-sousa-phony-exposed/",
+        "https://www.yamaha.com/en/about/experience/innovation-road/collection/detail/6022/"
+      ]
+    },
+    {
+      "id": "instrument:cornetto",
+      "type": "instrument",
+      "name": "Cornetto",
+      "family": "brass",
+      "period": {
+        "start": 1575,
+        "precision": "circa"
+      },
+      "description": "A Renaissance instrument played with a small cup mouthpiece. Its curved wooden body has finger holes that change the sounding length.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/503951",
+        "https://www.cornetto.org.uk/cornetto.html"
+      ]
+    },
+    {
+      "id": "instrument:natural-trumpet",
+      "type": "instrument",
+      "name": "Natural trumpet",
+      "family": "brass",
+      "period": {
+        "start": 1690,
+        "precision": "circa"
+      },
+      "description": "A valveless trumpet that sounds the notes of its natural harmonic series. Baroque players used the upper harmonics for melodic lines.",
+      "addedOn": "2026-11-13",
+      "sources": [
+        "https://www.metmuseum.org/art/collection/search/503971",
+        "https://www.metmuseum.org/art/collection/search/501675"
+      ]
+    },
+    {
       "id": "instrument:timpani",
       "type": "instrument",
       "name": "Timpani",
@@ -59494,6 +59574,56 @@
       "to": "genre:merengue",
       "sources": [
         "https://folkways-media.si.edu/docs/folkways/artwork/SFW40547.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:cornet-new-orleans-jazz",
+      "type": "featured_in",
+      "from": "instrument:cornet",
+      "to": "genre:new-orleans-jazz",
+      "sources": [
+        "https://home.nps.gov/jazz/learn/historyculture/band-leaders.htm"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:flugelhorn-jazz",
+      "type": "featured_in",
+      "from": "instrument:flugelhorn",
+      "to": "genre:jazz",
+      "sources": [
+        "https://www.milesdavis.com/albums/miles-ahead/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "featured:sousaphone-new-orleans-jazz",
+      "type": "featured_in",
+      "from": "instrument:sousaphone",
+      "to": "genre:new-orleans-jazz",
+      "sources": [
+        "https://folkways-media.si.edu/docs/folkways/artwork/FW02462.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:cornetto-renaissance",
+      "type": "featured_in",
+      "from": "instrument:cornetto",
+      "to": "genre:renaissance",
+      "sources": [
+        "https://www.metmuseum.org/es/essays/music-in-the-renaissance"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "featured:natural-trumpet-baroque",
+      "type": "featured_in",
+      "from": "instrument:natural-trumpet",
+      "to": "genre:baroque",
+      "sources": [
+        "https://music.yale.edu/2011/04/01/student-viewpoint-master-class-in-natural-trumpet"
       ],
       "confidence": "high"
     }

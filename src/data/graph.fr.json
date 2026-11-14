@@ -6048,6 +6048,26 @@
     "instrument:dominican-tambora": {
       "name": "Tambora dominicaine",
       "description": "Tambour dominicain à deux peaux joué avec une main et une baguette dans le merengue típico."
+    },
+    "instrument:cornet": {
+      "name": "Cornet à pistons",
+      "description": "Cuivre compact à pistons. Ses tubes repliés lui donnent un profil plus court que celui d’une trompette."
+    },
+    "instrument:flugelhorn": {
+      "name": "Bugle",
+      "description": "Cuivre à pistons, à perce largement conique et à pavillon évasé. Sa sonorité ronde en a fait une alternative à la trompette pour les solistes de jazz."
+    },
+    "instrument:sousaphone": {
+      "name": "Soubassophone",
+      "description": "Cuivre grave à pistons dont le tube entoure le musicien. Dans la version à pavillon frontal, celui-ci se déploie au-dessus de l’épaule."
+    },
+    "instrument:cornetto": {
+      "name": "Cornet à bouquin",
+      "description": "Instrument de la Renaissance joué avec une petite embouchure en coupe. Les trous de son corps en bois courbé modifient la longueur vibrante."
+    },
+    "instrument:natural-trumpet": {
+      "name": "Trompette naturelle",
+      "description": "Trompette sans pistons qui produit les notes de sa série harmonique naturelle. Les musiciens baroques utilisaient les harmoniques aiguës pour jouer des mélodies."
     }
   },
   "edges": {

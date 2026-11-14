@@ -1,0 +1,39 @@
+{
+  "slug": "cornetto",
+  "instrument": "instrument:cornetto",
+  "family": "brass",
+  "method": "generator",
+  "references": [
+    {
+      "url": "https://www.metmuseum.org/art/collection/search/503951",
+      "shows": "Documents the historical specimen or origin of the instrument."
+    },
+    {
+      "url": "https://www.cornetto.org.uk/cornetto.html",
+      "shows": "Shows the construction or outline of the chosen instrument form."
+    }
+  ],
+  "silhouette": "A slender, gently curved body widens gradually toward the open end.",
+  "features": [
+    "A slender, gently curved body widens gradually toward the open end.",
+    "Place six finger holes along the front and the small cup mouthpiece at the narrow tip.",
+    "Keep the opening much smaller than a trumpet bell."
+  ],
+  "iconFeatures": [
+    "A slender, gently curved body widens gradually toward the open end."
+  ],
+  "avoid": [
+    "Contours that obscure the characteristic tubing path"
+  ],
+  "notes": "Shows the variant described in the geometry. The icon preserves the major outer contours.",
+  "geometry": {
+    "view": "Side view in the plane of the curve",
+    "proportions": "A slender, gently curved body widens gradually toward the open end.",
+    "partLayout": "Place six finger holes along the front and the small cup mouthpiece at the narrow tip. Keep the opening much smaller than a trumpet bell.",
+    "documentedDimensions": {
+      "value": "57.2 cm long and about 7 cm across the widest curve.",
+      "source": "https://www.metmuseum.org/art/collection/search/503951",
+      "scope": "Met cornetto in A"
+    }
+  }
+}

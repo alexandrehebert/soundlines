@@ -322,6 +322,8 @@ featured:conga-latin-jazz,featured_in,high,docs/graph/evidence/edges/featured__c
 featured:conga-salsa,featured_in,medium,docs/graph/evidence/edges/featured__conga-salsa.md,Source-checked
 featured:conga-son-cubano,featured_in,medium,docs/graph/evidence/edges/featured__conga-son-cubano.md,Source checked (2026-11-05)
 featured:cor-anglais-romantic,featured_in,high,docs/graph/evidence/edges/featured__cor-anglais-romantic.md,Source checked (2026-11-05)
+featured:cornet-new-orleans-jazz,featured_in,high,docs/graph/evidence/edges/featured__cornet-new-orleans-jazz.md,Source checked (2026-11-13)
+featured:cornetto-renaissance,featured_in,high,docs/graph/evidence/edges/featured__cornetto-renaissance.md,Source checked (2026-11-13)
 featured:cuban-tres-son-cubano,featured_in,high,docs/graph/evidence/edges/featured__cuban-tres-son-cubano.md,Source checked (2026-11-13)
 featured:cuica-samba,featured_in,high,docs/graph/evidence/edges/featured__cuica-samba.md,Source checked (2026-11-13)
 featured:darbuka-arabic-maqam,featured_in,high,docs/graph/evidence/edges/featured__darbuka-arabic-maqam.md,Source checked (2026-11-13)
@@ -363,6 +365,7 @@ featured:electric-piano-soul,featured_in,medium,docs/graph/evidence/edges/featur
 featured:erhu-peking-opera,featured_in,high,docs/graph/evidence/edges/featured__erhu-peking-opera.md,Source checked (2026-11-13)
 featured:euphonium-romantic,featured_in,high,docs/graph/evidence/edges/featured__euphonium-romantic.md,Source-checked
 featured:fairlight-cmi-pop,featured_in,high,docs/graph/evidence/edges/featured__fairlight-cmi-pop.md,Source checked (2026-11-13)
+featured:flugelhorn-jazz,featured_in,medium,docs/graph/evidence/edges/featured__flugelhorn-jazz.md,Source checked (2026-11-13)
 featured:french-horn-baroque,featured_in,high,docs/graph/evidence/edges/featured__french-horn-baroque.md,Source checked (2026-11-05)
 featured:french-horn-classical-period,featured_in,medium,docs/graph/evidence/edges/featured__french-horn-classical-period.md,Source checked (2026-11-05)
 featured:french-horn-romantic,featured_in,high,docs/graph/evidence/edges/featured__french-horn-romantic.md,Source checked (2026-11-05)
@@ -416,6 +419,7 @@ featured:modular-synthesizer-ambient,featured_in,medium,docs/graph/evidence/edge
 featured:modular-synthesizer-krautrock,featured_in,medium,docs/graph/evidence/edges/featured__modular-synthesizer-krautrock.md,Source checked (2026-11-05)
 featured:modular-synthesizer-progressive-rock,featured_in,high,docs/graph/evidence/edges/featured__modular-synthesizer-progressive-rock.md,Source checked (2026-11-05)
 featured:mridangam-carnatic,featured_in,high,docs/graph/evidence/edges/featured__mridangam-carnatic.md,Source checked (2026-11-13)
+featured:natural-trumpet-baroque,featured_in,high,docs/graph/evidence/edges/featured__natural-trumpet-baroque.md,Source checked (2026-11-13)
 featured:ney-arabic-maqam,featured_in,high,docs/graph/evidence/edges/featured__ney-arabic-maqam.md,Source checked (2026-11-13)
 featured:oboe-baroque,featured_in,medium,docs/graph/evidence/edges/featured__oboe-baroque.md,Source-checked
 featured:oboe-classical-period,featured_in,high,docs/graph/evidence/edges/featured__oboe-classical-period.md,Source checked (2026-11-05)
@@ -467,6 +471,7 @@ featured:sho-gagaku,featured_in,high,docs/graph/evidence/edges/featured__sho-gag
 featured:sitar-hindustani-classical,featured_in,high,docs/graph/evidence/edges/featured__sitar-hindustani-classical.md,Source checked (2026-11-05)
 featured:sitar-psychedelic-rock,featured_in,medium,docs/graph/evidence/edges/featured__sitar-psychedelic-rock.md,Source-checked
 featured:soribuk-pansori,featured_in,high,docs/graph/evidence/edges/featured__soribuk-pansori.md,Source checked (2026-11-13)
+featured:sousaphone-new-orleans-jazz,featured_in,high,docs/graph/evidence/edges/featured__sousaphone-new-orleans-jazz.md,Source checked (2026-11-13)
 featured:steelpan-calypso,featured_in,high,docs/graph/evidence/edges/featured__steelpan-calypso.md,Source-checked
 featured:suona-peking-opera,featured_in,high,docs/graph/evidence/edges/featured__suona-peking-opera.md,Source checked (2026-11-13)
 featured:tabla-hindustani-classical,featured_in,high,docs/graph/evidence/edges/featured__tabla-hindustani-classical.md,Source-checked
