@@ -2,6 +2,25 @@
   "version": 4,
   "entries": [
     {
+      "commit": "564e0866e5fe265bd3502fc12ed776c3f7cd8959",
+      "parent": "775c6efc188551d1d6eccb154bbae962461540e6",
+      "date": "2026-11-13T22:13:17-05:00",
+      "subject": "Align desktop Soundtrails credits above the footer",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "src/components/home/Home.css"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "d4e7cd40d863ec8e9fd6e778ace3bc4447cf50e1",
       "parent": "d1f91925b4405cdcd5dc9620ec91ff7bc21397b2",
       "date": "2026-11-13T22:02:38-05:00",
