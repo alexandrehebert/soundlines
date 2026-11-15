@@ -7,17 +7,15 @@ on:
     paths:
       - 'site/**'
       - 'src/projectLinks.ts'
-      - 'public/favicon.svg'
+      - 'public/**'
       # Figures quoted by the companion are computed from these at build time.
       - 'src/data/graph.json'
       - 'docs/graph/evidence/**'
-      - 'public/instrument-*/**'
-      - 'public/loops/**'
       - '.github/agents/**'
       - '.github/skills/**'
       - 'package.json'
       - 'package-lock.json'
-      # The curated public Storybook is published under /storybook/.
+      # The public Storybook is published under /storybook/.
       - 'src/**'
       - '.storybook/**'
       - '.github/workflows/project-pages.yml'

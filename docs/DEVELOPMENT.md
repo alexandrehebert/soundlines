@@ -195,12 +195,12 @@ Run `npm run storybook` and open the local URL printed by the command (port
 `npm run storybook -- --port 6007` instead. `npm run build-storybook` creates a
 static, shareable build in `storybook-static/`.
 
-The companion workflow also publishes a curated, browse-only catalogue at
+The companion workflow also publishes the full catalogue in browse-only mode at
 <https://alexandrehebert.github.io/soundlines/storybook/>, linked from the
 "How it's built" page. `npm run build-storybook:public` (run after
 `npm run build:site`) builds it into `_site/storybook/` with
-`STORYBOOK_PUBLIC=1`: [.storybook/main.ts](../.storybook/main.ts) limits it to
-the listed stories and the assets they use, including a single genre preview sample, and
+`STORYBOOK_PUBLIC=1`. Both builds use the same stories and static assets configured
+in [.storybook/main.ts](../.storybook/main.ts). In the public build,
 [.storybook/manager.ts](../.storybook/manager.ts) hides the addon panel,
 toolbar and shortcuts. Because it is served below `/soundlines/storybook/`,
 components must build URLs to files in `public/` with `publicAsset()` from

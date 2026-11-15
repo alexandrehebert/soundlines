@@ -3,6 +3,7 @@ import { Disc3 } from 'lucide-react'
 import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
+import storybookConfig from '../.storybook/main.ts'
 import { Comparison } from './stories/Favicon.stories.tsx'
 import { BrandLink } from './design-system/navigation/BrandLink.tsx'
 import { HOVER_CYCLES_PER_SECOND, SOUNDLINES_BACKGROUND, SOUNDLINES_ENDPOINT_COLOR, SOUNDLINES_WAVES, SoundlinesWaveMotion } from './design-system/navigation/soundlinesMarkMotion.ts'
@@ -50,8 +51,7 @@ describe('favicon', () => {
   it('uses cache-busted icons for both app themes and includes the light icon in public Storybook', () => {
     expect(faviconUrl('dark')).toBe('/favicon.svg?v=soundlines-wave')
     expect(faviconUrl('light')).toBe('/favicon-light.svg?v=soundlines-wave')
-    const storybook = readFileSync(new URL('../.storybook/main.ts', import.meta.url), 'utf8')
-    expect(storybook).toContain("{ from: '../public/favicon-light.svg', to: '/favicon-light.svg' }")
+    expect(storybookConfig.staticDirs).toContain('../public')
   })
 
   it('keeps the light favicon on the same still waveform frame', () => {

@@ -29,6 +29,5 @@ groups. The app and Storybook load the same foundation stylesheet and theme toke
    relevant widths and themes. Preserve the existing design unless the task
    calls for a visual change.
 
-Run `npm run storybook` for the full local catalogue. The companion site
-publishes a curated subset using the public story list in
-[.storybook/main.ts](../.storybook/main.ts).
+Run `npm run storybook` for the local catalogue. The companion site publishes
+the same stories in its browse-only Storybook.
