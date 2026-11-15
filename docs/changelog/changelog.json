@@ -2,6 +2,603 @@
   "version": 4,
   "entries": [
     {
+      "commit": "3389999cdd1db38922d69c81407ab687fa65ec15",
+      "parent": "62997a63f96c1f394c3a6a177397dd2f27ea100c",
+      "date": "2026-11-15T10:41:35-05:00",
+      "subject": "Share Soundlines skills across coding assistants",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/DATA.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/GRAPH.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/RESEARCH.md"
+            }
+          ]
+        },
+        {
+          "category": "previews",
+          "files": [
+            {
+              "status": "A",
+              "path": ".agents/skills/preview-brief/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/preview-produce/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/preview-produce/scripts/extract-ace-preview.py"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/preview-produce/scripts/render-ace-previews.mjs"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/preview-review/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/preview-brief"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/preview-produce"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/preview-review"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/preview-briefer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/preview-producer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/preview-reviewer.agent.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/preview-brief/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/preview-produce/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/preview-produce/scripts/extract-ace-preview.py"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/preview-produce/scripts/render-ace-previews.mjs"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/preview-review/SKILL.md"
+            }
+          ]
+        },
+        {
+          "category": "loops",
+          "files": [
+            {
+              "status": "A",
+              "path": ".agents/skills/loop-brief/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/loop-brief/scripts/check-brief.mjs"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/loop-produce/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/loop-produce/references/ace-step.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/loop-produce/scripts/ace-server.sh"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/loop-produce/scripts/arrange-loop.py"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/loop-produce/scripts/brief.mjs"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/loop-produce/scripts/extract-loop.py"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/loop-produce/scripts/plan-codes.py"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/loop-produce/scripts/render-takes.mjs"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/loop-review/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/loop-validate/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/loop-validate/scripts/check-loop.py"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/loop-brief"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/loop-produce"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/loop-review"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/loop-validate"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/loop-briefer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/loop-producer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/loop-reviewer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/loop-validator.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/instructions/loop-audio.instructions.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/loop-brief/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/loop-brief/scripts/check-brief.mjs"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/loop-produce/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/loop-produce/references/ace-step.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/loop-produce/scripts/ace-server.sh"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/loop-produce/scripts/arrange-loop.py"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/loop-produce/scripts/brief.mjs"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/loop-produce/scripts/extract-loop.py"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/loop-produce/scripts/plan-codes.py"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/loop-produce/scripts/render-takes.mjs"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/loop-review/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/loop-validate/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/loop-validate/scripts/check-loop.py"
+            },
+            {
+              "status": "M",
+              "path": "docs/loops/CATALOGUE.md"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "files": [
+            {
+              "status": "A",
+              "path": ".agents/skills/artwork-brief/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/artwork-brief/scripts/check-brief.mjs"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/artwork-draw/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/artwork-draw/references/style-guide.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/artwork-review/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/artwork-validate/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/artwork-validate/scripts/check-artwork.mjs"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/artwork-brief"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/artwork-draw"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/artwork-review"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/artwork-validate"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/artwork-briefer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/artwork-illustrator.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/artwork-reviewer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/artwork-validator.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/instructions/instrument-artwork.instructions.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/artwork-brief/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/artwork-brief/scripts/check-brief.mjs"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/artwork-draw/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/artwork-draw/references/style-guide.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/artwork-review/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/artwork-validate/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/artwork-validate/scripts/check-artwork.mjs"
+            },
+            {
+              "status": "M",
+              "path": ".github/workflows/artwork-quality.yml"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/README.md"
+            },
+            {
+              "status": "M",
+              "path": "scripts/artwork/validation.test.ts"
+            }
+          ]
+        },
+        {
+          "category": "site",
+          "files": [
+            {
+              "status": "M",
+              "path": "site/scripts/stats.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/de.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/en.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/es.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/fr.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/it.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/site.test.tsx"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "A",
+              "path": ".agents/skills/graph-edit/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/graph-edit/references/evidence-templates.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/graph-edit/scripts/lookup.mjs"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/graph-fact-check/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/graph-review/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/graph-review/scripts/diff.mjs"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/graph-translate/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/graph-translate/references/de.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/graph-translate/references/es.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/graph-translate/references/fr.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/graph-translate/references/it.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/graph-translate/scripts/audit.mjs"
+            },
+            {
+              "status": "A",
+              "path": ".agents/skills/graph-validate/SKILL.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/graph-reviewer.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/graph-edit"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/graph-fact-check"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/graph-review"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/graph-translate"
+            },
+            {
+              "status": "A",
+              "path": ".claude/skills/graph-validate"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/graph-reviewer.toml"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/graph-editor.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/graph-fact-checker.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/graph-researcher.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/graph-reviewer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/graph-translator.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/graph-validator.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/instructions/graph-data.instructions.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/graph-edit/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/graph-edit/references/evidence-templates.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/graph-edit/scripts/lookup.mjs"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/graph-fact-check/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/graph-review/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/graph-review/scripts/diff.mjs"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/graph-translate/SKILL.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/graph-translate/references/de.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/graph-translate/references/es.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/graph-translate/references/fr.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/graph-translate/references/it.md"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/graph-translate/scripts/audit.mjs"
+            },
+            {
+              "status": "D",
+              "path": ".github/skills/graph-validate/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/workflows/project-pages.yml"
+            },
+            {
+              "status": "M",
+              "path": "AGENTS.md"
+            },
+            {
+              "status": "A",
+              "path": "CLAUDE.md"
+            },
+            {
+              "status": "M",
+              "path": "scripts/changelog/generate.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "scripts/changelog/generate.ts"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/AUDIO.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/INSTALLATION.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/README.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/SCRIPTS.md"
+            },
+            {
+              "status": "M",
+              "path": "tools/ace-monitor/README.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "62997a63f96c1f394c3a6a177397dd2f27ea100c",
       "parent": "3474beb1f2eb543a6e1c633035f1f92113191995",
       "date": "2026-11-15T01:10:53-05:00",
