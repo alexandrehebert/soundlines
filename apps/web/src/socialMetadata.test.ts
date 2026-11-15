@@ -1,0 +1,129 @@
+import { describe, expect, it } from 'vitest'
+import rawGraph from '@soundlines/catalogue/data/graph.json'
+import { buildIndex } from '@soundlines/catalogue/graph'
+import { graphForLocale } from '@soundlines/catalogue/graphLocale'
+import type { GraphNode, MusicGraph } from './graph/types.ts'
+import { readExplorerLocation } from './explorerLocation.ts'
+import { socialMetadata } from './socialMetadata.ts'
+
+const index = buildIndex(rawGraph as MusicGraph)
+const frenchIndex = buildIndex(graphForLocale('fr'))
+const origin = 'https://soundlines.example'
+
+describe('social metadata', () => {
+  it.each([
+    ['/en', 'Soundlines | Discover Music History'],
+    ['/en/genres', 'Music Genres | Soundlines'],
+    ['/en/artists', 'Music Artists | Soundlines'],
+    ['/en/instruments', 'Musical Instruments | Soundlines'],
+    ['/en/history', 'Music History | Soundlines'],
+    ['/en/genres?layout=bubbles', 'Music Genre Map | Soundlines'],
+  ])('describes the %s view', (path, title) => {
+    const metadata = socialMetadata(new URL(path, origin), index.nodeById)
+    expect(metadata.title).toBe(title)
+    expect(metadata.description).toBeTruthy()
+    expect(metadata.url).toBe(new URL(path, origin).href)
+    expect(metadata.image).toBe(`${origin}/social-card.png`)
+  })
+
+  it('localizes page metadata and keeps the locale in the canonical URL', () => {
+    const metadata = socialMetadata(new URL('/fr/history', origin), index.nodeById)
+    expect(metadata.title).toBe('Histoire de la musique | Soundlines')
+    expect(metadata.url).toBe(`${origin}/fr/history`)
+    expect(metadata.description).toContain('Explorez les événements')
+
+    const event = socialMetadata(
+      new URL('/fr/history?focus=event%3Amtv-launch', origin),
+      frenchIndex.nodeById,
+    )
+    expect(event.title).toBe('MTV commence ses émissions | Événement | Soundlines')
+    expect(event.description).toContain('MTV commence à émettre aux États-Unis')
+  })
+
+  it('uses French graph text and image alt text in French metadata', () => {
+    const metadata = socialMetadata(
+      new URL('/fr/genres/jazz', origin),
+      frenchIndex.nodeById,
+    )
+    expect(metadata.title).toBe('Jazz | Genre | Soundlines')
+    expect(metadata.description).toContain('Musique afro-américaine')
+    expect(metadata.imageAlt).toBe('Soundlines : une carte chronologique des lignées musicales')
+  })
+
+  it.each([
+    ['genre:house', 'House', 'Genre', '/en/genres/house'],
+    ['artist:juan-atkins', 'Juan Atkins', 'Artist', '/en/artists/juan-atkins'],
+    ['instrument:timbales', 'Timbales', 'Instrument', '/en/instruments/timbales'],
+    ['label:metroplex', 'Metroplex', 'Label', '/en/artists/label/metroplex'],
+    ['place:detroit', 'Detroit', 'Place', '/en/artists/place/detroit'],
+    ['track:clear', 'Clear', 'Track', '/en/artists/track/clear'],
+    ['scene:the-warehouse', 'The Warehouse', 'Scene', '/en/artists/scene/the-warehouse'],
+    ['event:mtv-launch', 'MTV launches', 'Event', '/en/history/mtv-launch'],
+  ])('describes the %s entity and uses the effective view', (id, name, type, path) => {
+    const url = new URL('/en/artists?sort=oldest-first&layout=bubbles&utm_source=example', origin)
+    url.searchParams.set('focus', id)
+    const metadata = socialMetadata(url, index.nodeById)
+    const canonical = new URL(metadata.url)
+
+    expect(metadata.title).toBe(`${name} | ${type} | Soundlines`)
+    expect(metadata.description).toBeTruthy()
+    expect(Array.from(metadata.description).length).toBeLessThanOrEqual(200)
+    expect(canonical.searchParams.has('focus')).toBe(false)
+    expect(canonical.pathname).toBe(path)
+    expect(canonical.searchParams.has('view')).toBe(false)
+    expect(canonical.searchParams.get('sort')).toBe('oldest-first')
+    expect(canonical.searchParams.get('layout')).toBe('bubbles')
+    expect(canonical.searchParams.has('utm_source')).toBe(false)
+  })
+
+  it.each([
+    ['/en', '/en'],
+    ['/en/genres?layout=bubbles', '/en/genres?layout=bubbles'],
+    ['/en?view=artists', '/en/artists'],
+    ['/en/history?view=history', '/en/history'],
+    ['/en/genres/?view=artists', '/en/genres'],
+  ])('canonicalizes %s to %s', (path, canonical) => {
+    expect(socialMetadata(new URL(path, origin), index.nodeById).url).toBe(`${origin}${canonical}`)
+  })
+
+  it('uses the dataset description when available and a meaningful fallback otherwise', () => {
+    const timbales = socialMetadata(new URL('/en?focus=instrument%3Atimbales', origin), index.nodeById)
+    expect(timbales.description).toContain('shallow, single-headed Cuban metal drums')
+
+    const node: GraphNode = { id: 'artist:no-description', type: 'artist', name: 'Example Artist' }
+    const fallback = socialMetadata(new URL('/en?focus=artist%3Ano-description', origin), new Map([[node.id, node]]))
+    expect(fallback.description).toContain('Example Artist (Artist)')
+    expect(fallback.description).toContain('connections across music history')
+  })
+
+  it('provides a usable preview and canonical focus for every graph entity', () => {
+    for (const node of index.graph.nodes) {
+      const url = new URL('/en', origin)
+      url.searchParams.set('focus', node.id)
+      const metadata = socialMetadata(url, index.nodeById)
+      expect(metadata.title).toContain(node.name)
+      expect(metadata.description.length).toBeGreaterThan(0)
+      expect(readExplorerLocation(new URL(metadata.url), index.nodeById).selectedId).toBe(node.id)
+    }
+  })
+
+  it('falls back to the requested view for unknown focus and removes unsupported parameters', () => {
+    const metadata = socialMetadata(
+      new URL('/en?view=instruments&focus=instrument%3Aunknown&sort=invalid&layout=invalid&other=1#discover', origin),
+      index.nodeById,
+    )
+    expect(metadata.title).toBe('Musical Instruments | Soundlines')
+    expect(metadata.url).toBe(`${origin}/en/instruments`)
+  })
+
+  it('preserves the shared sort order for every timeline', () => {
+    const metadata = socialMetadata(
+      new URL('/en/artists?sort=oldest-first&artist-sort=oldest-first&instrument-sort=oldest-first', origin),
+      index.nodeById,
+    )
+    const params = new URL(metadata.url).searchParams
+    expect(params.get('sort')).toBe('oldest-first')
+    expect(params.get('artist-sort')).toBe('oldest-first')
+    expect(params.get('instrument-sort')).toBe('oldest-first')
+  })
+})

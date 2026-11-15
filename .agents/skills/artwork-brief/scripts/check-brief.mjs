@@ -12,11 +12,11 @@ const KEYS = ['slug', 'instrument', 'family', 'method', 'references', 'silhouett
 const BRANDS = /\b(roland|moog|yamaha|korg|fender|gibson|steinway|hammond suzuki|selmer|ludwig|zildjian|technics|akai|antares)\b/i
 const IMITATION = /\b(in the style of|copy|trace|traced|replicate|exact replica)\b/i
 
-if (!existsSync('src/data/graph.json')) {
+if (!existsSync('packages/catalogue/data/graph.json')) {
   console.error('Run from the repository root.')
   process.exit(2)
 }
-const nodes = new Map(JSON.parse(readFileSync('src/data/graph.json', 'utf8')).nodes.map((node) => [node.id, node]))
+const nodes = new Map(JSON.parse(readFileSync('packages/catalogue/data/graph.json', 'utf8')).nodes.map((node) => [node.id, node]))
 const files = process.argv.slice(2).length
   ? process.argv.slice(2)
   : readdirSync(DIR).filter((file) => file.endsWith('.json')).map((file) => join(DIR, file))
@@ -54,7 +54,7 @@ for (const file of files) {
     if (validSlug && basename(file) !== `${slug}.json`) fail(`file name must be ${slug}.json`)
     const node = nodes.get(instrument)
     if (instrument !== expectedInstrument) fail(`instrument must be "${expectedInstrument}"`)
-    else if (!node || node.type !== 'instrument') fail(`${instrument} is not an instrument in src/data/graph.json (add it with graph-edit first)`)
+    else if (!node || node.type !== 'instrument') fail(`${instrument} is not an instrument in packages/catalogue/data/graph.json (add it with graph-edit first)`)
     else if (node.family !== family) fail(`family ${JSON.stringify(family)} ≠ graph family "${node.family}"`)
     if (!METHODS.includes(method)) fail(`method must be ${METHODS.join(' or ')}`)
     if (!Array.isArray(references) || references.length < 2) fail('at least 2 references')

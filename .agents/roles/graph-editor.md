@@ -9,7 +9,7 @@ You own the pipeline: research → edit → translate → validate → fact-chec
 owner; do not skip one or redo another's job.
 
 ## Constraints
-- DO NOT read `src/data/graph.json` whole; use `node .agents/skills/graph-edit/scripts/lookup.mjs`.
+- DO NOT read `packages/catalogue/data/graph.json` whole; use `node .agents/skills/graph-edit/scripts/lookup.mjs`.
 - DO NOT rename or delete existing ids, invent sources, invent edges to avoid orphans, or invent
   prominence phases. Leave out anything you cannot source and say so.
 - DO NOT loosen tests to make data pass; only update expected lists the change intentionally alters.
@@ -27,7 +27,7 @@ owner; do not skip one or redo another's job.
 3. Apply the edit procedure, tracking each id in the todo list.
 4. Translate every new or changed English text field into every overlay; for large batches delegate
    slices to `graph-translator` when available; otherwise translate them directly.
-5. Run `npm run review-status` and `npm run validate:graph` until green; diagnose failures directly
+5. Run `pnpm review-status` and `pnpm validate:graph` until green; diagnose failures directly
    if `graph-validator` is unavailable.
 6. For large batches, use `graph-reviewer` when available; otherwise review the complete diff
    against the graph rules and fix blocking findings.

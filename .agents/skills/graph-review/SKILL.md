@@ -1,6 +1,6 @@
 ---
 name: graph-review
-description: 'Gate a change to the Soundlines music graph (src/data/graph.json, graph.<locale>.json overlays, docs/graph/evidence) before commit or merge. Use when reviewing a graph PR or diff, an enrichment batch, a merge patch, or agent-made data edits to decide if it is ready: validation result, wrong edge direction or type, unjustified confidence, missing or mismatched evidence, stale overlays, removed ids, and editorial problems.'
+description: 'Gate a change to the Soundlines music graph (packages/catalogue/data/graph.json, graph.<locale>.json overlays, docs/graph/evidence) before commit or merge. Use when reviewing a graph PR or diff, an enrichment batch, a merge patch, or agent-made data edits to decide if it is ready: validation result, wrong edge direction or type, unjustified confidence, missing or mismatched evidence, stale overlays, removed ids, and editorial problems.'
 argument-hint: 'Git ref to compare against (default HEAD), or a merge patch'
 ---
 
@@ -21,7 +21,7 @@ Rules come from [docs/GRAPH.md](../../../docs/GRAPH.md). Review is read-only: re
 
 ```sh
 node .agents/skills/graph-review/scripts/diff.mjs [ref]     # added/removed/changed ids and fields, per overlay
-git --no-pager diff --stat [ref] -- src/data docs src/graph
+git --no-pager diff --stat [ref] -- packages/catalogue/data docs src/graph
 node .agents/skills/graph-edit/scripts/lookup.mjs <id>      # context for any id in the diff
 ```
 
@@ -30,11 +30,11 @@ For a merge patch (GRAPH.md §7) review the patch JSON directly and treat each o
 ## 2. Run the validation gate
 
 ```sh
-npm run validate:graph
+pnpm validate:graph
 ```
 
 Report failures as blocking, mapped to fixes with the `graph-validate` table. Do not run
-`npm run review-status` (it writes); the freshness test already covers it.
+`pnpm review-status` (it writes); the freshness test already covers it.
 
 ## 3. Get claims verified
 

@@ -1,6 +1,6 @@
 # French (`fr`) style for graph overlays
 
-Overlay file: `src/data/graph.fr.json`.
+Overlay file: `packages/catalogue/data/graph.fr.json`.
 
 - Natural editorial French, not word-for-word.
 - Standard French names for places and instruments when one exists (Londres, Batterie,

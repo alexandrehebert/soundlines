@@ -1,6 +1,6 @@
 # Changelog
 
-Generated from committed Git history by `npm run changelog`. Do not edit by hand.
+Generated from committed Git history by `pnpm changelog`. Do not edit by hand.
 
 Commits with file changes reachable from HEAD are listed in Git topological order (newest first).
 Each commit is compared with its parent. Merge commits only list files changed against every parent (such as conflict resolutions);

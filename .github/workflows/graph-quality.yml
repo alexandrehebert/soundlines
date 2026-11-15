@@ -3,26 +3,30 @@ name: Graph quality
 on:
   pull_request:
     paths:
-      - 'src/data/**'
-      - 'src/graph/**'
-      - 'src/i18n/routing.ts'
+      - 'apps/web/src/graph/**'
+      - 'packages/catalogue/**'
+      - 'apps/web/src/i18n/routing.ts'
+      - 'packages/design-tokens/**'
       - 'docs/**'
       - 'scripts/graph/**'
       - 'package.json'
-      - 'package-lock.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
       - '.github/workflows/graph-quality.yml'
       - '.github/workflows/graph-contribution-agent.yml'
       - '.github/ISSUE_TEMPLATE/graph-contribution.yml'
   push:
     branches: [main]
     paths:
-      - 'src/data/**'
-      - 'src/graph/**'
-      - 'src/i18n/routing.ts'
+      - 'apps/web/src/graph/**'
+      - 'packages/catalogue/**'
+      - 'apps/web/src/i18n/routing.ts'
+      - 'packages/design-tokens/**'
       - 'docs/**'
       - 'scripts/graph/**'
       - 'package.json'
-      - 'package-lock.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
       - '.github/workflows/graph-quality.yml'
       - '.github/workflows/graph-contribution-agent.yml'
       - '.github/ISSUE_TEMPLATE/graph-contribution.yml'
@@ -37,18 +41,21 @@ jobs:
       - uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
+      - uses: pnpm/action-setup@v6
+        with:
+          standalone: true
       - uses: actions/setup-node@v7.1.0
         with:
           node-version-file: .nvmrc
-          cache: npm
-      - run: npm ci
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
       - name: Test graph contribution automation
-        run: npm test -- scripts/graph/contributionWorkflow.test.ts
+        run: pnpm exec vitest run scripts/graph/contributionWorkflow.test.ts
       - name: Regenerate review status
-        run: npm run review-status
+        run: pnpm review-status
       - name: Fail if generated review status is stale
-        run: git diff --exit-code -- src/data/review-status.json
+        run: git diff --exit-code -- packages/catalogue/data/review-status.json
       - name: Validate graph data, catalogue dates, overlays and evidence
         env:
           GRAPH_BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
-        run: npm run validate:graph
+        run: pnpm validate:graph

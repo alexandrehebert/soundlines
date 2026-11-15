@@ -15,7 +15,7 @@ Reference: [docs/artwork/briefs/charango.json](../../../docs/artwork/briefs/char
 ```jsonc
 {
   "slug": "charango",                    // file name and asset name
-  "instrument": "instrument:charango",   // must exist in src/data/graph.json (graph-edit adds nodes)
+  "instrument": "instrument:charango",   // must exist in packages/catalogue/data/graph.json (graph-edit adds nodes)
   "family": "strings",                   // must equal the node's family (it picks the palette)
   "method": "generator",                 // "generator" (preferred: master in the Python generator) or "hand"
   "references": [                        // ≥ 2 https, each opened and checked; say what it shows
@@ -55,7 +55,7 @@ Reference: [docs/artwork/briefs/charango.json](../../../docs/artwork/briefs/char
 6. **Write `iconFeatures`** as the 1-3 shapes that still identify the instrument at 16 px, including
    its natural playing position. Put the pose rationale in `notes`. For symmetrical string bodies,
    preserve symmetry around the neck axis before rotating the complete instrument. Write `avoid`
-   with the nearest look-alikes in the set (`ls public/instrument-icons`).
+   with the nearest look-alikes in the set (`ls packages/media/public/instrument-icons`).
 7. **Pick `method`**: `generator` for anything the family builders (`plucked`, `bowed`, `indian`,
    `synthesizer`) or helpers can express; `hand` only when the shape needs bespoke paths. Existing
    instruments keep their current method unless the review asks otherwise.

@@ -1,6 +1,6 @@
 # Spanish (`es`) style for graph overlays
 
-Overlay file: `src/data/graph.es.json`.
+Overlay file: `packages/catalogue/data/graph.es.json`.
 
 - Natural, internationally understandable editorial Spanish; preserve every factual qualification.
 - Use standard Spanish instrument and place names when established (violonchelo, Nueva Orleans).

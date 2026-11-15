@@ -1,24 +1,22 @@
 #!/usr/bin/env node
-// Semantic diff of src/data/graph.json (and every graph.<locale>.json overlay) between a git ref and the working tree.
+// Semantic diff of the canonical graph (and every graph.<locale>.json overlay) between a git ref and the working tree.
 //
 //   node .agents/skills/graph-review/scripts/diff.mjs [ref]   (default ref: HEAD; e.g. origin/main)
 import { execFileSync } from 'node:child_process'
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { catalogueDataPath, cataloguePathAt, graphPath } from '../../../../scripts/graph/cataloguePaths.mjs'
 
 const ROOT = fileURLToPath(new URL('../../../../', import.meta.url))
 const ref = process.argv[2] ?? 'HEAD'
 
-function load(path) {
-  const current = JSON.parse(readFileSync(join(ROOT, path), 'utf8'))
-  let base
-  try {
-    base = JSON.parse(execFileSync('git', ['show', `${ref}:${path}`], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 }))
-  } catch {
-    base = null
-  }
-  return { base, current }
+const git = (...args) => execFileSync('git', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28 })
+
+function load(file) {
+  const current = JSON.parse(readFileSync(join(ROOT, catalogueDataPath, file), 'utf8'))
+  const path = cataloguePathAt(git, ref, file)
+  return { base: path ? JSON.parse(git('show', `${ref}:${path}`)) : null, current }
 }
 
 function compare(label, baseItems, currentItems) {
@@ -45,9 +43,9 @@ function compare(label, baseItems, currentItems) {
   }
 }
 
-const graph = load('src/data/graph.json')
+const graph = load('graph.json')
 if (!graph.base) {
-  console.error(`Cannot read src/data/graph.json at ${ref}`)
+  console.error(`Cannot read ${graphPath} at ${ref}`)
   process.exit(1)
 }
 console.log(`# graph.json: ${ref} → working tree`)
@@ -58,9 +56,9 @@ const entries = (overlay) => [
   ...Object.entries(overlay?.nodes ?? {}).map(([id, value]) => ({ id, ...value })),
   ...Object.entries(overlay?.edges ?? {}).map(([id, value]) => ({ id, ...value })),
 ]
-for (const file of readdirSync(join(ROOT, 'src/data'))) {
+for (const file of readdirSync(join(ROOT, catalogueDataPath))) {
   const locale = /^graph\.([a-z-]+)\.json$/i.exec(file)?.[1]
   if (!locale) continue
-  const overlay = load(`src/data/${file}`)
+  const overlay = load(file)
   compare(`Overlay ${locale}${overlay.base ? '' : ' (new file)'}`, entries(overlay.base), entries(overlay.current))
 }

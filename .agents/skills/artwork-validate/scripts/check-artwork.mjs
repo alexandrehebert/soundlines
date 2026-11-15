@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Deterministic gate for the instrument artwork in public/instrument-{icons,avatars,banners,header-backgrounds}.
+// Deterministic gate for the instrument artwork in packages/media/public/instrument-{icons,avatars,banners,header-backgrounds}.
 // Usage (repository root): node .agents/skills/artwork-validate/scripts/check-artwork.mjs [slug ...] [--png-dir DIR] [--json]
 // Exit code 1 when any FAIL. Rendered checks and PNG sheets need sharp (bundled with next); without it
 // they are reported as one WARN and skipped.
@@ -28,24 +28,24 @@ const args = process.argv.slice(2)
 const pngDir = args.includes('--png-dir') ? args[args.indexOf('--png-dir') + 1] : null
 const only = args.filter((arg, index) => !arg.startsWith('--') && args[index - 1] !== '--png-dir')
 
-if (!existsSync('src/data/graph.json')) {
+if (!existsSync('packages/catalogue/data/graph.json')) {
   console.error('Run from the repository root.')
   process.exit(2)
 }
 
-const graph = JSON.parse(readFileSync('src/data/graph.json', 'utf8'))
+const graph = JSON.parse(readFileSync('packages/catalogue/data/graph.json', 'utf8'))
 const instruments = graph.nodes
   .filter((node) => node.type === 'instrument')
   .map((node) => ({ slug: node.id.slice('instrument:'.length), name: node.name, family: node.family }))
 const bySlug = new Map(instruments.map((instrument) => [instrument.slug, instrument]))
 const unknown = only.filter((slug) => !bySlug.has(slug))
 if (unknown.length) {
-  console.error(`Not instruments in src/data/graph.json: ${unknown.join(', ')}`)
+  console.error(`Not instruments in packages/catalogue/data/graph.json: ${unknown.join(', ')}`)
   process.exit(2)
 }
 const selected = only.length ? only.map((slug) => bySlug.get(slug)) : instruments
 
-const theme = readFileSync('src/theme.ts', 'utf8')
+const theme = readFileSync('packages/design-tokens/src/familyColors.ts', 'utf8')
 const familyColor = (family) =>
   theme.match(new RegExp(`^\\s*'?${family}'?:\\s*'(#[0-9a-fA-F]{6})'`, 'm'))?.[1].toLowerCase()
 
@@ -53,7 +53,7 @@ const findings = []
 const report = (severity, slug, kind, check, detail, owner = 'artwork-draw') =>
   findings.push({ severity, slug, kind, check, detail, owner })
 
-const fileFor = (kind, slug) => join('public', `instrument-${kind}`, `${encodeURIComponent(slug)}.svg`)
+const fileFor = (kind, slug) => join('packages/media/public', `instrument-${kind}`, `${encodeURIComponent(slug)}.svg`)
 
 function wellFormed(svg) {
   const body = svg.replace(/<!--[\s\S]*?-->/g, '').replace(/<\?[\s\S]*?\?>/g, '').replace(/<!\[CDATA\[[\s\S]*?\]\]>/g, '')
@@ -85,7 +85,7 @@ const FORBIDDEN = [
 
 function staticChecks({ slug, family }) {
   const accent = familyColor(family)
-  if (!accent) report('FAIL', slug, '-', 'family', `family "${family}" has no colour in src/theme.ts`, 'graph-edit')
+  if (!accent) report('FAIL', slug, '-', 'family', `family "${family}" has no colour in packages/design-tokens/src/familyColors.ts`, 'graph-edit')
   for (const [kind, spec] of Object.entries(KINDS)) {
     const file = fileFor(kind, slug)
     if (!existsSync(file)) {
@@ -135,10 +135,10 @@ function staticChecks({ slug, family }) {
 
 function orphanChecks() {
   for (const kind of Object.keys(KINDS)) {
-    for (const file of readdirSync(join('public', `instrument-${kind}`))) {
+    for (const file of readdirSync(join('packages/media/public', `instrument-${kind}`))) {
       const slug = decodeURIComponent(file.replace(/\.svg$/, ''))
       if (!file.endsWith('.svg') || !bySlug.has(slug)) {
-        report('FAIL', slug, kind, 'orphan', `public/instrument-${kind}/${file} has no instrument node`, 'artwork-draw (delete) or graph-edit')
+        report('FAIL', slug, kind, 'orphan', `packages/media/public/instrument-${kind}/${file} has no instrument node`, 'artwork-draw (delete) or graph-edit')
       }
     }
   }

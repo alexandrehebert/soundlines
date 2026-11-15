@@ -1,6 +1,6 @@
 # graph.json — data guide for editors and LLMs
 
-This document describes [graph.json](../src/data/graph.json), the single dataset behind
+This document describes [graph.json](../packages/catalogue/data/graph.json), the single dataset behind
 **Soundlines**, a chronological, interactive map of music genres, artists, labels,
 places, scenes, tracks, and historical events. Give it to an editor or to a language model (for
 example ChatGPT) along with `graph.json` when asking for the dataset to be
@@ -11,8 +11,8 @@ Every new node needs an `addedOn` date for the home page’s Recently added list
 Use the calendar date the node joined the catalogue and preserve it when editing the node.
 
 The app reads the JSON as-is. The rules below are enforced by an automated
-test suite ([graph.test.ts](../src/data/graph.test.ts) and the other `src/data` tests), run with
-`npm run validate:graph` locally and in CI. **Output that breaks them will be rejected.**
+test suite ([catalogue.test.ts](../apps/web/src/graph/catalogue.test.ts) and the tests in `packages/catalogue/src/`), run with
+`pnpm validate:graph` locally and in CI. **Output that breaks them will be rejected.**
 
 ---
 
@@ -34,9 +34,9 @@ For live counts by entity and relationship type, run
 
 `graph.json` remains the canonical source for entity ids, relationships, dates,
 sources, and English text. Display names and prose for each other app locale are
-maintained separately in one overlay per locale, `src/data/graph.<locale>.json`
-(currently [French](../src/data/graph.fr.json), [German](../src/data/graph.de.json),
-[Italian](../src/data/graph.it.json), and [Spanish](../src/data/graph.es.json)),
+maintained separately in one overlay per locale, `packages/catalogue/data/graph.<locale>.json`
+(currently [French](../packages/catalogue/data/graph.fr.json), [German](../packages/catalogue/data/graph.de.json),
+[Italian](../packages/catalogue/data/graph.it.json), and [Spanish](../packages/catalogue/data/graph.es.json)),
 keyed by those stable ids. An overlay may change text only; it must not duplicate
 or alter graph structure.
 Every overlay covers every descriptive field and relationship note, as enforced by
@@ -146,9 +146,10 @@ regional umbrellas, not assertions of a single origin; Afrobeat and Afrobeats
 remain distinct nodes. Cross-family ancestry stays in the graph edges.
 
 **Adding a new family** (for example `gospel` when catalogue coverage warrants
-its own lane) requires updates in `src/graph/types.ts` (`GenreFamily`,
-`FAMILY_LABELS`, `FAMILY_ORDER`), `src/theme.ts` (`FAMILY_COLORS`), and the
-family-assignment tests in `src/data/graph.test.ts`. It is allowed, but
+its own lane) requires updates in `packages/catalogue/src/types.ts` (`GenreFamily`
+and `FAMILY_ORDER`), `apps/web/src/i18n/locales/` (family labels),
+`packages/design-tokens/src/familyColors.ts` (`FAMILY_COLORS`), and the
+family-assignment tests in `apps/web/src/graph/catalogue.test.ts`. It is allowed, but
 **list every new family explicitly** in your response with a suggested label
 and position in the order, so the code can be updated.
 
@@ -535,7 +536,7 @@ explicitly removed dispositions, and counts duplicate reviewed notes only once.
 The [edge coverage tracker](./graph/evidence/audits/graph-edge-coverage.csv) must contain
 exactly one row per live edge, with its current type and confidence and a link
 to the reviewed note, not a pending placeholder. After editing evidence notes, run
-`npm run review-status` to refresh `src/data/review-status.json`, which powers
+`pnpm review-status` to refresh `packages/catalogue/data/review-status.json`, which powers
 the **Source review** tab of the dataset statistics. A test fails if the file
 is out of date or the tracker and live-edge evidence disagree.
 
@@ -617,7 +618,7 @@ Unsourced festival relationships are omitted by `groupedRelations`. Festivals
 have no dedicated timeline, family, prominence phases, or inferred lineage.
 Add source-backed English descriptions and relationship notes, translations in
 every locale overlay, and evidence files for every new node and edge. Update
-`graph-edge-coverage.csv` and run `npm run review-status` after enrichment.
+`graph-edge-coverage.csv` and run `pnpm review-status` after enrichment.
 
 
 ### Festival confidence and early chronology

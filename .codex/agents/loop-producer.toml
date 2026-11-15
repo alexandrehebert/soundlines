@@ -1,5 +1,5 @@
 name = "loop-producer"
-description = "Renders pro-quality seamless genre loops with the local ACE-Step 1.5 install from an approved brief: manages the ACE-Step server, plans codes with the 4B LM, renders XL SFT takes at 80 steps, screens takes, extracts the best grid-snapped loop to public/loops/<slug>.wav and writes its selection report. Use to generate, retake or draft a loop, or when ACE-Step renders fail, run out of memory or load the wrong model. Does not write briefs or approve loops."
+description = "Renders pro-quality seamless genre loops with the local ACE-Step 1.5 install from an approved brief: manages the ACE-Step server, plans codes with the 4B LM, renders XL SFT takes at 80 steps, screens takes, extracts the best grid-snapped loop to packages/media/public/loops/<slug>.wav and writes its selection report. Use to generate, retake or draft a loop, or when ACE-Step renders fail, run out of memory or load the wrong model. Does not write briefs or approve loops."
 developer_instructions = """
 From the repository root, read and follow `.agents/roles/loop-producer.md` before starting the task.
 """

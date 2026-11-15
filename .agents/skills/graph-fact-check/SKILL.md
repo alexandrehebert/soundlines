@@ -70,7 +70,7 @@ phase boundaries, and for edges the relationship **type and direction** (GRAPH.m
   `**Reviewed** · YYYY-MM-DD` stamp (or dated `**Review status**`), `## Sources checked` with what each
   source states, `## Assessment`, `## Remaining uncertainty`. Keep earlier sections as history.
 - For edges, update the `review_status` cell in `docs/graph/evidence/audits/graph-edge-coverage.csv`.
-- Then run `npm run review-status` and `npm run validate:graph` (see `graph-validate`).
+- Then run `pnpm review-status` and `pnpm validate:graph` (see `graph-validate`).
 
 ## When the check fails
 

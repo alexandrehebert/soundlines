@@ -1,6 +1,6 @@
 # Instrument artwork style guide
 
-Every instrument node (`instrument:<slug>` in `src/data/graph.json`) ships four SVGs with the same
+Every instrument node (`instrument:<slug>` in `packages/catalogue/data/graph.json`) ships four SVGs with the same
 file name `<slug>.svg` (URL-encoded slug). All values below are measured from the shipped set and
 enforced by `check-artwork.mjs` where they are mechanical.
 
@@ -8,17 +8,17 @@ enforced by `check-artwork.mjs` where they are mechanical.
 
 | Folder | viewBox | Used by | Background | Placement |
 |---|---|---|---|---|
-| `public/instrument-icons` | `0 0 24 24` + `width="24" height="24"` | `InstrumentIcon.tsx`: a CSS **mask** tinted with the family colour (`chartTextColor`), timeline bars, detail panel, undated list | none | fills 16–24 px of the 24 px box, diagonal reading via rotation |
-| `public/instrument-banners` | `0 0 360 160` | Storybook catalogue (no app consumer yet) | opaque `#0b1020` + family halo + 20 px grid | centre ≈ (180, 77), tilt −9° |
-| `public/instrument-avatars` | `0 0 160 160` | Storybook catalogue (no app consumer yet) | same as banner | centre ≈ (80, 80), master scale × 0.48 |
-| `public/instrument-header-backgrounds` | `0 0 360 120` | `DetailPanel.tsx` header `background-image` (`bg-contain bg-right-bottom`) under the title | **transparent** (panel is `slate-950`) | right side only, x ≈ 262–276, master scale × 0.61, inside a left→right reveal mask |
+| `packages/media/public/instrument-icons` | `0 0 24 24` + `width="24" height="24"` | `InstrumentIcon.tsx`: a CSS **mask** tinted with the family colour (`chartTextColor`), timeline bars, detail panel, undated list | none | fills 16–24 px of the 24 px box, diagonal reading via rotation |
+| `packages/media/public/instrument-banners` | `0 0 360 160` | Storybook catalogue (no app consumer yet) | opaque `#0b1020` + family halo + 20 px grid | centre ≈ (180, 77), tilt −9° |
+| `packages/media/public/instrument-avatars` | `0 0 160 160` | Storybook catalogue (no app consumer yet) | same as banner | centre ≈ (80, 80), master scale × 0.48 |
+| `packages/media/public/instrument-header-backgrounds` | `0 0 360 120` | `DetailPanel.tsx` header `background-image` (`bg-contain bg-right-bottom`) under the title | **transparent** (panel is `slate-950`) | right side only, x ≈ 262–276, master scale × 0.61, inside a left→right reveal mask |
 
 The banner is the **master** drawing; avatar and header are the same geometry re-framed, so a fix to the
 instrument is always made once and re-rendered three times. The icon is a separate simplified path.
 
 ## Palette
 
-Accent = the family colour in `FAMILY_COLORS` (`src/theme.ts`); the shade is its dark partner.
+Accent = the family colour in `FAMILY_COLORS` (`packages/design-tokens/src/familyColors.ts`); the shade is its dark partner.
 
 | Family | Accent | Shade |
 |---|---|---|

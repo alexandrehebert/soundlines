@@ -5,19 +5,19 @@ on:
     branches: [main]
   pull_request:
     paths:
-      - 'site/**'
-      - 'src/projectLinks.ts'
-      - 'public/**'
-      # Figures quoted by the companion are computed from these at build time.
-      - 'src/data/graph.json'
+      - 'apps/companion/**'
+      # The public Storybook uses web stories, assets and shared packages.
+      - 'apps/storybook/**'
+      - 'apps/web/**'
+      - 'packages/**'
+      # The companion also computes figures from evidence, roles and skills.
       - 'docs/graph/evidence/**'
       - '.agents/roles/**'
       - '.agents/skills/**'
       - 'package.json'
-      - 'package-lock.json'
-      # The public Storybook is published under /storybook/.
-      - 'src/**'
-      - '.storybook/**'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+      - 'tsconfig.base.json'
       - '.github/workflows/project-pages.yml'
   workflow_dispatch:
 
@@ -33,17 +33,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6
+        with:
+          standalone: true
       - uses: actions/setup-node@v7.1.0
         with:
           node-version-file: .nvmrc
-          cache: npm
-      - run: npm ci
-      - run: npm run test:site
-      - run: npm run build:site
-      - run: npm run build-storybook:public
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test:site
+      - run: pnpm build:pages
       - uses: actions/upload-pages-artifact@v5.0.0
         with:
-          path: _site
+          path: apps/companion/dist-pages
 
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'

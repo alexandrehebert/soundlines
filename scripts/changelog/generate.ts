@@ -3,18 +3,29 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { isDeepStrictEqual } from 'node:util'
 import { pathToFileURL } from 'node:url'
-import { REPOSITORY_URL } from '../../src/projectLinks.ts'
+import { REPOSITORY_URL } from '@soundlines/project-config'
+import { catalogueFileName, cataloguePathAt } from '../graph/cataloguePaths.mjs'
 
 const markdownPath = 'CHANGELOG.md'
 const auditPath = 'docs/changelog/changelog.json'
-const assetPath = 'public/open-data-changelog.json'
+const publicDir = 'apps/web/public'
+const legacyPublicDir = 'public'
+const mediaDir = 'packages/media/public'
+const publicDirectories = [legacyPublicDir, publicDir, mediaDir]
+const assetPath = `${publicDir}/open-data-changelog.json`
 // Exclude the old audit path when replaying history, including the move itself.
-const generated = new Set([markdownPath, auditPath, assetPath, 'docs/changelog.json'])
-const graphPath = 'src/data/graph.json'
+const generated = new Set([markdownPath, auditPath, assetPath, 'docs/changelog.json', 'public/open-data-changelog.json'])
 const categories = ['graph', 'previews', 'loops', 'artwork', 'app', 'site', 'workflow', 'docs', 'other'] as const
 type Category = (typeof categories)[number]
 type Entity = { id: string; name?: string; from?: string; to?: string }
 type Graph = { nodes: Entity[]; edges: Entity[] }
+const graphFile = (path: string) => catalogueFileName(path) === 'graph.json'
+const overlayFile = (path: string) => {
+  const file = catalogueFileName(path)
+  return file && /^graph\.[^.]+\.json$/.test(file) ? file : undefined
+}
+const publicFile = (path: string) => /^(?:(?:apps\/web|packages\/media)\/)?public\/(.+)$/.exec(path)?.[1]
+const mediaFile = (path: string) => /^(genre-previews|audio|loops|instrument-[^/]+)\/(.+)\.[^.]+$/.exec(publicFile(path) ?? '')
 type Delta = { added: string[]; updated: string[]; removed: string[] }
 type FileChange = { status: string; path: string }
 type AssetCategory = 'graph' | 'previews' | 'loops' | 'artwork'
@@ -62,14 +73,14 @@ export function packAssetChangelog(entries: Entry[]) {
 }
 
 export function categoryFor(path: string): Category {
-  if (/^(src\/(data|graph)\/|docs\/graph\/|docs\/(GRAPH|DATA)\.md$|scripts\/graph\/)/.test(path)) return 'graph'
-  if (/(^|[/.-])previews?(\/|[.-])|render-ace-previews/.test(path) || path.startsWith('public/audio/')) return 'previews'
+  if (/^(src\/(data|graph)\/|packages\/catalogue\/|docs\/graph\/|docs\/(GRAPH|DATA)\.md$|scripts\/graph\/)/.test(path)) return 'graph'
+  if (/(^|[/.-])previews?(\/|[.-])|render-ace-previews/.test(path) || publicFile(path)?.startsWith('audio/')) return 'previews'
   if (/(^|\/)loops?(\/|[.-])/.test(path)) return 'loops'
-  if (/^public\/instrument-|(^|\/)artwork(\/|[.-])|instrument-artwork/.test(path)) return 'artwork'
-  if (/^site\//.test(path)) return 'site'
+  if (/(^|\/)artwork(\/|[.-])|instrument-artwork/.test(path) || publicFile(path)?.startsWith('instrument-')) return 'artwork'
+  if (/^(site|apps\/companion)\//.test(path)) return 'site'
   if (/^\.(github|agents|claude|codex)\/|^scripts\/|^compose\.|^Dockerfile|^(AGENTS|CLAUDE)\.md$/.test(path)) return 'workflow'
   if (/^docs\/|\.md$/.test(path)) return 'docs'
-  if (/^(src|public|app)\/|\.(json|[cm]?ts)$/.test(path)) return 'app'
+  if (/^(src|public|app|apps\/(web|storybook)|packages\/(design-tokens|ui-web))\/|\.(json|[cm]?tsx?)$/.test(path)) return 'app'
   return 'other'
 }
 
@@ -88,6 +99,8 @@ const humanize = (id: string) => id.replace(/^[^:]+:/, '').replace(/[-_]+/g, ' '
 function affectedEntities(
   files: FileChange[], before: Graph, after: Graph, graph: Entry['graph'],
   readChange: (file: FileChange) => [Record<string, unknown>, Record<string, unknown>],
+  readOverlay: (name: string) => [Record<string, unknown>, Record<string, unknown>],
+  publicChange: (name: string) => ChangeStatus | undefined,
 ): AffectedEntities {
   const nodes = new Map([...before.nodes, ...after.nodes].map((node) => [node.id, node]))
   const previousEdges = new Map(before.edges.map((edge) => [edge.id, edge]))
@@ -95,6 +108,7 @@ function affectedEntities(
   const groups = new Map<AssetCategory, Map<string, Set<ChangeStatus>>>()
   // A node's own graph delta wins over statuses inferred from its evidence, overlays or relationships.
   const nodeStatus = new Map<string, ChangeStatus>()
+  const comparedOverlays = new Set<string>()
   const add = (category: AssetCategory, id: string, status: ChangeStatus = 'updated') => {
     let group = groups.get(category)
     if (!group) {
@@ -126,8 +140,10 @@ function affectedEntities(
     const edge = file.path.match(/^docs\/graph\/evidence\/edges\/(.+)\.md$/)
     if (node) add('graph', `${node[1]}:${node[2]}`)
     if (edge) addEdge(edge[1].replace('__', ':'))
-    if (/^src\/data\/graph\.[^.]+\.json$/.test(file.path)) {
-      const [old, current] = readChange(file)
+    const overlay = overlayFile(file.path)
+    if (overlay && !comparedOverlays.has(overlay)) {
+      comparedOverlays.add(overlay)
+      const [old, current] = readOverlay(overlay)
       for (const kind of ['nodes', 'edges'] as const) {
         const previous = (old[kind] ?? {}) as Record<string, unknown>
         const next = (current[kind] ?? {}) as Record<string, unknown>
@@ -147,16 +163,18 @@ function affectedEntities(
         }
       }
     }
-    const asset = file.path.match(/^public\/(genre-previews|audio|loops|instrument-[^/]+)\/(.+)\.[^.]+$/)
+    const asset = mediaFile(file.path)
     const brief = file.path.match(/^(?:docs|scripts)\/(loops|artwork)\/briefs\/(.+?)(?:\.selection)?\.json$/)
     const matched = asset ?? brief
     if (matched) {
+      const status = asset ? publicChange(asset[0]) : fileStatus(file)
+      if (!status) continue
       const [, kind, slug] = matched
       const category = kind.startsWith('instrument-') || kind === 'artwork' ? 'artwork' : kind === 'loops' ? 'loops' : 'previews'
       const prefix = category === 'artwork' ? 'instrument' : 'genre'
       const id = `${prefix}:${slug}`
       const landingId = category === 'loops' && slug === 'turntable-hip-hop' ? 'genre:hip-hop' : id
-      add(category, nodes.has(id) ? id : landingId, fileStatus(file))
+      add(category, nodes.has(id) ? id : landingId, status)
     }
   }
   return (['graph', 'previews', 'loops', 'artwork'] as const).flatMap((category) => {
@@ -182,9 +200,30 @@ export function buildChangelog(cwd = process.cwd()) {
   const root = git('rev-parse', '--show-toplevel').trim()
   const entries: Entry[] = []
   const commits = git('rev-list', '--topo-order', 'HEAD').trim().split('\n')
-  const graphAt = (commit: string | null): Graph => commit && git('ls-tree', '--name-only', commit, '--', graphPath).trim()
-    ? JSON.parse(git('show', `${commit}:${graphPath}`)) as Graph
-    : { nodes: [], edges: [] }
+  const catalogueAt = <T>(commit: string | null, fallback: T, file?: string): T => {
+    const path = cataloguePathAt(git, commit, file)
+    return path ? JSON.parse(git('show', `${commit}:${path}`)) as T : fallback
+  }
+  const graphAt = (commit: string | null) => catalogueAt<Graph>(commit, { nodes: [], edges: [] })
+  const publicFilesAt = (commit: string | null) => {
+    const files = new Map<string, string>()
+    if (!commit) return files
+    const entries = git('ls-tree', '-r', '--full-tree', '-z', commit, '--', ...publicDirectories)
+    const priorities = new Map<string, number>()
+    for (const entry of entries.split('\0')) {
+      const separator = entry.indexOf('\t')
+      if (separator === -1) continue
+      const path = entry.slice(separator + 1)
+      const name = publicFile(path)
+      if (!name) continue
+      const priority = publicDirectories.indexOf(path.slice(0, -name.length - 1))
+      if (priority > (priorities.get(name) ?? -1)) {
+        priorities.set(name, priority)
+        files.set(name, entry.slice(0, separator).split(' ')[2])
+      }
+    }
+    return files
+  }
   for (const commit of commits) {
     const [date, subject, parents] = git('show', '-s', '--no-show-signature', '--no-notes', '--format=%cI%x00%s%x00%P', commit).trimEnd().split('\0')
     const parentList = parents ? parents.split(' ').filter(Boolean) : []
@@ -214,18 +253,28 @@ export function buildChangelog(cwd = process.cwd()) {
         return matching.length ? [{ category, files: matching }] : []
       }),
     }
-    if (files.some(({ path }) => /^(src\/data\/graph(?:\.[^.]+)?\.json$|docs\/graph\/evidence\/(?:nodes|edges)\/|public\/(?:genre-previews|audio|loops|instrument-)|(?:docs|scripts)\/(?:previews|loops|artwork)\/briefs\/)/.test(path))) {
+    if (files.some(({ path }) => graphFile(path) || overlayFile(path) || mediaFile(path) || /^(docs\/graph\/evidence\/(?:nodes|edges)\/|(?:docs|scripts)\/(?:previews|loops|artwork)\/briefs\/)/.test(path))) {
       const after = graphAt(commit)
+      const publicAfter = files.some(({ path }) => mediaFile(path)) ? publicFilesAt(commit) : undefined
       const changes = perParent.map(({ base, files: baseFiles }) => {
         const scoped = baseFiles.filter(({ path }) => own.has(path))
         const before = graphAt(base)
-        const graph = scoped.some(({ path }) => path === graphPath)
+        const publicBefore = publicAfter && publicFilesAt(base)
+        const graph = scoped.some(({ path }) => graphFile(path))
           ? { nodes: delta(before.nodes, after.nodes), edges: delta(before.edges, after.edges) }
           : undefined
-        const entities = affectedEntities(scoped, before, after, graph, (file) => [
-          !base || file.status === 'A' ? {} : JSON.parse(git('show', `${base}:${file.path}`)) as Record<string, unknown>,
-          file.status === 'D' ? {} : JSON.parse(git('show', `${commit}:${file.path}`)) as Record<string, unknown>,
-        ])
+        const entities = affectedEntities(scoped, before, after, graph,
+          (file) => [
+            !base || file.status === 'A' ? {} : JSON.parse(git('show', `${base}:${file.path}`)) as Record<string, unknown>,
+            file.status === 'D' ? {} : JSON.parse(git('show', `${commit}:${file.path}`)) as Record<string, unknown>,
+          ],
+          (name) => [catalogueAt(base, {}, name), catalogueAt(commit, {}, name)],
+          (name) => {
+            const old = publicBefore?.get(name)
+            const current = publicAfter?.get(name)
+            return old === current ? undefined : !old ? 'added' : !current ? 'removed' : 'updated'
+          },
+        )
         return { graph, entities }
       })
       const [first, ...others] = changes
@@ -261,7 +310,7 @@ const escape = (text: string) => text.replace(/&/g, '&amp;').replace(/</g, '&lt;
 function renderMarkdown(entries: Entry[]) {
   const lines = [
     '# Changelog', '',
-    'Generated from committed Git history by `npm run changelog`. Do not edit by hand.', '',
+    'Generated from committed Git history by `pnpm changelog`. Do not edit by hand.', '',
     'Commits with file changes reachable from HEAD are listed in Git topological order (newest first).',
     'Each commit is compared with its parent. Merge commits only list files changed against every parent (such as conflict resolutions);',
     'clean merges are omitted because their branch commits are already listed.',
@@ -290,7 +339,7 @@ function renderMarkdown(entries: Entry[]) {
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const args = process.argv.slice(2)
-  if (args.some((arg) => arg !== '--check')) throw new Error('Usage: npm run changelog [-- --check]')
+  if (args.some((arg) => arg !== '--check')) throw new Error('Usage: pnpm changelog [--check]')
   const result = buildChangelog()
   for (const [path, content] of [
     [auditPath, result.json],
@@ -299,7 +348,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
   ]) {
     const file = resolve(result.root, path)
     if (args.includes('--check')) {
-      if (readFileSync(file, 'utf8') !== content) throw new Error(`${path} is stale. Run npm run changelog.`)
+      if (readFileSync(file, 'utf8') !== content) throw new Error(`${path} is stale. Run pnpm changelog.`)
     } else {
       mkdirSync(dirname(file), { recursive: true })
       writeFileSync(file, content)

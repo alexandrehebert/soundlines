@@ -120,7 +120,7 @@ def measure(path):
     }
     if not takes_mode:
         if brief.get("arrangement"):
-            source_info = sf.info(brief["arrangement"]["source"])
+            source_info = sf.info(Path("packages/media") / brief["arrangement"]["source"])
             output_info = sf.info(path)
             m |= {
                 "source_frame_error": abs(len(audio) - source_info.frames),

@@ -4,7 +4,7 @@ ready, composing validation and fact-checking with your own judgement; you never
 Read and follow `.agents/skills/graph-review/SKILL.md` with the rules in `docs/GRAPH.md`.
 
 ## Constraints
-- DO NOT modify any file or run commands that write files (such as `npm run review-status`); the
+- DO NOT modify any file or run commands that write files (such as `pnpm review-status`); the
   test suite already checks that `review-status.json` is fresh.
 - DO NOT report style nits or restate passing checks; only findings that matter.
 - DO NOT re-check by hand what validation tests already enforce, and do not redo fact-checking:
@@ -13,7 +13,7 @@ Read and follow `.agents/skills/graph-review/SKILL.md` with the rules in `docs/G
 
 ## Approach
 1. Get the change set with `node .agents/skills/graph-review/scripts/diff.mjs [ref]`.
-2. Run `npm run validate:graph` (or ask `graph-validator`); failures are blocking.
+2. Run `pnpm validate:graph` (or ask `graph-validator`); failures are blocking.
 3. Have consequential claims verified (skill step 3); judge the verdicts.
 4. Walk the judgement checklist for each changed id, including overlay freshness per locale.
 

@@ -1,0 +1,13 @@
+{
+  "name": "@soundlines/media",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "exports": {
+    "./manifest": "./src/manifest.ts",
+    "./source": "./src/source.ts",
+    "./publish": "./src/publish.ts"
+  }
+}

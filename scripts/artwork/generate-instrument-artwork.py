@@ -10,9 +10,9 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
-ROOT = REPO / 'public'
+ROOT = REPO / 'packages/media/public'
 INSTRUMENTS = {node['id'][len('instrument:'):]
-               for node in json.loads((REPO / 'src/data/graph.json').read_text())['nodes']
+               for node in json.loads((REPO / 'packages/catalogue/data/graph.json').read_text())['nodes']
                if node['type'] == 'instrument'}
 OUTPUT = {}
 SVG = 'http://www.w3.org/2000/svg'
@@ -1206,7 +1206,7 @@ ART = {
 
 
 def write(kind, slug, width, height, content):
-    assert slug in INSTRUMENTS, f'{slug} is not an instrument in src/data/graph.json'
+    assert slug in INSTRUMENTS, f'{slug} is not an instrument in packages/catalogue/data/graph.json'
     target = ROOT / f'instrument-{kind}' / f'{slug}.svg'
     dimensions = ' width="24" height="24"' if kind == 'icons' else ''
     OUTPUT[target] = f'<svg xmlns="{SVG}"{dimensions} viewBox="0 0 {width} {height}">\n{content}\n</svg>\n'

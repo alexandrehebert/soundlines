@@ -1,8 +1,8 @@
 /**
- * Summarizes the per-entry evidence files into src/data/review-status.json,
+ * Summarizes the per-entry evidence files into packages/catalogue/data/review-status.json,
  * which the dataset statistics use to report source-review progress.
  *
- * Run with `npm run review-status` after editing files in docs/graph/evidence.
+ * Run with `pnpm review-status` after editing files in docs/graph/evidence.
  */
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
@@ -17,8 +17,8 @@ export interface ReviewStatus {
 
 const ROOT = fileURLToPath(new URL('../..', import.meta.url))
 export const EVIDENCE_DIR = join(ROOT, 'docs/graph/evidence')
-export const STATUS_FILE = join(ROOT, 'src/data/review-status.json')
-const GRAPH_FILE = join(ROOT, 'src/data/graph.json')
+export const STATUS_FILE = join(ROOT, 'packages/catalogue/data/review-status.json')
+const GRAPH_FILE = join(ROOT, 'packages/catalogue/data/graph.json')
 
 function markdownFiles(dir: string): string[] {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {

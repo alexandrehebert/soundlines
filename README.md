@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/favicon.svg" width="96" height="96" alt="Soundlines multicolored waveform logo" />
+  <img src="./packages/media/public/favicon.svg" width="96" height="96" alt="Soundlines multicolored waveform logo" />
 </p>
 
 <h1 align="center">Soundlines</h1>
@@ -44,15 +44,19 @@ phases include sourced editorial judgments; they are not popularity rankings.
 For tool installation, agent/skill setup, and optional artwork and audio
 environments, see the [installation guide](./docs/INSTALLATION.md).
 
-Use Node.js 26, as specified in [package.json](./package.json).
+Use Node.js 26 and pnpm, pinned in [package.json](./package.json).
 
 ```bash
-npm ci
-npm run dev
+npm install --global pnpm@11.25.0   # once, if needed
+pnpm install --frozen-lockfile
+pnpm dev
 ```
 
 Open the local URL printed by Next.js. For Docker Compose, Storybook and
 the companion site, see the [development guide](./docs/DEVELOPMENT.md#docker-compose).
+
+The [workspace layout](./docs/ARCHITECTURE.md#workspace-layout) separates the
+atlas, companion, and Storybook from the shared catalogue code, tokens, and UI.
 
 For the optional standalone ACE-Step rendering dashboard, see
 [ACE Monitor](./tools/ace-monitor/README.md). It runs in its own Compose stack at
@@ -132,7 +136,7 @@ see [changelog maintenance](./docs/DEVELOPMENT.md#changelog).
 | [Architecture](./docs/ARCHITECTURE.md) | Routing, state, themes, localization, metadata, and rendering modules |
 | [Development](./docs/DEVELOPMENT.md) | Commands, Docker Compose, Storybook, and deployment notes |
 
-The canonical dataset is [graph.json](./src/data/graph.json); research and audits
+The canonical dataset is [graph.json](./packages/catalogue/data/graph.json); research and audits
 live in [docs/graph/evidence](./docs/graph/evidence). Tooling is documented in
 [docs/SCRIPTS.md](./docs/SCRIPTS.md).
 
@@ -141,7 +145,7 @@ live in [docs/graph/evidence](./docs/graph/evidence). Tooling is documented in
 - Created by [Alexandre “Axoune” Hebert](https://github.com/alexandrehebert).
 - The previous vinyl favicon was adapted from
   [Lucide's Disc 3 icon](https://lucide.dev/icons/disc-3) (ISC license); the full
-  notice is in its [Storybook fixture](./src/stories/fixtures/favicon-concepts/vinyl.svg).
+  notice is in its [Storybook fixture](apps/web/src/stories/fixtures/favicon-concepts/vinyl.svg).
 - The landing loop and genre previews were generated with
   [ACE-Step 1.5](https://github.com/ace-step/ACE-Step-1.5). See the
   [audio guide](./docs/AUDIO.md) for details.

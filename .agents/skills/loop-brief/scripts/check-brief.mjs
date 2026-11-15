@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url'
 
 const root = fileURLToPath(new URL('../../../../', import.meta.url))
 const folder = join(root, 'docs/loops/briefs')
-const graph = JSON.parse(readFileSync(join(root, 'src/data/graph.json'), 'utf8'))
+const graph = JSON.parse(readFileSync(join(root, 'packages/catalogue/data/graph.json'), 'utf8'))
 const genres = new Set(graph.nodes.filter((n) => n.type === 'genre').map((n) => n.id))
 // Whole-word, case-sensitive names of real artists and recordings: prompts must not imitate them.
 const protectedNames = graph.nodes

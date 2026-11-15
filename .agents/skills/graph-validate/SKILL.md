@@ -1,6 +1,6 @@
 ---
 name: graph-validate
-description: 'Run the deterministic Soundlines graph validation gate and turn failures into fixes. Use after any edit to src/data/graph.json, a graph.<locale>.json overlay or docs/graph/evidence; before committing or reviewing graph changes; when "npm run validate:graph", the Graph quality CI workflow or a src/data test fails; or to check schema, ids, edge directions, formatting, overlay coverage, and evidence bookkeeping.'
+description: 'Run the deterministic Soundlines graph validation gate and turn failures into fixes. Use after any edit to packages/catalogue/data/graph.json, a graph.<locale>.json overlay or docs/graph/evidence; before committing or reviewing graph changes; when "pnpm validate:graph", the Graph quality CI workflow or a packages/catalogue/data test fails; or to check schema, ids, edge directions, formatting, overlay coverage, and evidence bookkeeping.'
 argument-hint: 'Optional: a failing test name or CI log to diagnose'
 ---
 
@@ -13,8 +13,8 @@ whether claims are true (`graph-fact-check`) or whether a change is editorially 
 ## Run
 
 ```sh
-npm run review-status        # regenerate src/data/review-status.json from docs/graph/evidence (writes a file)
-npm run validate:graph       # check catalogue addition dates, then run graph tests
+pnpm review-status        # regenerate packages/catalogue/data/review-status.json from docs/graph/evidence (writes a file)
+pnpm validate:graph       # check catalogue addition dates, then run graph tests
 ```
 
 CI runs both and fails if `review-status.json` changed, so commit the regenerated file. A pass means
@@ -41,11 +41,11 @@ on an existing node cannot be removed or changed. Use the date the node joined t
 | `graph` "requires a nonblank description for every catalogue entry" | node description coverage | write a source-backed description for each listed id, update the evidence note, and translate in every overlay |
 | `graph` "standalone or unresolved nodes disconnected", "roots" | orphans | link with a sourced edge, or document it in `docs/graph/evidence/disconnected-entries.md` |
 | `festivals` * | festival register and audit JSON/MD alignment | update `docs/graph/evidence/festivals.md` and `audits/festival-*.json` (+ `.md`) |
-| `reviewStatus` "matches the evidence files" | `review-status.json` is fresh | `npm run review-status` |
+| `reviewStatus` "matches the evidence files" | `review-status.json` is fresh | `pnpm review-status` |
 | `reviewStatus` "evidence note for every live node", "tracks every live edge" | evidence notes and `graph-edge-coverage.csv` rows match live entries | write the note / add or correct the CSV row (`graph-edit` evidence templates) |
 | `graphLocale` "registers exactly one graph.<locale>.json overlay" | overlay files ↔ `LOCALES` ↔ `GRAPH_OVERLAYS` | see `graph-translate` "Add a language" |
 | `graphLocale` "covers every … in the <locale> overlay", "keeps the graph structure and artist/track names unchanged" | overlay coverage and text-only rule | translate the listed `<id>.<field>` with `graph-translate`; remove `name` from artists/tracks |
-| `src/graph/*` | app projections (timeline, history, bubbles, stats) still work on the data | usually caused by a data error above; fix data first, code only if the projection is wrong |
+| `apps/web/src/graph/*` | app projections (timeline, history, bubbles, stats) still work on the data | usually caused by a data error above; fix data first, code only if the projection is wrong |
 
 ## Not covered by validation (needs judgement)
 

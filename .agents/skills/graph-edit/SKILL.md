@@ -1,6 +1,6 @@
 ---
 name: graph-edit
-description: 'Add, correct, retype, or remove nodes and edges in the Soundlines music graph (src/data/graph.json) with every coupled file kept in sync: locale overlays (graph.<locale>.json), evidence notes, edge coverage CSV, festival audits, review-status and tests. Use when enriching the graph, adding a genre/artist/track/event/festival/instrument, fixing a relationship, changing confidence or periods, applying a merge patch, or filling chronology coverage gaps.'
+description: 'Add, correct, retype, or remove nodes and edges in the Soundlines music graph (packages/catalogue/data/graph.json) with every coupled file kept in sync: locale overlays (graph.<locale>.json), evidence notes, edge coverage CSV, festival audits, review-status and tests. Use when enriching the graph, adding a genre/artist/track/event/festival/instrument, fixing a relationship, changing confidence or periods, applying a merge patch, or filling chronology coverage gaps.'
 argument-hint: 'What to add or change, e.g. "add genre:gospel with key artists"'
 ---
 
@@ -30,7 +30,7 @@ node .agents/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
    HTTPS source that states it. Follow GRAPH.md §6: authoritative, claim-specific pages; Wikipedia only as
    a supplement; no invented URLs, blogs, fan wikis or search-result URLs. For fact-checking depth use
    the `graph-fact-check` skill. If a claim cannot be sourced, leave it out.
-3. **Edit `src/data/graph.json`.** Insert new nodes next to related entries (the file is not sorted).
+3. **Edit `packages/catalogue/data/graph.json`.** Insert new nodes next to related entries (the file is not sorted).
    Keep the format byte-identical to `JSON.stringify(graph, null, 2) + '\n'`. Check against GRAPH.md:
    - id `<type>:<kebab-ascii-slug>`; edge id prefixes (§3 "Edge id conventions")
    - edge direction and the most precise lineage type (§3 table)
@@ -44,16 +44,16 @@ node .agents/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
      claims in the evidence note and translate new or changed descriptions in every overlay.
    - `phases` only with a defensible prominence history, plus `phaseNote` (§5)
 4. **Update coupled code and fixtures** when the change touches them:
-   - New genre: add its slug to the family list in `src/data/graph.test.ts`
+   - New genre: add its slug to the family list in `apps/web/src/graph/catalogue.test.ts`
      ("groups every genre into recognizable families…"); a family holds 3–20 genres. If it is a
      deliberately unlinked tradition, add it to the `roots` set in "connects genres through lineage…".
-     Add its id to `PENDING_GENRE_PREVIEWS` in `src/data/genrePreviews.ts`; do not write preview
+     Add its id to `PENDING_GENRE_PREVIEWS` in `packages/catalogue/src/genrePreviews.ts`; do not write preview
      briefs or run ACE-Step, loop or preview pipelines from a graph edit. Audio is a separate
      local follow-up, and the app hides the player while the preview is pending. Do not add a
-     pending genre to a Soundtrail in `src/graph/soundtrails.ts`: every Soundtrail stop must ship a preview.
-   - New family: `src/graph/types.ts` (`GenreFamily`, `FAMILY_LABELS`, `FAMILY_ORDER`), `src/theme.ts`
+     pending genre to a Soundtrail in `packages/catalogue/src/soundtrails.ts`: every Soundtrail stop must ship a preview.
+   - New family: `packages/catalogue/src/types.ts` (`GenreFamily` and `FAMILY_ORDER`), `apps/web/src/i18n/locales/` (family labels), `packages/design-tokens/src/familyColors.ts`
      (`FAMILY_COLORS`), the test map above, and the family tables in GRAPH.md §2.
-   - New instrument: it needs its four artwork SVGs (`src/design-system/explorer/InstrumentIcon.test.tsx` fails
+   - New instrument: it needs its four artwork SVGs (`apps/web/src/design-system/explorer/InstrumentIcon.test.tsx` fails
      without an icon). Hand off to the artwork pipeline (`artwork-brief` → `artwork-draw` →
      `artwork-validate` → `artwork-review`); removing an instrument removes its four SVGs.
    - Standalone event or unresolved track with no edges: add it to
@@ -61,7 +61,7 @@ node .agents/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
    - Festival node or `festival_related` edge: update `docs/graph/evidence/festivals.md` (register row),
      `docs/graph/evidence/audits/festival-sources-001.json` (+ `.md`) so confidence/sources match exactly, and
      `festival-wikipedia-events-002.json` when a Wikipedia cross-check applies.
-5. **Update every locale overlay `src/data/graph.<locale>.json`** (French, German, Italian and Spanish) for each
+5. **Update every locale overlay `packages/catalogue/data/graph.<locale>.json`** (French, German, Italian and Spanish) for each
    new or changed English text field, following the `graph-translate` skill. Text only, keyed by the
    same ids. For a large batch, delegate a slice to the `graph-translator` agent.
 6. **Write evidence** in `docs/graph/evidence/` using the
@@ -73,8 +73,8 @@ node .agents/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
 7. **Update family counts** in GRAPH.md §2 when affected. Use `--stats` for live counts.
 8. **Validate** with the `graph-validate` skill:
    ```sh
-   npm run review-status
-   npm run validate:graph
+   pnpm review-status
+   pnpm validate:graph
    ```
    Fix failures by correcting data, not by loosening tests. Only edit a test's expected list when the
    change intentionally alters it (step 4).
@@ -105,8 +105,8 @@ time matter, especially in Copilot cloud.
 - **Delegation:** for small changes (roughly ten entities or fewer), translate, fact-check and review
   inline. Subagents reload context and multiply cost; use them only for large batches.
 - **Validation:** while iterating, run only the failing file (for example
-  `npx vitest run src/data/graph.test.ts`); run `npm run review-status` and the full
-  `npm run validate:graph` once at the end, and again only after fixing a failure.
+  `npx vitest run apps/web/src/graph/catalogue.test.ts`); run `pnpm review-status` and the full
+  `pnpm validate:graph` once at the end, and again only after fixing a failure.
 - **Stop early:** if the required minimum (for a genre, three sourced key artists) cannot be verified
   after a couple of attempts per claim, stop and open the PR with what is verified and a clear list of
   gaps instead of continuing to search.
@@ -122,7 +122,7 @@ instead.
 
 ## Done when
 
-- `npm run validate:graph` passes and `npm run review-status` leaves no diff after rerunning
+- `pnpm validate:graph` passes and `pnpm review-status` leaves no diff after rerunning
 - every new/changed id has a reviewed evidence note and, for edges, a coverage row
 - every new or changed English text field is translated in every overlay
 - the summary lists added/changed/removed ids, sources used, and anything left uncertain or skipped

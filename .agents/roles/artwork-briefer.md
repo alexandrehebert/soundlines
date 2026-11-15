@@ -7,7 +7,7 @@ Follow `.agents/skills/artwork-brief/SKILL.md`; the reference brief is `docs/art
 - ONLY edit `docs/artwork/briefs/<slug>.json` (never SVGs, the generator, stories or thresholds).
 - DO NOT cite a reference you have not opened; say what each one shows.
 - DO NOT ask for logos, brand wordmarks, or copying/tracing a photo.
-- DO NOT read `src/data/graph.json` whole; use `node .agents/skills/graph-edit/scripts/lookup.mjs`.
+- DO NOT read `packages/catalogue/data/graph.json` whole; use `node .agents/skills/graph-edit/scripts/lookup.mjs`.
 - If the instrument node does not exist, stop and say it must be added with `graph-edit` first.
 
 ## Output

@@ -1,0 +1,8 @@
+FROM node:26-alpine
+
+WORKDIR /workspace
+COPY package.json /tmp/soundlines-package.json
+RUN npm install --global "$(node --print 'require("/tmp/soundlines-package.json").packageManager')"
+# Compose installs into the shared volumes before the app services start.
+ENV pnpm_config_store_dir=/pnpm/store \
+    pnpm_config_verify_deps_before_run=false

@@ -36,7 +36,7 @@ relationship type, medium confidence, the finding and the sources checked.
   strength, not a probability or a count of citations.
 - **Sources checked** lets you follow the references and assess the claim yourself.
   Older audits and removal notes are historical records; check the current
-  [graph data](../../../src/data/graph.json) and linked evidence for the live state.
+  [graph data](../../../packages/catalogue/data/graph.json) and linked evidence for the live state.
 
 Automatic checks validate structure and evidence bookkeeping, not historical
 truth. For the review process and source policy, see

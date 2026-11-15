@@ -1,0 +1,60 @@
+{
+  "$schema": "https://turborepo.dev/schema.json",
+  "globalDependencies": [
+    "tsconfig.base.json",
+    "scripts/**",
+    "docs/graph/evidence/**",
+    "docs/loops/briefs/**",
+    ".agents/roles/**",
+    ".agents/skills/**"
+  ],
+  "tasks": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "dist/**",
+        "storybook-static/**"
+      ],
+      "env": [
+        "NEXT_PUBLIC_*",
+        "VITE_*"
+      ]
+    },
+    "source": {
+      "dependsOn": ["^source"]
+    },
+    "@soundlines/web#build": {
+      "dependsOn": ["^source"],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "public/favicon.svg",
+        "public/favicon-light.svg",
+        "public/genre-previews/**",
+        "public/genre-samples/**",
+        "public/instrument-*/**",
+        "public/loops/**",
+        "public/media-manifest.json"
+      ],
+      "env": ["NEXT_PUBLIC_*"]
+    },
+    "@soundlines/storybook#build": {
+      "dependsOn": ["^source"],
+      "outputs": ["storybook-static/**"],
+      "env": ["NEXT_PUBLIC_*"]
+    },
+    "typecheck": {
+      "dependsOn": [
+        "^typecheck"
+      ]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
