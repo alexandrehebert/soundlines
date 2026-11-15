@@ -10,7 +10,7 @@ All data lives in [src/data/graph.json](../src/data/graph.json) as a single prop
 
 - **Nodes** (`genre`, `artist`, `instrument`, `label`, `place`, `track`, `scene`, `event`, `festival`) with stable `type:slug` ids, optional `period` (`start`/`end`/`precision`/`estimated`/`estimateNote`), `family` lanes, descriptions, and editorial confidence in the overall entry.
 - **Edges** with a type, optional `period`, `confidence` (`low`/`medium`/`high`), `note`, and source URLs. Lineage edge types (`influences`, `derived_from`, `subgenre_of`, `fusion_of`, `cross_pollination`, `revival_of`) carry an orientation so the JSON reads naturally in both directions (see `LINEAGE_ORIENTATION` in [src/graph/types.ts](../src/graph/types.ts)).
-- Nodes can include `sources` URLs; the detail panel links the selected node's sources, with each source's website shown beside the link.
+- Every node has at least two distinct HTTPS `sources` URLs. The detail panel links the selected node's sources and shows the website beside each link.
 
 ### Discovering instruments worldwide
 

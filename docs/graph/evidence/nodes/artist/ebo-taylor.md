@@ -7,6 +7,7 @@ Graph ID `artist:ebo-taylor`
 ## Sources read
 
 - [The Guardian, “Ebo Taylor, Ghanaian highlife pioneer and guitarist, dies age 90”](https://www.theguardian.com/music/2026/feb/09/ebo-taylor-ghanaian-highlife-pioneer-dies-age-90) — details Taylor's guitar playing, arranging, producing, bands, jazz and funk influences, and collaborations with Pat Thomas.
+- [mrbongo.bandcamp.com](<https://mrbongo.bandcamp.com/album/hitsville-revisited>) — Mr Bongo’s reissue credits Ebo Taylor and Pat Thomas together with Uhuru Yenzu on Hitsville Revisited.
 
 ## Findings
 

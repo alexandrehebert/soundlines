@@ -7,6 +7,7 @@ Graph ID `artist:dj-scud`
 ## Sources read
 
 - [XLR8R, “Breakcore: Live Fast”](https://xlr8r.com/features/breakcore-live-fast/) — explicitly calls DJ Scud a breakcore scene pioneer, identifies Ambush as his label and discusses his recordings with Nomex.
+- [praxis-records.net](<https://praxis-records.net/scud-nomex-maschinenbau-ep/>) — The Praxis reissue documents Scud’s Ambush role and his breakcore collaboration with Nomex on “Total Destruction.”
 
 ## Findings
 

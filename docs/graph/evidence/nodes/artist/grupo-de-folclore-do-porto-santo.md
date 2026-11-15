@@ -7,6 +7,7 @@ Graph ID `artist:grupo-de-folclore-do-porto-santo`
 ## Sources checked
 
 - [Smithsonian Folkways, Portugal: Music and Dance from Madeira](https://folkways.si.edu/portugal-music-and-dance-from-madeira/world/music/album/smithsonian) — Documents work calls, ballads, song duels, dances, instrumental music, regional ensembles and 1996–97 field recordings.
+- [cm-portosanto.pt](<https://cm-portosanto.pt/voto-de-pesar-pelo-falecimento-de-jose-martins-junior-ilustre-paroco-e-politico-madeirense/>) — The Porto Santo municipality documents the ensemble’s formation on the island and its work preserving the local dances and songs.
 
 ## Assessment
 

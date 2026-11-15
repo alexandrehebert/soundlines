@@ -7,6 +7,7 @@ Graph ID `artist:mixmaster-morris`
 
 ## Sources checked
 - [Bandcamp Daily interview with Mixmaster Morris](https://daily.bandcamp.com/features/irresistible-force-dance-dj-feature) — Identifies his aliases, his pirate radio work around 1985 and his role in the ambient scene.
+- [mn2s.com](<https://mn2s.com/news/dj/mixmaster-morris-ambient-music-aphex-twin-john-peel/>) — The MN2S interview and career profile document Morris’s chill-out work and recordings as the Irresistible Force.
 
 ## Assessment
 The career date is anchored by his early pirate radio show.

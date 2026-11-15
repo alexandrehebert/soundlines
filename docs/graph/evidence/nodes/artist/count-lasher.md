@@ -8,6 +8,7 @@ Graph ID `artist:count-lasher`
 ## Sources checked
 
 - [Frémeaux, Jamaica: Mento 1951–1958](https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html) — Documents early Jamaican commercial recordings, rural and dance-band styles, and the work of Lord Flea, Count Lasher and Lord Fly.
+- [mentomusic.com](<https://mentomusic.com/lasher.htm>) — The discographic collection documents the original Motta’s Recording Studio release of Mango Time by Count Lasher’s Seven and preserves audio and lyrics about the mango season.
 
 ## Assessment
 Singer and recording artist of Jamaica’s early mento era.

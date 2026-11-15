@@ -9,6 +9,7 @@ Graph ID `place:baalbeck`
 ## Sources checked
 
 - [Source 1](https://www.baalbeck.org.lb/history/1000/)
+- [sursock.museum](<https://sursock.museum/sites/default/files/pdf/baalbek-exhibition_guide-en-web.pdf>) — The Sursock Museum’s exhibition guide documents the launch of the festival at Baalbek in 1956.
 
 ## Assessment
 

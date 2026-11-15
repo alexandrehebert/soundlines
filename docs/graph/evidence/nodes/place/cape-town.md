@@ -9,6 +9,7 @@ Graph ID `place:cape-town`
 ## Sources checked
 
 - [Source 1](https://capetownjazzfest.com/history)
+- [travelnews.co.za](<https://www.travelnews.co.za/article/weekend-of-world-music-a-hit>) — Contemporary reporting places the 2000 North Sea Jazz Festival at Cape Town’s Good Hope Centre.
 
 ## Assessment
 

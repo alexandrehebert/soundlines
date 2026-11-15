@@ -7,6 +7,7 @@ Graph ID `artist:chris-liberator`
 
 ## Sources checked
 - [Stay Up Forever label history](https://stayupforever.com/about-us/) — Documents the first DJ set in 1991 and the founding of Stay Up Forever.
+- [ra.co](<https://ra.co/news/76853>) — Resident Advisor’s anniversary report documents Chris Liberator’s role in the London DJ collective behind Stay Up Forever.
 
 ## Assessment
 The label dates his first DJ set to 1991.

@@ -8,6 +8,7 @@ Graph ID `artist:paco-de-lucia`
 ## Sources checked
 
 - [Andalucía, Paco de Lucía](https://en.andalucia.org/blog/post/paco-de-lucia-se-asoma-a-las-aguas-del-estrecho-en/) — Documents his work as a flamenco guitarist.
+- [fundacionpacodelucia.com](<https://fundacionpacodelucia.com/discografia/fuente-y-caudal/>) — The Paco de Lucía Foundation lists “Entre dos aguas” on Fuente y Caudal.
 
 ## Assessment
 Documents his work as a flamenco guitarist.

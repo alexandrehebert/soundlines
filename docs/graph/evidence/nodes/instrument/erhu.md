@@ -8,6 +8,7 @@ Graph ID `instrument:erhu`
 ## Sources checked
 
 - [metmuseum.org](https://www.metmuseum.org/art/collection/search/500616)
+- [shcmusic.edu.cn](<https://www.shcmusic.edu.cn/_upload/article/files/04/f8/660e3994403296171945f47c71e7/75cca47b-6636-494b-b564-0491ddf51007.pdf>) — The Shanghai Conservatory material describes the two strings and places the bow between them.
 
 ## Assessment
 

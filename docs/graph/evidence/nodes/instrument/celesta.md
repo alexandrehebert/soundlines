@@ -8,6 +8,7 @@ Graph ID `instrument:celesta`
 ## Sources checked
 
 - [celesta-schiedmayer.de](https://www.celesta-schiedmayer.de/en/celesta/all-about-the-celesta/)
+- [yamaha.com](<https://www.yamaha.com/en/musical_instrument_guide/celesta/structure/>) — Yamaha explains how the keyboard action makes hammers strike metal bars.
 
 ## Assessment
 

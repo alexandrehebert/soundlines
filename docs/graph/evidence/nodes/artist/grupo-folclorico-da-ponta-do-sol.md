@@ -7,6 +7,7 @@ Graph ID `artist:grupo-folclorico-da-ponta-do-sol`
 ## Sources checked
 
 - [Smithsonian Folkways, Portugal: Music and Dance from Madeira](https://folkways.si.edu/portugal-music-and-dance-from-madeira/world/music/album/smithsonian) — Documents work calls, ballads, song duels, dances, instrumental music, regional ensembles and 1996–97 field recordings.
+- [rpea.madeira.gov.pt](<https://rpea.madeira.gov.pt/index.php/rpea/pt/article/download/103/110/326>) — Madeira’s arts education journal identifies the Ponta do Sol ensemble as a regional folklore association member and dates its formation to 1981.
 
 ## Assessment
 

@@ -9,6 +9,7 @@ Graph ID `place:montego-bay`
 ## Sources checked
 
 - [Source 1](https://reggaesunsplashpreservationsociety.org/)
+- [jamaicaobserver.com](<https://www.jamaicaobserver.com/2022/05/19/the-birth-of-reggae-sunsplash/>) — A founding organizer interviewed by the Jamaica Observer recalls the launch of Reggae Sunsplash in Montego Bay in 1978.
 
 ## Assessment
 

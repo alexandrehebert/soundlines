@@ -8,6 +8,7 @@ Graph ID `artist:apirana-ngata`
 ## Sources checked
 
 - [Te Ara, Waiata-ā-ringa](https://teara.govt.nz/en/waiata-hou-contemporary-maori-songs/page-3) — Names the composer in its account of pioneering waiata-ā-ringa.
+- [teara.govt.nz](<https://teara.govt.nz/en/music/44279/apirana-ngata-and-karangatia-ra>) — The Te Ara audio record documents Ngata’s work composing waiata-ā-ringa and includes a recording of Karangatia rā.
 
 ## Assessment
 Names the composer in its account of pioneering waiata-ā-ringa.

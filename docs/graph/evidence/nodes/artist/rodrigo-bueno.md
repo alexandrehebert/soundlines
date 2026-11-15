@@ -8,6 +8,7 @@ Graph ID `artist:rodrigo-bueno`
 ## Sources checked
 
 - [Secretariat of Culture, Rodrigo Bueno](https://www.argentina.gob.ar/noticias/rodrigo-bueno-el-idolo-cordobes-que-continua-despertando-pasiones) — Profiles Rodrigo Bueno and names Carlos La Mona Jiménez as a central figure in Córdoba cuarteto.
+- [varela.gob.ar](<https://www.varela.gob.ar/radiomunicipal/nota.aspx?id=174651>) — Florencio Varela’s municipal radio archive recounts Rodrigo’s run of cuarteto performances at Luna Park in 2000.
 
 ## Assessment
 Córdoba singer and popular interpreter of cuarteto.

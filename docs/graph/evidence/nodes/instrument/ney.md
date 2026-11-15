@@ -8,6 +8,7 @@ Graph ID `instrument:ney`
 ## Sources checked
 
 - [metmuseum.org](https://www.metmuseum.org/art/collection/search/501050)
+- [horniman.ac.uk](<https://www.horniman.ac.uk/object/M24.8.56/159/>) — The Horniman catalogue describes an end-blown ney made from a length of reed.
 
 ## Assessment
 

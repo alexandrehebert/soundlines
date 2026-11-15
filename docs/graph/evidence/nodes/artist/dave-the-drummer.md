@@ -7,6 +7,7 @@ Graph ID `artist:dave-the-drummer`
 
 ## Sources checked
 - [D.A.V.E. The Drummer’s biography on Resident Advisor](https://ra.co/dj/henrycullen/biography) — Dates the start of his production career to 1995 and identifies his aliases and label.
+- [stayupforever.com](<https://stayupforever.com/about-us/>) — Stay Up Forever’s label history documents D.A.V.E. The Drummer’s involvement with the Liberator DJs and their London acid techno label.
 
 ## Assessment
 The start marks his documented production career under this entry.

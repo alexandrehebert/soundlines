@@ -709,12 +709,13 @@ describe('graph.json integrity', () => {
     }
   })
 
-  it('requires artist sources and validates HTTPS sources throughout the graph', () => {
+  it('requires two distinct source URLs on every node and validates HTTPS sources throughout the graph', () => {
     const artists = graph.nodes.filter((node) => node.type === 'artist')
     const artistIds = new Set(artists.map((node) => node.id))
-    for (const artist of artists) {
-      expect(artist.sources?.length, artist.id).toBeGreaterThan(0)
-    }
+    const underSourcedNodes = graph.nodes
+      .filter((node) => new Set(node.sources).size < 2)
+      .map((node) => node.id)
+    expect(underSourcedNodes).toEqual([])
     for (const edge of graph.edges.filter((candidate) =>
       candidate.type === 'key_artist_of' || (artistIds.has(candidate.from) && artistIds.has(candidate.to)),
     )) {

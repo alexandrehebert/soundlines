@@ -8,6 +8,7 @@ Graph ID `artist:freddy-quinn`
 ## Sources checked
 
 - [Goethe-Institut, Marlene, Schlager Kitsch, and Milli Vanilli](https://www.goethe.de/prj/geg/en/thm/flm/27211817.html) — Documents the performer’s appearances in the Schlager film tradition.
+- [filmportal.de](<https://www.filmportal.de/film/freddy-und-der-millionaer_ab6102d4814d422aad4ada7190a9633a>) — The German Film Institute’s catalogue documents Freddy Quinn’s starring role in Freddy und der Millionär, released in 1961.
 
 ## Assessment
 Documents the performer’s appearances in the Schlager film tradition.

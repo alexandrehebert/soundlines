@@ -9,6 +9,7 @@ Graph ID `place:bayreuth`
 ## Sources checked
 
 - [Source 1](https://www.bayreuther-festspiele.de/en/festival/history/)
+- [bayreuth.de](<https://www.bayreuth.de/tourismus-kultur-freizeit/sehenswertes/festspielhaus/>) — The City of Bayreuth records the opening of Wagner’s first festival there in 1876.
 
 ## Assessment
 

@@ -7,6 +7,7 @@ Graph ID `artist:pharoah-sanders`
 ## Sources read
 
 - [NPR, “Pharoah Sanders, giant of spirit-driven jazz, dies at 81”](https://www.npr.org/2022/09/24/1124925662/pharoah-sanders-dies-at-81-obituary) — describes the saxophonist's work with Coltrane, defining solo recordings and influence on later players.
+- [pharoahsanders.com](<https://www.pharoahsanders.com/karma>) — Sanders’s official discography lists Karma as an Impulse! recording and gives the album’s personnel.
 
 ## Findings
 

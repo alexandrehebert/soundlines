@@ -9,6 +9,7 @@ Graph ID `place:northern-mali`
 ## Sources checked
 
 - [Source 1](https://www.brandeis.edu/peacebuilding-arts/projects/impact/contributions/festival-in-desert.html)
+- [culanth.org](<https://www.culanth.org/fieldsights/tourism-v-terrorism-le-festival-au-desert-tuareg-culture-and-the-malian-state>) — Anthropologist Angela Montague documents the festival’s roots in local gatherings and its site outside Timbuktu.
 
 ## Assessment
 

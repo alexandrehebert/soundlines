@@ -9,6 +9,7 @@ Graph ID `place:isle-of-wight`
 ## Sources checked
 
 - [Source 1](https://isleofwightfestival.com/info/history)
+- [reading.ac.uk](<https://www.reading.ac.uk/adlib/Details/collect/7315>) — The Museum of English Rural Life catalogues a poster made at the 1970 Isle of Wight Festival.
 
 ## Assessment
 

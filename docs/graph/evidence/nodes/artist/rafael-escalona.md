@@ -8,6 +8,7 @@ Graph ID `artist:rafael-escalona`
 ## Sources checked
 
 - [Fundación Escalona, Historia de Rafael Escalona](https://www.fundacionescalona.org/history) — Documents his early compositions in 1943 and chronicles of Caribbean Colombia.
+- [festivalvallenato.com](<https://festivalvallenato.com/vallen/>) — The festival foundation credits Rafael Escalona among the creators of the Festival de la Leyenda Vallenata in 1968.
 
 ## Assessment
 Composer whose vallenato songs chronicled Caribbean Colombia.

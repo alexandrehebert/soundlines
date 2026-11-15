@@ -9,6 +9,7 @@ Graph ID `place:newport-rhode-island`
 ## Sources checked
 
 - [Source 1](https://newporthistory.org/history-bytes-the-1954-newport-jazz-festival-in-memory-of-george-wein/)
+- [preservation.ri.gov](<https://preservation.ri.gov/sites/g/files/xkgbur406/files/pdfs_zips_downloads/national_pdfs/newport/newp_bellevue-avenue-194_newport-casino.pdf>) — The Newport Casino’s National Historic Landmark documentation confirms that it hosted the first Newport Jazz Festival in 1954.
 
 ## Assessment
 

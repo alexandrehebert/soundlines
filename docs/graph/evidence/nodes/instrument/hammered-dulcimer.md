@@ -8,6 +8,7 @@ Graph ID `instrument:hammered-dulcimer`
 ## Sources checked
 
 - [repository.si.edu](https://repository.si.edu/bitstream/handle/10088/2443/SSHT-0044_Lo_res.pdf)
+- [gcv.org](<https://www.gcv.org/folders/folder/making-music/entry/hammered-dulcimer>) — The Genesee Country Village & Museum catalogue describes the dulcimer’s strings stretched over a hollow soundboard.
 
 ## Assessment
 

@@ -8,6 +8,7 @@ Graph ID `artist:mariza`
 ## Sources checked
 
 - [Museu do Fado, Mariza](https://www.museudofado.pt/fado/personalidade/mariza) — Documents Mariza’s fado recordings and performances.
+- [womex.com](<https://www.womex.com/virtual/world_connection/mariza/fado_em_mim>) — Lists Mariza’s Fado Em Mim as a 2001 release on World Connection.
 
 ## Assessment
 Documents Mariza’s fado recordings and performances.

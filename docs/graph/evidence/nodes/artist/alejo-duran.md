@@ -8,6 +8,7 @@ Graph ID `artist:alejo-duran`
 ## Sources checked
 
 - [Biblioteca de Bogotá, archival profile of Alejo Durán](https://biblioarchivo.bogota.gov.co/opac-tmpl/IMG_CINEP1/DJ02-1985-1S-4.pdf) — Documents the accordionist’s first commercial release in 1950 and festival success.
+- [festivalvallenato.com](<https://festivalvallenato.com/la-primera-entrevista-al-rey-vallenato-alejo-duran/>) — The Festival de la Leyenda Vallenata archives Durán’s interview as the festival’s first Rey Vallenato.
 
 ## Assessment
 Vallenato accordionist and early recording artist.

@@ -13,3 +13,4 @@ The National Park Service history situates Edison’s laboratory work and the 18
 ## Sources checked
 
 - https://www.nps.gov/edis/learn/historyculture/origins-of-sound-recording-thomas-edison.htm
+- [menloparkmuseum.org](<https://www.menloparkmuseum.org/history>) — The Thomas Edison Center at Menlo Park places Edison’s phonograph invention at his Menlo Park laboratory in 1877.

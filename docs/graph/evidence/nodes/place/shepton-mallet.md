@@ -9,6 +9,7 @@ Graph ID `place:shepton-mallet`
 ## Sources checked
 
 - [Source 1](https://petergabriel.com/release/live-at-womad-1982/)
+- [theguardian.com](<https://www.theguardian.com/culture/2022/jul/20/the-first-womad-festival-reviewed-archive-1982>) — The Guardian’s contemporary review places the first WOMAD at the Bath and West Showground in Shepton Mallet in 1982.
 
 ## Assessment
 

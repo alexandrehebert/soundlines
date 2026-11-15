@@ -9,6 +9,7 @@ Graph ID `place:montreux`
 ## Sources checked
 
 - [Source 1](https://www.montreuxjazzfestival.com/en/festival/about-montreux-jazz-festival/)
+- [unesco.org](<https://www.unesco.org/fr/memory-world/montreux-jazz-festival-claude-nobs-legacy>) — UNESCO’s Memory of the World register documents the Montreux Jazz Festival through its archive of concerts.
 
 ## Assessment
 

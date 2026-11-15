@@ -8,6 +8,7 @@ Graph ID `instrument:darbuka`
 ## Sources checked
 
 - [metmuseum.org](https://www.metmuseum.org/art/collection/search/505776)
+- [sites.duke.edu](<https://sites.duke.edu/dumic/instruments/percussion/middle-east/darbuka/>) — Duke’s instrument catalogue describes the drum’s goblet shape and regional names, including doumbek and the Egyptian darbukkah.
 
 ## Assessment
 

@@ -8,6 +8,7 @@ Graph ID `artist:camaron-de-la-isla`
 ## Sources checked
 
 - [Andalucía, Camarón route](https://en.andalucia.org/blog/post/the-route-of-camaron-de-la-isla/) — Documents Camarón’s flamenco career.
+- [iticadiz.es](<https://iticadiz.es/proyecto/centro-de-interpretacion-camaron-de-la-isla/>) — The Cádiz cultural programme identifies San Fernando as Camarón’s birthplace and documents nine albums with Paco de Lucía.
 
 ## Assessment
 Documents Camarón’s flamenco career.

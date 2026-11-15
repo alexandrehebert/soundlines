@@ -8,6 +8,7 @@ Graph ID `artist:george-ramogi`
 ## Sources checked
 
 - [Maseno University, A Comparative Analysis of Conceptual Metaphors](https://www.edocs.maseno.ac.ke/bitstream/handle/123456789/904/GRADUATION%20THESIS.pdf?isAllowed=y&sequence=3) — Names Ramogi and his band in the history of benga.
+- [ketebul.bandcamp.com](<https://ketebul.bandcamp.com/album/retracing-the-benga-rhythm>) — The Kenyan label Ketebul Music includes a recording credited to George Ramogi in its historical anthology of benga.
 
 ## Assessment
 Names Ramogi and his band in the history of benga.

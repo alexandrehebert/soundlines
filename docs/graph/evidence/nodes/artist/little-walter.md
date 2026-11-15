@@ -7,6 +7,7 @@ Graph ID `artist:little-walter`
 
 ## Sources checked
 - [Little Walter Foundation, About](https://littlewalterfoundation.org/about) — Describes his late-1940s move, work with Waters, “Juke” and his death in 1968.
+- [rhino.com](<https://www.rhino.com/article/little-walter>) — Rhino’s biography documents Walter’s harmonica work with Muddy Waters and the success of his instrumental “Juke.”
 
 ## Assessment
 The main career placement uses the move to Chicago.

@@ -61,7 +61,7 @@ interface GraphNode {
   category?: EventCategory                   // Events only (required). See "Events"
   significance?: 'landmark' | 'notable'      // Events only (optional). See "Events"
   confidence?: 'low' | 'medium' | 'high'     // Editorial confidence in the overall entry
-  sources?: string[]    // HTTPS URLs to relevant, credible sources
+  sources: string[]     // At least two distinct HTTPS URLs to relevant, credible sources
   phases?: ProminencePhase[]  // Genres, artists, and instruments only. See §5
   phaseNote?: string    // Required when `phases` is nonempty
 }
@@ -244,7 +244,7 @@ editorial weight used to filter the chronology, not a ranking.
   period; the event will appear in the undated section.
 - `name` is short and reads like a timeline caption ("MTV launches", "Napster is
   shut down", "Guido of Arezzo's staff notation").
-- `description`, `category`, and at least one `sources` URL are required.
+- `description`, `category`, and at least two distinct `sources` URLs are required.
   `family`, `kind`, and `phases` are not allowed on events.
 - Add a sourced event edge only when an existing node has a meaningful relationship;
   a standalone event is valid when no such relationship is documented. Use `shaped` only
@@ -375,8 +375,8 @@ Ids must be unique across all edges.
    Preserve explicit artist families when replacing or enriching existing nodes.
 7. **Every genre** has **at least 3** `key_artist_of` edges pointing to it, and
    **each of those edges has `sources`**.
-8. **Every node** has a nonblank `description`. **Every artist** has at least
-   one `sources` URL. Explain the artist’s musical role with a supported detail
+8. **Every node** has a nonblank `description` and at least two distinct HTTPS
+   URLs in its own `sources` array. Explain each artist’s musical role with a supported detail
    such as a recording, performance practice, ensemble, or scene.
 9. Every `key_artist_of` edge and every artist ↔ artist edge (`influences`,
    `member_of`, `collaborated_with`) has `sources`.
@@ -573,7 +573,8 @@ patch** in this exact shape:
       `key_artist_of` edges
 - [ ] Every new genre with a well-supported parent or influence connects by lineage;
       preserve independent traditions as roots rather than inventing ancestry
-- [ ] Every new artist has `sources`, `kind`, and at least one edge
+- [ ] Every new node has at least two distinct HTTPS URLs in its own `sources` array
+- [ ] Every new artist has `kind` and at least one edge
 - [ ] Every new or revised description has an evidence note and a translation
       in each locale overlay
 - [ ] Supply a supported `period`; flag inferred placements with `estimated: true` and an evidence-based `estimateNote`. Leave undated only when no defensible estimate is possible.

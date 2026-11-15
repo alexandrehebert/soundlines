@@ -13,3 +13,4 @@ The timeline year refers to the documented performance, rather than the origin o
 ## Sources
 
 - [realworldrecords.com](https://realworldrecords.com/releases/live-at-womad-1985/)
+- [theguardian.com](<https://www.theguardian.com/music/2020/jul/15/iconic-festival-sets-nusrat-fateh-ali-khan-womad-1985>) — The Guardian’s account of the set documents Khan’s 1985 WOMAD performance and discusses its impact on British audiences and qawwali performers.

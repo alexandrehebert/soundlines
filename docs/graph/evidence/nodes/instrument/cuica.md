@@ -8,6 +8,7 @@ Graph ID `instrument:cuica`
 ## Sources checked
 
 - [avpreservation.si.edu](https://avpreservation.si.edu/object/acm_2003.0032.0388)
+- [getty.edu](<https://www.getty.edu/vow/AATFullDisplay?find=fence&logic=AND&note=&subjectid=300214298>) — The Getty vocabulary identifies the cuíca as a Brazilian friction drum played by rubbing the stick attached to its membrane.
 
 ## Assessment
 

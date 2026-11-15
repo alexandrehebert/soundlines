@@ -8,6 +8,7 @@ Graph ID `instrument:qanun`
 ## Sources checked
 
 - [metmuseum.org](https://www.metmuseum.org/art/collection/search/500957)
+- [idildergisi.com](<https://idildergisi.com/makale/pdf/1675330339.pdf>) — Halili and Çoğulu measure how the kanun’s levers shift string pitch to produce the intervals used in makams.
 
 ## Assessment
 

@@ -8,6 +8,7 @@ Graph ID `instrument:riqq`
 ## Sources checked
 
 - [metmuseum.org](https://www.metmuseum.org/art/collection/search/500950)
+- [metmuseum.org](<https://www.metmuseum.org/art/collection/search/504421>) — The Met catalogues an Egyptian riqq and describes the membrane and metal jingles of this frame drum.
 
 ## Assessment
 

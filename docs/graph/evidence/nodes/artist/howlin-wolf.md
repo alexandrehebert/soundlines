@@ -7,6 +7,7 @@ Graph ID `artist:howlin-wolf`
 
 ## Sources checked
 - [Mississippi Blues Trail, Howlin’ Wolf](https://msbluestrail.org/blues-trail-markers/howlin-wolf) — Documents the early Delta career, his first guitar, Chicago recordings and death.
+- [memphismusichalloffame.com](<https://memphismusichalloffame.com/inductee/howlinwolf/>) — The Memphis Music Hall of Fame traces Burnett’s Mississippi blues background, first Chess recordings and move to Chicago.
 
 ## Assessment
 The marker documents his early performances and his career as a Chicago bandleader.

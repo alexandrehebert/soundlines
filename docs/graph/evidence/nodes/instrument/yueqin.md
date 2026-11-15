@@ -8,6 +8,7 @@ Graph ID `instrument:yueqin`
 ## Sources checked
 
 - [metmuseum.org](https://www.metmuseum.org/art/collection/search/500626)
+- [horniman.ac.uk](<https://www.horniman.ac.uk/object/1975.46/>) — The Horniman catalogue identifies the yueqin as a short-necked moon lute with a circular body.
 
 ## Assessment
 

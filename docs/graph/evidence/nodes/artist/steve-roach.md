@@ -7,6 +7,7 @@ Graph ID `artist:steve-roach`
 ## Sources read
 
 - [Official biography, written by ambient journalist Mike G](https://steveroach.com/about/) — identifies Roach as an electronic and ambient pioneer and discusses his sequencer-driven, floating and tribal-ambient recordings.
+- [projekt.com](<https://www.projekt.com/store/the-story-of-structures/>) — Projekt Records documents the making of Structures From Silence and Roach’s use of the Oberheim OB-8 synthesizer.
 
 ## Findings
 

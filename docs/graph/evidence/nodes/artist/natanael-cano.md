@@ -8,6 +8,7 @@ Graph ID `artist:natanael-cano`
 ## Sources checked
 
 - [Warner Music Group, Natanael Cano publishing announcement](https://www.wmg.com/news/warner-chappell-music-signs-publishing-deal-corridos-tumbados-pioneer-and-hitmaker-natanael) — Identifies the movement as a blend of Mexican corridos and U.S. trap and documents Cano’s 2019 breakthrough.
+- [music.apple.com](<https://music.apple.com/us/album/soy-el-diablo-remix-single/1484724417>) — Rancho Humilde and Rimas release metadata credits Natanael Cano and Bad Bunny on the 2019 remix of Soy el Diablo.
 
 ## Assessment
 Mexican singer and pioneer of corridos tumbados.

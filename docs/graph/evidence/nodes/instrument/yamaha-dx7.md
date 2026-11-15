@@ -8,6 +8,7 @@ Graph ID `instrument:yamaha-dx7`
 ## Sources checked
 
 - [yamaha.com](https://www.yamaha.com/en/about/experience/innovation-road/collection/detail/2010/)
+- [horniman.ac.uk](<https://www.horniman.ac.uk/object/M18-1992/>) — The Horniman catalogue documents the DX7 as a digital frequency modulation synthesizer.
 
 ## Assessment
 

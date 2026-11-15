@@ -7,6 +7,7 @@ Graph ID `artist:terry-francis`
 ## Sources read
 
 - [Fabric, resident biography: Terry Francis](https://www.fabriclondon.com/residents/terry-francis) — describes Francis's formative tech-house role, releases on Wiggle, Eye 4 Sound, Swag and Pagan, and residency from the club's opening.
+- [ra.co](<https://ra.co/exchange/368>) — In the Resident Advisor interview, Francis discusses the Wiggle parties and the rise of London tech house.
 
 ## Findings
 

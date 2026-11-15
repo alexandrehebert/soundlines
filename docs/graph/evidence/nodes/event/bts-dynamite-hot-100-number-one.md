@@ -13,3 +13,4 @@ The timeline year refers to the documented chart milestone, rather than the orig
 ## Sources
 
 - [www.billboard.com](https://www.billboard.com/charts/hot-100/2020-09-05/)
+- [korea.net](<https://www.korea.net/NewsFocus/Culture/view?articleId=189278>) — Korea.net records the debut of BTS’s English-language Dynamite at number one on the Billboard Hot 100 and identifies BTS as the first Korean act to reach the top spot.
