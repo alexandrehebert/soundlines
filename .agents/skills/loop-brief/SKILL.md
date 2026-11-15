@@ -16,7 +16,7 @@ produced the shipped hip-hop loop, so copy its structure and density.
 ```jsonc
 {
   "slug": "amapiano",                 // file name, asset name
-  "genre": "genre:amapiano",          // must exist in src/data/graph.json
+  "genre": "genre:amapiano",          // must exist in packages/catalogue/data/graph.json
   "asset": "public/loops/amapiano.wav", // optional; this is the default
   "bpm": 112,                         // integer felt-beat tempo, 60-180
   "meter": 4,                         // ACE-Step time signature: 2, 3, 4 or 6 (beats per bar)
@@ -28,6 +28,8 @@ produced the shipped hip-hop loop, so copy its structure and density.
   "notes": "why these choices, with sources"
 }
 ```
+
+Asset and arrangement source paths in the brief are relative to `apps/web/`.
 
 ## Procedure
 

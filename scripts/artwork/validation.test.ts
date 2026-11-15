@@ -16,15 +16,15 @@ function run(script: string, args: string[]) {
 
 beforeAll(() => {
   fixture = mkdtempSync(join(tmpdir(), 'soundlines-artwork-validation-'))
-  for (const file of ['src/data/graph.json', 'src/theme.ts', 'scripts/artwork/generate-instrument-artwork.py']) {
+  for (const file of ['packages/catalogue/data/graph.json', 'packages/design-tokens/src/familyColors.ts', 'scripts/artwork/generate-instrument-artwork.py']) {
     const target = join(fixture, file)
     mkdirSync(resolve(target, '..'), { recursive: true })
     cpSync(resolve(repository, file), target)
   }
   for (const kind of ['icons', 'banners', 'avatars', 'header-backgrounds']) {
-    const folder = join(fixture, 'public', `instrument-${kind}`)
+    const folder = join(fixture, 'apps/web/public', `instrument-${kind}`)
     mkdirSync(folder, { recursive: true })
-    cpSync(resolve(repository, 'public', `instrument-${kind}`, 'guitar.svg'), join(folder, 'guitar.svg'))
+    cpSync(resolve(repository, 'apps/web/public', `instrument-${kind}`, 'guitar.svg'), join(folder, 'guitar.svg'))
   }
 })
 
@@ -87,11 +87,11 @@ describe('icon overflow validation', () => {
     { shift: 6, clipped: true },
     { shift: -6, clipped: true },
   ])('detects canvas overflow for a shift of $shift px', ({ shift, clipped }) => {
-    const original = readFileSync(resolve(repository, 'public/instrument-icons/guitar.svg'), 'utf8')
+    const original = readFileSync(resolve(repository, 'apps/web/public/instrument-icons/guitar.svg'), 'utf8')
     const shifted = original
       .replace('<path ', `<g transform="translate(${shift} 0)"><path `)
       .replace('</svg>', '</g></svg>')
-    writeFileSync(join(fixture, 'public/instrument-icons/guitar.svg'), shifted)
+    writeFileSync(join(fixture, 'apps/web/public/instrument-icons/guitar.svg'), shifted)
     const result = run(artworkValidator, ['guitar', '--require-render', '--json'])
     expect(result.stderr).toBe('')
     const { findings } = JSON.parse(result.stdout)

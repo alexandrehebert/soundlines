@@ -1,7 +1,7 @@
 # Instrument artwork
 
 Every instrument has four SVGs (icon, banner, avatar, and detail-panel header
-background) in `public/instrument-*`. New or redrawn artwork follows one pipeline:
+background) in `apps/web/public/instrument-*`. New or redrawn artwork follows one pipeline:
 a sourced visual brief (`artwork-briefer`), the drawing (`artwork-illustrator`,
 preferably as a master in [the generator](../../scripts/artwork/generate-instrument-artwork.py)),
 a deterministic gate (`artwork-validator`), and a ship review (`artwork-reviewer`)

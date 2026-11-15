@@ -1,0 +1,10 @@
+packages:
+  - apps/*
+  - packages/*
+
+# These packages supply the native binaries used by the app, tests, and artwork gate.
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
+  esbuild: true
+  sharp: true

@@ -1,9 +1,12 @@
 node_modules
+.pnpm-store
 .next
 next-env.d.ts
 dist
+/apps/companion/dist-pages/
 storybook-static
 _site
+.turbo
 *.local
 .DS_Store
 .vercel

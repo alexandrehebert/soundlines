@@ -1,0 +1,16 @@
+{
+  "name": "@soundlines/catalogue",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./types": "./src/types.ts",
+    "./graph": "./src/graph.ts",
+    "./locales": "./src/locales.ts",
+    "./soundtrails": "./src/soundtrails.ts",
+    "./data/*.json": "./data/*.json",
+    "./genrePreviews": "./src/genrePreviews.ts",
+    "./graphLocale": "./src/graphLocale.ts",
+    "./translateGraph": "./src/translateGraph.ts",
+    "./phases": "./src/phases.ts"
+  }
+}

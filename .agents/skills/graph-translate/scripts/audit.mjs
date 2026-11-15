@@ -17,8 +17,8 @@ function readJson(path) {
   return JSON.parse(readFileSync(new URL(path, root), 'utf8'))
 }
 
-const graph = readJson('src/data/graph.json')
-const overlay = readJson(`src/data/graph.${locale}.json`)
+const graph = readJson('packages/catalogue/data/graph.json')
+const overlay = readJson(`packages/catalogue/data/graph.${locale}.json`)
 const requestedIdSet = new Set(requestedIds)
 const entries = []
 

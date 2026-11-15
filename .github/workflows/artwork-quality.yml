@@ -3,7 +3,7 @@ name: Artwork quality
 on:
   pull_request:
     paths:
-      - 'public/instrument-*/**'
+      - 'apps/web/public/instrument-*/**'
       - 'scripts/artwork/**'
       - 'docs/artwork/**'
       - '.github/agents/artwork-*.agent.md'
@@ -11,17 +11,18 @@ on:
       - '.agents/skills/artwork-*/**'
       - '.github/instructions/instrument-artwork.instructions.md'
       - '.github/workflows/artwork-quality.yml'
-      - 'src/data/graph.json'
-      - 'src/theme.ts'
-      - 'src/design-system/explorer/InstrumentIcon*'
-      - 'src/stories/InstrumentArtwork.stories.tsx'
-      - 'src/stories/fixtures/instrument-artwork-v1/**'
+      - 'packages/catalogue/data/graph.json'
+      - 'packages/design-tokens/src/familyColors.ts'
+      - 'apps/web/src/design-system/explorer/InstrumentIcon*'
+      - 'apps/web/src/stories/InstrumentArtwork.stories.tsx'
+      - 'apps/web/src/stories/fixtures/instrument-artwork-v1/**'
       - 'package.json'
-      - 'package-lock.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
   push:
     branches: [main]
     paths:
-      - 'public/instrument-*/**'
+      - 'apps/web/public/instrument-*/**'
       - 'scripts/artwork/**'
       - 'docs/artwork/**'
       - '.github/agents/artwork-*.agent.md'
@@ -29,13 +30,14 @@ on:
       - '.agents/skills/artwork-*/**'
       - '.github/instructions/instrument-artwork.instructions.md'
       - '.github/workflows/artwork-quality.yml'
-      - 'src/data/graph.json'
-      - 'src/theme.ts'
-      - 'src/design-system/explorer/InstrumentIcon*'
-      - 'src/stories/InstrumentArtwork.stories.tsx'
-      - 'src/stories/fixtures/instrument-artwork-v1/**'
+      - 'packages/catalogue/data/graph.json'
+      - 'packages/design-tokens/src/familyColors.ts'
+      - 'apps/web/src/design-system/explorer/InstrumentIcon*'
+      - 'apps/web/src/stories/InstrumentArtwork.stories.tsx'
+      - 'apps/web/src/stories/fixtures/instrument-artwork-v1/**'
       - 'package.json'
-      - 'package-lock.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
 
 permissions:
   contents: read
@@ -45,17 +47,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6
+        with:
+          standalone: true
       - uses: actions/setup-node@v7.1.0
         with:
           node-version-file: .nvmrc
-          cache: npm
+          cache: pnpm
       - uses: actions/setup-python@v7.1.0
         with:
           python-version: '3.12'
-      - run: npm ci
+      - run: pnpm install --frozen-lockfile
       - name: Lint artwork briefs
         run: node .agents/skills/artwork-brief/scripts/check-brief.mjs
       - name: Validate artwork and generator output
         run: node .agents/skills/artwork-validate/scripts/check-artwork.mjs --require-render
       - name: Test artwork validation and app icons
-        run: npx vitest run scripts/artwork/validation.test.ts src/design-system/explorer/InstrumentIcon.test.tsx
+        run: pnpm exec vitest run scripts/artwork/validation.test.ts apps/web/src/design-system/explorer/InstrumentIcon.test.tsx

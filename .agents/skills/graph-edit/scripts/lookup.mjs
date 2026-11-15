@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Query src/data/graph.json without loading the 2 MB file into an agent context.
+// Query packages/catalogue/data/graph.json without loading the 2 MB file into an agent context.
 //
 //   node .agents/skills/graph-edit/scripts/lookup.mjs <id>              node or edge, its edges, evidence, locale overlays
 //   node .agents/skills/graph-edit/scripts/lookup.mjs --search <text>   nodes whose id or name contains text
@@ -10,11 +10,11 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const ROOT = fileURLToPath(new URL('../../../../', import.meta.url))
-const graph = JSON.parse(readFileSync(join(ROOT, 'src/data/graph.json'), 'utf8'))
-const overlays = readdirSync(join(ROOT, 'src/data'))
+const graph = JSON.parse(readFileSync(join(ROOT, 'packages/catalogue/data/graph.json'), 'utf8'))
+const overlays = readdirSync(join(ROOT, 'packages/catalogue/data'))
   .flatMap((file) => {
     const locale = /^graph\.([a-z-]+)\.json$/i.exec(file)?.[1]
-    return locale ? [[locale, JSON.parse(readFileSync(join(ROOT, 'src/data', file), 'utf8'))]] : []
+    return locale ? [[locale, JSON.parse(readFileSync(join(ROOT, 'packages/catalogue/data', file), 'utf8'))]] : []
   })
 const coverage = new Map(
   readFileSync(join(ROOT, 'docs/graph/evidence/audits/graph-edge-coverage.csv'), 'utf8')

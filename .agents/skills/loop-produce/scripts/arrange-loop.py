@@ -18,7 +18,7 @@ def main():
     if mode not in ("prepare", "extract") or (mode == "extract" and len(outputs) != 2):
         raise SystemExit(__doc__)
     brief = json.loads(Path(brief_path).read_text())
-    source_path = Path(brief["arrangement"]["source"])
+    source_path = Path("apps/web") / brief["arrangement"]["source"]
     info = sf.info(source_path)
     if info.samplerate != 48000 or info.subtype != "PCM_16" or info.channels != 2:
         raise ValueError("Arrangement source must be stereo 48 kHz PCM16.")

@@ -1,20 +1,22 @@
 import { execFileSync } from 'node:child_process'
 import { readFileSync } from 'node:fs'
+import { cataloguePathAt, graphPath } from './cataloguePaths.mjs'
 
-const graphPath = 'src/data/graph.json'
-const git = (args: string[]) => execFileSync('git', args, { encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 })
+const git = (...args: string[]) => execFileSync('git', args, { encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 })
 type Graph = { nodes: { id: string; addedOn?: unknown }[] }
 
 function localBase() {
   try {
-    return git(['merge-base', 'HEAD', 'refs/remotes/origin/main']).trim()
+    return git('merge-base', 'HEAD', 'refs/remotes/origin/main').trim()
   } catch {
     return 'HEAD'
   }
 }
 
 const base = process.env.GRAPH_BASE_REF || localBase()
-const previous: Graph = JSON.parse(git(['show', `${base}:${graphPath}`]))
+const previousPath = cataloguePathAt(git, base)
+if (!previousPath) throw new Error(`No canonical graph found at ${base}`)
+const previous: Graph = JSON.parse(git('show', `${base}:${previousPath}`))
 const current: Graph = JSON.parse(readFileSync(graphPath, 'utf8'))
 const previousById = new Map(previous.nodes.map((node) => [node.id, node]))
 const today = new Date().toISOString().slice(0, 10)

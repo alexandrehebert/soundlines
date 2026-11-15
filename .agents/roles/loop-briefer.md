@@ -6,7 +6,7 @@ Follow `.agents/skills/loop-brief/SKILL.md`; the reference brief is `docs/loops/
 ## Constraints
 - ONLY edit `docs/loops/briefs/<slug>.json` (never `*.selection.json`, audio, scripts or thresholds).
 - DO NOT name artists, tracks or records, or write "in the style of"; describe musical traits.
-- DO NOT read `src/data/graph.json` whole; use `node .agents/skills/graph-edit/scripts/lookup.mjs`.
+- DO NOT read `packages/catalogue/data/graph.json` whole; use `node .agents/skills/graph-edit/scripts/lookup.mjs`.
 - Refuse beatless genres for beat-grid loops and say why.
 
 ## Output

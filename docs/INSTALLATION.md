@@ -14,16 +14,16 @@ reference platform for audio production.
 
 | Workflow | Required tools | Optional tools |
 | --- | --- | --- |
-| App development, tests, graph validation | Git, Node.js 26 and npm, browser | VS Code, Docker Desktop with Compose |
+| App development, tests, graph validation | Git, Node.js 26, pnpm, browser | VS Code, Docker Desktop with Compose |
 | Container-only app and Storybook | Git, Docker with Compose, browser | Host Node.js for running validation outside containers |
 | AI-assisted graph work | Core development tools, compatible coding assistant with terminal and web tools | GitHub CLI or GitHub MCP for issue/PR work |
-| Instrument artwork | Node.js/npm, Python 3, Sharp, browser/Storybook | SVG editor; no drawing application is required for the Python generator |
+| Instrument artwork | Node.js and pnpm, Python 3, Sharp, browser/Storybook | SVG editor; no drawing application is required for the Python generator |
 | Seamless loop production | Core tools, ACE-Step 1.5 environment, compatible hardware, required checkpoints | FFmpeg for independent inspection |
 | Catalogue preview production | Audio environment, Turbo and 1.7B checkpoints, macOS `afconvert` and `afinfo` | Audiobox Aesthetics and FFmpeg for review |
 | Deployment administration | Vercel account and Vercel CLI or MCP | GitHub CLI |
 
 Next.js, React, TypeScript, Vitest, oxlint, Tailwind and Storybook are installed
-by `npm ci`. Do not install separate global copies.
+by `pnpm install --frozen-lockfile`. Do not install separate global copies.
 
 ## 2. Install the core tools
 
@@ -84,10 +84,11 @@ Skip cloning if the repository is already checked out.
 ```bash
 git clone https://github.com/alexandrehebert/soundlines.git
 cd soundlines
-npm ci
+npm install --global pnpm@11.25.0   # once, if needed
+pnpm install --frozen-lockfile
 ```
 
-`npm ci` uses the committed lockfile. It does not install the Python audio
+`pnpm install --frozen-lockfile` uses the committed lockfile. It does not install the Python audio
 environment or global agent integrations.
 
 To enable the repository's staged checks and learn how to run the optional
@@ -229,8 +230,8 @@ python3 --version
 Preserve that PATH in your shell profile if needed. On other platforms install
 Python 3.12 and ensure the `python3` command is available to the gate.
 
-Sharp renders SVGs and PNG review sheets. It is normally installed transitively
-with Next.js by `npm ci`. Verify the actual installation:
+Sharp renders SVGs and PNG review sheets. It is a root development dependency
+installed by `pnpm install --frozen-lockfile`. Verify the actual installation:
 
 ```bash
 node -e "import('sharp').then(({default: sharp}) => console.log(sharp.versions))"
@@ -241,9 +242,7 @@ node .agents/skills/artwork-validate/scripts/check-artwork.mjs --require-render
 The gate invokes `python3` for generator drift checks. `--require-render`
 prevents missing Sharp from reducing validation to non-rendered checks.
 If the import fails, first check the Node version and restore the lockfile
-installation with `npm ci`. The gate documents `npm install --no-save sharp`
-as a local missing-dependency workaround; do not use it to replace a broken
-baseline install or silently change the shared dependency policy.
+installation with `pnpm install --frozen-lockfile`.
 
 Create sheets outside the repository and run the relevant tests:
 
@@ -251,7 +250,7 @@ Create sheets outside the repository and run the relevant tests:
 export ARTWORK_STAGE_ROOT="$HOME/.cache/soundlines-artwork"
 node .agents/skills/artwork-validate/scripts/check-artwork.mjs viola \
   --require-render --png-dir "$ARTWORK_STAGE_ROOT/viola"
-npx vitest run scripts/artwork/validation.test.ts src/design-system/explorer/InstrumentIcon.test.tsx
+pnpm exec vitest run scripts/artwork/validation.test.ts apps/web/src/design-system/explorer/InstrumentIcon.test.tsx
 ```
 
 Expected output includes findings and PNG sheets. A gate failure can indicate
@@ -414,7 +413,7 @@ under `LOOP_STAGE_ROOT`. Stop the server you started after testing:
 bash .agents/skills/loop-produce/scripts/ace-server.sh stop
 node .agents/skills/loop-brief/scripts/check-brief.mjs docs/loops/briefs/turntable-hip-hop.json
 "$ACESTEP_PYTHON" .agents/skills/loop-validate/scripts/check-loop.py \
-  docs/loops/briefs/turntable-hip-hop.json public/loops/turntable-hip-hop.wav \
+  docs/loops/briefs/turntable-hip-hop.json apps/web/public/loops/turntable-hip-hop.wav \
   --png-dir "$LOOP_STAGE_ROOT/turntable-hip-hop-install-check/png"
 ```
 
@@ -526,7 +525,7 @@ artwork generation.
 
 Neon and Inngest tools appearing in a chat do not mean Soundlines uses those
 services. Likewise, Vercel/Pylance/plugin skills provided by an editor profile
-are not installed by this repository's `npm ci`.
+are not installed by this repository's `pnpm install --frozen-lockfile`.
 
 Use the host's customization/MCP interface and the publisher's official setup,
 then verify one read-only tool call. Configuration destinations and formats
@@ -543,7 +542,7 @@ required permissions and request approval for destructive operations.
 
 | Symptom | Check / action |
 | --- | --- |
-| Wrong Node or engine warning | Check `node --version` in the actual terminal/container; host needs Node 26, current Compose image is Node 22 |
+| Wrong Node or engine warning | Check `node --version` in the actual terminal/container. Both local development and the Compose image use Node 26. |
 | `docker compose` cannot connect | Start Docker and verify `docker version`; installing the CLI alone does not start the daemon |
 | Port already in use | Inspect existing Compose/server health and reuse it; do not start duplicate services or kill processes by name |
 | Browser tool fails but `curl` succeeds | Check the browser host's connectivity; this is not proof the app is down |

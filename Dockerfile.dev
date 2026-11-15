@@ -1,0 +1,5 @@
+FROM node:26-alpine
+
+WORKDIR /workspace
+COPY package.json /tmp/soundlines-package.json
+RUN npm install --global "$(node --print 'require("/tmp/soundlines-package.json").packageManager')"

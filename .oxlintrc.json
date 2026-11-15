@@ -7,7 +7,7 @@
   },
   "overrides": [
     {
-      "files": ["app/**/page.tsx", "app/**/layout.tsx"],
+      "files": ["apps/web/app/**/page.tsx", "apps/web/app/**/layout.tsx"],
       "rules": {
         "react/only-export-components": ["warn", {
           "allowConstantExport": true,

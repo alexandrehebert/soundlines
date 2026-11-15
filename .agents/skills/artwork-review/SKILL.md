@@ -13,7 +13,7 @@ finding to its owner.
 ## Inputs
 
 `docs/artwork/briefs/<slug>.json`, the four SVGs, `$STAGE/<slug>.png`, `$STAGE/icons.png`, the
-previous version in `src/stories/fixtures/instrument-artwork-v1/` when redrawn, and the diff.
+previous version in `apps/web/src/stories/fixtures/instrument-artwork-v1/` when redrawn, and the diff.
 
 ## Procedure
 

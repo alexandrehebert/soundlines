@@ -1,6 +1,6 @@
 # Italian (`it`) style for graph overlays
 
-Overlay file: `src/data/graph.it.json`.
+Overlay file: `packages/catalogue/data/graph.it.json`.
 
 - Write natural editorial Italian, preserving facts, dates, qualifications and confidence.
 - Use established Italian names for places and instruments (Londra, chitarra elettrica, corno).

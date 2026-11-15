@@ -1,0 +1,6 @@
+@import "tailwindcss" source(none);
+@import "./src/design-system/foundations/index.css";
+
+@source "./app";
+@source "./src";
+@source "../../packages/ui-web/src";

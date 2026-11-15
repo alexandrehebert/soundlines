@@ -81,6 +81,45 @@ describe('deterministic changelog', () => {
     expect(buildChangelog(cwd).data.entries[0].graph?.nodes).toEqual({ added: [], updated: [], removed: [] })
   })
 
+  it('reads the graph and overlays across the catalogue move without recording false edits', () => {
+    const { cwd, write, commit, git } = fixture()
+    const graph = { nodes: [{ id: 'genre:disco', name: 'Disco' }], edges: [] }
+    const overlay = { nodes: { 'genre:disco': { description: 'Origine' } } }
+    write('src/data/graph.json', graph)
+    write('src/data/graph.fr.json', overlay)
+    commit('Original catalogue')
+
+    git('rm', 'src/data/graph.json', 'src/data/graph.fr.json')
+    write('packages/catalogue/data/graph.json', graph)
+    write('packages/catalogue/data/graph.fr.json', overlay)
+    commit('Move catalogue')
+
+    write('packages/catalogue/data/graph.fr.json', { nodes: { 'genre:disco': { description: 'Historique' } } })
+    commit('Update French overlay')
+    const [edited, moved] = buildChangelog(cwd).data.entries
+    expect(moved.graph?.nodes).toEqual({ added: [], updated: [], removed: [] })
+    expect(moved.entities).toEqual([])
+    expect(edited.entities).toEqual([{ category: 'graph', items: [{ id: 'genre:disco', name: 'Disco', status: 'updated' }] }])
+  })
+
+  it('ignores asset relocations and records edits at the new path', () => {
+    const { cwd, write, commit, git } = fixture()
+    write('public/genre-previews/disco.m4a', 'first take')
+    write('public/instrument-icons/guitar.svg', '<svg/>')
+    commit('Original assets')
+
+    git('rm', 'public/genre-previews/disco.m4a', 'public/instrument-icons/guitar.svg')
+    write('apps/web/public/genre-previews/disco.m4a', 'first take')
+    write('apps/web/public/instrument-icons/guitar.svg', '<svg/>')
+    commit('Move public assets')
+
+    write('apps/web/public/genre-previews/disco.m4a', 'second take')
+    commit('Replace preview')
+    const [edited, moved] = buildChangelog(cwd).data.entries
+    expect(moved.entities).toEqual([])
+    expect(edited.entities).toEqual([{ category: 'previews', items: [{ id: 'genre:disco', name: 'Disco', status: 'updated' }] }])
+  })
+
   it('names changed assets from historical entities, deduplicates variants and includes both old and new relationship endpoints', () => {
     const { cwd, write, commit } = fixture()
     const nodes = [
@@ -209,10 +248,10 @@ describe('deterministic changelog', () => {
     const run = (...args: string[]) => spawnSync(process.execPath, [script, ...args], { cwd, encoding: 'utf8' })
     expect(run().status).toBe(0)
     expect(run('--check').status).toBe(0)
-    write('public/open-data-changelog.json', 'stale')
+    write('apps/web/public/open-data-changelog.json', 'stale')
     const assetCheck = run('--check')
     expect(assetCheck.status).not.toBe(0)
-    expect(assetCheck.stderr).toContain('public/open-data-changelog.json is stale')
+    expect(assetCheck.stderr).toContain('apps/web/public/open-data-changelog.json is stale')
     expect(run().status).toBe(0)
     expect(run('--check').status).toBe(0)
     commit('Update generated changelog')
@@ -238,6 +277,9 @@ describe('deterministic changelog', () => {
     ['public/instrument-icons/a.svg', 'artwork'],
     ['.github/instructions/instrument-artwork.instructions.md', 'artwork'],
     ['site/src/locales/en.ts', 'site'],
+    ['apps/companion/src/locales/en.ts', 'site'],
+    ['packages/catalogue/src/types.ts', 'graph'],
+    ['packages/ui-web/src/SegmentedControl.tsx', 'app'],
     ['.github/workflows/graph-quality.yml', 'workflow'],
     ['.agents/skills/graph-review/SKILL.md', 'workflow'],
     ['.claude/agents/graph-reviewer.md', 'workflow'],

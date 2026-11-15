@@ -1,0 +1,46 @@
+{
+  "$schema": "https://turborepo.dev/schema.json",
+  "globalDependencies": [
+    "tsconfig.base.json",
+    "apps/web/public/**",
+    "scripts/**",
+    "docs/graph/evidence/**",
+    "docs/loops/briefs/**",
+    ".agents/roles/**",
+    ".agents/skills/**"
+  ],
+  "tasks": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "dist/**",
+        "storybook-static/**"
+      ],
+      "env": [
+        "NEXT_PUBLIC_*",
+        "VITE_*"
+      ]
+    },
+    "source": {
+      "dependsOn": ["^source"]
+    },
+    "@soundlines/storybook#build": {
+      "dependsOn": ["^source"],
+      "outputs": ["storybook-static/**"],
+      "env": ["NEXT_PUBLIC_*"]
+    },
+    "typecheck": {
+      "dependsOn": [
+        "^typecheck"
+      ]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

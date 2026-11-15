@@ -117,7 +117,7 @@ localized pages with shared navigation:
 navigating between them must not reset or redirect into a chronology. The dataset
 dashboard and statistics dialog share chart components and derive their figures
 from the same graph index. Changelog data loads only on its own page, from the
-compact generated `public/open-data-changelog.json` artifact. The companion site's
+compact generated `apps/web/public/open-data-changelog.json` artifact. The companion site's
 former query and changelog pages hand off to their corresponding app pages.
 
 ## The timeline

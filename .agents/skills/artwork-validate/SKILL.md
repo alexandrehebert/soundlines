@@ -19,7 +19,7 @@ node $C <slug> [<slug> ...] --png-dir $STAGE   # selected instruments + review s
 node $C --json                           # machine-readable findings
 node $C --require-render                 # fail if sharp is unavailable (used in CI)
 node .agents/skills/artwork-brief/scripts/check-brief.mjs   # brief lint
-npx vitest run scripts/artwork/validation.test.ts src/design-system/explorer/InstrumentIcon.test.tsx
+npx vitest run scripts/artwork/validation.test.ts apps/web/src/design-system/explorer/InstrumentIcon.test.tsx
 ```
 
 Exit code 1 means at least one FAIL. Rendered checks and sheets use `sharp` (installed with Next); if it
@@ -37,7 +37,7 @@ detail-panel title, avatar, icon mask at 96/48/24/16 px in the family colour and
 | `forbidden` | FAIL | script, style, image, foreignObject, event handler, external or `data:` ref |
 | `ids`, `refs` | FAIL | duplicate id, or `url(#id)` with no definition in the same file |
 | `size` | FAIL | icon > 2 KB, others > 20 KB (set max 16.6 KB) → simplify paths, round coordinates |
-| `palette` | FAIL | family accent from `src/theme.ts` absent (strings also accepts generator `#d9a067`) |
+| `palette` | FAIL | family accent from `packages/design-tokens/src/familyColors.ts` absent (strings also accepts generator `#d9a067`) |
 | `backdrop`, `opaque` | FAIL | banner/avatar must paint `#0b1020` over the whole canvas; header must not |
 | `reveal`, `legibility` | FAIL | header without mask, or mean alpha of x < 150 px > 0.02 (title area) |
 | `presence` | WARN | header art mean alpha x ≥ 220 px < 0.05 (set min 0.066) → reviewer judges |
@@ -47,7 +47,7 @@ detail-panel title, avatar, icon mask at 96/48/24/16 px in the family colour and
 | `overflow` | FAIL | ink outside the 24×24 icon canvas on a padded render → reframe the whole icon |
 | `text` | WARN | text outside the electronic family (only hardware panel labels are expected) |
 | `generator` | FAIL | a generated file differs from `generate-instrument-artwork.py --check` → edit the master, regenerate |
-| `family` | FAIL | the node's family has no colour in `src/theme.ts` → `graph-edit` |
+| `family` | FAIL | the node's family has no colour in `packages/design-tokens/src/familyColors.ts` → `graph-edit` |
 
 Reference: the shipped set (72 instruments, 23 generated) passes with 0 FAIL, 0 WARN.
 
@@ -55,7 +55,7 @@ Reference: the shipped set (72 instruments, 23 generated) passes with 0 FAIL, 0 
 
 - Never loosen a threshold to pass one asset. Change limits only with new calibration across the set, in
   `check-artwork.mjs`, with this table and the reference line updated.
-- The gate complements, not replaces, `src/design-system/explorer/InstrumentIcon.test.tsx` (icon per instrument).
+- The gate complements, not replaces, `apps/web/src/design-system/explorer/InstrumentIcon.test.tsx` (icon per instrument).
 
 ## Report
 

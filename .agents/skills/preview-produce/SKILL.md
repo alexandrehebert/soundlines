@@ -15,4 +15,4 @@ For retakes set `ACESTEP_PREVIEW_RETAKE=1`, explicit genre arguments, a fresh `A
 
 Hand staged files, briefs, configuration and progress paths to preview-review. Stop only servers you started, including on failure. Do not claim to have listened or to have matched quality merely because settings match.
 
-Genres added by graph contributions are listed in `PENDING_GENRE_PREVIEWS` (`src/data/genrePreviews.ts`). When one of their previews ships to `public/genre-previews/`, remove its id from that set in the same change; `src/data/genreSamples.test.ts` fails if the list and the shipped files disagree.
+Genres added by graph contributions are listed in `PENDING_GENRE_PREVIEWS` (`packages/catalogue/src/genrePreviews.ts`). When one of their previews ships to `apps/web/public/genre-previews/`, remove its id from that set in the same change; `packages/catalogue/src/genreSamples.test.ts` fails if the list and the shipped files disagree.

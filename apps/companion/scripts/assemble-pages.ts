@@ -1,0 +1,11 @@
+import { accessSync, cpSync, rmSync } from 'node:fs'
+
+const site = new URL('../dist/', import.meta.url)
+const storybook = new URL('../../storybook/dist/public/', import.meta.url)
+const pages = new URL('../dist-pages/', import.meta.url)
+
+accessSync(new URL('index.html', site))
+accessSync(new URL('index.html', storybook))
+rmSync(pages, { recursive: true, force: true })
+cpSync(site, pages, { recursive: true })
+cpSync(storybook, new URL('storybook/', pages), { recursive: true })

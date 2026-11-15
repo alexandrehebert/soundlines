@@ -10,19 +10,30 @@ audio tooling, see the [installation guide](./INSTALLATION.md).
 ## Commands
 
 ```bash
-npm run dev              # Next.js defaults to http://localhost:3000
-npm test
-npm run lint
-npx tsc --noEmit -p tsconfig.build.json
-npm run build
-npm run start
-npm run storybook
-npm run build-storybook
+pnpm dev              # Next.js defaults to http://localhost:3000
+pnpm test
+pnpm lint
+pnpm typecheck
+pnpm build            # builds web, companion, and Storybook through Turborepo
+pnpm build:web        # builds the Next.js app only
+pnpm start
+pnpm storybook
+pnpm build-storybook
 ```
 
-The [Vercel configuration](../vercel.json) selects the Next.js framework preset.
-Do not configure a static `dist` output directory: App Router pages render on
-the server.
+For Vercel, set **Root Directory** to `apps/web` and enable **Include source
+files outside of the Root Directory** so the build can read workspace packages
+and the source assets. Set `ENABLE_EXPERIMENTAL_COREPACK=1` in the build settings
+to use the pnpm version pinned in the root package manifest. The [Vercel configuration](../apps/web/vercel.json)
+selects the Next.js preset. Validate the change on a preview project with this
+root before switching the production project. Check a localized atlas route,
+`/api/mcp`, a public asset URL, and a legacy locale redirect.
+
+Put local Next.js environment variables in `apps/web/.env.local`. If you
+already have a root `.env.local`, move the Next.js settings into the app's file.
+
+Edit artwork and audio in `apps/web/public/`. Next.js serves that directory
+directly at the site's base URL.
 
 ## Git hooks
 
@@ -39,11 +50,11 @@ git config --local core.hooksPath .githooks
   newly introduced whitespace errors and conflict markers in staged changes.
   It uses host Git, including when the app runs in Compose. Run the command
   manually after staging if the hook is inactive.
-- **Before pushing**, `npm run check:push` runs the app TypeScript check and
-  `npm test`. Run it manually from the repository root, or run
+- **Before pushing**, `pnpm check:push` runs the app TypeScript check and
+  `pnpm test`. Run it manually from the repository root, or run
   `SOUNDLINES_PRE_PUSH=1 git push` from a POSIX shell with the hooks enabled.
   An ordinary push skips this check. It uses the current checkout, including
-  any uncommitted edits, and requires host Node.js 26 and dependencies from `npm ci`.
+  any uncommitted edits, and requires host Node.js 26 and dependencies from `pnpm install --frozen-lockfile`.
 
 GitHub Actions checks the committed changes. Use the validation commands in
 the [documentation index](./README.md) for the parts of the project you changed.
@@ -63,7 +74,7 @@ Compose serves the app at `http://localhost:5173`, Storybook at
 `http://localhost:5174/soundlines/` on the local machine. Set `STORYBOOK_PORT`
 or `SITE_PORT` to change those host ports, for example
 `STORYBOOK_PORT=6010 docker compose up -d`. The services use
-Node 26 and separate dependency volumes. The containers install their own
+Node 26 and container-only dependency volumes. The dependency service installs
 dependencies. Run Git-based graph tooling and Python artwork checks on the host.
 Compose also uses these host ports for the links between the explorer, companion
 and Storybook. Recreate the
@@ -102,19 +113,19 @@ provides links without JavaScript; the app link opens the selected language.
 
 | Path | Purpose |
 | --- | --- |
-| [site/src/content.ts](../site/src/content.ts) | Page, workflow and example types; resolves `{figure}` placeholders |
-| [site/src/locales/](../site/src/locales/) | English, French, German, Italian and Spanish page content and interface text |
-| [site/scripts/stats.ts](../site/scripts/stats.ts) | Figures shown on the companion, computed at build time from the graph, evidence, assets, agents and skills |
-| [site/src/components/](../site/src/components/) | Page layout, workflow diagrams, examples and the artwork and loop samples taken from `public/` |
-| [site/src/components/Previews.tsx](../site/src/components/Previews.tsx) | Small preview of what each workflow step produces, ending with the real result (app screenshot, artwork, loop) |
-| [site/src/components/blueprint.ts](../site/src/components/blueprint.ts) | Extracts the saxophone's generated outline, canvas and curve handles for the vector sketch |
-| [site/src/assets/screens/](../site/src/assets/screens/) | App screenshots per locale used as final results; retake them when the explorer UI changes noticeably |
-| [site/scripts/waveform.ts](../site/scripts/waveform.ts) | Reads the shipped loop at build time to draw its real waveform |
-| [site/src/components/playback.ts](../site/src/components/playback.ts) | Keeps the waveform cursor and played color aligned with the audio element's media clock, including seeks, pauses and loop restarts |
-| [site/src/routes.ts](../site/src/routes.ts) | Locale and page URLs (`/soundlines/<locale>/<page>/`) |
-| [site/src/entry-client.tsx](../site/src/entry-client.tsx), [site/src/entry-server.tsx](../site/src/entry-server.tsx) | Hydration and prerendering entries |
-| [site/scripts/build.ts](../site/scripts/build.ts) | Client + SSR build, page prerendering, sitemap, language-aware entry page and internal link check |
-| [site/src/site.test.tsx](../site/src/site.test.tsx) | Locale parity, repository links, routes and rendered pages |
+| [apps/companion/src/content.ts](../apps/companion/src/content.ts) | Page, workflow and example types; resolves `{figure}` placeholders |
+| [apps/companion/src/locales/](../apps/companion/src/locales/) | English, French, German, Italian and Spanish page content and interface text |
+| [apps/companion/scripts/stats.ts](../apps/companion/scripts/stats.ts) | Figures shown on the companion, computed at build time from the graph, evidence, assets, agents and skills |
+| [apps/companion/src/components/](../apps/companion/src/components/) | Page layout, workflow diagrams, examples and the artwork and loop samples taken from `apps/web/public/` |
+| [apps/companion/src/components/Previews.tsx](../apps/companion/src/components/Previews.tsx) | Small preview of what each workflow step produces, ending with the real result (app screenshot, artwork, loop) |
+| [apps/companion/src/components/blueprint.ts](../apps/companion/src/components/blueprint.ts) | Extracts the saxophone's generated outline, canvas and curve handles for the vector sketch |
+| [apps/companion/src/assets/screens/](../apps/companion/src/assets/screens/) | App screenshots per locale used as final results; retake them when the explorer UI changes noticeably |
+| [apps/companion/scripts/waveform.ts](../apps/companion/scripts/waveform.ts) | Reads the shipped loop at build time to draw its real waveform |
+| [apps/companion/src/components/playback.ts](../apps/companion/src/components/playback.ts) | Keeps the waveform cursor and played color aligned with the audio element's media clock, including seeks, pauses and loop restarts |
+| [apps/companion/src/routes.ts](../apps/companion/src/routes.ts) | Locale and page URLs (`/soundlines/<locale>/<page>/`) |
+| [apps/companion/src/entry-client.tsx](../apps/companion/src/entry-client.tsx), [apps/companion/src/entry-server.tsx](../apps/companion/src/entry-server.tsx) | Hydration and prerendering entries |
+| [apps/companion/scripts/build.ts](../apps/companion/scripts/build.ts) | Client + SSR build, page prerendering, sitemap, language-aware entry page and internal link check |
+| [apps/companion/src/site.test.tsx](../apps/companion/src/site.test.tsx) | Locale parity, repository links, routes and rendered pages |
 
 Raw takes are not stored in the repository, so the complete-take waveform in
 the audio selection preview is schematic. The highlighted section and the
@@ -131,10 +142,10 @@ they follow the data. Keep workflow claims and examples aligned with the
 technical guides; documentation changes are not automatically imported.
 
 ```bash
-npm run dev:site       # native companion at the URL Vite prints, under /soundlines/
-npm run test:site      # type-check and tests
-npm run build:site     # prerendered site in the ignored _site/ directory
-npm run preview:site   # serve _site/ under /soundlines/ (http://localhost:4173/soundlines/)
+pnpm dev:site       # native companion at the URL Vite prints, under /soundlines/
+pnpm test:site      # type-check and tests
+pnpm build:site     # prerendered site in apps/companion/dist/
+pnpm preview:site   # serve the site at http://localhost:4173/soundlines/
 ```
 
 The build fails if a page links to a missing page, asset or anchor. Only the
@@ -151,7 +162,7 @@ from `main`. The `github-pages` environment may require approval depending on
 repository settings. The public URL becomes available only after deployment.
 
 The app's source and companion URLs are in
-[src/projectLinks.ts](../src/projectLinks.ts), which the companion also uses for
+[packages/project-config/src/index.ts](../packages/project-config/src/index.ts), which the companion also uses for
 its links and its `/soundlines/` base path. If moving the repository or site,
 update that file, the README links, and this guide.
 
@@ -161,12 +172,12 @@ The app displays asset history under `/<locale>/data/changelog`.
 
 The generator produces [CHANGELOG.md](../CHANGELOG.md),
 [docs/changelog/changelog.json](./changelog/changelog.json), and
-[public/open-data-changelog.json](../public/open-data-changelog.json).
+[apps/web/public/open-data-changelog.json](../apps/web/public/open-data-changelog.json).
 
 ```bash
-npm run changelog             # regenerate all outputs from committed history
-npm run changelog -- --check  # verify the tracked outputs against committed history
-npm run test:changelog        # test the generator with fixture repositories
+pnpm changelog             # regenerate all outputs from committed history
+pnpm changelog --check  # verify the tracked outputs against committed history
+pnpm test:changelog        # test the generator with fixture repositories
 ```
 
 The [generator](../scripts/changelog/generate.ts) traverses all commits reachable
@@ -177,7 +188,7 @@ differ from all of them (for example a conflict resolution); clean merges are
 omitted because their branch commits are already listed. Every changed file
 is categorized: graph/evidence/locales, previews, loops, artwork, explorer,
 companion, workflow/tooling, documentation or other. Audio's former
-`public/audio/` path is classified as previews. Moves appear as removal plus
+`public/audio/` path is classified as previews. File moves appear as removal plus
 addition. Graph snapshots yield added, updated and removed node and edge IDs;
 object-key or entity-list reordering does not count as an entity edit.
 Exact field changes and binary changes remain available through commit links.
@@ -214,22 +225,23 @@ No AI credentials, external service or additional dependency is required.
 
 ## Storybook
 
-Run `npm run storybook` and open the local URL printed by the command (port
+Run `pnpm storybook` and open the local URL printed by the command (port
 6006 by default). If that port is in use, run
-`npm run storybook -- --port 6007` instead. `npm run build-storybook` creates a
-static, shareable build in `storybook-static/`.
+`pnpm storybook --port 6007` instead. `pnpm build-storybook` creates a
+static, shareable build in `apps/storybook/storybook-static/`.
 
 The companion workflow also publishes the full catalogue in browse-only mode at
 <https://alexandrehebert.github.io/soundlines/storybook/>, linked from the
-"How it's built" page. `npm run build-storybook:public` (run after
-`npm run build:site`) builds it into `_site/storybook/` with
-`STORYBOOK_PUBLIC=1`. Both builds use the same stories and static assets configured
-in [.storybook/main.ts](../.storybook/main.ts). In the public build,
-[.storybook/manager.ts](../.storybook/manager.ts) hides the addon panel,
+"How it's built" page. `pnpm build-storybook:public` builds into
+`apps/storybook/dist/public/` with `STORYBOOK_PUBLIC=1`.
+`pnpm build:pages` assembles the companion and public Storybook into
+`apps/companion/dist-pages/`. Both Storybook builds use the same stories and static assets configured
+in [.storybook/main.ts](../apps/storybook/.storybook/main.ts). In the public build,
+[.storybook/manager.ts](../apps/storybook/.storybook/manager.ts) hides the addon panel,
 toolbar and shortcuts. Because it is served below `/soundlines/storybook/`,
-components must build URLs to files in `public/` with `publicAsset()` from
-[src/publicAsset.ts](../src/publicAsset.ts), never a bare `/path`. Preview it
-with `npm run preview:site` and open `/soundlines/storybook/`.
+components must build URLs to files in `apps/web/public/` with `publicAsset()` from
+[src/publicAsset.ts](../apps/web/src/publicAsset.ts), never a bare `/path`. Preview it
+with `pnpm preview:site --outDir dist-pages` and open `/soundlines/storybook/`.
 
 The catalogue groups stories under Foundations, Navigation, Controls, Overlays, Visualizations,
 Playback, and Screens. The segmented control and modal panel have standalone
@@ -242,18 +254,18 @@ Drag the header down to dismiss Modal Panel, Timeline Options, Search, or Soundt
 and collapses or closes on a downward swipe. Its gesture and scroll behavior are
 covered by **Screens / Explorer / Mobile Detail Swipes**.
 
-The official [dark favicon](../public/favicon.svg) and [light favicon](../public/favicon-light.svg)
+The official [dark favicon](../apps/web/public/favicon.svg) and [light favicon](../apps/web/public/favicon-light.svg)
 share the same still waveform frame. The app selects the favicon and header
 palette for its theme; the dark asset is also used by the companion site and
 Storybook. The **Foundations / Favicon** story shows both still variants and
 compares animated previews with the previous vinyl icon and the Soundline concept at 16,
 24, and 32 pixels and on light and dark browser tabs. The browser favicon itself
-does not animate; the header logo ([SoundlinesMark](../src/design-system/navigation/SoundlinesMark.tsx))
+does not animate; the header logo ([SoundlinesMark](../apps/web/src/design-system/navigation/SoundlinesMark.tsx))
 plays the same wave motion on hover, focus and scroll, using the shared model in
-[soundlinesWave.ts](../src/design-system/navigation/soundlinesWave.ts).
+[soundlinesWave.ts](../apps/web/src/design-system/navigation/soundlinesWave.ts).
 Preview animations can be paused and are disabled when reduced motion is
 requested. The studies are standalone SVGs in
-[src/stories/fixtures/favicon-concepts/](../src/stories/fixtures/favicon-concepts/).
+[apps/web/src/stories/fixtures/favicon-concepts/](../apps/web/src/stories/fixtures/favicon-concepts/).
 
 Stories use the real music graph with an isolated, in-memory explorer provider.
 Selections, search, related-node navigation, view changes, panning, and zoom

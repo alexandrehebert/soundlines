@@ -1,0 +1,9 @@
+{
+  "name": "@soundlines/design-tokens",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@soundlines/catalogue": "workspace:*"
+  }
+}

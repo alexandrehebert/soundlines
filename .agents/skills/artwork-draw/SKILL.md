@@ -1,6 +1,6 @@
 ---
 name: artwork-draw
-description: 'Draw or redraw the four SVGs of a Soundlines instrument (public/instrument-icons, -banners, -avatars, -header-backgrounds) from an approved brief, preferably as a master in scripts/artwork/generate-instrument-artwork.py, following the house style (canvases, family palette, -9° tilt, header reveal mask, mask-safe icons). Use when adding artwork for a new instrument node, redrawing an inaccurate one, fixing artwork validation failures, or applying artwork review findings.'
+description: 'Draw or redraw the four SVGs of a Soundlines instrument (apps/web/public/instrument-icons, -banners, -avatars, -header-backgrounds) from an approved brief, preferably as a master in scripts/artwork/generate-instrument-artwork.py, following the house style (canvases, family palette, -9° tilt, header reveal mask, mask-safe icons). Use when adding artwork for a new instrument node, redrawing an inaccurate one, fixing artwork validation failures, or applying artwork review findings.'
 argument-hint: 'Instrument slug, plus validation or review findings to address'
 ---
 
@@ -21,8 +21,8 @@ ship decision.
    `node .agents/skills/artwork-validate/scripts/check-artwork.mjs <slug> <neighbour> --png-dir $STAGE`
    with `STAGE=${ARTWORK_STAGE_ROOT:-~/.cache/soundlines-artwork}/<slug>` and open the PNGs.
 2. **Keep the previous version for review** when redrawing: copy the four current files to
-   `src/stories/fixtures/instrument-artwork-v1/instrument-<kind>/<slug>.svg` (only if not already there)
-   and add the slug to `revisedInstruments` in `src/stories/InstrumentArtwork.stories.tsx`, so the
+   `apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-<kind>/<slug>.svg` (only if not already there)
+   and add the slug to `revisedInstruments` in `apps/web/src/stories/InstrumentArtwork.stories.tsx`, so the
    Storybook *Before & after* story shows both.
 3. **Draw the master.**
    - `method: generator`: add or edit the `ART['<slug>']` entry (draw function, banner scale, icon
@@ -36,7 +36,7 @@ ship decision.
    `iconFeatures` at 24 and 16 px, nothing in `avoid`. Iterate until all hold.
 5. **Gate.** `node .agents/skills/artwork-validate/scripts/check-artwork.mjs <slug> --png-dir $STAGE`
    must PASS (WARNs explained), then the full set without arguments (orphans, generator drift).
-6. **Tests.** `npx vitest run src/design-system/explorer/InstrumentIcon.test.tsx` (every instrument has an icon).
+6. **Tests.** `npx vitest run apps/web/src/design-system/explorer/InstrumentIcon.test.tsx` (every instrument has an icon).
 
 ## Rules
 

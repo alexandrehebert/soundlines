@@ -6,10 +6,10 @@ Paths in prose and commands are relative to the repository root.
 
 ## Data model
 
-All data lives in [src/data/graph.json](../src/data/graph.json) as a single property graph:
+All data lives in [packages/catalogue/data/graph.json](../packages/catalogue/data/graph.json) as a single property graph:
 
 - **Nodes** (`genre`, `artist`, `instrument`, `label`, `place`, `track`, `scene`, `event`, `festival`) with stable `type:slug` ids, optional `period` (`start`/`end`/`precision`/`estimated`/`estimateNote`), `family` lanes, descriptions, and editorial confidence in the overall entry.
-- **Edges** with a type, optional `period`, `confidence` (`low`/`medium`/`high`), `note`, and source URLs. Lineage edge types (`influences`, `derived_from`, `subgenre_of`, `fusion_of`, `cross_pollination`, `revival_of`) carry an orientation so the JSON reads naturally in both directions (see `LINEAGE_ORIENTATION` in [src/graph/types.ts](../src/graph/types.ts)).
+- **Edges** with a type, optional `period`, `confidence` (`low`/`medium`/`high`), `note`, and source URLs. Lineage edge types (`influences`, `derived_from`, `subgenre_of`, `fusion_of`, `cross_pollination`, `revival_of`) carry an orientation so the JSON reads naturally in both directions (see `LINEAGE_ORIENTATION` in [packages/catalogue/src/types.ts](../packages/catalogue/src/types.ts)).
 - Every node has at least two distinct HTTPS `sources` URLs. The detail panel links the selected node's sources and shows the website beside each link.
 
 ### Discovering instruments worldwide
@@ -54,7 +54,7 @@ Graph changes follow one pipeline, with one owner per step:
 | Fact-check | Is each claim true and sourced? | `graph-fact-check` | `graph-fact-checker` (writes evidence) |
 | Review | Is this change set ready to merge? | `graph-review` | `graph-reviewer` (read-only gate) |
 
-Validation is deterministic: `npm run validate:graph` runs the data and graph test suites (schema,
+Validation is deterministic: `pnpm validate:graph` runs the data and graph test suites (schema,
 ids, edge directions, canonical JSON formatting, overlay coverage for every locale, evidence and
 coverage-tracker bookkeeping). The [Graph quality](../.github/workflows/graph-quality.yml)
 workflow runs it, plus a `review-status.json` freshness check, on every pull request touching graph data
@@ -85,7 +85,7 @@ independently verify with the tools and source material available to it.
 New genres also need at least three sourced key-artist relationships; a genre's origin source
 alone is not sufficient for a complete addition.
 The agent does not render audio or artwork: a new genre is listed in `PENDING_GENRE_PREVIEWS`
-([genrePreviews.ts](../src/data/genrePreviews.ts)), which hides its player until a maintainer renders
+([genrePreviews.ts](../packages/catalogue/src/genrePreviews.ts)), which hides its player until a maintainer renders
 and reviews its preview locally with the preview pipeline. New instruments likewise wait for the
 local artwork pipeline.
 To keep runs cheap and short, the agent follows the "Cost and time budget" in the
@@ -164,9 +164,9 @@ years. Some new band periods span documented breaks and reunion appearances;
 their descriptions identify this career-envelope limitation. They are not
 claims of uninterrupted activity.
 
-[graphLocale.ts](../src/data/graphLocale.ts) loads the canonical JSON and applies locale overlays. [graph.ts](../src/graph/graph.ts) indexes a loaded graph and provides queries such as neighbors, traversal, and search. Validation, changelog generation, and published downloads also use the repository files.
+[graphLocale.ts](../packages/catalogue/src/graphLocale.ts) loads the canonical JSON and applies locale overlays. [graph.ts](../packages/catalogue/src/graph.ts) indexes a loaded graph and provides queries such as neighbors, traversal, and search. Validation, changelog generation, and published downloads also use the repository files.
 
-[src/data/graph.test.ts](../src/data/graph.test.ts) enforces dataset integrity: unique ids, no dangling edge endpoints, known types only, sane periods, and no orphan nodes.
+[apps/web/src/graph/catalogue.test.ts](../apps/web/src/graph/catalogue.test.ts) enforces dataset integrity: unique ids, no dangling edge endpoints, known types only, sane periods, and no orphan nodes.
 
 ## Instrument artwork
 

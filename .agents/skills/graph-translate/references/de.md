@@ -1,6 +1,6 @@
 # German (`de`) style for graph overlays
 
-Overlay file: `src/data/graph.de.json`.
+Overlay file: `packages/catalogue/data/graph.de.json`.
 
 - Use natural, precise editorial German, preserving every qualification and uncertainty.
 - Keep artist, track, label and festival proper names unchanged. Use established German names for places and instruments (London, Schlagzeug, Waldhorn).

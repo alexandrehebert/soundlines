@@ -10,9 +10,9 @@ import { promisify } from 'node:util'
 const exec = promisify(execFile)
 const scripts = fileURLToPath(new URL('.', import.meta.url))
 const root = fileURLToPath(new URL('../../../../', import.meta.url))
-const graph = JSON.parse(readFileSync(join(root, 'src/data/graph.json'), 'utf8'))
+const graph = JSON.parse(readFileSync(join(root, 'packages/catalogue/data/graph.json'), 'utf8'))
 const genres = graph.nodes.filter((node) => node.type === 'genre').map((node) => node.id.slice(6))
-const assets = process.env.ACESTEP_PREVIEW_OUTPUT ?? join(root, 'public/genre-previews')
+const assets = process.env.ACESTEP_PREVIEW_OUTPUT ?? join(root, 'apps/web/public/genre-previews')
 const planner =
   process.env.ACESTEP_PYTHON ??
   join(process.env.ACESTEP_HOME ?? join(homedir(), 'Tools/ACE-Step-1.5'), '.venv/bin/python')
