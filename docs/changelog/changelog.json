@@ -2,6 +2,366 @@
   "version": 4,
   "entries": [
     {
+      "commit": "f88816f06704870f615c72923c1a4b863a5c7cf8",
+      "parent": "2eb2e704996070b1901f37868acaa0d6278eef70",
+      "date": "2026-11-15T10:53:23-05:00",
+      "subject": "Expose all Soundlines agent roles in each coding assistant",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "previews",
+          "files": [
+            {
+              "status": "A",
+              "path": ".agents/roles/preview-briefer.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/roles/preview-producer.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/roles/preview-reviewer.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/preview-briefer.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/preview-producer.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/preview-reviewer.md"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/preview-briefer.toml"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/preview-producer.toml"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/preview-reviewer.toml"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/preview-briefer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/preview-producer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/preview-reviewer.agent.md"
+            }
+          ]
+        },
+        {
+          "category": "loops",
+          "files": [
+            {
+              "status": "A",
+              "path": ".agents/roles/loop-briefer.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/roles/loop-producer.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/roles/loop-reviewer.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/roles/loop-validator.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/loop-briefer.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/loop-producer.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/loop-reviewer.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/loop-validator.md"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/loop-briefer.toml"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/loop-producer.toml"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/loop-reviewer.toml"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/loop-validator.toml"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/loop-briefer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/loop-producer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/loop-reviewer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/loop-validator.agent.md"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "files": [
+            {
+              "status": "A",
+              "path": ".agents/roles/artwork-briefer.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/roles/artwork-illustrator.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/roles/artwork-reviewer.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/roles/artwork-validator.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/artwork-briefer.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/artwork-illustrator.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/artwork-reviewer.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/artwork-validator.md"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/artwork-briefer.toml"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/artwork-illustrator.toml"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/artwork-reviewer.toml"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/artwork-validator.toml"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/artwork-briefer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/artwork-illustrator.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/artwork-reviewer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/artwork-validator.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/workflows/artwork-quality.yml"
+            }
+          ]
+        },
+        {
+          "category": "site",
+          "files": [
+            {
+              "status": "M",
+              "path": "site/scripts/stats.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/de.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/en.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/es.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/fr.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/locales/it.ts"
+            },
+            {
+              "status": "M",
+              "path": "site/src/site.test.tsx"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "A",
+              "path": ".agents/roles/graph-editor.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/roles/graph-fact-checker.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/roles/graph-researcher.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/roles/graph-reviewer.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/roles/graph-translator.md"
+            },
+            {
+              "status": "A",
+              "path": ".agents/roles/graph-validator.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/graph-editor.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/graph-fact-checker.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/graph-researcher.md"
+            },
+            {
+              "status": "M",
+              "path": ".claude/agents/graph-reviewer.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/graph-translator.md"
+            },
+            {
+              "status": "A",
+              "path": ".claude/agents/graph-validator.md"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/graph-editor.toml"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/graph-fact-checker.toml"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/graph-researcher.toml"
+            },
+            {
+              "status": "M",
+              "path": ".codex/agents/graph-reviewer.toml"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/graph-translator.toml"
+            },
+            {
+              "status": "A",
+              "path": ".codex/agents/graph-validator.toml"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/graph-editor.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/graph-fact-checker.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/graph-researcher.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/graph-reviewer.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/graph-translator.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/graph-validator.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/workflows/project-pages.yml"
+            },
+            {
+              "status": "A",
+              "path": "scripts/agents/profiles.test.ts"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/INSTALLATION.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/README.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "3389999cdd1db38922d69c81407ab687fa65ec15",
       "parent": "62997a63f96c1f394c3a6a177397dd2f27ea100c",
       "date": "2026-11-15T10:41:35-05:00",
