@@ -12,6 +12,44 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-15 — Use one pnpm installer for Compose services
+
+[717503ef](https://github.com/alexandrehebert/soundlines/commit/717503ef50214518c49abd2a275e364c82f3b610)
+
+- workflow: 2 changed files
+
+## 2026-11-15 — Extract shared media into its own workspace package
+
+[2c42cce9](https://github.com/alexandrehebert/soundlines/commit/2c42cce98e7899595a325147dbbcaf61f478ba20)
+
+- graph: 4 changed files
+- previews: 418 changed files
+- loops: 15 changed files
+- artwork: 1058 changed files
+- app: 18 changed files
+- site: 5 changed files
+- workflow: 2 changed files
+- docs: 7 changed files
+- other: 5 changed files
+
+## 2026-11-15 — Migrate Soundlines to a pnpm workspace
+
+[7ec33d6f](https://github.com/alexandrehebert/soundlines/commit/7ec33d6f478d287ec536fda26989da88b1a71eea)
+
+Graph nodes: +0 / ~0 / -0.
+
+Graph edges: +0 / ~0 / -0.
+
+- graph: 60 changed files
+- previews: 422 changed files
+- loops: 18 changed files
+- artwork: 1419 changed files
+- app: 552 changed files
+- site: 66 changed files
+- workflow: 39 changed files
+- docs: 10 changed files
+- other: 7 changed files
+
 ## 2026-11-15 — Expose all Soundlines agent roles in each coding assistant
 
 [f88816f0](https://github.com/alexandrehebert/soundlines/commit/f88816f06704870f615c72923c1a4b863a5c7cf8)
@@ -606,11 +644,11 @@ Graph edges: +4 / ~0 / -0.
 - graph: 1 changed file
 - loops: 24 changed files
 - artwork: 7 changed files
-- app: 9 changed files
+- app: 10 changed files
 - site: 25 changed files
 - workflow: 2 changed files
 - docs: 3 changed files
-- other: 2 changed files
+- other: 1 changed file
 
 ## 2026-11-07 — Rebuild project companion with React and Vite
 
@@ -630,11 +668,11 @@ Graph edges: +4 / ~0 / -0.
 - previews: 9 changed files
 - loops: 195 changed files
 - artwork: 81 changed files
-- app: 22 changed files
+- app: 24 changed files
 - site: 4 changed files
 - workflow: 11 changed files
 - docs: 3665 changed files
-- other: 5 changed files
+- other: 3 changed files
 
 ## 2026-11-07 — Improve turntable playback and production workflows
 
@@ -752,10 +790,10 @@ Graph edges: +161 / ~0 / -0.
 
 - graph: 10 changed files
 - previews: 1 changed file
-- app: 75 changed files
+- app: 76 changed files
 - workflow: 1 changed file
 - docs: 1 changed file
-- other: 4 changed files
+- other: 3 changed files
 
 ## 2026-11-06 — Keep mobile detail sheet above timeline during landing transition
 
@@ -820,8 +858,7 @@ Graph nodes: +0 / ~31 / -0.
 Graph edges: +0 / ~0 / -0.
 
 - graph: 4 changed files
-- app: 15 changed files
-- other: 1 changed file
+- app: 16 changed files
 
 ## 2026-11-06 — Refine explorer controls and instrument visuals
 
@@ -1117,9 +1154,8 @@ Graph edges: +47 / ~0 / -0.
 [a20b73d2](https://github.com/alexandrehebert/soundlines/commit/a20b73d2fa1291dab43e12d4801879b0c8829821)
 
 - graph: 4 changed files
-- app: 20 changed files
+- app: 21 changed files
 - docs: 1 changed file
-- other: 1 changed file
 
 ## 2026-11-02 — Add historical events to music graph
 
@@ -1166,8 +1202,7 @@ Graph edges: +189 / ~0 / -0.
 
 [e6f3d97b](https://github.com/alexandrehebert/soundlines/commit/e6f3d97b74c4b59a5f2f9d03c8347e2148abe74e)
 
-- app: 7 changed files
-- other: 1 changed file
+- app: 8 changed files
 
 ## 2026-11-01 — Match favicon to header icon
 
@@ -1183,9 +1218,9 @@ Graph edges: +189 / ~0 / -0.
 [4d75e431](https://github.com/alexandrehebert/soundlines/commit/4d75e4314dfde9a657e00367d0befd2579072f44)
 
 - graph: 2 changed files
-- app: 29 changed files
+- app: 30 changed files
 - docs: 1 changed file
-- other: 2 changed files
+- other: 1 changed file
 
 ## 2026-11-01 — Fix search dropdown layering
 
@@ -1229,9 +1264,8 @@ Graph nodes: +37 / ~0 / -0.
 Graph edges: +193 / ~0 / -0.
 
 - graph: 10 changed files
-- app: 13 changed files
+- app: 14 changed files
 - docs: 1 changed file
-- other: 1 changed file
 
 ## 2026-11-01 — Keep timeline labels visible
 
@@ -1257,10 +1291,10 @@ Graph edges: +0 / ~0 / -0.
 
 - graph: 2 changed files
 - previews: 2 changed files
-- app: 28 changed files
+- app: 30 changed files
 - workflow: 1 changed file
 - docs: 1 changed file
-- other: 3 changed files
+- other: 1 changed file
 
 ## 2026-11-01 — Keep timeline year axis visible
 
