@@ -2,6 +2,68 @@
   "version": 4,
   "entries": [
     {
+      "commit": "62997a63f96c1f394c3a6a177397dd2f27ea100c",
+      "parent": "3474beb1f2eb543a6e1c633035f1f92113191995",
+      "date": "2026-11-15T01:10:53-05:00",
+      "subject": "Add local Git hooks and contributor guidance",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "package.json"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "M",
+              "path": "AGENTS.md"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/DEVELOPMENT.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/INSTALLATION.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/README.md"
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "files": [
+            {
+              "status": "A",
+              "path": ".gitattributes"
+            },
+            {
+              "status": "A",
+              "path": ".githooks/pre-commit"
+            },
+            {
+              "status": "A",
+              "path": ".githooks/pre-push"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "ea7007cae1530ec953d88542e68e633f1e11c082",
       "parent": "89bd19718bbefec1aeba630c896aa3b995ac16ec",
       "date": "2026-11-15T01:03:50-05:00",
