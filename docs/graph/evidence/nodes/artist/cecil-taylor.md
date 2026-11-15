@@ -4,7 +4,7 @@ Graph ID `artist:cecil-taylor`
 
 **Review status** · Reviewed — start moved to early 1950s; end set to death (2018)
 
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -21,3 +21,7 @@ Start changed 1956 → circa 1952 to reflect documented early-1950s sideman work
 ## Remaining uncertainty
 
 Exact first professional engagement (early 1950s) not pinned to a year.
+
+## Description review (2026-11-15)
+
+The NEA profile describes Taylor’s percussive style and dates his recording debut to 1956. [National Endowment for the Arts Jazz Masters](https://www.arts.gov/honors/jazz/cecil-taylor)

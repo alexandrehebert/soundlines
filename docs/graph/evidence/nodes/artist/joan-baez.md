@@ -3,7 +3,7 @@
 Graph ID `artist:joan-baez`
 
 **Review status** · Reviewed — period corrected to 1959–2019
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 - [Rolling Stone, 30 Apr 2019 (Andy Greene)](https://www.rollingstone.com/music/music-features/joan-baez-interview-farewell-tour-rolling-thunder-trump-828142/) — final show 28 July 2019 in Madrid would "wrap up her career as a live performer" 60 years after her 1959 Newport debut.
@@ -14,3 +14,7 @@ Graph ID `artist:joan-baez`
 
 ## Assessment
 The career runs from the 1959 Newport breakthrough (after 1958 club work in Cambridge) to her retirement from performing after the July 2019 farewell tour. The old 1960–2010 period cut off her final album (2018) and tour.
+
+## Description review (2026-11-15)
+
+NPR documents the Newport breakthrough, the Rock Hall describes her repertoire and delivery, and the farewell-tour reporting puts her live career at sixty years. [Source 2](https://www.rockhall.com/inductees/joan-baez) · [Source 3](https://www.rollingstone.com/music/music-features/joan-baez-interview-farewell-tour-rolling-thunder-trump-828142/) · [Source 4](https://www.npr.org/templates/story/story.php?storyId=111395125)

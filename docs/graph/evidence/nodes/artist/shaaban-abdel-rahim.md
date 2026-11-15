@@ -3,7 +3,7 @@
 Graph ID `artist:shaaban-abdel-rahim`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -14,3 +14,7 @@ Names Shaaban Abdel Rahim as a leading exponent of Egyptian shaabi.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+[Walter Armbrust’s Arab Media & Society study](https://www.arabmediasociety.com/wp-content/uploads/2017/12/20071001152759_AMS3_Walter_Armbrust.pdf) documents his collaboration with Khalil and the political repertoire that drove his visibility. [Ahram’s obituary](https://english.ahram.org.eg/NewsContent/5/33/357028/Arts--Culture/Music/Egyptian-singer-Shaaban-AbdelRehim-of-I-hate-Israe.aspx) corroborates his shaabi career, song and ongoing performing activity in 2019.

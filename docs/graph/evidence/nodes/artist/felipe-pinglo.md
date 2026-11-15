@@ -3,7 +3,7 @@
 Graph ID `artist:felipe-pinglo`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -16,3 +16,7 @@ Peruvian composer of the vals criollo “El Plebeyo.”
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The National Library identifies the celebrated vals criollo, and the Foreign Affairs Ministry profile dates “Amelia” to 1917. [Biblioteca Nacional del Perú](https://www.bnp.gob.pe/bnp-recuerda-a-chabuca-granda-luchas-reyes-y-felipe-pinglo/) · [Peruvian Ministry of Foreign Affairs](https://cdn.www.gob.pe/uploads/document/file/5339026/4784242-quipu-virtual-n-178-felipe-pinglo-y-la-cancion-criolla.pdf?v=1698385136)

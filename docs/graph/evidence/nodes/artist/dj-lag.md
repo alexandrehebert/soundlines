@@ -4,7 +4,7 @@ Graph ID `artist:dj-lag`
 
 **Review status** · Reviewed: corrected 2016 decade start to 2008 production activity, while documenting his entry into gqom in 2012 separately.
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -19,3 +19,7 @@ The existing 2016 decade marker conflated an international breakthrough with car
 ## Remaining uncertainty
 
 2008 comes from a retrospective interview and represents beginning production, not necessarily public release or professional activity.
+
+## Description review (2026-11-15)
+
+His management biography documents his early production in Durban and international club play for both tracks. [Black Major artist biography](https://blackmajor.co.za/artist/dj-lag/)

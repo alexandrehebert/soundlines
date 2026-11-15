@@ -3,7 +3,7 @@
 Graph ID `artist:claude-francois`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -14,3 +14,7 @@ SACEM places François among the major yé-yé performers.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The SACEM retrospective identifies the breakthrough, credits Buggy’s adaptation and describes his stage performances. [Musée SACEM, Claude François exhibition](https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/SimpleExhibitions?id=4181)

@@ -4,7 +4,7 @@ Graph ID `artist:kavinsky`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:kavinsky`
 ## Assessment
 
 The 2006 graph start is supported by the label/discography timeline and AllMusic. A 2005 date appears in some sources, likely reflecting release-version or dating differences; confidence is medium-high for the first public EP, medium for the exact year.
+
+## Description review (2026-11-15)
+
+The artist’s catalog dates [Teddy Boy](https://kavinsky.bandcamp.com/album/teddy-boy-ep) and credits the production and vocals of [Nightcall](https://kavinsky.bandcamp.com/album/nightcall-ep).

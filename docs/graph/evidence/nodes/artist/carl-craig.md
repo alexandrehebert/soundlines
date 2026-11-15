@@ -3,7 +3,7 @@
 Graph ID `artist:carl-craig`
 
 **Review status** · Reviewed — second-wave Detroit role and 1989 start confirmed
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 - [RBMA lecture](https://www.redbullmusicacademy.com/lectures/carl-craig-planet-evolution/) — started as May’s assistant at Transmat; 1989 debut single “Elements” as Psyche; co-created DEMF.
@@ -13,3 +13,7 @@ Graph ID `artist:carl-craig`
 
 ## Assessment
 The 1989 start and open period are confirmed. The description remains accurate.
+
+## Description review (2026-11-15)
+
+The Detroit Historical Society documents the second-wave context, Transmat releases and the founding of Planet E. [Detroit Historical Society](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/craig-carl)

@@ -81,7 +81,7 @@ export const VIEW_PATHS: Record<ExplorerView, string> = {
 }
 
 export function viewFromPath(path: string): ExplorerView | undefined {
-  const normalized = stripLocalePrefix(path.replace(/\/$/, ''))
+  const normalized = stripLocalePrefix(path).split('/').slice(0, 2).join('/')
   return EXPLORER_VIEWS.find((view) => VIEW_PATHS[view] === normalized)
 }
 

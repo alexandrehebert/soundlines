@@ -39,7 +39,7 @@ Only these fields are allowed. Never copy ids, periods, sources, types or relati
 | English field | Overlay key | Required when |
 |---|---|---|
 | node `name` | `nodes[id].name` | type is `event`, `instrument`, `place` or `scene` (optional for genres, labels, festivals) |
-| node `description` | `description` | present |
+| node `description` | `description` | every node |
 | node `phaseNote` | `phaseNote` | present |
 | node `period.estimateNote` | `estimateNote` | present (and only if the node has a period) |
 | phase `note` | `phaseNotes["<start>"]` | present |

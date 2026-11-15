@@ -4,7 +4,7 @@ Graph ID `artist:dj-spinn`
 
 **Review status** · Reviewed: replaced 1995 decade proxy with documented 1996 DJ transition; career activity in Chicago scene is present by late 1990s.
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -19,3 +19,7 @@ The original 1995 decade start roughly pointed to their high-school connection b
 ## Remaining uncertainty
 
 Interview wording varies across DJing, production, and full-time career; graph uses the explicit DJing start.
+
+## Description review (2026-11-15)
+
+Planet Mu documents Spinn’s early place in Chicago footwork. Teklife’s history and Spinn’s interview trace his work with DJ Rashad. [Planet Mu artist profile](https://planet.mu/artists/dj-spinn/) · [Teklife label history](https://www.tekliferecords.com/) · [FACT interview with DJ Spinn](https://www.factmag.com/2015/09/24/dj-spinn-teklife-interview/)

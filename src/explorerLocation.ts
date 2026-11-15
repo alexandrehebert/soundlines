@@ -5,6 +5,7 @@ import {
   readTimelineOrders,
   VIEW_PATHS,
   viewForNode,
+  viewFromPath,
   viewFromUrl,
   writeTimelineOrders,
   type ExplorerView,
@@ -18,6 +19,27 @@ export function isJukeboxPath(pathname: string | null) {
   return pathname !== null && stripLocalePrefix(pathname).replace(/\/$/, '') === '/jukebox'
 }
 
+export function nodePath(id: string, locale: Locale, currentView: ExplorerView = 'genre'): string {
+  const [type, slug] = id.split(':')
+  const view = viewForNode(type, currentView)
+  const entry = isTimelineView(type) || type === 'event' ? slug : `${type}/${slug}`
+  return localizePath(`${VIEW_PATHS[view]}/${entry}`, locale)
+}
+
+function nodeIdFromPath(pathname: string): string | null {
+  const view = viewFromPath(pathname)
+  if (!view) return null
+  const segments = stripLocalePrefix(pathname).replace(/\/$/, '').split('/').slice(2)
+  if (segments.length === 0 || segments.length > 2) return null
+
+  const [type, slug] = segments.length === 1 ? [view === 'history' ? 'event' : view, segments[0]] : segments
+  try {
+    return `${type}:${decodeURIComponent(slug)}`
+  } catch {
+    return null
+  }
+}
+
 export type ExplorerLocation = {
   isHome: boolean
   view: ExplorerView
@@ -29,7 +51,7 @@ export type ExplorerLocation = {
 
 export function readExplorerLocation(url: URL, nodeById: ReadonlyMap<string, GraphNode>): ExplorerLocation {
   const params = url.searchParams
-  const id = params.get('focus')
+  const id = nodeIdFromPath(url.pathname) ?? params.get('focus')
   const node = id ? nodeById.get(id) : undefined
   const view = viewForNode(node?.type, viewFromUrl(url))
   const timelineView = isTimelineView(view) ? view : 'genre'
@@ -44,11 +66,10 @@ export function explorerUrl(
   currentUrl: string | URL,
 ): URL {
   const url = new URL(currentUrl)
-  url.pathname = localizePath(isHome ? '/' : VIEW_PATHS[view], locale)
+  url.pathname = selectedId ? nodePath(selectedId, locale, view) : localizePath(isHome ? '/' : VIEW_PATHS[view], locale)
   if (!isHome && url.hash === '#discover') url.hash = ''
   url.searchParams.delete('view')
-  if (selectedId) url.searchParams.set('focus', selectedId)
-  else url.searchParams.delete('focus')
+  url.searchParams.delete('focus')
   writeTimelineOrders(url.searchParams, orders)
   if (genreDisplay === 'bubbles') url.searchParams.set('layout', 'bubbles')
   else url.searchParams.delete('layout')

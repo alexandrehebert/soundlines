@@ -4,6 +4,8 @@ import HomePage, { generateMetadata as homeMetadata } from '../../app/[locale]/p
 import GenresPage, { generateMetadata as genresMetadata } from '../../app/[locale]/genres/page.tsx'
 import ArtistsPage, { generateMetadata as artistsMetadata } from '../../app/[locale]/artists/page.tsx'
 import InstrumentsPage, { generateMetadata as instrumentsMetadata } from '../../app/[locale]/instruments/page.tsx'
+import ArtistEntryPage, { generateMetadata as artistEntryMetadata } from '../../app/[locale]/artists/[...entry]/page.tsx'
+import HistoryEntryPage, { generateMetadata as historyEntryMetadata } from '../../app/[locale]/history/[...entry]/page.tsx'
 import HistoryPage, { generateMetadata as historyMetadata } from '../../app/[locale]/history/page.tsx'
 
 vi.mock('next/headers', () => ({
@@ -26,10 +28,12 @@ describe('localized App Router pages', () => {
     ['genres', GenresPage, genresMetadata, 'fr', {}, '/en/genres', '/fr/genres'],
     ['artists', ArtistsPage, artistsMetadata, 'en', { sort: 'oldest-first' }, '/en/artists?sort=oldest-first', '/fr/artists?sort=oldest-first'],
     ['instruments', InstrumentsPage, instrumentsMetadata, 'fr', {}, '/en/instruments', '/fr/instruments'],
-    ['history', HistoryPage, historyMetadata, 'fr', { focus: 'event:mtv-launch' }, '/en/history?focus=event%3Amtv-launch', '/fr/history?focus=event%3Amtv-launch'],
-  ] as const)('keeps %s in the shared layout with canonical and alternate URLs', async (_name, page, generateMetadata, locale, searchParams, english, french) => {
+    ['history', HistoryPage, historyMetadata, 'fr', {}, '/en/history', '/fr/history'],
+    ['event', HistoryEntryPage, historyEntryMetadata, 'fr', {}, '/en/history/mtv-launch', '/fr/history/mtv-launch', ['mtv-launch']],
+    ['artist', ArtistEntryPage, artistEntryMetadata, 'fr', {}, '/en/artists/inti-illimani', '/fr/artists/inti-illimani', ['inti-illimani']],
+  ] as const)('keeps %s in the shared layout with canonical and alternate URLs', async (_name, page, generateMetadata, locale, searchParams, english, french, entry?) => {
     const props = {
-      params: Promise.resolve({ locale }),
+      params: Promise.resolve({ locale, entry: entry ? [...entry] : undefined }),
       searchParams: Promise.resolve(searchParams),
     }
     // The shared layout owns the explorer so route commits cannot remount its open sheet.
@@ -46,7 +50,7 @@ describe('localized App Router pages', () => {
 
   it.each([
     ['legacy view', HomePage, 'en', { view: 'artists', 'artist-sort': 'oldest-first', other: '1' }, '/en/artists?artist-sort=oldest-first&other=1'],
-    ['focused event', GenresPage, 'fr', { focus: 'event:mtv-launch', other: '1' }, '/fr/history?focus=event%3Amtv-launch&other=1'],
+    ['focused event', GenresPage, 'fr', { focus: 'event:mtv-launch', other: '1' }, '/fr/history/mtv-launch?other=1'],
     ['unknown focus', HomePage, 'en', { focus: 'artist:missing', other: '1' }, '/en?other=1'],
     ['invalid order', ArtistsPage, 'en', { sort: 'invalid' }, '/en/artists'],
   ] as const)('redirects %s to the canonical route', async (_name, page, locale, searchParams, target) => {

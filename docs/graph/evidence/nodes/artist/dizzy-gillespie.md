@@ -4,7 +4,7 @@ Graph ID `artist:dizzy-gillespie`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:dizzy-gillespie`
 ## Assessment
 
 The 1935 start is supported by archival biographies documenting his first band; the 1993 end is confirmed by NEA. This is a professional activity span, not the date bebop emerged. Confidence: high.
+
+## Description review (2026-11-15)
+
+The NEA identifies Gillespie’s formative bebop role. The Smithsonian notes date the recording and identify Pozo and the wider Afro-Cuban context. [National Endowment for the Arts Jazz Masters](https://www.arts.gov/honors/jazz/john-birks-dizzy-gillespie) · [Smithsonian Folkways notes on “Manteca”](https://folkways-media.si.edu/docs/folkways/artwork/SFW40802.pdf)

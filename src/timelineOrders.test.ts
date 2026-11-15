@@ -43,8 +43,8 @@ describe('timeline order URLs', () => {
     const metadata = socialMetadata(input, new Map([[node.id, node]]))
     const canonical = new URL(metadata.url)
 
-    expect(canonical.pathname).toBe('/en/artists')
-    expect(canonical.searchParams.get('focus')).toBe(node.id)
+    expect(canonical.pathname).toBe('/en/artists/example')
+    expect(canonical.searchParams.has('focus')).toBe(false)
     expect(readTimelineOrders(canonical.searchParams)).toEqual({
       genre: 'oldest-first', artist: 'oldest-first', instrument: 'oldest-first',
     })

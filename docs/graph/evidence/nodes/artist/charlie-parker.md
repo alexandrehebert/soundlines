@@ -4,7 +4,7 @@ Graph ID `artist:charlie-parker`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:charlie-parker`
 ## Assessment
 
 Current 1935–1955 span is well supported as professional career through death; 1935 is his professional start, though wider recognition and bebop innovations came later. Confidence: high.
+
+## Description review (2026-11-15)
+
+The National Park Service documents Parker’s Kansas City origins, his New York bebop breakthrough and his work with Gillespie. [U.S. National Park Service](https://www.nps.gov/people/charlie-parker.htm)

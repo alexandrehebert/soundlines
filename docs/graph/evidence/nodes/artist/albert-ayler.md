@@ -4,7 +4,7 @@ Graph ID `artist:albert-ayler`
 
 **Review status** · Reviewed — career start and free-jazz role confirmed
 
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -16,3 +16,7 @@ Graph ID `artist:albert-ayler`
 ## Assessment
 
 Period 1952–1970 supported (R&B work at 16; death 1970); precision set to circa because the 1952 start rests on teen summer work reported mainly by Wikipedia, consistent with Britannica’s “mid-teens”. Description confirmed. Britannica, NPR and AllMusic added.
+
+## Description review (2026-11-15)
+
+NPR identifies the 1964 trio and album and connects the approach to his church upbringing. [NPR, Avant-Garde Made Easy](https://www.npr.org/2001/05/08/1122654/avant-garde-made-easy-albert-ayler)

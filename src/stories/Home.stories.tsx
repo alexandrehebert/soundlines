@@ -264,9 +264,9 @@ const checkSpotlightCarousel = async (container: HTMLElement, regionName: string
     expect(seen).not.toContain(href)
     seen.push(href)
     if (instrument) {
-      const id = new URL(href, 'https://soundlines.test').searchParams.get('focus')
-      if (!id?.startsWith('instrument:')) throw new Error('Spotlight instrument ID is missing')
-      expect(region.querySelector('img')).toHaveAttribute('src', publicAsset(`/instrument-avatars/${encodeURIComponent(id.slice('instrument:'.length))}.svg`))
+      const slug = href.match(/\/instruments\/([a-z0-9-]+)$/)?.[1]
+      if (!slug) throw new Error('Spotlight instrument slug is missing')
+      expect(region.querySelector('img')).toHaveAttribute('src', publicAsset(`/instrument-avatars/${slug}.svg`))
     }
     const viewport = container.ownerDocument.defaultView
     if (viewport) expect(container.ownerDocument.documentElement.scrollWidth).toBeLessThanOrEqual(viewport.innerWidth)

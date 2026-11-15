@@ -3,7 +3,7 @@
 Graph ID `artist:lord-flea`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -14,3 +14,7 @@ Singer heard on early Jamaican mento records.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The anthology liner notes document his Kingston appearances, recordings for Khouri and Capitol album. [Source 1](https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html)

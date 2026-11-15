@@ -3,7 +3,7 @@
 Graph ID `artist:heera`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -17,3 +17,7 @@ Names Heera as a pioneering British bhangra group.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The archive places Heera in the early British scene. The label biography documents Quallander’s founding and the recording with Narinder Biba. [Source 1](https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf) · [Source 3](https://kedarecords.com/artist/heera/)

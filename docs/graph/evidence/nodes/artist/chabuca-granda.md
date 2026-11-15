@@ -3,7 +3,7 @@
 Graph ID `artist:chabuca-granda`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Peruvian singer and composer of “La flor de la canela.”
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+Peru’s National Library recognizes her as a major exponent, and the national declaration situates her work in the Lima waltz tradition. [Biblioteca Nacional del Perú](https://www.bnp.gob.pe/bnp-recuerda-a-chabuca-granda-luchas-reyes-y-felipe-pinglo/) · [Heritage declaration](https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/NL20170111.pdf)

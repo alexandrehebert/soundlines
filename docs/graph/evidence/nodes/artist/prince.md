@@ -3,7 +3,7 @@
 Graph ID `artist:prince`
 
 **Review status** · Reviewed — period 1975–2016 kept (start unverified); sources added
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 - [Wikipedia — Prince (musician)](https://en.wikipedia.org/wiki/Prince_(musician)) — existing source; years active 1975–2016.
@@ -19,3 +19,7 @@ Graph ID `artist:prince`
 
 ## Remaining uncertainty
 The 1975 start rests on Wikipedia only; 1977 (Warner Bros. contract) or 1978 (For You) would be stricter readings.
+
+## Description review (2026-11-15)
+
+[Carnegie Hall’s electro-funk history](https://timeline.carnegiehall.org/genres/electro-funk) identifies Prince, both albums and the mix of R&B, funk, rock and electronic sounds associated with Minneapolis.

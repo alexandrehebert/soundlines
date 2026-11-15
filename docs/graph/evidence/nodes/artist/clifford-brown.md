@@ -4,7 +4,7 @@ Graph ID `artist:clifford-brown`
 
 **Review status** · Reviewed — career 1949–1956 retained, marked circa; sources upgraded
 
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ Britannica confirms Philadelphia work before joining Dameron and Hampton in 1953
 ## Remaining uncertainty
 
 Exact first professional engagement (1948–50) unverified.
+
+## Description review (2026-11-15)
+
+The biography dates the Brown–Roach quintet to 1954. Carnegie Hall documents Brown’s early hard-bop role. [Britannica artist biography](https://www.britannica.com/biography/Clifford-Brown) · [Carnegie Hall Jazz Timeline](https://timeline.carnegiehall.org/genres/hard-bop)

@@ -3,7 +3,7 @@
 Graph ID `artist:zhanna-bichevskaya`
 
 **Review status** · Reviewed — start moved to the 1970s
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 - [Wikipedia: Zhanna Bichevskaya](https://en.wikipedia.org/wiki/Zhanna_Bichevskaya) — graduated from the Moscow circus and variety school in 1971; began performing Russian folk songs and romances in the 1970s.
@@ -15,3 +15,7 @@ There is no evidence of a 1960s career. The period is now 1970 decade, open-ende
 
 ## Remaining uncertainty
 Evidence is mostly database/encyclopedic; no press or archival biography found.
+
+## Description review (2026-11-15)
+
+[Melodiya’s original liner notes](https://melody.su/catalog/folklore/143663/) identify her guitar accompaniment and specify which songs she collected herself, including Cossack ballads and a northern wedding song.

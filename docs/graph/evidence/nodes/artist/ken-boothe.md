@@ -4,7 +4,7 @@ Graph ID `artist:ken-boothe`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:ken-boothe`
 ## Assessment
 
 Set 1963 as his first documented recordings with Stranger Cole; the 1966 solo breakthrough is a separate milestone. The prior 1960 decade was too broad but directionally correct. Confidence: high.
+
+## Description review (2026-11-15)
+
+Boothe’s official biography documents the partnership, the move to Studio One and the early rocksteady recording. [Source 1](https://www.kenboothemusic.com/bio.php)

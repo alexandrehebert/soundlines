@@ -4,7 +4,7 @@ Graph ID `artist:antonio-carlos-jobim`
 
 **Review status** · Reviewed · 2026-11-04
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ Changed the start from a broad 1950 to 1953, when the Brazilian music dictionary
 ## Remaining uncertainty
 
 The archive item is cataloged as an undated copy; source text should be consulted directly for finer chronology. Find a stronger independently accessible obituary/record-label chronology.
+
+## Description review (2026-11-15)
+
+The Dicionário documents the co-writing credit, the song’s first public performance in Rio and Jobim’s appearances in the United States, including Carnegie Hall in 1962. [Dicionário Cravo Albin](https://dicionariompb.com.br/artista/tom-jobim/)

@@ -312,7 +312,7 @@
         "end": 1970,
         "precision": "circa"
       },
-      "description": "Saxophonist whose forceful, spiritually charged playing became central to 1960s free jazz.",
+      "description": "Saxophonist who gave 1960s free jazz a sound shaped by church music and open-ended improvisation. He recorded “Spiritual Unity” in 1964 with bassist Gary Peacock and drummer Sunny Murray.",
       "sources": [
         "https://en.wikipedia.org/wiki/Albert_Ayler",
         "https://www.britannica.com/biography/Albert-Ayler",
@@ -441,7 +441,8 @@
         "https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/",
         "https://catalogue.bnf.fr/ark:/12148/cb140035046",
         "https://en.wikipedia.org/wiki/Huun-Huur-Tu"
-      ]
+      ],
+      "description": "Tuvan musician who brought borbangnadyr throat singing, the xomuz jaw harp and the byzaanchi fiddle to the sound of Huun-Huur-Tu."
     },
     {
       "id": "artist:andy-c",
@@ -475,7 +476,8 @@
         "https://www.bn.gob.ar/noticias/11-de-julio-de-1914-nace-anibal-troilo",
         "https://buenosaires.gob.ar/gcaba_historico/cultura/ensenanza-artistica/instituto-de-investigacion-en-etnomusicologia/coleccion-anibal-pichuco",
         "https://www.argentina.gob.ar/node/465370"
-      ]
+      ],
+      "description": "Buenos Aires bandoneonist who formed his own tango orchestra in 1937 and led it until 1975."
     },
     {
       "id": "artist:anton-webern",
@@ -510,7 +512,8 @@
         "https://www.jobim.org/jobim/handle/2010/10873",
         "https://dicionariompb.com.br/artista/tom-jobim/",
         "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/jobim-antonio-carlos-tom-1927-1994"
-      ]
+      ],
+      "description": "Brazilian composer and pianist who helped carry Rio de Janeiro’s bossa nova abroad. He wrote “Garota de Ipanema” with Vinicius de Moraes and performed at the 1962 bossa nova concert at Carnegie Hall."
     },
     {
       "id": "artist:aphex-twin",
@@ -1479,7 +1482,7 @@
       "period": {
         "start": 1989
       },
-      "description": "Second-wave Detroit polymath, May's protégé — stretched techno toward jazz and orchestras on Planet E.",
+      "description": "Producer from Detroit techno’s second wave. After releasing early work on Derrick May’s Transmat label, he founded Planet E in 1991.",
       "sources": [
         "https://en.wikipedia.org/wiki/Carl_Craig",
         "https://www.redbullmusicacademy.com/lectures/carl-craig-planet-evolution/",
@@ -1502,7 +1505,8 @@
         "https://academic.oup.com/reference/62400/reference-article-abstract/555412508",
         "https://buenosaires.gob.ar/gcaba_historico/cultura/museos/museocasacarlosgardel/discografia",
         "https://media.unesco.org/sites/default/files/webform/mow001/uruguay_records_carlos_gardel.pdf"
-      ]
+      ],
+      "description": "Singer whose 1917 recording of “Mi noche triste” helped establish tango canción, the sung form of tango."
     },
     {
       "id": "artist:carlos-vives",
@@ -1565,7 +1569,7 @@
         "end": 2018,
         "precision": "circa"
       },
-      "description": "Pianist and composer known for percussive intensity and freely structured improvisation.",
+      "description": "Pianist and composer whose percussive touch and freely structured improvisation helped shape free jazz. His debut album, “Jazz Advance”, documents his early work as a bandleader in 1956.",
       "sources": [
         "https://en.wikipedia.org/wiki/Cecil_Taylor",
         "https://www.arts.gov/honors/jazz/cecil-taylor",
@@ -1660,7 +1664,7 @@
         "end": 1955,
         "precision": "year"
       },
-      "description": "Alto saxophonist whose melodic and harmonic innovations were central to bebop.",
+      "description": "Alto saxophonist who came up in Kansas City and became one of the architects of bebop in New York, working with musicians including Dizzy Gillespie.",
       "sources": [
         "https://www.nps.gov/people/charlie-parker.htm",
         "https://historicmissourians.shsmo.org/charlie-parker/",
@@ -1708,12 +1712,14 @@
         "end": 1988,
         "precision": "circa"
       },
-      "description": "Trumpeter and singer known for the lyrical, restrained sound of West Coast cool jazz.",
+      "description": "Trumpeter and singer whose restrained, melodic playing became associated with West Coast cool jazz. He came to prominence in Gerry Mulligan’s pianoless quartet.",
       "sources": [
         "https://en.wikipedia.org/wiki/Chet_Baker",
         "https://www.britannica.com/biography/Chet-Baker",
         "https://www.latimes.com/archives/la-xpm-1988-12-18-ca-769-story.html",
-        "https://www.allmusic.com/artist/chet-baker-mn0000094210"
+        "https://www.allmusic.com/artist/chet-baker-mn0000094210",
+        "https://www.bluenote.com/spotlight/retrospectives-in-real-time-lee-konitz-plays-with-the-gerry-mulligan-quartet/",
+        "https://www.bluenote.com/spotlight/retrospectives-in-real-time-lee-konitz-plays-with-the-gerry-mulligan-quartet/"
       ]
     },
     {
@@ -1804,7 +1810,7 @@
         "end": 1956,
         "precision": "circa"
       },
-      "description": "Trumpeter whose work with Max Roach is a landmark of early hard bop.",
+      "description": "Jazz trumpeter who helped define early hard bop. In 1954 he formed a quintet with drummer Max Roach.",
       "sources": [
         "https://en.wikipedia.org/wiki/Clifford_Brown",
         "https://www.britannica.com/biography/Clifford-Brown",
@@ -1927,7 +1933,7 @@
       "period": {
         "start": 1999
       },
-      "description": "English singer and songwriter who emerged from the UK garage scene.",
+      "description": "English singer whose vocals on Artful Dodger’s “Re-Rewind” made him a UK garage breakout in 1999. His solo single “Fill Me In” topped the UK chart in 2000.",
       "sources": [
         "https://en.wikipedia.org/wiki/Craig_David",
         "https://www.officialcharts.com/artist/8934/craig-david/",
@@ -1997,7 +2003,8 @@
         "https://www.allmusic.com/style/reggaeton-ma0000002976",
         "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Gasolina_Rivera-Rideau.pdf",
         "https://www.allmusic.com/artist/daddy-yankee-mn0000559405"
-      ]
+      ],
+      "description": "Rapper who came out of Puerto Rico’s underground scene and helped bring reggaeton to an international audience with “Gasolina” in 2004."
     },
     {
       "id": "artist:daft-punk",
@@ -2079,7 +2086,7 @@
         "end": 2012,
         "precision": "circa"
       },
-      "description": "Pianist and composer associated with cool jazz and experiments in unusual meters.",
+      "description": "Jazz pianist and bandleader whose quartet took unusual meters to a wide audience on “Time Out” (1959), which features saxophonist Paul Desmond’s “Take Five”.",
       "sources": [
         "https://en.wikipedia.org/wiki/Dave_Brubeck",
         "https://www.britannica.com/biography/Dave-Brubeck",
@@ -2540,11 +2547,13 @@
         "start": 1935,
         "end": 1993
       },
-      "description": "Trumpeter and composer central to bebop and the development of Afro-Cuban jazz.",
+      "description": "Trumpeter and composer central to bebop. His big band’s recordings with Cuban conga player Chano Pozo, including “Manteca” in 1947, helped shape Afro-Cuban jazz.",
       "sources": [
         "https://www.arts.gov/honors/jazz/john-birks-dizzy-gillespie",
         "https://www.si.edu/object/archives/sova-nmah-ac-0979",
-        "https://collections.library.vanderbilt.edu/repositories/2/resources/2009"
+        "https://collections.library.vanderbilt.edu/repositories/2/resources/2009",
+        "https://folkways-media.si.edu/docs/folkways/artwork/SFW40802.pdf",
+        "https://folkways-media.si.edu/docs/folkways/artwork/SFW40802.pdf"
       ]
     },
     {
@@ -2614,7 +2623,8 @@
         "https://mg.co.za/friday/2023-07-15-dj-lag-music-was-my-ticket-to-the-world/",
         "https://blackmajor.co.za/artist/dj-lag/",
         "https://www.insomniac.com/music/artists/dj-lag/"
-      ]
+      ],
+      "description": "DJ and producer who helped develop Durban’s gqom sound and carried it to international club audiences with tracks such as “Ice Drop” and “Umlilo”."
     },
     {
       "id": "artist:dj-maphorisa",
@@ -2629,7 +2639,8 @@
         "https://viranova.co.za/artist/dj-maphorisa",
         "https://www.news24.com/truelove/i-try-different-sounds-because-i-never-want-to-be-boxed-in-dj-maphorisa-20170911",
         "https://www.africanmusicjournal.org/index.php/africanmusic/article/download/2529/1388/1778"
-      ]
+      ],
+      "description": "South African DJ and producer who worked with the group Uhuru and later became a prominent amapiano producer."
     },
     {
       "id": "artist:dj-minx",
@@ -2750,7 +2761,8 @@
         "https://www.factmag.com/2015/09/24/dj-spinn-teklife-interview/",
         "https://www.tekliferecords.com/",
         "https://planet.mu/artists/dj-spinn/"
-      ]
+      ],
+      "description": "Chicago DJ and producer who was part of the city’s footwork scene by the late 1990s and helped build the Teklife crew with DJ Rashad."
     },
     {
       "id": "artist:dmitri-pokrovsky-ensemble",
@@ -2767,7 +2779,8 @@
         "https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/folk-music-0",
         "https://en.wikipedia.org/wiki/Dmitri_Pokrovsky_Ensemble",
         "https://classicalvoiceamerica.org/2018/05/01/seattle-so-shows-post-rite-stuff-in-stravinsky-feast/"
-      ]
+      ],
+      "description": "Moscow ensemble that brought Russian village singing to the concert stage. Its repertoire also includes Stravinsky’s “Les Noces”."
     },
     {
       "id": "artist:dolly-parton",
@@ -2881,7 +2894,7 @@
         "end": 1974,
         "precision": "circa"
       },
-      "description": "Pianist, bandleader, and composer whose orchestra expanded jazz's expressive and structural possibilities.",
+      "description": "Jazz pianist, bandleader and composer who built a distinctive orchestral sound around his players. His orchestra introduced Billy Strayhorn’s “Take the ‘A’ Train”, and Ellington wrote “Caravan” with trombonist Juan Tizol.",
       "sources": [
         "https://en.wikipedia.org/wiki/Duke_Ellington",
         "https://assets.cambridge.org/97805218/81197/frontmatter/9780521881197_frontmatter.pdf",
@@ -2948,7 +2961,7 @@
       "period": {
         "start": 1986
       },
-      "description": "Detroit DJ and producer associated with the first wave of Detroit techno.",
+      "description": "Detroit DJ and producer from techno’s first wave. His first release, “Goodbye Kiss”, appeared on Juan Atkins’s Metroplex label in 1986.",
       "sources": [
         "https://en.wikipedia.org/wiki/Eddie_Fowlkes",
         "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/fowlkes-eddie",
@@ -3021,7 +3034,8 @@
         "https://encyclopediaofalabama.org/article/emmylou-harris/",
         "https://www.countrymusichalloffame.org/hall-of-fame/emmylou-harris",
         "https://www.polarmusicprize.org/laureates/emmylou-harris/"
-      ]
+      ],
+      "description": "American singer whose collaboration with Gram Parsons preceded her country breakthrough with “Pieces of the Sky” in 1975."
     },
     {
       "id": "artist:erik-satie",
@@ -3267,7 +3281,7 @@
         "end": 2014,
         "precision": "decade"
       },
-      "description": "New York-born DJ, producer and remixer who became a central figure in Chicago house. His Warehouse residency from 1977 helped shape the sound and gave house its name; he continued as a recording artist and remixer until his death.",
+      "description": "New York-born DJ, producer and remixer who helped shape Chicago house at the Warehouse. He began DJing there in 1977, using extended disco mixes and added percussion to build his sets.",
       "sources": [
         "https://chicagolgbthalloffame.org/knuckles-frankie/",
         "https://ra.co/features/2086",
@@ -3476,7 +3490,7 @@
         "start": 1967,
         "end": 2022
       },
-      "description": "British band that developed from theatrical progressive rock into a broader pop-rock sound, with multiple hiatuses and reunions.",
+      "description": "British band whose theatrical progressive-rock performances featured Peter Gabriel as frontman. With Phil Collins on lead vocals, Genesis broadened its sound toward pop rock. The group’s career included breaks and reunions.",
       "sources": [
         "https://en.wikipedia.org/wiki/Genesis_(band)",
         "https://www.allmusic.com/artist/genesis-mn0000199995",
@@ -3516,7 +3530,8 @@
         "https://www.countrymusichalloffame.org/hall-of-fame/george-jones",
         "https://www.tshaonline.org/handbook/entries/jones-george-glenn",
         "https://www.allmusic.com/artist/george-jones-mn0000944310"
-      ]
+      ],
+      "description": "Texas honky-tonk singer whose Starday single “Why, Baby, Why” became his first Top Five country hit in 1955. He later recorded a string of country duets with Tammy Wynette."
     },
     {
       "id": "artist:geto-boys",
@@ -3746,7 +3761,8 @@
         "https://www.newyorker.com/books/page-turner/the-autobiography-of-gucci-mane-and-the-struggle-to-be-seen",
         "https://www.insomniac.com/music/artists/gucci-mane/",
         "https://music.apple.com/us/album/trap-house/577629542"
-      ]
+      ],
+      "description": "Atlanta trap rapper whose early independent release La Flare appeared in 2001. His commercial studio debut Trap House followed in 2005."
     },
     {
       "id": "artist:guy",
@@ -3762,7 +3778,8 @@
         "https://rbhalloffamemarksms.com/wp-content/uploads/2022/07/2019-RB-HOF-Program-Book.pdf",
         "https://www.latimes.com/archives/la-xpm-2000-jan-23-ca-56629-story.html",
         "https://www.allmusic.com/artist/guy-mn0000651156"
-      ]
+      ],
+      "description": "Harlem group formed in 1987 by Teddy Riley, Aaron Hall and Timmy Gatling, with a new jack swing sound that paired R&B vocals with hip-hop rhythms. The group reunited for the album Guy III in 2000."
     },
     {
       "id": "artist:handel",
@@ -3795,7 +3812,8 @@
         "https://encyclopediaofalabama.org/article/hank-williams-sr/",
         "https://www.pulitzer.org/winners/hank-williams",
         "https://www.alamhof.org/hank-williams"
-      ]
+      ],
+      "description": "Alabama country singer and songwriter who led the Drifting Cowboys. “Move It on Over” became his first MGM hit, and “Lovesick Blues” grew from a Louisiana Hayride favorite into a chart-topping single."
     },
     {
       "id": "artist:hardwell",
@@ -3812,7 +3830,8 @@
         "https://www.djhardwell.com/biography",
         "https://www.amsterdam-dance-event.nl/en/artists-speakers/hardwell/20454/",
         "https://ra.co/dj/hardwell/biography"
-      ]
+      ],
+      "description": "Dutch DJ and producer who began DJing at 14. His sets brought big-room house to festival main stages, including Ultra Music Festival."
     },
     {
       "id": "artist:hariprasad-chaurasia",
@@ -3830,7 +3849,8 @@
         "https://www.hindustantimes.com/ht-school/hariprasad-chaurasia-flute-maestro-par-excellence/story-2kZ2v9tZygDAL4ibLZuV6M.html",
         "https://www.allmusic.com/artist/hariprasad-chaurasia-mn0000530569",
         "https://folkways.si.edu/hariprasad-zakir-hussain/venu/world/music/album/smithsonian"
-      ]
+      ],
+      "description": "Hindustani classical musician who plays the bansuri, a bamboo flute. He joined All India Radio in 1957 and later recorded Venu with tabla player Zakir Hussain."
     },
     {
       "id": "artist:haydn",
@@ -3858,7 +3878,7 @@
         "precision": "decade",
         "end": null
       },
-      "description": "English singer associated with Hi-NRG dance music.",
+      "description": "English Hi-NRG singer whose single “Searchin’” crossed from clubs to the UK pop chart in 1984. She later worked with the production team Stock Aitken Waterman.",
       "sources": [
         "https://www.bishopsgate.org.uk/collections/hazell-dean-archive/",
         "https://www.classicpopmag.com/features/classic-pop-qa-hazell-dean/",
@@ -3915,7 +3935,7 @@
         "end": 2004,
         "precision": "circa"
       },
-      "description": "Pianist and composer who brought blues and gospel inflections to hard bop.",
+      "description": "Jazz pianist and composer who helped form the Jazz Messengers. His hard bop drew on blues and gospel, and he brought rhythms from his father’s native Cape Verde into Song for My Father.",
       "sources": [
         "https://en.wikipedia.org/wiki/Horace_Silver",
         "https://www.arts.gov/honors/jazz/horace-silver",
@@ -3938,7 +3958,8 @@
         "https://www.bbc.co.uk/radio3/world/awards2004/profile_huunhuurtu.shtml",
         "https://catalogue.bnf.fr/ark:/12148/cb140035046",
         "https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/"
-      ]
+      ],
+      "description": "Tuvan ensemble founded in 1992 as Kungurtuk. Its debut 60 Horses in My Herd features the throat singing and instrumental accompaniment heard throughout the group’s work."
     },
     {
       "id": "artist:ibrahim-ferrer",
@@ -3955,7 +3976,8 @@
         "https://www.allmusic.com/artist/p333291/biography",
         "https://www.pbs.org/buenavista/music/a_son.html",
         "https://music.apple.com/us/artist/ibrahi-m-ferrer/251902548"
-      ]
+      ],
+      "description": "Cuban singer whose career in son ensembles began in his teens. The Buena Vista Social Club recordings brought his voice to a new international audience late in his career."
     },
     {
       "id": "artist:ik-dairo",
@@ -3972,7 +3994,8 @@
         "https://www.allmusic.com/artist/ik-dairo-mn0000262462",
         "https://www.nigerianjournalsonline.com/index.php/jonmed/article/download/1236/1219",
         "https://unesco-ref.org/culture-tradition-heritage/"
-      ]
+      ],
+      "description": "Nigerian jùjú musician who made the accordion a signature part of his sound alongside guitar and Yoruba percussion."
     },
     {
       "id": "artist:illapu",
@@ -4039,7 +4062,8 @@
         "https://infected-mushroom.com/bio/",
         "https://www.allmusic.com/style/goa-trance-ma0000011947",
         "https://www.decibelfestival.com/"
-      ]
+      ],
+      "description": "Psytrance duo formed in Haifa in 1996. The duo builds its tracks from repeating patterns and layered melodies, and revisits early pieces such as “Dancing with Kadafi” on REBORN."
     },
     {
       "id": "artist:insane-clown-posse",
@@ -4056,7 +4080,8 @@
         "https://ufdcimages.uflib.ufl.edu/NC/F0/00/29/58/00001/Taylor_M.pdf",
         "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/insane-clown-posse",
         "https://www.insomniac.com/music/artists/insane-clown-posse/"
-      ]
+      ],
+      "description": "Detroit rap group that started as Inner City Posse and took the name Insane Clown Posse around 1991. Clown personas and horror imagery became central to its horrorcore performances."
     },
     {
       "id": "artist:inti-illimani",
@@ -4074,7 +4099,8 @@
         "https://ethnomusicologyreview.ucla.edu/sites/default/files/prevol1_0.pdf",
         "https://communications.lafayette.edu/2012/09/24/chilean-ensemble-inti-illimanis-u-s-tour-time-machine/",
         "https://www.allmusic.com/artist/inti-illimani-mn0000095188"
-      ]
+      ],
+      "description": "Formed by students in Santiago in 1967, Inti-Illimani brought Andean folk traditions into Chile’s Nueva Canción movement. The ensemble lived and performed in exile in Italy after Chile’s 1973 coup and returned in 1988."
     },
     {
       "id": "artist:iron-maiden",
@@ -4119,7 +4145,7 @@
         "start": 1953,
         "end": 2006
       },
-      "description": "American singer, bandleader and songwriter central to soul and funk.",
+      "description": "American soul singer and bandleader who rose with the Famous Flames. The interlocking rhythms of “Papa’s Got a Brand New Bag,” released in 1965, helped lay the foundation for funk.",
       "sources": [
         "https://en.wikipedia.org/wiki/James_Brown",
         "https://www.pbs.org/wnet/americanmasters/james-brown-career-timeline/533/",
@@ -4207,7 +4233,7 @@
         "start": 1987,
         "precision": "circa"
       },
-      "description": "The Wizard. Co-founded Underground Resistance, then defined hard minimal techno on Axis and early Tresor.",
+      "description": "Detroit techno DJ who mixed as “The Wizard” on WJLB and co-founded Underground Resistance with Mike Banks. He released early club tracks through Tresor and founded Axis Records in 1992.",
       "sources": [
         "https://en.wikipedia.org/wiki/Jeff_Mills",
         "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/mills-jeff",
@@ -4299,7 +4325,8 @@
         "https://www.rollingstone.com/music/music-features/joan-baez-interview-farewell-tour-rolling-thunder-trump-828142/",
         "https://www.npr.org/templates/story/story.php?storyId=111395125",
         "https://www.allmusic.com/artist/joan-baez-mn0000069153"
-      ]
+      ],
+      "description": "Folk singer and guitarist who broke through at the Newport Folk Festival in 1959 and performed for six decades. Her soprano carried traditional ballads and protest songs to new audiences."
     },
     {
       "id": "artist:joao-bosco",
@@ -4330,8 +4357,11 @@
       "sources": [
         "https://www.washingtonpost.com/local/obituaries/joao-gilberto-a-quiet-and-leading-voice-of-brazils-bossa-nova-music-dies-at-88/2019/07/06/79ad567a-a02a-11e9-b27f-ed2942f73d70_story.html",
         "https://www.britannica.com/biography/Joao-Gilberto",
-        "https://www.allmusic.com/artist/jo%C3%A3o-gilberto-mn0000785283"
-      ]
+        "https://www.allmusic.com/artist/jo%C3%A3o-gilberto-mn0000785283",
+        "https://folkways-media.si.edu/docs/folkways/artwork/SFW40820.pdf",
+        "https://www12.senado.leg.br/noticias/materias/2008/08/01/gravacao-de-chega-de-saudade-marca-o-nascimento-da-bossa-nova"
+      ],
+      "description": "Brazilian singer and guitarist whose intimate vocals and syncopated guitar helped define bossa nova. He recorded “Chega de Saudade” for Odeon in 1958."
     },
     {
       "id": "artist:john-coltrane",
@@ -4363,7 +4393,8 @@
         "https://countrymusichalloffame.org/hall-of-fame/johnny-cash",
         "https://www.johnnycash.com/about/biography/",
         "https://www.johnnycash.com/timeline/johnny-cash-signs-with-sun-records/"
-      ]
+      ],
+      "description": "Country singer and songwriter whose spare, rhythm-driven Sun Records recordings included “I Walk the Line.” He recorded the live album At Folsom Prison in 1968."
     },
     {
       "id": "artist:johnny-ventura",
@@ -4424,7 +4455,7 @@
         "start": 1976,
         "end": 1980
       },
-      "description": "Manchester post-punk band known for stark arrangements and a brooding atmosphere.",
+      "description": "Manchester post-punk band whose stark arrangements framed Ian Curtis’s baritone on Unknown Pleasures and Closer. After Curtis’s death in 1980, the other members formed New Order.",
       "sources": [
         "https://rockhall.com/inductees/joy-division-new-order/",
         "https://collection.sciencemuseumgroup.org.uk/people/ap13960/joy-division",
@@ -4481,7 +4512,8 @@
         "https://juanluisguerra.com/historia/",
         "https://www.bmi.com/press-release/juan_luis_guerra_bmi_icon_bio",
         "https://www.allmusic.com/artist/juan-luis-guerra-mn0000291502"
-      ]
+      ],
+      "description": "Dominican singer and songwriter who formed 440 and recorded his debut Soplando in 1984. His later album Bachata Rosa brought Dominican bachata to a wider international audience."
     },
     {
       "id": "artist:judas-priest",
@@ -4528,7 +4560,8 @@
         "https://en.wikipedia.org/wiki/Kaigal-ool_Khovalyg",
         "https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/",
         "https://www.allmusic.com/artist/kaigal-ool-khovalyg-mn0000034464"
-      ]
+      ],
+      "description": "Tuvan throat singer and co-founder of Huun-Huur-Tu. With the group he performs styles including khöömei, sygyt and kargyraa and plays the igil, a two-string fiddle."
     },
     {
       "id": "artist:kanda-bongo-man",
@@ -4554,11 +4587,13 @@
       "period": {
         "start": 2006
       },
-      "description": "Kavinsky is documented in the cited genre histories and artist reference.",
+      "description": "French electronic producer whose Teddy Boy EP appeared in 2006. On “Nightcall,” produced by Guy-Manuel de Homem-Christo, Kavinsky’s distorted vocal alternates with singing by Lovefoxxx.",
       "sources": [
         "https://www.allmusic.com/artist/kavinsky-mn0000907351/biography",
         "https://www.qobuz.com/ca-en/album/teddy-boy-kavinsky/s38bnsx0n80ja",
-        "https://musicbrainz.org/release/69ab5ee0-1427-474e-8844-4512a168b5b6/cover-art"
+        "https://musicbrainz.org/release/69ab5ee0-1427-474e-8844-4512a168b5b6/cover-art",
+        "https://kavinsky.bandcamp.com/album/teddy-boy-ep",
+        "https://kavinsky.bandcamp.com/album/nightcall-ep"
       ]
     },
     {
@@ -4607,7 +4642,8 @@
         "https://www.kenboothemusic.com/bio.php",
         "https://thereggaemuseum.com/musician/ken-boothe/",
         "https://www.allmusic.com/artist/ken-boothe-mn0000075295"
-      ]
+      ],
+      "description": "Jamaican singer who first recorded with Stranger Cole before cutting solo sides for Studio One. His recording of “Feel Good” came as rocksteady was taking shape in 1966."
     },
     {
       "id": "artist:kendrick-lamar",
@@ -4621,8 +4657,11 @@
       "sources": [
         "https://www.allmusic.com/artist/kendrick-lamar-mn0002709646/",
         "https://www.biography.com/musicians/kendrick-lamar",
-        "https://www.salempress.com/Media/SalemPress/samples/2010s_pgs.pdf"
-      ]
+        "https://www.salempress.com/Media/SalemPress/samples/2010s_pgs.pdf",
+        "https://www.xxlmag.com/kendrick-lamar-family-affair-excerpt-from-the-september-2012-cover-story/",
+        "https://www.theguardian.com/music/2015/jun/21/kendrick-lamar-interview-to-pimp-a-butterfly-trayvon-martin"
+      ],
+      "description": "Compton rapper who circulated his first mixtape as K-Dot in 2003. On good kid, m.A.A.d city he drew on experiences from his youth to tell a story set in Compton."
     },
     {
       "id": "artist:kerri-chandler",
@@ -4781,7 +4820,7 @@
       "period": {
         "start": 1970
       },
-      "description": "Düsseldorf's man-machines. 'Trans-Europe Express' and 'Computer World' are cited by Juan Atkins and Afrika Bambaataa alike as the source code.",
+      "description": "Düsseldorf electronic group whose synth-led records influenced synth-pop, hip-hop and Detroit techno. “Trans-Europe Express” and “Numbers” supplied musical elements for Afrika Bambaataa and the Soulsonic Force’s “Planet Rock.”",
       "sources": [
         "https://en.wikipedia.org/wiki/Kraftwerk",
         "https://www.allmusic.com/artist/kraftwerk-mn0000104714",
@@ -4849,7 +4888,8 @@
         "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/kris-parker",
         "https://www.allmusic.com/artist/boogie-down-productions-mn0000772127",
         "https://files.eric.ed.gov/fulltext/ED377284.pdf"
-      ]
+      ],
+      "description": "Bronx rapper who formed Boogie Down Productions with DJ Scott La Rock. His recordings with the group included battle rhymes and songs about street violence and education."
     },
     {
       "id": "artist:kurtis-blow",
@@ -4864,7 +4904,8 @@
         "https://www.kurtisblow.org/biography",
         "https://daily.redbullmusicacademy.com/2015/12/kurtis-blow-key-tracks/",
         "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/blow-kurtis-1959"
-      ]
+      ],
+      "description": "Early New York rapper who signed with Mercury in 1979. “Christmas Rappin’” was followed by “The Breaks,” which earned a gold record in 1980."
     },
     {
       "id": "artist:kyuss",
@@ -4983,7 +5024,8 @@
         "https://www.theguardian.com/music/2021/aug/29/lee-scratch-perry-obituary",
         "https://www.nme.com/news/music/tributes-paid-to-reggae-legend-and-dub-pioneer-lee-scratch-perry-who-has-died-aged-85-3032074",
         "https://au.rollingstone.com/music/music-news/lee-scratch-perry-dead-obit-29452/"
-      ]
+      ],
+      "description": "Jamaican reggae producer and dub innovator. At his Black Ark studio in Kingston, he recorded artists including the Congos and Max Romeo and used the mixing desk to reshape rhythms into new versions."
     },
     {
       "id": "artist:lefty-frizzell",
@@ -5000,7 +5042,8 @@
         "https://www.countrymusichalloffame.org/hall-of-fame/lefty-frizzell",
         "https://www.tshaonline.org/handbook/entries/country-music",
         "https://www.allmusic.com/artist/lefty-frizzell-mn0000190946"
-      ]
+      ],
+      "description": "Texas honky-tonk singer who stretched vowels and phrases across the beat. His Columbia debut “If You’ve Got the Money I’ve Got the Time” helped make him a country star in 1950."
     },
     {
       "id": "artist:leonin",
@@ -5196,7 +5239,8 @@
         "https://folkways.si.edu/lucinda-williams-blues/music/article/smithsonian",
         "https://acltv.com/hall-of-fame/inductee-details/?name=lucinda-williams",
         "https://music.apple.com/us/artist/lucinda-williams/267658"
-      ]
+      ],
+      "description": "American singer-songwriter whose early records drew on blues and folk. Happy Woman Blues, her first album of original songs, carried the imprint of the Delta blues she heard growing up in Louisiana."
     },
     {
       "id": "artist:luzmila-carpio",
@@ -5278,7 +5322,8 @@
         "https://catalog.rockhall.com/rrhof-ais/Details/archive/110000474",
         "https://www.madonna.com/products/everybody",
         "https://www.pbs.org/wnet/americanmasters/how-madonna-made-herself/31922/"
-      ]
+      ],
+      "description": "Pop singer and songwriter who developed her early music career in New York. Her first commercial single, “Everybody,” reached the dance charts in 1982 and appeared on her debut album the following year."
     },
     {
       "id": "artist:mahavishnu-orchestra",
@@ -5510,7 +5555,8 @@
         "https://academic.oup.com/reference/62400/reference-article-abstract/555407799",
         "https://resources.ircam.fr/fr/composer/maurice-ravel/biography",
         "https://nac-cna.ca/en/bio/maurice-ravel"
-      ]
+      ],
+      "description": "French composer who wrote for piano, chamber ensemble and orchestra. Serge Diaghilev commissioned his ballet Daphnis et Chloé, which premiered with the Ballets Russes in 1912."
     },
     {
       "id": "artist:mayhem",
@@ -5526,7 +5572,8 @@
         "https://www.season-of-mist.com/bands/mayhem/",
         "https://www.metal-archives.com/bands/Mayhem/67",
         "https://escholarship.org/content/qt71b2q8bh/qt71b2q8bh_noSplash_2ae0821a3ca6eebd8f986cce3730ca4f.pdf?t=rk5ca7"
-      ]
+      ],
+      "description": "Norwegian black metal band formed in 1984. The raw Deathcrush EP preceded the 1994 album De Mysteriis Dom Sathanas. The band regrouped after a break in the 1990s and continued with a changed lineup."
     },
     {
       "id": "artist:mccoy-tyner",
@@ -5928,14 +5975,15 @@
       "name": "Neon Indian",
       "kind": "person",
       "period": {
-        "start": 2008,
+        "start": 2009,
         "end": null,
         "precision": "year"
       },
-      "description": "Electronic music project of Alan Palomo, associated with chillwave; its No Way Down EP appeared in 2008, with wider attention and debut album Psychic Chasms in 2009.",
+      "description": "Alan Palomo’s electronic music project paired hazy synthesizers with pop melodies on its 2009 debut album Psychic Chasms, an early touchstone for chillwave.",
       "sources": [
-        "https://www.allmusic.com/artist/neon-indian-mn0002146408",
-        "https://concord.com/publishing-roster/neon-indian/"
+        "https://pitchfork.com/features/rising/8614-rising-neon-indian/",
+        "https://www.flavorwire.com/30766/neon-indian-interview-alan-palomo-psychic-chasms",
+        "https://music.apple.com/us/album/psychic-chasms/1721244693"
       ]
     },
     {
@@ -6138,7 +6186,7 @@
         "end": null,
         "precision": "year"
       },
-      "description": "Manchester rock band formed in 1991 from the earlier group Rain, with Liam and Noel Gallagher becoming its defining frontmen and songwriters. After splitting in 2009, Oasis reunited for live performances in 2025.",
+      "description": "Manchester rock band that grew out of Rain in 1991. Liam Gallagher’s vocals and Noel Gallagher’s songwriting helped drive the band’s rise, beginning with the 1994 debut Definitely Maybe. Oasis split in 2009 and reunited for a 2025 tour.",
       "sources": [
         "https://rockhall.com/inductees/oasis/?app=true",
         "https://www.allmusic.com/artist/oasis-mn0000393345/biography",
@@ -6350,9 +6398,10 @@
       "sources": [
         "https://www.parvathybaul.com/about",
         "https://www.newindianexpress.com/states/odisha/2013/Mar/15/revelling-in-praise-of-the-almighty-458842.html",
-        "https://sangeetnatak.gov.in/public/uploads/awardees/docs/1552475474_2010-2018_SNA_Awardees.pdf"
+        "https://sangeetnatak.gov.in/public/uploads/awardees/docs/1552475474_2010-2018_SNA_Awardees.pdf",
+        "https://archives.adem-geneve.com/archives/Projets/baulartists.html"
       ],
-      "description": "Bengali Baul practitioner, singer and performer who trained with Baul masters; her transformation into a Baul practitioner is dated to 1997, with a reported first public performance in 2001."
+      "description": "Bengali Baul singer and teacher who studied with Sanatan Das Thakur Baul and Shashanko Goshai. In performance, she sings and dances while playing the one-string ektara and the small duggi drum."
     },
     {
       "id": "artist:patrick-cowley",
@@ -6640,7 +6689,7 @@
         "start": 1975,
         "end": 2016
       },
-      "description": "American singer, songwriter and multi-instrumentalist associated with Minneapolis funk.",
+      "description": "Singer, songwriter and multi-instrumentalist who helped define the Minneapolis sound. On 1999 and Purple Rain, he blended funk and R&B grooves with synthesizers and rock guitar.",
       "sources": [
         "https://en.wikipedia.org/wiki/Prince_(musician)",
         "https://rockhall.com/inductees/prince/",
@@ -6796,7 +6845,7 @@
         "end": null,
         "precision": "year"
       },
-      "description": "British rock band formed in 1970 by Freddie Mercury, Brian May and Roger Taylor; John Deacon’s arrival in 1971 completed the classic lineup. The surviving members continue to perform as Queen with Adam Lambert.",
+      "description": "British rock band formed in 1970 by Freddie Mercury, Brian May and Roger Taylor. Bassist John Deacon completed the lineup behind “Bohemian Rhapsody” and the band’s 1985 Live Aid set. May and Taylor later toured as Queen + Adam Lambert.",
       "sources": [
         "https://www.sonymusic.co.uk/artist/queen/",
         "https://freddiemercury.com/bio/",
@@ -6934,7 +6983,7 @@
         "start": 1997,
         "precision": "circa"
       },
-      "description": "Berlin dub-techno and dub project by Basic Channel members.",
+      "description": "Berlin dub project by Basic Channel’s Mark Ernestus and Moritz von Oswald. Their spacious mixes paired bass-heavy tracks with reggae vocalists, including Cornell Campbell on “King in My Empire.”",
       "sources": [
         "https://en.wikipedia.org/wiki/Rhythm_&_Sound",
         "https://www.redbullmusicacademy.com/lectures/moritz-von-oswald-early-morning-freestyles/",
@@ -6967,12 +7016,13 @@
       "period": {
         "start": 1990
       },
-      "description": "Windsor's Plastikman, across the river from Detroit. Stripped acid and techno down to minimal's blueprint.",
+      "description": "Techno DJ and producer who came up between Windsor, Ontario, and Detroit. As Plastikman, he explored the spare, psychedelic side of acid techno on records such as his 1993 debut Sheet One.",
       "sources": [
         "https://en.wikipedia.org/wiki/Richie_Hawtin",
         "https://dmy.co/features/dummy-guide-to-detroit-techno-part-ii-the-second-wave-present-day",
         "https://www.thewire.co.uk/in-writing/interviews/mike-banks-interview",
-        "https://www.allmusic.com/artist/richie-hawtin-mn0000353622"
+        "https://www.allmusic.com/artist/richie-hawtin-mn0000353622",
+        "https://mute.com/artists/plastikman/"
       ]
     },
     {
@@ -7546,7 +7596,7 @@
         "https://snoopdogg.com/album/doggystyle/",
         "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/the-chronic.pdf"
       ],
-      "description": "Long Beach rapper and producer whose 1992 introduction on Dr. Dre’s The Chronic led to the 1993 G-funk landmark Doggystyle and a long-running career across music and media."
+      "description": "Long Beach rapper introduced to a wide audience on Dr. Dre’s “Deep Cover.” His appearances on The Chronic and his 1993 solo debut Doggystyle helped bring G-funk to a mainstream audience."
     },
     {
       "id": "artist:so-solid-crew",
@@ -7633,7 +7683,7 @@
       "period": {
         "start": 1990
       },
-      "description": "Detroit techno DJ and producer associated with the second wave of the scene.",
+      "description": "Detroit techno DJ and producer from the city’s second wave. His work appeared on Transmat, the label founded by fellow Detroit producer Derrick May.",
       "sources": [
         "https://en.wikipedia.org/wiki/Stacey_Pullen",
         "https://dmy.co/features/dummy-guide-to-detroit-techno-part-ii-the-second-wave-present-day",
@@ -7665,7 +7715,7 @@
         "start": 1902,
         "end": 1966
       },
-      "description": "Russian-born composer whose work moved through Russian-period ballets, neoclassicism and serial music; the 1966 endpoint marks his last completed composition, not his death in 1971.",
+      "description": "Russian-born composer who moved from ballets such as The Rite of Spring through neoclassicism to serial composition. His last completed work, Requiem Canticles (1966), was written for voices and orchestra.",
       "sources": [
         "https://www.chambermusicsociety.org/about-the-music/composers/igor-stravinsky",
         "https://www.aso.org/artists/detail/igor-stravinsky",
@@ -7695,7 +7745,7 @@
       "period": {
         "start": 1992
       },
-      "description": "Seattle emo and alternative rock band formed in 1992; Diary (1994) became a touchstone of second-wave emo. Reunions and later tours make the career intermittent, not a continuous 1994–present run.",
+      "description": "Seattle band whose 1994 debut Diary helped shape the second wave of emo. The group has split and reunited several times, returning to the album for a 30th-anniversary tour in 2024.",
       "sources": [
         "https://www.subpop.com/artists/sunny_day_real_estate",
         "https://lifeoftherecord.com/sunny-day-real-estate-notes",
@@ -7856,8 +7906,11 @@
       },
       "sources": [
         "https://www.allmusic.com/style/russian-folk-ma0000012024",
-        "https://en.wikipedia.org/wiki/Terem_Quartet"
-      ]
+        "https://en.wikipedia.org/wiki/Terem_Quartet",
+        "https://realworldrecords.com/releases/classical/",
+        "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=3704726&parentDocumentId=63798&skipCopyright=true&skipWatermark=true"
+      ],
+      "description": "St. Petersburg ensemble whose early recordings used domras, bayan and bass balalaika to bring Russian folk forms and classical repertoire together."
     },
     {
       "id": "artist:terry-riley",
@@ -7898,11 +7951,12 @@
         "start": 1960,
         "end": 1970
       },
-      "description": "Liverpool band whose songwriting and studio experiments reshaped rock and pop.",
+      "description": "Liverpool band whose songwriting and studio experiments reshaped rock and pop. On “Tomorrow Never Knows,” from Revolver (1966), tape loops and processed vocals play against a tambura drone and a repeating drum pattern.",
       "sources": [
         "https://en.wikipedia.org/wiki/The_Beatles",
         "https://www.allmusic.com/artist/the-beatles-mn0000754032",
-        "https://rockhall.com/inductees/beatles/"
+        "https://rockhall.com/inductees/beatles/",
+        "https://www.abbeyroad.com/news/the-beatles-revolver-special-edition-out-now-3240?search=giles+martin"
       ]
     },
     {
@@ -8381,9 +8435,10 @@
       "sources": [
         "https://www.insomniac.com/music/artists/tujamo/",
         "https://www.allmusic.com/artist/tujamo-mn0002643637/biography",
-        "https://www.beatport.com/artist/tujamo/149843"
+        "https://www.beatport.com/artist/tujamo/149843",
+        "https://www.beatport.com/release/boneless/1158493"
       ],
-      "description": "German DJ and producer Matthias Richter, known as Tujamo, who began producing under the alias in 2006 and had his first major international hit with “Boneless” in 2013."
+      "description": "German electro house DJ and producer Matthias Richter, who recorded “Who” with Plastik Funk and released “Boneless” with Steve Aoki and Chris Lake in 2013."
     },
     {
       "id": "artist:tunde-nightingale",
@@ -8560,11 +8615,12 @@
         "start": 1703,
         "end": 1741
       },
-      "description": "Venetian Baroque composer and violinist, especially associated with the solo concerto.",
+      "description": "Venetian Baroque composer and violinist who taught at the Ospedale della Pietà. His 1711 collection L’estro armonico sets solo violins against the ensemble in several kinds of concerto.",
       "sources": [
         "https://en.wikipedia.org/wiki/Antonio_Vivaldi",
         "https://www.classicfm.com/composers/vivaldi/",
-        "https://www.allmusic.com/artist/antonio-vivaldi-mn0000685058"
+        "https://www.allmusic.com/artist/antonio-vivaldi-mn0000685058",
+        "https://www.laphil.com/works/violin-concerto-in-e-major-op-3-no-12"
       ]
     },
     {
@@ -8606,7 +8662,7 @@
         "start": 1970,
         "end": 1986
       },
-      "description": "Electric jazz-fusion group founded by Joe Zawinul and Wayne Shorter.",
+      "description": "Jazz fusion group founded by Joe Zawinul and Wayne Shorter that used electronics to expand its ensemble sound. The 1977 album Heavy Weather featured the hit “Birdland.”",
       "sources": [
         "https://en.wikipedia.org/wiki/Weather_Report",
         "https://www.britannica.com/topic/Weather-Report",
@@ -8651,7 +8707,8 @@
         "https://www.gold.ac.uk/",
         "https://www.theguardian.com/music/2017/jan/24/wiley-godfather-grime",
         "https://research.gold.ac.uk/id/eprint/30170/1/MUS_thesis_deLaceyA_2019.pdf"
-      ]
+      ],
+      "description": "Grime MC and producer from Bow, East London. He made early grime with the garage crew Pay As U Go Cartel and developed the production style known as eskimo."
     },
     {
       "id": "artist:william-byrd",
@@ -8733,8 +8790,10 @@
         "https://www.allmusic.com/genre/folk-ma0000002592",
         "https://www.woodyguthrie.org/biography/biography1.htm",
         "https://www.rockhall.com/inductees/woody-guthrie",
-        "https://www.allmusic.com/artist/woody-guthrie-mn0000577531"
-      ]
+        "https://www.allmusic.com/artist/woody-guthrie-mn0000577531",
+        "https://woodyguthrie.org/biography.htm"
+      ],
+      "description": "American folk songwriter whose songs about the Dust Bowl told the stories of displaced families and migrant workers. His songwriting helped shape the folk revival through songs such as “This Land Is Your Land.”"
     },
     {
       "id": "artist:yellowman",
@@ -8809,8 +8868,10 @@
       },
       "sources": [
         "https://www.allmusic.com/artist/zhanna-bichevskaya-mn0001547074",
-        "https://en.wikipedia.org/wiki/Zhanna_Bichevskaya"
-      ]
+        "https://en.wikipedia.org/wiki/Zhanna_Bichevskaya",
+        "https://melody.su/catalog/folklore/143663/"
+      ],
+      "description": "Russian singer and guitarist who collected and recorded folk songs, from Cossack ballads to northern wedding songs, for the Melodiya label."
     },
     {
       "id": "event:45rpm-record-introduced",
@@ -24883,7 +24944,7 @@
         "start": 1987,
         "precision": "year"
       },
-      "description": "American DJ and producer who debuted as one half of Gang Starr in 1987, later becoming one of hip-hop’s most influential producers.",
+      "description": "Hip-hop DJ and producer who teamed up with Guru in 1989. Their first album together as Gang Starr, “No More Mr. Nice Guy”, features “Words I Manifest” and a track showcasing Premier’s turntable work.",
       "sources": [
         "https://en.wikipedia.org/wiki/DJ_Premier",
         "https://www.allmusic.com/artist/dj-premier-mn0000949298",
@@ -26497,10 +26558,12 @@
         "estimated": true,
         "estimateNote": "Broad career envelope from the reported 1991 formation through the announced 2026 reunion. Includes substantial breaks, notably 2000-2003 and 2009-2026; the continuous bar does not assert uninterrupted activity."
       },
-      "description": "Rock group associated with the formative math-rock scene; Pitchfork identifies Don Caballero alongside Polvo and Ruins as bands that spearheaded the sound.",
+      "description": "Pittsburgh rock group that helped shape math rock. Its album “American Don” showcases the band’s instrumental interplay.",
       "sources": [
         "https://pitchfork.com/reviews/albums/hella-hold-your-horse-is-deluxe-reissue/",
-        "https://en.wikipedia.org/wiki/Don_Caballero"
+        "https://en.wikipedia.org/wiki/Don_Caballero",
+        "https://doncaballero.bandcamp.com/album/american-don",
+        "https://doncaballero.bandcamp.com/album/american-don"
       ]
     },
     {
@@ -28240,7 +28303,7 @@
         "start": 1976,
         "end": null
       },
-      "description": "Southern California band that became an influential early act in American hardcore.",
+      "description": "Southern California band formed in 1976 that helped define early American hardcore punk.",
       "sources": [
         "https://www.blackflagband.com/"
       ]
@@ -28797,9 +28860,10 @@
         "start": 1978,
         "precision": "year"
       },
-      "description": "Washington band that took its go-go sound to audiences in the United States and abroad.",
+      "description": "Washington, D.C., go-go band whose live sound pairs layered percussion and punchy horns with call-and-response chants, heard in performances of “Let’s Get Small” and “Drop the Bomb.”",
       "sources": [
-        "https://troublefunk.com/our-story"
+        "https://troublefunk.com/our-story",
+        "https://www.youtube.com/watch?v=592crJUBgGc"
       ]
     },
     {
@@ -29164,7 +29228,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Seville flamenco singer Pastora Pavón performed as La Niña de los Peines. Her 78 rpm recordings span four decades, beginning in 1910, and the discs held in Andalusia are protected as documentary heritage."
     },
     {
       "id": "artist:camaron-de-la-isla",
@@ -29181,7 +29246,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Flamenco singer from San Fernando, Cádiz, whose work with guitarist Paco de Lucía helped reshape the style."
     },
     {
       "id": "artist:paco-de-lucia",
@@ -29198,7 +29264,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Flamenco guitarist from Algeciras whose breakthrough came with the rumba “Entre dos aguas” from his solo album Fuente y Caudal. The landscape of his native Andalusia inspired the 1976 album Almoraima."
     },
     {
       "id": "artist:amalia-rodrigues",
@@ -29215,7 +29282,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Fado singer who expanded the genre’s literary repertoire with composer Alain Oulman, recording settings of Portuguese verse on albums such as “Com que voz”."
     },
     {
       "id": "artist:carlos-do-carmo",
@@ -29232,7 +29300,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Fado singer whose 1977 album “Um Homem na Cidade” set poems by Ary dos Santos to music by several composers, bringing new material into the fado repertoire."
     },
     {
       "id": "artist:mariza",
@@ -29248,7 +29317,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Fado singer born in Mozambique and raised in Lisbon’s Mouraria neighborhood, where she sang with Fernando Maurício. Her debut album Fado em Mim appeared in 2001."
     },
     {
       "id": "artist:markos-vamvakaris",
@@ -29258,7 +29328,8 @@
       "kind": "person",
       "sources": [
         "https://online-collection-melmo.culture.gov.gr/index.php/Detail/objects/2081/lang/en_US",
-        "https://collection.melos-project.gr/archive/item/438"
+        "https://collection.melos-project.gr/archive/item/438",
+        "https://digitalculture.gov.gr/2021/05/markos-vamvakaris-o-iroas-ton-stichon-tou/"
       ],
       "period": {
         "start": 1933,
@@ -29266,7 +29337,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Greek rebetiko singer, songwriter and bouzouki player from Syros who learned the instrument in Piraeus. His recordings appear on the historical anthology Eros in rebetiko."
     },
     {
       "id": "artist:vasilis-tsitsanis",
@@ -29276,7 +29348,9 @@
       "kind": "person",
       "sources": [
         "https://online-collection-melmo.culture.gov.gr/index.php/Detail/objects/2081/lang/en_US",
-        "https://olympias.lib.uoi.gr/jspui/bitstream/123456789/31067/1/%CE%9C.%CE%95.%20%CE%9C%CE%A0%CE%91%CE%9D%CE%A4%CE%97%20%CE%94%CE%97%CE%9C%CE%97%CE%A4%CE%A1%CE%91%20%CE%92.%202021.pdf"
+        "https://olympias.lib.uoi.gr/jspui/bitstream/123456789/31067/1/%CE%9C.%CE%95.%20%CE%9C%CE%A0%CE%91%CE%9D%CE%A4%CE%97%20%CE%94%CE%97%CE%9C%CE%97%CE%A4%CE%A1%CE%91%20%CE%92.%202021.pdf",
+        "https://epsetem.project.uoi.gr/archive/item/127?lang=en",
+        "https://www.ordoulidis.gr/files/Kokkonis%2C%20Ordoulidis%2C%20Evangelou%2C%202025%2C%20The%20MELOS%20Discographic%20Documentation%20Platform%2C%20The%20Vassilis%20Tsitsanis%20Collection%20of%20Recordings.pdf"
       ],
       "period": {
         "start": 1936,
@@ -29284,7 +29358,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Greek rebetiko composer and bouzouki player whose recordings helped establish the instrument’s role in Greek urban popular song."
     },
     {
       "id": "artist:stella-haskil",
@@ -29294,7 +29369,9 @@
       "kind": "person",
       "sources": [
         "https://online-collection-melmo.culture.gov.gr/index.php/Detail/objects/2081/lang/en_US",
-        "https://collection.melos-project.gr/archive/item/3596?lang=en"
+        "https://collection.melos-project.gr/archive/item/3596?lang=en",
+        "https://www.tch.gr/default.aspx?lang=en-GB&page=3&season=2019-2020&tcheid=2419&tid=52",
+        "https://epsetem.project.uoi.gr/archive/item/1494?lang=en"
       ],
       "period": {
         "start": 1948,
@@ -29302,7 +29379,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Rebetiko singer from Thessaloniki who recorded with Vassilis Tsitsanis. She sang lead on his “Akrogialies deilina,” recorded in Athens in 1948."
     },
     {
       "id": "artist:caterina-valente",
@@ -29318,7 +29396,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Singer and screen star of West Germany’s schlager musicals, including “Love, Dance and a Thousand Songs” (1955)."
     },
     {
       "id": "artist:peter-alexander",
@@ -29334,7 +29413,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Singer and actor in postwar German-language Schlager films. He starred with Caterina Valente in Love, Dance and a Thousand Songs (1955) and sang in the operetta adaptation White Horse Inn (1960)."
     },
     {
       "id": "artist:freddy-quinn",
@@ -29350,7 +29430,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Singer and actor in West Germany’s schlager cinema. He sang the seafaring song “La Paloma” in “Freddy and the Millionaire” (1961)."
     },
     {
       "id": "artist:apirana-ngata",
@@ -29367,7 +29448,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Early composer of waiata-ā-ringa, Māori songs performed with gestures. He was writing in the form at the start of the 20th century."
     },
     {
       "id": "artist:te-puea-herangi",
@@ -29384,7 +29466,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Māori leader who formed Te Pou o Mangatāwhiri, a touring concert party that helped popularize string accompaniment for Māori songs. The group’s North Island performances raised funds for Tūrangawaewae marae."
     },
     {
       "id": "artist:paraire-tomoana",
@@ -29393,7 +29476,8 @@
       "addedOn": "2026-11-13",
       "kind": "person",
       "sources": [
-        "https://teara.govt.nz/en/waiata-hou-contemporary-maori-songs/page-3"
+        "https://teara.govt.nz/en/waiata-hou-contemporary-maori-songs/page-3",
+        "https://teara.govt.nz/en/waiata-hou-contemporary-maori-songs/page-2"
       ],
       "period": {
         "start": 1916,
@@ -29401,7 +29485,8 @@
         "precision": "circa",
         "estimated": true,
         "estimateNote": "The date marks documented musical activity in the sources and may follow earlier work."
-      }
+      },
+      "description": "Māori composer who helped develop waiata-ā-ringa by bringing words and gestures together in song. During the First World War, he wrote songs and led his group Te Poi o Heretaunga to support fundraising."
     },
     {
       "id": "artist:leonor-marzano",
@@ -29413,7 +29498,7 @@
         "start": 1940,
         "precision": "circa"
       },
-      "description": "Pianist credited with creating cuarteto’s signature rhythm.",
+      "description": "Argentine pianist credited with devising the “tunga tunga” rhythm that underpins Córdoba’s cuarteto music and dancing. Her piano supplied the percussive pulse of the early ensemble sound.",
       "sources": [
         "https://www.argentina.gob.ar/cultura/manifestaciones-del-patrimonio-cultural-inmaterial/cordoba/cuarteto-musica-y-danza"
       ]
@@ -29424,7 +29509,7 @@
       "name": "La Mona Jiménez",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Córdoba singer and a central figure in cuarteto.",
+      "description": "Córdoba cuarteto singer who made his debut with Cuarteto Berna in 1967 at age 15. He went on to become a central figure in the city’s dance music.",
       "sources": [
         "https://www.argentina.gob.ar/noticias/rodrigo-bueno-el-idolo-cordobes-que-continua-despertando-pasiones",
         "https://eldoce.tv/cuarteteando/la-mona-jimenez-debut-cuarteto-berna-audio-inedito-diez-monedas_126214/"
@@ -29440,7 +29525,7 @@
       "name": "Rodrigo Bueno",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Córdoba singer and popular interpreter of cuarteto.",
+      "description": "Cuarteto singer from Córdoba, Argentina, nicknamed El Potro. After breaking through with Lo Mejor del Amor in 1996, he performed a run of shows at Buenos Aires’s Luna Park in 2000.",
       "sources": [
         "https://www.argentina.gob.ar/noticias/rodrigo-bueno-el-idolo-cordobes-que-continua-despertando-pasiones"
       ],
@@ -29456,7 +29541,7 @@
       "name": "Lord Flea",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Singer heard on early Jamaican mento records.",
+      "description": "Jamaican mento singer who performed in Kingston clubs and recorded for producer Ken Khouri. He later released Swingin’ Calypsos on Capitol in 1957.",
       "sources": [
         "https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html"
       ],
@@ -29471,7 +29556,7 @@
       "name": "Count Lasher",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Singer and recording artist of Jamaica’s early mento era.",
+      "description": "Jamaican mento singer and songwriter who recorded in both rural and urban styles. His song “Mango Time” evokes the start of Jamaica’s mango season.",
       "sources": [
         "https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html"
       ],
@@ -29490,7 +29575,7 @@
         "start": 1951,
         "precision": "circa"
       },
-      "description": "One of the first mento performers to release a record made in Jamaica.",
+      "description": "Jamaican entertainer among the first mento performers to release records made on the island. His 1952 recording of “Donkey City” survives on the Jamaica: Mento 1951–1958 anthology.",
       "sources": [
         "https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html"
       ]
@@ -29568,7 +29653,7 @@
       "name": "Freddie Aguilar",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Filipino folk singer and songwriter whose career was helped by the Metropop festival.",
+      "description": "Filipino folk singer and songwriter whose song “Anak” travelled internationally in numerous translations. His repertoire also included “Bayan Ko”.",
       "sources": [
         "https://billboardphilippines.com/culture/scenes/the-history-and-future-of-filipino-pop-from-folk-love-songs-to-the-p-pop-wave/",
         "https://www.philstar.com/lifestyle/supreme/2012/08/25/841695/apo-milestones",
@@ -29587,12 +29672,13 @@
       "name": "Ryan Cayabyab",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Filipino composer whose career was nurtured by the Metropop songwriting competition.",
+      "description": "Filipino composer, arranger and educator whose “Kay Ganda ng Ating Musika” won the first Metropop song contest in 1978. He went on to write for choirs, orchestras and musical theater while championing Original Pilipino Music.",
       "sources": [
         "https://billboardphilippines.com/culture/scenes/the-history-and-future-of-filipino-pop-from-folk-love-songs-to-the-p-pop-wave/",
         "https://www.philstar.com/lifestyle/supreme/2012/08/25/841695/apo-milestones",
         "https://legacy.senate.gov.ph/press_release/2025/0603_padilla1.asp",
-        "https://www.maestroryancayabyab.com/about"
+        "https://www.maestroryancayabyab.com/about",
+        "https://rmaward.asia/rmawardees/cayabyab-raymundo-pujante/"
       ],
       "period": {
         "start": 1978,
@@ -29605,9 +29691,10 @@
       "name": "Françoise Hardy",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "French singer and songwriter who rose to prominence in the early yé-yé wave.",
+      "description": "French singer and songwriter whose 1962 single “Tous les garçons et les filles” made her one of the leading voices of yé-yé.",
       "sources": [
-        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=3951"
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=3951",
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=4941"
       ],
       "period": {
         "start": 1960,
@@ -29620,9 +29707,10 @@
       "name": "Claude François",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Singer who became a figure of French variety through the yé-yé wave.",
+      "description": "Singer who broke through in the French yé-yé wave with “Belles, belles, belles”, adapted by Vline Buggy. His stage shows combined singing, dancing and drumming.",
       "sources": [
-        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=3951"
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/View?id=3951",
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/SimpleExhibitions?id=4181"
       ],
       "period": {
         "start": 1962,
@@ -29650,10 +29738,11 @@
       "name": "Rhoma Irama",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Indonesian dangdut singer who founded the Soneta orchestra.",
+      "description": "Indonesian singer and founder of Soneta Grup who brought rock into dangdut. His early-1970s work with Elvy Sukaesih included playful duets, while his later songs also addressed his Islamic faith.",
       "sources": [
         "https://www.academia.edu/102773866/DANGDUT_DALAM_CENGKERAMAN_TELEVISI",
-        "https://www.logos-verlag.de/PDFS/aemr.16-8.pdf"
+        "https://www.logos-verlag.de/PDFS/aemr.16-8.pdf",
+        "https://folkways-media.si.edu/docs/folkways/artwork/SFW40056.pdf"
       ],
       "period": {
         "start": 1968,
@@ -30059,7 +30148,7 @@
         "precision": "year",
         "end": 1994
       },
-      "description": "Pioneering duo rooted in rural caipira music.",
+      "description": "Brothers from rural São Paulo whose recordings, including “Chico Mineiro,” made the storytelling and viola accompaniment of música caipira part of the popular sertanejo repertoire.",
       "sources": [
         "https://www.saomanuel.sp.gov.br/portal/noticias/0/3/296/tonico-e-tinoco-estao-entre-os-artistas-que-mais-venderam-discos-na-historia"
       ]
@@ -30107,9 +30196,10 @@
         "start": 1954,
         "precision": "circa"
       },
-      "description": "Sinaloan banda led in its early recording years by clarinetist Cruz Lizárraga.",
+      "description": "Sinaloan banda led in its early recording years by clarinetist Cruz Lizárraga. Its recorded repertoire includes rancheras such as “Mexicano Hasta Las Cachas”, with Las Hermanas Sarabia.",
       "sources": [
-        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07048.pdf"
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07048.pdf",
+        "https://folkways.si.edu/banda-el-recodo-de-cruz-lizarraga/mexicano-hasta-las-cachas/latin-world/music/track/smithsonian"
       ]
     },
     {
@@ -30122,10 +30212,11 @@
         "start": 1950,
         "precision": "decade"
       },
-      "description": "Sinaloan banda associated with arranger Ramón López Alvarado.",
+      "description": "Sinaloan banda associated with arranger Ramón López Alvarado. Its recordings include the polka “Que Milagro Chaparrita”.",
       "sources": [
         "https://sic.cultura.gob.mx/ficha.php?table=frpintangible&table_id=422",
-        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07048.pdf"
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07048.pdf",
+        "https://folkways.si.edu/bandas-sinaloenses-musica-tambora/latin-world/music/album/smithsonian"
       ]
     },
     {
@@ -30138,9 +30229,10 @@
         "start": 1940,
         "precision": "decade"
       },
-      "description": "Early Sinaloan banda that recorded in Mexico City.",
+      "description": "Early Sinaloan banda that recorded in Mexico City. Its repertoire crossed dance forms, from the polka “Guango” to the danzón “Culiacán”.",
       "sources": [
-        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07048.pdf"
+        "https://folkways-media.si.edu/docs/folkways/artwork/ARH07048.pdf",
+        "https://folkways.si.edu/bandas-sinaloenses-musica-tambora/latin-world/music/album/smithsonian"
       ]
     },
     {
@@ -30153,7 +30245,7 @@
         "start": 1947,
         "precision": "circa"
       },
-      "description": "Pioneering norteño duo from Nuevo León.",
+      "description": "Norteño duo from Nuevo León whose singing was backed by Eugenio Ábrego’s accordion and Tomás Ortiz’s bajo sexto. Radio broadcasts and records helped carry their sound beyond northern Mexico.",
       "sources": [
         "https://folkways-media.si.edu/docs/folkways/artwork/ARH09048.pdf"
       ]
@@ -30199,7 +30291,7 @@
         "start": 2019,
         "precision": "circa"
       },
-      "description": "Mexican singer and pioneer of corridos tumbados.",
+      "description": "Singer and songwriter from Hermosillo, Sonora, who helped pioneer corridos tumbados by blending Mexican corridos with American trap. His 2019 remix of “Soy El Diablo” with Bad Bunny brought the sound to a wider audience.",
       "sources": [
         "https://www.wmg.com/news/warner-chappell-music-signs-publishing-deal-corridos-tumbados-pioneer-and-hitmaker-natanael"
       ]
@@ -30246,7 +30338,7 @@
         "start": 1943,
         "precision": "year"
       },
-      "description": "Composer whose vallenato songs chronicled Caribbean Colombia.",
+      "description": "Vallenato composer whose songs turned the people and places of Caribbean Colombia into musical chronicles. He co-founded the Festival de la Leyenda Vallenata in Valledupar in 1968.",
       "sources": [
         "https://www.fundacionescalona.org/history"
       ]
@@ -30261,7 +30353,7 @@
         "start": 1950,
         "precision": "circa"
       },
-      "description": "Vallenato accordionist and early recording artist.",
+      "description": "Early recording artist on the vallenato accordion, with a first commercial release in 1950 and later success on the festival stage.",
       "sources": [
         "https://biblioarchivo.bogota.gov.co/opac-tmpl/IMG_CINEP1/DJ02-1985-1S-4.pdf"
       ]
@@ -30277,7 +30369,7 @@
         "precision": "circa",
         "end": 2013
       },
-      "description": "Singer and songwriter who brought vallenato to an international audience.",
+      "description": "Vallenato singer and songwriter from La Guajira whose recordings helped take the music beyond Colombia. He recorded the album “Herencia Vallenata” with accordionist Náfer Durán.",
       "sources": [
         "https://enciclopedia.banrepcultural.org/index.php?title=Diomedes_D%C3%ADaz"
       ]
@@ -30340,7 +30432,7 @@
         "precision": "year",
         "end": 1983
       },
-      "description": "Peruvian singer and composer of “La flor de la canela.”",
+      "description": "Peruvian singer and composer whose “La flor de la canela” is part of the Lima tradition of vals criollo.",
       "sources": [
         "https://www.bnp.gob.pe/bnp-recuerda-a-chabuca-granda-luchas-reyes-y-felipe-pinglo/",
         "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/NL20170111.pdf"
@@ -30357,7 +30449,7 @@
         "precision": "year",
         "end": 1936
       },
-      "description": "Peruvian composer of the vals criollo “El Plebeyo.”",
+      "description": "Peruvian composer of vals criollo, including “El Plebeyo”. His first waltz, “Amelia”, dates to 1917.",
       "sources": [
         "https://www.bnp.gob.pe/bnp-recuerda-a-chabuca-granda-luchas-reyes-y-felipe-pinglo/",
         "https://transparencia.cultura.gob.pe/sites/default/files/transparencia/2016/08/resoluciones-del-viceministerio-de-patrimonio-cultural-e-industrias-culturales/rvm108-declararpatrimonioculturaldelanacionalaobramusicaldefelipepingloalva.pdf",
@@ -30387,7 +30479,7 @@
       "name": "Talal Maddah",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Saudi singer who co-founded the record company Riyadhphone.",
+      "description": "Saudi singer who recorded “Maqadeer” and co-founded Riyadhphone, a label that helped launch the recording careers of other Saudi singers.",
       "sources": [
         "https://saudipedia.com/en/timeline-of-saudi-singing",
         "https://www.euronews.com/2023/06/10/rhythms-of-the-gulf-the-singing-star-bringing-khaliji-music-to-the-world"
@@ -30451,10 +30543,11 @@
       "name": "Asha Bhosle",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Indian film playback singer whose work reached audiences in Britain through films and recordings.",
+      "description": "Indian playback singer whose film credits span languages including Hindi and Marathi. She received a National Film Award for singing ghazals in “Umrao Jaan” (1981).",
       "sources": [
         "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
-        "https://www.southasianist.ed.ac.uk/southasianist/article/download/167/992/2102"
+        "https://www.tuliresearchcentre.org/asha-bhosle/research-centre/library",
+        "https://nfaindia.org/images/pdf/29th%20National%20Film%20Award%20Catalogue.pdf"
       ],
       "period": {
         "start": 1940,
@@ -30484,7 +30577,7 @@
       "name": "Alaap",
       "addedOn": "2026-11-13",
       "kind": "group",
-      "description": "Pioneering group in the British bhangra scene.",
+      "description": "British bhangra group founded in 1977 by singer and producer Channi Singh. The group helped popularize Punjabi music among young British audiences.",
       "sources": [
         "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
         "https://catalogue.royalalberthall.com/Record.aspx?id=DS/UK/14261&src=CalmView.Persons",
@@ -30502,7 +30595,7 @@
       "name": "Heera",
       "addedOn": "2026-11-13",
       "kind": "group",
-      "description": "Bhangra group from the first wave of British performers.",
+      "description": "Early British bhangra band formed as Quallander in 1979. The group recorded with Punjabi singer Narinder Biba before becoming known as Heera.",
       "sources": [
         "https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf",
         "https://catalogue.royalalberthall.com/Record.aspx?id=DS/UK/14261&src=CalmView.Persons",
@@ -30538,7 +30631,7 @@
       "name": "Sam Hui",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Hong Kong singer whose album The Private Eyes earned a platinum disc in 1978.",
+      "description": "Hong Kong singer, songwriter and actor whose songs for comedies such as Games Gamblers Play and The Private Eyes helped define 1970s Cantopop. He also starred in both films.",
       "sources": [
         "https://www.info.gov.hk/gia/general/202107/27/P2021072700270p.htm",
         "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/English/Sam-Hui_e.pdf",
@@ -30555,7 +30648,7 @@
       "name": "Anita Mui",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Hong Kong singer who rose to prominence through a televised singing competition.",
+      "description": "Hong Kong pop singer who started performing as a child and won the first New Talent Singing Awards in 1982. Her later concerts became known for changing costumes and stage images.",
       "sources": [
         "https://artsandculture.google.com/story/anita-mui-ever-changing-singing-diva-hong-kong-heritage-museum/2wWBO4AGwW53MA?hl=en"
       ],
@@ -30655,7 +30748,7 @@
       "name": "Bulimundo",
       "addedOn": "2026-11-13",
       "kind": "group",
-      "description": "Cabo Verdean band that popularized electric arrangements of funaná.",
+      "description": "Cabo Verdean band that helped popularize electric funaná. Its arrangements moved the ferinho’s rhythmic role to bass and drums and used keyboards for melody.",
       "sources": [
         "https://eng.caboverdeamusica.online/funana/"
       ],
@@ -30766,9 +30859,10 @@
       "name": "Ochieng Nelly Mengo",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Benga musician who fronted Victoria Jazz alongside Collela Mazee.",
+      "description": "Early Luo benga musician who performed with Victoria Jazz alongside Collela Mazee. On “Sabina ya Neli,” recorded with Tausi Jazz in 1973, the lead guitar echoes the vocal melody over syncopated percussion.",
       "sources": [
-        "https://www.edocs.maseno.ac.ke/bitstream/handle/123456789/904/GRADUATION%20THESIS.pdf?isAllowed=y&sequence=3"
+        "https://www.edocs.maseno.ac.ke/bitstream/handle/123456789/904/GRADUATION%20THESIS.pdf?isAllowed=y&sequence=3",
+        "https://journal.ru.ac.za/index.php/africanmusic/article/download/1888/965/966"
       ],
       "period": {
         "start": 1970,
@@ -30784,9 +30878,10 @@
       "name": "Ti Frère",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Mauritian singer and prominent performer of traditional séga.",
+      "description": "Mauritian séga singer whose performances of “Fidelia” and “Roseda” at the 1964 Nuit du Séga in Le Morne brought wider recognition to traditional Mauritian séga.",
       "sources": [
-        "https://journals.openedition.org/remi/pdf/13639"
+        "https://journals.openedition.org/remi/pdf/13639",
+        "https://ich.unesco.org/doc/src/26081-EN.pdf"
       ],
       "period": {
         "start": 1949,
@@ -30799,10 +30894,11 @@
       "name": "Serge Lebrasse",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Mauritian traditional séga singer recognized by the state for his practice.",
+      "description": "Mauritian séga singer who composed early songs while studying with the local Police Band. “Madam Eugène” became one of the first séga hits to reach audiences across Mauritius.",
       "sources": [
         "https://ich.unesco.org/doc/src/26081-EN.pdf?v=1393439355",
-        "https://ich.unesco.org/doc/src/30634-EN.pdf?t=1428911987"
+        "https://ich.unesco.org/doc/src/30634-EN.pdf?t=1428911987",
+        "https://musicinafrica.net/node/15554"
       ],
       "period": {
         "start": 1958,
@@ -30815,7 +30911,7 @@
       "name": "Fanfan",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Mauritian performer of traditional séga tipik.",
+      "description": "Mauritian performer of traditional séga tipik who rose to prominence in the 1960s and 1970s. Mauritius consulted him as a practitioner for its heritage inventory.",
       "sources": [
         "https://ich.unesco.org/doc/src/26081-EN.pdf?v=1393439355",
         "https://ich.unesco.org/doc/src/30634-EN.pdf?t=1428911987"
@@ -30834,7 +30930,7 @@
       "name": "Danyèl Waro",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Réunionnais performer known for maloya.",
+      "description": "Singer from Réunion whose recordings, including “Batarsité” (1994), helped sustain and renew the island’s maloya tradition.",
       "sources": [
         "https://piros.re/artistes/granmoun-lele/",
         "https://www.reunionnaisdumonde.com/IMG/pdf/MALOYA.pdf"
@@ -30850,7 +30946,7 @@
       "name": "Firmin Viry",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Réunionnais performer and a leading figure in maloya.",
+      "description": "Singer whose early maloya recordings, including a 1976 release, helped bring the music of Réunion to a wider audience on record.",
       "sources": [
         "https://piros.re/artistes/granmoun-lele/",
         "https://www.reunionnaisdumonde.com/IMG/pdf/MALOYA.pdf"
@@ -30965,9 +31061,11 @@
       "name": "Shaaban Abdel Rahim",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Egyptian singer known for his recordings in the shaabi tradition.",
+      "description": "Egyptian shaabi singer who turned current events into topical songs with lyricist Islam Khalil. He became widely known for controversial political songs such as “Ana Bakrah Isra’il.”",
       "sources": [
-        "https://www.open-access.bcu.ac.uk/14036/1/Khyam%20Allami_PhD%20Thesis%20Published_Final%20Version_Submitted%2012%204%2022_Final%20Award%2018%2010%2022.pdf"
+        "https://www.open-access.bcu.ac.uk/14036/1/Khyam%20Allami_PhD%20Thesis%20Published_Final%20Version_Submitted%2012%204%2022_Final%20Award%2018%2010%2022.pdf",
+        "https://www.arabmediasociety.com/wp-content/uploads/2017/12/20071001152759_AMS3_Walter_Armbrust.pdf",
+        "https://english.ahram.org.eg/NewsContent/5/33/357028/Arts--Culture/Music/Egyptian-singer-Shaaban-AbdelRehim-of-I-hate-Israe.aspx"
       ],
       "period": {
         "start": 1999,
@@ -30980,10 +31078,12 @@
       "name": "Oka",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Egyptian performer featured in the documentary Electro Chaabi, which follows the early mahraganat scene.",
+      "description": "Egyptian mahraganat performer Muhammad Salah, known as Oka, who formed the group 8% with Ortega and Shehta Karika. Hind Meddeb documented his work in the film Electro Chaabi.",
       "sources": [
         "https://www.kexp.org/read/2014/5/21/siff-2014-face-the-music-preview-electro-chaabi/",
-        "https://www.open-access.bcu.ac.uk/14036/1/Khyam%20Allami_PhD%20Thesis%20Published_Final%20Version_Submitted%2012%204%2022_Final%20Award%2018%2010%2022.pdf"
+        "https://www.open-access.bcu.ac.uk/14036/1/Khyam%20Allami_PhD%20Thesis%20Published_Final%20Version_Submitted%2012%204%2022_Final%20Award%2018%2010%2022.pdf",
+        "https://www.rotana.net/en/actor-details/11445/%D8%A3%D9%88%D9%83%D8%A7",
+        "https://iffr.com/en/iffr/2014/films/electro-chaabi"
       ],
       "period": {
         "start": 2011,
@@ -30996,10 +31096,11 @@
       "name": "Ortega",
       "addedOn": "2026-11-13",
       "kind": "person",
-      "description": "Cairo performer featured in Electro Chaabi for his work in mahraganat.",
+      "description": "Egyptian mahraganat performer who produced music with Oka using a small computer-based studio. The pair appear in Hind Meddeb’s Electro Chaabi, which follows Cairo’s early mahraganat scene.",
       "sources": [
         "https://www.kexp.org/read/2014/5/21/siff-2014-face-the-music-preview-electro-chaabi/",
-        "https://www.open-access.bcu.ac.uk/14036/1/Khyam%20Allami_PhD%20Thesis%20Published_Final%20Version_Submitted%2012%204%2022_Final%20Award%2018%2010%2022.pdf"
+        "https://www.open-access.bcu.ac.uk/14036/1/Khyam%20Allami_PhD%20Thesis%20Published_Final%20Version_Submitted%2012%204%2022_Final%20Award%2018%2010%2022.pdf",
+        "https://iffr.com/en/iffr/2014/films/electro-chaabi"
       ],
       "period": {
         "start": 2011,

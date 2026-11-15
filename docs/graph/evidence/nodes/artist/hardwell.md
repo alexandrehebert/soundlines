@@ -4,7 +4,7 @@ Graph ID `artist:hardwell`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ Replaced the decade-level 2000 start with 2002, directly supported by Hardwell�
 ## Remaining uncertainty
 
 “Began DJing” is an early practice date, not necessarily first paid gig, release or professional booking.
+
+## Description review (2026-11-15)
+
+The official biography and ADE artist profile document his early start, festival performances and style. [Source 2](https://www.djhardwell.com/biography) · [Source 3](https://www.amsterdam-dance-event.nl/en/artists-speakers/hardwell/20454/)

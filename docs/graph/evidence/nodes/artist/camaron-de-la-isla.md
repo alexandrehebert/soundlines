@@ -3,7 +3,7 @@
 Graph ID `artist:camaron-de-la-isla`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -14,3 +14,7 @@ Documents Camarón’s flamenco career.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The regional tourism board identifies his origins in San Fernando and credits his partnership with Paco de Lucía with reshaping flamenco. [Andalucía Tourist Board](https://en.andalucia.org/blog/post/the-route-of-camaron-de-la-isla/)

@@ -4,7 +4,7 @@ Graph ID `artist:weather-report`
 
 **Review status** · Reviewed — 1970–1986 fusion band confirmed; sources upgraded
 
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -22,3 +22,7 @@ Wikipedia: founded 1970, active to 1986; NEA dates the Shorter–Zawinul formati
 ## Remaining uncertainty
 
 Founding given as 1970 or 1971 depending on source.
+
+## Description review (2026-11-15)
+
+[The National Endowment for the Arts oral history programme’s Shorter biography](https://www.arts.gov/honors/jazz/wayne-shorter) names the founders and electronics, and identifies “Birdland” as the hit from Heavy Weather in 1977.

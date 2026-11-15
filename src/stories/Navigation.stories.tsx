@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
+import { expect } from 'storybook/test'
 import { withExplorer } from '../../.storybook/withExplorer.tsx'
 import { BrandLink } from '../design-system/navigation/BrandLink.tsx'
 import { DiscoveryFooter, DiscoveryHeader } from '../design-system/navigation/DiscoveryChrome.tsx'
@@ -49,4 +50,12 @@ function ExplorerLinksExample() {
   )
 }
 
-export const ExplorerLinks: Story = { render: () => <ExplorerLinksExample /> }
+export const ExplorerLinks: Story = {
+  render: () => <ExplorerLinksExample />,
+  play: async ({ canvas, userEvent }) => {
+    const house = canvas.getByRole('link', { name: 'House' })
+    await expect(house).toHaveAttribute('href', '/en/genres/house')
+    await userEvent.click(house)
+    await expect(canvas.getByRole('status', { name: 'Current explorer selection' })).toHaveTextContent('genre:house')
+  },
+}

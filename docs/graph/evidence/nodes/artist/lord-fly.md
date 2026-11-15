@@ -3,7 +3,7 @@
 Graph ID `artist:lord-fly`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -14,3 +14,7 @@ One of the first mento performers to release a record made in Jamaica.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The liner notes cover the early commercial records and the track list dates his Donkey City performance to 1952. [Source 1](https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html)

@@ -3,7 +3,7 @@
 Graph ID `artist:the-beatles`
 
 **Review status** · Reviewed — period confirmed; sources added
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 - [Rock & Roll Hall of Fame, The Beatles](https://rockhall.com/inductees/beatles/) — inducted 1988; “ushered in a modern era of rock”.
@@ -12,3 +12,7 @@ Graph ID `artist:the-beatles`
 
 ## Assessment
 1960–1970 and description confirmed.
+
+## Description review (2026-11-15)
+
+[Abbey Road’s account of the Revolver sessions](https://www.abbeyroad.com/news/the-beatles-revolver-special-edition-out-now-3240?search=giles+martin) documents the loops, Leslie-treated vocals, tambura drone and drum pattern.

@@ -3,7 +3,7 @@
 Graph ID `artist:eddie-fowlkes`
 
 **Review status** · Reviewed — first-wave status and 1986 debut confirmed
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 - [Detroit Historical Society: Fowlkes](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/fowlkes-eddie) — first release “Goodbye Kiss” on Metroplex in 1986; City Boy Records 1993.
@@ -14,3 +14,7 @@ Graph ID `artist:eddie-fowlkes`
 
 ## Assessment
 The 1986 start (first record) and open period are confirmed. He DJed in the Deep Space collective earlier, but 1986 is a clear professional anchor.
+
+## Description review (2026-11-15)
+
+The Detroit Historical Society documents his role in the first wave and identifies his first release and label. [Detroit Historical Society](https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/fowlkes-eddie)

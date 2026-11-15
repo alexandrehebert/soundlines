@@ -141,7 +141,7 @@ describe('localized graph overlays', () => {
       if (['event', 'instrument', 'place', 'scene'].includes(node.type)) {
         requireTranslation(translation?.name, 'name')
       }
-      if (node.description) requireTranslation(translation?.description, 'description')
+      requireTranslation(translation?.description, 'description')
       if (node.phaseNote) requireTranslation(translation?.phaseNote, 'phaseNote')
       if (node.period?.estimateNote) requireTranslation(translation?.estimateNote, 'estimateNote')
       for (const phase of node.phases ?? []) {

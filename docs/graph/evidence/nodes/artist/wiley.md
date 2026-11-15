@@ -4,7 +4,7 @@ Graph ID `artist:wiley`
 
 **Review status** · Reviewed: replaced unsupported 1990s decade start with documented late-1990s scene activity; retained open-ended career.
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ Graph ID `artist:wiley`
 ## Remaining uncertainty
 
 The graph’s start is a sourceable public-career marker only; earlier DJ activity may predate the surviving/cited broadcast.
+
+## Description review (2026-11-15)
+
+[London Museum’s grime history](https://www.londonmuseum.org.uk/collections/london-stories/londons-grime-stars/) identifies Bow, Pay As U Go Cartel’s early grime and Wiley’s eskimo sound.

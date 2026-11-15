@@ -4,7 +4,7 @@ Graph ID `artist:maurice-ravel`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:maurice-ravel`
 ## Assessment
 
 Keep the 1890s onset; sources document early compositions from 1895 onward, while Ravel’s study began earlier. The 1937 end is confirmed. Decade precision is appropriate because no single date marks career start. Confidence: high for decade and endpoint.
+
+## Description review (2026-11-15)
+
+IRCAM’s biography details his piano, chamber and orchestral catalog and the Diaghilev commission and premiere. [Source 2](https://resources.ircam.fr/fr/composer/maurice-ravel/biography)

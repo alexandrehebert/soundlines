@@ -4,7 +4,7 @@ Graph ID `artist:guy`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -19,3 +19,7 @@ Kept 1987 as the formation year and updated the period endpoint to 2000, the doc
 ## Remaining uncertainty
 
 The group’s later touring and intermittent reunions mean the graph’s single interval compresses multiple active periods.
+
+## Description review (2026-11-15)
+
+The Hall of Fame program identifies the founding lineup. Contemporary reporting documents the group's association with new jack swing and its 2000 reunion album. [Source 1](https://rbhalloffamemarksms.com/wp-content/uploads/2022/07/2019-RB-HOF-Program-Book.pdf) · [Source 2](https://www.latimes.com/archives/la-xpm-2000-jan-23-ca-56629-story.html)

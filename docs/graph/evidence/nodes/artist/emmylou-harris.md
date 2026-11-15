@@ -4,7 +4,7 @@ Graph ID `artist:emmylou-harris`
 
 **Review status** · Reviewed: changed decade start to 1969 first-album/public-career marker; noted 1975 major country breakthrough as separate event.
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -23,3 +23,7 @@ Gliding Bird is variously dated 1969 or 1970 across credible accounts; confirm t
 
 
 Reference maintenance: retired redundant, unstable or weakly scoped citations in favour of the sources listed above. This does not imply that multiple references independently prove every claim.
+
+## Description review (2026-11-15)
+
+The museum documents her work with Parsons and the 1975 album that established her country career. [Country Music Hall of Fame and Museum](https://www.countrymusichalloffame.org/hall-of-fame/emmylou-harris)

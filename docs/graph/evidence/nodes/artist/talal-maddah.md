@@ -3,7 +3,7 @@
 Graph ID `artist:talal-maddah`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Places Maddah at the centre of the development of Saudi commercial song.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+[Saudipedia’s chronology of Saudi song](https://saudipedia.com/en/timeline-of-saudi-singing) dates “Maqadeer” to Maddah’s 1970s releases, records the co-founding of Riyadhphone and names singers who rose to prominence through the label.

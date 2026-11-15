@@ -3,7 +3,7 @@
 Graph ID `artist:natanael-cano`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -14,3 +14,7 @@ Mexican singer and pioneer of corridos tumbados.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+[Warner Chappell’s publishing announcement](https://www.wmg.com/news/warner-chappell-music-signs-publishing-deal-corridos-tumbados-pioneer-and-hitmaker-natanael) identifies Cano’s birthplace, the corrido–trap blend and his 2019 breakthrough collaboration.

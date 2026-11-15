@@ -3,7 +3,7 @@
 Graph ID `artist:la-mona-jimenez`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Córdoba singer and a central figure in cuarteto.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+El Doce documents the 1967 debut and his age. The Argentine culture ministry identifies his significance to Córdoba cuarteto. [Source 1](https://www.argentina.gob.ar/noticias/rodrigo-bueno-el-idolo-cordobes-que-continua-despertando-pasiones) · [Source 2](https://eldoce.tv/cuarteteando/la-mona-jimenez-debut-cuarteto-berna-audio-inedito-diez-monedas_126214/)

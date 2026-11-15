@@ -4,7 +4,7 @@ Graph ID `artist:infected-mushroom`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ Changed the decade-level 1990 start to the 1996 formation year, supported by All
 ## Remaining uncertainty
 
 Formation year is well established; line-up is generally described as a duo, with touring collaborators varying.
+
+## Description review (2026-11-15)
+
+The specialist biography dates the Haifa formation. The official biography describes the sound and documents the REBORN re-recordings. [Source 1](https://www.allmusic.com/artist/infected-mushroom-mn0000087910) · [Source 2](https://infected-mushroom.com/bio/)

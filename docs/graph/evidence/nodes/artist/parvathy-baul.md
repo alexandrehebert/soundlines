@@ -4,7 +4,7 @@ Graph ID `artist:parvathy-baul`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -19,3 +19,7 @@ Changed the c.1995 start to c.1997, which better matches the documented beginnin
 ## Remaining uncertainty
 
 The 1997 date is a retrospective biographical account; the exact earliest start of training is not given.
+
+## Description review (2026-11-15)
+
+Her [official biography](https://www.parvathybaul.com/about) names both teachers and describes her own role as a teacher. The [Ateliers d’ethnomusicologie artist program](https://archives.adem-geneve.com/archives/Projets/baulartists.html) documents her combination of voice, dance, ektara and duggi.

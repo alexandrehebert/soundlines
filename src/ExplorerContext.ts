@@ -152,7 +152,7 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
     const update = () => {
       const url = explorerUrl(next, locale, window.location.href)
       const href = `${url.pathname}${url.search}${url.hash}`
-      if (url.pathname !== window.location.pathname) router.push(href, { scroll: false })
+      if (changesPage) router.push(href, { scroll: false })
       else if (url.href !== window.location.href) {
         const state = window.history.state
         if (next.selectedId && !selectedId) window.history.pushState({ soundlinesDetails: true }, '', href)
@@ -188,41 +188,48 @@ export function useExplorerState(graph: MusicGraph, locale: Locale = DEFAULT_LOC
   }, [isHome, view, order, genreDisplay, selectedId, locale, router, cancelPendingUpdate, startPageTransition])
 
   useEffect(() => {
-    if (handledRoute.current === routeKey) return
-    handledRoute.current = routeKey
-    if (isOpenDataPath(pathname) || isJukeboxPath(pathname)) return
-
-    const currentUrl = new URL(window.location.href)
-    const parsed = readLocation(currentUrl.href)
-    const canonical = explorerUrl(parsed, locale, currentUrl)
-    if (canonical.href !== currentUrl.href) {
-      const href = `${canonical.pathname}${canonical.search}${canonical.hash}`
-      if (canonical.pathname === currentUrl.pathname && canonical.search === currentUrl.search) {
-        // Next may treat removing an inherited redirect hash as a no-op.
-        window.history.replaceState(window.history.state, '', href)
-      } else {
-        router.replace(href, { scroll: false })
+    function reconcileRoute(traversed: boolean) {
+      const currentUrl = new URL(window.location.href)
+      const currentRoute = `${currentUrl.pathname}${currentUrl.search}`
+      if (!traversed && handledRoute.current === currentRoute) return
+      handledRoute.current = currentRoute
+      if (isOpenDataPath(currentUrl.pathname) || isJukeboxPath(currentUrl.pathname)) return
+      const parsed = readLocation(currentUrl.href)
+      const canonical = explorerUrl(parsed, locale, currentUrl)
+      if (canonical.href !== currentUrl.href) {
+        const href = `${canonical.pathname}${canonical.search}${canonical.hash}`
+        if (canonical.pathname === currentUrl.pathname && canonical.search === currentUrl.search) {
+          // Next may treat removing an inherited redirect hash as a no-op.
+          window.history.replaceState(window.history.state, '', href)
+        } else {
+          router.replace(href, { scroll: false })
+        }
       }
+
+      const next = parsed.view === 'history' && location.view === 'history'
+        ? { ...parsed, timelineView: location.timelineView }
+        : parsed
+      cancelPendingUpdate()
+      if (sameLocation(next, location)) return
+      cancelViewTransition()
+      // Reconcile selection and ranges with Next's completed navigation.
+      revealSelection(next)
+      if (next.isHome !== location.isHome) {
+        pendingLoadingUpdate.current = true
+        transitionPage(() => {
+          pendingLoadingUpdate.current = false
+          setLocation(next)
+        })
+      } else if (!location.isHome && next.view !== location.view) startPageTransition(VIEW_TRANSITION, () => setLocation(next), false)
+      else setLocation(next)
     }
 
-    const next = parsed.view === 'history' && location.view === 'history'
-      ? { ...parsed, timelineView: location.timelineView }
-      : parsed
-    cancelPendingUpdate()
-    if (sameLocation(next, location)) return
-    cancelViewTransition()
-    // Reconcile selection and ranges with Next's completed navigation.
-    // oxlint-disable-next-line react/set-state-in-effect
-    revealSelection(next)
-    if (next.isHome !== location.isHome) {
-      pendingLoadingUpdate.current = true
-      transitionPage(() => {
-        pendingLoadingUpdate.current = false
-        setLocation(next)
-      })
-    } else if (!location.isHome && next.view !== location.view) startPageTransition(VIEW_TRANSITION, () => setLocation(next), false)
-    else setLocation(next)
-  }, [routeKey, pathname, location, locale, readLocation, revealSelection, router, cancelPendingUpdate, cancelViewTransition, startPageTransition])
+    // Native Back/Forward can return to the same Next.js route before its hooks update.
+    const onPopState = () => reconcileRoute(true)
+    window.addEventListener('popstate', onPopState)
+    reconcileRoute(false)
+    return () => window.removeEventListener('popstate', onPopState)
+  }, [routeKey, location, locale, readLocation, revealSelection, router, cancelPendingUpdate, cancelViewTransition, startPageTransition])
 
   const selectNode = useCallback((id: string | null) => {
     const node = id ? index.nodeById.get(id) : undefined

@@ -3,7 +3,7 @@
 Graph ID `artist:diomedes-diaz`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -14,3 +14,7 @@ Singer and songwriter who brought vallenato to an international audience.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The Banco de la República biography documents his La Guajira origins, the collaboration with Náfer Durán and his role in taking vallenato abroad. [Banco de la República, Diomedes Díaz](https://enciclopedia.banrepcultural.org/index.php?title=Diomedes_D%C3%ADaz)

@@ -3,7 +3,7 @@
 Graph ID `artist:freddy-quinn`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -14,3 +14,7 @@ Documents the performer’s appearances in the Schlager film tradition.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The Goethe-Institut identifies Quinn’s performance of “La Paloma” in the 1961 West German schlager film. [Goethe-Institut, German Genre Films](https://www.goethe.de/prj/geg/en/thm/flm/27211817.html)

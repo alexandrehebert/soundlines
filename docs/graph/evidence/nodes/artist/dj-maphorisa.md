@@ -4,7 +4,7 @@ Graph ID `artist:dj-maphorisa`
 
 **Review status** · Reviewed: adjusted start to 2008 professional-career marker based on South African artist profile; kept date as year.
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -19,3 +19,7 @@ The prior 2007 decade marker was too rough and unsupported by the cited AllMusic
 ## Remaining uncertainty
 
 The exact 2008 chronology comes from a contemporary regional artist-profile database; stronger primary discography evidence could refine the year.
+
+## Description review (2026-11-15)
+
+The reviewed artist profile documents Uhuru. African Music discusses his later production work in amapiano. [Viranova artist profile](https://viranova.co.za/artist/dj-maphorisa) · [African Music journal](https://www.africanmusicjournal.org/index.php/africanmusic/article/download/2529/1388/1778)

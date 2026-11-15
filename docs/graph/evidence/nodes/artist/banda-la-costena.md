@@ -3,7 +3,7 @@
 Graph ID `artist:banda-la-costena`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Sinaloan banda associated with arranger Ramón López Alvarado.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The existing institutional and liner-note citations document the banda and arranger. Smithsonian Folkways identifies the recording as a polka. [Mexican cultural heritage inventory](https://sic.cultura.gob.mx/ficha.php?table=frpintangible&table_id=422) · [Smithsonian Folkways discography](https://folkways.si.edu/bandas-sinaloenses-musica-tambora/latin-world/music/album/smithsonian)

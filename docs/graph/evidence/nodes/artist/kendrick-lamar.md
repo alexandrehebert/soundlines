@@ -4,7 +4,7 @@ Graph ID `artist:kendrick-lamar`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:kendrick-lamar`
 ## Assessment
 
 The 2003 start is an early independent mixtape milestone under K-Dot; it predates the commercial breakthrough and his later Kendrick Lamar releases. Confidence: high for the mixtape date.
+
+## Description review (2026-11-15)
+
+[XXL’s interview with Lamar and Dave Free](https://www.xxlmag.com/kendrick-lamar-family-affair-excerpt-from-the-september-2012-cover-story/) documents the recording and early school circulation of the mixtape in 2003. [Lamar’s Guardian interview](https://www.theguardian.com/music/2015/jun/21/kendrick-lamar-interview-to-pimp-a-butterfly-trayvon-martin) identifies his K-Dot alias and describes the autobiographical setting of good kid, m.A.A.d city.

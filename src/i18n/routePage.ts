@@ -8,7 +8,7 @@ import { socialMetadata } from '../socialMetadata.ts'
 import { isLocale, LOCALES, localizePath, stripLocalePrefix, type Locale } from './routing.ts'
 
 export type LocalizedPageProps = {
-  params: Promise<{ locale: string }>
+  params: Promise<{ locale: string; entry?: string[] }>
   searchParams: Promise<Record<string, string | string[] | undefined>>
 }
 
@@ -25,12 +25,12 @@ function nodesForLocale(locale: Locale): ReadonlyMap<string, GraphNode> {
 }
 
 async function pageRequest(props: LocalizedPageProps, route: PageRoute) {
-  const [{ locale: rawLocale }, query, requestHeaders] = await Promise.all([
+  const [{ locale: rawLocale, entry = [] }, query, requestHeaders] = await Promise.all([
     props.params,
     props.searchParams,
     headers(),
   ])
-  if (!isLocale(rawLocale)) notFound()
+  if (!isLocale(rawLocale) || entry.length > 2 || entry.some((segment) => !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(segment))) notFound()
   const locale: Locale = rawLocale
 
   const search = new URLSearchParams()
@@ -38,7 +38,7 @@ async function pageRequest(props: LocalizedPageProps, route: PageRoute) {
     if (Array.isArray(value)) value.forEach((entry) => search.append(key, entry))
     else if (value !== undefined) search.set(key, value)
   }
-  const pathname = localizePath(route, locale)
+  const pathname = localizePath([route, ...entry].join('/'), locale)
   const host = (requestHeaders.get('x-forwarded-host') ?? requestHeaders.get('host'))?.split(',')[0].trim()
   if (!host || /[\s/?#@\\]/.test(host)) throw new Error('A valid request Host header is required')
   const forwardedProtocol = requestHeaders.get('x-forwarded-proto')?.split(',')[0].trim()

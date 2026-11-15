@@ -4,7 +4,7 @@ Graph ID `artist:horace-silver`
 
 **Review status** · Reviewed — hard-bop pioneer confirmed; c.1946–2004 retained
 
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -17,3 +17,7 @@ Graph ID `artist:horace-silver`
 ## Assessment
 
 Wikipedia places a regular Hartford nightclub job around 1946; Getz hired his trio in 1950 (NEA, Guardian). Last public performance 2004 (Wikipedia), death 2014. Period retained with precision circa. Description (blues/gospel inflections) matches Britannica and NEA.
+
+## Description review (2026-11-15)
+
+The NEA profile documents the Jazz Messengers, his blues and gospel compositions, and Cape Verdean rhythms on Song for My Father. [Source 2](https://www.arts.gov/honors/jazz/horace-silver)

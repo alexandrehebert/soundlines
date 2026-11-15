@@ -3,7 +3,7 @@
 Graph ID `artist:freddie-aguilar`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -17,3 +17,7 @@ The source identifies Aguilar as a major folk figure and Metropop participant.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The Senate resolution announcement documents the translations and overseas release of “Anak” and names “Bayan Ko” among his performances. [Philippine Senate resolution announcement](https://legacy.senate.gov.ph/press_release/2025/0603_padilla1.asp)

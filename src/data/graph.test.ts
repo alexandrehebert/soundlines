@@ -229,6 +229,14 @@ describe('graph.json integrity', () => {
     }
   })
 
+  it('requires a nonblank description for every catalogue entry', () => {
+    const missingDescriptions = graph.nodes
+      .filter((node) => typeof node.description !== 'string' || !node.description.trim())
+      .map((node) => node.id)
+
+    expect(missingDescriptions).toEqual([])
+  })
+
   it('gives every instrument an instrument family, sources, and sourced genre links', () => {
     const index = buildIndex(graph)
     const instruments = graph.nodes.filter((node) => node.type === 'instrument')

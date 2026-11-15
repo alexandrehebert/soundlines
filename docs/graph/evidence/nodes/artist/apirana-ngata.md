@@ -3,7 +3,7 @@
 Graph ID `artist:apirana-ngata`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -14,3 +14,7 @@ Names the composer in its account of pioneering waiata-ā-ringa.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+Te Ara defines the form and identifies Ngata’s early twentieth-century compositions. [Te Ara Encyclopedia of New Zealand](https://teara.govt.nz/en/waiata-hou-contemporary-maori-songs/page-3)

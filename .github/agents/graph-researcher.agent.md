@@ -27,7 +27,7 @@ Use `docs/graph/RESEARCH.md` for coverage gaps and research candidates. Use
 2. Shortlist candidates by historical significance, not popularity; favour the documented priorities.
 3. For each candidate, verify period, description facts and every proposed edge (type and direction
    per GRAPH.md §3); genres need a family and ≥ 3 sourced key artists.
-4. Draft English text in your own words; note which tests or lists the editor must update
+4. Draft a source-backed English description for every proposed node in your own words. Note which tests or lists the editor must update
    (genre family list, roots, disconnected register, festival audit).
 
 ## Output

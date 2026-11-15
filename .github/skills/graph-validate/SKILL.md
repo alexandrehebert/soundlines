@@ -38,6 +38,7 @@ on an existing node cannot be removed or changed. Use the date the node joined t
 | `graph` "sane periods", "estimated placements", "phases" | period/phase semantics | fix years, add `estimated` + `estimateNote`, order phases from `period.start` |
 | `graph` "groups every genre into recognizable families" | per-family genre lists in the test | add the new genre slug to the family list |
 | `graph` "at least three sourced key artists", "HTTPS sources" | sourcing minimums | add sourced `key_artist_of` edges / fix the URL; never invent sources |
+| `graph` "requires a nonblank description for every catalogue entry" | node description coverage | write a source-backed description for each listed id, update the evidence note, and translate in every overlay |
 | `graph` "standalone or unresolved nodes disconnected", "roots" | orphans | link with a sourced edge, or document it in `docs/graph/evidence/disconnected-entries.md` |
 | `festivals` * | festival register and audit JSON/MD alignment | update `docs/graph/evidence/festivals.md` and `audits/festival-*.json` (+ `.md`) |
 | `reviewStatus` "matches the evidence files" | `review-status.json` is fresh | `npm run review-status` |

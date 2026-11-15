@@ -4,7 +4,7 @@ Graph ID `artist:inti-illimani`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -21,3 +21,7 @@ Kept the 1967 formation date and removed no supported activity endpoint; group i
 ## Remaining uncertainty
 
 The current group-name entity spans a later split; to avoid conflating lineages, consider separate nodes for the successor ensembles in a future graph pass.
+
+## Description review (2026-11-15)
+
+The Chilean National Library archive documents the 1967 student formation. Konserthuset and the UCLA publication trace the group’s musical context, exile in Italy and return. [Biblioteca Nacional de Chile · Memoria Chilena](https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0049319.pdf) · [Konserthuset Stockholm](https://www.konserthuset.se/en/programme/calendar/concert/2026/inti-illimani-historico/) · [UCLA Ethnomusicology Review](https://ethnomusicologyreview.ucla.edu/sites/default/files/prevol1_0.pdf)

@@ -3,7 +3,7 @@
 Graph ID `artist:vasilis-tsitsanis`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Credits the performer on its historical rebetiko anthology.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The [University of Ioannina recording archive](https://epsetem.project.uoi.gr/archive/item/127?lang=en) documents his work as a composer and three-string bouzouki player. [The research team’s discographic study](https://www.ordoulidis.gr/files/Kokkonis%2C%20Ordoulidis%2C%20Evangelou%2C%202025%2C%20The%20MELOS%20Discographic%20Documentation%20Platform%2C%20The%20Vassilis%20Tsitsanis%20Collection%20of%20Recordings.pdf) establishes the role of his early recordings in popularizing the bouzouki.

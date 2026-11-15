@@ -3,7 +3,7 @@
 Graph ID `artist:alaap`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -17,3 +17,7 @@ Names Alaap as a pioneering British bhangra group.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The Royal Albert Hall archive identifies the founder and the 1977 formation. The diaspora arts archive situates Alaap in the formative British bhangra scene. [Royal Albert Hall archive](https://catalogue.royalalberthall.com/Record.aspx?id=DS/UK/14261&src=CalmView.Persons) · [South Asian Diaspora Arts Archive](https://www.swadhinata.org.uk/wp-content/uploads/2025/09/SADAA_Dissident_Sounds_Mapping_British_A.pdf)

@@ -3,7 +3,7 @@
 Graph ID `artist:fanfan-sega`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Lists Fanfan as a practitioner consulted for the traditional séga inventory.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The nomination documentation records his consultation and identifies him among the leading performers of those decades. [Mauritius séga tipik submission](https://ich.unesco.org/doc/src/26081-EN.pdf?v=1393439355) · [Mauritian heritage inventory](https://ich.unesco.org/doc/src/30634-EN.pdf?t=1428911987)

@@ -4,7 +4,7 @@ Graph ID `artist:snoop-dogg`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:snoop-dogg`
 ## Assessment
 
 Kept 1992 as the first national exposure/career start, not the debut solo album year. Primary label and artist sources corroborate the sequence; no end date is applicable.
+
+## Description review (2026-11-15)
+
+The [Library of Congress essay on The Chronic](https://www.loc.gov/static/programs/national-recording-preservation-board/documents/the-chronic.pdf) places “Deep Cover” before Snoop’s appearances on Dre’s G-funk album and describes his breakthrough. The [artist discography](https://snoopdogg.com/album/doggystyle/) dates Doggystyle to 1993.

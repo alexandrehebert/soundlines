@@ -3,7 +3,7 @@
 Graph ID `artist:rhythm-and-sound`
 
 **Review status** · Reviewed — Basic Channel members’ dub project confirmed; dates kept
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 - [RBMA lecture: von Oswald](https://www.redbullmusicacademy.com/lectures/moritz-von-oswald-early-morning-freestyles/) — after Basic Channel they created Rhythm & Sound “to explore the spaces beyond the bassline”.
@@ -15,3 +15,7 @@ A circa-1997 start is consistent with the project’s late-1990s debut. Output a
 
 ## Remaining uncertainty
 The project may be dormant since about 2006; a dated source for an end was not found.
+
+## Description review (2026-11-15)
+
+[Moritz von Oswald’s Red Bull Music Academy interview](https://www.redbullmusicacademy.com/lectures/moritz-von-oswald-early-morning-freestyles/) documents the members, the Basic Channel connection, the use of space in the mix and the Cornell Campbell recording.

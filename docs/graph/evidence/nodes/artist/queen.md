@@ -4,7 +4,7 @@ Graph ID `artist:queen`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ Corrected the 1973 start, which marks the debut album, to the documented 1970 fo
 ## Remaining uncertainty
 
 Mercury-fronted Queen ended with his illness and death in 1991, but the group continued under Queen + Adam Lambert; the graph entry covers the band identity across that change.
+
+## Description review (2026-11-15)
+
+[Sony Music UK’s Queen biography](https://www.sonymusic.co.uk/artist/queen/) documents the founders, Deacon’s role, “Bohemian Rhapsody,” Live Aid, and specifically names May and Taylor as the members who relaunched the act and later teamed with Lambert.

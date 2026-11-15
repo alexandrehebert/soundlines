@@ -1,4 +1,4 @@
-import { AudioLines, ChevronDown, Hammer, House, Network, Palette } from 'lucide-react'
+import { ArrowUpRight, AudioLines, ChevronDown, Hammer, House, Network, Palette } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { locales, slugs, contentByLocale, repository, siteUrl, type LocalizedContent, type Locale, type Page, type Slug } from '../content.ts'
 import { appUrl, storybookUrl } from '../links.ts'
@@ -67,7 +67,8 @@ function Header({ content, locale, slug }: ChromeProps) {
         </a>
         <div className="ml-auto flex shrink-0 items-center gap-1 sm:gap-3">
           <a className="flex h-11 min-w-11 shrink-0 items-center justify-center gap-1 whitespace-nowrap rounded-full bg-fg px-2 text-xs sm:px-4 font-bold text-bg sm:text-sm" href={new URL(locale, appUrl).href} target="_blank" rel="noopener noreferrer">
-            <span className="sr-only sm:not-sr-only">{content.openApp}</span> {external}
+            <span className="sr-only sm:not-sr-only">{content.openApp}</span>
+            <ArrowUpRight aria-hidden="true" className="size-6 shrink-0 sm:size-4" />
           </a>
           <label className="site-language-select relative flex h-11 shrink-0 items-center gap-1.5 rounded-full bg-surface px-3 text-xs font-bold text-muted transition-colors hover:text-fg focus-within:ring-2 focus-within:ring-focus">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">

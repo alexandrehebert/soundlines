@@ -5,6 +5,7 @@ import type { GraphNode } from './graph/types.ts'
 const nodes: GraphNode[] = [
   { id: 'genre:jazz', type: 'genre', name: 'Jazz' },
   { id: 'artist:example', type: 'artist', name: 'Example artist' },
+  { id: 'label:example', type: 'label', name: 'Example label' },
   { id: 'event:example', type: 'event', name: 'Example event' },
 ]
 const nodeById = new Map(nodes.map((node) => [node.id, node]))
@@ -25,6 +26,16 @@ describe('explorer URL state', () => {
     expect(location.view).toBe(view)
   })
 
+  it.each([
+    ['/fr/artists/example', 'artist:example', 'artist'],
+    ['/fr/history/example', 'event:example', 'history'],
+    ['/fr/artists/label/example', 'label:example', 'artist'],
+    ['/fr/genres/jazz?focus=artist%3Aexample', 'genre:jazz', 'genre'],
+    ['/fr/artists/missing', null, 'artist'],
+  ])('reads selection from %s', (path, selectedId, view) => {
+    expect(readExplorerLocation(new URL(path, origin), nodeById)).toMatchObject({ selectedId, view, isHome: false })
+  })
+
   it('uses the focused entity to select its view, including from legacy home URLs', () => {
     const location = readExplorerLocation(new URL('/en?focus=artist%3Aexample', origin), nodeById)
     expect(location).toMatchObject({
@@ -33,7 +44,7 @@ describe('explorer URL state', () => {
       timelineView: 'artist',
       selectedId: 'artist:example',
     })
-    expect(explorerUrl(location, 'en', `${origin}/en?focus=artist%3Aexample`).pathname).toBe('/en/artists')
+    expect(explorerUrl(location, 'en', `${origin}/en?focus=artist%3Aexample`).pathname).toBe('/en/artists/example')
   })
 
   it('selects history for an event and drops unknown focus values', () => {
@@ -50,9 +61,9 @@ describe('explorer URL state', () => {
     const location = readExplorerLocation(url, nodeById)
     const result = explorerUrl(location, 'fr', url)
 
-    expect(result.pathname).toBe('/fr/artists')
+    expect(result.pathname).toBe('/fr/artists/example')
     expect(result.hash).toBe('#details')
-    expect(result.searchParams.get('focus')).toBe('artist:example')
+    expect(result.searchParams.has('focus')).toBe(false)
     expect(result.searchParams.get('sort')).toBe('oldest-first')
     expect(result.searchParams.get('artist-sort')).toBe('oldest-first')
     expect(result.searchParams.get('instrument-sort')).toBe('oldest-first')

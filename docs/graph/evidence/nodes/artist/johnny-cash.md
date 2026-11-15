@@ -4,7 +4,7 @@ Graph ID `artist:johnny-cash`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -19,3 +19,7 @@ Replace decade-only start with 1954, the documented Sun contract; his public rec
 ## Remaining uncertainty
 
 Use 1954 for professional contract and 1955 for first public breakthrough; the broad career span includes both.
+
+## Description review (2026-11-15)
+
+The museum biography documents the Sun sessions, their sparse rhythmic sound, and the 1968 Folsom Prison recording. [Source 1](https://countrymusichalloffame.org/hall-of-fame/johnny-cash)

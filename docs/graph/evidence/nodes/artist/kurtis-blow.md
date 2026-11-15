@@ -4,7 +4,7 @@ Graph ID `artist:kurtis-blow`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:kurtis-blow`
 ## Assessment
 
 The 1979 start is supported for his recording career and emergence as a professional rapper. Earlier DJ and breakdancing activity began in the 1970s, so this date is not his first contact with hip-hop. Confidence: high for recording milestone.
+
+## Description review (2026-11-15)
+
+The artist biography and retrospective document the Mercury signing, the singles and the gold award. [Source 1](https://www.kurtisblow.org/biography) · [Source 2](https://daily.redbullmusicacademy.com/2015/12/kurtis-blow-key-tracks/)

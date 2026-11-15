@@ -3,7 +3,7 @@
 Graph ID `artist:ortega-mahraganat`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Names Ortega among the Cairo performers documented in the film.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+[KEXP’s account of Electro Chaabi](https://www.kexp.org/read/2014/5/21/siff-2014-face-the-music-preview-electro-chaabi/) describes Ortega and Oka’s computer, microphone and headphones. The [International Film Festival Rotterdam program](https://iffr.com/en/iffr/2014/films/electro-chaabi) documents their appearance and the film’s Cairo setting.

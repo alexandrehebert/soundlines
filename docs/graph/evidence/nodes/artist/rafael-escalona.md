@@ -3,7 +3,7 @@
 Graph ID `artist:rafael-escalona`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -14,3 +14,7 @@ Composer whose vallenato songs chronicled Caribbean Colombia.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The [Fundación Escalona biography](https://www.fundacionescalona.org/history) describes his subject matter and narrative approach and records the 1968 founding of the Valledupar festival.

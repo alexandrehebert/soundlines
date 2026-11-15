@@ -4,7 +4,7 @@ Graph ID `artist:mayhem`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:mayhem`
 ## Assessment
 
 Replace the unsupported decade-only date with the documented 1984 formation year. Retain an open endpoint because the band continues despite long interruptions and lineup changes. Confidence: high.
+
+## Description review (2026-11-15)
+
+The label biography documents the releases and personnel changes. The metal discography lists the initial active years and subsequent reformation. [Source 1](https://www.season-of-mist.com/bands/mayhem/) · [Source 2](https://www.metal-archives.com/bands/Mayhem/67) · [Source 3](https://escholarship.org/content/qt71b2q8bh/qt71b2q8bh_noSplash_2ae0821a3ca6eebd8f986cce3730ca4f.pdf?t=rk5ca7)

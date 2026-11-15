@@ -55,7 +55,7 @@ interface GraphNode {
   name: string          // Display name, e.g. "Deep house"
   addedOn?: string      // Required for new nodes. Catalogue addition date (YYYY-MM-DD).
   period?: { start: number; end?: number | null; precision?: 'year' | 'decade' | 'century' | 'circa'; estimated?: boolean; estimateNote?: string } | null // Negative years are BCE
-  description?: string  // 1–3 sentences, editorial and evocative but factual
+  description: string   // 1–3 factual sentences
   family?: GenreFamily | InstrumentFamily  // Timeline lane (required for genres and instruments)
   kind?: 'person' | 'group' | 'collective'   // Artists only
   category?: EventCategory                   // Events only (required). See "Events"
@@ -375,7 +375,9 @@ Ids must be unique across all edges.
    Preserve explicit artist families when replacing or enriching existing nodes.
 7. **Every genre** has **at least 3** `key_artist_of` edges pointing to it, and
    **each of those edges has `sources`**.
-8. **Every artist** node has at least one `sources` URL.
+8. **Every node** has a nonblank `description`. **Every artist** has at least
+   one `sources` URL. Explain the artist’s musical role with a supported detail
+   such as a recording, performance practice, ensemble, or scene.
 9. Every `key_artist_of` edge and every artist ↔ artist edge (`influences`,
    `member_of`, `collaborated_with`) has `sources`.
 10. **Every source URL must be a valid HTTPS URL.** Prefer authoritative, relevant
@@ -565,12 +567,15 @@ patch** in this exact shape:
 ### Self-check before answering
 
 - [ ] Every new id is unique, prefixed correctly, and kebab-case
+- [ ] Every new entry has a source-backed description
 - [ ] Every edge endpoint exists in `graph.json` or in `addNodes`
 - [ ] Every new genre has `family`, a `description`, `sources`, and ≥ 3 sourced
       `key_artist_of` edges
 - [ ] Every new genre with a well-supported parent or influence connects by lineage;
       preserve independent traditions as roots rather than inventing ancestry
 - [ ] Every new artist has `sources`, `kind`, and at least one edge
+- [ ] Every new or revised description has an evidence note and a translation
+      in each locale overlay
 - [ ] Supply a supported `period`; flag inferred placements with `estimated: true` and an evidence-based `estimateNote`. Leave undated only when no defensible estimate is possible.
 - [ ] Every artist has an explicit `family` or a `key_artist_of` relationship
       to a genre with a family

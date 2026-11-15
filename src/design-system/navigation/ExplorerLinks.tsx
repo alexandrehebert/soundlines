@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import { useExplorer } from '../../ExplorerContext.ts'
-import { VIEW_PATHS, viewForNode, type ExplorerView } from '../../graph/timeline.ts'
+import { nodePath } from '../../explorerLocation.ts'
+import { VIEW_PATHS, type ExplorerView } from '../../graph/timeline.ts'
 import type { GraphNode } from '../../graph/types.ts'
 import { localizePath } from '../../i18n/routing.ts'
 import { follow } from './followLink.ts'
@@ -12,7 +13,5 @@ export function ViewLink({ view, className, children }: { view: ExplorerView; cl
 
 export function EntryLink({ node, className, children }: { node: GraphNode; className: string; children: ReactNode }) {
   const { selectNode, locale } = useExplorer()
-  const params = new URLSearchParams({ focus: node.id })
-  const path = VIEW_PATHS[viewForNode(node.type, 'genre')]
-  return <a className={className} href={`${localizePath(path, locale)}?${params}`} onClick={(event) => follow(event, () => selectNode(node.id))}>{children}</a>
+  return <a className={className} href={nodePath(node.id, locale)} onClick={(event) => follow(event, () => selectNode(node.id))}>{children}</a>
 }

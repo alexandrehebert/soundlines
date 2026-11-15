@@ -3,7 +3,7 @@
 Graph ID `artist:ryan-cayabyab`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -17,3 +17,7 @@ The source names Cayabyab among the major composers nurtured by Metropop.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The [Ramon Magsaysay Award Foundation’s laureate citation](https://rmaward.asia/rmawardees/cayabyab-raymundo-pujante/) verifies the song title and 1978 award, his teaching, his range of composition and his work promoting Original Pilipino Music.

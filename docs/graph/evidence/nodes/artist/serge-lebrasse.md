@@ -3,7 +3,7 @@
 Graph ID `artist:serge-lebrasse`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Records state recognition for the traditional séga singer.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The [Music In Africa history of séga](https://musicinafrica.net/node/15554) describes Lebrasse’s training, his early compositions and the island-wide reception of “Madam Eugène.” Sources date the recording and release differently, so the description omits a year.

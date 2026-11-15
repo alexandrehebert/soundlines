@@ -3,6 +3,7 @@ import rawGraph from './data/graph.json'
 import { buildIndex } from './graph/graph.ts'
 import { graphForLocale } from './data/graphLocale.ts'
 import type { GraphNode, MusicGraph } from './graph/types.ts'
+import { readExplorerLocation } from './explorerLocation.ts'
 import { socialMetadata } from './socialMetadata.ts'
 
 const index = buildIndex(rawGraph as MusicGraph)
@@ -41,7 +42,7 @@ describe('social metadata', () => {
 
   it('uses French graph text and image alt text in French metadata', () => {
     const metadata = socialMetadata(
-      new URL('/fr/genres?focus=genre%3Ajazz', origin),
+      new URL('/fr/genres/jazz', origin),
       frenchIndex.nodeById,
     )
     expect(metadata.title).toBe('Jazz | Genre | Soundlines')
@@ -50,15 +51,15 @@ describe('social metadata', () => {
   })
 
   it.each([
-    ['genre:house', 'House', 'Genre', '/en/genres'],
-    ['artist:juan-atkins', 'Juan Atkins', 'Artist', '/en/artists'],
-    ['instrument:timbales', 'Timbales', 'Instrument', '/en/instruments'],
-    ['label:metroplex', 'Metroplex', 'Label', '/en/artists'],
-    ['place:detroit', 'Detroit', 'Place', '/en/artists'],
-    ['track:clear', 'Clear', 'Track', '/en/artists'],
-    ['scene:the-warehouse', 'The Warehouse', 'Scene', '/en/artists'],
-    ['event:mtv-launch', 'MTV launches', 'Event', '/en/history'],
-  ])('describes the %s entity and uses the effective view', (id, name, type, view) => {
+    ['genre:house', 'House', 'Genre', '/en/genres/house'],
+    ['artist:juan-atkins', 'Juan Atkins', 'Artist', '/en/artists/juan-atkins'],
+    ['instrument:timbales', 'Timbales', 'Instrument', '/en/instruments/timbales'],
+    ['label:metroplex', 'Metroplex', 'Label', '/en/artists/label/metroplex'],
+    ['place:detroit', 'Detroit', 'Place', '/en/artists/place/detroit'],
+    ['track:clear', 'Clear', 'Track', '/en/artists/track/clear'],
+    ['scene:the-warehouse', 'The Warehouse', 'Scene', '/en/artists/scene/the-warehouse'],
+    ['event:mtv-launch', 'MTV launches', 'Event', '/en/history/mtv-launch'],
+  ])('describes the %s entity and uses the effective view', (id, name, type, path) => {
     const url = new URL('/en/artists?sort=oldest-first&layout=bubbles&utm_source=example', origin)
     url.searchParams.set('focus', id)
     const metadata = socialMetadata(url, index.nodeById)
@@ -67,8 +68,8 @@ describe('social metadata', () => {
     expect(metadata.title).toBe(`${name} | ${type} | Soundlines`)
     expect(metadata.description).toBeTruthy()
     expect(Array.from(metadata.description).length).toBeLessThanOrEqual(200)
-    expect(canonical.searchParams.get('focus')).toBe(id)
-    expect(canonical.pathname).toBe(view)
+    expect(canonical.searchParams.has('focus')).toBe(false)
+    expect(canonical.pathname).toBe(path)
     expect(canonical.searchParams.has('view')).toBe(false)
     expect(canonical.searchParams.get('sort')).toBe('oldest-first')
     expect(canonical.searchParams.get('layout')).toBe('bubbles')
@@ -102,7 +103,7 @@ describe('social metadata', () => {
       const metadata = socialMetadata(url, index.nodeById)
       expect(metadata.title).toContain(node.name)
       expect(metadata.description.length).toBeGreaterThan(0)
-      expect(new URL(metadata.url).searchParams.get('focus')).toBe(node.id)
+      expect(readExplorerLocation(new URL(metadata.url), index.nodeById).selectedId).toBe(node.id)
     }
   })
 

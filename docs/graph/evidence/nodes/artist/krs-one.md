@@ -4,7 +4,7 @@ Graph ID `artist:krs-one`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:krs-one`
 ## Assessment
 
 Refine the 1980s marker to circa 1985 for the formation of Boogie Down Productions with Scott La Rock; recordings and the group’s first album followed in 1986. KRS-One’s solo career began in 1993, a different milestone. Confidence: medium-high for group start.
+
+## Description review (2026-11-15)
+
+The reference biography traces the Bronx partnership, early rap rivalry and subsequent socially oriented recordings. The interview supplies the artist’s perspective. [Source 1](https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/kris-parker) · [Source 3](https://files.eric.ed.gov/fulltext/ED377284.pdf)

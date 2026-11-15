@@ -4,7 +4,7 @@ Graph ID `artist:sunny-day-real-estate`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:sunny-day-real-estate`
 ## Assessment
 
 Corrected 1994 (debut album) to the band’s documented 1992 formation. The 2024 tour supports open-ended but intermittent activity.
+
+## Description review (2026-11-15)
+
+The [band’s oral history of Diary](https://lifeoftherecord.com/sunny-day-real-estate-notes) documents the debut and anniversary performances. The [label news archive](https://www.subpop.com/news/tag/sunny_day_real_estate) and existing review document the group’s return and 2024 touring.

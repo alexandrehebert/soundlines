@@ -4,7 +4,7 @@ Graph ID `artist:hazell-dean`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ The 1975 year had no defensible precision; archive sources establish school band
 ## Remaining uncertainty
 
 The archive does not identify a precise first public performance; 1970s is the supported range.
+
+## Description review (2026-11-15)
+
+The institutional archive and interview document the crossover hit and the production collaboration. [Source 1](https://www.bishopsgate.org.uk/collections/hazell-dean-archive/) · [Source 2](https://www.classicpopmag.com/features/classic-pop-qa-hazell-dean/)

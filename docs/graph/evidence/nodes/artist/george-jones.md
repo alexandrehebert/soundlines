@@ -3,7 +3,7 @@
 Graph ID `artist:george-jones`
 
 **Review status** · Reviewed — period refined to 1954–2013
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 - [Country Music Hall of Fame: George Jones](https://www.countrymusichalloffame.org/hall-of-fame/george-jones) — radio debut late 1940s; January 1954 first session; "Why, Baby, Why" (1955); died 26 April 2013.
@@ -13,3 +13,7 @@ Graph ID `artist:george-jones`
 
 ## Assessment
 Recording career began in 1954 and continued until his death in April 2013 during a farewell tour, so the period is now 1954–2013 with year precision (was 1950 decade). Late-1940s radio work is noted but not used as the start.
+
+## Description review (2026-11-15)
+
+The museum biography documents the Starday release, its chart performance and the later Wynette duets. [Source 2](https://www.countrymusichalloffame.org/hall-of-fame/george-jones)

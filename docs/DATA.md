@@ -61,6 +61,13 @@ workflow runs it, plus a `review-status.json` freshness check, on every pull req
 or docs. The skills in [.github/skills](../.github/skills) bundle `lookup.mjs` (query `graph.json` by id,
 name, or pending evidence) and `diff.mjs` (semantic diff of graph changes and overlays against a git ref).
 
+Every graph entry needs a source-backed description of one to three sentences. For an artist,
+start with their musical role and use a concrete detail such as a recording, instrument, or scene
+to explain their place in the graph. When adding or revising a description, record which
+source supports the new claims in the entry’s evidence note and update the French, German,
+Italian, and Spanish overlays. Graph validation rejects blank or missing descriptions
+and checks translation coverage.
+
 ### Issue-to-pull-request automation
 
 Graph contributions can be submitted with the

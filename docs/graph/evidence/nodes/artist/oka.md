@@ -3,7 +3,7 @@
 Graph ID `artist:oka`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Names Oka among the Cairo performers documented in the film.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The [Rotana artist profile](https://www.rotana.net/en/actor-details/11445/%D8%A3%D9%88%D9%83%D8%A7) identifies Oka and the group’s members. The [International Film Festival Rotterdam program](https://iffr.com/en/iffr/2014/films/electro-chaabi) credits Meddeb’s documentary and names Oka.

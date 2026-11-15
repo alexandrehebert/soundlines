@@ -4,7 +4,7 @@ Graph ID `artist:hariprasad-chaurasia`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ The graph’s 1957 professional start is supported by two biographies for his Al
 ## Remaining uncertainty
 
 Some accounts differ on whether the 1957 AIR posting was at Cuttack or Allahabad; this does not change the career year.
+
+## Description review (2026-11-15)
+
+The profile documents the All India Radio appointment. Smithsonian Folkways documents the flute and tabla recording credits. [Source 2](https://www.hindustantimes.com/ht-school/hariprasad-chaurasia-flute-maestro-par-excellence/story-2kZ2v9tZygDAL4ibLZuV6M.html) · [Source 4](https://folkways.si.edu/hariprasad-zakir-hussain/venu/world/music/album/smithsonian)

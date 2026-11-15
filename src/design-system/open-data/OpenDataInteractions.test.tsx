@@ -94,7 +94,7 @@ describe('Open Data interactions', () => {
     const next = await screen.findByRole('button', { name: changelog.next })
     expect(screen.queryByRole('link', { name: /TR-909/ })).not.toBeInTheDocument()
     await user.click(next)
-    expect(screen.getByRole('link', { name: /TR-909/ })).toHaveAttribute('href', '/en?focus=instrument%3Atr-909')
+    expect(screen.getByRole('link', { name: /TR-909/ })).toHaveAttribute('href', '/en/instruments/tr-909')
     expect(next).toBeDisabled()
 
     await user.selectOptions(screen.getByRole('combobox', { name: changelog.category }), 'graph')

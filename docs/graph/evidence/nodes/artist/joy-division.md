@@ -4,7 +4,7 @@ Graph ID `artist:joy-division`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:joy-division`
 ## Assessment
 
 The 1976–1980 band span is accurate: formation follows the 1976 Sex Pistols show, and Curtis died in 1980; the group then ended and the remaining members formed New Order. Confidence: high.
+
+## Description review (2026-11-15)
+
+The Rock Hall and rights-holder biographies cover the band’s sound, albums and transition to New Order. [Source 1](https://rockhall.com/inductees/joy-division-new-order/) · [Source 3](https://www.umusicpub.com/us/artists/joy-division)

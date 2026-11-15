@@ -4,7 +4,7 @@ Graph ID `artist:ibrahim-ferrer`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ Replaced the inaccurate 1930 start (his birth decade) with c.1941, derived from 
 ## Remaining uncertainty
 
 Early band chronology is retrospective and sources differ on age 13 versus 14; avoid presenting 1941 as exact.
+
+## Description review (2026-11-15)
+
+The label biography and documentary profile cover his early Cuban career and revival with Buena Vista Social Club. [Source 1](https://www.worldcircuit.co.uk/artists/ibrahim-ferrer/) · [Source 3](https://www.pbs.org/buenavista/music/a_son.html)

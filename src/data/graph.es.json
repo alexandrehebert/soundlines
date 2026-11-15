@@ -33,7 +33,7 @@
       "description": "Compositor austríaco de la Segunda Escuela de Viena. Tras comenzar a estudiar con Arnold Schoenberg en 1904, Berg desarrolló una síntesis personal de expresividad tardorromántica, atonalidad y técnica dodecafónica; Wozzeck consolidó su reconocimiento más amplio tras su estreno en 1925."
     },
     "artist:albert-ayler": {
-      "description": "Saxofonista cuya interpretación enérgica y cargada de espiritualidad fue central para el free jazz de los años 1960."
+      "description": "Saxofonista que marcó el free jazz de la década de 1960 con un sonido que aunaba música de iglesia e improvisación libre. En 1964 grabó «Spiritual Unity» con el contrabajista Gary Peacock y el baterista Sunny Murray."
     },
     "artist:ali-akbar-khan": {
       "description": "Músico y compositor indio de música clásica indostánica, ampliamente reconocido como uno de los grandes virtuosos del sarod. Su carrera pública comenzó en los años 1930; después llevó la música clásica india a nuevos públicos estadounidenses, grabó allí en 1955 y fundó el Ali Akbar College of Music."
@@ -53,11 +53,20 @@
     "artist:amon-duul-ii": {
       "description": "Grupo de Múnich surgido de la comuna artística Amon Düül en 1968 que se convirtió en una de las principales bandas de rock de improvisación del krautrock con álbumes como Yeti. Se disolvió en 1981; entre sus reuniones posteriores figuran la de 1995 y su actividad desde 2010."
     },
+    "artist:anatoli-kuular": {
+      "description": "Músico tuvano que aportó al sonido de Huun-Huur-Tu el canto de garganta borbangnadyr, el arpa de boca xomuz y la fídula byzaanchi."
+    },
     "artist:andy-c": {
       "description": "DJ y productor inglés de drum and bass, cofundador de RAM Records con Ant Miles. Sus primeros lanzamientos y sus destacadas sesiones como DJ lo convirtieron en una figura central, mientras RAM crecía hasta convertirse en un sello importante del drum and bass."
     },
+    "artist:anibal-troilo": {
+      "description": "Bandoneonista de Buenos Aires que fundó su propia orquesta de tango en 1937 y la dirigió hasta 1975."
+    },
     "artist:anton-webern": {
       "description": "Compositor, director y musicólogo austríaco cuyas obras concisas e intensamente organizadas influyeron en la música modernista y serial. Sus primeras composiciones conservadas datan de 1899; sus estudios posteriores con Arnold Schoenberg, iniciados en 1904, marcaron su desarrollo. Su música fue marginada bajo el régimen nazi y obtuvo un reconocimiento más amplio después de su muerte."
+    },
+    "artist:antonio-carlos-jobim": {
+      "description": "Compositor y pianista brasileño que contribuyó a difundir en el extranjero la bossa nova de Río de Janeiro. Escribió «Garota de Ipanema» con Vinicius de Moraes y actuó en el concierto de bossa nova del Carnegie Hall en 1962."
     },
     "artist:aphex-twin": {
       "description": "Proyecto de música electrónica de Richard D. James, cuyo primer disco apareció en 1991; conocido por su trabajo que abarca ambient, techno y música electrónica experimental."
@@ -217,7 +226,10 @@
       "description": "Banda estadounidense de death metal formada en Búfalo, Nueva York, en 1988; su debut Eaten Back to Life de 1990 estableció su carrera discográfica antes de que se trasladaran a Florida."
     },
     "artist:carl-craig": {
-      "description": "Polifacético músico de la segunda ola de Detroit y protegido de May: llevó el techno hacia el jazz y las orquestas en Planet E."
+      "description": "Productor de la segunda oleada del techno de Detroit. Tras publicar sus primeros trabajos en Transmat, el sello de Derrick May, fundó Planet E en 1991."
+    },
+    "artist:carlos-gardel": {
+      "description": "Cantante cuya grabación de «Mi noche triste» en 1917 ayudó a consolidar el tango canción, la forma cantada del tango."
     },
     "artist:carlos-vives": {
       "description": "Cantante, compositor y actor colombiano cuya carrera discográfica comenzó con el álbum pop Por Fuera y Por Dentro de 1986; Clásicos de la Provincia, de 1993, fusionó vallenato y pop contemporáneo y le dio reconocimiento internacional."
@@ -229,7 +241,7 @@
       "description": "Cassius es el dúo electrónico francés de Philippe Zdar y Hubert “Boom Bass” Blanc-Francard, asociado al French touch. El proyecto comenzó en 1996 con un nombre anterior; Blanc-Francard continuó con Cassius tras la muerte de Zdar en 2019."
     },
     "artist:cecil-taylor": {
-      "description": "Pianista y compositor conocido por su intensidad percusiva e improvisación de estructura libre."
+      "description": "Pianista y compositor cuyo toque percusivo e improvisación de estructura libre contribuyeron a definir el free jazz. Su álbum de debut, «Jazz Advance», documenta sus comienzos como líder de grupo en 1956."
     },
     "artist:celia-cruz": {
       "description": "Celia Cruz fue una cantante cubana cuya carrera abarcó música bailable cubana, guaracha y salsa de relevancia internacional. Se incorporó a La Sonora Matancera en 1949/1950 y se convirtió en una intérprete definitoria de la salsa."
@@ -247,7 +259,7 @@
       "estimateNote": "Inicio aproximado de su carrera como vocalista de Os Tubarões; su álbum en solitario Nôs Morna (1996) es un hito posterior documentado, no su debut. El final corresponde a su muerte en 2004."
     },
     "artist:charlie-parker": {
-      "description": "Saxofonista alto cuyas innovaciones melódicas y armónicas fueron centrales para el bebop."
+      "description": "Saxofonista alto que se formó en la escena de Kansas City y se convirtió en uno de los artífices del bebop en Nueva York, donde trabajó con músicos como Dizzy Gillespie."
     },
     "artist:chemical-brothers": {
       "description": "The Chemical Brothers es el dúo electrónico británico de Tom Rowlands y Ed Simons, formado en Mánchester en 1989. Trabajaron inicialmente como Dust Brothers; su primer tema, “Song to the Siren”, ayudó a lanzar su carrera discográfica antes de adoptar el nombre Chemical Brothers."
@@ -256,7 +268,7 @@
       "description": "Cheng Yanqiu fue un destacado actor de la ópera de Pekín y fundador de la escuela interpretativa Cheng, conocido especialmente por los papeles qingyi y un estilo vocal distintivo."
     },
     "artist:chet-baker": {
-      "description": "Trompetista y cantante conocido por el sonido lírico y contenido del cool jazz de la costa oeste."
+      "description": "Trompetista y cantante cuyo estilo melódico y contenido se asocia con el cool jazz de la costa oeste de Estados Unidos. Se dio a conocer en el cuarteto sin piano de Gerry Mulligan."
     },
     "artist:chic": {
       "description": "Chic es una banda estadounidense de disco y funk formada por Nile Rodgers y Bernard Edwards en 1976, con el baterista Tony Thompson, el teclista Raymond Jones y la cantante Norma Jean Wright. El grupo ha tenido pausas y formaciones posteriores."
@@ -274,7 +286,7 @@
       "description": "Chuck Berry fue un guitarrista, cantante y compositor estadounidense cuya fusión de country, blues y R&B, sus riffs de guitarra y su narración ayudaron a definir el primer rock and roll. Su carrera en clubes de San Luis comenzó en 1953; “Maybellene” le dio reconocimiento nacional en 1955."
     },
     "artist:clifford-brown": {
-      "description": "Trompetista cuyo trabajo con Max Roach es un hito del primer hard bop."
+      "description": "Trompetista de jazz que contribuyó a definir el hard bop temprano. En 1954 formó un quinteto con el baterista Max Roach."
     },
     "artist:college": {
       "description": "College es el proyecto de música electrónica en solitario del compositor francés David Grellier. Su primer EP, Teenage Color, y su álbum debut, Secret Diary, se publicaron en 2008; “A Real Hero” le dio después un reconocimiento más amplio gracias a la película Drive de 2011."
@@ -298,7 +310,7 @@
       "description": "Jazz pianist and bandleader central to Kansas City swing; conocido por blues-inflected phrasing, a light, propulsive piano style, y distintivas secciones de ritmo de banda grande."
     },
     "artist:craig-david": {
-      "description": "Cantante y compositor inglés que surgió de la escena UK garage."
+      "description": "Cantante inglés que saltó a la fama en la escena UK garage en 1999 al poner voz a «Re-Rewind» de Artful Dodger. Su sencillo en solitario «Fill Me In» encabezó la lista británica en 2000."
     },
     "artist:cream": {
       "description": "Power trio británico fundamental para el blues rock. Su actividad original transcurrió entre 1966 y 1968, con actuaciones de reunión en 1993 y 2005; el período de carrera incluye esas pausas."
@@ -308,6 +320,9 @@
     },
     "artist:cybotron": {
       "description": "El grupo electrónico de Detroit se formó alrededor de Juan Atkins y Richard “3070” Davis, con Jon-5 uniéndose más tarde. Sus primeros singles, incluyendo “Clear” y “Techno City”, conectan electro, funk, y el vocabulario emergente Detroit techno; el proyecto más tarde reanudó la grabación."
+    },
+    "artist:daddy-yankee": {
+      "description": "Rapero surgido de la escena underground puertorriqueña que contribuyó a llevar el reguetón al público internacional con «Gasolina» en 2004."
     },
     "artist:daft-punk": {
       "description": "Duo de música electrónica francesa Thomas Bangalter y Guy-Manuel de Homem-Christo, cuyas producciones de house y danza ayudaron a popularizar French house internacionalmente."
@@ -322,7 +337,7 @@
       "description": "Banda noruega metal que evolucionó desde sus raíces tempranas y death metal hasta las raíces influyentes black metal, más tarde que van a través de negro, thrash, doom y heavy metal."
     },
     "artist:dave-brubeck": {
-      "description": "Pianista y compositor asociado con cool jazz y experimentos en metros inusuales."
+      "description": "Pianista y director de jazz cuyo cuarteto acercó los compases poco habituales a un público amplio con «Time Out» (1959), que incluye «Take Five» del saxofonista Paul Desmond."
     },
     "artist:david-bowie": {
       "description": "Cantautor inglés, músico y actor cuyo trabajo se trasladó a través de pop, rock, soul, estilos electrónicos y experimentales; “Space Oddity” trajo su primer gran avance en 1969."
@@ -400,7 +415,7 @@
       }
     },
     "artist:dizzy-gillespie": {
-      "description": "Trumpeter y compositor central a bebop y el desarrollo de jazz afrocubano."
+      "description": "Trompetista y compositor fundamental en el bebop. Las grabaciones de su big band con el conguero cubano Chano Pozo, entre ellas «Manteca» en 1947, contribuyeron a definir el jazz afrocubano."
     },
     "artist:dj-hype": {
       "description": "DJ británico, productor y constructor de etiquetas que surgió de Hackney reggae sistema de sonido y la cultura pirata-radio. Sus primeras producciones de hardcore con Phivos Sebastiane como El Scientist precedieron su papel central en jungle y drum and bass; más tarde ayudó a construir etiquetas Ganja y Playaz.",
@@ -410,6 +425,12 @@
         "1993": "Hype sitúa la aparición del jungle en 1992–1993; su tema “Shot in the Dark” de 1993 llegó a las listas de pop y después surgió Ganja Records (1994–1996).",
         "1996": "Se trasladó a una discográfica, radio y carrera internacional de DJ a través de True/Real Playaz y Playaz Recordings."
       }
+    },
+    "artist:dj-lag": {
+      "description": "DJ y productor que contribuyó a desarrollar el sonido gqom de Durban y lo llevó a las pistas de baile de otros países con temas como «Ice Drop» y «Umlilo»."
+    },
+    "artist:dj-maphorisa": {
+      "description": "DJ y productor sudafricano que trabajó con el grupo Uhuru y más tarde se destacó como productor de amapiano."
     },
     "artist:dj-minx": {
       "description": "DJ y productora de Detroit activa desde principios de la década de 1990. Fundó el colectivo Women on Wax en 1996 y lanzó Women on Wax Recordings en 2001, creando plataformas para mujeres DJ y productoras en la escena regional."
@@ -429,6 +450,12 @@
     },
     "artist:dj-shadow": {
       "description": "California DJ y productor Josh Davis, conocido por hip-hop instrumental basado en muestras; la música lanzada como DJ Shadow que comienza en 1991."
+    },
+    "artist:dj-spinn": {
+      "description": "DJ y productor de Chicago que ya formaba parte de la escena local de footwork a finales de la década de 1990 y ayudó a formar el colectivo Teklife con DJ Rashad."
+    },
+    "artist:dmitri-pokrovsky-ensemble": {
+      "description": "Conjunto moscovita que llevó el canto de las aldeas rusas a los escenarios. Su repertorio también incluye «Les Noces» de Stravinski."
     },
     "artist:dolly-parton": {
       "description": "Cantautor estadounidense cuyo repertorio de raíces country y Appalachian se cruzó posteriormente en pop, cine y bluegrass; se realizó públicamente como niño y entró en Nashville en 1964."
@@ -450,7 +477,7 @@
       "description": "San Diego post-hardcore banda formada por los antiguos miembros de Pitchfork Rick Froberg y John Reis; lanzó su álbum debut en 1991."
     },
     "artist:duke-ellington": {
-      "description": "Pianista, líder de banda y compositor cuya orquesta expandió las posibilidades expresivas y estructurales de jazz."
+      "description": "Pianista, director de orquesta y compositor de jazz que desarrolló un sonido orquestal distintivo a partir de sus músicos. Su orquesta estrenó «Take the ‘A’ Train» de Billy Strayhorn, y Ellington escribió «Caravan» con el trombonista Juan Tizol."
     },
     "artist:e-40": {
       "description": "Vallejo rapero y empresario que debutó con los jugadores más valiosos/El clic antes de una carrera en solitario que ayudó a llevar el rap de Bay Area a audiencias más amplias."
@@ -462,7 +489,7 @@
       "description": "Cantante de jùjú, guitarrista y director de banda nigeriano que comenzó en grupos de Lagos en la década de 1950 y fundó International Brothers en 1964."
     },
     "artist:eddie-fowlkes": {
-      "description": "Detroit DJ y productor asociado con la primera ola de Detroit techno."
+      "description": "DJ y productor de la primera oleada del techno de Detroit. Su primer lanzamiento, «Goodbye Kiss», salió en 1986 en Metroplex, el sello de Juan Atkins."
     },
     "artist:egyptian-lover": {
       "description": "Los Angeles electro-rap DJ, productor y MC asociados con el ejército del tío Jamm y la primera costa oeste electro; comenzó una carrera de grabación en solitario en 1984."
@@ -472,6 +499,9 @@
     },
     "artist:elvis-presley": {
       "description": "Cantante estadounidense cuyas grabaciones de 1954 Sun fusionaron country y fuentes de ritmo y blues y ayudaron a impulsar rock and roll a los públicos de masas."
+    },
+    "artist:emmylou-harris": {
+      "description": "Cantante estadounidense que colaboró con Gram Parsons antes de consolidar su carrera en el country con «Pieces of the Sky» en 1975."
     },
     "artist:erik-satie": {
       "description": "Compositor y pianista francés cuyas primeras obras para piano surgieron en la década de 1880; también trabajó extensamente en el cabaré parisino antes de sus posteriores colaboraciones de vanguardia."
@@ -515,7 +545,7 @@
       "description": "Proyecto de arte, música y performance de Nueva York fundado por Warren Fischer y Casey Spooner en 1998. Sus espectáculos multimedia teatrales ayudaron a definir el primer momento electroclash; “Emerge” alcanzó la parte superior del Reino Unido 40 en 2002. El proyecto combinado pop, coreografía, trajes y arte de performance."
     },
     "artist:frankie-knuckles": {
-      "description": "DJ, productor y remixer nacido en Nueva York que se convirtió en una figura central en Chicago house. Su residencia Warehouse de 1977 ayudó a moldear el sonido y dio a house su nombre; continuó como artista de grabación y remixer hasta su muerte."
+      "description": "DJ, productor y remezclador nacido en Nueva York que contribuyó a definir el house de Chicago en el Warehouse. Empezó a pinchar allí en 1977, combinando mezclas disco extendidas con percusión añadida."
     },
     "artist:fugazi": {
       "description": "Washington, D.C. post-hardcore banda conocida por un enfoque autogestionado, DIY y los espectáculos asequibles de todas las edades. Ellos jugaron desde 1987 a través de su rendimiento público final en 2002, luego entraron un hiato indefinido."
@@ -546,10 +576,13 @@
       "description": "Cantautor y productor italiano Paul Mazzolini, conocido como Gazebo y asociado al Italo disco. Su primer sencillo con ese nombre, “Masterpiece”, apareció en 1982; “I Like Chopin” supuso su salto internacional en 1983."
     },
     "artist:genesis": {
-      "description": "Banda británica que se desarrolló desde el progressive rock a un sonido pop-rock más amplio, con múltiples hiatusas y reuniones."
+      "description": "Grupo británico cuyas actuaciones teatrales de rock progresivo tenían a Peter Gabriel como cantante principal. Con Phil Collins al frente, Genesis amplió su sonido hacia el pop rock. Su trayectoria incluyó pausas y reuniones."
     },
     "artist:george-clinton": {
       "description": "Cantante, compositor y productor que formó el grupo de doo-wop The Parliaments en 1955 y más tarde lideró Parliament y Funkadelic, construyendo el universo P-Funk de la década de 1970."
+    },
+    "artist:george-jones": {
+      "description": "Cantante tejano de honky-tonk que llegó por primera vez a los cinco primeros puestos de la lista country en 1955 con «Why, Baby, Why», editado por Starday. Más tarde grabó una serie de duetos country con Tammy Wynette."
     },
     "artist:geto-boys": {
       "description": "Grupo de rap de Houston formado por el fundador de Rap-A-Lot Records James Smith. El grupo se convirtió en un histórico acto del sur de hip-hop a través de narración de confrontación y posteriores cambios de alineación; sus planes de reunión final siguieron la enfermedad terminal de Bushwick Bill en 2019."
@@ -585,14 +618,29 @@
     "artist:green-day": {
       "description": "Green Day es una banda estadounidense de punk rock formada en East Bay, California, en 1987 como Sweet Children. Ayudó a llevar el punk y el pop-punk a un público amplio en la década de 1990 y sigue activa."
     },
+    "artist:gucci-mane": {
+      "description": "Rapero de trap de Atlanta que publicó el proyecto independiente La Flare en 2001. En 2005 llegó Trap House, su primer álbum de estudio comercial."
+    },
+    "artist:guy": {
+      "description": "Grupo de Harlem formado en 1987 por Teddy Riley, Aaron Hall y Timmy Gatling, cuyo new jack swing unía voces de R&B con ritmos de hip-hop. El grupo se reunió para el álbum Guy III en 2000."
+    },
     "artist:handel": {
       "description": "Compositor barroco de óperas, oratorios y música instrumental, con una carrera centrada en Londres."
+    },
+    "artist:hank-williams": {
+      "description": "Cantautor de country de Alabama que lideró a los Drifting Cowboys. «Move It on Over» fue su primer éxito con MGM, y «Lovesick Blues» pasó de ser una de las favoritas del público de Louisiana Hayride a encabezar las listas."
+    },
+    "artist:hardwell": {
+      "description": "DJ y productor neerlandés que empezó a pinchar a los 14 años. Sus sesiones llevaron el big room house a los escenarios principales de festivales como el Ultra Music Festival."
+    },
+    "artist:hariprasad-chaurasia": {
+      "description": "Músico del repertorio clásico indostaní que toca el bansuri, una flauta de bambú. Se incorporó a All India Radio en 1957 y más tarde grabó Venu con el intérprete de tabla Zakir Hussain."
     },
     "artist:haydn": {
       "description": "Compositor clásico central para el desarrollo de la sinfonía y cuarteto de cuerda."
     },
     "artist:hazell-dean": {
-      "description": "Cantor inglés asociado con la música de baile Hi-NRG."
+      "description": "Cantante inglesa de hi-NRG cuyo sencillo «Searchin’» pasó de las discotecas a la lista pop británica en 1984. Luego trabajó con el equipo de producción Stock Aitken Waterman."
     },
     "artist:headhunterz": {
       "description": "El DJ y productor neerlandés de hardstyle Willem Rebergen, cuyos himnos melódicos y el dúo Project One con Wildstylez ayudaron a llevar el hardstyle a escenarios internacionales de EDM a finales de la década de 2000 y durante la de 2010."
@@ -601,7 +649,16 @@
       "description": "Compositor medieval de canciones monofónicas sagradas y el drama musical Ordo Virtutum. Fechas aproximan su período de composición documentado, no su vida útil."
     },
     "artist:horace-silver": {
-      "description": "Pianista y compositor que trajo inflexiones blues y gospel a hard bop."
+      "description": "Pianista y compositor de jazz que contribuyó a formar los Jazz Messengers. Su hard bop se nutrió del blues y el góspel, y en Song for My Father incorporó ritmos de Cabo Verde, la tierra natal de su padre."
+    },
+    "artist:huun-huur-tu": {
+      "description": "Conjunto tuvano fundado en 1992 con el nombre de Kungurtuk. Su primer disco, 60 Horses in My Herd, presenta el canto de garganta y el acompañamiento instrumental característicos de su música."
+    },
+    "artist:ibrahim-ferrer": {
+      "description": "Cantante cubano que empezó su carrera en conjuntos de son durante la adolescencia. Las grabaciones de Buena Vista Social Club dieron a conocer su voz a un nuevo público internacional en la última etapa de su carrera."
+    },
+    "artist:ik-dairo": {
+      "description": "Músico nigeriano de jùjú que hizo del acordeón un rasgo distintivo de su sonido, junto a la guitarra y la percusión yoruba."
     },
     "artist:illapu": {
       "description": "Illapu es un grupo chileno Andean folk fundado en Antofagasta en 1971. Su música combina tradiciones andinas y latinoamericanas con canciones políticas y luego rock, jazz e influencias clásicas; el exilio y el regreso formaron su historia."
@@ -611,6 +668,15 @@
     },
     "artist:incognito": {
       "description": "El colectivo London jazz-funk liderado por Jean-Paul 'Bluey' Maunick, más tarde firmado a la etiqueta de Loud Talkin de Gilles Peterson durante el boom ácido-jazz."
+    },
+    "artist:infected-mushroom": {
+      "description": "Dúo de psytrance formado en Haifa en 1996. Construye sus temas con patrones repetidos y melodías superpuestas, y vuelve a piezas de sus inicios como «Dancing with Kadafi» en REBORN."
+    },
+    "artist:insane-clown-posse": {
+      "description": "Grupo de rap de Detroit que empezó como Inner City Posse y adoptó el nombre de Insane Clown Posse hacia 1991. Los personajes de payaso y la imaginería de terror se volvieron elementos centrales de sus actuaciones de horrorcore."
+    },
+    "artist:inti-illimani": {
+      "description": "Fundado por estudiantes en Santiago en 1967, Inti-Illimani incorporó tradiciones populares andinas a la Nueva Canción chilena. Tras el golpe de Estado de 1973 en Chile, el conjunto vivió y actuó en el exilio en Italia hasta su regreso en 1988."
     },
     "artist:iron-maiden": {
       "description": "Banda británica heavy-metal asociada con ritmos galopantes, guitarras armonizadas y narración de larga data."
@@ -622,7 +688,7 @@
       "description": "Productor, rapero y miembro de Slum Village de Detroit, cuyo primer trabajo colectivo se remonta a principios de la década de 1990; sus primeros créditos de producción importantes aparecieron a mediados de esa década. Su carrera en solitario transcurrió en paralelo a su trabajo en grupo hasta su muerte en 2006."
     },
     "artist:james-brown": {
-      "description": "Cantante estadounidense, líder y compositor central a soul y funk.",
+      "description": "Cantante de soul y director de banda estadounidense que se dio a conocer con los Famous Flames. Los ritmos entrelazados de «Papa’s Got a Brand New Bag», publicado en 1965, ayudaron a sentar las bases del funk.",
       "phaseNote": "Relevancia de carrera editorial anclada a su salto al éxito en el soul, las grabaciones funk de mediados de los años 1960 y principios de los 1970, y el éxito crossover de Living in America en 1985. Son etapas aproximadas de su carrera, no puntuaciones de listas o de reproducción. Su carrera activa termina en 2006.",
       "phaseNotes": {
         "1985": "“Living in America” fue un hito importante de su carrera en 1985. Respalda la fecha de referencia, no una puntuación de relevancia medida."
@@ -632,7 +698,7 @@
       "description": "London funk y acid-jazz banda frente a Jay Kay, firmaron por primera vez a Acid Jazz y entre los actos más exitosos del género."
     },
     "artist:jeff-mills": {
-      "description": "The Wizard. Cofundó Underground Resistance y después definió un techno minimal duro en Axis y en la primera etapa de Tresor."
+      "description": "DJ de techno de Detroit que mezcló con el nombre de «The Wizard» en WJLB y cofundó Underground Resistance con Mike Banks. Publicó temas de club desde sus inicios con Tresor y fundó Axis Records en 1992."
     },
     "artist:jefferson-airplane": {
       "description": "Banda psicodélica-rock de San Francisco. Actividad original funcionó 1965-1972, con una reunión 1989 y una aparición 1996 final; las fechas incluyen esos descansos."
@@ -646,11 +712,20 @@
     "artist:jimi-hendrix": {
       "description": "Guitarra y compositor que ampliaron blues y psychedelic rock a través de retroalimentación, efectos e improvisación."
     },
+    "artist:joan-baez": {
+      "description": "Cantante y guitarrista folk que se dio a conocer en el Newport Folk Festival en 1959 y actuó durante seis décadas. Su voz de soprano acercó las baladas tradicionales y las canciones de protesta a nuevos públicos."
+    },
     "artist:joao-bosco": {
       "description": "Cantautor y guitarrista brasileño cuya carrera de grabación comenzó con “Agnus Sei” en 1972; su primer LP en solitario siguió en 1973."
     },
+    "artist:joao-gilberto": {
+      "description": "Cantante y guitarrista brasileño cuyo canto íntimo y cuya guitarra sincopada contribuyeron a definir la bossa nova. En 1958 grabó «Chega de Saudade» para Odeon."
+    },
     "artist:john-coltrane": {
       "description": "Saxofonista cuyo trabajo pasó de bebop y hard bop a la improvisación modal y más libre."
+    },
+    "artist:johnny-cash": {
+      "description": "Cantautor de country cuyas grabaciones de ritmo marcado y acompañamiento austero para Sun Records incluyen «I Walk the Line». En 1968 grabó en directo el álbum At Folsom Prison."
     },
     "artist:johnny-ventura": {
       "description": "Cantante y líder dominicano merengue que ayudó a modernizar el género a través de su orquesta y grabaciones."
@@ -662,7 +737,7 @@
       "description": "Compositor renacentista de masas, motets y obras vocales seculares."
     },
     "artist:joy-division": {
-      "description": "Manchester post-punk banda conocida por los arreglos de estrellas y un ambiente de moda."
+      "description": "Banda de post-punk de Mánchester cuyos arreglos austeros enmarcan el barítono de Ian Curtis en Unknown Pleasures y Closer. Tras la muerte de Curtis en 1980, los demás miembros formaron New Order."
     },
     "artist:juan-atkins": {
       "description": "Detroit productor y DJ (1962–2026) cuyo trabajo con Cybotron y como modelo 500 ayudó a formar temprano techno. Atkins utilizó la palabra “techno” para la música de Cybotron antes de convertirse en un nombre para el estilo Detroit; fue uno de los Belleville Three y fundó Metroplex."
@@ -670,23 +745,35 @@
     "artist:juan-flores": {
       "description": "músico chileno y multiinstrumentalista que se unieron a la alineación posterior de Inti-Illimani en 2002."
     },
+    "artist:juan-luis-guerra": {
+      "description": "Cantautor dominicano que formó el grupo 440 y grabó su primer disco, Soplando, en 1984. Más adelante, con Bachata Rosa, acercó la bachata dominicana a un público internacional más amplio."
+    },
     "artist:judas-priest": {
       "description": "Banda Inglés heavy-metal formada en Birmingham en 1969; la alineación temprana precedió a la línea de grabación posterior que estableció su sonido de firma."
     },
     "artist:kabza-de-small": {
       "description": "DJ y productor sudafricano que ayudaron a popularizar amapiano; comenzó a DJing en 2009 y lanzó su álbum debut en 2016."
     },
+    "artist:kaigal-ool-khovalyg": {
+      "description": "Cantante de garganta tuvano y cofundador de Huun-Huur-Tu. Con el grupo interpreta estilos como el khöömei, el sygyt y el kargyraa, y toca el igil, un instrumento de arco de dos cuerdas."
+    },
     "artist:kanda-bongo-man": {
       "description": "Cantante congoleño de soukous que comenzó en bandas de baile de Kinshasa en la década de 1970 y después se convirtió en un director de banda internacional."
     },
     "artist:kavinsky": {
-      "description": "Kavinsky está documentado en las historias del género citado y referencia del artista."
+      "description": "Productor francés de música electrónica cuyo EP Teddy Boy salió en 2006. En «Nightcall», producido por Guy-Manuel de Homem-Christo, la voz distorsionada de Kavinsky se alterna con el canto de Lovefoxxx."
     },
     "artist:keak-da-sneak": {
       "description": "Rapero de Oakland y pionero del hyphy que comenzó a grabar en la década de 1990 con 3X Krazy antes de emprender una carrera en solitario."
     },
     "artist:kelli-hand": {
       "description": "DJ y productora de Detroit cuyos lanzamientos como K-HAND la convirtieron en una figura importante de las comunidades de house y techno de la ciudad. Se le reconoció haber abierto espacio para las mujeres negras en una escena dominada por hombres y siguió grabando y actuando hasta sus últimos años."
+    },
+    "artist:ken-boothe": {
+      "description": "Cantante jamaicano que hizo sus primeras grabaciones con Stranger Cole antes de grabar en solitario para Studio One. Su grabación de «Feel Good» llegó en 1966, cuando el rocksteady empezaba a tomar forma."
+    },
+    "artist:kendrick-lamar": {
+      "description": "Rapero de Compton que en 2003 hizo circular su primera mixtape con el nombre de K-Dot. En good kid, m.A.A.d city recurre a vivencias de su juventud para contar una historia ambientada en Compton."
     },
     "artist:kerri-chandler": {
       "description": "DJ y productor de house de Nueva Jersey, activo en las cabinas desde la adolescencia, que publicó sus primeros discos a principios de los años 1990."
@@ -716,11 +803,17 @@
       "description": "Banda estadounidense metal formada en 1993 cuyo debut 1994 autotitulado ayudó a popularizar nu metal."
     },
     "artist:kraftwerk": {
-      "description": "Las máquinas de hombre de Düsseldorf. 'Trans-Europe Express' y 'Computer World' son citados por Juan Atkins y Afrika Bambaataa igual que el código fuente.",
+      "description": "Grupo de música electrónica de Düsseldorf cuyos discos centrados en los sintetizadores influyeron en el synth-pop, el hip-hop y el techno de Detroit. Afrika Bambaataa y Soulsonic Force retomaron elementos de «Trans-Europe Express» y «Numbers» en «Planet Rock».",
       "phaseNote": "Prominencia de carrera editorial anclada a Autobahn, Trans-Europe Express, Computer World, y el regreso de 2003 Tour de France Soundtracks. Esto describe la visibilidad de la era de grabación, no la magnitud continua de la influencia de Kraftwerk o la escucha medida.",
       "phaseNotes": {
         "2003": "Tour de France Soundtracks (2003) marcó un retorno documentado al nuevo material de estudio después de una larga brecha; esta fase describe la actividad de grabación y la visibilidad."
       }
+    },
+    "artist:krs-one": {
+      "description": "Rapero del Bronx que formó Boogie Down Productions con el DJ Scott La Rock. Sus grabaciones con el grupo abarcaron rimas de batalla y temas sobre la violencia callejera y la educación."
+    },
+    "artist:kurtis-blow": {
+      "description": "Rapero de los primeros años del hip-hop neoyorquino que firmó con Mercury en 1979. A «Christmas Rappin’» le siguió «The Breaks», que obtuvo un disco de oro en 1980."
     },
     "artist:kyuss": {
       "description": "Banda estadounidense de desert rock formada en 1987 como Sons of Kyuss; el grupo se convirtió en una influencia destacada del stoner rock antes de disolverse en 1995."
@@ -739,6 +832,12 @@
     },
     "artist:led-zeppelin": {
       "description": "Banda rock inglesa formada en 1968 y desbandada en 1980 después de la muerte de John Bonham; los miembros se reunieron para realizar presentaciones posteriores selectas, incluyendo 2007."
+    },
+    "artist:lee-scratch-perry": {
+      "description": "Productor jamaicano de reggae e innovador del dub. En su estudio Black Ark de Kingston grabó a artistas como los Congos y Max Romeo y transformó los ritmos en nuevas versiones con la mesa de mezclas."
+    },
+    "artist:lefty-frizzell": {
+      "description": "Cantante tejano de honky-tonk que alargaba las vocales y las frases sobre el compás. Su debut con Columbia, «If You’ve Got the Money I’ve Got the Time», lo ayudó a convertirse en una estrella del country en 1950."
     },
     "artist:leonin": {
       "description": "Compositor escolar Notre-Dame asociado con organo polifónico temprano. Las fechas de actividad son aproximadas porque la evidencia biográfica es limitada."
@@ -773,6 +872,9 @@
     "artist:ltj-bukem": {
       "description": "DJ y productor inglés asociado con jungle y drum and bass."
     },
+    "artist:lucinda-williams": {
+      "description": "Cantautora estadounidense cuyos primeros discos se nutrieron del blues y el folk. Happy Woman Blues, su primer álbum de canciones propias, lleva la huella del blues del Delta que escuchó durante su infancia y juventud en Luisiana."
+    },
     "artist:luzmila-carpio": {
       "description": "Cantante boliviano Quechua y defensor cultural cuya carrera profesional comenzó en la infancia y cuyas primeras grabaciones aparecieron en 1969."
     },
@@ -784,6 +886,9 @@
     },
     "artist:macintosh-plus": {
       "description": "Alias discográfico de vaporwave de la productora Ramona Xavier, también conocida como Vektroid, conocido sobre todo por el álbum Floral Shoppe de 2011."
+    },
+    "artist:madonna": {
+      "description": "Cantautora pop que inició su trayectoria musical en Nueva York. Su primer sencillo comercial, «Everybody», entró en las listas de música dance en 1982 y apareció en su álbum debut al año siguiente."
     },
     "artist:mahavishnu-orchestra": {
       "description": "El conjunto de fusión de John McLaughlin combinó la improvisación del jazz, la intensidad del rock y estructuras rítmicas complejas; su trayectoria incluyó varias formaciones y pausas.",
@@ -822,6 +927,12 @@
     },
     "artist:masters-at-work": {
       "description": "Nueva York house producción y remix duo Kenny “Dope” Gonzalez y Louie Vega, cuya colaboración se desarrolló alrededor de 1990 después del uso anterior del nombre Masters at Work por Todd Terry."
+    },
+    "artist:maurice-ravel": {
+      "description": "Compositor francés que escribió para piano, conjunto de cámara y orquesta. Serge Diaghilev le encargó el ballet Daphnis et Chloé, que estrenaron los Ballets Russes en 1912."
+    },
+    "artist:mayhem": {
+      "description": "Banda noruega de black metal formada en 1984. Al sonido crudo del EP Deathcrush le siguió en 1994 el álbum De Mysteriis Dom Sathanas. Tras una pausa en la década de 1990, la banda se reunió con una formación distinta."
     },
     "artist:mccoy-tyner": {
       "description": "Pianista asociado con el cuarteto de John Coltrane y un poderoso lenguaje modal armónico."
@@ -893,7 +1004,7 @@
       "description": "Rapero estadounidense Nasir Jones, conocido como Nas, cuya carrera discográfica comenzó con una estrofa como invitado en “Live at the Barbeque” de Main Source en 1991; Illmatic llegó después, en 1994."
     },
     "artist:neon-indian": {
-      "description": "Proyecto de música electrónica de Alan Palomo, asociado con chillwave; su No Way Down EP apareció en 2008, con mayor atención y debut álbum Psychic Chasms en 2009."
+      "description": "El proyecto de música electrónica de Alan Palomo combina sintetizadores brumosos y melodías pop en su álbum debut Psychic Chasms (2009), un referente temprano del chillwave."
     },
     "artist:neophyte": {
       "description": "Rotterdam gabber grupo fundado en 1992 por Jeroen Streunding con Danny Greten y Robin van Roon, lanzado por primera vez en Rotterdam Records."
@@ -929,7 +1040,7 @@
       "description": "Grupo Compton hip-hop central al ascenso de gangsta rap. Formado en 1986, N.W.A publicó sus primeros registros de grupo en 1987 y había terminado efectivamente por 1991 después de que los miembros clave se fueran."
     },
     "artist:oasis": {
-      "description": "Manchester rock banda formada en 1991 del grupo anterior Rain, con Liam y Noel Gallagher convirtiéndose en sus delanteros y compositores. Después de dividirse en 2009, Oasis se reunió para presentaciones en vivo en 2025."
+      "description": "Banda de rock de Mánchester surgida de Rain en 1991. La voz de Liam Gallagher y las composiciones de Noel Gallagher impulsaron el ascenso de la banda a partir de su debut, Definitely Maybe (1994). Oasis se separó en 2009 y se reunió para una gira en 2025."
     },
     "artist:octave-one": {
       "description": "Grupo de música electrónica de Detroit liderado por los hermanos Lenny y Lawrence Burden, que debutaron en Transmat en 1989 con “I Believe” y dirigen el sello 430 West; conocido por el himno “Blackwater”, interpretado en directo."
@@ -963,7 +1074,7 @@
       "description": "Colectivo de funk liderado por George Clinton que reunía a Funkadelic (fundado en 1968) y Parliament (desde 1970) y después salió de gira como P-Funk All Stars. Surgió del grupo de doo-wop de Clinton, The Parliaments, en la década de 1950."
     },
     "artist:parvathy-baul": {
-      "description": "Bengali Baul practicante, cantante y intérprete que entrenó con maestros Baul; su transformación en un practicante Baul está fechada a 1997, con un reportado primer rendimiento público en 2001."
+      "description": "Cantante y maestra baul de Bengala que estudió con Sanatan Das Thakur Baul y Shashanko Goshai. En sus actuaciones canta y baila mientras toca el ektara de una cuerda y el pequeño tambor duggi."
     },
     "artist:patrick-cowley": {
       "description": "Productor estadounidense de disco y Hi-NRG que ayudó a moldear la escena de baile gay de San Francisco mediante la producción electrónica, sus colaboraciones con Sylvester y Megatone Records; estuvo activo profesionalmente desde 1977 hasta su muerte en 1982."
@@ -1014,7 +1125,7 @@
       "description": "Banda de Bristol formada en 1991 por Geoff Barrow y Beth Gibbons, a quienes se unió después Adrian Utley; tras una larga pausa que comenzó alrededor de 1999, regresaron con Third en 2008 y con actuaciones ocasionales en 2022 y 2025."
     },
     "artist:prince": {
-      "description": "Cantante estadounidense, compositor y multi-instrumentalista asociado con Minneapolis funk.",
+      "description": "Cantante, compositor y multiinstrumentista que contribuyó a definir el sonido de Minneapolis. En 1999 y Purple Rain combinó ritmos de funk y R&B con sintetizadores y guitarra de rock.",
       "phaseNote": "Prominencia editorial de su carrera: primeros lanzamientos en solitario, el despegue de la década de 1980 centrado en Purple Rain, el éxito de principios de la década de 1990 y el regreso con Musicology en 2004. Los grados son cualitativos y aproximados, no una medición de popularidad. Su carrera activa termina en 2016.",
       "phaseNotes": {
         "2004": "Musicology (2004) y su gira marcaron un regreso documentado al circuito comercial; el grado de “edad de oro” es relativo a la carrera de este artista y sigue siendo interpretativo."
@@ -1036,7 +1147,7 @@
       "description": "El cantante de Bengali Baul Purna Das inició actuaciones públicas profesionales como niño, incluyendo All India Radio en 1942; ayudó a llevar música Baul a audiencias internacionales, especialmente en la gira del 1962 World Youth Festival."
     },
     "artist:queen": {
-      "description": "La banda británica rock se formó en 1970 por Freddie Mercury, Brian May y Roger Taylor; la llegada de John Deacon a 1971 completó la línea clásica. Los miembros sobrevivientes continúan actuando como Queen con Adam Lambert."
+      "description": "Banda británica de rock formada en 1970 por Freddie Mercury, Brian May y Roger Taylor. El bajista John Deacon completó la formación que grabó «Bohemian Rhapsody» y actuó en Live Aid en 1985. Más tarde, May y Taylor salieron de gira como Queen + Adam Lambert."
     },
     "artist:queens-of-the-stone-age": {
       "description": "Banda estadounidense de rock liderada por Josh Homme, desarrollada a partir de su proyecto Gamma Ray de 1996, que publicó su primera música con el nombre Queens of the Stone Age en 1997; su álbum de debut homónimo llegó en 1998."
@@ -1060,13 +1171,13 @@
       "description": "Atenas, Georgia alternative rock banda formada en 1980; después de más de tres décadas de grabación, R.E.M. anunció su disolución en 2011."
     },
     "artist:rhythm-and-sound": {
-      "description": "Berlín dub-techno y dub proyecto por miembros de Basic Channel."
+      "description": "Proyecto berlinés de dub de Mark Ernestus y Moritz von Oswald, de Basic Channel. Sus mezclas espaciosas combinaban bajos profundos con voces de reggae, como la de Cornell Campbell en «King in My Empire»."
     },
     "artist:ricardo-villalobos": {
       "description": "Productor de música electrónica y DJ alemán nacido en Chile que comenzó a publicar discos en 1993 bajo sus primeros alias; debutó con su propio nombre a mediados de la década de 1990 y su proyección internacional creció en la de 2000."
     },
     "artist:richie-hawtin": {
-      "description": "El Plastikman de Windsor, al otro lado del río de Detroit. Ácido destripado y techno hasta el plano mínimo."
+      "description": "DJ y productor de techno que se inició entre Windsor, Ontario, y Detroit. Con el nombre de Plastikman exploró la faceta austera y psicodélica del acid techno en discos como su debut Sheet One, de 1993."
     },
     "artist:ride": {
       "description": "Oxford alternative rock se formó en 1988; después de dividirse en 1996, Ride se reunió en 2014 y ha vuelto a grabar y girar."
@@ -1169,7 +1280,7 @@
       "description": "Banda de San Francisco liderada por Sly Stone que fusionó soul, funk y rock; el bajo percusivo de Larry Graham contribuyó a moldear el primer funk. El último álbum de la formación original fue Small Talk (1974); Stone mantuvo el nombre hasta principios de la década de 1980."
     },
     "artist:snoop-dogg": {
-      "description": "Long Beach rapper y productor cuya introducción 1992 en Dr. Dre El Chronic llevó al 1993 G-funk hito Doggystyle y una carrera de larga duración a través de la música y los medios."
+      "description": "Rapero de Long Beach que se dio a conocer entre el gran público con «Deep Cover», de Dr. Dre. Sus apariciones en The Chronic y su debut en solitario de 1993, Doggystyle, contribuyeron a popularizar el G-funk."
     },
     "artist:so-solid-crew": {
       "description": "El sur de Londres UK garage y el colectivo hip-hop, cuya gran membresía giratoria y 2001 \"21 Seconds\" trajeron la escena a la corriente principal."
@@ -1187,19 +1298,19 @@
       "description": "Tom Jenkinson, músico electrónico inglés, conocido por combinar programación de tambores intrincados, jazz-influenced bass play y electrónica experimental."
     },
     "artist:stacey-pullen": {
-      "description": "Detroit techno DJ y productor asociado con la segunda ola de la escena."
+      "description": "DJ y productor de la segunda ola del techno de Detroit. Sus trabajos salieron en Transmat, el sello que fundó Derrick May, otro productor de la ciudad."
     },
     "artist:steve-reich": {
       "description": "Compositor americano y pionero de minimalism, conocido por el phasing, los patrones de repetición y los procesos musicales graduales."
     },
     "artist:stravinsky": {
-      "description": "compositor ruso-nacido cuyo trabajo se trasladó a través de ballets ruso-períodos, neoclásico y música serie; el punto final 1966 marca su última composición completa, no su muerte en 1971."
+      "description": "Compositor nacido en Rusia que pasó de ballets como La consagración de la primavera a la composición serial, pasando por el neoclasicismo. Su última obra terminada, Requiem Canticles (1966), fue escrita para voces y orquesta."
     },
     "artist:suede": {
       "description": "Banda londinense de rock alternativo formada en 1989; su despegue en 1992–1993 ayudó a lanzar el britpop y sus álbumes posteriores muestran un regreso sostenido tras la pausa de la banda en la década de 2000."
     },
     "artist:sunny-day-real-estate": {
-      "description": "Seattle emo y alternative rock banda formada en 1992; Diario (1994) se convirtió en una piedra táctil de emo de segunda onda. Reuniones y tours posteriores hacen que la carrera sea intermitente, no una carrera continua 1994–present."
+      "description": "Banda de Seattle cuyo debut de 1994, Diary, contribuyó a dar forma a la segunda ola del emo. El grupo se separó y volvió a reunirse varias veces y retomó el álbum para una gira por su trigésimo aniversario en 2024."
     },
     "artist:sven-vath": {
       "description": "DJ y productor alemán que ayudaron a formar la escena musical electrónica de Frankfurt a través de residencias, promoción de clubes y etiquetas incluyendo Eye Q y Harthouse."
@@ -1228,6 +1339,9 @@
     "artist:teddy-riley": {
       "description": "Productor de discos americanos y compositor acreditado con la creación de new jack swing, mezclando las voces R&B, los ritmos hip-hop y la producción electrónica; posteriormente lideraron los grupos Guy y Blackstreet."
     },
+    "artist:terem-quartet": {
+      "description": "Conjunto de San Petersburgo que en sus primeras grabaciones reunió formas populares rusas y repertorio clásico con domras, bayán y balalaica baja."
+    },
     "artist:terry-riley": {
       "description": "Compositor e intérprete estadounidense cuya obra In C de 1964 ayudó a establecer el minimalismo mediante la repetición de células musicales que los intérpretes pueden tocar con una coordinación flexible."
     },
@@ -1235,7 +1349,7 @@
       "description": "Grupo vocal californiano fundado en Hawthorne en 1961; sus armonías cerradas y las innovaciones de estudio de Brian Wilson moldearon el surf pop y el rock ambicioso de la década de 1960. El nombre sigue utilizándose para giras con una formación distinta."
     },
     "artist:the-beatles": {
-      "description": "Cinta de Liverpool cuya composición y experimentos de estudio vuelven a formar rock y pop."
+      "description": "Banda de Liverpool cuya composición y experimentación en el estudio transformaron el rock y el pop. En «Tomorrow Never Knows», de Revolver (1966), los bucles de cinta y la voz procesada contrastan con el bordón de tanpura y un patrón repetido de batería."
     },
     "artist:the-clash": {
       "description": "Banda británica punk que fusionó punk con reggae, dub, ska, rockabilly y funk; el grupo original se disolvió en 1986 después de una década de desarrollo musical rápido."
@@ -1318,7 +1432,7 @@
       "description": "Chicago doom metal banda formada en 1979; Psalm 9 (1984) y The Skull (1985) establecieron su sonido lento y pesado, y el grupo continúa realizando y preparando nueva música."
     },
     "artist:tujamo": {
-      "description": "El DJ y productor alemán Matthias Richter, conocido como Tujamo, que comenzó a producir bajo el alias en 2006 y tuvo su primer gran éxito internacional con \"Boneless\" en 2013."
+      "description": "El DJ y productor alemán de electro house Matthias Richter grabó «Who» con Plastik Funk y publicó «Boneless» con Steve Aoki y Chris Lake en 2013."
     },
     "artist:tunde-nightingale": {
       "description": "Juju nigeriano cantante y líder de bandas que ayudaron a establecer el sonido reconocible de la posguerra del género e introdujo el shekere en juju ensembles."
@@ -1351,7 +1465,7 @@
       "description": "El músico electrónico canadiense Aaron Funk, conocido por breakcore programado intrincadamente, cambios rítmicos extremos y material melódico inesperado."
     },
     "artist:vivaldi": {
-      "description": "Compositor barroco veneciano y violinista, especialmente asociado con el concierto en solitario."
+      "description": "Compositor y violinista veneciano del Barroco que enseñó en el Ospedale della Pietà. En su colección L’estro armonico de 1711 enfrenta los violines solistas al conjunto en distintas formas de concierto."
     },
     "artist:warren-g": {
       "description": "El rapero de Long Beach y productor cuya producción suave G-funk y 1994 golpearon “Regulado” ayudaron a traer a la costa oeste hip-hop a un amplio público; antes había formado 213 con Snoop Dogg y Nate Dogg."
@@ -1360,10 +1474,13 @@
       "description": "El músico electrónico de Georgia Ernest Greene, cuyo dormitorio 2009 Life of Leisure EP y “Feel It All Around” ayudaron a definir el sonido chillwave temprano."
     },
     "artist:weather-report": {
-      "description": "Grupo eléctrico jazz-fusion fundado por Joe Zawinul y Wayne Shorter."
+      "description": "Grupo de jazz fusión fundado por Joe Zawinul y Wayne Shorter que amplió su sonido con la electrónica. Su álbum Heavy Weather, de 1977, incluye el éxito «Birdland»."
     },
     "artist:wildstylez": {
       "description": "DJ y productor neerlandés de hardstyle Joram Metekohy, una mitad de Project One junto a Headhunterz, cuyo “Year of Summer” se convirtió en el primer tema hardstyle en el Top 2000 neerlandés."
+    },
+    "artist:wiley": {
+      "description": "MC y productor de grime de Bow, en el este de Londres. Hizo grime temprano con el colectivo de garage Pay As U Go Cartel y desarrolló el estilo de producción conocido como eskimo."
     },
     "artist:william-byrd": {
       "description": "Compositor renacentista inglés de la polifonía sagrada, música de consorcio y obras de teclado; su primera cita profesional conocida fue organista y choirmaster en la Catedral de Lincoln en 1563."
@@ -1377,6 +1494,9 @@
     "artist:women-on-wax": {
       "description": "Colectivo del área de Detroit fundado por DJ Minx en diciembre de 1996 para dar visibilidad a DJ y cantantes mujeres. Fue un colectivo y una plataforma de eventos antes del lanzamiento de Women On Wax Recordings en 2001; Minx relanzó el sello en 2023."
     },
+    "artist:woody-guthrie": {
+      "description": "Cantautor estadounidense de folk que contó en sus canciones sobre el Dust Bowl las historias de familias desplazadas y trabajadores migrantes. Con canciones como «This Land Is Your Land» contribuyó al renacimiento del folk."
+    },
     "artist:yellowman": {
       "description": "Deejay jamaicano de dancehall cuya victoria en el Tastee Talent Contest de 1979 impulsó su ascenso y cuyos álbumes de principios de los años 1980 ayudaron a llevar el dancehall al público internacional."
     },
@@ -1388,6 +1508,9 @@
     },
     "artist:yo-yo-ma": {
       "description": "El violonchelo americano nacido en París, celebrado para actuaciones clásicas y colaboraciones a través de tradiciones musicales; comenzó a estudiar violonchelo a cuatro y dio su primer recital público a cinco."
+    },
+    "artist:zhanna-bichevskaya": {
+      "description": "Cantante y guitarrista rusa que recopiló y grabó para el sello Melodiya canciones tradicionales, desde baladas cosacas hasta cantos de boda del norte de Rusia."
     },
     "event:45rpm-record-introduced": {
       "name": "RCA Victor presenta el sencillo de 45 rpm",
@@ -4488,7 +4611,7 @@
       "description": "Músico, productor y DJ estadounidense cuya actividad musical se remonta a finales de la década de 1970. Más tarde tocó en bandas de post-punk, trabajó como DJ en clubes de Nueva York y comenzó a publicar sencillos electrónicos a principios de la década de 1990."
     },
     "artist:dj-premier": {
-      "description": "DJ americano y productor que debutó como la mitad de Gang Starr en 1987, posteriormente convirtiéndose en uno de los productores más influyentes de hip-hop."
+      "description": "DJ y productor de hip-hop que se asoció con Guru en 1989. Su primer álbum juntos como Gang Starr, «No More Mr. Nice Guy», incluye «Words I Manifest» y un tema que muestra la técnica de Premier con los platos."
     },
     "artist:pete-rock": {
       "description": "Productor, DJ y rapero estadounidense de hip-hop. Sus primeras oportunidades de darse a conocer llegaron al trabajar como DJ en el programa de radio neoyorquino de Marley Marl; sus primeros créditos de coproducción documentados fueron en Big Tyme de Heavy D & the Boyz (1989), seguidos de su asociación con C.L. Smooth a principios de la década de 1990. Es conocido por sus samples de jazz y soul superpuestos y por sus remezclas."
@@ -4625,7 +4748,7 @@
       "estimateNote": "Inicio aproximado de su carrera a mediados de la década de 1960: el relato biográfico describe el álbum de 2015 como una celebración de 50 años de trayectoria musical, junto al relato de Music In Africa sobre su trabajo en el highlife."
     },
     "artist:don-caballero": {
-      "description": "Rock grupo asociado con la escena math-rock; Pitchfork identifica Don Caballero junto a Polvo y Ruins como bandas que encabezaron el sonido.",
+      "description": "Grupo de rock de Pittsburgh que contribuyó a definir el math rock. Su álbum «American Don» destaca por el diálogo entre los instrumentos.",
       "estimateNote": "Sobre de carrera amplia de la formación 1991 reportada a través de la reunión anunciada 2026. Incluye interrupciones sustanciales, especialmente 2000-2003 y 2009-2026; la barra continua no afirma actividad ininterrumpida."
     },
     "artist:hella": {
@@ -5083,7 +5206,7 @@
       "description": "Banda de Washington D. C. que combinó canciones de hardcore muy rápidas con reggae influido por el dub en su debut homónimo."
     },
     "artist:black-flag": {
-      "description": "Banda del sur de California que se convirtió en una de las primeras formaciones influyentes del hardcore estadounidense."
+      "description": "Banda formada en el sur de California en 1976 que contribuyó a definir el hardcore punk estadounidense temprano."
     },
     "artist:dead-kennedys": {
       "description": "Banda punk de San Francisco fundada en 1978 por músicos entre los que se encontraban East Bay Ray y Jello Biafra."
@@ -5204,7 +5327,7 @@
       "description": "Guitarrista y director de banda que ayudó a consolidar el go-go de Washington y lo dio a conocer en todo el país con «Bustin’ Loose»."
     },
     "artist:trouble-funk": {
-      "description": "Banda de Washington que llevó su go-go al público de Estados Unidos y de otros países."
+      "description": "Banda de go-go de Washington D. C. que en directo combina capas de percusión y metales contundentes con cánticos de llamada y respuesta, como en «Let’s Get Small» y «Drop the Bomb»."
     },
     "artist:rare-essence": {
       "description": "Banda de go-go de Washington que surgió de un grupo de compañeros de escuela y se ganó a varias generaciones de seguidores locales."
@@ -5324,26 +5447,26 @@
       "description": "Música de baile social de Córdoba, Argentina, reconocible por su ritmo saltarín de piano llamado tunga tunga."
     },
     "artist:leonor-marzano": {
-      "description": "Pianista a quien se atribuye la creación del ritmo característico del cuarteto."
+      "description": "Pianista argentina a quien se atribuye la creación del ritmo «tunga tunga», base de la música y el baile del cuarteto cordobés. Su piano aportaba el pulso percusivo a las primeras formaciones."
     },
     "artist:la-mona-jimenez": {
-      "description": "Cantante cordobés y figura central del cuarteto."
+      "description": "Cantante cordobés de cuarteto que debutó con el Cuarteto Berna en 1967, a los 15 años. Con el tiempo se convirtió en una figura central de la música de baile de la ciudad."
     },
     "artist:rodrigo-bueno": {
-      "description": "Cantante cordobés y popular intérprete de cuarteto."
+      "description": "Cantante de cuarteto de Córdoba, Argentina, apodado El Potro. Tras alcanzar la fama con Lo Mejor del Amor en 1996, dio una serie de conciertos en el Luna Park de Buenos Aires en 2000."
     },
     "genre:mento": {
       "description": "Música popular y de baile jamaicana interpretada tanto por conjuntos rurales como por orquestas urbanas. Fue una de las fuentes del ska.",
       "estimateNote": "La fecha marca las primeras grabaciones comerciales jamaicanas de una tradición popular más antigua."
     },
     "artist:lord-flea": {
-      "description": "Cantante que figura en las primeras grabaciones jamaicanas de mento."
+      "description": "Cantante jamaiquino de mento que actuó en clubes de Kingston y grabó para el productor Ken Khouri. En 1957 publicó Swingin’ Calypsos con Capitol."
     },
     "artist:count-lasher": {
-      "description": "Cantante e intérprete de la primera época discográfica del mento jamaicano."
+      "description": "Cantante y compositor jamaicano de mento que grabó en los estilos rural y urbano. Su canción «Mango Time» evoca el inicio de la temporada de mangos en Jamaica."
     },
     "artist:lord-fly": {
-      "description": "Uno de los primeros intérpretes de mento en publicar un disco grabado en Jamaica."
+      "description": "Artista jamaiquino que estuvo entre los primeros intérpretes de mento en publicar discos grabados en la isla. Su grabación de «Donkey City» de 1952 se conserva en la antología Jamaica: Mento 1951–1958."
     },
     "genre:zouk": {
       "description": "Música de baile del Caribe francés que Kassav’ ayudó a definir hacia 1980. El grupo combinó ritmos antillanos y voces en criollo con cajas de ritmos y sintetizadores."
@@ -5364,19 +5487,19 @@
       "description": "Grupo filipino cuyo integrante Danny Javier acuñó el término OPM."
     },
     "artist:freddie-aguilar": {
-      "description": "Cantante y compositor de folk filipino cuya carrera recibió el impulso del festival Metropop."
+      "description": "Cantante y compositor de folk filipino cuya canción «Anak» se difundió internacionalmente en numerosas traducciones. Su repertorio también incluyó «Bayan Ko»."
     },
     "artist:ryan-cayabyab": {
-      "description": "Compositor filipino cuya carrera fue impulsada por el concurso de composición Metropop."
+      "description": "Compositor, arreglista y educador filipino que ganó el primer concurso de canciones Metropop en 1978 con «Kay Ganda ng Ating Musika». Después escribió para coros, orquestas y teatro musical y promovió la Original Pilipino Music."
     },
     "genre:varietes-francaises": {
       "description": "Canción popular francesa difundida por programas de variedades de radio y televisión. En los años sesenta, la ola yé-yé llevó a esos programas a jóvenes intérpretes y adaptaciones francesas de éxitos estadounidenses."
     },
     "artist:francoise-hardy": {
-      "description": "Cantante y compositora francesa que se dio a conocer en los comienzos del yé-yé."
+      "description": "Cantante y compositora francesa cuyo sencillo «Tous les garçons et les filles», publicado en 1962, la convirtió en una de las principales voces del yeyé."
     },
     "artist:claude-francois": {
-      "description": "Cantante que se convirtió en figura de las variedades francesas con la ola yé-yé."
+      "description": "Cantante que saltó a la fama en la ola yeyé francesa con «Belles, belles, belles», adaptada por Vline Buggy. Sus espectáculos combinaban canto, baile y batería."
     },
     "artist:johnny-hallyday": {
       "description": "Cantante francés procedente del rock and roll que se convirtió en estrella de la generación yé-yé."
@@ -5385,7 +5508,7 @@
       "description": "Música popular indonesia nacida de las orquestas malayas, que se popularizó en los escenarios y en casete en los años setenta. Rhoma Irama y Elvy Sukaesih grabaron algunos de sus primeros éxitos."
     },
     "artist:rhoma-irama": {
-      "description": "Cantante indonesio de dangdut que fundó la orquesta Soneta."
+      "description": "Cantante indonesio y fundador de Soneta Grup que incorporó el rock al dangdut. A principios de la década de 1970 cantó duetos juguetones con Elvy Sukaesih. Más adelante también abordó su fe islámica en sus canciones."
     },
     "artist:elvy-sukaesih": {
       "description": "Cantante indonesia de dangdut que grabó éxitos tempranos con Rhoma Irama."
@@ -5394,55 +5517,70 @@
       "description": "Cantante indonesio de dangdut que grabó Pengalaman Pertama en 1978."
     },
     "artist:pastora-pavon": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "La cantaora sevillana Pastora Pavón actuaba con el nombre de La Niña de los Peines. Sus grabaciones en discos de 78 revoluciones abarcan cuatro décadas a partir de 1910, y los discos conservados en Andalucía están protegidos como patrimonio documental."
     },
     "artist:camaron-de-la-isla": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Cantaor de San Fernando, Cádiz, cuya colaboración con el guitarrista Paco de Lucía contribuyó a renovar el flamenco."
     },
     "artist:paco-de-lucia": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Guitarrista flamenco de Algeciras que saltó a la fama con la rumba «Entre dos aguas», de su álbum en solitario Fuente y Caudal. Los paisajes de su Andalucía natal inspiraron el álbum Almoraima de 1976."
     },
     "artist:amalia-rodrigues": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Cantante de fado que amplió el repertorio literario del género junto al compositor Alain Oulman y grabó poemas portugueses musicalizados en discos como «Com que voz»."
     },
     "artist:carlos-do-carmo": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Cantante de fado que amplió el repertorio del género con su álbum de 1977 «Um Homem na Cidade», en el que interpretó poemas de Ary dos Santos musicalizados por varios compositores."
     },
     "artist:mariza": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Cantante de fado nacida en Mozambique y criada en el barrio lisboeta de Mouraria, donde cantó con Fernando Maurício. Su álbum debut, Fado em Mim, salió en 2001."
     },
     "artist:markos-vamvakaris": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Cantautor griego de rebético procedente de la isla de Siros que aprendió a tocar el buzuki en El Pireo. Sus grabaciones figuran en la antología histórica Eros in rebetiko."
     },
     "artist:vasilis-tsitsanis": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Compositor griego de rebético e intérprete de buzuki cuyas grabaciones contribuyeron a afianzar el papel del instrumento en la canción popular urbana griega."
     },
     "artist:stella-haskil": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Cantante de rebético de Salónica que grabó con Vassilis Tsitsanis. Fue la voz principal de «Akrogialies deilina», un tema de Tsitsanis grabado en Atenas en 1948."
     },
     "artist:caterina-valente": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Cantante y figura del cine musical schlager de Alemania Occidental, con películas como «Love, Dance and a Thousand Songs» (1955)."
     },
     "artist:peter-alexander": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Cantante y actor en el cine de schlager en lengua alemana de posguerra. Protagonizó Love, Dance and a Thousand Songs (1955) con Caterina Valente y cantó en White Horse Inn (1960), una adaptación cinematográfica de una opereta."
     },
     "artist:freddy-quinn": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Cantante y actor del cine schlager de Alemania Occidental. Interpretó la canción marinera «La Paloma» en «Freddy and the Millionaire» (1961)."
     },
     "artist:apirana-ngata": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Uno de los primeros compositores de waiata-ā-ringa, canciones maoríes acompañadas de gestos. Ya cultivaba esta forma a comienzos del siglo XX."
     },
     "artist:te-puea-herangi": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Líder maorí que fundó Te Pou o Mangatāwhiri, una compañía itinerante que contribuyó a popularizar el acompañamiento con instrumentos de cuerda en las canciones maoríes. Sus actuaciones en la Isla Norte recaudaron fondos para el marae de Tūrangawaewae."
     },
     "artist:paraire-tomoana": {
-      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos."
+      "estimateNote": "La fecha indica una actividad musical documentada y puede ser posterior a sus primeros trabajos.",
+      "description": "Compositor maorí que contribuyó al desarrollo de los waiata-ā-ringa al combinar palabras y gestos en el canto. Durante la Primera Guerra Mundial compuso canciones y dirigió su grupo Te Poi o Heretaunga para apoyar la recaudación de fondos."
     },
     "genre:sertanejo": {
       "description": "Música popular brasileña surgida de las tradiciones rurales caipiras, entre ellas las canciones acompañadas por la viola caipira."
     },
     "artist:tonico-e-tinoco": {
-      "description": "Dúo pionero arraigado en la música rural caipira."
+      "description": "Hermanos de la zona rural del estado de São Paulo que llevaron las historias y el acompañamiento de viola de la música caipira al repertorio popular del sertanejo con grabaciones como «Chico Mineiro»."
     },
     "artist:chitaozinho-e-xororo": {
       "description": "Dúo que ayudó a llevar el sertanejo a un público masivo."
@@ -5454,19 +5592,19 @@
       "description": "Música de banda de viento de Sinaloa, México, con metales, clarinetes y la tambora como base."
     },
     "artist:banda-el-recodo": {
-      "description": "Banda sinaloense dirigida durante sus primeras grabaciones por el clarinetista Cruz Lizárraga."
+      "description": "Banda sinaloense que dirigió el clarinetista Cruz Lizárraga en sus primeros años de grabación. Su repertorio grabado incluye rancheras como «Mexicano Hasta Las Cachas», con Las Hermanas Sarabia."
     },
     "artist:banda-la-costena": {
-      "description": "Banda sinaloense vinculada al arreglista Ramón López Alvarado."
+      "description": "Banda sinaloense vinculada al arreglista Ramón López Alvarado. Entre sus grabaciones figura la polca «Que Milagro Chaparrita»."
     },
     "artist:banda-los-guamuchilenos": {
-      "description": "Una de las primeras bandas sinaloenses que grabaron en Ciudad de México."
+      "description": "Banda sinaloense de la primera época que grabó en Ciudad de México. Su repertorio abarcaba distintos bailes, desde la polca «Guango» hasta el danzón «Culiacán»."
     },
     "genre:norteno": {
       "description": "Música de acordeón y bajo sexto que tomó forma a ambos lados de la frontera entre el noreste de México y Texas."
     },
     "artist:los-alegres-de-teran": {
-      "description": "Dúo pionero del norteño originario de Nuevo León."
+      "description": "Dúo norteño de Nuevo León que acompañaba sus voces con el acordeón de Eugenio Ábrego y el bajo sexto de Tomás Ortiz. La radio y los discos llevaron su sonido más allá del norte de México."
     },
     "artist:los-relampagos-del-norte": {
       "description": "Grupo norteño conocido por el acordeón y el bajo sexto."
@@ -5478,7 +5616,7 @@
       "description": "Estilo contemporáneo de corrido mexicano que incorpora el fraseo y la actitud del trap a la tradición de la balada. Las grabaciones de Natanael Cano de 2019 ayudaron a definirlo."
     },
     "artist:natanael-cano": {
-      "description": "Cantante mexicano y pionero de los corridos tumbados."
+      "description": "Cantautor de Hermosillo, Sonora, que abrió camino a los corridos tumbados al combinar los corridos mexicanos con el trap estadounidense. Su remezcla de «Soy El Diablo» con Bad Bunny llevó ese sonido a un público más amplio en 2019."
     },
     "artist:junior-h": {
       "description": "Cantante que ayudó a definir los corridos tumbados junto a Natanael Cano."
@@ -5491,13 +5629,13 @@
       "estimateNote": "La fecha señala las primeras grabaciones comerciales de la tradición anterior del Magdalena Grande."
     },
     "artist:rafael-escalona": {
-      "description": "Compositor cuyas canciones vallenatas retrataron el Caribe colombiano."
+      "description": "Compositor de vallenato que convirtió a las personas y los lugares del Caribe colombiano en materia de sus crónicas musicales. En 1968 cofundó el Festival de la Leyenda Vallenata en Valledupar."
     },
     "artist:alejo-duran": {
-      "description": "Acordeonista de vallenato y uno de sus primeros intérpretes discográficos."
+      "description": "Acordeonista entre los primeros artistas del vallenato en grabar discos. Su primer lanzamiento comercial data de 1950, antes de sus éxitos en festivales."
     },
     "artist:diomedes-diaz": {
-      "description": "Cantante y compositor que llevó el vallenato a un público internacional."
+      "description": "Cantante y compositor de vallenato de La Guajira cuyas grabaciones contribuyeron a difundir esta música más allá de Colombia. Grabó el álbum «Herencia Vallenata» con el acordeonista Náfer Durán."
     },
     "genre:chicha": {
       "description": "Cumbia peruana que combina ritmos de cumbia colombiana con huayno andino e instrumentos eléctricos."
@@ -5515,10 +5653,10 @@
       "description": "Música popular de las comunidades costeras de Lima y Callao, en Perú, que incluye el vals criollo."
     },
     "artist:chabuca-granda": {
-      "description": "Cantante y compositora peruana de «La flor de la canela»."
+      "description": "Cantante y compositora peruana cuya «La flor de la canela» forma parte de la tradición limeña del vals criollo."
     },
     "artist:felipe-pinglo": {
-      "description": "Compositor peruano del vals criollo «El Plebeyo»."
+      "description": "Compositor peruano de valses criollos como «El Plebeyo». Su primer vals, «Amelia», data de 1917."
     },
     "artist:lucha-reyes-peru": {
       "description": "Cantante peruana reconocida por sus interpretaciones de música criolla."
@@ -5527,7 +5665,7 @@
       "description": "Canción popular del Golfo, a menudo con instrumentos de cuerda como el laúd árabe. Su desarrollo comercial pasó por la radio, los conciertos y los discos."
     },
     "artist:talal-maddah": {
-      "description": "Cantante saudí que cofundó la discográfica Riyadhphone."
+      "description": "Cantante saudí que grabó «Maqadeer» y cofundó Riyadhphone, un sello que ayudó a impulsar la carrera discográfica de otros cantantes saudíes."
     },
     "artist:mohammed-abdu": {
       "description": "Cantante saudí que se dio a conocer en los años setenta."
@@ -5542,7 +5680,7 @@
       "description": "Cantante india de playback cuyas grabaciones se hicieron muy conocidas entre el público británico de origen surasiático."
     },
     "artist:asha-bhosle": {
-      "description": "Cantante india de playback cuyo trabajo llegó al público británico mediante películas y grabaciones."
+      "description": "Cantante india de playback que puso voz a películas en varios idiomas, entre ellos el hindi y el maratí. Recibió un National Film Award por interpretar gazales en «Umrao Jaan» (1981)."
     },
     "artist:mohammed-rafi": {
       "description": "Cantante indio de playback cuyas canciones de cine se hicieron conocidas entre los oyentes británicos de origen surasiático."
@@ -5551,10 +5689,10 @@
       "description": "Música de baile punyabí de raíz folclórica. En Gran Bretaña, los grupos de bodas la convirtieron en un estilo moderno al combinar el canto punyabí con instrumentos y técnicas de grabación occidentales."
     },
     "artist:alaap": {
-      "description": "Grupo pionero de la escena británica del bhangra."
+      "description": "Grupo británico de bhangra fundado en 1977 por el cantante y productor Channi Singh. Contribuyó a popularizar la música panyabí entre el público joven del Reino Unido."
     },
     "artist:heera": {
-      "description": "Grupo de bhangra de la primera ola británica de intérpretes."
+      "description": "Grupo de los primeros años del bhangra británico que se formó en 1979 con el nombre de Quallander. Grabó con la cantante panyabí Narinder Biba antes de darse a conocer como Heera."
     },
     "artist:kuljit-bhamra": {
       "description": "Productor que contribuyó a definir el sonido del bhangra británico."
@@ -5563,10 +5701,10 @@
       "description": "Pop en cantonés de Hong Kong. El cine y la radio ayudaron a reunir un primer público y la emisión repetida de canciones de televisión y cine impulsó su popularidad en los años setenta."
     },
     "artist:sam-hui": {
-      "description": "Cantante de Hong Kong cuyo álbum The Private Eyes recibió un disco de platino en 1978."
+      "description": "Cantante, compositor y actor hongkonés cuyas canciones para comedias como Games Gamblers Play y The Private Eyes contribuyeron a definir el cantopop de la década de 1970. También protagonizó ambas películas."
     },
     "artist:anita-mui": {
-      "description": "Cantante de Hong Kong que se dio a conocer mediante un concurso de canto televisado."
+      "description": "Cantante de pop de Hong Kong que empezó a actuar de niña y ganó la primera edición de los New Talent Singing Awards en 1982. Sus conciertos posteriores se hicieron conocidos por sus cambios de vestuario e imagen escénica."
     },
     "artist:leslie-cheung": {
       "description": "Cantante de pop de Hong Kong cuyos trajes de escenario se conservan en el Museo de Patrimonio de Hong Kong."
@@ -5591,7 +5729,7 @@
       "description": "Músico de funaná tradicional cuyas composiciones pasaron al repertorio de Bulimundo."
     },
     "artist:bulimundo": {
-      "description": "Grupo caboverdiano que popularizó los arreglos eléctricos del funaná."
+      "description": "Banda caboverdiana que contribuyó a popularizar el funaná eléctrico. En sus arreglos, el bajo y la batería asumían el papel rítmico del ferinho y los teclados llevaban la melodía."
     },
     "artist:ferro-gaita": {
       "description": "Grupo de funaná que devolvió el protagonismo al acordeón gaita junto al bajo, la guitarra y la batería."
@@ -5621,7 +5759,7 @@
       "estimateNote": "La actividad documentada de su grupo en los años setenta sirve de referencia."
     },
     "artist:ochieng-nelly-mengo": {
-      "description": "Músico de benga que lideró Victoria Jazz junto a Collela Mazee.",
+      "description": "Músico de los primeros años del benga luo que tocó con Collela Mazee en Victoria Jazz. En «Sabina ya Neli», grabada con Tausi Jazz en 1973, la guitarra solista retoma la melodía vocal sobre percusión sincopada.",
       "estimateNote": "La actividad documentada de su grupo en los años setenta sirve de referencia."
     },
     "genre:sega": {
@@ -5629,13 +5767,13 @@
       "estimateNote": "Descripciones del siglo XVIII documentan formas tempranas de la tradición en las Mascareñas."
     },
     "artist:ti-frere": {
-      "description": "Cantante mauriciano y destacado intérprete del séga tradicional."
+      "description": "Cantante mauriciano de sega que dio a conocer el sega tradicional a un público más amplio al interpretar «Fidelia» y «Roseda» en la Nuit du Séga de 1964 en Le Morne."
     },
     "artist:serge-lebrasse": {
-      "description": "Cantante mauriciano de séga tradicional cuya trayectoria fue reconocida por el Estado."
+      "description": "Cantante mauriciano de séga que compuso sus primeras canciones mientras se formaba con la banda de la policía local. «Madam Eugène» fue uno de los primeros éxitos del séga en llegar al público de todo Mauricio."
     },
     "artist:fanfan-sega": {
-      "description": "Intérprete mauriciano del séga tipik tradicional.",
+      "description": "Intérprete mauriciano de séga tipik tradicional que destacó en las décadas de 1960 y 1970. Mauricio lo consultó como practicante para su inventario patrimonial.",
       "estimateNote": "El inventario patrimonial sitúa su notoriedad en los años sesenta y setenta."
     },
     "genre:maloya": {
@@ -5643,10 +5781,10 @@
       "estimateNote": "La fecha sitúa su desarrollo inicial en la época de la esclavitud sin fijar un origen preciso."
     },
     "artist:danyel-waro": {
-      "description": "Intérprete de Reunión conocido por el maloya."
+      "description": "Cantante de Reunión cuyas grabaciones, entre ellas «Batarsité» (1994), contribuyeron a mantener viva y renovar la tradición insular del maloya."
     },
     "artist:firmin-viry": {
-      "description": "Intérprete de Reunión y figura destacada del maloya."
+      "description": "Cantante cuyas primeras grabaciones de maloya, entre ellas un disco de 1976, contribuyeron a difundir la música de Reunión entre un público más amplio."
     },
     "artist:granmoun-lele": {
       "description": "Cantante y acordeonista de Reunión reconocido como una voz fundacional del maloya."
@@ -5677,17 +5815,17 @@
       "estimateNote": "La fecha sitúa sus inicios aproximadamente a principios de los años noventa."
     },
     "artist:shaaban-abdel-rahim": {
-      "description": "Cantante egipcio conocido por sus grabaciones de shaabi."
+      "description": "Cantante egipcio de shaabi que convirtió la actualidad en canciones con el letrista Islam Khalil. Se dio a conocer por canciones políticas polémicas como «Ana Bakrah Isra’il»."
     },
     "genre:mahraganat": {
       "description": "Música electrónica egipcia de calle y de bodas que combina la canción popular local con ritmos programados. Sus temas se difundieron en bodas, por vías informales y en línea.",
       "estimateNote": "La investigación sitúa los primeros ejemplos en El Cairo hacia 2006."
     },
     "artist:oka": {
-      "description": "Intérprete egipcio que aparece en el documental Electro Chaabi sobre la primera escena del mahraganat."
+      "description": "Artista egipcio de mahraganat, Muhammad Salah, conocido como Oka, formó el grupo 8% con Ortega y Shehta Karika. Hind Meddeb documentó su trabajo en la película Electro Chaabi."
     },
     "artist:ortega-mahraganat": {
-      "description": "Intérprete cairota que aparece en Electro Chaabi por su trabajo en el mahraganat."
+      "description": "Artista egipcio de mahraganat que producía música con Oka en un pequeño estudio equipado con un ordenador. Ambos aparecen en Electro Chaabi de Hind Meddeb, sobre los inicios de la escena del mahraganat en El Cairo."
     },
     "artist:mc-sadat": {
       "description": "MC cairota cuyas actuaciones de mahraganat quedaron documentadas en Electro Chaabi.",

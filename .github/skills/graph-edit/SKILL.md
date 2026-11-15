@@ -39,6 +39,9 @@ node .github/skills/graph-edit/scripts/lookup.mjs --stats          # counts by n
      Preserve existing addition dates during edits. This date powers the landing page’s Recently added list.
    - `period` semantics (artist = active career; track = release year; estimated placements need
      `estimated: true` + `estimateNote`)
+   - Every node needs a nonblank, source-backed `description` of 1–3 sentences. For an artist, give
+     their musical role and a concrete detail that explains their inclusion. Record support for new
+     claims in the evidence note and translate new or changed descriptions in every overlay.
    - `phases` only with a defensible prominence history, plus `phaseNote` (§5)
 4. **Update coupled code and fixtures** when the change touches them:
    - New genre: add its slug to the family list in `src/data/graph.test.ts`

@@ -4,7 +4,7 @@ Graph ID `artist:ik-dairo`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ Replaced a circa-1940 start and 1990 endpoint with the documented 1946 first pub
 ## Remaining uncertainty
 
 Band formation and public/professional debut may not be the same event; 1946 is the earliest cited public performance.
+
+## Description review (2026-11-15)
+
+The label biography describes Dairo’s accordion and the guitar and percussion of his jùjú group. [Source 1](https://compassrecords.com/artist/chief-ik-dairo/)

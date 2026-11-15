@@ -4,7 +4,7 @@ Graph ID `artist:hank-williams`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ Replaced the mistaken 1930 start with circa 1936 for the documented beginning of
 ## Remaining uncertainty
 
 Early radio and performance chronology is disputed: use circa 1936 rather than treating one recollection or institution’s date as exact.
+
+## Description review (2026-11-15)
+
+The museum traces his work with the Drifting Cowboys, first MGM hit and the reception and chart performance of Lovesick Blues. [Source 1](https://countrymusichalloffame.org/hall-of-fame/hank-williams)

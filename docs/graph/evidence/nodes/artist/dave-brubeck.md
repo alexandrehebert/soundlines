@@ -4,7 +4,7 @@ Graph ID `artist:dave-brubeck`
 
 **Review status** · Reviewed — start moved to 1933; end set to 2012
 
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -22,3 +22,7 @@ Start changed 1940 → circa 1933 per Britannica’s explicit professional-work 
 ## Remaining uncertainty
 
 Teenage local-band work may be semi-professional; 1933 is Britannica’s wording.
+
+## Description review (2026-11-15)
+
+The NEA profile dates the album, discusses the quartet’s use of unusual meters and credits “Take Five” to Desmond. [National Endowment for the Arts Jazz Masters](https://www.arts.gov/honors/jazz/dave-brubeck)

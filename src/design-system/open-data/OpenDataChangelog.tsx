@@ -2,7 +2,8 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslations } from 'next-intl'
-import { localizePath, type Locale } from '../../i18n/routing.ts'
+import { nodePath } from '../../explorerLocation.ts'
+import type { Locale } from '../../i18n/routing.ts'
 import { publicAsset } from '../../publicAsset.ts'
 import { REPOSITORY_URL } from '../../projectLinks.ts'
 import { OpenDataSectionHeading } from './OpenDataSectionHeading.tsx'
@@ -142,7 +143,7 @@ export function OpenDataChangelog({ locale }: { locale: Locale }) {
                       {(() => {
                         const renderItems = (visibleItems: Entity[]) => visibleItems.map(({ id, name, status }) => (
                           <li key={id}>
-                            <a href={`${localizePath('/', locale)}?${new URLSearchParams({ focus: id })}`}
+                            <a href={nodePath(id, locale)}
                               className={`inline-flex min-h-8 items-center rounded-md border px-2 py-1 hover:border-cyan-400 ${
                                 status === 'added' ? 'border-emerald-500/40 text-emerald-300'
                                 : status === 'removed' ? 'border-rose-500/40 text-rose-300 line-through'

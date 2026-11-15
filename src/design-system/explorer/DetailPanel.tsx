@@ -3,13 +3,13 @@ import { useTranslations } from 'next-intl'
 import { useExplorer } from '../../ExplorerContext.ts'
 import { groupedRelations } from '../../graph/graph.ts'
 import { formatEventPeriod } from '../../graph/history.ts'
-import { isTimelineView, timelineFamily, viewForNode, VIEW_PATHS } from '../../graph/timeline.ts'
+import { isTimelineView, timelineFamily } from '../../graph/timeline.ts'
 import type { Confidence } from '../../graph/types.ts'
 import { chartColor, chartTextColor, formatPeriod, formatYear, NODE_TYPE_COLORS } from '../../theme.ts'
 import { prominencePhases, intensityColor, intensityOpacity, phaseIntensity } from '../../graph/phases.ts'
 import { CURRENT_YEAR } from '../../graph/layout.ts'
 import { graphLabels } from '../../i18n/graphLabels.ts'
-import { localizePath } from '../../i18n/routing.ts'
+import { nodePath } from '../../explorerLocation.ts'
 import { APP_URL, newIssueUrl } from '../../projectLinks.ts'
 import { publicAsset } from '../../publicAsset.ts'
 import { hasGenrePreview } from '../../data/genrePreviews.ts'
@@ -67,8 +67,7 @@ export function DetailPanel({ onClose, showCloseButton = true, scrollable = true
   const node = selectedId ? index.nodeById.get(selectedId) : undefined
   if (!node) return null
 
-  const entryUrl = new URL(localizePath(VIEW_PATHS[viewForNode(node.type, view)], locale), APP_URL)
-  entryUrl.searchParams.set('focus', node.id)
+  const entryUrl = new URL(nodePath(node.id, locale, view), APP_URL)
   const suggestionUrl = newIssueUrl(
     tFeedback('editTitle', { name: node.name }),
     tFeedback('editBody', { entryUrl: entryUrl.href }),

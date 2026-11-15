@@ -3,7 +3,7 @@
 Graph ID `artist:james-brown`
 
 **Review status** · Reviewed — period 1953–2006 confirmed; sources added
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 - [Wikipedia — James Brown](https://en.wikipedia.org/wiki/James_Brown) — existing source.
@@ -18,3 +18,7 @@ PBS directly supports 1953 (joining the Flames) and 2006 (death while still acti
 
 ## Remaining uncertainty
 Wikidata gives 1954 (first recordings/contract) rather than 1953; the difference is one year.
+
+## Description review (2026-11-15)
+
+The PBS timeline and Rock Hall trace the Famous Flames and the 1965 recording. Carnegie Hall describes Brown’s rhythmic role in shaping funk. [Source 2](https://www.pbs.org/wnet/americanmasters/james-brown-career-timeline/533/) · [Source 3](https://rockhall.com/inductees/james-brown/) · [Source 5](https://timeline.carnegiehall.org/genres/funk)

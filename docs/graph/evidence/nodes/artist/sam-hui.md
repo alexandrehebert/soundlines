@@ -3,7 +3,7 @@
 Graph ID `artist:sam-hui`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -16,3 +16,7 @@ The exhibition names Hui as a major artist and displays his 1978 platinum record
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The [Hong Kong Film Archive’s Sam Hui profile](https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/English/Sam-Hui_e.pdf) credits his acting and the songs he wrote and sang for the named films, and places them in Cantopop history.

@@ -4,7 +4,7 @@ Graph ID `artist:insane-clown-posse`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ Kept 1989 as the precursor group’s start, but clarify that the name Insane Clo
 ## Remaining uncertainty
 
 Graph period begins at predecessor formation; a separate 1991 milestone would be useful if the schema supports name/identity changes.
+
+## Description review (2026-11-15)
+
+The University of Florida thesis distinguishes the precursor from the renamed group. The artist profile documents the horror and clown imagery. [Source 2](https://ufdcimages.uflib.ufl.edu/NC/F0/00/29/58/00001/Taylor_M.pdf) · [Source 4](https://www.insomniac.com/music/artists/insane-clown-posse/)

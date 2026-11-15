@@ -4,7 +4,7 @@ Graph ID `artist:chet-baker`
 
 **Review status** · Reviewed — career span and cool-jazz identity confirmed
 
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -17,3 +17,7 @@ Graph ID `artist:chet-baker`
 ## Assessment
 
 Period 1949–1988 kept; precision set to circa because Army-band playing from 1946 precedes the 1949 civilian jazz start. Description confirmed by Britannica. Britannica, LA Times and AllMusic added.
+
+## Description review (2026-11-15)
+
+Britannica describes Baker’s cool tone and playing with Mulligan. Blue Note documents the quartet’s lineup and popularity in Los Angeles. [Britannica artist biography](https://www.britannica.com/biography/Chet-Baker) · [Blue Note quartet retrospective](https://www.bluenote.com/spotlight/retrospectives-in-real-time-lee-konitz-plays-with-the-gerry-mulligan-quartet/)

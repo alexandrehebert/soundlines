@@ -4,7 +4,7 @@ Graph ID `artist:duke-ellington`
 
 **Review status** · Reviewed — career endpoint confirmed; start moved from 1914 composition to c.1916 professional debut
 
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -17,3 +17,7 @@ Graph ID `artist:duke-ellington`
 ## Assessment
 
 Prior review kept 1914 as a first-composition anchor, but the brief defines period as professional activity; Britannica places his professional start at 17 (1916/17), consistent with Cambridge’s 1916–1919 milestones. Start set to c.1916; 1974 end retained. Description retained.
+
+## Description review (2026-11-15)
+
+The Center for the Arts documents the distinct authorship credits and the orchestra’s premiere of Strayhorn’s composition. [Duke Ellington Center for the Arts](https://www.decfa.org/aboutduke) · [Britannica artist biography](https://www.britannica.com/biography/Duke-Ellington)

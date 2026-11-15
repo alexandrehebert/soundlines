@@ -3,7 +3,7 @@
 Graph ID `artist:richie-hawtin`
 
 **Review status** · Reviewed — Plus 8 (1990) start and second-wave Detroit link confirmed
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 - [Wikipedia: Richie Hawtin](https://en.wikipedia.org/wiki/Richie_Hawtin) — Plus 8 founded May 1990; F.U.S.E. on Warp AI series (1993); M_nus 1998.
@@ -13,3 +13,7 @@ Graph ID `artist:richie-hawtin`
 
 ## Assessment
 The 1990 start and open period are confirmed. Hawtin DJed from about 1987, but Plus 8 is a clear professional anchor.
+
+## Description review (2026-11-15)
+
+[Mute’s Plastikman biography](https://mute.com/artists/plastikman/) confirms the Windsor–Detroit connection, Hawtin’s alias, Sheet One and the project’s minimal, psychedelic sound.

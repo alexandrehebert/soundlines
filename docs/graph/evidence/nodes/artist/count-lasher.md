@@ -3,7 +3,7 @@
 Graph ID `artist:count-lasher`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -14,3 +14,7 @@ Singer and recording artist of Jamaica’s early mento era.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The reissue notes document his recording styles, his authorship and the song’s subject. [Frémeaux reissue notes](https://www.fremeaux.com/en/1689-jamaica-mento-1951-1958-3561302527529-fa5275.html)

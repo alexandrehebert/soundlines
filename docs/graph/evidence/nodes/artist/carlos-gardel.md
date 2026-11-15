@@ -4,7 +4,7 @@ Graph ID `artist:carlos-gardel`
 
 **Review status** · Reviewed: changed coarse 1910 decade to 1912 first documented recordings; kept 1935 death and noted contested birthplace in evidence note.
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -19,3 +19,7 @@ The 1910s decade start was safe but imprecise; 1912 is an institutional and scho
 ## Remaining uncertainty
 
 Gardel’s birthplace and birth date have historically contested documentation; this review did not alter those biographical details.
+
+## Description review (2026-11-15)
+
+The reviewed discography and UNESCO nomination identify Gardel’s 1917 tango recording. The description leaves his disputed birthplace out. [Carlos Gardel Museum discography](https://buenosaires.gob.ar/gcaba_historico/cultura/museos/museocasacarlosgardel/discografia) · [UNESCO Memory of the World nomination](https://media.unesco.org/sites/default/files/webform/mow001/uruguay_records_carlos_gardel.pdf)

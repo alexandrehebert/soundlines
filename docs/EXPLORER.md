@@ -176,7 +176,7 @@ and all relationships in the detail panel, or use its connected-node chips to
 explore the graph. Selecting an event through search or a relationship opens
 History and reveals it even if the current filters would hide it.
 
-`/history` opens the view; `?focus=event:mtv-launch` shares a specific
+`/history` opens the view; `/history/mtv-launch` shares a specific
 event. Filters are remembered while switching views during the session but are
 not part of the shared URL.
 
@@ -294,7 +294,7 @@ historical events. Artist lanes and detail badges use the same families.
   Escape clears and closes search. Search and related-node navigation switch
   modes automatically when selecting an artist, genre, instrument, or event and
   bring the selection into view.
-- Selection is shareable via `?focus=<node-id>`; `/genres`, `/artists`, `/instruments`, or `/history` opens a view without a selection
+- A node is shareable by its path, such as `/fr/artists/inti-illimani`. Links for labels, places, tracks, scenes, and festivals include the node type after the view, such as `/en/artists/label/metroplex`. A view path on its own opens the view without a selection. Existing `?focus=<node-id>` links redirect to the node path.
 - Shared view and entity URLs return Open Graph and Twitter card metadata in the
   initial HTML, including a Soundlines preview image. Entity previews use their
   name and description (or a type-specific fallback). Genre bubbles have their

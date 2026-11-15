@@ -4,7 +4,7 @@ Graph ID `artist:lee-scratch-perry`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:lee-scratch-perry`
 ## Assessment
 
 The 1950s start and 2021 end are supported; the decade precision correctly avoids implying a firm first day of work. Perry remained musically active until his death, including a final release weeks earlier. Confidence: high.
+
+## Description review (2026-11-15)
+
+The obituary documents his Black Ark studio, recording artists, and experiments with overdubs and sound manipulation. [Source 1](https://www.theguardian.com/music/2021/aug/29/lee-scratch-perry-obituary)

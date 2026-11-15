@@ -4,7 +4,7 @@ Graph ID `artist:gucci-mane`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ Replaced an imprecise 2000s decade start and a genre-only citation. Two independ
 ## Remaining uncertainty
 
 Early independent mixtape circulation is less well cataloged than the later commercial releases.
+
+## Description review (2026-11-15)
+
+The NPR profile documents La Flare and the artist’s Atlanta context. The catalog dates Trap House. [Source 1](https://www.klcc.org/npr-music/2017-09-19/the-autobiography-of-gucci-mane-a-story-of-rap-and-rebirth) · [Source 4](https://music.apple.com/us/album/trap-house/577629542)

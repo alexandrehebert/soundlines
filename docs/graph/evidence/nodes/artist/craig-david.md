@@ -4,7 +4,7 @@ Graph ID `artist:craig-david`
 
 **Review status** · Reviewed · sources checked
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -18,3 +18,7 @@ Keep 1999 as the public breakout/emergence year, not a claim that this was his f
 ## Remaining uncertainty
 
 AllMusic biography was checked in search excerpt only; Official Charts page was opened directly. Current sources do not establish the exact start of his professional activity.
+
+## Description review (2026-11-15)
+
+The UK chart archive documents his featured credit and the dates and chart positions of both singles. [Official Charts Company](https://www.officialcharts.com/artist/8934/craig-david/)

@@ -4,7 +4,7 @@ Graph ID `artist:tujamo`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:tujamo`
 ## Assessment
 
 Changed the decade-level 2010 start to 2006, when he began using the Tujamo alias and producing; commercial debut followed in 2011. This separates project formation from first single.
+
+## Description review (2026-11-15)
+
+[Insomniac’s artist profile](https://www.insomniac.com/music/artists/tujamo/) describes “Who” as an earlier hit with Plastik Funk. [Ultra’s distributor listing](https://www.beatport.com/release/boneless/1158493) credits all three artists on “Boneless” and dates it to 2013.

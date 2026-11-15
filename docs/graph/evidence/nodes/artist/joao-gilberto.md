@@ -4,7 +4,7 @@ Graph ID `artist:joao-gilberto`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -19,3 +19,7 @@ The prior 1950 start obscured his documented 1940s musical career. Set the appro
 ## Remaining uncertainty
 
 The graph tracks the artist’s activity rather than only his bossa nova period or recording breakthrough.
+
+## Description review (2026-11-15)
+
+Smithsonian liner notes describe his voice and syncopated guitar. The Brazilian Senate’s archive dates his Odeon recording of Chega de Saudade. [Source 4](https://folkways-media.si.edu/docs/folkways/artwork/SFW40820.pdf) · [Source 5](https://www12.senado.leg.br/noticias/materias/2008/08/01/gravacao-de-chega-de-saudade-marca-o-nascimento-da-bossa-nova)

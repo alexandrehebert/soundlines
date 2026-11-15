@@ -3,7 +3,7 @@
 Graph ID `artist:pastora-pavon`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Describes Pavón’s ornamented petenera grande.
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+The [Instituto Andaluz del Flamenco exhibition](https://artsandculture.google.com/story/cgUhXrz4GS3ESQ) identifies Pavón as a flamenco singer from Seville, gives her stage name and four-decade recording span, and documents the protected status of the Andalusian holdings.

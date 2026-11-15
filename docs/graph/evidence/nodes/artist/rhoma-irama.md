@@ -3,7 +3,7 @@
 Graph ID `artist:rhoma-irama`
 
 **Review status** · Reviewed
-**Reviewed** · 2026-11-13
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Documents Irama as founder of the Soneta orchestra and a major dangdut recording
 
 ## Remaining uncertainty
 None material.
+
+## Description review (2026-11-15)
+
+[Smithsonian Folkways’ Music of Indonesia liner notes](https://folkways-media.si.edu/docs/folkways/artwork/SFW40056.pdf) document Soneta, Irama’s 1970s duets with Elvy Sukaesih, the Islamic themes in his later songs and his dangdut-rock approach.

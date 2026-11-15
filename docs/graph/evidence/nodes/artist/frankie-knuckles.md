@@ -4,7 +4,7 @@ Graph ID `artist:frankie-knuckles`
 
 **Review status** · Reviewed: Chicago breakthrough separated from career start
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -19,3 +19,7 @@ Retained the established 1977 Warehouse milestone in the description but changed
 ## Remaining uncertainty
 
 The decade-level start reflects documented early-1970s New York work; the exact first professional date is not settled here.
+
+## Description review (2026-11-15)
+
+The institutional and oral-history accounts document the 1977 Warehouse milestone and his DJ practice. The revised copy avoids treating the club-name etymology as settled. [Chicago LGBT Hall of Fame](https://chicagolgbthalloffame.org/knuckles-frankie/) · [The HistoryMakers oral history](https://www.thehistorymakers.org/biography/frankie-knuckles)

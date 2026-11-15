@@ -4,7 +4,7 @@ Graph ID `artist:daddy-yankee`
 
 **Review status** · Reviewed · sources checked
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -18,3 +18,7 @@ Retained the graph’s 1990s decade start rather than asserting an exact year: t
 ## Remaining uncertainty
 
 Accounts vary on first mixtape credit versus beginning as an active rapper; decade precision appropriately reflects the difference.
+
+## Description review (2026-11-15)
+
+The National Recording Registry essay traces his beginnings in Puerto Rico’s underground and documents the international reach of “Gasolina”. [Library of Congress National Recording Registry essay](https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Gasolina_Rivera-Rideau.pdf)

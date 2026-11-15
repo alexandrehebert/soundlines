@@ -705,7 +705,7 @@ describe('Soundtrails landing', () => {
       const phonograph = localized.nodes.find((node) => node.id === 'event:phonograph-invented')!
       expect(history).toContain(escape(catalogueFor(locale).graphLabels.eventCategories.technology))
       expect(history).toContain(escape(phonograph.description!))
-      expect(history).not.toContain(`href="/${locale}/genres?focus=genre%3Ahip-hop"`)
+      expect(history).not.toContain(`href="/${locale}/genres/hip-hop"`)
       expect(history).toContain('<h3 id="history-recent-heading">')
       expect(history).toContain(escape(newest('event').name))
     })

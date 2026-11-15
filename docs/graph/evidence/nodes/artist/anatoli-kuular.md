@@ -3,7 +3,7 @@
 Graph ID `artist:anatoli-kuular`
 
 **Review status** · Reviewed — start moved to c.1990; end left open (death unverified)
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 - [Huun-Huur-Tu official history (Ted Levin notes)](https://www.huunhuurtu.com/history) — replaced Albert Kuvezin; borbangnadyr singer, xomus and byzaanchi; visited the US in 1993 with the Tuva Ensemble.
@@ -17,3 +17,7 @@ The prior circa-1980 start had no support. Documented activity begins with the T
 
 ## Remaining uncertainty
 Pre-1993 career and later activity/death date unverified.
+
+## Description review (2026-11-15)
+
+The ensemble’s history identifies Kuular’s distinctive singing style and the two instruments he played in the group. [Huun-Huur-Tu official history](https://www.huunhuurtu.com/history)

@@ -25,7 +25,7 @@ it('links to explorer routes and applies selection in the explorer without page 
   const artists = screen.getByRole('link', { name: 'Artists' })
   const house = screen.getByRole('link', { name: 'House' })
   expect(artists).toHaveAttribute('href', '/en/artists')
-  expect(house).toHaveAttribute('href', '/en/genres?focus=genre%3Ahouse')
+  expect(house).toHaveAttribute('href', '/en/genres/house')
   await user.click(artists)
   expect(screen.getByRole('status')).toHaveTextContent('artist')
   await user.click(house)

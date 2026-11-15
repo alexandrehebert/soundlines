@@ -4,7 +4,7 @@ Graph ID `artist:juan-luis-guerra`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:juan-luis-guerra`
 ## Assessment
 
 Replace circa-1980 with 1984, supported as the first album and start of his recording career; this does not date his earlier study or songwriting. Confidence: high.
+
+## Description review (2026-11-15)
+
+The artist’s history dates 440 and Soplando. The BMI biography describes the reach of Bachata Rosa and its Dominican bachata repertoire. [Source 1](https://juanluisguerra.com/historia/) · [Source 2](https://www.bmi.com/press-release/juan_luis_guerra_bmi_icon_bio)

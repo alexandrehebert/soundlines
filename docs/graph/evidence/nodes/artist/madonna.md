@@ -4,7 +4,7 @@ Graph ID `artist:madonna`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:madonna`
 ## Assessment
 
 Set 1979 as the start of her professional music path in New York, before the 1982 solo single “Everybody.” The graph’s 1980 decade start was imprecise; no end date because she remains active. Confidence: high for early activity, medium for defining career onset.
+
+## Description review (2026-11-15)
+
+The Rock Hall archive and PBS profile place her early career in New York. The official catalog documents the single, its dance chart entry and its inclusion on the 1983 album. [Source 1](https://catalog.rockhall.com/rrhof-ais/Details/archive/110000474) · [Source 2](https://www.madonna.com/products/everybody) · [Source 3](https://www.pbs.org/wnet/americanmasters/how-madonna-made-herself/31922/)

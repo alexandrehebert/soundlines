@@ -3,7 +3,7 @@
 Graph ID `artist:huun-huur-tu`
 
 **Review status** · Reviewed — 1992 founding confirmed; unverified AllMusic ID replaced
-**Reviewed** · 2026-11-03
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 - [Huun-Huur-Tu official history (Ted Levin notes)](https://www.huunhuurtu.com/history) — founded 1992 as Kungurtuk by Khovalyg, Alexander and Sayan Bapa, and Kuvezin; later renamed.
@@ -14,3 +14,7 @@ Graph ID `artist:huun-huur-tu`
 
 ## Assessment
 Formation in 1992 is confirmed by the official site, BBC and BnF, so precision is now year. The group is still active. Sources replaced with verified institutional ones.
+
+## Description review (2026-11-15)
+
+The group history and BBC profile establish its original name and debut. Smithsonian concert notes cover its vocal and instrumental practice. [Source 1](https://www.huunhuurtu.com/history) · [Source 2](https://www.bbc.co.uk/radio3/world/awards2004/profile_huunhuurtu.shtml) · [Source 4](https://asia-archive.si.edu/podcast/throat-singers-from-tuva-huun-huur-tu/)

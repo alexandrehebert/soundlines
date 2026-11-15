@@ -4,7 +4,7 @@ Graph ID `artist:lucinda-williams`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -15,3 +15,7 @@ Graph ID `artist:lucinda-williams`
 ## Assessment
 
 Refine the 1970s decade marker to 1979, her first recorded album; Happy Woman Blues, her first album of original songs, followed in 1980. She remains active, so no end date. Confidence: high.
+
+## Description review (2026-11-15)
+
+Smithsonian Folkways describes the folk and blues background and the influence of Louisiana listening on Happy Woman Blues. Austin City Limits documents her shift to writing her own albums. [Source 1](https://folkways.si.edu/lucinda-williams-blues/music/article/smithsonian) · [Source 2](https://acltv.com/hall-of-fame/inductee-details/?name=lucinda-williams)

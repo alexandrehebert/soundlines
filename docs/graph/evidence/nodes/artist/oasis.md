@@ -4,7 +4,7 @@ Graph ID `artist:oasis`
 
 **Review status** · Reviewed
 
-**Reviewed** · 2026-11-04
+**Reviewed** · 2026-11-15
 
 ## Sources checked
 
@@ -20,3 +20,7 @@ Changed the 1994 start, which tracked debut single/album era, to the documented 
 ## Remaining uncertainty
 
 The source notes the predecessor Rain began in 1990; the 1991 year refers to Oasis under its defining name and lineup.
+
+## Description review (2026-11-15)
+
+The [Rock & Roll Hall of Fame profile](https://rockhall.com/inductees/oasis/?app=true) documents the band’s rise and debut, and the [AllMusic biography](https://www.allmusic.com/artist/oasis-mn0000393345/biography) distinguishes Liam’s lead vocals and Noel’s songwriting and traces the band’s beginnings to Rain. The [Associated Press reunion coverage](https://apnews.com/article/77dd39c272fe2fbdd441bb8dbbfa9af5) documents the split and later tour.
