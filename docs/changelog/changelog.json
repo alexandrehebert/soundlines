@@ -2,6 +2,51 @@
   "version": 4,
   "entries": [
     {
+      "commit": "bcb4548f827cc5b0ddbde00a262731b37d25f92a",
+      "parent": "c8d574b4b423e112854c26ea1a58f5a281dae31a",
+      "date": "2026-11-15T00:56:04-05:00",
+      "subject": "Publish the full Storybook catalogue on GitHub Pages",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": ".storybook/main.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/favicon.test.ts"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/workflows/project-pages.yml"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/DESIGN_SYSTEM.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/DEVELOPMENT.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "da41d32909bdd8a23010ea1134e72448fcba1c09",
       "parent": "0830bfcfe17f875d25169c77e963f893c2a1635c",
       "date": "2026-11-15T00:47:55-05:00",
