@@ -187,7 +187,7 @@ export const es: LocalizedContent = {
         ['Procedimientos que puedes leer', 'Las habilidades son procedimientos paso a paso, con sus propios programas, almacenados en el repositorio; los agentes son descripciones de roles que los utilizan. Al versionarse como el código, cualquiera puede leer exactamente qué se pidió a un asistente y mejorarlo.'],
         ['¿Quieres ayudar?', 'Una fuente mejor, una conexión corregida, una traducción más clara o un instrumento más reconocible importan tanto como una función nueva. Haz cambios pequeños, ejecuta las comprobaciones pertinentes y explica la evidencia en la solicitud de cambios.'],
       ],
-      resources: [['docs/INSTALLATION.md', 'Configuración de herramientas y entorno'], ['docs/DEVELOPMENT.md', 'Desarrollo y despliegue'], ['docs/ARCHITECTURE.md', 'Arquitectura de la aplicación'], ['.github/agents', 'Agentes especializados'], ['.agents/skills', 'Procedimientos reutilizables'], [storybookUrl, 'Galería de componentes (Storybook)']],
+      resources: [['docs/INSTALLATION.md', 'Configuración de herramientas y entorno'], ['docs/DEVELOPMENT.md', 'Desarrollo y despliegue'], ['docs/ARCHITECTURE.md', 'Arquitectura de la aplicación'], ['.agents/roles', 'Agentes especializados'], ['.agents/skills', 'Procedimientos reutilizables'], [storybookUrl, 'Galería de componentes (Storybook)']],
     },
   },
 }

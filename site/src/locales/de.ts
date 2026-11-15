@@ -130,7 +130,7 @@ export const de: LocalizedContent = {
         ['Die Werkzeuge', 'Durchgehend TypeScript; React 19 und der Next.js App Router für die App; Tailwind CSS für Stile; next-intl für die fünf Sprachen; Vitest und Storybook für Tests und Komponentenvorschauen; Docker Compose für die lokale Einrichtung mit einem Befehl. Diese Begleitseite verwendet React und Vite, zu statischem HTML vorgerendert.'],
         ['Nachlesbare Verfahren', 'Skills sind schrittweise Verfahren mit eigenen Skripten im Repository; Agenten sind Rollenbeschreibungen, die sie verwenden. Da sie wie Code versioniert sind, kann jeder genau nachlesen, welchen Auftrag ein Assistent erhielt, und ihn verbessern.'],
         ['Möchtest du helfen?', 'Eine bessere Quelle, eine korrigierte Verbindung, eine klarere Übersetzung oder ein besser erkennbares Instrument sind ebenso wichtig wie eine neue Funktion. Halte Änderungen klein, führe die passenden Prüfungen aus und erläutere deine Belege in der Pull-Anfrage.'],
-      ], resources: [['docs/INSTALLATION.md', 'Werkzeuge und Umgebung einrichten'], ['docs/DEVELOPMENT.md', 'Entwicklung und Bereitstellung'], ['docs/ARCHITECTURE.md', 'Anwendungsarchitektur'], ['.github/agents', 'Spezialisierte Agenten'], ['.agents/skills', 'Wiederverwendbare Verfahren'], [storybookUrl, 'Komponentengalerie (Storybook)']],
+      ], resources: [['docs/INSTALLATION.md', 'Werkzeuge und Umgebung einrichten'], ['docs/DEVELOPMENT.md', 'Entwicklung und Bereitstellung'], ['docs/ARCHITECTURE.md', 'Anwendungsarchitektur'], ['.agents/roles', 'Spezialisierte Agenten'], ['.agents/skills', 'Wiederverwendbare Verfahren'], [storybookUrl, 'Komponentengalerie (Storybook)']],
     },
   },
 }

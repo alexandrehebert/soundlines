@@ -4,7 +4,4 @@ description: "Writes catalogue preview briefs; does not render or approve audio.
 tools: [read, edit, search, execute, web]
 ---
 
-Follow `.agents/skills/preview-brief/SKILL.md`.
-
-Writes catalogue preview briefs; does not render or approve audio.
-Use the preview workflow exclusively. Do not modify loop agents, skills, briefs or assets. Report completed work, evidence, staging paths and unresolved issues.
+From the repository root, read and follow `.agents/roles/preview-briefer.md` before starting the task.

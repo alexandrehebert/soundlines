@@ -4,7 +4,7 @@ Use the guide for your task. Run commands from the repository root unless the li
 
 | Task | Read first | Workflow or check |
 | --- | --- | --- |
-| Research graph additions | [Research backlog](./graph/RESEARCH.md), [editorial guidelines](./GRAPH.md#6-editorial-guidelines) | [Graph researcher](../.github/agents/graph-researcher.agent.md) and the [lookup tool](../.agents/skills/graph-edit/scripts/lookup.mjs) |
+| Research graph additions | [Research backlog](./graph/RESEARCH.md), [editorial guidelines](./GRAPH.md#6-editorial-guidelines) | [Graph researcher](../.agents/roles/graph-researcher.md) and the [lookup tool](../.agents/skills/graph-edit/scripts/lookup.mjs) |
 | Edit the graph | [Contribution workflow](./DATA.md#graph-contribution-workflow), [schema](./GRAPH.md), [evidence index](./graph/evidence/README.md) | [Graph editing skill](../.agents/skills/graph-edit/SKILL.md), [graph validation skill](../.agents/skills/graph-validate/SKILL.md), and `npm run validate:graph` |
 | Translate graph entries | [Locale overlays](./GRAPH.md#1-top-level-shape) | [Graph translation skill](../.agents/skills/graph-translate/SKILL.md) and `npm run validate:graph` |
 | Fact-check or review graph changes | [Editorial guidelines](./GRAPH.md#6-editorial-guidelines), [evidence index](./graph/evidence/README.md) | [Fact-checking skill](../.agents/skills/graph-fact-check/SKILL.md) and [graph review skill](../.agents/skills/graph-review/SKILL.md) |

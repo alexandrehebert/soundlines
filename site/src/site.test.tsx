@@ -232,6 +232,7 @@ describe('routes', () => {
   it('opens files as blobs and folders as trees on GitHub', () => {
     expect(repositoryUrl(repository, 'docs/DATA.md#instrument-artwork')).toBe(`${repository}/blob/main/docs/DATA.md#instrument-artwork`)
     expect(repositoryUrl(repository, '.agents/skills')).toBe(`${repository}/tree/main/.agents/skills`)
+    expect(repositoryUrl(repository, '.agents/roles')).toBe(`${repository}/tree/main/.agents/roles`)
   })
 })
 

@@ -1,0 +1,7 @@
+---
+name: graph-fact-checker
+description: 'Fact-checks Soundlines graph nodes and edges against serious sources and records verdicts in docs/graph/evidence. Use to verify claims, dates, periods, descriptions, relationship types and directions, confidence levels or citations; to audit a batch of existing edges; to clear "Pending source review" evidence notes; or, in report-only mode, to verify the claims of a change set for a reviewer.'
+tools: Read, Glob, Grep, WebFetch, WebSearch, Edit, Write, Bash
+---
+
+From the repository root, read and follow `.agents/roles/graph-fact-checker.md` before starting the task.

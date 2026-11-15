@@ -103,9 +103,10 @@ daemon and plugin with `docker version` and `docker compose version`.
 ## 4. Enable repository agents and skills
 
 Start your assistant from the repository root. All clients share
-[AGENTS.md](../AGENTS.md) and the [skill folders](../.agents/skills), which
-contain the procedures, scripts and references. Script execution still needs
-the workflow's local dependencies and tool permissions.
+[AGENTS.md](../AGENTS.md), [role instructions](../.agents/roles), and
+[skill folders](../.agents/skills). Each client exposes the same set of named
+agents through its own profile format. Script execution still needs the
+workflow's local dependencies and tool permissions.
 
 | Client | Project skills | Named agents |
 | --- | --- | --- |
@@ -141,12 +142,14 @@ just describing what it would do.
 
 ### Codex and Claude Code
 
-- **Codex:** Open this repository in Codex, find `graph-validate` in the skill
-  picker, then invoke `$graph-validate`. To delegate a graph review, ask Codex
-  to use the `graph-reviewer` subagent. See [Codex skills](https://learn.chatgpt.com/docs/build-skills).
+- **Codex:** Open a new session in this repository and invoke `$graph-validate`
+  from the skill picker. To delegate a task, ask Codex to use its named subagent,
+  for example `graph-reviewer` or `artwork-validator`.
+  See [Codex skills](https://learn.chatgpt.com/docs/build-skills).
 - **Claude Code:** Open `claude` from the repository root and invoke
-  `/graph-validate`. Use `claude agents` to check that `graph-reviewer` is
-  registered. See [Claude Code skills](https://code.claude.com/docs/en/skills).
+  `/graph-validate`. Run `claude agents` to list the project's named agents,
+  or start a session with `claude --agent graph-reviewer`.
+  See [Claude Code skills](https://code.claude.com/docs/en/skills).
   Claude's project skills require Git to check out the links as symlinks. On
   Windows, enable symlink support and clone with `git clone -c core.symlinks=true`.
 
@@ -199,8 +202,10 @@ the host's supported user scope.
   `name` and `description`, plus any bundled scripts or references. Match the
   name to its folder and describe when to use it. Add a relative symlink in
   `.claude/skills/` when adding a skill, and update it when renaming one.
-- Keep named agents focused on a role and point them to the shared workflow.
-  Copilot uses `.agent.md`, Claude Code uses `.md`, and Codex uses `.toml`.
+- Write role instructions in `.agents/roles/<name>.md`. When adding a role,
+  add profiles with the same name in all three client directories in the table
+  above. Each profile points to the shared role and holds client-specific
+  settings such as tool access or handoffs.
 - File instructions use `.instructions.md` and appropriate `applyTo` globs.
 - Check YAML syntax, discovery, tool permissions and one representative
   execution after editing. A model change does not fix an incompatible harness.

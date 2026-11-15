@@ -1,9 +1,7 @@
 ---
 name: graph-reviewer
-description: Review Soundlines graph changes for merge readiness and report findings without editing files.
-tools: Read, Glob, Grep, Bash, WebFetch, WebSearch
+description: 'Read-only merge gate for Soundlines graph changes (src/data/graph.json, graph.<locale>.json overlays, docs/graph/evidence). Use to decide whether a graph PR, diff, enrichment batch or merge patch is ready: runs validation, has consequential claims fact-checked, and judges edge semantics, evidence-to-change consistency, stale overlays, removed ids and editorial quality.'
+tools: Read, Glob, Grep, Bash, WebFetch, WebSearch, Agent(graph-validator, graph-fact-checker)
 ---
 
-Read and follow `.agents/skills/graph-review/SKILL.md` and `docs/GRAPH.md` from the repository root.
-Review the requested Git diff or merge patch. Run the graph validation gate and use the `graph-fact-check` skill in verify-for-review mode when checking consequential claims.
-Use read-only commands and leave repository files untouched. Report the findings and merge verdict required by the review skill.
+From the repository root, read and follow `.agents/roles/graph-reviewer.md` before starting the task.

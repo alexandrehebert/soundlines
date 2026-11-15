@@ -11,7 +11,7 @@ on:
       # Figures quoted by the companion are computed from these at build time.
       - 'src/data/graph.json'
       - 'docs/graph/evidence/**'
-      - '.github/agents/**'
+      - '.agents/roles/**'
       - '.agents/skills/**'
       - 'package.json'
       - 'package-lock.json'

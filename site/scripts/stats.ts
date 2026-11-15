@@ -31,7 +31,7 @@ export function siteStats() {
       .map((variant) => files(`public/instrument-${variant}`, '.svg'))
       .reduce((sum, count) => sum + count, 0),
     loops: files('public/loops', '.wav'),
-    agents: readdirSync(`${root}.github/agents`).filter((file) => file.endsWith('.agent.md')).length,
+    agents: files('.agents/roles', '.md'),
     skills: files('.agents/skills', 'SKILL.md'),
   }
 }

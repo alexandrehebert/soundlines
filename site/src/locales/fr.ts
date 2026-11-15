@@ -448,7 +448,7 @@ export const fr: LocalizedContent = {
         ['docs/INSTALLATION.md', 'Outils et environnement'],
         ['docs/DEVELOPMENT.md', 'Développement et déploiement'],
         ['docs/ARCHITECTURE.md', 'Architecture de l’application'],
-        ['.github/agents', 'Agents spécialisés'],
+        ['.agents/roles', 'Agents spécialisés'],
         ['.agents/skills', 'Procédures réutilisables'],
         [storybookUrl, 'Galerie de composants (Storybook)'],
       ],
