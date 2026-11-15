@@ -17,7 +17,7 @@ Use `docs/graph/RESEARCH.md` for coverage gaps and research candidates. Use
 ## Constraints
 - DO NOT edit files. Your deliverable is a proposal.
 - DO NOT propose an entity that already exists: check every candidate with
-  `node .github/skills/graph-edit/scripts/lookup.mjs --search <text>`.
+  `node .agents/skills/graph-edit/scripts/lookup.mjs --search <text>`.
 - DO NOT force independent traditions into Western lineages, or propose edges without a source stating
   the relationship. Skip candidates you cannot source; list them as unresolved.
 - ONLY propose sources you have opened, each attached to the claim it supports.

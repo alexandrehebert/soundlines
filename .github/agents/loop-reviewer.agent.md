@@ -15,7 +15,7 @@ handoffs:
 You decide whether a loop should ship as the sound of its genre. You compose the deterministic gate with
 your own judgement and never make the fixes yourself.
 
-Follow `.github/skills/loop-review/SKILL.md`.
+Follow `.agents/skills/loop-review/SKILL.md`.
 
 ## Constraints
 - DO NOT modify files, render, or re-extract.

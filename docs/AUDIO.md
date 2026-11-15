@@ -22,7 +22,7 @@ The deployed app serves this static asset; it does not require a running ACE-Ste
 Its brief and selection report are in [docs/loops/briefs](./loops/briefs). Loops for other
 genres follow the same pipeline through the `loop-briefer`, `loop-producer`, `loop-validator` and
 `loop-reviewer` agents; the bundled scripts and the verified ACE-Step configuration are in
-[.github/skills/loop-produce](../.github/skills/loop-produce).
+[.agents/skills/loop-produce](../.agents/skills/loop-produce).
 
 The landing-page tonearm is behind the `NEXT_PUBLIC_FEATURE_TURNTABLE_TONEARM=true` build flag
 and is off by default, which leaves the turntable layout unchanged. When enabled, the desktop arm
@@ -65,10 +65,10 @@ autoplay on paused theme changes. Comparative human listening was approved on
 2026-11-07: "Approve — melody and transition work."
 
 To reproduce an original-source arrangement, add the brief's `arrangement` field,
-prepare conditioning with `.github/skills/loop-produce/scripts/arrange-loop.py prepare`,
+prepare conditioning with `.agents/skills/loop-produce/scripts/arrange-loop.py prepare`,
 render with `render-takes.mjs <brief> <stage> arrangement <seed ...>`, screen takes,
 then extract with `arrange-loop.py extract`. See the
-[production skill](../.github/skills/loop-produce/SKILL.md) for full commands.
+[production skill](../.agents/skills/loop-produce/SKILL.md) for full commands.
 Text-to-music loops retain the existing 4B planner requirement. Neither profile
 permits draft assets or skips mechanical validation and comparative listening.
 
@@ -79,7 +79,7 @@ middle ten seconds of a 32-second performance and uses the genre briefs in
 `docs/previews/briefs/*.json`. With the local ACE-Step API on port 8020 and its
 planner enabled, set `ACESTEP_PYTHON` to the ACE-Step environment's Python
 executable and `ACESTEP_PREVIEW_STATE` to a writable progress file, then run
-`node .github/skills/preview-produce/scripts/render-ace-previews.mjs`. Reuse the progress file to skip
+`node .agents/skills/preview-produce/scripts/render-ace-previews.mjs`. Reuse the progress file to skip
 completed clips, or pass genre slugs to render a subset.
 
 Detroit techno uses the higher-quality loop pipeline instead: standalone 4B planning,
@@ -90,7 +90,7 @@ that loop at 256 kbps AAC. The brief and selection report are in
 `docs/loops/briefs/detroit-techno*`. Human listening review remains required.
 
 Dedicated catalogue agents are `preview-briefer`, `preview-producer` and `preview-reviewer`;
-their procedures live in `.github/skills/preview-{brief,produce,review}/SKILL.md`.
+their procedures live in `.agents/skills/preview-{brief,produce,review}/SKILL.md`.
 They preserve the Turbo/eight-step/1.7B-planner preview workflow and stage retakes separately.
 Review includes decoding and defect checks, Audiobox Aesthetics scoring calibrated against
 approved Rock and Funk, and recorded first/second-take selection. The historical scorer

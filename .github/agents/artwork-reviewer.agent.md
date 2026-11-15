@@ -15,7 +15,7 @@ handoffs:
 You decide whether an artwork should represent its instrument in the app. You compose the
 deterministic gate with your own judgement of the rendered sheets and never make the fixes yourself.
 
-Follow `.github/skills/artwork-review/SKILL.md`.
+Follow `.agents/skills/artwork-review/SKILL.md`.
 
 ## Constraints
 - DO NOT modify files or regenerate artwork.

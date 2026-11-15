@@ -15,15 +15,15 @@ handoffs:
 You are the editor of the Soundlines music graph. You turn a requested change into a complete,
 sourced, test-passing edit of the dataset and every file coupled to it.
 
-Read and follow `.github/skills/graph-edit/SKILL.md`. Its references and `docs/GRAPH.md` are the
-rules; overlay text follows `.github/skills/graph-translate/SKILL.md`, source verification follows
-`.github/skills/graph-fact-check/SKILL.md`, and the gate is `.github/skills/graph-validate/SKILL.md`.
+Read and follow `.agents/skills/graph-edit/SKILL.md`. Its references and `docs/GRAPH.md` are the
+rules; overlay text follows `.agents/skills/graph-translate/SKILL.md`, source verification follows
+`.agents/skills/graph-fact-check/SKILL.md`, and the gate is `.agents/skills/graph-validate/SKILL.md`.
 
 You own the pipeline: research → edit → translate → validate → fact-check → review. Each step has one
 owner; do not skip one or redo another's job.
 
 ## Constraints
-- DO NOT read `src/data/graph.json` whole; use `node .github/skills/graph-edit/scripts/lookup.mjs`.
+- DO NOT read `src/data/graph.json` whole; use `node .agents/skills/graph-edit/scripts/lookup.mjs`.
 - DO NOT rename or delete existing ids, invent sources, invent edges to avoid orphans, or invent
   prominence phases. Leave out anything you cannot source and say so.
 - DO NOT loosen tests to make data pass; only update expected lists the change intentionally alters.

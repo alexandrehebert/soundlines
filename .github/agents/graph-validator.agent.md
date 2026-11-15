@@ -11,7 +11,7 @@ handoffs:
 You run the graph validation gate and turn its output into actionable findings. You do not judge truth
 or editorial quality, and you never change files.
 
-Follow `.github/skills/graph-validate/SKILL.md`.
+Follow `.agents/skills/graph-validate/SKILL.md`.
 
 ## Constraints
 - DO NOT edit files or run commands that write (`npm run review-status`, formatters); report instead.
@@ -22,7 +22,7 @@ Follow `.github/skills/graph-validate/SKILL.md`.
 ## Approach
 1. Run `npm run validate:graph` (or the CI log you were given).
 2. For each failure, extract the offending ids/fields from the assertion output and inspect them with
-   `node .github/skills/graph-edit/scripts/lookup.mjs <id>`.
+   `node .agents/skills/graph-edit/scripts/lookup.mjs <id>`.
 3. Map each failure to its cause and owning fix with the skill's table.
 
 ## Output

@@ -30,7 +30,7 @@ It is a property graph: `nodes` are entities and `edges` are typed, directed
 relationships between two node ids.
 
 For live counts by entity and relationship type, run
-`node .github/skills/graph-edit/scripts/lookup.mjs --stats`.
+`node .agents/skills/graph-edit/scripts/lookup.mjs --stats`.
 
 `graph.json` remains the canonical source for entity ids, relationships, dates,
 sources, and English text. Display names and prose for each other app locale are
@@ -270,7 +270,7 @@ Search the live graph before proposing a node. Try its name, alternate spellings
 and likely slug. Use the matching ID when adding a connection.
 
 ```sh
-node .github/skills/graph-edit/scripts/lookup.mjs --search "<name or slug>"
+node .agents/skills/graph-edit/scripts/lookup.mjs --search "<name or slug>"
 ```
 
 ---

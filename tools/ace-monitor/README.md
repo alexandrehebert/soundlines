@@ -23,7 +23,7 @@ It mounts the cache and log directory **read-only** and proxies API requests
 server-side. The dashboard is bound to localhost; do not expose it publicly.
 The API key, if needed, stays server-side.
 
-The first default port matches `.github/skills/loop-produce/scripts/ace-server.sh`.
+The first default port matches `.agents/skills/loop-produce/scripts/ace-server.sh`.
 The monitor scans that port and the next nine on every refresh:
 
 | Environment variable | Default |

@@ -117,7 +117,7 @@ export const es: LocalizedContent = {
         ['Lo que las máquinas no pueden juzgar', 'Un programa puede detectar que un icono es demasiado pequeño; no puede saber que el ángulo del mástil de un laúd es incorrecto. Por eso las láminas renderizadas y la revisión humana siguen siendo pasos separados y obligatorios.'],
       ],
       showcase: true,
-      resources: [['docs/DATA.md#instrument-artwork', 'Proceso de ilustración'], ['.github/skills/artwork-draw/SKILL.md', 'Procedimiento de dibujo y estilo propio'], ['docs/artwork/briefs', 'Fichas visuales'], ['scripts/artwork/generate-instrument-artwork.py', 'Generador de ilustraciones originales']],
+      resources: [['docs/DATA.md#instrument-artwork', 'Proceso de ilustración'], ['.agents/skills/artwork-draw/SKILL.md', 'Procedimiento de dibujo y estilo propio'], ['docs/artwork/briefs', 'Fichas visuales'], ['scripts/artwork/generate-instrument-artwork.py', 'Generador de ilustraciones originales']],
     },
     audio: {
       label: 'Creación de sonidos', title: '¿Cómo se crean los sonidos de Soundlines?',
@@ -167,7 +167,7 @@ export const es: LocalizedContent = {
         ],
         path: 'docs/loops/briefs/turntable-hip-hop.json', link: 'Leer su ficha',
       },
-      resources: [['docs/AUDIO.md', 'Formatos de audio y procedencia de la generación'], ['.github/skills/loop-produce/SKILL.md', 'Producción de bucles sin cortes'], ['docs/loops/briefs', 'Fichas de bucles e informes de selección']],
+      resources: [['docs/AUDIO.md', 'Formatos de audio y procedencia de la generación'], ['.agents/skills/loop-produce/SKILL.md', 'Producción de bucles sin cortes'], ['docs/loops/briefs', 'Fichas de bucles e informes de selección']],
     },
     build: {
       label: 'Cómo se construye', title: 'Una aplicación, un archivo de datos y un equipo de asistentes.',
@@ -187,7 +187,7 @@ export const es: LocalizedContent = {
         ['Procedimientos que puedes leer', 'Las habilidades son procedimientos paso a paso, con sus propios programas, almacenados en el repositorio; los agentes son descripciones de roles que los utilizan. Al versionarse como el código, cualquiera puede leer exactamente qué se pidió a un asistente y mejorarlo.'],
         ['¿Quieres ayudar?', 'Una fuente mejor, una conexión corregida, una traducción más clara o un instrumento más reconocible importan tanto como una función nueva. Haz cambios pequeños, ejecuta las comprobaciones pertinentes y explica la evidencia en la solicitud de cambios.'],
       ],
-      resources: [['docs/INSTALLATION.md', 'Configuración de herramientas y entorno'], ['docs/DEVELOPMENT.md', 'Desarrollo y despliegue'], ['docs/ARCHITECTURE.md', 'Arquitectura de la aplicación'], ['.github/agents', 'Agentes especializados'], ['.github/skills', 'Procedimientos reutilizables'], [storybookUrl, 'Galería de componentes (Storybook)']],
+      resources: [['docs/INSTALLATION.md', 'Configuración de herramientas y entorno'], ['docs/DEVELOPMENT.md', 'Desarrollo y despliegue'], ['docs/ARCHITECTURE.md', 'Arquitectura de la aplicación'], ['.github/agents', 'Agentes especializados'], ['.agents/skills', 'Procedimientos reutilizables'], [storybookUrl, 'Galería de componentes (Storybook)']],
     },
   },
 }

@@ -11,12 +11,12 @@ handoffs:
 You write the brief that ACE-Step receives for a genre loop. You decide what the loop should sound like;
 you never render, measure or approve audio.
 
-Follow `.github/skills/loop-brief/SKILL.md`; the reference brief is `docs/loops/briefs/turntable-hip-hop.json`.
+Follow `.agents/skills/loop-brief/SKILL.md`; the reference brief is `docs/loops/briefs/turntable-hip-hop.json`.
 
 ## Constraints
 - ONLY edit `docs/loops/briefs/<slug>.json` (never `*.selection.json`, audio, scripts or thresholds).
 - DO NOT name artists, tracks or records, or write "in the style of"; describe musical traits.
-- DO NOT read `src/data/graph.json` whole; use `node .github/skills/graph-edit/scripts/lookup.mjs`.
+- DO NOT read `src/data/graph.json` whole; use `node .agents/skills/graph-edit/scripts/lookup.mjs`.
 - Refuse beatless genres for beat-grid loops and say why.
 
 ## Output

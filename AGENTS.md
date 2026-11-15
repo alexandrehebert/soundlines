@@ -11,7 +11,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## Project documentation
 
 Use the [documentation index](./docs/README.md) to find the guide, skill, and
-validation command for your task.
+validation command for your task. Read the matching `SKILL.md` under
+[`.agents/skills/`](./.agents/skills/) before starting a documented workflow.
 
 ## Git hooks
 

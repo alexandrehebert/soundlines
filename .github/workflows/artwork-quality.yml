@@ -7,7 +7,7 @@ on:
       - 'scripts/artwork/**'
       - 'docs/artwork/**'
       - '.github/agents/artwork-*.agent.md'
-      - '.github/skills/artwork-*/**'
+      - '.agents/skills/artwork-*/**'
       - '.github/instructions/instrument-artwork.instructions.md'
       - '.github/workflows/artwork-quality.yml'
       - 'src/data/graph.json'
@@ -24,7 +24,7 @@ on:
       - 'scripts/artwork/**'
       - 'docs/artwork/**'
       - '.github/agents/artwork-*.agent.md'
-      - '.github/skills/artwork-*/**'
+      - '.agents/skills/artwork-*/**'
       - '.github/instructions/instrument-artwork.instructions.md'
       - '.github/workflows/artwork-quality.yml'
       - 'src/data/graph.json'
@@ -52,8 +52,8 @@ jobs:
           python-version: '3.12'
       - run: npm ci
       - name: Lint artwork briefs
-        run: node .github/skills/artwork-brief/scripts/check-brief.mjs
+        run: node .agents/skills/artwork-brief/scripts/check-brief.mjs
       - name: Validate artwork and generator output
-        run: node .github/skills/artwork-validate/scripts/check-artwork.mjs --require-render
+        run: node .agents/skills/artwork-validate/scripts/check-artwork.mjs --require-render
       - name: Test artwork validation and app icons
         run: npx vitest run scripts/artwork/validation.test.ts src/design-system/explorer/InstrumentIcon.test.tsx

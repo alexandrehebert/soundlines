@@ -12,7 +12,7 @@ on:
       - 'src/data/graph.json'
       - 'docs/graph/evidence/**'
       - '.github/agents/**'
-      - '.github/skills/**'
+      - '.agents/skills/**'
       - 'package.json'
       - 'package-lock.json'
       # The public Storybook is published under /storybook/.

@@ -6,7 +6,7 @@ Grid briefs adapt the existing genre-specific preview directions rather than int
 
 For faster iteration, new grid briefs use four bars and source takes of at least 24 seconds with 14 seconds of extraction headroom. Five seeds are available; render the first two initially, extending the run when needed. Keep final XL SFT/80-step/4B planning quality. Never feed special-case Markdown files to the grid renderer; render their JSON approximations instead. The existing turntable trap arrangement remains available separately.
 
-Run `node .github/skills/loop-brief/scripts/check-brief.mjs` to lint every runnable brief. Special cases document the musical direction and the missing workflow support without fabricating tempo or keys.
+Run `node .agents/skills/loop-brief/scripts/check-brief.mjs` to lint every runnable brief. Special cases document the musical direction and the missing workflow support without fabricating tempo or keys.
 
 | Genre | Preparation | Brief | Review note |
 | --- | --- | --- | --- |

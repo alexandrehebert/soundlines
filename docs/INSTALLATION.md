@@ -102,6 +102,17 @@ daemon and plugin with `docker version` and `docker compose version`.
 
 ## 4. Enable repository agents and skills
 
+Start your assistant from the repository root. All clients share
+[AGENTS.md](../AGENTS.md) and the [skill folders](../.agents/skills), which
+contain the procedures, scripts and references. Script execution still needs
+the workflow's local dependencies and tool permissions.
+
+| Client | Project skills | Named agents |
+| --- | --- | --- |
+| VS Code Copilot | `.agents/skills/` | [.github/agents](../.github/agents), with path-specific guidance in [.github/instructions](../.github/instructions) |
+| Codex | `.agents/skills/` | [.codex/agents](../.codex/agents) |
+| Claude Code | `.claude/skills/` links to the shared folders | [.claude/agents](../.claude/agents), with [CLAUDE.md](../CLAUDE.md) importing `AGENTS.md` |
+
 ### VS Code and Copilot
 
 1. Follow [Copilot setup](https://code.visualstudio.com/docs/setup/copilot):
@@ -112,25 +123,12 @@ daemon and plugin with `docker version` and `docker compose version`.
    checkout before granting Workspace Trust or terminal execution permission.
 3. Select a compatible agent harness/session target in Chat. Open the Command
    Palette and run **Chat: Open Customizations**.
-4. Verify that the repository's agents and skills appear. Select an agent in
-   Chat or request a specific skill. Labels and available controls can vary
-   with VS Code and harness versions.
+4. Verify that `graph-validate` appears under **Skills** and `graph-reviewer`
+   under **Agents**. Use `/graph-validate` in Chat to try the shared skill.
+   Labels and available controls can vary with VS Code and harness versions.
 5. Enable only the tools needed for the task, and approve reviewed commands.
    Graph research needs web access; validators need terminal execution;
    visual reviews need image viewing and browser access.
-
-The repository already contains:
-
-| Customization | Location | Purpose |
-| --- | --- | --- |
-| Custom agents | [.github/agents](../.github/agents) | Stage owners, tool restrictions and handoffs |
-| Skills | [.github/skills](../.github/skills) | On-demand procedures, scripts and references |
-| File instructions | [.github/instructions](../.github/instructions) | Guidance for matching file types and paths |
-
-Nothing in these folders is an npm package. Do not install or copy every skill
-into a global folder. Agent discovery and script execution are separate:
-seeing `artwork-validator` in Chat does not install Python or make its gate pass.
-Agents guide work when invoked; they do not automatically run the whole pipeline.
 
 Try a read-only smoke test:
 
@@ -140,6 +138,17 @@ Try a read-only smoke test:
 Then try artwork validation after completing section 5. Confirm the assistant
 actually runs the documented command and reports its exit status, rather than
 just describing what it would do.
+
+### Codex and Claude Code
+
+- **Codex:** Open this repository in Codex, find `graph-validate` in the skill
+  picker, then invoke `$graph-validate`. To delegate a graph review, ask Codex
+  to use the `graph-reviewer` subagent. See [Codex skills](https://learn.chatgpt.com/docs/build-skills).
+- **Claude Code:** Open `claude` from the repository root and invoke
+  `/graph-validate`. Use `claude agents` to check that `graph-reviewer` is
+  registered. See [Claude Code skills](https://code.claude.com/docs/en/skills).
+  Claude's project skills require Git to check out the links as symlinks. On
+  Windows, enable symlink support and clone with `git clone -c core.symlinks=true`.
 
 ### Optional terminal Copilot
 
@@ -186,9 +195,12 @@ Reuse a nearby agent or skill as the template. Keep shared project files in the
 locations above; personal plugins and cross-project configuration belong in
 the host's supported user scope.
 
-- A skill has a `SKILL.md` with YAML `name` and `description`, plus any bundled
-  scripts or references. Match the name to its folder and describe when to use it.
-- An agent is a `.agent.md` file with role description and supported tool fields.
+- Add or edit skills in `.agents/skills/`. A skill has a `SKILL.md` with YAML
+  `name` and `description`, plus any bundled scripts or references. Match the
+  name to its folder and describe when to use it. Add a relative symlink in
+  `.claude/skills/` when adding a skill, and update it when renaming one.
+- Keep named agents focused on a role and point them to the shared workflow.
+  Copilot uses `.agent.md`, Claude Code uses `.md`, and Codex uses `.toml`.
 - File instructions use `.instructions.md` and appropriate `applyTo` globs.
 - Check YAML syntax, discovery, tool permissions and one representative
   execution after editing. A model change does not fix an incompatible harness.
@@ -217,8 +229,8 @@ with Next.js by `npm ci`. Verify the actual installation:
 
 ```bash
 node -e "import('sharp').then(({default: sharp}) => console.log(sharp.versions))"
-node .github/skills/artwork-brief/scripts/check-brief.mjs
-node .github/skills/artwork-validate/scripts/check-artwork.mjs --require-render
+node .agents/skills/artwork-brief/scripts/check-brief.mjs
+node .agents/skills/artwork-validate/scripts/check-artwork.mjs --require-render
 ```
 
 The gate invokes `python3` for generator drift checks. `--require-render`
@@ -232,14 +244,14 @@ Create sheets outside the repository and run the relevant tests:
 
 ```bash
 export ARTWORK_STAGE_ROOT="$HOME/.cache/soundlines-artwork"
-node .github/skills/artwork-validate/scripts/check-artwork.mjs viola \
+node .agents/skills/artwork-validate/scripts/check-artwork.mjs viola \
   --require-render --png-dir "$ARTWORK_STAGE_ROOT/viola"
 npx vitest run scripts/artwork/validation.test.ts src/design-system/explorer/InstrumentIcon.test.tsx
 ```
 
 Expected output includes findings and PNG sheets. A gate failure can indicate
 an actual artwork defect, not a missing installation. Human Storybook sign-off
-still follows validation; see [artwork procedures](../.github/skills/artwork-review/SKILL.md).
+still follows validation; see [artwork procedures](../.agents/skills/artwork-review/SKILL.md).
 
 ## 6. Install the optional audio environment
 
@@ -370,14 +382,14 @@ The two additional downloads supply the final-quality models. You do not need
 | Draft loops and catalogue previews | `acestep-v15-turbo`, eight steps | In-server `acestep-5Hz-lm-1.7B`, MLX |
 
 See [upstream installation](https://github.com/ACE-Step/ACE-Step-1.5/blob/main/docs/en/INSTALL.md)
-and the [recorded Soundlines configuration](../.github/skills/loop-produce/references/ace-step.md).
+and the [recorded Soundlines configuration](../.agents/skills/loop-produce/references/ace-step.md).
 
 ### Server and audio validation smoke tests
 
 Return to the Soundlines root. Check for an existing server before starting one:
 
 ```bash
-bash .github/skills/loop-produce/scripts/ace-server.sh status
+bash .agents/skills/loop-produce/scripts/ace-server.sh status
 ```
 
 No server is expected on a fresh installation. If one is running, inspect its
@@ -385,7 +397,7 @@ profile and ownership; do not interrupt somebody else's job. When the port is
 free, test the draft server:
 
 ```bash
-bash .github/skills/loop-produce/scripts/ace-server.sh start draft
+bash .agents/skills/loop-produce/scripts/ace-server.sh start draft
 curl -fsS http://127.0.0.1:8020/health
 ```
 
@@ -394,15 +406,15 @@ also verify the in-server planner configuration. Logs and the PID file are
 under `LOOP_STAGE_ROOT`. Stop the server you started after testing:
 
 ```bash
-bash .github/skills/loop-produce/scripts/ace-server.sh stop
-node .github/skills/loop-brief/scripts/check-brief.mjs docs/loops/briefs/turntable-hip-hop.json
-"$ACESTEP_PYTHON" .github/skills/loop-validate/scripts/check-loop.py \
+bash .agents/skills/loop-produce/scripts/ace-server.sh stop
+node .agents/skills/loop-brief/scripts/check-brief.mjs docs/loops/briefs/turntable-hip-hop.json
+"$ACESTEP_PYTHON" .agents/skills/loop-validate/scripts/check-loop.py \
   docs/loops/briefs/turntable-hip-hop.json public/loops/turntable-hip-hop.wav \
   --png-dir "$LOOP_STAGE_ROOT/turntable-hip-hop-install-check/png"
 ```
 
 Validating the existing WAV does not render or overwrite audio. Final-quality
-production follows [loop-produce](../.github/skills/loop-produce/SKILL.md):
+production follows [loop-produce](../.agents/skills/loop-produce/SKILL.md):
 plan codes with **no server running**, then start the final XL server, render,
 screen takes, extract, validate and review. Keep only one server/job active;
 human listening remains required. Do not render five takes just to test installation.
@@ -411,7 +423,7 @@ human listening remains required. Do not render five takes just to test installa
 
 ### macOS encoding tools
 
-The [preview renderer](../.github/skills/preview-produce/scripts/render-ace-previews.mjs)
+The [preview renderer](../.agents/skills/preview-produce/scripts/render-ace-previews.mjs)
 executes Apple's built-in `afconvert` and `afinfo`:
 
 ```bash
@@ -443,13 +455,13 @@ To produce an authorized, isolated test clip without replacing shipped assets:
 
 ```bash
 export ACESTEP_PREVIEW_OUTPUT="$HOME/.cache/soundlines-previews/install-check"
-node .github/skills/preview-produce/scripts/render-ace-previews.mjs rock
+node .agents/skills/preview-produce/scripts/render-ace-previews.mjs rock
 ```
 
 This performs a real render and consumes time/memory. Existing files and progress
 can cause a clip to be skipped; use a fresh output/progress location for a new
 test. Normal production and staged retakes follow
-[preview-produce](../.github/skills/preview-produce/SKILL.md), not loop extraction.
+[preview-produce](../.agents/skills/preview-produce/SKILL.md), not loop extraction.
 The output should be a ten-second stereo AAC `.m4a` file.
 
 ### Optional Audiobox Aesthetics scorer
@@ -490,7 +502,7 @@ The model checkpoint downloads on first use. Verify device/backend support
 with the installed version; no macOS acceleration guarantee is implied.
 Record package/checkpoint versions and configuration, calibrate against the
 approved Rock and Funk files, and follow
-[preview-review](../.github/skills/preview-review/SKILL.md). Scores are heuristics,
+[preview-review](../.agents/skills/preview-review/SKILL.md). Scores are heuristics,
 not proof of genre authenticity or a substitute for listening.
 
 ## 8. Optional external integrations

@@ -67,7 +67,7 @@ export function categoryFor(path: string): Category {
   if (/(^|\/)loops?(\/|[.-])/.test(path)) return 'loops'
   if (/^public\/instrument-|(^|\/)artwork(\/|[.-])|instrument-artwork/.test(path)) return 'artwork'
   if (/^site\//.test(path)) return 'site'
-  if (/^\.github\/|^scripts\/|^compose\.|^Dockerfile|^AGENTS\.md$/.test(path)) return 'workflow'
+  if (/^\.(github|agents|claude|codex)\/|^scripts\/|^compose\.|^Dockerfile|^(AGENTS|CLAUDE)\.md$/.test(path)) return 'workflow'
   if (/^docs\/|\.md$/.test(path)) return 'docs'
   if (/^(src|public|app)\/|\.(json|[cm]?ts)$/.test(path)) return 'app'
   return 'other'

@@ -262,7 +262,7 @@ export const en: LocalizedContent = {
       showcase: true,
       resources: [
         ['docs/DATA.md#instrument-artwork', 'Artwork workflow'],
-        ['.github/skills/artwork-draw/SKILL.md', 'Drawing procedure and house style'],
+        ['.agents/skills/artwork-draw/SKILL.md', 'Drawing procedure and house style'],
         ['docs/artwork/briefs', 'Visual briefs'],
         ['scripts/artwork/generate-instrument-artwork.py', 'Master artwork generator'],
       ],
@@ -378,7 +378,7 @@ export const en: LocalizedContent = {
       },
       resources: [
         ['docs/AUDIO.md', 'Audio formats and render provenance'],
-        ['.github/skills/loop-produce/SKILL.md', 'Seamless-loop production'],
+        ['.agents/skills/loop-produce/SKILL.md', 'Seamless-loop production'],
         ['docs/loops/briefs', 'Loop briefs and selection reports'],
       ],
     },
@@ -449,7 +449,7 @@ export const en: LocalizedContent = {
         ['docs/DEVELOPMENT.md', 'Development and deployment'],
         ['docs/ARCHITECTURE.md', 'Application architecture'],
         ['.github/agents', 'Specialised agents'],
-        ['.github/skills', 'Reusable procedures'],
+        ['.agents/skills', 'Reusable procedures'],
         [storybookUrl, 'Component gallery (Storybook)'],
       ],
     },

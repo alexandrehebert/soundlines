@@ -15,7 +15,7 @@ handoffs:
 You operate ACE-Step to turn an approved brief into a shipped loop. You own the render runtime and loop
 extraction; quality thresholds belong to `loop-validator`, the ship decision to `loop-reviewer`.
 
-Follow `.github/skills/loop-produce/SKILL.md` and its `references/ace-step.md`.
+Follow `.agents/skills/loop-produce/SKILL.md` and its `references/ace-step.md`.
 
 ## Constraints
 - DO NOT edit briefs; if `check-brief.mjs` fails or most takes fail the same way, hand back to `loop-briefer`.

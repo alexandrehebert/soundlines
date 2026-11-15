@@ -32,7 +32,7 @@ export function siteStats() {
       .reduce((sum, count) => sum + count, 0),
     loops: files('public/loops', '.wav'),
     agents: readdirSync(`${root}.github/agents`).filter((file) => file.endsWith('.agent.md')).length,
-    skills: files('.github/skills', 'SKILL.md'),
+    skills: files('.agents/skills', 'SKILL.md'),
   }
 }
 

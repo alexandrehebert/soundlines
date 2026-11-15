@@ -1,6 +1,6 @@
 # Graph research backlog
 
-Use the [graph lookup tool](../../.github/skills/graph-edit/scripts/lookup.mjs) to check existing entries before proposing additions. Follow the [editorial guidelines](../GRAPH.md#6-editorial-guidelines) when evaluating sources and relationships.
+Use the [graph lookup tool](../../.agents/skills/graph-edit/scripts/lookup.mjs) to check existing entries before proposing additions. Follow the [editorial guidelines](../GRAPH.md#6-editorial-guidelines) when evaluating sources and relationships.
 
 ## Suggested expansion areas
 

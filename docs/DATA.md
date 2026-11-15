@@ -58,7 +58,7 @@ Validation is deterministic: `npm run validate:graph` runs the data and graph te
 ids, edge directions, canonical JSON formatting, overlay coverage for every locale, evidence and
 coverage-tracker bookkeeping). The [Graph quality](../.github/workflows/graph-quality.yml)
 workflow runs it, plus a `review-status.json` freshness check, on every pull request touching graph data
-or docs. The skills in [.github/skills](../.github/skills) bundle `lookup.mjs` (query `graph.json` by id,
+or docs. The skills in [.agents/skills](../.agents/skills) bundle `lookup.mjs` (query `graph.json` by id,
 name, or pending evidence) and `diff.mjs` (semantic diff of graph changes and overlays against a git ref).
 
 Every graph entry needs a source-backed description of one to three sentences. For an artist,
@@ -89,7 +89,7 @@ The agent does not render audio or artwork: a new genre is listed in `PENDING_GE
 and reviews its preview locally with the preview pipeline. New instruments likewise wait for the
 local artwork pipeline.
 To keep runs cheap and short, the agent follows the "Cost and time budget" in the
-[graph-edit skill](../.github/skills/graph-edit/SKILL.md): it limits the change to the request,
+[graph-edit skill](../.agents/skills/graph-edit/SKILL.md): it limits the change to the request,
 uses one authoritative source per claim, avoids subagents for small changes, runs targeted tests
 while iterating, and stops with a gap report instead of searching at length.
 The [Copilot setup workflow](../.github/workflows/copilot-setup-steps.yml) installs Node.js 26

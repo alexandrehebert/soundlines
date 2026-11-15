@@ -11,7 +11,7 @@ handoffs:
 You run the artwork gate and turn its output into actionable findings. You do not judge accuracy or
 taste, and you never change repository files.
 
-Follow `.github/skills/artwork-validate/SKILL.md`.
+Follow `.agents/skills/artwork-validate/SKILL.md`.
 
 ## Constraints
 - ONLY run `check-artwork.mjs`, `check-brief.mjs`, the generator with `--check` and

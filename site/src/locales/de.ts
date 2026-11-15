@@ -77,7 +77,7 @@ export const de: LocalizedContent = {
         ['Eine Sammlung statt Clipart', 'Jede Instrumentenfamilie hat ihre eigene Palette, und alle Zeichnungen teilen dieselbe leichte Neigung. So wirken alle Zeichnungen wie eine zusammengehörige Sammlung. Das Konzept stellt sicher, dass der gemeinsame Stil eine Bratsche niemals wie eine Geige aussehen lässt.'],
         ['Was Maschinen nicht beurteilen können', 'Ein Skript erkennt, dass ein Symbol zu klein ist; es erkennt keinen falschen Halswinkel einer Laute. Deshalb bleiben gerenderte Bögen und die menschliche Sichtprüfung getrennte, verpflichtende Schritte.'],
       ], showcase: true,
-      resources: [['docs/DATA.md#instrument-artwork', 'Zeichnungsverfahren'], ['.github/skills/artwork-draw/SKILL.md', 'Zeichenverfahren und Hausstil'], ['docs/artwork/briefs', 'Gestaltungskonzepte'], ['scripts/artwork/generate-instrument-artwork.py', 'Hauptgenerator für Zeichnungen']],
+      resources: [['docs/DATA.md#instrument-artwork', 'Zeichnungsverfahren'], ['.agents/skills/artwork-draw/SKILL.md', 'Zeichenverfahren und Hausstil'], ['docs/artwork/briefs', 'Gestaltungskonzepte'], ['scripts/artwork/generate-instrument-artwork.py', 'Hauptgenerator für Zeichnungen']],
     },
     audio: {
       label: 'Klangproduktion', title: 'Wie entstehen die Klänge in Soundlines?',
@@ -114,7 +114,7 @@ export const de: LocalizedContent = {
       example: { title: 'Der Loop der Startseite', intro: 'Der Hip-Hop-Loop auf Seite A des Plattenspielers.', rows: [
         ['Stil', 'Eigenständiges Boom-Bap-Instrumental, d-Moll, 92 BPM'], ['Modelle', 'ACE-Step 1.5: 4B-Planer, danach XL-SFT-Klangerzeugung mit 80 Schritten'], ['Aufnahmen', 'Fünf Aufnahmen von je 36 Sekunden (Startwerte 73192, 18409, 60217, 41126, 52880)'], ['Ausgewählt', 'Startwert 41126, ab 11,668 s: genau 16 Schläge, 10,435 s'], ['Format', 'Stereo-WAV, 48 kHz. MP3 oder AAC würden Stille hinzufügen, die einen nahtlosen Loop unterbricht.'], ['Seite B', 'Die Trap-Version (helles Design) ist aus derselben Phrase neu arrangiert. So bleibt beim Designwechsel der Takt erhalten.'],
       ], path: 'docs/loops/briefs/turntable-hip-hop.json', link: 'Konzept lesen' },
-      resources: [['docs/AUDIO.md', 'Audioformate und Herkunft der Klangerzeugung'], ['.github/skills/loop-produce/SKILL.md', 'Produktion nahtloser Loops'], ['docs/loops/briefs', 'Loop-Konzepte und Auswahlberichte']],
+      resources: [['docs/AUDIO.md', 'Audioformate und Herkunft der Klangerzeugung'], ['.agents/skills/loop-produce/SKILL.md', 'Produktion nahtloser Loops'], ['docs/loops/briefs', 'Loop-Konzepte und Auswahlberichte']],
     },
     build: {
       label: 'Technischer Aufbau', title: 'Eine App, eine Datendatei und ein Team von Assistenten.',
@@ -130,7 +130,7 @@ export const de: LocalizedContent = {
         ['Die Werkzeuge', 'Durchgehend TypeScript; React 19 und der Next.js App Router für die App; Tailwind CSS für Stile; next-intl für die fünf Sprachen; Vitest und Storybook für Tests und Komponentenvorschauen; Docker Compose für die lokale Einrichtung mit einem Befehl. Diese Begleitseite verwendet React und Vite, zu statischem HTML vorgerendert.'],
         ['Nachlesbare Verfahren', 'Skills sind schrittweise Verfahren mit eigenen Skripten im Repository; Agenten sind Rollenbeschreibungen, die sie verwenden. Da sie wie Code versioniert sind, kann jeder genau nachlesen, welchen Auftrag ein Assistent erhielt, und ihn verbessern.'],
         ['Möchtest du helfen?', 'Eine bessere Quelle, eine korrigierte Verbindung, eine klarere Übersetzung oder ein besser erkennbares Instrument sind ebenso wichtig wie eine neue Funktion. Halte Änderungen klein, führe die passenden Prüfungen aus und erläutere deine Belege in der Pull-Anfrage.'],
-      ], resources: [['docs/INSTALLATION.md', 'Werkzeuge und Umgebung einrichten'], ['docs/DEVELOPMENT.md', 'Entwicklung und Bereitstellung'], ['docs/ARCHITECTURE.md', 'Anwendungsarchitektur'], ['.github/agents', 'Spezialisierte Agenten'], ['.github/skills', 'Wiederverwendbare Verfahren'], [storybookUrl, 'Komponentengalerie (Storybook)']],
+      ], resources: [['docs/INSTALLATION.md', 'Werkzeuge und Umgebung einrichten'], ['docs/DEVELOPMENT.md', 'Entwicklung und Bereitstellung'], ['docs/ARCHITECTURE.md', 'Anwendungsarchitektur'], ['.github/agents', 'Spezialisierte Agenten'], ['.agents/skills', 'Wiederverwendbare Verfahren'], [storybookUrl, 'Komponentengalerie (Storybook)']],
     },
   },
 }

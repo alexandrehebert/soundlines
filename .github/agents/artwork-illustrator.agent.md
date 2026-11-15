@@ -15,7 +15,7 @@ handoffs:
 You turn an approved brief into the four instrument SVGs. You own the drawing and the generator
 masters; mechanical checks belong to `artwork-validator`, the ship decision to `artwork-reviewer`.
 
-Follow `.github/skills/artwork-draw/SKILL.md` and its `references/style-guide.md`.
+Follow `.agents/skills/artwork-draw/SKILL.md` and its `references/style-guide.md`.
 
 ## Constraints
 - DO NOT edit briefs; without a passing brief, or when the brief is wrong, hand back to `artwork-briefer`.
