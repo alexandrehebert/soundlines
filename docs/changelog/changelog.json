@@ -2,6 +2,38 @@
   "version": 4,
   "entries": [
     {
+      "commit": "ea7007cae1530ec953d88542e68e633f1e11c082",
+      "parent": "89bd19718bbefec1aeba630c896aa3b995ac16ec",
+      "date": "2026-11-15T01:03:50-05:00",
+      "subject": "Sync the Storybook Overview with the story index",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "A",
+              "path": "src/stories/Overview.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Overview.tsx"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/DESIGN_SYSTEM.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "bcb4548f827cc5b0ddbde00a262731b37d25f92a",
       "parent": "c8d574b4b423e112854c26ea1a58f5a281dae31a",
       "date": "2026-11-15T00:56:04-05:00",

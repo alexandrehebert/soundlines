@@ -12,6 +12,13 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-15 — Sync the Storybook Overview with the story index
+
+[ea7007ca](https://github.com/alexandrehebert/soundlines/commit/ea7007cae1530ec953d88542e68e633f1e11c082)
+
+- app: 2 changed files
+- docs: 1 changed file
+
 ## 2026-11-15 — Publish the full Storybook catalogue on GitHub Pages
 
 [bcb4548f](https://github.com/alexandrehebert/soundlines/commit/bcb4548f827cc5b0ddbde00a262731b37d25f92a)
