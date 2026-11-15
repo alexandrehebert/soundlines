@@ -2,6 +2,1555 @@
   "version": 4,
   "entries": [
     {
+      "commit": "5260badea4f0acb41b3c0bab666d1656d4f13c2b",
+      "parent": "de237c84d9cda1e5557060002ba09fb661a42eb1",
+      "date": "2026-11-15T00:40:35-05:00",
+      "subject": "Improve explorer deep links and refresh artist descriptions",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "artist:alaap",
+              "name": "Alaap",
+              "status": "updated"
+            },
+            {
+              "id": "artist:albert-ayler",
+              "name": "Albert Ayler",
+              "status": "updated"
+            },
+            {
+              "id": "artist:alejo-duran",
+              "name": "Alejo Durán",
+              "status": "updated"
+            },
+            {
+              "id": "artist:amalia-rodrigues",
+              "name": "Amália Rodrigues",
+              "status": "updated"
+            },
+            {
+              "id": "artist:anatoli-kuular",
+              "name": "Anatoli Kuular",
+              "status": "updated"
+            },
+            {
+              "id": "artist:anibal-troilo",
+              "name": "Aníbal Troilo",
+              "status": "updated"
+            },
+            {
+              "id": "artist:anita-mui",
+              "name": "Anita Mui",
+              "status": "updated"
+            },
+            {
+              "id": "artist:antonio-carlos-jobim",
+              "name": "Antônio Carlos Jobim",
+              "status": "updated"
+            },
+            {
+              "id": "artist:apirana-ngata",
+              "name": "Āpirana Ngata",
+              "status": "updated"
+            },
+            {
+              "id": "artist:asha-bhosle",
+              "name": "Asha Bhosle",
+              "status": "updated"
+            },
+            {
+              "id": "artist:banda-el-recodo",
+              "name": "Banda El Recodo",
+              "status": "updated"
+            },
+            {
+              "id": "artist:banda-la-costena",
+              "name": "Banda La Costeña",
+              "status": "updated"
+            },
+            {
+              "id": "artist:banda-los-guamuchilenos",
+              "name": "Banda Los Guamuchileños",
+              "status": "updated"
+            },
+            {
+              "id": "artist:black-flag",
+              "name": "Black Flag",
+              "status": "updated"
+            },
+            {
+              "id": "artist:bulimundo",
+              "name": "Bulimundo",
+              "status": "updated"
+            },
+            {
+              "id": "artist:camaron-de-la-isla",
+              "name": "Camarón de la Isla",
+              "status": "updated"
+            },
+            {
+              "id": "artist:carl-craig",
+              "name": "Carl Craig",
+              "status": "updated"
+            },
+            {
+              "id": "artist:carlos-do-carmo",
+              "name": "Carlos do Carmo",
+              "status": "updated"
+            },
+            {
+              "id": "artist:carlos-gardel",
+              "name": "Carlos Gardel",
+              "status": "updated"
+            },
+            {
+              "id": "artist:caterina-valente",
+              "name": "Caterina Valente",
+              "status": "updated"
+            },
+            {
+              "id": "artist:cecil-taylor",
+              "name": "Cecil Taylor",
+              "status": "updated"
+            },
+            {
+              "id": "artist:chabuca-granda",
+              "name": "Chabuca Granda",
+              "status": "updated"
+            },
+            {
+              "id": "artist:charlie-parker",
+              "name": "Charlie Parker",
+              "status": "updated"
+            },
+            {
+              "id": "artist:chet-baker",
+              "name": "Chet Baker",
+              "status": "updated"
+            },
+            {
+              "id": "artist:claude-francois",
+              "name": "Claude François",
+              "status": "updated"
+            },
+            {
+              "id": "artist:clifford-brown",
+              "name": "Clifford Brown",
+              "status": "updated"
+            },
+            {
+              "id": "artist:count-lasher",
+              "name": "Count Lasher",
+              "status": "updated"
+            },
+            {
+              "id": "artist:craig-david",
+              "name": "Craig David",
+              "status": "updated"
+            },
+            {
+              "id": "artist:daddy-yankee",
+              "name": "Daddy Yankee",
+              "status": "updated"
+            },
+            {
+              "id": "artist:danyel-waro",
+              "name": "Danyèl Waro",
+              "status": "updated"
+            },
+            {
+              "id": "artist:dave-brubeck",
+              "name": "Dave Brubeck",
+              "status": "updated"
+            },
+            {
+              "id": "artist:diomedes-diaz",
+              "name": "Diomedes Díaz",
+              "status": "updated"
+            },
+            {
+              "id": "artist:dizzy-gillespie",
+              "name": "Dizzy Gillespie",
+              "status": "updated"
+            },
+            {
+              "id": "artist:dj-lag",
+              "name": "DJ Lag",
+              "status": "updated"
+            },
+            {
+              "id": "artist:dj-maphorisa",
+              "name": "DJ Maphorisa",
+              "status": "updated"
+            },
+            {
+              "id": "artist:dj-premier",
+              "name": "DJ Premier",
+              "status": "updated"
+            },
+            {
+              "id": "artist:dj-spinn",
+              "name": "DJ Spinn",
+              "status": "updated"
+            },
+            {
+              "id": "artist:dmitri-pokrovsky-ensemble",
+              "name": "Dmitri Pokrovsky Ensemble",
+              "status": "updated"
+            },
+            {
+              "id": "artist:don-caballero",
+              "name": "Don Caballero",
+              "status": "updated"
+            },
+            {
+              "id": "artist:duke-ellington",
+              "name": "Duke Ellington",
+              "status": "updated"
+            },
+            {
+              "id": "artist:eddie-fowlkes",
+              "name": "Eddie Fowlkes",
+              "status": "updated"
+            },
+            {
+              "id": "artist:emmylou-harris",
+              "name": "Emmylou Harris",
+              "status": "updated"
+            },
+            {
+              "id": "artist:fanfan-sega",
+              "name": "Fanfan",
+              "status": "updated"
+            },
+            {
+              "id": "artist:felipe-pinglo",
+              "name": "Felipe Pinglo Alva",
+              "status": "updated"
+            },
+            {
+              "id": "artist:firmin-viry",
+              "name": "Firmin Viry",
+              "status": "updated"
+            },
+            {
+              "id": "artist:francoise-hardy",
+              "name": "Françoise Hardy",
+              "status": "updated"
+            },
+            {
+              "id": "artist:frankie-knuckles",
+              "name": "Frankie Knuckles",
+              "status": "updated"
+            },
+            {
+              "id": "artist:freddie-aguilar",
+              "name": "Freddie Aguilar",
+              "status": "updated"
+            },
+            {
+              "id": "artist:freddy-quinn",
+              "name": "Freddy Quinn",
+              "status": "updated"
+            },
+            {
+              "id": "artist:genesis",
+              "name": "Genesis",
+              "status": "updated"
+            },
+            {
+              "id": "artist:george-jones",
+              "name": "George Jones",
+              "status": "updated"
+            },
+            {
+              "id": "artist:gucci-mane",
+              "name": "Gucci Mane",
+              "status": "updated"
+            },
+            {
+              "id": "artist:guy",
+              "name": "Guy",
+              "status": "updated"
+            },
+            {
+              "id": "artist:hank-williams",
+              "name": "Hank Williams",
+              "status": "updated"
+            },
+            {
+              "id": "artist:hardwell",
+              "name": "Hardwell",
+              "status": "updated"
+            },
+            {
+              "id": "artist:hariprasad-chaurasia",
+              "name": "Hariprasad Chaurasia",
+              "status": "updated"
+            },
+            {
+              "id": "artist:hazell-dean",
+              "name": "Hazell Dean",
+              "status": "updated"
+            },
+            {
+              "id": "artist:heera",
+              "name": "Heera",
+              "status": "updated"
+            },
+            {
+              "id": "artist:horace-silver",
+              "name": "Horace Silver",
+              "status": "updated"
+            },
+            {
+              "id": "artist:huun-huur-tu",
+              "name": "Huun-Huur-Tu",
+              "status": "updated"
+            },
+            {
+              "id": "artist:ibrahim-ferrer",
+              "name": "Ibrahim Ferrer",
+              "status": "updated"
+            },
+            {
+              "id": "artist:ik-dairo",
+              "name": "I.K. Dairo",
+              "status": "updated"
+            },
+            {
+              "id": "artist:infected-mushroom",
+              "name": "Infected Mushroom",
+              "status": "updated"
+            },
+            {
+              "id": "artist:insane-clown-posse",
+              "name": "Insane Clown Posse",
+              "status": "updated"
+            },
+            {
+              "id": "artist:inti-illimani",
+              "name": "Inti-Illimani",
+              "status": "updated"
+            },
+            {
+              "id": "artist:james-brown",
+              "name": "James Brown",
+              "status": "updated"
+            },
+            {
+              "id": "artist:jeff-mills",
+              "name": "Jeff Mills",
+              "status": "updated"
+            },
+            {
+              "id": "artist:joan-baez",
+              "name": "Joan Baez",
+              "status": "updated"
+            },
+            {
+              "id": "artist:joao-gilberto",
+              "name": "João Gilberto",
+              "status": "updated"
+            },
+            {
+              "id": "artist:johnny-cash",
+              "name": "Johnny Cash",
+              "status": "updated"
+            },
+            {
+              "id": "artist:joy-division",
+              "name": "Joy Division",
+              "status": "updated"
+            },
+            {
+              "id": "artist:juan-luis-guerra",
+              "name": "Juan Luis Guerra",
+              "status": "updated"
+            },
+            {
+              "id": "artist:kaigal-ool-khovalyg",
+              "name": "Kaigal-ool Khovalyg",
+              "status": "updated"
+            },
+            {
+              "id": "artist:kavinsky",
+              "name": "Kavinsky",
+              "status": "updated"
+            },
+            {
+              "id": "artist:ken-boothe",
+              "name": "Ken Boothe",
+              "status": "updated"
+            },
+            {
+              "id": "artist:kendrick-lamar",
+              "name": "Kendrick Lamar",
+              "status": "updated"
+            },
+            {
+              "id": "artist:kraftwerk",
+              "name": "Kraftwerk",
+              "status": "updated"
+            },
+            {
+              "id": "artist:krs-one",
+              "name": "KRS-One",
+              "status": "updated"
+            },
+            {
+              "id": "artist:kurtis-blow",
+              "name": "Kurtis Blow",
+              "status": "updated"
+            },
+            {
+              "id": "artist:la-mona-jimenez",
+              "name": "La Mona Jiménez",
+              "status": "updated"
+            },
+            {
+              "id": "artist:lee-scratch-perry",
+              "name": "Lee “Scratch” Perry",
+              "status": "updated"
+            },
+            {
+              "id": "artist:lefty-frizzell",
+              "name": "Lefty Frizzell",
+              "status": "updated"
+            },
+            {
+              "id": "artist:leonor-marzano",
+              "name": "Leonor Marzano",
+              "status": "updated"
+            },
+            {
+              "id": "artist:lord-flea",
+              "name": "Lord Flea",
+              "status": "updated"
+            },
+            {
+              "id": "artist:lord-fly",
+              "name": "Lord Fly",
+              "status": "updated"
+            },
+            {
+              "id": "artist:los-alegres-de-teran",
+              "name": "Los Alegres de Terán",
+              "status": "updated"
+            },
+            {
+              "id": "artist:lucinda-williams",
+              "name": "Lucinda Williams",
+              "status": "updated"
+            },
+            {
+              "id": "artist:madonna",
+              "name": "Madonna",
+              "status": "updated"
+            },
+            {
+              "id": "artist:mariza",
+              "name": "Mariza",
+              "status": "updated"
+            },
+            {
+              "id": "artist:markos-vamvakaris",
+              "name": "Markos Vamvakaris",
+              "status": "updated"
+            },
+            {
+              "id": "artist:maurice-ravel",
+              "name": "Maurice Ravel",
+              "status": "updated"
+            },
+            {
+              "id": "artist:mayhem",
+              "name": "Mayhem",
+              "status": "updated"
+            },
+            {
+              "id": "artist:natanael-cano",
+              "name": "Natanael Cano",
+              "status": "updated"
+            },
+            {
+              "id": "artist:neon-indian",
+              "name": "Neon Indian",
+              "status": "updated"
+            },
+            {
+              "id": "artist:oasis",
+              "name": "Oasis",
+              "status": "updated"
+            },
+            {
+              "id": "artist:ochieng-nelly-mengo",
+              "name": "Ochieng Nelly Mengo",
+              "status": "updated"
+            },
+            {
+              "id": "artist:oka",
+              "name": "Oka",
+              "status": "updated"
+            },
+            {
+              "id": "artist:ortega-mahraganat",
+              "name": "Ortega",
+              "status": "updated"
+            },
+            {
+              "id": "artist:paco-de-lucia",
+              "name": "Paco de Lucía",
+              "status": "updated"
+            },
+            {
+              "id": "artist:paraire-tomoana",
+              "name": "Paraire Tomoana",
+              "status": "updated"
+            },
+            {
+              "id": "artist:parvathy-baul",
+              "name": "Parvathy Baul",
+              "status": "updated"
+            },
+            {
+              "id": "artist:pastora-pavon",
+              "name": "Pastora Pavón",
+              "status": "updated"
+            },
+            {
+              "id": "artist:peter-alexander",
+              "name": "Peter Alexander",
+              "status": "updated"
+            },
+            {
+              "id": "artist:prince",
+              "name": "Prince",
+              "status": "updated"
+            },
+            {
+              "id": "artist:queen",
+              "name": "Queen",
+              "status": "updated"
+            },
+            {
+              "id": "artist:rafael-escalona",
+              "name": "Rafael Escalona",
+              "status": "updated"
+            },
+            {
+              "id": "artist:rhoma-irama",
+              "name": "Rhoma Irama",
+              "status": "updated"
+            },
+            {
+              "id": "artist:rhythm-and-sound",
+              "name": "Rhythm & Sound",
+              "status": "updated"
+            },
+            {
+              "id": "artist:richie-hawtin",
+              "name": "Richie Hawtin",
+              "status": "updated"
+            },
+            {
+              "id": "artist:rodrigo-bueno",
+              "name": "Rodrigo Bueno",
+              "status": "updated"
+            },
+            {
+              "id": "artist:ryan-cayabyab",
+              "name": "Ryan Cayabyab",
+              "status": "updated"
+            },
+            {
+              "id": "artist:sam-hui",
+              "name": "Sam Hui",
+              "status": "updated"
+            },
+            {
+              "id": "artist:serge-lebrasse",
+              "name": "Serge Lebrasse",
+              "status": "updated"
+            },
+            {
+              "id": "artist:shaaban-abdel-rahim",
+              "name": "Shaaban Abdel Rahim",
+              "status": "updated"
+            },
+            {
+              "id": "artist:snoop-dogg",
+              "name": "Snoop Dogg",
+              "status": "updated"
+            },
+            {
+              "id": "artist:stacey-pullen",
+              "name": "Stacey Pullen",
+              "status": "updated"
+            },
+            {
+              "id": "artist:stella-haskil",
+              "name": "Stella Haskil",
+              "status": "updated"
+            },
+            {
+              "id": "artist:stravinsky",
+              "name": "Igor Stravinsky",
+              "status": "updated"
+            },
+            {
+              "id": "artist:sunny-day-real-estate",
+              "name": "Sunny Day Real Estate",
+              "status": "updated"
+            },
+            {
+              "id": "artist:talal-maddah",
+              "name": "Talal Maddah",
+              "status": "updated"
+            },
+            {
+              "id": "artist:te-puea-herangi",
+              "name": "Te Puea Hērangi",
+              "status": "updated"
+            },
+            {
+              "id": "artist:terem-quartet",
+              "name": "Terem Quartet",
+              "status": "updated"
+            },
+            {
+              "id": "artist:the-beatles",
+              "name": "The Beatles",
+              "status": "updated"
+            },
+            {
+              "id": "artist:ti-frere",
+              "name": "Ti Frère",
+              "status": "updated"
+            },
+            {
+              "id": "artist:tonico-e-tinoco",
+              "name": "Tonico & Tinoco",
+              "status": "updated"
+            },
+            {
+              "id": "artist:trouble-funk",
+              "name": "Trouble Funk",
+              "status": "updated"
+            },
+            {
+              "id": "artist:tujamo",
+              "name": "Tujamo",
+              "status": "updated"
+            },
+            {
+              "id": "artist:vasilis-tsitsanis",
+              "name": "Vasilis Tsitsanis",
+              "status": "updated"
+            },
+            {
+              "id": "artist:vivaldi",
+              "name": "Antonio Vivaldi",
+              "status": "updated"
+            },
+            {
+              "id": "artist:weather-report",
+              "name": "Weather Report",
+              "status": "updated"
+            },
+            {
+              "id": "artist:wiley",
+              "name": "Wiley",
+              "status": "updated"
+            },
+            {
+              "id": "artist:woody-guthrie",
+              "name": "Woody Guthrie",
+              "status": "updated"
+            },
+            {
+              "id": "artist:zhanna-bichevskaya",
+              "name": "Zhanna Bichevskaya",
+              "status": "updated"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/DATA.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/GRAPH.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/audits/artist-descriptions-001.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/alaap.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/albert-ayler.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/alejo-duran.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/amalia-rodrigues.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/anatoli-kuular.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/anibal-troilo.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/anita-mui.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/antonio-carlos-jobim.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/apirana-ngata.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/asha-bhosle.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/banda-el-recodo.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/banda-la-costena.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/banda-los-guamuchilenos.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/black-flag.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/bulimundo.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/camaron-de-la-isla.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/carl-craig.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/carlos-do-carmo.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/carlos-gardel.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/caterina-valente.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/cecil-taylor.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/chabuca-granda.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/charlie-parker.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/chet-baker.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/claude-francois.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/clifford-brown.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/count-lasher.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/craig-david.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/daddy-yankee.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/danyel-waro.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/dave-brubeck.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/diomedes-diaz.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/dizzy-gillespie.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/dj-lag.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/dj-maphorisa.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/dj-premier.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/dj-spinn.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/dmitri-pokrovsky-ensemble.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/don-caballero.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/duke-ellington.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/eddie-fowlkes.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/emmylou-harris.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/fanfan-sega.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/felipe-pinglo.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/firmin-viry.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/francoise-hardy.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/frankie-knuckles.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/freddie-aguilar.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/freddy-quinn.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/genesis.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/george-jones.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/gucci-mane.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/guy.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/hank-williams.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/hardwell.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/hariprasad-chaurasia.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/hazell-dean.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/heera.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/horace-silver.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/huun-huur-tu.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/ibrahim-ferrer.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/ik-dairo.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/infected-mushroom.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/insane-clown-posse.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/inti-illimani.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/james-brown.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/jeff-mills.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/joan-baez.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/joao-gilberto.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/johnny-cash.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/joy-division.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/juan-luis-guerra.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/kaigal-ool-khovalyg.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/kavinsky.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/ken-boothe.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/kendrick-lamar.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/kraftwerk.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/krs-one.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/kurtis-blow.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/la-mona-jimenez.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/lee-scratch-perry.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/lefty-frizzell.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/leonor-marzano.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/lord-flea.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/lord-fly.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/los-alegres-de-teran.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/lucinda-williams.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/madonna.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/mariza.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/markos-vamvakaris.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/maurice-ravel.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/mayhem.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/natanael-cano.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/neon-indian.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/oasis.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/ochieng-nelly-mengo.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/oka.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/ortega-mahraganat.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/paco-de-lucia.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/paraire-tomoana.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/parvathy-baul.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/pastora-pavon.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/peter-alexander.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/prince.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/queen.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/rafael-escalona.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/rhoma-irama.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/rhythm-and-sound.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/richie-hawtin.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/rodrigo-bueno.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/ryan-cayabyab.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/sam-hui.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/serge-lebrasse.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/shaaban-abdel-rahim.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/snoop-dogg.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/stacey-pullen.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/stella-haskil.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/stravinsky.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/sunny-day-real-estate.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/talal-maddah.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/te-puea-herangi.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/terem-quartet.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/the-beatles.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/ti-frere.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/tonico-e-tinoco.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/trouble-funk.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/tujamo.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/vasilis-tsitsanis.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/vivaldi.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/weather-report.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/wiley.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/woody-guthrie.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/artist/zhanna-bichevskaya.md"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.de.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.es.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.fr.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.it.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.json"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graph.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/graphLocale.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/data/review-status.json"
+            },
+            {
+              "status": "M",
+              "path": "src/graph/timeline.ts"
+            }
+          ]
+        },
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "A",
+              "path": "app/[locale]/artists/[...entry]/page.tsx"
+            },
+            {
+              "status": "A",
+              "path": "app/[locale]/genres/[...entry]/page.tsx"
+            },
+            {
+              "status": "A",
+              "path": "app/[locale]/history/[...entry]/page.tsx"
+            },
+            {
+              "status": "A",
+              "path": "app/[locale]/instruments/[...entry]/page.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/App.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/ExplorerContext.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/design-system/explorer/DetailPanel.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/design-system/explorer/DetailPanel.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/design-system/navigation/ExplorerLinks.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/design-system/navigation/ExplorerLinks.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/design-system/open-data/OpenDataChangelog.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/design-system/open-data/OpenDataInteractions.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/explorerLocation.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/explorerLocation.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/routePage.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/i18n/routePage.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/socialMetadata.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Home.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/stories/Navigation.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "src/timelineOrders.test.ts"
+            }
+          ]
+        },
+        {
+          "category": "site",
+          "files": [
+            {
+              "status": "M",
+              "path": "site/src/components/App.tsx"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/ISSUE_TEMPLATE/graph-contribution.yml"
+            },
+            {
+              "status": "M",
+              "path": ".github/agents/graph-researcher.agent.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/graph-edit/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/graph-translate/SKILL.md"
+            },
+            {
+              "status": "M",
+              "path": ".github/skills/graph-validate/SKILL.md"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/EXPLORER.md"
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "files": [
+            {
+              "status": "M",
+              "path": ".gitignore"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [],
+          "updated": [
+            "artist:alaap",
+            "artist:albert-ayler",
+            "artist:alejo-duran",
+            "artist:amalia-rodrigues",
+            "artist:anatoli-kuular",
+            "artist:anibal-troilo",
+            "artist:anita-mui",
+            "artist:antonio-carlos-jobim",
+            "artist:apirana-ngata",
+            "artist:asha-bhosle",
+            "artist:banda-el-recodo",
+            "artist:banda-la-costena",
+            "artist:banda-los-guamuchilenos",
+            "artist:black-flag",
+            "artist:bulimundo",
+            "artist:camaron-de-la-isla",
+            "artist:carl-craig",
+            "artist:carlos-do-carmo",
+            "artist:carlos-gardel",
+            "artist:caterina-valente",
+            "artist:cecil-taylor",
+            "artist:chabuca-granda",
+            "artist:charlie-parker",
+            "artist:chet-baker",
+            "artist:claude-francois",
+            "artist:clifford-brown",
+            "artist:count-lasher",
+            "artist:craig-david",
+            "artist:daddy-yankee",
+            "artist:danyel-waro",
+            "artist:dave-brubeck",
+            "artist:diomedes-diaz",
+            "artist:dizzy-gillespie",
+            "artist:dj-lag",
+            "artist:dj-maphorisa",
+            "artist:dj-premier",
+            "artist:dj-spinn",
+            "artist:dmitri-pokrovsky-ensemble",
+            "artist:don-caballero",
+            "artist:duke-ellington",
+            "artist:eddie-fowlkes",
+            "artist:emmylou-harris",
+            "artist:fanfan-sega",
+            "artist:felipe-pinglo",
+            "artist:firmin-viry",
+            "artist:francoise-hardy",
+            "artist:frankie-knuckles",
+            "artist:freddie-aguilar",
+            "artist:freddy-quinn",
+            "artist:genesis",
+            "artist:george-jones",
+            "artist:gucci-mane",
+            "artist:guy",
+            "artist:hank-williams",
+            "artist:hardwell",
+            "artist:hariprasad-chaurasia",
+            "artist:hazell-dean",
+            "artist:heera",
+            "artist:horace-silver",
+            "artist:huun-huur-tu",
+            "artist:ibrahim-ferrer",
+            "artist:ik-dairo",
+            "artist:infected-mushroom",
+            "artist:insane-clown-posse",
+            "artist:inti-illimani",
+            "artist:james-brown",
+            "artist:jeff-mills",
+            "artist:joan-baez",
+            "artist:joao-gilberto",
+            "artist:johnny-cash",
+            "artist:joy-division",
+            "artist:juan-luis-guerra",
+            "artist:kaigal-ool-khovalyg",
+            "artist:kavinsky",
+            "artist:ken-boothe",
+            "artist:kendrick-lamar",
+            "artist:kraftwerk",
+            "artist:krs-one",
+            "artist:kurtis-blow",
+            "artist:la-mona-jimenez",
+            "artist:lee-scratch-perry",
+            "artist:lefty-frizzell",
+            "artist:leonor-marzano",
+            "artist:lord-flea",
+            "artist:lord-fly",
+            "artist:los-alegres-de-teran",
+            "artist:lucinda-williams",
+            "artist:madonna",
+            "artist:mariza",
+            "artist:markos-vamvakaris",
+            "artist:maurice-ravel",
+            "artist:mayhem",
+            "artist:natanael-cano",
+            "artist:neon-indian",
+            "artist:oasis",
+            "artist:ochieng-nelly-mengo",
+            "artist:oka",
+            "artist:ortega-mahraganat",
+            "artist:paco-de-lucia",
+            "artist:paraire-tomoana",
+            "artist:parvathy-baul",
+            "artist:pastora-pavon",
+            "artist:peter-alexander",
+            "artist:prince",
+            "artist:queen",
+            "artist:rafael-escalona",
+            "artist:rhoma-irama",
+            "artist:rhythm-and-sound",
+            "artist:richie-hawtin",
+            "artist:rodrigo-bueno",
+            "artist:ryan-cayabyab",
+            "artist:sam-hui",
+            "artist:serge-lebrasse",
+            "artist:shaaban-abdel-rahim",
+            "artist:snoop-dogg",
+            "artist:stacey-pullen",
+            "artist:stella-haskil",
+            "artist:stravinsky",
+            "artist:sunny-day-real-estate",
+            "artist:talal-maddah",
+            "artist:te-puea-herangi",
+            "artist:terem-quartet",
+            "artist:the-beatles",
+            "artist:ti-frere",
+            "artist:tonico-e-tinoco",
+            "artist:trouble-funk",
+            "artist:tujamo",
+            "artist:vasilis-tsitsanis",
+            "artist:vivaldi",
+            "artist:weather-report",
+            "artist:wiley",
+            "artist:woody-guthrie",
+            "artist:zhanna-bichevskaya"
+          ],
+          "removed": []
+        },
+        "edges": {
+          "added": [],
+          "updated": [],
+          "removed": []
+        }
+      }
+    },
+    {
       "commit": "45a2c45ab5c3580ebe954dddbbc78b890a3f66ed",
       "parent": "1d7fb97f838b07005190cde2bbf20101d30f217b",
       "date": "2026-11-14T18:03:06-05:00",
