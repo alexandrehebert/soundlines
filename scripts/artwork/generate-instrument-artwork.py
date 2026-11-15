@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
-ROOT = REPO / 'apps/web/public'
+ROOT = REPO / 'packages/media/public'
 INSTRUMENTS = {node['id'][len('instrument:'):]
                for node in json.loads((REPO / 'packages/catalogue/data/graph.json').read_text())['nodes']
                if node['type'] == 'instrument'}

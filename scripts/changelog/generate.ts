@@ -10,6 +10,8 @@ const markdownPath = 'CHANGELOG.md'
 const auditPath = 'docs/changelog/changelog.json'
 const publicDir = 'apps/web/public'
 const legacyPublicDir = 'public'
+const mediaDir = 'packages/media/public'
+const publicDirectories = [legacyPublicDir, publicDir, mediaDir]
 const assetPath = `${publicDir}/open-data-changelog.json`
 // Exclude the old audit path when replaying history, including the move itself.
 const generated = new Set([markdownPath, auditPath, assetPath, 'docs/changelog.json', 'public/open-data-changelog.json'])
@@ -22,7 +24,7 @@ const overlayFile = (path: string) => {
   const file = catalogueFileName(path)
   return file && /^graph\.[^.]+\.json$/.test(file) ? file : undefined
 }
-const publicFile = (path: string) => /^(?:apps\/web\/)?public\/(.+)$/.exec(path)?.[1]
+const publicFile = (path: string) => /^(?:(?:apps\/web|packages\/media)\/)?public\/(.+)$/.exec(path)?.[1]
 const mediaFile = (path: string) => /^(genre-previews|audio|loops|instrument-[^/]+)\/(.+)\.[^.]+$/.exec(publicFile(path) ?? '')
 type Delta = { added: string[]; updated: string[]; removed: string[] }
 type FileChange = { status: string; path: string }
@@ -206,13 +208,17 @@ export function buildChangelog(cwd = process.cwd()) {
   const publicFilesAt = (commit: string | null) => {
     const files = new Map<string, string>()
     if (!commit) return files
-    const entries = git('ls-tree', '-r', '--full-tree', '-z', commit, '--', publicDir, legacyPublicDir)
+    const entries = git('ls-tree', '-r', '--full-tree', '-z', commit, '--', ...publicDirectories)
+    const priorities = new Map<string, number>()
     for (const entry of entries.split('\0')) {
       const separator = entry.indexOf('\t')
       if (separator === -1) continue
       const path = entry.slice(separator + 1)
       const name = publicFile(path)
-      if (name && (!files.has(name) || path.startsWith(`${publicDir}/`))) {
+      if (!name) continue
+      const priority = publicDirectories.indexOf(path.slice(0, -name.length - 1))
+      if (priority > (priorities.get(name) ?? -1)) {
+        priorities.set(name, priority)
         files.set(name, entry.slice(0, separator).split(' ')[2])
       }
     }

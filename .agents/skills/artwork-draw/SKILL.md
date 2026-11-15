@@ -1,6 +1,6 @@
 ---
 name: artwork-draw
-description: 'Draw or redraw the four SVGs of a Soundlines instrument (apps/web/public/instrument-icons, -banners, -avatars, -header-backgrounds) from an approved brief, preferably as a master in scripts/artwork/generate-instrument-artwork.py, following the house style (canvases, family palette, -9° tilt, header reveal mask, mask-safe icons). Use when adding artwork for a new instrument node, redrawing an inaccurate one, fixing artwork validation failures, or applying artwork review findings.'
+description: 'Draw or redraw the four SVGs of a Soundlines instrument (packages/media/public/instrument-icons, -banners, -avatars, -header-backgrounds) from an approved brief, preferably as a master in scripts/artwork/generate-instrument-artwork.py, following the house style (canvases, family palette, -9° tilt, header reveal mask, mask-safe icons). Use when adding artwork for a new instrument node, redrawing an inaccurate one, fixing artwork validation failures, or applying artwork review findings.'
 argument-hint: 'Instrument slug, plus validation or review findings to address'
 ---
 

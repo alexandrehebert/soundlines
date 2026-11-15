@@ -1,4 +1,6 @@
 import { existsSync } from 'node:fs'
+import { join } from 'node:path'
+import { mediaDirectory } from '@soundlines/media/source'
 import { describe, expect, it } from 'vitest'
 import rawGraph from '../data/graph.json'
 import { buildIndex, lineageHighlight } from '@soundlines/catalogue/graph'
@@ -31,7 +33,7 @@ describe('Soundtrails', () => {
   it.each(SOUNDTRAILS.map((trail) => [trail.id, trail] as const))('%s has a preview and listening hints at every stop', (_, trail) => {
     for (const stop of resolveSoundtrail(index, trail)) {
       const slug = stop.node.id.slice('genre:'.length)
-      expect(existsSync(new URL(`../../../apps/web/public/genre-previews/${slug}.m4a`, import.meta.url)), slug).toBe(true)
+      expect(existsSync(join(mediaDirectory, `genre-previews/${slug}.m4a`)), slug).toBe(true)
       expect(stop.keyArtists.length, slug).toBeGreaterThan(0)
       expect(stop.keyArtists.length).toBeLessThanOrEqual(3)
       if (stop.anthem) expect(stop.anthem.artist?.type ?? 'artist').toBe('artist')

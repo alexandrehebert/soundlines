@@ -4,15 +4,17 @@
   "type": "module",
   "version": "0.1.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "media:stage": "node scripts/stage-media.mjs",
+    "dev": "node scripts/stage-media.mjs && next dev",
+    "build": "node scripts/stage-media.mjs && next build",
+    "start": "node scripts/stage-media.mjs && next start",
     "typecheck": "tsc --noEmit -p tsconfig.build.json"
   },
   "dependencies": {
     "@modelcontextprotocol/server": "2.4.0",
     "@soundlines/catalogue": "workspace:*",
     "@soundlines/design-tokens": "workspace:*",
+    "@soundlines/media": "workspace:*",
     "@soundlines/project-config": "workspace:*",
     "@soundlines/ui-web": "workspace:*",
     "@vercel/analytics": "2.0.1",

@@ -78,6 +78,9 @@ importers:
       '@soundlines/catalogue':
         specifier: workspace:*
         version: link:../../packages/catalogue
+      '@soundlines/media':
+        specifier: workspace:*
+        version: link:../../packages/media
       '@soundlines/project-config':
         specifier: workspace:*
         version: link:../../packages/project-config
@@ -124,6 +127,9 @@ importers:
       '@soundlines/catalogue':
         specifier: workspace:*
         version: link:../../packages/catalogue
+      '@soundlines/media':
+        specifier: workspace:*
+        version: link:../../packages/media
       '@soundlines/project-config':
         specifier: workspace:*
         version: link:../../packages/project-config
@@ -179,6 +185,9 @@ importers:
       '@soundlines/design-tokens':
         specifier: workspace:*
         version: link:../../packages/design-tokens
+      '@soundlines/media':
+        specifier: workspace:*
+        version: link:../../packages/media
       '@soundlines/project-config':
         specifier: workspace:*
         version: link:../../packages/project-config
@@ -250,13 +259,19 @@ importers:
         specifier: 5.1.0
         version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.1)(vite@8.3.8(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0))
 
-  packages/catalogue: {}
+  packages/catalogue:
+    devDependencies:
+      '@soundlines/media':
+        specifier: workspace:*
+        version: link:../media
 
   packages/design-tokens:
     dependencies:
       '@soundlines/catalogue':
         specifier: workspace:*
         version: link:../catalogue
+
+  packages/media: {}
 
   packages/project-config: {}
 

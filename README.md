@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./apps/web/public/favicon.svg" width="96" height="96" alt="Soundlines multicolored waveform logo" />
+  <img src="./packages/media/public/favicon.svg" width="96" height="96" alt="Soundlines multicolored waveform logo" />
 </p>
 
 <h1 align="center">Soundlines</h1>

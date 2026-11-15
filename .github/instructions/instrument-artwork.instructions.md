@@ -1,13 +1,13 @@
 ---
 description: 'Rules for Soundlines instrument artwork SVGs, their generator and visual briefs.'
-applyTo: 'apps/web/public/instrument-*/**,scripts/artwork/**,docs/artwork/**,apps/web/src/stories/fixtures/instrument-artwork-v1/**'
+applyTo: 'packages/media/public/instrument-*/**,scripts/artwork/**,docs/artwork/**,apps/web/src/stories/fixtures/instrument-artwork-v1/**'
 ---
 # Instrument artwork
 
 - Pipeline, one owner per step: brief (`artwork-briefer`, `artwork-brief` skill) → draw
   (`artwork-illustrator`, `artwork-draw`) → deterministic gate (`artwork-validator`, `artwork-validate`)
   → ship decision (`artwork-reviewer`, `artwork-review`) → human sign-off in Storybook.
-- Every `instrument:<slug>` node has exactly four files named `<slug>.svg` in `apps/web/public/instrument-icons`,
+- Every `instrument:<slug>` node has exactly four files named `<slug>.svg` in `packages/media/public/instrument-icons`,
   `-banners`, `-avatars` and `-header-backgrounds`; canvases, palette and icon rules are in
   `.agents/skills/artwork-draw/references/style-guide.md`.
 - Instruments in the `ART` dict of `scripts/artwork/generate-instrument-artwork.py` are generated: change

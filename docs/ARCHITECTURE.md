@@ -15,6 +15,7 @@ Paths in prose and commands are relative to the repository root.
 | [packages/design-tokens](../packages/design-tokens/) | Platform-independent entity and family colors |
 | [packages/project-config](../packages/project-config/) | Shared project URLs and link helpers |
 | [packages/ui-web](../packages/ui-web/) | Reusable React DOM controls, panels, and component stories |
+| [packages/media](../packages/media/) | Shared artwork, audio, favicons, and their published catalogue manifest |
 
 pnpm links workspace packages through their package exports. Turborepo uses
 these dependencies to order builds and type checks with one root lockfile.
@@ -23,9 +24,11 @@ The atlas routes, timeline projections, and interface translations live in
 `packages/catalogue/data/`. History tools also resolve the previous catalogue
 path when reading older Git revisions.
 
-`apps/web/public/` owns the tracked artwork, production audio, and other
-static assets. Next.js serves them directly, and Storybook and the companion
-read from the same directory.
+`packages/media/public/` owns the shared artwork, audio, and favicons.
+Next.js stages those files alongside its app-specific assets in
+`apps/web/public/`, preserving their public URLs. Storybook and the companion
+read the shared files from the media package when they build. The media package
+can publish the same files and manifest independently of the apps.
 
 Catalogue and token packages have no browser or Next.js dependencies. A
 future Expo app can use them with its own screen components, navigation, and

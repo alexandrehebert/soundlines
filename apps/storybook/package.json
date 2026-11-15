@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@soundlines/catalogue": "workspace:*",
+    "@soundlines/media": "workspace:*",
     "@soundlines/project-config": "workspace:*",
     "@soundlines/ui-web": "workspace:*",
     "@soundlines/web": "workspace:*",

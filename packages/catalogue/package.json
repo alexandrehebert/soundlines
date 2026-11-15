@@ -2,6 +2,9 @@
   "name": "@soundlines/catalogue",
   "private": true,
   "type": "module",
+  "devDependencies": {
+    "@soundlines/media": "workspace:*"
+  },
   "exports": {
     "./types": "./src/types.ts",
     "./graph": "./src/graph.ts",

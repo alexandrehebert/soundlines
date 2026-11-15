@@ -413,7 +413,7 @@ under `LOOP_STAGE_ROOT`. Stop the server you started after testing:
 bash .agents/skills/loop-produce/scripts/ace-server.sh stop
 node .agents/skills/loop-brief/scripts/check-brief.mjs docs/loops/briefs/turntable-hip-hop.json
 "$ACESTEP_PYTHON" .agents/skills/loop-validate/scripts/check-loop.py \
-  docs/loops/briefs/turntable-hip-hop.json apps/web/public/loops/turntable-hip-hop.wav \
+  docs/loops/briefs/turntable-hip-hop.json packages/media/public/loops/turntable-hip-hop.wav \
   --png-dir "$LOOP_STAGE_ROOT/turntable-hip-hop-install-check/png"
 ```
 

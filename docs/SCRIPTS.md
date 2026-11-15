@@ -6,9 +6,9 @@ Run every script from the repository root. Executable code stays in `scripts/` o
 | --- | --- | --- |
 | [scripts/graph/](../scripts/graph) | Graph data tooling. `reviewStatus.ts` rebuilds `packages/catalogue/data/review-status.json` from `docs/graph/evidence`. | `pnpm review-status` |
 | [scripts/changelog/](../scripts/changelog) | Rebuilds the readable `CHANGELOG.md` and full file/entity audit `docs/changelog/changelog.json` and asset history `apps/web/public/open-data-changelog.json` from committed Git history. See [maintenance and automation](./DEVELOPMENT.md#changelog). | `pnpm changelog` (`-- --check` to verify) |
-| [loops/briefs/](./loops/briefs) | Genre loop briefs (`<slug>.json`) and selection reports (`<slug>.selection.json`) for the genre loops shipped as `apps/web/public/loops/<slug>.wav`. | See the loop skills below |
-| [previews/briefs/](./previews/briefs) | Genre briefs for the 10-second ACE-Step previews in `apps/web/public/genre-previews`. | `node .agents/skills/preview-produce/scripts/render-ace-previews.mjs [genre ...]` |
-| [scripts/artwork/](../scripts/artwork) | Generates the instrument SVG artwork in `apps/web/public/instrument-*` for the instruments drawn as code (`ART`), with visual briefs in `docs/artwork/briefs/<slug>.json`. | `python3 scripts/artwork/generate-instrument-artwork.py [slug ...] [--check]` |
+| [loops/briefs/](./loops/briefs) | Genre loop briefs (`<slug>.json`) and selection reports (`<slug>.selection.json`) for the genre loops shipped as `packages/media/public/loops/<slug>.wav`. | See the loop skills below |
+| [previews/briefs/](./previews/briefs) | Genre briefs for the 10-second ACE-Step previews in `packages/media/public/genre-previews`. | `node .agents/skills/preview-produce/scripts/render-ace-previews.mjs [genre ...]` |
+| [scripts/artwork/](../scripts/artwork) | Generates the instrument SVG artwork in `packages/media/public/instrument-*` for the instruments drawn as code (`ART`), with visual briefs in `docs/artwork/briefs/<slug>.json`. | `python3 scripts/artwork/generate-instrument-artwork.py [slug ...] [--check]` |
 
 Tools used by the agent skills stay bundled with their skill in `.agents/skills/<skill>/scripts`:
 

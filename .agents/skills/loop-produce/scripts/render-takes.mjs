@@ -55,7 +55,7 @@ if (profile === 'arrangement') {
   sourceProvenance = JSON.parse(readFileSync(join(stage, 'source.json'), 'utf8'))
   const digest = (path) => createHash('sha256').update(readFileSync(path)).digest('hex')
   if (sourceProvenance.brief_sha256 !== digest(briefPath)
-      || sourceProvenance.source_sha256 !== digest(join('apps/web', brief.arrangement.source))
+      || sourceProvenance.source_sha256 !== digest(join('packages/media', brief.arrangement.source))
       || sourceProvenance.conditioning_sha256 !== digest(join(stage, 'source.wav'))) {
     throw new Error('Arrangement source or brief changed; prepare conditioning again.')
   }

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@soundlines/catalogue": "workspace:*",
+    "@soundlines/media": "workspace:*",
     "@soundlines/project-config": "workspace:*",
     "lucide-react": "1.65.0",
     "react": "19.3.1",

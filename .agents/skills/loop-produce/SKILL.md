@@ -1,6 +1,6 @@
 ---
 name: loop-produce
-description: 'Render a pro-quality seamless genre loop with the local ACE-Step 1.5 install from an approved brief (docs/loops/briefs/<slug>.json): server lifecycle, two-phase 4B-LM planning + XL SFT DiT rendering at 80 steps, take screening, grid-snapped loop extraction and export to apps/web/public/loops/<slug>.wav. Use when generating, re-rendering, retaking or drafting an audio loop for a genre, or when ACE-Step renders fail, run out of memory or use the wrong model.'
+description: 'Render a pro-quality seamless genre loop with the local ACE-Step 1.5 install from an approved brief (docs/loops/briefs/<slug>.json): server lifecycle, two-phase 4B-LM planning + XL SFT DiT rendering at 80 steps, take screening, grid-snapped loop extraction and export to packages/media/public/loops/<slug>.wav. Use when generating, re-rendering, retaking or drafting an audio loop for a genre, or when ACE-Step renders fail, run out of memory or use the wrong model.'
 argument-hint: 'Brief slug to render, e.g. "turntable-hip-hop", optionally "draft" or extra seeds'
 ---
 
@@ -41,7 +41,7 @@ ACESTEP_HOME is under `/tmp` or `/private/tmp`, warn the user: macOS purges it o
    Move FAIL takes to `$STAGE/rejected/` (with the reason) so the extractor ignores them. If fewer
    than two takes survive, render extra seeds (`render-takes.mjs … final <seed> …` after planning them).
 5. **Extract** — `$PY $S/extract-loop.py docs/loops/briefs/<slug>.json $STAGE/takes <asset> docs/loops/briefs/<slug>.selection.json`
-   where `<asset>` is the brief's `asset` resolved from `apps/web/`, or `apps/web/public/loops/<slug>.wav`.
+   where `<asset>` is the brief's `asset` resolved from `packages/media/`, or `packages/media/public/loops/<slug>.wav`.
 6. **Stop the server** — `$S/ace-server.sh stop` (it holds ~22 GB).
 7. **Hand off** to `loop-validate` (loop mode on the asset) and then `loop-review`, passing `$STAGE`.
 

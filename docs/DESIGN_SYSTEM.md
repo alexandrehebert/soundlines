@@ -20,7 +20,7 @@ which declares the Tailwind source directories and imports the foundation styles
 3. Add or update a Storybook story that shows the changed UI using the production
    component. Give reusable components standalone stories and use screen stories
    for composition-specific parts. Show relevant default, responsive, theme, and
-   interaction states. Use `publicAsset()` for files in `apps/web/public/` so stories can
+   interaction states. Use `publicAsset()` for published media and app-specific assets so stories can
    work in the public catalogue under its URL prefix.
 4. Add or update a behavior test for changed interactions or accessibility
    contracts. Place component tests beside their source. Use Vitest with React

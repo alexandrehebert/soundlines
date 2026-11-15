@@ -4,6 +4,14 @@ node_modules
 next-env.d.ts
 dist
 /apps/companion/dist-pages/
+# Published copies of packages/media in the Next.js app
+/apps/web/public/favicon.svg
+/apps/web/public/favicon-light.svg
+/apps/web/public/genre-previews/
+/apps/web/public/genre-samples/
+/apps/web/public/instrument-*/
+/apps/web/public/loops/
+/apps/web/public/media-manifest.json
 storybook-static
 _site
 .turbo

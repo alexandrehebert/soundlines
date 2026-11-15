@@ -1,4 +1,6 @@
 import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
+import { mediaDirectory } from '@soundlines/media/source'
 import { describe, expect, it } from 'vitest'
 import { ARTIST_EDGE_COLORS, chartColor, FAMILY_COLORS, INSTRUMENT_EDGE_COLORS, LINEAGE_EDGE_COLORS, NODE_TYPE_COLORS } from './theme.ts'
 
@@ -96,7 +98,7 @@ describe('light theme brand mark', () => {
   })
 
   it('applies the light palette to the header and the matching static favicon', () => {
-    const favicon = readFileSync(new URL('../public/favicon-light.svg', import.meta.url), 'utf8')
+    const favicon = readFileSync(join(mediaDirectory, 'favicon-light.svg'), 'utf8')
     const storyCss = readFileSync(new URL('./stories/Favicon.css', import.meta.url), 'utf8')
     expect(css).toContain('[data-soundlines-mark] > circle {')
     expect(css).toContain('[data-soundlines-mark] path[stroke="#22d3ee"] { stroke: var(--soundlines-mark-light-blue); }')

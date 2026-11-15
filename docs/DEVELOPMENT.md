@@ -32,8 +32,18 @@ root before switching the production project. Check a localized atlas route,
 Put local Next.js environment variables in `apps/web/.env.local`. If you
 already have a root `.env.local`, move the Next.js settings into the app's file.
 
-Edit artwork and audio in `apps/web/public/`. Next.js serves that directory
-directly at the site's base URL.
+Edit shared artwork, audio, and favicons in `packages/media/public/`. The Next.js
+commands stage them in `apps/web/public/` before serving them at the site's base
+URL. If you edit media while Next.js is running, refresh the published copies
+with `pnpm --filter @soundlines/web media:stage`.
+
+`pnpm build:media` creates a static publishing directory in
+`packages/media/dist/`. Its `media-manifest.json` lists genre previews and
+instrument artwork by catalogue node ID, and loops by asset slug. Entries have a
+relative URL path, content type, and byte size. Resolve those paths against the
+manifest URL. The atlas serves the manifest at `/media-manifest.json`, and
+GitHub Pages publishes it at `/soundlines/media/media-manifest.json`.
+TypeScript clients can import its type from `@soundlines/media/manifest`.
 
 ## Git hooks
 
@@ -116,7 +126,7 @@ provides links without JavaScript; the app link opens the selected language.
 | [apps/companion/src/content.ts](../apps/companion/src/content.ts) | Page, workflow and example types; resolves `{figure}` placeholders |
 | [apps/companion/src/locales/](../apps/companion/src/locales/) | English, French, German, Italian and Spanish page content and interface text |
 | [apps/companion/scripts/stats.ts](../apps/companion/scripts/stats.ts) | Figures shown on the companion, computed at build time from the graph, evidence, assets, agents and skills |
-| [apps/companion/src/components/](../apps/companion/src/components/) | Page layout, workflow diagrams, examples and the artwork and loop samples taken from `apps/web/public/` |
+| [apps/companion/src/components/](../apps/companion/src/components/) | Page layout, workflow diagrams, examples and media bundled from `packages/media/public/` |
 | [apps/companion/src/components/Previews.tsx](../apps/companion/src/components/Previews.tsx) | Small preview of what each workflow step produces, ending with the real result (app screenshot, artwork, loop) |
 | [apps/companion/src/components/blueprint.ts](../apps/companion/src/components/blueprint.ts) | Extracts the saxophone's generated outline, canvas and curve handles for the vector sketch |
 | [apps/companion/src/assets/screens/](../apps/companion/src/assets/screens/) | App screenshots per locale used as final results; retake them when the explorer UI changes noticeably |
@@ -234,12 +244,12 @@ The companion workflow also publishes the full catalogue in browse-only mode at
 <https://alexandrehebert.github.io/soundlines/storybook/>, linked from the
 "How it's built" page. `pnpm build-storybook:public` builds into
 `apps/storybook/dist/public/` with `STORYBOOK_PUBLIC=1`.
-`pnpm build:pages` assembles the companion and public Storybook into
+`pnpm build:pages` assembles the companion, public Storybook, and shared media into
 `apps/companion/dist-pages/`. Both Storybook builds use the same stories and static assets configured
 in [.storybook/main.ts](../apps/storybook/.storybook/main.ts). In the public build,
 [.storybook/manager.ts](../apps/storybook/.storybook/manager.ts) hides the addon panel,
 toolbar and shortcuts. Because it is served below `/soundlines/storybook/`,
-components must build URLs to files in `apps/web/public/` with `publicAsset()` from
+components must build URLs to published media and app-specific assets with `publicAsset()` from
 [src/publicAsset.ts](../apps/web/src/publicAsset.ts), never a bare `/path`. Preview it
 with `pnpm preview:site --outDir dist-pages` and open `/soundlines/storybook/`.
 
@@ -254,7 +264,7 @@ Drag the header down to dismiss Modal Panel, Timeline Options, Search, or Soundt
 and collapses or closes on a downward swipe. Its gesture and scroll behavior are
 covered by **Screens / Explorer / Mobile Detail Swipes**.
 
-The official [dark favicon](../apps/web/public/favicon.svg) and [light favicon](../apps/web/public/favicon-light.svg)
+The official [dark favicon](../packages/media/public/favicon.svg) and [light favicon](../packages/media/public/favicon-light.svg)
 share the same still waveform frame. The app selects the favicon and header
 palette for its theme; the dark asset is also used by the companion site and
 Storybook. The **Foundations / Favicon** story shows both still variants and

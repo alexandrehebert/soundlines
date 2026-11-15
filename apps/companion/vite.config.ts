@@ -4,7 +4,7 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import { PROJECT_SITE_URL } from '@soundlines/project-config'
-import { publicMediaDirectory } from '@soundlines/project-config/public-media'
+import { mediaDirectory } from '@soundlines/media/source'
 import { siteStats } from './scripts/stats.ts'
 import { wavPeaks } from './scripts/waveform.ts'
 
@@ -19,12 +19,12 @@ export default defineConfig({
   publicDir: false,
   plugins: [react(), tailwindcss()],
   resolve: {
-    alias: { '#media': publicMediaDirectory },
+    alias: { '#media': mediaDirectory },
   },
   // Figures shown on the companion; only these numbers reach the bundle, not the graph itself.
   define: {
     __SITE_STATS__: JSON.stringify(siteStats()),
-    __LOOP_PEAKS__: JSON.stringify(wavPeaks(join(publicMediaDirectory, 'loops/turntable-hip-hop.wav'))),
+    __LOOP_PEAKS__: JSON.stringify(wavPeaks(join(mediaDirectory, 'loops/turntable-hip-hop.wav'))),
   },
   build: {
     outDir: fileURLToPath(new URL('./dist', import.meta.url)),

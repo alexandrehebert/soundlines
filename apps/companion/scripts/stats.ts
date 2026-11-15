@@ -2,7 +2,7 @@
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { publicMediaDirectory } from '@soundlines/project-config/public-media'
+import { mediaDirectory } from '@soundlines/media/source'
 
 const root = fileURLToPath(new URL('../../../', import.meta.url))
 const read = (path: string) => readFileSync(`${root}${path}`, 'utf8')
@@ -30,9 +30,9 @@ export function siteStats() {
     fetchBlocked: fetches.filter((status) => status === 'access-failed').length,
     fetchBrowser: fetches.filter((status) => status === 'opened-in-browser').length,
     artworkFiles: ['icons', 'banners', 'avatars', 'header-backgrounds']
-      .map((variant) => files(join(publicMediaDirectory, `instrument-${variant}`), '.svg'))
+      .map((variant) => files(join(mediaDirectory, `instrument-${variant}`), '.svg'))
       .reduce((sum, count) => sum + count, 0),
-    loops: files(join(publicMediaDirectory, 'loops'), '.wav'),
+    loops: files(join(mediaDirectory, 'loops'), '.wav'),
     agents: files(join(root, '.agents/roles'), '.md'),
     skills: files(join(root, '.agents/skills'), 'SKILL.md'),
   }

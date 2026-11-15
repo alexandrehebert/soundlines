@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Deterministic gate for the instrument artwork in apps/web/public/instrument-{icons,avatars,banners,header-backgrounds}.
+// Deterministic gate for the instrument artwork in packages/media/public/instrument-{icons,avatars,banners,header-backgrounds}.
 // Usage (repository root): node .agents/skills/artwork-validate/scripts/check-artwork.mjs [slug ...] [--png-dir DIR] [--json]
 // Exit code 1 when any FAIL. Rendered checks and PNG sheets need sharp (bundled with next); without it
 // they are reported as one WARN and skipped.
@@ -53,7 +53,7 @@ const findings = []
 const report = (severity, slug, kind, check, detail, owner = 'artwork-draw') =>
   findings.push({ severity, slug, kind, check, detail, owner })
 
-const fileFor = (kind, slug) => join('apps/web/public', `instrument-${kind}`, `${encodeURIComponent(slug)}.svg`)
+const fileFor = (kind, slug) => join('packages/media/public', `instrument-${kind}`, `${encodeURIComponent(slug)}.svg`)
 
 function wellFormed(svg) {
   const body = svg.replace(/<!--[\s\S]*?-->/g, '').replace(/<\?[\s\S]*?\?>/g, '').replace(/<!\[CDATA\[[\s\S]*?\]\]>/g, '')
@@ -135,10 +135,10 @@ function staticChecks({ slug, family }) {
 
 function orphanChecks() {
   for (const kind of Object.keys(KINDS)) {
-    for (const file of readdirSync(join('apps/web/public', `instrument-${kind}`))) {
+    for (const file of readdirSync(join('packages/media/public', `instrument-${kind}`))) {
       const slug = decodeURIComponent(file.replace(/\.svg$/, ''))
       if (!file.endsWith('.svg') || !bySlug.has(slug)) {
-        report('FAIL', slug, kind, 'orphan', `apps/web/public/instrument-${kind}/${file} has no instrument node`, 'artwork-draw (delete) or graph-edit')
+        report('FAIL', slug, kind, 'orphan', `packages/media/public/instrument-${kind}/${file} has no instrument node`, 'artwork-draw (delete) or graph-edit')
       }
     }
   }

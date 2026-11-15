@@ -1,4 +1,6 @@
 import { readdirSync } from 'node:fs'
+import { join } from 'node:path'
+import { mediaDirectory } from '@soundlines/media/source'
 import { expect, it } from 'vitest'
 import graph from '../data/graph.json'
 import { PENDING_GENRE_PREVIEWS, hasGenrePreview } from './genrePreviews.ts'
@@ -6,7 +8,7 @@ import { PENDING_GENRE_PREVIEWS, hasGenrePreview } from './genrePreviews.ts'
 const genreIds = graph.nodes.filter(({ type }) => type === 'genre').map(({ id }) => id)
 
 it('ships exactly one ACE-Step preview for every genre not pending a preview', () => {
-  const files = readdirSync(new URL('../../../apps/web/public/genre-previews/', import.meta.url))
+  const files = readdirSync(join(mediaDirectory, 'genre-previews/'))
   const expected = genreIds
     .filter(hasGenrePreview)
     .map((id) => `${id.slice('genre:'.length)}.m4a`)

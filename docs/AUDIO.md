@@ -6,7 +6,7 @@ Paths in prose and commands are relative to the repository root.
 
 ## Landing-page loop
 
-The [hip-hop loop](../apps/web/public/loops/turntable-hip-hop.wav) played by the landing turntable was generated locally
+The [hip-hop loop](../packages/media/public/loops/turntable-hip-hop.wav) played by the landing turntable was generated locally
 with ACE-Step 1.5's highest-quality pairing: the `acestep-v15-xl-sft` (4B) DiT at
 80 diffusion steps, guidance 7 with ADG, and the largest `acestep-5Hz-lm-4B`
 planner. Because both models do not fit in 25 GB of unified memory together, the
@@ -32,7 +32,7 @@ respects reduced-motion preferences, and does not interfere with record gestures
 
 Soundtrails, curated listening journeys through a genre lineage on the landing page, are behind the
 `NEXT_PUBLIC_FEATURE_SOUNDTRAILS=true` build flag and off by default. Each stop plays its genre
-preview from `apps/web/public/genre-previews`, and the last stop opens the genre timeline focused on the
+preview from `packages/media/public/genre-previews`, and the last stop opens the genre timeline focused on the
 final genre so its lineage stays highlighted. The trails are defined in `packages/catalogue/src/soundtrails.ts`;
 `apps/web/src/graph/soundtrails.test.ts` checks them against the graph.
 
@@ -42,7 +42,7 @@ Only one sound plays at a time: the turntable, genre previews and Soundtrails re
 ### Theme-linked arrangements
 
 The landing turntable uses hip-hop on dark theme (side A) and
-[the trap arrangement](../apps/web/public/loops/turntable-trap.wav) on light theme (side B).
+[the trap arrangement](../packages/media/public/loops/turntable-trap.wav) on light theme (side B).
 Theme changes crossfade for 80 ms at the current sample position and scratch speed;
 they never restart the phrase or start paused playback. Genre previews are unaffected.
 
@@ -74,7 +74,7 @@ permits draft assets or skips mechanical validation and comparative listening.
 
 ## Genre previews
 
-ACE-Step previews live in `apps/web/public/genre-previews`. The renderer takes the
+ACE-Step previews live in `packages/media/public/genre-previews`. The renderer takes the
 middle ten seconds of a 32-second performance and uses the genre briefs in
 `docs/previews/briefs/*.json`. With the local ACE-Step API on port 8020 and its
 planner enabled, set `ACESTEP_PYTHON` to the ACE-Step environment's Python
@@ -85,7 +85,7 @@ completed clips, or pass genre slugs to render a subset.
 Detroit techno uses the higher-quality loop pipeline instead: standalone 4B planning,
 XL SFT at 80 steps, guidance 7 and ADG. Its brief uses 24-second source takes
 and initially renders two seeds to reduce generation time. The selected four-bar WAV
-is retained in `apps/web/public/loops/detroit-techno.wav`; its genre preview is encoded from
+is retained in `packages/media/public/loops/detroit-techno.wav`; its genre preview is encoded from
 that loop at 256 kbps AAC. The brief and selection report are in
 `docs/loops/briefs/detroit-techno*`. Human listening review remains required.
 

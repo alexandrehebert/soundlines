@@ -1,4 +1,6 @@
 import { existsSync } from 'node:fs'
+import { join } from 'node:path'
+import { mediaDirectory } from '@soundlines/media/source'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import graph from '@soundlines/catalogue/data/graph.json'
@@ -21,7 +23,7 @@ describe('instrument icons', () => {
     expect(instruments.length).toBeGreaterThan(0)
     for (const instrument of instruments) {
       const file = `${encodeURIComponent(instrument.id.slice('instrument:'.length))}.svg`
-      expect(existsSync(new URL(`../../../public/instrument-icons/${file}`, import.meta.url)), instrument.id).toBe(true)
+      expect(existsSync(join(mediaDirectory, `instrument-icons/${file}`)), instrument.id).toBe(true)
     }
   })
 })

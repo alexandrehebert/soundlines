@@ -1,6 +1,6 @@
 ---
 description: 'Rules for ACE-Step genre loop briefs, selection reports and loop audio assets.'
-applyTo: 'docs/loops/briefs/**,apps/web/public/loops/**'
+applyTo: 'docs/loops/briefs/**,packages/media/public/loops/**'
 ---
 # Genre loops
 
@@ -14,7 +14,7 @@ applyTo: 'docs/loops/briefs/**,apps/web/public/loops/**'
   recorded in the selection report. Melody preservation requires human comparative listening.
   Neither path may ship drafts. Configuration and known failure modes:
   `.agents/skills/loop-produce/references/ace-step.md`.
-- Each loop is `apps/web/public/loops/<slug>.wav` (PCM16, never AAC/MP3) with `docs/loops/briefs/<slug>.json`
+- Each loop is `packages/media/public/loops/<slug>.wav` (PCM16, never AAC/MP3) with `docs/loops/briefs/<slug>.json`
   and its generated `<slug>.selection.json`. Never hand-edit a selection report; re-extract instead.
 - Briefs are original and instrumental: no artist/track names, no "in the style of". Lint with
   `node .agents/skills/loop-brief/scripts/check-brief.mjs`.

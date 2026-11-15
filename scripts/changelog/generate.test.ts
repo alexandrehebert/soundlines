@@ -113,10 +113,16 @@ describe('deterministic changelog', () => {
     write('apps/web/public/instrument-icons/guitar.svg', '<svg/>')
     commit('Move public assets')
 
-    write('apps/web/public/genre-previews/disco.m4a', 'second take')
+    git('rm', 'apps/web/public/genre-previews/disco.m4a', 'apps/web/public/instrument-icons/guitar.svg')
+    write('packages/media/public/genre-previews/disco.m4a', 'first take')
+    write('packages/media/public/instrument-icons/guitar.svg', '<svg/>')
+    commit('Move assets into media package')
+
+    write('packages/media/public/genre-previews/disco.m4a', 'second take')
     commit('Replace preview')
-    const [edited, moved] = buildChangelog(cwd).data.entries
+    const [edited, moved, firstMove] = buildChangelog(cwd).data.entries
     expect(moved.entities).toEqual([])
+    expect(firstMove.entities).toEqual([])
     expect(edited.entities).toEqual([{ category: 'previews', items: [{ id: 'genre:disco', name: 'Disco', status: 'updated' }] }])
   })
 

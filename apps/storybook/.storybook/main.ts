@@ -3,13 +3,15 @@ import tailwindcss from '@tailwindcss/vite'
 import { dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { PROJECT_SITE_URL, companionBaseUrl } from '@soundlines/project-config'
-import { publicMediaDirectory } from '@soundlines/project-config/public-media'
+import { mediaDirectory } from '@soundlines/media/source'
 
 // `pnpm build-storybook:public` publishes a browse-only catalogue with the
 // companion site, under /soundlines/storybook/.
 const isPublic = process.env.STORYBOOK_PUBLIC === '1'
 const publicBase = `${new URL(PROJECT_SITE_URL).pathname.replace(/\/$/, '')}/storybook`
 
+const appAssets = ['open-data-changelog.json', 'social-card.png', 'social-card.svg']
+  .map((file) => ({ from: `../../web/public/${file}`, to: `/${file}` }))
 const artworkFixture = { from: '../../web/src/stories/fixtures/instrument-artwork-v1', to: '/instrument-artwork-v1' }
 
 // Resolve presets from this workspace, where pnpm links the dependencies.
@@ -34,7 +36,7 @@ const config: StorybookConfig = {
     name: presetPath('@storybook/react-vite'),
     options: {},
   },
-  staticDirs: [publicMediaDirectory, artworkFixture],
+  staticDirs: [mediaDirectory, ...appAssets, artworkFixture],
   managerHead: (head) => (isPublic ? `${head}\n<script>globalThis.SOUNDLINES_PUBLIC_STORYBOOK = true</script>` : head),
   viteFinal: (viteConfig) => {
     viteConfig.plugins = [...(viteConfig.plugins ?? []), tailwindcss()]

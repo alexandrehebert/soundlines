@@ -1,7 +1,7 @@
 # ACE-Step configuration and lessons
 
 Verified on ACE-Step 1.5 (MLX backend, macOS, 25 GB usable unified memory) while producing
-`apps/web/public/loops/turntable-hip-hop.wav`. `extract-loop.py` reproduces that asset byte-for-byte from
+`packages/media/public/loops/turntable-hip-hop.wav`. `extract-loop.py` reproduces that asset byte-for-byte from
 its five takes, so these settings are the reference, not a guess.
 
 ## Shipped ("final") profile

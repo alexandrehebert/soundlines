@@ -3,7 +3,7 @@ name: Artwork quality
 on:
   pull_request:
     paths:
-      - 'apps/web/public/instrument-*/**'
+      - 'packages/media/public/instrument-*/**'
       - 'scripts/artwork/**'
       - 'docs/artwork/**'
       - '.github/agents/artwork-*.agent.md'
@@ -22,7 +22,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'apps/web/public/instrument-*/**'
+      - 'packages/media/public/instrument-*/**'
       - 'scripts/artwork/**'
       - 'docs/artwork/**'
       - '.github/agents/artwork-*.agent.md'

@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import { APP_URL } from '@soundlines/project-config'
-import { publicMediaDirectory } from '@soundlines/project-config/public-media'
+import { mediaDirectory } from '@soundlines/media/source'
 import brief from '../../../docs/loops/briefs/turntable-hip-hop.json'
 import selection from '../../../docs/loops/briefs/turntable-hip-hop.selection.json'
 import saxophoneIcon from '#media/instrument-icons/saxophone.svg?raw'
@@ -201,7 +201,7 @@ describe('landing loop player', () => {
     const preview = contentByLocale[locale].pages.audio.flows[0].steps.find((step) => step.preview.kind === 'player')?.preview
     if (!preview || preview.kind !== 'player') throw new Error('Missing landing loop player')
     const html = renderToStaticMarkup(<PreviewView preview={preview} locale={locale} final />)
-    expect(__LOOP_PEAKS__).toEqual(wavPeaks(join(publicMediaDirectory, 'loops/turntable-hip-hop.wav')))
+    expect(__LOOP_PEAKS__).toEqual(wavPeaks(join(mediaDirectory, 'loops/turntable-hip-hop.wav')))
     const heights = [...html.matchAll(/<rect\b[^>]*height="([^"]+)"/g)].map((match) => Number(match[1]))
     const waveform = __LOOP_PEAKS__.map((peak) => peak * 2)
     expect(heights).toEqual([...waveform, ...waveform])

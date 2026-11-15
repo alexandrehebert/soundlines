@@ -2,7 +2,6 @@
   "$schema": "https://turborepo.dev/schema.json",
   "globalDependencies": [
     "tsconfig.base.json",
-    "apps/web/public/**",
     "scripts/**",
     "docs/graph/evidence/**",
     "docs/loops/briefs/**",
@@ -27,6 +26,21 @@
     },
     "source": {
       "dependsOn": ["^source"]
+    },
+    "@soundlines/web#build": {
+      "dependsOn": ["^source"],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "public/favicon.svg",
+        "public/favicon-light.svg",
+        "public/genre-previews/**",
+        "public/genre-samples/**",
+        "public/instrument-*/**",
+        "public/loops/**",
+        "public/media-manifest.json"
+      ],
+      "env": ["NEXT_PUBLIC_*"]
     },
     "@soundlines/storybook#build": {
       "dependsOn": ["^source"],

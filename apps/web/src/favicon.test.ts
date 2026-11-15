@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs'
-import { fileURLToPath } from 'node:url'
+import { join } from 'node:path'
+import { mediaDirectory } from '@soundlines/media/source'
 import { Disc3 } from 'lucide-react'
 import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
@@ -18,7 +19,7 @@ function iconShapes(markup: string) {
 
 describe('favicon', () => {
   it('uses a larger version of the approved resting frame without animation', () => {
-    const favicon = readFileSync(new URL('../public/favicon.svg', import.meta.url), 'utf8')
+    const favicon = readFileSync(join(mediaDirectory, 'favicon.svg'), 'utf8')
     const approved = readFileSync(new URL('./stories/fixtures/favicon-concepts/soundlines.svg', import.meta.url), 'utf8')
     expect(iconShapes(favicon)).toEqual(iconShapes(approved))
     expect(favicon).toContain('width="32" height="32" viewBox="1 1 22 22"')
@@ -52,11 +53,11 @@ describe('favicon', () => {
   it('uses cache-busted icons for both app themes and includes the light icon in public Storybook', () => {
     expect(faviconUrl('dark')).toBe('/favicon.svg?v=soundlines-wave')
     expect(faviconUrl('light')).toBe('/favicon-light.svg?v=soundlines-wave')
-    expect(storybookConfig.staticDirs).toContain(fileURLToPath(new URL('../public', import.meta.url)))
+    expect(storybookConfig.staticDirs).toContain(mediaDirectory)
   })
 
   it('keeps the light favicon on the same still waveform frame', () => {
-    const favicon = readFileSync(new URL('../public/favicon-light.svg', import.meta.url), 'utf8')
+    const favicon = readFileSync(join(mediaDirectory, 'favicon-light.svg'), 'utf8')
     const paths = [...favicon.matchAll(/<path\b[^>]*\bd="([^"]+)"/g)].map(([, d]) => d)
     expect(paths).toEqual(SOUNDLINES_WAVES.map(({ d }) => d))
     expect(favicon).toContain('<circle cx="3" cy="12" r="1.4"')
@@ -234,7 +235,7 @@ describe('favicon comparison animations', () => {
 })
 
 describe('Soundlines brand mark', () => {
-  const favicon = readFileSync(new URL('../public/favicon.svg', import.meta.url), 'utf8')
+  const favicon = readFileSync(join(mediaDirectory, 'favicon.svg'), 'utf8')
 
   it('rests on the official favicon frame', () => {
     const markup = renderToStaticMarkup(createElement(BrandLink, { href: '/en', children: 'Soundlines' }))
