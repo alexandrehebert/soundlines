@@ -11,6 +11,7 @@ x-workspace: &workspace
     - web_modules:/workspace/apps/web/node_modules
     - companion_modules:/workspace/apps/companion/node_modules
     - storybook_modules:/workspace/apps/storybook/node_modules
+    - catalogue_modules:/workspace/packages/catalogue/node_modules
     - tokens_modules:/workspace/packages/design-tokens/node_modules
     - web_ui_modules:/workspace/packages/ui-web/node_modules
     - next_cache:/workspace/apps/web/.next
@@ -24,7 +25,9 @@ x-dev-service: &dev-service
 services:
   dependencies:
     <<: *workspace
-    command: pnpm install --frozen-lockfile --store-dir /pnpm/store
+    command: pnpm install --frozen-lockfile
+    environment:
+      CI: "true"
 
   soundlines:
     <<: *dev-service
@@ -62,6 +65,7 @@ volumes:
   web_modules:
   companion_modules:
   storybook_modules:
+  catalogue_modules:
   tokens_modules:
   web_ui_modules:
   next_cache:
