@@ -24,6 +24,30 @@ The [Vercel configuration](../vercel.json) selects the Next.js framework preset.
 Do not configure a static `dist` output directory: App Router pages render on
 the server.
 
+## Git hooks
+
+The repository ships Git hooks in [`.githooks`](../.githooks). From the
+repository root, check `git config --show-origin --get core.hooksPath` for an
+existing hooks path before changing it. To activate Soundlines' hooks, set the
+hook path once in each clone:
+
+```bash
+git config --local core.hooksPath .githooks
+```
+
+- **Before committing**, `pre-commit` runs `git diff --cached --check` to catch
+  newly introduced whitespace errors and conflict markers in staged changes.
+  It uses host Git, including when the app runs in Compose. Run the command
+  manually after staging if the hook is inactive.
+- **Before pushing**, `npm run check:push` runs the app TypeScript check and
+  `npm test`. Run it manually from the repository root, or run
+  `SOUNDLINES_PRE_PUSH=1 git push` from a POSIX shell with the hooks enabled.
+  An ordinary push skips this check. It uses the current checkout, including
+  any uncommitted edits, and requires host Node.js 26 and dependencies from `npm ci`.
+
+GitHub Actions checks the committed changes. Use the validation commands in
+the [documentation index](./README.md) for the parts of the project you changed.
+
 ## Docker Compose
 
 To run the app, Storybook and the companion site with Docker Compose:

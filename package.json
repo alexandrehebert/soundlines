@@ -17,6 +17,7 @@
     "vercel-build": "next build",
     "lint": "oxlint --ignore-pattern .next",
     "test": "vitest run",
+    "check:push": "tsc --noEmit -p tsconfig.build.json && npm test",
     "storybook": "storybook dev -p 6006 --disable-telemetry",
     "build-storybook": "storybook build --disable-telemetry",
     "build-storybook:public": "STORYBOOK_PUBLIC=1 storybook build --disable-telemetry --quiet -o _site/storybook",

@@ -13,6 +13,14 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 Use the [documentation index](./docs/README.md) to find the guide, skill, and
 validation command for your task.
 
+## Git hooks
+
+- Before committing, run `git diff --cached --check` if the repository's
+  [pre-commit hook](./docs/DEVELOPMENT.md#git-hooks) is inactive.
+- Before pushing app changes, run `npm run check:push` if type checking and
+  app tests have yet to pass for those changes. The automatic pre-push check
+  is opt-in. Follow the documented validation commands for the files you changed.
+
 ## Webapp UI changes
 
 - Before changing webapp UI, read the [design system guide](./docs/DESIGN_SYSTEM.md)

@@ -14,4 +14,5 @@ Use the guide for your task. Run commands from the repository root unless the li
 | Produce seamless loops | [Audio guide](./AUDIO.md), [loop catalogue](./loops/CATALOGUE.md), [loop briefs](./loops/briefs/) | [Production skill](../.github/skills/loop-produce/SKILL.md), [validation skill](../.github/skills/loop-validate/SKILL.md) |
 | Produce listening previews | [Genre previews](./AUDIO.md#genre-previews), [preview briefs](./previews/briefs/) | [Preview production skill](../.github/skills/preview-produce/SKILL.md), [preview review skill](../.github/skills/preview-review/SKILL.md) |
 | Set up tools or run local services | [Installation](./INSTALLATION.md), [Development](./DEVELOPMENT.md) | [Script index](./SCRIPTS.md) |
+| Check a commit or push locally | [Git hook setup](./DEVELOPMENT.md#git-hooks) | `git diff --cached --check` and `npm run check:push` |
 | Maintain changelog outputs | [Changelog maintenance](./DEVELOPMENT.md#changelog) | `npm run test:changelog` |

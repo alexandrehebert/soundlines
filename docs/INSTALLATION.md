@@ -90,6 +90,9 @@ npm ci
 `npm ci` uses the committed lockfile. It does not install the Python audio
 environment or global agent integrations.
 
+To enable the repository's staged checks and learn how to run the optional
+pre-push checks, follow [Git hooks](./DEVELOPMENT.md#git-hooks).
+
 ## 3. Run the local app and Storybook
 
 For startup commands, ports, server reuse and checks, see [Development](./DEVELOPMENT.md).

@@ -1,0 +1,4 @@
+#!/bin/sh
+if [ "${SOUNDLINES_PRE_PUSH:-0}" = 1 ]; then
+  exec npm run check:push
+fi
