@@ -30,4 +30,5 @@ groups. The app and Storybook load the same foundation stylesheet and theme toke
    calls for a visual change.
 
 Run `npm run storybook` for the local catalogue. The companion site publishes
-the same stories in its browse-only Storybook.
+the same stories in its browse-only Storybook. The Overview uses Storybook’s
+story index to link to each component’s docs or its first story.
