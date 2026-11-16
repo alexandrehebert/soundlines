@@ -81,7 +81,7 @@ export const Catalog: Story = {
   ),
 }
 
-export const BeforeAndAfter: Story = {
+export const BeforeAndAfter = {
   name: 'Before & after',
   render: () => (
     <main className="min-h-screen bg-slate-950 p-4 text-slate-200 sm:p-6">
@@ -150,4 +150,4 @@ export const BeforeAndAfter: Story = {
       </div>
     </main>
   ),
-}
+} satisfies Story
