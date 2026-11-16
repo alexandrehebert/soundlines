@@ -12,6 +12,18 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-16 — Refine instrument artwork and Storybook comparisons
+
+[2eec6dc6](https://github.com/alexandrehebert/soundlines/commit/2eec6dc6551426c53917cf9ae4244dd9ee49d75d)
+
+Graph nodes: +0 / ~1 / -0.
+
+Graph edges: +0 / ~0 / -0.
+
+- graph: 3 changed files
+- artwork: 162 changed files
+- app: 5 changed files
+
 ## 2026-11-15 — Add mobile web app and expand catalogue artwork and artist origins
 
 [8c4a40e4](https://github.com/alexandrehebert/soundlines/commit/8c4a40e44287eed18f435df6d97208bf3459b5a0)

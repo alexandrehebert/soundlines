@@ -2,6 +2,986 @@
   "version": 4,
   "entries": [
     {
+      "commit": "2eec6dc6551426c53917cf9ae4244dd9ee49d75d",
+      "parent": "991f223e6c76c4f7fdc391852ab542cdae6d8609",
+      "date": "2026-11-16T18:52:07-05:00",
+      "subject": "Refine instrument artwork and Storybook comparisons",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "instrument:turntables",
+              "name": "Turntable",
+              "status": "updated"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "items": [
+            {
+              "id": "instrument:accordion",
+              "name": "Accordion",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:algerian-mandole",
+              "name": "Algerian mandole",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:auto-tune",
+              "name": "Auto-Tune",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:balalaika",
+              "name": "Balalaika",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:bass-clarinet",
+              "name": "Bass clarinet",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:bass-drum",
+              "name": "Bass drum",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:bassoon",
+              "name": "Bassoon",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:bongos",
+              "name": "Bongos",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:clarinet",
+              "name": "Clarinet",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:claves",
+              "name": "Claves",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:conga",
+              "name": "Conga",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:cornet",
+              "name": "Cornet",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:cornetto",
+              "name": "Cornetto",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:euphonium",
+              "name": "Euphonium",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:flugelhorn",
+              "name": "Flugelhorn",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:french-horn",
+              "name": "French horn",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:harp",
+              "name": "Harp",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:hichiriki",
+              "name": "Hichiriki",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:juno-106",
+              "name": "Roland JUNO-106",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:juno-60",
+              "name": "Roland JUNO-60",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:jupiter-8",
+              "name": "Roland JUPITER-8",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:kora",
+              "name": "Kora",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:koto",
+              "name": "Koto",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:lute",
+              "name": "Lute",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:maracas",
+              "name": "Maracas",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:minimoog",
+              "name": "Minimoog",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:natural-trumpet",
+              "name": "Natural trumpet",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:oboe",
+              "name": "Oboe",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:oud",
+              "name": "Oud",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:piccolo",
+              "name": "Piccolo",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:recorder",
+              "name": "Recorder",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:ryuteki",
+              "name": "Ryūteki",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:saxophone",
+              "name": "Saxophone",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:sho",
+              "name": "Shō",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:sousaphone",
+              "name": "Sousaphone",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:steelpan",
+              "name": "Steelpan",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:tb-303",
+              "name": "Roland TB-303",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:timbales",
+              "name": "Timbales",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:timpani",
+              "name": "Timpani",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:tr-808",
+              "name": "Roland TR-808",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:tr-909",
+              "name": "Roland TR-909",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:transverse-flute",
+              "name": "Transverse flute",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:triangle",
+              "name": "Triangle",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:trombone",
+              "name": "Trombone",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:trumpet",
+              "name": "Valved trumpet",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:tuba",
+              "name": "Tuba",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:turntables",
+              "name": "Turntable",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:vibraphone",
+              "name": "Vibraphone",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:yamaha-dx7",
+              "name": "Yamaha DX7",
+              "status": "updated"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/nodes/instrument/turntables.md"
+            },
+            {
+              "status": "M",
+              "path": "packages/catalogue/data/graph.fr.json"
+            },
+            {
+              "status": "M",
+              "path": "packages/catalogue/data/graph.json"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "files": [
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-avatars/bass-clarinet.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-avatars/cornet.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-avatars/cornetto.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-avatars/flugelhorn.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-avatars/harp.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-avatars/natural-trumpet.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-avatars/steelpan.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-avatars/turntables.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-avatars/yamaha-dx7.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-banners/bass-clarinet.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-banners/cornet.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-banners/cornetto.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-banners/flugelhorn.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-banners/harp.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-banners/natural-trumpet.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-banners/steelpan.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-banners/turntables.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-banners/yamaha-dx7.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/bass-clarinet.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/cornet.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/cornetto.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/flugelhorn.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/harp.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/natural-trumpet.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/steelpan.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/turntables.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/yamaha-dx7.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-icons/bass-clarinet.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-icons/cornet.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-icons/cornetto.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-icons/flugelhorn.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-icons/harp.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-icons/natural-trumpet.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-icons/steelpan.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-icons/turntables.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-icons/yamaha-dx7.svg"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/README.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/briefs/.gitignore"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/accordion.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/algerian-mandole.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/auto-tune.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/balalaika.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/bass-clarinet.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/bass-drum.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/bassoon.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/bongos.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/clarinet.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/claves.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/conga.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/cornet.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/cornetto.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/euphonium.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/flugelhorn.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/french-horn.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/harp.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/hichiriki.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/juno-106.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/juno-60.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/jupiter-8.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/kora.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/koto.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/lute.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/maracas.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/minimoog.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/natural-trumpet.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/oboe.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/oud.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/piccolo.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/recorder.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/ryuteki.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/saxophone.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/sho.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/sousaphone.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/steelpan.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/tb-303.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/timbales.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/timpani.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/tr-808.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/tr-909.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/transverse-flute.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/triangle.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/trombone.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/trumpet.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/tuba.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/turntables.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/vibraphone.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/yamaha-dx7.json"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/bass-clarinet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/bassoon.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/conga.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/cornet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/cornetto.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/euphonium.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/flugelhorn.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/french-horn.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/harp.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/kora.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/lute.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/natural-trumpet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/piccolo.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/steelpan.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/trombone.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/trumpet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/tuba.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/turntables.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/yamaha-dx7.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/bass-clarinet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/bassoon.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/conga.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/cornet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/cornetto.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/euphonium.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/flugelhorn.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/french-horn.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/harp.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/kora.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/lute.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/natural-trumpet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/piccolo.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/steelpan.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/trombone.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/trumpet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/tuba.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/turntables.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/yamaha-dx7.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/bass-clarinet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/bassoon.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/conga.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/cornet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/cornetto.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/euphonium.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/flugelhorn.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/french-horn.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/harp.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/kora.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/lute.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/natural-trumpet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/piccolo.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/steelpan.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/trombone.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/trumpet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/tuba.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/turntables.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/yamaha-dx7.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/bass-clarinet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/conga.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/cornet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/cornetto.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/euphonium.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/flugelhorn.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/french-horn.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/harp.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/kora.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/lute.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/natural-trumpet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/piccolo.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/steelpan.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/trombone.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/trumpet.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/tuba.svg"
+            },
+            {
+              "status": "A",
+              "path": "scripts/artwork/fetch-instrument-references.py"
+            },
+            {
+              "status": "M",
+              "path": "scripts/artwork/generate-instrument-artwork.py"
+            }
+          ]
+        },
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "apps/web/src/stories/InstrumentArtwork.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/InstrumentArtwork.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/stories/InstrumentIcon.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/stories/InstrumentIconCatalog.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/stories/InstrumentIconCatalog.tsx"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [],
+          "updated": [
+            "instrument:turntables"
+          ],
+          "removed": []
+        },
+        "edges": {
+          "added": [],
+          "updated": [],
+          "removed": []
+        }
+      }
+    },
+    {
       "commit": "8c4a40e44287eed18f435df6d97208bf3459b5a0",
       "parent": "62ac874c8e4d88defb2385ad39a54e34412e3983",
       "date": "2026-11-15T22:42:19-05:00",
