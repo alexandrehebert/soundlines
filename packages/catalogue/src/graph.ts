@@ -197,7 +197,7 @@ function normalizeSearchText(value: string): string {
 
 /** Search ignores case, Latin accents, and apostrophe style: exact > prefix > substring > subsequence. */
 export function searchNodes(
-  graph: MusicGraph,
+  graph: Pick<MusicGraph, 'nodes'>,
   query: string,
   limit = 8,
   alternateNames?: ReadonlyMap<string, string>,

@@ -150,6 +150,7 @@ describe('deterministic changelog', () => {
     write('public/loops/turntable-hip-hop.wav', 'loop')
     write('public/instrument-icons/saxophone.svg', '<svg/>')
     write('public/instrument-banners/saxophone.svg', '<svg/>')
+    write('packages/media/public/genre-artwork/acid-house.webp', 'cover')
     write('docs/artwork/briefs/saxophone.json', { slug: 'saxophone' })
     write('docs/graph/evidence/nodes/genre/acid-house.md', 'sources')
     write('docs/graph/evidence/nodes/genre/new.md', 'sources')
@@ -173,7 +174,10 @@ describe('deterministic changelog', () => {
       ] },
       { category: 'previews', items: [{ id: 'genre:acid-house', name: 'Acid House', status: 'updated' }] },
       { category: 'loops', items: [{ id: 'genre:hip-hop', name: 'Hip-hop', status: 'added' }] },
-      { category: 'artwork', items: [{ id: 'instrument:saxophone', name: 'Saxophone', status: 'added' }] },
+      { category: 'artwork', items: [
+        { id: 'genre:acid-house', name: 'Acid House', status: 'added' },
+        { id: 'instrument:saxophone', name: 'Saxophone', status: 'added' },
+      ] },
     ])
   })
 

@@ -50,6 +50,14 @@ function renderPanel(data: MusicGraph, selectedId: string, showCloseButton = tru
 }
 
 describe('detail panel sources', () => {
+  it('shows directly linked Detroit artists in the place details', () => {
+    const markup = renderPanel(graphForLocale('en'), 'place:detroit')
+
+    for (const artist of ['Juan Atkins', 'Derrick May', 'Carl Craig', 'Jeff Mills']) {
+      expect(markup).toMatch(new RegExp(`<button\\b[^>]*>(?:(?!<\\/button>).)*>${artist}<`))
+    }
+  })
+
   it('shows festival relationship citations in both panels and omits an unsourced festival', () => {
     const data: MusicGraph = {
       ...graph,

@@ -9,6 +9,7 @@ x-workspace: &workspace
     - pnpm_store:/pnpm/store
     - workspace_modules:/workspace/node_modules
     - web_modules:/workspace/apps/web/node_modules
+    - mobile_web_modules:/workspace/apps/mobile-web/node_modules
     - companion_modules:/workspace/apps/companion/node_modules
     - storybook_modules:/workspace/apps/storybook/node_modules
     - catalogue_modules:/workspace/packages/catalogue/node_modules
@@ -39,6 +40,12 @@ services:
     ports:
       - "5173:5173"
 
+  mobile-web:
+    <<: *dev-service
+    command: pnpm dev:mobile --host 0.0.0.0
+    ports:
+      - "${MOBILE_WEB_BIND:-127.0.0.1}:${MOBILE_WEB_PORT:-5175}:5175"
+
   storybook:
     <<: *dev-service
     command: sh -c 'pnpm storybook --host 0.0.0.0 --no-open --exact-port --port "$$STORYBOOK_PORT"'
@@ -63,6 +70,7 @@ volumes:
   pnpm_store:
   workspace_modules:
   web_modules:
+  mobile_web_modules:
   companion_modules:
   storybook_modules:
   catalogue_modules:

@@ -13,7 +13,7 @@ const variants = Object.keys(artworkVariants) as InstrumentArtworkVariant[]
 
 const publicEntries = [
   ...Object.values(artworkVariants),
-  'genre-previews', 'genre-samples', 'loops', 'favicon.svg', 'favicon-light.svg',
+  'genre-artwork', 'genre-previews', 'genre-samples', 'loops', 'favicon.svg', 'favicon-light.svg',
 ]
 
 function listMedia(directory: string, extension: string, contentType: string): (MediaAsset & { slug: string })[] {
@@ -41,6 +41,8 @@ function manifest(): MediaManifest {
   return {
     version: 1,
     instrumentArtwork,
+    genreArtwork: Object.fromEntries(listMedia('genre-artwork', '.webp', 'image/webp')
+      .map(({ slug, ...asset }) => [`genre:${slug}`, asset])),
     genrePreviews: Object.fromEntries(listMedia('genre-previews', '.m4a', 'audio/mp4')
       .map(({ slug, ...asset }) => [`genre:${slug}`, asset])),
     loops: Object.fromEntries(listMedia('loops', '.wav', 'audio/wav')

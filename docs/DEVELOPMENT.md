@@ -11,6 +11,7 @@ audio tooling, see the [installation guide](./INSTALLATION.md).
 
 ```bash
 pnpm dev              # Next.js defaults to http://localhost:3000
+pnpm dev:mobile       # mobile web prototype at http://localhost:5175
 pnpm test
 pnpm lint
 pnpm typecheck
@@ -38,8 +39,8 @@ URL. If you edit media while Next.js is running, refresh the published copies
 with `pnpm --filter @soundlines/web media:stage`.
 
 `pnpm build:media` creates a static publishing directory in
-`packages/media/dist/`. Its `media-manifest.json` lists genre previews and
-instrument artwork by catalogue node ID, and loops by asset slug. Entries have a
+`packages/media/dist/`. Its `media-manifest.json` lists genre previews, genre
+covers, and instrument artwork by catalogue node ID, and loops by asset slug. Entries have a
 relative URL path, content type, and byte size. Resolve those paths against the
 manifest URL. The atlas serves the manifest at `/media-manifest.json`, and
 GitHub Pages publishes it at `/soundlines/media/media-manifest.json`.
@@ -71,21 +72,24 @@ the [documentation index](./README.md) for the parts of the project you changed.
 
 ## Docker Compose
 
-To run the app, Storybook and the companion site with Docker Compose:
+To run the web apps and Storybook with Docker Compose:
 
 ```bash
-docker compose up -d           # app, Storybook and companion site
+docker compose up -d           # atlas, mobile web, Storybook and companion site
+docker compose up -d mobile-web # mobile web only
 docker compose up -d storybook # Storybook only
 docker compose up -d site      # companion site only
 ```
 
-Compose serves the app at `http://localhost:5173`, Storybook at
-`http://localhost:6008` and the live-reloading companion site at
-`http://localhost:5174/soundlines/` on the local machine. Set `STORYBOOK_PORT`
-or `SITE_PORT` to change those host ports, for example
+Compose serves the atlas at `http://localhost:5173`, mobile web at
+`http://localhost:5175`, Storybook at `http://localhost:6008`, and the companion
+at `http://localhost:5174/soundlines/`. Set `STORYBOOK_PORT`, `SITE_PORT`, or
+`MOBILE_WEB_PORT` to change the respective host port, for example
 `STORYBOOK_PORT=6010 docker compose up -d`. The services use
 Node 26 and container-only dependency volumes. The dependency service installs
-dependencies. Run Git-based graph tooling and Python artwork checks on the host.
+dependencies. After workspace dependencies change while the apps are running,
+refresh those volumes with `docker compose run --rm --no-deps dependencies`.
+Run Git-based graph tooling and Python artwork checks on the host.
 Compose also uses these host ports for the links between the explorer, companion
 and Storybook. Recreate the
 services with `docker compose up -d` after changing either port. The
@@ -270,9 +274,9 @@ palette for its theme; the dark asset is also used by the companion site and
 Storybook. The **Foundations / Favicon** story shows both still variants and
 compares animated previews with the previous vinyl icon and the Soundline concept at 16,
 24, and 32 pixels and on light and dark browser tabs. The browser favicon itself
-does not animate; the header logo ([SoundlinesMark](../apps/web/src/design-system/navigation/SoundlinesMark.tsx))
+does not animate; the header logo ([SoundlinesMark](../packages/ui-web/src/SoundlinesMark.tsx))
 plays the same wave motion on hover, focus and scroll, using the shared model in
-[soundlinesWave.ts](../apps/web/src/design-system/navigation/soundlinesWave.ts).
+[soundlinesWave.ts](../packages/ui-web/src/soundlinesWave.ts).
 Preview animations can be paused and are disabled when reduced motion is
 requested. The studies are standalone SVGs in
 [apps/web/src/stories/fixtures/favicon-concepts/](../apps/web/src/stories/fixtures/favicon-concepts/).

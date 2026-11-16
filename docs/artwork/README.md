@@ -21,3 +21,18 @@ the repository root. See [artwork tooling setup](../INSTALLATION.md#5-install-ar
 node .agents/skills/artwork-brief/scripts/check-brief.mjs
 node .agents/skills/artwork-validate/scripts/check-artwork.mjs --require-render
 ```
+
+## Genre covers
+
+Run `pnpm artwork:genres disco` to read a genre brief. Use any catalogue genre
+slug, or pass `--all` to read the entire collection. The brief pulls in the
+genre's description, period, family and references from the catalogue. Each
+genre starts with a draft direction. Save the final prompt and generator in
+[genre-briefs/](./genre-briefs/) when making a cover.
+
+Create a square editorial image around one subject supported by the brief.
+Add the result as a 640–1200 px WebP at
+`packages/media/public/genre-artwork/<slug>.webp` and run
+`pnpm artwork:genres --check`. The check verifies catalogue coverage, the
+saved prompt for each image, and the format and dimensions. The media build
+indexes the covers under `genreArtwork` in the shared manifest.

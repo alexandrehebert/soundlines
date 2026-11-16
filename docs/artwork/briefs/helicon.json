@@ -6,32 +6,37 @@
   "references": [
     {
       "url": "https://sites.duke.edu/dumic/instruments/brass/north-america/helicon-tuba-in-e-flat/",
-      "shows": "Distin helicon with circular brass tubing, three Périnet valves and low flared bell."
+      "shows": "An 1860s Distin E-flat helicon with a circular body, a side-directed bell and three Périnet valves, a different valve layout from the Berlin specimen."
     },
     {
-      "url": "https://sites.duke.edu/dumic/instruments/brass/north-america/helicon-tuba-in-bb-flat/",
-      "shows": "Another helicon specimen showing the wearable circular coil and a bell set low at the side."
+      "url": "https://commons.wikimedia.org/wiki/File:Musikinstrumenten-Museum_Berlin_-_Helikon_in_Es_-_1107081_(crop).jpg",
+      "shows": "Simon Schnepp’s photo of the Berlin museum’s circa-1900 E-flat helicon shows the continuous bow, the long angled bell and three rotary valve levers."
     }
   ],
-  "silhouette": "Wearable brass bass with a wide circular coil and a compact flaring bell carried to one side at the height of the coil.",
+  "silhouette": "Open, near-circular body with a heavy outer bow that rises into a long bell flaring up and to the side.",
   "features": [
-    "Circular outer tube",
-    "Three valves on the inner loop",
-    "Low bell opening diagonally to the side",
-    "Angled mouthpipe entering the valve section"
+    "The wide bow sweeps around the left and lower edges of the opening and blends into the long conical bell.",
+    "The oblique bell rim is narrow in projection, with the length of the flare clearly visible.",
+    "Three rotary valves with finger levers sit against the right-hand arc, among compact folded slides.",
+    "A slim leadpipe runs from a cup mouthpiece near the upper opening into the valve group."
   ],
   "iconFeatures": [
-    "Circular coil in playing position",
-    "Side bell with a short flare"
+    "Open coil in playing position with a long upward-diagonal bell growing directly from its left bow",
+    "A small valve mark along the right-hand arc"
   ],
   "avoid": [
-    "A sousaphone’s tall bell",
+    "A broad, front-facing bell perched above the body, as on the catalogue sousaphone",
+    "Exposed tube ends between the bow, bell and valve section",
     "A concert tuba’s upright oval layout"
   ],
   "geometry": {
-    "view": "Front three-quarter",
-    "proportions": "Circular coil dominates the instrument, with a bell staying near its upper edge.",
-    "partLayout": "Place the valve group inside the coil, with the mouthpiece near one shoulder and bell emerging at the other side."
+    "view": "Slightly oblique view of the body wrap, with the bell extending toward the upper right and showing a narrow oval mouth",
+    "proportions": "The open body wrap accounts for about two thirds of the height. The bell projects diagonally from the shoulder curve and its rim is about half as long as the wrap is wide.",
+    "partLayout": "Form the outer bow and bell flare as one contour. Follow the right-hand arc with the valve assembly and its folded slides. Turn the upper portion of the wrap inward toward the valve section and connect the leadpipe from the upper opening.",
+    "referenceImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Musikinstrumenten-Museum_Berlin_-_Helikon_in_Es_-_1107081_%28crop%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Musikinstrumenten-Museum_Berlin_-_Helikon_in_Es_-_1107081_(crop).jpg"
+    }
   },
-  "notes": "Use the three-valve E-flat Distin specimen as the reference for the main shapes."
+  "notes": "Depicts the circa-1900 Berlin museum variant shown in the photo reference. The compact rotary assembly leaves the middle of the wrap open for the player."
 }

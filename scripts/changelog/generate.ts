@@ -25,7 +25,7 @@ const overlayFile = (path: string) => {
   return file && /^graph\.[^.]+\.json$/.test(file) ? file : undefined
 }
 const publicFile = (path: string) => /^(?:(?:apps\/web|packages\/media)\/)?public\/(.+)$/.exec(path)?.[1]
-const mediaFile = (path: string) => /^(genre-previews|audio|loops|instrument-[^/]+)\/(.+)\.[^.]+$/.exec(publicFile(path) ?? '')
+const mediaFile = (path: string) => /^(genre-artwork|genre-previews|audio|loops|instrument-[^/]+)\/(.+)\.[^.]+$/.exec(publicFile(path) ?? '')
 type Delta = { added: string[]; updated: string[]; removed: string[] }
 type FileChange = { status: string; path: string }
 type AssetCategory = 'graph' | 'previews' | 'loops' | 'artwork'
@@ -76,7 +76,7 @@ export function categoryFor(path: string): Category {
   if (/^(src\/(data|graph)\/|packages\/catalogue\/|docs\/graph\/|docs\/(GRAPH|DATA)\.md$|scripts\/graph\/)/.test(path)) return 'graph'
   if (/(^|[/.-])previews?(\/|[.-])|render-ace-previews/.test(path) || publicFile(path)?.startsWith('audio/')) return 'previews'
   if (/(^|\/)loops?(\/|[.-])/.test(path)) return 'loops'
-  if (/(^|\/)artwork(\/|[.-])|instrument-artwork/.test(path) || publicFile(path)?.startsWith('instrument-')) return 'artwork'
+  if (/(^|\/)artwork(\/|[.-])|(?:instrument|genre)-artwork/.test(path) || publicFile(path)?.startsWith('instrument-')) return 'artwork'
   if (/^(site|apps\/companion)\//.test(path)) return 'site'
   if (/^\.(github|agents|claude|codex)\/|^scripts\/|^compose\.|^Dockerfile|^(AGENTS|CLAUDE)\.md$/.test(path)) return 'workflow'
   if (/^docs\/|\.md$/.test(path)) return 'docs'
@@ -170,8 +170,9 @@ function affectedEntities(
       const status = asset ? publicChange(asset[0]) : fileStatus(file)
       if (!status) continue
       const [, kind, slug] = matched
-      const category = kind.startsWith('instrument-') || kind === 'artwork' ? 'artwork' : kind === 'loops' ? 'loops' : 'previews'
-      const prefix = category === 'artwork' ? 'instrument' : 'genre'
+      const instrumentArtwork = kind.startsWith('instrument-') || kind === 'artwork'
+      const category = instrumentArtwork || kind === 'genre-artwork' ? 'artwork' : kind === 'loops' ? 'loops' : 'previews'
+      const prefix = instrumentArtwork ? 'instrument' : 'genre'
       const id = `${prefix}:${slug}`
       const landingId = category === 'loops' && slug === 'turntable-hip-hop' ? 'genre:hip-hop' : id
       add(category, nodes.has(id) ? id : landingId, status)

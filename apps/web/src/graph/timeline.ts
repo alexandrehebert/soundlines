@@ -1,12 +1,11 @@
 import { ARTIST_EDGE_COLORS, INSTRUMENT_EDGE_COLORS, LINEAGE_EDGE_COLORS } from '../theme.ts'
+import { artistFamily } from '@soundlines/catalogue/artistFamily'
 import { buildIndex, type GraphIndex } from '@soundlines/catalogue/graph'
 import { CURRENT_YEAR, DEFAULT_START_YEAR, layoutFamilies, MAX_YEAR, MIN_YEAR, type TimelineOrder } from './layout.ts'
 import {
-  FAMILY_ORDER,
   isGenreFamily,
   isInstrumentFamily,
   LINEAGE_ORIENTATION,
-  type GenreFamily,
   type GraphNode,
   type LaneFamily,
   type RelationOrientation,
@@ -115,20 +114,7 @@ const EDGE_COLORS = {
   instrument: INSTRUMENT_EDGE_COLORS,
 } satisfies Record<TimelineView, unknown>
 
-export function artistFamily(index: GraphIndex, artist: GraphNode): GenreFamily | undefined {
-  if (isGenreFamily(artist.family)) return artist.family
-  const counts = new Map<GenreFamily, number>()
-  const genres = new Set<string>()
-  for (const edge of index.outEdges.get(artist.id) ?? []) {
-    if (edge.type !== 'key_artist_of' || genres.has(edge.to)) continue
-    const genre = index.nodeById.get(edge.to)
-    if (genre?.type !== 'genre' || !isGenreFamily(genre.family)) continue
-    genres.add(genre.id)
-    counts.set(genre.family, (counts.get(genre.family) ?? 0) + 1)
-  }
-  return FAMILY_ORDER.filter((family) => counts.has(family))
-    .sort((a, b) => counts.get(b)! - counts.get(a)!)[0]
-}
+export { artistFamily }
 
 /** The lane a node is drawn in, or undefined when it has none for its timeline. */
 export function timelineFamily(index: GraphIndex, node: GraphNode): LaneFamily | undefined {

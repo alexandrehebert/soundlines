@@ -1073,25 +1073,72 @@ def flugelhorn():
 
 
 def sousaphone():
-    return (brass_tube('M-34-44C-57-35-70-14-64 11C-57 39-32 56-5 53C22 50 43 31 47 9C52-16 35-34 13-41', 12, 1.8)
-            + path('M17-35Q31-58 46-59Q65-62 86-64L104-27Q80-19 60-28Q46-35 28-20Z', WOOD)
-            + '<g transform="rotate(-29 93 -44)">'+ellipse(93,-44,8,22,'#735022',GOLD)+'</g>'
-            + brass_tube('M-40-34H-21Q-13-34-12-25L-8-13', 4.5)
-            + brass_tube('M-35 1v16q0 12 11 12h17q10 0 10-12V-2M-24 4v9q0 8 7 8h7', 4.5)
-            + brass_pistons((-32,-21,-10), -14, 30)
-            + brass_mouthpiece(-53,-34))
+    # The bell hides the top of the rising bow in this nearly head-on view.
+    bell_bow = ('M27 40C28 56 15 66 0 66C-23 66-37 47-37 26'
+                'C-37 7-27-5-16-10Q-9-14-9-28')
+    return_bow = ('M10 56C-9 69-29 52-30 31C-31 11-21-1-5-3'
+                  'C15-6 33 10 34 28Q35 39 27 43')
+    slides = ('M-11-5H-20Q-26-5-26 0Q-26 5-20 5H-11'
+              'M0 5H-13Q-19 5-19 10Q-19 15-13 15H0Q3 15 3 11V5'
+              'M11-3H17Q22-3 22 2Q22 7 17 7H11')
+    bell_gradient = (
+        '<defs><radialGradient id="sousaphone-bell" fx="55%" fy="60%">'
+        '<stop offset=".29" stop-color="#34200e"/>'
+        '<stop offset=".47" stop-color="#8b571a"/>'
+        '<stop offset=".73" stop-color="#d5a047"/>'
+        '<stop offset="1" stop-color="#ffe4a3"/>'
+        '</radialGradient></defs>'
+    )
+    return (bell_gradient
+            + brass_tube(bell_bow, 10.5, 1.6)
+            + brass_tube(return_bow, 5.8)
+            + path('M-21-6l8-6', stroke=GOLD, w=2.5)
+            + ellipse(-5,-39,36,34,'url(#sousaphone-bell)','#f6cf83')
+            + ellipse(-1,-32,13,13,'#3e2712','#986224')
+            + brass_tube('M3 7Q12 12 25 12Q34 12 30 18L23 30', 3.1)
+            + '<g transform="translate(5 7) rotate(24)">'
+            + brass_mouthpiece(-9,0)
+            + '</g>'
+            + '<g transform="translate(17 43) rotate(-47)">'
+            + brass_tube(slides, 3.5)
+            + brass_pistons((-11,0,11), -6, 14)
+            + '</g>')
 
 
 def helicon():
-    return (brass_tube('M-37-23C-55-17-65-3-64 15C-62 43-32 60 4 55'
-                       'C35 50 53 25 53 5C53-11 44-24 32-28', 10, 1.8)
-            + brass_tube('M-48-27H-23Q-15-27-15-15V-6', 4.5)
-            + brass_tube('M-36 3V18Q-36 30-23 30H17Q32 30 32 17V-23', 6)
-            + brass_tube('M-26 9V16Q-26 21-18 21H-14Q-10 21-10 13V8', 3.8)
-            + brass_pistons((-34,-22,-10), -10, 28)
-            + path('M24-29Q49-30 60-41L77-24Q65-13 43-16Q33-17 24-18Z', WOOD)
-            + '<g transform="rotate(-41 70 -32)">'+ellipse(70,-32,5,12,'#735022',GOLD)+'</g>'
-            + brass_mouthpiece(-55,-27))
+    # Both edges of the large bow continue into the conical bell.
+    bow = ('M42-72C40-54 4-46-23-25C-52-7-57 20-45 42'
+           'C-34 65-8 71 14 60C37 49 44 25 36 3'
+           'C31-13 17-23 3-23C-12-24-17-13-9-6C-1 1 12-10 17 2'
+           'L21 11L27 9L22-1C16-14 2-5-5-11C-10-16-4-18 2-17'
+           'C12-17 24-10 29 6'
+           'C37 25 27 46 10 52C-9 61-30 51-36 33'
+           'C-44 11-32-9-12-22C12-40 44-52 62-38Z')
+    slides = ('M23 9L15-3Q10-11 5-7Q1-4 6 4L13 17Q16 23 25 18'
+              'M29 17Q17 20 16 28Q14 35 23 37'
+              'M25 24C8 29 4 44 11 47C18 51 27 41 23 36')
+    valves = ''.join(
+        ellipse(x, y, 5.1, 4.5, '#956328', EDGE)
+        + ellipse(x, y, 2.0, 1.8, GOLD)
+        + path(f'M{x} {y}l-9 1', stroke=GOLD, w=2.3)
+        + ellipse(x-10, y+1, 2.8, 1.6, EDGE, GOLD)
+        for x, y in ((23, 9), (26, 16), (27, 23))
+    )
+    return (path(bow, WOOD)
+            + path('M41-64C31-51 3-44-19-27C-43-8-48 16-40 36'
+                   'C-30 59-7 63 11 56C33 47 41 25 33 5',
+                   stroke='#f6cb79', w=2.4)
+            + path('M-13-33l6 7M-10-35l6 7', stroke=GOLD, w=1.6)
+            + '<g transform="rotate(-30 52 -55)">'
+            + ellipse(52,-55,6.4,20,'#735022',GOLD)
+            + ellipse(53,-55,3.8,17,'#503616','#a37639')
+            + '</g>'
+            + brass_tube(slides, 4.3)
+            + brass_tube('M0-13L14-16Q19-17 21-11L29 13', 3.2)
+            + '<g transform="translate(0 -13) rotate(-12) scale(.7)">'
+            + brass_mouthpiece(-13,0)
+            + '</g>'
+            + valves)
 
 
 def cornetto():
@@ -1112,13 +1159,17 @@ def natural_trumpet():
 
 
 ART = {
-    'helicon': (lambda _: helicon(), 1.18, 'M4 7h4m4 0C7 3 2 8 3 14c1 6 8 8 12 4 2-2 3-6 1-8m-2 1c2 0 5 0 7-2l-3-5c-1 2-3 3-6 3M7 10v5m3-5v5'),
+    'helicon': (lambda _: helicon(), 0.92,
+                'M17 2Q15 5 9 8C3 11 2 17 6 20C10 24 17 21 18 16'
+                'Q19 11 13 9M17 2l4 6Q17 7 13 9L9 12M17 13l-3 4'),
     'madeiran-machete': (plucked, 1.28, 'M11 10V4L10 2h4l-1 2v6c2-1 4 0 3 2l-.5 2c0 1 2.5 2 2.5 4 0 4-12 4-12 0 0-2 2.5-3 2.5-4L8 12c-1-2 1-3 3-2ZM12 15h.01M10 18h4'),
     'juno-60': (lambda _: juno_60(), 1.05, 'M2 7h20v10H2zM2 12h20M7 12v5m3-5v5m3-5v5m3-5v5m3-5v5M5 9v1m4-1v1m4-1v1m4-1h2'),
     'tamboo-bamboo': (lambda _: tamboo_bamboo(), 1.13, 'M3 4q2-2 4 0v16H3ZM3 5h4m-4 6h4m-4 5h4M10 7q2-2 4 0v13h-4Zm0 1h4m-4 7h4m3-3q1.5-2 3 0v8h-3Zm0 1h3m.5-4 1.5-4'),
     'cornet': (lambda _: cornet(), 1.29, 'M2 9h4m0 0h10q3-1 5-4v11q-3-4-7-4H7q-3 0-3 3t3 3h7q4 0 4-3M7 7v11m3-11v11m3-11v8'),
     'flugelhorn': (lambda _: flugelhorn(), 1.22, 'M2 8h5m0 0h7q4-1 8-5v13q-4-4-9-4H6q-2 0-2 3v2q0 3 3 3h9q4 0 4-4M7 6v11m3-11v11m3-11v10'),
-    'sousaphone': (lambda _: sousaphone(), 1.1, 'M4 7h4m-2 0a8 8 0 1 0 10 1m-2 3 2-7 5-2 1 7-6 2m-9 0v5m3-5v5'),
+    'sousaphone': (lambda _: sousaphone(), 0.97,
+                   'M14 5.5a5 4.5 0 1 0-10 0 5 4.5 0 1 0 10 0ZM9.5 6h.01'
+                   'M8.5 10C5 13 5 20 11 22C17 24 21 16 17 12Q15 10 11 11M12 20l5-5'),
     'cornetto': (lambda _: cornetto(), 1.1, 'M3 6q8 0 19 8l-2 3Q12 10 3 9Zm4 2h.01m3 1h.01m3 1h.01m3 2h.01m3 1h.01'),
     'natural-trumpet': (lambda _: natural_trumpet(), 1.1, 'M2 9h13q4 0 7-4v9q-3-3-7-3H5q-3 0-3 3t3 3h16M8 11v6m7-6v6'),
     'trombone': (lambda _: straight_trombone(), 1.19, 'M2 8h7q4 0 7-3v6q-4-2-7-2H5q-3 0-3 3t3 3h15q2 0 2 2t-2 2H3m2-4v4m3-4v4'),

@@ -15,6 +15,21 @@ type Story = StoryObj<typeof meta>
 
 export const Genres: Story = {}
 
+export const OpenNodeWithHomeLink: Story = {
+  globals: { viewport: { value: 'mobile2', isRotated: false } },
+  parameters: { explorer: { initialSelectedId: 'genre:jazz' } },
+  play: async ({ canvasElement, userEvent }) => {
+    const explorerHeader = canvasElement.querySelector<HTMLElement>('[data-explorer-transition-header]')
+    if (!explorerHeader) throw new Error('Explorer header is missing')
+    const header = within(explorerHeader)
+    const home = header.getByRole('link', { name: 'Home' })
+    await expect(home).toBeVisible()
+    await expect(home).toHaveAttribute('href', '/en')
+    await userEvent.click(home)
+    await expect(header.getByRole('link', { name: 'Soundlines home' })).toBeVisible()
+  },
+}
+
 export const Artists: Story = {
   parameters: { explorer: { initialView: 'artist' } },
 }

@@ -89,6 +89,15 @@ describe('Explorer header statistics', () => {
     expect(markup).not.toContain('href="/en-US')
   })
 
+  it.each([
+    ['en', 'Home'],
+    ['fr', 'Accueil'],
+  ] as const)('shows a visible %s Home link when a node is open', (locale, label) => {
+    const markup = render(graph, <Explorer />, 'genre:jazz', 'genre', locale)
+    const header = markup.match(/<header\b[\s\S]*?<\/header>/)?.[0] ?? ''
+    expect(header).toMatch(new RegExp(`<a href="/${locale}"[^>]*>.*</svg>${label}</a>`))
+  })
+
   it('explains estimated bar edges in the timeline legend', () => {
     const estimatedGraph: MusicGraph = {
       ...graph,

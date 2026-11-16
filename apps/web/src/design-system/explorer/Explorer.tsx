@@ -1,6 +1,6 @@
 'use client'
 
-import { SlidersHorizontal } from 'lucide-react'
+import { ArrowLeft, SlidersHorizontal } from 'lucide-react'
 import { AnimatePresence, motion, useMotionValue } from 'motion/react'
 import { useEffect, useId, useMemo, useRef, useState, useCallback, type SetStateAction } from 'react'
 import { useTranslations } from 'next-intl'
@@ -13,6 +13,7 @@ import { Timeline } from '../timeline/Timeline.tsx'
 import { GenreBubbles } from '../bubbles/GenreBubbles.tsx'
 import { History } from '../timeline/History.tsx'
 import { BrandLink } from '../navigation/BrandLink.tsx'
+import { follow } from '../navigation/followLink.ts'
 import { MobileDetailSheet } from './MobileDetailSheet.tsx'
 import { ViewToggle } from './ExplorerControls.tsx'
 import { ExplorerOptions } from './ExplorerOptions.tsx'
@@ -50,6 +51,12 @@ export function Explorer() {
     const count = (type: string) => index.graph.nodes.filter((node) => node.type === type).length
     return { genre: count('genre'), artist: count('artist'), instrument: count('instrument') }
   }, [index])
+  const homeHref = localizePath('/', locale)
+  const homeLinkClass = 'flex min-h-11 shrink-0 items-center gap-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:gap-2.5'
+  const returnHome = () => {
+    setDesktopOptionsOpen(false)
+    goHome()
+  }
 
   useEffect(() => {
     const layout = layoutRef.current
@@ -89,26 +96,29 @@ export function Explorer() {
       }}
     >
       <header data-explorer-transition-header className={`soundlines-page-header ${optionsOpen ? 'z-50' : 'z-20'} flex shrink-0 items-center gap-2 border-b border-slate-800 bg-slate-950/90 px-3 py-2 md:px-5 xl:gap-6`}>
-        <BrandLink
-          href={localizePath('/', locale)}
-          scrollDistance={explorerScrollDistance}
-          iconClassName="h-6 w-6 shrink-0 md:h-7 md:w-7"
-          aria-label={t('home')}
-          onClick={(event) => {
-            if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
-            event.preventDefault()
-            setDesktopOptionsOpen(false)
-            goHome()
-          }}
-          className="flex shrink-0 items-center gap-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 md:gap-2.5"
-        >
-          <div>
-            <h1 className="text-lg font-bold leading-tight tracking-tight text-white">Soundlines</h1>
-            <p className="hidden text-[11px] font-medium leading-tight text-slate-500 xl:block">
-              {t('tagline')}
-            </p>
-          </div>
-        </BrandLink>
+        {selectedId ? (
+          <a href={homeHref} onClick={(event) => follow(event, returnHome)}
+            className={`${homeLinkClass} text-sm font-semibold text-slate-300 hover:text-white`}>
+            <ArrowLeft size={17} aria-hidden="true" />
+            {t('homeContent.footer.home')}
+          </a>
+        ) : (
+          <BrandLink
+            href={homeHref}
+            scrollDistance={explorerScrollDistance}
+            iconClassName="h-6 w-6 shrink-0 md:h-7 md:w-7"
+            aria-label={t('home')}
+            onClick={(event) => follow(event, returnHome)}
+            className={homeLinkClass}
+          >
+            <div>
+              <h1 className="text-lg font-bold leading-tight tracking-tight text-white">Soundlines</h1>
+              <p className="hidden text-[11px] font-medium leading-tight text-slate-500 xl:block">
+                {t('tagline')}
+              </p>
+            </div>
+          </BrandLink>
+        )}
         <div className="ml-auto shrink-0 md:ml-0 md:min-w-0 md:max-xl:flex-1 xl:w-80 xl:shrink">
           <SearchBar fillWidth />
         </div>

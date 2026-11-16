@@ -1,3 +1,4 @@
+import { useReducedMotion } from 'motion/react'
 import { useCallback, useEffect, useMemo, useRef, type Ref } from 'react'
 import { createWaveModel, planWaveRest, sampleCubicPath, WaveTape } from './soundlinesWave.ts'
 
@@ -98,7 +99,8 @@ export interface SoundlinesWaveControls {
   nudge: () => void
 }
 
-export function useSoundlinesWaves(enabled: boolean): SoundlinesWaveControls {
+export function useSoundlinesWaves(): SoundlinesWaveControls {
+  const enabled = !useReducedMotion()
   const paths = useRef<(SVGPathElement | null)[]>([])
   const pathRefs = useMemo(() => SOUNDLINES_WAVES.map((_, index) => (path: SVGPathElement | null) => { paths.current[index] = path }), [])
   const motion = useRef<SoundlinesWaveMotion | null>(null)

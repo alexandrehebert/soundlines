@@ -4,6 +4,8 @@ import { dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { PROJECT_SITE_URL, companionBaseUrl } from '@soundlines/project-config'
 import { mediaDirectory } from '@soundlines/media/source'
+import mobileConfig, { mobileCataloguePlugin } from '../../mobile-web/vite.config.ts'
+import { mergeConfig } from 'vite'
 
 // `pnpm build-storybook:public` publishes a browse-only catalogue with the
 // companion site, under /soundlines/storybook/.
@@ -38,10 +40,14 @@ const config: StorybookConfig = {
   },
   staticDirs: [mediaDirectory, ...appAssets, artworkFixture],
   managerHead: (head) => (isPublic ? `${head}\n<script>globalThis.SOUNDLINES_PUBLIC_STORYBOOK = true</script>` : head),
-  viteFinal: (viteConfig) => {
-    viteConfig.plugins = [...(viteConfig.plugins ?? []), tailwindcss()]
+  viteFinal: (config) => {
+    const viteConfig = mergeConfig(config, {
+      plugins: [tailwindcss(), mobileCataloguePlugin],
+      resolve: { alias: mobileConfig.resolve?.alias },
+    })
     viteConfig.define = {
       ...viteConfig.define,
+      ...mobileConfig.define,
       'process.env.NEXT_PUBLIC_SOUNDLINES_COMPANION_URL': JSON.stringify(isPublic ? PROJECT_SITE_URL : companionBaseUrl()),
     }
     if (isPublic) {

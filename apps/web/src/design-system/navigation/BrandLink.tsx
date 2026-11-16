@@ -1,12 +1,11 @@
-import { motion, useMotionValueEvent, useReducedMotion, useScroll, type HTMLMotionProps, type MotionValue } from 'motion/react'
+import { motion, useMotionValueEvent, useScroll, type HTMLMotionProps, type MotionValue } from 'motion/react'
 import type { ReactNode } from 'react'
-import { SoundlinesMark } from './SoundlinesMark.tsx'
-import { useSoundlinesWaves } from './soundlinesMarkMotion.ts'
+import { SoundlinesMark } from '@soundlines/ui-web/SoundlinesMark'
+import { useSoundlinesWaves } from '@soundlines/ui-web/soundlinesMarkMotion'
 
 export function BrandLink({ children, iconClassName, scrollDistance, onPointerEnter, onPointerLeave, onFocus, onBlur, ...props }: Omit<HTMLMotionProps<'a'>, 'children'> & { children: ReactNode; iconClassName?: string; scrollDistance?: MotionValue<number> }) {
-  const reduceMotion = useReducedMotion()
   const { scrollY } = useScroll()
-  const waves = useSoundlinesWaves(!reduceMotion)
+  const waves = useSoundlinesWaves()
   useMotionValueEvent(scrollDistance ?? scrollY, 'change', waves.nudge)
 
   return (

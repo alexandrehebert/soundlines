@@ -5,30 +5,43 @@
   "method": "generator",
   "references": [
     {
-      "url": "https://dornsife.usc.edu/news/stories/a-sousa-phony-exposed/",
-      "shows": "Documents the historical specimen or origin of the instrument."
+      "url": "https://connselmer.com/instruments/marching-brass/conn-sousaphone-in-bbb-20k",
+      "shows": "An all-brass bell-front model with a broad bell, body wrap and short-action piston valves."
     },
     {
-      "url": "https://www.yamaha.com/en/about/experience/innovation-road/collection/detail/6022/",
-      "shows": "Shows the construction or outline of the chosen instrument form."
+      "url": "https://www.jupiter.info/en/instruments/brass/sousaphone/1100-series-sousaphone",
+      "shows": "Specifies a 660 mm bell, 130 cm overall height and three front-action valves on the all-brass JSP1100."
     }
   ],
-  "silhouette": "A torso-sized circular wrap under a large forward-facing bell.",
+  "silhouette": "A broad, nearly round bell facing the viewer above a similar-width torso wrap, with the valve assembly following the lower-right rim.",
   "features": [
-    "A torso-sized circular wrap under a large forward-facing bell.",
-    "Keep the center open for the player.",
-    "Place the valves on one side of the hoop and the narrow mouthpipe at shoulder level."
+    "A heavy outer bow sweeps below the open centre and rises behind the left half of the bell.",
+    "A narrower return follows the body wrap and meets the valve assembly at its lower and upper ends.",
+    "Three front-action piston buttons and their folded slides follow the lower-right rim on a diagonal.",
+    "A narrow leadpipe arcs from the cup mouthpiece through the upper half of the body opening to the valves.",
+    "The near-circular bell face is almost as wide as the body wrap, with a broad reflective flare surrounding a recessed throat."
   ],
   "iconFeatures": [
-    "A torso-sized circular wrap under a large forward-facing bell."
+    "A nearly round bell face perched above and slightly to one side of the open body wrap.",
+    "A short diagonal valve silhouette against the lower-right rim."
   ],
   "avoid": [
-    "Contours that obscure the characteristic tubing path"
+    "Exposed ends on the main bow or valve slide tubing.",
+    "A small bell pointing sideways or a valve block suspended high in the open centre."
   ],
-  "notes": "Shows the variant described in the geometry. The icon preserves the major outer contours.",
+  "notes": "The front-facing Jupiter product photo guides the silhouette and valve placement. The icon simplifies the folded tubing and keeps the offset bell, ring and diagonal valve silhouette at 16 px.",
   "geometry": {
-    "view": "Front three-quarter of a bell-front model",
-    "proportions": "A torso-sized circular wrap under a large forward-facing bell.",
-    "partLayout": "Keep the center open for the player. Place the valves on one side of the hoop and the narrow mouthpipe at shoulder level."
+    "view": "Near head-on view of an all-brass bell-front sousaphone in playing position",
+    "proportions": "The projected bell opening is about nine tenths of the wrap width and nearly half of the full instrument height. The valve block occupies the lower-right edge of the opening.",
+    "partLayout": "Place the bell just left of centre with its lower lip overlapping the rising main bow. Run the main bow around the left and bottom of the open wrap and connect it to the valve assembly on the right. Keep the adjacent return bow and slide connections visible. Run the leadpipe toward the centre from the top of the valve assembly.",
+    "documentedDimensions": {
+      "value": "660 mm bell diameter, 130 cm overall height",
+      "source": "https://www.jupiter.info/en/instruments/brass/sousaphone/1100-series-sousaphone",
+      "scope": "Jupiter JSP1100"
+    },
+    "referenceImage": {
+      "url": "https://www.jupiter.info/fileadmin/_processed_/c/0/csm_JSP1100_web_original_2778e10890.png",
+      "source": "https://www.jupiter.info/en/instruments/brass/sousaphone"
+    }
   }
 }

@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'packages/media/public/instrument-*/**'
+      - 'packages/media/public/genre-artwork/**'
       - 'scripts/artwork/**'
       - 'docs/artwork/**'
       - '.github/agents/artwork-*.agent.md'
@@ -23,6 +24,7 @@ on:
     branches: [main]
     paths:
       - 'packages/media/public/instrument-*/**'
+      - 'packages/media/public/genre-artwork/**'
       - 'scripts/artwork/**'
       - 'docs/artwork/**'
       - '.github/agents/artwork-*.agent.md'
@@ -62,5 +64,7 @@ jobs:
         run: node .agents/skills/artwork-brief/scripts/check-brief.mjs
       - name: Validate artwork and generator output
         run: node .agents/skills/artwork-validate/scripts/check-artwork.mjs --require-render
+      - name: Validate genre artwork briefs and covers
+        run: pnpm artwork:genres --check
       - name: Test artwork validation and app icons
         run: pnpm exec vitest run scripts/artwork/validation.test.ts apps/web/src/design-system/explorer/InstrumentIcon.test.tsx

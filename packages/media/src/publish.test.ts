@@ -24,6 +24,9 @@ it('publishes a usable catalogue index and refreshes shared files alongside app 
     expect(Object.keys(manifest.instrumentArtwork['instrument:saxophone']).sort())
       .toEqual(['avatar', 'banner', 'header', 'icon'])
     expect(manifest.loops['turntable-hip-hop'].path).toBe('loops/turntable-hip-hop.wav')
+    const cover = manifest.genreArtwork['genre:disco']
+    expect(cover.path).toBe('genre-artwork/disco.webp')
+    expect(readFileSync(join(output, cover.path)).byteLength).toBe(cover.bytes)
     expect(existsSync(join(output, 'genre-previews/retired.m4a'))).toBe(false)
     expect(readFileSync(join(output, 'app-only.json'), 'utf8')).toBe('{}')
   } finally {

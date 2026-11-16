@@ -60148,6 +60148,1098 @@
         "https://www.ibew.org.uk/dvarch/DV01731.pdf",
         "https://pearl-hifi.com/06_Lit_Archive/02_PEARL_Arch/Vol_16/Sec_53/Hi-Fi_Stereo_Review/1960-11-hifi-stereo-review.pdf"
       ]
+    },
+    {
+      "id": "origin:artist-juan-atkins-detroit",
+      "type": "originated_in",
+      "from": "artist:juan-atkins",
+      "to": "place:detroit",
+      "confidence": "high",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/atkins-juan",
+        "https://detroitmi.gov/sites/detroitmi.localhost/files/2018-04/2001%20Council.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-derrick-may-detroit",
+      "type": "originated_in",
+      "from": "artist:derrick-may",
+      "to": "place:detroit",
+      "confidence": "medium",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/may-derrick"
+      ]
+    },
+    {
+      "id": "origin:artist-carl-craig-detroit",
+      "type": "originated_in",
+      "from": "artist:carl-craig",
+      "to": "place:detroit",
+      "confidence": "medium",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/craig-carl"
+      ]
+    },
+    {
+      "id": "origin:artist-jeff-mills-detroit",
+      "type": "originated_in",
+      "from": "artist:jeff-mills",
+      "to": "place:detroit",
+      "confidence": "medium",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/mills-jeff"
+      ]
+    },
+    {
+      "id": "origin:artist-robert-hood-detroit",
+      "type": "originated_in",
+      "from": "artist:robert-hood",
+      "to": "place:detroit",
+      "confidence": "medium",
+      "sources": [
+        "https://www.insomniac.com/music/artists/robert-hood/"
+      ]
+    },
+    {
+      "id": "origin:artist-blake-baxter-detroit",
+      "type": "originated_in",
+      "from": "artist:blake-baxter",
+      "to": "place:detroit",
+      "confidence": "medium",
+      "sources": [
+        "https://blakebaxter.bandcamp.com/community",
+        "https://wdet.org/2022/05/26/who-created-detroit-techno-new-documentary-shines-light-on-pioneering-musicians/"
+      ]
+    },
+    {
+      "id": "origin:artist-eddie-fowlkes-detroit",
+      "type": "originated_in",
+      "from": "artist:eddie-fowlkes",
+      "to": "place:detroit",
+      "confidence": "medium",
+      "sources": [
+        "https://www.quarterdetroit.com/person/?lang=en&slug=eddie-fowlkes",
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/fowlkes-eddie"
+      ]
+    },
+    {
+      "id": "origin:artist-stacey-pullen-detroit",
+      "type": "originated_in",
+      "from": "artist:stacey-pullen",
+      "to": "place:detroit",
+      "confidence": "medium",
+      "sources": [
+        "https://wearesoundspace.com/40-questions-stacey-pullen/",
+        "https://ra.co/exchange/190"
+      ]
+    },
+    {
+      "id": "origin:artist-dorothy-ashby-detroit",
+      "type": "originated_in",
+      "from": "artist:dorothy-ashby",
+      "to": "place:detroit",
+      "confidence": "medium",
+      "sources": [
+        "https://www.harpsociety.org/downloads/files/F7EPG2JDMREPKZCABTG-2021-summer-Dorothy-Ashby.pdf",
+        "https://www.si.edu/media/NMAH/NMAH-AC0808_Harris_Barry_Transcript.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-donald-byrd-detroit",
+      "type": "originated_in",
+      "from": "artist:donald-byrd",
+      "to": "place:detroit",
+      "confidence": "medium",
+      "sources": [
+        "https://www.bluenote.com/artist/donald-byrd/"
+      ]
+    },
+    {
+      "id": "origin:artist-underground-resistance-detroit",
+      "type": "originated_in",
+      "from": "artist:underground-resistance",
+      "to": "place:detroit",
+      "confidence": "high",
+      "sources": [
+        "https://www.roland.com/RolandComSite/media/global/release/pdf/2024/20240301_1_Somewhere_in_Detroit.pdf",
+        "https://timeline.carnegiehall.org/genres/detroit-techno"
+      ]
+    },
+    {
+      "id": "origin:artist-octave-one-detroit",
+      "type": "originated_in",
+      "from": "artist:octave-one",
+      "to": "place:detroit",
+      "confidence": "high",
+      "sources": [
+        "https://ra.co/features/4162",
+        "https://www.musicradar.com/news/tech/octave-ones-lenny-burden-looks-back-over-a-30-year-career-in-techno-645506"
+      ]
+    },
+    {
+      "id": "origin:artist-deepchord-detroit",
+      "type": "originated_in",
+      "from": "artist:deepchord",
+      "to": "place:detroit",
+      "confidence": "medium",
+      "sources": [
+        "https://ra.co/dj/mikeschommer/biography",
+        "https://inverted-audio.com/feature/deepchord/"
+      ]
+    },
+    {
+      "id": "origin:artist-insane-clown-posse-detroit",
+      "type": "originated_in",
+      "from": "artist:insane-clown-posse",
+      "to": "place:detroit",
+      "confidence": "medium",
+      "sources": [
+        "https://www.insomniac.com/music/artists/insane-clown-posse/"
+      ]
+    },
+    {
+      "id": "origin:artist-the-supremes-detroit",
+      "type": "originated_in",
+      "from": "artist:the-supremes",
+      "to": "place:detroit",
+      "confidence": "medium",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/supremes"
+      ]
+    },
+    {
+      "id": "origin:artist-metallica-los-angeles",
+      "type": "originated_in",
+      "from": "artist:metallica",
+      "to": "place:los-angeles",
+      "confidence": "medium",
+      "sources": [
+        "https://www.metallica.com/history/"
+      ]
+    },
+    {
+      "id": "origin:artist-saint-vitus-los-angeles",
+      "type": "originated_in",
+      "from": "artist:saint-vitus",
+      "to": "place:los-angeles",
+      "confidence": "high",
+      "sources": [
+        "https://www.saintvitusband.com/",
+        "https://www.durbuyrock.be/wp-content/uploads/2019/03/DRF-2019-PROGRAMME.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-the-coasters-los-angeles",
+      "type": "originated_in",
+      "from": "artist:the-coasters",
+      "to": "place:los-angeles",
+      "confidence": "medium",
+      "sources": [
+        "https://ohp.parks.ca.gov/pages/1054/files/SurveyLA_AfricanAmericanHCS_Nov2017.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-the-platters-los-angeles",
+      "type": "originated_in",
+      "from": "artist:the-platters",
+      "to": "place:los-angeles",
+      "confidence": "medium",
+      "sources": [
+        "https://theplatters.com/about/"
+      ]
+    },
+    {
+      "id": "origin:artist-grandmaster-flash-and-the-furious-five-bronx",
+      "type": "originated_in",
+      "from": "artist:grandmaster-flash-and-the-furious-five",
+      "to": "place:bronx",
+      "confidence": "medium",
+      "sources": [
+        "https://www.bronxwalkoffame.com/inductees/grandmaster-flash-the-furious-five"
+      ]
+    },
+    {
+      "id": "origin:artist-frankie-knuckles-bronx",
+      "type": "originated_in",
+      "from": "artist:frankie-knuckles",
+      "to": "place:bronx",
+      "confidence": "medium",
+      "sources": [
+        "https://chicagolgbthalloffame.org/knuckles-frankie/"
+      ]
+    },
+    {
+      "id": "origin:artist-willie-colon-bronx",
+      "type": "originated_in",
+      "from": "artist:willie-colon",
+      "to": "place:bronx",
+      "confidence": "medium",
+      "sources": [
+        "https://fania.com/artist-essentials/willie-colon/"
+      ]
+    },
+    {
+      "id": "origin:artist-blur-london",
+      "type": "originated_in",
+      "from": "artist:blur",
+      "to": "place:london",
+      "confidence": "medium",
+      "sources": [
+        "https://www.radiox.co.uk/artists/blur/"
+      ]
+    },
+    {
+      "id": "origin:artist-osibisa-london",
+      "type": "originated_in",
+      "from": "artist:osibisa",
+      "to": "place:london",
+      "confidence": "medium",
+      "sources": [
+        "https://replay.bfi.org.uk/video/8a250d6a-4b2e-5e86-923c-4259bdc49d38",
+        "https://kclpure.kcl.ac.uk/portal/files/31009547/2012_vanKlyton_Aaron_0731887_ethesis.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-judas-priest-birmingham",
+      "type": "originated_in",
+      "from": "artist:judas-priest",
+      "to": "place:birmingham",
+      "confidence": "medium",
+      "sources": [
+        "https://www.sonymusic.co.uk/artist/judas-priest/"
+      ]
+    },
+    {
+      "id": "origin:artist-chemical-brothers-manchester",
+      "type": "originated_in",
+      "from": "artist:chemical-brothers",
+      "to": "place:manchester",
+      "confidence": "medium",
+      "sources": [
+        "https://www.officialcharts.com/artist/23781/chemical-brothers/"
+      ]
+    },
+    {
+      "id": "origin:artist-yo-yo-ma-paris",
+      "type": "originated_in",
+      "from": "artist:yo-yo-ma",
+      "to": "place:paris",
+      "confidence": "medium",
+      "sources": [
+        "https://www.yo-yoma.com/biography/"
+      ]
+    },
+    {
+      "id": "origin:artist-kassav-paris",
+      "type": "originated_in",
+      "from": "artist:kassav",
+      "to": "place:paris",
+      "confidence": "medium",
+      "sources": [
+        "https://daily.redbullmusicacademy.com/2015/12/zouk-feature/"
+      ]
+    },
+    {
+      "id": "origin:artist-the-heptones-kingston",
+      "type": "originated_in",
+      "from": "artist:the-heptones",
+      "to": "place:kingston",
+      "confidence": "medium",
+      "sources": [
+        "https://ttabvue.uspto.gov/ttabvue/ttabvue-91256144-OPP-74.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-khaled-oran",
+      "type": "originated_in",
+      "from": "artist:khaled",
+      "to": "place:oran",
+      "confidence": "medium",
+      "sources": [
+        "https://www.worldradiohistory.com/Archive-All-Music/CMJ/1997/CMJ-New-Music-1997-08.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-prince-royce-bronx",
+      "type": "originated_in",
+      "from": "artist:prince-royce",
+      "to": "place:bronx",
+      "confidence": "medium",
+      "sources": [
+        "https://www.bronxwalkoffame.com/inductees/prince-royce"
+      ]
+    },
+    {
+      "id": "origin:artist-kevin-saunderson-new-york",
+      "type": "originated_in",
+      "from": "artist:kevin-saunderson",
+      "to": "place:new-york",
+      "confidence": "medium",
+      "sources": [
+        "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/saunderson-kevin"
+      ]
+    },
+    {
+      "id": "origin:artist-jamiroquai-london",
+      "type": "originated_in",
+      "from": "artist:jamiroquai",
+      "to": "place:london",
+      "confidence": "medium",
+      "sources": [
+        "https://www.officialcharts.com/artist/28264/jamiroquai/"
+      ]
+    },
+    {
+      "id": "origin:artist-so-solid-crew-london",
+      "type": "originated_in",
+      "from": "artist:so-solid-crew",
+      "to": "place:london",
+      "confidence": "medium",
+      "sources": [
+        "https://www.officialcharts.com/artist/9989/so-solid-crew/"
+      ]
+    },
+    {
+      "id": "origin:artist-suede-london",
+      "type": "originated_in",
+      "from": "artist:suede",
+      "to": "place:london",
+      "confidence": "medium",
+      "sources": [
+        "https://www.officialcharts.com/artist/27658/suede/"
+      ]
+    },
+    {
+      "id": "origin:artist-the-human-league-sheffield",
+      "type": "originated_in",
+      "from": "artist:the-human-league",
+      "to": "place:sheffield",
+      "confidence": "medium",
+      "sources": [
+        "https://sheffieldmusicarchive.co.uk/bands/human-league/"
+      ]
+    },
+    {
+      "id": "origin:artist-david-bowie-london",
+      "type": "originated_in",
+      "from": "artist:david-bowie",
+      "to": "place:london",
+      "confidence": "medium",
+      "sources": [
+        "https://www.davidbowie.com/about"
+      ]
+    },
+    {
+      "id": "origin:artist-alban-berg-vienna",
+      "type": "originated_in",
+      "from": "artist:alban-berg",
+      "to": "place:vienna",
+      "confidence": "medium",
+      "sources": [
+        "https://ressources.ircam.fr/fr/composer/alban-berg/biography"
+      ]
+    },
+    {
+      "id": "origin:artist-helloween-hamburg",
+      "type": "originated_in",
+      "from": "artist:helloween",
+      "to": "place:hamburg",
+      "confidence": "medium",
+      "sources": [
+        "https://helloween.reigningphoenix.music/en/"
+      ]
+    },
+    {
+      "id": "origin:artist-can-cologne",
+      "type": "originated_in",
+      "from": "artist:can",
+      "to": "place:cologne",
+      "confidence": "medium",
+      "sources": [
+        "https://thequietus.com/interviews/irmin-schmidt-can-interview/"
+      ]
+    },
+    {
+      "id": "origin:artist-the-clash-london",
+      "type": "originated_in",
+      "from": "artist:the-clash",
+      "to": "place:london",
+      "confidence": "medium",
+      "sources": [
+        "https://birminghammusicarchive.com/index.php/band-performer/the-clash/"
+      ]
+    },
+    {
+      "id": "origin:artist-tangerine-dream-berlin",
+      "type": "originated_in",
+      "from": "artist:tangerine-dream",
+      "to": "place:berlin",
+      "confidence": "medium",
+      "sources": [
+        "https://www.tangerinedreammusic.com/en/biography/index.asp?dat=Tangerine+Dream+History+extended"
+      ]
+    },
+    {
+      "id": "origin:artist-slowdive-reading",
+      "type": "originated_in",
+      "from": "artist:slowdive",
+      "to": "place:reading",
+      "confidence": "high",
+      "sources": [
+        "https://warppublishing.net/artists/slowdive/",
+        "https://music.apple.com/us/album/everything-is-alive/1688456129"
+      ]
+    },
+    {
+      "id": "origin:artist-bring-me-the-horizon-sheffield",
+      "type": "originated_in",
+      "from": "artist:bring-me-the-horizon",
+      "to": "place:sheffield",
+      "confidence": "high",
+      "sources": [
+        "https://first-avenue.com/performer/bring-me-the-horizon/",
+        "https://www.rollingstone.co.uk/music/features/how-bring-me-the-horizon-saved-british-rock-oli-sykes-rolling-stone-uk-cover-10225/"
+      ]
+    },
+    {
+      "id": "origin:artist-massive-attack-bristol",
+      "type": "originated_in",
+      "from": "artist:massive-attack",
+      "to": "place:bristol",
+      "confidence": "medium",
+      "sources": [
+        "https://www.musicradar.com/artists/the-title-came-up-as-a-joke-at-first-but-it-fitted-the-song-perfectly-we-just-had-to-use-it-how-massive-attack-created-the-groundbreaking-90s-hit-that-propelled-bristols-unique-music-scene-into-the-global-spotlight"
+      ]
+    },
+    {
+      "id": "origin:artist-beyonce-houston",
+      "type": "originated_in",
+      "from": "artist:beyonce",
+      "to": "place:houston",
+      "confidence": "medium",
+      "sources": [
+        "https://www.grammy.com/artists/beyonce-knowles/12474/"
+      ]
+    },
+    {
+      "id": "origin:artist-kendrick-lamar-compton",
+      "type": "originated_in",
+      "from": "artist:kendrick-lamar",
+      "to": "place:compton",
+      "confidence": "medium",
+      "sources": [
+        "https://www.biography.com/musicians/kendrick-lamar"
+      ]
+    },
+    {
+      "id": "origin:artist-future-atlanta",
+      "type": "originated_in",
+      "from": "artist:future",
+      "to": "place:atlanta",
+      "confidence": "medium",
+      "sources": [
+        "https://www.insomniac.com/music/artists/future/"
+      ]
+    },
+    {
+      "id": "origin:artist-lil-wayne-new-orleans",
+      "type": "originated_in",
+      "from": "artist:lil-wayne",
+      "to": "place:new-orleans",
+      "confidence": "medium",
+      "sources": [
+        "https://www.biography.com/musicians/lil-wayne"
+      ]
+    },
+    {
+      "id": "origin:artist-louis-armstrong-new-orleans",
+      "type": "originated_in",
+      "from": "artist:louis-armstrong",
+      "to": "place:new-orleans",
+      "confidence": "medium",
+      "sources": [
+        "https://www.louisarmstronghouse.org/biography/"
+      ]
+    },
+    {
+      "id": "origin:artist-fania-all-stars-new-york",
+      "type": "originated_in",
+      "from": "artist:fania-all-stars",
+      "to": "place:new-york",
+      "confidence": "medium",
+      "sources": [
+        "https://fania.com/timeline/the-red-garter-new-york/"
+      ]
+    },
+    {
+      "id": "origin:artist-ramones-new-york",
+      "type": "originated_in",
+      "from": "artist:ramones",
+      "to": "place:new-york",
+      "confidence": "medium",
+      "sources": [
+        "https://grammymuseum.org/exhibit/hey-ho-lets-go-ramones-and-the-birth-of-punk/"
+      ]
+    },
+    {
+      "id": "origin:artist-talking-heads-new-york",
+      "type": "originated_in",
+      "from": "artist:talking-heads",
+      "to": "place:new-york",
+      "confidence": "medium",
+      "sources": [
+        "https://www.officialcharts.com/artist/18789/talking-heads/"
+      ]
+    },
+    {
+      "id": "origin:artist-bad-brains-washington-d-c",
+      "type": "originated_in",
+      "from": "artist:bad-brains",
+      "to": "place:washington-d-c",
+      "confidence": "medium",
+      "sources": [
+        "https://badbrains.com/pages/history"
+      ]
+    },
+    {
+      "id": "origin:artist-trouble-chicago",
+      "type": "originated_in",
+      "from": "artist:trouble",
+      "to": "place:chicago",
+      "confidence": "medium",
+      "sources": [
+        "https://www.troublemetal.com/history-1"
+      ]
+    },
+    {
+      "id": "origin:artist-common-chicago",
+      "type": "originated_in",
+      "from": "artist:common",
+      "to": "place:chicago",
+      "confidence": "medium",
+      "sources": [
+        "https://www.grammy.com/news/5-questions-with-common/"
+      ]
+    },
+    {
+      "id": "origin:artist-fugazi-washington-d-c",
+      "type": "originated_in",
+      "from": "artist:fugazi",
+      "to": "place:washington-d-c",
+      "confidence": "medium",
+      "sources": [
+        "https://dischord.com/band/fugazi"
+      ]
+    },
+    {
+      "id": "origin:artist-dead-kennedys-san-francisco",
+      "type": "originated_in",
+      "from": "artist:dead-kennedys",
+      "to": "place:san-francisco",
+      "confidence": "medium",
+      "sources": [
+        "https://deadkennedys.com/"
+      ]
+    },
+    {
+      "id": "origin:artist-mongo-santamaria-havana",
+      "type": "originated_in",
+      "from": "artist:mongo-santamaria",
+      "to": "place:havana",
+      "confidence": "medium",
+      "sources": [
+        "https://sirismm.si.edu/EADpdfs/NMAH.AC.0893.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-anibal-troilo-buenos-aires",
+      "type": "originated_in",
+      "from": "artist:anibal-troilo",
+      "to": "place:buenos-aires",
+      "confidence": "medium",
+      "sources": [
+        "https://www.argentina.gob.ar/node/465370"
+      ]
+    },
+    {
+      "id": "origin:artist-marshall-jefferson-chicago",
+      "type": "originated_in",
+      "from": "artist:marshall-jefferson",
+      "to": "place:chicago",
+      "confidence": "medium",
+      "sources": [
+        "https://djmag.com/longreads/marshall-jefferson-master-house"
+      ]
+    },
+    {
+      "id": "origin:artist-alton-ellis-kingston",
+      "type": "originated_in",
+      "from": "artist:alton-ellis",
+      "to": "place:kingston",
+      "confidence": "medium",
+      "sources": [
+        "https://www.nlj.gov.jm/REGGAE%20EXHIBITION/Alton%20Ellis.htm"
+      ]
+    },
+    {
+      "id": "origin:artist-beenie-man-kingston",
+      "type": "originated_in",
+      "from": "artist:beenie-man",
+      "to": "place:kingston",
+      "confidence": "medium",
+      "sources": [
+        "https://www.grammy.com/news/beenie-man-interview-dancehall-king-visa-status-tour/"
+      ]
+    },
+    {
+      "id": "origin:artist-the-skatalites-kingston",
+      "type": "originated_in",
+      "from": "artist:the-skatalites",
+      "to": "place:kingston",
+      "confidence": "medium",
+      "sources": [
+        "https://skatalites.com/history"
+      ]
+    },
+    {
+      "id": "origin:artist-daddy-yankee-san-juan",
+      "type": "originated_in",
+      "from": "artist:daddy-yankee",
+      "to": "place:san-juan",
+      "confidence": "medium",
+      "sources": [
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Gasolina_Rivera-Rideau.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-machel-montano-port-of-spain",
+      "type": "originated_in",
+      "from": "artist:machel-montano",
+      "to": "place:port-of-spain",
+      "confidence": "medium",
+      "sources": [
+        "https://machelmontano.com/biography/"
+      ]
+    },
+    {
+      "id": "origin:artist-eboa-lotin-douala",
+      "type": "originated_in",
+      "from": "artist:eboa-lotin",
+      "to": "place:douala",
+      "confidence": "medium",
+      "sources": [
+        "https://eboalotin.com/biographie/"
+      ]
+    },
+    {
+      "id": "origin:artist-el-hadj-mhamed-el-anka-algiers",
+      "type": "originated_in",
+      "from": "artist:el-hadj-mhamed-el-anka",
+      "to": "place:algiers",
+      "confidence": "medium",
+      "sources": [
+        "https://catalogue.bnf.fr/ark:/12148/cb13954501v"
+      ]
+    },
+    {
+      "id": "origin:artist-manu-dibango-douala",
+      "type": "originated_in",
+      "from": "artist:manu-dibango",
+      "to": "place:douala",
+      "confidence": "high",
+      "sources": [
+        "https://courier.unesco.org/fr/articles/quand-lafrique-sen-mele",
+        "https://musee.sacem.fr/index.php/ExhibitionCMS/ExhibitionCMS/ComplexExhibitions?id=2681"
+      ]
+    },
+    {
+      "id": "origin:artist-youssou-ndour-dakar",
+      "type": "originated_in",
+      "from": "artist:youssou-ndour",
+      "to": "place:dakar",
+      "confidence": "high",
+      "sources": [
+        "https://www.praemiumimperiale.org/en/laureate/ndour/",
+        "https://www.sharjahart.org/en/people/details/youssou-ndour"
+      ]
+    },
+    {
+      "id": "origin:artist-cheb-hasni-oran",
+      "type": "originated_in",
+      "from": "artist:cheb-hasni",
+      "to": "place:oran",
+      "confidence": "high",
+      "sources": [
+        "https://www.ima-tourcoing.fr/wp-content/uploads/2025/11/BasseDef-DOSSIER-PEDAGOGIQUE_YARAYI-1-1.pdf",
+        "https://www.lemonde.fr/archives/article/1994/10/01/algerie-cheb-hasni-le-champion-du-rai-sentimental_3853888_1819218.html"
+      ]
+    },
+    {
+      "id": "origin:artist-wizkid-lagos",
+      "type": "originated_in",
+      "from": "artist:wizkid",
+      "to": "place:lagos",
+      "confidence": "medium",
+      "sources": [
+        "https://mn.gov/gov-stat/pdf/2018_10_06_Wizkid_Day.pdf",
+        "https://www.myjoyonline.com/5-minutes-with-wizkid/"
+      ]
+    },
+    {
+      "id": "origin:artist-pearl-jam-seattle",
+      "type": "originated_in",
+      "from": "artist:pearl-jam",
+      "to": "place:seattle",
+      "confidence": "high",
+      "sources": [
+        "https://www.latimes.com/archives/la-xpm-2000-oct-19-ca-38639-story.html",
+        "https://rockhall.com/wp-content/uploads/2024/03/Pearl_Jam_2017.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-soundgarden-seattle",
+      "type": "originated_in",
+      "from": "artist:soundgarden",
+      "to": "place:seattle",
+      "confidence": "high",
+      "sources": [
+        "https://www.onamrecords.com/sites/default/files/2025-11/Soundgarden_1997_press_release.pdf",
+        "https://rockhall.com/inductees/soundgarden/"
+      ]
+    },
+    {
+      "id": "origin:artist-astrud-gilberto-salvador",
+      "type": "originated_in",
+      "from": "artist:astrud-gilberto",
+      "to": "place:salvador",
+      "confidence": "high",
+      "sources": [
+        "https://dicionariompb.com.br/artista/astrud-gilberto/",
+        "https://www.theguardian.com/music/2023/jun/06/astrud-gilberto-obituary"
+      ]
+    },
+    {
+      "id": "origin:artist-the-ronettes-new-york",
+      "type": "originated_in",
+      "from": "artist:the-ronettes",
+      "to": "place:new-york",
+      "confidence": "high",
+      "sources": [
+        "https://blogs.loc.gov/now-see-hear/2023/08/be-my-baby-at-60/",
+        "https://www.ronniespector.com/about"
+      ]
+    },
+    {
+      "id": "origin:artist-tito-puente-new-york",
+      "type": "originated_in",
+      "from": "artist:tito-puente",
+      "to": "place:new-york",
+      "confidence": "medium",
+      "sources": [
+        "https://sirismm.si.edu/EADpdfs/NMAH.AC.0894.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-don-caballero-pittsburgh",
+      "type": "originated_in",
+      "from": "artist:don-caballero",
+      "to": "place:pittsburgh",
+      "confidence": "high",
+      "sources": [
+        "https://daily.bandcamp.com/lists/don-caballero-album-guide",
+        "https://www.washingtonpost.com/archive/lifestyle/2006/07/14/don-caballero-world-class-listening-problem-relapse-haram-haram-lovitt/099b5c00-2de7-4639-846f-34a885f3788b/"
+      ]
+    },
+    {
+      "id": "origin:artist-sonic-youth-new-york",
+      "type": "originated_in",
+      "from": "artist:sonic-youth",
+      "to": "place:new-york",
+      "confidence": "medium",
+      "sources": [
+        "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/daydream%20nation.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-sly-and-the-family-stone-san-francisco",
+      "type": "originated_in",
+      "from": "artist:sly-and-the-family-stone",
+      "to": "place:san-francisco",
+      "confidence": "high",
+      "sources": [
+        "https://thefamilystoneband.com/abouttheband/",
+        "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/Cash-Box/60s/1967/CB-1967-09-16.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-rolling-stones-london",
+      "type": "originated_in",
+      "from": "artist:rolling-stones",
+      "to": "place:london",
+      "confidence": "high",
+      "sources": [
+        "https://blog.oup.com/2012/07/rock-n-roll-rolling-stones-debut-12-july-1962/",
+        "https://www.rhino.com/article/the-rolling-stones"
+      ]
+    },
+    {
+      "id": "origin:artist-sex-pistols-london",
+      "type": "originated_in",
+      "from": "artist:sex-pistols",
+      "to": "place:london",
+      "confidence": "high",
+      "sources": [
+        "https://www.sexpistolsofficial.com/bio/timeline/",
+        "https://www.london.gov.uk/sites/default/files/london_history_day_teachers_pack_fa.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-iron-maiden-london",
+      "type": "originated_in",
+      "from": "artist:iron-maiden",
+      "to": "place:london",
+      "confidence": "medium",
+      "sources": [
+        "https://www.ironmaiden.com/the-band/"
+      ]
+    },
+    {
+      "id": "origin:artist-schoenberg-vienna",
+      "type": "originated_in",
+      "from": "artist:schoenberg",
+      "to": "place:vienna",
+      "confidence": "medium",
+      "sources": [
+        "https://resources.ircam.fr/en/composer/arnold-schoenberg"
+      ]
+    },
+    {
+      "id": "origin:artist-francoise-hardy-paris",
+      "type": "originated_in",
+      "from": "artist:francoise-hardy",
+      "to": "place:paris",
+      "confidence": "medium",
+      "sources": [
+        "https://www.institutfrancais.at/sites/default/files/inline-files/Fiche%20de%20pr%C3%A9sentation%20Puisque%20vous%20partez%20en%20voyage.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-oasis-manchester",
+      "type": "originated_in",
+      "from": "artist:oasis",
+      "to": "place:manchester",
+      "confidence": "high",
+      "sources": [
+        "https://www.mdmarchive.co.uk/tag/702/Oasis",
+        "https://www.oasisinet.com/the-story/"
+      ]
+    },
+    {
+      "id": "origin:artist-kraftwerk-duesseldorf",
+      "type": "originated_in",
+      "from": "artist:kraftwerk",
+      "to": "place:duesseldorf",
+      "confidence": "high",
+      "sources": [
+        "https://www.visitduesseldorf.de/business/kontakt/medienservice/infotexte/the-sound-of-duesseldorf-vom-Rhein-in-die-Welt",
+        "https://oe1.orf.at/artikel/375078/Kraftwerk"
+      ]
+    },
+    {
+      "id": "origin:artist-tony-allen-lagos",
+      "type": "originated_in",
+      "from": "artist:tony-allen",
+      "to": "place:lagos",
+      "confidence": "high",
+      "sources": [
+        "https://www.bluenote.com/spotlight/afrobeat-legend-tony-allen-goes-back-to-the-s/",
+        "https://www.theguardian.com/music/2020/may/01/tony-allen-legendary-drummer-and-afrobeat-co-founder-dies-aged-79"
+      ]
+    },
+    {
+      "id": "origin:artist-boom-shaka-johannesburg",
+      "type": "originated_in",
+      "from": "artist:boom-shaka",
+      "to": "place:johannesburg",
+      "confidence": "medium",
+      "sources": [
+        "https://www.sundaytimes.timeslive.co.za/sunday-times/lifestyle/2024-10-20-in-pics--kwaito-stars-beauty-queens-and-a-pit-bull-in-a-skirt/"
+      ]
+    },
+    {
+      "id": "origin:artist-desmond-dekker-kingston",
+      "type": "originated_in",
+      "from": "artist:desmond-dekker",
+      "to": "place:kingston",
+      "confidence": "high",
+      "sources": [
+        "https://www.jamaicaobserver.com/2012/04/03/desmond-dekker-from-shanty-town-to-london/",
+        "https://www.theguardian.com/culture/2006/may/26/uk.obituaries"
+      ]
+    },
+    {
+      "id": "origin:artist-scientist-kingston",
+      "type": "originated_in",
+      "from": "artist:scientist",
+      "to": "place:kingston",
+      "confidence": "medium",
+      "sources": [
+        "https://thereggaemuseum.com/musician/scientist/"
+      ]
+    },
+    {
+      "id": "origin:artist-toots-and-the-maytals-kingston",
+      "type": "originated_in",
+      "from": "artist:toots-and-the-maytals",
+      "to": "place:kingston",
+      "confidence": "medium",
+      "sources": [
+        "https://www.laphil.com/people/toots-hibbert"
+      ]
+    },
+    {
+      "id": "origin:artist-thione-seck-dakar",
+      "type": "originated_in",
+      "from": "artist:thione-seck",
+      "to": "place:dakar",
+      "confidence": "medium",
+      "sources": [
+        "https://www.lemonde.fr/disparitions/article/2021/03/16/le-chanteur-senegalais-thione-seck-est-mort_6073317_3382.html"
+      ]
+    },
+    {
+      "id": "origin:artist-omar-pene-dakar",
+      "type": "originated_in",
+      "from": "artist:omar-pene",
+      "to": "place:dakar",
+      "confidence": "medium",
+      "sources": [
+        "https://worldmusiccentral.org/artist-profiles-omar-pene/"
+      ]
+    },
+    {
+      "id": "origin:artist-tatsuro-yamashita-tokyo",
+      "type": "originated_in",
+      "from": "artist:tatsuro-yamashita",
+      "to": "place:tokyo",
+      "confidence": "high",
+      "sources": [
+        "https://www.tatsuro.co.jp/biography/",
+        "https://www.facerecords.com/blog/2023/08/en-column-japanese-vinyl-records-laboratory-tatsuro-yamashita-city-pop-artist.html"
+      ]
+    },
+    {
+      "id": "origin:artist-cheba-zahouania-oran",
+      "type": "originated_in",
+      "from": "artist:cheba-zahouania",
+      "to": "place:oran",
+      "confidence": "high",
+      "sources": [
+        "https://www.lemonde.fr/archives/article/1994/10/13/arts-et-spectacles-disques-l-algerie-en-trois-facettes_3849270_1819218.html",
+        "https://www.ladepeche.fr/article/1999/05/08/270583-le-rai-dans-ses-voix-et-ses-racines.html"
+      ]
+    },
+    {
+      "id": "origin:artist-cheng-yanqiu-beijing",
+      "type": "originated_in",
+      "from": "artist:cheng-yanqiu",
+      "to": "place:beijing",
+      "confidence": "medium",
+      "sources": [
+        "https://www.davidpublisher.com/Public/uploads/Contribute/61ce7b6e4e2fa.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-dj-lag-durban",
+      "type": "originated_in",
+      "from": "artist:dj-lag",
+      "to": "place:durban",
+      "confidence": "medium",
+      "sources": [
+        "https://mg.co.za/wp-content/uploads/2023/07/edition-2023-07-14.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-distruction-boyz-durban",
+      "type": "originated_in",
+      "from": "artist:distruction-boyz",
+      "to": "place:durban",
+      "confidence": "medium",
+      "sources": [
+        "https://djmag.com/features/these-are-most-exciting-gqom-producers-right-now"
+      ]
+    },
+    {
+      "id": "origin:artist-siti-binti-saad-zanzibar",
+      "type": "originated_in",
+      "from": "artist:siti-binti-saad",
+      "to": "place:zanzibar",
+      "confidence": "medium",
+      "sources": [
+        "https://ftp.maafaznz.go.tz/culture_link.php?id=3",
+        "https://www.ikuluzanzibar.go.tz/media/view/dk.shein-amekutana-na-uongozi-wa-taasisi-ya-mwanaharakati-bibi-siti-bint-sa"
+      ]
+    },
+    {
+      "id": "origin:artist-mahmoud-guinia-essaouira",
+      "type": "originated_in",
+      "from": "artist:mahmoud-guinia",
+      "to": "place:essaouira",
+      "confidence": "medium",
+      "sources": [
+        "https://www.moroccoworldnews.com/2015/08/116782/godfather-of-gnawa-mahmoud-guinia-dies-at-64/"
+      ]
+    },
+    {
+      "id": "origin:artist-johnny-hallyday-paris",
+      "type": "originated_in",
+      "from": "artist:johnny-hallyday",
+      "to": "place:paris",
+      "confidence": "medium",
+      "sources": [
+        "https://www.paris.fr/pages/bientot-une-esplanade-johnny-hallyday-7431"
+      ]
+    },
+    {
+      "id": "origin:artist-caterina-valente-paris",
+      "type": "originated_in",
+      "from": "artist:caterina-valente",
+      "to": "place:paris",
+      "confidence": "high",
+      "sources": [
+        "https://www.filmportal.de/en/person/caterina-valente_f30fd2fd0e1c97cde03053d50b377e94",
+        "https://www.bear-family.de/dealer_pdf/bcd16931_e.pdf"
+      ]
+    },
+    {
+      "id": "origin:artist-tricky-bristol",
+      "type": "originated_in",
+      "from": "artist:tricky",
+      "to": "place:bristol",
+      "confidence": "medium",
+      "sources": [
+        "https://www.theguardian.com/music/2008/oct/04/tricky.slow.wikipedia"
+      ]
+    },
+    {
+      "id": "origin:artist-roni-size-bristol",
+      "type": "originated_in",
+      "from": "artist:roni-size",
+      "to": "place:bristol",
+      "confidence": "medium",
+      "sources": [
+        "https://www.musicradar.com/news/tech/roni-size-on-the-continuing-success-of-reprazent-live-and-in-the-studio-639226"
+      ]
+    },
+    {
+      "id": "origin:artist-wiley-london",
+      "type": "originated_in",
+      "from": "artist:wiley",
+      "to": "place:london",
+      "confidence": "medium",
+      "sources": [
+        "https://www.officialcharts.com/artist/15016/wiley/"
+      ]
     }
   ]
 }

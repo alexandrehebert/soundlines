@@ -19,7 +19,7 @@ const revisedInstruments = new Set([
   'bass-drum', 'celesta', 'cuban-tres', 'cuica', 'dominican-tambora', 'erhu',
   'kayamb', 'kora', 'maravann', 'ney', 'rouler', 'sabar', 'sheng',
   'taiko', 'viola-da-gamba', 'yueqin',
-  'euphonium', 'french-horn', 'trombone', 'trumpet', 'tuba',
+  'euphonium', 'french-horn', 'helicon', 'sousaphone', 'trombone', 'trumpet', 'tuba',
 ])
 
 const comparisonInstruments = instruments.filter(({ id }) => revisedInstruments.has(id.slice('instrument:'.length)))

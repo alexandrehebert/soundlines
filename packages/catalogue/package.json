@@ -8,6 +8,7 @@
   "exports": {
     "./types": "./src/types.ts",
     "./graph": "./src/graph.ts",
+    "./artistFamily": "./src/artistFamily.ts",
     "./locales": "./src/locales.ts",
     "./soundtrails": "./src/soundtrails.ts",
     "./data/*.json": "./data/*.json",

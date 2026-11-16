@@ -13,8 +13,11 @@
     "./ModalPanel": "./src/ModalPanel.tsx",
     "./SegmentedControl": "./src/SegmentedControl.tsx",
     "./SheetHeader": "./src/SheetHeader.tsx",
+    "./SoundlinesMark": "./src/SoundlinesMark.tsx",
     "./segmentedControlStyles": "./src/segmentedControlStyles.ts",
     "./sheetMotion": "./src/sheetMotion.ts",
+    "./soundlinesMarkMotion": "./src/soundlinesMarkMotion.ts",
+    "./soundlinesWave": "./src/soundlinesWave.ts",
     "./trapTabFocus": "./src/trapTabFocus.ts",
     "./usePanelHistory": "./src/usePanelHistory.ts",
     "./useSheetDrag": "./src/useSheetDrag.ts"

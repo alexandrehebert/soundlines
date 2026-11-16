@@ -8,8 +8,8 @@ import { describe, expect, it } from 'vitest'
 import storybookConfig from '../../storybook/.storybook/main.ts'
 import { Comparison } from './stories/Favicon.stories.tsx'
 import { BrandLink } from './design-system/navigation/BrandLink.tsx'
-import { HOVER_CYCLES_PER_SECOND, SOUNDLINES_BACKGROUND, SOUNDLINES_ENDPOINT_COLOR, SOUNDLINES_WAVES, SoundlinesWaveMotion } from './design-system/navigation/soundlinesMarkMotion.ts'
-import { createWaveModel, planWaveRest, sampleCubicPath, wavePathAt, wavePointsAt, WaveTape } from './design-system/navigation/soundlinesWave.ts'
+import { HOVER_CYCLES_PER_SECOND, SOUNDLINES_BACKGROUND, SOUNDLINES_ENDPOINT_COLOR, SOUNDLINES_WAVES, SoundlinesWaveMotion } from '@soundlines/ui-web/soundlinesMarkMotion'
+import { createWaveModel, planWaveRest, sampleCubicPath, wavePathAt, wavePointsAt, WaveTape } from '@soundlines/ui-web/soundlinesWave'
 import { faviconUrl } from './favicon.ts'
 
 function iconShapes(markup: string) {
