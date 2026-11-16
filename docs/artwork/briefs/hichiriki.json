@@ -5,6 +5,10 @@
   "method": "generator",
   "references": [
     {
+      "url": "https://gagaku.stanford.edu/en/woodwinds/hichiriki/",
+      "shows": "The front and back photos show seven front holes, two thumbholes and the large projecting double reed."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Hichiriki",
       "shows": "Anatomy overview and illustrated instrument variants: Short lacquered tube with binding bands. Broad flattened double reed projecting at the top."
     },
@@ -32,6 +36,10 @@
   "geometry": {
     "view": "Front aligned with finger holes",
     "proportions": "Short, nearly straight tube with a reed protruding from the upper end.",
-    "partLayout": "Finger holes run along the front between dark bindings. Keep the reed broader at its tip than at its insertion."
+    "partLayout": "Finger holes run along the front between dark bindings. Keep the reed broader at its tip than at its insertion.",
+    "referenceImage": {
+      "url": "https://gagaku.stanford.edu/assets/images/woodwinds-hichiriki/Hichiriki-Figure-1a.jpg",
+      "source": "https://gagaku.stanford.edu/en/woodwinds/hichiriki/"
+    }
   }
 }

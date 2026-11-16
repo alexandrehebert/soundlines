@@ -5,6 +5,10 @@
   "method": "hand",
   "references": [
     {
+      "url": "https://cdn.roland.com/assets/media/pdf/TR-808_OM.pdf#page=4",
+      "shows": "Original Rhythm Composer hardware manual, used to check the channel control groups and sixteen step buttons."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Roland_TR-808",
       "shows": "Anatomy overview and illustrated instrument variants: Sixteen rectangular step buttons along the lower edge. Button groups progress through warm colors."
     },

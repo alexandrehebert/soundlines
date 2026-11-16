@@ -5,6 +5,10 @@
   "method": "hand",
   "references": [
     {
+      "url": "https://gagaku.stanford.edu/en/strings/koto/",
+      "shows": "The photo and description show thirteen strings with one bridge per string and a much longer than wide soundboard."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Koto_(instrument)",
       "shows": "Anatomy overview and illustrated instrument variants: Thirteen parallel strings in the selected standard variant. Thirteen separate movable bridges."
     },
@@ -32,6 +36,10 @@
   "geometry": {
     "view": "Top along the soundboard",
     "proportions": "Very long, gently convex board, much narrower than its length.",
-    "partLayout": "For the 13-string form, place one movable bridge under each string in a staggered row across the width; parallel strings run end to end."
+    "partLayout": "For the 13-string form, place one movable bridge under each string in a staggered row across the width; parallel strings run end to end.",
+    "referenceImage": {
+      "url": "https://gagaku.stanford.edu/assets/images/strings-koto/Koto-Figure-1.jpg",
+      "source": "https://gagaku.stanford.edu/en/strings/koto/"
+    }
   }
 }

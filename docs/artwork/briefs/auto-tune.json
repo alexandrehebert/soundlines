@@ -5,6 +5,10 @@
   "method": "generator",
   "references": [
     {
+      "url": "https://www.antarestech.com/documentation/auto-tune-pro-11",
+      "shows": "The Graph Mode manual documents the pitch grid, waveform lane and correction objects represented by the conceptual software artwork."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Auto-Tune",
       "shows": "Anatomy overview and illustrated instrument variants: Rectangular software window with restrained border. Piano-roll pitch grid rather than a hardware case."
     },

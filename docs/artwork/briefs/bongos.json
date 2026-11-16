@@ -5,6 +5,18 @@
   "method": "hand",
   "references": [
     {
+      "url": "https://meinlpercussion.com/content/percussion/service/downloads/Catalog/PER-CATALOG22.pdf#page=68",
+      "shows": "The HB100NT photo shows the two unequal heads, a common playing height, black hoops and the solid connecting block."
+    },
+    {
+      "url": "https://meinlpercussion.com/en/products/hb100nt-m6438.html",
+      "shows": "The HB100NT specification lists the unequal heads, solid joining block and tension hardware shown in the neutral photo."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Bongos_Meinl_HB100-NT.jpg",
+      "shows": "Neutral front photograph of the HB100-NT pair shows two differently sized shells fixed together below their rims."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Bongo_drum",
       "shows": "Anatomy overview and illustrated instrument variants: Two drumheads of visibly different diameters. Short tapered wooden shells."
     },
@@ -32,6 +44,15 @@
   "geometry": {
     "view": "Three-quarter from above",
     "proportions": "Two shallow, unequal drums sit side by side with their rims level.",
-    "partLayout": "Connect their shells by a short block below the rims. Show each head as an ellipse at the same viewing angle."
+    "partLayout": "Connect their shells by a short block below the rims. Show each head as an ellipse at the same viewing angle.",
+    "referenceImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Bongos_Meinl_HB100-NT.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bongos_Meinl_HB100-NT.jpg"
+    },
+    "documentedDimensions": {
+      "value": "6¾-inch macho head; 8-inch hembra head.",
+      "source": "https://meinlpercussion.com/en/products/hb100nt-m6438.html",
+      "scope": "Meinl HB100NT bongo pair"
+    }
   }
 }

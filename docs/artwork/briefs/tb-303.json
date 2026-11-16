@@ -5,6 +5,10 @@
   "method": "generator",
   "references": [
     {
+      "url": "https://cdn.roland.com/assets/media/pdf/TB-303_OM.pdf#page=8",
+      "shows": "Original Bass Line hardware manual, used to check the six tone knobs, pattern controls and lower note-button bank."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Roland_TB-303",
       "shows": "Anatomy overview and illustrated instrument variants: Silver-gray compact case. Six prominent tone-control knobs in the upper-right area."
     },

@@ -17,6 +17,38 @@ an anatomical check, allowing for foreshortening in the chosen view. Direct
 reference photos, where linked, point back to their source pages. Run the artwork checks from
 the repository root. See [artwork tooling setup](../INSTALLATION.md#5-install-artwork-tooling).
 
+## Source material for briefs and redraws
+
+1. Select a specific model or museum specimen that matches the graph entry and intended view.
+   Prefer a neutral front, side or overhead photo with a specification table or labelled diagram.
+   A second view helps distinguish a real connection from an overlap. For historical and handmade
+   instruments, use a museum object record and its specimen measurements where available.
+   For software, use the original manual or an application screenshot.
+2. Open the actual photo or diagram before describing the instrument in the brief. Put the source
+   URL, exact PDF page (`#page=…`) when applicable, and what is visible in `references`.
+   Use `geometry.referenceImage` for a direct photo URL and its provenance page.
+   Record physical dimensions in `geometry.documentedDimensions` with the actual model or specimen.
+   If a source gives no measurement, describe the projected proportions from the selected view.
+3. Download cited material from the repository root. Pass instrument slugs to update a subset or
+   omit them to refresh the catalogue. The command stores one local file per URL in
+   `docs/artwork/briefs/sources/`. Its `index.json` lists the local files and source pages by slug,
+   preserving PDF page numbers and showing download errors. The source archive is ignored by Git.
+   The briefs carry the shared source links and observations.
+
+   ```sh
+   python3 scripts/artwork/fetch-instrument-references.py trumpet tuba
+   python3 scripts/artwork/fetch-instrument-references.py
+   python3 scripts/artwork/fetch-instrument-references.py --status
+   ```
+
+4. Compare the neutral reference and the current rendered banner before editing an SVG. Check
+   silhouette and proportions, the position and count of visible parts, and where each structural
+   join lands. Update the brief with specific observations, then redraw all four variants where the
+   comparison reveals a mismatch. Keep the before-and-after Storybook fixture and inspect the new
+   render and 16–24 px icon.
+
+## Validation
+
 ```sh
 node .agents/skills/artwork-brief/scripts/check-brief.mjs
 node .agents/skills/artwork-validate/scripts/check-artwork.mjs --require-render

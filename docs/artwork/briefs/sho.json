@@ -5,6 +5,14 @@
   "method": "hand",
   "references": [
     {
+      "url": "https://gagaku.stanford.edu/en/woodwinds/sho/",
+      "shows": "Figure 1 shows the unequal bamboo pipes, recessed center and circular wind chamber with a short mouthpiece."
+    },
+    {
+      "url": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/index.html",
+      "shows": "Japan Arts Council instrument guide leads to the shō mouth organ record and the instrument group used in gagaku."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Shō_(instrument)",
       "shows": "Anatomy overview and illustrated instrument variants: Seventeen bamboo pipes in the selected traditional layout. Pipes have varied lengths in a wing-like arrangement."
     },
@@ -32,6 +40,10 @@
   "geometry": {
     "view": "Side three-quarter",
     "proportions": "Grouped upright bamboo pipes of different heights rise from a small wind chamber.",
-    "partLayout": "Put the short mouthpiece near the base and let the pipes form a crown. Keep space between outer pipe ends."
+    "partLayout": "Put the short mouthpiece near the base and let the pipes form a crown. Keep space between outer pipe ends.",
+    "referenceImage": {
+      "url": "https://gagaku.stanford.edu/assets/images/woodwinds-sho/Sho-Figure-1_Front.png",
+      "source": "https://gagaku.stanford.edu/en/woodwinds/sho/"
+    }
   }
 }

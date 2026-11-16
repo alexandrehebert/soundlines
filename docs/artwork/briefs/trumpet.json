@@ -5,12 +5,12 @@
   "method": "generator",
   "references": [
     {
-      "url": "https://usa.yamaha.com/musical-instruments/brass-woodwinds/products/trumpets/bb-trumpets/ytr-2330/specs.html",
-      "shows": "Maker reference for the chosen instrument form and proportions."
+      "url": "https://data.yamaha.com/files/download/brochure/4/2303084/2024_Wind_NA_W255UR7_re.pdf#page=20",
+      "shows": "The side photo shows the bell stem above the leadpipe and the main tuning bow toward the bell."
     },
     {
-      "url": "https://www.shimokura-wind.com/instruments/yamaha/yamaha_trumpet.html",
-      "shows": "Second view or guide for checking the fit of the tubing and the controls."
+      "url": "https://usa.yamaha.com/musical-instruments/brass-woodwinds/products/trumpets/bb-trumpets/ytr-2330/specs.html",
+      "shows": "Maker reference for the chosen instrument form and proportions."
     }
   ],
   "silhouette": "Slim horizontal leadpipe and compact valve block, with a flared bell on the forward axis.",
@@ -21,22 +21,22 @@
     "Bell taper flaring at the forward end"
   ],
   "iconFeatures": [
-    "Three aligned piston buttons",
-    "Narrow leadpipe with a small cup mouthpiece"
+    "Three aligned piston buttons and a slim leadpipe.",
+    "Upper bell branch and two shallow returns on either side of the valve block."
   ],
   "avoid": [
     "Overlapping tubes that hide the principal bends",
     "Detached or offset mouthpiece and bell"
   ],
-  "notes": "Shows the modern form in the reference. The muted linework keeps the major tube bends distinct.",
+  "notes": "The neutral catalogue photo of the YTR-8335II guides the silhouette and visible tube routing. The illustration simplifies overlapping plumbing from the side.",
   "geometry": {
-    "view": "Side with pistons upright",
-    "proportions": "Slender folded horizontal outline with a compact central valve block and a bell flare at the far end.",
-    "partLayout": "Three buttons align above the block. Main tuning and valve slides turn back into the body; mouthpiece and bell point in opposite directions.",
+    "view": "Neutral catalogue side view in playing orientation",
+    "proportions": "The long, narrow bell stem stays above the mouthpiece line. The small bell opening is about one fifth of the overall length.",
+    "partLayout": "Run the leadpipe to the forward tuning bow and back toward the three pistons. The rear bow feeds the upper bell stem. Seat the short and long slide returns in the valve block.",
     "documentedDimensions": {
-      "value": "123 mm bell diameter and 11.65 mm bore, about 10.6:1",
-      "source": "https://usa.yamaha.com/musical-instruments/brass-woodwinds/products/trumpets/bb-trumpets/ytr-2330/specs.html",
-      "scope": "YTR-2330 B-flat trumpet"
+      "value": "123 mm bell diameter and 11.65 mm bore",
+      "source": "https://data.yamaha.com/files/download/brochure/4/2303084/2024_Wind_NA_W255UR7_re.pdf#page=20",
+      "scope": "YTR-8335II B-flat trumpet"
     }
   }
 }

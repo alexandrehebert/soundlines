@@ -5,34 +5,34 @@
   "method": "generator",
   "references": [
     {
-      "url": "https://usa.yamaha.com/products/musical_instruments/winds/euphoniums/yep-321/specs.html",
-      "shows": "Maker reference for the chosen instrument form and proportions."
+      "url": "https://data.yamaha.com/files/download/brochure/4/2303084/2024_Wind_NA_W255UR7_re.pdf#page=35",
+      "shows": "The four-top-action model at lower left shows a tall compact U, narrow valve branches and an S-shaped leadpipe."
     },
     {
-      "url": "https://shop.kurosawagakki.com/items/2743340",
-      "shows": "Second view or guide for checking the fit of the tubing and the controls."
+      "url": "https://usa.yamaha.com/products/musical_instruments/winds/euphoniums/yep-321/specs.html",
+      "shows": "Maker reference for the chosen instrument form and proportions."
     }
   ],
-  "silhouette": "Compact upright wrap with a slimmer bell stack and closely spaced valve slides.",
+  "silhouette": "Slender upright bell with a tall, narrow U-shaped wrap and tightly nested valve slides.",
   "features": [
     "Upright bell with narrower rim than the tuba",
-    "Compact lower bow close to the valve cluster",
+    "Tall outer bow and rounded left riser frame the valve group.",
     "Four top-action pistons in a straight row",
     "Slender S-shaped leadpipe and short nested slides"
   ],
   "iconFeatures": [
-    "Upright bell with narrower rim than the tuba",
-    "Compact lower bow close to the valve cluster"
+    "Tall upright bell and rounded U-shaped body.",
+    "Curved leadpipe entering four closely spaced pistons."
   ],
   "avoid": [
     "Overlapping tubes that hide the principal bends",
     "Detached or offset mouthpiece and bell"
   ],
-  "notes": "Shows the modern form in the reference. The muted linework keeps the major tube bends distinct.",
+  "notes": "The neutral catalogue photo of the YEP-321S guides the silhouette and visible tube routing. The illustration simplifies overlapping plumbing from the side.",
   "geometry": {
-    "view": "Front three-quarter of four top-action form",
-    "proportions": "Compact upright wrap, with a slimmer bell and shallower bow than the tuba.",
-    "partLayout": "Four close pistons sit within the wrap. Leadpipe curves down into the block; show nested valve slides separately from the outer bow.",
+    "view": "Neutral catalogue side view in playing orientation",
+    "proportions": "The slim upright wrap supports a bell approximately two fifths of the full height in width. The four pistons sit high within the narrower side of the wrap.",
+    "partLayout": "Carry the right bell throat down through the lower bow and up into the rounded left riser. Bring the S-shaped leadpipe in from the right and tuck the four slide returns into their casings.",
     "documentedDimensions": {
       "value": "280 mm bell diameter; 14.5 mm bore at pistons 1–3 and 15.5 mm at piston 4.",
       "source": "https://www.yamaha.com/en/about/experience/innovation-road/collection/detail/6009/",

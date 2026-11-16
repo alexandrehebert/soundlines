@@ -14,12 +14,14 @@ const variants = [
 const revisedInstruments = new Set([
   'algerian-mandole', 'cello', 'charango', 'double-bass', 'hichiriki', 'lute',
   'pedal-steel-guitar', 'sarod', 'sitar', 'tanpura', 'tb-303', 'tr-909', 'viola',
-  'auto-tune', 'bassoon', 'conga', 'harmonium', 'juno-106', 'minimoog', 'piccolo',
+  'auto-tune', 'bass-clarinet', 'bassoon', 'conga', 'harmonium', 'juno-106', 'minimoog', 'piccolo',
   'saxophone', 'vibraphone', 'violin',
-  'bass-drum', 'celesta', 'cuban-tres', 'cuica', 'dominican-tambora', 'erhu',
+  'bass-drum', 'celesta', 'cuban-tres', 'cuica', 'dominican-tambora', 'erhu', 'harp',
   'kayamb', 'kora', 'maravann', 'ney', 'rouler', 'sabar', 'sheng',
   'taiko', 'viola-da-gamba', 'yueqin',
-  'euphonium', 'french-horn', 'helicon', 'sousaphone', 'trombone', 'trumpet', 'tuba',
+  'cornet', 'cornetto', 'euphonium', 'flugelhorn', 'french-horn', 'helicon',
+  'natural-trumpet', 'sousaphone', 'trombone', 'trumpet', 'tuba',
+  'steelpan', 'turntables', 'yamaha-dx7',
 ])
 
 const comparisonInstruments = instruments.filter(({ id }) => revisedInstruments.has(id.slice('instrument:'.length)))
@@ -92,7 +94,7 @@ export const BeforeAndAfter: Story = {
           <ul className="flex flex-wrap gap-2">
             {comparisonInstruments.map(({ id, name }) => (
               <li key={id}>
-                <a href={`#${id}`} className="block rounded-md border border-slate-700 px-2 py-1 text-sm hover:bg-slate-800">
+                <a href={`#${id}`} target="_self" className="block rounded-md border border-slate-700 px-2 py-1 text-sm hover:bg-slate-800">
                   {name}
                 </a>
               </li>

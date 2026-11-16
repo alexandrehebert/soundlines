@@ -13,21 +13,21 @@
       "shows": "Documents the construction and visible form of the instrument."
     }
   ],
-  "silhouette": "Long low dark-brown body. Full keyboard.",
+  "silhouette": "Long, low synthesizer chassis with a full keyboard and a thin strip of membrane switches above it.",
   "features": [
-    "Long low dark-brown body",
+    "Long, low chassis drawn in the blue electronic family palette",
     "Full keyboard",
-    "Green flat membrane switches",
+    "Two rows of flat membrane switches",
     "Small rectangular display"
   ],
   "iconFeatures": [
-    "Long low dark-brown body",
-    "Full keyboard"
+    "Full keyboard in a long chassis",
+    "Distinct display and upper control strip"
   ],
   "avoid": [
     "Silhouettes or details from other instrument variants"
   ],
-  "notes": "The drawing presents the documented form in the reference records.",
+  "notes": "The reference guides the layout of the keyboard, membrane panel and wheels. The illustration uses the electronic family blue for the chassis and panel accents.",
   "geometry": {
     "view": "Top three-quarter",
     "proportions": "Long thin chassis with a low flat panel and a full-width keyboard.",

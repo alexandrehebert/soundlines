@@ -3090,7 +3090,7 @@
     "instrument:turntables": {
       "description": "Tourne-disques utilisés de manière créative par les DJ, notamment via le repérage, le bouclage, le scratch et la manipulation du son enregistré. Les jams hip-hop du Bronx Park du début des années 1970, y compris la soirée du DJ Kool Herc en août 1973, utilisaient deux platines pour prolonger les pauses instrumentales ; le turntablism s'est ensuite développé comme pratique musicale. Les tourne-disques sont antérieurs à cette utilisation de plusieurs décennies.",
       "phaseNote": "Les présentateurs de 1973 ont documenté la pratique des DJ hip-hop, et non l'invention des platines. Suppression de « l’âge d’or » de 1980 et de la phase générique de 1990 non pris en charge.",
-      "name": "Platines vinyles"
+      "name": "Platine vinyle"
     },
     "instrument:vibraphone": {
       "description": "Instrument de percussion à clavier avec barres métalliques, résonateurs et effet trémolo ou vibrato motorisé. L'ingénieur de Leedy, Herman Winterhoff, a commencé le développement expérimental vers 1916 ; un design raffiné à disque rotatif et le nom de « vibraphone » Leedy suivirent vers 1921. La vibraharpe associée de Deagan se développa sur une piste parallèle. Lionel Hampton a contribué à établir l'instrument dans le jazz à partir de 1929, avec un premier enregistrement en 1930.",

@@ -5,6 +5,10 @@
   "method": "generator",
   "references": [
     {
+      "url": "https://cdn.roland.com/assets/media/pdf/TR-909_OM.pdf#page=3",
+      "shows": "Original Rhythm Composer hardware manual, used to check the channel controls, display and sixteen step buttons."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Roland_TR-909",
       "shows": "Anatomy overview and illustrated instrument variants: Sixteen square step keys across the bottom. Rows of round controls in the upper half."
     },

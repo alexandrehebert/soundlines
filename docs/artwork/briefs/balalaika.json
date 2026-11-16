@@ -5,6 +5,10 @@
   "method": "hand",
   "references": [
     {
+      "url": "https://commons.wikimedia.org/wiki/File:3_string_prim_balalaika.png",
+      "shows": "Front photo of a three-string prima shows the long narrow neck entering the centered apex of a broad triangular body."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Balalaika",
       "shows": "Anatomy overview and illustrated instrument variants: Three single strings. Triangular wooden body with a straight lower edge."
     },
@@ -32,6 +36,10 @@
   "geometry": {
     "view": "Soundboard front",
     "proportions": "A broad, straight-sided triangular body occupies the lower portion. The neck is narrow and longer than the body's depth.",
-    "partLayout": "Center the neck on the apex. Three strings run down to a bridge near the broad base."
+    "partLayout": "Center the neck on the apex. Three strings run down to a bridge near the broad base.",
+    "referenceImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/3_string_prim_balalaika.png",
+      "source": "https://commons.wikimedia.org/wiki/File:3_string_prim_balalaika.png"
+    }
   }
 }

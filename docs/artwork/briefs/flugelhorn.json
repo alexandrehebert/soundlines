@@ -5,12 +5,12 @@
   "method": "generator",
   "references": [
     {
-      "url": "https://www.metmuseum.org/art/collection/search/504681",
-      "shows": "Documents the historical specimen or origin of the instrument."
+      "url": "https://data.yamaha.com/files/download/brochure/4/2303084/2024_Wind_NA_W255UR7_re.pdf#page=27",
+      "shows": "The side photo shows the large rounded lower wrap, broad upper bell and unequal vertical valve slides."
     },
     {
-      "url": "https://sg.yamaha.com/en/musical-instruments/brass-woodwinds/products/flugelhorns/yfh-631g/",
-      "shows": "Shows the construction or outline of the chosen instrument form."
+      "url": "https://www.metmuseum.org/art/collection/search/504681",
+      "shows": "Documents the historical specimen or origin of the instrument."
     }
   ],
   "silhouette": "Broad bell flare over a deep, rounded wrap.",
@@ -20,20 +20,21 @@
     "The taper opens earlier and more broadly than on the trumpet."
   ],
   "iconFeatures": [
-    "Broad bell flare over a deep, rounded wrap."
+    "Broad upper bell flare and one deep open wrap.",
+    "Three upright piston controls."
   ],
   "avoid": [
     "Contours that obscure the characteristic tubing path"
   ],
-  "notes": "Shows the variant described in the geometry. The icon preserves the major outer contours.",
+  "notes": "The neutral catalogue photo of the YFH-631G guides the silhouette and visible tube routing. The illustration simplifies overlapping plumbing from the side.",
   "geometry": {
-    "view": "Side view, with the rim visible from a slight angle",
-    "proportions": "Broad bell flare over a deep, rounded wrap.",
-    "partLayout": "The three piston buttons sit above the loop. The taper opens earlier and more broadly than on the trumpet.",
+    "view": "Neutral catalogue side view in playing orientation",
+    "proportions": "The deep, open lower wrap is about one third of the instrument length in height. The bell flares more broadly than a trumpet.",
+    "partLayout": "Carry the large bell branch around the rear bow and below the valve group. Connect the short straight leadpipe to the first valve and seat the three unequal vertical slides in the block.",
     "documentedDimensions": {
-      "value": "34 cm overall length and 16 cm bell diameter on the historical specimen.",
-      "source": "https://www.metmuseum.org/art/collection/search/504681",
-      "scope": "Met 89.4.2302"
+      "value": "151.8 mm bell diameter and 11 mm bore",
+      "source": "https://data.yamaha.com/files/download/brochure/4/2303084/2024_Wind_NA_W255UR7_re.pdf#page=27",
+      "scope": "YFH-631G flugelhorn"
     }
   }
 }

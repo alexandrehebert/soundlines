@@ -1,4 +1,4 @@
-# Turntables
+# Turntable
 
 Graph ID `instrument:turntables`
 
@@ -16,3 +16,5 @@ Graph ID `instrument:turntables`
 ## Assessment
 
 Original entry risked implying Kool Herc invented turntables; now scopes 1973 to creative hip-hop DJ use and removes subjective phase peaks.
+
+The singular display name refers to one record deck. The description retains the historically documented use of two decks.

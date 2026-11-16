@@ -17688,7 +17688,7 @@
     {
       "id": "instrument:turntables",
       "type": "instrument",
-      "name": "Turntables",
+      "name": "Turntable",
       "family": "electronic",
       "period": {
         "start": 1973,

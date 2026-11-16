@@ -15,34 +15,38 @@
     {
       "url": "https://www.kora-music.com/e/stimmen.htm",
       "shows": "A stringing demonstration explains and illustrates how strings pass through notches on both sides of the bridge and onto leather neck collars."
+    },
+    {
+      "url": "https://www.kora-music.com/pics/Kora%20Malink%C3%A9%201.jpg",
+      "shows": "The construction diagram after Tiémoko Sissokho identifies the parallel handles, perpendicular bridge and its pad, side sound opening, and common tail ring."
     }
   ],
   "silhouette": "An upright three-quarter view, with a long neck above the skin-covered gourd, a tall projecting bridge and a pair of wooden handgrips framing the string fan.",
   "features": [
-    "Hemispherical gourd resonator with a plain skin face",
-    "Long neck with leather tuning collars and a tail anchor below the resonator",
-    "Tall notched bridge projecting from a pad on the skin face",
-    "Twenty-one fine strings grouped into two ordered banks of eleven and ten",
-    "Two distinct upper ends of the parallel handgrips rising past the gourd"
+    "Rounded gourd bowl with a small side opening and a light hide face secured by a ring of perimeter fasteners",
+    "Long through-neck with twenty-one leather tuning collars and a tail ring below the resonator",
+    "Tall narrow notched bridge standing out from a pad on the skin face",
+    "Twenty-one fine strings form two banks of eleven and ten with staggered notches, and continue below the bridge to the tail ring",
+    "Two slender parallel handgrips with rounded ends rise above the near and far edges of the hide face"
   ],
   "iconFeatures": [
-    "Upright playing position with a round calabash at the bottom of a long neck",
-    "Projecting bridge and open triangular string silhouette"
+    "Round calabash beneath a long, nearly upright neck",
+    "One open string triangle reaching a projecting bridge, flanked by two short grip silhouettes"
   ],
   "avoid": [
     "A neck lying across the canvas in the pose of a guitar",
     "All strings converging on a single point on the bridge",
     "Frets or guitar-style tuning keys on this leather-collar model"
   ],
-  "notes": "Shows a traditional 21-string Mandinka kora with sliding leather collars. Fine strings and a plain skin face keep the bridge, grips and gourd readable at a glance.",
+  "notes": "A traditional leather-collar Mandinka kora. The Met specimen guides the overall height-to-width ratio, the Cleveland photo shows the hide-rim construction, and the diagram clarifies the working bridge, grips and tail ring.",
   "geometry": {
-    "view": "Upright three-quarter",
-    "proportions": "A long narrow neck projects well above a wide round gourd.",
-    "partLayout": "Two banks of eleven and ten strings meet opposite sides of the projecting bridge. Twin handgrips rise from the skin on either side.",
+    "view": "Upright three-quarter from the skin-facing side, with one flank of the gourd visible",
+    "proportions": "The long narrow neck and collar run extend above the gourd for more than half the total height. The broad gourd remains nearly circular in projection.",
+    "partLayout": "The neck passes behind the hide and reappears below the bowl. Both banks fan in front of the neck toward staggered bridge notches, then approach the tail ring. The grips flank the bridge.",
     "documentedDimensions": {
       "value": "115.8 cm tall × 52.5 cm wide, about 2.2:1 overall",
       "source": "https://www.metmuseum.org/art/collection/search/503060",
-      "scope": "Kora"
+      "scope": "Mamadou Kouyaté kora, Met accession 1975.59"
     },
     "referenceImage": {
       "url": "https://openaccess-cdn.clevelandart.org/1918.352/1918.352_web.jpg",

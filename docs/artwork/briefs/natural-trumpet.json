@@ -6,18 +6,18 @@
   "references": [
     {
       "url": "https://www.metmuseum.org/art/collection/search/503971",
-      "shows": "Documents the historical specimen or origin of the instrument."
+      "shows": "The Haas trumpet photograph shows both folded bows, the slender bell branch and a wrapped central binding."
     },
     {
       "url": "https://www.metmuseum.org/art/collection/search/501675",
-      "shows": "Shows the construction or outline of the chosen instrument form."
+      "shows": "The Naeplaesnigg specimen documents another natural trumpet in the Nuremberg construction tradition."
     }
   ],
   "silhouette": "Long parallel tube runs ending in an understated flare.",
   "features": [
-    "Long parallel tube runs ending in an understated flare.",
-    "Follow the folded tube from the mouthpiece to the bell.",
-    "Draw fixed stays and leave the central span free of valves."
+    "Three long parallel tube runs connected by two returns.",
+    "The mouthpiece feeds the middle run while the bell opens on the upper run.",
+    "A short wrapped binding joins adjacent branches near the centre."
   ],
   "iconFeatures": [
     "Long parallel tube runs ending in an understated flare."
@@ -25,15 +25,19 @@
   "avoid": [
     "Contours that obscure the characteristic tubing path"
   ],
-  "notes": "Shows the variant described in the geometry. The icon preserves the major outer contours.",
+  "notes": "Draws a late seventeenth-century folded natural trumpet with an attached mouthpiece in playing orientation, using the Met’s Haas specimen for the body.",
   "geometry": {
     "view": "Side view of a long folded instrument",
     "proportions": "Long parallel tube runs ending in an understated flare.",
-    "partLayout": "Follow the folded tube from the mouthpiece to the bell. Draw fixed stays and leave the central span free of valves.",
+    "partLayout": "Follow the mouthpipe into the far return and back along the lower run. The rear return feeds the upper bell branch. Bind the adjacent mouthpipe and bell branch near the centre.",
     "documentedDimensions": {
       "value": "65.3 cm without crook or mouthpiece and an 11.3 cm bell diameter.",
       "source": "https://www.metmuseum.org/art/collection/search/503971",
       "scope": "Haas trumpet at the Met"
+    },
+    "referenceImage": {
+      "url": "https://images.metmuseum.org/CRDImages/mi/original/DP220760.jpg",
+      "source": "https://www.metmuseum.org/art/collection/search/503971"
     }
   }
 }

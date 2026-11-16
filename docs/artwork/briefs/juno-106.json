@@ -5,6 +5,10 @@
   "method": "generator",
   "references": [
     {
+      "url": "https://cdn.roland.com/assets/media/pdf/JUNO-106_OM.pdf#page=3",
+      "shows": "Original hardware manual for the JUNO-106, used to check the keyboard, left controller and panel layout."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Roland_Juno-106",
       "shows": "Anatomy overview and illustrated instrument variants: Sixty-one keys in the full banner. Flat upper panel with grouped sliders."
     },

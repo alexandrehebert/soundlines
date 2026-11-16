@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120">
+  <defs>
+    <linearGradient id="metal" x2=".34" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#38bdf8"/><stop offset="1" stop-color="#18516b"/>
+    </linearGradient>
+    <linearGradient id="fade">
+      <stop offset=".32" stop-color="white" stop-opacity="0"/>
+      <stop offset=".58" stop-color="white" stop-opacity=".18"/>
+      <stop offset=".88" stop-color="white" stop-opacity=".54"/>
+      <stop offset="1" stop-color="white" stop-opacity=".22"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#38bdf8" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="reveal" maskUnits="userSpaceOnUse" x="0" y="0" width="360" height="120">
+      <rect width="360" height="120" fill="url(#fade)"/>
+    </mask>
+  </defs>
+  <ellipse cx="279" cy="72" rx="89" ry="56" fill="url(#halo)"/>
+  <g mask="url(#reveal)">
+    <g transform="translate(266 69) scale(.61)"><g transform="rotate(-8)"><rect x="-129" y="-39" width="258" height="78" rx="6" fill="#223b52" stroke="#e7c99d" stroke-width=".8"/><rect x="-23" y="-33" width="46" height="66" rx="4" fill="url(#metal)" stroke="#e7c99d" stroke-width=".8"/><ellipse cx="-77" cy="0" rx="34" ry="32" fill="#171824" stroke="#edd2a9" stroke-width="1"/><ellipse cx="-77" cy="0" rx="29" ry="27" fill="none" stroke="#edd2a9" stroke-width="1"/><ellipse cx="-77" cy="0" rx="25" ry="23" fill="none" stroke="#edd2a9" stroke-width="1"/><ellipse cx="-77" cy="0" rx="20" ry="18" fill="none" stroke="#edd2a9" stroke-width="1"/><ellipse cx="-77" cy="0" rx="9" ry="8" fill="#73a9c6" stroke="#edd2a9" stroke-width="1"/><path d="M-40 -24v25l-10 10" fill="none" stroke="#e1d5d6" stroke-width="2"/><ellipse cx="77" cy="0" rx="34" ry="32" fill="#171824" stroke="#edd2a9" stroke-width="1"/><ellipse cx="77" cy="0" rx="29" ry="27" fill="none" stroke="#edd2a9" stroke-width="1"/><ellipse cx="77" cy="0" rx="25" ry="23" fill="none" stroke="#edd2a9" stroke-width="1"/><ellipse cx="77" cy="0" rx="20" ry="18" fill="none" stroke="#edd2a9" stroke-width="1"/><ellipse cx="77" cy="0" rx="9" ry="8" fill="#73a9c6" stroke="#edd2a9" stroke-width="1"/><path d="M114 -24v25l-10 10" fill="none" stroke="#e1d5d6" stroke-width="2"/><path d="M-12 -18L-12 21" fill="none" stroke="#f2dab9" stroke-width="1"/><rect x="-15" y="-7" width="6" height="4" rx="1" fill="url(#metal)" stroke="#e7c99d" stroke-width=".8"/><path d="M0 -18L0 21" fill="none" stroke="#f2dab9" stroke-width="1"/><rect x="-3" y="4" width="6" height="4" rx="1" fill="url(#metal)" stroke="#e7c99d" stroke-width=".8"/><path d="M12 -18L12 21" fill="none" stroke="#f2dab9" stroke-width="1"/><rect x="9" y="-4" width="6" height="4" rx="1" fill="url(#metal)" stroke="#e7c99d" stroke-width=".8"/></g></g>
+  </g>
+</svg>

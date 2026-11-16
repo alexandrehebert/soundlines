@@ -5,12 +5,12 @@
   "method": "generator",
   "references": [
     {
-      "url": "https://usa.yamaha.com/musical-instruments/brass-woodwinds/products/trombones/ysl-354/",
-      "shows": "Maker reference for the chosen instrument form and proportions."
+      "url": "https://data.yamaha.com/files/download/brochure/4/2303084/2024_Wind_NA_W255UR7_re.pdf#page=31",
+      "shows": "The neutral side view shows both long handslide rails, the rear tuning bow and the mouthpiece near the inner slide brace."
     },
     {
-      "url": "https://www.yamaha.com/en/musical_instrument_guide/trombone/mechanism/mechanism002.html",
-      "shows": "Second view or guide for checking the fit of the tubing and the controls."
+      "url": "https://usa.yamaha.com/musical-instruments/brass-woodwinds/products/trombones/ysl-354/",
+      "shows": "Maker reference for the chosen instrument form and proportions."
     }
   ],
   "silhouette": "Long paired slide with a narrow return bend below the forward-facing bell.",
@@ -21,18 +21,18 @@
     "Short stays between the slide tubes"
   ],
   "iconFeatures": [
-    "Two straight, parallel slide tubes with one U bend",
-    "Separate bell section with a rear return bend"
+    "Long paired slide with a narrow U at the tip.",
+    "Bell flare above the slide and a separate rear tuning bow."
   ],
   "avoid": [
     "Overlapping tubes that hide the principal bends",
     "Detached or offset mouthpiece and bell"
   ],
-  "notes": "Shows the modern form in the reference. The muted linework keeps the major tube bends distinct.",
+  "notes": "The neutral catalogue photo of the YSL-354 guides the silhouette and visible tube routing. The illustration simplifies overlapping plumbing from the side.",
   "geometry": {
-    "view": "Side in closed or nearly closed position",
-    "proportions": "Long straight lower slide reaches past the forward bell; the return at its tip is narrow.",
-    "partLayout": "Maintain two parallel slide rails, a continuous U at their tip, and a distinct rear tuning bow joining slide assembly to the bell section.",
+    "view": "Neutral catalogue side view in playing orientation",
+    "proportions": "The bell ends about three fifths of the way from the rear tuning curve to the slide tip. The two long slide rails stay parallel.",
+    "partLayout": "Set the mouthpiece below the bell branch at the start of the upper rail. Carry the lower rail back into the rear tuning bow and from there into the upper bell branch.",
     "documentedDimensions": {
       "value": "204.4 mm bell diameter and 12.7 mm bore; bell diameter is about 16 times the bore",
       "source": "https://usa.yamaha.com/products/musical_instruments/winds/trombones/ysl-354/specs.html",

@@ -5,12 +5,12 @@
   "method": "generator",
   "references": [
     {
-      "url": "https://www.yamaha.com/en/musical_instrument_guide/horn/mechanism/",
-      "shows": "Maker reference for the chosen instrument form and proportions."
+      "url": "https://data.yamaha.com/files/download/brochure/4/2303084/2024_Wind_NA_W255UR7_re.pdf#page=29",
+      "shows": "The single F horn side photo shows three rotary levers, the oblique leadpipe and a wide downward bell."
     },
     {
-      "url": "https://www.yamaha.com/en/musical_instrument_guide/horn/mechanism/mechanism003.html",
-      "shows": "Second view or guide for checking the fit of the tubing and the controls."
+      "url": "https://www.yamaha.com/en/musical_instrument_guide/horn/mechanism/",
+      "shows": "Maker reference for the chosen instrument form and proportions."
     }
   ],
   "silhouette": "Round single horn coil with a narrow leadpipe and broad bell opening off to the side.",
@@ -18,21 +18,21 @@
     "Circular outer wrap and nested open tubing",
     "Three rotary valve levers inside the coil",
     "Slender leadpipe ending in a small mouthpiece",
-    "Flared bell directed obliquely outward"
+    "Long bell throat blends into a broad downward flare on the right."
   ],
   "iconFeatures": [
-    "Circular outer wrap and nested open tubing",
-    "Three rotary valve levers inside the coil"
+    "Round coil joined to a broad downward bell.",
+    "The narrow projecting leadpipe."
   ],
   "avoid": [
     "Overlapping tubes that hide the principal bends",
     "Detached or offset mouthpiece and bell"
   ],
-  "notes": "Shows the modern form in the reference. The muted linework keeps the major tube bends distinct.",
+  "notes": "The neutral catalogue photo of the YHR-314II guides the silhouette and visible tube routing. The illustration simplifies overlapping plumbing from the side.",
   "geometry": {
-    "view": "Front three-quarter, bell side visible",
-    "proportions": "A round coil sits beside one broad side-facing flare; the thin leadpipe projects beyond the coil.",
-    "partLayout": "Draw three rotary levers and distinguish the inner valve loops from the outer wrap. Carry the coiled tube into the bell throat.",
+    "view": "Neutral catalogue side view in playing orientation",
+    "proportions": "The upper coil is approximately circular. The bell opens downward beside and below it, with a rim close to the coil diameter.",
+    "partLayout": "Carry the outer bow into the bell throat on the right. Angle the mouthpipe up from the left toward the three rotary valves. Seat the nested tuning branches at the valve block.",
     "documentedDimensions": {
       "value": "12 mm bore in the rotary-valve section. Use the reference view for bell and coil proportions.",
       "source": "https://usa.yamaha.com/products/musical_instruments/winds/frenchhorns/yhr-314ii/specs.html",

@@ -5,6 +5,10 @@
   "method": "hand",
   "references": [
     {
+      "url": "https://commons.wikimedia.org/wiki/File:A_converter_free-bass_piano-accordion_and_a_Russian_bayan.jpg",
+      "shows": "Comparison of two real instruments. The upper piano accordion shows a treble keyboard, bass buttons and bellows."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Accordion",
       "shows": "Anatomy overview and illustrated instrument variants: Pleated bellows between two rigid end cases. Piano keys on the player's right-hand end."
     },
@@ -31,6 +35,10 @@
   "geometry": {
     "view": "Front with bellows partly extended",
     "proportions": "Two deep end cases flank a wider rectangular bellows.",
-    "partLayout": "Piano keys run vertically on the treble case. Bass buttons form a grid on the other case; folds bridge the two uninterrupted edges."
+    "partLayout": "Piano keys run vertically on the treble case. Bass buttons form a grid on the other case; folds bridge the two uninterrupted edges.",
+    "referenceImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/A_converter_free-bass_piano-accordion_and_a_Russian_bayan.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:A_converter_free-bass_piano-accordion_and_a_Russian_bayan.jpg"
+    }
   }
 }

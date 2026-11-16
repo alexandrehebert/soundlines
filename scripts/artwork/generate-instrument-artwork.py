@@ -87,13 +87,51 @@ def plucked(name):
                 + frets(-34, 39, 6, 'M{x} -8v16')
                 + pegs([(x, y) for x in (44, 50, 56, 62, 68) for y in (-16, 16)])
                 + strings(-99, 69, 10, 1.65))
-    return (path('M-28 0Q-39-22-71-35Q-117-50-124 0Q-117 50-71 35Q-39 22-28 0Z', WOOD)
-            + path('M-53-13L42-10V10L-53 13Z', DARK)
-            + path('M42-10L61-34L73-30L50 9Z', '#8d593a')
-            + rosette(-69, 15) + rect(-103, -13, 6, 26, DARK)
-            + frets(-46, 43, 8, 'M{x} -9v18')
-            + ''.join(ellipse(x, y, 3.2, 2.6, GOLD) for x, y in [(47,-13),(53,-20),(58,-27),(57,-9),(62,-17),(68,-24)])
-            + strings(-101, 43, 10, 1.9))
+    raise ValueError(f'Unknown plucked instrument: {name}')
+
+
+def renaissance_lute():
+    # The ribbed bowl projects below the near edge of the symmetrical
+    # soundboard in this shallow three-quarter view.
+    soundboard = ('M18-12C-13-43-62-55-98-52C-123-50-133-35-133 0'
+                  'C-133 35-123 50-98 52C-62 55-13 43 18 12Z')
+    rose = (ellipse(-40,0,13.3,13.3,'#55382b','#bc8c57')
+            + ''.join(
+                f'<g transform="rotate({angle} -40 0)">'
+                + path('M-40 0Q-48-4-43-10Q-35-11-38-5L-40 0',
+                       stroke='#e8c38c', w=.8) + '</g>'
+                for angle in range(0, 360, 60))
+            + ellipse(-40,0,2.3,2.3,'#e4bc83'))
+    # Five paired courses and one single treble course, with their own
+    # terminations at the nut and tied bridge.
+    string_offsets = [-8.7, -7.65, -5.55, -4.5, -2.4, -1.35,
+                      .75, 1.8, 3.9, 4.95, 7.75]
+    return (path('M-133 0C-133 43-122 58-91 60C-57 63-9 48 18 12L-6 22Z',
+                 '#8b573c', EDGE, 1)
+            + path('M-128 22C-119 66-49 65 5 27M-126 36C-115 67-62 67-15 43',
+                   stroke='#c6946a', w=.95)
+            + path(soundboard, WOOD)
+            + path('M-125-3C-127-29-116-45-97-47C-65-50-32-41-7-27',
+                   stroke='#e3b78a', w=.9)
+            + '<g transform="translate(99 0) rotate(71) scale(.79)">'
+            + path('M-5-11H33Q39-11 39-4V8L-5 10Z', '#68412f', EDGE, 1.1)
+            + path('M1-6H32V4H1Z', '#332320', '#a77757', .8)
+            + ''.join(
+                path(f'M{x} {sign * 4}V{sign * 13}', stroke='#442b25', w=1.5)
+                + ellipse(x,sign * 14,2.5,1.65,'#493028','#c29673')
+                for sign, positions in ((-1,(2,8,14,20,26,32)), (1,(5,11,17,23,29)))
+                for x in positions)
+            + '</g>'
+            + path('M18-12L99-9V9L18 12Z', '#955f3b', '#e5b886')
+            + path('M-104-28q4 2 8 9v38q-4 7-8 9l3-9v-38Z', '#5d3928', '#e2b383', .9)
+            + rose
+            + ''.join(path(f'M{x} {-half_width:.2f}V{half_width:.2f}', stroke='#ebc99f', w=.85)
+                      for x, half_width in ((88,9.4),(78,9.8),(68,10.15),(59,10.5),
+                                            (51,10.8),(43,11.1),(35,11.4),(28,11.7)))
+            + path('M16-12V12M9-10V10M3-8V8', stroke='#e5b78b', w=.8)
+            + path('M98-9V9', stroke='#f0d3ab', w=1.4)
+            + ''.join(path(f'M-101 {offset * 1.46:.2f}L98 {offset:.2f}',
+                           stroke='#fae5c2', w=.39) for offset in string_offsets))
 
 
 def bowed(name):
@@ -224,7 +262,8 @@ def auto_tune():
 
 def bassoon():
     # Boot at left, full-length bass joint and bell above the shorter wing joint.
-    return (path('M-107-13L105-17L114-20H120V1H114L105-2L-107 2Z', WOOD, '#a7f3d0')
+    return ('<g transform="rotate(-67)">'
+            + path('M-107-13L105-17L114-20H120V1H114L105-2L-107 2Z', WOOD, '#a7f3d0')
             + path('M-103 2L18 6L24 9V18L-103 23Z', '#216b54', '#a7f3d0')
             + path('M-107-14Q-119-14-119-3V16Q-119 24-109 24H-96V-14Z',
                    '#226e58', '#a7f3d0')
@@ -239,11 +278,12 @@ def bassoon():
                       for x,y,rx in [(-86,-7,4),(-72,-7,3),(-55,-7,4),(-34,-7,3),
                                      (-17,-7,4),(5,-7,3),(29,-7,4),(52,-7,3),(78,-7,4),
                                      (-85,14,4),(-67,14,3),(-50,14,4),(-33,14,3),
-                                     (-15,13,4),(4,12,3)]))
+                                     (-15,13,4),(4,12,3)])
+            + '</g>')
 
 
 def conga():
-    return ('<g transform="scale(.78 1)">'
+    return ('<g transform="scale(.59 1)">'
             + path('M-43-43C-49-24-51-8-47 10Q-42 33-26 56Q0 66 26 56Q42 33 47 10'
                  'C51-8 49-24 43-43Z', WOOD, '#fecaca')
             + path('M-23-36Q-35 11-14 56M23-36Q35 11 14 56M0-34V59',
@@ -335,14 +375,17 @@ def tamboo_bamboo():
 
 
 def piccolo():
-    return (path('M-118-6H117V6H-118Z', WOOD, '#a7f3d0')
-            + rect(-118,-7,64,14,'#a4c9c3',2,'#daf8ee')
-            + rect(-114,-5,57,10,'#a4c9c3')
-            + path('M-54-7H119V7H-54Z', '#235c50', '#77cbb2')
-            + ellipse(-91,0,8,4,'#1b3941','#e0f4e9')
-            + path('M-50 8H111M-47-8H115', stroke='#b8dbd1', w=1.6)
-            + ''.join(ellipse(x,0,4.5,4.5,'#c6e6db','#496a6b') for x in (-44,-32,-20,2,14,26,48,60,72,94,106))
-            + path('M-53-8V8m168-16V8', stroke='#e0f4e9', w=2))
+    return (path('M-118-6H119V6H-118Z', WOOD, '#a7f3d0')
+            + rect(-118,-6,91,12,'#a4c9c3',2,'#daf8ee')
+            + ellipse(-85,0,16,7,'#b9d5d0','#daf8ee')
+            + ellipse(-85,0,7,3.6,'#1b3941')
+            + path('M-28-6.5H119V6L-28 7Z', '#235c50', '#77cbb2')
+            + path('M-24 8H109M-21-7H115', stroke='#b8dbd1', w=1.6)
+            + path('M34 2l7-17q3-4 8-2m24 19 5 10h8', stroke='#d5e9e4', w=2.6)
+            + ''.join(ellipse(x,y,4.4,4.2,'#c6e6db','#496a6b')
+                      for x,y in [(-19,0),(-8,1),(4,0),(17,1),(29,0),(43,1),
+                                  (55,0),(66,1),(80,0),(94,0),(106,1)])
+            + path('M-28-7V7m144-14V7', stroke='#e0f4e9', w=2))
 
 
 def vibraphone():
@@ -634,23 +677,41 @@ def gamelan_rebab():
 
 
 def kora():
-    # Two banks share one bridge. Keep the wire quieter than the wood silhouette.
-    banks = ''.join(
-        path(f'M{3 + side * 3} {-61 + index * 4.4:.1f}'
-             f'L{16 + side * 6} {31 + index * .83:.2f}',
-             stroke=('#e4bc8b', '#f5d8ae')[side], w=.47)
-        for side, count in ((0, 11), (1, 10))
-        for index in range(count)
+    # Both banks sit forward of the through-neck. Each string has its own
+    # neck collar and bridge notch before continuing to the tail ring.
+    slots = [(side, index, -64 + (2 * index + side) * 2.8)
+             for side, count in ((0, 11), (1, 10))
+             for index in range(count)]
+    collars = ''.join(
+        path(f'M{6 - .1316 * index:.2f} {-63.3 + 2.8 * index:.2f}q4 1.4 8-.9',
+             stroke='#ba8a62', w=1.45)
+        for index in range(21)
     )
-    return (ellipse(-5, 43, 38, 28, WOOD, EDGE)
-            + ellipse(-1, 41, 34, 25, '#b78356', '#d9a977')
-            + path('M-8 68L2-71Q7-76 11-70L1 69Z', WOOD, EDGE)
-            + path('M2-55l8 1M1-40l8 1M0-25l8 1M-1-10l8 1', stroke='#a37651', w=2)
-            + path('M-27 57l4-45M26 56l4-45', stroke=DARK, w=6)
-            + path('M-27 56l4-44M26 55l4-44', stroke=GOLD, w=3)
-            + path('M-2 46L14 29H23V39L6 51H-2Z', '#714730', EDGE)
+    banks = ''.join(
+        path(f'M{6 - (y + 64) * .047 + side:.2f} {y:.2f}'
+             f'L{-17 + side * 5 + index * .23:.2f} {21 + index * 1.62 + side * 1.2:.2f}'
+             f'L{-4 + side * 3 + index * .12:.2f} 70',
+             stroke=('#d4a875', '#fff0cd')[side], w=.37)
+        for side, index, y in slots
+    )
+    tacks = ((-27,24),(-21,18),(-13,14),(-4,13),(5,15),(13,19),(20,26),
+             (24,35),(25,44),(23,53),(18,60),(11,66),(3,68),(-6,68),
+             (-15,65),(-23,60),(-29,52),(-32,43),(-31,33))
+    return (path('M-7 77L6-69Q10-73 14-69L1 77Z', '#744b33', EDGE, .9)
+            + collars
+            + ellipse(3, 42, 36, 29, WOOD, EDGE)
+            + ellipse(29, 52, 4.1, 6.2, '#3f2a22', '#bb895c')
+            + ellipse(-4, 41, 29, 29, '#dfb984', '#a8724e')
+            + path('M-30 50Q-21 72 2 68', stroke='#edcea0', w=.9)
+            + ''.join(ellipse(x,y,.86,.81,'#7f5137') for x,y in tacks)
+            + ellipse(-7, 46, 8, 5, '#a1704e', '#f0cc9d')
+            + path('M-11 46L-18 20L-13 18L-6 21L-3 42L-6 47Z', '#70462f', '#a97551', .9)
+            + path('M-21 62L-22 3M17 64L16 4', stroke='#5e3c2a', w=4.5)
+            + path('M-21.8 61L-22.8 4M16.3 63L15.3 5', stroke=GOLD, w=1.1)
+            + ellipse(-22,3,2.7,2.2,'#8e603e', '#d8a573')
+            + ellipse(16,4,2.7,2.2,'#8e603e', '#d8a573')
             + banks
-            + path('M17 40L-3 68M22 40L-1 68', stroke='#ca9a6e', w=.65))
+            + ellipse(-2,71,3.6,2.65,'none','#e5b980'))
 
 
 def djembe():
@@ -799,13 +860,13 @@ def didgeridoo():
 
 
 def yamaha_dx7():
-    switches = ''.join(rect(x, -13 + row * 7, 9, 4, '#3eaa85', .3)
+    switches = ''.join(rect(x, -13 + row * 7, 9, 4, ('#174b66', '#23617e')[row], .3)
                        for row in range(2) for x in range(-35, 96, 12))
-    return (rect(-109, -27, 218, 56, '#4d3740', 3, '#89ddc5')
-            + panel_text(-101, -15, 'DX7', 8, '#9ccac0')
-            + rect(-75, -15, 28, 8, '#a4b86f', .6)
+    return (rect(-109, -27, 218, 56, WOOD, 3, '#b4e8fc')
+            + panel_text(-101, -15, 'DX7', 8, '#e0f7ff')
+            + rect(-75, -15, 28, 8, '#a9dfee', .6)
             + switches + keyboard(-82, 2, 183, 24, 36)
-            + rect(-103, 5, 6, 13, DARK) + rect(-93, 5, 6, 13, DARK))
+            + rect(-103, 5, 6, 13, '#11334d') + rect(-93, 5, 6, 13, '#11334d'))
 
 
 def mellotron():
@@ -989,87 +1050,148 @@ def brass_pistons(xs, y, height):
                    for x in xs)
 
 
+
 def straight_trombone():
-    return (brass_tube('M-75-6H-95Q-109-6-109 1Q-109 8-95 8H-72', 9)
-            + path('M-86-9C-40-9 5-6 36-10Q57-13 68-26V14Q56 1 31-2C-9-5-42-2-86-2Z', WOOD)
-            + ellipse(68,-6,3.6,20,'#654722',GOLD)
-            + brass_tube('M-76 8H104C121 8 121 24 104 24H-80', 4.8)
-            + brass_tube('M-77 7v18M-63 7v18M-84-5v13', 3)
-            + path('M-60 6H-7M-60 22H-7', stroke='#fff1cf', w=1.35)
-            + brass_mouthpiece(-96,24))
+    # The upper slide rail starts at the receiver, and the lower rail
+    # returns to the bell section through the tuning bow at the player's end.
+    bell = ('M49-40Q47-27 32-23C14-19-31-19-74-19H-132'
+            'C-158-19-158 13-132 13H-48V7H-132C-150 7-150-13-132-13H-74'
+            'C-33-13 8-14 31-10Q45-5 49 8Z')
+    return (path(bell, WOOD)
+            + ellipse(49,-16,4,24,'#654722',GOLD)
+            + brass_tube('M-54-4L139 2C155 2 155 16 139 16L-52 10', 4.6)
+            + brass_tube('M-17-3V12M-37-3V11M-114-16V10', 2.9, .7)
+            + path('M-47-6l18 .5M-48 8l18 1', stroke='#fff0cc', w=2)
+            + brass_mouthpiece(-68,-4))
+
 
 
 def piston_trumpet():
-    return (brass_tube('M-96-13H58C87-13 88 12 62 12H-39Q-56 12-56 0', 6)
-            + brass_tube('M-33 14V28Q-33 38-23 38H-2Q8 38 8 28V13', 5.8)
-            + brass_tube('M-7-3H22Q42-3 42 7Q42 18 22 18H-7', 6)
-            + brass_pistons((-28,-13,2), -16, 43)
-            + path('M-46-2C0-2 37-1 65-4Q93-7 110-24V24Q93 7 66 4C32 1-9 4-46 4Z', WOOD)
-            + ellipse(110,0,4.3,24,'#775022',GOLD)
-            + brass_mouthpiece(-108,-13))
+    tuning = 'M-98-3H62C80-3 80 21 62 21H5'
+    bell = ('M112-40Q112-32 107-27C98-19 64-18 15-18H-75'
+            'C-100-18-103 25-75 25H-27V17H-75C-92 17-90-10-75-10H15'
+            'C59-10 87-10 102-3Q110 1 112 12Z')
+    slides = ('M-26 22H-51Q-61 22-61 26Q-61 31-51 31H-26'
+              'M-10 17H-20Q-25 17-25 21Q-25 25-20 25H-10'
+              'M4 13H51Q63 13 63 19Q63 25 51 25H4')
+    return (brass_tube(tuning, 5.5)
+            + path(bell, WOOD)
+            + ellipse(112,-14,4.2,26,'#775022',GOLD)
+            + brass_tube(slides, 4.5)
+            + brass_pistons((-27,-11,5), -15, 48)
+            + brass_tube('M-98-3H47', 5.5)
+            + brass_mouthpiece(-111,-3))
+
 
 
 def single_f_horn():
-    return (brass_tube('M-55-49H-26C16-52 47-27 47 7C47 35 27 53-5 53C-38 53-55 34-53 8C-52-13-37-30-21-33', 6)
-            + brass_tube('M-15-30C-44-21-47 13-28 30C-13 44 19 41 27 20C38-4 21-29 2-29Z', 6)
-            + brass_tube('M-22-7C-35-12-35 11-22 11H8Q20 10 17-1Q14-10 3-9Z', 5.5)
-            + brass_tube('M-21 4C-32 10-32 24-21 28H10Q21 27 22 15Q22 6 12 5Z', 5.5)
-            + brass_tube('M-19-17H9Q23-18 22-9M-14 19Q-20 38 0 37H15', 4)
-            + ''.join(ellipse(x,-10,5.7,5.7,WOOD,EDGE) + path(f'M{x} -10l3-12h6',stroke=GOLD,w=2)
-                      for x in (-22,-10,2))
-            + path('M18 33C47 29 61 23 77 13L91 4L99 44L83 43C63 39 47 40 18 40Z', WOOD)
-            + '<g transform="rotate(-11 94 24)">'+ellipse(94,24,6.2,21,'#755022',GOLD)+'</g>'
-            + brass_mouthpiece(-68,-49))
+    # The wide throat runs up the outside of the coil and meets the
+    # valve circuit at the bottom left.
+    bell_bow = ('M88 62C67 53 59 40 58 13C58-26 36-52 6-52'
+                'C-20-52-43-29-43-4C-43 28-13 51 19 30L14 24'
+                'C-13 44-37 23-37-4C-37-27-18-45 6-45'
+                'C36-45 48-20 48 13C47 37 40 53 14 62Z')
+    slides = ('M-18-9l-7 12q-6 10 2 13q6 3 9-5l6-12'
+              'M-4-8L9 19Q15 31 8 35Q2 38-3 29L-18-9'
+              'M9-10L26 14Q35 26 42 16Q48 7 34 0L8-13')
+    return (path(bell_bow, WOOD)
+            + ellipse(51,62,37,5.5,'#735022',GOLD)
+            + brass_tube('M-56 2L-33-21Q-20-34-7-24L8-13', 4)
+            + brass_tube('M16 28Q24 22 23 9L8-13', 5.3)
+            + brass_tube(slides, 4.5)
+            + ''.join(ellipse(x,y,5.4,5.4,'#9f682a',EDGE)
+                      + path(f'M{x} {y}l-5-11',stroke=GOLD,w=2)
+                      + ellipse(x-5,y-11,2.4,1.8,EDGE,GOLD)
+                      for x,y in ((-18,-9),(-5,-11),(8,-13)))
+            + '<g transform="translate(-56 2) rotate(-43) scale(.7)">'
+            + brass_mouthpiece(-13,0)
+            + '</g>')
+
 
 
 def upright_bass_brass(is_tuba):
-    # Both examples have four top-action pistons. The tuba has a wider bell,
-    # heavier outer bow, and broader wrap than the euphonium.
+    # Both four-piston models carry the bell on the player's right in
+    # this view. The tuba's deep bell bow and long nested returns fill
+    # considerably more of the body.
     if is_tuba:
-        bell = 'M-72-60H-8C-29-45-31-26-27 3L-22 26C-20 42-4 44 11 44H30Q51 44 51 24V-10H64V27Q64 58 31 58H4Q-37 58-39 29L-43 1C-45-25-49-47-72-60Z'
-        lip = (-40,-60,32)
-        outer = 'M-23 38C-26 13-29-28-8-32L29-32Q41-32 41-20V31Q40 45 26 45H4Q-10 45-11 29L-14-10'
-        inner = 'M-17 13V30Q-17 39-8 39H28Q39 39 39 27V9M-14 19H7Q16 19 16 11V-9M57-10Q57-21 45-21H29Q19-21 19-13V3'
-        lead = 'M65-46H55Q42-46 36-33L22-9H8'
-        valves = (-14,-3,8,19)
+        bow = ('M-6-64H65C49-56 44-44 42-31L38 36'
+               'C37 57 23 66 2 66H-6C-29 66-43 55-43 33V-25'
+               'C-43-54 1-56 4-25L6-1H-2L-5-24'
+               'C-7-46-34-45-34-25V33C-34 48-25 54-7 54H2'
+               'C19 54 25 48 26 33L27-30C27-47 15-59-6-64Z')
+        lip = (29.5,-64,35.5)
+        tuning = ('M1-2V-19C1-41-27-39-27-18V39Q-27 49-13 49H-1'
+                  'Q12 49 12 35V2')
+        slides = ('M-26-6V35Q-26 41-22 41Q-18 41-18 35V-6'
+                  'M-15 3V25Q-15 31-11 31Q-7 31-7 25V3'
+                  'M-4 5V36Q-4 44 1 44Q6 44 6 36V5'
+                  'M7 4V27Q7 34 11 34Q15 34 15 26V5')
+        lead = 'M54-7H20Q11-7 9-2H-7'
+        valves = (-23,-12,-1,10)
+        mouth, mouth_y = 54, -7
     else:
-        bell = 'M-51-61H3C-16-46-18-29-16-4L-13 24Q-12 37 2 37H20Q34 37 35 21V-6H44V22Q44 50 20 50H1Q-25 50-25 25L-27-4Q-28-44-51-61Z'
-        lip = (-24,-61,27)
-        outer = 'M-11 33V-8Q-11-28 3-28H18Q31-28 31-12V26Q31 37 19 37H4Q-3 37-3 27V3'
-        inner = 'M-14 13H11Q20 13 20 22Q20 31 11 31H-5M13 14V29Q13 41 21 41Q29 41 29 31V10M40-6Q40-17 27-17H21Q13-17 13-10V3'
-        lead = 'M54-46H45Q31-46 26-35L16-13Q13-8 2-8'
-        valves = (-14,-5,4,13)
-    x, y, r = lip
-    mouth = 65 if is_tuba else 54
-    return (path(bell, WOOD)
-            + ellipse(x,y,r,4.3,'#62451f',GOLD)
-            + brass_tube(outer, 8 if is_tuba else 5.8)
-            + brass_tube(inner, 5.6 if is_tuba else 4)
-            + f'<g transform="translate({mouth+13} 0) scale(-1 1)">'
-            + brass_mouthpiece(0, -46)
-            + '</g>'
-            + brass_tube(lead, 4.4)
-            + brass_pistons(valves,-14,31))
+        bow = ('M-3-64H54C40-58 37-47 35-34L30 38'
+               'C29 57 16 65-1 65H-9C-27 65-38 54-38 37V-26'
+               'C-38-53-1-53 2-26L4-2H-3L-6-24'
+               'C-8-45-31-43-31-26V36C-31 51-24 56-9 56H-2'
+               'C11 56 20 50 21 38L22-31C22-48 13-60-3-64Z')
+        lip = (25.5,-64,28.5)
+        tuning = ('M-24 0V33Q-24 47-13 47H0Q12 47 12 34V0'
+                  'M12 12V43Q12 54 0 54H-9Q-21 54-21 42V33')
+        slides = ('M-29-4V35Q-29 40-25 40Q-21 40-21 35V-4'
+                  'M-18 1V18Q-18 23-14 23Q-10 23-10 18V1'
+                  'M-8 1V15Q-8 20-4 20Q0 20 0 15V1'
+                  'M3 0V24Q3 29 7 29Q11 29 11 24V0')
+        lead = 'M51-19H30Q22-19 17-12L7-4H-10'
+        valves = (-25,-15,-5,5)
+        mouth, mouth_y = 51, -19
+    x, y, radius = lip
+    width_scale = .84 if is_tuba else .88
+    return (f'<g transform="scale({width_scale} 1)">'
+            + path(bow, WOOD)
+            + ellipse(x,y,radius,4.8,'#62451f',GOLD)
+            + brass_tube(tuning, 5.3)
+            + brass_tube(slides, 3.4)
+            + brass_pistons(valves, -9, 19)
+            + brass_tube(lead, 4)
+            + f'<g transform="translate({mouth+8} {mouth_y}) scale(-.7 .7)">'
+            + brass_mouthpiece(0,0)
+            + '</g></g>')
+
 
 
 def cornet():
-    return (brass_tube('M-76-12H38Q57-12 57 5Q57 24 38 24H-46Q-67 24-67 8Q-67-4-51-4H16', 6.5)
-            + brass_tube('M-47 14V29Q-47 39-37 39H-10Q0 39 0 29V12', 6)
-            + brass_tube('M-1 12H23Q36 12 36 20Q36 31 23 31H3', 5)
-            + brass_pistons((-38,-23,-8), -16, 38)
-            + path('M-29-2C19-2 42-1 64-7Q76-10 88-21V21Q72 9 60 6C39 2 12 4-29 4Z', WOOD)
-            + ellipse(88,0,4.2,21,'#765020',GOLD)
-            + brass_mouthpiece(-89,-12))
+    bell = ('M84-43Q83-35 75-30C63-22 22-24-55-24C-93-24-96 30-57 30H-30'
+            'V22H-57C-83 22-82-16-55-16C19-16 51-17 72-10Q82-5 84 3Z')
+    return (brass_tube('M-73-7H27C63-7 65 43 31 43H-35Q-55 43-55 28Q-55 15-37 15H-10', 5.6)
+            + path(bell, WOOD)
+            + ellipse(84,-20,4.2,23,'#765020',GOLD)
+            + brass_tube('M-27 18H-57Q-65 18-65 23Q-65 28-57 28H-27'
+                         'M-14 10H5Q13 10 13 16Q13 22 5 22H-14'
+                         'M-1 22H43Q55 22 55 28Q55 34 43 34H-1', 4.3)
+            + brass_pistons((-30,-15,0), -21, 55)
+            + brass_tube('M-73-7H22', 5.6)
+            + brass_mouthpiece(-86,-7))
+
 
 
 def flugelhorn():
-    return (brass_tube('M-81-17H36Q63-17 63 7V16Q63 39 38 39H-42Q-70 39-70 14V-4', 8)
-            + brass_tube('M-61 21Q-58 31-44 31H-6Q10 31 10 15V-3', 6)
-            + brass_tube('M-8 18H15Q28 18 28 28H45', 5)
-            + brass_pistons((-48,-33,-18), -19, 41)
-            + path('M-30-4C13-4 34-7 53-13Q76-21 91-34V30Q72 17 51 12C31 7 3 4-30 4Z', WOOD)
-            + ellipse(91,-2,6,32,'#765020',GOLD)
-            + brass_mouthpiece(-94,-17))
+    bow = ('M85-43C81-27 60-22 32-21H-39C-65-21-77-8-77 13'
+           'C-77 35-62 46-39 46H42C77 46 77-10 42-10H-3V-5H42'
+           'C70-5 70 40 42 40H-39C-59 40-69 31-69 13'
+           'C-69-5-58-12-36-12H30C63-11 78-4 85 15Z')
+    slides = ('M-33 0V20Q-33 28-27 28Q-21 28-21 20V0'
+              'M-19 0V13Q-19 20-13 20Q-7 20-7 13V0'
+              'M-5 0V33Q-5 44 1 44Q7 44 7 33V0')
+    return (path(bow, WOOD)
+            + ellipse(85,-14,5.6,29,'#765020',GOLD)
+            + path('M-73 13C-73 34-59 43-38 43H42', stroke='#f6cb79', w=1.7)
+            + brass_tube(slides, 4.2)
+            + brass_pistons((-28,-14,0), -23, 35)
+            + path('M-61-10C-56-15-45-17-33-17H28C55-17 74-21 81-30',
+                   stroke='#ffe4a3', w=1.7)
+            + brass_tube('M-83-4H-28', 4)
+            + brass_mouthpiece(-96,-4))
 
 
 def sousaphone():
@@ -1141,42 +1263,159 @@ def helicon():
             + valves)
 
 
+
 def cornetto():
-    return (path('M-102-21C-33-22 28-12 87 12L101 17L96 32C41 6-31-11-102-13Z', '#734c32', '#f0c982')
-            + path('M-95-17Q8-17 94 24', stroke='#dfa962', w=1.65)
-            + ''.join(ellipse(x,y,3,2.6,'#2b1d17','#dba75f')
-                      for x,y in [(-57,-15),(-36,-14),(-15,-11),(7,-7),(29,-2),(51,5)])
-            + '<g transform="rotate(23 98 24)">'+ellipse(98,24,3.3,7.7,'#302016',GOLD)+'</g>'
-            + brass_mouthpiece(-115,-17))
+    # The ivory museum specimen widens gradually and is faceted, with
+    # all six fingerholes on the broad half of the curve.
+    body = ('M-105-13C-70 4-40 15-7 17C32 19 67 8 103-11'
+            'L109 1C75 20 34 31-9 29C-45 27-77 11-108-7Z')
+    return (path(body, '#d9ba86', '#f1d8ae')
+            + path('M-106-10C-68 9-37 22-7 23C34 25 69 13 106-6', stroke='#f7dfb5', w=2)
+            + ''.join(ellipse(x,y,1.9,2.4,'#412a18')
+                      for x,y in ((-2,22),(14,22),(30,20),(46,17),(62,13),(78,7)))
+            + path('M-103-13l-3 7M-97-10l-3 8', stroke=GOLD, w=2.3)
+            + '<g transform="translate(-106 -10) rotate(25) scale(.6)">'
+            + brass_mouthpiece(-13,0)
+            + '</g>'
+            + '<g transform="rotate(-29 106 -5)">'
+            + ellipse(106,-5,2.7,6.4,'#6e5232','#f1d8ae')
+            + '</g>')
+
 
 
 def natural_trumpet():
-    return (brass_tube('M-127-10H94Q105-10 105 0Q105 10 94 10H-96Q-108 10-108 0Q-108-10-97-10H-57', 4.5)
-            + brass_tube('M-68-9V9M21-9V9', 2.8)
-            + path('M-61-13C18-13 63-12 90-16Q109-19 122-28V8Q109-2 91-4C55-7 6-7-61-7Z', WOOD)
-            + ellipse(122,-10,4,18,'#745123',GOLD)
-            + brass_mouthpiece(-139,-10))
+    # Two bows fold the tube into three runs. The cord wraps the
+    # mouthpipe and the bell branch while the middle run stays visible.
+    return (brass_tube('M-127 0H89Q104 0 104 10Q104 20 89 20H-100'
+                       'C-118 20-118-19-100-19H-47', 4.8)
+            + path('M-51-22H25C62-22 97-23 111-33Q120-40 120-47V9'
+                   'Q118 2 111-3C96-13 62-16 25-16H-51Z', WOOD)
+            + ellipse(120,-19,4.2,28,'#745123',GOLD)
+            + path('M-54-22h36v25h-36Z', '#785124', GOLD)
+            + path('M-50-21l4 23m2-23 4 23m2-23 4 23m2-23 4 23m2-23 4 23',
+                   stroke='#c4964f', w=1.2)
+            + brass_mouthpiece(-140,0))
+
+
+def concert_harp():
+    # The two spans follow the lower edge of the action plate, from bass to treble.
+    neck_spans = (
+        ((-20, -47), (-5, -51), (-1, -30), (9, -24), 28),
+        ((9, -24), (17, -19), (23, -22), (31, -31), 19),
+    )
+    harp_strings = []
+    upper_discs = []
+    lower_discs = []
+    tuning_pins = []
+    for start, control_a, control_b, end, count in neck_spans:
+        for step in range(count):
+            t = (step + .5) / count
+            u = 1 - t
+            x, y = (
+                u**3 * a + 3*u*u*t*b + 3*u*t*t*c + t**3*d
+                for a, b, c, d in zip(start, control_a, control_b, end)
+            )
+            note = len(harp_strings) % 7  # The lowest string of this model is a G.
+            color = {3: '#d47668', 6: '#789fd1'}.get(note, '#d6bea1')
+            anchor_x = x + 1.5
+            anchor_y = 55 - (anchor_x + 19) * 1.65
+            harp_strings.append(path(f'M{x:.2f} {y:.2f}L{anchor_x:.2f} {anchor_y:.2f}',
+                                     stroke=color, w=.34 if note not in (3, 6) else .47))
+            lower_discs.append(f'M{x:.2f} {y-1.7:.2f}h.43')
+            upper_discs.append(f'M{x-.66:.2f} {y-4.2:.2f}h.38')
+            tuning_pins.append(f'M{x-1.15:.2f} {y-7.4:.2f}h.35')
+
+    pedals = (
+        path('M-6 64l14 6q2 2 .2 3L-7 69Z M-1 63l16 4q2 1 .6 3L-2 68Z'
+             'M3 62l16 1q2 1 .8 3L2 67Z M7 60l16-1q2 1 .5 3L6 65Z',
+             '#59403b', GOLD, .78)
+    )
+    soundbox = (
+        path('M32-37Q38-38 38-31Q31-7 17 27L-2 65-24 65'
+             'Q-20 57-17 50L31-30Z', WOOD)
+        + path('M36-31Q25 8 5 49Q.5 59-5 64H-16Q-10 62-4 49L34-33Z',
+               '#a66a48', '#633d34', .75)
+        + path('M34-30Q19 16 1 52Q-3 60-8 63M32-29Q16 16-2 51Q-6 59-11 62',
+               stroke=GOLD, w=.56)
+        + path('M-13 56q1.5-7 6-9q-3 6-6 9m4-7q.1-4 3-7q.1 4-3 7'
+               'm3-3q3-2 5-6q-4 1-5 6m4-7q.3-5 3-7q0 4-3 7',
+               stroke='#744934', w=.65)
+    )
+    neck = (
+        path('M-29-67C-1-71 3-44 11-33C17-24 23-35 30-39'
+             'Q40-43 38-31L34-30Q31-33 29-29C23-22 17-19 9-24'
+             'C-1-30-5-51-20-47L-24-43Z', WOOD)
+        + path('M-21-61C-3-63 0-40 10-30C18-22 24-31 31-36'
+               'L33-31C25-22 18-18 9-24C-1-30-5-51-20-47Z',
+               '#be8d52', GOLD, .64)
+        + path(''.join(tuning_pins), stroke='#674637', w=.65)
+        + path(''.join(upper_discs), stroke='#68422d', w=.78)
+        + path(''.join(lower_discs), stroke='#ffe2a8', w=.78)
+    )
+    column = (
+        path('M-37-69Q-30-74-21-70L-22-65Q-20-61-23-57'
+             'L-24-48-23-43-25-38-25 37-23 43-24 47'
+             'L-22 53-23 58-20 63Q-29 67-38 63L-35 58-36 53'
+             'L-34 47-36 43-34 37V-38L-36-43-34-48-35-57-37-63Z', WOOD)
+        + path('M-36-66Q-30-69-22-67M-35-57Q-29-59-23-57'
+               'M-34-48Q-29-49-24-48M-36-43Q-29-45-23-43'
+               'M-34 39Q-29 41-25 39M-35 44Q-29 46-23 44'
+               'M-35 54Q-29 56-23 54M-35 59Q-29 62-23 59',
+               stroke=GOLD, w=.81)
+        + path('M-32-38v75m2-75v76m2-76v76m2-76v75', stroke='#e4b478', w=.55)
+        + path('M-29-49q-6-3-4-7q4 1 4 7q0-6 4-7q2 4-4 7'
+               'm0 102q-5-3-4-6q4 .5 4 6q0-5.5 4-6q1 3-4 6',
+               stroke=GOLD, w=.75)
+    )
+    base = (
+        path('M-39 61Q-32 59-22 62Q-11 64 1 61L6 64 4 71-4 73'
+             'Q-20 77-40 73L-42 69Z', WOOD)
+        + path('M-41 64Q-24 69 4 64M-40 71Q-19 75 4 69',
+               stroke=GOLD, w=.83)
+        + path('M-34 70q3-5 7 1q3-4 6 0m4 .4q3-4 7-.5m4-.8q2-3 5-2',
+               stroke='#dda96e', w=.68)
+    )
+    return pedals + soundbox + ''.join(harp_strings) + neck + base + column
+
+
+def write(kind, slug, width, height, content):
+    assert slug in INSTRUMENTS, f'{slug} is not an instrument in packages/catalogue/data/graph.json'
+    target = ROOT / f'instrument-{kind}' / f'{slug}.svg'
+    dimensions = ' width="24" height="24"' if kind == 'icons' else ''
+    OUTPUT[target] = f'<svg xmlns="{SVG}"{dimensions} viewBox="0 0 {width} {height}">\n{content}\n</svg>\n'
 
 
 ART = {
+    'harp': (lambda _: concert_harp(), .91,
+             'M7 21V2c5 0 5 8 8 8 1.4 0 2.3-1.7 4-2l-7.5 13M5 21h9'
+             'M10 4.5V20m2.7-10.8v8.4'),
     'helicon': (lambda _: helicon(), 0.92,
                 'M17 2Q15 5 9 8C3 11 2 17 6 20C10 24 17 21 18 16'
                 'Q19 11 13 9M17 2l4 6Q17 7 13 9L9 12M17 13l-3 4'),
     'madeiran-machete': (plucked, 1.28, 'M11 10V4L10 2h4l-1 2v6c2-1 4 0 3 2l-.5 2c0 1 2.5 2 2.5 4 0 4-12 4-12 0 0-2 2.5-3 2.5-4L8 12c-1-2 1-3 3-2ZM12 15h.01M10 18h4'),
     'juno-60': (lambda _: juno_60(), 1.05, 'M2 7h20v10H2zM2 12h20M7 12v5m3-5v5m3-5v5m3-5v5m3-5v5M5 9v1m4-1v1m4-1v1m4-1h2'),
     'tamboo-bamboo': (lambda _: tamboo_bamboo(), 1.13, 'M3 4q2-2 4 0v16H3ZM3 5h4m-4 6h4m-4 5h4M10 7q2-2 4 0v13h-4Zm0 1h4m-4 7h4m3-3q1.5-2 3 0v8h-3Zm0 1h3m.5-4 1.5-4'),
-    'cornet': (lambda _: cornet(), 1.29, 'M2 9h4m0 0h10q3-1 5-4v11q-3-4-7-4H7q-3 0-3 3t3 3h7q4 0 4-3M7 7v11m3-11v11m3-11v8'),
-    'flugelhorn': (lambda _: flugelhorn(), 1.22, 'M2 8h5m0 0h7q4-1 8-5v13q-4-4-9-4H6q-2 0-2 3v2q0 3 3 3h9q4 0 4-4M7 6v11m3-11v11m3-11v10'),
+    'cornet': (lambda _: cornet(), 1.23,
+               'M2 10h13q4 0 4 4t-4 4H9q-3 0-3-2t3-2h3M18 11l3 1V4q-2 4-7 4H7q-3 0-3 4t3 4M8 6v10m3-10v10m3-10v10'),
+    'flugelhorn': (lambda _: flugelhorn(), 1.22,
+                   'M2 11h7M22 4q-2 4-10 4H8q-5 0-5 6t5 6h8q5 0 5-5t-5-5h-4q7 0 10 5ZM8 6v10m3-10v10m3-10v10'),
     'sousaphone': (lambda _: sousaphone(), 0.97,
                    'M14 5.5a5 4.5 0 1 0-10 0 5 4.5 0 1 0 10 0ZM9.5 6h.01'
                    'M8.5 10C5 13 5 20 11 22C17 24 21 16 17 12Q15 10 11 11M12 20l5-5'),
-    'cornetto': (lambda _: cornetto(), 1.1, 'M3 6q8 0 19 8l-2 3Q12 10 3 9Zm4 2h.01m3 1h.01m3 1h.01m3 2h.01m3 1h.01'),
-    'natural-trumpet': (lambda _: natural_trumpet(), 1.1, 'M2 9h13q4 0 7-4v9q-3-3-7-3H5q-3 0-3 3t3 3h16M8 11v6m7-6v6'),
-    'trombone': (lambda _: straight_trombone(), 1.19, 'M2 8h7q4 0 7-3v6q-4-2-7-2H5q-3 0-3 3t3 3h15q2 0 2 2t-2 2H3m2-4v4m3-4v4'),
-    'trumpet': (lambda _: piston_trumpet(), 1.28, 'M2 9h4m0 0h8q6 0 7-4v13q-4-5-9-5H5q-2 0-2 2t2 2h10m-9-9v9m3-9v9m3-9v9M5 6h2m1 0h2m1 0h2'),
-    'french-horn': (lambda _: single_f_horn(), 1.25, 'M2 4h5q8-1 9 6 1 7-5 9-6 2-8-4-1-5 4-7 5-2 6 3 1 4-3 5m4 2 8-4v7Zm-8-7h1m1 0h1m1 0h1'),
-    'tuba': (lambda _: upright_bass_brass(True), 1.07, 'M2 2h11q-4 4-4 9v6q0 2 3 2h4q3 0 3-3V7m2 0h-3m-5 3v5m2-5v5m2-5v5m-5 7H8q-4 0-4-4V9q0-4-2-7Z'),
-    'euphonium': (lambda _: upright_bass_brass(False), 1.11, 'M4 2h9q-3 3-3 8v7q0 2 2 2 4 0 4-3V9q0-4 5-4m-9 4v5m2-5v5m-2 8H9q-3 0-3-4V9q0-4-2-7Z'),
+    'cornetto': (lambda _: cornetto(), 1.1,
+                 'M2 9q10 7 19-2l2 3Q13 20 2 11ZM11 13h.01m3-.5h.01m3-1h.01'),
+    'natural-trumpet': (lambda _: natural_trumpet(), 1.1,
+                        'M2 12h17q2 0 2 2t-2 2H5q-3 0-3-4t3-4h9q5 0 7-3v6q-2-3-7-3M7 8v4'),
+    'trombone': (lambda _: straight_trombone(), 1.04,
+                 'M7 11l13 1q2 0 2 2t-2 2H4q-2 0-2-4t2-4h7q3 0 4-3v6q-1-3-4-3M10 11v5'),
+    'trumpet': (lambda _: piston_trumpet(), 1.28,
+                'M2 11h14q3 0 3 3t-3 3H6q-3 0-3-4t3-5h8q5 0 7-4v8q-2-4-7-4M8 6v12m3-12v12m3-12v12'),
+    'french-horn': (lambda _: single_f_horn(), 1.12,
+                    'M2 11l4-4q5-7 10-1 2 3 2 8 0 4 4 6H12q4-2 4-7Q14 18 8 16Q3 14 5 9M8 8l3 5m0-5 3 4'),
+    'tuba': (lambda _: upright_bass_brass(True), 0.97,
+             'M10 2h11q-4 3-4 7v8q0 5-6 5H8q-4 0-4-4V8q0-4 4-4t4 4v8q0 3-2 3t-2-3v-5m10 0h3'),
+    'euphonium': (lambda _: upright_bass_brass(False), 0.98,
+                  'M12 2h9q-4 3-4 7v8q0 5-5 5H9q-4 0-4-4V8q0-4 4-4t4 4v5M8 9v7q0 2 2 2t2-2v-3m1-2 4-2h3'),
     'yamaha-dx7': (lambda _: yamaha_dx7(), 1.22, 'M2 7h20v10H2zm2 2h5m4 0h2m2 0h2M5 12h15m-12 0v5m4-5v5m4-5v5'),
     'mellotron': (lambda _: mellotron(), 1.32, 'M4 6h16l2 3v11H2V9zm0 4h16M5 13h14v4H5zm4 0v4m3-4v4m3-4v4'),
     'fairlight-cmi': (lambda _: fairlight_cmi(), 1.28, 'M8 3h10v8H8zm2 2h6v4h-6zm-8 9h20v7H2zm3 3v4m4-4v4m4-4v4m4-4v4'),
@@ -1192,7 +1431,9 @@ ART = {
     'cuica': (lambda _: cuica(), 1.42, 'M6 5h11v14H6q-4 0-4-7t4-7Zm11 0c7 0 7 14 0 14-5 0-5-14 0-14Zm-1 6 4 2'),
     'bass-drum': (lambda _: bass_drum(), 1.18, 'M5 7h10c5 0 5 14 0 14H5m0-14C1 7 1 21 5 21s4-14 0-14ZM10 9l3 9 3-9m-8-3 10-3m3 0a2 2 0 1 1-4 0 2 2 0 1 1 4 0'),
     'dominican-tambora': (lambda _: dominican_tambora(), 1.22, 'M5 7q7-3 13 0v12q-7 3-13 0Zm0 0c-4 0-4 12 0 12m13-12c5 0 5 12 0 12M8 8l3 10 3-10 3 10m-4-13 8-3'),
-    'kora': (lambda _: kora(), .97, 'M10 14l1-12h2l-1 12 5-5-1 7c2 4 0 6-4 6s-7-2-7-5q0-3 5-3Zm-2 4v-5m7 6 2-5'),
+    'kora': (lambda _: kora(), .93,
+             'M12.6 13.6 14.5 2M13.9 5.6 8.9 14.6l2 4.2M6.5 11.5v4.5M16 11.5v4.5'
+             'M6.5 14C2.5 17 5 22 11 22S20 17.5 16 14'),
     'djembe': (lambda _: djembe(), 1.38, 'M4 7c0-4 16-4 16 0s-16 4-16 0Zm0 0c0 5 3 7 5 8l-2 5q5 2 10 0l-2-5c2-1 5-3 5-8M8 11l2 3m6-3-2 3'),
     'qanun': (lambda _: qanun(), 1.16, 'M3 19 9 5h12v14ZM10 9h7M8 13h9M6 16h11m1-11v14'),
     'ney': (lambda _: reed_flute(), 1.25, 'M3 8.5 21 12v3L3 12.5q-2-2 0-4Zm4 1v3m3-1h.01m3 1h.01m3 0h.01m3 1h.01'),
@@ -1232,12 +1473,12 @@ ART = {
     'saxophone': (lambda _: saxophone(), 1.02,
                   SAXOPHONE_OUTLINE + SAXOPHONE_SEAM + 'M10.6 8.7h.01m.6 3h.01m.6 3h.01'),
     'auto-tune': (lambda _: auto_tune(), 1.05, 'M2 5h20v14H2zM2 8h20M6 8v11M8.5 15h3m1-3h3m1 2h3'),
-    'bassoon': (lambda _: bassoon(), 1.08, 'M20 7h2v4h-2M4 8h16v2H4M4 10l9 1v4H4M4 8H3q-1 0-1 1v5q0 1 1 1h1ZM13 13c2-.1 1.8 2 3.1 2.4s1.7.5 2.6 2'),
-    'conga': (lambda _: conga(), 1.03, 'M6.5 5c0-3 11-3 11 0s-11 3-11 0ZM6.5 5c-1 6 0 10 2.5 15q3 2 6 0c2.5-5 3.5-9 2.5-15M9 8v3m6-3v3'),
+    'bassoon': (lambda _: bassoon(), .59, 'M20 7h2v4h-2M4 8h16v2H4M4 10l9 1v4H4M4 8H3q-1 0-1 1v5q0 1 1 1h1ZM13 13c2-.1 1.8 2 3.1 2.4s1.7.5 2.6 2'),
+    'conga': (lambda _: conga(), 1.03, 'M8 4c0-2.5 8-2.5 8 0s-8 2.5-8 0ZM8 4c-1 6 0 13 2 17q2 1.5 4 0c2-4 3-11 2-17M10 7v3m4-3v3'),
     'harmonium': (lambda _: harmonium(), 1.05, 'M2 9l2-5h16l2 5v11H2ZM3 7h18M2 9h20M5 11h14v5H5zM9 11v3m6-3v3M8 18h.01m4 0h.01m4 0h.01'),
     'juno-106': (synthesizer, 1.05, 'M2 7h20v10H2zM2 12h20M7 12v5m3-5v5m3-5v5m3-5v5m3-5v5M5 9.5h2m4-1v2m4-2v2m4-2v2'),
     'minimoog': (synthesizer, 1.02, 'M4 5h16l2 8v6H2v-6zM2 13h20M7 13v6m4-6v6m4-6v6m4-6v6M7 9h.01m5 0h.01m5 0h.01M4.5 15v2'),
-    'piccolo': (lambda _: piccolo(), .67, 'M5 10.5h14v3H5zM9 10.5v3M7 12h.01m4.5 0h.01m2.5 0h.01m2.5 0h.01'),
+    'piccolo': (lambda _: piccolo(), .67, 'M4 10.5h16v3H4ZM10 10.5v3M7 12h.01m5.5 0h.01m3 0h.01m3 0h.01'),
     'vibraphone': (lambda _: vibraphone(), 1.10, 'M4 5h16l2 7H2zM3 9h18M8 5l-1 4m9-4 1 4M7 9v3m5-3v3m5-3v3M4 12v8m16-8v8M4 18h16M8 12v3m4-3v4m4-4v2M12 18v2h3'),
     'violin': (bowed, 1.15, 'M11 9V4l-1-1V2h4v1l-1 1v5c2-1 3.5 0 3.5 2l-1.5 2.5 2 3c1 2.5-.5 4.5-5 4.5s-6-2-5-4.5l2-3L7.5 11c0-2 1.5-3 3.5-2ZM10.5 16.5h3M21 5v12.5'),
     'algerian-mandole': (plucked, 1.08, 'M10.5 9V3l-.5-1h4l-.5 1v6c2 2 5 5 5 8a6.5 5 0 0 1-13 0c0-3 3-6 5-8ZM12 15h.01M10 19h4'),
@@ -1245,7 +1486,10 @@ ART = {
     'charango': (plucked, 1.26, 'M10.5 9V6H9V2h6v4h-1.5v3c2.5-1 4.5 0 4.5 2 0 1-1 2-1 3s2 2 2 4c0 3-2 4-7 4s-7-1-7-4c0-2 2-3 2-4s-1-2-1-3c0-2 2-3 4.5-2ZM12 14h.01M10 19h4'),
     'double-bass': (bowed, 1.03, 'M11 9V4l-1-1V2h4v1l-1 1v5l3 2c1.5 1 1 2 0 3l2 3c1 2-.5 4-6 4s-7-2-6-4l2-3c-1-1-1.5-2 0-3l3-2ZM10 16h4M12 21v2M21 5v12.5'),
     'hichiriki': (lambda _: hichiriki(), 1.16, 'M6 10h14v4H6zM6 11H4L1.5 9.5v5L4 13h2M9 12h.01m3 0h.01m3 0h.01m3 0h.01'),
-    'lute': (plucked, 1.22, 'M12 10c-3-2-8-1-9 3-2 6 6 8 9 3 1-1 1-3 1-3l6-7 2 1 1-2-4-2zM8 14h.01'),
+    'lute': (lambda _: renaissance_lute(), 1.04,
+             'M10.5 9V2.5h4l1.5 1.8-2.5.8V9'
+             'C16 10.5 18 14 18 17.3q0 4.2-6 4.2t-6-4.2c0-3.3 2-6.8 4.5-8.3Z'
+             'M12 14h.01m-1.6-7h3.2'),
     'pedal-steel-guitar': (lambda _: pedal_steel(), 1.12, 'M2 7h20v5H2zM5 12v9m14-9v9M5 18h14M9 13v5l-1 2m5-7v5l-1 2'),
     'sarod': (indian, 1.14, 'M8.5 14 10.5 4 12 2l1.5 2 2 10c2 1 3 2 3 4a6.5 4 0 0 1-13 0c0-2 1-3 3-4ZM8.5 14h7M10 18h4'),
     'sitar': (indian, 1.05, 'M9.75 13V3l.75-1h3l.75 1v10a5.5 5 0 1 1-4.5 0ZM10 5q2-1 4 0m-4 3q2-1 4 0m-4 3q2-1 4 0M10 18h4'),
@@ -1345,7 +1589,7 @@ def illustration(kind, slug, width, height, geometry, scale):
         if not avatar and slug in ('violin', 'viola', 'cello', 'double-bass'):
             y -= 6
         if avatar:
-            scale *= .48
+            scale *= .7 if slug in ('bassoon', 'harp') else .48
         backdrop = (rect(0,0,width,height,'#0b1020',0) + ellipse(width/2,height/2,width*.52,height*.51,'url(#halo)')
                     + rect(0,0,width,height,'url(#grid)',0))
         frame = f'<g transform="translate({x} {y}) rotate({ARTWORK_TILT}) scale({scale:.3f})">{geometry}</g>'
@@ -1363,6 +1607,7 @@ ICON_ANGLES.update({
     'cello': 15,
     'double-bass': 15,
     'hichiriki': 78,
+    'lute': 42,
     'tanpura': 22,
 })
 

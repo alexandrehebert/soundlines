@@ -5,6 +5,10 @@
   "method": "hand",
   "references": [
     {
+      "url": "https://meinlpercussion.com/content/percussion/service/downloads/Catalog/PER-CATALOG22.pdf#page=83",
+      "shows": "The LC1BRASS side photo shows two shallow metal shells joined at the stand, with slightly unequal heads and small tuning fittings."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Timbales",
       "shows": "Anatomy overview and illustrated instrument variants: Two cylindrical metal shells. Shallow depth relative to drumhead width."
     },
@@ -33,6 +37,11 @@
   "geometry": {
     "view": "High three-quarter",
     "proportions": "Two shallow, unequal metal cylinders sit at similar height.",
-    "partLayout": "Separate heads and shell rims. Put the shared stand between and below the shells, with any cowbell above."
+    "partLayout": "Separate heads and shell rims. Put the shared stand between and below the shells, with any cowbell above.",
+    "documentedDimensions": {
+      "value": "14-inch and 15-inch heads.",
+      "scope": "Meinl LC1BRASS timbales",
+      "source": "https://meinlpercussion.com/en/products/lc1brass-m6994.html"
+    }
   }
 }

@@ -12,7 +12,10 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Catalog: Story = {
-  parameters: { controls: { disable: true } },
+  parameters: {
+    controls: { disable: true },
+    docs: { description: { story: 'Browse all instrument icons or narrow the catalogue by family and name.' } },
+  },
   render: () => <InstrumentIconCatalog />,
 }
 

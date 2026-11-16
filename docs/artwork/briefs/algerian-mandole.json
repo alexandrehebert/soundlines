@@ -5,12 +5,12 @@
   "method": "generator",
   "references": [
     {
-      "url": "https://en.wikipedia.org/wiki/Algerian_mandole",
-      "shows": "Anatomy overview and illustrated instrument variants: Eight strings in four close pairs in the selected variant. Eight tuning pegs."
+      "url": "https://commons.wikimedia.org/wiki/File:Mandole_Algerien.jpg",
+      "shows": "A front three-quarter photograph shows the long fretted neck, flat teardrop soundboard and bridge placement."
     },
     {
-      "url": "https://commons.wikimedia.org/wiki/File:Mandole_Algerien.jpg",
-      "shows": "Photograph of an Algerian mandole; compare the long fretted neck, teardrop body, sound hole and tuning-head proportions."
+      "url": "https://en.wikipedia.org/wiki/Algerian_mandole",
+      "shows": "Anatomy overview and illustrated instrument variants: Eight strings in four close pairs in the selected variant. Eight tuning pegs."
     }
   ],
   "silhouette": "A broad teardrop soundbox with a very long fretted neck, held horizontally across the lap.",
@@ -33,6 +33,10 @@
   "geometry": {
     "view": "Soundboard front",
     "proportions": "Broad teardrop soundbox tapers directly into a comparatively long fretted neck.",
-    "partLayout": "Show paired strings and place bridge, soundhole, nut and headstock on the central axis."
+    "partLayout": "Show paired strings and place bridge, soundhole, nut and headstock on the central axis.",
+    "referenceImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Mandole_Algerien.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Mandole_Algerien.jpg"
+    }
   }
 }

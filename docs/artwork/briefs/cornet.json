@@ -5,30 +5,31 @@
   "method": "generator",
   "references": [
     {
-      "url": "https://www.metmuseum.org/art/collection/search/503546",
-      "shows": "Documents the historical specimen or origin of the instrument."
+      "url": "https://data.yamaha.com/files/download/brochure/4/2303084/2024_Wind_NA_W255UR7_re.pdf#page=26",
+      "shows": "The side photo shows the upper bell, short rear bow and deep, nested lower tuning circuit."
     },
     {
-      "url": "https://hub.yamaha.com/winds/brass/whats-the-difference-between-a-trumpet-and-a-cornet/",
-      "shows": "Shows the construction or outline of the chosen instrument form."
+      "url": "https://www.metmuseum.org/art/collection/search/503546",
+      "shows": "Documents the historical specimen or origin of the instrument."
     }
   ],
   "silhouette": "Short, compact wrap and a bell projecting beyond the valve block.",
   "features": [
-    "Short, compact wrap and a bell projecting beyond the valve block.",
-    "Three upright pistons sit over a tight return bend.",
-    "Align the mouthpiece and narrow leadpipe behind the valves."
+    "Short, compact wrap with a bell projecting above and beyond the valve block.",
+    "Three upright pistons sit over a deep oval return.",
+    "The slim mouthpipe and rear bell bow meet the valve circuit at different heights."
   ],
   "iconFeatures": [
-    "Short, compact wrap and a bell projecting beyond the valve block."
+    "Compact folded oval below the upper bell branch.",
+    "Three upright piston controls."
   ],
   "avoid": [
     "Contours that obscure the characteristic tubing path"
   ],
-  "notes": "Shows the variant described in the geometry. The icon preserves the major outer contours.",
+  "notes": "The neutral catalogue photo of the YCR-2310III guides the silhouette and visible tube routing. The illustration simplifies overlapping plumbing from the side.",
   "geometry": {
-    "view": "Side view with valves upright",
-    "proportions": "Short, compact wrap and a bell projecting beyond the valve block.",
-    "partLayout": "Three upright pistons sit over a tight return bend. Align the mouthpiece and narrow leadpipe behind the valves."
+    "view": "Neutral catalogue side view in playing orientation",
+    "proportions": "The body is short relative to its height, with an oval lower wrap and the bell projecting a short distance past the valves.",
+    "partLayout": "Run the leadpipe across the row of three upright valves. Place the rear bell turn and the deeper lower oval on opposite sides of the block."
   }
 }

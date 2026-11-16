@@ -5,6 +5,10 @@
   "method": "generator",
   "references": [
     {
+      "url": "https://api.moogmusic.com/sites/default/files/2022-11/Minimoog_Model_D_Manual.pdf",
+      "shows": "The Model D manual illustrates the hinged control panel, keyboard and left wheels. The modern reissue has additional top patch connections."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Minimoog",
       "shows": "Anatomy overview and illustrated instrument variants: Forty-four keys in the selected Model D layout. Angled rear panel carrying grouped round knobs."
     },

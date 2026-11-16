@@ -5,6 +5,10 @@
   "method": "generator",
   "references": [
     {
+      "url": "https://cdn.roland.com/assets/media/pdf/JP-8_OM.pdf",
+      "shows": "Original Jupiter-8 hardware manual, with the keyboard and control layout for the full-size instrument."
+    },
+    {
       "url": "https://www.roland.com/Global/products/rc_jupiter-8/",
       "shows": "Documents the construction and visible form of the instrument."
     },

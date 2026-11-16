@@ -5,12 +5,12 @@
   "method": "generator",
   "references": [
     {
-      "url": "https://usa.yamaha.com/products/musical_instruments/winds/tubas/ybb-321/index.html",
-      "shows": "Maker reference for the chosen instrument form and proportions."
+      "url": "https://data.yamaha.com/files/download/brochure/4/2303084/2024_Wind_NA_W255UR7_re.pdf#page=37",
+      "shows": "The side photo shows the broad bell and a deep body with long, nested slide returns below four top-action pistons."
     },
     {
-      "url": "https://www.yamaha.com/en/musical_instrument_guide/tuba/mechanism/mechanism002.html",
-      "shows": "Second view or guide for checking the fit of the tubing and the controls."
+      "url": "https://usa.yamaha.com/products/musical_instruments/winds/tubas/ybb-321/index.html",
+      "shows": "Maker reference for the chosen instrument form and proportions."
     }
   ],
   "silhouette": "Wide upright bell above a deep asymmetric wrap with a heavy lower bow.",
@@ -21,18 +21,18 @@
     "Leadpipe curving down from the opposite upper side"
   ],
   "iconFeatures": [
-    "Wide bell rim and strongly expanding bell stack",
-    "Large bottom bow linking the bell and valve side"
+    "Wide bell and heavy upright U-shaped wrap.",
+    "Long nested return inside the body."
   ],
   "avoid": [
     "Overlapping tubes that hide the principal bends",
     "Detached or offset mouthpiece and bell"
   ],
-  "notes": "Shows the modern form in the reference. The muted linework keeps the major tube bends distinct.",
+  "notes": "The neutral catalogue photo of the YBB-321 guides the silhouette and visible tube routing. The illustration simplifies overlapping plumbing from the side.",
   "geometry": {
-    "view": "Front three-quarter of upright four-piston form",
-    "proportions": "Broad bell and deep, wide bottom bow dominate the asymmetric body.",
-    "partLayout": "Follow the bell throat into the outer wrap. A thinner leadpipe curves from the opposite side into four top pistons and smaller internal slides.",
+    "view": "Neutral catalogue side view in playing orientation",
+    "proportions": "The bell is close to two fifths of the full height in width. A heavy bottom bow surrounds a deep wrap and long valve slides.",
+    "partLayout": "Carry the right bell throat into the heavy bottom bow and left riser. Stack the narrower long returns inside the outer U. Route the leadpipe from the right into the four-piston valve group.",
     "documentedDimensions": {
       "value": "443 mm bell diameter with an 18.5–19.5 mm bore. These are physical cross-sections, not widths in an oblique drawing.",
       "source": "https://uk.yamaha.com/en/download/files/2928433/",

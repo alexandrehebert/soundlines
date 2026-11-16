@@ -5,12 +5,24 @@
   "method": "hand",
   "references": [
     {
+      "url": "https://gagaku.stanford.edu/en/woodwinds/ryuteki/",
+      "shows": "Figure 1 shows the bark-wrapped bamboo tube, one side embouchure and seven front fingerholes."
+    },
+    {
+      "url": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc22/en/category/gakki/ka4.html",
+      "shows": "Japan Arts Council side-view comparison distinguishes the intermediate-sized ryuteki from the longer kagurabue and shorter komabue."
+    },
+    {
       "url": "https://en.wikipedia.org/wiki/Ryūteki",
       "shows": "Anatomy overview and illustrated instrument variants: Side-blown embouchure near one end. Seven finger holes along the front."
     },
     {
       "url": "https://commons.wikimedia.org/wiki/Category:Ryūteki",
       "shows": "Photographic reference collection for ryuteki: compare seven finger holes along the front and dark lacquered bamboo tube. Select the variant described in notes."
+    },
+    {
+      "url": "https://music.yale.edu/browse-collection/ryuteki-32921950",
+      "shows": "Yale records the cylindrical bore, seven equidistant fingerholes and overall length of accession 3292.1950."
     }
   ],
   "silhouette": "A long bamboo flute held transversely, with dark binding bands around its straight body.",
@@ -32,6 +44,15 @@
   "geometry": {
     "view": "Horizontal three-quarter",
     "proportions": "Long, straight cylindrical tube with a dark-wrapped body and slightly thicker ends.",
-    "partLayout": "Place the embouchure toward the left end, with seven finger holes to its right, visible on the same face."
+    "partLayout": "Place the embouchure toward the left end, with seven finger holes to its right, visible on the same face.",
+    "referenceImage": {
+      "url": "https://gagaku.stanford.edu/assets/images/woodwinds-ryuteki/Ryuteki-Figure-1.jpg",
+      "source": "https://gagaku.stanford.edu/en/woodwinds/ryuteki/"
+    },
+    "documentedDimensions": {
+      "value": "42.6 cm overall length",
+      "source": "https://music.yale.edu/browse-collection/ryuteki-32921950",
+      "scope": "Yale accession 3292.1950"
+    }
   }
 }

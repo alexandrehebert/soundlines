@@ -6,34 +6,38 @@
   "references": [
     {
       "url": "https://www.metmuseum.org/art/collection/search/503951",
-      "shows": "Documents the historical specimen or origin of the instrument."
+      "shows": "The Met’s ivory cornetto in A has a curved octagonal body, gilt ferrule and small cup mouthpiece."
     },
     {
-      "url": "https://www.cornetto.org.uk/cornetto.html",
-      "shows": "Shows the construction or outline of the chosen instrument form."
+      "url": "https://collections.vam.ac.uk/item/O129883/cornett-unknown/",
+      "shows": "A neutral photo of a similar ivory cornett shows six front fingerholes along the wider half of the curve."
     }
   ],
   "silhouette": "A slender, gently curved body widens gradually toward the open end.",
   "features": [
-    "A slender, gently curved body widens gradually toward the open end.",
-    "Place six finger holes along the front and the small cup mouthpiece at the narrow tip.",
-    "Keep the opening much smaller than a trumpet bell."
+    "A single slim curved body widens gradually toward a small open foot.",
+    "Six fingerholes follow the wider half of the front face.",
+    "The small cup mouthpiece seats in the narrow end above a short gilt ferrule."
   ],
   "iconFeatures": [
-    "A slender, gently curved body widens gradually toward the open end."
+    "A gently curved single body tapering toward the mouthpiece in playing position."
   ],
   "avoid": [
     "Contours that obscure the characteristic tubing path"
   ],
-  "notes": "Shows the variant described in the geometry. The icon preserves the major outer contours.",
+  "notes": "The ivory Met specimen guides the proportions and gilt ferrule. The playing view exposes the six front holes while the thumbhole sits on the back.",
   "geometry": {
     "view": "Side view in the plane of the curve",
     "proportions": "A slender, gently curved body widens gradually toward the open end.",
-    "partLayout": "Place six finger holes along the front and the small cup mouthpiece at the narrow tip. Keep the opening much smaller than a trumpet bell.",
+    "partLayout": "Place six holes along the wider half of the visible face. Seat the cup mouthpiece in the narrow end. The foot remains close in width to the adjoining body.",
     "documentedDimensions": {
       "value": "57.2 cm long and about 7 cm across the widest curve.",
       "source": "https://www.metmuseum.org/art/collection/search/503951",
       "scope": "Met cornetto in A"
+    },
+    "referenceImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Ivory_Cornetto_in_A%2C_at_the_Metropolitan_Museum_of_Art.jpg",
+      "source": "https://www.metmuseum.org/art/collection/search/503951"
     }
   }
 }
