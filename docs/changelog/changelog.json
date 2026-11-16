@@ -2,6 +2,25 @@
   "version": 4,
   "entries": [
     {
+      "commit": "5ef87badf60b74bbd14b44750271e8301fbfc673",
+      "parent": "01723a7fd8627cdca9a3e85f825e7abba223fdec",
+      "date": "2026-11-16T18:56:15-05:00",
+      "subject": "Preserve the Storybook comparison render type",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": "apps/web/src/stories/InstrumentArtwork.stories.tsx"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "2eec6dc6551426c53917cf9ae4244dd9ee49d75d",
       "parent": "991f223e6c76c4f7fdc391852ab542cdae6d8609",
       "date": "2026-11-16T18:52:07-05:00",
