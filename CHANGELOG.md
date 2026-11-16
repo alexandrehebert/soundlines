@@ -12,6 +12,21 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-15 — Add mobile web app and expand catalogue artwork and artist origins
+
+[8c4a40e4](https://github.com/alexandrehebert/soundlines/commit/8c4a40e44287eed18f435df6d97208bf3459b5a0)
+
+Graph nodes: +0 / ~0 / -0.
+
+Graph edges: +106 / ~0 / -0.
+
+- graph: 113 changed files
+- artwork: 503 changed files
+- app: 55 changed files
+- workflow: 3 changed files
+- docs: 2 changed files
+- other: 6 changed files
+
 ## 2026-11-15 — Use one pnpm installer for Compose services
 
 [717503ef](https://github.com/alexandrehebert/soundlines/commit/717503ef50214518c49abd2a275e364c82f3b610)

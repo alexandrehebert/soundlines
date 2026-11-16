@@ -2,6 +2,4854 @@
   "version": 4,
   "entries": [
     {
+      "commit": "8c4a40e44287eed18f435df6d97208bf3459b5a0",
+      "parent": "62ac874c8e4d88defb2385ad39a54e34412e3983",
+      "date": "2026-11-15T22:42:19-05:00",
+      "subject": "Add mobile web app and expand catalogue artwork and artist origins",
+      "merge": false,
+      "entities": [
+        {
+          "category": "graph",
+          "items": [
+            {
+              "id": "artist:alban-berg",
+              "name": "Alban Berg",
+              "status": "updated"
+            },
+            {
+              "id": "artist:alton-ellis",
+              "name": "Alton Ellis",
+              "status": "updated"
+            },
+            {
+              "id": "artist:anibal-troilo",
+              "name": "Aníbal Troilo",
+              "status": "updated"
+            },
+            {
+              "id": "artist:astrud-gilberto",
+              "name": "Astrud Gilberto",
+              "status": "updated"
+            },
+            {
+              "id": "artist:bad-brains",
+              "name": "Bad Brains",
+              "status": "updated"
+            },
+            {
+              "id": "artist:beenie-man",
+              "name": "Beenie Man",
+              "status": "updated"
+            },
+            {
+              "id": "artist:beyonce",
+              "name": "Beyoncé",
+              "status": "updated"
+            },
+            {
+              "id": "artist:blake-baxter",
+              "name": "Blake Baxter",
+              "status": "updated"
+            },
+            {
+              "id": "artist:blur",
+              "name": "Blur",
+              "status": "updated"
+            },
+            {
+              "id": "artist:boom-shaka",
+              "name": "Boom Shaka",
+              "status": "updated"
+            },
+            {
+              "id": "artist:bring-me-the-horizon",
+              "name": "Bring Me the Horizon",
+              "status": "updated"
+            },
+            {
+              "id": "artist:can",
+              "name": "Can",
+              "status": "updated"
+            },
+            {
+              "id": "artist:carl-craig",
+              "name": "Carl Craig",
+              "status": "updated"
+            },
+            {
+              "id": "artist:caterina-valente",
+              "name": "Caterina Valente",
+              "status": "updated"
+            },
+            {
+              "id": "artist:cheb-hasni",
+              "name": "Cheb Hasni",
+              "status": "updated"
+            },
+            {
+              "id": "artist:cheba-zahouania",
+              "name": "Cheba Zahouania",
+              "status": "updated"
+            },
+            {
+              "id": "artist:chemical-brothers",
+              "name": "The Chemical Brothers",
+              "status": "updated"
+            },
+            {
+              "id": "artist:cheng-yanqiu",
+              "name": "Cheng Yanqiu",
+              "status": "updated"
+            },
+            {
+              "id": "artist:common",
+              "name": "Common",
+              "status": "updated"
+            },
+            {
+              "id": "artist:daddy-yankee",
+              "name": "Daddy Yankee",
+              "status": "updated"
+            },
+            {
+              "id": "artist:david-bowie",
+              "name": "David Bowie",
+              "status": "updated"
+            },
+            {
+              "id": "artist:dead-kennedys",
+              "name": "Dead Kennedys",
+              "status": "updated"
+            },
+            {
+              "id": "artist:deepchord",
+              "name": "Deepchord",
+              "status": "updated"
+            },
+            {
+              "id": "artist:derrick-may",
+              "name": "Derrick May",
+              "status": "updated"
+            },
+            {
+              "id": "artist:desmond-dekker",
+              "name": "Desmond Dekker",
+              "status": "updated"
+            },
+            {
+              "id": "artist:distruction-boyz",
+              "name": "Distruction Boyz",
+              "status": "updated"
+            },
+            {
+              "id": "artist:dj-lag",
+              "name": "DJ Lag",
+              "status": "updated"
+            },
+            {
+              "id": "artist:don-caballero",
+              "name": "Don Caballero",
+              "status": "updated"
+            },
+            {
+              "id": "artist:donald-byrd",
+              "name": "Donald Byrd",
+              "status": "updated"
+            },
+            {
+              "id": "artist:dorothy-ashby",
+              "name": "Dorothy Ashby",
+              "status": "updated"
+            },
+            {
+              "id": "artist:eboa-lotin",
+              "name": "Eboa Lotin",
+              "status": "updated"
+            },
+            {
+              "id": "artist:eddie-fowlkes",
+              "name": "Eddie Fowlkes",
+              "status": "updated"
+            },
+            {
+              "id": "artist:el-hadj-mhamed-el-anka",
+              "name": "El Hadj M'Hamed El Anka",
+              "status": "updated"
+            },
+            {
+              "id": "artist:fania-all-stars",
+              "name": "Fania All-Stars",
+              "status": "updated"
+            },
+            {
+              "id": "artist:francoise-hardy",
+              "name": "Françoise Hardy",
+              "status": "updated"
+            },
+            {
+              "id": "artist:frankie-knuckles",
+              "name": "Frankie Knuckles",
+              "status": "updated"
+            },
+            {
+              "id": "artist:fugazi",
+              "name": "Fugazi",
+              "status": "updated"
+            },
+            {
+              "id": "artist:future",
+              "name": "Future",
+              "status": "updated"
+            },
+            {
+              "id": "artist:grandmaster-flash-and-the-furious-five",
+              "name": "Grandmaster Flash and the Furious Five",
+              "status": "updated"
+            },
+            {
+              "id": "artist:helloween",
+              "name": "Helloween",
+              "status": "updated"
+            },
+            {
+              "id": "artist:insane-clown-posse",
+              "name": "Insane Clown Posse",
+              "status": "updated"
+            },
+            {
+              "id": "artist:iron-maiden",
+              "name": "Iron Maiden",
+              "status": "updated"
+            },
+            {
+              "id": "artist:jamiroquai",
+              "name": "Jamiroquai",
+              "status": "updated"
+            },
+            {
+              "id": "artist:jeff-mills",
+              "name": "Jeff Mills",
+              "status": "updated"
+            },
+            {
+              "id": "artist:johnny-hallyday",
+              "name": "Johnny Hallyday",
+              "status": "updated"
+            },
+            {
+              "id": "artist:juan-atkins",
+              "name": "Juan Atkins",
+              "status": "updated"
+            },
+            {
+              "id": "artist:judas-priest",
+              "name": "Judas Priest",
+              "status": "updated"
+            },
+            {
+              "id": "artist:kassav",
+              "name": "Kassav’",
+              "status": "updated"
+            },
+            {
+              "id": "artist:kendrick-lamar",
+              "name": "Kendrick Lamar",
+              "status": "updated"
+            },
+            {
+              "id": "artist:kevin-saunderson",
+              "name": "Kevin Saunderson",
+              "status": "updated"
+            },
+            {
+              "id": "artist:khaled",
+              "name": "Khaled (Cheb Khaled)",
+              "status": "updated"
+            },
+            {
+              "id": "artist:kraftwerk",
+              "name": "Kraftwerk",
+              "status": "updated"
+            },
+            {
+              "id": "artist:lil-wayne",
+              "name": "Lil Wayne",
+              "status": "updated"
+            },
+            {
+              "id": "artist:louis-armstrong",
+              "name": "Louis Armstrong",
+              "status": "updated"
+            },
+            {
+              "id": "artist:machel-montano",
+              "name": "Machel Montano",
+              "status": "updated"
+            },
+            {
+              "id": "artist:mahmoud-guinia",
+              "name": "Maâlem Mahmoud Guinia",
+              "status": "updated"
+            },
+            {
+              "id": "artist:manu-dibango",
+              "name": "Manu Dibango",
+              "status": "updated"
+            },
+            {
+              "id": "artist:marshall-jefferson",
+              "name": "Marshall Jefferson",
+              "status": "updated"
+            },
+            {
+              "id": "artist:massive-attack",
+              "name": "Massive Attack",
+              "status": "updated"
+            },
+            {
+              "id": "artist:metallica",
+              "name": "Metallica",
+              "status": "updated"
+            },
+            {
+              "id": "artist:mongo-santamaria",
+              "name": "Mongo Santamaría",
+              "status": "updated"
+            },
+            {
+              "id": "artist:oasis",
+              "name": "Oasis",
+              "status": "updated"
+            },
+            {
+              "id": "artist:octave-one",
+              "name": "Octave One",
+              "status": "updated"
+            },
+            {
+              "id": "artist:omar-pene",
+              "name": "Omar Pène",
+              "status": "updated"
+            },
+            {
+              "id": "artist:osibisa",
+              "name": "Osibisa",
+              "status": "updated"
+            },
+            {
+              "id": "artist:pearl-jam",
+              "name": "Pearl Jam",
+              "status": "updated"
+            },
+            {
+              "id": "artist:prince-royce",
+              "name": "Prince Royce",
+              "status": "updated"
+            },
+            {
+              "id": "artist:ramones",
+              "name": "Ramones",
+              "status": "updated"
+            },
+            {
+              "id": "artist:robert-hood",
+              "name": "Robert Hood",
+              "status": "updated"
+            },
+            {
+              "id": "artist:rolling-stones",
+              "name": "The Rolling Stones",
+              "status": "updated"
+            },
+            {
+              "id": "artist:roni-size",
+              "name": "Roni Size",
+              "status": "updated"
+            },
+            {
+              "id": "artist:saint-vitus",
+              "name": "Saint Vitus",
+              "status": "updated"
+            },
+            {
+              "id": "artist:schoenberg",
+              "name": "Arnold Schoenberg",
+              "status": "updated"
+            },
+            {
+              "id": "artist:scientist",
+              "name": "Scientist",
+              "status": "updated"
+            },
+            {
+              "id": "artist:sex-pistols",
+              "name": "Sex Pistols",
+              "status": "updated"
+            },
+            {
+              "id": "artist:siti-binti-saad",
+              "name": "Siti binti Saad",
+              "status": "updated"
+            },
+            {
+              "id": "artist:slowdive",
+              "name": "Slowdive",
+              "status": "updated"
+            },
+            {
+              "id": "artist:sly-and-the-family-stone",
+              "name": "Sly and the Family Stone",
+              "status": "updated"
+            },
+            {
+              "id": "artist:so-solid-crew",
+              "name": "So Solid Crew",
+              "status": "updated"
+            },
+            {
+              "id": "artist:sonic-youth",
+              "name": "Sonic Youth",
+              "status": "updated"
+            },
+            {
+              "id": "artist:soundgarden",
+              "name": "Soundgarden",
+              "status": "updated"
+            },
+            {
+              "id": "artist:stacey-pullen",
+              "name": "Stacey Pullen",
+              "status": "updated"
+            },
+            {
+              "id": "artist:suede",
+              "name": "Suede",
+              "status": "updated"
+            },
+            {
+              "id": "artist:talking-heads",
+              "name": "Talking Heads",
+              "status": "updated"
+            },
+            {
+              "id": "artist:tangerine-dream",
+              "name": "Tangerine Dream",
+              "status": "updated"
+            },
+            {
+              "id": "artist:tatsuro-yamashita",
+              "name": "Tatsuro Yamashita",
+              "status": "updated"
+            },
+            {
+              "id": "artist:the-clash",
+              "name": "The Clash",
+              "status": "updated"
+            },
+            {
+              "id": "artist:the-coasters",
+              "name": "The Coasters",
+              "status": "updated"
+            },
+            {
+              "id": "artist:the-heptones",
+              "name": "The Heptones",
+              "status": "updated"
+            },
+            {
+              "id": "artist:the-human-league",
+              "name": "The Human League",
+              "status": "updated"
+            },
+            {
+              "id": "artist:the-platters",
+              "name": "The Platters",
+              "status": "updated"
+            },
+            {
+              "id": "artist:the-ronettes",
+              "name": "The Ronettes",
+              "status": "updated"
+            },
+            {
+              "id": "artist:the-skatalites",
+              "name": "The Skatalites",
+              "status": "updated"
+            },
+            {
+              "id": "artist:the-supremes",
+              "name": "The Supremes",
+              "status": "updated"
+            },
+            {
+              "id": "artist:thione-seck",
+              "name": "Thione Seck",
+              "status": "updated"
+            },
+            {
+              "id": "artist:tito-puente",
+              "name": "Tito Puente",
+              "status": "updated"
+            },
+            {
+              "id": "artist:tony-allen",
+              "name": "Tony Allen",
+              "status": "updated"
+            },
+            {
+              "id": "artist:toots-and-the-maytals",
+              "name": "Toots & the Maytals",
+              "status": "updated"
+            },
+            {
+              "id": "artist:tricky",
+              "name": "Tricky",
+              "status": "updated"
+            },
+            {
+              "id": "artist:trouble",
+              "name": "Trouble",
+              "status": "updated"
+            },
+            {
+              "id": "artist:underground-resistance",
+              "name": "Underground Resistance",
+              "status": "updated"
+            },
+            {
+              "id": "artist:wiley",
+              "name": "Wiley",
+              "status": "updated"
+            },
+            {
+              "id": "artist:willie-colon",
+              "name": "Willie Colón",
+              "status": "updated"
+            },
+            {
+              "id": "artist:wizkid",
+              "name": "Wizkid",
+              "status": "updated"
+            },
+            {
+              "id": "artist:yo-yo-ma",
+              "name": "Yo-Yo Ma",
+              "status": "updated"
+            },
+            {
+              "id": "artist:youssou-ndour",
+              "name": "Youssou N’Dour",
+              "status": "updated"
+            },
+            {
+              "id": "place:algiers",
+              "name": "Algiers",
+              "status": "updated"
+            },
+            {
+              "id": "place:atlanta",
+              "name": "Atlanta",
+              "status": "updated"
+            },
+            {
+              "id": "place:beijing",
+              "name": "Beijing",
+              "status": "updated"
+            },
+            {
+              "id": "place:berlin",
+              "name": "Berlin",
+              "status": "updated"
+            },
+            {
+              "id": "place:birmingham",
+              "name": "Birmingham",
+              "status": "updated"
+            },
+            {
+              "id": "place:bristol",
+              "name": "Bristol",
+              "status": "updated"
+            },
+            {
+              "id": "place:bronx",
+              "name": "The Bronx",
+              "status": "updated"
+            },
+            {
+              "id": "place:buenos-aires",
+              "name": "Buenos Aires",
+              "status": "updated"
+            },
+            {
+              "id": "place:chicago",
+              "name": "Chicago",
+              "status": "updated"
+            },
+            {
+              "id": "place:cologne",
+              "name": "Cologne",
+              "status": "updated"
+            },
+            {
+              "id": "place:compton",
+              "name": "Compton",
+              "status": "updated"
+            },
+            {
+              "id": "place:dakar",
+              "name": "Dakar",
+              "status": "updated"
+            },
+            {
+              "id": "place:detroit",
+              "name": "Detroit",
+              "status": "updated"
+            },
+            {
+              "id": "place:douala",
+              "name": "Douala",
+              "status": "updated"
+            },
+            {
+              "id": "place:duesseldorf",
+              "name": "Düsseldorf",
+              "status": "updated"
+            },
+            {
+              "id": "place:durban",
+              "name": "Durban",
+              "status": "updated"
+            },
+            {
+              "id": "place:essaouira",
+              "name": "Essaouira",
+              "status": "updated"
+            },
+            {
+              "id": "place:hamburg",
+              "name": "Hamburg",
+              "status": "updated"
+            },
+            {
+              "id": "place:havana",
+              "name": "Havana",
+              "status": "updated"
+            },
+            {
+              "id": "place:houston",
+              "name": "Houston",
+              "status": "updated"
+            },
+            {
+              "id": "place:johannesburg",
+              "name": "Johannesburg",
+              "status": "updated"
+            },
+            {
+              "id": "place:kingston",
+              "name": "Kingston",
+              "status": "updated"
+            },
+            {
+              "id": "place:lagos",
+              "name": "Lagos",
+              "status": "updated"
+            },
+            {
+              "id": "place:london",
+              "name": "London",
+              "status": "updated"
+            },
+            {
+              "id": "place:los-angeles",
+              "name": "Los Angeles",
+              "status": "updated"
+            },
+            {
+              "id": "place:manchester",
+              "name": "Manchester",
+              "status": "updated"
+            },
+            {
+              "id": "place:new-orleans",
+              "name": "New Orleans",
+              "status": "updated"
+            },
+            {
+              "id": "place:new-york",
+              "name": "New York",
+              "status": "updated"
+            },
+            {
+              "id": "place:oran",
+              "name": "Oran",
+              "status": "updated"
+            },
+            {
+              "id": "place:paris",
+              "name": "Paris",
+              "status": "updated"
+            },
+            {
+              "id": "place:pittsburgh",
+              "name": "Pittsburgh",
+              "status": "updated"
+            },
+            {
+              "id": "place:port-of-spain",
+              "name": "Port of Spain",
+              "status": "updated"
+            },
+            {
+              "id": "place:reading",
+              "name": "Reading",
+              "status": "updated"
+            },
+            {
+              "id": "place:salvador",
+              "name": "Salvador",
+              "status": "updated"
+            },
+            {
+              "id": "place:san-francisco",
+              "name": "San Francisco",
+              "status": "updated"
+            },
+            {
+              "id": "place:san-juan",
+              "name": "San Juan",
+              "status": "updated"
+            },
+            {
+              "id": "place:seattle",
+              "name": "Seattle",
+              "status": "updated"
+            },
+            {
+              "id": "place:sheffield",
+              "name": "Sheffield",
+              "status": "updated"
+            },
+            {
+              "id": "place:tokyo",
+              "name": "Tokyo",
+              "status": "updated"
+            },
+            {
+              "id": "place:vienna",
+              "name": "Vienna",
+              "status": "updated"
+            },
+            {
+              "id": "place:washington-d-c",
+              "name": "Washington, D.C.",
+              "status": "updated"
+            },
+            {
+              "id": "place:zanzibar",
+              "name": "Zanzibar",
+              "status": "updated"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "items": [
+            {
+              "id": "genre:acid-house",
+              "name": "Acid house",
+              "status": "added"
+            },
+            {
+              "id": "genre:acid-jazz",
+              "name": "Acid jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:acid-techno",
+              "name": "Acid techno",
+              "status": "added"
+            },
+            {
+              "id": "genre:afro-house",
+              "name": "Afro house",
+              "status": "added"
+            },
+            {
+              "id": "genre:afrobeat",
+              "name": "Afrobeat",
+              "status": "added"
+            },
+            {
+              "id": "genre:afrobeats",
+              "name": "Afrobeats",
+              "status": "added"
+            },
+            {
+              "id": "genre:algerian-chaabi",
+              "name": "Algerian chaâbi",
+              "status": "added"
+            },
+            {
+              "id": "genre:alt-country",
+              "name": "Alternative country",
+              "status": "added"
+            },
+            {
+              "id": "genre:alternative-rap",
+              "name": "Alternative rap",
+              "status": "added"
+            },
+            {
+              "id": "genre:alternative-rock",
+              "name": "Alternative rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:amapiano",
+              "name": "Amapiano",
+              "status": "added"
+            },
+            {
+              "id": "genre:ambient",
+              "name": "Ambient",
+              "status": "added"
+            },
+            {
+              "id": "genre:ambient-house",
+              "name": "Ambient house",
+              "status": "added"
+            },
+            {
+              "id": "genre:ambient-techno",
+              "name": "Ambient techno",
+              "status": "added"
+            },
+            {
+              "id": "genre:americana",
+              "name": "Americana",
+              "status": "added"
+            },
+            {
+              "id": "genre:andean-folk",
+              "name": "Andean folk",
+              "status": "added"
+            },
+            {
+              "id": "genre:arabesk",
+              "name": "Arabesk",
+              "status": "added"
+            },
+            {
+              "id": "genre:arabic-maqam",
+              "name": "Arabic maqam traditions",
+              "status": "added"
+            },
+            {
+              "id": "genre:bachata",
+              "name": "Bachata",
+              "status": "added"
+            },
+            {
+              "id": "genre:banda-sinaloense",
+              "name": "Banda sinaloense",
+              "status": "added"
+            },
+            {
+              "id": "genre:baroque",
+              "name": "Baroque music",
+              "status": "added"
+            },
+            {
+              "id": "genre:baul-songs",
+              "name": "Baul songs",
+              "status": "added"
+            },
+            {
+              "id": "genre:bebop",
+              "name": "Bebop",
+              "status": "added"
+            },
+            {
+              "id": "genre:benga",
+              "name": "Benga",
+              "status": "added"
+            },
+            {
+              "id": "genre:big-beat",
+              "name": "Big beat",
+              "status": "added"
+            },
+            {
+              "id": "genre:black-metal",
+              "name": "Black metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:bluegrass",
+              "name": "Bluegrass",
+              "status": "added"
+            },
+            {
+              "id": "genre:blues",
+              "name": "Blues",
+              "status": "added"
+            },
+            {
+              "id": "genre:blues-rock",
+              "name": "Blues rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:boom-bap",
+              "name": "Boom bap",
+              "status": "added"
+            },
+            {
+              "id": "genre:bossa-nova",
+              "name": "Bossa nova",
+              "status": "added"
+            },
+            {
+              "id": "genre:brazilian-funk",
+              "name": "Brazilian funk (funk carioca)",
+              "status": "added"
+            },
+            {
+              "id": "genre:breakbeat",
+              "name": "Breakbeat",
+              "status": "added"
+            },
+            {
+              "id": "genre:breakbeat-hardcore",
+              "name": "Breakbeat hardcore",
+              "status": "added"
+            },
+            {
+              "id": "genre:breakcore",
+              "name": "Breakcore",
+              "status": "added"
+            },
+            {
+              "id": "genre:britpop",
+              "name": "Britpop",
+              "status": "added"
+            },
+            {
+              "id": "genre:calypso",
+              "name": "Calypso",
+              "status": "added"
+            },
+            {
+              "id": "genre:cantopop",
+              "name": "Cantopop",
+              "status": "added"
+            },
+            {
+              "id": "genre:carnatic",
+              "name": "Carnatic music",
+              "status": "added"
+            },
+            {
+              "id": "genre:chicago-blues",
+              "name": "Chicago blues",
+              "status": "added"
+            },
+            {
+              "id": "genre:chicago-house",
+              "name": "Chicago house",
+              "status": "added"
+            },
+            {
+              "id": "genre:chicha",
+              "name": "Chicha",
+              "status": "added"
+            },
+            {
+              "id": "genre:chillwave",
+              "name": "Chillwave",
+              "status": "added"
+            },
+            {
+              "id": "genre:chopped-and-screwed",
+              "name": "Chopped and screwed",
+              "status": "added"
+            },
+            {
+              "id": "genre:city-pop",
+              "name": "City pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:classical-period",
+              "name": "Classical era",
+              "status": "added"
+            },
+            {
+              "id": "genre:congolese-rumba",
+              "name": "Congolese rumba",
+              "status": "added"
+            },
+            {
+              "id": "genre:conscious-hip-hop",
+              "name": "Conscious hip-hop",
+              "status": "added"
+            },
+            {
+              "id": "genre:contemporary-r-and-b",
+              "name": "Contemporary R&B",
+              "status": "added"
+            },
+            {
+              "id": "genre:cool-jazz",
+              "name": "Cool jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:corrido-tumbado",
+              "name": "Corrido tumbado",
+              "status": "added"
+            },
+            {
+              "id": "genre:country",
+              "name": "Country",
+              "status": "added"
+            },
+            {
+              "id": "genre:country-pop",
+              "name": "Country pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:crunk",
+              "name": "Crunk",
+              "status": "added"
+            },
+            {
+              "id": "genre:cuarteto",
+              "name": "Cuarteto",
+              "status": "added"
+            },
+            {
+              "id": "genre:cumbia",
+              "name": "Cumbia",
+              "status": "added"
+            },
+            {
+              "id": "genre:dabke-music",
+              "name": "Dabke music",
+              "status": "added"
+            },
+            {
+              "id": "genre:dance-pop",
+              "name": "Dance-pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:dancehall",
+              "name": "Dancehall",
+              "status": "added"
+            },
+            {
+              "id": "genre:dangdut",
+              "name": "Dangdut",
+              "status": "added"
+            },
+            {
+              "id": "genre:darksynth",
+              "name": "Darksynth",
+              "status": "added"
+            },
+            {
+              "id": "genre:death-metal",
+              "name": "Death metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:deep-house",
+              "name": "Deep house",
+              "status": "added"
+            },
+            {
+              "id": "genre:delta-blues",
+              "name": "Delta blues",
+              "status": "added"
+            },
+            {
+              "id": "genre:detroit-techno",
+              "name": "Detroit techno",
+              "status": "added"
+            },
+            {
+              "id": "genre:disco",
+              "name": "Disco",
+              "status": "added"
+            },
+            {
+              "id": "genre:doo-wop",
+              "name": "Doo-wop",
+              "status": "added"
+            },
+            {
+              "id": "genre:doom-metal",
+              "name": "Doom metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:downtempo",
+              "name": "Downtempo",
+              "status": "added"
+            },
+            {
+              "id": "genre:dream-pop",
+              "name": "Dream pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:drill",
+              "name": "Drill",
+              "status": "added"
+            },
+            {
+              "id": "genre:drum-and-bass",
+              "name": "Drum and bass",
+              "status": "added"
+            },
+            {
+              "id": "genre:dub",
+              "name": "Dub",
+              "status": "added"
+            },
+            {
+              "id": "genre:dub-techno",
+              "name": "Dub techno",
+              "status": "added"
+            },
+            {
+              "id": "genre:dubstep",
+              "name": "Dubstep",
+              "status": "added"
+            },
+            {
+              "id": "genre:east-coast-rap",
+              "name": "East Coast rap",
+              "status": "added"
+            },
+            {
+              "id": "genre:edm",
+              "name": "EDM",
+              "status": "added"
+            },
+            {
+              "id": "genre:egyptian-shaabi",
+              "name": "Egyptian shaabi",
+              "status": "added"
+            },
+            {
+              "id": "genre:electro",
+              "name": "Electro",
+              "status": "added"
+            },
+            {
+              "id": "genre:electro-house",
+              "name": "Electro house",
+              "status": "added"
+            },
+            {
+              "id": "genre:electroclash",
+              "name": "Electroclash",
+              "status": "added"
+            },
+            {
+              "id": "genre:emo",
+              "name": "Emo",
+              "status": "added"
+            },
+            {
+              "id": "genre:emo-rap",
+              "name": "Emo rap",
+              "status": "added"
+            },
+            {
+              "id": "genre:ethio-jazz",
+              "name": "Ethio-jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:fado",
+              "name": "Fado",
+              "status": "added"
+            },
+            {
+              "id": "genre:filmi",
+              "name": "Filmi",
+              "status": "added"
+            },
+            {
+              "id": "genre:flamenco",
+              "name": "Flamenco",
+              "status": "added"
+            },
+            {
+              "id": "genre:folk",
+              "name": "Folk revival",
+              "status": "added"
+            },
+            {
+              "id": "genre:footwork",
+              "name": "Juke / footwork",
+              "status": "added"
+            },
+            {
+              "id": "genre:free-jazz",
+              "name": "Free jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:french-house",
+              "name": "French house",
+              "status": "added"
+            },
+            {
+              "id": "genre:french-touch",
+              "name": "French Touch",
+              "status": "added"
+            },
+            {
+              "id": "genre:funana",
+              "name": "Funaná",
+              "status": "added"
+            },
+            {
+              "id": "genre:funk",
+              "name": "Funk",
+              "status": "added"
+            },
+            {
+              "id": "genre:g-funk",
+              "name": "G-funk",
+              "status": "added"
+            },
+            {
+              "id": "genre:gabber",
+              "name": "Gabber",
+              "status": "added"
+            },
+            {
+              "id": "genre:gagaku",
+              "name": "Gagaku",
+              "status": "added"
+            },
+            {
+              "id": "genre:gamelan",
+              "name": "Gamelan",
+              "status": "added"
+            },
+            {
+              "id": "genre:gangsta-rap",
+              "name": "Gangsta rap",
+              "status": "added"
+            },
+            {
+              "id": "genre:garage-house",
+              "name": "Garage house",
+              "status": "added"
+            },
+            {
+              "id": "genre:garage-rock",
+              "name": "Garage rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:girl-groups",
+              "name": "Girl groups",
+              "status": "added"
+            },
+            {
+              "id": "genre:glam-rock",
+              "name": "Glam rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:gnawa",
+              "name": "Gnawa",
+              "status": "added"
+            },
+            {
+              "id": "genre:go-go",
+              "name": "Go-go",
+              "status": "added"
+            },
+            {
+              "id": "genre:gothic-rock",
+              "name": "Gothic rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:gqom",
+              "name": "Gqom",
+              "status": "added"
+            },
+            {
+              "id": "genre:grime",
+              "name": "Grime",
+              "status": "added"
+            },
+            {
+              "id": "genre:grunge",
+              "name": "Grunge",
+              "status": "added"
+            },
+            {
+              "id": "genre:hard-bop",
+              "name": "Hard bop",
+              "status": "added"
+            },
+            {
+              "id": "genre:hard-rock",
+              "name": "Hard rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:hardcore-punk",
+              "name": "Hardcore punk",
+              "status": "added"
+            },
+            {
+              "id": "genre:hardstyle",
+              "name": "Hardstyle",
+              "status": "added"
+            },
+            {
+              "id": "genre:heavy-metal",
+              "name": "Heavy metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:hi-nrg",
+              "name": "Hi-NRG",
+              "status": "added"
+            },
+            {
+              "id": "genre:highlife",
+              "name": "Highlife",
+              "status": "added"
+            },
+            {
+              "id": "genre:hindustani-classical",
+              "name": "Hindustani classical",
+              "status": "added"
+            },
+            {
+              "id": "genre:hip-hop",
+              "name": "Hip-hop",
+              "status": "added"
+            },
+            {
+              "id": "genre:honky-tonk",
+              "name": "Honky-tonk",
+              "status": "added"
+            },
+            {
+              "id": "genre:horrorcore",
+              "name": "Horrorcore",
+              "status": "added"
+            },
+            {
+              "id": "genre:house",
+              "name": "House",
+              "status": "added"
+            },
+            {
+              "id": "genre:hyperpop",
+              "name": "Hyperpop",
+              "status": "added"
+            },
+            {
+              "id": "genre:hyphy",
+              "name": "Hyphy",
+              "status": "added"
+            },
+            {
+              "id": "genre:idm",
+              "name": "IDM / intelligent dance music",
+              "status": "added"
+            },
+            {
+              "id": "genre:impressionism",
+              "name": "Impressionism",
+              "status": "added"
+            },
+            {
+              "id": "genre:indie-rock",
+              "name": "Indie rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:industrial-metal",
+              "name": "Industrial metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:italo-disco",
+              "name": "Italo disco",
+              "status": "added"
+            },
+            {
+              "id": "genre:j-pop",
+              "name": "J-pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:jazz",
+              "name": "Jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:jazz-funk",
+              "name": "Jazz-funk",
+              "status": "added"
+            },
+            {
+              "id": "genre:jazz-fusion",
+              "name": "Jazz fusion",
+              "status": "added"
+            },
+            {
+              "id": "genre:jazz-rap",
+              "name": "Jazz rap",
+              "status": "added"
+            },
+            {
+              "id": "genre:juju",
+              "name": "Jùjú",
+              "status": "added"
+            },
+            {
+              "id": "genre:jungle",
+              "name": "Jungle",
+              "status": "added"
+            },
+            {
+              "id": "genre:k-pop",
+              "name": "K-pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:khaliji",
+              "name": "Khaliji",
+              "status": "added"
+            },
+            {
+              "id": "genre:khoomei",
+              "name": "Tuvan throat singing (xöömei)",
+              "status": "added"
+            },
+            {
+              "id": "genre:krautrock",
+              "name": "Krautrock",
+              "status": "added"
+            },
+            {
+              "id": "genre:kwaito",
+              "name": "Kwaito",
+              "status": "added"
+            },
+            {
+              "id": "genre:latin",
+              "name": "Latin music",
+              "status": "added"
+            },
+            {
+              "id": "genre:latin-jazz",
+              "name": "Latin jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:latin-trap",
+              "name": "Latin trap",
+              "status": "added"
+            },
+            {
+              "id": "genre:liquid-drum-and-bass",
+              "name": "Liquid drum and bass",
+              "status": "added"
+            },
+            {
+              "id": "genre:madeiran-traditional-music",
+              "name": "Madeiran traditional music",
+              "status": "added"
+            },
+            {
+              "id": "genre:mahraganat",
+              "name": "Mahraganat",
+              "status": "added"
+            },
+            {
+              "id": "genre:makossa",
+              "name": "Makossa",
+              "status": "added"
+            },
+            {
+              "id": "genre:maloya",
+              "name": "Maloya",
+              "status": "added"
+            },
+            {
+              "id": "genre:mambo",
+              "name": "Mambo",
+              "status": "added"
+            },
+            {
+              "id": "genre:math-rock",
+              "name": "Math rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:mbalax",
+              "name": "Mbalax",
+              "status": "added"
+            },
+            {
+              "id": "genre:medieval",
+              "name": "Medieval music",
+              "status": "added"
+            },
+            {
+              "id": "genre:melodic-death-metal",
+              "name": "Melodic death metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:mento",
+              "name": "Mento",
+              "status": "added"
+            },
+            {
+              "id": "genre:merengue",
+              "name": "Merengue",
+              "status": "added"
+            },
+            {
+              "id": "genre:metalcore",
+              "name": "Metalcore",
+              "status": "added"
+            },
+            {
+              "id": "genre:minimal-techno",
+              "name": "Minimal techno",
+              "status": "added"
+            },
+            {
+              "id": "genre:minimalism",
+              "name": "Minimalism",
+              "status": "added"
+            },
+            {
+              "id": "genre:modal-jazz",
+              "name": "Modal jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:modern-classical",
+              "name": "Modern classical",
+              "status": "added"
+            },
+            {
+              "id": "genre:morna",
+              "name": "Morna",
+              "status": "added"
+            },
+            {
+              "id": "genre:musica-criolla",
+              "name": "Música criolla",
+              "status": "added"
+            },
+            {
+              "id": "genre:neo-soul",
+              "name": "Neo-soul",
+              "status": "added"
+            },
+            {
+              "id": "genre:neoclassicism",
+              "name": "Neoclassicism",
+              "status": "added"
+            },
+            {
+              "id": "genre:new-jack-swing",
+              "name": "New jack swing",
+              "status": "added"
+            },
+            {
+              "id": "genre:new-orleans-jazz",
+              "name": "New Orleans jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:new-wave",
+              "name": "New wave",
+              "status": "added"
+            },
+            {
+              "id": "genre:noise-rock",
+              "name": "Noise rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:norteno",
+              "name": "Norteño",
+              "status": "added"
+            },
+            {
+              "id": "genre:nu-metal",
+              "name": "Nu metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:old-school-rap",
+              "name": "Old-school rap",
+              "status": "added"
+            },
+            {
+              "id": "genre:opm",
+              "name": "Original Pilipino Music (OPM)",
+              "status": "added"
+            },
+            {
+              "id": "genre:outlaw-country",
+              "name": "Outlaw country",
+              "status": "added"
+            },
+            {
+              "id": "genre:pansori",
+              "name": "Pansori",
+              "status": "added"
+            },
+            {
+              "id": "genre:peking-opera",
+              "name": "Peking opera",
+              "status": "added"
+            },
+            {
+              "id": "genre:pop",
+              "name": "Pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:pop-punk",
+              "name": "Pop-punk",
+              "status": "added"
+            },
+            {
+              "id": "genre:post-hardcore",
+              "name": "Post-hardcore",
+              "status": "added"
+            },
+            {
+              "id": "genre:post-punk",
+              "name": "Post-punk",
+              "status": "added"
+            },
+            {
+              "id": "genre:post-rock",
+              "name": "Post-rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:power-metal",
+              "name": "Power metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:progressive-house",
+              "name": "Progressive house",
+              "status": "added"
+            },
+            {
+              "id": "genre:progressive-metal",
+              "name": "Progressive metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:progressive-rock",
+              "name": "Progressive rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:psychedelic-rock",
+              "name": "Psychedelic rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:psytrance",
+              "name": "Psytrance",
+              "status": "added"
+            },
+            {
+              "id": "genre:punjabi-bhangra",
+              "name": "Punjabi bhangra",
+              "status": "added"
+            },
+            {
+              "id": "genre:punk-rock",
+              "name": "Punk rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:qawwali",
+              "name": "Qawwali",
+              "status": "added"
+            },
+            {
+              "id": "genre:r-and-b",
+              "name": "Rhythm and blues",
+              "status": "added"
+            },
+            {
+              "id": "genre:rai",
+              "name": "Raï",
+              "status": "added"
+            },
+            {
+              "id": "genre:rebetiko",
+              "name": "Rebetiko",
+              "status": "added"
+            },
+            {
+              "id": "genre:reggae",
+              "name": "Reggae",
+              "status": "added"
+            },
+            {
+              "id": "genre:reggaeton",
+              "name": "Reggaeton",
+              "status": "added"
+            },
+            {
+              "id": "genre:renaissance",
+              "name": "Renaissance music",
+              "status": "added"
+            },
+            {
+              "id": "genre:rock",
+              "name": "Rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:rock-and-roll",
+              "name": "Rock and roll",
+              "status": "added"
+            },
+            {
+              "id": "genre:rocksteady",
+              "name": "Rocksteady",
+              "status": "added"
+            },
+            {
+              "id": "genre:romantic",
+              "name": "Romantic music",
+              "status": "added"
+            },
+            {
+              "id": "genre:roots-reggae",
+              "name": "Roots reggae",
+              "status": "added"
+            },
+            {
+              "id": "genre:russian-folk",
+              "name": "Russian folk",
+              "status": "added"
+            },
+            {
+              "id": "genre:salsa",
+              "name": "Salsa",
+              "status": "added"
+            },
+            {
+              "id": "genre:samba",
+              "name": "Samba",
+              "status": "added"
+            },
+            {
+              "id": "genre:schlager",
+              "name": "Schlager",
+              "status": "added"
+            },
+            {
+              "id": "genre:sega",
+              "name": "Séga",
+              "status": "added"
+            },
+            {
+              "id": "genre:serialism",
+              "name": "Serialism",
+              "status": "added"
+            },
+            {
+              "id": "genre:sertanejo",
+              "name": "Sertanejo",
+              "status": "added"
+            },
+            {
+              "id": "genre:shoegaze",
+              "name": "Shoegaze",
+              "status": "added"
+            },
+            {
+              "id": "genre:ska",
+              "name": "Ska",
+              "status": "added"
+            },
+            {
+              "id": "genre:soca",
+              "name": "Soca",
+              "status": "added"
+            },
+            {
+              "id": "genre:son-cubano",
+              "name": "Son cubano",
+              "status": "added"
+            },
+            {
+              "id": "genre:soukous",
+              "name": "Soukous",
+              "status": "added"
+            },
+            {
+              "id": "genre:soul",
+              "name": "Soul",
+              "status": "added"
+            },
+            {
+              "id": "genre:soul-jazz",
+              "name": "Soul jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:southern-rap",
+              "name": "Southern rap",
+              "status": "added"
+            },
+            {
+              "id": "genre:southern-rock",
+              "name": "Southern rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:spiritual-jazz",
+              "name": "Spiritual jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:stoner-rock",
+              "name": "Stoner rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:surf-rock",
+              "name": "Surf rock",
+              "status": "added"
+            },
+            {
+              "id": "genre:swing",
+              "name": "Swing",
+              "status": "added"
+            },
+            {
+              "id": "genre:synth-pop",
+              "name": "Synth-pop",
+              "status": "added"
+            },
+            {
+              "id": "genre:synthwave",
+              "name": "Synthwave",
+              "status": "added"
+            },
+            {
+              "id": "genre:taarab",
+              "name": "Taarab",
+              "status": "added"
+            },
+            {
+              "id": "genre:tango",
+              "name": "Tango",
+              "status": "added"
+            },
+            {
+              "id": "genre:tech-house",
+              "name": "Tech house",
+              "status": "added"
+            },
+            {
+              "id": "genre:techno",
+              "name": "Techno",
+              "status": "added"
+            },
+            {
+              "id": "genre:thrash-metal",
+              "name": "Thrash metal",
+              "status": "added"
+            },
+            {
+              "id": "genre:trance",
+              "name": "Trance",
+              "status": "added"
+            },
+            {
+              "id": "genre:trap-rap",
+              "name": "Trap rap",
+              "status": "added"
+            },
+            {
+              "id": "genre:trip-hop",
+              "name": "Trip-hop",
+              "status": "added"
+            },
+            {
+              "id": "genre:trot",
+              "name": "Trot",
+              "status": "added"
+            },
+            {
+              "id": "genre:uk-funky",
+              "name": "UK funky",
+              "status": "added"
+            },
+            {
+              "id": "genre:uk-garage",
+              "name": "UK garage",
+              "status": "added"
+            },
+            {
+              "id": "genre:vallenato",
+              "name": "Vallenato",
+              "status": "added"
+            },
+            {
+              "id": "genre:vaporwave",
+              "name": "Vaporwave",
+              "status": "added"
+            },
+            {
+              "id": "genre:varietes-francaises",
+              "name": "Variétés françaises",
+              "status": "added"
+            },
+            {
+              "id": "genre:vocal-jazz",
+              "name": "Vocal jazz",
+              "status": "added"
+            },
+            {
+              "id": "genre:waiata-a-ringa",
+              "name": "Waiata-ā-ringa",
+              "status": "added"
+            },
+            {
+              "id": "genre:west-coast-rap",
+              "name": "West Coast rap",
+              "status": "added"
+            },
+            {
+              "id": "genre:zouk",
+              "name": "Zouk",
+              "status": "added"
+            },
+            {
+              "id": "instrument:helicon",
+              "name": "Helicon",
+              "status": "updated"
+            },
+            {
+              "id": "instrument:sousaphone",
+              "name": "Sousaphone",
+              "status": "updated"
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "category": "graph",
+          "files": [
+            {
+              "status": "M",
+              "path": "docs/graph/evidence/audits/graph-edge-coverage.csv"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/audits/graph-edges-033-artist-origins.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-alban-berg-vienna.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-alton-ellis-kingston.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-anibal-troilo-buenos-aires.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-astrud-gilberto-salvador.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-bad-brains-washington-d-c.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-beenie-man-kingston.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-beyonce-houston.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-blake-baxter-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-blur-london.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-boom-shaka-johannesburg.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-bring-me-the-horizon-sheffield.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-can-cologne.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-carl-craig-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-caterina-valente-paris.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-cheb-hasni-oran.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-cheba-zahouania-oran.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-chemical-brothers-manchester.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-cheng-yanqiu-beijing.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-common-chicago.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-daddy-yankee-san-juan.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-david-bowie-london.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-dead-kennedys-san-francisco.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-deepchord-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-derrick-may-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-desmond-dekker-kingston.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-distruction-boyz-durban.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-dj-lag-durban.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-don-caballero-pittsburgh.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-donald-byrd-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-dorothy-ashby-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-eboa-lotin-douala.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-eddie-fowlkes-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-el-hadj-mhamed-el-anka-algiers.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-fania-all-stars-new-york.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-francoise-hardy-paris.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-frankie-knuckles-bronx.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-fugazi-washington-d-c.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-future-atlanta.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-grandmaster-flash-and-the-furious-five-bronx.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-helloween-hamburg.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-insane-clown-posse-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-iron-maiden-london.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-jamiroquai-london.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-jeff-mills-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-johnny-hallyday-paris.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-juan-atkins-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-judas-priest-birmingham.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-kassav-paris.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-kendrick-lamar-compton.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-kevin-saunderson-new-york.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-khaled-oran.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-kraftwerk-duesseldorf.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-lil-wayne-new-orleans.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-louis-armstrong-new-orleans.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-machel-montano-port-of-spain.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-mahmoud-guinia-essaouira.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-manu-dibango-douala.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-marshall-jefferson-chicago.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-massive-attack-bristol.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-metallica-los-angeles.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-mongo-santamaria-havana.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-oasis-manchester.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-octave-one-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-omar-pene-dakar.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-osibisa-london.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-pearl-jam-seattle.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-prince-royce-bronx.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-ramones-new-york.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-robert-hood-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-rolling-stones-london.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-roni-size-bristol.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-saint-vitus-los-angeles.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-schoenberg-vienna.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-scientist-kingston.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-sex-pistols-london.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-siti-binti-saad-zanzibar.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-slowdive-reading.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-sly-and-the-family-stone-san-francisco.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-so-solid-crew-london.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-sonic-youth-new-york.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-soundgarden-seattle.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-stacey-pullen-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-suede-london.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-talking-heads-new-york.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-tangerine-dream-berlin.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-tatsuro-yamashita-tokyo.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-the-clash-london.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-the-coasters-los-angeles.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-the-heptones-kingston.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-the-human-league-sheffield.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-the-platters-los-angeles.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-the-ronettes-new-york.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-the-skatalites-kingston.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-the-supremes-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-thione-seck-dakar.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-tito-puente-new-york.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-tony-allen-lagos.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-toots-and-the-maytals-kingston.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-tricky-bristol.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-trouble-chicago.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-underground-resistance-detroit.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-wiley-london.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-willie-colon-bronx.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-wizkid-lagos.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-yo-yo-ma-paris.md"
+            },
+            {
+              "status": "A",
+              "path": "docs/graph/evidence/edges/origin__artist-youssou-ndour-dakar.md"
+            },
+            {
+              "status": "M",
+              "path": "packages/catalogue/data/graph.json"
+            },
+            {
+              "status": "M",
+              "path": "packages/catalogue/data/review-status.json"
+            },
+            {
+              "status": "M",
+              "path": "packages/catalogue/package.json"
+            },
+            {
+              "status": "A",
+              "path": "packages/catalogue/src/artistFamily.ts"
+            },
+            {
+              "status": "M",
+              "path": "packages/catalogue/src/graph.ts"
+            }
+          ]
+        },
+        {
+          "category": "artwork",
+          "files": [
+            {
+              "status": "M",
+              "path": ".github/workflows/artwork-quality.yml"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/design-system/artwork/MobileCover.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-avatars/helicon.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-avatars/sousaphone.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-banners/helicon.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-banners/sousaphone.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/helicon.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-header-backgrounds/sousaphone.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-icons/helicon.svg"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/fixtures/instrument-artwork-v1/instrument-icons/sousaphone.svg"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/README.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/helicon.json"
+            },
+            {
+              "status": "M",
+              "path": "docs/artwork/briefs/sousaphone.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/acid-house.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/acid-jazz.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/acid-techno.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/afro-house.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/afrobeat.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/afrobeats.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/algerian-chaabi.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/alt-country.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/alternative-rap.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/alternative-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/amapiano.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/ambient-house.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/ambient-techno.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/ambient.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/americana.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/andean-folk.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/arabesk.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/arabic-maqam.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/bachata.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/banda-sinaloense.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/baroque.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/baul-songs.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/bebop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/benga.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/big-beat.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/black-metal.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/bluegrass.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/blues-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/blues.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/boom-bap.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/bossa-nova.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/brazilian-funk.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/breakbeat-hardcore.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/breakbeat.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/breakcore.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/britpop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/calypso.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/cantopop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/carnatic.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/chicago-blues.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/chicago-house.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/chicha.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/chillwave.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/chopped-and-screwed.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/city-pop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/classical-period.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/congolese-rumba.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/conscious-hip-hop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/contemporary-r-and-b.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/cool-jazz.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/corrido-tumbado.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/country-pop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/country.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/crunk.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/cuarteto.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/cumbia.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/dabke-music.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/dance-pop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/dancehall.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/dangdut.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/darksynth.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/death-metal.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/deep-house.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/delta-blues.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/detroit-techno.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/disco.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/doo-wop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/doom-metal.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/downtempo.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/dream-pop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/drill.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/drum-and-bass.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/dub-techno.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/dub.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/dubstep.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/east-coast-rap.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/edm.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/egyptian-shaabi.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/electro-house.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/electro.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/electroclash.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/emo-rap.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/emo.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/ethio-jazz.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/fado.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/filmi.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/flamenco.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/folk.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/footwork.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/free-jazz.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/french-house.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/french-touch.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/funana.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/funk.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/g-funk.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/gabber.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/gagaku.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/gamelan.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/gangsta-rap.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/garage-house.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/garage-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/girl-groups.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/glam-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/gnawa.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/go-go.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/gothic-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/gqom.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/grime.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/grunge.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/hard-bop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/hard-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/hardcore-punk.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/hardstyle.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/heavy-metal.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/hi-nrg.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/highlife.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/hindustani-classical.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/hip-hop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/honky-tonk.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/horrorcore.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/house.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/hyperpop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/hyphy.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/idm.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/impressionism.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/indie-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/industrial-metal.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/italo-disco.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/j-pop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/jazz-funk.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/jazz-fusion.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/jazz-rap.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/jazz.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/juju.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/jungle.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/k-pop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/khaliji.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/khoomei.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/krautrock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/kwaito.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/latin-jazz.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/latin-trap.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/latin.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/liquid-drum-and-bass.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/madeiran-traditional-music.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/mahraganat.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/makossa.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/maloya.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/mambo.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/math-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/mbalax.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/medieval.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/melodic-death-metal.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/mento.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/merengue.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/metalcore.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/minimal-techno.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/minimalism.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/modal-jazz.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/modern-classical.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/morna.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/musica-criolla.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/neo-soul.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/neoclassicism.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/new-jack-swing.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/new-orleans-jazz.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/new-wave.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/noise-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/norteno.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/nu-metal.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/old-school-rap.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/opm.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/outlaw-country.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/pansori.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/peking-opera.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/pop-punk.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/pop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/post-hardcore.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/post-punk.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/post-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/power-metal.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/progressive-house.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/progressive-metal.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/progressive-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/psychedelic-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/psytrance.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/punjabi-bhangra.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/punk-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/qawwali.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/r-and-b.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/rai.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/rebetiko.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/reggae.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/reggaeton.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/renaissance.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/rock-and-roll.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/rocksteady.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/romantic.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/roots-reggae.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/russian-folk.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/salsa.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/samba.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/schlager.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/sega.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/serialism.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/sertanejo.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/shoegaze.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/ska.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/soca.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/son-cubano.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/soukous.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/soul-jazz.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/soul.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/southern-rap.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/southern-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/spiritual-jazz.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/stoner-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/surf-rock.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/swing.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/synth-pop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/synthwave.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/taarab.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/tango.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/tech-house.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/techno.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/thrash-metal.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/trance.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/trap-rap.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/trip-hop.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/trot.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/uk-funky.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/uk-garage.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/vallenato.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/vaporwave.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/varietes-francaises.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/vocal-jazz.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/waiata-a-ringa.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/west-coast-rap.json"
+            },
+            {
+              "status": "A",
+              "path": "docs/artwork/genre-briefs/zouk.json"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/acid-house.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/acid-jazz.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/acid-techno.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/afro-house.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/afrobeat.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/afrobeats.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/algerian-chaabi.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/alt-country.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/alternative-rap.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/alternative-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/amapiano.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/ambient-house.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/ambient-techno.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/ambient.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/americana.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/andean-folk.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/arabesk.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/arabic-maqam.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/bachata.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/banda-sinaloense.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/baroque.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/baul-songs.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/bebop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/benga.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/big-beat.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/black-metal.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/bluegrass.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/blues-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/blues.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/boom-bap.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/bossa-nova.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/brazilian-funk.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/breakbeat-hardcore.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/breakbeat.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/breakcore.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/britpop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/calypso.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/cantopop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/carnatic.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/chicago-blues.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/chicago-house.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/chicha.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/chillwave.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/chopped-and-screwed.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/city-pop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/classical-period.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/congolese-rumba.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/conscious-hip-hop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/contemporary-r-and-b.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/cool-jazz.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/corrido-tumbado.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/country-pop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/country.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/crunk.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/cuarteto.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/cumbia.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/dabke-music.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/dance-pop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/dancehall.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/dangdut.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/darksynth.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/death-metal.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/deep-house.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/delta-blues.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/detroit-techno.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/disco.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/doo-wop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/doom-metal.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/downtempo.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/dream-pop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/drill.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/drum-and-bass.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/dub-techno.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/dub.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/dubstep.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/east-coast-rap.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/edm.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/egyptian-shaabi.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/electro-house.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/electro.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/electroclash.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/emo-rap.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/emo.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/ethio-jazz.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/fado.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/filmi.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/flamenco.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/folk.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/footwork.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/free-jazz.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/french-house.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/french-touch.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/funana.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/funk.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/g-funk.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/gabber.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/gagaku.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/gamelan.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/gangsta-rap.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/garage-house.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/garage-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/girl-groups.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/glam-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/gnawa.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/go-go.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/gothic-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/gqom.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/grime.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/grunge.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/hard-bop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/hard-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/hardcore-punk.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/hardstyle.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/heavy-metal.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/hi-nrg.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/highlife.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/hindustani-classical.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/hip-hop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/honky-tonk.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/horrorcore.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/house.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/hyperpop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/hyphy.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/idm.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/impressionism.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/indie-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/industrial-metal.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/italo-disco.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/j-pop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/jazz-funk.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/jazz-fusion.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/jazz-rap.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/jazz.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/juju.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/jungle.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/k-pop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/khaliji.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/khoomei.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/krautrock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/kwaito.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/latin-jazz.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/latin-trap.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/latin.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/liquid-drum-and-bass.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/madeiran-traditional-music.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/mahraganat.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/makossa.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/maloya.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/mambo.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/math-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/mbalax.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/medieval.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/melodic-death-metal.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/mento.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/merengue.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/metalcore.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/minimal-techno.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/minimalism.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/modal-jazz.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/modern-classical.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/morna.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/musica-criolla.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/neo-soul.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/neoclassicism.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/new-jack-swing.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/new-orleans-jazz.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/new-wave.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/noise-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/norteno.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/nu-metal.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/old-school-rap.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/opm.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/outlaw-country.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/pansori.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/peking-opera.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/pop-punk.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/pop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/post-hardcore.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/post-punk.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/post-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/power-metal.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/progressive-house.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/progressive-metal.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/progressive-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/psychedelic-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/psytrance.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/punjabi-bhangra.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/punk-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/qawwali.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/r-and-b.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/rai.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/rebetiko.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/reggae.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/reggaeton.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/renaissance.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/rock-and-roll.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/rocksteady.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/romantic.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/roots-reggae.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/russian-folk.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/salsa.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/samba.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/schlager.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/sega.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/serialism.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/sertanejo.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/shoegaze.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/ska.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/soca.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/son-cubano.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/soukous.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/soul-jazz.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/soul.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/southern-rap.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/southern-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/spiritual-jazz.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/stoner-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/surf-rock.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/swing.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/synth-pop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/synthwave.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/taarab.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/tango.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/tech-house.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/techno.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/thrash-metal.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/trance.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/trap-rap.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/trip-hop.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/trot.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/uk-funky.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/uk-garage.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/vallenato.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/vaporwave.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/varietes-francaises.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/vocal-jazz.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/waiata-a-ringa.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/west-coast-rap.webp"
+            },
+            {
+              "status": "A",
+              "path": "packages/media/public/genre-artwork/zouk.webp"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/helicon.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-avatars/sousaphone.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/helicon.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-banners/sousaphone.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/helicon.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-header-backgrounds/sousaphone.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/helicon.svg"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/public/instrument-icons/sousaphone.svg"
+            },
+            {
+              "status": "M",
+              "path": "scripts/artwork/generate-instrument-artwork.py"
+            },
+            {
+              "status": "A",
+              "path": "scripts/artwork/genre-brief.ts"
+            }
+          ]
+        },
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "A",
+              "path": "apps/mobile-web/package.json"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/App.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/App.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/LibraryPage.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/LibraryPage.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/SearchPage.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/SearchPage.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/design-system/CatalogueSkeleton.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/design-system/audio/PreviewAvailability.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/design-system/audio/PreviewButton.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/design-system/audio/PreviewButton.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/design-system/navigation/MobileBrand.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/design-system/navigation/MobileBrand.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/design-system/navigation/MobileMasthead.test.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/design-system/navigation/MobileMasthead.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/design-system/timeline/MobileChronology.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/feed.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/feed.ts"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/main.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/media.ts"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/nodeUrl.ts"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/scrollToFeedStart.ts"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/usePreview.ts"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/vite-env.d.ts"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/tsconfig.json"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/vite.config.ts"
+            },
+            {
+              "status": "M",
+              "path": "apps/storybook/.storybook/main.ts"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/App.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/design-system/explorer/DetailPanel.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/design-system/explorer/Explorer.tsx"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/design-system/navigation/BrandLink.tsx"
+            },
+            {
+              "status": "D",
+              "path": "apps/web/src/design-system/navigation/SoundlinesMark.tsx"
+            },
+            {
+              "status": "D",
+              "path": "apps/web/src/design-system/navigation/soundlinesMarkMotion.ts"
+            },
+            {
+              "status": "D",
+              "path": "apps/web/src/design-system/navigation/soundlinesWave.ts"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/favicon.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/graph/timeline.ts"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/stories/Explorer.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/stories/Favicon.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/stories/InstrumentArtwork.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/MobileHome.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/MobileInstrumentCover.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/MobileLibrary.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/MobilePreview.stories.tsx"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/stories/MobileSearch.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/stories/Navigation.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "package.json"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/src/manifest.ts"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/src/publish.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "packages/media/src/publish.ts"
+            },
+            {
+              "status": "M",
+              "path": "packages/ui-web/package.json"
+            },
+            {
+              "status": "A",
+              "path": "packages/ui-web/src/SoundlinesMark.tsx"
+            },
+            {
+              "status": "A",
+              "path": "packages/ui-web/src/soundlinesMarkMotion.ts"
+            },
+            {
+              "status": "A",
+              "path": "packages/ui-web/src/soundlinesWave.ts"
+            },
+            {
+              "status": "M",
+              "path": "turbo.json"
+            },
+            {
+              "status": "M",
+              "path": "vite.config.ts"
+            }
+          ]
+        },
+        {
+          "category": "workflow",
+          "files": [
+            {
+              "status": "M",
+              "path": "compose.yaml"
+            },
+            {
+              "status": "M",
+              "path": "scripts/changelog/generate.test.ts"
+            },
+            {
+              "status": "M",
+              "path": "scripts/changelog/generate.ts"
+            }
+          ]
+        },
+        {
+          "category": "docs",
+          "files": [
+            {
+              "status": "A",
+              "path": "apps/mobile-web/README.md"
+            },
+            {
+              "status": "M",
+              "path": "docs/DEVELOPMENT.md"
+            }
+          ]
+        },
+        {
+          "category": "other",
+          "files": [
+            {
+              "status": "M",
+              "path": ".gitignore"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/index.html"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/design-system/navigation/MobileBrand.css"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/design-system/navigation/MobileMasthead.css"
+            },
+            {
+              "status": "A",
+              "path": "apps/mobile-web/src/styles.css"
+            },
+            {
+              "status": "M",
+              "path": "pnpm-lock.yaml"
+            }
+          ]
+        }
+      ],
+      "graph": {
+        "nodes": {
+          "added": [],
+          "updated": [],
+          "removed": []
+        },
+        "edges": {
+          "added": [
+            "origin:artist-alban-berg-vienna",
+            "origin:artist-alton-ellis-kingston",
+            "origin:artist-anibal-troilo-buenos-aires",
+            "origin:artist-astrud-gilberto-salvador",
+            "origin:artist-bad-brains-washington-d-c",
+            "origin:artist-beenie-man-kingston",
+            "origin:artist-beyonce-houston",
+            "origin:artist-blake-baxter-detroit",
+            "origin:artist-blur-london",
+            "origin:artist-boom-shaka-johannesburg",
+            "origin:artist-bring-me-the-horizon-sheffield",
+            "origin:artist-can-cologne",
+            "origin:artist-carl-craig-detroit",
+            "origin:artist-caterina-valente-paris",
+            "origin:artist-cheb-hasni-oran",
+            "origin:artist-cheba-zahouania-oran",
+            "origin:artist-chemical-brothers-manchester",
+            "origin:artist-cheng-yanqiu-beijing",
+            "origin:artist-common-chicago",
+            "origin:artist-daddy-yankee-san-juan",
+            "origin:artist-david-bowie-london",
+            "origin:artist-dead-kennedys-san-francisco",
+            "origin:artist-deepchord-detroit",
+            "origin:artist-derrick-may-detroit",
+            "origin:artist-desmond-dekker-kingston",
+            "origin:artist-distruction-boyz-durban",
+            "origin:artist-dj-lag-durban",
+            "origin:artist-don-caballero-pittsburgh",
+            "origin:artist-donald-byrd-detroit",
+            "origin:artist-dorothy-ashby-detroit",
+            "origin:artist-eboa-lotin-douala",
+            "origin:artist-eddie-fowlkes-detroit",
+            "origin:artist-el-hadj-mhamed-el-anka-algiers",
+            "origin:artist-fania-all-stars-new-york",
+            "origin:artist-francoise-hardy-paris",
+            "origin:artist-frankie-knuckles-bronx",
+            "origin:artist-fugazi-washington-d-c",
+            "origin:artist-future-atlanta",
+            "origin:artist-grandmaster-flash-and-the-furious-five-bronx",
+            "origin:artist-helloween-hamburg",
+            "origin:artist-insane-clown-posse-detroit",
+            "origin:artist-iron-maiden-london",
+            "origin:artist-jamiroquai-london",
+            "origin:artist-jeff-mills-detroit",
+            "origin:artist-johnny-hallyday-paris",
+            "origin:artist-juan-atkins-detroit",
+            "origin:artist-judas-priest-birmingham",
+            "origin:artist-kassav-paris",
+            "origin:artist-kendrick-lamar-compton",
+            "origin:artist-kevin-saunderson-new-york",
+            "origin:artist-khaled-oran",
+            "origin:artist-kraftwerk-duesseldorf",
+            "origin:artist-lil-wayne-new-orleans",
+            "origin:artist-louis-armstrong-new-orleans",
+            "origin:artist-machel-montano-port-of-spain",
+            "origin:artist-mahmoud-guinia-essaouira",
+            "origin:artist-manu-dibango-douala",
+            "origin:artist-marshall-jefferson-chicago",
+            "origin:artist-massive-attack-bristol",
+            "origin:artist-metallica-los-angeles",
+            "origin:artist-mongo-santamaria-havana",
+            "origin:artist-oasis-manchester",
+            "origin:artist-octave-one-detroit",
+            "origin:artist-omar-pene-dakar",
+            "origin:artist-osibisa-london",
+            "origin:artist-pearl-jam-seattle",
+            "origin:artist-prince-royce-bronx",
+            "origin:artist-ramones-new-york",
+            "origin:artist-robert-hood-detroit",
+            "origin:artist-rolling-stones-london",
+            "origin:artist-roni-size-bristol",
+            "origin:artist-saint-vitus-los-angeles",
+            "origin:artist-schoenberg-vienna",
+            "origin:artist-scientist-kingston",
+            "origin:artist-sex-pistols-london",
+            "origin:artist-siti-binti-saad-zanzibar",
+            "origin:artist-slowdive-reading",
+            "origin:artist-sly-and-the-family-stone-san-francisco",
+            "origin:artist-so-solid-crew-london",
+            "origin:artist-sonic-youth-new-york",
+            "origin:artist-soundgarden-seattle",
+            "origin:artist-stacey-pullen-detroit",
+            "origin:artist-suede-london",
+            "origin:artist-talking-heads-new-york",
+            "origin:artist-tangerine-dream-berlin",
+            "origin:artist-tatsuro-yamashita-tokyo",
+            "origin:artist-the-clash-london",
+            "origin:artist-the-coasters-los-angeles",
+            "origin:artist-the-heptones-kingston",
+            "origin:artist-the-human-league-sheffield",
+            "origin:artist-the-platters-los-angeles",
+            "origin:artist-the-ronettes-new-york",
+            "origin:artist-the-skatalites-kingston",
+            "origin:artist-the-supremes-detroit",
+            "origin:artist-thione-seck-dakar",
+            "origin:artist-tito-puente-new-york",
+            "origin:artist-tony-allen-lagos",
+            "origin:artist-toots-and-the-maytals-kingston",
+            "origin:artist-tricky-bristol",
+            "origin:artist-trouble-chicago",
+            "origin:artist-underground-resistance-detroit",
+            "origin:artist-wiley-london",
+            "origin:artist-willie-colon-bronx",
+            "origin:artist-wizkid-lagos",
+            "origin:artist-yo-yo-ma-paris",
+            "origin:artist-youssou-ndour-dakar"
+          ],
+          "updated": [],
+          "removed": []
+        }
+      }
+    },
+    {
       "commit": "717503ef50214518c49abd2a275e364c82f3b610",
       "parent": "2c42cce98e7899595a325147dbbcaf61f478ba20",
       "date": "2026-11-15T17:29:05-05:00",
