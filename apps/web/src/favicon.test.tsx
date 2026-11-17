@@ -238,7 +238,7 @@ describe('Soundlines brand mark', () => {
   const favicon = readFileSync(join(mediaDirectory, 'favicon.svg'), 'utf8')
 
   it('rests on the official favicon frame', () => {
-    const markup = renderToStaticMarkup(createElement(BrandLink, { href: '/en', children: 'Soundlines' }))
+    const markup = renderToStaticMarkup(<BrandLink href="/en">Soundlines</BrandLink>)
     for (const { color, d } of SOUNDLINES_WAVES) {
       expect(favicon).toContain(`<path d="${d}" stroke="${color}" />`)
       expect(markup).toContain(`d="${d}" stroke="${color}"`)

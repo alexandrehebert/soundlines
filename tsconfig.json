@@ -3,6 +3,7 @@
   "include": [
     "tests",
     "packages",
+    "apps/mobile-web/src/vite-env.d.ts",
     "apps/web/app",
     "apps/web/src",
     "apps/web/.next/types/**/*.ts",

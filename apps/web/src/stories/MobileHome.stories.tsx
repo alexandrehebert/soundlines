@@ -1,5 +1,3 @@
-/// <reference path="../../../mobile-web/src/vite-env.d.ts" />
-
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, userEvent, waitFor, within } from 'storybook/test'
 import { FeedSkeleton } from '../../../mobile-web/src/design-system/CatalogueSkeleton.tsx'
