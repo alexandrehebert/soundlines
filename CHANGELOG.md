@@ -12,6 +12,12 @@ Graph summaries count added, updated and removed entities; follow the commit lin
 The [full JSON audit](./docs/changelog/changelog.json) records every changed file, its Git status and all changed graph entity IDs.
 Preview/loop entries document committed assets and production records, not untracked raw renders or listening approval.
 
+## 2026-11-16 — Resolve App quality lint warnings
+
+[bf454d99](https://github.com/alexandrehebert/soundlines/commit/bf454d993d77e0bf4a7635ec9ff4c45e38b99ae6)
+
+- app: 6 changed files
+
 ## 2026-11-16 — Preserve the Storybook comparison render type
 
 [5ef87bad](https://github.com/alexandrehebert/soundlines/commit/5ef87badf60b74bbd14b44750271e8301fbfc673)

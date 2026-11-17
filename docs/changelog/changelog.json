@@ -2,6 +2,45 @@
   "version": 4,
   "entries": [
     {
+      "commit": "bf454d993d77e0bf4a7635ec9ff4c45e38b99ae6",
+      "parent": "e7678c07197ded6a222cb6b0c1327eda6a9463bb",
+      "date": "2026-11-16T19:00:30-05:00",
+      "subject": "Resolve App quality lint warnings",
+      "merge": false,
+      "entities": [],
+      "groups": [
+        {
+          "category": "app",
+          "files": [
+            {
+              "status": "M",
+              "path": ".oxlintrc.json"
+            },
+            {
+              "status": "D",
+              "path": "apps/web/src/favicon.test.ts"
+            },
+            {
+              "status": "A",
+              "path": "apps/web/src/favicon.test.tsx"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/src/stories/MobileHome.stories.tsx"
+            },
+            {
+              "status": "M",
+              "path": "apps/web/tsconfig.json"
+            },
+            {
+              "status": "M",
+              "path": "tsconfig.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "5ef87badf60b74bbd14b44750271e8301fbfc673",
       "parent": "01723a7fd8627cdca9a3e85f825e7abba223fdec",
       "date": "2026-11-16T18:56:15-05:00",
